@@ -151,6 +151,12 @@ export function eventCompatibility(a, b) {
   const eventTypesDiffer = left.event_type !== "other" && right.event_type !== "other" && left.event_type !== right.event_type;
   const geographyConflict = left.geography.length && right.geography.length && !left.geography.some((region) => right.geography.includes(region));
   const structuredLeft = structuredEventIdentity(a), structuredRight = structuredEventIdentity(b);
+  if (structuredLeft?.kind === 'border_incident' || structuredRight?.kind === 'border_incident') {
+    const same = structuredLeft?.key === structuredRight?.key && !geographyConflict && courtCase.status === 'unestablished' && timeGap <= 6 * 3600000
+      && !(structuredLeft?.roads?.length && structuredRight?.roads?.length && structuredLeft.roads[0] !== structuredRight.roads[0]);
+    return { same_event:same, related:structuredLeft?.institution===structuredRight?.institution,
+      reason:same?'specific_incident_place_day':'different_or_unestablished_incident_identity' };
+  }
   if (structuredLeft && structuredRight && !geographyConflict && courtCase.status === 'unestablished') {
     return { same_event: structuredLeft.key === structuredRight.key, related: structuredLeft.institution === structuredRight.institution,
       reason: structuredLeft.key === structuredRight.key ? 'institution_proceeding_day' : 'different_proceeding_day' };

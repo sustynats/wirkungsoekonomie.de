@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T17:14:57.296Z",
-  "scanned_stories": 212,
-  "scanned_subjects": 187,
-  "editorial_candidates": 32,
-  "ready_for_research": 10,
-  "research_pending": 11,
+  "started_at": "2026-09-09T20:16:09.408Z",
+  "scanned_stories": 218,
+  "scanned_subjects": 193,
+  "editorial_candidates": 34,
+  "ready_for_research": 11,
+  "research_pending": 13,
   "retry_deferred": 4,
-  "editorial_research_sources_discovered": 51,
-  "selected": 0,
+  "editorial_research_sources_discovered": 55,
+  "selected": 1,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
@@ -26,11 +26,104 @@
   "batch_results_reviewed": 0,
   "background_waiting": 6,
   "quality_held": 4,
-  "unchanged_research_skipped": 12,
+  "unchanged_research_skipped": 11,
   "requested": [],
-  "publication_deferred": false,
+  "publication_deferred": true,
   "failed": [],
   "candidates": [
+    {
+      "story_id": "wt-63cb95e544d260ce",
+      "story_slug": "so-lauft-die-generaldebatte-im-bundestag-merz-gegen-weidel-d260ce",
+      "story_title": "Generaldebatte zum Haushalt 2027: Merz verteidigt Reformkurs, Opposition kritisiert Prioritäten",
+      "editorial_analysis_score": 77,
+      "analysis_gain": 64,
+      "factors": {
+        "systemic_relevance": 11,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 0,
+        "macro_relevance": 6,
+        "MPD_interdependence": 8,
+        "distribution_relevance": 8,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 8,
+        "primary_source_count": 2,
+        "cited_claim_count": 3,
+        "primary_source_expected": true,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "79fdaa6ce2f010e2460fedae5b6302ab8ed9e57ecdb97108e471802abbe5322a",
+      "status": "research_pending",
+      "review": {
+        "status": "research_pending",
+        "automatic_short_form_rewrite": false,
+        "reason": "commissioned_analysis_new_origin_material",
+        "story_id": "wt-63cb95e544d260ce",
+        "analysis_id": "woek-analysis-7db837acf47c"
+      },
+      "analysis_id": "woek-analysis-7db837acf47c"
+    },
+    {
+      "story_id": "wt-026d11d680622587",
+      "story_slug": "bundestag-neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritis-622587",
+      "story_title": "Bundestag - Neuer Sportstaatsminister Rauhe will Olympia nach Deutschland holen, AfD kritisiert Benennung",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 48,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 7,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 0,
+        "distribution_relevance": 6,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 4,
+        "primary_source_count": 0,
+        "cited_claim_count": 3,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "f59a51e4095c09724caedc9511362e289d0d194d7f8ab66912c6d2ba9d9a2633",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-0158090dd70e734e",
       "story_slug": "nach-anschlagen-auf-stromversorgung-verdachtiger-in-untersuchungshaft-0e734e",
@@ -405,7 +498,7 @@
       "evidence_gate": {
         "passed": false,
         "source_integrity": "verified",
-        "independent_origin_count": 6,
+        "independent_origin_count": 7,
         "primary_source_count": 0,
         "cited_claim_count": 4,
         "primary_source_expected": true,
@@ -414,7 +507,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "63685ec0e9ebb01800f70c9df42a2e9c7407bfaf3fc6264126fe846245877993",
+      "fingerprint": "ce8e16fc0f3589f271a395fbf7f08592b2319d9d5558e04982f7f8abd08ab3c3",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -839,8 +932,8 @@
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "78522ed7a608806cb3fb963a0a4eea1577746ec2d5d1136d08c1010801b11adc",
-      "status": "published",
+      "fingerprint": "4cd19962c3203bd2251e26ad111814836f8b98000124c49715cc1ca33d0581a3",
+      "status": "ready_for_research",
       "analysis_id": "woek-analysis-7c4918d1134c"
     },
     {
@@ -1406,7 +1499,7 @@
   ],
   "batch": {
     "submitted": 0,
-    "pending": 0,
+    "pending": 1,
     "completed": 0,
     "failed": 0,
     "applied": 0,
@@ -1414,5 +1507,6 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-09T17:15:29.379Z"
+  "batch_deferred": 1,
+  "completed_at": "2026-09-09T20:17:42.196Z"
 }

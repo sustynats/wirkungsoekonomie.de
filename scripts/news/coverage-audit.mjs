@@ -56,7 +56,7 @@ export function eventDecision(event, story, decisions = [], selectedIds = new Se
   const extraction = /PARSER|FETCH|SOURCE_DATE|SOURCE_PARSER|FEED_|EXTRACTION/.test(reason);
   const cluster = /DUPLICATE|no_new_information|superseded/.test(reason);
   return { selection_status: capacity ? 'deferred' : last ? 'rejected_or_held' : 'observed_only', selected_in_run: selected,
-    failure_class: local ? 'D' : capacity ? 'E' : extraction ? 'B' : cluster ? 'C_REVIEW' : last ? 'F' : 'UNRESOLVED',
+    failure_class: capacity ? 'E' : local ? 'D' : extraction ? 'B' : cluster ? 'C_REVIEW' : last ? 'F' : 'UNRESOLVED',
     selection_reason: last?.rationale || reason, rejection_reason: reason, decision_at: last?.at || null };
 }
 
@@ -94,6 +94,11 @@ export function coverageAudit({ items = [], stories = [], decisions = [], select
       potential_missed: decision.selection_status !== 'published',
       age_minutes: Math.max(0, Math.round((ms(now) - ms(event.first_seen_at)) / 60000)) };
   });
+  // The recorded selection can differ from the observer's partial source
+  // score. Sort the final rows, not the pre-resolution fragments.
+  const tier = {TOP:0,HIGH:1,NORMAL:2,LOW:3};
+  rows.sort((a,b)=>(tier[a.priority]??4)-(tier[b.priority]??4)
+    || b.total_relevance_score-a.total_relevance_score || String(a.cluster_id).localeCompare(String(b.cluster_id)));
   const gaps = rows.filter(row => row.potential_missed);
   const alerts = [];
   for (const category of COVERAGE_CATEGORIES) {

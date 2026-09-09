@@ -1,7 +1,1196 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T17:09:54.975Z",
+  "updated_at": "2026-09-09T20:12:06.952Z",
   "stories": [
+    {
+      "story_id": "wt-6000b2fabc397176",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-fba5538cbebc53a4-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-bd0c65c86f1f8445-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-be4fd75445f1c5ac-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-a96cbc6c325af971-source.png"
+        }
+      },
+      "slug": "notfalle-sprengstoffverdacht-an-grenze-zwei-vorlaufige-festnahmen-397176",
+      "title": "Rheinfelden: Grenzübergang wegen Sprengstoffverdachts gesperrt – zwei vorläufige Festnahmen gemeldet",
+      "source_summary": "Am Grenzübergang Rheinfelden zur Schweiz ist der Verkehr nach Angaben der Quellen in beide Richtungen gesperrt. Die Bundespolizei ist im Einsatz, und bei einer Kontrolle schlugen Sprengstoff-Suchhunde an. Der SWR berichtet von zwei vorläufigen Festnahmen; mehrere Kurzmeldungen greifen diese Angabe auf. Zugleich bleibt offen, ob der Sprengstoffverdacht bestätigt wird und wie lange der Einsatz dauert.\n\nDie Quellenlage ist damit klar im Kern, aber noch nicht vollständig gesichert. Der Ereigniskern ist eine akute Sperrung mit Polizeieinsatz; die Ursache und die endgültige Bewertung sind weiter offen.",
+      "summary": "Der Grenzübergang Rheinfelden ist gesperrt. Zwei vorläufige Festnahmen werden gemeldet, aber noch nicht abschließend bestätigt.",
+      "detail_summary": "Die Meldung beschreibt einen akuten Polizeieinsatz am Grenzübergang Rheinfelden zur Schweiz. Laut den gelieferten Quellen ist der Übergang in beide Richtungen gesperrt, die Bundespolizei ist im Einsatz und Sprengstoff-Suchhunde haben angeschlagen. Der SWR nennt zwei vorläufige Festnahmen; mehrere weitere Kurzmeldungen übernehmen diese Angabe. Der genaue Sachstand bleibt offen, weil die Bestätigung der Festnahmen, die Dauer der Sperre und die endgültige Einordnung des Verdachts in den Quellen noch nicht vollständig geklärt sind. Für die Nachricht zählt vor allem die unmittelbare Störung des Grenzverkehrs und der laufende Polizeieinsatz. Eine längerfristige Folge ist daraus noch nicht belegbar.",
+      "why_relevant": "Akute Grenzsperrung, Polizeieinsatz und gemeldete Festnahmen betreffen den Verkehr zwischen Deutschland und der Schweiz unmittelbar und haben klare Relevanz für Sicherheit und Mobilität.",
+      "topic": [
+        "Gesellschaft",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Der laufende Polizeieinsatz sperrt den Grenzübergang und beeinträchtigt damit unmittelbar Mobilität, Erreichbarkeit und mögliche Hilfewege. Das ist für Nutzerinnen und Nutzer des Übergangs sowie für Grenzpendelnde relevant.",
+          "negative_path": {
+            "mechanism": "Sperrung und Einsatz unterbrechen den Verkehrsfluss, verlängern Wege und können Verzögerungen bei Pendeln, Lieferungen und Einsatzfahrten auslösen.",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Wenn der Verdacht rasch geklärt und die Lage gesichert wird, kann der Einsatz zu mehr Schutz vor einer möglichen Gefahr beitragen.",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "effect_type": "mitigation_only",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus den Quellen ergeben sich keine belastbaren Umweltfolgen. Der Fall betrifft vor allem Sicherheit und Verkehr, nicht einen belegten Umweltzustand.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung berührt staatliches Handeln und öffentliche Sicherheit, aber es gibt in den Quellen keinen Hinweis auf demokratische Strukturfolgen oder eine politische Entscheidung.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "third_order",
+            "path": "Vorübergehende Anpassung von Routen und Abläufen im Grenzraum",
+            "direction": "open",
+            "condition": "Nur wenn der Einsatz länger dauert, passen Unternehmen und Pendelnde ihre Wege dauerhaft an.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "human"
+            ]
+          }
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T20:12:06.952Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T17:09:01.000Z",
+      "last_updated": "2026-09-09T20:13:14.570Z",
+      "version": 3,
+      "news_status": "developing",
+      "event_id": "event-f13a6030063ce9f88544",
+      "case_file": null,
+      "source_published_at": "2026-09-09T16:29:42.000Z",
+      "published_at": "2026-09-09T17:50:31.611Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ],
+          [
+            "tagesspiegel-home",
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 6
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 21
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "tagesspiegel-home"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob der Sprengstoffverdacht bestätigt wird und was genau im Fahrzeug gefunden wurde.",
+          "source_id": "tagesspiegel-home",
+          "expected_by": null,
+          "measurable_indicator": "amtliche Bestätigung oder Klarstellung der Ermittler",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-dc6bf45d9aae3fb7",
+          "announced_at": "2026-09-09T17:09:01.000Z",
+          "follow_up_date": "2026-09-16T17:50:31.611Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wie lange der Grenzübergang gesperrt bleibt.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Aufhebung oder Fortdauer der Sperre",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b12dbc8f7f506230",
+          "announced_at": "2026-09-09T17:07:52.000Z",
+          "follow_up_date": "2026-09-16T17:50:31.611Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Offizielle Bestätigung der vorläufigen Festnahmen und des Ermittlungsstands",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimitteilung oder belastbare Bestätigung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f9a9e7032819ca73",
+          "announced_at": "2026-09-09T18:02:46.000Z",
+          "follow_up_date": "2026-09-16T20:13:14.570Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Angabe zur Dauer der Sperre und zur Wiederfreigabe des Übergangs",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Zeitpunkt der Aufhebung der Sperre",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8b02c1e6dd775120",
+          "announced_at": "2026-09-09T18:02:46.000Z",
+          "follow_up_date": "2026-09-16T20:13:14.570Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Klärung, ob tatsächlich Sprengstoff oder nur ein Verdacht vorlag",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "amtlich bestätigte Einstufung des Falls",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-47d8468f02755a52",
+          "announced_at": "2026-09-09T18:02:46.000Z",
+          "follow_up_date": "2026-09-16T20:13:14.570Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/eil-grenzuebergang-schweiz-gesperrt-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T18:02:46.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-notfalle-16036890.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:09:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/notfaelle--sprengstoffverdacht-an-grenze---zwei-vorlaeufige-festnahmen-38229130.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:07:52.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/weltgeschehen/grenzuebergang-zur-schweiz-wegen-sprengstoffverdachts-gesperrt-38229144.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T16:36:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/notfaelle--grenze-zur-schweiz-dicht--polizei-prueft-auto-auf-sprengstoff-38229130.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T16:29:42.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/weltgeschehen/grenzuebergang-zur-schweiz--zwei-festnahmen-wegen-sprengstoffverdachts-38229144.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:51:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/zwei-vorlaeufige-festnahmen--spuerhunde-schlagen-an---sprengstoffverdacht-an-der-grenze-38229130.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:44:23.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-zwei-vorlaufige-festnahmen-16036890.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:09:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/weltgeschehen/grenzuebergang-zur-schweiz--sprengstoffverdacht---polizei-gibt-entwarnung-38229144.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T18:26:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/zwei-vorlaeufige-festnahmen--sprengstoffverdacht-blockiert-rheinfelden-grenze-stundenlang-38229130.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T18:57:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-577270be8984eb8d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-577270be8984eb8d-4d06ed9cf6977e81-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-577270be8984eb8d-60481ad5b999b105-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-577270be8984eb8d-2698ddbe88743429-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "temporary-wartime-weapons-depot-explosion-kills-14-outside-syria-s-idlib-84eb8d",
+      "title": "Temporary wartime weapons depot explosion kills 14 outside Syria's Idlib",
+      "source_summary": "Euronews meldet eine Explosion an einem temporären Lager für Kriegsmunition nahe Sarmada außerhalb von Idlib. Dabei sollen 14 Menschen getötet und 11 verletzt worden sein. Rettungsteams suchten nach Angaben der Quelle weiter nach Überlebenden.\n\nDie Meldung verweist zudem auf Angaben humanitärer Helfer, wonach in Syrien heute alle sechs Stunden eine Person durch nicht explodierte Munition getötet oder verletzt werde. Offen bleibt, was die Explosion auslöste und ob weitere Quellen die Zahlen bestätigen.",
+      "summary": "Bei einer Explosion an einem temporären Munitionslager nahe Idlib sind laut Euronews 14 Menschen gestorben, 11 wurden verletzt. Rettungskräfte suchten weiter nach Überlebenden.",
+      "detail_summary": "Die Meldung beschreibt eine akute Sicherheitslage mit Toten und Verletzten an einem temporären Lager für Kriegsmunition. Das ist als Erstmeldung relevant, weil Zahl der Betroffenen, Ort und Art des Vorfalls bereits eine klare Zustandsänderung zeigen. Der mögliche Wirkpfad reicht von der unmittelbaren Explosion über weitere Opfer und Rettungsarbeit bis zu Folgen für Sicherheit vor Ort und den Umgang mit Altmunition. Die Evidenz bleibt vorläufig, weil bisher nur eine journalistische Quelle vorliegt und Ursache sowie unabhängige Bestätigung offen sind.",
+      "why_relevant": "Akute Gefahrenlage mit 14 Toten und 11 Verletzten; der Vorfall betrifft unmittelbare Sicherheit und laufende Rettung.",
+      "topic": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_post",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Explosion hat bereits tödliche und verletzende Folgen. Damit liegt eine negative Zustandsänderung für betroffene Menschen vor, auch wenn Ursache und Gesamtausmaß noch offen sind.",
+          "negative_path": {
+            "mechanism": "Explosion von gelagerter Kriegsmunition verletzt oder tötet Personen im Umkreis und bindet Rettungskapazitäten.",
+            "source_ids": [
+              "euronews-en"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Schnelle Rettung und medizinische Versorgung können weitere Todesfälle verhindern und Schäden begrenzen.",
+            "source_ids": [
+              "euronews-en"
+            ],
+            "effect_type": "mitigation_only",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Aus der Quelle ergibt sich vor allem ein Sicherheits- und Menschenpfad. Für Umweltfolgen fehlen konkrete Angaben zu freigesetzten Stoffen, Ausmaß oder betroffenen Flächen.",
+          "positive_path": {
+            "mechanism": "Keine belastbar belegte Umweltverbesserung erkennbar.",
+            "source_ids": [
+              "euronews-en"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Bei Explosionen von Munition können Schadstoffe freigesetzt oder Flächen belastet werden; hier ist das aber nicht belegt.",
+            "source_ids": [
+              "euronews-en"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung enthält keinen belastbaren direkten Pfad zu demokratischen Verfahren, Rechenschaft oder Beteiligung. Politische Folgen bleiben offen.",
+          "positive_path": {
+            "mechanism": "Keine unmittelbar belegte demokratische Wirkungsänderung.",
+            "source_ids": [
+              "euronews-en"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Keine unmittelbar belegte demokratische Wirkungsänderung.",
+            "source_ids": [
+              "euronews-en"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kinder_jugend",
+          "beschaeftigte",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T19:57:12.795Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T16:30:25.000Z",
+      "last_updated": "2026-09-09T20:03:13.135Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-4cd197336e93584b1e6e",
+      "case_file": null,
+      "source_published_at": "2026-09-09T16:30:25.000Z",
+      "published_at": "2026-09-09T20:03:13.135Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "euronews-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob Opferzahl, Ort und Ursache nach weiteren Quellen bestätigt werden.",
+          "source_id": "euronews-en",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung oder Korrektur von Tote-, Verletzten- und Ortsangabe",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f64409d8f0cb5fdb",
+          "announced_at": "2026-09-09T16:30:25.000Z",
+          "follow_up_date": "2026-09-16T20:03:13.135Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Euronews",
+          "url": "https://www.euronews.com/2026/09/09/temporary-wartime-weapons-depot-explosion-kills-14-outside-syrias-idlib",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T16:30:25.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-6cca6ba233753ac1",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6cca6ba233753ac1-105385cae7ff0fc7-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6cca6ba233753ac1-4249f7540f8cf32c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6cca6ba233753ac1-cb82a8d40e5e95d5-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6cca6ba233753ac1-d0dfc3099c8b4fed-source.png"
+        }
+      },
+      "slug": "eugh-starkt-ikea-im-markenrechtsstreit-gegen-rechte-partei-aus-belgien-753ac1",
+      "title": "EuGH stärkt Ikea im Markenrechtsstreit gegen rechte Partei aus Belgien",
+      "source_summary": "Eine Sekundärquelle meldet einen EuGH-Entscheid im Streit zwischen Ikea und einer rechten Partei aus Belgien. Beschrieben wird, dass die Partei ihr einwanderungskritisches Programm mit dem Namen des Möbelhauses bewarb und politische Schritte in Form einer Ikea-Anleitung darstellte.\n\nOffen bleibt der genaue Wortlaut des Urteils, der rechtliche Maßstab und der Umfang der Folgen für die Partei oder für die Marke. Eine unabhängige Bestätigung oder die Originalentscheidung liegen in den gelieferten Daten nicht vor.",
+      "summary": "Ein Bericht meldet einen EuGH-Entscheid zugunsten von Ikea im Markenstreit. Die genaue juristische Begründung bleibt in den vorliegenden Quellen offen.",
+      "detail_summary": "Der Fall betrifft eine politische Kampagne in Belgien, die laut Bericht den Namen Ikea und die Anmutung einer Anleitung aufgriff. Als aktueller Nachrichtenkern ist die angebliche EuGH-Entscheidung selbst relevant, weil sie ein markenrechtliches Verbot oder eine Unterlassung stützen kann.\n\nFür die Wirkung ist vorerst nur ein rechtlicher und kommunikativ-politischer Pfad belegbar: Das Urteil kann die Nutzung der Marke im politischen Kontext einschränken und damit künftige Kampagnenformen beeinflussen. Ob und wie stark sich das auf Wettbewerb, Debatten oder Nachahmung auswirkt, bleibt offen. Gesichert ist in den Quellen nur die Meldung des Entscheids, nicht die vollständige Urteilsbegründung.",
+      "why_relevant": "Ein EuGH-Entscheid im Streit um Markenmissbrauch ist materiell, weil er künftige Nutzung, Kampagnenpraxis und Rechtsdurchsetzung beeinflussen kann.",
+      "topic": [
+        "Europa",
+        "Geopolitik"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Das Urteil kann die Durchsetzung von Markenrechten stärken und politische Kampagnen mit markenähnlichen Anspielungen begrenzen. Für Betroffene sind die materiellen Folgen aber in den gelieferten Quellen nicht beziffert.",
+          "positive_path": {
+            "mechanism": "Stärkere Durchsetzung von Markenrechten kann unerlaubte Nutzung in politischen Kampagnen begrenzen und Klarheit für künftige Kommunikation schaffen.",
+            "source_ids": [
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Die Entscheidung kann politischen Akteuren die Nutzung bekannter Marken als Stilmittel erschweren und so Reichweite oder Anknüpfungspunkte ihrer Kampagnen reduzieren.",
+            "source_ids": [
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In den gelieferten Quellen ergibt sich kein direkter Umwelt- oder Ressourcenaspekt des Streitfalls.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Fall berührt politische Kommunikation und die Grenzen markenbezogener Kampagnen. Das kann Schutz vor Irreführung stärken, aber auch Ausdrucksformen politischer Werbung begrenzen.",
+          "positive_path": {
+            "mechanism": "Rechtliche Begrenzung markenähnlicher politischer Anleihen kann Transparenz und Fairness im öffentlichen Raum stützen.",
+            "source_ids": [
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Eine strengere Markenrechtsdurchsetzung kann politische Zuspitzungen oder satirische Anspielungen erschweren.",
+            "source_ids": [
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T19:40:25.513Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T11:23:00.000Z",
+      "last_updated": "2026-09-09T19:49:25.683Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-d181c770bc28ead8cb4a",
+      "case_file": null,
+      "source_published_at": "2026-09-08T11:23:00.000Z",
+      "published_at": "2026-09-09T19:49:25.683Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, wie der EuGH die Markenrechtsverletzung konkret begründet hat.",
+          "source_id": "manager-magazin-news",
+          "expected_by": null,
+          "measurable_indicator": "Begründung im Urteil oder in einer belastbaren Originalquelle",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-12a10cbbb9515562",
+          "announced_at": "2026-09-08T11:23:00.000Z",
+          "follow_up_date": "2026-09-16T19:49:25.683Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/handel/eugh-staerkt-ikea-im-markenrechtsstreit-gegen-rechte-partei-aus-belgien-a-eb2004cc-9866-4617-81db-ebfd27d40546",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:23:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-63cb95e544d260ce",
+      "title_image": null,
+      "slug": "so-lauft-die-generaldebatte-im-bundestag-merz-gegen-weidel-d260ce",
+      "title": "Generaldebatte zum Haushalt 2027: Merz verteidigt Reformkurs, Opposition kritisiert Prioritäten",
+      "source_summary": "Der Bundestag hat am 9. September die erste Lesung des Haushalts 2027 mit der Generaldebatte fortgesetzt. Kanzler Friedrich Merz verteidigte den Reformkurs. Alice Weidel kritisierte die Haushalts- und Wirtschaftspolitik; Katharina Dröge verlangte Schutz für bedrohte Menschen und eine Prüfung eines AfD-Verbots. Auch soziale Prioritäten und Investitionen waren umstritten.\n\nDie Bundesregierung verweist in ihrer Zusammenfassung der Kanzlerrede unter anderem auf Energiekosten, Bürokratie, Künstliche Intelligenz und Bevölkerungsschutz. Merz bezog erneuerbare Energien ausdrücklich ein. Seine Erfolgsbewertungen sind Aussagen der Regierung, keine unabhängig geprüfte Wirkungsbilanz. Ein abschließender Haushaltsbeschluss liegt noch nicht vor.",
+      "summary": "In der Generaldebatte verteidigt Merz seinen Reformkurs, während die Opposition Prioritäten bei Haushalt, Sozialem und Energie kritisiert. Über den Bundeshaushalt ist damit noch nicht abschließend entschieden.",
+      "detail_summary": "Neben dem politischen Schlagabtausch stehen konkrete Lebensbedingungen zur Debatte: verlässliche Leistungen, Investitionen, Energie und Schutz vor Ausgrenzung. Ein Detail des Entwurfs ist der niedrigere Ansatz für Kulturförderung im Inland. Noch ist offen, welche Titel das Parlament endgültig beschließt und wie sie sich im Alltag auswirken.",
+      "why_relevant": "Haushaltsentscheidungen betreffen Leistungen, wirtschaftliche Planung und gesellschaftlichen Schutz bundesweit. Die erste Lesung ist ein eigener parlamentarischer Anlass.",
+      "topic": [
+        "Politik",
+        "Wirtschaft",
+        "Gesellschaft",
+        "Energie",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Weniger Kulturförderung kann ohne gleichwertigen Ersatz Angebote und Teilhabe einschränken. Betroffene Projekte und Umfang sind noch nicht bestimmt.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wenn der niedrigere Förderansatz in Angebots- oder Personalverlust mündet und kein Ersatz besteht, sinkt die erreichbare kulturelle Teilhabe.",
+            "source_ids": [
+              "bundestag-hib"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Das negative Risiko betrifft längere fossile Bindung gegenüber einer verfügbaren emissionsärmeren Alternative, nicht Merz' Bekenntnis zu erneuerbaren Energien.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wenn neue fossile Kapazitäten emissionsärmere Optionen verdrängen oder verzögern, können zusätzliche Emissionen und längere Abhängigkeiten entstehen. Ob dieser Pfad eintritt, ist offen.",
+            "source_ids": [
+              "bundesregierung-kompakt"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die von Dröge angesprochenen Schutzbedürfnisse betreffen Zugehörigkeit und gleiche Teilhabe. Ein Schutzverlust wäre negativ; sein Eintritt wird nicht aus der Debatte behauptet.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wenn Menschen aufgrund ihrer Herkunft oder Identität ausgegrenzt werden und Schutz nicht erreichbar ist, werden gleiche Teilhabe und Vertrauen in staatliche Gleichbehandlung beeinträchtigt.",
+            "source_ids": [
+              "bundestag-hib"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "beschaeftigte",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T19:21:19.798Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-7db837acf47c",
+        "slug": "generaldebatte-deutschland-braucht-mehr-als-einen-gewonnenen-schlagabtausch",
+        "title": "Generaldebatte: Deutschland braucht mehr als einen gewonnenen Schlagabtausch",
+        "teaser": "Natalie Weber fragt nach der Generaldebatte nicht nach dem Sieger im Rededuell, sondern nach der Wirkung im Alltag: Was kommt bei Menschen und Unternehmen an, wer trägt die Kosten - und was schützt unsere Demokratie?",
+        "published_at": "2026-09-09T19:04:06.352Z",
+        "updated_at": "2026-09-09T19:04:06.352Z"
+      },
+      "first_seen": "2026-09-09T06:55:00.000Z",
+      "last_updated": "2026-09-09T19:21:19.798Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-fb15832cf9ba10b84c83",
+      "case_file": null,
+      "source_published_at": "2026-09-09T00:00:00.000Z",
+      "published_at": "2026-09-09T19:21:19.798Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ],
+          [
+            "dlf-nachrichten"
+          ],
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 3,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Welche Haushaltstitel endgültig beschlossen werden.",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "Verabschiedetes Haushaltsgesetz und Einzelpläne",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c65bc589299d970b",
+          "announced_at": "2026-09-09T07:00:00.000Z",
+          "follow_up_date": "2026-09-16T19:21:19.798Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-generaldebatte-1194750",
+          "source_type": "official_rss",
+          "published_at": "2026-09-09T07:00:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/merz-verteidigt-reformplaene-der-koalition-weidel-nennt-haushaltsentwurf-kapitulationserklaerung-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:40:46.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/bundeskanzler-generaldebatte-haushaltswoche-2451890",
+          "source_type": "official_rss",
+          "published_at": "2026-09-09",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-c46eaf3fa3e1d9ce",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c46eaf3fa3e1d9ce-29bf4b29029ac0a3-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c46eaf3fa3e1d9ce-095a5340f6bd5fa5-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c46eaf3fa3e1d9ce-d8e963e1b49eb81b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "autobahn-in-die-schweiz-wegen-polizei-einsatzes-gesperrt-swr-meldet-zwei-festnahmen-e1d9ce",
+      "title": "Autobahn in die Schweiz wegen Polizei-Einsatzes gesperrt - SWR meldet zwei Festnahmen",
+      "source_summary": "In Baden-Württemberg ist die Autobahn A861 in die Schweiz am Mittwoch wegen eines polizeilichen Einsatzes vollständig gesperrt worden. Laut der vorliegenden Meldung war die Strecke in beiden Fahrtrichtungen nicht befahrbar. Als Begründung wird ein polizeilicher Einsatz genannt; weitere Details sind in der Quelle nicht belegt.\n\nDie Meldung verweist außerdem auf eine weitere Information des SWR: Danach sollen zwei Männer festgenommen worden sein. Ob ein Sprengstoffverdacht bestätigt wurde, wie lange die Sperrung dauerte und wie der Einsatz endete, bleibt in der gelieferten Quelle offen.",
+      "summary": "Die A861 in die Schweiz war am Mittwoch wegen eines Polizeieinsatzes gesperrt. Nach SWR-Informationen gab es zwei Festnahmen; weitere Details bleiben offen.",
+      "detail_summary": "Die Meldung beschreibt eine akute Störung auf einer grenzüberschreitenden Verkehrsverbindung. Belegt sind die Vollsperrung der A861 in beide Richtungen und zwei Festnahmen nach SWR-Informationen. Offen bleibt, was den Einsatz ausgelöst hat und ob ein Sprengstoffverdacht bestätigt wurde. Für die Einordnung reicht die Quelle nur als erster, noch nicht abgesicherter Zwischenstand. Relevanz entsteht vor allem durch die unmittelbare Unterbrechung von Verkehr und möglicher Sicherheitsbezug. Ein Wirkungsschluss über Folgen, Dauer oder Verantwortung ist mit der gelieferten Evidenz noch nicht belastbar.",
+      "why_relevant": "Die Meldung betrifft eine grenzüberschreitende Autobahn, akute Verkehrsstörung und einen möglichen Sicherheitsvorfall. Das ist materiell wegen Reichweite, unmittelbarer Unterbrechung und offenem Gefahrenbezug.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Sperrung unterbricht kurzfristig Mobilität, Zugang und Planung für Verkehrsteilnehmende. Ein möglicher Sicherheitsvorfall erhöht das Risiko für Verzögerungen, Umleitungen und Belastungen für Einsatzkräfte. Die konkrete Ursache bleibt offen.",
+          "positive_path": {
+            "mechanism": "Falls der Einsatz eine Gefahr schnell begrenzt, kann die Sperrung Menschen vor unmittelbarem Schaden schützen und den Verkehrsraum sichern.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Die Vollsperrung stoppt den Verkehrsfluss, verzögert Reisen und kann Pendelnde, Reisende und Einsatzkräfte belasten.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Zur Umweltwirkung gibt es in der Quelle keine belastbaren Angaben. Allenfalls können Umleitungen kurzzeitig Emissionen verändern, aber das bleibt unbelegt.",
+          "positive_path": {
+            "mechanism": "Keine belastbare positive Umweltwirkung aus der Quelle ableitbar.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Umleitungen und Staus können lokal zusätzlichen Kraftstoffverbrauch und Emissionen auslösen, falls sie eintreten.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung enthält keinen hinreichend belegten Bezug zu demokratischen Verfahren oder institutionellen Entscheidungen. Ein Sicherheits- und Verkehrsereignis allein begründet noch keine demokratische Wirkung.",
+          "positive_path": {
+            "mechanism": "Kein belastbarer demokratischer Wirkungspfad aus der Quelle belegbar.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Ein möglicher Sicherheitsvorfall kann zwar öffentliche Aufmerksamkeit binden, aber eine demokratische Zustandsänderung ist hier nicht belegt.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "unternehmen",
+          "beschaeftigte",
+          "kommunen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T18:49:47.382Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T18:25:40.000Z",
+      "last_updated": "2026-09-09T18:57:09.160Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-7a13c31e7ec6e441b385",
+      "case_file": null,
+      "source_published_at": "2026-09-09T18:25:40.000Z",
+      "published_at": "2026-09-09T18:57:09.160Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Sperrung aufgehoben wurde, ist offen.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Status der Sperrung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-107195cd3fdea325",
+          "announced_at": "2026-09-09T18:25:40.000Z",
+          "follow_up_date": "2026-09-16T18:57:09.160Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob der Sprengstoffverdacht bestätigt wurde, ist offen.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung oder Entkräftung des Verdachts",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-905d4641626b36ef",
+          "announced_at": "2026-09-09T18:25:40.000Z",
+          "follow_up_date": "2026-09-16T18:57:09.160Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Festnahmen Bestand haben, ist offen.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung der Festnahmen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-037cb5a6ff0cfe6d",
+          "announced_at": "2026-09-09T18:25:40.000Z",
+          "follow_up_date": "2026-09-16T18:57:09.160Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/autobahn-in-die-schweiz-wegen-polizei-einsatzes-gesperrt---swr-meldet-zwei-festnahmen-38229310.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T18:25:40.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-026d11d680622587",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-026d11d680622587-ca99ce30cedd3f02-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-026d11d680622587-ce9e7773a23754e6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-026d11d680622587-183e3dd768afc617-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-026d11d680622587-453a15ea164c767b-source.png"
+        }
+      },
+      "slug": "bundestag-neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritis-622587",
+      "title": "Bundestag - Neuer Sportstaatsminister Rauhe will Olympia nach Deutschland holen, AfD kritisiert Benennung",
+      "source_summary": "Im Bundestag wurde in der Generaldebatte über Sportpolitik und den Haushalt für Sport und Ehrenamt gesprochen. Der neue Staatsminister Rauhe sagte, er wolle olympische und paralympische Spiele nach Deutschland holen. Er verwies darauf, dass aus einer Bewerbung einer Stadt oder Region eine gemeinsame deutsche Bewerbung werden müsse.\n\nDie AfD kritisierte die Benennung Rauhes und stellte eigene sportpolitische Prioritäten heraus. Zugleich nennt die Meldung Haushaltszahlen: Für Sport und Ehrenamt sind rund 400 Millionen Euro für 2027 vorgesehen, etwa 12 Millionen Euro mehr als im laufenden Jahr. Für die Olympiabewerbung sind sechs Millionen Euro eingeplant. Offene Punkte bleiben der weitere politische Weg und die tatsächliche Umsetzung.",
+      "summary": "Rauhe will eine deutsche Olympia- und Paralympia-Bewerbung anstoßen; die AfD kritisiert seine Benennung. Im Haushalt sind dafür und für Sport und Ehrenamt konkrete Mittel genannt.",
+      "detail_summary": "Die Meldung beschreibt eine Debatte im Bundestag mit zwei klaren Ebenen: die politische Ankündigung von Rauhe und die haushaltspolitische Einordnung. Neu ist vor allem der öffentliche Anspruch, olympische und paralympische Spiele nach Deutschland holen zu wollen, plus die genannten Mittel für 2027. Die Relevanz liegt weniger in Reichweite als in einem möglichen Wirkpfad über Sportförderung, Standortpolitik und die spätere Bewerbungsentscheidung. Eingetretene Wirkung ist noch nicht belegt; es handelt sich um eine erste Lagebeschreibung mit offenem Umsetzungsstand. Die Evidenz stammt nur aus einer journalistischen Quelle, deshalb bleiben die Aussagen vorläufig.",
+      "why_relevant": "Die Meldung verbindet eine neue politische Funktion mit konkreten Haushaltszahlen und einer umstrittenen Benennung. Das ist für Sportpolitik, Bundeshaushalt und die spätere Olympiafrage unmittelbar relevant.",
+      "topic": [
+        "Demokratie"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Ankündigung und die Haushaltszahlen verschieben den politischen und administrativen Ausgangspunkt für eine mögliche Bewerbung und für Sportförderung. Eine tatsächliche Wirkung auf Verfahren, Zustimmung oder Austragung ist noch nicht belegt.",
+          "positive_path": {
+            "mechanism": "Mehr Aufmerksamkeit, konkrete Mittel und ein benannter Staatsminister können einen institutionellen Pfad für eine gemeinsame Bewerbung und für zusätzliche sportpolitische Koordination öffnen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Die Benennung und die olympische Zielsetzung können Konflikte über Prioritäten, politische Symbolik und Mittelverteilung verstärken und dadurch den Konsensprozess erschweren.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der Meldung ergibt sich kein belegter Umwelt- oder Klimapfad. Eine spätere Austragung oder Infrastrukturentscheidung könnte Umweltfragen berühren, hier ist das aber noch nicht belastbar ableitbar.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die öffentliche Benennung und die Haushaltsdebatte erhöhen Transparenz und parlamentarische Rechenschaft, können aber zugleich Konflikte um Prioritäten und Legitimation verstärken. Eine demokratische Wirkung ist damit nicht automatisch positiv.",
+          "positive_path": {
+            "mechanism": "Öffentliche Debatte über Funktion, Mittel und Zielsetzung schafft sichtbare Rechenschaft und macht politische Prioritäten prüfbar.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Polarisierte Kritik an der Benennung und an der Prioritätensetzung kann den Streit über Sachpolitik zuspitzen und Kompromisse erschweren.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "kinder_jugend"
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Meldung enthält eine politisch markierte Benennung und eine Konfliktlinie zwischen Regierung und AfD. Das macht sie für Nachrichtenlage und Framing prüfbar.",
+        "factual_core": "Rauhe will olympische und paralympische Spiele nach Deutschland holen; die AfD kritisiert seine Benennung; im Haushalt stehen konkrete Mittel für Sport und Ehrenamt.",
+        "epistemic_status": {
+          "confirmed": [
+            "Rauhe sagte, er wolle olympische und paralympische Spiele nach Deutschland holen.",
+            "Die AfD kritisierte die Benennung Rauhes.",
+            "Für Sport und Ehrenamt sind rund 400 Millionen Euro und für die Olympiabewerbung sechs Millionen Euro eingeplant."
+          ],
+          "actor_claims": [
+            "Rauhe verbindet seine Rolle mit dem Ziel einer deutschen Olympia-Bewerbung.",
+            "Die AfD beschreibt ihre Linie als ideologiefreie Sachpolitik."
+          ],
+          "open": [
+            "Ob und wann eine konkrete Bewerbung folgt."
+          ]
+        },
+        "attribution": {
+          "frame_source": "Deutschlandfunk",
+          "speaker": "Rauhe und Schieske",
+          "original_term": "ideologiefreie",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "ideologiefreie",
+          "origin_in_story": "Deutschlandfunk",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "ideologiefreie",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Die Benennung wird als politischer Streitfall erzählt, nicht nur als Personalie.",
+          "implied_cause": "Die AfD stellt die Auswahl und die inhaltliche Ausrichtung des Staatsministers infrage.",
+          "implied_responsibility": "Verantwortung wird im Streit um die Benennung und die Sportprioritäten verortet.",
+          "implied_threat": "Gefahr eines politischen Konflikts über Legitimation und Sachpolitik.",
+          "implied_solution_space": "Mehr Sachpolitik, klare Mittelverwendung und weitere politische Klärung.",
+          "material_omissions": []
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Bundestagsdebatte und parteipolitische Kritik",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "dlf-nachrichten",
+              "claim_supported": "Öffentliche sportpolitische Positionierung in der Generaldebatte"
+            }
+          ],
+          "uncertainty": "Die konkrete politische Wirkung ist offen; es liegt nur eine vorläufige Einordnung vor."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Sportpolitik, Haushaltsdebatte, olympische Bewerbung",
+          "normalization_potential": "low",
+          "repetition_risk": "low",
+          "polarization_potential": "mittel",
+          "trust_effect_potential": "mittel",
+          "discourse_effect_potential": "Die wiederholte Zuspitzung auf Benennung und Ideologie kann die Debatte polarisieren; zugleich erhöht die öffentliche Haushaltsangabe die Nachprüfbarkeit."
+        },
+        "impact_path": {
+          "first_order": "Benennung und Bewerbungsvorstoß erzeugen unmittelbare politische Aufmerksamkeit.",
+          "second_order": "Die Debatte verlagert sich auf Zuständigkeit, Prioritäten und Geld.",
+          "third_order": "Es kann ein längerfristiger Streit über Olympia, Sportförderung und staatliche Zielmarken entstehen."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Die Quelle nennt die sportpolitische Ankündigung, die Kritik der AfD und konkrete Haushaltszahlen.",
+          "what_is_inferred": "Die Formulierung 'ideologiefrei' dient als politischer Gegensatzmarker.",
+          "what_is_open": "Keine unabhängige Zweitquelle im Datensatz. Keine belastbare Aussage zu tatsächlichen Folgen.",
+          "facts": [
+            "Die Quelle nennt die sportpolitische Ankündigung, die Kritik der AfD und konkrete Haushaltszahlen."
+          ],
+          "observations": [
+            "Nur eine journalistische Quelle liegt vor."
+          ],
+          "inferences": [
+            "Die Formulierung 'ideologiefrei' dient als politischer Gegensatzmarker."
+          ],
+          "impact_potentials": [
+            "Mehr Aufmerksamkeit für die Personalie und die Olympiafrage."
+          ],
+          "impact_risks": [
+            "Polarisierung entlang der Benennungs- und Sachpolitikfrage."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine unabhängige Zweitquelle im Datensatz.",
+            "Keine belastbare Aussage zu tatsächlichen Folgen."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Die Meldung ist vor allem politisch interessant, weil sie eine neue Rolle im Kanzleramt mit einer klaren Zielsetzung verbindet: Rauhe will olympische und paralympische Spiele nach Deutschland holen. Dazu kommen konkrete Haushaltszahlen für Sport und Ehrenamt. Das ist mehr als eine bloße Personalie, weil daraus ein möglicher Wirkpfad für eine spätere Bewerbung und für weitere Mittelsteuerung entsteht. Zugleich bleibt offen, ob daraus tatsächlich Entscheidungen, Verfahren oder mehr Unterstützung folgen. Die AfD kritisiert die Benennung und setzt einen Gegentakt. Die Quelle ist nur eine journalistische Meldung, deshalb bleibt der Befund vorläufig und ohne belastbaren Wirkungsnachweis.",
+        "editorial_assessment": "Die Meldung ist vor allem politisch interessant, weil sie eine neue Rolle im Kanzleramt mit einer klaren Zielsetzung verbindet: Rauhe will olympische und paralympische Spiele nach Deutschland holen. Dazu kommen konkrete Haushaltszahlen für Sport und Ehrenamt. Das ist mehr als eine bloße Personalie, weil daraus ein möglicher Wirkpfad für eine spätere Bewerbung und für weitere Mittelsteuerung entsteht. Zugleich bleibt offen, ob daraus tatsächlich Entscheidungen, Verfahren oder mehr Unterstützung folgen. Die AfD kritisiert die Benennung und setzt einen Gegentakt. Die Quelle ist nur eine journalistische Meldung, deshalb bleibt der Befund vorläufig und ohne belastbaren Wirkungsnachweis.",
+        "fact_first_alternative": "Fakt: Rauhe will olympische und paralympische Spiele nach Deutschland holen; Wissenstand: vorläufige journalistische Meldung; Attribution: Rauhe und AfD-Aussage getrennt; Frame: politisch markierte Benennungs- und Sachpolitikdebatte.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Bundestag: Neuer Sportstaatsminister Rauhe will Olympia nach Deutschland holen",
+          "recommended_summary": "Rauhe will eine deutsche Olympia- und Paralympia-Bewerbung anstoßen; die AfD kritisiert seine Benennung. Im Haushalt sind dafür und für Sport und Ehrenamt konkrete Mittel genannt.",
+          "recommended_meta_description": "Neue Sportstaatsminister-Rolle, Olympia-Ziel und Haushaltszahlen prägen die Debatte im Bundestag."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T18:07:31.891Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T16:19:10.000Z",
+      "last_updated": "2026-09-09T18:17:42.373Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-deedc0809a40d5fa8b1b",
+      "case_file": null,
+      "source_published_at": "2026-09-09T17:40:46.000Z",
+      "published_at": "2026-09-09T18:17:42.373Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und wie aus der Ankündigung eine gemeinsame deutsche Olympiabewerbung wird.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "offizielle Bewerbungsentscheidung oder belastbare Verfahrensschritte",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bc4b25431ff4ae9b",
+          "announced_at": "2026-09-09T17:40:46.000Z",
+          "follow_up_date": "2026-09-16T18:17:42.373Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob der Haushaltsplan für 2027 im Parlament unverändert bleibt oder geändert wird.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "verabschiedete Haushaltsfassung und Mittelansätze",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e1363d19eb43ab75",
+          "announced_at": "2026-09-09T17:40:46.000Z",
+          "follow_up_date": "2026-09-16T18:17:42.373Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritisiert-benennung-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:40:46.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-50924fbe12d4ad5f",
       "title_image": {
@@ -1014,12 +2203,25 @@
     {
       "story_id": "wt-688b36d040bfbf87",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-688b36d040bfbf87-11b2f967c6c96f9c-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-688b36d040bfbf87-4ba9fe44b3293512-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-688b36d040bfbf87-77b8571c58a02a2a-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-688b36d040bfbf87-caa4e99f702f57eb-source.png"
         }
       },
       "slug": "afd-wahler-in-sachsen-anhalt-wer-die-partei-gewahlt-hat-bfbf87",
@@ -2570,9 +3772,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3e258fc08f00f85e-62b70584f81b2799-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3e258fc08f00f85e-8c2060ae77e1387c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3e258fc08f00f85e-7b8b8868724a439c-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "74-jahriger-nach-messerangriff-in-freiburg-gestorben-00f85e",
@@ -2718,9 +3930,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-dc674d56860c0346-0edead1995d48c81-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-dc674d56860c0346-2b5ade285688ef94-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-dc674d56860c0346-20e1e786eebdb84e-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "iran-attacks-us-base-after-american-strikes-on-tankers-0c0346",
@@ -4477,12 +5699,25 @@
     {
       "story_id": "wt-5640ff3e4191a49a",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5640ff3e4191a49a-886cbaedb2702345-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5640ff3e4191a49a-fc6f43c0ba3c313e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5640ff3e4191a49a-c1917226c0213f58-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5640ff3e4191a49a-7ae1616204511683-source.png"
         }
       },
       "slug": "behg-anderung-co2-preis-soll-2027-stabil-bleiben-91a49a",
@@ -4609,9 +5844,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbe37953fcbe9af5-e0f7f0284a96ca6a-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbe37953fcbe9af5-1bea8b1d357c8734-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbe37953fcbe9af5-ac180b31bf272491-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "wahlergebnis-sachsen-anhalt-afd-verschickt-einladung-zu-gesprachen-an-cdu-be9af5",
@@ -5630,12 +6875,25 @@
     {
       "story_id": "wt-5a2fe52ebad137c3",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5a2fe52ebad137c3-00ea69503cb07836-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5a2fe52ebad137c3-b2e59c7702fb22c3-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5a2fe52ebad137c3-77f7c44512027dcd-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5a2fe52ebad137c3-3b629d4fae77bd80-source.png"
         }
       },
       "slug": "us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-d137c3",
@@ -6726,9 +7984,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0703aa9051cf40d-093673101187167c-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0703aa9051cf40d-f003ec44a52e6329-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0703aa9051cf40d-e645766a0f1b5970-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "krieg-funf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-1cf40d",
@@ -8377,12 +9645,25 @@
     {
       "story_id": "wt-d2fe68062d8518b6",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d2fe68062d8518b6-905cfe6e7c7179c5-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d2fe68062d8518b6-97d50bc1a299704d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d2fe68062d8518b6-bc0de012183efaf7-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d2fe68062d8518b6-fbb4a3b0464f5019-source.png"
         }
       },
       "slug": "welt-bericht-details-zur-geplanten-steuer-reform-bei-kryptowerten-wie-dem-bitcoin-werden-8518b6",
@@ -8507,9 +9788,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6222b0ef3b2ae801-14b1ad68722b09cd-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6222b0ef3b2ae801-ed2a3f977f719447-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6222b0ef3b2ae801-a3586fc0d19ce773-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "newsblog-zur-landtagswahl-in-sachsen-anhalt-wachsender-zuspruch-fur-bsw-vorschlag-zu-una-2ae801",
@@ -9724,9 +11015,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a507ffe4779c1fd4-3f66dc50e4fabe98-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a507ffe4779c1fd4-a3828306c06580b6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a507ffe4779c1fd4-e9bf28fd728bc821-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "grune-fordern-reformen-in-der-psychiatrischen-versorgung-9c1fd4",
@@ -10135,9 +11436,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-26f87ea8d0b41af4-9cf3025bd70854d0-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-26f87ea8d0b41af4-725728937844d317-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-26f87ea8d0b41af4-ce68b0acfa306efa-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "eugh-politische-kampagne-namens-ikea-plan-kann-mobelhandler-schaden-b41af4",
@@ -26853,6 +28164,17 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-7db837acf47c",
+      "story_id": "wt-63cb95e544d260ce",
+      "slug": "generaldebatte-deutschland-braucht-mehr-als-einen-gewonnenen-schlagabtausch",
+      "title": "Generaldebatte: Deutschland braucht mehr als einen gewonnenen Schlagabtausch",
+      "subtitle": "Ein Haushalt ist noch keine Verbesserung. Eine scharfe Antwort noch kein Schutz. Warum wir wirksame Reformen und demokratische Korrekturfähigkeit zusammen denken müssen.",
+      "teaser": "Natalie Weber fragt nach der Generaldebatte nicht nach dem Sieger im Rededuell, sondern nach der Wirkung im Alltag: Was kommt bei Menschen und Unternehmen an, wer trägt die Kosten - und was schützt unsere Demokratie?",
+      "published_at": "2026-09-09T19:04:06.352Z",
+      "updated_at": "2026-09-09T19:04:06.352Z",
+      "reading_time_minutes": 10
+    },
     {
       "analysis_id": "woek-analysis-2701577d44a3",
       "story_id": "wt-e10c23f5e37ed39e",

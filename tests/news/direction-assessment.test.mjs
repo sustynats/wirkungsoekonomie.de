@@ -40,6 +40,24 @@ test('empty-path normalization never deletes incomplete evidence, content, extra
   delete a.direction_assessment_version;a.human.tendency='risiko';assert.deepEqual(normalizeEmptyDirectionPaths(a),[], 'no historical migration');
 });
 
+test('an explicitly absent path permits empty enum templates, but no substantive or uncertain judgment is erased',()=>{
+  const template=()=>({mechanism:'',source_ids:[],effect_type:'procedural_possibility',reference:'assessment_baseline'});
+  for(const mechanism of ['', 'null']) {
+    const a=fixture();Object.assign(a.planet,{tendency:'offen',direction_basis:'no_path',positive_path:{...template(),mechanism},negative_path:null});
+    assert.deepEqual(normalizeEmptyDirectionPaths(a),['planet.positive_path']);
+    assert.deepEqual(directionAssessmentErrors(a,sources,{requireCurrent:true}),[]);
+  }
+  for(const changed of [{mechanism:'Ein begründeter Wirkpfad ist nicht leer.'},{source_ids:['source-999']},{extra:'content'},{effect_type:'unknown'},{reference:'anderer politischer Vergleich'}]) {
+    const a=fixture();Object.assign(a.planet,{tendency:'offen',direction_basis:'no_path',positive_path:{...template(),...changed},negative_path:null});
+    const before=JSON.stringify(a);assert.deepEqual(normalizeEmptyDirectionPaths(a),[]);assert.equal(JSON.stringify(a),before);
+  }
+  for(const basis of ['assessed','unclear']) {
+    const a=fixture();a.human.positive_path=template();a.human.direction_basis=basis;
+    if(basis==='unclear')a.human.tendency='offen';
+    assert.deepEqual(normalizeEmptyDirectionPaths(a),[]);
+  }
+});
+
 const referenceStory=()=>({sources:[{source_id:'source-999',url:'https://example.org/one',title:'Die Beratung soll zusätzliche Öffnungszeiten erhalten.',summary:'Der Bericht beschreibt weitere geplante Veränderungen.'},{source_id:'source-other',url:'https://example.org/two',title:'Die Förderung einer anderen Beratungsstelle soll entfallen.'}]});
 
 test('path evidence aliases resolve only through the actual supplied story catalog',()=>{
@@ -79,14 +97,35 @@ test('direction diagnostics retain only shape and counts, never provider text or
     assert.equal(d.shape,shape);assert.equal(d.literal_null,path==='null');
     assert.equal(JSON.stringify(a),before);
   }
-  a.human.positive_path={mechanism:'PRIVATE UNTRUSTED MODEL TEXT',source_ids:['source-999','PRIVATE UNKNOWN SOURCE'],PRIVATE_KEY:'PRIVATE VALUE'};
+  a.human.positive_path={mechanism:'PRIVATE UNTRUSTED MODEL TEXT',source_ids:['source-999','PRIVATE UNKNOWN SOURCE'],effect_type:'PRIVATE EFFECT',reference:'PRIVATE REFERENCE',PRIVATE_KEY:'PRIVATE VALUE'};
   const d=analysisValidationDiagnostics(a,'',{sources}).direction_input;
   assert.equal(d.human.positive_path.mechanism_chars,'PRIVATE UNTRUSTED MODEL TEXT'.length);
   assert.equal(d.human.positive_path.source_ids_count,2);
   assert.equal(d.human.positive_path.known_source_ids_count,1);
+  assert.equal(d.human.positive_path.effect_type_shape,'string');
+  assert.equal(d.human.positive_path.effect_type,null);
+  assert.equal(d.human.positive_path.reference_shape,'string');
+  assert.equal(d.human.positive_path.reference,null);
   assert.doesNotMatch(JSON.stringify(d),/PRIVATE|UNTRUSTED|source-999/);
   assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_PATH_SOURCE_INVALID:human'));
   assert.doesNotThrow(()=>directionInputDiagnostics(null));
+});
+
+test('MPD output schema enumerates the exact reference contract, without silently repairing model judgments',()=>{
+  for(const key of ['positive_path','negative_path']) {
+    assert.equal(NEWS_DIMENSION_SCHEMA[key].effect_type,'independent_change|mitigation_only|unrealized_benefit|procedural_possibility');
+    assert.equal(NEWS_DIMENSION_SCHEMA[key].reference,'assessment_baseline|other_baseline');
+  }
+  const a=fixture();
+  const d=directionInputDiagnostics(a,sources).human.negative_path;
+  assert.equal(d.effect_type,'independent_change');assert.equal(d.reference,'assessment_baseline');
+  a.human.negative_path.reference='comparison with previous state';
+  const before=JSON.stringify(a);
+  assert.ok(directionAssessmentErrors(a,sources,{requireCurrent:true}).includes('AI_DIRECTION_PATH_REFERENCE_INVALID:human'));
+  assert.equal(JSON.stringify(a),before,'a free-text comparison must not be silently declared equivalent');
+  const prompt=buildAnalysisPrompt([{story_id:'test',title:'Test',claims:[],sources:[]}]);
+  assert.match(prompt,/jede Zahl muss in den zitierten Segmenten stehen/);
+  assert.match(prompt,/effect_type\/reference sind Pflichtfelder/);
 });
 
 test('missing, explicit uncertainty, missing pathway and unsupported balance are distinct visible states',()=>{

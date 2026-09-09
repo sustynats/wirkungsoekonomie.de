@@ -5,7 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateAnalysis } from "./lib.mjs";
 import { loadNewsRegistry, registryErrors } from "./registry.mjs";
-import { isMerged, relatedStories } from "./living-files.mjs";
+import { isMerged, relatedStories, mergedStoryTargetValid } from "./living-files.mjs";
 import { buildCaseFiles, caseIntegrityErrors } from "./case-files.mjs";
 import { editorialAnalysisValidationErrors, editorialResearchSourceErrors } from "./editorial-analysis.mjs";
 
@@ -32,8 +32,7 @@ for (const story of store.stories) {
   if (story.sources.some((source) => Object.hasOwn(source, "article_excerpt"))) fail(`TRANSIENT_ARTICLE_TEXT_PERSISTED:${story.story_id}`);
   if (isMerged(story)) {
     if (story.listed !== false || state.pending_story_ids.includes(story.story_id)) fail(`MERGED_STORY_STILL_QUEUED:${story.story_id}`);
-    const targets = story.retirement.canonical_story_ids || [];
-    if (!targets.length || targets.some((id) => id === story.story_id || !storiesById.get(id)?.published || isMerged(storiesById.get(id)))) fail(`MERGED_STORY_TARGET_INVALID:${story.story_id}`);
+    if (!mergedStoryTargetValid(story, storiesById)) fail(`MERGED_STORY_TARGET_INVALID:${story.story_id}`);
   }
   for (const id of isMerged(story) ? [] : story.living_file?.merged_story_ids || []) {
     if (!isMerged(storiesById.get(id) || {}) || !storiesById.get(id).retirement.canonical_story_ids.includes(story.story_id)) fail(`LIVING_FILE_ALIAS_INVALID:${story.story_id}:${id}`);

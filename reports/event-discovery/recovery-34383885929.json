@@ -1,0 +1,38 @@
+{
+  "source_run_id": 34383885929,
+  "artifact": "news-recovery-34383885929-1",
+  "recovered_at": "2026-09-09T18:08:29.737Z",
+  "base_commit": "0a7f6bd11972b6a75f8cb353f57e8a72ec714294",
+  "scope": "Four paid story reviews and their unique usage entry; prior recovered reviews, other stories and fetch state retained. One accepted story source-reviewed and published, same-event drafts joined.",
+  "selected_story_ids": [
+    "wt-63cb95e544d260ce",
+    "wt-57bb181a2afce3a9",
+    "wt-d480edd87394d624",
+    "wt-6000b2fabc397176"
+  ],
+  "published_story_id": "wt-6000b2fabc397176",
+  "additional_ai_calls": 0,
+  "estimated_original_cost_usd": 0.060956,
+  "files": [
+    {
+      "file": "data/news/stories.json",
+      "before_sha256": "d641965de4a3557f29c6ebdbf65364fd569d8cc20427fb731659df69fadeee2b",
+      "artifact_sha256": "7d8345219475154dd43f18d4b7dd0dec458c83646cbba001b68adf241f426d69"
+    },
+    {
+      "file": "data/news/state.json",
+      "before_sha256": "31960c72964d7788febe906cb4fa3d71ff01bcfe9646a99be3538197d6f5d0ae",
+      "artifact_sha256": "95f3f68e4dab149334363151bb5b38158d42a582ff9c3561262f2802fd97b240"
+    },
+    {
+      "file": "data/news/usage.json",
+      "before_sha256": "e1b115b9cc6abcb25f81e1b6b0a5fa561eec2909e3125d39c5e303b7890a0f51",
+      "artifact_sha256": "1a3b6ed3606455904baac765976ed78924673b919527dd2038ac5b9ec090fbfb"
+    },
+    {
+      "file": "data/news/newsroom.json",
+      "before_sha256": "9c2ed71d0ea89d4eabbc42afda063beddf37993cd33f8ccf80915cfda7a2601e",
+      "artifact_sha256": "d4fe1e1326593d1fd6454180e0f3e793bad7fef4f6bbca0bd8a4f8dbf04022c9"
+    }
+  ]
+}

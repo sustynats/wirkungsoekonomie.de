@@ -1,0 +1,271 @@
+{
+  "review_type": "story_draft_review",
+  "story_id": "wt-63cb95e544d260ce",
+  "expected_content_hash": "ec52f6bcfd9562b3bd1ab81f3696dd2a52167afbbf4b4b6eac1bd08d54d81242",
+  "research_checked_at": "2026-09-09T19:02:17.169Z",
+  "original_event_date": "2026-09-09",
+  "title": "Generaldebatte zum Haushalt 2027: Merz verteidigt Reformkurs, Opposition kritisiert Prioritäten",
+  "topics": [
+    "Politik",
+    "Wirtschaft",
+    "Gesellschaft",
+    "Energie",
+    "Demokratie"
+  ],
+  "sources": [
+    {
+      "source_id": "bundestag-hib",
+      "publisher": "Deutscher Bundestag - Heute im Bundestag",
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-generaldebatte-1194750",
+      "title": "Merz verteidigt Reformkurs der Koalition gegen die Angriffe der Opposition",
+      "summary": "Am 9. September 2026 setzte der Bundestag seine erste Beratung des Bundeshaushalts 2027 mit der Generaldebatte fort. Merz verteidigte den Reformkurs; Weidel kritisierte die Prioritäten. Dröge verlangte Schutz für bedrohte Menschen und einen Prüfauftrag für ein AfD-Verbot. Miersch betonte Kompromisse, Pellmann einen Infrastrukturplan. Für Kulturförderung im Inland sind 918,6 Millionen Euro nach 1,1 Milliarden Euro im Soll 2026 vorgesehen.",
+      "source_type": "official_rss",
+      "published_at": "2026-09-09T07:00:00.000Z",
+      "primary_source": true,
+      "source_priority": 96,
+      "source_topic": "Politik",
+      "content_hash": "6c5c7192e967be7d55769182046b87584da18a0f547fb16fa2a845e7f7de385a",
+      "source_item_id": "e56a23de93085a46170601e47ef92a55afcbef4a2fa39bfb12fb0a2fbb71fb4d",
+      "publisher_id": "bundestag",
+      "publisher_kind": "institution",
+      "source_role": "institutional_statement",
+      "language": "de",
+      "geography": [
+        "DE"
+      ],
+      "research_lane": "primary",
+      "requires_corroboration": false,
+      "source_published_at": "2026-09-09T07:00:00.000Z",
+      "ingested_at": "2026-09-09T16:25:19.359Z",
+      "agency_origin": "unknown",
+      "agency_origin_confidence": "unknown",
+      "provenance": {
+        "origin": "publisher:bundestag",
+        "basis": "publisher_only_origin_unverified",
+        "independence_established": false
+      },
+      "discovery_endpoint": "bundestag-plenary-agenda",
+      "discovery_method": "active_index_query",
+      "discovery_index_url": "https://www.bundestag.de/static/appdata/includes/rss/aktuellethemen.rss"
+    },
+    {
+      "source_id": "dlf-nachrichten",
+      "publisher": "Deutschlandfunk",
+      "url": "https://www.deutschlandfunk.de/merz-verteidigt-reformplaene-der-koalition-weidel-nennt-haushaltsentwurf-kapitulationserklaerung-100.html",
+      "title": "Generaldebatte im Bundestag - Merz verteidigt Reformpläne der Koalition - Weidel nennt Haushaltsentwurf \"Kapitulationserklärung\"",
+      "summary": "Bundeskanzler Merz hat im Bundestag bekräftigt, an den Reformplänen der schwarz-roten Koalition festhalten zu wollen. Deutschland müsse nachhaltiges Wirtschaftswachstum zurückgewinnen, sagte der CDU-Vorsitzende in der Generaldebatte. AfD-Chefin Weidel warf der Bundesregierung dagegen eine verfehlte Haushalts- und Wirtschaftspolitik vor.",
+      "source_type": "media_rss",
+      "published_at": "2026-09-09T17:40:46.000Z",
+      "primary_source": false,
+      "source_priority": 0,
+      "source_topic": "Politik",
+      "content_hash": "dd6e80d6a5021469a13bc313a043eb66cb68296549b0740f62c2cd5ff3a521e5",
+      "source_item_id": "90bc76b7f79111624a7f2b8fdd3bcb3db07e4f2246b1f763ad579430504473db",
+      "publisher_id": "deutschlandfunk",
+      "publisher_kind": "public_broadcasting",
+      "source_role": "journalistic_report",
+      "language": "de",
+      "geography": [
+        "DE",
+        "international"
+      ],
+      "research_lane": "media",
+      "requires_corroboration": false,
+      "source_published_at": "2026-09-09T17:40:46.000Z",
+      "ingested_at": "2026-09-09T18:07:31.891Z",
+      "agency_origin": "unknown",
+      "agency_origin_confidence": "unknown",
+      "provenance": {
+        "origin": "publisher:deutschlandfunk",
+        "basis": "publisher_only_origin_unverified",
+        "independence_established": false
+      }
+    },
+    {
+      "source_id": "bundesregierung-kompakt",
+      "url": "https://www.bundesregierung.de/breg-de/aktuelles/bundeskanzler-generaldebatte-haushaltswoche-2451890",
+      "title": "Rede des Bundeskanzlers bei der Generaldebatte zum Haushalt 2027",
+      "summary": "Die Belastung der Unternehmen durch hohe Energiekosten und Bürokratie müsse weiter abgebaut werden. Merz nennt außerdem Künstliche Intelligenz und Bevölkerungsschutz. Bei der Energieversorgung spricht er von Gaskraftwerken und regenerativen Energien. Er formuliert Zukunftsperspektiven für die junge Generation.",
+      "published_at": "2026-09-09",
+      "source_role": "institutional_statement",
+      "language": "de",
+      "geography": [
+        "DE"
+      ]
+    }
+  ],
+  "review_basis": "Manuelle Prüfung der institutionellen Bundestagsdokumentation, der regierungseigenen Redezusammenfassung und des Deutschlandfunk-Volltexts. Bestehenden, unveröffentlichten Ereignisdatensatz unter gleicher ID und URL weiterführen. Keine Duplikation, kein kostenpflichtiger Modellaufruf.",
+  "exclusions": [
+    "Kein vollständiges Wortprotokoll verfügbar.",
+    "Keine bereits beschlossenen oder gemessenen Folgen behauptet.",
+    "MPD-Risiken sind keine Gesamtbilanz aller Redebeiträge."
+  ],
+  "analysis": {
+    "story_id": "wt-63cb95e544d260ce",
+    "publication_recommendation": true,
+    "news_status": "developing",
+    "publication_depth": "initial",
+    "status": "laufende Entwicklung",
+    "analysis_type": "ex_ante",
+    "observed_outcome": null,
+    "source_summary": "Der Bundestag hat am 9. September die erste Lesung des Haushalts 2027 mit der Generaldebatte fortgesetzt. Kanzler Friedrich Merz verteidigte den Reformkurs. Alice Weidel kritisierte die Haushalts- und Wirtschaftspolitik; Katharina Dröge verlangte Schutz für bedrohte Menschen und eine Prüfung eines AfD-Verbots. Auch soziale Prioritäten und Investitionen waren umstritten.\n\nDie Bundesregierung verweist in ihrer Zusammenfassung der Kanzlerrede unter anderem auf Energiekosten, Bürokratie, Künstliche Intelligenz und Bevölkerungsschutz. Merz bezog erneuerbare Energien ausdrücklich ein. Seine Erfolgsbewertungen sind Aussagen der Regierung, keine unabhängig geprüfte Wirkungsbilanz. Ein abschließender Haushaltsbeschluss liegt noch nicht vor.",
+    "summary": "In der Generaldebatte verteidigt Merz seinen Reformkurs, während die Opposition Prioritäten bei Haushalt, Sozialem und Energie kritisiert. Über den Bundeshaushalt ist damit noch nicht abschließend entschieden.",
+    "detail_summary": "Neben dem politischen Schlagabtausch stehen konkrete Lebensbedingungen zur Debatte: verlässliche Leistungen, Investitionen, Energie und Schutz vor Ausgrenzung. Ein Detail des Entwurfs ist der niedrigere Ansatz für Kulturförderung im Inland. Noch ist offen, welche Titel das Parlament endgültig beschließt und wie sie sich im Alltag auswirken.",
+    "why_relevant": "Haushaltsentscheidungen betreffen Leistungen, wirtschaftliche Planung und gesellschaftlichen Schutz bundesweit. Die erste Lesung ist ein eigener parlamentarischer Anlass.",
+    "importance": "hoch",
+    "direction_assessment_version": "1.1",
+    "assessment_frame": {
+      "subject": "Risiken der diskutierten Förderabsenkungen, fossilen Bindungen und Ausgrenzung - nicht der parlamentarischen Debatte selbst",
+      "baseline": "Fortbestehende Teilhabe und Schutzfunktionen sowie eine verfügbare emissionsärmere Versorgung ohne diese zusätzlichen Einschränkungen"
+    },
+    "human": {
+      "relevance": "hoch",
+      "tendency": "risiko",
+      "direction_basis": "assessed",
+      "rationale": "Weniger Kulturförderung kann ohne gleichwertigen Ersatz Angebote und Teilhabe einschränken. Betroffene Projekte und Umfang sind noch nicht bestimmt.",
+      "positive_path": null,
+      "negative_path": {
+        "mechanism": "Wenn der niedrigere Förderansatz in Angebots- oder Personalverlust mündet und kein Ersatz besteht, sinkt die erreichbare kulturelle Teilhabe.",
+        "source_ids": [
+          "bundestag-hib"
+        ],
+        "effect_type": "independent_change",
+        "reference": "assessment_baseline"
+      }
+    },
+    "planet": {
+      "relevance": "hoch",
+      "tendency": "risiko",
+      "direction_basis": "assessed",
+      "rationale": "Das negative Risiko betrifft längere fossile Bindung gegenüber einer verfügbaren emissionsärmeren Alternative, nicht Merz' Bekenntnis zu erneuerbaren Energien.",
+      "positive_path": null,
+      "negative_path": {
+        "mechanism": "Wenn neue fossile Kapazitäten emissionsärmere Optionen verdrängen oder verzögern, können zusätzliche Emissionen und längere Abhängigkeiten entstehen. Ob dieser Pfad eintritt, ist offen.",
+        "source_ids": [
+          "bundesregierung-kompakt"
+        ],
+        "effect_type": "independent_change",
+        "reference": "assessment_baseline"
+      }
+    },
+    "democracy": {
+      "relevance": "hoch",
+      "tendency": "risiko",
+      "direction_basis": "assessed",
+      "rationale": "Die von Dröge angesprochenen Schutzbedürfnisse betreffen Zugehörigkeit und gleiche Teilhabe. Ein Schutzverlust wäre negativ; sein Eintritt wird nicht aus der Debatte behauptet.",
+      "positive_path": null,
+      "negative_path": {
+        "mechanism": "Wenn Menschen aufgrund ihrer Herkunft oder Identität ausgegrenzt werden und Schutz nicht erreichbar ist, werden gleiche Teilhabe und Vertrauen in staatliche Gleichbehandlung beeinträchtigt.",
+        "source_ids": [
+          "bundestag-hib"
+        ],
+        "effect_type": "independent_change",
+        "reference": "assessment_baseline"
+      }
+    },
+    "impact_potential": "Veränderte Förderung, Energieinvestitionen und Schutzentscheidungen können Lebensbedingungen und institutionelle Handlungsfähigkeit prägen. Die bloße Debatte ist kein Wirkungserfolg.",
+    "impact_risks": [
+      "Teilhabeverlust bei sinkender Förderung ohne Ersatz",
+      "Fossile Bindung bei verdrängten emissionsärmeren Alternativen",
+      "Schutzverlust bei Ausgrenzung"
+    ],
+    "mechanisms": [
+      "Haushaltstitel verändern verfügbare Mittel",
+      "Personal und Umsetzung entscheiden über Leistungen",
+      "Investitionen können langfristige Energiepfade binden"
+    ],
+    "first_order": [
+      "Reformpositionen und Prioritäten wurden im Parlament erläutert und kritisiert",
+      "Der Haushalt bleibt im Beratungsverfahren"
+    ],
+    "second_order": [
+      "Bei späterer Umsetzung können Angebote, Aufträge und Investitionsbedingungen verändert werden"
+    ],
+    "third_order": [
+      "Langfristig stehen staatliche Problemlösungsfähigkeit, Energiepfade und demokratische Korrekturfähigkeit auf dem Spiel"
+    ],
+    "systemic_relevance": "Finanzierung, Verwaltung, Teilhabe und Energieinfrastruktur hängen zusammen. Ein Mittelansatz ist nicht mit seiner späteren Wirkung gleichzusetzen.",
+    "transformation_potential": "Investitionen prägen Infrastruktur langfristig; die Debatte belegt keinen gemessenen Fortschritt.",
+    "resilience": "Handlungsfähigkeit braucht verlässliche Leistungen und wirksame Korrektur. Spätere Entscheidungen können beide verändern.",
+    "side_effects": [
+      "Mögliche Verlagerung von Kosten auf Familien und Betriebe"
+    ],
+    "uncertainties": [
+      "Endgültige Haushaltstitel",
+      "Tatsächliche Umsetzung und Betroffenheit",
+      "Energiepfad späterer Investitionen"
+    ],
+    "evidence_level": "hoch",
+    "attribution": "Bundestag und Bundesregierung dokumentieren Positionen; Deutschlandfunk sichert das Ereignis journalistisch ab. Die Wirkpfade sind bedingte Analyse, keine Erfolgsmessung.",
+    "watch_next": [
+      "Weiteres Haushaltsverfahren",
+      "Änderungen bei Kultur und sozialen Leistungen",
+      "Umsetzung von Energie- und Modernisierungsvorhaben"
+    ],
+    "reference_frameworks": [
+      "Agenda 2030 und Deutsche Nachhaltigkeitsstrategie: Teilhabe, Infrastruktur, Klima und Institutionen; Zielbezug ist kein Kausalitätsnachweis."
+    ],
+    "publication_gate": {
+      "news_value": "substantive_commitment",
+      "materiality_factors": [
+        "affected_scope",
+        "duration"
+      ],
+      "exceptional_factor": "systemic_relevance",
+      "evidence_basis": "primary_source_with_caveats",
+      "duplicate_status": "new_story",
+      "rationale": "Die erste Lesung mit Generaldebatte ist ein datierter parlamentarischer Vorgang mit konkreten Reformpositionen. Der vorhandene Ereignisdatensatz wird nach Quellenprüfung veröffentlicht."
+    },
+    "event_claims": [
+      {
+        "claim": "Der Bundestag setzte die erste Beratung des Haushalts 2027 mit einer Generaldebatte fort.",
+        "status": "primary_source_claim",
+        "evidence": [
+          {
+            "source_id": "bundestag-hib",
+            "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-generaldebatte-1194750",
+            "excerpt": "erste Beratung des Bundeshaushalts 2027"
+          }
+        ]
+      },
+      {
+        "claim": "Die Regierung nennt Wirtschafts-, Technologie- und Energievorhaben.",
+        "status": "primary_source_claim",
+        "evidence": [
+          {
+            "source_id": "bundesregierung-kompakt",
+            "url": "https://www.bundesregierung.de/breg-de/aktuelles/bundeskanzler-generaldebatte-haushaltswoche-2451890",
+            "excerpt": "Die Belastung der Unternehmen durch hohe Energiekosten und Bürokratie müsse weiter abgebaut werden."
+          }
+        ]
+      },
+      {
+        "claim": "Deutschlandfunk berichtet, dass Merz an den Reformplänen festhalten will.",
+        "status": "single_source_claim",
+        "evidence": [
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/merz-verteidigt-reformplaene-der-koalition-weidel-nennt-haushaltsentwurf-kapitulationserklaerung-100.html",
+            "excerpt": "Bundeskanzler Merz hat im Bundestag bekräftigt, an den Reformplänen der schwarz-roten Koalition festhalten zu wollen."
+          }
+        ]
+      }
+    ],
+    "followups": [
+      {
+        "claim": "Welche Haushaltstitel endgültig beschlossen werden.",
+        "source_id": "bundestag-hib",
+        "expected_by": null,
+        "expected_by_evidence": null,
+        "measurable_indicator": "Verabschiedetes Haushaltsgesetz und Einzelpläne"
+      }
+    ],
+    "media_impact": null,
+    "visuals": {
+      "affected_groups": [
+        "beschaeftigte",
+        "staat"
+      ]
+    }
+  }
+}
