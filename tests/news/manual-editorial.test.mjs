@@ -46,6 +46,11 @@ test("the Markdown subset preserves prose and punctuation, handles tables, and r
   assert.match(result.html, /A – B\. <strong>Wichtig\.<\/strong>/);
   assert.match(result.html, /scope="col"/);
   assert.match(result.html, /tabindex="0"/);
+  assert.doesNotMatch(result.html, /news-manual-table--wide/);
+  const wide = renderEditorialMarkdown("| Ziel | Maßnahme | Risiko |\n| --- | --- | --- |\n| Lernen | Fördern | Verlust |");
+  assert.match(wide.html, /news-manual-table--wide/);
+  const css = fs.readFileSync(path.join(root, "assets/css/news.css"), "utf8");
+  assert.match(css, /\.news-editorial-article--book \.news-manual-table--wide \.data-table\s*\{\s*min-width: 40rem !important;/);
   assert.throws(() => renderEditorialMarkdown('<script>alert(1)</script>'), /UNSUPPORTED_BLOCK/);
   assert.throws(() => renderEditorialMarkdown('[x](javascript:alert)'), /UNSAFE_LINK/);
   assert.throws(() => renderEditorialMarkdown('![x](https://example.org/x.jpg)'), /UNSUPPORTED_BLOCK/);

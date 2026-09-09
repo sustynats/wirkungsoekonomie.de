@@ -54,7 +54,7 @@ export function renderEditorialMarkdown(markdown) {
       const rows = [];
       while (i < lines.length && /^\|/.test(lines[i])) rows.push(lines[i++].trim().replace(/^\||\|$/g, "").split("|").map(c => c.trim()));
       if (rows.length < 3 || rows[1].some(c => !/^:?-+:?$/.test(c)) || rows.some(r => r.length !== rows[0].length)) throw new Error("EDITORIAL_MARKDOWN_TABLE_INVALID");
-      add(`<div class="table-wrap news-manual-table" role="region" aria-label="Wirkungsketten: Tabelle horizontal scrollbar" tabindex="0"><table class="data-table"><thead><tr>${rows[0].map(c => `<th scope="col">${inlineEditorialMarkdown(c)}</th>`).join("")}</tr></thead><tbody>${rows.slice(2).map(r => `<tr>${r.map(c => `<td>${inlineEditorialMarkdown(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`); continue;
+      add(`<div class="table-wrap news-manual-table${rows[0].length > 2 ? " news-manual-table--wide" : ""}" role="region" aria-label="Wirkungsketten: Tabelle horizontal scrollbar" tabindex="0"><table class="data-table"><thead><tr>${rows[0].map(c => `<th scope="col">${inlineEditorialMarkdown(c)}</th>`).join("")}</tr></thead><tbody>${rows.slice(2).map(r => `<tr>${r.map(c => `<td>${inlineEditorialMarkdown(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`); continue;
     }
     if (/^- /.test(line)) {
       const items = [];
