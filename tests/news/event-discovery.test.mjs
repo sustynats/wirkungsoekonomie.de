@@ -9,8 +9,49 @@ import { agendaSignal, extractDiscoveryMetadata, runActiveDiscovery, DISCOVERY_L
 import { normalizeNewsRegistry, registryErrors } from '../../scripts/news/registry.mjs';
 import { runWirkungsticker, partitionAiQueue, unchangedRankingBackfill } from '../../scripts/news/run.mjs';
 import { auditDay, auditMarkdown } from '../../scripts/news/audit-events.mjs';
+import { duplicateGroups, mergeLivingFiles, isMerged } from '../../scripts/news/living-files.mjs';
+import { structuredEventIdentity } from '../../scripts/news/event-identity.mjs';
 
 const now = '2026-09-09T15:00:00.000Z';
+const borderSources = () => [
+  {title:'A861 bei Rheinfelden: Grenzübergang zur Schweiz wegen Sprengstoffverdachts gesperrt',summary:'In Rheinfelden an der Grenze zur Schweiz findet ein Polizeieinsatz statt. Autofahrer können die Landesgrenze derzeit nicht überqueren.'},
+  {title:'Notfälle: Grenze zur Schweiz dicht: Polizei prüft Auto auf Sprengstoff',summary:'Die Autobahn 861 an der Schweizer Grenze ist bei Rheinfelden aktuell gesperrt. Die Polizei untersucht am Grenzübergang ein Auto auf Sprengstoff.'},
+  {title:'Wohl zwei Männer nach Sprengstofffund an Schweizer Grenze festgenommen - Autobahnen bei Rheinfelden gesperrt',summary:'Der Grenzübergang zur Schweiz in Rheinfelden ist aktuell in beide Richtungen gesperrt, die Bundespolizei ist im Einsatz. Bei einer Kontrolle schlugen Sprengstoff-Suchhunde an.'},
+].map((source,i)=>({...source,source_id:`border-source-${i}`,item_id:`border-item-${i}`,published_at:'2026-09-09T14:00:00Z',url:`https://example.org/border-${i}`}));
+
+test('actual border reports share a place-event-day identity; country, topic and word overlap alone do not',()=>{
+  const sources=borderSources();
+  assert.equal(new Set(sources.map(source=>structuredEventIdentity(source)?.key)).size,1);
+  assert.equal(clusterItems(sources,[],now).length,1);
+  const a=sources[0], b=sources[1];
+  for(const wrong of [
+    {...b,summary:b.summary.replace('Rheinfelden','Konstanz')},
+    {...b,summary:b.summary.replace('861','862')},
+    {...b,published_at:'2026-09-10T14:00:00Z'},
+    {...b,published_at:'2026-09-09T21:00:00Z'},
+    {...b,title:`Rückblick: ${b.title}`},
+    {...b,title:`Zweiter Vorfall: ${b.title}`},
+    {...b,summary:'Am Grenzübergang ist alles gesperrt. Ein Auto wird auf Sprengstoff geprüft.'},
+    {...b,summary:`${b.summary} Auch in Konstanz gab es einen Einsatz.`},
+  ]) assert.equal(eventCompatibility(a,wrong).same_event,false,JSON.stringify(wrong));
+  const elsewhere=sources.map(source=>({...source,title:source.title.replaceAll('Rheinfelden','Kehl'),summary:source.summary.replaceAll('Rheinfelden','Kehl')}));
+  assert.equal(clusterItems(elsewhere,[],now).length,1,'generic place extraction, no city whitelist');
+});
+
+test('existing unpublished fragments consolidate before paid selection, preserving all original records',()=>{
+  const drafts=borderSources().map((source,i)=>({story_id:`draft-${i}`,title:source.title,sources:[source],published:false,first_seen:source.published_at,last_updated:source.published_at,versions:[]}));
+  const original=structuredClone(drafts);
+  const groups=duplicateGroups(drafts);
+  assert.equal(groups.length,1);assert.equal(groups[0].duplicate_ids.length,2);
+  assert.equal(mergeLivingFiles(drafts,groups,now).length,2);
+  const canonical=drafts.find(draft=>!isMerged(draft));
+  assert.equal(canonical.pending_update.sources.length,3);assert.equal(canonical.published,false);
+  for(const draft of drafts) assert.deepEqual(draft.sources,original.find(old=>old.story_id===draft.story_id).sources);
+  assert.equal(clusterItems(borderSources(),drafts,now).length,1);
+  assert.equal(mergeLivingFiles(drafts,duplicateGroups(drafts),now).length,0,'idempotent');
+  const stale=structuredClone(original);stale[1].published=true;
+  assert.equal(mergeLivingFiles(stale,groups,now).some(change=>change.story_id==='draft-1'),false,'stale draft-only plan cannot retire a publication');
+});
 const fixture = JSON.parse(fs.readFileSync(new URL('./fixtures/event-relevance-20260909.json', import.meta.url)));
 const source = { source_id:'test', publisher_id:'test', name:'Test', url:'https://example.org/', feed_url:'https://example.org/rss', source_type:'official_rss', primary_source:true, enabled:true, access:{status:'public', article:'bounded_public_text', cost_usd:0} };
 const item = (fields={}) => ({ source_id:'test', publisher_id:'test', url:'https://example.org/item', published_at:'2026-09-09T14:30:00Z', first_seen_at:'2026-09-09T12:00:00Z', primary_source:true, title:'Generaldebatte im Bundestag', summary:'Der Kanzler diskutiert Haushaltsprioritäten mit der Opposition.', ...fields });
@@ -184,4 +225,14 @@ test('fifteen newly discovered reports use one existing verification slot, not f
   const report=await runWirkungsticker({dryRun:true,now,registry:{sources:[source],policy:{event_relevance:{enabled:true}}},state:{source_status:{},seen_items:{},pending_story_ids:[],relevance_filter_version:EVENT_RELEVANCE_VERSION},storyStore:{stories:[]},usage:{runs:[]},newsroom:{source_items:{},events:{},event_sources:[],decisions:[],discovery_candidates:[]},budgetFx:{rate_date:'2026-09-09',rate_usd_per_eur:1.16},fetchFeedImpl:async()=>({body:rss,final_url:source.feed_url}),fetchArticleImpl:async()=>({excerpt:''}),
     callAiImpl:async candidates=>{calls++;assert.equal(candidates.length,1);assert.equal(candidates[0].sources.length,15);assert.ok(buildAnalysisPrompt(candidates).length<=39000);return{analyses:[{story_id:candidates[0].story_id,publication_recommendation:false,rejection:{code:'insufficient_evidence',reason:'Die Testquelle enthält noch keine ausreichenden Einzelbelege zur Debatte.'}}],model:'gpt-5.4-mini',reported_usage:{input_tokens:100,output_tokens:50}}}});
   assert.equal(calls,1);assert.equal(report.ai_stories,1);assert.equal(report.published_stories,0);assert.equal(report.ai_calls,1);
+});
+
+test('the real worker combines already queued border reports into one paid review',async()=>{
+  const sources=borderSources().map(item=>({...item,source_id:'test',publisher:'Test',primary_source:true}));
+  const drafts=sources.map((item,i)=>({story_id:`queued-${i}`,title:item.title,sources:[item],published:false,pending_reason:'AI_BUDGET_OR_BATCH_LIMIT',first_seen:item.published_at,last_updated:item.published_at,versions:[]}));
+  const rss=`<rss><channel>${sources.map(item=>`<item><title>${item.title}</title><link>${item.url}</link><description>${item.summary}</description><pubDate>Wed, 09 Sep 2026 14:00:00 GMT</pubDate></item>`).join('')}</channel></rss>`;
+  let calls=0;
+  const report=await runWirkungsticker({dryRun:true,now,registry:{sources:[source],policy:{event_relevance:{enabled:true}}},state:{source_status:{},seen_items:{},pending_story_ids:[],relevance_filter_version:EVENT_RELEVANCE_VERSION},storyStore:{stories:drafts},usage:{runs:[]},newsroom:{source_items:{},events:{},event_sources:[],decisions:[],discovery_candidates:[]},budgetFx:{rate_date:'2026-09-09',rate_usd_per_eur:1.16},fetchFeedImpl:async()=>({body:rss,final_url:source.feed_url}),fetchArticleImpl:async()=>({excerpt:''}),
+    callAiImpl:async candidates=>{calls++;assert.equal(candidates.length,1);assert.equal(candidates[0].sources.length,3);return{analyses:[{story_id:candidates[0].story_id,publication_recommendation:false,rejection:{code:'insufficient_evidence',reason:'Die Testbelege bestätigen den Sprengstoffverdacht noch nicht unabhängig.'}}],model:'gpt-5.4-mini',reported_usage:{input_tokens:100,output_tokens:50}}}});
+  assert.equal(calls,1);assert.equal(report.living_file_merges.length,2);assert.equal(report.published_stories,0);
 });

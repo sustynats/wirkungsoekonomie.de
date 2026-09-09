@@ -1,6 +1,8 @@
 // Display fallbacks are not analytical verdicts. Never rewrite old judgments.
 export const DIRECTION_ASSESSMENT_VERSION = '1.1';
 const supportedVersions = new Set(['1.0', DIRECTION_ASSESSMENT_VERSION]);
+const effectTypes = ['independent_change', 'mitigation_only', 'unrealized_benefit', 'procedural_possibility'];
+const references = ['assessment_baseline', 'other_baseline'];
 export const DIRECTION_SEPARATION_RULE = 'Eintritt/Ausmaß/Evidenz/Richtung trennen: bedingter Schaden kann klar negativ sein. Keine False Balance: Schutzplanke/Unsicherheit/Streit sind keine Gegenwirkung. Keine Richtung aus Partei/Thema/Relevanz. Ereignis/Reaktion/Politik trennen, Systemkopplungen prüfen.';
 export const DIRECTION_REFERENCE_RULE = 'Bewerteten Eingriff und Vergleich ohne Eingriff nennen; alle bilanzierten Pfade brauchen dieselbe Referenz. Nachbesserung gegenüber schlechterem Entwurf ≠ Verbesserung des Ausgangszustands. Restschaden/Risikominderung trennen. Ausbleibender Nutzen ≠ eigenständiger Schaden; bloßes Verfahren ≠ Demokratiegewinn. Eigenständige Vorteile anderer Maßnahmen separat zeigen. Risikominderung als eigener Gegenstand braucht eigenen Vergleich.';
 export const NEWS_DIRECTION_RULE = `${DIRECTION_SEPARATION_RULE} ${DIRECTION_REFERENCE_RULE} assessment_frame:{subject,baseline}. tendency: chance/risiko/gemischt/offen; direction_basis: assessed, nur bei offen unclear/no_path. Chance braucht positive_path, Risiko negative_path, gemischt beide; unbenötigte Pfade null. Bilanzierbar: effect_type=independent_change, reference=assessment_baseline. Nicht bilanzierbar: mitigation_only/unrealized_benefit/procedural_possibility bzw. other_baseline. subject/baseline/rationale/mechanism ≥20 Zeichen. source_ids belegen Ausgangspunkt, nicht Kausalität. Keine weiteren Quellenabrufe.`;
@@ -13,8 +15,8 @@ export const NEWS_DIMENSION_SCHEMA = {
   tendency: 'chance|risiko|gemischt|offen',
   direction_basis: 'assessed|unclear|no_path',
   rationale: 'string',
-  positive_path: { mechanism: 'string', source_ids: ['string'], effect_type: 'string', reference: 'string' },
-  negative_path: { mechanism: 'string', source_ids: ['string'], effect_type: 'string', reference: 'string' },
+  positive_path: { mechanism: 'string', source_ids: ['source_id oder gelieferte evidence_id'], effect_type: effectTypes.join('|'), reference: references.join('|') },
+  negative_path: { mechanism: 'string', source_ids: ['source_id oder gelieferte evidence_id'], effect_type: effectTypes.join('|'), reference: references.join('|') },
 };
 const tendencies = new Set(['chance', 'risiko', 'gemischt', 'offen']);
 const bases = new Set(['assessed', 'unclear', 'no_path']);
@@ -52,6 +54,10 @@ export function directionInputDiagnostics(analysis, sources = []) {
     source_ids_shape: valueShape(path?.source_ids),
     source_ids_count: Array.isArray(path?.source_ids) ? path.source_ids.length : null,
     known_source_ids_count: Array.isArray(path?.source_ids) ? path.source_ids.filter(id => sourceIds.has(id)).length : null,
+    effect_type_shape: valueShape(path?.effect_type),
+    effect_type: effectTypes.includes(path?.effect_type) ? path.effect_type : null,
+    reference_shape: valueShape(path?.reference),
+    reference: references.includes(path?.reference) ? path.reference : null,
   });
   return Object.fromEntries(['human','planet','democracy'].map(key => {
     const item = analysis?.[key];
@@ -96,7 +102,7 @@ export function directionAssessmentErrors(analysis, sources = [], { requireCurre
     for (const path of [item?.positive_path, item?.negative_path].filter(Boolean)) {
       if (!substantive(path.mechanism) || !Array.isArray(path.source_ids) || !path.source_ids.length
         || path.source_ids.some(id => !sourceIds.has(id))) errors.push(`AI_DIRECTION_PATH_SOURCE_INVALID:${key}`);
-      if (requireReference && (!['independent_change', 'mitigation_only', 'unrealized_benefit', 'procedural_possibility'].includes(path.effect_type) || !['assessment_baseline', 'other_baseline'].includes(path.reference))) errors.push(`AI_DIRECTION_PATH_REFERENCE_INVALID:${key}`);
+      if (requireReference && (!effectTypes.includes(path.effect_type) || !references.includes(path.reference))) errors.push(`AI_DIRECTION_PATH_REFERENCE_INVALID:${key}`);
     }
   }
   return [...new Set(errors)];

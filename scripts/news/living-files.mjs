@@ -1,6 +1,7 @@
 // Deterministic routing, before AI. A shared topic is never an event identity.
 import { eventCompatibility } from "./newsroom.mjs";
 import { courtCaseRelation } from "./court-case-identity.mjs";
+import { structuredEventIdentity } from './event-identity.mjs';
 const DAY = 86400000;
 const time = (value) => Date.parse(value || "") || 0;
 const normal = (value) => String(value || "").normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
@@ -247,10 +248,16 @@ export function mergeLivingFiles(stories, groups, now) {
   const byId = new Map(stories.map((story) => [story.story_id, story]));
   for (const group of groups) {
     const canonical = byId.get(group.canonical_id);
-    if (!canonical?.published || canonical.listed === false) continue;
+    if (!canonical || canonical.listed === false || (!canonical.published && !group.unpublished_only)) continue;
     for (const id of group.duplicate_ids) {
       const duplicate = byId.get(id);
       if (!duplicate || duplicate === canonical || isMerged(duplicate) || duplicate.listed === false) continue;
+      if (!canonical.published) {
+        // Consolidate only never-published, explicitly identified queue peers.
+        // A stale plan cannot redirect an already published article this way.
+        const event = eventCompatibility(canonical.sources?.[0] || canonical, duplicate.sources?.[0] || duplicate);
+        if (duplicate.published || !event.same_event || !['institution_proceeding_day','specific_incident_place_day'].includes(event.reason)) continue;
+      }
       // Defense in depth: even a stale/precomputed merge plan may not bypass
       // the current subject guard or create a conflict with retained members.
       const retained = (canonical.living_file?.merged_story_ids || []).map(memberId => byId.get(memberId)).filter(Boolean);
@@ -290,14 +297,20 @@ export function mergeLivingFiles(stories, groups, now) {
 // the same leading article with compatible subjects. No transitive topic union.
 export function duplicateGroups(stories) {
   const active = stories.filter((story) => story.listed !== false && !isMerged(story))
-    .sort((a, b) => Number(Boolean(b.living_file?.consolidations?.length)) - Number(Boolean(a.living_file?.consolidations?.length)) || time(b.last_updated) - time(a.last_updated) || a.story_id.localeCompare(b.story_id));
+    .sort((a, b) => Number(Boolean(b.published)) - Number(Boolean(a.published)) || Number(Boolean(b.living_file?.consolidations?.length)) - Number(Boolean(a.living_file?.consolidations?.length)) || time(b.last_updated) - time(a.last_updated) || a.story_id.localeCompare(b.story_id));
   const used = new Set(), groups = [];
+  const queueKeys = new Map(active.filter(story => !story.published).map(story => [story.story_id, structuredEventIdentity(story.sources?.[0] || story)?.key]));
   for (const canonical of active) {
-    if (!canonical.published || used.has(canonical.story_id)) continue;
+    if (used.has(canonical.story_id) || (!canonical.published && !queueKeys.get(canonical.story_id))) continue;
     const matches = [];
     for (const other of active) {
       const matchesCanonical = (() => {
+      if (!canonical.published && (other.published || queueKeys.get(other.story_id) !== queueKeys.get(canonical.story_id))) return false;
       if (other === canonical || used.has(other.story_id) || subjectConflict(canonical, other)) return false;
+      if (!canonical.published) {
+        const event = eventCompatibility(canonical.sources?.[0] || canonical, other.sources?.[0] || other);
+        return !other.published && event.same_event && ['institution_proceeding_day','specific_incident_place_day'].includes(event.reason);
+      }
       const a = fileSubject(canonical), b = fileSubject(other);
       if (sameDiplomaticVisit(canonical, other)) return true;
       if (a.key && a.key === b.key && Math.abs(time(canonical.first_seen || canonical.published_at) - time(other.first_seen || other.published_at)) <= 7 * DAY) return true;
@@ -311,11 +324,12 @@ export function duplicateGroups(stories) {
         && Math.abs(time(canonical.first_seen || canonical.published_at) - time(other.first_seen || other.published_at)) <= 4 * DAY);
       })();
       if (matchesCanonical && matches.every(member => !subjectConflict(member, other)
-        && !(diplomaticVisit(member) && diplomaticVisit(other) && !sameDiplomaticVisit(member, other)))) matches.push(other);
+        && !(diplomaticVisit(member) && diplomaticVisit(other) && !sameDiplomaticVisit(member, other))
+        && (canonical.published || eventCompatibility(member.sources?.[0] || member, other.sources?.[0] || other).same_event))) matches.push(other);
     }
     if (matches.length) {
       matches.forEach((story) => used.add(story.story_id));
-      groups.push({ canonical_id: canonical.story_id, duplicate_ids: matches.map((story) => story.story_id), reason: "specific_object_or_leading_document" });
+      groups.push({ canonical_id: canonical.story_id, duplicate_ids: matches.map((story) => story.story_id), reason: "specific_object_or_leading_document", ...(!canonical.published ? {unpublished_only:true} : {}) });
     }
   }
   return groups;
