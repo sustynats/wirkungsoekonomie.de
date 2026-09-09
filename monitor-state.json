@@ -19,9 +19,14 @@
     },
     "provider": {
       "firstSeen": "2026-09-09T23:35:29.684Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ee591a0846e91be33acfceb7",
+      "content": "⚠ WÖk-Betriebsstörung\nKI-Verarbeitung: Die KI-Schnittstelle antwortete mit HTTP 503; die Ursache ist noch nicht bestimmt. Laufbericht: 2026-09-09T23:43:03.030Z.\nSeit: 2026-09-09T23:35:29.684Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-09"
 }
