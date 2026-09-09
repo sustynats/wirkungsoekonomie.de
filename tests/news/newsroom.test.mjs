@@ -1,4 +1,5 @@
 import test from "node:test";
+import { EVENT_RELEVANCE_VERSION } from '../../scripts/news/event-relevance.mjs';
 import assert from "node:assert/strict";
 import { sourceDue, annotateSourceItem, evidenceGroups, eventCompatibility, freshnessFor, sourceHealth, dueFollowups, validateNewsroomAnalysis, normalizeEvidenceExcerpts, nextDeepeningCheckpoint, sourceEvidenceSegments, promptEvidenceSegments, resolveEvidenceReferences } from "../../scripts/news/newsroom.mjs";
 import { newsBudget, costFromUsage, refreshBudgetFx } from "../../scripts/news/budget.mjs";
@@ -230,7 +231,7 @@ test("an unchanged feed item is discarded before clustering, AI cost and publica
     source_status: {},
     seen_items: { [seen.item_id]: { source_id: seen.source_id, url: seen.url, content_hash: seen.content_hash, published_at: seen.published_at, last_seen: "2026-09-03T11:00:00.000Z" } },
     pending_story_ids: [],
-    relevance_filter_version: "4.0",
+    relevance_filter_version: EVENT_RELEVANCE_VERSION,
   };
   const report = await runWirkungsticker(fixture({
     state,

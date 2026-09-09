@@ -82,7 +82,7 @@ export const EVIDENCE_BASIS = {
 export const ANALYSIS_TYPES = {
   ex_ante: { label: "Ex ante", note: "Einschätzung vor messbarer Wirkung" },
   monitoring: { label: "Monitoring", note: "laufende Beobachtung mit ersten Daten" },
-  ex_post: { label: "Ex post", note: "Einordnung mit vorliegender Evidenz" },
+  ex_post: { label: "Ex post", note: "Rückblick auf beobachtete Veränderungen; weitere Folgen und Ursachenzurechnung getrennt prüfen" },
 };
 
 export const VISUALS_LIMITS = { keyFigures: 3, affectedGroups: 4, timeline: 4, chartPoints: 8, chartMinPoints: 3, label: 60, context: 140, title: 80, unit: 24, value: 32 };
@@ -467,6 +467,8 @@ export function renderTendency(value, assessment = null) {
 
 export function renderDimensionMeters(analysis = {}, { compact = false, tendency } = {}) {
   const legacy = tendency === undefined ? analysis.visuals?.tendency : tendency;
+  const frame = analysis.assessment_frame;
+  const reference = frame?.subject && frame?.baseline ? `<p class="wt-dims__reference"><strong>Bewertet:</strong> ${escapeHtml(frame.subject)}<br><strong>Verglichen mit:</strong> ${escapeHtml(frame.baseline)}</p>` : '';
   const items = Object.entries(DIMENSIONS).map(([key, meta]) => {
     const value = analysis[key] || { relevance: "offen", rationale: "Noch nicht belastbar eingeordnet." };
     const level = relevanceLevel(value.relevance);
@@ -481,7 +483,7 @@ export function renderDimensionMeters(analysis = {}, { compact = false, tendency
       ${!compact && assessment.tendency === 'gemischt' ? `<dl class="wt-dim__paths"><div><dt>Positiver Pfad</dt><dd>${escapeHtml(value.positive_path.mechanism)}</dd></div><div><dt>Negativer Pfad</dt><dd>${escapeHtml(value.negative_path.mechanism)}</dd></div></dl>` : ""}
     </div>`;
   }).join("");
-  return `<div class="wt-dims${compact ? " wt-dims--compact" : ""}">${items}</div>${compact ? "" : '<p class="wt-dims__legend">Die Einordnung gilt für die beschriebene Entwicklung, nicht pauschal für eine Partei oder ein Themenfeld. Balken: Relevanz. Richtung: positives Potenzial oder negatives Risiko, kein Wirkungsnachweis. Eintritt und Ausmaß können offen sein, obwohl die Richtung begründet ist. Gegenläufige Pfade werden nicht verrechnet.</p>'}`;
+  return `${reference}<div class="wt-dims${compact ? " wt-dims--compact" : ""}">${items}</div>${compact ? "" : '<p class="wt-dims__legend">Die Einordnung gilt für die beschriebene Entwicklung, nicht pauschal für eine Partei oder ein Themenfeld. Balken: Relevanz. Richtung: positives Potenzial oder negatives Risiko, kein Wirkungsnachweis. Eintritt und Ausmaß können offen sein, obwohl die Richtung begründet ist. Gegenläufige Pfade werden nicht verrechnet. Weniger Schaden gegenüber einem schlechteren Vorschlag bedeutet noch keine Verbesserung gegenüber dem Ausgangszustand.</p>'}`;
 }
 
 export function renderImpactPath(analysis = {}, prose = (items) => (items || []).map(escapeHtml).join(" "), visuals = null) {

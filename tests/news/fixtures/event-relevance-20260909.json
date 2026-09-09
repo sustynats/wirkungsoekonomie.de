@@ -1,0 +1,17 @@
+{
+  "scope": "Redaktionell verkürzte Recherchehinweise als lokale Auswahltests, keine verifizierten Publikationstexte. Fehlende Originaleingänge dürfen nicht als gefunden ausgegeben werden.",
+  "cases": [
+    {"id":"generaldebatte","title":"Generaldebatte im Bundestag: Kanzler und Opposition streiten über den Regierungskurs","summary":"Im Plenum werden die Haushaltsprioritäten und die Reformpolitik kontrovers diskutiert.","before":"C/D: mehrere Cluster, teils unter 30 oder wegen fehlendem Beschluss abgelehnt"},
+    {"id":"ratzeburg","title":"Messerangriff in Ratzeburger Supermarkt: Polizei bestätigt laufenden Einsatz","summary":"Ursache und Opferangaben sind noch nicht abschließend bestätigt.","before":"A: kein Rohinput"},
+    {"id":"rheinfelden","title":"Sprengstoffverdacht: Grenzübergang Rheinfelden gesperrt","summary":"Die Polizei untersucht ein Fahrzeug am Grenzübergang; nicht die gesamte Grenze geschlossen.","before":"A: kein Rohinput"},
+    {"id":"ost-umfrage","title":"RTL/ntv-Trendbarometer: Partei erreicht im Osten 45 Prozent bei Bundestagswahl-Frage","summary":"Neue Umfrage zur Parteienpräferenz. Veröffentlicht am 8. September, Befragung 1. bis 7. September.","before":"A: kein Rohinput; Originaldatum 08.09."},
+    {"id":"soeder","title":"Ministerpräsident gegen Parteiverbot, für härtere politische Auseinandersetzung","summary":"Die politische Position zum Verbotsverfahren und zur Zusammenarbeit wird erläutert.","before":"D: 10, lokal verworfen"},
+    {"id":"apple","title":"Apple soll heute erstmals ein faltbares iPhone vorstellen","summary":"Erwarteter Markteintritt bei faltbaren Smartphones. Datenblatt und Vorstellung noch nicht bestätigt.","before":"D: 10, lokal verworfen"},
+    {"id":"oel","title":"Brent steigt wieder über 100 Dollar: Krieg treibt Ölpreis und Inflationssorgen","summary":"Die europäischen Märkte reagieren auf Versorgungsrisiken.","before":"Bereits veröffentlicht; weitere Parallelkandidaten"},
+    {"id":"leuna","title":"Investorensuche für Leuna Polyamid gescheitert","summary":"Die Investorensuche betrifft Beschäftigte und den vernetzten Chemie-Standort.","before":"A: kein Rohinput"},
+    {"id":"kodi","title":"Diese Kodi-Filialen schließen – weitere könnten folgen","summary":"Standorte und Beschäftigte des Einzelhändlers sind betroffen.","before":"D: 10, lokal verworfen"},
+    {"id":"google","title":"Google steckt Milliarden in KI-Infrastruktur in Finnland","summary":"Große Investitionen betreffen Rechenzentren und Energieversorgung. Unternehmensangaben sind zu prüfen.","before":"F: 42, mangels ausreichender Evidenz zurückgestellt"},
+    {"id":"ki-konflikt","title":"USA werfen chinesischen Firmen Abschöpfen von KI-Technologie vor","summary":"Die Regierung in Peking weist die Vorwürfe zurück. Vorwurf ist kein bewiesener Diebstahl.","before":"D: 10, lokal verworfen"},
+    {"id":"eu-energie","title":"Europäischer Rechnungshof prüft Ausstieg aus russischer Energie","summary":"Der Prüfbericht betrifft Versorgung, Investitionen und die Energieinfrastruktur.","before":"A: kein Rohinput"}
+  ]
+}

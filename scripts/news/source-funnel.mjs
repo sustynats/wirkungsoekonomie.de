@@ -9,7 +9,7 @@ const METRICS = [
   "items_story_updates", "items_primary_source_found",
   "items_source_integrity_failed", "items_corrected_later",
   "ai_input_tokens", "ai_output_tokens", "estimated_ai_cost",
-  "parse_failures",
+  "parse_failures", "not_modified",
 ];
 
 const METRIC_ALIASES = Object.freeze({

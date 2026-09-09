@@ -22,10 +22,10 @@ export function publicTitleImage(value) {
   const result = { mode: value.mode, label: value.mode === "editorial" ? "KI-generiertes Symbolbild" : "Wirkungskarte · WÖk-Einordnung" };
   for (const key of ["og", "wide", "square"]) {
     const file = value[key];
-    if (file && typeof file.url === "string" && (file.url === FALLBACK || /^https:\/\/github\.com\/sustynats\/wirkungsoekonomie\.de\/releases\/download\/wirkungsticker-media-\d{4}-\d{2}\/wt-[a-f0-9]{16}-[a-f0-9]{16}-(?:og|wide|square)\.png$/.test(file.url))) result[key] = { url: file.url, width: SIZES[key].width, height: SIZES[key].height };
+    if (file && typeof file.url === "string" && (file.url === FALLBACK || /^https:\/\/github\.com\/sustynats\/wirkungsoekonomie\.de\/releases\/download\/wirkungsticker-media-\d{4}-\d{2}(?:-part-(?:[2-9]|[1-9]\d+))?\/wt-[a-f0-9]{16}-[a-f0-9]{16}-(?:og|wide|square)\.png$/.test(file.url))) result[key] = { url: file.url, width: SIZES[key].width, height: SIZES[key].height };
   }
   const original = value.source_visual;
-  if (value.mode === "editorial" && /^https:\/\/github\.com\/sustynats\/wirkungsoekonomie\.de\/releases\/download\/wirkungsticker-media-\d{4}-\d{2}\/wt-[a-f0-9]{16}-[a-f0-9]{16}-source\.(?:png|jpe?g|webp)$/.test(original?.url || "")) {
+  if (value.mode === "editorial" && /^https:\/\/github\.com\/sustynats\/wirkungsoekonomie\.de\/releases\/download\/wirkungsticker-media-\d{4}-\d{2}(?:-part-(?:[2-9]|[1-9]\d+))?\/wt-[a-f0-9]{16}-[a-f0-9]{16}-source\.(?:png|jpe?g|webp)$/.test(original?.url || "")) {
     result.background = { url: original.url };
   }
   return ["og", "wide", "square"].some(key => result[key]) ? result : null;
@@ -56,31 +56,44 @@ export async function generateEditorialVisual(story, { endpoint = process.env.WO
 }
 
 export function createReleaseStore({ run = async (args) => (await exec("gh", args, { timeout: 90000, maxBuffer: 1024 * 1024 })).stdout, download = downloadImage } = {}) {
-  const knownTags = new Set();
   return async function publish(files, { tag }) {
     if (!/^wirkungsticker-media-\d{4}-\d{2}$/.test(tag)) throw imageError("IMAGE_RELEASE_INVALID");
-    if (!knownTags.has(tag)) {
-      try { await run(["release", "view", tag, "--repo", REPO, "--json", "tagName"]); }
-      catch {
-        await run(["release", "create", tag, "--repo", REPO, "--target", "main", "--title", `Wirkungsticker-Medien ${tag.slice(-7)}`, "--notes", "Unveränderliche Originalmotive und gerenderte Titelbilder des Wirkungstickers. KI-Motive sind Symbolbilder, keine Ereignisfotografien.", "--latest=false"]);
-      }
-      knownTags.add(tag);
-    }
-    const release = JSON.parse(await run(["release", "view", tag, "--repo", REPO, "--json", "assets"]));
-    const existing = new Map(release.assets.map((a) => [a.name, a]));
     for (const file of files) {
       if (!/^[a-z0-9.-]+$/.test(path.basename(file))) throw imageError("IMAGE_ASSET_NAME_INVALID");
-      const old = existing.get(path.basename(file));
-      if (old) {
-        const expected = digest(fs.readFileSync(file));
-        if (old.size !== fs.statSync(file).size) throw imageError("IMAGE_IMMUTABLE_ASSET_CONFLICT");
-        const actual = old.digest?.replace(/^sha256:/, "") || (await download(assetUrl(tag, path.basename(file)), { minWidth: 1080 })).sha256;
-        if (actual !== expected) throw imageError("IMAGE_IMMUTABLE_ASSET_CONFLICT");
-        continue;
-      }
-      await run(["release", "upload", tag, file, "--repo", REPO]); // never --clobber
     }
-    return Object.fromEntries(files.map((file) => [path.basename(file), assetUrl(tag, path.basename(file))]));
+    // A GitHub release accepts 1,000 assets. Keep old URLs immutable and move
+    // whole new image sets to a bounded, same-month continuation archive.
+    for (let part = 1; part <= 32; part += 1) {
+      const selected = part === 1 ? tag : `${tag}-part-${part}`;
+      let release;
+      try { release = JSON.parse(await run(["release", "view", selected, "--repo", REPO, "--json", "assets"])); }
+      catch (error) {
+        if (!/release not found|not found|HTTP 404/i.test(error?.stderr || error?.message || "")) throw error;
+        await run(["release", "create", selected, "--repo", REPO, "--target", "main", "--title", `Wirkungsticker-Medien ${tag.slice(-7)}${part > 1 ? ` · Teil ${part}` : ""}`, "--notes", "Unveränderliche Originalmotive und gerenderte Titelbilder des Wirkungstickers. KI-Motive sind Symbolbilder, keine Ereignisfotografien.", "--latest=false"]);
+        release = JSON.parse(await run(["release", "view", selected, "--repo", REPO, "--json", "assets"]));
+      }
+      const existing = new Map(release.assets.map(a => [a.name, a]));
+      const missing = files.filter(file => !existing.has(path.basename(file)));
+      if (release.assets.length + missing.length > 1000) continue;
+      try {
+        for (const file of files) {
+          const old = existing.get(path.basename(file));
+          if (old) {
+            const expected = digest(fs.readFileSync(file));
+            if (old.size !== fs.statSync(file).size) throw imageError("IMAGE_IMMUTABLE_ASSET_CONFLICT");
+            const actual = old.digest?.replace(/^sha256:/, "") || (await download(assetUrl(selected, path.basename(file)), { minWidth: 1080 })).sha256;
+            if (actual !== expected) throw imageError("IMAGE_IMMUTABLE_ASSET_CONFLICT");
+          } else await run(["release", "upload", selected, file, "--repo", REPO]); // never --clobber
+        }
+        return Object.fromEntries(files.map(file => [path.basename(file), assetUrl(selected, path.basename(file))]));
+      } catch (error) {
+        // Another publisher may have filled the archive after our read. Other
+        // errors (including immutable conflicts) must never be hidden.
+        if (/file_count limited to 1000 assets per release/.test(error?.stderr || error?.message || "")) continue;
+        throw error;
+      }
+    }
+    throw imageError("IMAGE_RELEASE_CAPACITY_EXHAUSTED");
   };
 }
 
@@ -148,8 +161,8 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
         const info = inspectImage(original.bytes);
         const file = path.join(directory, `${id}-${info.sha256.slice(0,16)}-source.${info.extension}`);
         fs.writeFileSync(file, original.bytes); files.push(file);
-        await publish([file], { tag });
-        source = { url: assetUrl(tag, path.basename(file)), sha256: info.sha256, width: info.width, height: info.height, mime: info.mime, provider: "higgsfield", model: C.model, prompt_version: original.prompt_version || C.prompt_version, generated_at: original.generated_at || now() };
+        const sourceUrls = await publish([file], { tag });
+        source = { url: sourceUrls?.[path.basename(file)] || assetUrl(tag, path.basename(file)), sha256: info.sha256, width: info.width, height: info.height, mime: info.mime, provider: "higgsfield", model: C.model, prompt_version: original.prompt_version || C.prompt_version, generated_at: original.generated_at || now() };
       }
       const image = original ? { src: `data:${original.mime};base64,${original.bytes.toString("base64")}`, focus: "right" } : null;
       const outputs = {};
@@ -173,7 +186,9 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
         fs.writeFileSync(file, png.png); files.push(file);
         outputs[size] = { url: assetUrl(tag, path.basename(file)), width: dimensions.width, height: dimensions.height, sha256: digest(png.png) };
       }
-      await publish(files, { tag }); // durable BEFORE adding URLs to canonical data
+      const publishedUrls = await publish(files, { tag }); // durable BEFORE canonical data
+      for (const output of Object.values(outputs)) output.url = publishedUrls?.[path.basename(output.url)] || output.url;
+      if (source?.url && publishedUrls?.[path.basename(source.url)]) source = { ...source, url: publishedUrls[path.basename(source.url)] };
       const retryable = fallbackReason && !TERMINAL.has(fallbackReason);
       return { title_image: { mode, ...outputs, source_visual: source, fingerprint, template_version: C.template_version, prompt_version: source?.prompt_version || C.prompt_version, generated_at: now(), status: fallbackReason ? "fallback" : "generated", ...(fallbackReason ? { fallback_reason: fallbackReason } : {}), ...(retryable ? { retry_after: new Date(Date.parse(now()) + 15 * 60000).toISOString() } : {}) }, report: { ...log, mode, status: fallbackReason ? "fallback" : "generated", ...(fallbackReason ? { fallback_reason: fallbackReason } : {}), duration_ms: Date.now() - started } };
     } catch (error) {

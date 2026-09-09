@@ -1,5 +1,6 @@
 // Deterministic routing, before AI. A shared topic is never an event identity.
 import { eventCompatibility } from "./newsroom.mjs";
+import { courtCaseRelation } from "./court-case-identity.mjs";
 const DAY = 86400000;
 const time = (value) => Date.parse(value || "") || 0;
 const normal = (value) => String(value || "").normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
@@ -152,11 +153,14 @@ function publicNetworkPlace(title, lead) {
   return null;
 }
 
-export function fileSubject(item) {
+export function fileSubject(item, { sourcePlace = false } = {}) {
   const title = String(item.title || "");
-  // An unanalysed batch cluster has no own summary yet. Its leading source
-  // still supplies the subject/place guard; arbitrary context sources do not.
   const lead = String(item.summary || item.source_summary || item.sources?.[0]?.summary || "").split(/\n\s*\n/)[0].slice(0, 650);
+  // Only a separately established case identity enables this source-grounded
+  // location comparison. Do not weaken the general subject/integrity guards.
+  const placeLead = sourcePlace
+    ? String(item.summary || item.sources?.[0]?.summary || item.source_summary || "").split(/\n\s*\n/)[0].slice(0, 650)
+    : lead;
   const text = normal(`${title} ${lead}`);
   const grid = /\b(umspannwerk\w*|stromnetz\w*|stromversorgung\w*|substation\w*)\b/.test(text);
   const response = /\b(schutz|sicherheitszentrum|sicherheitsvorkehrung\w*|schutzmassnahm\w*|schutzt|kritis-dachgesetz)\b/.test(normal(title));
@@ -164,7 +168,7 @@ export function fileSubject(item) {
   const cyber = /\b(cyber\w*|hacker\w*|ransomware\w*|ikt[- ]vorfall\w*|datenabfluss\w*|datendiebstahl\w*)\b/.test(text);
   const networkPlace = cyber && new RegExp(`\\b${PUBLIC_NETWORK}\\b`).test(text) ? publicNetworkPlace(title, lead) : null;
   const titlePlaces = placesIn(title);
-  const places = titlePlaces.length ? titlePlaces : placesIn(lead);
+  const places = titlePlaces.length ? titlePlaces : placesIn(placeLead);
   const countries = unique([...(item.event_geography || []), ...COUNTRY_RULES.filter(([, pattern]) => pattern.test(text)).map(([code]) => code)]);
   const elections = unique(electionJurisdictions(`${title} ${lead}`));
   const election_stage = elections.length && /\b(?:umfrag\w*|wahlabsicht\w*)\b/.test(normal(title)) ? 'polling'
@@ -181,6 +185,10 @@ export function fileSubject(item) {
 }
 
 export function subjectConflict(a, b) {
+  const sourceA = a.sources?.[0] || a, sourceB = b.sources?.[0] || b;
+  const courtCase = courtCaseRelation(sourceA, sourceB);
+  const sameDocument = documentKey(sourceA.url) && documentKey(sourceA.url) === documentKey(sourceB.url);
+  if (courtCase.status === "different" || (courtCase.status === "ambiguous" && !sameDocument)) return true;
   if (namedSubjectConflict(a, b)) return true;
   const visitA = diplomaticVisit(a), visitB = diplomaticVisit(b);
   if (visitA && visitB && visitA.key !== visitB.key) return true;
@@ -188,7 +196,8 @@ export function subjectConflict(a, b) {
     || (visitB && DELEGATION.test(a.title || "") && delegationNames(a).length !== 2)) return true;
   if ((visitA && (VISIT_OTHER_SUBJECT.test(normal(b.title)) || REPEAT_VISIT.test(normal(b.title))))
     || (visitB && (VISIT_OTHER_SUBJECT.test(normal(a.title)) || REPEAT_VISIT.test(normal(a.title))))) return true;
-  const left = fileSubject(a), right = fileSubject(b);
+  const left = fileSubject(a, { sourcePlace: courtCase.status === "shared" });
+  const right = fileSubject(b, { sourcePlace: courtCase.status === "shared" });
   if (left.recurrence !== right.recurrence && left.kind === "grid_incident" && right.kind === "grid_incident") return true;
   // A report about several attacks cannot become the update of just one site,
   // even if its publisher reuses a formerly single-event article URL.
@@ -293,7 +302,7 @@ export function duplicateGroups(stories) {
       if (sameDiplomaticVisit(canonical, other)) return true;
       if (a.key && a.key === b.key && Math.abs(time(canonical.first_seen || canonical.published_at) - time(other.first_seen || other.published_at)) <= 7 * DAY) return true;
       const event = eventCompatibility(canonical.sources?.[0] || canonical, other.sources?.[0] || other);
-      if (event.same_event && event.reason === "structured_event_facts") return true;
+      if (event.same_event && ["structured_event_facts", "shared_court_case"].includes(event.reason)) return true;
       const doc = documentKey(canonical.sources?.[0]?.url);
       const leftTerms = terms(canonical.title), rightTerms = terms(other.title);
       const shared = leftTerms.filter((word) => rightTerms.includes(word)).length;

@@ -1,6 +1,7 @@
 import { renderStoryVisual, renderEditorialClaimMap } from "./story-visual.mjs";
 import { EDITORIAL_TRANSPARENCY_NOTE, editorialLabel, isEditorialCommentary, isCommissionedAnalysis, renderSystemicVisual, renderSystemicDimensions, renderSystemicMonitoring, renderSectionAnchor, renderEditorialContents } from "./systemic-analysis.mjs";
 import { renderEditorialFinding, renderAuthorPerspective, renderEditorialBalance } from "./editorial-judgment.mjs";
+import { relatedEditorialAnalyses, renderRelatedEditorialAnalyses, renderEditorialParagraphs } from "./editorial-presentation.mjs";
 import fs from "node:fs";
 import { publicTitleImage } from "./title-image/pipeline.mjs";
 import path from "node:path";
@@ -17,10 +18,11 @@ import { relatedStories } from "./living-files.mjs";
 import { formatReferenceFramework } from "./reference-frameworks.mjs";
 import { buildCaseFiles } from "./case-files.mjs";
 import { storyUpdateNotice, storyUpdateDetails } from "./publication-update.mjs";
+import { articleShareCard } from "./share-image.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260908-education1";
+const PUBLIC_RELEASE = "20260909-correction-sharing1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
@@ -312,9 +314,11 @@ function editorialCard(analysis, story, index) {
   const href = `./analyse/${analysis.slug}/`;
   const topic = (story?.topic || []).join(" ").toLowerCase();
   const searchText = [analysis.title, analysis.subtitle, analysis.teaser, analysis.analysis_type, ...(story?.topic || [])].join(" ").toLowerCase();
-  return `<article class="news-editorial-card${index === 0 ? " news-editorial-card--lead" : ""}" data-news-card data-news-editorial-analysis data-news-story-id="analysis-${escapeHtml(analysis.analysis_id)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topic)}" data-dimensions="mensch planet demokratie" data-high-impact="true" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(analysis.updated_at)}">
+  const titleImage = publicTitleImage(analysis.title_image);
+  const preview = titleImage?.wide ? `<a class="news-editorial-card__preview" href="${escapeHtml(href)}" aria-hidden="true" tabindex="-1"><img src="${escapeHtml(titleImage.wide.url)}" width="1200" height="675" alt="" loading="lazy" decoding="async"></a>` : "";
+  return `<article class="news-editorial-card${index === 0 ? " news-editorial-card--lead" : ""}${preview ? " news-editorial-card--illustrated" : ""}" data-news-card data-news-editorial-analysis data-news-story-id="analysis-${escapeHtml(analysis.analysis_id)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topic)}" data-dimensions="mensch planet demokratie" data-high-impact="true" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(analysis.updated_at)}">
   <div class="news-editorial-card__content"><p class="hero-kicker">${escapeHtml(editorialLabel(analysis))}</p><h2><a href="${escapeHtml(href)}">${escapeHtml(analysis.title)}</a></h2><p class="news-editorial-card__subtitle">${escapeHtml(analysis.subtitle)}</p><p>${escapeHtml(analysis.teaser)}</p><p class="news-editorial-card__origin">Entstanden aus: <a class="text-link" href="./${escapeHtml(story?.slug || "")}/">${escapeHtml(story?.title || "Wirkungsticker-Story")}</a></p><div class="news-editorial-card__byline"><img src="../assets/img/people/natalie-weber-woek-analyse.jpg" alt="Natalie Weber" width="72" height="72" loading="lazy" decoding="async"><span><strong>Natalie Weber</strong><small><a class="text-link" href="../methodik/">${escapeHtml(analysis.transparency_note)}</a></small><small>${escapeHtml(`${analysis.reading_time_minutes || 8} Min. · veröffentlicht ${formatDate(analysis.published_at, { dateOnly: true })}`)}</small></span></div></div>
-  <div class="news-editorial-card__actions"><a class="btn btn-primary" href="${escapeHtml(href)}">Analyse lesen${renderIcon("pfeil")}</a>${editorialSaveControl(analysis)}${editorialShareControl(analysis)}</div>
+  ${preview}<div class="news-editorial-card__actions"><a class="btn btn-primary" href="${escapeHtml(href)}">Analyse lesen${renderIcon("pfeil")}</a>${editorialSaveControl(analysis)}${editorialShareControl(analysis)}</div>
 </article>`;
 }
 
@@ -345,6 +349,12 @@ function mixedCards(stories, analyses, storiesById) {
 
 function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "", robots = "", titleImage = null, publicUpdatedAt = "", ogType = "website" }) {
   const { header, footer } = renderLayout(base);
+  // The shared card describes this page, never a parent story or a stale raster
+  // overlay. The existing on-page illustrations remain unchanged.
+  const shareCard = articleShareCard(jsonLd);
+  const imageUrl = shareCard?.url || (titleImage?.og?.url?.startsWith("https://") ? titleImage.og.url : `${SITE}/assets/img/brand/wirkungsoekonomie-share-v2.png`);
+  const imageAlt = shareCard?.alt || "Wirkungsökonomie - Mensch, Planet und Demokratie";
+  if (shareCard) { jsonLd = { ...jsonLd, image: imageUrl }; ogType = "article"; }
   return `<!doctype html>
 <html lang="de">
 <head>
@@ -361,12 +371,17 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <meta property="og:title" content="${escapeHtml(title)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${escapeHtml(canonical)}">
-  <meta property="og:image" content="${escapeHtml(titleImage?.og?.url?.startsWith("https://") ? titleImage.og.url : `${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png`)}">
+  <meta property="og:image" content="${escapeHtml(imageUrl)}">
+  <meta property="og:image:secure_url" content="${escapeHtml(imageUrl)}">
+  <meta property="og:image:type" content="${shareCard?.type || "image/png"}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="${escapeHtml(titleImage ? `${title} – ${titleImage.label}` : "Wirkungsökonomie")}">
+  <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="${escapeHtml(titleImage?.og?.url?.startsWith("https://") ? titleImage.og.url : `${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png`)}">
+  <meta name="twitter:title" content="${escapeHtml(title)}">
+  <meta name="twitter:description" content="${escapeHtml(description)}">
+  <meta name="twitter:image" content="${escapeHtml(imageUrl)}">
+  <meta name="twitter:image:alt" content="${escapeHtml(imageAlt)}">
   <meta name="theme-color" content="#f7f1e8">
   <meta name="application-name" content="Wirkungsticker">
   <meta name="mobile-web-app-capable" content="yes">
@@ -434,11 +449,12 @@ function indexPage(stories, updatedAt, { totalStories = stories.length, caseCoun
     <details><summary>Relevanz und Wissensstand richtig lesen</summary><dl class="news-reading-guide__legend">
       <div><dt>hoch / mittel / gering</dt><dd>Relevanz, nicht gut oder schlecht.</dd></div>
       <div><dt>Wirkungspotenzial / Wirkungsrisiko</dt><dd>Mögliche Folge, noch keine eingetretene Wirkung.</dd></div>
+      <div><dt>Beschlossen, aber noch nicht eingetreten?</dt><dd>Ein Beschluss kann bereits ein klar negatives Wirkungsrisiko oder positives Potenzial haben. Der Ticker ordnet plausible Folgen früh ein. Ob, wann und wie stark sie eintreten, wird davon getrennt geprüft.</dd></div>
       <div><dt>Beobachtete Wirkung</dt><dd>Festgestellte Zustandsveränderung mit entsprechender Evidenz.</dd></div>
       <div><dt>Noch nicht eingeordnet</dt><dd>Für diese Dimension fehlt eine Richtungsbewertung. Kein neutrales Urteil.</dd></div>
       <div><dt>Kein belastbarer Wirkpfad</dt><dd>Die Belege dieser Meldung tragen keinen konkreten Bezug zu dieser Dimension. Keine Entwarnung für das gesamte Thema.</dd></div>
       <div><dt>Wirkungsrichtung unklar</dt><dd>Die Richtung ist nicht hinreichend bestimmbar. Ein unsicherer Eintritt oder ein offenes Ausmaß allein macht einen begründeten negativen Wirkpfad nicht neutral.</dd></div>
-      <div><dt>Gegenläufige Wirkpfade</dt><dd>Konkrete positive und negative Folgen werden getrennt begründet, nicht gegeneinander aufgerechnet. Ohne diese Grundlage gibt es keine belastbare Gesamtbilanz.</dd></div>
+      <div><dt>Gegenläufige Wirkpfade</dt><dd>Konkrete positive und negative Folgen brauchen denselben Vergleichszustand und werden nicht verrechnet. Weniger Schaden gegenüber einem schlechteren Entwurf ist noch keine Verbesserung gegenüber dem Ausgangszustand. Ohne getrennte Begründung gibt es keine belastbare Gesamtbilanz.</dd></div>
     </dl></details>
   </section>
   <aside class="news-install-promo" data-news-install-promo data-search-exclude hidden aria-labelledby="news-install-promo-title">
@@ -599,10 +615,11 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
     : /^(fakt|gesichert|belegt)\b/i.test(factStatement) ? factStatement : `Gesichert ist: ${factStatement}`;
   const primarySourceCount = story.sources.filter((source) => source.primary_source).length;
   const primarySourceNames = [...new Set(story.sources.filter((source) => source.primary_source).map((source) => source.publisher))].join(", ");
-  const primary = story.sources.find((source) => source.primary_source && !["legal_context", "election_calendar"].includes(source.source_role)) || story.sources[0];
+  const eventSources = story.sources.filter(source => !["legal_context", "election_calendar", "background"].includes(source.source_role));
+  const primary = eventSources.find(source => source.primary_source) || eventSources[0] || story.sources[0];
   const visuals = sanitizeVisuals(a.visuals, story).visuals;
-  const originalSources = [...story.sources]
-    .filter((source) => source === primary || (source.primary_source && !["legal_context", "election_calendar"].includes(source.source_role)))
+  const originalSources = eventSources
+    .filter(source => source === primary || source.primary_source)
     .sort((left, right) => Date.parse(right.published_at || 0) - Date.parse(left.published_at || 0));
   const sourceSummaryLinks = originalSources.map((source, index) => `<a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer"><span>${index === 0 ? "Originalquelle ansehen" : `Weitere Originalquelle bei ${escapeHtml(source.publisher)}`}</span>${renderIcon("extern")}</a>`).join("");
   const sources = story.sources.map((source) => `<li class="news-source"><span class="news-source__avatar${source.primary_source ? "" : " news-source__avatar--secondary"}" aria-hidden="true">${escapeHtml(publisherInitials(source.publisher))}</span><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</span>${renderIcon("extern")}</a><div class="news-source-meta"><span class="news-badge${source.primary_source ? "" : " news-badge--update"}">${source.primary_source ? "Primärbeleg / Selbstauskunft" : "Journalistischer Bericht / Kontext"}</span><span>${escapeHtml(source.date_status === "undated_reference" ? `Ohne Veröffentlichungsdatum · geprüft ${formatDate(source.retrieved_at, { dateOnly: true })}` : formatDate(source.published_at, { dateOnly: true }))}</span>${source.publisher_id ? `<a class="text-link" href="../quellen/${escapeHtml(source.publisher_id)}/">Quellenprofil</a>` : ""}</div></li>`).join("");
@@ -619,7 +636,7 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
   <section class="hero news-hero news-hero--story"><div class="hero-copy">${renderUpdateBanner(story, { detail: true, caseFile })}<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker news-hero__kicker">${renderIcon(topicIcon(story.topic))}<span>${escapeHtml((story.topic || []).join(" · "))}</span></p>${renderStoryVisual(story, { detail: true, loading: "eager", sourceLabel: `${primary?.publisher || ""} · Ausgangsmeldung ${formatDate(firstSourceDate(story), { dateOnly: true })}` })}<div class="news-hero__meta">${renderStatusChip(a.status)}${renderAnalysisTypeChip(a.analysis_type, { note: false })}<span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Einordnung: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="hero-actions news-hero__actions">${returnLink}${primary ? `<a class="btn btn-primary news-hero__source" href="${escapeHtml(primary.url)}" target="_blank" rel="noopener noreferrer">${renderIcon("extern")}<span>${primary.primary_source ? "Primärquelle" : "Quellbericht"} öffnen: ${escapeHtml(primary.publisher)}</span></a>` : ""}${shareControl(story, "top")}${readerRefreshControl()}</div></div></section>
 
   ${renderNewsStatusNotice(story)}
-  ${(story.corrections || []).map((correction) => `<aside class="notice" role="note"><strong>Korrektur vom ${escapeHtml(formatDate(correction.at, { dateOnly: true }))}:</strong> ${escapeHtml(correction.note)}</aside>`).join("")}
+  ${(story.corrections || []).map((correction) => `<aside class="notice news-correction" role="note"><p><strong>Korrektur vom ${escapeHtml(formatDate(correction.at, { dateOnly: true }))}</strong></p><p>${escapeHtml(correction.note)}</p></aside>`).join("")}
   <nav class="wt-subnav" aria-label="Abschnitte dieser Wirkungsakte"><div class="wt-subnav__inner"><a href="#nachricht">Nachricht</a><a href="#faktencheck">Belege</a><a href="#folgencheck">Folgen</a><a href="#bedeutung">Vertiefung</a></div></nav>
   <section class="section"><div class="news-story-layout"><div class="news-story-main">
     <article class="news-story-section news-source-summary" data-news-source-summary id="nachricht"><p class="hero-kicker">${renderIcon("meldung")}<span>Nachricht</span></p><h2>Worum geht es?</h2><div class="news-source-summary__copy">${sourceSummaryParagraphs(story.source_summary)}</div>${renderKeyFigures(visuals, story)}${renderChart(visuals)}${renderTimeline(visuals)}<div class="news-source-summary__links">${sourceSummaryLinks}</div></article>
@@ -670,7 +687,9 @@ const CLAIM_TYPE_LABELS = {
   program_statement: "Programmaussage", scenario: "Szenario",
 };
 
-export function editorialAnalysisPage(analysis, story, { nextItem = null } = {}) {
+export function editorialAnalysisPage(analysis, story, { nextItem = null, relatedAnalyses = [] } = {}) {
+  const titleImage = publicTitleImage(analysis.title_image);
+  if (titleImage) titleImage.label = "Wirkungskarte · Meinung & Analyse";
   const sourcesById = new Map((analysis.source_snapshot || []).map((source) => [source.source_id, source]));
   const storyAnalysis = story.analysis || {};
   const storyVisuals = sanitizeVisuals(storyAnalysis.visuals, story).visuals;
@@ -691,12 +710,12 @@ export function editorialAnalysisPage(analysis, story, { nextItem = null } = {})
   const renderedSections = (analysis.sections || []).map((section) => {
     const refs = (section.source_ids || []).map(id => sourcesById.get(id)).filter(Boolean);
     const citations = refs.length ? `<p class="news-method-note">Quellen und Bezugsrahmen: ${refs.map(source => `<a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}</a>`).join(" · ")}</p>` : "";
-    const html = `<section class="news-editorial-article__section" id="${escapeHtml(section.id)}">${section.kicker ? `<p class="hero-kicker">${escapeHtml(section.kicker)}</p>` : ""}<h2>${section.icon ? renderIcon(section.icon) : ""}${escapeHtml(section.title)}</h2>${renderSectionAnchor(section)}${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}${renderSystemicVisual(section.visual, sourcesById)}${section.id === "mpd" ? (analysis.editorial_rules_version ? renderEditorialBalance(analysis) : renderSystemicDimensions(analysis)) : ""}${citations}${(section.links || []).map(link => `<p><a class="text-link" href="${escapeHtml(link.href)}">${escapeHtml(link.label)}${renderIcon("pfeil")}</a></p>`).join("")}${section.id === "system" && !isCommissionedAnalysis(analysis) ? claimMap : ""}</section>`;
+    const html = `<section class="news-editorial-article__section" id="${escapeHtml(section.id)}">${section.kicker ? `<p class="hero-kicker">${escapeHtml(section.kicker)}</p>` : ""}<h2>${section.icon ? renderIcon(section.icon) : ""}${escapeHtml(section.title)}</h2>${renderSectionAnchor(section)}${renderEditorialParagraphs(section, sourcesById)}${renderSystemicVisual(section.visual, sourcesById)}${section.id === "mpd" ? (analysis.editorial_rules_version ? renderEditorialBalance(analysis) : renderSystemicDimensions(analysis)) : ""}${citations}${(section.links || []).map(link => `<p><a class="text-link" href="${escapeHtml(link.href)}">${escapeHtml(link.label)}${renderIcon("pfeil")}</a></p>`).join("")}${section.id === "system" && !isCommissionedAnalysis(analysis) ? claimMap : ""}</section>`;
     return { section, html };
   });
   const leadSections = renderedSections.filter(item => item.section.placement === "lead").map(item => item.html).join("");
   const heroSections = renderedSections.filter(item => item.section.placement === "hero").map(item => item.html).join("");
-  const sections = renderedSections.filter(item => !item.section.placement).map(item => item.html).join("");
+  const sections = renderedSections.filter(item => !item.section.placement).map(item => item.html).join("") + renderRelatedEditorialAnalyses(relatedAnalyses);
   const contents = renderEditorialContents(analysis);
   const sourceList = (analysis.source_snapshot || []).map((source) => `<li><a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</a><span>${escapeHtml({ context: "Institutioneller Kontext / eigener Vorschlag", journalistic_context: "Journalistischer Bericht / attribuierte Angabe", counter_source: "Gegenposition oder kritischer Prüfbericht", research: "Fachlicher Forschungsstand", reference_framework: "Ziel- und Referenzrahmen" }[source.source_function] || (source.primary_source ? "Primärquelle / Selbstauskunft" : "Journalistische oder fachliche Kontextquelle"))} · ${source.editorial_review ? "Dokumentstand " : ""}${escapeHtml(formatEditorialSourceDate(source))}${source.editorial_review ? ` · geprüft ${escapeHtml(source.editorial_review.checked_at.slice(0, 10))}` : ""}${source.precise_location ? ` · ${escapeHtml(source.precise_location)}` : ""}</span></li>`).join("");
   const ledger = (analysis.claim_ledger || []).map((claim) => {
@@ -717,7 +736,7 @@ export function editorialAnalysisPage(analysis, story, { nextItem = null } = {})
   </article>
 </main>`;
   return pageShell({
-    title: analysis.title, description: analysis.seo_description.replace(/WÖ[kK]-(?:Sonderanalyse|Analyse)(?: \/ Kommentar)?/g, "Meinung & Analyse"), canonical, base: "../../../", body, ogType: "article",
+    title: analysis.title, description: analysis.seo_description.replace(/WÖ[kK]-(?:Sonderanalyse|Analyse)(?: \/ Kommentar)?/g, "Meinung & Analyse"), canonical, base: "../../../", body, ogType: "article", titleImage,
     jsonLd: {
       "@context": "https://schema.org", "@type": "Article", "@id": `${canonical}#article`, url: canonical,
       headline: analysis.title, alternativeHeadline: analysis.subtitle, description: analysis.seo_description.replace(/WÖ[kK]-(?:Sonderanalyse|Analyse)(?: \/ Kommentar)?/g, "Meinung & Analyse"),
@@ -725,6 +744,7 @@ export function editorialAnalysisPage(analysis, story, { nextItem = null } = {})
       author: { "@type": "Person", name: "Natalie Weber", url: `${SITE}/ueber-mich.html` },
       publisher: { "@type": "Organization", name: "Wirkungsökonomie", url: SITE },
       isBasedOn: storyUrl, citation: (analysis.source_snapshot || []).map((source) => source.url),
+      ...(titleImage?.og?.url ? { image: titleImage.og.url } : {}),
       articleSection: editorialLabel(analysis), wordCount: (analysis.sections || []).flatMap((section) => section.paragraphs || []).join(" ").split(/\s+/).filter(Boolean).length,
     },
     extraScript: '<script src="../../../assets/js/news-share.js?v=20260904-actions1"></script>',
@@ -895,7 +915,7 @@ export function buildNewsSite() {
   }
   for (const analysis of editorialAnalyses) {
     const nextItem = readerNeighbor({ type: "analysis", value: analysis }, 1, true);
-    write(path.join(TICKER_DIR, "analyse", analysis.slug, "index.html"), editorialAnalysisPage(analysis, storiesById.get(analysis.story_id), { nextItem }));
+    write(path.join(TICKER_DIR, "analyse", analysis.slug, "index.html"), editorialAnalysisPage(analysis, storiesById.get(analysis.story_id), { nextItem, relatedAnalyses: relatedEditorialAnalyses(analysis, editorialAnalyses) }));
   }
   for (const story of retiredStories) write(path.join(TICKER_DIR, story.slug, "index.html"), retiredStoryPage(story));
   const feedItems = combinedFeedItems(stories, editorialAnalyses);

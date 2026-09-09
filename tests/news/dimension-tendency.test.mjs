@@ -62,7 +62,8 @@ test('new prompts always include base tendencies, even when optional visuals are
   for (const includeVisuals of [true,false]) {
     const prompt=buildAnalysisPrompt([{story_id:'wt-test',title:'Eine neue Entscheidung',sources:[],claims:[]}],{includeVisuals});
     assert.ok(prompt.includes(DIMENSION_TENDENCY_RULE));
-    assert.equal((prompt.match(/"tendency":/g)||[]).length,3);
+    assert.equal((prompt.match(/"tendency":/g)||[]).length,1, 'one shared MPD schema avoids three paid copies');
+    assert.equal((prompt.match(/"\$ref":"#\/\$defs\/mpd"/g)||[]).length,3);
     if(!includeVisuals) assert.ok(prompt.includes('"visuals":null'));
   }
 });
@@ -93,8 +94,14 @@ test('retroactive rendering covers every published story without rewriting store
 test('list and both detail MPD sections show the same available finding without changing the article',()=>{
   const stories=JSON.parse(fs.readFileSync(new URL('../../data/news/stories.json',import.meta.url))).stories;
   const story=structuredClone(stories.find(story=>story.published&&story.listed!==false));
+  // The rendering shell may come from a real article, the judgment fixture may
+  // not: a new live article must not silently change this test's assumptions.
+  story.analysis.direction_assessment_version='1.1';
+  story.analysis.assessment_frame={subject:'Geprüfte Änderungen der Beratungsversorgung.',baseline:'Unveränderte Versorgung ohne diese beiden Maßnahmen.'};
+  for (const key of ['human','planet','democracy']) story.analysis[key]={...mpd()[key],direction_basis:'assessed',positive_path:null,negative_path:null};
   for(const [key,tendency] of Object.entries({human:'chance',planet:'risiko',democracy:'gemischt'})) story.analysis[key].tendency=tendency;
   Object.assign(story.analysis.democracy, mixedPaths());
+  for (const path of [story.analysis.democracy.positive_path,story.analysis.democracy.negative_path]) Object.assign(path,{effect_type:'independent_change',reference:'assessment_baseline'});
   const before=JSON.stringify(story);
   assert.deepEqual(statuses(storyCard(story,0)),['positive','negative','mixed']);
   assert.deepEqual(statuses(storyPage(story)),['positive','negative','mixed','positive','negative','mixed']);

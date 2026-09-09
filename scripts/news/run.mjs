@@ -41,10 +41,13 @@ import { isolatedSourceThrottleWithRecentCoverage, sourceCoverageDegraded } from
 import { operatingCostSummary, usageCostStartedAt } from "./operating-cost.mjs";
 import { regionalCoverage } from "./regional-coverage.mjs";
 import { createPublicationDateRecovery } from "./publication-date.mjs";
+import { EVENT_RELEVANCE_VERSION, balanceEventQueue, categoryCoverage, updateEventLifecycle } from './event-relevance.mjs';
+import { observedMajorEvents, missedNewsRechecks, coverageAudit } from './coverage-audit.mjs';
+import { runActiveDiscovery, agendaSignal } from './active-discovery.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const RELEVANCE_FILTER_VERSION = "4.0";
-const RELEVANCE_BACKFILL_DAYS = 7;
+const RELEVANCE_FILTER_VERSION = EVENT_RELEVANCE_VERSION;
+const RELEVANCE_BACKFILL_DAYS = 2;
 const AI_PROCESSING_VERSION = "2026-09-06-throughput-3";
 const OUTPUT_FORMAT_ERRORS = new Set(["AI_MALFORMED_JSON", "AI_SCHEMA_ANALYSES_REQUIRED", "AI_RESPONSE_TOO_LARGE", "AI_PROVIDER_OUTPUT_INVALID"]);
 const CAPACITY_HOLD_REASONS = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_DISABLED"]);
@@ -161,6 +164,10 @@ function sourcePublicRecord(item) {
     research_metadata: item.research_metadata,
     collection_source_id: item.collection_source_id,
     collection_publisher_id: item.collection_publisher_id,
+    publisher_group_id: item.publisher_group_id,
+    discovery_endpoint: item.discovery_endpoint,
+    discovery_method: item.discovery_method,
+    discovery_index_url: item.discovery_index_url,
   };
 }
 
@@ -727,7 +734,10 @@ export function partitionAiQueue(eligible, stage, maxStories, now = new Date().t
   // Fresh material keeps the majority, but a continuous news stream can no
   // longer starve the durable queue indefinitely.
   if (limit >= 4 && allowed.length > limit) {
+    const top = allowed.filter(candidate => candidate.preanalysis.event_score?.priority === 'TOP').slice(0, limit);
+    const topIds = new Set(top.map(candidate => candidate.story_id));
     const queued = allowed.filter((candidate) => candidate.existing_story
+      && !topIds.has(candidate.story_id)
       && (!candidate.fresh || Date.parse(now) - Date.parse(candidateQueuedAt(candidate)) >= 90 * 60000))
       .sort((left, right) => {
         const leftReason = left.existing_story?.pending_update?.reason || left.existing_story?.pending_reason;
@@ -737,10 +747,10 @@ export function partitionAiQueue(eligible, stage, maxStories, now = new Date().t
         return Number(rightTechnical) - Number(leftTechnical)
           || Date.parse(candidateQueuedAt(left) || 0) - Date.parse(candidateQueuedAt(right) || 0);
       });
-    const reserve = Math.min(queued.length, Math.max(1, Math.ceil(limit / 4)));
+    const reserve = Math.min(queued.length, Math.max(0, limit-top.length), Math.max(1, Math.ceil(limit / 4)));
     const reserved = queued.slice(0, reserve);
     const reservedIds = new Set(reserved.map((candidate) => candidate.story_id));
-    selected = [...allowed.filter((candidate) => !reservedIds.has(candidate.story_id)).slice(0, limit - reserve), ...reserved];
+    selected = [...top, ...allowed.filter((candidate) => !reservedIds.has(candidate.story_id) && !topIds.has(candidate.story_id)).slice(0, limit - reserve - top.length), ...reserved];
   }
   const selectedIds = new Set(selected.map((candidate) => candidate.story_id));
   return { selected, deferred: eligible.filter((candidate) => !selectedIds.has(candidate.story_id)) };
@@ -878,6 +888,9 @@ export async function runWirkungsticker(options = {}) {
   const usage = structuredClone(options.usage || readJson(files.usage));
   const newsroom = options.newsroom || (fs.existsSync(files.newsroom) ? readJson(files.newsroom) : { schema_version: "1.0", source_items: {}, events: {}, event_sources: [], discovery_candidates: [] });
   const enabledSources = registry.sources.filter((source) => source.enabled && sourceAccess(source).allowed);
+  const enabledSourceIds = new Set(enabledSources.map(source => source.source_id));
+  const allowedObservationItems = () => Object.values(newsroom.source_items).filter(item => enabledSourceIds.has(item.source_id));
+  const eventAuditEnabled = registry.policy?.event_relevance?.enabled === true;
   const dueSources = enabledSources.filter((source) => sourceDue(source, state.source_status[source.source_id], now));
   const previousSourceStatus = structuredClone(state.source_status);
   const pendingStoryCountBefore = (state.pending_story_ids || []).length;
@@ -991,7 +1004,7 @@ export async function runWirkungsticker(options = {}) {
     bumpSourceFunnel(sourceFunnel, source.source_id, "fetch_successes");
     bumpSourceFunnel(sourceFunnel, source.source_id, "feed_items", result.value.items.length);
     report.source_successes += 1;
-    if (result.value.fetched.not_modified) report.sources_not_modified += 1;
+    if (result.value.fetched.not_modified) { report.sources_not_modified += 1; bumpSourceFunnel(sourceFunnel, source.source_id, 'not_modified'); }
     report.source_retry_attempts += Math.max(0, Number(result.value.fetchAttempts || 1) - 1);
     report.feed_entries_fetched += result.value.items.length;
     allItems.push(...result.value.items);
@@ -1012,6 +1025,17 @@ export async function runWirkungsticker(options = {}) {
     };
   }
   if (dueSources.length && report.source_successes === 0) report.all_sources_failed = true;
+
+  if (eventAuditEnabled) {
+    const discovery = await runActiveDiscovery({ registry, state, stories: storyStore.stories, now,
+      fetchIndex: options.fetchDiscoveryIndexImpl, fetchMetadata: options.fetchDiscoveryMetadataImpl });
+    allItems.push(...discovery.items);
+    const { items: _items, ...diagnostics } = discovery;
+    report.active_discovery = diagnostics;
+    // The same input item from RSS and an index is one document, not a second
+    // independent source or paid candidate.
+    allItems = [...new Map(allItems.map(item => [item.url, item])).values()];
+  }
 
   const publicationDates = createPublicationDateRecovery({ registry, state, now, fetchArticleImpl: options.fetchPublicationDateImpl });
   report.source_date_recovery = publicationDates.stats;
@@ -1069,8 +1093,20 @@ export async function runWirkungsticker(options = {}) {
       last_seen: now,
     };
     const fingerprint = eventFingerprint(item);
-    newsroom.source_items[item.source_item_id] = { ...sourcePublicRecord(item), event_id: fingerprint.id, first_seen_at: newsroom.source_items[item.source_item_id]?.first_seen_at || now };
-    newsroom.events[fingerprint.id] = { ...fingerprint, event_detected_at: newsroom.events[fingerprint.id]?.event_detected_at || now };
+    const previousItem = newsroom.source_items[item.source_item_id];
+    const eventId = previousItem?.event_id || fingerprint.id;
+    newsroom.source_items[item.source_item_id] = { ...sourcePublicRecord(item), event_id: eventId, first_seen_at: previousItem?.first_seen_at || now, last_seen_at: now };
+    newsroom.events[eventId] = { ...fingerprint, ...newsroom.events[eventId], id: eventId, event_detected_at: newsroom.events[eventId]?.event_detected_at || now };
+  }
+  if (eventAuditEnabled) {
+    const observed = observedMajorEvents(allowedObservationItems(), now, { limit: registry.policy.event_relevance.observer_max_items });
+    const rechecks = missedNewsRechecks({ observed, stories: storyStore.stories, state, now, maxEvents: registry.policy.event_relevance.rechecks_per_run });
+    const present = new Set(changedItems.map(item => item.url));
+    changedItems.push(...rechecks.items.filter(item => !present.has(item.url)).map(item => ({ ...item, item_id: item.source_item_id || sha256(item.url) })));
+    report.missed_news_rechecks = rechecks.events;
+    const agenda = allItems.map(agendaSignal).filter(Boolean).map(item => ({ ...item, checked_at: now }));
+    state.agenda_watch = [...new Map([...(state.agenda_watch || []), ...agenda].filter(item => Date.parse(item.checked_at) >= nowDate.getTime()-72*3600000).map(item => [item.id,item])).values()].slice(-100);
+    report.agenda_watch = state.agenda_watch;
   }
   const pruneBefore = nowDate.getTime() - 120 * 24 * 60 * 60 * 1000;
   for (const [id, record] of Object.entries(state.seen_items)) if (Date.parse(record.last_seen || 0) < pruneBefore) delete state.seen_items[id];
@@ -1160,7 +1196,9 @@ export async function runWirkungsticker(options = {}) {
       ? { status: "possible_gap_in_observed_sources", observed_origins: candidate.evidence_groups.possible_independent_origins, note: "Geringe beobachtete Quellenbreite, keine Aussage über die gesamte Medienaufmerksamkeit." } : null;
     candidate.source_integrity = sourceIntegrityForStory(candidate, registry, matchableStories, now);
     const event = newsroom.events[candidate.event_id] || { ...eventFingerprint(candidate.sources[0]), id: candidate.event_id, event_detected_at: candidate.event_detected_at };
-    newsroom.events[candidate.event_id] = { ...event, story_id: candidate.story_id, relevance: candidate.preanalysis, attention_impact_gap: candidate.attention_impact_gap };
+    newsroom.events[candidate.event_id] = updateEventLifecycle({ ...event, story_id: candidate.story_id, canonical_title: candidate.title,
+      first_seen_at: candidate.event_first_seen_at, last_seen_at: now,
+      relevance: candidate.preanalysis, event_score: candidate.preanalysis.event_score, attention_impact_gap: candidate.attention_impact_gap }, candidate.existing_story, candidate.preanalysis.event_score, now);
     for (const source of candidate.sources) if (source.source_item_id && newsroom.source_items[source.source_item_id]) newsroom.source_items[source.source_item_id].event_id = candidate.event_id;
   }
   report.story_clusters = freshCandidates.length;
@@ -1176,20 +1214,22 @@ export async function runWirkungsticker(options = {}) {
   report.budget_throttle = { policy_version: "2.0", relevance_threshold: stage.threshold, max_stories_per_run: stage.max_stories_per_run ?? null, mode: stage.stage >= 3 ? "budget_stop" : stage.stage ? "bounded_throughput" : "normal" };
   report.monthly_spend_before_usd = Number(spendBefore.toFixed(6));
   report.monthly_budget_usd = budget;
-  const eligible = clusters
+  const initiallyEligible = clusters
     .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= 30)
     .sort((a, b) => queuePriority(b, now) - queuePriority(a, now) || latestSourceDate(b.sources) - latestSourceDate(a.sources));
+  const eligible = eventAuditEnabled ? balanceEventQueue(initiallyEligible.map(candidate => ({ ...candidate, selection_base_priority: queuePriority(candidate, now) })), categoryCoverage(storyStore.stories, now)) : initiallyEligible;
+  const eligibleIds = new Set(eligible.map(candidate => candidate.story_id));
   report.locally_rejected = clusters.length - eligible.length;
   report.eligible_stories = eligible.length;
   for (const candidate of eligible) bumpCandidateFunnel(sourceFunnel, candidate, "eligible_stories");
-  for (const candidate of clusters.filter((candidate) => !eligible.includes(candidate))) bumpCandidateFunnel(sourceFunnel, candidate, "local_rejections");
+  for (const candidate of clusters.filter((candidate) => !eligibleIds.has(candidate.story_id))) bumpCandidateFunnel(sourceFunnel, candidate, "local_rejections");
   newsroom.decisions ||= [];
-  for (const candidate of clusters.filter((candidate) => !eligible.includes(candidate))) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "local_relevance_below_threshold", preanalysis: candidate.preanalysis });
+  for (const candidate of clusters.filter((candidate) => !eligibleIds.has(candidate.story_id))) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "local_relevance_below_threshold", preanalysis: candidate.preanalysis });
   const byId = new Map((storyStore.stories || []).map((story) => [story.story_id, story]));
   // A local relevance rejection is a completed decision, not an AI-capacity
   // backlog. Preserve published text and history; changed source arrivals can
   // still reopen the same story through normal discovery.
-  for (const candidate of clusters.filter(candidate => !eligible.includes(candidate))) {
+  for (const candidate of clusters.filter(candidate => !eligibleIds.has(candidate.story_id))) {
     const existing = candidate.existing_story;
     if (!existing) continue;
     if (existing.published) {
@@ -1249,6 +1289,8 @@ export async function runWirkungsticker(options = {}) {
     policy_version: "2.1", max_stories_per_run: 6, mode: "bounded_backlog_catchup" };
   const { selected, deferred } = partitionAiQueue(ready, catchUp.stage, maxAiStories, now);
   for (const candidate of selected) bumpCandidateFunnel(sourceFunnel, candidate, "ai_selected");
+  for (const candidate of selected) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id,
+    decision: 'selected_for_verification', score: candidate.preanalysis.event_score, reason: 'event_priority_with_soft_coverage_balance_within_existing_budget' });
   const aiBatchSize = Math.max(1, Math.min(maxAiStories || 1, Number(process.env.WOEK_NEWS_AI_BATCH_SIZE || 2)));
   report.ai_stories = selected.length;
   report.ai_batch_size = aiBatchSize;
@@ -1555,6 +1597,18 @@ export async function runWirkungsticker(options = {}) {
   report.status = report.operational_status;
   if (report.status === "ok") state.last_successful_run = now;
   report.coverage = coverageReport(enabledSources, [...byId.values()]);
+  if (eventAuditEnabled) {
+    report.event_coverage = coverageAudit({ items: allowedObservationItems(), stories: [...byId.values()], decisions: newsroom.decisions,
+      selectedIds: new Set(selected.map(candidate => candidate.story_id)), now, sourceFunnel: report.source_funnel,
+      previousFunnel: Object.entries(previousSourceStatus).map(([source_id, value]) => ({ source_id, feed_items: value.items || 0 })) });
+    for (const row of [...report.event_coverage.top_events, ...report.event_coverage.potential_missed_news]) {
+      const event = newsroom.events[row.event_id];
+      if (event) newsroom.events[row.event_id] = updateEventLifecycle({ ...event, audit: row }, byId.get(row.cluster_id), row, now);
+    }
+    // Coverage is a separate editorial signal. Do not relabel a healthy API as
+    // failed, stop publication, or automatically waive evidence requirements.
+    report.coverage_alerts = report.event_coverage.alerts;
+  }
   report.regional_coverage = regionalCoverage(registry, state, now);
   report.freshness = [...byId.values()].filter((story) => story.listed !== false).map((story) => ({ story_id: story.story_id, published: Boolean(story.published), ...freshnessFor(story, now) }));
   report.freshness_warnings = report.freshness.filter((story) => story.freshness_warning);

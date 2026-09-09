@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T11:18:07.059Z",
-  "scanned_stories": 203,
-  "scanned_subjects": 178,
+  "started_at": "2026-09-09T16:44:59.990Z",
+  "scanned_stories": 212,
+  "scanned_subjects": 187,
   "editorial_candidates": 32,
-  "ready_for_research": 9,
+  "ready_for_research": 10,
   "research_pending": 11,
-  "retry_deferred": 5,
-  "editorial_research_sources_discovered": 48,
+  "retry_deferred": 4,
+  "editorial_research_sources_discovered": 51,
   "selected": 0,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
@@ -24,18 +24,60 @@
   "full_generations": 0,
   "targeted_repairs": 0,
   "batch_results_reviewed": 0,
-  "background_waiting": 4,
-  "quality_held": 3,
-  "unchanged_research_skipped": 13,
+  "background_waiting": 6,
+  "quality_held": 4,
+  "unchanged_research_skipped": 12,
   "requested": [],
   "publication_deferred": false,
   "failed": [],
   "candidates": [
     {
+      "story_id": "wt-0158090dd70e734e",
+      "story_slug": "nach-anschlagen-auf-stromversorgung-verdachtiger-in-untersuchungshaft-0e734e",
+      "story_title": "Nach Anschlägen auf Stromversorgung: Verdächtiger in Untersuchungshaft",
+      "editorial_analysis_score": 77,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 4,
+        "evidence_quality": 7
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 9,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "039549c69990c4e5080d210638c414b43130c8ff97855ba92a6dfb1e7bf63998",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
+    {
       "story_id": "wt-84ac3f26c7762712",
       "story_slug": "milliarden-lucke-im-klimafonds-762712",
       "story_title": "Milliarden-Lücke im Klimafonds",
-      "editorial_analysis_score": 81,
+      "editorial_analysis_score": 83,
       "analysis_gain": 60,
       "factors": {
         "systemic_relevance": 14,
@@ -52,7 +94,7 @@
         "distribution_relevance": 8,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 3
+        "evidence_quality": 5
       },
       "factor_status": {
         "impact_potential": "open",
@@ -62,17 +104,16 @@
       "evidence_gate": {
         "passed": false,
         "source_integrity": "verified",
-        "independent_origin_count": 1,
+        "independent_origin_count": 2,
         "primary_source_count": 0,
         "cited_claim_count": 5,
         "primary_source_expected": true,
         "primary_source_satisfied": false,
         "reasons": [
-          "fewer_than_two_source_origins",
           "primary_source_missing"
         ]
       },
-      "fingerprint": "d4aed5625f353eb5fec67a54dc50ee5871ae9c3aec5321a99af8eb4f6e731666",
+      "fingerprint": "c3f74df61b002cc86ac7f47c7c401c23eb05bf0f2aec0a1c95c92cedb28d025b",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -116,7 +157,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "a72c354fddf71dbc0ecc0c180f5c67a4809a3417ac92d123e2375e790ad88047",
+      "fingerprint": "2aa0c15fd34ae5053f3226f790aa62f1d2bf0670becbbfe9c1e5f3b4946b96f4",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -208,7 +249,7 @@
       "story_id": "wt-e820bef62dd96612",
       "story_slug": "angriff-mit-stichwaffe-in-ahrensburg-tatverdachtiger-festgenommen-d96612",
       "story_title": "Angriff mit Stichwaffe in Ahrensburg: Tatverdächtiger festgenommen",
-      "editorial_analysis_score": 68,
+      "editorial_analysis_score": 70,
       "analysis_gain": 51,
       "factors": {
         "systemic_relevance": 16,
@@ -225,7 +266,7 @@
         "distribution_relevance": 3,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 5
+        "evidence_quality": 7
       },
       "factor_status": {
         "impact_potential": "open",
@@ -235,14 +276,14 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 2,
+        "independent_origin_count": 3,
         "primary_source_count": 0,
         "cited_claim_count": 6,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "55c01a53ce4e370eae11a3736ee05383f6c4c6e67e77e2ffa44c87d2ead7b09d",
+      "fingerprint": "22d7ee4a94428d084bc81b30bbf84cca58301a92d789296771c08cab898f81d5",
       "status": "ready_for_research",
       "analysis_id": null
     },
@@ -250,7 +291,7 @@
       "story_id": "wt-366b1fbfa120e44f",
       "story_slug": "sabotage-am-stromnetz-polizei-nimmt-verdachtigen-bei-aachen-fest-20e44f",
       "story_title": "Sabotage am Stromnetz: Polizei nimmt Verdächtigen bei Aachen fest",
-      "editorial_analysis_score": 84,
+      "editorial_analysis_score": 82,
       "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 16,
@@ -267,7 +308,7 @@
         "distribution_relevance": 6,
         "discourse_relevance": 6,
         "case_depth": 0,
-        "evidence_quality": 7
+        "evidence_quality": 5
       },
       "factor_status": {
         "impact_potential": "open",
@@ -277,14 +318,14 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 3,
+        "independent_origin_count": 2,
         "primary_source_count": 0,
-        "cited_claim_count": 7,
+        "cited_claim_count": 5,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "e5095f24671851661bf26839bac0d41344db6d69b03da9d1c566829dc05b102f",
+      "fingerprint": "646e57265ef9d91effe3156b7596482215484833cf1ebaeb842893539a96f6eb",
       "status": "ready_for_research",
       "analysis_id": null
     },
@@ -364,7 +405,7 @@
       "evidence_gate": {
         "passed": false,
         "source_integrity": "verified",
-        "independent_origin_count": 5,
+        "independent_origin_count": 6,
         "primary_source_count": 0,
         "cited_claim_count": 4,
         "primary_source_expected": true,
@@ -373,7 +414,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "83a7b24f03424b3c098db842dec96c64b12693bd3892d5566e339c2b36dffeca",
+      "fingerprint": "63685ec0e9ebb01800f70c9df42a2e9c7407bfaf3fc6264126fe846245877993",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -423,7 +464,7 @@
       "story_id": "wt-6fc066364494ba73",
       "story_slug": "ukraine-news-ukrainischer-generalstaatsanwalt-tritt-nach-korruptionsvorwurfen-zuruck-94ba73",
       "story_title": "Ukraine-News: Ukrainischer Generalstaatsanwalt tritt nach Korruptionsvorwürfen zurück",
-      "editorial_analysis_score": 73,
+      "editorial_analysis_score": 74,
       "analysis_gain": 53,
       "factors": {
         "systemic_relevance": 16,
@@ -440,7 +481,7 @@
         "distribution_relevance": 0,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 7
+        "evidence_quality": 8
       },
       "factor_status": {
         "impact_potential": "open",
@@ -450,7 +491,7 @@
       "evidence_gate": {
         "passed": false,
         "source_integrity": "verified",
-        "independent_origin_count": 3,
+        "independent_origin_count": 4,
         "primary_source_count": 0,
         "cited_claim_count": 4,
         "primary_source_expected": true,
@@ -459,7 +500,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "5bb7d32b750cef0f6e1a26dc912b0b8479d4aaff49f436af09496646a4841659",
+      "fingerprint": "29c47e326c59d83af349e96af5653755d026c0869e9079f25dfddaeb388a214c",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -504,48 +545,6 @@
       "fingerprint": "e1b1db1771ed604af4ad505ac35099d79339d3599224ead111a589923e4b9bed",
       "status": "published",
       "analysis_id": "woek-analysis-dab9cdd59202"
-    },
-    {
-      "story_id": "wt-f03755f6f6b8c3b7",
-      "story_slug": "sabotageversuche-polizei-ruft-bevolkerung-auf-verdachtige-beobachtungen-zu-melden-b8c3b7",
-      "story_title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
-      "editorial_analysis_score": 78,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 9,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 6,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 6,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 4,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "ff99a7fe570d24cd0d511b62ee12eec4c137e78e18f3a11f0f9239c581fb99e8",
-      "status": "ready_for_research",
-      "analysis_id": null
     },
     {
       "story_id": "wt-4b5d0962d323432a",
@@ -670,7 +669,7 @@
         "reasons": []
       },
       "fingerprint": "045570fb2ba7f213e6e005e3b04558f9c2175bbb4b0ec60987446cbb2b4bcc9d",
-      "status": "ready_for_research",
+      "status": "quality_hold",
       "analysis_id": null
     },
     {
@@ -1176,14 +1175,14 @@
         "passed": true,
         "source_integrity": "verified",
         "independent_origin_count": 2,
-        "primary_source_count": 4,
+        "primary_source_count": 5,
         "cited_claim_count": 2,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "b3ccdb4bdc5adee6b0d6f75de828e40403e2b8523b27bc4f4722fef60686ebcb",
-      "status": "published",
+      "fingerprint": "0c84ebc213e0cfe23df7b7b13f8f92b03195ca82b3eb35be19ce6fac58341ae3",
+      "status": "ready_for_research",
       "analysis_id": "woek-analysis-852ebdd0a0aa"
     },
     {
@@ -1415,5 +1414,5 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-09T11:18:39.949Z"
+  "completed_at": "2026-09-09T16:45:41.322Z"
 }
