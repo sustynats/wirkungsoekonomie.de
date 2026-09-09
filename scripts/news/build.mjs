@@ -23,7 +23,7 @@ import { loadManualEditorials, renderManualArticle, renderBookCover, BOOK_FORMAT
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260909-buch-wirkung1";
+const PUBLIC_RELEASE = "20260910-potential-model12";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");

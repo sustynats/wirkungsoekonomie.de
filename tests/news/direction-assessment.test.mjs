@@ -10,9 +10,9 @@ import { analysisReaderCopy } from '../../scripts/news/reader-copy.mjs';
 import { resolveEvidenceReferences, sourceEvidenceSegments } from '../../scripts/news/newsroom.mjs';
 
 const sources = [{source_id:'source-999'}];
-const path = mechanism => ({mechanism,source_ids:['source-999'],effect_type:'independent_change',reference:'assessment_baseline'});
+const path = mechanism => ({mechanism,state_change:mechanism,condition:'Wenn die angekündigte Änderung umgesetzt wird.',effect_role:'substantive_change',source_ids:['source-999'],effect_type:'independent_change',reference:'assessment_baseline'});
 const fixture = () => ({direction_assessment_version:DIRECTION_ASSESSMENT_VERSION,
-  assessment_frame:{subject:'Änderung der erreichbaren Beratungsangebote.',baseline:'Fortführung der bisherigen Beratungsangebote ohne den Eingriff.'},
+  assessment_frame:{subject:'Änderung der erreichbaren Beratungsangebote.',baseline:'Fortführung der bisherigen Beratungsangebote ohne den Eingriff.',object_kind:'proposed_measure'},
   ...Object.fromEntries(['human','planet','democracy'].map(key=>[key,{relevance:'hoch',tendency:'risiko',direction_basis:'assessed',rationale:'Fällt die spezialisierte Beratung weg, sinkt die erreichbare Hilfe. Eintritt und Ausmaß sind offen.',positive_path:null,negative_path:path('Mittelentzug verkürzt die Öffnungszeiten der Beratungsstelle.')}]))});
 const mixed = () => ({positive_path:path('Zusätzliche Beratung erleichtert den Zugang zu Hilfe.'),negative_path:path('Gleichzeitiger Mittelentzug verkürzt die Öffnungszeiten.')});
 
@@ -135,7 +135,7 @@ test('missing, explicit uncertainty, missing pathway and unsupported balance are
   assert.doesNotMatch(html,/sr-only[^>]*>Für diese Dimension/);
   assert.equal(JSON.stringify(a),before);
   a.democracy.tendency='gemischt';assert.equal(dimensionAssessment(a,'democracy').status,'unresolved_balance');
-  assert.match(renderDimensionMeters(a),/Keine belastbare Gesamtbilanz/);
+  assert.match(renderDimensionMeters(a),/Keine belastbare Gesamtbewertung/);
 });
 
 test('fresh output must not omit the contract, direction, basis, or substantive explanation',()=>{
@@ -176,8 +176,11 @@ for (const includeVisuals of [true, false]) test(`the actual output template inc
   for (const key of ['human','planet','democracy']) {
     assert.equal(schema[key].$ref,'#/$defs/mpd');
     schema[key]=structuredClone(template.$defs.mpd);
-    assert.deepEqual(schema[key].positive_path,NEWS_DIMENSION_SCHEMA.positive_path);
-    assert.deepEqual(schema[key].negative_path,NEWS_DIMENSION_SCHEMA.negative_path);
+    for (const sign of ['positive_path','negative_path']) {
+      assert.equal(schema[key][sign].$ref,'#/$defs/path');
+      schema[key][sign]=structuredClone(template.$defs.path);
+      assert.deepEqual(schema[key][sign],{...NEWS_DIMENSION_SCHEMA.positive_path,state_change:'konkrete Zustandsänderung'});
+    }
   }
   assert.match(prompt,/unbenötigte Pfade null/);
   const analysis=fixture();

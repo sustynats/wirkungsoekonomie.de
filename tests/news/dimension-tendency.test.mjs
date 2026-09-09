@@ -9,7 +9,7 @@ import { sanitizeAnalysisVisuals } from '../../scripts/news/run.mjs';
 import { dimensionAssessment } from '../../scripts/news/direction-assessment.mjs';
 
 const mpd = () => Object.fromEntries(['human','planet','democracy'].map(key=>[key,{relevance:'hoch',rationale:'Der konkrete Wirkmechanismus bleibt zu prüfen.'}]));
-const statuses = html => [...html.matchAll(/class="wt-tendency [^"]+" data-direction="([^"]+)"/g)].map(match=>match[1]);
+const statuses = html => [...html.matchAll(/class="(?:wt-tendency [^"]+|wt-dim__separate-label)" data-direction="([^"]+)"/g)].map(match=>match[1]);
 const mixedPaths = () => ({ positive_path: { mechanism: 'Zusätzliche Beratung erleichtert den Zugang zu Hilfe.', source_ids: ['test'] }, negative_path: { mechanism: 'Gleichzeitiger Mittelentzug verkürzt die Öffnungszeiten.', source_ids: ['test'] } });
 
 test('all four directions are legible text and distinct icons, not bar colors or a hover-only hint',()=>{
@@ -27,10 +27,10 @@ test('all four directions are legible text and distinct icons, not bar colors or
 });
 
 test('historical tendencies are reused, never guessed from relevance, headlines, or risk words',()=>{
-  const analysis={...mpd(),visuals:{tendency:{human:'chance',planet:'risiko',democracy:'gemischt'}}};
+  const analysis={...mpd(),analysis_type:'ex_ante',visuals:{tendency:{human:'chance',planet:'risiko',democracy:'gemischt'}}};
   const before=JSON.stringify(analysis);
   assert.deepEqual(dimensionTendencies(analysis),{human:'chance',planet:'risiko',democracy:'gemischt'});
-  assert.deepEqual(statuses(renderDimensionMeters(analysis)),['positive','negative','open']);
+  assert.deepEqual(statuses(renderDimensionMeters(analysis)),['not_aggregated','not_aggregated','open']);
   assert.match(renderDimensionMeters(analysis), /Keine belastbare Gesamtbilanz/);
   assert.equal(JSON.stringify(analysis),before);
   delete analysis.visuals;
@@ -40,12 +40,12 @@ test('historical tendencies are reused, never guessed from relevance, headlines,
 });
 
 test('current base assessments take precedence over legacy visuals, including an explicit open result',()=>{
-  const analysis={...mpd(),visuals:{tendency:{human:'chance',planet:'chance',democracy:'chance'}}};
+  const analysis={...mpd(),analysis_type:'ex_ante',visuals:{tendency:{human:'chance',planet:'chance',democracy:'chance'}}};
   analysis.human.tendency='offen';analysis.planet.tendency='risiko';analysis.democracy.tendency='gemischt';
   Object.assign(analysis.democracy, mixedPaths());
-  assert.deepEqual(statuses(renderDimensionMeters(analysis,{tendency:analysis.visuals.tendency})),['open','negative','mixed']);
+  assert.deepEqual(statuses(renderDimensionMeters(analysis,{tendency:analysis.visuals.tendency})),['open','not_aggregated','not_aggregated']);
   analysis.visuals=null;
-  assert.deepEqual(statuses(renderDimensionMeters(analysis)),['open','negative','mixed']);
+  assert.deepEqual(statuses(renderDimensionMeters(analysis)),['open','not_aggregated','not_aggregated']);
 });
 
 test('invalid directions stay open and cannot inject content or inherit object prototypes',()=>{
@@ -83,9 +83,9 @@ test('retroactive rendering covers every published story without rewriting store
     for(const detail of [false,true]) {
       const html=renderStoryVisual(story,{detail});
       assert.equal(statuses(html).length,3,story.slug);
-      assert.deepEqual(statuses(html),['human','planet','democracy'].map(key=>({chance:'positive',risiko:'negative',gemischt:'mixed',offen:'open'}[dimensionAssessment(story.analysis,key).tendency])));
-      assert.match(html,/Relevanz &amp; Richtung/);
-      assert.match(html,/kein Wirkungsnachweis/);
+      assert.deepEqual(statuses(html),['human','planet','democracy'].map(key=>story.analysis[key]?.tendency === 'gemischt' || dimensionAssessment(story.analysis,key).status === 'unscoped' ? 'not_aggregated' : ({chance:'positive',risiko:'negative',gemischt:'mixed',offen:'open'}[dimensionAssessment(story.analysis,key).tendency])));
+      assert.match(html,/Relevanz &amp; Wirkungspotenzial/);
+      assert.match(html,/Potenzial ist noch keine eingetretene Wirkung/);
     }
     assert.equal(JSON.stringify(story),before,story.slug);
   }
@@ -103,7 +103,7 @@ test('list and both detail MPD sections show the same available finding without 
   Object.assign(story.analysis.democracy, mixedPaths());
   for (const path of [story.analysis.democracy.positive_path,story.analysis.democracy.negative_path]) Object.assign(path,{effect_type:'independent_change',reference:'assessment_baseline'});
   const before=JSON.stringify(story);
-  assert.deepEqual(statuses(storyCard(story,0)),['positive','negative','mixed']);
-  assert.deepEqual(statuses(storyPage(story)),['positive','negative','mixed','positive','negative','mixed']);
+  assert.deepEqual(statuses(storyCard(story,0)),['positive','negative','not_aggregated']);
+  assert.deepEqual(statuses(storyPage(story)),['positive','negative','not_aggregated','positive','negative','not_aggregated']);
   assert.equal(JSON.stringify(story),before);
 });

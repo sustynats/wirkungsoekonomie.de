@@ -93,7 +93,7 @@ export function renderEditorialBalance(analysis, { compact = false } = {}) {
     const item = analysis.subject_dimensions[key];
     const negative = item.direction === "negative";
     const direction = negative && item.magnitude === "very_high" ? "Stark negativ" : AXES.direction[item.direction] || "Offen";
-    return `<div class="news-mpd-balance__item" role="group" aria-label="Relevanz für ${meta.label}: ${escape(item.relevance)}; ${escape(context)}: ${escape(direction)}"><h3>${renderIcon(meta.icon)} ${meta.label}</h3><p class="news-mpd-balance__relevance">Relevanz: <strong>${escape(item.relevance)}</strong></p><p class="news-mpd-balance__direction" data-direction="${escape(item.direction)}">${renderIcon(negative ? "tendenz-risiko" : item.direction === "positive" ? "tendenz-chance" : "tendenz-gemischt")}<span>${escape(direction)}<small>${escape(context)}</small></span></p>${compact ? "" : `<p>${escape(item.rationale)}</p>${renderAssessmentAxes(item)}`}</div>`;
+    return `<div class="news-mpd-balance__item" role="group" aria-label="Relevanz für ${meta.label}: ${escape(item.relevance)}; ${escape(context)}: ${escape(direction)}"><h3>${renderIcon(meta.icon)} ${meta.label}</h3><p class="news-mpd-balance__relevance">Relevanz: <strong>${escape(item.relevance)}</strong></p><p class="news-mpd-balance__direction" data-direction="${escape(item.direction)}">${renderIcon(negative ? "tendenz-risiko" : item.direction === "positive" ? "tendenz-chance" : "tendenz-gemischt")}<span>${escape(direction)}<small>${escape(context)}</small></span></p><p>${escape(item.rationale)}</p>${compact ? "" : renderAssessmentAxes(item)}</div>`;
   }).join("")}</div></div>`;
 }
 

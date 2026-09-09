@@ -1,7 +1,369 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T22:37:52.526Z",
+  "updated_at": "2026-09-09T22:59:52.332Z",
   "stories": [
+    {
+      "story_id": "wt-bbaa7af8793200d8",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbaa7af8793200d8-d9213f2e82bd29de-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbaa7af8793200d8-8ba4917c1fa7e60e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbaa7af8793200d8-b98c3ae2c5465b78-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbaa7af8793200d8-fa0f9d5908a1963e-source.png"
+        }
+      },
+      "slug": "so-hat-das-reiche-monheim-riesige-schulden-angehauft-3200d8",
+      "title": "So hat das reiche Monheim riesige Schulden angehäuft",
+      "source_summary": "Monheim am Rhein wird in dem Bericht als Stadt mit hoher Verschuldung und starkem Haushaltsdruck beschrieben. Genannt werden Haushaltssicherung, ein Haushaltsminus von knapp 90 Millionen Euro für 2026 und sinkende Gewerbesteuern. \n\nZugleich eröffnet die Stadt die Kulturraffinerie K714, die 166 Millionen Euro gekostet hat. Der Bericht betont, dass die Halle nur bei guter Auslastung finanziell tragen kann. Offen bleibt, wie schnell sich Einnahmen, Nutzung und Budgetlage tatsächlich entwickeln.",
+      "summary": "Monheim steht unter starkem Haushaltsdruck, während die neue Kulturraffinerie K714 eröffnet. Der Bericht verbindet hohe Schulden mit dem Versuch, das Projekt über Auslastung wirtschaftlich zu tragen.",
+      "detail_summary": "Der Bericht beschreibt Monheim als Stadt in einer extremen finanziellen Schieflage. Genannt werden Haushaltssicherung, ein Haushaltsminus von knapp 90 Millionen Euro und verfehlte Gewerbesteuern. Zugleich eröffnet die Stadt die Kulturraffinerie K714 für 166 Millionen Euro. Relevanz entsteht, weil hier kommunale Schulden, ein Großprojekt und künftige Haushaltsbelastungen zusammenkommen. Der Wirkpfad läuft über Ausgaben, Auslastung und Einnahmen: Wenn die Halle nicht genug genutzt wird, bleibt der finanzielle Druck hoch. Belegt ist der aktuelle Zustand; offen bleibt, ob und wie stark sich daraus mittelbar Folgen für Haushaltsspielräume ergeben.",
+      "why_relevant": "Die Geschichte verbindet hohe kommunale Verschuldung, ein teures Kulturprojekt und die Frage nach künftiger Finanzstabilität. Das betrifft Haushaltsautonomie, Prioritäten und mögliche Folgekosten.",
+      "topic": [
+        "Geopolitik",
+        "Finanzen"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Quelle beschreibt eine angespannte kommunale Finanzlage mit Haushaltssicherung, knapp 90 Millionen Euro Minus und sinkenden Gewerbesteuern. Das kann die Spielräume für kommunale Leistungen und Investitionen verengen, ohne dass die Folgewirkung bereits als eingetreten belegt ist.",
+          "negative_path": {
+            "mechanism": "Anhaltende Defizite, sinkende Gewerbesteuern und hohe Betriebskosten der Halle verringern den Haushaltsspielraum und erhöhen den Druck auf kommunale Leistungen.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Falls die Halle gut ausgelastet wird und zusätzliche Einnahmen erzeugt, kann das den Haushalt etwas entlasten und finanzielle Stabilisierung unterstützen.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Quelle liefert keinen belastbaren Umwelt- oder Klimafolgenbeleg. Der Gegenstand ist kommunale Finanzierung und ein Kulturgebäude; ökologische Wirkungen bleiben offen und dürfen nicht aus dem Thema abgeleitet werden.",
+          "positive_path": {
+            "mechanism": "Mögliche Bündelung von Veranstaltungen an einem Ort könnte Wege bündeln, dafür nennt die Quelle aber keine Emissions- oder Ressourcendaten.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Hohe Bau- und Betriebskosten können Ressourcen binden, doch ein Umweltfolgenbeleg fehlt in den Quellen.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Stadt befindet sich im Modus Haushaltssicherung, der Kreis kontrolliert laut Bericht die Finanzen genauer. Das berührt kommunale Selbststeuerung und Rechenschaft, ohne selbst schon einen demokratischen Schaden zu belegen.",
+          "negative_path": {
+            "mechanism": "Engere Aufsicht und geringerer eigener Spielraum können politische Prioritätensetzung und lokale Entscheidungsfreiheit einschränken.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Öffentliche Kontrolle über Defizite und Großprojekte kann Rechenschaft stärken, wenn sie zu transparenten Haushaltsentscheidungen führt.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "third_order",
+            "path": "veränderte politische Bewertung des früheren Wachstumsmodells",
+            "direction": "open",
+            "condition": "Wenn die Finanzlage länger angespannt bleibt, kann sich die politische Debatte über frühere Steuer- und Investitionspolitik verschieben.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "democracy"
+            ]
+          }
+        ],
+        "affected_groups": [
+          "kommunen",
+          "staat",
+          "beschaeftigte"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T22:52:17.389Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T10:03:08.000Z",
+      "last_updated": "2026-09-09T22:58:53.735Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-e0c46d015bac0e2a41fa",
+      "case_file": null,
+      "source_published_at": "2026-09-06T10:03:08.000Z",
+      "published_at": "2026-09-09T22:58:53.735Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "wdr-nachrichten",
+              "wdr-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Gewerbesteuereinnahmen im laufenden Haushaltsjahr wie prognostiziert um bis zu rund ein Drittel verfehlt werden.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Aktuelle Mitteilung oder neuer Haushaltsstand zur Gewerbesteuer",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a84f3111b47c2843",
+          "announced_at": "2026-09-06T10:03:08.000Z",
+          "follow_up_date": "2026-09-16T22:58:53.735Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Kulturraffinerie K714 die erwartete Auslastung erreicht und damit ihre Kosten teilweise deckt.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Belegte Auslastungszahlen, Buchungen oder Defizitentwicklung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-85e1df452151e61e",
+          "announced_at": "2026-09-06T10:03:08.000Z",
+          "follow_up_date": "2026-09-16T22:58:53.735Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:03:08.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-2-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T13:14:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-b568ca860f4fe31e",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b568ca860f4fe31e-685c01f21199b9ed-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b568ca860f4fe31e-6437328e79476668-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b568ca860f4fe31e-5a4e8f69c1b9a28a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "wenn-manner-kinder-kriegten-hatten-wir-kreisssale-aus-gold-4fe31e",
+      "title": "\"Wenn Männer Kinder kriegten, hätten wir Kreißsäle aus Gold\"",
+      "source_summary": "Die Meldung beschreibt finanziellen Druck auf Geburtskliniken und verweist auf Schließungen in der Region. Eine leitende Hebamme aus Rüdersdorf schildert zugleich Sorgen um Versorgung, Wege für Schwangere und eigene Einbußen durch einen neuen Vergütungsrahmen.\n\nGenannt werden Auswirkungen auf Frauengesundheit, Arbeitsalltag und Wahlmöglichkeiten bei der Geburt. Offene Punkte bleiben der genaue Umfang der Schließungen, die Reichweite der Folgen und die externe Bestätigung der Zahlen.",
+      "summary": "Geburtskliniken in Brandenburg stehen unter Druck, und eine Hebamme schildert Folgen für Frauen und Personal. Die Meldung ist ein erster Lagehinweis mit offenen Fragen zu Umfang und Belastbarkeit.",
+      "detail_summary": "Die Meldung setzt bei Schließungen und finanziellem Druck auf Geburtskliniken an. Eine leitende Hebamme aus Rüdersdorf beschreibt, dass Frauen teils längere Wege zu Kliniken in Kauf nehmen müssen und dass sich die Auswahlorte für Geburten verringern. Zugleich berichtet sie von Sorgen im Team, weil weitere Schließungen erwartet werden könnten. Als eigener Belastungsfaktor nennt sie ein neues Vergütungssystem für freiberufliche Hebammen mit rund 20 Prozent Einbußen. Die Relevanz liegt in Versorgung, Arbeitsbedingungen und Zugänglichkeit für Gebärende. Die Evidenz bleibt aber auf eine journalistische Einzelquelle mit vor allem zugeschriebenen Aussagen begrenzt.",
+      "why_relevant": "Die Meldung berührt Versorgung, Erreichbarkeit und Arbeitsbedingungen rund um Geburtshilfe. Das ist materiell, weil es mehrere Betroffene und mögliche Folgewirkungen für Gesundheit und Wahlfreiheit nennt.",
+      "topic": [
+        "Gesundheit",
+        "Geopolitik",
+        "Finanzen"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Weniger Geburtsstationen und geringere Vergütung können Versorgungslücken, längere Wege und Druck auf Hebammen erzeugen. Die Meldung beschreibt solche Risiken, aber keinen belastbar gemessenen Endeffekt.",
+          "negative_path": {
+            "mechanism": "Schließungen und Vergütungseinbußen können Erreichbarkeit, Planbarkeit und Bindung von Fachpersonal verschlechtern.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Keine tragfähige positive Veränderung im Quellmaterial belegt; höchstens der Hinweis auf Aufmerksamkeit für das Thema.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "other_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Im Quelltext ist kein direkter Umwelt- oder Klimapfad belegt. Ein materieller Bezug ergibt sich hier nicht aus den vorliegenden Angaben.",
+          "negative_path": {
+            "mechanism": "Kein belegter Umweltpfad aus der Meldung ableitbar.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Kein belegter positiver Umweltpfad aus der Meldung ableitbar.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Wenn Versorgung für Gebärende kleiner und schwerer erreichbar wird, betrifft das die tatsächliche Zugänglichkeit öffentlicher Daseinsvorsorge. Zugleich bleibt offen, wie breit die Lage ist und ob es bereits belastbare Folgedaten gibt.",
+          "negative_path": {
+            "mechanism": "Weniger Standorte und geringere Wahlmöglichkeiten können die reale Teilhabe an wohnortnaher Versorgung schwächen.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Die öffentliche Debatte kann Problemdruck sichtbar machen, ohne schon eine Verbesserung zu belegen.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "other_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "beschaeftigte",
+          "kommunen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T22:52:17.389Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T12:17:33.000Z",
+      "last_updated": "2026-09-09T22:57:05.479Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-0cdd60b51f48c6a7b45c",
+      "case_file": null,
+      "source_published_at": "2026-09-09T12:17:33.000Z",
+      "published_at": "2026-09-09T22:57:05.479Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Wie viele Geburtsstationen in Brandenburg sind geschlossen oder von Schließung betroffen?",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Zahl der betroffenen Geburtsstationen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a6dc4cb3ce822b94",
+          "announced_at": "2026-09-09T12:17:33.000Z",
+          "follow_up_date": "2026-09-16T22:57:05.479Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wie stark wirkt sich der neue Hebammenhilfevertrag auf Einkommen und Personalbindung aus?",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Einkommensverlust oder Stellenentwicklung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-5ca73f920eec9607",
+          "announced_at": "2026-09-09T12:17:33.000Z",
+          "follow_up_date": "2026-09-16T22:57:05.479Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/thema/wiegehtesuns/hebamme-ruedersdorf-schliessungen-gebaerende-frauengesundheit.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T12:17:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3bb169b629ab743f",
       "title_image": {
