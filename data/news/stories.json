@@ -1,8 +1,646 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-09T09:21:45.679Z",
-  "updated_at": "2026-09-09T09:21:45.679Z",
+  "updated_at": "2026-09-09T09:37:00.628Z",
   "stories": [
+    {
+      "story_id": "wt-6599834dd3ed4e1d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "c7f0900d27130b6c1ee90eebadd8ef7089003795dad60b3e02005276a58a616d",
+        "first_failed_at": "2026-09-09T09:37:00.628Z",
+        "failed_at": "2026-09-09T09:37:00.628Z",
+        "retry_after": "2026-09-09T09:52:00.628Z",
+        "retry_count": 1
+      },
+      "slug": "kunstliche-intelligenz-google-steckt-13-milliarden-euro-in-ki-infrastruktur-in-finnland-ed4e1d",
+      "title": "Künstliche Intelligenz: Google steckt 13 Milliarden Euro in KI-Infrastruktur in Finnland",
+      "first_seen": "2026-09-09T09:33:59.000Z",
+      "last_updated": "2026-09-09T09:33:59.000Z",
+      "topic": [
+        "KI",
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/it/kuenstliche-intelligenz-google-steckt-13-milliarden-euro-in-ki-infrastruktur-in-finnland/100253200.html",
+          "title": "Künstliche Intelligenz: Google steckt 13 Milliarden Euro in KI-Infrastruktur in Finnland",
+          "summary": "Der Google-Mutterkonzern Alphabet will mehrere Milliarden Euro in die Infrastruktur für Künstliche Intelligenz in Finnland investieren. Was dahintersteckt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T09:33:59.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "4ef629d741bd9ab548cf2988760059cb8f2a5f7b46617eba51679c5598ff28c7",
+          "source_item_id": "0fb97ea88a331eb47f647fd63435a4ff836285223972b5598287d1fb4f2d75aa",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T09:33:59.000Z",
+          "ingested_at": "2026-09-09T09:37:00.628Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6599834dd3ed4e1d-claim-01",
+          "story_id": "wt-6599834dd3ed4e1d",
+          "claim": "Künstliche Intelligenz: Google steckt 13 Milliarden Euro in KI-Infrastruktur in Finnland: Der Google-Mutterkonzern Alphabet will mehrere Milliarden Euro in die Infrastruktur für Künstliche Intelligenz in Finnland investieren. Was dahintersteckt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T09:37:00.628Z"
+        }
+      ],
+      "content_hash": "5c69efa834236c35f1376aad085c9dac7b311c1c6ba94242033cee866716f7a6",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T09:52:00.628Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T09:37:00.628Z",
+      "event_first_seen_at": "2026-09-09T09:37:00.628Z",
+      "event_detected_at": "2026-09-09T09:37:00.628Z",
+      "event_id": "event-7201227468f1008ea8fa",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 42,
+        "public_relevance": "mittel",
+        "topics": [
+          "KI",
+          "Europa"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 3.0271333333333335,
+        "detection_delay_minutes": 3.0271333333333335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T09:37:00.628Z",
+        "fingerprint": "193bc86e1827cbdd2f108815ac0e1c0066852b64a3e153b77d8240f57e25fb95",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T09:37:00.628Z",
+      "rejection": {
+        "at": "2026-09-09T09:37:00.628Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-2e3241c331cc6e50",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "31a27713f1f215a59619168fc37682aab5a1e2a1700fcb7ac05f120581e14322",
+        "first_failed_at": "2026-09-09T09:37:00.628Z",
+        "failed_at": "2026-09-09T09:37:00.628Z",
+        "retry_after": "2026-09-09T09:52:00.628Z",
+        "retry_count": 1
+      },
+      "slug": "warntag-am-10-september-2026-probealarm-mit-handys-und-sirenen-cc6e50",
+      "title": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen",
+      "first_seen": "2026-09-07T10:10:17.000Z",
+      "last_updated": "2026-09-09T09:31:41.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "hr-hessenschau",
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/warntag-am-10-september-2026-probealarm-mit-handys-und-sirenen-v1,warntag-2026-bund-hessen-100.html",
+          "title": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen",
+          "summary": "Handys schrillen, Sirenen heulen, Infotafeln leuchten: Am 10. September wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T10:10:17.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "0f0d3f5bbde0ae8eb283eb3fbeced8194548469112aa73b4113d26fd25825e04",
+          "source_item_id": "8fed8254379c009e9bafa379c2775e33b22632fc0a110d006fb8223179bb8dda",
+          "publisher_id": "hr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Hessen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T10:10:17.000Z",
+          "ingested_at": "2026-09-07T12:51:36.383Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "hr-hessenschau",
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/warntag-am-10-september-2026-probealarm-mit-handys-und-sirenen-v2,warntag-2026-bund-hessen-100.html",
+          "title": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen",
+          "summary": "Handys schrillen, Sirenen heulen, Infotafeln leuchten: Am 10. September wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T13:08:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "fa66b8bfa17a4fe3cfc0856d9abe55383adf64bc92a40ba4bd7e6a079f990698",
+          "source_item_id": "f8a0b57d2f046e09cbbdca1bfc3dd8a7305f2530ae8d61cf059eec0c468d81f9",
+          "publisher_id": "hr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Hessen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T13:08:18.000Z",
+          "ingested_at": "2026-09-07T13:35:44.462Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "hr-hessenschau",
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/warntag-am-10-september-2026-probealarm-mit-handys-und-sirenen-v3,warntag-2026-bund-hessen-100.html",
+          "title": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen",
+          "summary": "Handys schrillen, Sirenen heulen, Infotafeln leuchten: Am 10. September wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T13:47:39.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "69da436ae522f4c276b3133d063ec24dd736d522270b384c33a28206299d47e9",
+          "source_item_id": "3ffa0b3db6e1c20e8d75d3fe4f2c1bdf32f2f4cf201cc6c23a49ca44bf881e13",
+          "publisher_id": "hr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Hessen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T13:47:39.000Z",
+          "ingested_at": "2026-09-07T14:37:01.659Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "hr-hessenschau",
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/bundesweiter-warntag-2026-am-10-september-alarmieren-handys-und-sirenen-v4,warntag-2026-bund-hessen-100.html",
+          "title": "Bundesweiter Warntag 2026: Am 10. September alarmieren Handys und Sirenen",
+          "summary": "Handys schrillen, Sirenen heulen, Infotafeln leuchten: An diesem Donnerstag wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T09:00:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "bafc53a923b53a80b258afaa1095391a2590f482be81beedf12e58ea47c7146a",
+          "source_item_id": "4beb288b685ebc19dd0cbb719debbc51726fe392d44f7f184563809049bba143",
+          "publisher_id": "hr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Hessen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T09:00:02.000Z",
+          "ingested_at": "2026-09-09T09:21:45.679Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "hr-hessenschau",
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/bundesweiter-warntag-2026-am-10-september-alarmieren-handys-und-sirenen-v5,warntag-2026-bund-hessen-100.html",
+          "title": "Bundesweiter Warntag 2026: Am 10. September alarmieren Handys und Sirenen",
+          "summary": "Handys schrillen, Sirenen heulen, Infotafeln leuchten: An diesem Donnerstag wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T09:31:41.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "f2a5e98f22f5f88143394f0bc5c8b30e6153cca65205c2d3ea55910a7599efbd",
+          "source_item_id": "743227ea011c9368c774496b8eb01c23e90d0837a00e216445b74bedfe3889a5",
+          "publisher_id": "hr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Hessen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T09:31:41.000Z",
+          "ingested_at": "2026-09-09T09:37:00.628Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2e3241c331cc6e50-claim-01",
+          "story_id": "wt-2e3241c331cc6e50",
+          "claim": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen: Handys schrillen, Sirenen heulen, Infotafeln leuchten: Am 10. September wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "hr-hessenschau",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T09:37:00.628Z"
+        },
+        {
+          "claim_id": "wt-2e3241c331cc6e50-claim-02",
+          "story_id": "wt-2e3241c331cc6e50",
+          "claim": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen: Handys schrillen, Sirenen heulen, Infotafeln leuchten: Am 10. September wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "hr-hessenschau",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T09:37:00.628Z"
+        },
+        {
+          "claim_id": "wt-2e3241c331cc6e50-claim-03",
+          "story_id": "wt-2e3241c331cc6e50",
+          "claim": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen: Handys schrillen, Sirenen heulen, Infotafeln leuchten: Am 10. September wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "hr-hessenschau",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T09:37:00.628Z"
+        },
+        {
+          "claim_id": "wt-2e3241c331cc6e50-claim-04",
+          "story_id": "wt-2e3241c331cc6e50",
+          "claim": "Bundesweiter Warntag 2026: Am 10. September alarmieren Handys und Sirenen: Handys schrillen, Sirenen heulen, Infotafeln leuchten: An diesem Donnerstag wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "hr-hessenschau",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T09:37:00.628Z"
+        },
+        {
+          "claim_id": "wt-2e3241c331cc6e50-claim-05",
+          "story_id": "wt-2e3241c331cc6e50",
+          "claim": "Bundesweiter Warntag 2026: Am 10. September alarmieren Handys und Sirenen: Handys schrillen, Sirenen heulen, Infotafeln leuchten: An diesem Donnerstag wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "hr-hessenschau",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T09:37:00.628Z"
+        }
+      ],
+      "content_hash": "037a3197b2d367faf43d590fb34489736f289fac07cdc2ce19a9d88473bfbfe6",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-09T09:52:00.628Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T09:37:00.628Z",
+      "event_first_seen_at": "2026-09-07T10:21:55.886Z",
+      "event_detected_at": "2026-09-07T10:21:55.886Z",
+      "event_id": "event-403736131c5c33bdf453",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 42,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 5.327133333333333,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 2835.0790333333334,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T09:37:00.628Z",
+        "fingerprint": "3c9b1d6c66a598127ad11aae766266fcfc08159f75d3580f47243ba07b1c2473",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T09:37:00.628Z",
+      "rejection": {
+        "at": "2026-09-09T09:37:00.628Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-0fd3116f5db01435",
+      "slug": "warntag-am-10-september-wenn-flachendeckend-die-sirenen-heulen-b01435",
+      "title": "Warntag am 10. September: Wenn flächendeckend die Sirenen heulen",
+      "first_seen": "2026-09-09T09:29:29.000Z",
+      "last_updated": "2026-09-09T09:29:29.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "rbb24-nachrichten",
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/warntag-katastrophenschutz-uebung-sirenen-berlin-brandenburg.html",
+          "title": "Warntag am 10. September: Wenn flächendeckend die Sirenen heulen",
+          "summary": "Sirenen heulen, Handys bimmeln, Infotafeln leuchten: Am Donnerstag wird wieder getestet, wie im Ernstfall vor Katastrophen oder Kriegsfolgen gewarnt wird. Berlin und Brandenburg machen mit.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T09:29:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "e202a44e1f21f76dd45d635fc61d0a2ce69beb239c58e69d78d44a97e9bcbc2e",
+          "source_item_id": "888cf4ad864f574399221bd5e67d364df7d983cb03867262eb2ca7bdfad3c12f",
+          "publisher_id": "rbb",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin-Brandenburg"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T09:29:29.000Z",
+          "ingested_at": "2026-09-09T09:37:00.628Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-0fd3116f5db01435-claim-01",
+          "story_id": "wt-0fd3116f5db01435",
+          "claim": "Warntag am 10. September: Wenn flächendeckend die Sirenen heulen: Sirenen heulen, Handys bimmeln, Infotafeln leuchten: Am Donnerstag wird wieder getestet, wie im Ernstfall vor Katastrophen oder Kriegsfolgen gewarnt wird. Berlin und Brandenburg machen mit.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "rbb24-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T09:37:00.628Z"
+        }
+      ],
+      "content_hash": "2c03481facc0c904c2fd4362dc9271f2a0ec54d46d74cfa6827e8802f46dd15b",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-09T09:37:00.628Z",
+      "event_first_seen_at": "2026-09-09T09:37:00.628Z",
+      "event_detected_at": "2026-09-09T09:37:00.628Z",
+      "event_id": "event-fc5c6ebe8c19c10f6241",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 42,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 7.5271333333333335,
+        "detection_delay_minutes": 7.5271333333333335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T09:37:00.628Z",
+        "fingerprint": "43bd8457aeff02ab33a84b3e3575f96d19cf850dddac88f3d476e8b27b9647c3",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-7e2c82a0ae7a9962",
       "slug": "schulbegleitung-und-co-zahl-der-eingliederungshilfen-fur-junge-menschen-mit-seelischer-b-7a9962",
@@ -2137,6 +2775,160 @@
       }
     },
     {
+      "story_id": "wt-350bdf8592e4a4df",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "93260bcd15a9385d10ad9b069206690f7b5f312ea308bc888c1c9f312caa94e9",
+        "first_failed_at": "2026-09-09T09:37:00.628Z",
+        "failed_at": "2026-09-09T09:37:00.628Z",
+        "retry_after": "2026-09-09T09:52:00.628Z",
+        "retry_count": 1
+      },
+      "slug": "erfundene-versicherung-in-polen-selbststandiger-darf-nicht-in-gesetzliche-krankenkasse-e4a4df",
+      "title": "Erfundene Versicherung in Polen: Selbstständiger darf nicht in gesetzliche Krankenkasse",
+      "first_seen": "2026-09-09T09:22:13.000Z",
+      "last_updated": "2026-09-09T09:22:13.000Z",
+      "topic": [
+        "Gesundheit",
+        "Europa",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/erfundene-versicherung-in-polen--selbststaendiger-darf-nicht-in-gesetzliche-krankenkasse-38226678.html",
+          "title": "Erfundene Versicherung in Polen: Selbstständiger darf nicht in gesetzliche Krankenkasse",
+          "summary": "Ein älterer Selbstständiger verliert einem Urteil zufolge seine gerade erworbene Mitgliedschaft in der gesetzlichen Krankenversicherung, weil ein Krankenkassenmitarbeiter falsche Angaben über ihn machte. Die Kasse darf dem Tischler kündigen, wie das Landessozialgericht Berlin-Brandenburg nach Angaben vom Mittwoch entschied. Der Mitarbeiter hatte erfunden, dass der Mann zuvor in einem anderen EU-Land gesetzlich versichert gewesen sei.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T09:22:13.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "f27665ebd309861db657f497d2083384ac40a5b7688078c69d1d2fd8bcc5d449",
+          "source_item_id": "298d69039f0e5c092720f1b2ffcf396e4ba9b3b1b8a19b0e759f0565206e17a4",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T09:22:13.000Z",
+          "ingested_at": "2026-09-09T09:37:00.628Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-350bdf8592e4a4df-claim-01",
+          "story_id": "wt-350bdf8592e4a4df",
+          "claim": "Erfundene Versicherung in Polen: Selbstständiger darf nicht in gesetzliche Krankenkasse: Ein älterer Selbstständiger verliert einem Urteil zufolge seine gerade erworbene Mitgliedschaft in der gesetzlichen Krankenversicherung, weil ein Krankenkassenmitarbeiter falsche Angaben über ihn machte. Die Kasse darf dem Tischler kündigen, wie das Landessozialgericht Berlin-Brandenburg nach Angaben vom Mittwoch entschied. Der Mitarbeiter hatte erfunden, dass der Mann zuvor in einem anderen EU-Land gesetzlich versichert gewesen sei.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T09:37:00.628Z"
+        }
+      ],
+      "content_hash": "2b2cba8a84674bc281365bdf03a1d257b8baf03c1d29824aef8ae1db550c71ee",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-09T09:52:00.628Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T09:37:00.628Z",
+      "event_first_seen_at": "2026-09-09T09:37:00.628Z",
+      "event_detected_at": "2026-09-09T09:37:00.628Z",
+      "event_id": "event-717403d6bd3019bc0222",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesundheit",
+          "Europa",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 14.7938,
+        "detection_delay_minutes": 14.7938,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T09:37:00.628Z",
+        "fingerprint": "dba8f6fd882b5193b4c7d99f0255ad7d11eb0db4c88227eabca38f174fad3dd2",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T09:37:00.628Z",
+      "rejection": {
+        "at": "2026-09-09T09:37:00.628Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
       "story_id": "wt-5d9f4bf00c16b314",
       "slug": "grune-fordern-faires-gewerbemietrecht-16b314",
       "title": "Grüne fordern \"faires\" Gewerbemietrecht",
@@ -2839,23 +3631,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
+          "checked_at": "2026-09-09T09:37:00.628Z"
         }
       ],
       "content_hash": "7c1bd09cefcea5a659cf085814af105fa0d1f17f3a3d4091d7636a989fdf1329",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_SOURCE_SUMMARY_LENGTH",
-        "AI_SOURCE_SUMMARY_PARAGRAPHS"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-09T09:36:45.679Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T09:21:45.679Z",
+      "updated_at": "2026-09-09T09:37:00.628Z",
       "event_first_seen_at": "2026-09-09T09:21:45.679Z",
       "event_detected_at": "2026-09-09T09:21:45.679Z",
       "event_id": "event-afd48c0e1b7d53c4c9e2",
@@ -2893,20 +3682,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 13.927983333333334,
+        "source_age_minutes": 29.177133333333334,
         "detection_delay_minutes": 13.927983333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.24915,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T09:21:45.679Z",
+        "checked_at": "2026-09-09T09:37:00.628Z",
         "fingerprint": "8e6e4267a1ee8ef7bb8a0956d1a063a14315bd6743ad84c3654c239fec63c82a",
         "issue_codes": [],
         "warning_codes": []
@@ -3255,313 +4044,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-2e3241c331cc6e50",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "dc2a489cbd7e108244b5d04d92f5fb9ff86a8d5248a750136fb9b1c27e5649a2",
-        "first_failed_at": "2026-09-09T09:21:45.679Z",
-        "failed_at": "2026-09-09T09:21:45.679Z",
-        "retry_after": "2026-09-09T09:36:45.679Z",
-        "retry_count": 1
-      },
-      "slug": "warntag-am-10-september-2026-probealarm-mit-handys-und-sirenen-cc6e50",
-      "title": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen",
-      "first_seen": "2026-09-07T10:10:17.000Z",
-      "last_updated": "2026-09-09T09:00:02.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "hr-hessenschau",
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/panorama/warntag-am-10-september-2026-probealarm-mit-handys-und-sirenen-v1,warntag-2026-bund-hessen-100.html",
-          "title": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen",
-          "summary": "Handys schrillen, Sirenen heulen, Infotafeln leuchten: Am 10. September wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T10:10:17.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "0f0d3f5bbde0ae8eb283eb3fbeced8194548469112aa73b4113d26fd25825e04",
-          "source_item_id": "8fed8254379c009e9bafa379c2775e33b22632fc0a110d006fb8223179bb8dda",
-          "publisher_id": "hr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Hessen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T10:10:17.000Z",
-          "ingested_at": "2026-09-07T12:51:36.383Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "hr-hessenschau",
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/panorama/warntag-am-10-september-2026-probealarm-mit-handys-und-sirenen-v2,warntag-2026-bund-hessen-100.html",
-          "title": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen",
-          "summary": "Handys schrillen, Sirenen heulen, Infotafeln leuchten: Am 10. September wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T13:08:18.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "fa66b8bfa17a4fe3cfc0856d9abe55383adf64bc92a40ba4bd7e6a079f990698",
-          "source_item_id": "f8a0b57d2f046e09cbbdca1bfc3dd8a7305f2530ae8d61cf059eec0c468d81f9",
-          "publisher_id": "hr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Hessen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T13:08:18.000Z",
-          "ingested_at": "2026-09-07T13:35:44.462Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "hr-hessenschau",
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/panorama/warntag-am-10-september-2026-probealarm-mit-handys-und-sirenen-v3,warntag-2026-bund-hessen-100.html",
-          "title": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen",
-          "summary": "Handys schrillen, Sirenen heulen, Infotafeln leuchten: Am 10. September wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T13:47:39.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "69da436ae522f4c276b3133d063ec24dd736d522270b384c33a28206299d47e9",
-          "source_item_id": "3ffa0b3db6e1c20e8d75d3fe4f2c1bdf32f2f4cf201cc6c23a49ca44bf881e13",
-          "publisher_id": "hr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Hessen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T13:47:39.000Z",
-          "ingested_at": "2026-09-07T14:37:01.659Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "hr-hessenschau",
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/panorama/bundesweiter-warntag-2026-am-10-september-alarmieren-handys-und-sirenen-v4,warntag-2026-bund-hessen-100.html",
-          "title": "Bundesweiter Warntag 2026: Am 10. September alarmieren Handys und Sirenen",
-          "summary": "Handys schrillen, Sirenen heulen, Infotafeln leuchten: An diesem Donnerstag wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T09:00:02.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "bafc53a923b53a80b258afaa1095391a2590f482be81beedf12e58ea47c7146a",
-          "source_item_id": "4beb288b685ebc19dd0cbb719debbc51726fe392d44f7f184563809049bba143",
-          "publisher_id": "hr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Hessen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T09:00:02.000Z",
-          "ingested_at": "2026-09-09T09:21:45.679Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-2e3241c331cc6e50-claim-01",
-          "story_id": "wt-2e3241c331cc6e50",
-          "claim": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen: Handys schrillen, Sirenen heulen, Infotafeln leuchten: Am 10. September wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "hr-hessenschau",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
-        },
-        {
-          "claim_id": "wt-2e3241c331cc6e50-claim-02",
-          "story_id": "wt-2e3241c331cc6e50",
-          "claim": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen: Handys schrillen, Sirenen heulen, Infotafeln leuchten: Am 10. September wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "hr-hessenschau",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
-        },
-        {
-          "claim_id": "wt-2e3241c331cc6e50-claim-03",
-          "story_id": "wt-2e3241c331cc6e50",
-          "claim": "Warntag am 10. September 2026: Probealarm mit Handys und Sirenen: Handys schrillen, Sirenen heulen, Infotafeln leuchten: Am 10. September wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "hr-hessenschau",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
-        },
-        {
-          "claim_id": "wt-2e3241c331cc6e50-claim-04",
-          "story_id": "wt-2e3241c331cc6e50",
-          "claim": "Bundesweiter Warntag 2026: Am 10. September alarmieren Handys und Sirenen: Handys schrillen, Sirenen heulen, Infotafeln leuchten: An diesem Donnerstag wird erneut durchgespielt, wie im Fall von Katastrophen oder Kriegsfolgen gewarnt wird. Hessische Smartphone-Nutzer sollten eines unbedingt beachten.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "hr-hessenschau",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:hr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
-        }
-      ],
-      "content_hash": "e1fead025eceb70501826d2ed482574de457f2da8ecd900f2c48e13b3ecd831b",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-09T09:36:45.679Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-09T09:21:45.679Z",
-      "event_first_seen_at": "2026-09-07T10:21:55.886Z",
-      "event_detected_at": "2026-09-07T10:21:55.886Z",
-      "event_id": "event-403736131c5c33bdf453",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 42,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 21.727983333333334,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 2819.8298833333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 95,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-09T09:21:45.679Z",
-        "fingerprint": "c1cf907e61eaabe4d99b2244bad4c1e231871ff700406d80f5070874960429de",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-09T09:21:45.679Z",
-      "rejection": {
-        "at": "2026-09-09T09:21:45.679Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
@@ -9318,7 +9800,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09",
-          "ingested_at": "2026-09-09T08:52:20.295Z",
+          "ingested_at": "2026-09-09T09:37:00.628Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -9347,23 +9829,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:06:56.077Z"
+          "checked_at": "2026-09-09T09:37:00.628Z"
         }
       ],
       "content_hash": "44a303aebe1f7c7f45d35932fccd9d973525254f9fd6e68c46f2fe21f4c8cb26",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_NEWS_VALUE_CONTEXT_ONLY",
-        "AI_SUMMARY_SENTENCE_COUNT"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-09T09:21:56.077Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T09:06:56.077Z",
+      "updated_at": "2026-09-09T09:37:00.628Z",
       "event_first_seen_at": "2026-09-09T08:22:03.686Z",
       "event_detected_at": "2026-09-09T08:22:03.686Z",
       "event_id": "event-1f1dd808da4dcecefdc7",
@@ -9400,11 +9879,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 546.9346166666667,
+        "source_age_minutes": 577.0104666666666,
         "detection_delay_minutes": 502.06143333333335,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 44.87318333333333,
+        "queue_age_minutes": 74.94903333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": null
@@ -9413,7 +9892,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T09:06:56.077Z",
+        "checked_at": "2026-09-09T09:37:00.628Z",
         "fingerprint": "61a5f53398476ce96a6fdb5bedca57398374ba4240d0f167d2d6df040642cb43",
         "issue_codes": [],
         "warning_codes": []
@@ -9425,9 +9904,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "9a5a9b074537541ebec13dcd4d6bd0edbd5a6fea5db28c5243247b47bb3cba10",
         "first_failed_at": "2026-09-09T08:22:03.686Z",
-        "failed_at": "2026-09-09T08:52:20.295Z",
-        "retry_after": "2026-09-09T09:22:20.295Z",
-        "retry_count": 2
+        "failed_at": "2026-09-09T09:37:00.628Z",
+        "retry_after": "2026-09-09T10:37:00.628Z",
+        "retry_count": 3
       },
       "slug": "fruhstartrente-fur-kinder-soll-schrittweise-kommen-ea1520",
       "title": "Frühstartrente für Kinder soll schrittweise kommen",
@@ -9462,7 +9941,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T07:56:00.000Z",
-          "ingested_at": "2026-09-09T08:52:20.295Z",
+          "ingested_at": "2026-09-09T09:37:00.628Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -9491,22 +9970,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:52:20.295Z"
+          "checked_at": "2026-09-09T09:37:00.628Z"
         }
       ],
       "content_hash": "1565e348924da4cadfeab8ec0479b5e9c14532d94d09ab0ed5ae30414aae2131",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_SUMMARY_SENTENCE_COUNT"
+        "AI_DETAIL_SUMMARY_LENGTH"
       ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-09T09:22:20.295Z",
+      "quality_retry_count": 3,
+      "quality_retry_after": "2026-09-09T10:37:00.628Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T08:52:20.295Z",
+      "updated_at": "2026-09-09T09:37:00.628Z",
       "event_first_seen_at": "2026-09-09T08:22:03.686Z",
       "event_detected_at": "2026-09-09T08:22:03.686Z",
       "event_id": "event-ec0d672412da667a9fc9",
@@ -9543,20 +10022,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 56.33825,
+        "source_age_minutes": 101.01046666666667,
         "detection_delay_minutes": 26.061433333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 30.276816666666665,
+        "queue_age_minutes": 74.94903333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 88,
+        "news_freshness_score": 79,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T08:52:20.295Z",
+        "checked_at": "2026-09-09T09:37:00.628Z",
         "fingerprint": "542cdbf6f85b541318acec64ceb3c064dd60eddde22e2f01b14141a8af5f5402",
         "issue_codes": [],
         "warning_codes": []
@@ -10973,7 +11452,7 @@
             "title": "PISA-Ergebnisse - Prien (CDU) fordert Alterslimit für Social Media",
             "summary": "Bundesbildungsministerin Prien sieht nach den schlechten deutschen Ergebnissen bei der PISA-Bildungsstudie Handlungsbedarf im Umgang mit Sozialen Medien.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T08:40:43.000Z",
+            "published_at": "2026-09-09T09:34:26.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -10989,8 +11468,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T08:40:43.000Z",
-            "ingested_at": "2026-09-09T08:52:20.295Z",
+            "source_published_at": "2026-09-09T09:34:26.000Z",
+            "ingested_at": "2026-09-09T09:37:00.628Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -11000,14 +11479,10 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_DIRECTION_PATH_SOURCE_INVALID:human",
-          "AI_DIRECTION_PATH_SOURCE_INVALID:democracy",
-          "CLAIM_EVIDENCE_NOT_IN_SOURCE"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-09T09:21:56.077Z",
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": true,
         "consolidation": false,
@@ -11015,7 +11490,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:06:56.077Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "05c7d6c7b65da645fdfca511e81774d7cd2c9fc629c8e8f30aed8c9b9be971bb",
           "issue_codes": [],
           "warning_codes": []
@@ -11926,7 +12401,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T08:10:02.000Z",
-            "ingested_at": "2026-09-09T08:52:20.295Z",
+            "ingested_at": "2026-09-09T09:37:00.628Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -11936,14 +12411,10 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "MEDIA_PUBLIC_EXPLANATION_LENGTH",
-          "CLAIM_NUMBER_NOT_IN_EVIDENCE",
-          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-09T09:21:56.077Z",
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": true,
         "consolidation": false,
@@ -11951,7 +12422,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:06:56.077Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "b61a587b370b8bce26ca2195338c296bf4cdc9f25d32cf98fcb6e106ad9fab05",
           "issue_codes": [],
           "warning_codes": []
@@ -12273,9 +12744,9 @@
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-09T09:21:45.679Z",
+      "rejected_at": "2026-09-09T09:37:00.628Z",
       "rejection": {
-        "at": "2026-09-09T09:21:45.679Z",
+        "at": "2026-09-09T09:37:00.628Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -16683,7 +17154,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T06:57:33.097Z"
+        "retry_after": "2026-09-09T09:54:45.973Z"
       }
     },
     {
@@ -17415,7 +17886,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T09:02:32.000Z",
-            "ingested_at": "2026-09-09T09:21:45.679Z",
+            "ingested_at": "2026-09-09T09:37:00.628Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -17458,12 +17929,10 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 2,
-        "quality_retry_after": "2026-09-09T09:36:45.679Z",
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": true,
         "consolidation": false,
@@ -17471,7 +17940,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "e674167ceed055b087a34d4ae751a020cad623709f6945347d2cbb3a836793a1",
           "issue_codes": [],
           "warning_codes": []
@@ -27692,7 +28161,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T11:06:00.000Z",
-            "ingested_at": "2026-09-09T09:21:45.679Z",
+            "ingested_at": "2026-09-09T09:37:00.628Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -27744,7 +28213,7 @@
             "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
             "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T09:18:33.000Z",
+            "published_at": "2026-09-09T09:34:26.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -27760,8 +28229,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T09:18:33.000Z",
-            "ingested_at": "2026-09-09T09:21:45.679Z",
+            "source_published_at": "2026-09-09T09:34:26.000Z",
+            "ingested_at": "2026-09-09T09:37:00.628Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -27774,10 +28243,12 @@
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
           "AI_SOURCE_SUMMARY_LENGTH",
-          "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "MEDIA_PUBLIC_EXPLANATION_LENGTH",
+          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
         ],
-        "quality_retry_count": 2,
-        "quality_retry_after": "2026-09-09T09:36:45.679Z",
+        "quality_retry_count": 3,
+        "quality_retry_after": "2026-09-09T09:52:00.628Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -27785,7 +28256,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "9a2ff324815be8589ad4f9b9c2da92337f61a5e3de8df33873410d7d1bb2b1f0",
           "issue_codes": [],
           "warning_codes": []
@@ -27793,10 +28264,10 @@
       },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "f240664ccfae55b0d46895a5af698fcfb07c610af5691084d4013a45b6436b13",
-        "first_failed_at": "2026-09-09T09:21:45.679Z",
-        "failed_at": "2026-09-09T09:21:45.679Z",
-        "retry_after": "2026-09-09T09:36:45.679Z",
+        "fingerprint": "d26099ccddc2a40dc4e1c81fb1eeafb1566f4cb853e6ff2a9e3a9ac81d30b757",
+        "first_failed_at": "2026-09-09T09:37:00.628Z",
+        "failed_at": "2026-09-09T09:37:00.628Z",
+        "retry_after": "2026-09-09T09:52:00.628Z",
         "retry_count": 1
       }
     },
@@ -38663,7 +39134,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "53f93df4d1e534788f614f7964cd327043bdce46694f9d12100257749b54cc1b",
           "issue_codes": [],
           "warning_codes": []
@@ -39302,7 +39773,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
           "issue_codes": [],
           "warning_codes": []
@@ -40031,7 +40502,7 @@
       "verification_started_at": "2026-09-08T17:39:08.268Z",
       "publish_ready_at": "2026-09-08T17:39:25.030Z",
       "news_status": "confirmed",
-      "deepening_due_at": "2026-09-09T05:00:00.000Z",
+      "deepening_due_at": "2026-09-09T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -40479,49 +40950,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "4f43669bae3122a74ed27a35856fb5ed3a87e7ff2035fd22a9e0e06334729df6",
-        "checked_at": "2026-09-08T22:07:00.398Z",
+        "fingerprint": "595a4a3b3f84e744890cf4ce26226a41bd02d02ca4f84f5ef213e73f3d73bcb2",
+        "checked_at": "2026-09-09T09:37:00.628Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T04:07:00.398Z",
-        "sources": [
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag - Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210972",
-            "title": "Regierung: Keine explizit ostdeutschen Demokratie-Programme",
-            "summary": "Bildung, Familie, Senioren, Frauen und Jugend/Antwort Die Bundesregierung plant keine explizit ostdeutsche Programmförderung im Rahmen von \"Demokratie leben!\", wie sie in einer Antwort ausführt.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-08T15:12:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "b9f7bf388420886ce7c18fb807186dc47278b41a613b4e6c86d5e8accfae95bc",
-            "source_item_id": "d31b6901d6d53417786ebd5a186f11e01ef4ab78b78bf6b8e384fe4fbbd25b8e",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T15:12:00.000Z",
-            "ingested_at": "2026-09-08T21:52:27.208Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-09T05:06:53.221Z",
-        "content_hash": "a500d34e7dbbe43b70282897bb0d692097dd3f7683236521849e31fc3588126a",
+        "expires_at": "2026-09-09T15:37:00.628Z",
         "sources": [
           {
             "source_id": "bundestag-hib",
@@ -40555,26 +40987,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-09T09:21:56.077Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T09:06:56.077Z",
-          "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
-          "issue_codes": [],
-          "warning_codes": []
-        }
+        ]
       },
+      "deepening_checks": 2,
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
         "fingerprint": "fbb2118d3726b1cfe943c42ed43aeaf124fadf818cf39ee9b106240c30990ea9",
@@ -52157,7 +52572,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "04fad27b4d3289772b2e99292c31ee46e8833ec80b2213996da8da259f0bd90f",
           "issue_codes": [],
           "warning_codes": []
@@ -53561,7 +53976,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -60546,7 +60961,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
           "issue_codes": [],
           "warning_codes": []
@@ -62996,7 +63411,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T06:57:39.095Z"
+        "retry_after": "2026-09-09T09:54:51.755Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -63941,7 +64356,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T06:39:16.340Z"
+        "retry_after": "2026-09-09T09:54:40.592Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -64433,9 +64848,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "9e1c10e0230a132d2d571c9d5ef13f3ca584b10c2bdf91e881a0b9da1e9af753",
-        "checked_at": "2026-09-09T09:21:45.679Z",
+        "checked_at": "2026-09-09T09:37:00.628Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T15:21:45.679Z",
+        "expires_at": "2026-09-09T15:37:00.628Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -67458,7 +67873,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
           "issue_codes": [],
           "warning_codes": []
@@ -77349,7 +77764,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -89794,7 +90209,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -92775,7 +93190,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -93525,7 +93940,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -95025,9 +95440,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T09:21:45.679Z",
+        "checked_at": "2026-09-09T09:37:00.628Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T15:21:45.679Z",
+        "expires_at": "2026-09-09T15:37:00.628Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -98493,7 +98908,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -99750,7 +100165,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -102852,7 +103267,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -106867,7 +107282,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -110860,9 +111275,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "560d363cdd017c4a692ca02b042420aa4aaa09b4dc45a423ff2633b3dfc29599",
-        "checked_at": "2026-09-09T09:21:45.679Z",
+        "checked_at": "2026-09-09T09:37:00.628Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T15:21:45.679Z",
+        "expires_at": "2026-09-09T15:37:00.628Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -206433,7 +206848,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -250827,7 +251242,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T09:21:45.679Z",
+          "checked_at": "2026-09-09T09:37:00.628Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -287093,6 +287508,55 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-09T09:37:00.628Z",
+          "retained_urls": [
+            "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+            "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+            "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+            "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
+            "https://www.ndr.de/nachrichten/info/das-erbe-nach-9-11-deutschland-nach-anschlaegen-in-usa,pearl-harburg-100.html",
+            "https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS9wcm9wbGFuXzE5NjM4Nzc1M19nYW56ZVNlbmR1bmc",
+            "https://www.stern.de/panorama/donald-trump-luegt-darueber--dass-er-an-9-11-gerettet-wurde-38224984.html",
+            "https://www.zdfheute.de/politik/ausland/9-11-world-trade-center-trump-usa-verschwoerungstheorien-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+              "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+              "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-04T11:02:58.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+              "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-04T11:02:58.000Z",
+              "ingested_at": "2026-09-09T07:21:53.878Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-09T04:00:00.000Z",
@@ -287127,7 +287591,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T04:00:00.000Z",
-          "ingested_at": "2026-09-09T09:21:45.679Z",
+          "ingested_at": "2026-09-09T09:37:00.628Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -287159,7 +287623,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T01:44:22.000Z",
-          "ingested_at": "2026-09-09T09:21:45.679Z",
+          "ingested_at": "2026-09-09T09:37:00.628Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -287192,7 +287656,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T18:04:29.000Z",
-          "ingested_at": "2026-09-09T09:21:45.679Z",
+          "ingested_at": "2026-09-09T09:37:00.628Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -287257,7 +287721,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T05:15:11.000Z",
-          "ingested_at": "2026-09-09T09:21:45.679Z",
+          "ingested_at": "2026-09-09T09:37:00.628Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -287290,7 +287754,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:49:17.000Z",
-          "ingested_at": "2026-09-09T09:21:45.679Z",
+          "ingested_at": "2026-09-09T09:37:00.628Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -287356,7 +287820,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T08:35:00.000Z",
-          "ingested_at": "2026-09-09T09:21:45.679Z",
+          "ingested_at": "2026-09-09T09:37:00.628Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -287418,7 +287882,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
+          "checked_at": "2026-09-09T09:37:00.628Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-02",
@@ -287438,7 +287902,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
+          "checked_at": "2026-09-09T09:37:00.628Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-03",
@@ -287458,7 +287922,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
+          "checked_at": "2026-09-09T09:37:00.628Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-04",
@@ -287478,7 +287942,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
+          "checked_at": "2026-09-09T09:37:00.628Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-05",
@@ -287498,7 +287962,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
+          "checked_at": "2026-09-09T09:37:00.628Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-06",
@@ -287518,7 +287982,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
+          "checked_at": "2026-09-09T09:37:00.628Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-07",
@@ -287538,7 +288002,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
+          "checked_at": "2026-09-09T09:37:00.628Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-08",
@@ -287558,7 +288022,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
+          "checked_at": "2026-09-09T09:37:00.628Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-09",
@@ -287578,7 +288042,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T09:21:45.679Z"
+          "checked_at": "2026-09-09T09:37:00.628Z"
         }
       ],
       "content_hash": "20765182943c920ae6e4b99de1b5e74be3bf1f4fd802994a6876ba79cd5cffdd",
@@ -287593,7 +288057,7 @@
       "fresh": false,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T09:21:45.679Z",
+      "updated_at": "2026-09-09T09:37:00.628Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-4282989facaefbf32544",
@@ -287630,20 +288094,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 46.761316666666666,
+        "source_age_minutes": 62.010466666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 299.3947,
+        "queue_age_minutes": 314.64385,
         "target_publication_minutes": 120,
-        "news_freshness_score": 90,
+        "news_freshness_score": 87,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T09:21:45.679Z",
+        "checked_at": "2026-09-09T09:37:00.628Z",
         "fingerprint": "ef08e05a62059b983f4114520a2b48d7818b9bea065358572617f1dee46dbf62",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"

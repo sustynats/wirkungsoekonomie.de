@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T09:26:20.739Z",
+  "started_at": "2026-09-09T09:40:03.845Z",
   "scanned_stories": 200,
   "scanned_subjects": 176,
   "editorial_candidates": 32,
   "ready_for_research": 9,
   "research_pending": 11,
   "retry_deferred": 6,
-  "editorial_research_sources_discovered": 49,
+  "editorial_research_sources_discovered": 50,
   "selected": 0,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
@@ -247,7 +247,7 @@
       "story_id": "wt-84ac3f26c7762712",
       "story_slug": "milliarden-lucke-im-klimafonds-762712",
       "story_title": "Milliarden-Lücke im Klimafonds",
-      "editorial_analysis_score": 86,
+      "editorial_analysis_score": 88,
       "analysis_gain": 60,
       "factors": {
         "systemic_relevance": 14,
@@ -264,7 +264,7 @@
         "distribution_relevance": 8,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 5
+        "evidence_quality": 7
       },
       "factor_status": {
         "impact_potential": "open",
@@ -274,7 +274,7 @@
       "evidence_gate": {
         "passed": false,
         "source_integrity": "verified",
-        "independent_origin_count": 2,
+        "independent_origin_count": 3,
         "primary_source_count": 0,
         "cited_claim_count": 4,
         "primary_source_expected": true,
@@ -283,7 +283,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "caff2f1749f1c3a3d67256cb866b617bea4b053b01b29473f7b524a7a3a95346",
+      "fingerprint": "849d87cbe6b23fe8fa813045ad1c7f5e2df66731596f79449e0ef9817cf75d34",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -1414,5 +1414,5 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-09T09:26:46.771Z"
+  "completed_at": "2026-09-09T09:40:35.517Z"
 }
