@@ -10,6 +10,13 @@ zusaetzlichen Budgettopf. Monatsbindung und Rueckfall sind im
 
 ## Routing
 
+Nachtrag 9. September: Der planmäßige Editorial-Schritt verwendet jetzt
+`--background-only`. Zeitunkritische Vertiefungen warten bis zur bestehenden
+Batch-Eignung; es gibt keinen stillen teureren Synchron-Fallback. Aktuelle
+Nachrichten und Updates bleiben davon unabhängig. Explizite Aufträge und
+zeitkritische Vertiefungen behalten den direkten Weg. Einzelheiten, Grenzen und
+Prüfnachweise: [Sparbetrieb ohne Nachrichtensperre](WIRKUNGSTICKER-ECONOMY-2026-09-09.md).
+
 - `media_backfill`: fehlender, lokal ausgelöster Frame-/Mediencheck einer bereits veröffentlichten Wirkungsakte.
 - `editorial_background`: eigenständige, recherchereife Vertiefung nach unverändertem Relevanz-, Analysegewinn-, Quellenintegritäts- und Evidenzgate.
 - Nur veröffentlichte, sichtbare Ausgangsakten ohne neue Quelle oder Aktualisierung seit mindestens 24 Stunden und ohne wartendes Nachrichtenupdate. Explizite Dringlichkeit, Sonderanalysen sowie bekannte Ereignistermine innerhalb der nächsten 48 Stunden sind ausgeschlossen. Redaktionell beauftragte Sonderanalysen bleiben vom generischen Vertiefungsworker ausgeschlossen.
