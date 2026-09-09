@@ -1,7 +1,159 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T21:36:51.819Z",
+  "updated_at": "2026-09-08T23:53:58.173Z",
   "stories": [
+    {
+      "story_id": "wt-a0703aa9051cf40d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "krieg-funf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-1cf40d",
+      "title": "Krieg - Fünf Todesoper bei neuen russischen Luftangriffen auf Kiew",
+      "source_summary": "Bei neuen russischen Luftangriffen auf die ukrainische Hauptstadt Kiew sind nach Behördenangaben fünf Menschen getötet worden. In den vorliegenden Angaben ist außerdem von 35 Verletzten die Rede. Demnach wurden 14 Hochhäuser von Raketen oder Drohnen getroffen.\n\nEin weiteres Angriffsziel war laut Bericht die Stadt Sumy im Osten der Ukraine. Dort gab es bei einer Drohnenattacke auf einen Zug zehn Verletzte. Der staatliche ukrainische Stromversorger DTEK meldete zudem den Komplettausfall eines Wärmekraftwerks nach einem russischen Angriff, nannte aber keinen Ort.",
+      "summary": "Russische Luftangriffe auf Kiew haben nach Behördenangaben fünf Tote und 35 Verletzte verursacht. Zusätzlich wurden 14 Hochhäuser getroffen; in Sumy gab es bei einem Angriff auf einen Zug zehn Verletzte.",
+      "detail_summary": "Der Bericht meldet neue russische Luftangriffe auf Kiew mit fünf Toten und 35 Verletzten. Genannt werden auch 14 getroffene Hochhäuser sowie ein weiterer Angriff auf einen Zug in Sumy mit zehn Verletzten. Zusätzlich berichtet DTEK von einem Komplettausfall eines Wärmekraftwerks, ohne Ortsangabe. Für die Einordnung bleibt offen, wie viele Schäden bereits unabhängig bestätigt sind und ob weitere Folgen folgen. Materiell relevant ist der Befund wegen der Zahl der Betroffenen, der Schäden an Wohngebäuden und möglicher Folgen für Infrastruktur und Versorgung; die Evidenz bleibt hier aber auf eine journalistische Meldung mit Behördenbezug begrenzt.",
+      "why_relevant": "Neue tödliche Luftangriffe mit mehreren Betroffenen und Schäden an Wohn- und Infrastruktur sind materiell relevant für Schutz, Versorgung und Kriegsverlauf.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Tote, Verletzte und Schäden an Wohngebäuden verschlechtern unmittelbar Schutz, Gesundheit und Alltagsstabilität der Betroffenen.",
+          "positive_path": {
+            "mechanism": "Einordnung und schnelle Hilfe können Such-, Rettungs- und Versorgungsmaßnahmen auslösen und Schäden begrenzen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Weitere Angriffe erhöhen Verletzungen, Todesrisiko, Vertreibung und Belastung für Notfall- und Gesundheitsstrukturen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Der Bericht nennt einen Komplettausfall eines Wärmekraftwerks und damit ein mögliches Risiko für Energieversorgung und Emissionen bei Wiederaufbau.",
+          "positive_path": {
+            "mechanism": "Schnelle Reparatur kann Ausfälle begrenzen und Versorgung stabilisieren.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Angriffe auf Energieanlagen können Versorgungslücken, Zusatzemissionen und Folgeschäden an Netzen verstärken.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Der Angriff auf zivile Ziele und Infrastruktur kann staatliche Handlungsfähigkeit, Schutzversprechen und öffentliche Sicherheit unter Druck setzen.",
+          "positive_path": {
+            "mechanism": "Dokumentation und Berichterstattung können Aufklärung und Rechenschaft unterstützen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Fortgesetzte Angriffe schwächen Sicherheitsgefühl, Verwaltungskapazität und demokratische Korrekturfähigkeit im Kriegskontext.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Tote in Kiew",
+            "value": "fünf",
+            "unit": "Menschen",
+            "context": "Nach Behördenangaben bei den Angriffen in Kiew",
+            "claim_id": "wt-a0703aa9051cf40d-v1-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "kinder_jugend",
+          "aeltere",
+          "kommunen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T23:53:58.173Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T23:40:28.000Z",
+      "last_updated": "2026-09-08T23:55:11.058Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-708788e668b1b1cab317",
+      "case_file": null,
+      "source_published_at": "2026-09-08T23:40:28.000Z",
+      "published_at": "2026-09-08T23:55:11.058Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob weitere Behördenangaben zu Toten, Verletzten und Schäden vorliegen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "neue bestätigte Opfer- oder Schadenszahlen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d087efd2b63c83a8",
+          "announced_at": "2026-09-08T23:40:28.000Z",
+          "follow_up_date": "2026-09-15T23:55:11.058Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob es Angaben zu genauen Orten, betroffenen Gebäuden oder zur Lage in Sumy gibt.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "präzisierte Orts- und Schadenszuordnung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d28485a4496d4c16",
+          "announced_at": "2026-09-08T23:40:28.000Z",
+          "follow_up_date": "2026-09-15T23:55:11.058Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T23:40:28.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-5a2fe52ebad137c3",
       "title_image": {
