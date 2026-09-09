@@ -1,0 +1,168 @@
+--- a/src/config.ts
++++ b/src/config.ts
+@@ -84,6 +84,7 @@
+   apiRouteRateLimitsPerHour: ApiRateLimitConfig;
+   apiBudgetEnabled: boolean;
+   apiMonthlyBudgetCents: number;
++  apiMonthlyBudgetOverridesCents: Record<string, number>;
+   newsMonthlyBudgetUsdCents: number;
+   newsMonthlyBudgetOverridesUsdCents: Record<string, number>;
+   apiFeatureCostsCents: FeatureCostConfig;
+@@ -216,6 +217,7 @@
+     },
+     apiBudgetEnabled: readBooleanEnv("API_BUDGET_ENABLED", true),
+     apiMonthlyBudgetCents: readIntegerEnv("API_MONTHLY_BUDGET_CENTS", 5000),
++    apiMonthlyBudgetOverridesCents: readBudgetOverridesCents('API_MONTHLY_BUDGET_OVERRIDES_CENTS'),
+     newsMonthlyBudgetUsdCents: readBudgetUsdCents(),
+     newsMonthlyBudgetOverridesUsdCents: readBudgetOverridesUsdCents(),
+     apiFeatureCostsCents: {
+@@ -257,13 +259,17 @@
+ }
+-
++
+ function readBudgetOverridesUsdCents(): Record<string, number> {
+-  const raw = readOptionalEnv('NEWS_MONTHLY_BUDGET_OVERRIDES_USD_CENTS');
++  return readBudgetOverridesCents('NEWS_MONTHLY_BUDGET_OVERRIDES_USD_CENTS');
++}
++
++function readBudgetOverridesCents(name: string): Record<string, number> {
++  const raw = readOptionalEnv(name);
+   if (raw === undefined) return {};
+   let value: unknown;
+-  try { value = JSON.parse(raw); } catch { throw new Error('Invalid NEWS_MONTHLY_BUDGET_OVERRIDES_USD_CENTS'); }
++  try { value = JSON.parse(raw); } catch { throw new Error(`Invalid ${name}`); }
+   if (!value || typeof value !== 'object' || Array.isArray(value)
+     || Object.entries(value).some(([month, cents]) => !/^\d{4}-(0[1-9]|1[0-2])$/.test(month) || !Number.isSafeInteger(cents) || (cents as number) < 0)) {
+-    throw new Error('Invalid NEWS_MONTHLY_BUDGET_OVERRIDES_USD_CENTS');
++    throw new Error(`Invalid ${name}`);
+   }
+   return value as Record<string, number>;
+ }
+--- a/src/index.ts
++++ b/src/index.ts
+@@ -133,6 +133,7 @@
+   enabled: config.apiBudgetEnabled,
+   file: config.usageFile,
+   monthlyBudgetCents: config.apiMonthlyBudgetCents,
++  monthlyBudgetOverridesCents: config.apiMonthlyBudgetOverridesCents,
+   featureCostsCents: config.apiFeatureCostsCents
+ });
+ const newsBatchService = process.env.NEWS_BATCH_ENABLED === 'true' && config.openAiApiKey ? new NewsBatchService({
+--- a/src/services/tokenUsageBudget.ts
++++ b/src/services/tokenUsageBudget.ts
+@@ -17,6 +17,11 @@
+ export class UsageBudgetTracker {
+   private queue: Promise<unknown> = Promise.resolve();
+   constructor(private readonly options: UsageBudgetOptions) {}
++  // Resolve every admission against its UTC month; dated grants expire without
++  // a restart and never modify the accumulated cost or outstanding reserves.
++  private limitForMonth(month: string): number {
++    return this.options.monthlyBudgetOverridesCents?.[month] ?? this.options.monthlyBudgetCents;
++  }
+   async withBudget<T>(feature: BudgetFeature, action: () => Promise<T>): Promise<T> {
+     if (!this.options.enabled) return action();
+     const id = randomUUID();
+@@ -24,7 +29,7 @@
+     await this.mutate(state => {
+       const current = state.months[month] ??= emptyMonth();
+       const reserve = feature === 'news-analysis' ? cents(0.25 * USD_TO_GROSS_EUR_CENTS) : Math.max(35, this.legacyEstimate(feature));
+-      if (current.estimatedCents + reserve > this.options.monthlyBudgetCents) throw new FactcheckProviderError('Das monatliche KI-Budget ist ausgeschöpft.', 429, 'monthly_budget_reached');
++      if (current.estimatedCents + reserve > this.limitForMonth(month)) throw new FactcheckProviderError('Das monatliche KI-Budget ist ausgeschöpft.', 429, 'monthly_budget_reached');
+       state.entries.push({ id, feature, month, at: new Date().toISOString(), chargedCents: reserve, basis: 'reserved_unknown' });
+       this.charge(current, feature, reserve, 1);
+     });
+@@ -64,7 +69,7 @@
+       const month = new Date().toISOString().slice(0, 7);
+       const current = state.months[month] ??= emptyMonth();
+       const reserve = cents(0.125 * USD_TO_GROSS_EUR_CENTS);
+-      if (current.estimatedCents + reserve + 150 > this.options.monthlyBudgetCents) throw new FactcheckProviderError('Keine gemeinsame Hintergrundreserve.', 429, 'monthly_budget_reached');
++      if (current.estimatedCents + reserve + 150 > this.limitForMonth(month)) throw new FactcheckProviderError('Keine gemeinsame Hintergrundreserve.', 429, 'monthly_budget_reached');
+       const reservation: Entry = { id, feature: 'news-analysis', month, at: new Date().toISOString(), chargedCents: reserve, basis: 'batch_reserved' };
+       if (previous) Object.assign(previous, reservation); else state.entries.push(reservation);
+       this.charge(current, 'news-analysis', reserve, 1);
+--- a/src/services/usageBudget.ts
++++ b/src/services/usageBudget.ts
+@@ -4,6 +4,7 @@
+   enabled: boolean;
+   file: string;
+   monthlyBudgetCents: number;
++  monthlyBudgetOverridesCents?: Record<string, number>;
+   featureCostsCents: FeatureCostConfig;
+ }
+ export { UsageBudgetTracker } from "./tokenUsageBudget.js";
+--- /dev/null
++++ b/tests/sharedBudgetMonthOverride.test.ts
+@@ -0,0 +1,73 @@
++import { afterEach, expect, it, vi } from 'vitest';
++import { mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
++import { tmpdir } from 'node:os';
++import { join } from 'node:path';
++import { UsageBudgetTracker } from '../src/services/tokenUsageBudget.js';
++import { readConfig } from '../src/config.js';
++
++const dirs: string[] = [];
++afterEach(async () => {
++  vi.useRealTimers(); vi.unstubAllEnvs();
++  for (const dir of dirs.splice(0)) await rm(dir, { recursive: true, force: true });
++});
++const result = { model: 'gpt-5.4-mini', usage: { input_tokens: 1000, output_tokens: 1000, cached_input_tokens: 0 } };
++async function fixture(overrides: Record<string, number> = { '2026-09': 7500 }) {
++  const dir = await mkdtemp(join(tmpdir(), 'shared-month-budget-')); dirs.push(dir);
++  const file = join(dir, 'budget.json');
++  const budget = new UsageBudgetTracker({ enabled: true, file, monthlyBudgetCents: 5000,
++    monthlyBudgetOverridesCents: overrides, featureCostsCents: { factcheck: 20, woekAi: 8, productCheck: 35 } });
++  const month = (amount: number) => ({ estimatedCents: amount, totalRequests: 100, features: {}, updatedAt: '2026-09-09T00:00:00.000Z' });
++  await writeFile(file, JSON.stringify({ version: 2, months: { '2026-09': month(5000), '2026-10': month(5000) },
++    entries: [{ id: 'historical-reserve', month: '2026-09', feature: 'news-analysis', at: '2026-09-08T00:00:00.000Z', chargedCents: 33, basis: 'reserved_unknown' }] }));
++  return { budget, file };
++}
++it('validates the shared dated grant independently of the news-only limit', () => {
++  vi.stubEnv('DISCORD_TOKEN', 'test'); vi.stubEnv('DISCORD_CLIENT_ID', 'test');
++  vi.stubEnv('API_MONTHLY_BUDGET_OVERRIDES_CENTS', undefined);
++  expect(readConfig().apiMonthlyBudgetOverridesCents).toEqual({});
++  vi.stubEnv('API_MONTHLY_BUDGET_OVERRIDES_CENTS', '{"2026-09":7500}');
++  expect(readConfig().apiMonthlyBudgetOverridesCents).toEqual({ '2026-09': 7500 });
++  expect(readConfig().apiMonthlyBudgetCents).toBe(5000);
++  expect(readConfig().newsMonthlyBudgetUsdCents).toBe(1890);
++  for (const value of ['null', '[]', '{"2026-13":7500}', '{"2026-09":-1}', '{"2026-09":"7500"}', '{"2026-09":1.1}', '{"2026-09":1e999}', 'broken']) {
++    vi.stubEnv('API_MONTHLY_BUDGET_OVERRIDES_CENTS', value);
++    expect(() => readConfig()).toThrow('API_MONTHLY_BUDGET_OVERRIDES_CENTS');
++  }
++});
++it('all synchronous features use one shared September ceiling and retain the ledger', async () => {
++  vi.useFakeTimers({ toFake: ['Date'] }); vi.setSystemTime(new Date('2026-09-09T05:00:00Z'));
++  const { budget, file } = await fixture();
++  for (const feature of ['news-analysis', 'woek-ai', 'factcheck', 'product-check'] as const) await budget.withBudget(feature, async () => result);
++  const state = JSON.parse(await readFile(file, 'utf8'));
++  expect(state.months['2026-09'].estimatedCents).toBeGreaterThan(5000);
++  expect(state.entries.find((entry: any) => entry.id === 'historical-reserve').chargedCents).toBe(33);
++  state.months['2026-09'].estimatedCents = 7490;
++  await writeFile(file, JSON.stringify(state));
++  let called = false;
++  await expect(budget.withBudget('news-analysis', async () => { called = true; return result; })).rejects.toMatchObject({ technicalMessage: 'monthly_budget_reached' });
++  expect(called).toBe(false);
++});
++it('expires at UTC month change without restart, also for Batch admissions', async () => {
++  vi.useFakeTimers({ toFake: ['Date'] }); vi.setSystemTime(new Date('2026-09-30T23:59:00Z'));
++  const { budget, file } = await fixture();
++  await budget.reserveBatch('a'.repeat(64));
++  await budget.withBudget('news-analysis', async () => result);
++  vi.setSystemTime(new Date('2026-10-01T00:00:00Z'));
++  await expect(budget.withBudget('news-analysis', async () => result)).rejects.toMatchObject({ technicalMessage: 'monthly_budget_reached' });
++  await expect(budget.reserveBatch('b'.repeat(64))).rejects.toMatchObject({ technicalMessage: 'monthly_budget_reached' });
++  // Settlement remains allowed after the grant expires, charged to original month.
++  await budget.settleBatch('a'.repeat(64), 0.01);
++  const state = JSON.parse(await readFile(file, 'utf8'));
++  expect(state.months['2026-10'].estimatedCents).toBe(5000);
++  expect(state.entries.find((entry: any) => entry.id === `batch:${'a'.repeat(64)}`).month).toBe('2026-09');
++});
++it('retains the shared news headroom and honors a zero override', async () => {
++  vi.useFakeTimers({ toFake: ['Date'] }); vi.setSystemTime(new Date('2026-09-09T05:00:00Z'));
++  const { budget, file } = await fixture();
++  const state = JSON.parse(await readFile(file, 'utf8')); state.months['2026-09'].estimatedCents = 7350;
++  await writeFile(file, JSON.stringify(state));
++  await expect(budget.reserveBatch('c'.repeat(64))).rejects.toMatchObject({ technicalMessage: 'monthly_budget_reached' });
++  await budget.withBudget('news-analysis', async () => result);
++  const zero = await fixture({ '2026-09': 0 });
++  await expect(zero.budget.withBudget('news-analysis', async () => result)).rejects.toMatchObject({ technicalMessage: 'monthly_budget_reached' });
++});

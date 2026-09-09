@@ -2,6 +2,12 @@
 
 Stand: 7. September 2026. Kein Ersatz für die unmittelbare Nachrichtenverarbeitung.
 
+Nachtrag 9. September: Die datierte Budgetfreigabe wurde innerhalb eines
+gemeinsamen API-Gesamtlimits auf 75 EUR brutto fuer September erweitert.
+Die frueheren Zahlen unten dokumentieren den damaligen Stand, nicht einen
+zusaetzlichen Budgettopf. Monatsbindung und Rueckfall sind im
+[September-Budgetnachtrag](WIRKUNGSTICKER-SEPTEMBER-BUDGET-2026-09-09.md) beschrieben.
+
 ## Routing
 
 - `media_backfill`: fehlender, lokal ausgelöster Frame-/Mediencheck einer bereits veröffentlichten Wirkungsakte.
