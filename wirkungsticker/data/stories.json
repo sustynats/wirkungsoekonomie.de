@@ -1,7 +1,292 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T07:21:53.878Z",
+  "updated_at": "2026-09-09T07:37:26.176Z",
   "stories": [
+    {
+      "story_id": "wt-bc529033a872d25e",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-72d25e",
+      "title": "USA beschießen iranische Tanker – Teheran feuert Raketen auf Jordanien",
+      "source_summary": "Nach Angaben des US-Militärs hat es erneut Angriffe im Konflikt zwischen den USA und Iran gegeben. ZDFheute berichtet, das US-Militär habe fünf iranische Öltanker zerstört; iranische Medien nannten mindestens drei betroffene Tanker und meldeten evakuierte Besatzungen. Als Reaktion habe Iran Raketen auf US-Ziele in Jordanien abgefeuert.\n\nDas jordanische Militär teilte mit, es habe 18 ballistische Raketen abgefangen; zwei weitere seien in unbewohnten Gebieten niedergegangen. Über Verletzte oder Tote wurde in dem Bericht nicht gesprochen.",
+      "summary": "Es geht um neue gegenseitige Angriffe zwischen USA und Iran. Die Folgen reichen bis in die Straße von Hormus und nach Jordanien, offen bleibt aber, was genau unabhängig bestätigt ist.",
+      "detail_summary": "Die Meldung beschreibt eine erneute Eskalation zwischen den USA und Iran: zerstörte Öltanker, abgefangene Raketen und Gegenangriffe auf US-Ziele in Jordanien. Für die Einordnung wichtig ist vor allem der Wirkpfad über Schifffahrt, Militär und regionale Sicherheit. Kurzfristig kann das die Lage in der Straße von Hormus und an US-Standorten im Nahen Osten verschärfen. Mögliche Folge sind weitere Gegenangriffe, höhere Risiken für die Schifffahrt und zusätzliche Spannungen auf den Öl- und Sicherheitsmärkten. Die Evidenzlage bleibt begrenzt, weil die Angaben vor allem auf beteiligte Seiten und einen journalistischen Bericht gestützt sind.",
+      "why_relevant": "Die Meldung beschreibt erneute militärische Gegenschläge mit möglicher Wirkung auf regionale Sicherheit, Schifffahrt und Ölversorgung.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Meldung beschreibt bereits eingetretene Gewalt und neue Gegenschläge. Dadurch steigen Risiko und Unsicherheit für Zivilpersonen, Schifffahrt und regionale Stabilität.",
+          "positive_path": {
+            "mechanism": "Keine klare entlastende Wirkung ist belegt; allenfalls könnte eine Rückkehr zu Abschreckung später Angriffe begrenzen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Weitere Angriffe können Verletzungsrisiken, Störungen der Schifffahrt und eine Eskalation der militärischen Gegenreaktionen auslösen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Betroffen ist vor allem der Öltransport in einer strategischen Seeroute. Das kann Lieferketten und Energieflüsse stören, ohne dass hier schon ein Umweltfolgenachweis vorliegt.",
+          "positive_path": {
+            "mechanism": "Eine Begrenzung der Angriffe könnte die Belastung von Schifffahrtsrouten und Energiehandel wieder senken.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Angriffe auf Tanker und Gegenangriffe erhöhen das Risiko für Schifffahrt, Ölflüsse und damit verbundene Störungen in sensiblen Seegebieten.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung enthält keinen belastbaren direkten Pfad zu demokratischer Korrekturfähigkeit oder institutionellen Regeln; der Bezug bleibt indirekt über Sicherheits- und Außenpolitik.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T07:37:26.176Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T02:29:00.000Z",
+      "last_updated": "2026-09-09T07:41:37.077Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-a2113d14fb03db277521",
+      "case_file": null,
+      "source_published_at": "2026-09-08T22:30:29.000Z",
+      "published_at": "2026-09-09T07:41:37.077Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "spiegel-schlagzeilen"
+          ],
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home",
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "zdfheute-nachrichten"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob beide Seiten weitere Angriffe melden oder bestätigen.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "neue bestätigte Angriffe oder Gegenangriffe",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-06687f7ace7ade23",
+          "announced_at": "2026-09-09T03:28:00.000Z",
+          "follow_up_date": "2026-09-16T07:41:37.077Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/ausland/usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-a-dd0e1f5e-44ef-4dbb-a865-df846edc3f9e",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T02:29:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T05:23:56.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:30:29.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T03:28:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-bcac83440a73a81d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "schlechte-pisa-ergebnisse-prien-fordert-alterslimit-fur-social-media-73a81d",
+      "title": "Schlechte Pisa-Ergebnisse: Prien fordert Alterslimit für Social Media",
+      "source_summary": "Bundesbildungsministerin Karin Prien fordert nach den schlechten deutschen Pisa-Ergebnissen eine Altersbeschränkung für Social Media. Laut einem Bericht im Inforadio des RBB sagte sie, die Ergebnisse hätten auch mit Social Media und Bildschirmzeit zu tun.\n\nAls Begründung nannte sie, Kinder könnten sich nicht mehr konzentrieren, hätten weniger Ausdauer und könnten nicht mehr sinnentnehmend lesen. Der Bericht nennt keine konkrete Altersgrenze und zeigt keinen Beschluss, sondern eine politische Forderung und ihre Begründung.",
+      "summary": "Prien verknüpft die schlechten Pisa-Ergebnisse mit Social Media und verlangt eine Altersbeschränkung. Das ist politisch relevant, weil daraus neue Regulierung folgen könnte, belegt ist aber vorerst nur die Forderung.",
+      "detail_summary": "Die Meldung beschreibt einen politischen Vorstoß: Karin Prien fordert nach den schlechten deutschen Pisa-Ergebnissen eine Altersbeschränkung für Social Media. Materiell relevant ist das, weil daraus neue Regeln für Nutzung, Zugang und Plattformen entstehen könnten. Ein direkter Effekt auf Lernleistung ist hier aber nicht belegt; die Quelle gibt nur die Begründung der Ministerin wieder. Der Wirkpfad führt daher zunächst über öffentliche Debatte und mögliche Regulierung, nicht über bereits eingetretene Wirkungen. Die Evidenz bleibt begrenzt, weil nur ein journalistischer Bericht vorliegt und keine Originaldokumente oder Gegenstimmen im Material enthalten sind.",
+      "why_relevant": "Die Forderung zielt auf mögliche neue Regeln für den Zugang Jugendlicher zu Social Media und damit auf ein Thema mit Bezug zu Schule, Kindern und digitaler Teilhabe.",
+      "topic": [
+        "Soziales",
+        "Demokratie"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Ein Alterslimit kann Schutz vor Ablenkung und exzessiver Nutzung verstärken, kann aber zugleich Informationszugang, Teilhabe und Alltagskommunikation für Jugendliche einschränken.",
+          "positive_path": {
+            "mechanism": "Weniger frühe oder intensive Social-Media-Nutzung kann Konzentration und Lernzeit entlasten, wenn die Regel wirksam durchgesetzt und schulisch begleitet wird.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Eine Zugangsbeschränkung kann Umgehung, Verlagerung auf schwerer kontrollierbare Angebote und Einschränkungen digitaler Teilhabe auslösen.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung ist kein direkter Umweltpfad beschrieben; ein Bezug ergäbe sich höchstens indirekt über Geräteeinsatz und Nutzungsmuster, dafür fehlt hier Beleg.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Debatte kann demokratische Korrekturfähigkeit stärken, wenn Risiken für Kinder öffentlich verhandelt werden; sie kann aber auch in symbolische Regulierung kippen, wenn Evidenz und Zuständigkeiten unklar bleiben.",
+          "positive_path": {
+            "mechanism": "Öffentliche Prüfung von Jugend-, Bildungs- und Plattformregeln kann politische Kontrolle und Risikodebatten stärken.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ein stark vereinfachter Schuld- und Lösungsrahmen kann die Debatte verengen und komplexe Ursachen von Pisa-Problemen überdecken.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T07:37:26.176Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T07:02:07.000Z",
+      "last_updated": "2026-09-09T07:40:11.190Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-c3148c948e7ddbe23ef4",
+      "case_file": null,
+      "source_published_at": "2026-09-09T07:02:07.000Z",
+      "published_at": "2026-09-09T07:40:11.190Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Bundesregierung oder die CDU Prien bei einer Altersbeschränkung für Social Media unterstützt.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "öffentliche Zustimmung, ablehnende Stellungnahme oder Entwurf eines Maßnahmenpakets",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2b4406cdfc19711d",
+          "announced_at": "2026-09-09T07:02:07.000Z",
+          "follow_up_date": "2026-09-16T07:40:11.190Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob Prien ihren Vorstoß in konkrete Regulierung oder einen Gesetzesvorschlag übersetzt.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "benannte Altersgrenze, Verfahrensschritt oder Kabinettsinitiative",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cca5b53457af261b",
+          "announced_at": "2026-09-09T07:02:07.000Z",
+          "follow_up_date": "2026-09-16T07:40:11.190Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/schlechte-pisa-ergebnisse--prien-fordert-alterslimit-fuer-social-media-38225502.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T07:02:07.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-50b7642f201d604e",
       "title_image": {
