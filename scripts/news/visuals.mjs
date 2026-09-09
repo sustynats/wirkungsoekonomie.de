@@ -465,25 +465,47 @@ export function renderTendency(value, assessment = null) {
   return `<span class="wt-tendency wt-tendency--${key}" data-direction="${tendency.direction}"${assessment ? ` data-assessment="${escapeHtml(assessment.status)}"` : ""} title="Analytische Richtung: Potenzial und Risiko, kein Nachweis eingetretener Wirkung">${renderIcon(tendency.icon)}<span><strong>${escapeHtml(assessment?.label || tendency.label)}</strong>${tendency.qualifier ? `<span class="wt-tendency__qualifier"> · ${tendency.qualifier}</span>` : ""}</span></span>`;
 }
 
+function consequence(path, sign, { legacy = false, secondary = false } = {}) {
+  if (!path?.mechanism) return "";
+  const roleLabels = { political_reaction: "Politische Reaktion – separat", intention_only: "Erklärte Absicht – kein Wirkungsnachweis", procedural_step: "Verfahrensschritt – keine Schutzwirkung für sich", mitigation: "Begrenzung eines Risikos – kein Ausgleich" };
+  const title = legacy ? (sign === "positive" ? "Bisherige Nutzenannahme" : "Bisherige Risikoannahme")
+    : secondary ? roleLabels[path.effect_role] || "Weiterer Teilpfad – separat"
+    : sign === "positive" ? "Positiver Pfad · was sich verbessern kann" : "Negativer Pfad · was sich verschlechtern kann";
+  return `<div class="wt-consequence wt-consequence--${legacy || secondary ? "separate" : sign}"${!legacy && !secondary ? ` data-direction="${sign}"` : ""}><strong>${escapeHtml(title)}</strong><p>${escapeHtml(path.state_change || path.mechanism)}</p>${path.condition ? `<p class="wt-consequence__condition"><b>Bedingung:</b> ${escapeHtml(path.condition)}</p>` : ""}${path.state_change && path.state_change !== path.mechanism ? `<details><summary>Wie dieser Pfad zustande kommt</summary><p>${escapeHtml(path.mechanism)}</p></details>` : ""}</div>`;
+}
+
 export function renderDimensionMeters(analysis = {}, { compact = false, tendency } = {}) {
   const legacy = tendency === undefined ? analysis.visuals?.tendency : tendency;
   const frame = analysis.assessment_frame;
-  const reference = frame?.subject && frame?.baseline ? `<p class="wt-dims__reference"><strong>Bewertet:</strong> ${escapeHtml(frame.subject)}<br><strong>Verglichen mit:</strong> ${escapeHtml(frame.baseline)}</p>` : '';
+  const objectLabels = { proposed_measure: "Angekündigte Maßnahme · Umsetzung noch Voraussetzung", implemented_measure: "Umgesetzte Maßnahme · Folgen getrennt prüfen", event: "Berichtetes Ereignis", communication: "Äußerung / Kommunikation · nicht automatisch ihre Umsetzung" };
+  const reference = frame?.subject && frame?.baseline ? `<div class="wt-dims__reference">${objectLabels[frame.object_kind] ? `<p class="wt-dims__object-kind">${escapeHtml(objectLabels[frame.object_kind])}</p>` : ""}<p><strong>Bewertet:</strong> ${escapeHtml(frame.subject)}</p><details><summary>Verglichen mit:</summary><p>${escapeHtml(frame.baseline)}</p></details></div>` : '';
   const items = Object.entries(DIMENSIONS).map(([key, meta]) => {
     const value = analysis[key] || { relevance: "offen", rationale: "Noch nicht belastbar eingeordnet." };
     const level = relevanceLevel(value.relevance);
     const label = value.relevance || "offen";
     const assessment = dimensionAssessment(analysis, key, legacy);
-    return `<div class="wt-dim wt-dim--${key}" data-level="${level}">
-      <div class="wt-dim__head">${renderIcon(meta.icon)}<strong>${meta.label}</strong><span class="wt-dim__level">${escapeHtml(label)}</span></div>
+    const mixed = value.tendency === "gemischt" || assessment.tendency === "gemischt";
+    const rolePending = assessment.status === "unreviewed_roles" || assessment.status === "unresolved_balance";
+    const unscoped = assessment.status === "unscoped";
+    const originalTendency = unscoped ? value.tendency ?? legacy?.[key] : assessment.tendency;
+    const primary = originalTendency === "chance" ? value.positive_path : originalTendency === "risiko" ? value.negative_path : null;
+    const mainSign = originalTendency === "chance" ? "positive" : "negative";
+    const paths = mixed
+      ? consequence(value.positive_path, "positive", { legacy: rolePending }) + consequence(value.negative_path, "negative", { legacy: rolePending })
+      : primary ? consequence(primary, mainSign, { legacy: unscoped }) : value.rationale && unscoped ? consequence({mechanism:value.rationale}, mainSign, {legacy:true}) : "";
+    const other = !mixed && primary ? (mainSign === "positive" ? value.negative_path : value.positive_path) : null;
+    return `<div class="wt-dim wt-dim--${key}" data-level="${level}" data-potential-model="1.2">
+      <div class="wt-dim__head">${renderIcon(meta.icon)}<strong>${meta.label}</strong><span class="wt-dim__level">Relevanz: ${escapeHtml(label)}</span></div>
       ${meter(level, `Relevanz für ${meta.label}: ${label}`, { className: "wt-dim__track" })}
-      ${renderTendency(assessment.tendency, assessment)}
+      ${mixed || unscoped ? `<p class="wt-dim__separate-label" data-direction="${rolePending || unscoped ? "not_aggregated" : "separate"}"><strong>${unscoped ? assessment.label : rolePending ? "Keine belastbare Gesamtbewertung" : "Zwei getrennte Potenziale – keine Verrechnung"}</strong></p>` : renderTendency(assessment.tendency, assessment)}
       ${assessment.note ? `<p class="wt-dim__assessment-note">${escapeHtml(assessment.note)}</p>` : ""}
-      <p class="wt-dim__note${compact ? " sr-only" : ""}">${escapeHtml(value.rationale || "")}</p>
-      ${!compact && assessment.tendency === 'gemischt' ? `<dl class="wt-dim__paths"><div><dt>Positiver Pfad</dt><dd>${escapeHtml(value.positive_path.mechanism)}</dd></div><div><dt>Negativer Pfad</dt><dd>${escapeHtml(value.negative_path.mechanism)}</dd></div></dl>` : ""}
+      ${paths}
+      ${other ? consequence(other, mainSign === "positive" ? "negative" : "positive", { secondary: true, legacy: unscoped }) : ""}
+      ${value.rationale ? `<details class="wt-dim__reason"><summary>Begründung und Grenzen</summary><p class="wt-dim__note">${escapeHtml(value.rationale)}</p></details>` : ""}
     </div>`;
   }).join("");
-  return `${reference}<div class="wt-dims${compact ? " wt-dims--compact" : ""}">${items}</div>${compact ? "" : '<p class="wt-dims__legend">Die Einordnung gilt für die beschriebene Entwicklung, nicht pauschal für eine Partei oder ein Themenfeld. Balken: Relevanz. Richtung: positives Potenzial oder negatives Risiko, kein Wirkungsnachweis. Eintritt und Ausmaß können offen sein, obwohl die Richtung begründet ist. Gegenläufige Pfade werden nicht verrechnet. Weniger Schaden gegenüber einem schlechteren Vorschlag bedeutet noch keine Verbesserung gegenüber dem Ausgangszustand.</p>'}`;
+  const observed = analysis.observed_outcome?.change ? `<p class="wt-dims__observed"><strong>Gesondert beobachtet:</strong> ${escapeHtml(analysis.observed_outcome.change)} ${analysis.observed_outcome.attribution === "open" ? "Die Ursachenzurechnung bleibt offen." : ""}</p>` : "";
+  return `${reference}<div class="wt-dims${compact ? " wt-dims--compact" : ""}">${items}</div>${observed}${compact ? "" : '<p class="wt-dims__legend">Balken zeigen Relevanz, nicht Wirkungsstärke. Die Richtung bezeichnet das begründete Potenzial der konkret genannten Zustandsänderung. Absicht, Beschluss und beobachtete Folge sind verschiedene Dinge. Unsicherer Eintritt macht einen begründeten Schadenspfad nicht neutral. Politischer Gegenwind ist kein gleichwertiger Gegenschaden. Nichtkompensation: schwere Eingriffe in Schutzrechte und Lebensgrundlagen werden nicht durch andere Vorteile verrechnet. Risiken eines größeren Themenfelds müssen mit eigenen Belegen und Wirkungskaskaden gesondert eingeordnet werden.</p>'}`;
 }
 
 export function renderImpactPath(analysis = {}, prose = (items) => (items || []).map(escapeHtml).join(" "), visuals = null) {

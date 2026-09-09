@@ -385,6 +385,107 @@
       "source_id": "nius-excluded", "publisher_id": "nius", "name": "NIUS", "url": "https://www.nius.de/", "source_type": "excluded", "publisher_kind": "media", "role": "F", "primary_source": false, "enabled": false,
       "why_relevant": "Nicht Teil der Nachrichtenrecherche: ausdrücklicher redaktioneller Ausschluss durch den Betreiber.",
       "access": { "status": "excluded", "cost_usd": 0, "article": "disabled", "note": "Nicht abrufen, auch nicht über Proxys oder Syndikationsumwege als eigene Belegquelle." }
+    },
+    {
+      "source_id": "wdr-maischberger-reference",
+      "publisher_id": "wdr",
+      "name": "WDR – maischberger",
+      "url": "https://www.ardmediathek.de/",
+      "source_type": "official_reference",
+      "publisher_kind": "public_broadcasting",
+      "source_role": "broadcast_documentation",
+      "primary_source": true,
+      "role": "D",
+      "enabled": false,
+      "topic": "Politik",
+      "research_lane": "primary",
+      "language": "de",
+      "geography": [
+        "DE"
+      ],
+      "why_relevant": "Originaldokumentation einer WDR-Sendung in der ARD Mediathek. Nur WDR-Angebote dieser Sendung fallbezogen zuordnen; keine pauschale Publisher-Zuordnung aller Mediathek-Inhalte.",
+      "access": {
+        "status": "pending",
+        "cost_usd": 0,
+        "article": "disabled",
+        "note": "Öffentliche Sendungsbeschreibung fallbezogen geprüft. Kein neuer Feed, kein automatisierter Videoabruf, keine Medienkopie. Beschreibung ist kein vollständiges Wortprotokoll."
+      }
+    },
+    {
+      "source_id": "mi-sachsen-anhalt-context",
+      "publisher_id": "mi-lsa",
+      "name": "Verfassungsschutz Sachsen-Anhalt",
+      "url": "https://mi.sachsen-anhalt.de/",
+      "source_type": "official_reference",
+      "publisher_kind": "institution",
+      "source_role": "legal_context",
+      "primary_source": true,
+      "role": "D",
+      "enabled": false,
+      "topic": "Demokratie",
+      "research_lane": "primary",
+      "language": "de",
+      "geography": [
+        "DE"
+      ],
+      "why_relevant": "Amtliche Originalinformationen zur Einstufung des AfD-Landesverbandes und ihrer Begründung. Kein Ersatz für ein gerichtliches Parteiverbot.",
+      "access": {
+        "status": "pending",
+        "cost_usd": 0,
+        "article": "disabled",
+        "note": "Fallbezogene Prüfung öffentlicher Originaldokumente; keine automatische Abruffreigabe."
+      }
+    },
+    {
+      "source_id": "afd-lsa-programme-reference",
+      "publisher_id": "afd-lsa",
+      "name": "AfD Sachsen-Anhalt – Regierungsprogramm",
+      "url": "https://afd-regierungsprogramm.de/",
+      "source_type": "official_reference",
+      "publisher_kind": "political_party",
+      "source_role": "party_programme",
+      "primary_source": true,
+      "requires_corroboration": true,
+      "role": "D",
+      "enabled": false,
+      "topic": "Politik",
+      "research_lane": "primary",
+      "language": "de",
+      "geography": [
+        "DE"
+      ],
+      "why_relevant": "Primärbeleg für beschlossene politische Absichten, nicht für behauptete Erfolge, Problemdiagnosen oder spätere Wirkungen.",
+      "access": {
+        "status": "pending",
+        "cost_usd": 0,
+        "article": "disabled",
+        "note": "Öffentliches Parteiprogramm fallbezogen geprüft. Kein neuer Feed, keine automatische Übernahme politischer Behauptungen."
+      }
+    },
+    {
+      "source_id": "bundesrecht-context",
+      "publisher_id": "bundesrecht",
+      "name": "Gesetze im Internet",
+      "url": "https://www.gesetze-im-internet.de/",
+      "source_type": "official_reference",
+      "publisher_kind": "institution",
+      "source_role": "legal_context",
+      "primary_source": true,
+      "role": "D",
+      "enabled": false,
+      "topic": "Recht und Justiz",
+      "research_lane": "primary",
+      "language": "de",
+      "geography": [
+        "DE"
+      ],
+      "why_relevant": "Konsolidierte Bundesrechtsnormen zur fallbezogenen Kompetenz- und Verfahrensprüfung.",
+      "access": {
+        "status": "pending",
+        "cost_usd": 0,
+        "article": "disabled",
+        "note": "Öffentliche Normtexte fallbezogen geprüft; keine neue automatische Abfrage."
+      }
     }
   ]
 }

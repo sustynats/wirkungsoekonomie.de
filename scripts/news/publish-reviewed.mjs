@@ -11,6 +11,9 @@ import { sanitizeVisuals } from "./visuals.mjs";
 import { mediaTriggerRecord } from "./media-impact.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+// Historical review packets retain their documented contract. Any newly
+// researched full review must use the same current contract as the worker.
+const RECIPIENT_CONTRACT_FROM = Date.parse('2026-09-09T22:00:00Z');
 // A reviewed media-only addendum must not rebuild claims, scores or event IDs.
 // The source fingerprint prevents applying a review to changed material.
 export function prepareReviewedMediaImpact(review, registry, stories, now) {
@@ -87,7 +90,9 @@ export function prepareReviewedStory(review, registry, stories, now) {
   // not the provisional discovery ledger whose IDs disappear on publication.
   if (analysis.visuals) analysis.visuals = sanitizeVisuals(analysis.visuals, { ...candidate, analysis,
     claims: analysis.event_claims ? persistClaimEvidence(analysis, candidate, now) : candidate.claims }).visuals;
-  const errors = [...candidate.source_integrity.issues.map(issue => issue.code), ...validateAnalysis(analysis, candidate, { requireDirectionAssessment: correction || draftReview })];
+  const historicalReview = Date.parse(review.research_checked_at) < RECIPIENT_CONTRACT_FROM;
+  const errors = [...candidate.source_integrity.issues.map(issue => issue.code), ...validateAnalysis(analysis, candidate, { requireDirectionAssessment: !historicalReview })];
+  if ((correction || draftReview) && !['1.1', '1.2'].includes(analysis.direction_assessment_version)) errors.push('AI_DIRECTION_ASSESSMENT_REQUIRED');
   if (errors.length) return { errors, candidate };
   const record = publishedRecord(candidate, analysis, { provider: "editorial_review", model: "source_bound_review", mode: "editorial_review", method_sources: review.method_sources }, now);
   if (correction || draftReview) record.versions.at(-1).review_id = reviewId;

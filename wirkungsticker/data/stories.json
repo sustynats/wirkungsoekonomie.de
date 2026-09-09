@@ -1,7 +1,1070 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T21:37:35.896Z",
+  "updated_at": "2026-09-09T23:33:30.591Z",
   "stories": [
+    {
+      "story_id": "wt-bbaa7af8793200d8",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbaa7af8793200d8-d9213f2e82bd29de-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbaa7af8793200d8-8ba4917c1fa7e60e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbaa7af8793200d8-b98c3ae2c5465b78-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbaa7af8793200d8-fa0f9d5908a1963e-source.png"
+        }
+      },
+      "slug": "so-hat-das-reiche-monheim-riesige-schulden-angehauft-3200d8",
+      "title": "So hat das reiche Monheim riesige Schulden angehäuft",
+      "source_summary": "Monheim am Rhein wird in dem Bericht als Stadt mit hoher Verschuldung und starkem Haushaltsdruck beschrieben. Genannt werden Haushaltssicherung, ein Haushaltsminus von knapp 90 Millionen Euro für 2026 und sinkende Gewerbesteuern. \n\nZugleich eröffnet die Stadt die Kulturraffinerie K714, die 166 Millionen Euro gekostet hat. Der Bericht betont, dass die Halle nur bei guter Auslastung finanziell tragen kann. Offen bleibt, wie schnell sich Einnahmen, Nutzung und Budgetlage tatsächlich entwickeln.",
+      "summary": "Monheim steht unter starkem Haushaltsdruck, während die neue Kulturraffinerie K714 eröffnet. Der Bericht verbindet hohe Schulden mit dem Versuch, das Projekt über Auslastung wirtschaftlich zu tragen.",
+      "detail_summary": "Der Bericht beschreibt Monheim als Stadt in einer extremen finanziellen Schieflage. Genannt werden Haushaltssicherung, ein Haushaltsminus von knapp 90 Millionen Euro und verfehlte Gewerbesteuern. Zugleich eröffnet die Stadt die Kulturraffinerie K714 für 166 Millionen Euro. Relevanz entsteht, weil hier kommunale Schulden, ein Großprojekt und künftige Haushaltsbelastungen zusammenkommen. Der Wirkpfad läuft über Ausgaben, Auslastung und Einnahmen: Wenn die Halle nicht genug genutzt wird, bleibt der finanzielle Druck hoch. Belegt ist der aktuelle Zustand; offen bleibt, ob und wie stark sich daraus mittelbar Folgen für Haushaltsspielräume ergeben.",
+      "why_relevant": "Die Geschichte verbindet hohe kommunale Verschuldung, ein teures Kulturprojekt und die Frage nach künftiger Finanzstabilität. Das betrifft Haushaltsautonomie, Prioritäten und mögliche Folgekosten.",
+      "topic": [
+        "Geopolitik",
+        "Finanzen"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Quelle beschreibt eine angespannte kommunale Finanzlage mit Haushaltssicherung, knapp 90 Millionen Euro Minus und sinkenden Gewerbesteuern. Das kann die Spielräume für kommunale Leistungen und Investitionen verengen, ohne dass die Folgewirkung bereits als eingetreten belegt ist.",
+          "negative_path": {
+            "mechanism": "Anhaltende Defizite, sinkende Gewerbesteuern und hohe Betriebskosten der Halle verringern den Haushaltsspielraum und erhöhen den Druck auf kommunale Leistungen.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Falls die Halle gut ausgelastet wird und zusätzliche Einnahmen erzeugt, kann das den Haushalt etwas entlasten und finanzielle Stabilisierung unterstützen.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Quelle liefert keinen belastbaren Umwelt- oder Klimafolgenbeleg. Der Gegenstand ist kommunale Finanzierung und ein Kulturgebäude; ökologische Wirkungen bleiben offen und dürfen nicht aus dem Thema abgeleitet werden.",
+          "positive_path": {
+            "mechanism": "Mögliche Bündelung von Veranstaltungen an einem Ort könnte Wege bündeln, dafür nennt die Quelle aber keine Emissions- oder Ressourcendaten.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Hohe Bau- und Betriebskosten können Ressourcen binden, doch ein Umweltfolgenbeleg fehlt in den Quellen.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Stadt befindet sich im Modus Haushaltssicherung, der Kreis kontrolliert laut Bericht die Finanzen genauer. Das berührt kommunale Selbststeuerung und Rechenschaft, ohne selbst schon einen demokratischen Schaden zu belegen.",
+          "negative_path": {
+            "mechanism": "Engere Aufsicht und geringerer eigener Spielraum können politische Prioritätensetzung und lokale Entscheidungsfreiheit einschränken.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Öffentliche Kontrolle über Defizite und Großprojekte kann Rechenschaft stärken, wenn sie zu transparenten Haushaltsentscheidungen führt.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "third_order",
+            "path": "veränderte politische Bewertung des früheren Wachstumsmodells",
+            "direction": "open",
+            "condition": "Wenn die Finanzlage länger angespannt bleibt, kann sich die politische Debatte über frühere Steuer- und Investitionspolitik verschieben.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "democracy"
+            ]
+          }
+        ],
+        "affected_groups": [
+          "kommunen",
+          "staat",
+          "beschaeftigte"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T22:52:17.389Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T10:03:08.000Z",
+      "last_updated": "2026-09-09T22:58:53.735Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-e0c46d015bac0e2a41fa",
+      "case_file": null,
+      "source_published_at": "2026-09-06T10:03:08.000Z",
+      "published_at": "2026-09-09T22:58:53.735Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "wdr-nachrichten",
+              "wdr-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Gewerbesteuereinnahmen im laufenden Haushaltsjahr wie prognostiziert um bis zu rund ein Drittel verfehlt werden.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Aktuelle Mitteilung oder neuer Haushaltsstand zur Gewerbesteuer",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a84f3111b47c2843",
+          "announced_at": "2026-09-06T10:03:08.000Z",
+          "follow_up_date": "2026-09-16T22:58:53.735Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Kulturraffinerie K714 die erwartete Auslastung erreicht und damit ihre Kosten teilweise deckt.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Belegte Auslastungszahlen, Buchungen oder Defizitentwicklung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-85e1df452151e61e",
+          "announced_at": "2026-09-06T10:03:08.000Z",
+          "follow_up_date": "2026-09-16T22:58:53.735Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:03:08.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/rheinland/monheim-am-rhein-schulden-2-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T13:14:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-b568ca860f4fe31e",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b568ca860f4fe31e-685c01f21199b9ed-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b568ca860f4fe31e-6437328e79476668-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b568ca860f4fe31e-5a4e8f69c1b9a28a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "wenn-manner-kinder-kriegten-hatten-wir-kreisssale-aus-gold-4fe31e",
+      "title": "\"Wenn Männer Kinder kriegten, hätten wir Kreißsäle aus Gold\"",
+      "source_summary": "Die Meldung beschreibt finanziellen Druck auf Geburtskliniken und verweist auf Schließungen in der Region. Eine leitende Hebamme aus Rüdersdorf schildert zugleich Sorgen um Versorgung, Wege für Schwangere und eigene Einbußen durch einen neuen Vergütungsrahmen.\n\nGenannt werden Auswirkungen auf Frauengesundheit, Arbeitsalltag und Wahlmöglichkeiten bei der Geburt. Offene Punkte bleiben der genaue Umfang der Schließungen, die Reichweite der Folgen und die externe Bestätigung der Zahlen.",
+      "summary": "Geburtskliniken in Brandenburg stehen unter Druck, und eine Hebamme schildert Folgen für Frauen und Personal. Die Meldung ist ein erster Lagehinweis mit offenen Fragen zu Umfang und Belastbarkeit.",
+      "detail_summary": "Die Meldung setzt bei Schließungen und finanziellem Druck auf Geburtskliniken an. Eine leitende Hebamme aus Rüdersdorf beschreibt, dass Frauen teils längere Wege zu Kliniken in Kauf nehmen müssen und dass sich die Auswahlorte für Geburten verringern. Zugleich berichtet sie von Sorgen im Team, weil weitere Schließungen erwartet werden könnten. Als eigener Belastungsfaktor nennt sie ein neues Vergütungssystem für freiberufliche Hebammen mit rund 20 Prozent Einbußen. Die Relevanz liegt in Versorgung, Arbeitsbedingungen und Zugänglichkeit für Gebärende. Die Evidenz bleibt aber auf eine journalistische Einzelquelle mit vor allem zugeschriebenen Aussagen begrenzt.",
+      "why_relevant": "Die Meldung berührt Versorgung, Erreichbarkeit und Arbeitsbedingungen rund um Geburtshilfe. Das ist materiell, weil es mehrere Betroffene und mögliche Folgewirkungen für Gesundheit und Wahlfreiheit nennt.",
+      "topic": [
+        "Gesundheit",
+        "Geopolitik",
+        "Finanzen"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Weniger Geburtsstationen und geringere Vergütung können Versorgungslücken, längere Wege und Druck auf Hebammen erzeugen. Die Meldung beschreibt solche Risiken, aber keinen belastbar gemessenen Endeffekt.",
+          "negative_path": {
+            "mechanism": "Schließungen und Vergütungseinbußen können Erreichbarkeit, Planbarkeit und Bindung von Fachpersonal verschlechtern.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Keine tragfähige positive Veränderung im Quellmaterial belegt; höchstens der Hinweis auf Aufmerksamkeit für das Thema.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "other_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Im Quelltext ist kein direkter Umwelt- oder Klimapfad belegt. Ein materieller Bezug ergibt sich hier nicht aus den vorliegenden Angaben.",
+          "negative_path": {
+            "mechanism": "Kein belegter Umweltpfad aus der Meldung ableitbar.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Kein belegter positiver Umweltpfad aus der Meldung ableitbar.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Wenn Versorgung für Gebärende kleiner und schwerer erreichbar wird, betrifft das die tatsächliche Zugänglichkeit öffentlicher Daseinsvorsorge. Zugleich bleibt offen, wie breit die Lage ist und ob es bereits belastbare Folgedaten gibt.",
+          "negative_path": {
+            "mechanism": "Weniger Standorte und geringere Wahlmöglichkeiten können die reale Teilhabe an wohnortnaher Versorgung schwächen.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Die öffentliche Debatte kann Problemdruck sichtbar machen, ohne schon eine Verbesserung zu belegen.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "other_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "beschaeftigte",
+          "kommunen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T22:52:17.389Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T12:17:33.000Z",
+      "last_updated": "2026-09-09T22:57:05.479Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-0cdd60b51f48c6a7b45c",
+      "case_file": null,
+      "source_published_at": "2026-09-09T12:17:33.000Z",
+      "published_at": "2026-09-09T22:57:05.479Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Wie viele Geburtsstationen in Brandenburg sind geschlossen oder von Schließung betroffen?",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Zahl der betroffenen Geburtsstationen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a6dc4cb3ce822b94",
+          "announced_at": "2026-09-09T12:17:33.000Z",
+          "follow_up_date": "2026-09-16T22:57:05.479Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wie stark wirkt sich der neue Hebammenhilfevertrag auf Einkommen und Personalbindung aus?",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Einkommensverlust oder Stellenentwicklung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-5ca73f920eec9607",
+          "announced_at": "2026-09-09T12:17:33.000Z",
+          "follow_up_date": "2026-09-16T22:57:05.479Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/thema/wiegehtesuns/hebamme-ruedersdorf-schliessungen-gebaerende-frauengesundheit.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T12:17:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-3bb169b629ab743f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3bb169b629ab743f-783ea5bd350e6872-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3bb169b629ab743f-d062187cbacf84f3-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3bb169b629ab743f-d10ca3c02cfbc9a0-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "iran-krieg-angriffe-treiben-olpreis-auf-100-dollar-ab743f",
+      "title": "Iran-Krieg: Angriffe treiben Ölpreis auf 100 Dollar",
+      "source_summary": "Die Quelle meldet, dass der Brent-Preis am Mittwoch wieder über 100 US-Dollar je Barrel gestiegen ist. Als Hintergrund nennt sie neue gegenseitige Angriffe von USA und Iran in der Straße von Hormus sowie die Zerstörung von fünf iranischen Rohöltankern und einen versenkten Tanker.\n\nDie Darstellung verweist außerdem auf die Bedeutung der Straße von Hormus für den Öltransport und sagt, ein höherer Rohölpreis mache Tanken, Heizen und insgesamt viele Preise tendenziell teurer. Offen bleibt, wie breit und wie lange der Effekt anhält und welche Details unabhängig bestätigt sind.",
+      "summary": "Öl ist wieder über 100 Dollar je Barrel gestiegen. Die Quelle verbindet das mit neuen Angriffen im Iran-USA-Konflikt rund um die Straße von Hormus.",
+      "detail_summary": "Die Meldung beschreibt einen Marktimpuls mit möglicher Breitenwirkung über Energiepreise. Sachlich belegt ist der Preissprung bei Brent; die Ursache bleibt in dieser Quelle als Konfliktgeschehen rund um Tanker und Straße von Hormus gefasst. Für die Einordnung reicht das als Erstbericht, nicht als abgeschlossene Wirkungsanalyse. Für Mensch und Wirtschaft ist der Wirkpfad plausibel über teureren Kraftstoff, Heizen und allgemeine Kosten. Die Evidenz bleibt vorläufig, weil nur eine journalistische Quelle vorliegt.",
+      "why_relevant": "Materiell relevant wegen möglicher Preisweitergabe bei Energie, Heizen und breiteren Kosten.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Ein höherer Rohölpreis kann Haushalte und Betriebe über Kraftstoff-, Heiz- und Transportkosten belasten. Die Quelle nennt diese Weitergabe selbst als tendenziellen Effekt, aber nicht als bereits gemessene Folge.",
+          "positive_path": {
+            "mechanism": "Wenn der Ölpreis sinkt oder stabil bleibt, verringert sich der Kostendruck auf Tanken, Heizen und Logistik im Vergleich zum Sprung über 100 Dollar.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Bleibt der Rohölpreis erhöht oder steigt weiter, nimmt der Kostendruck für Haushalte und Unternehmen zu.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Quelle behandelt vor allem Preis- und Transportfolgen. Ein direkter Umwelt- oder Klimawirkpfad ist daraus nicht belastbar ableitbar.",
+          "positive_path": {
+            "mechanism": "Keine tragfähige positive Umweltwirkung aus der Meldung belegt.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Ein dauerhaft hoher Ölpreis kann fossile Nutzung nicht direkt belegen, höchstens indirekt beeinflussen; die Quelle weist das nicht nach.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung enthält keine belastbare Information zu demokratischen Verfahren, Kontrolle oder Rechenschaft. Politische Folgen bleiben offen.",
+          "positive_path": {
+            "mechanism": "Keine belegte demokratische Verbesserung aus der Meldung.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Eine Eskalation im Konflikt kann politische Spannungen erhöhen, doch die demokratische Wirkung bleibt hier unbestimmt.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "unternehmen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T22:37:52.526Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T08:08:00.000Z",
+      "last_updated": "2026-09-09T22:40:12.506Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-97aebd4b7d0bac856b1a",
+      "case_file": null,
+      "source_published_at": "2026-09-09T08:08:00.000Z",
+      "published_at": "2026-09-09T22:40:12.506Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Preis über 100 US-Dollar je Barrel blieb oder nur kurz darüber lag.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Brent-Preis pro Barrel",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b654c344d34e4eb6",
+          "announced_at": "2026-09-09T08:08:00.000Z",
+          "follow_up_date": "2026-09-16T22:40:12.506Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob andere belastbare Quellen die Angriffe und die Preisbewegung bestätigen.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Bestätigung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-24014bf9202a6933",
+          "announced_at": "2026-09-09T08:08:00.000Z",
+          "follow_up_date": "2026-09-16T22:40:12.506Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wirtschaft/iran-krieg-oelpreis-dollar-strasse-von-hormus-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T08:08:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-b3b0168d8241bab3",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b3b0168d8241bab3-0667941ed111a9ee-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b3b0168d8241bab3-2a8a69e7966059db-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b3b0168d8241bab3-2410a3ca7cdbb3ca-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b3b0168d8241bab3-45ea09c699a3bea4-source.png"
+        }
+      },
+      "slug": "olpreis-wieder-uber-100-dollar-spritpreise-binnen-einer-woche-stark-gestiegen-41bab3",
+      "title": "Ölpreis wieder über 100 Dollar - Spritpreise binnen einer Woche stark gestiegen",
+      "source_summary": "Ein Bericht nennt einen Sprung des Brent-Ölpreises auf über 100 Dollar und verweist zugleich auf deutlich gestiegene Benzin- und Dieselpreise an deutschen Tankstellen. Ein zweiter Bericht meldet den Anstieg ebenfalls und führt ihn auf die weitere militärische Eskalation am Persischen Golf sowie die Sorge vor Lieferunterbrechungen aus dem Nahen Osten zurück.\n\nOffen bleibt, wie lange der Preis über der Marke bleibt und wie breit sich der Tankstellenanstieg fortsetzt. Die Quellen liefern einen aktuellen Markt- und Verbraucherbefund, aber noch keinen belastbaren Beleg für länger anhaltende Folgen.",
+      "summary": "Öl ist wieder über 100 Dollar gestiegen. Zugleich steigen in Deutschland die Spritpreise.",
+      "detail_summary": "Die Berichte zeigen einen aktuellen Preisschub am Ölmarkt und an den Tankstellen. Der Brent-Preis sprang auf über 100 Dollar, zugleich kletterten Benzin- und Dieselpreise deutlich. Als Auslöser nennen die Quellen die militärische Eskalation am Persischen Golf und die Sorge vor Lieferunterbrechungen. Für die Redaktion ist das ein relevanter Markt- und Verbraucherbefund mit möglichem Kostendruck. Eine eingetretene längerfristige Wirkung ist damit aber noch nicht belegt.",
+      "why_relevant": "Der Preisimpuls trifft Energie- und Mobilitätskosten und kann sich kurzfristig auf Verbraucherinnen, Unternehmen und Transportkosten auswirken.",
+      "topic": [
+        "Geopolitik",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Steigende Öl- und Spritpreise erhöhen kurzfristig Kosten für Haushalte, Unternehmen und Verkehr. Das ist eine tatsächliche Zustandsänderung im Preisniveau, keine nur erwartete Möglichkeit.",
+          "positive_path": {
+            "mechanism": "Keine eigenständige positive Veränderung im berichteten Befund; mögliche Entlastung erst bei späterem Preisrückgang, hier nicht belegt.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "ndr-info"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Höhere Energie- und Kraftstoffpreise verteuern Mobilität, Lieferungen und Vorprodukte und können Kaufkraft mindern.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "ndr-info"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Der Bericht nennt nur einen Preis- und Lieferimpuls am Ölmarkt. Direkte Umweltfolgen oder Emissionsänderungen sind daraus nicht belegt.",
+          "positive_path": {
+            "mechanism": "Kein belastbar belegter positiver Umweltpfad aus den Quellen.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Ein höherer Ölpreis kann den Verbrauch fossiler Kraftstoffe dämpfen, das ist hier aber nur als Möglichkeit und nicht als eingetretene Folge belegt.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "ndr-info"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Quellen beschreiben Marktpreise und Verbraucherpreise. Ein direkter Pfad auf demokratische Verfahren oder Korrekturfähigkeit ist daraus nicht belegt.",
+          "positive_path": {
+            "mechanism": "Kein belegt positiver demokratischer Pfad im vorliegenden Material.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Keine belastbar belegte demokratische Schädigung; politische Folgewirkungen bleiben offen.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "ndr-info"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Brent-Ölpreis",
+            "value": "100",
+            "unit": "Dollar",
+            "context": "Der Preis sprang auf über diese Marke.",
+            "claim_id": "wt-b3b0168d8241bab3-v1-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "verbraucherinnen",
+          "unternehmen",
+          "beschaeftigte"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T22:07:04.931Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T14:03:11.000Z",
+      "last_updated": "2026-09-09T22:12:28.273Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-91057569da22b471781b",
+      "case_file": null,
+      "source_published_at": "2026-09-09T13:53:33.000Z",
+      "published_at": "2026-09-09T22:12:28.273Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Ölpreis über 100 Dollar bleibt oder wieder darunter fällt.",
+          "source_id": "ndr-info",
+          "expected_by": null,
+          "measurable_indicator": "Brent-Preis in Dollar pro Barrel",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a9a99ee7e32b4280",
+          "announced_at": "2026-09-09T13:53:33.000Z",
+          "follow_up_date": "2026-09-16T22:12:28.273Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob sich der Anstieg an den Tankstellen in Deutschland fortsetzt.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Benzin- und Dieselpreise an deutschen Tankstellen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0bf04d06a4e05e78",
+          "announced_at": "2026-09-09T14:03:11.000Z",
+          "follow_up_date": "2026-09-16T22:12:28.273Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/oelpreis-wieder-ueber-100-dollar---spritpreise-binnen-einer-woche-stark-gestiegen-38227062.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T14:03:11.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/wirtschaft-oelpreis-steigt-auf-ueber-100-dollar,audio-3467118.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:53:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-32f0aa5f0a6a7761",
+      "title_image": null,
+      "slug": "nach-afd-wahlsieg-soder-lehnt-verbot-ab-und-nennt-brandmauer-konzept-gescheitert-6a7761",
+      "title": "Nach AfD-Wahlsieg: Söder lehnt Verbot ab und nennt Brandmauer-Konzept gescheitert",
+      "source_summary": "CSU-Chef Markus Söder hat sich bei Maischberger am 8. September gegen ein AfD-Verbot ausgesprochen. Stattdessen fordert er eine schärfere inhaltliche Auseinandersetzung mit der Partei. Das bisherige Brandmauer-Konzept erklärte er für gescheitert. Das geht aus der WDR-Sendungsbeschreibung und einem dpa-Bericht bei FOCUS hervor. Zugleich warnt Söder laut WDR vor einer AfD-Regierung und vor Rechtsextremismus. Eine angekündigte Koalition oder Zusammenarbeit mit der AfD ist damit nicht belegt.\n\nDie Abgrenzungsdebatte betrifft auch eine Partei, deren Landesverband Sachsen-Anhalt vom zuständigen Verfassungsschutz als gesichert rechtsextremistische Bestrebung geführt wird. Die Behörde verweist insbesondere auf Menschenwürde und Demokratieprinzip. Zum angekündigten Bildungsumbau der AfD gehören getrennte Bildungswege für Kinder mit Behinderung; das Parteiprogramm nennt das Ende der Inklusion und einen Ausbau der Förderschulen. Söders Ablehnung eines Verbots ist eine politische Position: Ein Parteiverbot entscheidet das Bundesverfassungsgericht, nicht ein Parteivorsitzender.",
+      "summary": "Söder lehnt ein AfD-Verbot ab und erklärt die bisherige Abgrenzungsstrategie für gescheitert. Die Aussage ist politisch folgenreich, belegt aber keine angekündigte Zusammenarbeit mit der AfD.",
+      "detail_summary": "Wenn ein führender Unionspolitiker die bisherige Abgrenzung für gescheitert erklärt, geht es nicht nur um eine Formulierung. Entscheidend ist, welche Grenzen bei Mehrheiten, Ämtern und Regierungsbildung tatsächlich bestehen bleiben. Werden sie aufgeweicht, kann das den Zugang der AfD zu staatlichen Hebeln erleichtern. Das negative Wirkungspotenzial betrifft dann öffentliche Kontrolle, Teilhabe und auch Energieentscheidungen. Dass Söders Aussage diesen Prozess bereits ausgelöst hat, ist nicht belegt.",
+      "why_relevant": "Söders Position berührt den Umgang der Union mit möglicher AfD-Regierungsmacht und einem rechtsstaatlichen Schutzinstrument. Das ist ein eigenständiger politischer Nachrichtenanlass.",
+      "topic": [
+        "Politik",
+        "Demokratie",
+        "Gesellschaft",
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Nachgelagertes negatives Potenzial: Erleichterte Regierungsmacht kann den angekündigten Rückbau gemeinsamer Bildungswege ermöglichen. Kinder mit Behinderung und ihre Familien tragen das Teilhaberisiko; keine gemessene Folge der Äußerung.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wird politische Abgrenzung aufgeweicht und anschließend gemeinsame Beschulung eingeschränkt, gehen für betroffene Kinder gemeinsame Lern- und Begegnungsmöglichkeiten verloren. Die tatsächliche Umsetzung bleibt offen.",
+            "source_ids": [
+              "wdr-maischberger-reference",
+              "afd-lsa-programme-reference"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Indirektes negatives Potenzial über Regierungsmacht und Energiepolitik: Der angekündigte Förderentzug und die längere Kohlenutzung können emissionsärmere Alternativen behindern. Die Äußerung selbst ist keine Energieentscheidung.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Erleichterter Zugang zu Regierungsmacht kann die Umsetzung des Energieprogramms begünstigen. Werden emissionsärmere Projekte verdrängt oder verzögert, sind längere fossile Bindungen und zusätzliche Emissionen gegenüber der Alternative möglich.",
+            "source_ids": [
+              "wdr-maischberger-reference",
+              "afd-lsa-programme-reference"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Negatives Potenzial für demokratische Schutz- und Kontrollfunktionen, wenn politische Abgrenzung erodiert. Amtliche Einstufung und angekündigter Rückbau öffentlicher Berichte machen das Risiko konkret; eine erfolgte Erosion ist damit nicht nachgewiesen.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wird die Abgrenzung gegenüber dem als gesichert rechtsextremistisch eingestuften Landesverband schwächer, kann dessen Zugang zu Ämtern leichter werden. Entfällt anschließend öffentliche Sicherheitsberichterstattung, sinkt die verfügbare Information für demokratische Kontrolle.",
+            "source_ids": [
+              "wdr-maischberger-reference",
+              "mi-sachsen-anhalt-context",
+              "afd-lsa-programme-reference"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat"
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "high",
+        "reason": "Die Abgrenzungsmetapher kann als Absage an politische Schutzregeln verstanden werden, obwohl eine Zusammenarbeit nicht ausdrücklich angekündigt ist.",
+        "factual_core": "Söder lehnt ein AfD-Verbot ab, kritisiert die bisherige Abgrenzungsstrategie und warnt zugleich vor einer AfD-Regierung.",
+        "epistemic_status": {
+          "confirmed": [
+            "WDR-Sendungsbeschreibung und dpa-Bericht liegen vor"
+          ],
+          "actor_claims": [
+            "Söders Bewertung der bisherigen Strategie"
+          ],
+          "open": [
+            "Konkrete Folgerungen für Zusammenarbeit und tatsächliche Publikumsreaktionen"
+          ]
+        },
+        "attribution": {
+          "frame_source": "Söder im von WDR dokumentierten Gespräch",
+          "speaker": "Markus Söder",
+          "original_term": "Brandmauer",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline",
+            "body"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Brandmauer",
+          "origin_in_story": "Söder im von WDR dokumentierten Gespräch",
+          "media_usage": "headline",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Konflikt",
+            "Normalisierung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Brandmauer",
+          "frame_type": [
+            "Konflikt",
+            "Normalisierung"
+          ],
+          "problem_definition": "Söder stellt den Erfolg bisheriger politischer Abgrenzung infrage.",
+          "implied_cause": "Unzureichende inhaltliche Auseinandersetzung mit der AfD ist seine politische Erklärung, keine geprüfte Wahlursache.",
+          "implied_responsibility": "Adressiert wird der bisherige Umgang der Union mit der AfD.",
+          "implied_threat": "Weitere politische Erfolge der AfD.",
+          "implied_solution_space": "Härtere inhaltliche Auseinandersetzung statt Verbotsforderung.",
+          "material_omissions": [
+            "Ohne Konkretisierung bleibt unklar, welche Grenzen für Zusammenarbeit gelten sollen."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Der AfD-Landesverband Sachsen-Anhalt wird amtlich als gesichert rechtsextremistische Bestrebung geführt.",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "mi-sachsen-anhalt-context",
+              "claim_supported": "Amtliche Einstufung des Landesverbandes und Begründung"
+            }
+          ],
+          "uncertainty": "Keine Gleichsetzung dieser Einstufung mit einem Parteiverbot; keine pauschale Bewertung von Wählerinnen und Wählern."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "risk",
+          "resonance_space": "Debatte über Regierungsbildung und politische Abgrenzung",
+          "normalization_potential": "medium",
+          "repetition_risk": "open",
+          "polarization_potential": "möglich",
+          "trust_effect_potential": "möglich",
+          "discourse_effect_potential": "Die Formulierung kann als Freigabe von Zusammenarbeit ankommen, ohne dass dies ausdrücklich angekündigt wurde. Das ist ein Interpretationsrisiko, keine nachgewiesene Publikumswirkung."
+        },
+        "impact_path": {
+          "first_order": "Aufmerksamkeit für die Kritik an bisherigen Abgrenzungsregeln",
+          "second_order": "Mögliche Verschiebung dessen, was als akzeptable Zusammenarbeit gilt",
+          "third_order": "Bedingtes Risiko veränderter Mehrheiten und institutioneller Schutzbedingungen"
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Die Stellungnahme und der amtliche Kontext sind dokumentiert.",
+          "what_is_inferred": "Eine Absage an das bisherige Konzept kann weiter reichen als die ausdrücklich genannte Strategie der inhaltlichen Auseinandersetzung.",
+          "what_is_open": "Kein vollständiges Wortprotokoll ausgewertet. Keine Daten über tatsächliche Wahrnehmung oder Wiederholungseffekte. Mehrere Abdrucke derselben Agenturmeldung sind keine unabhängigen Bestätigungen.",
+          "facts": [
+            "Die Stellungnahme und der amtliche Kontext sind dokumentiert."
+          ],
+          "observations": [
+            "Die Sendungsbeschreibung enthält auch Söders Warnung vor einer AfD-Regierung."
+          ],
+          "inferences": [
+            "Eine Absage an das bisherige Konzept kann weiter reichen als die ausdrücklich genannte Strategie der inhaltlichen Auseinandersetzung."
+          ],
+          "impact_potentials": [
+            "Verschobene Erwartungen an politische Zusammenarbeit"
+          ],
+          "impact_risks": [
+            "Normalisierung einer Öffnung zu Regierungsmacht"
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Kein vollständiges Wortprotokoll ausgewertet.",
+            "Keine Daten über tatsächliche Wahrnehmung oder Wiederholungseffekte.",
+            "Mehrere Abdrucke derselben Agenturmeldung sind keine unabhängigen Bestätigungen."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Söder erklärt eine bisherige Strategie für gescheitert. Das ist seine politische Bewertung, kein Nachweis dafür, dass Abgrenzung nutzlos wäre. Beim Publikum kann die Botschaft ankommen: Die bisherigen Grenzen sollen fallen. Genau diese Folgerung ist aber nicht ausdrücklich belegt. Nach der WDR-Beschreibung warnt er zugleich vor einer AfD-Regierung.\n\nWarum ist das trotzdem wichtig? Politische Signale können verändern, welche Zusammenarbeit als denkbar gilt. Werden daraus andere Mehrheiten, geht es anschließend um Ämter, Geld und staatliche Regeln. Das ist ein nachvollziehbarer Risikopfad, keine gemessene Wirkung dieses Auftritts. Ob Menschen seine Aussage tatsächlich so verstehen, wissen wir nicht. Ebenso wenig belegt bloße Wiederholung, dass das Publikum eine politische Behauptung für wahr hält. Entscheidend bleibt deshalb, welche Kooperationsgrenzen Söder konkret bekräftigt oder aufgibt.",
+        "editorial_assessment": "Söder erklärt eine bisherige Strategie für gescheitert. Das ist seine politische Bewertung, kein Nachweis dafür, dass Abgrenzung nutzlos wäre. Beim Publikum kann die Botschaft ankommen: Die bisherigen Grenzen sollen fallen. Genau diese Folgerung ist aber nicht ausdrücklich belegt. Nach der WDR-Beschreibung warnt er zugleich vor einer AfD-Regierung. Warum ist das trotzdem wichtig? Politische Signale können verändern, welche Zusammenarbeit als denkbar gilt. Werden daraus andere Mehrheiten, geht es anschließend um Ämter, Geld und staatliche Regeln. Das ist ein nachvollziehbarer Risikopfad, keine gemessene Wirkung dieses Auftritts. Ob Menschen seine Aussage tatsächlich so verstehen, wissen wir nicht. Ebenso wenig belegt bloße Wiederholung, dass das Publikum eine politische Behauptung für wahr hält. Entscheidend bleibt deshalb, welche Kooperationsgrenzen Söder konkret bekräftigt oder aufgibt.",
+        "fact_first_alternative": "Söder lehnt ein AfD-Verbot ab und kritisiert die bisherige Abgrenzungsstrategie; konkrete Kooperationsfolgen bleiben offen.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 2,
+          "rewrite_required": false,
+          "recommended_title": "Nach AfD-Wahlsieg: Söder lehnt Verbot ab und nennt Brandmauer-Konzept gescheitert",
+          "recommended_summary": "Söder fordert eine andere Auseinandersetzung mit der AfD; eine Zusammenarbeit ist damit nicht angekündigt.",
+          "recommended_meta_description": "Söders Absage an ein AfD-Verbot: Was belegt ist und welche Risiken eine aufgeweichte politische Abgrenzung bergen kann."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T21:54:12.765Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-814079fbdc30",
+        "slug": "soeder-afd-eine-grenze-wird-nicht-ueberfluessig",
+        "title": "Söder und die AfD: Eine Grenze wird nicht überflüssig, weil sie unter Druck steht",
+        "teaser": "Söder erklärt die bisherige Abgrenzung für gescheitert. Mich überzeugt diese Schlussfolgerung nicht: Stimmenanteile messen etwas anderes als den Schutz vor Regierungsmacht. Eine persönliche WÖk-Analyse über Signale, staatliche Hebel und die Menschen, die mögliche Folgekosten tragen.",
+        "published_at": "2026-09-09T21:54:13.108Z",
+        "updated_at": "2026-09-09T21:54:13.108Z"
+      },
+      "first_seen": "2026-09-09T21:43:00Z",
+      "last_updated": "2026-09-09T21:54:12.765Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-b6a0ea676472d871c4b1",
+      "case_file": null,
+      "source_published_at": "2026-04-11T00:00:00.000Z",
+      "published_at": "2026-09-09T21:54:12.765Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-maischberger-reference"
+          ],
+          [
+            "focus-case-research"
+          ],
+          [
+            "mi-sachsen-anhalt-context"
+          ],
+          [
+            "afd-lsa-programme-reference"
+          ],
+          [
+            "tagesschau-access"
+          ],
+          [
+            "bundesrecht-context"
+          ]
+        ],
+        "possible_independent_origins": 6,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "bundesrecht-context",
+              "bundesrecht-context"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Söders genaue Grenze zwischen Auseinandersetzung und Zusammenarbeit bleibt zu präzisieren.",
+          "source_id": "wdr-maischberger-reference",
+          "expected_by": null,
+          "measurable_indicator": "Explizite Kooperationsausschlüsse, Parteibeschlüsse und tatsächliches Abstimmungsverhalten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d5b08a72a1f54a49",
+          "announced_at": "2026-09-08",
+          "follow_up_date": "2026-09-16T21:54:12.765Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR – maischberger",
+          "url": "https://www.ardmediathek.de/video/maischberger/afd-erfolg-und-merz-unter-druck-markus-soeder-im-gespraech/wdr/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtYmZlNTEzNDktN2RmZi00MGY3LThmMTMtMGFhYTVkNjE4Yjll",
+          "source_type": "official_reference",
+          "published_at": "2026-09-08",
+          "primary_source": true
+        },
+        {
+          "publisher": "FOCUS online",
+          "url": "https://www.focus.de/politik/deutschland/soeder-gegen-afd-verbot-konzept-der-brandmauer-gescheitert_74859e02-d0c0-4887-a2ae-63b9fbaaa7cc.html",
+          "source_type": "media_discovery",
+          "published_at": "2026-09-08T20:37:00Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Verfassungsschutz Sachsen-Anhalt",
+          "url": "https://mi.sachsen-anhalt.de/verfassungsschutz/themenfelder/page/rechtsextremismus",
+          "source_type": "official_reference",
+          "published_at": null,
+          "primary_source": true
+        },
+        {
+          "publisher": "AfD Sachsen-Anhalt – Regierungsprogramm",
+          "url": "https://afd-regierungsprogramm.de/",
+          "source_type": "official_reference",
+          "published_at": "2026-04-11",
+          "primary_source": true
+        },
+        {
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/bildungssystem-afd-sachsen-anhalt-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-06-07T09:44:00Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Gesetze im Internet",
+          "url": "https://www.gesetze-im-internet.de/gg/art_21.html",
+          "source_type": "official_reference",
+          "published_at": null,
+          "primary_source": true
+        },
+        {
+          "publisher": "Gesetze im Internet",
+          "url": "https://www.gesetze-im-internet.de/bverfgg/__43.html",
+          "source_type": "official_reference",
+          "published_at": null,
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-022ed1263eac1645",
       "title_image": {
@@ -28309,6 +29372,17 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-814079fbdc30",
+      "story_id": "wt-32f0aa5f0a6a7761",
+      "slug": "soeder-afd-eine-grenze-wird-nicht-ueberfluessig",
+      "title": "Söder und die AfD: Eine Grenze wird nicht überflüssig, weil sie unter Druck steht",
+      "subtitle": "Inhaltlich streiten, Zusammenarbeit begrenzen, ein Verbot rechtlich prüfen: Das sind verschiedene Aufgaben. Warum ihre Vermischung gefährlich ist.",
+      "teaser": "Söder erklärt die bisherige Abgrenzung für gescheitert. Mich überzeugt diese Schlussfolgerung nicht: Stimmenanteile messen etwas anderes als den Schutz vor Regierungsmacht. Eine persönliche WÖk-Analyse über Signale, staatliche Hebel und die Menschen, die mögliche Folgekosten tragen.",
+      "published_at": "2026-09-09T21:54:13.108Z",
+      "updated_at": "2026-09-09T21:54:13.108Z",
+      "reading_time_minutes": 9
+    },
     {
       "analysis_id": "woek-manual-5a95096beab7baf4",
       "slug": "deutschland-2033-justus-bender",
