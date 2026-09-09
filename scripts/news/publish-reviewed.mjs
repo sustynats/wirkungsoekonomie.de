@@ -53,10 +53,18 @@ export function prepareReviewedMediaImpact(review, registry, stories, now) {
 export function prepareReviewedStory(review, registry, stories, now) {
   if (['media_impact', 'analysis_phase'].includes(review.review_type)) return prepareReviewedMediaImpact(review, registry, stories, now);
   const correction = review.review_type === 'story_correction';
-  if (!review.review_basis || !review.research_checked_at || (!correction && !review.event_key)) throw new Error("EDITORIAL_REVIEW_PROVENANCE_REQUIRED");
-  const id = correction ? review.story_id : `wt-${sha256(review.event_key).slice(0, 16)}`;
+  const draftReview = review.review_type === 'story_draft_review';
+  if (!review.review_basis || !review.research_checked_at || (!correction && !draftReview && !review.event_key)) throw new Error("EDITORIAL_REVIEW_PROVENANCE_REQUIRED");
+  const id = correction || draftReview ? review.story_id : `wt-${sha256(review.event_key).slice(0, 16)}`;
   const existing = stories.find(story => story.story_id === id);
   const reviewId = sha256(JSON.stringify(review));
+  if (draftReview) {
+    if (existing?.versions?.some(version => version.review_id === reviewId)) return { errors: [], record: existing, unchanged: true };
+    if (!existing || existing.published !== false || existing.retired || existing.redirect_to || existing.listed === false) throw new Error('EDITORIAL_DRAFT_REQUIRED');
+    if (!review.expected_content_hash || existing.content_hash !== review.expected_content_hash) throw new Error('EDITORIAL_DRAFT_INPUT_CHANGED');
+    const originalUrls = new Set(existing.sources.map(source => source.url));
+    if (!review.sources?.some(source => originalUrls.has(source.url))) throw new Error('EDITORIAL_DRAFT_EVENT_UNBOUND');
+  }
   if (correction) {
     if (!existing?.published || !review.correction_note) throw new Error('EDITORIAL_CORRECTION_STORY_REQUIRED');
     if (existing.versions?.some(version => version.review_id === reviewId)) return { errors: [], record: existing, unchanged: true };
@@ -79,10 +87,11 @@ export function prepareReviewedStory(review, registry, stories, now) {
   // not the provisional discovery ledger whose IDs disappear on publication.
   if (analysis.visuals) analysis.visuals = sanitizeVisuals(analysis.visuals, { ...candidate, analysis,
     claims: analysis.event_claims ? persistClaimEvidence(analysis, candidate, now) : candidate.claims }).visuals;
-  const errors = [...candidate.source_integrity.issues.map(issue => issue.code), ...validateAnalysis(analysis, candidate, { requireDirectionAssessment: correction })];
+  const errors = [...candidate.source_integrity.issues.map(issue => issue.code), ...validateAnalysis(analysis, candidate, { requireDirectionAssessment: correction || draftReview })];
   if (errors.length) return { errors, candidate };
   const record = publishedRecord(candidate, analysis, { provider: "editorial_review", model: "source_bound_review", mode: "editorial_review", method_sources: review.method_sources }, now);
-  if (correction) record.versions.at(-1).review_id = reviewId;
+  if (correction || draftReview) record.versions.at(-1).review_id = reviewId;
+  if (draftReview) record.editorial_draft_review = { previous_content_hash: existing.content_hash, review_id: reviewId, reviewed_at: now, source_urls: existing.sources.map(source => source.url) };
   record.editorial_review = { research_checked_at: review.research_checked_at, basis: review.review_basis, original_event_date: review.original_event_date, exclusions: review.exclusions || [] };
   if (review.correction_note && existing && existing.content_hash !== candidate.content_hash) {
     if (typeof review.correction_note !== "string" || review.correction_note.length > 1500) throw new Error("EDITORIAL_CORRECTION_NOTE_INVALID");
