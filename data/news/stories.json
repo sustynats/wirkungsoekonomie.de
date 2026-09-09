@@ -1,8 +1,1130 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-09T15:07:11.339Z",
-  "updated_at": "2026-09-09T15:07:11.339Z",
+  "public_updated_at": "2026-09-09T15:48:55.143Z",
+  "updated_at": "2026-09-09T15:48:55.143Z",
   "stories": [
+    {
+      "story_id": "wt-9e17a927dc44491c",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "e5ee3438331aebbaedfe9887a664cd4e30ceed0f2a39a1629db03b6d385b10b0",
+        "first_failed_at": "2026-09-09T15:48:55.143Z",
+        "failed_at": "2026-09-09T15:48:55.143Z",
+        "retry_after": "2026-09-09T16:03:55.143Z",
+        "retry_count": 1
+      },
+      "slug": "haushaltsentwurf-eine-gigantische-neuverschuldung-und-viele-fragezeichen-44491c",
+      "title": "Haushaltsentwurf - Eine gigantische Neuverschuldung und viele Fragezeichen",
+      "first_seen": "2026-09-09T15:40:00.000Z",
+      "last_updated": "2026-09-09T15:40:00.000Z",
+      "topic": [
+        "Finanzen",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-wirtschaft",
+          "publisher": "Deutschlandfunk - Wirtschaft",
+          "url": "https://www.deutschlandfunk.de/bundeshaushalt-investitionen-neuverschuldung-klingbeil-kommentar-100.html",
+          "title": "Haushaltsentwurf - Eine gigantische Neuverschuldung und viele Fragezeichen",
+          "summary": "Der Staat hat viel Geld in die Hand genommen, um die Missstände in Deutschland anzugehen. Dabei bleiben aber viele Fragen offen: Entfacht das Geld nur ein konjunkturelles Strohfeuer? Werden Lücken gestopft, statt in Infrastruktur investiert? Von Jörg Münchenberg",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:40:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "b831a9e029415256a364e351bdb1707a325af41265e0d02edbcebfa03f2463a8",
+          "source_item_id": "abb08682b20e641341c6039e55ad1e861fcfa67e0434328ca908c4f62bb0de03",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T15:40:00.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-9e17a927dc44491c-claim-01",
+          "story_id": "wt-9e17a927dc44491c",
+          "claim": "Haushaltsentwurf - Eine gigantische Neuverschuldung und viele Fragezeichen: Der Staat hat viel Geld in die Hand genommen, um die Missstände in Deutschland anzugehen. Dabei bleiben aber viele Fragen offen: Entfacht das Geld nur ein konjunkturelles Strohfeuer? Werden Lücken gestopft, statt in Infrastruktur investiert? Von Jörg Münchenberg",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-wirtschaft",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        }
+      ],
+      "content_hash": "71e4ec6cdf43bfabc3e62e6d1c50cfb7bad68945ebe25c869d6f08863c282961",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_DIRECTION_MIXED_PATHS_REQUIRED:human",
+        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:positive_path",
+        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:negative_path",
+        "AI_DIRECTION_PATH_REFERENCE_INVALID:human",
+        "AI_DIRECTION_PATH_REFERENCE_INVALID:planet",
+        "AI_DIRECTION_BASIS_INVALID:democracy",
+        "AI_DIRECTION_PATH_REFERENCE_INVALID:democracy"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-09T16:03:55.143Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-09T15:48:55.143Z",
+      "event_first_seen_at": "2026-09-09T15:48:55.143Z",
+      "event_detected_at": "2026-09-09T15:48:55.143Z",
+      "event_id": "event-1d307602966180387331",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Finanzen",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 8.91905,
+        "detection_delay_minutes": 8.91905,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T15:48:55.143Z",
+        "fingerprint": "23708862b1ef563aad158807d1ce9a8cefe191b774543318aa1755f6df326a42",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-2da094087250b4e5",
+      "slug": "insolvenzen-diese-fehler-zwingen-autohandler-in-die-knie-50b4e5",
+      "title": "Insolvenzen: Diese Fehler zwingen Autohändler in die Knie",
+      "first_seen": "2026-09-09T15:37:13.000Z",
+      "last_updated": "2026-09-09T15:37:13.000Z",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/auto/autohaendler-insolvenzen-warum-viele-unternehmen-scheitern/100253127.html",
+          "title": "Insolvenzen: Diese Fehler zwingen Autohändler in die Knie",
+          "summary": "Die Insolvenzen häufen sich – als Gründe nennen die Händler oft steigende Kosten oder Kaufzurückhaltung. Doch auch Managementfehler spielen eine Rolle.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:37:13.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "977ed1eb3ea4375e9cb758e878088019bbfbc87d451a00f6db73beee66578257",
+          "source_item_id": "8ddcd2d565444d10f1be9f0a676dd9e6756a5b8d075cd3e2faa2cc447e50cb3b",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T15:37:13.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2da094087250b4e5-claim-01",
+          "story_id": "wt-2da094087250b4e5",
+          "claim": "Insolvenzen: Diese Fehler zwingen Autohändler in die Knie: Die Insolvenzen häufen sich – als Gründe nennen die Händler oft steigende Kosten oder Kaufzurückhaltung. Doch auch Managementfehler spielen eine Rolle.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        }
+      ],
+      "content_hash": "b48d10801b513535c14a44ff1740d8bfaf28ebfc07dd33e3645951dda36f572b",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-09T15:48:55.143Z",
+      "event_first_seen_at": "2026-09-09T15:48:55.143Z",
+      "event_detected_at": "2026-09-09T15:48:55.143Z",
+      "event_id": "event-ee4a342a60003a3ff63e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 11.702383333333334,
+        "detection_delay_minutes": 11.702383333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T15:48:55.143Z",
+        "fingerprint": "e6fa5b87e8425342ee58994db685ae974e1494a79f0136baf515947d42ea1158",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-878980c9ef12690f",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "c7050d7db11e782dd3d2e2d9c84871a75ba9234b0ebcc1597f645e1e69444595",
+        "first_failed_at": "2026-09-09T15:48:55.143Z",
+        "failed_at": "2026-09-09T15:48:55.143Z",
+        "retry_after": "2026-09-09T16:03:55.143Z",
+        "retry_count": 1
+      },
+      "slug": "daniel-v-kommt-nach-strom-sabotage-in-haft-12690f",
+      "title": "Daniel V. kommt nach Strom-Sabotage in Haft",
+      "first_seen": "2026-09-09T15:32:08.000Z",
+      "last_updated": "2026-09-09T15:32:08.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/aachen-eifel/staedteregion-aachen/strom-saboteur-daniel-v-mutmasslich-amtsgericht-aachen-haftbefehl-100.html",
+          "title": "Daniel V. kommt nach Strom-Sabotage in Haft",
+          "summary": "Einen Tag nach der Festnahme des mutmaßlichen Strom-Saboteurs Daniel V. wurde er in Aachen dem Haftrichter vorgeführt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:32:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "656a60210cf6181c076d5dedf4f224ebbad04adad5d3645d6015da60df2bee8d",
+          "source_item_id": "d97d322ea6a6f72a0b2f3284419e0323fc3cde890e811bdddda2afab344a20de",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T15:32:08.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-878980c9ef12690f-claim-01",
+          "story_id": "wt-878980c9ef12690f",
+          "claim": "Daniel V. kommt nach Strom-Sabotage in Haft: Einen Tag nach der Festnahme des mutmaßlichen Strom-Saboteurs Daniel V. wurde er in Aachen dem Haftrichter vorgeführt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        }
+      ],
+      "content_hash": "53cb785b35832b7891eb1d21741a9b372d1607113ab56cf760c1448a2f4f6259",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-09T16:03:55.143Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-09T15:48:55.143Z",
+      "event_first_seen_at": "2026-09-09T15:48:55.143Z",
+      "event_detected_at": "2026-09-09T15:48:55.143Z",
+      "event_id": "event-6f5d43cf749e714f158c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.785716666666666,
+        "detection_delay_minutes": 16.785716666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T15:48:55.143Z",
+        "fingerprint": "8b479c65c8f7b6e2fefbc990f33051e3b6480e048d6d32314767935df9d72bbb",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-fd7c0cd7ceb4b85c",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "a3fc7df871b28870f34d1d194d628f52cd53a4e1bcb896e9b012e928b80a0691",
+        "first_failed_at": "2026-09-09T15:48:55.143Z",
+        "failed_at": "2026-09-09T15:48:55.143Z",
+        "retry_after": "2026-09-09T16:03:55.143Z",
+        "retry_count": 1
+      },
+      "slug": "ndr-info-15-00-09-09-2026-b4b85c",
+      "title": "NDR Info 15:00 | 09.09.2026",
+      "first_seen": "2026-09-09T13:12:31.000Z",
+      "last_updated": "2026-09-09T15:30:40.000Z",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/NDR-Info-1500,ndrinfo-17018.html",
+          "title": "NDR Info 15:00 | 09.09.2026",
+          "summary": "Die Nachrichten für den Norden: Merz äussert sich zu Wahlergebnis in Sachsen-Anhalt / \"Aktionswoche Drogen\" bei Hamburger Polizei",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:12:31.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "b3dead627703cd63b2a6aa16a7c82d9a962d5f5dff630fba06c70339e0d1d4ce",
+          "source_item_id": "e9f0268bf1ad5213765e65397b0594c8e3558fd81b3a85e266e4a4614fd42f2b",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T13:12:31.000Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/NDR-Info-1600,ndrinfo-17032.html",
+          "title": "NDR Info 16:00 | 09.09.2026",
+          "summary": "Die Nachrichten für den Norden: Hamburger Rettungskräfte pben Katastrophenfall / Hochschule Osnabrück forscht an Brokkoli",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T14:42:34.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "5ae3a881fd9313fb6a2d3b3113e523ea1ca6074eec395d2ee4fc3d80d0ed6f23",
+          "source_item_id": "1d77030959e35956c15b431963299cf5a29efdbad2f6c308cf004620b5515104",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T14:42:34.000Z",
+          "ingested_at": "2026-09-09T15:07:11.339Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/NDR-Info-1700,ndrinfo-17046.html",
+          "title": "NDR Info 17:00 | 09.09.2026",
+          "summary": "Die Nachrichten für den Norden: Generaldebatte im Bundestag / Norwegen verabschiedet König Harald V.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:30:40.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "7137fbf30673965eef9b46607e5fabfa74a9eda75ab0019c3eff52af08ea0976",
+          "source_item_id": "9ec147234a43b59b5cfbd01b17d062de7efd8736a3b4cf2ccb68613c9f64dc89",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T15:30:40.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-fd7c0cd7ceb4b85c-claim-01",
+          "story_id": "wt-fd7c0cd7ceb4b85c",
+          "claim": "NDR Info 15:00 | 09.09.2026: Die Nachrichten für den Norden: Merz äussert sich zu Wahlergebnis in Sachsen-Anhalt / \"Aktionswoche Drogen\" bei Hamburger Polizei",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        },
+        {
+          "claim_id": "wt-fd7c0cd7ceb4b85c-claim-02",
+          "story_id": "wt-fd7c0cd7ceb4b85c",
+          "claim": "NDR Info 16:00 | 09.09.2026: Die Nachrichten für den Norden: Hamburger Rettungskräfte pben Katastrophenfall / Hochschule Osnabrück forscht an Brokkoli",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        },
+        {
+          "claim_id": "wt-fd7c0cd7ceb4b85c-claim-03",
+          "story_id": "wt-fd7c0cd7ceb4b85c",
+          "claim": "NDR Info 17:00 | 09.09.2026: Die Nachrichten für den Norden: Generaldebatte im Bundestag / Norwegen verabschiedet König Harald V.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        }
+      ],
+      "content_hash": "c154d97ba68dd20c8e3050a18b27c0552739e7e9e16259ff466e5059a5e9de3d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T16:03:55.143Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T15:48:55.143Z",
+      "event_first_seen_at": "2026-09-09T13:22:48.629Z",
+      "event_detected_at": "2026-09-09T13:22:48.629Z",
+      "event_id": "event-c8b007bb9bf025dc874e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/info/NDR-Info-1500,ndrinfo-17018.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie",
+          "Politik"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.252383333333334,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 146.10856666666666,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T15:48:55.143Z",
+        "fingerprint": "3536fd41961bac2ceecfc5e04db6b1b7672c026586de4222caa656699a39fc5d",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T15:48:55.143Z",
+      "rejection": {
+        "at": "2026-09-09T15:48:55.143Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-cbd080a75231083f",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "c1fcecf49ceeade8a2fcb045d7eed647b63c5a2b8af24e6956cf169959bbce43",
+        "first_failed_at": "2026-09-09T15:48:55.143Z",
+        "failed_at": "2026-09-09T15:48:55.143Z",
+        "retry_after": "2026-09-09T16:03:55.143Z",
+        "retry_count": 1
+      },
+      "slug": "kritik-an-geplanter-reform-der-notfallversorgung-31083f",
+      "title": "Kritik an geplanter Reform der Notfallversorgung",
+      "first_seen": "2026-09-09T15:22:00.000Z",
+      "last_updated": "2026-09-09T15:22:00.000Z",
+      "topic": [
+        "Gesundheit",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "bundestag-hib",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1211108",
+          "title": "Kritik an geplanter Reform der Notfallversorgung",
+          "summary": "Gesundheit/Anhörung Eine Reform der Notfallversorgung wird von Fachverbänden als dringend erforderlich angesehen, der Gesetzentwurf der Bundesregierung dazu stößt allerdings teilweise auf Kritik.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-09T15:22:00.000Z",
+          "primary_source": true,
+          "source_priority": 96,
+          "source_topic": "Politik",
+          "content_hash": "b21078b38ff84f60974511f05080547ad819d6f179f060be1573ae1319aaf3f4",
+          "source_item_id": "ecd67c9ec686810bbe48e68609556a184698b5eafdf170a72af5eb177bbbaf0f",
+          "publisher_id": "bundestag",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T15:22:00.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-cbd080a75231083f-claim-01",
+          "story_id": "wt-cbd080a75231083f",
+          "claim": "Kritik an geplanter Reform der Notfallversorgung: Gesundheit/Anhörung Eine Reform der Notfallversorgung wird von Fachverbänden als dringend erforderlich angesehen, der Gesetzentwurf der Bundesregierung dazu stößt allerdings teilweise auf Kritik.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "bundestag-hib",
+          "source_function": "institutional_statement",
+          "status": "primary_source_claim",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Primärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        }
+      ],
+      "content_hash": "2829c5546e1945b83a6dc819d51c3c93e639f5b525d7dacd0e5e87dd8b2ccefd",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_DIRECTION_MIXED_PATHS_REQUIRED:human",
+        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:positive_path",
+        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:negative_path",
+        "AI_DIRECTION_PATH_REFERENCE_INVALID:human",
+        "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
+        "AI_DIRECTION_PATH_REFERENCE_INVALID:planet",
+        "AI_DIRECTION_MIXED_PATHS_REQUIRED:democracy",
+        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:positive_path",
+        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:negative_path",
+        "AI_DIRECTION_PATH_REFERENCE_INVALID:democracy",
+        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-09T16:03:55.143Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-09T15:48:55.143Z",
+      "event_first_seen_at": "2026-09-09T15:48:55.143Z",
+      "event_detected_at": "2026-09-09T15:48:55.143Z",
+      "event_id": "event-3da7a198cdb7786b6add",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesundheit",
+          "Politik"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "Entwurf",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "material_proposal"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 26.91905,
+        "detection_delay_minutes": 26.91905,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T15:48:55.143Z",
+        "fingerprint": "17b2e3b8d2bc853377c96456982349cd6084b1d409dd184d6630c0d099f78408",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-ab5e050bb06acf95",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "e83295fefbd5573631b891fb046521cef692a9fbb49512aaa9d7b1f86e8f1f1a",
+        "first_failed_at": "2026-09-09T15:48:55.143Z",
+        "failed_at": "2026-09-09T15:48:55.143Z",
+        "retry_after": "2026-09-09T16:03:55.143Z",
+        "retry_count": 1
+      },
+      "slug": "ukraine-krieg-rechnungshof-moniert-stockende-energiewende-in-der-eu-6acf95",
+      "title": "Ukraine-Krieg: Rechnungshof moniert stockende Energiewende in der EU",
+      "first_seen": "2026-09-09T15:17:00.000Z",
+      "last_updated": "2026-09-09T15:17:00.000Z",
+      "topic": [
+        "Energie",
+        "Europa",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/wirtschaft/ukraine-krieg-rechnungshof-moniert-stockende-energiewende-in-der-eu-a-d716c391-e79f-497e-aaee-375b60fd5e9c",
+          "title": "Ukraine-Krieg: Rechnungshof moniert stockende Energiewende in der EU",
+          "summary": "Mit dem Geld sollten die EU-Länder unabhängig von Russland werden: 300 Milliarden hatte Brüssel für die Energiewende bereitgestellt. Doch die Mitgliedstaaten nutzten nur wenig davon. Das rächt sich jetzt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:17:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4941d78e540086d497858438421f187714cd6801c6cf2233839ece77603e4f29",
+          "source_item_id": "9dbf57988455c9902b481d83a8ef92c7a309f61bd7690618fd1ab6c31e2fd2cd",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T15:17:00.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ab5e050bb06acf95-claim-01",
+          "story_id": "wt-ab5e050bb06acf95",
+          "claim": "Ukraine-Krieg: Rechnungshof moniert stockende Energiewende in der EU: Mit dem Geld sollten die EU-Länder unabhängig von Russland werden: 300 Milliarden hatte Brüssel für die Energiewende bereitgestellt. Doch die Mitgliedstaaten nutzten nur wenig davon. Das rächt sich jetzt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        }
+      ],
+      "content_hash": "8288dff37d99bb72437c2c15666fba9d5d903999c966cd152f7420ef284d60ee",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T16:03:55.143Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T15:48:55.143Z",
+      "event_first_seen_at": "2026-09-09T15:48:55.143Z",
+      "event_detected_at": "2026-09-09T15:48:55.143Z",
+      "event_id": "event-a6a35c0d86436cfcefe8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 50,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie",
+          "Europa",
+          "Geopolitik"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 31.91905,
+        "detection_delay_minutes": 31.91905,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 87,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T15:48:55.143Z",
+        "fingerprint": "7953b36bfcbb060c7dabf13db26b8bf7c7588c94899fa697e5eaf2d1fbcf63c8",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T15:48:55.143Z",
+      "rejection": {
+        "at": "2026-09-09T15:48:55.143Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-11f6284a784703ee",
+      "slug": "france-s-far-right-national-rally-fires-policeman-from-security-team-over-racist-sexist--4703ee",
+      "title": "France's far-right National Rally fires policeman from security team over racist, sexist comments",
+      "first_seen": "2026-09-09T15:16:02.000Z",
+      "last_updated": "2026-09-09T15:16:02.000Z",
+      "topic": [
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/france/20260909-france-s-far-right-national-rally-fires-policeman-from-security-team-over-racist-sexist-comments",
+          "title": "France's far-right National Rally fires policeman from security team over racist, sexist comments",
+          "summary": "France's far-right National Rally (RN) has expelled a policeman from its ranks after bodycam footage of him making racist, homophobic and sexist remarks was published on Wednesday. The controversy threatens to revive scrutiny of the party's efforts to distance itself from its extremist past ahead of next year's presidential election.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:16:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "6839c493db690a02c655da4609ce7d924f8458483b60365daef50cf3049ad6ba",
+          "source_item_id": "bd390f39c0d2ff51e375914e9f69ef7d48428191556ef22a3d11ee32a335e781",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T15:16:02.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-11f6284a784703ee-claim-01",
+          "story_id": "wt-11f6284a784703ee",
+          "claim": "France's far-right National Rally fires policeman from security team over racist, sexist comments: France's far-right National Rally (RN) has expelled a policeman from its ranks after bodycam footage of him making racist, homophobic and sexist remarks was published on Wednesday. The controversy threatens to revive scrutiny of the party's efforts to distance itself from its extremist past ahead of next year's presidential election.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        }
+      ],
+      "content_hash": "46739c377fd5823fdb6f663b602ccc05da3241d0387f3c74ebc5cdb9301f9b8a",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-09T15:48:55.143Z",
+      "event_first_seen_at": "2026-09-09T15:48:55.143Z",
+      "event_detected_at": "2026-09-09T15:48:55.143Z",
+      "event_id": "event-13cfec7382bbb3c7d012",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 32.88571666666667,
+        "detection_delay_minutes": 32.88571666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 93,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T15:48:55.143Z",
+        "fingerprint": "94c8b581954d666302a21ddf526c74f95c74b7635f5e92814c7322372e08197b",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-5d9f4bf00c16b314",
       "slug": "grune-fordern-faires-gewerbemietrecht-16b314",
@@ -1041,6 +2163,199 @@
       "retirement_history": []
     },
     {
+      "story_id": "wt-f6c8def394d52291",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "54f56e1341e4cf110a823bccef352cb15bafa82ae58ef5f1ebcf37f5728267b8",
+        "first_failed_at": "2026-09-09T07:06:43.209Z",
+        "failed_at": "2026-09-09T07:06:43.209Z",
+        "retry_after": "2026-09-09T07:21:43.209Z",
+        "retry_count": 1
+      },
+      "slug": "borse-dax-im-minus-beiersdorf-aktie-im-blick-wall-street-unter-druck-olpreise-ziehen-wei-d52291",
+      "title": "Börse: Dax im Minus, Beiersdorf-Aktie im Blick, Wall Street unter Druck, Ölpreise ziehen weiter an",
+      "first_seen": "2026-09-09T06:56:00.000Z",
+      "last_updated": "2026-09-09T15:11:00.000Z",
+      "topic": [
+        "Politik",
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "manager-magazin-news",
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/finanzen/boerse/boerse-dax-im-minus-beiersdorf-aktie-im-blick-wall-street-unter-druck-oelpreise-ziehen-weiter-an-a-96974463-c6d8-446a-b350-3649808ac481",
+          "title": "Börse: Ölpreis über 100 Dollar, Dax verliert fast 500 Punkte, Wall Street schwächer",
+          "summary": "Die Börsen bleiben im Würgegriff der hohen Energiepreise: An der Wall Street geben die Kurse nach, der Dax baut seine Verluste aus und verliert in der Spitze fast 500 Punkte. Im Börsenoberhaus steht kaum noch ein Wert im Plus.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:11:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "455fc5c3492a64aa87137576d95598188980652a6e957dacf21fcc740bbc688e",
+          "source_item_id": "61d586e0ab67270dbe6ab3994d70bfd9f5db7a870817d7400cc64917f323af81",
+          "publisher_id": "manager-magazin",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T15:11:00.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:manager-magazin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/wirtschaft-oelpreis-steigt-auf-ueber-100-dollar,audio-3467118.html",
+          "title": "Ölpreis steigt auf über 100 Dollar",
+          "summary": "Der Ölpreis ist am Morgen wegen der weiteren militärischen Eskalation am Persischen Golf gestiegen. Grund ist die Sorge vor Lieferunterbrechungen aus dem Nahen Osten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:53:33.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "a270f9a066e5cd3194ad203a1f3b501f98d07acaa958b5d925eafc04fe814e4d",
+          "source_item_id": "3f884c0b9d018a6e1bcfbbb9e4e8eb13d561aaf2019f517e297ad450b31c9f6b",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T13:53:33.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f6c8def394d52291-claim-01",
+          "story_id": "wt-f6c8def394d52291",
+          "claim": "Börse: Ölpreis über 100 Dollar, Dax verliert fast 500 Punkte, Wall Street schwächer: Die Börsen bleiben im Würgegriff der hohen Energiepreise: An der Wall Street geben die Kurse nach, der Dax baut seine Verluste aus und verliert in der Spitze fast 500 Punkte. Im Börsenoberhaus steht kaum noch ein Wert im Plus.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "manager-magazin-news",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:manager-magazin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        },
+        {
+          "claim_id": "wt-f6c8def394d52291-claim-02",
+          "story_id": "wt-f6c8def394d52291",
+          "claim": "Ölpreis steigt auf über 100 Dollar: Der Ölpreis ist am Morgen wegen der weiteren militärischen Eskalation am Persischen Golf gestiegen. Grund ist die Sorge vor Lieferunterbrechungen aus dem Nahen Osten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        }
+      ],
+      "content_hash": "db4e36eff3499264e9714c5ce4bec815335456e00a03c8808f0aad5e27ead42c",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-09T15:48:55.143Z",
+      "event_first_seen_at": "2026-09-09T07:06:43.209Z",
+      "event_detected_at": "2026-09-09T07:06:43.209Z",
+      "event_id": "event-ba7496e9ab1ed3c3095f",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik",
+          "Energie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 37.91905,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 522.1989,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 92,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T15:48:55.143Z",
+        "fingerprint": "250ea86380bf1b22971976c733ee4436829d503a10bbd96dd44f59ffc2d7b61c",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
       "story_id": "wt-0158090dd70e734e",
       "slug": "nach-anschlagen-auf-stromversorgung-verdachtiger-in-untersuchungshaft-0e734e",
       "title": "Nach Anschlägen auf Stromversorgung: Verdächtiger in Untersuchungshaft",
@@ -1624,6 +2939,104 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-09T15:14:21.349Z",
         "status": "generated"
+      },
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "fc87810c71e59e245db8a65dc70e56b9187c60575f1c1df5457caf8cb68abc8d",
+        "first_failed_at": "2026-09-09T15:48:55.143Z",
+        "failed_at": "2026-09-09T15:48:55.143Z",
+        "retry_after": "2026-09-09T16:03:55.143Z",
+        "retry_count": 1
+      },
+      "pending_update": {
+        "detected_at": "2026-09-09T15:48:55.143Z",
+        "content_hash": "256dc193de0d762e568940d386cc5488a11cbea5cc80aad4e24c54f501c9486c",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/nach-anschlaegen-auf-stromversorgung--verdaechtiger-in-untersuchungshaft-38229028.html",
+            "title": "Nach Anschlägen auf Stromversorgung: Verdächtiger in Untersuchungshaft",
+            "summary": "Nach den Anschlägen auf Umspannwerke und Sabotageversuchen an der Stromversorgung in mehreren Bundesländern sitzt der 48-jährige Tatverdächtigen nun in Untersuchungshaft. Das Amtsgericht Aachen habe den Haftbefehl gegen den Mann am Mittwoch in Vollzug gesetzt, sagte ein Sprecher der Staatsanwaltschaft Cottbus der Nachrichtenagentur AFP. Er werde nun in eine Justizvollzugsanstalt in der Region gebracht und zu einem späteren Zeitpunkt nach Cottbus überstellt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-09T14:48:50.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "03f40a386af43ad5d39645f6d973d97be4fda41629a91bca6440afa00e3f70f7",
+            "source_item_id": "c9400ae73d3ac2cd83f392cd5595dc736a44069d54fdf139667978218478b2bc",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-09T14:48:50.000Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "agency_origin": "afp",
+            "agency_origin_confidence": "high",
+            "provenance": {
+              "origin": "agency:afp",
+              "basis": "agency_attribution_in_available_text",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/nach-anschlaegen-auf-stromversorgung-verdaechtiger-in-untersuchungshaft-100.html",
+            "title": "Sabotage - Nach Anschlägen auf Stromversorgung: Verdächtiger in Untersuchungshaft",
+            "summary": "Der gestern festgenommene mutmaßliche Saboteur kommt in Untersuchungshaft.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-09T15:18:46.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "9f0cf42f6a462e339c04c9935d49a9d3e4bed30f9ef3b79d31f5702951d329a0",
+            "source_item_id": "c1d71d4fc36361cd614735fdfc19c2cce65553cc6a5b869994a701a965ea33fa",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-09T15:18:46.000Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-09T16:03:55.143Z",
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-09T15:48:55.143Z",
+          "fingerprint": "c0c6691a2e77da21b08bf90a84c831add1dcce7207dba0dd19281607d3304e87",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -1780,14 +3193,59 @@
       "story_id": "wt-c6c3a0637a8c1d5a",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "86a82c106951974eedf1a8ef89db79d2275f7a65505f7caf7e0ebe5904e3ac8d",
-        "first_failed_at": "2026-09-09T15:07:11.339Z",
-        "failed_at": "2026-09-09T15:07:11.339Z",
-        "retry_after": "2026-09-09T15:22:11.339Z",
+        "fingerprint": "0217e75c5af15acdbb0a31e3a7390290f3bcb616406e1063c3869b52b00623e7",
+        "first_failed_at": "2026-09-09T15:48:55.143Z",
+        "failed_at": "2026-09-09T15:48:55.143Z",
+        "retry_after": "2026-09-09T16:03:55.143Z",
         "retry_count": 1
       },
       "slug": "in-aachen-stromnetz-sabotage-haftbefehl-soll-verkundet-werden-8c1d5a",
       "title": "In Aachen: Stromnetz-Sabotage: Haftbefehl soll verkündet werden",
+      "queue_source_repartitions": [
+        {
+          "version": 1,
+          "at": "2026-09-09T15:48:55.143Z",
+          "retained_urls": [
+            "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/in-aachen--stromnetz-sabotage--haftbefehl-soll-verkuendet-werden-38227184.html",
+            "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/in-aachen--stromnetz-angriff--tatverdaechtiger-kommt-in-u-haft-38227184.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/berlin/dpa-in-aachen-16034039.html",
+              "title": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft",
+              "summary": "Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-09T10:29:16.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "6457c3b8d788f0cf294009b4305a146b67b72f3d89a74a81d04d7c06e5c06cca",
+              "source_item_id": "dda243522bd778e03a969396df40f058e3ff6a6fb720db1903dee38a3a436067",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-09T10:29:16.000Z",
+              "ingested_at": "2026-09-09T15:07:11.339Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        }
+      ],
       "first_seen": "2026-09-09T10:28:06.000Z",
       "last_updated": "2026-09-09T14:57:42.000Z",
       "topic": [
@@ -1828,39 +3286,6 @@
           }
         },
         {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-in-aachen-16034039.html",
-          "title": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft",
-          "summary": "Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T10:29:16.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "6457c3b8d788f0cf294009b4305a146b67b72f3d89a74a81d04d7c06e5c06cca",
-          "source_item_id": "dda243522bd778e03a969396df40f058e3ff6a6fb720db1903dee38a3a436067",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T10:29:16.000Z",
-          "ingested_at": "2026-09-09T15:07:11.339Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
           "source_id": "stern-schlagzeilen",
           "publisher": "stern",
           "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/in-aachen--stromnetz-angriff--tatverdaechtiger-kommt-in-u-haft-38227184.html",
@@ -1884,7 +3309,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T14:57:42.000Z",
-          "ingested_at": "2026-09-09T15:07:11.339Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1913,30 +3338,10 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         },
         {
           "claim_id": "wt-c6c3a0637a8c1d5a-claim-02",
-          "story_id": "wt-c6c3a0637a8c1d5a",
-          "claim": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft: Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
-        },
-        {
-          "claim_id": "wt-c6c3a0637a8c1d5a-claim-03",
           "story_id": "wt-c6c3a0637a8c1d5a",
           "claim": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft: Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
@@ -1953,22 +3358,29 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         }
       ],
-      "content_hash": "4d5859cf58f41e672cde2985352b84276437b1876ad2f571b50e4a6ad75aff22",
+      "content_hash": "d038bcabc7669c8f8682575d02806d26a14d1f632e38aa62eb6b7dee8f6321ef",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:negative_path",
+        "AI_DIRECTION_PATH_REFERENCE_INVALID:human",
+        "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
+        "AI_DIRECTION_PATH_REFERENCE_INVALID:planet",
+        "AI_DIRECTION_MIXED_PATHS_REQUIRED:democracy",
+        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:positive_path",
+        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:negative_path",
+        "AI_DIRECTION_PATH_REFERENCE_INVALID:democracy"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-09T15:22:11.339Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-09T16:03:55.143Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T15:07:11.339Z",
+      "updated_at": "2026-09-09T15:48:55.143Z",
       "event_first_seen_at": "2026-09-09T10:37:16.594Z",
       "event_detected_at": "2026-09-09T10:37:16.594Z",
       "event_id": "event-f66d6c7f3b5b653efdac",
@@ -2001,21 +3413,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 9.488983333333334,
+        "source_age_minutes": 51.21905,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 269.9124166666667,
+        "queue_age_minutes": 311.64248333333336,
         "target_publication_minutes": 60,
-        "news_freshness_score": 96,
+        "news_freshness_score": 79,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T15:07:11.339Z",
-        "fingerprint": "24a2eb1f8baaf5fb917f432a425e9fa4706d3f7696f2265520be760ff5a261e7",
+        "checked_at": "2026-09-09T15:48:55.143Z",
+        "fingerprint": "195a0cb07ff7abd9e6a590b36ba615301b2b320345b3a6c641a2cd9da81c9eea",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -2064,7 +3476,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T14:54:00.000Z",
-          "ingested_at": "2026-09-09T15:07:11.339Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2093,23 +3505,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         }
       ],
       "content_hash": "e093109614eb56e673572accb47b02705778ed1653c6f090835d9db2e5db5861",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-09T15:22:11.339Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T15:07:11.339Z",
+      "updated_at": "2026-09-09T15:48:55.143Z",
       "event_first_seen_at": "2026-09-09T15:07:11.339Z",
       "event_detected_at": "2026-09-09T15:07:11.339Z",
       "event_id": "event-b738c2b9c77fdf7e7008",
@@ -2145,20 +3554,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 13.188983333333333,
+        "source_age_minutes": 54.91905,
         "detection_delay_minutes": 13.188983333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 41.730066666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 89,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T15:07:11.339Z",
+        "checked_at": "2026-09-09T15:48:55.143Z",
         "fingerprint": "b705637e9d08ca498c1968439faa28886c71f5af3fc76565b52308205dda9151",
         "issue_codes": [],
         "warning_codes": []
@@ -2313,229 +3722,14 @@
       }
     },
     {
-      "story_id": "wt-fd7c0cd7ceb4b85c",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "fc53bbf2202982d64ecf0a049fc917d8dc2b7c8d305b0e6e9d5b370472ca140e",
-        "first_failed_at": "2026-09-09T15:07:11.339Z",
-        "failed_at": "2026-09-09T15:07:11.339Z",
-        "retry_after": "2026-09-09T15:22:11.339Z",
-        "retry_count": 1
-      },
-      "slug": "ndr-info-15-00-09-09-2026-b4b85c",
-      "title": "NDR Info 15:00 | 09.09.2026",
-      "first_seen": "2026-09-09T13:12:31.000Z",
-      "last_updated": "2026-09-09T14:42:34.000Z",
-      "topic": [
-        "Demokratie",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "ndr-info",
-          "publisher": "NDR",
-          "url": "https://www.ndr.de/nachrichten/info/NDR-Info-1500,ndrinfo-17018.html",
-          "title": "NDR Info 15:00 | 09.09.2026",
-          "summary": "Die Nachrichten für den Norden: Merz äussert sich zu Wahlergebnis in Sachsen-Anhalt / \"Aktionswoche Drogen\" bei Hamburger Polizei",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T13:12:31.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "b3dead627703cd63b2a6aa16a7c82d9a962d5f5dff630fba06c70339e0d1d4ce",
-          "source_item_id": "e9f0268bf1ad5213765e65397b0594c8e3558fd81b3a85e266e4a4614fd42f2b",
-          "publisher_id": "ndr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Norddeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T13:12:31.000Z",
-          "ingested_at": "2026-09-09T13:22:48.629Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "ndr-info",
-          "publisher": "NDR",
-          "url": "https://www.ndr.de/nachrichten/info/NDR-Info-1600,ndrinfo-17032.html",
-          "title": "NDR Info 16:00 | 09.09.2026",
-          "summary": "Die Nachrichten für den Norden: Hamburger Rettungskräfte pben Katastrophenfall / Hochschule Osnabrück forscht an Brokkoli",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T14:42:34.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "5ae3a881fd9313fb6a2d3b3113e523ea1ca6074eec395d2ee4fc3d80d0ed6f23",
-          "source_item_id": "1d77030959e35956c15b431963299cf5a29efdbad2f6c308cf004620b5515104",
-          "publisher_id": "ndr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Norddeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T14:42:34.000Z",
-          "ingested_at": "2026-09-09T15:07:11.339Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-fd7c0cd7ceb4b85c-claim-01",
-          "story_id": "wt-fd7c0cd7ceb4b85c",
-          "claim": "NDR Info 15:00 | 09.09.2026: Die Nachrichten für den Norden: Merz äussert sich zu Wahlergebnis in Sachsen-Anhalt / \"Aktionswoche Drogen\" bei Hamburger Polizei",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "ndr-info",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
-        },
-        {
-          "claim_id": "wt-fd7c0cd7ceb4b85c-claim-02",
-          "story_id": "wt-fd7c0cd7ceb4b85c",
-          "claim": "NDR Info 16:00 | 09.09.2026: Die Nachrichten für den Norden: Hamburger Rettungskräfte pben Katastrophenfall / Hochschule Osnabrück forscht an Brokkoli",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "ndr-info",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
-        }
-      ],
-      "content_hash": "85230837fbda01d62211c529b63fd40df1c92dfe3bccdaf95cfc687dbe108dfb",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-09T15:22:11.339Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-09T15:07:11.339Z",
-      "event_first_seen_at": "2026-09-09T13:22:48.629Z",
-      "event_detected_at": "2026-09-09T13:22:48.629Z",
-      "event_id": "event-c8b007bb9bf025dc874e",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": true,
-          "time_sensitive": false,
-          "findings": [
-            {
-              "source_id": "ndr-info",
-              "url": "https://www.ndr.de/nachrichten/info/NDR-Info-1500,ndrinfo-17018.html",
-              "signals": [
-                "election_result"
-              ],
-              "time_sensitive": false,
-              "basis": "local_review_signal_not_verified_fact"
-            }
-          ]
-        },
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Demokratie",
-          "Politik"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 24.622316666666666,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 104.3785,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 95,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-09T15:07:11.339Z",
-        "fingerprint": "828a258d6f488a7e9d02f4905dba3945cc4330cb9a1514be719bb18bd1dea685",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-09T15:07:11.339Z",
-      "rejection": {
-        "at": "2026-09-09T15:07:11.339Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
-        ]
-      }
-    },
-    {
       "story_id": "wt-4b4b99910263de4e",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
         "fingerprint": "7843ae9d4ce2cb617f8ac3b1c6ce8be7f6ed7475ade61009217c8744b0b89d22",
         "first_failed_at": "2026-09-09T15:07:11.339Z",
-        "failed_at": "2026-09-09T15:07:11.339Z",
-        "retry_after": "2026-09-09T15:22:11.339Z",
-        "retry_count": 1
+        "failed_at": "2026-09-09T15:48:55.143Z",
+        "retry_after": "2026-09-09T16:18:55.143Z",
+        "retry_count": 2
       },
       "slug": "uni-klinik-rostocker-chefarzt-darf-weiter-nebentatigkeit-in-berlin-ausuben-63de4e",
       "title": "Uni-Klinik: Rostocker Chefarzt darf weiter Nebentätigkeit in Berlin ausüben",
@@ -2598,23 +3792,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         }
       ],
       "content_hash": "92d3957cb25c375cbd2e65e84f2d8246f17973b544a2850cd871e6f7d2cda630",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
-        "AI_DIRECTION_BASIS_INVALID:democracy"
+        "AI_DIRECTION_BASIS_INVALID:democracy",
+        "AI_SUMMARY_SENTENCE_COUNT"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-09T15:22:11.339Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-09T16:18:55.143Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T15:07:11.339Z",
+      "updated_at": "2026-09-09T15:48:55.143Z",
       "event_first_seen_at": "2026-09-09T15:07:11.339Z",
       "event_detected_at": "2026-09-09T15:07:11.339Z",
       "event_id": "event-813dc087391da76942d0",
@@ -2651,20 +3845,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 28.188983333333333,
+        "source_age_minutes": 69.91905,
         "detection_delay_minutes": 28.188983333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 41.730066666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 85,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T15:07:11.339Z",
+        "checked_at": "2026-09-09T15:48:55.143Z",
         "fingerprint": "53f180d6ed23ae999991e650ecc625f7670dae13db2445c3874cdc8867b1bb37",
         "issue_codes": [],
         "warning_codes": []
@@ -3749,23 +4943,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         }
       ],
       "content_hash": "5f93aeea95bb582b8e7115312fe10c50bbf4dc55a881346675223282a700700a",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:negative_path",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:human"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-09T15:37:11.339Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T15:07:11.339Z",
+      "updated_at": "2026-09-09T15:48:55.143Z",
       "event_first_seen_at": "2026-09-09T14:22:42.868Z",
       "event_detected_at": "2026-09-09T14:22:42.868Z",
       "event_id": "event-da993a223c2de8bf5932",
@@ -3801,20 +4992,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 64.52231666666667,
+        "source_age_minutes": 106.25238333333333,
         "detection_delay_minutes": 20.0478,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 44.474516666666666,
+        "queue_age_minutes": 86.20458333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 87,
+        "news_freshness_score": 78,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T15:07:11.339Z",
+        "checked_at": "2026-09-09T15:48:55.143Z",
         "fingerprint": "b867f1c9c5989ac9c04c62a9825c1171cb0307ecc1d19ba26cba8393819b34fb",
         "issue_codes": [],
         "warning_codes": []
@@ -5070,7 +6261,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
           "issue_codes": [],
           "warning_codes": []
@@ -6136,7 +7327,7 @@
             "research_lane": "blindspot",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T10:37:00.000Z",
-            "ingested_at": "2026-09-09T14:36:54.381Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -6190,7 +7381,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "6800dd4678a1daebc2239235102cf004811ce09df5f17fea0430a380b63dc6e5",
           "issue_codes": [],
           "warning_codes": []
@@ -7039,7 +8230,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "635765e0c1512e4449c8c41cda8a1c92bfba5cb2f323696d81db1ac8fb26906f",
           "issue_codes": [],
           "warning_codes": []
@@ -8124,7 +9315,7 @@
             "research_lane": "blindspot",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T10:32:17.000Z",
-            "ingested_at": "2026-09-09T14:36:54.381Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -8145,7 +9336,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "79767aab7a20598ca614fc887e41bbb52c5720b2315f91fecd1bd555a06bfa08",
           "issue_codes": [],
           "warning_codes": []
@@ -10185,7 +11376,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T04:07:00.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -10206,7 +11397,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "5bf0079782476452cd4b50422972aafc1839912b11c42105b8258dcb924a055a",
           "issue_codes": [],
           "warning_codes": []
@@ -11487,7 +12678,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T13:40:00.000Z",
-          "ingested_at": "2026-09-09T15:07:11.339Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -11520,7 +12711,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T13:53:33.000Z",
-          "ingested_at": "2026-09-09T15:07:11.339Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -11549,7 +12740,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         },
         {
           "claim_id": "wt-374253ee22113774-claim-02",
@@ -11569,7 +12760,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         }
       ],
       "content_hash": "9d7f7b513dc672740999cb8b95607af43ff0532c65bbdb887b9c20d05f863778",
@@ -11582,7 +12773,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T15:07:11.339Z",
+      "updated_at": "2026-09-09T15:48:55.143Z",
       "event_first_seen_at": "2026-09-09T13:52:25.740Z",
       "event_detected_at": "2026-09-09T13:52:25.740Z",
       "event_id": "event-0c249c1d782dbf0339ae",
@@ -11616,20 +12807,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 73.63898333333333,
+        "source_age_minutes": 115.36905,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 74.75998333333334,
+        "queue_age_minutes": 116.49005,
         "target_publication_minutes": 120,
-        "news_freshness_score": 85,
+        "news_freshness_score": 76,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T15:07:11.339Z",
+        "checked_at": "2026-09-09T15:48:55.143Z",
         "fingerprint": "4946ff64362925c9a6e0ec1af7f5663d9e09728ad3b1ae92a77f194c8d4b4e6b",
         "issue_codes": [],
         "warning_codes": []
@@ -12984,7 +14175,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T03:28:00.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -13038,7 +14229,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "40edeffc10f76ac729263cf26d9219be8ce046bcc15081437c14b3359b0fdfae",
           "issue_codes": [],
           "warning_codes": []
@@ -13955,7 +15146,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T13:40:50.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -13976,7 +15167,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "89936e0172dca057489613122967481af6ae3d49f32909881997e0b915328fd0",
           "issue_codes": [],
           "warning_codes": []
@@ -14688,7 +15879,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "655dd83c6e5c040aaab34897c76dc9ad9ba2970a5bfe3514de685dd40e7ef130",
           "issue_codes": [],
           "warning_codes": []
@@ -16943,7 +18134,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "12bef0ecac03004ed3bac5de770e309ce7640b70e1f0cd67019ecc8d25bf69ca",
           "issue_codes": [],
           "warning_codes": []
@@ -17535,7 +18726,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T11:43:46.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -17556,7 +18747,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "8929b3015df414ced513859f03f8cad4fd3bda0934990cc167491e416a6eb9bd",
           "issue_codes": [],
           "warning_codes": []
@@ -18175,7 +19366,7 @@
             "title": "Bundestag - CDU-Außenpolitiker Röttgen verteidigt Ausgaben für die Ukraine, Opposition kritisiert Fokus auf Verteidigung",
             "summary": "Der Bundestag hat im Rahmen der laufenden Haushaltswoche über die Ausgaben für die Außenpolitik debattiert. Der CDU-Außenpolitiker Röttgen sprach sich für die geplante Ukraine-Hilfe in Höhe von zwölf Milliarden Euro aus.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T15:03:21.000Z",
+            "published_at": "2026-09-09T15:18:46.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -18191,8 +19382,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T15:03:21.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "source_published_at": "2026-09-09T15:18:46.000Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -18213,7 +19404,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "048d4b5df1ace727741500c513d6fd69ec26841a693cb954d5edd26a116aac6e",
           "issue_codes": [],
           "warning_codes": []
@@ -19920,7 +21111,7 @@
             "title": "Brüssel - Vorgehen gegen Airbnb und Co.: EU-Kommission schlägt Regeln für Städte vor",
             "summary": "Für Städte in der Europäischen Union soll es einheitliche Regeln geben, wie sie gegen Kurzzeitvermietungen über Plattformen wie Airbnb vorgehen können.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T15:03:21.000Z",
+            "published_at": "2026-09-09T15:18:46.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -19936,8 +21127,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T15:03:21.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "source_published_at": "2026-09-09T15:18:46.000Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -19958,7 +21149,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "db4edd9204b55c88f80b1647933f984c907e7b0d317db7719617a1d40e43aaa3",
           "issue_codes": [],
           "warning_codes": []
@@ -20573,10 +21764,10 @@
       "story_id": "wt-15665d71bdf5b2ab",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "c5c47cae494ed4904bfa7b5b5058b0d2f173b545aef6bd42a24729d48a75e2ea",
-        "first_failed_at": "2026-09-09T15:07:11.339Z",
-        "failed_at": "2026-09-09T15:07:11.339Z",
-        "retry_after": "2026-09-09T15:22:11.339Z",
+        "fingerprint": "b27c839977ee998196c3b44ebca14217a2fed7bdcfb916eefdd9fb328013b7a8",
+        "first_failed_at": "2026-09-09T15:48:55.143Z",
+        "failed_at": "2026-09-09T15:48:55.143Z",
+        "retry_after": "2026-09-09T16:03:55.143Z",
         "retry_count": 1
       },
       "slug": "statistik-zahl-der-berufspendler-bundesweit-gestiegen-munchen-hat-die-meisten-pendler-f5b2ab",
@@ -20594,7 +21785,7 @@
           "title": "Statistik - Zahl der Berufspendler bundesweit gestiegen - München hat die meisten Pendler",
           "summary": "Die Zahl der Menschen, die zur Arbeit pendeln, ist bundesweit gestiegen.",
           "source_type": "media_rss",
-          "published_at": "2026-09-09T15:03:21.000Z",
+          "published_at": "2026-09-09T15:18:46.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -20610,8 +21801,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-09T15:03:21.000Z",
-          "ingested_at": "2026-09-09T15:07:11.339Z",
+          "source_published_at": "2026-09-09T15:18:46.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -20640,25 +21831,30 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         }
       ],
       "content_hash": "1b585c479d3487577f19e53b9c8e7a5d03cbf6fccf5e5940adea9237d09e0c48",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
+        "AI_DIRECTION_MIXED_PATHS_REQUIRED:human",
+        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:positive_path",
+        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:negative_path",
         "AI_DIRECTION_PATH_REFERENCE_INVALID:human",
+        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:planet:negative_path",
         "AI_DIRECTION_PATH_REFERENCE_INVALID:planet",
         "AI_DIRECTION_PATH_REFERENCE_INVALID:democracy",
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        "AI_DETAIL_SUMMARY_LENGTH",
+        "AI_UNSUPPORTED_NUMBER:2024"
       ],
-      "quality_retry_count": 9,
-      "quality_retry_after": "2026-09-09T15:22:11.339Z",
+      "quality_retry_count": 10,
+      "quality_retry_after": "2026-09-09T16:03:55.143Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T15:07:11.339Z",
+      "updated_at": "2026-09-09T15:48:55.143Z",
       "event_first_seen_at": "2026-09-09T11:07:22.757Z",
       "event_detected_at": "2026-09-09T11:07:22.757Z",
       "event_id": "event-9d1a0cdf02447284e44d",
@@ -20693,20 +21889,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3.838983333333333,
+        "source_age_minutes": 30.152383333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 239.8097,
+        "queue_age_minutes": 281.53976666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 94,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T15:07:11.339Z",
+        "checked_at": "2026-09-09T15:48:55.143Z",
         "fingerprint": "95071ead4a28bce6ce4cde4d88f04d30ff9ef15b0ea50183251fc99d001c0418",
         "issue_codes": [],
         "warning_codes": []
@@ -22082,7 +23278,7 @@
             "research_lane": "blindspot",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T13:18:16.000Z",
-            "ingested_at": "2026-09-09T14:36:54.381Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -22103,7 +23299,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "c59a0a55d490614add5884e934619707fa8248010ff7b6737e729d894867d4f9",
           "issue_codes": [],
           "warning_codes": []
@@ -22558,18 +23754,41 @@
       ],
       "retirement_history": [],
       "title_image": {
-        "mode": "impact_card",
-        "source_visual": null,
+        "mode": "editorial",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ccfd59d3b1878889-53db34a44ab4d317-og.png",
           "width": 1200,
           "height": 630,
-          "layout": "landscape",
-          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+          "sha256": "53db34a44ab4d317263f3b2da4e6cc6cfc051ef38566fb54b98dd94eadc74530"
         },
-        "status": "fallback",
-        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T10:57:02.420Z"
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ccfd59d3b1878889-708b1716c980df26-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "708b1716c980df26d4b358f051243f99dad81c002739fe394f63f59179f1e5b9"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ccfd59d3b1878889-4a7a513127194ebf-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "4a7a513127194ebf4dd13f5c43ed72db99fbcae855e37acef38662c58160f7f5"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ccfd59d3b1878889-b96a2a6280c4e6ef-source.png",
+          "sha256": "b96a2a6280c4e6ef59ea0cde8598bd915b43ca60f98cc5ce1c43732e7c3a5c65",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-09T10:41:01.109Z"
+        },
+        "fingerprint": "650beaa236afa115f455298b5efb5eddeae0b3946dee4aa45b85418d9975ff78",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T15:55:59.750Z",
+        "status": "generated"
       },
       "pending_update": {
         "detected_at": "2026-09-09T14:06:53.157Z",
@@ -22619,11 +23838,212 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "86deecbd252448cf3f404d23db3991c67b27a1850bb9e9cacf8ab7d3a163e718",
           "issue_codes": [],
           "warning_codes": []
         }
+      }
+    },
+    {
+      "story_id": "wt-53956114ef5b04d9",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "c3110adca9896c9f6f6eb3555038c00dc8b2f4b9f14b26202a81603eb5e9f1f8",
+        "first_failed_at": "2026-09-09T15:48:55.143Z",
+        "failed_at": "2026-09-09T15:48:55.143Z",
+        "retry_after": "2026-09-09T16:03:55.143Z",
+        "retry_count": 1
+      },
+      "slug": "in-aachen-stromnetz-angriff-tatverdachtiger-kommt-in-u-haft-5b04d9",
+      "title": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft",
+      "first_seen": "2026-09-09T10:29:16.000Z",
+      "last_updated": "2026-09-09T10:29:16.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-in-aachen-16034039.html",
+          "title": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft",
+          "summary": "Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T10:29:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "6457c3b8d788f0cf294009b4305a146b67b72f3d89a74a81d04d7c06e5c06cca",
+          "source_item_id": "dda243522bd778e03a969396df40f058e3ff6a6fb720db1903dee38a3a436067",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T10:29:16.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/in-aachen--stromnetz-angriff--tatverdaechtiger-kommt-in-u-haft-38227184.html",
+          "title": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft",
+          "summary": "Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T14:57:42.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "200ce5e36824f944b62c0d6c8a634c3395390c6e820709c0493a7f25459b3522",
+          "source_item_id": "a3c12ee263c8ebcaeaba1277d650c1ffdb6c2770addd119e6cfaf0a9dd903593",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T14:57:42.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-53956114ef5b04d9-claim-01",
+          "story_id": "wt-53956114ef5b04d9",
+          "claim": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft: Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        },
+        {
+          "claim_id": "wt-53956114ef5b04d9-claim-02",
+          "story_id": "wt-53956114ef5b04d9",
+          "claim": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft: Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T15:48:55.143Z"
+        }
+      ],
+      "content_hash": "89e9fd1f8262295ee56ea55339c3e16eb0b0f473100fa3333752b9484fe2a271",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-09T16:03:55.143Z",
+      "fresh": false,
+      "versions": [],
+      "updated_at": "2026-09-09T15:48:55.143Z",
+      "event_first_seen_at": "2026-09-09T15:48:55.143Z",
+      "event_detected_at": "2026-09-09T15:48:55.143Z",
+      "event_id": "event-ed2700a7ab2249d46acc",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 56,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 51.21905,
+        "detection_delay_minutes": 51.21905,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 79,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T15:48:55.143Z",
+        "fingerprint": "dacbb5e1c9a56dd49589b5b49b523bddf47f76be3de0b6041e2ac2f2c3f572b6",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T15:48:55.143Z",
+      "rejection": {
+        "at": "2026-09-09T15:48:55.143Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -24968,7 +26388,7 @@
             "title": "PISA-Ergebnisse - Prien (CDU) fordert Alterslimit für Social Media",
             "summary": "Bundesbildungsministerin Prien sieht nach den schlechten deutschen Ergebnissen bei der PISA-Bildungsstudie Handlungsbedarf im Umgang mit Sozialen Medien.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T15:03:21.000Z",
+            "published_at": "2026-09-09T15:18:46.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -24984,8 +26404,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T15:03:21.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "source_published_at": "2026-09-09T15:18:46.000Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -25006,7 +26426,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "05c7d6c7b65da645fdfca511e81774d7cd2c9fc629c8e8f30aed8c9b9be971bb",
           "issue_codes": [],
           "warning_codes": []
@@ -26739,7 +28159,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -29425,7 +30845,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T06:00:00.000Z",
-            "ingested_at": "2026-09-09T12:22:02.228Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -29470,11 +30890,16 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_DIRECTION_BASIS_INVALID:human",
-          "AI_DIRECTION_BASIS_INVALID:democracy"
+          "AI_DIRECTION_MIXED_PATHS_REQUIRED:human",
+          "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:positive_path",
+          "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:negative_path",
+          "AI_DIRECTION_PATH_REFERENCE_INVALID:human",
+          "AI_DIRECTION_BASIS_INVALID:democracy",
+          "AI_DIRECTION_PATH_REFERENCE_INVALID:democracy",
+          "AI_SOURCE_SUMMARY_LENGTH"
         ],
-        "quality_retry_count": 4,
-        "quality_retry_after": "2026-09-09T15:22:02.228Z",
+        "quality_retry_count": 5,
+        "quality_retry_after": "2026-09-09T21:48:55.143Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -29482,7 +30907,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T12:22:02.228Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "2ebceb40b714dd10a4484776b7053c146755f3065e7d0a37abea5ad2baaa3dac",
           "issue_codes": [],
           "warning_codes": []
@@ -29492,9 +30917,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "19bb715bea19aecb51b8832931aa86fc1210d8b3cff09a7f373ad32f66ddb83d",
         "first_failed_at": "2026-09-09T10:21:42.967Z",
-        "failed_at": "2026-09-09T12:22:02.228Z",
-        "retry_after": "2026-09-09T15:22:02.228Z",
-        "retry_count": 4
+        "failed_at": "2026-09-09T15:48:55.143Z",
+        "retry_after": "2026-09-09T21:48:55.143Z",
+        "retry_count": 5
       }
     },
     {
@@ -30602,7 +32027,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T09:13:00.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -30623,7 +32048,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "694f1e59b077b9f8c608a3538526072926dbea4a48e8bb4ab446a73ab6fbc375",
           "issue_codes": [],
           "warning_codes": []
@@ -33018,7 +34443,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -33039,7 +34464,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "62b1bcd93cb96018b47dea8bf4beaacafc77c54dc90316f3ee3b26841d15c0c6",
           "issue_codes": [],
           "warning_codes": []
@@ -36253,7 +37678,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "0c59257b7f229b4525f991d215e40acd4338a0901f548bea4671dd037f615fad",
           "issue_codes": [],
           "warning_codes": []
@@ -37775,7 +39200,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T03:28:00.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -37796,7 +39221,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "bb7a5588e7ab778e0e72e6f4cccdcb1d0ae39518fdb20485129fbf53d745c3ef",
           "issue_codes": [],
           "warning_codes": []
@@ -38804,7 +40229,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "f6112de380e917fd8c2d91cb9dcaa046603d1125b68f333808b91146ca2bffb9",
           "issue_codes": [],
           "warning_codes": []
@@ -40467,7 +41892,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T06:44:10.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -40488,7 +41913,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "2d967ebef56891fb5b7db628ee84539aed5971c3f41eea66bf2a66e035ade3f0",
           "issue_codes": [],
           "warning_codes": []
@@ -41384,17 +42809,30 @@
       "retirement_history": [],
       "title_image": {
         "mode": "impact_card",
-        "source_visual": null,
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f81a621f2a1d2142-d32484e694a1d32b-og.png",
           "width": 1200,
           "height": 630,
-          "layout": "landscape",
-          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+          "sha256": "d32484e694a1d32bfa1e5b7b8d914e601ac4e53f6a35625b98295140b4b6925c"
         },
-        "status": "fallback",
-        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T10:39:16.072Z"
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f81a621f2a1d2142-2b188e7392982618-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "2b188e7392982618b7e1ba019f988b459b28fc4b26594bd3cf7cce78cb0c4fed"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f81a621f2a1d2142-ae0727b226e3c7f7-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "ae0727b226e3c7f7deefc39c4c63acf471cceb1aea14b7fa35a328068eecd53e"
+        },
+        "source_visual": null,
+        "fingerprint": "cc7defcb1b1c26cf34fb2eaff3c149ac1d6e3d3b685c3e1aa5b4dac98fcbce3a",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T15:55:45.312Z",
+        "status": "generated"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -41533,7 +42971,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T20:33:01.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -41554,158 +42992,11 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "43e263c3b728aa4d6c1579552f106ce9474e539d6af84087dbe9dfe0b503165a",
           "issue_codes": [],
           "warning_codes": []
         }
-      }
-    },
-    {
-      "story_id": "wt-f6c8def394d52291",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "54f56e1341e4cf110a823bccef352cb15bafa82ae58ef5f1ebcf37f5728267b8",
-        "first_failed_at": "2026-09-09T07:06:43.209Z",
-        "failed_at": "2026-09-09T07:06:43.209Z",
-        "retry_after": "2026-09-09T07:21:43.209Z",
-        "retry_count": 1
-      },
-      "slug": "borse-dax-im-minus-beiersdorf-aktie-im-blick-wall-street-unter-druck-olpreise-ziehen-wei-d52291",
-      "title": "Börse: Dax im Minus, Beiersdorf-Aktie im Blick, Wall Street unter Druck, Ölpreise ziehen weiter an",
-      "first_seen": "2026-09-09T06:56:00.000Z",
-      "last_updated": "2026-09-09T06:56:00.000Z",
-      "topic": [
-        "Wirtschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "manager-magazin-news",
-          "publisher": "manager magazin",
-          "url": "https://www.manager-magazin.de/finanzen/boerse/boerse-dax-im-minus-beiersdorf-aktie-im-blick-wall-street-unter-druck-oelpreise-ziehen-weiter-an-a-96974463-c6d8-446a-b350-3649808ac481",
-          "title": "Börse: Dax im Minus, Beiersdorf-Aktie im Blick, Wall Street unter Druck, Ölpreise ziehen weiter an",
-          "summary": "Im Angesicht steigender Ölpreise und neuer Eskalationen im Irankrieg halten sich Dax-Anleger am Mittwoch zurück. Beiersdorf und Aktien der Deutschen Börse stehen im Blick. Zuvor ist in den USA bereits der Dow-Jones-Index abgetaucht.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T06:56:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "e085a6cd7ac2288d75a3e99fa6641006ef0925b1fe434d5e8baae5614bfc9dc5",
-          "source_item_id": "61d586e0ab67270dbe6ab3994d70bfd9f5db7a870817d7400cc64917f323af81",
-          "publisher_id": "manager-magazin",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T06:56:00.000Z",
-          "ingested_at": "2026-09-09T07:06:43.209Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:manager-magazin",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-f6c8def394d52291-claim-01",
-          "story_id": "wt-f6c8def394d52291",
-          "claim": "Börse: Dax im Minus, Beiersdorf-Aktie im Blick, Wall Street unter Druck, Ölpreise ziehen weiter an: Im Angesicht steigender Ölpreise und neuer Eskalationen im Irankrieg halten sich Dax-Anleger am Mittwoch zurück. Beiersdorf und Aktien der Deutschen Börse stehen im Blick. Zuvor ist in den USA bereits der Dow-Jones-Index abgetaucht.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "manager-magazin-news",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:manager-magazin",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T07:06:43.209Z"
-        }
-      ],
-      "content_hash": "acadc021cf3688d25e8fe2d058a2c0d04d3746f2e1d4dae0ff69cd524ed4e017",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-09T07:21:43.209Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-09T07:06:43.209Z",
-      "event_first_seen_at": "2026-09-09T07:06:43.209Z",
-      "event_detected_at": "2026-09-09T07:06:43.209Z",
-      "event_id": "event-ba7496e9ab1ed3c3095f",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Wirtschaft"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 10.72015,
-        "detection_delay_minutes": 10.72015,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-09T07:06:43.209Z",
-        "fingerprint": "665b971e158c8b6b630b03439f30fc35a6720826f03af950b1486ece0126b57e",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-09T13:52:25.740Z",
-      "rejection": {
-        "at": "2026-09-09T13:52:25.740Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "LOCAL_RELEVANCE_BELOW_THRESHOLD"
-        ]
       }
     },
     {
@@ -42432,7 +43723,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T09:11:21.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42453,7 +43744,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "00745e32348705095e7193eb7f51b7e60e4211b36349f0379d5c458470069acb",
           "issue_codes": [],
           "warning_codes": []
@@ -44608,7 +45899,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -44629,7 +45920,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "fd023c485e0b3ed33b65d77ed5513973bc866b82062ccb744777b35c0783a309",
           "issue_codes": [],
           "warning_codes": []
@@ -45433,7 +46724,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "771af662c62e40f4e1dcbe83067df293cf64e8291cb7bc5e37aa95a5ae296855",
           "issue_codes": [],
           "warning_codes": []
@@ -46238,7 +47529,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "ce11a485ad27cd1902db1ce24ee7886675fdaf06e180aadf219a94f9f8ba4360",
           "issue_codes": [],
           "warning_codes": []
@@ -52212,7 +53503,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T11:06:00.000Z",
-            "ingested_at": "2026-09-09T12:22:02.228Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -52293,13 +53584,13 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_DIRECTION_BASIS_INVALID:planet",
           "AI_SOURCE_SUMMARY_LENGTH",
-          "CLAIM_NUMBER_NOT_IN_EVIDENCE",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "MEDIA_PUBLIC_EXPLANATION_LENGTH",
           "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
         ],
-        "quality_retry_count": 6,
-        "quality_retry_after": "2026-09-09T15:22:02.228Z",
+        "quality_retry_count": 7,
+        "quality_retry_after": "2026-09-09T21:48:55.143Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -52307,7 +53598,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T12:22:02.228Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "9a2ff324815be8589ad4f9b9c2da92337f61a5e3de8df33873410d7d1bb2b1f0",
           "issue_codes": [],
           "warning_codes": []
@@ -52317,9 +53608,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "d26099ccddc2a40dc4e1c81fb1eeafb1566f4cb853e6ff2a9e3a9ac81d30b757",
         "first_failed_at": "2026-09-09T09:37:00.628Z",
-        "failed_at": "2026-09-09T12:22:02.228Z",
-        "retry_after": "2026-09-09T15:22:02.228Z",
-        "retry_count": 4
+        "failed_at": "2026-09-09T15:48:55.143Z",
+        "retry_after": "2026-09-09T21:48:55.143Z",
+        "retry_count": 5
       }
     },
     {
@@ -53122,7 +54413,7 @@
             "title": "Krieg - Fünf Todesopfer bei neuen russischen Luftangriffen auf Kiew",
             "summary": "Bei neuen russischen Luftangriffen auf die ukrainische Hauptstadt Kiew sind nach Behördenangaben fünf Menschen getötet worden.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T15:03:21.000Z",
+            "published_at": "2026-09-09T15:18:46.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -53138,8 +54429,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T15:03:21.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "source_published_at": "2026-09-09T15:18:46.000Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -53160,7 +54451,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "3037a1d42e9e581af7193dffb83c5d5dedad0e73b1af2289d4607930fd0d5b62",
           "issue_codes": [],
           "warning_codes": []
@@ -56658,7 +57949,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:52:01.000Z",
-            "ingested_at": "2026-09-09T15:07:11.339Z",
+            "ingested_at": "2026-09-09T15:48:55.143Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -56679,7 +57970,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "1efa3fa74f2770221ef9efac103a0a38be0f98820ad08782bc080d18496d51db",
           "issue_codes": [],
           "warning_codes": []
@@ -57134,18 +58425,41 @@
       "content_hash": "af5fd62ed9e48ca4f66bd33aa32c7f1301e06ec0eb01ec960bb889b7056c685f",
       "published": true,
       "title_image": {
-        "mode": "impact_card",
-        "source_visual": null,
+        "mode": "editorial",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-366b1fbfa120e44f-d08cefbcdd561fc2-og.png",
           "width": 1200,
           "height": 630,
-          "layout": "landscape",
-          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+          "sha256": "d08cefbcdd561fc2a55da823677624c86d0697994f6d217a6963242fccf15eaa"
         },
-        "status": "fallback",
-        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T10:39:10.683Z"
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-366b1fbfa120e44f-81a44393444f6453-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "81a44393444f64533a5da0cc1cbfe5a9720cbdd31411efb6f3c11d5e9cf6f214"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-366b1fbfa120e44f-83a31eeaec5db73a-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "83a31eeaec5db73a973ae5425536f2e3603e2553a96bdad7d3365c8c2af238a6"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-366b1fbfa120e44f-5da1cf2eab292a88-source.png",
+          "sha256": "5da1cf2eab292a889eec8902b19e284dc52375b08bdb316560286d4ebbb89f41",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-08T11:25:39.433Z"
+        },
+        "fingerprint": "1728e66dc98731f7026cd02fd2ca52946e5ac5de0d9af06bec21a827739cd07c",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T15:55:38.543Z",
+        "status": "generated"
       },
       "listed": true,
       "analysis_status": "veröffentlicht",
@@ -61337,7 +62651,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "fada684c913b1511f4b664c4800c3b5ed71f9a95565753e62994fc4d1b7d2c3a",
           "issue_codes": [],
           "warning_codes": []
@@ -62327,7 +63641,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
           "issue_codes": [],
           "warning_codes": []
@@ -63613,7 +64927,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
           "issue_codes": [],
           "warning_codes": []
@@ -64544,7 +65858,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
           "issue_codes": [],
           "warning_codes": []
@@ -75339,7 +76653,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "04fad27b4d3289772b2e99292c31ee46e8833ec80b2213996da8da259f0bd90f",
           "issue_codes": [],
           "warning_codes": []
@@ -76751,7 +78065,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -83034,7 +84348,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
           "issue_codes": [],
           "warning_codes": []
@@ -86978,9 +88292,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "9e1c10e0230a132d2d571c9d5ef13f3ca584b10c2bdf91e881a0b9da1e9af753",
-        "checked_at": "2026-09-09T15:07:11.339Z",
+        "checked_at": "2026-09-09T15:48:55.143Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T21:07:11.339Z",
+        "expires_at": "2026-09-09T21:48:55.143Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -90028,7 +91342,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
           "issue_codes": [],
           "warning_codes": []
@@ -115986,9 +117300,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T15:07:11.339Z",
+        "checked_at": "2026-09-09T15:48:55.143Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T21:07:11.339Z",
+        "expires_at": "2026-09-09T21:48:55.143Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -131404,9 +132718,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "560d363cdd017c4a692ca02b042420aa4aaa09b4dc45a423ff2633b3dfc29599",
-        "checked_at": "2026-09-09T15:07:11.339Z",
+        "checked_at": "2026-09-09T15:48:55.143Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T21:07:11.339Z",
+        "expires_at": "2026-09-09T21:48:55.143Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -226977,7 +228291,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -271371,7 +272685,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:07:11.339Z",
+          "checked_at": "2026-09-09T15:48:55.143Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -308682,6 +309996,56 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-09T15:48:55.143Z",
+          "retained_urls": [
+            "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+            "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+            "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+            "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
+            "https://www.ndr.de/nachrichten/info/das-erbe-nach-9-11-deutschland-nach-anschlaegen-in-usa,pearl-harburg-100.html",
+            "https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS9wcm9wbGFuXzE5NjM4Nzc1M19nYW56ZVNlbmR1bmc",
+            "https://www.stern.de/panorama/donald-trump-luegt-darueber--dass-er-an-9-11-gerettet-wurde-38224984.html",
+            "https://www.zdfheute.de/politik/ausland/9-11-world-trade-center-trump-usa-verschwoerungstheorien-100.html",
+            "https://www.stern.de/politik/ausland/11--september-2001-in-notrufen---die-frischluft-ist-bald-zu-ende--30702522.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+              "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+              "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-04T11:02:58.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+              "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-04T11:02:58.000Z",
+              "ingested_at": "2026-09-09T07:21:53.878Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-09T04:00:00.000Z",
@@ -308717,7 +310081,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T04:00:00.000Z",
-          "ingested_at": "2026-09-09T15:07:11.339Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -308782,7 +310146,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T18:04:29.000Z",
-          "ingested_at": "2026-09-09T15:07:11.339Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -308814,7 +310178,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T07:30:00.000Z",
-          "ingested_at": "2026-09-09T14:36:54.381Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -308847,7 +310211,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T05:15:11.000Z",
-          "ingested_at": "2026-09-09T15:07:11.339Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -308946,7 +310310,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T08:35:00.000Z",
-          "ingested_at": "2026-09-09T15:07:11.339Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -309041,7 +310405,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-02",
@@ -309061,7 +310425,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-03",
@@ -309081,7 +310445,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-04",
@@ -309101,7 +310465,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-05",
@@ -309121,7 +310485,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-06",
@@ -309141,7 +310505,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-07",
@@ -309161,7 +310525,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-08",
@@ -309181,7 +310545,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-09",
@@ -309201,7 +310565,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-10",
@@ -309221,7 +310585,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:07:11.339Z"
+          "checked_at": "2026-09-09T15:48:55.143Z"
         }
       ],
       "content_hash": "7eb44acec98cad35384374718777d4f12f2d767ad447112c7f02b0e824eea3ba",
@@ -309236,7 +310600,7 @@
       "fresh": false,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T15:07:11.339Z",
+      "updated_at": "2026-09-09T15:48:55.143Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-4282989facaefbf32544",
@@ -309274,20 +310638,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 291.18898333333334,
+        "source_age_minutes": 332.91905,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 644.8223666666667,
+        "queue_age_minutes": 686.5524333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 39,
+        "news_freshness_score": 31,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T15:07:11.339Z",
+        "checked_at": "2026-09-09T15:48:55.143Z",
         "fingerprint": "f293c0bd597ca4870580846289ff10e218b8d87420fe13caaa770a4a65763a83",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
