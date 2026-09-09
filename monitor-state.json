@@ -11,9 +11,14 @@
     },
     "budget": {
       "firstSeen": "2026-09-09T00:50:35.445Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "0c422578f107ed6e5dd9fdaa",
+      "content": "⚠ WÖk-Betriebsstörung\nKI-Monatsbudget: Monatslimit oder Wechselkurs-Sicherheitsgate hält neue KI-Anfragen an; die Warteschlange bleibt erhalten.\nSeit: 2026-09-09T00:50:35.445Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-08"
 }
