@@ -1,8 +1,57 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-09T21:54:13.108Z",
+  "updated_at": "2026-09-09T22:16:55.504Z",
   "candidates": [
+    {
+      "story_id": "wt-32f0aa5f0a6a7761",
+      "story_slug": "nach-afd-wahlsieg-soder-lehnt-verbot-ab-und-nennt-brandmauer-konzept-gescheitert-6a7761",
+      "story_title": "Nach AfD-Wahlsieg: Söder lehnt Verbot ab und nennt Brandmauer-Konzept gescheitert",
+      "editorial_analysis_score": 68,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 0,
+        "macro_relevance": 0,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 6,
+        "discourse_relevance": 6,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 9,
+        "primary_source_count": 5,
+        "cited_claim_count": 5,
+        "primary_source_expected": true,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "3d0198b25074b8e43006503adb85eaea4b323cbb5615a7b9e96b9e9182e74c4a",
+      "status": "research_pending",
+      "review": {
+        "status": "research_pending",
+        "automatic_short_form_rewrite": false,
+        "reason": "commissioned_analysis_new_origin_material",
+        "story_id": "wt-32f0aa5f0a6a7761",
+        "analysis_id": "woek-analysis-814079fbdc30"
+      },
+      "analysis_id": "woek-analysis-814079fbdc30"
+    },
     {
       "story_id": "wt-63cb95e544d260ce",
       "story_slug": "so-lauft-die-generaldebatte-im-bundestag-merz-gegen-weidel-d260ce",
@@ -35674,14 +35723,13 @@
       "quality_cycles": 0,
       "request_id": null,
       "attempts": 0,
-      "last_attempt_at": "2026-09-09T21:47:05.659Z",
-      "next_attempt_at": "2026-09-09T22:02:05.659Z",
+      "last_attempt_at": "2026-09-09T22:16:55.504Z",
+      "next_attempt_at": "2026-09-09T22:31:55.504Z",
       "quality_errors": [
-        "EDITORIAL_ARTICLE_LENGTH",
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "AI_BATCH_PENDING"
+      "reason": "BATCH_API_BATCH_CAPACITY"
     },
     "wt-e820bef62dd96612": {
       "fingerprint": "55c01a53ce4e370eae11a3736ee05383f6c4c6e67e77e2ffa44c87d2ead7b09d",
@@ -35709,6 +35757,18 @@
         "EDITORIAL_ARTICLE_LENGTH"
       ],
       "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH"
+    },
+    "wt-b5e0a39f46388642": {
+      "fingerprint": "0c84ebc213e0cfe23df7b7b13f8f92b03195ca82b3eb35be19ce6fac58341ae3",
+      "research_fingerprint": "b29d4233f218cf4f371f056b477a07ffd70d4e82b6342112e45b0b0bce4e9504",
+      "method_version": "1.0",
+      "quality_cycles": 0,
+      "request_id": null,
+      "attempts": 0,
+      "last_attempt_at": "2026-09-09T22:16:55.504Z",
+      "next_attempt_at": "2026-09-09T22:31:55.504Z",
+      "quality_errors": [],
+      "reason": "BATCH_API_BATCH_CAPACITY"
     }
   },
   "editorial_requests": {}
