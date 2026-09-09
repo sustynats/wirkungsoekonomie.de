@@ -9,7 +9,7 @@ import { agendaSignal, extractDiscoveryMetadata, runActiveDiscovery, DISCOVERY_L
 import { normalizeNewsRegistry, registryErrors } from '../../scripts/news/registry.mjs';
 import { runWirkungsticker, partitionAiQueue, unchangedRankingBackfill } from '../../scripts/news/run.mjs';
 import { auditDay, auditMarkdown } from '../../scripts/news/audit-events.mjs';
-import { duplicateGroups, mergeLivingFiles, isMerged } from '../../scripts/news/living-files.mjs';
+import { duplicateGroups, mergeLivingFiles, isMerged, mergedStoryTargetValid } from '../../scripts/news/living-files.mjs';
 import { structuredEventIdentity } from '../../scripts/news/event-identity.mjs';
 
 const now = '2026-09-09T15:00:00.000Z';
@@ -46,6 +46,13 @@ test('existing unpublished fragments consolidate before paid selection, preservi
   assert.equal(mergeLivingFiles(drafts,groups,now).length,2);
   const canonical=drafts.find(draft=>!isMerged(draft));
   assert.equal(canonical.pending_update.sources.length,3);assert.equal(canonical.published,false);
+  const byId=new Map(drafts.map(draft=>[draft.story_id,draft]));
+  const alias=drafts.find(isMerged);
+  assert.equal(mergedStoryTargetValid(alias,byId),true);
+  assert.equal(mergedStoryTargetValid({...alias,published:true},byId),false,'public pages cannot point to drafts');
+  assert.equal(mergedStoryTargetValid({...alias,retirement:{...alias.retirement,unpublished_queue:undefined}},byId),false);
+  assert.equal(mergedStoryTargetValid(alias,new Map()),false,'no dangling alias');
+  assert.equal(mergedStoryTargetValid({...alias,retirement:{...alias.retirement,canonical_story_ids:[alias.story_id]}},byId),false,'no cycle');
   for(const draft of drafts) assert.deepEqual(draft.sources,original.find(old=>old.story_id===draft.story_id).sources);
   assert.equal(clusterItems(borderSources(),drafts,now).length,1);
   assert.equal(mergeLivingFiles(drafts,duplicateGroups(drafts),now).length,0,'idempotent');

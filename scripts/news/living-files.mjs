@@ -225,6 +225,20 @@ export function livingFileMatch(item, story) {
 
 export function isMerged(story) { return story.retirement?.reason_code === "MERGED_INTO_LIVING_FILE"; }
 
+export function mergedStoryTargetValid(story, storiesById) {
+  const targets=story.retirement?.canonical_story_ids || [];
+  return targets.length > 0 && targets.every(id => {
+    const target=storiesById.get(id);
+    if (id===story.story_id || !target || isMerged(target)) return false;
+    if (target.published) return true;
+    // Internal queue aliases have no public URL to redirect. A public article
+    // still requires a published destination; never relax that invariant.
+    return targets.length===1 && story.published===false && target.published===false
+      && story.retirement.unpublished_queue===true
+      && target.living_file?.merged_story_ids?.includes(story.story_id);
+  });
+}
+
 export function matchingStories(stories) {
   const byId = new Map(stories.map((story) => [story.story_id, story]));
   return stories.filter((story) => !isMerged(story)).map((story) => {
@@ -277,6 +291,7 @@ export function mergeLivingFiles(stories, groups, now) {
       duplicate.retired_at = now;
       duplicate.retirement = {
         at: now, reason_code: "MERGED_INTO_LIVING_FILE", canonical_story_ids: [canonical.story_id],
+        ...(!canonical.published ? {unpublished_queue:true} : {}),
         canonical_stories: [{ story_id: canonical.story_id, slug: canonical.slug, title: canonical.title }],
         note: "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft.",
       };
