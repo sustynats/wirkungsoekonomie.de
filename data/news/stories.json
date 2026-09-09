@@ -1,10 +1,1421 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-09T10:37:16.594Z",
-  "updated_at": "2026-09-09T11:07:22.757Z",
+  "public_updated_at": "2026-09-09T11:12:49.530Z",
+  "updated_at": "2026-09-09T11:12:49.530Z",
   "stories": [
     {
+      "story_id": "wt-33931768eeae3386",
+      "slug": "eug-bestatigt-ubernahmeverbot-booking-com-darf-sich-fluge-plattform-etraveli-nicht-einve-ae3386",
+      "title": "EuG bestätigt Übernahmeverbot: Booking.com darf sich Flüge-Plattform eTraveli nicht einverleiben",
+      "first_seen": "2026-09-09T10:37:00.000Z",
+      "last_updated": "2026-09-09T11:14:59.078Z",
+      "published_at": "2026-09-09T11:14:59.078Z",
+      "updated_at": "2026-09-09T11:14:59.078Z",
+      "topic": [
+        "Digitalisierung",
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "lto-news",
+          "publisher": "Legal Tribune Online",
+          "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+          "title": "EuG bestätigt Übernahmeverbot: Booking.com darf sich Flüge-Plattform eTraveli nicht einverleiben",
+          "summary": "Booking wollte mit eTraveli ins Fluggeschäft expandieren – und hätte damit nach Ansicht des EuG seine dominante Stellung im Bereich Hotelbuchungen zu sehr stärken können. Das Gericht bestätigt deshalb das ausgesprochene Übernahmeverbot.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T10:37:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Recht und Justiz",
+          "content_hash": "95c85f1c557aa805a64d77e6811007a42adf845437a6c5470affe870387dfd44",
+          "source_item_id": "560d918126f325b0ebf69d9be82e0cfc2b3f52e8e7c18e1bc22fa2be72c7d2de",
+          "publisher_id": "legal-tribune-online",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "blindspot",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T10:37:00.000Z",
+          "ingested_at": "2026-09-09T11:12:49.530Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:legal-tribune-online",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-33931768eeae3386-v1-claim-1",
+          "story_id": "wt-33931768eeae3386",
+          "claim": "Das Gericht der Europäischen Union hat die Entscheidung der EU-Kommission weitgehend bestätigt und das Übernahmeverbot für Booking.com und eTraveli damit aufrechterhalten.",
+          "status": "single_source_claim",
+          "source_id": "lto-news",
+          "evidence": [
+            {
+              "source_id": "lto-news",
+              "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+              "excerpt_hash": "6f0728843875d0420a2d",
+              "checked_at": "2026-09-09T11:14:59.078Z"
+            },
+            {
+              "source_id": "lto-news",
+              "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+              "excerpt_hash": "63ff7ac3381d2cd8784c",
+              "checked_at": "2026-09-09T11:14:59.078Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T11:14:59.078Z"
+        },
+        {
+          "claim_id": "wt-33931768eeae3386-v1-claim-2",
+          "story_id": "wt-33931768eeae3386",
+          "claim": "Die Kommission hatte die Übernahme 2023 wegen der marktbeherrschenden Stellung von Booking auf dem Markt für Online-Hotelbuchungen untersagt.",
+          "status": "single_source_claim",
+          "source_id": "lto-news",
+          "evidence": [
+            {
+              "source_id": "lto-news",
+              "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+              "excerpt_hash": "05df17e14803ed24e0b0",
+              "checked_at": "2026-09-09T11:14:59.078Z"
+            },
+            {
+              "source_id": "lto-news",
+              "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+              "excerpt_hash": "65f8f465252641943193",
+              "checked_at": "2026-09-09T11:14:59.078Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T11:14:59.078Z"
+        },
+        {
+          "claim_id": "wt-33931768eeae3386-v1-claim-3",
+          "story_id": "wt-33931768eeae3386",
+          "claim": "Das Gericht folgte der Kommission darin, dass ein Zusammenschluss Booking im Fluggeschäft stärken und seine Stellung bei Online-Hotelbuchungen weiter festigen könnte.",
+          "status": "single_source_claim",
+          "source_id": "lto-news",
+          "evidence": [
+            {
+              "source_id": "lto-news",
+              "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+              "excerpt_hash": "5239c085cda1a8743328",
+              "checked_at": "2026-09-09T11:14:59.078Z"
+            },
+            {
+              "source_id": "lto-news",
+              "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+              "excerpt_hash": "2a83d31859ddb5754434",
+              "checked_at": "2026-09-09T11:14:59.078Z"
+            },
+            {
+              "source_id": "lto-news",
+              "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+              "excerpt_hash": "0cb37c678eb9a54007aa",
+              "checked_at": "2026-09-09T11:14:59.078Z"
+            },
+            {
+              "source_id": "lto-news",
+              "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+              "excerpt_hash": "a44966fc24854dc8d82d",
+              "checked_at": "2026-09-09T11:14:59.078Z"
+            },
+            {
+              "source_id": "lto-news",
+              "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+              "excerpt_hash": "5cff012d328b5f35ce52",
+              "checked_at": "2026-09-09T11:14:59.078Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T11:14:59.078Z"
+        }
+      ],
+      "event_id": "event-2dc032834b8f2b97351a",
+      "event_first_seen_at": "2026-09-09T11:12:49.530Z",
+      "event_detected_at": "2026-09-09T11:12:49.530Z",
+      "verification_started_at": "2026-09-09T11:14:34.251Z",
+      "publish_ready_at": "2026-09-09T11:14:59.078Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-09T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "lto-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T11:12:49.530Z",
+        "fingerprint": "8e65833dda17451a0cf7860cc774f74d92d3781d89c37775d2a471156278cb35",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "f870aca1ab3316ad2916067cb2a662036f3ef94c00aceaf3e8fef7fe8326df5a",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-09T11:14:59.078Z",
+        "sources": [
+          {
+            "source_id": "lto-news",
+            "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+            "content_hash": "95c85f1c557aa805a64d77e6811007a42adf845437a6c5470affe870387dfd44",
+            "excerpt_hash": "b99b984ccd12ec069ecdcf199ca50e624c6499ea958af5ff9ef0d491b79276e8",
+            "number_locale": "de",
+            "numbers": [
+              "60834",
+              "2023",
+              "9.09",
+              "2026",
+              "1139",
+              "23"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Das EU-Gericht hat laut Bericht die Entscheidung der EU-Kommission weitgehend bestätigt und das Verbot der Übernahme von eTraveli durch Booking.com aufrechterhalten. Hintergrund ist die bereits unstreitige marktbeherrschende Stellung von Booking bei Online-Hotelbuchungen.\n\nDie Kommission hatte den Zusammenschluss 2023 untersagt, weil Booking durch eTraveli im Fluggeschäft stärker werden und damit seine Stellung im Hotelmarkt weiter festigen könnte. Das Gericht hielt diese Begründung im Kern für tragfähig, trotz einzelner Berechnungsfehler der Kommission.",
+      "analysis": {
+        "story_id": "wt-33931768eeae3386",
+        "publication_recommendation": true,
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Das EU-Gericht hat das Übernahmeverbot für Booking.com und eTraveli bestätigt. Damit bleibt der Zusammenschluss vorerst gesperrt.",
+        "detail_summary": "Der Bericht beschreibt eine bestätigte Wettbewerbsentscheidung der EU-Gerichte: Booking.com darf eTraveli vorerst nicht übernehmen. Materiell relevant ist das, weil damit ein geplanter Zusammenschluss im digitalen Reisegeschäft gestoppt bleibt und Marktstruktur, Angebotsbündelung und mögliche Cross-Selling-Effekte unverändert bleiben. Der mögliche Wirkpfad läuft über mehr Marktmacht im Fluggeschäft und eine weitere Festigung der Stellung bei Online-Hotelbuchungen. Für Verbraucherinnen und Wettbewerber kann das die Marktöffnung stützen, zugleich bleiben die konkreten Marktfolgen im Detail offen. Belegt ist hier vor allem der Rechts- und Wettbewerbsbefund; über die tatsächlichen ökonomischen Folgen der Sperre sagt der Bericht noch nichts Messbares.",
+        "why_relevant": "Das Urteil hält eine marktprägende Übernahme im digitalen Reiseverkehr an und kann damit Wettbewerb, Bündelangebote und Marktzugang beeinflussen.",
+        "status": "beschlossen",
+        "analysis_type": "ex_post",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Stopp kann Wettbewerb und Auswahl im Online-Reisemarkt schützen. Zugleich bleibt offen, wie stark Preise, Angebote und Marktanteile dadurch tatsächlich verändert werden.",
+          "positive_path": {
+            "mechanism": "Mehr Wettbewerb bleibt erhalten, weil der Zusammenschluss und damit ein möglicher Ausbau von Cross-Selling- und Bündelvorteilen vorerst ausbleiben.",
+            "source_ids": [
+              "lto-news"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Bleibt Booking trotz Verbots marktstark, können Dominanz und Zugangshürden im Hotelmarkt weiter bestehen; die Entscheidung ändert daran allein noch nichts.",
+            "source_ids": [
+              "lto-news"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus dem Bericht ergibt sich kein belastbarer Pfad zu Umwelt- oder Klimawirkungen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die bestätigte Kontrolle einer großen Unternehmensübernahme zeigt wirksame Aufsicht durch EU-Institutionen. Das kann die demokratische Korrekturfähigkeit im Marktregime stärken, ohne die Entscheidung selbst zu überhöhen.",
+          "positive_path": {
+            "mechanism": "Gerichtliche Kontrolle stärkt die Durchsetzung von Wettbewerbsrecht und damit die institutionelle Begrenzung von Marktmacht.",
+            "source_ids": [
+              "lto-news"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn Markt- und Prozessmacht großer Plattformen weiter hoch bleiben, bleibt die praktische Korrekturfähigkeit trotz Urteil begrenzt.",
+            "source_ids": [
+              "lto-news"
+            ]
+          }
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Entscheidung kann die Struktur des europäischen Online-Reisemarkts beeinflussen, vor allem über Wettbewerb, Bündelung von Reiseangeboten und Marktzutritt.",
+        "impact_risks": [
+          "Die marktbeherrschende Stellung von Booking könnte auch ohne Übernahme hoch bleiben.",
+          "Ein Verbot allein garantiert noch keine spürbaren Preis- oder Angebotsvorteile für Kundinnen."
+        ],
+        "mechanisms": [
+          "Wettbewerbsrechtliche Begrenzung eines Zusammenschlusses",
+          "Verhinderung von Cross-Selling-basiertem Marktausbau",
+          "Stabilisierung bestehender Marktgrenzen"
+        ],
+        "first_order": [
+          "Übernahme bleibt untersagt",
+          "eTraveli und Booking bleiben getrennt"
+        ],
+        "second_order": [
+          "Bündelangebote und Marktintegration im Reisegeschäft wachsen nicht wie geplant",
+          "Wettbewerbsdruck im Online-Reisemarkt bleibt höher"
+        ],
+        "third_order": [
+          "Langfristig kann die Regulierung digitaler Märkte strenger interpretiert werden",
+          "Andere Plattformfusionen könnten stärker auf Hebelwirkungen geprüft werden"
+        ],
+        "systemic_relevance": "Der Fall berührt die Regulierung digitaler Plattformmärkte und damit die Frage, wie EU-Recht Marktbeherrschung in vernetzten Märkten begrenzt.",
+        "transformation_potential": "Begrenzt, aber sichtbar: Das Urteil kann die Linie der Fusionskontrolle in digitalen Märkten für künftige Fälle prägen.",
+        "resilience": "Stärkt die institutionelle Resilienz der Wettbewerbsaufsicht; die Marktresilienz für kleine Anbieter bleibt dennoch offen.",
+        "side_effects": [
+          "Verzögerung strategischer Expansion",
+          "Mehr Rechtsklarheit für spätere Plattformfälle"
+        ],
+        "uncertainties": [
+          "Ob das Verbot messbar zu mehr Wettbewerb oder günstigeren Angeboten führt, ist aus dem Bericht nicht belegt.",
+          "Die wirtschaftliche Stärke von Booking nach dem Urteil bleibt offen."
+        ],
+        "evidence_level": "mittel",
+        "attribution": "Bericht von Legal Tribune Online; das Urteil wird paraphrasiert, einzelne Rechts- und Marktbegründungen werden dem EuG zugeschrieben.",
+        "watch_next": [
+          "Ob Booking gegen die Entscheidung weitere Rechtsmittel nutzt.",
+          "Ob die EU-Kommission die Linie der Fusionskontrolle in digitalen Märkten weiter schärft."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "binding_decision",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Es liegt eine neue gerichtliche Bestätigung eines relevanten Übernahmeverbots vor. Der Fall betrifft einen großen digitalen Reisemarkt und damit eine materiell bedeutsame Wettbewerbs- und Regulierungsfrage."
+        },
+        "visuals": {
+          "path_directions": [
+            {
+              "order": "first_order",
+              "path": "Übernahme bleibt untersagt",
+              "direction": "negative",
+              "condition": "Wenn der Zusammenschluss nicht zustande kommt, bleibt die Marktintegration zwischen Flug- und Hotelbuchung aus.",
+              "evidence": "plausible_path",
+              "claim_ids": [
+                "wt-33931768eeae3386-claim-01"
+              ],
+              "dimensions": [
+                "human",
+                "democracy"
+              ]
+            }
+          ],
+          "affected_groups": [
+            "verbraucherinnen",
+            "unternehmen",
+            "investoren",
+            "europa"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-09T11:12:49.530Z",
+        "media_trigger_fingerprint": "2dbb8eb9611c80dd03d30801900f0f166a0563a3a3ff6c7f2d5c5e6b6178b9f1",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "2dbb8eb9611c80dd03d30801900f0f166a0563a3a3ff6c7f2d5c5e6b6178b9f1",
+          "content_fingerprint": "e1c9fbab9456ae00206f742193791f4fcc854b50ecd1b53a5cfe4cac1aae641e",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-09T11:14:59.078Z",
+          "content_hash": "f870aca1ab3316ad2916067cb2a662036f3ef94c00aceaf3e8fef7fe8326df5a",
+          "source_summary": "Das EU-Gericht hat laut Bericht die Entscheidung der EU-Kommission weitgehend bestätigt und das Verbot der Übernahme von eTraveli durch Booking.com aufrechterhalten. Hintergrund ist die bereits unstreitige marktbeherrschende Stellung von Booking bei Online-Hotelbuchungen.\n\nDie Kommission hatte den Zusammenschluss 2023 untersagt, weil Booking durch eTraveli im Fluggeschäft stärker werden und damit seine Stellung im Hotelmarkt weiter festigen könnte. Das Gericht hielt diese Begründung im Kern für tragfähig, trotz einzelner Berechnungsfehler der Kommission.",
+          "analysis": {
+            "story_id": "wt-33931768eeae3386",
+            "publication_recommendation": true,
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Das EU-Gericht hat das Übernahmeverbot für Booking.com und eTraveli bestätigt. Damit bleibt der Zusammenschluss vorerst gesperrt.",
+            "detail_summary": "Der Bericht beschreibt eine bestätigte Wettbewerbsentscheidung der EU-Gerichte: Booking.com darf eTraveli vorerst nicht übernehmen. Materiell relevant ist das, weil damit ein geplanter Zusammenschluss im digitalen Reisegeschäft gestoppt bleibt und Marktstruktur, Angebotsbündelung und mögliche Cross-Selling-Effekte unverändert bleiben. Der mögliche Wirkpfad läuft über mehr Marktmacht im Fluggeschäft und eine weitere Festigung der Stellung bei Online-Hotelbuchungen. Für Verbraucherinnen und Wettbewerber kann das die Marktöffnung stützen, zugleich bleiben die konkreten Marktfolgen im Detail offen. Belegt ist hier vor allem der Rechts- und Wettbewerbsbefund; über die tatsächlichen ökonomischen Folgen der Sperre sagt der Bericht noch nichts Messbares.",
+            "why_relevant": "Das Urteil hält eine marktprägende Übernahme im digitalen Reiseverkehr an und kann damit Wettbewerb, Bündelangebote und Marktzugang beeinflussen.",
+            "status": "beschlossen",
+            "analysis_type": "ex_post",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "direction_basis": "assessed",
+              "rationale": "Der Stopp kann Wettbewerb und Auswahl im Online-Reisemarkt schützen. Zugleich bleibt offen, wie stark Preise, Angebote und Marktanteile dadurch tatsächlich verändert werden.",
+              "positive_path": {
+                "mechanism": "Mehr Wettbewerb bleibt erhalten, weil der Zusammenschluss und damit ein möglicher Ausbau von Cross-Selling- und Bündelvorteilen vorerst ausbleiben.",
+                "source_ids": [
+                  "lto-news"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Bleibt Booking trotz Verbots marktstark, können Dominanz und Zugangshürden im Hotelmarkt weiter bestehen; die Entscheidung ändert daran allein noch nichts.",
+                "source_ids": [
+                  "lto-news"
+                ]
+              }
+            },
+            "planet": {
+              "relevance": "offen",
+              "tendency": "offen",
+              "direction_basis": "no_path",
+              "rationale": "Aus dem Bericht ergibt sich kein belastbarer Pfad zu Umwelt- oder Klimawirkungen.",
+              "positive_path": null,
+              "negative_path": null
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "chance",
+              "direction_basis": "assessed",
+              "rationale": "Die bestätigte Kontrolle einer großen Unternehmensübernahme zeigt wirksame Aufsicht durch EU-Institutionen. Das kann die demokratische Korrekturfähigkeit im Marktregime stärken, ohne die Entscheidung selbst zu überhöhen.",
+              "positive_path": {
+                "mechanism": "Gerichtliche Kontrolle stärkt die Durchsetzung von Wettbewerbsrecht und damit die institutionelle Begrenzung von Marktmacht.",
+                "source_ids": [
+                  "lto-news"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Wenn Markt- und Prozessmacht großer Plattformen weiter hoch bleiben, bleibt die praktische Korrekturfähigkeit trotz Urteil begrenzt.",
+                "source_ids": [
+                  "lto-news"
+                ]
+              }
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Entscheidung kann die Struktur des europäischen Online-Reisemarkts beeinflussen, vor allem über Wettbewerb, Bündelung von Reiseangeboten und Marktzutritt.",
+            "impact_risks": [
+              "Die marktbeherrschende Stellung von Booking könnte auch ohne Übernahme hoch bleiben.",
+              "Ein Verbot allein garantiert noch keine spürbaren Preis- oder Angebotsvorteile für Kundinnen."
+            ],
+            "mechanisms": [
+              "Wettbewerbsrechtliche Begrenzung eines Zusammenschlusses",
+              "Verhinderung von Cross-Selling-basiertem Marktausbau",
+              "Stabilisierung bestehender Marktgrenzen"
+            ],
+            "first_order": [
+              "Übernahme bleibt untersagt",
+              "eTraveli und Booking bleiben getrennt"
+            ],
+            "second_order": [
+              "Bündelangebote und Marktintegration im Reisegeschäft wachsen nicht wie geplant",
+              "Wettbewerbsdruck im Online-Reisemarkt bleibt höher"
+            ],
+            "third_order": [
+              "Langfristig kann die Regulierung digitaler Märkte strenger interpretiert werden",
+              "Andere Plattformfusionen könnten stärker auf Hebelwirkungen geprüft werden"
+            ],
+            "systemic_relevance": "Der Fall berührt die Regulierung digitaler Plattformmärkte und damit die Frage, wie EU-Recht Marktbeherrschung in vernetzten Märkten begrenzt.",
+            "transformation_potential": "Begrenzt, aber sichtbar: Das Urteil kann die Linie der Fusionskontrolle in digitalen Märkten für künftige Fälle prägen.",
+            "resilience": "Stärkt die institutionelle Resilienz der Wettbewerbsaufsicht; die Marktresilienz für kleine Anbieter bleibt dennoch offen.",
+            "side_effects": [
+              "Verzögerung strategischer Expansion",
+              "Mehr Rechtsklarheit für spätere Plattformfälle"
+            ],
+            "uncertainties": [
+              "Ob das Verbot messbar zu mehr Wettbewerb oder günstigeren Angeboten führt, ist aus dem Bericht nicht belegt.",
+              "Die wirtschaftliche Stärke von Booking nach dem Urteil bleibt offen."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Bericht von Legal Tribune Online; das Urteil wird paraphrasiert, einzelne Rechts- und Marktbegründungen werden dem EuG zugeschrieben.",
+            "watch_next": [
+              "Ob Booking gegen die Entscheidung weitere Rechtsmittel nutzt.",
+              "Ob die EU-Kommission die Linie der Fusionskontrolle in digitalen Märkten weiter schärft."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Es liegt eine neue gerichtliche Bestätigung eines relevanten Übernahmeverbots vor. Der Fall betrifft einen großen digitalen Reisemarkt und damit eine materiell bedeutsame Wettbewerbs- und Regulierungsfrage."
+            },
+            "visuals": {
+              "path_directions": [
+                {
+                  "order": "first_order",
+                  "path": "Übernahme bleibt untersagt",
+                  "direction": "negative",
+                  "condition": "Wenn der Zusammenschluss nicht zustande kommt, bleibt die Marktintegration zwischen Flug- und Hotelbuchung aus.",
+                  "evidence": "plausible_path",
+                  "claim_ids": [
+                    "wt-33931768eeae3386-claim-01"
+                  ],
+                  "dimensions": [
+                    "human",
+                    "democracy"
+                  ]
+                }
+              ],
+              "affected_groups": [
+                "verbraucherinnen",
+                "unternehmen",
+                "investoren",
+                "europa"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-09T11:12:49.530Z",
+            "media_trigger_fingerprint": "2dbb8eb9611c80dd03d30801900f0f166a0563a3a3ff6c7f2d5c5e6b6178b9f1",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "2dbb8eb9611c80dd03d30801900f0f166a0563a3a3ff6c7f2d5c5e6b6178b9f1",
+              "content_fingerprint": "e1c9fbab9456ae00206f742193791f4fcc854b50ecd1b53a5cfe4cac1aae641e",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-33931768eeae3386-v1-claim-1",
+              "story_id": "wt-33931768eeae3386",
+              "claim": "Das Gericht der Europäischen Union hat die Entscheidung der EU-Kommission weitgehend bestätigt und das Übernahmeverbot für Booking.com und eTraveli damit aufrechterhalten.",
+              "status": "single_source_claim",
+              "source_id": "lto-news",
+              "evidence": [
+                {
+                  "source_id": "lto-news",
+                  "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+                  "excerpt_hash": "6f0728843875d0420a2d",
+                  "checked_at": "2026-09-09T11:14:59.078Z"
+                },
+                {
+                  "source_id": "lto-news",
+                  "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+                  "excerpt_hash": "63ff7ac3381d2cd8784c",
+                  "checked_at": "2026-09-09T11:14:59.078Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T11:14:59.078Z"
+            },
+            {
+              "claim_id": "wt-33931768eeae3386-v1-claim-2",
+              "story_id": "wt-33931768eeae3386",
+              "claim": "Die Kommission hatte die Übernahme 2023 wegen der marktbeherrschenden Stellung von Booking auf dem Markt für Online-Hotelbuchungen untersagt.",
+              "status": "single_source_claim",
+              "source_id": "lto-news",
+              "evidence": [
+                {
+                  "source_id": "lto-news",
+                  "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+                  "excerpt_hash": "05df17e14803ed24e0b0",
+                  "checked_at": "2026-09-09T11:14:59.078Z"
+                },
+                {
+                  "source_id": "lto-news",
+                  "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+                  "excerpt_hash": "65f8f465252641943193",
+                  "checked_at": "2026-09-09T11:14:59.078Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T11:14:59.078Z"
+            },
+            {
+              "claim_id": "wt-33931768eeae3386-v1-claim-3",
+              "story_id": "wt-33931768eeae3386",
+              "claim": "Das Gericht folgte der Kommission darin, dass ein Zusammenschluss Booking im Fluggeschäft stärken und seine Stellung bei Online-Hotelbuchungen weiter festigen könnte.",
+              "status": "single_source_claim",
+              "source_id": "lto-news",
+              "evidence": [
+                {
+                  "source_id": "lto-news",
+                  "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+                  "excerpt_hash": "5239c085cda1a8743328",
+                  "checked_at": "2026-09-09T11:14:59.078Z"
+                },
+                {
+                  "source_id": "lto-news",
+                  "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+                  "excerpt_hash": "2a83d31859ddb5754434",
+                  "checked_at": "2026-09-09T11:14:59.078Z"
+                },
+                {
+                  "source_id": "lto-news",
+                  "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+                  "excerpt_hash": "0cb37c678eb9a54007aa",
+                  "checked_at": "2026-09-09T11:14:59.078Z"
+                },
+                {
+                  "source_id": "lto-news",
+                  "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+                  "excerpt_hash": "a44966fc24854dc8d82d",
+                  "checked_at": "2026-09-09T11:14:59.078Z"
+                },
+                {
+                  "source_id": "lto-news",
+                  "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+                  "excerpt_hash": "5cff012d328b5f35ce52",
+                  "checked_at": "2026-09-09T11:14:59.078Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T11:14:59.078Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "lto-news",
+              "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+              "content_hash": "95c85f1c557aa805a64d77e6811007a42adf845437a6c5470affe870387dfd44"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-09T11:14:59.078Z",
+            "sources": [
+              {
+                "source_id": "lto-news",
+                "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+                "content_hash": "95c85f1c557aa805a64d77e6811007a42adf845437a6c5470affe870387dfd44",
+                "excerpt_hash": "b99b984ccd12ec069ecdcf199ca50e624c6499ea958af5ff9ef0d491b79276e8",
+                "number_locale": "de",
+                "numbers": [
+                  "60834",
+                  "2023",
+                  "9.09",
+                  "2026",
+                  "1139",
+                  "23"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-09T11:14:59.078Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-09T11:32:38.194Z"
+      }
+    },
+    {
+      "story_id": "wt-127329d8756c5ba5",
+      "slug": "die-wirtschaftsministerin-stosst-die-erneuerbaren-uber-die-klippe-6c5ba5",
+      "title": "\"Die Wirtschaftsministerin stößt die Erneuerbaren über die Klippe\"",
+      "first_seen": "2026-09-09T10:32:17.000Z",
+      "last_updated": "2026-09-09T11:13:52.837Z",
+      "published_at": "2026-09-09T11:13:52.837Z",
+      "updated_at": "2026-09-09T11:13:52.837Z",
+      "topic": [
+        "Klima",
+        "Energie",
+        "Wirtschaft",
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "klimareporter-news",
+          "publisher": "Klimareporter°",
+          "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+          "title": "\"Die Wirtschaftsministerin stößt die Erneuerbaren über die Klippe\"",
+          "summary": "Im Bundesrat werden die Länder bei EEG-Reform und Netzpaket nur etwas ausrichten können, wenn es wieder zu Allianzen kommt, sagt Tobias Goldschmidt , Energie- und Umweltminister in Schleswig-Holstein. Er plädiert zugleich für einen selbstkritischen Blick auf die Energiewende. Die Erneuerbaren seien erwachsen geworden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T10:32:17.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Klima",
+          "content_hash": "7c46644c142aed46f6302f2c0d107f080be09518f7785e3304a795c5dfe8e653",
+          "source_item_id": "ae7eb823032a80695336b226352ac7290b109cf4b37121fe2a2249feb72d3ff2",
+          "publisher_id": "klimareporter",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "blindspot",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T10:32:17.000Z",
+          "ingested_at": "2026-09-09T11:12:49.530Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:klimareporter",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-127329d8756c5ba5-v1-claim-1",
+          "story_id": "wt-127329d8756c5ba5",
+          "claim": "Tobias Goldschmidt sagt, im Bundesrat könnten die Länder bei EEG-Reform und Netzpaket nur etwas ausrichten, wenn sie wieder Allianzen bilden.",
+          "status": "single_source_claim",
+          "source_id": "klimareporter-news",
+          "evidence": [
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+              "excerpt_hash": "1da4cef55c5eabbca5e2",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            },
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+              "excerpt_hash": "a022787c00d71d2c9d0c",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T11:13:52.837Z"
+        },
+        {
+          "claim_id": "wt-127329d8756c5ba5-v1-claim-2",
+          "story_id": "wt-127329d8756c5ba5",
+          "claim": "Die Länder hätten in der jetzigen Form die EEG-Reform und das Netzpaket abgelehnt.",
+          "status": "single_source_claim",
+          "source_id": "klimareporter-news",
+          "evidence": [
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+              "excerpt_hash": "6209438c81cf83f0952f",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T11:13:52.837Z"
+        },
+        {
+          "claim_id": "wt-127329d8756c5ba5-v1-claim-3",
+          "story_id": "wt-127329d8756c5ba5",
+          "claim": "Im Gesetzentwurf zu Windkraft-Sonderausschreibungen stünden jetzt 12.000 Megawatt über die nächsten Jahre, nach Druck von Bayern und Schleswig-Holstein.",
+          "status": "single_source_claim",
+          "source_id": "klimareporter-news",
+          "evidence": [
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+              "excerpt_hash": "8eae958e7fa3c6a775b9",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T11:13:52.837Z"
+        },
+        {
+          "claim_id": "wt-127329d8756c5ba5-v1-claim-4",
+          "story_id": "wt-127329d8756c5ba5",
+          "claim": "Die Länder wollten weiter auf zusätzlichen 5.000 Megawatt bestehen, die schon in diesem Jahr gefordert worden waren.",
+          "status": "single_source_claim",
+          "source_id": "klimareporter-news",
+          "evidence": [
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+              "excerpt_hash": "57b0bd737e03839a9069",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T11:13:52.837Z"
+        },
+        {
+          "claim_id": "wt-127329d8756c5ba5-v1-claim-5",
+          "story_id": "wt-127329d8756c5ba5",
+          "claim": "Die im Kabinett beschlossene Vorlage habe den Redispatch-Vorbehalt im Netzpaket entschärft; die Grenze für Nichtentschädigung sei von drei auf fünf Prozent angehoben worden.",
+          "status": "single_source_claim",
+          "source_id": "klimareporter-news",
+          "evidence": [
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+              "excerpt_hash": "34c7ba5e2da6b21e7d41",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            },
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+              "excerpt_hash": "bd15d0fed060c61c7731",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            },
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+              "excerpt_hash": "c9644faff64e423a961c",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T11:13:52.837Z"
+        }
+      ],
+      "event_id": "event-2410faf299ae9f05a290",
+      "event_first_seen_at": "2026-09-09T11:12:49.530Z",
+      "event_detected_at": "2026-09-09T11:12:49.530Z",
+      "verification_started_at": "2026-09-09T11:13:29.533Z",
+      "publish_ready_at": "2026-09-09T11:13:52.837Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-09T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "klimareporter-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T11:12:49.530Z",
+        "fingerprint": "79767aab7a20598ca614fc887e41bbb52c5720b2315f91fecd1bd555a06bfa08",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und in welcher Form Bundestag oder Bundesrat die EEG-Reform und das Netzpaket noch ändern.",
+          "source_id": "klimareporter-news",
+          "expected_by": null,
+          "measurable_indicator": "Änderungsanträge, Abstimmungsergebnisse, Beschlussfassung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-39b6503ec46af84f",
+          "announced_at": "2026-09-09T10:32:17.000Z",
+          "follow_up_date": "2026-09-16T11:13:52.837Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die zusätzlichen 5.000 Megawatt tatsächlich in einem späteren Verfahren gesichert werden.",
+          "source_id": "klimareporter-news",
+          "expected_by": null,
+          "measurable_indicator": "Gesetzeswortlaut, Ausschreibungsvolumen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-52a77910125f58a0",
+          "announced_at": "2026-09-09T10:32:17.000Z",
+          "follow_up_date": "2026-09-16T11:13:52.837Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "d700c686e12b0fddbee73bb7f62b2ee69e1b9f6ce7ee9dd886db1d9f82db3039",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-09T11:13:52.837Z",
+        "sources": [
+          {
+            "source_id": "klimareporter-news",
+            "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+            "content_hash": "7c46644c142aed46f6302f2c0d107f080be09518f7785e3304a795c5dfe8e653",
+            "excerpt_hash": "2df21a3c6c8026a1632211cfa7bde99811dc52a102b69c64c93d3c05ddece0e4",
+            "number_locale": "de",
+            "numbers": [
+              "9.09",
+              "2026",
+              "16300",
+              "2022",
+              "2012",
+              "12000",
+              "5000",
+              "16",
+              "10000",
+              "2032"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Im Interview mit Klimareporter° kritisiert Schleswig-Holsteins Energie- und Umweltminister Tobias Goldschmidt die Haltung der Bundeswirtschaftsministerin zu EEG-Reform und Netzpaket. Er sagt, die Länder könnten im Bundesrat nur über neue Allianzen etwas ausrichten. Goldschmidt verweist auf bereits erreichte Änderungen: Im Gesetzentwurf stünden nun 12.000 Megawatt für Windkraft-Sonderausschreibungen; die Länder wollten zusätzlich 5.000 Megawatt behalten.\n\nAußerdem sei der Redispatch-Vorbehalt im Kabinettsentwurf entschärft worden, die Schwelle für nicht zu entschädigenden abgeregelten Strom liege nun bei fünf statt drei Prozent. Offen bleibt, wie Bundestag und Bundesrat weiter entscheiden.",
+      "analysis": {
+        "story_id": "wt-127329d8756c5ba5",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Im Kern geht es um Streit über EEG-Reform und Netzpaket. Goldschmidt beschreibt bereits sichtbare Änderungen und weitere offene Verhandlungen.",
+        "detail_summary": "Die Meldung ist ein Interview mit dem schleswig-holsteinischen Energie- und Umweltminister Tobias Goldschmidt. Er sagt, die Länder könnten bei EEG-Reform und Netzpaket nur über neue Allianzen etwas bewirken. Als sichtbaren Zwischenstand nennt er 12.000 Megawatt für Windkraft-Sonderausschreibungen im Gesetzentwurf und den weiter offenen Wunsch nach zusätzlichen 5.000 Megawatt. Außerdem beschreibt er, dass der Redispatch-Vorbehalt im vom Kabinett beschlossenen Entwurf entschärft worden sei; die Grenze für nicht entschädigten abgeregelten Strom liege nun bei fünf statt drei Prozent. Materiell relevant ist das, weil Netzregeln und Ausschreibungsvolumen Investitionen, Einspeisung und die Behandlung von Erneuerbaren unmittelbar beeinflussen können. Die Kausalität für spätere Markt- oder Klimawirkungen bleibt aber offen, weil hier nur eine politische Zwischenlage und eine journalistisch wiedergegebene Akteurssicht vorliegt.",
+        "why_relevant": "Die Meldung beschreibt eine laufende Änderung an Regeln für Erneuerbare und Netzbetrieb mit möglichem Einfluss auf Investitionen, Einspeisung und Entschädigungsregeln.",
+        "status": "Entwurf",
+        "analysis_type": "ex_ante",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Mehr Windkraftausschreibungen und ein niedrigeres Entschädigungsrisiko können Ausbau und Planbarkeit stützen; zugleich bleibt der Nettowirkpfad offen, weil die weitere Gesetzgebung und Umsetzung noch nicht feststehen.",
+          "positive_path": {
+            "mechanism": "Mehr Ausschreibungsvolumen und weniger harte Abregelungsregeln können Investitionen und Ausbau erneuerbarer Erzeugung erleichtern.",
+            "source_ids": [
+              "klimareporter-news"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Bleiben Konflikte, Verzögerungen oder strenge Netzregeln bestehen, kann das Erneuerbaren-Ausbau und Einspeisung weiter bremsen.",
+            "source_ids": [
+              "klimareporter-news"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Für den Klimaschutz ist mehr erneuerbarer Ausbau eher günstig, doch die tatsächliche Umweltwirkung hängt von Umsetzung, Geschwindigkeit und Netzintegration ab.",
+          "positive_path": {
+            "mechanism": "Höheres Ausschreibungsvolumen für Wind kann zusätzlichen erneuerbaren Strom ermöglichen und fossile Erzeugung verdrängen.",
+            "source_ids": [
+              "klimareporter-news"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn die Änderungen im Verfahren verwässert oder verzögert werden, bleibt der zusätzliche Klimanutzen aus.",
+            "source_ids": [
+              "klimareporter-news"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Meldung zeigt Bundesrat, Kabinett und Bundestag als verhandelnde Arenen; das kann demokratische Korrekturpfade sichtbar machen, ohne den Ausgang schon zu kennen.",
+          "positive_path": {
+            "mechanism": "Länderallianzen und parlamentarische Nachsteuerung können Entscheidungen überprüfbar verändern und Korrekturen ermöglichen.",
+            "source_ids": [
+              "klimareporter-news"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn Dialog und Nachsteuerung ausbleiben, sinkt die Korrekturfähigkeit in einem politisch strittigen Infrastrukturfeld.",
+            "source_ids": [
+              "klimareporter-news"
+            ]
+          }
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Meldung betrifft Regeln für Ausbau und Abregelung erneuerbarer Energie. Das kann Investitionen, Netzbetrieb und den weiteren Umbau des Stromsystems beeinflussen.",
+        "impact_risks": [
+          "Verzögerte oder abgeschwächte Änderungen können Ausbauziele bremsen.",
+          "Konflikte zwischen Ländern, Bundesregierung und Verbänden können die Verabschiedung weiter verzögern.",
+          "Unklare Endfassung erschwert Investitions- und Planungsentscheidungen."
+        ],
+        "mechanisms": [
+          "Änderung von Ausschreibungsvolumen",
+          "Änderung von Netz- und Entschädigungsregeln",
+          "politische Nachverhandlung zwischen Bund und Ländern"
+        ],
+        "first_order": [
+          "Mehr oder weniger Planungssicherheit für Windprojekte",
+          "Änderung der wirtschaftlichen Anreize bei Abregelung erneuerbaren Stroms"
+        ],
+        "second_order": [
+          "Verschiebung von Investitionsentscheidungen",
+          "Einfluss auf Netz- und Ausbaukoordination"
+        ],
+        "third_order": [
+          "Mögliche Beschleunigung oder Bremsung des Energiesystemumbaus"
+        ],
+        "systemic_relevance": "Das Thema berührt Strommarkt, Netzinfrastruktur und Investitionsanreize und kann damit systemisch auf den Umbau des Energiesystems wirken.",
+        "transformation_potential": "Mittelbar kann die Regeländerung den Ausbau erneuerbarer Erzeugung und die politische Steuerung des Stromsystems beeinflussen.",
+        "resilience": "Die Meldung spricht für höhere politische Anpassungsfähigkeit, wenn Länderallianzen tatsächlich zu belastbaren Korrekturen führen; offen bleibt, wie stabil das Ergebnis ist.",
+        "side_effects": [
+          "Mögliche Verschiebungen zwischen Erzeugern, Netzbetreibern und Ländern",
+          "Unklare Folgekosten oder Entschädigungsfragen bei Abregelung"
+        ],
+        "uncertainties": [
+          "Der Artikel ist ein Interview und bildet vor allem die Sicht von Tobias Goldschmidt ab.",
+          "Die endgültige Fassung der Reform ist noch offen.",
+          "Die spätere Wirkung auf Ausbau und Klima lässt sich aus der Meldung nicht messen."
+        ],
+        "evidence_level": "mittel",
+        "attribution": "Quelle: Klimareporter°. Sprecher: Tobias Goldschmidt. Originalformulierung im Interview und in der Überschrift, als journalistisch wiedergegebene Aussage und Paraphrase. Platzierung: Überschrift und Interviewtext. Klarheit: teils zugespitzt im Titel, im Text differenzierter.",
+        "watch_next": [
+          "Änderungen im Bundestags- und Bundesratsverfahren",
+          "Endgültige Fassung von EEG-Reform und Netzpaket",
+          "Stellungnahmen weiterer Länder und Verbände"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung enthält neue, politisch relevante Zwischenstände zu EEG-Reform, Netzpaket, Ausschreibungsvolumen und Redispatch-Regelung; das ist mehr als eine bloße Wiederholung."
+        },
+        "visuals": {
+          "path_directions": [
+            {
+              "order": "second_order",
+              "path": "Verschiebung von Investitionsentscheidungen",
+              "direction": "open",
+              "condition": "Nur wenn Unternehmen die Regeländerungen als belastbar ansehen, kann daraus ein Investitionsimpuls werden.",
+              "evidence": "scenario",
+              "claim_ids": [],
+              "dimensions": [
+                "planet"
+              ]
+            },
+            {
+              "order": "third_order",
+              "path": "Mögliche Beschleunigung oder Bremsung des Energiesystemumbaus",
+              "direction": "open",
+              "condition": "Nur bei Umsetzung, Rechtsklarheit und ausreichender Netzintegration könnte sich der Umbau des Stromsystems spürbar verändern.",
+              "evidence": "scenario",
+              "claim_ids": [],
+              "dimensions": [
+                "planet"
+              ]
+            }
+          ],
+          "affected_groups": [
+            "unternehmen",
+            "kommunen",
+            "staat",
+            "verbraucherinnen"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-09T11:12:49.530Z",
+        "media_trigger_fingerprint": "75a447f75c409990c2ea06fceff3501dca3506daa00683d9700f7edde7e8f1dc",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "actor_statement_in_prominent_position"
+          ],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "75a447f75c409990c2ea06fceff3501dca3506daa00683d9700f7edde7e8f1dc",
+          "content_fingerprint": "5763f3bac664cf01e10f5cc4e92c46f4a3737f4edf383980b5c07ed8804b2eea",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-09T11:13:52.837Z",
+          "content_hash": "d700c686e12b0fddbee73bb7f62b2ee69e1b9f6ce7ee9dd886db1d9f82db3039",
+          "source_summary": "Im Interview mit Klimareporter° kritisiert Schleswig-Holsteins Energie- und Umweltminister Tobias Goldschmidt die Haltung der Bundeswirtschaftsministerin zu EEG-Reform und Netzpaket. Er sagt, die Länder könnten im Bundesrat nur über neue Allianzen etwas ausrichten. Goldschmidt verweist auf bereits erreichte Änderungen: Im Gesetzentwurf stünden nun 12.000 Megawatt für Windkraft-Sonderausschreibungen; die Länder wollten zusätzlich 5.000 Megawatt behalten.\n\nAußerdem sei der Redispatch-Vorbehalt im Kabinettsentwurf entschärft worden, die Schwelle für nicht zu entschädigenden abgeregelten Strom liege nun bei fünf statt drei Prozent. Offen bleibt, wie Bundestag und Bundesrat weiter entscheiden.",
+          "analysis": {
+            "story_id": "wt-127329d8756c5ba5",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Im Kern geht es um Streit über EEG-Reform und Netzpaket. Goldschmidt beschreibt bereits sichtbare Änderungen und weitere offene Verhandlungen.",
+            "detail_summary": "Die Meldung ist ein Interview mit dem schleswig-holsteinischen Energie- und Umweltminister Tobias Goldschmidt. Er sagt, die Länder könnten bei EEG-Reform und Netzpaket nur über neue Allianzen etwas bewirken. Als sichtbaren Zwischenstand nennt er 12.000 Megawatt für Windkraft-Sonderausschreibungen im Gesetzentwurf und den weiter offenen Wunsch nach zusätzlichen 5.000 Megawatt. Außerdem beschreibt er, dass der Redispatch-Vorbehalt im vom Kabinett beschlossenen Entwurf entschärft worden sei; die Grenze für nicht entschädigten abgeregelten Strom liege nun bei fünf statt drei Prozent. Materiell relevant ist das, weil Netzregeln und Ausschreibungsvolumen Investitionen, Einspeisung und die Behandlung von Erneuerbaren unmittelbar beeinflussen können. Die Kausalität für spätere Markt- oder Klimawirkungen bleibt aber offen, weil hier nur eine politische Zwischenlage und eine journalistisch wiedergegebene Akteurssicht vorliegt.",
+            "why_relevant": "Die Meldung beschreibt eine laufende Änderung an Regeln für Erneuerbare und Netzbetrieb mit möglichem Einfluss auf Investitionen, Einspeisung und Entschädigungsregeln.",
+            "status": "Entwurf",
+            "analysis_type": "ex_ante",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "direction_basis": "assessed",
+              "rationale": "Mehr Windkraftausschreibungen und ein niedrigeres Entschädigungsrisiko können Ausbau und Planbarkeit stützen; zugleich bleibt der Nettowirkpfad offen, weil die weitere Gesetzgebung und Umsetzung noch nicht feststehen.",
+              "positive_path": {
+                "mechanism": "Mehr Ausschreibungsvolumen und weniger harte Abregelungsregeln können Investitionen und Ausbau erneuerbarer Erzeugung erleichtern.",
+                "source_ids": [
+                  "klimareporter-news"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Bleiben Konflikte, Verzögerungen oder strenge Netzregeln bestehen, kann das Erneuerbaren-Ausbau und Einspeisung weiter bremsen.",
+                "source_ids": [
+                  "klimareporter-news"
+                ]
+              }
+            },
+            "planet": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "direction_basis": "assessed",
+              "rationale": "Für den Klimaschutz ist mehr erneuerbarer Ausbau eher günstig, doch die tatsächliche Umweltwirkung hängt von Umsetzung, Geschwindigkeit und Netzintegration ab.",
+              "positive_path": {
+                "mechanism": "Höheres Ausschreibungsvolumen für Wind kann zusätzlichen erneuerbaren Strom ermöglichen und fossile Erzeugung verdrängen.",
+                "source_ids": [
+                  "klimareporter-news"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Wenn die Änderungen im Verfahren verwässert oder verzögert werden, bleibt der zusätzliche Klimanutzen aus.",
+                "source_ids": [
+                  "klimareporter-news"
+                ]
+              }
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "chance",
+              "direction_basis": "assessed",
+              "rationale": "Die Meldung zeigt Bundesrat, Kabinett und Bundestag als verhandelnde Arenen; das kann demokratische Korrekturpfade sichtbar machen, ohne den Ausgang schon zu kennen.",
+              "positive_path": {
+                "mechanism": "Länderallianzen und parlamentarische Nachsteuerung können Entscheidungen überprüfbar verändern und Korrekturen ermöglichen.",
+                "source_ids": [
+                  "klimareporter-news"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Wenn Dialog und Nachsteuerung ausbleiben, sinkt die Korrekturfähigkeit in einem politisch strittigen Infrastrukturfeld.",
+                "source_ids": [
+                  "klimareporter-news"
+                ]
+              }
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Meldung betrifft Regeln für Ausbau und Abregelung erneuerbarer Energie. Das kann Investitionen, Netzbetrieb und den weiteren Umbau des Stromsystems beeinflussen.",
+            "impact_risks": [
+              "Verzögerte oder abgeschwächte Änderungen können Ausbauziele bremsen.",
+              "Konflikte zwischen Ländern, Bundesregierung und Verbänden können die Verabschiedung weiter verzögern.",
+              "Unklare Endfassung erschwert Investitions- und Planungsentscheidungen."
+            ],
+            "mechanisms": [
+              "Änderung von Ausschreibungsvolumen",
+              "Änderung von Netz- und Entschädigungsregeln",
+              "politische Nachverhandlung zwischen Bund und Ländern"
+            ],
+            "first_order": [
+              "Mehr oder weniger Planungssicherheit für Windprojekte",
+              "Änderung der wirtschaftlichen Anreize bei Abregelung erneuerbaren Stroms"
+            ],
+            "second_order": [
+              "Verschiebung von Investitionsentscheidungen",
+              "Einfluss auf Netz- und Ausbaukoordination"
+            ],
+            "third_order": [
+              "Mögliche Beschleunigung oder Bremsung des Energiesystemumbaus"
+            ],
+            "systemic_relevance": "Das Thema berührt Strommarkt, Netzinfrastruktur und Investitionsanreize und kann damit systemisch auf den Umbau des Energiesystems wirken.",
+            "transformation_potential": "Mittelbar kann die Regeländerung den Ausbau erneuerbarer Erzeugung und die politische Steuerung des Stromsystems beeinflussen.",
+            "resilience": "Die Meldung spricht für höhere politische Anpassungsfähigkeit, wenn Länderallianzen tatsächlich zu belastbaren Korrekturen führen; offen bleibt, wie stabil das Ergebnis ist.",
+            "side_effects": [
+              "Mögliche Verschiebungen zwischen Erzeugern, Netzbetreibern und Ländern",
+              "Unklare Folgekosten oder Entschädigungsfragen bei Abregelung"
+            ],
+            "uncertainties": [
+              "Der Artikel ist ein Interview und bildet vor allem die Sicht von Tobias Goldschmidt ab.",
+              "Die endgültige Fassung der Reform ist noch offen.",
+              "Die spätere Wirkung auf Ausbau und Klima lässt sich aus der Meldung nicht messen."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Quelle: Klimareporter°. Sprecher: Tobias Goldschmidt. Originalformulierung im Interview und in der Überschrift, als journalistisch wiedergegebene Aussage und Paraphrase. Platzierung: Überschrift und Interviewtext. Klarheit: teils zugespitzt im Titel, im Text differenzierter.",
+            "watch_next": [
+              "Änderungen im Bundestags- und Bundesratsverfahren",
+              "Endgültige Fassung von EEG-Reform und Netzpaket",
+              "Stellungnahmen weiterer Länder und Verbände"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung enthält neue, politisch relevante Zwischenstände zu EEG-Reform, Netzpaket, Ausschreibungsvolumen und Redispatch-Regelung; das ist mehr als eine bloße Wiederholung."
+            },
+            "visuals": {
+              "path_directions": [
+                {
+                  "order": "second_order",
+                  "path": "Verschiebung von Investitionsentscheidungen",
+                  "direction": "open",
+                  "condition": "Nur wenn Unternehmen die Regeländerungen als belastbar ansehen, kann daraus ein Investitionsimpuls werden.",
+                  "evidence": "scenario",
+                  "claim_ids": [],
+                  "dimensions": [
+                    "planet"
+                  ]
+                },
+                {
+                  "order": "third_order",
+                  "path": "Mögliche Beschleunigung oder Bremsung des Energiesystemumbaus",
+                  "direction": "open",
+                  "condition": "Nur bei Umsetzung, Rechtsklarheit und ausreichender Netzintegration könnte sich der Umbau des Stromsystems spürbar verändern.",
+                  "evidence": "scenario",
+                  "claim_ids": [],
+                  "dimensions": [
+                    "planet"
+                  ]
+                }
+              ],
+              "affected_groups": [
+                "unternehmen",
+                "kommunen",
+                "staat",
+                "verbraucherinnen"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-09T11:12:49.530Z",
+            "media_trigger_fingerprint": "75a447f75c409990c2ea06fceff3501dca3506daa00683d9700f7edde7e8f1dc",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "actor_statement_in_prominent_position"
+              ],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "75a447f75c409990c2ea06fceff3501dca3506daa00683d9700f7edde7e8f1dc",
+              "content_fingerprint": "5763f3bac664cf01e10f5cc4e92c46f4a3737f4edf383980b5c07ed8804b2eea",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-127329d8756c5ba5-v1-claim-1",
+              "story_id": "wt-127329d8756c5ba5",
+              "claim": "Tobias Goldschmidt sagt, im Bundesrat könnten die Länder bei EEG-Reform und Netzpaket nur etwas ausrichten, wenn sie wieder Allianzen bilden.",
+              "status": "single_source_claim",
+              "source_id": "klimareporter-news",
+              "evidence": [
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+                  "excerpt_hash": "1da4cef55c5eabbca5e2",
+                  "checked_at": "2026-09-09T11:13:52.837Z"
+                },
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+                  "excerpt_hash": "a022787c00d71d2c9d0c",
+                  "checked_at": "2026-09-09T11:13:52.837Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            },
+            {
+              "claim_id": "wt-127329d8756c5ba5-v1-claim-2",
+              "story_id": "wt-127329d8756c5ba5",
+              "claim": "Die Länder hätten in der jetzigen Form die EEG-Reform und das Netzpaket abgelehnt.",
+              "status": "single_source_claim",
+              "source_id": "klimareporter-news",
+              "evidence": [
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+                  "excerpt_hash": "6209438c81cf83f0952f",
+                  "checked_at": "2026-09-09T11:13:52.837Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            },
+            {
+              "claim_id": "wt-127329d8756c5ba5-v1-claim-3",
+              "story_id": "wt-127329d8756c5ba5",
+              "claim": "Im Gesetzentwurf zu Windkraft-Sonderausschreibungen stünden jetzt 12.000 Megawatt über die nächsten Jahre, nach Druck von Bayern und Schleswig-Holstein.",
+              "status": "single_source_claim",
+              "source_id": "klimareporter-news",
+              "evidence": [
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+                  "excerpt_hash": "8eae958e7fa3c6a775b9",
+                  "checked_at": "2026-09-09T11:13:52.837Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            },
+            {
+              "claim_id": "wt-127329d8756c5ba5-v1-claim-4",
+              "story_id": "wt-127329d8756c5ba5",
+              "claim": "Die Länder wollten weiter auf zusätzlichen 5.000 Megawatt bestehen, die schon in diesem Jahr gefordert worden waren.",
+              "status": "single_source_claim",
+              "source_id": "klimareporter-news",
+              "evidence": [
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+                  "excerpt_hash": "57b0bd737e03839a9069",
+                  "checked_at": "2026-09-09T11:13:52.837Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            },
+            {
+              "claim_id": "wt-127329d8756c5ba5-v1-claim-5",
+              "story_id": "wt-127329d8756c5ba5",
+              "claim": "Die im Kabinett beschlossene Vorlage habe den Redispatch-Vorbehalt im Netzpaket entschärft; die Grenze für Nichtentschädigung sei von drei auf fünf Prozent angehoben worden.",
+              "status": "single_source_claim",
+              "source_id": "klimareporter-news",
+              "evidence": [
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+                  "excerpt_hash": "34c7ba5e2da6b21e7d41",
+                  "checked_at": "2026-09-09T11:13:52.837Z"
+                },
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+                  "excerpt_hash": "bd15d0fed060c61c7731",
+                  "checked_at": "2026-09-09T11:13:52.837Z"
+                },
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+                  "excerpt_hash": "c9644faff64e423a961c",
+                  "checked_at": "2026-09-09T11:13:52.837Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T11:13:52.837Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+              "content_hash": "7c46644c142aed46f6302f2c0d107f080be09518f7785e3304a795c5dfe8e653"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-09T11:13:52.837Z",
+            "sources": [
+              {
+                "source_id": "klimareporter-news",
+                "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+                "content_hash": "7c46644c142aed46f6302f2c0d107f080be09518f7785e3304a795c5dfe8e653",
+                "excerpt_hash": "2df21a3c6c8026a1632211cfa7bde99811dc52a102b69c64c93d3c05ddece0e4",
+                "number_locale": "de",
+                "numbers": [
+                  "9.09",
+                  "2026",
+                  "16300",
+                  "2022",
+                  "2012",
+                  "12000",
+                  "5000",
+                  "16",
+                  "10000",
+                  "2032"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-09T11:13:52.837Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-09T11:32:31.457Z"
+      }
+    },
+    {
       "story_id": "wt-15665d71bdf5b2ab",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "94b1a124ce952460a9ba11dffcc4b956dd58abdd9500426b7cd72cd99d80a70e",
+        "first_failed_at": "2026-09-09T11:12:49.530Z",
+        "failed_at": "2026-09-09T11:12:49.530Z",
+        "retry_after": "2026-09-09T11:27:49.530Z",
+        "retry_count": 1
+      },
       "slug": "statistik-zahl-der-berufspendler-bundesweit-gestiegen-munchen-hat-die-meisten-pendler-f5b2ab",
       "title": "Statistik - Zahl der Berufspendler bundesweit gestiegen - München hat die meisten Pendler",
       "first_seen": "2026-09-09T11:04:41.000Z",
@@ -66,20 +1477,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         }
       ],
       "content_hash": "1b585c479d3487577f19e53b9c8e7a5d03cbf6fccf5e5940adea9237d09e0c48",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE",
+        "AI_EXCESSIVE_SOURCE_SUMMARY_COPY"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-09T11:27:49.530Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T11:07:22.757Z",
+      "updated_at": "2026-09-09T11:12:49.530Z",
       "event_first_seen_at": "2026-09-09T11:07:22.757Z",
       "event_detected_at": "2026-09-09T11:07:22.757Z",
       "event_id": "event-9d1a0cdf02447284e44d",
@@ -114,20 +1528,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2.69595,
+        "source_age_minutes": 8.142166666666666,
         "detection_delay_minutes": 2.69595,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 5.4462166666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 98,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T11:07:22.757Z",
+        "checked_at": "2026-09-09T11:12:49.530Z",
         "fingerprint": "95071ead4a28bce6ce4cde4d88f04d30ff9ef15b0ea50183251fc99d001c0418",
         "issue_codes": [],
         "warning_codes": []
@@ -135,6 +1549,14 @@
     },
     {
       "story_id": "wt-6b10239f7a157289",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "89699bb8d798163241bb8357a08be5f99c6fafa60c958e1fdf530c49efbb99bd",
+        "first_failed_at": "2026-09-09T11:12:49.530Z",
+        "failed_at": "2026-09-09T11:12:49.530Z",
+        "retry_after": "2026-09-09T11:27:49.530Z",
+        "retry_count": 1
+      },
       "slug": "im-wahlkampf-versuchter-hackerangriff-auf-instagram-kanal-des-grunen-graf-157289",
       "title": "Im Wahlkampf: Versuchter Hackerangriff auf Instagram-Kanal des Grünen Graf",
       "first_seen": "2026-09-09T10:52:12.000Z",
@@ -196,20 +1618,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         }
       ],
       "content_hash": "200f0fbe72d272440d34c86afe534292011b60389005a720ce37f47174494b1b",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T11:27:49.530Z",
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T11:07:22.757Z",
+      "updated_at": "2026-09-09T11:12:49.530Z",
       "event_first_seen_at": "2026-09-09T11:07:22.757Z",
       "event_detected_at": "2026-09-09T11:07:22.757Z",
       "event_id": "event-aaad5deb09757ee6688d",
@@ -244,27 +1666,47 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 15.179283333333334,
+        "source_age_minutes": 20.6255,
         "detection_delay_minutes": 15.179283333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 5.4462166666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 96,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T11:07:22.757Z",
+        "checked_at": "2026-09-09T11:12:49.530Z",
         "fingerprint": "1f658a15da2e900d512fb9f232a1e9f7206c3b6ab406eefcdb356452ae552e94",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T11:12:49.530Z",
+      "rejection": {
+        "at": "2026-09-09T11:12:49.530Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
       "story_id": "wt-a098a78411837ab4",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "ff886b9541612fa08f3796f6a6c930433f292713f5940fc74dbc738fb81539bb",
+        "first_failed_at": "2026-09-09T11:12:49.530Z",
+        "failed_at": "2026-09-09T11:12:49.530Z",
+        "retry_after": "2026-09-09T11:27:49.530Z",
+        "retry_count": 1
+      },
       "slug": "vorgehen-gegen-airbnb-und-co-brussel-schlagt-regeln-fur-stadte-vor-837ab4",
       "title": "Vorgehen gegen Airbnb und Co.: Brüssel schlägt Regeln für Städte vor",
       "first_seen": "2026-09-09T10:51:18.000Z",
@@ -328,20 +1770,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         }
       ],
       "content_hash": "07b65e5b3f92ce47aaab37897b49e9fc8c3d6734f662cff074b7d524b8b076b4",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T11:27:49.530Z",
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T11:07:22.757Z",
+      "updated_at": "2026-09-09T11:12:49.530Z",
       "event_first_seen_at": "2026-09-09T11:07:22.757Z",
       "event_detected_at": "2026-09-09T11:07:22.757Z",
       "event_id": "event-a7e16e7a3cfe6fdf93c4",
@@ -378,23 +1820,183 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 16.079283333333333,
+        "source_age_minutes": 21.5255,
         "detection_delay_minutes": 16.079283333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 5.4462166666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 96,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T11:07:22.757Z",
+        "checked_at": "2026-09-09T11:12:49.530Z",
         "fingerprint": "303b1b47817ed6c3f4d627f2378d70e24b58b41bf2264627503e94bcf0f16de9",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T11:12:49.530Z",
+      "rejection": {
+        "at": "2026-09-09T11:12:49.530Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-c6db7cc2464cd6c4",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "84bf86a11a04017cd60866ec4ef842982792d71af123dbdbc2aa052bd2328952",
+        "first_failed_at": "2026-09-09T11:12:49.530Z",
+        "failed_at": "2026-09-09T11:12:49.530Z",
+        "retry_after": "2026-09-09T11:27:49.530Z",
+        "retry_count": 1
+      },
+      "slug": "auf-lucke-gespielt-was-in-berlin-den-rhysida-angriff-begunstigte-4cd6c4",
+      "title": "Auf Lücke gespielt: Was in Berlin den Rhysida-Angriff begünstigte",
+      "first_seen": "2026-09-09T10:44:00.000Z",
+      "last_updated": "2026-09-09T10:44:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "heise-security",
+          "publisher": "heise Security",
+          "url": "https://www.heise.de/meinung/Auf-Luecke-gespielt-Was-in-Berlin-den-Rhysida-Angriff-beguenstigte-11445881.html",
+          "title": "Auf Lücke gespielt: Was in Berlin den Rhysida-Angriff begünstigte",
+          "summary": "Berlin hat bei der IT-Sicherheit geschlampt. Den Angreifern hat über Jahrzehnte gewachsene und nur halbherzig modernisierte IT in die Karten gespielt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T10:44:00.000Z",
+          "primary_source": false,
+          "source_priority": 86,
+          "source_topic": "Digitalisierung",
+          "content_hash": "4168e604456c030398fb1f6d4902bab5648691981e6f75f0c30a1740a9d6ee43",
+          "source_item_id": "a79042e37d11f80b8e1e2aa032693435fbec6d60b51f5ee72fa06ba9f537809f",
+          "publisher_id": "heise",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "blindspot",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T10:44:00.000Z",
+          "ingested_at": "2026-09-09T11:12:49.530Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:heise",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c6db7cc2464cd6c4-claim-01",
+          "story_id": "wt-c6db7cc2464cd6c4",
+          "claim": "Auf Lücke gespielt: Was in Berlin den Rhysida-Angriff begünstigte: Berlin hat bei der IT-Sicherheit geschlampt. Den Angreifern hat über Jahrzehnte gewachsene und nur halbherzig modernisierte IT in die Karten gespielt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "heise-security",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:heise",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T11:12:49.530Z"
+        }
+      ],
+      "content_hash": "a3051bbe8dcb72ef0ae4b4d2eaf712c1160c06f112b92509d30691565ec8056e",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-09T11:27:49.530Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T11:12:49.530Z",
+      "event_first_seen_at": "2026-09-09T11:12:49.530Z",
+      "event_detected_at": "2026-09-09T11:12:49.530Z",
+      "event_id": "event-b554b314cd3410c1e4ea",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 28.8255,
+        "detection_delay_minutes": 28.8255,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T11:12:49.530Z",
+        "fingerprint": "082e11677c63eaa8686aa1efedd9d4070708aa34f6e7e4405a76b1d52587fbe6",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T11:12:49.530Z",
+      "rejection": {
+        "at": "2026-09-09T11:12:49.530Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -8489,10 +10091,14 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 2,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE",
+          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+        ],
+        "quality_retry_count": 3,
+        "quality_retry_after": "2026-09-09T12:12:49.530Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -8500,7 +10106,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "2ebceb40b714dd10a4484776b7053c146755f3065e7d0a37abea5ad2baaa3dac",
           "issue_codes": [],
           "warning_codes": []
@@ -8510,9 +10116,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "19bb715bea19aecb51b8832931aa86fc1210d8b3cff09a7f373ad32f66ddb83d",
         "first_failed_at": "2026-09-09T10:21:42.967Z",
-        "failed_at": "2026-09-09T10:37:16.594Z",
-        "retry_after": "2026-09-09T11:07:16.594Z",
-        "retry_count": 2
+        "failed_at": "2026-09-09T11:12:49.530Z",
+        "retry_after": "2026-09-09T12:12:49.530Z",
+        "retry_count": 3
       }
     },
     {
@@ -9050,7 +10656,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -9061,7 +10667,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "c51a6a6c268becc634c0d939bbed9e1b5c50bab5d2fbfe096ef20a8988cbdf22",
           "issue_codes": [],
           "warning_codes": []
@@ -9565,7 +11171,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -9576,7 +11182,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "694f1e59b077b9f8c608a3538526072926dbea4a48e8bb4ab446a73ab6fbc375",
           "issue_codes": [],
           "warning_codes": []
@@ -13097,7 +14703,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -13108,7 +14714,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "b07c1044c13139f953828ef099425d856ace52e0393162d5248f56719049fe3e",
           "issue_codes": [],
           "warning_codes": []
@@ -15426,7 +17032,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -15437,7 +17043,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
           "issue_codes": [],
           "warning_codes": []
@@ -16665,7 +18271,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -16676,7 +18282,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "0c59257b7f229b4525f991d215e40acd4338a0901f548bea4671dd037f615fad",
           "issue_codes": [],
           "warning_codes": []
@@ -18066,7 +19672,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -18077,7 +19683,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "bb7a5588e7ab778e0e72e6f4cccdcb1d0ae39518fdb20485129fbf53d745c3ef",
           "issue_codes": [],
           "warning_codes": []
@@ -20627,7 +22233,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -20638,7 +22244,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "2d967ebef56891fb5b7db628ee84539aed5971c3f41eea66bf2a66e035ade3f0",
           "issue_codes": [],
           "warning_codes": []
@@ -21617,7 +23223,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -21628,7 +23234,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "43e263c3b728aa4d6c1579552f106ce9474e539d6af84087dbe9dfe0b503165a",
           "issue_codes": [],
           "warning_codes": []
@@ -22502,7 +24108,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -22513,7 +24119,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "00745e32348705095e7193eb7f51b7e60e4211b36349f0379d5c458470069acb",
           "issue_codes": [],
           "warning_codes": []
@@ -23889,7 +25495,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -23900,7 +25506,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "40edeffc10f76ac729263cf26d9219be8ce046bcc15081437c14b3359b0fdfae",
           "issue_codes": [],
           "warning_codes": []
@@ -26280,7 +27886,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -26291,7 +27897,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "fd023c485e0b3ed33b65d77ed5513973bc866b82062ccb744777b35c0783a309",
           "issue_codes": [],
           "warning_codes": []
@@ -26905,7 +28511,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -26916,7 +28522,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "89936e0172dca057489613122967481af6ae3d49f32909881997e0b915328fd0",
           "issue_codes": [],
           "warning_codes": []
@@ -27666,7 +29272,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -27677,7 +29283,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "771af662c62e40f4e1dcbe83067df293cf64e8291cb7bc5e37aa95a5ae296855",
           "issue_codes": [],
           "warning_codes": []
@@ -28347,7 +29953,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T07:57:06.653Z"
+        "retry_after": "2026-09-09T11:32:54.419Z"
       },
       "pending_update": {
         "detected_at": "2026-09-09T10:07:31.404Z",
@@ -28387,7 +29993,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -28398,7 +30004,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "5bf0079782476452cd4b50422972aafc1839912b11c42105b8258dcb924a055a",
           "issue_codes": [],
           "warning_codes": []
@@ -29043,7 +30649,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T07:57:00.854Z"
+        "retry_after": "2026-09-09T11:32:49.092Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -35280,10 +36886,15 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 4,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE",
+          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+        ],
+        "quality_retry_count": 5,
+        "quality_retry_after": "2026-09-09T12:12:49.530Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -35291,7 +36902,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "9a2ff324815be8589ad4f9b9c2da92337f61a5e3de8df33873410d7d1bb2b1f0",
           "issue_codes": [],
           "warning_codes": []
@@ -35301,9 +36912,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "d26099ccddc2a40dc4e1c81fb1eeafb1566f4cb853e6ff2a9e3a9ac81d30b757",
         "first_failed_at": "2026-09-09T09:37:00.628Z",
-        "failed_at": "2026-09-09T10:07:31.404Z",
-        "retry_after": "2026-09-09T10:37:31.404Z",
-        "retry_count": 2
+        "failed_at": "2026-09-09T11:12:49.530Z",
+        "retry_after": "2026-09-09T12:12:49.530Z",
+        "retry_count": 3
       }
     },
     {
@@ -36133,7 +37744,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -36144,7 +37755,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "3037a1d42e9e581af7193dffb83c5d5dedad0e73b1af2289d4607930fd0d5b62",
           "issue_codes": [],
           "warning_codes": []
@@ -39806,7 +41417,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -39817,7 +41428,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "1efa3fa74f2770221ef9efac103a0a38be0f98820ad08782bc080d18496d51db",
           "issue_codes": [],
           "warning_codes": []
@@ -44430,7 +46041,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -44441,7 +46052,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "fada684c913b1511f4b664c4800c3b5ed71f9a95565753e62994fc4d1b7d2c3a",
           "issue_codes": [],
           "warning_codes": []
@@ -45530,7 +47141,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -45541,7 +47152,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "53f93df4d1e534788f614f7964cd327043bdce46694f9d12100257749b54cc1b",
           "issue_codes": [],
           "warning_codes": []
@@ -46129,7 +47740,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T07:56:55.587Z"
+        "retry_after": "2026-09-09T11:32:43.943Z"
       },
       "pending_update": {
         "detected_at": "2026-09-09T05:06:53.221Z",
@@ -46169,7 +47780,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -46180,7 +47791,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
           "issue_codes": [],
           "warning_codes": []
@@ -47442,7 +49053,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -47453,7 +49064,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
           "issue_codes": [],
           "warning_codes": []
@@ -48350,7 +49961,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -48361,7 +49972,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
           "issue_codes": [],
           "warning_codes": []
@@ -48670,7 +50281,7 @@
       "verification_started_at": "2026-09-08T17:24:08.766Z",
       "publish_ready_at": "2026-09-08T17:24:32.887Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-09T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -49219,50 +50830,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "0b0410ebe13f32d096497380f31eaa6e65db0d926412869a8e3eff39c585988f",
-        "checked_at": "2026-09-09T07:52:48.594Z",
+        "fingerprint": "a4086daf4f179633137ce6235d857a320b897ee5073d97f6d86945aaf6511e4c",
+        "checked_at": "2026-09-09T11:12:49.530Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T13:52:48.594Z",
-        "sources": [
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Bundeshaushalt-fuer-2027/!6211410",
-            "title": "Bundeshaushalt für 2027: Kritik an Klingbeils Klima-Sparplänen",
-            "summary": "Der Finanzminister will Geld aus dem Klima- und Transformationsfonds abziehen. Außerdem drohen internationale Hilfsgelder einzubrechen. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T16:06:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "7b2c20b354727475b0973f8ab7916d05fa04a3397fbac850dc612db68c562cf9",
-            "source_item_id": "725347ab72a542e60144b426aba05673cf06dbfe8c614ab0a11b35be04750d37",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T16:06:00.000Z",
-            "ingested_at": "2026-09-09T07:52:48.594Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-09T10:07:31.404Z",
-        "content_hash": "3c893d8a0f3e18dd5c2ea3c5e705702cb6cbbfb533cc7c47738f42e8b856de75",
+        "expires_at": "2026-09-09T17:12:49.530Z",
         "sources": [
           {
             "source_id": "taz-aktuell",
@@ -49297,24 +50868,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 1,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
-          "fingerprint": "4b55b20f625f8b51cff685bdbe368f6c5abe3033876fbaf678baf66119971d61",
-          "issue_codes": [],
-          "warning_codes": []
-        }
+        ]
       },
+      "deepening_checks": 3,
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
         "fingerprint": "5b745bc592e885a6a33a6408845bde957984f5f479dfdc1fec82ae862c05a9cf",
@@ -49945,7 +51501,7 @@
       "verification_started_at": "2026-09-08T17:10:00.868Z",
       "publish_ready_at": "2026-09-08T17:10:25.881Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-09T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -50826,10 +52382,10 @@
       "retirement_history": [],
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "744df9e92d59f39dac63784dad4c4193123d7739075fe67386e3fbf83dbcec2e",
-        "checked_at": "2026-09-09T07:52:48.594Z",
+        "fingerprint": "e5eb085e15c7ecc5281e7380aa0c58af0e2f24f7fd83f422b0e5f7726b2e9204",
+        "checked_at": "2026-09-09T11:12:49.530Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T13:52:48.594Z",
+        "expires_at": "2026-09-09T17:12:49.530Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -50899,95 +52455,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-09T10:07:31.404Z",
-        "content_hash": "007a0522aa6a006185fe7887dcb7008c9d6a542fa8cc5c6bf41be260850b2769",
-        "sources": [
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-154,wahl-560.html",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
-            "summary": "Laut vorläufigem Ergebnis steht die AfD in Sachsen-Anhalt bei 43,8 Prozent. Die CDU hat aus Sicht von Ministerpräsident Schulze keinen Regierungsauftrag mehr. Im Liveticker berichten wir über Reaktionen zur Wahl.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T15:04:55.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "fb2b2b5d72f6b3231ab8f9d69f5c94ededd9774d7d6f8ae42f5a733724533c45",
-            "source_item_id": "b0ef43b7f789d7af19b81a14457f1dd22b32e4f90ae8d2a5d5735bf6349de769",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T15:04:55.000Z",
-            "ingested_at": "2026-09-07T15:36:43.631Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/video-1644892.html",
-            "title": "Söder sieht AfD in Sachsen-Anhalt \"am Zug\"",
-            "summary": "Söder sieht AfD in Sachsen-Anhalt \"am Zug\"",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T18:38:06.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "86a3c4358f23f28646f7b62c0fca2eb99ab893b34697dd5129e56dd753ad94aa",
-            "source_item_id": "2d4e49737bb81c6e45b2a4e9149d8da946ffaa689f3082d3ea09a9e7f3424585",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T18:38:06.000Z",
-            "ingested_at": "2026-09-07T18:52:11.443Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
-          "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-8867bcf3c4b86d79",
@@ -52016,7 +53484,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -52027,7 +53495,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "46b06f5129ab11dcdcbcead79a419746c9745bf047a31c3da192fa34a025dc76",
           "issue_codes": [],
           "warning_codes": []
@@ -53380,9 +54848,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "934ccfb80e806889dfed348b8d6740d6458666a4f4cd42fe233720e42286bcaf",
         "first_failed_at": "2026-09-08T19:52:12.815Z",
-        "failed_at": "2026-09-09T07:52:48.594Z",
-        "retry_after": "2026-09-09T10:52:48.594Z",
-        "retry_count": 4
+        "failed_at": "2026-09-09T11:12:49.530Z",
+        "retry_after": "2026-09-09T17:12:49.530Z",
+        "retry_count": 5
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -53465,10 +54933,14 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 1,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+        ],
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-09T17:12:49.530Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -53476,7 +54948,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "e7587f2cc06df4cac7045809794906c00232f2e13e2e548f57b9ec2510a2dc75",
           "issue_codes": [],
           "warning_codes": []
@@ -57185,7 +58657,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -57196,7 +58668,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "484ee63d9db550c1e2294eb912677a21bde29d3e9b9613f1457cb2ac44270032",
           "issue_codes": [],
           "warning_codes": []
@@ -60684,7 +62156,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -60695,7 +62167,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -70454,7 +71926,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -70465,7 +71937,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "0e824208ac91cd615c6da0a4f44ebe8e9f89278fea217f54750b619c806b7163",
           "issue_codes": [],
           "warning_codes": []
@@ -70885,9 +72357,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "9e1c10e0230a132d2d571c9d5ef13f3ca584b10c2bdf91e881a0b9da1e9af753",
-        "checked_at": "2026-09-09T11:07:22.757Z",
+        "checked_at": "2026-09-09T11:12:49.530Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T17:07:22.757Z",
+        "expires_at": "2026-09-09T17:12:49.530Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -71653,7 +73125,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -71664,7 +73136,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "aee2728c313d5bbd32082a613ae379886c53c1839aca55b1314e40cec484d370",
           "issue_codes": [],
           "warning_codes": []
@@ -73954,7 +75426,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -73965,7 +75437,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
           "issue_codes": [],
           "warning_codes": []
@@ -94922,7 +96394,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -94933,7 +96405,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -97903,7 +99375,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -97914,7 +99386,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -98076,7 +99548,7 @@
       "verification_started_at": "2026-09-07T23:39:15.690Z",
       "publish_ready_at": "2026-09-07T23:39:37.569Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-09T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -98508,10 +99980,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "b61c338dfe228d114c8dc20708392dfa127499fa61bb3d38a2dceac07db20f0e",
-        "checked_at": "2026-09-08T20:51:52.093Z",
+        "fingerprint": "2f23fc22893dedb7acb1b7e3a06be5cf31baf1607d49ab2902b8c6ef9e727b49",
+        "checked_at": "2026-09-09T11:12:49.530Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T02:51:52.093Z",
+        "expires_at": "2026-09-09T17:12:49.530Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -98581,95 +100053,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-09T05:06:53.221Z",
-        "content_hash": "e5230658e38a9b3ccaa9d12b9035dab933736b521e96b99f4d3b95aa8f763331",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/polizei-ruft-bevoelkerung-auf-verdaechtige-beobachtungen-zu-melden-100.html",
-            "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
-            "summary": "Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T16:32:01.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "917d84824c59c9d27d77c8d027e73cd2d7878a2d2cf6c1b4bb289e64bbf0dcc2",
-            "source_item_id": "8522505814dfd134c1de6ce927fdf1d00172880a51c260f1ff3d2bf36d7d858c",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T16:32:01.000Z",
-            "ingested_at": "2026-09-07T16:52:04.572Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/polizei-ruft-bevoelkerung-auf-verdaechtige-beobachtungen-zu-melden-110.html",
-            "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
-            "summary": "Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T10:16:01.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "e7d497f33cee23ff5a93ff5a215f8b00ed43d06ab6c87eb03e1f45f29dc51d30",
-            "source_item_id": "4881fd87297a327785a9cb7c3ba857feb803fc21180cc896da2ee63e91fa1d2c",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T10:16:01.000Z",
-            "ingested_at": "2026-09-08T10:26:26.801Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
-          "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-cd001726db438d2d",
@@ -100164,9 +101548,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T11:07:22.757Z",
+        "checked_at": "2026-09-09T11:12:49.530Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T17:07:22.757Z",
+        "expires_at": "2026-09-09T17:12:49.530Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -103621,7 +105005,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -103632,7 +105016,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -104878,7 +106262,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -104889,7 +106273,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -107980,7 +109364,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -107991,7 +109375,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -111995,7 +113379,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -112006,7 +113390,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -115999,9 +117383,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "560d363cdd017c4a692ca02b042420aa4aaa09b4dc45a423ff2633b3dfc29599",
-        "checked_at": "2026-09-09T11:07:22.757Z",
+        "checked_at": "2026-09-09T11:12:49.530Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T17:07:22.757Z",
+        "expires_at": "2026-09-09T17:12:49.530Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -211572,7 +212956,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -255966,7 +257350,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:07:22.757Z",
+          "checked_at": "2026-09-09T11:12:49.530Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -292577,6 +293961,56 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-09T11:12:49.530Z",
+          "retained_urls": [
+            "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+            "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+            "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+            "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
+            "https://www.ndr.de/nachrichten/info/das-erbe-nach-9-11-deutschland-nach-anschlaegen-in-usa,pearl-harburg-100.html",
+            "https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS9wcm9wbGFuXzE5NjM4Nzc1M19nYW56ZVNlbmR1bmc",
+            "https://www.stern.de/panorama/donald-trump-luegt-darueber--dass-er-an-9-11-gerettet-wurde-38224984.html",
+            "https://www.zdfheute.de/politik/ausland/9-11-world-trade-center-trump-usa-verschwoerungstheorien-100.html",
+            "https://www.stern.de/politik/ausland/11--september-2001-in-notrufen---die-frischluft-ist-bald-zu-ende--30702522.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+              "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+              "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-04T11:02:58.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+              "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-04T11:02:58.000Z",
+              "ingested_at": "2026-09-09T07:21:53.878Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-09T04:00:00.000Z",
@@ -292709,7 +294143,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T07:30:00.000Z",
-          "ingested_at": "2026-09-09T10:07:31.404Z",
+          "ingested_at": "2026-09-09T11:12:49.530Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -292936,7 +294370,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-02",
@@ -292956,7 +294390,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-03",
@@ -292976,7 +294410,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-04",
@@ -292996,7 +294430,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-05",
@@ -293016,7 +294450,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-06",
@@ -293036,7 +294470,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-07",
@@ -293056,7 +294490,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-08",
@@ -293076,7 +294510,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-09",
@@ -293096,7 +294530,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-10",
@@ -293116,7 +294550,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:07:22.757Z"
+          "checked_at": "2026-09-09T11:12:49.530Z"
         }
       ],
       "content_hash": "7eb44acec98cad35384374718777d4f12f2d767ad447112c7f02b0e824eea3ba",
@@ -293131,7 +294565,7 @@
       "fresh": false,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T11:07:22.757Z",
+      "updated_at": "2026-09-09T11:12:49.530Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-4282989facaefbf32544",
@@ -293169,20 +294603,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 51.37928333333333,
+        "source_age_minutes": 56.8255,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 405.0126666666667,
+        "queue_age_minutes": 410.45888333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 89,
+        "news_freshness_score": 88,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T11:07:22.757Z",
+        "checked_at": "2026-09-09T11:12:49.530Z",
         "fingerprint": "f293c0bd597ca4870580846289ff10e218b8d87420fe13caaa770a4a65763a83",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
