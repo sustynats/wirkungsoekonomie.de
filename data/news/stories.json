@@ -1,14 +1,16 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-09T05:52:18.628Z",
-  "updated_at": "2026-09-09T06:07:41.403Z",
+  "public_updated_at": "2026-09-09T06:22:18.312Z",
+  "updated_at": "2026-09-09T06:22:18.312Z",
   "stories": [
     {
       "story_id": "wt-7e2c82a0ae7a9962",
       "slug": "schulbegleitung-und-co-zahl-der-eingliederungshilfen-fur-junge-menschen-mit-seelischer-b-7a9962",
       "title": "Schulbegleitung und Co.: Zahl der Eingliederungshilfen für junge Menschen mit seelischer Behinderung binnen zehn Jahren mehr als verdoppelt",
       "first_seen": "2026-09-09T06:00:00.000Z",
-      "last_updated": "2026-09-09T06:00:00.000Z",
+      "last_updated": "2026-09-09T06:22:45.918Z",
+      "published_at": "2026-09-09T06:22:45.918Z",
+      "updated_at": "2026-09-09T06:22:45.918Z",
       "topic": [
         "Soziales",
         "Gesundheit",
@@ -50,92 +52,618 @@
       ],
       "claims": [
         {
-          "claim_id": "wt-7e2c82a0ae7a9962-claim-01",
+          "claim_id": "wt-7e2c82a0ae7a9962-v1-claim-1",
           "story_id": "wt-7e2c82a0ae7a9962",
-          "claim": "Schulbegleitung und Co.: Zahl der Eingliederungshilfen für junge Menschen mit seelischer Behinderung binnen zehn Jahren mehr als verdoppelt: Die geplante Reform der Kinder- und Jugendhilfe betrifft auch die Schulbegleitung von Kindern mit sogenannter seelischer Behinderung. Die Zahl der Eingliederungshilfen für betroffene Kinder, Jugendliche und junge Volljährige, unter die auch individuelle Schulbegleitungen fallen, ist in den letzten Jahren stark gestiegen. Im Jahr 2024 haben die Träger der Kinder- und Jugendhilfe gut 174 000 solcher Eingliederungshilfen gewährt, wie das Statistische Bundesamt (Destatis) mitteilt. Das waren mehr als doppelt so viele (+115 %) wie im Jahr 2014 mit knapp 80 800 Eingliederungshilfen für seelisch behinderte junge Menschen. Diese Hilfen sollen Kindern, Jugendlichen und jungen Volljährigen, die von einer seelischen Behinderung betroffen oder bedroht sind, die",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "destatis-aktuell",
-          "source_function": "institutional_statement",
+          "claim": "Die Zahl der Eingliederungshilfen für junge Menschen mit seelischer Behinderung lag 2024 bei gut 174 000 und damit mehr als doppelt so hoch wie 2014 mit knapp 80 800.",
           "status": "primary_source_claim",
-          "provenance": {
-            "origin": "publisher:destatis-aktuell",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "source_id": "destatis-aktuell",
+          "evidence": [
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+              "excerpt_hash": "9bcc82e08fbb898197f8",
+              "checked_at": "2026-09-09T06:22:45.918Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+              "excerpt_hash": "f9b6ff8ad5cdf5b15ac0",
+              "checked_at": "2026-09-09T06:22:45.918Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+              "excerpt_hash": "d7bb9c21ac317480bbf5",
+              "checked_at": "2026-09-09T06:22:45.918Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T06:22:45.918Z"
+        },
+        {
+          "claim_id": "wt-7e2c82a0ae7a9962-v1-claim-2",
+          "story_id": "wt-7e2c82a0ae7a9962",
+          "claim": "Die Ausgaben für diese Eingliederungshilfen betrugen 2024 für minderjährige Kinder und Jugendliche 3,5 Milliarden Euro; 2014 waren es gut 1,1 Milliarden Euro.",
+          "status": "primary_source_claim",
+          "source_id": "destatis-aktuell",
+          "evidence": [
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+              "excerpt_hash": "5ea67f470a24c0ed5e0d",
+              "checked_at": "2026-09-09T06:22:45.918Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+              "excerpt_hash": "31be4d4c05575dfc06ca",
+              "checked_at": "2026-09-09T06:22:45.918Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+              "excerpt_hash": "7429844fc97ae5393141",
+              "checked_at": "2026-09-09T06:22:45.918Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T06:22:45.918Z"
+        },
+        {
+          "claim_id": "wt-7e2c82a0ae7a9962-v1-claim-3",
+          "story_id": "wt-7e2c82a0ae7a9962",
+          "claim": "Im Schuljahr 2024/2025 wurden 111 700 Kinder und Jugendliche mit dem Förderschwerpunkt emotionale und soziale Entwicklung erfasst; 58 % davon wurden inklusiv an regulären Schulen unterrichtet.",
+          "status": "primary_source_claim",
+          "source_id": "destatis-aktuell",
+          "evidence": [
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+              "excerpt_hash": "e43903cde407d4749b50",
+              "checked_at": "2026-09-09T06:22:45.918Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+              "excerpt_hash": "13a5695a51194f345182",
+              "checked_at": "2026-09-09T06:22:45.918Z"
+            },
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+              "excerpt_hash": "999832ab2a2e473596e3",
+              "checked_at": "2026-09-09T06:22:45.918Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T06:22:45.918Z"
         }
       ],
-      "content_hash": "7e55572d2997da44b0582e95f02e8ae5c6e2b6df64bf16d405339a75afd31268",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "event_id": "event-24ab3fe6aacb569a543a",
       "event_first_seen_at": "2026-09-09T06:07:41.403Z",
       "event_detected_at": "2026-09-09T06:07:41.403Z",
-      "event_id": "event-24ab3fe6aacb569a543a",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 40,
-        "public_relevance": "mittel",
-        "topics": [
-          "Soziales",
-          "Gesundheit",
-          "Politik"
+      "verification_started_at": "2026-09-09T06:22:29.688Z",
+      "publish_ready_at": "2026-09-09T06:22:45.918Z",
+      "news_status": "confirmed",
+      "deepening_due_at": "2026-09-09T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "destatis-aktuell"
+          ]
         ],
-        "dimensions": [
-          "Mensch"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [
-          "new_evidence"
-        ],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 7.69005,
-        "detection_delay_minutes": 7.69005,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": null
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "5cdc6640c19462d582e05730f374133dd7bc49e24ce851f6f8b6d33140f7c393",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Reform der Kinder- und Jugendhilfe den Zugang zu Schulbegleitung und anderen Eingliederungshilfen verändert.",
+          "source_id": "destatis-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Zahl der bewilligten Eingliederungshilfen, Ausgaben und Anteile nach Jahren",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-50bb573ab2e01903",
+          "announced_at": "2026-09-09T06:00:00.000Z",
+          "follow_up_date": "2026-09-16T06:22:45.918Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "7e55572d2997da44b0582e95f02e8ae5c6e2b6df64bf16d405339a75afd31268",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-09T06:22:45.918Z",
+        "sources": [
+          {
+            "source_id": "destatis-aktuell",
+            "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+            "content_hash": "2ff0e5c9416ebf4324044c43ceee644ecd02e932507a1df7313edb2488d56c95",
+            "excerpt_hash": "d27b751d81e71130dbc1fc3faf78dee2122ebec7c14cbdd519b8b8c96e915723",
+            "number_locale": "de",
+            "numbers": [
+              "9",
+              "2026",
+              "2024",
+              "3.5",
+              "44",
+              "174000",
+              "115",
+              "2014",
+              "80800",
+              "69",
+              "53",
+              "36",
+              "23",
+              "45",
+              "6",
+              "11",
+              "42",
+              "12",
+              "17",
+              "18",
+              "2",
+              "70",
+              "1.1",
+              "8",
+              "78.8",
+              "108",
+              "111700",
+              "2025",
+              "64400",
+              "58",
+              "28",
+              "610800",
+              "77",
+              "270500",
+              "5",
+              "340300",
+              "27",
+              "41",
+              "10",
+              "4",
+              "3"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Das Statistische Bundesamt meldet einen starken Anstieg bei Eingliederungshilfen für junge Menschen mit seelischer Behinderung. 2024 wurden gut 174 000 Hilfen gewährt, mehr als doppelt so viele wie 2014 mit knapp 80 800. Die Ausgaben für minderjährige Kinder und Jugendliche lagen 2024 bei 3,5 Milliarden Euro, nach gut 1,1 Milliarden Euro 2014.\n\nAls häufige Gründe nennt die Statistik seelische Probleme oder Entwicklungsauffälligkeiten, schulische oder berufliche Probleme sowie Auffälligkeiten im Sozialverhalten. Parallel weist sie auf 111 700 Schülerinnen und Schüler mit dem Förderschwerpunkt emotionale und soziale Entwicklung im Schuljahr 2024/2025 hin; 58 % davon wurden inklusiv unterrichtet. Offen bleibt, wie stark die geplante Reform der Kinder- und Jugendhilfe diese Entwicklung künftig beeinflusst.",
+      "analysis": {
+        "story_id": "wt-7e2c82a0ae7a9962",
+        "publication_recommendation": true,
+        "news_status": "confirmed",
+        "publication_depth": "initial",
+        "summary": "Ein amtlicher Datensatz zeigt deutlich mehr Eingliederungshilfen und höhere Ausgaben für junge Menschen mit seelischer Behinderung. Für die Praxis der Jugendhilfe ist das relevant, weil Zugänge, Bedarf und Ressourcen sichtbar werden.",
+        "detail_summary": "Die Statistik beschreibt eine deutliche Zustandsänderung in der Kinder- und Jugendhilfe: mehr bewilligte Eingliederungshilfen, höhere Ausgaben und mehr erfasste Schülerinnen und Schüler mit Förderbedarf im Bereich emotionale und soziale Entwicklung. Das ist für Familien, Schulen und Träger materiell relevant, weil es auf wachsenden Unterstützungsbedarf und höheren Ressourceneinsatz hinweist. Ein möglicher Wirkpfad führt über mehr Schulbegleitung und andere Hilfen zu besserer Teilhabe im Alltag. Ob das tatsächlich so eintritt, bleibt offen; der Befund belegt zunächst nur Umfang und Entwicklung, nicht die Wirksamkeit der Hilfe. Die Reform der Kinder- und Jugendhilfe ist als Kontext genannt, ihre Folgen sind aber noch nicht belegt. Die Evidenz ist amtlich und direkt, aber auf einen Datenstand begrenzt.",
+        "why_relevant": "Die Meldung beschreibt einen klaren Trend bei Hilfen, Ausgaben und Förderbedarf. Das ist für Kinder, Familien, Schulen und öffentliche Haushalte materiell relevant.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Mehr bewilligte Hilfen können den Zugang zu Unterstützung und Teilhabe verbessern, wenn Bedarf gedeckt und Angebote erreichbar sind.",
+          "positive_path": {
+            "mechanism": "Mehr Schulbegleitung und Hilfen erleichtern Alltag, Lernen und soziale Teilhabe betroffener junger Menschen.",
+            "source_ids": [
+              "destatis-aktuell"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Steigende Fallzahlen und Ausgaben können Engpässe, Wartezeiten oder Verteilungsdruck im Hilfesystem verstärken.",
+            "source_ids": [
+              "destatis-aktuell"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung enthält keinen belastbaren Wirkpfad zu Umwelt, Emissionen oder Ressourcenverbrauch.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Statistik berührt öffentliche Planung und Korrekturfähigkeit, zeigt aber keinen direkten demokratischen Effekt.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "importance": "mittel",
+        "impact_potential": "Höherer Unterstützungsbedarf kann zu mehr Teilhabe junger Menschen führen, wenn Angebote ausgebaut und zugänglich bleiben. Zugleich steigen Belastung und Steuerungsbedarf für Jugendhilfe, Schulen und Kommunen.",
+        "impact_risks": [
+          "Mehr Nachfrage kann Wartezeiten, Personalengpässe und ungleiche Zugänge verschärfen.",
+          "Höhere Ausgaben können Verteilungsdruck im Haushalt erzeugen, ohne die Versorgung automatisch zu verbessern."
+        ],
+        "mechanisms": [
+          "Schulbegleitung und Eingliederungshilfen erleichtern Teilhabe im Alltag.",
+          "Wachsende Fallzahlen erhöhen Planungs- und Finanzierungslast der Träger."
+        ],
+        "first_order": [
+          "Mehr bewilligte Hilfen und höhere Ausgaben im Jugendhilfesystem."
+        ],
+        "second_order": [
+          "Besserer Zugang zu Unterstützung kann Alltagsbewältigung und Schulteilhabe verbessern."
+        ],
+        "third_order": [
+          "Langfristig kann sich die Struktur der Jugendhilfe stärker auf frühe Unterstützung und Inklusion ausrichten."
+        ],
+        "systemic_relevance": "Die Zahlen markieren keinen Einzelfall, sondern einen breiten Anstieg im Hilfesystem mit Folgen für Jugendhilfe, Schule, Kommunen und Haushalte.",
+        "transformation_potential": "Mittel, weil sich Finanzierung, Zugänge und Organisation der Hilfen an wachsende Bedarfe anpassen müssen.",
+        "resilience": "Resilienz steigt nur, wenn der Ausbau von Personal, Finanzierung und Koordination mithält; sonst drohen Überlastung und ungleiche Versorgung.",
+        "side_effects": [
+          "Mehr Ausgaben im öffentlichen System.",
+          "Mögliche Verschiebungen von Ressourcen innerhalb der Jugendhilfe."
+        ],
+        "uncertainties": [
+          "Die Statistik belegt den Anstieg, aber nicht die Ursache im Einzelnen.",
+          "Die Wirksamkeit der Hilfen für konkrete Teilhabe bleibt hier offen."
+        ],
+        "evidence_level": "hoch für die beschriebenen Zahlen; offen für Ursachen und Wirkungen.",
+        "attribution": "Amtliche Statistik des Statistischen Bundesamts; die Zahlen und Einordnungen stammen aus der Pressemitteilung.",
+        "watch_next": [
+          "Entwicklung der bewilligten Hilfen im Folgejahr beobachten.",
+          "Prüfen, ob die Reform der Kinder- und Jugendhilfe Änderungen bei Zugang und Finanzierung bringt."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "new_story",
+          "rationale": "Amtliche neue Zahlen zu Hilfen, Ausgaben und Förderbedarf mit klarer materieller Relevanz für Jugendhilfe und Schulen."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-09T06:22:18.312Z",
+        "media_trigger_fingerprint": "41c0c9fb6a2f19080fc40be63f1a0917ab56475d6965bbfbb567b020a7d13517",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "threat_or_fear_frame"
+          ],
+          "matched_terms": [
+            "bedroht"
+          ],
+          "source_count": 1,
+          "comparable_source_count": 0,
+          "fingerprint": "41c0c9fb6a2f19080fc40be63f1a0917ab56475d6965bbfbb567b020a7d13517",
+          "content_fingerprint": "91e499c94ed5bf25ee11d454451e27f13f2e51b97a14c34655b5ff5dacef95fa",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-09T06:22:45.918Z",
+          "content_hash": "7e55572d2997da44b0582e95f02e8ae5c6e2b6df64bf16d405339a75afd31268",
+          "source_summary": "Das Statistische Bundesamt meldet einen starken Anstieg bei Eingliederungshilfen für junge Menschen mit seelischer Behinderung. 2024 wurden gut 174 000 Hilfen gewährt, mehr als doppelt so viele wie 2014 mit knapp 80 800. Die Ausgaben für minderjährige Kinder und Jugendliche lagen 2024 bei 3,5 Milliarden Euro, nach gut 1,1 Milliarden Euro 2014.\n\nAls häufige Gründe nennt die Statistik seelische Probleme oder Entwicklungsauffälligkeiten, schulische oder berufliche Probleme sowie Auffälligkeiten im Sozialverhalten. Parallel weist sie auf 111 700 Schülerinnen und Schüler mit dem Förderschwerpunkt emotionale und soziale Entwicklung im Schuljahr 2024/2025 hin; 58 % davon wurden inklusiv unterrichtet. Offen bleibt, wie stark die geplante Reform der Kinder- und Jugendhilfe diese Entwicklung künftig beeinflusst.",
+          "analysis": {
+            "story_id": "wt-7e2c82a0ae7a9962",
+            "publication_recommendation": true,
+            "news_status": "confirmed",
+            "publication_depth": "initial",
+            "summary": "Ein amtlicher Datensatz zeigt deutlich mehr Eingliederungshilfen und höhere Ausgaben für junge Menschen mit seelischer Behinderung. Für die Praxis der Jugendhilfe ist das relevant, weil Zugänge, Bedarf und Ressourcen sichtbar werden.",
+            "detail_summary": "Die Statistik beschreibt eine deutliche Zustandsänderung in der Kinder- und Jugendhilfe: mehr bewilligte Eingliederungshilfen, höhere Ausgaben und mehr erfasste Schülerinnen und Schüler mit Förderbedarf im Bereich emotionale und soziale Entwicklung. Das ist für Familien, Schulen und Träger materiell relevant, weil es auf wachsenden Unterstützungsbedarf und höheren Ressourceneinsatz hinweist. Ein möglicher Wirkpfad führt über mehr Schulbegleitung und andere Hilfen zu besserer Teilhabe im Alltag. Ob das tatsächlich so eintritt, bleibt offen; der Befund belegt zunächst nur Umfang und Entwicklung, nicht die Wirksamkeit der Hilfe. Die Reform der Kinder- und Jugendhilfe ist als Kontext genannt, ihre Folgen sind aber noch nicht belegt. Die Evidenz ist amtlich und direkt, aber auf einen Datenstand begrenzt.",
+            "why_relevant": "Die Meldung beschreibt einen klaren Trend bei Hilfen, Ausgaben und Förderbedarf. Das ist für Kinder, Familien, Schulen und öffentliche Haushalte materiell relevant.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "chance",
+              "direction_basis": "assessed",
+              "rationale": "Mehr bewilligte Hilfen können den Zugang zu Unterstützung und Teilhabe verbessern, wenn Bedarf gedeckt und Angebote erreichbar sind.",
+              "positive_path": {
+                "mechanism": "Mehr Schulbegleitung und Hilfen erleichtern Alltag, Lernen und soziale Teilhabe betroffener junger Menschen.",
+                "source_ids": [
+                  "destatis-aktuell"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Steigende Fallzahlen und Ausgaben können Engpässe, Wartezeiten oder Verteilungsdruck im Hilfesystem verstärken.",
+                "source_ids": [
+                  "destatis-aktuell"
+                ]
+              }
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "direction_basis": "no_path",
+              "rationale": "Die Meldung enthält keinen belastbaren Wirkpfad zu Umwelt, Emissionen oder Ressourcenverbrauch.",
+              "positive_path": null,
+              "negative_path": null
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "offen",
+              "direction_basis": "no_path",
+              "rationale": "Die Statistik berührt öffentliche Planung und Korrekturfähigkeit, zeigt aber keinen direkten demokratischen Effekt.",
+              "positive_path": null,
+              "negative_path": null
+            },
+            "importance": "mittel",
+            "impact_potential": "Höherer Unterstützungsbedarf kann zu mehr Teilhabe junger Menschen führen, wenn Angebote ausgebaut und zugänglich bleiben. Zugleich steigen Belastung und Steuerungsbedarf für Jugendhilfe, Schulen und Kommunen.",
+            "impact_risks": [
+              "Mehr Nachfrage kann Wartezeiten, Personalengpässe und ungleiche Zugänge verschärfen.",
+              "Höhere Ausgaben können Verteilungsdruck im Haushalt erzeugen, ohne die Versorgung automatisch zu verbessern."
+            ],
+            "mechanisms": [
+              "Schulbegleitung und Eingliederungshilfen erleichtern Teilhabe im Alltag.",
+              "Wachsende Fallzahlen erhöhen Planungs- und Finanzierungslast der Träger."
+            ],
+            "first_order": [
+              "Mehr bewilligte Hilfen und höhere Ausgaben im Jugendhilfesystem."
+            ],
+            "second_order": [
+              "Besserer Zugang zu Unterstützung kann Alltagsbewältigung und Schulteilhabe verbessern."
+            ],
+            "third_order": [
+              "Langfristig kann sich die Struktur der Jugendhilfe stärker auf frühe Unterstützung und Inklusion ausrichten."
+            ],
+            "systemic_relevance": "Die Zahlen markieren keinen Einzelfall, sondern einen breiten Anstieg im Hilfesystem mit Folgen für Jugendhilfe, Schule, Kommunen und Haushalte.",
+            "transformation_potential": "Mittel, weil sich Finanzierung, Zugänge und Organisation der Hilfen an wachsende Bedarfe anpassen müssen.",
+            "resilience": "Resilienz steigt nur, wenn der Ausbau von Personal, Finanzierung und Koordination mithält; sonst drohen Überlastung und ungleiche Versorgung.",
+            "side_effects": [
+              "Mehr Ausgaben im öffentlichen System.",
+              "Mögliche Verschiebungen von Ressourcen innerhalb der Jugendhilfe."
+            ],
+            "uncertainties": [
+              "Die Statistik belegt den Anstieg, aber nicht die Ursache im Einzelnen.",
+              "Die Wirksamkeit der Hilfen für konkrete Teilhabe bleibt hier offen."
+            ],
+            "evidence_level": "hoch für die beschriebenen Zahlen; offen für Ursachen und Wirkungen.",
+            "attribution": "Amtliche Statistik des Statistischen Bundesamts; die Zahlen und Einordnungen stammen aus der Pressemitteilung.",
+            "watch_next": [
+              "Entwicklung der bewilligten Hilfen im Folgejahr beobachten.",
+              "Prüfen, ob die Reform der Kinder- und Jugendhilfe Änderungen bei Zugang und Finanzierung bringt."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "new_story",
+              "rationale": "Amtliche neue Zahlen zu Hilfen, Ausgaben und Förderbedarf mit klarer materieller Relevanz für Jugendhilfe und Schulen."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-09T06:22:18.312Z",
+            "media_trigger_fingerprint": "41c0c9fb6a2f19080fc40be63f1a0917ab56475d6965bbfbb567b020a7d13517",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "threat_or_fear_frame"
+              ],
+              "matched_terms": [
+                "bedroht"
+              ],
+              "source_count": 1,
+              "comparable_source_count": 0,
+              "fingerprint": "41c0c9fb6a2f19080fc40be63f1a0917ab56475d6965bbfbb567b020a7d13517",
+              "content_fingerprint": "91e499c94ed5bf25ee11d454451e27f13f2e51b97a14c34655b5ff5dacef95fa",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-7e2c82a0ae7a9962-v1-claim-1",
+              "story_id": "wt-7e2c82a0ae7a9962",
+              "claim": "Die Zahl der Eingliederungshilfen für junge Menschen mit seelischer Behinderung lag 2024 bei gut 174 000 und damit mehr als doppelt so hoch wie 2014 mit knapp 80 800.",
+              "status": "primary_source_claim",
+              "source_id": "destatis-aktuell",
+              "evidence": [
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+                  "excerpt_hash": "9bcc82e08fbb898197f8",
+                  "checked_at": "2026-09-09T06:22:45.918Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+                  "excerpt_hash": "f9b6ff8ad5cdf5b15ac0",
+                  "checked_at": "2026-09-09T06:22:45.918Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+                  "excerpt_hash": "d7bb9c21ac317480bbf5",
+                  "checked_at": "2026-09-09T06:22:45.918Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T06:22:45.918Z"
+            },
+            {
+              "claim_id": "wt-7e2c82a0ae7a9962-v1-claim-2",
+              "story_id": "wt-7e2c82a0ae7a9962",
+              "claim": "Die Ausgaben für diese Eingliederungshilfen betrugen 2024 für minderjährige Kinder und Jugendliche 3,5 Milliarden Euro; 2014 waren es gut 1,1 Milliarden Euro.",
+              "status": "primary_source_claim",
+              "source_id": "destatis-aktuell",
+              "evidence": [
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+                  "excerpt_hash": "5ea67f470a24c0ed5e0d",
+                  "checked_at": "2026-09-09T06:22:45.918Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+                  "excerpt_hash": "31be4d4c05575dfc06ca",
+                  "checked_at": "2026-09-09T06:22:45.918Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+                  "excerpt_hash": "7429844fc97ae5393141",
+                  "checked_at": "2026-09-09T06:22:45.918Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T06:22:45.918Z"
+            },
+            {
+              "claim_id": "wt-7e2c82a0ae7a9962-v1-claim-3",
+              "story_id": "wt-7e2c82a0ae7a9962",
+              "claim": "Im Schuljahr 2024/2025 wurden 111 700 Kinder und Jugendliche mit dem Förderschwerpunkt emotionale und soziale Entwicklung erfasst; 58 % davon wurden inklusiv an regulären Schulen unterrichtet.",
+              "status": "primary_source_claim",
+              "source_id": "destatis-aktuell",
+              "evidence": [
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+                  "excerpt_hash": "e43903cde407d4749b50",
+                  "checked_at": "2026-09-09T06:22:45.918Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+                  "excerpt_hash": "13a5695a51194f345182",
+                  "checked_at": "2026-09-09T06:22:45.918Z"
+                },
+                {
+                  "source_id": "destatis-aktuell",
+                  "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+                  "excerpt_hash": "999832ab2a2e473596e3",
+                  "checked_at": "2026-09-09T06:22:45.918Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T06:22:45.918Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "destatis-aktuell",
+              "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+              "content_hash": "2ff0e5c9416ebf4324044c43ceee644ecd02e932507a1df7313edb2488d56c95"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-09T06:22:45.918Z",
+            "sources": [
+              {
+                "source_id": "destatis-aktuell",
+                "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+                "content_hash": "2ff0e5c9416ebf4324044c43ceee644ecd02e932507a1df7313edb2488d56c95",
+                "excerpt_hash": "d27b751d81e71130dbc1fc3faf78dee2122ebec7c14cbdd519b8b8c96e915723",
+                "number_locale": "de",
+                "numbers": [
+                  "9",
+                  "2026",
+                  "2024",
+                  "3.5",
+                  "44",
+                  "174000",
+                  "115",
+                  "2014",
+                  "80800",
+                  "69",
+                  "53",
+                  "36",
+                  "23",
+                  "45",
+                  "6",
+                  "11",
+                  "42",
+                  "12",
+                  "17",
+                  "18",
+                  "2",
+                  "70",
+                  "1.1",
+                  "8",
+                  "78.8",
+                  "108",
+                  "111700",
+                  "2025",
+                  "64400",
+                  "58",
+                  "28",
+                  "610800",
+                  "77",
+                  "270500",
+                  "5",
+                  "340300",
+                  "27",
+                  "41",
+                  "10",
+                  "4",
+                  "3"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-09T06:22:45.918Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-09T06:38:56.691Z"
       }
     },
     {
@@ -4920,7 +5448,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:02:35.868Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         },
         {
           "claim_id": "wt-6d5094178ebca659-claim-02",
@@ -4940,22 +5468,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:02:35.868Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "541c414292f5586aca1234f80bc37b7971191634db83dd443e1524b8988684fb",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-09T06:17:35.868Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:02:35.868Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-09T01:07:03.528Z",
       "event_detected_at": "2026-09-09T01:07:03.528Z",
       "event_id": "event-56a34318e130bae30a62",
@@ -4988,20 +5514,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 12.064466666666666,
+        "source_age_minutes": 31.771866666666668,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 295.539,
+        "queue_age_minutes": 315.2464,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 93,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:02:35.868Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "86aaf0da47ef1bebe7afa273356e3a790fd53986f1189365479b4bb4e8b5a7c1",
         "issue_codes": [],
         "warning_codes": []
@@ -5252,7 +5778,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         },
         {
           "claim_id": "wt-2e050585c89e5353-claim-02",
@@ -5272,7 +5798,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "b605d6093fbe3e34ac9d293ae1fdf9454c86d57a368868d9102a25179e13ccaf",
@@ -5283,9 +5809,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-2d19c50a93681915bd8a",
@@ -5322,20 +5848,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 77.77338333333333,
+        "source_age_minutes": 92.38853333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 105.32343333333333,
+        "queue_age_minutes": 119.93858333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 84,
+        "news_freshness_score": 81,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "1acad146419dee89f7cf7693369c367516605cf440f24de33b82e05779093485",
         "issue_codes": [],
         "warning_codes": []
@@ -5574,7 +6100,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "98b6faebaef4daca9a90f0a6d3f1ce30557151be6187ae81cb6b32a90c002b46",
@@ -5585,9 +6111,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-09T04:52:17.802Z",
       "event_detected_at": "2026-09-09T04:52:17.802Z",
       "event_id": "event-d776312b7e675220ef37",
@@ -5620,20 +6146,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 86.69005,
+        "source_age_minutes": 101.3052,
         "detection_delay_minutes": 11.2967,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 75.39335,
+        "queue_age_minutes": 90.0085,
         "target_publication_minutes": 120,
-        "news_freshness_score": 82,
+        "news_freshness_score": 79,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "e8c9dda8ed9bb28111f50f126d90d3d8eeb042c8e52bc8e0ed00da37e78db0c9",
         "issue_codes": [],
         "warning_codes": []
@@ -6437,7 +6963,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         },
         {
           "claim_id": "wt-491857684cc65a88-claim-02",
@@ -6457,7 +6983,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         },
         {
           "claim_id": "wt-491857684cc65a88-claim-03",
@@ -6477,7 +7003,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "81325daf6d891963fcfb412455c2c86d65192df96987b433c34a08f1531e1501",
@@ -6488,9 +7014,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-09T00:51:49.494Z",
       "event_detected_at": "2026-09-09T00:51:49.494Z",
       "event_id": "event-535ab9d27abe1bcdee32",
@@ -6523,20 +7049,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 43.75671666666667,
+        "source_age_minutes": 58.37186666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.86515,
+        "queue_age_minutes": 330.4803,
         "target_publication_minutes": 120,
-        "news_freshness_score": 91,
+        "news_freshness_score": 88,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "dcc8d88dc95b6793f26a805bf8d9992cf9d7c159012d659779a2582141444630",
         "issue_codes": [],
         "warning_codes": []
@@ -7309,7 +7835,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "edb9c872bee6b225f24f5deb7553e176e149653733629d8c41c1a1b46bb76828",
@@ -7320,9 +7846,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-09T02:52:08.955Z",
       "event_detected_at": "2026-09-09T02:52:08.955Z",
       "event_id": "event-a2113d14fb03db277521",
@@ -7355,20 +7881,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 218.69005,
+        "source_age_minutes": 233.3052,
         "detection_delay_minutes": 23.14925,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 195.5408,
+        "queue_age_minutes": 210.15595,
         "target_publication_minutes": 120,
-        "news_freshness_score": 54,
+        "news_freshness_score": 51,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "8326d1c2f5e0a4eab4e8157d7b5db901b4b2e15c922f8603408a73f33241f949",
         "issue_codes": [],
         "warning_codes": []
@@ -7438,7 +7964,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "a944cdcb42fc306e64e1b1eee060982f1b9b4f32784d5f655d28bc7762540f12",
@@ -7449,9 +7975,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-09T02:22:22.812Z",
       "event_detected_at": "2026-09-09T02:22:22.812Z",
       "event_id": "event-6bb6b30dd1972e93ecfd",
@@ -7485,20 +8011,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 237.85671666666667,
+        "source_age_minutes": 252.47186666666667,
         "detection_delay_minutes": 12.546866666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 225.30985,
+        "queue_age_minutes": 239.925,
         "target_publication_minutes": 120,
-        "news_freshness_score": 50,
+        "news_freshness_score": 47,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "d756946e4c9905594d3f5bbbbcfce32bbbfed9beb4184b8ad4028ddaae76f4ae",
         "issue_codes": [],
         "warning_codes": []
@@ -7574,7 +8100,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "cf2c6260cc1af0ef6a77a31df170f5e1ee3a9b21ed5bb89b00bcf56cd7dc9481",
@@ -7585,9 +8111,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-09T02:06:52.907Z",
       "event_detected_at": "2026-09-09T02:06:52.907Z",
       "event_id": "event-3760409fe5600a297535",
@@ -7623,11 +8149,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 19087.69005,
+        "source_age_minutes": 19102.3052,
         "detection_delay_minutes": 18846.881783333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 240.80826666666667,
+        "queue_age_minutes": 255.42341666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -7636,7 +8162,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "8fb680e5dd2b36ec144395ca479e0e4bc8cfbc65af74d3e3b0aa01895d2ce630",
         "issue_codes": [],
         "warning_codes": []
@@ -7705,7 +8231,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "02e94e77815c194c5e2c9923351cf6b2ca8387b73ea932cbcbebcdca4dcf9246",
@@ -7716,9 +8242,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-09T01:37:14.597Z",
       "event_detected_at": "2026-09-09T01:37:14.597Z",
       "event_id": "event-4d1eb4d3fb782ee51faf",
@@ -7753,20 +8279,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 277.5733833333333,
+        "source_age_minutes": 292.18853333333334,
         "detection_delay_minutes": 7.126616666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 270.4467666666667,
+        "queue_age_minutes": 285.06191666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 42,
+        "news_freshness_score": 39,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "e12ede479bf7e6dc14aca69b54d667270bcefd357cea0081b8e6b88a4c3013f6",
         "issue_codes": [],
         "warning_codes": []
@@ -11402,7 +11928,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -11413,7 +11939,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "9a2ff324815be8589ad4f9b9c2da92337f61a5e3de8df33873410d7d1bb2b1f0",
           "issue_codes": [],
           "warning_codes": []
@@ -12246,7 +12772,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -12257,7 +12783,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "3037a1d42e9e581af7193dffb83c5d5dedad0e73b1af2289d4607930fd0d5b62",
           "issue_codes": [],
           "warning_codes": []
@@ -12630,7 +13156,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "37b0209932718c7280e974ed4af7a73e2eb100ba7f6ac77192c80ee3ec98fe02",
@@ -12641,9 +13167,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-08T23:24:22.430Z",
       "event_detected_at": "2026-09-08T23:24:22.430Z",
       "event_id": "event-7f7b89efd945b0b338e4",
@@ -12676,20 +13202,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 420.1233833333333,
+        "source_age_minutes": 434.73853333333335,
         "detection_delay_minutes": 16.807166666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 403.31621666666666,
+        "queue_age_minutes": 417.9313666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 12,
+        "news_freshness_score": 9,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "267dcb5e2c6cbc773d0d5e0f35ce872287a38c6e3a01eb9fabc50b8df95d918f",
         "issue_codes": [],
         "warning_codes": []
@@ -14110,7 +14636,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -14121,7 +14647,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "13107cad130cee66a7554cbf6765ac0d0630a5fb4b2c1bc76431d28e9d666293",
           "issue_codes": [],
           "warning_codes": []
@@ -16529,7 +17055,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -16540,7 +17066,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "0c59257b7f229b4525f991d215e40acd4338a0901f548bea4671dd037f615fad",
           "issue_codes": [],
           "warning_codes": []
@@ -17895,7 +18421,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -17906,7 +18432,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "1efa3fa74f2770221ef9efac103a0a38be0f98820ad08782bc080d18496d51db",
           "issue_codes": [],
           "warning_codes": []
@@ -22476,7 +23002,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -22487,7 +23013,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "fada684c913b1511f4b664c4800c3b5ed71f9a95565753e62994fc4d1b7d2c3a",
           "issue_codes": [],
           "warning_codes": []
@@ -23576,7 +24102,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -23587,7 +24113,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "53f93df4d1e534788f614f7964cd327043bdce46694f9d12100257749b54cc1b",
           "issue_codes": [],
           "warning_codes": []
@@ -24215,7 +24741,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -24226,7 +24752,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
           "issue_codes": [],
           "warning_codes": []
@@ -25480,7 +26006,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -25491,7 +26017,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
           "issue_codes": [],
           "warning_codes": []
@@ -26388,7 +26914,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -26399,7 +26925,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
           "issue_codes": [],
           "warning_codes": []
@@ -27253,7 +27779,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T04:08:18.438Z"
+        "retry_after": "2026-09-09T06:39:11.354Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -27336,7 +27862,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -27347,7 +27873,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "4b55b20f625f8b51cff685bdbe368f6c5abe3033876fbaf678baf66119971d61",
           "issue_codes": [],
           "warning_codes": []
@@ -29001,7 +29527,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -29012,7 +29538,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -29797,7 +30323,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -29808,7 +30334,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "0e63a4de2d3808fb0a7038382c487171672091885e94aa28e01ad3ddaac453c4",
           "issue_codes": [],
           "warning_codes": []
@@ -30842,7 +31368,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -30853,7 +31379,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "46b06f5129ab11dcdcbcead79a419746c9745bf047a31c3da192fa34a025dc76",
           "issue_codes": [],
           "warning_codes": []
@@ -32291,7 +32817,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -32302,7 +32828,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "e7587f2cc06df4cac7045809794906c00232f2e13e2e548f57b9ec2510a2dc75",
           "issue_codes": [],
           "warning_codes": []
@@ -35266,7 +35792,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "bf36d0e52a041563fd6ea4080293b7349719faa53e6e2da44ae2c04b203bc8a7",
@@ -35277,9 +35803,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-08T14:52:22.706Z",
       "event_detected_at": "2026-09-08T14:52:22.706Z",
       "event_id": "event-b4bdb0e02259462f4622",
@@ -35312,11 +35838,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 929.99005,
+        "source_age_minutes": 944.6052,
         "detection_delay_minutes": 14.678433333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 915.3116166666666,
+        "queue_age_minutes": 929.9267666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -35325,7 +35851,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "8dc1fc67b4d6b2ce603c3c5a8305a9c0bb659e39149c405430a72181bf44e900",
         "issue_codes": [],
         "warning_codes": []
@@ -35999,7 +36525,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -36010,7 +36536,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "484ee63d9db550c1e2294eb912677a21bde29d3e9b9613f1457cb2ac44270032",
           "issue_codes": [],
           "warning_codes": []
@@ -38149,7 +38675,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -38160,7 +38686,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "04fad27b4d3289772b2e99292c31ee46e8833ec80b2213996da8da259f0bd90f",
           "issue_codes": [],
           "warning_codes": []
@@ -39553,7 +40079,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -39564,7 +40090,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -40281,7 +40807,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -40292,7 +40818,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "c59a0a55d490614add5884e934619707fa8248010ff7b6737e729d894867d4f9",
           "issue_codes": [],
           "warning_codes": []
@@ -41624,7 +42150,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -41635,7 +42161,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "d4b8c47f1b5a6ae4b9e8838edd34c8da0189c7f592bf1dd36369dd436d41ddf2",
           "issue_codes": [],
           "warning_codes": []
@@ -44227,7 +44753,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -44238,7 +44764,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
           "issue_codes": [],
           "warning_codes": []
@@ -45398,7 +45924,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -45409,7 +45935,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "63f046175e324d9aac3dc62cf0f0e86b6ea7a260faeb7c3aa7053bcca7dcdfdf",
           "issue_codes": [],
           "warning_codes": []
@@ -47401,7 +47927,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -47412,7 +47938,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
           "issue_codes": [],
           "warning_codes": []
@@ -47696,7 +48222,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "cc6a32b84d29dc01d82b5f05bd065cce8b4893dd9a924ebce552dc151d5aaaf4",
@@ -47707,9 +48233,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-6bb10c2f566db83d662b",
@@ -47754,11 +48280,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1099.7567166666668,
+        "source_age_minutes": 1114.3718666666666,
         "detection_delay_minutes": 18.845716666666668,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1080.911,
+        "queue_age_minutes": 1095.52615,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -47767,7 +48293,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "4e88b6ddf2281d0eac5a754c369f87d7f1e680c53ee40d6995f70c4ef8364924",
         "issue_codes": [],
         "warning_codes": []
@@ -50795,7 +51321,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T04:21:52.139Z"
+        "retry_after": "2026-09-09T06:39:16.340Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -50944,7 +51470,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -50955,7 +51481,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "0e824208ac91cd615c6da0a4f44ebe8e9f89278fea217f54750b619c806b7163",
           "issue_codes": [],
           "warning_codes": []
@@ -51370,14 +51896,14 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T04:08:13.857Z"
+        "retry_after": "2026-09-09T06:39:06.232Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "606033cb560ca71f7dc74a081a20b230109a61fddbdf3c8b37ed70918cad3897",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T12:07:41.403Z",
+        "expires_at": "2026-09-09T12:22:18.312Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -52060,7 +52586,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T03:52:15.234Z"
+        "retry_after": "2026-09-09T06:39:01.253Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -52143,7 +52669,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -52154,7 +52680,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "aee2728c313d5bbd32082a613ae379886c53c1839aca55b1314e40cec484d370",
           "issue_codes": [],
           "warning_codes": []
@@ -54444,7 +54970,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -54455,7 +54981,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
           "issue_codes": [],
           "warning_codes": []
@@ -55290,7 +55816,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -55301,7 +55827,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "205041d2192cf688c27c75b8f7f545b8c4beba211ebffe3aaa3e8bcc272551f5",
           "issue_codes": [],
           "warning_codes": []
@@ -55874,13 +56400,10 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_DETAIL_SUMMARY_LENGTH"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 5,
-        "quality_retry_after": "2026-09-09T06:22:10.289Z",
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -55888,7 +56411,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T00:22:10.289Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "cc072f3eacc31d1e9994dcaa53b6184b0b77527fa2bdf770f01aad2115f6149d",
           "issue_codes": [],
           "warning_codes": []
@@ -56676,7 +57199,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -56687,7 +57210,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "868ad5265d175cfb161266ef637639c076040c24552ca93728b755dfa7d9702e",
           "issue_codes": [],
           "warning_codes": []
@@ -59511,7 +60034,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -59522,7 +60045,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "2c652abed92d331a1f98be3450e9c5db1900766730ca5696da85d249e9d161d8",
           "issue_codes": [],
           "warning_codes": []
@@ -61323,7 +61846,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -61334,7 +61857,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "723f1de1cc2ace50fe3cb4ebf77ce3b44a61a98ad66c6e3c85cde9c36f834247",
           "issue_codes": [],
           "warning_codes": []
@@ -63819,7 +64342,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -63830,7 +64353,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -64744,7 +65267,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -64755,7 +65278,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -71132,7 +71655,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -71143,7 +71666,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -74934,7 +75457,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 4,
         "quality_retry_after": null,
@@ -74945,7 +75468,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "23f60f41c7e50322a66d673ffbc4f4fa77d3d18dc42146d6ae3e57aa6991c72f",
           "issue_codes": [],
           "warning_codes": []
@@ -77666,7 +78189,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -77677,7 +78200,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -80647,7 +81170,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -80658,7 +81181,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -80737,7 +81260,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "5fdaa17f0750c1257e40d9a2de0c9bbcabee23271c5da956c713e7b5c7d92de6",
@@ -80748,9 +81271,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-09T02:22:22.812Z",
       "event_detected_at": "2026-09-09T02:22:22.812Z",
       "event_id": "event-9c0ee812d27e4634c540",
@@ -80791,11 +81314,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1807.69005,
+        "source_age_minutes": 1822.3052,
         "detection_delay_minutes": 1582.3802,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 225.30985,
+        "queue_age_minutes": 239.925,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -80804,7 +81327,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "62b1bcd93cb96018b47dea8bf4beaacafc77c54dc90316f3ee3b26841d15c0c6",
         "issue_codes": [],
         "warning_codes": []
@@ -81542,7 +82065,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -81553,7 +82076,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -83053,9 +83576,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T12:07:41.403Z",
+        "expires_at": "2026-09-09T12:22:18.312Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -86510,7 +87033,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -86521,7 +87044,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -87767,7 +88290,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -87778,7 +88301,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -88328,7 +88851,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -88339,7 +88862,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -89837,7 +90360,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -89848,7 +90371,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -91045,7 +91568,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -91056,7 +91579,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -92192,7 +92715,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -92203,7 +92726,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -92712,7 +93235,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -92723,7 +93246,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -95169,7 +95692,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -95180,7 +95703,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -99173,9 +99696,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "61dd35c8e2e4f05a2b64bdc95313fd7c05533e5088e8d7050ab841b17a574a74",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T12:07:41.403Z",
+        "expires_at": "2026-09-09T12:22:18.312Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -195283,7 +195806,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -239677,7 +240200,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:07:41.403Z",
+          "checked_at": "2026-09-09T06:22:18.312Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -275317,6 +275840,54 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-09T06:22:18.312Z",
+          "retained_urls": [
+            "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+            "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+            "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+            "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
+            "https://www.ndr.de/nachrichten/info/das-erbe-nach-9-11-deutschland-nach-anschlaegen-in-usa,pearl-harburg-100.html",
+            "https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS9wcm9wbGFuXzE5NjM4Nzc1M19nYW56ZVNlbmR1bmc",
+            "https://www.stern.de/panorama/donald-trump-luegt-darueber--dass-er-an-9-11-gerettet-wurde-38224984.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+              "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+              "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-04T11:02:58.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+              "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-04T11:02:58.000Z",
+              "ingested_at": "2026-09-09T06:07:41.403Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-09T04:00:00.000Z",
@@ -275609,7 +276180,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-02",
@@ -275629,7 +276200,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-03",
@@ -275649,7 +276220,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-04",
@@ -275669,7 +276240,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-05",
@@ -275689,7 +276260,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-06",
@@ -275709,7 +276280,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-07",
@@ -275729,7 +276300,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-08",
@@ -275749,7 +276320,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:07:41.403Z"
+          "checked_at": "2026-09-09T06:22:18.312Z"
         }
       ],
       "content_hash": "aa84f3aeb70eb56400cdd4df16021debc569dddea4974ace3bee901f3568936a",
@@ -275764,7 +276335,7 @@
       "fresh": false,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T06:07:41.403Z",
+      "updated_at": "2026-09-09T06:22:18.312Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-4282989facaefbf32544",
@@ -275801,20 +276372,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 20.69005,
+        "source_age_minutes": 35.3052,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 105.32343333333333,
+        "queue_age_minutes": 119.93858333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:07:41.403Z",
+        "checked_at": "2026-09-09T06:22:18.312Z",
         "fingerprint": "dcfe67c4412c2939ae99783bbec2c7e512d1e97b8fa37574b61c6e78a700c9a5",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"

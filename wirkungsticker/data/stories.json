@@ -1,7 +1,114 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T05:57:09.684Z",
+  "updated_at": "2026-09-09T06:22:18.312Z",
   "stories": [
+    {
+      "story_id": "wt-7e2c82a0ae7a9962",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "schulbegleitung-und-co-zahl-der-eingliederungshilfen-fur-junge-menschen-mit-seelischer-b-7a9962",
+      "title": "Schulbegleitung und Co.: Zahl der Eingliederungshilfen für junge Menschen mit seelischer Behinderung binnen zehn Jahren mehr als verdoppelt",
+      "source_summary": "Das Statistische Bundesamt meldet einen starken Anstieg bei Eingliederungshilfen für junge Menschen mit seelischer Behinderung. 2024 wurden gut 174 000 Hilfen gewährt, mehr als doppelt so viele wie 2014 mit knapp 80 800. Die Ausgaben für minderjährige Kinder und Jugendliche lagen 2024 bei 3,5 Milliarden Euro, nach gut 1,1 Milliarden Euro 2014.\n\nAls häufige Gründe nennt die Statistik seelische Probleme oder Entwicklungsauffälligkeiten, schulische oder berufliche Probleme sowie Auffälligkeiten im Sozialverhalten. Parallel weist sie auf 111 700 Schülerinnen und Schüler mit dem Förderschwerpunkt emotionale und soziale Entwicklung im Schuljahr 2024/2025 hin; 58 % davon wurden inklusiv unterrichtet. Offen bleibt, wie stark die geplante Reform der Kinder- und Jugendhilfe diese Entwicklung künftig beeinflusst.",
+      "summary": "Ein amtlicher Datensatz zeigt deutlich mehr Eingliederungshilfen und höhere Ausgaben für junge Menschen mit seelischer Behinderung. Für die Praxis der Jugendhilfe ist das relevant, weil Zugänge, Bedarf und Ressourcen sichtbar werden.",
+      "detail_summary": "Die Statistik beschreibt eine deutliche Zustandsänderung in der Kinder- und Jugendhilfe: mehr bewilligte Eingliederungshilfen, höhere Ausgaben und mehr erfasste Schülerinnen und Schüler mit Förderbedarf im Bereich emotionale und soziale Entwicklung. Das ist für Familien, Schulen und Träger materiell relevant, weil es auf wachsenden Unterstützungsbedarf und höheren Ressourceneinsatz hinweist. Ein möglicher Wirkpfad führt über mehr Schulbegleitung und andere Hilfen zu besserer Teilhabe im Alltag. Ob das tatsächlich so eintritt, bleibt offen; der Befund belegt zunächst nur Umfang und Entwicklung, nicht die Wirksamkeit der Hilfe. Die Reform der Kinder- und Jugendhilfe ist als Kontext genannt, ihre Folgen sind aber noch nicht belegt. Die Evidenz ist amtlich und direkt, aber auf einen Datenstand begrenzt.",
+      "why_relevant": "Die Meldung beschreibt einen klaren Trend bei Hilfen, Ausgaben und Förderbedarf. Das ist für Kinder, Familien, Schulen und öffentliche Haushalte materiell relevant.",
+      "topic": [
+        "Soziales",
+        "Gesundheit",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Mehr bewilligte Hilfen können den Zugang zu Unterstützung und Teilhabe verbessern, wenn Bedarf gedeckt und Angebote erreichbar sind.",
+          "positive_path": {
+            "mechanism": "Mehr Schulbegleitung und Hilfen erleichtern Alltag, Lernen und soziale Teilhabe betroffener junger Menschen.",
+            "source_ids": [
+              "destatis-aktuell"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Steigende Fallzahlen und Ausgaben können Engpässe, Wartezeiten oder Verteilungsdruck im Hilfesystem verstärken.",
+            "source_ids": [
+              "destatis-aktuell"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung enthält keinen belastbaren Wirkpfad zu Umwelt, Emissionen oder Ressourcenverbrauch.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Statistik berührt öffentliche Planung und Korrekturfähigkeit, zeigt aber keinen direkten demokratischen Effekt.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T06:22:18.312Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T06:00:00.000Z",
+      "last_updated": "2026-09-09T06:22:45.918Z",
+      "version": 1,
+      "news_status": "confirmed",
+      "event_id": "event-24ab3fe6aacb569a543a",
+      "case_file": null,
+      "source_published_at": "2026-09-09T06:00:00.000Z",
+      "published_at": "2026-09-09T06:22:45.918Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "destatis-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Reform der Kinder- und Jugendhilfe den Zugang zu Schulbegleitung und anderen Eingliederungshilfen verändert.",
+          "source_id": "destatis-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Zahl der bewilligten Eingliederungshilfen, Ausgaben und Anteile nach Jahren",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-50bb573ab2e01903",
+          "announced_at": "2026-09-09T06:00:00.000Z",
+          "follow_up_date": "2026-09-16T06:22:45.918Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Statistisches Bundesamt",
+          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+          "source_type": "official_rss",
+          "published_at": "2026-09-09T06:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-3e258fc08f00f85e",
       "title_image": {

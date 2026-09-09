@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T06:09:26.057Z",
-  "scanned_stories": 187,
-  "scanned_subjects": 165,
+  "started_at": "2026-09-09T06:24:29.751Z",
+  "scanned_stories": 188,
+  "scanned_subjects": 166,
   "editorial_candidates": 32,
   "ready_for_research": 9,
   "research_pending": 11,
-  "retry_deferred": 9,
+  "retry_deferred": 7,
   "editorial_research_sources_discovered": 49,
-  "selected": 0,
+  "selected": 1,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
@@ -19,7 +19,16 @@
   "analysis_tokens": 0,
   "estimated_cost_usd": 0,
   "quality_retries": 0,
-  "publication_deferred": false,
+  "economy_version": "1.0",
+  "background_only": true,
+  "full_generations": 0,
+  "targeted_repairs": 0,
+  "batch_results_reviewed": 0,
+  "background_waiting": 1,
+  "quality_held": 2,
+  "unchanged_research_skipped": 13,
+  "requested": [],
+  "publication_deferred": true,
   "failed": [],
   "candidates": [
     {
@@ -1044,7 +1053,7 @@
         "reasons": []
       },
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
-      "status": "ready_for_research",
+      "status": "quality_hold",
       "analysis_id": "woek-analysis-1b3323ad407f"
     },
     {
@@ -1215,7 +1224,7 @@
         "reasons": []
       },
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
-      "status": "ready_for_research",
+      "status": "quality_hold",
       "analysis_id": null
     },
     {
@@ -1396,13 +1405,15 @@
     }
   ],
   "batch": {
-    "submitted": 0,
-    "pending": 1,
+    "submitted": 1,
+    "pending": 0,
     "completed": 0,
     "failed": 0,
     "applied": 0,
     "polling_errors": 0,
     "timing_reconciled": 0,
     "attention_required": []
-  }
+  },
+  "batch_deferred": 1,
+  "completed_at": "2026-09-09T06:25:01.317Z"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-09T06:07:41.403Z",
+  "last_successful_run": "2026-09-09T06:22:18.312Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -53490,11 +53490,10 @@
     "wt-3de38f5a311ccd32",
     "wt-86ea1ddfd89beabf",
     "wt-a5874ae28ed5533f",
-    "wt-990631d7dc3586cb",
-    "wt-7e2c82a0ae7a9962"
+    "wt-990631d7dc3586cb"
   ],
   "relevance_filter_version": "4.0",
-  "last_attempted_run": "2026-09-09T06:07:41.403Z",
+  "last_attempted_run": "2026-09-09T06:22:18.312Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1614,
@@ -53745,10 +53744,10 @@
       "prompt_hash": "8d307fad2287d66ede8e52cb80e6e3ad0befcd06bf8022a966acd99bc1b3afbd",
       "attempt": 0,
       "created_at": "2026-09-09T05:57:09.684Z",
-      "status": "submitted",
-      "billing_status": "reserved",
-      "next_poll_at": "2026-09-09T06:12:09.684Z",
-      "checked_at": "2026-09-09T05:57:09.684Z",
+      "status": "completed",
+      "billing_status": "settled",
+      "next_poll_at": "2026-09-09T06:39:26.143Z",
+      "checked_at": "2026-09-09T06:24:26.143Z",
       "error": null
     },
     "aeef88f4a903b3e684d0775f53364ca285ee3f625334d242e42b5de523718e25": {
@@ -53763,6 +53762,20 @@
       "billing_status": "settled",
       "next_poll_at": "2026-09-09T04:52:31.653Z",
       "checked_at": "2026-09-09T04:37:31.653Z",
+      "error": null
+    },
+    "794698a32f935a01facf72a928fe8429f572b7911185eb9e0c6ee7adcad10ac7": {
+      "key": "794698a32f935a01facf72a928fe8429f572b7911185eb9e0c6ee7adcad10ac7",
+      "kind": "editorial_background",
+      "story_id": "wt-cf03acddb911d861",
+      "fingerprint": "3df4ab44abf93a9f1562c1b63147cfed6be2fe42c1f7d741c9e04e0625a91f1a",
+      "prompt_hash": "d597a9e150d0e923ce04ed4d3a4c477e60a1f3e26c152dc3b1f26af2da8a22a7",
+      "attempt": 0,
+      "created_at": "2026-09-09T06:24:29.751Z",
+      "status": "submitted",
+      "billing_status": "reserved",
+      "next_poll_at": "2026-09-09T06:39:29.751Z",
+      "checked_at": "2026-09-09T06:24:29.751Z",
       "error": null
     }
   },
