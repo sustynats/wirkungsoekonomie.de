@@ -40,6 +40,7 @@ import { bumpCandidateFunnel, bumpSourceFunnel, createSourceFunnel, finalizeSour
 import { isolatedSourceThrottleWithRecentCoverage, sourceCoverageDegraded } from "./check-run-health.mjs";
 import { operatingCostSummary, usageCostStartedAt } from "./operating-cost.mjs";
 import { regionalCoverage } from "./regional-coverage.mjs";
+import { createPublicationDateRecovery } from "./publication-date.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
@@ -136,6 +137,8 @@ function sourcePublicRecord(item) {
     summary: item.summary,
     source_type: item.source_type,
     published_at: item.published_at,
+    published_precision: item.published_precision,
+    publication_date_evidence: item.publication_date_evidence,
     date_status: item.date_status,
     retrieved_at: item.retrieved_at,
     primary_source: item.primary_source,
@@ -970,7 +973,7 @@ export async function runWirkungsticker(options = {}) {
     return { source, fetched, items, fetchAttempts: fetchResult.attempts };
   });
 
-  const allItems = [];
+  let allItems = [];
   for (let index = 0; index < fetchResults.length; index += 1) {
     const result = fetchResults[index];
     const source = dueSources[index];
@@ -1010,6 +1013,16 @@ export async function runWirkungsticker(options = {}) {
   }
   if (dueSources.length && report.source_successes === 0) report.all_sources_failed = true;
 
+  const publicationDates = createPublicationDateRecovery({ registry, state, now, fetchArticleImpl: options.fetchPublicationDateImpl });
+  report.source_date_recovery = publicationDates.stats;
+  // Prime the metadata cache for waiting work first, without rewriting any
+  // published source or version. All phases share the same three-read limit.
+  const waitingSources = storyStore.stories.filter(story => !isMerged(story)
+    && ((!story.published && story.listed !== false) || story.pending_update))
+    .flatMap(story => story.pending_update?.sources || story.sources || []);
+  await publicationDates.recover(waitingSources);
+  allItems = await publicationDates.recover(allItems);
+
   const lookbackMs = Number(registry.policy.bootstrap_lookback_hours || 36) * 60 * 60 * 1000;
   const backfillCutoff = nowDate.getTime() - RELEVANCE_BACKFILL_DAYS * 24 * 60 * 60 * 1000;
   const needsRelevanceBackfill = state.relevance_filter_version !== RELEVANCE_FILTER_VERSION;
@@ -1018,7 +1031,10 @@ export async function runWirkungsticker(options = {}) {
   const freshItemIds = new Set();
   for (const item of allItems) {
     const sourceCursor = previousSourceStatus[item.source_id]?.last_success;
-    const cutoff = sourceCursor ? Date.parse(sourceCursor) - 5 * 60 * 1000 : nowDate.getTime() - lookbackMs;
+    // Day-only metadata cannot be compared with a minute-level feed cursor.
+    // Use the bounded discovery window, including the unknown part of that day.
+    const cutoff = item.published_precision === 'day' ? nowDate.getTime() - lookbackMs - 86400000
+      : sourceCursor ? Date.parse(sourceCursor) - 5 * 60 * 1000 : nowDate.getTime() - lookbackMs;
     const previous = state.seen_items[item.item_id];
     const published = Date.parse(item.published_at || 0);
     if (published > nowDate.getTime() + futureToleranceMs) {
@@ -1131,6 +1147,7 @@ export async function runWirkungsticker(options = {}) {
     const mergedSources = mergeSources(candidate.sources, alternativeItems);
     candidate.sources = reconcileKnownSourceAliases(mergedSources.map(source =>
       reconcileSourceIdentity(source, registry.sources.find(entry => entry.source_id === source.source_id), registry)));
+    candidate.sources = await publicationDates.recover(candidate.sources);
     refreshUnpublishedDraftTitle(candidate);
     candidate.preanalysis = preAnalyzeStory(candidate, now);
     candidate.topic = candidate.preanalysis.topics;
