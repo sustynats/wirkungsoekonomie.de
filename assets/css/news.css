@@ -1280,7 +1280,9 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
 
 /* --- Detailseite -------------------------------------------------------- */
 
-.news-status-notice {
+.news-status-notice,
+.news-correction {
+  box-sizing: border-box;
   width: min(calc(100% - 2 * var(--space-gutter, 1rem)), var(--container, 1180px));
   margin: 0.75rem auto;
   padding: 0.75rem 1rem;
@@ -1289,6 +1291,16 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
   border-radius: 6px;
   color: var(--wt-muted);
   line-height: 1.5;
+}
+
+.news-correction p {
+  max-inline-size: 85ch;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.news-correction p + p {
+  margin-top: 0.5rem;
 }
 
 .news-story-main .wt-glance {

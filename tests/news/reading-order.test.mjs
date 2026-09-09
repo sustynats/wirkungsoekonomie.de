@@ -45,6 +45,29 @@ test("technical evidence codes are translated on every public detail surface", (
   assert.equal(evidenceLevelLabel("attributed_single_source: mehrere Berichte"), "zugeschriebene Quellenlage: mehrere Berichte");
 });
 
+test("every correction uses a bounded reader notice, with date and unchanged escaped text", () => {
+  const story = structuredClone(fixture);
+  story.corrections = [
+    { at: "2026-09-08T12:00:00Z", note: "Erste Korrektur: Mensch & Planet bleiben getrennt." },
+    { at: "2026-09-09T12:00:00Z", note: "Zweite Korrektur: <em>keine HTML-Anweisung</em>." },
+  ];
+  const before = structuredClone(story), html = storyPage(story);
+  const notices = [...html.matchAll(/<aside class="notice news-correction" role="note">([\s\S]*?)<\/aside>/g)];
+  assert.equal(notices.length, 2);
+  assert.match(notices[0][1], /<p><strong>Korrektur vom 08\.09\.2026<\/strong><\/p><p>Erste Korrektur: Mensch &amp; Planet bleiben getrennt\.<\/p>/);
+  assert.match(notices[1][1], /Korrektur vom 09\.09\.2026/);
+  assert.match(notices[1][1], /&lt;em&gt;keine HTML-Anweisung&lt;\/em&gt;/);
+  assert.ok(notices[1].index < html.indexOf('<nav class="wt-subnav"'));
+  assert.deepEqual(story, before);
+  assert.doesNotMatch(storyPage({ ...story, corrections: [] }), /class="notice news-correction"/);
+  const css = fs.readFileSync(new URL("../../assets/css/news.css", import.meta.url), "utf8");
+  const sharedStyle = css.match(/\.news-status-notice,\s*\.news-correction\s*\{([^}]+)\}/)?.[1];
+  assert.ok(sharedStyle, "corrections share the existing centered status-notice layout");
+  assert.match(sharedStyle, /width:\s*min\(calc\(100% - 2 \* var\(--space-gutter/);
+  assert.match(sharedStyle, /margin:\s*0\.75rem auto/);
+  assert.match(sharedStyle, /box-sizing:\s*border-box/);
+});
+
 test("public ticker copy explains quality without infrastructure internals", () => {
   const html = fs.readFileSync(new URL("../../wirkungsticker/index.html", import.meta.url), "utf8");
   assert.doesNotMatch(html, /\b(?:Oracle|OCI|Higgsfield|OpenAI|Anthropic|GPT-\d)/i);

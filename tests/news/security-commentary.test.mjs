@@ -126,6 +126,7 @@ test("own share cards use the reviewed subject, risk labels and immutable existi
   assert.equal(uploaded,2); assert.equal(result.provider_calls,0);
   assert.ok(publicTitleImage(result.title_image).og.url);
   const html=editorialAnalysisPage({...prepared(),title_image:result.title_image},story);
-  assert.ok(html.includes(`property="og:image" content="${result.title_image.og.url}"`));
+  assert.match(html, /property="og:image" content="https:\/\/wirkungsoekonomie\.de\/assets\/img\/news-share\/[a-f0-9]{24}\.jpg"/);
+  assert.ok(html.includes(`property="og:title" content="${prepared().title}"`));
   assert.throws(()=>editorialTitleInput({...packet,assessment_context:'observed'}),/REVIEW_REQUIRED/);
 });

@@ -27,14 +27,22 @@ export async function setGeneratedDocument(page, frameId, svg) {
 }
 
 export async function chromeRender(svg, { width, height, scale = 1, chrome }) {
+  const [png] = await chromeRenderBatch([{ svg, width, height, scale }], { chrome });
+  return png;
+}
+
+// One isolated browser for a bounded batch of our own SVGs. No remote assets,
+// personal browser profile or provider call; avoids a Chrome launch per card.
+export async function chromeRenderBatch(items, { chrome, onImage = null, noSandbox = process.env.WT_CHROME_NO_SANDBOX === "true" }) {
+  if (!items.length) return [];
   const directory = fs.mkdtempSync(path.join(os.tmpdir(), "wt-title-cdp-"));
   let child, socket, timer, phase = "START";
   const pending = new Map(); let sequence = 0;
   try {
-    const png = await Promise.race([
-      new Promise((_, reject) => { timer = setTimeout(() => reject(new Error(`CHROME_RENDER_TIMEOUT_${phase}`)), 30000); }),
+    const images = await Promise.race([
+      new Promise((_, reject) => { timer = setTimeout(() => reject(new Error(`CHROME_RENDER_TIMEOUT_${phase}`)), 30000 + items.length * 5000); }),
       (async () => {
-        child = spawn(chrome, ["--headless=new", "--remote-debugging-port=0", "--remote-debugging-address=127.0.0.1", `--user-data-dir=${directory}`, "--no-first-run", "--no-default-browser-check", "--disable-background-networking", "--disable-component-update", "--disable-dev-shm-usage", "--password-store=basic", "--use-mock-keychain", ...(process.env.WT_CHROME_NO_SANDBOX === "true" ? ["--no-sandbox"] : []), "about:blank"], { stdio: ["ignore", "ignore", "pipe"], detached: process.platform !== "win32" });
+        child = spawn(chrome, ["--headless=new", "--remote-debugging-port=0", "--remote-debugging-address=127.0.0.1", `--user-data-dir=${directory}`, "--no-first-run", "--no-default-browser-check", "--disable-background-networking", "--disable-component-update", "--disable-dev-shm-usage", "--password-store=basic", "--use-mock-keychain", ...(noSandbox ? ["--no-sandbox"] : []), "about:blank"], { stdio: ["ignore", "ignore", "pipe"], detached: process.platform !== "win32" });
         const endpoint = await new Promise((resolve, reject) => {
           let output = "";
           child.on("error", reject); child.on("exit", () => reject(new Error("CHROME_EXITED")));
@@ -64,19 +72,26 @@ export async function chromeRender(svg, { width, height, scale = 1, chrome }) {
         await page("Page.enable");
         await page("Network.enable");
         await page("Network.setBlockedURLs", { urls: ["http://*", "https://*", "file://*"] });
-        await page("Emulation.setDeviceMetricsOverride", { width, height, deviceScaleFactor: scale, mobile: false });
         const { frameTree } = await page("Page.getFrameTree");
-        phase = "DOCUMENT";
-        await setGeneratedDocument(page, frameTree.frame.id, svg);
-        phase = "ASSETS";
-        const ready = await page("Runtime.evaluate", { expression: "Promise.all([document.fonts.ready,...Array.from(document.images).map(image=>image.decode())]).then(()=>true)", awaitPromise: true, returnByValue: true });
-        if (ready.exceptionDetails || ready.result?.value !== true) throw new Error("CHROME_ASSETS_NOT_READY");
-        phase = "SCREENSHOT";
-        const shot = await page("Page.captureScreenshot", { format: "png", clip: { x: 0, y: 0, width, height, scale: 1 }, captureBeyondViewport: false });
-        return Buffer.from(shot.data, "base64");
+        const results = [];
+        for (const [index, { svg, width, height, scale = 1, format = "png", quality = 88 }] of items.entries()) {
+          await page("Emulation.setDeviceMetricsOverride", { width, height, deviceScaleFactor: scale, mobile: false });
+          phase = "DOCUMENT";
+          await setGeneratedDocument(page, frameTree.frame.id, svg);
+          phase = "ASSETS";
+          const ready = await page("Runtime.evaluate", { expression: "Promise.all([document.fonts.ready,...Array.from(document.images).map(image=>image.decode())]).then(()=>true)", awaitPromise: true, returnByValue: true });
+          if (ready.exceptionDetails || ready.result?.value !== true) throw new Error("CHROME_ASSETS_NOT_READY");
+          phase = "SCREENSHOT";
+          if (!["png", "jpeg"].includes(format)) throw new Error("CHROME_IMAGE_FORMAT_INVALID");
+          const shot = await page("Page.captureScreenshot", { format, ...(format === "jpeg" ? { quality } : {}), clip: { x: 0, y: 0, width, height, scale: 1 }, captureBeyondViewport: false });
+          const png = Buffer.from(shot.data, "base64");
+          if (onImage) await onImage(png, index);
+          else results.push(png);
+        }
+        return results;
       })(),
     ]);
-    return png;
+    return images;
   } finally {
     clearTimeout(timer); socket?.close();
     for (const operation of pending.values()) operation.reject(new Error("CHROME_RENDER_CLOSED"));
