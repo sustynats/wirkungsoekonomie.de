@@ -33252,14 +33252,13 @@
       "quality_cycles": 0,
       "request_id": null,
       "attempts": 7,
-      "last_attempt_at": "2026-09-09T12:55:40.374Z",
-      "next_attempt_at": "2026-09-09T13:10:40.374Z",
+      "last_attempt_at": "2026-09-09T13:28:06.105Z",
+      "next_attempt_at": "2026-09-09T13:43:06.105Z",
       "quality_errors": [
         "EDITORIAL_ARTICLE_LENGTH",
-        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
-        "EDITORIAL_SELF_FRAME_FAILED"
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
       ],
-      "reason": "AI_BATCH_PENDING"
+      "reason": "BATCH_RETRY_LIMIT"
     },
     "wt-6c26e428b894e714": {
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",

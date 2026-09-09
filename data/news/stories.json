@@ -1,8 +1,1423 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-09T13:06:43.122Z",
-  "updated_at": "2026-09-09T13:06:43.122Z",
+  "public_updated_at": "2026-09-09T13:22:48.629Z",
+  "updated_at": "2026-09-09T13:22:48.629Z",
   "stories": [
+    {
+      "story_id": "wt-ed407d0353f699da",
+      "slug": "schwiegermutter-mit-wagenheberstange-erschlagen-lebenslange-haft-in-heilbronn-f699da",
+      "title": "Schwiegermutter mit Wagenheberstange erschlagen: Lebenslange Haft in Heilbronn",
+      "first_seen": "2026-09-09T13:06:35.000Z",
+      "last_updated": "2026-09-09T13:26:37.853Z",
+      "published_at": "2026-09-09T13:26:37.853Z",
+      "updated_at": "2026-09-09T13:26:37.853Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/schwiegermutter-mit-wagenheberstange-erschlagen--lebenslange-haft-in-heilbronn-38228188.html",
+          "title": "Schwiegermutter mit Wagenheberstange erschlagen: Lebenslange Haft in Heilbronn",
+          "summary": "Wegen der Tötung seiner Schwiegermutter ist ein Mann in Baden-Württemberg zu einer lebenslangen Freiheitsstrafe verurteilt worden. Das Landgericht Heilbronn sprach den 47-Jährigen am Mittwoch des Mordes schuldig, wie eine Gerichtssprecherin mitteilte. Damit folgte die Kammer den Anträgen von Staatsanwaltschaft und Nebenklage. Die Verteidigung hatte auf eine Verurteilung wegen Totschlags plädiert und zwölf Jahre Haft gefordert.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:06:35.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "1cb1ef6deb7be5897a1ed06be934e1d4bcac2063e7a2ea4f1dd60f2b6e5f3bd3",
+          "source_item_id": "515cc05f4898f1d7c814ec0cd4a8a27c9de623e920b0bcaf88dece20b9210cf3",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T13:06:35.000Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ed407d0353f699da-v1-claim-1",
+          "story_id": "wt-ed407d0353f699da",
+          "claim": "Ein Mann ist in Heilbronn wegen der Tötung seiner Schwiegermutter zu lebenslanger Freiheitsstrafe verurteilt worden.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/schwiegermutter-mit-wagenheberstange-erschlagen--lebenslange-haft-in-heilbronn-38228188.html",
+              "excerpt_hash": "e858410db35967ce4c1d",
+              "checked_at": "2026-09-09T13:26:37.853Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T13:26:37.853Z"
+        },
+        {
+          "claim_id": "wt-ed407d0353f699da-v1-claim-2",
+          "story_id": "wt-ed407d0353f699da",
+          "claim": "Das Landgericht Heilbronn sprach den 47-Jährigen am Mittwoch des Mordes schuldig.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/schwiegermutter-mit-wagenheberstange-erschlagen--lebenslange-haft-in-heilbronn-38228188.html",
+              "excerpt_hash": "e858410db35967ce4c1d",
+              "checked_at": "2026-09-09T13:26:37.853Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T13:26:37.853Z"
+        },
+        {
+          "claim_id": "wt-ed407d0353f699da-v1-claim-3",
+          "story_id": "wt-ed407d0353f699da",
+          "claim": "Die Verteidigung hatte auf Totschlag plädiert und zwölf Jahre Haft gefordert.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/schwiegermutter-mit-wagenheberstange-erschlagen--lebenslange-haft-in-heilbronn-38228188.html",
+              "excerpt_hash": "12bc928f236e5ae691a4",
+              "checked_at": "2026-09-09T13:26:37.853Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T13:26:37.853Z"
+        }
+      ],
+      "event_id": "event-8fd1c81cb3c580886ee4",
+      "event_first_seen_at": "2026-09-09T13:22:48.629Z",
+      "event_detected_at": "2026-09-09T13:22:48.629Z",
+      "verification_started_at": "2026-09-09T13:26:17.679Z",
+      "publish_ready_at": "2026-09-09T13:26:37.853Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-09T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T13:22:48.629Z",
+        "fingerprint": "635765e0c1512e4449c8c41cda8a1c92bfba5cb2f323696d81db1ac8fb26906f",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die schriftlichen Urteilsgründe und mögliche Rechtsmittel bekannt werden",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Mitteilung zu Urteilsgründen oder Rechtsmittel",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b653aad311fc7e15",
+          "announced_at": "2026-09-09T13:06:35.000Z",
+          "follow_up_date": "2026-09-16T13:26:37.853Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "6631ae7354067879acbc7ea7962c3d6214d333cde3767e2d44ae3ff12a6d88f8",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-09T13:26:37.853Z",
+        "sources": []
+      },
+      "source_summary": "Wegen der Tötung seiner Schwiegermutter ist ein Mann in Baden-Württemberg zu einer lebenslangen Freiheitsstrafe verurteilt worden. Nach Angaben einer Gerichtssprecherin sprach das Landgericht Heilbronn den 47-Jährigen am Mittwoch des Mordes schuldig. Die Kammer folgte damit den Anträgen von Staatsanwaltschaft und Nebenklage.\n\nDie Verteidigung hatte auf Totschlag plädiert und zwölf Jahre Haft gefordert. Offen bleibt in dieser Meldung der vollständige Tathergang; belastbar belegt ist vor allem das Urteil und die abweichende Strafanträge der Verteidigung.",
+      "analysis": {
+        "story_id": "wt-ed407d0353f699da",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Das Landgericht Heilbronn hat einen 47-Jährigen wegen Mordes zu lebenslanger Haft verurteilt. Laut Meldung ging es um die Tötung seiner Schwiegermutter; die Verteidigung wollte Totschlag und zwölf Jahre Haft.",
+        "detail_summary": "Die Meldung beschreibt ein abgeschlossenes Strafurteil in Heilbronn: Ein 47-Jähriger wurde wegen Mordes zu lebenslanger Freiheitsstrafe verurteilt. Für die Einordnung ist vor allem der rechtsstaatliche Entscheidungsakt relevant, nicht die Reichweite der Meldung. Materiell wirkt das Urteil auf den Status des Verfahrens und auf die rechtliche Verantwortungszuweisung; ein direkter gesellschaftlicher Effekt bleibt zunächst begrenzt. Mögliche Folge ist, dass das Verfahren nun in die Phase möglicher Rechtsmittel oder schriftlicher Urteilsgründe übergeht. Die Quelle ist eine journalistische Sekundärmeldung; Details zum Tathergang, zur Beweiswürdigung und zu weiteren Verfahrensschritten bleiben offen.",
+        "why_relevant": "Ein abgeschlossenes Mordurteil verändert den Verfahrensstand und betrifft Strafrecht, Rechtsdurchsetzung und öffentliche Wahrnehmung gerichtlicher Verantwortung.",
+        "status": "beschlossen",
+        "analysis_type": "ex_post",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Das Urteil setzt staatliche Sanktion durch und kann Schutzinteressen von Betroffenen und Öffentlichkeit stärken. Es bleibt zugleich nur ein Einzelfall ohne belegte Breitenwirkung.",
+          "positive_path": {
+            "mechanism": "Die Verurteilung kann Rechtsdurchsetzung sichtbar machen und künftige Abschreckung im Einzelfall stützen.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Die Tat selbst steht für schweren Verlust an Leben und Schutz, was bereits eingetretenen Schaden markiert.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung ist kein belastbarer Pfad zu Umwelt-, Klima- oder Ressourcenzuständen erkennbar.",
+          "positive_path": {
+            "mechanism": "Kein aus der Quelle ableitbarer Umweltpfad.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kein aus der Quelle ableitbarer Umweltpfad.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Das Urteil zeigt gerichtliche Zuständigkeit und kann Vertrauen in formale Rechtsdurchsetzung stützen. Ein demokratischer Effekt bleibt aber indirekt und nicht gemessen.",
+          "positive_path": {
+            "mechanism": "Ein öffentlich begründetes Strafurteil kann die Korrekturfähigkeit und Sichtbarkeit rechtsstaatlicher Verfahren stärken.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ohne weitere Verfahrensdaten bleibt offen, ob und wie stark Kritik an Beweisführung oder Strafmaß den Diskurs belastet.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "importance": "mittel",
+        "impact_potential": "Vor allem rechtsstaatliche und verfahrensbezogene Folge, nicht strukturelle Systemänderung.",
+        "impact_risks": [
+          "Überhöhung eines Einzelfalls zu einer allgemeinen Sicherheits- oder Justizgeschichte.",
+          "Unklare Verfahrensdetails können die Einordnung des Urteils begrenzen."
+        ],
+        "mechanisms": [
+          "Strafurteil als staatliche Sanktion",
+          "Verfahrensabschluss mit möglicher Anschlusskommunikation",
+          "Öffentliche Sichtbarkeit gerichtlicher Entscheidung"
+        ],
+        "first_order": [
+          "Verurteilung und lebenslange Freiheitsstrafe",
+          "Feststellung von Mord durch das Landgericht"
+        ],
+        "second_order": [
+          "Mögliche Rechtsmittel oder weitere Verfahrensschritte",
+          "Signalwirkung für die Wahrnehmung gerichtlicher Verantwortung"
+        ],
+        "third_order": [
+          "Begrenzte Stärkung oder Schwächung von Vertrauen in Strafjustiz je nach späterer Debatte",
+          "Keine gesicherte Breitenwirkung aus der Einzelmeldung ableitbar"
+        ],
+        "systemic_relevance": "Das Ereignis liegt im Bereich Strafjustiz und berührt die Funktionsfähigkeit rechtsstaatlicher Entscheidungen, bleibt aber ein Einzelfall ohne belegte Systemkaskade.",
+        "transformation_potential": "Niedrig; die Meldung zeigt Durchsetzung bestehender Regeln, nicht eine Regel- oder Strukturänderung.",
+        "resilience": "Die Justiz zeigt mit dem Urteil ihre Entscheidungsfähigkeit; Angaben zu Rechtsmittel oder Belastbarkeit des Verfahrens fehlen.",
+        "side_effects": [
+          "Mögliche mediale Zuspitzung auf Härte des Strafmaßes",
+          "Mögliche Anschlussdebatte über Mord- und Totschlagsabgrenzung"
+        ],
+        "uncertainties": [
+          "Tathergang und Beweiswürdigung sind in der Meldung nicht ausgeführt.",
+          "Rechtsmittel, Urteilsgründe und mögliche Folgen bleiben offen."
+        ],
+        "evidence_level": "low to medium; nur eine journalistische Sekundärquelle mit Gerichtssprecherin und ohne Primärdokument",
+        "attribution": "stern berichtet unter Berufung auf eine Gerichtssprecherin; die Kernformel ist als journalistische Meldung und nicht als Gerichtsdokument überliefert.",
+        "watch_next": [
+          "Urteilsgründe",
+          "mögliche Berufung oder Revision",
+          "weitere Angaben der Justiz"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "binding_decision",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "duration",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Ein neues, abgeschlossenes Mordurteil ist gegenüber der Vorgeschichte eine materielle Verfahrensänderung und nicht bloß Wiederholung."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-09T13:22:48.629Z",
+        "media_trigger_fingerprint": "bf6f9cefb6dac189bed822ec050aae514d4bb8a6e3e8f1f703837969b162a845",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "bf6f9cefb6dac189bed822ec050aae514d4bb8a6e3e8f1f703837969b162a845",
+          "content_fingerprint": "2c51a892075f1907c03a7cb7998d2db2c4b6e67482f2f59cac2b467c54534dec",
+          "basis": "feed_metadata",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-09T13:26:37.853Z",
+          "content_hash": "6631ae7354067879acbc7ea7962c3d6214d333cde3767e2d44ae3ff12a6d88f8",
+          "source_summary": "Wegen der Tötung seiner Schwiegermutter ist ein Mann in Baden-Württemberg zu einer lebenslangen Freiheitsstrafe verurteilt worden. Nach Angaben einer Gerichtssprecherin sprach das Landgericht Heilbronn den 47-Jährigen am Mittwoch des Mordes schuldig. Die Kammer folgte damit den Anträgen von Staatsanwaltschaft und Nebenklage.\n\nDie Verteidigung hatte auf Totschlag plädiert und zwölf Jahre Haft gefordert. Offen bleibt in dieser Meldung der vollständige Tathergang; belastbar belegt ist vor allem das Urteil und die abweichende Strafanträge der Verteidigung.",
+          "analysis": {
+            "story_id": "wt-ed407d0353f699da",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Das Landgericht Heilbronn hat einen 47-Jährigen wegen Mordes zu lebenslanger Haft verurteilt. Laut Meldung ging es um die Tötung seiner Schwiegermutter; die Verteidigung wollte Totschlag und zwölf Jahre Haft.",
+            "detail_summary": "Die Meldung beschreibt ein abgeschlossenes Strafurteil in Heilbronn: Ein 47-Jähriger wurde wegen Mordes zu lebenslanger Freiheitsstrafe verurteilt. Für die Einordnung ist vor allem der rechtsstaatliche Entscheidungsakt relevant, nicht die Reichweite der Meldung. Materiell wirkt das Urteil auf den Status des Verfahrens und auf die rechtliche Verantwortungszuweisung; ein direkter gesellschaftlicher Effekt bleibt zunächst begrenzt. Mögliche Folge ist, dass das Verfahren nun in die Phase möglicher Rechtsmittel oder schriftlicher Urteilsgründe übergeht. Die Quelle ist eine journalistische Sekundärmeldung; Details zum Tathergang, zur Beweiswürdigung und zu weiteren Verfahrensschritten bleiben offen.",
+            "why_relevant": "Ein abgeschlossenes Mordurteil verändert den Verfahrensstand und betrifft Strafrecht, Rechtsdurchsetzung und öffentliche Wahrnehmung gerichtlicher Verantwortung.",
+            "status": "beschlossen",
+            "analysis_type": "ex_post",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "direction_basis": "assessed",
+              "rationale": "Das Urteil setzt staatliche Sanktion durch und kann Schutzinteressen von Betroffenen und Öffentlichkeit stärken. Es bleibt zugleich nur ein Einzelfall ohne belegte Breitenwirkung.",
+              "positive_path": {
+                "mechanism": "Die Verurteilung kann Rechtsdurchsetzung sichtbar machen und künftige Abschreckung im Einzelfall stützen.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Die Tat selbst steht für schweren Verlust an Leben und Schutz, was bereits eingetretenen Schaden markiert.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "direction_basis": "no_path",
+              "rationale": "In der Meldung ist kein belastbarer Pfad zu Umwelt-, Klima- oder Ressourcenzuständen erkennbar.",
+              "positive_path": {
+                "mechanism": "Kein aus der Quelle ableitbarer Umweltpfad.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Kein aus der Quelle ableitbarer Umweltpfad.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "chance",
+              "direction_basis": "assessed",
+              "rationale": "Das Urteil zeigt gerichtliche Zuständigkeit und kann Vertrauen in formale Rechtsdurchsetzung stützen. Ein demokratischer Effekt bleibt aber indirekt und nicht gemessen.",
+              "positive_path": {
+                "mechanism": "Ein öffentlich begründetes Strafurteil kann die Korrekturfähigkeit und Sichtbarkeit rechtsstaatlicher Verfahren stärken.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Ohne weitere Verfahrensdaten bleibt offen, ob und wie stark Kritik an Beweisführung oder Strafmaß den Diskurs belastet.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "importance": "mittel",
+            "impact_potential": "Vor allem rechtsstaatliche und verfahrensbezogene Folge, nicht strukturelle Systemänderung.",
+            "impact_risks": [
+              "Überhöhung eines Einzelfalls zu einer allgemeinen Sicherheits- oder Justizgeschichte.",
+              "Unklare Verfahrensdetails können die Einordnung des Urteils begrenzen."
+            ],
+            "mechanisms": [
+              "Strafurteil als staatliche Sanktion",
+              "Verfahrensabschluss mit möglicher Anschlusskommunikation",
+              "Öffentliche Sichtbarkeit gerichtlicher Entscheidung"
+            ],
+            "first_order": [
+              "Verurteilung und lebenslange Freiheitsstrafe",
+              "Feststellung von Mord durch das Landgericht"
+            ],
+            "second_order": [
+              "Mögliche Rechtsmittel oder weitere Verfahrensschritte",
+              "Signalwirkung für die Wahrnehmung gerichtlicher Verantwortung"
+            ],
+            "third_order": [
+              "Begrenzte Stärkung oder Schwächung von Vertrauen in Strafjustiz je nach späterer Debatte",
+              "Keine gesicherte Breitenwirkung aus der Einzelmeldung ableitbar"
+            ],
+            "systemic_relevance": "Das Ereignis liegt im Bereich Strafjustiz und berührt die Funktionsfähigkeit rechtsstaatlicher Entscheidungen, bleibt aber ein Einzelfall ohne belegte Systemkaskade.",
+            "transformation_potential": "Niedrig; die Meldung zeigt Durchsetzung bestehender Regeln, nicht eine Regel- oder Strukturänderung.",
+            "resilience": "Die Justiz zeigt mit dem Urteil ihre Entscheidungsfähigkeit; Angaben zu Rechtsmittel oder Belastbarkeit des Verfahrens fehlen.",
+            "side_effects": [
+              "Mögliche mediale Zuspitzung auf Härte des Strafmaßes",
+              "Mögliche Anschlussdebatte über Mord- und Totschlagsabgrenzung"
+            ],
+            "uncertainties": [
+              "Tathergang und Beweiswürdigung sind in der Meldung nicht ausgeführt.",
+              "Rechtsmittel, Urteilsgründe und mögliche Folgen bleiben offen."
+            ],
+            "evidence_level": "low to medium; nur eine journalistische Sekundärquelle mit Gerichtssprecherin und ohne Primärdokument",
+            "attribution": "stern berichtet unter Berufung auf eine Gerichtssprecherin; die Kernformel ist als journalistische Meldung und nicht als Gerichtsdokument überliefert.",
+            "watch_next": [
+              "Urteilsgründe",
+              "mögliche Berufung oder Revision",
+              "weitere Angaben der Justiz"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "duration",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Ein neues, abgeschlossenes Mordurteil ist gegenüber der Vorgeschichte eine materielle Verfahrensänderung und nicht bloß Wiederholung."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-09T13:22:48.629Z",
+            "media_trigger_fingerprint": "bf6f9cefb6dac189bed822ec050aae514d4bb8a6e3e8f1f703837969b162a845",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "bf6f9cefb6dac189bed822ec050aae514d4bb8a6e3e8f1f703837969b162a845",
+              "content_fingerprint": "2c51a892075f1907c03a7cb7998d2db2c4b6e67482f2f59cac2b467c54534dec",
+              "basis": "feed_metadata",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-ed407d0353f699da-v1-claim-1",
+              "story_id": "wt-ed407d0353f699da",
+              "claim": "Ein Mann ist in Heilbronn wegen der Tötung seiner Schwiegermutter zu lebenslanger Freiheitsstrafe verurteilt worden.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/schwiegermutter-mit-wagenheberstange-erschlagen--lebenslange-haft-in-heilbronn-38228188.html",
+                  "excerpt_hash": "e858410db35967ce4c1d",
+                  "checked_at": "2026-09-09T13:26:37.853Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T13:26:37.853Z"
+            },
+            {
+              "claim_id": "wt-ed407d0353f699da-v1-claim-2",
+              "story_id": "wt-ed407d0353f699da",
+              "claim": "Das Landgericht Heilbronn sprach den 47-Jährigen am Mittwoch des Mordes schuldig.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/schwiegermutter-mit-wagenheberstange-erschlagen--lebenslange-haft-in-heilbronn-38228188.html",
+                  "excerpt_hash": "e858410db35967ce4c1d",
+                  "checked_at": "2026-09-09T13:26:37.853Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T13:26:37.853Z"
+            },
+            {
+              "claim_id": "wt-ed407d0353f699da-v1-claim-3",
+              "story_id": "wt-ed407d0353f699da",
+              "claim": "Die Verteidigung hatte auf Totschlag plädiert und zwölf Jahre Haft gefordert.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/schwiegermutter-mit-wagenheberstange-erschlagen--lebenslange-haft-in-heilbronn-38228188.html",
+                  "excerpt_hash": "12bc928f236e5ae691a4",
+                  "checked_at": "2026-09-09T13:26:37.853Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T13:26:37.853Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/schwiegermutter-mit-wagenheberstange-erschlagen--lebenslange-haft-in-heilbronn-38228188.html",
+              "content_hash": "1cb1ef6deb7be5897a1ed06be934e1d4bcac2063e7a2ea4f1dd60f2b6e5f3bd3"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-09T13:26:37.853Z",
+            "sources": []
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-09T13:26:37.853Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ed407d0353f699da-c73b3fd2f0455c51-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "c73b3fd2f0455c5183c36afa7ad44bd6f01e78305b7e754c6f176b2c5cbe0bb7"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ed407d0353f699da-f38bb05be6bb3807-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "f38bb05be6bb38073d33ccd1d76a4bc41ad7088de9c47e7f46b2f659abec2e45"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ed407d0353f699da-02d3170287ac0687-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "02d3170287ac068700b6e828235bcf6738d0654177af269d87a6219b5176df16"
+        },
+        "source_visual": null,
+        "fingerprint": "978f69081d8971af3574400666cb9274336d09d39fdec464b4c28e6012ffe56c",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T13:27:15.292Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-c57824e38b40126e",
+      "slug": "bremen-radfahrerin-stirbt-nach-angriff-von-psychisch-krankem-mann-40126e",
+      "title": "Bremen: Radfahrerin stirbt nach Angriff von psychisch krankem Mann",
+      "first_seen": "2026-09-09T13:02:40.000Z",
+      "last_updated": "2026-09-09T13:25:43.657Z",
+      "published_at": "2026-09-09T13:25:43.657Z",
+      "updated_at": "2026-09-09T13:25:43.657Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/bremen--radfahrerin-stirbt-nach-angriff-von-psychisch-krankem-mann-38228196.html",
+          "title": "Bremen: Radfahrerin stirbt nach Angriff von psychisch krankem Mann",
+          "summary": "Knapp zwei Wochen nach einer Attacke durch einen offenbar psychisch kranken Mann ist eine 68-jährige Radfahrerin in Bremen ihren Verletzungen erlegen. Sie sei am Mittwoch in einem Krankenhaus als Folge ihrer lebensgefährlichen Kopfverletzungen gestorben, teilte die Polizei in der Hansestadt mit.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:02:40.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "221b14dc34e69b094905f4d73023ca37db14bd418f97efb942df72e4b5647d57",
+          "source_item_id": "92aceb52b2697dac9010c745510f7ffa765ff3db98204987b710916797d3a24c",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T13:02:40.000Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c57824e38b40126e-v1-claim-1",
+          "story_id": "wt-c57824e38b40126e",
+          "claim": "Eine 68-jährige Radfahrerin in Bremen ist knapp zwei Wochen nach einer Attacke gestorben.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/bremen--radfahrerin-stirbt-nach-angriff-von-psychisch-krankem-mann-38228196.html",
+              "excerpt_hash": "26d3ef662f941bb63fd1",
+              "checked_at": "2026-09-09T13:25:43.657Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T13:25:43.657Z"
+        },
+        {
+          "claim_id": "wt-c57824e38b40126e-v1-claim-2",
+          "story_id": "wt-c57824e38b40126e",
+          "claim": "Die Polizei teilte mit, dass sie am Mittwoch in einem Krankenhaus an den Folgen ihrer lebensgefährlichen Kopfverletzungen starb.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/bremen--radfahrerin-stirbt-nach-angriff-von-psychisch-krankem-mann-38228196.html",
+              "excerpt_hash": "26d3ef662f941bb63fd1",
+              "checked_at": "2026-09-09T13:25:43.657Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T13:25:43.657Z"
+        },
+        {
+          "claim_id": "wt-c57824e38b40126e-v1-claim-3",
+          "story_id": "wt-c57824e38b40126e",
+          "claim": "Der Angriff wurde in der Quelle einem offenbar psychisch kranken Mann zugeschrieben.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/bremen--radfahrerin-stirbt-nach-angriff-von-psychisch-krankem-mann-38228196.html",
+              "excerpt_hash": "f3c5931fbfd953880632",
+              "checked_at": "2026-09-09T13:25:43.657Z"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/bremen--radfahrerin-stirbt-nach-angriff-von-psychisch-krankem-mann-38228196.html",
+              "excerpt_hash": "26d3ef662f941bb63fd1",
+              "checked_at": "2026-09-09T13:25:43.657Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T13:25:43.657Z"
+        }
+      ],
+      "event_id": "event-3efe8648efaf4d44dac7",
+      "event_first_seen_at": "2026-09-09T13:22:48.629Z",
+      "event_detected_at": "2026-09-09T13:22:48.629Z",
+      "verification_started_at": "2026-09-09T13:25:29.833Z",
+      "publish_ready_at": "2026-09-09T13:25:43.657Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-09T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T13:22:48.629Z",
+        "fingerprint": "655dd83c6e5c040aaab34897c76dc9ad9ba2970a5bfe3514de685dd40e7ef130",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Polizeiangaben zu Tat, Verdächtigem und möglichem Motiv präzisieren",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Neue amtliche Angaben zu Tatablauf, Festnahme oder Motiv",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cf7d403a85b7bb25",
+          "announced_at": "2026-09-09T13:02:40.000Z",
+          "follow_up_date": "2026-09-16T13:25:43.657Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "0c19566cc8d1ff4859314f13224f3597ad5ca6085c77193dd07b67fe7f1cc640",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-09T13:25:43.657Z",
+        "sources": []
+      },
+      "source_summary": "Laut dem Bericht starb in Bremen eine 68-jährige Radfahrerin knapp zwei Wochen nach einer Attacke. Die Polizei teilte mit, sie sei am Mittwoch in einem Krankenhaus an den Folgen ihrer lebensgefährlichen Kopfverletzungen gestorben. In der Überschrift wird der Angriff einem offenbar psychisch kranken Mann zugeschrieben; weitere Einzelheiten zu Täter, Motiv und Tatumständen nennt der Kurztext nicht.\n\nDer Fall ist als aktuelle Gewaltmeldung von öffentlichem Interesse, weil ein tödlicher Ausgang nach einer früheren Attacke gemeldet wird. Offen bleibt, was die Polizei zur Tat genau mitgeteilt hat und ob es weitere amtliche Angaben zu Verdächtigem, Ablauf oder Hintergrund gibt.",
+      "analysis": {
+        "story_id": "wt-c57824e38b40126e",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "In Bremen ist eine 68-jährige Radfahrerin nach einer Attacke gestorben. Weitere amtliche Details zu Täter, Motiv und Ablauf bleiben in der gelieferten Quelle offen.",
+        "detail_summary": "Die Meldung beschreibt einen tödlichen Verlauf nach einer vorausgegangenen Attacke in Bremen. Das ist gesellschaftlich relevant, weil ein Gewaltvorfall in einen Todesfall übergegangen ist und damit ein neuer, materieller Zustand eingetreten ist. Ein belastbarer Wirkpfad liegt vor allem in der unmittelbaren Schädigung der betroffenen Person; weitergehende Folgen für Sicherheitsempfinden oder Debattenraum sind möglich, aber hier nicht belegt. Offen bleibt der genaue Tatkontext, einschließlich Motiv, Verdächtigem und möglicher offizieller Einordnung. Die Evidenzbasis ist vorläufig, weil nur ein journalistischer Kurzbericht vorliegt.",
+        "why_relevant": "Tödlicher Ausgang nach einer Attacke in Bremen; das ist eine neue, materiell relevante Zustandsänderung mit öffentlichem Interesse.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_post",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Quelle berichtet über eine tödliche Verletzungsfolge für eine konkret betroffene Person. Der unmittelbare Zustandswechsel ist negativ; weitergehende gesellschaftliche Wirkungen sind möglich, aber nicht belegt.",
+          "positive_path": {
+            "mechanism": "Keine belastbar belegte positive Wirkung aus der Meldung selbst; allenfalls Folgewirkung durch Aufklärung oder Prävention wäre erst später prüfbar.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Eine Gewaltattacke mit tödlichem Ausgang verletzt Schutz, Gesundheit und Sicherheit unmittelbar und kann Betroffene sowie Umfeld zusätzlich belasten.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der Meldung ergibt sich kein belastbarer Pfad zu Umwelt- oder Klimawirkungen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Quelle enthält keine belastbaren Angaben zu Institutionen, Verfahren oder demokratischer Korrekturfähigkeit.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Meldung kann kurzfristig Aufmerksamkeit auf Gewaltprävention, Polizeiarbeit und Schutz vulnerabler Personen lenken; die eigentliche Wirkung liegt zunächst in der bestätigten Todesfolge.",
+        "impact_risks": [
+          "Spekulation über Tatmotiv oder psychische Erkrankung des Täters ohne gesicherte Angaben",
+          "Verkürzte Zuschreibungen, solange amtliche Details fehlen"
+        ],
+        "mechanisms": [
+          "unmittelbare körperliche Schädigung",
+          "nachgelagerte öffentliche Reaktion auf einen tödlichen Gewaltvorfall"
+        ],
+        "first_order": [
+          "Tod der betroffenen Radfahrerin nach der Attacke"
+        ],
+        "second_order": [
+          "mögliche Nachfrage nach amtlicher Aufklärung und Schutzmaßnahmen"
+        ],
+        "third_order": [
+          "eventuell verstärkte Debatten über Gewaltprävention; hier aber nicht belegt"
+        ],
+        "systemic_relevance": "Einzelereignis mit hoher individueller Tragweite, aber ohne belegte Systemkopplung in der vorliegenden Quelle.",
+        "transformation_potential": "Kein belastbarer Transformationspfad in der Meldung; allenfalls später, wenn Behörden oder Politik darauf reagieren.",
+        "resilience": "Keine belastbare Aussage zur Resilienz von Systemen; die Quelle benennt nur den Todesfall und den offenen Kontext.",
+        "side_effects": [
+          "Unklarheit über Tatmotiv und genaue Umstände",
+          "mögliche Verunsicherung im Umfeld"
+        ],
+        "uncertainties": [
+          "Nur ein Kurzbericht liegt vor",
+          "Täter, Motiv und genauer Ablauf bleiben offen",
+          "Keine zweite unabhängige Bestätigung in den gelieferten Daten"
+        ],
+        "evidence_level": "low",
+        "attribution": "Quelle: stern, Überschrift und Kurztext; die Polizei wird als Mitteilungsquelle genannt, der Rest ist journalistische Darstellung.",
+        "watch_next": [
+          "Amtliche Angaben der Polizei zum Tatablauf",
+          "Mögliche Festnahme- oder Ermittlungsdetails",
+          "Weitere Berichte mit eigenständiger Bestätigung"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "intensity",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung enthält einen neuen, materiellen Zustand: eine 68-jährige Radfahrerin ist nach einer Attacke gestorben. Das ist von hoher Intensität, auch wenn der Kontext noch offen bleibt."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-09T13:22:48.629Z",
+        "media_trigger_fingerprint": "777355d037eb7cb0f1cf11ae8095a98775228393e5365ad246771a997c070647",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "777355d037eb7cb0f1cf11ae8095a98775228393e5365ad246771a997c070647",
+          "content_fingerprint": "2cf6e0f3a51547eb9540175f6041cbd0faff6def9d50c8c1116b8f2996ac30f2",
+          "basis": "feed_metadata",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-09T13:25:43.657Z",
+          "content_hash": "0c19566cc8d1ff4859314f13224f3597ad5ca6085c77193dd07b67fe7f1cc640",
+          "source_summary": "Laut dem Bericht starb in Bremen eine 68-jährige Radfahrerin knapp zwei Wochen nach einer Attacke. Die Polizei teilte mit, sie sei am Mittwoch in einem Krankenhaus an den Folgen ihrer lebensgefährlichen Kopfverletzungen gestorben. In der Überschrift wird der Angriff einem offenbar psychisch kranken Mann zugeschrieben; weitere Einzelheiten zu Täter, Motiv und Tatumständen nennt der Kurztext nicht.\n\nDer Fall ist als aktuelle Gewaltmeldung von öffentlichem Interesse, weil ein tödlicher Ausgang nach einer früheren Attacke gemeldet wird. Offen bleibt, was die Polizei zur Tat genau mitgeteilt hat und ob es weitere amtliche Angaben zu Verdächtigem, Ablauf oder Hintergrund gibt.",
+          "analysis": {
+            "story_id": "wt-c57824e38b40126e",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "In Bremen ist eine 68-jährige Radfahrerin nach einer Attacke gestorben. Weitere amtliche Details zu Täter, Motiv und Ablauf bleiben in der gelieferten Quelle offen.",
+            "detail_summary": "Die Meldung beschreibt einen tödlichen Verlauf nach einer vorausgegangenen Attacke in Bremen. Das ist gesellschaftlich relevant, weil ein Gewaltvorfall in einen Todesfall übergegangen ist und damit ein neuer, materieller Zustand eingetreten ist. Ein belastbarer Wirkpfad liegt vor allem in der unmittelbaren Schädigung der betroffenen Person; weitergehende Folgen für Sicherheitsempfinden oder Debattenraum sind möglich, aber hier nicht belegt. Offen bleibt der genaue Tatkontext, einschließlich Motiv, Verdächtigem und möglicher offizieller Einordnung. Die Evidenzbasis ist vorläufig, weil nur ein journalistischer Kurzbericht vorliegt.",
+            "why_relevant": "Tödlicher Ausgang nach einer Attacke in Bremen; das ist eine neue, materiell relevante Zustandsänderung mit öffentlichem Interesse.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_post",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Die Quelle berichtet über eine tödliche Verletzungsfolge für eine konkret betroffene Person. Der unmittelbare Zustandswechsel ist negativ; weitergehende gesellschaftliche Wirkungen sind möglich, aber nicht belegt.",
+              "positive_path": {
+                "mechanism": "Keine belastbar belegte positive Wirkung aus der Meldung selbst; allenfalls Folgewirkung durch Aufklärung oder Prävention wäre erst später prüfbar.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Eine Gewaltattacke mit tödlichem Ausgang verletzt Schutz, Gesundheit und Sicherheit unmittelbar und kann Betroffene sowie Umfeld zusätzlich belasten.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "direction_basis": "no_path",
+              "rationale": "Aus der Meldung ergibt sich kein belastbarer Pfad zu Umwelt- oder Klimawirkungen.",
+              "positive_path": null,
+              "negative_path": null
+            },
+            "democracy": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "direction_basis": "no_path",
+              "rationale": "Die Quelle enthält keine belastbaren Angaben zu Institutionen, Verfahren oder demokratischer Korrekturfähigkeit.",
+              "positive_path": null,
+              "negative_path": null
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Meldung kann kurzfristig Aufmerksamkeit auf Gewaltprävention, Polizeiarbeit und Schutz vulnerabler Personen lenken; die eigentliche Wirkung liegt zunächst in der bestätigten Todesfolge.",
+            "impact_risks": [
+              "Spekulation über Tatmotiv oder psychische Erkrankung des Täters ohne gesicherte Angaben",
+              "Verkürzte Zuschreibungen, solange amtliche Details fehlen"
+            ],
+            "mechanisms": [
+              "unmittelbare körperliche Schädigung",
+              "nachgelagerte öffentliche Reaktion auf einen tödlichen Gewaltvorfall"
+            ],
+            "first_order": [
+              "Tod der betroffenen Radfahrerin nach der Attacke"
+            ],
+            "second_order": [
+              "mögliche Nachfrage nach amtlicher Aufklärung und Schutzmaßnahmen"
+            ],
+            "third_order": [
+              "eventuell verstärkte Debatten über Gewaltprävention; hier aber nicht belegt"
+            ],
+            "systemic_relevance": "Einzelereignis mit hoher individueller Tragweite, aber ohne belegte Systemkopplung in der vorliegenden Quelle.",
+            "transformation_potential": "Kein belastbarer Transformationspfad in der Meldung; allenfalls später, wenn Behörden oder Politik darauf reagieren.",
+            "resilience": "Keine belastbare Aussage zur Resilienz von Systemen; die Quelle benennt nur den Todesfall und den offenen Kontext.",
+            "side_effects": [
+              "Unklarheit über Tatmotiv und genaue Umstände",
+              "mögliche Verunsicherung im Umfeld"
+            ],
+            "uncertainties": [
+              "Nur ein Kurzbericht liegt vor",
+              "Täter, Motiv und genauer Ablauf bleiben offen",
+              "Keine zweite unabhängige Bestätigung in den gelieferten Daten"
+            ],
+            "evidence_level": "low",
+            "attribution": "Quelle: stern, Überschrift und Kurztext; die Polizei wird als Mitteilungsquelle genannt, der Rest ist journalistische Darstellung.",
+            "watch_next": [
+              "Amtliche Angaben der Polizei zum Tatablauf",
+              "Mögliche Festnahme- oder Ermittlungsdetails",
+              "Weitere Berichte mit eigenständiger Bestätigung"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "intensity",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung enthält einen neuen, materiellen Zustand: eine 68-jährige Radfahrerin ist nach einer Attacke gestorben. Das ist von hoher Intensität, auch wenn der Kontext noch offen bleibt."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-09T13:22:48.629Z",
+            "media_trigger_fingerprint": "777355d037eb7cb0f1cf11ae8095a98775228393e5365ad246771a997c070647",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "777355d037eb7cb0f1cf11ae8095a98775228393e5365ad246771a997c070647",
+              "content_fingerprint": "2cf6e0f3a51547eb9540175f6041cbd0faff6def9d50c8c1116b8f2996ac30f2",
+              "basis": "feed_metadata",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-c57824e38b40126e-v1-claim-1",
+              "story_id": "wt-c57824e38b40126e",
+              "claim": "Eine 68-jährige Radfahrerin in Bremen ist knapp zwei Wochen nach einer Attacke gestorben.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/bremen--radfahrerin-stirbt-nach-angriff-von-psychisch-krankem-mann-38228196.html",
+                  "excerpt_hash": "26d3ef662f941bb63fd1",
+                  "checked_at": "2026-09-09T13:25:43.657Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T13:25:43.657Z"
+            },
+            {
+              "claim_id": "wt-c57824e38b40126e-v1-claim-2",
+              "story_id": "wt-c57824e38b40126e",
+              "claim": "Die Polizei teilte mit, dass sie am Mittwoch in einem Krankenhaus an den Folgen ihrer lebensgefährlichen Kopfverletzungen starb.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/bremen--radfahrerin-stirbt-nach-angriff-von-psychisch-krankem-mann-38228196.html",
+                  "excerpt_hash": "26d3ef662f941bb63fd1",
+                  "checked_at": "2026-09-09T13:25:43.657Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T13:25:43.657Z"
+            },
+            {
+              "claim_id": "wt-c57824e38b40126e-v1-claim-3",
+              "story_id": "wt-c57824e38b40126e",
+              "claim": "Der Angriff wurde in der Quelle einem offenbar psychisch kranken Mann zugeschrieben.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/bremen--radfahrerin-stirbt-nach-angriff-von-psychisch-krankem-mann-38228196.html",
+                  "excerpt_hash": "f3c5931fbfd953880632",
+                  "checked_at": "2026-09-09T13:25:43.657Z"
+                },
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/bremen--radfahrerin-stirbt-nach-angriff-von-psychisch-krankem-mann-38228196.html",
+                  "excerpt_hash": "26d3ef662f941bb63fd1",
+                  "checked_at": "2026-09-09T13:25:43.657Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T13:25:43.657Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/bremen--radfahrerin-stirbt-nach-angriff-von-psychisch-krankem-mann-38228196.html",
+              "content_hash": "221b14dc34e69b094905f4d73023ca37db14bd418f97efb942df72e4b5647d57"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-09T13:25:43.657Z",
+            "sources": []
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-09T13:25:43.657Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c57824e38b40126e-5444db744226d447-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "5444db744226d4478380fd20829a3e72e08b4c6443b78d2757420e99241c6eec"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c57824e38b40126e-4a69275db64e2036-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "4a69275db64e2036b43fe3e43c5360b77b3eaabd5675165f7156329c7e0bef92"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c57824e38b40126e-a6eae5b9796b9edc-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "a6eae5b9796b9edc5b904fefaf12dcfea5fd1e6d25c36583401396de2c74af83"
+        },
+        "source_visual": null,
+        "fingerprint": "bbe381739037574cb5bb37409de98e5820c03cc4cd26ce53beda6d59e3b2db81",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T13:27:08.618Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-a0494b6e523f45ca",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "9f793922c3865ada28c5a9e8a6a3158182f58dbb4bd8e87e21f359a7c2c0dbfa",
+        "first_failed_at": "2026-09-09T13:22:48.629Z",
+        "failed_at": "2026-09-09T13:22:48.629Z",
+        "retry_after": "2026-09-09T13:37:48.629Z",
+        "retry_count": 1
+      },
+      "slug": "eu-kommission-weniger-china-mehr-europa-eu-regelt-offentliche-auftrage-3f45ca",
+      "title": "EU-Kommission: Weniger China, mehr Europa – EU regelt öffentliche Aufträge",
+      "first_seen": "2026-09-09T13:15:00.000Z",
+      "last_updated": "2026-09-09T13:15:00.000Z",
+      "topic": [
+        "Europa",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/europa/eu-kommission-weniger-china-mehr-europa-eu-regelt-oeffentliche-auftraege/100253268.html",
+          "title": "EU-Kommission: Weniger China, mehr Europa – EU regelt öffentliche Aufträge",
+          "summary": "Mehr als eine Milliarde Euro pro Tag verliert die EU im Handel mit China. Der Vorschlag der EU-Kommission: mehr öffentliche Gelder für Produkte aus der EU ausgeben.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:15:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "2eb50efee5d70f6abadad71141cad82703b9a10358ca1fd6839d5eded46e88a4",
+          "source_item_id": "88899713d69ef072aa4db4e890c3c7bdc1d6dba8572507d119ad0db95d054411",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T13:15:00.000Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wirtschaftspolitik-16034645.html",
+          "title": "Wirtschaftspolitik: Weniger China, mehr Europa – EU regelt öffentliche Aufträge",
+          "summary": "Mehr als eine Milliarde Euro pro Tag verliert die EU im Handel mit China. Die EU-Kommission will daran etwas ändern: Wie mehr öffentliche Gelder für Produkte aus der EU ausgegeben werden sollen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:59:47.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "e37fccdbea0472bd0a256a02f6ea9499207ea5c2fb62ede6b7d65a4fc3ba81b6",
+          "source_item_id": "60da501509e3403482e90fa75fbd78ec1f65b952a9f85b500fdacd7f02666fc8",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:59:47.000Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a0494b6e523f45ca-claim-01",
+          "story_id": "wt-a0494b6e523f45ca",
+          "claim": "EU-Kommission: Weniger China, mehr Europa – EU regelt öffentliche Aufträge: Mehr als eine Milliarde Euro pro Tag verliert die EU im Handel mit China. Der Vorschlag der EU-Kommission: mehr öffentliche Gelder für Produkte aus der EU ausgeben.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T13:22:48.629Z"
+        },
+        {
+          "claim_id": "wt-a0494b6e523f45ca-claim-02",
+          "story_id": "wt-a0494b6e523f45ca",
+          "claim": "Wirtschaftspolitik: Weniger China, mehr Europa – EU regelt öffentliche Aufträge: Mehr als eine Milliarde Euro pro Tag verliert die EU im Handel mit China. Die EU-Kommission will daran etwas ändern: Wie mehr öffentliche Gelder für Produkte aus der EU ausgegeben werden sollen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T13:22:48.629Z"
+        }
+      ],
+      "content_hash": "911fa3620bd45ea6963522f4d727560019a27a3de062cec6aa73179a190e5c0d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T13:37:48.629Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T13:22:48.629Z",
+      "event_first_seen_at": "2026-09-09T13:22:48.629Z",
+      "event_detected_at": "2026-09-09T13:22:48.629Z",
+      "event_id": "event-610f6ffb0dd73aa7c41a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 38,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "Entwurf",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 7.810483333333333,
+        "detection_delay_minutes": 7.810483333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T13:22:48.629Z",
+        "fingerprint": "489374c8576f79e31d6e9bf04bfd450de43f8a69bce04dead2a9a8b735377322",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T13:22:48.629Z",
+      "rejection": {
+        "at": "2026-09-09T13:22:48.629Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-fd7c0cd7ceb4b85c",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "779b8a4fc2b83515615787038538697678843263ab934e5c37569c4b46373ca5",
+        "first_failed_at": "2026-09-09T13:22:48.629Z",
+        "failed_at": "2026-09-09T13:22:48.629Z",
+        "retry_after": "2026-09-09T13:37:48.629Z",
+        "retry_count": 1
+      },
+      "slug": "ndr-info-15-00-09-09-2026-b4b85c",
+      "title": "NDR Info 15:00 | 09.09.2026",
+      "first_seen": "2026-09-09T13:12:31.000Z",
+      "last_updated": "2026-09-09T13:12:31.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/NDR-Info-1500,ndrinfo-17018.html",
+          "title": "NDR Info 15:00 | 09.09.2026",
+          "summary": "Die Nachrichten für den Norden: Merz äussert sich zu Wahlergebnis in Sachsen-Anhalt / \"Aktionswoche Drogen\" bei Hamburger Polizei",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:12:31.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "b3dead627703cd63b2a6aa16a7c82d9a962d5f5dff630fba06c70339e0d1d4ce",
+          "source_item_id": "e9f0268bf1ad5213765e65397b0594c8e3558fd81b3a85e266e4a4614fd42f2b",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T13:12:31.000Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-fd7c0cd7ceb4b85c-claim-01",
+          "story_id": "wt-fd7c0cd7ceb4b85c",
+          "claim": "NDR Info 15:00 | 09.09.2026: Die Nachrichten für den Norden: Merz äussert sich zu Wahlergebnis in Sachsen-Anhalt / \"Aktionswoche Drogen\" bei Hamburger Polizei",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T13:22:48.629Z"
+        }
+      ],
+      "content_hash": "38f534f85535a8bff188ef5bfe83bbed072c7d4ff4eef264cb3c24760c9516a2",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T13:37:48.629Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T13:22:48.629Z",
+      "event_first_seen_at": "2026-09-09T13:22:48.629Z",
+      "event_detected_at": "2026-09-09T13:22:48.629Z",
+      "event_id": "event-c8b007bb9bf025dc874e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/info/NDR-Info-1500,ndrinfo-17018.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 10.293816666666666,
+        "detection_delay_minutes": 10.293816666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T13:22:48.629Z",
+        "fingerprint": "8f3843a787cb89fe84e03314c758ce747c334e39c87b01559312fbba806266cd",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T13:22:48.629Z",
+      "rejection": {
+        "at": "2026-09-09T13:22:48.629Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-4bf192564b7d504d",
       "ai_retry": {
@@ -45,7 +1460,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T11:30:03.000Z",
-          "ingested_at": "2026-09-09T13:06:43.122Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -78,7 +1493,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         }
       ],
       "content_hash": "7eed8a6486b7199300623cf5135e5d5b9298426117b75a8c52ee6769bc40271a",
@@ -91,7 +1506,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T13:06:43.122Z",
+      "updated_at": "2026-09-09T13:22:48.629Z",
       "event_first_seen_at": "2026-09-09T11:37:19.505Z",
       "event_detected_at": "2026-09-09T11:37:19.505Z",
       "event_id": "event-38dda442aced02ec5829",
@@ -124,27 +1539,183 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 96.6687,
+        "source_age_minutes": 112.76048333333334,
         "detection_delay_minutes": 7.275083333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 89.39361666666667,
+        "queue_age_minutes": 105.4854,
         "target_publication_minutes": 120,
-        "news_freshness_score": 80,
+        "news_freshness_score": 77,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T13:06:43.122Z",
+        "checked_at": "2026-09-09T13:22:48.629Z",
         "fingerprint": "465dc528b10683db11fbf406b771ee935d8b04c0c7b371c9f1d43bcfad421570",
         "issue_codes": [],
         "warning_codes": []
       }
     },
     {
+      "story_id": "wt-405d35f5c4e5614d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "235ef711451a0bb686c4c28811d6541281a2a8c4b2f8170ca036228ef3e4dee5",
+        "first_failed_at": "2026-09-09T13:22:48.629Z",
+        "failed_at": "2026-09-09T13:22:48.629Z",
+        "retry_after": "2026-09-09T13:37:48.629Z",
+        "retry_count": 1
+      },
+      "slug": "ukraine-und-russland-tote-nach-drohnenangriffen-in-cherson-und-noworossijsk-e5614d",
+      "title": "Ukraine und Russland: Tote nach Drohnenangriffen in Cherson und Noworossijsk",
+      "first_seen": "2026-09-09T13:02:00.000Z",
+      "last_updated": "2026-09-09T13:02:00.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/politik/ukraine-und-russland-tote-nach-drohnenangriffen-in-cherson-und-noworossijsk-a-6502dab3-46e1-474d-ba2e-543a1b3bcabf",
+          "title": "Ukraine und Russland: Tote nach Drohnenangriffen in Cherson und Noworossijsk",
+          "summary": "Russische Drohnenangriffe töten zwei Bewohner der südukrainischen Großstadt Cherson. Die Ukraine greift derweil den Sitz der russischen Schwarzmeerflotte an. Dort sterben vier Menschen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:02:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "5ce3fab875dfc0d75a230232db59aef3109d1fd5d09e91385847dc64b6a92bbb",
+          "source_item_id": "d57ffa6b080bd0789d6a408c6b2113003544611800fae9c013b20cae4cae64f5",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T13:02:00.000Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-405d35f5c4e5614d-claim-01",
+          "story_id": "wt-405d35f5c4e5614d",
+          "claim": "Ukraine und Russland: Tote nach Drohnenangriffen in Cherson und Noworossijsk: Russische Drohnenangriffe töten zwei Bewohner der südukrainischen Großstadt Cherson. Die Ukraine greift derweil den Sitz der russischen Schwarzmeerflotte an. Dort sterben vier Menschen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T13:22:48.629Z"
+        }
+      ],
+      "content_hash": "7abc12dcebda403b3a13a6b110efcaf2b721bfabccb616daa7a2fea09055486c",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T13:37:48.629Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T13:22:48.629Z",
+      "event_first_seen_at": "2026-09-09T13:22:48.629Z",
+      "event_detected_at": "2026-09-09T13:22:48.629Z",
+      "event_id": "event-744bc53d14a53d31715f",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 20.810483333333334,
+        "detection_delay_minutes": 20.810483333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T13:22:48.629Z",
+        "fingerprint": "e95801215cda8dfe241768d1cdbfe447165bf098b54fa75674bcbeb6a96fde19",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T13:22:48.629Z",
+      "rejection": {
+        "at": "2026-09-09T13:22:48.629Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
       "story_id": "wt-ca491d32cc17c837",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "a6d619fa6f587e7e714b3730ad21233a5f21b96d7de3b8b7ff531e168b3a3139",
+        "first_failed_at": "2026-09-09T13:22:48.629Z",
+        "failed_at": "2026-09-09T13:22:48.629Z",
+        "retry_after": "2026-09-09T13:37:48.629Z",
+        "retry_count": 1
+      },
       "slug": "klimawandel-wie-deutschland-sein-stromnetz-fur-die-zukunft-rustet-17c837",
       "title": "Klimawandel - Wie Deutschland sein Stromnetz für die Zukunft rüstet",
       "first_seen": "2026-09-09T12:46:00.000Z",
@@ -156,8 +1727,8 @@
       ],
       "sources": [
         {
-          "source_id": "dlf-wirtschaft",
-          "publisher": "Deutschlandfunk - Wirtschaft",
+          "source_id": "dlf-wissen",
+          "publisher": "Deutschlandfunk - Wissen",
           "url": "https://www.deutschlandfunk.de/stromnetz-deutschland-extremwetter-klimawandel-stromversorgung-energiewende-100.html",
           "title": "Klimawandel - Wie Deutschland sein Stromnetz für die Zukunft rüstet",
           "summary": "Die Hitzewellen dieses Sommers haben das deutsche Stromnetz unter Druck gesetzt. Wie lässt sich die Versorgung sichern, wenn Extremwetter häufiger wird und Wind und Sonne die Stromflüsse verändern?",
@@ -165,7 +1736,7 @@
           "published_at": "2026-09-09T12:46:00.000Z",
           "primary_source": false,
           "source_priority": 0,
-          "source_topic": "Wirtschaft",
+          "source_topic": "Wissenschaft",
           "content_hash": "0775d50f06a5e11ef33a6104302b9ddf64c492b404ec00634f0ab1fd69668c42",
           "source_item_id": "9ff754c2e37181ecae6d99d9a8f38491354c8a39448ca06dfd49e7dfba933ca2",
           "publisher_id": "deutschlandfunk",
@@ -176,10 +1747,10 @@
             "DE",
             "international"
           ],
-          "research_lane": "media",
+          "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T12:46:00.000Z",
-          "ingested_at": "2026-09-09T13:06:43.122Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -195,7 +1766,7 @@
           "story_id": "wt-ca491d32cc17c837",
           "claim": "Klimawandel - Wie Deutschland sein Stromnetz für die Zukunft rüstet: Die Hitzewellen dieses Sommers haben das deutsche Stromnetz unter Druck gesetzt. Wie lässt sich die Versorgung sichern, wenn Extremwetter häufiger wird und Wind und Sonne die Stromflüsse verändern?",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-wirtschaft",
+          "source_id": "dlf-wissen",
           "source_function": "journalistic_report",
           "status": "single_source_claim",
           "provenance": {
@@ -208,20 +1779,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         }
       ],
       "content_hash": "41582edce68588536fd369ee0a738001f126de6536d534d4c7082f4a90e7e6ae",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-09T13:37:48.629Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T13:06:43.122Z",
+      "updated_at": "2026-09-09T13:22:48.629Z",
       "event_first_seen_at": "2026-09-09T13:06:43.122Z",
       "event_detected_at": "2026-09-09T13:06:43.122Z",
       "event_id": "event-f2e2055c65921c845dd4",
@@ -259,27 +1830,47 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 20.7187,
+        "source_age_minutes": 36.81048333333333,
         "detection_delay_minutes": 20.7187,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 16.091783333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T13:06:43.122Z",
-        "fingerprint": "da459b7b203474d69364023c7e3abe8bdabd61eb1aaf35444de63d3eec3e5b7a",
+        "checked_at": "2026-09-09T13:22:48.629Z",
+        "fingerprint": "da6d8c7858cabbb234599cae32e1137d2373c36440ae0cca1e2232fcac593803",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T13:22:48.629Z",
+      "rejection": {
+        "at": "2026-09-09T13:22:48.629Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
       "story_id": "wt-44489c45aaf4e0b8",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "51e9460ead63dc01ba08b0a9d912a294ac25fe72cb9771b33b86ee7715620103",
+        "first_failed_at": "2026-09-09T13:22:48.629Z",
+        "failed_at": "2026-09-09T13:22:48.629Z",
+        "retry_after": "2026-09-09T13:37:48.629Z",
+        "retry_count": 1
+      },
       "slug": "mit-einer-von-zehn-ausgezeichneten-produktionen-einladung-fur-potsdams-jugendtanzcompany-f4e0b8",
       "title": "Mit einer von zehn ausgezeichneten Produktionen: Einladung für Potsdams JugendTanzCompany zum Tanztreffen der Jugend",
       "first_seen": "2026-09-09T12:41:55.000Z",
@@ -312,7 +1903,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T12:41:55.000Z",
-          "ingested_at": "2026-09-09T13:06:43.122Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -341,20 +1932,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         }
       ],
       "content_hash": "bf07319c446cb3a1b00ccbc3aee258615e4d0c2cee7865594680a72a46b77102",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-09T13:37:48.629Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T13:06:43.122Z",
+      "updated_at": "2026-09-09T13:22:48.629Z",
       "event_first_seen_at": "2026-09-09T13:06:43.122Z",
       "event_detected_at": "2026-09-09T13:06:43.122Z",
       "event_id": "event-4dda78d50246c2ffd261",
@@ -387,23 +1978,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 24.802033333333334,
+        "source_age_minutes": 40.893816666666666,
         "detection_delay_minutes": 24.802033333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 16.091783333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 91,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T13:06:43.122Z",
+        "checked_at": "2026-09-09T13:22:48.629Z",
         "fingerprint": "03f53acf90d93b4c7138b7bc1e3d42bdd8587793c273ef7d8176c0fef167fd1b",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T13:22:48.629Z",
+      "rejection": {
+        "at": "2026-09-09T13:22:48.629Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -412,9 +2015,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "eb1779a0fa64b0f6a048ae678f5341b5c3dbe07db00851addae50703ec647a34",
         "first_failed_at": "2026-09-09T13:06:43.122Z",
-        "failed_at": "2026-09-09T13:06:43.122Z",
-        "retry_after": "2026-09-09T13:21:43.122Z",
-        "retry_count": 1
+        "failed_at": "2026-09-09T13:22:48.629Z",
+        "retry_after": "2026-09-09T13:52:48.629Z",
+        "retry_count": 2
       },
       "slug": "mord-im-urlaubsland-neues-urteil-nach-mord-an-deutschen-rentnern-in-portugal-4d63eb",
       "title": "Mord im Urlaubsland: Neues Urteil nach Mord an deutschen Rentnern in Portugal",
@@ -482,7 +2085,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T12:38:18.000Z",
-          "ingested_at": "2026-09-09T13:06:43.122Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -511,7 +2114,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         },
         {
           "claim_id": "wt-cf2fcd8eb74d63eb-claim-02",
@@ -531,22 +2134,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         }
       ],
       "content_hash": "1ca0fe01fe778e0725e90f4a8af7f370b30ba51f56775018a81d106bfd0dea3b",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "AI_DIRECTION_BASIS_INVALID:human"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-09T13:21:43.122Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-09T13:52:48.629Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T13:06:43.122Z",
+      "updated_at": "2026-09-09T13:22:48.629Z",
       "event_first_seen_at": "2026-09-09T13:06:43.122Z",
       "event_detected_at": "2026-09-09T13:06:43.122Z",
       "event_id": "event-c7c8ca93aef7b3c08b8d",
@@ -582,23 +2183,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 28.4187,
+        "source_age_minutes": 44.51048333333333,
         "detection_delay_minutes": 28.4187,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 16.091783333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 91,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T13:06:43.122Z",
+        "checked_at": "2026-09-09T13:22:48.629Z",
         "fingerprint": "5590e4937e8132f50ae5f2933f05d0b05e8e41708fba32d14dbd6b5d4af9e2c7",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T13:22:48.629Z",
+      "rejection": {
+        "at": "2026-09-09T13:22:48.629Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -5670,7 +7283,7 @@
             "research_lane": "blindspot",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T10:37:00.000Z",
-            "ingested_at": "2026-09-09T12:22:02.228Z",
+            "ingested_at": "2026-09-09T13:22:48.629Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -5724,7 +7337,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "6800dd4678a1daebc2239235102cf004811ce09df5f17fea0430a380b63dc6e5",
           "issue_codes": [],
           "warning_codes": []
@@ -6806,10 +8419,10 @@
       "story_id": "wt-15665d71bdf5b2ab",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "6be979acf21a8a852b6f39344bc42a6167401d2dba0d645b96292ac03b3eae9b",
-        "first_failed_at": "2026-09-09T12:37:16.314Z",
-        "failed_at": "2026-09-09T12:37:16.314Z",
-        "retry_after": "2026-09-09T12:52:16.314Z",
+        "fingerprint": "42c9db5eb58637c8c450dab4610a87317604fae24468c3b530155accd8ff7646",
+        "first_failed_at": "2026-09-09T13:22:48.629Z",
+        "failed_at": "2026-09-09T13:22:48.629Z",
+        "retry_after": "2026-09-09T13:37:48.629Z",
         "retry_count": 1
       },
       "slug": "statistik-zahl-der-berufspendler-bundesweit-gestiegen-munchen-hat-die-meisten-pendler-f5b2ab",
@@ -6844,7 +8457,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T13:02:14.000Z",
-          "ingested_at": "2026-09-09T13:06:43.122Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -6873,20 +8486,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         }
       ],
       "content_hash": "1b585c479d3487577f19e53b9c8e7a5d03cbf6fccf5e5940adea9237d09e0c48",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 5,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 6,
+      "quality_retry_after": "2026-09-09T13:37:48.629Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T13:06:43.122Z",
+      "updated_at": "2026-09-09T13:22:48.629Z",
       "event_first_seen_at": "2026-09-09T11:07:22.757Z",
       "event_detected_at": "2026-09-09T11:07:22.757Z",
       "event_id": "event-9d1a0cdf02447284e44d",
@@ -6921,20 +8537,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4.485366666666667,
+        "source_age_minutes": 20.57715,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 119.33941666666666,
+        "queue_age_minutes": 135.4312,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
+        "news_freshness_score": 96,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T13:06:43.122Z",
+        "checked_at": "2026-09-09T13:22:48.629Z",
         "fingerprint": "95071ead4a28bce6ce4cde4d88f04d30ff9ef15b0ea50183251fc99d001c0418",
         "issue_codes": [],
         "warning_codes": []
@@ -15883,7 +17499,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T13:02:14.000Z",
-            "ingested_at": "2026-09-09T13:06:43.122Z",
+            "ingested_at": "2026-09-09T13:22:48.629Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -15904,7 +17520,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "c51a6a6c268becc634c0d939bbed9e1b5c50bab5d2fbfe096ef20a8988cbdf22",
           "issue_codes": [],
           "warning_codes": []
@@ -17183,18 +18799,41 @@
       ],
       "retirement_history": [],
       "title_image": {
-        "mode": "impact_card",
-        "source_visual": null,
+        "mode": "editorial",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5d9f4bf00c16b314-ef907f941cedd854-og.png",
           "width": 1200,
           "height": 630,
-          "layout": "landscape",
-          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+          "sha256": "ef907f941cedd854de42f5ed0ba8c43f05c25a4a95d2974c4b200557a8549936"
         },
-        "status": "fallback",
-        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T09:26:26.137Z"
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5d9f4bf00c16b314-3644b35be56f5eb9-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "3644b35be56f5eb9e9f24a68c76401b40febdb0f0cf7defba2089839ae0e7dcc"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5d9f4bf00c16b314-dcd2ba605b42912b-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "dcd2ba605b42912b34778b00601efaf7e08bc61474e04f42f318267793ee0f59"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5d9f4bf00c16b314-dfd9e806058bce0b-source.png",
+          "sha256": "dfd9e806058bce0bd1917b188b7deee72fea666379a56193dd8791f66061361f",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-09T09:10:34.164Z"
+        },
+        "fingerprint": "300a86f970debdd7fae76434fec9475f42f30e5e228e7c1d22e0d054a2add78e",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T13:27:36.914Z",
+        "status": "generated"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -24921,7 +26560,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T03:28:00.000Z",
-            "ingested_at": "2026-09-09T13:06:43.122Z",
+            "ingested_at": "2026-09-09T13:22:48.629Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -24942,7 +26581,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "bb7a5588e7ab778e0e72e6f4cccdcb1d0ae39518fdb20485129fbf53d745c3ef",
           "issue_codes": [],
           "warning_codes": []
@@ -27482,7 +29121,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T06:44:10.000Z",
-            "ingested_at": "2026-09-09T13:06:43.122Z",
+            "ingested_at": "2026-09-09T13:22:48.629Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -27503,7 +29142,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "2d967ebef56891fb5b7db628ee84539aed5971c3f41eea66bf2a66e035ade3f0",
           "issue_codes": [],
           "warning_codes": []
@@ -29345,7 +30984,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T09:11:21.000Z",
-            "ingested_at": "2026-09-09T12:37:16.314Z",
+            "ingested_at": "2026-09-09T13:22:48.629Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -29366,7 +31005,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "00745e32348705095e7193eb7f51b7e60e4211b36349f0379d5c458470069acb",
           "issue_codes": [],
           "warning_codes": []
@@ -30699,7 +32338,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T03:28:00.000Z",
-            "ingested_at": "2026-09-09T13:06:43.122Z",
+            "ingested_at": "2026-09-09T13:22:48.629Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -30753,7 +32392,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "40edeffc10f76ac729263cf26d9219be8ce046bcc15081437c14b3359b0fdfae",
           "issue_codes": [],
           "warning_codes": []
@@ -32496,7 +34135,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07",
-            "ingested_at": "2026-09-09T13:06:43.122Z",
+            "ingested_at": "2026-09-09T13:22:48.629Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -32517,7 +34156,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "fd023c485e0b3ed33b65d77ed5513973bc866b82062ccb744777b35c0783a309",
           "issue_codes": [],
           "warning_codes": []
@@ -33121,7 +34760,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T11:55:43.000Z",
-            "ingested_at": "2026-09-09T13:06:43.122Z",
+            "ingested_at": "2026-09-09T13:22:48.629Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -33142,7 +34781,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "89936e0172dca057489613122967481af6ae3d49f32909881997e0b915328fd0",
           "issue_codes": [],
           "warning_codes": []
@@ -42388,7 +44027,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T13:02:14.000Z",
-            "ingested_at": "2026-09-09T13:06:43.122Z",
+            "ingested_at": "2026-09-09T13:22:48.629Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42409,7 +44048,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "3037a1d42e9e581af7193dffb83c5d5dedad0e73b1af2289d4607930fd0d5b62",
           "issue_codes": [],
           "warning_codes": []
@@ -45907,7 +47546,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:52:01.000Z",
-            "ingested_at": "2026-09-09T13:06:43.122Z",
+            "ingested_at": "2026-09-09T13:22:48.629Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -45928,7 +47567,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "1efa3fa74f2770221ef9efac103a0a38be0f98820ad08782bc080d18496d51db",
           "issue_codes": [],
           "warning_codes": []
@@ -49998,7 +51637,7 @@
       "verification_started_at": "2026-09-08T19:22:49.260Z",
       "publish_ready_at": "2026-09-08T19:23:06.958Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-09T10:00:00.000Z",
+      "deepening_due_at": "2026-09-09T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -50462,10 +52101,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "94c2f9e02f815df5cf11acd234a5d892624355c70a4b637af8fd80b09b053f11",
-        "checked_at": "2026-09-09T08:06:50.537Z",
+        "fingerprint": "d362c84ed950331eb2ed6a527e0eb34750cc9932b9dbcb66ea406e9e2e9006a2",
+        "checked_at": "2026-09-09T13:22:48.629Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T14:06:50.537Z",
+        "expires_at": "2026-09-09T19:22:48.629Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -50502,65 +52141,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-09T10:07:31.404Z",
-        "content_hash": "775fefec50d9c5169fbcc4443ce936e56c028b18d5272d814f3dfd4dda7deeb4",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/nach-pisa-studie-debatte-ueber-mehr-foerderung-von-kindern-und-schuelern-102.html",
-            "title": "Bildung - Nach Pisa-Studie: Debatte über mehr Förderung von Kindern und Schülern",
-            "summary": "Nach dem schlechten Abschneiden deutscher Schüler in der jüngsten Pisa-Studie wird über Konsequenzen diskutiert.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T18:58:01.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "22ef9dbe4340417061e8147fef5405c1cb96c5474244c0bf11688cae00338914",
-            "source_item_id": "617fcc35b283bb36a722004102c26a581f8d1b76edfc3ec9b22500e4f08ce3ba",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T18:58:01.000Z",
-            "ingested_at": "2026-09-08T19:21:40.603Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
-        ],
-        "quality_retry_count": 2,
-        "quality_retry_after": "2026-09-09T13:22:06.288Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T12:52:06.288Z",
-          "fingerprint": "fada684c913b1511f4b664c4800c3b5ed71f9a95565753e62994fc4d1b7d2c3a",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      },
+      "deepening_checks": 2,
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
         "fingerprint": "0f87733b76c5449d6b3d74030f7ed09d5c170717c7492b04ab776e0b72f32222",
@@ -51663,7 +53244,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "53f93df4d1e534788f614f7964cd327043bdce46694f9d12100257749b54cc1b",
           "issue_codes": [],
           "warning_codes": []
@@ -52302,7 +53883,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
           "issue_codes": [],
           "warning_codes": []
@@ -53575,7 +55156,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
           "issue_codes": [],
           "warning_codes": []
@@ -54483,7 +56064,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
           "issue_codes": [],
           "warning_codes": []
@@ -56069,17 +57650,30 @@
       "published": true,
       "title_image": {
         "mode": "impact_card",
-        "source_visual": null,
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ed33c0962c4a697d-c8f0bfda6214a05f-og.png",
           "width": 1200,
           "height": 630,
-          "layout": "landscape",
-          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+          "sha256": "c8f0bfda6214a05facde33e28977cc608b2e1a57141f1609a9d6b98fc33a4fdf"
         },
-        "status": "fallback",
-        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T09:14:56.477Z"
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ed33c0962c4a697d-d10a49bd0348b478-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "d10a49bd0348b478b3e6f9ff7be39989d9170db21eada91d3833483d7ba3cee5"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ed33c0962c4a697d-51b32da75e0f3711-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "51b32da75e0f37113c8c67e3c0af688ea8e3242c5ac030eaed631673847b564b"
+        },
+        "source_visual": null,
+        "fingerprint": "4a34e539ca8da15f806551cce0e762c5a8375f9cd04ec1584267b31fca0e732d",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T13:27:22.390Z",
+        "status": "generated"
       },
       "listed": true,
       "analysis_status": "veröffentlicht",
@@ -65114,18 +66708,41 @@
       ],
       "retirement_history": [],
       "title_image": {
-        "mode": "impact_card",
-        "source_visual": null,
+        "mode": "editorial",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cb6944882f826542-71fc9b56d11fce7d-og.png",
           "width": 1200,
           "height": 630,
-          "layout": "landscape",
-          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+          "sha256": "71fc9b56d11fce7df2246524fb52b22e27d626aa2377fbf8aeae21d4c718c593"
         },
-        "status": "fallback",
-        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T09:26:31.042Z"
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cb6944882f826542-37c6b57ceba22522-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "37c6b57ceba22522e6ab827e7ab6e501dc7e017f03ac8a033c97ca8a4c3ae940"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cb6944882f826542-00a058df82deb843-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "00a058df82deb8436e4305815afec43c611ff5cf24654790dfda563d5989aa9e"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cb6944882f826542-85eca3030c15974a-source.png",
+          "sha256": "85eca3030c15974aedb84b3e23b8248d37ebcaab8aefb466c1283d3490c5cdc5",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-08T14:10:02.792Z"
+        },
+        "fingerprint": "86a83d01c29649720b5ac588368e3429f1f45f77f396428a0b3a902394e2ba26",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T13:27:50.303Z",
+        "status": "generated"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -66568,7 +68185,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -75763,7 +77380,7 @@
       "verification_started_at": "2026-09-08T11:24:33.651Z",
       "publish_ready_at": "2026-09-08T11:24:45.444Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-09T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -76182,10 +77799,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "ae408a258653afa4c23f276fabfa1b7a986ee86d893f455bff48617e7e139de3",
-        "checked_at": "2026-09-09T08:06:50.537Z",
+        "fingerprint": "e21c64212d256eac741c31b84a76aefad632155f0391dc16fc0adc43b0a212b6",
+        "checked_at": "2026-09-09T13:22:48.629Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T14:06:50.537Z",
+        "expires_at": "2026-09-09T19:22:48.629Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -76255,98 +77872,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-09T10:07:31.404Z",
-        "content_hash": "fc948e32449c195e2f5cc1f63c64e48a306826485fd91e5faf36fa47eda92545",
-        "sources": [
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-160,wahl-560.html",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
-            "summary": "Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist derzeit nicht in Sicht. Die neuen Entwicklungen im Liveticker.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T07:03:31.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "2ba7bde655a0ab79ce0650fa975572cca8ec5830ca31592b7fe17cb484eba973",
-            "source_item_id": "d7d59be7dcb9c4682fff5fe96d7177a7e6a524e211703d13ffadd27a32dda9c3",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T07:03:31.000Z",
-            "ingested_at": "2026-09-08T07:06:51.663Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-162,wahl-560.html",
-            "title": "Wahlergebnis Sachsen-Anhalt: Schulze übernimmt Vorsitz der CDU-Fraktion",
-            "summary": "Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Sven Schulze übernimmt Vorsitz der CDU-Fraktion im Landtag. Die neuen Entwicklungen im Liveticker.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T15:10:10.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "3266c2114d9a7c02e4ab5af6eb5e8b997e17bfe2f857e6412922e6bee773784a",
-            "source_item_id": "1dbdc37b9607a66df42eb2625f93ae67190df53f2ff760755d84d13da4a51968",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T15:10:10.000Z",
-            "ingested_at": "2026-09-08T15:21:51.449Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "MEDIA_PUBLIC_EXPLANATION_LENGTH"
-        ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-09T13:07:06.288Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T12:52:06.288Z",
-          "fingerprint": "0e824208ac91cd615c6da0a4f44ebe8e9f89278fea217f54750b619c806b7163",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      },
+      "deepening_checks": 3,
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
         "fingerprint": "13bc558058debfd42aa520bf11b2052bf336f7869dc99699b0e9babfdf576eaf",
@@ -76769,9 +78295,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "9e1c10e0230a132d2d571c9d5ef13f3ca584b10c2bdf91e881a0b9da1e9af753",
-        "checked_at": "2026-09-09T13:06:43.122Z",
+        "checked_at": "2026-09-09T13:22:48.629Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T19:06:43.122Z",
+        "expires_at": "2026-09-09T19:22:48.629Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -103580,7 +105106,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -105742,9 +107268,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T13:06:43.122Z",
+        "checked_at": "2026-09-09T13:22:48.629Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T19:06:43.122Z",
+        "expires_at": "2026-09-09T19:22:48.629Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -112850,7 +114376,7 @@
       "verification_started_at": "2026-09-07T20:55:32.935Z",
       "publish_ready_at": "2026-09-07T20:55:44.100Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-09T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -113207,9 +114733,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b8629a29ca2619ef531b0be1fb2a52cea3e6e4046a6cc1800afc278769c666dc",
-        "checked_at": "2026-09-08T21:52:27.208Z",
+        "checked_at": "2026-09-09T13:22:48.629Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T03:52:27.208Z",
+        "expires_at": "2026-09-09T19:22:48.629Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -113245,61 +114771,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-09T05:06:53.221Z",
-        "content_hash": "6376938c2945d1a1c9dedd74f18d68157f77c19f6bd927f924034a5fab48f329",
-        "sources": [
-          {
-            "source_id": "france24-en",
-            "publisher": "France 24",
-            "url": "https://www.france24.com/en/europe/20260907-eu-greenland-investment-trump-annexation",
-            "title": "EU to boost Greenland investment amid Trump annexation claims",
-            "summary": "European Commission President Ursula von der Leyen is expected to announce increased EU investment in Greenland on Monday, including in critical minerals, satellite communications and renewable energy. Her two-day visit signals support for Greenland and Denmark amid US President Donald Trump’s push for American control of the Arctic territory.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T00:27:21.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Geopolitik",
-            "content_hash": "6d656132b97d22c4a88cdad9f5a471a83f3f0acc7bde8ce96249739fc0840059",
-            "source_item_id": "2b5a527b0c9d5299a0908925ce5d17e2f9c97b500b72217720ac63b0d9239a72",
-            "publisher_id": "france24",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "en",
-            "geography": [
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T00:27:21.000Z",
-            "ingested_at": "2026-09-07T12:36:31.443Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:france24",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
-          "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-de155b0d0e02b95f",
@@ -117309,7 +118781,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -121302,9 +122774,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "560d363cdd017c4a692ca02b042420aa4aaa09b4dc45a423ff2633b3dfc29599",
-        "checked_at": "2026-09-09T13:06:43.122Z",
+        "checked_at": "2026-09-09T13:22:48.629Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T19:06:43.122Z",
+        "expires_at": "2026-09-09T19:22:48.629Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -216875,7 +218347,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -261269,7 +262741,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T13:06:43.122Z",
+          "checked_at": "2026-09-09T13:22:48.629Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -298230,6 +299702,56 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-09T13:22:48.629Z",
+          "retained_urls": [
+            "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+            "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+            "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+            "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
+            "https://www.ndr.de/nachrichten/info/das-erbe-nach-9-11-deutschland-nach-anschlaegen-in-usa,pearl-harburg-100.html",
+            "https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS9wcm9wbGFuXzE5NjM4Nzc1M19nYW56ZVNlbmR1bmc",
+            "https://www.stern.de/panorama/donald-trump-luegt-darueber--dass-er-an-9-11-gerettet-wurde-38224984.html",
+            "https://www.zdfheute.de/politik/ausland/9-11-world-trade-center-trump-usa-verschwoerungstheorien-100.html",
+            "https://www.stern.de/politik/ausland/11--september-2001-in-notrufen---die-frischluft-ist-bald-zu-ende--30702522.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+              "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+              "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-04T11:02:58.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+              "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-04T11:02:58.000Z",
+              "ingested_at": "2026-09-09T07:21:53.878Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-09T04:00:00.000Z",
@@ -298265,7 +299787,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T04:00:00.000Z",
-          "ingested_at": "2026-09-09T13:06:43.122Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -298297,7 +299819,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T01:44:22.000Z",
-          "ingested_at": "2026-09-09T13:06:43.122Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -298330,7 +299852,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T18:04:29.000Z",
-          "ingested_at": "2026-09-09T13:06:43.122Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -298362,7 +299884,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T07:30:00.000Z",
-          "ingested_at": "2026-09-09T12:22:02.228Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -298395,7 +299917,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T05:15:11.000Z",
-          "ingested_at": "2026-09-09T13:06:43.122Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -298494,7 +300016,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T08:35:00.000Z",
-          "ingested_at": "2026-09-09T13:06:43.122Z",
+          "ingested_at": "2026-09-09T13:22:48.629Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -298589,7 +300111,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-02",
@@ -298609,7 +300131,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-03",
@@ -298629,7 +300151,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-04",
@@ -298649,7 +300171,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-05",
@@ -298669,7 +300191,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-06",
@@ -298689,7 +300211,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-07",
@@ -298709,7 +300231,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-08",
@@ -298729,7 +300251,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-09",
@@ -298749,7 +300271,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-10",
@@ -298769,7 +300291,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:06:43.122Z"
+          "checked_at": "2026-09-09T13:22:48.629Z"
         }
       ],
       "content_hash": "7eb44acec98cad35384374718777d4f12f2d767ad447112c7f02b0e824eea3ba",
@@ -298784,7 +300306,7 @@
       "fresh": false,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T13:06:43.122Z",
+      "updated_at": "2026-09-09T13:22:48.629Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-4282989facaefbf32544",
@@ -298822,20 +300344,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 170.7187,
+        "source_age_minutes": 186.81048333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 524.3520833333333,
+        "queue_age_minutes": 540.4438666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 64,
+        "news_freshness_score": 61,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T13:06:43.122Z",
+        "checked_at": "2026-09-09T13:22:48.629Z",
         "fingerprint": "f293c0bd597ca4870580846289ff10e218b8d87420fe13caaa770a4a65763a83",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
