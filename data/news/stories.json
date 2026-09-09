@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-09T00:22:10.289Z",
-  "updated_at": "2026-09-09T00:37:30.333Z",
+  "updated_at": "2026-09-09T00:51:49.494Z",
   "stories": [
     {
       "story_id": "wt-0456ad2a9c0ad09d",
@@ -15,6 +15,51 @@
       },
       "slug": "iran-krieg-iranische-medien-melden-raketenangriffe-auf-jordanien-0ad09d",
       "title": "Iran-Krieg: Iranische Medien melden Raketenangriffe auf Jordanien",
+      "queue_source_repartitions": [
+        {
+          "version": 1,
+          "at": "2026-09-09T00:51:49.494Z",
+          "retained_urls": [
+            "https://www.stern.de/politik/ausland/iran-krieg--iranische-medien-melden-raketenangriffe-auf-jordanien-38224158.html",
+            "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
+              "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
+              "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T22:30:29.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "7d900d0021f3231477773c754911fdd2ab467d56ff7e3ff0ceca8e986a51ad6c",
+              "source_item_id": "e7322df280e3c082ea37fdcd625778091779e66d9192f416e537ef48ac3cd500",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T22:30:29.000Z",
+              "ingested_at": "2026-09-09T00:37:30.333Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        }
+      ],
       "first_seen": "2026-09-08T22:29:15.000Z",
       "last_updated": "2026-09-09T00:29:38.000Z",
       "topic": [
@@ -51,39 +96,6 @@
           "agency_origin_confidence": "unknown",
           "provenance": {
             "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
-          "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
-          "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T22:30:29.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "7d900d0021f3231477773c754911fdd2ab467d56ff7e3ff0ceca8e986a51ad6c",
-          "source_item_id": "e7322df280e3c082ea37fdcd625778091779e66d9192f416e537ef48ac3cd500",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T22:30:29.000Z",
-          "ingested_at": "2026-09-09T00:37:30.333Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
@@ -141,30 +153,10 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T00:37:30.333Z"
+          "checked_at": "2026-09-09T00:51:49.494Z"
         },
         {
           "claim_id": "wt-0456ad2a9c0ad09d-claim-02",
-          "story_id": "wt-0456ad2a9c0ad09d",
-          "claim": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab: Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T00:37:30.333Z"
-        },
-        {
-          "claim_id": "wt-0456ad2a9c0ad09d-claim-03",
           "story_id": "wt-0456ad2a9c0ad09d",
           "claim": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab: Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
@@ -181,10 +173,10 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T00:37:30.333Z"
+          "checked_at": "2026-09-09T00:51:49.494Z"
         }
       ],
-      "content_hash": "18b4a9af7ef7654d83b7824899ae2910df51022120259585c6852546ee2e6913",
+      "content_hash": "41b69903821861d0ff53a72cde44f1c2386d31b99525f56f359959801a7a1a45",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
@@ -196,7 +188,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T00:37:30.333Z",
+      "updated_at": "2026-09-09T00:51:49.494Z",
       "event_first_seen_at": "2026-09-08T22:52:15.096Z",
       "event_detected_at": "2026-09-08T22:52:15.096Z",
       "event_id": "event-9e394f4254cfd55e6370",
@@ -232,21 +224,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7.872216666666667,
+        "source_age_minutes": 22.191566666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 105.25395,
+        "queue_age_minutes": 119.5733,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T00:37:30.333Z",
-        "fingerprint": "d964a8f9b827a6ea9adb5824ab91f8fdd10a669120781f4406e39b4b1dfb1e30",
+        "checked_at": "2026-09-09T00:51:49.494Z",
+        "fingerprint": "50be7be2727a2f6da3d6157eb987cc35e4f98e3ec81ffe583e93dbba9896c564",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -5616,6 +5608,136 @@
       }
     },
     {
+      "story_id": "wt-491857684cc65a88",
+      "slug": "iran-krieg-usa-zerstoren-iranische-tanker-teheran-feuert-raketen-ab-c65a88",
+      "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
+      "first_seen": "2026-09-08T22:30:29.000Z",
+      "last_updated": "2026-09-08T22:30:29.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
+          "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
+          "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:30:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "7d900d0021f3231477773c754911fdd2ab467d56ff7e3ff0ceca8e986a51ad6c",
+          "source_item_id": "e7322df280e3c082ea37fdcd625778091779e66d9192f416e537ef48ac3cd500",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T22:30:29.000Z",
+          "ingested_at": "2026-09-09T00:37:30.333Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-491857684cc65a88-claim-01",
+          "story_id": "wt-491857684cc65a88",
+          "claim": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab: Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T00:51:49.494Z"
+        }
+      ],
+      "content_hash": "6ce71c2f3139d18b6b36499e470d89dd3ce769d0f5e801f9af3d4353d6207f74",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_BUDGET_EXHAUSTED"
+      ],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": false,
+      "pending_reason": "AI_BUDGET_BLOCKED",
+      "versions": [],
+      "updated_at": "2026-09-09T00:51:49.494Z",
+      "event_first_seen_at": "2026-09-09T00:51:49.494Z",
+      "event_detected_at": "2026-09-09T00:51:49.494Z",
+      "event_id": "event-535ab9d27abe1bcdee32",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 141.34156666666667,
+        "detection_delay_minutes": 141.34156666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 71,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T00:51:49.494Z",
+        "fingerprint": "0eb593ef01389acf12a1f8c992bcb183e409fa6965fd567b759f8c5a337c6626",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
       "story_id": "wt-49a833fc7e85d6e9",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -6273,7 +6395,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T21:54:28.447Z"
+        "retry_after": "2026-09-09T01:07:06.875Z"
       }
     },
     {
@@ -19768,7 +19890,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T21:28:29.630Z"
+        "retry_after": "2026-09-09T01:07:02.753Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -42580,7 +42702,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T21:54:35.211Z"
+        "retry_after": "2026-09-09T01:07:10.932Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -53396,7 +53518,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T00:37:30.333Z"
+          "checked_at": "2026-09-09T00:51:49.494Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -53411,7 +53533,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T00:37:30.333Z",
+      "updated_at": "2026-09-09T00:51:49.494Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -53452,7 +53574,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 870.0701,
+        "queue_age_minutes": 884.38945,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -53461,7 +53583,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T00:37:30.333Z",
+        "checked_at": "2026-09-09T00:51:49.494Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -53531,7 +53653,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T00:37:30.333Z"
+          "checked_at": "2026-09-09T00:51:49.494Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -53546,7 +53668,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T00:37:30.333Z",
+      "updated_at": "2026-09-09T00:51:49.494Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -53586,7 +53708,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 870.0701,
+        "queue_age_minutes": 884.38945,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -53595,7 +53717,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T00:37:30.333Z",
+        "checked_at": "2026-09-09T00:51:49.494Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -73193,9 +73315,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T00:37:30.333Z",
+        "checked_at": "2026-09-09T00:51:49.494Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T06:37:30.333Z",
+        "expires_at": "2026-09-09T06:51:49.494Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -88611,9 +88733,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "61dd35c8e2e4f05a2b64bdc95313fd7c05533e5088e8d7050ab841b17a574a74",
-        "checked_at": "2026-09-09T00:37:30.333Z",
+        "checked_at": "2026-09-09T00:51:49.494Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T06:37:30.333Z",
+        "expires_at": "2026-09-09T06:51:49.494Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -129141,7 +129263,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T00:37:30.333Z"
+          "checked_at": "2026-09-09T00:51:49.494Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -129161,7 +129283,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T00:37:30.333Z"
+          "checked_at": "2026-09-09T00:51:49.494Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -129177,7 +129299,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T00:37:30.333Z",
+      "updated_at": "2026-09-09T00:51:49.494Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -129217,7 +129339,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2370.6161666666667,
+        "queue_age_minutes": 2384.9355166666664,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -129226,7 +129348,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T00:37:30.333Z",
+        "checked_at": "2026-09-09T00:51:49.494Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -184909,7 +185031,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T00:37:30.333Z",
+          "checked_at": "2026-09-09T00:51:49.494Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -229303,7 +229425,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T00:37:30.333Z",
+          "checked_at": "2026-09-09T00:51:49.494Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
