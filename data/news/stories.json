@@ -1,8 +1,1503 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-09T11:37:19.505Z",
-  "updated_at": "2026-09-09T11:37:19.505Z",
+  "public_updated_at": "2026-09-09T12:06:53.892Z",
+  "updated_at": "2026-09-09T12:06:53.892Z",
   "stories": [
+    {
+      "story_id": "wt-ae5023f974deba91",
+      "slug": "bundestag-cdu-aussenpolitiker-rottgen-verteidigt-ausgaben-fur-die-ukraine-opposition-kri-deba91",
+      "title": "Bundestag - CDU-Außenpolitiker Röttgen verteidigt Ausgaben für die Ukraine, Opposition kritisiert Fokus auf Verteidigung",
+      "first_seen": "2026-09-09T11:55:34.000Z",
+      "last_updated": "2026-09-09T12:08:49.771Z",
+      "published_at": "2026-09-09T12:08:49.771Z",
+      "updated_at": "2026-09-09T12:08:49.771Z",
+      "topic": [
+        "Europa",
+        "Geopolitik",
+        "Finanzen",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+          "title": "Bundestag - CDU-Außenpolitiker Röttgen verteidigt Ausgaben für die Ukraine, Opposition kritisiert Fokus auf Verteidigung",
+          "summary": "Der Bundestag hat im Rahmen der laufenden Haushaltswoche über die Ausgaben für die Außenpolitik debattiert. Der CDU-Außenpolitiker Röttgen sprach sich für die geplante Ukraine-Hilfe in Höhe von zwölf Milliarden Euro aus.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:55:34.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "28e3ff0807f22eabbb5a092cb121f4ae4f54b98486f1ed8c889c4a5c4bd2358f",
+          "source_item_id": "47231e3be732dc88df61dd04fc90b2af2a0f28bc54cbd3003fecec3a3563a2f8",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:55:34.000Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ae5023f974deba91-v1-claim-1",
+          "story_id": "wt-ae5023f974deba91",
+          "claim": "Im Bundestag wurde in der Haushaltswoche über die Ausgaben für die Außenpolitik debattiert.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+              "excerpt_hash": "6256068f2f2da7926dcf",
+              "checked_at": "2026-09-09T12:08:49.771Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T12:08:49.771Z"
+        },
+        {
+          "claim_id": "wt-ae5023f974deba91-v1-claim-2",
+          "story_id": "wt-ae5023f974deba91",
+          "claim": "CDU-Außenpolitiker Norbert Röttgen sprach sich für die geplante Ukraine-Hilfe in Höhe von zwölf Milliarden Euro aus.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+              "excerpt_hash": "6256068f2f2da7926dcf",
+              "checked_at": "2026-09-09T12:08:49.771Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T12:08:49.771Z"
+        },
+        {
+          "claim_id": "wt-ae5023f974deba91-v1-claim-3",
+          "story_id": "wt-ae5023f974deba91",
+          "claim": "Der AfD-Haushaltspolitiker Kögel bemängelte, für Diplomatie stünden nur sechs Milliarden Euro zur Verfügung, während der Verteidigungsetat auf fast 110 Milliarden steige.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+              "excerpt_hash": "b8acc93c6fe952d1e283",
+              "checked_at": "2026-09-09T12:08:49.771Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+              "excerpt_hash": "a8f42da9abe1983a291a",
+              "checked_at": "2026-09-09T12:08:49.771Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T12:08:49.771Z"
+        },
+        {
+          "claim_id": "wt-ae5023f974deba91-v1-claim-4",
+          "story_id": "wt-ae5023f974deba91",
+          "claim": "Für das kommende Jahr sind 5,9 Milliarden Euro für das Auswärtige Amt eingeplant, etwa 68 Millionen Euro weniger als in diesem Jahr.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+              "excerpt_hash": "347a6dc038946fe04bcb",
+              "checked_at": "2026-09-09T12:08:49.771Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T12:08:49.771Z"
+        }
+      ],
+      "event_id": "event-adff6678df3600f32da7",
+      "event_first_seen_at": "2026-09-09T12:06:53.892Z",
+      "event_detected_at": "2026-09-09T12:06:53.892Z",
+      "verification_started_at": "2026-09-09T12:08:36.538Z",
+      "publish_ready_at": "2026-09-09T12:08:49.771Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-09T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T12:06:53.892Z",
+        "fingerprint": "048d4b5df1ace727741500c513d6fd69ec26841a693cb954d5edd26a116aac6e",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Wie verändern sich die Haushaltsansätze im weiteren parlamentarischen Verfahren?",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Änderungen bei den genannten Etatansätzen oder der Beschlussstand des Haushalts",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bf07ceb274455420",
+          "announced_at": "2026-09-09T11:55:34.000Z",
+          "follow_up_date": "2026-09-16T12:08:49.771Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Bleibt die genannte Ukraine-Hilfe von zwölf Milliarden Euro im Verfahren bestehen?",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigter oder veränderter Ansatz für Ukraine-Hilfe",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-50fb8dfb956735dc",
+          "announced_at": "2026-09-09T11:55:34.000Z",
+          "follow_up_date": "2026-09-16T12:08:49.771Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "df77d74b3affc68c45e6ea254294756751416de81b44c2baf2b12961a94c2a67",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-09T12:08:49.771Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+            "content_hash": "28e3ff0807f22eabbb5a092cb121f4ae4f54b98486f1ed8c889c4a5c4bd2358f",
+            "excerpt_hash": "584087020346bef0aa2e17f618d5ee5da0fa4f35d1c6dcd9b4753ae2f5c9c071",
+            "number_locale": "de",
+            "numbers": [
+              "110",
+              "5.9",
+              "68",
+              "9.09",
+              "2026"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Im Bundestag wurde in der laufenden Haushaltswoche über die Ausgaben für die Außenpolitik gesprochen. Deutschlandfunk berichtet, CDU-Außenpolitiker Norbert Röttgen habe die geplante Ukraine-Hilfe von zwölf Milliarden Euro verteidigt.\n\nZugleich kritisierten Oppositionsvertreter den Fokus auf Verteidigung und verwiesen auf unterschiedliche Ansätze bei Diplomatie, Verteidigung und Auswärtigem Amt. Für das kommende Jahr sind 5,9 Milliarden Euro für das Auswärtige Amt eingeplant, etwa 68 Millionen Euro weniger als in diesem Jahr.",
+      "analysis": {
+        "story_id": "wt-ae5023f974deba91",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Im Bundestag ging es in der Haushaltswoche um Außenpolitik, Ukraine-Hilfe und die Verteilung der Mittel zwischen Diplomatie und Verteidigung. Die Meldung ist neu genug für eine kurze Berichterstattung, weil sie konkrete Beträge und politische Gegensätze nennt.",
+        "detail_summary": "Die Meldung beschreibt eine aktuelle Haushaltsdebatte im Bundestag mit klar benannten Beträgen: zwölf Milliarden Euro für Ukraine-Hilfe, 5,9 Milliarden Euro für das Auswärtige Amt und fast 110 Milliarden Euro für den Verteidigungsetat. Materiell relevant ist das, weil damit staatliche Mittel zwischen außenpolitischer Unterstützung, Diplomatie und Militär verschoben beziehungsweise gegeneinander abgewogen werden. Der Wirkpfad läuft über die künftige Verfügbarkeit und Priorisierung öffentlicher Gelder, nicht über bereits eingetretene Folgen. Möglich sind später veränderte Handlungsspielräume für Außenpolitik und humanitäre Hilfe, falls sich die Ansätze im Verfahren bestätigen. Offen bleibt, wie der Bundestag die Zahlen am Ende beschließt; belastbar ist hier zunächst nur die Debatte und die zugeschriebene Position einzelner Redner.",
+        "why_relevant": "Die Meldung betrifft die Verteilung erheblicher Bundesmittel und damit eine konkrete politische Priorisierung mit potenziellen Folgen für Außenpolitik, humanitäre Hilfe und Verteidigung.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Mehr Mittel für Ukraine-Hilfe und Diplomatie können Schutz und Unterstützung stärken; zugleich kann die Betonung von Verteidigung andere Haushaltsbereiche verdrängen.",
+          "positive_path": {
+            "mechanism": "Zusätzliche oder gesicherte Mittel für Ukraine-Hilfe und Diplomatie können humanitäre und außenpolitische Handlungsspielräume erweitern.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Eine starke Priorität für Verteidigung kann Mittel für Diplomatie und andere zivile Aufgaben relativ schwächen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung fehlt ein belastbarer Bezug zu Umwelt- oder Klimawirkungen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Haushaltsdebatte zeigt politische Prioritätensetzung und parlamentarische Auseinandersetzung. Das kann demokratische Kontrolle sichtbar machen, auch wenn noch keine Entscheidung über den endgültigen Haushalt vorliegt.",
+          "positive_path": {
+            "mechanism": "Öffentliche Haushaltsdebatten machen Verteilungskonflikte sichtbar und erhöhen die Nachprüfbarkeit politischer Prioritäten.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Starke Polarisierung zwischen Regierung und Opposition kann die Verständigung über Haushaltsprioritäten erschweren.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Debatte kann den späteren Zuschnitt des Bundeshaushalts beeinflussen, vor allem bei Ukraine-Hilfe, Diplomatie und Verteidigung.",
+        "impact_risks": [
+          "Verdrängung ziviler Außenpolitik durch höhere Militärpriorität",
+          "Verfestigung eines engen Finanzrahmens für Diplomatie",
+          "politische Polarisierung im Haushaltsverfahren"
+        ],
+        "mechanisms": [
+          "Haushaltspriorisierung",
+          "Mittelverschiebung zwischen Ressorts",
+          "parlamentarische Aushandlung"
+        ],
+        "first_order": [
+          "Benennung konkreter Haushaltsansätze im Bundestag",
+          "öffentliche Gegenüberstellung von Diplomatie und Verteidigung"
+        ],
+        "second_order": [
+          "Änderung der politischen Verhandlungslage",
+          "mögliche Verschiebung von Prioritäten im Haushaltsverfahren"
+        ],
+        "third_order": [
+          "längerfristige Prägung außenpolitischer Handlungsspielräume",
+          "mögliche Folgen für zivile Krisenreaktion und Unterstützung"
+        ],
+        "systemic_relevance": "Haushaltsansätze steuern staatliche Kapazitäten und setzen Prioritäten zwischen militärischen und zivilen Funktionen.",
+        "transformation_potential": "Gering bis mittel: Die Meldung zeigt Priorisierung, aber noch keine beschlossene Umsteuerung.",
+        "resilience": "Resilienzfragen berühren die Fähigkeit des Staates, auf Krisen mit diplomatischen und humanitären Mitteln zu reagieren.",
+        "side_effects": [
+          "Kürzere Spielräume für andere Ressorts",
+          "höhere politische Konfliktintensität"
+        ],
+        "uncertainties": [
+          "Der weitere Verlauf des parlamentarischen Verfahrens ist offen.",
+          "Die Meldung belegt keine beschlossene Wirkung, nur die Debatte."
+        ],
+        "evidence_level": "mittel",
+        "attribution": "Deutschlandfunk berichtet, Röttgen verteidige die geplante Ukraine-Hilfe; Opposition kritisiere den Fokus auf Verteidigung. Die Angaben sind als journalistische Wiedergabe attribuiert, nicht als amtlich bestätigter Beschluss.",
+        "watch_next": [
+          "Wie werden die genannten Beträge im Haushaltsverfahren verändert?",
+          "Bleibt die Ukraine-Hilfe bei zwölf Milliarden Euro?",
+          "Wie entwickelt sich der Ansatz des Auswärtigen Amtes?"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung bringt konkrete, aktuelle Beträge und Streitpunkte zur Außen- und Sicherheitspolitik in die Haushaltswoche ein; sie ist damit neu und materiell relevant, auch wenn nur eine journalistische Quelle vorliegt."
+        },
+        "media_impact": null,
+        "visuals": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-09T12:06:53.892Z",
+        "media_trigger_fingerprint": "5230a7553955ed4b44b08c78bf5b94b9cd37f1eb2b2a91b6a59eeee364c4c0e3",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "5230a7553955ed4b44b08c78bf5b94b9cd37f1eb2b2a91b6a59eeee364c4c0e3",
+          "content_fingerprint": "7a5f0fdba22a22b97a40c00327253e0ca8394f8de081f00ff1474948dd58f84a",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-09T12:08:49.771Z",
+          "content_hash": "df77d74b3affc68c45e6ea254294756751416de81b44c2baf2b12961a94c2a67",
+          "source_summary": "Im Bundestag wurde in der laufenden Haushaltswoche über die Ausgaben für die Außenpolitik gesprochen. Deutschlandfunk berichtet, CDU-Außenpolitiker Norbert Röttgen habe die geplante Ukraine-Hilfe von zwölf Milliarden Euro verteidigt.\n\nZugleich kritisierten Oppositionsvertreter den Fokus auf Verteidigung und verwiesen auf unterschiedliche Ansätze bei Diplomatie, Verteidigung und Auswärtigem Amt. Für das kommende Jahr sind 5,9 Milliarden Euro für das Auswärtige Amt eingeplant, etwa 68 Millionen Euro weniger als in diesem Jahr.",
+          "analysis": {
+            "story_id": "wt-ae5023f974deba91",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Im Bundestag ging es in der Haushaltswoche um Außenpolitik, Ukraine-Hilfe und die Verteilung der Mittel zwischen Diplomatie und Verteidigung. Die Meldung ist neu genug für eine kurze Berichterstattung, weil sie konkrete Beträge und politische Gegensätze nennt.",
+            "detail_summary": "Die Meldung beschreibt eine aktuelle Haushaltsdebatte im Bundestag mit klar benannten Beträgen: zwölf Milliarden Euro für Ukraine-Hilfe, 5,9 Milliarden Euro für das Auswärtige Amt und fast 110 Milliarden Euro für den Verteidigungsetat. Materiell relevant ist das, weil damit staatliche Mittel zwischen außenpolitischer Unterstützung, Diplomatie und Militär verschoben beziehungsweise gegeneinander abgewogen werden. Der Wirkpfad läuft über die künftige Verfügbarkeit und Priorisierung öffentlicher Gelder, nicht über bereits eingetretene Folgen. Möglich sind später veränderte Handlungsspielräume für Außenpolitik und humanitäre Hilfe, falls sich die Ansätze im Verfahren bestätigen. Offen bleibt, wie der Bundestag die Zahlen am Ende beschließt; belastbar ist hier zunächst nur die Debatte und die zugeschriebene Position einzelner Redner.",
+            "why_relevant": "Die Meldung betrifft die Verteilung erheblicher Bundesmittel und damit eine konkrete politische Priorisierung mit potenziellen Folgen für Außenpolitik, humanitäre Hilfe und Verteidigung.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "direction_basis": "assessed",
+              "rationale": "Mehr Mittel für Ukraine-Hilfe und Diplomatie können Schutz und Unterstützung stärken; zugleich kann die Betonung von Verteidigung andere Haushaltsbereiche verdrängen.",
+              "positive_path": {
+                "mechanism": "Zusätzliche oder gesicherte Mittel für Ukraine-Hilfe und Diplomatie können humanitäre und außenpolitische Handlungsspielräume erweitern.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Eine starke Priorität für Verteidigung kann Mittel für Diplomatie und andere zivile Aufgaben relativ schwächen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "direction_basis": "no_path",
+              "rationale": "In der Meldung fehlt ein belastbarer Bezug zu Umwelt- oder Klimawirkungen.",
+              "positive_path": null,
+              "negative_path": null
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "chance",
+              "direction_basis": "assessed",
+              "rationale": "Die Haushaltsdebatte zeigt politische Prioritätensetzung und parlamentarische Auseinandersetzung. Das kann demokratische Kontrolle sichtbar machen, auch wenn noch keine Entscheidung über den endgültigen Haushalt vorliegt.",
+              "positive_path": {
+                "mechanism": "Öffentliche Haushaltsdebatten machen Verteilungskonflikte sichtbar und erhöhen die Nachprüfbarkeit politischer Prioritäten.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Starke Polarisierung zwischen Regierung und Opposition kann die Verständigung über Haushaltsprioritäten erschweren.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Debatte kann den späteren Zuschnitt des Bundeshaushalts beeinflussen, vor allem bei Ukraine-Hilfe, Diplomatie und Verteidigung.",
+            "impact_risks": [
+              "Verdrängung ziviler Außenpolitik durch höhere Militärpriorität",
+              "Verfestigung eines engen Finanzrahmens für Diplomatie",
+              "politische Polarisierung im Haushaltsverfahren"
+            ],
+            "mechanisms": [
+              "Haushaltspriorisierung",
+              "Mittelverschiebung zwischen Ressorts",
+              "parlamentarische Aushandlung"
+            ],
+            "first_order": [
+              "Benennung konkreter Haushaltsansätze im Bundestag",
+              "öffentliche Gegenüberstellung von Diplomatie und Verteidigung"
+            ],
+            "second_order": [
+              "Änderung der politischen Verhandlungslage",
+              "mögliche Verschiebung von Prioritäten im Haushaltsverfahren"
+            ],
+            "third_order": [
+              "längerfristige Prägung außenpolitischer Handlungsspielräume",
+              "mögliche Folgen für zivile Krisenreaktion und Unterstützung"
+            ],
+            "systemic_relevance": "Haushaltsansätze steuern staatliche Kapazitäten und setzen Prioritäten zwischen militärischen und zivilen Funktionen.",
+            "transformation_potential": "Gering bis mittel: Die Meldung zeigt Priorisierung, aber noch keine beschlossene Umsteuerung.",
+            "resilience": "Resilienzfragen berühren die Fähigkeit des Staates, auf Krisen mit diplomatischen und humanitären Mitteln zu reagieren.",
+            "side_effects": [
+              "Kürzere Spielräume für andere Ressorts",
+              "höhere politische Konfliktintensität"
+            ],
+            "uncertainties": [
+              "Der weitere Verlauf des parlamentarischen Verfahrens ist offen.",
+              "Die Meldung belegt keine beschlossene Wirkung, nur die Debatte."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Deutschlandfunk berichtet, Röttgen verteidige die geplante Ukraine-Hilfe; Opposition kritisiere den Fokus auf Verteidigung. Die Angaben sind als journalistische Wiedergabe attribuiert, nicht als amtlich bestätigter Beschluss.",
+            "watch_next": [
+              "Wie werden die genannten Beträge im Haushaltsverfahren verändert?",
+              "Bleibt die Ukraine-Hilfe bei zwölf Milliarden Euro?",
+              "Wie entwickelt sich der Ansatz des Auswärtigen Amtes?"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung bringt konkrete, aktuelle Beträge und Streitpunkte zur Außen- und Sicherheitspolitik in die Haushaltswoche ein; sie ist damit neu und materiell relevant, auch wenn nur eine journalistische Quelle vorliegt."
+            },
+            "media_impact": null,
+            "visuals": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-09T12:06:53.892Z",
+            "media_trigger_fingerprint": "5230a7553955ed4b44b08c78bf5b94b9cd37f1eb2b2a91b6a59eeee364c4c0e3",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "5230a7553955ed4b44b08c78bf5b94b9cd37f1eb2b2a91b6a59eeee364c4c0e3",
+              "content_fingerprint": "7a5f0fdba22a22b97a40c00327253e0ca8394f8de081f00ff1474948dd58f84a",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-ae5023f974deba91-v1-claim-1",
+              "story_id": "wt-ae5023f974deba91",
+              "claim": "Im Bundestag wurde in der Haushaltswoche über die Ausgaben für die Außenpolitik debattiert.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+                  "excerpt_hash": "6256068f2f2da7926dcf",
+                  "checked_at": "2026-09-09T12:08:49.771Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T12:08:49.771Z"
+            },
+            {
+              "claim_id": "wt-ae5023f974deba91-v1-claim-2",
+              "story_id": "wt-ae5023f974deba91",
+              "claim": "CDU-Außenpolitiker Norbert Röttgen sprach sich für die geplante Ukraine-Hilfe in Höhe von zwölf Milliarden Euro aus.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+                  "excerpt_hash": "6256068f2f2da7926dcf",
+                  "checked_at": "2026-09-09T12:08:49.771Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T12:08:49.771Z"
+            },
+            {
+              "claim_id": "wt-ae5023f974deba91-v1-claim-3",
+              "story_id": "wt-ae5023f974deba91",
+              "claim": "Der AfD-Haushaltspolitiker Kögel bemängelte, für Diplomatie stünden nur sechs Milliarden Euro zur Verfügung, während der Verteidigungsetat auf fast 110 Milliarden steige.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+                  "excerpt_hash": "b8acc93c6fe952d1e283",
+                  "checked_at": "2026-09-09T12:08:49.771Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+                  "excerpt_hash": "a8f42da9abe1983a291a",
+                  "checked_at": "2026-09-09T12:08:49.771Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T12:08:49.771Z"
+            },
+            {
+              "claim_id": "wt-ae5023f974deba91-v1-claim-4",
+              "story_id": "wt-ae5023f974deba91",
+              "claim": "Für das kommende Jahr sind 5,9 Milliarden Euro für das Auswärtige Amt eingeplant, etwa 68 Millionen Euro weniger als in diesem Jahr.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+                  "excerpt_hash": "347a6dc038946fe04bcb",
+                  "checked_at": "2026-09-09T12:08:49.771Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T12:08:49.771Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+              "content_hash": "28e3ff0807f22eabbb5a092cb121f4ae4f54b98486f1ed8c889c4a5c4bd2358f"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-09T12:08:49.771Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+                "content_hash": "28e3ff0807f22eabbb5a092cb121f4ae4f54b98486f1ed8c889c4a5c4bd2358f",
+                "excerpt_hash": "584087020346bef0aa2e17f618d5ee5da0fa4f35d1c6dcd9b4753ae2f5c9c071",
+                "number_locale": "de",
+                "numbers": [
+                  "110",
+                  "5.9",
+                  "68",
+                  "9.09",
+                  "2026"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-09T12:08:49.771Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-09T12:27:09.662Z"
+      }
+    },
+    {
+      "story_id": "wt-a83d5bdb9355525e",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "70991d8b516161261936a3b25a1434f273dad5dab16bf01a2f52da9ff84a212c",
+        "first_failed_at": "2026-09-09T12:06:53.892Z",
+        "failed_at": "2026-09-09T12:06:53.892Z",
+        "retry_after": "2026-09-09T12:21:53.892Z",
+        "retry_count": 1
+      },
+      "slug": "stehen-in-sachsen-anhalt-eu-fordermittel-auf-dem-spiel-55525e",
+      "title": "Stehen in Sachsen-Anhalt EU-Fördermittel auf dem Spiel?",
+      "first_seen": "2026-09-09T12:00:05.000Z",
+      "last_updated": "2026-09-09T12:00:05.000Z",
+      "topic": [
+        "Europa",
+        "Geopolitik",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/ausland/europa/eu-foerdermittel-sachsen-anhalt-100.html",
+          "title": "Stehen in Sachsen-Anhalt EU-Fördermittel auf dem Spiel?",
+          "summary": "In Ungarn und Polen war es schon Praxis: Die EU fror Fördermittel ein. Sollte auch eine mögliche AfD-Regierung in Sachsen-Anhalt EU-Grundrechte brechen, droht dem Land ein Zahlung…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T12:00:05.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d46b80e47ae5e31b5a67bc3de8aaf653f4ea935bb72fd36c674f3149eefdf1f4",
+          "source_item_id": "6d2bdad8f710b8d7dfc3b09deedee3eb39241ecd268d5bb219e2ed68d5e71c63",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T12:00:05.000Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a83d5bdb9355525e-claim-01",
+          "story_id": "wt-a83d5bdb9355525e",
+          "claim": "Stehen in Sachsen-Anhalt EU-Fördermittel auf dem Spiel?: In Ungarn und Polen war es schon Praxis: Die EU fror Fördermittel ein. Sollte auch eine mögliche AfD-Regierung in Sachsen-Anhalt EU-Grundrechte brechen, droht dem Land ein Zahlung…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T12:06:53.892Z"
+        }
+      ],
+      "content_hash": "472a94c961d18faa9c4eee878f6152d60ef7b259e1f6b7be9cf47b3ab81d1981",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T12:21:53.892Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T12:06:53.892Z",
+      "event_first_seen_at": "2026-09-09T12:06:53.892Z",
+      "event_detected_at": "2026-09-09T12:06:53.892Z",
+      "event_id": "event-2ba957feef4f6f1855f7",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa",
+          "Geopolitik",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.814866666666667,
+        "detection_delay_minutes": 6.814866666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T12:06:53.892Z",
+        "fingerprint": "63e37d11a947befbe0fdc857874619d01f0975807733ac1776b23e8f0f3dc443",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T12:06:53.892Z",
+      "rejection": {
+        "at": "2026-09-09T12:06:53.892Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-4f2828d8d59ebea6",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "f84aa682c5d3066436f446dcf23ff5eb81156536adb487966f926aa1970dfa7e",
+        "first_failed_at": "2026-09-09T12:06:53.892Z",
+        "failed_at": "2026-09-09T12:06:53.892Z",
+        "retry_after": "2026-09-09T12:21:53.892Z",
+        "retry_count": 1
+      },
+      "slug": "50-jahre-gesundheitszentrum-gropiusstadt-fur-west-berlin-war-das-damals-ein-ungewohnlich-9ebea6",
+      "title": "50 Jahre Gesundheitszentrum Gropiusstadt: „Für West-Berlin war das damals ein ungewöhnliches Angebot“",
+      "first_seen": "2026-09-09T11:55:02.000Z",
+      "last_updated": "2026-09-09T11:55:02.000Z",
+      "topic": [
+        "Gesundheit",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/bezirke/neukoelln/50-jahre-gesundheitszentrum-gropiusstadt-fur-west-berlin-war-das-damals-ein-ungewohnliches-angebot-16034252.html",
+          "title": "50 Jahre Gesundheitszentrum Gropiusstadt: „Für West-Berlin war das damals ein ungewöhnliches Angebot“",
+          "summary": "Als die Großsiedlung Gropiusstadt in den 1960er-Jahren entstand, musste die medizinische Versorgung erst mitwachsen. Das Gesundheitszentrum wurde zu einem wichtigen Anlaufpunkt für die Nachbarschaft.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:55:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "cc711045fb10f93bc187acc32e6bb28fc5ad6dbfe0bd4aae48c866d887813b4b",
+          "source_item_id": "eb47f17e8435d327e6f6bd7fc9c22a27dca6a2237447ef2dd002463735d16489",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:55:02.000Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4f2828d8d59ebea6-claim-01",
+          "story_id": "wt-4f2828d8d59ebea6",
+          "claim": "50 Jahre Gesundheitszentrum Gropiusstadt: „Für West-Berlin war das damals ein ungewöhnliches Angebot“: Als die Großsiedlung Gropiusstadt in den 1960er-Jahren entstand, musste die medizinische Versorgung erst mitwachsen. Das Gesundheitszentrum wurde zu einem wichtigen Anlaufpunkt für die Nachbarschaft.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T12:06:53.892Z"
+        }
+      ],
+      "content_hash": "e39172a098467d31f0fc54388b01e9f53c60667e3925e71abc630ec5564a6858",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-09T12:21:53.892Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T12:06:53.892Z",
+      "event_first_seen_at": "2026-09-09T12:06:53.892Z",
+      "event_detected_at": "2026-09-09T12:06:53.892Z",
+      "event_id": "event-b8cf1594b7064eddaa6b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesundheit",
+          "Geopolitik"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 11.864866666666666,
+        "detection_delay_minutes": 11.864866666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T12:06:53.892Z",
+        "fingerprint": "ae88e3f7fd4a13d5c747a41708411800839ce7f7ebf3e40ef3e470912e7be0ad",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T12:06:53.892Z",
+      "rejection": {
+        "at": "2026-09-09T12:06:53.892Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-9972336a6bc657c3",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "ffa560b8c1913e96ce03b26204d91624ec11901a963b5aca90da4250ae5f6cb7",
+        "first_failed_at": "2026-09-09T12:06:53.892Z",
+        "failed_at": "2026-09-09T12:06:53.892Z",
+        "retry_after": "2026-09-09T12:21:53.892Z",
+        "retry_count": 1
+      },
+      "slug": "ezb-sitzung-in-berlin-zinserhohung-gilt-als-ausgemacht-und-was-kommt-dann-c657c3",
+      "title": "EZB-Sitzung in Berlin: Zinserhöhung gilt als ausgemacht – und was kommt dann?",
+      "first_seen": "2026-09-09T11:52:12.000Z",
+      "last_updated": "2026-09-09T11:52:12.000Z",
+      "topic": [
+        "Europa",
+        "Finanzen",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/ezb-sitzung-in-berlin-zinserhohung-gilt-als-ausgemacht--und-was-kommt-dann-16033597.html",
+          "title": "EZB-Sitzung in Berlin: Zinserhöhung gilt als ausgemacht – und was kommt dann?",
+          "summary": "Da die Inflation wieder anzieht, dürfte die EZB am Donnerstag in Berlin die Leitzinsen erneut erhöhen. Sparer könnten davon profitieren, der Konjunkturerholung wirkt es entgegen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:52:12.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "7d365db2865ad58977555487e51e01df29fd26b180f323f0653427ce7b195e8d",
+          "source_item_id": "8204d95cd1952c7b7ae6202d68d19dae7385c5b131095f553e83c5d18d0bef40",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:52:12.000Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-9972336a6bc657c3-claim-01",
+          "story_id": "wt-9972336a6bc657c3",
+          "claim": "EZB-Sitzung in Berlin: Zinserhöhung gilt als ausgemacht – und was kommt dann?: Da die Inflation wieder anzieht, dürfte die EZB am Donnerstag in Berlin die Leitzinsen erneut erhöhen. Sparer könnten davon profitieren, der Konjunkturerholung wirkt es entgegen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T12:06:53.892Z"
+        }
+      ],
+      "content_hash": "e55fe3e67fdbf18b9b97c71f23d3bd50376e3b5241124e266342dcd6c6c8673c",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-09T12:21:53.892Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T12:06:53.892Z",
+      "event_first_seen_at": "2026-09-09T12:06:53.892Z",
+      "event_detected_at": "2026-09-09T12:06:53.892Z",
+      "event_id": "event-1b48374f396d7225c732",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa",
+          "Finanzen",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 14.6982,
+        "detection_delay_minutes": 14.6982,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T12:06:53.892Z",
+        "fingerprint": "efc09799211ac5c174c60febd107d74fc9b8cf655987098fed04051ba4751fc3",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T12:06:53.892Z",
+      "rejection": {
+        "at": "2026-09-09T12:06:53.892Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-dcb2b2c435f173a4",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "071cc21c4bef1a57e5b54926ae9d37ee1f9c597d030c7aaec1fefa61528c5c63",
+        "first_failed_at": "2026-09-09T12:06:53.892Z",
+        "failed_at": "2026-09-09T12:06:53.892Z",
+        "retry_after": "2026-09-09T12:21:53.892Z",
+        "retry_count": 1
+      },
+      "slug": "lufthansa-nimmt-fluge-nach-dubai-wieder-auf-f173a4",
+      "title": "Lufthansa nimmt Flüge nach Dubai wieder auf",
+      "first_seen": "2026-09-09T11:51:00.000Z",
+      "last_updated": "2026-09-09T11:51:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "manager-magazin-news",
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/lufthansa-nimmt-fluege-nach-dubai-wieder-auf-a-ef499b92-ad14-4460-91b9-5b293ed876a8",
+          "title": "Lufthansa nimmt Flüge nach Dubai wieder auf",
+          "summary": "Der Krieg zwischen den USA und Iran hat wieder an Schärfe gewonnen, doch die Lufthansa sieht offenbar Zeichen der Entspannung: Ab Ende Oktober will die Airline wieder nach Dubai fliegen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:51:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "902275d12aeae0a593dd27da9c7fbd56e335cc678765721acb656fe18cd3136b",
+          "source_item_id": "0dcedffad7f9f0de25337cc20b7351b019aab124d3e9aa2315971e0159f38272",
+          "publisher_id": "manager-magazin",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:51:00.000Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:manager-magazin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-dcb2b2c435f173a4-claim-01",
+          "story_id": "wt-dcb2b2c435f173a4",
+          "claim": "Lufthansa nimmt Flüge nach Dubai wieder auf: Der Krieg zwischen den USA und Iran hat wieder an Schärfe gewonnen, doch die Lufthansa sieht offenbar Zeichen der Entspannung: Ab Ende Oktober will die Airline wieder nach Dubai fliegen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "manager-magazin-news",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:manager-magazin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T12:06:53.892Z"
+        }
+      ],
+      "content_hash": "2e9fd867000af5a910b235fc6cc4c957c2001e2c3dc63d0b8a68f713323c534c",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T12:21:53.892Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T12:06:53.892Z",
+      "event_first_seen_at": "2026-09-09T12:06:53.892Z",
+      "event_detected_at": "2026-09-09T12:06:53.892Z",
+      "event_id": "event-adcc48e3bcd55f301ba1",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.8982,
+        "detection_delay_minutes": 15.8982,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T12:06:53.892Z",
+        "fingerprint": "ea811ad162ab67f0a084775bc6d316ec44ee3b2b956b85fb486cc14b86c25467",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T12:06:53.892Z",
+      "rejection": {
+        "at": "2026-09-09T12:06:53.892Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-7dc1295284e1e99b",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "5da7fdcfc0c2b14ce3b56c287989a26d2b1ca7ac79490f58f2fe2e29f234fa6e",
+        "first_failed_at": "2026-09-09T12:06:53.892Z",
+        "failed_at": "2026-09-09T12:06:53.892Z",
+        "retry_after": "2026-09-09T12:21:53.892Z",
+        "retry_count": 1
+      },
+      "slug": "olpreis-aktuell-olpreise-steigen-nach-neuen-angriffen-am-persischen-golf-e1e99b",
+      "title": "Ölpreis aktuell: Ölpreise steigen nach neuen Angriffen am Persischen Golf",
+      "first_seen": "2026-09-09T11:45:00.000Z",
+      "last_updated": "2026-09-09T11:45:00.000Z",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/finanzen/oelpreis-aktuell-oelpreise-steigen-nach-neuen-angriffen-am-persischen-golf/100207502.html",
+          "title": "Ölpreis aktuell: Ölpreise steigen nach neuen Angriffen am Persischen Golf",
+          "summary": "Der Ölpreis ist am Mittwoch wieder über die Marke 100 Dollar gestiegen. Der Kampf zwischen den USA und dem Iran um die Kontrolle der Straße von Hormus hält an.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:45:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "98e770b83533f27edaf890acbd7ffc870eb8be10ce6b1919c817e80b9f7371bf",
+          "source_item_id": "98bb50e1457d978b0f319432056b0c3f543c50f078b48347e5c4fa526ae1e096",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:45:00.000Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7dc1295284e1e99b-claim-01",
+          "story_id": "wt-7dc1295284e1e99b",
+          "claim": "Ölpreis aktuell: Ölpreise steigen nach neuen Angriffen am Persischen Golf: Der Ölpreis ist am Mittwoch wieder über die Marke 100 Dollar gestiegen. Der Kampf zwischen den USA und dem Iran um die Kontrolle der Straße von Hormus hält an.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T12:06:53.892Z"
+        }
+      ],
+      "content_hash": "3efd7f05755eef6085abfa6aa920d2c0caec0b1ce86061cdbf5d58c9a99f327a",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T12:21:53.892Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T12:06:53.892Z",
+      "event_first_seen_at": "2026-09-09T12:06:53.892Z",
+      "event_detected_at": "2026-09-09T12:06:53.892Z",
+      "event_id": "event-944741998ae2a7f68989",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 21.8982,
+        "detection_delay_minutes": 21.8982,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T12:06:53.892Z",
+        "fingerprint": "460119cee07ac5388cf3c59716501bb5d50f1ea3a888e825210dbe260bbe6417",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T12:06:53.892Z",
+      "rejection": {
+        "at": "2026-09-09T12:06:53.892Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-dc674d56860c0346",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "6293c3625c5eb4d3e3a074eac4283d79e995763750eaa2d3bf7a7266d7e97955",
+        "first_failed_at": "2026-09-09T12:06:53.892Z",
+        "failed_at": "2026-09-09T12:06:53.892Z",
+        "retry_after": "2026-09-09T12:21:53.892Z",
+        "retry_count": 1
+      },
+      "slug": "iran-attacks-us-base-after-american-strikes-on-tankers-0c0346",
+      "title": "Iran attacks US base after American strikes on tankers",
+      "first_seen": "2026-09-09T11:43:46.000Z",
+      "last_updated": "2026-09-09T11:43:46.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260909-iran-attacks-us-base-after-american-strikes-on-tankers",
+          "title": "Iran attacks US base after American strikes on tankers",
+          "summary": "Iran said it fired ballistic missiles at a US base in Jordan early Wednesday, in retaliation for US strikes on Iranian oil tankers in the Gulf of Oman and near Kharg Island, off Iran’s coast. The US said five Iranian tankers were destroyed.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:43:46.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "4957e2829e0965679ed72def38fe82b80cf410139c7e99fd1cabf2d89e95c64a",
+          "source_item_id": "4a8c873638dafab2bbfe8b1bcd32547f22bcf1f403eb5be8fc5b714731225442",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:43:46.000Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-dc674d56860c0346-claim-01",
+          "story_id": "wt-dc674d56860c0346",
+          "claim": "Iran attacks US base after American strikes on tankers: Iran said it fired ballistic missiles at a US base in Jordan early Wednesday, in retaliation for US strikes on Iranian oil tankers in the Gulf of Oman and near Kharg Island, off Iran’s coast. The US said five Iranian tankers were destroyed.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T12:06:53.892Z"
+        }
+      ],
+      "content_hash": "e51d06ece4aae68d3d54cae1275971c1c50970b074b393c04f0a57e950a60c33",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_DIRECTION_BASIS_INVALID:planet"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-09T12:21:53.892Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-09T12:06:53.892Z",
+      "event_first_seen_at": "2026-09-09T12:06:53.892Z",
+      "event_detected_at": "2026-09-09T12:06:53.892Z",
+      "event_id": "event-b841d94e9b5189582c60",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 23.131533333333334,
+        "detection_delay_minutes": 23.131533333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T12:06:53.892Z",
+        "fingerprint": "8929b3015df414ced513859f03f8cad4fd3bda0934990cc167491e416a6eb9bd",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-a098a78411837ab4",
       "slug": "vorgehen-gegen-airbnb-und-co-brussel-schlagt-regeln-fur-stadte-vor-837ab4",
@@ -695,6 +2190,156 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-09T11:56:05.394Z"
+      }
+    },
+    {
+      "story_id": "wt-c337178fdcdcef4a",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "16e1d95b1b607c0c468ec775eb4614e20d79c05edbedca8da8b72187267c39f4",
+        "first_failed_at": "2026-09-09T12:06:53.892Z",
+        "failed_at": "2026-09-09T12:06:53.892Z",
+        "retry_after": "2026-09-09T12:21:53.892Z",
+        "retry_count": 1
+      },
+      "slug": "niedrige-fullstande-brandenburgs-energieministerin-befurchtet-keinen-gasmangel-dcef4a",
+      "title": "Niedrige Füllstände: Brandenburgs Energieministerin befürchtet keinen Gasmangel",
+      "first_seen": "2026-09-09T11:37:08.000Z",
+      "last_updated": "2026-09-09T11:37:08.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-niedrige-fullstande-16034422.html",
+          "title": "Niedrige Füllstände: Brandenburgs Energieministerin befürchtet keinen Gasmangel",
+          "summary": "Die Gasspeicher sind geringer gefüllt als in den vergangenen Jahren. Warum zeigt sich Brandenburgs Energieministerin Klement nicht besorgt?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:37:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "74ae3aa5a6c8383b27649a3aa48b81d4ebf554cd1b7413926ea20f6c2c2c9c38",
+          "source_item_id": "848d14b311fcd1b0d1544214705a73061eb36243ea25515d72f1e883bc7373b5",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:37:08.000Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c337178fdcdcef4a-claim-01",
+          "story_id": "wt-c337178fdcdcef4a",
+          "claim": "Niedrige Füllstände: Brandenburgs Energieministerin befürchtet keinen Gasmangel: Die Gasspeicher sind geringer gefüllt als in den vergangenen Jahren. Warum zeigt sich Brandenburgs Energieministerin Klement nicht besorgt?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T12:06:53.892Z"
+        }
+      ],
+      "content_hash": "7564baef6932ca27476882b0d7894b0238558a072761f41d5d46fe1e3724d642",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T12:21:53.892Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T12:06:53.892Z",
+      "event_first_seen_at": "2026-09-09T12:06:53.892Z",
+      "event_detected_at": "2026-09-09T12:06:53.892Z",
+      "event_id": "event-399c4afba38f1a629f4d",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 29.764866666666666,
+        "detection_delay_minutes": 29.764866666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T12:06:53.892Z",
+        "fingerprint": "d19c8a6f021cd2ff5a6381721054e009f9f6acddec5af6b7973c63abc7798fd1",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T12:06:53.892Z",
+      "rejection": {
+        "at": "2026-09-09T12:06:53.892Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -1647,6 +3292,107 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-09T11:32:38.194Z"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-09T12:06:53.892Z",
+        "content_hash": "5db1901b201b21c1acc5b4be78057f63a56712d6c669cb41cb540d544965035e",
+        "sources": [
+          {
+            "source_id": "lto-news",
+            "publisher": "Legal Tribune Online",
+            "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+            "title": "EuG bestätigt Übernahmeverbot: Booking.com darf sich Flüge-Plattform eTraveli nicht einverleiben",
+            "summary": "Booking wollte mit eTraveli ins Fluggeschäft expandieren – und hätte damit nach Ansicht des EuG seine dominante Stellung im Bereich Hotelbuchungen zu sehr stärken können. Das Gericht bestätigt deshalb das ausgesprochene Übernahmeverbot.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-09T10:37:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Recht und Justiz",
+            "content_hash": "95c85f1c557aa805a64d77e6811007a42adf845437a6c5470affe870387dfd44",
+            "source_item_id": "560d918126f325b0ebf69d9be82e0cfc2b3f52e8e7c18e1bc22fa2be72c7d2de",
+            "publisher_id": "legal-tribune-online",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "blindspot",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-09T10:37:00.000Z",
+            "ingested_at": "2026-09-09T11:12:49.530Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:legal-tribune-online",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/eu-gericht-bestaetigt--booking-darf-etraveli-nicht-uebernehmen-38225950.html",
+            "title": "EU-Gericht bestätigt: Booking darf eTraveli nicht übernehmen",
+            "summary": "Der Reiseanbieter Booking.com darf das Flugportal eTraveli nicht übernehmen. Das Gericht der Europäischen Union in Luxemburg bestätigte am Mittwoch die entsprechende Entscheidung der EU-Kommission von 2023. Eine Fusion der beiden Firmen würde den Wettbewerb deutlich behindern, entschied es. (Az. T-1139/23)",
+            "source_type": "media_rss",
+            "published_at": "2026-09-09T07:59:55.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "81117f72f4516f3c15f17da9bf65fec2210e30f808ef411692d358eb26cf2c06",
+            "source_item_id": "c39eaf4bfc782905ec286d5c8b1e2bd7c2f1ac4809100d15dcfd36e718104196",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-09T07:59:55.000Z",
+            "ingested_at": "2026-09-09T08:22:03.686Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": true,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-09T12:06:53.892Z",
+          "fingerprint": "6800dd4678a1daebc2239235102cf004811ce09df5f17fea0430a380b63dc6e5",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      },
+      "living_file": {
+        "merged_story_ids": [
+          "wt-3c1a41d7234d7f44"
+        ],
+        "consolidations": [
+          {
+            "at": "2026-09-09T12:06:53.892Z",
+            "story_id": "wt-3c1a41d7234d7f44",
+            "slug": "eu-gericht-bestatigt-booking-darf-etraveli-nicht-ubernehmen-4d7f44",
+            "title": "EU-Gericht bestätigt: Booking darf eTraveli nicht übernehmen",
+            "reason": "specific_object_or_leading_document"
+          }
+        ]
       }
     },
     {
@@ -2710,10 +4456,10 @@
       "story_id": "wt-15665d71bdf5b2ab",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "3e6a02bf99e6a09d383b7be64e82a945b07512c7133832f4c6d643327b9e3559",
-        "first_failed_at": "2026-09-09T11:37:19.505Z",
-        "failed_at": "2026-09-09T11:37:19.505Z",
-        "retry_after": "2026-09-09T11:52:19.505Z",
+        "fingerprint": "0a180ce8b94dc8ae5c398ee228b4e7ff4b405d6619fe6b96fc6920fd532f483e",
+        "first_failed_at": "2026-09-09T12:06:53.892Z",
+        "failed_at": "2026-09-09T12:06:53.892Z",
+        "retry_after": "2026-09-09T12:21:53.892Z",
         "retry_count": 1
       },
       "slug": "statistik-zahl-der-berufspendler-bundesweit-gestiegen-munchen-hat-die-meisten-pendler-f5b2ab",
@@ -2731,7 +4477,7 @@
           "title": "Statistik - Zahl der Berufspendler bundesweit gestiegen - München hat die meisten Pendler",
           "summary": "Die Zahl der Menschen, die zur Arbeit pendeln, ist bundesweit gestiegen.",
           "source_type": "media_rss",
-          "published_at": "2026-09-09T11:35:21.000Z",
+          "published_at": "2026-09-09T11:55:34.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -2747,8 +4493,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-09T11:35:21.000Z",
-          "ingested_at": "2026-09-09T11:37:19.505Z",
+          "source_published_at": "2026-09-09T11:55:34.000Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2777,23 +4523,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:37:19.505Z"
+          "checked_at": "2026-09-09T12:06:53.892Z"
         }
       ],
       "content_hash": "1b585c479d3487577f19e53b9c8e7a5d03cbf6fccf5e5940adea9237d09e0c48",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_SUMMARY_SENTENCE_COUNT",
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        "AI_DIRECTION_BASIS_INVALID:human",
+        "AI_DIRECTION_BASIS_INVALID:planet"
       ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-09T11:52:19.505Z",
+      "quality_retry_count": 3,
+      "quality_retry_after": "2026-09-09T12:21:53.892Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T11:37:19.505Z",
+      "updated_at": "2026-09-09T12:06:53.892Z",
       "event_first_seen_at": "2026-09-09T11:07:22.757Z",
       "event_detected_at": "2026-09-09T11:07:22.757Z",
       "event_id": "event-9d1a0cdf02447284e44d",
@@ -2828,20 +4574,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1.9750833333333333,
+        "source_age_minutes": 11.331533333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 29.9458,
+        "queue_age_minutes": 59.51891666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 100,
+        "news_freshness_score": 98,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T11:37:19.505Z",
+        "checked_at": "2026-09-09T12:06:53.892Z",
         "fingerprint": "95071ead4a28bce6ce4cde4d88f04d30ff9ef15b0ea50183251fc99d001c0418",
         "issue_codes": [],
         "warning_codes": []
@@ -11775,7 +13521,7 @@
             "title": "Naher Osten - Kriegsereignisse treiben Rohölpreis wieder über 100 Dollar",
             "summary": "Die neuerlichen amerikanischen Angriffe auf iranische Tanker und die Reaktion der Revolutionsgarden haben die Rohölpreise wieder in die Höhe getrieben.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T11:35:21.000Z",
+            "published_at": "2026-09-09T11:55:34.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -11791,8 +13537,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T11:35:21.000Z",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "source_published_at": "2026-09-09T11:55:34.000Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -11813,7 +13559,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "c51a6a6c268becc634c0d939bbed9e1b5c50bab5d2fbfe096ef20a8988cbdf22",
           "issue_codes": [],
           "warning_codes": []
@@ -12307,7 +14053,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T09:13:00.000Z",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -12328,7 +14074,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "694f1e59b077b9f8c608a3538526072926dbea4a48e8bb4ab446a73ab6fbc375",
           "issue_codes": [],
           "warning_codes": []
@@ -15473,8 +17219,8 @@
       "followups": [],
       "content_hash": "3d2a3635ad72e6224b3cc404652d67f5b90ae69b2055730d11ee8011880aad49",
       "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
+      "analysis_status": "mit fortgeführter Wirkungsakte zusammengeführt",
       "relevance_filter_version": "4.0",
       "current_version": 1,
       "numeric_evidence": {
@@ -15886,7 +17632,23 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "retired_at": "2026-09-09T12:06:53.892Z",
+      "retirement": {
+        "at": "2026-09-09T12:06:53.892Z",
+        "reason_code": "MERGED_INTO_LIVING_FILE",
+        "canonical_story_ids": [
+          "wt-33931768eeae3386"
+        ],
+        "canonical_stories": [
+          {
+            "story_id": "wt-33931768eeae3386",
+            "slug": "eug-bestatigt-ubernahmeverbot-booking-com-darf-sich-fluge-plattform-etraveli-nicht-einve-ae3386",
+            "title": "EuG bestätigt Übernahmeverbot: Booking.com darf sich Flüge-Plattform eTraveli nicht einverleiben"
+          }
+        ],
+        "note": "Diese Meldung beschreibt denselben Vorgang wie die verlinkte fortgeführte Wirkungsakte. Frühere Analysen und Quellen bleiben als historischer Stand erhalten. Zusätzliche Quellen werden vor einer inhaltlichen Aktualisierung erneut geprüft."
+      }
     },
     {
       "story_id": "wt-ead9be0d3e2045c4",
@@ -17434,7 +19196,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T08:24:10.563Z"
+        "retry_after": "2026-09-09T12:27:23.604Z"
       },
       "listed": true,
       "analysis_status": "veröffentlicht",
@@ -18210,7 +19972,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
           "issue_codes": [],
           "warning_codes": []
@@ -18511,7 +20273,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T08:24:06.220Z"
+        "retry_after": "2026-09-09T12:27:19.345Z"
       },
       "listed": true,
       "analysis_status": "veröffentlicht",
@@ -19449,7 +21211,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "0c59257b7f229b4525f991d215e40acd4338a0901f548bea4671dd037f615fad",
           "issue_codes": [],
           "warning_codes": []
@@ -20829,7 +22591,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T03:28:00.000Z",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20850,7 +22612,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "bb7a5588e7ab778e0e72e6f4cccdcb1d0ae39518fdb20485129fbf53d745c3ef",
           "issue_codes": [],
           "warning_codes": []
@@ -23390,7 +25152,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T06:44:10.000Z",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -23411,7 +25173,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "2d967ebef56891fb5b7db628ee84539aed5971c3f41eea66bf2a66e035ade3f0",
           "issue_codes": [],
           "warning_codes": []
@@ -24380,7 +26142,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T20:33:01.000Z",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -24401,7 +26163,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "43e263c3b728aa4d6c1579552f106ce9474e539d6af84087dbe9dfe0b503165a",
           "issue_codes": [],
           "warning_codes": []
@@ -25232,7 +26994,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T23:07:34.000Z",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -25265,7 +27027,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T09:11:21.000Z",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -25286,7 +27048,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "00745e32348705095e7193eb7f51b7e60e4211b36349f0379d5c458470069acb",
           "issue_codes": [],
           "warning_codes": []
@@ -26619,7 +28381,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T03:28:00.000Z",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -26673,7 +28435,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "40edeffc10f76ac729263cf26d9219be8ce046bcc15081437c14b3359b0fdfae",
           "issue_codes": [],
           "warning_codes": []
@@ -29043,7 +30805,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -29064,7 +30826,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "fd023c485e0b3ed33b65d77ed5513973bc866b82062ccb744777b35c0783a309",
           "issue_codes": [],
           "warning_codes": []
@@ -29651,7 +31413,7 @@
             "title": "Ukraine-News: Wadephul ruft Ukraine zum Waffenkauf in Deutschland auf",
             "summary": "Bundesaußenminister Wadephul hat Kiew aufgerufen, mehr Waffen bei deutschen Unternehmen zu bestellen. Zudem wies er den Vorwurf seines russischen Amtskollegen Lawrow zurück, Deutschland wolle einen Krieg gegen Russland.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T10:54:46.000Z",
+            "published_at": "2026-09-09T11:55:43.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Gesellschaft",
@@ -29667,8 +31429,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T10:54:46.000Z",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "source_published_at": "2026-09-09T11:55:43.000Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -29689,7 +31451,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "89936e0172dca057489613122967481af6ae3d49f32909881997e0b915328fd0",
           "issue_codes": [],
           "warning_codes": []
@@ -30450,7 +32212,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "771af662c62e40f4e1dcbe83067df293cf64e8291cb7bc5e37aa95a5ae296855",
           "issue_codes": [],
           "warning_codes": []
@@ -31150,7 +32912,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T04:07:00.000Z",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -31162,11 +32924,10 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
+          "AI_SOURCE_SUMMARY_LENGTH"
         ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-09T11:52:19.505Z",
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-09T12:36:53.892Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -31174,7 +32935,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "5bf0079782476452cd4b50422972aafc1839912b11c42105b8258dcb924a055a",
           "issue_codes": [],
           "warning_codes": []
@@ -31184,9 +32945,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "93289dabd9e23d96c22a703c2cb6d6c6093b6c840b90ba615d79357d5b18db19",
         "first_failed_at": "2026-09-09T11:37:19.505Z",
-        "failed_at": "2026-09-09T11:37:19.505Z",
-        "retry_after": "2026-09-09T11:52:19.505Z",
-        "retry_count": 1
+        "failed_at": "2026-09-09T12:06:53.892Z",
+        "retry_after": "2026-09-09T12:36:53.892Z",
+        "retry_count": 2
       }
     },
     {
@@ -38905,7 +40666,7 @@
             "title": "Krieg - Fünf Todesopfer bei neuen russischen Luftangriffen auf Kiew",
             "summary": "Bei neuen russischen Luftangriffen auf die ukrainische Hauptstadt Kiew sind nach Behördenangaben fünf Menschen getötet worden.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T11:35:21.000Z",
+            "published_at": "2026-09-09T11:55:34.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -38921,8 +40682,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T11:35:21.000Z",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "source_published_at": "2026-09-09T11:55:34.000Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -38943,7 +40704,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "3037a1d42e9e581af7193dffb83c5d5dedad0e73b1af2289d4607930fd0d5b62",
           "issue_codes": [],
           "warning_codes": []
@@ -40443,7 +42204,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T08:11:22.445Z"
+        "retry_after": "2026-09-09T12:27:14.458Z"
       },
       "listed": true,
       "analysis_status": "veröffentlicht",
@@ -42595,7 +44356,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:52:01.000Z",
-            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "ingested_at": "2026-09-09T12:06:53.892Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42616,7 +44377,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "1efa3fa74f2770221ef9efac103a0a38be0f98820ad08782bc080d18496d51db",
           "issue_codes": [],
           "warning_codes": []
@@ -47240,7 +49001,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "fada684c913b1511f4b664c4800c3b5ed71f9a95565753e62994fc4d1b7d2c3a",
           "issue_codes": [],
           "warning_codes": []
@@ -48340,7 +50101,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "53f93df4d1e534788f614f7964cd327043bdce46694f9d12100257749b54cc1b",
           "issue_codes": [],
           "warning_codes": []
@@ -48979,7 +50740,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
           "issue_codes": [],
           "warning_codes": []
@@ -50252,7 +52013,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
           "issue_codes": [],
           "warning_codes": []
@@ -51160,7 +52921,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
           "issue_codes": [],
           "warning_codes": []
@@ -54683,7 +56444,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "46b06f5129ab11dcdcbcead79a419746c9745bf047a31c3da192fa34a025dc76",
           "issue_codes": [],
           "warning_codes": []
@@ -63300,7 +65061,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -73070,7 +74831,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "0e824208ac91cd615c6da0a4f44ebe8e9f89278fea217f54750b619c806b7163",
           "issue_codes": [],
           "warning_codes": []
@@ -73490,9 +75251,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "9e1c10e0230a132d2d571c9d5ef13f3ca584b10c2bdf91e881a0b9da1e9af753",
-        "checked_at": "2026-09-09T11:37:19.505Z",
+        "checked_at": "2026-09-09T12:06:53.892Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T17:37:19.505Z",
+        "expires_at": "2026-09-09T18:06:53.892Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -74269,7 +76030,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "aee2728c313d5bbd32082a613ae379886c53c1839aca55b1314e40cec484d370",
           "issue_codes": [],
           "warning_codes": []
@@ -78120,7 +79881,7 @@
       "verification_started_at": "2026-09-08T10:10:09.444Z",
       "publish_ready_at": "2026-09-08T10:10:29.508Z",
       "news_status": "confirmed",
-      "deepening_due_at": "2026-09-09T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -78647,10 +80408,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "6208f976a4a60d5261f2cddb0927c9162cbae070b4740facb80b9c13f658da9f",
-        "checked_at": "2026-09-09T07:37:26.176Z",
+        "fingerprint": "3fd2f1fe22f638da7716ff8b76a65c3a6f5649c3434caf2dfc36143b0cfa7715",
+        "checked_at": "2026-09-09T12:06:53.892Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T13:37:26.176Z",
+        "expires_at": "2026-09-09T18:06:53.892Z",
         "sources": [
           {
             "source_id": "bundestag-hib",
@@ -78686,63 +80447,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-09T10:07:31.404Z",
-        "content_hash": "a74f7013e1cba2cfca9b713056205470046ce7028003c080b42ac4304f3c4255",
-        "sources": [
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag - Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210796",
-            "title": "Alkoholsteuer soll um 20 Prozent angehoben werden",
-            "summary": "Finanzen/Gesetzentwurf Die Steuer auf alkoholische Getränke soll um 20 Prozent erhöht werden. Diese und weitere Maßnahmen sieht der von der Bundesregierung eingebrachte Entwurf des Haushaltsbegleitgesetzes vor.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-08T07:44:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "cf1261335df2551c6e6c557997a612f5769a350fcf4c3fa994aab71230f08c0e",
-            "source_item_id": "47ff18f01ea214f5d3f127554de66ec849b01507aeb3d784921ed67739bff51d",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T07:44:00.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_DIRECTION_BASIS_INVALID:democracy"
-        ],
-        "quality_retry_count": 2,
-        "quality_retry_after": "2026-09-09T11:51:59.023Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T10:51:59.023Z",
-          "fingerprint": "868ad5265d175cfb161266ef637639c076040c24552ca93728b755dfa7d9702e",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-2f96597b1f32e6a6",
@@ -87165,8 +88870,8 @@
         "quality_errors": [
           "CLAIM_NUMBER_NOT_IN_EVIDENCE"
         ],
-        "quality_retry_count": 5,
-        "quality_retry_after": "2026-09-09T11:52:18.628Z",
+        "quality_retry_count": 6,
+        "quality_retry_after": "2026-09-10T00:06:53.892Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -87174,7 +88879,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T05:52:18.628Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -87184,9 +88889,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "98ad7c75c02781f07691464bdf43c44bbd1faecc7e203c47ecaf8c2458788619",
         "first_failed_at": "2026-09-08T22:07:00.398Z",
-        "failed_at": "2026-09-09T05:52:18.628Z",
-        "retry_after": "2026-09-09T11:52:18.628Z",
-        "retry_count": 5
+        "failed_at": "2026-09-09T12:06:53.892Z",
+        "retry_after": "2026-09-10T00:06:53.892Z",
+        "retry_count": 6
       }
     },
     {
@@ -97484,7 +99189,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -100465,7 +102170,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -102627,9 +104332,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T11:37:19.505Z",
+        "checked_at": "2026-09-09T12:06:53.892Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T17:37:19.505Z",
+        "expires_at": "2026-09-09T18:06:53.892Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -106095,7 +107800,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -110234,7 +111939,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -114249,7 +115954,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -118242,9 +119947,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "560d363cdd017c4a692ca02b042420aa4aaa09b4dc45a423ff2633b3dfc29599",
-        "checked_at": "2026-09-09T11:37:19.505Z",
+        "checked_at": "2026-09-09T12:06:53.892Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T17:37:19.505Z",
+        "expires_at": "2026-09-09T18:06:53.892Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -213815,7 +215520,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -258209,7 +259914,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:37:19.505Z",
+          "checked_at": "2026-09-09T12:06:53.892Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -294920,6 +296625,56 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-09T12:06:53.892Z",
+          "retained_urls": [
+            "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+            "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+            "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+            "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
+            "https://www.ndr.de/nachrichten/info/das-erbe-nach-9-11-deutschland-nach-anschlaegen-in-usa,pearl-harburg-100.html",
+            "https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS9wcm9wbGFuXzE5NjM4Nzc1M19nYW56ZVNlbmR1bmc",
+            "https://www.stern.de/panorama/donald-trump-luegt-darueber--dass-er-an-9-11-gerettet-wurde-38224984.html",
+            "https://www.zdfheute.de/politik/ausland/9-11-world-trade-center-trump-usa-verschwoerungstheorien-100.html",
+            "https://www.stern.de/politik/ausland/11--september-2001-in-notrufen---die-frischluft-ist-bald-zu-ende--30702522.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+              "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+              "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-04T11:02:58.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+              "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-04T11:02:58.000Z",
+              "ingested_at": "2026-09-09T07:21:53.878Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-09T04:00:00.000Z",
@@ -294955,7 +296710,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T04:00:00.000Z",
-          "ingested_at": "2026-09-09T11:37:19.505Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -294987,7 +296742,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T01:44:22.000Z",
-          "ingested_at": "2026-09-09T11:37:19.505Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -295020,7 +296775,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T18:04:29.000Z",
-          "ingested_at": "2026-09-09T11:37:19.505Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -295085,7 +296840,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T05:15:11.000Z",
-          "ingested_at": "2026-09-09T11:37:19.505Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -295118,7 +296873,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:49:17.000Z",
-          "ingested_at": "2026-09-09T11:37:19.505Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -295184,7 +296939,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T08:35:00.000Z",
-          "ingested_at": "2026-09-09T11:37:19.505Z",
+          "ingested_at": "2026-09-09T12:06:53.892Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -295279,7 +297034,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:37:19.505Z"
+          "checked_at": "2026-09-09T12:06:53.892Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-02",
@@ -295299,7 +297054,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:37:19.505Z"
+          "checked_at": "2026-09-09T12:06:53.892Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-03",
@@ -295319,7 +297074,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:37:19.505Z"
+          "checked_at": "2026-09-09T12:06:53.892Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-04",
@@ -295339,7 +297094,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:37:19.505Z"
+          "checked_at": "2026-09-09T12:06:53.892Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-05",
@@ -295359,7 +297114,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:37:19.505Z"
+          "checked_at": "2026-09-09T12:06:53.892Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-06",
@@ -295379,7 +297134,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:37:19.505Z"
+          "checked_at": "2026-09-09T12:06:53.892Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-07",
@@ -295399,7 +297154,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:37:19.505Z"
+          "checked_at": "2026-09-09T12:06:53.892Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-08",
@@ -295419,7 +297174,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:37:19.505Z"
+          "checked_at": "2026-09-09T12:06:53.892Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-09",
@@ -295439,7 +297194,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:37:19.505Z"
+          "checked_at": "2026-09-09T12:06:53.892Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-10",
@@ -295459,7 +297214,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:37:19.505Z"
+          "checked_at": "2026-09-09T12:06:53.892Z"
         }
       ],
       "content_hash": "7eb44acec98cad35384374718777d4f12f2d767ad447112c7f02b0e824eea3ba",
@@ -295474,7 +297229,7 @@
       "fresh": false,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T11:37:19.505Z",
+      "updated_at": "2026-09-09T12:06:53.892Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-4282989facaefbf32544",
@@ -295512,20 +297267,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 81.32508333333334,
+        "source_age_minutes": 110.8982,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 434.95846666666665,
+        "queue_age_minutes": 464.53158333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 83,
+        "news_freshness_score": 77,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T11:37:19.505Z",
+        "checked_at": "2026-09-09T12:06:53.892Z",
         "fingerprint": "f293c0bd597ca4870580846289ff10e218b8d87420fe13caaa770a4a65763a83",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
