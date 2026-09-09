@@ -70,6 +70,20 @@ Der begrenzte Tagesaudit mit bis zu 1.000 Dokumenten findet in diesem Snapshot 3
 - Die aktuelle Rohdatenbank speichert die zuletzt bekannte Quellenfassung. Historische Auswertungen sind deshalb keine vollständige Rekonstruktion sämtlicher früherer Quelltexte.
 - Google/Finnland und andere berichtete Vorhaben benötigen weiterhin tragfähige Originalbelege. Hohe Priorität heilt keine Evidenzlücke.
 
+## Erster Produktionslauf und gezielte Nachbesserung
+
+Der erste Lauf auf Implementierungsstand `0bbfbfa1a0` endete am 09.09.2026 um 18:38 MESZ technisch erfolgreich ([Lauf 34376394248](https://github.com/sustynats/wirkungsoekonomie.de/actions/runs/34376394248)). Die beiden freigegebenen Indizes lieferten zwölf Kandidaten ohne Abruffehler, der Missed-News-Check stellte vier Ereignisse zur Nachprüfung. Im verbleibenden rollenden Stundenkontingent waren vier KI-Anfragen möglich: geschätzte Modellkosten 0,038422 USD, null neue Veröffentlichungen. Das ist **kein** Preis pro veröffentlichter Nachricht.
+
+Die Generaldebatte wurde im tatsächlichen Auswahlprotokoll mit Bundestags-Primärquelle und zehn Quelldokumenten als **80 / TOP** ausgewählt. Trotzdem lehnte die KI sie erneut wegen fehlender Entscheidung/Mittelverschiebung ab. Das war keine Cache-Wiederverwendung. Der redaktionelle Prüfauftrag stellt deshalb nochmals ausdrücklich klar: Ein belegter, erstmals berichteter zentraler parlamentarischer Vorgang kann Informations- und Folgenrelevanz besitzen, ohne schon Beschluss oder messbare Wirkung zu sein. Nur aktuelle, unveröffentlichte Materialitätsablehnungen mit passendem Ereignissignal bekommen bei geänderter redaktioneller Regel eine einmalige Wiedervorlage. Echte Evidenzablehnungen und veröffentlichte Historie werden nicht pauschal erneut analysiert. Die normalen Kapazitäts- und Qualitätsgates bleiben verbindlich.
+
+Der erste Ranking-Backfill hatte außerdem unveränderte veröffentlichte Quellen wieder zur Prüfung eingereiht. Künftige Ranking-Backfills schließen diese aus; bereits erzeugte, exakt unveränderte Wiederprüfungen werden lokal abgeschlossen. Hash **und** vollständiger Quellen-Prüffingerprint müssen übereinstimmen; veränderte Belege, Zusammenführungen und fällige Folgeprüfungen bleiben offen. Im Diagnosebericht werden alte Rohdatenfragmente nun vor der Zählung auf ihre gemeinsame Akte aufgelöst. Der dort gezeigte Auswahlwert stammt aus dem tatsächlichen Entscheidungsprotokoll statt aus einer kleineren Rohdaten-Teilmenge.
+
+## Empfohlene nächste Verbesserungsstufen
+
+1. Verbliebene Discovery-Lücken gezielt mit zulässigen amtlichen Sicherheits-, Standort- und Forschungszugängen schließen. Ein öffentlicher Index allein liefert noch keinen vollständigen journalistischen Beleg; keine pauschale Quellfreigabe oder erhöhte Abrufmenge.
+2. Den gespeicherten Regressionstag um weitere reale Tage und Gegenbeispiele ergänzen: gleiche Orte/Personen bei verschiedenen Ereignissen, spätere Rückblicke, gemeinsame Agenturherkunft und korrekt zurückgestellte Meldungen. So werden übersehene **und** fälschlich hochgestufte Ereignisse messbar.
+3. Zeit bis zur geprüften Erstveröffentlichung, Themenabdeckung und Kosten pro neuer Veröffentlichung gemeinsam auswerten. Ein günstiger Ablehnungslauf ist kein Beleg für günstige Veröffentlichungen; eine höhere Prüfquote allein ist noch keine bessere Versorgung.
+
 ## Verifikation und Veröffentlichung
 
 Neue Regressionen prüfen zwölf Ereignistypen, 15→1-Clustering einschließlich eines vollständigen Runner-Durchlaufs, Herausgeber-/Agenturabhängigkeit, einquellige Breaking-Erkennung, Gerichtsrückblicke, Kommentarabgrenzung, TOP-Schutz, weichen Themenausgleich, begrenzte Indexsuche, Datumsschutz, Missed-News-Cooldown, Lifecycle, Audit ohne KI und getrennte Monitoringwarnungen. Bestehende Materialitäts-, Evidenz-, MPD-, Kosten-, Rechte- und Publikationstests bleiben verbindlich.

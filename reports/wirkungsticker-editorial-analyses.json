@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T16:18:53.755Z",
+  "started_at": "2026-09-09T16:44:59.990Z",
   "scanned_stories": 212,
   "scanned_subjects": 187,
   "editorial_candidates": 32,
-  "ready_for_research": 9,
+  "ready_for_research": 10,
   "research_pending": 11,
   "retry_deferred": 4,
-  "editorial_research_sources_discovered": 49,
+  "editorial_research_sources_discovered": 51,
   "selected": 0,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
@@ -24,9 +24,9 @@
   "full_generations": 0,
   "targeted_repairs": 0,
   "batch_results_reviewed": 0,
-  "background_waiting": 5,
+  "background_waiting": 6,
   "quality_held": 4,
-  "unchanged_research_skipped": 13,
+  "unchanged_research_skipped": 12,
   "requested": [],
   "publication_deferred": false,
   "failed": [],
@@ -77,7 +77,7 @@
       "story_id": "wt-84ac3f26c7762712",
       "story_slug": "milliarden-lucke-im-klimafonds-762712",
       "story_title": "Milliarden-Lücke im Klimafonds",
-      "editorial_analysis_score": 81,
+      "editorial_analysis_score": 83,
       "analysis_gain": 60,
       "factors": {
         "systemic_relevance": 14,
@@ -94,7 +94,7 @@
         "distribution_relevance": 8,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 3
+        "evidence_quality": 5
       },
       "factor_status": {
         "impact_potential": "open",
@@ -104,17 +104,16 @@
       "evidence_gate": {
         "passed": false,
         "source_integrity": "verified",
-        "independent_origin_count": 1,
+        "independent_origin_count": 2,
         "primary_source_count": 0,
         "cited_claim_count": 5,
         "primary_source_expected": true,
         "primary_source_satisfied": false,
         "reasons": [
-          "fewer_than_two_source_origins",
           "primary_source_missing"
         ]
       },
-      "fingerprint": "d4aed5625f353eb5fec67a54dc50ee5871ae9c3aec5321a99af8eb4f6e731666",
+      "fingerprint": "c3f74df61b002cc86ac7f47c7c401c23eb05bf0f2aec0a1c95c92cedb28d025b",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -158,7 +157,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "a72c354fddf71dbc0ecc0c180f5c67a4809a3417ac92d123e2375e790ad88047",
+      "fingerprint": "2aa0c15fd34ae5053f3226f790aa62f1d2bf0670becbbfe9c1e5f3b4946b96f4",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -406,7 +405,7 @@
       "evidence_gate": {
         "passed": false,
         "source_integrity": "verified",
-        "independent_origin_count": 5,
+        "independent_origin_count": 6,
         "primary_source_count": 0,
         "cited_claim_count": 4,
         "primary_source_expected": true,
@@ -415,7 +414,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "83a7b24f03424b3c098db842dec96c64b12693bd3892d5566e339c2b36dffeca",
+      "fingerprint": "63685ec0e9ebb01800f70c9df42a2e9c7407bfaf3fc6264126fe846245877993",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -1176,14 +1175,14 @@
         "passed": true,
         "source_integrity": "verified",
         "independent_origin_count": 2,
-        "primary_source_count": 4,
+        "primary_source_count": 5,
         "cited_claim_count": 2,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "b3ccdb4bdc5adee6b0d6f75de828e40403e2b8523b27bc4f4722fef60686ebcb",
-      "status": "published",
+      "fingerprint": "0c84ebc213e0cfe23df7b7b13f8f92b03195ca82b3eb35be19ce6fac58341ae3",
+      "status": "ready_for_research",
       "analysis_id": "woek-analysis-852ebdd0a0aa"
     },
     {
@@ -1415,5 +1414,5 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-09T16:19:29.993Z"
+  "completed_at": "2026-09-09T16:45:41.322Z"
 }
