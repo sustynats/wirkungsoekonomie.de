@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { preAnalyzeStory, clusterItems, claimLedgerFor, parseFeed, buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
+import { preAnalyzeStory, clusterItems, claimLedgerFor, parseFeed, buildAnalysisPrompt, anchoredSources, existingStoryMatch } from '../../scripts/news/lib.mjs';
 import { evidenceGroups, eventCompatibility } from '../../scripts/news/newsroom.mjs';
 import { scoreEvent, balanceEventQueue, updateEventLifecycle, EVENT_RELEVANCE_VERSION, EVENT_EDITORIAL_POLICY_VERSION, needsEventPolicyReview } from '../../scripts/news/event-relevance.mjs';
 import { coverageAudit, observedMajorEvents, missedNewsRechecks } from '../../scripts/news/coverage-audit.mjs';
@@ -60,6 +60,23 @@ test('existing unpublished fragments consolidate before paid selection, preservi
   assert.equal(mergeLivingFiles(stale,groups,now).some(change=>change.story_id==='draft-1'),false,'stale draft-only plan cannot retire a publication');
 });
 const fixture = JSON.parse(fs.readFileSync(new URL('./fixtures/event-relevance-20260909.json', import.meta.url)));
+
+test('a changed headline retains an already anchored article ID, without bridging through unrelated context',()=>{
+  const [first,old]=borderSources();
+  old.url='https://www.stern.de/gesellschaft/grenze-bei-rheinfelden-38229130.html';
+  const update={...old,url:'https://www.stern.de/panorama/sprengstoffverdacht-zwei-festnahmen-38229130.html',title:'Sprengstoffverdacht an Grenze – zwei vorläufige Festnahmen',summary:'Spürhunde schlagen bei einer Kontrolle an. Spezialkräfte untersuchen das Fahrzeug, der Grenzübergang bleibt gesperrt.'};
+  const record={story_id:'existing',title:first.title,sources:[first,old,update],published:false,last_updated:now};
+  assert.equal(anchoredSources(record).length,3);
+  assert.equal(existingStoryMatch(update,{story:record,last_updated:now},now),1);
+  for(const changed of [
+    {summary:'In Konstanz bleibt der Grenzübergang wegen Sprengstoffverdachts gesperrt.'},
+    {title:'Zweiter Vorfall: Sprengstoffverdacht an Grenze'},
+    {title:'Rückblick: Sprengstoffverdacht an Grenze'},
+    {published_at:'2026-09-10T14:00:00Z'},
+  ]) assert.equal(anchoredSources({...record,sources:[first,old,{...update,...changed}]}).length,2);
+  const context={...old,title:'Analyse: Förderung von Wasserstoff in der Industrie',summary:'Ein anderes Thema ohne Bezug zum Grenzübergang.'};
+  assert.equal(anchoredSources({...record,sources:[first,context,update]}).length,1);
+});
 const source = { source_id:'test', publisher_id:'test', name:'Test', url:'https://example.org/', feed_url:'https://example.org/rss', source_type:'official_rss', primary_source:true, enabled:true, access:{status:'public', article:'bounded_public_text', cost_usd:0} };
 const item = (fields={}) => ({ source_id:'test', publisher_id:'test', url:'https://example.org/item', published_at:'2026-09-09T14:30:00Z', first_seen_at:'2026-09-09T12:00:00Z', primary_source:true, title:'Generaldebatte im Bundestag', summary:'Der Kanzler diskutiert Haushaltsprioritäten mit der Opposition.', ...fields });
 const story = sources => ({story_id:'wt-test',title:sources[0].title,sources});
@@ -222,6 +239,16 @@ test('audit CLI core is read-only; missing current input remains absent, not inv
   const data={date:'2026-09-09',now,newsroom:{source_items:{one:item()},decisions:[]},stories:[],report:{completed_at:now},registry:{sources:[source]}};
   const before=structuredClone(data);const audit=auditDay(data);
   assert.equal(audit.model_calls,0);assert.equal(audit.top_events.length,1);assert.match(auditMarkdown(audit),/Generaldebatte/);assert.deepEqual(data,before);
+});
+test('audit includes reviewed publications after the last automatic report, but never future publications',()=>{
+  const report={completed_at:'2026-09-09T14:35:00Z'};
+  const published={...story([item()]),published:true,published_at:'2026-09-09T14:45:00Z',last_updated:'2026-09-09T14:45:00Z',analysis:{}};
+  const data={date:'2026-09-09',now,newsroom:{source_items:{one:item()},decisions:[]},stories:[published],report,registry:{sources:[source]}};
+  const audit=auditDay(data);
+  assert.equal(audit.snapshot_at,now);
+  assert.equal(audit.pipeline_latest.completed_at,report.completed_at);
+  assert.equal(audit.counts.published,1);
+  assert.equal(auditDay({...data,stories:[{...published,published_at:'2026-09-09T15:30:00Z'}]}).counts.published,0);
 });
 test('the real runner excludes disabled raw sources from rechecks and performs zero paid calls for duplicate input',async()=>{
   const rss=`<rss><channel><item><title>${item().title}</title><link>${item().url}</link><description>${item().summary}</description><pubDate>Wed, 09 Sep 2026 14:30:00 GMT</pubDate></item></channel></rss>`;

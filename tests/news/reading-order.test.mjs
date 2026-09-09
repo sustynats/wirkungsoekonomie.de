@@ -39,7 +39,10 @@ test("technical evidence codes are translated on every public detail surface", (
   story.analysis.evidence_level = "attributed_single_source";
   const html = storyPage(story);
   assert.doesNotMatch(html, /attributed_single_source|single_source/);
-  assert.equal((html.match(/Einer Quelle zugeschrieben; keine unabhängige Bestätigung/g) || []).length, 2);
+  // Some articles also repeat the evidence boundary in their synthesis. Check
+  // the two required surfaces, not a count dependent on the newest story copy.
+  assert.match(html.match(/<article\b[^>]*id="faktencheck"[\s\S]*?<\/article>/)?.[0] || '', /Einer Quelle zugeschrieben; keine unabhängige Bestätigung/);
+  assert.match(html, /Evidenzgrad<\/strong><span>Einer Quelle zugeschrieben; keine unabhängige Bestätigung<\/span>/);
   assert.equal(evidenceLevelLabel("single_source_primary_statement"), "Primärquelle / Selbstauskunft; keine unabhängige Bestätigung");
   assert.equal(evidenceLevelLabel("single_source_claim mit bezifferten Angaben"), "einer Quelle zugeschrieben mit bezifferten Angaben");
   assert.equal(evidenceLevelLabel("attributed_single_source: mehrere Berichte"), "zugeschriebene Quellenlage: mehrere Berichte");

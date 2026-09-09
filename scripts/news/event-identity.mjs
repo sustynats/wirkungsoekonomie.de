@@ -1,5 +1,13 @@
 // A specific proceeding + institution + event day, never a broad theme/person.
 // Other topics continue through the existing conservative case identity rules.
+export function explicitEventPlaces(item = {}) {
+  const normalize = text => String(text || '').normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase();
+  const extract = value => [...new Set([...String(value || '').matchAll(/\b(?:[Ii]n|[Bb]ei|nahe)\s+([A-ZÄÖÜ][\p{L}-]+(?:\s+(?:am|an der|im)\s+[A-ZÄÖÜ][\p{L}-]+)?)/gu)]
+    .map(match => normalize(match[1])))];
+  const title = extract(item.title);
+  return title.length ? title : extract(String(item.summary || '').slice(0,650));
+}
+
 export function structuredEventIdentity(item = {}) {
   const normalize = text => String(text || '').normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase();
   const title = normalize(item.title);
@@ -13,10 +21,7 @@ export function structuredEventIdentity(item = {}) {
   const activeIncident = /\b(?:gesperrt|sperrung|polizeieinsatz|festgenommen)\b/.test(text);
   const retrospectiveOrRepeated = /\b(?:ruckblick|jahrestag|prozess|urteil|vorjahr|damals)\b|\b(?:weiterer|zweiter|erneuter|neuer)\s+(?:vorfall|verdachtsfall|einsatz|sprengstofffund)\b/.test(text);
   if (publicationDay && crossing && explosiveVehicle && activeIncident && !retrospectiveOrRepeated) {
-    const extractPlaces = value => [...new Set([...String(value || '').matchAll(/\b(?:[Ii]n|[Bb]ei|nahe)\s+([A-ZÄÖÜ][\p{L}-]+(?:\s+(?:am|an der|im)\s+[A-ZÄÖÜ][\p{L}-]+)?)/gu)]
-      .map(match => normalize(match[1])))];
-    const titlePlaces = extractPlaces(item.title);
-    const places = titlePlaces.length ? titlePlaces : extractPlaces(String(item.summary || '').slice(0,650));
+    const places = explicitEventPlaces(item);
     if (places.length === 1) {
       const roads = [...new Set([...text.matchAll(/\b(?:a\s*|autobahn\s+)(\d{1,3})\b/g)].map(match => match[1]))];
       if (roads.length > 1) return null;

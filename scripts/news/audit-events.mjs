@@ -18,7 +18,9 @@ const cell = value => String(value ?? '–').replace(/\|/g, '\\|').replace(/[\r\
 export function auditDay({ date, now, newsroom, stories, report, registry }) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !validTime(date) || new Date(date).toISOString().slice(0,10) !== date) throw new Error('AUDIT_DATE_INVALID');
   const allowed = new Set(registry.sources.filter(source => source.enabled && sourceAccess(source).allowed).map(source => source.source_id));
-  const snapshotTime = validTime(report?.completed_at) && report.completed_at < now ? report.completed_at : now;
+  // The canonical store may include reviewed publications/recoveries after the
+  // last automatic run. Its report is pipeline context, not an audit cutoff.
+  const snapshotTime = now;
   const items = Object.values(newsroom.source_items || {}).filter(item => allowed.has(item.source_id) && validTime(item.published_at) && berlinDay(item.published_at) === date);
   const recordedDecisions = (newsroom.decisions || []).filter(item => validTime(item.at) && Date.parse(item.at)<=Date.parse(snapshotTime));
   const decisions = recordedDecisions.filter(item => berlinDay(item.at) === date);
