@@ -40,6 +40,24 @@ test('empty-path normalization never deletes incomplete evidence, content, extra
   delete a.direction_assessment_version;a.human.tendency='risiko';assert.deepEqual(normalizeEmptyDirectionPaths(a),[], 'no historical migration');
 });
 
+test('an explicitly absent path permits empty enum templates, but no substantive or uncertain judgment is erased',()=>{
+  const template=()=>({mechanism:'',source_ids:[],effect_type:'procedural_possibility',reference:'assessment_baseline'});
+  for(const mechanism of ['', 'null']) {
+    const a=fixture();Object.assign(a.planet,{tendency:'offen',direction_basis:'no_path',positive_path:{...template(),mechanism},negative_path:null});
+    assert.deepEqual(normalizeEmptyDirectionPaths(a),['planet.positive_path']);
+    assert.deepEqual(directionAssessmentErrors(a,sources,{requireCurrent:true}),[]);
+  }
+  for(const changed of [{mechanism:'Ein begründeter Wirkpfad ist nicht leer.'},{source_ids:['source-999']},{extra:'content'},{effect_type:'unknown'},{reference:'anderer politischer Vergleich'}]) {
+    const a=fixture();Object.assign(a.planet,{tendency:'offen',direction_basis:'no_path',positive_path:{...template(),...changed},negative_path:null});
+    const before=JSON.stringify(a);assert.deepEqual(normalizeEmptyDirectionPaths(a),[]);assert.equal(JSON.stringify(a),before);
+  }
+  for(const basis of ['assessed','unclear']) {
+    const a=fixture();a.human.positive_path=template();a.human.direction_basis=basis;
+    if(basis==='unclear')a.human.tendency='offen';
+    assert.deepEqual(normalizeEmptyDirectionPaths(a),[]);
+  }
+});
+
 const referenceStory=()=>({sources:[{source_id:'source-999',url:'https://example.org/one',title:'Die Beratung soll zusätzliche Öffnungszeiten erhalten.',summary:'Der Bericht beschreibt weitere geplante Veränderungen.'},{source_id:'source-other',url:'https://example.org/two',title:'Die Förderung einer anderen Beratungsstelle soll entfallen.'}]});
 
 test('path evidence aliases resolve only through the actual supplied story catalog',()=>{

@@ -24,7 +24,8 @@ const substantive = value => typeof value === 'string' && value.trim().length >=
 const valueShape = value => value === undefined ? 'missing' : value === null ? 'null' : Array.isArray(value) ? 'array' : typeof value;
 // Some providers fill the object template with empty fields instead of null.
 // Only this exact empty representation of a non-required path is equivalent.
-// Never discard a mechanism, a reference, extra data, or a required mixed path.
+// Never discard substantive content or a required mixed path. A current,
+// explicitly no_path verdict may contain an empty object with enum defaults.
 export function normalizeEmptyDirectionPaths(analysis) {
   const normalized = [];
   if (!supportedVersions.has(analysis?.direction_assessment_version)) return normalized;
@@ -33,6 +34,17 @@ export function normalizeEmptyDirectionPaths(analysis) {
     if (!['chance', 'risiko', 'offen'].includes(item?.tendency)) continue;
     for (const key of ['positive_path', 'negative_path']) {
       const path = item[key];
+      if (analysis.direction_assessment_version === DIRECTION_ASSESSMENT_VERSION
+        && item.tendency === 'offen' && item.direction_basis === 'no_path'
+        && path && typeof path === 'object' && !Array.isArray(path)
+        && Object.keys(path).length === 4 && typeof path.mechanism === 'string'
+        && ['', 'null'].includes(path.mechanism.trim().toLowerCase())
+        && Array.isArray(path.source_ids) && path.source_ids.length === 0
+        && effectTypes.includes(path.effect_type) && references.includes(path.reference)) {
+        item[key]=null;
+        normalized.push(`${dimension}.${key}`);
+        continue;
+      }
       if (!path || typeof path !== 'object' || Array.isArray(path)
         || !(Object.keys(path).length === 2 || (Object.keys(path).length === 4 && path.effect_type === '' && path.reference === '')) || typeof path.mechanism !== 'string'
         || path.mechanism.trim() || !Array.isArray(path.source_ids) || path.source_ids.length) continue;
@@ -51,6 +63,7 @@ export function directionInputDiagnostics(analysis, sources = []) {
     literal_null: typeof path === 'string' && path.trim().toLowerCase() === 'null',
     mechanism_shape: valueShape(path?.mechanism),
     mechanism_chars: typeof path?.mechanism === 'string' ? path.mechanism.trim().length : null,
+    mechanism_literal_null: typeof path?.mechanism === 'string' && path.mechanism.trim().toLowerCase() === 'null',
     source_ids_shape: valueShape(path?.source_ids),
     source_ids_count: Array.isArray(path?.source_ids) ? path.source_ids.length : null,
     known_source_ids_count: Array.isArray(path?.source_ids) ? path.source_ids.filter(id => sourceIds.has(id)).length : null,
