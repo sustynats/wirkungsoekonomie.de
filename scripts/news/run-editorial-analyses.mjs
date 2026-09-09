@@ -1,5 +1,5 @@
 import fs from "node:fs";
-import { backgroundBatchEligibility, batchWorkPriority, createNewsBatchClient, BATCH_RESERVATION_USD } from './batch.mjs';
+import { backgroundBatchEligibility, batchStoryFingerprint, batchWorkPriority, createNewsBatchClient, BATCH_RESERVATION_USD } from './batch.mjs';
 import { editorialContentSnapshot } from "./editorial-judgment.mjs";
 import { commissionedReviewState, isCommissionedAnalysis } from "./systemic-analysis.mjs";
 import { applyEditorialRepair, buildEditorialRepairPrompt, editorialQualityExhausted, editorialResearchFingerprint, isEditorialQualityFailure, EDITORIAL_ECONOMY_VERSION } from './editorial-economy.mjs';
@@ -246,7 +246,7 @@ export async function runEditorialAnalyses({
     selected: 0, editorial_research_started: 0, editorial_analyses_published: 0, editorial_analyses_updated: 0,
     research_calls: 0, research_tokens: 0, analysis_tokens: 0, estimated_cost_usd: 0, quality_retries: 0,
     economy_version: EDITORIAL_ECONOMY_VERSION, background_only: backgroundOnly,
-    full_generations: 0, targeted_repairs: 0, background_waiting: 0,
+    full_generations: 0, targeted_repairs: 0, batch_results_reviewed: 0, background_waiting: 0,
     quality_held: candidateRows.filter(row => row.status === 'quality_hold').length,
     unchanged_research_skipped: assessed.filter(({ story, assessment }) => isCurrent(existingForStory(store, story.story_id), assessment)).length,
     requested: [],
@@ -289,10 +289,13 @@ export async function runEditorialAnalyses({
   const scheduling = story => {
     const eligibility = backgroundBatchEligibility(story, { kind: 'editorial_background', now, state });
     if (backgroundOnly && (eligibility.reason === 'news_update_pending' || story.pending_update)) return 'waiting';
-    const paidJob = batchClient && batchWorkPriority(state, story, 'editorial_background') <= 1;
+    const paidJob = batchClient && Object.values(state.batch_jobs || {}).some(job => job.story_id === story.story_id
+      && job.kind === 'editorial_background' && !job.applied_at && !['failed', 'not_submitted'].includes(job.status)
+      && job.fingerprint === batchStoryFingerprint(story, 'editorial_background', EDITORIAL_ANALYSIS_VERSION));
     // Never duplicate a paid background job just because its owner now asks
     // about it. Paid retrieval comes first; current news has its own worker.
     if (batchClient && eligibility.eligible && (paidJob || !requests.has(story.story_id))) return 'batch';
+    if (paidJob) return 'waiting';
     const deadline = Date.parse(story.next_event_at || story.event_deadline_at || '');
     const nearDeadline = Number.isFinite(deadline) && deadline > Date.parse(now) && deadline - Date.parse(now) < 48 * 3600000;
     if (!backgroundOnly || requests.has(story.story_id) || story.urgent || story.breaking || story.editorial_priority === 'urgent' || nearDeadline) return 'sync';
@@ -333,7 +336,7 @@ export async function runEditorialAnalyses({
         });
         requestPending = false;
         report.editorial_research_started += 1;
-        report[repairPrompt ? 'targeted_repairs' : 'full_generations'] += 1;
+        report[result.batch_key ? 'batch_results_reviewed' : repairPrompt ? 'targeted_repairs' : 'full_generations'] += 1;
         report.research_calls += result.batch_key ? 0 : Number(result.request_attempts || 1);
         // Batch usage is already durably booked once under its job key.
         const callUsage = result.batch_key ? { input_tokens: 0, output_tokens: 0, estimated_cost_usd: 0 } : costFromUsage(result, estimateUsage(result.prompt_chars, result.answer_chars, result.model, modelRates(result.model)));
@@ -454,6 +457,7 @@ export async function runEditorialAnalyses({
         editorial_research_sources_discovered: report.editorial_research_sources_discovered,
         research_calls: report.research_calls, research_tokens: report.research_tokens, analysis_tokens: report.analysis_tokens,
         full_generations: report.full_generations, targeted_repairs: report.targeted_repairs,
+        batch_results_reviewed: report.batch_results_reviewed,
         background_waiting: report.background_waiting, quality_held: report.quality_held,
       },
       ai: { requests: report.research_calls, provider: "Oracle WOeK-KI API", model: resultModel(store), input_tokens: report.research_tokens, output_tokens: report.analysis_tokens, estimated_cost_usd: report.estimated_cost_usd, token_source: "provider_or_conservative_editorial_analysis" },

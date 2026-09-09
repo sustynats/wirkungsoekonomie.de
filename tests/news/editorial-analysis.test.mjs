@@ -220,8 +220,11 @@ test('Batch editorial results use the existing quality gate, publish once, and d
   // Test paid retrieval even with missing FX: this must not re-submit or deadlock.
   const stateFile = path.join(root, 'data/news/state.json'); const state = JSON.parse(fs.readFileSync(stateFile)); delete state.budget_fx; fs.writeFileSync(stateFile, JSON.stringify(state));
   ready = true;
-  const completed = await runEditorialAnalyses({ ...opts, now: '2026-09-07T12:20:00Z' });
+  const completed = await runEditorialAnalyses({ ...opts, requestedStoryIds: [stories[0].story_id], now: '2026-09-07T12:20:00Z' });
   assert.equal(completed.editorial_analyses_published, 1, JSON.stringify(completed)); assert.equal(posts, 1);
+  assert.equal(completed.full_generations, 0, 'paid retrieval is not a new generation');
+  assert.equal(completed.batch_results_reviewed, 1);
+  assert.equal(completed.requested[0].status, 'published');
   const usage = JSON.parse(fs.readFileSync(path.join(root, 'data/news/usage.json')));
   assert.equal(usage.runs.length, 1); assert.equal(usage.runs[0].ai.estimated_cost_usd, .002625);
   const repeat = await runEditorialAnalyses({ ...opts, now: '2026-09-07T12:40:00Z' });
