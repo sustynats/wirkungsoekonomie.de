@@ -84,6 +84,10 @@ test("Erklärungsebenen: eindeutige IDs, JSON-LD und erreichbare neue Lesepfade"
       assert.ok(fs.existsSync(target), target);
       if (href.includes("#")) assert.ok(read(target).includes('id="methodik"'));
     }
-    assert.ok(html.includes('aria-label="Relevanz für Mensch:'));
+    if (html.includes('data-manual-editorial="book_and_impact"')) {
+      // A signed book review is not a scored news event.
+      assert.ok(html.includes('"@type":"Book"'));
+      assert.ok(!html.includes('aria-label="Relevanz für Mensch:'));
+    } else assert.ok(html.includes('aria-label="Relevanz für Mensch:'));
   }
 });

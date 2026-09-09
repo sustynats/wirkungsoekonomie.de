@@ -1,9 +1,15 @@
 // Publication text uses the ordinary ASCII hyphen consistently.
 export function normalizePublicationTypography(text) {
+  // Signed, manually approved columns retain the author's punctuation too.
+  if (isManualEditorialHtml(text)) return String(text);
   return String(text)
     .replace(/[\u2010-\u2015\u2212\u2e3a\u2e3b\ufe58\ufe63\uff0d]/g, '-')
     .replace(/&(?:ndash|mdash|hyphen|minus);/gi, '-')
     .replace(/&#(?:x0*(?:201[0-5]|2212|2e3[ab]|fe58|fe63|ff0d)|0*(?:820[8-9]|821[0-3]|8722|1183[4-5]|65112|65123|65293));/gi, '-');
+}
+
+export function isManualEditorialHtml(text) {
+  return /<main\b[^>]*data-manual-editorial="book_and_impact"[^>]*data-manuscript-sha256="[a-f0-9]{64}"/.test(String(text));
 }
 
 export function hasNonstandardDash(text) {
@@ -24,6 +30,6 @@ export function isFrozenPublicationSource(relativePath) {
   ].includes(normalizedPath)) return true;
   // News summaries and snapshots carry editorial/content hashes. Normalize
   // their rendered pages, never the source bytes those reviews approved.
-  return ['audit-manifests/', 'content/audits/sachsen-anhalt/', 'woek-parlament-app/data/', 'data/news/']
+  return ['content/news/manual/', 'audit-manifests/', 'content/audits/sachsen-anhalt/', 'woek-parlament-app/data/', 'data/news/']
     .some(prefix => String(relativePath).replaceAll('\\', '/').startsWith(prefix));
 }

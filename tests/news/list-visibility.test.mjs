@@ -11,6 +11,7 @@ function element(dataset = {}) {
     dataset, hidden: false, value: "", textContent: "", events: new Map(),
     addEventListener(name, handler) { this.events.set(name, handler); },
     setAttribute() {}, querySelector() { return null; },
+    hasAttribute(name) { return name === "data-news-editorial-analysis" && this.dataset.newsEditorialAnalysis !== undefined; },
   };
 }
 
@@ -18,10 +19,11 @@ function list() {
   // Alternate card types throughout several pages, not just in the first ten.
   const cards = Array.from({ length: 25 }, (_, index) => element({
     newsEditorialAnalysis: index % 3 === 0 ? "" : undefined,
+    newsFormat: index === 0 ? "book_and_impact" : index % 3 === 0 ? "analysis" : undefined,
     topic: index % 2 === 0 ? "energie" : "bildung",
     newsSearch: index % 3 === 0 ? "Speicher Analyse" : "Schule Nachricht",
   }));
-  const controls = ["all", "energie", "bildung"].map(newsFilter => element({ newsFilter }));
+  const controls = ["all", "energie", "bildung", "analysis", "book_and_impact"].map(newsFilter => element({ newsFilter }));
   const search = element(), more = element(), moreWrap = element(), empty = element();
   const location = new URL("https://wirkungsoekonomie.de/wirkungsticker/");
   const singles = {
@@ -90,6 +92,17 @@ test("topic changes reset pagination and hide mismatched news and analyses alike
   assert.deepEqual(h.visible(), energy.slice(0, 10));
   h.next();
   assert.deepEqual(h.visible(), energy);
+  h.filter("all");
+  assert.deepEqual(h.visible(), h.cards.slice(0, 10));
+});
+
+test("book reviews have their own filter and remain separate from automated analyses", () => {
+  const h = list();
+  h.filter("book_and_impact");
+  assert.deepEqual(h.visible(), [h.cards[0]]);
+  h.filter("analysis");
+  assert.equal(h.visible().length, 8);
+  assert.ok(h.visible().every(card => card.dataset.newsFormat === "analysis"));
   h.filter("all");
   assert.deepEqual(h.visible(), h.cards.slice(0, 10));
 });
