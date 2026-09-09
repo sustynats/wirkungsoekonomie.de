@@ -2,32 +2,70 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T05:24:14.955Z",
-  "scanned_stories": 181,
-  "scanned_subjects": 159,
-  "editorial_candidates": 31,
+  "started_at": "2026-09-09T05:57:09.684Z",
+  "scanned_stories": 187,
+  "scanned_subjects": 165,
+  "editorial_candidates": 32,
   "ready_for_research": 9,
-  "research_pending": 10,
-  "retry_deferred": 2,
-  "editorial_research_sources_discovered": 47,
-  "selected": 6,
+  "research_pending": 11,
+  "retry_deferred": 8,
+  "editorial_research_sources_discovered": 49,
+  "selected": 1,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 1,
+  "research_calls": 0,
   "research_tokens": 0,
   "analysis_tokens": 0,
   "estimated_cost_usd": 0,
   "quality_retries": 0,
   "publication_deferred": true,
-  "failed": [
-    {
-      "story_id": "wt-366b1fbfa120e44f",
-      "reason": "AI_BUDGET_EXHAUSTED",
-      "next_attempt_at": "2026-09-09T05:39:14.955Z"
-    }
-  ],
+  "failed": [],
   "candidates": [
+    {
+      "story_id": "wt-5a2fe52ebad137c3",
+      "story_slug": "us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-d137c3",
+      "story_title": "US-Gericht stoppt Weitergabe von Migranten-Steuerdaten an ICE",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 59,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 4,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "a72c354fddf71dbc0ecc0c180f5c67a4809a3417ac92d123e2375e790ad88047",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-e01e1e77e702edc3",
       "story_slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
@@ -1358,7 +1396,7 @@
     }
   ],
   "batch": {
-    "submitted": 0,
+    "submitted": 1,
     "pending": 0,
     "completed": 0,
     "failed": 0,
@@ -1367,8 +1405,6 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "batch_deferred": 2,
-  "budget_blocked": true,
-  "budget_block_scope": "shared",
-  "completed_at": "2026-09-09T05:24:44.703Z"
+  "batch_deferred": 1,
+  "completed_at": "2026-09-09T05:57:42.606Z"
 }
