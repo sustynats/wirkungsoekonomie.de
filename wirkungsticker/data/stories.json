@@ -1,7 +1,567 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T13:52:25.740Z",
+  "updated_at": "2026-09-09T13:58:27.053Z",
   "stories": [
+    {
+      "story_id": "wt-688b36d040bfbf87",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "afd-wahler-in-sachsen-anhalt-wer-die-partei-gewahlt-hat-bfbf87",
+      "title": "AfD-Wähler in Sachsen-Anhalt: Wer die Partei gewählt hat",
+      "source_summary": "Die MDR-Datenanalyse zur Landtagswahl in Sachsen-Anhalt beschreibt ein klares Stadt-Land- und Altersmuster bei der AfD-Wahl. Nach dem Text läge die AfD in ländlichen Regionen bei 50,4 Prozent und bei Männern bei 50 Prozent. In Städten, vor allem in Magdeburg und Halle, werden die Grünen mit 18,4 Prozent als zweitstärkste Kraft genannt.\n\nDer Ausschnitt nennt außerdem, dass Seniorinnen und Senioren die AfD bremsen und autoritäre politische Einstellungen die Wahl beeinflussten. Im gelieferten Material bleibt offen, welche Methodik genau verwendet wurde und wie belastbar die landesweite Übertragung ist.",
+      "summary": "Die MDR-Analyse zeigt starke Unterschiede zwischen Stadt und Land bei der AfD-Wahl in Sachsen-Anhalt. Die Aussage ist relevant für die Einordnung von Wählergruppen, ersetzt aber noch keinen eigenen Kausalbeleg.",
+      "detail_summary": "Der gelieferte MDR-Ausschnitt rekonstruiert ein Wählerprofil zur Landtagswahl in Sachsen-Anhalt. Genannt werden 50,4 Prozent für die AfD in ländlichen Regionen, 50 Prozent bei Männern und 18,4 Prozent für die Grünen in Magdeburg und Halle. Die Einordnung kann für Parteistrategien, die Ansprache von Zielgruppen und die demokratische Selbstbeobachtung wichtig sein. Ein direkter Wirkpfad wäre: Daten über Wählergruppen verändern die Informationsgrundlage für Kampagnen und Nachfragen in der politischen Kommunikation. Als Wirkung ist das noch nicht belegt; sichtbar ist zunächst nur die Beschreibung von Mustern. Die Evidenz bleibt begrenzt, weil im gelieferten Material nur ein journalistischer Datenausschnitt vorliegt und die Methodik nicht vollständig offengelegt ist.",
+      "why_relevant": "Die Analyse liefert neue Zustandsinformation zum Wahlverhalten nach Wohnort, Geschlecht und Alter. Das ist für Parteien, Medien und die demokratische Einordnung des Wahlergebnisses materiell relevant.",
+      "topic": [
+        "Digitalisierung",
+        "Demokratie"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "monitoring",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Meldung beschreibt Wahlmuster und kann die politische Ansprache verändern. Ein belastbarer Pfad zu konkreten sozialen Folgen ist im Ausschnitt aber nicht belegt.",
+          "positive_path": {
+            "mechanism": "Bessere Kenntnis von Wählergruppen kann Kampagnen, Ansprache und strategische Korrekturen in Parteien und Öffentlichkeit verändern.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Die zugespitzte Darstellung einzelner Gruppen kann stereotype Deutungen und Polarisierung im Wahlgespräch verstärken.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Im gelieferten Material gibt es keinen belastbaren Bezug zu Umwelt-, Klima- oder Ressourcenzuständen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Daten können die demokratische Selbstbeobachtung verbessern, weil sie Unterschiede nach Alter, Geschlecht und Wohnort sichtbar machen. Das stärkt zunächst die Informationsgrundlage, nicht schon das Ergebnis selbst.",
+          "positive_path": {
+            "mechanism": "Transparente Wahlmuster können öffentliche Debatten, Parteiarbeit und Korrekturen an Ansprache oder Repräsentation anstoßen.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn die Muster nur zugespitzt auf Gruppen reduziert werden, kann das die Polarisierung und pauschale Zuschreibungen im Diskurs fördern.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T08:06:50.537Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T11:57:24.000Z",
+      "last_updated": "2026-09-09T13:58:27.053Z",
+      "version": 3,
+      "news_status": "preliminary",
+      "event_id": "event-c1db53eddd471e49ec6b",
+      "case_file": null,
+      "source_published_at": "2026-09-08T11:57:24.000Z",
+      "published_at": "2026-09-08T12:38:27.704Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob die MDR-Analyse eine Methodik, Vergleichswerte oder regionale Detailzahlen nachreicht.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "veröffentlichte Methodik oder zusätzliche Detailzahlen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a75aa5f0eaa9c1d4",
+          "announced_at": "2026-09-08T11:57:24.000Z",
+          "follow_up_date": "2026-09-16T08:08:08.422Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:57:24.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-33931768eeae3386",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "eug-bestatigt-ubernahmeverbot-booking-com-darf-sich-fluge-plattform-etraveli-nicht-einve-ae3386",
+      "title": "EuG bestätigt Übernahmeverbot: Booking.com darf sich Flüge-Plattform eTraveli nicht einverleiben",
+      "source_summary": "Das EU-Gericht hat laut Bericht die Entscheidung der EU-Kommission weitgehend bestätigt und das Verbot der Übernahme von eTraveli durch Booking.com aufrechterhalten. Hintergrund ist die bereits unstreitige marktbeherrschende Stellung von Booking bei Online-Hotelbuchungen.\n\nDie Kommission hatte den Zusammenschluss 2023 untersagt, weil Booking durch eTraveli im Fluggeschäft stärker werden und damit seine Stellung im Hotelmarkt weiter festigen könnte. Das Gericht hielt diese Begründung im Kern für tragfähig, trotz einzelner Berechnungsfehler der Kommission.",
+      "summary": "Das EU-Gericht hat das Übernahmeverbot für Booking.com und eTraveli bestätigt. Damit bleibt der Zusammenschluss vorerst gesperrt.",
+      "detail_summary": "Der Bericht beschreibt eine bestätigte Wettbewerbsentscheidung der EU-Gerichte: Booking.com darf eTraveli vorerst nicht übernehmen. Materiell relevant ist das, weil damit ein geplanter Zusammenschluss im digitalen Reisegeschäft gestoppt bleibt und Marktstruktur, Angebotsbündelung und mögliche Cross-Selling-Effekte unverändert bleiben. Der mögliche Wirkpfad läuft über mehr Marktmacht im Fluggeschäft und eine weitere Festigung der Stellung bei Online-Hotelbuchungen. Für Verbraucherinnen und Wettbewerber kann das die Marktöffnung stützen, zugleich bleiben die konkreten Marktfolgen im Detail offen. Belegt ist hier vor allem der Rechts- und Wettbewerbsbefund; über die tatsächlichen ökonomischen Folgen der Sperre sagt der Bericht noch nichts Messbares.",
+      "why_relevant": "Das Urteil hält eine marktprägende Übernahme im digitalen Reiseverkehr an und kann damit Wettbewerb, Bündelangebote und Marktzugang beeinflussen.",
+      "topic": [
+        "Digitalisierung",
+        "Europa"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Stopp kann Wettbewerb und Auswahl im Online-Reisemarkt schützen. Zugleich bleibt offen, wie stark Preise, Angebote und Marktanteile dadurch tatsächlich verändert werden.",
+          "positive_path": {
+            "mechanism": "Mehr Wettbewerb bleibt erhalten, weil der Zusammenschluss und damit ein möglicher Ausbau von Cross-Selling- und Bündelvorteilen vorerst ausbleiben.",
+            "source_ids": [
+              "lto-news"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Bleibt Booking trotz Verbots marktstark, können Dominanz und Zugangshürden im Hotelmarkt weiter bestehen; die Entscheidung ändert daran allein noch nichts.",
+            "source_ids": [
+              "lto-news"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus dem Bericht ergibt sich kein belastbarer Pfad zu Umwelt- oder Klimawirkungen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die bestätigte Kontrolle einer großen Unternehmensübernahme zeigt wirksame Aufsicht durch EU-Institutionen. Das kann die demokratische Korrekturfähigkeit im Marktregime stärken, ohne die Entscheidung selbst zu überhöhen.",
+          "positive_path": {
+            "mechanism": "Gerichtliche Kontrolle stärkt die Durchsetzung von Wettbewerbsrecht und damit die institutionelle Begrenzung von Marktmacht.",
+            "source_ids": [
+              "lto-news"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn Markt- und Prozessmacht großer Plattformen weiter hoch bleiben, bleibt die praktische Korrekturfähigkeit trotz Urteil begrenzt.",
+            "source_ids": [
+              "lto-news"
+            ]
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "verbraucherinnen",
+          "unternehmen",
+          "investoren",
+          "europa"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T11:12:49.530Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T10:37:00.000Z",
+      "last_updated": "2026-09-09T13:58:26.834Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-2dc032834b8f2b97351a",
+      "case_file": null,
+      "source_published_at": "2026-09-09T10:37:00.000Z",
+      "published_at": "2026-09-09T11:14:59.078Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "lto-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Legal Tribune Online",
+          "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T10:37:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-ed407d0353f699da",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ed407d0353f699da-c73b3fd2f0455c51-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ed407d0353f699da-f38bb05be6bb3807-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ed407d0353f699da-02d3170287ac0687-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "schwiegermutter-mit-wagenheberstange-erschlagen-lebenslange-haft-in-heilbronn-f699da",
+      "title": "Schwiegermutter mit Wagenheberstange erschlagen: Lebenslange Haft in Heilbronn",
+      "source_summary": "Wegen der Tötung seiner Schwiegermutter ist ein Mann in Baden-Württemberg zu einer lebenslangen Freiheitsstrafe verurteilt worden. Nach Angaben einer Gerichtssprecherin sprach das Landgericht Heilbronn den 47-Jährigen am Mittwoch des Mordes schuldig. Die Kammer folgte damit den Anträgen von Staatsanwaltschaft und Nebenklage.\n\nDie Verteidigung hatte auf Totschlag plädiert und zwölf Jahre Haft gefordert. Offen bleibt in dieser Meldung der vollständige Tathergang; belastbar belegt ist vor allem das Urteil und die abweichende Strafanträge der Verteidigung.",
+      "summary": "Das Landgericht Heilbronn hat einen 47-Jährigen wegen Mordes zu lebenslanger Haft verurteilt. Laut Meldung ging es um die Tötung seiner Schwiegermutter; die Verteidigung wollte Totschlag und zwölf Jahre Haft.",
+      "detail_summary": "Die Meldung beschreibt ein abgeschlossenes Strafurteil in Heilbronn: Ein 47-Jähriger wurde wegen Mordes zu lebenslanger Freiheitsstrafe verurteilt. Für die Einordnung ist vor allem der rechtsstaatliche Entscheidungsakt relevant, nicht die Reichweite der Meldung. Materiell wirkt das Urteil auf den Status des Verfahrens und auf die rechtliche Verantwortungszuweisung; ein direkter gesellschaftlicher Effekt bleibt zunächst begrenzt. Mögliche Folge ist, dass das Verfahren nun in die Phase möglicher Rechtsmittel oder schriftlicher Urteilsgründe übergeht. Die Quelle ist eine journalistische Sekundärmeldung; Details zum Tathergang, zur Beweiswürdigung und zu weiteren Verfahrensschritten bleiben offen.",
+      "why_relevant": "Ein abgeschlossenes Mordurteil verändert den Verfahrensstand und betrifft Strafrecht, Rechtsdurchsetzung und öffentliche Wahrnehmung gerichtlicher Verantwortung.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "monitoring",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Das Urteil setzt staatliche Sanktion durch und kann Schutzinteressen von Betroffenen und Öffentlichkeit stärken. Es bleibt zugleich nur ein Einzelfall ohne belegte Breitenwirkung.",
+          "positive_path": {
+            "mechanism": "Die Verurteilung kann Rechtsdurchsetzung sichtbar machen und künftige Abschreckung im Einzelfall stützen.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Die Tat selbst steht für schweren Verlust an Leben und Schutz, was bereits eingetretenen Schaden markiert.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung ist kein belastbarer Pfad zu Umwelt-, Klima- oder Ressourcenzuständen erkennbar.",
+          "positive_path": {
+            "mechanism": "Kein aus der Quelle ableitbarer Umweltpfad.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kein aus der Quelle ableitbarer Umweltpfad.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Das Urteil zeigt gerichtliche Zuständigkeit und kann Vertrauen in formale Rechtsdurchsetzung stützen. Ein demokratischer Effekt bleibt aber indirekt und nicht gemessen.",
+          "positive_path": {
+            "mechanism": "Ein öffentlich begründetes Strafurteil kann die Korrekturfähigkeit und Sichtbarkeit rechtsstaatlicher Verfahren stärken.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ohne weitere Verfahrensdaten bleibt offen, ob und wie stark Kritik an Beweisführung oder Strafmaß den Diskurs belastet.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T13:22:48.629Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T13:06:35.000Z",
+      "last_updated": "2026-09-09T13:58:26.621Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-8fd1c81cb3c580886ee4",
+      "case_file": null,
+      "source_published_at": "2026-09-09T13:06:35.000Z",
+      "published_at": "2026-09-09T13:26:37.853Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die schriftlichen Urteilsgründe und mögliche Rechtsmittel bekannt werden",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Mitteilung zu Urteilsgründen oder Rechtsmittel",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b653aad311fc7e15",
+          "announced_at": "2026-09-09T13:06:35.000Z",
+          "follow_up_date": "2026-09-16T13:26:37.853Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/schwiegermutter-mit-wagenheberstange-erschlagen--lebenslange-haft-in-heilbronn-38228188.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:06:35.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-127329d8756c5ba5",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "die-wirtschaftsministerin-stosst-die-erneuerbaren-uber-die-klippe-6c5ba5",
+      "title": "EEG-Reform und Netzpaket: Goldschmidt warnt trotz Nachbesserungen vor Ausbauhemmnissen",
+      "source_summary": "Tobias Goldschmidt warnt im Klimareporter-Interview weiter vor Hemmnissen für den Erneuerbaren-Ausbau. Auch nach der entschärften Regelung zum Redispatch-Vorbehalt hält der schleswig-holsteinische Minister weitere Änderungen für nötig. Die diskutierte Prozentgrenze betrifft Abregelungen im Netzgebiet, nicht pauschal einen entschädigungslosen Anteil jeder Anlage.\n\nDie Bundesregierung will mit dem Netzpaket neue Erzeugung stärker an der Netzkapazität ausrichten; dafür sollen an betroffenen Standorten Entschädigungen für neue Anlagen teilweise entfallen. Daneben nennt sie zusätzliche Windkraftausschreibungen. Ob diese mehr Ausbau ermöglichen und die Risiken anderer Eingriffe auffangen, steht damit noch nicht fest.",
+      "summary": "Goldschmidt warnt trotz Nachbesserungen vor Ausbauhemmnissen. Werden Erneuerbaren-Projekte unwirtschaftlich, bleibt ein negatives Klimarisiko, das zusätzliche Ausschreibungen nicht nachweislich ausgleichen.",
+      "detail_summary": "Wenn ein Windprojekt durch neue Regeln weniger verlässlich mit Einnahmen rechnen kann, wird seine Finanzierung schwieriger. Scheitern oder verzögern sich dadurch Projekte, fehlt erneuerbarer Strom, der fossile Erzeugung ersetzen könnte. Darauf bezieht sich die negative Planet-Richtung: auf ein begründetes Risiko der Investitionshemmnisse, nicht auf bereits gemessene zusätzliche Emissionen. Die Erleichterung gegenüber einem schlechteren Entwurf beseitigt dieses Risiko nicht zwangsläufig. Zusätzliche Windkraftausschreibungen eröffnen einen eigenen positiven Ausbaupfad; ob sie die Belastungen anderer Instrumente auffangen, ist nicht belegt. Die Bundesregierung führt bessere Netznutzung und Kostensenkung als Ziele an. Ob diese Vorteile eintreten und wie sie sich zum Ausbaurisiko verhalten, braucht einen Vergleich der konkreten Regeln und später der Ergebnisse.",
+      "why_relevant": "Neue Investitionshemmnisse können den Ausbau sauberer Stromerzeugung verzögern. Das verbindet Finanzierung und regionale Wertschöpfung mit Klimaschutz und dem Vertrauen in verlässliche Planung.",
+      "topic": [
+        "Klima",
+        "Energie",
+        "Wirtschaft"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Werden Projekte unwirtschaftlich, geraten Investitionen und regionale Aufträge unter Druck. Haushalte profitieren dann auch nicht von deren zusätzlichem Stromangebot. Konkrete Preis- und Beschäftigungseffekte sind noch nicht nachgewiesen.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Geringer planbare Projekterlöse können Finanzierungen erschweren und Aufträge für regionale Unternehmen verhindern.",
+            "source_ids": [
+              "klimareporter-news",
+              "bundesregierung-kompakt"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Bremsen die neuen Hemmnisse zusätzliche Wind- und Solarprojekte, wird fossile Stromerzeugung langsamer ersetzt. Das ist ein negativer Klimapfad. Eine Entschärfung gegenüber einem früheren Entwurf ist noch keine Verbesserung gegenüber Projektbedingungen ohne diese Hemmnisse.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Erschwerte Finanzierung kann neue Erneuerbaren-Projekte verzögern; dadurch entfällt mögliche fossile Stromverdrängung gegenüber einem Ausbau ohne diese Hürden.",
+            "source_ids": [
+              "klimareporter-news",
+              "bundesregierung-kompakt"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Werden nach aufwendiger Flächenplanung Projekte durch neue wirtschaftliche Hürden verhindert, droht Vertrauensverlust in verlässliche staatliche Planung. Dieser bedingte Pfad ist keine bereits gemessene Demokratiebeschädigung. Verhandlungen allein belegen keinen ausgleichenden Demokratiegewinn.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Widersprüchliche Planungs- und Investitionssignale können das Vertrauen von Kommunen und Betroffenen in die Verlässlichkeit politischer Entscheidungen schwächen.",
+            "source_ids": [
+              "klimareporter-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "first_order",
+            "path": "Neue Erlösrisiken können die Finanzierung von Erneuerbaren-Projekten verschlechtern.",
+            "direction": "negative",
+            "condition": "Wenn neue Entschädigungsregeln die Erlöse betroffener Projekte weniger verlässlich machen.",
+            "evidence": "plausible_path",
+            "claim_ids": [
+              "wt-127329d8756c5ba5-v2-claim-2"
+            ],
+            "dimensions": [
+              "human",
+              "planet"
+            ]
+          },
+          {
+            "order": "first_order",
+            "path": "Zusätzliche Windkraftausschreibungen können eigene neue Projekte ermöglichen.",
+            "direction": "positive",
+            "condition": "Eigenständiger Ausbaupfad: nur soweit Zuschläge zu zusätzlichem Betrieb führen; kein nachgewiesener Ausgleich anderer Hemmnisse.",
+            "evidence": "plausible_path",
+            "claim_ids": [
+              "wt-127329d8756c5ba5-v2-claim-3"
+            ],
+            "dimensions": [
+              "planet"
+            ]
+          },
+          {
+            "order": "second_order",
+            "path": "Scheitern Finanzierungen, bleiben Projekte und regionale Aufträge aus.",
+            "direction": "negative",
+            "condition": "Wenn Erlösrisiken nicht anderweitig aufgefangen werden und Projekte deshalb ausfallen.",
+            "evidence": "scenario",
+            "claim_ids": [
+              "wt-127329d8756c5ba5-v2-claim-2"
+            ],
+            "dimensions": [
+              "human",
+              "planet"
+            ]
+          },
+          {
+            "order": "third_order",
+            "path": "Weniger zusätzlicher erneuerbarer Strom kann die Ablösung fossiler Erzeugung verzögern.",
+            "direction": "negative",
+            "condition": "Wenn ausfallender Zubau nicht durch andere emissionsarme Erzeugung, Effizienz oder Speicher ausgeglichen wird.",
+            "evidence": "scenario",
+            "claim_ids": [
+              "wt-127329d8756c5ba5-v2-claim-2"
+            ],
+            "dimensions": [
+              "planet"
+            ]
+          }
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T13:58:26.323Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T10:32:17.000Z",
+      "last_updated": "2026-09-09T13:58:26.323Z",
+      "version": 2,
+      "news_status": "corrected",
+      "event_id": "event-2410faf299ae9f05a290",
+      "case_file": null,
+      "source_published_at": "2026-09-09T10:32:17.000Z",
+      "published_at": "2026-09-09T11:13:52.837Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "klimareporter-news"
+          ],
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und in welcher Form Bundestag oder Bundesrat die EEG-Reform und das Netzpaket noch ändern.",
+          "source_id": "klimareporter-news",
+          "expected_by": null,
+          "measurable_indicator": "Änderungsanträge, Abstimmungsergebnisse, Beschlussfassung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-39b6503ec46af84f",
+          "announced_at": "2026-09-09T10:32:17.000Z",
+          "follow_up_date": "2026-09-16T11:13:52.837Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die zusätzlichen 5.000 Megawatt tatsächlich in einem späteren Verfahren gesichert werden.",
+          "source_id": "klimareporter-news",
+          "expected_by": null,
+          "measurable_indicator": "Gesetzeswortlaut, Ausschreibungsvolumen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-52a77910125f58a0",
+          "announced_at": "2026-09-09T10:32:17.000Z",
+          "follow_up_date": "2026-09-16T11:13:52.837Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Klimareporter°",
+          "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T10:32:17.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/kabinett-eeg-novelle-netzpaket-strom-2448636",
+          "source_type": "official_rss",
+          "published_at": "2026-07-29",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-3707b0d66087698b",
       "title_image": {
@@ -858,141 +1418,6 @@
       ]
     },
     {
-      "story_id": "wt-ed407d0353f699da",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ed407d0353f699da-c73b3fd2f0455c51-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ed407d0353f699da-f38bb05be6bb3807-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ed407d0353f699da-02d3170287ac0687-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "schwiegermutter-mit-wagenheberstange-erschlagen-lebenslange-haft-in-heilbronn-f699da",
-      "title": "Schwiegermutter mit Wagenheberstange erschlagen: Lebenslange Haft in Heilbronn",
-      "source_summary": "Wegen der Tötung seiner Schwiegermutter ist ein Mann in Baden-Württemberg zu einer lebenslangen Freiheitsstrafe verurteilt worden. Nach Angaben einer Gerichtssprecherin sprach das Landgericht Heilbronn den 47-Jährigen am Mittwoch des Mordes schuldig. Die Kammer folgte damit den Anträgen von Staatsanwaltschaft und Nebenklage.\n\nDie Verteidigung hatte auf Totschlag plädiert und zwölf Jahre Haft gefordert. Offen bleibt in dieser Meldung der vollständige Tathergang; belastbar belegt ist vor allem das Urteil und die abweichende Strafanträge der Verteidigung.",
-      "summary": "Das Landgericht Heilbronn hat einen 47-Jährigen wegen Mordes zu lebenslanger Haft verurteilt. Laut Meldung ging es um die Tötung seiner Schwiegermutter; die Verteidigung wollte Totschlag und zwölf Jahre Haft.",
-      "detail_summary": "Die Meldung beschreibt ein abgeschlossenes Strafurteil in Heilbronn: Ein 47-Jähriger wurde wegen Mordes zu lebenslanger Freiheitsstrafe verurteilt. Für die Einordnung ist vor allem der rechtsstaatliche Entscheidungsakt relevant, nicht die Reichweite der Meldung. Materiell wirkt das Urteil auf den Status des Verfahrens und auf die rechtliche Verantwortungszuweisung; ein direkter gesellschaftlicher Effekt bleibt zunächst begrenzt. Mögliche Folge ist, dass das Verfahren nun in die Phase möglicher Rechtsmittel oder schriftlicher Urteilsgründe übergeht. Die Quelle ist eine journalistische Sekundärmeldung; Details zum Tathergang, zur Beweiswürdigung und zu weiteren Verfahrensschritten bleiben offen.",
-      "why_relevant": "Ein abgeschlossenes Mordurteil verändert den Verfahrensstand und betrifft Strafrecht, Rechtsdurchsetzung und öffentliche Wahrnehmung gerichtlicher Verantwortung.",
-      "topic": [
-        "Geopolitik"
-      ],
-      "status": "beschlossen",
-      "analysis_type": "ex_post",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Das Urteil setzt staatliche Sanktion durch und kann Schutzinteressen von Betroffenen und Öffentlichkeit stärken. Es bleibt zugleich nur ein Einzelfall ohne belegte Breitenwirkung.",
-          "positive_path": {
-            "mechanism": "Die Verurteilung kann Rechtsdurchsetzung sichtbar machen und künftige Abschreckung im Einzelfall stützen.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Die Tat selbst steht für schweren Verlust an Leben und Schutz, was bereits eingetretenen Schaden markiert.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "In der Meldung ist kein belastbarer Pfad zu Umwelt-, Klima- oder Ressourcenzuständen erkennbar.",
-          "positive_path": {
-            "mechanism": "Kein aus der Quelle ableitbarer Umweltpfad.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Kein aus der Quelle ableitbarer Umweltpfad.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          }
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Das Urteil zeigt gerichtliche Zuständigkeit und kann Vertrauen in formale Rechtsdurchsetzung stützen. Ein demokratischer Effekt bleibt aber indirekt und nicht gemessen.",
-          "positive_path": {
-            "mechanism": "Ein öffentlich begründetes Strafurteil kann die Korrekturfähigkeit und Sichtbarkeit rechtsstaatlicher Verfahren stärken.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Ohne weitere Verfahrensdaten bleibt offen, ob und wie stark Kritik an Beweisführung oder Strafmaß den Diskurs belastet.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          }
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T13:22:48.629Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T13:06:35.000Z",
-      "last_updated": "2026-09-09T13:26:37.853Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-8fd1c81cb3c580886ee4",
-      "case_file": null,
-      "source_published_at": "2026-09-09T13:06:35.000Z",
-      "published_at": "2026-09-09T13:26:37.853Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die schriftlichen Urteilsgründe und mögliche Rechtsmittel bekannt werden",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Mitteilung zu Urteilsgründen oder Rechtsmittel",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-b653aad311fc7e15",
-          "announced_at": "2026-09-09T13:06:35.000Z",
-          "follow_up_date": "2026-09-16T13:26:37.853Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/schwiegermutter-mit-wagenheberstange-erschlagen--lebenslange-haft-in-heilbronn-38228188.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T13:06:35.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-c57824e38b40126e",
       "title_image": {
         "mode": "impact_card",
@@ -1668,288 +2093,6 @@
           "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-09T11:35:21.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-33931768eeae3386",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "eug-bestatigt-ubernahmeverbot-booking-com-darf-sich-fluge-plattform-etraveli-nicht-einve-ae3386",
-      "title": "EuG bestätigt Übernahmeverbot: Booking.com darf sich Flüge-Plattform eTraveli nicht einverleiben",
-      "source_summary": "Das EU-Gericht hat laut Bericht die Entscheidung der EU-Kommission weitgehend bestätigt und das Verbot der Übernahme von eTraveli durch Booking.com aufrechterhalten. Hintergrund ist die bereits unstreitige marktbeherrschende Stellung von Booking bei Online-Hotelbuchungen.\n\nDie Kommission hatte den Zusammenschluss 2023 untersagt, weil Booking durch eTraveli im Fluggeschäft stärker werden und damit seine Stellung im Hotelmarkt weiter festigen könnte. Das Gericht hielt diese Begründung im Kern für tragfähig, trotz einzelner Berechnungsfehler der Kommission.",
-      "summary": "Das EU-Gericht hat das Übernahmeverbot für Booking.com und eTraveli bestätigt. Damit bleibt der Zusammenschluss vorerst gesperrt.",
-      "detail_summary": "Der Bericht beschreibt eine bestätigte Wettbewerbsentscheidung der EU-Gerichte: Booking.com darf eTraveli vorerst nicht übernehmen. Materiell relevant ist das, weil damit ein geplanter Zusammenschluss im digitalen Reisegeschäft gestoppt bleibt und Marktstruktur, Angebotsbündelung und mögliche Cross-Selling-Effekte unverändert bleiben. Der mögliche Wirkpfad läuft über mehr Marktmacht im Fluggeschäft und eine weitere Festigung der Stellung bei Online-Hotelbuchungen. Für Verbraucherinnen und Wettbewerber kann das die Marktöffnung stützen, zugleich bleiben die konkreten Marktfolgen im Detail offen. Belegt ist hier vor allem der Rechts- und Wettbewerbsbefund; über die tatsächlichen ökonomischen Folgen der Sperre sagt der Bericht noch nichts Messbares.",
-      "why_relevant": "Das Urteil hält eine marktprägende Übernahme im digitalen Reiseverkehr an und kann damit Wettbewerb, Bündelangebote und Marktzugang beeinflussen.",
-      "topic": [
-        "Digitalisierung",
-        "Europa"
-      ],
-      "status": "beschlossen",
-      "analysis_type": "ex_post",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Der Stopp kann Wettbewerb und Auswahl im Online-Reisemarkt schützen. Zugleich bleibt offen, wie stark Preise, Angebote und Marktanteile dadurch tatsächlich verändert werden.",
-          "positive_path": {
-            "mechanism": "Mehr Wettbewerb bleibt erhalten, weil der Zusammenschluss und damit ein möglicher Ausbau von Cross-Selling- und Bündelvorteilen vorerst ausbleiben.",
-            "source_ids": [
-              "lto-news"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Bleibt Booking trotz Verbots marktstark, können Dominanz und Zugangshürden im Hotelmarkt weiter bestehen; die Entscheidung ändert daran allein noch nichts.",
-            "source_ids": [
-              "lto-news"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "offen",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Aus dem Bericht ergibt sich kein belastbarer Pfad zu Umwelt- oder Klimawirkungen.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Die bestätigte Kontrolle einer großen Unternehmensübernahme zeigt wirksame Aufsicht durch EU-Institutionen. Das kann die demokratische Korrekturfähigkeit im Marktregime stärken, ohne die Entscheidung selbst zu überhöhen.",
-          "positive_path": {
-            "mechanism": "Gerichtliche Kontrolle stärkt die Durchsetzung von Wettbewerbsrecht und damit die institutionelle Begrenzung von Marktmacht.",
-            "source_ids": [
-              "lto-news"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Wenn Markt- und Prozessmacht großer Plattformen weiter hoch bleiben, bleibt die praktische Korrekturfähigkeit trotz Urteil begrenzt.",
-            "source_ids": [
-              "lto-news"
-            ]
-          }
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "verbraucherinnen",
-          "unternehmen",
-          "investoren",
-          "europa"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T11:12:49.530Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T10:37:00.000Z",
-      "last_updated": "2026-09-09T11:14:59.078Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-2dc032834b8f2b97351a",
-      "case_file": null,
-      "source_published_at": "2026-09-09T10:37:00.000Z",
-      "published_at": "2026-09-09T11:14:59.078Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "lto-news"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Legal Tribune Online",
-          "url": "https://www.lto.de/recht/nachrichten/n/eug-t113923-booking-etraveli-wettbewerb-uebernahmeverbot-bestaetigt?r=rss",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T10:37:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-127329d8756c5ba5",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "die-wirtschaftsministerin-stosst-die-erneuerbaren-uber-die-klippe-6c5ba5",
-      "title": "\"Die Wirtschaftsministerin stößt die Erneuerbaren über die Klippe\"",
-      "source_summary": "Im Interview mit Klimareporter° kritisiert Schleswig-Holsteins Energie- und Umweltminister Tobias Goldschmidt die Haltung der Bundeswirtschaftsministerin zu EEG-Reform und Netzpaket. Er sagt, die Länder könnten im Bundesrat nur über neue Allianzen etwas ausrichten. Goldschmidt verweist auf bereits erreichte Änderungen: Im Gesetzentwurf stünden nun 12.000 Megawatt für Windkraft-Sonderausschreibungen; die Länder wollten zusätzlich 5.000 Megawatt behalten.\n\nAußerdem sei der Redispatch-Vorbehalt im Kabinettsentwurf entschärft worden, die Schwelle für nicht zu entschädigenden abgeregelten Strom liege nun bei fünf statt drei Prozent. Offen bleibt, wie Bundestag und Bundesrat weiter entscheiden.",
-      "summary": "Im Kern geht es um Streit über EEG-Reform und Netzpaket. Goldschmidt beschreibt bereits sichtbare Änderungen und weitere offene Verhandlungen.",
-      "detail_summary": "Die Meldung ist ein Interview mit dem schleswig-holsteinischen Energie- und Umweltminister Tobias Goldschmidt. Er sagt, die Länder könnten bei EEG-Reform und Netzpaket nur über neue Allianzen etwas bewirken. Als sichtbaren Zwischenstand nennt er 12.000 Megawatt für Windkraft-Sonderausschreibungen im Gesetzentwurf und den weiter offenen Wunsch nach zusätzlichen 5.000 Megawatt. Außerdem beschreibt er, dass der Redispatch-Vorbehalt im vom Kabinett beschlossenen Entwurf entschärft worden sei; die Grenze für nicht entschädigten abgeregelten Strom liege nun bei fünf statt drei Prozent. Materiell relevant ist das, weil Netzregeln und Ausschreibungsvolumen Investitionen, Einspeisung und die Behandlung von Erneuerbaren unmittelbar beeinflussen können. Die Kausalität für spätere Markt- oder Klimawirkungen bleibt aber offen, weil hier nur eine politische Zwischenlage und eine journalistisch wiedergegebene Akteurssicht vorliegt.",
-      "why_relevant": "Die Meldung beschreibt eine laufende Änderung an Regeln für Erneuerbare und Netzbetrieb mit möglichem Einfluss auf Investitionen, Einspeisung und Entschädigungsregeln.",
-      "topic": [
-        "Klima",
-        "Energie",
-        "Wirtschaft",
-        "Demokratie",
-        "Politik"
-      ],
-      "status": "Entwurf",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Mehr Windkraftausschreibungen und ein niedrigeres Entschädigungsrisiko können Ausbau und Planbarkeit stützen; zugleich bleibt der Nettowirkpfad offen, weil die weitere Gesetzgebung und Umsetzung noch nicht feststehen.",
-          "positive_path": {
-            "mechanism": "Mehr Ausschreibungsvolumen und weniger harte Abregelungsregeln können Investitionen und Ausbau erneuerbarer Erzeugung erleichtern.",
-            "source_ids": [
-              "klimareporter-news"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Bleiben Konflikte, Verzögerungen oder strenge Netzregeln bestehen, kann das Erneuerbaren-Ausbau und Einspeisung weiter bremsen.",
-            "source_ids": [
-              "klimareporter-news"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Für den Klimaschutz ist mehr erneuerbarer Ausbau eher günstig, doch die tatsächliche Umweltwirkung hängt von Umsetzung, Geschwindigkeit und Netzintegration ab.",
-          "positive_path": {
-            "mechanism": "Höheres Ausschreibungsvolumen für Wind kann zusätzlichen erneuerbaren Strom ermöglichen und fossile Erzeugung verdrängen.",
-            "source_ids": [
-              "klimareporter-news"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Wenn die Änderungen im Verfahren verwässert oder verzögert werden, bleibt der zusätzliche Klimanutzen aus.",
-            "source_ids": [
-              "klimareporter-news"
-            ]
-          }
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Die Meldung zeigt Bundesrat, Kabinett und Bundestag als verhandelnde Arenen; das kann demokratische Korrekturpfade sichtbar machen, ohne den Ausgang schon zu kennen.",
-          "positive_path": {
-            "mechanism": "Länderallianzen und parlamentarische Nachsteuerung können Entscheidungen überprüfbar verändern und Korrekturen ermöglichen.",
-            "source_ids": [
-              "klimareporter-news"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Wenn Dialog und Nachsteuerung ausbleiben, sinkt die Korrekturfähigkeit in einem politisch strittigen Infrastrukturfeld.",
-            "source_ids": [
-              "klimareporter-news"
-            ]
-          }
-        }
-      },
-      "visuals": {
-        "path_directions": [
-          {
-            "order": "second_order",
-            "path": "Verschiebung von Investitionsentscheidungen",
-            "direction": "open",
-            "condition": "Nur wenn Unternehmen die Regeländerungen als belastbar ansehen, kann daraus ein Investitionsimpuls werden.",
-            "evidence": "scenario",
-            "claim_ids": [],
-            "dimensions": [
-              "planet"
-            ]
-          },
-          {
-            "order": "third_order",
-            "path": "Mögliche Beschleunigung oder Bremsung des Energiesystemumbaus",
-            "direction": "open",
-            "condition": "Nur bei Umsetzung, Rechtsklarheit und ausreichender Netzintegration könnte sich der Umbau des Stromsystems spürbar verändern.",
-            "evidence": "scenario",
-            "claim_ids": [],
-            "dimensions": [
-              "planet"
-            ]
-          }
-        ],
-        "affected_groups": [
-          "unternehmen",
-          "kommunen",
-          "staat",
-          "verbraucherinnen"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T11:12:49.530Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T10:32:17.000Z",
-      "last_updated": "2026-09-09T11:13:52.837Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-2410faf299ae9f05a290",
-      "case_file": null,
-      "source_published_at": "2026-09-09T10:32:17.000Z",
-      "published_at": "2026-09-09T11:13:52.837Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "klimareporter-news"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob und in welcher Form Bundestag oder Bundesrat die EEG-Reform und das Netzpaket noch ändern.",
-          "source_id": "klimareporter-news",
-          "expected_by": null,
-          "measurable_indicator": "Änderungsanträge, Abstimmungsergebnisse, Beschlussfassung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-39b6503ec46af84f",
-          "announced_at": "2026-09-09T10:32:17.000Z",
-          "follow_up_date": "2026-09-16T11:13:52.837Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob die zusätzlichen 5.000 Megawatt tatsächlich in einem späteren Verfahren gesichert werden.",
-          "source_id": "klimareporter-news",
-          "expected_by": null,
-          "measurable_indicator": "Gesetzeswortlaut, Ausschreibungsvolumen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-52a77910125f58a0",
-          "announced_at": "2026-09-09T10:32:17.000Z",
-          "follow_up_date": "2026-09-16T11:13:52.837Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Klimareporter°",
-          "url": "https://klimareporter.de/strom/die-wirtschaftsministerin-stoesst-die-erneuerbaren-ueber-die-klippe",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T10:32:17.000Z",
           "primary_source": false
         }
       ]
@@ -3472,122 +3615,6 @@
           "source_type": "official_rss",
           "published_at": "2026-09-08",
           "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-688b36d040bfbf87",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "afd-wahler-in-sachsen-anhalt-wer-die-partei-gewahlt-hat-bfbf87",
-      "title": "AfD-Wähler in Sachsen-Anhalt: Wer die Partei gewählt hat",
-      "source_summary": "Die MDR-Datenanalyse zur Landtagswahl in Sachsen-Anhalt beschreibt ein klares Stadt-Land- und Altersmuster bei der AfD-Wahl. Nach dem Text läge die AfD in ländlichen Regionen bei 50,4 Prozent und bei Männern bei 50 Prozent. In Städten, vor allem in Magdeburg und Halle, werden die Grünen mit 18,4 Prozent als zweitstärkste Kraft genannt.\n\nDer Ausschnitt nennt außerdem, dass Seniorinnen und Senioren die AfD bremsen und autoritäre politische Einstellungen die Wahl beeinflussten. Im gelieferten Material bleibt offen, welche Methodik genau verwendet wurde und wie belastbar die landesweite Übertragung ist.",
-      "summary": "Die MDR-Analyse zeigt starke Unterschiede zwischen Stadt und Land bei der AfD-Wahl in Sachsen-Anhalt. Die Aussage ist relevant für die Einordnung von Wählergruppen, ersetzt aber noch keinen eigenen Kausalbeleg.",
-      "detail_summary": "Der gelieferte MDR-Ausschnitt rekonstruiert ein Wählerprofil zur Landtagswahl in Sachsen-Anhalt. Genannt werden 50,4 Prozent für die AfD in ländlichen Regionen, 50 Prozent bei Männern und 18,4 Prozent für die Grünen in Magdeburg und Halle. Die Einordnung kann für Parteistrategien, die Ansprache von Zielgruppen und die demokratische Selbstbeobachtung wichtig sein. Ein direkter Wirkpfad wäre: Daten über Wählergruppen verändern die Informationsgrundlage für Kampagnen und Nachfragen in der politischen Kommunikation. Als Wirkung ist das noch nicht belegt; sichtbar ist zunächst nur die Beschreibung von Mustern. Die Evidenz bleibt begrenzt, weil im gelieferten Material nur ein journalistischer Datenausschnitt vorliegt und die Methodik nicht vollständig offengelegt ist.",
-      "why_relevant": "Die Analyse liefert neue Zustandsinformation zum Wahlverhalten nach Wohnort, Geschlecht und Alter. Das ist für Parteien, Medien und die demokratische Einordnung des Wahlergebnisses materiell relevant.",
-      "topic": [
-        "Digitalisierung",
-        "Demokratie"
-      ],
-      "status": "erste Daten",
-      "analysis_type": "ex_post",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "offen",
-          "direction_basis": "unclear",
-          "rationale": "Die Meldung beschreibt Wahlmuster und kann die politische Ansprache verändern. Ein belastbarer Pfad zu konkreten sozialen Folgen ist im Ausschnitt aber nicht belegt.",
-          "positive_path": {
-            "mechanism": "Bessere Kenntnis von Wählergruppen kann Kampagnen, Ansprache und strategische Korrekturen in Parteien und Öffentlichkeit verändern.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Die zugespitzte Darstellung einzelner Gruppen kann stereotype Deutungen und Polarisierung im Wahlgespräch verstärken.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Im gelieferten Material gibt es keinen belastbaren Bezug zu Umwelt-, Klima- oder Ressourcenzuständen.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Die Daten können die demokratische Selbstbeobachtung verbessern, weil sie Unterschiede nach Alter, Geschlecht und Wohnort sichtbar machen. Das stärkt zunächst die Informationsgrundlage, nicht schon das Ergebnis selbst.",
-          "positive_path": {
-            "mechanism": "Transparente Wahlmuster können öffentliche Debatten, Parteiarbeit und Korrekturen an Ansprache oder Repräsentation anstoßen.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Wenn die Muster nur zugespitzt auf Gruppen reduziert werden, kann das die Polarisierung und pauschale Zuschreibungen im Diskurs fördern.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          }
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T08:06:50.537Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T11:57:24.000Z",
-      "last_updated": "2026-09-09T08:08:08.422Z",
-      "version": 2,
-      "news_status": "preliminary",
-      "event_id": "event-c1db53eddd471e49ec6b",
-      "case_file": null,
-      "source_published_at": "2026-09-08T11:57:24.000Z",
-      "published_at": "2026-09-08T12:38:27.704Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Prüfen, ob die MDR-Analyse eine Methodik, Vergleichswerte oder regionale Detailzahlen nachreicht.",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "veröffentlichte Methodik oder zusätzliche Detailzahlen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-a75aa5f0eaa9c1d4",
-          "announced_at": "2026-09-08T11:57:24.000Z",
-          "follow_up_date": "2026-09-16T08:08:08.422Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T11:57:24.000Z",
-          "primary_source": false
         }
       ]
     },
