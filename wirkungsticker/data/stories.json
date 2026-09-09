@@ -1,7 +1,280 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T19:57:12.795Z",
+  "updated_at": "2026-09-09T20:12:06.952Z",
   "stories": [
+    {
+      "story_id": "wt-6000b2fabc397176",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-fba5538cbebc53a4-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-bd0c65c86f1f8445-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-be4fd75445f1c5ac-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-a96cbc6c325af971-source.png"
+        }
+      },
+      "slug": "notfalle-sprengstoffverdacht-an-grenze-zwei-vorlaufige-festnahmen-397176",
+      "title": "Rheinfelden: Grenzübergang wegen Sprengstoffverdachts gesperrt – zwei vorläufige Festnahmen gemeldet",
+      "source_summary": "Am Grenzübergang Rheinfelden zur Schweiz ist der Verkehr nach Angaben der Quellen in beide Richtungen gesperrt. Die Bundespolizei ist im Einsatz, und bei einer Kontrolle schlugen Sprengstoff-Suchhunde an. Der SWR berichtet von zwei vorläufigen Festnahmen; mehrere Kurzmeldungen greifen diese Angabe auf. Zugleich bleibt offen, ob der Sprengstoffverdacht bestätigt wird und wie lange der Einsatz dauert.\n\nDie Quellenlage ist damit klar im Kern, aber noch nicht vollständig gesichert. Der Ereigniskern ist eine akute Sperrung mit Polizeieinsatz; die Ursache und die endgültige Bewertung sind weiter offen.",
+      "summary": "Der Grenzübergang Rheinfelden ist gesperrt. Zwei vorläufige Festnahmen werden gemeldet, aber noch nicht abschließend bestätigt.",
+      "detail_summary": "Die Meldung beschreibt einen akuten Polizeieinsatz am Grenzübergang Rheinfelden zur Schweiz. Laut den gelieferten Quellen ist der Übergang in beide Richtungen gesperrt, die Bundespolizei ist im Einsatz und Sprengstoff-Suchhunde haben angeschlagen. Der SWR nennt zwei vorläufige Festnahmen; mehrere weitere Kurzmeldungen übernehmen diese Angabe. Der genaue Sachstand bleibt offen, weil die Bestätigung der Festnahmen, die Dauer der Sperre und die endgültige Einordnung des Verdachts in den Quellen noch nicht vollständig geklärt sind. Für die Nachricht zählt vor allem die unmittelbare Störung des Grenzverkehrs und der laufende Polizeieinsatz. Eine längerfristige Folge ist daraus noch nicht belegbar.",
+      "why_relevant": "Akute Grenzsperrung, Polizeieinsatz und gemeldete Festnahmen betreffen den Verkehr zwischen Deutschland und der Schweiz unmittelbar und haben klare Relevanz für Sicherheit und Mobilität.",
+      "topic": [
+        "Gesellschaft",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Der laufende Polizeieinsatz sperrt den Grenzübergang und beeinträchtigt damit unmittelbar Mobilität, Erreichbarkeit und mögliche Hilfewege. Das ist für Nutzerinnen und Nutzer des Übergangs sowie für Grenzpendelnde relevant.",
+          "negative_path": {
+            "mechanism": "Sperrung und Einsatz unterbrechen den Verkehrsfluss, verlängern Wege und können Verzögerungen bei Pendeln, Lieferungen und Einsatzfahrten auslösen.",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Wenn der Verdacht rasch geklärt und die Lage gesichert wird, kann der Einsatz zu mehr Schutz vor einer möglichen Gefahr beitragen.",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "effect_type": "mitigation_only",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus den Quellen ergeben sich keine belastbaren Umweltfolgen. Der Fall betrifft vor allem Sicherheit und Verkehr, nicht einen belegten Umweltzustand.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung berührt staatliches Handeln und öffentliche Sicherheit, aber es gibt in den Quellen keinen Hinweis auf demokratische Strukturfolgen oder eine politische Entscheidung.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "third_order",
+            "path": "Vorübergehende Anpassung von Routen und Abläufen im Grenzraum",
+            "direction": "open",
+            "condition": "Nur wenn der Einsatz länger dauert, passen Unternehmen und Pendelnde ihre Wege dauerhaft an.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "human"
+            ]
+          }
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T20:12:06.952Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T17:09:01.000Z",
+      "last_updated": "2026-09-09T20:13:14.570Z",
+      "version": 3,
+      "news_status": "developing",
+      "event_id": "event-f13a6030063ce9f88544",
+      "case_file": null,
+      "source_published_at": "2026-09-09T16:29:42.000Z",
+      "published_at": "2026-09-09T17:50:31.611Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ],
+          [
+            "tagesspiegel-home",
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 6
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 21
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "tagesspiegel-home"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob der Sprengstoffverdacht bestätigt wird und was genau im Fahrzeug gefunden wurde.",
+          "source_id": "tagesspiegel-home",
+          "expected_by": null,
+          "measurable_indicator": "amtliche Bestätigung oder Klarstellung der Ermittler",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-dc6bf45d9aae3fb7",
+          "announced_at": "2026-09-09T17:09:01.000Z",
+          "follow_up_date": "2026-09-16T17:50:31.611Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wie lange der Grenzübergang gesperrt bleibt.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Aufhebung oder Fortdauer der Sperre",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b12dbc8f7f506230",
+          "announced_at": "2026-09-09T17:07:52.000Z",
+          "follow_up_date": "2026-09-16T17:50:31.611Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Offizielle Bestätigung der vorläufigen Festnahmen und des Ermittlungsstands",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimitteilung oder belastbare Bestätigung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f9a9e7032819ca73",
+          "announced_at": "2026-09-09T18:02:46.000Z",
+          "follow_up_date": "2026-09-16T20:13:14.570Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Angabe zur Dauer der Sperre und zur Wiederfreigabe des Übergangs",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Zeitpunkt der Aufhebung der Sperre",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8b02c1e6dd775120",
+          "announced_at": "2026-09-09T18:02:46.000Z",
+          "follow_up_date": "2026-09-16T20:13:14.570Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Klärung, ob tatsächlich Sprengstoff oder nur ein Verdacht vorlag",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "amtlich bestätigte Einstufung des Falls",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-47d8468f02755a52",
+          "announced_at": "2026-09-09T18:02:46.000Z",
+          "follow_up_date": "2026-09-16T20:13:14.570Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/eil-grenzuebergang-schweiz-gesperrt-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T18:02:46.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-notfalle-16036890.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:09:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/notfaelle--sprengstoffverdacht-an-grenze---zwei-vorlaeufige-festnahmen-38229130.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:07:52.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/weltgeschehen/grenzuebergang-zur-schweiz-wegen-sprengstoffverdachts-gesperrt-38229144.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T16:36:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/notfaelle--grenze-zur-schweiz-dicht--polizei-prueft-auto-auf-sprengstoff-38229130.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T16:29:42.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/weltgeschehen/grenzuebergang-zur-schweiz--zwei-festnahmen-wegen-sprengstoffverdachts-38229144.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:51:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/zwei-vorlaeufige-festnahmen--spuerhunde-schlagen-an---sprengstoffverdacht-an-der-grenze-38229130.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:44:23.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-zwei-vorlaufige-festnahmen-16036890.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:09:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/weltgeschehen/grenzuebergang-zur-schweiz--sprengstoffverdacht---polizei-gibt-entwarnung-38229144.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T18:26:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/zwei-vorlaeufige-festnahmen--sprengstoffverdacht-blockiert-rheinfelden-grenze-stundenlang-38229130.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T18:57:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-577270be8984eb8d",
       "title_image": {
@@ -914,163 +1187,6 @@
           "url": "https://www.deutschlandfunk.de/neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritisiert-benennung-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-09T17:40:46.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-6000b2fabc397176",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-f160d80ac568f54d-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-4a8a8a8a33edb72a-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6000b2fabc397176-9d14fe835bf919a4-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "notfalle-sprengstoffverdacht-an-grenze-zwei-vorlaufige-festnahmen-397176",
-      "title": "Rheinfelden: Grenzübergang wegen Sprengstoffverdachts gesperrt – zwei vorläufige Festnahmen gemeldet",
-      "source_summary": "Am Autobahn-Grenzübergang Rheinfelden zwischen Deutschland und der Schweiz läuft ein Polizeieinsatz. Nach dem SWR-Bericht ist der Übergang in beiden Richtungen gesperrt. Untersucht wird ein Fahrzeug, bei dessen Kontrolle Spürhunde auf möglichen Sprengstoff angeschlagen haben sollen. Es geht um diesen Übergang, nicht um eine Schließung der gesamten Grenze.\n\nTagesspiegel und stern berichten außerdem von zwei vorläufigen Festnahmen. Ihre gleichlautenden Kurzmeldungen sind keine zwei unabhängigen Bestätigungen. Ob tatsächlich Sprengstoff gefunden wurde und wie lange der Einsatz dauert, bleibt im geprüften Quellenstand offen. Eine vorläufige Festnahme belegt weder eine Straftat noch eine Täterschaft.",
-      "summary": "Am Autobahn-Grenzübergang Rheinfelden wird ein Fahrzeug auf möglichen Sprengstoff geprüft. Der Übergang ist laut SWR gesperrt; übereinstimmende Kurzmeldungen berichten von zwei vorläufigen Festnahmen.",
-      "detail_summary": "Betroffen ist der Autobahn-Grenzübergang Rheinfelden zwischen Deutschland und der Schweiz. Die Sperrung unterbricht dort den normalen Grenzverkehr, während Spezialkräfte ein Fahrzeug prüfen. Für Reisende und Beschäftigte können Umwege, Wartezeiten und Unsicherheit entstehen. Die Absicherung soll eine mögliche Gefahr begrenzen; gegenüber störungsfreiem Verkehr ist sie kein zusätzlicher Nutzen. Der Sprengstoffverdacht ist noch kein bestätigter Fund, die Festnahmen sind kein Schuldnachweis.",
-      "why_relevant": "Akute Sicherheitslage an einer Grenze, laufende Sperre und zwei vorläufige Festnahmen haben unmittelbare Folgen für Kontrolle, Verkehr und Einsatzkräfte.",
-      "topic": [
-        "Politik",
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "risiko",
-          "direction_basis": "assessed",
-          "rationale": "Die Sperrung beeinträchtigt die Beweglichkeit von Reisenden und Beschäftigten. Ob zusätzlich eine konkrete Explosionsgefahr bestand, bleibt offen. Gefahrenabwehr begrenzt das Risiko, sie ist kein Vorteil gegenüber störungsfreiem Verkehr.",
-          "positive_path": null,
-          "negative_path": {
-            "mechanism": "Der gesperrte Übergang unterbricht gewohnte Wege. Daraus können Wartezeiten, Umwege und zusätzliche Belastungen für Reisende und Beschäftigte entstehen.",
-            "source_ids": [
-              "swr-aktuell"
-            ],
-            "effect_type": "independent_change",
-            "reference": "assessment_baseline"
-          }
-        },
-        "planet": {
-          "relevance": "offen",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Der geprüfte Quellenstand belegt keinen konkreten Eingriff in natürliche Lebensgrundlagen. Ein Umwelturteil allein aus dem Wort Sprengstoff wäre nicht belastbar.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "offen",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Für diesen konkreten Einsatz ist kein eigenständiger Eingriff in demokratische Kontrolle oder Teilhabe belegt. Eine routinemäßige Polizeimitteilung allein ist kein Demokratiegewinn.",
-          "positive_path": null,
-          "negative_path": null
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "beschaeftigte",
-          "verbraucherinnen",
-          "staat"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T18:08:29.737Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T17:09:01.000Z",
-      "last_updated": "2026-09-09T18:08:29.737Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-f13a6030063ce9f88544",
-      "case_file": null,
-      "source_published_at": "2026-09-09T17:07:52.000Z",
-      "published_at": "2026-09-09T17:50:31.611Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "swr-aktuell"
-          ],
-          [
-            "tagesspiegel-home",
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob der Sprengstoffverdacht bestätigt wird und was genau im Fahrzeug gefunden wurde.",
-          "source_id": "tagesspiegel-home",
-          "expected_by": null,
-          "measurable_indicator": "amtliche Bestätigung oder Klarstellung der Ermittler",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-dc6bf45d9aae3fb7",
-          "announced_at": "2026-09-09T17:09:01.000Z",
-          "follow_up_date": "2026-09-16T17:50:31.611Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Wie lange der Grenzübergang gesperrt bleibt.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Aufhebung oder Fortdauer der Sperre",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-b12dbc8f7f506230",
-          "announced_at": "2026-09-09T17:07:52.000Z",
-          "follow_up_date": "2026-09-16T17:50:31.611Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "SWR Aktuell",
-          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/eil-grenzuebergang-schweiz-gesperrt-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T17:33:24.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-notfalle-16036890.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T17:09:01.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/notfaelle--sprengstoffverdacht-an-grenze---zwei-vorlaeufige-festnahmen-38229130.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T17:07:52.000Z",
           "primary_source": false
         }
       ]

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-09T19:57:12.795Z",
+  "last_successful_run": "2026-09-09T20:12:06.952Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -63078,10 +63078,15 @@
     }
   },
   "pending_story_ids": [
+    "wt-7a0664564e4eecc8",
+    "wt-c3729b129aec8fb7",
+    "wt-108ffbfc7a799328",
+    "wt-deb6e1808a095fb6",
     "wt-979c02c79b75f2c3",
     "wt-768f48fef314ee17",
     "wt-d62a52527174a1ca",
     "wt-880b51ff129de2b9",
+    "wt-2e6672022b5ab361",
     "wt-17c75be3d3a4bb8e",
     "wt-3bc0d21b0899d8f4",
     "wt-6574973fa0559ef2",
@@ -63092,13 +63097,11 @@
     "wt-f035486b80396b15",
     "wt-a13ae4886acdaa7b",
     "wt-ca27d6c05c39a463",
-    "wt-6000b2fabc397176",
     "wt-a2b6fde320e50e32",
     "wt-b7ded251826179be",
     "wt-2e3241c331cc6e50",
     "wt-3db6d2a45c3bab7f",
     "wt-15665d71bdf5b2ab",
-    "wt-2e6672022b5ab361",
     "wt-a306a2c151daf9c6",
     "wt-50924fbe12d4ad5f",
     "wt-a0494b6e523f45ca",
@@ -63109,6 +63112,7 @@
     "wt-2ba80a7557ba7bf8",
     "wt-f6c8def394d52291",
     "wt-59cf0f94440363c1",
+    "wt-30992a8a3bfc0ab1",
     "wt-53956114ef5b04d9",
     "wt-fd7c0cd7ceb4b85c",
     "wt-878980c9ef12690f",
@@ -63130,6 +63134,7 @@
     "wt-1d28be8a761853ef",
     "wt-411f3fc56ba4078c",
     "wt-3c97559c7130412a",
+    "wt-eb3cc4504775ca5c",
     "wt-70d037e5eb03b50a",
     "wt-b3b0168d8241bab3",
     "wt-72230a652d4fa6c8",
@@ -63251,14 +63256,10 @@
     "wt-86ea1ddfd89beabf",
     "wt-a5874ae28ed5533f",
     "wt-990631d7dc3586cb",
-    "wt-eb3cc4504775ca5c",
-    "wt-c3729b129aec8fb7",
-    "wt-7a0664564e4eecc8",
-    "wt-108ffbfc7a799328",
-    "wt-deb6e1808a095fb6"
+    "wt-bbaf251fe95d6f40"
   ],
   "relevance_filter_version": "2026-09-09.1",
-  "last_attempted_run": "2026-09-09T19:57:12.795Z",
+  "last_attempted_run": "2026-09-09T20:12:06.952Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1652,
@@ -63609,8 +63610,8 @@
       "created_at": "2026-09-09T19:52:22.316Z",
       "status": "submitted",
       "billing_status": "reserved",
-      "next_poll_at": "2026-09-09T20:07:22.316Z",
-      "checked_at": "2026-09-09T19:52:22.316Z",
+      "next_poll_at": "2026-09-09T20:31:09.408Z",
+      "checked_at": "2026-09-09T20:16:09.408Z",
       "error": null
     }
   },
@@ -64566,6 +64567,26 @@
       "input_hash": "099cd63ab22336184ec2d347",
       "version": "2026-09-09.1",
       "checked_at": "2026-09-09T19:57:12.795Z"
+    },
+    "wt-eb3cc4504775ca5c": {
+      "input_hash": "099cd63ab22336184ec2d347",
+      "version": "2026-09-09.1",
+      "checked_at": "2026-09-09T20:12:06.952Z"
+    },
+    "wt-30992a8a3bfc0ab1": {
+      "input_hash": "e879594dee76e847c1a28a24",
+      "version": "2026-09-09.1",
+      "checked_at": "2026-09-09T20:12:06.952Z"
+    },
+    "https://www.stern.de/politik/bundestag--kloeckner-attackiert-afd-scharf----ich-schmeiss--sie-hier-raus--38228284.html": {
+      "input_hash": "ecb751a581160f4125bd037e",
+      "version": "2026-09-09.1",
+      "checked_at": "2026-09-09T20:12:06.952Z"
+    },
+    "wt-53956114ef5b04d9": {
+      "input_hash": "c833f5c2982eb675d9fc7278",
+      "version": "2026-09-09.1",
+      "checked_at": "2026-09-09T20:12:06.952Z"
     }
   }
 }
