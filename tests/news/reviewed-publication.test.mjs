@@ -6,6 +6,7 @@ import { loadNewsRegistry } from "../../scripts/news/registry.mjs";
 import { sourceIntegrityForStory } from "../../scripts/news/source-integrity.mjs";
 import { duplicateGroups } from "../../scripts/news/living-files.mjs";
 import { storyPage } from "../../scripts/news/build.mjs";
+import { prepareEditorialReview } from "../../scripts/news/publish-editorial-review.mjs";
 
 const review = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/sachsen-anhalt-kandidatur-2026-09-05.json", import.meta.url)));
 const registry = loadNewsRegistry(new URL("../../", import.meta.url).pathname);
@@ -136,4 +137,49 @@ test("new concrete candidacy development is not automatically merged into generi
   const record = prepareReviewedStory(review, registry, [], now).record;
   const stories = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories;
   assert.equal(duplicateGroups([...stories.filter(story => story.story_id !== record.story_id), record]).some(group => group.duplicate_ids.includes(record.story_id)), false);
+});
+
+const debateReview = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/2026-09-09-generaldebatte-nachricht.json", import.meta.url)));
+const debateOpinion = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/2026-09-09-generaldebatte-meinung-analyse.json", import.meta.url)));
+function pendingDebate() {
+  return { story_id: debateReview.story_id, slug: "so-lauft-die-generaldebatte-im-bundestag-merz-gegen-weidel-d260ce", event_id: "original-debate-event", published: false, content_hash: debateReview.expected_content_hash, sources: structuredClone(debateReview.sources), first_seen: "2026-09-09T07:00:00Z", versions: [] };
+}
+test("reviewed draft retains the original event and URL, then supports a separate commissioned opinion", () => {
+  const draft = pendingDebate();
+  const original = structuredClone(draft);
+  const result = prepareReviewedStory(debateReview, registry, [draft], "2026-09-09T23:00:00Z");
+  assert.deepEqual(result.errors, []);
+  assert.deepEqual(draft, original);
+  assert.equal(result.record.story_id, draft.story_id);
+  assert.equal(result.record.event_id, draft.event_id);
+  assert.equal(result.record.slug, draft.slug);
+  assert.equal(result.record.editorial_draft_review.previous_content_hash, draft.content_hash);
+  assert.equal(result.record.published, true);
+  assert.equal(prepareReviewedStory(debateReview, registry, [result.record], "2026-09-09T23:01:00Z").unchanged, true);
+  const opinion = prepareEditorialReview(debateOpinion, result.record, null, "2026-09-09T23:01:00Z").record;
+  assert.equal(opinion.author.name, "Natalie Weber");
+  assert.equal(opinion.editorial_genre, "commentary");
+  assert.equal(opinion.status, "published");
+  assert.equal(opinion.slug, debateOpinion.slug);
+  assert.notEqual(opinion.slug, draft.slug);
+  assert.equal(opinion.versions[0].provider, null);
+  assert.match(opinion.assessment_condition, /nicht die Debatte selbst/);
+  assert.ok(opinion.sections.some(section => section.visual?.type === "cascade"));
+  assert.ok(opinion.sections.some(section => section.visual?.type === "feedback"));
+  assert.equal(opinion.navigation_groups.length, 6);
+});
+test("draft review rejects changed, published, retired, unrelated and publisher-mismatched inputs", () => {
+  const now = "2026-09-09T23:00:00Z";
+  for (const patch of [{ published: true }, { retired: true }, { listed: false }, { redirect_to: "another" }]) {
+    assert.throws(() => prepareReviewedStory(debateReview, registry, [{ ...pendingDebate(), ...patch }], now), /EDITORIAL_DRAFT_REQUIRED/);
+  }
+  assert.throws(() => prepareReviewedStory(debateReview, registry, [], now), /EDITORIAL_DRAFT_REQUIRED/);
+  assert.throws(() => prepareReviewedStory(debateReview, registry, [{ ...pendingDebate(), content_hash: "changed" }], now), /EDITORIAL_DRAFT_INPUT_CHANGED/);
+  assert.throws(() => prepareReviewedStory(debateReview, registry, [{ ...pendingDebate(), sources: [] }], now), /EDITORIAL_DRAFT_EVENT_UNBOUND/);
+  const wrong = structuredClone(debateReview);
+  wrong.sources[1].url = "https://example.org/wrong";
+  assert.ok(prepareReviewedStory(wrong, registry, [pendingDebate()], now).errors.includes("SOURCE_PUBLISHER_URL_MISMATCH"));
+  const noDirection = structuredClone(debateReview);
+  delete noDirection.analysis.assessment_frame;
+  assert.ok(prepareReviewedStory(noDirection, registry, [pendingDebate()], now).errors.includes("AI_DIRECTION_REFERENCE_REQUIRED"));
 });

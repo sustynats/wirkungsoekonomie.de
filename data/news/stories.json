@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-09T18:08:29.737Z",
-  "updated_at": "2026-09-09T18:30:05.094Z",
+  "public_updated_at": "2026-09-09T19:02:51.906Z",
+  "updated_at": "2026-09-09T19:02:51.906Z",
   "stories": [
     {
       "story_id": "wt-026d11d680622587",
@@ -3978,17 +3978,6 @@
       }
     },
     {
-      "story_id": "wt-63cb95e544d260ce",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "448c4796dbf0ce5a476f0661c1eaac45214de3cac86ba17e7947ebd54cbdce17",
-        "first_failed_at": "2026-09-09T18:07:31.891Z",
-        "failed_at": "2026-09-09T18:07:31.891Z",
-        "retry_after": "2026-09-09T18:22:31.891Z",
-        "retry_count": 1
-      },
-      "slug": "so-lauft-die-generaldebatte-im-bundestag-merz-gegen-weidel-d260ce",
-      "title": "So läuft die Generaldebatte im Bundestag: Merz gegen Weidel",
       "queue_source_repartitions": [
         {
           "version": 1,
@@ -4124,17 +4113,19 @@
           ]
         }
       ],
+      "story_id": "wt-63cb95e544d260ce",
+      "slug": "so-lauft-die-generaldebatte-im-bundestag-merz-gegen-weidel-d260ce",
+      "title": "Generaldebatte zum Haushalt 2027: Merz verteidigt Reformkurs, Opposition kritisiert Prioritäten",
       "first_seen": "2026-09-09T06:55:00.000Z",
-      "last_updated": "2026-09-09T16:40:00.000Z",
+      "last_updated": "2026-09-09T19:02:51.906Z",
+      "published_at": "2026-09-09T19:02:51.906Z",
+      "updated_at": "2026-09-09T19:02:51.906Z",
       "topic": [
-        "Energie",
-        "Soziales",
-        "Europa",
-        "Finanzen",
-        "Demokratie",
         "Politik",
         "Wirtschaft",
-        "Klima"
+        "Gesellschaft",
+        "Energie",
+        "Demokratie"
       ],
       "sources": [
         {
@@ -4142,13 +4133,13 @@
           "publisher": "Deutscher Bundestag - Heute im Bundestag",
           "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-generaldebatte-1194750",
           "title": "Merz verteidigt Reformkurs der Koalition gegen die Angriffe der Opposition",
-          "summary": "Drei Tage nach dem Erdrutsch-Sieg der AfD bei der Landtagswahl in Sachsen-Anhalt hat der Bundestag am Mittwoch, 9. September 2026, seine erste Beratung des Bundeshaushalts 2027 (21/7300(Dokument, öffnet ein neues Fenster), 21/7650(Dokument, öffnet ein neues Fenster)) mit der traditionellen Generalaussprache über die Politik der Bundesregierung fortgesetzt. In der ersten Lesung des Etats des Bundeskanzlers und des Bundeskanzleramtes (Einzelplan 04) räumte Regierungschef Friedrich Merz (CDU) auch eigene Fehler bei der Vermittlung des Sinns der angestrebten Reformen ein. Zugleich verteidigte er nachdrücklich den Reformkurs der Koalition gegen die Angriffe der Opposition. Dagegen bekräftigte AfD-Fraktionschefin Dr. Alice Weidel die Kritik ihrer Partei insbesondere an der Haushalts-, Migrations- und Energiepolitik der Bundesregierung, während für Die Linke deren Fraktionsvorsitzender Sören Pellmann eine Regierungspolitik des \"sozialen Kahlschlags\" beklagte. Die Vorsitzende von Bündnis 90/Die Grünen, Katharina Dröge, rief dazu auf, einen Prüfauftrag für ein AfD-Verbot auf den Weg zu bringen. Die Ausgaben des Bundeskanzleramtes für 2027sollen laut Entwurf auf rund 5,16 Milliarden Euro steigen, das sind rund 165,5 Millionen Euro mehr als in diesem Jahr vorgesehen. Bundeskanzler: Die Ukraine verteidigt auch unsere Freiheit Merz attestierte der AfD, in Sachsen-Anhalt ein \"bemerkenswertes Wahlergebnis\" erzielt zu haben, bei dem die Wähler eine \"deutliche Botschaft\" auch an ihn selbst gesendet hätten. Die absolute Mehrheit habe die AfD jedoch nicht erreicht und werde sie in Deutschland",
+          "summary": "Am 9. September 2026 setzte der Bundestag seine erste Beratung des Bundeshaushalts 2027 mit der Generaldebatte fort. Merz verteidigte den Reformkurs; Weidel kritisierte die Prioritäten. Dröge verlangte Schutz für bedrohte Menschen und einen Prüfauftrag für ein AfD-Verbot. Miersch betonte Kompromisse, Pellmann einen Infrastrukturplan. Für Kulturförderung im Inland sind 918,6 Millionen Euro nach 1,1 Milliarden Euro im Soll 2026 vorgesehen.",
           "source_type": "official_rss",
           "published_at": "2026-09-09T07:00:00.000Z",
           "primary_source": true,
           "source_priority": 96,
           "source_topic": "Politik",
-          "content_hash": "6c5c7192e967be7d55769182046b87584da18a0f547fb16fa2a845e7f7de385a",
+          "content_hash": "7db22df460ee95c52466ab1d2786c16b6c0af03449da8bdc19549b98950694ae",
           "source_item_id": "e56a23de93085a46170601e47ef92a55afcbef4a2fa39bfb12fb0a2fbb71fb4d",
           "publisher_id": "bundestag",
           "publisher_kind": "institution",
@@ -4173,204 +4164,6 @@
           "discovery_index_url": "https://www.bundestag.de/static/appdata/includes/rss/aktuellethemen.rss"
         },
         {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-generaldebatte-im-bundestag-16032337.html",
-          "title": "Generaldebatte im Bundestag: Merz attackiert AfD scharf - Weidel sieht Koalition am Ende",
-          "summary": "Es ist das erste Rededuell zwischen Merz und Weidel nach dem haushohen Wahlsieg der AfD in Sachsen-Anhalt. Es geht hart zur Sache. Zweimal muss die Bundestagspräsidentin eingreifen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T02:31:19.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "a05af68f9136838663c8f33b481cc5c3624289f03f95cb775454ed64f1fbc351",
-          "source_item_id": "523253afbcadb8335b942d3db6b7b07d9a692d690fc89a22d49e294cf162f0b1",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T02:31:19.000Z",
-          "ingested_at": "2026-09-09T08:52:20.295Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/merz-nennt-afd-destruktive-kraft-weidel-kritisiert-haushaltsentwurf-als-kapitulationserklaerung-100.html",
-          "title": "Generaldebatte im Bundestag - Merz nennt AfD \"destruktive Kraft\" - Weidel kritisiert Haushaltsentwurf als \"Kapitulationserklärung\"",
-          "summary": "Bundeskanzler Merz hat bei der Generaldebatte im Bundestag die AfD wegen ihrer Haltung zu Russland angegriffen. AfD-Chefin Weidel warf der Bundesregierung dagegen eine verfehlte Haushaltspolitik vor.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T08:07:42.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "0b1e79e620daf28ee3ea6d63ddbbf9bb3c3799a7bcf339fb780a9f76439356c2",
-          "source_item_id": "df4279037f65ab6d5781ff195d0f11d2afb1d85ca3dec22b9dc28ee782abb67e",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T08:07:42.000Z",
-          "ingested_at": "2026-09-09T08:22:03.686Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/generaldebatte-im-bundestag--merz-attackiert-afd-scharf---weidel-sieht-koalition-am-ende-38224544.html",
-          "title": "Generaldebatte im Bundestag: Merz attackiert AfD scharf - Weidel sieht Koalition am Ende",
-          "summary": "Es ist das erste Rededuell zwischen Merz und Weidel nach dem haushohen Wahlsieg der AfD in Sachsen-Anhalt. Es geht hart zur Sache. Zweimal muss die Bundestagspräsidentin eingreifen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T08:45:49.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "347d42505edbc0e0da0e9e12a078fbf1226fbc4522ed6ae6777ce190e9b05a6b",
-          "source_item_id": "99873ee202ddbac871d74bbe866804bd477c49bac349dede108d8283fa2368bc",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T08:45:49.000Z",
-          "ingested_at": "2026-09-09T08:52:20.295Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/video-1645980.html",
-          "title": "Generaldebatte im Bundestag mit Einordnung von Diana Zimmermann (ZDF)",
-          "summary": "Diana Zimmermann ordnet in der ZDF-Sendung \"Heute in Deutschland\" die Debatte im Bundestag nach der Landtagswahl in Sachsen-Anhalt ein.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T12:53:52.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "77397b1d759b4a87fadace06b06f16ea0ee1eaf22d7de0440ced105c994a9b25",
-          "source_item_id": "ba0188a2e89eed84a382fc82182c4980e02a4cbc06c66bb8a38e7d29e5e4b8a1",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T12:53:52.000Z",
-          "ingested_at": "2026-09-09T13:22:48.629Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "taz-aktuell",
-          "publisher": "taz",
-          "url": "https://taz.de/Generaldebatte-im-Bundestag/!6211741",
-          "title": "Generaldebatte im Bundestag: Hyperaggressiv vs. hilflos",
-          "summary": "AfD-Chefin Alice Weidel beschwört den Untergang der Regierung. Der Kanzler sucht noch immer eine Erzählung für seine Politik. mehr...",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T14:20:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "36b6976051014a9dd10667f825e8fe176c26b4a2f6bf20756034cd069cc6b0e6",
-          "source_item_id": "e5299179061b65f29e9a733db2a0f27c8c748a5de521af0222b3a052c4a6aa5a",
-          "publisher_id": "taz",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T14:20:00.000Z",
-          "ingested_at": "2026-09-09T18:07:31.891Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "spiegel-schlagzeilen",
-          "publisher": "DER SPIEGEL",
-          "url": "https://www.spiegel.de/politik/deutschland/news-des-tages-generaldebatte-im-bundestag-zollstreit-usa-gegen-kanada-benjamin-netanyahu-gegen-haaretz-a-6d01e853-cf6a-4264-b185-455b953b8cdd",
-          "title": "News des Tages: Generaldebatte im Bundestag, Zollstreit USA gegen Kanada, Benjamin Netanyahu gegen »Haaretz«",
-          "summary": "Die Generaldebatte im Bundestag gerät zur Abrechnung zwischen Regierung und Opposition. Kanada lächelt Wüterich Trump beiseite, und Netanyahu will »Haaretz« wegen einer belastenden Recherche verklagen. Das ist die Lage am Mittwochabend.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T15:46:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "2ea4b8259c5602fa67782284f20243a857aca7fdf791769c5e75cd8a1b251b30",
-          "source_item_id": "5ce6f810288d8f64ad2b9607159eb0131d24dde9e620155875cf8aff910e65d6",
-          "publisher_id": "spiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T15:46:00.000Z",
-          "ingested_at": "2026-09-09T18:07:31.891Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:spiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
           "source_id": "dlf-nachrichten",
           "publisher": "Deutschlandfunk",
           "url": "https://www.deutschlandfunk.de/merz-verteidigt-reformplaene-der-koalition-weidel-nennt-haushaltsentwurf-kapitulationserklaerung-100.html",
@@ -4381,7 +4174,7 @@
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "dd6e80d6a5021469a13bc313a043eb66cb68296549b0740f62c2cd5ff3a521e5",
+          "content_hash": "69f0207963980e0dbf0033f5ae96a5c6f9b48e9fae138a451b610415728c2570",
           "source_item_id": "90bc76b7f79111624a7f2b8fdd3bcb3db07e4f2246b1f763ad579430504473db",
           "publisher_id": "deutschlandfunk",
           "publisher_kind": "public_broadcasting",
@@ -4404,411 +4197,546 @@
           }
         },
         {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/deutschland/politik/merz-weidel-bundestag-haushalt-analyse,generaldebatte-146.html",
-          "title": "Generaldebatte wird zur Bewährungsprobe für Kanzler Merz",
-          "summary": "Der Wahlsieg der AfD in Sachsen-Anhalt ist auch präsent in der politischen Debatte im Bundestag. Bundeskanzler Merz gerät unter Druck, während die AfD ihre Grenzen bei möglichen Mehrheiten offenbart.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T16:40:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "dd447c4fea0ecc620073a92441024bb3abddc46e801d45a2184e4c2ff801c7dd",
-          "source_item_id": "32dc6b2d483a1e9f5803b7c62e44f1e83eceb092b00d3d71c925e80c0f57dc8b",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
+          "source_id": "bundesregierung-kompakt",
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/bundeskanzler-generaldebatte-haushaltswoche-2451890",
+          "title": "Rede des Bundeskanzlers bei der Generaldebatte zum Haushalt 2027",
+          "summary": "Die Belastung der Unternehmen durch hohe Energiekosten und Bürokratie müsse weiter abgebaut werden. Merz nennt außerdem Künstliche Intelligenz und Bevölkerungsschutz. Bei der Energieversorgung spricht er von Gaskraftwerken und regenerativen Energien. Er formuliert Zukunftsperspektiven für die junge Generation.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-09",
+          "primary_source": true,
+          "source_topic": "Politik",
+          "content_hash": "ac30baa06149271d1e792ad8ac124e48c9ff457dc9d09adf05ef4cb6c7daac87",
+          "publisher_id": "bundesregierung",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
           "language": "de",
           "geography": [
-            "DE",
-            "Mitteldeutschland"
+            "DE"
           ],
-          "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-09T16:40:00.000Z",
-          "ingested_at": "2026-09-09T18:07:31.891Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "taz-aktuell",
-          "publisher": "taz",
-          "url": "https://taz.de/Generaldebatte-im-Bundestag/!6206693",
-          "title": "Generaldebatte im Bundestag: Lernfähiger Nachhilfeschüler",
-          "summary": "Kanzler Merz zielt darauf ab, die demokratischen Reihen zusammenzuhalten. Klimaschutz ist plötzlich wichtig. Doch der Rückhalt für ihn bröckelt. mehr...",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T16:59:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "a9a99f48818a7dadca5af61a52634ef2520fdd97c0e01860cd854d561ea4c184",
-          "source_item_id": "12629745650cc7e87c519c79293a4ca1f0481c1ed0fecec3c57594aca18a02a9",
-          "publisher_id": "taz",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T16:59:00.000Z",
-          "ingested_at": "2026-09-09T18:07:31.891Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
+          "source_published_at": "2026-09-09"
         }
       ],
       "claims": [
         {
-          "claim_id": "wt-63cb95e544d260ce-claim-01",
+          "claim_id": "wt-63cb95e544d260ce-v1-claim-1",
           "story_id": "wt-63cb95e544d260ce",
-          "claim": "Merz verteidigt Reformkurs der Koalition gegen die Angriffe der Opposition: Drei Tage nach dem Erdrutsch-Sieg der AfD bei der Landtagswahl in Sachsen-Anhalt hat der Bundestag am Mittwoch, 9. September 2026, seine erste Beratung des Bundeshaushalts 2027 (21/7300(Dokument, öffnet ein neues Fenster), 21/7650(Dokument, öffnet ein neues Fenster)) mit der traditionellen Generalaussprache über die Politik der Bundesregierung fortgesetzt. In der ersten Lesung des Etats des Bundeskanzlers und des Bundeskanzleramtes (Einzelplan 04) räumte Regierungschef Friedrich Merz (CDU) auch eigene Fehler bei der Vermittlung des Sinns der angestrebten Reformen ein. Zugleich verteidigte er nachdrücklich den Reformkurs der Koalition gegen die Angriffe der Opposition. Dagegen bekräftigte AfD-Fraktionschefin Dr. Alice Weidel die Kritik ihrer Partei insbesondere an der Haushalts-, Migrations- und Energiepolitik der",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "bundestag-hib",
-          "source_function": "institutional_statement",
+          "claim": "Der Bundestag setzte die erste Beratung des Haushalts 2027 mit einer Generaldebatte fort.",
           "status": "primary_source_claim",
-          "provenance": {
-            "origin": "publisher:bundestag",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T18:07:31.891Z"
-        },
-        {
-          "claim_id": "wt-63cb95e544d260ce-claim-02",
-          "story_id": "wt-63cb95e544d260ce",
-          "claim": "Generaldebatte im Bundestag: Merz attackiert AfD scharf - Weidel sieht Koalition am Ende: Es ist das erste Rededuell zwischen Merz und Weidel nach dem haushohen Wahlsieg der AfD in Sachsen-Anhalt. Es geht hart zur Sache. Zweimal muss die Bundestagspräsidentin eingreifen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T18:07:31.891Z"
-        },
-        {
-          "claim_id": "wt-63cb95e544d260ce-claim-03",
-          "story_id": "wt-63cb95e544d260ce",
-          "claim": "Generaldebatte im Bundestag - Merz nennt AfD \"destruktive Kraft\" - Weidel kritisiert Haushaltsentwurf als \"Kapitulationserklärung\": Bundeskanzler Merz hat bei der Generaldebatte im Bundestag die AfD wegen ihrer Haltung zu Russland angegriffen. AfD-Chefin Weidel warf der Bundesregierung dagegen eine verfehlte Haushaltspolitik vor.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T18:07:31.891Z"
-        },
-        {
-          "claim_id": "wt-63cb95e544d260ce-claim-04",
-          "story_id": "wt-63cb95e544d260ce",
-          "claim": "Generaldebatte im Bundestag: Merz attackiert AfD scharf - Weidel sieht Koalition am Ende: Es ist das erste Rededuell zwischen Merz und Weidel nach dem haushohen Wahlsieg der AfD in Sachsen-Anhalt. Es geht hart zur Sache. Zweimal muss die Bundestagspräsidentin eingreifen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T18:07:31.891Z"
-        },
-        {
-          "claim_id": "wt-63cb95e544d260ce-claim-05",
-          "story_id": "wt-63cb95e544d260ce",
-          "claim": "Generaldebatte im Bundestag mit Einordnung von Diana Zimmermann (ZDF): Diana Zimmermann ordnet in der ZDF-Sendung \"Heute in Deutschland\" die Debatte im Bundestag nach der Landtagswahl in Sachsen-Anhalt ein.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T18:07:31.891Z"
-        },
-        {
-          "claim_id": "wt-63cb95e544d260ce-claim-06",
-          "story_id": "wt-63cb95e544d260ce",
-          "claim": "Generaldebatte im Bundestag: Hyperaggressiv vs. hilflos: AfD-Chefin Alice Weidel beschwört den Untergang der Regierung. Der Kanzler sucht noch immer eine Erzählung für seine Politik. mehr...",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "taz-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T18:07:31.891Z"
-        },
-        {
-          "claim_id": "wt-63cb95e544d260ce-claim-07",
-          "story_id": "wt-63cb95e544d260ce",
-          "claim": "News des Tages: Generaldebatte im Bundestag, Zollstreit USA gegen Kanada, Benjamin Netanyahu gegen »Haaretz«: Die Generaldebatte im Bundestag gerät zur Abrechnung zwischen Regierung und Opposition. Kanada lächelt Wüterich Trump beiseite, und Netanyahu will »Haaretz« wegen einer belastenden Recherche verklagen. Das ist die Lage am Mittwochabend.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "spiegel-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:spiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T18:07:31.891Z"
-        },
-        {
-          "claim_id": "wt-63cb95e544d260ce-claim-08",
-          "story_id": "wt-63cb95e544d260ce",
-          "claim": "Generaldebatte im Bundestag - Merz verteidigt Reformpläne der Koalition - Weidel nennt Haushaltsentwurf \"Kapitulationserklärung\": Bundeskanzler Merz hat im Bundestag bekräftigt, an den Reformplänen der schwarz-roten Koalition festhalten zu wollen. Deutschland müsse nachhaltiges Wirtschaftswachstum zurückgewinnen, sagte der CDU-Vorsitzende in der Generaldebatte. AfD-Chefin Weidel warf der Bundesregierung dagegen eine verfehlte Haushalts- und Wirtschaftspolitik vor.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T18:07:31.891Z"
-        },
-        {
-          "claim_id": "wt-63cb95e544d260ce-claim-09",
-          "story_id": "wt-63cb95e544d260ce",
-          "claim": "Generaldebatte wird zur Bewährungsprobe für Kanzler Merz: Der Wahlsieg der AfD in Sachsen-Anhalt ist auch präsent in der politischen Debatte im Bundestag. Bundeskanzler Merz gerät unter Druck, während die AfD ihre Grenzen bei möglichen Mehrheiten offenbart.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T18:07:31.891Z"
-        },
-        {
-          "claim_id": "wt-63cb95e544d260ce-claim-10",
-          "story_id": "wt-63cb95e544d260ce",
-          "claim": "Generaldebatte im Bundestag: Lernfähiger Nachhilfeschüler: Kanzler Merz zielt darauf ab, die demokratischen Reihen zusammenzuhalten. Klimaschutz ist plötzlich wichtig. Doch der Rückhalt für ihn bröckelt. mehr...",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "taz-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T18:07:31.891Z"
-        }
-      ],
-      "content_hash": "cb796e86ca50713e6660ef26c88561c73ac61abc1ce3055bee383869f5dc3c67",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_NEWS_VALUE_CONTEXT_ONLY",
-        "AI_DIRECTION_MIXED_PATHS_REQUIRED:democracy",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:positive_path",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:negative_path",
-        "MEDIA_IMPACT_REQUIRED",
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE",
-        "FOLLOWUP_DATE_UNSUPPORTED"
-      ],
-      "quality_retry_count": 3,
-      "quality_retry_after": "2026-09-09T18:22:31.891Z",
-      "reassessment": false,
-      "fresh": false,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-09T18:07:31.891Z",
-      "event_first_seen_at": "2026-09-09T07:06:43.209Z",
-      "event_detected_at": "2026-09-09T07:06:43.209Z",
-      "event_id": "event-fb15832cf9ba10b84c83",
-      "preanalysis": {
-        "filter_version": "2026-09-09.1",
-        "material_development_review": {
-          "required": true,
-          "time_sensitive": false,
-          "findings": [
+          "source_id": "bundestag-hib",
+          "evidence": [
             {
               "source_id": "bundestag-hib",
               "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-generaldebatte-1194750",
-              "signals": [
-                "election_result"
-              ],
-              "time_sensitive": false,
-              "basis": "local_review_signal_not_verified_fact"
+              "excerpt_hash": "0335cb4aff38e8a9a71c",
+              "checked_at": "2026-09-09T19:02:51.906Z"
             }
-          ]
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T19:02:51.906Z"
         },
-        "internal_relevance_score": 80,
-        "public_relevance": "sehr hoch",
-        "event_score": {
-          "version": "2026-09-09.1",
-          "signals": [
-            "public_budget",
-            "political_position",
-            "plenary_debate"
+        {
+          "claim_id": "wt-63cb95e544d260ce-v1-claim-2",
+          "story_id": "wt-63cb95e544d260ce",
+          "claim": "Die Regierung nennt Wirtschafts-, Technologie- und Energievorhaben.",
+          "status": "primary_source_claim",
+          "source_id": "bundesregierung-kompakt",
+          "evidence": [
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/bundeskanzler-generaldebatte-haushaltswoche-2451890",
+              "excerpt_hash": "1c7d3e773c140d930bf6",
+              "checked_at": "2026-09-09T19:02:51.906Z"
+            }
           ],
-          "category": "politics_de",
-          "categories": [
-            "politics_de",
-            "economy",
-            "society",
-            "environment",
-            "international",
-            "security"
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T19:02:51.906Z"
+        },
+        {
+          "claim_id": "wt-63cb95e544d260ce-v1-claim-3",
+          "story_id": "wt-63cb95e544d260ce",
+          "claim": "Deutschlandfunk berichtet, dass Merz an den Reformplänen festhalten will.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/merz-verteidigt-reformplaene-der-koalition-weidel-nennt-haushaltsentwurf-kapitulationserklaerung-100.html",
+              "excerpt_hash": "b0bf1f0f86893b1bc53e",
+              "checked_at": "2026-09-09T19:02:51.906Z"
+            }
           ],
-          "region": "DE",
-          "independent_source_count": 6,
-          "independence_verified": false,
-          "primary_sources": [
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T19:02:51.906Z"
+        }
+      ],
+      "event_id": "event-fb15832cf9ba10b84c83",
+      "event_first_seen_at": "2026-09-09T07:06:43.209Z",
+      "event_detected_at": "2026-09-09T19:02:17.169Z",
+      "verification_started_at": "2026-09-09T19:02:51.906Z",
+      "publish_ready_at": "2026-09-09T19:02:51.906Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-10T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
             "bundestag-hib"
           ],
-          "impact_score": 80,
-          "breaking_score": 0,
-          "source_diversity_score": 100,
-          "institutional_score": 80,
-          "national_relevance_score": 85,
-          "economic_relevance_score": 0,
-          "political_relevance_score": 80,
-          "novelty_score": 75,
-          "confidence_score": 70,
-          "velocity_score": 0,
-          "woek_impact_score": 75,
-          "total_relevance_score": 80,
-          "priority": "TOP",
-          "breaking_status": "developing",
-          "reasons": [
-            "public_budget",
-            "political_position",
-            "plenary_debate"
+          [
+            "dlf-nachrichten"
           ],
-          "score_scope": "editorial_review_priority_not_truth_or_MPD_direction",
-          "checked_at": "2026-09-09T18:07:31.891Z"
-        },
-        "topics": [
-          "Energie",
-          "Soziales",
-          "Europa",
-          "Finanzen",
-          "Demokratie",
-          "Politik",
-          "Wirtschaft",
-          "Klima"
+          [
+            "bundesregierung-kompakt"
+          ]
         ],
-        "dimensions": [
-          "Mensch",
-          "Planet",
-          "Demokratie"
-        ],
-        "status": "Entwurf",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [
-          "public_budget",
-          "political_position",
-          "plenary_debate"
-        ],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 26.76485,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 660.8113666666667,
-        "target_publication_minutes": 30,
-        "news_freshness_score": 78,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+        "possible_independent_origins": 3,
+        "independence_is_verified": false,
+        "dependencies": []
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T18:07:31.891Z",
-        "fingerprint": "681a798242ad5a66ed494510053355205cea4041499967cd5983e80126eb1247",
+        "checked_at": "2026-09-09T19:02:51.906Z",
+        "fingerprint": "088595ce7261902595d9c73d2325dd497d2fd7f5c90397150f34b74265bb1d19",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Welche Haushaltstitel endgültig beschlossen werden.",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "Verabschiedetes Haushaltsgesetz und Einzelpläne",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c65bc589299d970b",
+          "announced_at": "2026-09-09T07:00:00.000Z",
+          "follow_up_date": "2026-09-16T19:02:51.906Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "a99ee178103859757f90c6fc5ac9e307e4a52d87ed8d25fed258393426b8b263",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "2026-09-09.1",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-09T19:02:51.906Z",
+        "sources": []
+      },
+      "source_summary": "Der Bundestag hat am 9. September die erste Lesung des Haushalts 2027 mit der Generaldebatte fortgesetzt. Kanzler Friedrich Merz verteidigte den Reformkurs. Alice Weidel kritisierte die Haushalts- und Wirtschaftspolitik; Katharina Dröge verlangte Schutz für bedrohte Menschen und eine Prüfung eines AfD-Verbots. Auch soziale Prioritäten und Investitionen waren umstritten.\n\nDie Bundesregierung verweist in ihrer Zusammenfassung der Kanzlerrede unter anderem auf Energiekosten, Bürokratie, Künstliche Intelligenz und Bevölkerungsschutz. Merz bezog erneuerbare Energien ausdrücklich ein. Seine Erfolgsbewertungen sind Aussagen der Regierung, keine unabhängig geprüfte Wirkungsbilanz. Ein abschließender Haushaltsbeschluss liegt noch nicht vor.",
+      "analysis": {
+        "story_id": "wt-63cb95e544d260ce",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "observed_outcome": null,
+        "summary": "In der Generaldebatte verteidigt Merz seinen Reformkurs, während die Opposition Prioritäten bei Haushalt, Sozialem und Energie kritisiert. Über den Bundeshaushalt ist damit noch nicht abschließend entschieden.",
+        "detail_summary": "Neben dem politischen Schlagabtausch stehen konkrete Lebensbedingungen zur Debatte: verlässliche Leistungen, Investitionen, Energie und Schutz vor Ausgrenzung. Ein Detail des Entwurfs ist der niedrigere Ansatz für Kulturförderung im Inland. Noch ist offen, welche Titel das Parlament endgültig beschließt und wie sie sich im Alltag auswirken.",
+        "why_relevant": "Haushaltsentscheidungen betreffen Leistungen, wirtschaftliche Planung und gesellschaftlichen Schutz bundesweit. Die erste Lesung ist ein eigener parlamentarischer Anlass.",
+        "importance": "hoch",
+        "direction_assessment_version": "1.1",
+        "assessment_frame": {
+          "subject": "Risiken der diskutierten Förderabsenkungen, fossilen Bindungen und Ausgrenzung - nicht der parlamentarischen Debatte selbst",
+          "baseline": "Fortbestehende Teilhabe und Schutzfunktionen sowie eine verfügbare emissionsärmere Versorgung ohne diese zusätzlichen Einschränkungen"
+        },
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Weniger Kulturförderung kann ohne gleichwertigen Ersatz Angebote und Teilhabe einschränken. Betroffene Projekte und Umfang sind noch nicht bestimmt.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wenn der niedrigere Förderansatz in Angebots- oder Personalverlust mündet und kein Ersatz besteht, sinkt die erreichbare kulturelle Teilhabe.",
+            "source_ids": [
+              "bundestag-hib"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Das negative Risiko betrifft längere fossile Bindung gegenüber einer verfügbaren emissionsärmeren Alternative, nicht Merz' Bekenntnis zu erneuerbaren Energien.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wenn neue fossile Kapazitäten emissionsärmere Optionen verdrängen oder verzögern, können zusätzliche Emissionen und längere Abhängigkeiten entstehen. Ob dieser Pfad eintritt, ist offen.",
+            "source_ids": [
+              "bundesregierung-kompakt"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die von Dröge angesprochenen Schutzbedürfnisse betreffen Zugehörigkeit und gleiche Teilhabe. Ein Schutzverlust wäre negativ; sein Eintritt wird nicht aus der Debatte behauptet.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wenn Menschen aufgrund ihrer Herkunft oder Identität ausgegrenzt werden und Schutz nicht erreichbar ist, werden gleiche Teilhabe und Vertrauen in staatliche Gleichbehandlung beeinträchtigt.",
+            "source_ids": [
+              "bundestag-hib"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "impact_potential": "Veränderte Förderung, Energieinvestitionen und Schutzentscheidungen können Lebensbedingungen und institutionelle Handlungsfähigkeit prägen. Die bloße Debatte ist kein Wirkungserfolg.",
+        "impact_risks": [
+          "Teilhabeverlust bei sinkender Förderung ohne Ersatz",
+          "Fossile Bindung bei verdrängten emissionsärmeren Alternativen",
+          "Schutzverlust bei Ausgrenzung"
+        ],
+        "mechanisms": [
+          "Haushaltstitel verändern verfügbare Mittel",
+          "Personal und Umsetzung entscheiden über Leistungen",
+          "Investitionen können langfristige Energiepfade binden"
+        ],
+        "first_order": [
+          "Reformpositionen und Prioritäten wurden im Parlament erläutert und kritisiert",
+          "Der Haushalt bleibt im Beratungsverfahren"
+        ],
+        "second_order": [
+          "Bei späterer Umsetzung können Angebote, Aufträge und Investitionsbedingungen verändert werden"
+        ],
+        "third_order": [
+          "Langfristig stehen staatliche Problemlösungsfähigkeit, Energiepfade und demokratische Korrekturfähigkeit auf dem Spiel"
+        ],
+        "systemic_relevance": "Finanzierung, Verwaltung, Teilhabe und Energieinfrastruktur hängen zusammen. Ein Mittelansatz ist nicht mit seiner späteren Wirkung gleichzusetzen.",
+        "transformation_potential": "Investitionen prägen Infrastruktur langfristig; die Debatte belegt keinen gemessenen Fortschritt.",
+        "resilience": "Handlungsfähigkeit braucht verlässliche Leistungen und wirksame Korrektur. Spätere Entscheidungen können beide verändern.",
+        "side_effects": [
+          "Mögliche Verlagerung von Kosten auf Familien und Betriebe"
+        ],
+        "uncertainties": [
+          "Endgültige Haushaltstitel",
+          "Tatsächliche Umsetzung und Betroffenheit",
+          "Energiepfad späterer Investitionen"
+        ],
+        "evidence_level": "hoch",
+        "attribution": "Bundestag und Bundesregierung dokumentieren Positionen; Deutschlandfunk sichert das Ereignis journalistisch ab. Die Wirkpfade sind bedingte Analyse, keine Erfolgsmessung.",
+        "watch_next": [
+          "Weiteres Haushaltsverfahren",
+          "Änderungen bei Kultur und sozialen Leistungen",
+          "Umsetzung von Energie- und Modernisierungsvorhaben"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030 und Deutsche Nachhaltigkeitsstrategie: Teilhabe, Infrastruktur, Klima und Institutionen; Zielbezug ist kein Kausalitätsnachweis."
+        ],
+        "publication_gate": {
+          "news_value": "substantive_commitment",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_with_caveats",
+          "duplicate_status": "new_story",
+          "rationale": "Die erste Lesung mit Generaldebatte ist ein datierter parlamentarischer Vorgang mit konkreten Reformpositionen. Der vorhandene Ereignisdatensatz wird nach Quellenprüfung veröffentlicht."
+        },
+        "media_impact": null,
+        "visuals": {
+          "affected_groups": [
+            "beschaeftigte",
+            "staat"
+          ]
+        },
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-09T19:02:51.906Z",
+        "media_trigger_fingerprint": "849770eb0749e55e8402c6f84be1d8980853eda46ee879e6d4017f3fc8386231",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "threat_or_fear_frame"
+          ],
+          "matched_terms": [
+            "bedrohte"
+          ],
+          "source_count": 3,
+          "comparable_source_count": 1,
+          "fingerprint": "849770eb0749e55e8402c6f84be1d8980853eda46ee879e6d4017f3fc8386231",
+          "content_fingerprint": "2289c3cdd19410f9a09c9d22531c47c215640d8dbd7d75a3679c63c7a603730a",
+          "basis": "feed_metadata",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-09T19:02:51.906Z",
+          "content_hash": "a99ee178103859757f90c6fc5ac9e307e4a52d87ed8d25fed258393426b8b263",
+          "source_summary": "Der Bundestag hat am 9. September die erste Lesung des Haushalts 2027 mit der Generaldebatte fortgesetzt. Kanzler Friedrich Merz verteidigte den Reformkurs. Alice Weidel kritisierte die Haushalts- und Wirtschaftspolitik; Katharina Dröge verlangte Schutz für bedrohte Menschen und eine Prüfung eines AfD-Verbots. Auch soziale Prioritäten und Investitionen waren umstritten.\n\nDie Bundesregierung verweist in ihrer Zusammenfassung der Kanzlerrede unter anderem auf Energiekosten, Bürokratie, Künstliche Intelligenz und Bevölkerungsschutz. Merz bezog erneuerbare Energien ausdrücklich ein. Seine Erfolgsbewertungen sind Aussagen der Regierung, keine unabhängig geprüfte Wirkungsbilanz. Ein abschließender Haushaltsbeschluss liegt noch nicht vor.",
+          "analysis": {
+            "story_id": "wt-63cb95e544d260ce",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "observed_outcome": null,
+            "summary": "In der Generaldebatte verteidigt Merz seinen Reformkurs, während die Opposition Prioritäten bei Haushalt, Sozialem und Energie kritisiert. Über den Bundeshaushalt ist damit noch nicht abschließend entschieden.",
+            "detail_summary": "Neben dem politischen Schlagabtausch stehen konkrete Lebensbedingungen zur Debatte: verlässliche Leistungen, Investitionen, Energie und Schutz vor Ausgrenzung. Ein Detail des Entwurfs ist der niedrigere Ansatz für Kulturförderung im Inland. Noch ist offen, welche Titel das Parlament endgültig beschließt und wie sie sich im Alltag auswirken.",
+            "why_relevant": "Haushaltsentscheidungen betreffen Leistungen, wirtschaftliche Planung und gesellschaftlichen Schutz bundesweit. Die erste Lesung ist ein eigener parlamentarischer Anlass.",
+            "importance": "hoch",
+            "direction_assessment_version": "1.1",
+            "assessment_frame": {
+              "subject": "Risiken der diskutierten Förderabsenkungen, fossilen Bindungen und Ausgrenzung - nicht der parlamentarischen Debatte selbst",
+              "baseline": "Fortbestehende Teilhabe und Schutzfunktionen sowie eine verfügbare emissionsärmere Versorgung ohne diese zusätzlichen Einschränkungen"
+            },
+            "human": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Weniger Kulturförderung kann ohne gleichwertigen Ersatz Angebote und Teilhabe einschränken. Betroffene Projekte und Umfang sind noch nicht bestimmt.",
+              "positive_path": null,
+              "negative_path": {
+                "mechanism": "Wenn der niedrigere Förderansatz in Angebots- oder Personalverlust mündet und kein Ersatz besteht, sinkt die erreichbare kulturelle Teilhabe.",
+                "source_ids": [
+                  "bundestag-hib"
+                ],
+                "effect_type": "independent_change",
+                "reference": "assessment_baseline"
+              }
+            },
+            "planet": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Das negative Risiko betrifft längere fossile Bindung gegenüber einer verfügbaren emissionsärmeren Alternative, nicht Merz' Bekenntnis zu erneuerbaren Energien.",
+              "positive_path": null,
+              "negative_path": {
+                "mechanism": "Wenn neue fossile Kapazitäten emissionsärmere Optionen verdrängen oder verzögern, können zusätzliche Emissionen und längere Abhängigkeiten entstehen. Ob dieser Pfad eintritt, ist offen.",
+                "source_ids": [
+                  "bundesregierung-kompakt"
+                ],
+                "effect_type": "independent_change",
+                "reference": "assessment_baseline"
+              }
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Die von Dröge angesprochenen Schutzbedürfnisse betreffen Zugehörigkeit und gleiche Teilhabe. Ein Schutzverlust wäre negativ; sein Eintritt wird nicht aus der Debatte behauptet.",
+              "positive_path": null,
+              "negative_path": {
+                "mechanism": "Wenn Menschen aufgrund ihrer Herkunft oder Identität ausgegrenzt werden und Schutz nicht erreichbar ist, werden gleiche Teilhabe und Vertrauen in staatliche Gleichbehandlung beeinträchtigt.",
+                "source_ids": [
+                  "bundestag-hib"
+                ],
+                "effect_type": "independent_change",
+                "reference": "assessment_baseline"
+              }
+            },
+            "impact_potential": "Veränderte Förderung, Energieinvestitionen und Schutzentscheidungen können Lebensbedingungen und institutionelle Handlungsfähigkeit prägen. Die bloße Debatte ist kein Wirkungserfolg.",
+            "impact_risks": [
+              "Teilhabeverlust bei sinkender Förderung ohne Ersatz",
+              "Fossile Bindung bei verdrängten emissionsärmeren Alternativen",
+              "Schutzverlust bei Ausgrenzung"
+            ],
+            "mechanisms": [
+              "Haushaltstitel verändern verfügbare Mittel",
+              "Personal und Umsetzung entscheiden über Leistungen",
+              "Investitionen können langfristige Energiepfade binden"
+            ],
+            "first_order": [
+              "Reformpositionen und Prioritäten wurden im Parlament erläutert und kritisiert",
+              "Der Haushalt bleibt im Beratungsverfahren"
+            ],
+            "second_order": [
+              "Bei späterer Umsetzung können Angebote, Aufträge und Investitionsbedingungen verändert werden"
+            ],
+            "third_order": [
+              "Langfristig stehen staatliche Problemlösungsfähigkeit, Energiepfade und demokratische Korrekturfähigkeit auf dem Spiel"
+            ],
+            "systemic_relevance": "Finanzierung, Verwaltung, Teilhabe und Energieinfrastruktur hängen zusammen. Ein Mittelansatz ist nicht mit seiner späteren Wirkung gleichzusetzen.",
+            "transformation_potential": "Investitionen prägen Infrastruktur langfristig; die Debatte belegt keinen gemessenen Fortschritt.",
+            "resilience": "Handlungsfähigkeit braucht verlässliche Leistungen und wirksame Korrektur. Spätere Entscheidungen können beide verändern.",
+            "side_effects": [
+              "Mögliche Verlagerung von Kosten auf Familien und Betriebe"
+            ],
+            "uncertainties": [
+              "Endgültige Haushaltstitel",
+              "Tatsächliche Umsetzung und Betroffenheit",
+              "Energiepfad späterer Investitionen"
+            ],
+            "evidence_level": "hoch",
+            "attribution": "Bundestag und Bundesregierung dokumentieren Positionen; Deutschlandfunk sichert das Ereignis journalistisch ab. Die Wirkpfade sind bedingte Analyse, keine Erfolgsmessung.",
+            "watch_next": [
+              "Weiteres Haushaltsverfahren",
+              "Änderungen bei Kultur und sozialen Leistungen",
+              "Umsetzung von Energie- und Modernisierungsvorhaben"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030 und Deutsche Nachhaltigkeitsstrategie: Teilhabe, Infrastruktur, Klima und Institutionen; Zielbezug ist kein Kausalitätsnachweis."
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_with_caveats",
+              "duplicate_status": "new_story",
+              "rationale": "Die erste Lesung mit Generaldebatte ist ein datierter parlamentarischer Vorgang mit konkreten Reformpositionen. Der vorhandene Ereignisdatensatz wird nach Quellenprüfung veröffentlicht."
+            },
+            "media_impact": null,
+            "visuals": {
+              "affected_groups": [
+                "beschaeftigte",
+                "staat"
+              ]
+            },
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-09T19:02:51.906Z",
+            "media_trigger_fingerprint": "849770eb0749e55e8402c6f84be1d8980853eda46ee879e6d4017f3fc8386231",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "threat_or_fear_frame"
+              ],
+              "matched_terms": [
+                "bedrohte"
+              ],
+              "source_count": 3,
+              "comparable_source_count": 1,
+              "fingerprint": "849770eb0749e55e8402c6f84be1d8980853eda46ee879e6d4017f3fc8386231",
+              "content_fingerprint": "2289c3cdd19410f9a09c9d22531c47c215640d8dbd7d75a3679c63c7a603730a",
+              "basis": "feed_metadata",
+              "version": "2.1"
+            }
+          },
+          "provider": "editorial_review",
+          "model": "source_bound_review",
+          "mode": "editorial_review",
+          "claims": [
+            {
+              "claim_id": "wt-63cb95e544d260ce-v1-claim-1",
+              "story_id": "wt-63cb95e544d260ce",
+              "claim": "Der Bundestag setzte die erste Beratung des Haushalts 2027 mit einer Generaldebatte fort.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-generaldebatte-1194750",
+                  "excerpt_hash": "0335cb4aff38e8a9a71c",
+                  "checked_at": "2026-09-09T19:02:51.906Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T19:02:51.906Z"
+            },
+            {
+              "claim_id": "wt-63cb95e544d260ce-v1-claim-2",
+              "story_id": "wt-63cb95e544d260ce",
+              "claim": "Die Regierung nennt Wirtschafts-, Technologie- und Energievorhaben.",
+              "status": "primary_source_claim",
+              "source_id": "bundesregierung-kompakt",
+              "evidence": [
+                {
+                  "source_id": "bundesregierung-kompakt",
+                  "url": "https://www.bundesregierung.de/breg-de/aktuelles/bundeskanzler-generaldebatte-haushaltswoche-2451890",
+                  "excerpt_hash": "1c7d3e773c140d930bf6",
+                  "checked_at": "2026-09-09T19:02:51.906Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T19:02:51.906Z"
+            },
+            {
+              "claim_id": "wt-63cb95e544d260ce-v1-claim-3",
+              "story_id": "wt-63cb95e544d260ce",
+              "claim": "Deutschlandfunk berichtet, dass Merz an den Reformplänen festhalten will.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/merz-verteidigt-reformplaene-der-koalition-weidel-nennt-haushaltsentwurf-kapitulationserklaerung-100.html",
+                  "excerpt_hash": "b0bf1f0f86893b1bc53e",
+                  "checked_at": "2026-09-09T19:02:51.906Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T19:02:51.906Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-generaldebatte-1194750",
+              "content_hash": "7db22df460ee95c52466ab1d2786c16b6c0af03449da8bdc19549b98950694ae"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/merz-verteidigt-reformplaene-der-koalition-weidel-nennt-haushaltsentwurf-kapitulationserklaerung-100.html",
+              "content_hash": "69f0207963980e0dbf0033f5ae96a5c6f9b48e9fae138a451b610415728c2570"
+            },
+            {
+              "source_id": "bundesregierung-kompakt",
+              "url": "https://www.bundesregierung.de/breg-de/aktuelles/bundeskanzler-generaldebatte-haushaltswoche-2451890",
+              "content_hash": "ac30baa06149271d1e792ad8ac124e48c9ff457dc9d09adf05ef4cb6c7daac87"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-09T19:02:51.906Z",
+            "sources": []
+          },
+          "review_id": "a99ee178103859757f90c6fc5ac9e307e4a52d87ed8d25fed258393426b8b263"
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-09T19:02:51.906Z",
+          "source_count": 3
+        }
+      ],
+      "retirement_history": [],
+      "editorial_draft_review": {
+        "previous_content_hash": "cb796e86ca50713e6660ef26c88561c73ac61abc1ce3055bee383869f5dc3c67",
+        "review_id": "a99ee178103859757f90c6fc5ac9e307e4a52d87ed8d25fed258393426b8b263",
+        "reviewed_at": "2026-09-09T19:02:51.906Z",
+        "source_urls": [
+          "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-generaldebatte-1194750",
+          "https://www.tagesspiegel.de/politik/dpa-generaldebatte-im-bundestag-16032337.html",
+          "https://www.deutschlandfunk.de/merz-nennt-afd-destruktive-kraft-weidel-kritisiert-haushaltsentwurf-als-kapitulationserklaerung-100.html",
+          "https://www.stern.de/politik/deutschland/generaldebatte-im-bundestag--merz-attackiert-afd-scharf---weidel-sieht-koalition-am-ende-38224544.html",
+          "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/video-1645980.html",
+          "https://taz.de/Generaldebatte-im-Bundestag/!6211741",
+          "https://www.spiegel.de/politik/deutschland/news-des-tages-generaldebatte-im-bundestag-zollstreit-usa-gegen-kanada-benjamin-netanyahu-gegen-haaretz-a-6d01e853-cf6a-4264-b185-455b953b8cdd",
+          "https://www.deutschlandfunk.de/merz-verteidigt-reformplaene-der-koalition-weidel-nennt-haushaltsentwurf-kapitulationserklaerung-100.html",
+          "https://www.mdr.de/nachrichten/deutschland/politik/merz-weidel-bundestag-haushalt-analyse,generaldebatte-146.html",
+          "https://taz.de/Generaldebatte-im-Bundestag/!6206693"
+        ]
+      },
+      "editorial_review": {
+        "research_checked_at": "2026-09-09T19:02:17.169Z",
+        "basis": "Manuelle Prüfung der institutionellen Bundestagsdokumentation, der regierungseigenen Redezusammenfassung und des Deutschlandfunk-Volltexts. Bestehenden, unveröffentlichten Ereignisdatensatz unter gleicher ID und URL weiterführen. Keine Duplikation, kein kostenpflichtiger Modellaufruf.",
+        "original_event_date": "2026-09-09",
+        "exclusions": [
+          "Kein vollständiges Wortprotokoll verfügbar.",
+          "Keine bereits beschlossenen oder gemessenen Folgen behauptet.",
+          "MPD-Risiken sind keine Gesamtbilanz aller Redebeiträge."
+        ]
       }
     },
     {

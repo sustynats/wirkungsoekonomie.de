@@ -1,7 +1,151 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T18:21:48.023Z",
+  "updated_at": "2026-09-09T19:04:06.352Z",
   "stories": [
+    {
+      "story_id": "wt-63cb95e544d260ce",
+      "title_image": null,
+      "slug": "so-lauft-die-generaldebatte-im-bundestag-merz-gegen-weidel-d260ce",
+      "title": "Generaldebatte zum Haushalt 2027: Merz verteidigt Reformkurs, Opposition kritisiert Prioritäten",
+      "source_summary": "Der Bundestag hat am 9. September die erste Lesung des Haushalts 2027 mit der Generaldebatte fortgesetzt. Kanzler Friedrich Merz verteidigte den Reformkurs. Alice Weidel kritisierte die Haushalts- und Wirtschaftspolitik; Katharina Dröge verlangte Schutz für bedrohte Menschen und eine Prüfung eines AfD-Verbots. Auch soziale Prioritäten und Investitionen waren umstritten.\n\nDie Bundesregierung verweist in ihrer Zusammenfassung der Kanzlerrede unter anderem auf Energiekosten, Bürokratie, Künstliche Intelligenz und Bevölkerungsschutz. Merz bezog erneuerbare Energien ausdrücklich ein. Seine Erfolgsbewertungen sind Aussagen der Regierung, keine unabhängig geprüfte Wirkungsbilanz. Ein abschließender Haushaltsbeschluss liegt noch nicht vor.",
+      "summary": "In der Generaldebatte verteidigt Merz seinen Reformkurs, während die Opposition Prioritäten bei Haushalt, Sozialem und Energie kritisiert. Über den Bundeshaushalt ist damit noch nicht abschließend entschieden.",
+      "detail_summary": "Neben dem politischen Schlagabtausch stehen konkrete Lebensbedingungen zur Debatte: verlässliche Leistungen, Investitionen, Energie und Schutz vor Ausgrenzung. Ein Detail des Entwurfs ist der niedrigere Ansatz für Kulturförderung im Inland. Noch ist offen, welche Titel das Parlament endgültig beschließt und wie sie sich im Alltag auswirken.",
+      "why_relevant": "Haushaltsentscheidungen betreffen Leistungen, wirtschaftliche Planung und gesellschaftlichen Schutz bundesweit. Die erste Lesung ist ein eigener parlamentarischer Anlass.",
+      "topic": [
+        "Politik",
+        "Wirtschaft",
+        "Gesellschaft",
+        "Energie",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Weniger Kulturförderung kann ohne gleichwertigen Ersatz Angebote und Teilhabe einschränken. Betroffene Projekte und Umfang sind noch nicht bestimmt.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wenn der niedrigere Förderansatz in Angebots- oder Personalverlust mündet und kein Ersatz besteht, sinkt die erreichbare kulturelle Teilhabe.",
+            "source_ids": [
+              "bundestag-hib"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Das negative Risiko betrifft längere fossile Bindung gegenüber einer verfügbaren emissionsärmeren Alternative, nicht Merz' Bekenntnis zu erneuerbaren Energien.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wenn neue fossile Kapazitäten emissionsärmere Optionen verdrängen oder verzögern, können zusätzliche Emissionen und längere Abhängigkeiten entstehen. Ob dieser Pfad eintritt, ist offen.",
+            "source_ids": [
+              "bundesregierung-kompakt"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die von Dröge angesprochenen Schutzbedürfnisse betreffen Zugehörigkeit und gleiche Teilhabe. Ein Schutzverlust wäre negativ; sein Eintritt wird nicht aus der Debatte behauptet.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wenn Menschen aufgrund ihrer Herkunft oder Identität ausgegrenzt werden und Schutz nicht erreichbar ist, werden gleiche Teilhabe und Vertrauen in staatliche Gleichbehandlung beeinträchtigt.",
+            "source_ids": [
+              "bundestag-hib"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "beschaeftigte",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T19:02:51.906Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-7db837acf47c",
+        "slug": "generaldebatte-deutschland-braucht-mehr-als-einen-gewonnenen-schlagabtausch",
+        "title": "Generaldebatte: Deutschland braucht mehr als einen gewonnenen Schlagabtausch",
+        "teaser": "Natalie Weber fragt nach der Generaldebatte nicht nach dem Sieger im Rededuell, sondern nach der Wirkung im Alltag: Was kommt bei Menschen und Unternehmen an, wer trägt die Kosten - und was schützt unsere Demokratie?",
+        "published_at": "2026-09-09T19:04:06.352Z",
+        "updated_at": "2026-09-09T19:04:06.352Z"
+      },
+      "first_seen": "2026-09-09T06:55:00.000Z",
+      "last_updated": "2026-09-09T19:02:51.906Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-fb15832cf9ba10b84c83",
+      "case_file": null,
+      "source_published_at": "2026-09-09T00:00:00.000Z",
+      "published_at": "2026-09-09T19:02:51.906Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ],
+          [
+            "dlf-nachrichten"
+          ],
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 3,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Welche Haushaltstitel endgültig beschlossen werden.",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "Verabschiedetes Haushaltsgesetz und Einzelpläne",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c65bc589299d970b",
+          "announced_at": "2026-09-09T07:00:00.000Z",
+          "follow_up_date": "2026-09-16T19:02:51.906Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-generaldebatte-1194750",
+          "source_type": "official_rss",
+          "published_at": "2026-09-09T07:00:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/merz-verteidigt-reformplaene-der-koalition-weidel-nennt-haushaltsentwurf-kapitulationserklaerung-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:40:46.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/bundeskanzler-generaldebatte-haushaltswoche-2451890",
+          "source_type": "official_rss",
+          "published_at": "2026-09-09",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-026d11d680622587",
       "title_image": {
@@ -27381,6 +27525,17 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-7db837acf47c",
+      "story_id": "wt-63cb95e544d260ce",
+      "slug": "generaldebatte-deutschland-braucht-mehr-als-einen-gewonnenen-schlagabtausch",
+      "title": "Generaldebatte: Deutschland braucht mehr als einen gewonnenen Schlagabtausch",
+      "subtitle": "Ein Haushalt ist noch keine Verbesserung. Eine scharfe Antwort noch kein Schutz. Warum wir wirksame Reformen und demokratische Korrekturfähigkeit zusammen denken müssen.",
+      "teaser": "Natalie Weber fragt nach der Generaldebatte nicht nach dem Sieger im Rededuell, sondern nach der Wirkung im Alltag: Was kommt bei Menschen und Unternehmen an, wer trägt die Kosten - und was schützt unsere Demokratie?",
+      "published_at": "2026-09-09T19:04:06.352Z",
+      "updated_at": "2026-09-09T19:04:06.352Z",
+      "reading_time_minutes": 10
+    },
     {
       "analysis_id": "woek-analysis-2701577d44a3",
       "story_id": "wt-e10c23f5e37ed39e",
