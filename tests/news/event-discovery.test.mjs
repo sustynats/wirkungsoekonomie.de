@@ -121,6 +121,17 @@ test('missed event audit separates filter rejection, backlog and published evide
   assert.equal(coverageAudit({items:[item()],observed,stories:[published],now}).potential_missed_news.length,0);
   const held={...event,published:false,pending_reason:'AI_BUDGET_OR_BATCH_LIMIT'};
   assert.equal(coverageAudit({items:[item()],observed,stories:[held],now}).potential_missed_news[0].failure_class,'E');
+  const olderFilter=coverageAudit({items:[item()],observed,stories:[held],decisions:[rejected],now}).potential_missed_news[0];
+  assert.equal(olderFilter.selection_status,'deferred');assert.equal(olderFilter.failure_class,'E','current capacity state must not be labelled a local rejection');
+});
+
+test('audit ranking uses final recorded scores and priority, not the old fragment order',()=>{
+  const base=observedMajorEvents([item()],now)[0];
+  const observed=Array.from({length:3},(_,i)=>({...base,story_id:`rank-${i}`,event_id:`event-rank-${i}`,sources:[item({url:`https://example.org/rank-${i}`})]}));
+  const stories=observed.map(event=>({...event,published:false,pending_reason:'AI_BUDGET_OR_BATCH_LIMIT'}));
+  const decisions=stories.map((story,i)=>({at:now,story_id:story.story_id,event_id:story.event_id,decision:'selected_for_verification',score:{...base.preanalysis.event_score,total_relevance_score:[50,70,65][i],priority:['HIGH','HIGH','TOP'][i]}}));
+  const audit=coverageAudit({items:observed.flatMap(e=>e.sources),observed,stories,decisions,now});
+  assert.deepEqual(audit.top_events.map(e=>e.cluster_id),['rank-2','rank-1','rank-0']);
 });
 test('missed checks have a hard four-event cap and unchanged hashes do not loop',()=>{
   const observed=Array.from({length:8},(_,i)=>({...observedMajorEvents([item()],now)[0],event_id:`event-${i}`,input_hash:`hash-${i}`,sources:[item({url:`https://example.org/${i}`})]}));
