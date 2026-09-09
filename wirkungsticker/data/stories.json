@@ -1,7 +1,144 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T19:21:19.798Z",
+  "updated_at": "2026-09-09T19:40:25.513Z",
   "stories": [
+    {
+      "story_id": "wt-6cca6ba233753ac1",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6cca6ba233753ac1-105385cae7ff0fc7-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6cca6ba233753ac1-4249f7540f8cf32c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6cca6ba233753ac1-cb82a8d40e5e95d5-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6cca6ba233753ac1-d0dfc3099c8b4fed-source.png"
+        }
+      },
+      "slug": "eugh-starkt-ikea-im-markenrechtsstreit-gegen-rechte-partei-aus-belgien-753ac1",
+      "title": "EuGH stärkt Ikea im Markenrechtsstreit gegen rechte Partei aus Belgien",
+      "source_summary": "Eine Sekundärquelle meldet einen EuGH-Entscheid im Streit zwischen Ikea und einer rechten Partei aus Belgien. Beschrieben wird, dass die Partei ihr einwanderungskritisches Programm mit dem Namen des Möbelhauses bewarb und politische Schritte in Form einer Ikea-Anleitung darstellte.\n\nOffen bleibt der genaue Wortlaut des Urteils, der rechtliche Maßstab und der Umfang der Folgen für die Partei oder für die Marke. Eine unabhängige Bestätigung oder die Originalentscheidung liegen in den gelieferten Daten nicht vor.",
+      "summary": "Ein Bericht meldet einen EuGH-Entscheid zugunsten von Ikea im Markenstreit. Die genaue juristische Begründung bleibt in den vorliegenden Quellen offen.",
+      "detail_summary": "Der Fall betrifft eine politische Kampagne in Belgien, die laut Bericht den Namen Ikea und die Anmutung einer Anleitung aufgriff. Als aktueller Nachrichtenkern ist die angebliche EuGH-Entscheidung selbst relevant, weil sie ein markenrechtliches Verbot oder eine Unterlassung stützen kann.\n\nFür die Wirkung ist vorerst nur ein rechtlicher und kommunikativ-politischer Pfad belegbar: Das Urteil kann die Nutzung der Marke im politischen Kontext einschränken und damit künftige Kampagnenformen beeinflussen. Ob und wie stark sich das auf Wettbewerb, Debatten oder Nachahmung auswirkt, bleibt offen. Gesichert ist in den Quellen nur die Meldung des Entscheids, nicht die vollständige Urteilsbegründung.",
+      "why_relevant": "Ein EuGH-Entscheid im Streit um Markenmissbrauch ist materiell, weil er künftige Nutzung, Kampagnenpraxis und Rechtsdurchsetzung beeinflussen kann.",
+      "topic": [
+        "Europa",
+        "Geopolitik"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Das Urteil kann die Durchsetzung von Markenrechten stärken und politische Kampagnen mit markenähnlichen Anspielungen begrenzen. Für Betroffene sind die materiellen Folgen aber in den gelieferten Quellen nicht beziffert.",
+          "positive_path": {
+            "mechanism": "Stärkere Durchsetzung von Markenrechten kann unerlaubte Nutzung in politischen Kampagnen begrenzen und Klarheit für künftige Kommunikation schaffen.",
+            "source_ids": [
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Die Entscheidung kann politischen Akteuren die Nutzung bekannter Marken als Stilmittel erschweren und so Reichweite oder Anknüpfungspunkte ihrer Kampagnen reduzieren.",
+            "source_ids": [
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In den gelieferten Quellen ergibt sich kein direkter Umwelt- oder Ressourcenaspekt des Streitfalls.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Fall berührt politische Kommunikation und die Grenzen markenbezogener Kampagnen. Das kann Schutz vor Irreführung stärken, aber auch Ausdrucksformen politischer Werbung begrenzen.",
+          "positive_path": {
+            "mechanism": "Rechtliche Begrenzung markenähnlicher politischer Anleihen kann Transparenz und Fairness im öffentlichen Raum stützen.",
+            "source_ids": [
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Eine strengere Markenrechtsdurchsetzung kann politische Zuspitzungen oder satirische Anspielungen erschweren.",
+            "source_ids": [
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T19:40:25.513Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T11:23:00.000Z",
+      "last_updated": "2026-09-09T19:49:25.683Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-d181c770bc28ead8cb4a",
+      "case_file": null,
+      "source_published_at": "2026-09-08T11:23:00.000Z",
+      "published_at": "2026-09-09T19:49:25.683Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, wie der EuGH die Markenrechtsverletzung konkret begründet hat.",
+          "source_id": "manager-magazin-news",
+          "expected_by": null,
+          "measurable_indicator": "Begründung im Urteil oder in einer belastbaren Originalquelle",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-12a10cbbb9515562",
+          "announced_at": "2026-09-08T11:23:00.000Z",
+          "follow_up_date": "2026-09-16T19:49:25.683Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/handel/eugh-staerkt-ikea-im-markenrechtsstreit-gegen-rechte-partei-aus-belgien-a-eb2004cc-9866-4617-81db-ebfd27d40546",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:23:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-63cb95e544d260ce",
       "title_image": null,
