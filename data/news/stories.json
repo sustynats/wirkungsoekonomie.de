@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-09T08:06:50.537Z",
-  "updated_at": "2026-09-09T08:22:03.686Z",
+  "updated_at": "2026-09-09T08:36:55.572Z",
   "stories": [
     {
       "story_id": "wt-7556ad638ef78714",
@@ -1578,7 +1578,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         }
       ],
       "content_hash": "83b5ca3ecb2c2cb737c6f4b86b8d988053d02132f3852c84eff194f770a9452b",
@@ -1589,9 +1589,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T08:22:03.686Z",
+      "updated_at": "2026-09-09T08:36:55.572Z",
       "event_first_seen_at": "2026-09-09T08:22:03.686Z",
       "event_detected_at": "2026-09-09T08:22:03.686Z",
       "event_id": "event-e038c1024208d64af902",
@@ -1624,20 +1624,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 14.361433333333334,
+        "source_age_minutes": 29.2262,
         "detection_delay_minutes": 14.361433333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.864766666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T08:22:03.686Z",
+        "checked_at": "2026-09-09T08:36:55.572Z",
         "fingerprint": "c51a6a6c268becc634c0d939bbed9e1b5c50bab5d2fbfe096ef20a8988cbdf22",
         "issue_codes": [],
         "warning_codes": []
@@ -2743,7 +2743,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         }
       ],
       "content_hash": "3d2a3635ad72e6224b3cc404652d67f5b90ae69b2055730d11ee8011880aad49",
@@ -2754,9 +2754,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T08:22:03.686Z",
+      "updated_at": "2026-09-09T08:36:55.572Z",
       "event_first_seen_at": "2026-09-09T08:22:03.686Z",
       "event_detected_at": "2026-09-09T08:22:03.686Z",
       "event_id": "event-fa335ca7ff77118cdd30",
@@ -2790,20 +2790,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 22.144766666666666,
+        "source_age_minutes": 37.00953333333333,
         "detection_delay_minutes": 22.144766666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.864766666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T08:22:03.686Z",
+        "checked_at": "2026-09-09T08:36:55.572Z",
         "fingerprint": "b07c1044c13139f953828ef099425d856ace52e0393162d5248f56719049fe3e",
         "issue_codes": [],
         "warning_codes": []
@@ -2873,7 +2873,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         }
       ],
       "content_hash": "5902c43feb2f12e95d0209ffc2d819557a9965fe12fac58716dd027e9ffc4b2b",
@@ -2884,9 +2884,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T08:22:03.686Z",
+      "updated_at": "2026-09-09T08:36:55.572Z",
       "event_first_seen_at": "2026-09-09T08:22:03.686Z",
       "event_detected_at": "2026-09-09T08:22:03.686Z",
       "event_id": "event-e4d27acc36ec0136d32b",
@@ -2922,20 +2922,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 22.1781,
+        "source_age_minutes": 37.04286666666667,
         "detection_delay_minutes": 22.1781,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.864766666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T08:22:03.686Z",
+        "checked_at": "2026-09-09T08:36:55.572Z",
         "fingerprint": "82f73cdb9a5285d28966af79eeb078b4b04559b4b1284b241e733092f03818ae",
         "issue_codes": [],
         "warning_codes": []
@@ -3003,7 +3003,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         }
       ],
       "content_hash": "89cd93170d24628f128186598e789555b403e107f53c073fce295e628732306d",
@@ -3018,7 +3018,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T08:22:03.686Z",
+      "updated_at": "2026-09-09T08:36:55.572Z",
       "event_first_seen_at": "2026-09-09T08:22:03.686Z",
       "event_detected_at": "2026-09-09T08:22:03.686Z",
       "event_id": "event-525a0a8d6a077b82b631",
@@ -3060,7 +3060,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.864766666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": null
@@ -3069,7 +3069,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T08:22:03.686Z",
+        "checked_at": "2026-09-09T08:36:55.572Z",
         "fingerprint": "7c48ddf017f54294edaa44e3b878a51a1311a6ec14a21b86113db688672f9bc1",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -3147,7 +3147,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         }
       ],
       "content_hash": "44a303aebe1f7c7f45d35932fccd9d973525254f9fd6e68c46f2fe21f4c8cb26",
@@ -3158,9 +3158,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_HOURLY_CALL_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T08:22:03.686Z",
+      "updated_at": "2026-09-09T08:36:55.572Z",
       "event_first_seen_at": "2026-09-09T08:22:03.686Z",
       "event_detected_at": "2026-09-09T08:22:03.686Z",
       "event_id": "event-1f1dd808da4dcecefdc7",
@@ -3197,11 +3197,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 502.06143333333335,
+        "source_age_minutes": 516.9262,
         "detection_delay_minutes": 502.06143333333335,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.864766666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": null
@@ -3210,7 +3210,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T08:22:03.686Z",
+        "checked_at": "2026-09-09T08:36:55.572Z",
         "fingerprint": "61a5f53398476ce96a6fdb5bedca57398374ba4240d0f167d2d6df040642cb43",
         "issue_codes": [],
         "warning_codes": []
@@ -4797,7 +4797,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -4808,7 +4808,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "05c7d6c7b65da645fdfca511e81774d7cd2c9fc629c8e8f30aed8c9b9be971bb",
           "issue_codes": [],
           "warning_codes": []
@@ -5721,7 +5721,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -5732,7 +5732,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "b61a587b370b8bce26ca2195338c296bf4cdc9f25d32cf98fcb6e106ad9fab05",
           "issue_codes": [],
           "warning_codes": []
@@ -11268,13 +11268,10 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "CLAIM_NUMBER_NOT_IN_EVIDENCE",
-          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
-        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 2,
-        "quality_retry_after": "2026-09-09T08:22:48.594Z",
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": false,
         "consolidation": true,
@@ -11282,7 +11279,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T07:52:48.594Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "2ebceb40b714dd10a4484776b7053c146755f3065e7d0a37abea5ad2baaa3dac",
           "issue_codes": [],
           "warning_codes": []
@@ -22147,7 +22144,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -22158,7 +22155,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "9a2ff324815be8589ad4f9b9c2da92337f61a5e3de8df33873410d7d1bb2b1f0",
           "issue_codes": [],
           "warning_codes": []
@@ -22991,7 +22988,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -23002,7 +22999,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "3037a1d42e9e581af7193dffb83c5d5dedad0e73b1af2289d4607930fd0d5b62",
           "issue_codes": [],
           "warning_codes": []
@@ -27447,7 +27444,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -27458,7 +27455,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "1efa3fa74f2770221ef9efac103a0a38be0f98820ad08782bc080d18496d51db",
           "issue_codes": [],
           "warning_codes": []
@@ -33043,7 +33040,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T06:18:25.957Z"
+        "retry_after": "2026-09-09T08:52:24.594Z"
       },
       "pending_update": {
         "detected_at": "2026-09-09T05:06:53.221Z",
@@ -33116,7 +33113,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -33127,7 +33124,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "53f93df4d1e534788f614f7964cd327043bdce46694f9d12100257749b54cc1b",
           "issue_codes": [],
           "warning_codes": []
@@ -33755,7 +33752,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -33766,7 +33763,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
           "issue_codes": [],
           "warning_codes": []
@@ -35020,7 +35017,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -35031,7 +35028,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
           "issue_codes": [],
           "warning_codes": []
@@ -35928,7 +35925,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -35939,7 +35936,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
           "issue_codes": [],
           "warning_codes": []
@@ -47460,7 +47457,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -47471,7 +47468,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "04fad27b4d3289772b2e99292c31ee46e8833ec80b2213996da8da259f0bd90f",
           "issue_codes": [],
           "warning_codes": []
@@ -48864,7 +48861,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -48875,7 +48872,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -55766,7 +55763,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T06:18:21.304Z"
+        "retry_after": "2026-09-09T08:52:19.209Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -55849,7 +55846,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -55860,7 +55857,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
           "issue_codes": [],
           "warning_codes": []
@@ -59747,9 +59744,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "9e1c10e0230a132d2d571c9d5ef13f3ca584b10c2bdf91e881a0b9da1e9af753",
-        "checked_at": "2026-09-09T08:22:03.686Z",
+        "checked_at": "2026-09-09T08:36:55.572Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T14:22:03.686Z",
+        "expires_at": "2026-09-09T14:36:55.572Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -62680,7 +62677,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T06:11:58.844Z"
+        "retry_after": "2026-09-09T08:52:14.052Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -62761,7 +62758,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -62772,7 +62769,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
           "issue_codes": [],
           "warning_codes": []
@@ -71872,13 +71869,10 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "FOLLOWUP_INVALID"
-        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-09T08:36:50.537Z",
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -71886,7 +71880,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:06:50.537Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -72800,7 +72794,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -72811,7 +72805,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -79188,15 +79182,10 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_DIRECTION_BASIS_INVALID:human",
-          "AI_DIRECTION_BASIS_INVALID:democracy",
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "FOLLOWUP_INVALID"
-        ],
+        "reason": "AI_HOURLY_CALL_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-09T08:22:48.594Z",
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -79204,7 +79193,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T07:52:48.594Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -85729,7 +85718,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -85740,7 +85729,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -88710,7 +88699,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -88721,7 +88710,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -89615,7 +89604,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -89626,7 +89615,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -91126,9 +91115,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T08:22:03.686Z",
+        "checked_at": "2026-09-09T08:36:55.572Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T14:22:03.686Z",
+        "expires_at": "2026-09-09T14:36:55.572Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -94583,7 +94572,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -94594,7 +94583,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -95840,7 +95829,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -95851,7 +95840,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -98942,7 +98931,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -98953,7 +98942,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -102957,7 +102946,7 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "reason": "AI_HOURLY_CALL_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -102968,7 +102957,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -106961,9 +106950,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "560d363cdd017c4a692ca02b042420aa4aaa09b4dc45a423ff2633b3dfc29599",
-        "checked_at": "2026-09-09T08:22:03.686Z",
+        "checked_at": "2026-09-09T08:36:55.572Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T14:22:03.686Z",
+        "expires_at": "2026-09-09T14:36:55.572Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -203072,7 +203061,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -247466,7 +247455,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T08:22:03.686Z",
+          "checked_at": "2026-09-09T08:36:55.572Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -283538,6 +283527,54 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-09T08:36:55.572Z",
+          "retained_urls": [
+            "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+            "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+            "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+            "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
+            "https://www.ndr.de/nachrichten/info/das-erbe-nach-9-11-deutschland-nach-anschlaegen-in-usa,pearl-harburg-100.html",
+            "https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS9wcm9wbGFuXzE5NjM4Nzc1M19nYW56ZVNlbmR1bmc",
+            "https://www.stern.de/panorama/donald-trump-luegt-darueber--dass-er-an-9-11-gerettet-wurde-38224984.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+              "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+              "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-04T11:02:58.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+              "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-04T11:02:58.000Z",
+              "ingested_at": "2026-09-09T07:21:53.878Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-09T04:00:00.000Z",
@@ -283830,7 +283867,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-02",
@@ -283850,7 +283887,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-03",
@@ -283870,7 +283907,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-04",
@@ -283890,7 +283927,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-05",
@@ -283910,7 +283947,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-06",
@@ -283930,7 +283967,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-07",
@@ -283950,7 +283987,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-08",
@@ -283970,7 +284007,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T08:36:55.572Z"
         }
       ],
       "content_hash": "8fcd99a6ca53e5c78b7b4814031cbe7a02036676ed0b2712606e7b7c91285a49",
@@ -283985,7 +284022,7 @@
       "fresh": false,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T08:22:03.686Z",
+      "updated_at": "2026-09-09T08:36:55.572Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-4282989facaefbf32544",
@@ -284022,20 +284059,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 155.06143333333333,
+        "source_age_minutes": 169.9262,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 239.69481666666667,
+        "queue_age_minutes": 254.55958333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 68,
+        "news_freshness_score": 65,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T08:22:03.686Z",
+        "checked_at": "2026-09-09T08:36:55.572Z",
         "fingerprint": "736107d94c7a8536d87d7558a568747ac1f77b8ed4b89ebd9ca29ffe24125cf6",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
