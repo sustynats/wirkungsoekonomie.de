@@ -1,7 +1,136 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T11:37:19.505Z",
+  "updated_at": "2026-09-09T12:06:53.892Z",
   "stories": [
+    {
+      "story_id": "wt-ae5023f974deba91",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "bundestag-cdu-aussenpolitiker-rottgen-verteidigt-ausgaben-fur-die-ukraine-opposition-kri-deba91",
+      "title": "Bundestag - CDU-Außenpolitiker Röttgen verteidigt Ausgaben für die Ukraine, Opposition kritisiert Fokus auf Verteidigung",
+      "source_summary": "Im Bundestag wurde in der laufenden Haushaltswoche über die Ausgaben für die Außenpolitik gesprochen. Deutschlandfunk berichtet, CDU-Außenpolitiker Norbert Röttgen habe die geplante Ukraine-Hilfe von zwölf Milliarden Euro verteidigt.\n\nZugleich kritisierten Oppositionsvertreter den Fokus auf Verteidigung und verwiesen auf unterschiedliche Ansätze bei Diplomatie, Verteidigung und Auswärtigem Amt. Für das kommende Jahr sind 5,9 Milliarden Euro für das Auswärtige Amt eingeplant, etwa 68 Millionen Euro weniger als in diesem Jahr.",
+      "summary": "Im Bundestag ging es in der Haushaltswoche um Außenpolitik, Ukraine-Hilfe und die Verteilung der Mittel zwischen Diplomatie und Verteidigung. Die Meldung ist neu genug für eine kurze Berichterstattung, weil sie konkrete Beträge und politische Gegensätze nennt.",
+      "detail_summary": "Die Meldung beschreibt eine aktuelle Haushaltsdebatte im Bundestag mit klar benannten Beträgen: zwölf Milliarden Euro für Ukraine-Hilfe, 5,9 Milliarden Euro für das Auswärtige Amt und fast 110 Milliarden Euro für den Verteidigungsetat. Materiell relevant ist das, weil damit staatliche Mittel zwischen außenpolitischer Unterstützung, Diplomatie und Militär verschoben beziehungsweise gegeneinander abgewogen werden. Der Wirkpfad läuft über die künftige Verfügbarkeit und Priorisierung öffentlicher Gelder, nicht über bereits eingetretene Folgen. Möglich sind später veränderte Handlungsspielräume für Außenpolitik und humanitäre Hilfe, falls sich die Ansätze im Verfahren bestätigen. Offen bleibt, wie der Bundestag die Zahlen am Ende beschließt; belastbar ist hier zunächst nur die Debatte und die zugeschriebene Position einzelner Redner.",
+      "why_relevant": "Die Meldung betrifft die Verteilung erheblicher Bundesmittel und damit eine konkrete politische Priorisierung mit potenziellen Folgen für Außenpolitik, humanitäre Hilfe und Verteidigung.",
+      "topic": [
+        "Europa",
+        "Geopolitik",
+        "Finanzen",
+        "Demokratie"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Mehr Mittel für Ukraine-Hilfe und Diplomatie können Schutz und Unterstützung stärken; zugleich kann die Betonung von Verteidigung andere Haushaltsbereiche verdrängen.",
+          "positive_path": {
+            "mechanism": "Zusätzliche oder gesicherte Mittel für Ukraine-Hilfe und Diplomatie können humanitäre und außenpolitische Handlungsspielräume erweitern.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Eine starke Priorität für Verteidigung kann Mittel für Diplomatie und andere zivile Aufgaben relativ schwächen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung fehlt ein belastbarer Bezug zu Umwelt- oder Klimawirkungen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Haushaltsdebatte zeigt politische Prioritätensetzung und parlamentarische Auseinandersetzung. Das kann demokratische Kontrolle sichtbar machen, auch wenn noch keine Entscheidung über den endgültigen Haushalt vorliegt.",
+          "positive_path": {
+            "mechanism": "Öffentliche Haushaltsdebatten machen Verteilungskonflikte sichtbar und erhöhen die Nachprüfbarkeit politischer Prioritäten.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Starke Polarisierung zwischen Regierung und Opposition kann die Verständigung über Haushaltsprioritäten erschweren.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T12:06:53.892Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T11:55:34.000Z",
+      "last_updated": "2026-09-09T12:08:49.771Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-adff6678df3600f32da7",
+      "case_file": null,
+      "source_published_at": "2026-09-09T11:55:34.000Z",
+      "published_at": "2026-09-09T12:08:49.771Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Wie verändern sich die Haushaltsansätze im weiteren parlamentarischen Verfahren?",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Änderungen bei den genannten Etatansätzen oder der Beschlussstand des Haushalts",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bf07ceb274455420",
+          "announced_at": "2026-09-09T11:55:34.000Z",
+          "follow_up_date": "2026-09-16T12:08:49.771Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Bleibt die genannte Ukraine-Hilfe von zwölf Milliarden Euro im Verfahren bestehen?",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigter oder veränderter Ansatz für Ukraine-Hilfe",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-50fb8dfb956735dc",
+          "announced_at": "2026-09-09T11:55:34.000Z",
+          "follow_up_date": "2026-09-16T12:08:49.771Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/cdu-aussenpolitiker-roettgen-verteidigt-ausgaben-fuer-die-ukraine-opposition-kritisiert-fokus-auf-ve-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:55:34.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-a098a78411837ab4",
       "title_image": {
@@ -1887,105 +2016,6 @@
           "source_type": "official_rss",
           "published_at": "2026-09-08",
           "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-3c1a41d7234d7f44",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "eu-gericht-bestatigt-booking-darf-etraveli-nicht-ubernehmen-4d7f44",
-      "title": "EU-Gericht bestätigt: Booking darf eTraveli nicht übernehmen",
-      "source_summary": "Booking.com darf das Flugportal eTraveli nach der berichteten Entscheidung des Gerichts der Europäischen Union in Luxemburg nicht übernehmen. Laut der Quelle bestätigte das Gericht am Mittwoch die Entscheidung der EU-Kommission von 2023. Als Begründung nennt der Bericht, eine Fusion der beiden Firmen würde den Wettbewerb deutlich behindern.\n\nEin Aktenzeichen ist genannt. Weitere Details zur Begründung oder zu Folgen für die Unternehmen werden in der gelieferten Quelle nicht ausgeführt.",
-      "summary": "Das EU-Gericht hat laut Bericht die Übernahme von eTraveli durch Booking bestätigt verboten. Damit bleibt der Zusammenschluss vorerst gesperrt.",
-      "detail_summary": "Der berichtete Kern ist eine verbindliche Wettbewerbsentscheidung mit unmittelbarer Bedeutung für zwei Unternehmen. Sie kann Kapital- und Marktflüsse sowie die Struktur des Online-Reisemarkts beeinflussen, weil ein geplanter Zusammenschluss nicht zustande kommt. Für Mensch, Planet und Demokratie ist die Relevanz hier vor allem indirekt und wirtschaftlich; die konkrete Breitenwirkung bleibt offen. Ein belastbarer Wirkpfad ist die veränderte Marktordnung durch das Verbot der Fusion. Zur Reichweite, Dauer und zu möglichen Folgewirkungen liefert die Quelle keine vertieften Angaben, daher bleibt die Einordnung vorläufig.",
-      "why_relevant": "Die Entscheidung stoppt eine geplante Übernahme im europäischen Reisemarkt und verändert damit unmittelbar eine mögliche Markt- und Wettbewerbsstruktur.",
-      "topic": [
-        "Europa",
-        "Wirtschaft"
-      ],
-      "status": "beschlossen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Für Kundinnen und Kunden kann mehr Wettbewerb später günstigere oder bessere Angebote stützen; zugleich bleibt der unmittelbare Nutzen aus der untersagten Fusion offen.",
-          "positive_path": {
-            "mechanism": "Eine stärkere Wettbewerbsstruktur kann Preisdruck und Auswahl im Online-Reisemarkt erhalten.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Der geplatzte Zusammenschluss kann geplante Integrations- oder Skaleneffekte verhindern.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Die Quelle nennt keinen direkten Umweltbezug oder konkrete ökologische Folge.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "gering",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Die bestätigte Zuständigkeit und Durchsetzung eines Wettbewerbsurteils kann die demokratische Korrekturfähigkeit von Marktregeln stützen.",
-          "positive_path": {
-            "mechanism": "Gerichtliche Kontrolle von Fusionsentscheidungen stärkt die Bindung wirtschaftlicher Macht an Regeln.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          },
-          "negative_path": null
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T08:52:20.295Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T07:59:55.000Z",
-      "last_updated": "2026-09-09T08:55:33.598Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-fa335ca7ff77118cdd30",
-      "case_file": null,
-      "source_published_at": "2026-09-09T07:59:55.000Z",
-      "published_at": "2026-09-09T08:55:33.598Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/eu-gericht-bestaetigt--booking-darf-etraveli-nicht-uebernehmen-38225950.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T07:59:55.000Z",
-          "primary_source": false
         }
       ]
     },
