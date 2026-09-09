@@ -1,7 +1,479 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T13:36:49.895Z",
+  "updated_at": "2026-09-09T13:52:25.740Z",
   "stories": [
+    {
+      "story_id": "wt-3707b0d66087698b",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3707b0d66087698b-2488403a6cd11af6-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3707b0d66087698b-85c9d7f9d4e20249-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3707b0d66087698b-f293f55b1aa983cb-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "zwolf-lander-wollen-handel-mit-israels-siedlungen-im-westjordanland-sanktionieren-87698b",
+      "title": "Zwölf Länder wollen Handel mit Israels Siedlungen im Westjordanland sanktionieren",
+      "source_summary": "Zwölf Staaten wollen den Handel mit Produkten aus israelischen Siedlungen im Westjordanland sanktionieren. Laut den Berichten gehören Großbritannien, Frankreich und Kanada dazu, Deutschland aber nicht. Als Begründung nennen die Außenministerien, die Siedlungen verstießen gegen Völkerrecht. Die Berichte bleiben bei einer Ankündigung; ob und in welchem Umfang die Beschränkungen rechtlich und praktisch umgesetzt werden, ist offen.\n\nIsrael verurteilte das Vorhaben und reagierte mit der Schließung des britischen Konsulats in Jerusalem. Zugleich wies die israelische Justiz einen Eilantrag gegen das umstrittene Siedlungsprojekt E1 zurück. Die Meldungen nennen außerdem eine zuletzt deutlich gestiegene Gewalt israelischer Siedler gegen Palästinenser im besetzten Westjordanland. Der genaue Umfang der Sanktionen und mögliche Gegenmaßnahmen bleiben unklar.",
+      "summary": "Zwölf Staaten wollen den Handel mit Waren aus israelischen Siedlungen im Westjordanland sanktionieren. Der Schritt ist angekündigt, nicht umgesetzt, und Deutschland gehört laut den Berichten nicht dazu.",
+      "detail_summary": "Die Meldung beschreibt eine angekündigte Sanktionslinie gegen Produkte aus israelischen Siedlungen im Westjordanland. Das ist außenpolitisch und wirtschaftlich relevant, weil Handel, Diplomatie und der Konflikt im Westjordanland zusammenlaufen. Ein möglicher Wirkpfad führt über erschwerten Absatz, politischen Druck und diplomatische Gegenreaktionen. Als unmittelbare Folge nennen die Berichte Israels Reaktion mit der Schließung des britischen Konsulats in Jerusalem. Offen bleibt, wie weit die Beschränkungen konkret reichen und ob sie tatsächlich in Kraft gesetzt werden.",
+      "why_relevant": "Der angekündigte Eingriff betrifft Handel, Diplomatie und den Nahost-Konflikt zugleich und kann wirtschaftliche sowie politische Folgewirkungen auslösen.",
+      "topic": [
+        "Europa",
+        "Geopolitik",
+        "Wirtschaft"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Handel mit Siedlungswaren kann Absatz und politische Kosten erhöhen, zugleich aber Gegenreaktionen und Eskalation auslösen. Ob netto Schutz, Druck oder Verhärtung überwiegt, bleibt offen.",
+          "positive_path": {
+            "mechanism": "Beschränkter Absatz von Siedlungswaren kann ökonomischen und politischen Druck auf die Siedlungspolitik erhöhen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Gegenmaßnahmen wie diplomatische Eskalation oder Strafschritte können Beziehungen verschlechtern und Konfliktlinien verhärten.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus den Quellen ergibt sich kein belastbarer Umweltpfad. Der Bezug liegt auf Handel und Siedlungspolitik, nicht auf einer klar belegten Umweltwirkung.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Maßnahme folgt politischer Willensbildung und völkerrechtlicher Begründung, kann aber auch die Korrekturfähigkeit in einem hoch umkämpften Konflikt verschärfen oder stärken.",
+          "positive_path": {
+            "mechanism": "Koordinierte Staatenreaktion kann politische Verantwortungszuschreibung und öffentlich sichtbare Begrenzung wirtschaftlicher Verflechtungen stärken.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Sanktions- und Gegenreaktionsspiralen können diplomatische Kanäle belasten und Konflikte politisch weiter verhärten.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Zahl der Staaten",
+            "value": "zwölf",
+            "unit": "Staaten",
+            "context": "Die Ankündigung kommt von zwölf Ländern.",
+            "claim_id": "wt-3707b0d66087698b-v2-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "verbraucherinnen",
+          "europa"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T13:52:25.740Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T15:45:32.000Z",
+      "last_updated": "2026-09-09T13:56:01.216Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-a5922a6b009747149c00",
+      "case_file": null,
+      "source_published_at": "2026-09-08T15:45:32.000Z",
+      "published_at": "2026-09-08T18:40:36.700Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob und wann die angekündigten Handelsbeschränkungen rechtlich beschlossen oder umgesetzt werden.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "förmliche Beschluss- oder Umsetzungsmitteilung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0fa8541f64c3c3ca",
+          "announced_at": "2026-09-08T15:45:32.000Z",
+          "follow_up_date": "2026-09-15T18:40:36.700Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, welche konkreten Waren, Staaten und Rechtsinstrumente von den geplanten Sanktionen erfasst werden.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "benannte Produktgruppen und Staatenliste",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-04852b2a8be0ba9b",
+          "announced_at": "2026-09-08T17:44:29.000Z",
+          "follow_up_date": "2026-09-15T18:40:36.700Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob und wann die angekündigten Handelssanktionen tatsächlich eingeführt werden",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Beschluss, Inkrafttreten oder Aufschub der Maßnahme",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-97c083409561011d",
+          "announced_at": "2026-09-08T15:45:32.000Z",
+          "follow_up_date": "2026-09-16T13:56:01.216Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Welche Waren und Ausnahmen die Staaten konkret festlegen",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Liste betroffener Produktgruppen und Ausnahmeregeln",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-1e1cc2034a8a46d1",
+          "announced_at": "2026-09-08T17:44:29.000Z",
+          "follow_up_date": "2026-09-16T13:56:01.216Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wie Israel auf die Ankündigung diplomatisch und wirtschaftlich reagiert",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Neue Gegenmaßnahmen, Erklärungen oder Einschränkungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-16db0d1bbb123380",
+          "announced_at": "2026-09-08T15:45:32.000Z",
+          "follow_up_date": "2026-09-16T13:56:01.216Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/zwoelf-laender-wollen-handel-mit-israels-siedlungen-im-westjordanland-sanktionieren-38222080.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:45:32.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/zwoelf-laender-sanktionieren-handel-mit-israelischen-siedlungen-in-besetzten-palaestinensergebieten-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T17:44:29.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4219ebd958b73c3c",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4219ebd958b73c3c-7c03d826aa554a04-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4219ebd958b73c3c-af1d5e9e3b65e300-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4219ebd958b73c3c-b2f6b5c98ea64206-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "zucker-sussstoff-und-co-was-verbraucher-wissen-sollten-b73c3c",
+      "title": "Zucker, Süßstoff und Co.: Was Verbraucher wissen sollten",
+      "source_summary": "Der Beitrag von ZDFheute erklärt, warum Verbraucher bei Zucker, Süßstoffen und Zuckeraustauschstoffen unterscheiden sollen. Er nennt Grenzwerte und Eigenschaften einzelner Süßungsmittel und verweist darauf, dass zu viel Zucker das Krankheitsrisiko erhöhen kann. \n\nNeu im Text ist die politische Klarstellung, dass es keine Zuckersteuer auf Light-Produkte geben soll. Die Redaktion ordnet das als Reaktion auf Kritik an einer möglichen Ausweitung der Zuckersteuer ein; offen bleibt, ob daraus ein konkreter Gesetzesvorschlag folgt.",
+      "summary": "Klingbeil grenzt Light-Produkte von einer möglichen Zuckersteuer ab. Das ist vor allem eine politische Klarstellung mit offenem Folgepfad.",
+      "detail_summary": "Der Beitrag verbindet Gesundheitswissen zu Zucker und Süßstoffen mit einer aktuellen politischen Aussage zu Light-Produkten. Sachlich neu ist die Klarstellung, dass auf Light-Produkte keine Zuckersteuer kommen soll. Für Verbraucher und Hersteller kann das den Erwartungshorizont bei Produktpreisen und Reformdebatten verändern. Eine tatsächliche Wirkung entsteht daraus aber erst, wenn daraus ein Entwurf, ein Beschluss oder eine Umsetzung folgt. Die Evidenz bleibt journalistisch und ist für die politische Aussage bislang nur eine Quelle.",
+      "why_relevant": "Die Klarstellung betrifft eine mögliche Steuerregel und damit einen potenziellen Eingriff in Preise, Produktgestaltung und Konsumverhalten.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Eine Ausnahmeregel für Light-Produkte kann Preissignale und Produktwahl begrenzen, zugleich aber die Debatte um Zuckerreduktion steuerlich fokussieren.",
+          "positive_path": {
+            "mechanism": "Keine Besteuerung von Light-Produkten kann Fehlanreize und Verunsicherung in diesem Segment vermeiden.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Eine engere oder weiter gefasste Zuckersteuer könnte zu Preisänderungen und Produktumstellungen bei zuckerhaltigen Getränken führen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Quelle fehlt ein belastbarer Pfad zu Umwelt- oder Ressourceneffekten.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Klarstellung macht eine steuerpolitische Abgrenzung öffentlich nachvollziehbar, ersetzt aber keine demokratische Entscheidung über einen konkreten Entwurf.",
+          "positive_path": {
+            "mechanism": "Mehr Transparenz über den geplanten Geltungsbereich kann die öffentliche Prüfung von Steuerpolitik erleichtern.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Unklare Eckpunkte oder wechselnde Signale können die Debatte über Reichweite und Prioritäten der Maßnahme verengen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T13:52:25.740Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T04:07:00.000Z",
+      "last_updated": "2026-09-09T13:55:36.966Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-5e84f075a7d1472bb438",
+      "case_file": null,
+      "source_published_at": "2026-09-09T04:07:00.000Z",
+      "published_at": "2026-09-09T05:38:36.886Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und wann eine Zuckersteuer oder eine andere Abgabe tatsächlich im Regierungsverfahren landet.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "amtlicher Verfahrensstand oder Kabinettsbeschluss",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-dc442defc03dcf51",
+          "announced_at": "2026-09-09T04:07:00.000Z",
+          "follow_up_date": "2026-09-16T05:38:36.886Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Koalition einen konkreten Gesetzesvorschlag zur Zuckersteuer vorlegt.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Vorlage oder Ausbleiben eines Gesetzesentwurfs",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-229b403b440123ac",
+          "announced_at": "2026-09-09T04:07:00.000Z",
+          "follow_up_date": "2026-09-16T13:55:36.966Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob Light-Produkte dauerhaft ausdrücklich von einer Zuckersteuer ausgenommen bleiben.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Wortlaut eines Entwurfs, Beschlusses oder einer öffentlichen Klarstellung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-24665a7bd4c1522d",
+          "announced_at": "2026-09-09T04:07:00.000Z",
+          "follow_up_date": "2026-09-16T13:55:36.966Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/ratgeber/zucker-suessstoff-zuckeraustauschstoffe-koerper-wirkung-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T04:07:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-bbd9c459d6504558",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbd9c459d6504558-910e96667e91e563-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbd9c459d6504558-8c8bc962becb0e5a-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbd9c459d6504558-433f9b1753c8fe57-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ratko-mladic-serbien-verherrlicht-einen-kriegsverbrecher-und-europa-schaut-hilflos-zu-504558",
+      "title": "Ratko Mladić: Serbien verherrlicht einen Kriegsverbrecher – und Europa schaut hilflos zu",
+      "source_summary": "In Belgrad fand nach der gemeldeten Quelle eine Verabschiedung von Ratko Mladić statt. Die Quelle schreibt, dass sich dort Tausende vom »Schlächter vom Balkan« verabschiedeten und dass auch amtierende Minister der serbischen Regierung unter den Teilnehmenden gewesen seien.\n\nDer Beitrag ordnet das Ereignis politisch scharf ein und verknüpft es mit der Frage nach Serbiens EU-Perspektive. Offen bleibt in der vorliegenden Quelle der vollständige Kontext der Teilnahme, die genaue Zahl der Anwesenden und ob es weitere, unabhängige Bestätigungen gibt.",
+      "summary": "Die Meldung beschreibt eine öffentliche Verabschiedung von Ratko Mladić in Belgrad mit politischer Beteiligung aus der serbischen Regierung. Sie ist relevant, weil sie Erinnerungspolitik, Außenbeziehungen und den EU-Kontext berührt.",
+      "detail_summary": "Die Quelle berichtet über eine Verabschiedung von Ratko Mladić in Belgrad und nennt dabei Tausende Teilnehmende sowie amtierende Minister aus der serbischen Regierung. Das ist politisch relevant, weil der Vorgang Erinnerungspolitik und den Umgang des Staates mit einem verurteilten Kriegsverbrecher berührt. Ein möglicher Wirkpfad führt über öffentliche Legitimation oder Distanzierung zu diplomatischen Spannungen und zu Folgewirkungen in EU-Beitrittsdebatten. Ob daraus tatsächlich eine Kursänderung folgt, bleibt offen; dafür fehlen in der vorliegenden Quelle belastbare Folgebelege. Die Evidenzlage ist vorläufig, weil hier nur ein journalistischer Bericht vorliegt.",
+      "why_relevant": "Öffentliche Ehrung oder Duldung eines verurteilten Kriegsverbrechers kann politische Beziehungen, EU-Prozesse und die demokratische Korrekturfähigkeit berühren.",
+      "topic": [
+        "Europa",
+        "Geopolitik",
+        "Politik"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Wenn amtliche Vertreter eine solche Verabschiedung mittragen, kann das die politische Normalisierung von Kriegsverbrechen fördern und Vertrauen in staatliche Distanzierung schwächen.",
+          "positive_path": {
+            "mechanism": "Öffentliche Debatte kann Gegenreaktionen, Distanzierungen und bessere Aufarbeitung auslösen.",
+            "source_ids": [
+              "spiegel-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Amtliche Teilnahme kann die Verherrlichung eines Kriegsverbrechers und die politische Polarisierung verstärken.",
+            "source_ids": [
+              "spiegel-schlagzeilen"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der vorliegenden Meldung ergibt sich kein belastbarer Umwelt- oder Klimapfad.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Beteiligung amtierender Minister an einer solchen Verabschiedung kann die demokratische Erinnerungskultur und die Glaubwürdigkeit staatlicher Normen belasten.",
+          "positive_path": {
+            "mechanism": "Öffentliche Kritik kann Korrekturen, Distanzierungen und institutionelle Klarstellungen anstoßen.",
+            "source_ids": [
+              "spiegel-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Die sichtbare Nähe von Regierungsmitgliedern zu einer Verherrlichung kann Normen gegen Kriegsverbrechen untergraben.",
+            "source_ids": [
+              "spiegel-schlagzeilen"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T13:52:25.740Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T13:48:00.000Z",
+      "last_updated": "2026-09-09T13:54:04.472Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-b2a497b577a79cde24b6",
+      "case_file": null,
+      "source_published_at": "2026-09-09T13:48:00.000Z",
+      "published_at": "2026-09-09T13:54:04.472Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "spiegel-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob serbische Regierungsmitglieder offiziell teilgenommen haben und in welchem Umfang.",
+          "source_id": "spiegel-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "offizielle Bestätigung oder Korrektur",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-af7ab9058f23df80",
+          "announced_at": "2026-09-09T13:48:00.000Z",
+          "follow_up_date": "2026-09-16T13:54:04.472Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/ausland/ratko-mladic-serbien-verherrlicht-einen-kriegsverbrecher-und-europa-schaut-hilflos-zu-a-b5f2372c-12d5-40c5-b680-87647f8d83b3",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:48:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-491857684cc65a88",
       "title_image": {
@@ -4499,121 +4971,6 @@
       ]
     },
     {
-      "story_id": "wt-4219ebd958b73c3c",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "zucker-sussstoff-und-co-was-verbraucher-wissen-sollten-b73c3c",
-      "title": "Zucker, Süßstoff und Co.: Was Verbraucher wissen sollten",
-      "source_summary": "Ein ZDFheute-Text fasst gesundheitliche und ernährungsbezogene Einordnungen zu Zucker, Süßstoffen und Zuckeraustauschstoffen zusammen. Er nennt als aktuellen politischen Punkt, dass Finanzminister Klingbeil eine Zuckersteuer auf Light-Produkte ausschließt und damit auf Kritik an einer möglichen Ausweitung reagiert.\n\nZudem verweist der Text auf strengere Nutri-Score-Kriterien seit Jahresbeginn und auf die DGE-Empfehlung von höchstens 50 Gramm freiem Zucker pro Tag für gesunde Erwachsene. Eine Zahl aus dem Text lautet: 2024 wurden in Deutschland 7,7 Milliarden Liter zuckerhaltige Getränke hergestellt.",
-      "summary": "Der Text bündelt Gesundheitswissen zu Zucker, Süßstoffen und einer möglichen Zuckersteuer. Neu ist vor allem die politische Klarstellung zu Light-Produkten; die materielle Folge läge erst in späteren Steuer- oder Produktentscheidungen.",
-      "detail_summary": "Sachlich relevant ist hier die politische Aussage, dass es keine Zuckersteuer auf Light-Produkte geben soll. Das kann für Hersteller, Handel und Verbraucher die Preis- und Sortimentsentwicklung beeinflussen, falls daraus eine verbindliche Regel wird. Für Mensch und Gesundheit bleibt der Wirkpfad indirekt: weniger oder anders besteuerte süße Getränke könnten den Konsum verschieben. Für Demokratie ist vor allem die Klarheit über den Kurs der Finanzpolitik relevant, nicht schon eine Wirkung an sich. Offen bleibt, ob und in welcher Form überhaupt ein belastbarer Gesetzes- oder Verordnungsschritt folgt. Die Quelle ist journalistisch und bündelt mehrere Einordnungen; der Verfahrensstand ist deshalb nur vorläufig belegbar.",
-      "why_relevant": "Die Meldung enthält eine konkrete politische Klarstellung zu einer möglichen Zuckersteuer und berührt damit Verbraucherpreise, Produktgestaltung und Gesundheitspolitik.",
-      "topic": [
-        "Politik"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Eine mögliche Steuer auf gezuckerte Getränke kann den Zuckerkonsum senken und damit Gesundheitsrisiken mindern. Die Ausnahme für Light-Produkte kann zugleich Lenkungswirkung begrenzen oder die Auswahl verschieben.",
-          "positive_path": {
-            "mechanism": "Teurere gezuckerte Getränke können den Kauf senken und so die Zuckeraufnahme reduzieren.",
-            "source_ids": [
-              "zdfheute-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Eine enge Ausgestaltung ohne Light-Produkte kann Ausweichreaktionen, geringe Lenkung oder Verlagerungen in andere Süßwaren begünstigen.",
-            "source_ids": [
-              "zdfheute-nachrichten"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "In den gelieferten Quellen gibt es keinen belastbaren Pfad zu Umwelt- oder Klimawirkungen. Die Meldung betrifft vor allem Ernährungs- und Produktpolitik.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Die Klarstellung zu einer umstrittenen Abgabe schafft mehr Transparenz über den politischen Kurs. Das stärkt die Nachvollziehbarkeit staatlicher Steuerung, ohne schon einen demokratischen Effekt zu belegen.",
-          "positive_path": {
-            "mechanism": "Ein klar benannter Verzicht auf eine Steuer für Light-Produkte macht politische Prioritäten und Grenzen für Öffentlichkeit und Parlament besser prüfbar.",
-            "source_ids": [
-              "zdfheute-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Bleibt die Regelung unpräzise oder wechselhaft, kann das den Eindruck inkonsistenter Steuerpolitik verstärken.",
-            "source_ids": [
-              "zdfheute-nachrichten"
-            ]
-          }
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T05:36:49.788Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T04:07:00.000Z",
-      "last_updated": "2026-09-09T05:38:36.886Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-5e84f075a7d1472bb438",
-      "case_file": null,
-      "source_published_at": "2026-09-09T04:07:00.000Z",
-      "published_at": "2026-09-09T05:38:36.886Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "zdfheute-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob und wann eine Zuckersteuer oder eine andere Abgabe tatsächlich im Regierungsverfahren landet.",
-          "source_id": "zdfheute-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "amtlicher Verfahrensstand oder Kabinettsbeschluss",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-dc442defc03dcf51",
-          "announced_at": "2026-09-09T04:07:00.000Z",
-          "follow_up_date": "2026-09-16T05:38:36.886Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/ratgeber/zucker-suessstoff-zuckeraustauschstoffe-koerper-wirkung-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T04:07:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-bd410136bb400bcb",
       "title_image": {
         "mode": "impact_card",
@@ -6585,148 +6942,6 @@
       ]
     },
     {
-      "story_id": "wt-3707b0d66087698b",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "zwolf-lander-wollen-handel-mit-israels-siedlungen-im-westjordanland-sanktionieren-87698b",
-      "title": "Zwölf Länder wollen Handel mit Israels Siedlungen im Westjordanland sanktionieren",
-      "source_summary": "Zwölf Staaten wollen den Handel mit Waren aus israelischen Siedlungen im Westjordanland sanktionieren. Nach den Meldungen zählen dazu Großbritannien, Frankreich und Kanada, Deutschland nicht. Israel verurteilte das Vorhaben und ordnete die Schließung des britischen Konsulats in Jerusalem an.\n\nZugleich wies die israelische Justiz einen Eilantrag gegen das umstrittene Siedlungsprojekt E1 zurück. Eine der Quellen nennt zudem die Begründung der Staaten, die Siedlungen verstießen gegen Völkerrecht. Offen bleibt, wie konkret die Handelsbeschränkungen ausgestaltet werden und wann sie greifen sollen.",
-      "summary": "Zwölf Länder wollen Handel mit Siedlungswaren sanktionieren. Die Meldung hat politischen und wirtschaftlichen Bezug, der genaue Umfang bleibt offen.",
-      "detail_summary": "Die Nachricht beschreibt eine gemeinsame Ankündigung von zwölf Staaten, den Handel mit Waren aus israelischen Siedlungen im Westjordanland zu sanktionieren. Genannt werden Großbritannien, Frankreich und Kanada; Deutschland gehört nach der Meldung nicht dazu. Israel weist das Vorhaben zurück und reagiert mit der Schließung des britischen Konsulats in Jerusalem. Parallel meldet die Quelle eine juristische Niederlage der Gegner des E1-Projekts: Ein Eilantrag gegen das Siedlungsvorhaben wurde abgewiesen. Für die Wirkung ist vor allem der mögliche Pfad über Handelsbeschränkungen, diplomatische Spannungen und zusätzliche Belastungen für Siedlungsökonomie und Außenbeziehungen relevant. Sicher ist bisher nur die Ankündigung; ob und wie weit die Maßnahmen umgesetzt werden, bleibt offen.",
-      "why_relevant": "Die Meldung betrifft mögliche neue Handelsbeschränkungen gegen Siedlungswaren und damit einen materiellen Eingriff in Handel, Diplomatie und den Konfliktkontext.",
-      "topic": [
-        "Europa",
-        "Geopolitik",
-        "Wirtschaft"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Die angekündigten Handelsbeschränkungen können den Warenfluss aus Siedlungen mindern und politischen Druck erhöhen, zugleich aber diplomatische Gegenreaktionen und Belastungen für Betroffene auslösen.",
-          "positive_path": {
-            "mechanism": "Weniger Handel mit Siedlungswaren kann wirtschaftlichen Anreiz und internationale Normalisierung der Siedlungen verringern.",
-            "source_ids": [
-              "stern-schlagzeilen",
-              "dlf-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Gegenreaktionen wie Konsulatsschließung und weitere Eskalation können diplomatische Spannungen und Konfliktkosten erhöhen.",
-            "source_ids": [
-              "stern-schlagzeilen",
-              "dlf-nachrichten"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Ein belastbarer Umweltwirkpfad ist in den gelieferten Quellen nicht beschrieben.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Die Ankündigung betrifft staatliche Außen- und Handelspolitik sowie rechtliche Auseinandersetzungen; das kann politische Korrekturfähigkeit stärken, zugleich aber Konfliktverhärtung fördern.",
-          "positive_path": {
-            "mechanism": "Koordinierte Beschränkungen zeigen eine gemeinsame politische Position und können rechtliche und diplomatische Kontrolle verstärken.",
-            "source_ids": [
-              "stern-schlagzeilen",
-              "dlf-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Vergeltungsmaßnahmen und die Schärfung des Konfliktrahmens können Verhandlungen und institutionelle Deeskalation erschweren.",
-            "source_ids": [
-              "stern-schlagzeilen",
-              "dlf-nachrichten"
-            ]
-          }
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T18:37:17.573Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T15:45:32.000Z",
-      "last_updated": "2026-09-08T18:40:36.700Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-a5922a6b009747149c00",
-      "case_file": null,
-      "source_published_at": "2026-09-08T15:45:32.000Z",
-      "published_at": "2026-09-08T18:40:36.700Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ],
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Prüfen, ob und wann die angekündigten Handelsbeschränkungen rechtlich beschlossen oder umgesetzt werden.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "förmliche Beschluss- oder Umsetzungsmitteilung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-0fa8541f64c3c3ca",
-          "announced_at": "2026-09-08T15:45:32.000Z",
-          "follow_up_date": "2026-09-15T18:40:36.700Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Prüfen, welche konkreten Waren, Staaten und Rechtsinstrumente von den geplanten Sanktionen erfasst werden.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "benannte Produktgruppen und Staatenliste",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-04852b2a8be0ba9b",
-          "announced_at": "2026-09-08T17:44:29.000Z",
-          "follow_up_date": "2026-09-15T18:40:36.700Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/zwoelf-laender-wollen-handel-mit-israels-siedlungen-im-westjordanland-sanktionieren-38222080.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T15:45:32.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/zwoelf-laender-sanktionieren-handel-mit-israelischen-siedlungen-in-besetzten-palaestinensergebieten-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T17:44:29.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-b84af952fb761238",
       "title_image": {
         "mode": "impact_card",
@@ -7099,12 +7314,25 @@
     {
       "story_id": "wt-c5b69762f7366b61",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c5b69762f7366b61-4e34e70a49d22ea4-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c5b69762f7366b61-656466908ed69133-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c5b69762f7366b61-622e9ae314962629-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c5b69762f7366b61-277e33936bdd0da7-source.png"
         }
       },
       "slug": "bundeshaushalt-fur-2027-kritik-an-klingbeils-klima-sparplanen-366b61",
@@ -8438,9 +8666,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8a0ad94fdbe647e0-d7d6b13b30a1ac98-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8a0ad94fdbe647e0-c81772120d95f0c9-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8a0ad94fdbe647e0-320f973848272777-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "afd-will-alle-parteien-zu-gesprachen-einladen-e647e0",
@@ -8514,12 +8752,25 @@
     {
       "story_id": "wt-db0e00874c2fe321",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-db0e00874c2fe321-ef9ced6cf086bac5-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-db0e00874c2fe321-732f4e30b9e432fc-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-db0e00874c2fe321-db1a77d72361d3cb-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-db0e00874c2fe321-a48f6a08b37e903b-source.png"
         }
       },
       "slug": "insolvenzen-firmeninsolvenzen-sinken-im-august-aber-mehr-betroffene-2fe321",
