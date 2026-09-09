@@ -31,6 +31,10 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 
 ## Veröffentlichungsqualität
 
+- Für die ausschließlich manuelle Rubrik „Buch & Wirkung“ gilt docs/news/BUCH-UND-WIRKUNG.md.
+- Die freigegebenen Manuskripte dieser Rubrik bleiben einschließlich Zeichensetzung unverändert (spezifische Ausnahme von der allgemeinen Typografie-Regel).
+- Nats ist der Spitzname der Autorin Natalie Weber. In dieser Rubrik ist ihr festes Dropbox-Portrait MIT ihrem eigenen Buch „Die neue Ordnung des Wohlstands“ verbindlich; das rezensierte Verlagscover bleibt separat. Keine Montage, keine Generierung, kein Buchtausch im Portrait.
+
 - Veröffentlichte Texte, Downloads und Metadaten verwenden ausschließlich kurze ASCII-Bindestriche.
 - Dokument-Erstellerin und Autorin der eigenen WÖk-Publikationen ist Natalie Weber.
 - Interne Produktionsnotizen und lokale Dateipfade gehören nicht in veröffentlichte Inhalte oder Metadaten.

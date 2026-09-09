@@ -73,6 +73,8 @@
 
   function matches(card, filter) {
     if (filter === "all") return true;
+    if (filter === "analysis") return card.hasAttribute("data-news-editorial-analysis") && card.dataset.newsFormat !== "book_and_impact";
+    if (filter === "book_and_impact") return card.dataset.newsFormat === "book_and_impact";
     if (filter === "high") return card.dataset.highImpact === "true";
     const values = `${card.dataset.topic || ""} ${card.dataset.dimensions || ""}`.toLowerCase();
     return values.split(/\s+/).includes(filter);

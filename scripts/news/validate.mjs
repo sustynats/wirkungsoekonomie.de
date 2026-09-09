@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { checkManualPages } from "./check-manual-pages.mjs";
 import { editorialLabel } from "./systemic-analysis.mjs";
 import { readerHtmlHasEditorialResidue } from "./reader-copy.mjs";
 import path from "node:path";
@@ -14,6 +15,7 @@ const readJson = (relative) => JSON.parse(fs.readFileSync(path.join(ROOT, relati
 const fail = (message) => { throw new Error(message); };
 
 const registry = loadNewsRegistry(ROOT);
+checkManualPages(ROOT);
 const state = readJson("data/news/state.json");
 const store = readJson("data/news/stories.json");
 const usage = readJson("data/news/usage.json");

@@ -1,4 +1,5 @@
 import crypto from "node:crypto";
+import { assertAutomatable } from "./manual-policy.mjs";
 import { hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
 import { SYSTEMIC_ANALYSIS_RULE, JOURNALISTIC_STYLE_RULE, IMPACT_DIRECTION_RULE, AUTHOR_ANALYSIS_RULE } from "./analysis-principles.mjs";
 import { DIRECTION_SEPARATION_RULE } from './direction-assessment.mjs';
@@ -227,6 +228,7 @@ export function buildEditorialResearchPacket(story, assessment) {
 }
 
 export function buildEditorialAnalysisPrompt(story, assessment, qualityErrors = []) {
+  assertAutomatable(story);
   const packet = buildEditorialResearchPacket(story, assessment);
   return [
     "Du erstellst einen eigenständigen Beitrag MEINUNG & ANALYSE nach der Methodik der Wirkungsökonomie. Kein längeres Nachrichtenreferat: Er erklärt den zusätzlichen systemischen Zusammenhang und trennt Fakten, methodische Analyse und persönliche Einordnung.",
@@ -264,6 +266,8 @@ function paragraph(value, max = 2400) {
 }
 
 export function sanitizeEditorialAnalysis(raw, story) {
+  assertAutomatable(story);
+  assertAutomatable(raw);
   if (!raw || typeof raw !== "object") return null;
   const sourceIds = new Set(editorialSources(story).map(editorialSourceRef));
   const sections = (raw.sections || []).slice(0, 13).map((section) => ({
