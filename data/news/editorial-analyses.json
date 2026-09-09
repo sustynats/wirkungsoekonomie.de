@@ -31436,14 +31436,12 @@
       "quality_cycles": 0,
       "request_id": null,
       "attempts": 7,
-      "last_attempt_at": "2026-09-09T06:43:07.701Z",
-      "next_attempt_at": "2026-09-09T06:58:07.701Z",
+      "last_attempt_at": "2026-09-09T07:12:22.857Z",
+      "next_attempt_at": "2026-09-09T07:27:22.857Z",
       "quality_errors": [
-        "EDITORIAL_ARTICLE_LENGTH",
-        "EDITORIAL_OBSERVED_IMPACT_OPEN",
-        "EDITORIAL_SELF_FRAME_FAILED"
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
       ],
-      "reason": "AI_BATCH_PENDING"
+      "reason": "BATCH_RETRY_LIMIT"
     },
     "wt-1c2c187d0b858b7c": {
       "fingerprint": "045570fb2ba7f213e6e005e3b04558f9c2175bbb4b0ec60987446cbb2b4bcc9d",
