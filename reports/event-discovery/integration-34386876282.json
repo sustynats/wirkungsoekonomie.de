@@ -1,0 +1,33 @@
+{
+  "at": "2026-09-09T18:30:05.094Z",
+  "base_commit": "0a7f6bd11972b6a75f8cb353f57e8a72ec714294",
+  "reviewed_commit": "93dd941de9db13555c22496191feba7c1f0c8f56",
+  "routine_commit": "7ed7222e7c2f0057cef7eab22ad26fb2d0d8c168",
+  "overlapping_story_ids": [
+    "wt-57bb181a2afce3a9",
+    "wt-6000b2fabc397176",
+    "wt-63cb95e544d260ce",
+    "wt-d480edd87394d624"
+  ],
+  "policy": "Newer unpublished failures retained. Reviewed first publication retained; newer unreviewed source material stays pending. Alias retains latest private review and points to the reviewed publication. Usage deduplicated by run ID and exact cost/request match. All earlier inputs remain in both merge parents.",
+  "additional_ai_calls": 0,
+  "usage_runs": 701,
+  "files": [
+    {
+      "file": "data/news/stories.json",
+      "merged_sha256": "79b4f0fec3d2d0d766374499b8a15f2f6ebf386376498cafd96e96b52f718b7f"
+    },
+    {
+      "file": "data/news/state.json",
+      "merged_sha256": "06d4f60b2799a9bf2f8d54e593a9fdfc709a8c24167746962b4adb990a9299f1"
+    },
+    {
+      "file": "data/news/usage.json",
+      "merged_sha256": "74be468428d2ff94c4f6c9f5fa77d2aff3d52fd86a2dd3e82b81a6e4a5bad4dc"
+    },
+    {
+      "file": "data/news/newsroom.json",
+      "merged_sha256": "65c9bf0ab2dae40a612dd5af338aa0791a76c0740af50e65aea43ab93ec1523d"
+    }
+  ]
+}

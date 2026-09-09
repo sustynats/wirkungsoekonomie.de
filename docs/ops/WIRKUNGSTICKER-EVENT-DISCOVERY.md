@@ -106,6 +106,8 @@ Ein dritter Lauf mit altem Checkout ([34385359287](https://github.com/sustynats/
 
 Diese eine wiederhergestellte Erstveröffentlichung ist **kein Beleg**, dass sämtliche offenen Nachrichten abgearbeitet sind, die Routinequote wieder stimmt oder vier Cent pro Nachricht erreicht werden. Die Fehlversuche und bereits verbrauchten Kosten bleiben vollständig in der Bilanz.
 
+Der anschließende [Routinelauf 34386876282](https://github.com/sustynats/wirkungsoekonomie.de/actions/runs/34386876282) bestand auch das Speichergate und veröffentlichte eine weitere Erstmeldung zur Sporthaushaltsdebatte im Bundestag. Verarbeitungsschluss: 20:21 MESZ, zwölf Modellaufrufe, 0,203529 USD. Sein Datencommit wurde vor dem gemeinsamen Release mit der geprüften Rheinfelden-Wiederherstellung integriert. Bei vier überlappenden privaten Datensätzen blieben die neueren Ablehnungen erhalten; sie durften den redaktionell geprüften Erstbericht nicht durch einen unveröffentlichten Entwurf ersetzen. Zusätzliche Quellen bleiben zur Prüfung vorgemerkt, Kosten desselben fehlgeschlagenen Laufs wurden nicht doppelt gebucht. Beide unveränderten Eingangsstände und die [Integrationsquittung](../../reports/event-discovery/integration-34386876282.json) bleiben nachvollziehbar. Auch dieser Lauf belegt noch keinen Zielpreis und keinen vollständig abgearbeiteten Rückstand.
+
 ## Empfohlene nächste Verbesserungsstufen
 
 1. Verbliebene Discovery-Lücken gezielt mit zulässigen amtlichen Sicherheits-, Standort- und Forschungszugängen schließen. Ein öffentlicher Index allein liefert noch keinen vollständigen journalistischen Beleg; keine pauschale Quellfreigabe oder erhöhte Abrufmenge.
