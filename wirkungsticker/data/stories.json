@@ -1,7 +1,283 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T05:36:49.788Z",
+  "updated_at": "2026-09-09T05:52:18.628Z",
   "stories": [
+    {
+      "story_id": "wt-3e258fc08f00f85e",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "74-jahriger-nach-messerangriff-in-freiburg-gestorben-00f85e",
+      "title": "74-Jähriger nach Messerangriff in Freiburg gestorben",
+      "source_summary": "In Freiburg hat es am Dienstagabend einen Messerangriff gegeben. Nach Angaben einer Meldung ist ein 74-jähriger Mann gestorben, ein Tatverdächtiger wurde festgenommen.\n\nEin weiteres Medium berichtet ebenfalls über den Tod eines 74-Jährigen nach einem Messerangriff und ergänzt, die Polizei habe einen mutmaßlichen Täter festgenommen. Der genaue Tathergang, ein mögliches Motiv und ein Zusammenhang mit weiteren Vorfällen in Freiburg bleiben offen.",
+      "summary": "Ein 74-jähriger Mann ist nach einem Messerangriff in Freiburg gestorben. Die Polizei hat einen Tatverdächtigen festgenommen.",
+      "detail_summary": "Der Kern ist gesichert genug für eine Erstmeldung: Ein 74-jähriger Mann ist nach einem Messerangriff in Freiburg gestorben, und ein Tatverdächtiger wurde festgenommen. Offen bleibt, was genau passiert ist und ob ein zweiter gemeldeter Angriff in Freiburg damit zusammenhängt. Materiell relevant ist das Ereignis wegen des tödlichen Verlaufs, der unmittelbaren Sicherheitslage und möglicher Folgen für das Sicherheitsgefühl im Umfeld. Ein belastbarer Wirkpfad zur öffentlichen Debatte oder zu Regeln lässt sich aus den vorliegenden Quellen noch nicht ableiten. Die Evidenz bleibt auf journalistische Meldungen beschränkt; amtliche Details oder weitere Bestätigungen fehlen hier noch.",
+      "why_relevant": "Tödliche Gewalt ist ein schwerer Einschnitt für Betroffene und Sicherheitslage; die Festnahme macht den Fall zudem aktuell und folgenrelevant.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Ein tödlicher Messerangriff verschlechtert unmittelbar Schutz und Sicherheit für die direkt Betroffenen; weitere soziale Folgen sind möglich, aber noch offen.",
+          "positive_path": {
+            "mechanism": "Eine schnelle Festnahme kann akute Gefährdung im Umfeld senken und Ermittlungen ermöglichen.",
+            "source_ids": [
+              "swr-aktuell"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Gewalt mit Todesfolge erhöht das Risiko für weitere Verunsicherung, Traumatisierung und Schutzbedarf im Umfeld.",
+            "source_ids": [
+              "swr-aktuell"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus den Quellen ergibt sich kein belastbarer Umwelt- oder Klimapfad.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung betrifft Strafverfolgung, aber keine demokratischen Verfahren oder Regeln.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T05:52:18.628Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T05:49:51.000Z",
+      "last_updated": "2026-09-09T05:54:07.467Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-9e97cadd2022081e86bf",
+      "case_file": null,
+      "source_published_at": "2026-09-09T04:54:57.000Z",
+      "published_at": "2026-09-09T05:54:07.467Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ],
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Polizeiaussagen zu Tathergang, Motiv und möglichem Zusammenhang der Vorfälle prüfen",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "amtlich bestätigte Angaben zu Ablauf und Zuordnung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8b16b6c9ceed09ac",
+          "announced_at": "2026-09-09T05:49:51.000Z",
+          "follow_up_date": "2026-09-16T05:54:07.467Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/freiburg/mann-nach-messerangriff-in-freiburg-gestorben-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T05:49:51.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/tat-vor-gemeindezentrum--74-jaehriger-stirbt-nach-messerangriff-in-freiburg-38224426.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T04:54:57.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-5a2fe52ebad137c3",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-d137c3",
+      "title": "US-Gericht stoppt Weitergabe von Migranten-Steuerdaten an ICE",
+      "source_summary": "Ein US-Berufungsgericht in Washington hat laut den gelieferten Berichten die Weitergabe vertraulicher Steuerdaten von Migranten ohne Aufenthaltstitel an ICE gestoppt. Nach den Quellen erklärte das Gericht eine Vereinbarung zwischen ICE und der Steuerbehörde IRS aus dem vergangenen Jahr für rechtswidrig und bestätigte ein erstinstanzliches Urteil, das die Übermittlung der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte.\n\nAls Begründungsrahmen nennen die Berichte den geplanten Zugriff auf Daten wie Adresse, Lohn und Familienstand, die ICE beim Aufspüren irregulär im Land lebender Menschen helfen sollten. Die Quellen nennen außerdem Migranten-Organisationen als Kläger. Der genaue weitere Verfahrensstand und der Umfang einer möglichen dauerhaften Sperre bleiben in den gelieferten Texten offen.",
+      "summary": "Das US-Berufungsgericht stoppt laut Quellen die Datenweitergabe an ICE. Offen bleibt, wie weit und wie dauerhaft die Sperre trägt.",
+      "detail_summary": "Die Meldung beschreibt einen klaren Eingriff in den Zugriff staatlicher Stellen auf sensible Steuerdaten. Laut den Quellen ging es um eine Vereinbarung zwischen IRS und ICE aus dem vergangenen Jahr, die das Berufungsgericht für rechtswidrig erklärte. Genannt werden Daten von 1,28 Millionen Menschen sowie der Zweck, irregulär im Land lebende Menschen aufzuspüren. Materiell relevant ist das für Datenschutz, Migrationsverwaltung und die Reichweite staatlicher Zugriffsbefugnisse. Ein direkter Wirkpfad liegt über die Veränderung von Informationszugang und Vollzugsfähigkeit, nicht über Reichweite oder Aufmerksamkeit. Offen bleibt, ob die Sperre im weiteren Verfahren bestätigt, begrenzt oder praktisch umgangen wird; dazu enthalten die gelieferten Texte keine belastbaren Details.",
+      "why_relevant": "Die Meldung betrifft den rechtlichen Zugriff des Staates auf hochsensible Personendaten und damit Datenschutz, Vollzugspraxis und staatliche Steuerungsbefugnisse. Das kann den Umgang mit Millionen Datensätzen und damit einen relevanten Funktionsbereich der Verwaltung verändern.",
+      "topic": [
+        "Finanzen",
+        "Arbeit",
+        "Digitalisierung"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Schutz sensibler Daten kann Betroffene vor weiterem behördlichen Zugriff bewahren; zugleich bleibt der migrationspolitische Vollzug als Gegenpfad relevant, falls andere Zugriffswege entstehen.",
+          "positive_path": {
+            "mechanism": "Weniger behördlicher Zugriff auf Steuerdaten reduziert die Verfügbarkeit persönlicher Daten und stärkt Datenschutz sowie Rechtsklarheit für Betroffene.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Falls Behörden alternative Datenquellen oder neue Rechtsgrundlagen nutzen, kann die Vollzugsintensität trotz Sperre teilweise erhalten bleiben.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In den gelieferten Quellen ist kein belastbarer Pfad zu Umwelt- oder Klimawirkungen beschrieben.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Das Urteil berührt gerichtliche Kontrolle, Begrenzung administrativer Zugriffe und die Korrekturfähigkeit staatlichen Handelns. Das stärkt rechtsstaatliche Verfahren, sofern die Sperre Bestand hat.",
+          "positive_path": {
+            "mechanism": "Gerichtliche Begrenzung staatlichen Datenzugriffs stärkt Kontrolle, Verfahrensbindung und den Schutz vor übermäßiger Exekutivverwendung personenbezogener Daten.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ein Streit um Vollzug und Datennutzung kann neue Konflikte über Zuständigkeiten und Rechtsgrundlagen auslösen, falls die Exekutive nachsteuert.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T05:52:18.628Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T21:23:47.000Z",
+      "last_updated": "2026-09-09T05:53:51.197Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-0413e758b0b10f40c221",
+      "case_file": null,
+      "source_published_at": "2026-09-08T21:23:47.000Z",
+      "published_at": "2026-09-08T21:37:44.215Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "dlf-nachrichten"
+          ],
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 3,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfung der Originalentscheidung und ihres genauen Tenors",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Originalurteil oder amtliche Mitteilung liegt vor",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0da65aa92968c031",
+          "announced_at": "2026-09-08T21:23:47.000Z",
+          "follow_up_date": "2026-09-15T21:37:44.215Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob das Urteil in der Begründung oder in Folgeanträgen präzisiert oder begrenzt wird.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "neue gerichtliche Verfahrensschritte oder präzisierte Reichweite der Sperre",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-134d5c20b879f92d",
+          "announced_at": "2026-09-09T05:50:32.000Z",
+          "follow_up_date": "2026-09-16T05:53:51.197Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die IRS-ICE-Vereinbarung faktisch weiter ausgesetzt bleibt oder erneut angefochten wird.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "formale Fortsetzung, Aufhebung oder neue Anfechtung der Vereinbarung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-69456059cc27a2ee",
+          "announced_at": "2026-09-08T21:23:47.000Z",
+          "follow_up_date": "2026-09-16T05:53:51.197Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T21:23:47.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-einwanderungsbehoerde-ice-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T05:50:32.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/fur-massenabschiebungen-genutzt-us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-16032523.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T05:42:09.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-07f3870f32ae8662",
       "title_image": {
@@ -1248,121 +1524,6 @@
           "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-08T23:40:28.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-5a2fe52ebad137c3",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-d137c3",
-      "title": "US-Gericht stoppt Weitergabe von Migranten-Steuerdaten an ICE",
-      "source_summary": "Ein US-Berufungsgericht in Washington hat laut der vorliegenden Quelle eine Vereinbarung zwischen der Einwanderungsbehörde ICE und der Steuerbehörde IRS aus dem vergangenen Jahr für rechtswidrig erklärt. Damit soll ICE keinen Zugriff auf vertrauliche Steuerzahlerdaten von Migranten ohne Aufenthaltstitel erhalten.\n\nDie Quelle berichtet zudem, dass ein erstinstanzliches Urteil bestätigt wurde, das die Weitergabe der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte. Offen bleibt hier, wie der Volltext des Urteils genau begründet ist und ob weitere Verfahrensschritte folgen.",
-      "summary": "Ein US-Berufungsgericht hat laut Quelle die Weitergabe sensibler Steuerdaten an ICE gestoppt. Der Fall ist für Datenschutz, Migrationsverwaltung und staatliche Zugriffsbefugnisse materiell relevant.",
-      "detail_summary": "Die Meldung beschreibt eine gerichtliche Entscheidung mit unmittelbarer Zustandsänderung: Eine zuvor bestehende oder geplante Datenweitergabe zwischen IRS und ICE soll vorerst unzulässig sein. Das ist für Betroffene, Behördenpraxis und Datenschutz relevant, weil der Zugriff auf sensible Steuerdaten begrenzt wird. Ein möglicher Wirkpfad betrifft den Schutz personenbezogener Daten und die behördliche Nutzung solcher Daten in der Migrationsdurchsetzung. Eine mögliche Folge ist eine stärkere rechtliche Hürde für ähnliche Datennutzungen; die Breite und Dauer bleiben aber offen. Belastbar ist hier nur der berichtete Kern aus einer journalistischen Quelle, nicht der Volltext des Urteils.",
-      "why_relevant": "Die Meldung betrifft eine rechtlich bindende Entscheidung mit Folgen für Datenschutz, Verwaltungspraxis und den staatlichen Zugriff auf sensible Daten.",
-      "topic": [
-        "Finanzen"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Wenn die Weitergabe tatsächlich untersagt bleibt, stärkt das den Schutz persönlicher Daten und begrenzt behördliche Zugriffsmöglichkeiten. Der Wirkpfad ist direkt, aber die praktische Reichweite bleibt ohne Volltext offen.",
-          "positive_path": {
-            "mechanism": "Begrenzter Zugriff auf sensible Steuerdaten reduziert das Risiko unzulässiger Nutzung gegen Betroffene.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Ein enger gerichtlicher Eingriff kann Behördenabstimmung erschweren und künftige Prüf- oder Vollzugswege verlangsamen.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Aus der Meldung ergibt sich kein belastbarer Umwelt- oder Klimawirkpfad.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Die Entscheidung betrifft rechtsstaatliche Kontrolle staatlicher Datenverwendung und damit die demokratische Korrekturfähigkeit von Behördenhandeln. Der Effekt ist institutionell, nicht personenbezogen.",
-          "positive_path": {
-            "mechanism": "Gerichtliche Begrenzung behördlicher Datenzugriffe stärkt Kontrolle und Bindung an Recht.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Ein konflikthafter Streit um Datenzugriffe kann das Vertrauen in Behördenpraxis weiter belasten, wenn Regeln unklar bleiben.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          }
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T21:36:51.819Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T21:23:47.000Z",
-      "last_updated": "2026-09-08T21:37:44.215Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-0413e758b0b10f40c221",
-      "case_file": null,
-      "source_published_at": "2026-09-08T21:23:47.000Z",
-      "published_at": "2026-09-08T21:37:44.215Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Prüfung der Originalentscheidung und ihres genauen Tenors",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Originalurteil oder amtliche Mitteilung liegt vor",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-0da65aa92968c031",
-          "announced_at": "2026-09-08T21:23:47.000Z",
-          "follow_up_date": "2026-09-15T21:37:44.215Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T21:23:47.000Z",
           "primary_source": false
         }
       ]
