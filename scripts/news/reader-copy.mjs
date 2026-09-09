@@ -33,7 +33,7 @@ export function analysisReaderCopy(analysis = {}) {
   const media = analysis.media_impact || {};
   const mediaKeys = ["factual_core", "public_explanation", "editorial_assessment", "fact_first_alternative", "fact_first_reframe", "speaker_statement", "frame_analysis", "framing", "resonance", "discourse_effect", "impact_path", "evidence", "observed_impact", "political_context", "source_comparison"];
   return [[analysis.assessment_frame?.subject, analysis.assessment_frame?.baseline, analysis.observed_outcome?.change], keys.map(key => ['human', 'planet', 'democracy'].includes(key)
-    ? [analysis[key]?.rationale, analysis[key]?.positive_path?.mechanism, analysis[key]?.negative_path?.mechanism]
+    ? [analysis[key]?.rationale, ...['positive_path', 'negative_path'].flatMap(p => [analysis[key]?.[p]?.mechanism, analysis[key]?.[p]?.state_change, analysis[key]?.[p]?.condition])]
     : analysis[key]), media.relevant ? mediaKeys.map(key => media[key]) : [],
     media.self_frame_check?.recommended_title, media.self_frame_check?.recommended_summary, media.self_frame_check?.recommended_meta_description,
     (analysis.event_claims || []).map(claim => [claim.statement, claim.claim, claim.uncertainty]),

@@ -133,7 +133,8 @@ test("deterministische Anker aus dem Analyse-Schema", () => {
   assert.match(meters, /wt-dim--human" data-level="3"/);
   assert.match(meters, /wt-dim--democracy" data-level="0"/);
   assert.match(meters, /wt-meter--open/);
-  assert.match(meters, /sr-only/);
+  assert.match(meters, /Begründung und Grenzen/);
+  assert.doesNotMatch(meters, /wt-dim__note sr-only/);
   assert.equal((meters.match(/is-filled/g) || []).length, 5);
   assert.match(renderStatusTrack("beschlossen"), /is-current"[^>]*aria-current="step"[^>]*><span class="wt-track__dot"><\/span><span class="wt-track__label">Beschlossen/);
   assert.match(renderStatusTrack("laufende Entwicklung"), /wt-track--open/);
