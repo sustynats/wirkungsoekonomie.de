@@ -31420,8 +31420,8 @@
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
       "method_version": "1.0",
       "attempts": 9,
-      "last_attempt_at": "2026-09-09T05:44:55.187Z",
-      "next_attempt_at": "2026-09-09T05:59:55.187Z",
+      "last_attempt_at": "2026-09-09T06:03:44.280Z",
+      "next_attempt_at": "2026-09-09T06:18:44.280Z",
       "quality_errors": [
         "EDITORIAL_SECTION_MISSING_UNSICHERHEIT",
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
@@ -31456,8 +31456,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-09T05:44:55.187Z",
-      "next_attempt_at": "2026-09-09T05:59:55.187Z",
+      "last_attempt_at": "2026-09-09T06:03:44.280Z",
+      "next_attempt_at": "2026-09-09T06:18:44.280Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -31531,14 +31531,14 @@
     "wt-e01e1e77e702edc3": {
       "fingerprint": "a752701ac2c4d543850ad7d2b8fdffcfb48818ccd622bf1856a3051797b1ea90",
       "method_version": "1.0",
-      "attempts": 1,
-      "last_attempt_at": "2026-09-09T05:44:55.187Z",
-      "next_attempt_at": "2026-09-09T05:59:55.187Z",
+      "attempts": 2,
+      "last_attempt_at": "2026-09-09T06:03:44.280Z",
+      "next_attempt_at": "2026-09-09T06:33:44.280Z",
       "quality_errors": [
-        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
-        "EDITORIAL_SELF_FRAME_FAILED"
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH"
     }
   }
 }
