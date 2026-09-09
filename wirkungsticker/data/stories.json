@@ -1,7 +1,517 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T23:53:58.173Z",
+  "updated_at": "2026-09-09T00:27:01.896Z",
   "stories": [
+    {
+      "story_id": "wt-e01e1e77e702edc3",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
+      "title": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen",
+      "source_summary": "Die Polizei hat Daniel V. nach Angaben der Berichte in der Nähe von Aachen festgenommen. Der Mann soll nach Einschätzung der Ermittler und von NRW-Innenminister Reul für mehrere Sabotage-Aktionen am Stromnetz verantwortlich sein; Reul geht derzeit von einem Einzeltäter aus. Zugleich heißt es, bei der Festnahme seien weitere Sprengmittel gefunden worden, und die Polizei prüfe weitere mögliche Vorrichtungen im Umfeld.\n\nDer WDR berichtet außerdem, die Ermittler gingen davon aus, dass Daniel V. an mehreren Orten in Nordrhein-Westfalen, Brandenburg und Sachsen Stromleitungen sabotiert habe; mindestens zweimal habe es Kurzschlüsse gegeben. Ein dem WDR vorliegendes Bekennerschreiben nennt als Motive mangelnden Klimaschutz und den Kampf gegen fossile Stromerzeugung. Die Zuordnung weiterer Schreiben und der genaue Umfang der Taten bleiben offen.",
+      "summary": "Die Festnahme ist neu, der Hintergrund bleibt teils offen. Materiell relevant sind die möglichen Folgen für Strominfrastruktur, Ermittlungen und künftige Schutzmaßnahmen.",
+      "detail_summary": "Die Berichte bündeln eine Festnahme mit neuen Angaben zu möglichen weiteren Vorrichtungen, mehreren Tatorten und mutmaßlichen Motiven. Das ist für die Strominfrastruktur relevant, weil Sabotage an Leitungen und Umspannnähe Ausfälle, Kurzschlüsse und zusätzliche Sicherungsmaßnahmen auslösen kann. Offen bleibt aber, was davon bereits gesichert ist und was noch Ermittlungsstand oder Zuschreibung ist. Für die Einordnung zählen vor allem der Umfang der betroffenen Anlagen, die Zahl der Orte und die Frage, ob weitere Beteiligte ausgeschlossen sind. Die Evidenz ist journalistisch, teils mit ministerieller Zuschreibung und einem vorliegenden Bekennerschreiben; eine abschließende Bestätigung fehlt noch.",
+      "why_relevant": "Die Meldung betrifft mögliche Sabotage an kritischer Energieinfrastruktur, laufende Ermittlungen und mögliche Folgeschäden für Versorgung und Schutzbedarf.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Sabotage an Strominfrastruktur kann Versorgung unterbrechen, Schäden erzeugen und Schutzaufwand erhöhen; die Belastung trifft Haushalte und Betriebe unmittelbar, wenn Ausfälle eintreten.",
+          "positive_path": {
+            "mechanism": "Erfolgreiche Aufklärung kann künftige Angriffe erschweren und den Schutz kritischer Infrastruktur verbessern.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Weitere Sabotage oder bestätigte Schäden können Ausfälle, Reparaturen und Sicherheitskosten erhöhen.",
+            "source_ids": [
+              "wdr-nachrichten",
+              "tagesspiegel-home"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Quelle verknüpft die Taten mit fossiler Stromerzeugung; ein direkter Umweltvorteil ist daraus nicht belegt. Möglich sind aber zusätzliche Emissionen und Ressourcenverbrauch durch Reparaturen und Ersatzbetrieb.",
+          "positive_path": {
+            "mechanism": "Ermittlungen und Sicherung können weitere Schäden an Anlagen verhindern und Reparaturaufwand begrenzen.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Beschädigte Strominfrastruktur und Ausweichbetrieb können zusätzliche Material-, Energie- und Reparaturaufwände verursachen.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Angriffe auf kritische Infrastruktur berühren öffentliche Sicherheit und die Fähigkeit des Staates, Versorgung zu sichern und Taten aufzuklären. Der demokratische Bezug liegt in der Belastung der Korrekturfähigkeit und des Vertrauens in Schutzmechanismen.",
+          "positive_path": {
+            "mechanism": "Transparente Aufklärung und gerichtsfeste Beweise stärken die staatliche Reaktionsfähigkeit.",
+            "source_ids": [
+              "wdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Mehrere Sabotageorte und unklare Täterschaft können Unsicherheit, Misstrauen und Schutzdruck erhöhen.",
+            "source_ids": [
+              "wdr-nachrichten",
+              "tagesspiegel-home"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T00:22:10.289Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T10:41:31.000Z",
+      "last_updated": "2026-09-09T00:25:26.294Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-1c240bac9c8b267f5a27",
+      "case_file": null,
+      "source_published_at": "2026-09-08T13:24:19.000Z",
+      "published_at": "2026-09-08T17:56:25.231Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ],
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Bestätigung oder Präzisierung der Ermittler zu möglicher Alleintäterschaft und weiterem Tatumfang",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "neue amtliche Angaben zu Mittätern, Tatorten oder weiterer Sicherstellung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f1797ead6f1a6d96",
+          "announced_at": "2026-09-08T17:36:18.000Z",
+          "follow_up_date": "2026-09-15T17:56:25.231Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ergebnis der Prüfung, ob Daniel V. das Bekennerschreiben verfasst hat",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "amtlich oder ermittlungssicher bestätigte Urheberschaft oder gegenteilige Feststellung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-fcb9afbde4813d68",
+          "announced_at": "2026-09-08T17:36:18.000Z",
+          "follow_up_date": "2026-09-15T17:56:25.231Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob die Ermittler die Zuordnung der Bekennerschreiben endgültig bestätigen.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "offizielle Bestätigung oder Verwerfung der Zuordnung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-1389a3dbd4c6c130",
+          "announced_at": "2026-09-08T19:21:39.000Z",
+          "follow_up_date": "2026-09-16T00:25:26.294Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob die Polizei weitere Tatorte, Vorrichtungen oder Schäden konkret beziffert.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "benannte zusätzliche Tatorte, Vorrichtungen oder Schadenssumme",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-82eadbe010bf15b7",
+          "announced_at": "2026-09-08T19:21:39.000Z",
+          "follow_up_date": "2026-09-16T00:25:26.294Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob weitere Beschuldigte oder Helfer ausgeschlossen werden.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Ermittlungsstand zu weiteren Beteiligten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e636911260159f4e",
+          "announced_at": "2026-09-08T19:21:39.000Z",
+          "follow_up_date": "2026-09-16T00:25:26.294Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/mutmasslicher-strom-saboteur-daniel-v-festgenommen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T19:21:39.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/potsdam/brandenburg/dpa-angriffe-auf-energieversorgung-16030932.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T13:24:19.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4409a2f6e240d133",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
+      "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+      "source_summary": "Nach übereinstimmenden Berichten hat die Polizei in der Nähe eines Kraftwerks bei Aachen einen mutmaßlichen Strom-Saboteur festgenommen. Mehrere Meldungen nennen einen 48-Jährigen, der aus Gevelsberg stammen soll; offen bleibt weiterhin der genaue Umfang der Taten und die belastbare Zuordnung einzelner Bekennerschreiben.\n\nDeutschlandfunk berichtet zusätzlich, der Mann habe bei der Festnahme weitere Sprengmittel dabeigehabt; außerdem seien zuvor in Nordrhein-Westfalen und Sachsen weitere selbstgebaute Vorrichtungen gefunden worden. Als mögliches Motiv wird in einem ersten Bekennerschreiben der Kampf gegen Stromerzeugung aus fossilen Brennstoffen genannt. Diese Motive und Zuordnungen sind nach den Quellen noch nicht abschließend bestätigt.",
+      "summary": "Die Polizei hat einen mutmaßlichen Saboteur an der Stromversorgung festgenommen. Umfang, Motiv und die Zuordnung der Taten bleiben offen.",
+      "detail_summary": "Die Meldung beschreibt eine Festnahme im Umfeld von Sabotage an Stromanlagen. Mehrere Berichte nennen denselben Kern: Ein Verdächtiger wurde nahe Weisweiler bei Aachen gefasst. Offen sind weiter der genaue Tatumfang, die endgültige Zuordnung eines Bekennerschreibens und die Frage, ob weitere Personen beteiligt waren. Für die öffentliche Relevanz zählt vor allem die mögliche Störung einer kritischen Infrastruktur. Daraus kann ein Wirkpfad über Ausfälle, Sicherheitsaufwand und zusätzliche Ermittlungen entstehen. Eine belastbare Wirkung im Sinne konkreter Netzfolgen ist aus den vorliegenden Quellen aber noch nicht belegt.",
+      "why_relevant": "Die Festnahme betrifft kritische Strominfrastruktur und kann Ermittlungen, Sicherheitsmaßnahmen und mögliche Netzfolgen nach sich ziehen.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Festnahme kann weitere Sabotage verhindern und damit unmittelbare Risiken für Versorgung und Sicherheit senken; zugleich zeigen die Berichte, dass Umfang und Folgen der Taten noch nicht abschließend geklärt sind.",
+          "positive_path": {
+            "mechanism": "Festnahme und Sicherstellung weiterer Sprengmittel können weitere Angriffe oder Schäden an Stromanlagen begrenzen.",
+            "source_ids": [
+              "manager-magazin-news",
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Bereits begangene Sabotage oder weitere unbekannte Vorrichtungen können Versorgung, Einsatzkräfte und Anwohner zusätzlich belasten.",
+            "source_ids": [
+              "dlf-nachrichten",
+              "tagesschau-access"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus den Quellen ergibt sich kein belastbarer Pfad zu einer messbaren Umweltwirkung; ein mögliches Klimamotiv ist genannt, aber die tatsächlichen Umweltfolgen der Taten bleiben offen.",
+          "positive_path": {
+            "mechanism": "Keine tragfähige positive Umweltwirkung ist in den Quellen belegt.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Sabotage an Energieinfrastruktur kann bei Folgeschäden oder Ersatzmaßnahmen indirekt Umweltbelastungen erhöhen, das ist hier aber nicht belegt.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Quellen enthalten keinen Beleg für eine unmittelbare demokratische Wirkung; relevant ist vor allem der Umgang des Staates mit Schutz kritischer Infrastruktur und Ermittlungsarbeit.",
+          "positive_path": {
+            "mechanism": "Eine aufgeklärte und begrenzte Strafverfolgung kann das Vertrauen in Schutzfähigkeit staatlicher Infrastruktur stärken.",
+            "source_ids": [
+              "manager-magazin-news",
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Unklare Zuschreibungen oder politisch aufgeladene Deutungen können Debatten verzerren, ohne dass das hier schon als Wirkung belegt ist.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Der Begriff Klimaextremismus und die Festnahme im Umfeld kritischer Infrastruktur können den Deutungsrahmen der Berichterstattung prägen.",
+        "factual_core": "Die Polizei hat einen mutmaßlichen Strom-Saboteur in der Nähe eines Kraftwerks bei Aachen festgenommen.",
+        "epistemic_status": {
+          "confirmed": [
+            "Festnahme in der Nähe von Aachen",
+            "mehrere Berichte zu Sabotage an Stromanlagen"
+          ],
+          "actor_claims": [
+            "Motiv gegen fossile Stromerzeugung im ersten Bekennerschreiben"
+          ],
+          "open": [
+            "endgültige Zuordnung aller Taten",
+            "Umfang weiterer Vorrichtungen"
+          ]
+        },
+        "attribution": {
+          "frame_source": "Deutschlandfunk",
+          "speaker": "Bundesinnenminister Dobrindt",
+          "original_term": "Klimaextremismus",
+          "usage_type": "direct_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Klimaextremismus",
+          "origin_in_story": "Deutschlandfunk",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Klimaextremismus",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Sabotage an Energieanlagen wird als gefährlicher Angriff auf die öffentliche Sicherheit und die Stromversorgung gerahmt.",
+          "implied_cause": "politisch oder ideologisch motivierte Sabotage",
+          "implied_responsibility": "der mutmaßliche Täter beziehungsweise ein möglicher extremistischer Kontext",
+          "implied_threat": "weitere Anschläge und Gefährdung der Energieversorgung",
+          "implied_solution_space": "Ermittlungen, Schutzmaßnahmen und Strafverfolgung",
+          "material_omissions": [
+            "Konkrete Schäden oder Ausfälle werden in den Quellen nicht beziffert.",
+            "Die Zuordnung des Motivs bleibt vorläufig."
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Der politische Kontext ist im Bericht nur als zugeschriebene Einordnung sichtbar, nicht als gesicherter Sachverhalt."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Sicherheit kritischer Infrastruktur, Klimaaktivismus, Extremismusdebatte",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "hoch",
+          "trust_effect_potential": "medium",
+          "discourse_effect_potential": "Die Wortwahl kann den Fall stärker als Extremismus- und Sicherheitsfrage rahmen und andere Deutungen in den Hintergrund drängen."
+        },
+        "impact_path": {
+          "first_order": "Festnahme und Begriffswahl lenken Aufmerksamkeit auf den Sicherheitsaspekt.",
+          "second_order": "Die Debatte kann sich auf Extremismus, Motivation und staatlichen Schutz konzentrieren.",
+          "third_order": "Langfristig kann der Fall politische Forderungen nach schärferem Schutz kritischer Infrastruktur verstärken."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Festnahme des Verdächtigen Berichte über weitere Funde und offene Ermittlungen",
+          "what_is_inferred": "Der Begriff kann die öffentliche Deutung stärker politisieren.",
+          "what_is_open": "Keine belastbare Messung der Medien- oder Publikumswirkung in den Quellen. Zuordnung des Motivs bleibt offen.",
+          "facts": [
+            "Festnahme des Verdächtigen",
+            "Berichte über weitere Funde und offene Ermittlungen"
+          ],
+          "observations": [
+            "Ein Minister wird mit dem Begriff Klimaextremismus zitiert."
+          ],
+          "inferences": [
+            "Der Begriff kann die öffentliche Deutung stärker politisieren."
+          ],
+          "impact_potentials": [
+            "Mehr Aufmerksamkeit für Schutz kritischer Infrastruktur",
+            "Verstärkte Extremismusdebatte"
+          ],
+          "impact_risks": [
+            "Polarisierung",
+            "Vorzeitige Motivzuschreibung"
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine belastbare Messung der Medien- oder Publikumswirkung in den Quellen.",
+            "Zuordnung des Motivs bleibt offen."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Die Nachricht ist vor allem deshalb relevant, weil es um Sabotage an Stromanlagen geht, also um kritische Infrastruktur. Mehrere Berichte sagen, dass die Polizei einen Verdächtigen nahe Aachen festgenommen hat. Dazu kommen Hinweise auf weitere Sprengmittel und auf gefundene Vorrichtungen, deren Einordnung aber noch offen ist. Im Medienbild fällt außerdem der Begriff Klimaextremismus auf. Das ist noch keine bewiesene Ursache, kann die Debatte aber in Richtung Sicherheit und politischer Deutung verschieben. Eine tatsächliche Wirkung auf Versorgung oder öffentliche Meinung ist in den Quellen noch nicht gemessen.",
+        "editorial_assessment": "Die Nachricht ist vor allem deshalb relevant, weil es um Sabotage an Stromanlagen geht, also um kritische Infrastruktur. Mehrere Berichte sagen, dass die Polizei einen Verdächtigen nahe Aachen festgenommen hat. Dazu kommen Hinweise auf weitere Sprengmittel und auf gefundene Vorrichtungen, deren Einordnung aber noch offen ist. Im Medienbild fällt außerdem der Begriff Klimaextremismus auf. Das ist noch keine bewiesene Ursache, kann die Debatte aber in Richtung Sicherheit und politischer Deutung verschieben. Eine tatsächliche Wirkung auf Versorgung oder öffentliche Meinung ist in den Quellen noch nicht gemessen.",
+        "fact_first_alternative": "Festnahme nach Sabotage an Stromanlagen: Der Sachverhalt ist bestätigt, der Umfang bleibt offen, die Zuschreibung des Motivs stammt aus einem ersten Bekennerschreiben und einer politischen Einordnung.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Festnahme nach Sabotage an Stromanlagen",
+          "recommended_summary": "Die Polizei hat einen mutmaßlichen Saboteur nahe Aachen festgenommen. Umfang und Motiv der Taten bleiben offen.",
+          "recommended_meta_description": "Festnahme im Fall der Stromnetz-Sabotage: bestätigter Kern, offene Ermittlungsfragen, mögliche Folgen für kritische Infrastruktur."
+        },
+        "source_comparison": {
+          "sufficient_basis": true,
+          "finding": "Drei Berichte tragen denselben Kern der Festnahme; Deutschlandfunk liefert die meisten Zusatzdetails, die aber teils noch zugeschrieben und offen sind."
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T00:22:10.289Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-a06942993891",
+        "slug": "festnahme-nach-sabotage-an-stromanlagen-was-die-tat-fur-infrastruktur-und-staatssc-a06942",
+        "title": "Festnahme nach Sabotage an Stromanlagen: Was die Tat für Infrastruktur und Staatsschutz bedeutet",
+        "teaser": "Ein mutmaßlicher Strom-Saboteur ist festgenommen. Die eigentliche Frage ist jetzt: Welche Schutz-, Ermittlungs- und Debattenfolgen folgen daraus für kritische Infrastruktur?",
+        "published_at": "2026-09-09T00:27:01.896Z",
+        "updated_at": "2026-09-09T00:27:01.896Z"
+      },
+      "first_seen": "2026-09-08T11:06:00.000Z",
+      "last_updated": "2026-09-09T00:23:22.761Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-287abbb0f0d92c8cb59c",
+      "case_file": null,
+      "source_published_at": "2026-09-08T11:06:00.000Z",
+      "published_at": "2026-09-09T00:23:22.761Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ],
+          [
+            "tagesschau-access"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 3,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Gibt es eine offizielle Bestätigung zu Umfang, Tatserie und möglicher Beteiligung weiterer Personen?",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Zahl bestätigter Tatorte oder Taten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-1eb3189fbbbf0a1f",
+          "announced_at": "2026-09-09T00:16:07.000Z",
+          "follow_up_date": "2026-09-16T00:23:22.761Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wird das genannte Bekennerschreiben amtlich den Taten zugeordnet?",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Status der Zuordnung durch Polizei oder Staatsanwaltschaft",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-ff55fc80e7a0a4bc",
+          "announced_at": "2026-09-09T00:16:07.000Z",
+          "follow_up_date": "2026-09-16T00:23:22.761Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Welche konkreten Schäden oder Ausfälle im Stromnetz wurden festgestellt?",
+          "source_id": "manager-magazin-news",
+          "expected_by": null,
+          "measurable_indicator": "gemeldete Ausfälle, Reparaturen oder Netzstörungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bf88479618070466",
+          "announced_at": "2026-09-08T11:06:00.000Z",
+          "follow_up_date": "2026-09-16T00:23:22.761Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:06:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:30:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T00:16:07.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-a0703aa9051cf40d",
       "title_image": {
@@ -2225,152 +2735,6 @@
           "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
           "source_type": "media_rss",
           "published_at": "2026-09-08T13:06:33.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-e01e1e77e702edc3",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
-      "title": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen",
-      "source_summary": "Die Polizei hat nach Angaben des WDR und des Tagesspiegels einen Mann aus Nordrhein-Westfalen nahe Aachen festgenommen. Beide Berichte nennen Daniel V. als mutmaßlichen Strom-Saboteur; der WDR berichtet zusätzlich von weiteren Sprengmitteln, einem Zelt und laufenden Spurensicherungen. Nach WDR-Angaben sollen Ermittler prüfen, ob der Mann an mehreren Orten in Nordrhein-Westfalen, Brandenburg und Sachsen Stromleitungen sabotieren wollte. Offen bleibt, ob Daniel V. das zitierte Bekennerschreiben selbst verfasst hat und wie weit der Tatumfang genau reicht.\n\nDie Meldung betrifft Energieinfrastruktur und laufende Ermittlungen. Belastbar belegt sind die Festnahme, die Zuordnung als Verdächtiger und weitere Sicherstellungen; Motive, Alleintäterschaft und der volle Schaden bleiben vorläufig.",
-      "summary": "Die Polizei hat einen mutmaßlichen Strom-Saboteur festgenommen. Die Ermittlungen zu Tatumfang, Alleintäterschaft und Urheberschaft eines Bekennerschreibens laufen weiter.",
-      "detail_summary": "Die Meldung ist relevant, weil sie eine festgenommene Person, mögliche Angriffe auf Energieinfrastruktur und weitere Sicherstellungen zusammenführt. Das kann für Versorgungssicherheit, Ermittlungen und das Risiko weiterer Taten wichtig sein. Direkt belegt ist aber vor allem der Zugriff der Polizei; die genauen Hintergründe sind noch offen. Ein materieller Wirkpfad liegt vor allem über mögliche Kurzschlüsse, Ausfälle und Folgekosten für Schutz und Reparatur. Ob und wie weit dieser Pfad bereits eingetreten ist, bleibt in der Quelle nur teilweise sichtbar. Deshalb ist die Einordnung vorläufig.",
-      "why_relevant": "Die Festnahme betrifft mögliche Sabotage an Energieinfrastruktur mit möglicher Bedeutung für Versorgungssicherheit, Ermittlungen und Folgekosten.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_post",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Die Meldung beschreibt vor allem eine Festnahme und laufende Ermittlungen. Ein direkter Zustandseffekt für Menschen ist daraus noch nicht belastbar ableitbar.",
-          "positive_path": {
-            "mechanism": "Wenn weitere Anschläge verhindert werden, könnten Stromausfälle, Reparaturen und Sicherheitsrisiken für Betroffene sinken.",
-            "source_ids": [
-              "wdr-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Die Sabotagevorwürfe verweisen auf mögliche Versorgungsstörungen und damit auf Risiken für Haushalte, Beschäftigte und Betriebe.",
-            "source_ids": [
-              "wdr-nachrichten"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "mittel",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Ein Umwelt- oder Klimawirkpfad wird in der Meldung nur über das Bekennerschreiben angerissen. Eine eingetretene Umweltwirkung der Festnahme selbst ist nicht belegt.",
-          "positive_path": {
-            "mechanism": "Wenn Sabotage an Stromleitungen verhindert wird, können zusätzliche technische Schäden und Reparaturaufwände sinken.",
-            "source_ids": [
-              "wdr-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Die behauptete Motivation gegen fossile Stromerzeugung ist politisch aufgeladen, belegt aber noch keine positive Klimawirkung.",
-            "source_ids": [
-              "wdr-nachrichten"
-            ]
-          }
-        },
-        "democracy": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Die Meldung betrifft Ermittlungen und eine Festnahme, aber keinen belegten Eingriff in demokratische Verfahren oder Rechte.",
-          "positive_path": {
-            "mechanism": "Offene und sichtbare Ermittlungen können Vertrauen in staatliche Reaktionsfähigkeit stützen, wenn sie transparent und rechtsstaatlich bleiben.",
-            "source_ids": [
-              "wdr-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Ungeklärte Tatmotive und Zuschreibungen können Spekulationen fördern, solange die Urheberschaft des Schreibens nicht geklärt ist.",
-            "source_ids": [
-              "wdr-nachrichten"
-            ]
-          }
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T17:53:17.517Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T10:41:31.000Z",
-      "last_updated": "2026-09-08T17:56:25.231Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-1c240bac9c8b267f5a27",
-      "case_file": null,
-      "source_published_at": "2026-09-08T13:24:19.000Z",
-      "published_at": "2026-09-08T17:56:25.231Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ],
-          [
-            "tagesspiegel-home"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Bestätigung oder Präzisierung der Ermittler zu möglicher Alleintäterschaft und weiterem Tatumfang",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "neue amtliche Angaben zu Mittätern, Tatorten oder weiterer Sicherstellung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-f1797ead6f1a6d96",
-          "announced_at": "2026-09-08T17:36:18.000Z",
-          "follow_up_date": "2026-09-15T17:56:25.231Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ergebnis der Prüfung, ob Daniel V. das Bekennerschreiben verfasst hat",
-          "source_id": "wdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "amtlich oder ermittlungssicher bestätigte Urheberschaft oder gegenteilige Feststellung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-fcb9afbde4813d68",
-          "announced_at": "2026-09-08T17:36:18.000Z",
-          "follow_up_date": "2026-09-15T17:56:25.231Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/mutmasslicher-strom-saboteur-daniel-v-festgenommen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T17:36:18.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/potsdam/brandenburg/dpa-angriffe-auf-energieversorgung-16030932.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T13:24:19.000Z",
           "primary_source": false
         }
       ]
@@ -21762,6 +22126,17 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-a06942993891",
+      "story_id": "wt-4409a2f6e240d133",
+      "slug": "festnahme-nach-sabotage-an-stromanlagen-was-die-tat-fur-infrastruktur-und-staatssc-a06942",
+      "title": "Festnahme nach Sabotage an Stromanlagen: Was die Tat für Infrastruktur und Staatsschutz bedeutet",
+      "subtitle": "Die Festnahme ist nur der Anfang der Wirkungskette. Entscheidend ist, ob weitere Vorrichtungen, Schäden und Folgeabsicherungen bestätigt werden.",
+      "teaser": "Ein mutmaßlicher Strom-Saboteur ist festgenommen. Die eigentliche Frage ist jetzt: Welche Schutz-, Ermittlungs- und Debattenfolgen folgen daraus für kritische Infrastruktur?",
+      "published_at": "2026-09-09T00:27:01.896Z",
+      "updated_at": "2026-09-09T00:27:01.896Z",
+      "reading_time_minutes": 7
+    },
     {
       "analysis_id": "woek-analysis-79a3f849e9f3",
       "story_id": "wt-e10c23f5e37ed39e",
