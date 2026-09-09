@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T19:52:22.316Z",
-  "scanned_stories": 217,
-  "scanned_subjects": 192,
+  "started_at": "2026-09-09T20:07:07.088Z",
+  "scanned_stories": 218,
+  "scanned_subjects": 193,
   "editorial_candidates": 34,
   "ready_for_research": 11,
   "research_pending": 13,
-  "retry_deferred": 4,
-  "editorial_research_sources_discovered": 54,
-  "selected": 1,
+  "retry_deferred": 5,
+  "editorial_research_sources_discovered": 55,
+  "selected": 0,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
@@ -28,7 +28,7 @@
   "quality_held": 4,
   "unchanged_research_skipped": 11,
   "requested": [],
-  "publication_deferred": true,
+  "publication_deferred": false,
   "failed": [],
   "candidates": [
     {
@@ -84,7 +84,7 @@
       "story_id": "wt-026d11d680622587",
       "story_slug": "bundestag-neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritis-622587",
       "story_title": "Bundestag - Neuer Sportstaatsminister Rauhe will Olympia nach Deutschland holen, AfD kritisiert Benennung",
-      "editorial_analysis_score": 71,
+      "editorial_analysis_score": 72,
       "analysis_gain": 48,
       "factors": {
         "systemic_relevance": 14,
@@ -101,7 +101,7 @@
         "distribution_relevance": 6,
         "discourse_relevance": 4,
         "case_depth": 0,
-        "evidence_quality": 7
+        "evidence_quality": 8
       },
       "factor_status": {
         "impact_potential": "open",
@@ -111,7 +111,7 @@
       "evidence_gate": {
         "passed": false,
         "source_integrity": "verified",
-        "independent_origin_count": 3,
+        "independent_origin_count": 4,
         "primary_source_count": 0,
         "cited_claim_count": 3,
         "primary_source_expected": true,
@@ -120,7 +120,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "91186d8e3b159162da1a482b7cc0b4222884eccb472847c2b8938b5de4c3bb56",
+      "fingerprint": "f59a51e4095c09724caedc9511362e289d0d194d7f8ab66912c6d2ba9d9a2633",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -1498,8 +1498,8 @@
     }
   ],
   "batch": {
-    "submitted": 1,
-    "pending": 0,
+    "submitted": 0,
+    "pending": 1,
     "completed": 0,
     "failed": 0,
     "applied": 0,
@@ -1507,6 +1507,5 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "batch_deferred": 1,
-  "completed_at": "2026-09-09T19:53:56.866Z"
+  "completed_at": "2026-09-09T20:08:39.870Z"
 }

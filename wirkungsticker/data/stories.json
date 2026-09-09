@@ -1,7 +1,161 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T19:40:25.513Z",
+  "updated_at": "2026-09-09T19:57:12.795Z",
   "stories": [
+    {
+      "story_id": "wt-577270be8984eb8d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-577270be8984eb8d-4d06ed9cf6977e81-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-577270be8984eb8d-60481ad5b999b105-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-577270be8984eb8d-2698ddbe88743429-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "temporary-wartime-weapons-depot-explosion-kills-14-outside-syria-s-idlib-84eb8d",
+      "title": "Temporary wartime weapons depot explosion kills 14 outside Syria's Idlib",
+      "source_summary": "Euronews meldet eine Explosion an einem temporären Lager für Kriegsmunition nahe Sarmada außerhalb von Idlib. Dabei sollen 14 Menschen getötet und 11 verletzt worden sein. Rettungsteams suchten nach Angaben der Quelle weiter nach Überlebenden.\n\nDie Meldung verweist zudem auf Angaben humanitärer Helfer, wonach in Syrien heute alle sechs Stunden eine Person durch nicht explodierte Munition getötet oder verletzt werde. Offen bleibt, was die Explosion auslöste und ob weitere Quellen die Zahlen bestätigen.",
+      "summary": "Bei einer Explosion an einem temporären Munitionslager nahe Idlib sind laut Euronews 14 Menschen gestorben, 11 wurden verletzt. Rettungskräfte suchten weiter nach Überlebenden.",
+      "detail_summary": "Die Meldung beschreibt eine akute Sicherheitslage mit Toten und Verletzten an einem temporären Lager für Kriegsmunition. Das ist als Erstmeldung relevant, weil Zahl der Betroffenen, Ort und Art des Vorfalls bereits eine klare Zustandsänderung zeigen. Der mögliche Wirkpfad reicht von der unmittelbaren Explosion über weitere Opfer und Rettungsarbeit bis zu Folgen für Sicherheit vor Ort und den Umgang mit Altmunition. Die Evidenz bleibt vorläufig, weil bisher nur eine journalistische Quelle vorliegt und Ursache sowie unabhängige Bestätigung offen sind.",
+      "why_relevant": "Akute Gefahrenlage mit 14 Toten und 11 Verletzten; der Vorfall betrifft unmittelbare Sicherheit und laufende Rettung.",
+      "topic": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_post",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Explosion hat bereits tödliche und verletzende Folgen. Damit liegt eine negative Zustandsänderung für betroffene Menschen vor, auch wenn Ursache und Gesamtausmaß noch offen sind.",
+          "negative_path": {
+            "mechanism": "Explosion von gelagerter Kriegsmunition verletzt oder tötet Personen im Umkreis und bindet Rettungskapazitäten.",
+            "source_ids": [
+              "euronews-en"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "positive_path": {
+            "mechanism": "Schnelle Rettung und medizinische Versorgung können weitere Todesfälle verhindern und Schäden begrenzen.",
+            "source_ids": [
+              "euronews-en"
+            ],
+            "effect_type": "mitigation_only",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Aus der Quelle ergibt sich vor allem ein Sicherheits- und Menschenpfad. Für Umweltfolgen fehlen konkrete Angaben zu freigesetzten Stoffen, Ausmaß oder betroffenen Flächen.",
+          "positive_path": {
+            "mechanism": "Keine belastbar belegte Umweltverbesserung erkennbar.",
+            "source_ids": [
+              "euronews-en"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Bei Explosionen von Munition können Schadstoffe freigesetzt oder Flächen belastet werden; hier ist das aber nicht belegt.",
+            "source_ids": [
+              "euronews-en"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung enthält keinen belastbaren direkten Pfad zu demokratischen Verfahren, Rechenschaft oder Beteiligung. Politische Folgen bleiben offen.",
+          "positive_path": {
+            "mechanism": "Keine unmittelbar belegte demokratische Wirkungsänderung.",
+            "source_ids": [
+              "euronews-en"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Keine unmittelbar belegte demokratische Wirkungsänderung.",
+            "source_ids": [
+              "euronews-en"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kinder_jugend",
+          "beschaeftigte",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T19:57:12.795Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T16:30:25.000Z",
+      "last_updated": "2026-09-09T20:03:13.135Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-4cd197336e93584b1e6e",
+      "case_file": null,
+      "source_published_at": "2026-09-09T16:30:25.000Z",
+      "published_at": "2026-09-09T20:03:13.135Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "euronews-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob Opferzahl, Ort und Ursache nach weiteren Quellen bestätigt werden.",
+          "source_id": "euronews-en",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung oder Korrektur von Tote-, Verletzten- und Ortsangabe",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f64409d8f0cb5fdb",
+          "announced_at": "2026-09-09T16:30:25.000Z",
+          "follow_up_date": "2026-09-16T20:03:13.135Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Euronews",
+          "url": "https://www.euronews.com/2026/09/09/temporary-wartime-weapons-depot-explosion-kills-14-outside-syrias-idlib",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T16:30:25.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-6cca6ba233753ac1",
       "title_image": {
