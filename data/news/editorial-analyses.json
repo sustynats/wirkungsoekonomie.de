@@ -1,8 +1,50 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-09T13:41:41.155Z",
+  "updated_at": "2026-09-09T15:15:02.467Z",
   "candidates": [
+    {
+      "story_id": "wt-0158090dd70e734e",
+      "story_slug": "nach-anschlagen-auf-stromversorgung-verdachtiger-in-untersuchungshaft-0e734e",
+      "story_title": "Nach Anschlägen auf Stromversorgung: Verdächtiger in Untersuchungshaft",
+      "editorial_analysis_score": 77,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 4,
+        "evidence_quality": 7
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 9,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "039549c69990c4e5080d210638c414b43130c8ff97855ba92a6dfb1e7bf63998",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-84ac3f26c7762712",
       "story_slug": "milliarden-lucke-im-klimafonds-762712",
@@ -180,7 +222,7 @@
       "story_id": "wt-e820bef62dd96612",
       "story_slug": "angriff-mit-stichwaffe-in-ahrensburg-tatverdachtiger-festgenommen-d96612",
       "story_title": "Angriff mit Stichwaffe in Ahrensburg: Tatverdächtiger festgenommen",
-      "editorial_analysis_score": 68,
+      "editorial_analysis_score": 70,
       "analysis_gain": 51,
       "factors": {
         "systemic_relevance": 16,
@@ -197,7 +239,7 @@
         "distribution_relevance": 3,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 5
+        "evidence_quality": 7
       },
       "factor_status": {
         "impact_potential": "open",
@@ -207,14 +249,14 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 2,
+        "independent_origin_count": 3,
         "primary_source_count": 0,
         "cited_claim_count": 6,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "55c01a53ce4e370eae11a3736ee05383f6c4c6e67e77e2ffa44c87d2ead7b09d",
+      "fingerprint": "22d7ee4a94428d084bc81b30bbf84cca58301a92d789296771c08cab898f81d5",
       "status": "ready_for_research",
       "analysis_id": null
     },
@@ -222,7 +264,7 @@
       "story_id": "wt-366b1fbfa120e44f",
       "story_slug": "sabotage-am-stromnetz-polizei-nimmt-verdachtigen-bei-aachen-fest-20e44f",
       "story_title": "Sabotage am Stromnetz: Polizei nimmt Verdächtigen bei Aachen fest",
-      "editorial_analysis_score": 84,
+      "editorial_analysis_score": 82,
       "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 16,
@@ -239,7 +281,7 @@
         "distribution_relevance": 6,
         "discourse_relevance": 6,
         "case_depth": 0,
-        "evidence_quality": 7
+        "evidence_quality": 5
       },
       "factor_status": {
         "impact_potential": "open",
@@ -249,14 +291,14 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 3,
+        "independent_origin_count": 2,
         "primary_source_count": 0,
-        "cited_claim_count": 7,
+        "cited_claim_count": 5,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "e5095f24671851661bf26839bac0d41344db6d69b03da9d1c566829dc05b102f",
+      "fingerprint": "646e57265ef9d91effe3156b7596482215484833cf1ebaeb842893539a96f6eb",
       "status": "ready_for_research",
       "analysis_id": null
     },
@@ -476,48 +518,6 @@
       "fingerprint": "e1b1db1771ed604af4ad505ac35099d79339d3599224ead111a589923e4b9bed",
       "status": "published",
       "analysis_id": "woek-analysis-dab9cdd59202"
-    },
-    {
-      "story_id": "wt-f03755f6f6b8c3b7",
-      "story_slug": "sabotageversuche-polizei-ruft-bevolkerung-auf-verdachtige-beobachtungen-zu-melden-b8c3b7",
-      "story_title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
-      "editorial_analysis_score": 78,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 9,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 6,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 6,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 4,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "ff99a7fe570d24cd0d511b62ee12eec4c137e78e18f3a11f0f9239c581fb99e8",
-      "status": "ready_for_research",
-      "analysis_id": null
     },
     {
       "story_id": "wt-4b5d0962d323432a",
