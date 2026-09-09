@@ -1,7 +1,311 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T10:07:31.404Z",
+  "updated_at": "2026-09-09T10:21:42.967Z",
   "stories": [
+    {
+      "story_id": "wt-ee6173fc58ca7eca",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "klingbeils-rekord-schulden-und-schwache-schuler-ca7eca",
+      "title": "Klingbeils Rekord-Schulden und schwache Schüler",
+      "source_summary": "Die Quelle fasst drei Themen des Tages zusammen: den Haushalt 2027 von Bundesfinanzminister Lars Klingbeil, neue Pisa-Ergebnisse für Deutschland und offene Fragen zur Regierungsbildung in Sachsen-Anhalt. Beim Haushalt nennt der Text 555,4 Milliarden Euro Ausgaben, 2026 waren es 524,5 Milliarden, und 118,7 Milliarden Euro neue Kredite; zusammen mit Sondervermögen wird die Neuverschuldung auf rund 203,6 Milliarden Euro beziffert.\n\nBei Pisa heißt es, Deutschland schneide so schlecht ab wie nie seit 2000; rund ein Fünftel der Jugendlichen verfehlt in allen drei Bereichen die Basiskompetenzen. In Sachsen-Anhalt werden nach dem AfD-Erfolg mehrere mögliche Konstellationen nur als theoretische Szenarien beschrieben.",
+      "summary": "Klingbeil bringt einen Haushaltsentwurf mit hoher Neuverschuldung ein. Gleichzeitig verweist die Quelle auf neue Pisa-Befunde und eine offene Regierungsbildung in Sachsen-Anhalt.",
+      "detail_summary": "Der Text bündelt drei Entwicklungen mit unterschiedlicher Reichweite: Bundeshaushalt, Bildungsbefund und Regierungsbildung. Beim Haushalt liegen konkrete Zahlen vor, bei Pisa ebenfalls ein klarer Befund, bei Sachsen-Anhalt bleibt die Regierungskonstellation offen. Für die Wirkung ist vor allem der Haushaltsentwurf relevant, weil er über Ausgaben, Kreditaufnahme und Verteilungskonflikte künftige Spielräume setzt. Die Pisa-Ergebnisse sind als Zustandsbeschreibung wichtig, weil sie Druck auf Bildungs- und Sozialpolitik erhöhen können, ohne dass daraus schon eine Wirkung folgt. In Sachsen-Anhalt ist der Wirkpfad noch offen; hier geht es bisher um mögliche Mehrheiten und nicht um eine beschlossene Regelung. Die Evidenz bleibt journalistisch und auf eine Quelle gestützt.",
+      "why_relevant": "Der Beitrag verbindet einen großen haushaltspolitischen Schritt, einen belastbaren Bildungsindikator und eine politisch offene Regierungsfrage. Das ist für öffentliche Finanzen, Bildung und Landespolitik zugleich relevant.",
+      "topic": [
+        "Finanzen",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Mehr Schulden können kurzfristig staatliche Investitionen ermöglichen, zugleich aber künftige Haushaltsräume verengen und Verteilungskonflikte verschärfen.",
+          "positive_path": {
+            "mechanism": "Höhere Ausgaben und Kredite können Investitionen, Sicherheit und öffentliche Leistungen finanzieren.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Hohe Neuverschuldung kann den fiskalischen Spielraum künftiger Haushalte senken und Konflikte um Kürzungen verstärken.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Quelle nennt zusätzliche Mittel im Klima- und Transformationskontext, zugleich aber auch Kritik an Kürzungen. Eine Richtung ist daher nur bedingt ableitbar.",
+          "positive_path": {
+            "mechanism": "Mittel aus dem Klima- und Transformationsfonds können Transformationsinvestitionen stützen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kürzungen im Klima- und Transformationsfonds können klimapolitische Umsetzung und Umbau verlangsamen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Für Sachsen-Anhalt ist nur das Ringen um Mehrheiten und mögliche Szenarien belegt, nicht die tatsächliche neue Regierung oder deren Folgen.",
+          "positive_path": {
+            "mechanism": "Eine geklärte Regierungsbildung kann Entscheidungsfähigkeit und demokratische Korrekturfähigkeit sichern.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Längere Unklarheit bei Mehrheiten kann Verhandlungen verzögern und die Regierungsbildung erschweren.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T10:21:42.967Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T15:46:00.000Z",
+      "last_updated": "2026-09-09T10:23:33.399Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-5f3c52a0a4b117744739",
+      "case_file": null,
+      "source_published_at": "2026-09-08T15:46:00.000Z",
+      "published_at": "2026-09-08T21:11:10.043Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob der Haushaltsentwurf 2027 im Bundestag geändert oder beschlossen wird.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Änderungen am Entwurf, Beschlusslage, neue Kreditsumme",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-5fd4d5cbd23a3224",
+          "announced_at": "2026-09-08T15:46:00.000Z",
+          "follow_up_date": "2026-09-16T10:23:33.399Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob zu den Pisa-Befunden weitere amtliche Detailzahlen oder Originaltabellen veröffentlicht werden.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "zusätzliche Tabellen, Länderwerte, Kompetenzanteile",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-9591dd66aa6fee3d",
+          "announced_at": "2026-09-08T15:46:00.000Z",
+          "follow_up_date": "2026-09-16T10:23:33.399Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob in Sachsen-Anhalt eine belastbare Regierungsoption konkret wird oder verworfen wird.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "benannte Koalition, Tolerierung oder Ministerpräsidentenwahl",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-56c07910da4d09f8",
+          "announced_at": "2026-09-08T15:46:00.000Z",
+          "follow_up_date": "2026-09-16T10:23:33.399Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:46:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-bcac83440a73a81d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "schlechte-pisa-ergebnisse-prien-fordert-alterslimit-fur-social-media-73a81d",
+      "title": "Schlechte Pisa-Ergebnisse: Prien fordert Alterslimit für Social Media",
+      "source_summary": "Bundesbildungsministerin Karin Prien hat nach den schlechten deutschen Pisa-Ergebnissen eine Altersbeschränkung für Social Media gefordert. Sie begründet das mit fehlender Konzentration, weniger Ausdauer und Problemen beim sinnentnehmenden Lesen, die sie mit Social Media und Bildschirmzeit verknüpft.\n\nDeutschlandfunk berichtet zusätzlich, Prien wolle in den nächsten Wochen Vorschläge im Kabinett vorlegen. Einzelheiten zu einer konkreten Altersgrenze oder zu einer Altersverifikation nennt die Meldung nicht. Beide Texte stützen dieselbe politische Forderung, prüfen aber die behauptete Ursache nicht unabhängig.",
+      "summary": "Prien verknüpft die Pisa-Ergebnisse mit Social Media und fordert eine Altersbeschränkung. Belegt ist damit vor allem eine politische Reaktion, nicht die Wirkung des Mittels.",
+      "detail_summary": "Die Meldung beschreibt eine neue politische Forderung: Nach den schlechten deutschen Pisa-Ergebnissen will Bildungsministerin Prien eine Altersbeschränkung für Social Media. Das ist materiell relevant, weil daraus Regulierung, Altersprüfung und Pflichten für Plattformen folgen könnten. Der Wirkpfad wäre: politische Bewertung der Lage → möglicher Regelungsvorschlag → veränderte Nutzung oder Zugangsbeschränkung. Ob das die von Prien genannten Bildungsprobleme mindern würde, bleibt offen. Die Quelle belegt die Forderung und die angekündigte Kabinettsvorlage, aber keine Wirksamkeit und keine konkrete Altersgrenze.",
+      "why_relevant": "Die Meldung betrifft mögliche neue Regeln für den Zugang zu Social Media und damit einen Eingriff mit Folgen für Kinder, Familien und Plattformen.",
+      "topic": [
+        "Soziales",
+        "Demokratie"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Ein mögliches Alterslimit kann Kinder vor frühen Nutzungsfolgen schützen, kann aber auch Zugang, Informationsnutzung und Umgehungsdruck verändern. Die Nettowirkung ist ohne konkrete Ausgestaltung offen.",
+          "positive_path": {
+            "mechanism": "Weniger frühe und intensive Social-Media-Nutzung könnte Konzentration und Lernzeit schützen, wenn die Regel tatsächlich greift.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Alterskontrollen und Beschränkungen können Ausweichverhalten, Umgehungen und zusätzliche Hürden für legitime Nutzung erzeugen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der Meldung ergibt sich kein belastbarer Pfad zu Umwelt- oder Klimawirkungen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Eine neue Altersregulierung würde den Zugang zu Plattformen und damit Kommunikationsräume anders ordnen. Das kann Schutz bieten, aber auch Freiheits- und Durchsetzungsfragen verschärfen.",
+          "positive_path": {
+            "mechanism": "Klare Zugangsregeln können Minderjährige vor problematischer Nutzung schützen und Vollzugspflichten präzisieren.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Strenge Altersverifikation kann Zugangshürden, Umgehung und Streit über Eingriffe in Kommunikationsfreiheit auslösen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T10:21:42.967Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T07:02:07.000Z",
+      "last_updated": "2026-09-09T10:22:14.489Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-c3148c948e7ddbe23ef4",
+      "case_file": null,
+      "source_published_at": "2026-09-09T07:02:07.000Z",
+      "published_at": "2026-09-09T07:40:11.190Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "stern-schlagzeilen"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Bundesregierung oder die CDU Prien bei einer Altersbeschränkung für Social Media unterstützt.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "öffentliche Zustimmung, ablehnende Stellungnahme oder Entwurf eines Maßnahmenpakets",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2b4406cdfc19711d",
+          "announced_at": "2026-09-09T07:02:07.000Z",
+          "follow_up_date": "2026-09-16T07:40:11.190Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob Prien ihren Vorstoß in konkrete Regulierung oder einen Gesetzesvorschlag übersetzt.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "benannte Altersgrenze, Verfahrensschritt oder Kabinettsinitiative",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cca5b53457af261b",
+          "announced_at": "2026-09-09T07:02:07.000Z",
+          "follow_up_date": "2026-09-16T07:40:11.190Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob Prien tatsächlich einen Kabinettsvorschlag vorlegt und wie er konkret aussieht.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Kabinettsvorlage oder konkrete Vorlageelemente",
+          "expected_by_evidence_hash": "b55bdcb96031f7214466bcd86c0fc1dd2800c7ac92a2796ceae31002d6630df9",
+          "followup_id": "followup-b0e2677687519326",
+          "announced_at": "2026-09-09T10:06:01.000Z",
+          "follow_up_date": "2026-09-16T10:22:14.489Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/schlechte-pisa-ergebnisse--prien-fordert-alterslimit-fuer-social-media-38225502.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T07:02:07.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/prien-cdu-fordert-alterslimit-fuer-social-media-104.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T10:06:01.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3832ac28950296cb",
       "title_image": {
@@ -1536,133 +1840,6 @@
           "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-09T03:28:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-bcac83440a73a81d",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "schlechte-pisa-ergebnisse-prien-fordert-alterslimit-fur-social-media-73a81d",
-      "title": "Schlechte Pisa-Ergebnisse: Prien fordert Alterslimit für Social Media",
-      "source_summary": "Bundesbildungsministerin Karin Prien fordert nach den schlechten deutschen Pisa-Ergebnissen eine Altersbeschränkung für Social Media. Laut einem Bericht im Inforadio des RBB sagte sie, die Ergebnisse hätten auch mit Social Media und Bildschirmzeit zu tun.\n\nAls Begründung nannte sie, Kinder könnten sich nicht mehr konzentrieren, hätten weniger Ausdauer und könnten nicht mehr sinnentnehmend lesen. Der Bericht nennt keine konkrete Altersgrenze und zeigt keinen Beschluss, sondern eine politische Forderung und ihre Begründung.",
-      "summary": "Prien verknüpft die schlechten Pisa-Ergebnisse mit Social Media und verlangt eine Altersbeschränkung. Das ist politisch relevant, weil daraus neue Regulierung folgen könnte, belegt ist aber vorerst nur die Forderung.",
-      "detail_summary": "Die Meldung beschreibt einen politischen Vorstoß: Karin Prien fordert nach den schlechten deutschen Pisa-Ergebnissen eine Altersbeschränkung für Social Media. Materiell relevant ist das, weil daraus neue Regeln für Nutzung, Zugang und Plattformen entstehen könnten. Ein direkter Effekt auf Lernleistung ist hier aber nicht belegt; die Quelle gibt nur die Begründung der Ministerin wieder. Der Wirkpfad führt daher zunächst über öffentliche Debatte und mögliche Regulierung, nicht über bereits eingetretene Wirkungen. Die Evidenz bleibt begrenzt, weil nur ein journalistischer Bericht vorliegt und keine Originaldokumente oder Gegenstimmen im Material enthalten sind.",
-      "why_relevant": "Die Forderung zielt auf mögliche neue Regeln für den Zugang Jugendlicher zu Social Media und damit auf ein Thema mit Bezug zu Schule, Kindern und digitaler Teilhabe.",
-      "topic": [
-        "Soziales",
-        "Demokratie"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Ein Alterslimit kann Schutz vor Ablenkung und exzessiver Nutzung verstärken, kann aber zugleich Informationszugang, Teilhabe und Alltagskommunikation für Jugendliche einschränken.",
-          "positive_path": {
-            "mechanism": "Weniger frühe oder intensive Social-Media-Nutzung kann Konzentration und Lernzeit entlasten, wenn die Regel wirksam durchgesetzt und schulisch begleitet wird.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Eine Zugangsbeschränkung kann Umgehung, Verlagerung auf schwerer kontrollierbare Angebote und Einschränkungen digitaler Teilhabe auslösen.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "In der Meldung ist kein direkter Umweltpfad beschrieben; ein Bezug ergäbe sich höchstens indirekt über Geräteeinsatz und Nutzungsmuster, dafür fehlt hier Beleg.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Die Debatte kann demokratische Korrekturfähigkeit stärken, wenn Risiken für Kinder öffentlich verhandelt werden; sie kann aber auch in symbolische Regulierung kippen, wenn Evidenz und Zuständigkeiten unklar bleiben.",
-          "positive_path": {
-            "mechanism": "Öffentliche Prüfung von Jugend-, Bildungs- und Plattformregeln kann politische Kontrolle und Risikodebatten stärken.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Ein stark vereinfachter Schuld- und Lösungsrahmen kann die Debatte verengen und komplexe Ursachen von Pisa-Problemen überdecken.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          }
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T07:37:26.176Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T07:02:07.000Z",
-      "last_updated": "2026-09-09T07:40:11.190Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-c3148c948e7ddbe23ef4",
-      "case_file": null,
-      "source_published_at": "2026-09-09T07:02:07.000Z",
-      "published_at": "2026-09-09T07:40:11.190Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die Bundesregierung oder die CDU Prien bei einer Altersbeschränkung für Social Media unterstützt.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "öffentliche Zustimmung, ablehnende Stellungnahme oder Entwurf eines Maßnahmenpakets",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-2b4406cdfc19711d",
-          "announced_at": "2026-09-09T07:02:07.000Z",
-          "follow_up_date": "2026-09-16T07:40:11.190Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob Prien ihren Vorstoß in konkrete Regulierung oder einen Gesetzesvorschlag übersetzt.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "benannte Altersgrenze, Verfahrensschritt oder Kabinettsinitiative",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-cca5b53457af261b",
-          "announced_at": "2026-09-09T07:02:07.000Z",
-          "follow_up_date": "2026-09-16T07:40:11.190Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/schlechte-pisa-ergebnisse--prien-fordert-alterslimit-fuer-social-media-38225502.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T07:02:07.000Z",
           "primary_source": false
         }
       ]
@@ -3941,120 +4118,6 @@
           "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-08T23:40:28.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-ee6173fc58ca7eca",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "klingbeils-rekord-schulden-und-schwache-schuler-ca7eca",
-      "title": "Klingbeils Rekord-Schulden und schwache Schüler",
-      "source_summary": "ZDFheute bündelt am Abend drei aktuelle Themen: den Haushaltsentwurf 2027 von Finanzminister Lars Klingbeil, die neuen Pisa-Ergebnisse und die ersten politischen Gespräche nach der Landtagswahl in Sachsen-Anhalt. Im Haushalt nennt der Bericht Ausgaben von 555,4 Milliarden Euro, Kredite von 118,7 Milliarden Euro und zusammen mit Sondervermögen eine Neuverschuldung von rund 203,6 Milliarden Euro.\n\nBei Pisa heißt es, Deutschlands Schülerinnen und Schüler schnitten so schlecht ab wie nie seit 2000; rund ein Fünftel verfehle in allen drei Bereichen die Basiskompetenzen. In Sachsen-Anhalt werden nach dem AfD-Erfolg Koalitions- und Minderheitsmodelle diskutiert, ein Ergebnis ist offen.",
-      "summary": "Klingbeil bringt einen Haushalt mit hoher Neuverschuldung ein. Zugleich meldet die Quelle neue Pisa-Befunde und offene Regierungsoptionen in Sachsen-Anhalt.",
-      "detail_summary": "Die Meldung verbindet drei getrennte, aber politisch und fiskalisch relevante Entwicklungen: den Haushaltsentwurf 2027 mit 555,4 Milliarden Euro Ausgaben und 118,7 Milliarden Euro Krediten, die schlechtesten Pisa-Ergebnisse Deutschlands seit Beginn der Erhebungen und erste Sondierungen nach der Wahl in Sachsen-Anhalt. Für die Öffentlichkeit ist das relevant, weil Haushalt, Bildungsstand und Regierungsbildung jeweils Regeln, Mittelverwendung und Entscheidungsspielräume beeinflussen. Ein direkter Wirkpfad liegt beim Haushalt in möglichen Verschiebungen von Anreizen und Prioritäten; bei Pisa vor allem in der Bildungssteuerung und bei Sachsen-Anhalt in der künftigen Mehrheitsbildung. Die Quelle bleibt ein journalistischer Überblick; die Einordnung der Folgen ist daher vorläufig.",
-      "why_relevant": "Die Meldung enthält neue, materielle Zustandsinformationen zu Bundeshaushalt, Bildungslage und Regierungsbildung mit möglichem Einfluss auf Mittelverteilung, Anreize und politische Mehrheiten.",
-      "topic": [
-        "Finanzen",
-        "Politik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Der Haushalt kann Mittel und Anreize neu ordnen; gleichzeitig bleiben Verteilungswirkungen und Zielkonflikte offen. Ohne Umsetzungsdaten ist die Nettowirkung noch nicht bestimmbar.",
-          "positive_path": {
-            "mechanism": "Höhere Mittel und neue Abgaben können öffentliche Leistungen und fiskalische Handlungsfähigkeit sichern.",
-            "source_ids": [
-              "zdfheute-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Hohe Neuverschuldung und Kürzungsdebatten können Verteilungskonflikte, Belastungen und politische Blockaden verstärken.",
-            "source_ids": [
-              "zdfheute-nachrichten"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Die Quelle nennt Klimaschutz-Sondervermögen und Kritik an Kürzungen im Klima- und Transformationsfonds. Daraus ergibt sich ein möglicher Pfad in beide Richtungen, aber kein Wirkungsnachweis.",
-          "positive_path": {
-            "mechanism": "Klimaschutzbezogene Mittel können Transformations- und Investitionspfade stützen.",
-            "source_ids": [
-              "zdfheute-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Kürzungen oder Umwidmungen können Klima- und Transformationsvorhaben schwächen.",
-            "source_ids": [
-              "zdfheute-nachrichten"
-            ]
-          }
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "tendency": "offen",
-          "direction_basis": "unclear",
-          "rationale": "Bei Sachsen-Anhalt geht es um Regierungsbildung und mögliche Koalitionsmodelle. Die demokratische Wirkung hängt von den späteren Mehrheiten und Verfahren ab; dazu nennt die Quelle noch kein Ergebnis.",
-          "positive_path": {
-            "mechanism": "Offene Verhandlungen können institutionelle Mehrheiten und parlamentarische Kontrolle klären.",
-            "source_ids": [
-              "zdfheute-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Blockaden oder Lagerkonflikte können die Regierungsbildung erschweren und Korrekturfähigkeit mindern.",
-            "source_ids": [
-              "zdfheute-nachrichten"
-            ]
-          }
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T21:08:48.678Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T15:46:00.000Z",
-      "last_updated": "2026-09-08T21:11:10.043Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-5f3c52a0a4b117744739",
-      "case_file": null,
-      "source_published_at": "2026-09-08T15:46:00.000Z",
-      "published_at": "2026-09-08T21:11:10.043Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "zdfheute-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T15:46:00.000Z",
           "primary_source": false
         }
       ]
