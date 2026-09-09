@@ -2,34 +2,29 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T00:27:01.896Z",
+  "started_at": "2026-09-09T00:38:55.552Z",
   "scanned_stories": 181,
   "scanned_subjects": 159,
   "editorial_candidates": 31,
-  "ready_for_research": 10,
+  "ready_for_research": 9,
   "research_pending": 10,
-  "retry_deferred": 4,
+  "retry_deferred": 8,
   "editorial_research_sources_discovered": 47,
-  "selected": 6,
-  "editorial_research_started": 3,
-  "editorial_analyses_published": 1,
+  "selected": 1,
+  "editorial_research_started": 0,
+  "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 4,
-  "research_tokens": 25168,
-  "analysis_tokens": 21546,
-  "estimated_cost_usd": 0.113413,
-  "quality_retries": 1,
-  "publication_deferred": true,
+  "research_calls": 0,
+  "research_tokens": 0,
+  "analysis_tokens": 0,
+  "estimated_cost_usd": 0,
+  "quality_retries": 0,
+  "publication_deferred": false,
   "failed": [
     {
-      "story_id": "wt-de413d33343f350b",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-09T08:27:01.896Z"
-    },
-    {
-      "story_id": "wt-e01e1e77e702edc3",
+      "story_id": "wt-cf03acddb911d861",
       "reason": "AI_BUDGET_EXHAUSTED",
-      "next_attempt_at": "2026-09-09T00:42:01.896Z"
+      "next_attempt_at": "2026-09-09T00:53:55.552Z"
     }
   ],
   "candidates": [
@@ -114,8 +109,8 @@
         "reasons": []
       },
       "fingerprint": "8794d0fc4cbe173ebd1a54a39b73af37bb666bc4ded7a2311a14a1fdccf74965",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-a06942993891"
     },
     {
       "story_id": "wt-e820bef62dd96612",
@@ -1372,8 +1367,7 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "batch_deferred": 2,
   "budget_blocked": true,
   "budget_block_scope": "shared",
-  "completed_at": "2026-09-09T00:30:03.522Z"
+  "completed_at": "2026-09-09T00:39:25.258Z"
 }
