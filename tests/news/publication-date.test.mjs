@@ -47,6 +47,48 @@ test('publication metadata must agree with the visible article date and exact ti
   assert.equal(publicationDateFromHib(document(item(), '10.09.2026'), item(), now), null);
 });
 
+test('quotation typography may differ between the RSS title and the exact HIB heading', () => {
+  const i = { ...item(1211026), title: 'Grüne fordern "faires" Gewerbemietrecht' };
+  for (const title of [
+    'Grüne fordern „faires“ Gewerbemietrecht',
+    'Grüne fordern “faires” Gewerbemietrecht',
+    'Grüne fordern «faires» Gewerbemietrecht',
+    'Grüne fordern &quot;faires&quot; Gewerbemietrecht',
+  ]) {
+    assert.deepEqual(publicationDateFromHib(document({ ...i, title }), i, now),
+      { published_at: '2026-09-08', published_precision: 'day' });
+  }
+  const single = { ...i, title: "Grüne fordern 'faires' Gewerbemietrecht" };
+  assert.deepEqual(publicationDateFromHib(document({ ...single, title: 'Grüne fordern ‚faires‘ Gewerbemietrecht' }), single, now),
+    { published_at: '2026-09-08', published_precision: 'day' });
+  for (const title of [
+    'Grüne fordern „anderes“ Gewerbemietrecht',
+    'Grüne fordern faires Gewerbemietrecht',
+    'Grüne fordern „faires“ Gewerbemietrecht nicht',
+  ]) assert.equal(publicationDateFromHib(document({ ...i, title }), i, now), null);
+  const conflict = document({ ...i, title: 'Grüne fordern „faires“ Gewerbemietrecht' });
+  conflict.body = conflict.body.replace('class="bt-date">08.09.2026', 'class="bt-date">07.09.2026');
+  assert.equal(publicationDateFromHib(conflict, i, now), null);
+});
+
+test('a failed older parser cache does not postpone a corrected metadata check', async () => {
+  const state = {}, i = item();
+  await createPublicationDateRecovery({ registry, state, now,
+    fetchArticleImpl: async () => document({ ...i, title: 'Nicht derselbe Artikel' }),
+  }).recover([i]);
+  const saved = Object.values(state.source_publication_dates)[0];
+  assert.equal(saved.status, 'open');
+  delete saved.parser_revision; // Existing negative cache written before the parser correction.
+  let calls = 0;
+  const next = createPublicationDateRecovery({ registry, state, now: '2026-09-09T01:00:00Z',
+    fetchArticleImpl: async current => { calls++; return document(current); },
+  });
+  const [recovered] = await next.recover([i]);
+  assert.equal(calls, 1);
+  assert.equal(recovered.published_at, '2026-09-08');
+  assert.equal(next.stats.verified, 1);
+});
+
 test('footer, script and comment dates are not publication evidence', () => {
   const d = document();
   d.body = d.body.replace('<meta name="date" content="08.09.2026"/>', '<!-- <meta name="date" content="08.09.2026"/> -->');
@@ -66,6 +108,7 @@ test('bounded reads and cache reuse preserve original data and do not invent a c
   assert.equal(recovered[0].source_published_at, '2026-09-08');
   assert.equal(recovered[0].publication_date_evidence.url, items[0].url);
   assert.ok(!JSON.stringify(state).includes('<html>'));
+  for (const saved of Object.values(state.source_publication_dates)) delete saved.parser_revision;
   const repeat = createPublicationDateRecovery({ registry, state, now, fetchArticleImpl: async () => { throw new Error('must reuse'); } });
   assert.deepEqual(await repeat.recover(items), recovered);
   assert.equal(repeat.stats.attempted, 0);

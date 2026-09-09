@@ -1,7 +1,367 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T08:06:50.537Z",
+  "updated_at": "2026-09-09T08:52:20.295Z",
   "stories": [
+    {
+      "story_id": "wt-4da4b09830c09b15",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "insulin-aus-frankfurt-eu-genehmigt-400-millionen-euro-fur-sanofi-c09b15",
+      "title": "Insulin aus Frankfurt: EU genehmigt 400 Millionen Euro für Sanofi",
+      "source_summary": "Die hessenschau berichtet, die EU-Kommission habe Deutschland grünes Licht gegeben, Sanofi mit 400 Millionen Euro zu unterstützen. Das Geld solle ein neues Insulinwerk am Standort Frankfurt-Höchst absichern. Laut Bericht verpflichtet sich Sanofi, bis Ende 2032 eine neue Insulinfabrik aufzubauen und dort bis Ende 2042 jährlich mindestens 1,1 Tonnen Insulin herzustellen.\n\nDer Bericht nennt außerdem die Aussage der Kommission, ohne die Gelder würde Sanofi den deutschen Standort schließen. Sanofi hatte 2024 angekündigt, bis 2029 rund 1,3 Milliarden Euro in die Anlage zu investieren. Als Kontext nennt der Bericht, dass es sich um die einzige Produktionsstätte für Humaninsulin im EWR und eine von nur zwei Insulin-Produktionsstätten im Gebiet handle.",
+      "summary": "Die Meldung beschreibt eine genehmigte Förderung für Sanofi in Frankfurt-Höchst und verknüpft sie mit Standort- und Produktionsauflagen. Das ist für Versorgung, Kapitalbindung und Industriepolitik relevant, aber die EU-Mitteilung liegt hier nur indirekt vor.",
+      "detail_summary": "Es geht um eine genehmigte staatliche Unterstützung von 400 Millionen Euro für Sanofi am Standort Frankfurt-Höchst. Der berichtete Wirkpfad führt über Investitionen, Bau einer neuen Anlage und eine zugesagte Mindestproduktion bis Ende 2042. Materiell relevant ist das wegen möglicher Folgen für Arzneimittelversorgung, Standortbindung und industrielle Kapazitäten. Möglich sind auch Abhängigkeiten von der Einhaltung der Auflagen und von der tatsächlichen Umsetzung des Baus. Die Evidenz bleibt vorerst begrenzt, weil nur ein journalistischer Bericht vorliegt und der Originalbeschluss hier nicht mitgelesen wurde.",
+      "why_relevant": "Die Meldung betrifft eine große Beihilfe, einen Industrie- und Produktionsstandort sowie mögliche Folgen für die Insulinversorgung in Europa.",
+      "topic": [
+        "Europa"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die zugesagte Förderung kann Investition und Standortbindung stützen und damit die Produktionskapazität für Insulin sichern, wenn die Auflagen umgesetzt werden.",
+          "positive_path": {
+            "mechanism": "Förderung erleichtert Bau und Betrieb der Anlage; dadurch kann die Insulinproduktion am Standort erhalten oder aufgebaut werden.",
+            "source_ids": [
+              "hr-hessenschau"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Bleibt die Umsetzung aus oder werden Auflagen verfehlt, kann die angestrebte Sicherung der Produktion ausbleiben.",
+            "source_ids": [
+              "hr-hessenschau"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In den Quellen gibt es keinen belastbaren Hinweis auf Umwelt- oder Klimaeffekte dieser Förderung.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung enthält keinen direkten Pfad zu demokratischer Korrekturfähigkeit, Beteiligung oder institutioneller Kontrolle.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Förderung",
+            "value": "400",
+            "unit": "Millionen Euro",
+            "context": "staatliche Unterstützung für Sanofi",
+            "claim_id": "wt-4da4b09830c09b15-v2-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "unternehmen",
+          "beschaeftigte",
+          "patientinnen",
+          "verbraucherinnen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T08:52:20.295Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T15:37:22.000Z",
+      "last_updated": "2026-09-09T08:56:26.777Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-d733eb8b40e9e5032787",
+      "case_file": null,
+      "source_published_at": "2026-09-08T15:37:22.000Z",
+      "published_at": "2026-09-08T17:08:56.438Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Förderung und der Bau wie berichtet umgesetzt werden und ob sich der Zeitplan bis Ende 2032/2042 bestätigt.",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Baubeginn, Fördervollzug, Fertigstellung, Produktionsstart",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-75143a83f77cf10d",
+          "announced_at": "2026-09-08T15:37:22.000Z",
+          "follow_up_date": "2026-09-15T17:08:56.438Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob die EU-Kommission oder eine staatliche Stelle die Beihilfe und Auflagen im Original veröffentlicht hat.",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Originalbeschluss oder Mitteilung mit Auflagen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-5471e200dc858a12",
+          "announced_at": "2026-09-08T15:37:22.000Z",
+          "follow_up_date": "2026-09-16T08:56:26.777Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/wirtschaft/insulin-aus-frankfurt-eu-genehmigt-400-millionen-euro-fuer-sanofi-v1,sanofi-insulin-frankfurt-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:37:22.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-5640ff3e4191a49a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "behg-anderung-co2-preis-soll-2027-stabil-bleiben-91a49a",
+      "title": "BEHG-Änderung: CO2-Preis soll 2027 stabil bleiben",
+      "source_summary": "Die Bundesregierung hat dem Bundestag einen Entwurf für eine BEHG-Änderung vorgelegt. Nach der Vorlage soll der CO2-Preis für Benzin, Diesel, Heizöl und Erdgas 2027 weiter im bisherigen Preiskorridor von 55 bis 65 Euro pro Tonne Kohlendioxid liegen. Laut Entwurf soll damit ein Koalitionsbeschluss umgesetzt werden.\n\nAls Hintergrund nennt die Vorlage die Verschiebung des EU-ETS 2 auf 2028 und den Wunsch nach Planungssicherheit für Unternehmen. Zusätzlich sind Anpassungen an der Doppelbilanzierungsverordnung vorgesehen. Offene Punkte sind der weitere Gesetzgebungsweg und mögliche Änderungen im Parlament.",
+      "summary": "Der Entwurf hält den CO2-Preis 2027 im bisherigen Korridor. Das kann Kosten- und Anreizsignale für Brennstoffe stabilisieren; die tatsächliche Wirkung hängt aber vom parlamentarischen Verfahren ab.",
+      "detail_summary": "Sachverhalt: Die Bundesregierung hat einen BEHG-Entwurf vorgelegt, der den nationalen CO2-Preis 2027 im Korridor von 55 bis 65 Euro pro Tonne halten soll. Relevanz: Das betrifft Regeln und Preissignale für Brennstoffe und damit einen materiellen Steuerungshebel im Klima- und Energiesystem. Wirkpfad: Ein stabiler Preis kann Kalkulationen für Unternehmen und Haushalte verlässlicher machen und zugleich Emissionsanreize unverändert lassen. Mögliche Folge ist eher Planungssicherheit als ein neuer Preisschock. Evidenzgrenze: Belegt ist hier nur der Gesetzentwurf; ob und wie stark sich Verhalten, Emissionen oder Verteilungseffekte ändern, bleibt offen.",
+      "why_relevant": "Der Entwurf ändert einen klimapolitischen Preisrahmen und damit einen materiellen Anreiz für Brennstoffe. Das ist für Unternehmen, Verbraucherinnen und die Klimapolitik relevant.",
+      "topic": [
+        "Klima",
+        "Europa",
+        "Geopolitik",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Entwurf stabilisiert 2027 das Preissignal für fossile Brennstoffe. Das kann Planungssicherheit erhöhen, hält aber zugleich den Lenkungsdruck auf dem bisherigen Niveau.",
+          "positive_path": {
+            "mechanism": "Mehr Planungssicherheit für Unternehmen und weniger kurzfristige Preisschwankung können Investitions- und Beschaffungsentscheidungen erleichtern.",
+            "source_ids": [
+              "bundestag-umwelt"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ein stabil gehaltener CO2-Preis verändert den Anreiz zur schnelleren Minderung nicht nach oben und kann den Umstieg im Übergangsjahr bremsen.",
+            "source_ids": [
+              "bundestag-umwelt"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Für den Schutzbereich Planet ist der Pfad doppelt: stabile Preise schaffen Ordnung, aber keine zusätzliche Emissionsminderung. Die Umweltwirkung hängt davon ab, ob das Niveau Anreize zur Reduktion ausreichend hoch hält.",
+          "positive_path": {
+            "mechanism": "Ein klarer, vorhersehbarer Preisrahmen kann Umbauentscheidungen und Emissionsminderung besser steuerbar machen.",
+            "source_ids": [
+              "bundestag-umwelt"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Bleibt der Preis im selben Korridor, entsteht 2027 kein zusätzlicher Preisdruck, der fossile Nutzung stärker verteuern würde.",
+            "source_ids": [
+              "bundestag-umwelt"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus dem Entwurf ergibt sich hier kein belastbarer direkter Pfad auf demokratische Korrekturfähigkeit, außer dem normalen Gesetzgebungsverfahren.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T08:52:20.295Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08",
+      "last_updated": "2026-09-09T08:56:11.354Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-9c0ee812d27e4634c540",
+      "case_file": null,
+      "source_published_at": "2026-09-08T00:00:00.000Z",
+      "published_at": "2026-09-09T08:56:11.354Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-umwelt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob der Bundestag den Gesetzentwurf unverändert annimmt oder ändert.",
+          "source_id": "bundestag-umwelt",
+          "expected_by": null,
+          "measurable_indicator": "Beschlusslage des Bundestags",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6c94ff62678974f8",
+          "announced_at": "2026-09-08",
+          "follow_up_date": "2026-09-16T08:56:11.354Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob im parlamentarischen Verfahren noch Änderungen am Preiskorridor 2027 beschlossen werden.",
+          "source_id": "bundestag-umwelt",
+          "expected_by": null,
+          "measurable_indicator": "Abweichung von 55 bis 65 Euro",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-982f90788009ad03",
+          "announced_at": "2026-09-08",
+          "follow_up_date": "2026-09-16T08:56:11.354Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag - Umwelt und Klimaschutz",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210950",
+          "source_type": "official_rss",
+          "published_at": "2026-09-08",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-3c1a41d7234d7f44",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "eu-gericht-bestatigt-booking-darf-etraveli-nicht-ubernehmen-4d7f44",
+      "title": "EU-Gericht bestätigt: Booking darf eTraveli nicht übernehmen",
+      "source_summary": "Booking.com darf das Flugportal eTraveli nach der berichteten Entscheidung des Gerichts der Europäischen Union in Luxemburg nicht übernehmen. Laut der Quelle bestätigte das Gericht am Mittwoch die Entscheidung der EU-Kommission von 2023. Als Begründung nennt der Bericht, eine Fusion der beiden Firmen würde den Wettbewerb deutlich behindern.\n\nEin Aktenzeichen ist genannt. Weitere Details zur Begründung oder zu Folgen für die Unternehmen werden in der gelieferten Quelle nicht ausgeführt.",
+      "summary": "Das EU-Gericht hat laut Bericht die Übernahme von eTraveli durch Booking bestätigt verboten. Damit bleibt der Zusammenschluss vorerst gesperrt.",
+      "detail_summary": "Der berichtete Kern ist eine verbindliche Wettbewerbsentscheidung mit unmittelbarer Bedeutung für zwei Unternehmen. Sie kann Kapital- und Marktflüsse sowie die Struktur des Online-Reisemarkts beeinflussen, weil ein geplanter Zusammenschluss nicht zustande kommt. Für Mensch, Planet und Demokratie ist die Relevanz hier vor allem indirekt und wirtschaftlich; die konkrete Breitenwirkung bleibt offen. Ein belastbarer Wirkpfad ist die veränderte Marktordnung durch das Verbot der Fusion. Zur Reichweite, Dauer und zu möglichen Folgewirkungen liefert die Quelle keine vertieften Angaben, daher bleibt die Einordnung vorläufig.",
+      "why_relevant": "Die Entscheidung stoppt eine geplante Übernahme im europäischen Reisemarkt und verändert damit unmittelbar eine mögliche Markt- und Wettbewerbsstruktur.",
+      "topic": [
+        "Europa",
+        "Wirtschaft"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Für Kundinnen und Kunden kann mehr Wettbewerb später günstigere oder bessere Angebote stützen; zugleich bleibt der unmittelbare Nutzen aus der untersagten Fusion offen.",
+          "positive_path": {
+            "mechanism": "Eine stärkere Wettbewerbsstruktur kann Preisdruck und Auswahl im Online-Reisemarkt erhalten.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Der geplatzte Zusammenschluss kann geplante Integrations- oder Skaleneffekte verhindern.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Quelle nennt keinen direkten Umweltbezug oder konkrete ökologische Folge.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die bestätigte Zuständigkeit und Durchsetzung eines Wettbewerbsurteils kann die demokratische Korrekturfähigkeit von Marktregeln stützen.",
+          "positive_path": {
+            "mechanism": "Gerichtliche Kontrolle von Fusionsentscheidungen stärkt die Bindung wirtschaftlicher Macht an Regeln.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T08:52:20.295Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T07:59:55.000Z",
+      "last_updated": "2026-09-09T08:55:33.598Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-fa335ca7ff77118cdd30",
+      "case_file": null,
+      "source_published_at": "2026-09-09T07:59:55.000Z",
+      "published_at": "2026-09-09T08:55:33.598Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/eu-gericht-bestaetigt--booking-darf-etraveli-nicht-uebernehmen-38225950.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T07:59:55.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-688b36d040bfbf87",
       "title_image": {
@@ -4961,136 +5321,6 @@
           "url": "https://taz.de/Bundeshaushalt-fuer-2027/!6211410",
           "source_type": "media_rss",
           "published_at": "2026-09-08T16:06:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-4da4b09830c09b15",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "insulin-aus-frankfurt-eu-genehmigt-400-millionen-euro-fur-sanofi-c09b15",
-      "title": "Insulin aus Frankfurt: EU genehmigt 400 Millionen Euro für Sanofi",
-      "source_summary": "Sanofi will in Frankfurt-Höchst nach einem Bericht der hessenschau ein neues Insulinwerk bauen. Die EU-Kommission habe dafür staatliche Fördergelder in Höhe von 400 Millionen Euro genehmigt und dies mit der Bedeutung für die Insulinversorgung begründet. Laut Bericht verpflichtet sich Sanofi, bis Ende 2032 eine neue Insulinfabrik am Standort aufzubauen und dort bis Ende 2042 jährlich mindestens 1,1 Tonnen Insulin herzustellen.\n\nDie Kommission verweist zudem darauf, dass der Standort die einzige Humaninsulin-Produktion im Europäischen Wirtschaftsraum und eine von nur zwei Insulin-Produktionsstätten dort sei. Offen bleibt, wie der genaue Vollzug der Förderung aussieht und wie belastbar die Einordnung ohne weitere Quelle ist.",
-      "summary": "EU-Brüssel soll 400 Millionen Euro für Sanofi in Frankfurt genehmigt haben. Das würde Investition, Standortbindung und künftige Insulinproduktion beeinflussen.",
-      "detail_summary": "Der Bericht beschreibt eine genehmigte Förderung für Sanofi am Standort Frankfurt-Höchst und eine damit verknüpfte Investition in ein neues Insulinwerk. Materiell relevant ist das, weil sich dadurch Kapitalfluss, Produktionskapazität und Versorgungssicherheit für ein Arzneimittel mit möglicher Systembedeutung ändern können. Der Wirkpfad reicht von der Beihilfe über den Aufbau der Anlage bis zu künftiger Produktion und möglicher Lieferstabilität. Unsicher bleibt, wie schnell und vollständig das Vorhaben umgesetzt wird und ob die berichteten Mengen- und Standortangaben sich in weiteren Quellen bestätigen. Die Meldung ist deshalb vorläufig und wegen der Einordnung der Versorgungslage noch nicht abschließend.",
-      "why_relevant": "Die Meldung betrifft einen genehmigten Förderrahmen und damit eine konkrete Änderung von Kapitalfluss und potenzieller Produktionskapazität in einem medizinisch relevanten Markt.",
-      "topic": [
-        "Europa"
-      ],
-      "status": "angekündigt",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Wenn die Investition und der Bau wie berichtet umgesetzt werden, kann das die Verfügbarkeit von Humaninsulin stabilisieren und Lieferengpässe eher mindern. Der Pfad ist jedoch noch ex ante und hängt an Umsetzung, Zeitplan und tatsächlicher Produktion.",
-          "positive_path": {
-            "mechanism": "Förderung und Investition ermöglichen Aufbau neuer Produktionskapazität; das kann Versorgung und Standortsicherung verbessern.",
-            "source_ids": [
-              "hr-hessenschau"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Falls Umsetzung, Genehmigungsauflagen oder Bau verzögert scheitern, bleibt die erwartete Kapazität aus und die Versorgungslage ändert sich nicht.",
-            "source_ids": [
-              "hr-hessenschau"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "In den gelieferten Quellen fehlt ein belastbarer Pfad zu Umwelt- oder Klimawirkungen. Es gibt keine Angaben zu Energiebedarf, Emissionen oder Ressourcenverbrauch des Projekts.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Die Beihilfeentscheidung zeigt staatliche Steuerung im EU-Rahmen und betrifft damit Regeln, Aufsicht und öffentliche Korrekturfähigkeit. Eine direkte demokratische Wirkung ist aber nicht belegt; relevant ist vor allem die institutionelle Entscheidungs- und Begründungsstruktur.",
-          "positive_path": {
-            "mechanism": "Beihilfeprüfung und öffentliche Begründung machen wirtschaftliche Förderung transparent und kontrollierbar.",
-            "source_ids": [
-              "hr-hessenschau"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Wenn zentrale Produktionskapazität stark an einzelne Standorte gebunden bleibt, kann das die politische Verwundbarkeit bei Störungen erhöhen.",
-            "source_ids": [
-              "hr-hessenschau"
-            ]
-          }
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Fördergeld",
-            "value": "400",
-            "unit": "Millionen Euro",
-            "context": "Genehmigte staatliche Unterstützung für Sanofi",
-            "claim_id": "wt-4da4b09830c09b15-v1-claim-1"
-          }
-        ],
-        "affected_groups": [
-          "patientinnen",
-          "unternehmen",
-          "beschaeftigte"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T17:06:38.176Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T15:37:22.000Z",
-      "last_updated": "2026-09-08T17:08:56.438Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-d733eb8b40e9e5032787",
-      "case_file": null,
-      "source_published_at": "2026-09-08T15:37:22.000Z",
-      "published_at": "2026-09-08T17:08:56.438Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die Förderung und der Bau wie berichtet umgesetzt werden und ob sich der Zeitplan bis Ende 2032/2042 bestätigt.",
-          "source_id": "hr-hessenschau",
-          "expected_by": null,
-          "measurable_indicator": "Baubeginn, Fördervollzug, Fertigstellung, Produktionsstart",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-75143a83f77cf10d",
-          "announced_at": "2026-09-08T15:37:22.000Z",
-          "follow_up_date": "2026-09-15T17:08:56.438Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/wirtschaft/insulin-aus-frankfurt-eu-genehmigt-400-millionen-euro-fuer-sanofi-v1,sanofi-insulin-frankfurt-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T15:37:22.000Z",
           "primary_source": false
         }
       ]

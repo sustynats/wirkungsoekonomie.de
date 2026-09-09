@@ -2,10 +2,14 @@ import { canonicalizeUrl, fetchPublicArticle, sanitizeFeedText, sha256 } from '.
 import { sourceAccess } from './access-policy.mjs';
 
 const VERSION = 'bundestag-hib-date-v1';
+const PARSER_REVISION = 2;
 const MAX_FETCHES = 3;
 const RETRY_MS = 60 * 60 * 1000;
 const fingerprint = item => sha256(JSON.stringify([item.url, item.title, item.summary, item.content_hash]));
 const plain = value => sanitizeFeedText(value || '', 500).normalize('NFC').replace(/\s+/g, ' ').trim();
+// RSS and HTML can use different quotation typography for the same heading.
+// Preserve every word, number and quotation mark; this is not fuzzy matching.
+const titleIdentity = value => plain(value).replace(/[„“”«»]/g, '"').replace(/[‚‘’‹›]/g, "'");
 const attributes = tag => Object.fromEntries([...tag.matchAll(/([\w:-]+)\s*=\s*(["'])(.*?)\2/gs)].map(m => [m[1].toLowerCase(), m[3]]));
 
 function hibUrl(value) {
@@ -42,8 +46,8 @@ export function publicationDateFromHib({ body, final_url }, item, now) {
   const visible = [...html.matchAll(/<span\b([^>]*)>([\s\S]*?)<\/span>/gi)]
     .filter(m => /(?:^|\s)bt-date(?:\s|$)/.test(attributes(m[1]).class || '')).map(m => validDay(plain(m[2])));
   if (dates.length !== 1 || !dates[0] || visible.length !== 1 || visible[0] !== dates[0]) return null;
-  const headings = [...html.matchAll(/<h1\b[^>]*>([\s\S]*?)<\/h1>/gi)].map(m => plain(m[1]));
-  if (headings.length !== 1 || headings[0] !== plain(item.title)) return null;
+  const headings = [...html.matchAll(/<h1\b[^>]*>([\s\S]*?)<\/h1>/gi)].map(m => titleIdentity(m[1]));
+  if (headings.length !== 1 || headings[0] !== titleIdentity(item.title)) return null;
   const canonical = [...head.matchAll(/<link\b[^>]*>/gi)].map(m => attributes(m[0])).filter(a => a.rel?.toLowerCase() === 'canonical');
   if (canonical.some(a => canonicalizeUrl(a.href, item.url) !== canonicalizeUrl(item.url))) return null;
   if (dates[0] > berlinDay(now)) return null;
@@ -71,7 +75,8 @@ export function createPublicationDateRecovery({ registry, state, now, fetchArtic
         && validCachedDay(saved.published_at, now)
         && Number.isFinite(Date.parse(saved.checked_at)) && Date.parse(saved.checked_at) <= Date.parse(now) ? saved : null;
       if (date) stats.cached++;
-      else if (saved?.fingerprint === itemFingerprint && Date.parse(saved.retry_after || '') > Date.parse(now)) {
+      else if (saved?.version === VERSION && saved.parser_revision === PARSER_REVISION
+          && saved.fingerprint === itemFingerprint && Date.parse(saved.retry_after || '') > Date.parse(now)) {
         stats.deferred++;
       } else if (stats.attempted < MAX_FETCHES) {
         stats.attempted++;
@@ -80,13 +85,13 @@ export function createPublicationDateRecovery({ registry, state, now, fetchArtic
           const document = await fetchArticleImpl(item, source, registry.policy);
           const parsed = publicationDateFromHib(document, item, now);
           if (parsed) {
-            date = { version: VERSION, status: 'verified', url: item.url, fingerprint: itemFingerprint, checked_at: now, ...parsed };
+            date = { version: VERSION, parser_revision: PARSER_REVISION, status: 'verified', url: item.url, fingerprint: itemFingerprint, checked_at: now, ...parsed };
             cache[key] = date;
             stats.verified++;
           }
         } catch { reason = 'PUBLICATION_METADATA_FETCH_FAILED'; }
         if (!date) {
-          cache[key] = { version: VERSION, status: 'open', url: item.url, fingerprint: itemFingerprint, checked_at: now, retry_after: new Date(Date.parse(now) + RETRY_MS).toISOString() };
+          cache[key] = { version: VERSION, parser_revision: PARSER_REVISION, status: 'open', url: item.url, fingerprint: itemFingerprint, checked_at: now, retry_after: new Date(Date.parse(now) + RETRY_MS).toISOString() };
           stats.held++;
           stats.failures.push({ source_id: item.source_id, url: item.url, reason });
         }

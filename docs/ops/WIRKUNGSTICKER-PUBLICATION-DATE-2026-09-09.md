@@ -23,3 +23,34 @@ Beim schreibfreien Originalseiten-Test lieferten die Dokumente `1210800` und `12
 Regressionen pruefen Datums-/Titel-/URL-Abgleich, Kalenderfehler, Metadaten in Skripten/Kommentaren, eingeschraenkte Zugaenge, unveraenderte historische Eingaben, Cache-Bindung, beschaedigte Cache-Eintraege, Wiederholungsabstand, Abruflimit, unveraendert wirksame weitere Integritaetsfehler und den gesamten Eingangspfad mit deaktivierter KI. Die bestehende Exzerptfunktion verwendet dieselbe Zugriffskontrolle wie zuvor.
 
 Auslieferung ausschliesslich ueber den bestehenden GitHub-Nachrichtenworkflow, kein Vercel-Build. Die Korrektur loest weder die uebrigen KI-Ausgabe-Holds noch ein ausgeschoepftes separates API-Dienstbudget. Die produktive Anwendung muss im folgenden regulaeren Lauf nachgewiesen werden.
+
+## Nachtrag: Anfuehrungszeichen im Titelabgleich
+
+Am 9. September um 08:57 UTC wurde an der Originalseite `1211026` ein weiterer
+technischer Hold reproduziert: Der Feed verwendet gerade Anfuehrungszeichen,
+die H1-Ueberschrift typografische. Datums-Metafeld und sichtbares Artikeldatum
+stimmen mit dem 9. September 2026 ueberein; der wortgleiche Titel wurde wegen
+der Zeichensetzung trotzdem abgelehnt.
+
+Der Identitaetsvergleich normalisiert jetzt nur die Typografie einfacher und
+doppelter Anfuehrungszeichen. Woerter, Zahlen, Gross-/Kleinschreibung und das
+Vorhandensein der Anfuehrungszeichen bleiben Teil der Pruefung. Es gibt weder
+unscharfen Titelvergleich noch eine freie Suche nach einem passenden Datum.
+Alle bisherigen URL-, Datum-, Quellen- und Zugriffsgates bleiben wirksam.
+
+Negative Cache-Eintraege erhalten eine Parser-Revision: Ein Fehler des alten
+Parsers verhindert nicht den ersten korrigierten Versuch. Weitere Fehlversuche
+halten wieder den Stundenabstand ein; das gemeinsame Limit von drei Abrufen
+pro Lauf bleibt unveraendert. Bereits verifizierte alte Metadaten werden ohne
+erneuten Abruf weiterverwendet. Keine Kostenjournale oder Artikeltexte werden
+veraendert.
+
+Die beiden neuen Regressionen schlugen vor der Korrektur fehl und bestehen
+danach. Der schreibfreie End-to-End-Test ueber den vorhandenen Artikelzugang
+verifizierte das Tagesdatum der betroffenen Originalseite und beseitigte nur
+deren Datums-Integritaetshold. Ein solcher Nachweis ersetzt nicht das weitere
+journalistische Publikationsgate. Keine kostenpflichtige KI-Testanfrage.
+
+Pruefstand: 696 News-/Monitor-Tests, Typecheck/Syntaxpruefung, Hosting-Kostengate,
+News-Build und Bestandsvalidierung erfolgreich. Der Sprach-Lint lief durch;
+seine 25 bereits vorhandenen Hinweise blieben unveraendert.
