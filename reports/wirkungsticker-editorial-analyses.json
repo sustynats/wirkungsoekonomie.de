@@ -2,32 +2,116 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T23:55:40.421Z",
-  "scanned_stories": 180,
-  "scanned_subjects": 158,
-  "editorial_candidates": 29,
-  "ready_for_research": 8,
+  "started_at": "2026-09-09T01:18:13.227Z",
+  "scanned_stories": 181,
+  "scanned_subjects": 159,
+  "editorial_candidates": 31,
+  "ready_for_research": 9,
   "research_pending": 10,
-  "retry_deferred": 4,
+  "retry_deferred": 7,
   "editorial_research_sources_discovered": 47,
-  "selected": 4,
-  "editorial_research_started": 2,
+  "selected": 2,
+  "editorial_research_started": 0,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 2,
-  "research_tokens": 18286,
-  "analysis_tokens": 16157,
-  "estimated_cost_usd": 0.085212,
-  "quality_retries": 1,
-  "publication_deferred": true,
+  "research_calls": 1,
+  "research_tokens": 0,
+  "analysis_tokens": 0,
+  "estimated_cost_usd": 0,
+  "quality_retries": 0,
+  "publication_deferred": false,
   "failed": [
     {
-      "story_id": "wt-366b1fbfa120e44f",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-09T03:55:40.421Z"
+      "story_id": "wt-e820bef62dd96612",
+      "reason": "AI_BUDGET_EXHAUSTED",
+      "next_attempt_at": "2026-09-09T01:33:13.227Z"
     }
   ],
   "candidates": [
+    {
+      "story_id": "wt-e01e1e77e702edc3",
+      "story_slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
+      "story_title": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen",
+      "editorial_analysis_score": 68,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 5,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "a752701ac2c4d543850ad7d2b8fdffcfb48818ccd622bf1856a3051797b1ea90",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-4409a2f6e240d133",
+      "story_slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
+      "story_title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+      "editorial_analysis_score": 73,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 0,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 7
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "8794d0fc4cbe173ebd1a54a39b73af37bb666bc4ded7a2311a14a1fdccf74965",
+      "status": "published",
+      "analysis_id": "woek-analysis-a06942993891"
+    },
     {
       "story_id": "wt-e820bef62dd96612",
       "story_slug": "angriff-mit-stichwaffe-in-ahrensburg-tatverdachtiger-festgenommen-d96612",
@@ -1283,6 +1367,7 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "batch_deferred": 3,
-  "completed_at": "2026-09-08T23:57:09.184Z"
+  "budget_blocked": true,
+  "budget_block_scope": "shared",
+  "completed_at": "2026-09-09T01:18:42.235Z"
 }

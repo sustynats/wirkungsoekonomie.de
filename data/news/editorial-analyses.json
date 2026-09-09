@@ -1,8 +1,92 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T20:54:03.771Z",
+  "updated_at": "2026-09-09T00:27:01.896Z",
   "candidates": [
+    {
+      "story_id": "wt-e01e1e77e702edc3",
+      "story_slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
+      "story_title": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen",
+      "editorial_analysis_score": 68,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 5,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "a752701ac2c4d543850ad7d2b8fdffcfb48818ccd622bf1856a3051797b1ea90",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-4409a2f6e240d133",
+      "story_slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
+      "story_title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+      "editorial_analysis_score": 73,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 0,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 7
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "8794d0fc4cbe173ebd1a54a39b73af37bb666bc4ded7a2311a14a1fdccf74965",
+      "status": "published",
+      "analysis_id": "woek-analysis-a06942993891"
+    },
     {
       "story_id": "wt-e820bef62dd96612",
       "story_slug": "angriff-mit-stichwaffe-in-ahrensburg-tatverdachtiger-festgenommen-d96612",
@@ -30479,6 +30563,812 @@
         }
       ],
       "reading_time_minutes": 9
+    },
+    {
+      "analysis_id": "woek-analysis-a06942993891",
+      "story_id": "wt-4409a2f6e240d133",
+      "related_story_ids": [
+        "wt-4409a2f6e240d133"
+      ],
+      "related_case_id": null,
+      "slug": "festnahme-nach-sabotage-an-stromanlagen-was-die-tat-fur-infrastruktur-und-staatssc-a06942",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "8794d0fc4cbe173ebd1a54a39b73af37bb666bc4ded7a2311a14a1fdccf74965",
+      "candidate_score": 73,
+      "analysis_gain_score": 52,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-09T00:27:01.896Z",
+      "updated_at": "2026-09-09T00:27:01.896Z",
+      "version": 1,
+      "editorial_question": "Was bedeutet die Festnahme eines mutmaßlichen Strom-Saboteurs für kritische Infrastruktur, Sicherheit und den politischen Deutungsraum – jenseits der reinen Tatmeldung?",
+      "analysis_type": "case_analysis",
+      "title": "Festnahme nach Sabotage an Stromanlagen: Was die Tat für Infrastruktur und Staatsschutz bedeutet",
+      "subtitle": "Die Festnahme ist nur der Anfang der Wirkungskette. Entscheidend ist, ob weitere Vorrichtungen, Schäden und Folgeabsicherungen bestätigt werden.",
+      "teaser": "Ein mutmaßlicher Strom-Saboteur ist festgenommen. Die eigentliche Frage ist jetzt: Welche Schutz-, Ermittlungs- und Debattenfolgen folgen daraus für kritische Infrastruktur?",
+      "seo_description": "Festnahme nach Sabotage an Stromanlagen: Welche Folgen für kritische Infrastruktur, Ermittlungen und öffentliche Debatten daraus entstehen können.",
+      "additional_value": "Der Beitrag trennt die Festnahme als Fakt von den möglichen Wirkpfaden: Schutz kritischer Infrastruktur, Ermittlungsdruck, öffentliche Deutung und mögliche Folgeanpassungen.",
+      "research_summary": "Drei gelieferte Berichte tragen denselben Kern: Die Polizei hat in der Nähe eines Kraftwerks bei Aachen einen mutmaßlichen Strom-Saboteur festgenommen. Deutschlandfunk nennt zusätzliche Details wie weitere Sprengmittel bei der Festnahme, Funde in einer Wohnung, weitere Vorrichtungen in Nordrhein-Westfalen und Sachsen sowie ein erstes Bekennerschreiben mit einem möglichen Motiv gegen fossile Stromerzeugung. Diese Zusatzangaben sind im Paket jeweils nur teilweise oder nur aus einer Quelle belegt. Konkrete Netzschäden, Ausfälle oder eine belastbare endgültige Motivzuordnung sind in den Quellen nicht beziffert.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Die Festnahme ist bestätigt, der Umfang der Tat noch nicht",
+          "paragraphs": [
+            "Ein Mann wird in der Nähe eines Kraftwerks bei Aachen festgenommen. Das ist der harte Kern der Meldung, und der ist durch mehrere Berichte gedeckt. Dazu kommt aus einer Quelle der Hinweis, dass bei der Festnahme weitere Sprengmittel dabei gewesen sein sollen. Ebenfalls aus einer Quelle stammen Angaben zu Funden in einer Wohnung und zu weiteren selbstgebauten Vorrichtungen in Nordrhein-Westfalen und Sachsen.",
+            "Für die Wirkung ist diese Unterscheidung zentral. Die Festnahme ist ein Ereignis. Ob sie weitere Taten verhindert hat, ob vorher schon Schäden eingetreten sind und wie weit das Netz betroffen war, bleibt offen. Genau dort beginnt die systemische Analyse: Nicht die Schlagzeile wirkt, sondern die tatsächliche Veränderung von Zuständen an Infrastruktur, im Ermittlungsapparat und in der öffentlichen Risikowahrnehmung."
+          ],
+          "source_ids": [
+            "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Festnahme",
+                "text": "Die Polizei nimmt den Verdächtigen nahe Aachen fest.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Wenn die Berichte zutreffen und die Festnahme dem genannten Fall zuzuordnen ist.",
+                "source_ids": [
+                  "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+                  "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Sicherung weiterer Gefahren",
+                "text": "Wenn der Verdächtige tatsächlich weitere Sprengmittel oder Vorrichtungen hatte, kann das weitere Angriffe begrenzen.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Nur wenn weitere Mittel vorhanden waren und dadurch weitere Taten verhindert werden.",
+                "source_ids": [
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Ermittlungs- und Schutzaufwand",
+                "text": "Die Behörden müssen Tatumfang, Motive und mögliche Mitbeteiligte klären und Stromanlagen stärker sichern.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn die bisherigen Angaben zu weiteren Funden und möglichen bundesweiten Taten belastbar bleiben.",
+                "source_ids": [
+                  "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Debatte über kritische Infrastruktur",
+                "text": "Die Tat wird öffentlich als Sicherheitsproblem und möglicherweise als politisch motivierte Sabotage gelesen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn der Begriff Klimaextremismus oder das erste Bekennerschreiben die Berichterstattung weiter prägen.",
+                "source_ids": [
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "system",
+          "title": "Systemisch: Kritische Infrastruktur hat Kaskaden statt Einzelschäden",
+          "paragraphs": [
+            "Bei Stromanlagen ist eine einzelne Tat nie nur ein einzelner Ortsschaden. Schon der Angriff auf Umspannwerke oder Anlagen kann Sicherheitsroutinen, Ermittlungen, Notfallplanung und öffentliche Kommunikation auslösen. Das ist die eigentliche Systemfrage: Welche Folgekosten und Schutzreaktionen entstehen, wenn ein Angriff auf Strominfrastruktur als reale Gefahr bestätigt wird?",
+            "Aus den Quellen folgt kein bezifferter Netzausfall. Aber schon die offene Lage erzeugt einen Wirkpfad mit Zeitverzug. Erst klärt die Polizei die Tat. Dann prüfen Betreiber und Behörden Schutzmaßnahmen. Danach kann sich die Belastung auf Personal, Abläufe und möglicherweise auf die Versorgungsresilienz verlagern. Das ist kein automatisch positiver oder negativer Befund, sondern ein belastbarer Zusammenhang von Tat, Abwehr und Anpassung."
+          ],
+          "source_ids": [
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Tat an Infrastruktur",
+                "text": "Angriffe auf Stromanlagen setzen eine Risikosituation in Gang.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "negative",
+                "condition": "Wenn die in den Quellen beschriebenen Sabotagehandlungen zutreffen.",
+                "source_ids": [
+                  "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Sicherungsreaktion",
+                "text": "Betreiber und Staat erhöhen Schutz, Kontrollen und Ermittlungsdruck.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn die Gefährdung als anhaltend gilt oder weitere Vorrichtungen bestätigt werden.",
+                "source_ids": [
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Verlagerung von Ressourcen",
+                "text": "Personal und Mittel fließen in Schutz, Aufklärung und Wiederherstellung.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn zusätzliche Sicherung über den ursprünglichen Betrieb hinaus nötig wird.",
+                "source_ids": [
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Resilienzfrage",
+                "text": "Die Frage wird, ob das System solche Angriffe schneller abfangen kann als sie Schäden erzeugen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Wenn weitere Fälle oder technische Details den Schutzbedarf präzisieren.",
+                "source_ids": [
+                  "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: drei Perspektiven, drei unterschiedliche Pfade",
+          "paragraphs": [
+            "Für Menschen ist der naheliegendste Pfad Sicherheit. Wenn weitere Sprengmittel vorhanden waren, kann die Festnahme unmittelbare Gefahr mindern. Wenn Stromanlagen tatsächlich angegriffen wurden, sind auch Beschäftigte, Einsatzkräfte und Anwohner von zusätzlichem Schutzbedarf betroffen. Das ist ein konkreter Nutzenpfad, aber nur bedingt: Die Quellen nennen noch keine bestätigten Ausfälle oder Verletzten.",
+            "Für den Planeten ist der Zusammenhang schwächer. Ein mögliches Motiv gegen fossile Stromerzeugung ist genannt, aber daraus folgt keine belegte Umweltwirkung. Sabotage an Energieinfrastruktur kann indirekt Emissionen oder Ersatzaufwand beeinflussen, doch diese Kette ist in den Quellen nicht belegt. Für die Demokratie liegt der Schwerpunkt auf Staatsschutz, Rechtsstaat und Vertrauen in die Fähigkeit, kritische Infrastruktur zu schützen. Auch hier zählt nicht das Symbol, sondern die belastbare Fähigkeit zur Aufklärung und Begrenzung von Risiken."
+          ],
+          "source_ids": [
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000",
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Menschen schützen",
+                "text": "Festnahme kann weitere Gefahren für Beschäftigte und Anwohner begrenzen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "positive",
+                "condition": "Wenn die Festnahme weitere Taten oder den Einsatz weiterer Sprengmittel verhindert.",
+                "source_ids": [
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Umweltbezug bleibt offen",
+                "text": "Das genannte Motiv ist noch kein Beleg für eine Umweltwirkung.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Wenn nur das Motiv, nicht aber die tatsächliche Umweltfolge bekannt ist.",
+                "source_ids": [
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Demokratische Schutzfunktion",
+                "text": "Aufklärung und begrenzte Strafverfolgung können Vertrauen in Schutzfähigkeit stärken.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "positive",
+                "condition": "Wenn die Ermittlungen transparent und rechtsstaatlich geführt werden.",
+                "source_ids": [
+                  "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen 1 bis 3: vom Zugriff bis zur Regelanpassung",
+          "paragraphs": [
+            "Erste Ordnung: Die Polizei greift zu. Ein Verdächtiger wird festgenommen, und laut einer Quelle sind weitere Sprengmittel vorhanden. Das ist die unmittelbare Zustandsänderung. Zweite Ordnung: Ermittler prüfen Tatumfang, mögliche Mitbeteiligte und weitere Vorrichtungen. Betreiber erhöhen Schutz und Kontrollen. Das ist eine Reaktion auf die Tat, nicht schon die Tatfolge allein. Dritte Ordnung: Falls sich der Fall verdichtet, kann das politische und regulatorische Folgen haben, etwa strengere Schutzkonzepte für kritische Infrastruktur. Diese dritte Ordnung ist möglich, aber aus den Quellen noch nicht belegt.",
+            "Die Kaskade ist wichtig, weil sie Reichweite und Wirkung trennt. Aufmerksamkeit allein ist noch keine Wirkung. Erst wenn Schutzmaßnahmen, Ermittlungen oder Regeln tatsächlich Verhalten und Zustände verändern, entsteht eine Wirkung im engeren Sinn. Für die Bewertung bedeutet das: Die Festnahme ist sicher relevant, aber der Grad der Wirkung bleibt offen, solange Schäden, Ausfälle oder konkrete Nachsteuerungen nicht bestätigt sind."
+          ],
+          "source_ids": [
+            "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "1. Zugriff",
+                "text": "Festnahme des Verdächtigen.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Wenn die Berichte zutreffen.",
+                "source_ids": [
+                  "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+                  "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "2. Abwehr",
+                "text": "Weitere Ermittlungen und Sicherungsmaßnahmen an Stromanlagen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn weitere Vorrichtungen oder Tatserien bestätigt werden.",
+                "source_ids": [
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "3. Anpassung",
+                "text": "Mögliche Verschärfung von Schutzkonzepten für kritische Infrastruktur.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn der Fall als Musterfall weiterer Risiken eingeordnet wird.",
+                "source_ids": [
+                  "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was offen bleibt, ist für die Wirkung entscheidend",
+          "paragraphs": [
+            "Die Quellen sind in einem Punkt klar: Es gibt eine Festnahme. Sie sind in mehreren anderen Punkten bewusst offen. Der genaue Tatumfang ist nicht abschließend belegt. Die Zuordnung des Bekennerschreibens bleibt vorläufig. Konkrete Netzschäden oder Ausfälle sind nicht beziffert. Auch die Frage, ob weitere Personen beteiligt waren, ist nicht geklärt.",
+            "Diese Unsicherheit ist keine Nebensache. Sie entscheidet darüber, ob wir nur von einem Ermittlungsfall sprechen oder schon von einer tatsächlichen Störung mit spürbaren Folgen für Versorgung und Sicherheit. Darum ist die saubere Grenze wichtig: Ein mögliches Wirkungspotenzial darf nicht wie eine bereits eingetretene Wirkung behandelt werden.",
+            "Die Quellenlage erlaubt also einen belastbaren Befund über die Festnahme und einen plausiblen Pfad über Schutz- und Ermittlungsreaktionen. Sie erlaubt aber kein hartes Urteil über Ausmaß, Kausalkette oder gesellschaftliche Langfristwirkung."
+          ],
+          "source_ids": [
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Gesichert",
+                "text": "Die Festnahme wird berichtet.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Mehrere Berichte nennen denselben Kern.",
+                "source_ids": [
+                  "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+                  "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Offen",
+                "text": "Netzschäden, Ausfälle und Mitbeteiligte sind nicht belastbar benannt.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Wenn die bisherigen Angaben nicht weiter bestätigt werden.",
+                "source_ids": [
+                  "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Folgefrage",
+                "text": "Erst bestätigte Tatfolgen erlauben eine stärkere Wirkungsaussage.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Wenn weitere amtliche Informationen vorliegen.",
+                "source_ids": [
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die Wirkung jetzt messen ließe",
+          "paragraphs": [
+            "Als Nächstes zählen belastbare Informationen der Behörden: Was wurde tatsächlich sichergestellt, welche Anlagen waren betroffen, gab es Ausfälle oder nur Gefährdung, und wie groß ist der Ermittlungszusammenhang? Erst dann lässt sich die Richtung der Wirkung präziser bestimmen. Auch die Frage nach Schutzmaßnahmen ist wichtig: Werden Anlagen schneller gesichert, oder bleibt es bei punktueller Reaktion?",
+            "Für die öffentliche Debatte ist außerdem relevant, ob der Begriff Klimaextremismus die Tat nur rahmt oder ob sich daraus eine breitere Zuschreibung entwickelt. Das wäre eine Diskurswirkung, keine Sachwirkung. Beides zu trennen ist methodisch wichtig, weil eine polarisierte Deutung nicht automatisch ein größerer materieller Schaden ist. Aber sie kann die Aufmerksamkeit und die politische Anschlussfähigkeit des Falls verändern."
+          ],
+          "source_ids": [
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000",
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Behördliche Klärung",
+                "text": "Ermittlungen präzisieren Tatumfang und Zuordnung.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Wenn Polizei oder Staatsanwaltschaft neue Details bestätigen.",
+                "source_ids": [
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Schutzanpassung",
+                "text": "Betreiber und Staat könnten Schutzkonzepte anpassen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn weitere Vorrichtungen oder Risiken bestätigt werden.",
+                "source_ids": [
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Diskursverschiebung",
+                "text": "Die Debatte könnte stärker auf Extremismus und Sicherheit kippen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn die mediale Rahmung den Sicherheitsaspekt weiter betont.",
+                "source_ids": [
+                  "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Die Festnahme ist bedeutsam, aber die eigentliche Wirkung liegt noch vor uns",
+          "paragraphs": [
+            "Mein Fazit ist einfach: Die Festnahme ist ein relevanter sicherheits- und infrastrukturpolitischer Vorgang, aber sie ist noch nicht automatisch ein Wirkungsbeweis. Belegt ist der Zugriff. Plausibel ist eine Kette über Ermittlungen, Schutzmaßnahmen und möglicherweise verschärfte Sicherung kritischer Infrastruktur. Offen bleiben Tatumfang, Schäden und die endgültige Zuordnung des Motivs. Genau deshalb sollte man den Fall nicht größer machen, als die Quellen tragen, aber auch nicht kleiner.",
+            "Der systemische Zusatznutzen liegt in der sauberen Unterscheidung zwischen Ereignis, Reaktion und möglicher Langzeitfolge. Wer nur auf die Schlagzeile schaut, sieht eine Festnahme. Wer die Wirkung betrachtet, sieht einen möglichen Anpassungsdruck auf ein besonders verwundbares System: Stromversorgung. Das ist die eigentliche Analyse: Nicht die Tat allein, sondern ihre Fähigkeit, Schutz, Ressourcen und öffentliche Wahrnehmung zu verschieben."
+          ],
+          "source_ids": [
+            "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Ausgangslage",
+                "text": "Ein Verdächtiger ist festgenommen.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Mehrere Berichte stimmen im Kern überein.",
+                "source_ids": [
+                  "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+                  "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Systemreaktion",
+                "text": "Behörden und Betreiber müssen Schutz und Aufklärung hochfahren.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn die Gefahr weiterer Sabotage nicht ausgeschlossen ist.",
+                "source_ids": [
+                  "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+                ]
+              },
+              {
+                "title": "Langfristige Folge",
+                "text": "Mögliche Anpassung von Schutzkonzepten für kritische Infrastruktur.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn der Fall als Hinweis auf ein breiteres Risiko bewertet wird.",
+                "source_ids": [
+                  "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Die Polizei hat einen mutmaßlichen Strom-Saboteur in der Nähe eines Kraftwerks bei Aachen festgenommen.",
+          "type": "fact",
+          "source_ids": [
+            "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Der Kern der Festnahme ist durch mehrere Berichte gedeckt; genaue rechtliche Bewertung bleibt offen.",
+          "date": "2026-09-09"
+        },
+        {
+          "claim": "Der Festgenommene soll bundesweit Anschläge auf das Stromnetz verübt haben.",
+          "type": "fact",
+          "source_ids": [
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Aussage ist in der Quelle zugeschrieben und noch nicht abschließend bestätigt.",
+          "date": "2026-09-09"
+        },
+        {
+          "claim": "Bei der Festnahme soll der Mann weitere Sprengmittel dabeigehabt haben.",
+          "type": "fact",
+          "source_ids": [
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Nur eine Quelle nennt dieses Detail.",
+          "date": "2026-09-09"
+        },
+        {
+          "claim": "Am Freitag wurden in seiner Wohnung Sprengstoff gefunden.",
+          "type": "fact",
+          "source_ids": [
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Einzelquellenangabe ohne weitere Bestätigung im Paket.",
+          "date": "2026-09-09"
+        },
+        {
+          "claim": "Als mögliches Motiv wird in einem ersten Bekennerschreiben der Kampf gegen Stromerzeugung aus fossilen Brennstoffen genannt.",
+          "type": "fact",
+          "source_ids": [
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Das Motiv ist vorläufig und nicht abschließend bestätigt.",
+          "date": "2026-09-09"
+        },
+        {
+          "claim": "Sabotage an kritischer Strominfrastruktur kann zusätzliche Schutz- und Ermittlungsreaktionen auslösen.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Der Pfad ist plausibel, aber nicht in allen Stufen messbar belegt.",
+          "date": "2026-09-09"
+        },
+        {
+          "claim": "Die Festnahme kann weitere Gefahren für Beschäftigte, Einsatzkräfte und Anwohner begrenzen, wenn sie weitere Taten verhindert.",
+          "type": "impact_potential",
+          "source_ids": [
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Der Nutzen hängt davon ab, ob tatsächlich weitere Vorhaben verhindert wurden.",
+          "date": "2026-09-09"
+        },
+        {
+          "claim": "Konkrete Netzschäden oder Ausfälle sind in den vorliegenden Quellen nicht beziffert.",
+          "type": "fact",
+          "source_ids": [
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Es gibt keine bezifferten Schadensangaben im Material.",
+          "date": "2026-09-09"
+        },
+        {
+          "claim": "Die Tat kann öffentliche Debatten stärker auf Sicherheit und Extremismus lenken.",
+          "type": "impact_risk",
+          "source_ids": [
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227"
+          ],
+          "evidence_level": "low",
+          "data_status": "scenario",
+          "uncertainty": "Eine tatsächliche Medien- oder Publikumswirkung ist nicht gemessen.",
+          "date": "2026-09-09"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Der genaue Tatumfang ist offen; es gibt keine bezifferten Netzschäden oder Ausfälle in den Quellen.",
+          "source_ids": [
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "effect_on_assessment": "Begrenzt jede Aussage über eingetretene Wirkung und hält den Befund bei Festnahme und Risikopfad."
+        },
+        {
+          "finding": "Die Motivzuschreibung bleibt vorläufig und ist nur als mögliches Motiv in einem ersten Bekennerschreiben genannt.",
+          "source_ids": [
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "effect_on_assessment": "Schwächt jede politische oder ideologische Festlegung der Tat."
+        },
+        {
+          "finding": "Die Wortwahl Klimaextremismus ist als Attribution sichtbar, aber keine gemessene Wirkung.",
+          "source_ids": [
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "effect_on_assessment": "Erlaubt einen Diskurscheck, aber keinen Befund über tatsächliche Polarisierung."
+        }
+      ],
+      "editorial_rules_version": "2.0",
+      "executive_finding": "Die Festnahme ist bestätigt, aber die eigentliche Wirkung steckt in der Folgekette: Ermittlungen, Schutz von Stromanlagen und mögliche politische Nachsteuerung. Das kann die Sicherheit kritischer Infrastruktur stärken, wenn weitere Taten verhindert werden. Es kann aber auch Ressourcen binden und Debatten verschieben. Entscheidend bleibt die offene Frage, ob es tatsächlich zu Schäden, Ausfällen oder weiteren Beteiligten kam. Ohne diese Bestätigung bleibt die Wirkung plausibel, aber nicht voll belegt.",
+      "subject_dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Möglicher Schutz vor weiteren Sabotagehandlungen, zusätzliche Belastung für Einsatzkräfte und Anwohner; Ausmaß und konkrete Schäden bleiben offen.",
+          "implementation_status": "implemented",
+          "likelihood": "plausible",
+          "direction": "mixed",
+          "magnitude": "medium",
+          "evidence": "plausible_path"
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Ein genanntes Motiv gegen fossile Stromerzeugung ist kein Beleg für Umweltwirkung; ökologische Folgen der Tat sind nicht belegt.",
+          "implementation_status": "open",
+          "likelihood": "open",
+          "direction": "open",
+          "magnitude": "open",
+          "evidence": "open"
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Rechtsstaatliche Aufklärung und Schutz kritischer Infrastruktur können Vertrauen stützen; politische Zuschreibungen können den Diskurs verschieben.",
+          "implementation_status": "implemented",
+          "likelihood": "plausible",
+          "direction": "mixed",
+          "magnitude": "low",
+          "evidence": "plausible_path"
+        }
+      },
+      "assessment_context": "open",
+      "assessment_condition": "Die Einschätzung gilt nur, solange die Quellenlage bei Festnahme, offenem Tatumfang und vorläufiger Motivzuschreibung bleibt.",
+      "author_perspective": {
+        "paragraphs": [
+          "Ich gewichte diesen Fall vor allem über die Infrastrukturfrage. Für mich ist nicht die Schlagzeile entscheidend, sondern die Kette dahinter: Wenn ein Angriff auf Stromanlagen weitere Taten, zusätzlichen Schutzaufwand oder sogar Ausfälle auslöst, dann ist das eine reale Systemwirkung. Genau deshalb halte ich es für wichtig, nicht vorschnell aus einem möglichen Motiv oder einem zugespitzten Begriff eine Gesamtdeutung zu machen.",
+          "Gleichzeitig finde ich den Fall politisch und journalistisch relevant, weil kritische Infrastruktur nicht abstrakt ist. Sie betrifft Versorgung, Sicherheit und Vertrauen. Meine Einordnung ist deshalb: Die Festnahme ist ein harter, beachtlicher Befund, aber die stärkste Aussage liegt noch nicht in der Tatdeutung, sondern in der offenen Frage, wie weit Schutz und Resilienz des Systems wirklich tragen."
+        ],
+        "claim_indices": [
+          0,
+          5,
+          6
+        ],
+        "origin": "generated_from_analysis"
+      },
+      "positive_path_checks": [
+        {
+          "measure": "Festnahme und Sicherstellung weiterer Sprengmittel",
+          "source_ids": [
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "mechanism": "Wenn der Verdächtige tatsächlich weitere Mittel hatte, kann der Zugriff weitere Sabotage verhindern und damit unmittelbare Gefahren senken."
+        },
+        {
+          "measure": "Ermittlungen und Schutzmaßnahmen an Stromanlagen",
+          "source_ids": [
+            "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+            "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+          ],
+          "mechanism": "Wenn Tatumfang und Netzbezug geklärt werden, können Betreiber und Behörden Schutz und Kontrolle gezielter ausrichten."
+        }
+      ],
+      "counter_evidence_search": {
+        "checked": true,
+        "result": "Gefunden wurden vor allem Grenzen: keine bezifferten Netzschäden, keine bestätigten Ausfälle, keine abgeschlossene Motivzuordnung und keine belastbare Messung einer öffentlichen Wirkung."
+      },
+      "editorial_quality": {
+        "false_balance_checked": true,
+        "concrete_positive_paths_only": true,
+        "likelihood_direction_separated": true,
+        "safeguards_as_limits": true,
+        "evidence_bound_judgment": true,
+        "reader_takeaway_clear": true,
+        "concrete_language_checked": true,
+        "visuals_explain_mechanism": true,
+        "author_perspective_separated": true
+      },
+      "what_changes_the_assessment": [
+        "Amtliche Bestätigung des Tatumfangs oder weiterer Beteiligter",
+        "Angaben zu tatsächlichen Schäden, Ausfällen oder Verletzten",
+        "Bestätigung oder Widerlegung des ersten Bekennerschreibens",
+        "Konkrete Schutzmaßnahmen durch Betreiber oder Behörden",
+        "Weitere Festnahmen oder Anklagen"
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Festnahme nach Sabotage an Stromanlagen: Was die Tat für Infrastruktur und Staatsschutz bedeutet",
+        "recommended_summary": "Die Polizei hat einen mutmaßlichen Strom-Saboteur nahe Aachen festgenommen. Der Fall ist sicherheitsrelevant, doch Ausmaß, Schäden und Motiv bleiben offen.",
+        "recommended_meta_description": "Festnahme im Fall der Stromnetz-Sabotage: bestätigter Kern, offene Ermittlungsfragen, mögliche Folgen für kritische Infrastruktur."
+      },
+      "reading_time_minutes": 7,
+      "source_snapshot": [
+        {
+          "source_id": "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+          "registry_source_id": "manager-magazin-news",
+          "publisher_id": "manager-magazin",
+          "publisher": "manager magazin",
+          "title": "Sabotage an Umspannwerken: APolizei nimmt mutmaßlichen Strom-Saboteur fest",
+          "url": "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+          "published_at": "2026-09-08T11:06:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+          "registry_source_id": "tagesschau-access",
+          "publisher_id": "tagesschau",
+          "publisher": "tagesschau / ARD",
+          "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+          "url": "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html",
+          "published_at": "2026-09-08T11:30:01.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+          "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-102.html",
+          "published_at": "2026-09-09T00:16:07.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-09T00:27:01.896Z",
+          "source_fingerprint": "8794d0fc4cbe173ebd1a54a39b73af37bb666bc4ded7a2311a14a1fdccf74965",
+          "title": "Festnahme nach Sabotage an Stromanlagen: Was die Tat für Infrastruktur und Staatsschutz bedeutet",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Die Polizei hat einen mutmaßlichen Strom-Saboteur in der Nähe eines Kraftwerks bei Aachen festgenommen.",
+              "type": "fact",
+              "source_ids": [
+                "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+                "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+                "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Der Kern der Festnahme ist durch mehrere Berichte gedeckt; genaue rechtliche Bewertung bleibt offen.",
+              "date": "2026-09-09"
+            },
+            {
+              "claim": "Der Festgenommene soll bundesweit Anschläge auf das Stromnetz verübt haben.",
+              "type": "fact",
+              "source_ids": [
+                "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Aussage ist in der Quelle zugeschrieben und noch nicht abschließend bestätigt.",
+              "date": "2026-09-09"
+            },
+            {
+              "claim": "Bei der Festnahme soll der Mann weitere Sprengmittel dabeigehabt haben.",
+              "type": "fact",
+              "source_ids": [
+                "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Nur eine Quelle nennt dieses Detail.",
+              "date": "2026-09-09"
+            },
+            {
+              "claim": "Am Freitag wurden in seiner Wohnung Sprengstoff gefunden.",
+              "type": "fact",
+              "source_ids": [
+                "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Einzelquellenangabe ohne weitere Bestätigung im Paket.",
+              "date": "2026-09-09"
+            },
+            {
+              "claim": "Als mögliches Motiv wird in einem ersten Bekennerschreiben der Kampf gegen Stromerzeugung aus fossilen Brennstoffen genannt.",
+              "type": "fact",
+              "source_ids": [
+                "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Das Motiv ist vorläufig und nicht abschließend bestätigt.",
+              "date": "2026-09-09"
+            },
+            {
+              "claim": "Sabotage an kritischer Strominfrastruktur kann zusätzliche Schutz- und Ermittlungsreaktionen auslösen.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+                "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Der Pfad ist plausibel, aber nicht in allen Stufen messbar belegt.",
+              "date": "2026-09-09"
+            },
+            {
+              "claim": "Die Festnahme kann weitere Gefahren für Beschäftigte, Einsatzkräfte und Anwohner begrenzen, wenn sie weitere Taten verhindert.",
+              "type": "impact_potential",
+              "source_ids": [
+                "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Der Nutzen hängt davon ab, ob tatsächlich weitere Vorhaben verhindert wurden.",
+              "date": "2026-09-09"
+            },
+            {
+              "claim": "Konkrete Netzschäden oder Ausfälle sind in den vorliegenden Quellen nicht beziffert.",
+              "type": "fact",
+              "source_ids": [
+                "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+                "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Es gibt keine bezifferten Schadensangaben im Material.",
+              "date": "2026-09-09"
+            },
+            {
+              "claim": "Die Tat kann öffentliche Debatten stärker auf Sicherheit und Extremismus lenken.",
+              "type": "impact_risk",
+              "source_ids": [
+                "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227"
+              ],
+              "evidence_level": "low",
+              "data_status": "scenario",
+              "uncertainty": "Eine tatsächliche Medien- oder Publikumswirkung ist nicht gemessen.",
+              "date": "2026-09-09"
+            }
+          ]
+        }
+      ]
     }
   ],
   "retry_state": {
@@ -30486,8 +31376,8 @@
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
       "method_version": "1.0",
       "attempts": 9,
-      "last_attempt_at": "2026-09-08T23:55:40.421Z",
-      "next_attempt_at": "2026-09-09T00:10:40.421Z",
+      "last_attempt_at": "2026-09-09T01:08:08.189Z",
+      "next_attempt_at": "2026-09-09T01:23:08.189Z",
       "quality_errors": [
         "EDITORIAL_SECTION_MISSING_UNSICHERHEIT",
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
@@ -30499,12 +31389,12 @@
       "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
       "method_version": "1.0",
       "attempts": 7,
-      "last_attempt_at": "2026-09-08T23:55:40.421Z",
-      "next_attempt_at": "2026-09-09T00:10:40.421Z",
+      "last_attempt_at": "2026-09-09T00:38:55.552Z",
+      "next_attempt_at": "2026-09-09T00:53:55.552Z",
       "quality_errors": [
         "EDITORIAL_SEO_LENGTH"
       ],
-      "reason": "BATCH_API_BATCH_CAPACITY"
+      "reason": "AI_BUDGET_EXHAUSTED"
     },
     "wt-1c2c187d0b858b7c": {
       "fingerprint": "045570fb2ba7f213e6e005e3b04558f9c2175bbb4b0ec60987446cbb2b4bcc9d",
@@ -30522,8 +31412,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T23:55:40.421Z",
-      "next_attempt_at": "2026-09-09T00:10:40.421Z",
+      "last_attempt_at": "2026-09-09T01:08:08.189Z",
+      "next_attempt_at": "2026-09-09T01:23:08.189Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -30558,9 +31448,9 @@
     "wt-de413d33343f350b": {
       "fingerprint": "13c0196dc69c9e71bc6f7ec72a20464d820b7ce7d0dcfc8fc8a1d0e9672a26b0",
       "method_version": "1.0",
-      "attempts": 5,
-      "last_attempt_at": "2026-09-08T20:08:32.518Z",
-      "next_attempt_at": "2026-09-09T00:08:32.518Z",
+      "attempts": 6,
+      "last_attempt_at": "2026-09-09T00:27:01.896Z",
+      "next_attempt_at": "2026-09-09T08:27:01.896Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -30583,12 +31473,21 @@
       "fingerprint": "55c01a53ce4e370eae11a3736ee05383f6c4c6e67e77e2ffa44c87d2ead7b09d",
       "method_version": "1.0",
       "attempts": 4,
-      "last_attempt_at": "2026-09-08T22:54:10.520Z",
-      "next_attempt_at": "2026-09-09T00:54:10.520Z",
+      "last_attempt_at": "2026-09-09T01:18:13.227Z",
+      "next_attempt_at": "2026-09-09T01:33:13.227Z",
       "quality_errors": [
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG"
+      "reason": "AI_BUDGET_EXHAUSTED"
+    },
+    "wt-e01e1e77e702edc3": {
+      "fingerprint": "a752701ac2c4d543850ad7d2b8fdffcfb48818ccd622bf1856a3051797b1ea90",
+      "method_version": "1.0",
+      "attempts": 0,
+      "last_attempt_at": "2026-09-09T01:08:08.189Z",
+      "next_attempt_at": "2026-09-09T01:23:08.189Z",
+      "quality_errors": [],
+      "reason": "AI_BUDGET_EXHAUSTED"
     }
   }
 }
