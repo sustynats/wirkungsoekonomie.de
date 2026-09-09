@@ -3,10 +3,22 @@
 import { evidenceGroups } from './newsroom.mjs';
 
 export const EVENT_RELEVANCE_VERSION = '2026-09-09.1';
+export const EVENT_EDITORIAL_POLICY_VERSION = '2026-09-09.2';
 export const COVERAGE_CATEGORIES = ['politics_de', 'economy', 'society', 'environment', 'health', 'science', 'technology', 'europe', 'international', 'security'];
 export const normalizeEventText = text => String(text || '').normalize('NFKD').replace(/\p{M}/gu, '').replace(/ß/g, 'ss').toLowerCase();
 const ms = value => Date.parse(value || '') || 0;
 const bounded = value => Math.max(0, Math.min(100, Math.round(value)));
+
+// Revisit only recent, unpublished materiality rejections when the editorial
+// definition changes. Evidence rejections and published history are untouched.
+export function needsEventPolicyReview(story, now) {
+  if (story.published || story.rejection?.editorial_policy_version === EVENT_EDITORIAL_POLICY_VERSION
+    || !story.rejection?.quality_errors?.includes('AI_MATERIALITY_TOO_LOW')) return false;
+  const newest = Math.max(0, ...(story.sources || []).map(s => ms(s.published_at)));
+  if (!newest || newest > ms(now) + 600000 || ms(now) - newest > 48 * 3600000) return false;
+  const score = scoreEvent(story, now);
+  return score.signals.length > 0 && score.total_relevance_score >= 30;
+}
 const material = /\b(infrastruktur\w*|infrastructure|arbeitsplatz\w*|arbeitsplatze|beschaftigt\w*|jobs|workers|versorgung\w*|supply|bildung\w*|gesundheit\w*|grundrecht\w*|energy|energie\w*|emission\w*|investition\w*|investment\w*|haushalt\w*|budget\w*|inflation\w*)/;
 const institutions = /\b(bundestag|bundesrat|bundesregierung|bundeskanzler\w*|landtag\w*|parlament\w*|minister\w*|polizei\w*|staatsanwaltschaft\w*|gericht\w*|rechnungshof\w*|zentralbank\w*|bundesbank|statistikamt|behorde\w*|regulator\w*|central bank|parliament|government|court|police|auditors)\b/;
 

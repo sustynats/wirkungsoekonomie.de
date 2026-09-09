@@ -61,16 +61,33 @@ export function eventDecision(event, story, decisions = [], selectedIds = new Se
 }
 
 export function coverageAudit({ items = [], stories = [], decisions = [], selectedIds = new Set(), now, sourceFunnel = [], previousFunnel = [], observed = null }) {
-  const events = observed || observedMajorEvents(items, now);
+  const fragments = observed || observedMajorEvents(items, now);
+  // The observer can see old raw event IDs. Resolve them against the existing
+  // story before counting: one reviewed file is not several paid selections.
+  const groups = new Map();
+  for (const event of fragments) {
+    const story = findEventStory(event, stories, now);
+    const key = story?.story_id || event.story_id || event.event_id;
+    const previous = groups.get(key);
+    if (!previous) groups.set(key, { ...event, matched_story: story });
+    else {
+      previous.sources = [...new Map([...previous.sources, ...event.sources].map(s => [s.url, s])).values()];
+      previous.first_seen_at = [previous.first_seen_at, event.first_seen_at].sort()[0];
+      previous.last_seen_at = [previous.last_seen_at, event.last_seen_at].sort().at(-1);
+    }
+  }
+  const events = [...groups.values()];
   const coverage = categoryCoverage(stories, now);
   const rows = events.map(event => {
-    const story = findEventStory(event, stories, now);
+    const story = event.matched_story;
     const decision = eventDecision(event, story, decisions, selectedIds);
-    const score = event.preanalysis.event_score;
+    const selection = decisions.filter(d => d.story_id === story?.story_id && d.decision === 'selected_for_verification' && d.score).at(-1);
+    const score = selection?.score || preAnalyzeStory(event, now).event_score;
+    const sources = story?.pending_update?.sources || story?.sources || event.sources;
     return { event_id: story?.event_id || event.event_id, canonical_title: event.title,
       first_seen_at: event.first_seen_at, last_seen_at: event.last_seen_at,
-      sources: event.sources.map(s => ({ source_id: s.source_id, publisher_id: s.publisher_id, url: s.url, published_at: s.published_at })),
-      ...score, ...decision, cluster_id: story?.story_id || event.story_id,
+      sources: sources.map(s => ({ source_id: s.source_id, publisher_id: s.publisher_id, url: s.url, published_at: s.published_at })),
+      ...score, score_basis: selection ? 'recorded_selection' : 'observed_evidence', ...decision, cluster_id: story?.story_id || event.story_id,
       published_article_id: story && active(story) ? story.story_id : null,
       public_url: story && active(story) ? `https://wirkungsoekonomie.de/wirkungsticker/${story.slug}/` : null,
       observation_scope: 'bounded_allowed_source_sample_not_entire_web',
