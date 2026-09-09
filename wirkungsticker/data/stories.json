@@ -1,7 +1,545 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T21:37:35.896Z",
+  "updated_at": "2026-09-09T22:07:04.931Z",
   "stories": [
+    {
+      "story_id": "wt-b3b0168d8241bab3",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b3b0168d8241bab3-0667941ed111a9ee-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b3b0168d8241bab3-2a8a69e7966059db-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b3b0168d8241bab3-2410a3ca7cdbb3ca-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b3b0168d8241bab3-45ea09c699a3bea4-source.png"
+        }
+      },
+      "slug": "olpreis-wieder-uber-100-dollar-spritpreise-binnen-einer-woche-stark-gestiegen-41bab3",
+      "title": "Ölpreis wieder über 100 Dollar - Spritpreise binnen einer Woche stark gestiegen",
+      "source_summary": "Ein Bericht nennt einen Sprung des Brent-Ölpreises auf über 100 Dollar und verweist zugleich auf deutlich gestiegene Benzin- und Dieselpreise an deutschen Tankstellen. Ein zweiter Bericht meldet den Anstieg ebenfalls und führt ihn auf die weitere militärische Eskalation am Persischen Golf sowie die Sorge vor Lieferunterbrechungen aus dem Nahen Osten zurück.\n\nOffen bleibt, wie lange der Preis über der Marke bleibt und wie breit sich der Tankstellenanstieg fortsetzt. Die Quellen liefern einen aktuellen Markt- und Verbraucherbefund, aber noch keinen belastbaren Beleg für länger anhaltende Folgen.",
+      "summary": "Öl ist wieder über 100 Dollar gestiegen. Zugleich steigen in Deutschland die Spritpreise.",
+      "detail_summary": "Die Berichte zeigen einen aktuellen Preisschub am Ölmarkt und an den Tankstellen. Der Brent-Preis sprang auf über 100 Dollar, zugleich kletterten Benzin- und Dieselpreise deutlich. Als Auslöser nennen die Quellen die militärische Eskalation am Persischen Golf und die Sorge vor Lieferunterbrechungen. Für die Redaktion ist das ein relevanter Markt- und Verbraucherbefund mit möglichem Kostendruck. Eine eingetretene längerfristige Wirkung ist damit aber noch nicht belegt.",
+      "why_relevant": "Der Preisimpuls trifft Energie- und Mobilitätskosten und kann sich kurzfristig auf Verbraucherinnen, Unternehmen und Transportkosten auswirken.",
+      "topic": [
+        "Geopolitik",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Steigende Öl- und Spritpreise erhöhen kurzfristig Kosten für Haushalte, Unternehmen und Verkehr. Das ist eine tatsächliche Zustandsänderung im Preisniveau, keine nur erwartete Möglichkeit.",
+          "positive_path": {
+            "mechanism": "Keine eigenständige positive Veränderung im berichteten Befund; mögliche Entlastung erst bei späterem Preisrückgang, hier nicht belegt.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "ndr-info"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Höhere Energie- und Kraftstoffpreise verteuern Mobilität, Lieferungen und Vorprodukte und können Kaufkraft mindern.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "ndr-info"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Der Bericht nennt nur einen Preis- und Lieferimpuls am Ölmarkt. Direkte Umweltfolgen oder Emissionsänderungen sind daraus nicht belegt.",
+          "positive_path": {
+            "mechanism": "Kein belastbar belegter positiver Umweltpfad aus den Quellen.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Ein höherer Ölpreis kann den Verbrauch fossiler Kraftstoffe dämpfen, das ist hier aber nur als Möglichkeit und nicht als eingetretene Folge belegt.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "ndr-info"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Quellen beschreiben Marktpreise und Verbraucherpreise. Ein direkter Pfad auf demokratische Verfahren oder Korrekturfähigkeit ist daraus nicht belegt.",
+          "positive_path": {
+            "mechanism": "Kein belegt positiver demokratischer Pfad im vorliegenden Material.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Keine belastbar belegte demokratische Schädigung; politische Folgewirkungen bleiben offen.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "ndr-info"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Brent-Ölpreis",
+            "value": "100",
+            "unit": "Dollar",
+            "context": "Der Preis sprang auf über diese Marke.",
+            "claim_id": "wt-b3b0168d8241bab3-v1-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "verbraucherinnen",
+          "unternehmen",
+          "beschaeftigte"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T22:07:04.931Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T14:03:11.000Z",
+      "last_updated": "2026-09-09T22:12:28.273Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-91057569da22b471781b",
+      "case_file": null,
+      "source_published_at": "2026-09-09T13:53:33.000Z",
+      "published_at": "2026-09-09T22:12:28.273Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Ölpreis über 100 Dollar bleibt oder wieder darunter fällt.",
+          "source_id": "ndr-info",
+          "expected_by": null,
+          "measurable_indicator": "Brent-Preis in Dollar pro Barrel",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a9a99ee7e32b4280",
+          "announced_at": "2026-09-09T13:53:33.000Z",
+          "follow_up_date": "2026-09-16T22:12:28.273Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob sich der Anstieg an den Tankstellen in Deutschland fortsetzt.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Benzin- und Dieselpreise an deutschen Tankstellen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0bf04d06a4e05e78",
+          "announced_at": "2026-09-09T14:03:11.000Z",
+          "follow_up_date": "2026-09-16T22:12:28.273Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/oelpreis-wieder-ueber-100-dollar---spritpreise-binnen-einer-woche-stark-gestiegen-38227062.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T14:03:11.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/wirtschaft-oelpreis-steigt-auf-ueber-100-dollar,audio-3467118.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:53:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-32f0aa5f0a6a7761",
+      "title_image": null,
+      "slug": "nach-afd-wahlsieg-soder-lehnt-verbot-ab-und-nennt-brandmauer-konzept-gescheitert-6a7761",
+      "title": "Nach AfD-Wahlsieg: Söder lehnt Verbot ab und nennt Brandmauer-Konzept gescheitert",
+      "source_summary": "CSU-Chef Markus Söder hat sich bei Maischberger am 8. September gegen ein AfD-Verbot ausgesprochen. Stattdessen fordert er eine schärfere inhaltliche Auseinandersetzung mit der Partei. Das bisherige Brandmauer-Konzept erklärte er für gescheitert. Das geht aus der WDR-Sendungsbeschreibung und einem dpa-Bericht bei FOCUS hervor. Zugleich warnt Söder laut WDR vor einer AfD-Regierung und vor Rechtsextremismus. Eine angekündigte Koalition oder Zusammenarbeit mit der AfD ist damit nicht belegt.\n\nDie Abgrenzungsdebatte betrifft auch eine Partei, deren Landesverband Sachsen-Anhalt vom zuständigen Verfassungsschutz als gesichert rechtsextremistische Bestrebung geführt wird. Die Behörde verweist insbesondere auf Menschenwürde und Demokratieprinzip. Zum angekündigten Bildungsumbau der AfD gehören getrennte Bildungswege für Kinder mit Behinderung; das Parteiprogramm nennt das Ende der Inklusion und einen Ausbau der Förderschulen. Söders Ablehnung eines Verbots ist eine politische Position: Ein Parteiverbot entscheidet das Bundesverfassungsgericht, nicht ein Parteivorsitzender.",
+      "summary": "Söder lehnt ein AfD-Verbot ab und erklärt die bisherige Abgrenzungsstrategie für gescheitert. Die Aussage ist politisch folgenreich, belegt aber keine angekündigte Zusammenarbeit mit der AfD.",
+      "detail_summary": "Wenn ein führender Unionspolitiker die bisherige Abgrenzung für gescheitert erklärt, geht es nicht nur um eine Formulierung. Entscheidend ist, welche Grenzen bei Mehrheiten, Ämtern und Regierungsbildung tatsächlich bestehen bleiben. Werden sie aufgeweicht, kann das den Zugang der AfD zu staatlichen Hebeln erleichtern. Das negative Wirkungspotenzial betrifft dann öffentliche Kontrolle, Teilhabe und auch Energieentscheidungen. Dass Söders Aussage diesen Prozess bereits ausgelöst hat, ist nicht belegt.",
+      "why_relevant": "Söders Position berührt den Umgang der Union mit möglicher AfD-Regierungsmacht und einem rechtsstaatlichen Schutzinstrument. Das ist ein eigenständiger politischer Nachrichtenanlass.",
+      "topic": [
+        "Politik",
+        "Demokratie",
+        "Gesellschaft",
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Nachgelagertes negatives Potenzial: Erleichterte Regierungsmacht kann den angekündigten Rückbau gemeinsamer Bildungswege ermöglichen. Kinder mit Behinderung und ihre Familien tragen das Teilhaberisiko; keine gemessene Folge der Äußerung.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wird politische Abgrenzung aufgeweicht und anschließend gemeinsame Beschulung eingeschränkt, gehen für betroffene Kinder gemeinsame Lern- und Begegnungsmöglichkeiten verloren. Die tatsächliche Umsetzung bleibt offen.",
+            "source_ids": [
+              "wdr-maischberger-reference",
+              "afd-lsa-programme-reference"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Indirektes negatives Potenzial über Regierungsmacht und Energiepolitik: Der angekündigte Förderentzug und die längere Kohlenutzung können emissionsärmere Alternativen behindern. Die Äußerung selbst ist keine Energieentscheidung.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Erleichterter Zugang zu Regierungsmacht kann die Umsetzung des Energieprogramms begünstigen. Werden emissionsärmere Projekte verdrängt oder verzögert, sind längere fossile Bindungen und zusätzliche Emissionen gegenüber der Alternative möglich.",
+            "source_ids": [
+              "wdr-maischberger-reference",
+              "afd-lsa-programme-reference"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Negatives Potenzial für demokratische Schutz- und Kontrollfunktionen, wenn politische Abgrenzung erodiert. Amtliche Einstufung und angekündigter Rückbau öffentlicher Berichte machen das Risiko konkret; eine erfolgte Erosion ist damit nicht nachgewiesen.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Wird die Abgrenzung gegenüber dem als gesichert rechtsextremistisch eingestuften Landesverband schwächer, kann dessen Zugang zu Ämtern leichter werden. Entfällt anschließend öffentliche Sicherheitsberichterstattung, sinkt die verfügbare Information für demokratische Kontrolle.",
+            "source_ids": [
+              "wdr-maischberger-reference",
+              "mi-sachsen-anhalt-context",
+              "afd-lsa-programme-reference"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat"
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "high",
+        "reason": "Die Abgrenzungsmetapher kann als Absage an politische Schutzregeln verstanden werden, obwohl eine Zusammenarbeit nicht ausdrücklich angekündigt ist.",
+        "factual_core": "Söder lehnt ein AfD-Verbot ab, kritisiert die bisherige Abgrenzungsstrategie und warnt zugleich vor einer AfD-Regierung.",
+        "epistemic_status": {
+          "confirmed": [
+            "WDR-Sendungsbeschreibung und dpa-Bericht liegen vor"
+          ],
+          "actor_claims": [
+            "Söders Bewertung der bisherigen Strategie"
+          ],
+          "open": [
+            "Konkrete Folgerungen für Zusammenarbeit und tatsächliche Publikumsreaktionen"
+          ]
+        },
+        "attribution": {
+          "frame_source": "Söder im von WDR dokumentierten Gespräch",
+          "speaker": "Markus Söder",
+          "original_term": "Brandmauer",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline",
+            "body"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Brandmauer",
+          "origin_in_story": "Söder im von WDR dokumentierten Gespräch",
+          "media_usage": "headline",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Konflikt",
+            "Normalisierung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Brandmauer",
+          "frame_type": [
+            "Konflikt",
+            "Normalisierung"
+          ],
+          "problem_definition": "Söder stellt den Erfolg bisheriger politischer Abgrenzung infrage.",
+          "implied_cause": "Unzureichende inhaltliche Auseinandersetzung mit der AfD ist seine politische Erklärung, keine geprüfte Wahlursache.",
+          "implied_responsibility": "Adressiert wird der bisherige Umgang der Union mit der AfD.",
+          "implied_threat": "Weitere politische Erfolge der AfD.",
+          "implied_solution_space": "Härtere inhaltliche Auseinandersetzung statt Verbotsforderung.",
+          "material_omissions": [
+            "Ohne Konkretisierung bleibt unklar, welche Grenzen für Zusammenarbeit gelten sollen."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Der AfD-Landesverband Sachsen-Anhalt wird amtlich als gesichert rechtsextremistische Bestrebung geführt.",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "mi-sachsen-anhalt-context",
+              "claim_supported": "Amtliche Einstufung des Landesverbandes und Begründung"
+            }
+          ],
+          "uncertainty": "Keine Gleichsetzung dieser Einstufung mit einem Parteiverbot; keine pauschale Bewertung von Wählerinnen und Wählern."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "risk",
+          "resonance_space": "Debatte über Regierungsbildung und politische Abgrenzung",
+          "normalization_potential": "medium",
+          "repetition_risk": "open",
+          "polarization_potential": "möglich",
+          "trust_effect_potential": "möglich",
+          "discourse_effect_potential": "Die Formulierung kann als Freigabe von Zusammenarbeit ankommen, ohne dass dies ausdrücklich angekündigt wurde. Das ist ein Interpretationsrisiko, keine nachgewiesene Publikumswirkung."
+        },
+        "impact_path": {
+          "first_order": "Aufmerksamkeit für die Kritik an bisherigen Abgrenzungsregeln",
+          "second_order": "Mögliche Verschiebung dessen, was als akzeptable Zusammenarbeit gilt",
+          "third_order": "Bedingtes Risiko veränderter Mehrheiten und institutioneller Schutzbedingungen"
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Die Stellungnahme und der amtliche Kontext sind dokumentiert.",
+          "what_is_inferred": "Eine Absage an das bisherige Konzept kann weiter reichen als die ausdrücklich genannte Strategie der inhaltlichen Auseinandersetzung.",
+          "what_is_open": "Kein vollständiges Wortprotokoll ausgewertet. Keine Daten über tatsächliche Wahrnehmung oder Wiederholungseffekte. Mehrere Abdrucke derselben Agenturmeldung sind keine unabhängigen Bestätigungen.",
+          "facts": [
+            "Die Stellungnahme und der amtliche Kontext sind dokumentiert."
+          ],
+          "observations": [
+            "Die Sendungsbeschreibung enthält auch Söders Warnung vor einer AfD-Regierung."
+          ],
+          "inferences": [
+            "Eine Absage an das bisherige Konzept kann weiter reichen als die ausdrücklich genannte Strategie der inhaltlichen Auseinandersetzung."
+          ],
+          "impact_potentials": [
+            "Verschobene Erwartungen an politische Zusammenarbeit"
+          ],
+          "impact_risks": [
+            "Normalisierung einer Öffnung zu Regierungsmacht"
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Kein vollständiges Wortprotokoll ausgewertet.",
+            "Keine Daten über tatsächliche Wahrnehmung oder Wiederholungseffekte.",
+            "Mehrere Abdrucke derselben Agenturmeldung sind keine unabhängigen Bestätigungen."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Söder erklärt eine bisherige Strategie für gescheitert. Das ist seine politische Bewertung, kein Nachweis dafür, dass Abgrenzung nutzlos wäre. Beim Publikum kann die Botschaft ankommen: Die bisherigen Grenzen sollen fallen. Genau diese Folgerung ist aber nicht ausdrücklich belegt. Nach der WDR-Beschreibung warnt er zugleich vor einer AfD-Regierung.\n\nWarum ist das trotzdem wichtig? Politische Signale können verändern, welche Zusammenarbeit als denkbar gilt. Werden daraus andere Mehrheiten, geht es anschließend um Ämter, Geld und staatliche Regeln. Das ist ein nachvollziehbarer Risikopfad, keine gemessene Wirkung dieses Auftritts. Ob Menschen seine Aussage tatsächlich so verstehen, wissen wir nicht. Ebenso wenig belegt bloße Wiederholung, dass das Publikum eine politische Behauptung für wahr hält. Entscheidend bleibt deshalb, welche Kooperationsgrenzen Söder konkret bekräftigt oder aufgibt.",
+        "editorial_assessment": "Söder erklärt eine bisherige Strategie für gescheitert. Das ist seine politische Bewertung, kein Nachweis dafür, dass Abgrenzung nutzlos wäre. Beim Publikum kann die Botschaft ankommen: Die bisherigen Grenzen sollen fallen. Genau diese Folgerung ist aber nicht ausdrücklich belegt. Nach der WDR-Beschreibung warnt er zugleich vor einer AfD-Regierung. Warum ist das trotzdem wichtig? Politische Signale können verändern, welche Zusammenarbeit als denkbar gilt. Werden daraus andere Mehrheiten, geht es anschließend um Ämter, Geld und staatliche Regeln. Das ist ein nachvollziehbarer Risikopfad, keine gemessene Wirkung dieses Auftritts. Ob Menschen seine Aussage tatsächlich so verstehen, wissen wir nicht. Ebenso wenig belegt bloße Wiederholung, dass das Publikum eine politische Behauptung für wahr hält. Entscheidend bleibt deshalb, welche Kooperationsgrenzen Söder konkret bekräftigt oder aufgibt.",
+        "fact_first_alternative": "Söder lehnt ein AfD-Verbot ab und kritisiert die bisherige Abgrenzungsstrategie; konkrete Kooperationsfolgen bleiben offen.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 2,
+          "rewrite_required": false,
+          "recommended_title": "Nach AfD-Wahlsieg: Söder lehnt Verbot ab und nennt Brandmauer-Konzept gescheitert",
+          "recommended_summary": "Söder fordert eine andere Auseinandersetzung mit der AfD; eine Zusammenarbeit ist damit nicht angekündigt.",
+          "recommended_meta_description": "Söders Absage an ein AfD-Verbot: Was belegt ist und welche Risiken eine aufgeweichte politische Abgrenzung bergen kann."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T21:54:12.765Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-814079fbdc30",
+        "slug": "soeder-afd-eine-grenze-wird-nicht-ueberfluessig",
+        "title": "Söder und die AfD: Eine Grenze wird nicht überflüssig, weil sie unter Druck steht",
+        "teaser": "Söder erklärt die bisherige Abgrenzung für gescheitert. Mich überzeugt diese Schlussfolgerung nicht: Stimmenanteile messen etwas anderes als den Schutz vor Regierungsmacht. Eine persönliche WÖk-Analyse über Signale, staatliche Hebel und die Menschen, die mögliche Folgekosten tragen.",
+        "published_at": "2026-09-09T21:54:13.108Z",
+        "updated_at": "2026-09-09T21:54:13.108Z"
+      },
+      "first_seen": "2026-09-09T21:43:00Z",
+      "last_updated": "2026-09-09T21:54:12.765Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-b6a0ea676472d871c4b1",
+      "case_file": null,
+      "source_published_at": "2026-04-11T00:00:00.000Z",
+      "published_at": "2026-09-09T21:54:12.765Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-maischberger-reference"
+          ],
+          [
+            "focus-case-research"
+          ],
+          [
+            "mi-sachsen-anhalt-context"
+          ],
+          [
+            "afd-lsa-programme-reference"
+          ],
+          [
+            "tagesschau-access"
+          ],
+          [
+            "bundesrecht-context"
+          ]
+        ],
+        "possible_independent_origins": 6,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "bundesrecht-context",
+              "bundesrecht-context"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Söders genaue Grenze zwischen Auseinandersetzung und Zusammenarbeit bleibt zu präzisieren.",
+          "source_id": "wdr-maischberger-reference",
+          "expected_by": null,
+          "measurable_indicator": "Explizite Kooperationsausschlüsse, Parteibeschlüsse und tatsächliches Abstimmungsverhalten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d5b08a72a1f54a49",
+          "announced_at": "2026-09-08",
+          "follow_up_date": "2026-09-16T21:54:12.765Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR – maischberger",
+          "url": "https://www.ardmediathek.de/video/maischberger/afd-erfolg-und-merz-unter-druck-markus-soeder-im-gespraech/wdr/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtYmZlNTEzNDktN2RmZi00MGY3LThmMTMtMGFhYTVkNjE4Yjll",
+          "source_type": "official_reference",
+          "published_at": "2026-09-08",
+          "primary_source": true
+        },
+        {
+          "publisher": "FOCUS online",
+          "url": "https://www.focus.de/politik/deutschland/soeder-gegen-afd-verbot-konzept-der-brandmauer-gescheitert_74859e02-d0c0-4887-a2ae-63b9fbaaa7cc.html",
+          "source_type": "media_discovery",
+          "published_at": "2026-09-08T20:37:00Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Verfassungsschutz Sachsen-Anhalt",
+          "url": "https://mi.sachsen-anhalt.de/verfassungsschutz/themenfelder/page/rechtsextremismus",
+          "source_type": "official_reference",
+          "published_at": null,
+          "primary_source": true
+        },
+        {
+          "publisher": "AfD Sachsen-Anhalt – Regierungsprogramm",
+          "url": "https://afd-regierungsprogramm.de/",
+          "source_type": "official_reference",
+          "published_at": "2026-04-11",
+          "primary_source": true
+        },
+        {
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/bildungssystem-afd-sachsen-anhalt-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-06-07T09:44:00Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Gesetze im Internet",
+          "url": "https://www.gesetze-im-internet.de/gg/art_21.html",
+          "source_type": "official_reference",
+          "published_at": null,
+          "primary_source": true
+        },
+        {
+          "publisher": "Gesetze im Internet",
+          "url": "https://www.gesetze-im-internet.de/bverfgg/__43.html",
+          "source_type": "official_reference",
+          "published_at": null,
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-022ed1263eac1645",
       "title_image": {
@@ -28309,6 +28847,17 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-814079fbdc30",
+      "story_id": "wt-32f0aa5f0a6a7761",
+      "slug": "soeder-afd-eine-grenze-wird-nicht-ueberfluessig",
+      "title": "Söder und die AfD: Eine Grenze wird nicht überflüssig, weil sie unter Druck steht",
+      "subtitle": "Inhaltlich streiten, Zusammenarbeit begrenzen, ein Verbot rechtlich prüfen: Das sind verschiedene Aufgaben. Warum ihre Vermischung gefährlich ist.",
+      "teaser": "Söder erklärt die bisherige Abgrenzung für gescheitert. Mich überzeugt diese Schlussfolgerung nicht: Stimmenanteile messen etwas anderes als den Schutz vor Regierungsmacht. Eine persönliche WÖk-Analyse über Signale, staatliche Hebel und die Menschen, die mögliche Folgekosten tragen.",
+      "published_at": "2026-09-09T21:54:13.108Z",
+      "updated_at": "2026-09-09T21:54:13.108Z",
+      "reading_time_minutes": 9
+    },
     {
       "analysis_id": "woek-manual-5a95096beab7baf4",
       "slug": "deutschland-2033-justus-bender",
