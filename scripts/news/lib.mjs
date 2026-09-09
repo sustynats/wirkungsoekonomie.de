@@ -9,6 +9,7 @@ import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA, DIMENSION_TENDENCY_RULE } from ".
 import { DIRECTION_ASSESSMENT_VERSION, NEWS_DIMENSION_SCHEMA, directionAssessmentErrors } from './direction-assessment.mjs';
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
 import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, promptEvidenceSegments } from "./newsroom.mjs";
+import { courtCaseRelation } from "./court-case-identity.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-adapters.mjs";
 import { livingFileMatch, subjectConflict, matchingStories, isMerged, documentKey } from "./living-files.mjs";
 import { compactEvidenceSegments, serializeEvidencePackets, expandEvidenceSegments, expandPacketTransport } from "./evidence-packets.mjs";
@@ -486,6 +487,11 @@ export function existingStoryMatch(item, entry, now) {
   if (identity.score) return identity.score;
   const age = Math.abs(Date.parse(item.published_at || now) - Date.parse(entry.last_updated || now));
   if (age > 120 * 24 * 60 * 60 * 1000) return 0;
+  const courtCase = courtCaseRelation(item, rooted.sources[0]);
+  if (courtCase.status !== "unestablished") {
+    const event = eventCompatibility(item, rooted.sources[0]);
+    return event.same_event && event.reason === "shared_court_case" ? 0.98 : 0;
+  }
   const itemReferences = storyReferenceKeys(item.title, item.summary);
   // Do not let a contextual source merge another place or policy into this file.
   const compatibleSources = rooted.sources.filter((source) => !subjectConflict(item, source));

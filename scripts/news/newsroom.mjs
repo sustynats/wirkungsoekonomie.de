@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { numberTokens, evidenceNumberTokens } from "./numeric-evidence.mjs";
 import { sourceAccess } from "./access-policy.mjs";
+import { courtCaseRelation } from "./court-case-identity.mjs";
 
 const hash = (value) => createHash("sha256").update(String(value)).digest("hex").slice(0, 20);
 const ms = (value) => Date.parse(value || "") || 0;
@@ -132,7 +133,9 @@ export function eventFingerprint(item) {
 
 export function eventCompatibility(a, b) {
   const left = eventFingerprint(a), right = eventFingerprint(b);
-  if (a.url && a.url === b.url) return { same_event: true, related: true, reason: "same_document" };
+  const courtCase = courtCaseRelation(a, b);
+  if (a.url && a.url === b.url && courtCase.status !== "different") return { same_event: true, related: true, reason: "same_document" };
+  if (["different", "ambiguous"].includes(courtCase.status)) return { same_event: false, related: false, reason: "court_case_not_unique_or_different" };
   const timeGap = Math.abs(ms(a.published_at) - ms(b.published_at));
   const reference = left.references.some((value) => right.references.includes(value)) || (left.doi && left.doi === right.doi);
   const shared = left.title_terms.filter((term) => right.title_terms.includes(term)).length;
@@ -144,6 +147,14 @@ export function eventCompatibility(a, b) {
   const structuredFactMatch = sharedFacts.length > 0 && sharedPlaces.length > 0 && sharedDurations.length > 0 && sharedAnchors.length > 0;
   const eventTypesDiffer = left.event_type !== "other" && right.event_type !== "other" && left.event_type !== right.event_type;
   const geographyConflict = left.geography.length && right.geography.length && !left.geography.some((region) => right.geography.includes(region));
+  if (courtCase.status === "shared") {
+    // The same proceeding can have later judgments or other procedural steps.
+    // Keep those as related context rather than collapsing them by case number.
+    const sameJudgmentDay = left.event_type === "judgment" && right.event_type === "judgment"
+      && ms(a.published_at) && ms(b.published_at) && left.day === right.day;
+    const sameEvent = Boolean(sameJudgmentDay && !geographyConflict);
+    return { same_event: sameEvent, related: true, reason: sameEvent ? "shared_court_case" : "court_case_context_only" };
+  }
   return {
     same_event: !eventTypesDiffer && !geographyConflict && timeGap <= 96 * 3600000 && (reference || structuredFactMatch || (shared >= 3 && similarity >= 0.72)),
     related: Boolean(reference || structuredFactMatch || (shared >= 3 && similarity >= 0.5)),
