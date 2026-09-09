@@ -460,7 +460,7 @@
     }
   ],
   "regional_coverage": {
-    "checked_at": "2026-09-09T04:52:17.802Z",
+    "checked_at": "2026-09-09T05:06:53.221Z",
     "required_states": 16,
     "configured_states": 15,
     "healthy_states": 15,
@@ -2557,9 +2557,9 @@
       "source_utility_score": 100,
       "metrics": {
         "items_seen": 4825,
-        "items_local_rejected": 212,
+        "items_local_rejected": 213,
         "items_duplicate": 3399,
-        "items_existing_story": 119,
+        "items_existing_story": 120,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 66,
         "items_published": 8,
@@ -2640,7 +2640,7 @@
       "source_utility_score": 100,
       "metrics": {
         "items_seen": 4060,
-        "items_local_rejected": 1329,
+        "items_local_rejected": 1330,
         "items_duplicate": 2062,
         "items_existing_story": 263,
         "items_short_ai_checked": 0,
@@ -2648,7 +2648,7 @@
         "items_published": 20,
         "items_story_updates": 8,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 212,
+        "items_source_integrity_failed": 213,
         "items_corrected_later": 0,
         "ai_input_tokens": 1719036,
         "ai_output_tokens": 135456,
@@ -2667,9 +2667,9 @@
       "source_utility_score": 100,
       "metrics": {
         "items_seen": 12180,
-        "items_local_rejected": 750,
+        "items_local_rejected": 751,
         "items_duplicate": 8746,
-        "items_existing_story": 190,
+        "items_existing_story": 191,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 243,
         "items_published": 13,
@@ -2862,7 +2862,7 @@
       "source_utility_score": 100,
       "metrics": {
         "items_seen": 0,
-        "items_local_rejected": 231,
+        "items_local_rejected": 232,
         "items_duplicate": 1369,
         "items_existing_story": 185,
         "items_short_ai_checked": 0,
@@ -3225,7 +3225,7 @@
         "items_seen": 9022,
         "items_local_rejected": 109,
         "items_duplicate": 2977,
-        "items_existing_story": 33,
+        "items_existing_story": 34,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 46,
         "items_published": 5,
@@ -3258,7 +3258,7 @@
         "items_published": 3,
         "items_story_updates": 2,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 164,
+        "items_source_integrity_failed": 165,
         "items_corrected_later": 0,
         "ai_input_tokens": 600774,
         "ai_output_tokens": 110807,
@@ -3277,7 +3277,7 @@
       "source_utility_score": 100,
       "metrics": {
         "items_seen": 10166,
-        "items_local_rejected": 481,
+        "items_local_rejected": 482,
         "items_duplicate": 8266,
         "items_existing_story": 144,
         "items_short_ai_checked": 0,
@@ -3357,7 +3357,7 @@
       "observation_status": "measurable",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 95.7,
+      "source_utility_score": 98.7,
       "metrics": {
         "items_seen": 9171,
         "items_local_rejected": 103,
@@ -3474,7 +3474,7 @@
       "source_utility_score": 100,
       "metrics": {
         "items_seen": 6162,
-        "items_local_rejected": 298,
+        "items_local_rejected": 299,
         "items_duplicate": 5772,
         "items_existing_story": 143,
         "items_short_ai_checked": 0,
@@ -3482,7 +3482,7 @@
         "items_published": 29,
         "items_story_updates": 13,
         "items_primary_source_found": 7,
-        "items_source_integrity_failed": 206,
+        "items_source_integrity_failed": 207,
         "items_corrected_later": 0,
         "ai_input_tokens": 1529250,
         "ai_output_tokens": 234398,
@@ -3558,12 +3558,12 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 54.2,
+      "source_utility_score": 55.7,
       "metrics": {
         "items_seen": 4200,
         "items_local_rejected": 6,
         "items_duplicate": 1081,
-        "items_existing_story": 3,
+        "items_existing_story": 4,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 2,
         "items_published": 0,
