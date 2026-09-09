@@ -2,33 +2,33 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T22:16:55.504Z",
+  "started_at": "2026-09-09T22:31:51.562Z",
   "scanned_stories": 221,
   "scanned_subjects": 196,
   "editorial_candidates": 35,
   "ready_for_research": 11,
   "research_pending": 14,
-  "retry_deferred": 4,
-  "editorial_research_sources_discovered": 54,
-  "selected": 2,
-  "editorial_research_started": 1,
+  "retry_deferred": 6,
+  "editorial_research_sources_discovered": 55,
+  "selected": 0,
+  "editorial_research_started": 0,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
   "research_calls": 0,
   "research_tokens": 0,
   "analysis_tokens": 0,
   "estimated_cost_usd": 0,
-  "quality_retries": 1,
+  "quality_retries": 0,
   "economy_version": "1.0",
   "background_only": true,
   "full_generations": 0,
   "targeted_repairs": 0,
-  "batch_results_reviewed": 1,
+  "batch_results_reviewed": 0,
   "background_waiting": 5,
   "quality_held": 4,
   "unchanged_research_skipped": 12,
   "requested": [],
-  "publication_deferred": true,
+  "publication_deferred": false,
   "failed": [],
   "candidates": [
     {
@@ -133,7 +133,7 @@
       "story_id": "wt-026d11d680622587",
       "story_slug": "bundestag-neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritis-622587",
       "story_title": "Bundestag - Neuer Sportstaatsminister Rauhe will Olympia nach Deutschland holen, AfD kritisiert Benennung",
-      "editorial_analysis_score": 71,
+      "editorial_analysis_score": 72,
       "analysis_gain": 48,
       "factors": {
         "systemic_relevance": 14,
@@ -150,7 +150,7 @@
         "distribution_relevance": 6,
         "discourse_relevance": 4,
         "case_depth": 0,
-        "evidence_quality": 7
+        "evidence_quality": 8
       },
       "factor_status": {
         "impact_potential": "open",
@@ -160,7 +160,7 @@
       "evidence_gate": {
         "passed": false,
         "source_integrity": "verified",
-        "independent_origin_count": 3,
+        "independent_origin_count": 4,
         "primary_source_count": 0,
         "cited_claim_count": 3,
         "primary_source_expected": true,
@@ -169,7 +169,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "91186d8e3b159162da1a482b7cc0b4222884eccb472847c2b8938b5de4c3bb56",
+      "fingerprint": "f59a51e4095c09724caedc9511362e289d0d194d7f8ab66912c6d2ba9d9a2633",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -1549,13 +1549,12 @@
   "batch": {
     "submitted": 0,
     "pending": 0,
-    "completed": 1,
+    "completed": 0,
     "failed": 0,
     "applied": 0,
     "polling_errors": 0,
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "batch_deferred": 2,
-  "completed_at": "2026-09-09T22:18:09.368Z"
+  "completed_at": "2026-09-09T22:33:30.860Z"
 }
