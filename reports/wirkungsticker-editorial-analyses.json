@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T10:24:27.682Z",
-  "scanned_stories": 200,
-  "scanned_subjects": 176,
+  "started_at": "2026-09-09T10:42:32.275Z",
+  "scanned_stories": 201,
+  "scanned_subjects": 177,
   "editorial_candidates": 32,
   "ready_for_research": 9,
   "research_pending": 11,
   "retry_deferred": 5,
-  "editorial_research_sources_discovered": 50,
+  "editorial_research_sources_discovered": 48,
   "selected": 0,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
@@ -31,6 +31,51 @@
   "publication_deferred": false,
   "failed": [],
   "candidates": [
+    {
+      "story_id": "wt-84ac3f26c7762712",
+      "story_slug": "milliarden-lucke-im-klimafonds-762712",
+      "story_title": "Milliarden-Lücke im Klimafonds",
+      "editorial_analysis_score": 81,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 8,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
+        "primary_source_count": 0,
+        "cited_claim_count": 5,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "fewer_than_two_source_origins",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "d4aed5625f353eb5fec67a54dc50ee5871ae9c3aec5321a99af8eb4f6e731666",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-5a2fe52ebad137c3",
       "story_slug": "us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-d137c3",
@@ -241,50 +286,6 @@
       },
       "fingerprint": "e5095f24671851661bf26839bac0d41344db6d69b03da9d1c566829dc05b102f",
       "status": "ready_for_research",
-      "analysis_id": null
-    },
-    {
-      "story_id": "wt-84ac3f26c7762712",
-      "story_slug": "milliarden-lucke-im-klimafonds-762712",
-      "story_title": "Milliarden-Lücke im Klimafonds",
-      "editorial_analysis_score": 88,
-      "analysis_gain": 60,
-      "factors": {
-        "systemic_relevance": 14,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 10,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 9,
-        "MPD_interdependence": 6,
-        "distribution_relevance": 8,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 7
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": false,
-        "source_integrity": "verified",
-        "independent_origin_count": 3,
-        "primary_source_count": 0,
-        "cited_claim_count": 4,
-        "primary_source_expected": true,
-        "primary_source_satisfied": false,
-        "reasons": [
-          "primary_source_missing"
-        ]
-      },
-      "fingerprint": "849d87cbe6b23fe8fa813045ad1c7f5e2df66731596f79449e0ef9817cf75d34",
-      "status": "research_pending",
       "analysis_id": null
     },
     {
@@ -1414,5 +1415,5 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-09T10:25:00.759Z"
+  "completed_at": "2026-09-09T10:42:57.736Z"
 }
