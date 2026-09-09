@@ -1,7 +1,190 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T06:22:18.312Z",
+  "updated_at": "2026-09-09T06:37:16.460Z",
   "stories": [
+    {
+      "story_id": "wt-491857684cc65a88",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "iran-krieg-usa-zerstoren-iranische-tanker-teheran-feuert-raketen-ab-c65a88",
+      "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
+      "source_summary": "Mehrere Nachrichtenmedien berichten übereinstimmend von einer neuen Eskalation zwischen den USA und dem Iran. Nach den Berichten hat das US-Militär eigenen Angaben zufolge fünf iranische Öltanker zerstört.\n\nIm Gegenzug sei von iranischer Seite auf US-Ziele mit Raketen reagiert worden; Jordanien meldete, 18 ballistische Raketen seien abgefangen worden, zwei weitere seien in unbewohnten Gebieten niedergegangen. Offen bleibt, wie unabhängig die zugrunde liegenden Meldungen voneinander sind und ob es Primärbelege außerhalb der berichtenden Medien gibt.",
+      "summary": "Mehrere Medien melden neue gegenseitige Angriffe zwischen USA und Iran. Die Angaben zu zerstörten Tankern und abgefangenen Raketen sind noch quellengebunden, aber nicht unabhängig als Primärfakt bestätigt.",
+      "detail_summary": "Der Kern ist eine neue Eskalationsmeldung: US-Stellen sollen fünf iranische Öltanker zerstört haben, danach sollen iranische Kräfte mit Raketen reagiert haben. Jordanien meldete 18 abgefangene ballistische Raketen und zwei Einschläge in unbewohnten Gebieten. Materiell relevant ist das wegen möglicher Folgen für Schifffahrt, regionale Sicherheit und Ölmarkt-Stabilität. Ein belastbarer Wirkpfad ist die Verschärfung des militärischen Gegenschlags mit Risiken für Handel, Preise und weitere Vergeltung. Die Evidenz bleibt aber journalistisch vermittelt; unabhängige Primärbestätigung fehlt in den gelieferten Quellen.",
+      "why_relevant": "Die Meldung beschreibt eine neue, militärisch und wirtschaftlich folgenschwere Zuspitzung im Iran-USA-Konflikt mit möglicher Wirkung auf Schifffahrt, Energiepreise und regionale Sicherheit.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Wenn Gegenschläge und Gegenschläge weitergehen, steigen Sicherheitsrisiken für Besatzungen, Schifffahrt und zivile Infrastruktur; die Lage bleibt offen, die Richtung ist aber klar konflikthaft.",
+          "positive_path": {
+            "mechanism": "Eine begrenzte Abschreckung könnte weitere unmittelbare Angriffe bremsen und kurzfristig Eskalation begrenzen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Vergeltungsangriffe können neue militärische Reaktionen, Störungen der Seewege und weitere Schäden auslösen.",
+            "source_ids": [
+              "zdfheute-nachrichten",
+              "spiegel-schlagzeilen"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Für die Umwelt ist vor allem das Risiko von Zwischenfällen, Lecks oder Störungen in der ölintensiven Seeroute relevant; eingetretene Umweltschäden sind hier aber nicht belegt.",
+          "positive_path": {
+            "mechanism": "Ein schneller Waffenstillstand könnte Transport- und Unfallrisiken in der Region senken.",
+            "source_ids": [
+              "zdfheute-nachrichten",
+              "spiegel-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Militärische Angriffe auf Tanker erhöhen das Risiko von Ölverlusten, Bränden und maritimen Störungen.",
+            "source_ids": [
+              "zdfheute-nachrichten",
+              "spiegel-schlagzeilen"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Direkte demokratische Folgen sind in den Quellen nicht belegt; relevant ist vor allem die Belastung öffentlicher Kontrolle durch Kriegslage, Informationsunsicherheit und mögliche Ausnahmeentscheidungen.",
+          "positive_path": {
+            "mechanism": "Mehr Transparenz über Angriffe und Gegenangriffe kann parlamentarische und öffentliche Kontrolle stärken.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kriegseskalation kann Entscheidungsräume verengen und sachliche Kontrolle durch Sicherheitslogik überlagern.",
+            "source_ids": [
+              "zdfheute-nachrichten",
+              "spiegel-schlagzeilen"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T06:37:16.460Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T22:30:29.000Z",
+      "last_updated": "2026-09-09T06:40:10.664Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-535ab9d27abe1bcdee32",
+      "case_file": null,
+      "source_published_at": "2026-09-08T22:30:29.000Z",
+      "published_at": "2026-09-09T06:40:10.664Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home",
+            "stern-schlagzeilen",
+            "zdfheute-nachrichten"
+          ],
+          [
+            "spiegel-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "zdfheute-nachrichten"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Prüfung, ob es unabhängige Primär- oder Amtsbelege zu den zerstörten Tankern gibt.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigte Herkunft und Zahl der betroffenen Schiffe",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-323b78e253199ee7",
+          "announced_at": "2026-09-09T03:28:00.000Z",
+          "follow_up_date": "2026-09-16T06:40:10.664Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfung, ob die Gegenschläge weitere Schäden, Verletzte oder neue militärische Reaktionen auslösen.",
+          "source_id": "spiegel-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Neue Opfer-, Schadens- oder Reaktionsmeldungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-06e8ef7e6dd0d50e",
+          "announced_at": "2026-09-09T02:29:00.000Z",
+          "follow_up_date": "2026-09-16T06:40:10.664Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:30:29.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T05:23:56.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T03:28:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/ausland/usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-a-dd0e1f5e-44ef-4dbb-a865-df846edc3f9e",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T02:29:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-7e2c82a0ae7a9962",
       "title_image": {

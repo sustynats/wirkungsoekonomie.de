@@ -31436,10 +31436,12 @@
       "quality_cycles": 0,
       "request_id": null,
       "attempts": 7,
-      "last_attempt_at": "2026-09-09T06:24:29.751Z",
-      "next_attempt_at": "2026-09-09T06:39:29.751Z",
+      "last_attempt_at": "2026-09-09T06:43:07.701Z",
+      "next_attempt_at": "2026-09-09T06:58:07.701Z",
       "quality_errors": [
-        "EDITORIAL_SEO_LENGTH"
+        "EDITORIAL_ARTICLE_LENGTH",
+        "EDITORIAL_OBSERVED_IMPACT_OPEN",
+        "EDITORIAL_SELF_FRAME_FAILED"
       ],
       "reason": "AI_BATCH_PENDING"
     },

@@ -1,8 +1,971 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-09T06:22:18.312Z",
-  "updated_at": "2026-09-09T06:22:18.312Z",
+  "public_updated_at": "2026-09-09T06:37:16.460Z",
+  "updated_at": "2026-09-09T06:37:16.460Z",
   "stories": [
+    {
+      "story_id": "wt-491857684cc65a88",
+      "slug": "iran-krieg-usa-zerstoren-iranische-tanker-teheran-feuert-raketen-ab-c65a88",
+      "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
+      "first_seen": "2026-09-08T22:30:29.000Z",
+      "last_updated": "2026-09-09T06:40:10.664Z",
+      "published_at": "2026-09-09T06:40:10.664Z",
+      "updated_at": "2026-09-09T06:40:10.664Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
+          "title": "Iran-Krieg eskaliert erneut: USA „zerstören“ iranische Tanker – Teheran feuert Raketen ab",
+          "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:30:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "9fcdc90e7854d77cf0912cb91a719b2892ce001f2430d3883033b9ff1726d847",
+          "source_item_id": "e7322df280e3c082ea37fdcd625778091779e66d9192f416e537ef48ac3cd500",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T22:30:29.000Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html",
+          "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
+          "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Teherans Reaktion erfolgt umgehend. Beide Seiten sprechen von Vergeltung. Ein Experte warnt vor einer unkontrollierbaren Eskalationsspirale.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T05:23:56.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "8b383bc6f7b6280c12cc67e4817996b71d8b53f3e15e950091d531c240f7aebc",
+          "source_item_id": "c9f4e9b1082a1a9136064980e47e1a6be6d460e156b9c989b01660757ba164db",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T05:23:56.000Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+          "title": "Iran-Krieg: USA zerstören Tanker - Teheran feuert Raketen ab",
+          "summary": "Im Iran-Krieg nimmt das US-Militär erneut iranische Tanker ins Visier. Die Reaktion Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T03:28:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "0418e229a72a4f347ba757e71f6c87e6bd099511c0e198aecd514bc375402697",
+          "source_item_id": "a97727b129bbc0ba8a0dd5c0ea54c065a7e6ec79d7bac426373506593820e326",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T03:28:00.000Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/ausland/usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-a-dd0e1f5e-44ef-4dbb-a865-df846edc3f9e",
+          "title": "Iran-Krieg: USA beschießen Tanker – Teheran feuert Raketen auf Jordanien",
+          "summary": "Das US-Militär hat eigenen Angaben zufolge fünf iranische Öltanker »zerstört«. Teheran antwortet mit Raketenangriffen auf einen US-Stützpunkt in Jordanien und meldet Angriffe auf zehn Schiffe. Beide Seiten sprechen von Vergeltung.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T02:29:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3fb05d238225af2c034461bb4772e75155a2ec03a65337782e9000298568cc1d",
+          "source_item_id": "2adeb9879b300e4b5a58d5cd3efa171d1dedee095144d52014f1697955295fa2",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T02:29:00.000Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-491857684cc65a88-v1-claim-1",
+          "story_id": "wt-491857684cc65a88",
+          "claim": "Das US-Militär hat nach eigenen Angaben fünf iranische Öltanker zerstört.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+              "excerpt_hash": "2ba7a50eddca91e69f13",
+              "checked_at": "2026-09-09T06:40:10.664Z"
+            },
+            {
+              "source_id": "spiegel-schlagzeilen",
+              "url": "https://www.spiegel.de/ausland/usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-a-dd0e1f5e-44ef-4dbb-a865-df846edc3f9e",
+              "excerpt_hash": "87895eeff1b5b382c1ec",
+              "checked_at": "2026-09-09T06:40:10.664Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T06:40:10.664Z"
+        },
+        {
+          "claim_id": "wt-491857684cc65a88-v1-claim-2",
+          "story_id": "wt-491857684cc65a88",
+          "claim": "Iranische Stellen und Medien berichten von Raketenangriffen als Reaktion auf die US-Angriffe.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+              "excerpt_hash": "29dd4c43e5f965128c07",
+              "checked_at": "2026-09-09T06:40:10.664Z"
+            },
+            {
+              "source_id": "spiegel-schlagzeilen",
+              "url": "https://www.spiegel.de/ausland/usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-a-dd0e1f5e-44ef-4dbb-a865-df846edc3f9e",
+              "excerpt_hash": "87895eeff1b5b382c1ec",
+              "checked_at": "2026-09-09T06:40:10.664Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T06:40:10.664Z"
+        },
+        {
+          "claim_id": "wt-491857684cc65a88-v1-claim-3",
+          "story_id": "wt-491857684cc65a88",
+          "claim": "Das jordanische Militär teilte mit, seine Luftabwehr habe 18 ballistische Raketen abgefangen; zwei weitere seien in unbewohnten Gebieten niedergegangen.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+              "excerpt_hash": "da8d7706d0b4deafe502",
+              "checked_at": "2026-09-09T06:40:10.664Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T06:40:10.664Z"
+        },
+        {
+          "claim_id": "wt-491857684cc65a88-v1-claim-4",
+          "story_id": "wt-491857684cc65a88",
+          "claim": "Nach den Berichten gab es keine Verletzten unter US-Personal und keine Berichte über Verletzte oder Tote in Jordanien.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+              "excerpt_hash": "ce311fccd5549d4aef4b",
+              "checked_at": "2026-09-09T06:40:10.664Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+              "excerpt_hash": "da8d7706d0b4deafe502",
+              "checked_at": "2026-09-09T06:40:10.664Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T06:40:10.664Z"
+        }
+      ],
+      "event_id": "event-535ab9d27abe1bcdee32",
+      "event_first_seen_at": "2026-09-09T00:51:49.494Z",
+      "event_detected_at": "2026-09-09T00:51:49.494Z",
+      "verification_started_at": "2026-09-09T06:39:56.119Z",
+      "publish_ready_at": "2026-09-09T06:40:10.664Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-09T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home",
+            "stern-schlagzeilen",
+            "zdfheute-nachrichten"
+          ],
+          [
+            "spiegel-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "zdfheute-nachrichten"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T06:37:16.460Z",
+        "fingerprint": "40edeffc10f76ac729263cf26d9219be8ce046bcc15081437c14b3359b0fdfae",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfung, ob es unabhängige Primär- oder Amtsbelege zu den zerstörten Tankern gibt.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigte Herkunft und Zahl der betroffenen Schiffe",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-323b78e253199ee7",
+          "announced_at": "2026-09-09T03:28:00.000Z",
+          "follow_up_date": "2026-09-16T06:40:10.664Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfung, ob die Gegenschläge weitere Schäden, Verletzte oder neue militärische Reaktionen auslösen.",
+          "source_id": "spiegel-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Neue Opfer-, Schadens- oder Reaktionsmeldungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-06e8ef7e6dd0d50e",
+          "announced_at": "2026-09-09T02:29:00.000Z",
+          "follow_up_date": "2026-09-16T06:40:10.664Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "6b1fc055181806b1151160fd19f40e106189b67001b4e3bbc82499bed73fc03b",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-09T06:40:10.664Z",
+        "sources": [
+          {
+            "source_id": "zdfheute-nachrichten",
+            "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+            "content_hash": "0418e229a72a4f347ba757e71f6c87e6bd099511c0e198aecd514bc375402697",
+            "excerpt_hash": "3c8eb9695385941114ae64f63341fe6a6416227d8b2b0a630411b09c73de50de",
+            "number_locale": "de",
+            "numbers": [
+              "9.09",
+              "2026",
+              "5",
+              "28",
+              "1",
+              "5.09",
+              "0",
+              "23",
+              "18",
+              "2.09",
+              "2",
+              "29",
+              "30",
+              "21",
+              "14",
+              "58",
+              "25"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Mehrere Nachrichtenmedien berichten übereinstimmend von einer neuen Eskalation zwischen den USA und dem Iran. Nach den Berichten hat das US-Militär eigenen Angaben zufolge fünf iranische Öltanker zerstört.\n\nIm Gegenzug sei von iranischer Seite auf US-Ziele mit Raketen reagiert worden; Jordanien meldete, 18 ballistische Raketen seien abgefangen worden, zwei weitere seien in unbewohnten Gebieten niedergegangen. Offen bleibt, wie unabhängig die zugrunde liegenden Meldungen voneinander sind und ob es Primärbelege außerhalb der berichtenden Medien gibt.",
+      "analysis": {
+        "story_id": "wt-491857684cc65a88",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Mehrere Medien melden neue gegenseitige Angriffe zwischen USA und Iran. Die Angaben zu zerstörten Tankern und abgefangenen Raketen sind noch quellengebunden, aber nicht unabhängig als Primärfakt bestätigt.",
+        "detail_summary": "Der Kern ist eine neue Eskalationsmeldung: US-Stellen sollen fünf iranische Öltanker zerstört haben, danach sollen iranische Kräfte mit Raketen reagiert haben. Jordanien meldete 18 abgefangene ballistische Raketen und zwei Einschläge in unbewohnten Gebieten. Materiell relevant ist das wegen möglicher Folgen für Schifffahrt, regionale Sicherheit und Ölmarkt-Stabilität. Ein belastbarer Wirkpfad ist die Verschärfung des militärischen Gegenschlags mit Risiken für Handel, Preise und weitere Vergeltung. Die Evidenz bleibt aber journalistisch vermittelt; unabhängige Primärbestätigung fehlt in den gelieferten Quellen.",
+        "why_relevant": "Die Meldung beschreibt eine neue, militärisch und wirtschaftlich folgenschwere Zuspitzung im Iran-USA-Konflikt mit möglicher Wirkung auf Schifffahrt, Energiepreise und regionale Sicherheit.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Wenn Gegenschläge und Gegenschläge weitergehen, steigen Sicherheitsrisiken für Besatzungen, Schifffahrt und zivile Infrastruktur; die Lage bleibt offen, die Richtung ist aber klar konflikthaft.",
+          "positive_path": {
+            "mechanism": "Eine begrenzte Abschreckung könnte weitere unmittelbare Angriffe bremsen und kurzfristig Eskalation begrenzen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Vergeltungsangriffe können neue militärische Reaktionen, Störungen der Seewege und weitere Schäden auslösen.",
+            "source_ids": [
+              "zdfheute-nachrichten",
+              "spiegel-schlagzeilen"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Für die Umwelt ist vor allem das Risiko von Zwischenfällen, Lecks oder Störungen in der ölintensiven Seeroute relevant; eingetretene Umweltschäden sind hier aber nicht belegt.",
+          "positive_path": {
+            "mechanism": "Ein schneller Waffenstillstand könnte Transport- und Unfallrisiken in der Region senken.",
+            "source_ids": [
+              "zdfheute-nachrichten",
+              "spiegel-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Militärische Angriffe auf Tanker erhöhen das Risiko von Ölverlusten, Bränden und maritimen Störungen.",
+            "source_ids": [
+              "zdfheute-nachrichten",
+              "spiegel-schlagzeilen"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Direkte demokratische Folgen sind in den Quellen nicht belegt; relevant ist vor allem die Belastung öffentlicher Kontrolle durch Kriegslage, Informationsunsicherheit und mögliche Ausnahmeentscheidungen.",
+          "positive_path": {
+            "mechanism": "Mehr Transparenz über Angriffe und Gegenangriffe kann parlamentarische und öffentliche Kontrolle stärken.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kriegseskalation kann Entscheidungsräume verengen und sachliche Kontrolle durch Sicherheitslogik überlagern.",
+            "source_ids": [
+              "zdfheute-nachrichten",
+              "spiegel-schlagzeilen"
+            ]
+          }
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Meldung hat hohes Eskalationspotenzial, weil sie militärische Gegenschläge, Risiko für die Straße von Hormus und mögliche Marktfolgen verbindet.",
+        "impact_risks": [
+          "weitere militärische Vergeltung",
+          "Gefahr für Schifffahrt und Besatzungen",
+          "Störungen am Ölmarkt",
+          "Fehl- oder Überreaktionen durch unklare Lage"
+        ],
+        "mechanisms": [
+          "militärische Vergeltungsdynamik",
+          "Sicherheitsrisiko auf Seewegen",
+          "Preisschock- und Erwartungseffekte an den Energiemärkten"
+        ],
+        "first_order": [
+          "Angriffe auf Tanker und Raketenangriffe werden gemeldet.",
+          "Luftabwehr fängt Raketen ab, weitere treffen unbewohnte Gebiete."
+        ],
+        "second_order": [
+          "Weitere Gegenschläge werden wahrscheinlicher.",
+          "Schifffahrts- und Versicherungsrisiken können steigen."
+        ],
+        "third_order": [
+          "Die regionale Konfliktordnung kann sich verhärten.",
+          "Energie- und Handelspreise können länger unter Druck geraten."
+        ],
+        "systemic_relevance": "Die Straße von Hormus ist ein systemisch relevanter Engpass; schon begrenzte Angriffe können über Sicherheits- und Preisreaktionen weit über die Region hinaus wirken.",
+        "transformation_potential": "Keine Transformationswirkung im engeren Sinn belegt; die Meldung zeigt eher eine Eskalations- als eine Umsteuerungsdynamik.",
+        "resilience": "Resilienz wäre erhöht, wenn Schutz für zivile Schifffahrt, Deeskalationskanäle und verlässliche Lageaufklärung greifen; dazu liefern die Quellen noch keine belastbaren Belege.",
+        "side_effects": [
+          "höhere Versicherungs- und Transportkosten",
+          "mögliche Umleitung von Schifffahrt",
+          "unsichere Lageberichte und Gegenbehauptungen"
+        ],
+        "uncertainties": [
+          "Ob alle beschriebenen Angriffe unabhängig bestätigt sind",
+          "Ob es Verletzte oder größere Sachschäden gab",
+          "Wie weit die Gegenschläge tatsächlich reichen"
+        ],
+        "evidence_level": "medium",
+        "attribution": "ZDFheute schreibt die Tanker-Zerstörung dem US-Militär zu und nennt Centcom als Quelle; zugleich werden iranische Medien, das jordanische Militär und US-Außenminister Rubio als zugeschriebene Stimmen genannt.",
+        "watch_next": [
+          "Weitere unabhängige Bestätigung der Tankerangriffe",
+          "Meldungen über Verletzte, Schäden oder neue Gegenschläge",
+          "Reaktionen an Öl- und Schifffahrtsmärkten"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "independent_reports",
+          "duplicate_status": "new_story",
+          "rationale": "Neue, materielle Eskalationsmeldung mit möglicher Wirkung auf Sicherheit, Schifffahrt und Energiepreise; trotz journalistischer Vermittlung liegt genug substanzielle Neuigkeit für eine Erstmeldung vor."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-09T06:37:16.460Z",
+        "media_trigger_fingerprint": "35048f15d4b6ce134dba0b6c503e934dc1b97cc918a9669311f6903c064a339b",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "actor_statement_in_prominent_position"
+          ],
+          "matched_terms": [],
+          "source_count": 4,
+          "comparable_source_count": 4,
+          "fingerprint": "35048f15d4b6ce134dba0b6c503e934dc1b97cc918a9669311f6903c064a339b",
+          "content_fingerprint": "d97b26ec8efccfbffff81126bd4b3170b452b32c2a42d1aceb8b27a8ff60c72f",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-09T06:40:10.664Z",
+          "content_hash": "6b1fc055181806b1151160fd19f40e106189b67001b4e3bbc82499bed73fc03b",
+          "source_summary": "Mehrere Nachrichtenmedien berichten übereinstimmend von einer neuen Eskalation zwischen den USA und dem Iran. Nach den Berichten hat das US-Militär eigenen Angaben zufolge fünf iranische Öltanker zerstört.\n\nIm Gegenzug sei von iranischer Seite auf US-Ziele mit Raketen reagiert worden; Jordanien meldete, 18 ballistische Raketen seien abgefangen worden, zwei weitere seien in unbewohnten Gebieten niedergegangen. Offen bleibt, wie unabhängig die zugrunde liegenden Meldungen voneinander sind und ob es Primärbelege außerhalb der berichtenden Medien gibt.",
+          "analysis": {
+            "story_id": "wt-491857684cc65a88",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Mehrere Medien melden neue gegenseitige Angriffe zwischen USA und Iran. Die Angaben zu zerstörten Tankern und abgefangenen Raketen sind noch quellengebunden, aber nicht unabhängig als Primärfakt bestätigt.",
+            "detail_summary": "Der Kern ist eine neue Eskalationsmeldung: US-Stellen sollen fünf iranische Öltanker zerstört haben, danach sollen iranische Kräfte mit Raketen reagiert haben. Jordanien meldete 18 abgefangene ballistische Raketen und zwei Einschläge in unbewohnten Gebieten. Materiell relevant ist das wegen möglicher Folgen für Schifffahrt, regionale Sicherheit und Ölmarkt-Stabilität. Ein belastbarer Wirkpfad ist die Verschärfung des militärischen Gegenschlags mit Risiken für Handel, Preise und weitere Vergeltung. Die Evidenz bleibt aber journalistisch vermittelt; unabhängige Primärbestätigung fehlt in den gelieferten Quellen.",
+            "why_relevant": "Die Meldung beschreibt eine neue, militärisch und wirtschaftlich folgenschwere Zuspitzung im Iran-USA-Konflikt mit möglicher Wirkung auf Schifffahrt, Energiepreise und regionale Sicherheit.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Wenn Gegenschläge und Gegenschläge weitergehen, steigen Sicherheitsrisiken für Besatzungen, Schifffahrt und zivile Infrastruktur; die Lage bleibt offen, die Richtung ist aber klar konflikthaft.",
+              "positive_path": {
+                "mechanism": "Eine begrenzte Abschreckung könnte weitere unmittelbare Angriffe bremsen und kurzfristig Eskalation begrenzen.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Vergeltungsangriffe können neue militärische Reaktionen, Störungen der Seewege und weitere Schäden auslösen.",
+                "source_ids": [
+                  "zdfheute-nachrichten",
+                  "spiegel-schlagzeilen"
+                ]
+              }
+            },
+            "planet": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Für die Umwelt ist vor allem das Risiko von Zwischenfällen, Lecks oder Störungen in der ölintensiven Seeroute relevant; eingetretene Umweltschäden sind hier aber nicht belegt.",
+              "positive_path": {
+                "mechanism": "Ein schneller Waffenstillstand könnte Transport- und Unfallrisiken in der Region senken.",
+                "source_ids": [
+                  "zdfheute-nachrichten",
+                  "spiegel-schlagzeilen"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Militärische Angriffe auf Tanker erhöhen das Risiko von Ölverlusten, Bränden und maritimen Störungen.",
+                "source_ids": [
+                  "zdfheute-nachrichten",
+                  "spiegel-schlagzeilen"
+                ]
+              }
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Direkte demokratische Folgen sind in den Quellen nicht belegt; relevant ist vor allem die Belastung öffentlicher Kontrolle durch Kriegslage, Informationsunsicherheit und mögliche Ausnahmeentscheidungen.",
+              "positive_path": {
+                "mechanism": "Mehr Transparenz über Angriffe und Gegenangriffe kann parlamentarische und öffentliche Kontrolle stärken.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Kriegseskalation kann Entscheidungsräume verengen und sachliche Kontrolle durch Sicherheitslogik überlagern.",
+                "source_ids": [
+                  "zdfheute-nachrichten",
+                  "spiegel-schlagzeilen"
+                ]
+              }
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Meldung hat hohes Eskalationspotenzial, weil sie militärische Gegenschläge, Risiko für die Straße von Hormus und mögliche Marktfolgen verbindet.",
+            "impact_risks": [
+              "weitere militärische Vergeltung",
+              "Gefahr für Schifffahrt und Besatzungen",
+              "Störungen am Ölmarkt",
+              "Fehl- oder Überreaktionen durch unklare Lage"
+            ],
+            "mechanisms": [
+              "militärische Vergeltungsdynamik",
+              "Sicherheitsrisiko auf Seewegen",
+              "Preisschock- und Erwartungseffekte an den Energiemärkten"
+            ],
+            "first_order": [
+              "Angriffe auf Tanker und Raketenangriffe werden gemeldet.",
+              "Luftabwehr fängt Raketen ab, weitere treffen unbewohnte Gebiete."
+            ],
+            "second_order": [
+              "Weitere Gegenschläge werden wahrscheinlicher.",
+              "Schifffahrts- und Versicherungsrisiken können steigen."
+            ],
+            "third_order": [
+              "Die regionale Konfliktordnung kann sich verhärten.",
+              "Energie- und Handelspreise können länger unter Druck geraten."
+            ],
+            "systemic_relevance": "Die Straße von Hormus ist ein systemisch relevanter Engpass; schon begrenzte Angriffe können über Sicherheits- und Preisreaktionen weit über die Region hinaus wirken.",
+            "transformation_potential": "Keine Transformationswirkung im engeren Sinn belegt; die Meldung zeigt eher eine Eskalations- als eine Umsteuerungsdynamik.",
+            "resilience": "Resilienz wäre erhöht, wenn Schutz für zivile Schifffahrt, Deeskalationskanäle und verlässliche Lageaufklärung greifen; dazu liefern die Quellen noch keine belastbaren Belege.",
+            "side_effects": [
+              "höhere Versicherungs- und Transportkosten",
+              "mögliche Umleitung von Schifffahrt",
+              "unsichere Lageberichte und Gegenbehauptungen"
+            ],
+            "uncertainties": [
+              "Ob alle beschriebenen Angriffe unabhängig bestätigt sind",
+              "Ob es Verletzte oder größere Sachschäden gab",
+              "Wie weit die Gegenschläge tatsächlich reichen"
+            ],
+            "evidence_level": "medium",
+            "attribution": "ZDFheute schreibt die Tanker-Zerstörung dem US-Militär zu und nennt Centcom als Quelle; zugleich werden iranische Medien, das jordanische Militär und US-Außenminister Rubio als zugeschriebene Stimmen genannt.",
+            "watch_next": [
+              "Weitere unabhängige Bestätigung der Tankerangriffe",
+              "Meldungen über Verletzte, Schäden oder neue Gegenschläge",
+              "Reaktionen an Öl- und Schifffahrtsmärkten"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "independent_reports",
+              "duplicate_status": "new_story",
+              "rationale": "Neue, materielle Eskalationsmeldung mit möglicher Wirkung auf Sicherheit, Schifffahrt und Energiepreise; trotz journalistischer Vermittlung liegt genug substanzielle Neuigkeit für eine Erstmeldung vor."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-09T06:37:16.460Z",
+            "media_trigger_fingerprint": "35048f15d4b6ce134dba0b6c503e934dc1b97cc918a9669311f6903c064a339b",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "actor_statement_in_prominent_position"
+              ],
+              "matched_terms": [],
+              "source_count": 4,
+              "comparable_source_count": 4,
+              "fingerprint": "35048f15d4b6ce134dba0b6c503e934dc1b97cc918a9669311f6903c064a339b",
+              "content_fingerprint": "d97b26ec8efccfbffff81126bd4b3170b452b32c2a42d1aceb8b27a8ff60c72f",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-491857684cc65a88-v1-claim-1",
+              "story_id": "wt-491857684cc65a88",
+              "claim": "Das US-Militär hat nach eigenen Angaben fünf iranische Öltanker zerstört.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+                  "excerpt_hash": "2ba7a50eddca91e69f13",
+                  "checked_at": "2026-09-09T06:40:10.664Z"
+                },
+                {
+                  "source_id": "spiegel-schlagzeilen",
+                  "url": "https://www.spiegel.de/ausland/usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-a-dd0e1f5e-44ef-4dbb-a865-df846edc3f9e",
+                  "excerpt_hash": "87895eeff1b5b382c1ec",
+                  "checked_at": "2026-09-09T06:40:10.664Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T06:40:10.664Z"
+            },
+            {
+              "claim_id": "wt-491857684cc65a88-v1-claim-2",
+              "story_id": "wt-491857684cc65a88",
+              "claim": "Iranische Stellen und Medien berichten von Raketenangriffen als Reaktion auf die US-Angriffe.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+                  "excerpt_hash": "29dd4c43e5f965128c07",
+                  "checked_at": "2026-09-09T06:40:10.664Z"
+                },
+                {
+                  "source_id": "spiegel-schlagzeilen",
+                  "url": "https://www.spiegel.de/ausland/usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-a-dd0e1f5e-44ef-4dbb-a865-df846edc3f9e",
+                  "excerpt_hash": "87895eeff1b5b382c1ec",
+                  "checked_at": "2026-09-09T06:40:10.664Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T06:40:10.664Z"
+            },
+            {
+              "claim_id": "wt-491857684cc65a88-v1-claim-3",
+              "story_id": "wt-491857684cc65a88",
+              "claim": "Das jordanische Militär teilte mit, seine Luftabwehr habe 18 ballistische Raketen abgefangen; zwei weitere seien in unbewohnten Gebieten niedergegangen.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+                  "excerpt_hash": "da8d7706d0b4deafe502",
+                  "checked_at": "2026-09-09T06:40:10.664Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T06:40:10.664Z"
+            },
+            {
+              "claim_id": "wt-491857684cc65a88-v1-claim-4",
+              "story_id": "wt-491857684cc65a88",
+              "claim": "Nach den Berichten gab es keine Verletzten unter US-Personal und keine Berichte über Verletzte oder Tote in Jordanien.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+                  "excerpt_hash": "ce311fccd5549d4aef4b",
+                  "checked_at": "2026-09-09T06:40:10.664Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+                  "excerpt_hash": "da8d7706d0b4deafe502",
+                  "checked_at": "2026-09-09T06:40:10.664Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T06:40:10.664Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
+              "content_hash": "9fcdc90e7854d77cf0912cb91a719b2892ce001f2430d3883033b9ff1726d847"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html",
+              "content_hash": "8b383bc6f7b6280c12cc67e4817996b71d8b53f3e15e950091d531c240f7aebc"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+              "content_hash": "0418e229a72a4f347ba757e71f6c87e6bd099511c0e198aecd514bc375402697"
+            },
+            {
+              "source_id": "spiegel-schlagzeilen",
+              "url": "https://www.spiegel.de/ausland/usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-a-dd0e1f5e-44ef-4dbb-a865-df846edc3f9e",
+              "content_hash": "3fb05d238225af2c034461bb4772e75155a2ec03a65337782e9000298568cc1d"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-09T06:40:10.664Z",
+            "sources": [
+              {
+                "source_id": "zdfheute-nachrichten",
+                "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+                "content_hash": "0418e229a72a4f347ba757e71f6c87e6bd099511c0e198aecd514bc375402697",
+                "excerpt_hash": "3c8eb9695385941114ae64f63341fe6a6416227d8b2b0a630411b09c73de50de",
+                "number_locale": "de",
+                "numbers": [
+                  "9.09",
+                  "2026",
+                  "5",
+                  "28",
+                  "1",
+                  "5.09",
+                  "0",
+                  "23",
+                  "18",
+                  "2.09",
+                  "2",
+                  "29",
+                  "30",
+                  "21",
+                  "14",
+                  "58",
+                  "25"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-09T06:40:10.664Z",
+          "source_count": 4
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-09T06:57:33.097Z"
+      }
+    },
+    {
+      "story_id": "wt-b209d31e27744101",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "3d2d2cbfb60b4c35f5a7c82eec1dba10f99bfad945f83df7672249395416b583",
+        "first_failed_at": "2026-09-09T06:37:16.460Z",
+        "failed_at": "2026-09-09T06:37:16.460Z",
+        "retry_after": "2026-09-09T06:52:16.460Z",
+        "retry_count": 1
+      },
+      "slug": "rubio-hails-colombia-s-new-pro-trump-leader-de-la-espriella-on-first-stop-of-latin-ameri-744101",
+      "title": "Rubio hails Colombia's new pro-Trump leader De la Espriella on first stop of Latin American tour",
+      "first_seen": "2026-09-09T06:27:22.000Z",
+      "last_updated": "2026-09-09T06:27:22.000Z",
+      "topic": [
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/americas/20260909-rubio-hails-colombia-new-pro-trump-leader-de-la-espriella-first-stop-of-latin-american-tour",
+          "title": "Rubio hails Colombia's new pro-Trump leader De la Espriella on first stop of Latin American tour",
+          "summary": "US Secretary of State Marco Rubio pledged closer security cooperation with Bogota on the first stop of his three-nation tour of pro-Washington Latin American nations. Rubio hailed the election of Colombian President Abelardo De La Espriella as part of a growing alignment with US interests across the Western Hemisphere.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T06:27:22.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "b7a36112299f25813e90cf761301f99853fd5d76943488e10b2791d04233197c",
+          "source_item_id": "5ea929df5bfec2892117a2db0a01d779cd741997a3c4f27ec90ae0d00fbc907d",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T06:27:22.000Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b209d31e27744101-claim-01",
+          "story_id": "wt-b209d31e27744101",
+          "claim": "Rubio hails Colombia's new pro-Trump leader De la Espriella on first stop of Latin American tour: US Secretary of State Marco Rubio pledged closer security cooperation with Bogota on the first stop of his three-nation tour of pro-Washington Latin American nations. Rubio hailed the election of Colombian President Abelardo De La Espriella as part of a growing alignment with US interests across the Western Hemisphere.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T06:37:16.460Z"
+        }
+      ],
+      "content_hash": "91eaa0ce061c92d5e47c8f6f6b224e60c3fabb47c83f152d8c003647c2c08474",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_DIRECTION_BASIS_INVALID:human",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-09T06:52:16.460Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-09T06:37:16.460Z",
+      "event_first_seen_at": "2026-09-09T06:37:16.460Z",
+      "event_detected_at": "2026-09-09T06:37:16.460Z",
+      "event_id": "event-707fb1df8f1ac1305c05",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 9.907666666666668,
+        "detection_delay_minutes": 9.907666666666668,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T06:37:16.460Z",
+        "fingerprint": "32dcc5d07ed745f553ef458d203d974e713a3414ce617e380c35f25fa3dcf731",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-7e2c82a0ae7a9962",
       "slug": "schulbegleitung-und-co-zahl-der-eingliederungshilfen-fur-junge-menschen-mit-seelischer-b-7a9962",
@@ -664,6 +1627,213 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-09T06:38:56.691Z"
+      }
+    },
+    {
+      "story_id": "wt-28d3e43ca9705933",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "0ab090bf4896b231552db3221e07de4e7fbb76fe79cd7229b9bc29f354748e6b",
+        "first_failed_at": "2026-09-09T06:37:16.460Z",
+        "failed_at": "2026-09-09T06:37:16.460Z",
+        "retry_after": "2026-09-09T06:52:16.460Z",
+        "retry_count": 1
+      },
+      "slug": "usa-zerstoren-funf-iranische-oltanker-705933",
+      "title": "USA zerstören fünf iranische Öltanker",
+      "first_seen": "2026-09-09T03:15:06.000Z",
+      "last_updated": "2026-09-09T06:16:00.000Z",
+      "topic": [
+        "Politik",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/ausland/asien/usa-iran-krieg-angriff-tanker-100.html",
+          "title": "USA zerstören fünf iranische Öltanker",
+          "summary": "US-Streitkräfte haben nach eigenen Angaben fünf iranische Öltanker zerstört. Die Angriffe seien eine Vergeltung für frühere iranische Attacken gewesen. Iran reagierte mit Raketena…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T03:15:06.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "828f60b14c93a9f4ee83fac4d0cb566e972f7a206be4afa4fe3290db4a96a6e4",
+          "source_item_id": "2b201f8fe155e76cd652f4fdb0c188e8ccc57e1a234ad43c2dc8698a86bac245",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T03:15:06.000Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr"
+        },
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/-Nachricten-im-Iran-Krieg-/!6211636",
+          "title": "+++ Nachricten im Iran-Krieg +++: USA zerstören fünf iranische Öltanker",
+          "summary": "US-Streitkräfte haben nach eigenen Angaben fünf iranische Öltanker zerstört. Der Iran reagierte mit Raketenangriffen auf US-Ziele in Jordanien. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T06:16:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "07e68e6401cc16c9512a0cdf37c34a2012802041fb715b5cf4df9a2bf777c2b8",
+          "source_item_id": "bb10f27c603dae893cec0e60d42ca15835d80d3351653113aacd7b213620c3fb",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T06:16:00.000Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-28d3e43ca9705933-claim-01",
+          "story_id": "wt-28d3e43ca9705933",
+          "claim": "USA zerstören fünf iranische Öltanker: US-Streitkräfte haben nach eigenen Angaben fünf iranische Öltanker zerstört. Die Angriffe seien eine Vergeltung für frühere iranische Attacken gewesen. Iran reagierte mit Raketena…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T06:37:16.460Z"
+        },
+        {
+          "claim_id": "wt-28d3e43ca9705933-claim-02",
+          "story_id": "wt-28d3e43ca9705933",
+          "claim": "+++ Nachricten im Iran-Krieg +++: USA zerstören fünf iranische Öltanker: US-Streitkräfte haben nach eigenen Angaben fünf iranische Öltanker zerstört. Der Iran reagierte mit Raketenangriffen auf US-Ziele in Jordanien. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T06:37:16.460Z"
+        }
+      ],
+      "content_hash": "86045380e276b5fd559e29e9b2dc91f60a377eeb64615bf9c0b88e2f1269f228",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T06:52:16.460Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T06:37:16.460Z",
+      "event_first_seen_at": "2026-09-09T03:22:22.700Z",
+      "event_detected_at": "2026-09-09T03:22:22.700Z",
+      "event_id": "event-5c5ac6f89b7886552074",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik",
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 21.274333333333335,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 194.896,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T06:37:16.460Z",
+        "fingerprint": "f42449e0e1e4e4dbb5bcebfa6b2420d8d46db4ce27d2e177ac7ac1f4b4afc9e6",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T06:37:16.460Z",
+      "rejection": {
+        "at": "2026-09-09T06:37:16.460Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -5348,10 +6518,10 @@
       "story_id": "wt-6d5094178ebca659",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "e404870fef92c60c71f24e21ed6c15aa2fc6aed87fc62e13d4a6fb85fbcc3462",
-        "first_failed_at": "2026-09-09T06:02:35.868Z",
-        "failed_at": "2026-09-09T06:02:35.868Z",
-        "retry_after": "2026-09-09T06:17:35.868Z",
+        "fingerprint": "e7281addb8f7c141090eae4472aa056aa5edf1e01b8d1e2d573c58c94dd816db",
+        "first_failed_at": "2026-09-09T06:37:16.460Z",
+        "failed_at": "2026-09-09T06:37:16.460Z",
+        "retry_after": "2026-09-09T06:52:16.460Z",
         "retry_count": 1
       },
       "slug": "usa-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-einwanderungsbehorde-ce-bca659",
@@ -5402,7 +6572,7 @@
           "title": "USA - Gericht stoppt Weitergabe von Migranten-Steuerdaten an Einwanderungsbehörde ICE",
           "summary": "Die umstrittene US-Einwanderungsbehörde ICE darf keinen Zugriff mehr auf vertrauliche Steuerzahlerdaten von Migranten ohne Aufenthaltstitel erhalten.",
           "source_type": "media_rss",
-          "published_at": "2026-09-09T05:50:32.000Z",
+          "published_at": "2026-09-09T06:27:20.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -5418,8 +6588,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-09T05:50:32.000Z",
-          "ingested_at": "2026-09-09T05:52:18.628Z",
+          "source_published_at": "2026-09-09T06:27:20.000Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -5448,7 +6618,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         },
         {
           "claim_id": "wt-6d5094178ebca659-claim-02",
@@ -5468,20 +6638,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
       "content_hash": "541c414292f5586aca1234f80bc37b7971191634db83dd443e1524b8988684fb",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-09T06:52:16.460Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-09T01:07:03.528Z",
       "event_detected_at": "2026-09-09T01:07:03.528Z",
       "event_id": "event-56a34318e130bae30a62",
@@ -5514,20 +6686,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 31.771866666666668,
+        "source_age_minutes": 9.941,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.2464,
+        "queue_age_minutes": 330.2155333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
+        "news_freshness_score": 98,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "fingerprint": "86aaf0da47ef1bebe7afa273356e3a790fd53986f1189365479b4bb4e8b5a7c1",
         "issue_codes": [],
         "warning_codes": []
@@ -5683,6 +6855,14 @@
     },
     {
       "story_id": "wt-2e050585c89e5353",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "d448dc3e8ac564bfa6307e27bac81c8ec35b08584f747590d81e82aff46d506f",
+        "first_failed_at": "2026-09-09T06:37:16.460Z",
+        "failed_at": "2026-09-09T06:37:16.460Z",
+        "retry_after": "2026-09-09T06:52:16.460Z",
+        "retry_count": 1
+      },
       "slug": "energieversorgung-nordstream-wieder-anschalten-bringt-das-was-9e5353",
       "title": "Energieversorgung: Nordstream wieder anschalten: Bringt das was?",
       "first_seen": "2026-09-09T04:00:09.000Z",
@@ -5778,7 +6958,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         },
         {
           "claim_id": "wt-2e050585c89e5353-claim-02",
@@ -5798,20 +6978,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
       "content_hash": "b605d6093fbe3e34ac9d293ae1fdf9454c86d57a368868d9102a25179e13ccaf",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-09T06:52:16.460Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-2d19c50a93681915bd8a",
@@ -5848,23 +7028,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 92.38853333333333,
+        "source_age_minutes": 107.35766666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 119.93858333333333,
+        "queue_age_minutes": 134.90771666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 81,
-        "freshness_warning": null
+        "news_freshness_score": 78,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "fingerprint": "1acad146419dee89f7cf7693369c367516605cf440f24de33b82e05779093485",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T06:37:16.460Z",
+      "rejection": {
+        "at": "2026-09-09T06:37:16.460Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -6035,9 +7227,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "3f5fc4aea95676acc1df4dc5c03a64c28ff2a1d745bd478df34e9775b875aa2c",
         "first_failed_at": "2026-09-09T05:52:18.628Z",
-        "failed_at": "2026-09-09T05:52:18.628Z",
-        "retry_after": "2026-09-09T06:07:18.628Z",
-        "retry_count": 1
+        "failed_at": "2026-09-09T06:37:16.460Z",
+        "retry_after": "2026-09-09T07:07:16.460Z",
+        "retry_count": 2
       },
       "slug": "ein-sommer-des-standigen-wartens-6f2bd2",
       "title": "Ein Sommer des ständigen Wartens",
@@ -6071,7 +7263,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T04:41:00.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -6100,20 +7292,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
       "content_hash": "98b6faebaef4daca9a90f0a6d3f1ce30557151be6187ae81cb6b32a90c002b46",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_DIRECTION_BASIS_INVALID:democracy"
+      ],
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-09T07:07:16.460Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-09T04:52:17.802Z",
       "event_detected_at": "2026-09-09T04:52:17.802Z",
       "event_id": "event-d776312b7e675220ef37",
@@ -6146,20 +7340,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 101.3052,
+        "source_age_minutes": 116.27433333333333,
         "detection_delay_minutes": 11.2967,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 90.0085,
+        "queue_age_minutes": 104.97763333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 79,
+        "news_freshness_score": 76,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "fingerprint": "e8c9dda8ed9bb28111f50f126d90d3d8eeb042c8e52bc8e0ed00da37e78db0c9",
         "issue_codes": [],
         "warning_codes": []
@@ -6827,400 +8021,6 @@
       }
     },
     {
-      "story_id": "wt-491857684cc65a88",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "f365414564f31fab6d96c70435b7a385bd1475ec22abdd3c83944c4294e5bfa1",
-        "first_failed_at": "2026-09-09T05:52:18.628Z",
-        "failed_at": "2026-09-09T05:52:18.628Z",
-        "retry_after": "2026-09-09T06:07:18.628Z",
-        "retry_count": 1
-      },
-      "slug": "iran-krieg-usa-zerstoren-iranische-tanker-teheran-feuert-raketen-ab-c65a88",
-      "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
-      "first_seen": "2026-09-08T22:30:29.000Z",
-      "last_updated": "2026-09-09T03:28:00.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
-          "title": "Iran-Krieg eskaliert erneut: USA „zerstören“ iranische Tanker – Teheran feuert Raketen ab",
-          "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T22:30:29.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "9fcdc90e7854d77cf0912cb91a719b2892ce001f2430d3883033b9ff1726d847",
-          "source_item_id": "e7322df280e3c082ea37fdcd625778091779e66d9192f416e537ef48ac3cd500",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T22:30:29.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html",
-          "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
-          "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Teherans Reaktion erfolgt umgehend. Beide Seiten sprechen von Vergeltung. Ein Experte warnt vor einer unkontrollierbaren Eskalationsspirale.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T05:23:56.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "8b383bc6f7b6280c12cc67e4817996b71d8b53f3e15e950091d531c240f7aebc",
-          "source_item_id": "c9f4e9b1082a1a9136064980e47e1a6be6d460e156b9c989b01660757ba164db",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T05:23:56.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "zdfheute-nachrichten",
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
-          "title": "Iran-Krieg: USA zerstören Tanker - Teheran feuert Raketen ab",
-          "summary": "Im Iran-Krieg nimmt das US-Militär erneut iranische Tanker ins Visier. Die Reaktion Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T03:28:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "0418e229a72a4f347ba757e71f6c87e6bd099511c0e198aecd514bc375402697",
-          "source_item_id": "a97727b129bbc0ba8a0dd5c0ea54c065a7e6ec79d7bac426373506593820e326",
-          "publisher_id": "zdfheute",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T03:28:00.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-491857684cc65a88-claim-01",
-          "story_id": "wt-491857684cc65a88",
-          "claim": "Iran-Krieg eskaliert erneut: USA „zerstören“ iranische Tanker – Teheran feuert Raketen ab: Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
-        },
-        {
-          "claim_id": "wt-491857684cc65a88-claim-02",
-          "story_id": "wt-491857684cc65a88",
-          "claim": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab: Wieder nimmt das US-Militär iranische Tanker ins Visier. Teherans Reaktion erfolgt umgehend. Beide Seiten sprechen von Vergeltung. Ein Experte warnt vor einer unkontrollierbaren Eskalationsspirale.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
-        },
-        {
-          "claim_id": "wt-491857684cc65a88-claim-03",
-          "story_id": "wt-491857684cc65a88",
-          "claim": "Iran-Krieg: USA zerstören Tanker - Teheran feuert Raketen ab: Im Iran-Krieg nimmt das US-Militär erneut iranische Tanker ins Visier. Die Reaktion Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "zdfheute-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
-        }
-      ],
-      "content_hash": "81325daf6d891963fcfb412455c2c86d65192df96987b433c34a08f1531e1501",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
-      "event_first_seen_at": "2026-09-09T00:51:49.494Z",
-      "event_detected_at": "2026-09-09T00:51:49.494Z",
-      "event_id": "event-535ab9d27abe1bcdee32",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 58.37186666666667,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 330.4803,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 88,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
-        "fingerprint": "dcc8d88dc95b6793f26a805bf8d9992cf9d7c159012d659779a2582141444630",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-28d3e43ca9705933",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "0faa12c5acbab16ae64093ca1a9640b5041f2665c8c74c1b3d43320f960b912d",
-        "first_failed_at": "2026-09-09T05:52:18.628Z",
-        "failed_at": "2026-09-09T05:52:18.628Z",
-        "retry_after": "2026-09-09T06:07:18.628Z",
-        "retry_count": 1
-      },
-      "slug": "usa-zerstoren-funf-iranische-oltanker-705933",
-      "title": "USA zerstören fünf iranische Öltanker",
-      "first_seen": "2026-09-09T03:15:06.000Z",
-      "last_updated": "2026-09-09T03:15:06.000Z",
-      "topic": [
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesschau-access",
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/ausland/asien/usa-iran-krieg-angriff-tanker-100.html",
-          "title": "USA zerstören fünf iranische Öltanker",
-          "summary": "US-Streitkräfte haben nach eigenen Angaben fünf iranische Öltanker zerstört. Die Angriffe seien eine Vergeltung für frühere iranische Attacken gewesen. Iran reagierte mit Raketena…",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T03:15:06.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "828f60b14c93a9f4ee83fac4d0cb566e972f7a206be4afa4fe3290db4a96a6e4",
-          "source_item_id": "2b201f8fe155e76cd652f4fdb0c188e8ccc57e1a234ad43c2dc8698a86bac245",
-          "publisher_id": "tagesschau",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T03:15:06.000Z",
-          "ingested_at": "2026-09-09T05:52:18.628Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "collection_source_id": "swr-aktuell",
-          "collection_publisher_id": "swr"
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-28d3e43ca9705933-claim-01",
-          "story_id": "wt-28d3e43ca9705933",
-          "claim": "USA zerstören fünf iranische Öltanker: US-Streitkräfte haben nach eigenen Angaben fünf iranische Öltanker zerstört. Die Angriffe seien eine Vergeltung für frühere iranische Attacken gewesen. Iran reagierte mit Raketena…",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesschau-access",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T05:52:18.628Z"
-        }
-      ],
-      "content_hash": "d0510ff547a135ecbbd24f74a84bc276935a8dbb7855610159240570607f2908",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-09T06:07:18.628Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-09T05:52:18.628Z",
-      "event_first_seen_at": "2026-09-09T03:22:22.700Z",
-      "event_detected_at": "2026-09-09T03:22:22.700Z",
-      "event_id": "event-5c5ac6f89b7886552074",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 157.21046666666666,
-        "detection_delay_minutes": 7.278333333333333,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 149.93213333333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 67,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-09T05:52:18.628Z",
-        "fingerprint": "67c89e78c307237eef95ce3fbd44b6f9ba5384aac8f7bc9860fba9334b1f90e2",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-09T05:52:18.628Z",
-      "rejection": {
-        "at": "2026-09-09T05:52:18.628Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
       "story_id": "wt-216e18ff9cf6d032",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -7774,26 +8574,34 @@
     },
     {
       "story_id": "wt-bc529033a872d25e",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "15bb5d99dc6f40b167cc59728c481c04ad8cf8c8009189a8de8bcdc0faf8372a",
+        "first_failed_at": "2026-09-09T06:37:16.460Z",
+        "failed_at": "2026-09-09T06:37:16.460Z",
+        "retry_after": "2026-09-09T06:52:16.460Z",
+        "retry_count": 1
+      },
       "slug": "usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-72d25e",
       "title": "USA beschießen iranische Tanker – Teheran feuert Raketen auf Jordanien",
       "first_seen": "2026-09-09T02:29:00.000Z",
       "last_updated": "2026-09-09T02:29:00.000Z",
       "topic": [
-        "Politik"
+        "Geopolitik"
       ],
       "sources": [
         {
           "source_id": "spiegel-schlagzeilen",
           "publisher": "DER SPIEGEL",
           "url": "https://www.spiegel.de/ausland/usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-a-dd0e1f5e-44ef-4dbb-a865-df846edc3f9e",
-          "title": "USA beschießen iranische Tanker – Teheran feuert Raketen auf Jordanien",
+          "title": "Iran-Krieg: USA beschießen Tanker – Teheran feuert Raketen auf Jordanien",
           "summary": "Das US-Militär hat eigenen Angaben zufolge fünf iranische Öltanker »zerstört«. Teheran antwortet mit Raketenangriffen auf einen US-Stützpunkt in Jordanien und meldet Angriffe auf zehn Schiffe. Beide Seiten sprechen von Vergeltung.",
           "source_type": "media_rss",
           "published_at": "2026-09-09T02:29:00.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "40a964397ef5bd94d0c9a8426299957cb8d6acabeab4992ed2540c2805b29797",
+          "content_hash": "3fb05d238225af2c034461bb4772e75155a2ec03a65337782e9000298568cc1d",
           "source_item_id": "2adeb9879b300e4b5a58d5cd3efa171d1dedee095144d52014f1697955295fa2",
           "publisher_id": "spiegel",
           "publisher_kind": "journalism",
@@ -7806,11 +8614,110 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T02:29:00.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
             "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html",
+          "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
+          "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Teherans Reaktion erfolgt umgehend. Beide Seiten sprechen von Vergeltung. Ein Experte warnt vor einer unkontrollierbaren Eskalationsspirale.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T05:23:56.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "8b383bc6f7b6280c12cc67e4817996b71d8b53f3e15e950091d531c240f7aebc",
+          "source_item_id": "c9f4e9b1082a1a9136064980e47e1a6be6d460e156b9c989b01660757ba164db",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T05:23:56.000Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
+          "title": "Iran-Krieg eskaliert erneut: USA „zerstören“ iranische Tanker – Teheran feuert Raketen ab",
+          "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:30:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "9fcdc90e7854d77cf0912cb91a719b2892ce001f2430d3883033b9ff1726d847",
+          "source_item_id": "e7322df280e3c082ea37fdcd625778091779e66d9192f416e537ef48ac3cd500",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T22:30:29.000Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+          "title": "Iran-Krieg: USA zerstören Tanker - Teheran feuert Raketen ab",
+          "summary": "Im Iran-Krieg nimmt das US-Militär erneut iranische Tanker ins Visier. Die Reaktion Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T03:28:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "0418e229a72a4f347ba757e71f6c87e6bd099511c0e198aecd514bc375402697",
+          "source_item_id": "a97727b129bbc0ba8a0dd5c0ea54c065a7e6ec79d7bac426373506593820e326",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T03:28:00.000Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:zdfheute",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
@@ -7820,7 +8727,7 @@
         {
           "claim_id": "wt-bc529033a872d25e-claim-01",
           "story_id": "wt-bc529033a872d25e",
-          "claim": "USA beschießen iranische Tanker – Teheran feuert Raketen auf Jordanien: Das US-Militär hat eigenen Angaben zufolge fünf iranische Öltanker »zerstört«. Teheran antwortet mit Raketenangriffen auf einen US-Stützpunkt in Jordanien und meldet Angriffe auf zehn Schiffe. Beide Seiten sprechen von Vergeltung.",
+          "claim": "Iran-Krieg: USA beschießen Tanker – Teheran feuert Raketen auf Jordanien: Das US-Militär hat eigenen Angaben zufolge fünf iranische Öltanker »zerstört«. Teheran antwortet mit Raketenangriffen auf einen US-Stützpunkt in Jordanien und meldet Angriffe auf zehn Schiffe. Beide Seiten sprechen von Vergeltung.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "spiegel-schlagzeilen",
           "source_function": "journalistic_report",
@@ -7835,20 +8742,82 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
+        },
+        {
+          "claim_id": "wt-bc529033a872d25e-claim-02",
+          "story_id": "wt-bc529033a872d25e",
+          "claim": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab: Wieder nimmt das US-Militär iranische Tanker ins Visier. Teherans Reaktion erfolgt umgehend. Beide Seiten sprechen von Vergeltung. Ein Experte warnt vor einer unkontrollierbaren Eskalationsspirale.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T06:37:16.460Z"
+        },
+        {
+          "claim_id": "wt-bc529033a872d25e-claim-03",
+          "story_id": "wt-bc529033a872d25e",
+          "claim": "Iran-Krieg eskaliert erneut: USA „zerstören“ iranische Tanker – Teheran feuert Raketen ab: Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T06:37:16.460Z"
+        },
+        {
+          "claim_id": "wt-bc529033a872d25e-claim-04",
+          "story_id": "wt-bc529033a872d25e",
+          "claim": "Iran-Krieg: USA zerstören Tanker - Teheran feuert Raketen ab: Im Iran-Krieg nimmt das US-Militär erneut iranische Tanker ins Visier. Die Reaktion Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "zdfheute-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
-      "content_hash": "edb9c872bee6b225f24f5deb7553e176e149653733629d8c41c1a1b46bb76828",
+      "content_hash": "6b1fc055181806b1151160fd19f40e106189b67001b4e3bbc82499bed73fc03b",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_DETAIL_SUMMARY_LENGTH"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-09T06:52:16.460Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-09T02:52:08.955Z",
       "event_detected_at": "2026-09-09T02:52:08.955Z",
       "event_id": "event-a2113d14fb03db277521",
@@ -7862,7 +8831,7 @@
         "internal_relevance_score": 32,
         "public_relevance": "mittel",
         "topics": [
-          "Politik"
+          "Geopolitik"
         ],
         "dimensions": [],
         "status": "laufende Entwicklung",
@@ -7881,21 +8850,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 233.3052,
-        "detection_delay_minutes": 23.14925,
+        "source_age_minutes": 73.341,
+        "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.15595,
+        "queue_age_minutes": 225.12508333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 51,
+        "news_freshness_score": 85,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
-        "fingerprint": "8326d1c2f5e0a4eab4e8157d7b5db901b4b2e15c922f8603408a73f33241f949",
+        "checked_at": "2026-09-09T06:37:16.460Z",
+        "fingerprint": "bb7a5588e7ab778e0e72e6f4cccdcb1d0ae39518fdb20485129fbf53d745c3ef",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -7964,7 +8933,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
       "content_hash": "a944cdcb42fc306e64e1b1eee060982f1b9b4f32784d5f655d28bc7762540f12",
@@ -7977,7 +8946,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-09T02:22:22.812Z",
       "event_detected_at": "2026-09-09T02:22:22.812Z",
       "event_id": "event-6bb6b30dd1972e93ecfd",
@@ -8011,20 +8980,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 252.47186666666667,
+        "source_age_minutes": 267.441,
         "detection_delay_minutes": 12.546866666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 239.925,
+        "queue_age_minutes": 254.89413333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 47,
+        "news_freshness_score": 44,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "fingerprint": "d756946e4c9905594d3f5bbbbcfce32bbbfed9beb4184b8ad4028ddaae76f4ae",
         "issue_codes": [],
         "warning_codes": []
@@ -8100,7 +9069,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
       "content_hash": "cf2c6260cc1af0ef6a77a31df170f5e1ee3a9b21ed5bb89b00bcf56cd7dc9481",
@@ -8113,7 +9082,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-09T02:06:52.907Z",
       "event_detected_at": "2026-09-09T02:06:52.907Z",
       "event_id": "event-3760409fe5600a297535",
@@ -8149,11 +9118,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 19102.3052,
+        "source_age_minutes": 19117.274333333335,
         "detection_delay_minutes": 18846.881783333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 255.42341666666667,
+        "queue_age_minutes": 270.39255,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -8162,7 +9131,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "fingerprint": "8fb680e5dd2b36ec144395ca479e0e4bc8cfbc65af74d3e3b0aa01895d2ce630",
         "issue_codes": [],
         "warning_codes": []
@@ -8170,6 +9139,14 @@
     },
     {
       "story_id": "wt-58497842d8da5fbe",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "a9406eb86b9c7e75c77aec820ecd0da95ad56518a6b30a56e7babe966e0c1f16",
+        "first_failed_at": "2026-09-09T06:37:16.460Z",
+        "failed_at": "2026-09-09T06:37:16.460Z",
+        "retry_after": "2026-09-09T06:52:16.460Z",
+        "retry_count": 1
+      },
       "slug": "drei-tote-bei-zusammenstoss-todliche-kollision-urteil-in-mordprozess-erwartet-da5fbe",
       "title": "Drei Tote bei Zusammenstoß: Tödliche Kollision – Urteil in Mordprozess erwartet",
       "first_seen": "2026-09-09T01:30:07.000Z",
@@ -8231,20 +9208,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
       "content_hash": "02e94e77815c194c5e2c9923351cf6b2ca8387b73ea932cbcbebcdca4dcf9246",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T06:52:16.460Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-09T01:37:14.597Z",
       "event_detected_at": "2026-09-09T01:37:14.597Z",
       "event_id": "event-4d1eb4d3fb782ee51faf",
@@ -8279,23 +9256,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 292.18853333333334,
+        "source_age_minutes": 307.15766666666667,
         "detection_delay_minutes": 7.126616666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 285.06191666666666,
+        "queue_age_minutes": 300.03105,
         "target_publication_minutes": 120,
-        "news_freshness_score": 39,
+        "news_freshness_score": 36,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "fingerprint": "e12ede479bf7e6dc14aca69b54d667270bcefd357cea0081b8e6b88a4c3013f6",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T06:37:16.460Z",
+      "rejection": {
+        "at": "2026-09-09T06:37:16.460Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -11849,7 +12838,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T11:06:00.000Z",
-            "ingested_at": "2026-09-09T06:07:41.403Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -11901,7 +12890,7 @@
             "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
             "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T06:04:47.000Z",
+            "published_at": "2026-09-09T06:27:20.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -11917,8 +12906,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T06:04:47.000Z",
-            "ingested_at": "2026-09-09T06:07:41.403Z",
+            "source_published_at": "2026-09-09T06:27:20.000Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -11939,7 +12928,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "9a2ff324815be8589ad4f9b9c2da92337f61a5e3de8df33873410d7d1bb2b1f0",
           "issue_codes": [],
           "warning_codes": []
@@ -12745,7 +13734,7 @@
             "title": "Krieg - Fünf Todesopfer bei neuen russischen Luftangriffen auf Kiew",
             "summary": "Bei neuen russischen Luftangriffen auf die ukrainische Hauptstadt Kiew sind nach Behördenangaben fünf Menschen getötet worden.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T06:04:47.000Z",
+            "published_at": "2026-09-09T06:27:20.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -12761,8 +13750,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T06:04:47.000Z",
-            "ingested_at": "2026-09-09T06:07:41.403Z",
+            "source_published_at": "2026-09-09T06:27:20.000Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -12783,7 +13772,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "3037a1d42e9e581af7193dffb83c5d5dedad0e73b1af2289d4607930fd0d5b62",
           "issue_codes": [],
           "warning_codes": []
@@ -13127,7 +14116,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T23:07:34.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -13156,7 +14145,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
       "content_hash": "37b0209932718c7280e974ed4af7a73e2eb100ba7f6ac77192c80ee3ec98fe02",
@@ -13169,7 +14158,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-08T23:24:22.430Z",
       "event_detected_at": "2026-09-08T23:24:22.430Z",
       "event_id": "event-7f7b89efd945b0b338e4",
@@ -13202,20 +14191,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 434.73853333333335,
+        "source_age_minutes": 449.7076666666667,
         "detection_delay_minutes": 16.807166666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 417.9313666666667,
+        "queue_age_minutes": 432.9005,
         "target_publication_minutes": 120,
-        "news_freshness_score": 9,
+        "news_freshness_score": 6,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "fingerprint": "267dcb5e2c6cbc773d0d5e0f35ce872287a38c6e3a01eb9fabc50b8df95d918f",
         "issue_codes": [],
         "warning_codes": []
@@ -14647,7 +15636,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "13107cad130cee66a7554cbf6765ac0d0630a5fb4b2c1bc76431d28e9d666293",
           "issue_codes": [],
           "warning_codes": []
@@ -17066,7 +18055,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "0c59257b7f229b4525f991d215e40acd4338a0901f548bea4671dd037f615fad",
           "issue_codes": [],
           "warning_codes": []
@@ -18411,7 +19400,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:52:01.000Z",
-            "ingested_at": "2026-09-09T06:07:41.403Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -18432,7 +19421,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "1efa3fa74f2770221ef9efac103a0a38be0f98820ad08782bc080d18496d51db",
           "issue_codes": [],
           "warning_codes": []
@@ -21451,7 +22440,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T04:38:45.291Z"
+        "retry_after": "2026-09-09T06:57:54.809Z"
       },
       "listed": true,
       "analysis_status": "veröffentlicht",
@@ -22962,7 +23951,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T04:38:40.296Z"
+        "retry_after": "2026-09-09T06:57:49.477Z"
       },
       "pending_update": {
         "detected_at": "2026-09-09T05:06:53.221Z",
@@ -23013,7 +24002,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "fada684c913b1511f4b664c4800c3b5ed71f9a95565753e62994fc4d1b7d2c3a",
           "issue_codes": [],
           "warning_codes": []
@@ -24113,7 +25102,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "53f93df4d1e534788f614f7964cd327043bdce46694f9d12100257749b54cc1b",
           "issue_codes": [],
           "warning_codes": []
@@ -24752,7 +25741,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
           "issue_codes": [],
           "warning_codes": []
@@ -25996,7 +26985,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:12:00.000Z",
-            "ingested_at": "2026-09-09T06:07:41.403Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -26017,7 +27006,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
           "issue_codes": [],
           "warning_codes": []
@@ -26904,7 +27893,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:50:00.000Z",
-            "ingested_at": "2026-09-09T06:07:41.403Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -26925,7 +27914,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
           "issue_codes": [],
           "warning_codes": []
@@ -27852,7 +28841,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T16:06:00.000Z",
-            "ingested_at": "2026-09-09T06:07:41.403Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -27873,7 +28862,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "4b55b20f625f8b51cff685bdbe368f6c5abe3033876fbaf678baf66119971d61",
           "issue_codes": [],
           "warning_codes": []
@@ -29538,7 +30527,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -30313,7 +31302,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:37:22.000Z",
-            "ingested_at": "2026-09-09T06:07:41.403Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -30334,7 +31323,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "0e63a4de2d3808fb0a7038382c487171672091885e94aa28e01ad3ddaac453c4",
           "issue_codes": [],
           "warning_codes": []
@@ -31379,7 +32368,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "46b06f5129ab11dcdcbcead79a419746c9745bf047a31c3da192fa34a025dc76",
           "issue_codes": [],
           "warning_codes": []
@@ -32828,7 +33817,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "e7587f2cc06df4cac7045809794906c00232f2e13e2e548f57b9ec2510a2dc75",
           "issue_codes": [],
           "warning_codes": []
@@ -35763,7 +36752,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T14:37:42.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -35792,7 +36781,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
       "content_hash": "bf36d0e52a041563fd6ea4080293b7349719faa53e6e2da44ae2c04b203bc8a7",
@@ -35805,7 +36794,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-08T14:52:22.706Z",
       "event_detected_at": "2026-09-08T14:52:22.706Z",
       "event_id": "event-b4bdb0e02259462f4622",
@@ -35838,11 +36827,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 944.6052,
+        "source_age_minutes": 959.5743333333334,
         "detection_delay_minutes": 14.678433333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 929.9267666666667,
+        "queue_age_minutes": 944.8959,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -35851,7 +36840,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "fingerprint": "8dc1fc67b4d6b2ce603c3c5a8305a9c0bb659e39149c405430a72181bf44e900",
         "issue_codes": [],
         "warning_codes": []
@@ -36536,7 +37525,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "484ee63d9db550c1e2294eb912677a21bde29d3e9b9613f1457cb2ac44270032",
           "issue_codes": [],
           "warning_codes": []
@@ -38686,7 +39675,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "04fad27b4d3289772b2e99292c31ee46e8833ec80b2213996da8da259f0bd90f",
           "issue_codes": [],
           "warning_codes": []
@@ -40069,7 +41058,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T12:12:00.000Z",
-            "ingested_at": "2026-09-09T06:07:41.403Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -40090,7 +41079,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -40797,7 +41786,7 @@
             "research_lane": "blindspot",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T13:18:16.000Z",
-            "ingested_at": "2026-09-09T05:36:49.788Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -40818,7 +41807,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "c59a0a55d490614add5884e934619707fa8248010ff7b6737e729d894867d4f9",
           "issue_codes": [],
           "warning_codes": []
@@ -42161,7 +43150,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "d4b8c47f1b5a6ae4b9e8838edd34c8da0189c7f592bf1dd36369dd436d41ddf2",
           "issue_codes": [],
           "warning_codes": []
@@ -44764,7 +45753,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
           "issue_codes": [],
           "warning_codes": []
@@ -45935,7 +46924,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "63f046175e324d9aac3dc62cf0f0e86b6ea7a260faeb7c3aa7053bcca7dcdfdf",
           "issue_codes": [],
           "warning_codes": []
@@ -47938,7 +48927,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
           "issue_codes": [],
           "warning_codes": []
@@ -48155,10 +49144,10 @@
       "story_id": "wt-5fd47b5f8258a43e",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "398e28d0c232d2c4472d104a7bcbfad31c07ff14b049980e7ee8eeaafecc6e4f",
-        "first_failed_at": "2026-09-08T12:51:54.078Z",
-        "failed_at": "2026-09-08T12:51:54.078Z",
-        "retry_after": "2026-09-08T13:06:54.078Z",
+        "fingerprint": "32942abfcba1307b3423a5541484c195fb015641cfcf8392f3037d578197a277",
+        "first_failed_at": "2026-09-09T06:37:16.460Z",
+        "failed_at": "2026-09-09T06:37:16.460Z",
+        "retry_after": "2026-09-09T06:52:16.460Z",
         "retry_count": 1
       },
       "slug": "politologin-ursula-munch-uber-sachsen-anhalt-und-den-kanzler-das-wahlergebnis-ist-ein-tr-58a43e",
@@ -48193,7 +49182,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:47:56.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -48222,20 +49211,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
       "content_hash": "cc6a32b84d29dc01d82b5f05bd065cce8b4893dd9a924ebce552dc151d5aaaf4",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-09T06:52:16.460Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-6bb10c2f566db83d662b",
@@ -48280,11 +49269,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1114.3718666666666,
+        "source_age_minutes": 1129.341,
         "detection_delay_minutes": 18.845716666666668,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1095.52615,
+        "queue_age_minutes": 1110.4952833333334,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -48293,10 +49282,22 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "fingerprint": "4e88b6ddf2281d0eac5a754c369f87d7f1e680c53ee40d6995f70c4ef8364924",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T06:37:16.460Z",
+      "rejection": {
+        "at": "2026-09-09T06:37:16.460Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -50376,7 +51377,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T04:21:56.502Z"
+        "retry_after": "2026-09-09T06:57:39.095Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -51481,7 +52482,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "0e824208ac91cd615c6da0a4f44ebe8e9f89278fea217f54750b619c806b7163",
           "issue_codes": [],
           "warning_codes": []
@@ -51901,9 +52902,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "606033cb560ca71f7dc74a081a20b230109a61fddbdf3c8b37ed70918cad3897",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T12:22:18.312Z",
+        "expires_at": "2026-09-09T12:37:16.460Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -52680,7 +53681,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "aee2728c313d5bbd32082a613ae379886c53c1839aca55b1314e40cec484d370",
           "issue_codes": [],
           "warning_codes": []
@@ -54981,7 +55982,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
           "issue_codes": [],
           "warning_codes": []
@@ -55827,7 +56828,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "205041d2192cf688c27c75b8f7f545b8c4beba211ebffe3aaa3e8bcc272551f5",
           "issue_codes": [],
           "warning_codes": []
@@ -55945,7 +56946,7 @@
       "verification_started_at": "2026-09-08T10:10:32.012Z",
       "publish_ready_at": "2026-09-08T10:10:48.995Z",
       "news_status": "confirmed",
-      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "deepening_due_at": "2026-09-09T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -56363,9 +57364,20 @@
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-09T05:22:12.715Z"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T14:06:56.372Z",
-        "content_hash": "41b2a1c0e65b9fd58c960dd10095733d61ef74756d1417dbc6aae4688c142b5c",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "80262019313968ec45366781512b0952d6b93b8fcb7f481bbca4b414c366301b",
+        "first_failed_at": "2026-09-08T19:07:17.124Z",
+        "failed_at": "2026-09-09T00:22:10.289Z",
+        "retry_after": "2026-09-09T06:22:10.289Z",
+        "retry_count": 5
+      },
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "77cb261274dea08db91b93bc405cb58630501a588196ddcec441ee67f5572c72",
+        "checked_at": "2026-09-09T06:37:16.460Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-09T12:37:16.460Z",
         "sources": [
           {
             "source_id": "bundesregierung-presse",
@@ -56390,7 +57402,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T08:45:00.000Z",
-            "ingested_at": "2026-09-09T00:22:10.289Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -56399,32 +57411,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 5,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
-          "fingerprint": "cc072f3eacc31d1e9994dcaa53b6184b0b77527fa2bdf770f01aad2115f6149d",
-          "issue_codes": [],
-          "warning_codes": []
-        }
+        ]
       },
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "80262019313968ec45366781512b0952d6b93b8fcb7f481bbca4b414c366301b",
-        "first_failed_at": "2026-09-08T19:07:17.124Z",
-        "failed_at": "2026-09-09T00:22:10.289Z",
-        "retry_after": "2026-09-09T06:22:10.289Z",
-        "retry_count": 5
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-cd1680b82662577d",
@@ -57110,7 +58099,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T04:22:01.194Z"
+        "retry_after": "2026-09-09T06:57:44.407Z"
       },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -57210,7 +58199,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "868ad5265d175cfb161266ef637639c076040c24552ca93728b755dfa7d9702e",
           "issue_codes": [],
           "warning_codes": []
@@ -60045,7 +61034,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "2c652abed92d331a1f98be3450e9c5db1900766730ca5696da85d249e9d161d8",
           "issue_codes": [],
           "warning_codes": []
@@ -61836,7 +62825,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T07:30:00.000Z",
-            "ingested_at": "2026-09-09T06:07:41.403Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -61857,7 +62846,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "723f1de1cc2ace50fe3cb4ebf77ce3b44a61a98ad66c6e3c85cde9c36f834247",
           "issue_codes": [],
           "warning_codes": []
@@ -62525,9 +63514,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "23b5424cf7d0e1aa6452b1281f82c251278a375f44580ee6bb11c7d099100d3d",
         "first_failed_at": "2026-09-09T05:36:49.788Z",
-        "failed_at": "2026-09-09T05:52:18.628Z",
-        "retry_after": "2026-09-09T06:22:18.628Z",
-        "retry_count": 2
+        "failed_at": "2026-09-09T06:37:16.460Z",
+        "retry_after": "2026-09-09T07:37:16.460Z",
+        "retry_count": 3
       },
       "slug": "verjahrte-ordnungsgelder-fuhren-zu-einnahmeausfallen-b3aaa5",
       "title": "Verjährte Ordnungsgelder führen zu Einnahmeausfällen",
@@ -62561,7 +63550,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08",
-          "ingested_at": "2026-09-09T05:52:18.628Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -62597,7 +63586,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T05:52:18.628Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -62606,13 +63595,13 @@
       "quality_errors": [
         "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-09T06:22:18.628Z",
+      "quality_retry_count": 3,
+      "quality_retry_after": "2026-09-09T07:37:16.460Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T05:52:18.628Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -62649,11 +63638,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1792.3104666666666,
+        "source_age_minutes": 1837.2743333333333,
         "detection_delay_minutes": 607.43545,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1184.8750166666666,
+        "queue_age_minutes": 1229.8388833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -62662,7 +63651,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T05:52:18.628Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [],
         "warning_codes": []
@@ -64353,7 +65342,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -65278,7 +66267,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -71666,7 +72655,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -75468,7 +76457,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "23f60f41c7e50322a66d673ffbc4f4fa77d3d18dc42146d6ae3e57aa6991c72f",
           "issue_codes": [],
           "warning_codes": []
@@ -78200,7 +79189,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -81181,7 +82170,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -81190,6 +82179,14 @@
     },
     {
       "story_id": "wt-5640ff3e4191a49a",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "5db025e8abf8d83b848c273546ad84eff1cea9de71f553ba571918d39267b237",
+        "first_failed_at": "2026-09-09T06:37:16.460Z",
+        "failed_at": "2026-09-09T06:37:16.460Z",
+        "retry_after": "2026-09-09T06:52:16.460Z",
+        "retry_count": 1
+      },
       "slug": "behg-anderung-co2-preis-soll-2027-stabil-bleiben-91a49a",
       "title": "BEHG-Änderung: CO2-Preis soll 2027 stabil bleiben",
       "first_seen": "2026-09-08",
@@ -81231,7 +82228,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -81260,20 +82257,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
       "content_hash": "5fdaa17f0750c1257e40d9a2de0c9bbcabee23271c5da956c713e7b5c7d92de6",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-09T06:52:16.460Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-09T02:22:22.812Z",
       "event_detected_at": "2026-09-09T02:22:22.812Z",
       "event_id": "event-9c0ee812d27e4634c540",
@@ -81314,11 +82313,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1822.3052,
+        "source_age_minutes": 1837.2743333333333,
         "detection_delay_minutes": 1582.3802,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 239.925,
+        "queue_age_minutes": 254.89413333333334,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -81327,7 +82326,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "fingerprint": "62b1bcd93cb96018b47dea8bf4beaacafc77c54dc90316f3ee3b26841d15c0c6",
         "issue_codes": [],
         "warning_codes": []
@@ -82076,7 +83075,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -83576,9 +84575,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T12:22:18.312Z",
+        "expires_at": "2026-09-09T12:37:16.460Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -87044,7 +88043,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -88301,7 +89300,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -88862,7 +89861,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -90371,7 +91370,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -91579,7 +92578,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -92705,7 +93704,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T19:00:00.000Z",
-            "ingested_at": "2026-09-09T06:07:41.403Z",
+            "ingested_at": "2026-09-09T06:37:16.460Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -92726,7 +93725,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -93246,7 +94245,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -95703,7 +96702,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -99696,9 +100695,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "61dd35c8e2e4f05a2b64bdc95313fd7c05533e5088e8d7050ab841b17a574a74",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T12:22:18.312Z",
+        "expires_at": "2026-09-09T12:37:16.460Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -195806,7 +196805,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -240200,7 +241199,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T06:22:18.312Z",
+          "checked_at": "2026-09-09T06:37:16.460Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -275888,6 +276887,54 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-09T06:37:16.460Z",
+          "retained_urls": [
+            "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+            "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+            "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+            "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
+            "https://www.ndr.de/nachrichten/info/das-erbe-nach-9-11-deutschland-nach-anschlaegen-in-usa,pearl-harburg-100.html",
+            "https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS9wcm9wbGFuXzE5NjM4Nzc1M19nYW56ZVNlbmR1bmc",
+            "https://www.stern.de/panorama/donald-trump-luegt-darueber--dass-er-an-9-11-gerettet-wurde-38224984.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+              "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+              "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-04T11:02:58.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+              "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-04T11:02:58.000Z",
+              "ingested_at": "2026-09-09T06:07:41.403Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-09T04:00:00.000Z",
@@ -275922,7 +276969,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T04:00:00.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -275954,7 +277001,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T01:44:22.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -275987,7 +277034,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T18:04:29.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -276019,7 +277066,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T07:30:00.000Z",
-          "ingested_at": "2026-09-09T05:36:49.788Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -276052,7 +277099,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T05:15:11.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -276085,7 +277132,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:49:17.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -276118,7 +277165,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T05:47:00.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -276151,7 +277198,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T11:02:58.000Z",
-          "ingested_at": "2026-09-09T06:07:41.403Z",
+          "ingested_at": "2026-09-09T06:37:16.460Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -276180,7 +277227,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-02",
@@ -276200,7 +277247,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-03",
@@ -276220,7 +277267,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-04",
@@ -276240,7 +277287,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-05",
@@ -276260,7 +277307,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-06",
@@ -276280,7 +277327,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-07",
@@ -276300,7 +277347,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-08",
@@ -276320,7 +277367,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T06:22:18.312Z"
+          "checked_at": "2026-09-09T06:37:16.460Z"
         }
       ],
       "content_hash": "aa84f3aeb70eb56400cdd4df16021debc569dddea4974ace3bee901f3568936a",
@@ -276335,7 +277382,7 @@
       "fresh": false,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T06:22:18.312Z",
+      "updated_at": "2026-09-09T06:37:16.460Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-4282989facaefbf32544",
@@ -276372,20 +277419,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 35.3052,
+        "source_age_minutes": 50.27433333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 119.93858333333333,
+        "queue_age_minutes": 134.90771666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
-        "freshness_warning": null
+        "news_freshness_score": 90,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T06:22:18.312Z",
+        "checked_at": "2026-09-09T06:37:16.460Z",
         "fingerprint": "dcfe67c4412c2939ae99783bbec2c7e512d1e97b8fa37574b61c6e78a700c9a5",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
