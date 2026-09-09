@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-09T21:31:22.351Z",
+  "last_successful_run": "2026-09-09T21:42:25.777Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -63432,7 +63432,6 @@
     "wt-2ba80a7557ba7bf8",
     "wt-f6c8def394d52291",
     "wt-59cf0f94440363c1",
-    "wt-30992a8a3bfc0ab1",
     "wt-53956114ef5b04d9",
     "wt-878980c9ef12690f",
     "wt-03713de503dade04",
@@ -63466,7 +63465,6 @@
     "wt-c01c317801ef3a60",
     "wt-977ab17bafa22a19",
     "wt-101e7b49bfbc21c1",
-    "wt-bbaf251fe95d6f40",
     "wt-374253ee22113774",
     "wt-491857684cc65a88",
     "wt-4f69ab66eaceb97a",
@@ -63499,9 +63497,7 @@
     "wt-5d3a5714871f16db",
     "wt-3832ac28950296cb",
     "wt-625342e7baf1d569",
-    "wt-4a2896200ddb6241",
     "wt-e3fe6882f1bc882f",
-    "wt-0c43dbdfe1c244c2",
     "wt-26f3c14ceb7e770c",
     "wt-50009d916daa76e4",
     "wt-0fd3116f5db01435",
@@ -63573,7 +63569,7 @@
     "wt-990631d7dc3586cb"
   ],
   "relevance_filter_version": "2026-09-09.1",
-  "last_attempted_run": "2026-09-09T21:31:22.351Z",
+  "last_attempted_run": "2026-09-09T21:42:25.777Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1652,
@@ -63922,10 +63918,24 @@
       "prompt_hash": "15b09a48a7f790b05936999b312e7fd66ef14a1443a4eaf2564dce4ef3e0ea7b",
       "attempt": 0,
       "created_at": "2026-09-09T19:52:22.316Z",
+      "status": "completed",
+      "billing_status": "settled",
+      "next_poll_at": "2026-09-09T22:02:05.659Z",
+      "checked_at": "2026-09-09T21:47:05.659Z",
+      "error": null
+    },
+    "39fbebaf3c094d8981c586fff2a60ccc6d067487d0f9a709af44ae8291547b89": {
+      "key": "39fbebaf3c094d8981c586fff2a60ccc6d067487d0f9a709af44ae8291547b89",
+      "kind": "editorial_background",
+      "story_id": "wt-366b1fbfa120e44f",
+      "fingerprint": "4716d2b493d65af13a222dad3046a4377c1bdfae0fafff5168e225b27f2e09f0",
+      "prompt_hash": "ab89a85d31327cc6288c307f4be3862207614d8a3b1e2d0f7b80738351ec5622",
+      "attempt": 0,
+      "created_at": "2026-09-09T21:47:05.659Z",
       "status": "submitted",
       "billing_status": "reserved",
-      "next_poll_at": "2026-09-09T21:41:13.042Z",
-      "checked_at": "2026-09-09T21:26:13.042Z",
+      "next_poll_at": "2026-09-09T22:02:05.659Z",
+      "checked_at": "2026-09-09T21:47:05.659Z",
       "error": null
     }
   },

@@ -34660,9 +34660,13 @@
       "quality_cycles": 0,
       "request_id": null,
       "attempts": 0,
-      "last_attempt_at": "2026-09-09T21:26:13.042Z",
-      "next_attempt_at": "2026-09-09T21:41:13.042Z",
-      "quality_errors": [],
+      "last_attempt_at": "2026-09-09T21:47:05.659Z",
+      "next_attempt_at": "2026-09-09T22:02:05.659Z",
+      "quality_errors": [
+        "EDITORIAL_ARTICLE_LENGTH",
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
+        "EDITORIAL_SELF_FRAME_FAILED"
+      ],
       "reason": "AI_BATCH_PENDING"
     },
     "wt-e820bef62dd96612": {
