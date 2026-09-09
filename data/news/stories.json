@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-09T00:22:10.289Z",
-  "updated_at": "2026-09-09T04:22:21.997Z",
+  "updated_at": "2026-09-09T04:36:54.584Z",
   "stories": [
     {
       "story_id": "wt-e44e7089ecc92978",
@@ -99,7 +99,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         },
         {
           "claim_id": "wt-e44e7089ecc92978-claim-02",
@@ -119,20 +119,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "4e8c39a9b35382b55b8b87b1b281af672f726ea1765bd762725c653baf870682",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
+      "quality_errors": [
+        "AI_BUDGET_EXHAUSTED"
+      ],
       "quality_retry_count": 0,
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T02:22:22.812Z",
       "event_detected_at": "2026-09-09T02:22:22.812Z",
       "event_id": "event-ac55a510fc7432e60b39",
@@ -165,20 +167,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 10.483283333333333,
+        "source_age_minutes": 25.0264,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 119.98641666666667,
+        "queue_age_minutes": 134.52953333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": null
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "4982c9e2d1ce05d1068daccc3c14ffe9e1c038d175260278e33965425b109e92",
         "issue_codes": [],
         "warning_codes": []
@@ -247,7 +249,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "32e0bfee38b20e888eb99a6dcf41e489062b4e3d492102832329eedacce25e2f",
@@ -262,7 +264,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-ed11fc5c1b0bee60fa65",
@@ -295,20 +297,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 14.866616666666667,
+        "source_age_minutes": 29.40973333333333,
         "detection_delay_minutes": 14.866616666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.543116666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "771af662c62e40f4e1dcbe83067df293cf64e8291cb7bc5e37aa95a5ae296855",
         "issue_codes": [],
         "warning_codes": []
@@ -377,7 +379,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "cc3dd1fab4d77b6a8d9e631cbbfa9bf9a49984c0d1c19287204b9670b1817c40",
@@ -392,7 +394,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-5e84f075a7d1472bb438",
@@ -427,20 +429,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 15.366616666666667,
+        "source_age_minutes": 29.90973333333333,
         "detection_delay_minutes": 15.366616666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.543116666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "5bf0079782476452cd4b50422972aafc1839912b11c42105b8258dcb924a055a",
         "issue_codes": [],
         "warning_codes": []
@@ -510,7 +512,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "d4684610cd246aa2587a74d7791c16a67d0b6e84d66993f44371d9b297c5a1ab",
@@ -523,7 +525,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-2d19c50a93681915bd8a",
@@ -560,20 +562,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 22.216616666666667,
+        "source_age_minutes": 36.75973333333334,
         "detection_delay_minutes": 22.216616666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.543116666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "77afb06bdfb159c080a7d24080a795577294a67760b4e7a1456c1b49dba0aa7f",
         "issue_codes": [],
         "warning_codes": []
@@ -643,7 +645,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "8c74ed9193472e4cbf328f758938d0f6af8566af8454b42c104097a5357c2e48",
@@ -656,7 +658,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-7bb9ce28f9a9713882c5",
@@ -702,363 +704,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 22.31661666666667,
+        "source_age_minutes": 36.85973333333333,
         "detection_delay_minutes": 22.31661666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.543116666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "887ddfeadb51377ff446ebce9a20ff47d820465917ce564aa0c27ff02f5ad26f",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-990631d7dc3586cb",
-      "slug": "nach-9-11-wie-sich-die-stimmung-gegenuber-den-usa-drehte-3586cb",
-      "title": "Nach 9/11: Wie sich die Stimmung gegenüber den USA drehte",
-      "first_seen": "2026-09-09T04:00:00.000Z",
-      "last_updated": "2026-09-09T04:00:00.000Z",
-      "topic": [
-        "Geopolitik",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "ndr-info",
-          "publisher": "NDR",
-          "url": "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
-          "title": "Nach 9/11: Wie sich die Stimmung gegenüber den USA drehte",
-          "summary": "Nach dem Terror vom 11. September 2001 ist das Mitgefühl zunächst groß. Die damalige US-Generalkonsulin in Hamburg schildert die Wochen danach - bis zum Irak-Krieg 2003.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T04:00:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "800f01977ce7d01ecc1e53657cb0a0473b9ef3c34555d6a7b1f1a166323d1b14",
-          "source_item_id": "578591e53f8bdfc12e502e2687bd6af908447c42ed583a2a261422222db6d63d",
-          "publisher_id": "ndr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Norddeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T04:00:00.000Z",
-          "ingested_at": "2026-09-09T04:22:21.997Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "france24-en",
-          "publisher": "France 24",
-          "url": "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
-          "title": "Key post-9/11 air toxicity information was kept secret for 25 years",
-          "summary": "New York Mayor Zohran Mamdani released tens of thousands of previously undisclosed documents on Tuesday detailing what city officials knew about toxic air after the September 11 attacks, as the 25th anniversary approaches and thousands continue to suffer from related illnesses.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T01:44:22.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Geopolitik",
-          "content_hash": "8c2d259f05dd0776263f8d68798e84bbaf433699efc562218cf484a219e833a2",
-          "source_item_id": "591bfaa53874afebc1ebb32f0bfef524399b10aefa2d70f693162df8fc4bb396",
-          "publisher_id": "france24",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "en",
-          "geography": [
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T01:44:22.000Z",
-          "ingested_at": "2026-09-09T04:22:21.997Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:france24",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
-          "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
-          "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T11:02:58.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
-          "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T11:02:58.000Z",
-          "ingested_at": "2026-09-09T04:22:21.997Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "ndr-info",
-          "publisher": "NDR",
-          "url": "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
-          "title": "9/11: Ehemalige US-Generalkonsulin Susan Elbow erinnert sich",
-          "summary": "Susan Elbow war damals seit knapp drei Wochen neue US-Generalkonsulin in Hamburg. Wie blickt sie heute auf das Geschehen?",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T18:04:29.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "6372e2e187692a9add106a84a70646406bb6dab998e2664ad27d9c4a5686d0d5",
-          "source_item_id": "f13186c3501abfedf74cb8933daf4d4e8aa79b879f5d0935b9ce1f7b202ce93b",
-          "publisher_id": "ndr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Norddeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T18:04:29.000Z",
-          "ingested_at": "2026-09-09T04:22:21.997Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-gesellschaft",
-          "publisher": "Deutschlandfunk - Gesellschaft",
-          "url": "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
-          "title": "Nach 9/11 - Wie das Hadern mit der Welt die Oberhand gewann",
-          "summary": "Nach den Terroranschlägen vom 11. September 2001 in den USA schien jedes Weltvertrauen naiv zu sein. Trost war kaum möglich, vielmehr bildete sich eine Kultur der Untröstlichkeit. Und eine der Unversöhnlichkeit. Konersmann, Ralf",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T07:30:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Soziales",
-          "content_hash": "a6c362a441737b53b83c5ab7e9b13e423cf1be107c9c1bcb80c85ce1b57008ed",
-          "source_item_id": "290a99a5bef1697da938de12dd6a3650b786bc8cb0dea81889936dee38c834d8",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE"
-          ],
-          "research_lane": "blindspot",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T07:30:00.000Z",
-          "ingested_at": "2026-09-09T04:22:21.997Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-990631d7dc3586cb-claim-01",
-          "story_id": "wt-990631d7dc3586cb",
-          "claim": "Nach 9/11: Wie sich die Stimmung gegenüber den USA drehte: Nach dem Terror vom 11. September 2001 ist das Mitgefühl zunächst groß. Die damalige US-Generalkonsulin in Hamburg schildert die Wochen danach - bis zum Irak-Krieg 2003.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "ndr-info",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
-        },
-        {
-          "claim_id": "wt-990631d7dc3586cb-claim-02",
-          "story_id": "wt-990631d7dc3586cb",
-          "claim": "Key post-9/11 air toxicity information was kept secret for 25 years: New York Mayor Zohran Mamdani released tens of thousands of previously undisclosed documents on Tuesday detailing what city officials knew about toxic air after the September 11 attacks, as the 25th anniversary approaches and thousands continue to suffer from related illnesses.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "france24-en",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:france24",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
-        },
-        {
-          "claim_id": "wt-990631d7dc3586cb-claim-03",
-          "story_id": "wt-990631d7dc3586cb",
-          "claim": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“: Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
-        },
-        {
-          "claim_id": "wt-990631d7dc3586cb-claim-04",
-          "story_id": "wt-990631d7dc3586cb",
-          "claim": "9/11: Ehemalige US-Generalkonsulin Susan Elbow erinnert sich: Susan Elbow war damals seit knapp drei Wochen neue US-Generalkonsulin in Hamburg. Wie blickt sie heute auf das Geschehen?",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "ndr-info",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
-        },
-        {
-          "claim_id": "wt-990631d7dc3586cb-claim-05",
-          "story_id": "wt-990631d7dc3586cb",
-          "claim": "Nach 9/11 - Wie das Hadern mit der Welt die Oberhand gewann: Nach den Terroranschlägen vom 11. September 2001 in den USA schien jedes Weltvertrauen naiv zu sein. Trost war kaum möglich, vielmehr bildete sich eine Kultur der Untröstlichkeit. Und eine der Unversöhnlichkeit. Konersmann, Ralf",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-gesellschaft",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
-        }
-      ],
-      "content_hash": "ca987cdba146ffe0a29a7038dad4420d582fd6ac6e9d2c3031839d65bc2e33da",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
-      "event_first_seen_at": "2026-09-09T04:22:21.997Z",
-      "event_detected_at": "2026-09-09T04:22:21.997Z",
-      "event_id": "event-4282989facaefbf32544",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik",
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [
-          "interview_or_speech"
-        ],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 22.366616666666665,
-        "detection_delay_minutes": 22.366616666666665,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 95,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
-        "fingerprint": "980108dace481d6e66395ee3fb6512de0a145178c297496b67eec719b9c72e18",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -1127,7 +787,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "2baa7cc3e236fd3f16947b53431a1ca9619e1632249f568fc2552186a530cbd3",
@@ -1142,7 +802,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-ca713466675ecc457f42",
@@ -1188,20 +848,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 22.366616666666665,
+        "source_age_minutes": 36.909733333333335,
         "detection_delay_minutes": 22.366616666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.543116666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "25ecbb829af2992c2b302de2814c32b6c66f2bff5b0da98199bc869d885f4f8f",
         "issue_codes": [],
         "warning_codes": []
@@ -1270,7 +930,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "0b420464451c849897964ede4ccc30f5c03ffb97b5d2d7a325d960c62e7bfc9d",
@@ -1285,7 +945,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-b1e29f2845cd7b6256a7",
@@ -1320,20 +980,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 33.366616666666665,
+        "source_age_minutes": 47.909733333333335,
         "detection_delay_minutes": 33.366616666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.543116666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
+        "news_freshness_score": 90,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "582f621054a01990c471951153bbcbdf8984836b4fba134bf2816c08fdee8d90",
         "issue_codes": [],
         "warning_codes": []
@@ -1402,7 +1062,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "bbbc51d20ba0d759496aafa77b98d5f4a4014987024695b18ec096b12b8c7edb",
@@ -1415,7 +1075,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T03:52:20.452Z",
       "event_detected_at": "2026-09-09T03:52:20.452Z",
       "event_id": "event-d160fee75b709db860d1",
@@ -1448,20 +1108,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 35.616616666666665,
+        "source_age_minutes": 50.159733333333335,
         "detection_delay_minutes": 5.590866666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 30.02575,
+        "queue_age_minutes": 44.568866666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
+        "news_freshness_score": 90,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "e6e8e3f4f343b8665ddb1f7ffa75f0c1005ce681adecb024c698f56019076d21",
         "issue_codes": [],
         "warning_codes": []
@@ -1596,7 +1256,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         },
         {
           "claim_id": "wt-491857684cc65a88-claim-02",
@@ -1616,7 +1276,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         },
         {
           "claim_id": "wt-491857684cc65a88-claim-03",
@@ -1636,7 +1296,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "81325daf6d891963fcfb412455c2c86d65192df96987b433c34a08f1531e1501",
@@ -1649,7 +1309,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T00:51:49.494Z",
       "event_detected_at": "2026-09-09T00:51:49.494Z",
       "event_id": "event-535ab9d27abe1bcdee32",
@@ -1682,20 +1342,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 54.366616666666665,
+        "source_age_minutes": 68.90973333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 210.54171666666667,
+        "queue_age_minutes": 225.08483333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 89,
+        "news_freshness_score": 86,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "dcc8d88dc95b6793f26a805bf8d9992cf9d7c159012d659779a2582141444630",
         "issue_codes": [],
         "warning_codes": []
@@ -1768,7 +1428,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "d0510ff547a135ecbbd24f74a84bc276935a8dbb7855610159240570607f2908",
@@ -1781,7 +1441,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T03:22:22.700Z",
       "event_detected_at": "2026-09-09T03:22:22.700Z",
       "event_id": "event-5c5ac6f89b7886552074",
@@ -1814,20 +1474,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 67.26661666666666,
+        "source_age_minutes": 81.80973333333333,
         "detection_delay_minutes": 7.278333333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 59.988283333333335,
+        "queue_age_minutes": 74.5314,
         "target_publication_minutes": 120,
-        "news_freshness_score": 86,
+        "news_freshness_score": 83,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "67c89e78c307237eef95ce3fbd44b6f9ba5384aac8f7bc9860fba9334b1f90e2",
         "issue_codes": [],
         "warning_codes": []
@@ -1901,7 +1561,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "d21f26f17845a9cf8bf4ff181faebc6a60b57b215cb5fbb8530a928c5ba69666",
@@ -1914,7 +1574,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T03:22:22.700Z",
       "event_detected_at": "2026-09-09T03:22:22.700Z",
       "event_id": "event-4435b13059f7369beda5",
@@ -1948,20 +1608,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 67.29995,
+        "source_age_minutes": 81.84306666666667,
         "detection_delay_minutes": 7.3116666666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 59.988283333333335,
+        "queue_age_minutes": 74.5314,
         "target_publication_minutes": 120,
-        "news_freshness_score": 86,
+        "news_freshness_score": 83,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "c8460936195310ce1dceaf7624e9f0e3f1cc80436684d51ed0c7eb66ba6813e6",
         "issue_codes": [],
         "warning_codes": []
@@ -2030,7 +1690,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "a352fb4b5be5b22106386e7feadfc438ffae61b33a9b677c8ef1bee6b3365507",
@@ -2043,7 +1703,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T03:07:16.094Z",
       "event_detected_at": "2026-09-09T03:07:16.094Z",
       "event_id": "event-e9fe3ffbbb0bb4b2ca80",
@@ -2076,20 +1736,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 77.88328333333334,
+        "source_age_minutes": 92.4264,
         "detection_delay_minutes": 2.7849,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 75.09838333333333,
+        "queue_age_minutes": 89.6415,
         "target_publication_minutes": 120,
-        "news_freshness_score": 84,
+        "news_freshness_score": 81,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "9a6d785f320937696a98ff3cbbb0fa813a460a33a428d4bef6a1434f25317c48",
         "issue_codes": [],
         "warning_codes": []
@@ -2245,7 +1905,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         },
         {
           "claim_id": "wt-0456ad2a9c0ad09d-claim-02",
@@ -2265,7 +1925,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "7bedbded743ad36235457f3b4a72276e85dc6976fdbde558b9937cd7f0bd3891",
@@ -2278,7 +1938,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-08T22:52:15.096Z",
       "event_detected_at": "2026-09-08T22:52:15.096Z",
       "event_id": "event-9e394f4254cfd55e6370",
@@ -2314,20 +1974,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 77.89995,
+        "source_age_minutes": 92.44306666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 330.1150166666667,
+        "queue_age_minutes": 344.65813333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 84,
+        "news_freshness_score": 81,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "f0cc211e624240055f83c2374e834258eecaf4ca3ea2e23739c3e608b1df5304",
         "issue_codes": [],
         "warning_codes": []
@@ -2396,7 +2056,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "edb9c872bee6b225f24f5deb7553e176e149653733629d8c41c1a1b46bb76828",
@@ -2409,7 +2069,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T02:52:08.955Z",
       "event_detected_at": "2026-09-09T02:52:08.955Z",
       "event_id": "event-a2113d14fb03db277521",
@@ -2442,20 +2102,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 113.36661666666667,
+        "source_age_minutes": 127.90973333333334,
         "detection_delay_minutes": 23.14925,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 90.21736666666666,
+        "queue_age_minutes": 104.76048333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 76,
+        "news_freshness_score": 73,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "8326d1c2f5e0a4eab4e8157d7b5db901b4b2e15c922f8603408a73f33241f949",
         "issue_codes": [],
         "warning_codes": []
@@ -2525,7 +2185,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "a944cdcb42fc306e64e1b1eee060982f1b9b4f32784d5f655d28bc7762540f12",
@@ -2538,7 +2198,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T02:22:22.812Z",
       "event_detected_at": "2026-09-09T02:22:22.812Z",
       "event_id": "event-6bb6b30dd1972e93ecfd",
@@ -2572,20 +2232,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 132.53328333333334,
+        "source_age_minutes": 147.0764,
         "detection_delay_minutes": 12.546866666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 119.98641666666667,
+        "queue_age_minutes": 134.52953333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 72,
-        "freshness_warning": null
+        "news_freshness_score": 69,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "d756946e4c9905594d3f5bbbbcfce32bbbfed9beb4184b8ad4028ddaae76f4ae",
         "issue_codes": [],
         "warning_codes": []
@@ -2661,7 +2321,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "cf2c6260cc1af0ef6a77a31df170f5e1ee3a9b21ed5bb89b00bcf56cd7dc9481",
@@ -2674,7 +2334,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T02:06:52.907Z",
       "event_detected_at": "2026-09-09T02:06:52.907Z",
       "event_id": "event-3760409fe5600a297535",
@@ -2710,11 +2370,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 18982.366616666666,
+        "source_age_minutes": 18996.909733333334,
         "detection_delay_minutes": 18846.881783333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 135.48483333333334,
+        "queue_age_minutes": 150.02795,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -2723,7 +2383,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "8fb680e5dd2b36ec144395ca479e0e4bc8cfbc65af74d3e3b0aa01895d2ce630",
         "issue_codes": [],
         "warning_codes": []
@@ -2792,22 +2452,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "02e94e77815c194c5e2c9923351cf6b2ca8387b73ea932cbcbebcdca4dcf9246",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_BUDGET_EXHAUSTED"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 0,
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_BLOCKED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T01:37:14.597Z",
       "event_detected_at": "2026-09-09T01:37:14.597Z",
       "event_id": "event-4d1eb4d3fb782ee51faf",
@@ -2842,20 +2500,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 172.24995,
+        "source_age_minutes": 186.79306666666668,
         "detection_delay_minutes": 7.126616666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 165.12333333333333,
+        "queue_age_minutes": 179.66645,
         "target_publication_minutes": 120,
-        "news_freshness_score": 64,
+        "news_freshness_score": 61,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "e12ede479bf7e6dc14aca69b54d667270bcefd357cea0081b8e6b88a4c3013f6",
         "issue_codes": [],
         "warning_codes": []
@@ -2965,7 +2623,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         },
         {
           "claim_id": "wt-bd410136bb400bcb-claim-02",
@@ -2985,7 +2643,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "713d4dd384536a34f7a94bc2a5bacfa4398148b4a7e329db349f6dcbe216a647",
@@ -3000,7 +2658,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-4115d1c8b7b41d981c8c",
@@ -3033,20 +2691,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6.333283333333333,
+        "source_age_minutes": 20.8764,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 975.5875666666667,
+        "queue_age_minutes": 990.1306833333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 96,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "ce11a485ad27cd1902db1ce24ee7886675fdaf06e180aadf219a94f9f8ba4360",
         "issue_codes": [],
         "warning_codes": []
@@ -3115,7 +2773,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "527c871387449f4f9cce81e9f1a58f4ec152c5e41836339f61621bf09564eca5",
@@ -3128,7 +2786,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T01:07:03.528Z",
       "event_detected_at": "2026-09-09T01:07:03.528Z",
       "event_id": "event-56a34318e130bae30a62",
@@ -3161,20 +2819,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6.333283333333333,
+        "source_age_minutes": 20.8764,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 195.30781666666667,
+        "queue_age_minutes": 209.85093333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 96,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "7461826c90d1f6f4def5430f6e8667d48c52e99546387bfba2b4988c8776b310",
         "issue_codes": [],
         "warning_codes": []
@@ -13921,7 +13579,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T01:53:07.504Z"
+        "retry_after": "2026-09-09T04:52:21.514Z"
       },
       "listed": true,
       "analysis_status": "veröffentlicht",
@@ -20750,7 +20408,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T01:33:03.244Z"
+        "retry_after": "2026-09-09T04:52:12.415Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -30201,7 +29859,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "bf36d0e52a041563fd6ea4080293b7349719faa53e6e2da44ae2c04b203bc8a7",
@@ -30214,7 +29872,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-08T14:52:22.706Z",
       "event_detected_at": "2026-09-08T14:52:22.706Z",
       "event_id": "event-b4bdb0e02259462f4622",
@@ -30247,11 +29905,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 824.6666166666666,
+        "source_age_minutes": 839.2097333333334,
         "detection_delay_minutes": 14.678433333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 809.9881833333334,
+        "queue_age_minutes": 824.5313,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -30260,7 +29918,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "8dc1fc67b4d6b2ce603c3c5a8305a9c0bb659e39149c405430a72181bf44e900",
         "issue_codes": [],
         "warning_codes": []
@@ -36258,7 +35916,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T01:53:02.358Z"
+        "retry_after": "2026-09-09T04:52:17.314Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -44748,7 +44406,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T04:22:21.997Z",
+          "checked_at": "2026-09-09T04:36:54.584Z",
           "fingerprint": "65bf05d682b1601675c0983a98a31ea1ae357e821796ed87f6a825c844f41862",
           "issue_codes": [],
           "warning_codes": []
@@ -56122,7 +55780,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -56137,7 +55795,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -56174,11 +55832,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1702.3666166666667,
+        "source_age_minutes": 1716.9097333333334,
         "detection_delay_minutes": 607.43545,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1094.9311666666667,
+        "queue_age_minutes": 1109.4742833333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -56187,7 +55845,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [],
         "warning_codes": []
@@ -56262,7 +55920,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -56275,7 +55933,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -56311,11 +55969,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1702.3666166666667,
+        "source_age_minutes": 1716.9097333333334,
         "detection_delay_minutes": 607.43545,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1094.9311666666667,
+        "queue_age_minutes": 1109.4742833333332,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -56324,7 +55982,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [],
         "warning_codes": []
@@ -60572,7 +60230,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T04:22:21.997Z",
+          "checked_at": "2026-09-09T04:36:54.584Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -68148,7 +67806,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T04:22:21.997Z",
+          "checked_at": "2026-09-09T04:36:54.584Z",
           "fingerprint": "23f60f41c7e50322a66d673ffbc4f4fa77d3d18dc42146d6ae3e57aa6991c72f",
           "issue_codes": [],
           "warning_codes": []
@@ -73830,7 +73488,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "5fdaa17f0750c1257e40d9a2de0c9bbcabee23271c5da956c713e7b5c7d92de6",
@@ -73843,7 +73501,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-09T02:22:22.812Z",
       "event_detected_at": "2026-09-09T02:22:22.812Z",
       "event_id": "event-9c0ee812d27e4634c540",
@@ -73884,20 +73542,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1702.3666166666667,
+        "source_age_minutes": 1716.9097333333334,
         "detection_delay_minutes": 1582.3802,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 119.98641666666667,
+        "queue_age_minutes": 134.52953333333335,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
-        "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "62b1bcd93cb96018b47dea8bf4beaacafc77c54dc90316f3ee3b26841d15c0c6",
         "issue_codes": [],
         "warning_codes": []
@@ -76058,9 +75716,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T10:22:21.997Z",
+        "expires_at": "2026-09-09T10:36:54.584Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -91476,9 +91134,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "61dd35c8e2e4f05a2b64bdc95313fd7c05533e5088e8d7050ab841b17a574a74",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T10:22:21.997Z",
+        "expires_at": "2026-09-09T10:36:54.584Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -132024,7 +131682,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:22:21.997Z"
+          "checked_at": "2026-09-09T04:36:54.584Z"
         }
       ],
       "content_hash": "5e965bbef425b12832f3fc9122bf71422f670cef79d00dbad3ab788f94c450ed",
@@ -132039,7 +131697,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T04:22:21.997Z",
+      "updated_at": "2026-09-09T04:36:54.584Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -132075,11 +131733,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3142.3666166666667,
+        "source_age_minutes": 3156.9097333333334,
         "detection_delay_minutes": 546.8893833333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2595.4772333333335,
+        "queue_age_minutes": 2610.02035,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -132088,7 +131746,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:22:21.997Z",
+        "checked_at": "2026-09-09T04:36:54.584Z",
         "fingerprint": "fd023c485e0b3ed33b65d77ed5513973bc866b82062ccb744777b35c0783a309",
         "issue_codes": [],
         "warning_codes": []
@@ -187769,7 +187427,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T04:22:21.997Z",
+          "checked_at": "2026-09-09T04:36:54.584Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -232163,7 +231821,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T04:22:21.997Z",
+          "checked_at": "2026-09-09T04:36:54.584Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -267427,6 +267085,395 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
+      }
+    },
+    {
+      "story_id": "wt-990631d7dc3586cb",
+      "slug": "nach-9-11-wie-sich-die-stimmung-gegenuber-den-usa-drehte-3586cb",
+      "title": "Nach 9/11: Wie sich die Stimmung gegenüber den USA drehte",
+      "queue_source_repartitions": [
+        {
+          "version": 1,
+          "at": "2026-09-09T04:36:54.584Z",
+          "retained_urls": [
+            "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+            "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+            "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+            "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+              "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+              "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-04T11:02:58.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+              "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-04T11:02:58.000Z",
+              "ingested_at": "2026-09-09T04:22:21.997Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        }
+      ],
+      "first_seen": "2026-09-09T04:00:00.000Z",
+      "last_updated": "2026-09-04T11:02:58.000Z",
+      "topic": [
+        "Geopolitik",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+          "title": "Nach 9/11: Wie sich die Stimmung gegenüber den USA drehte",
+          "summary": "Nach dem Terror vom 11. September 2001 ist das Mitgefühl zunächst groß. Die damalige US-Generalkonsulin in Hamburg schildert die Wochen danach - bis zum Irak-Krieg 2003.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T04:00:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "800f01977ce7d01ecc1e53657cb0a0473b9ef3c34555d6a7b1f1a166323d1b14",
+          "source_item_id": "578591e53f8bdfc12e502e2687bd6af908447c42ed583a2a261422222db6d63d",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T04:00:00.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+          "title": "Key post-9/11 air toxicity information was kept secret for 25 years",
+          "summary": "New York Mayor Zohran Mamdani released tens of thousands of previously undisclosed documents on Tuesday detailing what city officials knew about toxic air after the September 11 attacks, as the 25th anniversary approaches and thousands continue to suffer from related illnesses.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T01:44:22.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "8c2d259f05dd0776263f8d68798e84bbaf433699efc562218cf484a219e833a2",
+          "source_item_id": "591bfaa53874afebc1ebb32f0bfef524399b10aefa2d70f693162df8fc4bb396",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T01:44:22.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+          "title": "9/11: Ehemalige US-Generalkonsulin Susan Elbow erinnert sich",
+          "summary": "Susan Elbow war damals seit knapp drei Wochen neue US-Generalkonsulin in Hamburg. Wie blickt sie heute auf das Geschehen?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T18:04:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "6372e2e187692a9add106a84a70646406bb6dab998e2664ad27d9c4a5686d0d5",
+          "source_item_id": "f13186c3501abfedf74cb8933daf4d4e8aa79b879f5d0935b9ce1f7b202ce93b",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T18:04:29.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-gesellschaft",
+          "publisher": "Deutschlandfunk - Gesellschaft",
+          "url": "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
+          "title": "Nach 9/11 - Wie das Hadern mit der Welt die Oberhand gewann",
+          "summary": "Nach den Terroranschlägen vom 11. September 2001 in den USA schien jedes Weltvertrauen naiv zu sein. Trost war kaum möglich, vielmehr bildete sich eine Kultur der Untröstlichkeit. Und eine der Unversöhnlichkeit. Konersmann, Ralf",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:30:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Soziales",
+          "content_hash": "a6c362a441737b53b83c5ab7e9b13e423cf1be107c9c1bcb80c85ce1b57008ed",
+          "source_item_id": "290a99a5bef1697da938de12dd6a3650b786bc8cb0dea81889936dee38c834d8",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "blindspot",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:30:00.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+          "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+          "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:02:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+          "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T11:02:58.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-990631d7dc3586cb-claim-01",
+          "story_id": "wt-990631d7dc3586cb",
+          "claim": "Nach 9/11: Wie sich die Stimmung gegenüber den USA drehte: Nach dem Terror vom 11. September 2001 ist das Mitgefühl zunächst groß. Die damalige US-Generalkonsulin in Hamburg schildert die Wochen danach - bis zum Irak-Krieg 2003.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:36:54.584Z"
+        },
+        {
+          "claim_id": "wt-990631d7dc3586cb-claim-02",
+          "story_id": "wt-990631d7dc3586cb",
+          "claim": "Key post-9/11 air toxicity information was kept secret for 25 years: New York Mayor Zohran Mamdani released tens of thousands of previously undisclosed documents on Tuesday detailing what city officials knew about toxic air after the September 11 attacks, as the 25th anniversary approaches and thousands continue to suffer from related illnesses.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:36:54.584Z"
+        },
+        {
+          "claim_id": "wt-990631d7dc3586cb-claim-03",
+          "story_id": "wt-990631d7dc3586cb",
+          "claim": "9/11: Ehemalige US-Generalkonsulin Susan Elbow erinnert sich: Susan Elbow war damals seit knapp drei Wochen neue US-Generalkonsulin in Hamburg. Wie blickt sie heute auf das Geschehen?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:36:54.584Z"
+        },
+        {
+          "claim_id": "wt-990631d7dc3586cb-claim-04",
+          "story_id": "wt-990631d7dc3586cb",
+          "claim": "Nach 9/11 - Wie das Hadern mit der Welt die Oberhand gewann: Nach den Terroranschlägen vom 11. September 2001 in den USA schien jedes Weltvertrauen naiv zu sein. Trost war kaum möglich, vielmehr bildete sich eine Kultur der Untröstlichkeit. Und eine der Unversöhnlichkeit. Konersmann, Ralf",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-gesellschaft",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:36:54.584Z"
+        },
+        {
+          "claim_id": "wt-990631d7dc3586cb-claim-05",
+          "story_id": "wt-990631d7dc3586cb",
+          "claim": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“: Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:36:54.584Z"
+        }
+      ],
+      "content_hash": "ca987cdba146ffe0a29a7038dad4420d582fd6ac6e9d2c3031839d65bc2e33da",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": false,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-09T04:36:54.584Z",
+      "event_first_seen_at": "2026-09-09T04:22:21.997Z",
+      "event_detected_at": "2026-09-09T04:22:21.997Z",
+      "event_id": "event-4282989facaefbf32544",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [
+          "interview_or_speech"
+        ],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 36.909733333333335,
+        "detection_delay_minutes": 22.366616666666665,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 14.543116666666666,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 92,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T04:36:54.584Z",
+        "fingerprint": "1f0399b4b6fd76cc47bf8c9b716cb9ba45e7e44007c44cffdf009c6aeafca777",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
