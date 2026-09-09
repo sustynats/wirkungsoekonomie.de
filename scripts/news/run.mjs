@@ -41,7 +41,7 @@ import { isolatedSourceThrottleWithRecentCoverage, sourceCoverageDegraded } from
 import { operatingCostSummary, usageCostStartedAt } from "./operating-cost.mjs";
 import { regionalCoverage } from "./regional-coverage.mjs";
 import { createPublicationDateRecovery } from "./publication-date.mjs";
-import { EVENT_RELEVANCE_VERSION, balanceEventQueue, categoryCoverage, updateEventLifecycle } from './event-relevance.mjs';
+import { EVENT_RELEVANCE_VERSION, EVENT_EDITORIAL_POLICY_VERSION, needsEventPolicyReview, balanceEventQueue, categoryCoverage, updateEventLifecycle } from './event-relevance.mjs';
 import { observedMajorEvents, missedNewsRechecks, coverageAudit } from './coverage-audit.mjs';
 import { runActiveDiscovery, agendaSignal } from './active-discovery.mjs';
 
@@ -179,6 +179,17 @@ function mergeSources(existing = [], incoming = []) {
 
 function storyContentHash(story) {
   return sha256(story.sources.map((source) => `${source.url}:${source.content_hash}`).sort().join("\n"));
+}
+
+// A ranking rollout must not purchase another analysis of identical published
+// evidence. Preserve explicit followups/deepening and every changed source.
+export function unchangedRankingBackfill(candidate) {
+  const old = candidate.existing_story;
+  return Boolean(old?.published && candidate.reassessment && !candidate.followup_due && !candidate.deepening_due
+    && !candidate.consolidation && !old.pending_update?.consolidation
+    && candidate.content_hash === old.content_hash
+    && JSON.stringify((candidate.sources || []).map(sourceReviewFingerprint).sort())
+      === JSON.stringify((old.sources || []).map(sourceReviewFingerprint).sort()));
 }
 
 function storyComparisonText(story) {
@@ -391,6 +402,7 @@ function rejectedRecord(record, now, qualityErrors) {
     rejection: {
       at: now,
       filter_version: RELEVANCE_FILTER_VERSION,
+      editorial_policy_version: EVENT_EDITORIAL_POLICY_VERSION,
       reason_code: "FILTER_NOT_MATERIAL",
       quality_errors: qualityErrors,
     },
@@ -1050,6 +1062,7 @@ export async function runWirkungsticker(options = {}) {
   const lookbackMs = Number(registry.policy.bootstrap_lookback_hours || 36) * 60 * 60 * 1000;
   const backfillCutoff = nowDate.getTime() - RELEVANCE_BACKFILL_DAYS * 24 * 60 * 60 * 1000;
   const needsRelevanceBackfill = state.relevance_filter_version !== RELEVANCE_FILTER_VERSION;
+  const publishedSourceUrls = new Set(storyStore.stories.filter(s => s.published).flatMap(s => (s.sources || []).map(source => source.url)));
   const futureToleranceMs = 10 * 60 * 1000;
   const changedItems = [];
   const freshItemIds = new Set();
@@ -1066,7 +1079,7 @@ export async function runWirkungsticker(options = {}) {
       bumpSourceFunnel(sourceFunnel, item.source_id, "future_dated_items");
       continue;
     }
-    const backfillCandidate = needsRelevanceBackfill && (!published || published >= backfillCutoff);
+    const backfillCandidate = needsRelevanceBackfill && !publishedSourceUrls.has(item.url) && (!published || published >= backfillCutoff);
     if (!previous && published && published < cutoff && !backfillCandidate) continue;
     if (!previous || backfillCandidate) {
       changedItems.push(item);
@@ -1126,9 +1139,7 @@ export async function runWirkungsticker(options = {}) {
     .map((cluster) => createCandidate(
       cluster,
       now,
-      Boolean(needsRelevanceBackfill
-        && cluster.existing_story?.published
-        && cluster.existing_story?.retirement?.reason_code !== "MERGED_INTO_LIVING_FILE"),
+      Boolean(cluster.existing_story?.pending_update?.reassessment),
       cluster.sources.some((source) => freshItemIds.has(source.item_id)),
     ));
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
@@ -1143,7 +1154,7 @@ export async function runWirkungsticker(options = {}) {
       const retryAfter = story.pending_update?.quality_retry_after || story.quality_retry_after || null;
       const changedRules = story.ai_retry?.version !== AI_PROCESSING_VERSION
         && shouldRetryQualityGate(reason, qualityErrors, retryCount);
-      return changedRules || dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id) || retryableReasons.has(reason) || shouldRetryQualityGate(reason, qualityErrors, retryCount, retryAfter, now);
+      return (eventAuditEnabled && needsEventPolicyReview(story, now)) || changedRules || dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id) || retryableReasons.has(reason) || shouldRetryQualityGate(reason, qualityErrors, retryCount, retryAfter, now);
     })
     .filter((story) => (story.pending_update?.sources || story.review_checkpoint?.sources || story.sources || []).some((source) => Date.parse(source.published_at || 0) <= nowDate.getTime() + futureToleranceMs))
     .map((story) => {
@@ -1243,9 +1254,16 @@ export async function runWirkungsticker(options = {}) {
   // Check size before assigning paid slots. A blocked file must never starve the
   // next eligible story or be mislabeled as an outage of the AI provider.
   const ready = eligible.filter(candidate => {
+    if (eventAuditEnabled && unchangedRankingBackfill(candidate)) {
+      const { pending_update: _pendingUpdate, ...preserved } = candidate.existing_story;
+      byId.set(candidate.story_id, { ...preserved, review_checkpoint: { ...reviewCheckpoint(candidate, now, 'no_material_update'), reviewed_by: 'unchanged_published_evidence' } });
+      report.local_queue_completed = Number(report.local_queue_completed || 0) + 1;
+      newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: 'unchanged_published_evidence', reason: 'ranking_change_is_not_new_evidence' });
+      return false;
+    }
     // One durable retry clock for fresh feed arrivals, deepening and followups.
     // New evidence or changed processing rules may retry immediately.
-    if (retryCoolingDown(candidate, now)) {
+    if (retryCoolingDown(candidate, now) && !(eventAuditEnabled && needsEventPolicyReview(candidate.existing_story || {}, now))) {
       report.ai_retries_cooling_down = Number(report.ai_retries_cooling_down || 0) + 1;
       return false;
     }

@@ -3,11 +3,11 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { preAnalyzeStory, clusterItems, claimLedgerFor, parseFeed, buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
 import { evidenceGroups, eventCompatibility } from '../../scripts/news/newsroom.mjs';
-import { scoreEvent, balanceEventQueue, updateEventLifecycle, EVENT_RELEVANCE_VERSION } from '../../scripts/news/event-relevance.mjs';
+import { scoreEvent, balanceEventQueue, updateEventLifecycle, EVENT_RELEVANCE_VERSION, EVENT_EDITORIAL_POLICY_VERSION, needsEventPolicyReview } from '../../scripts/news/event-relevance.mjs';
 import { coverageAudit, observedMajorEvents, missedNewsRechecks } from '../../scripts/news/coverage-audit.mjs';
 import { agendaSignal, extractDiscoveryMetadata, runActiveDiscovery, DISCOVERY_LIMITS } from '../../scripts/news/active-discovery.mjs';
 import { normalizeNewsRegistry, registryErrors } from '../../scripts/news/registry.mjs';
-import { runWirkungsticker, partitionAiQueue } from '../../scripts/news/run.mjs';
+import { runWirkungsticker, partitionAiQueue, unchangedRankingBackfill } from '../../scripts/news/run.mjs';
 import { auditDay, auditMarkdown } from '../../scripts/news/audit-events.mjs';
 
 const now = '2026-09-09T15:00:00.000Z';
@@ -89,6 +89,38 @@ test('missed checks have a hard four-event cap and unchanged hashes do not loop'
   observed[0].input_hash='changed';
   assert.equal(missedNewsRechecks({observed:observed.slice(0,4),stories:[],state,now:'2026-09-09T17:00:00Z'}).events.length,1);
 });
+test('event-policy change revisits only recent unpublished materiality rejections once',()=>{
+  const old={...story([item()]),published:false,rejection:{quality_errors:['AI_MATERIALITY_TOO_LOW']}};
+  assert.equal(needsEventPolicyReview(old,now),true);
+  assert.equal(needsEventPolicyReview({...old,published:true},now),false);
+  assert.equal(needsEventPolicyReview({...old,rejection:{quality_errors:['AI_EVIDENCE_INSUFFICIENT']}},now),false);
+  assert.equal(needsEventPolicyReview({...old,rejection:{...old.rejection,editorial_policy_version:EVENT_EDITORIAL_POLICY_VERSION}},now),false);
+  assert.equal(needsEventPolicyReview(old,'2026-09-12T15:00:00Z'),false);
+});
+test('identical published evidence in ranking backfill settles locally, not a changed source or due followup',()=>{
+  const old={...story([item()]),published:true,content_hash:'same'};
+  const current={...old,existing_story:old,reassessment:true};
+  assert.equal(unchangedRankingBackfill(current),true);
+  assert.equal(unchangedRankingBackfill({...current,followup_due:true}),false);
+  assert.equal(unchangedRankingBackfill({...current,deepening_due:true}),false);
+  assert.equal(unchangedRankingBackfill({...current,sources:[item({summary:'Eine neue, anders belegte Aussage.'})]}),false);
+});
+test('coverage resolves old raw fragments to one story and shows its recorded selection score',()=>{
+  const observed=observedMajorEvents([item()],now);
+  const original=observed[0];const extra={...original,event_id:'old-event',story_id:'old-story',sources:[item({url:'https://example.org/second'})]};
+  const stored={...story([...original.sources,...extra.sources]),published:false};
+  const decisions=[{story_id:stored.story_id,event_id:original.event_id,at:now,decision:'selected_for_verification',score:{...original.preanalysis.event_score,total_relevance_score:80,priority:'TOP'}}];
+  const audit=coverageAudit({observed:[original,extra],stories:[stored],decisions,selectedIds:new Set([stored.story_id]),now});
+  assert.equal(audit.top_events.length,1);assert.equal(audit.counts.selected,1);
+  assert.equal(audit.top_events[0].total_relevance_score,80);assert.equal(audit.top_events[0].score_basis,'recorded_selection');
+  assert.equal(audit.top_events[0].sources.length,2);
+});
+test('publication instructions require new information, not a new decision or measured effects',()=>{
+  const s=story([item()]);s.claims=claimLedgerFor(s.sources,s.story_id,now);s.preanalysis=preAnalyzeStory(s,now);
+  const prompt=buildAnalysisPrompt([s]);
+  assert.match(prompt,/Kein Beschlusszwang/);assert.match(prompt,/allein rechtfertigt kein not_material/);
+  assert.match(prompt,/tragfähige Evidenz/);assert.match(prompt,/Umsetzung nicht erfinden/);
+});
 test('active index search is bounded, rotates, excludes disabled sources and never bypasses robots errors',async()=>{
   const endpoints=Array.from({length:4},(_,i)=>({id:`index-${i}`,source_id:'test',url:`https://example.org/index-${i}`,type:'official_rss',enabled:true,access_reviewed_at:'2026-09-09',evidence_url:'https://example.org/terms',scope:'metadata'}));
   const registry=normalizeNewsRegistry({sources:[source],policy:{active_discovery:{endpoints}}});
@@ -135,14 +167,16 @@ test('audit CLI core is read-only; missing current input remains absent, not inv
 test('the real runner excludes disabled raw sources from rechecks and performs zero paid calls for duplicate input',async()=>{
   const rss=`<rss><channel><item><title>${item().title}</title><link>${item().url}</link><description>${item().summary}</description><pubDate>Wed, 09 Sep 2026 14:30:00 GMT</pubDate></item></channel></rss>`;
   const parsed=parseFeed(rss,source)[0];let calls=0,captured;
+  for (const relevanceVersion of [EVENT_RELEVANCE_VERSION, 'previous-ranking-version']) {
   const report=await runWirkungsticker({dryRun:true,now,registry:{sources:[source],policy:{event_relevance:{enabled:true}}},
-    state:{source_status:{},seen_items:{[parsed.item_id]:{content_hash:parsed.content_hash,url:parsed.url,source_id:'test',published_at:parsed.published_at,last_seen:now}},pending_story_ids:[],relevance_filter_version:EVENT_RELEVANCE_VERSION,
+    state:{source_status:{},seen_items:{[parsed.item_id]:{content_hash:parsed.content_hash,url:parsed.url,source_id:'test',published_at:parsed.published_at,last_seen:now}},pending_story_ids:[],relevance_filter_version:relevanceVersion,
       missed_news_rechecks:{}},storyStore:{stories:[{...story([parsed]),published:true,listed:true,slug:'test',analysis:{},published_at:now,last_updated:now}]},usage:{runs:[]},
     newsroom:{source_items:{foreign:item({source_id:'disabled',url:'https://foreign.example/a'})},events:{},event_sources:[],decisions:[],discovery_candidates:[]},budgetFx:{rate_date:'2026-09-09',rate_usd_per_eur:1.16},
     fetchFeedImpl:async()=>({body:rss,final_url:source.feed_url}),callAiImpl:async()=>{calls++;throw Error('Must not call')},captureState:value=>captured=value});
   assert.equal(calls,0);assert.equal(report.ai_calls,0);assert.equal(report.estimated_cost_usd,0);
   assert.ok(report.event_coverage.top_events.every(row=>row.sources.every(s=>s.source_id==='test')));
   assert.ok(captured.newsroom.source_items.foreign,'Historical record is retained, not silently deleted');
+  }
 });
 test('fifteen newly discovered reports use one existing verification slot, not fifteen',async()=>{
   const rss=`<rss><channel>${Array.from({length:15},(_,i)=>`<item><title>Generaldebatte im Bundestag: Beitrag ${i}</title><link>https://example.org/debate-${i}</link><description>Der Kanzler und die Opposition diskutieren die Haushaltsprioritäten.</description><pubDate>Wed, 09 Sep 2026 14:30:00 GMT</pubDate></item>`).join('')}</channel></rss>`;
