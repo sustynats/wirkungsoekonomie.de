@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { numberTokens, evidenceNumberTokens } from "./numeric-evidence.mjs";
 import { sourceAccess } from "./access-policy.mjs";
 import { courtCaseRelation } from "./court-case-identity.mjs";
+import { structuredEventIdentity } from './event-identity.mjs';
 
 const hash = (value) => createHash("sha256").update(String(value)).digest("hex").slice(0, 20);
 const ms = (value) => Date.parse(value || "") || 0;
@@ -30,6 +31,7 @@ export function annotateSourceItem(item, source, now) {
     ...item,
     source_item_id: item.item_id || `item-${hash(item.url)}`,
     publisher_id: publisherId,
+    ...(source.publisher_group_id ? { publisher_group_id: source.publisher_group_id } : {}),
     publisher_kind: source.publisher_kind || (item.primary_source ? "institution" : "journalism"),
     source_role: source.source_role || (item.primary_source ? "institutional_statement" : "journalistic_report"),
     language: source.language || "de",
@@ -63,11 +65,12 @@ export function evidenceGroups(sources = []) {
     const a = sources[i], b = sources[j];
     const separateStudies = a.research_metadata?.doi && b.research_metadata?.doi && a.research_metadata.doi !== b.research_metadata.doi;
     const samePublisher = !separateStudies && (a.publisher_id || a.source_id) === (b.publisher_id || b.source_id);
+    const sameGroup = !separateStudies && a.publisher_group_id && a.publisher_group_id === b.publisher_group_id;
     const sameOrigin = a.provenance?.origin && a.provenance.origin === b.provenance?.origin;
     const copied = sharedRun(`${a.title} ${a.summary}`, `${b.title} ${b.summary}`);
-    if (samePublisher || sameOrigin || copied) {
+    if (samePublisher || sameGroup || sameOrigin || copied) {
       parent[root(i)] = root(j);
-      const dependency = { source_ids: [a.source_id, b.source_id].sort(), reason: samePublisher ? "same_publisher" : sameOrigin ? "shared_origin" : "shared_wording_possible_syndication" };
+      const dependency = { source_ids: [a.source_id, b.source_id].sort(), reason: samePublisher ? "same_publisher" : sameGroup ? "same_publisher_group" : sameOrigin ? "shared_origin" : "shared_wording_possible_syndication" };
       const key = JSON.stringify(dependency);
       const previous = reasons.get(key);
       if (previous) previous.document_pairs += 1;
@@ -147,6 +150,11 @@ export function eventCompatibility(a, b) {
   const structuredFactMatch = sharedFacts.length > 0 && sharedPlaces.length > 0 && sharedDurations.length > 0 && sharedAnchors.length > 0;
   const eventTypesDiffer = left.event_type !== "other" && right.event_type !== "other" && left.event_type !== right.event_type;
   const geographyConflict = left.geography.length && right.geography.length && !left.geography.some((region) => right.geography.includes(region));
+  const structuredLeft = structuredEventIdentity(a), structuredRight = structuredEventIdentity(b);
+  if (structuredLeft && structuredRight && !geographyConflict && courtCase.status === 'unestablished') {
+    return { same_event: structuredLeft.key === structuredRight.key, related: structuredLeft.institution === structuredRight.institution,
+      reason: structuredLeft.key === structuredRight.key ? 'institution_proceeding_day' : 'different_proceeding_day' };
+  }
   if (courtCase.status === "shared") {
     // The same proceeding can have later judgments or other procedural steps.
     // Keep those as related context rather than collapsing them by case number.

@@ -118,6 +118,17 @@ export function registryErrors(registry) {
       try { if (new URL(url).protocol !== "https:") throw new Error(); } catch { errors.push(`SOURCE_HTTPS_REQUIRED:${source.source_id}`); }
     }
   }
+  const discoveryIds = new Set();
+  for (const endpoint of registry.policy?.active_discovery?.endpoints || []) {
+    const source = registry.sources.find(item => item.source_id === endpoint.source_id);
+    if (!endpoint.id || discoveryIds.has(endpoint.id)) errors.push(`DISCOVERY_ID_INVALID:${endpoint.id}`);
+    discoveryIds.add(endpoint.id);
+    if (!endpoint.enabled) continue;
+    if (!source?.enabled || !sourceAccess(source).allowed) errors.push(`DISCOVERY_SOURCE_NOT_ALLOWED:${endpoint.id}`);
+    if (!/^https:\/\//.test(endpoint.url || '') || !safeHost(endpoint.url) || safeHost(endpoint.url) !== safeHost(source?.url)) errors.push(`DISCOVERY_ORIGIN_INVALID:${endpoint.id}`);
+    if (!Number.isFinite(Date.parse(endpoint.access_reviewed_at)) || !endpoint.evidence_url || !endpoint.scope) errors.push(`DISCOVERY_REVIEW_MISSING:${endpoint.id}`);
+    if (!['official_rss', 'news_sitemap'].includes(endpoint.type)) errors.push(`DISCOVERY_ADAPTER_INVALID:${endpoint.id}`);
+  }
   return errors;
 }
 

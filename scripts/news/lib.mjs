@@ -14,6 +14,7 @@ import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-ada
 import { livingFileMatch, subjectConflict, matchingStories, isMerged, documentKey } from "./living-files.mjs";
 import { compactEvidenceSegments, serializeEvidencePackets, expandEvidenceSegments, expandPacketTransport } from "./evidence-packets.mjs";
 import { MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, detectMediaImpactTrigger, mediaImpactValidationErrors, mediaTriggerForAnalysis } from "./media-impact.mjs";
+import { scoreEvent, EVENT_RELEVANCE_VERSION } from './event-relevance.mjs';
 
 const STOPWORDS = new Set([
   "aber", "alle", "als", "auch", "auf", "aus", "bei", "bis", "das", "dass", "dem", "den", "der", "des", "die", "ein", "eine", "einer", "eines", "fuer", "für", "hat", "im", "in", "ist", "mit", "nach", "nicht", "oder", "sich", "sind", "und", "vom", "von", "vor", "werden", "wird", "zur", "zum",
@@ -500,7 +501,7 @@ export function existingStoryMatch(item, entry, now) {
   const anchors = [rooted.sources[0], { ...rooted.sources[0], title: entry.story.title }].filter(Boolean);
   if (anchors.some(source => {
     const match = eventCompatibility(item, source);
-    return match.same_event && match.reason === 'structured_event_facts';
+    return match.same_event && ['structured_event_facts', 'institution_proceeding_day'].includes(match.reason);
   })) return 0.98;
   return Math.max(0, ...anchors.filter((source) => eventCompatibility(item, source).same_event).map((source) => storySimilarity(item.title, source.title)));
 }
@@ -633,7 +634,12 @@ export function claimLedgerFor(items, storyId, checkedAt) {
 export function preAnalyzeStory(story, now = new Date().toISOString()) {
   const combined = story.sources.map((source) => `${source.title} ${source.summary}`).join(" ");
   const classifications = story.sources.map((source) => classifyItem(source, source, now));
-  const strongest = classifications.sort((a, b) => b.score - a.score)[0];
+  const strongest = [...classifications].sort((a, b) => b.score - a.score)[0];
+  const factualSources = story.sources.filter((source,index) => !(classifications[index].context_only
+    && (classifications[index].context_formats.some(format => ['commentary_or_column','service_explainer'].includes(format))
+      || /\b(?:lehren|analyse|einordnung|kommentar|meinung|kolumne)\b/i.test(source.title))));
+  const factualBase = Math.max(0,...story.sources.map((source,index)=>factualSources.includes(source)?classifications[index].score:0));
+  const eventScore = scoreEvent({ ...story, sources: factualSources }, now, factualBase);
   const topics = [...new Set(classifications.flatMap((entry) => entry.topics))];
   const dimensions = [...new Set(classifications.flatMap((entry) => entry.dimensions))];
   const mechanismHints = [];
@@ -643,17 +649,18 @@ export function preAnalyzeStory(story, now = new Date().toISOString()) {
   if (/\b(information|transparenz|daten|bericht|medien)\w*/i.test(combined)) mechanismHints.push("Veränderung von Informations- und Entscheidungsgrundlagen");
   if (!mechanismHints.length) mechanismHints.push("Wirkmechanismus anhand der Primärquelle noch zu konkretisieren");
   return {
-    filter_version: "4.0",
+    filter_version: EVENT_RELEVANCE_VERSION,
     material_development_review: materialDevelopmentReview(story.sources, story.existing_story?.published ? story.existing_story.sources : [], now),
-    internal_relevance_score: strongest.score,
-    public_relevance: strongest.relevance,
+    internal_relevance_score: eventScore.total_relevance_score,
+    public_relevance: eventScore.total_relevance_score >= 68 ? 'sehr hoch' : eventScore.total_relevance_score >= 48 ? 'hoch' : eventScore.total_relevance_score >= 30 ? 'mittel' : 'gering',
+    event_score: eventScore,
     topics,
     dimensions,
     status: strongest.status,
     analysis_type: strongest.analysis_type,
-    news_value_signals: [...new Set(classifications.flatMap((entry) => entry.news_value_signals))],
+    news_value_signals: [...new Set([...classifications.flatMap((entry) => entry.news_value_signals), ...eventScore.signals])],
     context_formats: [...new Set(classifications.flatMap((entry) => entry.context_formats))],
-    context_only: classifications.every((entry) => entry.context_only),
+    context_only: !eventScore.signals.length && classifications.every((entry) => entry.context_only),
     mechanism_hints: mechanismHints,
     materiality_factors: [
       "Zahl und Art möglicher Wirkungsempfänger",
@@ -841,7 +848,10 @@ export function analysisInputFor(stories) {
       source_published_at: related.source_published_at,
       source_urls: (related.source_urls || []).slice(0, 3),
     })),
-    woek_preanalysis: story.preanalysis,
+    // Internal scheduling telemetry is not evidence. Keep it out of paid
+    // context; a changing clock/coverage score must not inflate long dossiers.
+    woek_preanalysis: story.preanalysis ? Object.fromEntries(['material_development_review', 'news_value_signals', 'context_formats', 'mechanism_hints']
+      .filter(key => story.preanalysis[key] !== undefined).map(key => [key, story.preanalysis[key]])) : undefined,
     previous_quality_errors: story.existing_story?.pending_update?.quality_errors || story.existing_story?.quality_errors || [],
     previous_quality_retry_count: Number(story.existing_story?.pending_update?.quality_retry_count ?? story.existing_story?.quality_retry_count ?? 0),
     evidence_groups: evidenceGroups(story.sources),
@@ -890,7 +900,8 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
     "Prüfe drei voneinander unabhängige Pflichtgates: (1) echte neue Information, (2) materielle Folgenrelevanz und (3) tragfähige Evidenz. Nur wenn alle drei tragen, darf publication_recommendation=true sein.",
     "Verwirf ungeeignete Kandidaten früh und knapp: Für eine Ablehnung liefere ausschließlich story_id, publication_recommendation:false und rejection:{code,reason}. Erlaubte codes: not_material, no_new_information, insufficient_evidence, superseded. reason muss die konkrete sachliche Ursache in 30 bis 300 Zeichen nennen. Keine langen Artikel oder Folgenanalysen für abgelehnte Kandidaten erzeugen.",
     "review_mode: historical_relevance_reassessment beurteilt die Neuigkeit zum Quelldatum; existing_history derselben Akte ist kein Dublettenbeweis. related_ticker_history bezeichnet andere Akten: source_published_at vergleichen. Ein späterer Rückblick entwertet keine frühere Originalmeldung; ein Rückblick ohne neue Information ist aber eine Dublette. new_or_updated_story verlangt eine neue materielle Entwicklung gegenüber der Vorgeschichte.",
-    "Materiell NEU: Änderung von Regeln, Anreizen, Kapitalflüssen, Märkten, Infrastruktur oder MPD-Zuständen; oder neue belastbare Evidenz dazu.",
+    "Materiell NEU: Änderung von Regeln, Anreizen, Kapitalflüssen, Märkten, Infrastruktur oder MPD-Zuständen; oder neue belastbare Evidenz dazu. Kein Beschlusszwang: Auch eine zentrale Haushalts-/Parlamentsdebatte, zurechenbare politisch folgenreiche Position, neue Umfragedaten, schwere Sicherheitslage oder bedeutender Technologie-/Standortvorgang kann eine Nachricht sein. Begründe den konkreten neuen Informationswert, nicht nur die Form oder die Tonalität.",
+    "Prüfpriorität ist keine Freigabe. Erwartungen sind keine Umsetzung. Neu belegte Debatten/Positionen/Daten: new_evidence oder material_update, kein erfundener Beschluss. Bei Sicherheitslagen gesicherten Kern von Verdacht/Opferzahl/Motiv trennen.",
     "Materialität: Zahl/Art Betroffener, Intensität, Dauer, Reversibilität, Systemrelevanz, Kaskaden, Verteilung, Resilienz, demokratische Korrekturfähigkeit. Mindestens zwei verschiedene substanzielle Faktoren oder einer außergewöhnlich stark. Resonanz/Aufmerksamkeit sind keine materiellen Faktoren und keine Ausnahme.",
     "Konkrete Materialität begründen: Lokaler Einzelfall, Produkt- oder Gebührenänderung reicht ohne belegte Intensität, Breite oder Präzedenzwirkung nicht. Denkbare Übertragbarkeit allein reicht nicht. Die Publikationsform ist niemals allein ein Ausschlussgrund: Auch regelmäßige Arbeitsmarkt-/Preis-/Gesundheits-/Klimastatistik, Interview, Rede oder parlamentarische Antwort kann neue Zustandsinformation, zurechenbare Entscheidung, verbindliche Zusage, Evidenz oder Kursänderung liefern.",
     "Ablehnen: bloße Meinung, Wiederholung, Spekulation, Zeremonie, Routinezahl, Börsen-/Tenderzahl, Frage ohne materielle Antwort oder formales Verfahren ohne relevanten Wirkpfad. Quellenrang und Aufmerksamkeit sind kein Relevanzbeweis. Sammel-/Rückblicksmeldung bereits erfasster Entscheidungen ohne neue Information: related_ticker_history prüfen, duplicate_without_new_information.",

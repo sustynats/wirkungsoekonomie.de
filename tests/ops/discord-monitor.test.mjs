@@ -77,6 +77,18 @@ test('transient outage stays quiet; confirmed outage and recovery each notify on
 test('no new articles is not a pipeline failure', () => {
   assert.ok(evaluateChecks(fixture(), now).checks.every(c => c.ok));
 });
+test('fresh coverage gaps are distinct editorial alerts, not provider outages or stale alarms',()=>{
+  const d=fixture();d.report.event_coverage={checked_at:now,counts:{clustered_major:4,published:1,potential_missed:3},alerts:[{code:'CATEGORY_COVERAGE_GAP',severity:'warning',category:'economy'}]};
+  const result=evaluateChecks(d,now);
+  assert.equal(result.checks.find(check=>check.id==='editorial-coverage').ok,false);
+  assert.equal(result.checks.find(check=>check.id==='provider').ok,true);
+  assert.match(dailyReport(result.summary,result.checks),/Ereignischeck/);
+  const first=advanceState(null,result.checks,result.summary,now);
+  const again=advanceState(first,result.checks,result.summary,'2026-09-04T06:15:00Z');
+  assert.ok(again.outbox.some(row=>row.content.includes('WÖk-Abdeckungshinweis')));
+  d.report.event_coverage.checked_at='2026-09-03T12:00:00Z';
+  assert.equal(evaluateChecks(d,now).checks.find(check=>check.id==='editorial-coverage').ok,true);
+});
 test('green runs without queue progress trigger a distinct flow warning, not a provider failure', () => {
   const data = fixture();
   data.report.queue = { before: 27, after: 28, capacity: 26, oldest_minutes: 900, status: 'draining' };
