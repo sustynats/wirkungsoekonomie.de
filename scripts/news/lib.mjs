@@ -15,6 +15,7 @@ import { livingFileMatch, subjectConflict, matchingStories, isMerged, documentKe
 import { compactEvidenceSegments, serializeEvidencePackets, expandEvidenceSegments, expandPacketTransport } from "./evidence-packets.mjs";
 import { MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, detectMediaImpactTrigger, mediaImpactValidationErrors, mediaTriggerForAnalysis } from "./media-impact.mjs";
 import { scoreEvent, EVENT_RELEVANCE_VERSION } from './event-relevance.mjs';
+import { explicitEventPlaces } from './event-identity.mjs';
 
 const STOPWORDS = new Set([
   "aber", "alle", "als", "auch", "auf", "aus", "bei", "bis", "das", "dass", "dem", "den", "der", "des", "die", "ein", "eine", "einer", "eines", "fuer", "für", "hat", "im", "in", "ist", "mit", "nach", "nicht", "oder", "sich", "sind", "und", "vom", "von", "vor", "werden", "wird", "zur", "zum",
@@ -475,8 +476,23 @@ export function anchoredSources(story) {
   const leading = story.sources?.[0];
   if (!leading) return [];
   const anchor = { ...story, sources: [leading] };
-  return story.sources.filter(source => source === leading || (!subjectConflict(source, anchor)
+  const direct = story.sources.filter(source => source === leading || (!subjectConflict(source, anchor)
     && (livingFileMatch(source, anchor).score >= 0.98 || eventCompatibility(source, leading).same_event)));
+  // An already anchored article can change its headline/URL without repeating
+  // the place in the new feed excerpt. Preserve that document identity, never
+  // form an extra hop through a merely similar/contextual source.
+  return story.sources.filter(source => direct.includes(source) || (!subjectConflict(source, anchor)
+    && !/\b(?:Rückblick|Rueckblick|Jahrestag|Prozess|Urteil|Vorjahr|damals)\b|\b(?:weiterer|zweiter|erneuter|neuer)\s+(?:Vorfall|Verdachtsfall|Einsatz|Sprengstofffund)\b/i.test(`${source.title} ${source.summary}`)
+    && direct.some(previous => {
+      const key = documentKey(source.url);
+      const gap = Math.abs(Date.parse(source.published_at) - Date.parse(previous.published_at));
+      const places = explicitEventPlaces(source), oldPlaces = explicitEventPlaces(previous);
+      return key && key === documentKey(previous.url) && Number.isFinite(gap) && gap <= 6 * 3600000
+        && places.length <= 1 && oldPlaces.length <= 1
+        && !(places.length && oldPlaces.length && places[0] !== oldPlaces[0])
+        && !subjectConflict(source, previous)
+        && eventCompatibility({ ...source, url: previous.url }, previous).same_event;
+    })));
 }
 
 export function existingStoryMatch(item, entry, now) {
