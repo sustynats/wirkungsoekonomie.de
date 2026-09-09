@@ -1,8 +1,1573 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-09T15:59:40.828Z",
-  "updated_at": "2026-09-09T15:59:40.828Z",
+  "public_updated_at": "2026-09-09T16:09:58.471Z",
+  "updated_at": "2026-09-09T16:09:58.471Z",
   "stories": [
+    {
+      "story_id": "wt-50924fbe12d4ad5f",
+      "slug": "fliegerbombe-in-hamburg-bahrenfeld-evakuierung-lauft-zugverkehr-ruht-d4ad5f",
+      "title": "Fliegerbombe in Hamburg-Bahrenfeld: Evakuierung läuft, Zugverkehr ruht",
+      "first_seen": "2026-09-09T15:57:37.000Z",
+      "last_updated": "2026-09-09T16:14:20.968Z",
+      "published_at": "2026-09-09T16:14:20.968Z",
+      "updated_at": "2026-09-09T16:14:20.968Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+          "title": "Fliegerbombe in Hamburg-Bahrenfeld: Evakuierung läuft, Zugverkehr ruht",
+          "summary": "In Hamburg-Bahrenfeld ist bei Bauarbeiten ein Blindgänger gefunden worden. Der Bereich wird geräumt, der Zugverkehr wurde unterbrochen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:57:37.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "1263684ae224d20f76225f2c3f02d77b91141c1c338d51aa5d94aa1aca175eb0",
+          "source_item_id": "55dd64495ae81ec2670461812dcc43a22f121af6c180b7b1038583c9578d9802",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T15:57:37.000Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-50924fbe12d4ad5f-v1-claim-1",
+          "story_id": "wt-50924fbe12d4ad5f",
+          "claim": "Bei Bauarbeiten in Hamburg-Bahrenfeld wurde ein Blindgänger gefunden.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+              "excerpt_hash": "85409cc58eb902960e16",
+              "checked_at": "2026-09-09T16:14:20.968Z"
+            },
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+              "excerpt_hash": "8f29abc7cfb7911f365f",
+              "checked_at": "2026-09-09T16:14:20.968Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T16:14:20.968Z"
+        },
+        {
+          "claim_id": "wt-50924fbe12d4ad5f-v1-claim-2",
+          "story_id": "wt-50924fbe12d4ad5f",
+          "claim": "Der Bereich wird geräumt und ein Sperrradius von 400 Metern eingerichtet.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+              "excerpt_hash": "a904b97deefe93774d6d",
+              "checked_at": "2026-09-09T16:14:20.968Z"
+            },
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+              "excerpt_hash": "8f29abc7cfb7911f365f",
+              "checked_at": "2026-09-09T16:14:20.968Z"
+            },
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+              "excerpt_hash": "c82dc01dfa25f7124c3d",
+              "checked_at": "2026-09-09T16:14:20.968Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T16:14:20.968Z"
+        },
+        {
+          "claim_id": "wt-50924fbe12d4ad5f-v1-claim-3",
+          "story_id": "wt-50924fbe12d4ad5f",
+          "claim": "S-Bahnen, Regionalverkehr und auch Fernverkehr sind unterbrochen oder fallen aus.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+              "excerpt_hash": "535cb87ef38da747c033",
+              "checked_at": "2026-09-09T16:14:20.968Z"
+            },
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+              "excerpt_hash": "c574cd35d58aa6ebd68e",
+              "checked_at": "2026-09-09T16:14:20.968Z"
+            },
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+              "excerpt_hash": "0d46fe7b5f10db47feaf",
+              "checked_at": "2026-09-09T16:14:20.968Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T16:14:20.968Z"
+        }
+      ],
+      "event_id": "event-363b05fb538f1b5d4238",
+      "event_first_seen_at": "2026-09-09T16:09:58.471Z",
+      "event_detected_at": "2026-09-09T16:09:58.471Z",
+      "verification_started_at": "2026-09-09T16:13:57.971Z",
+      "publish_ready_at": "2026-09-09T16:14:20.968Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-09T18:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T16:09:58.471Z",
+        "fingerprint": "9a472cf8fa433344e1a961ab4034b420ad289efe639beb8fe773eb3bdf5c5c23",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Wann die Entschärfung abgeschlossen ist, bleibt offen.",
+          "source_id": "ndr-info",
+          "expected_by": null,
+          "measurable_indicator": "Meldung über Abschluss oder Fortgang der Entschärfung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-840591c9331a661d",
+          "announced_at": "2026-09-09T15:57:37.000Z",
+          "follow_up_date": "2026-09-16T16:14:20.968Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "6b03d8f06017a6e3072998931b225e2bf2e99603ae58f4541ea0a7000ce74514",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-09T16:14:20.968Z",
+        "sources": [
+          {
+            "source_id": "ndr-info",
+            "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+            "content_hash": "1263684ae224d20f76225f2c3f02d77b91141c1c338d51aa5d94aa1aca175eb0",
+            "excerpt_hash": "ef56e66ccabedf951b2cb914b84429dd89dd83dea69606dfccef6a343859457a",
+            "number_locale": "de",
+            "numbers": [
+              "1",
+              "595937",
+              "2026",
+              "9",
+              "58",
+              "4431",
+              "142",
+              "15",
+              "90.3",
+              "1041",
+              "0",
+              "28000",
+              "3467608",
+              "903",
+              "22",
+              "500",
+              "400",
+              "1000",
+              "83",
+              "85",
+              "115",
+              "9.09",
+              "17"
+            ]
+          }
+        ]
+      },
+      "source_summary": "In Hamburg-Bahrenfeld ist nach Angaben des NDR bei Bauarbeiten eine 500 Pfund schwere englische Fliegerbombe gefunden worden. Laut Bericht liegt der Blindgänger direkt am Bahnhof Diebsteich an der Schleswiger Straße; Feuerwehr und Kampfmittelräumdienst bereiten die Entschärfung vor.\n\nDer Bereich wird geräumt. Genannt werden ein Sperrradius von 400 Metern, mehrere Betriebe und Wohnhäuser im Räumungsbereich sowie ein Warnradius von 1.000 Metern. Betroffen ist auch der Bahnverkehr: S2, S3 und S5 fahren nicht zwischen Altona beziehungsweise Holstenstraße und Eidelstedt, Regionalzüge fallen aus, auch Fernverkehr ist unterbrochen. Wie lange die Entschärfung dauert, ist noch unklar.",
+      "analysis": {
+        "story_id": "wt-50924fbe12d4ad5f",
+        "publication_recommendation": true,
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "In Hamburg-Bahrenfeld läuft nach einem Bombenfund eine Evakuierung, zugleich ist der Zugverkehr beeinträchtigt. Das ist als laufende Entwicklung relevant, weil Infrastruktur, Erreichbarkeit und der Schutz von Anwohnenden unmittelbar betroffen sind.",
+        "detail_summary": "Die Meldung beschreibt einen akuten Sicherheits- und Infrastrukturvorfall: Bei Bauarbeiten wurde in Hamburg-Bahrenfeld eine 500 Pfund schwere Fliegerbombe gefunden, der Bereich wird geräumt und der Bahnverkehr ist unterbrochen. Der Fall ist materiell relevant, weil mehrere Betriebe, Wohnhäuser und verschiedene Zugverbindungen betroffen sind. Der Wirkpfad führt über die Räumung und Sperrung zu einer kurzfristigen Zustandsänderung bei Mobilität, Erreichbarkeit und Nutzung des Umfelds. Mögliche Folge sind weitere Ausfälle, Umleitungen und Verzögerungen bis zur Entschärfung. Die Evidenzlage bleibt vorläufig, weil der Bericht nur eine journalistische Quelle nutzt und der zeitliche Ausgang der Entschärfung offen ist.",
+        "why_relevant": "Akute Evakuierung und Unterbrechung von S-, Regional- und Fernverkehr betreffen Sicherheit, Mobilität und mehrere Nutzergruppen zugleich.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "direction_assessment_version": "1.1",
+        "assessment_frame": {
+          "subject": "Sicherheit und Erreichbarkeit im Bereich Hamburg-Bahrenfeld",
+          "baseline": "Zustand vor Fund, Räumung und Bahnunterbrechung"
+        },
+        "observed_outcome": null,
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Räumung und die Unterbrechung des Bahnverkehrs verschlechtern kurzfristig Sicherheit, Zugänglichkeit und Alltagsmobilität für Anwohnende, Beschäftigte und Reisende im betroffenen Bereich.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Evakuierung, Sperrbereich und Zugausfälle unterbrechen Nutzung und Erreichbarkeit, bis die Bombe entschärft ist.",
+            "source_ids": [
+              "ndr-info"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Aus den Quellen ergibt sich keine belastbare Aussage zu Umwelt- oder Klimawirkungen über den Fund- und Einsatzort hinaus.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Meldung enthält keine Hinweise auf demokratische Entscheidungs-, Beteiligungs- oder Kontrollwirkungen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "importance": "mittel",
+        "impact_potential": "Kurzfristig entstehen Sicherheitsmaßnahmen, Räumung und Verkehrsunterbrechungen. Das betrifft Erreichbarkeit, Arbeitswege und den Betrieb im Umfeld der Fundstelle, ohne dass aus der Quelle schon ein längerfristiger Effekt belegbar wäre.",
+        "impact_risks": [
+          "Verzögerungen und Ausfälle im Bahnverkehr",
+          "Belastung für Anwohnende und Betriebe durch Räumung",
+          "Unklare Dauer der Entschärfung verlängert die Unterbrechung"
+        ],
+        "mechanisms": [
+          "Gefundener Blindgänger löst Sperrung und Räumung aus",
+          "Sperrung der Gleise unterbricht den Zugverkehr",
+          "Evakuierung verschiebt Nutzung und Erreichbarkeit"
+        ],
+        "first_order": [
+          "Räumung von Gebäuden und Sperrbereich",
+          "Unterbrechung von S-Bahn-, Regional- und Fernverkehr"
+        ],
+        "second_order": [
+          "Verzögerungen für Pendlerinnen, Reisende und Betriebe",
+          "Ausweich- und Ersatzverkehr notwendig"
+        ],
+        "third_order": [
+          "Vorübergehende Belastung lokaler Infrastruktur und Alltagsabläufe",
+          "Mögliche Folgekosten durch Betriebsunterbrechungen"
+        ],
+        "systemic_relevance": "Die Wirkung bleibt lokal, betrifft aber mehrere Verkehrsträger und damit die kurzfristige Resilienz des urbanen Verkehrsraums.",
+        "transformation_potential": "Kein Transformationspfad erkennbar; es handelt sich um eine akute Gefahrenabwehr und nicht um eine Regel- oder Strukturreform.",
+        "resilience": "Die Evakuierung und die Sperrung erhöhen den Schutz vor unmittelbaren Schäden, zeigen aber zugleich eine vorübergehende Verwundbarkeit der Verkehrsinfrastruktur.",
+        "side_effects": [
+          "Ersatzverkehr und Umwege",
+          "Belastung für Wartende und Anwohnende",
+          "Vorübergehende Betriebsunterbrechungen"
+        ],
+        "uncertainties": [
+          "Wie lange die Entschärfung dauert, ist noch unklar",
+          "Die Quelle nennt keinen Abschlusszeitpunkt",
+          "Nur eine journalistische Quelle liegt vor"
+        ],
+        "evidence_level": "mittel",
+        "attribution": "NDR berichtet, gestützt auf Feuerwehr, Kampfmittelräumdienst und Polizei. Die Angaben zu Fundort, Sperrradius und Verkehrsausfällen sind berichtet, aber im vorliegenden Datensatz nicht durch eine zweite unabhängige Quelle bestätigt.",
+        "watch_next": [
+          "Meldung zum Abschluss der Entschärfung",
+          "Hinweise zum Wiederanlauf des Bahnverkehrs",
+          "Angaben zu weiteren Sperrungen oder Verlängerungen"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "implementation",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Akuter Fund mit Evakuierung und mehreren betroffenen Verkehrsträgern ist neue, materiell relevante Zustandsinformation; die Evidenz ist vorläufig, aber für eine Erstmeldung ausreichend."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-09T16:09:58.471Z",
+        "media_trigger_fingerprint": "bd0080ad64c6a97cfeabee0ed5d0b2d7769d6078f72ddeb246ba81b516f2c40c",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "bd0080ad64c6a97cfeabee0ed5d0b2d7769d6078f72ddeb246ba81b516f2c40c",
+          "content_fingerprint": "a6b7aab921725bfe6cee905111f68bf71ae0ea3d31c5fa83d413dee3e61ecf27",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-09T16:14:20.968Z",
+          "content_hash": "6b03d8f06017a6e3072998931b225e2bf2e99603ae58f4541ea0a7000ce74514",
+          "source_summary": "In Hamburg-Bahrenfeld ist nach Angaben des NDR bei Bauarbeiten eine 500 Pfund schwere englische Fliegerbombe gefunden worden. Laut Bericht liegt der Blindgänger direkt am Bahnhof Diebsteich an der Schleswiger Straße; Feuerwehr und Kampfmittelräumdienst bereiten die Entschärfung vor.\n\nDer Bereich wird geräumt. Genannt werden ein Sperrradius von 400 Metern, mehrere Betriebe und Wohnhäuser im Räumungsbereich sowie ein Warnradius von 1.000 Metern. Betroffen ist auch der Bahnverkehr: S2, S3 und S5 fahren nicht zwischen Altona beziehungsweise Holstenstraße und Eidelstedt, Regionalzüge fallen aus, auch Fernverkehr ist unterbrochen. Wie lange die Entschärfung dauert, ist noch unklar.",
+          "analysis": {
+            "story_id": "wt-50924fbe12d4ad5f",
+            "publication_recommendation": true,
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "In Hamburg-Bahrenfeld läuft nach einem Bombenfund eine Evakuierung, zugleich ist der Zugverkehr beeinträchtigt. Das ist als laufende Entwicklung relevant, weil Infrastruktur, Erreichbarkeit und der Schutz von Anwohnenden unmittelbar betroffen sind.",
+            "detail_summary": "Die Meldung beschreibt einen akuten Sicherheits- und Infrastrukturvorfall: Bei Bauarbeiten wurde in Hamburg-Bahrenfeld eine 500 Pfund schwere Fliegerbombe gefunden, der Bereich wird geräumt und der Bahnverkehr ist unterbrochen. Der Fall ist materiell relevant, weil mehrere Betriebe, Wohnhäuser und verschiedene Zugverbindungen betroffen sind. Der Wirkpfad führt über die Räumung und Sperrung zu einer kurzfristigen Zustandsänderung bei Mobilität, Erreichbarkeit und Nutzung des Umfelds. Mögliche Folge sind weitere Ausfälle, Umleitungen und Verzögerungen bis zur Entschärfung. Die Evidenzlage bleibt vorläufig, weil der Bericht nur eine journalistische Quelle nutzt und der zeitliche Ausgang der Entschärfung offen ist.",
+            "why_relevant": "Akute Evakuierung und Unterbrechung von S-, Regional- und Fernverkehr betreffen Sicherheit, Mobilität und mehrere Nutzergruppen zugleich.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "direction_assessment_version": "1.1",
+            "assessment_frame": {
+              "subject": "Sicherheit und Erreichbarkeit im Bereich Hamburg-Bahrenfeld",
+              "baseline": "Zustand vor Fund, Räumung und Bahnunterbrechung"
+            },
+            "observed_outcome": null,
+            "human": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Die Räumung und die Unterbrechung des Bahnverkehrs verschlechtern kurzfristig Sicherheit, Zugänglichkeit und Alltagsmobilität für Anwohnende, Beschäftigte und Reisende im betroffenen Bereich.",
+              "positive_path": null,
+              "negative_path": {
+                "mechanism": "Evakuierung, Sperrbereich und Zugausfälle unterbrechen Nutzung und Erreichbarkeit, bis die Bombe entschärft ist.",
+                "source_ids": [
+                  "ndr-info"
+                ],
+                "effect_type": "independent_change",
+                "reference": "assessment_baseline"
+              }
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "direction_basis": "unclear",
+              "rationale": "Aus den Quellen ergibt sich keine belastbare Aussage zu Umwelt- oder Klimawirkungen über den Fund- und Einsatzort hinaus.",
+              "positive_path": null,
+              "negative_path": null
+            },
+            "democracy": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "direction_basis": "unclear",
+              "rationale": "Die Meldung enthält keine Hinweise auf demokratische Entscheidungs-, Beteiligungs- oder Kontrollwirkungen.",
+              "positive_path": null,
+              "negative_path": null
+            },
+            "importance": "mittel",
+            "impact_potential": "Kurzfristig entstehen Sicherheitsmaßnahmen, Räumung und Verkehrsunterbrechungen. Das betrifft Erreichbarkeit, Arbeitswege und den Betrieb im Umfeld der Fundstelle, ohne dass aus der Quelle schon ein längerfristiger Effekt belegbar wäre.",
+            "impact_risks": [
+              "Verzögerungen und Ausfälle im Bahnverkehr",
+              "Belastung für Anwohnende und Betriebe durch Räumung",
+              "Unklare Dauer der Entschärfung verlängert die Unterbrechung"
+            ],
+            "mechanisms": [
+              "Gefundener Blindgänger löst Sperrung und Räumung aus",
+              "Sperrung der Gleise unterbricht den Zugverkehr",
+              "Evakuierung verschiebt Nutzung und Erreichbarkeit"
+            ],
+            "first_order": [
+              "Räumung von Gebäuden und Sperrbereich",
+              "Unterbrechung von S-Bahn-, Regional- und Fernverkehr"
+            ],
+            "second_order": [
+              "Verzögerungen für Pendlerinnen, Reisende und Betriebe",
+              "Ausweich- und Ersatzverkehr notwendig"
+            ],
+            "third_order": [
+              "Vorübergehende Belastung lokaler Infrastruktur und Alltagsabläufe",
+              "Mögliche Folgekosten durch Betriebsunterbrechungen"
+            ],
+            "systemic_relevance": "Die Wirkung bleibt lokal, betrifft aber mehrere Verkehrsträger und damit die kurzfristige Resilienz des urbanen Verkehrsraums.",
+            "transformation_potential": "Kein Transformationspfad erkennbar; es handelt sich um eine akute Gefahrenabwehr und nicht um eine Regel- oder Strukturreform.",
+            "resilience": "Die Evakuierung und die Sperrung erhöhen den Schutz vor unmittelbaren Schäden, zeigen aber zugleich eine vorübergehende Verwundbarkeit der Verkehrsinfrastruktur.",
+            "side_effects": [
+              "Ersatzverkehr und Umwege",
+              "Belastung für Wartende und Anwohnende",
+              "Vorübergehende Betriebsunterbrechungen"
+            ],
+            "uncertainties": [
+              "Wie lange die Entschärfung dauert, ist noch unklar",
+              "Die Quelle nennt keinen Abschlusszeitpunkt",
+              "Nur eine journalistische Quelle liegt vor"
+            ],
+            "evidence_level": "mittel",
+            "attribution": "NDR berichtet, gestützt auf Feuerwehr, Kampfmittelräumdienst und Polizei. Die Angaben zu Fundort, Sperrradius und Verkehrsausfällen sind berichtet, aber im vorliegenden Datensatz nicht durch eine zweite unabhängige Quelle bestätigt.",
+            "watch_next": [
+              "Meldung zum Abschluss der Entschärfung",
+              "Hinweise zum Wiederanlauf des Bahnverkehrs",
+              "Angaben zu weiteren Sperrungen oder Verlängerungen"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Akuter Fund mit Evakuierung und mehreren betroffenen Verkehrsträgern ist neue, materiell relevante Zustandsinformation; die Evidenz ist vorläufig, aber für eine Erstmeldung ausreichend."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-09T16:09:58.471Z",
+            "media_trigger_fingerprint": "bd0080ad64c6a97cfeabee0ed5d0b2d7769d6078f72ddeb246ba81b516f2c40c",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "bd0080ad64c6a97cfeabee0ed5d0b2d7769d6078f72ddeb246ba81b516f2c40c",
+              "content_fingerprint": "a6b7aab921725bfe6cee905111f68bf71ae0ea3d31c5fa83d413dee3e61ecf27",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-50924fbe12d4ad5f-v1-claim-1",
+              "story_id": "wt-50924fbe12d4ad5f",
+              "claim": "Bei Bauarbeiten in Hamburg-Bahrenfeld wurde ein Blindgänger gefunden.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+                  "excerpt_hash": "85409cc58eb902960e16",
+                  "checked_at": "2026-09-09T16:14:20.968Z"
+                },
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+                  "excerpt_hash": "8f29abc7cfb7911f365f",
+                  "checked_at": "2026-09-09T16:14:20.968Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T16:14:20.968Z"
+            },
+            {
+              "claim_id": "wt-50924fbe12d4ad5f-v1-claim-2",
+              "story_id": "wt-50924fbe12d4ad5f",
+              "claim": "Der Bereich wird geräumt und ein Sperrradius von 400 Metern eingerichtet.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+                  "excerpt_hash": "a904b97deefe93774d6d",
+                  "checked_at": "2026-09-09T16:14:20.968Z"
+                },
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+                  "excerpt_hash": "8f29abc7cfb7911f365f",
+                  "checked_at": "2026-09-09T16:14:20.968Z"
+                },
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+                  "excerpt_hash": "c82dc01dfa25f7124c3d",
+                  "checked_at": "2026-09-09T16:14:20.968Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T16:14:20.968Z"
+            },
+            {
+              "claim_id": "wt-50924fbe12d4ad5f-v1-claim-3",
+              "story_id": "wt-50924fbe12d4ad5f",
+              "claim": "S-Bahnen, Regionalverkehr und auch Fernverkehr sind unterbrochen oder fallen aus.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+                  "excerpt_hash": "535cb87ef38da747c033",
+                  "checked_at": "2026-09-09T16:14:20.968Z"
+                },
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+                  "excerpt_hash": "c574cd35d58aa6ebd68e",
+                  "checked_at": "2026-09-09T16:14:20.968Z"
+                },
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+                  "excerpt_hash": "0d46fe7b5f10db47feaf",
+                  "checked_at": "2026-09-09T16:14:20.968Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T16:14:20.968Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+              "content_hash": "1263684ae224d20f76225f2c3f02d77b91141c1c338d51aa5d94aa1aca175eb0"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-09T16:14:20.968Z",
+            "sources": [
+              {
+                "source_id": "ndr-info",
+                "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+                "content_hash": "1263684ae224d20f76225f2c3f02d77b91141c1c338d51aa5d94aa1aca175eb0",
+                "excerpt_hash": "ef56e66ccabedf951b2cb914b84429dd89dd83dea69606dfccef6a343859457a",
+                "number_locale": "de",
+                "numbers": [
+                  "1",
+                  "595937",
+                  "2026",
+                  "9",
+                  "58",
+                  "4431",
+                  "142",
+                  "15",
+                  "90.3",
+                  "1041",
+                  "0",
+                  "28000",
+                  "3467608",
+                  "903",
+                  "22",
+                  "500",
+                  "400",
+                  "1000",
+                  "83",
+                  "85",
+                  "115",
+                  "9.09",
+                  "17"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-09T16:14:20.968Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50924fbe12d4ad5f-7ebd09364cbe4836-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "7ebd09364cbe4836ae3829325bfdf37aad8646b63c4de702ddc0ca7b6d7849e1"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50924fbe12d4ad5f-f49e1d941045ab52-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "f49e1d941045ab5263b10bcbebb74d282d547437b746863fc7bcf564b0692a27"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50924fbe12d4ad5f-d5449da56787ae1c-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "d5449da56787ae1c78563c55a0a916e4083c326dfac974b714d5fedfde4a2385"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50924fbe12d4ad5f-66d41f9b16f6f0bf-source.png",
+          "sha256": "66d41f9b16f6f0bf4cdad91f7815062dd760872f3a5e7ea2640b9efc46705001",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-09T16:16:37.217Z"
+        },
+        "fingerprint": "5c68659e99be5a21628bd42109e81e689f9aacd4db1b4118f31b7b117f05a29c",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T16:18:08.410Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-a0494b6e523f45ca",
+      "slug": "eu-kommission-weniger-china-mehr-europa-eu-regelt-offentliche-auftrage-3f45ca",
+      "title": "EU-Kommission: Weniger China, mehr Europa – EU regelt öffentliche Aufträge",
+      "first_seen": "2026-09-09T13:15:00.000Z",
+      "last_updated": "2026-09-09T16:13:24.889Z",
+      "published_at": "2026-09-09T16:13:24.889Z",
+      "updated_at": "2026-09-09T16:13:24.889Z",
+      "topic": [
+        "Europa",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/europa/eu-kommission-weniger-china-mehr-europa-eu-regelt-oeffentliche-auftraege/100253268.html",
+          "title": "EU-Kommission: Weniger China, mehr Europa – EU regelt öffentliche Aufträge",
+          "summary": "Mehr als eine Milliarde Euro pro Tag verliert die EU im Handel mit China. Der Vorschlag der EU-Kommission: mehr öffentliche Gelder für Produkte aus der EU ausgeben.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:15:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "2eb50efee5d70f6abadad71141cad82703b9a10358ca1fd6839d5eded46e88a4",
+          "source_item_id": "88899713d69ef072aa4db4e890c3c7bdc1d6dba8572507d119ad0db95d054411",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T13:15:00.000Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wirtschaftspolitik-16034645.html",
+          "title": "Wirtschaftspolitik: Weniger China, mehr Europa – EU regelt öffentliche Aufträge",
+          "summary": "Mehr als eine Milliarde Euro pro Tag verliert die EU im Handel mit China. Die EU-Kommission will daran etwas ändern. Wie mehr öffentliche Gelder für Produkte aus der EU ausgegeben werden sollen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:59:47.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "6f1b8e61129d00dcdccaf4937523487a3c54dca9a00d59a2a396407ea54f4383",
+          "source_item_id": "60da501509e3403482e90fa75fbd78ec1f65b952a9f85b500fdacd7f02666fc8",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:59:47.000Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/wirtschaft/news/wirtschaftspolitik--weniger-china--mehr-europa---eu-regelt-oeffentliche-auftraege-38227792.html",
+          "title": "Wirtschaftspolitik: Weniger China, mehr Europa – EU regelt öffentliche Aufträge",
+          "summary": "Mehr als eine Milliarde Euro pro Tag verliert die EU im Handel mit China. Die EU-Kommission will daran etwas ändern. Wie mehr öffentliche Gelder für Produkte aus der EU ausgegeben werden sollen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T16:05:05.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b4e5a3e5f5a856c34203247e159466bdfd2098faa8be0648a505110320a0927d",
+          "source_item_id": "42eef9208db22b0b99be42650ad46035a81aaf861622305900c50a3de274ce6d",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T16:05:05.000Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a0494b6e523f45ca-v1-claim-1",
+          "story_id": "wt-a0494b6e523f45ca",
+          "claim": "Die EU-Kommission will öffentliche Gelder stärker für Produkte aus der EU ausgeben und damit die öffentliche Auftragsvergabe neu ausrichten.",
+          "status": "single_source_claim",
+          "source_id": "wiwo-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/politik/europa/eu-kommission-weniger-china-mehr-europa-eu-regelt-oeffentliche-auftraege/100253268.html",
+              "excerpt_hash": "9b34792141eeb0808e4f",
+              "checked_at": "2026-09-09T16:13:24.889Z"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wirtschaftspolitik-16034645.html",
+              "excerpt_hash": "4a7342f014319ee89796",
+              "checked_at": "2026-09-09T16:13:24.889Z"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/wirtschaft/news/wirtschaftspolitik--weniger-china--mehr-europa---eu-regelt-oeffentliche-auftraege-38227792.html",
+              "excerpt_hash": "4a7342f014319ee89796",
+              "checked_at": "2026-09-09T16:13:24.889Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T16:13:24.889Z"
+        },
+        {
+          "claim_id": "wt-a0494b6e523f45ca-v1-claim-2",
+          "story_id": "wt-a0494b6e523f45ca",
+          "claim": "Die Berichte verknüpfen den Vorstoß mit dem Hinweis, die EU verliere im Handel mit China mehr als eine Milliarde Euro pro Tag.",
+          "status": "single_source_claim",
+          "source_id": "wiwo-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/politik/europa/eu-kommission-weniger-china-mehr-europa-eu-regelt-oeffentliche-auftraege/100253268.html",
+              "excerpt_hash": "9b34792141eeb0808e4f",
+              "checked_at": "2026-09-09T16:13:24.889Z"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wirtschaftspolitik-16034645.html",
+              "excerpt_hash": "4a7342f014319ee89796",
+              "checked_at": "2026-09-09T16:13:24.889Z"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/wirtschaft/news/wirtschaftspolitik--weniger-china--mehr-europa---eu-regelt-oeffentliche-auftraege-38227792.html",
+              "excerpt_hash": "4a7342f014319ee89796",
+              "checked_at": "2026-09-09T16:13:24.889Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T16:13:24.889Z"
+        },
+        {
+          "claim_id": "wt-a0494b6e523f45ca-v1-claim-3",
+          "story_id": "wt-a0494b6e523f45ca",
+          "claim": "Die Meldungen beschreiben den Vorgang als EU-Regelung öffentlicher Aufträge, nennen aber keinen vollständigen Rechtsakt und keinen Inkrafttretenszeitpunkt.",
+          "status": "uncertain_claim",
+          "source_id": "wiwo-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/politik/europa/eu-kommission-weniger-china-mehr-europa-eu-regelt-oeffentliche-auftraege/100253268.html",
+              "excerpt_hash": "60b298a3861bbca59a00",
+              "checked_at": "2026-09-09T16:13:24.889Z"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wirtschaftspolitik-16034645.html",
+              "excerpt_hash": "909ac4512a2793f199d4",
+              "checked_at": "2026-09-09T16:13:24.889Z"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/wirtschaft/news/wirtschaftspolitik--weniger-china--mehr-europa---eu-regelt-oeffentliche-auftraege-38227792.html",
+              "excerpt_hash": "909ac4512a2793f199d4",
+              "checked_at": "2026-09-09T16:13:24.889Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T16:13:24.889Z"
+        }
+      ],
+      "event_id": "event-610f6ffb0dd73aa7c41a",
+      "event_first_seen_at": "2026-09-09T13:22:48.629Z",
+      "event_detected_at": "2026-09-09T13:22:48.629Z",
+      "verification_started_at": "2026-09-09T16:13:10.845Z",
+      "publish_ready_at": "2026-09-09T16:13:24.889Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-09T18:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wiwo-schlagzeilen",
+            "tagesspiegel-home",
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "wiwo-schlagzeilen"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "wiwo-schlagzeilen"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T16:09:58.471Z",
+        "fingerprint": "6da1735942a4df7b43014cff8c495cb185740831082179d1b61672ac6769fd4f",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Welche konkreten Vergaberegeln die Kommission vorlegt und ob es ein formales Gesetzesverfahren gibt.",
+          "source_id": "wiwo-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Vorlage von Entwurf, Mitteilung oder Legislativvorschlag",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-77e14b94e22c82a8",
+          "announced_at": "2026-09-09T13:15:00.000Z",
+          "follow_up_date": "2026-09-16T16:13:24.889Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Kommission die genannte Milliarde Euro pro Tag mit eigenen Daten belegt und auf welchen Zeitraum sie sich bezieht.",
+          "source_id": "tagesspiegel-home",
+          "expected_by": null,
+          "measurable_indicator": "amtliche Datenbasis zur Handelszahl",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-583ed899c8cd6c6c",
+          "announced_at": "2026-09-09T11:59:47.000Z",
+          "follow_up_date": "2026-09-16T16:13:24.889Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "53946f23796736f516c5a048b1403213dc2b5b0ce5df09b9a5c5647fd1d9a8a7",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-09T16:13:24.889Z",
+        "sources": []
+      },
+      "source_summary": "Die drei vorliegenden Meldungen berichten übereinstimmend, dass die EU-Kommission öffentliche Aufträge stärker auf Produkte aus der EU ausrichten will. Als Anlass nennen sie den Hinweis, die EU verliere im Handel mit China mehr als eine Milliarde Euro pro Tag. Die Texte nennen den Schritt als wirtschaftspolitischen Vorstoß, liefern aber in diesem Ausschnitt keinen vollständigen Rechtsakt, keine Einzelregel und keinen Inkrafttretenszeitpunkt.\n\nOffen bleibt auch, ob es sich bereits um einen förmlichen Vorschlag, eine Mitteilung oder nur um eine politische Ankündigung handelt. Die Quellen stammen aus drei journalistischen Fassungen mit gleichem Wortlautkern; eine unabhängige Primärquelle ist in den gelieferten Daten nicht enthalten.",
+      "analysis": {
+        "story_id": "wt-a0494b6e523f45ca",
+        "publication_recommendation": true,
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Die EU-Kommission will öffentliche Aufträge offenbar stärker zugunsten von EU-Produkten ausrichten. Die Berichte nennen als Begründung den Handelsverlust mit China von mehr als einer Milliarde Euro pro Tag.",
+        "detail_summary": "Der Sachverhalt ist ein EU-politischer Vorstoß mit möglicher Wirkung auf Vergaberegeln und Beschaffungsströme. Das ist materiell relevant, weil öffentliche Aufträge Nachfrage, Standortentscheidungen und Wettbewerbsbedingungen beeinflussen können. Der Wirkpfad wäre ex ante: Regeländerung oder politischer Druck kann Anreize zugunsten europäischer Anbieter verschieben. Eine konkrete eingetretene Wirkung ist hier noch nicht belegt; es liegen nur journalistische Berichte vor, zudem ohne Primärquelle im Datensatz. Für die Einordnung bleibt offen, wie weit der Vorschlag reicht und ob daraus bereits ein formales Verfahren folgt.",
+        "why_relevant": "Mögliche Änderung von Vergabeanreizen und Beschaffungsströmen mit Folgen für Unternehmen, Staaten und den Binnenmarkt.",
+        "status": "Entwurf",
+        "analysis_type": "ex_ante",
+        "direction_assessment_version": "1.1",
+        "assessment_frame": {
+          "subject": "EU-öffentliche Aufträge und Ausrichtung auf Produkte aus der EU",
+          "baseline": "bisherige Vergabepraxis ohne die hier berichtete stärkere EU-Bevorzugung"
+        },
+        "observed_outcome": null,
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Wenn öffentliche Aufträge stärker an EU-Produkte gebunden werden, verschiebt das die Nachfrage und kann Lieferketten, Investitionen und Standortentscheidungen beeinflussen. Das ist für Unternehmen, Beschäftigte und öffentliche Haushalte materiell relevant.",
+          "positive_path": {
+            "mechanism": "Stärkere Berücksichtigung von EU-Produkten in öffentlichen Aufträgen kann Nachfrage innerhalb der EU bündeln und damit Produktions- und Investitionsanreize verschieben.",
+            "source_ids": [
+              "wiwo-schlagzeilen",
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Eine stärkere EU-Bevorzugung kann Wettbewerb verengen, Preise erhöhen oder Handelskonflikte verschärfen, wenn Drittanbieter ausgeschlossen werden.",
+            "source_ids": [
+              "wiwo-schlagzeilen",
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Im gelieferten Material gibt es keinen direkten Umweltbezug. Mögliche indirekte Effekte über kürzere Lieferketten oder andere Beschaffung bleiben offen und sind nicht belegt.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Vergaberegeln betreffen staatliche Steuerung und die demokratische Ausgestaltung von Marktregeln. Zugleich kann eine politisch motivierte Bevorzugung bestimmter Herkunftsgruppen die Offenheit des Wettbewerbs begrenzen.",
+          "positive_path": {
+            "mechanism": "Ein klarer, parlamentarisch oder kommissarisch legitimierter Regelrahmen kann die öffentliche Beschaffung transparenter und politisch nachvollziehbarer machen.",
+            "source_ids": [
+              "wiwo-schlagzeilen",
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Wenn der Rahmen den Zugang für Anbieter aus Drittstaaten verengt, kann das die Wettbewerbsvielfalt und die Korrekturfähigkeit des Marktes schwächen.",
+            "source_ids": [
+              "wiwo-schlagzeilen",
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "importance": "mittel",
+        "impact_potential": "Mögliche Verschiebung von Vergabeanreizen zugunsten europäischer Anbieter mit Folgen für Nachfrage, Preise und Marktanteile.",
+        "impact_risks": [
+          "Mögliche Preissteigerungen bei öffentlicher Beschaffung",
+          "Wettbewerbsverengung gegenüber Drittanbietern",
+          "Mögliche Handelskonflikte oder Gegenreaktionen"
+        ],
+        "mechanisms": [
+          "Regeländerung in der öffentlichen Beschaffung",
+          "Nachfrageverschiebung zu EU-Produkten",
+          "Anpassung von Unternehmensstrategien und Lieferketten"
+        ],
+        "first_order": [
+          "Öffentliche Auftraggeber orientieren sich stärker an EU-Produkten.",
+          "Ausschreibungen ändern die relativen Chancen von Anbietern."
+        ],
+        "second_order": [
+          "Unternehmen passen Produktion und Beschaffung an.",
+          "Lieferketten und Investitionen verschieben sich in Richtung EU-Märkte."
+        ],
+        "third_order": [
+          "Strukturelle Änderungen im Wettbewerb um öffentliche Nachfrage.",
+          "Mögliche Rückwirkungen auf Handelspolitik und Binnenmarktregeln."
+        ],
+        "systemic_relevance": "Öffentliche Vergabe ist ein Hebel mit Wirkung auf große Nachfragevolumina und damit auf Marktstruktur, Standortentscheidungen und politische Steuerung.",
+        "transformation_potential": "Potenzial für eine gezielte Umsteuerung öffentlicher Nachfrage, aber noch ohne belegt verbindlichen Regimewechsel.",
+        "resilience": "Resilienz hängt davon ab, ob Ausnahmen, Transparenz und Wettbewerbsschutz erhalten bleiben. Ohne diese Sicherungen steigt das Risiko von Lock-ins und Preisdruck.",
+        "side_effects": [
+          "Mögliche Verdrängung nicht-europäischer Anbieter",
+          "Mehr Verwaltungsaufwand bei der Umsetzung",
+          "Potenzielle Reaktionen von Handelspartnern"
+        ],
+        "uncertainties": [
+          "Unklar ist, ob es schon ein formeller Vorschlag ist.",
+          "Unklar ist der genaue Rechtsrahmen.",
+          "Unklar ist, ob die genannte Handelszahl amtlich belegt ist."
+        ],
+        "evidence_level": "low",
+        "attribution": "Journalistische Berichte; keine Primärquelle im Datensatz",
+        "watch_next": [
+          "Offiziellen Text der EU-Kommission prüfen",
+          "Konkreten Regelungsgehalt und Zeitplan klären",
+          "Amtliche Daten zur Handelszahl suchen"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "substantive_commitment",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "independent_reports",
+          "duplicate_status": "new_story",
+          "rationale": "Der Vorstoß betrifft eine zentrale staatliche Nachfragefunktion und kann Markt- und Wettbewerbsbedingungen verändern. Die Meldung ist neu, aber im Datensatz nur journalistisch und ohne Primärquelle belegt."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-09T16:09:58.471Z",
+        "media_trigger_fingerprint": "f459afaa0b1151c1b54328524844112c0028f8f21e9656efde438f0654b1c5b8",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 3,
+          "comparable_source_count": 3,
+          "fingerprint": "f459afaa0b1151c1b54328524844112c0028f8f21e9656efde438f0654b1c5b8",
+          "content_fingerprint": "084d168b1a573c0aa724a2691152dcabf38c58abde12ccfffc3c81f5f24dfe3e",
+          "basis": "feed_metadata",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-09T16:13:24.889Z",
+          "content_hash": "53946f23796736f516c5a048b1403213dc2b5b0ce5df09b9a5c5647fd1d9a8a7",
+          "source_summary": "Die drei vorliegenden Meldungen berichten übereinstimmend, dass die EU-Kommission öffentliche Aufträge stärker auf Produkte aus der EU ausrichten will. Als Anlass nennen sie den Hinweis, die EU verliere im Handel mit China mehr als eine Milliarde Euro pro Tag. Die Texte nennen den Schritt als wirtschaftspolitischen Vorstoß, liefern aber in diesem Ausschnitt keinen vollständigen Rechtsakt, keine Einzelregel und keinen Inkrafttretenszeitpunkt.\n\nOffen bleibt auch, ob es sich bereits um einen förmlichen Vorschlag, eine Mitteilung oder nur um eine politische Ankündigung handelt. Die Quellen stammen aus drei journalistischen Fassungen mit gleichem Wortlautkern; eine unabhängige Primärquelle ist in den gelieferten Daten nicht enthalten.",
+          "analysis": {
+            "story_id": "wt-a0494b6e523f45ca",
+            "publication_recommendation": true,
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Die EU-Kommission will öffentliche Aufträge offenbar stärker zugunsten von EU-Produkten ausrichten. Die Berichte nennen als Begründung den Handelsverlust mit China von mehr als einer Milliarde Euro pro Tag.",
+            "detail_summary": "Der Sachverhalt ist ein EU-politischer Vorstoß mit möglicher Wirkung auf Vergaberegeln und Beschaffungsströme. Das ist materiell relevant, weil öffentliche Aufträge Nachfrage, Standortentscheidungen und Wettbewerbsbedingungen beeinflussen können. Der Wirkpfad wäre ex ante: Regeländerung oder politischer Druck kann Anreize zugunsten europäischer Anbieter verschieben. Eine konkrete eingetretene Wirkung ist hier noch nicht belegt; es liegen nur journalistische Berichte vor, zudem ohne Primärquelle im Datensatz. Für die Einordnung bleibt offen, wie weit der Vorschlag reicht und ob daraus bereits ein formales Verfahren folgt.",
+            "why_relevant": "Mögliche Änderung von Vergabeanreizen und Beschaffungsströmen mit Folgen für Unternehmen, Staaten und den Binnenmarkt.",
+            "status": "Entwurf",
+            "analysis_type": "ex_ante",
+            "direction_assessment_version": "1.1",
+            "assessment_frame": {
+              "subject": "EU-öffentliche Aufträge und Ausrichtung auf Produkte aus der EU",
+              "baseline": "bisherige Vergabepraxis ohne die hier berichtete stärkere EU-Bevorzugung"
+            },
+            "observed_outcome": null,
+            "human": {
+              "relevance": "hoch",
+              "tendency": "chance",
+              "direction_basis": "assessed",
+              "rationale": "Wenn öffentliche Aufträge stärker an EU-Produkte gebunden werden, verschiebt das die Nachfrage und kann Lieferketten, Investitionen und Standortentscheidungen beeinflussen. Das ist für Unternehmen, Beschäftigte und öffentliche Haushalte materiell relevant.",
+              "positive_path": {
+                "mechanism": "Stärkere Berücksichtigung von EU-Produkten in öffentlichen Aufträgen kann Nachfrage innerhalb der EU bündeln und damit Produktions- und Investitionsanreize verschieben.",
+                "source_ids": [
+                  "wiwo-schlagzeilen",
+                  "tagesspiegel-home",
+                  "stern-schlagzeilen"
+                ],
+                "effect_type": "independent_change",
+                "reference": "assessment_baseline"
+              },
+              "negative_path": {
+                "mechanism": "Eine stärkere EU-Bevorzugung kann Wettbewerb verengen, Preise erhöhen oder Handelskonflikte verschärfen, wenn Drittanbieter ausgeschlossen werden.",
+                "source_ids": [
+                  "wiwo-schlagzeilen",
+                  "tagesspiegel-home",
+                  "stern-schlagzeilen"
+                ],
+                "effect_type": "independent_change",
+                "reference": "assessment_baseline"
+              }
+            },
+            "planet": {
+              "relevance": "offen",
+              "tendency": "offen",
+              "direction_basis": "unclear",
+              "rationale": "Im gelieferten Material gibt es keinen direkten Umweltbezug. Mögliche indirekte Effekte über kürzere Lieferketten oder andere Beschaffung bleiben offen und sind nicht belegt.",
+              "positive_path": null,
+              "negative_path": null
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "direction_basis": "assessed",
+              "rationale": "Vergaberegeln betreffen staatliche Steuerung und die demokratische Ausgestaltung von Marktregeln. Zugleich kann eine politisch motivierte Bevorzugung bestimmter Herkunftsgruppen die Offenheit des Wettbewerbs begrenzen.",
+              "positive_path": {
+                "mechanism": "Ein klarer, parlamentarisch oder kommissarisch legitimierter Regelrahmen kann die öffentliche Beschaffung transparenter und politisch nachvollziehbarer machen.",
+                "source_ids": [
+                  "wiwo-schlagzeilen",
+                  "tagesspiegel-home",
+                  "stern-schlagzeilen"
+                ],
+                "effect_type": "independent_change",
+                "reference": "assessment_baseline"
+              },
+              "negative_path": {
+                "mechanism": "Wenn der Rahmen den Zugang für Anbieter aus Drittstaaten verengt, kann das die Wettbewerbsvielfalt und die Korrekturfähigkeit des Marktes schwächen.",
+                "source_ids": [
+                  "wiwo-schlagzeilen",
+                  "tagesspiegel-home",
+                  "stern-schlagzeilen"
+                ],
+                "effect_type": "independent_change",
+                "reference": "assessment_baseline"
+              }
+            },
+            "importance": "mittel",
+            "impact_potential": "Mögliche Verschiebung von Vergabeanreizen zugunsten europäischer Anbieter mit Folgen für Nachfrage, Preise und Marktanteile.",
+            "impact_risks": [
+              "Mögliche Preissteigerungen bei öffentlicher Beschaffung",
+              "Wettbewerbsverengung gegenüber Drittanbietern",
+              "Mögliche Handelskonflikte oder Gegenreaktionen"
+            ],
+            "mechanisms": [
+              "Regeländerung in der öffentlichen Beschaffung",
+              "Nachfrageverschiebung zu EU-Produkten",
+              "Anpassung von Unternehmensstrategien und Lieferketten"
+            ],
+            "first_order": [
+              "Öffentliche Auftraggeber orientieren sich stärker an EU-Produkten.",
+              "Ausschreibungen ändern die relativen Chancen von Anbietern."
+            ],
+            "second_order": [
+              "Unternehmen passen Produktion und Beschaffung an.",
+              "Lieferketten und Investitionen verschieben sich in Richtung EU-Märkte."
+            ],
+            "third_order": [
+              "Strukturelle Änderungen im Wettbewerb um öffentliche Nachfrage.",
+              "Mögliche Rückwirkungen auf Handelspolitik und Binnenmarktregeln."
+            ],
+            "systemic_relevance": "Öffentliche Vergabe ist ein Hebel mit Wirkung auf große Nachfragevolumina und damit auf Marktstruktur, Standortentscheidungen und politische Steuerung.",
+            "transformation_potential": "Potenzial für eine gezielte Umsteuerung öffentlicher Nachfrage, aber noch ohne belegt verbindlichen Regimewechsel.",
+            "resilience": "Resilienz hängt davon ab, ob Ausnahmen, Transparenz und Wettbewerbsschutz erhalten bleiben. Ohne diese Sicherungen steigt das Risiko von Lock-ins und Preisdruck.",
+            "side_effects": [
+              "Mögliche Verdrängung nicht-europäischer Anbieter",
+              "Mehr Verwaltungsaufwand bei der Umsetzung",
+              "Potenzielle Reaktionen von Handelspartnern"
+            ],
+            "uncertainties": [
+              "Unklar ist, ob es schon ein formeller Vorschlag ist.",
+              "Unklar ist der genaue Rechtsrahmen.",
+              "Unklar ist, ob die genannte Handelszahl amtlich belegt ist."
+            ],
+            "evidence_level": "low",
+            "attribution": "Journalistische Berichte; keine Primärquelle im Datensatz",
+            "watch_next": [
+              "Offiziellen Text der EU-Kommission prüfen",
+              "Konkreten Regelungsgehalt und Zeitplan klären",
+              "Amtliche Daten zur Handelszahl suchen"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "independent_reports",
+              "duplicate_status": "new_story",
+              "rationale": "Der Vorstoß betrifft eine zentrale staatliche Nachfragefunktion und kann Markt- und Wettbewerbsbedingungen verändern. Die Meldung ist neu, aber im Datensatz nur journalistisch und ohne Primärquelle belegt."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-09T16:09:58.471Z",
+            "media_trigger_fingerprint": "f459afaa0b1151c1b54328524844112c0028f8f21e9656efde438f0654b1c5b8",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 3,
+              "comparable_source_count": 3,
+              "fingerprint": "f459afaa0b1151c1b54328524844112c0028f8f21e9656efde438f0654b1c5b8",
+              "content_fingerprint": "084d168b1a573c0aa724a2691152dcabf38c58abde12ccfffc3c81f5f24dfe3e",
+              "basis": "feed_metadata",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-a0494b6e523f45ca-v1-claim-1",
+              "story_id": "wt-a0494b6e523f45ca",
+              "claim": "Die EU-Kommission will öffentliche Gelder stärker für Produkte aus der EU ausgeben und damit die öffentliche Auftragsvergabe neu ausrichten.",
+              "status": "single_source_claim",
+              "source_id": "wiwo-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "wiwo-schlagzeilen",
+                  "url": "https://www.wiwo.de/politik/europa/eu-kommission-weniger-china-mehr-europa-eu-regelt-oeffentliche-auftraege/100253268.html",
+                  "excerpt_hash": "9b34792141eeb0808e4f",
+                  "checked_at": "2026-09-09T16:13:24.889Z"
+                },
+                {
+                  "source_id": "tagesspiegel-home",
+                  "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wirtschaftspolitik-16034645.html",
+                  "excerpt_hash": "4a7342f014319ee89796",
+                  "checked_at": "2026-09-09T16:13:24.889Z"
+                },
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/wirtschaft/news/wirtschaftspolitik--weniger-china--mehr-europa---eu-regelt-oeffentliche-auftraege-38227792.html",
+                  "excerpt_hash": "4a7342f014319ee89796",
+                  "checked_at": "2026-09-09T16:13:24.889Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T16:13:24.889Z"
+            },
+            {
+              "claim_id": "wt-a0494b6e523f45ca-v1-claim-2",
+              "story_id": "wt-a0494b6e523f45ca",
+              "claim": "Die Berichte verknüpfen den Vorstoß mit dem Hinweis, die EU verliere im Handel mit China mehr als eine Milliarde Euro pro Tag.",
+              "status": "single_source_claim",
+              "source_id": "wiwo-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "wiwo-schlagzeilen",
+                  "url": "https://www.wiwo.de/politik/europa/eu-kommission-weniger-china-mehr-europa-eu-regelt-oeffentliche-auftraege/100253268.html",
+                  "excerpt_hash": "9b34792141eeb0808e4f",
+                  "checked_at": "2026-09-09T16:13:24.889Z"
+                },
+                {
+                  "source_id": "tagesspiegel-home",
+                  "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wirtschaftspolitik-16034645.html",
+                  "excerpt_hash": "4a7342f014319ee89796",
+                  "checked_at": "2026-09-09T16:13:24.889Z"
+                },
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/wirtschaft/news/wirtschaftspolitik--weniger-china--mehr-europa---eu-regelt-oeffentliche-auftraege-38227792.html",
+                  "excerpt_hash": "4a7342f014319ee89796",
+                  "checked_at": "2026-09-09T16:13:24.889Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T16:13:24.889Z"
+            },
+            {
+              "claim_id": "wt-a0494b6e523f45ca-v1-claim-3",
+              "story_id": "wt-a0494b6e523f45ca",
+              "claim": "Die Meldungen beschreiben den Vorgang als EU-Regelung öffentlicher Aufträge, nennen aber keinen vollständigen Rechtsakt und keinen Inkrafttretenszeitpunkt.",
+              "status": "uncertain_claim",
+              "source_id": "wiwo-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "wiwo-schlagzeilen",
+                  "url": "https://www.wiwo.de/politik/europa/eu-kommission-weniger-china-mehr-europa-eu-regelt-oeffentliche-auftraege/100253268.html",
+                  "excerpt_hash": "60b298a3861bbca59a00",
+                  "checked_at": "2026-09-09T16:13:24.889Z"
+                },
+                {
+                  "source_id": "tagesspiegel-home",
+                  "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wirtschaftspolitik-16034645.html",
+                  "excerpt_hash": "909ac4512a2793f199d4",
+                  "checked_at": "2026-09-09T16:13:24.889Z"
+                },
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/wirtschaft/news/wirtschaftspolitik--weniger-china--mehr-europa---eu-regelt-oeffentliche-auftraege-38227792.html",
+                  "excerpt_hash": "909ac4512a2793f199d4",
+                  "checked_at": "2026-09-09T16:13:24.889Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T16:13:24.889Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/politik/europa/eu-kommission-weniger-china-mehr-europa-eu-regelt-oeffentliche-auftraege/100253268.html",
+              "content_hash": "2eb50efee5d70f6abadad71141cad82703b9a10358ca1fd6839d5eded46e88a4"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wirtschaftspolitik-16034645.html",
+              "content_hash": "6f1b8e61129d00dcdccaf4937523487a3c54dca9a00d59a2a396407ea54f4383"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/wirtschaft/news/wirtschaftspolitik--weniger-china--mehr-europa---eu-regelt-oeffentliche-auftraege-38227792.html",
+              "content_hash": "b4e5a3e5f5a856c34203247e159466bdfd2098faa8be0648a505110320a0927d"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-09T16:13:24.889Z",
+            "sources": []
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-09T16:13:24.889Z",
+          "source_count": 3
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0494b6e523f45ca-5eeb2112fd480c6f-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "5eeb2112fd480c6f4d8a75eaef690e2e5bef74ae461a50156e8139fca3cb97cb"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0494b6e523f45ca-60ca463f843cfbb4-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "60ca463f843cfbb43f07cd26c979aa8c39487354e4dd179c8b453b849c85ac99"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0494b6e523f45ca-8b29312e31853b88-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "8b29312e31853b8822506f2e0d33cfa933ff8cc6900385ff3d2e831d614d963f"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0494b6e523f45ca-7bf5bf01ee3fcae3-source.png",
+          "sha256": "7bf5bf01ee3fcae3612e134bfaee7880c7aa857a14573d0d3c4d08be5b2c245d",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-09T16:15:39.854Z"
+        },
+        "fingerprint": "0d64a407c178f2689043fdea8f9a70677a3bb9829cb24e02eef42f30391258cc",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T16:16:36.089Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-90d922ad5724e2d5",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "7379222e5f5c23d73f97eddfb2d8355bd89ebb8aeaa5cdc09db0dc72d0c39f5b",
+        "first_failed_at": "2026-09-09T16:09:58.471Z",
+        "failed_at": "2026-09-09T16:09:58.471Z",
+        "retry_after": "2026-09-09T16:24:58.471Z",
+        "retry_count": 1
+      },
+      "slug": "unbekannte-auf-scooter-schlugen-zu-queerfeindlicher-angriff-im-berliner-regenbogenkiez-24e2d5",
+      "title": "Unbekannte auf Scooter schlugen zu: Queerfeindlicher Angriff im Berliner Regenbogenkiez",
+      "first_seen": "2026-09-09T16:06:23.000Z",
+      "last_updated": "2026-09-09T16:06:23.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/unbekannte-auf-scooter-schlugen-zu-queerfeindlicher-angriff-im-berliner-regenbogenkiez-16036501.html",
+          "title": "Unbekannte auf Scooter schlugen zu: Queerfeindlicher Angriff im Berliner Regenbogenkiez",
+          "summary": "Eine queere Person ist im Regenbogenzkiez in Schöneberg unterwegs, als sich zwei Unbekannte nähern und zuschlagen. Das Opfer wird im Gesicht verletzt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T16:06:23.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "5bd3757ecc7833be18e212cca433409e763cee74c57ef1cb0fc9106dc022f73c",
+          "source_item_id": "3ce41d1a2dcf61f37f3012f365947cf000f9050f24e614c72ad5a63f8aab77a1",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T16:06:23.000Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-90d922ad5724e2d5-claim-01",
+          "story_id": "wt-90d922ad5724e2d5",
+          "claim": "Unbekannte auf Scooter schlugen zu: Queerfeindlicher Angriff im Berliner Regenbogenkiez: Eine queere Person ist im Regenbogenzkiez in Schöneberg unterwegs, als sich zwei Unbekannte nähern und zuschlagen. Das Opfer wird im Gesicht verletzt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T16:09:58.471Z"
+        }
+      ],
+      "content_hash": "727023331db05ece1291f462db3c38a0c7c1d751d2384db293aeb5e45451e37d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T16:24:58.471Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T16:09:58.471Z",
+      "event_first_seen_at": "2026-09-09T16:09:58.471Z",
+      "event_detected_at": "2026-09-09T16:09:58.471Z",
+      "event_id": "event-9b71bb6e431cc67f96b6",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 3.5911833333333334,
+        "detection_delay_minutes": 3.5911833333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T16:09:58.471Z",
+        "fingerprint": "6e4600b7797330923b76cdb9b899dbd37b323073436a2c9154cbe015a259a7af",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T16:09:58.471Z",
+      "rejection": {
+        "at": "2026-09-09T16:09:58.471Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-dc2a1dc727ed2b66",
       "slug": "berliner-gesetze-werden-jugendcheck-unterzogen-ed2b66",
@@ -2307,14 +3872,549 @@
       }
     },
     {
+      "story_id": "wt-59cf0f94440363c1",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "570013d374d8c0ab830bbc290805cfff5cb3e2ae6bba36fa4205ac51b779bc50",
+        "first_failed_at": "2026-09-09T16:09:58.471Z",
+        "failed_at": "2026-09-09T16:09:58.471Z",
+        "retry_after": "2026-09-09T16:24:58.471Z",
+        "retry_count": 1
+      },
+      "slug": "kitas-und-co-nach-dem-hitzesommer-soziale-kalte-wird-heisses-thema-0363c1",
+      "title": "Kitas und Co nach dem Hitzesommer: Soziale Kälte wird heißes Thema",
+      "first_seen": "2026-09-09T16:01:00.000Z",
+      "last_updated": "2026-09-09T16:01:00.000Z",
+      "topic": [
+        "Klima",
+        "Soziales"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Kitas-und-Co-nach-dem-Hitzesommer/!6211697",
+          "title": "Kitas und Co nach dem Hitzesommer: Soziale Kälte wird heißes Thema",
+          "summary": "Die Klimakrise macht keinen Halt vor Kitas, Heimen und Beratungsstellen. Soziale Einrichtungen berichten von Ausnahmezuständen – und fordern Hilfe. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T16:01:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "35968b2f086260df6265674eb5563642ee39c285f3ab05a8cb8aa52becd1198c",
+          "source_item_id": "773a997a23b87a371428b26813ac23336a139b745f587299b02e1f5717a5d7fc",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T16:01:00.000Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-59cf0f94440363c1-claim-01",
+          "story_id": "wt-59cf0f94440363c1",
+          "claim": "Kitas und Co nach dem Hitzesommer: Soziale Kälte wird heißes Thema: Die Klimakrise macht keinen Halt vor Kitas, Heimen und Beratungsstellen. Soziale Einrichtungen berichten von Ausnahmezuständen – und fordern Hilfe. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T16:09:58.471Z"
+        }
+      ],
+      "content_hash": "b535273aabead6b03030fe97fe6f0158fcff793817ed256ef3fd386a75258d47",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_NEWS_VALUE_CONTEXT_ONLY"
+      ],
+      "quality_retry_after": "2026-09-09T16:24:58.471Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T16:09:58.471Z",
+      "event_first_seen_at": "2026-09-09T16:09:58.471Z",
+      "event_detected_at": "2026-09-09T16:09:58.471Z",
+      "event_id": "event-18ff27d96ff0e15cc72b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Klima",
+          "Soziales"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 8.974516666666666,
+        "detection_delay_minutes": 8.974516666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T16:09:58.471Z",
+        "fingerprint": "a69f1c007f8e03d648038dcc734d1d2e02a6de9ddc854ff78435bd048687ba78",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T16:09:58.471Z",
+      "rejection": {
+        "at": "2026-09-09T16:09:58.471Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_NEWS_VALUE_CONTEXT_ONLY"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-53956114ef5b04d9",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "00f2f428605d17a7cf68b2eb709a7228d5477a4f76d8ba4f0dd0fd311e55c787",
+        "first_failed_at": "2026-09-09T16:09:58.471Z",
+        "failed_at": "2026-09-09T16:09:58.471Z",
+        "retry_after": "2026-09-09T16:24:58.471Z",
+        "retry_count": 1
+      },
+      "slug": "in-aachen-stromnetz-angriff-tatverdachtiger-kommt-in-u-haft-5b04d9",
+      "title": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft",
+      "first_seen": "2026-09-09T10:29:16.000Z",
+      "last_updated": "2026-09-09T15:59:00.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-in-aachen-16034039.html",
+          "title": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft",
+          "summary": "Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T10:29:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "6457c3b8d788f0cf294009b4305a146b67b72f3d89a74a81d04d7c06e5c06cca",
+          "source_item_id": "dda243522bd778e03a969396df40f058e3ff6a6fb720db1903dee38a3a436067",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T10:29:16.000Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/in-aachen--stromnetz-angriff--tatverdaechtiger-kommt-in-u-haft-38227184.html",
+          "title": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft",
+          "summary": "Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T14:57:42.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "200ce5e36824f944b62c0d6c8a634c3395390c6e820709c0493a7f25459b3522",
+          "source_item_id": "a3c12ee263c8ebcaeaba1277d650c1ffdb6c2770addd119e6cfaf0a9dd903593",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T14:57:42.000Z",
+          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/verbrechen/verdaechtiger-der-stromnetz-angriffe-muss-in-u-haft-38227184.html",
+          "title": "Sabotage-Serie: Verdächtiger der Stromnetz-Angriffe muss in U-Haft",
+          "summary": "Nach bundesweiten Sabotage-Angriffen auf das Stromnetz, hat die Polizei bei Aachen einen Tatverdächtigen festgenommen. Gegen ihn wurde nun ein Haftbefehl erlassen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:59:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "5eea56ed01331c05f418913734ff5624feb5c2f9a0aa3b53fa11a757829325af",
+          "source_item_id": "8fc70a5b59472bf49d639149226333685eb098857088140941e2db26088f5620",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T15:59:00.000Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-53956114ef5b04d9-claim-01",
+          "story_id": "wt-53956114ef5b04d9",
+          "claim": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft: Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T16:09:58.471Z"
+        },
+        {
+          "claim_id": "wt-53956114ef5b04d9-claim-02",
+          "story_id": "wt-53956114ef5b04d9",
+          "claim": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft: Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T16:09:58.471Z"
+        },
+        {
+          "claim_id": "wt-53956114ef5b04d9-claim-03",
+          "story_id": "wt-53956114ef5b04d9",
+          "claim": "Sabotage-Serie: Verdächtiger der Stromnetz-Angriffe muss in U-Haft: Nach bundesweiten Sabotage-Angriffen auf das Stromnetz, hat die Polizei bei Aachen einen Tatverdächtigen festgenommen. Gegen ihn wurde nun ein Haftbefehl erlassen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T16:09:58.471Z"
+        }
+      ],
+      "content_hash": "c94b47c327c1dd98477a8f0157297c783e9d5abbb3ffecfb734a7e52f62838d2",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_DIRECTION_BASIS_INVALID:human",
+        "AI_DIRECTION_BASIS_INVALID:democracy",
+        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-09T16:24:58.471Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-09T16:09:58.471Z",
+      "event_first_seen_at": "2026-09-09T15:48:55.143Z",
+      "event_detected_at": "2026-09-09T15:48:55.143Z",
+      "event_id": "event-ed2700a7ab2249d46acc",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 56,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 10.974516666666666,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 21.055466666666668,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T16:09:58.471Z",
+        "fingerprint": "217bef559623a08bcc48c55bc78d95e7438b67a056b7f56f77add3ce4b18cdbf",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-878980c9ef12690f",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "a9f8bc699b9b45548be55269f7f4562273cc7199cd469dd33c235ff32447b393",
+        "first_failed_at": "2026-09-09T16:09:58.471Z",
+        "failed_at": "2026-09-09T16:09:58.471Z",
+        "retry_after": "2026-09-09T16:24:58.471Z",
+        "retry_count": 1
+      },
+      "slug": "daniel-v-kommt-nach-strom-sabotage-in-haft-12690f",
+      "title": "Daniel V. kommt nach Strom-Sabotage in Haft",
+      "first_seen": "2026-09-09T15:32:08.000Z",
+      "last_updated": "2026-09-09T15:50:18.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/aachen-eifel/staedteregion-aachen/strom-saboteur-daniel-v-mutmasslich-amtsgericht-aachen-haftbefehl-100.html",
+          "title": "Daniel V. kommt nach Strom-Sabotage in Haft",
+          "summary": "Einen Tag nach der Festnahme des mutmaßlichen Strom-Saboteurs Daniel V. wurde gegen ihn Haftbefehl erlassen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:50:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "a356dafb2b2918d500119f3c95713e4bb74e9e27d7655cd916111a2915d0ef3e",
+          "source_item_id": "d97d322ea6a6f72a0b2f3284419e0323fc3cde890e811bdddda2afab344a20de",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T15:50:18.000Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-878980c9ef12690f-claim-01",
+          "story_id": "wt-878980c9ef12690f",
+          "claim": "Daniel V. kommt nach Strom-Sabotage in Haft: Einen Tag nach der Festnahme des mutmaßlichen Strom-Saboteurs Daniel V. wurde gegen ihn Haftbefehl erlassen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T16:09:58.471Z"
+        }
+      ],
+      "content_hash": "f4a2a79c637ccce166c4e2820ce578531af3486f59027b75e11b7c49fff22736",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_SUMMARY_SENTENCE_COUNT"
+      ],
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-09T16:24:58.471Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-09T16:09:58.471Z",
+      "event_first_seen_at": "2026-09-09T15:48:55.143Z",
+      "event_detected_at": "2026-09-09T15:48:55.143Z",
+      "event_id": "event-6f5d43cf749e714f158c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 19.674516666666666,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 21.055466666666668,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T16:09:58.471Z",
+        "fingerprint": "260fd2acb2fb0b4f5f8042d662e9ad286d65c4d8287ffe990f8d32065374cf76",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
       "story_id": "wt-9e17a927dc44491c",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
         "fingerprint": "e5ee3438331aebbaedfe9887a664cd4e30ceed0f2a39a1629db03b6d385b10b0",
         "first_failed_at": "2026-09-09T15:48:55.143Z",
-        "failed_at": "2026-09-09T15:48:55.143Z",
-        "retry_after": "2026-09-09T16:03:55.143Z",
-        "retry_count": 1
+        "failed_at": "2026-09-09T16:09:58.471Z",
+        "retry_after": "2026-09-09T16:39:58.471Z",
+        "retry_count": 2
       },
       "slug": "haushaltsentwurf-eine-gigantische-neuverschuldung-und-viele-fragezeichen-44491c",
       "title": "Haushaltsentwurf - Eine gigantische Neuverschuldung und viele Fragezeichen",
@@ -2349,7 +4449,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T15:40:00.000Z",
-          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2378,28 +4478,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:48:55.143Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         }
       ],
       "content_hash": "71e4ec6cdf43bfabc3e62e6d1c50cfb7bad68945ebe25c869d6f08863c282961",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "AI_DIRECTION_MIXED_PATHS_REQUIRED:human",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:positive_path",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:negative_path",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:human",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:planet",
-        "AI_DIRECTION_BASIS_INVALID:democracy",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:democracy"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-09T16:03:55.143Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-09T16:39:58.471Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T15:48:55.143Z",
+      "updated_at": "2026-09-09T16:09:58.471Z",
       "event_first_seen_at": "2026-09-09T15:48:55.143Z",
       "event_detected_at": "2026-09-09T15:48:55.143Z",
       "event_id": "event-1d307602966180387331",
@@ -2433,23 +4525,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8.91905,
+        "source_age_minutes": 29.974516666666666,
         "detection_delay_minutes": 8.91905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 21.055466666666668,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T15:48:55.143Z",
+        "checked_at": "2026-09-09T16:09:58.471Z",
         "fingerprint": "23708862b1ef563aad158807d1ce9a8cefe191b774543318aa1755f6df326a42",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T16:09:58.471Z",
+      "rejection": {
+        "at": "2026-09-09T16:09:58.471Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -2598,146 +4702,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
-      }
-    },
-    {
-      "story_id": "wt-878980c9ef12690f",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "c7050d7db11e782dd3d2e2d9c84871a75ba9234b0ebcc1597f645e1e69444595",
-        "first_failed_at": "2026-09-09T15:48:55.143Z",
-        "failed_at": "2026-09-09T15:48:55.143Z",
-        "retry_after": "2026-09-09T16:03:55.143Z",
-        "retry_count": 1
-      },
-      "slug": "daniel-v-kommt-nach-strom-sabotage-in-haft-12690f",
-      "title": "Daniel V. kommt nach Strom-Sabotage in Haft",
-      "first_seen": "2026-09-09T15:32:08.000Z",
-      "last_updated": "2026-09-09T15:32:08.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "wdr-nachrichten",
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/aachen-eifel/staedteregion-aachen/strom-saboteur-daniel-v-mutmasslich-amtsgericht-aachen-haftbefehl-100.html",
-          "title": "Daniel V. kommt nach Strom-Sabotage in Haft",
-          "summary": "Einen Tag nach der Festnahme des mutmaßlichen Strom-Saboteurs Daniel V. wurde er in Aachen dem Haftrichter vorgeführt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T15:32:08.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "656a60210cf6181c076d5dedf4f224ebbad04adad5d3645d6015da60df2bee8d",
-          "source_item_id": "d97d322ea6a6f72a0b2f3284419e0323fc3cde890e811bdddda2afab344a20de",
-          "publisher_id": "wdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Nordrhein-Westfalen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T15:32:08.000Z",
-          "ingested_at": "2026-09-09T15:48:55.143Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-878980c9ef12690f-claim-01",
-          "story_id": "wt-878980c9ef12690f",
-          "claim": "Daniel V. kommt nach Strom-Sabotage in Haft: Einen Tag nach der Festnahme des mutmaßlichen Strom-Saboteurs Daniel V. wurde er in Aachen dem Haftrichter vorgeführt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:48:55.143Z"
-        }
-      ],
-      "content_hash": "53cb785b35832b7891eb1d21741a9b372d1607113ab56cf760c1448a2f4f6259",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_SOURCE_SUMMARY_LENGTH",
-        "AI_SOURCE_SUMMARY_PARAGRAPHS",
-        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
-      ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-09T16:03:55.143Z",
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-09T15:48:55.143Z",
-      "event_first_seen_at": "2026-09-09T15:48:55.143Z",
-      "event_detected_at": "2026-09-09T15:48:55.143Z",
-      "event_id": "event-6f5d43cf749e714f158c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 16.785716666666666,
-        "detection_delay_minutes": 16.785716666666666,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-09T15:48:55.143Z",
-        "fingerprint": "8b479c65c8f7b6e2fefbc990f33051e3b6480e048d6d32314767935df9d72bbb",
-        "issue_codes": [],
-        "warning_codes": []
       }
     },
     {
@@ -3016,9 +4980,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "c1fcecf49ceeade8a2fcb045d7eed647b63c5a2b8af24e6956cf169959bbce43",
         "first_failed_at": "2026-09-09T15:48:55.143Z",
-        "failed_at": "2026-09-09T15:48:55.143Z",
-        "retry_after": "2026-09-09T16:03:55.143Z",
-        "retry_count": 1
+        "failed_at": "2026-09-09T16:09:58.471Z",
+        "retry_after": "2026-09-09T16:39:58.471Z",
+        "retry_count": 2
       },
       "slug": "kritik-an-geplanter-reform-der-notfallversorgung-31083f",
       "title": "Kritik an geplanter Reform der Notfallversorgung",
@@ -3052,7 +5016,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T15:22:00.000Z",
-          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3081,32 +5045,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:48:55.143Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         }
       ],
       "content_hash": "2829c5546e1945b83a6dc819d51c3c93e639f5b525d7dacd0e5e87dd8b2ccefd",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_DIRECTION_MIXED_PATHS_REQUIRED:human",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:positive_path",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:negative_path",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:human",
-        "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:planet",
-        "AI_DIRECTION_MIXED_PATHS_REQUIRED:democracy",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:positive_path",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:negative_path",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:democracy",
-        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+        "AI_NEWS_VALUE_CONTEXT_ONLY",
+        "AI_DIRECTION_BASIS_INVALID:democracy"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-09T16:03:55.143Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-09T16:39:58.471Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T15:48:55.143Z",
+      "updated_at": "2026-09-09T16:09:58.471Z",
       "event_first_seen_at": "2026-09-09T15:48:55.143Z",
       "event_detected_at": "2026-09-09T15:48:55.143Z",
       "event_id": "event-3da7a198cdb7786b6add",
@@ -3144,20 +5099,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 26.91905,
+        "source_age_minutes": 47.974516666666666,
         "detection_delay_minutes": 26.91905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 21.055466666666668,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 90,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T15:48:55.143Z",
+        "checked_at": "2026-09-09T16:09:58.471Z",
         "fingerprint": "17b2e3b8d2bc853377c96456982349cd6084b1d409dd184d6630c0d099f78408",
         "issue_codes": [],
         "warning_codes": []
@@ -5089,15 +7044,15 @@
       },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "fc87810c71e59e245db8a65dc70e56b9187c60575f1c1df5457caf8cb68abc8d",
-        "first_failed_at": "2026-09-09T15:48:55.143Z",
-        "failed_at": "2026-09-09T15:48:55.143Z",
-        "retry_after": "2026-09-09T16:03:55.143Z",
+        "fingerprint": "b679c0781a01164555d90df6f40bc5ec53c290ed7113a9a96418c1571090d530",
+        "first_failed_at": "2026-09-09T16:09:58.471Z",
+        "failed_at": "2026-09-09T16:09:58.471Z",
+        "retry_after": "2026-09-09T16:24:58.471Z",
         "retry_count": 1
       },
       "pending_update": {
         "detected_at": "2026-09-09T15:48:55.143Z",
-        "content_hash": "256dc193de0d762e568940d386cc5488a11cbea5cc80aad4e24c54f501c9486c",
+        "content_hash": "2b8adf5c9f44604293bd6ce8048a51a476a3d09fd0235a630638b1818038ddf8",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -5137,13 +7092,13 @@
             "publisher": "Deutschlandfunk",
             "url": "https://www.deutschlandfunk.de/nach-anschlaegen-auf-stromversorgung-verdaechtiger-in-untersuchungshaft-100.html",
             "title": "Sabotage - Nach Anschlägen auf Stromversorgung: Verdächtiger in Untersuchungshaft",
-            "summary": "Der gestern festgenommene mutmaßliche Saboteur kommt in Untersuchungshaft.",
+            "summary": "Der am Dienstag festgenommene mutmaßliche Saboteur kommt in Untersuchungshaft.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T15:18:46.000Z",
+            "published_at": "2026-09-09T16:03:53.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "9f0cf42f6a462e339c04c9935d49a9d3e4bed30f9ef3b79d31f5702951d329a0",
+            "content_hash": "1fdace2f6f18c8084aca8303d846e6f5807ce3f8513bb8f60efd574af3fe430c",
             "source_item_id": "c1d71d4fc36361cd614735fdfc19c2cce65553cc6a5b869994a701a965ea33fa",
             "publisher_id": "deutschlandfunk",
             "publisher_kind": "public_broadcasting",
@@ -5155,8 +7110,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T15:18:46.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "source_published_at": "2026-09-09T16:03:53.000Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -5168,10 +7123,16 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+          "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:negative_path",
+          "AI_DIRECTION_PATH_REFERENCE_INVALID:human",
+          "AI_DIRECTION_PATH_REFERENCE_INVALID:planet",
+          "AI_DIRECTION_MIXED_PATHS_REQUIRED:democracy",
+          "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:positive_path",
+          "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:negative_path",
+          "AI_DIRECTION_PATH_REFERENCE_INVALID:democracy"
         ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-09T16:03:55.143Z",
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-09T16:24:58.471Z",
         "reassessment": false,
         "fresh": true,
         "consolidation": false,
@@ -5179,8 +7140,8 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:48:55.143Z",
-          "fingerprint": "c0c6691a2e77da21b08bf90a84c831add1dcce7207dba0dd19281607d3304e87",
+          "checked_at": "2026-09-09T16:09:58.471Z",
+          "fingerprint": "d9f50d9ce02222b1da00c4d4ef82626c53d4151e022539ad8539502f57ffb51d",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -5340,10 +7301,10 @@
       "story_id": "wt-c6c3a0637a8c1d5a",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "0217e75c5af15acdbb0a31e3a7390290f3bcb616406e1063c3869b52b00623e7",
-        "first_failed_at": "2026-09-09T15:48:55.143Z",
-        "failed_at": "2026-09-09T15:48:55.143Z",
-        "retry_after": "2026-09-09T16:03:55.143Z",
+        "fingerprint": "0819d11dca0cdbee5f01520bcc8c38e7bb5ec211c226cc608e1b7cd37e5caa10",
+        "first_failed_at": "2026-09-09T16:09:58.471Z",
+        "failed_at": "2026-09-09T16:09:58.471Z",
+        "retry_after": "2026-09-09T16:24:58.471Z",
         "retry_count": 1
       },
       "slug": "in-aachen-stromnetz-sabotage-haftbefehl-soll-verkundet-werden-8c1d5a",
@@ -5464,6 +7425,39 @@
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/verbrechen/verdaechtiger-der-stromnetz-angriffe-muss-in-u-haft-38227184.html",
+          "title": "Sabotage-Serie: Verdächtiger der Stromnetz-Angriffe muss in U-Haft",
+          "summary": "Nach bundesweiten Sabotage-Angriffen auf das Stromnetz, hat die Polizei bei Aachen einen Tatverdächtigen festgenommen. Gegen ihn wurde nun ein Haftbefehl erlassen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:59:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "5eea56ed01331c05f418913734ff5624feb5c2f9a0aa3b53fa11a757829325af",
+          "source_item_id": "8fc70a5b59472bf49d639149226333685eb098857088140941e2db26088f5620",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T15:59:00.000Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
         }
       ],
       "claims": [
@@ -5485,7 +7479,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:48:55.143Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         },
         {
           "claim_id": "wt-c6c3a0637a8c1d5a-claim-02",
@@ -5505,29 +7499,40 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:48:55.143Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
+        },
+        {
+          "claim_id": "wt-c6c3a0637a8c1d5a-claim-03",
+          "story_id": "wt-c6c3a0637a8c1d5a",
+          "claim": "Sabotage-Serie: Verdächtiger der Stromnetz-Angriffe muss in U-Haft: Nach bundesweiten Sabotage-Angriffen auf das Stromnetz, hat die Polizei bei Aachen einen Tatverdächtigen festgenommen. Gegen ihn wurde nun ein Haftbefehl erlassen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T16:09:58.471Z"
         }
       ],
-      "content_hash": "d038bcabc7669c8f8682575d02806d26a14d1f632e38aa62eb6b7dee8f6321ef",
+      "content_hash": "d45fd1fd32f9f5f45aa6b2508f80a1c1b137c633cea998461a886d6c531a83c0",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:negative_path",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:human",
-        "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:planet",
-        "AI_DIRECTION_MIXED_PATHS_REQUIRED:democracy",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:positive_path",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:negative_path",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:democracy"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-09T16:03:55.143Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-09T16:24:58.471Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T15:48:55.143Z",
+      "updated_at": "2026-09-09T16:09:58.471Z",
       "event_first_seen_at": "2026-09-09T10:37:16.594Z",
       "event_detected_at": "2026-09-09T10:37:16.594Z",
       "event_id": "event-f66d6c7f3b5b653efdac",
@@ -5560,23 +7565,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 51.21905,
+        "source_age_minutes": 10.974516666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 311.64248333333336,
+        "queue_age_minutes": 332.69795,
         "target_publication_minutes": 60,
-        "news_freshness_score": 79,
+        "news_freshness_score": 95,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T15:48:55.143Z",
-        "fingerprint": "195a0cb07ff7abd9e6a590b36ba615301b2b320345b3a6c641a2cd9da81c9eea",
+        "checked_at": "2026-09-09T16:09:58.471Z",
+        "fingerprint": "21b8875851239b274be5e06ef16aa13a49db83342d4a14bde9a0421d0de31895",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T16:09:58.471Z",
+      "rejection": {
+        "at": "2026-09-09T16:09:58.471Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -8417,7 +10434,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
           "issue_codes": [],
           "warning_codes": []
@@ -9537,7 +11554,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "6800dd4678a1daebc2239235102cf004811ce09df5f17fea0430a380b63dc6e5",
           "issue_codes": [],
           "warning_codes": []
@@ -10386,7 +12403,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "635765e0c1512e4449c8c41cda8a1c92bfba5cb2f323696d81db1ac8fb26906f",
           "issue_codes": [],
           "warning_codes": []
@@ -13520,7 +15537,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T04:07:00.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -13541,7 +15558,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "5bf0079782476452cd4b50422972aafc1839912b11c42105b8258dcb924a055a",
           "issue_codes": [],
           "warning_codes": []
@@ -16328,7 +18345,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T03:28:00.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -16382,7 +18399,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "40edeffc10f76ac729263cf26d9219be8ce046bcc15081437c14b3359b0fdfae",
           "issue_codes": [],
           "warning_codes": []
@@ -17299,7 +19316,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T13:40:50.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -17320,7 +19337,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "89936e0172dca057489613122967481af6ae3d49f32909881997e0b915328fd0",
           "issue_codes": [],
           "warning_codes": []
@@ -18032,214 +20049,11 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "655dd83c6e5c040aaab34897c76dc9ad9ba2970a5bfe3514de685dd40e7ef130",
           "issue_codes": [],
           "warning_codes": []
         }
-      }
-    },
-    {
-      "story_id": "wt-a0494b6e523f45ca",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "9f793922c3865ada28c5a9e8a6a3158182f58dbb4bd8e87e21f359a7c2c0dbfa",
-        "first_failed_at": "2026-09-09T13:22:48.629Z",
-        "failed_at": "2026-09-09T13:22:48.629Z",
-        "retry_after": "2026-09-09T13:37:48.629Z",
-        "retry_count": 1
-      },
-      "slug": "eu-kommission-weniger-china-mehr-europa-eu-regelt-offentliche-auftrage-3f45ca",
-      "title": "EU-Kommission: Weniger China, mehr Europa – EU regelt öffentliche Aufträge",
-      "first_seen": "2026-09-09T13:15:00.000Z",
-      "last_updated": "2026-09-09T13:15:00.000Z",
-      "topic": [
-        "Europa",
-        "Wirtschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/politik/europa/eu-kommission-weniger-china-mehr-europa-eu-regelt-oeffentliche-auftraege/100253268.html",
-          "title": "EU-Kommission: Weniger China, mehr Europa – EU regelt öffentliche Aufträge",
-          "summary": "Mehr als eine Milliarde Euro pro Tag verliert die EU im Handel mit China. Der Vorschlag der EU-Kommission: mehr öffentliche Gelder für Produkte aus der EU ausgeben.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T13:15:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "2eb50efee5d70f6abadad71141cad82703b9a10358ca1fd6839d5eded46e88a4",
-          "source_item_id": "88899713d69ef072aa4db4e890c3c7bdc1d6dba8572507d119ad0db95d054411",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T13:15:00.000Z",
-          "ingested_at": "2026-09-09T13:22:48.629Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wirtschaftspolitik-16034645.html",
-          "title": "Wirtschaftspolitik: Weniger China, mehr Europa – EU regelt öffentliche Aufträge",
-          "summary": "Mehr als eine Milliarde Euro pro Tag verliert die EU im Handel mit China. Die EU-Kommission will daran etwas ändern: Wie mehr öffentliche Gelder für Produkte aus der EU ausgegeben werden sollen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T11:59:47.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "e37fccdbea0472bd0a256a02f6ea9499207ea5c2fb62ede6b7d65a4fc3ba81b6",
-          "source_item_id": "60da501509e3403482e90fa75fbd78ec1f65b952a9f85b500fdacd7f02666fc8",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T11:59:47.000Z",
-          "ingested_at": "2026-09-09T13:22:48.629Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-a0494b6e523f45ca-claim-01",
-          "story_id": "wt-a0494b6e523f45ca",
-          "claim": "EU-Kommission: Weniger China, mehr Europa – EU regelt öffentliche Aufträge: Mehr als eine Milliarde Euro pro Tag verliert die EU im Handel mit China. Der Vorschlag der EU-Kommission: mehr öffentliche Gelder für Produkte aus der EU ausgeben.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:22:48.629Z"
-        },
-        {
-          "claim_id": "wt-a0494b6e523f45ca-claim-02",
-          "story_id": "wt-a0494b6e523f45ca",
-          "claim": "Wirtschaftspolitik: Weniger China, mehr Europa – EU regelt öffentliche Aufträge: Mehr als eine Milliarde Euro pro Tag verliert die EU im Handel mit China. Die EU-Kommission will daran etwas ändern: Wie mehr öffentliche Gelder für Produkte aus der EU ausgegeben werden sollen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T13:22:48.629Z"
-        }
-      ],
-      "content_hash": "911fa3620bd45ea6963522f4d727560019a27a3de062cec6aa73179a190e5c0d",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-09T13:37:48.629Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-09T13:22:48.629Z",
-      "event_first_seen_at": "2026-09-09T13:22:48.629Z",
-      "event_detected_at": "2026-09-09T13:22:48.629Z",
-      "event_id": "event-610f6ffb0dd73aa7c41a",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 38,
-        "public_relevance": "mittel",
-        "topics": [
-          "Europa",
-          "Wirtschaft"
-        ],
-        "dimensions": [],
-        "status": "Entwurf",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 7.810483333333333,
-        "detection_delay_minutes": 7.810483333333333,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-09T13:22:48.629Z",
-        "fingerprint": "489374c8576f79e31d6e9bf04bfd450de43f8a69bce04dead2a9a8b735377322",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-09T13:22:48.629Z",
-      "rejection": {
-        "at": "2026-09-09T13:22:48.629Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
       }
     },
     {
@@ -20287,7 +22101,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "12bef0ecac03004ed3bac5de770e309ce7640b70e1f0cd67019ecc8d25bf69ca",
           "issue_codes": [],
           "warning_codes": []
@@ -20879,7 +22693,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T11:43:46.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20900,7 +22714,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "8929b3015df414ced513859f03f8cad4fd3bda0934990cc167491e416a6eb9bd",
           "issue_codes": [],
           "warning_codes": []
@@ -21519,7 +23333,7 @@
             "title": "Bundestag - CDU-Außenpolitiker Röttgen verteidigt Ausgaben für die Ukraine, Opposition kritisiert Fokus auf Verteidigung",
             "summary": "Der Bundestag hat im Rahmen der laufenden Haushaltswoche über die Ausgaben für die Außenpolitik debattiert. Der CDU-Außenpolitiker Röttgen sprach sich für die geplante Ukraine-Hilfe in Höhe von zwölf Milliarden Euro aus.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T15:18:46.000Z",
+            "published_at": "2026-09-09T16:03:53.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -21535,8 +23349,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T15:18:46.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "source_published_at": "2026-09-09T16:03:53.000Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -21557,7 +23371,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "048d4b5df1ace727741500c513d6fd69ec26841a693cb954d5edd26a116aac6e",
           "issue_codes": [],
           "warning_codes": []
@@ -23264,7 +25078,7 @@
             "title": "Brüssel - Vorgehen gegen Airbnb und Co.: EU-Kommission schlägt Regeln für Städte vor",
             "summary": "Für Städte in der Europäischen Union soll es einheitliche Regeln geben, wie sie gegen Kurzzeitvermietungen über Plattformen wie Airbnb vorgehen können.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T15:18:46.000Z",
+            "published_at": "2026-09-09T16:03:53.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -23280,8 +25094,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T15:18:46.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "source_published_at": "2026-09-09T16:03:53.000Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -23302,7 +25116,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "db4edd9204b55c88f80b1647933f984c907e7b0d317db7719617a1d40e43aaa3",
           "issue_codes": [],
           "warning_codes": []
@@ -23917,10 +25731,10 @@
       "story_id": "wt-15665d71bdf5b2ab",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "b27c839977ee998196c3b44ebca14217a2fed7bdcfb916eefdd9fb328013b7a8",
-        "first_failed_at": "2026-09-09T15:48:55.143Z",
-        "failed_at": "2026-09-09T15:48:55.143Z",
-        "retry_after": "2026-09-09T16:03:55.143Z",
+        "fingerprint": "f873cf2ff0be4e24917ad4ea21b6ccd9cb94e9c4cf3248226943606adb7cdb32",
+        "first_failed_at": "2026-09-09T16:09:58.471Z",
+        "failed_at": "2026-09-09T16:09:58.471Z",
+        "retry_after": "2026-09-09T16:24:58.471Z",
         "retry_count": 1
       },
       "slug": "statistik-zahl-der-berufspendler-bundesweit-gestiegen-munchen-hat-die-meisten-pendler-f5b2ab",
@@ -23938,7 +25752,7 @@
           "title": "Statistik - Zahl der Berufspendler bundesweit gestiegen - München hat die meisten Pendler",
           "summary": "Die Zahl der Menschen, die zur Arbeit pendeln, ist bundesweit gestiegen.",
           "source_type": "media_rss",
-          "published_at": "2026-09-09T15:18:46.000Z",
+          "published_at": "2026-09-09T16:03:53.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -23954,8 +25768,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-09T15:18:46.000Z",
-          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "source_published_at": "2026-09-09T16:03:53.000Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -23984,30 +25798,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:48:55.143Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         }
       ],
       "content_hash": "1b585c479d3487577f19e53b9c8e7a5d03cbf6fccf5e5940adea9237d09e0c48",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_DIRECTION_MIXED_PATHS_REQUIRED:human",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:positive_path",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:human:negative_path",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:human",
-        "AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:planet:negative_path",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:planet",
-        "AI_DIRECTION_PATH_REFERENCE_INVALID:democracy",
-        "AI_DETAIL_SUMMARY_LENGTH",
-        "AI_UNSUPPORTED_NUMBER:2024"
+        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 10,
-      "quality_retry_after": "2026-09-09T16:03:55.143Z",
+      "quality_retry_count": 11,
+      "quality_retry_after": "2026-09-09T16:24:58.471Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T15:48:55.143Z",
+      "updated_at": "2026-09-09T16:09:58.471Z",
       "event_first_seen_at": "2026-09-09T11:07:22.757Z",
       "event_detected_at": "2026-09-09T11:07:22.757Z",
       "event_id": "event-9d1a0cdf02447284e44d",
@@ -24042,20 +25849,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 30.152383333333333,
+        "source_age_minutes": 6.091183333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 281.53976666666665,
+        "queue_age_minutes": 302.59523333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 99,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T15:48:55.143Z",
+        "checked_at": "2026-09-09T16:09:58.471Z",
         "fingerprint": "95071ead4a28bce6ce4cde4d88f04d30ff9ef15b0ea50183251fc99d001c0418",
         "issue_codes": [],
         "warning_codes": []
@@ -26035,212 +27842,11 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "86deecbd252448cf3f404d23db3991c67b27a1850bb9e9cacf8ab7d3a163e718",
           "issue_codes": [],
           "warning_codes": []
         }
-      }
-    },
-    {
-      "story_id": "wt-53956114ef5b04d9",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "c3110adca9896c9f6f6eb3555038c00dc8b2f4b9f14b26202a81603eb5e9f1f8",
-        "first_failed_at": "2026-09-09T15:48:55.143Z",
-        "failed_at": "2026-09-09T15:48:55.143Z",
-        "retry_after": "2026-09-09T16:03:55.143Z",
-        "retry_count": 1
-      },
-      "slug": "in-aachen-stromnetz-angriff-tatverdachtiger-kommt-in-u-haft-5b04d9",
-      "title": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft",
-      "first_seen": "2026-09-09T10:29:16.000Z",
-      "last_updated": "2026-09-09T10:29:16.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-in-aachen-16034039.html",
-          "title": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft",
-          "summary": "Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T10:29:16.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "6457c3b8d788f0cf294009b4305a146b67b72f3d89a74a81d04d7c06e5c06cca",
-          "source_item_id": "dda243522bd778e03a969396df40f058e3ff6a6fb720db1903dee38a3a436067",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T10:29:16.000Z",
-          "ingested_at": "2026-09-09T15:48:55.143Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/in-aachen--stromnetz-angriff--tatverdaechtiger-kommt-in-u-haft-38227184.html",
-          "title": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft",
-          "summary": "Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T14:57:42.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "200ce5e36824f944b62c0d6c8a634c3395390c6e820709c0493a7f25459b3522",
-          "source_item_id": "a3c12ee263c8ebcaeaba1277d650c1ffdb6c2770addd119e6cfaf0a9dd903593",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T14:57:42.000Z",
-          "ingested_at": "2026-09-09T15:48:55.143Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-53956114ef5b04d9-claim-01",
-          "story_id": "wt-53956114ef5b04d9",
-          "claim": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft: Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:48:55.143Z"
-        },
-        {
-          "claim_id": "wt-53956114ef5b04d9-claim-02",
-          "story_id": "wt-53956114ef5b04d9",
-          "claim": "In Aachen: Stromnetz-Angriff: Tatverdächtiger kommt in U-Haft: Nach Sabotage-Angriffen auf das Stromnetz in mehreren Bundesländern hat die Polizei einen Tatverdächtigen festgenommen. Nun wurde ein Haftbefehl gegen ihn erlassen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:48:55.143Z"
-        }
-      ],
-      "content_hash": "89e9fd1f8262295ee56ea55339c3e16eb0b0f473100fa3333752b9484fe2a271",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-09T16:03:55.143Z",
-      "fresh": false,
-      "versions": [],
-      "updated_at": "2026-09-09T15:48:55.143Z",
-      "event_first_seen_at": "2026-09-09T15:48:55.143Z",
-      "event_detected_at": "2026-09-09T15:48:55.143Z",
-      "event_id": "event-ed2700a7ab2249d46acc",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 56,
-        "public_relevance": "hoch",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 51.21905,
-        "detection_delay_minutes": 51.21905,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 60,
-        "news_freshness_score": 79,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-09T15:48:55.143Z",
-        "fingerprint": "dacbb5e1c9a56dd49589b5b49b523bddf47f76be3de0b6041e2ac2f2c3f572b6",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-09T15:48:55.143Z",
-      "rejection": {
-        "at": "2026-09-09T15:48:55.143Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
       }
     },
     {
@@ -28585,7 +30191,7 @@
             "title": "PISA-Ergebnisse - Prien (CDU) fordert Alterslimit für Social Media",
             "summary": "Bundesbildungsministerin Prien sieht nach den schlechten deutschen Ergebnissen bei der PISA-Bildungsstudie Handlungsbedarf im Umgang mit Sozialen Medien.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T15:18:46.000Z",
+            "published_at": "2026-09-09T16:03:53.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -28601,8 +30207,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T15:18:46.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "source_published_at": "2026-09-09T16:03:53.000Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -28623,7 +30229,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "05c7d6c7b65da645fdfca511e81774d7cd2c9fc629c8e8f30aed8c9b9be971bb",
           "issue_codes": [],
           "warning_codes": []
@@ -30356,7 +31962,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -34224,7 +35830,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T09:13:00.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -34245,7 +35851,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "694f1e59b077b9f8c608a3538526072926dbea4a48e8bb4ab446a73ab6fbc375",
           "issue_codes": [],
           "warning_codes": []
@@ -39888,7 +41494,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "0c59257b7f229b4525f991d215e40acd4338a0901f548bea4671dd037f615fad",
           "issue_codes": [],
           "warning_codes": []
@@ -41410,7 +43016,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T03:28:00.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -41431,7 +43037,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "bb7a5588e7ab778e0e72e6f4cccdcb1d0ae39518fdb20485129fbf53d745c3ef",
           "issue_codes": [],
           "warning_codes": []
@@ -42261,17 +43867,30 @@
       "retirement_history": [],
       "title_image": {
         "mode": "impact_card",
-        "source_visual": null,
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50b7642f201d604e-3799545d4aabfec5-og.png",
           "width": 1200,
           "height": 630,
-          "layout": "landscape",
-          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+          "sha256": "3799545d4aabfec5105cdd2bfba266175f7b6ac3b7a9e3a952e20d5e3b649652"
         },
-        "status": "fallback",
-        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T11:08:12.066Z"
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50b7642f201d604e-001634b109db5f25-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "001634b109db5f2573eb4b96c3bccea3f947b5b3719298fc05d0660af2e08c4f"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50b7642f201d604e-8d7dfeffbb572203-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "8d7dfeffbb57220319070d9778af75db9734ea3113e79b39f3a64a9f918de6ce"
+        },
+        "source_visual": null,
+        "fingerprint": "2ef4eb3ed440f376f8cf82842af2f5a9f706b1093bb970f9040877e36c501207",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T16:18:40.622Z",
+        "status": "generated"
       },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -42439,7 +44058,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "f6112de380e917fd8c2d91cb9dcaa046603d1125b68f333808b91146ca2bffb9",
           "issue_codes": [],
           "warning_codes": []
@@ -44125,7 +45744,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T06:44:10.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -44146,7 +45765,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "2d967ebef56891fb5b7db628ee84539aed5971c3f41eea66bf2a66e035ade3f0",
           "issue_codes": [],
           "warning_codes": []
@@ -45204,7 +46823,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T20:33:01.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -45225,7 +46844,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "43e263c3b728aa4d6c1579552f106ce9474e539d6af84087dbe9dfe0b503165a",
           "issue_codes": [],
           "warning_codes": []
@@ -45956,7 +47575,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T09:11:21.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -45977,7 +47596,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "00745e32348705095e7193eb7f51b7e60e4211b36349f0379d5c458470069acb",
           "issue_codes": [],
           "warning_codes": []
@@ -48132,7 +49751,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -48153,7 +49772,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "fd023c485e0b3ed33b65d77ed5513973bc866b82062ccb744777b35c0783a309",
           "issue_codes": [],
           "warning_codes": []
@@ -48957,7 +50576,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "771af662c62e40f4e1dcbe83067df293cf64e8291cb7bc5e37aa95a5ae296855",
           "issue_codes": [],
           "warning_codes": []
@@ -56558,7 +58177,7 @@
             "title": "Krieg - Fünf Todesopfer bei neuen russischen Luftangriffen auf Kiew",
             "summary": "Bei neuen russischen Luftangriffen auf die ukrainische Hauptstadt Kiew sind nach Behördenangaben fünf Menschen getötet worden.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T15:18:46.000Z",
+            "published_at": "2026-09-09T16:03:53.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -56574,8 +58193,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T15:18:46.000Z",
-            "ingested_at": "2026-09-09T15:48:55.143Z",
+            "source_published_at": "2026-09-09T16:03:53.000Z",
+            "ingested_at": "2026-09-09T16:09:58.471Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -56596,7 +58215,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "3037a1d42e9e581af7193dffb83c5d5dedad0e73b1af2289d4607930fd0d5b62",
           "issue_codes": [],
           "warning_codes": []
@@ -63387,7 +65006,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "fada684c913b1511f4b664c4800c3b5ed71f9a95565753e62994fc4d1b7d2c3a",
           "issue_codes": [],
           "warning_codes": []
@@ -64377,7 +65996,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
           "issue_codes": [],
           "warning_codes": []
@@ -65106,7 +66725,7 @@
       "verification_started_at": "2026-09-08T17:39:08.268Z",
       "publish_ready_at": "2026-09-08T17:39:25.030Z",
       "news_status": "confirmed",
-      "deepening_due_at": "2026-09-09T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -65568,9 +67187,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "595a4a3b3f84e744890cf4ce26226a41bd02d02ca4f84f5ef213e73f3d73bcb2",
-        "checked_at": "2026-09-09T09:37:00.628Z",
+        "checked_at": "2026-09-09T16:09:58.471Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T15:37:00.628Z",
+        "expires_at": "2026-09-09T22:09:58.471Z",
         "sources": [
           {
             "source_id": "bundestag-hib",
@@ -65606,7 +67225,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
+      "deepening_checks": 3,
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
         "fingerprint": "fbb2118d3726b1cfe943c42ed43aeaf124fadf818cf39ee9b106240c30990ea9",
@@ -65614,60 +67233,6 @@
         "failed_at": "2026-09-09T09:06:56.077Z",
         "retry_after": "2026-09-09T09:21:56.077Z",
         "retry_count": 1
-      },
-      "pending_update": {
-        "detected_at": "2026-09-09T10:07:31.404Z",
-        "content_hash": "a500d34e7dbbe43b70282897bb0d692097dd3f7683236521849e31fc3588126a",
-        "sources": [
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag - Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210972",
-            "title": "Regierung: Keine explizit ostdeutschen Demokratie-Programme",
-            "summary": "Bildung, Familie, Senioren, Frauen und Jugend/Antwort Die Bundesregierung plant keine explizit ostdeutsche Programmförderung im Rahmen von \"Demokratie leben!\", wie sie in einer Antwort ausführt.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-08T15:12:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "b9f7bf388420886ce7c18fb807186dc47278b41a613b4e6c86d5e8accfae95bc",
-            "source_item_id": "d31b6901d6d53417786ebd5a186f11e01ef4ab78b78bf6b8e384fe4fbbd25b8e",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T15:12:00.000Z",
-            "ingested_at": "2026-09-09T07:52:48.594Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
-          "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
-          "issue_codes": [],
-          "warning_codes": []
-        }
       }
     },
     {
@@ -77348,7 +78913,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "04fad27b4d3289772b2e99292c31ee46e8833ec80b2213996da8da259f0bd90f",
           "issue_codes": [],
           "warning_codes": []
@@ -78760,7 +80325,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -82990,18 +84555,41 @@
       ],
       "retirement_history": [],
       "title_image": {
-        "mode": "impact_card",
-        "source_visual": null,
+        "mode": "editorial",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-268817aa0a8ccf86-5106ac6739081dd8-og.png",
           "width": 1200,
           "height": 630,
-          "layout": "landscape",
-          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+          "sha256": "5106ac6739081dd8b23c9f7c5f37b2680f79c0873a9ec4b41a3fe91dc867c079"
         },
-        "status": "fallback",
-        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T10:57:22.059Z"
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-268817aa0a8ccf86-be15b351c32ab59a-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "be15b351c32ab59af013854240042ede77b4508cee686bc76674e86d9e79a224"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-268817aa0a8ccf86-79696a0208162905-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "79696a0208162905e9379a7ec1060ebdbe1e0b7b037d43ccf000c676948bfbb0"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-268817aa0a8ccf86-cbf53b327d025ad0-source.png",
+          "sha256": "cbf53b327d025ad01994acdba51162cc3531331c0529d54dbad8fb6eb9b463dc",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-08T12:23:53.510Z"
+        },
+        "fingerprint": "2972204afc27c8838abd68b5dd1f3c9d2649e31fbe0ee90ad4b3868ded7ebe95",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T16:18:25.057Z",
+        "status": "generated"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -85043,7 +86631,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
           "issue_codes": [],
           "warning_codes": []
@@ -88987,9 +90575,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "9e1c10e0230a132d2d571c9d5ef13f3ca584b10c2bdf91e881a0b9da1e9af753",
-        "checked_at": "2026-09-09T15:59:40.828Z",
+        "checked_at": "2026-09-09T16:09:58.471Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T21:59:40.828Z",
+        "expires_at": "2026-09-09T22:09:58.471Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -92037,7 +93625,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
           "issue_codes": [],
           "warning_codes": []
@@ -93353,17 +94941,30 @@
       "retirement_history": [],
       "title_image": {
         "mode": "impact_card",
-        "source_visual": null,
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a271a35a2b58f666-9f3a23a2bd7010df-og.png",
           "width": 1200,
           "height": 630,
-          "layout": "landscape",
-          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+          "sha256": "9f3a23a2bd7010dfa2fe41a01a271a668f7300adc0d53cda197210b9eb63fa49"
         },
-        "status": "fallback",
-        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T11:08:06.949Z"
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a271a35a2b58f666-e00c37ffee6cec9f-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "e00c37ffee6cec9fd1f992167c066391e4b7802ee3b1c39982ddab4766d6634c"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a271a35a2b58f666-718b576947e501eb-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "718b576947e501eb01e0e29c6efa333276cf2d1240b706ca7f63753fe1c8e835"
+        },
+        "source_visual": null,
+        "fingerprint": "d8d8b10880cb6ed444a8afa60a3260d3e2a36ea8455cb346f56f701e25e8d21a",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-09T16:18:32.926Z",
+        "status": "generated"
       },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -117995,9 +119596,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T15:59:40.828Z",
+        "checked_at": "2026-09-09T16:09:58.471Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T21:59:40.828Z",
+        "expires_at": "2026-09-09T22:09:58.471Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -133413,9 +135014,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "560d363cdd017c4a692ca02b042420aa4aaa09b4dc45a423ff2633b3dfc29599",
-        "checked_at": "2026-09-09T15:59:40.828Z",
+        "checked_at": "2026-09-09T16:09:58.471Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T21:59:40.828Z",
+        "expires_at": "2026-09-09T22:09:58.471Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -228986,7 +230587,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -273380,7 +274981,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T15:59:40.828Z",
+          "checked_at": "2026-09-09T16:09:58.471Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -310791,6 +312392,56 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-09T16:09:58.471Z",
+          "retained_urls": [
+            "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+            "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+            "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+            "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
+            "https://www.ndr.de/nachrichten/info/das-erbe-nach-9-11-deutschland-nach-anschlaegen-in-usa,pearl-harburg-100.html",
+            "https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS9wcm9wbGFuXzE5NjM4Nzc1M19nYW56ZVNlbmR1bmc",
+            "https://www.stern.de/panorama/donald-trump-luegt-darueber--dass-er-an-9-11-gerettet-wurde-38224984.html",
+            "https://www.zdfheute.de/politik/ausland/9-11-world-trade-center-trump-usa-verschwoerungstheorien-100.html",
+            "https://www.stern.de/politik/ausland/11--september-2001-in-notrufen---die-frischluft-ist-bald-zu-ende--30702522.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+              "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+              "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-04T11:02:58.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+              "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-04T11:02:58.000Z",
+              "ingested_at": "2026-09-09T07:21:53.878Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-09T04:00:00.000Z",
@@ -310826,7 +312477,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T04:00:00.000Z",
-          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -310891,7 +312542,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T18:04:29.000Z",
-          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -310956,7 +312607,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T05:15:11.000Z",
-          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -311055,7 +312706,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T08:35:00.000Z",
-          "ingested_at": "2026-09-09T15:48:55.143Z",
+          "ingested_at": "2026-09-09T16:09:58.471Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -311150,7 +312801,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:59:40.828Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-02",
@@ -311170,7 +312821,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:59:40.828Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-03",
@@ -311190,7 +312841,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:59:40.828Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-04",
@@ -311210,7 +312861,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:59:40.828Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-05",
@@ -311230,7 +312881,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:59:40.828Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-06",
@@ -311250,7 +312901,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:59:40.828Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-07",
@@ -311270,7 +312921,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:59:40.828Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-08",
@@ -311290,7 +312941,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:59:40.828Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-09",
@@ -311310,7 +312961,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:59:40.828Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-10",
@@ -311330,7 +312981,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T15:59:40.828Z"
+          "checked_at": "2026-09-09T16:09:58.471Z"
         }
       ],
       "content_hash": "7eb44acec98cad35384374718777d4f12f2d767ad447112c7f02b0e824eea3ba",
@@ -311345,7 +312996,7 @@
       "fresh": false,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T15:59:40.828Z",
+      "updated_at": "2026-09-09T16:09:58.471Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-4282989facaefbf32544",
@@ -311383,20 +313034,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 343.6804666666667,
+        "source_age_minutes": 353.97451666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 697.31385,
+        "queue_age_minutes": 707.6079,
         "target_publication_minutes": 120,
-        "news_freshness_score": 28,
+        "news_freshness_score": 26,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T15:59:40.828Z",
+        "checked_at": "2026-09-09T16:09:58.471Z",
         "fingerprint": "f293c0bd597ca4870580846289ff10e218b8d87420fe13caaa770a4a65763a83",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"

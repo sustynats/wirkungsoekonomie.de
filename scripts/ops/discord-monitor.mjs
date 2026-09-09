@@ -146,6 +146,7 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
     dailyPipeline,
     dailySourceFunnel,
     latestSourceFunnel,
+    coverageAudit: report?.event_coverage || null,
   };
 }
 
@@ -182,6 +183,10 @@ export function evaluateChecks(data, now) {
   const failedImages = data.stories.filter(s => s.published && s.listed !== false && imageErrors.has(s.title_image?.refresh_failure || s.title_image?.fallback_reason)).length;
   checks.push({ id: 'images', name: 'Titelbilder', ok: failedImages === 0, reason: `${failedImages} ${failedImages === 1 ? 'Symbolbild' : 'Symbolbilder'} mit technischem Fehler; vorhandene Bilder oder Wirkungskarten bleiben sichtbar. Nachrichten werden dadurch nicht zurückgehalten.`, immediate: false });
   checks.push({ id: 'sources', name: 'Quellenabruf', ok: !sourceCoverageDegraded(data.report), reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
+  const gaps = (summary.coverageAudit?.alerts || []).filter(item => item.severity === 'warning' && /CATEGORY_COVERAGE_GAP|BREAKING_PUBLICATION_GAP/.test(item.code));
+  const freshCoverage = age(summary.coverageAudit?.checked_at, now) >= 0 && age(summary.coverageAudit?.checked_at, now) <= 45;
+  checks.push({ id: 'editorial-coverage', name: 'Redaktionelle Themenabdeckung', ok: !freshCoverage || !gaps.length, kind: 'editorial',
+    reason: gaps.length ? `${gaps.length} Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.` : 'Keine belegte überfällige Abdeckungslücke im aktuellen Beobachtungsausschnitt.', immediate: false });
   checks.push({ id: 'publication', name: 'Veröffentlichung', ok: data.liveFeed !== null && summary.pendingPublication === 0, reason: data.liveFeed === null ? 'Live-Feed nicht lesbar.' : `${summary.pendingPublication} sichtbare Lagen oder Einzelakten seit über 45 Minuten nicht im Live-Feed.`, immediate: false });
   const budgetBlocked = Boolean(data.report?.budget_blocked || data.report?.budget_stage >= 3 || data.report?.budget_policy?.status !== 'ok' || summary.usdMonth >= Number(data.report?.monthly_budget_usd));
   checks.push({ id: 'budget', name: 'KI-Monatsbudget', ok: !budgetBlocked, reason: budgetBlocked ? 'Monatslimit oder Wechselkurs-Sicherheitsgate hält neue KI-Anfragen an; die Warteschlange bleibt erhalten.' : 'innerhalb der technischen Budgetgrenze', immediate: false });
@@ -203,6 +208,7 @@ export function dailyReport(summary, checks) {
     `Queue: ${summary.queue.total || 0} offen (${summary.queue.capacity || 0} Kapazität · ${summary.queue.technical || 0} technisch · ${summary.queue.editorial || 0} redaktionell); Status ${summary.queue.status || 'unbekannt'}.`,
     `Quellen-Funnel heute: ${funnel.feedItems || 0} Feed-Einträge → ${funnel.changedItems || 0} neu/aktualisiert → ${funnel.candidates || 0} Story-Kandidaten → ${funnel.eligibleKnown ? funnel.eligible : 'noch nicht historisch erfasst'} geeignet → ${funnel.aiSelected || 0} KI → ${funnel.publicationActions || 0} Veröffentlichungen/Aktualisierungen. Lokal verworfen: ${funnel.localRejections || 0}; redaktionelle Quellenbeiträge: ${sourceTotals.editorial_rejections || 0}.`,
     `Produktive Quellen im letzten Lauf: ${productive}.`,
+    ...(summary.coverageAudit ? [`Ereignischeck (begrenzter Quellenbestand): ${summary.coverageAudit.counts.clustered_major} größere Ereignisse · ${summary.coverageAudit.counts.published} mit Veröffentlichung · ${summary.coverageAudit.counts.potential_missed} nachzuprüfen (einschließlich berechtigter Qualitätsvorbehalte).`] : []),
     `KI-Gesamtschätzung inkl. offener Reserven: gestern $${money(summary.usdYesterday)} · heute $${money(summary.usdToday)} · Monat $${money(summary.usdMonth)}.`,
     ...(operating ? [
       `Direkte Nachrichtenverarbeitung seit ${operating.started_at}: ${operating.news.first_publications} Erstveröffentlichungen · ${operating.news.updates} Aktualisierungen · ${operating.news.ai_requests} KI-Anfragen, inklusive Ablehnungen und Wiederholungen.`,
@@ -240,7 +246,7 @@ export function advanceState(previous, checks, summary, now, { reportNow = false
     // A second independent observation (at least 5 min apart), or already aged run/budget failure.
     if (!incident.active && (check.immediate || age(incident.firstSeen, stamp) >= 5)) {
       incident.active = true;
-      enqueue(state, `${check.id}:${incident.firstSeen}:failed`, `⚠ WÖk-Betriebsstörung\n${check.name}: ${check.reason}\nSeit: ${incident.firstSeen}\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml`);
+      enqueue(state, `${check.id}:${incident.firstSeen}:failed`, `⚠ ${check.kind === 'editorial' ? 'WÖk-Abdeckungshinweis' : 'WÖk-Betriebsstörung'}\n${check.name}: ${check.reason}\nSeit: ${incident.firstSeen}\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml`);
     }
   }
   const date = berlinParts(now);

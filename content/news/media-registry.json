@@ -1,7 +1,17 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-07",
+  "updated_at": "2026-09-09",
   "policy": {
+    "event_relevance": { "enabled": true, "version": "2026-09-09.1", "observer_max_items": 600, "rechecks_per_run": 4 },
+    "active_discovery": {
+      "scope": "Gezielte Metadaten-Indexsuche innerhalb bereits freigegebener Herausgeber; keine allgemeine Such-API, keine neuen Bezahldienste.",
+      "endpoints": [
+        { "id": "bundestag-plenary-agenda", "source_id": "bundestag-hib", "url": "https://www.bundestag.de/static/appdata/includes/rss/aktuellethemen.rss", "type": "official_rss", "enabled": true, "purpose": "agenda_and_plenary", "access_reviewed_at": "2026-09-09", "evidence_url": "https://www.bundestag.de/services/rss", "scope": "Offiziell angebotene Titel/Datums-/Linkmetadaten zur Recherche. Keine Bilder oder Übernahme vollständiger Bundestag-Redaktionstexte; Primärdokumente und Aussagen gesondert prüfen." },
+        { "id": "spiegel-major-news-index", "source_id": "spiegel-schlagzeilen", "url": "https://www.spiegel.de/sitemaps/news-de.xml", "type": "news_sitemap", "enabled": true, "purpose": "cross_topic_gap_search", "access_reviewed_at": "2026-09-09", "evidence_url": "https://www.spiegel.de/robots.txt", "scope": "Öffentlich deklarierter Nachrichtenindex desselben bereits freigegebenen Herausgebers. Nur Titel, Link und echtes Publikationsdatum, kein Artikelabruf/keine Paywall." },
+        { "id": "zdf-politics-index", "source_id": "zdfheute-nachrichten", "url": "https://www.zdfheute.de/sitemap-zdfheute/sitemap-zdfheute-politik.xml", "type": "news_sitemap", "enabled": true, "purpose": "politics_gap_search", "access_reviewed_at": "2026-09-09", "evidence_url": "https://www.zdfheute.de/sitemap-zdfheute.xml", "scope": "Öffentlich deklarierter Index; lastmod ist keine Publikationszeit. Höchstens zwei zulässige Metadatenprüfungen pro Lauf innerhalb des bestehenden Artikelfreigaberahmens." },
+        { "id": "zdf-economy-index", "source_id": "zdfheute-nachrichten", "url": "https://www.zdfheute.de/sitemap-zdfheute/sitemap-zdfheute-wirtschaft.xml", "type": "news_sitemap", "enabled": true, "purpose": "economy_technology_gap_search", "access_reviewed_at": "2026-09-09", "evidence_url": "https://www.zdfheute.de/sitemap-zdfheute.xml", "scope": "Wie Politikindex; gemeinsame harte Abrufobergrenzen, keine parallele zweite KI-Lane." }
+      ]
+    },
     "respect_robots": true,
     "max_items_per_source": 60,
     "regional_coverage_target": "Ein regelmaessiger regionaler Zugang je Bundesland; amtliche Grundabdeckung und unabhaengiger Journalismus getrennt pruefen. Keine Aktivierung ohne Zugangs- und Nutzungspruefung.",

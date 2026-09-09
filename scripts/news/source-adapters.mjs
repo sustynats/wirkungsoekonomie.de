@@ -29,10 +29,12 @@ export function parseResearchApi(raw, source) {
 
 export function parseNewsSitemap(raw, source) {
   if (/<!DOCTYPE|<!ENTITY/i.test(raw)) throw new Error("FEED_DTD_NOT_ALLOWED");
+  // Namespace aliases are arbitrary (SPIEGEL uses n:, other providers news:).
+  const namespace = [...new Set(['news', ...[...String(raw).matchAll(/xmlns:([\w-]+)=["']http:\/\/www\.google\.com\/schemas\/sitemap-news\/0\.9["']/g)].map(match => match[1])])];
   return [...String(raw).matchAll(/<url\b[^>]*>([\s\S]*?)<\/url>/gi)].slice(0, source.max_items || 60).map((match) => {
     const field = (key) => match[1].match(new RegExp(`<${key}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${key}>`, "i"))?.[1]?.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1");
     // lastmod is not publication time. Generic sitemaps are discovery-only.
-    return record(source, { title: field("news:title"), url: field("loc"), published_at: field("news:publication_date") });
+    return record(source, { title: namespace.map(prefix => field(`${prefix}:title`)).find(Boolean), url: field("loc"), published_at: namespace.map(prefix => field(`${prefix}:publication_date`)).find(Boolean) });
   }).filter(Boolean);
 }
 
