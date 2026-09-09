@@ -1,7 +1,357 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T09:06:56.077Z",
+  "updated_at": "2026-09-09T09:21:45.679Z",
   "stories": [
+    {
+      "story_id": "wt-7e2c82a0ae7a9962",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "schulbegleitung-und-co-zahl-der-eingliederungshilfen-fur-junge-menschen-mit-seelischer-b-7a9962",
+      "title": "Schulbegleitung und Co.: Zahl der Eingliederungshilfen für junge Menschen mit seelischer Behinderung binnen zehn Jahren mehr als verdoppelt",
+      "source_summary": "Das Statistische Bundesamt meldet für 2024 gut 174 000 Eingliederungshilfen für junge Menschen mit seelischer Behinderung. 2014 waren es knapp 80 800, die Ausgaben stiegen im selben Zeitraum von gut 1,1 Milliarden Euro auf 3,5 Milliarden Euro. Als häufigste Gründe nennt Destatis seelische Probleme oder Entwicklungsauffälligkeiten sowie schulische oder berufliche Probleme.\n\nZusätzlich verweist die Mitteilung auf 111 700 Schülerinnen und Schüler mit dem Förderschwerpunkt emotionale und soziale Entwicklung im Schuljahr 2024/2025.",
+      "summary": "Destatis zeigt einen starken Anstieg bei Eingliederungshilfen und Ausgaben. Das ist für Jugendhilfe und Schulbegleitung eine relevante Zustandsinformation.",
+      "detail_summary": "Die Mitteilung beschreibt einen klaren Zustandsanstieg in der Kinder- und Jugendhilfe: mehr Hilfen, mehr Ausgaben, mehr erfasste Schülerinnen und Schüler mit Förderbedarf. Materiell relevant ist das, weil sich damit Zugang, Bedarf und Ressourcen für Schulbegleitung und verwandte Hilfen verändern. Ein möglicher Wirkpfad führt über mehr Leistungen zu besser erreichbarer Unterstützung im Alltag; ein Gegenpfad ist, dass steigende Fallzahlen und Kosten die Systeme stärker belasten. Die Meldung belegt die Entwicklung, nicht ihre Ursache und nicht die Wirkung auf Teilhabe im Einzelfall. Für eine Einordnung nach SDG und Wirkpfaden bleibt offen, wie viel der Zuwachs auf Bedarf, Diagnostik, Angebot oder Verwaltungsänderungen zurückgeht. Die Evidenz ist für den Befund hoch, für Folgewirkungen aber begrenzt.",
+      "why_relevant": "Die Meldung zeigt eine deutliche Veränderung bei Fallzahlen und Ausgaben in einem sensiblen Bereich der Jugendhilfe mit direktem Bezug zu Kindern und jungen Menschen.",
+      "topic": [
+        "Soziales",
+        "Gesundheit",
+        "Politik",
+        "Gesellschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Mehr Hilfen können Unterstützung und Teilhabe erleichtern; zugleich steigen Bedarf, Kosten und Belastung für Zugang und Versorgung.",
+          "positive_path": {
+            "mechanism": "Mehr Eingliederungshilfen können individuelle Unterstützung im Schul- und Alltagsleben häufiger verfügbar machen.",
+            "source_ids": [
+              "destatis-aktuell"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Stark steigende Fallzahlen und Ausgaben können Personal, Budgets und Zugänge unter Druck setzen.",
+            "source_ids": [
+              "destatis-aktuell"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung enthält keinen belastbaren Pfad zu Umwelt- oder Klimawirkungen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Statistik kann öffentliche Steuerung, Planung und parlamentarische Kontrolle über Jugendhilfe verbessern, wenn sie in Entscheidungen einfließt.",
+          "positive_path": {
+            "mechanism": "Bessere Daten zu Fallzahlen und Ausgaben stärken die demokratische Korrekturfähigkeit bei Sozialleistungen.",
+            "source_ids": [
+              "destatis-aktuell"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ohne ausreichende Kapazitäten kann der wachsende Bedarf die Umsetzung sozialer Rechte erschweren.",
+            "source_ids": [
+              "destatis-aktuell"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T09:21:45.679Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T06:00:00.000Z",
+      "last_updated": "2026-09-09T09:25:28.428Z",
+      "version": 2,
+      "news_status": "confirmed",
+      "event_id": "event-24ab3fe6aacb569a543a",
+      "case_file": null,
+      "source_published_at": "2026-09-09T06:00:00.000Z",
+      "published_at": "2026-09-09T06:22:45.918Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "destatis-aktuell"
+          ],
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Reform der Kinder- und Jugendhilfe den Zugang zu Schulbegleitung und anderen Eingliederungshilfen verändert.",
+          "source_id": "destatis-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Zahl der bewilligten Eingliederungshilfen, Ausgaben und Anteile nach Jahren",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-50bb573ab2e01903",
+          "announced_at": "2026-09-09T06:00:00.000Z",
+          "follow_up_date": "2026-09-16T06:22:45.918Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob die geplante Reform der Kinder- und Jugendhilfe konkrete Änderungen bei Zuständigkeit, Zugang oder Finanzierung der Schulbegleitung bringt.",
+          "source_id": "destatis-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "veröffentlichter Gesetzentwurf oder Beschluss mit Regelungsinhalt",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8e7e44a9e2f81f55",
+          "announced_at": "2026-09-09T06:00:00.000Z",
+          "follow_up_date": "2026-09-16T09:25:28.428Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob die Statistik in den kommenden Berichten weiter steigende Fallzahlen oder Ausgaben zeigt.",
+          "source_id": "destatis-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Folgebericht mit Vergleichswerten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b29476a8fb88ec35",
+          "announced_at": "2026-09-09T06:00:00.000Z",
+          "follow_up_date": "2026-09-16T09:25:28.428Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Statistisches Bundesamt",
+          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
+          "source_type": "official_rss",
+          "published_at": "2026-09-09T06:00:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/zahl-der-eingliederungshilfen-fuer-junge-menschen-mit-seelischer-behinderung-verdoppelt-38225568.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T07:12:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-6a90771161f2b4bb",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "naher-osten-kriegsereignisse-treiben-roholpreis-wieder-uber-100-dollar-f2b4bb",
+      "title": "Naher Osten - Kriegsereignisse treiben Rohölpreis wieder über 100 Dollar",
+      "source_summary": "Deutschlandfunk meldet, dass neue amerikanische Angriffe auf iranische Tanker und die Reaktion der Revolutionsgarden die Rohölpreise wieder nach oben getrieben haben. Genannt wird ein Brent-Preis, der zeitweise wieder auf mehr als 100 US-Dollar pro Barrel stieg.\n\nZugleich verweist der Beitrag darauf, dass der Preis zuletzt noch unter dem Jahreshoch von rund 126 Dollar lag, das Ende April nach den ersten amerikanischen und israelischen Angriffen auf den Iran erreicht worden sei. Unklar bleibt in der Quelle, wie breit der Preiseffekt bereits ist und wie dauerhaft er sich hält.",
+      "summary": "Brent kletterte zeitweise wieder über 100 US-Dollar pro Barrel. Der Bericht verknüpft das mit neuen Angriffen im Nahen Osten, offen bleibt aber die Breite des Effekts.",
+      "detail_summary": "Die Meldung beschreibt einen schnellen Preisschub am Ölmarkt nach neuen Angriffen auf iranische Tanker und der Reaktion der Revolutionsgarden. Als konkreter Befund nennt die Quelle einen Brent-Preis von zeitweise mehr als 100 US-Dollar je Barrel. Zusätzlich wird ein früheres Jahreshoch von rund 126 Dollar erwähnt, das Ende April nach Angriffen auf den Iran erreicht worden sei. Materiell relevant ist das vor allem über mögliche Folgen für Energiepreise, Transportkosten und damit für Haushalte und Unternehmen. In der Quelle selbst ist aber nur der Marktimpuls belegt, nicht die weitere Kette bis zu Verbraucherpreisen oder anderen realen Folgen. Der Befund bleibt deshalb eine frühe Lagebeschreibung mit offenem Ausmaß und offener Dauer.",
+      "why_relevant": "Ölpreisbewegungen können sich auf Energie-, Transport- und damit auf Alltagskosten, Unternehmen und Inflation auswirken. Die Meldung ist deshalb materiell relevant, auch wenn die Folgewirkungen noch nicht gemessen sind.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Quelle belegt einen Ölpreisanstieg, aber noch keinen belastbaren Pfad zu Kosten, Einkommen oder Versorgungslage einzelner Gruppen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der Meldung folgt kein direkter, belegter Umweltpfad; nur der Marktpreis für Rohöl ist beschrieben.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Quelle enthält keine belastbare Information zu demokratischen Verfahren, Rechten oder Korrekturfähigkeit.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T09:21:45.679Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T08:07:42.000Z",
+      "last_updated": "2026-09-09T09:23:41.552Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-e038c1024208d64af902",
+      "case_file": null,
+      "source_published_at": "2026-09-09T09:18:33.000Z",
+      "published_at": "2026-09-09T09:23:41.552Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/kriegsereignisse-treiben-rohoelpreis-wieder-ueber-100-dollar-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T09:18:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-6f98ab401c2bcf13",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "porsche-se-aktionar-klagt-gegen-millionenvergutung-fur-ex-finanzchef-meschke-2bcf13",
+      "title": "Porsche SE: Aktionär klagt gegen Millionenvergütung für Ex-Finanzchef Meschke",
+      "source_summary": "Laut manager magazin könnte die Porsche SE ihrem früheren Vorstandsmitglied Lutz Meschke noch bis 2030 mehr als 20 Millionen Euro zahlen, obwohl er seit vergangenem Jahr nicht mehr für die Holding arbeitet. Ein Aktionär geht dem Bericht zufolge dagegen vor und zieht vor Gericht. Offene Punkte sind der genaue Klageinhalt, der Verfahrensstand und ob die genannte Summe rechtlich noch durchsetzbar ist.\n\nDie Meldung betrifft damit eine mögliche Millionenzahlung und einen Konflikt zwischen Anteilseigner und Holding über Vergütung und Governance.",
+      "summary": "Ein Aktionär der Porsche SE klagt laut Bericht gegen eine mögliche Millionenvergütung für Ex-Finanzchef Lutz Meschke. Der Kern ist damit ein laufender Konflikt um eine hohe Zahlung an einen früheren Manager.",
+      "detail_summary": "Die Meldung beschreibt einen Streit um eine mögliche Zahlung von mehr als 20 Millionen Euro bei der Porsche SE. Nach der Quelle arbeitet Lutz Meschke seit vergangenem Jahr nicht mehr für die Holding, soll aber bis 2030 noch Geld erhalten. Der Vorgang ist für Aktionäre und die Unternehmensführung materiell relevant, weil er Vergütungsregeln, Kapitalabflüsse und Governance-Fragen berührt. Ein direkter Wirkpfad liegt in der möglichen Veränderung von Zahlungsansprüchen und in der Signalwirkung für künftige Managervergütung. Ob die Klage Erfolg hat, ist offen; belastbare Angaben zum Gericht, zu Gegenargumenten und zur rechtlichen Grundlage fehlen.",
+      "why_relevant": "Materiell relevant wegen möglicher hoher Zahlungsansprüche, Governance-Konflikt und möglicher Veränderung von Kapitalflüssen bei einer großen Holding.",
+      "topic": [
+        "Arbeit",
+        "Europa",
+        "Finanzen"
+      ],
+      "status": "offen",
+      "analysis_type": "monitoring",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Falls die Zahlung tatsächlich durchgesetzt oder bestätigt wird, fließt Kapital aus der Holding ab und die Vergütungssteuerung wird für künftige Fälle strenger geprüft. Die Meldung legt zugleich Rechts- und Reputationsrisiken nahe.",
+          "positive_path": {
+            "mechanism": "Eine gerichtliche Klärung könnte die Vergütungsregeln präzisieren und künftige Ansprüche begrenzen.",
+            "source_ids": [
+              "manager-magazin-news"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Eine bestätigte Zahlung würde Mittel binden und kann Governance-Streit sowie Anreizprobleme verstärken.",
+            "source_ids": [
+              "manager-magazin-news"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung ist kein direkter Umwelt- oder Klimapfad belegt.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Der Fall kann die Nachprüfbarkeit von Vorstandsvergütung und die Kontrolle durch Aktionäre stärken, wenn das Verfahren Transparenz schafft. Zugleich zeigt er einen Konflikt um Rechenschaft in der Unternehmensführung.",
+          "positive_path": {
+            "mechanism": "Ein gerichtliches Verfahren kann Vergütungsfragen überprüfbar machen und Anteilseignerrechte sichtbar stärken.",
+            "source_ids": [
+              "manager-magazin-news"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Bleiben Ansprüche unklar oder stark abgeschirmt, schwächt das die Verständlichkeit und Kontrolle von Managementvergütung.",
+            "source_ids": [
+              "manager-magazin-news"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T09:21:45.679Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T09:13:00.000Z",
+      "last_updated": "2026-09-09T09:23:21.001Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-e8f078cfd7a2d55231cb",
+      "case_file": null,
+      "source_published_at": "2026-09-09T09:13:00.000Z",
+      "published_at": "2026-09-09T09:23:21.001Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und in welcher Form das Gericht die Vergütungsfrage verhandelt.",
+          "source_id": "manager-magazin-news",
+          "expected_by": null,
+          "measurable_indicator": "Gerichtstermin oder Verfahrensschritt",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0936e6d12b115d4a",
+          "announced_at": "2026-09-09T09:13:00.000Z",
+          "follow_up_date": "2026-09-16T09:23:21.001Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/porsche-se-aktionaer-klagt-gegen-millionenverguetung-fuer-ex-finanzchef-meschke-a-625aa917-9fcd-4e92-b4a7-c78f29a4a4ec",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T09:13:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-5d9f4bf00c16b314",
       "title_image": {
@@ -1882,113 +2232,6 @@
           "source_type": "media_rss",
           "published_at": "2026-09-09T02:29:00.000Z",
           "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-7e2c82a0ae7a9962",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "schulbegleitung-und-co-zahl-der-eingliederungshilfen-fur-junge-menschen-mit-seelischer-b-7a9962",
-      "title": "Schulbegleitung und Co.: Zahl der Eingliederungshilfen für junge Menschen mit seelischer Behinderung binnen zehn Jahren mehr als verdoppelt",
-      "source_summary": "Das Statistische Bundesamt meldet einen starken Anstieg bei Eingliederungshilfen für junge Menschen mit seelischer Behinderung. 2024 wurden gut 174 000 Hilfen gewährt, mehr als doppelt so viele wie 2014 mit knapp 80 800. Die Ausgaben für minderjährige Kinder und Jugendliche lagen 2024 bei 3,5 Milliarden Euro, nach gut 1,1 Milliarden Euro 2014.\n\nAls häufige Gründe nennt die Statistik seelische Probleme oder Entwicklungsauffälligkeiten, schulische oder berufliche Probleme sowie Auffälligkeiten im Sozialverhalten. Parallel weist sie auf 111 700 Schülerinnen und Schüler mit dem Förderschwerpunkt emotionale und soziale Entwicklung im Schuljahr 2024/2025 hin; 58 % davon wurden inklusiv unterrichtet. Offen bleibt, wie stark die geplante Reform der Kinder- und Jugendhilfe diese Entwicklung künftig beeinflusst.",
-      "summary": "Ein amtlicher Datensatz zeigt deutlich mehr Eingliederungshilfen und höhere Ausgaben für junge Menschen mit seelischer Behinderung. Für die Praxis der Jugendhilfe ist das relevant, weil Zugänge, Bedarf und Ressourcen sichtbar werden.",
-      "detail_summary": "Die Statistik beschreibt eine deutliche Zustandsänderung in der Kinder- und Jugendhilfe: mehr bewilligte Eingliederungshilfen, höhere Ausgaben und mehr erfasste Schülerinnen und Schüler mit Förderbedarf im Bereich emotionale und soziale Entwicklung. Das ist für Familien, Schulen und Träger materiell relevant, weil es auf wachsenden Unterstützungsbedarf und höheren Ressourceneinsatz hinweist. Ein möglicher Wirkpfad führt über mehr Schulbegleitung und andere Hilfen zu besserer Teilhabe im Alltag. Ob das tatsächlich so eintritt, bleibt offen; der Befund belegt zunächst nur Umfang und Entwicklung, nicht die Wirksamkeit der Hilfe. Die Reform der Kinder- und Jugendhilfe ist als Kontext genannt, ihre Folgen sind aber noch nicht belegt. Die Evidenz ist amtlich und direkt, aber auf einen Datenstand begrenzt.",
-      "why_relevant": "Die Meldung beschreibt einen klaren Trend bei Hilfen, Ausgaben und Förderbedarf. Das ist für Kinder, Familien, Schulen und öffentliche Haushalte materiell relevant.",
-      "topic": [
-        "Soziales",
-        "Gesundheit",
-        "Politik"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Mehr bewilligte Hilfen können den Zugang zu Unterstützung und Teilhabe verbessern, wenn Bedarf gedeckt und Angebote erreichbar sind.",
-          "positive_path": {
-            "mechanism": "Mehr Schulbegleitung und Hilfen erleichtern Alltag, Lernen und soziale Teilhabe betroffener junger Menschen.",
-            "source_ids": [
-              "destatis-aktuell"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Steigende Fallzahlen und Ausgaben können Engpässe, Wartezeiten oder Verteilungsdruck im Hilfesystem verstärken.",
-            "source_ids": [
-              "destatis-aktuell"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Die Meldung enthält keinen belastbaren Wirkpfad zu Umwelt, Emissionen oder Ressourcenverbrauch.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Die Statistik berührt öffentliche Planung und Korrekturfähigkeit, zeigt aber keinen direkten demokratischen Effekt.",
-          "positive_path": null,
-          "negative_path": null
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T06:22:18.312Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T06:00:00.000Z",
-      "last_updated": "2026-09-09T06:22:45.918Z",
-      "version": 1,
-      "news_status": "confirmed",
-      "event_id": "event-24ab3fe6aacb569a543a",
-      "case_file": null,
-      "source_published_at": "2026-09-09T06:00:00.000Z",
-      "published_at": "2026-09-09T06:22:45.918Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "destatis-aktuell"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die Reform der Kinder- und Jugendhilfe den Zugang zu Schulbegleitung und anderen Eingliederungshilfen verändert.",
-          "source_id": "destatis-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Zahl der bewilligten Eingliederungshilfen, Ausgaben und Anteile nach Jahren",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-50bb573ab2e01903",
-          "announced_at": "2026-09-09T06:00:00.000Z",
-          "follow_up_date": "2026-09-16T06:22:45.918Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Statistisches Bundesamt",
-          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N062_221.html",
-          "source_type": "official_rss",
-          "published_at": "2026-09-09T06:00:00.000Z",
-          "primary_source": true
         }
       ]
     },
