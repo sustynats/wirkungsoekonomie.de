@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-09T20:47:21.772Z",
+  "updated_at": "2026-09-09T21:37:35.896Z",
   "candidates": [
     {
       "story_id": "wt-63cb95e544d260ce",
@@ -34660,9 +34660,13 @@
       "quality_cycles": 0,
       "request_id": null,
       "attempts": 0,
-      "last_attempt_at": "2026-09-09T20:47:21.772Z",
-      "next_attempt_at": "2026-09-09T21:02:21.772Z",
-      "quality_errors": [],
+      "last_attempt_at": "2026-09-09T21:47:05.659Z",
+      "next_attempt_at": "2026-09-09T22:02:05.659Z",
+      "quality_errors": [
+        "EDITORIAL_ARTICLE_LENGTH",
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
+        "EDITORIAL_SELF_FRAME_FAILED"
+      ],
       "reason": "AI_BATCH_PENDING"
     },
     "wt-e820bef62dd96612": {
