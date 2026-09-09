@@ -1,7 +1,312 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T17:38:28.244Z",
+  "updated_at": "2026-09-09T18:07:31.891Z",
   "stories": [
+    {
+      "story_id": "wt-026d11d680622587",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-026d11d680622587-ca99ce30cedd3f02-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-026d11d680622587-ce9e7773a23754e6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-026d11d680622587-183e3dd768afc617-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-026d11d680622587-453a15ea164c767b-source.png"
+        }
+      },
+      "slug": "bundestag-neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritis-622587",
+      "title": "Bundestag - Neuer Sportstaatsminister Rauhe will Olympia nach Deutschland holen, AfD kritisiert Benennung",
+      "source_summary": "Im Bundestag wurde in der Generaldebatte über Sportpolitik und den Haushalt für Sport und Ehrenamt gesprochen. Der neue Staatsminister Rauhe sagte, er wolle olympische und paralympische Spiele nach Deutschland holen. Er verwies darauf, dass aus einer Bewerbung einer Stadt oder Region eine gemeinsame deutsche Bewerbung werden müsse.\n\nDie AfD kritisierte die Benennung Rauhes und stellte eigene sportpolitische Prioritäten heraus. Zugleich nennt die Meldung Haushaltszahlen: Für Sport und Ehrenamt sind rund 400 Millionen Euro für 2027 vorgesehen, etwa 12 Millionen Euro mehr als im laufenden Jahr. Für die Olympiabewerbung sind sechs Millionen Euro eingeplant. Offene Punkte bleiben der weitere politische Weg und die tatsächliche Umsetzung.",
+      "summary": "Rauhe will eine deutsche Olympia- und Paralympia-Bewerbung anstoßen; die AfD kritisiert seine Benennung. Im Haushalt sind dafür und für Sport und Ehrenamt konkrete Mittel genannt.",
+      "detail_summary": "Die Meldung beschreibt eine Debatte im Bundestag mit zwei klaren Ebenen: die politische Ankündigung von Rauhe und die haushaltspolitische Einordnung. Neu ist vor allem der öffentliche Anspruch, olympische und paralympische Spiele nach Deutschland holen zu wollen, plus die genannten Mittel für 2027. Die Relevanz liegt weniger in Reichweite als in einem möglichen Wirkpfad über Sportförderung, Standortpolitik und die spätere Bewerbungsentscheidung. Eingetretene Wirkung ist noch nicht belegt; es handelt sich um eine erste Lagebeschreibung mit offenem Umsetzungsstand. Die Evidenz stammt nur aus einer journalistischen Quelle, deshalb bleiben die Aussagen vorläufig.",
+      "why_relevant": "Die Meldung verbindet eine neue politische Funktion mit konkreten Haushaltszahlen und einer umstrittenen Benennung. Das ist für Sportpolitik, Bundeshaushalt und die spätere Olympiafrage unmittelbar relevant.",
+      "topic": [
+        "Demokratie"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Ankündigung und die Haushaltszahlen verschieben den politischen und administrativen Ausgangspunkt für eine mögliche Bewerbung und für Sportförderung. Eine tatsächliche Wirkung auf Verfahren, Zustimmung oder Austragung ist noch nicht belegt.",
+          "positive_path": {
+            "mechanism": "Mehr Aufmerksamkeit, konkrete Mittel und ein benannter Staatsminister können einen institutionellen Pfad für eine gemeinsame Bewerbung und für zusätzliche sportpolitische Koordination öffnen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Die Benennung und die olympische Zielsetzung können Konflikte über Prioritäten, politische Symbolik und Mittelverteilung verstärken und dadurch den Konsensprozess erschweren.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der Meldung ergibt sich kein belegter Umwelt- oder Klimapfad. Eine spätere Austragung oder Infrastrukturentscheidung könnte Umweltfragen berühren, hier ist das aber noch nicht belastbar ableitbar.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die öffentliche Benennung und die Haushaltsdebatte erhöhen Transparenz und parlamentarische Rechenschaft, können aber zugleich Konflikte um Prioritäten und Legitimation verstärken. Eine demokratische Wirkung ist damit nicht automatisch positiv.",
+          "positive_path": {
+            "mechanism": "Öffentliche Debatte über Funktion, Mittel und Zielsetzung schafft sichtbare Rechenschaft und macht politische Prioritäten prüfbar.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Polarisierte Kritik an der Benennung und an der Prioritätensetzung kann den Streit über Sachpolitik zuspitzen und Kompromisse erschweren.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "kinder_jugend"
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Meldung enthält eine politisch markierte Benennung und eine Konfliktlinie zwischen Regierung und AfD. Das macht sie für Nachrichtenlage und Framing prüfbar.",
+        "factual_core": "Rauhe will olympische und paralympische Spiele nach Deutschland holen; die AfD kritisiert seine Benennung; im Haushalt stehen konkrete Mittel für Sport und Ehrenamt.",
+        "epistemic_status": {
+          "confirmed": [
+            "Rauhe sagte, er wolle olympische und paralympische Spiele nach Deutschland holen.",
+            "Die AfD kritisierte die Benennung Rauhes.",
+            "Für Sport und Ehrenamt sind rund 400 Millionen Euro und für die Olympiabewerbung sechs Millionen Euro eingeplant."
+          ],
+          "actor_claims": [
+            "Rauhe verbindet seine Rolle mit dem Ziel einer deutschen Olympia-Bewerbung.",
+            "Die AfD beschreibt ihre Linie als ideologiefreie Sachpolitik."
+          ],
+          "open": [
+            "Ob und wann eine konkrete Bewerbung folgt."
+          ]
+        },
+        "attribution": {
+          "frame_source": "Deutschlandfunk",
+          "speaker": "Rauhe und Schieske",
+          "original_term": "ideologiefreie",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "ideologiefreie",
+          "origin_in_story": "Deutschlandfunk",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "ideologiefreie",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Die Benennung wird als politischer Streitfall erzählt, nicht nur als Personalie.",
+          "implied_cause": "Die AfD stellt die Auswahl und die inhaltliche Ausrichtung des Staatsministers infrage.",
+          "implied_responsibility": "Verantwortung wird im Streit um die Benennung und die Sportprioritäten verortet.",
+          "implied_threat": "Gefahr eines politischen Konflikts über Legitimation und Sachpolitik.",
+          "implied_solution_space": "Mehr Sachpolitik, klare Mittelverwendung und weitere politische Klärung.",
+          "material_omissions": []
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Bundestagsdebatte und parteipolitische Kritik",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "dlf-nachrichten",
+              "claim_supported": "Öffentliche sportpolitische Positionierung in der Generaldebatte"
+            }
+          ],
+          "uncertainty": "Die konkrete politische Wirkung ist offen; es liegt nur eine vorläufige Einordnung vor."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Sportpolitik, Haushaltsdebatte, olympische Bewerbung",
+          "normalization_potential": "low",
+          "repetition_risk": "low",
+          "polarization_potential": "mittel",
+          "trust_effect_potential": "mittel",
+          "discourse_effect_potential": "Die wiederholte Zuspitzung auf Benennung und Ideologie kann die Debatte polarisieren; zugleich erhöht die öffentliche Haushaltsangabe die Nachprüfbarkeit."
+        },
+        "impact_path": {
+          "first_order": "Benennung und Bewerbungsvorstoß erzeugen unmittelbare politische Aufmerksamkeit.",
+          "second_order": "Die Debatte verlagert sich auf Zuständigkeit, Prioritäten und Geld.",
+          "third_order": "Es kann ein längerfristiger Streit über Olympia, Sportförderung und staatliche Zielmarken entstehen."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Die Quelle nennt die sportpolitische Ankündigung, die Kritik der AfD und konkrete Haushaltszahlen.",
+          "what_is_inferred": "Die Formulierung 'ideologiefrei' dient als politischer Gegensatzmarker.",
+          "what_is_open": "Keine unabhängige Zweitquelle im Datensatz. Keine belastbare Aussage zu tatsächlichen Folgen.",
+          "facts": [
+            "Die Quelle nennt die sportpolitische Ankündigung, die Kritik der AfD und konkrete Haushaltszahlen."
+          ],
+          "observations": [
+            "Nur eine journalistische Quelle liegt vor."
+          ],
+          "inferences": [
+            "Die Formulierung 'ideologiefrei' dient als politischer Gegensatzmarker."
+          ],
+          "impact_potentials": [
+            "Mehr Aufmerksamkeit für die Personalie und die Olympiafrage."
+          ],
+          "impact_risks": [
+            "Polarisierung entlang der Benennungs- und Sachpolitikfrage."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine unabhängige Zweitquelle im Datensatz.",
+            "Keine belastbare Aussage zu tatsächlichen Folgen."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Die Meldung ist vor allem politisch interessant, weil sie eine neue Rolle im Kanzleramt mit einer klaren Zielsetzung verbindet: Rauhe will olympische und paralympische Spiele nach Deutschland holen. Dazu kommen konkrete Haushaltszahlen für Sport und Ehrenamt. Das ist mehr als eine bloße Personalie, weil daraus ein möglicher Wirkpfad für eine spätere Bewerbung und für weitere Mittelsteuerung entsteht. Zugleich bleibt offen, ob daraus tatsächlich Entscheidungen, Verfahren oder mehr Unterstützung folgen. Die AfD kritisiert die Benennung und setzt einen Gegentakt. Die Quelle ist nur eine journalistische Meldung, deshalb bleibt der Befund vorläufig und ohne belastbaren Wirkungsnachweis.",
+        "editorial_assessment": "Die Meldung ist vor allem politisch interessant, weil sie eine neue Rolle im Kanzleramt mit einer klaren Zielsetzung verbindet: Rauhe will olympische und paralympische Spiele nach Deutschland holen. Dazu kommen konkrete Haushaltszahlen für Sport und Ehrenamt. Das ist mehr als eine bloße Personalie, weil daraus ein möglicher Wirkpfad für eine spätere Bewerbung und für weitere Mittelsteuerung entsteht. Zugleich bleibt offen, ob daraus tatsächlich Entscheidungen, Verfahren oder mehr Unterstützung folgen. Die AfD kritisiert die Benennung und setzt einen Gegentakt. Die Quelle ist nur eine journalistische Meldung, deshalb bleibt der Befund vorläufig und ohne belastbaren Wirkungsnachweis.",
+        "fact_first_alternative": "Fakt: Rauhe will olympische und paralympische Spiele nach Deutschland holen; Wissenstand: vorläufige journalistische Meldung; Attribution: Rauhe und AfD-Aussage getrennt; Frame: politisch markierte Benennungs- und Sachpolitikdebatte.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Bundestag: Neuer Sportstaatsminister Rauhe will Olympia nach Deutschland holen",
+          "recommended_summary": "Rauhe will eine deutsche Olympia- und Paralympia-Bewerbung anstoßen; die AfD kritisiert seine Benennung. Im Haushalt sind dafür und für Sport und Ehrenamt konkrete Mittel genannt.",
+          "recommended_meta_description": "Neue Sportstaatsminister-Rolle, Olympia-Ziel und Haushaltszahlen prägen die Debatte im Bundestag."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T18:07:31.891Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T16:19:10.000Z",
+      "last_updated": "2026-09-09T18:17:42.373Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-deedc0809a40d5fa8b1b",
+      "case_file": null,
+      "source_published_at": "2026-09-09T17:40:46.000Z",
+      "published_at": "2026-09-09T18:17:42.373Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und wie aus der Ankündigung eine gemeinsame deutsche Olympiabewerbung wird.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "offizielle Bewerbungsentscheidung oder belastbare Verfahrensschritte",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bc4b25431ff4ae9b",
+          "announced_at": "2026-09-09T17:40:46.000Z",
+          "follow_up_date": "2026-09-16T18:17:42.373Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob der Haushaltsplan für 2027 im Parlament unverändert bleibt oder geändert wird.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "verabschiedete Haushaltsfassung und Mittelansätze",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e1363d19eb43ab75",
+          "announced_at": "2026-09-09T17:40:46.000Z",
+          "follow_up_date": "2026-09-16T18:17:42.373Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritisiert-benennung-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T17:40:46.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-50924fbe12d4ad5f",
       "title_image": {
@@ -2583,9 +2888,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3e258fc08f00f85e-62b70584f81b2799-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3e258fc08f00f85e-8c2060ae77e1387c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3e258fc08f00f85e-7b8b8868724a439c-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "74-jahriger-nach-messerangriff-in-freiburg-gestorben-00f85e",
@@ -5663,12 +5978,25 @@
     {
       "story_id": "wt-5a2fe52ebad137c3",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5a2fe52ebad137c3-00ea69503cb07836-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5a2fe52ebad137c3-b2e59c7702fb22c3-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5a2fe52ebad137c3-77f7c44512027dcd-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5a2fe52ebad137c3-3b629d4fae77bd80-source.png"
         }
       },
       "slug": "us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-d137c3",
@@ -10168,9 +10496,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-26f87ea8d0b41af4-9cf3025bd70854d0-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-26f87ea8d0b41af4-725728937844d317-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-26f87ea8d0b41af4-ce68b0acfa306efa-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "eugh-politische-kampagne-namens-ikea-plan-kann-mobelhandler-schaden-b41af4",
