@@ -16,9 +16,10 @@ import {importApprovedEditorials} from '../../scripts/news/bridge/personal-publi
 import {loadPersonalEditorials,PERSONAL_FILE} from '../../scripts/news/personal-editorial.mjs';
 import {editorialAnalysisPage} from '../../scripts/news/build.mjs';
 import {bridgePath} from '../../scripts/news/bridge/contract.mjs';
+import {DropboxTransport} from '../../scripts/news/bridge/dropbox.mjs';
 const owner='1206956406805102593',other='111111111111111111';
 const now=()=>new Date().toISOString();
-const preview=()=>({format:'opinion_analysis',title:'Ein ausdrücklich fiktiver Vorschautext',subtitle:'Prüfung des privaten Freigabewegs',markdown:'## Test der Freigabe\n\nDieser synthetische Text beschreibt ausschließlich den technischen Test einer Vorschau. Er ist kein wirklicher Beitrag und enthält keine persönliche Position oder Erfahrung der Autorin.',sources:[{url:'https://example.org/source',title:'Synthetische Testquelle',publisher:'Test'}],checks:{source_binding:true,editorial_validation:true,personal_experiences_invented:false}});
+const preview=()=>({format:'opinion_analysis',title:'Ein ausdrücklich fiktiver Vorschautext',subtitle:'Prüfung des privaten Freigabewegs',markdown:'## Test der Freigabe\n\nDieser synthetische Text beschreibt ausschließlich den technischen Test einer Vorschau. Er ist kein wirklicher Beitrag und enthält keine persönliche Position oder Erfahrung der Autorin.\n\n## Meine Einordnung\n\nAuch dieser Schlussabschnitt ist ausschließlich eine synthetische Prüfung des Freigabewegs.',sources:[{url:'https://example.org/source',title:'Synthetische Testquelle',publisher:'Test'}],checks:{source_binding:true,editorial_validation:true,personal_experiences_invented:false}});
 function setup(t){
  const directory=fs.mkdtempSync(path.join(os.tmpdir(),'editorial-intake-test-')),store=new BridgeStore(path.join(directory,'queue.sqlite'),{lane:'discovery'}),files=new Map();
  const transport={writeAtomic:async(p,v)=>{const text=JSON.stringify(v);if(files.has(p))assert.equal(files.get(p),text);else files.set(p,text);},list:async folder=>[...files.keys()].filter(p=>p.includes('/'+folder+'/')).map(p=>({name:p.split('/').at(-1)})),read:async p=>files.get(p),metadata:async p=>files.has(p)?{name:p.split('/').at(-1)}:null,move:async(a,b)=>{assert.ok(files.has(a));assert.equal(files.has(b),false);files.set(b,files.get(a));files.delete(a);}};
@@ -26,6 +27,25 @@ function setup(t){
  t.after(()=>{store.close();fs.rmSync(directory,{recursive:true,force:true});});return {directory,store,files,transport,intake,approval};
 }
 async function job(f){const d=f.intake.draft(owner,{client_id:randomUUID(),kind:'opinion_analysis',brief:'Bitte diesen synthetischen Testfall vorbereiten.',links:'https://example.org/source',author_notes:'',attachments:[],publish:true,urgent:false});const result=await f.intake.submit(owner,d.id);await f.intake.preparePending();return f.store.get(result.job_id);}
+test('screenshot intake uses the real atomic Dropbox writer and releases input only after intact attachments',async t=>{
+ const f=setup(t),transport=new DropboxTransport({credentials:{}}),files=new Map(),moves=[];
+ transport.request=async(op,args,body,binary)=>{
+  if(op==='files/get_metadata'){if(!files.has(args.path))throw Error('BRIDGE_DROPBOX_NOT_FOUND');return {'.tag':'file'};}
+  if(op==='files/upload'){assert.equal(files.has(args.path),false);files.set(args.path,Buffer.from(body));return {};}
+  if(op==='files/download')return binary?Buffer.from(files.get(args.path)):files.get(args.path).toString('utf8');
+  if(op==='files/move_v2'){assert.equal(files.has(args.to_path),false);files.set(args.to_path,files.get(args.from_path));files.delete(args.from_path);moves.push(args.to_path);return {};}
+  throw Error('UNEXPECTED_OPERATION');
+ };
+ f.intake.transport=transport;
+ const bytes=fs.readFileSync('assets/img/people/natalie-weber-woek-analyse.jpg');
+ const d=f.intake.draft(owner,{client_id:randomUUID(),kind:'opinion_analysis',brief:'Synthetischer Auftrag mit eigener Bilddatei.',links:'',author_notes:'',attachments:[{name:'eigenes.jpg',type:'image/jpeg',size:bytes.length}],publish:false,urgent:false});
+ f.intake.upload(owner,d.id,0,bytes,'image/jpeg');const result=await f.intake.submit(owner,d.id);await f.intake.preparePending();
+ const j=f.store.get(result.job_id),asset=j.input.request.attachments[0].path;
+ assert.equal(j.status,'queued');assert.deepEqual(files.get(asset),bytes);assert.equal(moves.at(-1),bridgePath('00_INBOX',j.input.job_id+'.input.json'));
+ await transport.writeBinaryAtomic(asset,bytes);assert.equal(moves.length,2);
+ await assert.rejects(transport.writeBinaryAtomic(asset,Buffer.from('changed bytes')),/IMMUTABLE_FILE_CONFLICT/);
+ assert.deepEqual(files.get(asset),bytes);await assert.rejects(transport.writeBinaryAtomic(asset,Buffer.alloc(8*1024*1024+1)),/TOO_LARGE/);
+});
 test('intake, private preview, one final approval and serial publisher preserve the exact text',async t=>{
  const f=setup(t),j=await job(f);assert.equal(j.input.manual_only,true);assert.equal(j.input.request.publication_intent,'final_approval_required');
  f.files.set(bridgePath('20_OUTPUT_READY',j.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:j.input.job_id,input_hash:j.input.input_hash,processed_at:now(),preview:preview()}));
@@ -91,4 +111,10 @@ test('manual news research creates a native bridge job and never a personal arti
  const {assertSchema,inputSchema}=await import('../../scripts/news/bridge/contract.mjs');assertSchema(inputSchema,child.input);
  assert.equal(f.approval.list(owner).length,0);const count=f.store.all().length;
  await prepareIntakeNews({...f,registry:{sources:[source],policy:{}},fetchArticle});assert.equal(f.store.all().length,count);
+});
+
+test('private previews waiting for owner approval do not fill the research queue or prevent a new manual request',async t=>{
+ const f=setup(t);
+ for(let i=0;i<12;i++)f.store.put({input:{job_id:'wt_20260910T000000Z_'+i.toString(16).padStart(24,'0'),job_type:'editorial_request'},status:'accepted',accepted:{staged:true}});
+ const created=await job(f);assert.equal(created.input.job_type,'editorial_request');assert.equal(f.approval.claimPublications().length,0);
 });

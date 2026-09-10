@@ -564,3 +564,18 @@ test('a manual news child always stages even when production publication is enab
  await transport.writeAtomic(bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json'),output(job.input));
  const results=await provider.reconcile({},[],later);assert.equal(results[0].staged,true);assert.equal(job.input.test_only,false);
 });
+
+test('large completed backlog is acknowledged and archived in bounded resumable batches, newest results first',async t=>{
+ const {provider,store,transport}=setup(t,{maxJobs:2});const ids=[];
+ for(let i=0;i<25;i++){
+  const id='wt_20260910T000000Z_'+i.toString(16).padStart(24,'0'),at=new Date(Date.parse(now)+i*1000).toISOString();ids.push(id);
+  store.put({input:{job_id:id,test_only:true},candidate:{story_id:'synthetic-'+i},created_at:at,accepted_at:at,status:'accepted',attempts:{},accepted:{staged:true,decision:'publish',output_hash:hash(i)}});
+ }
+ await provider.finalize([],later,{committed:true});
+ assert.ok(store.get(ids[24]).ack);assert.ok(store.get(ids[23]).ack);assert.equal(store.get(ids[0]).ack,undefined);
+ assert.equal(ids.filter(id=>store.get(id).archived_at).length,2);
+ assert.deepEqual(store.get(ids[0]).attempts,{});
+ for(let i=0;i<12;i++)await provider.finalize([],later,{committed:true});
+ assert.ok(ids.every(id=>store.get(id).archived_at));const written=transport.writes;
+ await provider.finalize([],later,{committed:true});assert.equal(transport.writes,written);
+});
