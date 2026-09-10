@@ -1,4 +1,5 @@
-import { impactAssessmentErrors, migrateImpactAssessment } from '../impact-assessment.mjs';
+import { IMPACT_VERSION, impactAssessmentErrors, migrateImpactAssessment } from '../impact-assessment.mjs';
+import { POTENTIAL_REVISION } from '../impact-potential.mjs';
 import { buildAnalysisPrompt, sanitizeFeedText, sha256, suppliedEvidenceIds } from '../lib.mjs';
 import { assertAutomatable } from '../manual-policy.mjs';
 import { visualContext } from './visual.mjs';
@@ -18,7 +19,7 @@ export function bridgeInput(candidate, now, { testOnly = false, canonicalFingerp
     // Public excerpts already fetched under the production source-access policy.
     // Never copy credentials, whole source objects or paywall HTML into the queue.
     text: '', excerpt: sanitizeFeedText(s.article_excerpt || s.summary || '', 20000), language: s.language || 'de' }));
-  const inputHash = hash({ canonicalFingerprint, content_hash: candidate.content_hash,
+  const inputHash = hash({ impact_version: IMPACT_VERSION, semantics_revision: POTENTIAL_REVISION, canonicalFingerprint, content_hash: candidate.content_hash,
     source_versions: candidate.sources.map(s => [s.source_id, s.url, s.content_hash, hash(s.article_excerpt || s.summary || '')]).sort(),
     analysis_hash: existing?.published ? sha256(JSON.stringify(existing.analysis)) : null });
   const stamp = new Date(firstSeen).toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z';
@@ -89,13 +90,14 @@ export function adaptOutput(output, job, registry, stories, now) {
   // Only IDs actually supplied in this immutable prompt can resolve.
   resolveEvidenceReferences(analysis, job.candidate, suppliedEvidenceIds(job.input.wirkungsticker.analysis_prompt)[job.candidate.story_id] || []);
   normalizeEvidenceExcerpts(analysis, job.candidate);
-  const impactErrors = impactAssessmentErrors(analysis.impact_assessment, job.candidate.sources, { required: job.input.wirkungsticker.analysis_prompt.includes('impact_assessment 2.0') });
+  const impactErrors = impactAssessmentErrors(analysis.impact_assessment, [...job.candidate.sources,...(job.semantic_review?.verified_context_sources || [])], { required: /impact_assessment 2\.[01]|Wirkungsticker2\.1\/all-dimensions-1/.test(job.input.wirkungsticker.analysis_prompt) });
   if (impactErrors.length) throw Object.assign(new Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: impactErrors });
   const review = {
     review_type: target.published ? 'story_correction' : 'story_draft_review', story_id: id,
     expected_content_hash: target.content_hash, ...(target.published ? { expected_analysis_hash: analysisHash } : {}),
     title: sanitizeFeedText(output.story.headline, 500), topics: [output.editorial.category].filter(Boolean),
     research_checked_at: output.processed_at, review_basis: `ChatGPT Dropbox Bridge; ${job.input.job_id}; ${output.decision.reason}`,
+    impact_sources: job.semantic_review?.verified_context_sources || [],
     sources: sourcePool.filter(s => declared.has(`${s.source_id}\n${safeUrl(s.url)}`)), analysis,
     ...(target.published ? { correction_note: output.wirkungsticker.correction_note } : {}),
   };

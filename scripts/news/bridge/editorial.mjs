@@ -1,4 +1,6 @@
-import { migrateImpactAssessment, impactClaimLedger } from '../impact-assessment.mjs';
+import { retainPotentialHistory } from '../impact-potential.mjs';
+import { assessmentBasis } from '../migrate-impact-assessments.mjs';
+import { migrateImpactAssessment, impactClaimLedger, withMagnitudeCalculations } from '../impact-assessment.mjs';
 import { impactAssessmentErrors } from '../impact-assessment.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -11,6 +13,7 @@ export const EDITORIAL_JOB_TYPE='editorial_analysis';
 export const editorialOutputSchema={type:'object',additionalProperties:false,required:['schema_version','job_id','input_hash','processed_at','decision'],properties:{
   schema_version:{const:'1.0'},job_id:{type:'string',pattern:'^wt_\\d{8}T\\d{6}Z_[a-f0-9]{24}$'},input_hash:{type:'string',pattern:'^[a-f0-9]{64}$'},processed_at:{type:'string',format:'date-time'},
   decision:{type:'object',additionalProperties:false,required:['status','reason'],properties:{status:{enum:['publish','hold','reject']},reason:{type:'string',minLength:1,maxLength:4000}}},
+  research_sources:{type:'array',maxItems:12,items:{type:'object'}},
   editorial_analysis:{type:'object'},
 }};
 const closed=new Set(['acknowledged','quarantined','archive_failed']);
@@ -71,12 +74,18 @@ export async function importEditorialJobs(bridge,root,now){
         analysis.source_snapshot=editorialSources(current.story).map(s=>({...s,source_id:editorialSourceRef(s)}));
         const gate = await bridge.semanticReview(bridge, job, output, analysis, analysis.impact_assessment || migrateImpactAssessment(analysis, { title: analysis.title }), now);
         if (gate.status !== 'ready') continue;
-        analysis.impact_assessment = { ...gate.assessment, publication_status: 'ready' };
-        analysis.impact_claims = impactClaimLedger(analysis.impact_assessment, analysis.source_snapshot, now);
+        analysis.impact_assessment = { ...withMagnitudeCalculations(gate.assessment), publication_status: 'ready' };
+        analysis.impact_sources = gate.record?.impact_sources || [];
+        analysis.impact_claims = impactClaimLedger(analysis.impact_assessment, [...analysis.source_snapshot,...analysis.impact_sources], now);
         const errors=editorialAnalysisValidationErrors(analysis,current.story,current.assessment);
-        errors.push(...impactAssessmentErrors(analysis.impact_assessment, analysis.source_snapshot, {required:job.input.analysis_prompt.includes("impact_assessment 2.0")}));
+        errors.push(...impactAssessmentErrors(analysis.impact_assessment, [...analysis.source_snapshot,...analysis.impact_sources], {required:/impact_assessment 2\.[01]/.test(job.input.analysis_prompt)}));
         if(errors.length)throw Object.assign(Error('BRIDGE_EDITORIAL_PUBLICATION_GATE_FAILED'),{issues:errors});
         record=prepareAutomaticEditorialRecord({story:current.story,assessment:current.assessment,analysis,existing:previous,now,result:{provider:'chatgpt_dropbox_bridge',model:null}});
+        record.impact_sources=analysis.impact_sources;
+        record.impact_assessment=analysis.impact_assessment;
+        retainPotentialHistory(record,record.impact_assessment,{at:now,jobId:job.input.job_id});
+        record.impact_assessment_basis=assessmentBasis(record);
+        if(job.semantic_review) record.impact_semantic_review={review_job_id:job.semantic_review.review_job_id,reviewed_at:job.semantic_review.reviewed_at,status:'ready'};
         record.bridge_import={job_id:job.input.job_id,output_hash:hash(output),imported_at:now};
       }
       const accepted={job_id:job.input.job_id,story_id:job.candidate.story_id,decision:output.decision.status,editorial:record,record:null,staged,output_hash:hash(output),accepted_at:now};

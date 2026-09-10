@@ -137,7 +137,7 @@ for (const analysis of editorialStore.analyses.filter((item) => item.status === 
   const impactErrors = persistedImpactAssessmentErrors(analysis);
   if (impactErrors.length) fail(`PERSISTED_IMPACT_INVALID:${analysis.analysis_id}:${impactErrors.join(',')}`);
   const { impact_assessment: _projection, ...originalAnalysis } = analysis;
-  const errors = editorialAnalysisValidationErrors(analysis.impact_assessment?.review?.status === 'needs_reassessment' ? originalAnalysis : analysis, story, { candidate: true, evidence_gate: { passed: Boolean(analysis.evidence_gate?.passed) } });
+  const errors = editorialAnalysisValidationErrors(analysis.impact_assessment?.version === '2.0' || analysis.impact_assessment?.review?.status === 'needs_reassessment' ? originalAnalysis : analysis, story, { candidate: true, evidence_gate: { passed: Boolean(analysis.evidence_gate?.passed) } });
   if (errors.length) fail(`EDITORIAL_ANALYSIS_QUALITY_INVALID:${analysis.analysis_id}:${errors.join(",")}`);
   const sourceIds = new Set((analysis.source_snapshot || []).map((source) => source.source_id));
   for (const source of (analysis.source_snapshot || []).filter(source => source.editorial_review)) {

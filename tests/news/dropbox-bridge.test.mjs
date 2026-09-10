@@ -1,3 +1,4 @@
+import { syntheticImpact21 } from './fixtures/impact21.mjs';
 import { ensureSemanticReview } from '../../scripts/news/bridge/semantic-review.mjs';
 import { SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import test from 'node:test';
@@ -203,7 +204,7 @@ test('real native correction adapter passes existing gates, preserves version an
   Object.assign(original,{analysis:version.analysis,content_hash:review.expected_content_hash,current_version:version.version});original.versions=original.versions.filter(v=>v.version<=version.version);
   delete original.pending_update;
   const c={...original,sources:review.sources,existing_story:original},created='2026-09-09T12:00:00.000Z',processed='2026-09-09T14:00:00.000Z';
-  const input=bridgeInput(c,created),value=output(input,'publish');input.wirkungsticker.analysis_prompt=input.wirkungsticker.analysis_prompt.replace('impact_assessment 2.0','historical MPD contract');value.processed_at=processed;
+  const input=bridgeInput(c,created),value=output(input,'publish');input.wirkungsticker.analysis_prompt=input.wirkungsticker.analysis_prompt.replace(/impact_assessment 2\.1|Wirkungsticker2\.1\/all-dimensions-1/g,'historical MPD contract');value.processed_at=processed;
   Object.assign(value.story,{headline:review.title,short_summary:review.analysis.summary,detailed_summary:review.analysis.source_summary});
   value.wirkungsticker={analysis:review.analysis,correction_note:review.correction_note};
   const registry=loadNewsRegistry(process.cwd());
@@ -446,7 +447,7 @@ test('bridge pending drafts and updates retain source metadata but never persist
 });
 
 for (const pass of [true,false]) test(`separate semantic review controls image generation and ACK (pass=${pass})`,async t=>{
-  const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];
+  const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];review.impact_assessment=syntheticImpact21(review.impact_assessment);
   const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
   record.sources.push(...review.assessment_sources);record.impact_assessment=review.impact_assessment;
   let images=0;

@@ -1,9 +1,16 @@
 import { visualGenerationProvider } from '../processing-mode.mjs';
+import { IMPACT_VERSION } from '../impact-assessment.mjs';
+import { POTENTIAL_REVISION } from '../impact-potential.mjs';
 export async function waitingForReview(store, job) {
   const gate = job.publication_gate;
+  const assessment = job.semantic_review?.assessment;
+  if (gate?.status !== 'needs_second_pass' && assessment
+    && (assessment.version !== IMPACT_VERSION || assessment.semantics_revision !== POTENTIAL_REVISION)) return false;
+  const review = gate?.review_job_id ? await store.get(gate.review_job_id) : null;
+  if (review?.input?.job_type === 'impact_semantic_review'
+    && (review.input.impact_version !== IMPACT_VERSION || review.input.semantics_revision !== POTENTIAL_REVISION)) return false;
   if (['needs_review','blocked'].includes(gate?.status)) return true;
   if (gate?.status !== 'needs_second_pass' || !gate.review_job_id) return false;
-  const review = await store.get(gate.review_job_id);
   return ['queued','correction_pending','accepted'].includes(review?.status);
 }
 export async function observeOutput(store, job, now) {

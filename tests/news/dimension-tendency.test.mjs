@@ -6,11 +6,11 @@ import { renderStoryVisual } from '../../scripts/news/story-visual.mjs';
 import { buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
 import { storyCard, storyPage } from '../../scripts/news/build.mjs';
 import { sanitizeAnalysisVisuals } from '../../scripts/news/run.mjs';
-import { deriveImpactPresentation, IMPACT_RULE } from '../../scripts/news/impact-assessment.mjs';
+import { deriveImpactPresentation, IMPACT_PROMPT_RULE } from '../../scripts/news/impact-assessment.mjs';
 import { dimensionAssessment } from '../../scripts/news/direction-assessment.mjs';
 
 const mpd = () => Object.fromEntries(['human','planet','democracy'].map(key=>[key,{relevance:'hoch',rationale:'Der konkrete Wirkmechanismus bleibt zu prüfen.'}]));
-const statuses = html => [...html.matchAll(/class="wt-dim wt-dim--[^"]+" data-potential-model="2.0" data-direction="([^"]+)"/g)].map(match=>match[1]);
+const statuses = html => [...html.matchAll(/class="wt-dim wt-dim--[^"]+" data-potential-model="2.1" data-direction="([^"]+)"/g)].map(match=>match[1]);
 const mixedPaths = () => ({ positive_path: { mechanism: 'Zusätzliche Beratung erleichtert den Zugang zu Hilfe.', source_ids: ['test'] }, negative_path: { mechanism: 'Gleichzeitiger Mittelentzug verkürzt die Öffnungszeiten.', source_ids: ['test'] } });
 
 test('all four directions are legible text and distinct icons, not bar colors or a hover-only hint',()=>{
@@ -62,7 +62,7 @@ test('invalid directions stay open and cannot inject content or inherit object p
 test('new prompts always include base tendencies, even when optional visuals are deferred',()=>{
   for (const includeVisuals of [true,false]) {
     const prompt=buildAnalysisPrompt([{story_id:'wt-test',title:'Eine neue Entscheidung',sources:[],claims:[]}],{includeVisuals});
-    assert.ok(prompt.includes(IMPACT_RULE));
+    assert.ok(prompt.includes(IMPACT_PROMPT_RULE));
     assert.equal((prompt.match(/"path_status":/g)||[]).length,1, 'one shared MPD schema avoids three paid copies');
     assert.equal((prompt.match(/"\$ref":"#\/\$defs\/impact_dimension"/g)||[]).length,3);
     if(!includeVisuals) assert.ok(prompt.includes('"visuals":null'));

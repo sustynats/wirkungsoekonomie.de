@@ -17,7 +17,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { measure, fitText, FONTS } from "./text.mjs";
-import { DIMENSIONS, STATUS_TRACK, ANALYSIS_TYPES, RELEVANCE_LEVELS, TOPIC_ICONS, iconMarkup } from "../visuals.mjs";
+import { DIMENSIONS, STATUS_TRACK, ANALYSIS_TYPES, RELEVANCE_LEVELS, TOPIC_ICONS, iconMarkup, impactRingSymbol } from "../visuals.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "../../..");
@@ -152,7 +152,7 @@ function formatDate(value) {
 }
 
 function levelOf(value) {
-  const level = value && typeof value === 'object' ? value.magnitude : value;
+  const level = value && typeof value === 'object' ? value.magnitudeBars ?? value.magnitude : value;
   return Number.isInteger(level) && level >= 0 && level <= 5 ? level : null;
 }
 
@@ -273,7 +273,8 @@ function impactPanel(u, { x, y, width, height, dimensions, riskDirections, statu
   const innerWidth = width - pad * 2;
   const columnGap = 22 * u;
   const columnWidth = horizontal ? (innerWidth - columnGap * (keys.length - 1)) / keys.length : innerWidth;
-  const rowHeight = horizontal ? 0 : 92 * u;
+  const hasStatus = keys.some(key=>dimensions?.[key]?.ringStatus);
+  const rowHeight = horizontal ? 0 : (hasStatus ? 108 : 92) * u;
   keys.forEach((key, index) => {
     const meta = DIMENSIONS[key];
     const color = DIMENSION_COLORS[key];
@@ -284,11 +285,21 @@ function impactPanel(u, { x, y, width, height, dimensions, riskDirections, statu
     parts.push(icon(meta.icon, rx, ry, 22 * u, color));
     parts.push(textLine(meta.label, rx + 32 * u, ry + 17 * u, "sans-600", 20 * u, PALETTE.white));
     parts.push(textLine(levelText, rx + columnWidth, ry + 17 * u, "sans-500", 15 * u, PALETTE.textMuted, { anchor: "end" }));
-    parts.push(meter(rx, ry + 36 * u, columnWidth, 13 * u, level, color, u));
-    const direction = dimensions?.[key]?.label || '? offen';
+    const dimension=dimensions?.[key],ring=dimension?.ringStatus;
+    const ringMarkup=(presentation,atX,atY,size)=>`<g data-impact-ring="${escape(presentation.ringStatus)}" data-magnitude="${presentation.magnitudeBars}" transform="translate(${atX.toFixed(1)},${atY.toFixed(1)}) scale(${(size/24).toFixed(3)})" color="${color}" role="img"><title>${escape(`${meta.label}: ${presentation.ringLabel}, Tragweite ${presentation.magnitudeBars}/5, ${presentation.directionLabel}`)}</title>${impactRingSymbol(presentation.ringStatus)}</g>`;
+    if(ring)parts.push(ringMarkup(dimension,rx,ry+31*u,23*u));
+    parts.push(meter(rx+(ring?31*u:0), ry + 36 * u, columnWidth-(ring?31*u:0), 13 * u, level, color, u));
+    const direction = dimension?.directionLabel || dimension?.label || '? offen';
     parts.push(textLine(direction, rx, ry + 70 * u, "sans-600", 14 * u, PALETTE.textSoft));
+    if(ring&&dimension.shortPathLabel)parts.push(textLine(truncateLine(dimension.shortPathLabel,'sans-500',11*u,columnWidth),rx,ry+85*u,'sans-500',11*u,PALETTE.textMuted));
+    if(dimension?.displayed_observation&&dimension.potential_presentation){
+      const potential=dimension.potential_presentation;
+      parts.push(ringMarkup(potential,rx,ry+91*u,14*u));
+      parts.push(meter(rx+20*u,ry+95*u,54*u,6*u,potential.magnitudeBars,color,u));
+      parts.push(textLine(truncateLine(`Weiter: ${potential.directionLabel}`,'sans-500',10*u,columnWidth-82*u),rx+82*u,ry+101*u,'sans-500',10*u,PALETTE.textMuted));
+    }
   });
-  const chipsY = horizontal ? rowsTop + 100 * u : rowsTop + keys.length * rowHeight - 12 * u;
+  const chipsY = horizontal ? rowsTop + (hasStatus?116:100) * u : rowsTop + keys.length * rowHeight - 4 * u;
   let chipX = x + pad;
   const onTrack = STATUS_TRACK.includes(status);
   if (status) {
@@ -429,7 +440,7 @@ export function normalizeInput(input = {}) {
     ? deriveImpactPresentation(input.impact_assessment).dimensions
     : input.dimensions ? Object.fromEntries(Object.keys(DIMENSIONS).map(key => {
       const item = input.dimensions[key];
-      return [key, { magnitude: levelOf(item), label: item?.label || '? offen' }];
+      return [key, { ...(item&&typeof item==='object'?item:{}), magnitude: item?.magnitude ?? levelOf(item), label: item?.directionLabel || item?.label || '? offen' }];
     })) : null;
   const label = input.label !== undefined ? input.label : (mode === "editorial" ? "KI-generiertes Symbolbild" : "Wirkungskarte · WÖk-Einordnung");
   return {

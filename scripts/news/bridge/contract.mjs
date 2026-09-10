@@ -57,6 +57,7 @@ const dimension = object({ direction: text(100), analysis: text(), evidence: tex
 // The compact exchange schema is an envelope, not a replacement for the existing
 // production analysis contract. Publish/merge additionally require that contract.
 export const outputSchema = object({
+  research_sources: { type: 'array', maxItems: 12, items: { type:'object' } },
   visual_brief: visualBriefSchema,
   schema_version: { const: '1.0' }, job_id: { ...text(80), pattern: JOB_ID.source }, processed_at: timestamp,
   input_hash: { ...text(64), pattern: '^[a-f0-9]{64}$' },

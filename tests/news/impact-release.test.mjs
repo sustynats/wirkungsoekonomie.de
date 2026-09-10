@@ -25,6 +25,7 @@ test('atomic rollback hides incomplete profiles across cards, detail, API and ti
   }
 });
 test('public artifact gate rejects debug output and accidentally copied private profile previews', () => {
+  assert.throws(() => assertPublicImpactHtml('<article data-private-impact-preview="true">'), /IMPACT_PRIVATE_PREVIEW/);
   assert.throws(() => assertPublicImpactHtml('<span>Keine Größenschätzung vorhanden</span>'), /IMPACT_PUBLIC_DEBUG_FALLBACK/);
   assert.throws(() => assertPublicImpactHtml('<div class="wt-dim wt-dim--human" data-potential-model="2.1">'), /IMPACT_PUBLIC_PROFILE_NOT_RELEASED/);
   assert.doesNotThrow(() => assertPublicImpactHtml('<h1>Eine weiterhin lesbare Nachricht</h1>'));
