@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, robotsDecision, respectRobots } from "../../scripts/news/access-policy.mjs";
+import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, robotsDecision, respectRobots, respectRsl } from "../../scripts/news/access-policy.mjs";
 
 test("only free direct sources, never paywall-removal or excluded publishers", () => {
   for (const host of ["removepaywall.com", "www.removepaywall.com", "12ft.io", "apollo-news.net", "www.nius.de"]) assert.throws(() => assertDirectNewsUrl(`https://${host}/search?url=https://example.org`));
@@ -34,4 +34,11 @@ test("robots follows bounded same-origin redirects but rejects cross-origin redi
   assert.equal(result.allowed, true);
   assert.deepEqual(urls, ["https://redirect.example/robots.txt", "https://redirect.example/en/robots.txt"]);
   await assert.rejects(respectRobots("https://external.example/news", {}, async () => new Response(null, {status:302,headers:{location:"https://untrusted.example/robots.txt"}}), async()=>{}, ["external.example"]), /ROBOTS_CROSS_ORIGIN_REDIRECT/);
+});
+test('robots and RSL reject stalled redirect cleanup without creating a permissive cache entry',async()=>{
+ const stalled=async()=>({status:302,headers:new Headers({location:'/next'}),body:{cancel:()=>new Promise(()=>{})}});
+ await assert.rejects(respectRobots('https://stalled-robots.example/news',{request_timeout_ms:15},stalled,async()=>{},new Set()),/ROBOTS_REQUEST_TIMEOUT/);
+ await assert.rejects(respectRsl({rsl_url:'https://stalled-rsl.example/rsl'},{request_timeout_ms:5},stalled,async()=>{},new Set()),/RSL_REQUEST_TIMEOUT/);
+ const robots=await respectRobots('https://stalled-robots.example/news',{},async()=>new Response('User-agent: *\nDisallow: /'),async()=>{},new Set()).catch(e=>e.message);
+ assert.equal(robots,'ROBOTS_DISALLOWED');
 });

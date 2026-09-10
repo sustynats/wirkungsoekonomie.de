@@ -144,6 +144,18 @@ test('Dropbox outages defer the unchanged job without burning retries or permane
   job=store.get(id);assert.equal(job.status,'queued');assert.equal(job.last_error,undefined);assert.equal(job.retry_at,undefined);
   assert.equal(store.all().length,1);assert.ok(transport.files.has(bridgePath('00_INBOX',id+'.input.json')));
 });
+test('temporary research and remote timeouts preserve complete output and never request an editorial correction',async t=>{
+ const {provider,store,transport}=setup(t);provider.correctionsEnabled=true;
+ await provider.enqueue([candidate()],[],now);const job=store.all()[0];
+ const file=bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json');
+ await transport.writeAtomic(file,output(job.input));
+ for(const code of ['BRIDGE_RESEARCH_UNAVAILABLE','BRIDGE_REMOTE_TIMEOUT']){
+  await provider.failure(job,'import',Object.assign(Error(code),{retryable:true}),now);
+  const saved=store.get(job.input.job_id);
+  assert.equal(saved.status,'queued');assert.ok(saved.retry_at);assert.equal(saved.corrections,undefined);
+  assert.ok(transport.files.has(file));assert.equal((await transport.list('90_ERRORS')).length,0);
+ }
+});
 test('Dropbox explicit throttling retries at most twice and respects short retry windows', async()=>{
   let calls=0; const delays=[];
   const transport=new DropboxTransport({credentials:{},sleep:async ms=>delays.push(ms),fetchImpl:async()=>{

@@ -99,9 +99,11 @@ export function deriveImpactStatus(temporalStatus) {
   return ({ex_ante:'potential',ongoing:'emerging',ex_post:'observed'})[temporalStatus] || 'potential';
 }
 // A category, not a percentage, and never a function of magnitude/evidence.
-export function deriveStatusPresentation({direction,temporal_status,magnitude,label,change}) {
+export function deriveStatusPresentation({direction,dominance,temporal_status,magnitude,label,change}) {
   const ringStatus=deriveImpactStatus(temporal_status), sign=({positive:'+',negative:'−',mixed:'±'})[direction];
   const directionLabel=direction==='open'?'? Richtung offen':direction==='neutral'?'neutral':
+    direction==='mixed' && ['dominant_positive','dominant_negative'].includes(dominance)
+      ? `± überwiegend ${dominance==='dominant_negative'?'negativ':'positiv'}${ringStatus==='observed'?' beobachtet':ringStatus==='emerging'?' laufend':''}`:
     ringStatus==='observed'?`${sign} beobachtet`:ringStatus==='emerging'?`${sign} laufende Wirkung`:
     direction==='negative'?'− Risiko':direction==='positive'?'+ Potenzial':'± gegenläufig';
   return {ringStatus,ringLabel:IMPACT_STATUS_LABELS[ringStatus],magnitudeBars:magnitude,directionLabel,shortPathLabel:change||label||'',direction};

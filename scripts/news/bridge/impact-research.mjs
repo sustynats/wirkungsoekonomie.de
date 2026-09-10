@@ -3,6 +3,8 @@
 import { loadNewsRegistry } from '../registry.mjs';
 import { fetchPublicArticle, extractArticleText } from '../lib.mjs';
 import { safeUrl, hash, assertSchema } from './contract.mjs';
+import {sourceAccess} from '../access-policy.mjs';
+import {withRequestDeadline} from '../request-deadline.mjs';
 export const RESEARCH_FUNCTIONS = ['event','mechanism','reference','counter_evidence'];
 export const researchSourceSchema = {
   type: 'array', maxItems: 12, items: { type: 'object', additionalProperties: false,
@@ -29,10 +31,15 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
     const source = original || { source_id:candidate.source_id,url,feed_url:url,enabled:true,role:'B',
       access:{status:'public',article:'bounded_public_text',cost_usd:0,requires_login:false,requires_payment:false},
       rsl_url:new URL('/.well-known/rsl.xml',url).href };
+    const access=sourceAccess(source,'article');
+    if(!access.allowed)throw Error(access.reason);
+    const fetchBounded=()=>withRequestDeadline(()=>fetchDocument({url},source,{...registry.policy,allow_public_pdf:true,respect_robots:true}),
+      {timeoutMs:120000,code:'IMPACT_RESEARCH_REQUEST_TIMEOUT'});
+    if(process.env.GITHUB_ACTIONS==='true')console.info(JSON.stringify({event:'impact_research',source_id:candidate.source_id,stage:'start'}));
     const cacheKey = `impact-research-document:${hash(url)}`;
     let document = await bridge.store.observation(cacheKey);
     if (!document || Date.parse(now)-Date.parse(document.at)>86400000) {
-      const fetched = await fetchDocument({url}, source, {...registry.policy,allow_public_pdf:true,respect_robots:true});
+      const fetched = await fetchBounded();
       const text = fetched.extracted_from === 'public_pdf' ? fetched.body : extractArticleText(fetched.body,120000);
       // Only a bounded private excerpt is retained, never the complete document.
       const normalized = comparable(text), quote = comparable(candidate.quote);
@@ -44,7 +51,7 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
     }
     if (!comparable(document.excerpt).includes(comparable(candidate.quote))) {
       // Different claims in the same document require their own verified excerpt.
-      const fetched = await fetchDocument({url},source,{...registry.policy,allow_public_pdf:true,respect_robots:true});
+      const fetched = await fetchBounded();
       const text = fetched.extracted_from === 'public_pdf' ? fetched.body : extractArticleText(fetched.body,120000);
       const full = comparable(text), quote = comparable(candidate.quote), at = full.indexOf(quote);
       if (quote.length<40 || at<0) throw Error('IMPACT_RESEARCH_QUOTE_NOT_FOUND');
@@ -56,6 +63,7 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
       article_excerpt:document.excerpt,published_at:candidate.published_at||null,retrieved_at:now,
       research_verification:{status:'source_text_verified',at:now,content_hash:document.content_hash,excerpt_hash:document.excerpt_hash},
     });
+    if(process.env.GITHUB_ACTIONS==='true')console.info(JSON.stringify({event:'impact_research',source_id:candidate.source_id,stage:'verified'}));
   }
   return accepted;
 }

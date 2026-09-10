@@ -2,7 +2,7 @@ import { impactMethodology } from './impact-methodology.mjs';
 import { impactCoverage, assertImpactCoverage } from './impact-coverage.mjs';
 import {PERSONAL_FORMAT,loadPersonalEditorials,personalLabel,personalArticleBody,personalPortrait} from './personal-editorial.mjs';
 import { deriveImpactPresentation, IMPACT_LEGEND } from './impact-assessment.mjs';
-import { publicImpactAssessment, PUBLIC_IMPACT_PROFILE_VERSION, IMPACT_REVISION_NOTICE, assertPublicImpactHtml, IMPACT_RELEASE } from './impact-release.mjs';
+import { publicImpactAssessment, PUBLIC_IMPACT_PROFILE_VERSION, REVIEWED_IMPACT_PROFILE_VERSION, IMPACT_REVISION_NOTICE, assertPublicImpactHtml, IMPACT_RELEASE } from './impact-release.mjs';
 import { renderStoryVisual, renderEditorialClaimMap } from "./story-visual.mjs";
 import { EDITORIAL_TRANSPARENCY_NOTE, editorialLabel, isEditorialCommentary, isCommissionedAnalysis, renderSystemicVisual, renderSystemicDimensions, renderSystemicMonitoring, renderSectionAnchor, renderEditorialContents } from "./systemic-analysis.mjs";
 import { renderEditorialFinding, renderAuthorPerspective, renderEditorialBalance } from "./editorial-judgment.mjs";
@@ -277,7 +277,8 @@ export function storyCard(story, index, {privateImpactPreview = false} = {}) {
     .filter(([key]) => publicImpactAssessment(story)?.dimensions[key].magnitude > 0)
     .map(([, label]) => label)
     .join(" ");
-  const high = ["high", "very_high", "critical"].includes(deriveImpactPresentation(story).systemic_relevance);
+  const impactProfile=deriveImpactPresentation(story);
+  const high = ["high", "very_high", "critical"].includes(impactProfile.systemic_relevance);
   const searchText = [
     story.title,
     story.source_summary,
@@ -302,7 +303,7 @@ export function storyCard(story, index, {privateImpactPreview = false} = {}) {
   ${updateBanner}
   <div class="news-card__topline">
     <span class="news-card__topic">${renderIcon(topicIcon(story.topic), "wt-icon--topic")}<span class="card-kicker">${escapeHtml((story.topic || []).slice(0, 3).join(" · "))}</span></span>
-    <span class="news-card__flags">${updateBanner ? "" : '<span class="news-badge news-badge--new" data-news-new-badge hidden>Neu</span>'}${caseFileBadge(story)}${!updateBanner && version > 1 ? `<span class="news-badge news-badge--update">Version ${version}</span>` : ""}${high ? '<span class="news-badge news-badge--high">Hohe systemische Relevanz</span>' : ""}</span>
+    <span class="news-card__flags">${updateBanner ? "" : '<span class="news-badge news-badge--new" data-news-new-badge hidden>Neu</span>'}${caseFileBadge(story)}${!updateBanner && version > 1 ? `<span class="news-badge news-badge--update">Version ${version}</span>` : ""}${high ? `<span class="news-badge news-badge--high">${escapeHtml(impactProfile.relevance_label)} systemische Relevanz</span>` : ""}</span>
   </div>
   ${visual}
   <div class="news-card__body">
@@ -429,10 +430,11 @@ ${extraScript}
 }
 
 export function indexPage(stories, updatedAt, { totalStories = stories.length, caseCount = 0, editorialAnalyses = [], storiesById = new Map() } = {}) {
+  const hasReviewedProfiles = stories.some(story => publicImpactAssessment(story));
   const filterGroups = [
     { label: "Auswahl", filters: [["all", "Alle"], ["high", "Hohe systemische Relevanz"]] },
     { label: "Format", filters: [["analysis", "Meinung & Analyse"], [BOOK_FORMAT, "Buch & Wirkung"]] },
-    ...(PUBLIC_IMPACT_PROFILE_VERSION ? [{ label: "Dimension", filters: [["mensch", "Mensch"], ["planet", "Planet"], ["demokratie", "Demokratie"]] }] : []),
+    ...(PUBLIC_IMPACT_PROFILE_VERSION || hasReviewedProfiles ? [{ label: "Dimension", filters: [["mensch", "Mensch"], ["planet", "Planet"], ["demokratie", "Demokratie"]] }] : []),
     { label: "Thema", filters: [
       ["politik", "Politik"], ["wirtschaft", "Wirtschaft"], ["finanzen", "Finanzen"], ["klima", "Klima"], ["energie", "Energie"],
       ["arbeit", "Arbeit"], ["soziales", "Soziales"], ["gesundheit", "Gesundheit"], ["digitalisierung", "Digitalisierung"], ["ki", "KI"],
@@ -452,7 +454,7 @@ export function indexPage(stories, updatedAt, { totalStories = stories.length, c
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a><span aria-hidden="true">/</span><a href="../oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a></nav>
       <p class="hero-kicker news-hero__kicker">${renderIcon("folgen")}<span>Wirkungsticker</span></p>
       <h1 class="hero-title">Wichtige Nachrichten. Fakten, Folgen, Zusammenhänge.</h1>
-      ${PUBLIC_IMPACT_PROFILE_VERSION ? '' : `<p class="notice" role="note">${IMPACT_REVISION_NOTICE} Die Dimensionsfilter kehren mit den geprüften Profilen zurück.</p>`}
+      ${PUBLIC_IMPACT_PROFILE_VERSION ? '' : `<p class="notice" role="note">${hasReviewedProfiles ? 'Neu geprüfte Wirkungsprofile sind bereits sichtbar. Ältere Bewertungen werden überarbeitet; die Dimensionsfilter erfassen derzeit nur vollständig geprüfte Profile.' : IMPACT_REVISION_NOTICE}</p>`}
       <p class="news-method-note">Ein Projekt des Wirkungsinstituts. <a href="../institut/projekte/wirkungsticker/">Projektauftrag, Entwicklung und laufende Aufgaben</a>.</p>
       <p class="hero-subtitle">Aus Politik, Wirtschaft, Gesellschaft, Umwelt und Technik. Der Wirkungsticker erklärt, was passiert ist, was belegt ist und welche Folgen möglich sind. Er zeigt Zusammenhänge und prüft auch, wie über Ereignisse gesprochen wird.</p>
       <ul class="news-hero__stats"><li><strong>${stories.length}</strong> aktuelle Lagen und Einzelakten</li><li><strong>${totalStories}</strong> redaktionelle Wirkungsakten${caseCount ? ` · ${caseCount} automatisch gebündelte ${caseCount === 1 ? "Lageakte" : "Lageakten"}` : ""}</li>${editorialAnalyses.length ? `<li><strong>${editorialAnalyses.length}</strong> ${editorialAnalyses.length === 1 ? "Beitrag" : "Beiträge"} in Meinung &amp; Analyse / Buch &amp; Wirkung</li>` : ""}<li><strong>${highCount}</strong> mit hoher systemischer Relevanz</li><li>${renderIcon("uhr")}<span>Stand ${escapeHtml(formatDate(updatedAt))} · automatische Quellenprüfung</span></li><li><a class="text-link" href="#methodik">Methodik und Qualitätsgate</a> · <a class="text-link" href="quellen/">Quellen &amp; Auswahl</a></li></ul>
@@ -964,7 +966,7 @@ export function buildNewsSite() {
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, tags: item.tags, _woek_type: item.type })),
   }, null, 2));
-  write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.2", impact_profile_version: PUBLIC_IMPACT_PROFILE_VERSION, impact_profile_status: PUBLIC_IMPACT_PROFILE_VERSION ? "ready" : "reassessment_in_progress", updated_at: publicationUpdatedAt, stories: stories.map((story) => publicStory(story, editorialByStory.get(story.story_id))), editorial_analyses: editorialAnalyses.map((analysis) => ({ analysis_id: analysis.analysis_id, story_id: analysis.story_id, slug: analysis.slug, title: analysis.title, subtitle: analysis.subtitle, teaser: analysis.teaser, published_at: analysis.published_at, updated_at: analysis.updated_at, reading_time_minutes: analysis.reading_time_minutes, ...(analysis.format === BOOK_FORMAT ? { format: BOOK_FORMAT, manual_only: true, subtype: analysis.subtype, ...(analysis.self_authored_work ? { self_authored_work: true } : {}) } : {}) })) }, null, 2));
+  write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.2", impact_profile_version: PUBLIC_IMPACT_PROFILE_VERSION || REVIEWED_IMPACT_PROFILE_VERSION, impact_profile_status: PUBLIC_IMPACT_PROFILE_VERSION ? "ready" : REVIEWED_IMPACT_PROFILE_VERSION ? "reviewed_records_only" : "reassessment_in_progress", updated_at: publicationUpdatedAt, stories: stories.map((story) => publicStory(story, editorialByStory.get(story.story_id))), editorial_analyses: editorialAnalyses.map((analysis) => ({ analysis_id: analysis.analysis_id, story_id: analysis.story_id, slug: analysis.slug, title: analysis.title, subtitle: analysis.subtitle, teaser: analysis.teaser, published_at: analysis.published_at, updated_at: analysis.updated_at, reading_time_minutes: analysis.reading_time_minutes, ...(analysis.format === BOOK_FORMAT ? { format: BOOK_FORMAT, manual_only: true, subtype: analysis.subtype, ...(analysis.self_authored_work ? { self_authored_work: true } : {}) } : {}) })) }, null, 2));
   write(MANIFEST_FILE, JSON.stringify({ slugs: [...currentSlugs].sort() }, null, 2));
   write(EDITORIAL_MANIFEST_FILE, JSON.stringify({ slugs: [...currentEditorialSlugs].sort() }, null, 2));
   write(path.join(LEGACY_NEWS_DIR, "wirkungsticker/index.html"), legacyRedirect("/wirkungsticker/"));
