@@ -272,9 +272,10 @@ export function renderUpdateBanner(story, { detail = false, caseFile = story.cas
 
 export function storyCard(story, index, {privateImpactPreview = false} = {}) {
   const a = story.analysis;
+  const publicAssessment = publicImpactAssessment(story);
   const topics = (story.topic || []).join(" ").toLowerCase();
   const dimensionKeys = Object.entries({ human: "mensch", planet: "planet", democracy: "demokratie" })
-    .filter(([key]) => publicImpactAssessment(story)?.dimensions[key].magnitude > 0)
+    .filter(([key]) => publicAssessment?.dimensions[key].magnitude > 0)
     .map(([, label]) => label)
     .join(" ");
   const impactProfile=deriveImpactPresentation(story);
@@ -287,9 +288,11 @@ export function storyCard(story, index, {privateImpactPreview = false} = {}) {
     "Faktencheck",
     "Folgencheck",
     ...(story.topic || []),
-    ...[a.human, a.planet, a.democracy]
-      .filter(Boolean)
-      .flatMap((dimension) => [dimension.relevance, dimension.rationale]),
+    // Search is public output too. Superseded legacy dimension judgements
+    // must not leak through data attributes when their profile is withheld.
+    ...Object.values(publicAssessment?.dimensions || {})
+      .flatMap((dimension) => [dimension.direction, dimension.rationale,
+        ...(dimension.primary_paths || []).map(path => path.mechanism)]),
     ...story.sources.map((source) => source.publisher),
   ].join(" ").toLowerCase().slice(0, 2400);
   const visuals = sanitizeVisuals(a.visuals, story).visuals;
@@ -472,9 +475,8 @@ export function indexPage(stories, updatedAt, { totalStories = stories.length, c
       <div><dt>Wirkungspotenzial / Wirkungsrisiko</dt><dd>Mögliche Folge, noch keine eingetretene Wirkung.</dd></div>
       <div><dt>Beschlossen, aber noch nicht eingetreten?</dt><dd>Ein Beschluss kann bereits ein klar negatives Wirkungsrisiko oder positives Potenzial haben. Der Ticker ordnet plausible Folgen früh ein. Ob, wann und wie stark sie eintreten, wird davon getrennt geprüft.</dd></div>
       <div><dt>Beobachtete Wirkung</dt><dd>Festgestellte Zustandsveränderung mit entsprechender Evidenz.</dd></div>
-      <div><dt>Noch nicht eingeordnet</dt><dd>Für diese Dimension fehlt eine Richtungsbewertung. Kein neutrales Urteil.</dd></div>
-      <div><dt>Kein wesentlicher Wirkpfad</dt><dd>Nach Prüfung für diese Dimension nicht materiell. Davon getrennt: Reicht die Grundlage noch nicht zur Pfadprüfung, bleibt die Einordnung offen.</dd></div>
-      <div><dt>Wirkungsrichtung unklar</dt><dd>Die Richtung ist nicht hinreichend bestimmbar. Ein unsicherer Eintritt oder ein offenes Ausmaß allein macht einen begründeten negativen Wirkpfad nicht neutral.</dd></div>
+      <div><dt>Tragweite 0</dt><dd>Der modellierte Pfad lässt im betrachteten Raum und Zeitraum eine praktisch vernachlässigbare Zustandsveränderung erwarten. Der Pfad bleibt dokumentiert.</dd></div>
+      <div><dt>Richtung offen</dt><dd>Die Richtung des modellierten Pfads ist noch nicht ausreichend bestimmbar. Tragweite, Eintrittsplausibilität und Evidenz bleiben davon getrennt. Eine unsichere Zukunft macht einen begründeten positiven oder negativen Pfad nicht richtungsoffen.</dd></div>
       <div><dt>Gegenläufige Wirkpfade</dt><dd>Konkrete positive und negative Folgen brauchen denselben Vergleichszustand und werden nicht verrechnet. Weniger Schaden gegenüber einem schlechteren Entwurf ist noch keine Verbesserung gegenüber dem Ausgangszustand. Ohne getrennte Begründung gibt es keine belastbare Gesamtbilanz.</dd></div>
     </dl></details>
   </section>
