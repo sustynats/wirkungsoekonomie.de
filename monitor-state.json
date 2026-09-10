@@ -11,9 +11,14 @@
     },
     "bridge-review": {
       "firstSeen": "2026-09-10T13:35:43.429Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "3955de714211a9852c3f1d2f",
+      "content": "⚠ WÖk-Betriebsstörung\nFachliche Nachprüfung: 4 Wirkungsanalyse(n) benötigen nach dem zweiten Prüfpass redaktionelle Klärung. Die anderen Aufträge laufen weiter.\nSeit: 2026-09-10T13:35:43.429Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-10"
 }
