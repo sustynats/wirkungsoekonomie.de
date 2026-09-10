@@ -333,7 +333,7 @@ export function editorialAnalysisValidationErrors(analysis, story, assessment = 
   if (articleWords < (systemic ? 2200 : 800) || articleWords > (systemic ? 3900 : 2100)) errors.push("EDITORIAL_ARTICLE_LENGTH");
   errors.push(...systemicValidationErrors(analysis));
   errors.push(...editorialJudgmentErrors(analysis), ...editorialVisualErrors(analysis));
-  errors.push(...impactAssessmentErrors(analysis.impact_assessment, analysis.source_snapshot || editorialSources(story).map(s=>({...s,source_id:editorialSourceRef(s)}))));
+  errors.push(...impactAssessmentErrors(analysis.impact_assessment, [...(analysis.source_snapshot || editorialSources(story).map(s=>({...s,source_id:editorialSourceRef(s)}))),...(analysis.impact_sources || [])]));
   if ((analysis.claim_ledger || []).length < 5) errors.push("EDITORIAL_CLAIM_LEDGER_TOO_SHORT");
   for (const claim of analysis.claim_ledger || []) {
     if (["fact", "observation", "observed_impact", "attribution", "program_statement"].includes(claim.type) && !claim.source_ids.length) errors.push("EDITORIAL_FACT_WITHOUT_SOURCE");

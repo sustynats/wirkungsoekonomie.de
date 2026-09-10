@@ -1,6 +1,6 @@
 import { IMPACT_KEYS, impactAssessmentErrors } from './impact-assessment.mjs';
 
-export const SEMANTIC_CHECKS = ['event_target', 'time_and_observation', 'path_and_recipients', 'direction_and_reference', 'magnitude', 'likelihood', 'evidence', 'materiality', 'second_third_order', 'policy_coverage', 'source_fidelity', 'counterpaths_and_dominance', 'institutional_status', 'counterfactual'];
+export const SEMANTIC_CHECKS = ['event_target', 'time_and_observation', 'path_and_recipients', 'direction_and_reference', 'magnitude', 'likelihood', 'evidence', 'potential_scope', 'second_third_order', 'policy_coverage', 'source_fidelity', 'counterpaths_and_dominance', 'institutional_status', 'counterfactual'];
 const text = value => typeof value === 'string' && value.trim().length >= 12;
 export const structuredSemanticChecks = review => SEMANTIC_CHECKS.every(key => ['pass','fail'].includes(review?.checks?.[key]?.status) && text(review.checks[key].rationale));
 const sourceText = record => [record.title, record.source_summary, ...[...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])].map(s => `${s.title || ''} ${s.summary || ''} ${s.article_excerpt || ''}`)].filter(Boolean).join('\n');
@@ -16,7 +16,7 @@ export function impactContextRequirements(record = {}) {
   return { power, energy, harm, central_dimensions: [...(power ? ['democracy'] : []), ...(energy ? ['planet'] : []), ...(harm ? ['human'] : [])] };
 }
 
-export function semanticIssues(assessment, record = {}) {
+export function semanticIssues(assessment, record = {}, { secondPassComplete = false } = {}) {
   const sources = [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])];
   const issues = impactAssessmentErrors(assessment, sources, { required: true });
   if (!assessment) return issues;
@@ -24,18 +24,22 @@ export function semanticIssues(assessment, record = {}) {
   const high = ['high', 'very_high', 'critical'].includes(assessment.systemic_relevance);
   if (!system || !['first_order', 'second_order', 'third_order', 'source_independence', 'institutional_status'].every(k => text(system[k]))
     || !Array.isArray(system.central_dimensions) || !Array.isArray(system.counter_evidence) || !system.counter_evidence.some(text)) issues.push('IMPACT_SYSTEM_CHECK_REQUIRED');
+  if (assessment.version === '2.1' && !IMPACT_KEYS.every(key=>text(system?.cross_dimension_review?.[key]))) issues.push('IMPACT_CROSS_DIMENSION_REVIEW_REQUIRED');
+  const researched = assessment.research_check?.status === 'completed' && Array.isArray(assessment.research_check.searches) && assessment.research_check.searches.some(s => text(s.question) && text(s.result));
+  if (assessment.version === '2.1' && !researched) issues.push('IMPACT_RESEARCH_CHECK_REQUIRED');
   const central = new Set([...requirements.central_dimensions, ...(system?.central_dimensions || []).filter(k => IMPACT_KEYS.includes(k))]);
-  if (high && IMPACT_KEYS.every(k => assessment.dimensions?.[k]?.path_status === 'not_material')) issues.push('IMPACT_HIGH_RELEVANCE_WITHOUT_PATH');
+  if (high && IMPACT_KEYS.every(k => !assessment.dimensions?.[k]?.primary_paths?.length)) issues.push('IMPACT_HIGH_RELEVANCE_WITHOUT_PATH');
   for (const key of central) {
     const d = assessment.dimensions?.[key];
-    if (high && (!d || d.path_status !== 'material' || d.direction === 'open')) issues.push(`IMPACT_CENTRAL_DIMENSION_UNRESOLVED:${key}`);
+    if (high && (!d || d.path_status !== 'modelled' || d.direction === 'open') && !(secondPassComplete && researched)) issues.push(`IMPACT_CENTRAL_DIMENSION_UNRESOLVED:${key}`);
   }
-  if (requirements.power && (assessment.dimensions?.democracy?.path_status !== 'material' || !system?.enablement?.length)) issues.push('IMPACT_POWER_PATH_REQUIRED');
-  if (requirements.energy && assessment.dimensions?.planet?.path_status === 'not_material') issues.push('IMPACT_ENERGY_PATH_REVIEW_REQUIRED');
-  if (requirements.harm && assessment.dimensions?.human?.temporal_status === 'ex_ante') issues.push('IMPACT_OCCURRED_HARM_AS_RISK');
+  if (requirements.power && (!assessment.dimensions?.democracy?.primary_paths?.length || !system?.enablement?.length)) issues.push('IMPACT_POWER_PATH_REQUIRED');
+  if (requirements.energy && !assessment.dimensions?.planet?.primary_paths?.length) issues.push('IMPACT_ENERGY_PATH_REVIEW_REQUIRED');
+  if (requirements.harm && !assessment.observed_effects?.some(e => e.dimension === 'human' && e.direction === 'negative')) issues.push('IMPACT_OCCURRED_HARM_AS_RISK');
   for (const key of IMPACT_KEYS) {
     const d = assessment.dimensions?.[key];
     if (!d) continue;
+    if (d.primary_paths?.some(p => p.path_quality?.includes('high_uncertainty')) && !researched) issues.push(`IMPACT_TARGETED_RESEARCH_REQUIRED:${key}`);
     const explanation = `${d.rationale || ''} ${(d.primary_paths || []).map(p => `${p.label} ${p.mechanism}`).join(' ')}`;
     if (d.direction === 'open' && /(?:würde|würden|erhöht|erhöhen).{0,55}(?:Emissionen erhöhen|Emissionen steigern)|(?:CO2|Emissionen).{0,25}(?:erhöhen|erhöht|steigen)|(?:schwächt|verschlechtert).{0,35}(?:Grundrechte|Kontrolle|Gesundheit)/iu.test(explanation)) issues.push(`IMPACT_DIRECTION_RATIONALE_CONFLICT:${key}`);
   }
@@ -45,7 +49,7 @@ export function semanticIssues(assessment, record = {}) {
 // The caller must obtain review from the separately persisted review job, never
 // from a review object supplied by the first writer in its own output.
 export function derivePublicationStatus(assessment, record = {}, { review = null, secondPassComplete = false } = {}) {
-  const issues = semanticIssues(assessment, record);
+  const issues = semanticIssues(assessment, record, { secondPassComplete });
   if (review?.status === 'blocked') return { status: 'blocked', issues: [...issues, 'IMPACT_REVIEW_BLOCKED'] };
   const reviewed = review?.status === 'ready' && structuredSemanticChecks(review) && SEMANTIC_CHECKS.every(key => review.checks[key].status === 'pass');
   if (issues.length || !reviewed) return { status: secondPassComplete ? 'needs_review' : 'needs_second_pass', issues: [...issues, ...(!reviewed ? ['IMPACT_INDEPENDENT_REVIEW_REQUIRED'] : [])] };

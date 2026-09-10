@@ -93,5 +93,5 @@ export class EditorialApproval {
     this.save(r,{action:'PUBLICATION_REVIEW_REQUIRED',code:r.publication.error});return true;
   }
   publishable(id){const r=this.get(id);if(!r||r.manual_only!==true||r.status!=='APPROVED_FOR_PUBLICATION'||r.approval?.preview_hash!==editorialPreviewHash(r.preview)||r.preview_hash!==r.approval.preview_hash)return false;try{validateEditorialPreview(r.preview);return true;}catch{return false;}}
-  preview(owner,id){const r=this.owned(owner,id);return {...r,html_document:r.preview.format==='news',html:r.preview.format==='news'?storyPage(r.preview.news_record).replace('<head>','<head><base href="https://wirkungsoekonomie.de/wirkungsticker/'+r.preview.news_record.slug+'/">'):renderEditorialMarkdown(r.preview.markdown).html};}
+  preview(owner,id){const r=this.owned(owner,id);return {...r,html_document:r.preview.format==='news',html:r.preview.format==='news'?storyPage(r.preview.news_record,{privateImpactPreview:true}).replace('<head>','<head><base href="https://wirkungsoekonomie.de/wirkungsticker/'+r.preview.news_record.slug+'/">'):renderEditorialMarkdown(r.preview.markdown).html};}
 }

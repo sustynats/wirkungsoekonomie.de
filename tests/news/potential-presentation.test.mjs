@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { directionAssessmentErrors, dimensionAssessment, DIRECTION_RECIPIENT_RULE } from '../../scripts/news/direction-assessment.mjs';
-import { IMPACT_RULE, deriveImpactPresentation } from '../../scripts/news/impact-assessment.mjs';
+import { IMPACT_PROMPT_RULE, deriveImpactPresentation } from '../../scripts/news/impact-assessment.mjs';
 import { renderDimensionMeters as publicDimensionMeters } from '../../scripts/news/visuals.mjs';
 import { storyCard, storyPage } from '../../scripts/news/build.mjs';
 import { buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
@@ -33,7 +33,7 @@ test('future judgments need a concrete endpoint, condition and clear assessment 
   const a=fixture();delete a.assessment_frame.object_kind;
   assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_OBJECT_KIND_REQUIRED'));
   const prompt=buildAnalysisPrompt([{story_id:'test',title:'Test',claims:[],sources:[]}],{includeVisuals:false});
-  assert.ok(prompt.includes(IMPACT_RULE));
+  assert.ok(prompt.includes(IMPACT_PROMPT_RULE));
 });
 
 test('list and detail explain signed potentials without a mixed total or hidden consequence',()=>{
