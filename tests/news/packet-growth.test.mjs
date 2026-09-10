@@ -16,7 +16,7 @@ test('September 6 election packet fits with 20 sources, fresh excerpts and full 
   });
   const before = structuredClone(fixture);
   const prompt = buildAnalysisPrompt([fixture]);
-  assert.ok(prompt.length <= 39000, `Prompt has ${prompt.length} characters`);
+  assert.ok(prompt.length <= 44000, `Prompt has ${prompt.length} characters`);
   assert.match(prompt, /"analyses":\[\{"story_id":"string","publication_recommendation":true,/);
   const suppliedIds = suppliedEvidenceIds(prompt)[fixture.story_id];
   const packet = expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
@@ -53,7 +53,7 @@ test('twenty-source packet retains reserve for further runtime comparison metada
   assert.equal(packet.claims.length, fixture.claims.length);
   fixture.currentness = { ...fixture.currentness, additional_comparison: 'Weitere Angaben sind noch offen. '.repeat(15) };
   const prompt = buildAnalysisPrompt([fixture]);
-  assert.ok(prompt.length <= 39000);
+  assert.ok(prompt.length <= 44000);
   const expanded = expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
   assert.deepEqual(expanded.currentness, fixture.currentness);
 });
@@ -79,7 +79,7 @@ test('another real source and growing context yield to evidence before optional 
   fixture.currentness = { ...fixture.currentness, comparison_limits: 'Neuere Quellen können noch offene Fragen nicht abschließend klären. '.repeat(18) };
   const before = structuredClone(fixture);
   const prompt = buildAnalysisPrompt([fixture]);
-  assert.ok(prompt.length <= 39000);
+  assert.ok(prompt.length <= 44000);
   assert.match(prompt, /In diesem Durchlauf visuals:null/);
   assert.match(prompt, /media_impact/);
   assert.match(prompt, /Politisch symmetrisch prüfen/);
@@ -132,7 +132,7 @@ test('large same-registry source sets factor publisher metadata without losing d
   assert.equal(packed.source_defaults.publisher,'Deutscher Bundestag – Heute im Bundestag');
   const expanded=expandPacketTransport(packed);
   assert.deepEqual(expanded.sources.map(source=>source.url),sources.map(source=>source.url));
-  assert.ok(prompt.length<=39000);
+  assert.ok(prompt.length<=44000);
 });
 test('dense tables and text references round-trip roles, nulls, omissions, IDs and contradictions',()=>{
   const repeated='Eine lange unveränderte Textstelle, die identisch in verschiedenen Dokumenten vorkommt.';
@@ -165,7 +165,7 @@ test('both actual September 4 input failures fit, with full source identity and 
     const sources=fixture.sources.map((s,i)=>({...s,...(i<3?{article_excerpt:Array.from({length:35},(_,n)=>`Absatz ${n}: Diese überprüfbare Textstelle enthält Grenzen und einen möglichen Widerspruch zur bisherigen Darstellung.`).join(' ')}:{})}));
     const c={...fixture,sources,claims:claimLedgerFor(sources,fixture.story_id,'2026-09-04T17:00:00Z'),preanalysis:preAnalyzeStory({...fixture,sources}),related_ticker_history:Array.from({length:5},(_,i)=>({story_id:`related-${i}`,title:'Eigenständiges verwandtes Ereignis',summary:'Kein unabhängiger Nachweis für das aktuelle Ereignis. '.repeat(6),source_urls:[`https://example.org/related-${i}`]}))};
     const prompt=buildAnalysisPrompt([c]);
-    assert.ok(prompt.length<=39000,fixture.story_id);
+    assert.ok(prompt.length<=44000,fixture.story_id);
     const packet=expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
     assert.deepEqual(packet.sources.map(s=>s.url),sources.map(s=>s.url));
     assert.equal(packet.claims.length,c.claims.length);
@@ -179,7 +179,7 @@ test('both actual September 4 input failures fit, with full source identity and 
 test('September 5 election backlog fits with related stories, all claims and media context',()=>{
   const fixture=JSON.parse(fs.readFileSync(new URL('./fixtures/input-limit-regression-20260905.json',import.meta.url)));
   const prompt=buildAnalysisPrompt([fixture]);
-  assert.ok(prompt.length<=39000);
+  assert.ok(prompt.length<=44000);
   const packet=expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
   assert.deepEqual(packet.sources.map(s=>s.url),fixture.sources.map(s=>s.url));
   assert.equal(packet.claims.length,fixture.claims.length);
@@ -196,7 +196,7 @@ test('a living file still fits after the two real late arrivals and fresh articl
   candidate.preanalysis=preAnalyzeStory(candidate);
   candidate.media_trigger=detectMediaImpactTrigger(candidate);
   const prompt=buildAnalysisPrompt([candidate]);
-  assert.ok(prompt.length<=39000);
+  assert.ok(prompt.length<=44000);
   const packet=expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
   assert.equal(packet.sources.length,17);
   assert.deepEqual(packet.sources.map(s=>s.url),sources.map(s=>s.url));

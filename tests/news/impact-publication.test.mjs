@@ -1,3 +1,4 @@
+import { syntheticImpact21 } from './fixtures/impact21.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -8,7 +9,8 @@ import { applyImpactOutput, impactReassessmentInput, discoverImpactJobs } from '
 import { ensureSemanticReview, importSemanticReviews, semanticOutputSchema } from '../../scripts/news/bridge/semantic-review.mjs';
 import { bridgePath, hash, parsePacket } from '../../scripts/news/bridge/contract.mjs';
 import { assertAutomaticImpactTransport } from '../../scripts/news/processing-mode.mjs';
-const reviews = JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews;
+import { waitingForReview } from '../../scripts/news/bridge/status.mjs';
+const reviews = JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews.map(r=>({...r,impact_assessment:syntheticImpact21(r.impact_assessment)}));
 const catalog = JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
 const readyReview = () => ({ status:'ready', checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im unabhängigen Prüfpass am jeweiligen Quellbeleg und Wirkpfad geprüft.'}])), findings:[] });
 const bsw = () => { const r=reviews[0], record=structuredClone(catalog.find(s=>s.story_id===r.story_id));record.impact_sources=r.assessment_sources;return {a:structuredClone(r.impact_assessment),record}; };
@@ -26,7 +28,7 @@ test('backlog handoff fills a larger batch while reserving current-news and seco
   jobs.set('review',{input:{job_id:'review',job_type:'impact_semantic_review',parent_job_id:parent.input.job_id},status:'queued'});
   assert.equal((await discoverImpactJobs(bridge,records,now)).length,0,'the actual review consumes its reserved slot, not another first pass');
   parent.status='acknowledged';parent.semantic_review={};jobs.get('review').status='acknowledged';
-  await bridge.store.observe(`impact-checkpoint:${parent.candidate.story_id}:${assessmentBasis(parent.candidate)}`,{status:'publish'});
+  await bridge.store.observe(`impact-checkpoint:2.1:${parent.candidate.story_id}:${assessmentBasis(parent.candidate)}`,{status:'publish'});
   assert.equal((await discoverImpactJobs(bridge,records,now)).length,1,'completed work immediately frees the next discovery batch slot');
   assert.equal(files.size,19);assert.equal(observations.get('impact-reassessment').reserved_news_slots,12);
 });
@@ -44,18 +46,18 @@ test('uncertain implementation retains a sourced climate risk, large magnitude a
   d.magnitude=1;d.primary_paths[0].magnitude=1;d.likelihood='high';assert.equal(deriveImpactPresentation(a).dimensions.planet.magnitude,1);
 });
 test('known material path can have unresolved direction without losing the path',()=>{
-  const {a}=bsw(),d=a.dimensions.human;d.direction='open';d.dominance='none';d.rationale='Die Verteilung zwischen den betrachteten Gruppen ist fachlich noch nicht hinreichend aufgelöst.';
-  assert.equal(d.path_status,'material');assert.equal(deriveImpactPresentation(a).dimensions.human.path_status,'material');
+  const {a}=bsw(),d=a.dimensions.human;d.direction='open';d.dominance='none';d.primary_paths.forEach(p=>p.direction='open');d.rationale='Die Verteilung zwischen den betrachteten Gruppen ist fachlich noch nicht hinreichend aufgelöst.';
+  assert.equal(d.path_status,'modelled');assert.equal(deriveImpactPresentation(a).dimensions.human.path_status,'modelled');
   assert.deepEqual(impactAssessmentErrors(a,[...bsw().record.sources,...bsw().record.impact_sources]),[]);
 });
 test('dominant negative path is not averaged away by a smaller positive result',()=>{
   const {a,record}=bsw();assert.deepEqual(semanticIssues(a,record),[]);
   assert.equal(a.dimensions.human.dominance,'dominant_negative');assert.ok(a.dimensions.human.secondary_paths.some(p=>p.direction==='positive'));
-  assert.equal(a.dimensions.planet.direction,'mixed');assert.equal(deriveImpactPresentation(a).dimensions.planet.label,'− überwiegend Risiko');
+  assert.equal(a.dimensions.planet.direction,'mixed');assert.equal(a.dimensions.planet.dominance,'balanced');assert.equal(deriveImpactPresentation(a).dimensions.planet.label,'± gegenläufig');
 });
 test('BSW power, institutional and both energy paths are present without an invented abolition of renewables',()=>{
   const {a,record}=bsw();assert.equal(impactContextRequirements(record).power,true);
-  assert.equal(a.dimensions.democracy.path_status,'material');assert.equal(a.dimensions.democracy.direction,'negative');assert.equal(a.dimensions.democracy.temporal_status,'ex_ante');
+  assert.equal(a.dimensions.democracy.path_status,'modelled');assert.equal(a.dimensions.democracy.direction,'negative');assert.equal(a.dimensions.democracy.temporal_status,'ex_ante');
   assert.ok(a.system_check.enablement.includes('enables_institutional_control'));
   assert.deepEqual(new Set(a.dimensions.planet.primary_paths.map(p=>p.direction)),new Set(['negative','positive']));
   assert.match(a.dimensions.planet.primary_paths[1].mechanism,/BSW fordert/);
@@ -73,8 +75,8 @@ test('clear emissions rationale cannot hide behind an open direction',()=>{
 });
 test('a recorded casualty cannot be published as a future risk',()=>{
   const r=reviews[2],a=structuredClone(r.impact_assessment),record=catalog.find(s=>s.story_id===r.story_id);
-  assert.equal(deriveImpactPresentation(a).dimensions.human.label,'− beobachtet');
-  a.dimensions.human.temporal_status='ex_ante';assert.ok(semanticIssues(a,record).includes('IMPACT_OCCURRED_HARM_AS_RISK'));
+  assert.equal(deriveImpactPresentation(a).dimensions.human.directionLabel,'− beobachtet');
+  a.observed_effects=[];assert.ok(semanticIssues(a,record).includes('IMPACT_OCCURRED_HARM_AS_RISK'));
 });
 test('migration is idempotent and preserves every original article and source byte',()=>{
   const first=migrateImpactCatalog(catalog),second=migrateImpactCatalog(first.records);
@@ -94,7 +96,7 @@ test('persisted current profiles still require full structure and current source
   const {a,record}=bsw();record.impact_assessment=a;record.impact_assessment_basis=assessmentBasis(record);
   assert.deepEqual(persistedImpactAssessmentErrors(record),[]);
   record.impact_assessment.dimensions.human.likelihood='invented';
-  assert.ok(persistedImpactAssessmentErrors(record).includes('IMPACT_DIMENSION_INVALID:human'));
+  assert.ok(persistedImpactAssessmentErrors(record).includes('IMPACT_POTENTIAL_STATUS_INVALID:human'));
   record.sources[0].title+=' changed';
   assert.deepEqual(persistedImpactAssessmentErrors(record),['IMPACT_PERSISTED_BASIS_MISMATCH']);
 });
@@ -135,8 +137,30 @@ test('separate review job is mandatory, idempotent, source-bound, and cannot be 
   jobs.set(oldId,structuredClone(oldJob));jobs.delete(child.input.job_id);
   assert.equal((await ensureSemanticReview(bridge,parent,output,record,a,now)).status,'needs_second_pass','malformed legacy receipt is not treated as a completed independent review');
   assert.notEqual(parent.publication_gate.review_job_id,oldId);
-  assert.equal(jobs.get(parent.publication_gate.review_job_id).input.review_protocol,'structured-checks-1');
+  assert.equal(jobs.get(parent.publication_gate.review_job_id).input.review_protocol,'impact-2.1-potential-1');
   assert.deepEqual(jobs.get(oldId),oldJob,'old acknowledgment and error history stay unchanged');
+});
+
+test('version rollover wakes a held legacy backfill and cancels only its superseded open review',async()=>{
+  const {a,record}=bsw(),now='2026-09-10T12:00:00Z',input=impactReassessmentInput(record,now);
+  const parent={input,candidate:record,attempts:{},status:'queued',publication_gate:{status:'needs_review'},semantic_review:{assessment:{version:'2.0'}}};
+  const old={input:{job_id:'wt_20260910T120000Z_aaaaaaaaaaaaaaaaaaaaaaaa',job_type:'impact_semantic_review',parent_job_id:input.job_id,impact_version:'2.0'},status:'queued'};
+  const immutable=structuredClone(old.input),jobs=new Map([[input.job_id,parent],[old.input.job_id,old]]);
+  const bridge={store:{get:async id=>jobs.get(id),put:async j=>jobs.set(j.input.job_id,j),all:async()=>[...jobs.values()]},transport:{writeAtomic:async()=>{}},failure:async(_j,_s,e)=>{throw e;}};
+  assert.equal(await waitingForReview(bridge.store,parent),false);
+  await ensureSemanticReview(bridge,parent,{data:'old first pass'},record,a,now);
+  assert.equal(old.status,'accepted');assert.equal(old.ack.status,'hold');assert.equal(old.ack.replacement_job_id,parent.publication_gate.review_job_id);
+  assert.deepEqual(old.input,immutable);assert.equal(await waitingForReview(bridge.store,parent),true);
+});
+test('a same-version semantic revision cannot keep new work waiting on an obsolete review',async()=>{
+ const parent={publication_gate:{status:'needs_second_pass',review_job_id:'old'}};
+ const child={input:{job_type:'impact_semantic_review',impact_version:'2.1',semantics_revision:'previous'},status:'queued'};
+ const store={get:async()=>child};
+ assert.equal(await waitingForReview(store,parent),false);
+ child.input.semantics_revision='all-dimensions-1';assert.equal(await waitingForReview(store,parent),true);
+ parent.publication_gate={status:'needs_review'};parent.semantic_review={assessment:{version:'2.1',semantics_revision:'previous'}};
+ assert.equal(await waitingForReview(store,parent),false);
+ parent.semantic_review.assessment.semantics_revision='all-dimensions-1';assert.equal(await waitingForReview(store,parent),true);
 });
 test('a bare checked label is a repairable output schema error, never a completed semantic review',()=>{
   const {a}=bsw(),o={schema_version:'1.0',job_id:'wt_20260910T120000Z_aaaaaaaaaaaaaaaaaaaaaaaa',input_hash:'a'.repeat(64),processed_at:'2026-09-10T12:00:00Z',review:readyReview(),impact_assessment:a};

@@ -23,12 +23,12 @@ export function persistedImpactAssessmentErrors(record) {
   if (record.impact_assessment_basis !== assessmentBasis(record)) return ['IMPACT_PERSISTED_BASIS_MISMATCH'];
   if (assessment.review?.status === 'needs_reassessment') {
     const { impact_assessment: _old, ...original } = record.analysis || record;
-    const expected = migrateImpactAssessment(original, { title: record.title, news_event: record.title });
+    const expected = migrateImpactAssessment(original, { title: record.title, news_event: record.title, version: assessment.version });
     const actual = structuredClone(assessment);
     delete actual.review.migrated_at;
     return assessmentHash(actual) === assessmentHash(expected) ? [] : ['IMPACT_LEGACY_PROJECTION_MODIFIED'];
   }
-  return impactAssessmentErrors(assessment, [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])], { required: true });
+  return impactAssessmentErrors(assessment, [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])], { required: true, version: assessment.version });
 }
 export function migrateImpactCatalog(records, { now = '2026-09-10T10:30:00.000Z' } = {}) {
   const report = { checked: 0, automatically_migrated: 0, reassessed: 0, needs_reassessment: 0, errors: [], changed: 0, records: [] };

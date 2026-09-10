@@ -130,8 +130,8 @@ for (const [name, change] of [
 
 test("deterministische Anker aus dem Analyse-Schema", () => {
   const meters = renderDimensionMeters(story().analysis, { compact: true });
-  assert.match(meters, /wt-dim--human" data-potential-model="2.0"/);
-  assert.match(meters, /wt-dim--democracy" data-potential-model="2.0"/);
+  assert.match(meters, /wt-dim--human" data-potential-model="2.1"/);
+  assert.match(meters, /wt-dim--democracy" data-potential-model="2.1"/);
   assert.match(meters, /aria-label="Wirkpfad fachlich offen"/);
   assert.match(meters, /aria-label="Wirkpfad fachlich offen"/);
   assert.doesNotMatch(meters, /wt-dim__note sr-only/);

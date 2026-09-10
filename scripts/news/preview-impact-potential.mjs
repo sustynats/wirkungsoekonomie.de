@@ -1,0 +1,44 @@
+import http from 'node:http';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+// Private, synthetic visual check. Never imported by the public site build.
+import fs from 'node:fs';
+import {renderDimensionMeters} from './visuals.mjs';
+import {syntheticPotentialAssessment,syntheticPotentialPath,syntheticFactors} from '../../tests/news/fixtures/impact21.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
+const a=syntheticPotentialAssessment();a.systemic_relevance='high';a.news_event='Beispiel: Eine Kommune plant neue Hitzeschutzorte.';a.evaluation_target.label='Mögliche Gesundheits-, Ressourcen- und Teilhabefolgen zusätzlicher Hitzeschutzorte';
+for(const [key,d] of Object.entries(a.dimensions)){
+ const label={human:'Kühlere Aufenthaltsorte können gesundheitliche Belastungen verringern',planet:'Zusätzliche Kühlung verändert Energiebedarf und Ressourcenverbrauch',democracy:'Erreichbare Schutzorte können Zugang und kommunale Teilhabe stärken'}[key];
+ const score={human:4,planet:1,democracy:2}[key];Object.assign(d,{magnitude:score,direction:key==='planet'?'open':'positive',dominance:key==='planet'?'none':'dominant_positive'});
+ d.primary_paths=[syntheticPotentialPath({label,magnitude:score,direction:d.direction,magnitude_factors:syntheticFactors(score,['official'])})];
+}
+const b=structuredClone(a);b.temporal_status='ongoing';b.news_event='Beispiel: Erste Entlastung durch Hitzeschutzorte gemessen.';
+b.observed_effects=[{...syntheticPotentialPath({direction:'positive',magnitude:2}),dimension:'human',change:'Erste geringere Hitzebelastung bei Besucherinnen und Besuchern',temporal_status:'ongoing',data_status:'observed',evidence:'medium',attribution:'open',reference_frame:'Gesundheit und Schutz vor Hitze',observed_at:'Synthetischer Testzeitraum'}];
+const c=structuredClone(a);c.temporal_status='ex_post';c.news_event='Beispiel: Waldfläche nach einem Brand geschädigt.';c.evaluation_target.label='Belegte Ökosystemschäden und mögliche langfristige Folgepfade';
+for(const [key,d] of Object.entries(c.dimensions)){
+ const magnitude={human:3,planet:3,democracy:1}[key],direction=key==='democracy'?'positive':'negative';
+ Object.assign(d,{magnitude,direction,dominance:'dominant_'+direction});d.primary_paths=[syntheticPotentialPath({direction,magnitude,label:{human:'Rauch und Hitzebelastung können die Gesundheit länger beeinträchtigen',planet:'Vegetationsverlust kann Erosion und Wasserhaushalt weiter verändern',democracy:'Transparente Wiederaufbauentscheidungen können lokale Beteiligung stärken'}[key]})];
+}
+c.observed_effects=[{...syntheticPotentialPath({direction:'negative',magnitude:4}),dimension:'planet',change:'Verbrannte Waldfläche und Verlust von Ökosystemfunktionen',temporal_status:'ex_post',data_status:'observed',evidence:'high',attribution:'open',reference_frame:'Ökosystemfunktionen der betroffenen Fläche',observed_at:'Synthetischer Testzeitraum'}];
+for(const assessment of [a,b,c]){
+ assessment.baseline=assessment===c?'Der Zustand der betroffenen Waldfläche vor dem synthetisch angenommenen Brand.':'Die bisherige Wärmebelastung und der bestehende Zugang zu öffentlichen Aufenthaltsorten.';
+ for(const [key,d]of Object.entries(assessment.dimensions))for(const p of d.primary_paths){
+  p.mechanism=p.label+'. Der konkrete Verlauf hängt von den nachfolgend genannten Bedingungen ab.';
+  p.recipients=[{human:'Menschen im ausdrücklich betrachteten örtlichen Umfeld',planet:'Ökosysteme und Ressourcen im betrachteten Wirkungsraum',democracy:'Menschen und Institutionen der betroffenen Kommune'}[key]];
+  p.reference_space='Das örtliche Umfeld des synthetischen Beispiels und die dort betroffenen Empfänger.';
+  p.condition=assessment===c?'Die beschriebenen Folgeprozesse treten nach dem angenommenen Brand tatsächlich auf.':'Die geplanten Schutzorte werden umgesetzt, sind zugänglich und werden tatsächlich genutzt.';
+  p.time_horizon='Im Beispiel: mehrere Monate bis einige Jahre, abhängig vom einzelnen Folgepfad.';
+  p.first_order=p.label+'.';p.second_order='Weitere Folgen sind bedingt und müssten in einer echten Bewertung separat mit Quellen geprüft werden.';p.third_order='Eine strukturelle Verstärkung wird in diesem Layoutbeispiel nicht als bereits belegt behauptet.';
+  d.rationale='Die Zahlen demonstrieren ausschließlich die Anzeige. Eine reale Bewertung benötigt überprüfte Belege, einen abgegrenzten Vergleich und eine unabhängige Fachprüfung.';
+ }
+}
+const cards=[a,b,c].map((a,i)=>`<article class="preview-card"><small>BEISPIEL ${i+1} · SYNTHETISCHE DARSTELLUNG</small><h2>${a.news_event.replace('Beispiel: ','')}</h2>${renderDimensionMeters({impact_assessment:a},{compact:true,context:{privateImpactPreview:true}})}</article>`).join('');
+const html=`<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>MPD · Status-Ring · Private Vorschau</title><style>${fs.readFileSync(root+'/assets/css/news.css','utf8')}
+:root{--text:#ecf2f4;--muted:#b7c8cd;--border:#39515b;--accent:#a5e1c6}*{box-sizing:border-box}body{margin:0;background:#0d1a22;color:#eff5f6;font:16px/1.5 system-ui}main{max-width:1240px;margin:0 auto;padding:40px 24px}h1{font-size:clamp(26px,4vw,40px);line-height:1.15;margin:0 0 12px}h2{font-size:21px;line-height:1.3}p{color:inherit}small{color:#a9bec7;font-size:11px;letter-spacing:.07em}.preview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.preview-card{padding:22px;background:#142730;border:1px solid #36505c;border-radius:18px}.preview-card .wt-dims{grid-template-columns:1fr;gap:16px}.preview-card .wt-dim{padding:12px;background:#1b333f;border-radius:10px}.preview-card .wt-dim__head{margin-bottom:7px;color:#f4f8f9}.preview-card .wt-dim__head svg{width:18px;height:18px}.preview-card .wt-meter{display:inline-flex;width:84px;gap:3px;flex:0 0 84px}.preview-card .wt-meter i{width:14px;height:8px;background:#48606b;border-radius:2px}.preview-card .wt-meter .is-filled{background:#b1c7d0}.preview-card .wt-impact-direction{color:#fff;font-size:.78rem;white-space:normal}.preview-card .wt-impact-path-title{color:#d0dde2}.wt-dims__reference{font-size:.78rem;color:#d5e0e4}.preview-note{max-width:900px;color:#bacdd4;margin:0 0 28px}.legend{margin:24px 0 16px;display:flex;flex-wrap:wrap;gap:12px;font-size:14px}.legend span{padding:8px 14px;border:1px solid #425b67;border-radius:22px}.detail{margin-top:26px;padding:26px;border:1px solid #36505c;border-radius:18px}.detail .wt-dims{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.detail .wt-dim__head svg{width:20px}.detail li{font-size:13px}.detail .wt-dim{min-width:0}.detail .wt-meter{display:inline-flex;width:86px;gap:3px}.detail .wt-meter i{height:9px;width:14px;background:#47616b}.detail .wt-meter i.is-filled{background:#b1c7d0}@media(max-width:950px){.preview-grid{grid-template-columns:1fr}.preview-card .wt-dims{grid-template-columns:repeat(3,minmax(0,1fr))}.detail .wt-dims{grid-template-columns:1fr}}@media(max-width:600px){main{padding:26px 14px}.preview-card{padding:16px}.preview-card .wt-dims{grid-template-columns:1fr}.preview-card h2{font-size:22px}.detail{padding:16px}}
+</style><main><small>PRIVATE ENTWURFSVORSCHAU · KEINE VERÖFFENTLICHTEN BEWERTUNGEN</small><h1>Ein Blick: Potenzial oder schon beobachtet?</h1><p class="preview-note">Der Ring zeigt eine von drei Statuskategorien. Die Balken zeigen unabhängig davon die Tragweite. Die folgenden Inhalte und Zahlen sind synthetische Layoutbeispiele, keine neuen Nachrichtenbewertungen.</p><div class="legend"><span>○ Potenzial</span><span>◔ Erste / laufende Wirkung</span><span>● Beobachtet</span></div><div class="preview-grid">${cards}</div><p class="preview-note">Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung. Die Ringfüllung bezeichnet keine Prozentwerte. Beim Waldbrand bleiben eingetretener Schaden, künftige Folgen und die gesonderte Frage nach dem Klimawandelanteil getrennt.</p><details class="detail"><summary>Detailvorschau: Beobachtung und weiteres Potenzial</summary>${renderDimensionMeters({impact_assessment:c},{context:{privateImpactPreview:true}})}</details></main></html>`;
+const output=process.argv.find(x=>x.startsWith('--output='))?.slice(9);
+if(output){fs.mkdirSync(path.dirname(path.resolve(output)),{recursive:true});fs.writeFileSync(output,html);}
+const port=Number(process.argv.find(x=>x.startsWith('--port='))?.slice(7)||8897);
+if(process.argv.includes('--serve'))
+http.createServer((req,res)=>{res.writeHead(200,{'Content-Type':'text/html;charset=utf-8','Cache-Control':'no-store'});res.end(html)}).listen(port,'127.0.0.1',()=>console.log('Private synthetic preview: http://127.0.0.1:'+port+'/'));
+else if(!output)throw Error('Use --output=/private/path/preview.html or --serve');

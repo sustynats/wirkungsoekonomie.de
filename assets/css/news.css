@@ -2681,10 +2681,37 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
 .wt-dims--impact .wt-impact-paths{padding-left:1.2rem}
 .wt-dims--impact .wt-impact-path p{margin:.25rem 0 .65rem}
 .wt-dims--impact.wt-dims--compact{display:grid;grid-template-columns:1fr;gap:.55rem}
-.wt-dims--impact.wt-dims--compact .wt-dim{display:grid;grid-template-columns:6.4rem minmax(3rem,1fr) minmax(6.2rem,1.35fr);gap:.55rem;align-items:center;padding:.55rem 0;background:transparent;border:0;min-width:0}
+.wt-dims--impact.wt-dims--compact .wt-dim{display:grid;grid-template-columns:5.6rem minmax(0,1fr);gap:.55rem;align-items:center;padding:.55rem 0;background:transparent;border:0;min-width:0}
 .wt-dims--impact.wt-dims--compact .wt-dim__head{display:flex;gap:.3rem;margin:0;font-size:.86rem}
 .wt-dims--impact.wt-dims--compact .wt-impact-direction{font-size:.82rem}
 .wt-dims--impact.wt-dims--compact .wt-icon{width:1rem;height:1rem;flex:none}
 .wt-impact-time{font-size:.8rem;opacity:.85;margin:.2rem 0 .6rem}
 .wt-impact-review{font-size:.9rem;margin:1rem 0}
-@media(max-width:380px){.wt-dims--impact.wt-dims--compact .wt-dim{grid-template-columns:5.7rem minmax(2.3rem,1fr) minmax(5.6rem,1.2fr);gap:.35rem}}
+@media(max-width:380px){.wt-dims--impact.wt-dims--compact .wt-dim{grid-template-columns:5.2rem minmax(0,1fr);gap:.35rem}}
+
+/* Public method chapter layout uses the ticker palette and readable mobile tables. */
+.news-methodology { max-width: 60rem; margin-inline: auto; }
+.news-methodology__chapters { display: grid; gap: 1.5rem; }
+.news-methodology-hero .breadcrumb, .news-methodology-hero .breadcrumb a { color: #fff; }
+.news-methodology table { width: 100%; border-collapse: collapse; margin-block: 1rem; }
+.news-methodology th, .news-methodology td { padding: .65rem; border-bottom: 1px solid var(--border, #d8d2c6); vertical-align: top; text-align: left; }
+.news-methodology th { min-width: 6rem; }
+@media (max-width: 600px) { .news-methodology th, .news-methodology td { padding: .45rem; overflow-wrap: anywhere; } }
+
+/* Status categories are independent from the existing 0..5 magnitude bars. */
+.wt-impact-reading{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap}
+.wt-impact-ring{display:inline-flex;width:1.3rem;height:1.3rem;flex:0 0 1.3rem;color:currentColor;vertical-align:middle}
+.wt-impact-ring svg{width:100%;height:100%}
+.wt-impact-additional{display:flex;gap:.4rem;align-items:center;flex-wrap:wrap;font-size:.76rem;margin-top:.45rem}
+.wt-impact-path-title{font-size:.76rem;line-height:1.4;margin:.4rem 0 0}
+.wt-impact-heading{text-transform:uppercase;font-weight:750;letter-spacing:.075em;font-size:.74rem}
+.wt-impact-ring .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:540px){.wt-dims--compact .wt-impact-reading{gap:.3rem}.wt-dims--compact .wt-impact-direction{font-size:.73rem}.wt-impact-ring{width:1.15rem;height:1.15rem;flex-basis:1.15rem}}
+
+.wt-dims--impact .wt-dim{display:block;min-width:0}
+.wt-dims--impact .wt-dim__head{margin-bottom:.45rem}
+.wt-dims--impact .wt-impact-reading{display:flex;align-items:center;flex-wrap:nowrap}
+.wt-dims--impact .wt-impact-direction{min-width:0;white-space:normal}
+.wt-dims--impact .wt-impact-additional{display:flex;align-items:center}
+
+.wt-dims--impact.wt-dims--compact .wt-impact-path-title,.wt-dims--impact.wt-dims--compact .wt-impact-additional{grid-column:1 / -1}

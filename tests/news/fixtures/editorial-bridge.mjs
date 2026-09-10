@@ -1,3 +1,4 @@
+import { syntheticImpact21 } from './impact21.mjs';
 import { editorialSourceRef } from '../../../scripts/news/editorial-analysis.mjs';
 import { EDITORIAL_QUALITY_KEYS } from '../../../scripts/news/editorial-judgment.mjs';
 function source(id, publisher, primary = false) {
@@ -48,12 +49,12 @@ export function validEditorial(story) {
     {title:"Resilienz",text:"Unterlassene Vorsorge kann Kaskadenrisiken erhöhen.",status:"scenario",relation:"impact_path",direction:"negative",condition:"Wenn notwendige Vorsorge ausbleibt.",source_ids:[]},
   ] };
   return {
-    impact_assessment: {
+    impact_assessment: syntheticImpact21({
       version:'2.0',news_event:story.title,evaluation_target:{label:'Umsetzung des neuen Schutzstandards für die Versorgung',type:'measure'},temporal_status:'ex_ante',systemic_relevance:'high',
       baseline:'Fortführung der bisher geltenden Schutzanforderungen.',counterfactual:'Ohne den neuen Standard bleiben die bisherigen Vorsorgeanforderungen bestehen.',reference_frame:['Sichere Versorgung und erreichbare öffentliche Leistungen'],
       system_check:{central_dimensions:['human'],first_order:'Neue Anforderungen verändern die Planung der Vorsorge.',second_order:'Zusätzliche Vorsorge kann Ausfälle begrenzen.',third_order:'Stabilere Versorgung kann Kaskaden dämpfen.',enablement:[],counter_evidence:['Fehlende Umsetzungsdaten begrenzen Aussagen zur tatsächlichen Vorsorge.'],source_independence:'Getrennte Quellen tragen den Anlass; mögliche gemeinsame Vorlagen sind zu prüfen.',institutional_status:'Zuständigkeiten und verbindliche Anforderungen gelten im jeweiligen Rechtsrahmen.'},
       dimensions:Object.fromEntries(['human','planet','democracy'].map(k=>[k, {path_status:'material',direction:'positive',dominance:'dominant_positive',magnitude:3,likelihood:'unknown',evidence:'low',data_status:'modelled',temporal_status:'ex_ante',rationale:'Wirksame Vorsorge kann Ausfälle kritischer Versorgungsfunktionen begrenzen.',observed_outcome:null,balance:null,secondary_paths:[],primary_paths:[{direction:'positive',label:'Verlässlichere Versorgung unter wirksamer Umsetzung',mechanism:'Vorsorgestandards können verwundbare Versorgungsfunktionen absichern.',recipients:['Menschen und Einrichtungen mit kritischen Versorgungsbedürfnissen'],magnitude:3,evidence:'low',temporal_status:'ex_ante',material:true,same_target:true,same_baseline:true,type:'main_path',likelihood:'unknown',source_ids:[ids[0]],condition:'Wenn der neue Standard tatsächlich zusätzliche wirksame Vorsorge auslöst.'}]}])),
-    },
+    }),
     executive_finding: paragraph,
     assessment_context: "potential", assessment_condition: "Bedingt durch wirksame Umsetzung des Schutzstandards; noch keine gemessene Wirkung.",
     subject_dimensions: Object.fromEntries(["human", "planet", "democracy"].map(key => [key, { relevance: "hoch", rationale: "Schutz, Versorgung und Vorsorge hängen zusammen.", implementation_status: "adopted", likelihood: "open", direction: "positive", magnitude: "open", evidence: "plausible_path" }])),

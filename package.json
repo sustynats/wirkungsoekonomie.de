@@ -165,6 +165,8 @@
     "check:typography": "node --test tests/site/public-typography.test.mjs && node scripts/quality/normalize-publication-typography.mjs _site --check",
     "news:bridge:discovery-now": "node scripts/news/bridge/admin.mjs DISCOVERY_NOW",
     "news:bridge:import-now": "node scripts/news/bridge/admin.mjs IMPORT_NOW",
-    "news:bridge:cycle-now": "node scripts/news/bridge/admin.mjs SERVER_CYCLE_NOW"
+    "news:bridge:cycle-now": "node scripts/news/bridge/admin.mjs SERVER_CYCLE_NOW",
+    "news:impact:coverage": "node scripts/news/promote-impact21.mjs",
+    "news:impact:promote": "node scripts/news/promote-impact21.mjs --promote"
   }
 }

@@ -1,3 +1,4 @@
+import { execFileSync } from 'node:child_process';
 import { createHash } from "node:crypto";
 import { assertAutomatable } from "./manual-policy.mjs";
 import { usageCostStartedAt } from "./operating-cost.mjs";
@@ -7,7 +8,7 @@ import { politicalDevelopmentFor, materialDevelopmentReview } from "./political-
 import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
-import { IMPACT_SCHEMA, IMPACT_DEFS, IMPACT_RULE, impactAssessmentErrors } from './impact-assessment.mjs';
+import { IMPACT_SCHEMA, IMPACT_DEFS, IMPACT_PROMPT_RULE, IMPACT_PROMPT_SCHEMA, IMPACT_PROMPT_DEFS, impactAssessmentErrors } from './impact-assessment.mjs';
 import { directionAssessmentErrors } from './direction-assessment.mjs';
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
 import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, promptEvidenceSegments } from "./newsroom.mjs";
@@ -300,11 +301,11 @@ export async function assertSafeFeedUrl(raw, allowedHosts, { resolveDns = true }
   return url;
 }
 
-async function readLimitedBody(response, maxBytes) {
+async function readLimitedBody(response, maxBytes, { binary = false } = {}) {
   const declared = Number(response.headers.get("content-length") || 0);
   if (declared > maxBytes) throw new Error("FEED_TOO_LARGE");
   if (!response.body?.getReader) {
-    const text = await response.text();
+    const text = binary ? Buffer.from(await response.arrayBuffer()) : await response.text();
     if (Buffer.byteLength(text, "utf8") > maxBytes) throw new Error("FEED_TOO_LARGE");
     return text;
   }
@@ -321,7 +322,8 @@ async function readLimitedBody(response, maxBytes) {
     }
     chunks.push(value);
   }
-  return new TextDecoder().decode(Buffer.concat(chunks.map((chunk) => Buffer.from(chunk))));
+  const bytes = Buffer.concat(chunks.map((chunk) => Buffer.from(chunk)));
+  return binary ? bytes : new TextDecoder().decode(bytes);
 }
 
 export async function fetchFeed(source, policy, fetchImpl = fetch) {
@@ -428,6 +430,12 @@ export async function fetchPublicArticle(item, source, policy = {}, fetchImpl = 
     }
     if (!response.ok) throw new Error(`ARTICLE_HTTP_${response.status}`);
     const contentType = response.headers.get("content-type") || "";
+    if (policy.allow_public_pdf === true && /^application\/pdf\b/i.test(contentType)) {
+      const bytes = await readLimitedBody(response, Math.min(Number(policy.max_article_bytes || 2000000), 4000000), { binary: true });
+      if (bytes.subarray(0,5).toString() !== '%PDF-') throw Error('ARTICLE_PDF_INVALID');
+      const body = execFileSync('pdftotext', ['-layout', '-', '-'], { input: bytes, timeout: 12000, maxBuffer: 4000000, encoding: 'utf8' });
+      return { body, final_url: current, content_type: 'text/plain', extracted_from: 'public_pdf' };
+    }
     if (contentType && !/\b(?:text\/html|application\/xhtml\+xml|text\/plain)\b/i.test(contentType)) throw new Error("ARTICLE_CONTENT_TYPE_INVALID");
     const body = await readLimitedBody(response, Number(policy.max_article_bytes || 2000000));
     assertPublicArticle(body);
@@ -904,6 +912,10 @@ export function analysisInputFor(stories) {
   }));
 }
 
+// Version 2.1 adds required pathway factors and research provenance. Optional
+// graphics keep the previous ceiling; the mandatory full evidence packet gets
+// a bounded 5k reserve instead of dropping sources or governing checks.
+export const ANALYSIS_PROMPT_MAX_CHARS = 44000;
 export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
   const input = analysisInputFor(stories);
   const lines = [
@@ -927,7 +939,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
     "Einzelfall/Produkt/Gebühr braucht belegte Intensität/Breite/Präzedenz; denkbare Übertragbarkeit reicht nicht. Publikationsform kein Ausschluss: Statistik/Interview/Rede/Parlamentsantwort kann neue Zustandsdaten, Entscheidung, Zusage, Evidenz oder Kurswechsel liefern.",
     "Ablehnen: Meinung/Wiederholung/Spekulation/Zeremonie/Routinezahl ohne Neuigkeit, unbeantwortete Frage ohne materielle Antwort, formaler Vorgang ohne relevanten Pfad. Quellenrang/Aufmerksamkeit kein Relevanzbeweis. Rückblick ohne neue Information: related_ticker_history prüfen, duplicate_without_new_information.",
     "material_development_review: Kandidatur/Rücktritt/Koalition/Regierungsbildung/Ergebnis auf Neuigkeit prüfen; neues Medium allein Dublette. Artikelzeit≠Aussagezeit; Videoüberschrift≠Originalton. Kurswechsel: frühere Bedingungen/datierte Aussagen/Nachträge prüfen. Zeitdruck≠Evidenz. Parteien/Medien gleich behandeln; Landtagswahl≠Regierungschefwahl.",
-    IMPACT_RULE,
+    IMPACT_PROMPT_RULE,
     "Hauptgegenstand zum Quelldatum: Kabinetts-Gesetzentwurf=Entwurf, beschlossen=endgültig verabschiedet, in Kraft=belegtes Inkrafttreten. Geltendes Recht nicht zurückstufen. Frist/Entwurf/Beschluss/Inkrafttreten/Umsetzung trennen, Teilvergleich setzt nicht Hauptstatus. Unklar=offen. Ex ante betrifft Folgen, auch nach Inkrafttreten.",
     "Zielbezug ist kein Kausalitätsbeweis. Fakten, Inferenz und Bewertung trennen.",
     "Keine Personen-/Parteien-/Moralrangliste. Reichweite≠Wirkung. Nichtkompensation/Reverse Merit Order bei materiellen Schutzgrenzen/Priorisierung.",
@@ -957,7 +969,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
         why_relevant: "string",
         status: "angekündigt|Entwurf|beschlossen|in Kraft|laufende Umsetzung|erste Daten|evaluiert|laufende Entwicklung|offen",
         analysis_type: "ex_ante|monitoring|ex_post",
-        impact_assessment: IMPACT_SCHEMA,
+        impact_assessment: IMPACT_PROMPT_SCHEMA,
         importance: "gering|mittel|hoch|sehr hoch",
         impact_potential: "string",
         impact_risks: ["string"],
@@ -985,14 +997,14 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
         visuals: includeVisuals ? VISUALS_SCHEMA : null,
         media_impact: MEDIA_IMPACT_SCHEMA,
       }],
-      $defs: IMPACT_DEFS,
+      $defs: IMPACT_PROMPT_DEFS,
     }),
     "UNTRUSTED_SOURCE_DATA_BEGIN",
     "",
     "UNTRUSTED_SOURCE_DATA_END",
   ];
   try {
-    lines[lines.length - 2] = fitAnalysisInput(input, 39000 - lines.join("\n").length);
+    lines[lines.length - 2] = fitAnalysisInput(input, (includeVisuals ? 39000 : ANALYSIS_PROMPT_MAX_CHARS) - lines.join("\n").length);
   } catch (error) {
     // Optional new illustrations must not crowd out a complete source catalog.
     // Retry prompt assembly locally, never the provider. No required rule or
@@ -1242,7 +1254,7 @@ export function validateAnalysis(analysis, story, options = {}) {
     }
     errors.push(...directionAssessmentErrors(analysis, story.sources, { requireCurrent: options.requireDirectionAssessment === true }));
   }
-  errors.push(...impactAssessmentErrors(analysis.impact_assessment, story.sources, { required: options.requireImpactAssessment === true }));
+  errors.push(...impactAssessmentErrors(analysis.impact_assessment, [...story.sources,...(story.impact_sources || [])], { required: options.requireImpactAssessment === true, ...(options.persisted && analysis.impact_assessment?.version === "2.0" ? {version:"2.0"} : {}) }));
   for (const key of ["impact_risks", "mechanisms", "first_order", "second_order", "third_order", "side_effects", "uncertainties", "watch_next", "reference_frameworks"]) {
     if (!Array.isArray(analysis?.[key])) errors.push(`AI_ARRAY_REQUIRED:${key}`);
   }

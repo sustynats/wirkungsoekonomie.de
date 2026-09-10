@@ -22,7 +22,7 @@ async function ownerCompleted(owner) {
   const run = await response.json();
   return run.status === 'completed';
 }
-const operations = new Set(['store.acquire','store.release','store.get','store.put','store.all','store.observe','store.observation',
+const operations = new Set(['store.acquire','store.release','store.get','store.put','store.all','store.impactStagingIndex','store.observe','store.observation',
   'dropbox.list','dropbox.read','dropbox.readBinary','dropbox.metadata','dropbox.move','dropbox.writeAtomic','dropbox.archive','bridge.status','bridge.monitor']);
 const server = http.createServer(async (req, res) => {
   const finish = (status, value) => { res.writeHead(status, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(value)); };
