@@ -162,6 +162,9 @@
     "questions:test": "node --test tests/site/contextual-questions.test.mjs",
     "build:browser-search": "node scripts/search/build-browser-search-index.mjs",
     "check:publication-editions": "node scripts/quality/check-publication-editions.mjs",
-    "check:typography": "node --test tests/site/public-typography.test.mjs && node scripts/quality/normalize-publication-typography.mjs _site --check"
+    "check:typography": "node --test tests/site/public-typography.test.mjs && node scripts/quality/normalize-publication-typography.mjs _site --check",
+    "news:bridge:discovery-now": "node scripts/news/bridge/admin.mjs DISCOVERY_NOW",
+    "news:bridge:import-now": "node scripts/news/bridge/admin.mjs IMPORT_NOW",
+    "news:bridge:cycle-now": "node scripts/news/bridge/admin.mjs SERVER_CYCLE_NOW"
   }
 }

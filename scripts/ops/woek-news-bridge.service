@@ -1,0 +1,25 @@
+[Unit]
+Description=Wirkungsticker private Dropbox bridge journal
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/woek-news-bridge
+Environment=WOEK_NEWS_BRIDGE_DIRECTORY=/var/lib/woek-news-bridge
+ExecStart=/usr/bin/node --max-old-space-size=144 server.mjs
+Restart=on-failure
+RestartSec=10
+UMask=0077
+MemoryMax=220M
+CPUQuota=40%
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/woek-news-bridge
+
+[Install]
+WantedBy=multi-user.target

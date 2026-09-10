@@ -6,6 +6,13 @@ set -euo pipefail
 clock_repo="${WOEK_CLOCK_REPO:-/var/lib/woek-wirkungsticker-clock/repository.git}"
 clock_state="${WOEK_CLOCK_STATE:-/var/lib/woek-wirkungsticker-clock/last-dispatch}"
 clock_branch="codex/wirkungsticker-clock"
+if [[ "${WOEK_CLOCK_LANE:-discovery}" == "import" ]]; then
+  clock_branch="codex/wirkungsticker-import-clock"
+  clock_state="${clock_state}-import"
+fi
+# Discovery and import wake-ups share one bare Git repository, not a publisher.
+exec 9>"${clock_repo}.wake.lock"
+flock -w 30 9
 clock_key="${WOEK_CLOCK_KEY:-/home/ubuntu/.ssh/woek_wirkungsticker_clock}"
 clock_known_hosts="${WOEK_CLOCK_KNOWN_HOSTS:-/home/ubuntu/.ssh/woek_clock_known_hosts}"
 clock_now="$(date -u +%s)"

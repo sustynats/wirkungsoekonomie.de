@@ -1,0 +1,34 @@
+name: Wirkungsticker Bridge Manual
+run-name: ${{ inputs.action }} by ${{ github.actor }}
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Authentifizierte manuelle Serveraktion
+        type: choice
+        required: true
+        options: [DISCOVERY_NOW, IMPORT_NOW, SERVER_CYCLE_NOW]
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: wirkungsticker-bridge-manual-admin
+  cancel-in-progress: false
+jobs:
+  dispatch:
+    if: vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge'
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    env:
+      WIRKUNGSTICKER_PROCESSING_MODE: dropbox_chatgpt_bridge
+      GH_TOKEN: ${{ github.token }}
+      BRIDGE_ACTION: ${{ inputs.action }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run the same discovery and import phases in order
+        run: node scripts/news/bridge/admin.mjs "$BRIDGE_ACTION" --execute
