@@ -6,8 +6,9 @@ import { analysisReaderCopy, hasEditorialResidue, READER_COPY_RULE } from "./rea
 import { politicalDevelopmentFor, materialDevelopmentReview } from "./political-development.mjs";
 import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
-import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA, DIMENSION_TENDENCY_RULE } from "./visuals.mjs";
-import { DIRECTION_ASSESSMENT_VERSION, NEWS_DIMENSION_SCHEMA, NEWS_ASSESSMENT_FRAME_SCHEMA, OUTCOME_EVIDENCE_RULE, directionAssessmentErrors } from './direction-assessment.mjs';
+import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
+import { IMPACT_SCHEMA, IMPACT_DEFS, IMPACT_RULE, impactAssessmentErrors } from './impact-assessment.mjs';
+import { directionAssessmentErrors } from './direction-assessment.mjs';
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
 import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, promptEvidenceSegments } from "./newsroom.mjs";
 import { courtCaseRelation } from "./court-case-identity.mjs";
@@ -854,6 +855,8 @@ export function analysisInputFor(stories) {
     already_published: Boolean(story.existing_story?.published),
     current_published_summary: cleanForPrompt(story.existing_story?.analysis?.summary, 720),
     current_published_status: story.existing_story?.analysis?.status || null,
+    existing_evaluation_target: story.existing_story?.impact_assessment?.evaluation_target || story.existing_story?.analysis?.impact_assessment?.evaluation_target || story.existing_story?.analysis?.assessment_frame?.subject || null,
+    dossier_id: story.existing_story?.living_file?.case_id || story.case_id || null,
     existing_history: (story.existing_story?.versions || []).slice(-2).map((version) => ({
       version: version.version,
       status: version.analysis?.status,
@@ -905,34 +908,33 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
   const input = analysisInputFor(stories);
   const lines = [
     READER_COPY_RULE,
-    OUTCOME_EVIDENCE_RULE,
     "Quellengebundene WÖk-Nachrichtenredaktion für vorgefilterte Ereignisse.",
     "Ereignis/Interessen aus gelieferten Quellen prüfen, eigenen Text schreiben. Keine Paywallrekonstruktion oder ungelieferte Quellenkenntnis.",
-    "Quellenfunktion: Amt/NGO/Unternehmen belegen eigene Aussagen, nicht deren Wahrheit. Zugeschriebene journalistische Einzelquelle kann single_source_claim tragen, nicht pauschal insufficient_evidence. Täter/Motiv/Folge dürfen offen bleiben. Agenturkopien/Pressemitteilungen/gleiche Texte und evidence_groups belegen keine Unabhängigkeit. Strittige schwere Behauptung: Originalbeleg plus unabhängige Recherche, nicht nur laut Medium. requires_corroboration hat Vorrang.",
-    "Sachverhalt zuerst. event_claims: 1 bis 6 zentrale Behauptungen, jeweils mit Status und gelieferten evidence_id-Referenzen. confirmed_claim verlangt unabhängig belegte Bestätigung, nicht zwei Mediennamen. primary_source_claim nur mit primary_source:true; ein Zeitungsbericht über ein Urteil ersetzt das Urteil nicht. Widersprüche in Zahlen, Zeitpunkt oder Zuschreibung offenhalten, nicht mitteln. Keine falsche Ausgewogenheit. Belegtexte nicht umschreiben oder zusammensetzen.",
-    "news_status: developing/preliminary bei gesichertem Kern mit offenen Fragen; confirmed nur mit entsprechend belegten Claims; sonst disputed/corrected/updated. Kurze Erstmeldung braucht keine abgeschlossene Langfrist-Wirkungsanalyse; unsichere Folgen als möglich kennzeichnen. currentness/neue Quellen prüfen: überholte Zwischenstände nicht als aktuell publizieren.",
+    "Quellenfunktion: Amt/NGO/Unternehmen belegen eigene Aussagen, nicht Wahrheit. Zugeschriebene Einzelquelle kann single_source_claim tragen. Agenturkopien/Pressemitteilungen/gleiche Texte sind nicht unabhängig. Strittige schwere Behauptung: Originalbeleg+unabhängige Recherche. requires_corroboration beachten.",
+    "event_claims: 1-6 Kernbehauptungen+Status+evidence_id. confirmed_claim braucht unabhängige Bestätigung. primary_source_claim nur primary_source:true; Gerichtsbericht≠Urteil. Widersprüche offenhalten, nicht mitteln. Keine False Balance; Belegtext unverändert.",
+    "news_status developing/preliminary: gesicherter Kern, offene Fragen; confirmed: unabhängig bestätigt; sonst disputed/corrected/updated. Erstmeldung darf knappe Einordnung tragen. currentness/neue Quellen: Überholtes nicht als aktuell publizieren.",
     "deepen_existing_initial_report nur bei neuen Fakten/besserer Evidenz; Umformulierung=no_new_information, Erstmeldung erhalten.",
     "followups: prüfbare Zusagen/Prognosen, sonst []; expected_by: belegte ISO-Frist, sonst null; expected_by_evidence: exakter Fristbeleg/null. Studien: Original/DOI, Reviewstatus, Methode, Stichprobe, Grenzen, Interessen aus Belegen; Pressemitteilung ≠ Studie.",
     // The identical untrusted-data rule is already mandatory in MEDIA_PROMPT_RULES.
-    "Transport (keine neuen Belege): {$text:i}=text_pool[i]. *_table (cells-v2): columns=Felder, rows=Werte; null=fehlend, außer [Zeile,Spalte] in present_nulls (echtes null). evidence_table: source_index=Quellenindex, übrige Felder=evidence_segment. Tabellen zuerst auflösen. source_defaults/claim_defaults ergänzen fehlende Felder, provenance_defaults nur vorhandene provenance-Objekte; null=unbekannt. abstract_claim_id verweist auf Claim. claim_from_source: (sources[index].title+': '+sources[index].abstract).slice(0,claim_text_length). excerpt_from:[field,start,length]=source[field].slice(start,start+length); excerpt_text:i=evidence_texts[i]. evidence_id, URL, Datum, Herkunft, Rollen und Widersprüche unverändert; gleiche Texte sind keine unabhängigen Belege.",
-    "Prüfe drei voneinander unabhängige Pflichtgates: neuer Ereigniskern, materielle Informations-/Folgenrelevanz, tragfähige Evidenz. Alle müssen tragen; kein Beschluss oder Wirkungsnachweis nötig. already_published:false=Erstbericht, nicht nur zusätzliche Maßnahmen prüfen.",
-    "Verwirf ungeeignete Kandidaten früh und knapp: Für eine Ablehnung liefere ausschließlich story_id, publication_recommendation:false und rejection:{code,reason}. Erlaubte codes: not_material, no_new_information, insufficient_evidence, superseded. reason muss die konkrete sachliche Ursache in 30 bis 300 Zeichen nennen. Keine langen Artikel oder Folgenanalysen für abgelehnte Kandidaten erzeugen.",
-    "historical_relevance_reassessment: Neuigkeit zum Quelldatum; eigene existing_history ist kein Dublettenbeweis. related_ticker_history=andere Akten: source_published_at vergleichen. Späterer Rückblick entwertet kein früheres Original, ist ohne Neuigkeit aber Dublette. new_or_updated_story: neue materielle Information zur Vorgeschichte.",
-    "Kein Beschlusszwang: Erstbericht einer zentralen Haushalts-/Parlamentsdebatte mit belegten Prioritäten/Kontroversen ist ein Nachrichtenanlass (Orientierung, Rechenschaft, Folgen). 'Kein Beschluss/keine Mittelverschiebung/keine Folgewirkung' allein rechtfertigt kein not_material. Beschimpfungen und bekannte Positionen ohne Neuigkeit bleiben ablehnbar.",
-    "Weitere Anlässe: neue Regeln, Anreize, Kapitalflüsse, Infrastruktur, Markt-/Standortvorgänge, Technologieeintritte, Umfragedaten, politische Kurswechsel, schwere Sicherheitslagen, neue Evidenz. Konkrete Potenziale begründen, Umsetzung nicht erfinden.",
+    "Transport unverändert auflösen: {$text:i}=text_pool[i]. cells-v2 *_table: columns=Felder, rows=Werte; null=fehlend außer present_nulls:[Zeile,Spalte]. evidence_table.source_index=Quellenindex; Rest=evidence_segment. source_defaults/claim_defaults ergänzen fehlende Felder; provenance_defaults nur vorhandene Objekte. abstract_claim_id→Claim. claim_from_source=(sources[index].title+\": \"+sources[index].abstract).slice(0,claim_text_length). excerpt_from:[field,start,length]=source[field].slice(start,start+length); excerpt_text:i=evidence_texts[i]. Beleg-ID/URL/Datum/Herkunft/Rolle/Widerspruch unverändert; Textgleichheit≠Unabhängigkeit.",
+    "Prüfe drei voneinander unabhängige Pflichtgates: neuer Ereigniskern, Materialität, Evidenz. Kein Beschluss/Wirkungsnachweis nötig. already_published:false=Erstbericht.",
+    "Ablehnung früh/knapp: nur story_id, publication_recommendation:false, rejection:{code,reason}; codes not_material/no_new_information/insufficient_evidence/superseded. Konkreter reason 30-300 Zeichen. Keine Artikel/Folgenanalyse für Ablehnungen.",
+    "historical_relevance_reassessment: Neuigkeit zum Quelldatum; existing_history kein Dublettenbeweis. related_ticker_history=andere Akten: source_published_at vergleichen. Späterer Rückblick ohne Neuigkeit ist Dublette, entwertet aber früheres Original nicht. Updates brauchen neue materielle Information.",
+    "Kein Beschlusszwang: belegte zentrale Parlaments-/Haushaltsdebatte mit neuen Prioritäten/Kontroversen hat Nachrichtenwert (Orientierung/Rechenschaft/Folgen). Kein Beschluss oder Wirkungsnachweis allein kein not_material. Bloße Beschimpfung/Wiederholung bleibt ablehnbar.",
+    "Anlässe: Regeln, Anreize, Kapitalflüsse, Infrastruktur, Markt/Standort, Technologie, Umfragen, politische Kurswechsel, Sicherheitslagen, neue Evidenz. Potenziale begründen, Umsetzung nicht erfinden.",
     "Priorität≠Freigabe, Erwartung≠Umsetzung. Debatten/Positionen/Daten: new_evidence oder material_update, kein erfundener Beschluss. Sicherheit: gesicherten Kern von Verdacht/Opferzahl/Motiv trennen.",
-    "Materialität: Zahl/Art Betroffener, Intensität, Dauer, Reversibilität, Systemrelevanz, Kaskaden, Verteilung, Resilienz, demokratische Korrekturfähigkeit. Mindestens zwei verschiedene substanzielle Faktoren oder einer außergewöhnlich stark. Resonanz/Aufmerksamkeit sind keine materiellen Faktoren und keine Ausnahme.",
-    "Konkrete Materialität begründen: Lokaler Einzelfall, Produkt- oder Gebührenänderung reicht ohne belegte Intensität, Breite oder Präzedenzwirkung nicht. Denkbare Übertragbarkeit allein reicht nicht. Die Publikationsform ist niemals allein ein Ausschlussgrund: Auch regelmäßige Arbeitsmarkt-/Preis-/Gesundheits-/Klimastatistik, Interview, Rede oder parlamentarische Antwort kann neue Zustandsinformation, zurechenbare Entscheidung, verbindliche Zusage, Evidenz oder Kursänderung liefern.",
-    "Ablehnen: bloße Meinung, Wiederholung, Spekulation, Zeremonie, Routinezahl, Börsen-/Tenderzahl, Frage ohne materielle Antwort oder formales Verfahren ohne relevanten Wirkpfad. Quellenrang und Aufmerksamkeit sind kein Relevanzbeweis. Sammel-/Rückblicksmeldung bereits erfasster Entscheidungen ohne neue Information: related_ticker_history prüfen, duplicate_without_new_information.",
-    "material_development_review ist nur ein Prüfsignal. Neue Kandidatur-, Rücktritts-, Koalitions-, Regierungsbildungs- oder Ergebnisangaben vergleichen: materielle Aussage = material_update, anderes Medium allein = Dublette. Artikelzeit ist nicht Aussagezeit: Spätere Artikel können alte Zitate enthalten. Vor Kurswechselbehauptungen frühere Bedingungen, datierte Aussagen und Nachträge prüfen; das Publikationsdatum entscheidet keinen Widerspruch. Videoüberschrift ist kein geprüfter Originalton. Zeitkritik erhöht Prüfpriorität, nie Evidenzgrad. Gleiche Regeln für alle Parteien/Medien; Landtagswahl und Regierungschefwahl trennen.",
-    DIMENSION_TENDENCY_RULE,
-    "Hauptgegenstand zum Quelldatum: Kabinetts-Gesetzentwurf=Entwurf; beschlossen=endgültig verabschiedet; in Kraft=belegtes Inkrafttreten, nie Zukunft. Geltendes Recht nicht zurückstufen. Frist/Entwurf/Beschluss/Inkrafttreten/Umsetzung trennen; Vergleich/Teilregel setzt nicht Hauptstatus. Unklar=offen. Ex ante betrifft Folgen, ist auch nach Beschluss/Inkrafttreten möglich.",
+    "Materialität: Betroffenenkreis, Intensität, Dauer, Reversibilität, Systemrelevanz, Kaskaden, Verteilung, Resilienz, demokratische Korrekturfähigkeit. Zwei substanzielle Faktoren oder einer außergewöhnlich stark; Resonanz/Aufmerksamkeit zählen nicht.",
+    "Einzelfall/Produkt/Gebühr braucht belegte Intensität/Breite/Präzedenz; denkbare Übertragbarkeit reicht nicht. Publikationsform kein Ausschluss: Statistik/Interview/Rede/Parlamentsantwort kann neue Zustandsdaten, Entscheidung, Zusage, Evidenz oder Kurswechsel liefern.",
+    "Ablehnen: Meinung/Wiederholung/Spekulation/Zeremonie/Routinezahl ohne Neuigkeit, unbeantwortete Frage ohne materielle Antwort, formaler Vorgang ohne relevanten Pfad. Quellenrang/Aufmerksamkeit kein Relevanzbeweis. Rückblick ohne neue Information: related_ticker_history prüfen, duplicate_without_new_information.",
+    "material_development_review: Kandidatur/Rücktritt/Koalition/Regierungsbildung/Ergebnis auf Neuigkeit prüfen; neues Medium allein Dublette. Artikelzeit≠Aussagezeit; Videoüberschrift≠Originalton. Kurswechsel: frühere Bedingungen/datierte Aussagen/Nachträge prüfen. Zeitdruck≠Evidenz. Parteien/Medien gleich behandeln; Landtagswahl≠Regierungschefwahl.",
+    IMPACT_RULE,
+    "Hauptgegenstand zum Quelldatum: Kabinetts-Gesetzentwurf=Entwurf, beschlossen=endgültig verabschiedet, in Kraft=belegtes Inkrafttreten. Geltendes Recht nicht zurückstufen. Frist/Entwurf/Beschluss/Inkrafttreten/Umsetzung trennen, Teilvergleich setzt nicht Hauptstatus. Unklar=offen. Ex ante betrifft Folgen, auch nach Inkrafttreten.",
     "Zielbezug ist kein Kausalitätsbeweis. Fakten, Inferenz und Bewertung trennen.",
-    "Keine Personen-, Parteien- oder moralische Rangliste. Reichweite ist nicht Wirkung. Benenne Nichtkompensation und Reverse Merit Order nur, wenn Schutzgrenzen oder Priorisierung materiell relevant sind.",
+    "Keine Personen-/Parteien-/Moralrangliste. Reichweite≠Wirkung. Nichtkompensation/Reverse Merit Order bei materiellen Schutzgrenzen/Priorisierung.",
     "source_summary: eigene neutrale Quellenzusammenfassung, initial 60-180 Wörter, deepened 100-180 Wörter; jeweils 2-3 Absätze (Leerzeile). Nur gelieferte Fakten, offene Punkte benennen, keine Wirkungsannahme.",
-    "WÖk-Einordnung außerhalb source_summary: summary genau 2 kurze Sätze, höchstens 360 Zeichen; detail_summary initial 3-7 Sätze/300-1200 Zeichen, deepened 5-7 Sätze/500-1200 Zeichen: Sachverhalt, Relevanz, Wirkpfad, Folge, Evidenzgrenze. Ohne eigene Feldvorgabe: Strings maximal 220 Zeichen; Arrays je 1 Eintrag, maximal 180 Zeichen. Gesamtlimit: 10000 Zeichen mit relevantem Mediencheck, sonst 6300.",
-    "Lesertexte deutsch, ohne URLs/Quellen-IDs/Dokumentnummern. Zahlen nur aus Claim/Quelle, gleiche Schreibweise (Zahlwort bleibt Zahlwort). Keine Einleitung/Schemawiederholung. Beleg-IDs gehören nur in interne Referenzfelder, außerhalb des Fließtextbudgets.",
-    "event_claims.evidence:[{evidence_id:...}]: passende gelieferte Segmente; jede Zahl muss in den zitierten Segmenten stehen, nicht nur irgendwo im Artikel. followups.source_id: source_id. MPD-source_ids: source_id oder gelieferte evidence_id. Keine Zitate kopieren, keine IDs erfinden. Originalbelege unübersetzt.",
+    "WÖk-Einordnung: summary 2 Sätze/≤360 Zeichen; detail_summary initial 3-7 Sätze/300-1200 Zeichen, deepened 5-7/500-1200: Sachverhalt/Relevanz/Pfad/Folge/Grenze. Ohne eigene Feldvorgabe: Strings maximal 220 Zeichen; Arrays je1×180. Lesertextlimit: 10000 Zeichen mit relevantem Mediencheck, sonst 6300. impact_assessment separat vollständig, ohne Ein-Pfad-Grenze.",
+    "Lesertexte deutsch, ohne URLs/IDs/Dokumentnummern; Zahlen exakt aus Claim/Quelle (Zahlwort bleibt Zahlwort). Keine Schemawiederholung. Beleg-IDs nur in Referenzfelder, außerhalb des Textbudgets.",
+    "event_claims.evidence:[{evidence_id:...}]: jede Zahl im zitierten Segment; followups.source_id:source_id. MPD-source_ids:gelieferte source_id. Keine IDs erfinden. Originalbelege unübersetzt.",
     "evidence_selection.incomplete kennzeichnet eine begrenzte Textstellenauswahl, keinen vollständig gelesenen Artikel. Keine Vollständigkeit behaupten; fehlt Beleg oder Kontext für eine Kernbehauptung, insufficient_evidence statt Ergänzen aus Vermutung.",
     ...MEDIA_PROMPT_RULES,
     ...(includeVisuals ? [...VISUALS_PROMPT_RULES,
@@ -940,7 +942,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
       : ["Quellenumfang: In diesem Durchlauf visuals:null; keine neue optionale Grafik erzeugen. Quellen, Sachverhalt, Fakten-, Folgen- und Mediencheck sowie sämtliche Evidenz- und Qualitätsregeln bleiben vollständig verbindlich."]),
     "Gib ausschließlich valides JSON ohne Markdown aus. Schema:",
     "Immer {analyses:[...]}, auch bei Ablehnung; bei einer Story genau ein Eintrag, nie den Eintrag als Wurzelobjekt.",
-    "$ref auflösen: drei vollständige MPD-Objekte, keine $ref/$defs. Pipe-Listen: genau einen erlaubten Wert wählen. Unbenötigte Pfade null, niemals leere Schablonen. effect_type/reference sind Pflichtfelder vorhandener Pfade, keine Freitexte.",
+    "$ref auflösen: drei vollständige impact_assessment.dimensions, keine $ref/$defs im Ergebnis. Pipe-Listen: genau einen erlaubten Wert wählen. Unbenötigte Pfadlisten leer, keine Schablonen. Keine zusätzliche alte MPD-Bewertung erzeugen.",
     JSON.stringify({
       analyses: [{
         story_id: "string",
@@ -955,12 +957,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
         why_relevant: "string",
         status: "angekündigt|Entwurf|beschlossen|in Kraft|laufende Umsetzung|erste Daten|evaluiert|laufende Entwicklung|offen",
         analysis_type: "ex_ante|monitoring|ex_post",
-        direction_assessment_version: DIRECTION_ASSESSMENT_VERSION,
-        assessment_frame: NEWS_ASSESSMENT_FRAME_SCHEMA,
-        observed_outcome: { change: 'Beobachtete Zustandsänderung, sonst ganzes Objekt null', source_ids: ['string'], attribution: 'established|open' },
-        human: { $ref: '#/$defs/mpd' },
-        planet: { $ref: '#/$defs/mpd' },
-        democracy: { $ref: '#/$defs/mpd' },
+        impact_assessment: IMPACT_SCHEMA,
         importance: "gering|mittel|hoch|sehr hoch",
         impact_potential: "string",
         impact_risks: ["string"],
@@ -988,7 +985,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
         visuals: includeVisuals ? VISUALS_SCHEMA : null,
         media_impact: MEDIA_IMPACT_SCHEMA,
       }],
-      $defs: { mpd: { ...NEWS_DIMENSION_SCHEMA, positive_path: { $ref: "#/$defs/path" }, negative_path: { $ref: "#/$defs/path" } }, path: { ...NEWS_DIMENSION_SCHEMA.positive_path, state_change: "konkrete Zustandsänderung" } },
+      $defs: IMPACT_DEFS,
     }),
     "UNTRUSTED_SOURCE_DATA_BEGIN",
     "",
@@ -1239,10 +1236,13 @@ export function validateAnalysis(analysis, story, options = {}) {
     if (publicationGate.evidence_basis === "insufficient") errors.push("AI_EVIDENCE_INSUFFICIENT");
     if (publicationGate.duplicate_status === "duplicate_without_new_information") errors.push("AI_DUPLICATE_WITHOUT_UPDATE");
   }
-  for (const dimension of ["human", "planet", "democracy"]) {
-    if (!analysis?.[dimension] || typeof analysis[dimension].rationale !== "string" || !new Set(["gering", "mittel", "hoch", "sehr hoch", "offen"]).has(analysis[dimension].relevance)) errors.push(`AI_DIMENSION_INVALID:${dimension}`);
+  if (!analysis?.impact_assessment) {
+    for (const dimension of ["human", "planet", "democracy"]) {
+      if (!analysis?.[dimension] || typeof analysis[dimension].rationale !== "string" || !new Set(["gering", "mittel", "hoch", "sehr hoch", "offen"]).has(analysis[dimension].relevance)) errors.push(`AI_DIMENSION_INVALID:${dimension}`);
+    }
+    errors.push(...directionAssessmentErrors(analysis, story.sources, { requireCurrent: options.requireDirectionAssessment === true }));
   }
-  errors.push(...directionAssessmentErrors(analysis, story.sources, { requireCurrent: options.requireDirectionAssessment === true }));
+  errors.push(...impactAssessmentErrors(analysis.impact_assessment, story.sources, { required: options.requireImpactAssessment === true }));
   for (const key of ["impact_risks", "mechanisms", "first_order", "second_order", "third_order", "side_effects", "uncertainties", "watch_next", "reference_frameworks"]) {
     if (!Array.isArray(analysis?.[key])) errors.push(`AI_ARRAY_REQUIRED:${key}`);
   }

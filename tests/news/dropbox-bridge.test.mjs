@@ -1,3 +1,5 @@
+import { ensureSemanticReview } from '../../scripts/news/bridge/semantic-review.mjs';
+import { SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -56,7 +58,7 @@ function setup(t, options = {}) {
   const directory=fs.mkdtempSync(path.join(os.tmpdir(),'woek-bridge-test-'));
   const store=new BridgeStore(path.join(directory,'queue.sqlite')), transport=new MemoryDropbox();
   t.after(()=>{store.close();fs.rmSync(directory,{recursive:true,force:true});});
-  return {directory,store,transport,provider:new DropboxChatGPTBridgeProvider({store,transport,...options})};
+  return {directory,store,transport,provider:new DropboxChatGPTBridgeProvider({store,transport,...(options.adapt ? {semanticReview:async (_bridge,_job,_output,_record,proposed)=>({status:"ready",assessment:proposed})} : {}),...options})};
 }
 
 test('three synthetic events: stable retries, multiple sources in one job, no duplicate enqueue',async t=>{
@@ -107,7 +109,7 @@ test('real discovery runner queues new events without canonical writes, image wo
     const report=await runWirkungsticker({now,dryRun:false,bridgeProvider:provider,registry:{sources:[source],policy:{}},
       state:{source_status:{},seen_items:{},pending_story_ids:[],relevance_filter_version:'4.0'},storyStore:{stories:[]},usage:{runs:[]},
       newsroom:{source_items:{},events:{},event_sources:[],discovery_candidates:[]},budgetFx:{rate_date:'2026-09-10',rate_usd_per_eur:1.16},
-      fetchFeedImpl:async()=>({body:rss,final_url:source.feed_url}),callAiImpl:async()=>{calls++;throw Error('NO_AI');},prepareTitleImage:async()=>{calls++;throw Error('NO_IMAGES');}});
+      fetchFeedImpl:async()=>{assert.ok(await provider.store.observation('impact-reassessment'),'existing-source reassessments must be handed off before feed I/O');return {body:rss,final_url:source.feed_url};},callAiImpl:async()=>{calls++;throw Error('NO_AI');},prepareTitleImage:async()=>{calls++;throw Error('NO_IMAGES');}});
     assert.equal(calls,0);assert.equal(report.ai_calls,0);assert.equal(report.source_successes,1);assert.ok(report.bridge_enqueued.length);
     assert.deepEqual(files.map(f=>digest(fs.readFileSync(f))),before);
   } finally {for(const k of keys)if(previous[k]===undefined)delete process.env[k];else process.env[k]=previous[k];}
@@ -169,7 +171,7 @@ test('real native correction adapter passes existing gates, preserves version an
   Object.assign(original,{analysis:version.analysis,content_hash:review.expected_content_hash,current_version:version.version});original.versions=original.versions.filter(v=>v.version<=version.version);
   delete original.pending_update;
   const c={...original,sources:review.sources,existing_story:original},created='2026-09-09T12:00:00.000Z',processed='2026-09-09T14:00:00.000Z';
-  const input=bridgeInput(c,created),value=output(input,'publish');value.processed_at=processed;
+  const input=bridgeInput(c,created),value=output(input,'publish');input.wirkungsticker.analysis_prompt=input.wirkungsticker.analysis_prompt.replace('impact_assessment 2.0','historical MPD contract');value.processed_at=processed;
   Object.assign(value.story,{headline:review.title,short_summary:review.analysis.summary,detailed_summary:review.analysis.source_summary});
   value.wirkungsticker={analysis:review.analysis,correction_note:review.correction_note};
   const registry=loadNewsRegistry(process.cwd());
@@ -184,6 +186,7 @@ test('real native correction adapter passes existing gates, preserves version an
   const draft={...original,published:false,versions:[],analysis:undefined};
   const freshCandidate={...c,existing_story:draft};
   const freshInput=bridgeInput(freshCandidate,created),fresh={...value,job_id:freshInput.job_id,input_hash:freshInput.input_hash};
+  freshInput.wirkungsticker.analysis_prompt=input.wirkungsticker.analysis_prompt;
   assert.equal(adaptOutput(fresh,{input:freshInput,candidate:freshCandidate},registry,[draft],processed).record.published,true);
   const merge={...value,decision:{...value.decision,status:'merge',merge_into:original.story_id},wirkungsticker:{...value.wirkungsticker,merge_expected_content_hash:original.content_hash,merge_expected_analysis_hash:sha256(JSON.stringify(original.analysis))}};
   const merged=adaptOutput(merge,{input,candidate:c},registry,[original],processed);assert.equal(merged.record.story_id,original.story_id);
@@ -322,7 +325,7 @@ test('standalone bridge CLI reaches configuration validation instead of circular
 test('failed editorial output returns to same inbox/job with evidence and bounded correction count',async t=>{
   const {provider,store,transport}=setup(t,{correctionsEnabled:true});await provider.enqueue([candidate()],[],now);const id=store.all()[0].input.job_id;
   const invalid=output(store.get(id).input,'publish');invalid.story.short_summary='Fehler';
-  provider.adapt=()=>{throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:['CLAIM_NUMBER_NOT_IN_EVIDENCE']});};
+  provider.semanticReview=async (_bridge,_job,_output,_record,proposed)=>({status:'ready',assessment:proposed});provider.adapt=()=>{throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:['CLAIM_NUMBER_NOT_IN_EVIDENCE']});};
   for(let attempt=1;attempt<=2;attempt++){
     transport.files.set(bridgePath('20_OUTPUT_READY',id+'.output.json'),JSON.stringify({...invalid,processed_at:later,story:{...invalid.story,short_summary:'Fehler '+attempt}}));
     await provider.reconcile({},[],later);const job=store.get(id);assert.equal(job.status,'correction_pending');assert.equal(job.corrections.length,attempt);
@@ -407,4 +410,27 @@ test('bridge pending drafts and updates retain source metadata but never persist
     assert.deepEqual(item,before);
     if(published)assert.deepEqual(result.analysis,item.existing_story.analysis);
   }
+});
+
+for (const pass of [true,false]) test(`separate semantic review controls image generation and ACK (pass=${pass})`,async t=>{
+  const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];
+  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
+  record.sources.push(...review.assessment_sources);record.impact_assessment=review.impact_assessment;
+  let images=0;
+  const f=setup(t,{stageOnly:true,adapt:()=>({decision:'publish',record}),semanticReview:ensureSemanticReview,visualProvider:{receive:async()=>{images++;return {status:'fallback'};}}});
+  await f.provider.enqueue([candidate()],[],now,{testOnly:true});let parent=f.store.all()[0];parent.candidate=record;f.store.put(parent);
+  const first=output(parent.input,'publish');first.wirkungsticker={analysis:{impact_assessment:review.impact_assessment}};
+  first.story.headline=record.title;first.story.detailed_summary=record.source_summary;
+  f.transport.files.set(bridgePath('20_OUTPUT_READY',parent.input.job_id+'.output.json'),JSON.stringify(first));
+  assert.deepEqual(await f.provider.reconcile({},[record],later),[]);assert.equal(images,0);
+  await f.provider.finalize([],later);assert.equal(f.store.get(parent.input.job_id).ack,undefined);
+  const child=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');assert.ok(child);
+  const checks=Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im separaten Durchgang gegen den jeweiligen gebundenen Quellenstand geprüft.'}]));
+  if(!pass)checks.source_fidelity={status:'fail',rationale:'Eine tragende Behauptung widerspricht dem gebundenen Quellenauszug.'};
+  f.transport.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:review.impact_assessment,review:{status:'ready',checks,findings:[]}}));
+  const accepted=await f.provider.reconcile({},[record],later);
+  assert.equal(accepted.length,pass?1:0);assert.equal(images,pass?1:0);
+  await f.provider.finalize([],later);
+  assert.equal(f.store.get(parent.input.job_id).ack?.status,pass?'staged':undefined);
+  if(!pass){assert.equal(f.store.get(parent.input.job_id).publication_gate.status,'needs_review');assert.deepEqual(f.store.get(parent.input.job_id).attempts,{});}
 });

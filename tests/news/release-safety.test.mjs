@@ -90,7 +90,7 @@ test("Wirkungskarte und Symbolbild verwenden einen echten, einmaligen Titel und 
     const html = renderStoryVisual(story, { detail: true, sourceLabel: "Quelle" });
     assert.equal((html.match(/<h1 /g) || []).length, 1);
     assert.equal((html.match(/<figcaption /g) || []).length, 1);
-    assert.match(html, /Relevanz für/);
+    assert.match(html, /Tragweite für/);
     assert.match(html, /Darstellung, kein Beleg/);
     assert.ok(!html.includes(story.title_image.wide.url), "kein zweites bereits beschriftetes Rasterbild");
     if (mode === "editorial") {
@@ -127,7 +127,7 @@ for (const [name, title_image] of [
     assert.equal((card.match(/<h2\b/g) || []).length, 1);
     assert.match(card, /news-story-visual__headline/);
     assert.match(card, /Wirkungskarte · WÖk-Einordnung/);
-    assert.match(card, /wt-meter--open/);
+    assert.match(card, /wt-meter--unknown/);
     assert.doesNotMatch(card, /news-card__signals|KI-generiertes Symbolbild|news-story-visual__background|untrusted\.example|javascript:/);
     const detail = storyPage(story);
     assert.equal((detail.match(/<h1\b/g) || []).length, 1);

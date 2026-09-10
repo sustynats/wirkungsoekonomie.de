@@ -1,0 +1,552 @@
+{
+  "version": "2.0",
+  "reviews": [
+    {
+      "story_id": "wt-ca63a1cdb308ce8e",
+      "expected_analysis_hash": "8e2f948697fb6ca74532e36ce2953d1ce2616c8a23628f1ad606e6cbafd30d98",
+      "checked_at": "2026-09-10T10:36:02.298Z",
+      "note": "Nachrichtenanlass und zukünftigen Wirkungsgegenstand getrennt: Bewertet werden jetzt die bedingten Folgen möglicher Zusammenarbeit. Der belegte Gesprächsbeschluss wird nicht länger mit bereits eingetretener Wirkung verwechselt.",
+      "assessment_sources": [
+        {
+          "source_id": "impact-mi-lsa-extremismus",
+          "publisher": "Innenministerium Sachsen-Anhalt / Verfassungsschutz",
+          "title": "Rechtsextremismus: AfD-Landesverband Sachsen-Anhalt",
+          "url": "https://mi.sachsen-anhalt.de/verfassungsschutz/themenfelder/page/rechtsextremismus",
+          "retrieved_at": "2026-09-10T10:36:02.298Z",
+          "source_role": "official_status",
+          "summary": "Die Landesbehörde führt den Landesverband als gesichert rechtsextremistisch und erläutert Konflikte mit Menschenwürde und Demokratieprinzip. Die Einstufung ist kein Parteiverbot und kein Beleg bereits eingetretener Regierungsfolgen."
+        },
+        {
+          "source_id": "impact-bsw-programm",
+          "publisher": "BSW Sachsen-Anhalt",
+          "title": "Landtagswahlprogramm 2026, Energieversorgung S. 23-25",
+          "url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf",
+          "retrieved_at": "2026-09-10T10:36:02.298Z",
+          "source_role": "party_program",
+          "summary": "Das Programm befürwortet Erneuerbare, Repowering, Speicher und Netze; zugleich fossile Absicherung einschließlich vorübergehender Braunkohle, russische Gaslieferungen und Standortbeschränkungen für Wind/PV. Das EEG soll durch Investitionszuschüsse ersetzt werden. Es handelt sich um Forderungen, nicht um eine gemeinsame Regierungsvereinbarung."
+        },
+        {
+          "source_id": "impact-afd-programm",
+          "publisher": "AfD Sachsen-Anhalt",
+          "title": "Regierungsprogramm 2026, Kapitel Energie und Umwelt",
+          "url": "https://afd-regierungsprogramm.de/",
+          "retrieved_at": "2026-09-10T10:36:02.298Z",
+          "source_role": "party_program",
+          "summary": "Das Programm fordert fossile Energieoptionen, Änderungen der CO2-Bepreisung und zusätzliche Beschränkungen für Erneuerbare. PV auf versiegelten Flächen wird als mögliche lokale Versorgung genannt. Die verlinkten parteilichen Wirkungsbehauptungen sind keine wissenschaftlichen Folgenbelege."
+        },
+        {
+          "source_id": "impact-ipcc-energy",
+          "publisher": "IPCC",
+          "title": "AR6 WG III, Kapitel 6: Energy Systems",
+          "url": "https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-6/",
+          "retrieved_at": "2026-09-10T10:36:02.298Z",
+          "source_role": "scientific_mechanism",
+          "summary": "Zusätzliche langlebige fossile Infrastruktur kann Emissionen festschreiben. Emissionsarme Stromerzeugung benötigt zugleich Netze, Flexibilität und Speicher. Diese Mechanismen sind fachliche Grundlagen; sie quantifizieren nicht das noch unbekannte politische Maßnahmenpaket in Sachsen-Anhalt."
+        },
+        {
+          "source_id": "impact-mdr-schnittmengen",
+          "publisher": "MDR AKTUELL / tagesschau.de",
+          "title": "Mögliche gemeinsame Projekte und Unterschiede der Programme",
+          "url": "https://www.tagesschau.de/inland/regional/sachsenanhalt/zusammenarbeit-koalition-regierungsbildung-schnittmengen-,bsw-afd-akt-100.html",
+          "retrieved_at": "2026-09-10T10:36:02.298Z",
+          "source_role": "journalistic_analysis",
+          "summary": "Der Programmvergleich nennt gemeinsame Möglichkeiten bei Bildung, Energiepreisen und Wind/PV-Auflagen, aber auch erhebliche Unterschiede. Beispielhaft werden kostenlose Lernmittel und Kita-Verpflegung genannt. Das sind mögliche Projekte, keine beschlossenen Leistungen."
+        }
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Sachsen-Anhalt: BSW beschließt Gespräche mit der AfD",
+        "evaluation_target": {
+          "label": "Mögliche politische Unterstützung und Zusammenarbeit infolge der BSW-AfD-Gespräche in Sachsen-Anhalt",
+          "type": "development"
+        },
+        "baseline": "Regierungsbildung ohne die durch diese Gespräche mögliche zusätzliche Unterstützung.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "dimensions": {
+          "human": {
+            "direction": "negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "magnitude": 4,
+                "label": "Gleichberechtigter Zugang und Schutz vor Ausgrenzung könnten geschwächt werden.",
+                "mechanism": "Wenn Gespräche zur parlamentarischen Unterstützung führen, können daraus zusätzliche Möglichkeiten für Personal-, Förder- und Verwaltungsentscheidungen entstehen. Werden dabei die von der Landesbehörde beschriebenen ausgrenzenden Ziele umgesetzt, wären gleiche Zugänge und Schutzansprüche gefährdet.",
+                "recipients": [
+                  "Menschen, die aufgrund ihrer Herkunft oder Religion ausgegrenzt werden"
+                ],
+                "condition": "Nur falls aus den Gesprächen politische Unterstützung und entsprechende Entscheidungen entstehen; konkrete Vereinbarungen liegen noch nicht vor.",
+                "source_ids": [
+                  "zdfheute-nachrichten",
+                  "impact-mi-lsa-extremismus"
+                ],
+                "temporal_status": "ex_ante",
+                "evidence": "low",
+                "material": true,
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown"
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "positive",
+                "magnitude": 3,
+                "label": "Familien könnten bei Bildungs- und Betreuungskosten entlastet werden.",
+                "mechanism": "Zusätzlich finanzierte kostenfreie Lernmittel oder Kita-Verpflegung können eigene Ausgaben senken und Teilhabe erleichtern. Der Programmvergleich nennt solche möglichen gemeinsamen Projekte.",
+                "recipients": [
+                  "Familien und Kinder mit knappen Haushaltsmitteln"
+                ],
+                "condition": "Nur bei gemeinsamer Vereinbarung, gesicherter Finanzierung und tatsächlicher Umsetzung.",
+                "source_ids": [
+                  "impact-mdr-schnittmengen"
+                ],
+                "temporal_status": "ex_ante",
+                "evidence": "medium",
+                "material": true,
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "unknown"
+              },
+              {
+                "direction": "positive",
+                "magnitude": 2,
+                "label": "Geringere Endkundenpreise könnten Haushalte und Betriebe entlasten.",
+                "mechanism": "Wenn Preisentlastungen tatsächlich bei Haushalten und Betrieben ankommen, sinken laufende Ausgaben. Preisziele oder die Forderung nach russischem Gas sichern jedoch weder niedrigere Endpreise noch Versorgungssicherheit.",
+                "recipients": [
+                  "Private Haushalte und energieabhängige Arbeitsplätze"
+                ],
+                "condition": "Nur bei wirksamer Preissenkung nach Finanzierung, Abgaben und Marktentwicklung; keine gesicherte Prognose.",
+                "source_ids": [
+                  "impact-bsw-programm",
+                  "impact-mdr-schnittmengen"
+                ],
+                "temporal_status": "ex_ante",
+                "evidence": "low",
+                "material": true,
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "unknown"
+              }
+            ],
+            "rationale": "Dominantes negatives Grundrechtsrisiko bei zugleich konkreten positiven Teilpfaden für Familien und mögliche Kostenentlastung. Ein finanzieller Vorteil kompensiert keine Verletzung gleicher Würde oder grundlegender Schutzrechte. Reichweite und Umsetzung des möglichen Kooperationspakets bleiben ungewiss.",
+            "observed_outcome": null,
+            "balance": null,
+            "path_status": "material",
+            "likelihood": "unknown",
+            "dominance": "dominant_negative"
+          },
+          "planet": {
+            "direction": "mixed",
+            "magnitude": 4,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "magnitude": 4,
+                "label": "Längere fossile Bindung und höhere Emissionen gegenüber einem zügigen emissionsarmen Umbau.",
+                "mechanism": "Werden fossile Kapazitäten länger genutzt und emissionsarme Alternativen durch zusätzliche Hürden langsamer verfügbar, bleibt mehr Verbrennung fossiler Energieträger im System. Langlebige Anlagen und Lieferstrukturen können die spätere Umstellung erschweren.",
+                "recipients": [
+                  "Klima, natürliche Lebensgrundlagen und langfristig betroffene Bevölkerung"
+                ],
+                "condition": "Falls die anschlussfähigen fossilen Vorhaben und Ausbauhürden umgesetzt werden; Umfang, Ersatzwirkung und Bundesentscheidungen bleiben unbestimmt.",
+                "source_ids": [
+                  "impact-bsw-programm",
+                  "impact-afd-programm",
+                  "impact-ipcc-energy"
+                ],
+                "temporal_status": "ex_ante",
+                "evidence": "medium",
+                "material": true,
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown"
+              },
+              {
+                "direction": "positive",
+                "magnitude": 3,
+                "label": "Erneuerbare, Netze und Speicher könnten fossile Erzeugung verdrängen.",
+                "mechanism": "Zusätzliche nutzbare Wind- und Solarerzeugung kann zusammen mit Netzen und Speichern fossile Erzeugung ersetzen. Das BSW fordert diese Bausteine; welche davon gemeinsam getragen und zusätzlich realisiert würden, ist offen.",
+                "recipients": [
+                  "Klima und Ressourcen im betroffenen Energiesystem"
+                ],
+                "condition": "Wenn tatsächlich zusätzliche Erzeugung und Systemintegration entstehen; der Ausbauwunsch allein belegt weder Realisierung noch eine ausgeglichene Emissionsbilanz.",
+                "source_ids": [
+                  "impact-bsw-programm",
+                  "impact-ipcc-energy"
+                ],
+                "temporal_status": "ex_ante",
+                "evidence": "medium",
+                "material": true,
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "unknown"
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Überwiegend negatives Potenzial im betrachteten Kooperationspfad: Die gemeinsamen fossilen Ansätze und Restriktionen können über eine Legislatur hinaus binden. Der positive Ausbaupfad bleibt materiell, ist aber in Umfang und gemeinsamer politischer Unterstützung weniger konkret. Keine rechnerische Netto-Emissionsbilanz und keine Behauptung, das BSW wolle Erneuerbare pauschal abschaffen.",
+            "observed_outcome": null,
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Zwei materielle, entgegengesetzte Pfade. Der langlebige fossile Bindungspfad hat hier die größere mögliche Tragweite; ohne konkretes Gesamtpaket wird kein quantitativer Saldo behauptet."
+            },
+            "path_status": "material",
+            "dominance": "dominant_negative",
+            "likelihood": "unknown"
+          },
+          "democracy": {
+            "direction": "negative",
+            "magnitude": 4,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "magnitude": 4,
+                "label": "Demokratische Kontrolle und gleiche politische Teilhabe könnten unter Druck geraten.",
+                "mechanism": "Politische Unterstützung kann den Zugang zu Regierung und Verwaltung ermöglichen. Bei Umsetzung antipluralistischer Ziele könnte dieser Zugang die Unabhängigkeit von Kontrolle und gleiche Teilhabe schwächen. Das ist ein bedingter Wirkpfad, keine Feststellung über bereits geführte Gespräche.",
+                "recipients": [
+                  "Bevölkerung Sachsen-Anhalts und demokratische Kontrollinstitutionen"
+                ],
+                "condition": "Falls Verhandlungen tragfähige Unterstützung ermöglichen und diese für die beschriebenen Eingriffe genutzt wird; Parlament, Gerichte und Grundrechte begrenzen den Spielraum.",
+                "source_ids": [
+                  "zdfheute-nachrichten",
+                  "impact-mi-lsa-extremismus"
+                ],
+                "temporal_status": "ex_ante",
+                "evidence": "medium",
+                "material": true,
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown"
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Hohe mögliche Tragweite wegen des Zugangs zu staatlichen Entscheidungen und Kontrollfunktionen. Ein Gespräch ist noch keine Regierungsbeteiligung. Der allgemeine Wert von Dialog oder behauptete Stabilität bilden ohne konkreten Schutzgewinn keinen gleichwertigen positiven Gegenpfad.",
+            "observed_outcome": null,
+            "balance": null,
+            "path_status": "material",
+            "likelihood": "unknown",
+            "dominance": "dominant_negative"
+          }
+        },
+        "system_check": {
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Belegt ist der Beschluss zur Aufnahme von Gesprächen; ein gemeinsames Regierungsprogramm ist noch nicht beschlossen.",
+          "second_order": "Gespräche können gemeinsame Abstimmungen, Duldung und personelle oder haushalterische Entscheidungen vorbereiten.",
+          "third_order": "Ein erweiterter Zugang zu staatlichen Ressourcen kann institutionelle Kontrollen und Teilhabe verändern; langlebige Energieentscheidungen können fossile Pfade über eine Legislatur hinaus festigen.",
+          "enablement": [
+            "enables_majority",
+            "enables_office",
+            "enables_personnel_control",
+            "enables_budget_control",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "BSW befürwortet erneuerbare Energien, Netze und Speicher sowie soziale Entlastung. Diese konkreten Gegenpfade werden dargestellt.",
+            "Es besteht noch kein Kooperationsvertrag; Unterschiede bei Haushalt, Schulstruktur, Migration und Klima begrenzen die Anschlussfähigkeit."
+          ],
+          "source_independence": "MDR-Programmvergleich und ZDF/MDR-Nachrichten können gemeinsame Agenturanteile enthalten. Daher keine bloße Zählung als unabhängige Beweise; Parteiprogramme, Landesbehörde und IPCC dienen verschiedenen eigenständigen Belegfunktionen.",
+          "institutional_status": "Einstufung durch den zuständigen Landesverfassungsschutz ist kein Parteiverbot. Landesregierung und Landtag bleiben an Grundrechte, gerichtliche Kontrolle und ihre Kompetenzen gebunden; Bundesratsinitiativen ändern Bundes- oder EU-Recht nicht allein."
+        },
+        "counterfactual": "Regierungsbildung ohne die durch diese Gespräche mögliche zusätzliche Unterstützung.",
+        "reference_frame": [
+          "Menschenwürde, gleiche Rechte und körperliche Unversehrtheit",
+          "Natürliche Lebensgrundlagen und klimaverträgliche Entwicklung",
+          "Demokratische Selbstbestimmung, unabhängige Kontrolle und Rechtsstaatlichkeit"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-022ed1263eac1645",
+      "expected_analysis_hash": "10efa2238812ec54865694d8190e52502754935478ed2a0a9a16c2c4997f08f7",
+      "checked_at": "2026-09-10T10:36:02.298Z",
+      "note": "Die Einordnung bewertet jetzt das vorgeschlagene rechtsstaatliche Prüfverfahren als Wirkungspotenzial. Die politische Äußerung bleibt Nachrichtenanlass; mögliche Polarisierung erscheint als kleineres Nebenrisiko statt als gleichgewichtiger Zielkonflikt.",
+      "assessment_sources": [
+        {
+          "source_id": "impact-bverfg-parteiverbot",
+          "publisher": "Bundesverfassungsgericht",
+          "title": "Parteiverbotsverfahren: Zweck, Voraussetzungen und gerichtliche Zuständigkeit",
+          "url": "https://www.bundesverfassungsgericht.de/DE/DasBundesverfassungsgericht/Verfahrensarten/Parteiverbotsverfahren/parteiverbotsverfahren_node.html",
+          "retrieved_at": "2026-09-10T10:36:02.298Z",
+          "source_role": "legal_framework",
+          "summary": "Ein unabhängiges Gericht entscheidet über ein Parteiverbot unter engen verfassungsrechtlichen Voraussetzungen. Das Verfahren verbindet den Schutz freier Parteitätigkeit mit dem Schutz der demokratischen Ordnung."
+        }
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Dröge: \"Müssen Antrag zum AfD-Verbot einbringen\"",
+        "evaluation_target": {
+          "label": "Beleggestützter Antrag und unabhängige verfassungsgerichtliche Prüfung eines Parteiverbots",
+          "type": "proposal"
+        },
+        "baseline": "Fortbestehen der jeweiligen Organisationsmöglichkeiten ohne dieses beantragte Prüfverfahren.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "dimensions": {
+          "human": {
+            "direction": "positive",
+            "magnitude": 3,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "magnitude": 3,
+                "label": "Der institutionelle Schutz gleicher Würde und Teilhabe könnte gestärkt werden.",
+                "mechanism": "Soweit eine verfassungsgerichtliche Entscheidung organisierte Angriffe auf die demokratischen Schutzgrundlagen begrenzt, kann sie auch die davon betroffenen Menschen schützen. Daraus folgt noch keine garantierte Verringerung einzelner Gewalttaten.",
+                "recipients": [
+                  "Menschen, deren gleiche Würde und politische Teilhabe bedroht sind"
+                ],
+                "condition": "Nur bei nachgewiesenen Voraussetzungen und wirksamer Begrenzung der entsprechenden Organisationsmacht; indirekter Schutzpfad.",
+                "source_ids": [
+                  "zdfheute-nachrichten",
+                  "impact-bverfg-parteiverbot"
+                ],
+                "temporal_status": "ex_ante",
+                "evidence": "low",
+                "material": true,
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown"
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Deutliche mögliche Tragweite für die betroffenen Schutzgüter, bei indirekter und geringer abgesicherter Verbindung zu individuellen Lebenslagen.",
+            "observed_outcome": null,
+            "balance": null,
+            "path_status": "material",
+            "likelihood": "unknown",
+            "dominance": "dominant_positive"
+          },
+          "planet": {
+            "direction": "not_material",
+            "magnitude": 0,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Für das rechtsstaatliche Parteiverbotsverfahren selbst ist im abgegrenzten Vergleich kein wesentlicher Umwelt- oder Ressourcenpfad identifiziert.",
+            "observed_outcome": null,
+            "balance": null,
+            "path_status": "not_material",
+            "likelihood": "unknown",
+            "dominance": "none"
+          },
+          "democracy": {
+            "direction": "positive",
+            "magnitude": 4,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "magnitude": 4,
+                "label": "Verfassungsfeindliche Organisationsmacht könnte rechtsstaatlich begrenzt werden.",
+                "mechanism": "Ein beleggestützter Antrag eröffnet eine unabhängige verfassungsgerichtliche Prüfung. Sind die strengen Voraussetzungen erfüllt, kann eine Entscheidung die organisatorischen Möglichkeiten zur Beseitigung demokratischer Grundprinzipien begrenzen. Bei fehlenden Voraussetzungen bleibt die Partei geschützt.",
+                "recipients": [
+                  "Demokratische Institutionen und alle Menschen mit gleichen politischen Rechten"
+                ],
+                "condition": "Ein zulässiger und tragfähig belegter Antrag muss tatsächlich gestellt werden. Ob die Verbotsvoraussetzungen erfüllt sind, entscheidet ausschließlich das Bundesverfassungsgericht.",
+                "source_ids": [
+                  "zdfheute-nachrichten",
+                  "impact-bverfg-parteiverbot"
+                ],
+                "temporal_status": "ex_ante",
+                "evidence": "medium",
+                "material": true,
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown"
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "magnitude": 1,
+                "label": "Eine eskalierende Begleitdebatte könnte die Verständigung zusätzlich erschweren.",
+                "mechanism": "Eine politische Zuspitzung im Umfeld des Verfahrens kann die Bereitschaft zum Austausch verringern. Das ist ein schwächer belegtes Nebenrisiko der Begleitkommunikation und kein gleichwertiger Gegenpfad des rechtsstaatlichen Schutzverfahrens.",
+                "recipients": [
+                  "Menschen in der öffentlichen politischen Auseinandersetzung"
+                ],
+                "condition": "Falls die Begleitdebatte eskaliert; weder eine konkrete Eskalation noch ihr Ausmaß sind durch die Forderung belegt.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ],
+                "temporal_status": "ex_ante",
+                "evidence": "low",
+                "material": true,
+                "same_target": false,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "unknown"
+              }
+            ],
+            "rationale": "Hohe mögliche Tragweite für die Sicherung demokratischer Grundprinzipien. Weder die Forderung noch der Antrag sind schon eine Schutzwirkung. Die bloße Möglichkeit zusätzlicher Polarisierung neutralisiert diesen bedingten Hauptpfad nicht.",
+            "observed_outcome": null,
+            "balance": null,
+            "path_status": "material",
+            "likelihood": "unknown",
+            "dominance": "dominant_positive"
+          }
+        },
+        "counterfactual": "Fortbestehen der jeweiligen Organisationsmöglichkeiten ohne dieses beantragte Prüfverfahren.",
+        "reference_frame": [
+          "Menschenwürde, gleiche Rechte und körperliche Unversehrtheit",
+          "Natürliche Lebensgrundlagen und klimaverträgliche Entwicklung",
+          "Demokratische Selbstbestimmung, unabhängige Kontrolle und Rechtsstaatlichkeit"
+        ],
+        "system_check": {
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Der konkret berichtete Anlass bleibt von den geprüften Wirkungsfolgen getrennt.",
+          "second_order": "Nachgelagerte Folgen sind in den bedingten Haupt- und Nebenpfaden getrennt erfasst.",
+          "third_order": "Dauerhafte Schutz- und Kontrollfunktionen sind beim Prüfverfahren maßgeblich; beim Angriff können individuelle irreversible Schäden und Belastungen für Angehörige fortbestehen.",
+          "enablement": [],
+          "counter_evidence": [
+            "Ein Antrag ist noch kein Verbot und kein nachgewiesener Schutzgewinn."
+          ],
+          "source_independence": "Aktueller Nachrichtenanlass beruht auf dem gebundenen journalistischen Bericht. Die zusätzliche Rechtsquelle erklärt beim Verfahren die Zuständigkeit; sie bestätigt nicht den Ereigniseintritt.",
+          "institutional_status": "Verfassungsgerichtliche Zuständigkeit und Schutz freier Parteitätigkeit sind gewahrt."
+        }
+      }
+    },
+    {
+      "story_id": "wt-b9aa6e7e11987ec8",
+      "expected_analysis_hash": "68741b94307d8f5f5b397a974b8f8f0b50d04d814caf31c3fa877451de0c4ca4",
+      "checked_at": "2026-09-10T10:36:02.298Z",
+      "note": "Bereits gemeldete Todesfälle und Verletzungen werden als beobachtete negative Zustandsveränderung ausgewiesen. Vorläufige Opferzahlen und offene Ursachenzurechnung bleiben gesondert erkennbar.",
+      "assessment_sources": [],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Sumy: MDR-Liveblog meldet drei Tote und 14 Verletzte",
+        "evaluation_target": {
+          "label": "Gemeldete Todesfälle und Verletzungen nach dem Angriff in Sumy",
+          "type": "event"
+        },
+        "baseline": "Leben und körperliche Unversehrtheit der Betroffenen vor dem Angriff.",
+        "temporal_status": "ex_post",
+        "systemic_relevance": "high",
+        "dimensions": {
+          "human": {
+            "direction": "negative",
+            "magnitude": 5,
+            "evidence": "medium",
+            "data_status": "secondary_source",
+            "temporal_status": "ex_post",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "magnitude": 5,
+                "label": "Gemeldet sind bereits eingetretene Todesfälle und Verletzungen.",
+                "mechanism": "Der gemeldete Angriff verletzt die körperliche Unversehrtheit unmittelbar und hat nach dem gebundenen MDR-Meldestand Menschen das Leben gekostet.",
+                "recipients": [
+                  "Getötete und verletzte Menschen sowie ihre Angehörigen"
+                ],
+                "condition": "Quellengebundener vorläufiger Meldestand: drei Tote und 14 Verletzte, darunter drei Kinder. Eine spätere Präzisierung der Bilanz bleibt möglich.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "temporal_status": "ex_post",
+                "evidence": "medium",
+                "material": true,
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "already_occurring"
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Sehr hohe Intensität für unmittelbar Betroffene durch irreversible Todesfälle und Verletzungen. Der Balken beschreibt diesen Schaden und weder die Quellenanzahl noch einen Vergleich des Nachrichtenwerts.",
+            "observed_outcome": {
+              "change": "Der gebundene MDR-Meldestand berichtet drei Tote und 14 Verletzte, darunter drei Kinder.",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "attribution": "open"
+            },
+            "balance": null,
+            "path_status": "material",
+            "likelihood": "already_occurring",
+            "dominance": "dominant_negative"
+          },
+          "planet": {
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Der gebundene Meldestand erlaubt keine hinreichende Einordnung der Umweltfolgen.",
+            "observed_outcome": null,
+            "balance": null,
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none"
+          },
+          "democracy": {
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Die weitere Wirkung dieses Einzelereignisses auf demokratische Institutionen ist nicht ausreichend bestimmt.",
+            "observed_outcome": null,
+            "balance": null,
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none"
+          }
+        },
+        "counterfactual": "Leben und körperliche Unversehrtheit der Betroffenen vor dem Angriff.",
+        "reference_frame": [
+          "Menschenwürde, gleiche Rechte und körperliche Unversehrtheit",
+          "Natürliche Lebensgrundlagen und klimaverträgliche Entwicklung",
+          "Demokratische Selbstbestimmung, unabhängige Kontrolle und Rechtsstaatlichkeit"
+        ],
+        "system_check": {
+          "central_dimensions": [
+            "human"
+          ],
+          "first_order": "Der konkret berichtete Anlass bleibt von den geprüften Wirkungsfolgen getrennt.",
+          "second_order": "Nachgelagerte Folgen sind in den bedingten Haupt- und Nebenpfaden getrennt erfasst.",
+          "third_order": "Dauerhafte Schutz- und Kontrollfunktionen sind beim Prüfverfahren maßgeblich; beim Angriff können individuelle irreversible Schäden und Belastungen für Angehörige fortbestehen.",
+          "enablement": [],
+          "counter_evidence": [
+            "Vorläufiger Einzelquellenstand erlaubt keine unabhängige Bestätigung sämtlicher Opferangaben."
+          ],
+          "source_independence": "Aktueller Nachrichtenanlass beruht auf dem gebundenen journalistischen Bericht. Die zusätzliche Rechtsquelle erklärt beim Verfahren die Zuständigkeit; sie bestätigt nicht den Ereigniseintritt.",
+          "institutional_status": "Die Einordnung beschreibt gemeldete Verletzungen und Todesfälle; sie behauptet keine abgeschlossene völkerrechtliche Zurechnung."
+        }
+      }
+    }
+  ]
+}

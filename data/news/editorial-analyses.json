@@ -2212,7 +2212,89 @@
         "news_api_calls": 0,
         "news_api_cost_usd": 0,
         "empirical_effect_of_mfr_established": false
-      }
+      },
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "EU-Haushalt 2028-2034: Was neue Prioritäten für Klima, Wohlstand und Zusammenhalt bedeuten könnten",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": null,
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "5566a3a6c92dc0c53c44f93e8911c8cbeb9ad8eeb241386fd0e9fc34b4d23672"
     },
     {
       "analysis_id": "woek-analysis-39ddf0b6cc39",
@@ -2720,7 +2802,89 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "KRITIS-Dachgesetz: Einheitliche Mindeststandards für kritische Infrastrukturen und ihre Grenzen",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": null,
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "6f2111417d8047a75e6d58cc6b6bf06c8171444cca3ae9a27de9be9a2d4d834a"
     },
     {
       "analysis_id": "woek-analysis-2557713b0904",
@@ -3545,7 +3709,89 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Dormagen: Was der Sabotageverdacht an einem Umspannwerk systemisch bedeutet",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": null,
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "778df6d40d2904acffea8d4d156b0031f29fdfcaa83a4757da93a82731293b98"
     },
     {
       "analysis_id": "woek-analysis-cf42f2c67306",
@@ -4229,7 +4475,89 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Drei Tage Angriffspause auf Kyjiw: Was die Gespräche in Moskau für Sicherheit und Verhandlungen bedeuten",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": null,
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "7390de0647d444b0e5cc3c85dfce6914730019fe894e43ddd6da46740992d220"
     },
     {
       "analysis_id": "woek-analysis-1b3323ad407f",
@@ -5031,7 +5359,89 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Zwölf Sprengsätze an Stromtrassen in Sachsen: Was der Fund für Netzsicherheit und Staatsschutz bedeutet",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": null,
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "154f7ad78ac491b2db3c201da9740c97cd4e570b1510a06ff2e3e03991b248d6"
     },
     {
       "analysis_id": "woek-analysis-94b29d766984",
@@ -5578,7 +5988,89 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Rettung in Nepal: Was der Tunnel-Fall über Infrastruktur, Arbeitsschutz und Krisenkoordination zeigt",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": null,
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "f0094e58ae730d86eec4f8f0cc3f9b98fc764d658b00a88d231f6c83633ae73b"
     },
     {
       "analysis_id": "woek-analysis-166b13117cb1",
@@ -6576,7 +7068,89 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Fahndung nach Umspannwerk-Sabotage: Was der Fall für kritische Infrastruktur verändert",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": null,
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "59655f9f1f6da61d0c41368496cf50e993890a64475d3fb8515560d15b559feb"
     },
     {
       "analysis_id": "woek-analysis-061f61c466cf",
@@ -7057,7 +7631,89 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Veröffentlichte Daten aus dem Berliner Landesnetz: Was der Vorfall für Verwaltung und Schutzlogik verändert",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": null,
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "5b387f26f5e153a0ccde2944234f47fef468eb64c0c10ac6af4f9150b70aa615"
     },
     {
       "analysis_id": "woek-analysis-852ebdd0a0aa",
@@ -8104,7 +8760,86 @@
             ]
           }
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Fast 700.000 Hektar verbrannt: Was die EU-Waldbrandsaison für Schutz und Politik bedeutet",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 4,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Große Brandflächen können Schutzbedarf, Einsatzlast und Belastungen für betroffene Menschen deutlich erhöhen.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 4,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Verbrannte Wälder und Böden betreffen Ökosysteme direkt und können Regeneration erschweren.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 3,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Die Lage testet die Fähigkeit öffentlicher Institutionen, Risiken sichtbar zu machen und darauf zu reagieren.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "d7d1355a547c3215536fb4c921162c2103530dea343696afbee104cca3e966ad"
     },
     {
       "analysis_id": "woek-analysis-0bfd0f9a3434",
@@ -9187,7 +9922,87 @@
             ]
           }
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Kapazitätsmechanismus: Was die EU-Genehmigung am Stromsystem ändert",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 3,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Betroffen sind Versorgungssicherheit, mögliche Preis- und Kostenfolgen sowie die Verlässlichkeit des Stromsystems für Haushalte und Betriebe.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Der Mechanismus kann den Umbau des Stromsystems stützen oder fossile Übergangsstrukturen länger absichern; Emissionsfolgen sind noch offen.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Ein großer staatlich gerahmter Markt- und Kostenmechanismus verlangt Transparenz, damit Verteilung und Priorisierung nachvollziehbar bleiben.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "8fcc1b25486648a14a487d83e26f5051550bc82c24f8366f8171fd2c53d440a7"
     },
     {
       "analysis_id": "woek-analysis-17508db58ecc",
@@ -10351,7 +11166,87 @@
             ]
           }
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Wachsende Risiken für Unternehmen: Bericht nennt Cyberangriffe, Spionage und Sabotage",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 3,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Mögliche Folgen reichen bis zu Versorgungsausfällen, Schutzaufwand und Belastungen für Arbeits- und Alltagssicherheit.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Kein direkter Umweltbezug belegt; nur indirekte Effekte über Infrastrukturstörungen oder zusätzliche Sicherungsmaßnahmen denkbar.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Desinformation berührt Informationsintegrität; konkrete demokratische Wirkungen sind im Material aber nicht belegt.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "77c9eac065fce3384a4c940857d804c7cf1ae06e988333edab888230b8b6d8c4"
     },
     {
       "analysis_id": "woek-analysis-219f434ceb61",
@@ -10782,7 +11677,89 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Angriffe auf Umspannwerke: Warum der Schutz kritischer Infrastruktur ein Systemthema wird",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": null,
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "3f842deff559ebe7a56836b65de53012a2749cd346501369ad59b23b8aba4925"
     },
     {
       "analysis_id": "woek-analysis-36e98d72ae20",
@@ -11746,7 +12723,88 @@
             ]
           }
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Fahndung nach Sabotage am Stromnetz: Was der offene Fall an der Sicherheitsarchitektur verändert",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Versorgungssicherheit und öffentliche Sicherheit betreffen viele Menschen direkt; konkrete Ausfälle sind aber nicht belegt.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Die Quellen enthalten keinen belastbaren Umweltbezug; ein indirekter Effekt wäre nur über Folgemaßnahmen denkbar.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Der Fall berührt staatliche Schutzfähigkeit, Ermittlungsvertrauen und den Umgang mit politisch aufgeladenen Verdachtsmomenten.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "a8da8397499b676aeb85f4a99be1807fa636400f3e2ea4ed1a7ea39188c94721"
     },
     {
       "analysis_id": "woek-analysis-dab9cdd59202",
@@ -14809,7 +15867,87 @@
             "editorial_rules_version": "2.0"
           }
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Bekennerschreiben zu Strom-Sabotage: Warum die Echtheitsprüfung die Lage sofort verändert",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 3,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Betroffen sind Sicherheit, Ermittlungsressourcen und potenziell die Zuverlässigkeit der Stromversorgung für viele Menschen.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Die Quellen nennen keinen belastbaren Umwelt- oder Klimawirkpfad.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Die Meldung betrifft Informationsordnung, Vertrauen in Ermittlungsinformationen und öffentliche Risikowahrnehmung.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "8380dea88bdd80b8283e2b985775e65a683a07a528faf02840516695b62b3b63"
     },
     {
       "analysis_id": "woek-analysis-3f27f489cadb",
@@ -15315,7 +16453,89 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Großeinsatz am Hambacher Forst: Was die erfolglose Suche über Stromnetz-Resilienz und Sicherheitslasten zeigt",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": null,
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": null,
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "f2184e9e6beef321fe46eae4f97315fb99d6ec57f7db8e006ca16814800c699a"
     },
     {
       "story_id": "wt-e10c23f5e37ed39e",
@@ -21426,7 +22646,86 @@
           }
         }
       ],
-      "reading_time_minutes": 18
+      "reading_time_minutes": 18,
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Wenn aus Programm Staatsmacht wird: Was eine AfD-geführte Regierung in Sachsen-Anhalt verändern könnte",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 5,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Schutz, Bildung, Teilhabe, Arbeit und erreichbare Hilfe betreffen mehrere zentrale Lebenslagen zugleich.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 4,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Mögliche Energie- und Investitionspfade mit langfristigen Emissions-, Natur- und Abhängigkeitsrisiken; keine Wirkung des Wahlakts.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 5,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Gekoppelte Bedeutung von Grundrechten, Informationsqualität, unabhängiger Kontrolle und institutioneller Korrekturfähigkeit.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "a494309ed0a6563f490d5739ff9e859be6fa49c69b1e4f7cef347f97b2a8fd22"
     },
     {
       "story_id": "wt-e10c23f5e37ed39e",
@@ -23078,7 +24377,89 @@
           ]
         }
       ],
-      "reading_time_minutes": 12
+      "reading_time_minutes": 12,
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Entzauberung durch Macht? Warum Sachsen-Anhalt kein politisches Experiment ist",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Weniger erreichbare Beratung, kulturelle Teilhabe und offene Bildung würden Betroffene belasten. Besonders verletzlich sind Menschen ohne private Ausweichmöglichkeiten; Umfang und tatsächliche Umsetzung sind offen.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Ein begrenzter, konkreter Risikopfad: weniger verlässliche Finanzierung emissionsärmerer Energieoptionen ohne wirksamen Ersatz. Die Wahl selbst belegt keine Umweltverschlechterung.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Werden unabhängige Information, politische Bildung und gesellschaftliche Korrektur gleichzeitig eingeschränkt, sinken Möglichkeiten, staatliche Fehler zu erkennen und ihnen zu widersprechen.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "26e4e6997a2dc9738dd8b5eb9b45e5c253b36490844238c0cccd1fb9743b8182"
     },
     {
       "story_id": "wt-e10c23f5e37ed39e",
@@ -24337,7 +25718,89 @@
           ]
         }
       ],
-      "reading_time_minutes": 11
+      "reading_time_minutes": 11,
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Eine Volkspartei merkt nicht erst am Wahlabend, was im Land passiert",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Unerreichbare Mitsprache und unberücksichtigte Lebenslagen können Teilhabe beeinträchtigen, wenn andere Vertretungswege fehlen.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Nur indirekter Bezug zur Aushandlung langfristiger Transformation; keine hier nachgewiesene Veränderung von Emissionen oder Ökosystemen.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Ein anhaltender Verlust gesellschaftlicher Verbindung kann Kompromiss- und Korrekturfähigkeit schwächen. Legitimer Parteienwettbewerb und neue Repräsentation sind davon zu unterscheiden.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "326e508dc6807674514ab52dc05223ca067913be5c59ea8ee2b43951d2414662"
     },
     {
       "analysis_id": "woek-analysis-340bd54aa1fd",
@@ -24939,7 +26402,87 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Hambacher Forst: Wenn die Fahndung leer ausgeht, bleibt das Sicherheitsproblem trotzdem real",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 3,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Mögliche Risiken für Menschen entstehen über den Schutz kritischer Infrastruktur und die Handlungsfähigkeit von Polizei und Einsatzkräften; eine konkrete Versorgungsschädigung ist nicht belegt.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Aus den Quellen ergibt sich kein belastbarer direkter Umweltpfad; ein indirekter Zusammenhang über Energieinfrastruktur bleibt offen.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 3,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Relevant ist die staatliche Fähigkeit, kritische Infrastruktur zu schützen und Ermittlungen trotz Unsicherheit zu steuern.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "2630bec2779fc993d684082dbc2a634503d8786721da98f74541377bc18535e2"
     },
     {
       "analysis_id": "woek-analysis-7c4918d1134c",
@@ -25533,7 +27076,88 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Witkoff fordert Russland und Ukraine zu Kompromissen auf: Was das für Verhandlungen und Kriegslage bedeuten kann",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Betroffen wäre vor allem Sicherheit, Gewaltverlauf und zivile Belastung, falls Verhandlungen tatsächlich vorankommen.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Aus den Quellen ergibt sich kein direkter Umweltbezug; ein indirekter Bezug wäre nur über spätere Kriegsfolgen denkbar.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Der Fall berührt staatliche Entscheidungsmacht, diplomatische Prozesse und öffentliche Konfliktbearbeitung.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "5a68d586179466f37df6eedfbe37f9f8e997fd450d1c7ce9622b0620a18c6264"
     },
     {
       "analysis_id": "woek-analysis-e8a3a0294255",
@@ -26119,7 +27743,87 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Weitere Sprengvorrichtungen nahe Stromtrassen: Warum der Fund mehr ist als eine Polizeimeldung",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 3,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Betroffen sind Versorgungssicherheit, Schutzbedarf und das Sicherheitsgefühl von Menschen und Betrieben im Umfeld kritischer Infrastruktur.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Die Quellen nennen keinen Umwelt- oder Klimaschaden; ein direkter Planet-Bezug ist nicht belegt.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Kritische Infrastruktur verlangt funktionsfähige staatliche Schutz- und Ermittlungsstrukturen; deren Reaktionsfähigkeit ist hier betroffen.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "cc4cf746564ee0cdc15171402c6a8c7601e157535e916bc3bbb8f7acf6e27d20"
     },
     {
       "analysis_id": "woek-analysis-3988abd77b8d",
@@ -27014,7 +28718,87 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Kiew unter Beschuss: Was die Rückkehr der Angriffe für Sicherheit, Resilienz und Politik bedeutet",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 4,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Die Angriffe betreffen Menschen in bewohnten Stadtbezirken unmittelbar; Schutzräume werden aufgesucht, Wohngebäude beschädigt.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Die Quellen nennen keine Umwelt- oder Klimafolgen; ein Umweltpfad ist nicht belegt.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 3,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Als Hauptstadt unter Druck kann Kiews Schutz- und Verwaltungskapazität belastet werden; ein direkter Demokratieeffekt ist aber nicht belegt.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "4250e0fd93747b28b6f3459de912733d645e82de40c64590eb1d0190bca3eb60"
     },
     {
       "analysis_id": "woek-analysis-58daf5723737",
@@ -27878,7 +29662,87 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Kiew wieder unter Beschuss: Was die neue Angriffswelle systemisch auslöst",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 4,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Tote, Verletzte, beschädigte Wohngebäude und der notwendige Schutzraum-Aufruf betreffen Menschen unmittelbar.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Im Material ist keine direkte Umwelt- oder Klimawirkung belegt; mögliche indirekte Spuren bleiben offen.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 3,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Angriffe auf die Hauptstadt treffen Verwaltung, öffentliche Ordnung und die Fähigkeit des Staates, Schutz zu organisieren.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "01ad860bdf4bd5477f5c9b7a457385f3f89b359918e9907dbc83c617442fd0e8"
     },
     {
       "story_id": "wt-e10c23f5e37ed39e",
@@ -30748,7 +32612,89 @@
           }
         }
       ],
-      "reading_time_minutes": 9
+      "reading_time_minutes": 9,
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Was ein Schulabschluss noch wert ist, wenn Bildung abgebaut wird",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Fehlende Förderung kann Lernhindernisse und Benachteiligung verfestigen. Das betrifft Fähigkeiten, Gesundheit, Teilhabe und weitere Bildungswege; es bewertet keine Jugendlichen.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Für den hier geprüften Zusammenhang zwischen Lernbedingungen und Abschlüssen ist kein ausreichend konkreter Umweltwirkpfad belegt. Das ist keine neutrale Umweltbilanz der Partei.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Weniger geübte Quellenkritik, Mitwirkung und Perspektivwechsel können eigenständiges politisches Urteilen schwächen. Das Risiko ist bedingt, nicht als gemessene Wirkung ausgewiesen.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "7c43fe5d496a419578c0fd8f43a84009d4d936559428276951f75f94bb278a8b"
     },
     {
       "analysis_id": "woek-analysis-a06942993891",
@@ -31554,7 +33500,87 @@
             }
           ]
         }
-      ]
+      ],
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Festnahme nach Sabotage an Stromanlagen: Was die Tat für Infrastruktur und Staatsschutz bedeutet",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 3,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Möglicher Schutz vor weiteren Sabotagehandlungen, zusätzliche Belastung für Einsatzkräfte und Anwohner; Ausmaß und konkrete Schäden bleiben offen.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Ein genanntes Motiv gegen fossile Stromerzeugung ist kein Beleg für Umweltwirkung; ökologische Folgen der Tat sind nicht belegt.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Rechtsstaatliche Aufklärung und Schutz kritischer Infrastruktur können Vertrauen stützen; politische Zuschreibungen können den Diskurs verschieben.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "044eb33da75e9cc0405494ac0e8bd7b49f45efb11960807bd10be202427a3692"
     },
     {
       "story_id": "wt-e10c23f5e37ed39e",
@@ -33355,7 +35381,89 @@
           ]
         }
       ],
-      "reading_time_minutes": 13
+      "reading_time_minutes": 13,
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Sachsen-Anhalt: Wenn die Regierung zum Sicherheitsrisiko wird",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Erreichbare Hilfe, Schulteilhabe und verlässlicher Rechtsschutz stehen auf dem Spiel. Bei ersatzlosem Verlust dieser Leistungen ist die Richtung negativ.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Der konkrete Pfad führt über Wasserstoffförderung, fossile Bindung und Energieabhängigkeit. Die Emissionsfolgen sind nicht beziffert und hängen von realen Entscheidungen ab.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Informationsaustausch, unabhängige Kontrolle und freie Öffentlichkeit ermöglichen Fehlerkorrektur. Ihr gleichzeitiger Verlust würde diese Fähigkeit schwächen.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "2fc2392d1a331f19f990bae6a72c9f2c68ead612b8d77d928e719a9b7c27e9e2"
     },
     {
       "story_id": "wt-63cb95e544d260ce",
@@ -34609,7 +36717,89 @@
           ]
         }
       ],
-      "reading_time_minutes": 10
+      "reading_time_minutes": 10,
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Generaldebatte: Deutschland braucht mehr als einen gewonnenen Schlagabtausch",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Wenn Hilfe, Teilhabe oder nötige Infrastruktur ausfallen, wachsen Belastungen und private Ersatzkosten. Besonders betroffen sind Menschen ohne Ausweichmöglichkeiten.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Wenn verfügbare emissionsärmere Versorgung verzögert und stattdessen länger fossil erzeugt wird, steigen Emissionen gegenüber dieser Alternative. Kein aus der Rede berechneter Emissionswert.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Wenn Schutz, Mitsprache und institutionelle Fehlerkorrektur vernachlässigt werden, sinken Möglichkeiten, staatliche Entscheidungen zu prüfen und Belastungen zu korrigieren.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "1f349c1d50433d3caff749f1fe20a53539f08cf5110ec8ca11cb93f7448b4fd9"
     },
     {
       "story_id": "wt-32f0aa5f0a6a7761",
@@ -35623,7 +37813,89 @@
           ]
         }
       ],
-      "reading_time_minutes": 9
+      "reading_time_minutes": 9,
+      "impact_assessment": {
+        "version": "2.0",
+        "news_event": "Söder und die AfD: Eine Grenze wird nicht überflüssig, weil sie unter Druck steht",
+        "evaluation_target": {
+          "label": "",
+          "type": "other"
+        },
+        "baseline": "",
+        "temporal_status": "ongoing",
+        "systemic_relevance": null,
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Werden gemeinsame Bildungswege eingeschränkt, verlieren betroffene Kinder Begegnungs- und Teilhabemöglichkeiten. Voraussetzung sind Regierungszugang und entsprechende Umsetzung, nicht allein die Äußerung.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Werden emissionsärmere Projekte verdrängt und fossile Pfade verlängert, steigen die Klimarisiken gegenüber der Alternative. Der Bezug zur Abgrenzungsdebatte ist nachgelagert, der Bezug zum Energieprogramm konkret.",
+            "observed_outcome": null,
+            "balance": null
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "secondary_source",
+            "temporal_status": "ongoing",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "rationale": "Mögliche Wirkpfade und ihre Richtung sind in dieser Fassung noch nicht ausreichend getrennt eingeordnet. Das bedeutet weder neutrale Wirkung noch fehlendes Wirkungspotenzial.",
+            "legacy_rationale": "Ein erleichterter Zugang zu Regierungsmacht kann den angekündigten Rückbau öffentlicher Kontrollinformation ermöglichen. Zugleich können unklare Grenzen die politische Normalisierung begünstigen.",
+            "observed_outcome": null,
+            "balance": null
+          }
+        },
+        "review": {
+          "status": "needs_reassessment",
+          "missing": [
+            "human.magnitude",
+            "human.evidence",
+            "human.dimension_temporal_status",
+            "human.direction_and_materiality",
+            "planet.magnitude",
+            "planet.evidence",
+            "planet.dimension_temporal_status",
+            "planet.direction_and_materiality",
+            "democracy.magnitude",
+            "democracy.evidence",
+            "democracy.dimension_temporal_status",
+            "democracy.direction_and_materiality",
+            "evaluation_target"
+          ],
+          "legacy_version": "2.0",
+          "migrated_at": "2026-09-10T10:30:00.000Z"
+        }
+      },
+      "impact_assessment_basis": "44861e8a57c08a0597ac08aab5ca4a39081c9c0c012967a5d222504b268bb554"
     }
   ],
   "retry_state": {
