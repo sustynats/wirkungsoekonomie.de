@@ -5,15 +5,16 @@
       "firstSeen": "2026-09-10T08:50:27.331Z",
       "active": true
     },
-    "bridge-discovery": {
-      "firstSeen": "2026-09-10T11:20:35.644Z",
-      "active": true
-    },
     "bridge-review": {
       "firstSeen": "2026-09-10T13:35:43.429Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "9116de79da0365ab94c4a8ac",
+      "content": "✓ WÖk-Störung behoben\nBridge-Quellenlauf\nPrüfung: 2026-09-10T14:35:33.007Z"
+    }
+  ],
   "dailyDate": "2026-09-10"
 }
