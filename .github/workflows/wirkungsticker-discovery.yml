@@ -1,0 +1,54 @@
+name: Wirkungsticker Bridge Discovery
+run-name: ${{ inputs.request_id || 'Wirkungsticker Discovery' }}
+on:
+  schedule:
+    - cron: '5,20,35,50 * * * *'
+  push:
+    branches: [codex/wirkungsticker-clock]
+  workflow_dispatch:
+    inputs:
+      request_id:
+        description: Interne Zuordnung eines manuellen Serverlaufs
+        type: string
+        default: ''
+permissions:
+  contents: read
+concurrency:
+  group: wirkungsticker-discovery
+  cancel-in-progress: false
+jobs:
+  discover:
+    if: vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && vars.WOEK_NEWS_BRIDGE_DISCOVERY_ENABLED != 'false'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      WIRKUNGSTICKER_PROCESSING_MODE: dropbox_chatgpt_bridge
+      VISUAL_GENERATION_PROVIDER: chatgpt_bridge
+      WOEK_NEWS_BRIDGE_PHASE: discovery
+      WOEK_NEWS_BRIDGE_URL: https://130.162.217.58.sslip.io/api/news-bridge
+      WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+      WOEK_NEWS_BRIDGE_MAX_JOBS: ${{ vars.WOEK_NEWS_BRIDGE_MAX_JOBS || '6' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Acquire discovery lane
+        id: slot
+        run: node scripts/news/schedule.mjs
+      - name: Research, cluster and enqueue
+        if: steps.slot.outputs.should_run == 'true'
+        run: node scripts/news/run.mjs > /tmp/discovery-report.json
+      - name: Verify discovery and zero AI calls
+        if: steps.slot.outputs.should_run == 'true'
+        run: |
+          node -e 'const r=require("/tmp/discovery-report.json"); if(r.ai_calls!==0 || r.all_sources_failed) process.exit(1); console.log(JSON.stringify({sources:r.source_successes,jobs:r.bridge_enqueued,trigger_type:r.trigger_type}));'
+          git diff --exit-code -- data/news wirkungsticker
+      - name: Release discovery lane
+        if: always() && steps.slot.outputs.bridge_acquired == 'true'
+        env:
+          BRIDGE_RUN_SUCCESS: ${{ job.status == 'success' }}
+        run: node scripts/news/bridge/remote.mjs --release

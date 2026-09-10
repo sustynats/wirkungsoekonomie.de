@@ -1,16 +1,27 @@
 name: Wirkungsticker
+run-name: ${{ inputs.request_id || 'Wirkungsticker' }}
 
 on:
   push:
     # Oracle-Ausfallreserve: eigener repo-begrenzter Deploy-Key, kein PAT.
     branches:
       - codex/wirkungsticker-clock
+      - codex/wirkungsticker-import-clock
   schedule:
-    # Kontinuierliche Erkennung, keine vier Veröffentlichungssperrzeiten.
-    # Quellenintervalle, Euro-Budget und rollende KI-Kapazität liegen im Worker.
+    # API-Rückwechsel behält den bisherigen Takt; Bridge pollt nur Dropbox.
     - cron: "7,22,37,52 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
+      bridge_phase:
+        description: "Manueller Bridge-Lauf (bestehende Stundensperren bleiben aktiv)"
+        type: choice
+        options: [import]
+        default: import
+      request_id:
+        description: "Interne Zuordnung eines manuellen Serverlaufs"
+        type: string
+        default: ""
       title_images_backfill:
         description: "Vorhandene Akten ohne Titelbild nachziehen (verbraucht ggf. Higgsfield-Credits)"
         type: boolean
@@ -54,8 +65,19 @@ concurrency:
 
 jobs:
   update:
+    if: >-
+      (vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '*/5 * * * *' || github.ref == 'refs/heads/codex/wirkungsticker-import-clock')) ||
+      (vars.WIRKUNGSTICKER_PROCESSING_MODE != 'dropbox_chatgpt_bridge' && github.event.schedule != '*/5 * * * *' && github.ref != 'refs/heads/codex/wirkungsticker-import-clock')
     runs-on: ubuntu-latest
     timeout-minutes: 55
+    env:
+      WIRKUNGSTICKER_PROCESSING_MODE: ${{ vars.WIRKUNGSTICKER_PROCESSING_MODE || 'api' }}
+      VISUAL_GENERATION_PROVIDER: ${{ vars.VISUAL_GENERATION_PROVIDER || 'higgsfield' }}
+      WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
+      WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+      WOEK_NEWS_BRIDGE_PUBLISH: ${{ vars.WOEK_NEWS_BRIDGE_PUBLISH || 'false' }}
+      GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
+      WOEK_NEWS_BRIDGE_PHASE: import
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -79,8 +101,16 @@ jobs:
       - name: Record expected run start
         if: steps.slot.outputs.should_run == 'true'
         run: echo "WOEK_NEWS_EXPECTED_AFTER=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
+      - name: Install local image validation tools
+        if: steps.slot.outputs.should_run == 'true' && env.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends imagemagick tesseract-ocr
       - name: Unit and security tests
         if: steps.slot.outputs.should_run == 'true'
+        env:
+          WIRKUNGSTICKER_PROCESSING_MODE: api
+          VISUAL_GENERATION_PROVIDER: higgsfield
         run: |
           npm run news:test
           node --test tests/ops/discord-monitor.test.mjs
@@ -118,7 +148,7 @@ jobs:
         run: npm run news:run
       - name: Backfill explicitly requested title images
         # Backfill is opt-in, never a second scheduler or a per-build credit spend.
-        if: steps.slot.outputs.should_run == 'true' && (inputs.title_images_backfill == true || inputs.title_images_refresh_editorial == true)
+        if: env.WIRKUNGSTICKER_PROCESSING_MODE == 'api' && steps.slot.outputs.should_run == 'true' && (inputs.title_images_backfill == true || inputs.title_images_refresh_editorial == true)
         env:
           WOEK_NEWS_VISUAL_API_URL: "https://130.162.217.58.sslip.io/api/news-title-image"
           WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
@@ -133,7 +163,7 @@ jobs:
           npm run news:title-images:backfill -- "${args[@]}"
       - name: Backfill selectively triggered media-impact checks
         id: media_impact
-        if: steps.slot.outputs.should_run == 'true' && (inputs.media_impact_backfill == true || vars.WOEK_NEWS_BATCH_ENABLED == 'true')
+        if: env.WIRKUNGSTICKER_PROCESSING_MODE == 'api' && steps.slot.outputs.should_run == 'true' && (inputs.media_impact_backfill == true || vars.WOEK_NEWS_BATCH_ENABLED == 'true')
         env:
           # Uses the same dated authorization as the news worker.
           WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
@@ -156,7 +186,7 @@ jobs:
           exit 0
       - name: Research and publish relevant WÖK analyses
         id: editorial
-        if: steps.slot.outputs.should_run == 'true'
+        if: env.WIRKUNGSTICKER_PROCESSING_MODE == 'api' && steps.slot.outputs.should_run == 'true'
         env:
           # Uses the same dated authorization as the news worker.
           WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
@@ -227,6 +257,9 @@ jobs:
           set -euo pipefail
           [[ "$TICKER_COMMIT" =~ ^[0-9a-f]{40}$ ]] || { echo "Missing exact published commit; refusing an unbound release." >&2; exit 1; }
           gh workflow run deploy.yml --ref main -f ticker_only=true -f "ticker_commit=$TICKER_COMMIT"
+      - name: Acknowledge durable bridge imports
+        if: steps.slot.outputs.should_run == 'true' && env.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge'
+        run: node scripts/news/bridge/finalize.mjs
       - name: Verify ticker run health
         if: always() && steps.slot.outputs.should_run == 'true'
         run: npm run news:health -- --started-after="$WOEK_NEWS_EXPECTED_AFTER"
@@ -246,3 +279,8 @@ jobs:
             data/news/editorial-analyses.json
             reports/wirkungsticker-latest-run.json
             reports/wirkungsticker-editorial-analyses.json
+      - name: Release private bridge run lock
+        if: always() && steps.slot.outputs.bridge_acquired == 'true'
+        env:
+          BRIDGE_RUN_SUCCESS: ${{ job.status == 'success' }}
+        run: node scripts/news/bridge/remote.mjs --release

@@ -1033,6 +1033,8 @@ function aiRetryDelayMs(response, attempt) {
 }
 
 export async function callWoekAi(stories, options = {}) {
+  const { assertApiProcessing } = await import('./processing-mode.mjs');
+  assertApiProcessing();
   stories.forEach(story => { assertAutomatable(story); assertAutomatable(story.existing_story); });
   const apiUrl = options.apiUrl || "https://130.162.217.58.sslip.io/api/woek-ai";
   const prompt = options.prompt || buildAnalysisPrompt(stories);

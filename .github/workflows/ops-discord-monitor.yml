@@ -30,6 +30,7 @@ jobs:
           sparse-checkout: |
             .github/workflows/ops-discord-monitor.yml
             scripts/ops/discord-monitor.mjs
+            scripts/news/bridge/remote.mjs
             scripts/news/case-files.mjs
             scripts/news/publication-update.mjs
             scripts/news/reader-copy.mjs
@@ -58,6 +59,10 @@ jobs:
           WOEK_MONITOR_DISCORD_BOT_TOKEN: ${{ secrets.WOEK_MONITOR_DISCORD_BOT_TOKEN }}
           WOEK_MONITOR_DISCORD_USER_ID: ${{ secrets.WOEK_MONITOR_DISCORD_USER_ID }}
           REPORT_NOW: ${{ inputs.report_now }}
+          WIRKUNGSTICKER_PROCESSING_MODE: ${{ vars.WIRKUNGSTICKER_PROCESSING_MODE || 'api' }}
+          WOEK_NEWS_BRIDGE_DISCOVERY_ENABLED: ${{ vars.WOEK_NEWS_BRIDGE_DISCOVERY_ENABLED || 'true' }}
+          WOEK_NEWS_BRIDGE_URL: https://130.162.217.58.sslip.io/api/news-bridge
+          WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
         run: |
           args=()
           if [ "$REPORT_NOW" = "true" ]; then args+=(--report-now); fi

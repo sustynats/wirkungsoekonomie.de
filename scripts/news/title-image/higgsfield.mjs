@@ -7,6 +7,7 @@ import { promisify } from "node:util";
 import { IMAGE_CONFIG as C, buildEditorialImagePrompt, validateStoryId, digest, imageError, safeImageFailure } from "./policy.mjs";
 import { downloadImage, inspectImage } from "./image-file.mjs";
 import { checkEditorialAsset, VISUAL_GATE_VERSION } from "./quality.mjs";
+import { assertHiggsfieldProcessing } from "../processing-mode.mjs";
 
 const exec = promisify(execFile);
 export function parseCliJson(text) {
@@ -20,6 +21,7 @@ export function cliFailure(error) {
   return imageError("HIGGSFIELD_REQUEST_FAILED");
 }
 export async function runHiggsfield(args, { binary = process.env.WOEK_HIGGSFIELD_BIN || "higgsfield", timeout = 15000 } = {}) {
+  assertHiggsfieldProcessing();
   try { return (await exec(binary, args, { timeout, maxBuffer: 2 * 1024 * 1024, env: { ...process.env, NO_COLOR: "1" } })).stdout; }
   catch (error) { throw cliFailure(error); }
 }
@@ -82,6 +84,7 @@ export function createHiggsfieldAdapter({
   return {
     health: () => checkHiggsfieldAvailability({ run }),
     async generate(story) {
+      assertHiggsfieldProcessing();
       const id = validateStoryId(story.story_id);
       const prompt = buildEditorialImagePrompt(story);
       if (!prompt) throw imageError("NO_SAFE_SYMBOLIC_MOTIF");
