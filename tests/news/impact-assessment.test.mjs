@@ -32,6 +32,20 @@ test('explicit non-material finding is distinct from missing evidence',()=>{
   const a=profile(),d=a.dimensions.planet;Object.assign(d,{path_status:'not_material',direction:'not_material',dominance:'none',magnitude:0,primary_paths:[],rationale:'Im betrachteten Umfang ist kein materieller ökologischer Wirkpfad identifiziert.'});
   assert.deepEqual(impactAssessmentErrors(a,sources),[]);assert.equal(deriveImpactPresentation(a).dimensions.planet.label,'kein wesentlicher Wirkpfad');
 });
+test('retrospective harm does not invent observed outcomes in unresolved or non-material dimensions',()=>{
+  const a=profile(),d=a.dimensions.human;a.temporal_status='ex_post';
+  Object.assign(d,{temporal_status:'ex_post',direction:'negative',dominance:'dominant_negative',likelihood:'already_occurring',data_status:'secondary_source',
+    primary_paths:[{...path('negative'),temporal_status:'ex_post',likelihood:'already_occurring'}],
+    observed_outcome:{change:'Der Quellenstand belegt bereits eingetretene Verletzungen.',source_ids:['official'],attribution:'open'}});
+  Object.assign(a.dimensions.planet,{temporal_status:'ex_post',path_status:'insufficient_basis',direction:'open',dominance:'none',likelihood:'unknown',magnitude:null,evidence:'not_assessable',data_status:'missing',primary_paths:[]});
+  Object.assign(a.dimensions.democracy,{temporal_status:'ex_post',path_status:'not_material',direction:'not_material',dominance:'none',likelihood:'unknown',magnitude:0,primary_paths:[]});
+  assert.deepEqual(impactAssessmentErrors(a,sources),[]);
+  const p=deriveImpactPresentation(a);assert.equal(p.dimensions.human.label,'− beobachtet');assert.equal(p.dimensions.planet.label,'? offen');assert.equal(p.dimensions.democracy.label,'kein wesentlicher Wirkpfad');
+  a.dimensions.planet.secondary_paths=[{...path('negative',2),temporal_status:'ex_post',likelihood:'already_occurring'}];
+  assert.ok(impactAssessmentErrors(a,sources).includes('IMPACT_OBSERVED_OUTCOME_REQUIRED:planet'));
+  delete d.observed_outcome;
+  assert.ok(impactAssessmentErrors(a,sources).includes('IMPACT_OBSERVED_OUTCOME_REQUIRED:human'));
+});
 test('positive main path plus minor adverse secondary path remains positive',()=>{
   const a=profile();a.dimensions.democracy.secondary_paths=[{...path('negative',1),evidence:'low'}];
   assert.deepEqual(impactAssessmentErrors(a,sources),[]);assert.equal(deriveImpactPresentation(a).dimensions.democracy.direction,'positive');
