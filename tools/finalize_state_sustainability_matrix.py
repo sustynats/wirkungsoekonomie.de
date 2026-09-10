@@ -236,6 +236,7 @@ def main() -> int:
     matrix_path.write_text(json.dumps(matrix, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     md = ROOT / args.markdown
+    md.write_text(md.read_text(encoding="utf-8").split("\n## Review/action closure")[0].rstrip() + "\n", encoding="utf-8")
     with md.open("a", encoding="utf-8") as fh:
         fh.write("\n## Review/action closure\n\n")
         fh.write(f"- Combined reviewed items: **{len(all_items)}**\n")
