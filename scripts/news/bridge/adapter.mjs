@@ -1,3 +1,4 @@
+import { impactAssessmentErrors, migrateImpactAssessment } from '../impact-assessment.mjs';
 import { buildAnalysisPrompt, sanitizeFeedText, sha256, suppliedEvidenceIds } from '../lib.mjs';
 import { assertAutomatable } from '../manual-policy.mjs';
 import { visualContext } from './visual.mjs';
@@ -81,6 +82,8 @@ export function adaptOutput(output, job, registry, stories, now) {
   // Only IDs actually supplied in this immutable prompt can resolve.
   resolveEvidenceReferences(analysis, job.candidate, suppliedEvidenceIds(job.input.wirkungsticker.analysis_prompt)[job.candidate.story_id] || []);
   normalizeEvidenceExcerpts(analysis, job.candidate);
+  const impactErrors = impactAssessmentErrors(analysis.impact_assessment, job.candidate.sources, { required: job.input.wirkungsticker.analysis_prompt.includes('impact_assessment 2.0') });
+  if (impactErrors.length) throw Object.assign(new Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: impactErrors });
   const review = {
     review_type: target.published ? 'story_correction' : 'story_draft_review', story_id: id,
     expected_content_hash: target.content_hash, ...(target.published ? { expected_analysis_hash: analysisHash } : {}),
@@ -92,6 +95,7 @@ export function adaptOutput(output, job, registry, stories, now) {
   if (target.published && !review.correction_note) throw new Error('BRIDGE_CORRECTION_NOTE_REQUIRED');
   const result = prepareReviewedStory(review, registry, stories, now);
   if (result.errors.length) throw Object.assign(new Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: result.errors });
+  if (!result.record.analysis.impact_assessment) result.record.analysis.impact_assessment = migrateImpactAssessment(result.record.analysis, { title: result.record.title });
   result.record.bridge_import = { job_id: job.input.job_id, output_hash: hash(output), imported_at: now };
   return { decision, record: result.record, unchanged: result.unchanged, mergeFrom: decision === 'merge' ? job.candidate.story_id : null };
 }

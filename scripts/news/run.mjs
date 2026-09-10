@@ -1510,7 +1510,7 @@ export async function runWirkungsticker(options = {}) {
             report.direction_transport.push({ story_id: candidate.story_id, ...directionTransport });
           }
           if (analysis) normalizeEvidenceExcerpts(analysis, analysisCandidate);
-          const errors = analysis ? validateAnalysis(analysis, analysisCandidate, { requireDirectionAssessment: true }) : ["AI_ANALYSIS_MISSING"];
+          const errors = analysis ? validateAnalysis(analysis, analysisCandidate, { requireDirectionAssessment: true, requireImpactAssessment: true }) : ["AI_ANALYSIS_MISSING"];
           // Check the durable representation before accepting a publication.
           // A single transition defect must not invalidate the whole run later.
           let nextPublished;

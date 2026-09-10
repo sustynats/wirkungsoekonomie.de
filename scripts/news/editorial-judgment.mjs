@@ -1,4 +1,4 @@
-import { DIMENSIONS, renderIcon } from "./visuals.mjs";
+import { DIMENSIONS, renderIcon, renderDimensionMeters } from "./visuals.mjs";
 
 // Versioned additions: old publications are not assigned a new judgment or voice.
 export const EDITORIAL_RULES_VERSION = "2.0";
@@ -87,14 +87,8 @@ export function renderAssessmentAxes(item) {
 }
 
 export function renderEditorialBalance(analysis, { compact = false } = {}) {
-  if (!analysis.editorial_rules_version || !analysis.subject_dimensions) return "";
-  const context = { risk: "Risikopotenzial", potential: "Wirkungspotenzial", observed: "Beobachtete Wirkung", open: "Richtung noch offen" }[analysis.assessment_context] || "Offen";
-  return `<div class="news-mpd-balance${compact ? " news-mpd-balance--compact" : ""}" role="group" aria-label="Relevanz und Wirkungsrichtung getrennt"><p class="news-method-note">${escape(context)} · ${escape(analysis.assessment_condition)}</p><div class="news-mpd-balance__grid">${Object.entries(DIMENSIONS).map(([key, meta]) => {
-    const item = analysis.subject_dimensions[key];
-    const negative = item.direction === "negative";
-    const direction = negative && item.magnitude === "very_high" ? "Stark negativ" : AXES.direction[item.direction] || "Offen";
-    return `<div class="news-mpd-balance__item" role="group" aria-label="Relevanz für ${meta.label}: ${escape(item.relevance)}; ${escape(context)}: ${escape(direction)}"><h3>${renderIcon(meta.icon)} ${meta.label}</h3><p class="news-mpd-balance__relevance">Relevanz: <strong>${escape(item.relevance)}</strong></p><p class="news-mpd-balance__direction" data-direction="${escape(item.direction)}">${renderIcon(negative ? "tendenz-risiko" : item.direction === "positive" ? "tendenz-chance" : "tendenz-gemischt")}<span>${escape(direction)}<small>${escape(context)}</small></span></p><p>${escape(item.rationale)}</p>${compact ? "" : renderAssessmentAxes(item)}</div>`;
-  }).join("")}</div></div>`;
+  if (!analysis.subject_dimensions && !analysis.impact_assessment) return "";
+  return renderDimensionMeters(analysis, { compact, context: { title: analysis.title } });
 }
 
 export function renderEditorialFinding(analysis) {

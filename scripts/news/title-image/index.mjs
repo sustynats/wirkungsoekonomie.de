@@ -1,3 +1,4 @@
+import { deriveImpactPresentation, MAGNITUDE } from '../impact-assessment.mjs';
 // WÖk-Titelbildsystem für den Wirkungsticker.
 //
 // Ein Rendering-Kern, zwei Darstellungsmodi:
@@ -150,8 +151,8 @@ function formatDate(value) {
 }
 
 function levelOf(value) {
-  if (value === null || value === undefined || value === "") return null;
-  return RELEVANCE_LEVELS[String(value).trim()] ?? null;
+  const level = value && typeof value === 'object' ? value.magnitude : value;
+  return Number.isInteger(level) && level >= 0 && level <= 5 ? level : null;
 }
 
 function textLine(text, x, y, fontKey, size, fill, { anchor = "start", letterSpacing = 0, opacity = 1 } = {}) {
@@ -237,7 +238,7 @@ function headlineBlock(u, { headline, category, x, bottom, maxWidth, sizes, maxL
 
 function meter(x, y, width, height, level, color, u) {
   const gap = 5 * u;
-  const segment = (width - gap * 3) / 4;
+  const segment = (width - gap * 4) / 5;
   const parts = [];
   for (let index = 0; index < 4; index += 1) {
     const sx = x + index * (segment + gap);
@@ -265,7 +266,7 @@ function impactPanel(u, { x, y, width, height, dimensions, riskDirections, statu
   const pad = 26 * u;
   const parts = [];
   parts.push(`<rect data-impact-panel="true" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${width.toFixed(1)}" height="${height.toFixed(1)}" rx="${(18 * u).toFixed(1)}" fill="${overlay ? PALETTE.navyDeep : PALETTE.white}" fill-opacity="${overlay ? "0.62" : "0.07"}" stroke="${PALETTE.white}" stroke-opacity="0.16"/>`);
-  parts.push(textLine(riskDirections ? "RELEVANZ & RISIKO" : "WIRKUNG AUF", x + pad, y + pad + 11 * u, "sans-700", 12.5 * u, PALETTE.gold, { letterSpacing: 2 * u }));
+  parts.push(textLine("TRAGWEITE & RICHTUNG", x + pad, y + pad + 11 * u, "sans-700", 12.5 * u, PALETTE.gold, { letterSpacing: 2 * u }));
   const rowsTop = y + pad + 34 * u;
   const keys = Object.keys(DIMENSIONS);
   const innerWidth = width - pad * 2;
@@ -276,19 +277,17 @@ function impactPanel(u, { x, y, width, height, dimensions, riskDirections, statu
     const meta = DIMENSIONS[key];
     const color = DIMENSION_COLORS[key];
     const level = levelOf(dimensions?.[key]);
-    const levelText = level === null ? "offen" : String(dimensions[key]);
+    const levelText = level === null ? "offen" : MAGNITUDE[level];
     const rx = x + pad + (horizontal ? index * (columnWidth + columnGap) : 0);
     const ry = rowsTop + (horizontal ? 0 : index * rowHeight);
     parts.push(icon(meta.icon, rx, ry, 22 * u, color));
     parts.push(textLine(meta.label, rx + 32 * u, ry + 17 * u, "sans-600", 20 * u, PALETTE.white));
     parts.push(textLine(levelText, rx + columnWidth, ry + 17 * u, "sans-500", 15 * u, PALETTE.textMuted, { anchor: "end" }));
     parts.push(meter(rx, ry + 36 * u, columnWidth, 13 * u, level, color, u));
-    if (riskDirections?.[key]) {
-      const risk = riskDirections[key];
-      parts.push(textLine(risk === "negative" ? "Negatives Risikopotenzial" : "Risikorichtung offen", rx, ry + 70 * u, "sans-600", 14 * u, risk === "negative" ? "#FFD0B8" : PALETTE.textMuted));
-    }
+    const direction = dimensions?.[key]?.label || '? offen';
+    parts.push(textLine(direction, rx, ry + 70 * u, "sans-600", 14 * u, PALETTE.textSoft));
   });
-  const chipsY = horizontal ? rowsTop + (riskDirections ? 100 : 74) * u : rowsTop + keys.length * rowHeight - 12 * u;
+  const chipsY = horizontal ? rowsTop + 100 * u : rowsTop + keys.length * rowHeight - 12 * u;
   let chipX = x + pad;
   const onTrack = STATUS_TRACK.includes(status);
   if (status) {
@@ -354,7 +353,7 @@ function renderLandscape(input, W, H, u, P, mode) {
     const panelWidth = W - panelX - P;
     const panelTop = P + 58 * u;
     const panelBottom = footerBaseline - 40 * u;
-    const hasDimensions = input.dimensions && Object.values(input.dimensions).some((value) => levelOf(value) !== null);
+    const hasDimensions = Boolean(input.dimensions);
     if (hasDimensions || input.status) {
       parts.push(impactPanel(u, { x: panelX, y: panelTop, width: panelWidth, height: panelBottom - panelTop, dimensions: input.dimensions || {}, riskDirections: input.riskDirections, status: input.status, analysisType: input.analysisType, overlay: mode === "editorial" }));
     } else if (mode === "impact_card") {
@@ -394,10 +393,10 @@ function renderSquare(input, W, H, u, P, mode) {
   {
     const gapTop = P + 62 * u;
     const gapBottom = block.top - 34 * u;
-    const hasDimensions = input.dimensions && Object.values(input.dimensions).some((value) => levelOf(value) !== null);
+    const hasDimensions = Boolean(input.dimensions);
     if (hasDimensions || input.status) {
       // Kompaktes Panel, mittig im freien Raum zwischen Branding und Textblock.
-      const panelHeight = Math.min(gapBottom - gapTop, (input.riskDirections ? 222 : 196) * u);
+      const panelHeight = Math.min(gapBottom - gapTop, 222 * u);
       const panelTop = gapTop + Math.max(0, (gapBottom - gapTop - panelHeight) / 2);
       parts.push(impactPanel(u, { x: P, y: panelTop, width: W - P * 2, height: panelHeight, dimensions: input.dimensions || {}, riskDirections: input.riskDirections, status: input.status, analysisType: input.analysisType, horizontal: true, overlay: mode === "editorial" }));
     } else if (mode === "impact_card") {
@@ -425,13 +424,12 @@ export function normalizeInput(input = {}) {
     warnings.push("EDITORIAL_IMAGE_MISSING");
     mode = "impact_card";
   }
-  const dimensions = input.dimensions && typeof input.dimensions === "object"
-    ? Object.fromEntries(Object.keys(DIMENSIONS).map((key) => {
-      const raw = input.dimensions[key];
-      const value = raw && typeof raw === "object" ? raw.relevance : raw;
-      return [key, levelOf(value) === null ? null : String(value).trim()];
-    }))
-    : null;
+  const dimensions = input.impact_assessment
+    ? deriveImpactPresentation(input.impact_assessment).dimensions
+    : input.dimensions ? Object.fromEntries(Object.keys(DIMENSIONS).map(key => {
+      const item = input.dimensions[key];
+      return [key, { magnitude: levelOf(item), label: item?.label || '? offen' }];
+    })) : null;
   const label = input.label !== undefined ? input.label : (mode === "editorial" ? "KI-generiertes Symbolbild" : "Wirkungskarte · WÖk-Einordnung");
   return {
     warnings,
@@ -479,8 +477,8 @@ export function renderTitleImage(rawInput = {}, options = {}) {
 // öffentlicher Datensatz aus wirkungsticker/data/stories.json) auf die Eingaben.
 export function storyToTitleInput(story = {}, overrides = {}) {
   const analysis = story.analysis || {};
-  const rawDimensions = story.dimensions || { human: analysis.human, planet: analysis.planet, democracy: analysis.democracy };
-  const dimensions = Object.fromEntries(Object.keys(DIMENSIONS).map((key) => [key, rawDimensions?.[key]?.relevance ?? rawDimensions?.[key] ?? null]));
+  const profile = deriveImpactPresentation(story);
+  const dimensions = profile.dimensions;
   const sources = Array.isArray(story.sources) ? story.sources : [];
   const primary = sources.find((source) => source.primary_source) || sources[0] || null;
   const earliest = sources.map((source) => Date.parse(source.published_at || "")).filter(Number.isFinite).sort((a, b) => a - b)[0];
@@ -492,7 +490,8 @@ export function storyToTitleInput(story = {}, overrides = {}) {
     category: story.topic,
     source: primary?.publisher || null,
     date: earliest ? new Date(earliest).toISOString() : story.first_seen || null,
-    dimensions: Object.values(dimensions).some(Boolean) ? dimensions : null,
+    dimensions,
+    impact_assessment: profile,
     status: story.status || analysis.status || null,
     analysisType: story.analysis_type || analysis.analysis_type || null,
     ...overrides,

@@ -7,6 +7,7 @@ import { politicalDevelopmentFor, materialDevelopmentReview } from "./political-
 import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA, DIMENSION_TENDENCY_RULE } from "./visuals.mjs";
+import { IMPACT_SCHEMA, IMPACT_DEFS, IMPACT_RULE, impactAssessmentErrors } from './impact-assessment.mjs';
 import { DIRECTION_ASSESSMENT_VERSION, NEWS_DIMENSION_SCHEMA, NEWS_ASSESSMENT_FRAME_SCHEMA, OUTCOME_EVIDENCE_RULE, directionAssessmentErrors } from './direction-assessment.mjs';
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
 import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, promptEvidenceSegments } from "./newsroom.mjs";
@@ -854,6 +855,8 @@ export function analysisInputFor(stories) {
     already_published: Boolean(story.existing_story?.published),
     current_published_summary: cleanForPrompt(story.existing_story?.analysis?.summary, 720),
     current_published_status: story.existing_story?.analysis?.status || null,
+    existing_evaluation_target: story.existing_story?.analysis?.impact_assessment?.evaluation_target || story.existing_story?.analysis?.assessment_frame?.subject || null,
+    dossier_id: story.existing_story?.living_file?.case_id || story.case_id || null,
     existing_history: (story.existing_story?.versions || []).slice(-2).map((version) => ({
       version: version.version,
       status: version.analysis?.status,
@@ -926,6 +929,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
     "Ablehnen: bloße Meinung, Wiederholung, Spekulation, Zeremonie, Routinezahl, Börsen-/Tenderzahl, Frage ohne materielle Antwort oder formales Verfahren ohne relevanten Wirkpfad. Quellenrang und Aufmerksamkeit sind kein Relevanzbeweis. Sammel-/Rückblicksmeldung bereits erfasster Entscheidungen ohne neue Information: related_ticker_history prüfen, duplicate_without_new_information.",
     "material_development_review ist nur ein Prüfsignal. Neue Kandidatur-, Rücktritts-, Koalitions-, Regierungsbildungs- oder Ergebnisangaben vergleichen: materielle Aussage = material_update, anderes Medium allein = Dublette. Artikelzeit ist nicht Aussagezeit: Spätere Artikel können alte Zitate enthalten. Vor Kurswechselbehauptungen frühere Bedingungen, datierte Aussagen und Nachträge prüfen; das Publikationsdatum entscheidet keinen Widerspruch. Videoüberschrift ist kein geprüfter Originalton. Zeitkritik erhöht Prüfpriorität, nie Evidenzgrad. Gleiche Regeln für alle Parteien/Medien; Landtagswahl und Regierungschefwahl trennen.",
     DIMENSION_TENDENCY_RULE,
+    IMPACT_RULE,
     "Hauptgegenstand zum Quelldatum: Kabinetts-Gesetzentwurf=Entwurf; beschlossen=endgültig verabschiedet; in Kraft=belegtes Inkrafttreten, nie Zukunft. Geltendes Recht nicht zurückstufen. Frist/Entwurf/Beschluss/Inkrafttreten/Umsetzung trennen; Vergleich/Teilregel setzt nicht Hauptstatus. Unklar=offen. Ex ante betrifft Folgen, ist auch nach Beschluss/Inkrafttreten möglich.",
     "Zielbezug ist kein Kausalitätsbeweis. Fakten, Inferenz und Bewertung trennen.",
     "Keine Personen-, Parteien- oder moralische Rangliste. Reichweite ist nicht Wirkung. Benenne Nichtkompensation und Reverse Merit Order nur, wenn Schutzgrenzen oder Priorisierung materiell relevant sind.",
@@ -955,6 +959,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
         why_relevant: "string",
         status: "angekündigt|Entwurf|beschlossen|in Kraft|laufende Umsetzung|erste Daten|evaluiert|laufende Entwicklung|offen",
         analysis_type: "ex_ante|monitoring|ex_post",
+        impact_assessment: IMPACT_SCHEMA,
         direction_assessment_version: DIRECTION_ASSESSMENT_VERSION,
         assessment_frame: NEWS_ASSESSMENT_FRAME_SCHEMA,
         observed_outcome: { change: 'Beobachtete Zustandsänderung, sonst ganzes Objekt null', source_ids: ['string'], attribution: 'established|open' },
@@ -988,7 +993,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
         visuals: includeVisuals ? VISUALS_SCHEMA : null,
         media_impact: MEDIA_IMPACT_SCHEMA,
       }],
-      $defs: { mpd: { ...NEWS_DIMENSION_SCHEMA, positive_path: { $ref: "#/$defs/path" }, negative_path: { $ref: "#/$defs/path" } }, path: { ...NEWS_DIMENSION_SCHEMA.positive_path, state_change: "konkrete Zustandsänderung" } },
+      $defs: { ...IMPACT_DEFS, mpd: { ...NEWS_DIMENSION_SCHEMA, positive_path: { $ref: "#/$defs/path" }, negative_path: { $ref: "#/$defs/path" } }, path: { ...NEWS_DIMENSION_SCHEMA.positive_path, state_change: "konkrete Zustandsänderung" } },
     }),
     "UNTRUSTED_SOURCE_DATA_BEGIN",
     "",
@@ -1243,6 +1248,7 @@ export function validateAnalysis(analysis, story, options = {}) {
     if (!analysis?.[dimension] || typeof analysis[dimension].rationale !== "string" || !new Set(["gering", "mittel", "hoch", "sehr hoch", "offen"]).has(analysis[dimension].relevance)) errors.push(`AI_DIMENSION_INVALID:${dimension}`);
   }
   errors.push(...directionAssessmentErrors(analysis, story.sources, { requireCurrent: options.requireDirectionAssessment === true }));
+  if (!options.persisted || !analysis.impact_assessment?.review) errors.push(...impactAssessmentErrors(analysis.impact_assessment, story.sources, { required: options.requireImpactAssessment === true }));
   for (const key of ["impact_risks", "mechanisms", "first_order", "second_order", "third_order", "side_effects", "uncertainties", "watch_next", "reference_frameworks"]) {
     if (!Array.isArray(analysis?.[key])) errors.push(`AI_ARRAY_REQUIRED:${key}`);
   }

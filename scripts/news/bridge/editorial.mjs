@@ -1,3 +1,4 @@
+import { impactAssessmentErrors } from '../impact-assessment.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { hash, bridgePath, parsePacket } from './contract.mjs';
@@ -67,6 +68,7 @@ export async function importEditorialJobs(bridge,root,now){
         if(!output.editorial_analysis)throw Error('BRIDGE_PRODUCTION_ANALYSIS_REQUIRED');
         const analysis=sanitizeEditorialAnalysis(output.editorial_analysis,current.story);
         const errors=editorialAnalysisValidationErrors(analysis,current.story,current.assessment);
+        errors.push(...impactAssessmentErrors(analysis.impact_assessment, analysis.source_snapshot, {required:job.input.analysis_prompt.includes("impact_assessment 2.0")}));
         if(errors.length)throw Object.assign(Error('BRIDGE_EDITORIAL_PUBLICATION_GATE_FAILED'),{issues:errors});
         record=prepareAutomaticEditorialRecord({story:current.story,assessment:current.assessment,analysis,existing:previous,now,result:{provider:'chatgpt_dropbox_bridge',model:null}});
         record.bridge_import={job_id:job.input.job_id,output_hash:hash(output),imported_at:now};

@@ -1,3 +1,4 @@
+import { deriveImpactPresentation, IMPACT_LEGEND } from './impact-assessment.mjs';
 import { renderStoryVisual, renderEditorialClaimMap } from "./story-visual.mjs";
 import { EDITORIAL_TRANSPARENCY_NOTE, editorialLabel, isEditorialCommentary, isCommissionedAnalysis, renderSystemicVisual, renderSystemicDimensions, renderSystemicMonitoring, renderSectionAnchor, renderEditorialContents } from "./systemic-analysis.mjs";
 import { renderEditorialFinding, renderAuthorPerspective, renderEditorialBalance } from "./editorial-judgment.mjs";
@@ -168,12 +169,7 @@ function dimensionLabel(key) {
   return { human: "Mensch", planet: "Planet", democracy: "Demokratie" }[key];
 }
 
-function dimensions(story) {
-  return ["human", "planet", "democracy"].map((key) => {
-    const value = story.analysis[key] || { relevance: "offen", rationale: "Noch nicht belastbar eingeordnet." };
-    return `<div class="news-dimension"><strong>${dimensionLabel(key)}</strong><span>${escapeHtml(value.relevance)}</span><span>${escapeHtml(value.rationale)}</span></div>`;
-  }).join("");
-}
+function dimensions(story) { return renderDimensionMeters(story); }
 
 function storyHref(story) {
   return `./${story.slug}/`;
@@ -451,7 +447,7 @@ function indexPage(stories, updatedAt, { totalStories = stories.length, caseCoun
       <div><dt>Meinung &amp; Analyse</dt><dd>Natalie Weber verbindet belegte Fakten, wirkungswissenschaftliche Analyse und persönliche Einordnung. Der Beitrag geht über die Nachricht hinaus: Was bedeutet die Entwicklung für Menschen, natürliche Lebensgrundlagen und demokratische Strukturen? Meinung bleibt als Meinung erkennbar.</dd></div>
     </dl>
     <details><summary>Relevanz und Wissensstand richtig lesen</summary><dl class="news-reading-guide__legend">
-      <div><dt>hoch / mittel / gering</dt><dd>Relevanz, nicht gut oder schlecht.</dd></div>
+      <div><dt>Systemische Relevanz</dt><dd>Bedeutung der Meldung für das Gesamtsystem, getrennt vom MPD-Profil.</dd></div><div><dt>MPD-Balken</dt><dd>${IMPACT_LEGEND}.</dd></div>
       <div><dt>Wirkungspotenzial / Wirkungsrisiko</dt><dd>Mögliche Folge, noch keine eingetretene Wirkung.</dd></div>
       <div><dt>Beschlossen, aber noch nicht eingetreten?</dt><dd>Ein Beschluss kann bereits ein klar negatives Wirkungsrisiko oder positives Potenzial haben. Der Ticker ordnet plausible Folgen früh ein. Ob, wann und wie stark sie eintreten, wird davon getrennt geprüft.</dd></div>
       <div><dt>Beobachtete Wirkung</dt><dd>Festgestellte Zustandsveränderung mit entsprechender Evidenz.</dd></div>
@@ -651,7 +647,7 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
     ${renderConsolidations(story, publicStorySlugs)}
     ${renderAtAGlance(story, { formatDate })}
     <article class="news-story-section news-story-summary" id="analyse"><p class="hero-kicker">${renderIcon("systemisch")}<span>Wirkungsökonomische Analyse</span></p><h2>Einordnung im Überblick</h2><p class="news-analysis-copy">${escapeHtml(detailSummary)}</p>${renderAffectedGroups(visuals)}</article>
-    <article class="news-story-section" id="einordnung"><p class="hero-kicker">${renderIcon("folgen")}<span>Einordnung</span></p><h2>Warum diese Meldung relevant ist</h2><p class="news-analysis-copy">${escapeHtml(a.why_relevant)}</p>${renderDimensionMeters(a, { tendency: visuals?.tendency || null })}</article>
+    <article class="news-story-section" id="einordnung"><p class="hero-kicker">${renderIcon("folgen")}<span>Einordnung</span></p><h2>Warum diese Meldung relevant ist</h2><p class="news-analysis-copy">${escapeHtml(a.why_relevant)}</p>${renderDimensionMeters(story)}</article>
     <article class="news-story-section news-consequence-check" id="folgencheck"><p class="hero-kicker">${renderIcon("folgen")}<span>Folgencheck</span></p><h2>Wirkpfad und mögliche Folgen</h2><p class="news-method-note">Die folgenden möglichen Entwicklungen sind keine nachgewiesenen Folgen.</p><p class="news-lead"><strong>Wirkungspotenzial:</strong> ${escapeHtml(a.impact_potential)}</p>${renderImpactPath(a, prose, visuals)}<h3>Risiken, Gegenläufe und Prüfgrenzen</h3>${riskList}</article>
     <article class="news-story-section" id="bedeutung"><p class="hero-kicker">${renderIcon("transformation")}<span>Systemische Bedeutung</span></p><h2>Was die Meldung für das System bedeutet</h2><div class="wt-meaning"><div class="wt-meaning__item"><h3>${renderIcon("systemisch")}Systemrelevanz</h3><p>${escapeHtml(a.systemic_relevance)}</p></div><div class="wt-meaning__item"><h3>${renderIcon("transformation")}Transformationspotenzial</h3><p>${escapeHtml(a.transformation_potential)}</p></div><div class="wt-meaning__item"><h3>${renderIcon("resilienz")}Resilienz</h3><p>${escapeHtml(a.resilience)}</p></div></div></article>
     ${renderMediaImpact(story)}
@@ -706,9 +702,9 @@ export function editorialAnalysisPage(analysis, story = {}, { nextItem = null, r
   const visualAnchors = `<section class="news-editorial-visuals" aria-labelledby="analysis-visuals-title">
     <p class="hero-kicker">${renderIcon("systemisch")}<span>Visuelle Einordnung</span></p>
     <h2 id="analysis-visuals-title">Die Wirkungsstruktur auf einen Blick</h2>
-    <p class="news-method-note">Die Balken zeigen die Relevanz für Mensch, Planet und Demokratie, nicht eine bereits eingetretene positive oder negative Wirkung.</p>
+    <p class="news-method-note">${IMPACT_LEGEND}.</p>
     ${sourceVisuals ? `<div class="news-editorial-visuals__source-data">${sourceVisuals}</div>` : ""}
-    <div class="news-editorial-visuals__dimensions"><h3>Relevanz für Mensch, Planet und Demokratie</h3>${renderDimensionMeters(storyAnalysis)}</div>
+    <div class="news-editorial-visuals__dimensions"><h3>Wirkungsprofil für Mensch, Planet und Demokratie</h3>${renderDimensionMeters(storyAnalysis)}</div>
     <div class="news-editorial-visuals__path"><h3>Vom Ereignis zur systemischen Folge</h3>${renderImpactPath(storyAnalysis, prose, storyVisuals)}</div>
   </section>`;
   const claimMap = renderEditorialClaimMap(analysis);
@@ -819,7 +815,8 @@ function publicStory(story, editorialAnalysis = null) {
     status: story.analysis.status,
     analysis_type: story.analysis.analysis_type,
     importance: story.analysis.importance,
-    dimensions: { human: story.analysis.human, planet: story.analysis.planet, democracy: story.analysis.democracy },
+    impact_assessment: deriveImpactPresentation(story),
+    dimensions: deriveImpactPresentation(story).dimensions,
     visuals: sanitizeVisuals(story.analysis.visuals, story).visuals,
     media_impact: story.analysis.media_impact?.relevant ? story.analysis.media_impact : null,
     media_analysis_version: story.analysis.media_analysis_version || null,
