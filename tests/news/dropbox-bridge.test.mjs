@@ -160,7 +160,7 @@ test('API, batch, remote visual transport and local Higgsfield all reject before
     assert.equal(calls,0);
   }finally{for(const [k,v]of [['WIRKUNGSTICKER_PROCESSING_MODE',previous.mode],['VISUAL_GENERATION_PROVIDER',previous.visual]])if(v===undefined)delete process.env[k];else process.env[k]=v;}
   assert.throws(()=>processingMode({WIRKUNGSTICKER_PROCESSING_MODE:'typo'}));
-  assert.throws(()=>visualGenerationProvider({WIRKUNGSTICKER_PROCESSING_MODE:'dropbox_chatgpt_bridge',VISUAL_GENERATION_PROVIDER:'higgsfield'}));
+  assert.equal(visualGenerationProvider({WIRKUNGSTICKER_PROCESSING_MODE:'dropbox_chatgpt_bridge',VISUAL_GENERATION_PROVIDER:'higgsfield'}), 'higgsfield');
 });
 test('real native correction adapter passes existing gates, preserves version and rejects stale source',()=>{
   const review=JSON.parse(fs.readFileSync('content/news/reviews/eeg-netzpaket-richtungsbezug-2026-09-09.json'));
@@ -262,4 +262,51 @@ test('prepared packet retries unchanged after source content changes',async t=>{
   await provider.enqueue([changed],[],later);assert.equal(store.all().length,1);
   assert.equal(store.get(before.input.job_id).status,'queued');
   assert.deepEqual(JSON.parse(await transport.read(bridgePath('00_INBOX',`${before.input.job_id}.input.json`))),before.input);
+});
+
+import { HiggsfieldBridgeVisualProvider } from '../../scripts/news/bridge/visual-brief.mjs';
+import { buildEditorialImagePrompt } from '../../scripts/news/title-image/policy.mjs';
+import { createTitleImagePipeline } from '../../scripts/news/title-image/pipeline.mjs';
+const brief3 = { required:true, visual_type:'editorial_symbolic_image', concept:'Ein einzelner sachlich gezeichneter Einkaufswagen.', subjects:['Einkaufswagen'], symbols:[], avoid:['Logos'], location_context:null, contains_real_person:false, documentary_impression_forbidden:true, text_in_image:false, caption:'Symbolbild', alt_text:'Gezeichneter Einkaufswagen.', editorial_notes:'' };
+function bridge3Env(t){const old={...process.env};process.env.WIRKUNGSTICKER_PROCESSING_MODE='dropbox_chatgpt_bridge';process.env.VISUAL_GENERATION_PROVIDER='higgsfield';t.after(()=>{for(const k of ['WIRKUNGSTICKER_PROCESSING_MODE','VISUAL_GENERATION_PROVIDER'])if(old[k]===undefined)delete process.env[k];else process.env[k]=old[k];});}
+test('bridge3 keeps text API disabled while the brief is used verbatim by the existing image prompt',async t=>{
+  bridge3Env(t);let calls=0;
+  await assert.rejects(callWoekAi([candidate()],{fetchImpl:async()=>{calls++;}}),/API_PROCESSING_DISABLED/);assert.equal(calls,0);
+  const prompt=buildEditorialImagePrompt({...candidate(),title:'Angriff',visual_brief:brief3});
+  assert.ok(prompt.includes(JSON.stringify(brief3)));assert.ok(!prompt.includes('photographic-style still life'));
+});
+test('bridge3 output readiness ignores a leftover PNG and consumes no missing-output retries',async t=>{
+  bridge3Env(t);const {provider,store,transport}=setup(t);await provider.enqueue([candidate()],[],now);const job=store.all()[0];
+  transport.files.set(bridgePath('20_OUTPUT_READY',`${job.input.job_id}.title.png`),png());
+  assert.equal((await outputStatus(store,transport,later)).status,'PROCESSING_PENDING');
+  transport.files.set(bridgePath('20_OUTPUT_READY',`${job.input.job_id}.output.json`),JSON.stringify({...output(job.input),visual_brief:brief3}));
+  assert.deepEqual((await outputStatus(store,transport,later)).ready,[job.input.job_id]);assert.deepEqual(store.get(job.input.job_id).attempts,{});
+});
+test('bridge3 hold/reject never render; schema paths remain diagnostic in immutable error records',async t=>{
+  bridge3Env(t);let renders=0;const {provider,store,transport}=setup(t,{visualProvider:{receive:async()=>{renders++;throw Error('must not render');}}});
+  await provider.enqueue([candidate(1),candidate(2),candidate(3)],[],now);
+  for(const [i,job]of store.all().entries()){
+    const packet={...output(job.input,i===1?'reject':'hold'),visual_brief:brief3};if(i===2)packet.sources[0].source_id=4;
+    transport.files.set(bridgePath('20_OUTPUT_READY',`${job.input.job_id}.output.json`),JSON.stringify(packet));
+  }
+  const result=await provider.reconcile({},[],later);assert.equal(result.length,2);assert.equal(renders,0);
+  assert.match(store.all().find(j=>j.status==='quarantined').last_error.error_code,/BRIDGE_SCHEMA_INVALID:\$\.sources\[0\]\.source_id/);
+});
+test('bridge3 Higgsfield failure uses the real card pipeline and persists private PNG before staged ACK',async t=>{
+  bridge3Env(t);let calls=0;
+  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.published&&s.listed!==false));delete record.title_image;
+  const {directory,provider,store,transport}=setup(t,{stageOnly:false,adapt:()=>({decision:'publish',record})});
+  provider.visualProvider=new HiggsfieldBridgeVisualProvider({directory,pipeline:options=>createTitleImagePipeline({...options,generate:async()=>{calls++;throw Object.assign(Error('Unavailable'),{code:'HIGGSFIELD_PROVIDER_UNAVAILABLE'});},raster:async(svg,{width,height})=>({png:png(width,height)})})});
+  await provider.enqueue([candidate()],[],now,{testOnly:true});const job=store.all()[0];
+  transport.files.set(bridgePath('20_OUTPUT_READY',`${job.input.job_id}.output.json`),JSON.stringify({...output(job.input,'publish'),visual_brief:brief3}));
+  const [result]=await provider.reconcile({},[record],later);assert.equal(result.staged,true);assert.equal(calls,1);
+  const image=store.get(job.input.job_id).staging.image;assert.equal(image.title_image.mode,'impact_card');assert.ok(image.png_base64);assert.ok(image.title_image.wide.url.startsWith('/private-staging/'));
+  await provider.finalize([],later);assert.equal(store.get(job.input.job_id).ack.status,'staged');assert.equal(store.get(job.input.job_id).ack.url,null);
+  await provider.reconcile({},[],later);assert.equal(calls,1);
+});
+test('bridge3 duplicate concept falls back without spending and required=false retains the image without generation',async t=>{
+  bridge3Env(t);const {directory}=setup(t),input=bridgeInput(candidate(),now);input.visual_context.recent_visual_concepts=[{story_id:'another',description_verified:true,concept:brief3.concept}];
+  const v=new HiggsfieldBridgeVisualProvider({directory});const response=await v.receive({input},later,{record:candidate(),output:{visual_brief:brief3},staged:false});assert.equal(response.status,'fallback');
+  let calls=0;const p=createTitleImagePipeline({root:directory,generate:async()=>{calls++;throw Error('No');},publish:async()=>({}),raster:async(svg,{width,height})=>({png:png(width,height)})});
+  await p({...candidate(),visual_brief:{...brief3,required:false}});assert.equal(calls,0);
 });

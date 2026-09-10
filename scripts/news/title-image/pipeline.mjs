@@ -40,7 +40,7 @@ export async function generateEditorialVisual(story, { endpoint = process.env.WO
   if (!endpoint || !token) throw imageError("HIGGSFIELD_NOT_CONFIGURED");
   const url = new URL(endpoint);
   if (url.protocol !== "https:" || url.username || url.password) throw imageError("HIGGSFIELD_ENDPOINT_INVALID");
-  const response = await fetchImpl(url, { method: "POST", redirect: "error", headers: { "content-type": "application/json", authorization: `Bearer ${token}` }, signal: AbortSignal.timeout(C.generation_timeout_ms + 60000), body: JSON.stringify({ story_id: story.story_id, title: story.title, source_summary: story.source_summary, topic: story.topic, claims: (story.claims || []).slice(0,10).map((c) => ({ claim: c.claim })), ...(story.refresh_prompt_version ? { refresh_prompt_version: story.refresh_prompt_version } : {}) }) });
+  const response = await fetchImpl(url, { method: "POST", redirect: "error", headers: { "content-type": "application/json", authorization: `Bearer ${token}` }, signal: AbortSignal.timeout(C.generation_timeout_ms + 60000), body: JSON.stringify({ ...(story.visual_brief ? { visual_brief: story.visual_brief } : {}), story_id: story.story_id, title: story.title, source_summary: story.source_summary, topic: story.topic, claims: (story.claims || []).slice(0,10).map((c) => ({ claim: c.claim })), ...(story.refresh_prompt_version ? { refresh_prompt_version: story.refresh_prompt_version } : {}) }) });
   if (!response.ok) throw imageError(response.status === 429 ? "HIGGSFIELD_RATE_LIMIT" : response.status === 403 ? "HIGGSFIELD_AUTH_UNAVAILABLE" : "HIGGSFIELD_PROVIDER_UNAVAILABLE");
   const chunks = []; let length = 0;
   for await (const chunk of response.body) {
@@ -53,7 +53,7 @@ export async function generateEditorialVisual(story, { endpoint = process.env.WO
   if (!result.ok || typeof result.image_base64 !== "string") throw imageError(/^[A-Z_]{3,70}$/.test(result.reason || "") ? result.reason : "HIGGSFIELD_GENERATION_FAILED");
   const bytes = Buffer.from(result.image_base64, "base64");
   const info = inspectImage(bytes);
-  if (info.sha256 !== result.sha256 || result.model !== C.model) throw imageError("HIGGSFIELD_ASSET_MISMATCH");
+  if (Math.abs(info.width / info.height - 16 / 9) > 0.025 || info.sha256 !== result.sha256 || result.model !== C.model) throw imageError("HIGGSFIELD_ASSET_MISMATCH");
   return { ...info, bytes, model: result.model, job_id: result.job_id, generated_at: result.generated_at, reused: Boolean(result.reused), prompt_version: result.prompt_version };
 }
 
@@ -131,7 +131,8 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
     if (dryRun) return { story_id: story.story_id, ...decision, prompt: buildEditorialImagePrompt(story), asset_directory: `source-assets/wirkungsticker/${story.story_id}/`, would_generate: decision.mode === "editorial" && !story.title_image?.source_visual };
     const started = Date.now();
     const log = { story_id: story.story_id, requested_mode: decision.mode, reason: decision.reason, higgsfield_called: false, source_reused: false, title_reused: false };
-    const previous = story.title_image;
+    const previous = story.visual_brief?.required && story.title_image?.source_visual?.concept !== story.visual_brief.concept
+      ? undefined : story.title_image;
     if (bridgeAsset && (visualGenerationProvider() !== 'chatgpt_bridge' || bridgeAsset.provider !== 'chatgpt_bridge')) throw imageError('BRIDGE_VISUAL_PROVIDER_MISMATCH');
     let mode = bridgeAsset ? 'editorial' : cardsOnly ? "impact_card" : decision.mode, source = bridgeAsset ? null : previous?.source_visual || null, original = bridgeAsset, fallbackReason = null;
     try {
@@ -150,7 +151,7 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
           } catch (error) { fallbackReason = safeImageFailure(error); }
         } else if (previous?.fallback_reason && TERMINAL.has(previous.fallback_reason)) {
           fallbackReason = previous.fallback_reason;
-        } else if (!cardsOnly && allowGeneration && visualGenerationProvider() === "higgsfield" && !circuitOpen && generations < maxGenerations) {
+        } else if (story.visual_brief?.required !== false && !cardsOnly && allowGeneration && visualGenerationProvider() === "higgsfield" && !circuitOpen && generations < maxGenerations) {
           generations += 1; log.higgsfield_called = true;
           try { original = await generate(story); log.source_reused = Boolean(original.reused); }
           catch (error) { fallbackReason = safeImageFailure(error); circuitOpen = ["HIGGSFIELD_AUTH_UNAVAILABLE","HIGGSFIELD_PROVIDER_UNAVAILABLE","HIGGSFIELD_NOT_CONFIGURED","HIGGSFIELD_CIRCUIT_OPEN"].includes(fallbackReason); }
@@ -171,6 +172,7 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
         fs.writeFileSync(file, original.bytes); files.push(file);
         const sourceUrls = await publish([file], { tag });
         source = { url: sourceUrls?.[path.basename(file)] || assetUrl(tag, path.basename(file)), sha256: info.sha256, width: info.width, height: info.height, mime: info.mime, provider: original.provider || "higgsfield", model: original.model || C.model, prompt_version: original.prompt_version || C.prompt_version, generated_at: original.generated_at || now(),
+          ...(story.visual_brief ? { ai_generated: true, concept: story.visual_brief.concept, caption: story.visual_brief.caption, alt_text: story.visual_brief.alt_text, visual_brief: story.visual_brief } : {}),
           ...(original.provider === 'chatgpt_bridge' ? { ai_generated: true, concept: original.visual.concept, caption: original.visual.caption, alt_text: original.visual.alt_text, visual_metadata: original.visual } : {}) };
       }
       const image = original ? { src: `data:${original.mime};base64,${original.bytes.toString("base64")}`, focus: "right" } : null;
