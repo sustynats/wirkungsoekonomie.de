@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { withRequestDeadline } from '../request-deadline.mjs';
 
 export function bridgeSession(env = process.env) {
   const endpoint = env.WOEK_NEWS_BRIDGE_URL;
@@ -11,7 +12,8 @@ export function bridgeSession(env = process.env) {
   if (url.protocol !== 'https:' || url.hostname !== '130.162.217.58.sslip.io' || url.pathname !== '/api/news-bridge' || url.search || url.hash || url.username || url.password) throw new Error('BRIDGE_REMOTE_URL_INVALID');
   const owner = `${runId}:${env.GITHUB_RUN_ATTEMPT || '1'}`;
   async function request(op, args = []) {
-    const response = await fetch(url, { method: 'POST', redirect: 'error', signal: AbortSignal.timeout(180000),
+    return withRequestDeadline(async signal => {
+    const response = await fetch(url, { method: 'POST', redirect: 'error', signal,
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${secret}`, 'X-Bridge-Owner': owner,
         'X-Bridge-Lane': env.WOEK_NEWS_BRIDGE_PHASE === 'discovery' ? 'discovery' : 'import' }, body: JSON.stringify({ op, args }) });
     const chunks = []; let size = 0;
@@ -19,6 +21,7 @@ export function bridgeSession(env = process.env) {
     let result; try { result = JSON.parse(Buffer.concat(chunks)); } catch { throw Object.assign(new Error('BRIDGE_REMOTE_INVALID_RESPONSE'), { retryable: response.status >= 500 }); }
     if (!response.ok || !result.ok) throw Object.assign(new Error(result.error || 'BRIDGE_REMOTE_UNAVAILABLE'), { retryable: response.status >= 500, ...(Number.isFinite(result.retry_after_seconds) ? { retry_after_seconds: result.retry_after_seconds } : {}) });
     return result.result;
+    }, {timeoutMs:180000, code:'BRIDGE_REMOTE_TIMEOUT'});
   }
   const store = Object.fromEntries(['acquire','get','put','all','impactStagingIndex','observe','observation','release','editorialClaim','editorialFinalize','editorialFailure'].map(op => [op, (...args) => request(`store.${op}`, args)]));
   const transport = Object.fromEntries(['list','read','metadata','move','writeAtomic','archive'].map(op => [op, (...args) => request(`dropbox.${op}`, args)]));

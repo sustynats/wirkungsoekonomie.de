@@ -1,5 +1,6 @@
 // No credentials, paid news, proxy readers or paywall removal in the newsroom.
 // A public URL alone is not an editorial or reuse permission.
+import {withRequestDeadline} from './request-deadline.mjs';
 export const BLOCKED_NEWS_HOSTS = Object.freeze([
   "apollo-news.net", "nius.de", "removepaywall.com", "12ft.io", "12ft.org",
 ]);
@@ -70,12 +71,15 @@ const robotsCache = new Map();
 const rslCache = new Map();
 const nextRequests = new Map();
 export async function respectRobots(rawUrl, policy, fetchImpl, assertSafeUrl, allowedHosts) {
+  return withRequestDeadline(signal => readRobots(rawUrl,policy,fetchImpl,assertSafeUrl,allowedHosts,signal),
+    {timeoutMs:Number(policy.request_timeout_ms || 18000),code:'ROBOTS_REQUEST_TIMEOUT'});
+}
+async function readRobots(rawUrl, policy, fetchImpl, assertSafeUrl, allowedHosts, signal) {
   const url = assertDirectNewsUrl(rawUrl);
   const key = `${url.origin}:${policy.user_agent || "WOek-Wirkungsticker"}`;
   let cached = robotsCache.get(key);
   if (!cached || cached.expires < Date.now()) {
     let robotsUrl = `${url.origin}/robots.txt`;
-    const signal = AbortSignal.timeout(Number(policy.request_timeout_ms || 18000));
     let response;
     for (let redirects = 0; redirects <= 3; redirects++) {
       await assertSafeUrl(robotsUrl, allowedHosts, { resolveDns: policy.resolve_dns !== false });
@@ -92,7 +96,7 @@ export async function respectRobots(rawUrl, policy, fetchImpl, assertSafeUrl, al
     const body = response.status === 200 ? await response.text() : "";
     if (body.length > 512000) throw new Error("ROBOTS_TOO_LARGE");
     cached = { body, expires: Date.now() + 3600000 };
-    robotsCache.set(key, cached);
+    signal.throwIfAborted(); robotsCache.set(key, cached);
   }
   const decision = robotsDecision(cached.body, url, policy.user_agent || "WOek-Wirkungsticker");
   if (!decision.allowed) throw new Error("ROBOTS_DISALLOWED");
@@ -120,6 +124,10 @@ export function rslDecision(raw) {
 }
 
 export async function respectRsl(source, policy, fetchImpl, assertSafeUrl, allowedHosts) {
+  return withRequestDeadline(signal => readRsl(source,policy,fetchImpl,assertSafeUrl,allowedHosts,signal),
+    {timeoutMs:4*Number(policy.request_timeout_ms || 18000),code:'RSL_REQUEST_TIMEOUT'});
+}
+async function readRsl(source, policy, fetchImpl, assertSafeUrl, allowedHosts, signal) {
   if (!source?.rsl_url) return { allowed: true, status: "not_declared", reason: "RSL_NOT_DECLARED" };
   const initial = assertDirectNewsUrl(source.rsl_url);
   const key = initial.href;
@@ -129,7 +137,7 @@ export async function respectRsl(source, policy, fetchImpl, assertSafeUrl, allow
     let response;
     for (let redirects = 0; redirects <= 3; redirects += 1) {
       await assertSafeUrl(current, allowedHosts, { resolveDns: policy.resolve_dns !== false });
-      response = await fetchImpl(current, { redirect: "manual", signal: AbortSignal.timeout(Number(policy.request_timeout_ms || 18000)), headers: { "User-Agent": policy.user_agent || "WOek-Wirkungsticker", Accept: "application/rsl+xml, application/xml, text/xml;q=0.9" } });
+      response = await fetchImpl(current, { redirect: "manual", signal, headers: { "User-Agent": policy.user_agent || "WOek-Wirkungsticker", Accept: "application/rsl+xml, application/xml, text/xml;q=0.9" } });
       if (![301, 302, 303, 307, 308].includes(response.status)) break;
       const location = response.headers.get("location");
       await response.body?.cancel();
@@ -148,7 +156,7 @@ export async function respectRsl(source, policy, fetchImpl, assertSafeUrl, allow
       if (body.length > 512000) throw new Error("RSL_TOO_LARGE");
       cached = { decision: rslDecision(body), expires: Date.now() + 86400000 };
     }
-    rslCache.set(key, cached);
+    signal.throwIfAborted(); rslCache.set(key, cached);
   }
   if (!cached.decision.allowed) throw new Error(cached.decision.reason);
   return cached.decision;
