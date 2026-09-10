@@ -72,4 +72,3 @@ export function validEditorial(story) {
     self_frame_check: { passed: true, issues: [], recommended_title: "", recommended_summary: "", recommended_meta_description: "" },
   };
 }
-
