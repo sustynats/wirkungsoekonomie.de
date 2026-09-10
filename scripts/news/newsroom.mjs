@@ -3,6 +3,8 @@ import { numberTokens, evidenceNumberTokens } from "./numeric-evidence.mjs";
 import { sourceAccess } from "./access-policy.mjs";
 import { courtCaseRelation } from "./court-case-identity.mjs";
 import { structuredEventIdentity } from './event-identity.mjs';
+import { projectionCache } from './projection-cache.mjs';
+const fingerprints = projectionCache();
 
 const hash = (value) => createHash("sha256").update(String(value)).digest("hex").slice(0, 20);
 const ms = (value) => Date.parse(value || "") || 0;
@@ -122,6 +124,11 @@ function eventFacts(text, title) {
 }
 
 export function eventFingerprint(item) {
+  const key = JSON.stringify([item.title, item.summary, item.event_geography, item.published_at]);
+  return fingerprints(key, () => deriveEventFingerprint(item));
+}
+
+function deriveEventFingerprint(item) {
   const text = `${item.title || ""} ${item.summary || ""}`;
   const titleTerms = [...tokens(item.title)].sort();
   const entities = [...new Set((text.match(/\b(?:[A-ZÄÖÜ][a-zäöüß]+(?:\s+[A-ZÄÖÜ][a-zäöüß]+){1,3}|[A-Z]{2,8})\b/g) || []).map((value) => words(value).join(" ")))];

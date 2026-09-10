@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
-  sanitizeVisuals, renderDimensionMeters, renderStatusTrack, renderImpactPath, renderAtAGlance, renderKeyFigures,
+  sanitizeVisuals, renderDimensionMeters as publicDimensionMeters, renderStatusTrack, renderImpactPath, renderAtAGlance, renderKeyFigures,
   renderChart, renderTimeline, renderAffectedGroups, renderIconSprite, renderIcon, topicIcon, relevanceLevel, publisherInitials,
   VISUALS_SCHEMA, VISUALS_PROMPT_RULES,
 } from "../../scripts/news/visuals.mjs";
@@ -132,8 +132,8 @@ test("deterministische Anker aus dem Analyse-Schema", () => {
   const meters = renderDimensionMeters(story().analysis, { compact: true });
   assert.match(meters, /wt-dim--human" data-potential-model="2.0"/);
   assert.match(meters, /wt-dim--democracy" data-potential-model="2.0"/);
-  assert.match(meters, /wt-meter--unknown/);
-  assert.match(meters, /data-magnitude="unknown"/);
+  assert.match(meters, /aria-label="Wirkpfad fachlich offen"/);
+  assert.match(meters, /aria-label="Wirkpfad fachlich offen"/);
   assert.doesNotMatch(meters, /wt-dim__note sr-only/);
   assert.equal((meters.match(/is-filled/g) || []).length, 0);
   assert.match(renderStatusTrack("beschlossen"), /is-current"[^>]*aria-current="step"[^>]*><span class="wt-track__dot"><\/span><span class="wt-track__label">Beschlossen/);
@@ -212,3 +212,5 @@ test("Kennzahlen koppeln Wert und Einheit; Termine koppeln Datum und Ereignis", 
   assert.equal(sanitizeVisuals({ timeline: [{ label: "Ende", date: "2027-01" }] }, item).visuals, null);
   assert.equal(sanitizeVisuals({ timeline: [{ label: "Start", date: "2027-02-31" }] }, item).visuals, null);
 });
+
+const renderDimensionMeters = (input, options = {}) => publicDimensionMeters(input, { ...options, context: { ...options.context, privateImpactPreview: true } });

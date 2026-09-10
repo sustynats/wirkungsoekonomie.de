@@ -1,4 +1,5 @@
 import { deriveImpactPresentation, MAGNITUDE } from '../impact-assessment.mjs';
+import { publicImpactAssessment } from '../impact-release.mjs';
 // WÖk-Titelbildsystem für den Wirkungsticker.
 //
 // Ein Rendering-Kern, zwei Darstellungsmodi:
@@ -478,7 +479,7 @@ export function renderTitleImage(rawInput = {}, options = {}) {
 export function storyToTitleInput(story = {}, overrides = {}) {
   const analysis = story.analysis || {};
   const profile = deriveImpactPresentation(story);
-  const dimensions = profile.dimensions;
+  const dimensions = publicImpactAssessment(story) ? profile.dimensions : null;
   const sources = Array.isArray(story.sources) ? story.sources : [];
   const primary = sources.find((source) => source.primary_source) || sources[0] || null;
   const earliest = sources.map((source) => Date.parse(source.published_at || "")).filter(Number.isFinite).sort((a, b) => a - b)[0];
@@ -491,7 +492,7 @@ export function storyToTitleInput(story = {}, overrides = {}) {
     source: primary?.publisher || null,
     date: earliest ? new Date(earliest).toISOString() : story.first_seen || null,
     dimensions,
-    impact_assessment: profile,
+    impact_assessment: publicImpactAssessment(story) ? profile : null,
     status: story.status || analysis.status || null,
     analysisType: story.analysis_type || analysis.analysis_type || null,
     ...overrides,

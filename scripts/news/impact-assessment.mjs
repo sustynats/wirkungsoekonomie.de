@@ -104,7 +104,10 @@ export function impactAssessmentErrors(assessment, sources = [], { required = fa
       const sign = d.dominance.slice(9), main = primary.filter(p => p.direction === sign), other = primary.filter(p => p.direction !== sign);
       if (!main.length || !other.length || Math.max(...main.map(p => p.magnitude || 0)) <= Math.max(...other.map(p => p.magnitude || 0))) fail(`IMPACT_DOMINANCE_UNSUPPORTED:${key}`);
     }
-    if (d.temporal_status === 'ex_post' || all.some(p => p.temporal_status === 'ex_post')) {
+    // A retrospective assessment can explicitly leave a dimension unresolved
+    // or find no material path. Neither finding asserts an observed outcome.
+    // Every actual ex-post path still needs an outcome, including side paths.
+    if (d.path_status === 'material' && d.temporal_status === 'ex_post' || all.some(p => p.temporal_status === 'ex_post')) {
       if (!text(d.observed_outcome?.change) || !grounded(d.observed_outcome?.source_ids) || !['established', 'open'].includes(d.observed_outcome?.attribution)
         || !['measured', 'observed', 'secondary_source'].includes(d.data_status) || d.evidence === 'not_assessable') fail(`IMPACT_OBSERVED_OUTCOME_REQUIRED:${key}`);
     }

@@ -51,7 +51,7 @@ test("commissioned feedback commentary passes evidence gates without changing ea
 test("eight visual anchors retain directions, evidence and working internal navigation", () => {
   const record = prepared(); const html = editorialAnalysisPage(record, story);
   assert.equal(record.sections.filter(section => section.visual).length + Number(Boolean(record.lead_statement)) + Number(Boolean(record.subject_dimensions)), 8);
-  for (const marker of ["news-feedback--closed", "news-feedback--broken", "Rückkopplung zum Anfang", "Rückkopplung unterbrochen", "news-systemic-visual--comparison", "wt-dims--impact", "Persönliche Einordnung der Autorin"]) assert.ok(html.includes(marker), marker);
+  for (const marker of ["news-feedback--closed", "news-feedback--broken", "Rückkopplung zum Anfang", "Rückkopplung unterbrochen", "news-systemic-visual--comparison", "Wir überarbeiten die Wirkungsprofile", "Persönliche Einordnung der Autorin"]) assert.ok(html.includes(marker), marker);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
   assert.equal(ids.length, new Set(ids).size);
   for (const match of html.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.includes(match[1]), match[1]);

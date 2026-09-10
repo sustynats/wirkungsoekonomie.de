@@ -4,14 +4,32 @@ import fs from 'node:fs';
 import { deriveImpactPresentation, impactAssessmentErrors } from '../../scripts/news/impact-assessment.mjs';
 import { derivePublicationStatus, semanticIssues, impactContextRequirements, SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import { migrateImpactCatalog, persistedImpactAssessmentErrors, assessmentBasis } from '../../scripts/news/migrate-impact-assessments.mjs';
-import { applyImpactOutput, impactReassessmentInput } from '../../scripts/news/bridge/impact.mjs';
-import { ensureSemanticReview, importSemanticReviews } from '../../scripts/news/bridge/semantic-review.mjs';
-import { bridgePath, hash } from '../../scripts/news/bridge/contract.mjs';
+import { applyImpactOutput, impactReassessmentInput, discoverImpactJobs } from '../../scripts/news/bridge/impact.mjs';
+import { ensureSemanticReview, importSemanticReviews, semanticOutputSchema } from '../../scripts/news/bridge/semantic-review.mjs';
+import { bridgePath, hash, parsePacket } from '../../scripts/news/bridge/contract.mjs';
 import { assertAutomaticImpactTransport } from '../../scripts/news/processing-mode.mjs';
 const reviews = JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews;
 const catalog = JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
 const readyReview = () => ({ status:'ready', checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im unabhängigen Prüfpass am jeweiligen Quellbeleg und Wirkpfad geprüft.'}])), findings:[] });
 const bsw = () => { const r=reviews[0], record=structuredClone(catalog.find(s=>s.story_id===r.story_id));record.impact_sources=r.assessment_sources;return {a:structuredClone(r.impact_assessment),record}; };
+
+test('backlog handoff fills a larger batch while reserving current-news and second-review capacity',async()=>{
+  const records=Array.from({length:40},(_,i)=>({...structuredClone(bsw().record),story_id:`wt-batch-${i}`}));
+  const jobs=new Map(),observations=new Map(),files=new Map();
+  const bridge={maxPending:48,store:{all:async()=>[...jobs.values()],get:async id=>jobs.get(id),put:async j=>jobs.set(j.input.job_id,j),
+    observe:async(k,v)=>observations.set(k,v),observation:async k=>observations.get(k)},
+    transport:{writeAtomic:async(k,v)=>{assert.equal(files.has(k),false);files.set(k,v);}},failure:async(_j,_step,e)=>{throw e;}};
+  const now='2026-09-10T12:00:00Z';
+  assert.equal((await discoverImpactJobs(bridge,records,now)).length,18,'18 first passes plus 18 later reviews leave 12 slots free');
+  assert.equal((await discoverImpactJobs(bridge,records,now)).length,0,'a manual rerun neither duplicates nor exceeds capacity');
+  const parent=[...jobs.values()][0];
+  jobs.set('review',{input:{job_id:'review',job_type:'impact_semantic_review',parent_job_id:parent.input.job_id},status:'queued'});
+  assert.equal((await discoverImpactJobs(bridge,records,now)).length,0,'the actual review consumes its reserved slot, not another first pass');
+  parent.status='acknowledged';parent.semantic_review={};jobs.get('review').status='acknowledged';
+  await bridge.store.observe(`impact-checkpoint:${parent.candidate.story_id}:${assessmentBasis(parent.candidate)}`,{status:'publish'});
+  assert.equal((await discoverImpactJobs(bridge,records,now)).length,1,'completed work immediately frees the next discovery batch slot');
+  assert.equal(files.size,19);assert.equal(observations.get('impact-reassessment').reserved_news_slots,12);
+});
 
 test('the legacy automatic API path cannot reopen without an independent review transport',()=>{
   assert.throws(()=>assertAutomaticImpactTransport(),e=>e.message==='IMPACT_API_REVIEW_TRANSPORT_UNAVAILABLE' && e.providerNotCalled && e.requestAttempts===0);
@@ -98,10 +116,30 @@ test('separate review job is mandatory, idempotent, source-bound, and cannot be 
   assert.equal((await ensureSemanticReview(bridge,parent,output,record,a,now)).status,'needs_second_pass');
   await ensureSemanticReview(bridge,parent,output,record,a,now);assert.equal(jobs.size,2);
   const child=[...jobs.values()].find(j=>j.input.parent_job_id===input.job_id);assert.match(child.input.job_id,/^wt_\d{8}T\d{6}Z_[a-f0-9]{24}$/);
+  assert.deepEqual(child.input.validation_findings,[]);
   assert.notEqual(child.input.job_id,input.job_id);
   const result={schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:now,review:readyReview(),impact_assessment:a};
   await bridge.transport.writeAtomic(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),result);
   await importSemanticReviews(bridge,now);
   assert.equal((await ensureSemanticReview(bridge,parent,output,record,a,now)).status,'ready');
   assert.equal((await ensureSemanticReview(bridge,parent,{data:'edited first output'},record,a,now)).status,'needs_second_pass');
+  const conflicting=structuredClone(a);conflicting.dimensions.planet.direction='open';
+  conflicting.dimensions.planet.rationale='Wenn die Maßnahme umgesetzt wird, würden die CO2-Emissionen steigen.';
+  await ensureSemanticReview(bridge,parent,{data:'contradictory first output'},record,conflicting,now);
+  const invalidChild=[...jobs.values()].find(j=>j.input.proposed_assessment?.dimensions.planet.direction==='open');
+  assert.ok(invalidChild.input.validation_findings.includes('IMPACT_DIRECTION_RATIONALE_CONFLICT:planet'));
+  parent.semantic_review={output_hash:hash(output),assessment:a,review:{status:'ready',checks:Object.fromEntries(SEMANTIC_CHECKS.map(key=>[key,'geprüft']))}};
+  const oldHash=hash({parent:input.job_id,outputHash:hash(output),assessment:a,record});
+  const oldId=`${input.job_id.slice(0,20)}${hash({kind:'impact_semantic_review',inputHash:oldHash}).slice(0,24)}`;
+  const oldJob={input:{job_id:oldId,input_hash:oldHash,parent_job_id:input.job_id},status:'acknowledged',ack:{status:'hold'}};
+  jobs.set(oldId,structuredClone(oldJob));jobs.delete(child.input.job_id);
+  assert.equal((await ensureSemanticReview(bridge,parent,output,record,a,now)).status,'needs_second_pass','malformed legacy receipt is not treated as a completed independent review');
+  assert.notEqual(parent.publication_gate.review_job_id,oldId);
+  assert.equal(jobs.get(parent.publication_gate.review_job_id).input.review_protocol,'structured-checks-1');
+  assert.deepEqual(jobs.get(oldId),oldJob,'old acknowledgment and error history stay unchanged');
+});
+test('a bare checked label is a repairable output schema error, never a completed semantic review',()=>{
+  const {a}=bsw(),o={schema_version:'1.0',job_id:'wt_20260910T120000Z_aaaaaaaaaaaaaaaaaaaaaaaa',input_hash:'a'.repeat(64),processed_at:'2026-09-10T12:00:00Z',review:readyReview(),impact_assessment:a};
+  assert.doesNotThrow(()=>parsePacket(JSON.stringify(o),semanticOutputSchema));
+  o.review.checks.event_target='geprüft';assert.throws(()=>parsePacket(JSON.stringify(o),semanticOutputSchema),/BRIDGE_SCHEMA_INVALID/);
 });

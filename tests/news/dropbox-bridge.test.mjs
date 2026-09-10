@@ -102,15 +102,18 @@ test('real discovery runner queues new events without canonical writes, image wo
   const previous=Object.fromEntries(keys.map(k=>[k,process.env[k]]));
   Object.assign(process.env,{WIRKUNGSTICKER_PROCESSING_MODE:'dropbox_chatgpt_bridge',VISUAL_GENERATION_PROVIDER:'chatgpt_bridge',WOEK_NEWS_BRIDGE_PHASE:'discovery'});
   const files=['stories','state','newsroom','usage'].map(f=>`data/news/${f}.json`), before=files.map(f=>digest(fs.readFileSync(f)));
-  const source={source_id:'test',publisher_id:'publisher',name:'Test',url:'https://example.org/',feed_url:'https://example.org/rss',enabled:true,source_type:'official_rss',primary_source:true,access:{status:'public',article:'metadata_only',cost_usd:0},frequency_class:'high_frequency'};
-  const rss='<rss><channel><item><title>Bund beschließt Klimagesetz zur Energieversorgung</title><link>https://example.org/a</link><description>Neue Regeln verändern Investitionen in Energie und Infrastruktur.</description><pubDate>Thu, 10 Sep 2026 06:40:00 GMT</pubDate></item></channel></rss>';
-  let calls=0;
+  const source={source_id:'test',publisher_id:'publisher',name:'Test',url:'https://example.org/',feed_url:'https://example.org/rss',enabled:true,source_type:'official_rss',primary_source:true,access:{status:'public',article:'bounded_public_text',cost_usd:0},frequency_class:'high_frequency'};
+  const rss='<rss><channel><item><title>Bund beschließt Klimagesetz zur Energieversorgung</title><link>https://example.org/a</link><description>Neue Regeln verändern Investitionen in Energie und Infrastruktur.</description><pubDate>Thu, 10 Sep 2026 06:40:00 GMT</pubDate></item><item><title>Bundestag beschließt Krankenhausreform: Milliarden für Pflege und Versorgung</title><link>https://example.org/b</link><description>Das Gesetz verändert Finanzierung, Beschäftigung, Pflege und medizinische Versorgung in Deutschland.</description><pubDate>Thu, 10 Sep 2026 06:39:00 GMT</pubDate></item></channel></rss>';
+  let calls=0,articleReads=0;
   try {
     const report=await runWirkungsticker({now,dryRun:false,bridgeProvider:provider,registry:{sources:[source],policy:{}},
       state:{source_status:{},seen_items:{},pending_story_ids:[],relevance_filter_version:'4.0'},storyStore:{stories:[]},usage:{runs:[]},
       newsroom:{source_items:{},events:{},event_sources:[],discovery_candidates:[]},budgetFx:{rate_date:'2026-09-10',rate_usd_per_eur:1.16},
-      fetchFeedImpl:async()=>{assert.ok(await provider.store.observation('impact-reassessment'),'existing-source reassessments must be handed off before feed I/O');return {body:rss,final_url:source.feed_url};},callAiImpl:async()=>{calls++;throw Error('NO_AI');},prepareTitleImage:async()=>{calls++;throw Error('NO_IMAGES');}});
+      fetchFeedImpl:async()=>{assert.ok(await provider.store.observation('impact-reassessment'),'existing-source reassessments must be handed off before feed I/O');return {body:rss,final_url:source.feed_url};},
+      fetchArticleImpl:async item=>{if(articleReads++)assert.ok(provider.store.all().some(j=>j.input.job_type==='new_story'&&j.status==='queued'),'first complete job reaches Inbox before the next source is fetched');return {excerpt:item.summary};},
+      callAiImpl:async()=>{calls++;throw Error('NO_AI');},prepareTitleImage:async()=>{calls++;throw Error('NO_IMAGES');}});
     assert.equal(calls,0);assert.equal(report.ai_calls,0);assert.equal(report.source_successes,1);assert.ok(report.bridge_enqueued.length);
+    assert.equal(articleReads,2);assert.equal(provider.store.observation('discovery-progress').stage,'completed');
     assert.deepEqual(files.map(f=>digest(fs.readFileSync(f))),before);
   } finally {for(const k of keys)if(previous[k]===undefined)delete process.env[k];else process.env[k]=previous[k];}
 });
