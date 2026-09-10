@@ -1,7 +1,6 @@
 // Context research uses the same bounded public access path as discovery.
 // No model, reader proxy, credentials, or paid provider is invoked here.
-import fs from 'node:fs';
-import path from 'node:path';
+import { loadNewsRegistry } from '../registry.mjs';
 import { fetchPublicArticle, extractArticleText } from '../lib.mjs';
 import { safeUrl, hash, assertSchema } from './contract.mjs';
 export const RESEARCH_FUNCTIONS = ['event','mechanism','reference','counter_evidence'];
@@ -20,7 +19,7 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
   if (!Array.isArray(candidates) || candidates.length > 12) throw Error('IMPACT_RESEARCH_SOURCE_LIMIT');
   assertSchema(researchSourceSchema, candidates);
   if (!candidates.length) return [];
-  const registry = JSON.parse(fs.readFileSync(path.join(root,'content/news/source-registry.json')));
+  const registry = loadNewsRegistry(root);
   const ids = new Set(existing.map(s=>s.source_id)), accepted = [];
   for (const candidate of candidates) {
     const url = safeUrl(candidate.url), hostname = new URL(url).hostname;

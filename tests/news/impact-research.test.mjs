@@ -1,5 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {sourceAccess} from '../../scripts/news/access-policy.mjs';
 import { verifyImpactResearch } from '../../scripts/news/bridge/impact-research.mjs';
 const now='2026-09-10T14:00:00Z';
 const quote='A documented mechanism connects the proposed change to the observed system response.';
@@ -28,4 +32,19 @@ test('research accepts extracted public PDF text without retaining the complete 
 });
 test('empty supplementary research requires no registry or network access',async()=>{
   assert.deepEqual(await verifyImpactResearch(fixture(),[],[],now,{root:'/nonexistent',fetchDocument:async()=>{throw Error('unexpected network');}}),[]);
+});
+test('research uses the same normalized registry and explicit access overrides as discovery',async()=>{
+ const fetchDocument=async(item,registry)=>{
+  const access=sourceAccess(registry,'article');if(!access.allowed)throw Error(access.reason);
+  return {body:`<article>${quote}</article>`,final_url:item.url};
+ };
+ const official={...source,url:'https://www.ecb.europa.eu/mopo/intro/transmission/html/index.en.html'};
+ assert.equal((await verifyImpactResearch(fixture(),[official],[],now,{fetchDocument})).length,1);
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'impact-registry-'));
+ try{
+  fs.mkdirSync(path.join(root,'content/news'),{recursive:true});
+  fs.writeFileSync(path.join(root,'content/news/source-registry.json'),JSON.stringify({policy:{},sources:[{source_id:'research-site',name:'Publisher',url:source.url,feed_url:source.url,source_type:'official_rss',enabled:true}]}));
+  fs.writeFileSync(path.join(root,'content/news/media-registry.json'),JSON.stringify({sources:[],source_overrides:{'research-site':{access:{status:'public',article:'disabled'}}}}));
+  await assert.rejects(verifyImpactResearch(fixture(),[source],[],now,{root,fetchDocument}),/SOURCE_METADATA_ONLY/);
+ }finally{fs.rmSync(root,{recursive:true,force:true});}
 });
