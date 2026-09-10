@@ -2,7 +2,7 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-10T21:26:42.428Z",
+  "updated_at": "2026-09-10T22:26:58.226Z",
   "stories": [
     {
       "story_id": "wt-2e8df4ac304551de",
@@ -7374,17 +7374,17 @@
         "mode": "editorial",
         "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-2494a20ad0456b89-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-9904786683ff7f9b-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-908aa2fa219bd8a0-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-bd0aec226b30318f-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-fdc7eca972da7708-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-09d6239c7eaa99d3-square.png",
           "width": 1080,
           "height": 1080
         },
@@ -7405,9 +7405,991 @@
       "status": "angekündigt",
       "analysis_type": "ex_ante",
       "importance": "hoch",
-      "impact_assessment": null,
-      "impact_sources": [],
-      "dimensions": null,
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Baden-Württemberg kündigt eine Task Force zur Beschleunigung des Netzausbaus an",
+        "evaluation_target": {
+          "label": "Zusätzliche Koordination und dadurch mögliche frühere nutzbare Netzkapazität in Baden-Württemberg",
+          "type": "measure"
+        },
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "baseline": "Bestehende Netze und ohnehin vorgesehener Ausbau ohne zusätzliche wirksame Beschleunigung durch die angekündigte Task Force.",
+        "counterfactual": "Ausbau und reguläres Engpassmanagement würden auch ohne die Task Force weiterlaufen. Bewertet wird nur ihr möglicher zusätzlicher Beschleunigungs- und Koordinationsbeitrag.",
+        "reference_frame": [
+          "Verlässliche und bezahlbare Versorgung, SDG 7 und 9",
+          "Klimaschutz und natürliche Lebensgrundlagen, SDG 13",
+          "Nachvollziehbare verantwortliche Institutionen, SDG 16; bestehende Beteiligungs- und Umweltverfahren"
+        ],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 3,
+            "likelihood": "medium",
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "evidence": "medium",
+                "path_quality": [
+                  "indirect",
+                  "systemic"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "research_pass": "second_pass",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "negligibility_rationale": "",
+                "label": "Zusätzliche Netzkapazität kann Versorgung und Teilhabe verlässlicher machen",
+                "magnitude": 3,
+                "source_ids": [
+                  "swr-aktuell",
+                  "research-smard-netzengpass-2026"
+                ],
+                "mechanism": "Eine koordinierte Beschleunigung kann zusätzliche nutzbare Netzkapazität früher verfügbar machen. Wenn dadurch Engpässe sinken, können Haushalte, Betriebe und öffentliche Dienste verlässlicher versorgt werden. Weniger kostenintensive Engpasseingriffe können zusätzlich entlasten; die konkrete Stromrechnung hängt auch von Investitionskosten, Netzentgelten, Steuern und Tarifen ab.",
+                "recipients": [
+                  "Haushalte in betroffenen Netzgebieten",
+                  "Beschäftigte und Unternehmen mit gesicherter Stromversorgung",
+                  "Menschen mit besonderer Abhängigkeit von stromgestützter Versorgung"
+                ],
+                "reference_space": "Betroffene Netzgebiete in Baden-Württemberg gegenüber dem geplanten Ausbau ohne zusätzliche wirksame Beschleunigung.",
+                "time_horizon": "Erste Kapazitätsmaßnahmen laut Ankündigung in Monaten; größere Ausbaufolgen über fünf bis sieben Jahre und darüber hinaus.",
+                "condition": "Koordination führt tatsächlich zu zusätzlichen rechtzeitig nutzbaren Kapazitäten und weniger Engpässen; technische, finanzielle und personelle Voraussetzungen werden erfüllt.",
+                "assumptions": "Mehr nutzbare Kapazität vermindert im betrachteten Engpassgebiet tatsächlich die bestehende Begrenzung. Keine garantierte Verhinderung gezielter Angriffe und keine bereits eingetretene Preissenkung.",
+                "source_support": "SWR belegt Plan, beteiligte Akteure und Zielhorizonte. Die Bundesnetzagentur erläutert Engpässe, Netzausbau und kostenpflichtige Gegenmaßnahmen; bundesweite Daten sind kein lokaler Erfolgsbeleg.",
+                "limitations": "Keine beschlossene vollständige Maßnahmenliste, Kosten-Nutzen-Bilanz oder gemessene Wirkung der Task Force. Höhere Bau- und Finanzierungskosten können Entlastungen mindern; Versorgungssicherheit erfordert zusätzlich Schutz, Wartung und Redundanz.",
+                "first_order": "Koordinierte Planung kann konkrete Engpässe identifizieren und zusätzliche Kapazität früher bereitstellen.",
+                "second_order": "Geringere technische Begrenzungen können Stromnutzung in Haushalten, Produktion und öffentlichen Diensten erleichtern; tatsächlich vermiedene Unterbrechungen müssten gemessen werden.",
+                "third_order": "Zuverlässigere Infrastruktur kann regionale Investitions- und Anpassungsfähigkeit stärken, sofern die Verbesserungen dauerhaft bestehen und mehrere Sektoren erreichen.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Begrenzte Engpassgebiete sprechen für begrenzte Folgen; bei breiter dauerhafter Entlastung mehrerer Versorgungsräume wäre höhere Tragweite möglich. Die Bandbreite ist eine ordinale Szenarioschätzung."
+                },
+                "research_result": "Der technische Engpassmechanismus ist amtlich beschrieben. Die angekündigte Task Force hat noch keinen kausalen Erfolgsnachweis; eine Wirkung auf konkrete Haushaltstarife bleibt bedingt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Das landesweite Vorhaben kann mehrere große Versorgungsgebiete und ihre Haushalte oder Betriebe erreichen; der tatsächliche Empfängerkreis steht noch nicht fest.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-smard-netzengpass-2026"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Verlässlichere elektrische Versorgung kann Alltag und Produktionsfähigkeit deutlich verändern; eine existenzielle Veränderung jedes Anschlusses wird nicht angenommen.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-smard-netzengpass-2026"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Wirksame Netzinfrastruktur kann nach Inbetriebnahme über längere Zeit tragen; die Planungsankündigung allein hat diese Dauerwirkung noch nicht.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-smard-netzengpass-2026"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Die Verbesserung ist durch Betrieb und Wartung aufrechtzuerhalten und bei neuen Engpässen veränderlich; sie ist kein irreversibler persönlicher Zustand.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-smard-netzengpass-2026"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Stromabhängige Dienste und Haushalte mit geringer Ausweichmöglichkeit können besonders profitieren; ihre konkrete regionale Verteilung ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-smard-netzengpass-2026"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 4,
+                    "rationale": "Stromversorgung ist eine strukturelle Voraussetzung mehrerer Sektoren; bewertet wird der Infrastrukturhebel, keine bereits gemessene Kaskade.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-smard-netzengpass-2026"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "status": "not_decisive",
+                  "rationale": "Der bewertete bedingte Verbesserungspfad belegt keine schwere Schutzgrenzverletzung; ein Mindestwert aus einer hypothetischen Katastrophe wäre unbegründet.",
+                  "reference_frame": "Bezahlbare verlässliche Versorgung, ökologische Lebensgrundlagen und nachvollziehbare öffentliche Entscheidungen",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 20,
+                  "divisor": 6,
+                  "raw": 3.3333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Eine koordinierte Beschleunigung kann zusätzliche nutzbare Netzkapazität früher verfügbar machen. Wenn dadurch Engpässe sinken, können Haushalte, Betriebe und öffentliche Dienste verlässlicher versorgt werden. Weniger kostenintensive Engpasseingriffe können zusätzlich entlasten; die konkrete Stromrechnung hängt auch von Investitionskosten, Netzentgelten, Steuern und Tarifen ab. Keine beschlossene vollständige Maßnahmenliste, Kosten-Nutzen-Bilanz oder gemessene Wirkung der Task Force. Höhere Bau- und Finanzierungskosten können Entlastungen mindern; Versorgungssicherheit erfordert zusätzlich Schutz, Wartung und Redundanz.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Zusätzliche Netzkapazität kann Versorgung und Teilhabe verlässlicher machen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzliche Netzkapazität kann Versorgung und Teilhabe verlässlicher machen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 3,
+            "likelihood": "medium",
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "evidence": "medium",
+                "path_quality": [
+                  "indirect",
+                  "systemic"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "research_pass": "second_pass",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "negligibility_rationale": "",
+                "label": "Weniger Netzengpässe können mehr erneuerbaren Strom nutzbar machen",
+                "magnitude": 3,
+                "source_ids": [
+                  "swr-aktuell",
+                  "research-smard-netzengpass-2026"
+                ],
+                "mechanism": "Zusätzliche passende Netzkapazität kann Abregelung erneuerbarer Erzeugung und fossile Ersatzproduktion im Engpassmanagement reduzieren. Wenn dadurch emissionsintensivere Erzeugung verdrängt wird, sinkt die Klimabelastung relativ zum Ausbau ohne Beschleunigung. Reine zusätzliche Kapazität garantiert diese Verdrängung noch nicht.",
+                "recipients": [
+                  "Klimasystem als Empfänger zusätzlicher oder vermiedener Treibhausgasbelastung",
+                  "Ökosysteme und natürliche Lebensgrundlagen",
+                  "Menschen, die durch langfristige Klimafolgen betroffen wären"
+                ],
+                "reference_space": "Der durch zusätzliche Netznutzung in Baden-Württemberg veränderte Strommix und seine Emissionsfolgen gegenüber unveränderter Engpasslage.",
+                "time_horizon": "Mehrjährige Netzausbau- und Nutzungsphase; mögliche vermiedene Klimabelastung reicht darüber hinaus.",
+                "condition": "Neue Kapazität wird tatsächlich für erneuerbare Einspeisung oder emissionsärmere Elektrifizierung genutzt und verdrängt emissionsintensivere Erzeugung; zusätzliche Nachfrage und Baufolgen zehren den Vorteil nicht vollständig auf.",
+                "assumptions": "Die zusätzliche Übertragbarkeit erneuerbaren Stroms kann fossilen Redispatch ersetzen. Es wird keine feste Menge vermiedener Emissionen und kein automatischer Rückgang sämtlicher Stromkosten unterstellt.",
+                "source_support": "SMARD beschreibt Kapazitätsengpässe, Abregelung erneuerbarer Erzeugung und fossil geprägte Ausgleichserzeugung. SWR belegt lediglich den zusätzlichen Ausbauplan in Baden-Württemberg.",
+                "limitations": "Keine konkrete Netzplanung, Strommixsimulation oder Lebenszyklusbilanz dieses Vorhabens. Trassen, Baustoffe, Flächenbedarf und Zusatznachfrage können gegenläufig wirken; die Klimarichtung ist an tatsächliche Verdrängung gebunden.",
+                "first_order": "Mehr passende Netzkapazität kann bislang begrenzte erneuerbare Einspeisung beziehungsweise Stromtransporte ermöglichen.",
+                "second_order": "Wird dadurch fossile Ausgleichserzeugung oder andere emissionsintensive Nutzung verdrängt, kann die zusätzliche Treibhausgasbelastung geringer ausfallen.",
+                "third_order": "Bessere Netzintegration kann emissionsärmere Elektrifizierung erleichtern und fossile Bindungen begrenzen; tatsächliche Ausbaugeschwindigkeit und Energieträgermix entscheiden über diesen Systempfad.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Spannweite hängt von nutzbarer Kapazität, tatsächlich verdrängter Erzeugung und Nutzungsdauer ab. Keine Prozentwahrscheinlichkeit und keine vermiedene CO2-Menge werden daraus abgeleitet."
+                },
+                "research_result": "Amtliche Netzengpassdaten stützen den technischen Ermöglichungspfad. Sie erlauben keine Zurechnung bereits beobachteter bundesweiter Veränderungen zur erst angekündigten BW-Task-Force.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die mögliche Veränderung betrifft einen regionalen Teil des Stromsystems und den darüber vermittelten Beitrag zur Klimabelastung, nicht das gesamte Weltklima als Einzelmaßnahme.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-smard-netzengpass-2026"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ein Beitrag zur emissionsärmeren Stromnutzung ist plausibel; ohne Mengen- und Strommixdaten ist keine schwere globale Zustandsänderung durch diese Einzelmaßnahme anzusetzen.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-smard-netzengpass-2026"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Wirksame Netzanlagen können eine langfristige Nutzung emissionsärmerer Erzeugung ermöglichen.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-smard-netzengpass-2026"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 3,
+                    "rationale": "Infrastruktur prägt zukünftige Energiepfade; spätere Korrekturen sind möglich, können jedoch erheblichen Aufwand erfordern.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-smard-netzengpass-2026"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Klimafolgen können ungleich verteilt sein; ein spezifischer besonders vulnerabler Empfängerkreis dieses marginalen Beitrags ist nicht bestimmt.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-smard-netzengpass-2026"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 4,
+                    "rationale": "Die Integration erneuerbarer Erzeugung besitzt einen strukturellen Energiehebel, dessen Realisierung von weiterer Erzeugung und Nutzung abhängt.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-smard-netzengpass-2026"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "status": "not_decisive",
+                  "rationale": "Der bewertete bedingte Verbesserungspfad belegt keine schwere Schutzgrenzverletzung; ein Mindestwert aus einer hypothetischen Katastrophe wäre unbegründet.",
+                  "reference_frame": "Bezahlbare verlässliche Versorgung, ökologische Lebensgrundlagen und nachvollziehbare öffentliche Entscheidungen",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Zusätzliche passende Netzkapazität kann Abregelung erneuerbarer Erzeugung und fossile Ersatzproduktion im Engpassmanagement reduzieren. Wenn dadurch emissionsintensivere Erzeugung verdrängt wird, sinkt die Klimabelastung relativ zum Ausbau ohne Beschleunigung. Reine zusätzliche Kapazität garantiert diese Verdrängung noch nicht. Keine konkrete Netzplanung, Strommixsimulation oder Lebenszyklusbilanz dieses Vorhabens. Trassen, Baustoffe, Flächenbedarf und Zusatznachfrage können gegenläufig wirken; die Klimarichtung ist an tatsächliche Verdrängung gebunden.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Weniger Netzengpässe können mehr erneuerbaren Strom nutzbar machen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Weniger Netzengpässe können mehr erneuerbaren Strom nutzbar machen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "evidence": "low",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "research_pass": "second_pass",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "negligibility_rationale": "",
+                "label": "Koordination kann öffentliche Infrastrukturentscheidungen nachvollziehbarer machen",
+                "magnitude": 2,
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "mechanism": "Wenn die Zusammenarbeit von Land, Netzbetreibern, Verbänden und Kommunen Zuständigkeiten und Entscheidungsschritte transparent klärt, können demokratisch verantwortliche Stellen Infrastrukturentscheidungen besser nachvollziehen und korrigieren. Eine Task Force allein belegt weder zusätzliche Beteiligung noch bessere Kontrolle.",
+                "recipients": [
+                  "Kommunale Vertretungen und betroffene örtliche Bevölkerung",
+                  "Öffentlich verantwortliche Entscheidungs- und Kontrollstellen"
+                ],
+                "reference_space": "Koordination und Nachvollziehbarkeit der betroffenen Infrastrukturentscheidungen in Baden-Württemberg gegenüber unveränderten Zuständigkeitsabläufen.",
+                "time_horizon": "Während der Einrichtung und mehrjährigen Begleitung des Vorhabens; darüber hinaus nur bei verstetigten transparenten Abläufen.",
+                "condition": "Zusammenarbeit verbessert tatsächlich Information, Zuständigkeitsklarheit und Rückkopplung zu legitimierten Entscheidungen. Bestehende Beteiligungs-, Kontroll- und Umweltverfahren bleiben wirksam.",
+                "assumptions": "Ein zusätzlicher koordinierter Austausch kann Transparenz und Korrekturfähigkeit unterstützen, wenn seine Ergebnisse dokumentiert und zuständigen demokratischen Gremien zugänglich sind.",
+                "source_support": "SWR nennt die vorgesehene Beteiligung mehrerer institutioneller Akteure. Öffentlichkeit, Entscheidungsregeln und Kontrollwirkung der Task Force sind dort nicht dokumentiert.",
+                "limitations": "Keine veröffentlichten Arbeits-, Transparenz- oder Beteiligungsregeln im gebundenen Material. Bloße Beschleunigung kann auch Kontrolle erschweren; der positive Befund gilt ausschließlich für den transparenten Koordinationspfad.",
+                "first_order": "Die Task Force kann bislang verteilte Informationen und Zuständigkeiten zusammenführen.",
+                "second_order": "Bei dokumentierten Entscheidungen kann Abstimmung zwischen kommunalen und staatlichen Stellen nachvollziehbarer werden.",
+                "third_order": "Wiederholbare transparente Koordination kann institutionelle Lernfähigkeit unterstützen; ein solcher Strukturwandel ist bislang nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Bei unveränderten Informations- und Kontrollmöglichkeiten bleibt die Zustandsänderung praktisch vernachlässigbar; bei verlässlich verstetigter regionaler Kooperation ist ein deutlicherer institutioneller Beitrag denkbar."
+                },
+                "research_result": "Die gezielte Prüfung des Ereignisberichts und der amtlichen technischen Kontextquelle ergibt keinen Beleg für neue demokratische Kontrollrechte. Deshalb bleibt dieser bedingte institutionelle Mechanismus ausdrücklich eine gering belegte Hypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Mehrere regionale staatliche, kommunale und privatwirtschaftliche Akteure sind als Beteiligte vorgesehen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Verbesserte Abstimmung würde bestehende Verfahren unterstützen, keine grundlegende neue demokratische Ordnung herstellen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Koordination kann die mehrjährige Planung begleiten; eine dauerhafte institutionelle Änderung ist offen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Die Organisation einer Task Force und ihre Informationswege bleiben vergleichsweise leicht veränderbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene Kommunen können unterschiedlich gut Gehör finden; besondere Verbesserungen für bisher benachteiligte Gruppen sind nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Bei Verstetigung ist ein Lern- und Rückkopplungspfad zweiter Ordnung möglich; ein fundamentaler Systemwechsel wird nicht unterstellt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "status": "not_decisive",
+                  "rationale": "Der bewertete bedingte Verbesserungspfad belegt keine schwere Schutzgrenzverletzung; ein Mindestwert aus einer hypothetischen Katastrophe wäre unbegründet.",
+                  "reference_frame": "Bezahlbare verlässliche Versorgung, ökologische Lebensgrundlagen und nachvollziehbare öffentliche Entscheidungen",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Wenn die Zusammenarbeit von Land, Netzbetreibern, Verbänden und Kommunen Zuständigkeiten und Entscheidungsschritte transparent klärt, können demokratisch verantwortliche Stellen Infrastrukturentscheidungen besser nachvollziehen und korrigieren. Eine Task Force allein belegt weder zusätzliche Beteiligung noch bessere Kontrolle. Keine veröffentlichten Arbeits-, Transparenz- oder Beteiligungsregeln im gebundenen Material. Bloße Beschleunigung kann auch Kontrolle erschweren; der positive Befund gilt ausschließlich für den transparenten Koordinationspfad.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Koordination kann öffentliche Infrastrukturentscheidungen nachvollziehbarer machen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Koordination kann öffentliche Infrastrukturentscheidungen nachvollziehbarer machen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "system_check": {
+          "central_dimensions": [
+            "human",
+            "planet"
+          ],
+          "cross_dimension_review": {
+            "human": "Eine koordinierte Beschleunigung kann zusätzliche nutzbare Netzkapazität früher verfügbar machen. Wenn dadurch Engpässe sinken, können Haushalte, Betriebe und öffentliche Dienste verlässlicher versorgt werden. Weniger kostenintensive Engpasseingriffe können zusätzlich entlasten; die konkrete Stromrechnung hängt auch von Investitionskosten, Netzentgelten, Steuern und Tarifen ab.",
+            "planet": "Zusätzliche passende Netzkapazität kann Abregelung erneuerbarer Erzeugung und fossile Ersatzproduktion im Engpassmanagement reduzieren. Wenn dadurch emissionsintensivere Erzeugung verdrängt wird, sinkt die Klimabelastung relativ zum Ausbau ohne Beschleunigung. Reine zusätzliche Kapazität garantiert diese Verdrängung noch nicht.",
+            "democracy": "Wenn die Zusammenarbeit von Land, Netzbetreibern, Verbänden und Kommunen Zuständigkeiten und Entscheidungsschritte transparent klärt, können demokratisch verantwortliche Stellen Infrastrukturentscheidungen besser nachvollziehen und korrigieren. Eine Task Force allein belegt weder zusätzliche Beteiligung noch bessere Kontrolle."
+          },
+          "first_order": "Koordinierte Planung kann konkrete Engpässe identifizieren und zusätzliche Kapazität früher bereitstellen.",
+          "second_order": "Wird dadurch fossile Ausgleichserzeugung oder andere emissionsintensive Nutzung verdrängt, kann die zusätzliche Treibhausgasbelastung geringer ausfallen.",
+          "third_order": "Besser abgestimmte Kapazitäten können Elektrifizierung, regionale Versorgung und institutionelles Lernen unterstützen. Dauerhafte Veränderungen sind in allen drei Räumen erst zu prüfen.",
+          "enablement": [],
+          "counter_evidence": [
+            "Keine beschlossene vollständige Maßnahmenliste, Kosten-Nutzen-Bilanz oder gemessene Wirkung der Task Force. Höhere Bau- und Finanzierungskosten können Entlastungen mindern; Versorgungssicherheit erfordert zusätzlich Schutz, Wartung und Redundanz.",
+            "Keine konkrete Netzplanung, Strommixsimulation oder Lebenszyklusbilanz dieses Vorhabens. Trassen, Baustoffe, Flächenbedarf und Zusatznachfrage können gegenläufig wirken; die Klimarichtung ist an tatsächliche Verdrängung gebunden.",
+            "Keine veröffentlichten Arbeits-, Transparenz- oder Beteiligungsregeln im gebundenen Material. Bloße Beschleunigung kann auch Kontrolle erschweren; der positive Befund gilt ausschließlich für den transparenten Koordinationspfad."
+          ],
+          "source_independence": "SWR berichtet die Ankündigung unter Berufung auf das Landesministerium. SMARD ist eine gesonderte amtliche technische Kontextquelle; seine bundesweiten Zahlen bestätigen keinen Erfolg dieser Task Force.",
+          "institutional_status": "Angekündigte Landeskoordinierung, kein nachgewiesener Ausbauabschluss und kein Bundesgesetz. Bundes-GGO/eNAP sind für diese Landesmaßnahme nicht pauschal anwendbar; bestehende Fach- und Beteiligungsverfahren bleiben Referenz."
+        },
+        "publication_status": "ready",
+        "review": {
+          "status": "reassessed",
+          "at": "2026-09-10T22:26:58.226Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "swr-aktuell",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Ankündigung, vorgesehene Beteiligte sowie kurz- und mittelfristige Zielhorizonte."
+          },
+          {
+            "source_id": "research-smard-netzengpass-2026",
+            "functions": [
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Netzkapazität kann Engpässe mindern und erneuerbare Einspeisung erleichtern. Der bundesweite Quartalsvergleich belegt weder eine Wirkung der erst angekündigten BW-Task-Force noch garantierte Tarifsenkungen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://www.smard.de/page/home/topic-article/444/221112/massnahmenvolumen-und-kosten-gesunken",
+          "title": "Netzengpassmanagement im 1. Quartal 2026: Maßnahmenvolumen und Kosten gesunken",
+          "publisher": "Bundesnetzagentur / SMARD",
+          "source_id": "research-smard-netzengpass-2026",
+          "source_function": "mechanism"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 3,
+          "likelihood": "medium",
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "evidence": "medium",
+              "path_quality": [
+                "indirect",
+                "systemic"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "research_pass": "second_pass",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "negligibility_rationale": "",
+              "label": "Zusätzliche Netzkapazität kann Versorgung und Teilhabe verlässlicher machen",
+              "magnitude": 3,
+              "source_ids": [
+                "swr-aktuell",
+                "research-smard-netzengpass-2026"
+              ],
+              "mechanism": "Eine koordinierte Beschleunigung kann zusätzliche nutzbare Netzkapazität früher verfügbar machen. Wenn dadurch Engpässe sinken, können Haushalte, Betriebe und öffentliche Dienste verlässlicher versorgt werden. Weniger kostenintensive Engpasseingriffe können zusätzlich entlasten; die konkrete Stromrechnung hängt auch von Investitionskosten, Netzentgelten, Steuern und Tarifen ab.",
+              "recipients": [
+                "Haushalte in betroffenen Netzgebieten",
+                "Beschäftigte und Unternehmen mit gesicherter Stromversorgung",
+                "Menschen mit besonderer Abhängigkeit von stromgestützter Versorgung"
+              ],
+              "reference_space": "Betroffene Netzgebiete in Baden-Württemberg gegenüber dem geplanten Ausbau ohne zusätzliche wirksame Beschleunigung.",
+              "time_horizon": "Erste Kapazitätsmaßnahmen laut Ankündigung in Monaten; größere Ausbaufolgen über fünf bis sieben Jahre und darüber hinaus.",
+              "condition": "Koordination führt tatsächlich zu zusätzlichen rechtzeitig nutzbaren Kapazitäten und weniger Engpässen; technische, finanzielle und personelle Voraussetzungen werden erfüllt.",
+              "assumptions": "Mehr nutzbare Kapazität vermindert im betrachteten Engpassgebiet tatsächlich die bestehende Begrenzung. Keine garantierte Verhinderung gezielter Angriffe und keine bereits eingetretene Preissenkung.",
+              "source_support": "SWR belegt Plan, beteiligte Akteure und Zielhorizonte. Die Bundesnetzagentur erläutert Engpässe, Netzausbau und kostenpflichtige Gegenmaßnahmen; bundesweite Daten sind kein lokaler Erfolgsbeleg.",
+              "limitations": "Keine beschlossene vollständige Maßnahmenliste, Kosten-Nutzen-Bilanz oder gemessene Wirkung der Task Force. Höhere Bau- und Finanzierungskosten können Entlastungen mindern; Versorgungssicherheit erfordert zusätzlich Schutz, Wartung und Redundanz.",
+              "first_order": "Koordinierte Planung kann konkrete Engpässe identifizieren und zusätzliche Kapazität früher bereitstellen.",
+              "second_order": "Geringere technische Begrenzungen können Stromnutzung in Haushalten, Produktion und öffentlichen Diensten erleichtern; tatsächlich vermiedene Unterbrechungen müssten gemessen werden.",
+              "third_order": "Zuverlässigere Infrastruktur kann regionale Investitions- und Anpassungsfähigkeit stärken, sofern die Verbesserungen dauerhaft bestehen und mehrere Sektoren erreichen.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Begrenzte Engpassgebiete sprechen für begrenzte Folgen; bei breiter dauerhafter Entlastung mehrerer Versorgungsräume wäre höhere Tragweite möglich. Die Bandbreite ist eine ordinale Szenarioschätzung."
+              },
+              "research_result": "Der technische Engpassmechanismus ist amtlich beschrieben. Die angekündigte Task Force hat noch keinen kausalen Erfolgsnachweis; eine Wirkung auf konkrete Haushaltstarife bleibt bedingt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Das landesweite Vorhaben kann mehrere große Versorgungsgebiete und ihre Haushalte oder Betriebe erreichen; der tatsächliche Empfängerkreis steht noch nicht fest.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Verlässlichere elektrische Versorgung kann Alltag und Produktionsfähigkeit deutlich verändern; eine existenzielle Veränderung jedes Anschlusses wird nicht angenommen.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Wirksame Netzinfrastruktur kann nach Inbetriebnahme über längere Zeit tragen; die Planungsankündigung allein hat diese Dauerwirkung noch nicht.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Die Verbesserung ist durch Betrieb und Wartung aufrechtzuerhalten und bei neuen Engpässen veränderlich; sie ist kein irreversibler persönlicher Zustand.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Stromabhängige Dienste und Haushalte mit geringer Ausweichmöglichkeit können besonders profitieren; ihre konkrete regionale Verteilung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                },
+                "system_depth": {
+                  "value": 4,
+                  "rationale": "Stromversorgung ist eine strukturelle Voraussetzung mehrerer Sektoren; bewertet wird der Infrastrukturhebel, keine bereits gemessene Kaskade.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "status": "not_decisive",
+                "rationale": "Der bewertete bedingte Verbesserungspfad belegt keine schwere Schutzgrenzverletzung; ein Mindestwert aus einer hypothetischen Katastrophe wäre unbegründet.",
+                "reference_frame": "Bezahlbare verlässliche Versorgung, ökologische Lebensgrundlagen und nachvollziehbare öffentliche Entscheidungen",
+                "source_ids": [
+                  "swr-aktuell",
+                  "research-smard-netzengpass-2026"
+                ]
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 20,
+                "divisor": 6,
+                "raw": 3.3333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Eine koordinierte Beschleunigung kann zusätzliche nutzbare Netzkapazität früher verfügbar machen. Wenn dadurch Engpässe sinken, können Haushalte, Betriebe und öffentliche Dienste verlässlicher versorgt werden. Weniger kostenintensive Engpasseingriffe können zusätzlich entlasten; die konkrete Stromrechnung hängt auch von Investitionskosten, Netzentgelten, Steuern und Tarifen ab. Keine beschlossene vollständige Maßnahmenliste, Kosten-Nutzen-Bilanz oder gemessene Wirkung der Task Force. Höhere Bau- und Finanzierungskosten können Entlastungen mindern; Versorgungssicherheit erfordert zusätzlich Schutz, Wartung und Redundanz.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzliche Netzkapazität kann Versorgung und Teilhabe verlässlicher machen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Zusätzliche Netzkapazität kann Versorgung und Teilhabe verlässlicher machen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 3,
+          "likelihood": "medium",
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "evidence": "medium",
+              "path_quality": [
+                "indirect",
+                "systemic"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "research_pass": "second_pass",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "negligibility_rationale": "",
+              "label": "Weniger Netzengpässe können mehr erneuerbaren Strom nutzbar machen",
+              "magnitude": 3,
+              "source_ids": [
+                "swr-aktuell",
+                "research-smard-netzengpass-2026"
+              ],
+              "mechanism": "Zusätzliche passende Netzkapazität kann Abregelung erneuerbarer Erzeugung und fossile Ersatzproduktion im Engpassmanagement reduzieren. Wenn dadurch emissionsintensivere Erzeugung verdrängt wird, sinkt die Klimabelastung relativ zum Ausbau ohne Beschleunigung. Reine zusätzliche Kapazität garantiert diese Verdrängung noch nicht.",
+              "recipients": [
+                "Klimasystem als Empfänger zusätzlicher oder vermiedener Treibhausgasbelastung",
+                "Ökosysteme und natürliche Lebensgrundlagen",
+                "Menschen, die durch langfristige Klimafolgen betroffen wären"
+              ],
+              "reference_space": "Der durch zusätzliche Netznutzung in Baden-Württemberg veränderte Strommix und seine Emissionsfolgen gegenüber unveränderter Engpasslage.",
+              "time_horizon": "Mehrjährige Netzausbau- und Nutzungsphase; mögliche vermiedene Klimabelastung reicht darüber hinaus.",
+              "condition": "Neue Kapazität wird tatsächlich für erneuerbare Einspeisung oder emissionsärmere Elektrifizierung genutzt und verdrängt emissionsintensivere Erzeugung; zusätzliche Nachfrage und Baufolgen zehren den Vorteil nicht vollständig auf.",
+              "assumptions": "Die zusätzliche Übertragbarkeit erneuerbaren Stroms kann fossilen Redispatch ersetzen. Es wird keine feste Menge vermiedener Emissionen und kein automatischer Rückgang sämtlicher Stromkosten unterstellt.",
+              "source_support": "SMARD beschreibt Kapazitätsengpässe, Abregelung erneuerbarer Erzeugung und fossil geprägte Ausgleichserzeugung. SWR belegt lediglich den zusätzlichen Ausbauplan in Baden-Württemberg.",
+              "limitations": "Keine konkrete Netzplanung, Strommixsimulation oder Lebenszyklusbilanz dieses Vorhabens. Trassen, Baustoffe, Flächenbedarf und Zusatznachfrage können gegenläufig wirken; die Klimarichtung ist an tatsächliche Verdrängung gebunden.",
+              "first_order": "Mehr passende Netzkapazität kann bislang begrenzte erneuerbare Einspeisung beziehungsweise Stromtransporte ermöglichen.",
+              "second_order": "Wird dadurch fossile Ausgleichserzeugung oder andere emissionsintensive Nutzung verdrängt, kann die zusätzliche Treibhausgasbelastung geringer ausfallen.",
+              "third_order": "Bessere Netzintegration kann emissionsärmere Elektrifizierung erleichtern und fossile Bindungen begrenzen; tatsächliche Ausbaugeschwindigkeit und Energieträgermix entscheiden über diesen Systempfad.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Spannweite hängt von nutzbarer Kapazität, tatsächlich verdrängter Erzeugung und Nutzungsdauer ab. Keine Prozentwahrscheinlichkeit und keine vermiedene CO2-Menge werden daraus abgeleitet."
+              },
+              "research_result": "Amtliche Netzengpassdaten stützen den technischen Ermöglichungspfad. Sie erlauben keine Zurechnung bereits beobachteter bundesweiter Veränderungen zur erst angekündigten BW-Task-Force.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die mögliche Veränderung betrifft einen regionalen Teil des Stromsystems und den darüber vermittelten Beitrag zur Klimabelastung, nicht das gesamte Weltklima als Einzelmaßnahme.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ein Beitrag zur emissionsärmeren Stromnutzung ist plausibel; ohne Mengen- und Strommixdaten ist keine schwere globale Zustandsänderung durch diese Einzelmaßnahme anzusetzen.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Wirksame Netzanlagen können eine langfristige Nutzung emissionsärmerer Erzeugung ermöglichen.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 3,
+                  "rationale": "Infrastruktur prägt zukünftige Energiepfade; spätere Korrekturen sind möglich, können jedoch erheblichen Aufwand erfordern.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Klimafolgen können ungleich verteilt sein; ein spezifischer besonders vulnerabler Empfängerkreis dieses marginalen Beitrags ist nicht bestimmt.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                },
+                "system_depth": {
+                  "value": 4,
+                  "rationale": "Die Integration erneuerbarer Erzeugung besitzt einen strukturellen Energiehebel, dessen Realisierung von weiterer Erzeugung und Nutzung abhängt.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-smard-netzengpass-2026"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "status": "not_decisive",
+                "rationale": "Der bewertete bedingte Verbesserungspfad belegt keine schwere Schutzgrenzverletzung; ein Mindestwert aus einer hypothetischen Katastrophe wäre unbegründet.",
+                "reference_frame": "Bezahlbare verlässliche Versorgung, ökologische Lebensgrundlagen und nachvollziehbare öffentliche Entscheidungen",
+                "source_ids": [
+                  "swr-aktuell",
+                  "research-smard-netzengpass-2026"
+                ]
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Zusätzliche passende Netzkapazität kann Abregelung erneuerbarer Erzeugung und fossile Ersatzproduktion im Engpassmanagement reduzieren. Wenn dadurch emissionsintensivere Erzeugung verdrängt wird, sinkt die Klimabelastung relativ zum Ausbau ohne Beschleunigung. Reine zusätzliche Kapazität garantiert diese Verdrängung noch nicht. Keine konkrete Netzplanung, Strommixsimulation oder Lebenszyklusbilanz dieses Vorhabens. Trassen, Baustoffe, Flächenbedarf und Zusatznachfrage können gegenläufig wirken; die Klimarichtung ist an tatsächliche Verdrängung gebunden.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Weniger Netzengpässe können mehr erneuerbaren Strom nutzbar machen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Weniger Netzengpässe können mehr erneuerbaren Strom nutzbar machen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "evidence": "low",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "research_pass": "second_pass",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "negligibility_rationale": "",
+              "label": "Koordination kann öffentliche Infrastrukturentscheidungen nachvollziehbarer machen",
+              "magnitude": 2,
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "mechanism": "Wenn die Zusammenarbeit von Land, Netzbetreibern, Verbänden und Kommunen Zuständigkeiten und Entscheidungsschritte transparent klärt, können demokratisch verantwortliche Stellen Infrastrukturentscheidungen besser nachvollziehen und korrigieren. Eine Task Force allein belegt weder zusätzliche Beteiligung noch bessere Kontrolle.",
+              "recipients": [
+                "Kommunale Vertretungen und betroffene örtliche Bevölkerung",
+                "Öffentlich verantwortliche Entscheidungs- und Kontrollstellen"
+              ],
+              "reference_space": "Koordination und Nachvollziehbarkeit der betroffenen Infrastrukturentscheidungen in Baden-Württemberg gegenüber unveränderten Zuständigkeitsabläufen.",
+              "time_horizon": "Während der Einrichtung und mehrjährigen Begleitung des Vorhabens; darüber hinaus nur bei verstetigten transparenten Abläufen.",
+              "condition": "Zusammenarbeit verbessert tatsächlich Information, Zuständigkeitsklarheit und Rückkopplung zu legitimierten Entscheidungen. Bestehende Beteiligungs-, Kontroll- und Umweltverfahren bleiben wirksam.",
+              "assumptions": "Ein zusätzlicher koordinierter Austausch kann Transparenz und Korrekturfähigkeit unterstützen, wenn seine Ergebnisse dokumentiert und zuständigen demokratischen Gremien zugänglich sind.",
+              "source_support": "SWR nennt die vorgesehene Beteiligung mehrerer institutioneller Akteure. Öffentlichkeit, Entscheidungsregeln und Kontrollwirkung der Task Force sind dort nicht dokumentiert.",
+              "limitations": "Keine veröffentlichten Arbeits-, Transparenz- oder Beteiligungsregeln im gebundenen Material. Bloße Beschleunigung kann auch Kontrolle erschweren; der positive Befund gilt ausschließlich für den transparenten Koordinationspfad.",
+              "first_order": "Die Task Force kann bislang verteilte Informationen und Zuständigkeiten zusammenführen.",
+              "second_order": "Bei dokumentierten Entscheidungen kann Abstimmung zwischen kommunalen und staatlichen Stellen nachvollziehbarer werden.",
+              "third_order": "Wiederholbare transparente Koordination kann institutionelle Lernfähigkeit unterstützen; ein solcher Strukturwandel ist bislang nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Bei unveränderten Informations- und Kontrollmöglichkeiten bleibt die Zustandsänderung praktisch vernachlässigbar; bei verlässlich verstetigter regionaler Kooperation ist ein deutlicherer institutioneller Beitrag denkbar."
+              },
+              "research_result": "Die gezielte Prüfung des Ereignisberichts und der amtlichen technischen Kontextquelle ergibt keinen Beleg für neue demokratische Kontrollrechte. Deshalb bleibt dieser bedingte institutionelle Mechanismus ausdrücklich eine gering belegte Hypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Mehrere regionale staatliche, kommunale und privatwirtschaftliche Akteure sind als Beteiligte vorgesehen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Verbesserte Abstimmung würde bestehende Verfahren unterstützen, keine grundlegende neue demokratische Ordnung herstellen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Koordination kann die mehrjährige Planung begleiten; eine dauerhafte institutionelle Änderung ist offen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Die Organisation einer Task Force und ihre Informationswege bleiben vergleichsweise leicht veränderbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene Kommunen können unterschiedlich gut Gehör finden; besondere Verbesserungen für bisher benachteiligte Gruppen sind nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Bei Verstetigung ist ein Lern- und Rückkopplungspfad zweiter Ordnung möglich; ein fundamentaler Systemwechsel wird nicht unterstellt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "status": "not_decisive",
+                "rationale": "Der bewertete bedingte Verbesserungspfad belegt keine schwere Schutzgrenzverletzung; ein Mindestwert aus einer hypothetischen Katastrophe wäre unbegründet.",
+                "reference_frame": "Bezahlbare verlässliche Versorgung, ökologische Lebensgrundlagen und nachvollziehbare öffentliche Entscheidungen",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Wenn die Zusammenarbeit von Land, Netzbetreibern, Verbänden und Kommunen Zuständigkeiten und Entscheidungsschritte transparent klärt, können demokratisch verantwortliche Stellen Infrastrukturentscheidungen besser nachvollziehen und korrigieren. Eine Task Force allein belegt weder zusätzliche Beteiligung noch bessere Kontrolle. Keine veröffentlichten Arbeits-, Transparenz- oder Beteiligungsregeln im gebundenen Material. Bloße Beschleunigung kann auch Kontrolle erschweren; der positive Befund gilt ausschließlich für den transparenten Koordinationspfad.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Koordination kann öffentliche Infrastrukturentscheidungen nachvollziehbarer machen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Koordination kann öffentliche Infrastrukturentscheidungen nachvollziehbarer machen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
       "visuals": null,
       "media_impact": {
         "relevant": true,
