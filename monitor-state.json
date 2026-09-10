@@ -11,9 +11,14 @@
     },
     "bridge-discovery": {
       "firstSeen": "2026-09-10T11:20:35.644Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "b8f7562e2c27abb5e296275b",
+      "content": "⚠ WÖk-Betriebsstörung\nBridge-Quellenlauf: Seit über zwei Stunden kein erfolgreicher Bridge-Quellenlauf.\nSeit: 2026-09-10T11:20:35.644Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-10"
 }
