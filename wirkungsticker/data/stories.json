@@ -1,7 +1,1632 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-10T09:33:38.899Z",
+  "updated_at": "2026-09-10T10:14:05.777Z",
   "stories": [
+    {
+      "story_id": "wt-15dce829e46b9acf",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-2494a20ad0456b89-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-908aa2fa219bd8a0-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-fdc7eca972da7708-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-35753e8299705642-source.png",
+          "alt_text": "Technische Illustration eines Stromnetzes mit Umspannwerk, Leitungen und zusätzlicher Netzverbindung zur Entlastung eines Engpasses."
+        }
+      },
+      "slug": "nach-angriffen-auf-umspannwerke-netzausbau-soll-schneller-gehen-mithilfe-von-task-force-6b9acf",
+      "title": "Baden-Württemberg plant Task Force für schnelleren Stromnetzausbau",
+      "source_summary": "SWR Aktuell berichtet, Baden-Württembergs Landesregierung wolle die Kapazität des Stromnetzes erhöhen und dafür im Herbst eine Task Force Netzausbau mit Netzbetreibern, Verbänden und Kommunen starten. In überlasteten Gebieten solle die verfügbare elektrische Maximalleistung schon innerhalb der nächsten Monate deutlich steigen.\n\nEin weiteres Ziel sei, den Zeitraum für den Netzausbau deutlich zu verkürzen. Für Maßnahmen nennt der Bericht einen Zeithorizont von fünf bis sieben Jahren; Netzbetreiber gingen derzeit von zehn Jahren aus. Die angekündigten Schritte sind damit belegt, eine bereits erreichte Netzverstärkung oder höhere Versorgungssicherheit aber noch nicht.",
+      "summary": "Baden-Württemberg will im Herbst eine Task Force starten, um Netzkapazität schneller auszubauen und Engpässe zu vermeiden. Die Maßnahmen sind angekündigt; eine bereits verbesserte Versorgungssicherheit ist noch nicht belegt.",
+      "detail_summary": "Baden-Württemberg will laut SWR die Netzkapazität erhöhen und dafür im Herbst eine Task Force Netzausbau starten. Beteiligt werden sollen Netzbetreiber, Verbände und Kommunen. In überlasteten Gebieten soll die verfügbare elektrische Maximalleistung bereits in den nächsten Monaten steigen. Zugleich soll der Netzausbau schneller werden; als Zielhorizont nennt der Bericht fünf bis sieben statt derzeit zehn Jahren. Die Wirkung ist noch ex ante: Erst wenn Kapazität tatsächlich steigt und Engpässe seltener werden, verbessert sich die Versorgungssicherheit.",
+      "why_relevant": "Stromnetzkapazität und Ausbaugeschwindigkeit sind zentrale Voraussetzungen für Versorgungssicherheit und die Belastbarkeit kritischer Infrastruktur.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Mehr verfügbare Netzkapazität kann Versorgungsengpässe verringern und die Verlässlichkeit der Stromversorgung für Haushalte und Betriebe erhöhen, wenn die angekündigten Maßnahmen tatsächlich umgesetzt werden.",
+          "positive_path": {
+            "mechanism": "Zusätzliche Netzkapazität und schnellerer Ausbau verringern in überlasteten Gebieten technische Engpässe.",
+            "state_change": "Strom kann in betroffenen Gebieten verlässlicher bereitgestellt werden, weil verfügbare Netzkapazität steigt und Engpässe abnehmen.",
+            "condition": "Die angekündigten Maßnahmen werden umgesetzt und erhöhen die tatsächlich verfügbare Netzkapazität ausreichend.",
+            "effect_role": "substantive_change",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Ein stärkeres Stromnetz kann für die Energiewende relevant sein, doch der Input belegt keine konkrete Umweltzustandsänderung oder einen bestimmten Erneuerbaren-Effekt.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die angekündigte Infrastrukturmaßnahme belegt keine konkrete Veränderung demokratischer Verfahren oder Schutzfunktionen.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Der Beitrag verknüpft die angekündigte Task Force prominent mit Angriffen auf Umspannwerke und einem unter Druck stehenden Stromnetz.",
+        "factual_core": "Baden-Württemberg will laut SWR im Herbst eine Task Force Netzausbau starten, Netzkapazität erhöhen und Ausbauzeiten verkürzen.",
+        "epistemic_status": {
+          "confirmed": [
+            "SWR berichtet konkrete Aussagen eines Ministeriumssprechers zu Task Force, Kapazitätszielen und kürzeren Ausbauzeiten."
+          ],
+          "actor_claims": [
+            "Das Ministerium will Engpässe auch in Extremsituationen vermeiden und die Stromversorgung sichern."
+          ],
+          "open": [
+            "Welche Maßnahmen beschlossen werden, wie viel zusätzliche Kapazität entsteht und ob Ausbauzeiten tatsächlich sinken."
+          ]
+        },
+        "attribution": {
+          "frame_source": "swr-aktuell",
+          "speaker": "SWR Aktuell und Umwelt- und Energieministerium Baden-Württemberg",
+          "original_term": "Angriffe und Druck auf das Stromnetz als Dringlichkeitsrahmen",
+          "usage_type": "editorial",
+          "placement": [
+            "headline",
+            "body"
+          ],
+          "attribution_quality": "clear"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Angriffe und Druck auf das Stromnetz als Dringlichkeitsrahmen",
+          "origin_in_story": "swr-aktuell",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Angriffe und Druck auf das Stromnetz als Dringlichkeitsrahmen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Das Stromnetz wird als durch Angriffe und weitere Belastungen verwundbare kritische Infrastruktur dargestellt, deren Kapazität schneller ausgebaut werden müsse.",
+          "implied_cause": "Der Beitrag nennt Angriffe, Extremwetter und Cyberattacken als Druckfaktoren; bestehende Netzengpässe haben im Input keine einzelne nachgewiesene Ursache.",
+          "implied_responsibility": "Die Landesregierung und beteiligte Netzakteure sollen Ausbau und Koordination beschleunigen.",
+          "implied_threat": "Engpässe und Störungen können die Verlässlichkeit der Stromversorgung beeinträchtigen.",
+          "implied_solution_space": "Task Force, zusätzliche verfügbare Netzkapazität und kürzere Ausbauzeiten.",
+          "material_omissions": [
+            "Keine Quantifizierung des Beitrags einzelner Angriffe zu strukturellen Netzengpässen.",
+            "Keine bereits gemessene Wirkung der noch nicht gestarteten Task Force."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Landespolitische Reaktion und Infrastrukturplanung nach Sicherheits- und Belastungsereignissen.",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "swr-aktuell",
+              "claim_supported": "SWR berichtet den geplanten Start der Task Force und die Ziele der Landesregierung."
+            }
+          ],
+          "uncertainty": "Die Kausalität zwischen einzelnen Angriffen und strukturellem Netzausbaubedarf ist im Input nicht nachgewiesen."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Debatte über kritische Infrastruktur, Versorgungssicherheit und Geschwindigkeit des Netzausbaus.",
+          "normalization_potential": "low",
+          "repetition_risk": "medium",
+          "polarization_potential": "Gering; der Rahmen erhöht vor allem die wahrgenommene Dringlichkeit.",
+          "trust_effect_potential": "Offen; kein beobachteter Vertrauenseffekt im Input.",
+          "discourse_effect_potential": "Die Verbindung mit Angriffen kann Netzausbau stärker als Sicherheits- und Resilienzaufgabe erscheinen lassen."
+        },
+        "impact_path": {
+          "first_order": "Der Beitrag verbindet Ausbaupläne mit konkreten Sicherheits- und Belastungsereignissen.",
+          "second_order": "Dadurch kann die Dringlichkeit von Netzkapazität und Ausbaugeschwindigkeit stärker wahrgenommen werden.",
+          "third_order": "Eine dauerhafte Sicherheitsrahmung könnte Prioritäten in Infrastrukturdebatten verschieben; ein beobachteter Effekt ist hier nicht belegt."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Task Force soll im Herbst starten; Kapazität und Ausbaugeschwindigkeit sollen verbessert werden.",
+          "what_is_inferred": "Die Platzierung verstärkt einen Resilienz- und Dringlichkeitsrahmen.",
+          "what_is_open": "Nur eine journalistische Quelle ist gebunden; keine Rezeptionsdaten.",
+          "facts": [
+            "Task Force soll im Herbst starten; Kapazität und Ausbaugeschwindigkeit sollen verbessert werden."
+          ],
+          "observations": [
+            "Angriffe auf Umspannwerke stehen bereits in der Überschrift und werden als Kontext für den Netzdruck genannt."
+          ],
+          "inferences": [
+            "Die Platzierung verstärkt einen Resilienz- und Dringlichkeitsrahmen."
+          ],
+          "impact_potentials": [
+            "Höhere Aufmerksamkeit für Versorgungssicherheit und beschleunigten Netzausbau."
+          ],
+          "impact_risks": [
+            "Strukturelle Netzengpässe könnten kommunikativ zu stark auf einzelne Angriffe zurückgeführt werden."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle ist gebunden; keine Rezeptionsdaten."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Der belegte Kern ist eine angekündigte Infrastrukturmaßnahme: Baden-Württemberg will im Herbst eine Task Force Netzausbau starten und Netzkapazität in überlasteten Gebieten erhöhen. SWR stellt diese Pläne im Zusammenhang mit jüngsten Angriffen auf Energieanlagen sowie weiteren Belastungen des Stromnetzes dar. Dieser Kontext macht die Verwundbarkeit kritischer Infrastruktur sichtbar, belegt aber nicht, dass die Angriffe allein Ursache der bestehenden Ausbau- oder Kapazitätsprobleme sind. Auch die Task Force selbst ist noch kein Wirkungsnachweis. Erst wenn zusätzliche Kapazität tatsächlich entsteht, Ausbauzeiten sinken und Engpässe messbar seltener werden, verändert sich die Versorgungssicherheit. Der kommunikative Rahmen richtet den Blick damit auf Resilienz und Dringlichkeit. Ein beobachteter Effekt dieser Rahmung auf öffentliche Einstellungen oder politische Entscheidungen ist im bereitgestellten Material nicht belegt.",
+        "editorial_assessment": "Der belegte Kern ist eine angekündigte Infrastrukturmaßnahme: Baden-Württemberg will im Herbst eine Task Force Netzausbau starten und Netzkapazität in überlasteten Gebieten erhöhen. SWR stellt diese Pläne im Zusammenhang mit jüngsten Angriffen auf Energieanlagen sowie weiteren Belastungen des Stromnetzes dar. Dieser Kontext macht die Verwundbarkeit kritischer Infrastruktur sichtbar, belegt aber nicht, dass die Angriffe allein Ursache der bestehenden Ausbau- oder Kapazitätsprobleme sind. Auch die Task Force selbst ist noch kein Wirkungsnachweis. Erst wenn zusätzliche Kapazität tatsächlich entsteht, Ausbauzeiten sinken und Engpässe messbar seltener werden, verändert sich die Versorgungssicherheit. Der kommunikative Rahmen richtet den Blick damit auf Resilienz und Dringlichkeit. Ein beobachteter Effekt dieser Rahmung auf öffentliche Einstellungen oder politische Entscheidungen ist im bereitgestellten Material nicht belegt.",
+        "fact_first_alternative": "Baden-Württemberg will im Herbst eine Task Force Netzausbau starten. Laut SWR sollen Netzkapazität in überlasteten Gebieten erhöht und Ausbauzeiten verkürzt werden; konkrete Wirkungen sind noch nicht gemessen.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Baden-Württemberg plant Task Force für schnelleren Stromnetzausbau",
+          "recommended_summary": "Baden-Württemberg will im Herbst eine Task Force starten, um Netzkapazität schneller auszubauen und Engpässe zu vermeiden. Die Maßnahmen sind angekündigt; eine bereits verbesserte Versorgungssicherheit ist noch nicht belegt.",
+          "recommended_meta_description": "Baden-Württemberg plant eine Task Force für mehr Netzkapazität und kürzere Ausbauzeiten. Der Start ist angekündigt; tatsächliche Versorgungseffekte stehen noch aus."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T10:14:05.777Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T08:50:18.000Z",
+      "last_updated": "2026-09-10T10:14:05.777Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-1cd6eb69f8a33bc6e1d8",
+      "case_file": null,
+      "source_published_at": "2026-09-10T08:50:18.000Z",
+      "published_at": "2026-09-10T10:14:05.777Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Start und konkrete Maßnahmen der Task Force prüfen.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigter Start der Task Force sowie konkrete Maßnahmen, Kapazitätswerte oder verkürzte Ausbauzeiten.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-3e150dbdb1fd2873",
+          "announced_at": "2026-09-10T08:50:18.000Z",
+          "follow_up_date": "2026-09-17T10:14:05.777Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/task-force-soll-netzausbau-in-bw-beschleunigen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T08:50:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-5b6860755205d4f9",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5b6860755205d4f9-f3f85ecf273ea85b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5b6860755205d4f9-05549cde980df93b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5b6860755205d4f9-886cfcb9b0c74d7a-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5b6860755205d4f9-9df7372ce39c3894-source.png",
+          "alt_text": "Sachliche Illustration eines Haushaltsbuchs mit Finanzblöcken und neutralem Schild als Symbol für Verteidigungsausgaben."
+        }
+      },
+      "slug": "deutlicher-anstieg-bei-den-verteidigungsausgaben-05d4f9",
+      "title": "Verteidigungsetat 2027: Entwurf sieht 139,6 Milliarden Euro vor",
+      "source_summary": "Der Bundestag dokumentiert die erste Beratung des Verteidigungsetats im Haushaltsentwurf 2027. Vorgesehen sind Verteidigungsausgaben von insgesamt 139,6 Milliarden Euro: 109,7 Milliarden Euro im regulären Wehretat und 29,9 Milliarden Euro aus dem Sondervermögen Bundeswehr. Für 2026 nennt der Bericht 82,7 Milliarden Euro im regulären Wehretat und 25,5 Milliarden Euro aus dem Sondervermögen. Insgesamt sollen die Verteidigungsausgaben 2027 um 31,4 Milliarden Euro steigen.\n\nVerteidigungsminister Boris Pistorius begründet die höheren Ausgaben mit der Sicherheitslage und nennt sie ein „Sicherheitsversprechen“. Abgeordnete von AfD, Linken und Grünen kritisieren dagegen unter anderem Verschuldung, Prioritäten und Beschaffungsprobleme. Der Betrag steht im Etatentwurf und wurde in erster Lesung beraten; ein endgültig verabschiedeter Bundeshaushalt ist das noch nicht.",
+      "summary": "Im Haushaltsentwurf 2027 sind 139,6 Milliarden Euro für Verteidigung vorgesehen, 31,4 Milliarden mehr als 2026. Der Bundestag hat den Etat erstmals beraten; beschlossen ist der Bundeshaushalt damit noch nicht.",
+      "detail_summary": "Der Verteidigungsetat 2027 wurde im Bundestag erstmals beraten. Der Entwurf sieht insgesamt 139,6 Milliarden Euro vor, davon 109,7 Milliarden im regulären Etat und 29,9 Milliarden aus dem Sondervermögen. Gegenüber 2026 entspricht das laut Bundestag einem Plus von 31,4 Milliarden Euro. Pistorius stellt die Ausgaben als Antwort auf die Sicherheitslage dar; mehrere Oppositionsredner kritisieren Verschuldung, Prioritäten und Beschaffungsprobleme. Für die Wirkungsanalyse bleibt entscheidend: Mehr Geld ist zunächst ein Input. Ob daraus mehr Sicherheit, bessere Fähigkeiten oder andere Folgewirkungen entstehen, ist mit dem Etatentwurf noch nicht belegt.",
+      "why_relevant": "Der Entwurf verschiebt in großem Umfang öffentliche Mittel in den Verteidigungsbereich und macht zugleich die Frage nach Sicherheit, Wirtschaftlichkeit und fiskalischen Prioritäten zentral.",
+      "topic": [
+        "Finanzen"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "sehr hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Zusätzliche Verteidigungsmittel können Sicherheitsfähigkeiten stärken, können aber auch fiskalische Prioritäten verändern. Der Etatansatz allein belegt weder eine konkrete Verbesserung menschlicher Sicherheit noch eine konkrete Verschlechterung anderer Lebenslagen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Der gebundene Ausschnitt enthält keine belastbaren Angaben zu Emissionen, Ressourcenverbrauch oder konkreten Umweltfolgen der geplanten Ausgaben.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Parlamentarische Budgetkontrolle, Transparenz und Beschaffungsaufsicht sind demokratisch relevant. Die erste Lesung belegt jedoch noch keine positive oder negative Zustandsänderung dieser Funktionen.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "high",
+        "reason": "Die parlamentarische Debatte arbeitet mit stark wertenden Sicherheits-, Verschuldungs- und Moralbegriffen, die den gleichen Etat unterschiedlich rahmen.",
+        "factual_core": "Im Haushaltsentwurf 2027 sind 139,6 Milliarden Euro für Verteidigung vorgesehen; der Bundestag hat den Etat in erster Lesung beraten.",
+        "epistemic_status": {
+          "confirmed": [
+            "Die im Bundestagsbericht genannten Etatansätze und der Stand der ersten Lesung sind dokumentiert."
+          ],
+          "actor_claims": [
+            "Pistorius bezeichnet die Ausgaben als „Sicherheitsversprechen“ und warnt vor der militärischen Bedrohung durch Russland.",
+            "Oppositionsabgeordnete kritisieren unter anderem Verschuldung, Prioritäten und Beschaffungsprobleme."
+          ],
+          "open": [
+            "Welche zusätzlichen Fähigkeiten die Mittel tatsächlich erzeugen und welche fiskalischen Folgewirkungen entstehen."
+          ]
+        },
+        "attribution": {
+          "frame_source": "bundestag-hib",
+          "speaker": "Boris Pistorius und Oppositionsabgeordnete",
+          "original_term": "Sicherheitsversprechen versus Verschuldungs- und Prioritätenkritik",
+          "usage_type": "direct_quote",
+          "placement": [
+            "body"
+          ],
+          "attribution_quality": "clear"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Sicherheitsversprechen versus Verschuldungs- und Prioritätenkritik",
+          "origin_in_story": "bundestag-hib",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung",
+            "Sicherheit"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Sicherheitsversprechen versus Verschuldungs- und Prioritätenkritik",
+          "frame_type": [
+            "Bedrohung",
+            "Sicherheit"
+          ],
+          "problem_definition": "Die Debatte definiert das gleiche Budget entweder als notwendige Antwort auf eine äußere Bedrohung oder als Risiko für Staatsfinanzen und andere Prioritäten.",
+          "implied_cause": "Als Ursache für den Mittelanstieg wird von Befürwortern die verschärfte Sicherheitslage benannt; Kritiker betonen frühere Fehlsteuerung und Beschaffungsprobleme.",
+          "implied_responsibility": "Die Bundesregierung verantwortet den Entwurf; das Parlament entscheidet über den Haushalt und kontrolliert die Mittelverwendung.",
+          "implied_threat": "Befürworter betonen militärische Bedrohung, Kritiker Verschuldung und ineffiziente Beschaffung.",
+          "implied_solution_space": "Mehr Verteidigungsmittel auf der einen, strengere Priorisierung, Kontrolle und effizientere Beschaffung auf der anderen Seite.",
+          "material_omissions": [
+            "Der Ausschnitt belegt nicht, welche konkreten zusätzlichen Fähigkeiten mit den Mehrmitteln entstehen.",
+            "Konkrete gesamtstaatliche Opportunitätskosten sind nicht kausal ausgewiesen."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Parlamentarische Haushaltsdebatte über Verteidigungsausgaben und Sicherheitsprioritäten.",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "bundestag-hib",
+              "claim_supported": "Der Bundestagsbericht dokumentiert Etatansätze und unterschiedliche politische Bewertungen der Fraktionen."
+            }
+          ],
+          "uncertainty": "Politische Bedrohungs- und Verschuldungsbewertungen sind Akteursaussagen und keine automatisch festgestellten Wirkungen."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Debatte über Sicherheit, Verteidigung, Staatsverschuldung und Haushaltsprioritäten.",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "Gegensätzliche Begriffe können die Budgetfrage als Entweder-oder zwischen Sicherheit und anderen Staatsaufgaben zuspitzen.",
+          "trust_effect_potential": "Offen; ein beobachteter Vertrauenseffekt ist im Input nicht belegt.",
+          "discourse_effect_potential": "Die wiederholte Rahmung kann beeinflussen, ob der Mittelanstieg primär als Sicherheitsnotwendigkeit oder als fiskalisches Risiko wahrgenommen wird."
+        },
+        "impact_path": {
+          "first_order": "Starke Begriffe ordnen den Etat unmittelbar in unterschiedliche Sicherheits- und Verschuldungsnarrative ein.",
+          "second_order": "Lesende können dadurch Mittelhöhe und tatsächliche Sicherheitswirkung enger miteinander verknüpfen oder die Ausgaben vor allem als Schuldenproblem wahrnehmen.",
+          "third_order": "Dauerhafte Wiederholung solcher Gegenrahmen kann die öffentliche Prioritätendebatte polarisieren; ein beobachteter Effekt ist hier nicht belegt."
+        },
+        "evidence": {
+          "status": "high",
+          "level": "high",
+          "what_is_known": "Etatansätze und erste Lesung sind im Bundestagsbericht dokumentiert.",
+          "what_is_inferred": "Die Begriffe setzen unterschiedliche Problem- und Lösungsrahmen für denselben Haushaltsentwurf.",
+          "what_is_open": "Keine beobachtete Rezeptions- oder Einstellungswirkung im Input.",
+          "facts": [
+            "Etatansätze und erste Lesung sind im Bundestagsbericht dokumentiert."
+          ],
+          "observations": [
+            "Der Bericht enthält mehrere ausdrücklich zugeordnete wertende Originalzitate aus Regierung und Opposition."
+          ],
+          "inferences": [
+            "Die Begriffe setzen unterschiedliche Problem- und Lösungsrahmen für denselben Haushaltsentwurf."
+          ],
+          "impact_potentials": [
+            "Stärkere Fokussierung auf äußere Bedrohung oder auf Verschuldung und Opportunitätskosten."
+          ],
+          "impact_risks": [
+            "Mittelhöhe kann kommunikativ mit tatsächlicher Sicherheitswirkung gleichgesetzt werden, obwohl diese noch nicht belegt ist."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine beobachtete Rezeptions- oder Einstellungswirkung im Input."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Der belegte Kern ist zunächst nüchtern: Der Haushaltsentwurf 2027 sieht 139,6 Milliarden Euro für Verteidigung vor, und der Bundestag hat darüber in erster Lesung beraten. Die Debatte selbst arbeitet mit starken Deutungsrahmen. Pistorius nennt die Ausgaben ein „Sicherheitsversprechen“ und sagt, Deutschland stehe „im Fadenkreuz Moskaus“. Oppositionsredner sprechen dagegen von Ausgaben „auf Pump“, einer „drohenden Schuldenfalle“ oder bezeichnen die Höhe als „skandalös“. Diese Begriffe stammen von politischen Akteuren, nicht als Tatsachenfeststellung vom Wirkungsticker. Sie setzen unterschiedliche Problemdefinitionen: äußere Bedrohung und militärische Handlungsfähigkeit auf der einen, Verschuldung, Prioritäten und Beschaffungsqualität auf der anderen Seite. Aus dem Etatansatz allein folgt weder automatisch mehr Sicherheit noch automatisch ein sozialer Schaden. Beides müsste über konkrete Mittelverwendung und beobachtete Zustandsänderungen geprüft werden.",
+        "editorial_assessment": "Der belegte Kern ist zunächst nüchtern: Der Haushaltsentwurf 2027 sieht 139,6 Milliarden Euro für Verteidigung vor, und der Bundestag hat darüber in erster Lesung beraten. Die Debatte selbst arbeitet mit starken Deutungsrahmen. Pistorius nennt die Ausgaben ein „Sicherheitsversprechen“ und sagt, Deutschland stehe „im Fadenkreuz Moskaus“. Oppositionsredner sprechen dagegen von Ausgaben „auf Pump“, einer „drohenden Schuldenfalle“ oder bezeichnen die Höhe als „skandalös“. Diese Begriffe stammen von politischen Akteuren, nicht als Tatsachenfeststellung vom Wirkungsticker. Sie setzen unterschiedliche Problemdefinitionen: äußere Bedrohung und militärische Handlungsfähigkeit auf der einen, Verschuldung, Prioritäten und Beschaffungsqualität auf der anderen Seite. Aus dem Etatansatz allein folgt weder automatisch mehr Sicherheit noch automatisch ein sozialer Schaden. Beides müsste über konkrete Mittelverwendung und beobachtete Zustandsänderungen geprüft werden.",
+        "fact_first_alternative": "Der Haushaltsentwurf 2027 sieht 139,6 Milliarden Euro für Verteidigung vor und wurde im Bundestag erstmals beraten. Regierung und Opposition bewerten Nutzen, Finanzierung und Prioritäten unterschiedlich; konkrete Wirkungen der höheren Mittel sind noch nicht belegt.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Verteidigungsetat 2027: Entwurf sieht 139,6 Milliarden Euro vor",
+          "recommended_summary": "Im Haushaltsentwurf 2027 sind 139,6 Milliarden Euro für Verteidigung vorgesehen, 31,4 Milliarden mehr als 2026. Der Bundestag hat den Etat erstmals beraten; beschlossen ist der Bundeshaushalt damit noch nicht.",
+          "recommended_meta_description": "Der Haushaltsentwurf 2027 sieht 139,6 Milliarden Euro für Verteidigung vor. Der Bundestag hat den Etat erstmals beraten; Wirkungen der höheren Mittel sind noch offen."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T10:14:05.777Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T12:45:00.000Z",
+      "last_updated": "2026-09-10T10:14:05.777Z",
+      "version": 1,
+      "news_status": "confirmed",
+      "event_id": "event-e036f9f92dd85e2d1042",
+      "case_file": null,
+      "source_published_at": "2026-09-09T12:45:00.000Z",
+      "published_at": "2026-09-10T10:14:05.777Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Endgültige Höhe und Struktur der Verteidigungsausgaben nach Abschluss des Haushaltsverfahrens prüfen.",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "Verabschiedeter Bundeshaushalt 2027 mit finalem Einzelplan 14 und Sondervermögensansatz.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f7afeab30d38942b",
+          "announced_at": "2026-09-09T12:45:00.000Z",
+          "follow_up_date": "2026-09-17T10:14:05.777Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-verteidigung-1194766",
+          "source_type": "official_rss",
+          "published_at": "2026-09-09T12:45:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-dd3a7b88de59c4ad",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-dd3a7b88de59c4ad-3cf4e0ba9d209908-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-dd3a7b88de59c4ad-02ca82a76d46d9f5-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-dd3a7b88de59c4ad-5bba0e0583444493-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "heissester-august-weltweit-seit-beginn-der-wetteraufzeichnungen-59c4ad",
+      "title": "Copernicus: Weltweit heißester August der Messreihe gemeldet",
+      "source_summary": "Stern berichtet unter Berufung auf den EU-Klimadienst Copernicus, der vergangene August sei weltweit der heißeste August seit Beginn der Wetteraufzeichnungen gewesen. Die globale Durchschnittstemperatur habe 16,96 Grad erreicht und damit den bisherigen August-Höchstwert von 2023 übertroffen.\n\nAuch Westeuropa habe den wärmsten Sommer seiner Messreihe erlebt; für die Meerestemperaturen seien ebenfalls beispiellose Höchstwerte gemessen worden. Der Input enthält die journalistische Wiedergabe, nicht die Copernicus-Primärveröffentlichung. Konkrete Schäden für Menschen oder Ökosysteme werden in diesem Quellenpaket nicht zusätzlich belegt.",
+      "summary": "Stern berichtet unter Berufung auf Copernicus vom weltweit heißesten August der Messreihe; das globale Mittel habe 16,96 Grad erreicht. Auch für Westeuropa und die Meerestemperaturen werden Rekordwerte genannt.",
+      "detail_summary": "Stern berichtet unter Berufung auf Copernicus von einem neuen globalen August-Temperaturrekord. Das globale Monatsmittel habe 16,96 Grad erreicht und den bisherigen August-Höchstwert von 2023 übertroffen. Für Westeuropa wird zudem der wärmste Sommer der Messreihe genannt, für die Meerestemperaturen beispiellose Höchstwerte. Diese Messwerte beschreiben eine negative Zustandsveränderung im Klimasystem. Konkrete Gesundheits- oder Ökosystemschäden sind mit dem bereitgestellten Material dagegen nicht belegt.",
+      "why_relevant": "Globale und regionale Temperaturrekorde sind direkte Zustandsinformationen zum Klimasystem.",
+      "topic": [
+        "Klima"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_post",
+      "importance": "sehr hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Temperaturrekorde können Menschen belasten, aber der Input belegt für diesen Bericht keine konkrete menschliche Zustandsänderung oder Gesundheitsfolge.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "sehr hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Ein neuer globaler Temperaturrekord und außergewöhnlich hohe Meerestemperaturen sind eine negative Zustandsänderung im Klimasystem.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Höhere Luft- und Meerestemperaturen verschieben den physikalischen Klimazustand gegenüber der bisherigen Messreihe.",
+            "state_change": "Der vergangene August übertrifft laut Copernicus den bisherigen globalen August-Temperaturrekord; Meerestemperaturen erreichen Höchstwerte.",
+            "condition": "Die im Bericht wiedergegebenen Copernicus-Daten bestätigen sich in der Primärveröffentlichung.",
+            "effect_role": "substantive_change",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine konkrete demokratische Zustandsänderung im gebundenen Material.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T10:14:05.777Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T03:05:16.000Z",
+      "last_updated": "2026-09-10T10:14:05.777Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-a6cdc43907a38d7754c4",
+      "case_file": null,
+      "source_published_at": "2026-09-10T03:05:16.000Z",
+      "published_at": "2026-09-10T10:14:05.777Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Copernicus-Primärveröffentlichung und Methodik ergänzen.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Primärquelle mit Datensatz und Methodik.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-705a110564f5a192",
+          "announced_at": "2026-09-10T03:05:16.000Z",
+          "follow_up_date": "2026-09-17T10:14:05.777Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/heissester-august-weltweit-seit-beginn-der-wetteraufzeichnungen-38230688.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T03:05:16.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-ca63a1cdb308ce8e",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ca63a1cdb308ce8e-25493544e3482c92-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ca63a1cdb308ce8e-11153376b52a4102-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ca63a1cdb308ce8e-f692c846e49a468a-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ca63a1cdb308ce8e-3158645cdc129cad-source.png",
+          "alt_text": "Neutrale Illustration zweier Gesprächstische vor einer abstrahierten Landtagssilhouette."
+        }
+      },
+      "slug": "regierungsbildung-in-sachsen-anhalt-bsw-will-gesprache-mit-afd-aufnehmen-08ce8e",
+      "title": "Sachsen-Anhalt: BSW beschließt Gespräche mit der AfD",
+      "source_summary": "MDR berichtet, der BSW-Landesvorstand in Sachsen-Anhalt habe sich am Mittwochabend einstimmig dafür ausgesprochen, Gespräche mit der AfD aufzunehmen. Ein Sprecher nannte Energieversorgung, Bildung und Friedenspolitik als vorgesehene Gesprächsthemen. ZDFheute berichtet ebenfalls, dass das BSW Sondierungsgespräche mit der AfD führen will.\n\nCDU, SPD, Grüne und Linke hatten Gesprächsangebote der AfD laut den Beiträgen abgelehnt. Ein Beschluss zu Gesprächen ist noch keine Koalition, keine Regierungsbildung und keine inhaltliche Vereinbarung. Die Quellen stammen aus unterschiedlichen Medienhäusern; ihre Unabhängigkeit voneinander ist im übergebenen Datensatz jedoch nicht ausdrücklich verifiziert.",
+      "summary": "MDR und ZDFheute berichten, dass das BSW in Sachsen-Anhalt Gespräche mit der AfD aufnehmen will. Ein Gesprächsbeschluss ist noch keine Koalition oder Regierungsvereinbarung.",
+      "detail_summary": "Der BSW-Landesvorstand hat sich nach MDR-Angaben für Gespräche mit der AfD ausgesprochen; ZDFheute berichtet ebenfalls über geplante Sondierungen. Damit ändert sich die tatsächlich genutzte Verhandlungslandschaft nach der Landtagswahl. Welche Inhalte vereinbart werden, ob daraus Unterstützung oder eine Regierungsoption entsteht und wer später Verantwortung übernimmt, ist offen. Für Mensch und Planet ist aus dem Gesprächsbeschluss allein keine Zustandsänderung belegt. Demokratisch ist der Vorgang hoch relevant, seine Wirkungsrichtung hängt aber von transparenten Verfahren, konkreten Vereinbarungen und späteren parlamentarischen Entscheidungen ab.",
+      "why_relevant": "Der Beschluss verändert die realen Gesprächs- und Regierungsbildungsoptionen nach der Landtagswahl.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_post",
+      "importance": "sehr hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Der Gesprächsbeschluss allein erzeugt keine belegte Veränderung von Lebenslagen oder sozialen Schutzgütern.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Der Gesprächsbeschluss allein erzeugt keine belegte Umweltzustandsänderung.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Der Beschluss verändert politische Verhandlungsoptionen und damit den Prozess der Regierungsbildung; seine demokratische Wirkungsrichtung hängt von Inhalt, Transparenz und Ergebnis der Gespräche ab.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T10:07:22.952Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T04:00:00.000Z",
+      "last_updated": "2026-09-10T10:07:22.952Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-01fa06d97ce216437bc5",
+      "case_file": null,
+      "source_published_at": "2026-09-09T19:17:10.000Z",
+      "published_at": "2026-09-10T10:07:22.952Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob und wann konkrete Gespräche stattfinden und ob daraus Vereinbarungen entstehen.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigter Gesprächstermin oder veröffentlichte Ergebnisse.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d03aceff1556a80a",
+          "announced_at": "2026-09-09T19:17:10.000Z",
+          "follow_up_date": "2026-09-17T10:07:22.952Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/bsw-afd-sondierung-siegmund-regierungsbildung-sachsen-anhalt-wahl-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T20:14:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/bsw-gespraeche-afd-100,zusammenarbeit-koalition-regierung-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T19:17:10.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-32b3751a955beeba",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-6c03eaef419dfa34-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-f65dada69d416afe-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-8e0d23cf42e43501-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-e15a8763365a2673-source.png",
+          "alt_text": "Illustration eines Feldquerschnitts mit Pflanzen und unterirdischer Bewässerungsleitung, die Wasser an die Wurzeln abgibt."
+        }
+      },
+      "slug": "landwirtschaftsprojekt-in-taucha-will-50-prozent-wasser-sparen-5beeba",
+      "title": "Taucha testet Bewässerung von unten – Ziel: 50 Prozent weniger Wasser",
+      "source_summary": "Der MDR berichtet über ein neues Landwirtschaftsprojekt in Taucha, das vom Landesamt für Umwelt, Landwirtschaft und Geologie gemeinsam mit einer Spezialfirma gestartet wurde. Erprobt wird eine Bewässerung von unten.\n\nDer Beitrag nennt als Ziel, in der Landwirtschaft Wasser zu sparen; bereits die Überschrift beziffert das angestrebte Einsparziel mit 50 Prozent. Belegt ist damit der Projektstart und das Ziel. Nicht belegt ist, dass diese Einsparung schon erreicht wurde oder wie sie unter unterschiedlichen Böden, Kulturen und Wetterbedingungen ausfällt.",
+      "summary": "In Taucha ist ein Landwirtschaftsprojekt mit Bewässerung von unten gestartet. Das genannte Ziel von 50 Prozent Wassereinsparung ist ein Potenzial, noch kein nachgewiesenes Ergebnis.",
+      "detail_summary": "Das Landesamt für Umwelt, Landwirtschaft und Geologie hat laut MDR mit einer Spezialfirma ein Bewässerungsprojekt in Taucha gestartet. Das Wasser soll von unten an die Pflanzen gelangen; als Ziel nennt der Beitrag 50 Prozent Wassereinsparung. Der Projektstart ist belegt, die Einsparung selbst noch nicht als eingetretene Wirkung. Wenn das Verfahren bei vergleichbarem Ertrag tatsächlich weniger Wasser benötigt, würde es den Wasserverbrauch der Bewässerung senken. Wie groß der Effekt unter realen Bedingungen ist, muss das Projekt erst zeigen.",
+      "why_relevant": "Bewässerung ist ein direkter Hebel für Wasserverbrauch in der Landwirtschaft; hier wird ein konkretes Verfahren praktisch erprobt.",
+      "topic": [
+        "Klima"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Ein geringerer Wasserbedarf kann für landwirtschaftliche Robustheit relevant sein, aber der Input belegt noch keine konkrete Veränderung menschlicher Lebens- oder Arbeitsbedingungen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Wenn bei gleicher landwirtschaftlicher Funktion weniger Wasser entnommen wird, sinkt der Bewässerungsbedarf.",
+          "positive_path": {
+            "mechanism": "Bewässerung von unten soll Wasser gezielter an Pflanzen bringen.",
+            "state_change": "Der Wasserverbrauch der Bewässerung sinkt gegenüber der Vergleichsmethode.",
+            "condition": "Das Projekt weist die Einsparung bei vergleichbarer Funktion und Ertrag tatsächlich nach.",
+            "effect_role": "substantive_change",
+            "source_ids": [
+              "mdr-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine konkrete demokratische Zustandsänderung im Material.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:57:19.267Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T06:14:47.000Z",
+      "last_updated": "2026-09-10T09:57:19.267Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-e13941775b4512761a5f",
+      "case_file": null,
+      "source_published_at": "2026-09-10T06:14:47.000Z",
+      "published_at": "2026-09-10T09:57:19.267Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, welche Wassereinsparung im Versuch tatsächlich gemessen wird.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Gemessener Wasserverbrauch gegenüber einer geeigneten Vergleichsbewässerung.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cb7725dee398996d",
+          "announced_at": "2026-09-10T06:14:47.000Z",
+          "follow_up_date": "2026-09-17T09:57:19.267Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/video/mdr-videos/c/video-1646298.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T06:14:47.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-b9aa6e7e11987ec8",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b9aa6e7e11987ec8-6712681eaf6811bd-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b9aa6e7e11987ec8-5094f1ea71f0e878-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b9aa6e7e11987ec8-e2cde4d9a9d3d7b0-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b9aa6e7e11987ec8-2dff258e15ee164a-source.png",
+          "alt_text": "Stilisierte Illustration eines Einkaufswagens vor einer Einkaufszentrum-Fassade mit vereinfachter Drohnensilhouette."
+        }
+      },
+      "slug": "ukraine-news-drei-tote-bei-angriff-auf-einkaufszentrum-in-sumy-987ec8",
+      "title": "Sumy: MDR-Liveblog meldet drei Tote und 14 Verletzte",
+      "source_summary": "Der MDR-Liveblog meldet in einem Update zu Sumy drei Tote nach dem Angriff auf ein Einkaufszentrum. Nach dort wiedergegebenen neueren ukrainischen Angaben seien außerdem 14 Menschen verletzt worden; nach Angaben des staatlichen Rettungsdienstes seien darunter drei Kinder.\n\nDie Zahlen stammen innerhalb dieses Jobs aus demselben MDR-Liveblog. Eine zweite unabhängige Quelle ist nicht gebunden. Weil es sich um eine laufende Lage handelt, wird die Opferbilanz als vorläufiger, quellengebundener Stand behandelt und nicht als abschließend bestätigte Gesamtzahl.",
+      "summary": "Der MDR-Liveblog meldet in einem Update zu Sumy drei Tote und 14 Verletzte, darunter drei Kinder. Die Angaben sind quellengebunden und wegen der laufenden Lage als vorläufig zu behandeln.",
+      "detail_summary": "Der MDR-Liveblog berichtet in seinem Update über drei Tote und 14 Verletzte nach dem Angriff auf ein Einkaufszentrum in Sumy; unter den Verletzten seien drei Kinder. Diese Personenschäden sind eine schwere negative Zustandsveränderung für Leben, Gesundheit und Sicherheit, sofern sich der berichtete Stand bestätigt. Die Angriffszuordnung und die Opferbilanz sind in diesem Job nicht durch eine zweite unabhängige Quelle bestätigt. Weitergehende medizinische, psychische oder lokale Versorgungsfolgen sind plausibel, im gebundenen Material aber nicht belegt. Der Wirkungsticker behandelt den MDR-Stand deshalb ausdrücklich als vorläufige Einzelquellenmeldung.",
+      "why_relevant": "Der Angriff betrifft einen zivil genutzten Ort und hat nach aktualisierten Angaben Tote und Verletzte verursacht; die neue Opferbilanz ist ein materielles Update.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_post",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "sehr hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Tote und Verletzte sind eine unmittelbare schwere Verschlechterung von Leben, Gesundheit und Sicherheit.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Ein Angriff auf einen zivil genutzten Ort kann Menschen unmittelbar töten oder verletzen.",
+            "state_change": "Nach aktuellem Stand werden drei Tote und 14 Verletzte gemeldet.",
+            "condition": "Die aktualisierten Angaben bestätigen sich in weiterer belastbarer Berichterstattung.",
+            "effect_role": "substantive_change",
+            "source_ids": [
+              "mdr-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine belastbare Umweltzustandsänderung im gebundenen Material.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Für dieses Einzelereignis ist keine konkrete demokratische Zustandsänderung belegt.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:57:19.267Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T06:08:10.000Z",
+      "last_updated": "2026-09-10T09:57:19.267Z",
+      "version": 1,
+      "news_status": "updated",
+      "event_id": "event-d68f4ecc6d28980e2d12",
+      "case_file": null,
+      "source_published_at": "2026-09-10T06:15:23.000Z",
+      "published_at": "2026-09-10T09:57:19.267Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Aktualisierte Opferzahlen und unabhängige Bestätigung prüfen.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Stabile Opferbilanz in weiteren belastbaren Meldungen oder Primärquellen.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d4444c2e998e6b2e",
+          "announced_at": "2026-09-10T06:15:23.000Z",
+          "follow_up_date": "2026-09-17T09:57:19.267Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-merz--sumy-friedensgespraeche,ukraine-news-10-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T06:15:23.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-e56802a24cd4aae3",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e56802a24cd4aae3-54c3e0e90e90ac08-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e56802a24cd4aae3-27c68ca717aeb149-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e56802a24cd4aae3-2180c7466c60516e-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e56802a24cd4aae3-6e79a71ad623e2de-source.png",
+          "alt_text": "Redaktionelle Illustration mit Verfassungsbuch und mehreren neutralen Länderbausteinen an einem Prüftisch."
+        }
+      },
+      "slug": "debatte-um-mogliches-afd-verbotsverfahren-bundesratsprasident-bovenschulte-spd-grundgese-d4aae3",
+      "title": "Bovenschulte begrüßt Bund-Länder-Prüfung eines möglichen AfD-Verbots",
+      "source_summary": "Deutschlandfunk berichtet, Bundesratspräsident Andreas Bovenschulte habe den Vorschlag von Nordrhein-Westfalens Ministerpräsident Hendrik Wüst begrüßt, ein mögliches AfD-Verbotsverfahren durch eine Bund-Länder-Gruppe prüfen zu lassen. Bovenschulte sagte zugleich, die politische Auseinandersetzung mit der AfD müsse im Vordergrund stehen.\n\nBundeskanzler Friedrich Merz wird mit Skepsis zu den Erfolgschancen eines Verbotsverfahrens wiedergegeben und verweist auf hohe juristische Hürden. Die Meldung nennt außerdem Boris Pistorius und Cem Özdemir als Befürworter eines Vorgehens gegen als gesichert rechtsextremistisch eingestufte Landesverbände.",
+      "summary": "Bovenschulte begrüßt laut Deutschlandfunk eine Bund-Länder-Prüfung eines möglichen AfD-Verbotsverfahrens. Zugleich bleibt die politische Auseinandersetzung zentral; Merz verweist auf hohe juristische Hürden.",
+      "detail_summary": "Deutschlandfunk berichtet, Bundesratspräsident Andreas Bovenschulte habe den Vorschlag von Nordrhein-Westfalens Ministerpräsident Hendrik Wüst begrüßt, ein mögliches AfD-Verbotsverfahren durch eine Bund-Länder-Gruppe prüfen zu lassen. Bovenschulte sagte zugleich, die politische Auseinandersetzung mit der AfD müsse im Vordergrund stehen.\n\nBundeskanzler Friedrich Merz wird mit Skepsis zu den Erfolgschancen eines Verbotsverfahrens wiedergegeben und verweist auf hohe juristische Hürden. Die Meldung nennt außerdem Boris Pistorius und Cem Özdemir als Befürworter eines Vorgehens gegen als gesichert rechtsextremistisch eingestufte Landesverbände. Die Meldung dokumentiert damit eine politische Positionsverschiebung und eine offene Verfahrensdebatte, nicht die Einleitung eines Verbotsverfahrens.",
+      "why_relevant": "Die Äußerungen zeigen, dass die Debatte über eine institutionelle Prüfung eines Verbotsverfahrens auf Bund-Länder-Ebene an Breite gewinnt.",
+      "topic": [
+        "Demokratie"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der politischen Positionierung folgt keine belastbare unmittelbare Zustandsänderung für Menschen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine belastbare Zustandsänderung aus dem gelieferten Material ableitbar.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Debatte betrifft Instrumente der wehrhaften Demokratie und rechtsstaatliche Verfahren. Aus der politischen Positionierung allein folgt aber noch keine belastbare positive oder negative Zustandsänderung der Demokratie.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Überschrift hebt Bovenschultes zugespitzte verfassungsbezogene Aussage hervor; der Sachverhalt ist eine politische Position zur Prüfung eines möglichen Verfahrens.",
+        "factual_core": "Bovenschulte begrüßt laut Deutschlandfunk Wüsts Vorschlag, eine Bund-Länder-Gruppe ein mögliches AfD-Verbotsverfahren prüfen zu lassen. Ein Verbotsantrag oder eine Einsetzung der Gruppe ist in der Meldung nicht belegt.",
+        "epistemic_status": {
+          "confirmed": [
+            "Deutschlandfunk berichtet über Bovenschultes Unterstützung für eine Bund-Länder-Prüfung."
+          ],
+          "actor_claims": [
+            "Bovenschulte sagt, politische Auseinandersetzung müsse im Vordergrund stehen und das Grundgesetz sehe das Verbot verfassungsfeindlicher Parteien vor.",
+            "Merz verweist auf hohe juristische Hürden und äußert Skepsis zu den Erfolgschancen."
+          ],
+          "open": [
+            "Ob eine Bund-Länder-Gruppe eingesetzt wird und ob daraus ein Verbotsantrag folgt."
+          ]
+        },
+        "attribution": {
+          "frame_source": "dlf-nachrichten",
+          "speaker": "Andreas Bovenschulte",
+          "original_term": "Grundgesetz gibt vor, verfassungsfeindliche Parteien zu verbieten",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Grundgesetz gibt vor, verfassungsfeindliche Parteien zu verbieten",
+          "origin_in_story": "dlf-nachrichten",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Grundgesetz gibt vor, verfassungsfeindliche Parteien zu verbieten",
+          "frame_type": [],
+          "problem_definition": "Die Debatte wird als Frage dargestellt, ob staatliche Institutionen die rechtlichen Instrumente gegen verfassungsfeindliche Parteien prüfen sollen.",
+          "implied_cause": "Ausgangspunkt ist die politische Debatte um die AfD und ein mögliches Verbotsverfahren.",
+          "implied_responsibility": "Bund und Länder erscheinen als mögliche Prüfinstanzen; die Entscheidung über ein Parteiverbot läge nicht bei den zitierten Politikern allein.",
+          "implied_threat": "Die Formulierung setzt die Frage möglicher Verfassungsfeindlichkeit in den Mittelpunkt.",
+          "implied_solution_space": "Prüfung eines möglichen Verbotsverfahrens neben politischer Auseinandersetzung.",
+          "material_omissions": [
+            "Kein Beschluss zur Einsetzung einer Bund-Länder-Gruppe im Input.",
+            "Kein Verbotsantrag im Input.",
+            "Keine eigenständige juristische Prüfung der Erfolgsaussichten im Input."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Politische Debatte über ein mögliches Parteiverbotsverfahren.",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "dlf-nachrichten",
+              "claim_supported": "Bovenschulte, Merz sowie weitere Politiker werden mit unterschiedlichen Positionen zum möglichen Verbotsverfahren wiedergegeben."
+            }
+          ],
+          "uncertainty": "Die Meldung belegt Positionen, nicht die rechtliche Erfüllung der Verbotsvoraussetzungen."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Öffentliche Debatte über AfD, Parteiverbot und wehrhafte Demokratie.",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "Die hervorgehobene Verfassungsformulierung kann die Debatte stärker auf Verbotslogik konzentrieren.",
+          "trust_effect_potential": "Offen; aus der Einzelmeldung ist kein beobachteter Vertrauenseffekt ableitbar.",
+          "discourse_effect_potential": "Die Schlagzeile kann den Eindruck einer klareren verfassungsrechtlichen Lage erzeugen, obwohl die konkrete Prüfung eines Verbotsverfahrens offen bleibt."
+        },
+        "impact_path": {
+          "first_order": "Die Überschrift macht Bovenschultes verfassungsbezogene Position zum dominanten Einstieg.",
+          "second_order": "Lesende können die politische Forderung dadurch stärker als bereits geklärte Rechtslage oder als fortgeschrittenes Verfahren wahrnehmen.",
+          "third_order": "Wiederholte Verkürzung könnte die öffentliche Debatte auf Ja/Nein zum Verbot verengen; ein beobachteter Effekt ist hier nicht belegt."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Bovenschulte begrüßt laut Deutschlandfunk eine Bund-Länder-Prüfung.",
+          "what_is_inferred": "Die prominente Platzierung kann den rechtlichen Deutungsrahmen verstärken.",
+          "what_is_open": "Nur eine journalistische Quelle ist gebunden.",
+          "facts": [
+            "Bovenschulte begrüßt laut Deutschlandfunk eine Bund-Länder-Prüfung."
+          ],
+          "observations": [
+            "Die verfassungsbezogene Aussage steht prominent in der Überschrift."
+          ],
+          "inferences": [
+            "Die prominente Platzierung kann den rechtlichen Deutungsrahmen verstärken."
+          ],
+          "impact_potentials": [
+            "Stärkere Fokussierung der Debatte auf das Verbotsinstrument."
+          ],
+          "impact_risks": [
+            "Politische Position, Rechtsprüfung und tatsächlicher Verfahrensstand können vermischt werden."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle ist gebunden."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Deutschlandfunk berichtet über eine neue politische Position in der Debatte um ein mögliches AfD-Verbotsverfahren: Bundesratspräsident Bovenschulte begrüßt den Vorschlag, eine Bund-Länder-Gruppe prüfen zu lassen. Die Überschrift hebt dabei seine verfassungsbezogene Aussage besonders hervor. Wichtig ist die Trennung: Belegt ist eine politische Position und eine Prüfidee. Nicht belegt sind die Einsetzung einer solchen Gruppe, ein Verbotsantrag oder eine gerichtliche Bewertung. Merz wird zugleich mit Skepsis und dem Hinweis auf hohe juristische Hürden zitiert. Die prominente Formulierung kann den Eindruck einer bereits klar entschiedenen Rechtslage verstärken. Der Wirkungsticker behandelt sie deshalb als attribuierte Akteursaussage. Demokratisch relevant ist die Debatte, aber ihre Wirkungsrichtung bleibt offen, solange aus der Kommunikation kein konkreter rechtsstaatlicher Verfahrensschritt entsteht.",
+        "editorial_assessment": "Deutschlandfunk berichtet über eine neue politische Position in der Debatte um ein mögliches AfD-Verbotsverfahren: Bundesratspräsident Bovenschulte begrüßt den Vorschlag, eine Bund-Länder-Gruppe prüfen zu lassen. Die Überschrift hebt dabei seine verfassungsbezogene Aussage besonders hervor. Wichtig ist die Trennung: Belegt ist eine politische Position und eine Prüfidee. Nicht belegt sind die Einsetzung einer solchen Gruppe, ein Verbotsantrag oder eine gerichtliche Bewertung. Merz wird zugleich mit Skepsis und dem Hinweis auf hohe juristische Hürden zitiert. Die prominente Formulierung kann den Eindruck einer bereits klar entschiedenen Rechtslage verstärken. Der Wirkungsticker behandelt sie deshalb als attribuierte Akteursaussage. Demokratisch relevant ist die Debatte, aber ihre Wirkungsrichtung bleibt offen, solange aus der Kommunikation kein konkreter rechtsstaatlicher Verfahrensschritt entsteht.",
+        "fact_first_alternative": "Bovenschulte begrüßt laut Deutschlandfunk Wüsts Vorschlag, ein mögliches AfD-Verbotsverfahren durch eine Bund-Länder-Gruppe prüfen zu lassen. Ein entsprechender Beschluss oder Verbotsantrag ist in der Meldung nicht belegt.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Bovenschulte begrüßt Prüfung eines möglichen AfD-Verbotsverfahrens",
+          "recommended_summary": "Bovenschulte begrüßt laut Deutschlandfunk eine Bund-Länder-Prüfung eines möglichen AfD-Verbotsverfahrens. Zugleich bleibt die politische Auseinandersetzung zentral; Merz verweist auf hohe juristische Hürden.",
+          "recommended_meta_description": "Bovenschulte unterstützt laut Deutschlandfunk eine Bund-Länder-Prüfung eines möglichen AfD-Verbotsverfahrens. Ein Verfahren ist damit noch nicht eingeleitet."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:57:19.267Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T06:59:08.000Z",
+      "last_updated": "2026-09-10T09:57:19.267Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-8b9ff99f97ae7939663d",
+      "case_file": null,
+      "source_published_at": "2026-09-10T07:19:27.000Z",
+      "published_at": "2026-09-10T09:57:19.267Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bundesratspraesident-bovenschulte-spd-grundgesetz-gibt-vor-verfassungsfeindliche-parteien-zu-verbiet-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T07:19:27.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-3017bbc9b24cda3f",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3017bbc9b24cda3f-ecff6c8062a03401-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3017bbc9b24cda3f-35cd7019ac2accdb-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3017bbc9b24cda3f-4156049aea7e7cc0-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3017bbc9b24cda3f-3cb186904e9ec99b-source.png",
+          "alt_text": "Abstrakte Illustration eines verkleinerten Netzes aus Bürostandorten und Arbeitsplätzen."
+        }
+      },
+      "slug": "capgemini-wie-der-grosse-vw-dienstleister-die-eigenen-beschaftigten-gegen-sich-aufbringt-4cda3f",
+      "title": "Capgemini Engineering plant laut Bericht starken Stellenabbau und Standortschließungen",
+      "source_summary": "Manager Magazin berichtet, dass die Krise der Autoindustrie auch Capgemini Engineering Deutschland trifft. Das Management wolle das Unternehmen deutlich verkleinern, die Belegschaft fast halbieren und Standorte schließen. Zugleich formiere sich Widerstand unter Beschäftigten.\n\nDer bereitgestellte Datensatz enthält nur diese journalistische Quelle. Eine Unternehmensmitteilung, konkrete Stellenzahlen, eine Standortliste oder ein bestätigter Umsetzungszeitplan sind nicht beigefügt. Belegt ist damit ein berichteter Sanierungsplan, nicht dessen vollständige Umsetzung.",
+      "summary": "Manager Magazin berichtet über tiefe Sanierungspläne bei Capgemini Engineering Deutschland: Die Belegschaft solle fast halbiert und Standorte geschlossen werden. Umsetzung, genaue Stellenzahl und betroffene Standorte sind im Input nicht bestätigt.",
+      "detail_summary": "Manager Magazin berichtet über einen tiefen Umbau bei Capgemini Engineering Deutschland. Geplant seien eine fast halbierte Belegschaft und Standortschließungen; zugleich gebe es Widerstand unter Beschäftigten. Der Plan ist im bereitgestellten Material nur journalistisch berichtet und nicht durch eine Primärquelle bestätigt. Für Beschäftigte entsteht deshalb zunächst ein klar negatives Wirkungspotenzial: Erst wenn Stellen tatsächlich entfallen oder Standorte geschlossen werden, ändern sich Beschäftigungssicherheit, Einkommen oder Arbeitsort. Welche Standorte und wie viele Arbeitsplätze konkret betroffen wären, bleibt offen.",
+      "why_relevant": "Eine nahezu halbierte Belegschaft und Standortschließungen wären ein erheblicher Beschäftigungs- und Standortvorgang.",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Bei Umsetzung würden Arbeitsplätze und Beschäftigungssicherheit direkt betroffen.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Stellenabbau und Standortschließungen verringern Beschäftigungsmöglichkeiten und können Einkommen sowie Arbeitsplatzsicherheit betroffener Beschäftigter beeinträchtigen.",
+            "state_change": "Beschäftigte verlieren Arbeitsplätze oder müssen Standortwechsel und Unsicherheit bewältigen.",
+            "condition": "Die berichteten Kürzungen und Schließungen werden tatsächlich umgesetzt.",
+            "effect_role": "substantive_change",
+            "source_ids": [
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die gebundene Quelle enthält keine belastbare Umweltzustandsänderung.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die gebundene Quelle enthält keine konkrete demokratische Zustandsänderung.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Der Quellentext verwendet mit „radikal sanieren“ eine zugespitzte redaktionelle Formulierung für den geplanten Umbau.",
+        "factual_core": "Manager Magazin berichtet über einen geplanten starken Stellenabbau und Standortschließungen bei Capgemini Engineering Deutschland; Umsetzung und genaue Größen sind im Input nicht bestätigt.",
+        "epistemic_status": {
+          "confirmed": [
+            "Belegt ist, dass Manager Magazin einen Sanierungsplan mit fast halbierter Belegschaft und Standortschließungen berichtet."
+          ],
+          "actor_claims": [
+            "Dem Management wird zugeschrieben, die Belegschaft fast halbieren und Standorte schließen zu wollen."
+          ],
+          "open": [
+            "Konkrete Stellenzahl, betroffene Standorte und Umsetzungszeitplan sind im bereitgestellten Material offen."
+          ]
+        },
+        "attribution": {
+          "frame_source": "manager-magazin-news",
+          "speaker": "Redaktion von Manager Magazin",
+          "original_term": "radikal sanieren",
+          "usage_type": "editorial",
+          "placement": [
+            "body"
+          ],
+          "attribution_quality": "clear"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "radikal sanieren",
+          "origin_in_story": "manager-magazin-news",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Konflikt"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "radikal sanieren",
+          "frame_type": [
+            "Konflikt"
+          ],
+          "problem_definition": "Der Umbau wird als besonders tiefgreifender Einschnitt dargestellt.",
+          "implied_cause": "Die Autokrise wird als Auslöser des Sanierungsdrucks genannt.",
+          "implied_responsibility": "Die konkrete Ausgestaltung des Umbaus wird dem Management zugeschrieben.",
+          "implied_threat": "Für Beschäftigte stehen Arbeitsplätze und Standorte auf dem Spiel.",
+          "implied_solution_space": "Der Text lenkt die Aufmerksamkeit auf Sanierung und Widerstand; alternative Unternehmensmaßnahmen werden im kurzen Input nicht dargestellt.",
+          "material_omissions": [
+            "Keine Primärquelle des Unternehmens",
+            "Keine konkrete Stellenzahl",
+            "Keine Liste der betroffenen Standorte"
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": ""
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Arbeitsmarkt- und Unternehmensberichterstattung rund um die Krise der Autoindustrie.",
+          "normalization_potential": "low",
+          "repetition_risk": "medium",
+          "polarization_potential": "Die zugespitzte Wortwahl kann den Konflikt zwischen Management und Beschäftigten stärker hervorheben.",
+          "trust_effect_potential": "Offen; aus dem einzelnen Beitrag ist kein beobachteter Vertrauenseffekt ableitbar.",
+          "discourse_effect_potential": "Die Formulierung kann den Umbau als außergewöhnlich hart einordnen, ohne zusätzliche Fakten über Umfang oder Umsetzung zu liefern."
+        },
+        "impact_path": {
+          "first_order": "Die Wortwahl „radikal sanieren“ verdichtet den berichteten Personal- und Standortumbau zu einer besonders harten Krisenerzählung.",
+          "second_order": "Lesende können den geplanten Umbau dadurch stärker als bereits feststehende Eskalation wahrnehmen, obwohl die Umsetzung im Input offen ist.",
+          "third_order": "Bei wiederholter ähnlicher Rahmung könnte sich die öffentliche Wahrnehmung des Konflikts zwischen Management und Beschäftigten zuspitzen; dafür liegt hier kein beobachteter Nachweis vor."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Der Abstract nennt fast halbierte Belegschaft und Standortschließungen als Pläne.",
+          "what_is_inferred": "Die Formulierung verstärkt die Wahrnehmung der Tiefe des geplanten Umbaus.",
+          "what_is_open": "Nur eine journalistische Quelle und ein kurzer Abstract sind gebunden.",
+          "facts": [
+            "Der Abstract nennt fast halbierte Belegschaft und Standortschließungen als Pläne."
+          ],
+          "observations": [
+            "Der Begriff „radikal sanieren“ steht im journalistischen Abstract."
+          ],
+          "inferences": [
+            "Die Formulierung verstärkt die Wahrnehmung der Tiefe des geplanten Umbaus."
+          ],
+          "impact_potentials": [
+            "Stärkere Konflikt- und Krisenwahrnehmung."
+          ],
+          "impact_risks": [
+            "Plan und tatsächliche Umsetzung können in der Wahrnehmung vermischt werden."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle und ein kurzer Abstract sind gebunden."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Manager Magazin berichtet über einen tiefen Umbau bei Capgemini Engineering Deutschland: Die Belegschaft solle fast halbiert und Standorte geschlossen werden. Im kurzen Quellentext wird dafür die Formulierung „radikal sanieren“ verwendet. Das ist eine redaktionelle Zuspitzung, keine zusätzliche Tatsache. Der belegte Kern bleibt: Ein starker Personal- und Standortabbau wird berichtet, während genaue Stellenzahlen, betroffene Standorte und ein bestätigter Zeitplan im bereitgestellten Material fehlen. Die Wortwahl kann den Konflikt härter und die Umsetzung endgültiger erscheinen lassen, als es der Wissensstand hergibt. Deshalb trennt der Wirkungsticker Plan und Wirkung: Arbeitsplatzverluste wären ein klares Risiko, treten aber erst ein, wenn Stellen tatsächlich entfallen oder Standorte geschlossen werden. Ein beobachteter Medieneffekt auf Vertrauen oder öffentliche Meinung ist mit dieser Einzelquelle nicht belegt.",
+        "editorial_assessment": "Manager Magazin berichtet über einen tiefen Umbau bei Capgemini Engineering Deutschland: Die Belegschaft solle fast halbiert und Standorte geschlossen werden. Im kurzen Quellentext wird dafür die Formulierung „radikal sanieren“ verwendet. Das ist eine redaktionelle Zuspitzung, keine zusätzliche Tatsache. Der belegte Kern bleibt: Ein starker Personal- und Standortabbau wird berichtet, während genaue Stellenzahlen, betroffene Standorte und ein bestätigter Zeitplan im bereitgestellten Material fehlen. Die Wortwahl kann den Konflikt härter und die Umsetzung endgültiger erscheinen lassen, als es der Wissensstand hergibt. Deshalb trennt der Wirkungsticker Plan und Wirkung: Arbeitsplatzverluste wären ein klares Risiko, treten aber erst ein, wenn Stellen tatsächlich entfallen oder Standorte geschlossen werden. Ein beobachteter Medieneffekt auf Vertrauen oder öffentliche Meinung ist mit dieser Einzelquelle nicht belegt.",
+        "fact_first_alternative": "Capgemini Engineering Deutschland plant laut Manager Magazin einen starken Stellenabbau und Standortschließungen. Umfang, betroffene Standorte und Zeitplan sind im bereitgestellten Material nicht unabhängig bestätigt.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Capgemini Engineering plant laut Bericht starken Stellenabbau und Standortschließungen",
+          "recommended_summary": "Manager Magazin berichtet über tiefe Sanierungspläne bei Capgemini Engineering Deutschland: Die Belegschaft solle fast halbiert und Standorte geschlossen werden. Umsetzung, genaue Stellenzahl und betroffene Standorte sind im Input nicht bestätigt.",
+          "recommended_meta_description": "Manager Magazin berichtet über einen starken Stellenabbau und Standortschließungen bei Capgemini Engineering Deutschland. Umsetzung und Umfang sind noch nicht unabhängig bestätigt."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:47:22.989Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T05:00:00.000Z",
+      "last_updated": "2026-09-10T09:47:22.989Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-cc909de09dbf6ee5d466",
+      "case_file": null,
+      "source_published_at": "2026-09-10T05:00:00.000Z",
+      "published_at": "2026-09-10T09:47:22.989Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Umfang, betroffene Standorte und Umsetzungsstand der Sanierung bestätigen.",
+          "source_id": "manager-magazin-news",
+          "expected_by": null,
+          "measurable_indicator": "Unternehmensangaben oder weitere belastbare Berichte zu Stellenzahl, Standorten und Zeitplan.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b85eb8044d6b5cab",
+          "announced_at": "2026-09-10T05:00:00.000Z",
+          "follow_up_date": "2026-09-17T09:47:22.989Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/capgemini-wie-der-grosse-vw-dienstleister-die-eigenen-beschaeftigten-gegen-sich-aufbringt-a-4f65e9a9-06ca-4ead-bae8-f640561d75bc",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T05:00:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-f035486b80396b15",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f035486b80396b15-b00f2b3643ceb18e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f035486b80396b15-f30d4ebc13e91f09-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f035486b80396b15-d22d90d8c686632f-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f035486b80396b15-77317766fe4306ea-source.png",
+          "alt_text": "Abstrakte Illustration eines halb geöffneten faltbaren Smartphones ohne Markenkennzeichen."
+        }
+      },
+      "slug": "john-ternus-apple-bringt-erstes-auffaltbares-iphone-heraus-396b15",
+      "title": "Apple bringt laut Berichten sein erstes faltbares iPhone auf den Markt",
+      "source_summary": "WirtschaftsWoche und Tagesspiegel berichten, dass Apple erstmals ein auffaltbares iPhone in den Markt bringt. Beide Beiträge beschreiben faltbare Smartphones als bislang kleines Segment; WirtschaftsWoche nennt als Größenordnung nur jedes 50. verkaufte Smartphone.\n\nEin Tagesspiegel-Beitrag nennt Samsung als früheren Anbieter und gibt die Erwartung von Marktforschern wieder, Apple könne in dem Segment schnell die Führung übernehmen. Diese Marktführungsprognose ist eine Erwartung und kein eingetretener Zustand. Technische Details, Preis, Lebensdauer, Reparierbarkeit oder Umweltbilanz sind im gebundenen Material nicht ausreichend beschrieben.",
+      "summary": "WirtschaftsWoche und Tagesspiegel berichten über Apples erstes auffaltbares iPhone. Der Konzern tritt damit in einen bislang kleinen Markt ein; Prognosen über eine schnelle Marktführerschaft sind noch keine beobachtete Wirkung.",
+      "detail_summary": "Apple tritt laut den gebundenen Berichten erstmals mit einem faltbaren iPhone in dieses Smartphone-Segment ein. Belegt ist der berichtete Markteintritt, nicht eine spätere Marktführerschaft. Für Mensch und Demokratie ergibt sich aus dem Produktstart allein keine belastbare Zustandsänderung. Für Planet und Ressourcen bleiben mögliche Folgen offen, weil Absatz, Materialeinsatz, Lebensdauer und Reparierbarkeit im Input fehlen. Wettbewerbsreaktionen sind plausibel, aber noch nicht als eingetretene Wirkung belegt.",
+      "why_relevant": "Der Markteintritt eines großen Smartphone-Anbieters kann Wettbewerb und Produktentwicklung in einem neuen Gerätesegment verändern.",
+      "topic": [
+        "Technologie"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_post",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Ein Produktstart allein belegt keine relevante Veränderung menschlicher Lebenslagen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Neue Elektronik kann Ressourcen- und Abfallwirkungen haben, aber Material, Haltbarkeit und Absatz sind im Input nicht belegt.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine konkrete demokratische Zustandsänderung aus dem Produktstart ableitbar.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:47:22.989Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T18:30:00.000Z",
+      "last_updated": "2026-09-10T09:47:22.989Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-4ed62b7e0d4cd5900931",
+      "case_file": null,
+      "source_published_at": "2026-09-09T02:31:27.000Z",
+      "published_at": "2026-09-10T09:47:22.989Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wiwo-schlagzeilen"
+          ],
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/it/apple-bringt-erstes-auffaltbares-iphone-heraus/100253017.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T05:30:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/medien/dpa-vorstoss-in-neuen-markt-16032339.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T02:31:27.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-b95ed05b8140df75",
       "title_image": {
