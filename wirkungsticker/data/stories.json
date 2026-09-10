@@ -1,7 +1,864 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-10T09:33:38.899Z",
+  "updated_at": "2026-09-10T09:57:19.267Z",
   "stories": [
+    {
+      "story_id": "wt-32b3751a955beeba",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-6c03eaef419dfa34-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-f65dada69d416afe-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-8e0d23cf42e43501-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-e15a8763365a2673-source.png",
+          "alt_text": "Illustration eines Feldquerschnitts mit Pflanzen und unterirdischer Bewässerungsleitung, die Wasser an die Wurzeln abgibt."
+        }
+      },
+      "slug": "landwirtschaftsprojekt-in-taucha-will-50-prozent-wasser-sparen-5beeba",
+      "title": "Taucha testet Bewässerung von unten – Ziel: 50 Prozent weniger Wasser",
+      "source_summary": "Der MDR berichtet über ein neues Landwirtschaftsprojekt in Taucha, das vom Landesamt für Umwelt, Landwirtschaft und Geologie gemeinsam mit einer Spezialfirma gestartet wurde. Erprobt wird eine Bewässerung von unten.\n\nDer Beitrag nennt als Ziel, in der Landwirtschaft Wasser zu sparen; bereits die Überschrift beziffert das angestrebte Einsparziel mit 50 Prozent. Belegt ist damit der Projektstart und das Ziel. Nicht belegt ist, dass diese Einsparung schon erreicht wurde oder wie sie unter unterschiedlichen Böden, Kulturen und Wetterbedingungen ausfällt.",
+      "summary": "In Taucha ist ein Landwirtschaftsprojekt mit Bewässerung von unten gestartet. Das genannte Ziel von 50 Prozent Wassereinsparung ist ein Potenzial, noch kein nachgewiesenes Ergebnis.",
+      "detail_summary": "Das Landesamt für Umwelt, Landwirtschaft und Geologie hat laut MDR mit einer Spezialfirma ein Bewässerungsprojekt in Taucha gestartet. Das Wasser soll von unten an die Pflanzen gelangen; als Ziel nennt der Beitrag 50 Prozent Wassereinsparung. Der Projektstart ist belegt, die Einsparung selbst noch nicht als eingetretene Wirkung. Wenn das Verfahren bei vergleichbarem Ertrag tatsächlich weniger Wasser benötigt, würde es den Wasserverbrauch der Bewässerung senken. Wie groß der Effekt unter realen Bedingungen ist, muss das Projekt erst zeigen.",
+      "why_relevant": "Bewässerung ist ein direkter Hebel für Wasserverbrauch in der Landwirtschaft; hier wird ein konkretes Verfahren praktisch erprobt.",
+      "topic": [
+        "Klima"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Ein geringerer Wasserbedarf kann für landwirtschaftliche Robustheit relevant sein, aber der Input belegt noch keine konkrete Veränderung menschlicher Lebens- oder Arbeitsbedingungen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Wenn bei gleicher landwirtschaftlicher Funktion weniger Wasser entnommen wird, sinkt der Bewässerungsbedarf.",
+          "positive_path": {
+            "mechanism": "Bewässerung von unten soll Wasser gezielter an Pflanzen bringen.",
+            "state_change": "Der Wasserverbrauch der Bewässerung sinkt gegenüber der Vergleichsmethode.",
+            "condition": "Das Projekt weist die Einsparung bei vergleichbarer Funktion und Ertrag tatsächlich nach.",
+            "effect_role": "substantive_change",
+            "source_ids": [
+              "mdr-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine konkrete demokratische Zustandsänderung im Material.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:57:19.267Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T06:14:47.000Z",
+      "last_updated": "2026-09-10T09:57:19.267Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-e13941775b4512761a5f",
+      "case_file": null,
+      "source_published_at": "2026-09-10T06:14:47.000Z",
+      "published_at": "2026-09-10T09:57:19.267Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, welche Wassereinsparung im Versuch tatsächlich gemessen wird.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Gemessener Wasserverbrauch gegenüber einer geeigneten Vergleichsbewässerung.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cb7725dee398996d",
+          "announced_at": "2026-09-10T06:14:47.000Z",
+          "follow_up_date": "2026-09-17T09:57:19.267Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/video/mdr-videos/c/video-1646298.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T06:14:47.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-b9aa6e7e11987ec8",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b9aa6e7e11987ec8-6712681eaf6811bd-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b9aa6e7e11987ec8-5094f1ea71f0e878-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b9aa6e7e11987ec8-e2cde4d9a9d3d7b0-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b9aa6e7e11987ec8-2dff258e15ee164a-source.png",
+          "alt_text": "Stilisierte Illustration eines Einkaufswagens vor einer Einkaufszentrum-Fassade mit vereinfachter Drohnensilhouette."
+        }
+      },
+      "slug": "ukraine-news-drei-tote-bei-angriff-auf-einkaufszentrum-in-sumy-987ec8",
+      "title": "Sumy: MDR-Liveblog meldet drei Tote und 14 Verletzte",
+      "source_summary": "Der MDR-Liveblog meldet in einem Update zu Sumy drei Tote nach dem Angriff auf ein Einkaufszentrum. Nach dort wiedergegebenen neueren ukrainischen Angaben seien außerdem 14 Menschen verletzt worden; nach Angaben des staatlichen Rettungsdienstes seien darunter drei Kinder.\n\nDie Zahlen stammen innerhalb dieses Jobs aus demselben MDR-Liveblog. Eine zweite unabhängige Quelle ist nicht gebunden. Weil es sich um eine laufende Lage handelt, wird die Opferbilanz als vorläufiger, quellengebundener Stand behandelt und nicht als abschließend bestätigte Gesamtzahl.",
+      "summary": "Der MDR-Liveblog meldet in einem Update zu Sumy drei Tote und 14 Verletzte, darunter drei Kinder. Die Angaben sind quellengebunden und wegen der laufenden Lage als vorläufig zu behandeln.",
+      "detail_summary": "Der MDR-Liveblog berichtet in seinem Update über drei Tote und 14 Verletzte nach dem Angriff auf ein Einkaufszentrum in Sumy; unter den Verletzten seien drei Kinder. Diese Personenschäden sind eine schwere negative Zustandsveränderung für Leben, Gesundheit und Sicherheit, sofern sich der berichtete Stand bestätigt. Die Angriffszuordnung und die Opferbilanz sind in diesem Job nicht durch eine zweite unabhängige Quelle bestätigt. Weitergehende medizinische, psychische oder lokale Versorgungsfolgen sind plausibel, im gebundenen Material aber nicht belegt. Der Wirkungsticker behandelt den MDR-Stand deshalb ausdrücklich als vorläufige Einzelquellenmeldung.",
+      "why_relevant": "Der Angriff betrifft einen zivil genutzten Ort und hat nach aktualisierten Angaben Tote und Verletzte verursacht; die neue Opferbilanz ist ein materielles Update.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_post",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "sehr hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Tote und Verletzte sind eine unmittelbare schwere Verschlechterung von Leben, Gesundheit und Sicherheit.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Ein Angriff auf einen zivil genutzten Ort kann Menschen unmittelbar töten oder verletzen.",
+            "state_change": "Nach aktuellem Stand werden drei Tote und 14 Verletzte gemeldet.",
+            "condition": "Die aktualisierten Angaben bestätigen sich in weiterer belastbarer Berichterstattung.",
+            "effect_role": "substantive_change",
+            "source_ids": [
+              "mdr-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine belastbare Umweltzustandsänderung im gebundenen Material.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Für dieses Einzelereignis ist keine konkrete demokratische Zustandsänderung belegt.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:57:19.267Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T06:08:10.000Z",
+      "last_updated": "2026-09-10T09:57:19.267Z",
+      "version": 1,
+      "news_status": "updated",
+      "event_id": "event-d68f4ecc6d28980e2d12",
+      "case_file": null,
+      "source_published_at": "2026-09-10T06:15:23.000Z",
+      "published_at": "2026-09-10T09:57:19.267Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Aktualisierte Opferzahlen und unabhängige Bestätigung prüfen.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Stabile Opferbilanz in weiteren belastbaren Meldungen oder Primärquellen.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d4444c2e998e6b2e",
+          "announced_at": "2026-09-10T06:15:23.000Z",
+          "follow_up_date": "2026-09-17T09:57:19.267Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-merz--sumy-friedensgespraeche,ukraine-news-10-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T06:15:23.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-e56802a24cd4aae3",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e56802a24cd4aae3-54c3e0e90e90ac08-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e56802a24cd4aae3-27c68ca717aeb149-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e56802a24cd4aae3-2180c7466c60516e-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e56802a24cd4aae3-6e79a71ad623e2de-source.png",
+          "alt_text": "Redaktionelle Illustration mit Verfassungsbuch und mehreren neutralen Länderbausteinen an einem Prüftisch."
+        }
+      },
+      "slug": "debatte-um-mogliches-afd-verbotsverfahren-bundesratsprasident-bovenschulte-spd-grundgese-d4aae3",
+      "title": "Bovenschulte begrüßt Bund-Länder-Prüfung eines möglichen AfD-Verbots",
+      "source_summary": "Deutschlandfunk berichtet, Bundesratspräsident Andreas Bovenschulte habe den Vorschlag von Nordrhein-Westfalens Ministerpräsident Hendrik Wüst begrüßt, ein mögliches AfD-Verbotsverfahren durch eine Bund-Länder-Gruppe prüfen zu lassen. Bovenschulte sagte zugleich, die politische Auseinandersetzung mit der AfD müsse im Vordergrund stehen.\n\nBundeskanzler Friedrich Merz wird mit Skepsis zu den Erfolgschancen eines Verbotsverfahrens wiedergegeben und verweist auf hohe juristische Hürden. Die Meldung nennt außerdem Boris Pistorius und Cem Özdemir als Befürworter eines Vorgehens gegen als gesichert rechtsextremistisch eingestufte Landesverbände.",
+      "summary": "Bovenschulte begrüßt laut Deutschlandfunk eine Bund-Länder-Prüfung eines möglichen AfD-Verbotsverfahrens. Zugleich bleibt die politische Auseinandersetzung zentral; Merz verweist auf hohe juristische Hürden.",
+      "detail_summary": "Deutschlandfunk berichtet, Bundesratspräsident Andreas Bovenschulte habe den Vorschlag von Nordrhein-Westfalens Ministerpräsident Hendrik Wüst begrüßt, ein mögliches AfD-Verbotsverfahren durch eine Bund-Länder-Gruppe prüfen zu lassen. Bovenschulte sagte zugleich, die politische Auseinandersetzung mit der AfD müsse im Vordergrund stehen.\n\nBundeskanzler Friedrich Merz wird mit Skepsis zu den Erfolgschancen eines Verbotsverfahrens wiedergegeben und verweist auf hohe juristische Hürden. Die Meldung nennt außerdem Boris Pistorius und Cem Özdemir als Befürworter eines Vorgehens gegen als gesichert rechtsextremistisch eingestufte Landesverbände. Die Meldung dokumentiert damit eine politische Positionsverschiebung und eine offene Verfahrensdebatte, nicht die Einleitung eines Verbotsverfahrens.",
+      "why_relevant": "Die Äußerungen zeigen, dass die Debatte über eine institutionelle Prüfung eines Verbotsverfahrens auf Bund-Länder-Ebene an Breite gewinnt.",
+      "topic": [
+        "Demokratie"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der politischen Positionierung folgt keine belastbare unmittelbare Zustandsänderung für Menschen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine belastbare Zustandsänderung aus dem gelieferten Material ableitbar.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Debatte betrifft Instrumente der wehrhaften Demokratie und rechtsstaatliche Verfahren. Aus der politischen Positionierung allein folgt aber noch keine belastbare positive oder negative Zustandsänderung der Demokratie.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Überschrift hebt Bovenschultes zugespitzte verfassungsbezogene Aussage hervor; der Sachverhalt ist eine politische Position zur Prüfung eines möglichen Verfahrens.",
+        "factual_core": "Bovenschulte begrüßt laut Deutschlandfunk Wüsts Vorschlag, eine Bund-Länder-Gruppe ein mögliches AfD-Verbotsverfahren prüfen zu lassen. Ein Verbotsantrag oder eine Einsetzung der Gruppe ist in der Meldung nicht belegt.",
+        "epistemic_status": {
+          "confirmed": [
+            "Deutschlandfunk berichtet über Bovenschultes Unterstützung für eine Bund-Länder-Prüfung."
+          ],
+          "actor_claims": [
+            "Bovenschulte sagt, politische Auseinandersetzung müsse im Vordergrund stehen und das Grundgesetz sehe das Verbot verfassungsfeindlicher Parteien vor.",
+            "Merz verweist auf hohe juristische Hürden und äußert Skepsis zu den Erfolgschancen."
+          ],
+          "open": [
+            "Ob eine Bund-Länder-Gruppe eingesetzt wird und ob daraus ein Verbotsantrag folgt."
+          ]
+        },
+        "attribution": {
+          "frame_source": "dlf-nachrichten",
+          "speaker": "Andreas Bovenschulte",
+          "original_term": "Grundgesetz gibt vor, verfassungsfeindliche Parteien zu verbieten",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Grundgesetz gibt vor, verfassungsfeindliche Parteien zu verbieten",
+          "origin_in_story": "dlf-nachrichten",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Grundgesetz gibt vor, verfassungsfeindliche Parteien zu verbieten",
+          "frame_type": [],
+          "problem_definition": "Die Debatte wird als Frage dargestellt, ob staatliche Institutionen die rechtlichen Instrumente gegen verfassungsfeindliche Parteien prüfen sollen.",
+          "implied_cause": "Ausgangspunkt ist die politische Debatte um die AfD und ein mögliches Verbotsverfahren.",
+          "implied_responsibility": "Bund und Länder erscheinen als mögliche Prüfinstanzen; die Entscheidung über ein Parteiverbot läge nicht bei den zitierten Politikern allein.",
+          "implied_threat": "Die Formulierung setzt die Frage möglicher Verfassungsfeindlichkeit in den Mittelpunkt.",
+          "implied_solution_space": "Prüfung eines möglichen Verbotsverfahrens neben politischer Auseinandersetzung.",
+          "material_omissions": [
+            "Kein Beschluss zur Einsetzung einer Bund-Länder-Gruppe im Input.",
+            "Kein Verbotsantrag im Input.",
+            "Keine eigenständige juristische Prüfung der Erfolgsaussichten im Input."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Politische Debatte über ein mögliches Parteiverbotsverfahren.",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "dlf-nachrichten",
+              "claim_supported": "Bovenschulte, Merz sowie weitere Politiker werden mit unterschiedlichen Positionen zum möglichen Verbotsverfahren wiedergegeben."
+            }
+          ],
+          "uncertainty": "Die Meldung belegt Positionen, nicht die rechtliche Erfüllung der Verbotsvoraussetzungen."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Öffentliche Debatte über AfD, Parteiverbot und wehrhafte Demokratie.",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "Die hervorgehobene Verfassungsformulierung kann die Debatte stärker auf Verbotslogik konzentrieren.",
+          "trust_effect_potential": "Offen; aus der Einzelmeldung ist kein beobachteter Vertrauenseffekt ableitbar.",
+          "discourse_effect_potential": "Die Schlagzeile kann den Eindruck einer klareren verfassungsrechtlichen Lage erzeugen, obwohl die konkrete Prüfung eines Verbotsverfahrens offen bleibt."
+        },
+        "impact_path": {
+          "first_order": "Die Überschrift macht Bovenschultes verfassungsbezogene Position zum dominanten Einstieg.",
+          "second_order": "Lesende können die politische Forderung dadurch stärker als bereits geklärte Rechtslage oder als fortgeschrittenes Verfahren wahrnehmen.",
+          "third_order": "Wiederholte Verkürzung könnte die öffentliche Debatte auf Ja/Nein zum Verbot verengen; ein beobachteter Effekt ist hier nicht belegt."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Bovenschulte begrüßt laut Deutschlandfunk eine Bund-Länder-Prüfung.",
+          "what_is_inferred": "Die prominente Platzierung kann den rechtlichen Deutungsrahmen verstärken.",
+          "what_is_open": "Nur eine journalistische Quelle ist gebunden.",
+          "facts": [
+            "Bovenschulte begrüßt laut Deutschlandfunk eine Bund-Länder-Prüfung."
+          ],
+          "observations": [
+            "Die verfassungsbezogene Aussage steht prominent in der Überschrift."
+          ],
+          "inferences": [
+            "Die prominente Platzierung kann den rechtlichen Deutungsrahmen verstärken."
+          ],
+          "impact_potentials": [
+            "Stärkere Fokussierung der Debatte auf das Verbotsinstrument."
+          ],
+          "impact_risks": [
+            "Politische Position, Rechtsprüfung und tatsächlicher Verfahrensstand können vermischt werden."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle ist gebunden."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Deutschlandfunk berichtet über eine neue politische Position in der Debatte um ein mögliches AfD-Verbotsverfahren: Bundesratspräsident Bovenschulte begrüßt den Vorschlag, eine Bund-Länder-Gruppe prüfen zu lassen. Die Überschrift hebt dabei seine verfassungsbezogene Aussage besonders hervor. Wichtig ist die Trennung: Belegt ist eine politische Position und eine Prüfidee. Nicht belegt sind die Einsetzung einer solchen Gruppe, ein Verbotsantrag oder eine gerichtliche Bewertung. Merz wird zugleich mit Skepsis und dem Hinweis auf hohe juristische Hürden zitiert. Die prominente Formulierung kann den Eindruck einer bereits klar entschiedenen Rechtslage verstärken. Der Wirkungsticker behandelt sie deshalb als attribuierte Akteursaussage. Demokratisch relevant ist die Debatte, aber ihre Wirkungsrichtung bleibt offen, solange aus der Kommunikation kein konkreter rechtsstaatlicher Verfahrensschritt entsteht.",
+        "editorial_assessment": "Deutschlandfunk berichtet über eine neue politische Position in der Debatte um ein mögliches AfD-Verbotsverfahren: Bundesratspräsident Bovenschulte begrüßt den Vorschlag, eine Bund-Länder-Gruppe prüfen zu lassen. Die Überschrift hebt dabei seine verfassungsbezogene Aussage besonders hervor. Wichtig ist die Trennung: Belegt ist eine politische Position und eine Prüfidee. Nicht belegt sind die Einsetzung einer solchen Gruppe, ein Verbotsantrag oder eine gerichtliche Bewertung. Merz wird zugleich mit Skepsis und dem Hinweis auf hohe juristische Hürden zitiert. Die prominente Formulierung kann den Eindruck einer bereits klar entschiedenen Rechtslage verstärken. Der Wirkungsticker behandelt sie deshalb als attribuierte Akteursaussage. Demokratisch relevant ist die Debatte, aber ihre Wirkungsrichtung bleibt offen, solange aus der Kommunikation kein konkreter rechtsstaatlicher Verfahrensschritt entsteht.",
+        "fact_first_alternative": "Bovenschulte begrüßt laut Deutschlandfunk Wüsts Vorschlag, ein mögliches AfD-Verbotsverfahren durch eine Bund-Länder-Gruppe prüfen zu lassen. Ein entsprechender Beschluss oder Verbotsantrag ist in der Meldung nicht belegt.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Bovenschulte begrüßt Prüfung eines möglichen AfD-Verbotsverfahrens",
+          "recommended_summary": "Bovenschulte begrüßt laut Deutschlandfunk eine Bund-Länder-Prüfung eines möglichen AfD-Verbotsverfahrens. Zugleich bleibt die politische Auseinandersetzung zentral; Merz verweist auf hohe juristische Hürden.",
+          "recommended_meta_description": "Bovenschulte unterstützt laut Deutschlandfunk eine Bund-Länder-Prüfung eines möglichen AfD-Verbotsverfahrens. Ein Verfahren ist damit noch nicht eingeleitet."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:57:19.267Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T06:59:08.000Z",
+      "last_updated": "2026-09-10T09:57:19.267Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-8b9ff99f97ae7939663d",
+      "case_file": null,
+      "source_published_at": "2026-09-10T07:19:27.000Z",
+      "published_at": "2026-09-10T09:57:19.267Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bundesratspraesident-bovenschulte-spd-grundgesetz-gibt-vor-verfassungsfeindliche-parteien-zu-verbiet-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T07:19:27.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-3017bbc9b24cda3f",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3017bbc9b24cda3f-ecff6c8062a03401-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3017bbc9b24cda3f-35cd7019ac2accdb-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3017bbc9b24cda3f-4156049aea7e7cc0-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3017bbc9b24cda3f-3cb186904e9ec99b-source.png",
+          "alt_text": "Abstrakte Illustration eines verkleinerten Netzes aus Bürostandorten und Arbeitsplätzen."
+        }
+      },
+      "slug": "capgemini-wie-der-grosse-vw-dienstleister-die-eigenen-beschaftigten-gegen-sich-aufbringt-4cda3f",
+      "title": "Capgemini Engineering plant laut Bericht starken Stellenabbau und Standortschließungen",
+      "source_summary": "Manager Magazin berichtet, dass die Krise der Autoindustrie auch Capgemini Engineering Deutschland trifft. Das Management wolle das Unternehmen deutlich verkleinern, die Belegschaft fast halbieren und Standorte schließen. Zugleich formiere sich Widerstand unter Beschäftigten.\n\nDer bereitgestellte Datensatz enthält nur diese journalistische Quelle. Eine Unternehmensmitteilung, konkrete Stellenzahlen, eine Standortliste oder ein bestätigter Umsetzungszeitplan sind nicht beigefügt. Belegt ist damit ein berichteter Sanierungsplan, nicht dessen vollständige Umsetzung.",
+      "summary": "Manager Magazin berichtet über tiefe Sanierungspläne bei Capgemini Engineering Deutschland: Die Belegschaft solle fast halbiert und Standorte geschlossen werden. Umsetzung, genaue Stellenzahl und betroffene Standorte sind im Input nicht bestätigt.",
+      "detail_summary": "Manager Magazin berichtet über einen tiefen Umbau bei Capgemini Engineering Deutschland. Geplant seien eine fast halbierte Belegschaft und Standortschließungen; zugleich gebe es Widerstand unter Beschäftigten. Der Plan ist im bereitgestellten Material nur journalistisch berichtet und nicht durch eine Primärquelle bestätigt. Für Beschäftigte entsteht deshalb zunächst ein klar negatives Wirkungspotenzial: Erst wenn Stellen tatsächlich entfallen oder Standorte geschlossen werden, ändern sich Beschäftigungssicherheit, Einkommen oder Arbeitsort. Welche Standorte und wie viele Arbeitsplätze konkret betroffen wären, bleibt offen.",
+      "why_relevant": "Eine nahezu halbierte Belegschaft und Standortschließungen wären ein erheblicher Beschäftigungs- und Standortvorgang.",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Bei Umsetzung würden Arbeitsplätze und Beschäftigungssicherheit direkt betroffen.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Stellenabbau und Standortschließungen verringern Beschäftigungsmöglichkeiten und können Einkommen sowie Arbeitsplatzsicherheit betroffener Beschäftigter beeinträchtigen.",
+            "state_change": "Beschäftigte verlieren Arbeitsplätze oder müssen Standortwechsel und Unsicherheit bewältigen.",
+            "condition": "Die berichteten Kürzungen und Schließungen werden tatsächlich umgesetzt.",
+            "effect_role": "substantive_change",
+            "source_ids": [
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die gebundene Quelle enthält keine belastbare Umweltzustandsänderung.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die gebundene Quelle enthält keine konkrete demokratische Zustandsänderung.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Der Quellentext verwendet mit „radikal sanieren“ eine zugespitzte redaktionelle Formulierung für den geplanten Umbau.",
+        "factual_core": "Manager Magazin berichtet über einen geplanten starken Stellenabbau und Standortschließungen bei Capgemini Engineering Deutschland; Umsetzung und genaue Größen sind im Input nicht bestätigt.",
+        "epistemic_status": {
+          "confirmed": [
+            "Belegt ist, dass Manager Magazin einen Sanierungsplan mit fast halbierter Belegschaft und Standortschließungen berichtet."
+          ],
+          "actor_claims": [
+            "Dem Management wird zugeschrieben, die Belegschaft fast halbieren und Standorte schließen zu wollen."
+          ],
+          "open": [
+            "Konkrete Stellenzahl, betroffene Standorte und Umsetzungszeitplan sind im bereitgestellten Material offen."
+          ]
+        },
+        "attribution": {
+          "frame_source": "manager-magazin-news",
+          "speaker": "Redaktion von Manager Magazin",
+          "original_term": "radikal sanieren",
+          "usage_type": "editorial",
+          "placement": [
+            "body"
+          ],
+          "attribution_quality": "clear"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "radikal sanieren",
+          "origin_in_story": "manager-magazin-news",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Konflikt"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "radikal sanieren",
+          "frame_type": [
+            "Konflikt"
+          ],
+          "problem_definition": "Der Umbau wird als besonders tiefgreifender Einschnitt dargestellt.",
+          "implied_cause": "Die Autokrise wird als Auslöser des Sanierungsdrucks genannt.",
+          "implied_responsibility": "Die konkrete Ausgestaltung des Umbaus wird dem Management zugeschrieben.",
+          "implied_threat": "Für Beschäftigte stehen Arbeitsplätze und Standorte auf dem Spiel.",
+          "implied_solution_space": "Der Text lenkt die Aufmerksamkeit auf Sanierung und Widerstand; alternative Unternehmensmaßnahmen werden im kurzen Input nicht dargestellt.",
+          "material_omissions": [
+            "Keine Primärquelle des Unternehmens",
+            "Keine konkrete Stellenzahl",
+            "Keine Liste der betroffenen Standorte"
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": ""
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Arbeitsmarkt- und Unternehmensberichterstattung rund um die Krise der Autoindustrie.",
+          "normalization_potential": "low",
+          "repetition_risk": "medium",
+          "polarization_potential": "Die zugespitzte Wortwahl kann den Konflikt zwischen Management und Beschäftigten stärker hervorheben.",
+          "trust_effect_potential": "Offen; aus dem einzelnen Beitrag ist kein beobachteter Vertrauenseffekt ableitbar.",
+          "discourse_effect_potential": "Die Formulierung kann den Umbau als außergewöhnlich hart einordnen, ohne zusätzliche Fakten über Umfang oder Umsetzung zu liefern."
+        },
+        "impact_path": {
+          "first_order": "Die Wortwahl „radikal sanieren“ verdichtet den berichteten Personal- und Standortumbau zu einer besonders harten Krisenerzählung.",
+          "second_order": "Lesende können den geplanten Umbau dadurch stärker als bereits feststehende Eskalation wahrnehmen, obwohl die Umsetzung im Input offen ist.",
+          "third_order": "Bei wiederholter ähnlicher Rahmung könnte sich die öffentliche Wahrnehmung des Konflikts zwischen Management und Beschäftigten zuspitzen; dafür liegt hier kein beobachteter Nachweis vor."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Der Abstract nennt fast halbierte Belegschaft und Standortschließungen als Pläne.",
+          "what_is_inferred": "Die Formulierung verstärkt die Wahrnehmung der Tiefe des geplanten Umbaus.",
+          "what_is_open": "Nur eine journalistische Quelle und ein kurzer Abstract sind gebunden.",
+          "facts": [
+            "Der Abstract nennt fast halbierte Belegschaft und Standortschließungen als Pläne."
+          ],
+          "observations": [
+            "Der Begriff „radikal sanieren“ steht im journalistischen Abstract."
+          ],
+          "inferences": [
+            "Die Formulierung verstärkt die Wahrnehmung der Tiefe des geplanten Umbaus."
+          ],
+          "impact_potentials": [
+            "Stärkere Konflikt- und Krisenwahrnehmung."
+          ],
+          "impact_risks": [
+            "Plan und tatsächliche Umsetzung können in der Wahrnehmung vermischt werden."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle und ein kurzer Abstract sind gebunden."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Manager Magazin berichtet über einen tiefen Umbau bei Capgemini Engineering Deutschland: Die Belegschaft solle fast halbiert und Standorte geschlossen werden. Im kurzen Quellentext wird dafür die Formulierung „radikal sanieren“ verwendet. Das ist eine redaktionelle Zuspitzung, keine zusätzliche Tatsache. Der belegte Kern bleibt: Ein starker Personal- und Standortabbau wird berichtet, während genaue Stellenzahlen, betroffene Standorte und ein bestätigter Zeitplan im bereitgestellten Material fehlen. Die Wortwahl kann den Konflikt härter und die Umsetzung endgültiger erscheinen lassen, als es der Wissensstand hergibt. Deshalb trennt der Wirkungsticker Plan und Wirkung: Arbeitsplatzverluste wären ein klares Risiko, treten aber erst ein, wenn Stellen tatsächlich entfallen oder Standorte geschlossen werden. Ein beobachteter Medieneffekt auf Vertrauen oder öffentliche Meinung ist mit dieser Einzelquelle nicht belegt.",
+        "editorial_assessment": "Manager Magazin berichtet über einen tiefen Umbau bei Capgemini Engineering Deutschland: Die Belegschaft solle fast halbiert und Standorte geschlossen werden. Im kurzen Quellentext wird dafür die Formulierung „radikal sanieren“ verwendet. Das ist eine redaktionelle Zuspitzung, keine zusätzliche Tatsache. Der belegte Kern bleibt: Ein starker Personal- und Standortabbau wird berichtet, während genaue Stellenzahlen, betroffene Standorte und ein bestätigter Zeitplan im bereitgestellten Material fehlen. Die Wortwahl kann den Konflikt härter und die Umsetzung endgültiger erscheinen lassen, als es der Wissensstand hergibt. Deshalb trennt der Wirkungsticker Plan und Wirkung: Arbeitsplatzverluste wären ein klares Risiko, treten aber erst ein, wenn Stellen tatsächlich entfallen oder Standorte geschlossen werden. Ein beobachteter Medieneffekt auf Vertrauen oder öffentliche Meinung ist mit dieser Einzelquelle nicht belegt.",
+        "fact_first_alternative": "Capgemini Engineering Deutschland plant laut Manager Magazin einen starken Stellenabbau und Standortschließungen. Umfang, betroffene Standorte und Zeitplan sind im bereitgestellten Material nicht unabhängig bestätigt.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Capgemini Engineering plant laut Bericht starken Stellenabbau und Standortschließungen",
+          "recommended_summary": "Manager Magazin berichtet über tiefe Sanierungspläne bei Capgemini Engineering Deutschland: Die Belegschaft solle fast halbiert und Standorte geschlossen werden. Umsetzung, genaue Stellenzahl und betroffene Standorte sind im Input nicht bestätigt.",
+          "recommended_meta_description": "Manager Magazin berichtet über einen starken Stellenabbau und Standortschließungen bei Capgemini Engineering Deutschland. Umsetzung und Umfang sind noch nicht unabhängig bestätigt."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:47:22.989Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T05:00:00.000Z",
+      "last_updated": "2026-09-10T09:47:22.989Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-cc909de09dbf6ee5d466",
+      "case_file": null,
+      "source_published_at": "2026-09-10T05:00:00.000Z",
+      "published_at": "2026-09-10T09:47:22.989Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Umfang, betroffene Standorte und Umsetzungsstand der Sanierung bestätigen.",
+          "source_id": "manager-magazin-news",
+          "expected_by": null,
+          "measurable_indicator": "Unternehmensangaben oder weitere belastbare Berichte zu Stellenzahl, Standorten und Zeitplan.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b85eb8044d6b5cab",
+          "announced_at": "2026-09-10T05:00:00.000Z",
+          "follow_up_date": "2026-09-17T09:47:22.989Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/capgemini-wie-der-grosse-vw-dienstleister-die-eigenen-beschaeftigten-gegen-sich-aufbringt-a-4f65e9a9-06ca-4ead-bae8-f640561d75bc",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T05:00:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-f035486b80396b15",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f035486b80396b15-b00f2b3643ceb18e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f035486b80396b15-f30d4ebc13e91f09-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f035486b80396b15-d22d90d8c686632f-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f035486b80396b15-77317766fe4306ea-source.png",
+          "alt_text": "Abstrakte Illustration eines halb geöffneten faltbaren Smartphones ohne Markenkennzeichen."
+        }
+      },
+      "slug": "john-ternus-apple-bringt-erstes-auffaltbares-iphone-heraus-396b15",
+      "title": "Apple bringt laut Berichten sein erstes faltbares iPhone auf den Markt",
+      "source_summary": "WirtschaftsWoche und Tagesspiegel berichten, dass Apple erstmals ein auffaltbares iPhone in den Markt bringt. Beide Beiträge beschreiben faltbare Smartphones als bislang kleines Segment; WirtschaftsWoche nennt als Größenordnung nur jedes 50. verkaufte Smartphone.\n\nEin Tagesspiegel-Beitrag nennt Samsung als früheren Anbieter und gibt die Erwartung von Marktforschern wieder, Apple könne in dem Segment schnell die Führung übernehmen. Diese Marktführungsprognose ist eine Erwartung und kein eingetretener Zustand. Technische Details, Preis, Lebensdauer, Reparierbarkeit oder Umweltbilanz sind im gebundenen Material nicht ausreichend beschrieben.",
+      "summary": "WirtschaftsWoche und Tagesspiegel berichten über Apples erstes auffaltbares iPhone. Der Konzern tritt damit in einen bislang kleinen Markt ein; Prognosen über eine schnelle Marktführerschaft sind noch keine beobachtete Wirkung.",
+      "detail_summary": "Apple tritt laut den gebundenen Berichten erstmals mit einem faltbaren iPhone in dieses Smartphone-Segment ein. Belegt ist der berichtete Markteintritt, nicht eine spätere Marktführerschaft. Für Mensch und Demokratie ergibt sich aus dem Produktstart allein keine belastbare Zustandsänderung. Für Planet und Ressourcen bleiben mögliche Folgen offen, weil Absatz, Materialeinsatz, Lebensdauer und Reparierbarkeit im Input fehlen. Wettbewerbsreaktionen sind plausibel, aber noch nicht als eingetretene Wirkung belegt.",
+      "why_relevant": "Der Markteintritt eines großen Smartphone-Anbieters kann Wettbewerb und Produktentwicklung in einem neuen Gerätesegment verändern.",
+      "topic": [
+        "Technologie"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_post",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Ein Produktstart allein belegt keine relevante Veränderung menschlicher Lebenslagen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Neue Elektronik kann Ressourcen- und Abfallwirkungen haben, aber Material, Haltbarkeit und Absatz sind im Input nicht belegt.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine konkrete demokratische Zustandsänderung aus dem Produktstart ableitbar.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:47:22.989Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T18:30:00.000Z",
+      "last_updated": "2026-09-10T09:47:22.989Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-4ed62b7e0d4cd5900931",
+      "case_file": null,
+      "source_published_at": "2026-09-09T02:31:27.000Z",
+      "published_at": "2026-09-10T09:47:22.989Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wiwo-schlagzeilen"
+          ],
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/it/apple-bringt-erstes-auffaltbares-iphone-heraus/100253017.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T05:30:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/medien/dpa-vorstoss-in-neuen-markt-16032339.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T02:31:27.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-b95ed05b8140df75",
       "title_image": {
