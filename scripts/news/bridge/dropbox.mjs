@@ -32,7 +32,7 @@ export function loadDropboxCredentials(file, repositoryRoot) {
 }
 
 export class DropboxTransport {
-  constructor({ credentials, fetchImpl = fetch }) { this.credentials = credentials; this.fetch = fetchImpl; }
+  constructor({ credentials, fetchImpl = fetch }) { this.credentials = credentials; this.fetch = fetchImpl; this.archiveFolders = new Map(); }
   async token() {
     if (this.accessToken && Date.now() < this.expiresAt) return this.accessToken;
     const { app_key, app_secret, refresh_token } = this.credentials;
@@ -107,20 +107,31 @@ export class DropboxTransport {
   }
   async archive(file, jobId, date) {
     if (!/^wt_\d{8}T\d{6}Z_[a-f0-9]{24}$/.test(jobId) || !/^\d{4}-\d\d-\d\d/.test(date)) throw new Error('BRIDGE_PATH_INVALID');
+    if (!await this.metadata(file)) return;
+    // Repeated optional files must not create/check the same folder tree.
+    // Cache only confirmed directories, briefly, within this transport instance.
+    for (const [key, at] of this.archiveFolders) if (Date.now() - at >= 300000) this.archiveFolders.delete(key);
     let folder = `${BRIDGE_ROOT}/40_ARCHIVE`;
     for (const segment of [...date.slice(0, 10).split('-'), jobId]) {
       folder += `/${segment}`;
-      if (!await this.metadata(folder)) {
+      if (this.archiveFolders.has(folder)) continue;
+      const existing = await this.metadata(folder);
+      if (existing && existing['.tag'] !== 'folder') throw new Error('BRIDGE_ARCHIVE_FOLDER_CONFLICT');
+      if (!existing) {
         try { await this.request('files/create_folder_v2', { path: folder, autorename: false }); }
-        catch (error) { if (error.message !== 'BRIDGE_DROPBOX_CONFLICT') throw error; }
+        catch (error) {
+          if (error.message !== 'BRIDGE_DROPBOX_CONFLICT') throw error;
+          if ((await this.metadata(folder))?.['.tag'] !== 'folder') throw new Error('BRIDGE_ARCHIVE_FOLDER_CONFLICT');
+        }
       }
+      this.archiveFolders.set(folder, Date.now());
     }
     const target = `${folder}/${file.split('/').at(-1)}`;
-    if (!await this.metadata(file)) return;
     if (await this.metadata(target)) {
       if (!(await this.readBinary(file)).equals(await this.readBinary(target))) throw new Error('BRIDGE_ARCHIVE_CONFLICT');
       return; // Keep both on ambiguous recovery; never delete evidence.
     }
-    await this.move(file, target);
+    try { await this.move(file, target); }
+    catch (error) { this.archiveFolders.clear(); throw error; }
   }
 }
