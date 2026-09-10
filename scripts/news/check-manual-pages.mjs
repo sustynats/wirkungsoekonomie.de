@@ -29,7 +29,7 @@ export function checkManualPages(outputRoot, editions = loadManualEditorials(sou
     for (const slug of edition.manual_related_slugs) {
       if (!html.includes('/wirkungsticker/analyse/' + slug + '/')) throw Error("MANUAL_RELATED_LINK_MISSING:" + edition.slug + ":" + slug);
     }
-    for (const asset of [EDITORIAL_AUTHOR.image, edition.book.cover]) {
+    for (const asset of [EDITORIAL_AUTHOR.image, ...(edition.book.volumes || [edition.book]).map(volume => volume.cover)]) {
       if (!fs.existsSync(path.join(outputRoot, asset))) throw Error("MANUAL_PUBLIC_ASSET_MISSING:" + asset);
       const digest = file => crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
       if (digest(path.join(outputRoot, asset)) !== digest(path.join(sourceRoot, asset))) throw Error("MANUAL_PUBLIC_ASSET_CHANGED:" + asset);
