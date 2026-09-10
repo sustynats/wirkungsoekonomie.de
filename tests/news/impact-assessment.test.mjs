@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { IMPACT_VERSION, deriveImpactPresentation, migrateImpactAssessment, impactAssessmentErrors } from '../../scripts/news/impact-assessment.mjs';
-import { renderDimensionMeters } from '../../scripts/news/visuals.mjs';
+import { renderDimensionMeters as publicDimensionMeters } from '../../scripts/news/visuals.mjs';
 import { renderTitleImageFromStory } from '../../scripts/news/title-image/index.mjs';
 
 const sources = [{source_id:'official'}];
@@ -72,7 +72,7 @@ test('large potential magnitude and low evidence remain independent in HTML and 
   assert.deepEqual(impactAssessmentErrors(a,sources),[]);assert.equal(deriveImpactPresentation(a).dimensions.human.magnitude,5);
   const html=renderDimensionMeters({impact_assessment:a});assert.match(html,/data-magnitude="5"/);assert.match(html,/Evidenz: gering/);assert.doesNotMatch(html,/Balken.*Relevanz/);
   const image=renderTitleImageFromStory({title:'Eine konkrete Nachricht',impact_assessment:a,analysis:{}},{fonts:'none'});
-  assert.match(image.svg,/TRAGWEITE &amp; RICHTUNG/);assert.match(image.svg,/\+ Potenzial/);
+  assert.doesNotMatch(image.svg,/TRAGWEITE &amp; RICHTUNG|\+ Potenzial/, "public cards wait for catalog-wide release");
 });
 test('legacy migration is idempotent, does not invent materiality or convert relevance to strength',()=>{
   const raw={analysis_type:'ex_ante',human:{relevance:'sehr hoch',tendency:'gemischt'},planet:{relevance:'gering',tendency:'offen',direction_basis:'no_path'}};
@@ -95,3 +95,5 @@ test('dominant mixed observed pathways never get a future-risk label',()=>{
   d.balance={comparable_material_paths:false,protection_boundary_decisive:false,rationale:'Der negative Hauptpfad hat eine höhere Tragweite als der positive Gegenpfad.'};
   assert.deepEqual(impactAssessmentErrors(a,sources),[]);assert.equal(deriveImpactPresentation(a).dimensions.human.label,'− überwiegend beobachtet');
 });
+
+const renderDimensionMeters = (input, options = {}) => publicDimensionMeters(input, { ...options, context: { ...options.context, privateImpactPreview: true } });

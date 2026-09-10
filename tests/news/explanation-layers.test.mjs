@@ -88,6 +88,6 @@ test("Erklärungsebenen: eindeutige IDs, JSON-LD und erreichbare neue Lesepfade"
       // A signed book review is not a scored news event.
       assert.ok(html.includes('"@type":"Book"'));
       assert.ok(!html.includes('aria-label="Tragweite für Mensch:'));
-    } else assert.ok(html.includes('aria-label="Tragweite für Mensch:'));
+    } else { assert.ok(html.includes('Wir überarbeiten die Wirkungsprofile')); assert.ok(!html.includes('aria-label="Tragweite für Mensch:')); }
   }
 });

@@ -126,7 +126,7 @@ test("Ticker-Akten werden auf Eingaben abgebildet", () => {
   assert.equal(input.mode, "impact_card");
   assert.equal(input.source, "Europäische Kommission");
   assert.equal(input.date, "2026-09-02T08:00:00.000Z");
-  assert.deepEqual(Object.values(input.dimensions).map(d=>d.magnitude), [null,null,null]);
+  assert.equal(input.dimensions, null, "pending migration never becomes public uncertainty in title images");
   const withImage = storyToTitleInput({ ...story, title_image: { mode: "editorial", src: "https://example.org/motiv.jpg" } });
   assert.equal(withImage.mode, "editorial");
   assert.equal(withImage.image.src, "https://example.org/motiv.jpg");
