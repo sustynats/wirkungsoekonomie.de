@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-10T06:54:16.564Z",
+  "started_at": "2026-09-10T07:16:54.410Z",
   "scanned_stories": 224,
   "scanned_subjects": 199,
   "editorial_candidates": 35,
   "ready_for_research": 11,
   "research_pending": 14,
-  "retry_deferred": 7,
+  "retry_deferred": 5,
   "editorial_research_sources_discovered": 55,
-  "selected": 0,
+  "selected": 2,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
@@ -28,7 +28,7 @@
   "quality_held": 5,
   "unchanged_research_skipped": 12,
   "requested": [],
-  "publication_deferred": false,
+  "publication_deferred": true,
   "failed": [],
   "candidates": [
     {
@@ -1556,5 +1556,6 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-10T06:55:59.695Z"
+  "batch_deferred": 2,
+  "completed_at": "2026-09-10T07:18:40.197Z"
 }
