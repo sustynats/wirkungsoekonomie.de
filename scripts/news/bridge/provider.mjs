@@ -77,19 +77,19 @@ export class DropboxChatGPTBridgeProvider {
       try {
         const output = parsePacket(await this.transport.read(bridgePath('20_OUTPUT_READY', `${job.input.job_id}.output.json`)), outputSchema);
         const result = this.adapt(output, job, registry, stories, now);
+        const staged = this.stageOnly || job.input.test_only;
         let visual = null;
         if (result.record && this.visualProvider) {
-          visual = await this.visualProvider.receive(job, now);
+          visual = await this.visualProvider.receive(job, now, { output, record: result.record, staged });
           if (visual.status === 'pending') continue;
           // Missing/failed imagery follows the existing free impact-card path.
           // Existing imagery is never bought again as a bridge fallback.
         }
-        const staged = this.stageOnly || job.input.test_only;
         const accepted = { ...result, story_id: job.candidate.story_id, input_content_hash: job.candidate.content_hash, job_id: job.input.job_id, staged, visual, output_hash: hash(output), accepted_at: now };
         job.accepted = { ...accepted, ...(visual?.file ? { visual: { ...visual, file: undefined } } : {}) };
         job.status = 'accepted'; job.accepted_at = now;
         job.output_detected_at = (await this.store.observation(`output:${job.input.job_id}`))?.at || now;
-        if (staged && result.record) job.staging = { record: result.record, html: storyPage(result.record), visual_sha256: visual?.sha256 || null };
+        if (staged && result.record) job.staging = { record: result.record, html: storyPage(result.record), visual_sha256: visual?.sha256 || null, ...(visual?.staging ? { image: visual.staging } : {}) };
         await this.store.put(job); // durable staging BEFORE any ACK
         results.push(accepted);
       } catch (error) { await this.failure(job, 'import', error, now); }

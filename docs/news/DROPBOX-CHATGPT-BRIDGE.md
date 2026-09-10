@@ -1,14 +1,15 @@
 # Wirkungsticker: ChatGPT-Dropbox-Bridge
 
-Stand: 10. September 2026. Die Bridge ersetzt vorübergehend die Text- und
-Bildgenerierung. Redaktionelle Quellen-, Evidenz-, Richtungs-, Medien- und
+Stand: 10. September 2026. Bridge-3 übernimmt vorübergehend die redaktionelle Text- und
+Analyseverarbeitung. Higgsfield rendert ausschließlich den gelieferten Bildbrief. Redaktionelle Quellen-, Evidenz-, Richtungs-, Medien- und
 Veröffentlichungsgates gelten unverändert. API- und Higgsfield-Code bleiben erhalten.
 
 ## Betrieb
 
 `WIRKUNGSTICKER_PROCESSING_MODE=api|dropbox_chatgpt_bridge|disabled` ist der
 maßgebliche Schalter. In Bridge-Betrieb muss
-`VISUAL_GENERATION_PROVIDER=chatgpt_bridge` gelten. Widersprüchliche oder unbekannte
+`VISUAL_GENERATION_PROVIDER=higgsfield` gelten. Bridge-2 bleibt als unveränderte
+historische Version mit `chatgpt_bridge` lesbar. Widersprüchliche oder unbekannte
 Werte brechen ab. `WOEK_NEWS_BRIDGE_PUBLISH=true` erlaubt geprüfte reguläre Importe.
 Ohne diesen Wert werden Ergebnisse privat gestaged. `test_only=true` bleibt immer
 Staging, unabhängig von der Produktionsfreigabe.
@@ -21,7 +22,8 @@ Der unabhängige Import-Poller läuft **alle fünf Minuten**. Oracle prüft dabe
 `20_OUTPUT_READY` und das private Journal; erst fertige Pakete wecken den bestehenden
 GitHub-Importer. GitHub hat zusätzlich einen unabhängigen Fünf-Minuten-Zeitplan.
 Fehlende Outputs sind `PROCESSING_PENDING`, kein Fehler und kein Retry.
-Teilweise vorhandene Bildpakete warten auf die fehlende Datei.
+Bridge-3 benötigt ausschließlich vollständiges `output.json`. Alte oder teilweise
+vorhandene ChatGPT-Bilddateien sind kein Freigabekriterium und werden nicht verwendet.
 
 Oracle: `woek-wirkungsticker-clock.timer` weckt die Discovery-Lane;
 `woek-news-bridge-poll.timer` prüft um `*:00/5:00`. Im Bridge-Betrieb erhält der
@@ -60,7 +62,7 @@ Einziger Dropbox-Stamm: `/WOEK/WIRKUNGSTICKER-CHATGPT-BRIDGE`.
 | --- | --- |
 | `00_INBOX` | Atomar freigegebene `<JOB_ID>.input.json` |
 | `10_CLAIMED` | Vom Bearbeiter per Move übernommener Input |
-| `20_OUTPUT_READY` | Output, PNG und Bildmetadaten |
+| `20_OUTPUT_READY` | Vollständiges Output-JSON mit Visual Brief |
 | `30_ACK` | Unveränderliche Übernahmebestätigung |
 | `40_ARCHIVE/YYYY/MM/DD/JOB_ID` | Dauerhaft erhaltene Arbeitsdateien |
 | `90_ERRORS` | Fehlerstatus und Quarantänebelege |
@@ -102,16 +104,44 @@ die originalen `source_id`-Werte. Für Erstmeldungen muss `source_summary` 60–
 für vollständige Meldungen 100–180 Wörter enthalten; keine Fakten zur Verlängerung
 erfinden. Envelope-Zusammenfassungen und native Zusammenfassungen müssen identisch sein.
 
-Bilddatei `<JOB_ID>.title.png` und `<JOB_ID>.visual.json` **vor** dem vollständigen
-`output.json` hochladen. Das Output-JSON ist das letzte Freigabesignal.
-`visual.json` bindet `job_id`, `input_hash` und `image_sha256`. Symbolbild, 16:9,
-genau ein finales Motiv, ohne Text, Logos oder vorgetäuschte Ereignisfotografie.
-Höchstens zwei Regenerierungen nach Qualitätsfehlern. Reale Personendarstellungen
-und redaktionelle Warnungen verlangen gesonderte Prüfung. Decoder, Größe,
-Seitenverhältnis, Hash, Metadaten und OCR werden vor Asset-Übernahme geprüft.
-Semantische Bildprüfung erfolgt durch den bearbeitenden ChatGPT-Prozess; OCR ist
-kein Beweis für inhaltliche Richtigkeit. Fehlende Bilder nutzen die vorhandene
-kostenfreie Wirkungskarte. Es gibt keinen Ersatzprovider.
+Bridge-3: ChatGPT erzeugt **kein PNG** und **kein zwingendes visual.json**.
+Das vollständige `<JOB_ID>.output.json` bleibt das atomar und zuletzt geschriebene
+Freigabesignal. `visual_brief` enthält `required`, `visual_type`, `concept`,
+`subjects`, `symbols`, `avoid`, `location_context`, `contains_real_person`,
+`documentary_impression_forbidden`, `text_in_image`, `caption`, `alt_text` und
+`editorial_notes`. Es gilt das ausführbare `visual_brief_schema`.
+
+Nur nach vollständig bestandener Text-/Analyseprüfung und bei `publish`/`merge`
+verarbeitet der Server den Brief über den bestehenden Higgsfield-Adapter. Bei
+`hold`/`reject` gibt es keinen Bildaufruf. `required=false` erhält ein vorhandenes
+Bild oder nutzt die Wirkungskarte ohne Neukauf. Der Brief bestimmt das Motiv;
+keine neue redaktionelle Motivauswahl aus Überschrift oder Analyse. Jüngste Motive
+werden auf Wiederholung geprüft. Genau ein sachliches Symbolmotiv in 16:9, kein
+Text, keine Logos/Wasserzeichen, keine erfundenen Ereignisdetails, kein Anschein
+eines Nachrichtenfotos und keine politische Wertung durch Licht oder Farben.
+Reale Personen bleiben ohne separate redaktionelle Freigabe ausgeschlossen.
+
+Es gelten bestehende persistente Higgsfield-Jobs, gemeinsame Kostensperren,
+Format-/Größenprüfung und OCR. Die vorhandene begrenzte Retry-Logik bleibt erhalten.
+Bildfehler blockieren keinen redaktionell freigegebenen Artikel: danach greift die
+bestehende kostenfreie Wirkungskarte, niemals ein weiterer KI-Bildanbieter.
+Private Tests verwenden denselben Renderer mit privater Asset-Ablage und niemals
+GitHub Releases. Erst nach dauerhaft gespeichertem Staging folgt `ACK staged`.
+
+`contract-2026-09-10-bridge-2.json` bleibt unverändert. Die neue Version heißt
+`contract-2026-09-10-bridge-3.json`. Bereits vorbereitete Inputs behalten IDs und
+Hashes; ausschließlich ihre Bildübergabe folgt ab Freigabe Bridge-3. Historische
+PNG-Anweisungen in diesen Inputs sind durch Bridge-3 ersetzt. Die Fehlerhistorie
+bleibt unverändert. Sumy wird ausschließlich privat neu abgeschlossen; erst nach
+PASS wird die normale Inbox freigegeben.
+
+Aktueller Rückschreibblocker: Der ChatGPT-Connector meldet bei Datei-Egress
+`BLOCKED_FILE_REFERENCE`. Der Stundenlauf ist deshalb von ChatGPT pausiert.
+Ein zeitlich begrenzter manueller Transport ist erlaubt: ChatGPT gibt das vollständige
+JSON direkt im Gespräch aus; die Nutzerin reicht es an Codex weiter; Codex schreibt
+es atomar in dieselbe Dropbox-Output-Datei. Alle Importgates bleiben identisch.
+Das ist noch kein automatischer Cloud-Rückschreibweg. Den Stundenlauf erst nach
+nachgewiesen erfolgreicher automatischer JSON-Rückgabe wieder aktivieren.
 
 Originale und vorhandene Titelbild-Derivate gehen unveränderlich in GitHub Releases.
 Frontend und Renderer behalten ihre Komponenten; Alt-Text und KI-Kennzeichnung
@@ -185,7 +215,7 @@ ausgeführt werden. Kein `PROCESS_NOW` und kein versteckter Modellaufruf.
 
 Erst nach ausdrücklicher Aufhebung des Kostenstopps: laufende Bridge-Aufträge
 abschließen/halten und Betriebsvariablen auf `api` und `higgsfield` setzen.
-Die explizite Caddy-Sperre für `/api/news-analysis*` und `/api/news-title-image`
+Die explizite Caddy-Sperre für `/api/news-analysis*`
 entfernen, Konfiguration validieren und Caddy neu laden. Vorherige Konfiguration:
 `/etc/caddy/Caddyfile.before-news-bridge-20260910`. Keine Kostenjournale zurücksetzen;
 bestehende Budgets und reservierte Anfragen bleiben maßgeblich. Dropbox und SQLite

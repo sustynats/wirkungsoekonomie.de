@@ -1369,7 +1369,7 @@ export async function runWirkungsticker(options = {}) {
           if (previous?.bridge_import?.output_hash === result.output_hash) continue;
           byId.set(result.record.story_id, result.record); changedStoryIds.add(result.record.story_id);
           report[previous?.published ? 'updated_stories' : 'published_stories']++;
-          if (result.visual?.status === 'validated') bridgeImages.set(result.record.story_id, result.visual);
+          if (['validated', 'brief_validated', 'fallback'].includes(result.visual?.status)) bridgeImages.set(result.record.story_id, result.visual);
           if (result.mergeFrom && result.mergeFrom !== result.record.story_id) {
             const changes = mergeLivingFiles([...byId.values()], [{ canonical_id: result.record.story_id, duplicate_ids: [result.mergeFrom], reason: 'BRIDGE_REVIEWED_SAME_EVENT' }], now);
             if (!changes.length) throw new Error('BRIDGE_MERGE_GATE_FAILED');
@@ -1633,7 +1633,7 @@ export async function runWirkungsticker(options = {}) {
   report.title_images_changed = 0;
   if (!options.dryRun) {
     const prepareImage = options.prepareTitleImage || createTitleImagePipeline();
-    const pendingImages = [...byId.values()].filter((story) => story.published && story.listed !== false && !changedStoryIds.has(story.story_id) && story.title_image?.retry_after && Date.parse(story.title_image.retry_after) <= nowDate.getTime()).sort((a, b) => Date.parse(a.title_image.retry_after) - Date.parse(b.title_image.retry_after)).slice(0, IMAGE_CONFIG.max_generations_per_run);
+    const pendingImages = [...byId.values()].filter((story) => mode === 'api' && story.published && story.listed !== false && !changedStoryIds.has(story.story_id) && story.title_image?.retry_after && Date.parse(story.title_image.retry_after) <= nowDate.getTime()).sort((a, b) => Date.parse(a.title_image.retry_after) - Date.parse(b.title_image.retry_after)).slice(0, IMAGE_CONFIG.max_generations_per_run);
     const imageIds = [...changedStoryIds, ...pendingImages.map(story => story.story_id)];
     const imageDeadline = Date.now() + 4 * 60000;
     for (const storyId of imageIds) {
@@ -1647,7 +1647,7 @@ export async function runWirkungsticker(options = {}) {
         const visual = bridgeImages.get(storyId);
         const bytes = visual?.file ? fs.readFileSync(visual.file) : visual?.status === 'validated' ? await bridge.transport.readBinary((await import('./bridge/contract.mjs')).bridgePath('20_OUTPUT_READY', `${story.bridge_import.job_id}.title.png`)) : null;
         if (bytes && imageDigest(bytes) !== visual.sha256) throw new Error('BRIDGE_VISUAL_HASH_CHANGED');
-        const result = await prepareImage(story, { ...(bytes ? { bridgeAsset: { bytes, ...visual, provider: 'chatgpt_bridge', model: 'chatgpt-images', prompt_version: 'woek-chatgpt-bridge-1', generated_at: visual.visual.generated_at } } : {}) });
+        const result = await prepareImage(visual?.brief ? { ...story, visual_brief: visual.brief } : story, { ...(visual?.status === 'fallback' ? { cardsOnly: true } : {}), ...(bytes ? { bridgeAsset: { bytes, ...visual, provider: 'chatgpt_bridge', model: 'chatgpt-images', prompt_version: 'woek-chatgpt-bridge-1', generated_at: visual.visual.generated_at } } : {}) });
         if (result.title_image) {
           if (JSON.stringify(publicTitleImage(story.title_image)) !== JSON.stringify(publicTitleImage(result.title_image))) report.title_images_changed += 1;
           story.title_image = result.title_image;

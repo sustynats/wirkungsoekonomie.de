@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { visualBriefSchema, assertSchema } from "../bridge/contract.mjs";
 import { createHash } from "node:crypto";
 import { SAFE_AREAS } from "./index.mjs";
 
@@ -42,6 +43,13 @@ const OBJECT_TOPICS = [
 ];
 
 export function chooseTitleImageMode(story = {}) {
+  if (story.visual_brief) {
+    try { assertSchema(visualBriefSchema, story.visual_brief); }
+    catch { return { mode: 'impact_card', reason: 'VISUAL_BRIEF_INVALID' }; }
+    return story.visual_brief.required
+      ? { mode: 'editorial', reason: 'CHATGPT_VISUAL_BRIEF', motif: story.visual_brief.concept }
+      : { mode: story.title_image?.source_visual ? 'editorial' : 'impact_card', reason: 'EXISTING_VISUAL_OR_CARD' };
+  }
   const summary = String(story.source_summary || story.analysis?.source_summary || "").trim();
   const text = `${summary}\n${story.title || ""}\n${(story.topic || []).join(" ")}\n${(story.claims || []).map((c) => c.claim || "").join(" ")}`;
   const sensitive = SENSITIVE.test(text) || /\b(?:tatverd[aä]cht[\p{L}]*|trapped|rescued|survivor|flood-hit)\b/iu.test(text);
@@ -57,6 +65,13 @@ export function chooseTitleImageMode(story = {}) {
 export function buildEditorialImagePrompt(story) {
   const decision = chooseTitleImageMode(story);
   if (decision.mode !== "editorial") return null;
+  if (story.visual_brief) return [
+    'Render the following editorial brief faithfully. It is the complete approved concept. Do not select another motif, add a metaphor, reinterpret its symbolism or invent factual event details.',
+    JSON.stringify(assertSchema(visualBriefSchema, story.visual_brief)),
+    'Exactly one clearly illustrative symbolic motif, landscape 16:9. No text, logos, watermarks, identifiable people, documentary event reconstruction or fabricated specific location details.',
+    'No unnecessary drama or political judgement through lighting, colour or symbolism. Do not depict success, guilt, disaster or measured impact unless actually specified and supported. The result is labelled AI-generated symbolic imagery.',
+    'Keep the main identifying motif on the left/centre and the right third calm for later composition. Do not render panels, labels or publication branding.',
+  ].join('\n');
   // Only the already validated neutral news, never a raw article or evaluative
   // impact analysis, supplies individual context. Treat that context as data.
   const { motifFocus: f } = SAFE_AREAS.landscape;
