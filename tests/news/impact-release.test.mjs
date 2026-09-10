@@ -13,7 +13,11 @@ test('atomic rollback hides incomplete profiles across cards, detail, API and ti
   assert.equal(PUBLIC_IMPACT_PROFILE_VERSION, null);
   const active = catalog.filter(s => s.published && s.analysis && s.listed !== false);
   assert.ok(active.length > 200);
-  for (const story of active) {
+  for (const original of active) {
+    // Keep the actual article shell, but explicitly construct the unreviewed
+    // state under test. A new approved live article must not break rollback tests.
+    const story=structuredClone(original);
+    story.impact_semantic_review={status:'needs_review'};
     const before = JSON.stringify(story);
     assert.equal(publicImpactAssessment(story), null);
     for (const html of [storyCard(story, 0), storyPage(story)]) {
@@ -26,6 +30,26 @@ test('atomic rollback hides incomplete profiles across cards, detail, API and ti
     assert.equal(storyToTitleInput(story).dimensions, null);
     assert.equal(JSON.stringify(story), before);
   }
+});
+test('the actual mixed publication catalog renders every complete profile and keeps incomplete records behind the gate',()=>{
+ const active=catalog.filter(s=>s.published&&s.analysis&&s.listed!==false);
+ const before=JSON.stringify(active);
+ for(const story of active){
+  const assessment=publicImpactAssessment(story),html=storyCard(story,0),api=publicStory(story);
+  assert.doesNotThrow(()=>assertPublicImpactHtml(html),story.slug);
+  assert.equal(Boolean(api.impact_assessment),Boolean(assessment),story.slug);
+  assert.equal(Boolean(storyToTitleInput(story).dimensions),Boolean(assessment),story.slug);
+  if(assessment){
+   assert.equal(assessment.version,'2.1');assert.equal(story.impact_semantic_review.status,'ready');
+   for(const key of ['human','planet','democracy']){
+    assert.match(html,new RegExp('wt-dim--'+key));
+    assert.ok(Number.isInteger(assessment.dimensions[key].magnitude));
+    assert.ok(assessment.dimensions[key].primary_paths.length);
+   }
+  }else assert.doesNotMatch(html,/data-potential-model=/);
+ }
+ assert.doesNotThrow(()=>assertPublicImpactHtml(indexPage(active,'2026-09-10T21:00:00Z')));
+ assert.equal(JSON.stringify(active),before);
 });
 test('public artifact gate rejects debug output and accidentally copied private profile previews', () => {
   assert.throws(() => assertPublicImpactHtml('<article data-private-impact-preview="true">'), /IMPACT_PRIVATE_PREVIEW/);
