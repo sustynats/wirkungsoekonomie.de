@@ -1,6 +1,7 @@
 import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 import { IMAGE_CONFIG, imageError, digest } from "./policy.mjs";
+import { withRequestDeadline } from "../request-deadline.mjs";
 
 export function inspectImage(bytes, { minWidth = 1200 } = {}) {
   if (!Buffer.isBuffer(bytes) || bytes.length < 32 || bytes.length > IMAGE_CONFIG.max_image_bytes) throw imageError("IMAGE_SIZE_INVALID");
@@ -42,14 +43,15 @@ export function inspectImage(bytes, { minWidth = 1200 } = {}) {
 }
 
 const ALLOWED_HOSTS = ["higgsfield.ai", "higgsfield.cloud", "higgsfield-cdn.com", "d8j0ntlcm91z4.cloudfront.net", "github.com", "release-assets.githubusercontent.com", "objects.githubusercontent.com"];
-export async function downloadImage(url, { fetchImpl = fetch, lookupImpl = lookup, minWidth = 1200 } = {}) {
+export async function downloadImage(url, { fetchImpl = fetch, lookupImpl = lookup, minWidth = 1200, timeoutMs = 20000 } = {}) {
+  return withRequestDeadline(async signal => {
   let current = url;
   for (let hop = 0; hop < 4; hop++) {
     const parsed = new URL(current);
     if (parsed.protocol !== "https:" || parsed.username || parsed.password || (parsed.port && parsed.port !== "443") || isIP(parsed.hostname) || !ALLOWED_HOSTS.some((host) => parsed.hostname === host || parsed.hostname.endsWith(`.${host}`))) throw imageError("IMAGE_URL_NOT_ALLOWED");
     const addresses = await lookupImpl(parsed.hostname, { all: true });
     if (!addresses.length || addresses.some(({ address }) => /^(?:127\.|10\.|192\.168\.|169\.254\.|0\.|172\.(?:1[6-9]|2\d|3[01])\.|::|fc|fd|fe80)/i.test(address))) throw imageError("IMAGE_URL_NOT_PUBLIC");
-    const response = await fetchImpl(current, { redirect: "manual", signal: AbortSignal.timeout(20000) });
+    const response = await fetchImpl(current, { redirect: "manual", signal });
     if ([301,302,303,307,308].includes(response.status)) { current = new URL(response.headers.get("location"), current).href; await response.body?.cancel(); continue; }
     if (!response.ok) throw imageError("IMAGE_DOWNLOAD_FAILED");
     if (Number(response.headers.get("content-length")) > IMAGE_CONFIG.max_image_bytes) { await response.body?.cancel(); throw imageError("IMAGE_SIZE_INVALID"); }
@@ -59,4 +61,5 @@ export async function downloadImage(url, { fetchImpl = fetch, lookupImpl = looku
     return { bytes, ...inspectImage(bytes, { minWidth }) };
   }
   throw imageError("IMAGE_REDIRECT_LIMIT");
+  }, {timeoutMs, code:'IMAGE_DOWNLOAD_TIMEOUT'});
 }
