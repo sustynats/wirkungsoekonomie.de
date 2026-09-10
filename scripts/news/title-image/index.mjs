@@ -240,7 +240,7 @@ function meter(x, y, width, height, level, color, u) {
   const gap = 5 * u;
   const segment = (width - gap * 4) / 5;
   const parts = [];
-  for (let index = 0; index < 4; index += 1) {
+  for (let index = 0; index < 5; index += 1) {
     const sx = x + index * (segment + gap);
     if (level === null) {
       parts.push(`<rect x="${sx.toFixed(1)}" y="${y.toFixed(1)}" width="${segment.toFixed(1)}" height="${height.toFixed(1)}" rx="${(3 * u).toFixed(1)}" fill="none" stroke="${color}" stroke-opacity="0.55" stroke-dasharray="${(4 * u).toFixed(1)} ${(4 * u).toFixed(1)}"/>`);

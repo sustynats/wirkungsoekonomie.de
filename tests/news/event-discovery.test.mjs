@@ -194,8 +194,8 @@ test('coverage resolves old raw fragments to one story and shows its recorded se
 test('publication instructions require new information, not a new decision or measured effects',()=>{
   const s=story([item()]);s.claims=claimLedgerFor(s.sources,s.story_id,now);s.preanalysis=preAnalyzeStory(s,now);
   const prompt=buildAnalysisPrompt([s]);
-  assert.match(prompt,/Kein Beschlusszwang/);assert.match(prompt,/allein rechtfertigt kein not_material/);
-  assert.match(prompt,/tragfähige Evidenz/);assert.match(prompt,/Umsetzung nicht erfinden/);
+  assert.match(prompt,/Kein Beschlusszwang/);assert.match(prompt,/allein kein not_material/);
+  assert.match(prompt,/Materialität, Evidenz/);assert.match(prompt,/Umsetzung nicht erfinden/);
 });
 test('active index search is bounded, rotates, excludes disabled sources and never bypasses robots errors',async()=>{
   const endpoints=Array.from({length:4},(_,i)=>({id:`index-${i}`,source_id:'test',url:`https://example.org/index-${i}`,type:'official_rss',enabled:true,access_reviewed_at:'2026-09-09',evidence_url:'https://example.org/terms',scope:'metadata'}));

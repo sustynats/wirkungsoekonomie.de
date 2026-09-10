@@ -5,10 +5,10 @@ import { renderDimensionMeters } from '../../scripts/news/visuals.mjs';
 import { renderTitleImageFromStory } from '../../scripts/news/title-image/index.mjs';
 
 const sources = [{source_id:'official'}];
-const path = (direction='positive', magnitude=5) => ({direction, magnitude, label:'Verbesserter Zugang zu erreichbarer Hilfe', mechanism:'Zusätzliche örtliche Angebote verkürzen den Weg zur Hilfe.', recipients:['Menschen mit erschwertem Zugang'], evidence:'medium', temporal_status:'ex_ante', material:true, same_target:true, same_baseline:true, source_ids:['official'], condition:'Wenn das vorgeschlagene Programm vollständig umgesetzt wird.'});
+const path = (direction='positive', magnitude=5) => ({type:'main_path',likelihood:'low',direction, magnitude, label:'Verbesserter Zugang zu erreichbarer Hilfe', mechanism:'Zusätzliche örtliche Angebote verkürzen den Weg zur Hilfe.', recipients:['Menschen mit erschwertem Zugang'], evidence:'medium', temporal_status:'ex_ante', material:true, same_target:true, same_baseline:true, source_ids:['official'], condition:'Wenn das vorgeschlagene Programm vollständig umgesetzt wird.'});
 function profile() {
-  const dimension = {direction:'positive',magnitude:5,evidence:'medium',data_status:'modelled',temporal_status:'ex_ante',primary_paths:[path()],secondary_paths:[],rationale:'Der Zugang wird unter den genannten Bedingungen erleichtert.',observed_outcome:null,balance:null};
-  return {version:IMPACT_VERSION,news_event:'Eine politische Akteurin fordert ein neues Hilfsprogramm.',evaluation_target:{label:'Umsetzung des vorgeschlagenen Hilfsprogramms',type:'proposal'},baseline:'Fortführung des bestehenden Angebots ohne dieses Programm.',temporal_status:'ex_ante',systemic_relevance:'high',dimensions:Object.fromEntries(['human','planet','democracy'].map(k=>[k,structuredClone(dimension)]))};
+  const dimension = {path_status:'material',likelihood:'low',dominance:'dominant_positive',direction:'positive',magnitude:5,evidence:'medium',data_status:'modelled',temporal_status:'ex_ante',primary_paths:[path()],secondary_paths:[],rationale:'Der Zugang wird unter den genannten Bedingungen erleichtert.',observed_outcome:null,balance:null};
+  return {version:IMPACT_VERSION,news_event:'Eine politische Akteurin fordert ein neues Hilfsprogramm.',evaluation_target:{label:'Umsetzung des vorgeschlagenen Hilfsprogramms',type:'proposal'},counterfactual:'Das bestehende Angebot wird unverändert fortgeführt.', reference_frame:['Zugang zu öffentlicher Hilfe und gleichberechtigte Teilhabe'],baseline:'Fortführung des bestehenden Angebots ohne dieses Programm.',temporal_status:'ex_ante',systemic_relevance:'high',dimensions:Object.fromEntries(['human','planet','democracy'].map(k=>[k,structuredClone(dimension)]))};
 }
 test('future political proposal is potential and distinguishes statement from measure',()=>{
   const a=profile(),p=deriveImpactPresentation(a);assert.deepEqual(impactAssessmentErrors(a,sources),[]);
@@ -16,20 +16,20 @@ test('future political proposal is potential and distinguishes statement from me
   assert.doesNotMatch(renderDimensionMeters({impact_assessment:a}),/\+ beobachtet/);
 });
 test('occurred injury is negative observed change, with future risk separate',()=>{
-  const a=profile(),d=a.dimensions.human;a.temporal_status='ex_post';d.temporal_status='ex_post';d.direction='negative';d.data_status='observed';
-  d.primary_paths=[{...path('negative'),label:'Menschen sind verletzt worden und benötigen Versorgung.',temporal_status:'ex_post'}];
+  const a=profile(),d=a.dimensions.human;a.temporal_status='ex_post';d.temporal_status='ex_post';d.direction='negative';d.dominance='dominant_negative';d.likelihood='already_occurring';d.data_status='observed';
+  d.primary_paths=[{...path('negative'),label:'Menschen sind verletzt worden und benötigen Versorgung.',temporal_status:'ex_post',likelihood:'already_occurring'}];
   d.observed_outcome={change:'Die Quelle dokumentiert bereits eingetretene Verletzungen.',source_ids:['official'],attribution:'open'};
   d.secondary_paths=[{...path('negative',2),label:'Mögliche längerfristige gesundheitliche Folgeschäden'}];
   assert.deepEqual(impactAssessmentErrors(a,sources),[]);assert.equal(deriveImpactPresentation(a).dimensions.human.label,'− beobachtet');
   d.observed_outcome.source_ids=['invented'];assert.ok(impactAssessmentErrors(a,sources).includes('IMPACT_OBSERVED_OUTCOME_REQUIRED:human'));
 });
 test('missing data stays open and unknown, never neutral or zero',()=>{
-  const a=profile(),d=a.dimensions.planet;Object.assign(d,{direction:'open',magnitude:null,evidence:'not_assessable',data_status:'missing',primary_paths:[]});
+  const a=profile(),d=a.dimensions.planet;Object.assign(d,{path_status:'insufficient_basis',direction:'open',dominance:'none',magnitude:null,evidence:'not_assessable',data_status:'missing',primary_paths:[]});
   assert.deepEqual(impactAssessmentErrors(a,sources),[]);assert.equal(deriveImpactPresentation(a).dimensions.planet.magnitude,null);
   d.direction='neutral';assert.ok(impactAssessmentErrors(a,sources).includes('IMPACT_MISSING_IS_OPEN:planet'));
 });
 test('explicit non-material finding is distinct from missing evidence',()=>{
-  const a=profile(),d=a.dimensions.planet;Object.assign(d,{direction:'not_material',magnitude:0,primary_paths:[],rationale:'Im betrachteten Umfang ist kein materieller ökologischer Wirkpfad identifiziert.'});
+  const a=profile(),d=a.dimensions.planet;Object.assign(d,{path_status:'not_material',direction:'not_material',dominance:'none',magnitude:0,primary_paths:[],rationale:'Im betrachteten Umfang ist kein materieller ökologischer Wirkpfad identifiziert.'});
   assert.deepEqual(impactAssessmentErrors(a,sources),[]);assert.equal(deriveImpactPresentation(a).dimensions.planet.label,'kein wesentlicher Wirkpfad');
 });
 test('positive main path plus minor adverse secondary path remains positive',()=>{
@@ -37,7 +37,7 @@ test('positive main path plus minor adverse secondary path remains positive',()=
   assert.deepEqual(impactAssessmentErrors(a,sources),[]);assert.equal(deriveImpactPresentation(a).dimensions.democracy.direction,'positive');
 });
 test('ambivalence requires material opposing main paths and an explicit same-baseline conflict',()=>{
-  const a=profile(),d=a.dimensions.human;d.direction='ambivalent';d.primary_paths.push(path('negative',4));
+  const a=profile(),d=a.dimensions.human;d.direction='mixed';d.dominance='balanced';d.primary_paths.push(path('negative',4));
   assert.ok(impactAssessmentErrors(a,sources).includes('IMPACT_AMBIVALENCE_UNSUPPORTED:human'));
   d.balance={comparable_material_paths:true,protection_boundary_decisive:false,rationale:'Beide materiellen Pfade betreffen denselben Gegenstand mit vergleichbarer Tragweite.'};
   assert.deepEqual(impactAssessmentErrors(a,sources),[]);assert.equal(deriveImpactPresentation(a).dimensions.human.label,'± gegenläufig');
@@ -69,4 +69,15 @@ test('legacy migration is idempotent, does not invent materiality or convert rel
 test('observed labels cannot be obtained from an ex-post enum alone',()=>{
   const a=profile();a.dimensions.human.temporal_status='ex_post';
   assert.ok(impactAssessmentErrors(a,sources).includes('IMPACT_OBSERVED_OUTCOME_REQUIRED:human'));assert.equal(deriveImpactPresentation(a).dimensions.human.label,'? offen');
+});
+
+test('neutral can describe a checked material change without pretending the dimension is absent',()=>{
+  const a=profile(),d=a.dimensions.human;d.direction='neutral';d.dominance='none';d.primary_paths=[{...path('neutral'),label:'Geprüfte Verschiebung ohne positive oder negative Änderung im Referenzrahmen'}];
+  assert.deepEqual(impactAssessmentErrors(a,sources),[]);assert.equal(deriveImpactPresentation(a).dimensions.human.path_status,'material');assert.equal(deriveImpactPresentation(a).dimensions.human.label,'neutral');
+});
+test('dominant mixed observed pathways never get a future-risk label',()=>{
+  const a=profile(),d=a.dimensions.human;d.direction='mixed';d.dominance='dominant_negative';d.temporal_status='ex_post';d.likelihood='already_occurring';d.data_status='observed';d.primary_paths=[{...path('negative',5),temporal_status:'ex_post',likelihood:'already_occurring'},{...path('positive',3),temporal_status:'ex_post',likelihood:'already_occurring'}];
+  d.observed_outcome={change:'Die getrennten Veränderungen sind in den Belegen dokumentiert.',source_ids:['official'],attribution:'open'};
+  d.balance={comparable_material_paths:false,protection_boundary_decisive:false,rationale:'Der negative Hauptpfad hat eine höhere Tragweite als der positive Gegenpfad.'};
+  assert.deepEqual(impactAssessmentErrors(a,sources),[]);assert.equal(deriveImpactPresentation(a).dimensions.human.label,'− überwiegend beobachtet');
 });

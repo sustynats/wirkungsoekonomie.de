@@ -31,7 +31,7 @@ const clean = (value, max = 1200) => String(value ?? "").replace(/<[^>]*>/g, " "
 const list = value => Array.isArray(value) ? value : [];
 
 export function editorialContentSnapshot(analysis) {
-  const keys = ["title", "subtitle", "teaser", "seo_description", "analysis_variant", "editorial_genre", "lead_statement", "sections", "claim_ledger", "source_snapshot", "monitoring", "subject_dimensions", "direction_finding", "assessment_context", "assessment_condition", "author_perspective", "executive_finding", "navigation_groups", "editorial_rules_version", "related_analysis_slugs", "title_image"];
+  const keys = ["title", "subtitle", "teaser", "seo_description", "analysis_variant", "editorial_genre", "lead_statement", "sections", "claim_ledger", "source_snapshot", "monitoring", "impact_assessment", "impact_history", "subject_dimensions", "direction_finding", "assessment_context", "assessment_condition", "author_perspective", "executive_finding", "navigation_groups", "editorial_rules_version", "related_analysis_slugs", "title_image"];
   return structuredClone(Object.fromEntries(keys.filter(key => analysis[key] !== undefined).map(key => [key, analysis[key]])));
 }
 
@@ -39,10 +39,10 @@ export function sanitizeEditorialJudgment(raw, sourceIds) {
   return {
     editorial_rules_version: EDITORIAL_RULES_VERSION,
     executive_finding: clean(raw.executive_finding),
-    subject_dimensions: Object.fromEntries(Object.keys(DIMENSIONS).map(key => {
+    ...(raw.impact_assessment ? {} : {subject_dimensions: Object.fromEntries(Object.keys(DIMENSIONS).map(key => {
       const item = raw.subject_dimensions?.[key] || {};
       return [key, { relevance: clean(item.relevance, 20), rationale: clean(item.rationale, 600), ...Object.fromEntries(Object.entries(AXES).map(([axis, labels]) => [axis, Object.hasOwn(labels, item[axis]) ? item[axis] : "open"])) }];
-    })),
+    }))}),
     assessment_context: ["potential", "risk", "observed", "open"].includes(raw.assessment_context) ? raw.assessment_context : "open",
     assessment_condition: clean(raw.assessment_condition, 600),
     author_perspective: { paragraphs: list(raw.author_perspective?.paragraphs).slice(0, 4).map(item => clean(item, 1400)).filter(Boolean), claim_indices: [...new Set(list(raw.author_perspective?.claim_indices).filter(Number.isInteger))], origin: "generated_from_analysis" },
@@ -59,7 +59,7 @@ export function editorialJudgmentErrors(analysis) {
   if ((analysis.executive_finding || "").length < 180 || !analysis.assessment_condition) errors.push("EDITORIAL_FINDING_REQUIRED");
   const validSources = new Set((analysis.source_snapshot || []).map(source => source.source_id));
   // During generation, the source set is validated in the enclosing pipeline.
-  for (const dimension of Object.keys(DIMENSIONS)) {
+  for (const dimension of analysis.impact_assessment ? [] : Object.keys(DIMENSIONS)) {
     const item = analysis.subject_dimensions?.[dimension];
     if (!item?.rationale || !["offen", "gering", "mittel", "hoch", "sehr hoch"].includes(item.relevance)) errors.push("EDITORIAL_MPD_REQUIRED");
     if (Object.entries(AXES).some(([axis, labels]) => !Object.hasOwn(labels, item?.[axis]))) errors.push("EDITORIAL_AXES_REQUIRED");
@@ -74,7 +74,7 @@ export function editorialJudgmentErrors(analysis) {
   for (const item of analysis.positive_path_checks || []) {
     if (!item.measure || !item.mechanism || !item.source_ids?.length || (validSources.size && item.source_ids.some(id => !validSources.has(id)))) errors.push("EDITORIAL_POSITIVE_PATH_UNGROUNDED");
   }
-  const hasPositiveDirection = Object.values(analysis.subject_dimensions || {}).some(item => ['positive', 'mixed'].includes(item.direction)) || (analysis.sections || []).some(section => section.visual?.items?.some(item => item.relation === "impact_path" && ['positive', 'mixed'].includes(item.direction)));
+  const hasPositiveDirection = Object.values(analysis.impact_assessment?.dimensions || analysis.subject_dimensions || {}).some(item => ['positive', 'mixed'].includes(item.direction)) || (analysis.sections || []).some(section => section.visual?.items?.some(item => item.relation === "impact_path" && ['positive', 'mixed'].includes(item.direction)));
   if (hasPositiveDirection && !analysis.positive_path_checks?.length) errors.push("EDITORIAL_POSITIVE_PATH_UNGROUNDED");
   if (!(analysis.sections || []).some(section => ["cascade", "network"].includes(section.visual?.type) && section.visual.items?.length >= 3 && section.visual.items.some(item => item.relation === "impact_path"))) errors.push("EDITORIAL_IMPACT_VISUAL_REQUIRED");
   return [...new Set(errors)];

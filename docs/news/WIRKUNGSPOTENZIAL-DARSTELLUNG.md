@@ -1,6 +1,6 @@
-# Wirkungspotenzial: Bewertungs- und Darstellungsmodell 1.2
+# Wirkungspotenzial: historisches Bewertungsmodell 1.2
 
-Stand: 10. September 2026. Gilt zentral für Wirkungsticker-Nachrichten und die gemeinsamen MPD-Komponenten; die entsprechende redaktionelle Regel gilt auch für Meinung & Analyse.
+Historischer Stand vom 10. September 2026. **Abgelöst durch [Wirkungssemantik 2.0](IMPACT-SEMANTICS-2.md).** Die nachstehende Dokumentation bleibt zur Nachvollziehbarkeit früherer Daten erhalten. Für neue Verarbeitung, Migration und Darstellung gilt ausschließlich Version 2.0: Balken zeigen Tragweite; Meldungsrelevanz, Pfadstatus, Richtung, Eintrittsplausibilität, Evidenz und Zeitstatus bleiben getrennt. Frühere Relevanzwerte sind keine Tragweitenwerte.
 
 ## Fehlerursache
 

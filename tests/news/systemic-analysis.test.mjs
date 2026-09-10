@@ -115,8 +115,8 @@ test("revised longread separates evidence, direction, eight macro chapters and p
   assert.ok(html.indexOf('news-systemic-visual--network') < html.indexOf('aria-label="Inhaltsverzeichnis der Analyse"'));
   assert.doesNotMatch(html, /Visuelle Einordnung der Ursprungsgeschichte/);
   for (const type of ["network", "power", "cascade", "timeline", "federal"]) assert.match(html, new RegExp(`news-systemic-visual--${type}`));
-  assert.match(html, /Relevanz: <strong>hoch<\/strong>/);
-  assert.match(html, /Stark negativ/);
+  assert.match(html, /Tragweite: (?:hoch|Tragweite offen)/);
+  assert.match(html, /data-magnitude="(?:4|unknown)"/);
   assert.match(html, /Persönliche Einordnung der Autorin/);
   assert.equal(renderAuthorPerspective({}), "", "Keine historische Haltung erfinden");
   const scope = record.sections.find(section => section.id === "felder");

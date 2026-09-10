@@ -55,8 +55,8 @@ test("urgent review raises queue priority without changing evidence or publicati
 });
 test("review instruction distinguishes later publication from the date of an actor statement", () => {
   const prompt = buildAnalysisPrompt([]);
-  assert.match(prompt, /Artikelzeit ist nicht Aussagezeit/);
-  assert.match(prompt, /Spätere Artikel können alte Zitate enthalten/);
-  assert.match(prompt, /Publikationsdatum entscheidet keinen Widerspruch/);
-  assert.match(prompt, /Videoüberschrift ist kein geprüfter Originalton/);
+  assert.match(prompt, /Artikelzeit≠Aussagezeit/);
+  assert.match(prompt, /Artikelzeit≠Aussagezeit/);
+  assert.match(prompt, /datierte Aussagen/);
+  assert.match(prompt, /Videoüberschrift≠Originalton/);
 });

@@ -9,7 +9,7 @@ const fixture = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json
 test("detail reading order starts with the news, then evidence and facts before analysis", () => {
   const story = structuredClone(fixture), before = structuredClone(story);
   const html = storyPage(story);
-  const sequence = ['id="nachricht"', 'id="belegstand"', 'id="faktencheck"', 'aria-label="Auf einen Blick"', 'id="analyse"', 'id="einordnung"', 'id="folgencheck"'];
+  const sequence = ['id="nachricht"', 'id="wirkungsprofil"', 'id="belegstand"', 'id="faktencheck"', 'aria-label="Auf einen Blick"', 'id="analyse"', 'id="einordnung"', 'id="folgencheck"'];
   let previous = -1;
   for (const marker of sequence) {
     const position = html.indexOf(marker);
@@ -19,7 +19,7 @@ test("detail reading order starts with the news, then evidence and facts before 
   assert.ok(html.indexOf('class="news-status-notice"') < html.indexOf('id="nachricht"'));
   assert.match(html, /href="#faktencheck">Belege<\/a>/);
   const subnav = html.match(/<nav class="wt-subnav"[\s\S]*?<\/nav>/)[0];
-  assert.equal((subnav.match(/<a /g) || []).length, 4);
+  assert.equal((subnav.match(/<a /g) || []).length, 5);
   assert.equal((html.match(/id="belegstand"/g) || []).length, 1);
   assert.deepEqual(story, before, "rendering never rewrites journalistic content or dates");
 });

@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { assertAutomaticImpactTransport } from './processing-mode.mjs';
 import { backgroundBatchEligibility, batchStoryFingerprint, batchWorkPriority, createNewsBatchClient, BATCH_RESERVATION_USD } from './batch.mjs';
 import { editorialContentSnapshot } from "./editorial-judgment.mjs";
 import { commissionedReviewState, isCommissionedAnalysis } from "./systemic-analysis.mjs";
@@ -278,6 +279,7 @@ export async function runEditorialAnalyses({
   };
   if (bridgePlan) return { ...report, bridge_candidates: runnable, existing_analyses: store.analyses || [] };
   if (!execute) return report;
+  assertAutomaticImpactTransport(callAiImpl !== callWoekAi || typeof batchFetchImpl === 'function');
   for (const { story, assessment } of assessed) {
     const request = requests.get(story.story_id);
     if (!request) continue;

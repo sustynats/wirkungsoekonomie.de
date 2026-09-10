@@ -49,7 +49,7 @@ export function sameBridgeEvent(a, b) {
   return Boolean(a.event_id && a.event_id === b.event_id) || a.sources.some(left => b.sources.some(right => eventCompatibility(left, right).same_event));
 }
 
-export function adaptOutput(output, job, registry, stories, now) {
+export function validateOutputBinding(output, job, stories, now) {
   assertSchema(outputSchema, output);
   if (output.job_id !== job.input.job_id || output.input_hash !== job.input.input_hash) throw new Error('BRIDGE_JOB_BINDING_MISMATCH');
   if (Date.parse(output.processed_at) < Date.parse(job.input.created_at) || Date.parse(output.processed_at) > Date.parse(now) + 300000) throw new Error('BRIDGE_OUTPUT_TIME_INVALID');
@@ -70,6 +70,13 @@ export function adaptOutput(output, job, registry, stories, now) {
   const declared = new Set(output.sources.map(s => `${s.source_id}\n${safeUrl(s.url)}`));
   const sourcePool = [...job.candidate.sources, ...(decision === 'merge' ? target.sources : [])];
   if (!declared.size || [...declared].some(key => !sourcePool.some(s => `${s.source_id}\n${safeUrl(s.url)}` === key))) throw new Error('BRIDGE_UNBOUND_SOURCE');
+  return { decision, id, target, analysisHash, declared, sourcePool };
+}
+
+export function adaptOutput(output, job, registry, stories, now) {
+  const binding = validateOutputBinding(output, job, stories, now);
+  if (['hold', 'reject'].includes(binding.decision)) return binding;
+  const { decision, id, target, analysisHash, declared, sourcePool } = binding;
   let analysis = structuredClone(output.wirkungsticker.analysis);
   // The native prompt wraps its response in analyses; accept exactly this job.
   if (Array.isArray(analysis.analyses)) {
@@ -95,7 +102,7 @@ export function adaptOutput(output, job, registry, stories, now) {
   if (target.published && !review.correction_note) throw new Error('BRIDGE_CORRECTION_NOTE_REQUIRED');
   const result = prepareReviewedStory(review, registry, stories, now);
   if (result.errors.length) throw Object.assign(new Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: result.errors });
-  if (!result.record.analysis.impact_assessment) result.record.analysis.impact_assessment = migrateImpactAssessment(result.record.analysis, { title: result.record.title });
+  result.record.impact_assessment = migrateImpactAssessment(result.record.analysis, { title: result.record.title });
   result.record.bridge_import = { job_id: job.input.job_id, output_hash: hash(output), imported_at: now };
   return { decision, record: result.record, unchanged: result.unchanged, mergeFrom: decision === 'merge' ? job.candidate.story_id : null };
 }

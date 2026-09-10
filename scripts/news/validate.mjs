@@ -9,6 +9,7 @@ import { loadNewsRegistry, registryErrors } from "./registry.mjs";
 import { isMerged, relatedStories, mergedStoryTargetValid } from "./living-files.mjs";
 import { buildCaseFiles, caseIntegrityErrors } from "./case-files.mjs";
 import { editorialAnalysisValidationErrors, editorialResearchSourceErrors } from "./editorial-analysis.mjs";
+import { persistedImpactAssessmentErrors } from "./migrate-impact-assessments.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const readJson = (relative) => JSON.parse(fs.readFileSync(path.join(ROOT, relative), "utf8"));
@@ -32,6 +33,10 @@ if (storiesById.size !== store.stories.length) fail("DUPLICATE_STORY_ID");
 for (const story of store.stories) {
   if (!story.story_id || !story.slug || !Array.isArray(story.sources) || !Array.isArray(story.claims)) fail(`STORY_SCHEMA_INVALID:${story.story_id || "unknown"}`);
   if (story.sources.some((source) => Object.hasOwn(source, "article_excerpt"))) fail(`TRANSIENT_ARTICLE_TEXT_PERSISTED:${story.story_id}`);
+  if (story.published) {
+    const errors = persistedImpactAssessmentErrors(story);
+    if (errors.length) fail(`PERSISTED_IMPACT_INVALID:${story.story_id}:${errors.join(',')}`);
+  }
   if (isMerged(story)) {
     if (story.listed !== false || state.pending_story_ids.includes(story.story_id)) fail(`MERGED_STORY_STILL_QUEUED:${story.story_id}`);
     if (!mergedStoryTargetValid(story, storiesById)) fail(`MERGED_STORY_TARGET_INVALID:${story.story_id}`);
@@ -129,7 +134,10 @@ if (!rss.startsWith("<?xml") || !rss.includes("<rss ") || !atom.startsWith("<?xm
 for (const analysis of editorialStore.analyses.filter((item) => item.status === "published")) {
   const story = storiesById.get(analysis.story_id);
   if (!story?.published || story.listed === false) fail(`EDITORIAL_STORY_INVALID:${analysis.analysis_id}`);
-  const errors = editorialAnalysisValidationErrors(analysis, story, { candidate: true, evidence_gate: { passed: Boolean(analysis.evidence_gate?.passed) } });
+  const impactErrors = persistedImpactAssessmentErrors(analysis);
+  if (impactErrors.length) fail(`PERSISTED_IMPACT_INVALID:${analysis.analysis_id}:${impactErrors.join(',')}`);
+  const { impact_assessment: _projection, ...originalAnalysis } = analysis;
+  const errors = editorialAnalysisValidationErrors(analysis.impact_assessment?.review?.status === 'needs_reassessment' ? originalAnalysis : analysis, story, { candidate: true, evidence_gate: { passed: Boolean(analysis.evidence_gate?.passed) } });
   if (errors.length) fail(`EDITORIAL_ANALYSIS_QUALITY_INVALID:${analysis.analysis_id}:${errors.join(",")}`);
   const sourceIds = new Set((analysis.source_snapshot || []).map((source) => source.source_id));
   for (const source of (analysis.source_snapshot || []).filter(source => source.editorial_review)) {

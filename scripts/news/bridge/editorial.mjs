@@ -1,9 +1,10 @@
+import { migrateImpactAssessment, impactClaimLedger } from '../impact-assessment.mjs';
 import { impactAssessmentErrors } from '../impact-assessment.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { hash, bridgePath, parsePacket } from './contract.mjs';
 import { runEditorialAnalyses, prepareAutomaticEditorialRecord } from '../run-editorial-analyses.mjs';
-import { buildEditorialAnalysisPrompt, sanitizeEditorialAnalysis, editorialAnalysisValidationErrors } from '../editorial-analysis.mjs';
+import { buildEditorialAnalysisPrompt, sanitizeEditorialAnalysis, editorialAnalysisValidationErrors, editorialSources, editorialSourceRef } from '../editorial-analysis.mjs';
 import { editorialAnalysisPage } from '../build.mjs';
 
 export const EDITORIAL_JOB_TYPE='editorial_analysis';
@@ -34,7 +35,7 @@ export async function discoverEditorialJobs(bridge,root,now,{limit=2}={}){
     let job=await bridge.store.get(id);
     if(job&&closed.has(job.status))continue;
     if(!job){
-      const input={schema_version:'1.0',job_id:id,job_type:EDITORIAL_JOB_TYPE,input_hash:inputHash,created_at:now,test_only:false,processing_mode:'dropbox_chatgpt_bridge',contract_path:bridgePath('98_CONFIG','editorial-analysis-contract-1.json'),binding,
+      const input={schema_version:'1.0',job_id:id,job_type:EDITORIAL_JOB_TYPE,input_hash:inputHash,created_at:now,test_only:false,processing_mode:'dropbox_chatgpt_bridge',contract_path:bridgePath('98_CONFIG','editorial-analysis-contract-2.json'),binding,
         analysis_prompt:prompt,instructions:'Erstelle die eigenständige Meinung-&-Analyse-Ausgabe nach dem angegebenen Formatvertrag. Alle nativen Evidenz-, Gegenbefund-, WÖk- und Self-Frame-Gates bleiben bestehen. Keine Bildgenerierung. Entscheidung hold/reject ist möglich. Output atomar zuletzt schreiben.'};
       job={input,candidate:story,editorial_context:{assessment,existing},status:'prepared_editorial',created_at:now,attempts:{}};
       await bridge.store.put(job);jobs.push(job);
@@ -67,6 +68,11 @@ export async function importEditorialJobs(bridge,root,now){
         if(!current||current.assessment.fingerprint!==job.input.binding.source_fingerprint||current.assessment.research_fingerprint!==job.input.binding.research_fingerprint||(previous?hash(previous):null)!==job.input.binding.previous_hash)throw Error('BRIDGE_STALE_EDITORIAL_SOURCES');
         if(!output.editorial_analysis)throw Error('BRIDGE_PRODUCTION_ANALYSIS_REQUIRED');
         const analysis=sanitizeEditorialAnalysis(output.editorial_analysis,current.story);
+        analysis.source_snapshot=editorialSources(current.story).map(s=>({...s,source_id:editorialSourceRef(s)}));
+        const gate = await bridge.semanticReview(bridge, job, output, analysis, analysis.impact_assessment || migrateImpactAssessment(analysis, { title: analysis.title }), now);
+        if (gate.status !== 'ready') continue;
+        analysis.impact_assessment = { ...gate.assessment, publication_status: 'ready' };
+        analysis.impact_claims = impactClaimLedger(analysis.impact_assessment, analysis.source_snapshot, now);
         const errors=editorialAnalysisValidationErrors(analysis,current.story,current.assessment);
         errors.push(...impactAssessmentErrors(analysis.impact_assessment, analysis.source_snapshot, {required:job.input.analysis_prompt.includes("impact_assessment 2.0")}));
         if(errors.length)throw Object.assign(Error('BRIDGE_EDITORIAL_PUBLICATION_GATE_FAILED'),{issues:errors});

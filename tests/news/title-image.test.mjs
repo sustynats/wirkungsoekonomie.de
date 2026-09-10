@@ -34,7 +34,7 @@ test("Wirkungskarte rendert Panel, Meter, Chips und Branding", () => {
   assert.equal(result.height, 630);
   assert.equal(result.mode, "impact_card");
   assert.deepEqual(result.warnings, []);
-  assert.match(result.svg, /WIRKUNG AUF/);
+  assert.match(result.svg, /TRAGWEITE &amp; RICHTUNG/);
   assert.match(result.svg, /WIRKUNGSTICKER/);
   assert.match(result.svg, />Mensch</);
   assert.match(result.svg, />beschlossen</);
@@ -55,7 +55,7 @@ test("Editorial rendert Motiv, Kennzeichnung und eingebettete Fonts", () => {
   assert.match(result.svg, /KI-generiertes Symbolbild/);
   assert.match(result.svg, /@font-face\{font-family:"Source Serif 4";font-weight:700/);
   assert.match(result.svg, /url\(data:font\/woff2;base64,/);
-  assert.match(result.svg, /WIRKUNG AUF/);
+  assert.match(result.svg, /TRAGWEITE &amp; RICHTUNG/);
   assert.match(result.svg, /fill="#07152C" fill-opacity="0.62"/);
 });
 
@@ -78,20 +78,20 @@ test("Editorial panel shares card coordinates in all sizes, including headline-f
 
 test("Editorial without analysis does not invent impact meters", () => {
   const result = renderTitleImage({ mode: "editorial", headline: "Thema ohne Bewertung", image: placeholderDataUri("energie") }, { fonts: "none" });
-  assert.doesNotMatch(result.svg, /WIRKUNG AUF/);
+  assert.doesNotMatch(result.svg, /TRAGWEITE &amp; RICHTUNG/);
 });
 
 test("Editorial ohne Motiv fällt auf die Wirkungskarte zurück", () => {
   const result = renderTitleImage({ ...BASE, mode: "editorial", image: null }, { size: "og", fonts: "none" });
   assert.equal(result.mode, "impact_card");
   assert.ok(result.warnings.includes("EDITORIAL_IMAGE_MISSING"));
-  assert.match(result.svg, /WIRKUNG AUF/);
+  assert.match(result.svg, /TRAGWEITE &amp; RICHTUNG/);
 });
 
 test("Fehlende Werte werden ruhig behandelt", () => {
   const noData = renderTitleImage({ mode: "impact_card", headline: "Erkennung und Behandlung von Sepsis thematisiert", category: "Gesundheit" }, { size: "og", fonts: "none" });
   assert.ok(noData.warnings.includes("IMPACT_DATA_MISSING"));
-  assert.doesNotMatch(noData.svg, /WIRKUNG AUF/);
+  assert.doesNotMatch(noData.svg, /TRAGWEITE &amp; RICHTUNG/);
   assert.match(noData.svg, /GESUNDHEIT/);
   const open = renderTitleImage({ ...BASE, mode: "impact_card", dimensions: { human: "hoch" }, category: null, source: null, date: null, status: "laufende Entwicklung" }, { size: "square", fonts: "none" });
   assert.equal(open.width, 1080);
@@ -126,7 +126,7 @@ test("Ticker-Akten werden auf Eingaben abgebildet", () => {
   assert.equal(input.mode, "impact_card");
   assert.equal(input.source, "Europäische Kommission");
   assert.equal(input.date, "2026-09-02T08:00:00.000Z");
-  assert.deepEqual(input.dimensions, { human: "hoch", planet: "mittel", democracy: "offen" });
+  assert.deepEqual(Object.values(input.dimensions).map(d=>d.magnitude), [null,null,null]);
   const withImage = storyToTitleInput({ ...story, title_image: { mode: "editorial", src: "https://example.org/motiv.jpg" } });
   assert.equal(withImage.mode, "editorial");
   assert.equal(withImage.image.src, "https://example.org/motiv.jpg");
