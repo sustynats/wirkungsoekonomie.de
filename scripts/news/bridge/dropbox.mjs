@@ -32,20 +32,27 @@ export function loadDropboxCredentials(file, repositoryRoot) {
 }
 
 export class DropboxTransport {
-  constructor({ credentials, fetchImpl = fetch }) { this.credentials = credentials; this.fetch = fetchImpl; this.archiveFolders = new Map(); }
+  constructor({ credentials, fetchImpl = fetch, sleep = ms => new Promise(resolve => setTimeout(resolve, ms)) }) { this.credentials = credentials; this.fetch = fetchImpl; this.sleep = sleep; this.archiveFolders = new Map(); }
   async token() {
     if (this.accessToken && Date.now() < this.expiresAt) return this.accessToken;
     const { app_key, app_secret, refresh_token } = this.credentials;
     const body = new URLSearchParams({ grant_type: 'refresh_token', refresh_token, client_id: app_key,
       ...(app_secret ? { client_secret: app_secret } : {}) });
     const response = await this.fetch('https://api.dropboxapi.com/oauth2/token', { method: 'POST', body, redirect: 'error', signal: AbortSignal.timeout(20000) });
-    if (!response.ok) throw Object.assign(new Error('BRIDGE_DROPBOX_AUTH_FAILED'), { retryable: false });
+    if (!response.ok) {
+      const temporary = response.status === 429 || response.status >= 500;
+      const retryAfter = Number(response.headers.get('retry-after'));
+      throw Object.assign(new Error(temporary ? `BRIDGE_DROPBOX_HTTP_${response.status}` : 'BRIDGE_DROPBOX_AUTH_FAILED'), {
+        retryable: temporary,
+        ...(temporary && Number.isFinite(retryAfter) && retryAfter > 0 ? { retry_after_seconds: retryAfter } : {}),
+      });
+    }
     const result = JSON.parse(await boundedBody(response, 20000));
     if (!result.access_token || !Number.isFinite(result.expires_in)) throw new Error('BRIDGE_DROPBOX_AUTH_INVALID');
     this.accessToken = result.access_token; this.expiresAt = Date.now() + (result.expires_in - 60) * 1000;
     return this.accessToken;
   }
-  async request(endpoint, input, content, binary = false) {
+  async request(endpoint, input, content, binary = false, attempt = 0) {
     const isContent = ['files/download', 'files/upload'].includes(endpoint);
     const response = await this.fetch(`https://${isContent ? 'content' : 'api'}.dropboxapi.com/2/${endpoint}`, {
       method: 'POST', redirect: 'error', signal: AbortSignal.timeout(45000),
@@ -58,8 +65,17 @@ export class DropboxTransport {
     if (!response.ok) {
       let code = '';
       try { code = JSON.parse(raw).error_summary || ''; } catch { /* Never log upstream payloads. */ }
+      const retryHeader = response.headers.get('retry-after');
+      const retrySeconds = retryHeader !== null && Number.isFinite(Number(retryHeader)) ? Math.max(0, Number(retryHeader)) : null;
+      // Retry only an explicit refusal, never blindly replay an ambiguous write.
+      // Longer provider windows are handed back to the durable scheduler.
+      if (response.status === 429 && attempt < 2 && (retrySeconds === null || retrySeconds <= 20)) {
+        await this.sleep(Math.max(500 * 2 ** attempt, (retrySeconds || 0) * 1000));
+        return this.request(endpoint, input, content, binary, attempt + 1);
+      }
       throw Object.assign(new Error(code.includes('not_found') ? 'BRIDGE_DROPBOX_NOT_FOUND' : code.includes('conflict') ? 'BRIDGE_DROPBOX_CONFLICT' : `BRIDGE_DROPBOX_HTTP_${response.status}`), {
         retryable: response.status === 429 || response.status >= 500,
+        ...(retrySeconds !== null ? { retry_after_seconds: retrySeconds } : {}),
       });
     }
     return endpoint === 'files/download' ? raw : JSON.parse(raw);

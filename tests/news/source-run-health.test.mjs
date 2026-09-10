@@ -55,3 +55,13 @@ test("old explicit degraded status and provider or budget errors are not overwri
   for (const ai_error of ["AI_PROVIDER_ERROR:503", "AI_BUDGET_EXHAUSTED"])
     assert.equal(evaluateRunHealth({ ...fixture(), ai_error }, { now }).ok, false);
 });
+
+test('per-job bridge holds remain visible without failing independent completed imports', () => {
+  const report = { ...fixture(), processing_mode: 'dropbox_chatgpt_bridge', bridge_phase: 'import',
+    sources_scheduled: 0, source_failures: 0, source_errors: [], ai_calls: 0,
+    bridge_monitor: { dropbox_reachable: true, alerts: ['STALE_CLAIM:other', 'QUARANTINED_JOBS'] } };
+  assert.deepEqual(evaluateRunHealth(report, { now }), { ok: true, errors: [], attention: ['STALE_CLAIM:other', 'QUARANTINED_JOBS'] });
+  assert.ok(evaluateRunHealth({ ...report, bridge_monitor: { dropbox_reachable: false } }, { now }).errors.includes('BRIDGE_UNAVAILABLE'));
+  assert.ok(evaluateRunHealth({ ...report, ai_calls: 1 }, { now }).errors.includes('BRIDGE_API_CALL_DETECTED'));
+  assert.ok(evaluateRunHealth({ ...report, completed_at: null }, { now }).errors.includes('RUN_NOT_COMPLETED'));
+});

@@ -66,7 +66,9 @@ export function evaluateRunHealth(report, options = {}) {
   if (report?.ai_error) errors.push(report.ai_error === 'AI_BUDGET_EXHAUSTED' ? 'AI_BUDGET_EXHAUSTED' : report.ai_error === "AI_INPUT_TOO_LARGE" ? "AI_INPUT_BLOCKED" : "AI_PROVIDER_DEGRADED");
   if (report?.processing_mode === 'dropbox_chatgpt_bridge') {
     if (!report.bridge_monitor?.dropbox_reachable) errors.push('BRIDGE_UNAVAILABLE');
-    if (report.bridge_monitor?.alerts?.length) errors.push('BRIDGE_ATTENTION_REQUIRED');
+    // Per-job queues/review holds remain observable without declaring an
+    // independently completed import a failed server run. Publication gates
+    // still validate every individual output before it can be accepted.
     if (Number(report.ai_calls || 0) !== 0) errors.push('BRIDGE_API_CALL_DETECTED');
   }
   if (Number(report?.source_successes || 0) === 0 && report?.sources_scheduled !== 0
@@ -74,7 +76,9 @@ export function evaluateRunHealth(report, options = {}) {
   if (sourceCoverageDegraded(report)) errors.push("SOURCE_COVERAGE_DEGRADED");
   if (!reportOperationallyHealthy(report)) errors.push("RUN_STATUS_NOT_OK");
 
-  return { ok: errors.length === 0, errors: [...new Set(errors)] };
+  return { ok: errors.length === 0, errors: [...new Set(errors)],
+    ...(report?.processing_mode === 'dropbox_chatgpt_bridge'
+      ? { attention: [...new Set(report.bridge_monitor?.alerts || [])] } : {}) };
 }
 
 function argumentValue(name) {
