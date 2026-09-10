@@ -1,7 +1,114 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-10T08:54:06.689Z",
+  "updated_at": "2026-09-10T09:33:38.899Z",
   "stories": [
+    {
+      "story_id": "wt-b95ed05b8140df75",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b95ed05b8140df75-cd4172915a86fb7e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b95ed05b8140df75-873519356fadc73f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b95ed05b8140df75-d69e95b65b92a0cf-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b95ed05b8140df75-d3577b96bda3ecf2-source.png",
+          "alt_text": "Illustration mit Einkaufswagen, Zapfsäule und abstrakter Preiskurve als Symbol für Inflation und Energiekosten."
+        }
+      },
+      "slug": "inflationsrate-im-august-2026-bei-2-9-40df75",
+      "title": "Inflation im August bestätigt: +2,9 %, Energiepreise +10,5 %",
+      "source_summary": "Das Statistische Bundesamt bestätigt für August 2026 eine Inflationsrate von +2,9 % gegenüber dem Vorjahresmonat; gegenüber Juli stieg der Verbraucherpreisindex um +0,2 %. Die Teuerung lag damit über Juli (+2,8 %) und Juni (+2,3 %).\n\nEnergieprodukte waren im August +10,5 % teurer als ein Jahr zuvor. Kraftstoffe verteuerten sich um +27,7 %, leichtes Heizöl um +49,6 %. Gleichzeitig sanken die Preise für Strom (-5,5 %), Erdgas einschließlich Betriebskosten (-2,9 %) und Fernwärme (-1,0 %); Haushaltsenergie insgesamt war dadurch 0,7 % günstiger. Die Kerninflation ohne Nahrungsmittel und Energie lag bei +2,4 %.",
+      "summary": "Destatis bestätigt für August 2026 eine Inflationsrate von +2,9 %; gegenüber Juli stiegen die Verbraucherpreise um +0,2 %. Energie verteuerte sich binnen Jahresfrist um +10,5 %, Kraftstoffe um +27,7 %.",
+      "detail_summary": "Destatis bestätigt für August 2026 eine Inflationsrate von +2,9 % zum Vorjahresmonat und +0,2 % zum Juli. Die Energiepreise lagen +10,5 % über August 2025; Kraftstoffe verteuerten sich um +27,7 % und leichtes Heizöl um +49,6 %. Gleichzeitig wurden Strom, Erdgas und Fernwärme günstiger, sodass Haushaltsenergie insgesamt 0,7 % unter dem Vorjahresniveau lag. Die Kerninflation ohne Nahrungsmittel und Energie betrug +2,4 %. Die Preisänderungen sind gemessen; die weitergehenden Folgen für Haushalte hängen von ihrem konkreten Verbrauch und Einkommen ab.",
+      "why_relevant": "Die bestätigten Verbraucherpreise zeigen, wo sich Teuerung aktuell konzentriert und welche Haushaltsausgaben besonders betroffen sein können.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_post",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Höhere Preise für häufig genutzte Güter können die reale Kaufkraft belasten; die Betroffenheit ist je Haushalt unterschiedlich.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Höhere Verbraucher- und Energiepreise erhöhen bei unverändertem Einkommen den Ausgabenbedarf.",
+            "state_change": "Für betroffene Haushalte kann weniger frei verfügbares Einkommen verbleiben.",
+            "condition": "Der Haushalt kauft die verteuerten Güter und Einkommen oder Entlastungen gleichen den Preisanstieg nicht aus.",
+            "effect_role": "substantive_change",
+            "source_ids": [
+              "destatis-aktuell"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus Preisänderungen allein folgt keine belastbare Umweltzustandsänderung.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Preisdaten belegen keine konkrete demokratische Zustandsänderung.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:05:24.559Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T06:00:00.000Z",
+      "last_updated": "2026-09-10T09:05:24.559Z",
+      "version": 1,
+      "news_status": "confirmed",
+      "event_id": "event-797400308b2245ca59ba",
+      "case_file": null,
+      "source_published_at": "2026-09-10T06:00:00.000Z",
+      "published_at": "2026-09-10T09:05:24.559Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "destatis-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Statistisches Bundesamt",
+          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_320_611.html",
+          "source_type": "official_rss",
+          "published_at": "2026-09-10T06:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-7342dafe037138af",
       "title_image": {
