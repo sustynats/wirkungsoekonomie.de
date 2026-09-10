@@ -47,23 +47,6 @@ Die Rubrik ist über /wirkungsticker/?thema=book_and_impact filterbar.
 Aus der Buchrezension werden keine erfundenen News-Fakten, MPD-Scores oder
 automatische Wirkungsbewertungen abgeleitet.
 
-Persönliche Beiträge zum eigenen Werk verwenden denselben manuellen Weg,
-mit sichtbarem Typ „Persönlicher Autorinnenbeitrag“ und Eigenvorstellungshinweis.
-Die Editionsliste trägt die aktuelle redaktionelle Freigabe; der ursprüngliche
-Entwurf bleibt einschließlich seines damaligen Frontmatter-Status unverändert.
-Kein unabhängiges Rezensionsurteil oder Review-Rating wird daraus abgeleitet.
-Benannte Fußnoten werden als verknüpfte Quellen mit unverändertem Text gerendert.
-Interne ausstehende Freigabevermerke dürfen nur als ausdrücklich aufgeführte
-`internal_notes` aus der öffentlichen Darstellung entfallen; die Quelldatei bleibt
-erhalten. Diese Ausnahme erlaubt keine Kürzung journalistischer Inhalte.
-
-Mehrbändige Werke erhalten einzelne Cover, Herkunft, Prüfsummen und verifizierte
-Band-Links in `book_volumes`. Für das eigene Grundlagenwerk wurden am 10.09.2026
-die Amazon-Produktseiten B0HF6MTN9H (Band I) und B0HF6RMYTR (Band II) geprüft.
-Die aktuellen dunkelblauen Cover ersetzen im Autorinnenbeitrag das helle Cover
-der ersten Auflage. Das feste Portrait und historische Cover anderer Seiten
-bleiben eigenständige Assets; keine Montage und keine neue KI-Bildgenerierung.
-
 Vor Veröffentlichung: news:test, news:build, news:validate, Typecheck und
 build:artifact. check-manual-pages prüft auch im finalen Deploy-Artefakt jeden
 Originaltextblock in Reihenfolge und mit unveränderter Zeichensetzung.

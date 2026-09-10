@@ -2,8 +2,174 @@
   "schema_version": "1.2",
   "impact_profile_version": null,
   "impact_profile_status": "reassessment_in_progress",
-  "updated_at": "2026-09-10T10:14:05.777Z",
+  "updated_at": "2026-09-10T16:12:06.945Z",
   "stories": [
+    {
+      "story_id": "wt-a82ecd0000a14269",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a82ecd0000a14269-9c4fab624c5276b9-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a82ecd0000a14269-dbb8daee36dffa5f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a82ecd0000a14269-dd911954ad221f4a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nach-sprengstoff-verdacht-an-schweizer-grenze-deshalb-war-die-autobahn-so-lange-gesperrt-a14269",
+      "title": "Rheinfelden: Kein Sprengstoff gefunden – Grenzübergang wieder frei",
+      "source_summary": "SWR Aktuell berichtet, dass der Grenzübergang bei Rheinfelden am Mittwoch mehrere Stunden gesperrt war, nachdem zwei Sprengstoff-Spürhunde bei einer Fahrzeugkontrolle unabhängig voneinander angeschlagen hatten. Ein Gefahrenbereich wurde geräumt, Spezialkräfte der Bundespolizei untersuchten das Fahrzeug und bauten dafür unter anderem die Innenverkleidung aus.\n\nAm Abend teilten die Ermittler mit, dass keine gefährlichen Stoffe gefunden worden seien. Nach 21 Uhr wurde der Verkehr auf der A861 in Deutschland und der A3 in der Schweiz wieder freigegeben. Zwei Fahrzeuginsassen waren vorläufig festgenommen worden. Warum die Spürhunde reagierten und welche konkreten Vorwürfe gegen den älteren Mann bestehen, blieb zunächst offen.",
+      "summary": "Nach dem Sprengstoffverdacht am Grenzübergang Rheinfelden gibt die Polizei Entwarnung: Spezialkräfte fanden kein gefährliches Material, der Verkehr ist wieder freigegeben. Warum zwei Spürhunde unabhängig voneinander anschlugen, ist weiterhin ungeklärt.",
+      "detail_summary": "SWR Aktuell berichtet, dass der Grenzübergang bei Rheinfelden am Mittwoch mehrere Stunden gesperrt war, nachdem zwei Sprengstoff-Spürhunde bei einer Fahrzeugkontrolle unabhängig voneinander angeschlagen hatten. Ein Gefahrenbereich wurde geräumt, Spezialkräfte der Bundespolizei untersuchten das Fahrzeug und bauten dafür unter anderem die Innenverkleidung aus.\n\nAm Abend teilten die Ermittler mit, dass keine gefährlichen Stoffe gefunden worden seien. Nach 21 Uhr wurde der Verkehr auf der A861 in Deutschland und der A3 in der Schweiz wieder freigegeben. Zwei Fahrzeuginsassen waren vorläufig festgenommen worden. Warum die Spürhunde reagierten und welche konkreten Vorwürfe gegen den älteren Mann bestehen, blieb zunächst offen.",
+      "why_relevant": "Die Meldung beendet eine akute grenzüberschreitende Sicherheits- und Verkehrslage und korrigiert den Wissensstand vom bloßen Sprengstoffverdacht zur Entwarnung.",
+      "topic": [
+        "Sicherheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_post",
+      "importance": "hoch",
+      "impact_assessment": null,
+      "dimensions": null,
+      "visuals": {
+        "affected_groups": [
+          "verbraucherinnen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T16:12:06.945Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T14:11:02.000Z",
+      "last_updated": "2026-09-10T16:12:06.945Z",
+      "version": 1,
+      "news_status": "updated",
+      "event_id": "event-4379693e06829915d59e",
+      "case_file": null,
+      "source_published_at": "2026-09-10T14:11:02.000Z",
+      "published_at": "2026-09-10T16:12:06.945Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ursache für das Anschlagen der Spürhunde und weiteren Status der Festgenommenen prüfen.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Neue bestätigte Angaben von Polizei, Staatsanwaltschaft oder Gericht.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-5012390480bf207f",
+          "announced_at": "2026-09-10T14:11:02.000Z",
+          "follow_up_date": "2026-09-17T16:12:06.945Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/freiburg/sprengstoff-verdacht-polizeieinsatz-an-schweizer-grenze-rheinfelden-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T14:11:02.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-e8ec5c7f64053fc8",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e8ec5c7f64053fc8-870a72d7d4d2ce82-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e8ec5c7f64053fc8-2437413c76d55f7f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e8ec5c7f64053fc8-0c03838142032853-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "zwei-messerangriffe-in-freiburg-tatverdachtiger-war-polizeibekannt-053fc8",
+      "title": "Freiburg: Tatverdächtiger soll für zwei Messerangriffe verantwortlich sein",
+      "source_summary": "SWR Aktuell berichtet, dass der nach dem tödlichen Messerangriff auf einen 74-Jährigen in Freiburg festgenommene 30-Jährige nach Angaben von Kriminalpolizei und Staatsanwaltschaft mutmaßlich auch für einen früheren Messerangriff verantwortlich ist. Bei dem Angriff am Sonntag wurde ein 29-Jähriger schwer verletzt; beim Angriff am Dienstag starb ein 74-Jähriger. Gegen den Tatverdächtigen wurde Haftbefehl wegen vollendeten und versuchten Mordes in Vollzug gesetzt.\n\nDer Mann sei der Polizei bereits wegen Diebstahl, Gewalt und illegalen Drogen bekannt gewesen. Motiv und Verbindung zu den Opfern bleiben laut Ermittlern offen. Gerüchte über einen Mittäter dementierte die Polizei; dafür gebe es keine Hinweise.",
+      "summary": "Nach dem tödlichen Messerangriff in Freiburg verdichten sich laut SWR die Ermittlungen: Der festgenommene 30-Jährige soll auch für einen früheren Angriff verantwortlich sein. Haftbefehl wegen vollendeten und versuchten Mordes ist in Vollzug; Motiv und Hintergründe bleiben offen.",
+      "detail_summary": "SWR Aktuell berichtet, dass der nach dem tödlichen Messerangriff auf einen 74-Jährigen in Freiburg festgenommene 30-Jährige nach Angaben von Kriminalpolizei und Staatsanwaltschaft mutmaßlich auch für einen früheren Messerangriff verantwortlich ist. Bei dem Angriff am Sonntag wurde ein 29-Jähriger schwer verletzt; beim Angriff am Dienstag starb ein 74-Jähriger. Gegen den Tatverdächtigen wurde Haftbefehl wegen vollendeten und versuchten Mordes in Vollzug gesetzt.\n\nDer Mann sei der Polizei bereits wegen Diebstahl, Gewalt und illegalen Drogen bekannt gewesen. Motiv und Verbindung zu den Opfern bleiben laut Ermittlern offen. Gerüchte über einen Mittäter dementierte die Polizei; dafür gebe es keine Hinweise.",
+      "why_relevant": "Der neue Ermittlungsstand verbindet zwei schwere Gewalttaten und konkretisiert den strafrechtlichen Verfahrensstand.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_post",
+      "importance": "hoch",
+      "impact_assessment": null,
+      "dimensions": null,
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T15:46:51.329Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T14:22:41.000Z",
+      "last_updated": "2026-09-10T15:46:51.329Z",
+      "version": 1,
+      "news_status": "updated",
+      "event_id": "event-5ff2571537f602870d3e",
+      "case_file": null,
+      "source_published_at": "2026-09-10T14:22:41.000Z",
+      "published_at": "2026-09-10T15:46:51.329Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Abschließende Tatzuordnung und Motiv prüfen.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Neue belastbare Angaben von Ermittlungsbehörden oder Gericht.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-23522a89e7707ad9",
+          "announced_at": "2026-09-10T14:22:41.000Z",
+          "follow_up_date": "2026-09-17T15:46:51.329Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/freiburg/mann-nach-messerangriff-in-freiburg-gestorben-tatverdaechtiger-nach-zwei-attacken-in-untersuchungshaft-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T14:22:41.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-15dce829e46b9acf",
       "title_image": {
@@ -25848,20 +26014,6 @@
   ],
   "editorial_analyses": [
     {
-      "analysis_id": "woek-manual-e522068b18084e57",
-      "slug": "die-neue-ordnung-des-wohlstands-natalie-weber",
-      "title": "Die neue Ordnung des Wohlstands: Warum ich dieses Buch geschrieben habe",
-      "subtitle": "Wohlstand muss im Leben ankommen. Ein persönlicher Blick auf die Entstehung und den Anspruch der Wirkungsökonomie.",
-      "teaser": "Wohlstand muss im Leben ankommen. Ein persönlicher Blick auf die Entstehung und den Anspruch der Wirkungsökonomie.",
-      "published_at": "2026-09-10T10:14:00Z",
-      "updated_at": "2026-09-10T10:14:00Z",
-      "reading_time_minutes": 10,
-      "format": "book_and_impact",
-      "manual_only": true,
-      "subtype": "Persönlicher Autorinnenbeitrag",
-      "self_authored_work": true
-    },
-    {
       "analysis_id": "woek-analysis-814079fbdc30",
       "story_id": "wt-32f0aa5f0a6a7761",
       "slug": "soeder-afd-eine-grenze-wird-nicht-ueberfluessig",
@@ -25882,8 +26034,7 @@
       "updated_at": "2026-09-09T20:10:00Z",
       "reading_time_minutes": 11,
       "format": "book_and_impact",
-      "manual_only": true,
-      "subtype": "Buchbesprechung"
+      "manual_only": true
     },
     {
       "analysis_id": "woek-manual-92b74ae9a353bf99",
@@ -25895,8 +26046,7 @@
       "updated_at": "2026-09-09T20:10:00Z",
       "reading_time_minutes": 10,
       "format": "book_and_impact",
-      "manual_only": true,
-      "subtype": "Grundlagenbuch"
+      "manual_only": true
     },
     {
       "analysis_id": "woek-manual-7cec160870a9c3e2",
@@ -25908,8 +26058,7 @@
       "updated_at": "2026-09-09T20:10:00Z",
       "reading_time_minutes": 11,
       "format": "book_and_impact",
-      "manual_only": true,
-      "subtype": "Buchbesprechung"
+      "manual_only": true
     },
     {
       "analysis_id": "woek-analysis-7db837acf47c",
