@@ -19,9 +19,14 @@
     },
     "publication-flow": {
       "firstSeen": "2026-09-10T02:05:28.971Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "e3002bab897eb697e204ce70",
+      "content": "⚠ WÖk-Betriebsstörung\nFortschritt der Nachrichtenverarbeitung: 11 gespeicherte Läufe über mindestens zwei Stunden ohne Veröffentlichung, Aktualisierung oder abgeschlossene Warteschlangenprüfung; 154 Kandidaten warten auf Verarbeitung. Budget- und Auswahlsteuerung prüfen; dies belegt keinen Anbieterausfall.\nSeit: 2026-09-10T02:05:28.971Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-09"
 }
