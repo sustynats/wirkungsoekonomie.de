@@ -159,6 +159,11 @@ GitHub-Laufergebnis. Bestehende Quellenüberwachung bleibt aktiv.
 
 ## Manuelle Aktionen
 
+Eigene Nachrichtenhinweise, Rezensionen und Meinungs-/Analyseideen werden als
+inhaltliche Aufträge direkt im Gespräch eingereicht. Die folgenden Laufaktionen
+ersetzen diese Einreichung nicht. Formatzuordnung, Beispiele und bestehende
+Content-Wege: [Manuelle Redaktionsaufträge](MANUELLE-REDAKTIONS-AUFTRAEGE.md).
+
 Authentifiziert über vorhandene GitHub-Repository-Rechte:
 
 - `npm run news:bridge:discovery-now` → `DISCOVERY_NOW`
