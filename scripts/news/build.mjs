@@ -1,5 +1,6 @@
 import { migrateImpactFiles } from './migrate-impact-assessments.mjs';
 import { deriveImpactPresentation, IMPACT_LEGEND } from './impact-assessment.mjs';
+import { publicImpactAssessment, PUBLIC_IMPACT_PROFILE_VERSION, IMPACT_REVISION_NOTICE, assertPublicImpactHtml } from './impact-release.mjs';
 import { renderStoryVisual, renderEditorialClaimMap } from "./story-visual.mjs";
 import { EDITORIAL_TRANSPARENCY_NOTE, editorialLabel, isEditorialCommentary, isCommissionedAnalysis, renderSystemicVisual, renderSystemicDimensions, renderSystemicMonitoring, renderSectionAnchor, renderEditorialContents } from "./systemic-analysis.mjs";
 import { renderEditorialFinding, renderAuthorPerspective, renderEditorialBalance } from "./editorial-judgment.mjs";
@@ -25,7 +26,7 @@ import { loadManualEditorials, renderManualArticle, renderBookCover, BOOK_FORMAT
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260910-impact-model20";
+const PUBLIC_RELEASE = "20260910-impact-backfill-hold";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
@@ -39,6 +40,7 @@ function readJson(file) {
 }
 
 function write(file, content) {
+  if (file.endsWith(".html")) assertPublicImpactHtml(content);
   fs.mkdirSync(path.dirname(file), { recursive: true });
   const normalized = content.replace(/[ \t]+$/gm, "");
   const temporaryFile = `${file}.tmp-${process.pid}`;
@@ -170,7 +172,7 @@ function dimensionLabel(key) {
   return { human: "Mensch", planet: "Planet", democracy: "Demokratie" }[key];
 }
 
-function renderImpactTime(story) { return `<span class="news-badge">${escapeHtml(deriveImpactPresentation(story).time_label)}</span>`; }
+function renderImpactTime(story) { if (!publicImpactAssessment(story)) return ""; return `<span class="news-badge">${escapeHtml(deriveImpactPresentation(story).time_label)}</span>`; }
 
 function dimensions(story) { return renderDimensionMeters(story); }
 
@@ -244,7 +246,7 @@ function matchesFilter(story, value) {
   if (value === "high") return ["high", "very_high", "critical"].includes(deriveImpactPresentation(story).systemic_relevance);
   const topics = (story.topic || []).map((topic) => String(topic).toLowerCase());
   const dimensions = Object.entries({ human: "mensch", planet: "planet", democracy: "demokratie" })
-    .filter(([key]) => deriveImpactPresentation(story).dimensions[key].path_status === "material")
+    .filter(([key]) => publicImpactAssessment(story)?.dimensions[key].path_status === "material")
     .map(([, label]) => label);
   return [...topics, ...dimensions].includes(value);
 }
@@ -270,7 +272,7 @@ export function storyCard(story, index) {
   const a = story.analysis;
   const topics = (story.topic || []).join(" ").toLowerCase();
   const dimensionKeys = Object.entries({ human: "mensch", planet: "planet", democracy: "demokratie" })
-    .filter(([key]) => deriveImpactPresentation(story).dimensions[key].path_status === "material")
+    .filter(([key]) => publicImpactAssessment(story)?.dimensions[key].path_status === "material")
     .map(([, label]) => label)
     .join(" ");
   const high = ["high", "very_high", "critical"].includes(deriveImpactPresentation(story).systemic_relevance);
@@ -327,7 +329,7 @@ function editorialCard(analysis, story, index) {
   const searchText = [analysis.title, analysis.subtitle, analysis.teaser, analysis.analysis_type, ...(story?.topic || [])].join(" ").toLowerCase();
   const titleImage = publicTitleImage(analysis.title_image);
   const preview = book ? `<div class="news-editorial-card__book">${renderBookCover(analysis)}</div>` : titleImage?.wide ? `<a class="news-editorial-card__preview" href="${escapeHtml(href)}" aria-hidden="true" tabindex="-1"><img src="${escapeHtml(titleImage.wide.url)}" width="1200" height="675" alt="" loading="lazy" decoding="async"></a>` : "";
-  return `<article class="news-editorial-card${index === 0 ? " news-editorial-card--lead" : ""}${preview ? " news-editorial-card--illustrated" : ""}" data-news-card data-news-format="${book ? BOOK_FORMAT : "analysis"}" data-news-editorial-analysis data-news-story-id="analysis-${escapeHtml(analysis.analysis_id)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topic)}" data-dimensions="${book ? "" : "mensch planet demokratie"}" data-high-impact="${!book}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(analysis.updated_at)}">
+  return `<article class="news-editorial-card${index === 0 ? " news-editorial-card--lead" : ""}${preview ? " news-editorial-card--illustrated" : ""}" data-news-card data-news-format="${book ? BOOK_FORMAT : "analysis"}" data-news-editorial-analysis data-news-story-id="analysis-${escapeHtml(analysis.analysis_id)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topic)}" data-dimensions="${book || !publicImpactAssessment(analysis) ? "" : "mensch planet demokratie"}" data-high-impact="${!book}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(analysis.updated_at)}">
   <div class="news-editorial-card__content"><p class="hero-kicker">${escapeHtml(editorialLabel(analysis))}</p><h2><a href="${escapeHtml(href)}">${escapeHtml(analysis.title)}</a></h2><p class="news-editorial-card__subtitle">${escapeHtml(analysis.subtitle)}</p>${book && analysis.teaser === analysis.subtitle ? "" : `<p>${escapeHtml(analysis.teaser)}</p>`}${book ? `<p class="news-editorial-card__origin">${escapeHtml(analysis.subtype)} · ${escapeHtml(analysis.book.author)} · ${escapeHtml(analysis.book.title)}</p>` : `<p class="news-editorial-card__origin">Entstanden aus: <a class="text-link" href="./${escapeHtml(story?.slug || "")}/">${escapeHtml(story?.title || "Wirkungsticker-Story")}</a></p>`}<div class="news-editorial-card__byline"><img src="${book ? escapeHtml(analysis.author.image) : "../assets/img/people/natalie-weber-woek-analyse.jpg"}" alt="${book ? escapeHtml(analysis.author.image_alt) : "Natalie Weber"}" width="72" height="${book ? 96 : 72}" loading="lazy" decoding="async"><span><strong>Natalie Weber</strong><small><a class="text-link" href="../methodik/">${escapeHtml(analysis.transparency_note)}</a></small><small>${escapeHtml(`${analysis.reading_time_minutes || 8} Min. · veröffentlicht ${formatDate(analysis.published_at, { dateOnly: true })}`)}</small></span></div></div>
   ${preview}<div class="news-editorial-card__actions"><a class="btn btn-primary" href="${escapeHtml(href)}">${book ? "Buchbesprechung lesen" : "Analyse lesen"}${renderIcon("pfeil")}</a>${editorialSaveControl(analysis)}${editorialShareControl(analysis)}</div>
 </article>`;
@@ -427,7 +429,7 @@ export function indexPage(stories, updatedAt, { totalStories = stories.length, c
   const filterGroups = [
     { label: "Auswahl", filters: [["all", "Alle"], ["high", "Hohe systemische Relevanz"]] },
     { label: "Format", filters: [["analysis", "Meinung & Analyse"], [BOOK_FORMAT, "Buch & Wirkung"]] },
-    { label: "Dimension", filters: [["mensch", "Mensch"], ["planet", "Planet"], ["demokratie", "Demokratie"]] },
+    ...(PUBLIC_IMPACT_PROFILE_VERSION ? [{ label: "Dimension", filters: [["mensch", "Mensch"], ["planet", "Planet"], ["demokratie", "Demokratie"]] }] : []),
     { label: "Thema", filters: [
       ["politik", "Politik"], ["wirtschaft", "Wirtschaft"], ["finanzen", "Finanzen"], ["klima", "Klima"], ["energie", "Energie"],
       ["arbeit", "Arbeit"], ["soziales", "Soziales"], ["gesundheit", "Gesundheit"], ["digitalisierung", "Digitalisierung"], ["ki", "KI"],
@@ -447,9 +449,10 @@ export function indexPage(stories, updatedAt, { totalStories = stories.length, c
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a><span aria-hidden="true">/</span><a href="../oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a></nav>
       <p class="hero-kicker news-hero__kicker">${renderIcon("folgen")}<span>Wirkungsticker</span></p>
       <h1 class="hero-title">Wichtige Nachrichten. Fakten, Folgen, Zusammenhänge.</h1>
+      ${PUBLIC_IMPACT_PROFILE_VERSION ? '' : `<p class="notice" role="note">${IMPACT_REVISION_NOTICE} Die Dimensionsfilter kehren mit den geprüften Profilen zurück.</p>`}
       <p class="news-method-note">Ein Projekt des Wirkungsinstituts. <a href="../institut/projekte/wirkungsticker/">Projektauftrag, Entwicklung und laufende Aufgaben</a>.</p>
       <p class="hero-subtitle">Aus Politik, Wirtschaft, Gesellschaft, Umwelt und Technik. Der Wirkungsticker erklärt, was passiert ist, was belegt ist und welche Folgen möglich sind. Er zeigt Zusammenhänge und prüft auch, wie über Ereignisse gesprochen wird.</p>
-      <ul class="news-hero__stats"><li><strong>${stories.length}</strong> aktuelle Lagen und Einzelakten</li><li><strong>${totalStories}</strong> geprüfte Wirkungsakten${caseCount ? ` · ${caseCount} automatisch gebündelte ${caseCount === 1 ? "Lageakte" : "Lageakten"}` : ""}</li>${editorialAnalyses.length ? `<li><strong>${editorialAnalyses.length}</strong> ${editorialAnalyses.length === 1 ? "Beitrag" : "Beiträge"} in Meinung &amp; Analyse / Buch &amp; Wirkung</li>` : ""}<li><strong>${highCount}</strong> mit hoher systemischer Relevanz</li><li>${renderIcon("uhr")}<span>Stand ${escapeHtml(formatDate(updatedAt))} · automatische Quellenprüfung</span></li><li><a class="text-link" href="#methodik">Methodik und Qualitätsgate</a> · <a class="text-link" href="quellen/">Quellen &amp; Auswahl</a></li></ul>
+      <ul class="news-hero__stats"><li><strong>${stories.length}</strong> aktuelle Lagen und Einzelakten</li><li><strong>${totalStories}</strong> redaktionelle Wirkungsakten${caseCount ? ` · ${caseCount} automatisch gebündelte ${caseCount === 1 ? "Lageakte" : "Lageakten"}` : ""}</li>${editorialAnalyses.length ? `<li><strong>${editorialAnalyses.length}</strong> ${editorialAnalyses.length === 1 ? "Beitrag" : "Beiträge"} in Meinung &amp; Analyse / Buch &amp; Wirkung</li>` : ""}<li><strong>${highCount}</strong> mit hoher systemischer Relevanz</li><li>${renderIcon("uhr")}<span>Stand ${escapeHtml(formatDate(updatedAt))} · automatische Quellenprüfung</span></li><li><a class="text-link" href="#methodik">Methodik und Qualitätsgate</a> · <a class="text-link" href="quellen/">Quellen &amp; Auswahl</a></li></ul>
     </div>
   </section>
   <section class="section news-reading-guide" aria-labelledby="ticker-reading-title">
@@ -660,12 +663,12 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
     <article class="news-story-section news-fact-check" id="faktencheck"><p class="hero-kicker">${renderIcon("wahrheit")}<span>Quellenprüfung</span></p><h2>Faktencheck</h2><div class="news-check-prose"><section><h3>${renderIcon("check")}Gesicherter Ausgangspunkt</h3><p>${escapeHtml(truthOpening)}</p><p>Quellenbasis: ${primarySourceCount ? `${primarySourceCount} ${primarySourceCount === 1 ? "Primärquelle" : "Primärquellen"}${primarySourceNames ? ` von ${escapeHtml(primarySourceNames)}` : ""}` : `Berichterstattung von ${escapeHtml([...new Set(story.sources.map(source => source.publisher))].join(", "))}`}. Beleglage: ${escapeHtml(evidenceLevelLabel(a.evidence_level))}</p></section><section><h3>${renderIcon("offen")}Was dieser Stand nicht belegt</h3><p>${escapeHtml(a.attribution)} ${escapeHtml(story.claims[0]?.uncertainty || "Vollständiger Kontext und spätere Wirkungsdaten bleiben zu prüfen.")}</p></section></div></article>
     ${renderConsolidations(story, publicStorySlugs)}
     ${renderAtAGlance(story, { formatDate })}
-    ${story.impact_assessment?.review?.status === 'reassessed' ? '<details class="news-story-section"><summary>Frühere redaktionelle Einordnung</summary><p>Die folgenden Texte gehören zur bisherigen Beitragsfassung. Das neu geprüfte Wirkungsprofil steht oben; die frühere Einordnung bleibt nachvollziehbar erhalten.</p>' : ''}
+    ${publicImpactAssessment(story)?.review?.status === 'reassessed' ? '<details class="news-story-section"><summary>Frühere redaktionelle Einordnung</summary><p>Die folgenden Texte gehören zur bisherigen Beitragsfassung. Das neu geprüfte Wirkungsprofil steht oben; die frühere Einordnung bleibt nachvollziehbar erhalten.</p>' : ''}
     <article class="news-story-section news-story-summary" id="analyse"><p class="hero-kicker">${renderIcon("systemisch")}<span>Wirkungsökonomische Analyse</span></p><h2>Einordnung im Überblick</h2><p class="news-analysis-copy">${escapeHtml(detailSummary)}</p>${renderAffectedGroups(visuals)}</article>
     <article class="news-story-section" id="einordnung"><p class="hero-kicker">${renderIcon("folgen")}<span>Einordnung</span></p><h2>Warum diese Meldung relevant ist</h2><p class="news-analysis-copy">${escapeHtml(a.why_relevant)}</p></article>
     <article class="news-story-section news-consequence-check" id="folgencheck"><p class="hero-kicker">${renderIcon("folgen")}<span>Folgencheck</span></p><h2>Wirkpfad und mögliche Folgen</h2><p class="news-method-note">Die folgenden möglichen Entwicklungen sind keine nachgewiesenen Folgen.</p><p class="news-lead"><strong>Wirkungspotenzial:</strong> ${escapeHtml(a.impact_potential)}</p>${renderImpactPath(a, prose, visuals)}<h3>Risiken, Gegenläufe und Prüfgrenzen</h3>${riskList}</article>
     <article class="news-story-section" id="bedeutung"><p class="hero-kicker">${renderIcon("transformation")}<span>Systemische Bedeutung</span></p><h2>Was die Meldung für das System bedeutet</h2><div class="wt-meaning"><div class="wt-meaning__item"><h3>${renderIcon("systemisch")}Systemrelevanz</h3><p>${escapeHtml(a.systemic_relevance)}</p></div><div class="wt-meaning__item"><h3>${renderIcon("transformation")}Transformationspotenzial</h3><p>${escapeHtml(a.transformation_potential)}</p></div><div class="wt-meaning__item"><h3>${renderIcon("resilienz")}Resilienz</h3><p>${escapeHtml(a.resilience)}</p></div></div></article>
-    ${story.impact_assessment?.review?.status === "reassessed" ? "</details>" : ""}
+    ${publicImpactAssessment(story)?.review?.status === "reassessed" ? "</details>" : ""}
     ${renderMediaImpact(story)}
     <article class="news-story-section" id="offen"><p class="hero-kicker">${renderIcon("offen")}<span>Offen</span></p><h2>Offene Fragen und Beobachtungspunkte</h2><div class="wt-questions"><div><h3>${renderIcon("offen")}Unsicherheiten</h3>${list(a.uncertainties)}</div><div><h3>${renderIcon("beobachten")}Worauf jetzt zu achten ist</h3>${list(a.watch_next)}</div></div></article>
   </div><aside class="news-story-aside">
@@ -817,7 +820,7 @@ function legacyRedirect(target, title = "Wirkungsticker") {
 <body><main><h1>${escapeHtml(title)}</h1><p>Der Wirkungsticker hat eine eigene Adresse. <a href="${escapeHtml(target)}">Jetzt öffnen</a>.</p></main></body></html>`;
 }
 
-function publicStory(story, editorialAnalysis = null) {
+export function publicStory(story, editorialAnalysis = null) {
   return {
     story_id: story.story_id,
     title_image: publicTitleImage(story.title_image),
@@ -831,8 +834,8 @@ function publicStory(story, editorialAnalysis = null) {
     status: story.analysis.status,
     analysis_type: deriveImpactPresentation(story).temporal_status,
     importance: story.analysis.importance,
-    impact_assessment: deriveImpactPresentation(story),
-    dimensions: deriveImpactPresentation(story).dimensions,
+    impact_assessment: publicImpactAssessment(story) ? deriveImpactPresentation(story) : null,
+    dimensions: publicImpactAssessment(story) ? deriveImpactPresentation(story).dimensions : null,
     visuals: sanitizeVisuals(story.analysis.visuals, story).visuals,
     media_impact: story.analysis.media_impact?.relevant ? story.analysis.media_impact : null,
     media_analysis_version: story.analysis.media_analysis_version || null,
@@ -947,7 +950,7 @@ export function buildNewsSite() {
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
     items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, tags: item.tags, _woek_type: item.type })),
   }, null, 2));
-  write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.2", updated_at: publicationUpdatedAt, stories: stories.map((story) => publicStory(story, editorialByStory.get(story.story_id))), editorial_analyses: editorialAnalyses.map((analysis) => ({ analysis_id: analysis.analysis_id, story_id: analysis.story_id, slug: analysis.slug, title: analysis.title, subtitle: analysis.subtitle, teaser: analysis.teaser, published_at: analysis.published_at, updated_at: analysis.updated_at, reading_time_minutes: analysis.reading_time_minutes, ...(analysis.format === BOOK_FORMAT ? { format: BOOK_FORMAT, manual_only: true } : {}) })) }, null, 2));
+  write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.2", impact_profile_version: PUBLIC_IMPACT_PROFILE_VERSION, impact_profile_status: PUBLIC_IMPACT_PROFILE_VERSION ? "ready" : "reassessment_in_progress", updated_at: publicationUpdatedAt, stories: stories.map((story) => publicStory(story, editorialByStory.get(story.story_id))), editorial_analyses: editorialAnalyses.map((analysis) => ({ analysis_id: analysis.analysis_id, story_id: analysis.story_id, slug: analysis.slug, title: analysis.title, subtitle: analysis.subtitle, teaser: analysis.teaser, published_at: analysis.published_at, updated_at: analysis.updated_at, reading_time_minutes: analysis.reading_time_minutes, ...(analysis.format === BOOK_FORMAT ? { format: BOOK_FORMAT, manual_only: true } : {}) })) }, null, 2));
   write(MANIFEST_FILE, JSON.stringify({ slugs: [...currentSlugs].sort() }, null, 2));
   write(EDITORIAL_MANIFEST_FILE, JSON.stringify({ slugs: [...currentEditorialSlugs].sort() }, null, 2));
   write(path.join(LEGACY_NEWS_DIR, "wirkungsticker/index.html"), legacyRedirect("/wirkungsticker/"));

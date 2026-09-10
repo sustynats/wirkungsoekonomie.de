@@ -27,8 +27,8 @@ test('EEG correction keeps the original, explains the baseline on list/detail an
   assert.equal(s.analysis.planet.tendency,'risiko');assert.equal(s.analysis.democracy.tendency,'risiko');
   assert.ok(s.analysis.visuals.path_directions.some(p=>p.direction==='positive'));
   for(const html of [storyCard(s),storyPage(s)]) {
-    assert.ok(html.includes(s.analysis.assessment_frame.subject));
-    assert.match(html,/data-magnitude="unknown"/);assert.doesNotMatch(html,/data-direction="mixed"/);
+    assert.doesNotMatch(html,/wt-dims--impact/);
+    assert.doesNotMatch(html,/data-magnitude=/);assert.doesNotMatch(html,/data-direction="mixed"/);
     assert.match(html,/Ausgangsmeldung(?:<\/strong><span>|(?: von)? )09\.09\.2026/);
     assert.doesNotMatch(html,/Ausgangsmeldung(?:<\/strong><span>|(?: von)? )29\.07\.2026/);
   }

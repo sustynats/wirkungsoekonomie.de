@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { dimensionTendencies, renderDimensionMeters, renderTendency, DIMENSION_TENDENCY_RULE } from '../../scripts/news/visuals.mjs';
+import { dimensionTendencies, renderDimensionMeters as publicDimensionMeters, renderTendency, DIMENSION_TENDENCY_RULE } from '../../scripts/news/visuals.mjs';
 import { renderStoryVisual } from '../../scripts/news/story-visual.mjs';
 import { buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
 import { storyCard, storyPage } from '../../scripts/news/build.mjs';
@@ -83,10 +83,10 @@ test('retroactive rendering covers every published story without rewriting store
     const before=JSON.stringify(story);
     for(const detail of [false,true]) {
       const html=renderStoryVisual(story,{detail});
-      assert.equal(statuses(html).length,3,story.slug);
-      assert.deepEqual(statuses(html),Object.values(deriveImpactPresentation(story).dimensions).map(d=>d.direction));
+      assert.equal(statuses(html).length,0,story.slug);
+      assert.deepEqual(statuses(html),[]);
       assert.match(html,/systemische Relevanz/);
-      assert.match(html,/data-magnitude="unknown"/);
+      assert.doesNotMatch(html,/data-magnitude=/);
     }
     assert.equal(JSON.stringify(story),before,story.slug);
   }
@@ -104,7 +104,9 @@ test('list and both detail MPD sections show the same available finding without 
   Object.assign(story.analysis.democracy, mixedPaths());
   for (const path of [story.analysis.democracy.positive_path,story.analysis.democracy.negative_path]) Object.assign(path,{effect_type:'independent_change',reference:'assessment_baseline'});
   const before=JSON.stringify(story);
-  assert.deepEqual(statuses(storyCard(story,0)),Object.values(deriveImpactPresentation(story).dimensions).map(d=>d.direction));
-  assert.deepEqual(statuses(storyPage(story)),[...Object.values(deriveImpactPresentation(story).dimensions),...Object.values(deriveImpactPresentation(story).dimensions)].map(d=>d.direction));
+  assert.deepEqual(statuses(storyCard(story,0)),[]);
+  assert.deepEqual(statuses(storyPage(story)),[]);
   assert.equal(JSON.stringify(story),before);
 });
+
+const renderDimensionMeters = (input, options = {}) => publicDimensionMeters(input, { ...options, context: { ...options.context, privateImpactPreview: true } });

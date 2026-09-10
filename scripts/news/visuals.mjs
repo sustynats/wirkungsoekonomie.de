@@ -1,4 +1,5 @@
 import { deriveImpactPresentation, IMPACT_LEGEND } from './impact-assessment.mjs';
+import { publicImpactAssessment, IMPACT_REVISION_NOTICE } from './impact-release.mjs';
 // Visuelle Anker des Wirkungstickers.
 //
 // Zwei Ebenen:
@@ -476,6 +477,7 @@ function consequence(path, sign, { legacy = false, secondary = false } = {}) {
 }
 
 export function renderDimensionMeters(analysis = {}, { compact = false, context = {} } = {}) {
+  if (!context.privateImpactPreview && !publicImpactAssessment(analysis)) return compact ? '' : `<p class="news-method-note">${IMPACT_REVISION_NOTICE}</p>`;
   const profile = deriveImpactPresentation(analysis, context);
   const target = profile.evaluation_target?.label;
   const reference = `<div class="wt-dims__reference">${profile.show_target || !compact ? `<p><strong>Bewertet:</strong> ${escapeHtml(target || "Gegenstand noch zu präzisieren")}</p>` : ""}<p class="wt-impact-time">${escapeHtml(profile.time_label)}</p>${!compact && profile.baseline ? `<p><strong>Vergleich:</strong> ${escapeHtml(profile.baseline)}</p>` : ""}</div>`;
@@ -488,7 +490,7 @@ export function renderDimensionMeters(analysis = {}, { compact = false, context 
   const items = Object.entries(DIMENSIONS).map(([key, meta]) => {
     const d = profile.dimensions[key], level = d.magnitude;
     const segments = Array.from({ length: 5 }, (_, index) => `<i${level !== null && index < level ? ' class="is-filled"' : ""}></i>`).join("");
-    const track = `<span class="wt-meter wt-dim__track${level === null ? " wt-meter--unknown" : ""}" data-magnitude="${level === null ? "unknown" : level}" role="img" aria-label="Tragweite für ${meta.label}: ${escapeHtml(d.magnitude_label)}">${segments}${level === null ? '<span class="sr-only">Keine Größenschätzung vorhanden</span>' : ""}</span>`;
+    const track = level === null ? '<span class="wt-dim__track" aria-label="Wirkpfad fachlich offen">—</span>' : `<span class="wt-meter wt-dim__track" data-magnitude="${level}" role="img" aria-label="Tragweite für ${meta.label}: ${escapeHtml(d.magnitude_label)}">${segments}</span>`;
     return `<div class="wt-dim wt-dim--${key}" data-potential-model="2.0" data-direction="${d.direction}" data-path-status="${d.path_status || "insufficient_basis"}"><div class="wt-dim__head">${renderIcon(meta.icon)}<strong>${meta.label}</strong></div>${track}<span class="wt-impact-direction" title="${escapeHtml(d.long_label)}">${escapeHtml(d.label)}</span>${compact ? "" : `<p class="wt-impact-evidence">Tragweite: ${escapeHtml(d.magnitude_label)} · Eintritt: ${escapeHtml(d.likelihood_label)} · Evidenz: ${escapeHtml(d.evidence_label)} · ${escapeHtml(d.time_label)}</p><ul class="wt-impact-paths">${(d.primary_paths || []).map(path => pathMarkup(path)).join("")}${(d.secondary_paths || []).map(path => pathMarkup(path, true)).join("")}</ul><p>${escapeHtml(d.rationale || "Die Einordnung bleibt offen.")}</p>${d.observed_outcome?.change ? `<p><strong>Beobachtet:</strong> ${escapeHtml(d.observed_outcome.change)}${d.observed_outcome.attribution === "open" ? " Die Ursachenzurechnung bleibt offen." : ""}</p>` : ""}`}</div>`;
   }).join("");
   const review = compact ? '' : profile.review?.status === "needs_reassessment" ? '<details class="wt-impact-review"><summary>Stand der Einordnung</summary><p>Die Wirkungsmetadaten dieser älteren Fassung werden nach dem präzisierten Modell erneut geprüft. Fehlende Angaben bleiben offen; ursprüngliche Texte und Belege sind erhalten.</p></details>' : profile.review?.status === 'reassessed' ? `<p class="wt-impact-review"><strong>Wirkungsprofil neu geprüft (${escapeHtml(String(profile.review.at || '').slice(0,10))}):</strong> ${escapeHtml(profile.review.note)} Schema ${escapeHtml(profile.version)}.</p>` : '';
@@ -496,6 +498,7 @@ export function renderDimensionMeters(analysis = {}, { compact = false, context 
 }
 
 export function renderImpactSystem(input = {}) {
+  if (!publicImpactAssessment(input)) return '';
   const profile = deriveImpactPresentation(input), system = profile.system_check;
   if (!system) return '';
   return `<div class="wt-impact-system"><h3>Vom Anlass zu möglichen Systemfolgen</h3><ol>${[['first_order','Unmittelbar'],['second_order','Nachgelagert'],['third_order','Systemisch']].map(([key,label])=>`<li><strong>${label}:</strong> ${escapeHtml(system[key])}</li>`).join('')}</ol><p><strong>Ohne den bewerteten Eingriff:</strong> ${escapeHtml(profile.counterfactual)}</p><p><strong>Referenzrahmen:</strong> ${escapeHtml((profile.reference_frame || []).join(' · '))}</p><details><summary>Gegenevidenz, Quellen und institutionelle Grenzen</summary><ul>${(system.counter_evidence || []).map(s=>`<li>${escapeHtml(s)}</li>`).join('')}</ul><p>${escapeHtml(system.source_independence)}</p><p>${escapeHtml(system.institutional_status)}</p></details></div>`;
@@ -536,7 +539,7 @@ export function renderGate(analysis = {}) {
 export function renderAtAGlance(story, { formatDate = (value) => String(value || "") } = {}) {
   const analysis = story.analysis || {};
   const profile = deriveImpactPresentation(story);
-  const type = { label: profile.time_label, note: 'Zeitstatus des bewerteten Wirkpfads; Eintritt und Evidenz werden getrennt ausgewiesen.' };
+  const type = publicImpactAssessment(story) ? { label: profile.time_label, note: 'Zeitstatus des bewerteten Wirkpfads; Eintritt und Evidenz werden getrennt ausgewiesen.' } : { label: 'Nachrichten- und Folgencheck', note: 'Nachrichtenanlass, mögliche Folgen und Quellen getrennt eingeordnet.' };
   const primaryCount = (story.sources || []).filter((source) => source.primary_source).length;
   const claimCount = (story.claims || []).length;
   const evidenceBasis = EVIDENCE_BASIS[analysis.publication_gate?.evidence_basis];
