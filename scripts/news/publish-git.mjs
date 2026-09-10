@@ -56,11 +56,14 @@ const stdout = result => typeof result === "string" ? result : result?.stdout ||
 async function git(args) {
   return exec("git", args, { maxBuffer: 64 * 1024 * 1024, env: { ...process.env, GIT_EDITOR: "true" } });
 }
-async function rebuildPublication() {
+export async function rebuildPublication({ run = exec, env = process.env } = {}) {
   // No collection, image generation or paid analysis. Re-render the retained
   // canonical data with the newly integrated generators before publication.
   for (const script of ["news:test", "news:build", "polls:build", "build:search", "taxonomy:build", "news:source-integrity:audit", "news:source-portfolio:audit", "news:validate"]) {
-    const result = await exec("npm", ["run", script, ...(script.endsWith(":audit") ? ["--", "--strict"] : [])], { maxBuffer: 16 * 1024 * 1024 });
+    // Match the regular workflow's isolated test configuration. Only mocked
+    // unit tests use API mode; every real build keeps the production mode.
+    const childEnv = script === "news:test" ? { ...env, WIRKUNGSTICKER_PROCESSING_MODE: "api", VISUAL_GENERATION_PROVIDER: "higgsfield" } : env;
+    const result = await run("npm", ["run", script, ...(script.endsWith(":audit") ? ["--", "--strict"] : [])], { maxBuffer: 16 * 1024 * 1024, env: childEnv });
     if (result.stdout) process.stdout.write(result.stdout);
   }
 }
