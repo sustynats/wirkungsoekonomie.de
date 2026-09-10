@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { PUBLIC_IMPACT_PROFILE_VERSION, publicImpactAssessment, assertPublicImpactHtml } from '../../scripts/news/impact-release.mjs';
-import { storyCard, storyPage, publicStory } from '../../scripts/news/build.mjs';
+import { storyCard, storyPage, publicStory, indexPage } from '../../scripts/news/build.mjs';
 import { storyToTitleInput } from '../../scripts/news/title-image/index.mjs';
 import {syntheticPotentialAssessment} from './fixtures/impact21.mjs';
 import {assessmentBasis} from '../../scripts/news/migrate-impact-assessments.mjs';
@@ -53,4 +53,23 @@ test('a complete independently reviewed current profile is visible without waiti
 test('the central status label preserves mixed-path dominance without changing ring or magnitude',()=>{
  const d=deriveStatusPresentation({direction:'mixed',dominance:'dominant_negative',temporal_status:'ex_ante',magnitude:4});
  assert.equal(d.directionLabel,'± überwiegend negativ');assert.equal(d.ringStatus,'potential');assert.equal(d.magnitudeBars,4);
+});
+test('a mixed catalog publishes current profiles without legacy search judgements or an obsolete legend',()=>{
+ const legacy=structuredClone(catalog.find(s=>s.published&&s.analysis));
+ legacy.analysis.planet={...legacy.analysis.planet,rationale:'In der Meldung ist kein belastbarer Wirkpfad beschrieben.',relevance:'gering'};
+ const reviewed=structuredClone(legacy);
+ reviewed.story_id='reviewed-fixture';reviewed.slug='reviewed-fixture';
+ reviewed.impact_assessment=syntheticPotentialAssessment();reviewed.impact_assessment.publication_status='ready';
+ reviewed.impact_assessment.dimensions.planet.rationale='Belegter modellierter Energiepfad für die Suchfunktion.';
+ reviewed.impact_sources=[{source_id:'official',url:'https://example.org/test',publisher:'Synthetic test fixture'}];
+ reviewed.impact_semantic_review={status:'ready',review_job_id:'wt_20260910T000000Z_000000000000000000000000'};
+ reviewed.impact_assessment_basis=assessmentBasis(reviewed);
+ for(const stories of [[reviewed,legacy],[legacy,reviewed]]){
+  const html=indexPage(stories,'2026-09-10T21:00:00Z');
+  assert.doesNotThrow(()=>assertPublicImpactHtml(html));
+  assert.doesNotMatch(html,/kein(?: belastbarer| wesentlicher)? Wirkpfad/iu);
+  assert.match(html,/belegter modellierter energiepfad/);
+  assert.match(html,/Tragweite 0/);
+  assert.match(html,/data-reviewed-impact-profile="2.1"/);
+ }
 });
