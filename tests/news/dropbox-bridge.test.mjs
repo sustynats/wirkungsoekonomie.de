@@ -368,6 +368,24 @@ test('standalone bridge CLI reaches configuration validation instead of circular
   assert.equal(failure.status,1);assert.match(failure.stderr,/BRIDGE_REMOTE_CONFIG_REQUIRED/);assert.doesNotMatch(failure.stderr,/unsettled top-level await/);
 });
 
+test('standalone worker completes the real optional publication module graph',()=>{
+  // Substitute only the work operation, never the entry-point or dependencies.
+  // This reproduces the production cycle without network, secrets or writes.
+  const loader = `export async function load(url, context, nextLoad) {
+    const result = await nextLoad(url, context);
+    if (!url.endsWith('/scripts/news/run.mjs')) return result;
+    const source = String(result.source).replace(
+      'runWirkungsticker({ dryRun: process.argv.includes("--dry-run") })',
+      'import("./bridge/personal-publication.mjs").then(() => ({publication_import_ready:true}))'
+    );
+    return {...result, source};
+  }`;
+  const output = execFileSync(process.execPath, ['--no-warnings', '--loader',
+    'data:text/javascript,' + encodeURIComponent(loader), 'scripts/news/run.mjs'],
+    {encoding:'utf8', timeout:10000, stdio:'pipe'});
+  assert.equal(JSON.parse(output).publication_import_ready,true);
+});
+
 test('failed editorial output returns to same inbox/job with evidence and bounded correction count',async t=>{
   const {provider,store,transport}=setup(t,{correctionsEnabled:true});await provider.enqueue([candidate()],[],now);const id=store.all()[0].input.job_id;
   const invalid=output(store.get(id).input,'publish');invalid.story.short_summary='Fehler';

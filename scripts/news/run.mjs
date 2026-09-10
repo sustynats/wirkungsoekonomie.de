@@ -1848,6 +1848,11 @@ export async function runWirkungsticker(options = {}) {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const report = await runWirkungsticker({ dryRun: process.argv.includes("--dry-run") });
-  console.log(JSON.stringify(report, null, 2));
+  // Finish evaluating this shared module before the worker imports optional
+  // publication adapters. Those adapters reuse its record builders; a top-level
+  // await here otherwise deadlocks their module graph after successful import.
+  runWirkungsticker({ dryRun: process.argv.includes("--dry-run") }).then(
+    report => console.log(JSON.stringify(report, null, 2)),
+    error => { console.error(error); process.exitCode = 1; },
+  );
 }
