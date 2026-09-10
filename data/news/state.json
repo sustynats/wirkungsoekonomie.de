@@ -62004,9 +62004,9 @@
     "ee8463e4ed3a7bb69bdb1c27d654db78fcf177388262ed1a0e0714fe3e037c45": {
       "source_id": "spiegel-schlagzeilen",
       "url": "https://www.spiegel.de/netzwelt/gadgets/iphone-duo-apple-stellt-faltbares-smartphone-vor-a-9a514568-ec6e-479b-a96c-a45ff891ac80",
-      "content_hash": "2e9cf51ba7099d19a276695f8edb2678b3f12786d18def503fd835f7b8164de1",
-      "published_at": "2026-09-09T18:40:00.000Z",
-      "last_seen": "2026-09-10T07:07:45.286Z"
+      "content_hash": "0e1cd19c781c5e805933ec48b2621d27ec04690ed52750f9a6e7c08b82539fa1",
+      "published_at": "2026-09-10T06:18:00.000Z",
+      "last_seen": "2026-09-10T07:22:26.766Z"
     },
     "87590ae3ef88e0c80573c0aeb6ada5b754d7565dda9b96ad9f16a3900175fdf8": {
       "source_id": "france24-en",
@@ -62501,9 +62501,9 @@
     "3f53155e76ac2aefce2bbcb65ee7f0b449cc84ea8570ad65784940b209b80d4c": {
       "source_id": "spiegel-schlagzeilen",
       "url": "https://www.spiegel.de/ausland/wolodymyr-selenskyj-flugzeug-in-moldau-offenbar-nur-knapp-von-drohne-verfehlt-a-9c0a29a6-a099-4d94-a495-d3541d7ae51b",
-      "content_hash": "cfb0b8458c0238a5397b4340c0f7f264a72c524d524e40f5c0b075456897c5f9",
-      "published_at": "2026-09-09T20:02:00.000Z",
-      "last_seen": "2026-09-10T07:07:45.286Z"
+      "content_hash": "62d57d1a608b68ed868fee50fbcedc4dda52983b7c92fda08219de976a713e46",
+      "published_at": "2026-09-10T06:19:00.000Z",
+      "last_seen": "2026-09-10T07:22:26.766Z"
     },
     "c35cf5213d174d401e44cd45ed423fc8496fb2b8e21c789b9202d882422bf020": {
       "source_id": "stern-schlagzeilen",
@@ -65238,9 +65238,9 @@
     "37e284ec159bdcb62e6e22fc49b3e03c2ebcd1c8c2a0fd4a33b9480217dd30c7": {
       "source_id": "spiegel-schlagzeilen",
       "url": "https://www.spiegel.de/wissenschaft/klimakrise-westeuropa-erlebt-heissesten-sommer-seit-beginn-der-aufzeichnungen-a-ad5872f7-ea56-4376-8f82-166f810b94c4",
-      "content_hash": "372afdfd85937f340b5903873cbb33539ba5822bc0c9b7ad2aa4c9093783b6fb",
+      "content_hash": "957c878cf9d074b66788ac8a253aa970dd12aee5d3948346ac5bccb7a7d9ba13",
       "published_at": "2026-09-10T06:54:00.000Z",
-      "last_seen": "2026-09-10T07:07:45.286Z"
+      "last_seen": "2026-09-10T07:22:26.766Z"
     },
     "129fe6e7980ab04f5c4538c7f37f762e3c38217475e67def737b858fe807684e": {
       "source_id": "dlf-nachrichten",
@@ -65983,6 +65983,12 @@
     }
   },
   "pending_story_ids": [
+    "wt-e56802a24cd4aae3",
+    "wt-5798ff5c6f66ffc0",
+    "wt-a331810db864f614",
+    "wt-2c94d80673e11b3d",
+    "wt-01c49f3a55d0fb99",
+    "wt-7342dafe037138af",
     "wt-d62a52527174a1ca",
     "wt-8a573078322819e3",
     "wt-b9aa6e7e11987ec8",
@@ -66193,17 +66199,10 @@
     "wt-a5874ae28ed5533f",
     "wt-293fa4edfc2b5a5d",
     "wt-990631d7dc3586cb",
-    "wt-c15cb7a9f3b72c35",
-    "wt-7342dafe037138af",
-    "wt-01c49f3a55d0fb99",
-    "wt-4f4c30a72286f925",
-    "wt-5798ff5c6f66ffc0",
-    "wt-2c94d80673e11b3d",
-    "wt-a331810db864f614",
-    "wt-e56802a24cd4aae3"
+    "wt-c15cb7a9f3b72c35"
   ],
   "relevance_filter_version": "2026-09-09.1",
-  "last_attempted_run": "2026-09-10T07:07:45.286Z",
+  "last_attempted_run": "2026-09-10T07:22:26.766Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1652,
@@ -66921,7 +66920,8 @@
       "prompt_hash": "996a507569e0d2841760ee6a1dd3d6c65a30db4a90a89dd22ceeb5b434f3e1bb",
       "attempt": 0,
       "created_at": "2026-09-10T07:16:54.410Z",
-      "status": "submission_unknown"
+      "status": "submission_unknown",
+      "next_poll_at": "2026-09-10T07:38:53.695Z"
     }
   },
   "source_publication_dates": {
@@ -67246,20 +67246,20 @@
   },
   "discovery_status": {
     "bundestag-plenary-agenda": {
-      "last_attempt": "2026-09-10T06:10:25.721Z",
+      "last_attempt": "2026-09-10T07:22:26.766Z",
       "source_id": "bundestag-hib",
       "url": "https://www.bundestag.de/static/appdata/includes/rss/aktuellethemen.rss",
-      "last_success": "2026-09-10T06:10:25.721Z",
-      "items": 7,
+      "last_success": "2026-09-10T07:22:26.766Z",
+      "items": 15,
       "last_error": null,
       "etag": null,
       "last_modified": null
     },
     "spiegel-major-news-index": {
-      "last_attempt": "2026-09-10T06:10:25.721Z",
+      "last_attempt": "2026-09-10T07:22:26.766Z",
       "source_id": "spiegel-schlagzeilen",
       "url": "https://www.spiegel.de/sitemaps/news-de.xml",
-      "last_success": "2026-09-10T06:10:25.721Z",
+      "last_success": "2026-09-10T07:22:26.766Z",
       "items": 120,
       "last_error": null,
       "etag": null,
@@ -67297,7 +67297,7 @@
       "schedule_precision": "not_established",
       "status": "watch_for_material_development",
       "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T06:10:25.721Z"
+      "checked_at": "2026-09-10T07:22:26.766Z"
     },
     {
       "id": "agenda-97836ba399f42ba72df0",
@@ -67693,7 +67693,7 @@
       "schedule_precision": "not_established",
       "status": "watch_for_material_development",
       "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T06:10:25.721Z"
+      "checked_at": "2026-09-10T07:22:26.766Z"
     },
     {
       "id": "agenda-205cddad0df17a860e00",
@@ -67910,6 +67910,30 @@
       "status": "watch_for_material_development",
       "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
       "checked_at": "2026-09-10T07:07:45.286Z"
+    },
+    {
+      "id": "agenda-a29d0a67eb4ac08418be",
+      "title": "15,48 Milliarden Euro für das Bildungs- und Familienressort",
+      "source_id": "bundestag-hib",
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-bildung-1194740",
+      "source_published_at": "2026-09-10T06:35:00.000Z",
+      "scheduled_date": "2026-09-10",
+      "schedule_precision": "day",
+      "status": "watch_for_material_development",
+      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
+      "checked_at": "2026-09-10T07:22:26.766Z"
+    },
+    {
+      "id": "agenda-e6e2aba7d8273bec3847",
+      "title": "Deutlich weniger Geld für den Gesundheitsetat",
+      "source_id": "bundestag-hib",
+      "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-gesundheit-1194752",
+      "source_published_at": "2026-09-10T06:25:00.000Z",
+      "scheduled_date": "2026-09-10",
+      "schedule_precision": "day",
+      "status": "watch_for_material_development",
+      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
+      "checked_at": "2026-09-10T07:22:26.766Z"
     }
   ],
   "missed_news_rechecks": {
@@ -68257,6 +68281,16 @@
       "input_hash": "3b107fc795214ee41b0a20d7",
       "version": "2026-09-09.1",
       "checked_at": "2026-09-10T07:07:45.286Z"
+    },
+    "wt-a331810db864f614": {
+      "input_hash": "35bcf659b2757bdd4454c54d",
+      "version": "2026-09-09.1",
+      "checked_at": "2026-09-10T07:22:26.766Z"
+    },
+    "wt-e56802a24cd4aae3": {
+      "input_hash": "3b107fc795214ee41b0a20d7",
+      "version": "2026-09-09.1",
+      "checked_at": "2026-09-10T07:22:26.766Z"
     }
   }
 }
