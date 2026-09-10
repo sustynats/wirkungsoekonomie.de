@@ -997,6 +997,14 @@ export async function runWirkungsticker(options = {}) {
     operational_status: "running",
     editorial_status: "running",
   };
+  const discoveryStarted = performance.now();
+  const discoveryCheckpoint = async (stage, counts = {}) => {
+    if (!bridge || options.dryRun || bridgePhase === 'import') return;
+    const progress = { stage, run_id: report.run_id, at: new Date().toISOString(), elapsed_ms: Math.round(performance.now() - discoveryStarted), ...counts };
+    await bridge.store.observe('discovery-progress', progress);
+    console.error(JSON.stringify({ discovery_progress: progress }));
+  };
+  await discoveryCheckpoint('source_handoff');
 
   // These jobs already have a complete, immutable published-source package.
   // Hand them off under the discovery lock before slow external feed I/O.
@@ -1027,6 +1035,7 @@ export async function runWirkungsticker(options = {}) {
     if (!source.allow_empty && !fetched.not_modified && !items.length && Number(state.source_status[source.source_id]?.items || 0) > 0) throw new Error("SOURCE_PARSER_DRIFT_OR_EMPTY_FEED");
     return { source, fetched, items, fetchAttempts: fetchResult.attempts };
   } }));
+  await discoveryCheckpoint('feeds_loaded', { source_packages: fetchResults.filter(r => r.status === 'fulfilled').length });
 
   let allItems = [];
   for (let index = 0; index < fetchResults.length; index += 1) {
@@ -1173,6 +1182,7 @@ export async function runWirkungsticker(options = {}) {
       Boolean(cluster.existing_story?.pending_update?.reassessment),
       cluster.sources.some((source) => freshItemIds.has(source.item_id)),
     ));
+  await discoveryCheckpoint('events_clustered', { changed_items: changedItems.length, clusters: freshCandidates.length });
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
   const retryableReasons = new Set(["BRIDGE_PENDING", "AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_INPUT_TOO_LARGE", "SOURCE_INTEGRITY_OPEN"]);
   const retryCandidates = (storyStore.stories || [])
@@ -1344,7 +1354,7 @@ export async function runWirkungsticker(options = {}) {
     if (bridge && !options.dryRun) {
       if (bridgePhase !== 'import') {
         if (report.all_sources_failed) throw new Error('BRIDGE_DISCOVERY_SOURCE_FAILURE');
-        const enriched = [];
+        report.bridge_enqueued = await bridge.enqueue([], [...byId.values()], now);
         for (const candidate of await bridge.selectCandidates(ready)) {
           const permitted = new Set(articleSourceOrder(candidate).filter(s => {
             const registered = enabledSources.find(r => r.source_id === s.source_id);
@@ -1358,9 +1368,12 @@ export async function runWirkungsticker(options = {}) {
               sources.push({ ...source, article_excerpt: result.excerpt, retrieved_at: now }); report.article_excerpts_fetched++;
             } catch { sources.push(source); report.article_excerpt_failures++; }
           }
-          enriched.push({ ...candidate, sources });
+          // The complete packet becomes available immediately. A later slow
+          // source or interrupted worker must not hold back an earlier job.
+          const queued = await bridge.enqueue([{ ...candidate, sources }], [...byId.values()], now);
+          report.bridge_enqueued.push(...queued);
+          await discoveryCheckpoint('job_enqueued', { jobs: report.bridge_enqueued.length, story_id: candidate.story_id });
         }
-        report.bridge_enqueued = await bridge.enqueue(enriched, [...byId.values()], now);
         if (bridge.editorialEnabled && fs.existsSync(path.join(ROOT, 'data/news/editorial-analyses.json'))) report.bridge_editorial_enqueued = await (await import('./bridge/editorial.mjs')).discoverEditorialJobs(bridge, ROOT, now);
       }
       if (bridgePhase !== 'discovery') {
@@ -1398,6 +1411,7 @@ export async function runWirkungsticker(options = {}) {
       report.bridge_monitor = await bridge.monitor(now);
       if (bridgePhase === 'discovery') {
         report.completed_at = new Date().toISOString();
+        await discoveryCheckpoint('completed', { jobs: report.bridge_enqueued?.length || 0 });
         await bridge.store.observe('discovery-report', { started_at: now, completed_at: report.completed_at,
           trigger_type: report.trigger_type, triggered_by: report.triggered_by, run_id: report.run_id,
           source_successes: report.source_successes, source_failures: report.source_failures, jobs: report.bridge_enqueued });

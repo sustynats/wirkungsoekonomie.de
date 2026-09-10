@@ -2,6 +2,8 @@
 import { eventCompatibility } from "./newsroom.mjs";
 import { courtCaseRelation } from "./court-case-identity.mjs";
 import { structuredEventIdentity } from './event-identity.mjs';
+import { projectionCache } from './projection-cache.mjs';
+const subjects = projectionCache(), names = projectionCache(), visits = projectionCache();
 const DAY = 86400000;
 const time = (value) => Date.parse(value || "") || 0;
 const normal = (value) => String(value || "").normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
@@ -25,6 +27,11 @@ export function delegationNames(item) {
 }
 
 export function diplomaticVisit(item) {
+  const key = JSON.stringify([item.title, item.source_summary, item.summary, item.sources?.[0]?.summary]);
+  return visits(key, () => deriveDiplomaticVisit(item));
+}
+
+function deriveDiplomaticVisit(item) {
   const title = String(item.title || "");
   const lead = String(item.source_summary || item.summary || item.sources?.[0]?.summary || "").split(/\n\s*\n/)[0].slice(0, 650);
   const input = `${title}. ${lead}`;
@@ -107,6 +114,11 @@ function electionJurisdictions(text) {
 // ingestion guard and the presentation-only case files. No country/company
 // allowlist; an ambiguous comparison must not bridge two different subjects.
 export function namedSubjects(item) {
+  const key = JSON.stringify([item.title, item.source_summary, item.summary, item.sources?.[0]?.title, item.sources?.[0]?.summary]);
+  return names(key, () => deriveNamedSubjects(item));
+}
+
+function deriveNamedSubjects(item) {
   // A sentence boundary prevents the final headline noun from becoming part
   // of a company's name at the start of the lead.
   const input = `${item.title || ""}. ${String(item.source_summary || item.summary || "").split(/\n\s*\n/)[0].slice(0, 650)}`;
@@ -155,6 +167,11 @@ function publicNetworkPlace(title, lead) {
 }
 
 export function fileSubject(item, { sourcePlace = false } = {}) {
+  const key = JSON.stringify([item.title, item.summary, item.source_summary, item.sources?.[0]?.summary, item.event_geography, sourcePlace]);
+  return subjects(key, () => deriveFileSubject(item, sourcePlace));
+}
+
+function deriveFileSubject(item, sourcePlace) {
   const title = String(item.title || "");
   const lead = String(item.summary || item.source_summary || item.sources?.[0]?.summary || "").split(/\n\s*\n/)[0].slice(0, 650);
   // Only a separately established case identity enables this source-grounded
