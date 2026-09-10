@@ -11,9 +11,14 @@
     },
     "bridge-import": {
       "firstSeen": "2026-09-10T19:20:40.042Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "afda0182bc60aca151d0086f",
+      "content": "⚠ WÖk-Betriebsstörung\nÜbernahme fertiger Meldungen: Ein bereits erkanntes Ergebnis wartet seit über zehn Minuten auf Übernahme.\nSeit: 2026-09-10T19:20:40.042Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-10"
 }
