@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { directionAssessmentErrors, dimensionAssessment, DIRECTION_RECIPIENT_RULE } from '../../scripts/news/direction-assessment.mjs';
+import { IMPACT_RULE, deriveImpactPresentation } from '../../scripts/news/impact-assessment.mjs';
 import { renderDimensionMeters } from '../../scripts/news/visuals.mjs';
 import { storyCard, storyPage } from '../../scripts/news/build.mjs';
 import { buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
@@ -20,7 +21,7 @@ test('intention, procedure, mitigation and political reaction never supply a bal
     // A reaction may remain separately visible, without changing the primary verdict.
     a.human.tendency='chance';assert.deepEqual(directionAssessmentErrors(a,sources),[]);
     const html=renderDimensionMeters(a,{compact:true});
-    assert.match(html,/wt-consequence--separate/);assert.doesNotMatch(html,/data-direction="mixed"/);
+    assert.match(html,/data-direction="positive"/);assert.doesNotMatch(html,/data-direction="mixed"/);
   }
 });
 
@@ -32,17 +33,17 @@ test('future judgments need a concrete endpoint, condition and clear assessment 
   const a=fixture();delete a.assessment_frame.object_kind;
   assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_OBJECT_KIND_REQUIRED'));
   const prompt=buildAnalysisPrompt([{story_id:'test',title:'Test',claims:[],sources:[]}],{includeVisuals:false});
-  assert.ok(prompt.includes(DIRECTION_RECIPIENT_RULE));
+  assert.ok(prompt.includes(IMPACT_RULE));
 });
 
 test('list and detail explain signed potentials without a mixed total or hidden consequence',()=>{
   const a=fixture();a.human.tendency='gemischt';a.human.positive_path=path('Mehr Hilfe an zusätzlich finanzierten Standorten.');
   for(const compact of [true,false]) {
     const html=renderDimensionMeters(a,{compact});
-    assert.match(html,/Zwei getrennte Potenziale/);assert.match(html,/data-direction="positive"/);assert.match(html,/data-direction="negative"/);
-    assert.doesNotMatch(html,/data-direction="mixed"|wt-dim__note sr-only/);
-    assert.ok(html.includes(a.human.positive_path.state_change));assert.ok(html.includes(a.human.negative_path.state_change));
-    assert.match(html,/Relevanz: hoch/);assert.match(html,/Bedingung:/);
+    assert.equal(deriveImpactPresentation(a).dimensions.human.direction,'open');
+    assert.match(html,/data-magnitude="unknown"/);
+    assert.doesNotMatch(html,/Relevanz:/);
+    if (!compact) assert.match(html,/Stand der Einordnung/);
   }
 });
 
@@ -51,10 +52,8 @@ test('the reported Dröge case changes through the shared presentation, not a co
   assert.ok(s);const before=JSON.stringify(s);
   for(const html of [storyCard(s),storyPage(s)]) {
     assert.doesNotMatch(html,/Gegenläufige Wirkpfade/);
-    assert.match(html,/Keine belastbare Gesamtbewertung/);
-    assert.match(html,/Bisherige Nutzenannahme/);assert.match(html,/Bisherige Risikoannahme/);
-    assert.ok(html.includes(s.analysis.democracy.positive_path.mechanism));
-    assert.ok(html.includes(s.analysis.democracy.negative_path.mechanism));
+    assert.match(html,/data-magnitude="unknown"/);
+    assert.equal(deriveImpactPresentation(s).review.status,'needs_reassessment');
   }
   assert.equal(JSON.stringify(s),before);
 });
@@ -63,7 +62,7 @@ test('legacy mixed records are not silently promoted to the new semantic contrac
   const a=fixture();a.direction_assessment_version='1.1';a.human.tendency='gemischt';a.human.positive_path=path('Mehr Hilfe an zusätzlich finanzierten Standorten.');
   const before=JSON.stringify(a);
   assert.equal(dimensionAssessment(a,'human').status,'unreviewed_roles');
-  assert.match(renderDimensionMeters(a,{compact:true}),/ältere Einordnung/);
+  assert.equal(deriveImpactPresentation(a).review.status,'needs_reassessment');
   assert.equal(JSON.stringify(a),before);assert.deepEqual(directionAssessmentErrors(a,sources),[]);
 });
 
@@ -81,9 +80,9 @@ test('an unscoped historical judgment cannot appear as a verdict about the headl
   assert.ok(s);const before=JSON.stringify(s);
   assert.equal(dimensionAssessment(s.analysis,'democracy').status,'unscoped');
   for(const html of [storyCard(s),storyPage(s)]) {
-    assert.match(html,/Teilbewertung ohne klaren Vergleich/);
-    assert.doesNotMatch(html,/Positiv · Potenzial|wt-tendency--chance|data-direction="positive"/);
-    assert.ok(html.includes(s.analysis.democracy.positive_path.mechanism));
+    assert.match(html,/data-magnitude="unknown"/);
+    assert.doesNotMatch(html,/class="wt-dim wt-dim--democracy" data-potential-model="2.0" data-direction="positive"/);
+    assert.equal(deriveImpactPresentation(s).dimensions.democracy.direction,'open');
   }
   assert.equal(JSON.stringify(s),before);
   for(const t of ['chance','risiko']) {
@@ -95,6 +94,6 @@ test('an unscoped historical judgment cannot appear as a verdict about the headl
 test('embedded dimension-only diagrams keep the scope of their surrounding authored analysis',()=>{
   const dimensions=Object.fromEntries(['human','planet','democracy'].map(k=>[k,{relevance:'hoch',tendency:'risiko',rationale:'Das im umgebenden Analysetext begründete negative Potenzial.'}]));
   assert.equal(dimensionAssessment(dimensions,'human').status,'assessed');
-  assert.match(renderDimensionMeters(dimensions),/data-direction="negative"/);
+  assert.match(renderDimensionMeters(dimensions),/data-direction="open"/);
   assert.doesNotMatch(renderDimensionMeters(dimensions),/Teilbewertung ohne klaren Vergleich/);
 });

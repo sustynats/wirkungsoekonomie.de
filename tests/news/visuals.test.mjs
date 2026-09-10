@@ -130,12 +130,12 @@ for (const [name, change] of [
 
 test("deterministische Anker aus dem Analyse-Schema", () => {
   const meters = renderDimensionMeters(story().analysis, { compact: true });
-  assert.match(meters, /wt-dim--human" data-level="3"/);
-  assert.match(meters, /wt-dim--democracy" data-level="0"/);
-  assert.match(meters, /wt-meter--open/);
-  assert.match(meters, /Begründung und Grenzen/);
+  assert.match(meters, /wt-dim--human" data-potential-model="2.0"/);
+  assert.match(meters, /wt-dim--democracy" data-potential-model="2.0"/);
+  assert.match(meters, /wt-meter--unknown/);
+  assert.match(meters, /data-magnitude="unknown"/);
   assert.doesNotMatch(meters, /wt-dim__note sr-only/);
-  assert.equal((meters.match(/is-filled/g) || []).length, 5);
+  assert.equal((meters.match(/is-filled/g) || []).length, 0);
   assert.match(renderStatusTrack("beschlossen"), /is-current"[^>]*aria-current="step"[^>]*><span class="wt-track__dot"><\/span><span class="wt-track__label">Beschlossen/);
   assert.match(renderStatusTrack("laufende Entwicklung"), /wt-track--open/);
   const path = renderImpactPath(story().analysis);

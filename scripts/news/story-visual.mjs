@@ -1,3 +1,4 @@
+import { deriveImpactPresentation } from './impact-assessment.mjs';
 import { publicTitleImage } from "./title-image/pipeline.mjs";
 import { renderDimensionMeters, renderStatusChip, renderAnalysisTypeChip } from "./visuals.mjs";
 
@@ -17,9 +18,9 @@ export function renderStoryVisual(story, { href = "", detail = false, loading = 
       <p class="news-story-visual__brand" aria-hidden="true">Wirkungsökonomie <span>· Wirkungsticker</span></p>
       <div class="news-story-visual__content">
         <${heading} class="news-story-visual__headline">${href ? `<a href="${escape(href)}">${escape(story.title)}</a>` : escape(story.title)}</${heading}>
-        <div class="news-story-visual__panel"><p class="news-story-visual__kicker">Relevanz &amp; Wirkungspotenzial</p>${renderDimensionMeters(story.analysis, { compact: true })}<p class="news-story-visual__legend">Einordnung des genannten Gegenstands, keine Gesamtbewertung des Themenfelds.<br>Balken: Relevanz, nicht Wirkungsstärke. Potenzial ist noch keine eingetretene Wirkung.</p><div class="news-story-visual__chips">${renderStatusChip(story.analysis.status)}${renderAnalysisTypeChip(story.analysis.analysis_type, { note: false })}</div></div>
+        <div class="news-story-visual__panel"><p class="news-story-visual__kicker">${deriveImpactPresentation(story).relevance_label ? `${escape(deriveImpactPresentation(story).relevance_label)} systemische Relevanz` : "Systemische Relevanz offen"}</p>${renderDimensionMeters(story, { compact: true })}</div>
       </div>
-      <figcaption class="news-story-visual__caption"><span>${escape(sourceLabel)}</span><span>${escape(label)}</span><span class="sr-only">Darstellung, kein Beleg des Ereignisses. Balken zeigen Relevanz, nicht positive oder negative Wirkung.</span></figcaption>
+      <figcaption class="news-story-visual__caption"><span>${escape(sourceLabel)}</span><span>${escape(label)}</span><span class="sr-only">Darstellung, kein Beleg des Ereignisses. Balken zeigen Tragweite. Richtung, Zeitstatus und Evidenz bleiben getrennt.</span></figcaption>
     </figure>
   </div>`;
 }

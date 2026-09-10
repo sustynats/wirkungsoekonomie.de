@@ -1,3 +1,4 @@
+import { deriveImpactPresentation, IMPACT_LEGEND } from './impact-assessment.mjs';
 // Visuelle Anker des Wirkungstickers.
 //
 // Zwei Ebenen:
@@ -104,7 +105,7 @@ export const VISUALS_SCHEMA = {
 
 export const VISUALS_PROMPT_RULES = [
   "Ergänze optional ein Objekt visuals für visuelle Anker. Jedes Element ist freiwillig: Liefere es nur, wenn die gelieferten Claims oder Quelltexte es unmittelbar tragen; sonst lasse den Schlüssel weg oder setze null. Visuals sind Darstellung, kein zusätzlicher Wirkungsbeleg.",
-  "key_figures (höchstens 3): nur Zahlen, die wörtlich im Claim oder Quelltext stehen, Schreibweise unverändert (Zahlwort bleibt Zahlwort); keine Umrechnung, Summe, Schätzung oder Ableitung. chart (nur type bar, 3 bis 8 Punkte): nur wenn die Quelle mindestens drei vergleichbare Zahlen derselben Einheit nennt. timeline (höchstens 4): nur Termine oder Fristen, die die Quelle nennt. affected_groups (höchstens 4) ausschließlich aus der festen Liste. tendency steht bereits in human/planet/democracy; nicht unter visuals doppelt ausgeben.",
+  "key_figures (höchstens 3): nur Zahlen, die wörtlich im Claim oder Quelltext stehen, Schreibweise unverändert (Zahlwort bleibt Zahlwort); keine Umrechnung, Summe, Schätzung oder Ableitung. chart (nur type bar, 3 bis 8 Punkte): nur wenn die Quelle mindestens drei vergleichbare Zahlen derselben Einheit nennt. timeline (höchstens 4): nur Termine oder Fristen, die die Quelle nennt. affected_groups (höchstens 4) ausschließlich aus der festen Liste. Das führende MPD-Profil steht in impact_assessment; keine zweite Bewertung unter visuals.",
   "Für jeden Diagrammpunkt sind claim_id und evidence_quote Pflicht. Der kurze unveränderte Ausschnitt muss im zugehörigen Claim oder dessen konkretem Quellenauszug stehen und genau diesen Punkt tragen: dieselbe Messgröße (measure), Kategorie (label) sowie Zahl unmittelbar mit Einheit. Keine Währungen, Mengen oder Größenordnungen vermischen; keine Jahreszahl als Messwert. Generische Einheiten wie 'Einheit' reichen nicht. Wenn dieser Nachweis fehlt, chart weglassen. Keine zusätzlichen Quellenaufrufe nur für ein Diagramm.",
   "path_directions: Richtung je materiellem Einzelpfad, höchstens 12. path exakt aus first_order/second_order/third_order übernehmen; Bedingung und Ledger-Belege für Ausgangspunkt nennen. Richtung analytisch begründen, nicht aus Relevanz ableiten. Unbeurteilbar = open, nicht neutral. Kein neuer KI-Aufruf für fehlende Visuals.",
 ];
@@ -474,38 +475,30 @@ function consequence(path, sign, { legacy = false, secondary = false } = {}) {
   return `<div class="wt-consequence wt-consequence--${legacy || secondary ? "separate" : sign}"${!legacy && !secondary ? ` data-direction="${sign}"` : ""}><strong>${escapeHtml(title)}</strong><p>${escapeHtml(path.state_change || path.mechanism)}</p>${path.condition ? `<p class="wt-consequence__condition"><b>Bedingung:</b> ${escapeHtml(path.condition)}</p>` : ""}${path.state_change && path.state_change !== path.mechanism ? `<details><summary>Wie dieser Pfad zustande kommt</summary><p>${escapeHtml(path.mechanism)}</p></details>` : ""}</div>`;
 }
 
-export function renderDimensionMeters(analysis = {}, { compact = false, tendency } = {}) {
-  const legacy = tendency === undefined ? analysis.visuals?.tendency : tendency;
-  const frame = analysis.assessment_frame;
-  const objectLabels = { proposed_measure: "Angekündigte Maßnahme · Umsetzung noch Voraussetzung", implemented_measure: "Umgesetzte Maßnahme · Folgen getrennt prüfen", event: "Berichtetes Ereignis", communication: "Äußerung / Kommunikation · nicht automatisch ihre Umsetzung" };
-  const reference = frame?.subject && frame?.baseline ? `<div class="wt-dims__reference">${objectLabels[frame.object_kind] ? `<p class="wt-dims__object-kind">${escapeHtml(objectLabels[frame.object_kind])}</p>` : ""}<p><strong>Bewertet:</strong> ${escapeHtml(frame.subject)}</p><details><summary>Verglichen mit:</summary><p>${escapeHtml(frame.baseline)}</p></details></div>` : '';
+export function renderDimensionMeters(analysis = {}, { compact = false, context = {} } = {}) {
+  const profile = deriveImpactPresentation(analysis, context);
+  const target = profile.evaluation_target?.label;
+  const reference = `<div class="wt-dims__reference">${profile.show_target || !compact ? `<p><strong>Bewertet:</strong> ${escapeHtml(target || "Gegenstand noch zu präzisieren")}</p>` : ""}<p class="wt-impact-time">${escapeHtml(profile.time_label)}</p>${!compact && profile.baseline ? `<p><strong>Vergleich:</strong> ${escapeHtml(profile.baseline)}</p>` : ""}</div>`;
+  const sources = [...(analysis.sources || analysis.source_snapshot || []), ...(analysis.impact_sources || [])];
+  const pathMarkup = (path, secondary = false) => {
+    const role = secondary ? ({ counter_path: 'Gegenpfad', side_effect: 'Nebenwirkung', side_risk: 'Nebenrisiko' })[path.type] || 'Nebenpfad' : 'Hauptpfad';
+    const links = (path.source_ids || []).map(id => sources.find(s => s.source_id === id)).filter(s => /^https:\/\//.test(s?.url || '')).map(s => `<a href="${escapeHtml(s.url)}" rel="noopener noreferrer" target="_blank">${escapeHtml(s.publisher || s.title || 'Beleg')}</a>`).join(' · ');
+    return `<li class="wt-impact-path" data-direction="${escapeHtml(path.direction)}"><strong>${role}: ${escapeHtml(path.label)}</strong><p>${escapeHtml(path.mechanism)}</p>${path.recipients?.length ? `<p>Betroffen: ${escapeHtml(path.recipients.join(' · '))}</p>` : ''}${path.condition ? `<p>Bedingung / Zeitraum: ${escapeHtml(path.condition)}</p>` : ''}${links ? `<p>Belege: ${links}</p>` : ''}</li>`;
+  };
   const items = Object.entries(DIMENSIONS).map(([key, meta]) => {
-    const value = analysis[key] || { relevance: "offen", rationale: "Noch nicht belastbar eingeordnet." };
-    const level = relevanceLevel(value.relevance);
-    const label = value.relevance || "offen";
-    const assessment = dimensionAssessment(analysis, key, legacy);
-    const mixed = value.tendency === "gemischt" || assessment.tendency === "gemischt";
-    const rolePending = assessment.status === "unreviewed_roles" || assessment.status === "unresolved_balance";
-    const unscoped = assessment.status === "unscoped";
-    const originalTendency = unscoped ? value.tendency ?? legacy?.[key] : assessment.tendency;
-    const primary = originalTendency === "chance" ? value.positive_path : originalTendency === "risiko" ? value.negative_path : null;
-    const mainSign = originalTendency === "chance" ? "positive" : "negative";
-    const paths = mixed
-      ? consequence(value.positive_path, "positive", { legacy: rolePending }) + consequence(value.negative_path, "negative", { legacy: rolePending })
-      : primary ? consequence(primary, mainSign, { legacy: unscoped }) : value.rationale && unscoped ? consequence({mechanism:value.rationale}, mainSign, {legacy:true}) : "";
-    const other = !mixed && primary ? (mainSign === "positive" ? value.negative_path : value.positive_path) : null;
-    return `<div class="wt-dim wt-dim--${key}" data-level="${level}" data-potential-model="1.2">
-      <div class="wt-dim__head">${renderIcon(meta.icon)}<strong>${meta.label}</strong><span class="wt-dim__level">Relevanz: ${escapeHtml(label)}</span></div>
-      ${meter(level, `Relevanz für ${meta.label}: ${label}`, { className: "wt-dim__track" })}
-      ${mixed || unscoped ? `<p class="wt-dim__separate-label" data-direction="${rolePending || unscoped ? "not_aggregated" : "separate"}"><strong>${unscoped ? assessment.label : rolePending ? "Keine belastbare Gesamtbewertung" : "Zwei getrennte Potenziale – keine Verrechnung"}</strong></p>` : renderTendency(assessment.tendency, assessment)}
-      ${assessment.note ? `<p class="wt-dim__assessment-note">${escapeHtml(assessment.note)}</p>` : ""}
-      ${paths}
-      ${other ? consequence(other, mainSign === "positive" ? "negative" : "positive", { secondary: true, legacy: unscoped }) : ""}
-      ${value.rationale ? `<details class="wt-dim__reason"><summary>Begründung und Grenzen</summary><p class="wt-dim__note">${escapeHtml(value.rationale)}</p></details>` : ""}
-    </div>`;
+    const d = profile.dimensions[key], level = d.magnitude;
+    const segments = Array.from({ length: 5 }, (_, index) => `<i${level !== null && index < level ? ' class="is-filled"' : ""}></i>`).join("");
+    const track = `<span class="wt-meter wt-dim__track${level === null ? " wt-meter--unknown" : ""}" data-magnitude="${level === null ? "unknown" : level}" role="img" aria-label="Tragweite für ${meta.label}: ${escapeHtml(d.magnitude_label)}">${segments}${level === null ? '<span class="sr-only">Keine Größenschätzung vorhanden</span>' : ""}</span>`;
+    return `<div class="wt-dim wt-dim--${key}" data-potential-model="2.0" data-direction="${d.direction}" data-path-status="${d.path_status || "insufficient_basis"}"><div class="wt-dim__head">${renderIcon(meta.icon)}<strong>${meta.label}</strong></div>${track}<span class="wt-impact-direction" title="${escapeHtml(d.long_label)}">${escapeHtml(d.label)}</span>${compact ? "" : `<p class="wt-impact-evidence">Tragweite: ${escapeHtml(d.magnitude_label)} · Eintritt: ${escapeHtml(d.likelihood_label)} · Evidenz: ${escapeHtml(d.evidence_label)} · ${escapeHtml(d.time_label)}</p><ul class="wt-impact-paths">${(d.primary_paths || []).map(path => pathMarkup(path)).join("")}${(d.secondary_paths || []).map(path => pathMarkup(path, true)).join("")}</ul><p>${escapeHtml(d.rationale || "Die Einordnung bleibt offen.")}</p>${d.observed_outcome?.change ? `<p><strong>Beobachtet:</strong> ${escapeHtml(d.observed_outcome.change)}${d.observed_outcome.attribution === "open" ? " Die Ursachenzurechnung bleibt offen." : ""}</p>` : ""}`}</div>`;
   }).join("");
-  const observed = analysis.observed_outcome?.change ? `<p class="wt-dims__observed"><strong>Gesondert beobachtet:</strong> ${escapeHtml(analysis.observed_outcome.change)} ${analysis.observed_outcome.attribution === "open" ? "Die Ursachenzurechnung bleibt offen." : ""}</p>` : "";
-  return `${reference}<div class="wt-dims${compact ? " wt-dims--compact" : ""}">${items}</div>${observed}${compact ? "" : '<p class="wt-dims__legend">Balken zeigen Relevanz, nicht Wirkungsstärke. Die Richtung bezeichnet das begründete Potenzial der konkret genannten Zustandsänderung. Absicht, Beschluss und beobachtete Folge sind verschiedene Dinge. Unsicherer Eintritt macht einen begründeten Schadenspfad nicht neutral. Politischer Gegenwind ist kein gleichwertiger Gegenschaden. Nichtkompensation: schwere Eingriffe in Schutzrechte und Lebensgrundlagen werden nicht durch andere Vorteile verrechnet. Risiken eines größeren Themenfelds müssen mit eigenen Belegen und Wirkungskaskaden gesondert eingeordnet werden.</p>'}`;
+  const review = compact ? '' : profile.review?.status === "needs_reassessment" ? '<details class="wt-impact-review"><summary>Stand der Einordnung</summary><p>Die Wirkungsmetadaten dieser älteren Fassung werden nach dem präzisierten Modell erneut geprüft. Fehlende Angaben bleiben offen; ursprüngliche Texte und Belege sind erhalten.</p></details>' : profile.review?.status === 'reassessed' ? `<p class="wt-impact-review"><strong>Wirkungsprofil neu geprüft (${escapeHtml(String(profile.review.at || '').slice(0,10))}):</strong> ${escapeHtml(profile.review.note)} Schema ${escapeHtml(profile.version)}.</p>` : '';
+  return `${reference}<div class="wt-dims wt-dims--impact${compact ? " wt-dims--compact" : ""}">${items}</div>${compact ? "" : `<p class="wt-dims__legend">${IMPACT_LEGEND}. Nichtkompensation: Schwere Schäden werden nicht mit Vorteilen anderer Dimensionen verrechnet. Reverse Merit Order berücksichtigt maßgebliche Schutzgrenzen.</p>`}${review}`;
+}
+
+export function renderImpactSystem(input = {}) {
+  const profile = deriveImpactPresentation(input), system = profile.system_check;
+  if (!system) return '';
+  return `<div class="wt-impact-system"><h3>Vom Anlass zu möglichen Systemfolgen</h3><ol>${[['first_order','Unmittelbar'],['second_order','Nachgelagert'],['third_order','Systemisch']].map(([key,label])=>`<li><strong>${label}:</strong> ${escapeHtml(system[key])}</li>`).join('')}</ol><p><strong>Ohne den bewerteten Eingriff:</strong> ${escapeHtml(profile.counterfactual)}</p><p><strong>Referenzrahmen:</strong> ${escapeHtml((profile.reference_frame || []).join(' · '))}</p><details><summary>Gegenevidenz, Quellen und institutionelle Grenzen</summary><ul>${(system.counter_evidence || []).map(s=>`<li>${escapeHtml(s)}</li>`).join('')}</ul><p>${escapeHtml(system.source_independence)}</p><p>${escapeHtml(system.institutional_status)}</p></details></div>`;
 }
 
 export function renderImpactPath(analysis = {}, prose = (items) => (items || []).map(escapeHtml).join(" "), visuals = null) {
@@ -542,7 +535,8 @@ export function renderGate(analysis = {}) {
 
 export function renderAtAGlance(story, { formatDate = (value) => String(value || "") } = {}) {
   const analysis = story.analysis || {};
-  const type = ANALYSIS_TYPES[analysis.analysis_type] || ANALYSIS_TYPES.monitoring;
+  const profile = deriveImpactPresentation(story);
+  const type = { label: profile.time_label, note: 'Zeitstatus des bewerteten Wirkpfads; Eintritt und Evidenz werden getrennt ausgewiesen.' };
   const primaryCount = (story.sources || []).filter((source) => source.primary_source).length;
   const claimCount = (story.claims || []).length;
   const evidenceBasis = EVIDENCE_BASIS[analysis.publication_gate?.evidence_basis];

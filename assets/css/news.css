@@ -2672,3 +2672,19 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
 .news-story-visual .wt-consequence--positive { border-color: #80d2a7; }
 .news-story-visual .wt-consequence--negative { border-color: #f0a08b; }
 .news-story-visual .wt-consequence--separate { border-color: #b8c3cc; }
+
+/* MPD 2.0: magnitude is the only bar quantity. Unknown is not zero. */
+.wt-dims--impact .wt-dim__track{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;width:100%;min-width:0}
+.wt-dims--impact .wt-meter--unknown i{background:transparent;border:1px dashed currentColor;opacity:.35}
+.wt-dims--impact .wt-impact-direction{font-weight:700;line-height:1.35}
+.wt-dims--impact .wt-impact-evidence{font-size:.85rem;line-height:1.5}
+.wt-dims--impact .wt-impact-paths{padding-left:1.2rem}
+.wt-dims--impact .wt-impact-path p{margin:.25rem 0 .65rem}
+.wt-dims--impact.wt-dims--compact{display:grid;grid-template-columns:1fr;gap:.55rem}
+.wt-dims--impact.wt-dims--compact .wt-dim{display:grid;grid-template-columns:6.4rem minmax(3rem,1fr) minmax(6.2rem,1.35fr);gap:.55rem;align-items:center;padding:.55rem 0;background:transparent;border:0;min-width:0}
+.wt-dims--impact.wt-dims--compact .wt-dim__head{display:flex;gap:.3rem;margin:0;font-size:.86rem}
+.wt-dims--impact.wt-dims--compact .wt-impact-direction{font-size:.82rem}
+.wt-dims--impact.wt-dims--compact .wt-icon{width:1rem;height:1rem;flex:none}
+.wt-impact-time{font-size:.8rem;opacity:.85;margin:.2rem 0 .6rem}
+.wt-impact-review{font-size:.9rem;margin:1rem 0}
+@media(max-width:380px){.wt-dims--impact.wt-dims--compact .wt-dim{grid-template-columns:5.7rem minmax(2.3rem,1fr) minmax(5.6rem,1.2fr);gap:.35rem}}

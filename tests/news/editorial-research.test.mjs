@@ -24,7 +24,7 @@ const research = () => structuredClone(record.source_snapshot.find(source => sou
 
 test('MFR-Analyse besteht Inhaltsgate; SDGs, Kaskaden und Wissensgrenzen sind enthalten', () => {
   const subject = withEditorialResearch(base(), record);
-  assert.deepEqual(editorialAnalysisValidationErrors(record, subject), []);
+  assert.deepEqual(editorialAnalysisValidationErrors({...record,impact_assessment:undefined}, subject), []);
   const text = record.sections.flatMap(s => s.paragraphs).join(' ');
   for (const term of ['SDG 13.1', 'SDG 9.1', 'SDG 10.2', 'SDG 15', 'SDG 16.6', 'SDG 17.14', 'Kaskaden', 'Nichtkompensation', 'Reverse Merit Order', 'keine robuste Rangfolge', 'eNAP']) assert.ok(text.includes(term), term);
   assert.equal(record.editorial_review.empirical_effect_of_mfr_established, false);

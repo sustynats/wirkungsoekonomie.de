@@ -1,14 +1,16 @@
+import { ensureSemanticReview, importSemanticReviews } from './semantic-review.mjs';
+import { migrateImpactAssessment, impactClaimLedger } from '../impact-assessment.mjs';
 import { canRequestCorrection, prepareCorrection, recoverCorrections } from './corrections.mjs';
-import { bridgeInput, adaptOutput, sameBridgeEvent } from './adapter.mjs';
+import { bridgeInput, adaptOutput, validateOutputBinding, sameBridgeEvent } from './adapter.mjs';
 import { BRIDGE_ROOT, bridgePath, parsePacket, outputSchema, hash } from './contract.mjs';
 import { storyPage } from '../build.mjs';
 
 const newsJob = job => ['new_story','story_update','correction'].includes(job.input.job_type);
 const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
 export class DropboxChatGPTBridgeProvider {
-  constructor({ store, transport, visualProvider, editorialEnabled = false, correctionsEnabled = false, stageOnly = true, maxJobs = 6, maxPending = 48, retentionDays = 30, adapt = adaptOutput }) {
+  constructor({ store, transport, visualProvider, editorialEnabled = false, correctionsEnabled = false, stageOnly = true, maxJobs = 6, maxPending = 48, retentionDays = 30, adapt = adaptOutput, semanticReview = ensureSemanticReview }) {
     if (!Number.isInteger(retentionDays) || retentionDays < 30) throw new Error('BRIDGE_RETENTION_INVALID');
-    Object.assign(this, { store, transport, visualProvider, editorialEnabled, correctionsEnabled, stageOnly, maxJobs, maxPending, retentionDays, adapt });
+    Object.assign(this, { store, transport, visualProvider, editorialEnabled, correctionsEnabled, stageOnly, maxJobs, maxPending, retentionDays, adapt, semanticReview });
   }
   async selectCandidates(candidates) {
     const checkpoints = await this.store.observation('source-checkpoints') || {};
@@ -58,6 +60,7 @@ export class DropboxChatGPTBridgeProvider {
     } catch (error) { await this.failure(job, 'enqueue', error, now); }
   }
   async reconcile(registry, stories, now) {
+    await importSemanticReviews(this, now);
     if (this.correctionsEnabled) await recoverCorrections(this);
     const entries = await this.transport.list('20_OUTPUT_READY');
     const names = new Set(entries.map(e => e.name));
@@ -73,7 +76,12 @@ export class DropboxChatGPTBridgeProvider {
         try {
           const output = parsePacket(await this.transport.read(bridgePath('20_OUTPUT_READY', `${job.input.job_id}.output.json`)), outputSchema);
           if (hash(output) !== accepted.output_hash) throw new Error('BRIDGE_ACCEPTED_OUTPUT_CHANGED');
-          this.adapt(output, job, registry, jobStories, now);
+          const recovered = structuredClone(output);
+          if (job.semantic_review?.output_hash === hash(output) && recovered.wirkungsticker?.analysis) {
+            const raw = recovered.wirkungsticker.analysis;
+            (Array.isArray(raw.analyses) ? raw.analyses[0] : raw).impact_assessment = job.semantic_review.assessment;
+          }
+          this.adapt(recovered, job, registry, jobStories, now);
           results.push(accepted);
         } catch (error) { await this.failure(job, 'import', error, now); }
         continue;
@@ -81,7 +89,26 @@ export class DropboxChatGPTBridgeProvider {
       if (!names.has(`${job.input.job_id}.output.json`)) continue;
       try {
         const output = parsePacket(await this.transport.read(bridgePath('20_OUTPUT_READY', `${job.input.job_id}.output.json`)), outputSchema);
-        const result = this.adapt(output, job, registry, jobStories, now);
+        if (this.adapt === adaptOutput) validateOutputBinding(output, job, jobStories, now);
+        let validatedOutput = output;
+        if (['publish','merge'].includes(output.decision.status)) {
+          const raw = output.wirkungsticker?.analysis;
+          const analysis = Array.isArray(raw?.analyses) ? raw.analyses[0] : raw;
+          const record = { ...job.candidate, title: output.story.headline, source_summary: output.story.detailed_summary, analysis };
+          const proposed = analysis?.impact_assessment || migrateImpactAssessment(analysis || {}, { title: record.title });
+          const gate = await this.semanticReview(this, job, output, record, proposed, now);
+          if (gate.status !== 'ready') continue;
+          validatedOutput = structuredClone(output);
+          const approved = validatedOutput.wirkungsticker?.analysis;
+          if (approved) (Array.isArray(approved.analyses) ? approved.analyses[0] : approved).impact_assessment = gate.assessment;
+        }
+        const result = this.adapt(validatedOutput, job, registry, jobStories, now);
+        if (result.record?.impact_assessment) {
+          result.record.impact_assessment.publication_status = 'ready';
+          result.record.impact_claims = impactClaimLedger(result.record.impact_assessment, result.record.sources, now);
+        }
+        if (result.record?.bridge_import) result.record.bridge_import.output_hash = hash(output);
+        if (result.record && job.semantic_review) result.record.impact_semantic_review = { review_job_id: job.semantic_review.review_job_id, reviewed_at: job.semantic_review.reviewed_at, status: 'ready' };
         const staged = this.stageOnly || job.input.test_only;
         let visual = null;
         if (result.record && this.visualProvider) {
@@ -109,7 +136,8 @@ export class DropboxChatGPTBridgeProvider {
       if (article && !item.staged) {
         if (!committed) continue;
         const persisted = item.editorial ? editorials.find(s => s.analysis_id === article.analysis_id) : stories.find(s => s.story_id === article.story_id);
-        if (persisted?.bridge_import?.job_id !== job.input.job_id || persisted.bridge_import.output_hash !== item.output_hash) continue;
+        const receipt = item.impact ? persisted?.impact_import : persisted?.bridge_import;
+        if (receipt?.job_id !== job.input.job_id || receipt.output_hash !== item.output_hash) continue;
       }
       const ack = job.ack || { schema_version: '1.0', job_id: job.input.job_id,
         status: item.staged ? 'staged' : article ? 'imported' : item.decision,

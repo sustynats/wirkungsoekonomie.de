@@ -13,6 +13,14 @@ export function assertApiProcessing(env = process.env) {
   });
 }
 
+// The old automatic API publisher has no independent, persisted semantic
+// review transport. Do not reopen it by changing an environment variable.
+export function assertAutomaticImpactTransport(transportProvided = false) {
+  if (!transportProvided) throw Object.assign(new Error('IMPACT_API_REVIEW_TRANSPORT_UNAVAILABLE'), {
+    requestAttempts: 0, providerNotCalled: true, localRefusal: true,
+  });
+}
+
 export function visualGenerationProvider(env = process.env) {
   const mode = processingMode(env);
   const provider = env.VISUAL_GENERATION_PROVIDER || (mode === 'api' ? 'higgsfield' : mode === 'disabled' ? 'disabled' : 'chatgpt_bridge');
