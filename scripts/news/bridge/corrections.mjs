@@ -1,7 +1,7 @@
 import { bridgePath, hash } from './contract.mjs';
 
 export const CORRECTION_LIMIT = 2;
-const correctable = /^(?:BRIDGE_SCHEMA_INVALID(?::|$)|BRIDGE_SUMMARY_MISMATCH$|BRIDGE_PRODUCTION_ANALYSIS_REQUIRED$|BRIDGE_PUBLICATION_GATE_FAILED$|BRIDGE_MERGE_EVENT_MISMATCH$|BRIDGE_CORRECTION_NOTE_REQUIRED$)/;
+const correctable = /^(?:BRIDGE_SCHEMA_INVALID(?::|$)|BRIDGE_SUMMARY_MISMATCH$|BRIDGE_PRODUCTION_ANALYSIS_REQUIRED$|BRIDGE_PUBLICATION_GATE_FAILED$|BRIDGE_EDITORIAL_PUBLICATION_GATE_FAILED$|BRIDGE_MERGE_EVENT_MISMATCH$|BRIDGE_CORRECTION_NOTE_REQUIRED$)/;
 export function canRequestCorrection(job, stage, error) {
   return stage === 'import' && !job.input.test_only && !job.ack && !job.accepted
     && correctable.test(error.error_code) && (job.corrections?.length || 0) < CORRECTION_LIMIT;

@@ -2,7 +2,7 @@
 // Event properties are intentionally independent of party, person and outlet names.
 import { evidenceGroups } from './newsroom.mjs';
 
-export const EVENT_RELEVANCE_VERSION = '2026-09-09.1';
+export const EVENT_RELEVANCE_VERSION = '2026-09-10.2';
 export const EVENT_EDITORIAL_POLICY_VERSION = '2026-09-09.2';
 export const COVERAGE_CATEGORIES = ['politics_de', 'economy', 'society', 'environment', 'health', 'science', 'technology', 'europe', 'international', 'security'];
 export const normalizeEventText = text => String(text || '').normalize('NFKD').replace(/\p{M}/gu, '').replace(/ß/g, 'ss').toLowerCase();
@@ -141,10 +141,12 @@ export function balanceEventQueue(candidates, coverage = {}) {
     let best = 0, bestValue = -Infinity;
     const highestTier = Math.max(...remaining.map(tier));
     remaining.forEach((candidate, index) => {
-      if (tier(candidate) !== highestTier) return;
+      // TOP retains absolute precedence. Ordinary HIGH/NORMAL work is balanced
+      // softly, so sparse reporting in an uncovered field cannot starve forever.
+      if (highestTier === 3 && tier(candidate) !== 3 || highestTier > 0 && tier(candidate) === 0) return;
       const category = candidate.preanalysis?.event_score?.category || 'other';
       const value = Number(candidate.selection_base_priority ?? candidate.preanalysis?.internal_relevance_score ?? 0)
-        + (counts[category] ? 0 : 16) - Math.min(36, (counts[category] || 0) * 8);
+        + tier(candidate) * 24 + (counts[category] ? 0 : 16) - Math.min(36, (counts[category] || 0) * 8);
       if (value > bestValue) { best = index; bestValue = value; }
     });
     const [candidate] = remaining.splice(best, 1);

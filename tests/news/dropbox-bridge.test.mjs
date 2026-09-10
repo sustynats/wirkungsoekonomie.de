@@ -383,3 +383,28 @@ test('Dropbox archive skips missing assets and reuses confirmed folders without 
   assert.equal(files.get(output),'different output');
   assert.ok([...files.entries()].some(([p,v])=>p.includes('/40_ARCHIVE/')&&v==='output'));
 });
+
+test('private test imports receive their immutable draft without adding it to canonical stories',async t=>{
+  bridge3Env(t);const stories=[];
+  const {provider,store,transport}=setup(t,{stageOnly:false,adapt:(packet,job,registry,targets)=>{
+    assert.equal(targets.length,1);assert.equal(targets[0].story_id,job.candidate.story_id);return {decision:'hold',record:null};
+  }});
+  await provider.enqueue([candidate()],stories,now,{testOnly:true});const job=store.all()[0];
+  transport.files.set(bridgePath('20_OUTPUT_READY',`${job.input.job_id}.output.json`),JSON.stringify(output(job.input)));
+  const [result]=await provider.reconcile({},stories,later);assert.equal(result.staged,true);assert.deepEqual(stories,[]);
+  await provider.finalize(stories,later);assert.equal(store.get(job.input.job_id).ack.status,'staged');
+});
+
+test('bridge pending drafts and updates retain source metadata but never persist transient article text',async()=>{
+  const {pendingRecord}=await import('../../scripts/news/run.mjs');
+  const draft=candidate();draft.sources[0].article_excerpt='Private research excerpt';draft.sources[0].evidence_segments=[{text:'Private segment'}];
+  for(const published of [false,true]){
+    const item={...draft,...(published?{existing_story:{...draft,published:true,sources:[{url:'https://example.org/original'}],analysis:{summary:'Existing publication'}}}:{})};
+    const before=structuredClone(item),result=pendingRecord(item,'BRIDGE_PENDING',now);
+    const sources=published?result.pending_update.sources:result.sources;
+    assert.equal(sources[0].url,draft.sources[0].url);assert.equal(sources[0].content_hash,draft.sources[0].content_hash);
+    assert.equal(Object.hasOwn(sources[0],'article_excerpt'),false);assert.equal(Object.hasOwn(sources[0],'evidence_segments'),false);
+    assert.deepEqual(item,before);
+    if(published)assert.deepEqual(result.analysis,item.existing_story.analysis);
+  }
+});

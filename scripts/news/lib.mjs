@@ -24,6 +24,7 @@ const STOPWORDS = new Set([
 ]);
 
 const TOPIC_RULES = [
+  ["Technologie", /\b(?:technolog|smartphone|[a-z]*phone|computer|prozessor|halbleiter|chiparchitektur|software|robotik|quantencomputer|batterietechn|raumfahrt|satellit)\w*/i],
   ["Klima", /\b(klima|co2|treibhaus|emission|industrieemission|erneuerbar|biodivers|umwelt|naturschutz|wasser|abfall|ressourcen)\w*/i],
   ["Energie", /\b(energie|strom|gas|wärme|waerme|wasserstoff|netz|kraftwerk|photovoltaik|windkraft)\w*/i],
   ["Arbeit", /\b(arbeit|beschäftig|beschaeftig|lohn|tarif|arbeitslos|fachkräft|fachkraeft|ausbildung)\w*/i],

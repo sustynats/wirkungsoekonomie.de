@@ -169,13 +169,36 @@ function editorialSubjects(activeStories) {
   return subjects;
 }
 
+
+export function prepareAutomaticEditorialRecord({ story, assessment, analysis, existing, now, result }) {
+  const publishedAt = existing?.published_at || now;
+  const version = Number(existing?.version || 0) + 1;
+  const analysisId = existing?.analysis_id || `woek-analysis-${sha256(story.story_id).slice(0, 12)}`;
+  const record = {
+    analysis_id: analysisId, story_id: story.story_id,
+    related_story_ids: story.case_file?.members?.map((member) => member.story_id) || story.editorial_subject?.member_story_ids || [story.story_id], related_case_id: story.case_file?.case_id || null,
+    slug: existing?.slug || editorialSlug(analysis.title, story.story_id), status: "published",
+    author: { name: "Natalie Weber", role: "Methodik & redaktionelle Verantwortung", image: "/assets/img/people/natalie-weber-woek-analyse.jpg" },
+    transparency_note: "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+    method_version: EDITORIAL_ANALYSIS_VERSION, source_fingerprint: assessment.fingerprint,
+    research_fingerprint: assessment.research_fingerprint,
+    candidate_score: assessment.editorial_analysis_score, analysis_gain_score: assessment.analysis_gain,
+    evidence_gate: assessment.evidence_gate, published_at: publishedAt, updated_at: now, version,
+    ...analysis,
+    reading_time_minutes: Math.max(5, Math.ceil([analysis.executive_finding || "", ...(analysis.sections || []).flatMap(section => [...(section.paragraphs || []), ...(section.visual?.items || []).map(item => `${item.title} ${item.text}`)]), ...(analysis.author_perspective?.paragraphs || [])].join(" ").split(/\s+/).filter(Boolean).length / 210)),
+    source_snapshot: editorialSources(story).map((source) => ({ source_id: editorialSourceRef(source), registry_source_id: source.registry_source_id || source.source_id, publisher_id: source.publisher_id || null, publisher: source.publisher, title: source.title, url: source.url, published_at: source.published_at, primary_source: Boolean(source.primary_source), ...(source.editorial_review ? { source_item_id: editorialSourceRef(source), summary: source.summary, canonical_domain: source.canonical_domain, source_function: source.source_function, editorial_review: source.editorial_review } : {}) })),
+    versions: [...(existing?.versions || []), { version, analyzed_at: now, source_fingerprint: assessment.fingerprint, title: analysis.title, provider: result.provider, model: result.model, ...(result.batch_key ? { batch_key: result.batch_key, processing_mode: 'batch' } : {}), claim_ledger: analysis.claim_ledger, ...(existing ? { previous_content: editorialContentSnapshot(existing) } : {}) }],
+  };
+  return record;
+}
+
 export async function runEditorialAnalyses({
   root = DEFAULT_ROOT, limit = 1, execute = false, bootstrap = false, now = new Date().toISOString(),
   callAiImpl = callWoekAi, build = buildNewsSite,
   registry = null,
   batchEnabled = process.env.WOEK_NEWS_BATCH_ENABLED === 'true', batchFetchImpl,
   apiUrl = process.env.WOEK_NEWS_API_URL, authToken = process.env.WOEK_NEWS_ANALYSIS_TOKEN,
-  backgroundOnly = false, requestedStoryIds = [],
+  backgroundOnly = false, requestedStoryIds = [], bridgePlan = false,
 } = {}) {
   if (!Number.isInteger(limit) || limit < 1 || limit > 20) throw new Error("EDITORIAL_ANALYSIS_LIMIT_INVALID");
   if (!Array.isArray(requestedStoryIds) || requestedStoryIds.length > 20 || requestedStoryIds.some(id => !/^wt-[a-z0-9]+$/.test(id))) throw new Error('EDITORIAL_REQUEST_INVALID');
@@ -206,7 +229,7 @@ export async function runEditorialAnalyses({
   const baseSubjects = [...editorialSubjects(activeStories.filter(story => !requests.has(story.story_id))), ...activeStories.filter(story => requests.has(story.story_id))].map(story => ({
     ...story, source_integrity: sourceIntegrityForStory(story, newsRegistry, [], now),
   }));
-  const researchExpansion = execute ? enrichEditorialResearchSubjects(baseSubjects, newsroom, newsRegistry, now) : { subjects: baseSubjects, added: 0 };
+  const researchExpansion = execute || bridgePlan ? enrichEditorialResearchSubjects(baseSubjects, newsroom, newsRegistry, now) : { subjects: baseSubjects, added: 0 };
   // Revalidate the final combined source set locally, including legacy records
   // without a stored integrity result. No paid analysis or article fetch required.
   const subjects = researchExpansion.subjects.map((story) => withEditorialResearch({
@@ -253,6 +276,7 @@ export async function runEditorialAnalyses({
     requested: [],
     publication_deferred: false, failed: [], candidates: candidateRows,
   };
+  if (bridgePlan) return { ...report, bridge_candidates: runnable, existing_analyses: store.analyses || [] };
   if (!execute) return report;
   for (const { story, assessment } of assessed) {
     const request = requests.get(story.story_id);
@@ -358,24 +382,8 @@ export async function runEditorialAnalyses({
         if (qualityAttempt === 0) { report.quality_retries += 1; continue; }
         throw new Error(`EDITORIAL_QUALITY:${errors.join(",")}`);
       }
-      const publishedAt = existing?.published_at || now;
-      const version = Number(existing?.version || 0) + 1;
-      const analysisId = existing?.analysis_id || `woek-analysis-${sha256(story.story_id).slice(0, 12)}`;
-      const record = {
-        analysis_id: analysisId, story_id: story.story_id,
-        related_story_ids: story.case_file?.members?.map((member) => member.story_id) || story.editorial_subject?.member_story_ids || [story.story_id], related_case_id: story.case_file?.case_id || null,
-        slug: existing?.slug || editorialSlug(analysis.title, story.story_id), status: "published",
-        author: { name: "Natalie Weber", role: "Methodik & redaktionelle Verantwortung", image: "/assets/img/people/natalie-weber-woek-analyse.jpg" },
-        transparency_note: "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
-        method_version: EDITORIAL_ANALYSIS_VERSION, source_fingerprint: assessment.fingerprint,
-        research_fingerprint: assessment.research_fingerprint,
-        candidate_score: assessment.editorial_analysis_score, analysis_gain_score: assessment.analysis_gain,
-        evidence_gate: assessment.evidence_gate, published_at: publishedAt, updated_at: now, version,
-        ...analysis,
-        reading_time_minutes: Math.max(5, Math.ceil([analysis.executive_finding || "", ...(analysis.sections || []).flatMap(section => [...(section.paragraphs || []), ...(section.visual?.items || []).map(item => `${item.title} ${item.text}`)]), ...(analysis.author_perspective?.paragraphs || [])].join(" ").split(/\s+/).filter(Boolean).length / 210)),
-        source_snapshot: editorialSources(story).map((source) => ({ source_id: editorialSourceRef(source), registry_source_id: source.registry_source_id || source.source_id, publisher_id: source.publisher_id || null, publisher: source.publisher, title: source.title, url: source.url, published_at: source.published_at, primary_source: Boolean(source.primary_source), ...(source.editorial_review ? { source_item_id: editorialSourceRef(source), summary: source.summary, canonical_domain: source.canonical_domain, source_function: source.source_function, editorial_review: source.editorial_review } : {}) })),
-        versions: [...(existing?.versions || []), { version, analyzed_at: now, source_fingerprint: assessment.fingerprint, title: analysis.title, provider: result.provider, model: result.model, ...(result.batch_key ? { batch_key: result.batch_key, processing_mode: 'batch' } : {}), claim_ledger: analysis.claim_ledger, ...(existing ? { previous_content: editorialContentSnapshot(existing) } : {}) }],
-      };
+      const record = prepareAutomaticEditorialRecord({story,assessment,analysis,existing,now,result});
+      const analysisId = record.analysis_id;
       const index = (store.analyses || []).findIndex((item) => item.analysis_id === analysisId);
       delete store.retry_state[story.story_id];
       if (store.editorial_requests[story.story_id]) {
