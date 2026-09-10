@@ -5,7 +5,7 @@ import { timingSafeEqual } from 'node:crypto';
 import { BridgeStore } from './store.mjs';
 import { DropboxTransport, loadDropboxCredentials } from './dropbox.mjs';
 import { JOB_ID } from './contract.mjs';
-import { outputStatus } from './status.mjs';
+import { outputStatus, monitorStatus } from './status.mjs';
 
 const directory = process.env.WOEK_NEWS_BRIDGE_DIRECTORY;
 if (!directory || !path.isAbsolute(directory)) throw new Error('BRIDGE_PRIVATE_DIRECTORY_REQUIRED');
@@ -23,7 +23,7 @@ async function ownerCompleted(owner) {
   return run.status === 'completed';
 }
 const operations = new Set(['store.acquire','store.release','store.get','store.put','store.all','store.observe','store.observation',
-  'dropbox.list','dropbox.read','dropbox.readBinary','dropbox.metadata','dropbox.move','dropbox.writeAtomic','dropbox.archive','bridge.status']);
+  'dropbox.list','dropbox.read','dropbox.readBinary','dropbox.metadata','dropbox.move','dropbox.writeAtomic','dropbox.archive','bridge.status','bridge.monitor']);
 const server = http.createServer(async (req, res) => {
   const finish = (status, value) => { res.writeHead(status, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(value)); };
   const supplied = Buffer.from(req.headers.authorization || ''); const expected = Buffer.from(`Bearer ${secret}`);
@@ -40,6 +40,7 @@ const server = http.createServer(async (req, res) => {
     const { op, args } = JSON.parse(Buffer.concat(chunks));
     if (!operations.has(op) || !Array.isArray(args) || args.length > 4) throw new Error('BRIDGE_OPERATION_INVALID');
     if (op === 'bridge.status') { finish(200, { ok: true, result: await outputStatus(store, transport, new Date().toISOString()) }); return; }
+    if (op === 'bridge.monitor') { finish(200, { ok: true, result: await monitorStatus(store, new Date().toISOString()) }); return; }
     if (!validOwner(owner)) throw new Error('BRIDGE_OWNER_INVALID');
     if (op === 'store.observe' && String(args[0]).startsWith('remote-owner')) throw new Error('BRIDGE_RESERVED_OBSERVATION');
     if (busy.has(lane)) throw new Error('BRIDGE_OPERATION_BUSY');

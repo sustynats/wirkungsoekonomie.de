@@ -77,6 +77,30 @@ test('transient outage stays quiet; confirmed outage and recovery each notify on
 test('no new articles is not a pipeline failure', () => {
   assert.ok(evaluateChecks(fixture(), now).checks.every(c => c.ok));
 });
+test('bridge pending ignores deliberately stopped API and old image failures, retires alarms without recovery spam',()=>{
+  const d=fixture();d.processing_mode='dropbox_chatgpt_bridge';d.discovery_enabled=false;
+  d.report.ai_error='AI_PROVIDER_ERROR:503';d.report.budget_blocked=true;d.report.completed_at='2026-09-03T00:00:00Z';
+  d.stories=[{published:true,published_at:now,last_updated:now,title_image:{fallback_reason:'HIGGSFIELD_PROVIDER_UNAVAILABLE'}}];
+  d.bridge={reachable:true,poll_at:now,status:'PROCESSING_PENDING',oldest_open_minutes:20,errors:0};
+  const {checks,summary}=evaluateChecks(d,now);
+  assert.ok(checks.filter(c=>c.id.startsWith('bridge-')).every(c=>c.ok));
+  const previous={schema:1,incidents:{provider:{active:true,firstSeen:now},images:{active:true,firstSeen:now},run:{active:true,firstSeen:now}},outbox:[],dailyDate:'2026-09-04'};
+  const next=advanceState(previous,checks,summary,now);assert.deepEqual(next.outbox,[]);assert.deepEqual(next.incidents,{});
+  assert.match(dailyReport(summary,checks),/absichtlich abgeschaltet/);
+});
+test('bridge incidents still detect real unavailability, stale work and cost violations, once per incident',()=>{
+  const d=fixture();d.processing_mode='dropbox_chatgpt_bridge';d.report.processing_mode='dropbox_chatgpt_bridge';
+  d.bridge={reachable:true,poll_at:now,discovery_last_success:now,status:'PROCESSING_PENDING',oldest_open_minutes:121,output_wait_minutes:11,errors:1};
+  const {checks,summary}=evaluateChecks(d,now);
+  for(const id of ['bridge-queue','bridge-import','bridge-errors'])assert.equal(checks.find(c=>c.id===id).ok,false);
+  let state=advanceState({schema:1,incidents:{},outbox:[],dailyDate:'2026-09-04'},checks,summary,now);
+  state=advanceState(state,checks,summary,'2026-09-04T06:15:00Z');const count=state.outbox.length;
+  assert.equal(count,3);assert.equal(advanceState(state,checks,summary,'2026-09-04T06:30:00Z').outbox.length,count);
+  d.report.ai_calls=1;assert.equal(evaluateChecks(d,now).checks.find(c=>c.id==='bridge-cost').ok,false);
+  d.bridge={reachable:false};const missing=evaluateChecks(d,now).checks;
+  assert.equal(missing.find(c=>c.id==='bridge-access').ok,false);
+  assert.equal(missing.find(c=>c.id==='bridge-discovery').ok,true,'no cascade of derivative alarms');
+});
 test('fresh coverage gaps are distinct editorial alerts, not provider outages or stale alarms',()=>{
   const d=fixture();d.report.event_coverage={checked_at:now,counts:{clustered_major:4,published:1,potential_missed:3},alerts:[{code:'CATEGORY_COVERAGE_GAP',severity:'warning',category:'economy'}]};
   const result=evaluateChecks(d,now);

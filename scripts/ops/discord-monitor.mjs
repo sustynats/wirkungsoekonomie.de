@@ -6,6 +6,7 @@ import { buildCaseFiles } from '../news/case-files.mjs';
 import { reportOperationallyHealthy, sourceCoverageDegraded } from '../news/check-run-health.mjs';
 import { summarizeSourceFunnel } from '../news/source-funnel.mjs';
 import { operatingCostSummary, isImmediateNewsCostRun, usageCostStartedAt } from '../news/operating-cost.mjs';
+import { bridgeSession } from '../news/bridge/remote.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const MINUTE = 60_000;
@@ -166,6 +167,7 @@ export function aiFailureReason(report = {}) {
 
 export function evaluateChecks(data, now) {
   const summary = summarizeNews(data, now);
+  const bridgeMode = data.processing_mode === 'dropbox_chatgpt_bridge' || data.report?.processing_mode === 'dropbox_chatgpt_bridge';
   const checks = (data.probes || []).map(p => ({ id: p.id, name: p.name, ok: p.ok, reason: p.ok ? 'erreichbar' : p.error, immediate: false }));
   const runOk = summary.runAgeMinutes >= 0 && summary.runAgeMinutes <= 45 && reportOperationallyHealthy(data.report);
   checks.push({ id: 'run', name: 'Automatische Nachrichtenläufe', ok: runOk, reason: runOk ? 'letzter Lauf betrieblich gesund' : summary.runAgeMinutes > 45 ? 'Seit über 45 Minuten kein abgeschlossener Laufbericht.' : 'Letzter Lauf meldet einen Betriebsfehler oder einen ungültigen Zeitstempel.', immediate: true });
@@ -190,6 +192,24 @@ export function evaluateChecks(data, now) {
   checks.push({ id: 'publication', name: 'Veröffentlichung', ok: data.liveFeed !== null && summary.pendingPublication === 0, reason: data.liveFeed === null ? 'Live-Feed nicht lesbar.' : `${summary.pendingPublication} sichtbare Lagen oder Einzelakten seit über 45 Minuten nicht im Live-Feed.`, immediate: false });
   const budgetBlocked = Boolean(data.report?.budget_blocked || data.report?.budget_stage >= 3 || data.report?.budget_policy?.status !== 'ok' || summary.usdMonth >= Number(data.report?.monthly_budget_usd));
   checks.push({ id: 'budget', name: 'KI-Monatsbudget', ok: !budgetBlocked, reason: budgetBlocked ? 'Monatslimit oder Wechselkurs-Sicherheitsgate hält neue KI-Anfragen an; die Warteschlange bleibt erhalten.' : 'innerhalb der technischen Budgetgrenze', immediate: false });
+  if (bridgeMode) {
+    summary.processing_mode = 'dropbox_chatgpt_bridge'; summary.bridge = data.bridge;
+    // Retire obsolete API incidents silently, including pending old notifications.
+    for (const check of checks) if (['run','provider','queue','publication-flow','images','sources','editorial-coverage','budget'].includes(check.id)) Object.assign(check,{ok:true,retired:true});
+    const b=data.bridge || {}, paused=data.discovery_enabled===false;
+    summary.queue={total:Number(b.open_count||0),capacity:0,technical:Number(b.errors||0),editorial:0,status:b.status||'unbekannt'};
+    summary.runCompleted=b.poll_at||null;
+    checks.push(
+      {id:'bridge-access',name:'Dropbox-Bridge',ok:b.reachable===true,reason:'Der private Oracle-Bridge-Dienst ist nicht erreichbar.',immediate:false},
+      {id:'bridge-poll',name:'Dropbox-Ausgabeprüfung',ok:b.reachable!==true || age(b.poll_at,now)<=15 && !(b.poll_error?.consecutive_failures>=2),reason:'Seit über 15 Minuten keine erfolgreiche Ausgabeprüfung oder wiederholter Dropbox-Verbindungsfehler.',immediate:false},
+      {id:'bridge-discovery',name:'Bridge-Quellenlauf',ok:paused || b.reachable!==true || age(b.discovery_last_success,now)<=120,reason:'Seit über zwei Stunden kein erfolgreicher Bridge-Quellenlauf.',immediate:false},
+      {id:'bridge-sources',name:'Bridge-Quellenabdeckung',ok:paused || !sourceCoverageDegraded({...b.discovery,sources_scheduled:Number(b.discovery?.source_successes||0)+Number(b.discovery?.source_failures||0)}),reason:'Der aktuelle Discovery-Lauf meldet erhebliche Ausfälle beim Quellenabruf.',immediate:false},
+      {id:'bridge-queue',name:'Bridge-Verarbeitung',ok:b.reachable!==true || Number(b.oldest_open_minutes||0)<=120,reason:'Ein Bridge-Auftrag wartet seit über zwei Stunden. Fehlender Output nach 10 oder 20 Minuten ist dagegen normales Warten.',immediate:false},
+      {id:'bridge-import',name:'Übernahme fertiger Meldungen',ok:b.reachable!==true || Number(b.output_wait_minutes||0)<=10,reason:'Ein bereits erkanntes Ergebnis wartet seit über zehn Minuten auf Übernahme.',immediate:false},
+      {id:'bridge-errors',name:'Bridge-Quarantäne',ok:!Number(b.errors||0),reason:`${Number(b.errors||0)} Bridge-Auftrag/Aufträge benötigen Prüfung. Keine erneute automatische KI-Verarbeitung.`,immediate:false},
+      {id:'bridge-cost',name:'Bridge-Kostenschutz',ok:data.report?.processing_mode!=='dropbox_chatgpt_bridge' || Number(data.report.ai_calls||0)===0,reason:'Ein Bridge-Lauf meldet entgegen der Sperre einen KI-API-Aufruf.',immediate:true}
+    );
+  }
   return { checks, summary };
 }
 
@@ -201,6 +221,7 @@ export function dailyReport(summary, checks) {
   const unit = operating?.news?.cost_per_first_publication_eur;
   return [
     `WÖk Tagesbericht · ${summary.today} · Europe/Berlin`,
+    ...(summary.processing_mode==='dropbox_chatgpt_bridge' ? ['Betrieb: ChatGPT-Dropbox-Bridge. API und Higgsfield absichtlich abgeschaltet; normale Wartephasen bleiben ohne Störungsmeldung.',`Bridge: ${summary.bridge?.status||'Status nicht verfügbar'}; Quellenlauf ${summary.bridge?.discovery_last_success||'noch nicht gestartet'}.`] : []),
     ...checks.filter(c => TARGETS.some(t => t.id === c.id)).map(c => `${c.ok ? '✓' : '⚠'} ${c.name}: ${c.ok ? 'erreichbar' : c.reason}`),
     `Ticker: ${summary.live ?? 'nicht verfügbar'} live · ${summary.active} aktuelle Lagen und Einzelakten aus ${summary.underlyingActive} aktiven Wirkungsakten${summary.caseCount ? ` · ${summary.caseCount} ${summary.caseCount === 1 ? 'Lageakte' : 'Lageakten'}` : ''}.`,
     `Erstveröffentlichungen gestern (${summary.yesterday}): ${summary.newYesterday}; heute bisher: ${summary.newToday} (inkl. später archivierter/zusammengeführter Akten).`,
@@ -237,6 +258,13 @@ export function advanceState(previous, checks, summary, now, { reportNow = false
   const stamp = new Date(now).toISOString();
   for (const check of checks) {
     let incident = state.incidents[check.id];
+    if (check.retired) {
+      if (incident) {
+        const obsolete=new Set(['failed','recovered'].map(kind=>eventId(`${check.id}:${incident.firstSeen}:${kind}`)));
+        state.outbox=state.outbox.filter(event=>!obsolete.has(event.id));
+      }
+      delete state.incidents[check.id]; continue;
+    }
     if (check.ok) {
       if (incident?.active) enqueue(state, `${check.id}:${incident.firstSeen}:recovered`, `✓ WÖk-Störung behoben\n${check.name}\nPrüfung: ${stamp}`);
       delete state.incidents[check.id];
@@ -322,6 +350,12 @@ export async function main() {
     if (response.ok) { const body = await response.json(); if (Array.isArray(body.items)) liveFeed = body; }
   } catch { /* Evaluated explicitly as unavailable, never a zero count. */ }
   const data = { probes, liveFeed, report: read('reports/wirkungsticker-latest-run.json'), usage: read('data/news/usage.json'), stories: read('data/news/stories.json').stories };
+  data.processing_mode=process.env.WIRKUNGSTICKER_PROCESSING_MODE || data.report.processing_mode;
+  data.discovery_enabled=process.env.WOEK_NEWS_BRIDGE_DISCOVERY_ENABLED!=='false';
+  if(data.processing_mode==='dropbox_chatgpt_bridge') {
+    try { data.bridge=await bridgeSession().monitor(); }
+    catch { data.bridge={reachable:false}; }
+  }
   const { checks, summary } = evaluateChecks(data, now);
   if (dryRun) { console.log(JSON.stringify({ checks, summary, report: dailyReport(summary, checks) }, null, 2)); return; }
   if (!process.env.GH_TOKEN || !process.env.WOEK_MONITOR_DISCORD_BOT_TOKEN || !/^\d{15,22}$/.test(process.env.WOEK_MONITOR_DISCORD_USER_ID || '')) throw new Error('MONITOR_DM_CONFIGURATION_MISSING');
