@@ -7,6 +7,7 @@ import { inspectImage, downloadImage } from "./image-file.mjs";
 import { renderTitleImageFromStory, storyToTitleInput, SIZES } from "./index.mjs";
 import { rasterize } from "./rasterize.mjs";
 import { assertHiggsfieldProcessing, visualGenerationProvider } from "../processing-mode.mjs";
+import { withRequestDeadline } from "../request-deadline.mjs";
 
 const exec = promisify(execFile);
 const REPO = "sustynats/wirkungsoekonomie.de";
@@ -35,12 +36,13 @@ export function titleFingerprint(story, mode, sourceHash = null) {
   const input = storyToTitleInput(story, { mode, image: null });
   return digest(JSON.stringify({ input, sourceHash, template: C.template_version }));
 }
-export async function generateEditorialVisual(story, { endpoint = process.env.WOEK_NEWS_VISUAL_API_URL, token = process.env.WOEK_NEWS_ANALYSIS_TOKEN, fetchImpl = fetch } = {}) {
+export async function generateEditorialVisual(story, { endpoint = process.env.WOEK_NEWS_VISUAL_API_URL, token = process.env.WOEK_NEWS_ANALYSIS_TOKEN, fetchImpl = fetch, timeoutMs = C.generation_timeout_ms + 60000 } = {}) {
   assertHiggsfieldProcessing();
   if (!endpoint || !token) throw imageError("HIGGSFIELD_NOT_CONFIGURED");
   const url = new URL(endpoint);
   if (url.protocol !== "https:" || url.username || url.password) throw imageError("HIGGSFIELD_ENDPOINT_INVALID");
-  const response = await fetchImpl(url, { method: "POST", redirect: "error", headers: { "content-type": "application/json", authorization: `Bearer ${token}` }, signal: AbortSignal.timeout(C.generation_timeout_ms + 60000), body: JSON.stringify({ ...(story.visual_brief ? { visual_brief: story.visual_brief } : {}), story_id: story.story_id, title: story.title, source_summary: story.source_summary, topic: story.topic, claims: (story.claims || []).slice(0,10).map((c) => ({ claim: c.claim })), ...(story.refresh_prompt_version ? { refresh_prompt_version: story.refresh_prompt_version } : {}) }) });
+  return withRequestDeadline(async signal => {
+  const response = await fetchImpl(url, { method: "POST", redirect: "error", headers: { "content-type": "application/json", authorization: `Bearer ${token}` }, signal, body: JSON.stringify({ ...(story.visual_brief ? { visual_brief: story.visual_brief } : {}), story_id: story.story_id, title: story.title, source_summary: story.source_summary, topic: story.topic, claims: (story.claims || []).slice(0,10).map((c) => ({ claim: c.claim })), ...(story.refresh_prompt_version ? { refresh_prompt_version: story.refresh_prompt_version } : {}) }) });
   if (!response.ok) throw imageError(response.status === 429 ? "HIGGSFIELD_RATE_LIMIT" : response.status === 403 ? "HIGGSFIELD_AUTH_UNAVAILABLE" : "HIGGSFIELD_PROVIDER_UNAVAILABLE");
   const chunks = []; let length = 0;
   for await (const chunk of response.body) {
@@ -55,6 +57,7 @@ export async function generateEditorialVisual(story, { endpoint = process.env.WO
   const info = inspectImage(bytes);
   if (Math.abs(info.width / info.height - 16 / 9) > 0.025 || info.sha256 !== result.sha256 || result.model !== C.model) throw imageError("HIGGSFIELD_ASSET_MISMATCH");
   return { ...info, bytes, model: result.model, job_id: result.job_id, generated_at: result.generated_at, reused: Boolean(result.reused), prompt_version: result.prompt_version };
+  }, {timeoutMs, code:'HIGGSFIELD_REQUEST_TIMEOUT'});
 }
 
 export class HiggsfieldVisualProvider {
