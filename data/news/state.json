@@ -65773,7 +65773,10 @@
     }
   },
   "pending_story_ids": [
+    "wt-d62a52527174a1ca",
+    "wt-8a573078322819e3",
     "wt-b9aa6e7e11987ec8",
+    "wt-32b3751a955beeba",
     "wt-b95ed05b8140df75",
     "wt-ca323b86608fd93d",
     "wt-08907e9840b1f1f6",
@@ -65815,6 +65818,7 @@
     "wt-25d88bfc99000a1a",
     "wt-577270be8984eb8d",
     "wt-47938851f852eb83",
+    "wt-e45639ac6d92805f",
     "wt-6cca6ba233753ac1",
     "wt-7a0664564e4eecc8",
     "wt-c3729b129aec8fb7",
@@ -65822,13 +65826,13 @@
     "wt-deb6e1808a095fb6",
     "wt-979c02c79b75f2c3",
     "wt-768f48fef314ee17",
-    "wt-d62a52527174a1ca",
     "wt-63cb95e544d260ce",
     "wt-17c75be3d3a4bb8e",
     "wt-c46eaf3fa3e1d9ce",
     "wt-3bc0d21b0899d8f4",
     "wt-6574973fa0559ef2",
     "wt-54216700f6a13d52",
+    "wt-4da3b957a06bf4f9",
     "wt-cfbf36a55d6c66e7",
     "wt-7ce75760db26f94a",
     "wt-a13ae4886acdaa7b",
@@ -65979,14 +65983,10 @@
     "wt-a5874ae28ed5533f",
     "wt-293fa4edfc2b5a5d",
     "wt-990631d7dc3586cb",
-    "wt-c15cb7a9f3b72c35",
-    "wt-32b3751a955beeba",
-    "wt-4da3b957a06bf4f9",
-    "wt-e45639ac6d92805f",
-    "wt-8a573078322819e3"
+    "wt-c15cb7a9f3b72c35"
   ],
   "relevance_filter_version": "2026-09-09.1",
-  "last_attempted_run": "2026-09-10T06:38:01.275Z",
+  "last_attempted_run": "2026-09-10T06:52:55.072Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1652,
@@ -66682,7 +66682,8 @@
       "prompt_hash": "996a507569e0d2841760ee6a1dd3d6c65a30db4a90a89dd22ceeb5b434f3e1bb",
       "attempt": 0,
       "created_at": "2026-09-10T06:46:08.052Z",
-      "status": "submission_unknown"
+      "status": "submission_unknown",
+      "next_poll_at": "2026-09-10T07:09:14.661Z"
     },
     "697104e1d48cb17e6bf9bc875d4013ab219e1329bc21c6f97fdf532241b81ded": {
       "key": "697104e1d48cb17e6bf9bc875d4013ab219e1329bc21c6f97fdf532241b81ded",
@@ -66692,7 +66693,8 @@
       "prompt_hash": "c7cb6b916785d8e511661908f34e69499c68b349b448ff6b7702da903aae04a0",
       "attempt": 1,
       "created_at": "2026-09-10T06:46:08.052Z",
-      "status": "submission_unknown"
+      "status": "submission_unknown",
+      "next_poll_at": "2026-09-10T07:09:14.661Z"
     }
   },
   "source_publication_dates": {
@@ -68008,6 +68010,16 @@
       "input_hash": "172b0ad9601be5752963992a",
       "version": "2026-09-09.1",
       "checked_at": "2026-09-10T06:38:01.275Z"
+    },
+    "wt-8a573078322819e3": {
+      "input_hash": "1c6281d6185195c78790e193",
+      "version": "2026-09-09.1",
+      "checked_at": "2026-09-10T06:52:55.072Z"
+    },
+    "wt-b95ed05b8140df75": {
+      "input_hash": "a44be7e134ff802042299f3a",
+      "version": "2026-09-09.1",
+      "checked_at": "2026-09-10T06:52:55.072Z"
     }
   }
 }
