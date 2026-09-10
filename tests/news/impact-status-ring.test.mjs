@@ -4,6 +4,7 @@ import {deriveImpactPresentation,impactAssessmentErrors} from '../../scripts/new
 import {deriveImpactStatus} from '../../scripts/news/impact-potential.mjs';
 import {renderDimensionMeters} from '../../scripts/news/visuals.mjs';
 import {storyCard,storyPage} from '../../scripts/news/build.mjs';
+import {renderTitleImage,normalizeInput,SIZES} from '../../scripts/news/title-image/index.mjs';
 import fs from 'node:fs';
 import {syntheticPotentialAssessment as profile,syntheticPotentialPath as path} from './fixtures/impact21.mjs';
 const sources=[{source_id:'official'}];
@@ -49,4 +50,18 @@ test('real card and detail previews keep all three rings, bars and paths with pu
   assert.ok((html.match(/wt-impact-path-title/g)||[]).length>=3);
  }
  assert.match(storyPage(story,{privateImpactPreview:true}),/noindex, ?nofollow/);
+});
+test('generated title cards retain central status and separate observed and future magnitudes',()=>{
+ const a=profile();a.observed_effects=[observation()];
+ const dimensions=deriveImpactPresentation(a).dimensions;
+ assert.equal(normalizeInput({dimensions}).dimensions.human.magnitudeBars,4);
+ assert.equal(normalizeInput({dimensions}).dimensions.human.magnitude,3);
+ for(const size of Object.keys(SIZES)){
+  const {svg}=renderTitleImage({headline:'Privates Testbeispiel',dimensions},{size,fonts:'none'});
+  assert.match(svg,/data-impact-ring="observed" data-magnitude="4"/);
+  assert.match(svg,/data-impact-ring="potential" data-magnitude="3"/);
+  assert.match(svg,/− beobachtet/);assert.match(svg,/Weiter:/);
+  assert.doesNotMatch(svg,/progressbar/);
+  for(const ring of svg.matchAll(/<g data-impact-ring=[\s\S]*?<\/g>/g))assert.doesNotMatch(ring[0],/\d\s*%/);
+ }
 });

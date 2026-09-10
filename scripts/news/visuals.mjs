@@ -477,11 +477,14 @@ function consequence(path, sign, { legacy = false, secondary = false } = {}) {
   return `<div class="wt-consequence wt-consequence--${legacy || secondary ? "separate" : sign}"${!legacy && !secondary ? ` data-direction="${sign}"` : ""}><strong>${escapeHtml(title)}</strong><p>${escapeHtml(path.state_change || path.mechanism)}</p>${path.condition ? `<p class="wt-consequence__condition"><b>Bedingung:</b> ${escapeHtml(path.condition)}</p>` : ""}${path.state_change && path.state_change !== path.mechanism ? `<details><summary>Wie dieser Pfad zustande kommt</summary><p>${escapeHtml(path.mechanism)}</p></details>` : ""}</div>`;
 }
 
+export function impactRingSymbol(state) {
+  const fill=state==='observed' ? '<circle cx="12" cy="12" r="8" fill="currentColor"/>' : state==='emerging' ? '<path d="M12 4 A8 8 0 0 1 20 12 L12 12 Z" fill="currentColor"/>' : '';
+  return `<circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>${fill}`;
+}
 export function renderImpactRing(presentation, dimensionLabel) {
   const state=presentation.ringStatus;
-  const fill=state==='observed' ? '<circle cx="12" cy="12" r="8" fill="currentColor"/>' : state==='emerging' ? '<path d="M12 4 A8 8 0 0 1 20 12 L12 12 Z" fill="currentColor"/>' : '';
   const label=`${dimensionLabel}: Status ${presentation.ringLabel}; Tragweite ${presentation.magnitudeBars} von 5; Richtung ${presentation.directionLabel}. Statuskategorie, kein Prozentwert.`;
-  return `<span class="wt-impact-ring wt-impact-ring--${state}" role="img" aria-label="${escapeHtml(label)}" title="${escapeHtml(label)}"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>${fill}</svg><span class="sr-only">${escapeHtml(presentation.ringLabel)}</span></span>`;
+  return `<span class="wt-impact-ring wt-impact-ring--${state}" role="img" aria-label="${escapeHtml(label)}" title="${escapeHtml(label)}"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">${impactRingSymbol(state)}</svg><span class="sr-only">${escapeHtml(presentation.ringLabel)}</span></span>`;
 }
 
 export function renderDimensionMeters(analysis = {}, { compact = false, context = {} } = {}) {
