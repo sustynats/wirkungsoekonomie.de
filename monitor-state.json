@@ -3,9 +3,18 @@
   "incidents": {
     "bridge-errors": {
       "firstSeen": "2026-09-10T08:50:27.331Z",
+      "active": true
+    },
+    "bridge-import": {
+      "firstSeen": "2026-09-10T09:06:11.641Z",
       "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "f2fd168875b7dde61bba2820",
+      "content": "⚠ WÖk-Betriebsstörung\nBridge-Quarantäne: 7 Bridge-Auftrag/Aufträge benötigen Prüfung. Keine erneute automatische KI-Verarbeitung.\nSeit: 2026-09-10T08:50:27.331Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-10"
 }
