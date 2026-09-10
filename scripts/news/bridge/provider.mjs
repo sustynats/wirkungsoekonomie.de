@@ -3,11 +3,12 @@ import { bridgeInput, adaptOutput, sameBridgeEvent } from './adapter.mjs';
 import { BRIDGE_ROOT, bridgePath, parsePacket, outputSchema, hash } from './contract.mjs';
 import { storyPage } from '../build.mjs';
 
+const newsJob = job => ['new_story','story_update','correction'].includes(job.input.job_type);
 const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
 export class DropboxChatGPTBridgeProvider {
-  constructor({ store, transport, visualProvider, correctionsEnabled = false, stageOnly = true, maxJobs = 6, maxPending = 48, retentionDays = 30, adapt = adaptOutput }) {
+  constructor({ store, transport, visualProvider, editorialEnabled = false, correctionsEnabled = false, stageOnly = true, maxJobs = 6, maxPending = 48, retentionDays = 30, adapt = adaptOutput }) {
     if (!Number.isInteger(retentionDays) || retentionDays < 30) throw new Error('BRIDGE_RETENTION_INVALID');
-    Object.assign(this, { store, transport, visualProvider, correctionsEnabled, stageOnly, maxJobs, maxPending, retentionDays, adapt });
+    Object.assign(this, { store, transport, visualProvider, editorialEnabled, correctionsEnabled, stageOnly, maxJobs, maxPending, retentionDays, adapt });
   }
   async selectCandidates(candidates) {
     const checkpoints = await this.store.observation('source-checkpoints') || {};
@@ -15,7 +16,7 @@ export class DropboxChatGPTBridgeProvider {
     const selected = [];
     for (const candidate of candidates) {
       if (selected.length >= Math.min(this.maxJobs, this.maxPending - active.length)) break;
-      if (checkpoints[candidate.story_id] === candidate.content_hash || active.some(j => sameBridgeEvent(candidate, j.candidate)) || selected.some(c => sameBridgeEvent(candidate,c))) continue;
+      if (checkpoints[candidate.story_id] === candidate.content_hash || active.some(j => newsJob(j) && sameBridgeEvent(candidate, j.candidate)) || selected.some(c => sameBridgeEvent(candidate,c))) continue;
       selected.push(candidate);
     }
     return selected;
@@ -25,7 +26,7 @@ export class DropboxChatGPTBridgeProvider {
     const results = []; let created = 0;
     const retried = new Set();
     // Retry the persisted packet even when subsequent source enrichment changed.
-    for (const job of jobs.filter(j => j.status === 'prepared')) {
+    for (const job of jobs.filter(j => newsJob(j) && j.status === 'prepared')) {
       retried.add(job.input.job_id);
       await this.queuePrepared(job, now, results);
     }
@@ -36,7 +37,7 @@ export class DropboxChatGPTBridgeProvider {
       if (!job) {
         // Keep one active event package. Material updates are reconsidered from
         // the source queue after the preceding package reaches a terminal state.
-        if (jobs.some(j => !terminal.has(j.status) && sameBridgeEvent(candidate, j.candidate))) continue;
+        if (jobs.some(j => newsJob(j) && !terminal.has(j.status) && sameBridgeEvent(candidate, j.candidate))) continue;
         job = { input, candidate, status: 'prepared', attempts: {}, created_at: now };
         await this.store.put(job); jobs.push(job); created++;
       }
@@ -62,7 +63,9 @@ export class DropboxChatGPTBridgeProvider {
     const names = new Set(entries.map(e => e.name));
     const results = [];
     for (const job of await this.store.all()) {
-      if (terminal.has(job.status)) continue;
+      if (!newsJob(job) || terminal.has(job.status)) continue;
+      const jobStories = job.input.test_only && !stories.some(s => s.story_id === job.candidate.story_id)
+        ? [...stories, job.candidate] : stories;
       if (job.status === 'accepted') {
         const accepted = job.accepted;
         if (!accepted.record || accepted.staged || stories.some(s => s.bridge_import?.job_id === job.input.job_id && s.bridge_import.output_hash === accepted.output_hash)) { results.push(accepted); continue; }
@@ -70,7 +73,7 @@ export class DropboxChatGPTBridgeProvider {
         try {
           const output = parsePacket(await this.transport.read(bridgePath('20_OUTPUT_READY', `${job.input.job_id}.output.json`)), outputSchema);
           if (hash(output) !== accepted.output_hash) throw new Error('BRIDGE_ACCEPTED_OUTPUT_CHANGED');
-          this.adapt(output, job, registry, stories, now);
+          this.adapt(output, job, registry, jobStories, now);
           results.push(accepted);
         } catch (error) { await this.failure(job, 'import', error, now); }
         continue;
@@ -78,7 +81,7 @@ export class DropboxChatGPTBridgeProvider {
       if (!names.has(`${job.input.job_id}.output.json`)) continue;
       try {
         const output = parsePacket(await this.transport.read(bridgePath('20_OUTPUT_READY', `${job.input.job_id}.output.json`)), outputSchema);
-        const result = this.adapt(output, job, registry, stories, now);
+        const result = this.adapt(output, job, registry, jobStories, now);
         const staged = this.stageOnly || job.input.test_only;
         let visual = null;
         if (result.record && this.visualProvider) {
@@ -98,19 +101,20 @@ export class DropboxChatGPTBridgeProvider {
     }
     return results;
   }
-  async finalize(stories, now, { committed = false } = {}) {
+  async finalize(stories, now, { committed = false, editorials = [] } = {}) {
     for (const job of await this.store.all()) {
       if (job.status !== 'accepted') continue;
       const item = job.accepted;
-      if (item.record && !item.staged) {
+      const article = item.record || item.editorial;
+      if (article && !item.staged) {
         if (!committed) continue;
-        const persisted = stories.find(s => s.story_id === item.record.story_id);
+        const persisted = item.editorial ? editorials.find(s => s.analysis_id === article.analysis_id) : stories.find(s => s.story_id === article.story_id);
         if (persisted?.bridge_import?.job_id !== job.input.job_id || persisted.bridge_import.output_hash !== item.output_hash) continue;
       }
       const ack = job.ack || { schema_version: '1.0', job_id: job.input.job_id,
-        status: item.staged ? 'staged' : item.record ? 'imported' : item.decision,
-        imported_at: now, publication_id: !item.staged && item.record ? item.record.story_id : null,
-        url: !item.staged && item.record ? `https://wirkungsoekonomie.de/wirkungsticker/${item.record.slug}/` : null,
+        status: item.staged ? 'staged' : article ? 'imported' : item.decision,
+        imported_at: now, publication_id: !item.staged && article ? article.analysis_id || article.story_id : null,
+        url: !item.staged && article ? `https://wirkungsoekonomie.de/wirkungsticker/${item.editorial ? 'analyse/' : ''}${article.slug}/` : null,
         output_hash: item.output_hash, test_only: job.input.test_only };
       try {
         job.ack = ack; await this.store.put(job);

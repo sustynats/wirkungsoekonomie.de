@@ -281,3 +281,21 @@ test('the real worker combines already queued border reports into one paid revie
     callAiImpl:async candidates=>{calls++;assert.equal(candidates.length,1);assert.equal(candidates[0].sources.length,3);return{analyses:[{story_id:candidates[0].story_id,publication_recommendation:false,rejection:{code:'insufficient_evidence',reason:'Die Testbelege bestätigen den Sprengstoffverdacht noch nicht unabhängig.'}}],model:'gpt-5.4-mini',reported_usage:{input_tokens:100,output_tokens:50}}}});
   assert.equal(calls,1);assert.equal(report.living_file_merges.length,2);assert.equal(report.published_stories,0);
 });
+
+
+test('technical novelty keeps its topic with a single source and no policy vocabulary',()=>{
+  const rows=[
+    {title:'Hersteller stellt erstes faltbares Smartphone vor',summary:'Der Markteintritt eröffnet eine weitere technische Bauform für mobile Computer.'},
+    {title:'Neuartige Chiparchitektur geht erstmals in Produktion',summary:'Ein Fachmedium beschreibt den angekündigten Einstieg in diesen Prozessormarkt.'},
+  ];
+  for(const row of rows){const result=preAnalyzeStory(story([item({...row,primary_source:false})]),now);assert.ok(result.topics.includes('Technologie'));assert.ok(!result.topics.includes('Politik'));assert.ok(result.internal_relevance_score>=30);assert.equal(result.event_score.independent_source_count,1);assert.equal(result.event_score.independence_verified,false);}
+});
+test('undercovered technology and economy reach review despite ordinary high-priority volume; TOP stays first',()=>{
+  const politics=Array.from({length:10},(_,i)=>candidate('politics-'+i,'HIGH','politics_de',60));
+  const technology=candidate('technology-single-source','NORMAL','technology',45);
+  const economy=candidate('economy-single-source','NORMAL','economy',46);
+  const top=candidate('urgent','TOP','security',80);
+  const result=balanceEventQueue([...politics,technology,economy,top],{politics_de:15});
+  assert.equal(result[0].story_id,'urgent');assert.ok(result.slice(0,6).includes(technology));assert.ok(result.slice(0,6).includes(economy));
+  assert.equal(technology.preanalysis.internal_relevance_score,45,'queue selection does not invent a higher relevance or evidence score');
+});

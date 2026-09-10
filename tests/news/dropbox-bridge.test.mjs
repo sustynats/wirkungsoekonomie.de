@@ -383,3 +383,14 @@ test('Dropbox archive skips missing assets and reuses confirmed folders without 
   assert.equal(files.get(output),'different output');
   assert.ok([...files.entries()].some(([p,v])=>p.includes('/40_ARCHIVE/')&&v==='output'));
 });
+
+test('private test imports receive their immutable draft without adding it to canonical stories',async t=>{
+  bridge3Env(t);const stories=[];
+  const {provider,store,transport}=setup(t,{stageOnly:false,adapt:(packet,job,registry,targets)=>{
+    assert.equal(targets.length,1);assert.equal(targets[0].story_id,job.candidate.story_id);return {decision:'hold',record:null};
+  }});
+  await provider.enqueue([candidate()],stories,now,{testOnly:true});const job=store.all()[0];
+  transport.files.set(bridgePath('20_OUTPUT_READY',`${job.input.job_id}.output.json`),JSON.stringify(output(job.input)));
+  const [result]=await provider.reconcile({},stories,later);assert.equal(result.staged,true);assert.deepEqual(stories,[]);
+  await provider.finalize(stories,later);assert.equal(store.get(job.input.job_id).ack.status,'staged');
+});

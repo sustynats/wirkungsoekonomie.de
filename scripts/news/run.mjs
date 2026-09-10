@@ -1,3 +1,4 @@
+import { createBridgeRuntime } from './bridge/runtime.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -45,7 +46,6 @@ import { EVENT_RELEVANCE_VERSION, EVENT_EDITORIAL_POLICY_VERSION, needsEventPoli
 import { observedMajorEvents, missedNewsRechecks, coverageAudit } from './coverage-audit.mjs';
 import { runActiveDiscovery, agendaSignal } from './active-discovery.mjs';
 import { processingMode, visualGenerationProvider } from './processing-mode.mjs';
-import { createBridgeRuntime } from './bridge/runtime.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = EVENT_RELEVANCE_VERSION;
@@ -1345,12 +1345,13 @@ export async function runWirkungsticker(options = {}) {
           enriched.push({ ...candidate, sources });
         }
         report.bridge_enqueued = await bridge.enqueue(enriched, [...byId.values()], now);
+        if (bridge.editorialEnabled && fs.existsSync(path.join(ROOT, 'data/news/editorial-analyses.json'))) report.bridge_editorial_enqueued = await (await import('./bridge/editorial.mjs')).discoverEditorialJobs(bridge, ROOT, now);
       }
       if (bridgePhase !== 'discovery') {
         // Discovery writes no public Git data. A newly queued event therefore
         // obtains its private draft from the immutable journal at first import.
         for (const job of await bridge.store.all()) {
-          if (!byId.has(job.candidate.story_id) && !['quarantined','archive_failed','acknowledged'].includes(job.status))
+          if (['new_story','story_update','correction'].includes(job.input.job_type) && !job.input.test_only && !byId.has(job.candidate.story_id) && !['quarantined','archive_failed','acknowledged'].includes(job.status))
             byId.set(job.candidate.story_id, pendingRecord(job.candidate, 'BRIDGE_PENDING', now));
         }
         const results = await bridge.reconcile(registry, [...byId.values()], now);
@@ -1786,6 +1787,11 @@ export async function runWirkungsticker(options = {}) {
     writeJson(files.usage, usage);
     writeJson(files.report, report);
     writeJson(files.newsroom, newsroom);
+    if (bridge?.editorialEnabled && bridgePhase !== 'discovery' && fs.existsSync(path.join(ROOT, 'data/news/editorial-analyses.json'))) {
+      report.bridge_editorial_results = await (await import('./bridge/editorial.mjs')).importEditorialJobs(bridge, ROOT, now);
+      if (report.bridge_editorial_results.some(r => r.changed)) report.public_changed = true;
+      writeJson(files.report, report);
+    }
     buildNewsSite();
   }
   options.captureState?.({ state, storyStore, usage, newsroom });
