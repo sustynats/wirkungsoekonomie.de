@@ -996,6 +996,13 @@ export async function runWirkungsticker(options = {}) {
     editorial_status: "running",
   };
 
+  // These jobs already have a complete, immutable published-source package.
+  // Hand them off under the discovery lock before slow external feed I/O.
+  if (bridge && !options.dryRun && bridgePhase !== 'import') {
+    const impactEditorials = fs.existsSync(path.join(ROOT, 'data/news/editorial-analyses.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'data/news/editorial-analyses.json'), 'utf8')).analyses : [];
+    report.bridge_impact_enqueued = await (await import('./bridge/impact.mjs')).discoverImpactJobs(bridge, [...storyStore.stories, ...impactEditorials], now);
+  }
+
   report.ambiguous_decisions_requeued = [];
   if (!state.publication_decision_review_v1_at) {
     report.ambiguous_decisions_requeued = recoverAmbiguousPublicationDecisions(storyStore.stories, newsroom.decisions, now);
@@ -1350,8 +1357,6 @@ export async function runWirkungsticker(options = {}) {
         }
         report.bridge_enqueued = await bridge.enqueue(enriched, [...byId.values()], now);
         if (bridge.editorialEnabled && fs.existsSync(path.join(ROOT, 'data/news/editorial-analyses.json'))) report.bridge_editorial_enqueued = await (await import('./bridge/editorial.mjs')).discoverEditorialJobs(bridge, ROOT, now);
-        const impactEditorials = fs.existsSync(path.join(ROOT, 'data/news/editorial-analyses.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'data/news/editorial-analyses.json'), 'utf8')).analyses : [];
-        report.bridge_impact_enqueued = await (await import('./bridge/impact.mjs')).discoverImpactJobs(bridge, [...byId.values(), ...impactEditorials], now);
       }
       if (bridgePhase !== 'discovery') {
         // Discovery writes no public Git data. A newly queued event therefore
