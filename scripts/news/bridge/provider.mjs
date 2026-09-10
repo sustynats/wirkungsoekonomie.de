@@ -1,12 +1,13 @@
+import { canRequestCorrection, prepareCorrection, recoverCorrections } from './corrections.mjs';
 import { bridgeInput, adaptOutput, sameBridgeEvent } from './adapter.mjs';
 import { BRIDGE_ROOT, bridgePath, parsePacket, outputSchema, hash } from './contract.mjs';
 import { storyPage } from '../build.mjs';
 
 const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
 export class DropboxChatGPTBridgeProvider {
-  constructor({ store, transport, visualProvider, stageOnly = true, maxJobs = 6, maxPending = 48, retentionDays = 30, adapt = adaptOutput }) {
+  constructor({ store, transport, visualProvider, correctionsEnabled = false, stageOnly = true, maxJobs = 6, maxPending = 48, retentionDays = 30, adapt = adaptOutput }) {
     if (!Number.isInteger(retentionDays) || retentionDays < 30) throw new Error('BRIDGE_RETENTION_INVALID');
-    Object.assign(this, { store, transport, visualProvider, stageOnly, maxJobs, maxPending, retentionDays, adapt });
+    Object.assign(this, { store, transport, visualProvider, correctionsEnabled, stageOnly, maxJobs, maxPending, retentionDays, adapt });
   }
   async selectCandidates(candidates) {
     const checkpoints = await this.store.observation('source-checkpoints') || {};
@@ -56,6 +57,7 @@ export class DropboxChatGPTBridgeProvider {
     } catch (error) { await this.failure(job, 'enqueue', error, now); }
   }
   async reconcile(registry, stories, now) {
+    if (this.correctionsEnabled) await recoverCorrections(this);
     const entries = await this.transport.list('20_OUTPUT_READY');
     const names = new Set(entries.map(e => e.name));
     const results = [];
@@ -87,7 +89,7 @@ export class DropboxChatGPTBridgeProvider {
         }
         const accepted = { ...result, story_id: job.candidate.story_id, input_content_hash: job.candidate.content_hash, job_id: job.input.job_id, staged, visual, output_hash: hash(output), accepted_at: now };
         job.accepted = { ...accepted, ...(visual?.file ? { visual: { ...visual, file: undefined } } : {}) };
-        job.status = 'accepted'; job.accepted_at = now;
+        job.status = 'accepted'; job.accepted_at = now; delete job.last_error;
         job.output_detected_at = (await this.store.observation(`output:${job.input.job_id}`))?.at || now;
         if (staged && result.record) job.staging = { record: result.record, html: storyPage(result.record), visual_sha256: visual?.sha256 || null, ...(visual?.staging ? { image: visual.staging } : {}) };
         await this.store.put(job); // durable staging BEFORE any ACK
@@ -124,6 +126,7 @@ export class DropboxChatGPTBridgeProvider {
       if (job.status !== 'acknowledged' || job.archived_at) continue;
       const id = job.input.job_id;
       try {
+      for (const correction of job.corrections || []) for (const folder of ['00_INBOX','10_CLAIMED']) await this.transport.archive(bridgePath(folder, `${id}.repair-${correction.attempt}.json`), id, job.completed_at);
       for (const [folder, suffix] of [['00_INBOX','input.json'],['10_CLAIMED','input.json'],['20_OUTPUT_READY','output.json'],['20_OUTPUT_READY','visual.json'],['20_OUTPUT_READY','title.png'],['20_OUTPUT_READY','title.webp']]) {
         await this.transport.archive(bridgePath(folder, `${id}.${suffix}`), id, job.completed_at);
       }
@@ -141,6 +144,10 @@ export class DropboxChatGPTBridgeProvider {
     const retryable = error.retryable === true && attempt < 3;
     job.last_error = { job_id: job.input.job_id, stage, error_code: code, message: code, retryable, failed_at: now, attempt };
     if (Array.isArray(error.issues)) job.last_error.issues = error.issues.map(issue => typeof issue === 'string' ? issue.slice(0,160) : String(issue.code || 'VALIDATION_FAILED').slice(0,160)).slice(0,50);
+    if (this.correctionsEnabled && canRequestCorrection(job, stage, job.last_error)) {
+      try { await prepareCorrection(this, job, job.last_error, now); return; }
+      catch { /* Normal durable failure path remains available if preparation fails. */ }
+    }
     if (!retryable) job.status = stage === 'archive' ? 'archive_failed' : 'quarantined';
     await this.store.put(job);
     // Keep the first canonical error immutable; later attempts get separate logs.
@@ -160,7 +167,7 @@ export class DropboxChatGPTBridgeProvider {
     const folders = {};
     for (const name of ['00_INBOX', '10_CLAIMED', '20_OUTPUT_READY', '90_ERRORS']) folders[name] = await this.transport.list(name);
     const jobs = await this.store.all(), open = jobs.filter(j => !terminal.has(j.status));
-    const report = { at: now, dropbox_reachable: true, inbox: folders['00_INBOX'].length, claimed: folders['10_CLAIMED'].length,
+    const report = { correction_pending: jobs.filter(j => ['correction_pending','correction_prepared'].includes(j.status)).length, at: now, dropbox_reachable: true, inbox: folders['00_INBOX'].filter(e => /\.(?:input|repair-\d+)\.json$/.test(e.name)).length, claimed: folders['10_CLAIMED'].length,
       output_ready: folders['20_OUTPUT_READY'].filter(e => e.name.endsWith('.output.json')).length,
       errors: jobs.filter(j => ['quarantined','archive_failed'].includes(j.status)).length, oldest_open_minutes: Math.max(0, ...open.map(j => (Date.parse(now) - Date.parse(j.created_at)) / 60000)), alerts: [] };
     const discovery = await this.store.observation('discovery');
