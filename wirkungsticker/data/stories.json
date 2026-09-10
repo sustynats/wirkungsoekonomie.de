@@ -1,7 +1,656 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-10T10:07:22.952Z",
+  "updated_at": "2026-09-10T10:14:05.777Z",
   "stories": [
+    {
+      "story_id": "wt-15dce829e46b9acf",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-2494a20ad0456b89-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-908aa2fa219bd8a0-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-fdc7eca972da7708-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-15dce829e46b9acf-35753e8299705642-source.png",
+          "alt_text": "Technische Illustration eines Stromnetzes mit Umspannwerk, Leitungen und zusätzlicher Netzverbindung zur Entlastung eines Engpasses."
+        }
+      },
+      "slug": "nach-angriffen-auf-umspannwerke-netzausbau-soll-schneller-gehen-mithilfe-von-task-force-6b9acf",
+      "title": "Baden-Württemberg plant Task Force für schnelleren Stromnetzausbau",
+      "source_summary": "SWR Aktuell berichtet, Baden-Württembergs Landesregierung wolle die Kapazität des Stromnetzes erhöhen und dafür im Herbst eine Task Force Netzausbau mit Netzbetreibern, Verbänden und Kommunen starten. In überlasteten Gebieten solle die verfügbare elektrische Maximalleistung schon innerhalb der nächsten Monate deutlich steigen.\n\nEin weiteres Ziel sei, den Zeitraum für den Netzausbau deutlich zu verkürzen. Für Maßnahmen nennt der Bericht einen Zeithorizont von fünf bis sieben Jahren; Netzbetreiber gingen derzeit von zehn Jahren aus. Die angekündigten Schritte sind damit belegt, eine bereits erreichte Netzverstärkung oder höhere Versorgungssicherheit aber noch nicht.",
+      "summary": "Baden-Württemberg will im Herbst eine Task Force starten, um Netzkapazität schneller auszubauen und Engpässe zu vermeiden. Die Maßnahmen sind angekündigt; eine bereits verbesserte Versorgungssicherheit ist noch nicht belegt.",
+      "detail_summary": "Baden-Württemberg will laut SWR die Netzkapazität erhöhen und dafür im Herbst eine Task Force Netzausbau starten. Beteiligt werden sollen Netzbetreiber, Verbände und Kommunen. In überlasteten Gebieten soll die verfügbare elektrische Maximalleistung bereits in den nächsten Monaten steigen. Zugleich soll der Netzausbau schneller werden; als Zielhorizont nennt der Bericht fünf bis sieben statt derzeit zehn Jahren. Die Wirkung ist noch ex ante: Erst wenn Kapazität tatsächlich steigt und Engpässe seltener werden, verbessert sich die Versorgungssicherheit.",
+      "why_relevant": "Stromnetzkapazität und Ausbaugeschwindigkeit sind zentrale Voraussetzungen für Versorgungssicherheit und die Belastbarkeit kritischer Infrastruktur.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Mehr verfügbare Netzkapazität kann Versorgungsengpässe verringern und die Verlässlichkeit der Stromversorgung für Haushalte und Betriebe erhöhen, wenn die angekündigten Maßnahmen tatsächlich umgesetzt werden.",
+          "positive_path": {
+            "mechanism": "Zusätzliche Netzkapazität und schnellerer Ausbau verringern in überlasteten Gebieten technische Engpässe.",
+            "state_change": "Strom kann in betroffenen Gebieten verlässlicher bereitgestellt werden, weil verfügbare Netzkapazität steigt und Engpässe abnehmen.",
+            "condition": "Die angekündigten Maßnahmen werden umgesetzt und erhöhen die tatsächlich verfügbare Netzkapazität ausreichend.",
+            "effect_role": "substantive_change",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Ein stärkeres Stromnetz kann für die Energiewende relevant sein, doch der Input belegt keine konkrete Umweltzustandsänderung oder einen bestimmten Erneuerbaren-Effekt.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die angekündigte Infrastrukturmaßnahme belegt keine konkrete Veränderung demokratischer Verfahren oder Schutzfunktionen.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Der Beitrag verknüpft die angekündigte Task Force prominent mit Angriffen auf Umspannwerke und einem unter Druck stehenden Stromnetz.",
+        "factual_core": "Baden-Württemberg will laut SWR im Herbst eine Task Force Netzausbau starten, Netzkapazität erhöhen und Ausbauzeiten verkürzen.",
+        "epistemic_status": {
+          "confirmed": [
+            "SWR berichtet konkrete Aussagen eines Ministeriumssprechers zu Task Force, Kapazitätszielen und kürzeren Ausbauzeiten."
+          ],
+          "actor_claims": [
+            "Das Ministerium will Engpässe auch in Extremsituationen vermeiden und die Stromversorgung sichern."
+          ],
+          "open": [
+            "Welche Maßnahmen beschlossen werden, wie viel zusätzliche Kapazität entsteht und ob Ausbauzeiten tatsächlich sinken."
+          ]
+        },
+        "attribution": {
+          "frame_source": "swr-aktuell",
+          "speaker": "SWR Aktuell und Umwelt- und Energieministerium Baden-Württemberg",
+          "original_term": "Angriffe und Druck auf das Stromnetz als Dringlichkeitsrahmen",
+          "usage_type": "editorial",
+          "placement": [
+            "headline",
+            "body"
+          ],
+          "attribution_quality": "clear"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Angriffe und Druck auf das Stromnetz als Dringlichkeitsrahmen",
+          "origin_in_story": "swr-aktuell",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Angriffe und Druck auf das Stromnetz als Dringlichkeitsrahmen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Das Stromnetz wird als durch Angriffe und weitere Belastungen verwundbare kritische Infrastruktur dargestellt, deren Kapazität schneller ausgebaut werden müsse.",
+          "implied_cause": "Der Beitrag nennt Angriffe, Extremwetter und Cyberattacken als Druckfaktoren; bestehende Netzengpässe haben im Input keine einzelne nachgewiesene Ursache.",
+          "implied_responsibility": "Die Landesregierung und beteiligte Netzakteure sollen Ausbau und Koordination beschleunigen.",
+          "implied_threat": "Engpässe und Störungen können die Verlässlichkeit der Stromversorgung beeinträchtigen.",
+          "implied_solution_space": "Task Force, zusätzliche verfügbare Netzkapazität und kürzere Ausbauzeiten.",
+          "material_omissions": [
+            "Keine Quantifizierung des Beitrags einzelner Angriffe zu strukturellen Netzengpässen.",
+            "Keine bereits gemessene Wirkung der noch nicht gestarteten Task Force."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Landespolitische Reaktion und Infrastrukturplanung nach Sicherheits- und Belastungsereignissen.",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "swr-aktuell",
+              "claim_supported": "SWR berichtet den geplanten Start der Task Force und die Ziele der Landesregierung."
+            }
+          ],
+          "uncertainty": "Die Kausalität zwischen einzelnen Angriffen und strukturellem Netzausbaubedarf ist im Input nicht nachgewiesen."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Debatte über kritische Infrastruktur, Versorgungssicherheit und Geschwindigkeit des Netzausbaus.",
+          "normalization_potential": "low",
+          "repetition_risk": "medium",
+          "polarization_potential": "Gering; der Rahmen erhöht vor allem die wahrgenommene Dringlichkeit.",
+          "trust_effect_potential": "Offen; kein beobachteter Vertrauenseffekt im Input.",
+          "discourse_effect_potential": "Die Verbindung mit Angriffen kann Netzausbau stärker als Sicherheits- und Resilienzaufgabe erscheinen lassen."
+        },
+        "impact_path": {
+          "first_order": "Der Beitrag verbindet Ausbaupläne mit konkreten Sicherheits- und Belastungsereignissen.",
+          "second_order": "Dadurch kann die Dringlichkeit von Netzkapazität und Ausbaugeschwindigkeit stärker wahrgenommen werden.",
+          "third_order": "Eine dauerhafte Sicherheitsrahmung könnte Prioritäten in Infrastrukturdebatten verschieben; ein beobachteter Effekt ist hier nicht belegt."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Task Force soll im Herbst starten; Kapazität und Ausbaugeschwindigkeit sollen verbessert werden.",
+          "what_is_inferred": "Die Platzierung verstärkt einen Resilienz- und Dringlichkeitsrahmen.",
+          "what_is_open": "Nur eine journalistische Quelle ist gebunden; keine Rezeptionsdaten.",
+          "facts": [
+            "Task Force soll im Herbst starten; Kapazität und Ausbaugeschwindigkeit sollen verbessert werden."
+          ],
+          "observations": [
+            "Angriffe auf Umspannwerke stehen bereits in der Überschrift und werden als Kontext für den Netzdruck genannt."
+          ],
+          "inferences": [
+            "Die Platzierung verstärkt einen Resilienz- und Dringlichkeitsrahmen."
+          ],
+          "impact_potentials": [
+            "Höhere Aufmerksamkeit für Versorgungssicherheit und beschleunigten Netzausbau."
+          ],
+          "impact_risks": [
+            "Strukturelle Netzengpässe könnten kommunikativ zu stark auf einzelne Angriffe zurückgeführt werden."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle ist gebunden; keine Rezeptionsdaten."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Der belegte Kern ist eine angekündigte Infrastrukturmaßnahme: Baden-Württemberg will im Herbst eine Task Force Netzausbau starten und Netzkapazität in überlasteten Gebieten erhöhen. SWR stellt diese Pläne im Zusammenhang mit jüngsten Angriffen auf Energieanlagen sowie weiteren Belastungen des Stromnetzes dar. Dieser Kontext macht die Verwundbarkeit kritischer Infrastruktur sichtbar, belegt aber nicht, dass die Angriffe allein Ursache der bestehenden Ausbau- oder Kapazitätsprobleme sind. Auch die Task Force selbst ist noch kein Wirkungsnachweis. Erst wenn zusätzliche Kapazität tatsächlich entsteht, Ausbauzeiten sinken und Engpässe messbar seltener werden, verändert sich die Versorgungssicherheit. Der kommunikative Rahmen richtet den Blick damit auf Resilienz und Dringlichkeit. Ein beobachteter Effekt dieser Rahmung auf öffentliche Einstellungen oder politische Entscheidungen ist im bereitgestellten Material nicht belegt.",
+        "editorial_assessment": "Der belegte Kern ist eine angekündigte Infrastrukturmaßnahme: Baden-Württemberg will im Herbst eine Task Force Netzausbau starten und Netzkapazität in überlasteten Gebieten erhöhen. SWR stellt diese Pläne im Zusammenhang mit jüngsten Angriffen auf Energieanlagen sowie weiteren Belastungen des Stromnetzes dar. Dieser Kontext macht die Verwundbarkeit kritischer Infrastruktur sichtbar, belegt aber nicht, dass die Angriffe allein Ursache der bestehenden Ausbau- oder Kapazitätsprobleme sind. Auch die Task Force selbst ist noch kein Wirkungsnachweis. Erst wenn zusätzliche Kapazität tatsächlich entsteht, Ausbauzeiten sinken und Engpässe messbar seltener werden, verändert sich die Versorgungssicherheit. Der kommunikative Rahmen richtet den Blick damit auf Resilienz und Dringlichkeit. Ein beobachteter Effekt dieser Rahmung auf öffentliche Einstellungen oder politische Entscheidungen ist im bereitgestellten Material nicht belegt.",
+        "fact_first_alternative": "Baden-Württemberg will im Herbst eine Task Force Netzausbau starten. Laut SWR sollen Netzkapazität in überlasteten Gebieten erhöht und Ausbauzeiten verkürzt werden; konkrete Wirkungen sind noch nicht gemessen.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Baden-Württemberg plant Task Force für schnelleren Stromnetzausbau",
+          "recommended_summary": "Baden-Württemberg will im Herbst eine Task Force starten, um Netzkapazität schneller auszubauen und Engpässe zu vermeiden. Die Maßnahmen sind angekündigt; eine bereits verbesserte Versorgungssicherheit ist noch nicht belegt.",
+          "recommended_meta_description": "Baden-Württemberg plant eine Task Force für mehr Netzkapazität und kürzere Ausbauzeiten. Der Start ist angekündigt; tatsächliche Versorgungseffekte stehen noch aus."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T10:14:05.777Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T08:50:18.000Z",
+      "last_updated": "2026-09-10T10:14:05.777Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-1cd6eb69f8a33bc6e1d8",
+      "case_file": null,
+      "source_published_at": "2026-09-10T08:50:18.000Z",
+      "published_at": "2026-09-10T10:14:05.777Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Start und konkrete Maßnahmen der Task Force prüfen.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigter Start der Task Force sowie konkrete Maßnahmen, Kapazitätswerte oder verkürzte Ausbauzeiten.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-3e150dbdb1fd2873",
+          "announced_at": "2026-09-10T08:50:18.000Z",
+          "follow_up_date": "2026-09-17T10:14:05.777Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/task-force-soll-netzausbau-in-bw-beschleunigen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T08:50:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-5b6860755205d4f9",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5b6860755205d4f9-f3f85ecf273ea85b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5b6860755205d4f9-05549cde980df93b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5b6860755205d4f9-886cfcb9b0c74d7a-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5b6860755205d4f9-9df7372ce39c3894-source.png",
+          "alt_text": "Sachliche Illustration eines Haushaltsbuchs mit Finanzblöcken und neutralem Schild als Symbol für Verteidigungsausgaben."
+        }
+      },
+      "slug": "deutlicher-anstieg-bei-den-verteidigungsausgaben-05d4f9",
+      "title": "Verteidigungsetat 2027: Entwurf sieht 139,6 Milliarden Euro vor",
+      "source_summary": "Der Bundestag dokumentiert die erste Beratung des Verteidigungsetats im Haushaltsentwurf 2027. Vorgesehen sind Verteidigungsausgaben von insgesamt 139,6 Milliarden Euro: 109,7 Milliarden Euro im regulären Wehretat und 29,9 Milliarden Euro aus dem Sondervermögen Bundeswehr. Für 2026 nennt der Bericht 82,7 Milliarden Euro im regulären Wehretat und 25,5 Milliarden Euro aus dem Sondervermögen. Insgesamt sollen die Verteidigungsausgaben 2027 um 31,4 Milliarden Euro steigen.\n\nVerteidigungsminister Boris Pistorius begründet die höheren Ausgaben mit der Sicherheitslage und nennt sie ein „Sicherheitsversprechen“. Abgeordnete von AfD, Linken und Grünen kritisieren dagegen unter anderem Verschuldung, Prioritäten und Beschaffungsprobleme. Der Betrag steht im Etatentwurf und wurde in erster Lesung beraten; ein endgültig verabschiedeter Bundeshaushalt ist das noch nicht.",
+      "summary": "Im Haushaltsentwurf 2027 sind 139,6 Milliarden Euro für Verteidigung vorgesehen, 31,4 Milliarden mehr als 2026. Der Bundestag hat den Etat erstmals beraten; beschlossen ist der Bundeshaushalt damit noch nicht.",
+      "detail_summary": "Der Verteidigungsetat 2027 wurde im Bundestag erstmals beraten. Der Entwurf sieht insgesamt 139,6 Milliarden Euro vor, davon 109,7 Milliarden im regulären Etat und 29,9 Milliarden aus dem Sondervermögen. Gegenüber 2026 entspricht das laut Bundestag einem Plus von 31,4 Milliarden Euro. Pistorius stellt die Ausgaben als Antwort auf die Sicherheitslage dar; mehrere Oppositionsredner kritisieren Verschuldung, Prioritäten und Beschaffungsprobleme. Für die Wirkungsanalyse bleibt entscheidend: Mehr Geld ist zunächst ein Input. Ob daraus mehr Sicherheit, bessere Fähigkeiten oder andere Folgewirkungen entstehen, ist mit dem Etatentwurf noch nicht belegt.",
+      "why_relevant": "Der Entwurf verschiebt in großem Umfang öffentliche Mittel in den Verteidigungsbereich und macht zugleich die Frage nach Sicherheit, Wirtschaftlichkeit und fiskalischen Prioritäten zentral.",
+      "topic": [
+        "Finanzen"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "sehr hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Zusätzliche Verteidigungsmittel können Sicherheitsfähigkeiten stärken, können aber auch fiskalische Prioritäten verändern. Der Etatansatz allein belegt weder eine konkrete Verbesserung menschlicher Sicherheit noch eine konkrete Verschlechterung anderer Lebenslagen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Der gebundene Ausschnitt enthält keine belastbaren Angaben zu Emissionen, Ressourcenverbrauch oder konkreten Umweltfolgen der geplanten Ausgaben.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Parlamentarische Budgetkontrolle, Transparenz und Beschaffungsaufsicht sind demokratisch relevant. Die erste Lesung belegt jedoch noch keine positive oder negative Zustandsänderung dieser Funktionen.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "high",
+        "reason": "Die parlamentarische Debatte arbeitet mit stark wertenden Sicherheits-, Verschuldungs- und Moralbegriffen, die den gleichen Etat unterschiedlich rahmen.",
+        "factual_core": "Im Haushaltsentwurf 2027 sind 139,6 Milliarden Euro für Verteidigung vorgesehen; der Bundestag hat den Etat in erster Lesung beraten.",
+        "epistemic_status": {
+          "confirmed": [
+            "Die im Bundestagsbericht genannten Etatansätze und der Stand der ersten Lesung sind dokumentiert."
+          ],
+          "actor_claims": [
+            "Pistorius bezeichnet die Ausgaben als „Sicherheitsversprechen“ und warnt vor der militärischen Bedrohung durch Russland.",
+            "Oppositionsabgeordnete kritisieren unter anderem Verschuldung, Prioritäten und Beschaffungsprobleme."
+          ],
+          "open": [
+            "Welche zusätzlichen Fähigkeiten die Mittel tatsächlich erzeugen und welche fiskalischen Folgewirkungen entstehen."
+          ]
+        },
+        "attribution": {
+          "frame_source": "bundestag-hib",
+          "speaker": "Boris Pistorius und Oppositionsabgeordnete",
+          "original_term": "Sicherheitsversprechen versus Verschuldungs- und Prioritätenkritik",
+          "usage_type": "direct_quote",
+          "placement": [
+            "body"
+          ],
+          "attribution_quality": "clear"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Sicherheitsversprechen versus Verschuldungs- und Prioritätenkritik",
+          "origin_in_story": "bundestag-hib",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung",
+            "Sicherheit"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Sicherheitsversprechen versus Verschuldungs- und Prioritätenkritik",
+          "frame_type": [
+            "Bedrohung",
+            "Sicherheit"
+          ],
+          "problem_definition": "Die Debatte definiert das gleiche Budget entweder als notwendige Antwort auf eine äußere Bedrohung oder als Risiko für Staatsfinanzen und andere Prioritäten.",
+          "implied_cause": "Als Ursache für den Mittelanstieg wird von Befürwortern die verschärfte Sicherheitslage benannt; Kritiker betonen frühere Fehlsteuerung und Beschaffungsprobleme.",
+          "implied_responsibility": "Die Bundesregierung verantwortet den Entwurf; das Parlament entscheidet über den Haushalt und kontrolliert die Mittelverwendung.",
+          "implied_threat": "Befürworter betonen militärische Bedrohung, Kritiker Verschuldung und ineffiziente Beschaffung.",
+          "implied_solution_space": "Mehr Verteidigungsmittel auf der einen, strengere Priorisierung, Kontrolle und effizientere Beschaffung auf der anderen Seite.",
+          "material_omissions": [
+            "Der Ausschnitt belegt nicht, welche konkreten zusätzlichen Fähigkeiten mit den Mehrmitteln entstehen.",
+            "Konkrete gesamtstaatliche Opportunitätskosten sind nicht kausal ausgewiesen."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Parlamentarische Haushaltsdebatte über Verteidigungsausgaben und Sicherheitsprioritäten.",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "bundestag-hib",
+              "claim_supported": "Der Bundestagsbericht dokumentiert Etatansätze und unterschiedliche politische Bewertungen der Fraktionen."
+            }
+          ],
+          "uncertainty": "Politische Bedrohungs- und Verschuldungsbewertungen sind Akteursaussagen und keine automatisch festgestellten Wirkungen."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Debatte über Sicherheit, Verteidigung, Staatsverschuldung und Haushaltsprioritäten.",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "Gegensätzliche Begriffe können die Budgetfrage als Entweder-oder zwischen Sicherheit und anderen Staatsaufgaben zuspitzen.",
+          "trust_effect_potential": "Offen; ein beobachteter Vertrauenseffekt ist im Input nicht belegt.",
+          "discourse_effect_potential": "Die wiederholte Rahmung kann beeinflussen, ob der Mittelanstieg primär als Sicherheitsnotwendigkeit oder als fiskalisches Risiko wahrgenommen wird."
+        },
+        "impact_path": {
+          "first_order": "Starke Begriffe ordnen den Etat unmittelbar in unterschiedliche Sicherheits- und Verschuldungsnarrative ein.",
+          "second_order": "Lesende können dadurch Mittelhöhe und tatsächliche Sicherheitswirkung enger miteinander verknüpfen oder die Ausgaben vor allem als Schuldenproblem wahrnehmen.",
+          "third_order": "Dauerhafte Wiederholung solcher Gegenrahmen kann die öffentliche Prioritätendebatte polarisieren; ein beobachteter Effekt ist hier nicht belegt."
+        },
+        "evidence": {
+          "status": "high",
+          "level": "high",
+          "what_is_known": "Etatansätze und erste Lesung sind im Bundestagsbericht dokumentiert.",
+          "what_is_inferred": "Die Begriffe setzen unterschiedliche Problem- und Lösungsrahmen für denselben Haushaltsentwurf.",
+          "what_is_open": "Keine beobachtete Rezeptions- oder Einstellungswirkung im Input.",
+          "facts": [
+            "Etatansätze und erste Lesung sind im Bundestagsbericht dokumentiert."
+          ],
+          "observations": [
+            "Der Bericht enthält mehrere ausdrücklich zugeordnete wertende Originalzitate aus Regierung und Opposition."
+          ],
+          "inferences": [
+            "Die Begriffe setzen unterschiedliche Problem- und Lösungsrahmen für denselben Haushaltsentwurf."
+          ],
+          "impact_potentials": [
+            "Stärkere Fokussierung auf äußere Bedrohung oder auf Verschuldung und Opportunitätskosten."
+          ],
+          "impact_risks": [
+            "Mittelhöhe kann kommunikativ mit tatsächlicher Sicherheitswirkung gleichgesetzt werden, obwohl diese noch nicht belegt ist."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine beobachtete Rezeptions- oder Einstellungswirkung im Input."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Der belegte Kern ist zunächst nüchtern: Der Haushaltsentwurf 2027 sieht 139,6 Milliarden Euro für Verteidigung vor, und der Bundestag hat darüber in erster Lesung beraten. Die Debatte selbst arbeitet mit starken Deutungsrahmen. Pistorius nennt die Ausgaben ein „Sicherheitsversprechen“ und sagt, Deutschland stehe „im Fadenkreuz Moskaus“. Oppositionsredner sprechen dagegen von Ausgaben „auf Pump“, einer „drohenden Schuldenfalle“ oder bezeichnen die Höhe als „skandalös“. Diese Begriffe stammen von politischen Akteuren, nicht als Tatsachenfeststellung vom Wirkungsticker. Sie setzen unterschiedliche Problemdefinitionen: äußere Bedrohung und militärische Handlungsfähigkeit auf der einen, Verschuldung, Prioritäten und Beschaffungsqualität auf der anderen Seite. Aus dem Etatansatz allein folgt weder automatisch mehr Sicherheit noch automatisch ein sozialer Schaden. Beides müsste über konkrete Mittelverwendung und beobachtete Zustandsänderungen geprüft werden.",
+        "editorial_assessment": "Der belegte Kern ist zunächst nüchtern: Der Haushaltsentwurf 2027 sieht 139,6 Milliarden Euro für Verteidigung vor, und der Bundestag hat darüber in erster Lesung beraten. Die Debatte selbst arbeitet mit starken Deutungsrahmen. Pistorius nennt die Ausgaben ein „Sicherheitsversprechen“ und sagt, Deutschland stehe „im Fadenkreuz Moskaus“. Oppositionsredner sprechen dagegen von Ausgaben „auf Pump“, einer „drohenden Schuldenfalle“ oder bezeichnen die Höhe als „skandalös“. Diese Begriffe stammen von politischen Akteuren, nicht als Tatsachenfeststellung vom Wirkungsticker. Sie setzen unterschiedliche Problemdefinitionen: äußere Bedrohung und militärische Handlungsfähigkeit auf der einen, Verschuldung, Prioritäten und Beschaffungsqualität auf der anderen Seite. Aus dem Etatansatz allein folgt weder automatisch mehr Sicherheit noch automatisch ein sozialer Schaden. Beides müsste über konkrete Mittelverwendung und beobachtete Zustandsänderungen geprüft werden.",
+        "fact_first_alternative": "Der Haushaltsentwurf 2027 sieht 139,6 Milliarden Euro für Verteidigung vor und wurde im Bundestag erstmals beraten. Regierung und Opposition bewerten Nutzen, Finanzierung und Prioritäten unterschiedlich; konkrete Wirkungen der höheren Mittel sind noch nicht belegt.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Verteidigungsetat 2027: Entwurf sieht 139,6 Milliarden Euro vor",
+          "recommended_summary": "Im Haushaltsentwurf 2027 sind 139,6 Milliarden Euro für Verteidigung vorgesehen, 31,4 Milliarden mehr als 2026. Der Bundestag hat den Etat erstmals beraten; beschlossen ist der Bundeshaushalt damit noch nicht.",
+          "recommended_meta_description": "Der Haushaltsentwurf 2027 sieht 139,6 Milliarden Euro für Verteidigung vor. Der Bundestag hat den Etat erstmals beraten; Wirkungen der höheren Mittel sind noch offen."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T10:14:05.777Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T12:45:00.000Z",
+      "last_updated": "2026-09-10T10:14:05.777Z",
+      "version": 1,
+      "news_status": "confirmed",
+      "event_id": "event-e036f9f92dd85e2d1042",
+      "case_file": null,
+      "source_published_at": "2026-09-09T12:45:00.000Z",
+      "published_at": "2026-09-10T10:14:05.777Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Endgültige Höhe und Struktur der Verteidigungsausgaben nach Abschluss des Haushaltsverfahrens prüfen.",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "Verabschiedeter Bundeshaushalt 2027 mit finalem Einzelplan 14 und Sondervermögensansatz.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f7afeab30d38942b",
+          "announced_at": "2026-09-09T12:45:00.000Z",
+          "follow_up_date": "2026-09-17T10:14:05.777Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-verteidigung-1194766",
+          "source_type": "official_rss",
+          "published_at": "2026-09-09T12:45:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-dd3a7b88de59c4ad",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-dd3a7b88de59c4ad-3cf4e0ba9d209908-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-dd3a7b88de59c4ad-02ca82a76d46d9f5-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-dd3a7b88de59c4ad-5bba0e0583444493-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "heissester-august-weltweit-seit-beginn-der-wetteraufzeichnungen-59c4ad",
+      "title": "Copernicus: Weltweit heißester August der Messreihe gemeldet",
+      "source_summary": "Stern berichtet unter Berufung auf den EU-Klimadienst Copernicus, der vergangene August sei weltweit der heißeste August seit Beginn der Wetteraufzeichnungen gewesen. Die globale Durchschnittstemperatur habe 16,96 Grad erreicht und damit den bisherigen August-Höchstwert von 2023 übertroffen.\n\nAuch Westeuropa habe den wärmsten Sommer seiner Messreihe erlebt; für die Meerestemperaturen seien ebenfalls beispiellose Höchstwerte gemessen worden. Der Input enthält die journalistische Wiedergabe, nicht die Copernicus-Primärveröffentlichung. Konkrete Schäden für Menschen oder Ökosysteme werden in diesem Quellenpaket nicht zusätzlich belegt.",
+      "summary": "Stern berichtet unter Berufung auf Copernicus vom weltweit heißesten August der Messreihe; das globale Mittel habe 16,96 Grad erreicht. Auch für Westeuropa und die Meerestemperaturen werden Rekordwerte genannt.",
+      "detail_summary": "Stern berichtet unter Berufung auf Copernicus von einem neuen globalen August-Temperaturrekord. Das globale Monatsmittel habe 16,96 Grad erreicht und den bisherigen August-Höchstwert von 2023 übertroffen. Für Westeuropa wird zudem der wärmste Sommer der Messreihe genannt, für die Meerestemperaturen beispiellose Höchstwerte. Diese Messwerte beschreiben eine negative Zustandsveränderung im Klimasystem. Konkrete Gesundheits- oder Ökosystemschäden sind mit dem bereitgestellten Material dagegen nicht belegt.",
+      "why_relevant": "Globale und regionale Temperaturrekorde sind direkte Zustandsinformationen zum Klimasystem.",
+      "topic": [
+        "Klima"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_post",
+      "importance": "sehr hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Temperaturrekorde können Menschen belasten, aber der Input belegt für diesen Bericht keine konkrete menschliche Zustandsänderung oder Gesundheitsfolge.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "sehr hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Ein neuer globaler Temperaturrekord und außergewöhnlich hohe Meerestemperaturen sind eine negative Zustandsänderung im Klimasystem.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Höhere Luft- und Meerestemperaturen verschieben den physikalischen Klimazustand gegenüber der bisherigen Messreihe.",
+            "state_change": "Der vergangene August übertrifft laut Copernicus den bisherigen globalen August-Temperaturrekord; Meerestemperaturen erreichen Höchstwerte.",
+            "condition": "Die im Bericht wiedergegebenen Copernicus-Daten bestätigen sich in der Primärveröffentlichung.",
+            "effect_role": "substantive_change",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine konkrete demokratische Zustandsänderung im gebundenen Material.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T10:14:05.777Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T03:05:16.000Z",
+      "last_updated": "2026-09-10T10:14:05.777Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-a6cdc43907a38d7754c4",
+      "case_file": null,
+      "source_published_at": "2026-09-10T03:05:16.000Z",
+      "published_at": "2026-09-10T10:14:05.777Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Copernicus-Primärveröffentlichung und Methodik ergänzen.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Primärquelle mit Datensatz und Methodik.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-705a110564f5a192",
+          "announced_at": "2026-09-10T03:05:16.000Z",
+          "follow_up_date": "2026-09-17T10:14:05.777Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/heissester-august-weltweit-seit-beginn-der-wetteraufzeichnungen-38230688.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T03:05:16.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-ca63a1cdb308ce8e",
       "title_image": {
