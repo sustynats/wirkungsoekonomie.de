@@ -310,3 +310,11 @@ test('bridge3 duplicate concept falls back without spending and required=false r
   let calls=0;const p=createTitleImagePipeline({root:directory,generate:async()=>{calls++;throw Error('No');},publish:async()=>({}),raster:async(svg,{width,height})=>({png:png(width,height)})});
   await p({...candidate(),visual_brief:{...brief3,required:false}});assert.equal(calls,0);
 });
+
+
+test('standalone bridge CLI reaches configuration validation instead of circular top-level-await deadlock',()=>{
+  const env={...process.env,WIRKUNGSTICKER_PROCESSING_MODE:'dropbox_chatgpt_bridge',VISUAL_GENERATION_PROVIDER:'higgsfield'};
+  delete env.WOEK_NEWS_BRIDGE_URL;delete env.WOEK_NEWS_BRIDGE_TOKEN;delete env.GITHUB_RUN_ID;
+  let failure;try{execFileSync(process.execPath,['scripts/news/run.mjs'],{env,encoding:'utf8',timeout:10000,stdio:'pipe'});}catch(error){failure=error;}
+  assert.equal(failure.status,1);assert.match(failure.stderr,/BRIDGE_REMOTE_CONFIG_REQUIRED/);assert.doesNotMatch(failure.stderr,/unsettled top-level await/);
+});
