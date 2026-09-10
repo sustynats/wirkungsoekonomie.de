@@ -1,21 +1,27 @@
 name: Wirkungsticker
+run-name: ${{ inputs.request_id || 'Wirkungsticker' }}
 
 on:
   push:
     # Oracle-Ausfallreserve: eigener repo-begrenzter Deploy-Key, kein PAT.
     branches:
       - codex/wirkungsticker-clock
+      - codex/wirkungsticker-import-clock
   schedule:
-    # Bridge: Recherche :45, ChatGPT :00, Import :30.
-    - cron: "45 * * * *"
-    - cron: "30 * * * *"
+    # API-Rückwechsel behält den bisherigen Takt; Bridge pollt nur Dropbox.
+    - cron: "7,22,37,52 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
       bridge_phase:
         description: "Manueller Bridge-Lauf (bestehende Stundensperren bleiben aktiv)"
         type: choice
-        options: [combined, discovery, import]
-        default: combined
+        options: [import]
+        default: import
+      request_id:
+        description: "Interne Zuordnung eines manuellen Serverlaufs"
+        type: string
+        default: ""
       title_images_backfill:
         description: "Vorhandene Akten ohne Titelbild nachziehen (verbraucht ggf. Higgsfield-Credits)"
         type: boolean
@@ -59,6 +65,9 @@ concurrency:
 
 jobs:
   update:
+    if: >-
+      (vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '*/5 * * * *' || github.ref == 'refs/heads/codex/wirkungsticker-import-clock')) ||
+      (vars.WIRKUNGSTICKER_PROCESSING_MODE != 'dropbox_chatgpt_bridge' && github.event.schedule != '*/5 * * * *' && github.ref != 'refs/heads/codex/wirkungsticker-import-clock')
     runs-on: ubuntu-latest
     timeout-minutes: 55
     env:
@@ -68,7 +77,7 @@ jobs:
       WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
       WOEK_NEWS_BRIDGE_PUBLISH: ${{ vars.WOEK_NEWS_BRIDGE_PUBLISH || 'false' }}
       GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
-      WOEK_NEWS_BRIDGE_PHASE: ${{ inputs.bridge_phase }}
+      WOEK_NEWS_BRIDGE_PHASE: import
     steps:
       - name: Checkout main
         uses: actions/checkout@v4

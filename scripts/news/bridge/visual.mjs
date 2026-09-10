@@ -38,7 +38,10 @@ export class ChatGPTBridgeVisualProvider {
     const id = job.input.job_id;
     const manifestPath = bridgePath('20_OUTPUT_READY', `${id}.visual.json`);
     const imagePath = bridgePath('20_OUTPUT_READY', `${id}.title.png`);
-    if (!await this.transport.metadata(manifestPath) || !await this.transport.metadata(imagePath)) return { status: 'missing', reason: 'BRIDGE_VISUAL_PENDING' };
+    const manifestExists = Boolean(await this.transport.metadata(manifestPath));
+    const imageExists = Boolean(await this.transport.metadata(imagePath));
+    if (manifestExists !== imageExists) return { status: 'pending', reason: 'BRIDGE_VISUAL_PENDING' };
+    if (!manifestExists) return { status: 'missing', reason: 'BRIDGE_VISUAL_MISSING' };
     const visual = assertSchema(visualSchema, JSON.parse(await this.transport.read(manifestPath)));
     if (visual.job_id !== id || visual.input_hash !== job.input.input_hash) throw new Error('BRIDGE_VISUAL_BINDING_MISMATCH');
     if (Date.parse(visual.generated_at) < Date.parse(job.input.created_at) || Date.parse(visual.generated_at) > Date.parse(now) + 300000) throw new Error('BRIDGE_VISUAL_TIME_INVALID');

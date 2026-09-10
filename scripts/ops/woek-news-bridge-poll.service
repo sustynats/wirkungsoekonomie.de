@@ -1,0 +1,15 @@
+[Unit]
+Description=Check completed Dropbox bridge outputs without AI calls
+After=network-online.target woek-news-bridge.service
+
+[Service]
+Type=oneshot
+User=ubuntu
+Environment=WOEK_NEWS_BRIDGE_DIRECTORY=/var/lib/woek-news-bridge
+ExecStart=/usr/bin/node /opt/woek-news-bridge/poll.mjs
+WorkingDirectory=/opt/woek-news-bridge
+UMask=0077
+MemoryMax=160M
+TimeoutStartSec=180
+NoNewPrivileges=true
+

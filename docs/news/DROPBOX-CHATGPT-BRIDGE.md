@@ -12,20 +12,31 @@ maßgebliche Schalter. In Bridge-Betrieb muss
 Werte brechen ab. `WOEK_NEWS_BRIDGE_PUBLISH=true` erlaubt geprüfte reguläre Importe.
 Ohne diesen Wert werden Ergebnisse privat gestaged. `test_only=true` bleibt immer
 Staging, unabhängig von der Produktionsfreigabe.
+`WOEK_NEWS_BRIDGE_DISCOVERY_ENABLED=false` hält ausschließlich die Job-Erzeugung
+während des ersten Abnahmetests an. Für Normalbetrieb gilt `true`; die Import-
+Prüfung bleibt unabhängig aktiv. Diese Startbremse verändert keine Publikationsgates.
 
-GitHub Actions recherchiert um **:45** und importiert um **:30**. ChatGPT verarbeitet
-zur vollen Stunde (Europe/Berlin). Die volle Stunde und die Minutenlage bleiben
-bei der Zeitumstellung passend; Sperrschlüssel verwenden absolute UTC-Stunden.
-GitHub-Zeitpläne können sich verzögern. Die Oracle-Ausfallreserve weckt denselben
-Workflow; sie ist kein zweiter Publisher. Der ChatGPT-Stundenlauf ist eine eigene
-cloudseitige Aufgabe und muss separat eingerichtet und funktional geprüft sein.
-Der Serverzeitplan allein startet keine ChatGPT-Bearbeitung.
+Discovery läuft um **:05/:20/:35/:50**, ChatGPT weiterhin **HH:00 Europe/Berlin**.
+Der unabhängige Import-Poller läuft **alle fünf Minuten**. Oracle prüft dabei nur
+`20_OUTPUT_READY` und das private Journal; erst fertige Pakete wecken den bestehenden
+GitHub-Importer. GitHub hat zusätzlich einen unabhängigen Fünf-Minuten-Zeitplan.
+Fehlende Outputs sind `PROCESSING_PENDING`, kein Fehler und kein Retry.
+Teilweise vorhandene Bildpakete warten auf die fehlende Datei.
 
-Die Oracle-Reserve läuft im Bridge-Betrieb nur um **:35 und :50**. Dazu wird
-`scripts/ops/woek-wirkungsticker-clock-bridge.conf` als systemd-Timer-Drop-in
-`/etc/systemd/system/woek-wirkungsticker-clock.timer.d/bridge.conf` installiert.
-So kann kein alter :05-Lauf den :30-Import derselben Stunde vorwegnehmen.
-GitHub installiert ImageMagick und Tesseract für vollständiges PNG-Decoding und OCR.
+Oracle: `woek-wirkungsticker-clock.timer` weckt die Discovery-Lane;
+`woek-news-bridge-poll.timer` prüft um `*:00/5:00`. Im Bridge-Betrieb erhält der
+Clock-Service `WOEK_CLOCK_FORCE=true`, damit ein frischer Import die unabhängige
+Recherche nicht unterdrückt. Beide Trigger verwenden dieselben Phasensperren wie
+GitHub. ChatGPT wird von keinem Server-Trigger gestartet. Der bestehende
+Cloud-Stundenlauf bleibt separat eingerichtet. Automatische Läufe benötigen
+weder den geöffneten Mac noch Codex oder Chrome. Zeitpläne und GitHub-Starts können
+sich verzögern; unter fünf Minuten Abholung ist ein Betriebsziel, keine Garantie.
+
+Discovery veröffentlicht keine Git-Daten oder Bilder und darf parallel zum
+Importer laufen. Neue Entwürfe liegen bis zur Übernahme ausschließlich im
+Oracle-Journal und in Dropbox. Import und bestehender Git-/Website-Publikationspfad
+bleiben global serialisiert. GitHub installiert ImageMagick und Tesseract für
+vollständiges PNG-Decoding und OCR.
 
 Auf der vorhandenen Oracle-VM läuft nur das private Jobjournal mit SQLite und der
 Dropbox-Zugang: `woek-news-bridge.service`, Port 8786 ausschließlich Loopback,
@@ -109,12 +120,14 @@ kompatibel.
 
 ## Sperren, Import und Wiederanlauf
 
-Die GitHub-Concurrency-Gruppe `wirkungsticker-main` umfasst den gesamten
-Veröffentlichungslauf. Zusätzlich hält Oracle eine SQLite-Schreibsperre und einen
-dauerhaften Eigentümernachweis mit GitHub-Run-ID. Keine zeitlich ablaufende Lease
-erlaubt blind einen zweiten Schreiber. Ein verwaister Eigentümer wird erst
-freigegeben, wenn GitHub den Run als abgeschlossen bestätigt. Bei GitHub-Ausfall
-bleibt die Sperre geschlossen. Erfolgreiche Phasen-Stunden werden nicht wiederholt.
+`wirkungsticker-discovery` und `wirkungsticker-main` sind getrennte GitHub-
+Concurrency-Gruppen. Oracle hält jeweils eine eigene SQLite-Schreibsperre und einen
+dauerhaften Eigentümernachweis pro Lane; das gemeinsame Jobjournal bleibt atomar.
+Es gibt keine blind ablaufende Lease. Ein verwaister Eigentümer wird erst
+freigegeben, wenn GitHub seinen Run als abgeschlossen bestätigt. Bei GitHub-Ausfall
+bleibt die Sperre geschlossen. Automatische Slots sind 15 Minuten für Discovery
+und fünf Minuten für Import. Manuelle Run-IDs erlauben neue Quellenprüfungen nach
+einem abgeschlossenen Slot, umgehen aber niemals die Lane-Sperre oder Job-Deduplizierung.
 
 Zuerst wird die validierte Ausgabe im privaten Journal angenommen. Danach folgt
 der vorhandene Website-/Git-Publikationspfad. Erst nach erfolgreichem Push schreibt
@@ -136,9 +149,32 @@ im Journal. Es gibt keinen automatischen Löschlauf; eine spätere Bereinigung
 benötigt einen eigenen Auftrag und muss dieses Datum beachten.
 
 Monitoring erfasst Discovery, Inbox, Claims, Outputs, Quarantäne, ältesten offenen
-Auftrag und mittlere Laufzeit. Ab zwei Stunden Rückstand wird gewarnt. Dropbox-
+Auftrag und mittlere Laufzeit, zusätzlich `discovery_last_success`,
+`last_chatgpt_expected_start`, `oldest_claim`, `output_detected_at`,
+`output_imported_at`, `processing_latency` und `import_pickup_latency` (Sekunden).
+Abholung unter 600 Sekunden ist das Betriebsziel, normalerweise bis 300 Sekunden.
+Jeder Lauf führt `trigger_type`, `triggered_at`, `triggered_by` und `run_id`. Ab zwei Stunden Rückstand wird gewarnt. Dropbox-
 Fehler brechen ohne API-Fallback ab und erscheinen im privaten Journal sowie im
 GitHub-Laufergebnis. Bestehende Quellenüberwachung bleibt aktiv.
+
+## Manuelle Aktionen
+
+Authentifiziert über vorhandene GitHub-Repository-Rechte:
+
+- `npm run news:bridge:discovery-now` → `DISCOVERY_NOW`
+- `npm run news:bridge:import-now` → `IMPORT_NOW`
+- `npm run news:bridge:cycle-now` → `SERVER_CYCLE_NOW`
+
+Die CLI startet den privaten GitHub-Aktionsworkflow. Der Zyklus läuft dort weiter,
+auch wenn die lokale CLI geschlossen wird: zuerst dieselbe Discovery, dann derselbe
+Importer. Bei bereits aktiver Phase verweist `409 RUN_ALREADY_ACTIVE` auf den Run.
+Ein Start-Rennen wird zusätzlich von den unveränderten Lane-Sperren abgefangen.
+Es gibt keine manuelle Zweitqueue und keinen ungeschützten Trigger-Endpunkt.
+
+Für sofortige Redaktion gibt die Nutzerin direkt in ChatGPT
+**„Wirkungsticker jetzt verarbeiten.“** ein. ChatGPT verwendet denselben Vertrag
+und claimt nur noch tatsächlich offene Inputs. Anschließend kann `IMPORT_NOW`
+ausgeführt werden. Kein `PROCESS_NOW` und kein versteckter Modellaufruf.
 
 ## Rückwechsel
 
@@ -149,5 +185,7 @@ entfernen, Konfiguration validieren und Caddy neu laden. Vorherige Konfiguration
 `/etc/caddy/Caddyfile.before-news-bridge-20260910`. Keine Kostenjournale zurücksetzen;
 bestehende Budgets und reservierte Anfragen bleiben maßgeblich. Dropbox und SQLite
 bleiben als Historie erhalten. Kein Code-Rückbau erforderlich.
-Zusätzlich den systemd-Timer-Drop-in `bridge.conf` entfernen und mit
-`systemctl daemon-reload` sowie Timer-Neustart den bisherigen Takt wiederherstellen.
+Zusätzlich `woek-news-bridge-poll.timer` deaktivieren und den Bridge-Drop-in des
+Clock-Service mit `WOEK_CLOCK_FORCE=true` entfernen. `systemctl daemon-reload` und
+Timer-Neustart stellen das bisherige Verhalten wieder her. Der API-Workflow behält
+seinen ursprünglichen Viertelstundentakt; Bridge-Discovery ist über den Modus aus.

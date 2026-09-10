@@ -921,6 +921,10 @@ export async function runWirkungsticker(options = {}) {
     schema_version: "1.2",
     processing_version: AI_PROCESSING_VERSION,
     processing_mode: mode,
+    trigger_type: process.env.GITHUB_EVENT_NAME === 'workflow_dispatch' ? 'manual' : 'scheduled',
+    triggered_at: now,
+    triggered_by: process.env.GITHUB_ACTOR || 'internal',
+    run_id: process.env.GITHUB_RUN_ID || null,
     usage_recovery: usage.failed_run_recovery ? { status: usage.failed_run_recovery.status,
       checked_at: usage.failed_run_recovery.checked_at,
       unresolved_run_ids: usage.failed_run_recovery.unresolved_run_ids || [] } : null,
@@ -1322,6 +1326,7 @@ export async function runWirkungsticker(options = {}) {
     options.captureBridgeCandidates?.(structuredClone(ready));
     if (bridge && !options.dryRun) {
       if (bridgePhase !== 'import') {
+        if (report.all_sources_failed) throw new Error('BRIDGE_DISCOVERY_SOURCE_FAILURE');
         const enriched = [];
         for (const candidate of await bridge.selectCandidates(ready)) {
           const permitted = new Set(articleSourceOrder(candidate).filter(s => {
@@ -1341,6 +1346,12 @@ export async function runWirkungsticker(options = {}) {
         report.bridge_enqueued = await bridge.enqueue(enriched, [...byId.values()], now);
       }
       if (bridgePhase !== 'discovery') {
+        // Discovery writes no public Git data. A newly queued event therefore
+        // obtains its private draft from the immutable journal at first import.
+        for (const job of await bridge.store.all()) {
+          if (!byId.has(job.candidate.story_id) && !['quarantined','archive_failed','acknowledged'].includes(job.status))
+            byId.set(job.candidate.story_id, pendingRecord(job.candidate, 'BRIDGE_PENDING', now));
+        }
         const results = await bridge.reconcile(registry, [...byId.values()], now);
         report.bridge_results = results.map(r => ({ job_id: r.job_id, decision: r.decision, staged: r.staged, visual_status: r.visual?.status || null }));
         for (const result of results) {
@@ -1367,6 +1378,14 @@ export async function runWirkungsticker(options = {}) {
         }
       }
       report.bridge_monitor = await bridge.monitor(now);
+      if (bridgePhase === 'discovery') {
+        report.completed_at = new Date().toISOString();
+        await bridge.store.observe('discovery-report', { started_at: now, completed_at: report.completed_at,
+          trigger_type: report.trigger_type, triggered_by: report.triggered_by, run_id: report.run_id,
+          source_successes: report.source_successes, source_failures: report.source_failures, jobs: report.bridge_enqueued });
+        // No canonical story/state files, media releases, build or publication.
+        return report;
+      }
     }
   }
   for (const candidate of selected) bumpCandidateFunnel(sourceFunnel, candidate, "ai_selected");

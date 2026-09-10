@@ -12,6 +12,7 @@ function runClock(t, { recentReport = true, recentDispatch = false, failPush = f
   const state = path.join(dir, "last-dispatch"), log = path.join(dir, "git.log");
   if (recentDispatch) fs.writeFileSync(state, String(Math.floor(Date.now() / 1000)));
   for (const [name, code] of Object.entries({
+    flock: 'process.exit(0);', // These tests exercise dispatch selection, not Linux flock.
     curl: 'console.log(JSON.stringify({started_at: new Date(Date.now() - (process.env.TEST_RECENT === "true" ? 0 : 3600000)).toISOString()}));',
     git: 'const a=process.argv.slice(2);fs.appendFileSync(process.env.TEST_LOG,JSON.stringify(a)+"\\n");if(a.includes("rev-parse")||a.includes("commit-tree"))console.log("mock-commit");if(a.includes("push")&&process.env.TEST_FAIL_PUSH==="true")process.exit(1);',
   })) {

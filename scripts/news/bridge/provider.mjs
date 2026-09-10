@@ -10,7 +10,14 @@ export class DropboxChatGPTBridgeProvider {
   }
   async selectCandidates(candidates) {
     const checkpoints = await this.store.observation('source-checkpoints') || {};
-    return candidates.filter(c => checkpoints[c.story_id] !== c.content_hash).slice(0, this.maxJobs * 3);
+    const active = (await this.store.all()).filter(j => !terminal.has(j.status));
+    const selected = [];
+    for (const candidate of candidates) {
+      if (selected.length >= Math.min(this.maxJobs, this.maxPending - active.length)) break;
+      if (checkpoints[candidate.story_id] === candidate.content_hash || active.some(j => sameBridgeEvent(candidate, j.candidate)) || selected.some(c => sameBridgeEvent(candidate,c))) continue;
+      selected.push(candidate);
+    }
+    return selected;
   }
   async enqueue(candidates, stories, now, { testOnly = false } = {}) {
     let jobs = await this.store.all();
@@ -73,6 +80,7 @@ export class DropboxChatGPTBridgeProvider {
         let visual = null;
         if (result.record && this.visualProvider) {
           visual = await this.visualProvider.receive(job, now);
+          if (visual.status === 'pending') continue;
           // Missing/failed imagery follows the existing free impact-card path.
           // Existing imagery is never bought again as a bridge fallback.
         }
@@ -80,6 +88,7 @@ export class DropboxChatGPTBridgeProvider {
         const accepted = { ...result, story_id: job.candidate.story_id, input_content_hash: job.candidate.content_hash, job_id: job.input.job_id, staged, visual, output_hash: hash(output), accepted_at: now };
         job.accepted = { ...accepted, ...(visual?.file ? { visual: { ...visual, file: undefined } } : {}) };
         job.status = 'accepted'; job.accepted_at = now;
+        job.output_detected_at = (await this.store.observation(`output:${job.input.job_id}`))?.at || now;
         if (staged && result.record) job.staging = { record: result.record, html: storyPage(result.record), visual_sha256: visual?.sha256 || null };
         await this.store.put(job); // durable staging BEFORE any ACK
         results.push(accepted);
@@ -104,7 +113,10 @@ export class DropboxChatGPTBridgeProvider {
       try {
         job.ack = ack; await this.store.put(job);
         await this.transport.writeAtomic(bridgePath('30_ACK', `${job.input.job_id}.ack.json`), ack);
-        job.status = 'acknowledged'; job.completed_at = now; await this.store.put(job);
+        job.status = 'acknowledged'; job.completed_at = now; job.output_imported_at = now;
+        job.processing_latency = (Date.parse(job.accepted_at) - Date.parse(job.queued_at || job.created_at)) / 1000;
+        job.import_pickup_latency = (Date.parse(now) - Date.parse(job.output_detected_at || job.accepted_at)) / 1000;
+        await this.store.put(job);
       } catch (error) { await this.failure(job, 'ack', error, now); }
     }
     // Retry archival independently of import. ACK remains as completion receipt.
@@ -152,6 +164,9 @@ export class DropboxChatGPTBridgeProvider {
       output_ready: folders['20_OUTPUT_READY'].filter(e => e.name.endsWith('.output.json')).length,
       errors: jobs.filter(j => ['quarantined','archive_failed'].includes(j.status)).length, oldest_open_minutes: Math.max(0, ...open.map(j => (Date.parse(now) - Date.parse(j.created_at)) / 60000)), alerts: [] };
     const discovery = await this.store.observation('discovery');
+    report.discovery_last_success = discovery?.at || null;
+    report.last_chatgpt_expected_start = new Date(Math.floor(Date.parse(now)/3600000)*3600000).toISOString();
+    report.oldest_claim = null;
     if (!discovery || Date.parse(now) - Date.parse(discovery.at) > 7200000) report.alerts.push('DISCOVERY_OVERDUE');
     if (report.inbox > this.maxPending || report.oldest_open_minutes > 120) report.alerts.push('QUEUE_OVERDUE');
     for (const entry of folders['10_CLAIMED']) {
@@ -160,6 +175,7 @@ export class DropboxChatGPTBridgeProvider {
       if (!job || job.ack || folders['20_OUTPUT_READY'].some(e => e.name === `${id}.output.json`)) continue;
       const key = `claim:${id}`, observed = await this.store.observation(key) || { at: now };
       await this.store.observe(key, observed);
+      if (!report.oldest_claim || observed.at < report.oldest_claim.at) report.oldest_claim = { job_id: id, at: observed.at };
       if (Date.parse(now) - Date.parse(observed.at) > 7200000) report.alerts.push(`STALE_CLAIM:${id}`);
       // Never reset a claim from age alone; a slow worker could still own it.
     }
@@ -173,7 +189,7 @@ export class DropboxChatGPTBridgeProvider {
     }
     Object.assign(report, await this.store.observation('completion-metrics') || { completed: 0, average_queue_minutes: null, last_publication_at: null });
     await this.store.observe('monitor', report);
-    await this.transport.writeAtomic(bridgePath('95_LOGS', `${now.replace(/[^0-9TZ]/g, '')}.server.json`), report);
+    await this.transport.writeAtomic(bridgePath('95_LOGS', `${now.replace(/[^0-9TZ]/g, '')}.${hash(report).slice(0,12)}.server.json`), report);
     return report;
   }
 }

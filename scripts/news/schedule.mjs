@@ -8,7 +8,7 @@ if (!Number.isFinite(now.getTime())) throw new Error("INVALID_RUN_TIME");
 const schedule = scheduledSlot(now);
 const forced = process.env.GITHUB_EVENT_NAME === "workflow_dispatch" || process.argv.includes("--force");
 const automated = process.env.GITHUB_EVENT_NAME === "schedule"
-  || (process.env.GITHUB_EVENT_NAME === "push" && process.env.GITHUB_REF === "refs/heads/codex/wirkungsticker-clock");
+  || (process.env.GITHUB_EVENT_NAME === "push" && ['refs/heads/codex/wirkungsticker-clock','refs/heads/codex/wirkungsticker-import-clock'].includes(process.env.GITHUB_REF));
 // GitHub darf Zeitpläne verzögert starten. Ein geplanter Lauf wird deshalb nie
 // wegen der tatsächlichen Startminute verworfen.
 const shouldRun = forced || automated || Boolean(schedule.slot);
@@ -20,16 +20,22 @@ const output = {
 };
 
 if (processingMode() === 'dropbox_chatgpt_bridge' && shouldRun) {
-  const eventSchedule = process.env.GITHUB_EVENT_SCHEDULE;
-  const phase = eventSchedule === '45 * * * *' ? 'discovery' : eventSchedule === '30 * * * *' ? 'import'
-    : process.env.WOEK_NEWS_BRIDGE_PHASE || (now.getUTCMinutes() >= 45 ? 'discovery' : 'import');
+  const phase = process.env.WOEK_NEWS_BRIDGE_PHASE || 'import';
   const { bridgeSession } = await import('./bridge/remote.mjs');
   try {
-    await bridgeSession().store.acquire(now.toISOString(), phase);
+    const session = bridgeSession();
+    const status = phase === 'import' ? await session.status() : null;
+    if (status && !status.ready.length) {
+      output.should_run = 'false'; output.bridge_status = 'PROCESSING_PENDING';
+    } else {
+    await session.store.acquire(now.toISOString(), phase, { manualRunId: forced ? `${process.env.GITHUB_RUN_ID}:${process.env.GITHUB_RUN_ATTEMPT || '1'}` : null });
     output.slot = `Dropbox Bridge ${phase} ${now.toISOString().slice(0, 13)}`;
     output.bridge_phase = phase;
     output.bridge_acquired = 'true';
     if (process.env.GITHUB_ENV) fs.appendFileSync(process.env.GITHUB_ENV, `WOEK_NEWS_BRIDGE_PHASE=${phase}\n`);
+    await session.store.observe(`run:${phase}`, { trigger_type: forced ? 'manual' : 'scheduled', triggered_at: now.toISOString(),
+      triggered_by: process.env.GITHUB_ACTOR || 'oracle-clock', run_id: process.env.GITHUB_RUN_ID });
+    }
   } catch (error) {
     if (!['BRIDGE_SLOT_ALREADY_COMPLETED','BRIDGE_RUN_LOCKED'].includes(error.message)) throw error;
     output.should_run = 'false'; output.bridge_skipped = error.message;

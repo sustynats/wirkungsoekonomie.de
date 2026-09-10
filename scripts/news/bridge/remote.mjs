@@ -12,7 +12,8 @@ export function bridgeSession(env = process.env) {
   const owner = `${runId}:${env.GITHUB_RUN_ATTEMPT || '1'}`;
   async function request(op, args = []) {
     const response = await fetch(url, { method: 'POST', redirect: 'error', signal: AbortSignal.timeout(180000),
-      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${secret}`, 'X-Bridge-Owner': owner }, body: JSON.stringify({ op, args }) });
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${secret}`, 'X-Bridge-Owner': owner,
+        'X-Bridge-Lane': env.WOEK_NEWS_BRIDGE_PHASE === 'discovery' ? 'discovery' : 'import' }, body: JSON.stringify({ op, args }) });
     const chunks = []; let size = 0;
     for await (const chunk of response.body) { size += chunk.length; if (size > 24 * 1024 * 1024) throw new Error('BRIDGE_RESPONSE_TOO_LARGE'); chunks.push(chunk); }
     let result; try { result = JSON.parse(Buffer.concat(chunks)); } catch { throw Object.assign(new Error('BRIDGE_REMOTE_INVALID_RESPONSE'), { retryable: response.status >= 500 }); }
@@ -22,7 +23,7 @@ export function bridgeSession(env = process.env) {
   const store = Object.fromEntries(['acquire','get','put','all','observe','observation','release'].map(op => [op, (...args) => request(`store.${op}`, args)]));
   const transport = Object.fromEntries(['list','read','metadata','move','writeAtomic','archive'].map(op => [op, (...args) => request(`dropbox.${op}`, args)]));
   transport.readBinary = async file => Buffer.from(await request('dropbox.readBinary', [file]), 'base64');
-  return { store, transport };
+  return { store, transport, status: () => request('bridge.status') };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

@@ -18,6 +18,8 @@ import { generateEditorialVisual } from '../../scripts/news/title-image/pipeline
 import { createHiggsfieldAdapter } from '../../scripts/news/title-image/higgsfield.mjs';
 import { loadNewsRegistry } from '../../scripts/news/registry.mjs';
 import { digest } from '../../scripts/news/title-image/policy.mjs';
+import { outputStatus } from '../../scripts/news/bridge/status.mjs';
+import { runWirkungsticker } from '../../scripts/news/run.mjs';
 
 const now = '2026-09-10T06:45:00.000Z';
 const later = '2026-09-10T07:30:00.000Z';
@@ -72,6 +74,43 @@ test('SQLite denies overlap and completed slot remains completed on repeated att
   assert.throws(()=>store.acquire(now,'discovery'),/ALREADY_COMPLETED/);
   assert.throws(()=>store.acquire(now,'discovery'),/ALREADY_COMPLETED/);
   second.acquire(now,'import');second.release(true);
+});
+test('discovery and import run concurrently; manual work shares each lane lock and can follow a completed slot',t=>{
+  const {directory}=setup(t),file=path.join(directory,'lanes.sqlite');
+  const discovery=new BridgeStore(file,{lane:'discovery'}), importer=new BridgeStore(file,{lane:'import'}), other=new BridgeStore(file,{lane:'discovery'});
+  t.after(()=>[discovery,importer,other].forEach(s=>s.close()));
+  discovery.acquire(now,'discovery');importer.acquire(now,'import');
+  assert.throws(()=>other.acquire(now,'discovery',{manualRunId:'123:1'}),/LOCKED/);
+  discovery.release(true);other.acquire(now,'discovery',{manualRunId:'123:1'});other.release(true);
+  assert.throws(()=>other.acquire(now,'discovery',{manualRunId:'123:1'}),/ALREADY_COMPLETED/);
+  importer.release(true);importer.acquire('2026-09-10T06:50:00.000Z','import');
+});
+test('five-minute polling records first detection and pending never consumes retries',async t=>{
+  const {provider,store,transport}=setup(t);await provider.enqueue([candidate()],[],now);const job=store.all()[0];
+  for(const minute of ['07:00','07:10','07:20'])assert.equal((await outputStatus(store,transport,`2026-09-10T${minute}:00.000Z`)).status,'PROCESSING_PENDING');
+  assert.deepEqual(store.get(job.input.job_id).attempts,{});
+  transport.files.set(bridgePath('20_OUTPUT_READY',`${job.input.job_id}.output.json`),JSON.stringify(output(job.input)));
+  assert.equal((await outputStatus(store,transport,later)).ready[0],job.input.job_id);
+  await outputStatus(store,transport,'2026-09-10T07:35:00.000Z');assert.equal(store.observation(`output:${job.input.job_id}`).at,later);
+  await provider.reconcile({},[candidate()],later);await provider.finalize([],'2026-09-10T07:32:00.000Z');
+  assert.equal(store.get(job.input.job_id).import_pickup_latency,120);
+});
+test('real discovery runner queues new events without canonical writes, image work or AI',async t=>{
+  const {provider}=setup(t), keys=['WIRKUNGSTICKER_PROCESSING_MODE','VISUAL_GENERATION_PROVIDER','WOEK_NEWS_BRIDGE_PHASE'];
+  const previous=Object.fromEntries(keys.map(k=>[k,process.env[k]]));
+  Object.assign(process.env,{WIRKUNGSTICKER_PROCESSING_MODE:'dropbox_chatgpt_bridge',VISUAL_GENERATION_PROVIDER:'chatgpt_bridge',WOEK_NEWS_BRIDGE_PHASE:'discovery'});
+  const files=['stories','state','newsroom','usage'].map(f=>`data/news/${f}.json`), before=files.map(f=>digest(fs.readFileSync(f)));
+  const source={source_id:'test',publisher_id:'publisher',name:'Test',url:'https://example.org/',feed_url:'https://example.org/rss',enabled:true,source_type:'official_rss',primary_source:true,access:{status:'public',article:'metadata_only',cost_usd:0},frequency_class:'high_frequency'};
+  const rss='<rss><channel><item><title>Bund beschließt Klimagesetz zur Energieversorgung</title><link>https://example.org/a</link><description>Neue Regeln verändern Investitionen in Energie und Infrastruktur.</description><pubDate>Thu, 10 Sep 2026 06:40:00 GMT</pubDate></item></channel></rss>';
+  let calls=0;
+  try {
+    const report=await runWirkungsticker({now,dryRun:false,bridgeProvider:provider,registry:{sources:[source],policy:{}},
+      state:{source_status:{},seen_items:{},pending_story_ids:[],relevance_filter_version:'4.0'},storyStore:{stories:[]},usage:{runs:[]},
+      newsroom:{source_items:{},events:{},event_sources:[],discovery_candidates:[]},budgetFx:{rate_date:'2026-09-10',rate_usd_per_eur:1.16},
+      fetchFeedImpl:async()=>({body:rss,final_url:source.feed_url}),callAiImpl:async()=>{calls++;throw Error('NO_AI');},prepareTitleImage:async()=>{calls++;throw Error('NO_IMAGES');}});
+    assert.equal(calls,0);assert.equal(report.ai_calls,0);assert.equal(report.source_successes,1);assert.ok(report.bridge_enqueued.length);
+    assert.deepEqual(files.map(f=>digest(fs.readFileSync(f))),before);
+  } finally {for(const k of keys)if(previous[k]===undefined)delete process.env[k];else process.env[k]=previous[k];}
 });
 for(const decision of ['hold','reject'])test(`${decision}: durable decision and ACK without publication`,async t=>{
   const {provider,store,transport}=setup(t);await provider.enqueue([candidate()],[],now);
