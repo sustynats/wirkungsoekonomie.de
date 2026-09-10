@@ -13,6 +13,11 @@ on:
       - 'content/**'
       - '!content/taxonomy/site-map.json'
       - 'scripts/**'
+      # News ingestion and operational monitoring do not change #253 content.
+      # Keep the branch-writing projection job off these server-only changes;
+      # their tests and the complete PR website gates still run independently.
+      - '!scripts/news/**'
+      - '!scripts/ops/**'
       # Parliament image candidates do not project state sustainability content.
       # Keep this branch-writing audit off that isolated provider/QA lane.
       - '!scripts/parliament/impact-visuals/**'
