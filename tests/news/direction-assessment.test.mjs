@@ -3,7 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { directionAssessmentErrors, directionInputDiagnostics, dimensionAssessment, normalizeEmptyDirectionPaths, DIRECTION_ASSESSMENT_VERSION, DIRECTION_SEPARATION_RULE, DIRECTION_REFERENCE_RULE, NEWS_DIMENSION_SCHEMA } from '../../scripts/news/direction-assessment.mjs';
-import { renderDimensionMeters, renderImpactPath, sanitizeVisuals } from '../../scripts/news/visuals.mjs';
+import { renderDimensionMeters as publicDimensionMeters, renderImpactPath, sanitizeVisuals } from '../../scripts/news/visuals.mjs';
 import { buildAnalysisPrompt, validateAnalysis } from '../../scripts/news/lib.mjs';
 import { analysisValidationDiagnostics, shouldRetryQualityGate } from '../../scripts/news/run.mjs';
 import { editorialJudgmentErrors } from '../../scripts/news/editorial-judgment.mjs';
@@ -157,7 +157,7 @@ test('unimplemented negative risk stays negative; uncertainty is not a positive 
   assert.match(renderDimensionMeters(a),/data-direction="negative"/);
   a.human.tendency='gemischt';assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_MIXED_PATHS_REQUIRED:human'));
   Object.assign(a.human,mixed());assert.deepEqual(directionAssessmentErrors(a,sources),[]);
-  assert.match(renderDimensionMeters(a),/data-magnitude="unknown"/);
+  assert.match(renderDimensionMeters(a),/aria-label="Wirkpfad fachlich offen"/);
   a.human.positive_path.source_ids=['unknown'];assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_PATH_SOURCE_INVALID:human'));
   a.human.positive_path=structuredClone(a.human.negative_path);assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_MIXED_PATHS_REQUIRED:human'));
 });
@@ -259,3 +259,5 @@ test('editorial mixed direction also requires grounded positive paths',()=>{
   for(const s of a.sections)for(const i of s.visual?.items||[])if(i.direction==='positive')i.direction='mixed';
   a.positive_path_checks=[];assert.ok(editorialJudgmentErrors(a).includes('EDITORIAL_POSITIVE_PATH_UNGROUNDED'));
 });
+
+const renderDimensionMeters = (input, options = {}) => publicDimensionMeters(input, { ...options, context: { ...options.context, privateImpactPreview: true } });

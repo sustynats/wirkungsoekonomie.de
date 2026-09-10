@@ -467,7 +467,8 @@ test("Generator bindet Portrait, eigenständige Route, Rücklink, RSS und gemisc
   assert.match(html, /href="\.\.\/\.\.\/#methodik"/);
   assert.match(html, /id="analysis-visuals-title"/);
   assert.match(html, /Die Wirkungsstruktur auf einen Blick/);
-  assert.match(html, /aria-label="Tragweite für Mensch: Tragweite offen"/);
+  assert.match(html, /Wir überarbeiten die Wirkungsprofile/);
+  assert.doesNotMatch(html, /Tragweite für Mensch/);
   assert.match(html, /Wirkungsprofil für Mensch, Planet und Demokratie/);
   assert.match(html, /href="\.\.\/\.\.\/\.\.\/so-wirkt-wirkungsoekonomie\/">Wirkungsökonomie einfach erklärt/);
   assert.match(html, /Methodik hinter dieser Analyse/);

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { directionAssessmentErrors, dimensionAssessment, DIRECTION_RECIPIENT_RULE } from '../../scripts/news/direction-assessment.mjs';
 import { IMPACT_RULE, deriveImpactPresentation } from '../../scripts/news/impact-assessment.mjs';
-import { renderDimensionMeters } from '../../scripts/news/visuals.mjs';
+import { renderDimensionMeters as publicDimensionMeters } from '../../scripts/news/visuals.mjs';
 import { storyCard, storyPage } from '../../scripts/news/build.mjs';
 import { buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
 import { prepareReviewedStory } from '../../scripts/news/publish-reviewed.mjs';
@@ -41,7 +41,7 @@ test('list and detail explain signed potentials without a mixed total or hidden 
   for(const compact of [true,false]) {
     const html=renderDimensionMeters(a,{compact});
     assert.equal(deriveImpactPresentation(a).dimensions.human.direction,'open');
-    assert.match(html,/data-magnitude="unknown"/);
+    assert.match(html,/aria-label="Wirkpfad fachlich offen"/);
     assert.doesNotMatch(html,/Relevanz:/);
     if (!compact) assert.match(html,/Stand der Einordnung/);
   }
@@ -52,7 +52,7 @@ test('the reported Dröge case changes through the shared presentation, not a co
   assert.ok(s);const before=JSON.stringify(s);
   for(const html of [storyCard(s),storyPage(s)]) {
     assert.doesNotMatch(html,/Gegenläufige Wirkpfade/);
-    assert.match(html,/data-magnitude="unknown"/);
+    assert.doesNotMatch(html,/data-magnitude=/);
     assert.equal(deriveImpactPresentation(s).review.status,'needs_reassessment');
   }
   assert.equal(JSON.stringify(s),before);
@@ -80,7 +80,7 @@ test('an unscoped historical judgment cannot appear as a verdict about the headl
   assert.ok(s);const before=JSON.stringify(s);
   assert.equal(dimensionAssessment(s.analysis,'democracy').status,'unscoped');
   for(const html of [storyCard(s),storyPage(s)]) {
-    assert.match(html,/data-magnitude="unknown"/);
+    assert.doesNotMatch(html,/data-magnitude=/);
     assert.doesNotMatch(html,/class="wt-dim wt-dim--democracy" data-potential-model="2.0" data-direction="positive"/);
     assert.equal(deriveImpactPresentation(s).dimensions.democracy.direction,'open');
   }
@@ -97,3 +97,5 @@ test('embedded dimension-only diagrams keep the scope of their surrounding autho
   assert.match(renderDimensionMeters(dimensions),/data-direction="open"/);
   assert.doesNotMatch(renderDimensionMeters(dimensions),/Teilbewertung ohne klaren Vergleich/);
 });
+
+const renderDimensionMeters = (input, options = {}) => publicDimensionMeters(input, { ...options, context: { ...options.context, privateImpactPreview: true } });
