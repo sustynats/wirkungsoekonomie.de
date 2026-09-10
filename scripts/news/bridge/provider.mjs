@@ -189,7 +189,7 @@ export class DropboxChatGPTBridgeProvider {
     const code = /^BRIDGE_[A-Za-z_0-9:.$\[\]-]{1,190}$/.test(error.message || '') ? error.message : 'BRIDGE_OPERATION_FAILED';
     // A temporary Dropbox refusal is not an invalid editorial package. Keep
     // the same durable job, with one bounded attempt per due server cycle.
-    const infrastructure = error.retryable === true && /^BRIDGE_DROPBOX_HTTP_(?:429|5\d\d)$/.test(code);
+    const infrastructure = error.retryable === true && /^(?:BRIDGE_DROPBOX_HTTP_(?:429|5\d\d)|BRIDGE_REMOTE_TIMEOUT|BRIDGE_RESEARCH_UNAVAILABLE)$/.test(code);
     const retryable = error.retryable === true && (infrastructure || attempt < 3);
     job.last_error = { job_id: job.input.job_id, stage, error_code: code, message: code, retryable, failed_at: now, attempt };
     if (infrastructure) {
