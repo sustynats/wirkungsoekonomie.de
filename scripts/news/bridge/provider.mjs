@@ -17,9 +17,10 @@ export class DropboxChatGPTBridgeProvider {
   async selectCandidates(candidates) {
     const checkpoints = await this.store.observation('source-checkpoints') || {};
     const active = (await this.store.all()).filter(j => !terminal.has(j.status));
+    const activeRequests = active.filter(j => j.input.job_type !== 'impact_semantic_review');
     const selected = [];
     for (const candidate of candidates) {
-      if (selected.length >= Math.min(this.maxJobs, this.maxPending - active.length)) break;
+      if (selected.length >= Math.min(this.maxJobs, this.maxPending - activeRequests.length)) break;
       if (checkpoints[candidate.story_id] === candidate.content_hash || active.some(j => newsJob(j) && sameBridgeEvent(candidate, j.candidate)) || selected.some(c => sameBridgeEvent(candidate,c))) continue;
       selected.push(candidate);
     }
@@ -35,7 +36,7 @@ export class DropboxChatGPTBridgeProvider {
       await this.queuePrepared(job, now, results);
     }
     for (const candidate of candidates) {
-      if (created >= this.maxJobs || jobs.filter(j => !terminal.has(j.status)).length >= this.maxPending) break;
+      if (created >= this.maxJobs || jobs.filter(j => !terminal.has(j.status) && j.input.job_type !== 'impact_semantic_review').length >= this.maxPending) break;
       const input = bridgeInput(candidate, now, { stories, testOnly });
       let job = await this.store.get(input.job_id);
       if (!job) {

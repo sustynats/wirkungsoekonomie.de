@@ -29,8 +29,17 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
   }
   // Old acknowledgments remain immutable. A malformed legacy check list gets
   // a new, protocol-bound review job; it never becomes an editorial approval.
-  const inputHash = hash({ protocol: 'structured-checks-1', parent: job.input.job_id, outputHash, assessment: proposed, record });
-  const id = `${job.input.job_id.slice(0, 20)}${hash({ kind: SEMANTIC_JOB_TYPE, inputHash }).slice(0, 24)}`;
+  const reviewRecord = { title: record.title, source_summary: record.source_summary || record.research_summary || '',
+        analysis: record.analysis || { sections: record.sections, claim_ledger: record.claim_ledger },
+        sources: [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])].map(s => ({ source_id: s.source_id, url: s.url, title: s.title, publisher: s.publisher, excerpt: s.article_excerpt || s.summary || '', source_role: s.source_role || s.source_function || null })) };
+  // Only editorial content belongs in the identity. Discovery check timestamps
+  // and other operational fields must not create a new review every five minutes.
+  const existing = (await bridge.store.all()).find(j => j.input.job_type === SEMANTIC_JOB_TYPE
+    && !terminal.has(j.status) && j.input.review_protocol === "structured-checks-1"
+    && j.input.parent_job_id === job.input.job_id && j.input.parent_output_hash === outputHash
+    && hash(j.input.record) === hash(reviewRecord) && hash(j.input.proposed_assessment) === hash(proposed));
+  const inputHash = hash({ protocol: 'structured-checks-1', parent: job.input.job_id, outputHash, assessment: proposed, record: reviewRecord });
+  const id = existing?.input.job_id || `${job.input.job_id.slice(0, 20)}${hash({ kind: SEMANTIC_JOB_TYPE, inputHash }).slice(0, 24)}`;
   let reviewJob = await bridge.store.get(id);
   if (!reviewJob) {
     const input = {
@@ -38,9 +47,7 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
       processing_mode: 'dropbox_chatgpt_bridge', contract_path: bridgePath('98_CONFIG', 'impact-assessment-contract-2.json'),
       parent_job_id: job.input.job_id, parent_output_hash: outputHash,
       instructions: `Unabhängiger zweiter fachlicher Prüfpass: Beurteile Quellen und Wirkungsmetadaten neu, ohne die Entscheidung des ersten Autors zu übernehmen. ${IMPACT_RULE} Prüfe auch Quelle gegen Zusammenfassung, Überzeichnung, unterschlagene Gegenpfade und begründete Nichtkompensation. Eine amtliche Einstufung ist kein Verbot und ein Programm kein Folgenbeweis. Korrigiere ausschließlich impact_assessment, keine Originalnachricht oder persönliche Meinung. Bei Kernfehlern, die sich aus den gebundenen Quellen nicht beheben lassen: needs_review. Keine Bilder, keine Anbieter-API. Prüfe alle aufgeführten Checks einzeln mit Begründung. Ein Prüflabel ohne fachliche Prüfung genügt nicht. Gib das vollständige geprüfte impact_assessment zurück. output.json atomar zuletzt; Claim-/ACK-Regeln bleiben erhalten.`,
-      record: { title: record.title, source_summary: record.source_summary || record.research_summary || '',
-        analysis: record.analysis || { sections: record.sections, claim_ledger: record.claim_ledger },
-        sources: [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])].map(s => ({ source_id: s.source_id, url: s.url, title: s.title, publisher: s.publisher, excerpt: s.article_excerpt || s.summary || '', source_role: s.source_role || s.source_function || null })) },
+      record: reviewRecord,
       proposed_assessment: proposed,
       validation_findings: semanticIssues(proposed, record),
       review_protocol: 'structured-checks-1',
