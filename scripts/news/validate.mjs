@@ -112,7 +112,7 @@ for (const story of activeStories) {
   const uncertaintyAt = detail.indexOf("Was dieser Stand nicht belegt");
   if (truthAt < factCheckAt || uncertaintyAt < truthAt || uncertaintyAt > analysisAt) fail(`NEWS_TRUTH_FIRST_INVALID:${story.story_id}`);
   if (!detail.includes("Ausgangsmeldung vom") || !detail.includes("WÖk-Einordnung:")) fail(`NEWS_SOURCE_DATE_MISSING:${story.story_id}`);
-  if (!detail.includes("Erste Ordnung – unmittelbar") || !detail.includes("Risiken, Gegenläufe und Prüfgrenzen")) fail(`NEWS_CONSEQUENCE_PROSE_INVALID:${story.story_id}`);
+  if (!/Erste Ordnung [–-] unmittelbar/.test(detail) || !detail.includes("Risiken, Gegenläufe und Prüfgrenzen")) fail(`NEWS_CONSEQUENCE_PROSE_INVALID:${story.story_id}`);
 }
 for (const caseFile of grouping.cases) {
   const integrityErrors = caseIntegrityErrors(caseFile, activeStories);
