@@ -4,6 +4,8 @@
   const main = document.querySelector("main[data-news-reader]");
   if (!main) return;
   const isDetail = ["detail", "analysis"].includes(main.dataset.newsReader);
+  const standalone = window.matchMedia?.("(display-mode: standalone)")?.matches
+    || window.navigator?.standalone === true;
   const pendingKey = "woek:wirkungsticker:navigation:v1";
   const entryKey = "newsReader";
   const excluded = "a, button, input, textarea, select, label, summary, details, [contenteditable], [role='slider'], [role='button'], [data-no-swipe], nav, video, audio, iframe";
@@ -108,8 +110,9 @@
     gesture = null;
     if (event.touches.length !== 1 || blockedTarget(event.target) || window.visualViewport?.scale > 1) return;
     const touch = event.touches[0];
-    // Both screen edges remain exclusively available to native browser gestures.
-    if (touch.clientX < 24 || touch.clientX > window.innerWidth - 24) return;
+    // Browser tabs keep native edge navigation. The installed reader has no
+    // browser navigation chrome, so its reading gestures also work at the edges.
+    if (!standalone && (touch.clientX < 24 || touch.clientX > window.innerWidth - 24)) return;
     gesture = { id: touch.identifier, x: touch.clientX, y: touch.clientY, at: Date.now(), horizontal: false };
   }, { passive: true });
 

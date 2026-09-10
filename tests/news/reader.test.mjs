@@ -7,7 +7,7 @@ const script = fs.readFileSync("assets/js/news-navigation.js", "utf8");
 const key = "woek:wirkungsticker:navigation:v1";
 const origin = "https://wirkungsoekonomie.de";
 
-function page({ path = "/wirkungsticker/a/", pending = null, state = null, navigationType = "navigate", next = true, detail = true, reader = null, locked = false } = {}) {
+function page({ path = "/wirkungsticker/a/", pending = null, state = null, navigationType = "navigate", next = true, detail = true, reader = null, locked = false, standalone = false } = {}) {
   const events = new Map();
   const docEvents = new Map();
   const windowEvents = new Map();
@@ -27,7 +27,7 @@ function page({ path = "/wirkungsticker/a/", pending = null, state = null, navig
       addEventListener: (name, handler) => docEvents.set(name, handler),
       getElementById: () => ({ scrollIntoView() {} }),
     },
-    window: { location, history, innerWidth: 390, visualViewport: { scale: 1 }, getSelection: () => "", getComputedStyle: () => ({ overflowX: "visible" }),
+    window: { location, history, innerWidth: 390, visualViewport: { scale: 1 }, matchMedia: () => ({matches:standalone}), getSelection: () => "", getComputedStyle: () => ({ overflowX: "visible" }),
       performance: { getEntriesByType: () => [{ type: navigationType }] },
       sessionStorage: { getItem: (name) => { if (locked) throw Error("blocked"); return store.get(name); }, setItem: (name, value) => store.set(name, value), removeItem: (name) => store.delete(name) },
       addEventListener: (name, handler) => windowEvents.set(name, handler),
@@ -117,6 +117,16 @@ test("buttons, horizontal scrollers, open dialogs and zoom retain their touch in
     p.swipe();
     assert.equal(p.assigned.length, 0);
   }
+});
+
+test("installed book and analysis reader accepts edge swipes while browser tabs retain native edges", () => {
+  const left=page({path:'/wirkungsticker/analyse/book/',reader:'analysis',standalone:true});
+  left.swipe({startX:382,endX:100});
+  assert.deepEqual(left.assigned,[`${origin}/wirkungsticker/b/`]);
+  const right=page({path:'/wirkungsticker/analyse/book/',reader:'analysis',standalone:true});
+  right.swipe({startX:8,endX:280});
+  assert.equal(right.backs(),0);
+  assert.deepEqual(right.assigned,[`${origin}/wirkungsticker/#story-a`]);
 });
 
 test("hidden modal shells do not disable news gestures", () => {

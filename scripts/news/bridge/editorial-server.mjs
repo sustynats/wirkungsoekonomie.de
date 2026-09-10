@@ -21,7 +21,7 @@ const transport=new DropboxTransport({credentials:loadDropboxCredentials(path.jo
 const approval=new EditorialApproval(store.db),intake=new EditorialIntake({store,transport,directory:path.join(directory,'editorial-uploads')});
 const admin=existingAdminAuthorizer();
 const handler=createEditorialIntakeHandler({intake,approval,authorize:async req=>(await admin(req))===owner?owner:null});
-await transport.writeAtomic(bridgePath('98_CONFIG','editorial-request-contract-2.json'),EDITORIAL_REQUEST_CONTRACT);
+await transport.writeAtomic(bridgePath('98_CONFIG','editorial-request-contract-3.json'),EDITORIAL_REQUEST_CONTRACT);
 const notificationFile=path.join(directory,'editorial-discord.json');
 const notificationConfig=fs.existsSync(notificationFile)?JSON.parse(fs.readFileSync(notificationFile)):null;
 const registry=loadNewsRegistry(process.cwd());
