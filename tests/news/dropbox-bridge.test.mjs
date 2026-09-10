@@ -318,3 +318,45 @@ test('standalone bridge CLI reaches configuration validation instead of circular
   let failure;try{execFileSync(process.execPath,['scripts/news/run.mjs'],{env,encoding:'utf8',timeout:10000,stdio:'pipe'});}catch(error){failure=error;}
   assert.equal(failure.status,1);assert.match(failure.stderr,/BRIDGE_REMOTE_CONFIG_REQUIRED/);assert.doesNotMatch(failure.stderr,/unsettled top-level await/);
 });
+
+test('failed editorial output returns to same inbox/job with evidence and bounded correction count',async t=>{
+  const {provider,store,transport}=setup(t,{correctionsEnabled:true});await provider.enqueue([candidate()],[],now);const id=store.all()[0].input.job_id;
+  const invalid=output(store.get(id).input,'publish');invalid.story.short_summary='Fehler';
+  provider.adapt=()=>{throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:['CLAIM_NUMBER_NOT_IN_EVIDENCE']});};
+  for(let attempt=1;attempt<=2;attempt++){
+    transport.files.set(bridgePath('20_OUTPUT_READY',id+'.output.json'),JSON.stringify({...invalid,processed_at:later,story:{...invalid.story,short_summary:'Fehler '+attempt}}));
+    await provider.reconcile({},[],later);const job=store.get(id);assert.equal(job.status,'correction_pending');assert.equal(job.corrections.length,attempt);
+    const repair=JSON.parse(transport.files.get(bridgePath('00_INBOX',id+`.repair-${attempt}.json`)));
+    assert.equal(repair.job_id,id);assert.equal(repair.original_input.input_hash,job.input.input_hash);assert.equal(repair.validation_errors.issues[0],'CLAIM_NUMBER_NOT_IN_EVIDENCE');
+    assert.ok(transport.files.has(bridgePath('90_ERRORS',id+`.correction-${attempt}.output.json`)));
+    assert.ok(!transport.files.has(bridgePath('20_OUTPUT_READY',id+'.output.json')));
+    const attempts=structuredClone(job.attempts);await provider.reconcile({},[],later);assert.deepEqual(store.get(id).attempts,attempts);
+  }
+  transport.files.set(bridgePath('20_OUTPUT_READY',id+'.output.json'),JSON.stringify(invalid));await provider.reconcile({},[],later);
+  assert.equal(store.get(id).status,'quarantined');assert.equal(store.get(id).corrections.length,2);assert.equal(store.all().length,1);
+});
+test('corrected hold is accepted immediately, preserves errors and archives repair request with ACK',async t=>{
+  const {provider,store,transport}=setup(t,{correctionsEnabled:true,stageOnly:false});await provider.enqueue([candidate()],[],now);const job=store.all()[0],id=job.input.job_id;
+  const bad=output(job.input);bad.schema_version='invalid';transport.files.set(bridgePath('20_OUTPUT_READY',id+'.output.json'),JSON.stringify(bad));
+  await provider.reconcile({},[],later);assert.equal(store.get(id).status,'correction_pending');
+  transport.files.set(bridgePath('20_OUTPUT_READY',id+'.output.json'),JSON.stringify(output(job.input)));
+  await provider.reconcile({},[],later);assert.equal(store.get(id).status,'accepted');assert.equal(store.get(id).last_error,undefined);
+  await provider.finalize([],later);assert.equal(store.get(id).ack.status,'hold');assert.ok(store.get(id).archived_at);
+  assert.ok(transport.files.has(bridgePath('90_ERRORS',id+'.correction-1.output.json')));
+  assert.ok(!transport.files.has(bridgePath('00_INBOX',id+'.repair-1.json')));
+});
+test('an interrupted correction delivery resumes without a new round or lost original output',async t=>{
+  const {provider,store,transport}=setup(t,{correctionsEnabled:true,stageOnly:false});await provider.enqueue([candidate()],[],now);const job=store.all()[0],id=job.input.job_id;
+  const bad=output(job.input);bad.schema_version='invalid';transport.files.set(bridgePath('20_OUTPUT_READY',id+'.output.json'),JSON.stringify(bad));
+  const write=transport.writeAtomic.bind(transport);let fail=true;transport.writeAtomic=async(p,v)=>{if(fail&&p.endsWith('.repair-1.json'))throw Error('NETWORK');return write(p,v);};
+  await provider.reconcile({},[],later);assert.equal(store.get(id).status,'correction_prepared');
+  fail=false;await provider.reconcile({},[],later);assert.equal(store.get(id).status,'correction_pending');assert.equal(store.get(id).corrections.length,1);
+  assert.deepEqual((await outputStatus(store,transport,later)).ready,[]);
+});
+test('test-only jobs and mismatched bindings never enter automatic correction',async t=>{
+  for(const testOnly of[true,false]){
+    const {provider,store,transport}=setup(t,{correctionsEnabled:true});await provider.enqueue([candidate()],[],now,{testOnly});const job=store.all()[0],o=output(job.input);if(testOnly)o.schema_version='wrong';else o.input_hash=hash('foreign');
+    transport.files.set(bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json'),JSON.stringify(o));await provider.reconcile({},[],later);
+    assert.equal(store.get(job.input.job_id).status,'quarantined');assert.equal(store.get(job.input.job_id).corrections,undefined);
+  }
+});
