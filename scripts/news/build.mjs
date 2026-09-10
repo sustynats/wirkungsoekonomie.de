@@ -298,7 +298,7 @@ export function storyCard(story, index, {privateImpactPreview = false} = {}) {
   const updateBanner = renderUpdateBanner(story);
   const href = storyHref(story);
   const visual = renderStoryVisual(story, { href, loading: index === 0 ? "eager" : "lazy", sourceLabel: `${publisherLabel} · Ausgangsmeldung ${formatDate(firstSourceDate(story), { dateOnly: true })}`, impactContext:{privateImpactPreview} });
-  return `<article ${privateImpactPreview ? 'data-private-impact-preview ' : ''}class="news-card${visual ? " news-card--visual" : ""}${index === 0 ? " news-card--lead" : ""}" id="story-${escapeHtml(story.slug)}" data-news-card data-news-story-id="${escapeHtml(story.slug)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topics)}" data-dimensions="${escapeHtml(dimensionKeys)}" data-high-impact="${high}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(story.last_updated)}">
+  return `<article class="news-card${visual ? " news-card--visual" : ""}${index === 0 ? " news-card--lead" : ""}" ${privateImpactPreview ? 'data-private-impact-preview ' : ''}id="story-${escapeHtml(story.slug)}" data-news-card data-news-story-id="${escapeHtml(story.slug)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topics)}" data-dimensions="${escapeHtml(dimensionKeys)}" data-high-impact="${high}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(story.last_updated)}">
   ${updateBanner}
   <div class="news-card__topline">
     <span class="news-card__topic">${renderIcon(topicIcon(story.topic), "wt-icon--topic")}<span class="card-kicker">${escapeHtml((story.topic || []).slice(0, 3).join(" · "))}</span></span>
