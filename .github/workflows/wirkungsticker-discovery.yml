@@ -23,9 +23,10 @@ jobs:
     timeout-minutes: 15
     env:
       WIRKUNGSTICKER_PROCESSING_MODE: dropbox_chatgpt_bridge
-      VISUAL_GENERATION_PROVIDER: chatgpt_bridge
+      VISUAL_GENERATION_PROVIDER: ${{ vars.VISUAL_GENERATION_PROVIDER || 'higgsfield' }}
       WOEK_NEWS_BRIDGE_PHASE: discovery
       WOEK_NEWS_BRIDGE_URL: https://130.162.217.58.sslip.io/api/news-bridge
+      WOEK_NEWS_BRIDGE_EDITORIAL_ENABLED: ${{ vars.WOEK_NEWS_BRIDGE_EDITORIAL_ENABLED }}
       WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
       WOEK_NEWS_BRIDGE_MAX_JOBS: ${{ vars.WOEK_NEWS_BRIDGE_MAX_JOBS || '6' }}
     steps:
