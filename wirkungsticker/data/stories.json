@@ -1,7 +1,104 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-10T04:12:36.750Z",
+  "updated_at": "2026-09-10T08:54:06.689Z",
   "stories": [
+    {
+      "story_id": "wt-7342dafe037138af",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7342dafe037138af-651cf0ae5e378333-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7342dafe037138af-bbd25c66f67cf672-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7342dafe037138af-29abd606a8501117-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7342dafe037138af-6399e12725bd88e1-source.png",
+          "alt_text": "Stilisierte Datenillustration mit neutralen Personen-Symbolen und einem abwärts gerichteten Pfeil."
+        }
+      },
+      "slug": "zahl-der-beziehenden-von-asylbewerberleistungen-2025-um-15-prozent-gesunken-7138af",
+      "title": "Asylbewerberleistungen: Zahl der Beziehenden 2025 laut Destatis-Bericht um 15 Prozent gesunken",
+      "source_summary": "stern berichtet unter Berufung auf das Statistische Bundesamt, Ende 2025 hätten rund 390.000 Menschen in Deutschland Leistungen nach dem Asylbewerberleistungsgesetz bezogen. Das seien 15 Prozent beziehungsweise 71.400 Personen weniger als ein Jahr zuvor.\n\nAls häufigstes Herkunftsland nennt die Meldung Syrien mit einem Anteil von 17 Prozent. Der bereitgestellte Datensatz enthält die Destatis-Pressemitteilung selbst nicht. Gründe für den Rückgang, Veränderungen bei Anspruchsstatus oder Aufenthaltsrecht und Auswirkungen auf Haushalte oder öffentliche Ausgaben lassen sich aus der gelieferten Quelle nicht ableiten.",
+      "summary": "Ende 2025 bezogen laut stern unter Berufung auf Destatis rund 390.000 Menschen Asylbewerberleistungen, 15 Prozent weniger als ein Jahr zuvor. Gründe und Folgewirkungen sind im Quellenpaket nicht belegt.",
+      "detail_summary": "stern berichtet unter Berufung auf das Statistische Bundesamt, Ende 2025 hätten rund 390.000 Menschen in Deutschland Leistungen nach dem Asylbewerberleistungsgesetz bezogen. Das seien 15 Prozent beziehungsweise 71.400 Personen weniger als ein Jahr zuvor.\n\nAls häufigstes Herkunftsland nennt die Meldung Syrien mit einem Anteil von 17 Prozent. Der bereitgestellte Datensatz enthält die Destatis-Pressemitteilung selbst nicht. Gründe für den Rückgang, Veränderungen bei Anspruchsstatus oder Aufenthaltsrecht und Auswirkungen auf Haushalte oder öffentliche Ausgaben lassen sich aus der gelieferten Quelle nicht ableiten. Die Zahlen beschreiben damit zunächst eine Zustandsänderung bei der Zahl der Leistungsbeziehenden; ihre Ursachen bleiben offen.",
+      "why_relevant": "Die Statistik beschreibt eine deutliche Veränderung bei einer bundesweit relevanten Sozialleistung.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_post",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Zahl der Leistungsbeziehenden sinkt; daraus folgt ohne Gründe und Statuswechsel keine Richtung für Wohlergehen oder Versorgung.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine belastbare Zustandsänderung aus dem gelieferten Material ableitbar.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine konkrete demokratische Zustandsänderung aus der Statistik ableitbar.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T08:54:06.689Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T06:39:05.000Z",
+      "last_updated": "2026-09-10T08:54:06.689Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-dffe79e5859e19711010",
+      "case_file": null,
+      "source_published_at": "2026-09-10T06:39:05.000Z",
+      "published_at": "2026-09-10T08:54:06.689Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/zahl-der-beziehenden-von-asylbewerberleistungen-2025-um-15-prozent-gesunken-38231448.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T06:39:05.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-bbaa7af8793200d8",
       "title_image": {

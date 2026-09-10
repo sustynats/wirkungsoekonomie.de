@@ -20,7 +20,7 @@ export async function outputStatus(store, transport, now) {
     ready.push(id);
   }
   for (const job of await store.all()) {
-    if (job.status === 'accepted' || job.status === 'acknowledged' && !job.archived_at) ready.push(job.input.job_id);
+    if (job.status === 'correction_prepared' || job.status === 'accepted' || job.status === 'acknowledged' && !job.archived_at) ready.push(job.input.job_id);
   }
   const result = { at: now, status: ready.length ? 'OUTPUT_READY' : 'PROCESSING_PENDING',
     ready: [...new Set(ready)], unknown_outputs: unknown,

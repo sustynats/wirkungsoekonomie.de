@@ -75,6 +75,7 @@ jobs:
       VISUAL_GENERATION_PROVIDER: ${{ vars.VISUAL_GENERATION_PROVIDER || 'higgsfield' }}
       WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
       WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+      WOEK_NEWS_BRIDGE_CORRECTIONS_ENABLED: ${{ vars.WOEK_NEWS_BRIDGE_CORRECTIONS_ENABLED }}
       WOEK_NEWS_BRIDGE_PUBLISH: ${{ vars.WOEK_NEWS_BRIDGE_PUBLISH || 'false' }}
       GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
       WOEK_NEWS_BRIDGE_PHASE: import
