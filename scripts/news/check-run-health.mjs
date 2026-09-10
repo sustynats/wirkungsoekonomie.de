@@ -64,6 +64,11 @@ export function evaluateRunHealth(report, options = {}) {
   if (expectedAfter !== null && (!Number.isFinite(expectedAfter) || !Number.isFinite(startedAt) || startedAt < expectedAfter)) errors.push("RUN_REPORT_STALE");
   if (!options.expectedAfter && Number.isFinite(startedAt) && nowMs - startedAt > maxAgeMinutes * 60 * 1000) errors.push("RUN_REPORT_STALE");
   if (report?.ai_error) errors.push(report.ai_error === 'AI_BUDGET_EXHAUSTED' ? 'AI_BUDGET_EXHAUSTED' : report.ai_error === "AI_INPUT_TOO_LARGE" ? "AI_INPUT_BLOCKED" : "AI_PROVIDER_DEGRADED");
+  if (report?.processing_mode === 'dropbox_chatgpt_bridge') {
+    if (!report.bridge_monitor?.dropbox_reachable) errors.push('BRIDGE_UNAVAILABLE');
+    if (report.bridge_monitor?.alerts?.length) errors.push('BRIDGE_ATTENTION_REQUIRED');
+    if (Number(report.ai_calls || 0) !== 0) errors.push('BRIDGE_API_CALL_DETECTED');
+  }
   if (Number(report?.source_successes || 0) === 0 && report?.sources_scheduled !== 0
     && !isolatedSourceThrottleWithRecentCoverage(report)) errors.push("NO_SOURCE_SUCCEEDED");
   if (sourceCoverageDegraded(report)) errors.push("SOURCE_COVERAGE_DEGRADED");

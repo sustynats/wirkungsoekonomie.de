@@ -1,5 +1,6 @@
 import { sha256, decodeWoekAiResponse } from './lib.mjs';
 import { modelRates, validReportedUsage } from './budget.mjs';
+import { assertApiProcessing } from './processing-mode.mjs';
 
 export const BATCH_PROTOCOL = 1;
 export const BATCH_RESERVATION_USD = 0.125;
@@ -103,6 +104,7 @@ export function createNewsBatchClient({ state, usage, save, apiUrl, authToken, n
     if (terminal.has(remote?.status) && !row.completed_at) row.completed_at = now;
   }
   async function request(path, input) {
+    assertApiProcessing();
     if (!authToken) throw Object.assign(new Error('BATCH_AUTH_MISSING'), { requestAttempts: 0, providerNotCalled: true });
     const r = await fetchImpl(`${url.href}${path}`, { method: input ? 'POST' : 'GET', redirect: 'error', signal: AbortSignal.timeout(45000),
       headers: { Authorization: `Bearer ${authToken}`, 'Content-Type': 'application/json', 'X-WOEK-Client-ID': 'woek-wirkungsticker-batch-v1' }, ...(input ? { body: JSON.stringify(input) } : {}) });
@@ -153,6 +155,7 @@ export function createNewsBatchClient({ state, usage, save, apiUrl, authToken, n
     return report;
   }
   async function call(story, { kind, methodVersion, prompt }) {
+    assertApiProcessing();
     if (!backgroundBatchEligibility(story, { kind, now, state }).eligible) throw deferred('BATCH_NOT_ELIGIBLE');
     if (!authToken) throw deferred('BATCH_AUTH_MISSING');
     const fingerprint = batchStoryFingerprint(story, kind, methodVersion);

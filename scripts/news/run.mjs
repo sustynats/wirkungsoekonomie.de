@@ -31,7 +31,7 @@ import { duplicateGroups, mergeLivingFiles, isMerged, subjectConflict, livingFil
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
-import { IMAGE_CONFIG } from "./title-image/policy.mjs";
+import { IMAGE_CONFIG, digest as imageDigest } from "./title-image/policy.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint, sourceReviewFingerprint } from "./evidence-packets.mjs";
 import { numberTokens, evidenceNumberTokens, numericEvidenceReceipt } from "./numeric-evidence.mjs";
 import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, estimateMediaUsage, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
@@ -44,13 +44,14 @@ import { createPublicationDateRecovery } from "./publication-date.mjs";
 import { EVENT_RELEVANCE_VERSION, EVENT_EDITORIAL_POLICY_VERSION, needsEventPolicyReview, balanceEventQueue, categoryCoverage, updateEventLifecycle } from './event-relevance.mjs';
 import { observedMajorEvents, missedNewsRechecks, coverageAudit } from './coverage-audit.mjs';
 import { runActiveDiscovery, agendaSignal } from './active-discovery.mjs';
+import { processingMode, visualGenerationProvider } from './processing-mode.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = EVENT_RELEVANCE_VERSION;
 const RELEVANCE_BACKFILL_DAYS = 2;
 const AI_PROCESSING_VERSION = "2026-09-06-throughput-3";
 const OUTPUT_FORMAT_ERRORS = new Set(["AI_MALFORMED_JSON", "AI_SCHEMA_ANALYSES_REQUIRED", "AI_RESPONSE_TOO_LARGE", "AI_PROVIDER_OUTPUT_INVALID"]);
-const CAPACITY_HOLD_REASONS = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_DISABLED"]);
+const CAPACITY_HOLD_REASONS = new Set(["BRIDGE_PENDING", "AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_DISABLED"]);
 const TECHNICAL_HOLD_REASONS = new Set(["AI_PROVIDER_UNAVAILABLE", "AI_OUTPUT_INVALID", "AI_INPUT_TOO_LARGE"]);
 const RETRYABLE_QUALITY_ERRORS = [
   /^AI_ANALYSIS_MISSING$/,
@@ -884,6 +885,14 @@ export async function fetchFeedWithRetry(source, policy, fetchImpl = fetchFeed, 
 }
 
 export async function runWirkungsticker(options = {}) {
+  const mode = processingMode();
+  visualGenerationProvider(); // Reject contradictory configuration before any work.
+  let bridge = options.bridgeProvider;
+  const bridgePhase = process.env.WOEK_NEWS_BRIDGE_PHASE || 'combined';
+  if (mode === 'dropbox_chatgpt_bridge' && !options.dryRun) {
+    bridge ||= (await import('./bridge/runtime.mjs')).createBridgeRuntime();
+    await bridge.store.acquire(options.now || new Date().toISOString(), bridgePhase);
+  }
   const changedStoryIds = new Set();
   const nowDate = options.now ? new Date(options.now) : process.env.WOEK_NEWS_NOW ? new Date(process.env.WOEK_NEWS_NOW) : new Date();
   if (!Number.isFinite(nowDate.getTime())) throw new Error("INVALID_RUN_TIME");
@@ -903,7 +912,7 @@ export async function runWirkungsticker(options = {}) {
   const enabledSourceIds = new Set(enabledSources.map(source => source.source_id));
   const allowedObservationItems = () => Object.values(newsroom.source_items).filter(item => enabledSourceIds.has(item.source_id));
   const eventAuditEnabled = registry.policy?.event_relevance?.enabled === true;
-  const dueSources = enabledSources.filter((source) => sourceDue(source, state.source_status[source.source_id], now));
+  const dueSources = mode === 'dropbox_chatgpt_bridge' && bridgePhase === 'import' ? [] : enabledSources.filter((source) => sourceDue(source, state.source_status[source.source_id], now));
   const previousSourceStatus = structuredClone(state.source_status);
   const pendingStoryCountBefore = (state.pending_story_ids || []).length;
   const pendingStoryIdsBefore = new Set(state.pending_story_ids || []);
@@ -911,6 +920,7 @@ export async function runWirkungsticker(options = {}) {
   const report = {
     schema_version: "1.2",
     processing_version: AI_PROCESSING_VERSION,
+    processing_mode: mode,
     usage_recovery: usage.failed_run_recovery ? { status: usage.failed_run_recovery.status,
       checked_at: usage.failed_run_recovery.checked_at,
       unresolved_run_ids: usage.failed_run_recovery.unresolved_run_ids || [] } : null,
@@ -1038,7 +1048,7 @@ export async function runWirkungsticker(options = {}) {
   }
   if (dueSources.length && report.source_successes === 0) report.all_sources_failed = true;
 
-  if (eventAuditEnabled) {
+  if (eventAuditEnabled && !(mode === 'dropbox_chatgpt_bridge' && bridgePhase === 'import')) {
     const discovery = await runActiveDiscovery({ registry, state, stories: storyStore.stories, now,
       fetchIndex: options.fetchDiscoveryIndexImpl, fetchMetadata: options.fetchDiscoveryMetadataImpl });
     allItems.push(...discovery.items);
@@ -1143,7 +1153,7 @@ export async function runWirkungsticker(options = {}) {
       cluster.sources.some((source) => freshItemIds.has(source.item_id)),
     ));
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
-  const retryableReasons = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_INPUT_TOO_LARGE", "SOURCE_INTEGRITY_OPEN"]);
+  const retryableReasons = new Set(["BRIDGE_PENDING", "AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_INPUT_TOO_LARGE", "SOURCE_INTEGRITY_OPEN"]);
   const retryCandidates = (storyStore.stories || [])
     .filter((story) => !isMerged(story))
     .filter((story) => (!story.published || story.pending_update || dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id)) && !freshIds.has(story.story_id))
@@ -1305,7 +1315,60 @@ export async function runWirkungsticker(options = {}) {
   report.catchup_control = catchUp.control;
   if (catchUp.control.enabled) report.budget_throttle = { ...report.budget_throttle,
     policy_version: "2.1", max_stories_per_run: 6, mode: "bounded_backlog_catchup" };
-  const { selected, deferred } = partitionAiQueue(ready, catchUp.stage, maxAiStories, now);
+  const { selected, deferred } = mode === 'api' ? partitionAiQueue(ready, catchUp.stage, maxAiStories, now) : { selected: [], deferred: [] };
+  const bridgeImages = new Map();
+  if (mode !== 'api') {
+    for (const candidate of ready) byId.set(candidate.story_id, pendingRecord(candidate, mode === 'disabled' ? 'AI_DISABLED' : 'BRIDGE_PENDING', now));
+    options.captureBridgeCandidates?.(structuredClone(ready));
+    if (bridge && !options.dryRun) {
+      if (bridgePhase !== 'import') {
+        const enriched = [];
+        for (const candidate of await bridge.selectCandidates(ready)) {
+          const permitted = new Set(articleSourceOrder(candidate).filter(s => {
+            const registered = enabledSources.find(r => r.source_id === s.source_id);
+            return registered && sourceAccess(registered, 'article').allowed;
+          }).slice(0, 3).map(s => s.url));
+          const sources = [];
+          for (const source of candidate.sources) {
+            if (!permitted.has(source.url)) { sources.push(source); continue; }
+            try {
+              const result = await (options.fetchArticleImpl || fetchArticleExcerpt)(source, enabledSources.find(r => r.source_id === source.source_id), registry.policy);
+              sources.push({ ...source, article_excerpt: result.excerpt, retrieved_at: now }); report.article_excerpts_fetched++;
+            } catch { sources.push(source); report.article_excerpt_failures++; }
+          }
+          enriched.push({ ...candidate, sources });
+        }
+        report.bridge_enqueued = await bridge.enqueue(enriched, [...byId.values()], now);
+      }
+      if (bridgePhase !== 'discovery') {
+        const results = await bridge.reconcile(registry, [...byId.values()], now);
+        report.bridge_results = results.map(r => ({ job_id: r.job_id, decision: r.decision, staged: r.staged, visual_status: r.visual?.status || null }));
+        for (const result of results) {
+          if (result.staged) continue;
+          if (!result.record) {
+            const held = byId.get(result.story_id);
+            if (held && (held.pending_update?.content_hash || held.content_hash) === result.input_content_hash) {
+              held.bridge_decision = { job_id: result.job_id, decision: result.decision, at: now, content_hash: result.input_content_hash };
+              if (held.pending_update) held.pending_update.reason = `BRIDGE_${result.decision.toUpperCase()}`;
+              else held.pending_reason = `BRIDGE_${result.decision.toUpperCase()}`;
+            }
+            continue;
+          }
+          const previous = byId.get(result.record.story_id);
+          if (previous?.bridge_import?.output_hash === result.output_hash) continue;
+          byId.set(result.record.story_id, result.record); changedStoryIds.add(result.record.story_id);
+          report[previous?.published ? 'updated_stories' : 'published_stories']++;
+          if (result.visual?.status === 'validated') bridgeImages.set(result.record.story_id, result.visual);
+          if (result.mergeFrom && result.mergeFrom !== result.record.story_id) {
+            const changes = mergeLivingFiles([...byId.values()], [{ canonical_id: result.record.story_id, duplicate_ids: [result.mergeFrom], reason: 'BRIDGE_REVIEWED_SAME_EVENT' }], now);
+            if (!changes.length) throw new Error('BRIDGE_MERGE_GATE_FAILED');
+            report.retired_stories += changes.length;
+          }
+        }
+      }
+      report.bridge_monitor = await bridge.monitor(now);
+    }
+  }
   for (const candidate of selected) bumpCandidateFunnel(sourceFunnel, candidate, "ai_selected");
   for (const candidate of selected) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id,
     decision: 'selected_for_verification', score: candidate.preanalysis.event_score, reason: 'event_priority_with_soft_coverage_balance_within_existing_budget' });
@@ -1322,7 +1385,7 @@ export async function runWirkungsticker(options = {}) {
     report.quality_holds.push({ story_id: candidate.story_id, reason: deferredReason });
   }
 
-  const aiEnabled = String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
+  const aiEnabled = mode === 'api' && String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
   if (selected.length && aiEnabled) {
     const aiDeadline = Date.now() + 7 * 60000;
     const sourceRegistryById = new Map(enabledSources.map((source) => [source.source_id, source]));
@@ -1562,7 +1625,10 @@ export async function runWirkungsticker(options = {}) {
         continue;
       }
       try {
-        const result = await prepareImage(story);
+        const visual = bridgeImages.get(storyId);
+        const bytes = visual?.file ? fs.readFileSync(visual.file) : visual?.status === 'validated' ? await bridge.transport.readBinary((await import('./bridge/contract.mjs')).bridgePath('20_OUTPUT_READY', `${story.bridge_import.job_id}.title.png`)) : null;
+        if (bytes && imageDigest(bytes) !== visual.sha256) throw new Error('BRIDGE_VISUAL_HASH_CHANGED');
+        const result = await prepareImage(story, { ...(bytes ? { bridgeAsset: { bytes, ...visual, provider: 'chatgpt_bridge', model: 'chatgpt-images', prompt_version: 'woek-chatgpt-bridge-1', generated_at: visual.visual.generated_at } } : {}) });
         if (result.title_image) {
           if (JSON.stringify(publicTitleImage(story.title_image)) !== JSON.stringify(publicTitleImage(result.title_image))) report.title_images_changed += 1;
           story.title_image = result.title_image;
