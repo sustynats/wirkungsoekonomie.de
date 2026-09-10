@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-10T05:22:36.276Z",
+  "last_successful_run": "2026-09-10T05:37:15.186Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -65143,6 +65143,9 @@
     }
   },
   "pending_story_ids": [
+    "wt-990631d7dc3586cb",
+    "wt-fb6e4cc95630404a",
+    "wt-3017bbc9b24cda3f",
     "wt-ee7d2471308013ef",
     "wt-c27617d1490d8db0",
     "wt-8c9e32d4fbebaf6d",
@@ -65339,13 +65342,10 @@
     "wt-86ea1ddfd89beabf",
     "wt-a5874ae28ed5533f",
     "wt-293fa4edfc2b5a5d",
-    "wt-990631d7dc3586cb",
-    "wt-c15cb7a9f3b72c35",
-    "wt-3017bbc9b24cda3f",
-    "wt-fb6e4cc95630404a"
+    "wt-c15cb7a9f3b72c35"
   ],
   "relevance_filter_version": "2026-09-09.1",
-  "last_attempted_run": "2026-09-10T05:22:36.276Z",
+  "last_attempted_run": "2026-09-10T05:37:15.186Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1652,
@@ -67214,9 +67214,9 @@
       "checked_at": "2026-09-10T04:07:18.985Z"
     },
     "wt-ca63a1cdb308ce8e": {
-      "input_hash": "9df2af80a335cc2dbabbadf9",
+      "input_hash": "d947c64c14e2f9cb61491e9e",
       "version": "2026-09-09.1",
-      "checked_at": "2026-09-10T04:23:01.465Z"
+      "checked_at": "2026-09-10T05:37:15.186Z"
     },
     "https://www.deutschlandfunk.de/tote-und-verletzte-nach-angriff-auf-einkaufszentrum-in-sumy-106.html": {
       "input_hash": "04d9e65b478af838b218e08e",
@@ -67227,6 +67227,16 @@
       "input_hash": "000bc04c58fceee71d9a5581",
       "version": "2026-09-09.1",
       "checked_at": "2026-09-10T05:22:36.276Z"
+    },
+    "wt-fb6e4cc95630404a": {
+      "input_hash": "04d9e65b478af838b218e08e",
+      "version": "2026-09-09.1",
+      "checked_at": "2026-09-10T05:37:15.186Z"
+    },
+    "wt-3017bbc9b24cda3f": {
+      "input_hash": "000bc04c58fceee71d9a5581",
+      "version": "2026-09-09.1",
+      "checked_at": "2026-09-10T05:37:15.186Z"
     }
   }
 }
