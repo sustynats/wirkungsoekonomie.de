@@ -6,6 +6,7 @@ import { IMAGE_CONFIG as C, chooseTitleImageMode, buildEditorialImagePrompt, dig
 import { inspectImage, downloadImage } from "./image-file.mjs";
 import { renderTitleImageFromStory, storyToTitleInput, SIZES } from "./index.mjs";
 import { rasterize } from "./rasterize.mjs";
+import { assertHiggsfieldProcessing, visualGenerationProvider } from "../processing-mode.mjs";
 
 const exec = promisify(execFile);
 const REPO = "sustynats/wirkungsoekonomie.de";
@@ -26,7 +27,7 @@ export function publicTitleImage(value) {
   }
   const original = value.source_visual;
   if (value.mode === "editorial" && /^https:\/\/github\.com\/sustynats\/wirkungsoekonomie\.de\/releases\/download\/wirkungsticker-media-\d{4}-\d{2}(?:-part-(?:[2-9]|[1-9]\d+))?\/wt-[a-f0-9]{16}-[a-f0-9]{16}-source\.(?:png|jpe?g|webp)$/.test(original?.url || "")) {
-    result.background = { url: original.url };
+    result.background = { url: original.url, ...(original.alt_text ? { alt_text: String(original.alt_text).slice(0, 1000) } : {}) };
   }
   return ["og", "wide", "square"].some(key => result[key]) ? result : null;
 }
@@ -35,6 +36,7 @@ export function titleFingerprint(story, mode, sourceHash = null) {
   return digest(JSON.stringify({ input, sourceHash, template: C.template_version }));
 }
 export async function generateEditorialVisual(story, { endpoint = process.env.WOEK_NEWS_VISUAL_API_URL, token = process.env.WOEK_NEWS_ANALYSIS_TOKEN, fetchImpl = fetch } = {}) {
+  assertHiggsfieldProcessing();
   if (!endpoint || !token) throw imageError("HIGGSFIELD_NOT_CONFIGURED");
   const url = new URL(endpoint);
   if (url.protocol !== "https:" || url.username || url.password) throw imageError("HIGGSFIELD_ENDPOINT_INVALID");
@@ -53,6 +55,11 @@ export async function generateEditorialVisual(story, { endpoint = process.env.WO
   const info = inspectImage(bytes);
   if (info.sha256 !== result.sha256 || result.model !== C.model) throw imageError("HIGGSFIELD_ASSET_MISMATCH");
   return { ...info, bytes, model: result.model, job_id: result.job_id, generated_at: result.generated_at, reused: Boolean(result.reused), prompt_version: result.prompt_version };
+}
+
+export class HiggsfieldVisualProvider {
+  constructor(options = {}) { this.options = options; }
+  generate(story) { return generateEditorialVisual(story, this.options); }
 }
 
 export function createReleaseStore({ run = async (args) => (await exec("gh", args, { timeout: 90000, maxBuffer: 1024 * 1024 })).stdout, download = downloadImage } = {}) {
@@ -99,10 +106,10 @@ export function createReleaseStore({ run = async (args) => (await exec("gh", arg
 
 export function createTitleImagePipeline({ root = ROOT, generate = generateEditorialVisual, render = renderTitleImageFromStory, raster = rasterize, publish = createReleaseStore(), download = downloadImage, now = () => new Date().toISOString(), allowGeneration = true, maxGenerations = C.max_generations_per_run } = {}) {
   let generations = 0, circuitOpen = false;
-  return async function prepare(story, { dryRun = false, cardsOnly = false } = {}) {
+  return async function prepare(story, { dryRun = false, cardsOnly = false, bridgeAsset = null } = {}) {
     const decision = chooseTitleImageMode(story);
     const refresh = story.title_image?.refresh_prompt_version;
-    if (refresh) {
+    if (refresh && !bridgeAsset) {
       const { refresh_prompt_version: _revision, retry_after: _retry, refresh_failure: _failure, ...previous } = story.title_image;
       if (refresh !== C.prompt_version || decision.mode !== "editorial" || cardsOnly) {
         return { title_image: previous, report: { story_id: story.story_id, status: "preserved", reason: "EDITORIAL_REFRESH_NOT_ALLOWED" } };
@@ -125,7 +132,8 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
     const started = Date.now();
     const log = { story_id: story.story_id, requested_mode: decision.mode, reason: decision.reason, higgsfield_called: false, source_reused: false, title_reused: false };
     const previous = story.title_image;
-    let mode = cardsOnly ? "impact_card" : decision.mode, source = previous?.source_visual || null, original = null, fallbackReason = null;
+    if (bridgeAsset && (visualGenerationProvider() !== 'chatgpt_bridge' || bridgeAsset.provider !== 'chatgpt_bridge')) throw imageError('BRIDGE_VISUAL_PROVIDER_MISMATCH');
+    let mode = bridgeAsset ? 'editorial' : cardsOnly ? "impact_card" : decision.mode, source = bridgeAsset ? null : previous?.source_visual || null, original = bridgeAsset, fallbackReason = null;
     try {
       const id = validateStoryId(story.story_id);
       const directory = path.join(root, "source-assets/wirkungsticker", id);
@@ -133,7 +141,7 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
       if (previous?.mode === mode && previous.fingerprint === titleFingerprint(story, mode, mode === "editorial" ? source?.sha256 : null) && ["og","wide","square"].every((key) => publicTitleImage(previous)?.[key]?.url?.startsWith("https://github.com/"))) {
         return { title_image: previous, report: { ...log, mode, status: "reused", source_reused: Boolean(source), title_reused: true, duration_ms: Date.now() - started } };
       }
-      if (mode === "editorial") {
+      if (mode === "editorial" && !original) {
         if (source?.url && /^[a-f0-9]{64}$/.test(source.sha256)) {
           try {
             original = await download(source.url);
@@ -142,11 +150,11 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
           } catch (error) { fallbackReason = safeImageFailure(error); }
         } else if (previous?.fallback_reason && TERMINAL.has(previous.fallback_reason)) {
           fallbackReason = previous.fallback_reason;
-        } else if (!cardsOnly && allowGeneration && !circuitOpen && generations < maxGenerations) {
+        } else if (!cardsOnly && allowGeneration && visualGenerationProvider() === "higgsfield" && !circuitOpen && generations < maxGenerations) {
           generations += 1; log.higgsfield_called = true;
           try { original = await generate(story); log.source_reused = Boolean(original.reused); }
           catch (error) { fallbackReason = safeImageFailure(error); circuitOpen = ["HIGGSFIELD_AUTH_UNAVAILABLE","HIGGSFIELD_PROVIDER_UNAVAILABLE","HIGGSFIELD_NOT_CONFIGURED","HIGGSFIELD_CIRCUIT_OPEN"].includes(fallbackReason); }
-        } else fallbackReason = cardsOnly || !allowGeneration ? "HIGGSFIELD_DISABLED" : circuitOpen ? "HIGGSFIELD_CIRCUIT_OPEN" : "HIGGSFIELD_RUN_LIMIT";
+        } else fallbackReason = cardsOnly || !allowGeneration || visualGenerationProvider() !== "higgsfield" ? "HIGGSFIELD_DISABLED" : circuitOpen ? "HIGGSFIELD_CIRCUIT_OPEN" : "HIGGSFIELD_RUN_LIMIT";
         if (!original) mode = "impact_card";
       }
       const fingerprint = titleFingerprint(story, mode, original?.sha256);
@@ -162,7 +170,8 @@ export function createTitleImagePipeline({ root = ROOT, generate = generateEdito
         const file = path.join(directory, `${id}-${info.sha256.slice(0,16)}-source.${info.extension}`);
         fs.writeFileSync(file, original.bytes); files.push(file);
         const sourceUrls = await publish([file], { tag });
-        source = { url: sourceUrls?.[path.basename(file)] || assetUrl(tag, path.basename(file)), sha256: info.sha256, width: info.width, height: info.height, mime: info.mime, provider: "higgsfield", model: C.model, prompt_version: original.prompt_version || C.prompt_version, generated_at: original.generated_at || now() };
+        source = { url: sourceUrls?.[path.basename(file)] || assetUrl(tag, path.basename(file)), sha256: info.sha256, width: info.width, height: info.height, mime: info.mime, provider: original.provider || "higgsfield", model: original.model || C.model, prompt_version: original.prompt_version || C.prompt_version, generated_at: original.generated_at || now(),
+          ...(original.provider === 'chatgpt_bridge' ? { ai_generated: true, concept: original.visual.concept, caption: original.visual.caption, alt_text: original.visual.alt_text, visual_metadata: original.visual } : {}) };
       }
       const image = original ? { src: `data:${original.mime};base64,${original.bytes.toString("base64")}`, focus: "right" } : null;
       const outputs = {};

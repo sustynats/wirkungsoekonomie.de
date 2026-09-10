@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import { scheduledSlot } from "./lib.mjs";
+import { processingMode } from './processing-mode.mjs';
 
 const now = process.env.WOEK_NEWS_NOW ? new Date(process.env.WOEK_NEWS_NOW) : new Date();
 if (!Number.isFinite(now.getTime())) throw new Error("INVALID_RUN_TIME");
@@ -17,6 +18,23 @@ const output = {
   berlin_date: schedule.isoDate,
   berlin_hour: String(schedule.hourNumber),
 };
+
+if (processingMode() === 'dropbox_chatgpt_bridge' && shouldRun) {
+  const eventSchedule = process.env.GITHUB_EVENT_SCHEDULE;
+  const phase = eventSchedule === '45 * * * *' ? 'discovery' : eventSchedule === '30 * * * *' ? 'import'
+    : process.env.WOEK_NEWS_BRIDGE_PHASE || (now.getUTCMinutes() >= 45 ? 'discovery' : 'import');
+  const { bridgeSession } = await import('./bridge/remote.mjs');
+  try {
+    await bridgeSession().store.acquire(now.toISOString(), phase);
+    output.slot = `Dropbox Bridge ${phase} ${now.toISOString().slice(0, 13)}`;
+    output.bridge_phase = phase;
+    output.bridge_acquired = 'true';
+    if (process.env.GITHUB_ENV) fs.appendFileSync(process.env.GITHUB_ENV, `WOEK_NEWS_BRIDGE_PHASE=${phase}\n`);
+  } catch (error) {
+    if (!['BRIDGE_SLOT_ALREADY_COMPLETED','BRIDGE_RUN_LOCKED'].includes(error.message)) throw error;
+    output.should_run = 'false'; output.bridge_skipped = error.message;
+  }
+}
 
 if (process.env.GITHUB_OUTPUT) {
   fs.appendFileSync(process.env.GITHUB_OUTPUT, Object.entries(output).map(([key, value]) => `${key}=${value}\n`).join(""), "utf8");
