@@ -7,9 +7,14 @@
     },
     "bridge-queue": {
       "firstSeen": "2026-09-10T17:06:12.591Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "8fdb00d8259192bb7c07a481",
+      "content": "⚠ WÖk-Betriebsstörung\nBridge-Verarbeitung: Ein tatsächlich übernommener Bridge-Auftrag wartet seit über zwei Stunden auf Rückgabe.\nSeit: 2026-09-10T17:06:12.591Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-10"
 }
