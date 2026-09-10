@@ -35753,13 +35753,13 @@
       "quality_cycles": 0,
       "request_id": null,
       "attempts": 2,
-      "last_attempt_at": "2026-09-10T06:05:26.955Z",
-      "next_attempt_at": "2026-09-10T06:20:26.955Z",
+      "last_attempt_at": "2026-09-10T06:46:08.052Z",
+      "next_attempt_at": "2026-09-10T07:01:08.052Z",
       "quality_errors": [
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
         "EDITORIAL_ARTICLE_LENGTH"
       ],
-      "reason": "BATCH_RETRY_WAIT"
+      "reason": "BATCH_API_503"
     },
     "wt-b5e0a39f46388642": {
       "fingerprint": "0c84ebc213e0cfe23df7b7b13f8f92b03195ca82b3eb35be19ce6fac58341ae3",
@@ -35768,8 +35768,8 @@
       "quality_cycles": 0,
       "request_id": null,
       "attempts": 0,
-      "last_attempt_at": "2026-09-10T06:16:09.320Z",
-      "next_attempt_at": "2026-09-10T06:31:09.320Z",
+      "last_attempt_at": "2026-09-10T06:46:08.052Z",
+      "next_attempt_at": "2026-09-10T07:01:08.052Z",
       "quality_errors": [],
       "reason": "BATCH_API_503"
     }
