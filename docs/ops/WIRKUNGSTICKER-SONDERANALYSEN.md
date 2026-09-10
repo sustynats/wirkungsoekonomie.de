@@ -39,7 +39,7 @@ Die erste Sonderanalyse bietet Kurzfassung, Machtkarte, zwölf Systemfelder, bed
 
 `monitoring.points[]` führt `open`, `announced`, `introduced`, `adopted`, `implemented`, `measured`. Nichtoffene Stufen brauchen Datums- und Quellenbezug. Eine Schlagzeile darf keinen Fortschritt oder Kausalnachweis erzeugen.
 
-Der bestehende Analyse-Lauf erkennt neueres Material zur Ursprungsgeschichte und markiert die beauftragte Sonderanalyse als `research_pending`. Er überschreibt sie nicht mit dem 900–1800-Wörter-Standardprompt. Dieser Schutz ist absichtlich: Die besondere Breite und individuelle Quellenprüfung darf nicht durch einen automatischen Kurzlauf verloren gehen. Eine belegte inhaltliche Fortschreibung erfolgt über ein erneutes Review-Paket. Die automatische Recherche-Markierung ersetzt diese Prüfung nicht und behauptet keine permanente eigenständige Abfrage aller Gesetze oder Ministerien.
+Der bestehende Analyse-Lauf erkennt neueres Material zur Ursprungsgeschichte und markiert die beauftragte Sonderanalyse als `research_pending`. Er überschreibt sie nicht mit dem 900-1800-Wörter-Standardprompt. Dieser Schutz ist absichtlich: Die besondere Breite und individuelle Quellenprüfung darf nicht durch einen automatischen Kurzlauf verloren gehen. Eine belegte inhaltliche Fortschreibung erfolgt über ein erneutes Review-Paket. Die automatische Recherche-Markierung ersetzt diese Prüfung nicht und behauptet keine permanente eigenständige Abfrage aller Gesetze oder Ministerien.
 
 ## Erstveröffentlichung Sachsen-Anhalt
 
