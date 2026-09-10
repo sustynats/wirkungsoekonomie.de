@@ -1,7 +1,380 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-10T09:33:38.899Z",
+  "updated_at": "2026-09-10T09:47:22.989Z",
   "stories": [
+    {
+      "story_id": "wt-3017bbc9b24cda3f",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3017bbc9b24cda3f-ecff6c8062a03401-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3017bbc9b24cda3f-35cd7019ac2accdb-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3017bbc9b24cda3f-4156049aea7e7cc0-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3017bbc9b24cda3f-3cb186904e9ec99b-source.png",
+          "alt_text": "Abstrakte Illustration eines verkleinerten Netzes aus Bürostandorten und Arbeitsplätzen."
+        }
+      },
+      "slug": "capgemini-wie-der-grosse-vw-dienstleister-die-eigenen-beschaftigten-gegen-sich-aufbringt-4cda3f",
+      "title": "Capgemini Engineering plant laut Bericht starken Stellenabbau und Standortschließungen",
+      "source_summary": "Manager Magazin berichtet, dass die Krise der Autoindustrie auch Capgemini Engineering Deutschland trifft. Das Management wolle das Unternehmen deutlich verkleinern, die Belegschaft fast halbieren und Standorte schließen. Zugleich formiere sich Widerstand unter Beschäftigten.\n\nDer bereitgestellte Datensatz enthält nur diese journalistische Quelle. Eine Unternehmensmitteilung, konkrete Stellenzahlen, eine Standortliste oder ein bestätigter Umsetzungszeitplan sind nicht beigefügt. Belegt ist damit ein berichteter Sanierungsplan, nicht dessen vollständige Umsetzung.",
+      "summary": "Manager Magazin berichtet über tiefe Sanierungspläne bei Capgemini Engineering Deutschland: Die Belegschaft solle fast halbiert und Standorte geschlossen werden. Umsetzung, genaue Stellenzahl und betroffene Standorte sind im Input nicht bestätigt.",
+      "detail_summary": "Manager Magazin berichtet über einen tiefen Umbau bei Capgemini Engineering Deutschland. Geplant seien eine fast halbierte Belegschaft und Standortschließungen; zugleich gebe es Widerstand unter Beschäftigten. Der Plan ist im bereitgestellten Material nur journalistisch berichtet und nicht durch eine Primärquelle bestätigt. Für Beschäftigte entsteht deshalb zunächst ein klar negatives Wirkungspotenzial: Erst wenn Stellen tatsächlich entfallen oder Standorte geschlossen werden, ändern sich Beschäftigungssicherheit, Einkommen oder Arbeitsort. Welche Standorte und wie viele Arbeitsplätze konkret betroffen wären, bleibt offen.",
+      "why_relevant": "Eine nahezu halbierte Belegschaft und Standortschließungen wären ein erheblicher Beschäftigungs- und Standortvorgang.",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Bei Umsetzung würden Arbeitsplätze und Beschäftigungssicherheit direkt betroffen.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Stellenabbau und Standortschließungen verringern Beschäftigungsmöglichkeiten und können Einkommen sowie Arbeitsplatzsicherheit betroffener Beschäftigter beeinträchtigen.",
+            "state_change": "Beschäftigte verlieren Arbeitsplätze oder müssen Standortwechsel und Unsicherheit bewältigen.",
+            "condition": "Die berichteten Kürzungen und Schließungen werden tatsächlich umgesetzt.",
+            "effect_role": "substantive_change",
+            "source_ids": [
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die gebundene Quelle enthält keine belastbare Umweltzustandsänderung.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die gebundene Quelle enthält keine konkrete demokratische Zustandsänderung.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Der Quellentext verwendet mit „radikal sanieren“ eine zugespitzte redaktionelle Formulierung für den geplanten Umbau.",
+        "factual_core": "Manager Magazin berichtet über einen geplanten starken Stellenabbau und Standortschließungen bei Capgemini Engineering Deutschland; Umsetzung und genaue Größen sind im Input nicht bestätigt.",
+        "epistemic_status": {
+          "confirmed": [
+            "Belegt ist, dass Manager Magazin einen Sanierungsplan mit fast halbierter Belegschaft und Standortschließungen berichtet."
+          ],
+          "actor_claims": [
+            "Dem Management wird zugeschrieben, die Belegschaft fast halbieren und Standorte schließen zu wollen."
+          ],
+          "open": [
+            "Konkrete Stellenzahl, betroffene Standorte und Umsetzungszeitplan sind im bereitgestellten Material offen."
+          ]
+        },
+        "attribution": {
+          "frame_source": "manager-magazin-news",
+          "speaker": "Redaktion von Manager Magazin",
+          "original_term": "radikal sanieren",
+          "usage_type": "editorial",
+          "placement": [
+            "body"
+          ],
+          "attribution_quality": "clear"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "radikal sanieren",
+          "origin_in_story": "manager-magazin-news",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Konflikt"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "radikal sanieren",
+          "frame_type": [
+            "Konflikt"
+          ],
+          "problem_definition": "Der Umbau wird als besonders tiefgreifender Einschnitt dargestellt.",
+          "implied_cause": "Die Autokrise wird als Auslöser des Sanierungsdrucks genannt.",
+          "implied_responsibility": "Die konkrete Ausgestaltung des Umbaus wird dem Management zugeschrieben.",
+          "implied_threat": "Für Beschäftigte stehen Arbeitsplätze und Standorte auf dem Spiel.",
+          "implied_solution_space": "Der Text lenkt die Aufmerksamkeit auf Sanierung und Widerstand; alternative Unternehmensmaßnahmen werden im kurzen Input nicht dargestellt.",
+          "material_omissions": [
+            "Keine Primärquelle des Unternehmens",
+            "Keine konkrete Stellenzahl",
+            "Keine Liste der betroffenen Standorte"
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": ""
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Arbeitsmarkt- und Unternehmensberichterstattung rund um die Krise der Autoindustrie.",
+          "normalization_potential": "low",
+          "repetition_risk": "medium",
+          "polarization_potential": "Die zugespitzte Wortwahl kann den Konflikt zwischen Management und Beschäftigten stärker hervorheben.",
+          "trust_effect_potential": "Offen; aus dem einzelnen Beitrag ist kein beobachteter Vertrauenseffekt ableitbar.",
+          "discourse_effect_potential": "Die Formulierung kann den Umbau als außergewöhnlich hart einordnen, ohne zusätzliche Fakten über Umfang oder Umsetzung zu liefern."
+        },
+        "impact_path": {
+          "first_order": "Die Wortwahl „radikal sanieren“ verdichtet den berichteten Personal- und Standortumbau zu einer besonders harten Krisenerzählung.",
+          "second_order": "Lesende können den geplanten Umbau dadurch stärker als bereits feststehende Eskalation wahrnehmen, obwohl die Umsetzung im Input offen ist.",
+          "third_order": "Bei wiederholter ähnlicher Rahmung könnte sich die öffentliche Wahrnehmung des Konflikts zwischen Management und Beschäftigten zuspitzen; dafür liegt hier kein beobachteter Nachweis vor."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Der Abstract nennt fast halbierte Belegschaft und Standortschließungen als Pläne.",
+          "what_is_inferred": "Die Formulierung verstärkt die Wahrnehmung der Tiefe des geplanten Umbaus.",
+          "what_is_open": "Nur eine journalistische Quelle und ein kurzer Abstract sind gebunden.",
+          "facts": [
+            "Der Abstract nennt fast halbierte Belegschaft und Standortschließungen als Pläne."
+          ],
+          "observations": [
+            "Der Begriff „radikal sanieren“ steht im journalistischen Abstract."
+          ],
+          "inferences": [
+            "Die Formulierung verstärkt die Wahrnehmung der Tiefe des geplanten Umbaus."
+          ],
+          "impact_potentials": [
+            "Stärkere Konflikt- und Krisenwahrnehmung."
+          ],
+          "impact_risks": [
+            "Plan und tatsächliche Umsetzung können in der Wahrnehmung vermischt werden."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle und ein kurzer Abstract sind gebunden."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Manager Magazin berichtet über einen tiefen Umbau bei Capgemini Engineering Deutschland: Die Belegschaft solle fast halbiert und Standorte geschlossen werden. Im kurzen Quellentext wird dafür die Formulierung „radikal sanieren“ verwendet. Das ist eine redaktionelle Zuspitzung, keine zusätzliche Tatsache. Der belegte Kern bleibt: Ein starker Personal- und Standortabbau wird berichtet, während genaue Stellenzahlen, betroffene Standorte und ein bestätigter Zeitplan im bereitgestellten Material fehlen. Die Wortwahl kann den Konflikt härter und die Umsetzung endgültiger erscheinen lassen, als es der Wissensstand hergibt. Deshalb trennt der Wirkungsticker Plan und Wirkung: Arbeitsplatzverluste wären ein klares Risiko, treten aber erst ein, wenn Stellen tatsächlich entfallen oder Standorte geschlossen werden. Ein beobachteter Medieneffekt auf Vertrauen oder öffentliche Meinung ist mit dieser Einzelquelle nicht belegt.",
+        "editorial_assessment": "Manager Magazin berichtet über einen tiefen Umbau bei Capgemini Engineering Deutschland: Die Belegschaft solle fast halbiert und Standorte geschlossen werden. Im kurzen Quellentext wird dafür die Formulierung „radikal sanieren“ verwendet. Das ist eine redaktionelle Zuspitzung, keine zusätzliche Tatsache. Der belegte Kern bleibt: Ein starker Personal- und Standortabbau wird berichtet, während genaue Stellenzahlen, betroffene Standorte und ein bestätigter Zeitplan im bereitgestellten Material fehlen. Die Wortwahl kann den Konflikt härter und die Umsetzung endgültiger erscheinen lassen, als es der Wissensstand hergibt. Deshalb trennt der Wirkungsticker Plan und Wirkung: Arbeitsplatzverluste wären ein klares Risiko, treten aber erst ein, wenn Stellen tatsächlich entfallen oder Standorte geschlossen werden. Ein beobachteter Medieneffekt auf Vertrauen oder öffentliche Meinung ist mit dieser Einzelquelle nicht belegt.",
+        "fact_first_alternative": "Capgemini Engineering Deutschland plant laut Manager Magazin einen starken Stellenabbau und Standortschließungen. Umfang, betroffene Standorte und Zeitplan sind im bereitgestellten Material nicht unabhängig bestätigt.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Capgemini Engineering plant laut Bericht starken Stellenabbau und Standortschließungen",
+          "recommended_summary": "Manager Magazin berichtet über tiefe Sanierungspläne bei Capgemini Engineering Deutschland: Die Belegschaft solle fast halbiert und Standorte geschlossen werden. Umsetzung, genaue Stellenzahl und betroffene Standorte sind im Input nicht bestätigt.",
+          "recommended_meta_description": "Manager Magazin berichtet über einen starken Stellenabbau und Standortschließungen bei Capgemini Engineering Deutschland. Umsetzung und Umfang sind noch nicht unabhängig bestätigt."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:47:22.989Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T05:00:00.000Z",
+      "last_updated": "2026-09-10T09:47:22.989Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-cc909de09dbf6ee5d466",
+      "case_file": null,
+      "source_published_at": "2026-09-10T05:00:00.000Z",
+      "published_at": "2026-09-10T09:47:22.989Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Umfang, betroffene Standorte und Umsetzungsstand der Sanierung bestätigen.",
+          "source_id": "manager-magazin-news",
+          "expected_by": null,
+          "measurable_indicator": "Unternehmensangaben oder weitere belastbare Berichte zu Stellenzahl, Standorten und Zeitplan.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b85eb8044d6b5cab",
+          "announced_at": "2026-09-10T05:00:00.000Z",
+          "follow_up_date": "2026-09-17T09:47:22.989Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/mobilitaet/capgemini-wie-der-grosse-vw-dienstleister-die-eigenen-beschaeftigten-gegen-sich-aufbringt-a-4f65e9a9-06ca-4ead-bae8-f640561d75bc",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T05:00:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-f035486b80396b15",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f035486b80396b15-b00f2b3643ceb18e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f035486b80396b15-f30d4ebc13e91f09-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f035486b80396b15-d22d90d8c686632f-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f035486b80396b15-77317766fe4306ea-source.png",
+          "alt_text": "Abstrakte Illustration eines halb geöffneten faltbaren Smartphones ohne Markenkennzeichen."
+        }
+      },
+      "slug": "john-ternus-apple-bringt-erstes-auffaltbares-iphone-heraus-396b15",
+      "title": "Apple bringt laut Berichten sein erstes faltbares iPhone auf den Markt",
+      "source_summary": "WirtschaftsWoche und Tagesspiegel berichten, dass Apple erstmals ein auffaltbares iPhone in den Markt bringt. Beide Beiträge beschreiben faltbare Smartphones als bislang kleines Segment; WirtschaftsWoche nennt als Größenordnung nur jedes 50. verkaufte Smartphone.\n\nEin Tagesspiegel-Beitrag nennt Samsung als früheren Anbieter und gibt die Erwartung von Marktforschern wieder, Apple könne in dem Segment schnell die Führung übernehmen. Diese Marktführungsprognose ist eine Erwartung und kein eingetretener Zustand. Technische Details, Preis, Lebensdauer, Reparierbarkeit oder Umweltbilanz sind im gebundenen Material nicht ausreichend beschrieben.",
+      "summary": "WirtschaftsWoche und Tagesspiegel berichten über Apples erstes auffaltbares iPhone. Der Konzern tritt damit in einen bislang kleinen Markt ein; Prognosen über eine schnelle Marktführerschaft sind noch keine beobachtete Wirkung.",
+      "detail_summary": "Apple tritt laut den gebundenen Berichten erstmals mit einem faltbaren iPhone in dieses Smartphone-Segment ein. Belegt ist der berichtete Markteintritt, nicht eine spätere Marktführerschaft. Für Mensch und Demokratie ergibt sich aus dem Produktstart allein keine belastbare Zustandsänderung. Für Planet und Ressourcen bleiben mögliche Folgen offen, weil Absatz, Materialeinsatz, Lebensdauer und Reparierbarkeit im Input fehlen. Wettbewerbsreaktionen sind plausibel, aber noch nicht als eingetretene Wirkung belegt.",
+      "why_relevant": "Der Markteintritt eines großen Smartphone-Anbieters kann Wettbewerb und Produktentwicklung in einem neuen Gerätesegment verändern.",
+      "topic": [
+        "Technologie"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_post",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Ein Produktstart allein belegt keine relevante Veränderung menschlicher Lebenslagen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Neue Elektronik kann Ressourcen- und Abfallwirkungen haben, aber Material, Haltbarkeit und Absatz sind im Input nicht belegt.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Keine konkrete demokratische Zustandsänderung aus dem Produktstart ableitbar.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T09:47:22.989Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T18:30:00.000Z",
+      "last_updated": "2026-09-10T09:47:22.989Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-4ed62b7e0d4cd5900931",
+      "case_file": null,
+      "source_published_at": "2026-09-09T02:31:27.000Z",
+      "published_at": "2026-09-10T09:47:22.989Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wiwo-schlagzeilen"
+          ],
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/it/apple-bringt-erstes-auffaltbares-iphone-heraus/100253017.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T05:30:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/medien/dpa-vorstoss-in-neuen-markt-16032339.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T02:31:27.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-b95ed05b8140df75",
       "title_image": {
