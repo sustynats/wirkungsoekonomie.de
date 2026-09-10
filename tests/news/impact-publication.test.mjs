@@ -5,8 +5,8 @@ import { deriveImpactPresentation, impactAssessmentErrors } from '../../scripts/
 import { derivePublicationStatus, semanticIssues, impactContextRequirements, SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import { migrateImpactCatalog, persistedImpactAssessmentErrors, assessmentBasis } from '../../scripts/news/migrate-impact-assessments.mjs';
 import { applyImpactOutput, impactReassessmentInput, discoverImpactJobs } from '../../scripts/news/bridge/impact.mjs';
-import { ensureSemanticReview, importSemanticReviews } from '../../scripts/news/bridge/semantic-review.mjs';
-import { bridgePath, hash } from '../../scripts/news/bridge/contract.mjs';
+import { ensureSemanticReview, importSemanticReviews, semanticOutputSchema } from '../../scripts/news/bridge/semantic-review.mjs';
+import { bridgePath, hash, parsePacket } from '../../scripts/news/bridge/contract.mjs';
 import { assertAutomaticImpactTransport } from '../../scripts/news/processing-mode.mjs';
 const reviews = JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews;
 const catalog = JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
@@ -128,4 +128,18 @@ test('separate review job is mandatory, idempotent, source-bound, and cannot be 
   await ensureSemanticReview(bridge,parent,{data:'contradictory first output'},record,conflicting,now);
   const invalidChild=[...jobs.values()].find(j=>j.input.proposed_assessment?.dimensions.planet.direction==='open');
   assert.ok(invalidChild.input.validation_findings.includes('IMPACT_DIRECTION_RATIONALE_CONFLICT:planet'));
+  parent.semantic_review={output_hash:hash(output),assessment:a,review:{status:'ready',checks:Object.fromEntries(SEMANTIC_CHECKS.map(key=>[key,'geprüft']))}};
+  const oldHash=hash({parent:input.job_id,outputHash:hash(output),assessment:a,record});
+  const oldId=`${input.job_id.slice(0,20)}${hash({kind:'impact_semantic_review',inputHash:oldHash}).slice(0,24)}`;
+  const oldJob={input:{job_id:oldId,input_hash:oldHash,parent_job_id:input.job_id},status:'acknowledged',ack:{status:'hold'}};
+  jobs.set(oldId,structuredClone(oldJob));jobs.delete(child.input.job_id);
+  assert.equal((await ensureSemanticReview(bridge,parent,output,record,a,now)).status,'needs_second_pass','malformed legacy receipt is not treated as a completed independent review');
+  assert.notEqual(parent.publication_gate.review_job_id,oldId);
+  assert.equal(jobs.get(parent.publication_gate.review_job_id).input.review_protocol,'structured-checks-1');
+  assert.deepEqual(jobs.get(oldId),oldJob,'old acknowledgment and error history stay unchanged');
+});
+test('a bare checked label is a repairable output schema error, never a completed semantic review',()=>{
+  const {a}=bsw(),o={schema_version:'1.0',job_id:'wt_20260910T120000Z_aaaaaaaaaaaaaaaaaaaaaaaa',input_hash:'a'.repeat(64),processed_at:'2026-09-10T12:00:00Z',review:readyReview(),impact_assessment:a};
+  assert.doesNotThrow(()=>parsePacket(JSON.stringify(o),semanticOutputSchema));
+  o.review.checks.event_target='geprüft';assert.throws(()=>parsePacket(JSON.stringify(o),semanticOutputSchema),/BRIDGE_SCHEMA_INVALID/);
 });

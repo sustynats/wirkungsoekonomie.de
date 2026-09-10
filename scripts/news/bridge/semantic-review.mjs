@@ -1,6 +1,6 @@
 import { hash, bridgePath, parsePacket } from './contract.mjs';
 import { IMPACT_RULE, IMPACT_SCHEMA, IMPACT_DEFS } from '../impact-assessment.mjs';
-import { derivePublicationStatus, semanticIssues, SEMANTIC_CHECKS } from '../impact-publication.mjs';
+import { derivePublicationStatus, semanticIssues, structuredSemanticChecks, SEMANTIC_CHECKS } from '../impact-publication.mjs';
 
 export const SEMANTIC_JOB_TYPE = 'impact_semantic_review';
 const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
@@ -10,19 +10,26 @@ export const semanticOutputSchema = {
     schema_version: { const: '1.0' }, job_id: { type: 'string', pattern: '^wt_\\d{8}T\\d{6}Z_[a-f0-9]{24}$' },
     input_hash: { type: 'string', pattern: '^[a-f0-9]{64}$' }, processed_at: { type: 'string', format: 'date-time' },
     review: { type: 'object', additionalProperties: false, required: ['status', 'checks', 'findings'], properties: {
-      status: { enum: ['ready', 'needs_review', 'blocked'] }, checks: { type: 'object' }, findings: { type: 'array', maxItems: 50, items: { type: 'string', maxLength: 3000 } },
+      status: { enum: ['ready', 'needs_review', 'blocked'] }, checks: { type: 'object', additionalProperties: false,
+        required: SEMANTIC_CHECKS, properties: Object.fromEntries(SEMANTIC_CHECKS.map(key => [key, {
+          type: 'object', additionalProperties: false, required: ['status','rationale'], properties: {
+            status: { enum: ['pass','fail'] }, rationale: { type: 'string', minLength: 12, maxLength: 3000 },
+          },
+        }])) }, findings: { type: 'array', maxItems: 50, items: { type: 'string', maxLength: 3000 } },
     } }, impact_assessment: { type: 'object' },
   },
 };
 
 export async function ensureSemanticReview(bridge, job, output, record, proposed, now) {
   const outputHash = hash(output), receipt = job.semantic_review;
-  if (receipt?.output_hash === outputHash) {
+  if (receipt?.output_hash === outputHash && structuredSemanticChecks(receipt.review)) {
     const gate = derivePublicationStatus(receipt.assessment, record, { review: receipt.review, secondPassComplete: true });
     job.publication_gate = gate; await bridge.store.put(job);
     return { ...gate, assessment: receipt.assessment, receipt };
   }
-  const inputHash = hash({ parent: job.input.job_id, outputHash, assessment: proposed, record });
+  // Old acknowledgments remain immutable. A malformed legacy check list gets
+  // a new, protocol-bound review job; it never becomes an editorial approval.
+  const inputHash = hash({ protocol: 'structured-checks-1', parent: job.input.job_id, outputHash, assessment: proposed, record });
   const id = `${job.input.job_id.slice(0, 20)}${hash({ kind: SEMANTIC_JOB_TYPE, inputHash }).slice(0, 24)}`;
   let reviewJob = await bridge.store.get(id);
   if (!reviewJob) {
@@ -36,6 +43,8 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
         sources: [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])].map(s => ({ source_id: s.source_id, url: s.url, title: s.title, publisher: s.publisher, excerpt: s.article_excerpt || s.summary || '', source_role: s.source_role || s.source_function || null })) },
       proposed_assessment: proposed,
       validation_findings: semanticIssues(proposed, record),
+      review_protocol: 'structured-checks-1',
+      review_format_rule: 'Jeder der 14 Checks ist ein Objekt {"status":"pass" oder "fail","rationale":"konkrete fachliche Begründung"}. Ein Wort wie geprüft, true oder ein allgemeines Gesamturteil genügt nicht. Alle gebundenen Quellen anhand ihrer Belegfunktion prüfen, auch ergänzte amtliche/programmatische/wissenschaftliche Quellen. Ein fehlender Umsetzungsbeschluss macht einen belegten bedingten Wirkungspfad nicht richtungslos.',
       requested_output: { schema_version: '1.0', job_id: id, input_hash: inputHash, processed_at: 'ISO timestamp',
         review: { status: 'ready|needs_review|blocked', checks: Object.fromEntries(SEMANTIC_CHECKS.map(k => [k, { status: 'pass|fail', rationale: 'fachliche Begründung' }])), findings: ['verbleibende Befunde oder leere Liste'] },
         impact_assessment: IMPACT_SCHEMA, $defs: IMPACT_DEFS },

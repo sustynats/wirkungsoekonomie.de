@@ -2,6 +2,7 @@ import { IMPACT_KEYS, impactAssessmentErrors } from './impact-assessment.mjs';
 
 export const SEMANTIC_CHECKS = ['event_target', 'time_and_observation', 'path_and_recipients', 'direction_and_reference', 'magnitude', 'likelihood', 'evidence', 'materiality', 'second_third_order', 'policy_coverage', 'source_fidelity', 'counterpaths_and_dominance', 'institutional_status', 'counterfactual'];
 const text = value => typeof value === 'string' && value.trim().length >= 12;
+export const structuredSemanticChecks = review => SEMANTIC_CHECKS.every(key => ['pass','fail'].includes(review?.checks?.[key]?.status) && text(review.checks[key].rationale));
 const sourceText = record => [record.title, record.source_summary, ...[...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])].map(s => `${s.title || ''} ${s.summary || ''} ${s.article_excerpt || ''}`)].filter(Boolean).join('\n');
 
 // Signals request scrutiny, never produce a political direction or magnitude.
@@ -46,7 +47,7 @@ export function semanticIssues(assessment, record = {}) {
 export function derivePublicationStatus(assessment, record = {}, { review = null, secondPassComplete = false } = {}) {
   const issues = semanticIssues(assessment, record);
   if (review?.status === 'blocked') return { status: 'blocked', issues: [...issues, 'IMPACT_REVIEW_BLOCKED'] };
-  const reviewed = review?.status === 'ready' && SEMANTIC_CHECKS.every(key => review.checks?.[key]?.status === 'pass' && text(review.checks[key].rationale));
+  const reviewed = review?.status === 'ready' && structuredSemanticChecks(review) && SEMANTIC_CHECKS.every(key => review.checks[key].status === 'pass');
   if (issues.length || !reviewed) return { status: secondPassComplete ? 'needs_review' : 'needs_second_pass', issues: [...issues, ...(!reviewed ? ['IMPACT_INDEPENDENT_REVIEW_REQUIRED'] : [])] };
   return { status: 'ready', issues: [] };
 }
