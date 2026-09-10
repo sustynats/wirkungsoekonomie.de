@@ -1,6 +1,6 @@
 import { hash, bridgePath, parsePacket } from './contract.mjs';
 import { IMPACT_RULE, IMPACT_SCHEMA, IMPACT_DEFS } from '../impact-assessment.mjs';
-import { derivePublicationStatus, SEMANTIC_CHECKS } from '../impact-publication.mjs';
+import { derivePublicationStatus, semanticIssues, SEMANTIC_CHECKS } from '../impact-publication.mjs';
 
 export const SEMANTIC_JOB_TYPE = 'impact_semantic_review';
 const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
@@ -35,6 +35,7 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
         analysis: record.analysis || { sections: record.sections, claim_ledger: record.claim_ledger },
         sources: [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])].map(s => ({ source_id: s.source_id, url: s.url, title: s.title, publisher: s.publisher, excerpt: s.article_excerpt || s.summary || '', source_role: s.source_role || s.source_function || null })) },
       proposed_assessment: proposed,
+      validation_findings: semanticIssues(proposed, record),
       requested_output: { schema_version: '1.0', job_id: id, input_hash: inputHash, processed_at: 'ISO timestamp',
         review: { status: 'ready|needs_review|blocked', checks: Object.fromEntries(SEMANTIC_CHECKS.map(k => [k, { status: 'pass|fail', rationale: 'fachliche Begründung' }])), findings: ['verbleibende Befunde oder leere Liste'] },
         impact_assessment: IMPACT_SCHEMA, $defs: IMPACT_DEFS },

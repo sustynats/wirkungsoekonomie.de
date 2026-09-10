@@ -98,10 +98,16 @@ test('separate review job is mandatory, idempotent, source-bound, and cannot be 
   assert.equal((await ensureSemanticReview(bridge,parent,output,record,a,now)).status,'needs_second_pass');
   await ensureSemanticReview(bridge,parent,output,record,a,now);assert.equal(jobs.size,2);
   const child=[...jobs.values()].find(j=>j.input.parent_job_id===input.job_id);assert.match(child.input.job_id,/^wt_\d{8}T\d{6}Z_[a-f0-9]{24}$/);
+  assert.deepEqual(child.input.validation_findings,[]);
   assert.notEqual(child.input.job_id,input.job_id);
   const result={schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:now,review:readyReview(),impact_assessment:a};
   await bridge.transport.writeAtomic(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),result);
   await importSemanticReviews(bridge,now);
   assert.equal((await ensureSemanticReview(bridge,parent,output,record,a,now)).status,'ready');
   assert.equal((await ensureSemanticReview(bridge,parent,{data:'edited first output'},record,a,now)).status,'needs_second_pass');
+  const conflicting=structuredClone(a);conflicting.dimensions.planet.direction='open';
+  conflicting.dimensions.planet.rationale='Wenn die Maßnahme umgesetzt wird, würden die CO2-Emissionen steigen.';
+  await ensureSemanticReview(bridge,parent,{data:'contradictory first output'},record,conflicting,now);
+  const invalidChild=[...jobs.values()].find(j=>j.input.proposed_assessment?.dimensions.planet.direction==='open');
+  assert.ok(invalidChild.input.validation_findings.includes('IMPACT_DIRECTION_RATIONALE_CONFLICT:planet'));
 });
