@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#173c36">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Redaktion">
+  <title>Deine Redaktion · Wirkungsticker</title>
+  <link rel="canonical" href="https://wirkungsoekonomie.de/admin/redaktion/">
+  <link rel="icon" href="/assets/img/brand/signet.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/brand/app-icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./redaktion.css">
+  <script src="./redaktion.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt</a>
+  <header class="app-header">
+    <a class="brand" href="/wirkungsticker/"><img src="/assets/img/brand/signet.svg" width="34" height="34" alt=""><span>Wirkungsticker<small>Deine Redaktion</small></span></a>
+    <span class="private-badge">Privat</span>
+  </header>
+  <main id="main" class="shell">
+    <section id="login" class="card login-card" aria-labelledby="login-title">
+      <p class="eyebrow">Dein direkter Draht zur Redaktion</p>
+      <h1 id="login-title">Aus einer Idee wird ein Beitrag.</h1>
+      <p>Nachrichten, Gedanken und Buchbesprechungen - mit Deinen Links und Screenshots an einem Ort.</p>
+      <button id="login-button" class="primary" type="button">Mit Discord anmelden</button>
+      <button id="login-retry" class="text-button" type="button">Ich bin bereits angemeldet</button>
+      <p class="quiet">Zugang mit Deinem bestehenden WÖk-Administrationskonto.</p>
+    </section>
+    <div id="workspace" hidden>
+      <nav class="tabs" aria-label="Redaktion"><button class="selected" id="tab-new" type="button" aria-pressed="true">Neuer Auftrag</button><button id="tab-list" type="button" aria-pressed="false">Aufträge <span id="count"></span></button><button id="tab-approval" type="button" aria-pressed="false">Freigeben <span id="approval-count"></span></button></nav>
+      <section id="compose" aria-labelledby="compose-title">
+        <p class="eyebrow">Du gibst den Anstoß.</p>
+        <h1 id="compose-title">Was soll in den Ticker?</h1>
+        <p class="intro">Schreib einfach, was Du möchtest. Ein Link, ein Gedanke oder ein Screenshot genügt als Anfang.</p>
+        <form id="request-form" class="card">
+          <fieldset class="kind-picker"><legend>Was möchtest Du anstoßen?</legend>
+            <label><input type="radio" name="kind" value="news" checked><span>Nachricht</span></label>
+            <label><input type="radio" name="kind" value="opinion_analysis"><span>Meinung &amp; Analyse</span></label>
+            <label><input type="radio" name="kind" value="book_review"><span>Buch &amp; Wirkung</span></label>
+            <label><input type="radio" name="kind" value="listened"><span>Nachgehört</span></label>
+            <label><input type="radio" name="kind" value="watched"><span>Nachgesehen</span></label>
+          </fieldset>
+          <label class="field" for="brief">Dein Auftrag<textarea id="brief" name="brief" rows="6" maxlength="20000" required placeholder="Was ist passiert? Was interessiert Dich daran? Was sollen wir daraus machen?"></textarea></label>
+          <label class="field" for="links">Links <span class="optional">optional</span><textarea id="links" name="links" rows="2" maxlength="16000" inputmode="url" placeholder="Links hier einfügen - oder direkt oben in Deinen Auftrag."></textarea></label>
+          <div class="attachment-field"><label class="upload" for="attachments"><span class="upload-icon" aria-hidden="true">＋</span><span><strong>Screenshots hinzufügen</strong><small>Bis zu 4 Bilder · jeweils höchstens 8 MB</small></span></label><input id="attachments" type="file" accept="image/png,image/jpeg,image/webp" multiple><div id="previews" class="previews"></div></div>
+          <details class="options"><summary>Weitere Angaben</summary>
+            <label class="field" for="author-notes">Deine persönliche Position <span class="optional">optional</span><textarea id="author-notes" rows="3" maxlength="10000" placeholder="Welche Gedanken oder Gewichtungen sollen als Deine eigene Position erkennbar sein?"></textarea></label>
+            <label class="check"><input id="urgent" type="checkbox"><span>Dringend bearbeiten</span></label>
+<p class="quiet">Du erhältst eine vollständige Vorschau. Erst Deine abschließende Freigabe erlaubt die Veröffentlichung.</p>
+          </details>
+          <div class="submit-area"><button id="submit" class="primary" type="submit">Auftrag senden <span aria-hidden="true">↗</span></button><p class="quiet">Nach dem Eingang läuft die Bearbeitung auf dem Server weiter. Du findest das fertige Ergebnis unter „Freigeben“.</p></div>
+        </form>
+      </section>
+      <section id="requests" hidden aria-labelledby="requests-title"><div class="section-heading"><h1 id="requests-title">Deine Aufträge</h1><button id="refresh" class="text-button" type="button">Aktualisieren</button></div><div id="request-list"></div></section>
+      <section id="approvals" hidden aria-labelledby="approval-title"><p class="eyebrow">Dein letzter Blick vor Veröffentlichung</p><h1 id="approval-title">Zur Freigabe</h1><p>Alles an einem Ort: Text, Quellen und Bild. Freigeben oder mit Deinem Kommentar zurück zur Redaktion.</p><div id="approval-list"></div><article id="approval-preview" hidden class="card"></article></section>
+      <section id="receipt" hidden class="card receipt" aria-labelledby="receipt-title"><span class="receipt-mark" aria-hidden="true">✓</span><p class="eyebrow">Auftrag eingegangen</p><h2 id="receipt-title">Wir übernehmen ab hier.</h2><p id="receipt-copy"></p><p class="quiet">Du kannst die App jetzt schließen. Den Fortschritt findest Du unter „Meine Aufträge“.</p><div class="receipt-actions"><button id="view-request" class="primary" type="button">Bearbeitungsstand ansehen</button><button id="another" class="text-button" type="button">Weiteren Auftrag senden</button></div><details><summary>Es ist besonders dringend?</summary><p>Für einen zusätzlichen Sofortlauf öffne Deinen vereinbarten Verarbeitungschat und sende:</p><blockquote>Wirkungsticker jetzt verarbeiten.</blockquote><button id="copy-trigger" class="text-button" type="button">Text kopieren</button></details></section>
+      <details class="install-note"><summary>Als App auf Dein Handy legen</summary><p>Auf dem iPhone: diese Seite in Safari öffnen, „Teilen“ und „Zum Home-Bildschirm“ wählen. Auf Android im Browsermenü „App installieren“ oder „Zum Startbildschirm hinzufügen“ wählen.</p></details>
+    </div>
+    <p id="status" role="status" aria-live="polite"></p>
+  </main>
+  <footer class="app-footer"><a href="/wirkungsticker/">Zum Wirkungsticker</a><a href="/datenschutz.html">Datenschutz</a></footer>
+</body>
+</html>

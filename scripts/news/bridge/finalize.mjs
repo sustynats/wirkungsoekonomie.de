@@ -11,3 +11,5 @@ const editorialFile = new URL('../../../data/news/editorial-analyses.json', impo
 const editorials = fs.existsSync(editorialFile) ? JSON.parse(fs.readFileSync(editorialFile)).analyses : [];
 await bridge.finalize(stories, now, { committed: true, editorials });
 console.log(JSON.stringify(await bridge.monitor(now)));
+
+if(bridge.store.editorialFinalize)try{await bridge.store.editorialFinalize();}catch{console.log('Persönliche Freigaben warten auf die bestätigte Live-Fassung.');}

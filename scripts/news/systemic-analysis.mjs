@@ -1,9 +1,10 @@
+import {personalLabel,PERSONAL_FORMAT} from './personal-editorial.mjs';
 import { renderDimensionMeters, renderIcon, renderPathDirection } from "./visuals.mjs";
 import { AXES, renderAssessmentAxes, renderEditorialBalance } from "./editorial-judgment.mjs";
 
 export const isEditorialCommentary = analysis => analysis?.editorial_genre === "commentary";
 export const EDITORIAL_TRANSPARENCY_NOTE = "Dieser Beitrag verbindet recherchierte Fakten mit wirkungswissenschaftlicher Analyse und persönlicher Einordnung. Tatsachenbehauptungen sind belegt; Bewertungen geben die Einschätzung der Autorin wieder.";
-export const editorialLabel = analysis => analysis?.format === "book_and_impact" ? "Buch & Wirkung" : "Meinung & Analyse";
+export const editorialLabel = analysis => analysis?.format===PERSONAL_FORMAT ? personalLabel(analysis.subtype) : analysis?.format === "book_and_impact" ? "Buch & Wirkung" : "Meinung & Analyse";
 export const isCommissionedAnalysis = analysis => (analysis?.analysis_variant === "systemic" || isEditorialCommentary(analysis)) && analysis?.editorial_mode === "commissioned_review";
 const escape = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[char]));
 const STATES = { open: "Offen", announced: "Angekündigt", introduced: "Eingebracht", adopted: "Beschlossen", implemented: "Umgesetzt", measured: "Wirkung gemessen" };

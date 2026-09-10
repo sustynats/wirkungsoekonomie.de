@@ -526,3 +526,10 @@ test('derived review jobs do not consume current-news intake capacity',async t=>
  await f.provider.enqueue([candidate(2)],[],now);assert.equal(f.store.all().filter(j=>j.input.job_type==='new_story').length,2);
  assert.equal((await f.provider.selectCandidates([candidate(3)])).length,0);
 });
+
+test('a manual news child always stages even when production publication is enabled',async t=>{
+ const {store,transport,provider}=setup(t,{stageOnly:false,adapt:(_output,job)=>({decision:'hold',record:null,story_id:job.candidate.story_id})});
+ await provider.enqueue([candidate()],[],now);const job=store.all()[0];job.intake_news_parent='wt_20260910T000000Z_aaaaaaaaaaaaaaaaaaaaaaaa';store.put(job);
+ await transport.writeAtomic(bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json'),output(job.input));
+ const results=await provider.reconcile({},[],later);assert.equal(results[0].staged,true);assert.equal(job.input.test_only,false);
+});
