@@ -35723,13 +35723,13 @@
       "quality_cycles": 0,
       "request_id": null,
       "attempts": 0,
-      "last_attempt_at": "2026-09-09T23:43:18.392Z",
-      "next_attempt_at": "2026-09-09T23:58:18.392Z",
+      "last_attempt_at": "2026-09-10T00:13:48.757Z",
+      "next_attempt_at": "2026-09-10T00:28:48.757Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "BATCH_API_BATCH_CAPACITY"
+      "reason": "AI_BATCH_PENDING"
     },
     "wt-e820bef62dd96612": {
       "fingerprint": "55c01a53ce4e370eae11a3736ee05383f6c4c6e67e77e2ffa44c87d2ead7b09d",
@@ -35765,10 +35765,10 @@
       "quality_cycles": 0,
       "request_id": null,
       "attempts": 0,
-      "last_attempt_at": "2026-09-09T23:43:18.392Z",
-      "next_attempt_at": "2026-09-09T23:58:18.392Z",
+      "last_attempt_at": "2026-09-10T00:13:48.757Z",
+      "next_attempt_at": "2026-09-10T00:28:48.757Z",
       "quality_errors": [],
-      "reason": "BATCH_API_BATCH_CAPACITY"
+      "reason": "AI_BATCH_PENDING"
     }
   },
   "editorial_requests": {}
