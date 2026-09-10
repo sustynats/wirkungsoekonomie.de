@@ -14,7 +14,7 @@ Die bestehende Pipeline bleibt erhalten. Rohdokumente werden weiterhin zugangssi
 
 ## Teilwerte sind keine wissenschaftlichen Wirkungswerte
 
-Die Werte 0-100 sind nachvollziehbare **technische Prüfprioritäten**, keine Eintrittswahrscheinlichkeiten, kein Nachweis von Unabhängigkeit und keine numerische WÖk-Bilanz. Der gewichtete Ereigniswert verwendet Tragweite 55 %, Institution 10 %, Deutschlandbezug 8 %, Aktualität 8 %, WÖk-Materialität 9 %, Herkunftsbreite und Nachrichtenbeschleunigung je 5 %. Eine akute Sicherheitslage erhält acht Prioritätspunkte. Die bestehende begründete Materialitätspriorität bleibt als Untergrenze erhalten. Die Werte und Gründe stehen im Audit.
+Die Werte 0–100 sind nachvollziehbare **technische Prüfprioritäten**, keine Eintrittswahrscheinlichkeiten, kein Nachweis von Unabhängigkeit und keine numerische WÖk-Bilanz. Der gewichtete Ereigniswert verwendet Tragweite 55 %, Institution 10 %, Deutschlandbezug 8 %, Aktualität 8 %, WÖk-Materialität 9 %, Herkunftsbreite und Nachrichtenbeschleunigung je 5 %. Eine akute Sicherheitslage erhält acht Prioritätspunkte. Die bestehende begründete Materialitätspriorität bleibt als Untergrenze erhalten. Die Werte und Gründe stehen im Audit.
 
 Viele URLs desselben Herausgebers, ausdrücklich bekannte Verlagsgruppen, gleiche Agenturherkunft oder lange identische Passagen zählen nicht als unabhängige Belege. `possible_independent_origins` ist ausdrücklich eine vorläufige Herkunftsschätzung. Ein einzelner amtlicher Hinweis kann hohe Prüfpriorität haben; ein unverifizierter Verdacht bleibt dennoch Verdacht.
 
@@ -58,7 +58,7 @@ Gleiche gespeicherte Quellen, Stand 09.09.2026, 17:14 MESZ; keine rückwirkende 
 | Kodi-Filialschließungen (WDR) | 10, vor KI verworfen | 45 / NORMAL, regulär prüfbar |
 | Erwartetes erstes Falt-iPhone (Wiwo) | 10, vor KI verworfen | 42 / NORMAL, Erwartung ausdrücklich nicht als Vorstellung |
 | Google/Finnland (Wiwo) | 42, Evidenzvorbehalt der KI | 54 / HIGH; der Evidenzvorbehalt wird nicht überstimmt |
-| USA-China-KI-Konflikt (DLF) | 10, vor KI verworfen | 45 / NORMAL; Vorwurf bleibt zugeschrieben |
+| USA–China-KI-Konflikt (DLF) | 10, vor KI verworfen | 45 / NORMAL; Vorwurf bleibt zugeschrieben |
 
 Der begrenzte Tagesaudit mit bis zu 1.000 Dokumenten findet in diesem Snapshot 33 größere Ereigniskandidaten: sechs sind einer Veröffentlichung zugeordnet, 27 benötigen Prüfung oder haben begründete Vorbehalte. Diese 27 sind **nicht** 27 fertige, sicher fehlende Artikel. Die zwölf vorgegebenen Recherchefälle besitzen zusätzlich lokale Auswahltests; nicht eingelesene Fälle werden dadurch nicht nachträglich als entdeckt ausgegeben.
 

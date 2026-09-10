@@ -1,8 +1,8 @@
-# Update-Hinweise und App-Navigation - 7. September 2026
+# Update-Hinweise und App-Navigation – 7. September 2026
 
 ## Leserführung
 
-Aktualisierte Einzelmeldungen und fortgeschriebene Lageakten erhalten auf Übersicht und Detailseite ein rotes Update-Band mit schräger Fahnenkante, Datum und Uhrzeit in Europe/Berlin. Die Schrift bleibt gerade und lesbar; das Band liegt außerhalb von Überschrift und Wirkungsvisualisierung. Es erklärt: „Aktualisierter Stand - keine doppelte Meldung.“ Direkte Links führen zum aktuellen Lageaktenstand bzw. zum Versionsverlauf. Ältere Mitgliedsseiten verweisen auf den aktuellen Repräsentanten, ohne selbst als neu geschriebener Artikel ausgegeben zu werden.
+Aktualisierte Einzelmeldungen und fortgeschriebene Lageakten erhalten auf Übersicht und Detailseite ein rotes Update-Band mit schräger Fahnenkante, Datum und Uhrzeit in Europe/Berlin. Die Schrift bleibt gerade und lesbar; das Band liegt außerhalb von Überschrift und Wirkungsvisualisierung. Es erklärt: „Aktualisierter Stand – keine doppelte Meldung.“ Direkte Links führen zum aktuellen Lageaktenstand bzw. zum Versionsverlauf. Ältere Mitgliedsseiten verweisen auf den aktuellen Repräsentanten, ohne selbst als neu geschriebener Artikel ausgegeben zu werden.
 
 Grundlage sind vorhandene Publikationsquittungen der aktuellen öffentlichen Version; ältere Bestände können ihre versionierten Inhalts-Snapshots verwenden. Reine `last_updated`-Änderungen, Abrufe, fehlgeschlagene Versuche, Bilderzeugung und eine höhere Versionsnummer ohne datierten Nachweis reichen nicht. Ein neu veröffentlichter Einzelbericht mit Version 1 kann gleichwohl eine bestehende Lageakte fortschreiben. Fehlende Datierung wird nicht erfunden.
 

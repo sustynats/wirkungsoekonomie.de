@@ -30,7 +30,7 @@ Vor Änderung der Deploymentworkflows: `check:hosting-cost` und der angemeldete 
 
 Bestanden: Workflow-YAML-Parsing, **664 Nachrichten-/Betriebsmonitortests**, Typecheck, Nachrichten-/Registryvalidierung (76 Quellen, 193 veröffentlichte inklusive archivierter Storys), Ticker-Generator, vollständiger öffentlicher Artefakt-Build einschließlich seiner Tests und Linkprüfungen, Datenschutzprüfung (19.390 Textdateien) und Größenprüfung (820,6 MB). Der Generator verändert in diesem Korrekturschritt weder Artikelseiten noch kanonische Nachrichten-/Kostendaten. Language-Lint: dieselben 25 vorhandenen Befunde, keine neuen. Keine neue Darstellung: die bereits geprüften Desktop-/Mobile-Komponenten bleiben unverändert. Produktiver Inhalts-/Release-Nachweis folgt nach dem regulären Deployment.
 
-## Kosten und offener Rückstand - separate Momentaufnahme
+## Kosten und offener Rückstand – separate Momentaufnahme
 
 Gespeicherter Nachrichtenstand `4cc5f92c7e` vom 17:29 UTC: 71 wartende Vorgänge, davon 61 Kapazitätsrückstellungen, fünf technische und fünf Quellenintegritätsfälle. Eine Kapazitätsrückstellung ist weder eine erledigte Prüfung noch eine verlorene Nachricht.
 
