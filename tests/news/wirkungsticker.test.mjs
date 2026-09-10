@@ -450,7 +450,7 @@ test("Prompt Injection bleibt als untrusted Datenblock gekapselt", () => {
   assert.match(prompt, /detail_summary/);
   assert.match(prompt, /source_summary/);
   assert.match(prompt, /Zahlwort bleibt Zahlwort/);
-  assert.match(prompt, /Publikationsform ist niemals allein ein Ausschlussgrund/);
+  assert.match(prompt, /Publikationsform kein Ausschluss/);
   assert.match(prompt, /historical_relevance_reassessment/);
   assert.match(prompt, /related_ticker_history/);
   assert.match(prompt, /Bereits erfasste Klimaregel/);

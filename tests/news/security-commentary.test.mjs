@@ -118,8 +118,8 @@ test("own share cards use the reviewed subject, risk labels and immutable existi
   const rendered = renderTitleImage(input, {size:"og",fonts:"none"});
   assert.deepEqual(rendered.warnings, []);
   assert.equal(rendered.layout.truncated, false);
-  assert.match(rendered.svg, /RELEVANZ &amp; RISIKO/);
-  assert.equal((rendered.svg.match(/Negatives Risikopotenzial/g)||[]).length,3);
+  assert.match(rendered.svg, /TRAGWEITE &amp; RICHTUNG/);
+  assert.equal((rendered.svg.match(/\? offen/g)||[]).length,3);
   assert.doesNotMatch(rendered.svg, /Ausgangsmeldung|KI-generiertes/);
   let uploaded=0;
   const result=await createEditorialTitleAssets(packet,{outDir:'/tmp/mock-card',raster:async()=>({}),publish:async files=>{uploaded=files.length;}});

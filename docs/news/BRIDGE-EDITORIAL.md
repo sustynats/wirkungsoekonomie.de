@@ -1,6 +1,8 @@
 # Meinung & Analyse über die bestehende Dropbox-Bridge
 
-Vertrag: `editorial-analysis-contract-1.json`, ergänzend zum unveränderten Nachrichtenvertrag Bridge-3.
+Vertrag: `editorial-analysis-contract-2.json`, ergänzt um `impact-assessment-contract-2.json` und den unveränderten Nachrichtenvertrag Bridge-3. Vertrag 1 bleibt für die Historie unverändert erhalten. Persönliche Autorinnenperspektive, Rechercheumfang und redaktionelle Textanforderungen bleiben bestehen; die MPD-Metadaten folgen [Wirkungssemantik 2.0](IMPACT-SEMANTICS-2.md).
+
+Vor Veröffentlichung wird das vollständige Profil in einem eigenen `impact_semantic_review`-Auftrag quellengebunden geprüft. Nur der separat gespeicherte, zum Autorenoutput passende Prüfbeleg mit Status `ready` erlaubt den Import. Ein Prüfflag im Autorenoutput allein ist keine Freigabe. Ein offener Prüfpass wartet in derselben Bridge und blockiert keine anderen unabhängigen Aufträge.
 
 Discovery prüft vorhandene veröffentlichte Nachrichten mit der bisherigen redaktionellen Recherche, Quellenprüfung und Auswahl. Maximal zwei geeignete Analyseaufträge pro Durchlauf gelangen in dieselbe Inbox; gemeinsame Kapazität, Discovery-Lock und Quellenfingerprints gelten weiterhin. Geschützte manuelle Manuskripte und bestehende beauftragte Beiträge bleiben ausgeschlossen.
 

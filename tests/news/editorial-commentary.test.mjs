@@ -81,11 +81,11 @@ test("the comparison keeps lanes separate and requires evidence, conditions and 
 
 test("commentary renders seven visual anchors, distinct MPD, six navigation groups and author voice", () => {
   const html = editorialAnalysisPage(prepared(), story);
-  for (const marker of ["Meinung &amp; Analyse", "wirkungsökonomisch eingeordnet", "news-editorial-callout", "news-systemic-visual--comparison", "news-systemic-visual--cards", "news-systemic-visual--network", "news-systemic-visual--cascade", "news-mpd-balance", "Persönliche Einordnung der Autorin", "reality-check"]) assert.ok(html.includes(marker), marker);
+  for (const marker of ["Meinung &amp; Analyse", "wirkungsökonomisch eingeordnet", "news-editorial-callout", "news-systemic-visual--comparison", "news-systemic-visual--cards", "news-systemic-visual--network", "news-systemic-visual--cascade", "wt-dims--impact", "Persönliche Einordnung der Autorin", "reality-check"]) assert.ok(html.includes(marker), marker);
   assert.doesNotMatch(html, /Visuelle Einordnung der Ursprungsgeschichte/);
   assert.match(html, /href="\/wirkungsticker\/analyse\/wenn-aus-programm-staatsmacht-wird-sachsen-anhalt\/"/);
   assert.equal(packet.navigation_groups.length, 6);
-  assert.match(html, /Größenordnung offen/);
+  assert.match(html, /Tragweite offen/);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
   assert.equal(new Set(ids).size, ids.length);
   for (const match of html.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.includes(match[1]), match[1]);

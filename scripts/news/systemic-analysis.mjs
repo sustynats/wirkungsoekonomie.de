@@ -157,7 +157,7 @@ export function renderSystemicVisual(visual, sources) {
 export function renderSystemicDimensions(analysis) {
   if (analysis.analysis_variant !== "systemic") return "";
   if (analysis.editorial_rules_version) return renderEditorialBalance(analysis);
-  return `<div class="news-systemic-dimensions"><h3>${renderIcon("systemisch")} Relevanz des Regierungsszenarios</h3><p>Die Balken zeigen die Bedeutung der möglichen Zustandsveränderungen, nicht Schaden, Eintrittswahrscheinlichkeit oder eine Bewertung von Menschen.</p>${renderDimensionMeters(analysis.subject_dimensions)}<h3>Richtungsbefund, getrennt von Relevanz</h3><p>${escape(analysis.direction_finding)}</p></div>`;
+  return `<div class="news-systemic-dimensions"><h3>${renderIcon("systemisch")} Wirkungsprofil des Regierungsszenarios</h3><p>Die Balken zeigen die Tragweite des untersuchten Wirkungspfads.</p>${renderDimensionMeters(analysis, { context: { title: analysis.title } })}<h3>Begründeter Richtungsbefund</h3><p>${escape(analysis.direction_finding)}</p></div>`;
 }
 
 export function renderSectionAnchor(section) {

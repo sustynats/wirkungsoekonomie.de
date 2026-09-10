@@ -1,3 +1,4 @@
+import { IMPACT_RULE, IMPACT_DEFS } from '../../scripts/news/impact-assessment.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -124,18 +125,18 @@ test('MPD output schema enumerates the exact reference contract, without silentl
   assert.ok(directionAssessmentErrors(a,sources,{requireCurrent:true}).includes('AI_DIRECTION_PATH_REFERENCE_INVALID:human'));
   assert.equal(JSON.stringify(a),before,'a free-text comparison must not be silently declared equivalent');
   const prompt=buildAnalysisPrompt([{story_id:'test',title:'Test',claims:[],sources:[]}]);
-  assert.match(prompt,/jede Zahl muss in den zitierten Segmenten stehen/);
-  assert.match(prompt,/effect_type\/reference sind Pflichtfelder/);
+  assert.match(prompt,/jede Zahl im zitierten Segment/);
+  assert.match(prompt,/Keine zusätzliche alte MPD-Bewertung/);
 });
 
 test('missing, explicit uncertainty, missing pathway and unsupported balance are distinct visible states',()=>{
   const a=fixture();delete a.human.tendency;a.planet.tendency='offen';a.planet.direction_basis='no_path';a.democracy.tendency='offen';a.democracy.direction_basis='unclear';
   const before=JSON.stringify(a);const html=renderDimensionMeters(a,{compact:true});
-  for(const label of ['Noch nicht eingeordnet','Kein belastbarer Wirkpfad','Wirkungsrichtung unklar'])assert.ok(html.includes(label));
+  assert.equal((html.match(/data-path-status="insufficient_basis"/g)||[]).length,3);
   assert.doesNotMatch(html,/sr-only[^>]*>Für diese Dimension/);
   assert.equal(JSON.stringify(a),before);
   a.democracy.tendency='gemischt';assert.equal(dimensionAssessment(a,'democracy').status,'unresolved_balance');
-  assert.match(renderDimensionMeters(a),/Keine belastbare Gesamtbewertung/);
+  assert.match(renderDimensionMeters(a),/Stand der Einordnung/);
 });
 
 test('fresh output must not omit the contract, direction, basis, or substantive explanation',()=>{
@@ -156,40 +157,29 @@ test('unimplemented negative risk stays negative; uncertainty is not a positive 
   assert.match(renderDimensionMeters(a),/data-direction="negative"/);
   a.human.tendency='gemischt';assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_MIXED_PATHS_REQUIRED:human'));
   Object.assign(a.human,mixed());assert.deepEqual(directionAssessmentErrors(a,sources),[]);
-  assert.match(renderDimensionMeters(a),/Positiver Pfad/);assert.match(renderDimensionMeters(a),/Negativer Pfad/);
+  assert.match(renderDimensionMeters(a),/data-magnitude="unknown"/);
   a.human.positive_path.source_ids=['unknown'];assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_PATH_SOURCE_INVALID:human'));
   a.human.positive_path=structuredClone(a.human.negative_path);assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_MIXED_PATHS_REQUIRED:human'));
 });
 
 test('new contract is present with visuals disabled and is enforced in the production worker',()=>{
   const prompt=buildAnalysisPrompt([{story_id:'test',title:'Test',claims:[],sources:[]}],{includeVisuals:false});
-  assert.ok(prompt.includes(DIRECTION_SEPARATION_RULE));assert.ok(prompt.includes(`"direction_assessment_version":"${DIRECTION_ASSESSMENT_VERSION}"`));
-  assert.ok(prompt.includes(DIRECTION_REFERENCE_RULE));
+  assert.ok(prompt.includes(IMPACT_RULE));assert.ok(prompt.includes('"version":"2.0"'));
+  assert.ok(prompt.includes('counterfactual'));
   assert.ok(prompt.includes('"visuals":null'));assert.ok(prompt.length<39000);
-  assert.match(fs.readFileSync('scripts/news/run.mjs','utf8'),/validateAnalysis\(analysis, analysisCandidate, \{ requireDirectionAssessment: true \}\)/);
+  assert.match(fs.readFileSync('scripts/news/run.mjs','utf8'),/validateAnalysis\(analysis, analysisCandidate, \{ requireDirectionAssessment: true, requireImpactAssessment: true \}\)/);
 });
 
 for (const includeVisuals of [true, false]) test(`the actual output template includes both mixed paths (visuals=${includeVisuals})`,()=>{
   const prompt=buildAnalysisPrompt([{story_id:'test',title:'Test',claims:[],sources:[]}],{includeVisuals});
   const template=JSON.parse(prompt.split('\n').find(line=>line.startsWith('{"analyses":')));
-  const schema=template.analyses[0];
-  for (const key of ['human','planet','democracy']) {
-    assert.equal(schema[key].$ref,'#/$defs/mpd');
-    schema[key]=structuredClone(template.$defs.mpd);
-    for (const sign of ['positive_path','negative_path']) {
-      assert.equal(schema[key][sign].$ref,'#/$defs/path');
-      schema[key][sign]=structuredClone(template.$defs.path);
-      assert.deepEqual(schema[key][sign],{...NEWS_DIMENSION_SCHEMA.positive_path,state_change:'konkrete Zustandsänderung'});
-    }
-  }
-  assert.match(prompt,/unbenötigte Pfade null/);
-  const analysis=fixture();
-  for (const key of ['human','planet','democracy']) {
-    analysis[key]={...schema[key],relevance:'hoch',tendency:'gemischt',direction_basis:'assessed',rationale:fixture()[key].rationale,...mixed()};
-  }
-  assert.deepEqual(directionAssessmentErrors(analysis,sources,{requireCurrent:true}),[]);
-  for (const key of ['human','planet','democracy']) Object.assign(analysis[key],{tendency:'risiko',positive_path:null,negative_path:fixture()[key].negative_path});
-  assert.deepEqual(directionAssessmentErrors(analysis,sources,{requireCurrent:true}),[], 'no invented counterpaths required for a negative judgment');
+  const schema=template.analyses[0].impact_assessment;
+  for (const key of ['human','planet','democracy']) assert.equal(schema.dimensions[key].$ref,'#/$defs/impact_dimension');
+  assert.deepEqual(template.$defs, IMPACT_DEFS);
+  assert.equal(template.analyses[0].human,undefined,'no parallel legacy judgment');
+  assert.ok(template.$defs.impact_dimension.primary_paths);
+  assert.ok(template.$defs.impact_dimension.secondary_paths);
+  assert.match(prompt,/Unbenötigte Pfadlisten leer/);
 });
 
 test('mixed findings require independent changes against the same baseline, not offsets or missing benefits',()=>{
@@ -213,7 +203,7 @@ test('reference is visible on compact and detailed meters, escaped, and required
   for(const compact of [true,false]) {
     const html=renderDimensionMeters(a,{compact});
     assert.match(html,/Bewertet:/);assert.ok(html.includes(a.assessment_frame.subject));
-    assert.match(html,/Verglichen mit:/);assert.ok(html.includes(a.assessment_frame.baseline));
+    if(!compact) { assert.match(html,/Vergleich:/);assert.ok(html.includes(a.assessment_frame.baseline)); }
   }
   a.assessment_frame.subject='<script>Do not execute this text</script>';
   assert.doesNotMatch(renderDimensionMeters(a),/<script>/);

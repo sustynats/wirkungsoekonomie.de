@@ -1,3 +1,4 @@
+import { migrateImpactAssessment } from './impact-assessment.mjs';
 import { createBridgeRuntime } from './bridge/runtime.mjs';
 import fs from "node:fs";
 import path from "node:path";
@@ -45,7 +46,7 @@ import { createPublicationDateRecovery } from "./publication-date.mjs";
 import { EVENT_RELEVANCE_VERSION, EVENT_EDITORIAL_POLICY_VERSION, needsEventPolicyReview, balanceEventQueue, categoryCoverage, updateEventLifecycle } from './event-relevance.mjs';
 import { observedMajorEvents, missedNewsRechecks, coverageAudit } from './coverage-audit.mjs';
 import { runActiveDiscovery, agendaSignal } from './active-discovery.mjs';
-import { processingMode, visualGenerationProvider } from './processing-mode.mjs';
+import { processingMode, visualGenerationProvider, assertAutomaticImpactTransport } from './processing-mode.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = EVENT_RELEVANCE_VERSION;
@@ -63,6 +64,7 @@ const RETRYABLE_QUALITY_ERRORS = [
   /^AI_IMPORTANCE_INVALID$/,
   /^AI_DIMENSION_INVALID:/,
   /^AI_DIRECTION_/,
+  /^IMPACT_/,
   /^AI_ARRAY_REQUIRED:/,
   /^AI_UNCERTAINTY_REQUIRED$/,
   /^AI_WATCH_NEXT_REQUIRED$/,
@@ -624,6 +626,8 @@ export function publishedRecord(candidate, analysis, ai, now) {
     numeric_evidence: version.numeric_evidence,
     source_summary: sourceSummary,
     analysis: woekAnalysis,
+    impact_assessment: migrateImpactAssessment(woekAnalysis, { title: candidate.title }),
+    impact_history: existing?.impact_history || [],
     versions: [...(existing?.versions || []), version],
     publication_history: [
       ...(existing?.publication_history || []),
@@ -991,6 +995,13 @@ export async function runWirkungsticker(options = {}) {
     operational_status: "running",
     editorial_status: "running",
   };
+
+  // These jobs already have a complete, immutable published-source package.
+  // Hand them off under the discovery lock before slow external feed I/O.
+  if (bridge && !options.dryRun && bridgePhase !== 'import') {
+    const impactEditorials = fs.existsSync(path.join(ROOT, 'data/news/editorial-analyses.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'data/news/editorial-analyses.json'), 'utf8')).analyses : [];
+    report.bridge_impact_enqueued = await (await import('./bridge/impact.mjs')).discoverImpactJobs(bridge, [...storyStore.stories, ...impactEditorials], now);
+  }
 
   report.ambiguous_decisions_requeued = [];
   if (!state.publication_decision_review_v1_at) {
@@ -1408,6 +1419,7 @@ export async function runWirkungsticker(options = {}) {
 
   const aiEnabled = mode === 'api' && String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
   if (selected.length && aiEnabled) {
+    assertAutomaticImpactTransport(typeof options.callAiImpl === 'function');
     const aiDeadline = Date.now() + 7 * 60000;
     const sourceRegistryById = new Map(enabledSources.map((source) => [source.source_id, source]));
     for (let offset = 0; offset < selected.length; offset += aiBatchSize) {
@@ -1510,7 +1522,7 @@ export async function runWirkungsticker(options = {}) {
             report.direction_transport.push({ story_id: candidate.story_id, ...directionTransport });
           }
           if (analysis) normalizeEvidenceExcerpts(analysis, analysisCandidate);
-          const errors = analysis ? validateAnalysis(analysis, analysisCandidate, { requireDirectionAssessment: true }) : ["AI_ANALYSIS_MISSING"];
+          const errors = analysis ? validateAnalysis(analysis, analysisCandidate, { requireDirectionAssessment: true, requireImpactAssessment: true }) : ["AI_ANALYSIS_MISSING"];
           // Check the durable representation before accepting a publication.
           // A single transition defect must not invalidate the whole run later.
           let nextPublished;
@@ -1790,6 +1802,11 @@ export async function runWirkungsticker(options = {}) {
     if (bridge?.editorialEnabled && bridgePhase !== 'discovery' && fs.existsSync(path.join(ROOT, 'data/news/editorial-analyses.json'))) {
       report.bridge_editorial_results = await (await import('./bridge/editorial.mjs')).importEditorialJobs(bridge, ROOT, now);
       if (report.bridge_editorial_results.some(r => r.changed)) report.public_changed = true;
+      writeJson(files.report, report);
+    }
+    if (bridge && bridgePhase !== 'discovery') {
+      report.bridge_impact_results = await (await import('./bridge/impact.mjs')).importImpactJobs(bridge, ROOT, now);
+      if (report.bridge_impact_results.some(r => r.changed)) report.public_changed = true;
       writeJson(files.report, report);
     }
     buildNewsSite();

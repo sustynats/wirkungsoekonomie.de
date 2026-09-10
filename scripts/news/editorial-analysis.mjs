@@ -1,3 +1,4 @@
+import { IMPACT_SCHEMA, IMPACT_DEFS, IMPACT_RULE, impactAssessmentErrors } from './impact-assessment.mjs';
 import crypto from "node:crypto";
 import { assertAutomatable } from "./manual-policy.mjs";
 import { hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
@@ -27,12 +28,14 @@ export const EDITORIAL_ANALYSIS_SCHEMA = {
   seo_description: "string",
   additional_value: "string",
   research_summary: "string",
+  impact_assessment: IMPACT_SCHEMA,
+  $defs: IMPACT_DEFS,
   sections: [{ id: "lage|system|makro|mpd|wirkungsordnungen|resilienz|transformation|externalitaeten|verteilung|frame_diskurs|szenarien|unsicherheit|beobachtung|synthese", title: "string", paragraphs: ["string"], source_ids: ["string"], visual: EDITORIAL_VISUAL_SCHEMA }],
   claim_ledger: [{ claim: "string", type: "fact|observation|woek_definition|analytical_inference|impact_potential|impact_risk|observed_impact|attribution|normative_assessment", source_ids: ["string"], evidence_level: "high|medium|low|open", data_status: "confirmed|attributed|inferred|scenario|open", uncertainty: "string", date: "ISO date or null" }],
   counter_evidence: [{ finding: "string", source_ids: ["string"], effect_on_assessment: "string" }],
   what_changes_the_assessment: ["string"],
   self_frame_check: { passed: true, issues: ["string"], recommended_title: "string", recommended_summary: "string", recommended_meta_description: "string" },
-  ...EDITORIAL_JUDGMENT_SCHEMA,
+  ...Object.fromEntries(Object.entries(EDITORIAL_JUDGMENT_SCHEMA).filter(([key])=>key!=="subject_dimensions")),
 };
 
 function plain(value, max = 1200) {
@@ -253,6 +256,7 @@ export function buildEditorialAnalysisPrompt(story, assessment, qualityErrors = 
     READER_COPY_RULE,
     "Der Self-Frame-Check prüft Titel, Teaser und Meta-Description. Titel beginnt mit dem Sachverhalt oder der Systemfrage, nicht mit einem politischen Kampfbegriff. SEO-Text ist sachlich und 110 bis 158 Zeichen lang.",
     "Gib ausschließlich valides JSON als {analyses:[{story_id,editorial_analysis}]} aus. Keine Einleitung, kein Markdown.",
+    IMPACT_RULE + " Keine zusätzliche subject_dimensions-Bewertung: impact_assessment ist das einzige führende MPD-Profil.",
     "Verwende für die Pflichtabschnitte exakt diese IDs: lage, system, mpd, wirkungsordnungen, unsicherheit, beobachtung, synthese. Eigene sprechende Überschriften gehören in title, nicht in id.",
     "likelihood=observed bewertet eine beobachtete Wirkung, nicht bloß ein bereits geschehenes Ereignis oder eine veröffentlichte Ankündigung. Ohne belegte Zustandsveränderung bleibt die Wirkung ex ante. Behebe beim Self-Frame-Check erkannte Probleme im Text vor Rückgabe; eine Empfehlung allein ist keine Korrektur.",
     ...(qualityErrors.length ? [`QUALITÄTSKORREKTUR: ${qualityErrors.join(", ")}. Behebe die benannten Mängel quellengebunden; keine neuen Behauptungen oder bloß formalen Freigaben.`] : []),
@@ -296,6 +300,7 @@ export function sanitizeEditorialAnalysis(raw, story) {
     seo_description: plain(raw.seo_description, 180), additional_value: plain(raw.additional_value, 700), research_summary: plain(raw.research_summary, 1000),
     sections, claim_ledger: ledger, counter_evidence: counterEvidence,
     ...sanitizeEditorialJudgment(raw, sourceIds),
+    ...(raw.impact_assessment ? { impact_assessment: structuredClone(raw.impact_assessment) } : {}),
     what_changes_the_assessment: (raw.what_changes_the_assessment || []).slice(0, 8).map((item) => plain(item, 500)).filter(Boolean),
     self_frame_check: {
       passed: raw.self_frame_check?.passed !== false,
@@ -328,6 +333,7 @@ export function editorialAnalysisValidationErrors(analysis, story, assessment = 
   if (articleWords < (systemic ? 2200 : 800) || articleWords > (systemic ? 3900 : 2100)) errors.push("EDITORIAL_ARTICLE_LENGTH");
   errors.push(...systemicValidationErrors(analysis));
   errors.push(...editorialJudgmentErrors(analysis), ...editorialVisualErrors(analysis));
+  errors.push(...impactAssessmentErrors(analysis.impact_assessment, analysis.source_snapshot || editorialSources(story).map(s=>({...s,source_id:editorialSourceRef(s)}))));
   if ((analysis.claim_ledger || []).length < 5) errors.push("EDITORIAL_CLAIM_LEDGER_TOO_SHORT");
   for (const claim of analysis.claim_ledger || []) {
     if (["fact", "observation", "observed_impact", "attribution", "program_statement"].includes(claim.type) && !claim.source_ids.length) errors.push("EDITORIAL_FACT_WITHOUT_SOURCE");

@@ -9,7 +9,7 @@ const pages = ["wirkungsticker/index.html", "wirkungsticker/quellen/index.html",
 
 test("Erklärungsebenen: unverändertes Ticker-Versprechen und kompakte Leselogik", () => {
   const html = read(pages[0]);
-  for (const text of ["Wichtige Nachrichten. Fakten, Folgen, Zusammenhänge.", "Politik, Wirtschaft, Gesellschaft, Umwelt und Technik", "was belegt ist", "welche Folgen möglich sind", "wie über Ereignisse gesprochen wird", "So liest du den Ticker", "Wirkungsakte", "Lageakte", "Meinung &amp; Analyse", "Relevanz, nicht gut oder schlecht.", "Festgestellte Zustandsveränderung", 'id="methodik"']) assert.ok(html.includes(text), text);
+  for (const text of ["Wichtige Nachrichten. Fakten, Folgen, Zusammenhänge.", "Politik, Wirtschaft, Gesellschaft, Umwelt und Technik", "was belegt ist", "welche Folgen möglich sind", "wie über Ereignisse gesprochen wird", "So liest du den Ticker", "Wirkungsakte", "Lageakte", "Meinung &amp; Analyse", "Balken = Tragweite", "Festgestellte Zustandsveränderung", 'id="methodik"']) assert.ok(html.includes(text), text);
   assert.doesNotMatch(html, /WÖK-Analyse/);
   assert.ok(html.includes("Automatisch aktualisierte Nachrichten, quellengebunden geprüft"));
 });
@@ -87,7 +87,7 @@ test("Erklärungsebenen: eindeutige IDs, JSON-LD und erreichbare neue Lesepfade"
     if (html.includes('data-manual-editorial="book_and_impact"')) {
       // A signed book review is not a scored news event.
       assert.ok(html.includes('"@type":"Book"'));
-      assert.ok(!html.includes('aria-label="Relevanz für Mensch:'));
-    } else assert.ok(html.includes('aria-label="Relevanz für Mensch:'));
+      assert.ok(!html.includes('aria-label="Tragweite für Mensch:'));
+    } else assert.ok(html.includes('aria-label="Tragweite für Mensch:'));
   }
 });
