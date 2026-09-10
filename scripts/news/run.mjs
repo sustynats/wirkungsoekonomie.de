@@ -1,3 +1,4 @@
+import { assessmentBasis } from './migrate-impact-assessments.mjs';
 import { migrateImpactAssessment } from './impact-assessment.mjs';
 import { createBridgeRuntime } from './bridge/runtime.mjs';
 import { fetchDiscoverySource } from './bridge/discovery-cache.mjs';
@@ -584,7 +585,7 @@ export function publishedRecord(candidate, analysis, ai, now) {
     source_versions: candidate.sources.map((source) => ({ source_id: source.source_id, url: source.url, content_hash: source.content_hash })),
     numeric_evidence: numericEvidenceReceipt(candidate, versionNumber, now),
   };
-  return {
+  const record = {
     ...(existing?.queue_source_repartitions ? {queue_source_repartitions:existing.queue_source_repartitions} : {}),
     ...(existing?.publication_decision_review ? { publication_decision_review: existing.publication_decision_review, rejection_history: existing.rejection_history || [] } : {}),
     story_id: candidate.story_id,
@@ -628,6 +629,7 @@ export function publishedRecord(candidate, analysis, ai, now) {
     source_summary: sourceSummary,
     analysis: woekAnalysis,
     impact_assessment: migrateImpactAssessment(woekAnalysis, { title: candidate.title }),
+    impact_sources: candidate.impact_sources || existing?.impact_sources || [],
     impact_history: existing?.impact_history || [],
     versions: [...(existing?.versions || []), version],
     publication_history: [
@@ -638,6 +640,8 @@ export function publishedRecord(candidate, analysis, ai, now) {
       ? [...(existing?.retirement_history || []), existing.retirement]
       : (existing?.retirement_history || []),
   };
+  record.impact_assessment_basis = assessmentBasis(record);
+  return record;
 }
 
 function latestSourceDate(items) {
@@ -1830,6 +1834,10 @@ export async function runWirkungsticker(options = {}) {
       report.bridge_impact_results = await (await import('./bridge/impact.mjs')).importImpactJobs(bridge, ROOT, now);
       if (report.bridge_impact_results.some(r => r.changed)) report.public_changed = true;
       writeJson(files.report, report);
+    }
+    if(bridge && bridgePhase !== 'discovery'){
+      try{const editorial=await (await import('./bridge/personal-publication.mjs')).importApprovedEditorials(bridge.store,ROOT);if(editorial.changed)report.public_changed=true;}catch{report.personal_editorial_pending=true;}
+      writeJson(files.report,report);
     }
     buildNewsSite();
   }

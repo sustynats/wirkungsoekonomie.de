@@ -1,4 +1,4 @@
-import { IMPACT_RULE, IMPACT_DEFS } from '../../scripts/news/impact-assessment.mjs';
+import { IMPACT_PROMPT_RULE, IMPACT_PROMPT_DEFS } from '../../scripts/news/impact-assessment.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -164,7 +164,7 @@ test('unimplemented negative risk stays negative; uncertainty is not a positive 
 
 test('new contract is present with visuals disabled and is enforced in the production worker',()=>{
   const prompt=buildAnalysisPrompt([{story_id:'test',title:'Test',claims:[],sources:[]}],{includeVisuals:false});
-  assert.ok(prompt.includes(IMPACT_RULE));assert.ok(prompt.includes('"version":"2.0"'));
+  assert.ok(prompt.includes(IMPACT_PROMPT_RULE));assert.ok(prompt.includes('"version":"2.1"'));
   assert.ok(prompt.includes('counterfactual'));
   assert.ok(prompt.includes('"visuals":null'));assert.ok(prompt.length<39000);
   assert.match(fs.readFileSync('scripts/news/run.mjs','utf8'),/validateAnalysis\(analysis, analysisCandidate, \{ requireDirectionAssessment: true, requireImpactAssessment: true \}\)/);
@@ -175,7 +175,7 @@ for (const includeVisuals of [true, false]) test(`the actual output template inc
   const template=JSON.parse(prompt.split('\n').find(line=>line.startsWith('{"analyses":')));
   const schema=template.analyses[0].impact_assessment;
   for (const key of ['human','planet','democracy']) assert.equal(schema.dimensions[key].$ref,'#/$defs/impact_dimension');
-  assert.deepEqual(template.$defs, IMPACT_DEFS);
+  assert.deepEqual(template.$defs, IMPACT_PROMPT_DEFS);
   assert.equal(template.analyses[0].human,undefined,'no parallel legacy judgment');
   assert.ok(template.$defs.impact_dimension.primary_paths);
   assert.ok(template.$defs.impact_dimension.secondary_paths);

@@ -4,6 +4,7 @@ import { numericEvidenceReceipt, persistedNumericEvidence } from "../../scripts/
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import fs from "node:fs";
+import {syntheticPotentialAssessment} from './fixtures/impact21.mjs';
 import {
   assertSafeFeedUrl,
   budgetStage,
@@ -46,13 +47,21 @@ const source = {
   access: { status: "public", cost_usd: 0, article: "bounded_public_text" },
 };
 
+test('structured pathway explanations have a separate bounded budget from the short news text',()=>{
+ const story=candidate(),a=validAnalysis();
+ a.impact_assessment=JSON.parse(JSON.stringify(syntheticPotentialAssessment()).replaceAll('"official"','"official-test"'));
+ a.impact_assessment.dimensions.human.primary_paths[0].limitations='Ausführlich dokumentierte Wissensgrenze im synthetischen Test. '.repeat(320);
+ const errors=validateAnalysis(a,story);assert.equal(errors.includes('AI_ANALYSIS_TOO_LARGE'),false);assert.equal(errors.includes('IMPACT_ASSESSMENT_TOO_LARGE'),false);
+ a.impact_potential='Überlanger Lesertext. '.repeat(1000);assert.ok(validateAnalysis(a,story).includes('AI_ANALYSIS_TOO_LARGE'));
+ a.impact_assessment.dimensions.human.primary_paths[0].limitations='x'.repeat(180001);assert.ok(validateAnalysis(a,story).includes('IMPACT_ASSESSMENT_TOO_LARGE'));
+});
 test("Large multi-source prompts retain identities and exact evidence under the Oracle limit", () => {
   const sources=Array.from({length:12},(_,n)=>({source_id:`source-${n}`,url:`https://example.org/${n}`,title:`Originalbericht Nummer ${n}`,summary:"Eine neue Entscheidung wird anhand konkreter Quellen eingeordnet.",article_excerpt:Array.from({length:80},(_,j)=>`Absatz ${j}: Die Quelle ${n} berichtet über belegte Einzelheiten dieser Entscheidung und nennt ihre Grenzen.`).join(" ")}));
   const story={story_id:"wt-test",title:"Neue Entscheidung",sources,claims:[]};
   const prompt=buildAnalysisPrompt([story]);
   assert.ok(prompt.includes('Ohne eigene Feldvorgabe: Strings maximal 220 Zeichen'));
   assert.ok(!prompt.includes('Andere Zeichenketten: maximal 220 Zeichen'));
-  assert.ok(prompt.length<=39000);
+  assert.ok(prompt.length<=44000);
   const input=JSON.parse(prompt.split("UNTRUSTED_SOURCE_DATA_BEGIN\n")[1].split("\nUNTRUSTED_SOURCE_DATA_END")[0]).map(expandPacketTransport);
   assert.deepEqual(input[0].sources.map(x=>x.url),sources.map(x=>x.url));
   assert.ok(input[0].sources.some(x=>x.evidence_selection?.incomplete));
@@ -72,7 +81,7 @@ test("Growing living files retain all evidence identities, roles and claims with
   const story={...existing,existing_story:existing,sources:sources.map(s=>({...s,article_excerpt:Array.from({length:40},(_,n)=>`Passage ${n}: Dies ist ein unveränderter Testbeleg über Infrastruktur und offene Ermittlungen.`).join(' ')})),claims:sources.map((s,n)=>({claim_id:`claim-${n}`,claim:`${s.title}: ${s.summary}`,source_id:s.source_id,evidence_level:'Sekundärquelle',uncertainty:'Vollständiger Kontext ist in der Originalquelle zu prüfen.'})),related_ticker_history:Array.from({length:5},(_,n)=>({story_id:`related-${n}`,title:'Eigenständige verwandte Meldung',summary:'Dies ist eine verwandte Nachricht mit einem eigenständigen Ereignis und anderen Belegen. '.repeat(4),source_urls:[`https://example.org/${n}/eins`,`https://example.org/${n}/zwei`,`https://example.org/${n}/drei`],source_published_at:'2026-09-03T12:00:00Z'}))};
   const before=structuredClone(story);
   const prompt=buildAnalysisPrompt([story]);
-  assert.ok(prompt.length<=39000);
+  assert.ok(prompt.length<=44000);
   const compact=expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
   assert.equal(compact.sources.length,sources.length);
   assert.equal(compact.claims.length,story.claims.length);
@@ -113,7 +122,7 @@ test("Large parliamentary hearings remain analyzable with one exact passage per 
     uncertainty:"Die jeweilige Stellungnahme belegt die Position, nicht automatisch deren sachliche Richtigkeit.",
   }))};
   const prompt=buildAnalysisPrompt([story]);
-  assert.ok(prompt.length<=39000);
+  assert.ok(prompt.length<=44000);
   const [compact]=JSON.parse(prompt.split("UNTRUSTED_SOURCE_DATA_BEGIN\n")[1].split("\nUNTRUSTED_SOURCE_DATA_END")[0]).map(expandPacketTransport);
   assert.equal(compact.sources.length,31);
   assert.equal(compact.claims.length,31);

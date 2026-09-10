@@ -66,6 +66,9 @@ export class BridgeStore {
     } catch (error) { this.db.exec('ROLLBACK'); throw error; }
   }
   all() { return this.db.prepare("SELECT body FROM jobs WHERE json_extract(body,'$.archived_at') IS NULL ORDER BY id").all().map(row => { const job = JSON.parse(row.body); delete job.staging; return job; }); }
+  impactStagingIndex() {
+    return this.db.prepare("SELECT id, json_extract(body,'$.staging.impact_record_hash') AS record_hash FROM jobs WHERE json_extract(body,'$.input.job_type')='impact_reassessment' AND json_extract(body,'$.staging.impact_record.impact_assessment.version')='2.1' AND json_extract(body,'$.accepted.decision')='publish' ORDER BY id").all();
+  }
   observe(key, value) { this.db.prepare('INSERT INTO observations VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET body=excluded.body').run(key, JSON.stringify(value)); }
   observation(key) { const row = this.db.prepare('SELECT body FROM observations WHERE key=?').get(key); return row ? JSON.parse(row.body) : null; }
   close() { this.release(false); this.lock.close(); this.db.close(); }

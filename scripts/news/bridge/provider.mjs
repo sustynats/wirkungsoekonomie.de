@@ -1,5 +1,6 @@
+import { retainPotentialHistory } from '../impact-potential.mjs';
 import { ensureSemanticReview, importSemanticReviews } from './semantic-review.mjs';
-import { migrateImpactAssessment, impactClaimLedger } from '../impact-assessment.mjs';
+import { migrateImpactAssessment, impactClaimLedger, withMagnitudeCalculations } from '../impact-assessment.mjs';
 import { canRequestCorrection, prepareCorrection, recoverCorrections } from './corrections.mjs';
 import { bridgeInput, adaptOutput, validateOutputBinding, sameBridgeEvent } from './adapter.mjs';
 import { BRIDGE_ROOT, bridgePath, parsePacket, outputSchema, hash } from './contract.mjs';
@@ -103,18 +104,22 @@ export class DropboxChatGPTBridgeProvider {
           const proposed = analysis?.impact_assessment || migrateImpactAssessment(analysis || {}, { title: record.title });
           const gate = await this.semanticReview(this, job, output, record, proposed, now);
           if (gate.status !== 'ready') continue;
+          if (job.semantic_review) job.semantic_review.verified_context_sources = gate.record?.impact_sources || [];
+          await this.store.put(job);
           validatedOutput = structuredClone(output);
           const approved = validatedOutput.wirkungsticker?.analysis;
           if (approved) (Array.isArray(approved.analyses) ? approved.analyses[0] : approved).impact_assessment = gate.assessment;
         }
         const result = this.adapt(validatedOutput, job, registry, jobStories, now);
         if (result.record?.impact_assessment) {
+          result.record.impact_assessment = withMagnitudeCalculations(result.record.impact_assessment);
+          retainPotentialHistory(result.record, result.record.impact_assessment, {at:now, jobId:job.input.job_id});
           result.record.impact_assessment.publication_status = 'ready';
-          result.record.impact_claims = impactClaimLedger(result.record.impact_assessment, result.record.sources, now);
+          result.record.impact_claims = impactClaimLedger(result.record.impact_assessment, [...result.record.sources,...(result.record.impact_sources || [])], now);
         }
         if (result.record?.bridge_import) result.record.bridge_import.output_hash = hash(output);
         if (result.record && job.semantic_review) result.record.impact_semantic_review = { review_job_id: job.semantic_review.review_job_id, reviewed_at: job.semantic_review.reviewed_at, status: 'ready' };
-        const staged = this.stageOnly || job.input.test_only;
+        const staged = this.stageOnly || job.input.test_only || Boolean(job.intake_news_parent);
         let visual = null;
         if (result.record && this.visualProvider) {
           visual = await this.visualProvider.receive(job, now, { output, record: result.record, staged });

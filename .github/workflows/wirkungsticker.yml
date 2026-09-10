@@ -103,11 +103,11 @@ jobs:
       - name: Record expected run start
         if: steps.slot.outputs.should_run == 'true'
         run: echo "WOEK_NEWS_EXPECTED_AFTER=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
-      - name: Install local image validation tools
+      - name: Install local image and public-document validation tools
         if: steps.slot.outputs.should_run == 'true' && env.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge'
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends imagemagick tesseract-ocr
+          sudo apt-get install -y --no-install-recommends imagemagick tesseract-ocr poppler-utils
       - name: Unit and security tests
         if: steps.slot.outputs.should_run == 'true'
         env:

@@ -68,3 +68,31 @@ export function renderEditorialMarkdown(markdown) {
   endSection();
   return { html: blocks.join("\n"), sections: sections.filter(s => s.html), headings };
 }
+
+// Signed manuscripts may use named footnotes. Keep their text and source order;
+// only the reference syntax becomes linked, accessible HTML.
+export function renderEditorialMarkdownWithFootnotes(markdown) {
+  const notes = new Map();
+  if (markdown.includes('WOEKFOOTNOTEREFERENCE')) throw new Error('EDITORIAL_MARKDOWN_RESERVED_TOKEN');
+  let body = markdown.replace(/^\[\^([A-Za-z0-9_-]+)\]: (.+)$/gm, (_, id, text) => {
+    if (notes.has(id)) throw new Error('EDITORIAL_MARKDOWN_DUPLICATE_FOOTNOTE');
+    notes.set(id, { number: notes.size + 1, text });
+    return '';
+  });
+  body = body.replace(/\[\^([A-Za-z0-9_-]+)\]/g, (_, id) => {
+    if (!notes.has(id)) throw new Error('EDITORIAL_MARKDOWN_MISSING_FOOTNOTE');
+    return `WOEKFOOTNOTEREFERENCE${notes.get(id).number}END`;
+  });
+  const rendered = renderEditorialMarkdown(body);
+  const references = html => html.replace(/WOEKFOOTNOTEREFERENCE(\d+)END/g, (_, n) => `<sup><a href="#source-${n}" aria-label="Quelle ${n}">${n}</a></sup>`);
+  for (const section of rendered.sections) {
+    section.html = references(section.html);
+    section.blocks = section.blocks.map(references);
+  }
+  if (notes.size) {
+    const blocks = [...notes.values()].map(({ number, text }) => `<p id="source-${number}"><strong>${number}.</strong> ${inlineEditorialMarkdown(text)}</p>`);
+    rendered.sections.push({ id: 'quellennachweise', title: 'Quellennachweise', blocks, html: blocks.join('\n') });
+  }
+  rendered.html = rendered.sections.map(section => section.html).join('\n');
+  return rendered;
+}

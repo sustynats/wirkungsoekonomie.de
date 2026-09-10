@@ -20,7 +20,7 @@ export function bridgeSession(env = process.env) {
     if (!response.ok || !result.ok) throw Object.assign(new Error(result.error || 'BRIDGE_REMOTE_UNAVAILABLE'), { retryable: response.status >= 500, ...(Number.isFinite(result.retry_after_seconds) ? { retry_after_seconds: result.retry_after_seconds } : {}) });
     return result.result;
   }
-  const store = Object.fromEntries(['acquire','get','put','all','observe','observation','release'].map(op => [op, (...args) => request(`store.${op}`, args)]));
+  const store = Object.fromEntries(['acquire','get','put','all','impactStagingIndex','observe','observation','release','editorialClaim','editorialFinalize','editorialFailure'].map(op => [op, (...args) => request(`store.${op}`, args)]));
   const transport = Object.fromEntries(['list','read','metadata','move','writeAtomic','archive'].map(op => [op, (...args) => request(`dropbox.${op}`, args)]));
   transport.readBinary = async file => Buffer.from(await request('dropbox.readBinary', [file]), 'base64');
   return { store, transport, status: () => request('bridge.status'), monitor: () => request('bridge.monitor') };
