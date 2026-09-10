@@ -2688,17 +2688,3 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
 .wt-impact-time{font-size:.8rem;opacity:.85;margin:.2rem 0 .6rem}
 .wt-impact-review{font-size:.9rem;margin:1rem 0}
 @media(max-width:380px){.wt-dims--impact.wt-dims--compact .wt-dim{grid-template-columns:5.7rem minmax(2.3rem,1fr) minmax(5.6rem,1.2fr);gap:.35rem}}
-/* A multi-volume publication retains a separate, undistorted cover per volume. */
-.news-book-volumes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-.news-book-volumes .news-book-cover { width: auto; max-width: none; }
-.news-book-hero-cover--volumes { width: 100%; max-width: 28rem; }
-@media (max-width: 640px) {
-  .news-book-hero-cover--volumes { width: 100%; max-width: 24rem; }
-}
-
-.news-editorial-article--volumes .news-editorial-hero { grid-template-columns: minmax(0, 1fr) minmax(16rem, 28rem); }
-.news-editorial-card__book--volumes { width: 18rem; max-width: 100%; }
-@media (max-width: 760px) {
-  .news-editorial-article--volumes .news-editorial-hero { grid-template-columns: minmax(0, 1fr); }
-  .news-editorial-card__book--volumes { width: 22rem; }
-}
