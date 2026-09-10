@@ -8,6 +8,7 @@ import { storyCard, storyPage } from '../../scripts/news/build.mjs';
 import { sanitizeAnalysisVisuals } from '../../scripts/news/run.mjs';
 import { deriveImpactPresentation, IMPACT_PROMPT_RULE } from '../../scripts/news/impact-assessment.mjs';
 import { dimensionAssessment } from '../../scripts/news/direction-assessment.mjs';
+import {publicImpactAssessment} from '../../scripts/news/impact-release.mjs';
 
 const mpd = () => Object.fromEntries(['human','planet','democracy'].map(key=>[key,{relevance:'hoch',rationale:'Der konkrete Wirkmechanismus bleibt zu prüfen.'}]));
 const statuses = html => [...html.matchAll(/class="wt-dim wt-dim--[^"]+" data-potential-model="2.1" data-direction="([^"]+)"/g)].map(match=>match[1]);
@@ -81,12 +82,19 @@ test('retroactive rendering covers every published story without rewriting store
   const store=JSON.parse(fs.readFileSync(new URL('../../data/news/stories.json',import.meta.url)));
   for(const story of store.stories.filter(story=>story.published&&story.listed!==false)) {
     const before=JSON.stringify(story);
+    const assessment=publicImpactAssessment(story);
     for(const detail of [false,true]) {
       const html=renderStoryVisual(story,{detail});
-      assert.equal(statuses(html).length,0,story.slug);
-      assert.deepEqual(statuses(html),[]);
-      assert.match(html,/systemische Relevanz/);
-      assert.doesNotMatch(html,/data-magnitude=/);
+      if(assessment){
+        assert.deepEqual(statuses(html),['human','planet','democracy'].map(key=>assessment.dimensions[key].direction),story.slug);
+        assert.match(html,/data-reviewed-impact-profile="2.1"/);
+        for(const key of ['human','planet','democracy'])assert.match(html,new RegExp('wt-dim--'+key));
+        assert.match(html,/data-magnitude=/);
+      }else{
+        assert.deepEqual(statuses(html),[],story.slug);
+        assert.match(html,/systemische Relevanz/);
+        assert.doesNotMatch(html,/data-magnitude=/);
+      }
     }
     assert.equal(JSON.stringify(story),before,story.slug);
   }
