@@ -1,10 +1,10 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4557**
+- Sitemap routes: **4567**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14609**
+- Extra tracked source HTML not in sitemap: **14619**
 - Routes with non-default #253 action: **3590**
-- Routes with Wirkungsblindheit/novelty/absence claim signals: **260**
+- Routes with Wirkungsblindheit/novelty/absence claim signals: **263**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
 
@@ -3676,6 +3676,28 @@ Signals are review candidates, not automatic errors.
 - `wirkungsfelder/gesundheit-pflege/dossiers/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsfelder/finanzsystem-kapital/steuer-abgabenarchitektur-kapital/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
 - `blog/demokratie-braucht-mehr-als-gute-sachpolitik.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/deutlicher-anstieg-bei-den-verteidigungsausgaben-05d4f9/index.html` - alternativen, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/john-ternus-apple-bringt-erstes-auffaltbares-iphone-heraus-396b15/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/olpreis-wieder-uber-100-dollar-spritpreise-binnen-einer-woche-stark-gestiegen-41bab3/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/bund-fordert-beethoven-jubilaum-mit-2-3-millionen-euro-staatsminister-weimer-2027-wird-b-58f666/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/bundestag-haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-bee914/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-russland-setzt-angriffe-auf-kiew-nach-dreitagiger-pause-fort-bb3e85/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/us-vermittler-in-der-ukraine-trumps-schwiegersohn-doch-nicht-so-wichtig-7549bd/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/zukunftsangst-dampft-kinderwunsch-64b8b5/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/generaldebatte-deutschland-braucht-mehr-als-einen-gewonnenen-schlagabtausch/index.html` - dns, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/entzauberung-durch-macht-sachsen-anhalt-kein-politisches-experiment/index.html` - alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/grosseinsatz-am-hambacher-forst-was-die-erfolglose-suche-uber-stromnetz-resilienz--3f27f4/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `begriffe/index.html` - wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/affektheuristik/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/algorithmische-fairness/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
@@ -3848,30 +3870,11 @@ Signals are review candidates, not automatic errors.
 - `quellenarchiv/index.html` - wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation - Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0465/index.html` - novelty_or_absence - Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0843/index.html` - wirkungsblind - Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
-- `wirkungsticker/index.html` - alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/olpreis-wieder-uber-100-dollar-spritpreise-binnen-einer-woche-stark-gestiegen-41bab3/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/bund-fordert-beethoven-jubilaum-mit-2-3-millionen-euro-staatsminister-weimer-2027-wird-b-58f666/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-russland-setzt-angriffe-auf-kiew-nach-dreitagiger-pause-fort-bb3e85/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/us-vermittler-in-der-ukraine-trumps-schwiegersohn-doch-nicht-so-wichtig-7549bd/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/zukunftsangst-dampft-kinderwunsch-64b8b5/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/generaldebatte-deutschland-braucht-mehr-als-einen-gewonnenen-schlagabtausch/index.html` - dns, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/entzauberung-durch-macht-sachsen-anhalt-kein-politisches-experiment/index.html` - alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/grosseinsatz-am-hambacher-forst-was-die-erfolglose-suche-uber-stromnetz-resilienz--3f27f4/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1258**
-- Combined matrix items (routes + extra HTML + support): **20424**
+- Tracked support text files inventoried: **1266**
+- Combined matrix items (routes + extra HTML + support): **20452**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -3972,6 +3975,7 @@ Signals are review candidates, not automatic errors.
 | `content/news/reviews/2026-09-09-sachsen-anhalt-sicherheitsrisiko.json` | support_text | ADD_SOURCE_LINKS | dns, alternativen |
 | `content/news/reviews/2026-09-09-soeder-afd-abgrenzung.json` | support_text | ADD_SOURCE_LINKS | dns, alternativen |
 | `content/news/reviews/2026-09-09-soeder-meinung-analyse.json` | support_text | ADD_SOURCE_LINKS | dns, alternativen, evaluation |
+| `content/news/reviews/2026-09-10-impact-semantics.json` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/news/reviews/booking-analysephase-2026-09-09.json` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/news/reviews/eeg-netzpaket-richtungsbezug-2026-09-09.json` | support_text | ADD_SOURCE_LINKS | dns |
 | `content/news/reviews/heilbronn-analysephase-2026-09-09.json` | support_text | NO_CHANGE_REQUIRED | evaluation |
@@ -4329,6 +4333,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/news/editorial-analysis.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | enap, dns |
 | `scripts/news/editorial-judgment.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/event-relevance.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation, novelty_or_absence |
+| `scripts/news/impact-assessment.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/news/lib.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | dns, evaluation |
 | `scripts/news/media-impact.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/newsroom.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
@@ -4436,7 +4441,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **20425**
+- Combined reviewed items: **20453**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.

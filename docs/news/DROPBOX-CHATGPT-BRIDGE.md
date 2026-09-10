@@ -100,8 +100,8 @@ transparente Korrektur-/Aktualisierungsnotiz.
 Der native Prompt-Wrapper `{analyses:[...]}` ist mit genau einer zum Job passenden
 Analyse ebenfalls zulässig. Evidence-IDs werden verlustfrei wie im API-Pfad
 auf die gelieferten Belegsegmente aufgelöst. `observed_outcome.source_ids` enthält
-die originalen `source_id`-Werte. Für Erstmeldungen muss `source_summary` 60–180,
-für vollständige Meldungen 100–180 Wörter enthalten; keine Fakten zur Verlängerung
+die originalen `source_id`-Werte. Für Erstmeldungen muss `source_summary` 60-180,
+für vollständige Meldungen 100-180 Wörter enthalten; keine Fakten zur Verlängerung
 erfinden. Envelope-Zusammenfassungen und native Zusammenfassungen müssen identisch sein.
 
 Bridge-3: ChatGPT erzeugt **kein PNG** und **kein zwingendes visual.json**.
