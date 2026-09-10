@@ -4,13 +4,14 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadManualEditorials, EDITORIAL_AUTHOR } from "./manual-editorial.mjs";
 import { escape } from "./editorial-markdown.mjs";
+import {applyApprovedEditorialRevisions} from './editorial-approved-revisions.mjs';
 
 const sourceRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const plain = html => html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
 
 // Read-only gate on BOTH source render and final deploy artifact. Every
 // manuscript block, in order and with original punctuation, must survive.
-export function checkManualPages(outputRoot, editions = loadManualEditorials(sourceRoot)) {
+export function checkManualPages(outputRoot, editions = applyApprovedEditorialRevisions(loadManualEditorials(sourceRoot),sourceRoot,{partial:true})) {
   for (const edition of editions.filter(e => e.status === "published")) {
     const html = fs.readFileSync(path.join(outputRoot, "wirkungsticker/analyse", edition.slug, "index.html"), "utf8");
     const page = plain(html);

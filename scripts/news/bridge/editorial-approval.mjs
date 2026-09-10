@@ -2,13 +2,15 @@ import { hash, safeUrl, JOB_ID } from './contract.mjs';
 import {publicPersonalEdition} from '../personal-editorial.mjs';
 import { renderEditorialMarkdown } from '../editorial-markdown.mjs';
 import {validateApprovedNews,publicNewsEdition} from './approved-news.mjs';
-import {storyPage} from '../build.mjs';
+import {storyPage,editorialAnalysisPage} from '../build.mjs';
+import {validateEditorialRevisionPreview,publicEditorialRevision,reviseEditorial,assertFinalPersonalSection} from '../editorial-approved-revisions.mjs';
 
 const fail=(code,status=400)=>{throw Object.assign(Error(code),{status});};
 const actor=id=>/^\d{15,22}$/.test(id||'');
 export function editorialPreviewHash(preview){
   return hash({title:preview.title,subtitle:preview.subtitle||'',markdown:preview.markdown,
-    sources:preview.sources,visual:preview.visual||null,format:preview.format,author_notes:preview.author_notes||'',source_media:preview.source_media||null,news_record:preview.news_record||null});
+    sources:preview.sources,visual:preview.visual||null,format:preview.format,author_notes:preview.author_notes||'',source_media:preview.source_media||null,news_record:preview.news_record||null,
+    ...(preview.editorial_revision?{editorial_revision:preview.editorial_revision}:{})});
 }
 export function validateEditorialPreview(value){
   if(!value||!['news','opinion_analysis','book_review','listened','watched'].includes(value.format)
@@ -26,7 +28,8 @@ export function validateEditorialPreview(value){
   }
   if(value.checks?.source_binding!==true||value.checks?.editorial_validation!==true
     ||value.checks?.personal_experiences_invented!==false)fail('EDITORIAL_PREVIEW_CHECKS_REQUIRED');
-  renderEditorialMarkdown(value.markdown);
+  validateEditorialRevisionPreview(value);
+  if(!value.editorial_revision?.base?.self_authored_work)renderEditorialMarkdown(value.markdown);
 }
 
 // Final approvals have their own rows in the SAME private bridge database.
@@ -43,7 +46,9 @@ export class EditorialApproval {
   // Worker-only: never expose this method through the browser API.
   stage(job,preview){
     if(!JOB_ID.test(job?.input?.job_id||'')||!actor(job.intake?.owner))fail('EDITORIAL_JOB_OWNER_REQUIRED');
+    if(preview.editorial_revision&&hash(preview.editorial_revision.target)!==hash(job.intake?.revision_target||null))fail('EDITORIAL_REVISION_TARGET_UNTRUSTED');
     validateEditorialPreview(preview);
+    if(preview.format!=='news'&&job.input.contract_path?.endsWith('/editorial-request-contract-3.json'))assertFinalPersonalSection(preview.markdown,{footnotes:preview.editorial_revision?.base?.self_authored_work});
     this.db.exec('BEGIN IMMEDIATE');
     try{
       const id=job.input.job_id,old=this.get(id),preview_hash=editorialPreviewHash(preview);
@@ -77,7 +82,7 @@ export class EditorialApproval {
     try{const snapshots=[];for(const r of this.pendingPublication()){
       if(r.status==='PUBLISHING'){validateEditorialPreview(r.preview);snapshots.push(r.publication.edition);continue;}
       if(!this.publishable(r.job_id))continue;
-      const edition=r.preview.format==='news'?publicNewsEdition(r):publicPersonalEdition(r);r.publication={edition,started_at:this.now()};r.status='PUBLISHING';r.updated_at=this.now();
+      const edition=r.preview.editorial_revision?publicEditorialRevision(r):r.preview.format==='news'?publicNewsEdition(r):publicPersonalEdition(r);r.publication={edition,started_at:this.now()};r.status='PUBLISHING';r.updated_at=this.now();
       this.save(r,{action:'PUBLICATION_STARTED',content_hash:edition.content_hash});snapshots.push(edition);
     }this.db.exec('COMMIT');return snapshots;}catch(e){this.db.exec('ROLLBACK');throw e;}
   }
@@ -93,5 +98,8 @@ export class EditorialApproval {
     this.save(r,{action:'PUBLICATION_REVIEW_REQUIRED',code:r.publication.error});return true;
   }
   publishable(id){const r=this.get(id);if(!r||r.manual_only!==true||r.status!=='APPROVED_FOR_PUBLICATION'||r.approval?.preview_hash!==editorialPreviewHash(r.preview)||r.preview_hash!==r.approval.preview_hash)return false;try{validateEditorialPreview(r.preview);return true;}catch{return false;}}
-  preview(owner,id){const r=this.owned(owner,id);return {...r,html_document:r.preview.format==='news',html:r.preview.format==='news'?storyPage(r.preview.news_record,{privateImpactPreview:true}).replace('<head>','<head><base href="https://wirkungsoekonomie.de/wirkungsticker/'+r.preview.news_record.slug+'/">'):renderEditorialMarkdown(r.preview.markdown).html};}
+  preview(owner,id){const r=this.owned(owner,id),revision=r.preview.editorial_revision;
+    if(revision){validateEditorialRevisionPreview(r.preview);const base=reviseEditorial(revision.base,revision);
+      return {...r,html_document:true,html:editorialAnalysisPage(base,revision.story||{}).replace('<head>','<head><base href="https://wirkungsoekonomie.de/wirkungsticker/analyse/'+base.slug+'/">')};}
+    return {...r,html_document:r.preview.format==='news',html:r.preview.format==='news'?storyPage(r.preview.news_record,{privateImpactPreview:true}).replace('<head>','<head><base href="https://wirkungsoekonomie.de/wirkungsticker/'+r.preview.news_record.slug+'/">'):renderEditorialMarkdown(r.preview.markdown).html};}
 }

@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {createHash} from 'node:crypto';
 import { BRIDGE_ROOT, FOLDERS, MAX_BYTES, hash, bridgePath } from './contract.mjs';
 
 export function allowedPath(value) {
@@ -100,17 +101,26 @@ export class DropboxTransport {
     return this.request('files/move_v2', { from_path: allowedPath(from), to_path: allowedPath(to), autorename: false, allow_shared_folder: false });
   }
   async writeAtomic(file, value) {
-    allowedPath(file);
     const body = `${JSON.stringify(value, null, 2)}\n`;
     if (Buffer.byteLength(body) > MAX_BYTES) throw new Error('BRIDGE_FILE_TOO_LARGE');
-    const identical = async target => (await this.read(target)) === body;
+    return this.writeAtomicContent(file,body,false);
+  }
+  async writeBinaryAtomic(file, value) {
+    if(!Buffer.isBuffer(value)||!value.length)throw new Error('BRIDGE_BINARY_REQUIRED');
+    if(value.length>8*1024*1024)throw new Error('BRIDGE_FILE_TOO_LARGE');
+    return this.writeAtomicContent(file,Buffer.from(value),true);
+  }
+  async writeAtomicContent(file,body,binary) {
+    allowedPath(file);
+    const identical = async target => binary ? body.equals(await this.readBinary(target)) : (await this.read(target)) === body;
     if (await this.metadata(file)) {
       if (!await identical(file)) throw new Error('BRIDGE_IMMUTABLE_FILE_CONFLICT');
       return;
     }
     // A complete upload is invisible to the worker until move_v2 succeeds.
     // Deterministic temp names make ambiguous upload/move responses recoverable.
-    const temp = bridgePath('98_CONFIG', `.upload-${hash(file + body)}.tmp`);
+    const digest=binary?createHash('sha256').update(file).update(body).digest('hex'):hash(file+body);
+    const temp = bridgePath('98_CONFIG', `.upload-${digest}.tmp`);
     if (!await this.metadata(temp)) {
       try { await this.request('files/upload', { path: temp, mode: 'add', autorename: false, strict_conflict: true, mute: true }, body); }
       catch (error) { if (error.message !== 'BRIDGE_DROPBOX_CONFLICT') throw error; }
