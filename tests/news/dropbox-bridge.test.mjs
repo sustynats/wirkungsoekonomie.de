@@ -516,3 +516,13 @@ test('repeated import reuses a review across changed discovery timestamps, but b
  await ensureSemanticReview(f.provider,parent,changed,record,assessment,later);
  assert.equal(f.store.all().filter(j=>j.input.job_type==='impact_semantic_review').length,3);
 });
+
+
+test('derived review jobs do not consume current-news intake capacity',async t=>{
+ const f=setup(t,{maxPending:2});
+ for(let n=0;n<5;n++)f.store.put({input:{job_id:`wt_20260910T000000Z_${String(n).padStart(24,'0')}`,job_type:'impact_semantic_review'},status:'queued'});
+ assert.equal((await f.provider.selectCandidates([candidate()])).length,1);
+ await f.provider.enqueue([candidate()],[],now);assert.equal(f.store.all().filter(j=>j.input.job_type==='new_story').length,1);
+ await f.provider.enqueue([candidate(2)],[],now);assert.equal(f.store.all().filter(j=>j.input.job_type==='new_story').length,2);
+ assert.equal((await f.provider.selectCandidates([candidate(3)])).length,0);
+});
