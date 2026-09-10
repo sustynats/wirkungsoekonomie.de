@@ -427,7 +427,7 @@ ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkung
 <script src="${base}assets/js/main.js?v=20260904-actions1"></script>
 <script src="${base}assets/js/news-install.js?v=20260904-reader2"></script>
 <script src="${base}assets/js/news-pwa.js?v=${PUBLIC_RELEASE}"></script>
-<script src="${base}assets/js/news-navigation.js?v=20260905-reader3"></script>
+<script src="${base}assets/js/news-navigation.js?v=20260911-reader4"></script>
 ${extraScript}
 </body>
 </html>`;
@@ -716,7 +716,7 @@ const CLAIM_TYPE_LABELS = {
 };
 
 export function editorialAnalysisPage(analysis, story = {}, { nextItem = null, relatedAnalyses = [] } = {}) {
-  if(analysis.format===PERSONAL_FORMAT)return personalEditorialPage(analysis);
+  if(analysis.format===PERSONAL_FORMAT)return personalEditorialPage(analysis, {nextItem});
   const book = analysis.format === BOOK_FORMAT;
   const titleImage = publicTitleImage(analysis.title_image);
   if (titleImage) titleImage.label = "Wirkungskarte · Meinung & Analyse";
@@ -781,11 +781,12 @@ export function editorialAnalysisPage(analysis, story = {}, { nextItem = null, r
   });
 }
 
-function personalEditorialPage(a){
+function personalEditorialPage(a, {nextItem = null} = {}){
  const label=personalLabel(a.subtype),canonical=`${SITE}/wirkungsticker/analyse/${a.slug}/`;
- const body=`<main id="main-content" data-search-content data-no-glossary data-news-reader="analysis" data-editorial-content-hash="${escapeHtml(a.content_hash)}"><article class="news-editorial-article news-editorial-article--commentary">
+ const nextLink=nextItem?`<a class="news-story-pagination__link news-story-pagination__link--next" href="${escapeHtml(nextItem.href)}"><span><small>Nächster Beitrag</small><strong>${escapeHtml(nextItem.title)}</strong></span><span aria-hidden="true">→</span></a>`:'';
+ const body=`<main id="main-content" data-search-content data-no-glossary data-news-reader="analysis" data-personal-editorial="true" data-editorial-content-hash="${escapeHtml(a.content_hash)}"><article class="news-editorial-article news-editorial-article--commentary">
  <header class="hero news-editorial-hero"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../">Start</a><span>/</span><a href="../../">Wirkungsticker</a></nav><p class="hero-kicker">${escapeHtml(label)}</p><h1 class="hero-title">${escapeHtml(a.title)}</h1><p class="hero-subtitle">${escapeHtml(a.subtitle)}</p><div class="news-editorial-byline"><img src="${personalPortrait(a.subtype)}" alt="${['listened','watched'].includes(a.subtype)?'Natalie Weber mit Kopfhörern und Smartphone am Tisch':'Natalie Weber'}" width="144" height="192"><div><strong>Natalie Weber</strong><span>Meinung &amp; Analyse</span><span>${escapeHtml(formatDate(a.published_at,{dateOnly:true}))} · ${a.reading_time_minutes} Min.</span></div></div><p class="news-editorial-transparency">Persönliche Meinung und wirkungsökonomische Analyse</p></div></header>
- <section class="section"><div class="news-editorial-layout"><div class="news-editorial-article__main">${personalArticleBody(a)}</div></div></section><footer class="section"><p>Fassung ${a.revision} · ${escapeHtml(formatDate(a.published_at,{dateOnly:true}))}</p>${editorialSaveControl(a)}${editorialShareControl(a)}<p><a class="btn btn-secondary" href="../../">Zum Wirkungsticker</a></p></footer></article></main>`;
+ <section class="section"><div class="news-editorial-layout"><div class="news-editorial-article__main">${personalArticleBody(a)}</div></div></section><footer class="section news-story-footer"><div class="news-story-footer__inner"><p>Fassung ${a.revision} · ${escapeHtml(formatDate(a.published_at,{dateOnly:true}))}</p><div class="news-reader-actions">${editorialSaveControl(a)}${editorialShareControl(a)}<a class="btn btn-secondary" href="../../" data-news-return-to-list>Zum Wirkungsticker</a></div><div class="news-reader-actions" data-search-exclude><button class="btn btn-secondary" type="button" data-news-reader-back hidden>← Zurück im Leseweg</button><p class="news-swipe-hint" data-news-swipe-hint hidden>Wischen: rechts zurück${nextItem?', links zum nächsten Beitrag':''}.</p></div>${nextItem?`<nav class="news-story-pagination" aria-label="Zwischen Beiträgen blättern">${nextLink}</nav>`:''}<p class="news-method-note"><a class="text-link" href="../../../so-wirkt-wirkungsoekonomie/">Wirkungsökonomie einfach erklärt</a> · <a class="text-link" href="../../../methodik/">Methodik hinter dieser Analyse</a> · <a class="text-link" href="../../#methodik">So arbeitet der Wirkungsticker</a></p></div></footer></article></main>`;
  return pageShell({title:a.title,description:a.subtitle,canonical,body,base:'../../../',extraScript:'<script src="../../../assets/js/news-share.js?v=20260904-actions1"></script>',jsonLd:{'@context':'https://schema.org','@type':'Article',url:canonical,articleSection:label,headline:a.title,datePublished:a.published_at,author:{'@type':'Person',name:'Natalie Weber'},citation:a.sources.map(s=>s.url)}});
 }
 
