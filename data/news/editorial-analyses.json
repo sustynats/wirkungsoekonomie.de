@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-09T23:43:18.392Z",
+  "updated_at": "2026-09-10T00:42:32.479Z",
   "candidates": [
     {
       "story_id": "wt-32f0aa5f0a6a7761",
@@ -105,7 +105,7 @@
       "story_id": "wt-026d11d680622587",
       "story_slug": "bundestag-neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritis-622587",
       "story_title": "Bundestag - Neuer Sportstaatsminister Rauhe will Olympia nach Deutschland holen, AfD kritisiert Benennung",
-      "editorial_analysis_score": 71,
+      "editorial_analysis_score": 72,
       "analysis_gain": 48,
       "factors": {
         "systemic_relevance": 14,
@@ -122,7 +122,7 @@
         "distribution_relevance": 6,
         "discourse_relevance": 4,
         "case_depth": 0,
-        "evidence_quality": 7
+        "evidence_quality": 8
       },
       "factor_status": {
         "impact_potential": "open",
@@ -132,7 +132,7 @@
       "evidence_gate": {
         "passed": false,
         "source_integrity": "verified",
-        "independent_origin_count": 3,
+        "independent_origin_count": 4,
         "primary_source_count": 0,
         "cited_claim_count": 3,
         "primary_source_expected": true,
@@ -141,7 +141,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "91186d8e3b159162da1a482b7cc0b4222884eccb472847c2b8938b5de4c3bb56",
+      "fingerprint": "f59a51e4095c09724caedc9511362e289d0d194d7f8ab66912c6d2ba9d9a2633",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -35723,13 +35723,13 @@
       "quality_cycles": 0,
       "request_id": null,
       "attempts": 0,
-      "last_attempt_at": "2026-09-10T00:13:48.757Z",
-      "next_attempt_at": "2026-09-10T00:28:48.757Z",
+      "last_attempt_at": "2026-09-10T00:42:32.479Z",
+      "next_attempt_at": "2026-09-10T00:57:32.479Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "AI_BATCH_PENDING"
+      "reason": "BATCH_RETRY_LIMIT"
     },
     "wt-e820bef62dd96612": {
       "fingerprint": "55c01a53ce4e370eae11a3736ee05383f6c4c6e67e77e2ffa44c87d2ead7b09d",
@@ -35765,13 +35765,13 @@
       "fingerprint": "0c84ebc213e0cfe23df7b7b13f8f92b03195ca82b3eb35be19ce6fac58341ae3",
       "research_fingerprint": "b29d4233f218cf4f371f056b477a07ffd70d4e82b6342112e45b0b0bce4e9504",
       "method_version": "1.0",
-      "quality_cycles": 0,
       "request_id": null,
+      "quality_cycles": 0,
       "attempts": 0,
-      "last_attempt_at": "2026-09-10T00:13:48.757Z",
-      "next_attempt_at": "2026-09-10T00:28:48.757Z",
+      "last_attempt_at": "2026-09-10T00:42:32.479Z",
+      "next_attempt_at": "2026-09-10T00:57:32.479Z",
       "quality_errors": [],
-      "reason": "AI_BATCH_PENDING"
+      "reason": "AI_BUDGET_EXHAUSTED"
     }
   },
   "editorial_requests": {}
