@@ -1681,6 +1681,7 @@ export async function runWirkungsticker(options = {}) {
         continue;
       }
       try {
+        console.error(JSON.stringify({title_image_progress:{story_id:storyId,stage:'started'}}));
         const visual = bridgeImages.get(storyId);
         const bytes = visual?.file ? fs.readFileSync(visual.file) : visual?.status === 'validated' ? await bridge.transport.readBinary((await import('./bridge/contract.mjs')).bridgePath('20_OUTPUT_READY', `${story.bridge_import.job_id}.title.png`)) : null;
         if (bytes && imageDigest(bytes) !== visual.sha256) throw new Error('BRIDGE_VISUAL_HASH_CHANGED');
@@ -1690,6 +1691,7 @@ export async function runWirkungsticker(options = {}) {
           story.title_image = result.title_image;
         }
         report.title_images.push(result.report);
+        console.error(JSON.stringify({title_image_progress:{story_id:storyId,stage:'completed',status:result.report?.status}}));
       } catch {
         report.title_images.push({ story_id: storyId, status: "fallback", fallback_reason: "TITLE_IMAGE_UNAVAILABLE" });
       }
