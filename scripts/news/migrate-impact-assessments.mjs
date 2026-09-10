@@ -42,7 +42,7 @@ export function migrateImpactCatalog(records, { now = '2026-09-10T10:30:00.000Z'
     let assessment = record.impact_assessment || record.analysis?.impact_assessment;
     if (assessment && record.impact_assessment_basis && record.impact_assessment_basis !== basis) assessment = null;
     if (assessment && !assessment.review?.missing?.length) {
-      const errors = impactAssessmentErrors(assessment, [...sources, ...(record.impact_sources || [])]);
+      const errors = impactAssessmentErrors(assessment, [...sources, ...(record.impact_sources || [])], assessment.version === '2.0' ? {version:'2.0'} : {});
       if (errors.length) { report.errors.push({ id, errors }); assessment = null; }
     }
     if (!assessment || assessment.version !== IMPACT_VERSION || !Object.values(assessment.dimensions || {}).every(d => d.path_status && d.likelihood)) {

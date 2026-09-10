@@ -44,10 +44,16 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
   // Old acknowledgments remain immutable. A malformed legacy check list gets
   // a new, protocol-bound review job; it never becomes an editorial approval.
   const reviewRecord = { title: record.title, source_summary: record.source_summary || record.research_summary || '',
-    analysis: record.analysis || { sections: record.sections, claim_ledger: record.claim_ledger },
-    sources: [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])].map(s => ({ source_id:s.source_id,url:s.url,title:s.title,publisher:s.publisher,excerpt:s.article_excerpt || s.summary || '',source_role:s.source_role || s.source_function || null })) };
-  const inputHash = hash({ protocol: 'impact-2.1-potential-1', parent: job.input.job_id, outputHash, assessment: proposed, record:reviewRecord });
-  const id = `${job.input.job_id.slice(0, 20)}${hash({ kind: SEMANTIC_JOB_TYPE, inputHash }).slice(0, 24)}`;
+        analysis: record.analysis || { sections: record.sections, claim_ledger: record.claim_ledger },
+        sources: [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])].map(s => ({ source_id: s.source_id, url: s.url, title: s.title, publisher: s.publisher, excerpt: s.article_excerpt || s.summary || '', source_role: s.source_role || s.source_function || null })) };
+  // Only editorial content belongs in the identity. Discovery check timestamps
+  // and other operational fields must not create a new review every five minutes.
+  const existing = (await bridge.store.all()).find(j => j.input.job_type === SEMANTIC_JOB_TYPE
+    && !terminal.has(j.status) && j.input.review_protocol === "impact-2.1-potential-1"
+    && j.input.parent_job_id === job.input.job_id && j.input.parent_output_hash === outputHash
+    && hash(j.input.record) === hash(reviewRecord) && hash(j.input.proposed_assessment) === hash(proposed));
+  const inputHash = hash({ protocol: 'impact-2.1-potential-1', parent: job.input.job_id, outputHash, assessment: proposed, record: reviewRecord });
+  const id = existing?.input.job_id || `${job.input.job_id.slice(0, 20)}${hash({ kind: SEMANTIC_JOB_TYPE, inputHash }).slice(0, 24)}`;
   let reviewJob = await bridge.store.get(id);
   if (!reviewJob) {
     const input = {

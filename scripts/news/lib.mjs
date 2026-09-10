@@ -1210,6 +1210,14 @@ export function statusConsistencyErrors(analysis) {
   return [];
 }
 
+export function assertsRealisedExAnteEffect(analysis) {
+  const causal=/\b(bewirkt|hat\s+[^.!?]{0,80}\b(?:verbessert|reduziert|erhöht)|führt\s+(?:unmittelbar\s+)?zu)\b/i;
+  return collectStrings(analysis).some(value=>value.split(/[.!?](?:\s|$)/).some(sentence=>
+    sentence.split(/[;:]|,\s*(?:aber|sondern|und|doch)\s+/i).some(clause=>causal.test(clause)
+      && !/\b(?:bewirkt|führt\s+(?:unmittelbar\s+)?zu)\b[^;:.!?]{0,100}\b(?:noch\s+)?nicht\s*$/i.test(clause)
+      && !/\bhat\s+(?:sich\s+)?(?:noch\s+)?nicht\b(?!\s+nur)[^;:.!?]{0,80}\b(?:verbessert|reduziert|erhöht)\b/i.test(clause))));
+}
+
 export function validateAnalysis(analysis, story, options = {}) {
   const errors = [];
   const filterVersion = Number.parseFloat(story?.preanalysis?.filter_version || story?.relevance_filter_version || "0");
@@ -1286,7 +1294,7 @@ export function validateAnalysis(analysis, story, options = {}) {
   const text = collectStrings(analysis).join(" ");
   if (/<\/?[a-z][^>]*>/i.test(text)) errors.push("AI_HTML_NOT_ALLOWED");
   if (/\b(person_score|party_score|personen[- ]?score|parteien[- ]?ranking|social credit)\b/i.test(text)) errors.push("AI_PERSON_SCORING_NOT_ALLOWED");
-  if (analysis?.analysis_type === "ex_ante" && /\b(bewirkt|hat\s+[^.!?]{0,80}\b(?:verbessert|reduziert|erhöht)|führt\s+(?:unmittelbar\s+)?zu)\b/i.test(text)) errors.push("AI_EX_ANTE_CAUSAL_OVERCLAIM");
+  if (analysis?.analysis_type === "ex_ante" && assertsRealisedExAnteEffect(analysis)) errors.push("AI_EX_ANTE_CAUSAL_OVERCLAIM");
   if (/\b(risiko ist schaden|wirkungsrisiko ist eingetreten|zielbezug beweist|korrelation beweist)\b/i.test(text)) errors.push("AI_EPISTEMIC_CONFLATION");
   const rawSourceText = story.sources.map((source) => `${source.title} ${source.summary} ${source.article_excerpt || ""}`).join(" ");
   const rawAllowedNumbers = new Set(story.sources.flatMap(source => [...sourceNumberTokens(source)]));

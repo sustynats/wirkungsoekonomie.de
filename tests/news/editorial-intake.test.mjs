@@ -1,0 +1,94 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import http from 'node:http';
+import {randomUUID} from 'node:crypto';
+import {once} from 'node:events';
+import {BridgeStore} from '../../scripts/news/bridge/store.mjs';
+import {EditorialIntake} from '../../scripts/news/bridge/intake.mjs';
+import {EditorialApproval} from '../../scripts/news/bridge/editorial-approval.mjs';
+import {createEditorialIntakeHandler,existingAdminAuthorizer} from '../../scripts/news/bridge/intake-http.mjs';
+import {importEditorialPreviews} from '../../scripts/news/bridge/intake-processing.mjs';
+import {prepareEditorialRevisions,notifyEditorialReviews} from '../../scripts/news/bridge/editorial-revisions.mjs';
+import {importApprovedEditorials} from '../../scripts/news/bridge/personal-publication.mjs';
+import {loadPersonalEditorials,PERSONAL_FILE} from '../../scripts/news/personal-editorial.mjs';
+import {editorialAnalysisPage} from '../../scripts/news/build.mjs';
+import {bridgePath} from '../../scripts/news/bridge/contract.mjs';
+const owner='1206956406805102593',other='111111111111111111';
+const now=()=>new Date().toISOString();
+const preview=()=>({format:'opinion_analysis',title:'Ein ausdrücklich fiktiver Vorschautext',subtitle:'Prüfung des privaten Freigabewegs',markdown:'## Test der Freigabe\n\nDieser synthetische Text beschreibt ausschließlich den technischen Test einer Vorschau. Er ist kein wirklicher Beitrag und enthält keine persönliche Position oder Erfahrung der Autorin.',sources:[{url:'https://example.org/source',title:'Synthetische Testquelle',publisher:'Test'}],checks:{source_binding:true,editorial_validation:true,personal_experiences_invented:false}});
+function setup(t){
+ const directory=fs.mkdtempSync(path.join(os.tmpdir(),'editorial-intake-test-')),store=new BridgeStore(path.join(directory,'queue.sqlite'),{lane:'discovery'}),files=new Map();
+ const transport={writeAtomic:async(p,v)=>{const text=JSON.stringify(v);if(files.has(p))assert.equal(files.get(p),text);else files.set(p,text);},list:async folder=>[...files.keys()].filter(p=>p.includes('/'+folder+'/')).map(p=>({name:p.split('/').at(-1)})),read:async p=>files.get(p),metadata:async p=>files.has(p)?{name:p.split('/').at(-1)}:null,move:async(a,b)=>{assert.ok(files.has(a));assert.equal(files.has(b),false);files.set(b,files.get(a));files.delete(a);}};
+ const intake=new EditorialIntake({store,transport,directory:path.join(directory,'uploads')}),approval=new EditorialApproval(store.db);
+ t.after(()=>{store.close();fs.rmSync(directory,{recursive:true,force:true});});return {directory,store,files,transport,intake,approval};
+}
+async function job(f){const d=f.intake.draft(owner,{client_id:randomUUID(),kind:'opinion_analysis',brief:'Bitte diesen synthetischen Testfall vorbereiten.',links:'https://example.org/source',author_notes:'',attachments:[],publish:true,urgent:false});const result=await f.intake.submit(owner,d.id);await f.intake.preparePending();return f.store.get(result.job_id);}
+test('intake, private preview, one final approval and serial publisher preserve the exact text',async t=>{
+ const f=setup(t),j=await job(f);assert.equal(j.input.manual_only,true);assert.equal(j.input.request.publication_intent,'final_approval_required');
+ f.files.set(bridgePath('20_OUTPUT_READY',j.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:j.input.job_id,input_hash:j.input.input_hash,processed_at:now(),preview:preview()}));
+ assert.equal((await importEditorialPreviews(f)).staged,1);const r=f.approval.get(j.input.job_id);assert.equal(r.status,'AWAITING_FINAL_APPROVAL');assert.equal(f.approval.claimPublications().length,0);
+ f.approval.decide(owner,j.input.job_id,{action:'APPROVE',preview_hash:r.preview_hash});const exported=f.approval.claimPublications();assert.equal(exported.length,1);
+ assert.throws(()=>f.approval.decide(owner,j.input.job_id,{action:'REVISE',preview_hash:r.preview_hash,comment:'zu spät'}),/IMMUTABLE/);
+ assert.equal(JSON.stringify(exported).includes(owner),false);assert.equal(JSON.stringify(exported).includes('author_notes'),false);
+ const worker={editorialClaim:async()=>exported};assert.equal((await importApprovedEditorials(worker,f.directory)).changed,true);assert.equal((await importApprovedEditorials(worker,f.directory)).changed,false);
+ fs.mkdirSync(path.join(f.directory,'assets/img/people'),{recursive:true});fs.writeFileSync(path.join(f.directory,'assets/img/people/natalie-weber-woek-analyse.jpg'),'test');
+ const [a]=loadPersonalEditorials(f.directory);assert.equal(a.body_markdown,preview().markdown);
+ const html=editorialAnalysisPage(a);assert.match(html,/data-editorial-content-hash=/);assert.ok(html.includes(a.content_hash));assert.ok(!html.includes('undefinedassets'));
+ assert.throws(()=>f.approval.markPublished(a.content_hash,'https://evil.example/'),/URL_INVALID/);
+ f.approval.markPublished(a.content_hash,'https://wirkungsoekonomie.de/wirkungsticker/analyse/'+a.slug+'/');assert.equal(f.approval.get(j.input.job_id).status,'PUBLISHED');
+ assert.ok(fs.existsSync(path.join(f.directory,PERSONAL_FILE)));
+});
+test('comments return one revision to the same bridge and require approval of the fresh version',async t=>{
+ const f=setup(t),j=await job(f),r=f.approval.stage(j,preview());f.approval.decide(owner,j.input.job_id,{action:'REVISE',preview_hash:r.preview_hash,comment:'Bitte eine Gegenposition nachvollziehbar ergänzen.'});
+ assert.equal(prepareEditorialRevisions(f),1);assert.equal(prepareEditorialRevisions(f),0);await f.intake.preparePending();
+ const child=f.store.all().find(j=>j.intake.review_parent);assert.equal(child.input.job_type,'editorial_request');assert.equal(child.input.request.revision.comments[0].comment,'Bitte eine Gegenposition nachvollziehbar ergänzen.');
+ const p={...preview(),markdown:preview().markdown+'\n\nEine ergänzte synthetische Gegenposition ist ebenfalls zu prüfen.'};
+ f.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:now(),preview:p}));
+ assert.equal((await importEditorialPreviews(f)).staged,1);assert.equal(f.approval.get(j.input.job_id).revision,2);assert.equal(f.approval.list(owner).length,1);assert.equal(f.approval.claimPublications().length,0);
+});
+test('HTTP rejects unauthenticated, wrong-owner and cross-origin decisions',async t=>{
+ const f=setup(t),j=await job(f),r=f.approval.stage(j,preview());
+ const handler=createEditorialIntakeHandler({...f,authorize:async req=>req.headers.authorization==='Bearer owner'?owner:req.headers.authorization==='Bearer other'?other:null});
+ const server=http.createServer(async(req,res)=>{if(!await handler(req,res)){res.writeHead(404);res.end();}});server.listen(0,'127.0.0.1');await once(server,'listening');t.after(()=>{handler.close();server.close();});
+ const url='http://127.0.0.1:'+server.address().port+'/api/admin/news-editorial/reviews/'+j.input.job_id;
+ assert.equal((await fetch(url)).status,403);assert.equal((await fetch(url,{headers:{Authorization:'Bearer other'}})).status,404);
+ assert.equal((await fetch(url,{headers:{Authorization:'Bearer owner'}})).status,200);
+ const headers={Authorization:'Bearer owner','Content-Type':'application/json'},body=JSON.stringify({action:'APPROVE',preview_hash:r.preview_hash});
+ assert.equal((await fetch(url+'/decision',{method:'POST',headers,body})).status,403);
+ assert.equal((await fetch(url+'/decision',{method:'POST',headers:{...headers,Origin:'https://evil.example'},body})).status,403);
+ assert.equal(f.approval.publishable(j.input.job_id),false);
+ assert.equal((await fetch(url+'/decision',{method:'POST',headers:{...headers,Origin:'https://wirkungsoekonomie.de'},body})).status,200);
+});
+test('signature is delegated to existing admin service, never trusted from unsigned identity',async()=>{
+ const token=Buffer.from(JSON.stringify({sub:owner,exp:Date.now()+60000})).toString('base64url')+'.signature';
+ const denied=existingAdminAuthorizer({fetchImpl:async()=>new Response('{}',{status:403})});assert.equal(await denied({headers:{authorization:'Bearer '+token}}),null);
+ const accepted=existingAdminAuthorizer({fetchImpl:async()=>new Response('{}',{status:200})});assert.equal(await accepted({headers:{authorization:'Bearer '+token}}),owner);
+});
+test('malformed output does not block another preview; absent output never increments retries',async t=>{
+ const f=setup(t),j=await job(f);assert.deepEqual(await importEditorialPreviews(f),{staged:0,failed:[]});assert.deepEqual(f.store.get(j.input.job_id).attempts,{});
+ f.files.set(bridgePath('20_OUTPUT_READY',j.input.job_id+'.output.json'),'bad');assert.equal((await importEditorialPreviews(f)).failed.length,1);assert.equal(f.approval.list(owner).length,0);
+ const repaired=f.store.get(j.input.job_id);assert.equal(repaired.status,'correction_pending');assert.equal(repaired.corrections.length,1);assert.ok(f.files.has(bridgePath('90_ERRORS',j.input.job_id+'.correction-1.output.json')));
+ await importEditorialPreviews(f);assert.equal(f.store.get(j.input.job_id).corrections.length,1);
+});
+test('Discord notice is private and sent once per new preview',async t=>{
+ const f=setup(t),j=await job(f);f.approval.stage(j,preview());let sent=0;
+ const fetchImpl=async(url,request)=>{if(url.endsWith('/messages')){sent++;assert.deepEqual(JSON.parse(request.body).allowed_mentions,{parse:[]});return new Response('{}');}return new Response(JSON.stringify({id:'222222222222222222'}));};
+ await notifyEditorialReviews({...f,config:{token:'synthetic',recipient:owner},fetchImpl});await notifyEditorialReviews({...f,config:{token:'synthetic',recipient:owner},fetchImpl});assert.equal(sent,1);
+});
+
+test('manual news research creates a native bridge job and never a personal article',async t=>{
+ const f=setup(t),j=await job(f);j.intake.kind='news';j.input.request.kind='news';j.intake.news_research={...preview(),format:'news'};j.intake.news_research.sources.unshift({url:'https://example.org/unavailable',title:'Nicht erreichbare Zusatzquelle'});f.store.put(j);
+ const {prepareIntakeNews}=await import('../../scripts/news/bridge/intake-news.mjs');
+ const source={source_id:'test-news',name:'Test',url:'https://example.org',feed_url:'https://example.org/feed',role:'A',publisher_id:'test',source_type:'media_rss',primary_source:false};
+ const article={headline:'Synthetisch: Kommune eröffnet eine Bibliothek',description:'Eine neue öffentliche Bibliothek bietet zusätzliche Arbeitsplätze zum Lernen. Der Fall ist vollständig synthetisch und dient ausschließlich der technischen Prüfung.',datePublished:new Date().toISOString(),'@type':'NewsArticle'};
+ const fetchArticle=async({url})=>{if(url.endsWith('/unavailable'))throw Error('SOURCE_TIMEOUT');return {final_url:'https://example.org/source',body:'<script type="application/ld+json">'+JSON.stringify(article)+'</script><article><p>'+article.description+'</p></article>'};};
+ await prepareIntakeNews({...f,registry:{sources:[source],policy:{}},fetchArticle});
+ const parent=f.store.get(j.input.job_id),child=f.store.get(parent.intake.news_job_id);assert.equal(child.input.job_type,'new_story');assert.equal(child.intake_news_parent,j.input.job_id);assert.equal(child.input.test_only,false);
+ assert.equal(parent.intake.source_errors[0].error_code,'SOURCE_TIMEOUT');
+ const {assertSchema,inputSchema}=await import('../../scripts/news/bridge/contract.mjs');assertSchema(inputSchema,child.input);
+ assert.equal(f.approval.list(owner).length,0);const count=f.store.all().length;
+ await prepareIntakeNews({...f,registry:{sources:[source],policy:{}},fetchArticle});assert.equal(f.store.all().length,count);
+});

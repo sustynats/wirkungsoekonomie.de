@@ -235,6 +235,9 @@ test('full validation rejects malformed fresh direction without invalidating his
   const stories=JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
   const s=stories.find(s=>s.published&&validateAnalysis({source_summary:s.source_summary,...s.analysis},s,{persisted:true}).length===0);
   const a={source_summary:s.source_summary,...structuredClone(s.analysis),...fixture(),story_id:s.story_id};
+  // This test exercises legacy direction fields even when the live fixture
+  // has since received a valid 2.x assessment with its own validator.
+  delete a.impact_assessment;
   a.human.rationale='';a.democracy.tendency='invented';
   const errors=validateAnalysis(a,s,{persisted:true});
   assert.ok(errors.includes('AI_DIRECTION_RATIONALE_REQUIRED:human'));assert.ok(errors.includes('AI_DIRECTION_INVALID:democracy'));

@@ -1835,6 +1835,10 @@ export async function runWirkungsticker(options = {}) {
       if (report.bridge_impact_results.some(r => r.changed)) report.public_changed = true;
       writeJson(files.report, report);
     }
+    if(bridge && bridgePhase !== 'discovery'){
+      try{const editorial=await (await import('./bridge/personal-publication.mjs')).importApprovedEditorials(bridge.store,ROOT);if(editorial.changed)report.public_changed=true;}catch{report.personal_editorial_pending=true;}
+      writeJson(files.report,report);
+    }
     buildNewsSite();
   }
   options.captureState?.({ state, storyStore, usage, newsroom });

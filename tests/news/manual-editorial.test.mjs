@@ -18,7 +18,7 @@ import { checkManualPages } from "../../scripts/news/check-manual-pages.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const directory = path.join(root, "content/news/manual");
 const manifest = JSON.parse(fs.readFileSync(path.join(directory, "editions.json")));
-const editions = loadManualEditorials(root);
+const editions = loadManualEditorials(root).filter(a => !a.self_authored_work);
 const source = fs.readFileSync(path.join(directory, manifest.entries[0].source_file), "utf8");
 
 test("all three complete signed manuscripts load, with one fixed original portrait", () => {
