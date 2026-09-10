@@ -30,7 +30,10 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
       try {
         const sources = await verifyImpactResearch(bridge, output.research_sources, [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])], now);
         job.verified_research = {output_hash:outputHash,sources}; await bridge.store.put(job);
-      } catch (error) { throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'), {issues:[error.message]}); }
+      } catch (error) {
+        if(error.retryable)throw Object.assign(Error('BRIDGE_RESEARCH_UNAVAILABLE'),{retryable:true,issues:[error.message]});
+        throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'), {issues:[error.message]});
+      }
     }
     record = {...record,impact_sources:[...(record.impact_sources||[]),...job.verified_research.sources]};
   }
@@ -113,7 +116,10 @@ export async function importSemanticReviews(bridge, now) {
       if (!parent || parent.ack || parent.accepted) continue;
       let research = [];
       try { research = await verifyImpactResearch(bridge, output.research_sources || [], [...(job.candidate.sources || job.candidate.source_snapshot || []), ...(job.candidate.impact_sources || [])], now); }
-      catch (error) { throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:[error.message]}); }
+      catch (error) {
+        if(error.retryable)throw Object.assign(Error('BRIDGE_RESEARCH_UNAVAILABLE'),{retryable:true,issues:[error.message]});
+        throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:[error.message]});
+      }
       const reviewRecord = {...job.candidate,impact_sources:[...(job.candidate.impact_sources||[]),...research]};
       const gate = derivePublicationStatus(output.impact_assessment, reviewRecord, { review: output.review, secondPassComplete: true });
       if (gate.issues.some(issue => /IMPACT_(?:VERSION|MATERIAL_MAGNITUDE|FACTOR_|MAGNITUDE_CALCULATION|MAIN_AGGREGATE|OBSERVED_DIRECTION|SOURCE_FUNCTION|RESEARCH_RESULT|RESEARCH_CHECK|BOUNDARY_)/.test(issue))) throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:gate.issues});
