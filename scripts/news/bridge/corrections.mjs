@@ -26,10 +26,10 @@ export async function prepareCorrection(provider, job, error, now, { sourcePath:
   job.corrections = [...(job.corrections || []), correction];
   job.status = 'correction_prepared';
   await provider.store.put(job);
-  return finishCorrection(provider, job);
+  return finishCorrection(provider, job, now);
 }
 
-export async function finishCorrection(provider, job) {
+export async function finishCorrection(provider, job, now = new Date().toISOString()) {
   const correction = job.corrections.at(-1), transport = provider.transport;
   try {
     if (!await transport.metadata(correction.error_output_path)) {
@@ -49,19 +49,25 @@ export async function finishCorrection(provider, job) {
     };
     await transport.writeAtomic(correction.request_path, packet);
     job.status = 'correction_pending';
-    correction.delivered_at = new Date().toISOString();
+    correction.delivered_at = now;
     delete job.correction_delivery_error;
+    delete job.correction_retry_at;
     await provider.store.put(job);
     return true;
   } catch (error) {
     correction.delivery_attempts = (correction.delivery_attempts || 0) + 1;
     job.correction_delivery_error = { code: 'BRIDGE_CORRECTION_DELIVERY_FAILED', attempts: correction.delivery_attempts };
-    if (correction.delivery_attempts >= 3 || /_CHANGED$/.test(error.message)) job.status = 'quarantined';
+    const temporary = error.retryable === true && /^BRIDGE_DROPBOX_HTTP_(?:429|5\d\d)$/.test(error.message);
+    if (temporary) {
+      const delay = Math.max(Math.min(3600, 300 * 2 ** Math.min(correction.delivery_attempts - 1, 4)), Number(error.retry_after_seconds) || 0);
+      job.correction_retry_at = new Date(Date.parse(now) + delay * 1000).toISOString();
+    } else if (correction.delivery_attempts >= 3 || /_CHANGED$/.test(error.message)) job.status = 'quarantined';
     await provider.store.put(job);
     return false;
   }
 }
 
-export async function recoverCorrections(provider) {
-  for (const job of await provider.store.all()) if (job.status === 'correction_prepared') await finishCorrection(provider, job);
+export async function recoverCorrections(provider, now = new Date().toISOString()) {
+  for (const job of await provider.store.all()) if (job.status === 'correction_prepared'
+    && !(Date.parse(job.correction_retry_at) > Date.parse(now))) await finishCorrection(provider, job, now);
 }

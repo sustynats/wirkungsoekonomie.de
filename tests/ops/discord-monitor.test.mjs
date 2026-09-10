@@ -86,11 +86,11 @@ test('bridge pending ignores deliberately stopped API and old image failures, re
   assert.ok(checks.filter(c=>c.id.startsWith('bridge-')).every(c=>c.ok));
   const previous={schema:1,incidents:{provider:{active:true,firstSeen:now},images:{active:true,firstSeen:now},run:{active:true,firstSeen:now}},outbox:[],dailyDate:'2026-09-04'};
   const next=advanceState(previous,checks,summary,now);assert.deepEqual(next.outbox,[]);assert.deepEqual(next.incidents,{});
-  assert.match(dailyReport(summary,checks),/absichtlich abgeschaltet/);
+  assert.match(dailyReport(summary,checks),/Keine Text-KI-API/);
 });
 test('bridge incidents still detect real unavailability, stale work and cost violations, once per incident',()=>{
   const d=fixture();d.processing_mode='dropbox_chatgpt_bridge';d.report.processing_mode='dropbox_chatgpt_bridge';
-  d.bridge={reachable:true,poll_at:now,discovery_last_success:now,status:'PROCESSING_PENDING',oldest_open_minutes:121,output_wait_minutes:11,errors:1};
+  d.bridge={reachable:true,poll_at:now,discovery_last_success:now,status:'PROCESSING_PENDING',oldest_open_minutes:121,oldest_claim_minutes:121,output_wait_minutes:11,errors:1};
   const {checks,summary}=evaluateChecks(d,now);
   for(const id of ['bridge-queue','bridge-import','bridge-errors'])assert.equal(checks.find(c=>c.id===id).ok,false);
   let state=advanceState({schema:1,incidents:{},outbox:[],dailyDate:'2026-09-04'},checks,summary,now);
