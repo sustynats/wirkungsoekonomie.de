@@ -22,8 +22,13 @@ async function ownerCompleted(owner) {
   const run = await response.json();
   return run.status === 'completed';
 }
-const operations = new Set(['store.acquire','store.release','store.get','store.put','store.all','store.observe','store.observation',
+const operations = new Set(['store.editorialClaim','store.editorialFinalize','store.editorialFailure','store.acquire','store.release','store.get','store.put','store.all','store.observe','store.observation',
   'dropbox.list','dropbox.read','dropbox.readBinary','dropbox.metadata','dropbox.move','dropbox.writeAtomic','dropbox.archive','bridge.status','bridge.monitor']);
+async function editorialOutputStatus(store,transport){
+ const result=await outputStatus(store,transport,new Date().toISOString());
+ try{const response=await fetch('http://127.0.0.1:8788/internal/status',{signal:AbortSignal.timeout(2000)});if(response.ok&&(await response.json()).pending){result.status='OUTPUT_READY';result.ready.push('editorial-approved');}}catch{/* A private editorial outage never blocks ordinary news. */}
+ return result;
+}
 const server = http.createServer(async (req, res) => {
   const finish = (status, value) => { res.writeHead(status, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(value)); };
   const supplied = Buffer.from(req.headers.authorization || ''); const expected = Buffer.from(`Bearer ${secret}`);
@@ -39,7 +44,7 @@ const server = http.createServer(async (req, res) => {
     for await (const chunk of req) { size += chunk.length; if (size > 3 * 1024 * 1024) throw new Error('BRIDGE_REQUEST_TOO_LARGE'); chunks.push(chunk); }
     const { op, args } = JSON.parse(Buffer.concat(chunks));
     if (!operations.has(op) || !Array.isArray(args) || args.length > 4) throw new Error('BRIDGE_OPERATION_INVALID');
-    if (op === 'bridge.status') { finish(200, { ok: true, result: await outputStatus(store, transport, new Date().toISOString()) }); return; }
+    if (op === 'bridge.status') { finish(200, { ok: true, result: await editorialOutputStatus(store, transport) }); return; }
     if (op === 'bridge.monitor') { finish(200, { ok: true, result: await monitorStatus(store, new Date().toISOString()) }); return; }
     if (!validOwner(owner)) throw new Error('BRIDGE_OWNER_INVALID');
     if (op === 'store.observe' && String(args[0]).startsWith('remote-owner')) throw new Error('BRIDGE_RESERVED_OBSERVATION');
@@ -60,6 +65,12 @@ const server = http.createServer(async (req, res) => {
     if (op === 'store.get' && !JOB_ID.test(args[0]) || op === 'store.put' && !JOB_ID.test(args[0]?.input?.job_id)) throw new Error('BRIDGE_JOB_ID_INVALID');
     let result;
     if (op === 'store.release') { store.release(args[0] === true); store.observe(ownerKey, null); result = true; }
+    else if (op.startsWith('store.editorial')) {
+      if(lane !== 'import')throw Error('EDITORIAL_IMPORT_LANE_REQUIRED');
+      const action=op==='store.editorialClaim'?'claim':op==='store.editorialFailure'?'failure':'finalize';
+      const response=await fetch('http://127.0.0.1:8788/internal/'+action,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(args),signal:AbortSignal.timeout(30000)});
+      if(!response.ok)throw Error('EDITORIAL_SERVICE_UNAVAILABLE');result=await response.json();
+    }
     else { const [target, method] = op.split('.'); result = await (target === 'store' ? store : transport)[method](...args); }
     if (op === 'dropbox.readBinary') result = result.toString('base64');
     finish(200, { ok: true, result: result ?? null });

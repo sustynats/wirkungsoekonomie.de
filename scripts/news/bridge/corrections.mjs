@@ -42,7 +42,7 @@ export async function finishCorrection(provider, job, now = new Date().toISOStri
       schema_version: '1.0', job_type: 'correction', job_id: job.input.job_id,
       input_hash: job.input.input_hash, correction_attempt: correction.attempt,
       created_at: correction.requested_at, test_only: job.input.test_only,
-      contract_path: bridgePath('98_CONFIG', 'correction-protocol-20260910-1.json'),
+      contract_path: job.input.job_type==='editorial_request'?job.input.contract_path:bridgePath('98_CONFIG', 'correction-protocol-20260910-1.json'),
       original_input: job.input, original_output_path: correction.error_output_path,
       validation_errors: correction.error,
       instructions: 'Gezielte Nachbearbeitung desselben Jobs. Originalinput und Quellen unverändert. Vorhandenes ACK prüfen, dann diesen repair-Auftrag nach 10_CLAIMED verschieben. Alle benannten Fehler und die vollständige native Analyse prüfen. Keine Belege, Hashes oder Wirkpfade erfinden. Korrigiertes vollständiges output.json atomar nach 20_OUTPUT_READY schreiben. Bei unzureichender Beleglage hold/reject. Keine API-Aufrufe und keine ChatGPT-Bilder. Während eines aktiven Durchlaufs neue repair-Aufträge mit abholen; ansonsten bestehender Stundenlauf. Kein neuer Server-Trigger.',

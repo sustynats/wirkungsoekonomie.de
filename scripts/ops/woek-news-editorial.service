@@ -1,0 +1,28 @@
+[Unit]
+Description=Wirkungsticker private input and final editorial approval
+After=network-online.target woek-news-bridge.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/woek-news-editorial/current
+Environment=WOEK_NEWS_BRIDGE_DIRECTORY=/var/lib/woek-news-bridge
+Environment=WOEK_EDITORIAL_OWNER_DISCORD_ID=1206956406805102593
+Environment=WIRKUNGSTICKER_PROCESSING_MODE=dropbox_chatgpt_bridge
+Environment=VISUAL_GENERATION_PROVIDER=higgsfield
+ExecStart=/usr/bin/node --max-old-space-size=112 scripts/news/bridge/editorial-server.mjs
+Restart=on-failure
+RestartSec=15
+UMask=0077
+MemoryMax=180M
+CPUQuota=30%
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/woek-news-bridge
+
+[Install]
+WantedBy=multi-user.target

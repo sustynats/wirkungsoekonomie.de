@@ -499,3 +499,37 @@ test('Dropbox refuses a repair transfer repeatedly: keep one job and immutable h
   assert.ok(transport.files.has(bridgePath('90_ERRORS', `${id}.correction-1.output.json`)));
   assert.equal(store.all().length, 1);
 });
+
+
+test('repeated import reuses a review across changed discovery timestamps, but binds changed content',async t=>{
+ const f=setup(t),record=candidate();
+ await f.provider.enqueue([record],[],now);const parent=f.store.all()[0],first=output(parent.input,'publish');
+ const assessment={};
+ await ensureSemanticReview(f.provider,parent,first,{...record,pending_update:{source_integrity:{checked_at:now}}},assessment,now);
+ const original=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');
+ await ensureSemanticReview(f.provider,parent,first,{...record,pending_update:{source_integrity:{checked_at:later}}},assessment,later);
+ assert.equal(f.store.all().filter(j=>j.input.job_type==='impact_semantic_review').length,1);
+ assert.equal(f.store.get(parent.input.job_id).publication_gate.review_job_id,original.input.job_id);
+ await ensureSemanticReview(f.provider,parent,first,{...record,source_summary:'A changed editorial source basis.'},assessment,later);
+ assert.equal(f.store.all().filter(j=>j.input.job_type==='impact_semantic_review').length,2);
+ const changed=structuredClone(first);changed.story.short_summary='Changed output also requires a fresh bound review';
+ await ensureSemanticReview(f.provider,parent,changed,record,assessment,later);
+ assert.equal(f.store.all().filter(j=>j.input.job_type==='impact_semantic_review').length,3);
+});
+
+
+test('derived review jobs do not consume current-news intake capacity',async t=>{
+ const f=setup(t,{maxPending:2});
+ for(let n=0;n<5;n++)f.store.put({input:{job_id:`wt_20260910T000000Z_${String(n).padStart(24,'0')}`,job_type:'impact_semantic_review'},status:'queued'});
+ assert.equal((await f.provider.selectCandidates([candidate()])).length,1);
+ await f.provider.enqueue([candidate()],[],now);assert.equal(f.store.all().filter(j=>j.input.job_type==='new_story').length,1);
+ await f.provider.enqueue([candidate(2)],[],now);assert.equal(f.store.all().filter(j=>j.input.job_type==='new_story').length,2);
+ assert.equal((await f.provider.selectCandidates([candidate(3)])).length,0);
+});
+
+test('a manual news child always stages even when production publication is enabled',async t=>{
+ const {store,transport,provider}=setup(t,{stageOnly:false,adapt:(_output,job)=>({decision:'hold',record:null,story_id:job.candidate.story_id})});
+ await provider.enqueue([candidate()],[],now);const job=store.all()[0];job.intake_news_parent='wt_20260910T000000Z_aaaaaaaaaaaaaaaaaaaaaaaa';store.put(job);
+ await transport.writeAtomic(bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json'),output(job.input));
+ const results=await provider.reconcile({},[],later);assert.equal(results[0].staged,true);assert.equal(job.input.test_only,false);
+});
