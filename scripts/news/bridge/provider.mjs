@@ -114,7 +114,7 @@ export class DropboxChatGPTBridgeProvider {
         }
         if (result.record?.bridge_import) result.record.bridge_import.output_hash = hash(output);
         if (result.record && job.semantic_review) result.record.impact_semantic_review = { review_job_id: job.semantic_review.review_job_id, reviewed_at: job.semantic_review.reviewed_at, status: 'ready' };
-        const staged = this.stageOnly || job.input.test_only;
+        const staged = this.stageOnly || job.input.test_only || Boolean(job.intake_news_parent);
         let visual = null;
         if (result.record && this.visualProvider) {
           visual = await this.visualProvider.receive(job, now, { output, record: result.record, staged });

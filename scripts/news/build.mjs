@@ -1,3 +1,4 @@
+import {PERSONAL_FORMAT,loadPersonalEditorials,personalLabel,personalArticleBody,personalPortrait} from './personal-editorial.mjs';
 import { migrateImpactFiles } from './migrate-impact-assessments.mjs';
 import { deriveImpactPresentation, IMPACT_LEGEND } from './impact-assessment.mjs';
 import { publicImpactAssessment, PUBLIC_IMPACT_PROFILE_VERSION, IMPACT_REVISION_NOTICE, assertPublicImpactHtml } from './impact-release.mjs';
@@ -323,14 +324,15 @@ export function storyCard(story, index) {
 }
 
 function editorialCard(analysis, story, index) {
+  const personal=analysis.format===PERSONAL_FORMAT;
   const book = analysis.format === BOOK_FORMAT;
   const href = `./analyse/${analysis.slug}/`;
   const topic = (story?.topic || analysis.tags || []).join(" ").toLowerCase();
   const searchText = [analysis.title, analysis.subtitle, analysis.teaser, analysis.analysis_type, ...(story?.topic || [])].join(" ").toLowerCase();
   const titleImage = publicTitleImage(analysis.title_image);
   const preview = book ? `<div class="news-editorial-card__book${analysis.book.volumes ? " news-editorial-card__book--volumes" : ""}">${renderBookCover(analysis)}</div>` : titleImage?.wide ? `<a class="news-editorial-card__preview" href="${escapeHtml(href)}" aria-hidden="true" tabindex="-1"><img src="${escapeHtml(titleImage.wide.url)}" width="1200" height="675" alt="" loading="lazy" decoding="async"></a>` : "";
-  return `<article class="news-editorial-card${index === 0 ? " news-editorial-card--lead" : ""}${preview ? " news-editorial-card--illustrated" : ""}" data-news-card data-news-format="${book ? BOOK_FORMAT : "analysis"}" data-news-editorial-analysis data-news-story-id="analysis-${escapeHtml(analysis.analysis_id)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topic)}" data-dimensions="${book || !publicImpactAssessment(analysis) ? "" : "mensch planet demokratie"}" data-high-impact="${!book}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(analysis.updated_at)}">
-  <div class="news-editorial-card__content"><p class="hero-kicker">${escapeHtml(editorialLabel(analysis))}</p><h2><a href="${escapeHtml(href)}">${escapeHtml(analysis.title)}</a></h2><p class="news-editorial-card__subtitle">${escapeHtml(analysis.subtitle)}</p>${book && analysis.teaser === analysis.subtitle ? "" : `<p>${escapeHtml(analysis.teaser)}</p>`}${book ? `<p class="news-editorial-card__origin">${escapeHtml(analysis.subtype)} · ${escapeHtml(analysis.book.author)} · ${escapeHtml(analysis.book.title)}</p>` : `<p class="news-editorial-card__origin">Entstanden aus: <a class="text-link" href="./${escapeHtml(story?.slug || "")}/">${escapeHtml(story?.title || "Wirkungsticker-Story")}</a></p>`}<div class="news-editorial-card__byline"><img src="${book ? escapeHtml(analysis.author.image) : "../assets/img/people/natalie-weber-woek-analyse.jpg"}" alt="${book ? escapeHtml(analysis.author.image_alt) : "Natalie Weber"}" width="72" height="${book ? 96 : 72}" loading="lazy" decoding="async"><span><strong>Natalie Weber</strong><small><a class="text-link" href="../methodik/">${escapeHtml(analysis.transparency_note)}</a></small><small>${escapeHtml(`${analysis.reading_time_minutes || 8} Min. · veröffentlicht ${formatDate(analysis.published_at, { dateOnly: true })}`)}</small></span></div></div>
+  return `<article class="news-editorial-card${index === 0 ? " news-editorial-card--lead" : ""}${preview ? " news-editorial-card--illustrated" : ""}" data-news-card data-news-format="${book ? BOOK_FORMAT : "analysis"}" data-news-editorial-analysis data-news-story-id="analysis-${escapeHtml(analysis.analysis_id)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topic)}" data-dimensions="${book || !publicImpactAssessment(analysis) ? "" : "mensch planet demokratie"}" data-high-impact="${!book && !personal}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(analysis.updated_at)}">
+  <div class="news-editorial-card__content"><p class="hero-kicker">${escapeHtml(editorialLabel(analysis))}</p><h2><a href="${escapeHtml(href)}">${escapeHtml(analysis.title)}</a></h2><p class="news-editorial-card__subtitle">${escapeHtml(analysis.subtitle)}</p>${book && analysis.teaser === analysis.subtitle ? "" : `<p>${escapeHtml(analysis.teaser)}</p>`}${personal ? `<p class="news-editorial-card__origin">${escapeHtml(analysis.source_media?.show || personalLabel(analysis.subtype))}</p>` : book ? `<p class="news-editorial-card__origin">${escapeHtml(analysis.subtype)} · ${escapeHtml(analysis.book.author)} · ${escapeHtml(analysis.book.title)}</p>` : `<p class="news-editorial-card__origin">Entstanden aus: <a class="text-link" href="./${escapeHtml(story?.slug || "")}/">${escapeHtml(story?.title || "Wirkungsticker-Story")}</a></p>`}<div class="news-editorial-card__byline"><img src="${personal ? personalPortrait(analysis.subtype) : book ? escapeHtml(analysis.author.image) : "../assets/img/people/natalie-weber-woek-analyse.jpg"}" alt="${book ? escapeHtml(analysis.author.image_alt) : "Natalie Weber"}" width="72" height="${book ? 96 : 72}" loading="lazy" decoding="async"><span><strong>Natalie Weber</strong><small><a class="text-link" href="../methodik/">${escapeHtml(analysis.transparency_note)}</a></small><small>${escapeHtml(`${analysis.reading_time_minutes || 8} Min. · veröffentlicht ${formatDate(analysis.published_at, { dateOnly: true })}`)}</small></span></div></div>
   ${preview}<div class="news-editorial-card__actions"><a class="btn btn-primary" href="${escapeHtml(href)}">${book ? (analysis.self_authored_work ? "Autorinnenbeitrag lesen" : "Buchbesprechung lesen") : "Analyse lesen"}${renderIcon("pfeil")}</a>${editorialSaveControl(analysis)}${editorialShareControl(analysis)}</div>
 </article>`;
 }
@@ -648,7 +650,7 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
   const newerLink = newerStory ? `<a class="news-story-pagination__link news-story-pagination__link--newer" href="${escapeHtml(newerStory.href || `../${newerStory.slug}/`)}"><span aria-hidden="true">←</span><span><small>Neuerer Beitrag</small><strong>${escapeHtml(newerStory.title)}</strong></span></a>` : "";
   const nextLink = nextStory ? `<a class="news-story-pagination__link news-story-pagination__link--next" href="${escapeHtml(nextStory.href || `../${nextStory.slug}/`)}"><span><small>Nächster Beitrag</small><strong>${escapeHtml(nextStory.title)}</strong></span><span aria-hidden="true">→</span></a>` : "";
   const returnLink = `<a class="btn btn-secondary news-return-link" href="${escapeHtml(overviewHref(story))}" data-news-return-to-list><span aria-hidden="true">←</span><span>Zur Übersicht</span></a>`;
-  const body = `<main id="main-content" data-search-content data-no-glossary data-news-reader="detail">
+  const body = `<main id="main-content" data-search-content data-no-glossary data-news-reader="detail"${story.editorial_approval_hash ? ` data-editorial-approval-hash="${escapeHtml(story.editorial_approval_hash)}"` : ""}>
   <section class="hero news-hero news-hero--story"><div class="hero-copy">${renderUpdateBanner(story, { detail: true, caseFile })}<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker news-hero__kicker">${renderIcon(topicIcon(story.topic))}<span>${escapeHtml((story.topic || []).join(" · "))}</span></p>${renderStoryVisual(story, { detail: true, loading: "eager", sourceLabel: `${primary?.publisher || ""} · Ausgangsmeldung ${formatDate(firstSourceDate(story), { dateOnly: true })}` })}<div class="news-hero__meta">${renderStatusChip(a.status)}${renderImpactTime(story)}<span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Einordnung: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="hero-actions news-hero__actions">${returnLink}${primary ? `<a class="btn btn-primary news-hero__source" href="${escapeHtml(primary.url)}" target="_blank" rel="noopener noreferrer">${renderIcon("extern")}<span>${primary.primary_source ? "Primärquelle" : "Quellbericht"} öffnen: ${escapeHtml(primary.publisher)}</span></a>` : ""}${shareControl(story, "top")}${readerRefreshControl()}</div></div></section>
 
   ${renderNewsStatusNotice(story)}
@@ -707,6 +709,7 @@ const CLAIM_TYPE_LABELS = {
 };
 
 export function editorialAnalysisPage(analysis, story = {}, { nextItem = null, relatedAnalyses = [] } = {}) {
+  if(analysis.format===PERSONAL_FORMAT)return personalEditorialPage(analysis);
   const book = analysis.format === BOOK_FORMAT;
   const titleImage = publicTitleImage(analysis.title_image);
   if (titleImage) titleImage.label = "Wirkungskarte · Meinung & Analyse";
@@ -769,6 +772,14 @@ export function editorialAnalysisPage(analysis, story = {}, { nextItem = null, r
     },
     extraScript: '<script src="../../../assets/js/news-share.js?v=20260904-actions1"></script>',
   });
+}
+
+function personalEditorialPage(a){
+ const label=personalLabel(a.subtype),canonical=`${SITE}/wirkungsticker/analyse/${a.slug}/`;
+ const body=`<main id="main-content" data-search-content data-no-glossary data-news-reader="analysis" data-editorial-content-hash="${escapeHtml(a.content_hash)}"><article class="news-editorial-article news-editorial-article--commentary">
+ <header class="hero news-editorial-hero"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../">Start</a><span>/</span><a href="../../">Wirkungsticker</a></nav><p class="hero-kicker">${escapeHtml(label)}</p><h1 class="hero-title">${escapeHtml(a.title)}</h1><p class="hero-subtitle">${escapeHtml(a.subtitle)}</p><div class="news-editorial-byline"><img src="${personalPortrait(a.subtype)}" alt="${['listened','watched'].includes(a.subtype)?'Natalie Weber mit Kopfhörern und Smartphone am Tisch':'Natalie Weber'}" width="144" height="192"><div><strong>Natalie Weber</strong><span>Meinung &amp; Analyse</span><span>${escapeHtml(formatDate(a.published_at,{dateOnly:true}))} · ${a.reading_time_minutes} Min.</span></div></div><p class="news-editorial-transparency">Persönliche Meinung und wirkungsökonomische Analyse</p></div></header>
+ <section class="section"><div class="news-editorial-layout"><div class="news-editorial-article__main">${personalArticleBody(a)}</div></div></section><footer class="section"><p>Fassung ${a.revision} · ${escapeHtml(formatDate(a.published_at,{dateOnly:true}))}</p>${editorialSaveControl(a)}${editorialShareControl(a)}<p><a class="btn btn-secondary" href="../../">Zum Wirkungsticker</a></p></footer></article></main>`;
+ return pageShell({title:a.title,description:a.subtitle,canonical,body,base:'../../../',extraScript:'<script src="../../../assets/js/news-share.js?v=20260904-actions1"></script>',jsonLd:{'@context':'https://schema.org','@type':'Article',url:canonical,articleSection:label,headline:a.title,datePublished:a.published_at,author:{'@type':'Person',name:'Natalie Weber'},citation:a.sources.map(s=>s.url)}});
 }
 
 function retiredStoryPage(story) {
@@ -884,7 +895,7 @@ export function buildNewsSite() {
   migrateImpactFiles(ROOT);
   const data = readJson(STORIES_FILE);
   const editorialStore = fs.existsSync(EDITORIAL_ANALYSES_FILE) ? readJson(EDITORIAL_ANALYSES_FILE) : { analyses: [] };
-  const manualEditorials = loadManualEditorials(ROOT);
+  const manualEditorials = [...loadManualEditorials(ROOT), ...loadPersonalEditorials(ROOT)];
   const publicationUpdatedAt = [data.public_updated_at || data.updated_at, editorialStore.updated_at, ...manualEditorials.filter(a => a.status === "published").map(a => a.updated_at)].filter(Boolean).sort((left, right) => Date.parse(right) - Date.parse(left))[0];
   const activeStories = (data.stories || []).filter((story) => story.published && story.analysis && story.listed !== false).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
   const publicStorySlugs = new Set((data.stories || []).filter(story => story.published && story.analysis).map(story => story.slug));
@@ -895,7 +906,7 @@ export function buildNewsSite() {
     return caseFile ? { ...story, case_file: caseFile } : story;
   });
   const storiesById = new Map(pageStories.map((story) => [story.story_id, story]));
-  const editorialAnalyses = [...(editorialStore.analyses || []), ...manualEditorials].filter((analysis) => analysis.status === "published" && (analysis.format === BOOK_FORMAT || storiesById.has(analysis.story_id))).sort((left, right) => Date.parse(right.updated_at) - Date.parse(left.updated_at));
+  const editorialAnalyses = [...(editorialStore.analyses || []), ...manualEditorials].filter((analysis) => analysis.status === "published" && ([BOOK_FORMAT,PERSONAL_FORMAT].includes(analysis.format) || storiesById.has(analysis.story_id))).sort((left, right) => Date.parse(right.updated_at) - Date.parse(left.updated_at));
   if (new Set(editorialAnalyses.map(a => a.slug)).size !== editorialAnalyses.length) throw new Error("EDITORIAL_SLUG_COLLISION");
   const editorialsByStory = new Map();
   for (const analysis of editorialAnalyses) if (analysis.story_id) editorialsByStory.set(analysis.story_id, [...(editorialsByStory.get(analysis.story_id) || []), analysis]);
