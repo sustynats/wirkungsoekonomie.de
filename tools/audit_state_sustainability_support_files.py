@@ -219,6 +219,9 @@ def main() -> int:
     matrix_path.write_text(json.dumps(matrix, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     md_path = root / args.markdown
+    # Re-running the support projection replaces its generated tail. Appending
+    # another copy makes a local release differ from a clean CI regeneration.
+    md_path.write_text(md_path.read_text(encoding="utf-8").split("\n## Recursive non-HTML publication/support surfaces")[0].rstrip() + "\n", encoding="utf-8")
     with md_path.open("a", encoding="utf-8") as fh:
         fh.write("\n## Recursive non-HTML publication/support surfaces\n\n")
         fh.write(f"- Tracked support text files inventoried: **{len(support)}**\n")
