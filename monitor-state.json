@@ -13,19 +13,24 @@
       "firstSeen": "2026-09-09T18:36:13.091Z",
       "active": true
     },
-    "run": {
-      "firstSeen": "2026-09-09T23:35:29.684Z",
-      "active": true
-    },
-    "provider": {
-      "firstSeen": "2026-09-09T23:35:29.684Z",
-      "active": true
-    },
     "budget": {
       "firstSeen": "2026-09-10T00:50:29.876Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ff685ad17a0ad57cc341acf2",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-10T01:05:30.454Z"
+    },
+    {
+      "id": "43eac2dfae94436de78ada9c",
+      "content": "✓ WÖk-Störung behoben\nKI-Verarbeitung\nPrüfung: 2026-09-10T01:05:30.454Z"
+    },
+    {
+      "id": "b816e193beec3c077839e4d8",
+      "content": "⚠ WÖk-Betriebsstörung\nKI-Monatsbudget: Monatslimit oder Wechselkurs-Sicherheitsgate hält neue KI-Anfragen an; die Warteschlange bleibt erhalten.\nSeit: 2026-09-10T00:50:29.876Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-09"
 }
