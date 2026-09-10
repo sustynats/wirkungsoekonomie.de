@@ -2710,8 +2710,16 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
 
 .wt-dims--impact .wt-dim{display:block;min-width:0}
 .wt-dims--impact .wt-dim__head{margin-bottom:.45rem}
-.wt-dims--impact .wt-impact-reading{display:flex;align-items:center;flex-wrap:nowrap}
-.wt-dims--impact .wt-impact-direction{min-width:0;white-space:normal}
+.wt-dims--impact .wt-impact-reading{display:grid;grid-template-columns:1.3rem minmax(4rem,5.5rem) minmax(0,1fr);align-items:center}
+.wt-dims--impact .wt-impact-direction{min-width:0;white-space:normal;overflow-wrap:normal;word-break:normal;hyphens:none}
 .wt-dims--impact .wt-impact-additional{display:flex;align-items:center}
+.wt-dims--impact .wt-impact-additional .wt-dim__track{width:5.5rem;flex:0 0 5.5rem}
 
 .wt-dims--impact.wt-dims--compact .wt-impact-path-title,.wt-dims--impact.wt-dims--compact .wt-impact-additional{grid-column:1 / -1}
+
+/* A card can be narrow on desktop too: adapt to the panel, not the viewport. */
+.news-story-visual__panel{container-type:inline-size}
+@container (max-width:360px){
+  .wt-dims--impact.wt-dims--compact .wt-dim{grid-template-columns:minmax(0,1fr);gap:.35rem}
+  .wt-dims--impact.wt-dims--compact .wt-impact-reading{width:100%}
+}

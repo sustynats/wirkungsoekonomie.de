@@ -18,6 +18,7 @@ export function publicImpactAssessment(record = {}) {
 // Every generated public page passes this guard, including detail and archive
 // pages. A private preview must never be copied into the release artifact.
 export function assertPublicImpactHtml(html) {
+  if (html.includes('data-private-impact-preview')) throw Error('IMPACT_PRIVATE_PREVIEW_IN_PUBLIC_ARTIFACT');
   if (html.includes('Keine Größenschätzung vorhanden') || /class="wt-dim[^>]*>[\s\S]*kein(?: belastbarer| wesentlicher)? Wirkpfad/iu.test(html)) throw Error('IMPACT_PUBLIC_DEBUG_FALLBACK');
   if (!PUBLIC_IMPACT_PROFILE_VERSION && /class="wt-dim wt-dim--|data-potential-model=/.test(html)) throw Error('IMPACT_PUBLIC_PROFILE_NOT_RELEASED');
 }

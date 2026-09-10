@@ -7,7 +7,7 @@ const escape = (value) => String(value || "").replace(/&/g, "&amp;").replace(/</
 // Responsive HTML composition optionally reuses a verified symbolic background.
 // The impact card itself is HTML/CSS and needs no generated image asset. Missing,
 // pending or rejected assets must never switch a published story to an old layout.
-export function renderStoryVisual(story, { href = "", detail = false, loading = "lazy", sourceLabel = "" } = {}) {
+export function renderStoryVisual(story, { href = "", detail = false, loading = "lazy", sourceLabel = "", impactContext = {} } = {}) {
   if (!story?.analysis || !story.title) return "";
   const image = publicTitleImage(story.title_image);
   const heading = detail ? "h1" : "h2";
@@ -18,7 +18,7 @@ export function renderStoryVisual(story, { href = "", detail = false, loading = 
       <p class="news-story-visual__brand" aria-hidden="true">Wirkungsökonomie <span>· Wirkungsticker</span></p>
       <div class="news-story-visual__content">
         <${heading} class="news-story-visual__headline">${href ? `<a href="${escape(href)}">${escape(story.title)}</a>` : escape(story.title)}</${heading}>
-        <div class="news-story-visual__panel"><p class="news-story-visual__kicker">${deriveImpactPresentation(story).relevance_label ? `${escape(deriveImpactPresentation(story).relevance_label)} systemische Relevanz` : "Systemische Relevanz offen"}</p>${renderDimensionMeters(story, { compact: true })}</div>
+        <div class="news-story-visual__panel"><p class="news-story-visual__kicker">${deriveImpactPresentation(story).relevance_label ? `${escape(deriveImpactPresentation(story).relevance_label)} systemische Relevanz` : "Systemische Relevanz offen"}</p>${renderDimensionMeters(story, { compact: true, context:impactContext })}</div>
       </div>
       <figcaption class="news-story-visual__caption"><span>${escape(sourceLabel)}</span><span>${escape(label)}</span><span class="sr-only">Darstellung, kein Beleg des Ereignisses. Balken zeigen Tragweite. Richtung, Zeitstatus und Evidenz bleiben getrennt.</span></figcaption>
     </figure>
