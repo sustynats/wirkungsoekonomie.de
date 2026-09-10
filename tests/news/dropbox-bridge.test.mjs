@@ -128,10 +128,39 @@ test('missing output stays queued; malformed output quarantines with no ACK',asy
   assert.deepEqual(await provider.reconcile({},[],later),[]);job=store.get(job.input.job_id);assert.equal(job.status,'quarantined');assert.equal(job.last_error.error_code,'BRIDGE_JSON_INVALID');
   assert.equal((await transport.list('30_ACK')).length,0);
 });
-test('Dropbox outage is bounded to three attempts, preserves job ID, never falls back',async t=>{
+test('Dropbox outages defer the unchanged job without burning retries or permanently quarantining it',async t=>{
   const {provider,store,transport}=setup(t);transport.outage=true;
   for(let i=0;i<5;i++)await provider.enqueue([candidate()],[],now);
-  const job=store.all()[0];assert.equal(job.attempts.enqueue,3);assert.equal(job.status,'quarantined');assert.equal(transport.files.size,0);
+  let job=store.all()[0];const id=job.input.job_id;
+  assert.equal(job.attempts.enqueue,1);assert.equal(job.status,'prepared');assert.equal(transport.files.size,0);
+  assert.equal(job.retry_at,'2026-09-10T06:50:00.000Z');
+  for(const at of ['2026-09-10T06:50:00.000Z','2026-09-10T07:00:00.000Z','2026-09-10T07:20:00.000Z']) await provider.enqueue([candidate()],[],at);
+  job=store.get(id);assert.equal(job.attempts.enqueue,4);assert.equal(job.status,'prepared');
+  transport.outage=false;await provider.enqueue([candidate()],[],'2026-09-10T08:00:00.000Z');
+  job=store.get(id);assert.equal(job.status,'queued');assert.equal(job.last_error,undefined);assert.equal(job.retry_at,undefined);
+  assert.equal(store.all().length,1);assert.ok(transport.files.has(bridgePath('00_INBOX',id+'.input.json')));
+});
+test('Dropbox explicit throttling retries at most twice and respects short retry windows', async()=>{
+  let calls=0; const delays=[];
+  const transport=new DropboxTransport({credentials:{},sleep:async ms=>delays.push(ms),fetchImpl:async()=>{
+    calls++;return calls<3 ? new Response(JSON.stringify({error_summary:'too_many_requests/'}),{status:429,headers:{'retry-after':'2'}}) : new Response(JSON.stringify({entries:[],has_more:false}));
+  }});
+  transport.token=async()=> 'synthetic';
+  assert.deepEqual(await transport.list('20_OUTPUT_READY'),[]);
+  assert.equal(calls,3);assert.deepEqual(delays,[2000,2000]);
+  calls=0;transport.fetch=async()=>{calls++;return new Response('{}',{status:429});};
+  await assert.rejects(transport.list('20_OUTPUT_READY'),e=>e.message==='BRIDGE_DROPBOX_HTTP_429'&&e.retryable===true);
+  assert.equal(calls,3);
+});
+test('long Dropbox throttle windows remain explicit, and ambiguous writes are not replayed', async()=>{
+  let calls=0;const transport=new DropboxTransport({credentials:{},sleep:async()=>assert.fail('Long sleep'),fetchImpl:async()=>{
+    calls++;return new Response('{}',{status:429,headers:{'retry-after':'120'}});
+  }});transport.token=async()=> 'synthetic';
+  await assert.rejects(transport.list('20_OUTPUT_READY'),e=>e.retry_after_seconds===120&&e.retryable===true);
+  assert.equal(calls,1);calls=0;
+  transport.fetch=async()=>{calls++;throw Error('ambiguous network failure');};
+  await assert.rejects(transport.request('files/upload',{path:bridgePath('98_CONFIG','synthetic.tmp')},'body'),/ambiguous network failure/);
+  assert.equal(calls,1);
 });
 test('stale claim is reported without moving it back or ignoring output/ACK',async t=>{
   const {provider,store,transport}=setup(t);await provider.enqueue([candidate()],[],now);const job=store.all()[0];
@@ -243,7 +272,7 @@ test('staging record survives ACK and duplicate reconciliation; production ACK r
   assert.ok(store.get(job.input.job_id).retain_until);
 });
 
-test('production ACK waits for matching pushed marker; failed archival stops after three attempts',async t=>{
+test('production ACK waits for matching pushed marker; temporary archival failure keeps the ACK and retries when due',async t=>{
   const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.published&&s.listed!==false));
   const {provider,store,transport}=setup(t,{stageOnly:false,adapt:()=>({decision:'publish',record})});
   await provider.enqueue([candidate()],[],now);const job=store.all()[0];
@@ -254,7 +283,8 @@ test('production ACK waits for matching pushed marker; failed archival stops aft
   record.bridge_import={job_id:job.input.job_id,output_hash:accepted.output_hash};
   let attempts=0;transport.archive=async()=>{attempts++;throw Object.assign(Error('BRIDGE_DROPBOX_HTTP_503'),{retryable:true});};
   for(let i=0;i<5;i++)await provider.finalize([record],later,{committed:true});
-  assert.equal(attempts,3);assert.equal(store.get(job.input.job_id).status,'archive_failed');
+  assert.equal(attempts,1);assert.equal(store.get(job.input.job_id).status,'acknowledged');
+  assert.equal(store.get(job.input.job_id).last_error.retryable,true);
   assert.equal(store.get(job.input.job_id).ack.status,'imported');assert.equal(store.observation('completion-metrics').completed,1);
 });
 
@@ -433,4 +463,36 @@ for (const pass of [true,false]) test(`separate semantic review controls image g
   await f.provider.finalize([],later);
   assert.equal(f.store.get(parent.input.job_id).ack?.status,pass?'staged':undefined);
   if(!pass){assert.equal(f.store.get(parent.input.job_id).publication_gate.status,'needs_review');assert.deepEqual(f.store.get(parent.input.job_id).attempts,{});}
+});
+
+test('temporary OAuth refusal is retryable while invalid credentials remain terminal', async () => {
+  for (const status of [400, 429, 503]) {
+    const transport = new DropboxTransport({ credentials: {}, fetchImpl: async () => new Response('{}', { status, headers: { 'retry-after': '60' } }) });
+    await assert.rejects(transport.token(), error => error.retryable === (status !== 400)
+      && error.message === (status === 400 ? 'BRIDGE_DROPBOX_AUTH_FAILED' : `BRIDGE_DROPBOX_HTTP_${status}`));
+  }
+});
+
+test('Dropbox refuses a repair transfer repeatedly: keep one job and immutable history with durable backoff', async t => {
+  const { provider, store, transport } = setup(t, { correctionsEnabled: true, stageOnly: false });
+  await provider.enqueue([candidate()], [], now);
+  const job = store.all()[0], id = job.input.job_id, bad = output(job.input);
+  bad.schema_version = 'invalid';
+  transport.files.set(bridgePath('20_OUTPUT_READY', `${id}.output.json`), JSON.stringify(bad));
+  const write = transport.writeAtomic.bind(transport); let refusals = 0, unavailable = true;
+  transport.writeAtomic = async (p, value) => {
+    if (unavailable && p.endsWith('.repair-1.json')) { refusals++; throw Object.assign(Error('BRIDGE_DROPBOX_HTTP_429'), { retryable: true, retry_after_seconds: 600 }); }
+    return write(p, value);
+  };
+  await provider.reconcile({}, [], later);
+  const firstRetry = store.get(id).correction_retry_at;
+  await provider.reconcile({}, [], later); assert.equal(refusals, 1);
+  for (let i = 0; i < 3; i++) await provider.reconcile({}, [], store.get(id).correction_retry_at);
+  assert.equal(store.get(id).status, 'correction_prepared'); assert.equal(refusals, 4);
+  assert.equal(store.get(id).corrections.length, 1); assert.ok(firstRetry > later);
+  unavailable = false;
+  await provider.reconcile({}, [], store.get(id).correction_retry_at);
+  assert.equal(store.get(id).status, 'correction_pending'); assert.equal(store.get(id).correction_retry_at, undefined);
+  assert.ok(transport.files.has(bridgePath('90_ERRORS', `${id}.correction-1.output.json`)));
+  assert.equal(store.all().length, 1);
 });

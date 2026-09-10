@@ -4,9 +4,11 @@ import { canRequestCorrection, prepareCorrection, recoverCorrections } from './c
 import { bridgeInput, adaptOutput, validateOutputBinding, sameBridgeEvent } from './adapter.mjs';
 import { BRIDGE_ROOT, bridgePath, parsePacket, outputSchema, hash } from './contract.mjs';
 import { storyPage } from '../build.mjs';
+import { waitingForReview, observeOutput } from './status.mjs';
 
 const newsJob = job => ['new_story','story_update','correction'].includes(job.input.job_type);
 const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
+const retryDue = (job, stage, now) => job.last_error?.stage !== stage || !(Date.parse(job.retry_at) > Date.parse(now));
 export class DropboxChatGPTBridgeProvider {
   constructor({ store, transport, visualProvider, editorialEnabled = false, correctionsEnabled = false, stageOnly = true, maxJobs = 6, maxPending = 48, retentionDays = 30, adapt = adaptOutput, semanticReview = ensureSemanticReview }) {
     if (!Number.isInteger(retentionDays) || retentionDays < 30) throw new Error('BRIDGE_RETENTION_INVALID');
@@ -50,9 +52,10 @@ export class DropboxChatGPTBridgeProvider {
     return results;
   }
   async queuePrepared(job, now, results) {
+    if (!retryDue(job, 'enqueue', now)) return;
     try {
       await this.transport.writeAtomic(bridgePath('00_INBOX', `${job.input.job_id}.input.json`), job.input);
-      job.status = 'queued'; job.queued_at = now; await this.store.put(job);
+      job.status = 'queued'; job.queued_at = now; delete job.last_error; delete job.retry_at; await this.store.put(job);
       const checkpoints = await this.store.observation('source-checkpoints') || {};
       if (!job.input.test_only) checkpoints[job.candidate.story_id] = job.candidate.content_hash;
       await this.store.observe('source-checkpoints', checkpoints);
@@ -61,12 +64,13 @@ export class DropboxChatGPTBridgeProvider {
   }
   async reconcile(registry, stories, now) {
     await importSemanticReviews(this, now);
-    if (this.correctionsEnabled) await recoverCorrections(this);
+    if (this.correctionsEnabled) await recoverCorrections(this, now);
     const entries = await this.transport.list('20_OUTPUT_READY');
     const names = new Set(entries.map(e => e.name));
     const results = [];
     for (const job of await this.store.all()) {
       if (!newsJob(job) || terminal.has(job.status)) continue;
+      if (!retryDue(job, 'import', now)) continue;
       const jobStories = job.input.test_only && !stories.some(s => s.story_id === job.candidate.story_id)
         ? [...stories, job.candidate] : stories;
       if (job.status === 'accepted') {
@@ -119,7 +123,7 @@ export class DropboxChatGPTBridgeProvider {
         }
         const accepted = { ...result, story_id: job.candidate.story_id, input_content_hash: job.candidate.content_hash, job_id: job.input.job_id, staged, visual, output_hash: hash(output), accepted_at: now };
         job.accepted = { ...accepted, ...(visual?.file ? { visual: { ...visual, file: undefined } } : {}) };
-        job.status = 'accepted'; job.accepted_at = now; delete job.last_error;
+        job.status = 'accepted'; job.accepted_at = now; delete job.last_error; delete job.retry_at;
         job.output_detected_at = (await this.store.observation(`output:${job.input.job_id}`))?.at || now;
         if (staged && result.record) job.staging = { record: result.record, html: storyPage(result.record), visual_sha256: visual?.sha256 || null, ...(visual?.staging ? { image: visual.staging } : {}) };
         await this.store.put(job); // durable staging BEFORE any ACK
@@ -131,6 +135,7 @@ export class DropboxChatGPTBridgeProvider {
   async finalize(stories, now, { committed = false, editorials = [] } = {}) {
     for (const job of await this.store.all()) {
       if (job.status !== 'accepted') continue;
+      if (!retryDue(job, 'ack', now)) continue;
       const item = job.accepted;
       const article = item.record || item.editorial;
       if (article && !item.staged) {
@@ -148,6 +153,7 @@ export class DropboxChatGPTBridgeProvider {
         job.ack = ack; await this.store.put(job);
         await this.transport.writeAtomic(bridgePath('30_ACK', `${job.input.job_id}.ack.json`), ack);
         job.status = 'acknowledged'; job.completed_at = now; job.output_imported_at = now;
+        delete job.last_error; delete job.retry_at;
         job.processing_latency = (Date.parse(job.accepted_at) - Date.parse(job.queued_at || job.created_at)) / 1000;
         job.import_pickup_latency = (Date.parse(now) - Date.parse(job.output_detected_at || job.accepted_at)) / 1000;
         await this.store.put(job);
@@ -156,6 +162,7 @@ export class DropboxChatGPTBridgeProvider {
     // Retry archival independently of import. ACK remains as completion receipt.
     for (const job of await this.store.all()) {
       if (job.status !== 'acknowledged' || job.archived_at) continue;
+      if (!retryDue(job, 'archive', now)) continue;
       const id = job.input.job_id;
       try {
       for (const correction of job.corrections || []) for (const folder of ['00_INBOX','10_CLAIMED']) await this.transport.archive(bridgePath(folder, `${id}.repair-${correction.attempt}.json`), id, job.completed_at);
@@ -164,6 +171,7 @@ export class DropboxChatGPTBridgeProvider {
       }
       await this.transport.writeAtomic(`${BRIDGE_ROOT}/40_ARCHIVE/${job.completed_at.slice(0,10).replaceAll('-','/')}/${id}/${id}.ack.json`, job.ack);
       job.archived_at = now;
+      delete job.last_error; delete job.retry_at;
       job.retain_until = new Date(Date.parse(now) + this.retentionDays * 86400000).toISOString();
       await this.store.put(job);
       } catch (error) { await this.failure(job, 'archive', error, now); }
@@ -173,8 +181,16 @@ export class DropboxChatGPTBridgeProvider {
     const attempt = (job.attempts[stage] || 0) + 1;
     job.attempts[stage] = attempt;
     const code = /^BRIDGE_[A-Za-z_0-9:.$\[\]-]{1,190}$/.test(error.message || '') ? error.message : 'BRIDGE_OPERATION_FAILED';
-    const retryable = error.retryable === true && attempt < 3;
+    // A temporary Dropbox refusal is not an invalid editorial package. Keep
+    // the same durable job, with one bounded attempt per due server cycle.
+    const infrastructure = error.retryable === true && /^BRIDGE_DROPBOX_HTTP_(?:429|5\d\d)$/.test(code);
+    const retryable = error.retryable === true && (infrastructure || attempt < 3);
     job.last_error = { job_id: job.input.job_id, stage, error_code: code, message: code, retryable, failed_at: now, attempt };
+    if (infrastructure) {
+      const backoff = Math.min(3600, 300 * 2 ** Math.min(attempt - 1, 4));
+      const requested = Number(error.retry_after_seconds);
+      job.retry_at = new Date(Date.parse(now) + Math.max(backoff, Number.isFinite(requested) ? requested : 0) * 1000).toISOString();
+    }
     if (Array.isArray(error.issues)) job.last_error.issues = error.issues.map(issue => typeof issue === 'string' ? issue.slice(0,160) : String(issue.code || 'VALIDATION_FAILED').slice(0,160)).slice(0,50);
     if (this.correctionsEnabled && canRequestCorrection(job, stage, job.last_error)) {
       try { await prepareCorrection(this, job, job.last_error, now); return; }
@@ -182,6 +198,7 @@ export class DropboxChatGPTBridgeProvider {
     }
     if (!retryable) job.status = stage === 'archive' ? 'archive_failed' : 'quarantined';
     await this.store.put(job);
+    if (infrastructure) return; // Do not issue extra Dropbox writes during its refusal window.
     // Keep the first canonical error immutable; later attempts get separate logs.
     const file = bridgePath('90_ERRORS', `${job.input.job_id}.error.json`);
     try {
@@ -207,24 +224,40 @@ export class DropboxChatGPTBridgeProvider {
     report.last_chatgpt_expected_start = new Date(Math.floor(Date.parse(now)/3600000)*3600000).toISOString();
     report.oldest_claim = null;
     if (!discovery || Date.parse(now) - Date.parse(discovery.at) > 7200000) report.alerts.push('DISCOVERY_OVERDUE');
-    if (report.inbox > this.maxPending || report.oldest_open_minutes > 120) report.alerts.push('QUEUE_OVERDUE');
+    if (report.inbox > this.maxPending) report.alerts.push('QUEUE_CAPACITY_EXCEEDED');
+    const claims = new Map();
     for (const entry of folders['10_CLAIMED']) {
-      if (!entry.name.endsWith('.input.json')) continue;
-      const id = entry.name.slice(0, -11), job = jobs.find(j => j.input.job_id === id);
-      if (!job || job.ack || folders['20_OUTPUT_READY'].some(e => e.name === `${id}.output.json`)) continue;
-      const key = `claim:${id}`, observed = await this.store.observation(key) || { at: now };
+      const match = /^(.*)\.(input|repair-(\d+))\.json$/.exec(entry.name);
+      if (!match) continue;
+      const generation = Number(match[3] || 0);
+      if (!claims.has(match[1]) || claims.get(match[1]).generation < generation) claims.set(match[1], { name: entry.name, generation });
+    }
+    for (const [id, entry] of claims) {
+      const job = jobs.find(j => j.input.job_id === id);
+      if (!job || terminal.has(job.status) || job.ack || await waitingForReview(this.store, job)
+        || folders['20_OUTPUT_READY'].some(e => e.name === `${id}.output.json`)) continue;
+      const key = `claim:${id}`, previous = await this.store.observation(key);
+      // Only an explicitly new repair generation starts a new observation;
+      // age alone can never release or reset an existing claim.
+      const observed = previous && (!previous.name || previous.name === entry.name)
+        ? { ...previous, name: entry.name } : { at: now, name: entry.name };
       await this.store.observe(key, observed);
       if (!report.oldest_claim || observed.at < report.oldest_claim.at) report.oldest_claim = { job_id: id, at: observed.at };
       if (Date.parse(now) - Date.parse(observed.at) > 7200000) report.alerts.push(`STALE_CLAIM:${id}`);
       // Never reset a claim from age alone; a slow worker could still own it.
     }
+    report.oldest_claim_minutes = report.oldest_claim ? Math.max(0, (Date.parse(now) - Date.parse(report.oldest_claim.at)) / 60000) : 0;
+    report.review_pending = open.filter(j => j.publication_gate?.status === 'needs_second_pass').length;
+    report.review_required = open.filter(j => ['needs_review','blocked'].includes(j.publication_gate?.status)).length;
+    if (report.review_required) report.alerts.push('EDITORIAL_REVIEW_REQUIRED');
     if (report.errors) report.alerts.push('QUARANTINED_JOBS');
     for (const entry of folders['20_OUTPUT_READY'].filter(e => e.name.endsWith('.output.json'))) {
       const id = entry.name.slice(0,-12), job = await this.store.get(id);
       if (!job) { report.alerts.push(`UNKNOWN_OUTPUT:${entry.name}`); continue; }
-      const key = `output:${id}`, observed = await this.store.observation(key) || { at: now };
-      await this.store.observe(key, observed);
-      if (!job.ack && Date.parse(now) - Date.parse(observed.at) > 7200000) report.alerts.push(`OUTPUT_OVERDUE:${id}`);
+      if (job.status === 'correction_prepared') continue;
+      const observed = await observeOutput(this.store, job, now);
+      if (!job.ack && !terminal.has(job.status) && !await waitingForReview(this.store, job)
+        && Date.parse(now) - Date.parse(observed.at) >= 600000) report.alerts.push(`OUTPUT_OVERDUE:${id}`);
     }
     Object.assign(report, await this.store.observation('completion-metrics') || { completed: 0, average_queue_minutes: null, last_publication_at: null });
     await this.store.observe('monitor', report);

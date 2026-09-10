@@ -17,7 +17,7 @@ export function bridgeSession(env = process.env) {
     const chunks = []; let size = 0;
     for await (const chunk of response.body) { size += chunk.length; if (size > 24 * 1024 * 1024) throw new Error('BRIDGE_RESPONSE_TOO_LARGE'); chunks.push(chunk); }
     let result; try { result = JSON.parse(Buffer.concat(chunks)); } catch { throw Object.assign(new Error('BRIDGE_REMOTE_INVALID_RESPONSE'), { retryable: response.status >= 500 }); }
-    if (!response.ok || !result.ok) throw Object.assign(new Error(result.error || 'BRIDGE_REMOTE_UNAVAILABLE'), { retryable: response.status >= 500 });
+    if (!response.ok || !result.ok) throw Object.assign(new Error(result.error || 'BRIDGE_REMOTE_UNAVAILABLE'), { retryable: response.status >= 500, ...(Number.isFinite(result.retry_after_seconds) ? { retry_after_seconds: result.retry_after_seconds } : {}) });
     return result.result;
   }
   const store = Object.fromEntries(['acquire','get','put','all','observe','observation','release'].map(op => [op, (...args) => request(`store.${op}`, args)]));
