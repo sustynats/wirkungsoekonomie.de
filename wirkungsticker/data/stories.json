@@ -1,7 +1,126 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-10T09:57:19.267Z",
+  "updated_at": "2026-09-10T10:07:22.952Z",
   "stories": [
+    {
+      "story_id": "wt-ca63a1cdb308ce8e",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ca63a1cdb308ce8e-25493544e3482c92-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ca63a1cdb308ce8e-11153376b52a4102-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ca63a1cdb308ce8e-f692c846e49a468a-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-ca63a1cdb308ce8e-3158645cdc129cad-source.png",
+          "alt_text": "Neutrale Illustration zweier Gesprächstische vor einer abstrahierten Landtagssilhouette."
+        }
+      },
+      "slug": "regierungsbildung-in-sachsen-anhalt-bsw-will-gesprache-mit-afd-aufnehmen-08ce8e",
+      "title": "Sachsen-Anhalt: BSW beschließt Gespräche mit der AfD",
+      "source_summary": "MDR berichtet, der BSW-Landesvorstand in Sachsen-Anhalt habe sich am Mittwochabend einstimmig dafür ausgesprochen, Gespräche mit der AfD aufzunehmen. Ein Sprecher nannte Energieversorgung, Bildung und Friedenspolitik als vorgesehene Gesprächsthemen. ZDFheute berichtet ebenfalls, dass das BSW Sondierungsgespräche mit der AfD führen will.\n\nCDU, SPD, Grüne und Linke hatten Gesprächsangebote der AfD laut den Beiträgen abgelehnt. Ein Beschluss zu Gesprächen ist noch keine Koalition, keine Regierungsbildung und keine inhaltliche Vereinbarung. Die Quellen stammen aus unterschiedlichen Medienhäusern; ihre Unabhängigkeit voneinander ist im übergebenen Datensatz jedoch nicht ausdrücklich verifiziert.",
+      "summary": "MDR und ZDFheute berichten, dass das BSW in Sachsen-Anhalt Gespräche mit der AfD aufnehmen will. Ein Gesprächsbeschluss ist noch keine Koalition oder Regierungsvereinbarung.",
+      "detail_summary": "Der BSW-Landesvorstand hat sich nach MDR-Angaben für Gespräche mit der AfD ausgesprochen; ZDFheute berichtet ebenfalls über geplante Sondierungen. Damit ändert sich die tatsächlich genutzte Verhandlungslandschaft nach der Landtagswahl. Welche Inhalte vereinbart werden, ob daraus Unterstützung oder eine Regierungsoption entsteht und wer später Verantwortung übernimmt, ist offen. Für Mensch und Planet ist aus dem Gesprächsbeschluss allein keine Zustandsänderung belegt. Demokratisch ist der Vorgang hoch relevant, seine Wirkungsrichtung hängt aber von transparenten Verfahren, konkreten Vereinbarungen und späteren parlamentarischen Entscheidungen ab.",
+      "why_relevant": "Der Beschluss verändert die realen Gesprächs- und Regierungsbildungsoptionen nach der Landtagswahl.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_post",
+      "importance": "sehr hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Der Gesprächsbeschluss allein erzeugt keine belegte Veränderung von Lebenslagen oder sozialen Schutzgütern.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Der Gesprächsbeschluss allein erzeugt keine belegte Umweltzustandsänderung.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Der Beschluss verändert politische Verhandlungsoptionen und damit den Prozess der Regierungsbildung; seine demokratische Wirkungsrichtung hängt von Inhalt, Transparenz und Ergebnis der Gespräche ab.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-10T10:07:22.952Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T04:00:00.000Z",
+      "last_updated": "2026-09-10T10:07:22.952Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-01fa06d97ce216437bc5",
+      "case_file": null,
+      "source_published_at": "2026-09-09T19:17:10.000Z",
+      "published_at": "2026-09-10T10:07:22.952Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob und wann konkrete Gespräche stattfinden und ob daraus Vereinbarungen entstehen.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigter Gesprächstermin oder veröffentlichte Ergebnisse.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d03aceff1556a80a",
+          "announced_at": "2026-09-09T19:17:10.000Z",
+          "follow_up_date": "2026-09-17T10:07:22.952Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/bsw-afd-sondierung-siegmund-regierungsbildung-sachsen-anhalt-wahl-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T20:14:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/bsw-gespraeche-afd-100,zusammenarbeit-koalition-regierung-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T19:17:10.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-32b3751a955beeba",
       "title_image": {
