@@ -4,6 +4,7 @@ import { numericEvidenceReceipt, persistedNumericEvidence } from "../../scripts/
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import fs from "node:fs";
+import {syntheticPotentialAssessment} from './fixtures/impact21.mjs';
 import {
   assertSafeFeedUrl,
   budgetStage,
@@ -46,6 +47,14 @@ const source = {
   access: { status: "public", cost_usd: 0, article: "bounded_public_text" },
 };
 
+test('structured pathway explanations have a separate bounded budget from the short news text',()=>{
+ const story=candidate(),a=validAnalysis();
+ a.impact_assessment=JSON.parse(JSON.stringify(syntheticPotentialAssessment()).replaceAll('"official"','"official-test"'));
+ a.impact_assessment.dimensions.human.primary_paths[0].limitations='Ausführlich dokumentierte Wissensgrenze im synthetischen Test. '.repeat(320);
+ const errors=validateAnalysis(a,story);assert.equal(errors.includes('AI_ANALYSIS_TOO_LARGE'),false);assert.equal(errors.includes('IMPACT_ASSESSMENT_TOO_LARGE'),false);
+ a.impact_potential='Überlanger Lesertext. '.repeat(1000);assert.ok(validateAnalysis(a,story).includes('AI_ANALYSIS_TOO_LARGE'));
+ a.impact_assessment.dimensions.human.primary_paths[0].limitations='x'.repeat(180001);assert.ok(validateAnalysis(a,story).includes('IMPACT_ASSESSMENT_TOO_LARGE'));
+});
 test("Large multi-source prompts retain identities and exact evidence under the Oracle limit", () => {
   const sources=Array.from({length:12},(_,n)=>({source_id:`source-${n}`,url:`https://example.org/${n}`,title:`Originalbericht Nummer ${n}`,summary:"Eine neue Entscheidung wird anhand konkreter Quellen eingeordnet.",article_excerpt:Array.from({length:80},(_,j)=>`Absatz ${j}: Die Quelle ${n} berichtet über belegte Einzelheiten dieser Entscheidung und nennt ihre Grenzen.`).join(" ")}));
   const story={story_id:"wt-test",title:"Neue Entscheidung",sources,claims:[]};

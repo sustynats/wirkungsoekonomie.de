@@ -1320,7 +1320,10 @@ export function validateAnalysis(analysis, story, options = {}) {
   if (maxSharedWordRun(analysis?.summary || "", rawSourceText) >= 18) errors.push("AI_EXCESSIVE_SOURCE_COPY");
   if (maxSharedWordRun(analysis?.source_summary || "", rawSourceText) >= 24) errors.push("AI_EXCESSIVE_SOURCE_SUMMARY_COPY");
   if (maxSharedWordRun(analysis?.detail_summary || "", rawSourceText) >= 18) errors.push("AI_EXCESSIVE_DETAIL_SOURCE_COPY");
-  if (text.length > 18000) errors.push("AI_ANALYSIS_TOO_LARGE");
+  // The complete structured MPD assessment has its own bounded domain budget.
+  // Keep the reader-text limit; source/factor explanations are not a news lead.
+  const {impact_assessment: _impact, ...readerAnalysis} = analysis || {};
+  if (collectStrings(readerAnalysis).join(" ").length > 18000) errors.push("AI_ANALYSIS_TOO_LARGE");
   return [...new Set(errors)];
 }
 

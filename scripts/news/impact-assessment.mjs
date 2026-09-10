@@ -81,6 +81,7 @@ export function impactClaimLedger(assessment, sources = [], date = null) {
 // verdict. A low-evidence but sourced potential can retain magnitude five.
 export function impactAssessmentErrors(assessment, sources = [], { required = false, version = IMPACT_VERSION } = {}) {
   if (!assessment) return required ? ['IMPACT_ASSESSMENT_REQUIRED'] : [];
+  if (JSON.stringify(assessment).length > 180000) return ['IMPACT_ASSESSMENT_TOO_LARGE'];
   const errors = [], fail = code => errors.push(code);
   const sourceIds = new Set(sources.map(source => source.source_id));
   const grounded = ids => Array.isArray(ids) && ids.length > 0 && ids.every(id => typeof id === 'string' && sourceIds.has(id));
