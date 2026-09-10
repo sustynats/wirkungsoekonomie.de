@@ -7,6 +7,8 @@ import path from 'node:path';
 import { hash, bridgePath, parsePacket } from './contract.mjs';
 import { IMPACT_VERSION, IMPACT_CONTRACT_FILE, IMPACT_RULE, IMPACT_SCHEMA, IMPACT_DEFS, impactAssessmentErrors, impactClaimLedger } from '../impact-assessment.mjs';
 import { assessmentBasis } from '../migrate-impact-assessments.mjs';
+import { publicImpactAssessment } from '../impact-release.mjs';
+import { createTitleImagePipeline, publicTitleImage } from '../title-image/pipeline.mjs';
 
 export const IMPACT_JOB_TYPE = 'impact_reassessment';
 export const impactOutputSchema = {
@@ -103,7 +105,12 @@ export function applyImpactOutput(output, job, current, now, { researchSources =
   return record;
 }
 
-export async function importImpactJobs(bridge, root, now) {
+export function impactMustStayPrivate(bridge, job, record) {
+  return bridge.stageOnly !== false || job.input.test_only || job.input.binding.kind !== 'story'
+    || record?.manual_authority || record?.manual_only || record?.format === 'book_review' || Boolean(record?.book);
+}
+
+export async function importImpactJobs(bridge, root, now, {semanticReview = ensureSemanticReview, prepareImage = createTitleImagePipeline({root,allowGeneration:false})} = {}) {
   const catalogs = [['stories.json', 'stories'], ['editorial-analyses.json', 'analyses']].map(([file, key]) => ({ file: path.join(root, 'data/news', file), key }));
   for (const c of catalogs) c.data = JSON.parse(fs.readFileSync(c.file, 'utf8'));
   const names = new Set((await bridge.transport.list('20_OUTPUT_READY')).map(e => e.name)), results = [];
@@ -117,13 +124,23 @@ export async function importImpactJobs(bridge, root, now) {
       assertImpactBinding(output, job, current, now);
       let checked = output, researchSources = [];
       if (output.decision.status === 'publish') {
-        const gate = await ensureSemanticReview(bridge, job, output, current, output.impact_assessment, now);
+        const gate = await semanticReview(bridge, job, output, current, output.impact_assessment, now);
         if (gate.status !== 'ready') continue;
         checked = { ...output, impact_assessment: gate.assessment };
         const originalIds = new Set((current.impact_sources||[]).map(s=>s.source_id));
         researchSources = (gate.record?.impact_sources||[]).filter(s=>!originalIds.has(s.source_id));
       }
-      const record = applyImpactOutput(checked, job, current, now, {researchSources}), staged = true; // 2.1 backfill is promoted as a complete validated catalog.
+      const record = applyImpactOutput(checked, job, current, now, {researchSources});
+      const staged = Boolean(impactMustStayPrivate(bridge, job, record));
+      if (record && !staged) {
+        // Release one complete, independently reviewed profile with its card.
+        // This does not enable the new semantics for unreviewed legacy records.
+        if (!publicImpactAssessment(record)) throw Error('BRIDGE_REVIEWED_PROFILE_NOT_READY');
+        const image = await prepareImage(record);
+        if (!['og','wide','square'].every(k => publicTitleImage(image.title_image)?.[k]))
+          throw Object.assign(Error('BRIDGE_CARD_RENDER_PENDING'), {retryable:true});
+        record.title_image = image.title_image;
+      }
       if (record) record.impact_import.output_hash = hash(output);
       job.accepted = { job_id: job.input.job_id, decision: output.decision.status, impact: true,
         record: job.input.binding.kind === 'story' ? record : null, editorial: job.input.binding.kind === 'editorial' ? record : null,
