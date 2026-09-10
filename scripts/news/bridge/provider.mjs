@@ -139,7 +139,13 @@ export class DropboxChatGPTBridgeProvider {
     return results;
   }
   async finalize(stories, now, { committed = false, editorials = [] } = {}) {
-    for (const job of await this.store.all()) {
+    // ACK/archive work must not monopolize the same lock needed to pick up news.
+    // Resume durably on the next ordinary importer run; waiting is not an error.
+    const limit=Math.min(12,Math.max(1,this.maxJobs)),deadline=Date.now()+90000;
+    let ackAttempts=0,archiveAttempts=0;
+    const jobs=(await this.store.all()).sort((a,b)=>Date.parse(b.accepted_at||b.created_at)-Date.parse(a.accepted_at||a.created_at));
+    for (const job of jobs) {
+      if(ackAttempts>=limit||Date.now()>=deadline)break;
       if (job.status !== 'accepted') continue;
       if (!retryDue(job, 'ack', now)) continue;
       const item = job.accepted;
@@ -156,6 +162,7 @@ export class DropboxChatGPTBridgeProvider {
         url: !item.staged && article ? `https://wirkungsoekonomie.de/wirkungsticker/${item.editorial ? 'analyse/' : ''}${article.slug}/` : null,
         output_hash: item.output_hash, test_only: job.input.test_only };
       try {
+        ackAttempts++;
         job.ack = ack; await this.store.put(job);
         await this.transport.writeAtomic(bridgePath('30_ACK', `${job.input.job_id}.ack.json`), ack);
         job.status = 'acknowledged'; job.completed_at = now; job.output_imported_at = now;
@@ -167,10 +174,12 @@ export class DropboxChatGPTBridgeProvider {
     }
     // Retry archival independently of import. ACK remains as completion receipt.
     for (const job of await this.store.all()) {
+      if(archiveAttempts>=Math.min(4,limit)||Date.now()>=deadline)break;
       if (job.status !== 'acknowledged' || job.archived_at) continue;
       if (!retryDue(job, 'archive', now)) continue;
       const id = job.input.job_id;
       try {
+      archiveAttempts++;
       for (const correction of job.corrections || []) for (const folder of ['00_INBOX','10_CLAIMED']) await this.transport.archive(bridgePath(folder, `${id}.repair-${correction.attempt}.json`), id, job.completed_at);
       for (const [folder, suffix] of [['00_INBOX','input.json'],['10_CLAIMED','input.json'],['20_OUTPUT_READY','output.json'],['20_OUTPUT_READY','visual.json'],['20_OUTPUT_READY','title.png'],['20_OUTPUT_READY','title.webp']]) {
         await this.transport.archive(bridgePath(folder, `${id}.${suffix}`), id, job.completed_at);

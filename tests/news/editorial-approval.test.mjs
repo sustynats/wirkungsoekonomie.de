@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {DatabaseSync} from 'node:sqlite';
 import {EditorialApproval,editorialPreviewHash} from '../../scripts/news/bridge/editorial-approval.mjs';
+import {editorialAnalysisPage} from '../../scripts/news/build.mjs';
 const owner='1206956406805102593';
 const job={input:{job_id:'wt_20260910T000000Z_aaaaaaaaaaaaaaaaaaaaaaaa'},intake:{owner}};
 const draft=()=>({format:'listened',source_media:{show:'Testshow',episode_title:'Eine Testfolge',original_release_date:'2026-09-10',original_url:'https://example.org/episode',hosts:[],guests:[]},title:'Ein geprüfter Gedanke zur gemeinsamen Zukunft',markdown:'## Ein Gedankenentwurf\n\nDieser ausdrücklich fiktive Testtext prüft ausschließlich den Freigabeablauf. Er enthält keine persönliche Meinung oder Erfahrung der Autorin.',sources:[{url:'https://example.org/episode',title:'Originalfolge',publisher:'Test-Publisher'}],checks:{source_binding:true,editorial_validation:true,personal_experiences_invented:false}});
@@ -38,4 +39,21 @@ test('holds and skipped contributions do not publish and audit survives every de
 test('a manual news preview cannot bypass native analysis with model-declared checks',()=>{
  const s=setup();assert.throws(()=>s.stage(job,{...draft(),format:'news'}),/NATIVE_REVIEW_REQUIRED/);
  assert.throws(()=>s.stage(job,{...draft(),format:'news',news_record:{published:true,analysis:{}}}),/NATIVE_REVIEW_REQUIRED/);
+});
+
+test('approved books, opinion and listening/viewing formats keep reader navigation and methodology links',()=>{
+ for(const format of ['book_review','opinion_analysis','listened','watched']){
+  const s=setup(),p={...draft(),format},r=s.stage(job,p);
+  s.decide(owner,job.input.job_id,{action:'APPROVE',preview_hash:r.preview_hash});
+  const edition={...s.claimPublications()[0],reading_time_minutes:1};
+  const html=editorialAnalysisPage(edition,{}, {nextItem:{href:'../next-analysis/',title:'Nächste Analyse'}});
+  assert.match(html,/data-news-reader="analysis"/);
+  assert.match(html,/news-story-pagination__link--next" href="\.\.\/next-analysis\/"/);
+  assert.match(html,/data-news-reader-back/);
+  assert.match(html,/data-news-swipe-hint/);
+  for(const href of ['../../../so-wirkt-wirkungsoekonomie/','../../../methodik/','../../#methodik'])assert.ok(html.includes('href="'+href+'"'));
+  assert.ok(!html.includes('aria-label="Tragweite für Mensch:'));
+  assert.ok(!editorialAnalysisPage(edition).includes('news-story-pagination__link--next'));
+  s.db.close();
+ }
 });
