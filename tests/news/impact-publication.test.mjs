@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import { deriveImpactPresentation, impactAssessmentErrors } from '../../scripts/news/impact-assessment.mjs';
 import { derivePublicationStatus, semanticIssues, impactContextRequirements, SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import { migrateImpactCatalog, persistedImpactAssessmentErrors, assessmentBasis } from '../../scripts/news/migrate-impact-assessments.mjs';
-import { applyImpactOutput, impactReassessmentInput } from '../../scripts/news/bridge/impact.mjs';
+import { applyImpactOutput, impactReassessmentInput, discoverImpactJobs } from '../../scripts/news/bridge/impact.mjs';
 import { ensureSemanticReview, importSemanticReviews } from '../../scripts/news/bridge/semantic-review.mjs';
 import { bridgePath, hash } from '../../scripts/news/bridge/contract.mjs';
 import { assertAutomaticImpactTransport } from '../../scripts/news/processing-mode.mjs';
@@ -12,6 +12,24 @@ const reviews = JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impa
 const catalog = JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
 const readyReview = () => ({ status:'ready', checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im unabhängigen Prüfpass am jeweiligen Quellbeleg und Wirkpfad geprüft.'}])), findings:[] });
 const bsw = () => { const r=reviews[0], record=structuredClone(catalog.find(s=>s.story_id===r.story_id));record.impact_sources=r.assessment_sources;return {a:structuredClone(r.impact_assessment),record}; };
+
+test('backlog handoff fills a larger batch while reserving current-news and second-review capacity',async()=>{
+  const records=Array.from({length:40},(_,i)=>({...structuredClone(bsw().record),story_id:`wt-batch-${i}`}));
+  const jobs=new Map(),observations=new Map(),files=new Map();
+  const bridge={maxPending:48,store:{all:async()=>[...jobs.values()],get:async id=>jobs.get(id),put:async j=>jobs.set(j.input.job_id,j),
+    observe:async(k,v)=>observations.set(k,v),observation:async k=>observations.get(k)},
+    transport:{writeAtomic:async(k,v)=>{assert.equal(files.has(k),false);files.set(k,v);}},failure:async(_j,_step,e)=>{throw e;}};
+  const now='2026-09-10T12:00:00Z';
+  assert.equal((await discoverImpactJobs(bridge,records,now)).length,18,'18 first passes plus 18 later reviews leave 12 slots free');
+  assert.equal((await discoverImpactJobs(bridge,records,now)).length,0,'a manual rerun neither duplicates nor exceeds capacity');
+  const parent=[...jobs.values()][0];
+  jobs.set('review',{input:{job_id:'review',job_type:'impact_semantic_review',parent_job_id:parent.input.job_id},status:'queued'});
+  assert.equal((await discoverImpactJobs(bridge,records,now)).length,0,'the actual review consumes its reserved slot, not another first pass');
+  parent.status='acknowledged';parent.semantic_review={};jobs.get('review').status='acknowledged';
+  await bridge.store.observe(`impact-checkpoint:${parent.candidate.story_id}:${assessmentBasis(parent.candidate)}`,{status:'publish'});
+  assert.equal((await discoverImpactJobs(bridge,records,now)).length,1,'completed work immediately frees the next discovery batch slot');
+  assert.equal(files.size,19);assert.equal(observations.get('impact-reassessment').reserved_news_slots,12);
+});
 
 test('the legacy automatic API path cannot reopen without an independent review transport',()=>{
   assert.throws(()=>assertAutomaticImpactTransport(),e=>e.message==='IMPACT_API_REVIEW_TRANSPORT_UNAVAILABLE' && e.providerNotCalled && e.requestAttempts===0);
