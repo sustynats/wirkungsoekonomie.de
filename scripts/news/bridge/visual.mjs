@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { visualGenerationProvider } from '../processing-mode.mjs';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
@@ -25,7 +26,7 @@ export function visualContext(candidate, stories) {
       'Auf Smartphone prüfen: Fokus, Motivpassung, Anatomie und Objekte. Menschen, Planet und Demokratie nicht zwanghaft symbolisieren.',
       'Vorhandene Bilder bei fehlender semantischer Beschreibung ansehen; zugehörige Überschrift ist keine Bildbeschreibung.',
       'Bei Qualitätsfehlern höchstens zwei Regenerierungen (drei Versuche insgesamt); danach visual status failed, keine Ersatzprovider.',
-      'title.png und visual.json zuerst vollständig hochladen; output.json als letztes Freigabesignal. input_hash und image_sha256 in visual.json binden die Dateien.'],
+      visualGenerationProvider() === 'higgsfield' ? 'Bridge-3: nur visual_brief im output.json; kein ChatGPT-PNG und kein visual.json. output.json atomar zuletzt schreiben. Higgsfield rendert serverseitig, Wirkungskarte bei Fehlschlag.' : 'title.png und visual.json zuerst vollständig hochladen; output.json als letztes Freigabesignal. input_hash und image_sha256 in visual.json binden die Dateien.'],
   };
 }
 

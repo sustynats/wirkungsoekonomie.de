@@ -17,7 +17,7 @@ export function visualGenerationProvider(env = process.env) {
   const mode = processingMode(env);
   const provider = env.VISUAL_GENERATION_PROVIDER || (mode === 'api' ? 'higgsfield' : mode === 'disabled' ? 'disabled' : 'chatgpt_bridge');
   if (!['higgsfield', 'chatgpt_bridge', 'disabled'].includes(provider)) throw new Error('VISUAL_PROVIDER_INVALID');
-  if (mode === 'dropbox_chatgpt_bridge' && provider !== 'chatgpt_bridge' || mode === 'disabled' && provider !== 'disabled') throw new Error('VISUAL_PROVIDER_MODE_CONFLICT');
+  if (mode === 'dropbox_chatgpt_bridge' && !['chatgpt_bridge', 'higgsfield'].includes(provider) || mode === 'disabled' && provider !== 'disabled') throw new Error('VISUAL_PROVIDER_MODE_CONFLICT');
   return provider;
 }
 

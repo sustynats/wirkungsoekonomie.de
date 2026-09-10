@@ -1,3 +1,4 @@
+import { visualGenerationProvider } from '../processing-mode.mjs';
 // Lightweight polling: output listing and private journal only; no AI or build.
 export async function outputStatus(store, transport, now) {
   let entries;
@@ -15,7 +16,7 @@ export async function outputStatus(store, transport, now) {
     if (['quarantined','archive_failed'].includes(job.status) || job.archived_at) continue;
     const observation = await store.observation(`output:${id}`) || { at: now };
     await store.observe(`output:${id}`, observation);
-    if (names.has(`${id}.title.png`) !== names.has(`${id}.visual.json`)) continue;
+    if (visualGenerationProvider() === 'chatgpt_bridge' && names.has(`${id}.title.png`) !== names.has(`${id}.visual.json`)) continue;
     ready.push(id);
   }
   for (const job of await store.all()) {

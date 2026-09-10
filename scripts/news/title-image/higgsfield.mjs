@@ -95,7 +95,9 @@ export function createHiggsfieldAdapter({
       const refresh = story.refresh_prompt_version;
       if (refresh && refresh !== C.prompt_version) throw imageError("HIGGSFIELD_REFRESH_VERSION_INVALID");
       const currentJournal = path.join(folder, "source-visual.json");
-      const journal = refresh ? path.join(folder, `source-visual-${digest(refresh).slice(0, 16)}.json`) : currentJournal;
+      const journal = story.visual_brief
+        ? path.join(folder, `source-visual-bridge3-${digest(prompt).slice(0, 16)}.json`)
+        : refresh ? path.join(folder, `source-visual-${digest(refresh).slice(0, 16)}.json`) : currentJournal;
       const promote = (record) => {
         if (!refresh) return;
         if (fs.existsSync(currentJournal)) {
@@ -214,6 +216,7 @@ export function createHiggsfieldAdapter({
           catch (error) { if (attempt || error.code !== "IMAGE_DOWNLOAD_FAILED") throw error; }
           await new Promise((resolve) => setTimeout(resolve, 1200));
         }
+        if (Math.abs(asset.width / asset.height - 16 / 9) > 0.025) throw imageError("IMAGE_FORMAT_INVALID");
         const filename = `source-${asset.sha256}.${asset.extension}`;
         fs.writeFileSync(path.join(folder, filename), asset.bytes, { mode: 0o600 });
         record = { ...record, status: "generated", file: filename, sha256: asset.sha256, width: asset.width, height: asset.height, mime: asset.mime };

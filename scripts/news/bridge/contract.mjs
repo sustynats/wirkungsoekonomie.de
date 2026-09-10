@@ -29,6 +29,13 @@ export const visualSchema = object({
   editorial_safety: object({ photorealistic_event_claim: { const: false }, misleading_documentary_impression: { const: false }, warnings: arr(str(2000)) }),
   input_hash: { ...text(64), pattern: '^[a-f0-9]{64}$' }, image_sha256: { ...text(64), pattern: '^[a-f0-9]{64}$' },
 });
+export const visualBriefSchema = object({
+  required: { type: 'boolean' }, visual_type: { const: 'editorial_symbolic_image' },
+  concept: text(4000), subjects: { ...arr(str(500)), maxItems: 12 }, symbols: { ...arr(str(500)), maxItems: 12 },
+  avoid: { ...arr(str(500)), maxItems: 20 }, location_context: nullableString,
+  contains_real_person: { const: false }, documentary_impression_forbidden: { const: true },
+  text_in_image: { const: false }, caption: text(1500), alt_text: text(1000), editorial_notes: str(4000),
+});
 const source = object({ source_id: text(200), publisher: text(500), title: text(1000), url: { ...text(4000), format: 'https-url' },
   published_at: nullableString, retrieved_at: timestamp, source_type: text(100), is_primary_source: { type: 'boolean' },
   text: str(60000), excerpt: str(20000), language: text(20) });
@@ -50,6 +57,7 @@ const dimension = object({ direction: text(100), analysis: text(), evidence: tex
 // The compact exchange schema is an envelope, not a replacement for the existing
 // production analysis contract. Publish/merge additionally require that contract.
 export const outputSchema = object({
+  visual_brief: visualBriefSchema,
   schema_version: { const: '1.0' }, job_id: { ...text(80), pattern: JOB_ID.source }, processed_at: timestamp,
   input_hash: { ...text(64), pattern: '^[a-f0-9]{64}$' },
   decision: object({ status: { enum: ['publish', 'hold', 'reject', 'merge'] }, reason: text(), merge_into: nullableString, priority: { type: 'integer', minimum: 0, maximum: 100 } }),
