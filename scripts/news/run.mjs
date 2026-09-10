@@ -45,6 +45,7 @@ import { EVENT_RELEVANCE_VERSION, EVENT_EDITORIAL_POLICY_VERSION, needsEventPoli
 import { observedMajorEvents, missedNewsRechecks, coverageAudit } from './coverage-audit.mjs';
 import { runActiveDiscovery, agendaSignal } from './active-discovery.mjs';
 import { processingMode, visualGenerationProvider } from './processing-mode.mjs';
+import { createBridgeRuntime } from './bridge/runtime.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = EVENT_RELEVANCE_VERSION;
@@ -890,7 +891,7 @@ export async function runWirkungsticker(options = {}) {
   let bridge = options.bridgeProvider;
   const bridgePhase = process.env.WOEK_NEWS_BRIDGE_PHASE || 'combined';
   if (mode === 'dropbox_chatgpt_bridge' && !options.dryRun) {
-    bridge ||= (await import('./bridge/runtime.mjs')).createBridgeRuntime();
+    bridge ||= createBridgeRuntime();
     await bridge.store.acquire(options.now || new Date().toISOString(), bridgePhase);
   }
   const changedStoryIds = new Set();
