@@ -134,3 +134,12 @@ test("real git race merges different stories and rebuilds their common publicati
   assert.equal(cmd(worker, ["show", "origin/main:reports/wirkungsticker-source-integrity.json"]), "editor A / worker B");
   assert.equal(cmd(worker, ["status", "--porcelain"]).trim(), "");
 });
+
+test('rebase verification isolates mocked unit-test mode while all real generators retain the bridge cost guard', async () => {
+  const { rebuildPublication } = await import('../../scripts/news/publish-git.mjs');
+  const env={WIRKUNGSTICKER_PROCESSING_MODE:'dropbox_chatgpt_bridge',VISUAL_GENERATION_PROVIDER:'higgsfield'},calls=[];
+  await rebuildPublication({env,run:async(command,args,options)=>{calls.push({command,args,env:options.env});return {stdout:''};}});
+  assert.equal(calls[0].args[1],'news:test');assert.equal(calls[0].env.WIRKUNGSTICKER_PROCESSING_MODE,'api');
+  assert.ok(calls.length>1);assert.ok(calls.slice(1).every(c=>c.env.WIRKUNGSTICKER_PROCESSING_MODE==='dropbox_chatgpt_bridge'));
+  assert.equal(env.WIRKUNGSTICKER_PROCESSING_MODE,'dropbox_chatgpt_bridge');
+});

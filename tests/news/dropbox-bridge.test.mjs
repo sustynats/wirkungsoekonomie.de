@@ -360,3 +360,26 @@ test('test-only jobs and mismatched bindings never enter automatic correction',a
     assert.equal(store.get(job.input.job_id).status,'quarantined');assert.equal(store.get(job.input.job_id).corrections,undefined);
   }
 });
+
+test('Dropbox archive skips missing assets and reuses confirmed folders without weakening content conflicts',async()=>{
+  const transport=new DropboxTransport({credentials:{}}),files=new Map(),calls=[];
+  transport.request=async(op,args)=>{
+    calls.push({op,...args});
+    if(op==='files/get_metadata'){if(!files.has(args.path))throw Error('BRIDGE_DROPBOX_NOT_FOUND');return {'.tag':files.get(args.path)===null?'folder':'file'};}
+    if(op==='files/create_folder_v2'){files.set(args.path,null);return {};}
+    if(op==='files/move_v2'){assert.ok(!files.has(args.to_path));files.set(args.to_path,files.get(args.from_path));files.delete(args.from_path);return {};}
+    if(op==='files/download')return Buffer.from(files.get(args.path));
+    throw Error('UNEXPECTED_OPERATION');
+  };
+  const id='wt_20260910T061025Z_4f82582fd8434948adaf0bef',input=bridgePath('10_CLAIMED',`${id}.input.json`),output=bridgePath('20_OUTPUT_READY',`${id}.output.json`);
+  await transport.archive(output,id,now);assert.equal(calls.length,1);assert.equal(files.size,0);
+  files.set(input,'input');files.set(output,'output');
+  await transport.archive(input,id,now);const before=calls.length;
+  await transport.archive(output,id,now);
+  assert.equal(calls.slice(before).filter(c=>c.op==='files/get_metadata').length,2);
+  assert.equal(calls.filter(c=>c.op==='files/create_folder_v2').length,4);
+  files.set(output,'different output');
+  await assert.rejects(transport.archive(output,id,now),/BRIDGE_ARCHIVE_CONFLICT/);
+  assert.equal(files.get(output),'different output');
+  assert.ok([...files.entries()].some(([p,v])=>p.includes('/40_ARCHIVE/')&&v==='output'));
+});
