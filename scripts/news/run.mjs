@@ -316,7 +316,7 @@ export function refreshUnpublishedDraftTitle(candidate) {
   return candidate;
 }
 
-function pendingRecord(candidate, reason, now, qualityErrors = []) {
+export function pendingRecord(candidate, reason, now, qualityErrors = []) {
   const existing = candidate.existing_story;
   const sameAttempt = existing?.ai_retry?.fingerprint === retryInputFingerprint(candidate)
     && existing?.ai_retry?.version === AI_PROCESSING_VERSION;
@@ -338,7 +338,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
       pending_update: {
         detected_at: existing.pending_update?.detected_at || now,
         content_hash: candidate.content_hash,
-        sources: candidate.sources,
+        sources: candidate.sources.map(sourcePublicRecord),
         reason,
         quality_errors: qualityErrors,
         quality_retry_count: qualityRetryCount,
@@ -364,7 +364,7 @@ function pendingRecord(candidate, reason, now, qualityErrors = []) {
     first_seen: candidate.first_seen,
     last_updated: candidate.last_updated,
     topic: candidate.topic,
-    sources: candidate.sources,
+    sources: candidate.sources.map(sourcePublicRecord),
     claims: candidate.claims,
     content_hash: candidate.content_hash,
     published: false,

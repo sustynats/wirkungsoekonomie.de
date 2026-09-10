@@ -394,3 +394,17 @@ test('private test imports receive their immutable draft without adding it to ca
   const [result]=await provider.reconcile({},stories,later);assert.equal(result.staged,true);assert.deepEqual(stories,[]);
   await provider.finalize(stories,later);assert.equal(store.get(job.input.job_id).ack.status,'staged');
 });
+
+test('bridge pending drafts and updates retain source metadata but never persist transient article text',async()=>{
+  const {pendingRecord}=await import('../../scripts/news/run.mjs');
+  const draft=candidate();draft.sources[0].article_excerpt='Private research excerpt';draft.sources[0].evidence_segments=[{text:'Private segment'}];
+  for(const published of [false,true]){
+    const item={...draft,...(published?{existing_story:{...draft,published:true,sources:[{url:'https://example.org/original'}],analysis:{summary:'Existing publication'}}}:{})};
+    const before=structuredClone(item),result=pendingRecord(item,'BRIDGE_PENDING',now);
+    const sources=published?result.pending_update.sources:result.sources;
+    assert.equal(sources[0].url,draft.sources[0].url);assert.equal(sources[0].content_hash,draft.sources[0].content_hash);
+    assert.equal(Object.hasOwn(sources[0],'article_excerpt'),false);assert.equal(Object.hasOwn(sources[0],'evidence_segments'),false);
+    assert.deepEqual(item,before);
+    if(published)assert.deepEqual(result.analysis,item.existing_story.analysis);
+  }
+});
