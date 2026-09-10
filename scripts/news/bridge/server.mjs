@@ -65,7 +65,7 @@ const server = http.createServer(async (req, res) => {
     finish(200, { ok: true, result: result ?? null });
   } catch (error) {
     const code = /^[A-Z_0-9:.-]{3,100}$/.test(error.message || '') ? error.message : 'BRIDGE_OPERATION_FAILED';
-    finish(error.retryable ? 503 : 409, { ok: false, error: code });
+    finish(error.retryable ? 503 : 409, { ok: false, error: code, ...(Number.isFinite(error.retry_after_seconds) ? { retry_after_seconds: error.retry_after_seconds } : {}) });
   } finally { if (operationStarted) busy.delete(lane); }
 });
 server.requestTimeout = 180000;

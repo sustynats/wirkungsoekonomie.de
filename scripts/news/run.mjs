@@ -1,5 +1,6 @@
 import { migrateImpactAssessment } from './impact-assessment.mjs';
 import { createBridgeRuntime } from './bridge/runtime.mjs';
+import { fetchDiscoverySource } from './bridge/discovery-cache.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -926,6 +927,7 @@ export async function runWirkungsticker(options = {}) {
     schema_version: "1.2",
     processing_version: AI_PROCESSING_VERSION,
     processing_mode: mode,
+    bridge_phase: mode === 'dropbox_chatgpt_bridge' ? bridgePhase : null,
     trigger_type: process.env.GITHUB_EVENT_NAME === 'workflow_dispatch' ? 'manual' : 'scheduled',
     triggered_at: now,
     triggered_by: process.env.GITHUB_ACTOR || 'internal',
@@ -1009,9 +1011,11 @@ export async function runWirkungsticker(options = {}) {
     state.publication_decision_review_v1_at = now;
   }
 
-  const fetchResults = await mapLimit(dueSources, Number(process.env.WOEK_NEWS_FETCH_CONCURRENCY || 3), async (source) => {
+  const fetchResults = await mapLimit(dueSources, Number(process.env.WOEK_NEWS_FETCH_CONCURRENCY || 3), async (source) => fetchDiscoverySource({
+    store: bridge && !options.dryRun && bridgePhase !== 'import' ? bridge.store : null,
+    source, now, fetchSource: async cached => {
     const fetchResult = await fetchFeedWithRetry(
-      { ...datedSource(source, now), etag: state.source_status[source.source_id]?.etag, last_modified: state.source_status[source.source_id]?.last_modified, max_items: source.max_items || registry.policy.max_items_per_source },
+      { ...datedSource(source, now), etag: cached?.fetched.etag || state.source_status[source.source_id]?.etag, last_modified: cached?.fetched.last_modified || state.source_status[source.source_id]?.last_modified, max_items: source.max_items || registry.policy.max_items_per_source },
       registry.policy,
       options.fetchFeedImpl || fetchFeed,
       { delayImpl: options.fetchRetryDelayImpl },
@@ -1022,7 +1026,7 @@ export async function runWirkungsticker(options = {}) {
       .map((item) => reconcileSourceIdentity(item, source, registry));
     if (!source.allow_empty && !fetched.not_modified && !items.length && Number(state.source_status[source.source_id]?.items || 0) > 0) throw new Error("SOURCE_PARSER_DRIFT_OR_EMPTY_FEED");
     return { source, fetched, items, fetchAttempts: fetchResult.attempts };
-  });
+  } }));
 
   let allItems = [];
   for (let index = 0; index < fetchResults.length; index += 1) {
@@ -1042,21 +1046,22 @@ export async function runWirkungsticker(options = {}) {
     bumpSourceFunnel(sourceFunnel, source.source_id, "fetch_successes");
     bumpSourceFunnel(sourceFunnel, source.source_id, "feed_items", result.value.items.length);
     report.source_successes += 1;
+    if (result.value.cache_hit) report.source_package_cache_hits = Number(report.source_package_cache_hits || 0) + 1;
     if (result.value.fetched.not_modified) { report.sources_not_modified += 1; bumpSourceFunnel(sourceFunnel, source.source_id, 'not_modified'); }
     report.source_retry_attempts += Math.max(0, Number(result.value.fetchAttempts || 1) - 1);
     report.feed_entries_fetched += result.value.items.length;
     allItems.push(...result.value.items);
     state.source_status[source.source_id] = {
       ...previousStatus,
-      last_attempt: now,
-      attempts: Number(previousStatus.attempts || 0) + 1,
+      last_attempt: result.value.checked_at || now,
+      attempts: Number(previousStatus.attempts || 0) + (result.value.cache_hit ? 0 : 1),
       consecutive_failures: 0,
-      last_success: now,
+      last_success: result.value.checked_at || now,
       last_error: null,
       governance_hold_reason: null,
       governance_hold_until: null,
       feed_url: result.value.fetched.final_url,
-      items: result.value.fetched.not_modified ? previousStatus.items : result.value.items.length,
+      items: result.value.fetched.not_modified ? previousStatus.items ?? result.value.items.length : result.value.items.length,
       latest_item: result.value.items.map((item) => item.published_at).filter(Boolean).sort().at(-1) || previousStatus.latest_item || null,
       etag: result.value.fetched.etag,
       last_modified: result.value.fetched.last_modified,
@@ -1708,7 +1713,10 @@ export async function runWirkungsticker(options = {}) {
   report.source_health = registry.sources.map((source) => sourceHealth(source, state, now));
   report.source_coverage_status = isolatedSourceThrottleWithRecentCoverage(report)
     ? "isolated_throttle_with_recent_coverage" : sourceCoverageDegraded(report) ? "degraded" : "ok";
-  const sourceHealthDegraded = report.source_health.some((source) => ["disturbed", "stale"].includes(source.status));
+  // An import does not fetch sources. Preserve source diagnostics without
+  // reporting a completed import as a failed discovery run.
+  const sourceHealthDegraded = !(mode === 'dropbox_chatgpt_bridge' && bridgePhase === 'import')
+    && report.source_health.some((source) => ["disturbed", "stale"].includes(source.status));
   report.operational_status = report.ai_provider_degraded || sourceCoverageDegraded(report) || sourceHealthDegraded ? "degraded" : "ok";
   report.editorial_status = report.queue.editorial || report.source_integrity_holds.length ? "holds" : "clear";
   report.status = report.operational_status;
