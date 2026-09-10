@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { DropboxTransport, loadDropboxCredentials } from './dropbox.mjs';
+import { bridgePath, hash } from './contract.mjs';
+import { editorialOutputSchema } from './editorial.mjs';
+import { EDITORIAL_ANALYSIS_SCHEMA } from '../editorial-analysis.mjs';
+const root=fileURLToPath(new URL('../../../',import.meta.url));
+const config={schema_version:'1.0',version:'editorial-analysis-contract-1',base_contract:'contract-2026-09-10-bridge-3.json',output_schema:editorialOutputSchema,native_analysis_shape:EDITORIAL_ANALYSIS_SCHEMA,instructions:fs.readFileSync(new URL('../../../docs/news/BRIDGE-EDITORIAL.md',import.meta.url),'utf8')};
+const transport=new DropboxTransport({credentials:loadDropboxCredentials(process.env.WOEK_NEWS_DROPBOX_CREDENTIALS,root)});
+await transport.writeAtomic(bridgePath('98_CONFIG','editorial-analysis-contract-1.json'),config);
+console.log(JSON.stringify({file:'editorial-analysis-contract-1.json',sha256:hash(config)}));
