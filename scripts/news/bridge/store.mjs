@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
+import { recordProcessorThroughput } from './processor.mjs';
 
 // One authoritative private SQLite database on the existing Oracle host.
 // A separate SQLite write lock is held for the complete run: no expiring lease
@@ -51,6 +52,9 @@ export class BridgeStore {
     this.db.exec('BEGIN IMMEDIATE');
     try {
       this.db.prepare('INSERT INTO jobs VALUES (?, ?) ON CONFLICT(id) DO UPDATE SET body=excluded.body').run(job.input.job_id, JSON.stringify(job));
+      if (!existing || job.completed_at && !existing.completed_at) {
+        this.observe('processor-throughput', recordProcessorThroughput(this.observation('processor-throughput'), existing, job, new Date().toISOString()));
+      }
       if (job.completed_at && !existing?.completed_at) {
         const metrics = this.observation('completion-metrics') || { completed: 0, average_queue_minutes: 0, last_publication_at: null };
         metrics.average_queue_minutes = (metrics.average_queue_minutes * metrics.completed + (Date.parse(job.completed_at) - Date.parse(job.created_at)) / 60000) / (metrics.completed + 1);

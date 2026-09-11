@@ -17,7 +17,10 @@ Staging, unabhängig von der Produktionsfreigabe.
 während des ersten Abnahmetests an. Für Normalbetrieb gilt `true`; die Import-
 Prüfung bleibt unabhängig aktiv. Diese Startbremse verändert keine Publikationsgates.
 
-Discovery läuft um **:05/:20/:35/:50**, ChatGPT weiterhin **HH:00 Europe/Berlin**.
+Discovery läuft um **:05/:20/:35/:50**. Für ChatGPT gilt ab der geprüften Übergabe
+das Drei-Shard-Protokoll in [BRIDGE-PROCESSORS.md](BRIDGE-PROCESSORS.md).
+Der alte HH:00-Lauf bleibt bis zum bestandenen Test seines tatsächlichen
+Automation-Kontexts pausiert; ein erreichbarer Chat ersetzt diesen Nachweis nicht.
 Der unabhängige Import-Poller läuft **alle fünf Minuten**. Oracle prüft dabei nur
 `20_OUTPUT_READY` und das private Journal; erst fertige Pakete wecken den bestehenden
 GitHub-Importer. GitHub hat zusätzlich einen unabhängigen Fünf-Minuten-Zeitplan.
@@ -135,8 +138,10 @@ PNG-Anweisungen in diesen Inputs sind durch Bridge-3 ersetzt. Die Fehlerhistorie
 bleibt unverändert. Sumy wird ausschließlich privat neu abgeschlossen; erst nach
 PASS wird die normale Inbox freigegeben.
 
-Aktueller Rückschreibblocker: Der ChatGPT-Connector meldet bei Datei-Egress
-`BLOCKED_FILE_REFERENCE`. Der Stundenlauf ist deshalb von ChatGPT pausiert.
+Historischer Rückschreibblocker vom 10.09.: Ein ChatGPT-Kontext meldete bei Datei-Egress
+`BLOCKED_FILE_REFERENCE`. Das ist keine globale Aussage über alle heutigen Kontexte.
+Am 11.09. bestand der manuelle Redaktionskontext einen echten Read/Write/Readback-Test.
+Der Stundenlauf bleibt bis zum separaten Automation-Preflight pausiert.
 Ein zeitlich begrenzter manueller Transport ist erlaubt: ChatGPT gibt das vollständige
 JSON direkt im Gespräch aus; die Nutzerin reicht es an Codex weiter; Codex schreibt
 es atomar in dieselbe Dropbox-Output-Datei. Alle Importgates bleiben identisch.

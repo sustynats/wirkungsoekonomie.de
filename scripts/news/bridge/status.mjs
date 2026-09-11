@@ -60,6 +60,7 @@ export async function monitorStatus(store, now) {
   for(const id of poll?.ready||[]){const job=await store.get(id);if(job&&!job.ack&&!await waitingForReview(store,job)){const at=(await store.observation(`output:${id}`))?.at;if(at)detected.push(at);}}
   return { reachable:true, checked_at:now, poll_at:poll?.at||null, status:poll?.status||'PROCESSING_PENDING',
     open_count:open.length,
+    processor_health:await store.observation('processor-health') || null,
     discovery:await store.observation('discovery-report'),
     discovery_last_success:(await store.observation('discovery'))?.at||null,
     poll_error:await store.observation('poll-error'),

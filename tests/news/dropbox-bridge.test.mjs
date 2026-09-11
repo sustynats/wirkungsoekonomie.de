@@ -70,6 +70,20 @@ test('three synthetic events: stable retries, multiple sources in one job, no du
   await provider.enqueue(candidates,[],later,{testOnly:true});assert.equal(transport.writes,3);
   const changed=structuredClone(candidates[0]);changed.content_hash=hash('update');assert.notEqual(bridgeInput(changed,later).job_id,bridgeInput(candidates[0],now).job_id);
 });
+test('full soft queue retains normal candidates but admits current HIGH and updates in bounded batches',async t=>{
+  const {provider,store}=setup(t,{maxPending:1,maxJobs:2});
+  await provider.enqueue([candidate(1)],[],now);
+  const normal=candidate(2);
+  assert.equal((await provider.selectCandidates([normal])).length,0);
+  const high={...candidate(2),preanalysis:{internal_relevance_score:60,event_score:{priority:'HIGH'}}};
+  const update={...candidate(3),existing_story:{published:true,story_id:'old',analysis:{}}};
+  const selected=await provider.selectCandidates([normal,high,update]);
+  assert.equal(selected.length,2);
+  await provider.enqueue(selected,[],now);
+  assert.equal(store.all().length,3);
+  assert.ok(store.all().some(j=>j.input.job_type==='story_update'));
+  assert.equal((await provider.selectCandidates([high,update])).length,0,'active events remain deduplicated');
+});
 test('SQLite denies overlap and completed slot remains completed on repeated attempts',t=>{
   const {store,directory}=setup(t);store.acquire(now,'discovery');
   const second=new BridgeStore(path.join(directory,'queue.sqlite'));t.after(()=>second.close());

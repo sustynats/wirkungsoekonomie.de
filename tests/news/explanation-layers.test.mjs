@@ -92,6 +92,6 @@ test("Erklärungsebenen: eindeutige IDs, JSON-LD und erreichbare neue Lesepfade"
       assert.ok(html.includes('Persönliche Meinung und wirkungsökonomische Analyse'));
       assert.ok(html.includes('data-news-reader-back'));
       assert.ok(!html.includes('aria-label="Tragweite für Mensch:'));
-    } else { assert.ok(html.includes('Wir überarbeiten die Wirkungsprofile')); assert.ok(!html.includes('aria-label="Tragweite für Mensch:')); }
+    } else { assert.ok(!html.includes('Wir überarbeiten die Wirkungsprofile')); assert.ok(!html.includes('aria-label="Tragweite für Mensch:')); }
   }
 });
