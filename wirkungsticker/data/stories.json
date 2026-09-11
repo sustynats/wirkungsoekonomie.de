@@ -2,8 +2,2129 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-11T02:36:54.688Z",
+  "updated_at": "2026-09-11T02:52:01.680Z",
   "stories": [
+    {
+      "story_id": "wt-5bb1cea072c71034",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5bb1cea072c71034-c2f8cce3b2994c0a-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5bb1cea072c71034-6ddd04a86ab39d6d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5bb1cea072c71034-14e86d2954fc4fea-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5bb1cea072c71034-4be4a8bd5fe28350-source.png",
+          "alt_text": "Abstrakter Hauseingang mit Stufe, Rampe und kleiner werdenden Förderbausteinen als Symbol für Barriereabbau bei sinkender Unterstützung."
+        }
+      },
+      "slug": "altersgerecht-umbauen-sozialverband-vdk-kritisiert-geplante-einsparungen-bei-der-forderu-c71034",
+      "title": "VdK kritisiert geplante Kürzungen bei barrierearmem Wohnen",
+      "source_summary": "Der Sozialverband VdK kritisiert geplante Einsparungen bei der Zuschussförderung für barrierearme Wohnungsumbauten. Nach dem Deutschlandfunk standen im laufenden Jahr 50 Millionen Euro zur Verfügung; neue Anträge sind derzeit gestoppt, weil die Fördermittel ausgeschöpft sind. VdK-Präsidentin Verena Bentele berichtet, das Bundesbauministerium plane für das kommende Jahr sechs Millionen Euro und für 2028 1,5 Millionen Euro.\n\nBentele bezeichnet die geplante Kürzung als faktisches Aus des Programms. Diese Zuspitzung ist ihre Bewertung, nicht der bereits feststehende Programmstatus. Die genannten künftigen Beträge sind als Planung berichtet; der Nachrichtenbeitrag belegt keinen endgültigen Haushaltsbeschluss. Wie viele zusätzliche barrierearme Umbauten bei geringeren Zuschussmitteln tatsächlich ausbleiben würden, ist noch offen.",
+      "summary": "Der VdK kritisiert geplante Kürzungen der Zuschussförderung für barrierearme Umbauten; neue Zuschussanträge sind derzeit bereits gestoppt. Für das kommende Jahr und 2028 werden deutlich geringere Mittel berichtet, beschlossen sind diese künftigen Beträge noch nicht.",
+      "detail_summary": "Neue Zuschussanträge für barrierearme Wohnungsumbauten sind derzeit wegen ausgeschöpfter Fördermittel gestoppt. Für das laufende Jahr nennt der Deutschlandfunk 50 Millionen Euro Bundesmittel. VdK-Präsidentin Verena Bentele berichtet, das Bundesbauministerium plane für das kommende Jahr sechs Millionen Euro und für 2028 1,5 Millionen Euro. Diese künftigen Beträge sind noch nicht als endgültiger Haushaltsbeschluss belegt. Werden deutlich weniger Zuschüsse bereitgestellt, könnten insbesondere Haushalte mit wenig Eigenkapital zusätzliche Umbauten verschieben oder ganz unterlassen. Ein bestehender Förderkredit kann Investitionen teilweise ermöglichen, ersetzt einen Zuschuss für finanzschwache Haushalte aber nicht wirtschaftlich gleichwertig. Mögliche Folgen für selbstständiges Wohnen, Pflegebedarf oder Teilhabe sind noch keine beobachteten Wirkungen.",
+      "why_relevant": "Barrierearme Wohnungen entscheiden mit darüber, ob Menschen ihren Alltag selbstständig bewältigen können. Werden Zuschüsse deutlich reduziert, kann der finanzielle Zugang zu zusätzlichen Umbauten schwieriger werden, besonders für Haushalte mit wenig Eigenmitteln.",
+      "topic": [
+        "Soziales"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Der VdK kritisiert berichtete Pläne, die Bundesmittel für den Zuschuss „Altersgerecht Umbauen“ 2027 und 2028 deutlich zu reduzieren; für neue Zuschussanträge besteht bereits ein Antragsstopp wegen ausgeschöpfter Mittel.",
+        "evaluation_target": {
+          "label": "Mögliche Folgen geringerer zusätzlicher barrierearmer Umbauten bei deutlich reduzierter Zuschussförderung",
+          "type": "proposal"
+        },
+        "baseline": "Fortführung der Zuschussförderung mit einem jährlichen Volumen in der Größenordnung der berichteten 50 Millionen Euro des laufenden Jahres, bei ansonsten gleichen Bedingungen und fortbestehendem Förderkredit. Dies ist ein Vergleichsszenario und keine Zusage unbegrenzt verfügbarer Zuschüsse.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Gegenüber deutlich reduzierten Ansätzen für das kommende Jahr und 2028 könnte die Fortführung des bisherigen jährlichen Zuschussvolumens bei anhaltender Nachfrage mehr zusätzliche Umbauten bezuschussen. Auch in diesem Vergleichsszenario bleiben Mittel begrenzt; nicht jeder Antrag oder Umbau wäre garantiert.",
+        "reference_frame": [
+          "Selbstbestimmtes Wohnen und Teilhabe nach Art. 19 UN-BRK",
+          "Barrierefreiheit und gleichberechtigter Zugang",
+          "Agenda 2030: inklusive, sichere und zugängliche Siedlungen",
+          "Deutsche Nachhaltigkeitsstrategie: Teilhabe und soziale Inklusion",
+          "Verteilungswirkung öffentlicher Förderinstrumente"
+        ],
+        "claim_ledger": [
+          {
+            "claim": "Für neue Zuschussanträge besteht derzeit ein Antragsstopp wegen ausgeschöpfter Fördermittel.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "note": "Aktueller Verfahrensstatus; bestehende Zusagen werden nicht als aufgehoben behandelt."
+          },
+          {
+            "claim": "Für das laufende Jahr nennt der Deutschlandfunk 50 Millionen Euro Bundesmittel.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "note": "Berichteter Förderrahmen."
+          },
+          {
+            "claim": "Bentele berichtet für 2027 sechs Millionen Euro und für 2028 1,5 Millionen Euro als Planung des Bundesbauministeriums.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "note": "Planungsstand, kein endgültiger Haushaltsbeschluss."
+          },
+          {
+            "claim": "Ein Förderkredit für barrierereduzierende Umbauten besteht weiter.",
+            "status": "primary_source_claim",
+            "source_ids": [
+              "research-federal-barrier"
+            ],
+            "note": "Alternative Finanzierung, aber kein Zuschuss."
+          },
+          {
+            "claim": "Das DIMR beschreibt einen großen Mangel an barrierefreiem Wohnraum.",
+            "status": "primary_source_claim",
+            "source_ids": [
+              "research-dimr-living"
+            ],
+            "note": "Historischer Kontext; kein Kürzungswirkungsnachweis."
+          }
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Weniger Zuschussmittel können zusätzliche Umbauten finanziell erschweren, besonders für Haushalte mit wenig Eigenmitteln. Konkrete Gesundheits- oder Pflegefolgen sind nicht beobachtet.",
+            "planet": "Wenn geringere Zuschüsse tatsächlich zu weniger oder späteren Umbauten führen, kann sich der Bau- und Ressourcenpfad verändern. Kurzfristig kann weniger Materialeinsatz anfallen, spätere Nachrüstungen oder Ersatzmaßnahmen können Ressourcenbedarf verlagern. Mangels konkretem Maßnahmenmix bleibt die Netto-Richtung offen und die Tragweite klein.",
+            "democracy": "Barriereärmeres Wohnen kann praktische Teilhabe unterstützen. Geringere Zuschussreichweite kann Zugangsungleichheiten verstärken; eine institutionelle Zustandsverschlechterung ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Weniger verfügbare Zuschussmittel begrenzen bei hoher Nachfrage die Zahl zusätzlich bezuschussbarer Umbauten; aktuell können neue Zuschussanträge bereits nicht gestellt werden.",
+          "second_order": "Haushalte mit geringem Eigenkapital oder begrenzter Kredittragfähigkeit können Umbauten eher verschieben oder unterlassen. Physisch kann sich dadurch auch der Zeitpunkt und Umfang von Bau- und Materialeinsatz verändern; die ökologische Netto-Richtung bleibt vom konkreten Maßnahmenmix abhängig.",
+          "third_order": "Über längere Zeit können bestehende Wohnbarrieren länger fortbestehen und selbstständiges Wohnen sowie Teilhabe langsamer verbessert werden. Veränderungen im Ressourcenpfad bleiben voraussichtlich klein und ohne konkrete Umbau- und Materialdaten offen gerichtet.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die berichteten Beträge für 2027 und 2028 sind noch kein endgültiger Haushaltsbeschluss.",
+            "Der Bundestag kann Haushaltsansätze ändern.",
+            "Ein Förderkredit besteht als alternative Finanzierung, ersetzt einen Zuschuss aber nicht automatisch.",
+            "Es ist unbekannt, wie viele zusätzliche Umbauten tatsächlich ausfallen würden.",
+            "Der aktuelle Antragsstopp betrifft neue Zuschussanträge."
+          ],
+          "source_independence": "DLF trägt Anlass und Planungsbeträge. Bundestag trägt nur den Haushaltsstatus. DIMR liefert historischen Kontext. Die Bundesförderdatenbank belegt den Förderkredit. Keine Quelle beziffert künftig ausfallende Umbauten.",
+          "institutional_status": "Für 2027 läuft das parlamentarische Haushaltsverfahren. Die berichteten Förderansätze sind noch nicht endgültig beschlossen; Antragsstopp und Kreditangebot sind getrennte Instrumentenstände."
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Neue Zuschussanträge für das Programm können derzeit wegen ausgeschöpfter Mittel nicht gestellt werden.",
+            "direction": "negative",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "established",
+            "reference_frame": "Zugang zu öffentlicher Förderung für barrierearme Umbauten",
+            "reference_space": "Haushalte mit neuem Förderbedarf gegenüber einem Zustand mit offenem Antragszugang.",
+            "observed_at": "Berichtsstand 11.09.2026",
+            "temporal_status": "ongoing",
+            "magnitude": 1,
+            "mechanism": "Der Antragsstopp schließt neue Antragstellungen vorübergehend aus; daraus folgt noch nicht, dass geplante Umbauten endgültig entfallen.",
+            "recipients": [
+              "Eigentümer und Mieter mit neuem Zuschussbedarf"
+            ],
+            "time_horizon": "Bis zu einer möglichen Wiederöffnung oder Änderung des Zuschussprogramms.",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 3,
+                "rationale": "Potenziell bundesweit neue Antragsteller betroffen; tatsächliche Zahl unbekannt.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 1,
+                "rationale": "Betroffen ist zunächst der Förderzugang, nicht der endgültige Umbauverzicht.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Dauer des Antragsstopps nicht belegt.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 0,
+                "rationale": "Der Antragszugang kann wieder geöffnet werden.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 2,
+                "rationale": "Menschen mit begrenztem finanziellen Spielraum können stärker auf Förderung angewiesen sein; konkrete Verteilung fehlt.",
+                "source_ids": [
+                  "research-dimr-living",
+                  "dlf-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Betroffen ist der Förderzugang, nicht bereits der gesamte Wohnungsbestand.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Der Antragsstopp erschwert Förderzugang, belegt aber keine schwere konkrete Verletzung von Gesundheit, Wohnen oder Selbstbestimmung.",
+              "reference_frame": "Zugang zu Förderung und selbstbestimmtes Wohnen",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-dimr-living"
+              ],
+              "status": "not_decisive"
+            },
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 8,
+              "divisor": 6,
+              "raw": 1.3333333333333333,
+              "rounded": 1,
+              "protection_floor": 0,
+              "final": 1
+            }
+          }
+        ],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 3,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Deutlich geringere Zuschussmittel können zusätzliche barrierearme Umbauten verzögern oder verhindern",
+                "mechanism": "Wenn weniger Zuschussmittel verfügbar sind, steigt der selbst zu tragende Finanzierungsanteil. Haushalte mit wenig Eigenmitteln oder begrenzter Kredittragfähigkeit können Umbauten dadurch eher verschieben, verkleinern oder unterlassen.",
+                "recipients": [
+                  "ältere Menschen",
+                  "Menschen mit Behinderungen",
+                  "Haushalte mit geringem finanziellen Spielraum",
+                  "Mieter und selbstnutzende Eigentümer mit Barriereabbau-Bedarf"
+                ],
+                "magnitude": 3,
+                "evidence": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-dimr-living",
+                  "research-federal-barrier",
+                  "research-bundestag-budget2027"
+                ],
+                "condition": "Die berichteten deutlich geringeren Zuschussansätze werden beschlossen und umgesetzt, die Nachfrage bleibt höher als das verfügbare Fördervolumen und alternative Finanzierung schließt die Lücke nicht vollständig.",
+                "reference_space": "Menschen mit konkretem Bedarf an gefördertem Barriereabbau in Deutschland gegenüber der Fortführung des bisherigen jährlichen Zuschussvolumens bei gleichen übrigen Bedingungen.",
+                "time_horizon": "Ab 2027 über mehrere Förderjahre; Folgen im Wohnungsbestand können länger nachwirken.",
+                "path_quality": [
+                  "indirect",
+                  "systemic"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Nicht jeder Haushalt verzichtet ohne Zuschuss auf einen Umbau. Ein Förderkredit wird nicht als für alle Haushalte wirtschaftlich gleichwertiger Ersatz angenommen.",
+                "source_support": "DLF trägt Antragsstopp und berichtete Planungsbeträge. Bundestag trägt den offenen Haushaltsprozess. Die Bundesförderdatenbank trägt den bestehenden Förderkredit. DIMR trägt historischen Kontext zu mangelndem barrierefreiem Wohnraum und selbstbestimmtem Leben.",
+                "limitations": "Keine belastbaren Daten zu Zahl ausfallender Umbauten, Einkommensverteilung, Kreditfähigkeit oder späteren Gesundheits- und Pflegefolgen.",
+                "first_order": "Weniger Zuschussmittel können die Zahl zusätzlich geförderter Umbauvorhaben begrenzen.",
+                "second_order": "Haushalte mit geringem finanziellem Spielraum können Umbauten eher verschieben, verkleinern oder unterlassen; bestehende Barrieren bleiben länger bestehen.",
+                "third_order": "Bei dauerhaft geringerem Barriereabbau können selbstständiges Wohnen und praktische Teilhabe langsamer verbessert werden; ein direkter Pflegeheim- oder Gesundheitsautomatismus wird nicht unterstellt.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Bei erfolgreicher Ersatzfinanzierung bleibt der Effekt moderat; bei dauerhaft knappen Zuschüssen und hoher ungedeckter Nachfrage kann der bundesweite Barriereabbau deutlich gebremst werden."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen tragen Förderstatus, offenen Haushaltsprozess, bestehenden Kredit und den strukturellen Mangel an barrierefreiem Wohnraum. Die konkrete Zahl verhinderter Umbauten und spätere Gesundheits- oder Pflegefolgen bleiben unbelegt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung für eine bundesweit verteilte Gruppe mit konkretem Umbau- und Förderbedarf. Die Förderung ist bundesweit zugänglich, betrifft aber nicht automatisch den Großteil der Bevölkerung; Zahl der zusätzlich entfallenden Vorhaben ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-federal-barrier"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Ausbleibender Barriereabbau kann selbstständige Wohnnutzung spürbar erschweren, ohne automatisch schwere Gesundheitsfolgen zu verursachen.",
+                    "source_ids": [
+                      "research-dimr-living"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Unterbleibt ein Umbau, können bestehende Wohnbarrieren über Jahre fortbestehen; die Planung betrifft mehrere Förderjahre.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-dimr-living"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ein unterbliebener Umbau kann grundsätzlich später nachgeholt werden, sofern Finanzierung und bauliche Möglichkeit bestehen.",
+                    "source_ids": [
+                      "research-federal-barrier",
+                      "research-dimr-living"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Menschen mit Behinderungen, ältere Menschen und finanziell schwächere Haushalte können von bestehenden Wohnbarrieren und Finanzierungshürden stärker betroffen sein.",
+                    "source_ids": [
+                      "research-dimr-living"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Eine dauerhaft starke Reduzierung eines bundesweiten Förderanreizes kann den Ausbau barriereärmeren Wohnraums strukturell verlangsamen, ohne den gesamten Wohnungsmarkt zu bestimmen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-dimr-living"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Selbstbestimmtes Wohnen und Teilhabe nach Art. 19 UN-BRK sind zentrale Schutzgüter. Die geplante Förderkürzung belegt aber noch keine konkrete schwere individuelle Ausschlusssituation oder Rechtsverletzung.",
+                  "reference_frame": "Art. 19 UN-BRK: selbstbestimmtes Leben und Einbeziehung in die Gemeinschaft",
+                  "source_ids": [
+                    "research-dimr-living"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "neutral",
+                "label": "Der bestehende Förderkredit kann einen Teil der Finanzierungslücke abfedern",
+                "mechanism": "Ein Kredit kann einzelne Umbauten trotz geringerer Zuschüsse finanzierbar machen, erhöht aber die Rückzahlungsverpflichtung und ersetzt einen Zuschuss nicht für jeden Haushalt wirtschaftlich gleichwertig.",
+                "recipients": [
+                  "Haushalte mit ausreichender Kredittragfähigkeit"
+                ],
+                "magnitude": 1,
+                "evidence": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_effect",
+                "likelihood": "medium",
+                "source_ids": [
+                  "research-federal-barrier"
+                ],
+                "condition": "Haushalte sind kreditfähig und bereit, die Rückzahlungsverpflichtung zu tragen.",
+                "reference_space": "Betroffene Haushalte unter reduzierter Zuschussförderung gegenüber der Baseline mit fortgeführtem Zuschussangebot.",
+                "time_horizon": "Während Finanzierung und Rückzahlung des jeweiligen Umbaus.",
+                "path_quality": [
+                  "indirect",
+                  "weak"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Kredit und Zuschuss werden als unterschiedliche Instrumente behandelt; eine vollständige Substitution wird nicht angenommen.",
+                "source_support": "Die Bundesförderdatenbank belegt den bestehenden Förderkredit, nicht dessen Nutzung oder wirtschaftliche Gleichwertigkeit für konkrete Haushalte.",
+                "limitations": "Keine Daten zu Kreditaufnahme, Ablehnungen, Zinssensitivität oder Einkommen der Betroffenen.",
+                "first_order": "Ein Teil der Haushalte kann trotz geringerer Zuschüsse eine Kreditfinanzierung nutzen.",
+                "second_order": "Dadurch können einzelne Umbauten dennoch stattfinden, allerdings mit höherer finanzieller Eigenbelastung.",
+                "third_order": "Eine vollständige Kompensation des geringeren Zuschussangebots ist nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Für nicht kreditfähige oder kreditunwillige Haushalte entfällt die Minderung; für andere kann sie einzelne Vorhaben ermöglichen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "initial",
+                "research_result": "Das Kreditprogramm existiert; Umfang seiner tatsächlichen kompensierenden Wirkung gegenüber geringeren Zuschüssen ist unbekannt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Nur ein Teil der betroffenen Haushalte dürfte Kreditfinanzierung nutzen können oder wollen.",
+                    "source_ids": [
+                      "research-federal-barrier"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein Kredit kann Finanzierung ermöglichen, entspricht aber keinem Zuschuss.",
+                    "source_ids": [
+                      "research-federal-barrier"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der Minderungsbeitrag betrifft die Finanzierung eines konkreten Vorhabens.",
+                    "source_ids": [
+                      "research-federal-barrier"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Die Finanzierungsform begründet keine irreversible gesellschaftliche Zustandsänderung.",
+                    "source_ids": [
+                      "research-federal-barrier"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Finanziell schwächere Haushalte können von Kreditfinanzierung weniger profitieren; konkrete Verteilung ist unbekannt.",
+                    "source_ids": [
+                      "research-federal-barrier",
+                      "research-dimr-living"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Kredit ist ein alternatives Einzelinstrument und verändert den Hauptpfad reduzierter Zuschussreichweite nur begrenzt.",
+                    "source_ids": [
+                      "research-federal-barrier"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der bestehende Kredit ist eine mögliche Schadensminderung, aber kein eigenständiger Schutzgrenzenpfad.",
+                  "reference_frame": "Finanzieller Zugang zu Barrierereduzierung",
+                  "source_ids": [
+                    "research-federal-barrier"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Der bedingte Hauptpfad ist negativ: Deutlich weniger Zuschüsse können zusätzliche Umbauten verhindern oder verzögern und bestehende Wohnbarrieren länger bestehen lassen. Die Faktoren 3+3+4+1+4+3 ergeben 18/6 und Tragweite 3. Ein Förderkredit kann einzelne Vorhaben weiterhin ermöglichen, garantiert aber keinen gleichwertigen Zugang für finanziell schwächere Haushalte.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen vergleichbaren positiven Hauptpfad derselben Baseline. Der Förderkredit ist lediglich ein begrenzter Minderungsweg und verändert die dominante negative Einordnung nicht."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Deutlich geringere Zuschussmittel können zusätzliche barrierearme Umbauten verzögern oder verhindern",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Neue Zuschussanträge für das Programm können derzeit wegen ausgeschöpfter Mittel nicht gestellt werden.",
+                "direction": "negative",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "medium",
+                "attribution": "established",
+                "reference_frame": "Zugang zu öffentlicher Förderung für barrierearme Umbauten",
+                "reference_space": "Haushalte mit neuem Förderbedarf gegenüber einem Zustand mit offenem Antragszugang.",
+                "observed_at": "Berichtsstand 11.09.2026",
+                "temporal_status": "ongoing",
+                "magnitude": 1,
+                "mechanism": "Der Antragsstopp schließt neue Antragstellungen vorübergehend aus; daraus folgt noch nicht, dass geplante Umbauten endgültig entfallen.",
+                "recipients": [
+                  "Eigentümer und Mieter mit neuem Zuschussbedarf"
+                ],
+                "time_horizon": "Bis zu einer möglichen Wiederöffnung oder Änderung des Zuschussprogramms.",
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Potenziell bundesweit neue Antragsteller betroffen; tatsächliche Zahl unbekannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Betroffen ist zunächst der Förderzugang, nicht der endgültige Umbauverzicht.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer des Antragsstopps nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Der Antragszugang kann wieder geöffnet werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen mit begrenztem finanziellen Spielraum können stärker auf Förderung angewiesen sein; konkrete Verteilung fehlt.",
+                    "source_ids": [
+                      "research-dimr-living",
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Betroffen ist der Förderzugang, nicht bereits der gesamte Wohnungsbestand.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Antragsstopp erschwert Förderzugang, belegt aber keine schwere konkrete Verletzung von Gesundheit, Wohnen oder Selbstbestimmung.",
+                  "reference_frame": "Zugang zu Förderung und selbstbestimmtes Wohnen",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-dimr-living"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                },
+                "presentation": {
+                  "ringStatus": "emerging",
+                  "ringLabel": "Erste / laufende Wirkung",
+                  "magnitudeBars": 1,
+                  "directionLabel": "− laufende Wirkung",
+                  "shortPathLabel": "Neue Zuschussanträge für das Programm können derzeit wegen ausgeschöpfter Mittel nicht gestellt werden.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Neue Zuschussanträge für das Programm können derzeit wegen ausgeschöpfter Mittel nicht gestellt werden.",
+              "direction": "negative",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "established",
+              "reference_frame": "Zugang zu öffentlicher Förderung für barrierearme Umbauten",
+              "reference_space": "Haushalte mit neuem Förderbedarf gegenüber einem Zustand mit offenem Antragszugang.",
+              "observed_at": "Berichtsstand 11.09.2026",
+              "temporal_status": "ongoing",
+              "magnitude": 1,
+              "mechanism": "Der Antragsstopp schließt neue Antragstellungen vorübergehend aus; daraus folgt noch nicht, dass geplante Umbauten endgültig entfallen.",
+              "recipients": [
+                "Eigentümer und Mieter mit neuem Zuschussbedarf"
+              ],
+              "time_horizon": "Bis zu einer möglichen Wiederöffnung oder Änderung des Zuschussprogramms.",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Potenziell bundesweit neue Antragsteller betroffen; tatsächliche Zahl unbekannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Betroffen ist zunächst der Förderzugang, nicht der endgültige Umbauverzicht.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer des Antragsstopps nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Der Antragszugang kann wieder geöffnet werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen mit begrenztem finanziellen Spielraum können stärker auf Förderung angewiesen sein; konkrete Verteilung fehlt.",
+                  "source_ids": [
+                    "research-dimr-living",
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Betroffen ist der Förderzugang, nicht bereits der gesamte Wohnungsbestand.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Antragsstopp erschwert Förderzugang, belegt aber keine schwere konkrete Verletzung von Gesundheit, Wohnen oder Selbstbestimmung.",
+                "reference_frame": "Zugang zu Förderung und selbstbestimmtes Wohnen",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-dimr-living"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              },
+              "presentation": {
+                "ringStatus": "emerging",
+                "ringLabel": "Erste / laufende Wirkung",
+                "magnitudeBars": 1,
+                "directionLabel": "− laufende Wirkung",
+                "shortPathLabel": "Neue Zuschussanträge für das Programm können derzeit wegen ausgeschöpfter Mittel nicht gestellt werden.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 1,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "Neue Zuschussanträge für das Programm können derzeit wegen ausgeschöpfter Mittel nicht gestellt werden.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Weniger geförderte Umbauten können Ressourcenverbrauch zeitlich und technisch verschieben",
+                "mechanism": "Wenn geringere Zuschüsse dazu führen, dass barrierearme Umbauten entfallen oder verschoben werden, fällt kurzfristig bei diesen Vorhaben weniger Bau- und Materialeinsatz an. Zugleich können spätere Nachrüstungen, Ersatzmaßnahmen oder veränderte Nutzungsdauern entstehen. Welche Seite überwiegt, hängt vom konkreten Maßnahmenmix ab.",
+                "recipients": [
+                  "Material- und Ressourcenverbrauch bei Wohnungsumbauten",
+                  "Gebäudebestand mittelbar"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-bundestag-budget2027",
+                  "research-dimr-living",
+                  "research-federal-barrier"
+                ],
+                "condition": "Die berichteten geringeren Zuschussmittel werden beschlossen und führen tatsächlich dazu, dass zusätzliche Umbauten entfallen, kleiner ausfallen oder zeitlich verschoben werden.",
+                "reference_space": "Zusätzliche barrierearme Wohnungsumbauten in Deutschland, die unter einer fortgeführten Zuschussförderung stattfinden würden, gegenüber dem Pfad bei deutlich geringeren Zuschussmitteln.",
+                "time_horizon": "Ab 2027 über mehrere Förderjahre; mögliche spätere Nachrüstungs- oder Ersatzentscheidungen können darüber hinaus reichen.",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Unterstellte physische Änderung ist nur, dass sich Zahl, Zeitpunkt oder Umfang tatsächlich ausgeführter Umbauten verändert. Es wird weder ein Klima- noch ein Materialvorteil bestimmter Maßnahmen angenommen.",
+                "source_support": "DLF trägt die geplante deutliche Reduzierung der Zuschussmittel. Bundestag trägt den noch offenen Haushaltsstatus. DIMR belegt den bestehenden Mangel an barrierefreiem Wohnraum. Die Bundesförderdatenbank belegt einen alternativen Förderkredit. Keine Quelle bestimmt die Umweltbilanz konkreter Umbauten.",
+                "limitations": "Unbekannt sind Zahl und Art entfallender Umbauten, verwendete Materialien, Energiebedarf, Lebensdauerwirkungen sowie spätere Ersatz- oder Nachrüstungsmaßnahmen. Deshalb bleibt die Netto-Richtung offen.",
+                "first_order": "Entfallende oder kleinere Umbauten können kurzfristig weniger zusätzlichen Bau- und Materialeinsatz verursachen.",
+                "second_order": "Verschobene Anpassungen können später neue Nachrüstungs-, Ersatz- oder Umbauentscheidungen auslösen und den Ressourceneinsatz zeitlich verlagern.",
+                "third_order": "Nur bei dauerhaft vielen veränderten Investitionsentscheidungen könnte sich der Ressourcenpfad im Wohnungsbestand merklich verändern; dafür fehlen derzeit belastbare Umfangsdaten.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Bei wenigen tatsächlich veränderten Vorhaben bleibt der physische Effekt praktisch gering. Bei über mehrere Jahre deutlich weniger Umbauten kann ein begrenzter Ressourcenpfad entstehen, dessen Netto-Richtung vom Maßnahmenmix abhängt."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen belegen Förderänderung, Wohnraumkontext und alternative Finanzierung, aber keine Umweltbilanz. Der physische Mechanismus veränderter Umbautätigkeit ist plausibel; Richtung und Umfang bleiben deshalb als niedrige Evidenz und konservative Magnitude 1 modelliert.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Physisch betroffen wäre nur der Teil der Wohnungsumbauten, der wegen der Förderänderung tatsächlich entfällt oder verschoben wird, nicht der gesamte Gebäudebestand.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-federal-barrier"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Einzelne barrierereduzierende Umbauten verändern Material- und Bauaufwand, ohne dass aus den Quellen ein besonders ressourcenintensiver Maßnahmenmix hervorgeht.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-dimr-living"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Veränderte Umbauentscheidungen können über mehrere Förderjahre wirken und teilweise in spätere Nachrüstungen verschoben werden.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-bundestag-budget2027"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Verschobene oder unterlassene Umbauten können grundsätzlich später nachgeholt werden; Ressourcenentscheidungen sind daher überwiegend reversibel.",
+                    "source_ids": [
+                      "research-federal-barrier",
+                      "research-dimr-living"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Eine besondere Belastung vulnerabler Ökosysteme oder Regionen ist nicht erkennbar; der Ressourcenpfad verteilt sich auf einzelne Wohnungsmaßnahmen.",
+                    "source_ids": [
+                      "research-dimr-living"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Der Pfad betrifft einen begrenzten Ausschnitt des Gebäudebestands und verändert ohne größere Skalierung keine tiefen Energie- oder Ressourcensysteme.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-dimr-living"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Für den modellierten Umbaupfad ist keine konkrete schwere oder irreversible ökologische Schutzgrenzverletzung begründet.",
+                  "reference_frame": "Ressourcenverbrauch und natürliche Lebensgrundlagen",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-dimr-living"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die Planet-Dimension bleibt offen gerichtet und klein. Weniger Umbauten können kurzfristig Bau- und Materialeinsatz reduzieren, zugleich aber Nachrüstungen oder Ersatzentscheidungen verschieben. Die Faktoren 2+1+2+1+1+1 ergeben 8/6=1,33 und damit Magnitude 1; fehlende Umweltbilanz senkt die Evidenz, nicht die physische Tragweitenschätzung auf null.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Die gegenläufigen Ressourceneffekte entstehen innerhalb desselben noch unbekannten Umbaupfads und sind mangels konkreten Maßnahmenmixes nicht als zwei eigenständig vergleichbare materielle Hauptpfade quantifizierbar. Deshalb bleibt die Netto-Richtung offen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Weniger geförderte Umbauten können Ressourcenverbrauch zeitlich und technisch verschieben",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Weniger geförderte Umbauten können Ressourcenverbrauch zeitlich und technisch verschieben",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 3,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Weniger geförderter Barriereabbau kann praktische gesellschaftliche Teilhabe erschweren",
+                "mechanism": "Wenn deutlich weniger Zuschüsse dazu führen, dass zusätzliche barrierearme Umbauten ausbleiben oder später erfolgen, können bestehende Wohnbarrieren länger fortbestehen. Für Menschen mit Behinderungen oder Mobilitätseinschränkungen kann dies den selbstbestimmten Zugang zu Alltag, Nachbarschaft und gesellschaftlicher Teilhabe erschweren.",
+                "recipients": [
+                  "Menschen mit Behinderungen",
+                  "ältere Menschen mit Mobilitätseinschränkungen",
+                  "Haushalte mit geringem finanziellen Spielraum"
+                ],
+                "magnitude": 3,
+                "evidence": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-dimr-living",
+                  "research-bundestag-budget2027",
+                  "research-federal-barrier"
+                ],
+                "condition": "Die berichteten deutlich geringeren Zuschussansätze werden beschlossen und umgesetzt, dadurch entfallen oder verzögern sich tatsächlich zusätzliche barrierearme Umbauten und andere Finanzierungswege gleichen dies nicht vollständig aus.",
+                "reference_space": "Menschen mit konkretem Bedarf an gefördertem Barriereabbau in Deutschland gegenüber der Fortführung des bisherigen jährlichen Zuschussvolumens bei gleichen übrigen Bedingungen.",
+                "time_horizon": "Ab 2027 über mehrere Förderjahre; fortbestehende Wohnbarrieren können darüber hinaus wirken.",
+                "path_quality": [
+                  "indirect",
+                  "systemic"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Nicht jede unterbliebene Förderung führt automatisch zu gesellschaftlichem Ausschluss. Modelliert wird nur der Teil der Fälle, in denen ein notwendiger Barriereabbau tatsächlich nicht oder später erfolgt und dadurch Teilhabemöglichkeiten praktisch begrenzt bleiben.",
+                "source_support": "DLF trägt den aktuellen Antragsstopp und die berichteten Kürzungspläne. DIMR belegt historisch den Mangel an barrierefreiem Wohnraum und die Bedeutung selbstbestimmten Wohnens und inklusiver Gemeinschaft. Bundestag trägt den noch offenen Haushaltsprozess. Die Bundesförderdatenbank belegt einen fortbestehenden Kredit als möglichen, aber nicht gleichwertigen Finanzierungsweg.",
+                "limitations": "Keine Daten dazu, wie viele Umbauten tatsächlich entfallen, welche Personen konkret betroffen sind oder wie stark ihre gesellschaftliche Teilhabe dadurch eingeschränkt würde. Eine bereits eingetretene UN-BRK-Verletzung wird nicht behauptet.",
+                "first_order": "Weniger Zuschussmittel können die Zahl zusätzlich geförderter barrierearmer Umbauten begrenzen.",
+                "second_order": "Bestehende Wohnbarrieren können für betroffene Menschen länger bestehen bleiben und selbstständige Alltagswege oder Nutzungsmöglichkeiten erschweren.",
+                "third_order": "Bei dauerhaft langsamem Barriereabbau können praktische Teilhabe und Einbeziehung in die Gemeinschaft für einzelne Gruppen strukturell schwieriger erreichbar bleiben; ein institutioneller Kontrollverlust folgt daraus nicht.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Bei geringer tatsächlicher Zahl ausfallender Umbauten bleibt der Teilhabeeffekt begrenzt. Bei dauerhaft hoher ungedeckter Nachfrage und lang fortbestehenden Barrieren kann die Wirkung für betroffene Gruppen deutlich sein."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "DIMR stützt den Zusammenhang zwischen barrierefreiem Wohnraum, selbstbestimmtem Leben und inklusiver Gemeinschaft. DLF trägt die geplante Förderreduktion, nicht deren spätere Teilhabewirkung. Der Pfad bleibt daher ex ante und bedingt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung für eine bundesweit verteilte Gruppe mit konkretem Umbau- und Förderbedarf. Die Förderung ist bundesweit zugänglich, betrifft aber nicht automatisch den Großteil der Bevölkerung; Zahl der zusätzlich entfallenden Vorhaben ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-federal-barrier"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Fortbestehende Wohnbarrieren können praktische Alltags- und Teilhabemöglichkeiten spürbar einschränken, ohne automatisch vollständigen gesellschaftlichen Ausschluss zu verursachen.",
+                    "source_ids": [
+                      "research-dimr-living"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Unterbleibt ein Umbau, können bauliche Barrieren über Jahre bestehen bleiben; die Förderplanung betrifft mehrere Jahre.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-dimr-living"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Barrieren können später grundsätzlich noch beseitigt werden, wenn Finanzierung und bauliche Voraussetzungen vorhanden sind.",
+                    "source_ids": [
+                      "research-dimr-living",
+                      "research-federal-barrier"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Menschen mit Behinderungen, Mobilitätseinschränkungen und geringen finanziellen Spielräumen können von Wohnbarrieren und fehlender Finanzierung überproportional betroffen sein.",
+                    "source_ids": [
+                      "research-dimr-living"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Der Pfad betrifft praktische Teilhabe über den Wohnraumzugang, verändert aber nicht unmittelbar demokratische Institutionen, Wahlen oder staatliche Kontrollmechanismen.",
+                    "source_ids": [
+                      "research-dimr-living"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Selbstbestimmtes Leben und Einbeziehung in die Gemeinschaft nach Art. 19 UN-BRK sind zentrale Referenzgüter. Die geplante Förderkürzung belegt jedoch noch keine konkrete schwere individuelle Ausschlusssituation oder bereits eingetretene Rechtsverletzung.",
+                  "reference_frame": "Art. 19 UN-BRK: selbstbestimmtes Leben und Einbeziehung in die Gemeinschaft",
+                  "source_ids": [
+                    "research-dimr-living"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "neutral",
+                "label": "Der bestehende Förderkredit kann einzelne Teilhaberisiken mindern, ersetzt den Zuschuss aber nicht allgemein",
+                "mechanism": "Ein Förderkredit kann einzelnen kreditfähigen Haushalten ermöglichen, einen Umbau trotz geringerer Zuschüsse zu finanzieren. Wegen Rückzahlungsverpflichtung ist er kein wirtschaftlich gleichwertiger Ersatz für jeden Haushalt.",
+                "recipients": [
+                  "kreditfähige Haushalte mit Bedarf an Barrierereduzierung"
+                ],
+                "magnitude": 1,
+                "evidence": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_effect",
+                "likelihood": "medium",
+                "source_ids": [
+                  "research-federal-barrier"
+                ],
+                "condition": "Betroffene Haushalte sind kreditfähig und akzeptieren die Rückzahlungsverpflichtung.",
+                "reference_space": "Teil der Haushalte mit Umbauabsicht unter reduzierter Zuschussförderung gegenüber derselben Baseline.",
+                "time_horizon": "Während Finanzierung und Umsetzung eines konkreten Umbaus.",
+                "path_quality": [
+                  "indirect",
+                  "weak"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Eine vollständige Substitution des Zuschusses durch Kredit wird nicht angenommen.",
+                "source_support": "Die Bundesförderdatenbank belegt die Existenz des Förderkredits, nicht dessen Nutzung oder Gleichwertigkeit für konkrete Haushalte.",
+                "limitations": "Keine Daten zu Kreditfähigkeit, Nutzung oder Verteilungswirkung.",
+                "first_order": "Ein Teil der Haushalte kann Umbauten über Kredit finanzieren.",
+                "second_order": "Dadurch können einzelne Wohnbarrieren trotz geringerer Zuschüsse beseitigt werden.",
+                "third_order": "Eine flächendeckende Kompensation möglicher Teilhabeverluste ist nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Für nicht kreditfähige Haushalte entfällt die Minderung; für andere kann sie einzelne Umbauten ermöglichen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "initial",
+                "research_result": "Der Förderkredit besteht als alternative Finanzierung; sein tatsächlicher kompensierender Beitrag bleibt unbekannt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Nur ein Teil der potenziell betroffenen Haushalte kann oder will Kreditfinanzierung nutzen.",
+                    "source_ids": [
+                      "research-federal-barrier"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der Kredit kann einzelne Umbauten ermöglichen, verändert aber die finanzielle Belastung gegenüber einem Zuschuss.",
+                    "source_ids": [
+                      "research-federal-barrier"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der Minderungsbeitrag bezieht sich auf die Finanzierung einzelner Vorhaben.",
+                    "source_ids": [
+                      "research-federal-barrier"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Der Finanzierungsweg begründet keine irreversible demokratische Zustandsänderung.",
+                    "source_ids": [
+                      "research-federal-barrier"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Finanziell schwächere Haushalte können vom Kredit weniger profitieren; konkrete Verteilung fehlt.",
+                    "source_ids": [
+                      "research-federal-barrier",
+                      "research-dimr-living"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Kredit ist ein begrenztes Förderinstrument und kein struktureller Ersatz für umfassenden Barriereabbau.",
+                    "source_ids": [
+                      "research-federal-barrier"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Kredit ist ein möglicher Minderungsweg, aber kein eigenständiger Schutzgrenzenpfad.",
+                  "reference_frame": "Finanzieller Zugang zu Barrierereduzierung",
+                  "source_ids": [
+                    "research-federal-barrier"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Praktische gesellschaftliche Teilhabe wird als demokratischer Schutzraum betrachtet. Fortbestehende Wohnbarrieren können diesen Zugang erschweren. Die Faktoren 3+2+4+1+4+2 ergeben 16/6 und Tragweite 3. Die Haushaltsberatung selbst ist kein Demokratieverlust; eine bereits eingetretene Rechtsverletzung wird nicht behauptet.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Die Haushaltsberatung ist ein reguläres demokratisches Verfahren und kein Gegenschaden. Der Kredit ist nur ein begrenzter Minderungsweg; deshalb bleibt der materielle Hauptpfad dominant negativ."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Weniger geförderter Barriereabbau kann praktische gesellschaftliche Teilhabe erschweren",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Weniger geförderter Barriereabbau kann praktische gesellschaftliche Teilhabe erschweren",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Trägt VdK-Kritik, aktuellen Antragsstopp, laufendes Fördervolumen und die als Planung berichteten Beträge."
+          },
+          {
+            "source_id": "research-bundestag-budget2027",
+            "functions": [
+              "reference"
+            ],
+            "supported_claim": "Trägt das laufende Haushaltsverfahren und mögliche Änderungen."
+          },
+          {
+            "source_id": "research-dimr-living",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Trägt historischen Kontext zu Mangel an barrierefreiem Wohnraum und selbstbestimmtem Leben."
+          },
+          {
+            "source_id": "research-federal-barrier",
+            "functions": [
+              "counter_evidence",
+              "reference"
+            ],
+            "supported_claim": "Trägt die Existenz des Förderkredits als alternativen Finanzierungsweg."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw34-haushalt-2027-ablauf-1187766",
+          "title": "Bundeshaushalt 2027: Vom Entwurf zum Beschluss",
+          "publisher": "Deutscher Bundestag",
+          "source_id": "research-bundestag-budget2027",
+          "source_function": "reference"
+        },
+        {
+          "url": "https://www.institut-fuer-menschenrechte.de/fileadmin/Redaktion/Publikationen/Fact_Sheet/DIMR_Factsheet_Selbstbestimmt_leben.pdf",
+          "title": "Selbstbestimmt leben: Factsheet der Monitoring-Stelle UN-Behindertenrechtskonvention, August 2023",
+          "publisher": "Deutsches Institut für Menschenrechte",
+          "source_id": "research-dimr-living",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://www.foerderdatenbank.de/FDB/Content/DE/Foerderprogramm/Bund/KfW/kfw-altersgerecht-umbauen-kredit-bund.html",
+          "title": "Kredit Altersgerecht Umbauen: Förderdatenbank des Bundes",
+          "publisher": "Förderdatenbank des Bundes",
+          "source_id": "research-federal-barrier",
+          "source_function": "counter_evidence"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 3,
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Deutlich geringere Zuschussmittel können zusätzliche barrierearme Umbauten verzögern oder verhindern",
+              "mechanism": "Wenn weniger Zuschussmittel verfügbar sind, steigt der selbst zu tragende Finanzierungsanteil. Haushalte mit wenig Eigenmitteln oder begrenzter Kredittragfähigkeit können Umbauten dadurch eher verschieben, verkleinern oder unterlassen.",
+              "recipients": [
+                "ältere Menschen",
+                "Menschen mit Behinderungen",
+                "Haushalte mit geringem finanziellen Spielraum",
+                "Mieter und selbstnutzende Eigentümer mit Barriereabbau-Bedarf"
+              ],
+              "magnitude": 3,
+              "evidence": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-dimr-living",
+                "research-federal-barrier",
+                "research-bundestag-budget2027"
+              ],
+              "condition": "Die berichteten deutlich geringeren Zuschussansätze werden beschlossen und umgesetzt, die Nachfrage bleibt höher als das verfügbare Fördervolumen und alternative Finanzierung schließt die Lücke nicht vollständig.",
+              "reference_space": "Menschen mit konkretem Bedarf an gefördertem Barriereabbau in Deutschland gegenüber der Fortführung des bisherigen jährlichen Zuschussvolumens bei gleichen übrigen Bedingungen.",
+              "time_horizon": "Ab 2027 über mehrere Förderjahre; Folgen im Wohnungsbestand können länger nachwirken.",
+              "path_quality": [
+                "indirect",
+                "systemic"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Nicht jeder Haushalt verzichtet ohne Zuschuss auf einen Umbau. Ein Förderkredit wird nicht als für alle Haushalte wirtschaftlich gleichwertiger Ersatz angenommen.",
+              "source_support": "DLF trägt Antragsstopp und berichtete Planungsbeträge. Bundestag trägt den offenen Haushaltsprozess. Die Bundesförderdatenbank trägt den bestehenden Förderkredit. DIMR trägt historischen Kontext zu mangelndem barrierefreiem Wohnraum und selbstbestimmtem Leben.",
+              "limitations": "Keine belastbaren Daten zu Zahl ausfallender Umbauten, Einkommensverteilung, Kreditfähigkeit oder späteren Gesundheits- und Pflegefolgen.",
+              "first_order": "Weniger Zuschussmittel können die Zahl zusätzlich geförderter Umbauvorhaben begrenzen.",
+              "second_order": "Haushalte mit geringem finanziellem Spielraum können Umbauten eher verschieben, verkleinern oder unterlassen; bestehende Barrieren bleiben länger bestehen.",
+              "third_order": "Bei dauerhaft geringerem Barriereabbau können selbstständiges Wohnen und praktische Teilhabe langsamer verbessert werden; ein direkter Pflegeheim- oder Gesundheitsautomatismus wird nicht unterstellt.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Bei erfolgreicher Ersatzfinanzierung bleibt der Effekt moderat; bei dauerhaft knappen Zuschüssen und hoher ungedeckter Nachfrage kann der bundesweite Barriereabbau deutlich gebremst werden."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen tragen Förderstatus, offenen Haushaltsprozess, bestehenden Kredit und den strukturellen Mangel an barrierefreiem Wohnraum. Die konkrete Zahl verhinderter Umbauten und spätere Gesundheits- oder Pflegefolgen bleiben unbelegt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung für eine bundesweit verteilte Gruppe mit konkretem Umbau- und Förderbedarf. Die Förderung ist bundesweit zugänglich, betrifft aber nicht automatisch den Großteil der Bevölkerung; Zahl der zusätzlich entfallenden Vorhaben ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-federal-barrier"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Ausbleibender Barriereabbau kann selbstständige Wohnnutzung spürbar erschweren, ohne automatisch schwere Gesundheitsfolgen zu verursachen.",
+                  "source_ids": [
+                    "research-dimr-living"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Unterbleibt ein Umbau, können bestehende Wohnbarrieren über Jahre fortbestehen; die Planung betrifft mehrere Förderjahre.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-dimr-living"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ein unterbliebener Umbau kann grundsätzlich später nachgeholt werden, sofern Finanzierung und bauliche Möglichkeit bestehen.",
+                  "source_ids": [
+                    "research-federal-barrier",
+                    "research-dimr-living"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Menschen mit Behinderungen, ältere Menschen und finanziell schwächere Haushalte können von bestehenden Wohnbarrieren und Finanzierungshürden stärker betroffen sein.",
+                  "source_ids": [
+                    "research-dimr-living"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Eine dauerhaft starke Reduzierung eines bundesweiten Förderanreizes kann den Ausbau barriereärmeren Wohnraums strukturell verlangsamen, ohne den gesamten Wohnungsmarkt zu bestimmen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-dimr-living"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Selbstbestimmtes Wohnen und Teilhabe nach Art. 19 UN-BRK sind zentrale Schutzgüter. Die geplante Förderkürzung belegt aber noch keine konkrete schwere individuelle Ausschlusssituation oder Rechtsverletzung.",
+                "reference_frame": "Art. 19 UN-BRK: selbstbestimmtes Leben und Einbeziehung in die Gemeinschaft",
+                "source_ids": [
+                  "research-dimr-living"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "neutral",
+              "label": "Der bestehende Förderkredit kann einen Teil der Finanzierungslücke abfedern",
+              "mechanism": "Ein Kredit kann einzelne Umbauten trotz geringerer Zuschüsse finanzierbar machen, erhöht aber die Rückzahlungsverpflichtung und ersetzt einen Zuschuss nicht für jeden Haushalt wirtschaftlich gleichwertig.",
+              "recipients": [
+                "Haushalte mit ausreichender Kredittragfähigkeit"
+              ],
+              "magnitude": 1,
+              "evidence": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_effect",
+              "likelihood": "medium",
+              "source_ids": [
+                "research-federal-barrier"
+              ],
+              "condition": "Haushalte sind kreditfähig und bereit, die Rückzahlungsverpflichtung zu tragen.",
+              "reference_space": "Betroffene Haushalte unter reduzierter Zuschussförderung gegenüber der Baseline mit fortgeführtem Zuschussangebot.",
+              "time_horizon": "Während Finanzierung und Rückzahlung des jeweiligen Umbaus.",
+              "path_quality": [
+                "indirect",
+                "weak"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Kredit und Zuschuss werden als unterschiedliche Instrumente behandelt; eine vollständige Substitution wird nicht angenommen.",
+              "source_support": "Die Bundesförderdatenbank belegt den bestehenden Förderkredit, nicht dessen Nutzung oder wirtschaftliche Gleichwertigkeit für konkrete Haushalte.",
+              "limitations": "Keine Daten zu Kreditaufnahme, Ablehnungen, Zinssensitivität oder Einkommen der Betroffenen.",
+              "first_order": "Ein Teil der Haushalte kann trotz geringerer Zuschüsse eine Kreditfinanzierung nutzen.",
+              "second_order": "Dadurch können einzelne Umbauten dennoch stattfinden, allerdings mit höherer finanzieller Eigenbelastung.",
+              "third_order": "Eine vollständige Kompensation des geringeren Zuschussangebots ist nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Für nicht kreditfähige oder kreditunwillige Haushalte entfällt die Minderung; für andere kann sie einzelne Vorhaben ermöglichen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "initial",
+              "research_result": "Das Kreditprogramm existiert; Umfang seiner tatsächlichen kompensierenden Wirkung gegenüber geringeren Zuschüssen ist unbekannt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Nur ein Teil der betroffenen Haushalte dürfte Kreditfinanzierung nutzen können oder wollen.",
+                  "source_ids": [
+                    "research-federal-barrier"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein Kredit kann Finanzierung ermöglichen, entspricht aber keinem Zuschuss.",
+                  "source_ids": [
+                    "research-federal-barrier"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Minderungsbeitrag betrifft die Finanzierung eines konkreten Vorhabens.",
+                  "source_ids": [
+                    "research-federal-barrier"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Die Finanzierungsform begründet keine irreversible gesellschaftliche Zustandsänderung.",
+                  "source_ids": [
+                    "research-federal-barrier"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Finanziell schwächere Haushalte können von Kreditfinanzierung weniger profitieren; konkrete Verteilung ist unbekannt.",
+                  "source_ids": [
+                    "research-federal-barrier",
+                    "research-dimr-living"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Kredit ist ein alternatives Einzelinstrument und verändert den Hauptpfad reduzierter Zuschussreichweite nur begrenzt.",
+                  "source_ids": [
+                    "research-federal-barrier"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der bestehende Kredit ist eine mögliche Schadensminderung, aber kein eigenständiger Schutzgrenzenpfad.",
+                "reference_frame": "Finanzieller Zugang zu Barrierereduzierung",
+                "source_ids": [
+                  "research-federal-barrier"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Der bedingte Hauptpfad ist negativ: Deutlich weniger Zuschüsse können zusätzliche Umbauten verhindern oder verzögern und bestehende Wohnbarrieren länger bestehen lassen. Die Faktoren 3+3+4+1+4+3 ergeben 18/6 und Tragweite 3. Ein Förderkredit kann einzelne Vorhaben weiterhin ermöglichen, garantiert aber keinen gleichwertigen Zugang für finanziell schwächere Haushalte.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen vergleichbaren positiven Hauptpfad derselben Baseline. Der Förderkredit ist lediglich ein begrenzter Minderungsweg und verändert die dominante negative Einordnung nicht."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Deutlich geringere Zuschussmittel können zusätzliche barrierearme Umbauten verzögern oder verhindern",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Neue Zuschussanträge für das Programm können derzeit wegen ausgeschöpfter Mittel nicht gestellt werden.",
+              "direction": "negative",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "established",
+              "reference_frame": "Zugang zu öffentlicher Förderung für barrierearme Umbauten",
+              "reference_space": "Haushalte mit neuem Förderbedarf gegenüber einem Zustand mit offenem Antragszugang.",
+              "observed_at": "Berichtsstand 11.09.2026",
+              "temporal_status": "ongoing",
+              "magnitude": 1,
+              "mechanism": "Der Antragsstopp schließt neue Antragstellungen vorübergehend aus; daraus folgt noch nicht, dass geplante Umbauten endgültig entfallen.",
+              "recipients": [
+                "Eigentümer und Mieter mit neuem Zuschussbedarf"
+              ],
+              "time_horizon": "Bis zu einer möglichen Wiederöffnung oder Änderung des Zuschussprogramms.",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Potenziell bundesweit neue Antragsteller betroffen; tatsächliche Zahl unbekannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Betroffen ist zunächst der Förderzugang, nicht der endgültige Umbauverzicht.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer des Antragsstopps nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Der Antragszugang kann wieder geöffnet werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen mit begrenztem finanziellen Spielraum können stärker auf Förderung angewiesen sein; konkrete Verteilung fehlt.",
+                  "source_ids": [
+                    "research-dimr-living",
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Betroffen ist der Förderzugang, nicht bereits der gesamte Wohnungsbestand.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Antragsstopp erschwert Förderzugang, belegt aber keine schwere konkrete Verletzung von Gesundheit, Wohnen oder Selbstbestimmung.",
+                "reference_frame": "Zugang zu Förderung und selbstbestimmtes Wohnen",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-dimr-living"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              },
+              "presentation": {
+                "ringStatus": "emerging",
+                "ringLabel": "Erste / laufende Wirkung",
+                "magnitudeBars": 1,
+                "directionLabel": "− laufende Wirkung",
+                "shortPathLabel": "Neue Zuschussanträge für das Programm können derzeit wegen ausgeschöpfter Mittel nicht gestellt werden.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Neue Zuschussanträge für das Programm können derzeit wegen ausgeschöpfter Mittel nicht gestellt werden.",
+            "direction": "negative",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "established",
+            "reference_frame": "Zugang zu öffentlicher Förderung für barrierearme Umbauten",
+            "reference_space": "Haushalte mit neuem Förderbedarf gegenüber einem Zustand mit offenem Antragszugang.",
+            "observed_at": "Berichtsstand 11.09.2026",
+            "temporal_status": "ongoing",
+            "magnitude": 1,
+            "mechanism": "Der Antragsstopp schließt neue Antragstellungen vorübergehend aus; daraus folgt noch nicht, dass geplante Umbauten endgültig entfallen.",
+            "recipients": [
+              "Eigentümer und Mieter mit neuem Zuschussbedarf"
+            ],
+            "time_horizon": "Bis zu einer möglichen Wiederöffnung oder Änderung des Zuschussprogramms.",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 3,
+                "rationale": "Potenziell bundesweit neue Antragsteller betroffen; tatsächliche Zahl unbekannt.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 1,
+                "rationale": "Betroffen ist zunächst der Förderzugang, nicht der endgültige Umbauverzicht.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Dauer des Antragsstopps nicht belegt.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 0,
+                "rationale": "Der Antragszugang kann wieder geöffnet werden.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 2,
+                "rationale": "Menschen mit begrenztem finanziellen Spielraum können stärker auf Förderung angewiesen sein; konkrete Verteilung fehlt.",
+                "source_ids": [
+                  "research-dimr-living",
+                  "dlf-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Betroffen ist der Förderzugang, nicht bereits der gesamte Wohnungsbestand.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Der Antragsstopp erschwert Förderzugang, belegt aber keine schwere konkrete Verletzung von Gesundheit, Wohnen oder Selbstbestimmung.",
+              "reference_frame": "Zugang zu Förderung und selbstbestimmtes Wohnen",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-dimr-living"
+              ],
+              "status": "not_decisive"
+            },
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 8,
+              "divisor": 6,
+              "raw": 1.3333333333333333,
+              "rounded": 1,
+              "protection_floor": 0,
+              "final": 1
+            },
+            "presentation": {
+              "ringStatus": "emerging",
+              "ringLabel": "Erste / laufende Wirkung",
+              "magnitudeBars": 1,
+              "directionLabel": "− laufende Wirkung",
+              "shortPathLabel": "Neue Zuschussanträge für das Programm können derzeit wegen ausgeschöpfter Mittel nicht gestellt werden.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "emerging",
+          "ringLabel": "Erste / laufende Wirkung",
+          "magnitudeBars": 1,
+          "directionLabel": "− laufende Wirkung",
+          "shortPathLabel": "Neue Zuschussanträge für das Programm können derzeit wegen ausgeschöpfter Mittel nicht gestellt werden.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "none",
+          "direction": "open",
+          "magnitude": 1,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Weniger geförderte Umbauten können Ressourcenverbrauch zeitlich und technisch verschieben",
+              "mechanism": "Wenn geringere Zuschüsse dazu führen, dass barrierearme Umbauten entfallen oder verschoben werden, fällt kurzfristig bei diesen Vorhaben weniger Bau- und Materialeinsatz an. Zugleich können spätere Nachrüstungen, Ersatzmaßnahmen oder veränderte Nutzungsdauern entstehen. Welche Seite überwiegt, hängt vom konkreten Maßnahmenmix ab.",
+              "recipients": [
+                "Material- und Ressourcenverbrauch bei Wohnungsumbauten",
+                "Gebäudebestand mittelbar"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-bundestag-budget2027",
+                "research-dimr-living",
+                "research-federal-barrier"
+              ],
+              "condition": "Die berichteten geringeren Zuschussmittel werden beschlossen und führen tatsächlich dazu, dass zusätzliche Umbauten entfallen, kleiner ausfallen oder zeitlich verschoben werden.",
+              "reference_space": "Zusätzliche barrierearme Wohnungsumbauten in Deutschland, die unter einer fortgeführten Zuschussförderung stattfinden würden, gegenüber dem Pfad bei deutlich geringeren Zuschussmitteln.",
+              "time_horizon": "Ab 2027 über mehrere Förderjahre; mögliche spätere Nachrüstungs- oder Ersatzentscheidungen können darüber hinaus reichen.",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Unterstellte physische Änderung ist nur, dass sich Zahl, Zeitpunkt oder Umfang tatsächlich ausgeführter Umbauten verändert. Es wird weder ein Klima- noch ein Materialvorteil bestimmter Maßnahmen angenommen.",
+              "source_support": "DLF trägt die geplante deutliche Reduzierung der Zuschussmittel. Bundestag trägt den noch offenen Haushaltsstatus. DIMR belegt den bestehenden Mangel an barrierefreiem Wohnraum. Die Bundesförderdatenbank belegt einen alternativen Förderkredit. Keine Quelle bestimmt die Umweltbilanz konkreter Umbauten.",
+              "limitations": "Unbekannt sind Zahl und Art entfallender Umbauten, verwendete Materialien, Energiebedarf, Lebensdauerwirkungen sowie spätere Ersatz- oder Nachrüstungsmaßnahmen. Deshalb bleibt die Netto-Richtung offen.",
+              "first_order": "Entfallende oder kleinere Umbauten können kurzfristig weniger zusätzlichen Bau- und Materialeinsatz verursachen.",
+              "second_order": "Verschobene Anpassungen können später neue Nachrüstungs-, Ersatz- oder Umbauentscheidungen auslösen und den Ressourceneinsatz zeitlich verlagern.",
+              "third_order": "Nur bei dauerhaft vielen veränderten Investitionsentscheidungen könnte sich der Ressourcenpfad im Wohnungsbestand merklich verändern; dafür fehlen derzeit belastbare Umfangsdaten.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Bei wenigen tatsächlich veränderten Vorhaben bleibt der physische Effekt praktisch gering. Bei über mehrere Jahre deutlich weniger Umbauten kann ein begrenzter Ressourcenpfad entstehen, dessen Netto-Richtung vom Maßnahmenmix abhängt."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen belegen Förderänderung, Wohnraumkontext und alternative Finanzierung, aber keine Umweltbilanz. Der physische Mechanismus veränderter Umbautätigkeit ist plausibel; Richtung und Umfang bleiben deshalb als niedrige Evidenz und konservative Magnitude 1 modelliert.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Physisch betroffen wäre nur der Teil der Wohnungsumbauten, der wegen der Förderänderung tatsächlich entfällt oder verschoben wird, nicht der gesamte Gebäudebestand.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-federal-barrier"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Einzelne barrierereduzierende Umbauten verändern Material- und Bauaufwand, ohne dass aus den Quellen ein besonders ressourcenintensiver Maßnahmenmix hervorgeht.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-dimr-living"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Veränderte Umbauentscheidungen können über mehrere Förderjahre wirken und teilweise in spätere Nachrüstungen verschoben werden.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-bundestag-budget2027"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Verschobene oder unterlassene Umbauten können grundsätzlich später nachgeholt werden; Ressourcenentscheidungen sind daher überwiegend reversibel.",
+                  "source_ids": [
+                    "research-federal-barrier",
+                    "research-dimr-living"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Eine besondere Belastung vulnerabler Ökosysteme oder Regionen ist nicht erkennbar; der Ressourcenpfad verteilt sich auf einzelne Wohnungsmaßnahmen.",
+                  "source_ids": [
+                    "research-dimr-living"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Der Pfad betrifft einen begrenzten Ausschnitt des Gebäudebestands und verändert ohne größere Skalierung keine tiefen Energie- oder Ressourcensysteme.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-dimr-living"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Für den modellierten Umbaupfad ist keine konkrete schwere oder irreversible ökologische Schutzgrenzverletzung begründet.",
+                "reference_frame": "Ressourcenverbrauch und natürliche Lebensgrundlagen",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-dimr-living"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die Planet-Dimension bleibt offen gerichtet und klein. Weniger Umbauten können kurzfristig Bau- und Materialeinsatz reduzieren, zugleich aber Nachrüstungen oder Ersatzentscheidungen verschieben. Die Faktoren 2+1+2+1+1+1 ergeben 8/6=1,33 und damit Magnitude 1; fehlende Umweltbilanz senkt die Evidenz, nicht die physische Tragweitenschätzung auf null.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Die gegenläufigen Ressourceneffekte entstehen innerhalb desselben noch unbekannten Umbaupfads und sind mangels konkreten Maßnahmenmixes nicht als zwei eigenständig vergleichbare materielle Hauptpfade quantifizierbar. Deshalb bleibt die Netto-Richtung offen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Weniger geförderte Umbauten können Ressourcenverbrauch zeitlich und technisch verschieben",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Weniger geförderte Umbauten können Ressourcenverbrauch zeitlich und technisch verschieben",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 3,
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Weniger geförderter Barriereabbau kann praktische gesellschaftliche Teilhabe erschweren",
+              "mechanism": "Wenn deutlich weniger Zuschüsse dazu führen, dass zusätzliche barrierearme Umbauten ausbleiben oder später erfolgen, können bestehende Wohnbarrieren länger fortbestehen. Für Menschen mit Behinderungen oder Mobilitätseinschränkungen kann dies den selbstbestimmten Zugang zu Alltag, Nachbarschaft und gesellschaftlicher Teilhabe erschweren.",
+              "recipients": [
+                "Menschen mit Behinderungen",
+                "ältere Menschen mit Mobilitätseinschränkungen",
+                "Haushalte mit geringem finanziellen Spielraum"
+              ],
+              "magnitude": 3,
+              "evidence": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-dimr-living",
+                "research-bundestag-budget2027",
+                "research-federal-barrier"
+              ],
+              "condition": "Die berichteten deutlich geringeren Zuschussansätze werden beschlossen und umgesetzt, dadurch entfallen oder verzögern sich tatsächlich zusätzliche barrierearme Umbauten und andere Finanzierungswege gleichen dies nicht vollständig aus.",
+              "reference_space": "Menschen mit konkretem Bedarf an gefördertem Barriereabbau in Deutschland gegenüber der Fortführung des bisherigen jährlichen Zuschussvolumens bei gleichen übrigen Bedingungen.",
+              "time_horizon": "Ab 2027 über mehrere Förderjahre; fortbestehende Wohnbarrieren können darüber hinaus wirken.",
+              "path_quality": [
+                "indirect",
+                "systemic"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Nicht jede unterbliebene Förderung führt automatisch zu gesellschaftlichem Ausschluss. Modelliert wird nur der Teil der Fälle, in denen ein notwendiger Barriereabbau tatsächlich nicht oder später erfolgt und dadurch Teilhabemöglichkeiten praktisch begrenzt bleiben.",
+              "source_support": "DLF trägt den aktuellen Antragsstopp und die berichteten Kürzungspläne. DIMR belegt historisch den Mangel an barrierefreiem Wohnraum und die Bedeutung selbstbestimmten Wohnens und inklusiver Gemeinschaft. Bundestag trägt den noch offenen Haushaltsprozess. Die Bundesförderdatenbank belegt einen fortbestehenden Kredit als möglichen, aber nicht gleichwertigen Finanzierungsweg.",
+              "limitations": "Keine Daten dazu, wie viele Umbauten tatsächlich entfallen, welche Personen konkret betroffen sind oder wie stark ihre gesellschaftliche Teilhabe dadurch eingeschränkt würde. Eine bereits eingetretene UN-BRK-Verletzung wird nicht behauptet.",
+              "first_order": "Weniger Zuschussmittel können die Zahl zusätzlich geförderter barrierearmer Umbauten begrenzen.",
+              "second_order": "Bestehende Wohnbarrieren können für betroffene Menschen länger bestehen bleiben und selbstständige Alltagswege oder Nutzungsmöglichkeiten erschweren.",
+              "third_order": "Bei dauerhaft langsamem Barriereabbau können praktische Teilhabe und Einbeziehung in die Gemeinschaft für einzelne Gruppen strukturell schwieriger erreichbar bleiben; ein institutioneller Kontrollverlust folgt daraus nicht.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Bei geringer tatsächlicher Zahl ausfallender Umbauten bleibt der Teilhabeeffekt begrenzt. Bei dauerhaft hoher ungedeckter Nachfrage und lang fortbestehenden Barrieren kann die Wirkung für betroffene Gruppen deutlich sein."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "DIMR stützt den Zusammenhang zwischen barrierefreiem Wohnraum, selbstbestimmtem Leben und inklusiver Gemeinschaft. DLF trägt die geplante Förderreduktion, nicht deren spätere Teilhabewirkung. Der Pfad bleibt daher ex ante und bedingt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung für eine bundesweit verteilte Gruppe mit konkretem Umbau- und Förderbedarf. Die Förderung ist bundesweit zugänglich, betrifft aber nicht automatisch den Großteil der Bevölkerung; Zahl der zusätzlich entfallenden Vorhaben ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-federal-barrier"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Fortbestehende Wohnbarrieren können praktische Alltags- und Teilhabemöglichkeiten spürbar einschränken, ohne automatisch vollständigen gesellschaftlichen Ausschluss zu verursachen.",
+                  "source_ids": [
+                    "research-dimr-living"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Unterbleibt ein Umbau, können bauliche Barrieren über Jahre bestehen bleiben; die Förderplanung betrifft mehrere Jahre.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-dimr-living"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Barrieren können später grundsätzlich noch beseitigt werden, wenn Finanzierung und bauliche Voraussetzungen vorhanden sind.",
+                  "source_ids": [
+                    "research-dimr-living",
+                    "research-federal-barrier"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Menschen mit Behinderungen, Mobilitätseinschränkungen und geringen finanziellen Spielräumen können von Wohnbarrieren und fehlender Finanzierung überproportional betroffen sein.",
+                  "source_ids": [
+                    "research-dimr-living"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Der Pfad betrifft praktische Teilhabe über den Wohnraumzugang, verändert aber nicht unmittelbar demokratische Institutionen, Wahlen oder staatliche Kontrollmechanismen.",
+                  "source_ids": [
+                    "research-dimr-living"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Selbstbestimmtes Leben und Einbeziehung in die Gemeinschaft nach Art. 19 UN-BRK sind zentrale Referenzgüter. Die geplante Förderkürzung belegt jedoch noch keine konkrete schwere individuelle Ausschlusssituation oder bereits eingetretene Rechtsverletzung.",
+                "reference_frame": "Art. 19 UN-BRK: selbstbestimmtes Leben und Einbeziehung in die Gemeinschaft",
+                "source_ids": [
+                  "research-dimr-living"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "neutral",
+              "label": "Der bestehende Förderkredit kann einzelne Teilhaberisiken mindern, ersetzt den Zuschuss aber nicht allgemein",
+              "mechanism": "Ein Förderkredit kann einzelnen kreditfähigen Haushalten ermöglichen, einen Umbau trotz geringerer Zuschüsse zu finanzieren. Wegen Rückzahlungsverpflichtung ist er kein wirtschaftlich gleichwertiger Ersatz für jeden Haushalt.",
+              "recipients": [
+                "kreditfähige Haushalte mit Bedarf an Barrierereduzierung"
+              ],
+              "magnitude": 1,
+              "evidence": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_effect",
+              "likelihood": "medium",
+              "source_ids": [
+                "research-federal-barrier"
+              ],
+              "condition": "Betroffene Haushalte sind kreditfähig und akzeptieren die Rückzahlungsverpflichtung.",
+              "reference_space": "Teil der Haushalte mit Umbauabsicht unter reduzierter Zuschussförderung gegenüber derselben Baseline.",
+              "time_horizon": "Während Finanzierung und Umsetzung eines konkreten Umbaus.",
+              "path_quality": [
+                "indirect",
+                "weak"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Eine vollständige Substitution des Zuschusses durch Kredit wird nicht angenommen.",
+              "source_support": "Die Bundesförderdatenbank belegt die Existenz des Förderkredits, nicht dessen Nutzung oder Gleichwertigkeit für konkrete Haushalte.",
+              "limitations": "Keine Daten zu Kreditfähigkeit, Nutzung oder Verteilungswirkung.",
+              "first_order": "Ein Teil der Haushalte kann Umbauten über Kredit finanzieren.",
+              "second_order": "Dadurch können einzelne Wohnbarrieren trotz geringerer Zuschüsse beseitigt werden.",
+              "third_order": "Eine flächendeckende Kompensation möglicher Teilhabeverluste ist nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Für nicht kreditfähige Haushalte entfällt die Minderung; für andere kann sie einzelne Umbauten ermöglichen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "initial",
+              "research_result": "Der Förderkredit besteht als alternative Finanzierung; sein tatsächlicher kompensierender Beitrag bleibt unbekannt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Nur ein Teil der potenziell betroffenen Haushalte kann oder will Kreditfinanzierung nutzen.",
+                  "source_ids": [
+                    "research-federal-barrier"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der Kredit kann einzelne Umbauten ermöglichen, verändert aber die finanzielle Belastung gegenüber einem Zuschuss.",
+                  "source_ids": [
+                    "research-federal-barrier"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Minderungsbeitrag bezieht sich auf die Finanzierung einzelner Vorhaben.",
+                  "source_ids": [
+                    "research-federal-barrier"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Der Finanzierungsweg begründet keine irreversible demokratische Zustandsänderung.",
+                  "source_ids": [
+                    "research-federal-barrier"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Finanziell schwächere Haushalte können vom Kredit weniger profitieren; konkrete Verteilung fehlt.",
+                  "source_ids": [
+                    "research-federal-barrier",
+                    "research-dimr-living"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Kredit ist ein begrenztes Förderinstrument und kein struktureller Ersatz für umfassenden Barriereabbau.",
+                  "source_ids": [
+                    "research-federal-barrier"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Kredit ist ein möglicher Minderungsweg, aber kein eigenständiger Schutzgrenzenpfad.",
+                "reference_frame": "Finanzieller Zugang zu Barrierereduzierung",
+                "source_ids": [
+                  "research-federal-barrier"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Praktische gesellschaftliche Teilhabe wird als demokratischer Schutzraum betrachtet. Fortbestehende Wohnbarrieren können diesen Zugang erschweren. Die Faktoren 3+2+4+1+4+2 ergeben 16/6 und Tragweite 3. Die Haushaltsberatung selbst ist kein Demokratieverlust; eine bereits eingetretene Rechtsverletzung wird nicht behauptet.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Die Haushaltsberatung ist ein reguläres demokratisches Verfahren und kein Gegenschaden. Der Kredit ist nur ein begrenzter Minderungsweg; deshalb bleibt der materielle Hauptpfad dominant negativ."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Weniger geförderter Barriereabbau kann praktische gesellschaftliche Teilhabe erschweren",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Weniger geförderter Barriereabbau kann praktische gesellschaftliche Teilhabe erschweren",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Mittel im laufenden Jahr",
+            "value": "50",
+            "unit": "Millionen Euro",
+            "context": "Vom Deutschlandfunk genannte Bundesmittel für das laufende Jahr.",
+            "claim_id": "wt-5bb1cea072c71034-v1-claim-2"
+          },
+          {
+            "label": "Planung kommendes Jahr",
+            "value": "sechs",
+            "unit": "Millionen Euro",
+            "context": "Von Bentele berichtete Planung des Bundesbauministeriums.",
+            "claim_id": "wt-5bb1cea072c71034-v1-claim-3"
+          },
+          {
+            "label": "Planung 2028",
+            "value": "1,5",
+            "unit": "Millionen Euro",
+            "context": "Von Bentele berichtete Planung des Bundesbauministeriums.",
+            "claim_id": "wt-5bb1cea072c71034-v1-claim-3"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "aeltere",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-11T02:52:01.680Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-11T01:26:45.000Z",
+      "last_updated": "2026-09-11T02:52:01.680Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-e970f8151cf5e03167ab",
+      "case_file": null,
+      "source_published_at": "2026-09-11T01:26:45.000Z",
+      "published_at": "2026-09-11T02:52:01.680Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob die von Bentele berichteten geplanten Förderbeträge für das kommende Jahr und 2028 im weiteren Haushaltsverfahren bestätigt, verändert oder verworfen werden.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Spätere belastbare Angaben zu den tatsächlich vorgesehenen oder beschlossenen Zuschussmitteln.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bf6a8e8bb9327812",
+          "announced_at": "2026-09-11T01:26:45.000Z",
+          "follow_up_date": "2026-09-18T02:52:01.680Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob neue Zuschussanträge wieder möglich werden.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue belastbare Meldung zur Wiederaufnahme oder Änderung des Antragszugangs.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-891945b7928de8fe",
+          "announced_at": "2026-09-11T01:26:45.000Z",
+          "follow_up_date": "2026-09-18T02:52:01.680Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/sozialverband-vdk-kritisiert-geplante-einsparungen-bei-der-foerderung-von-barrierefreiem-wohnen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-11T01:26:45.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-cf425582e30bc47c",
       "title_image": {
