@@ -1,4 +1,4 @@
-# Wirkungsticker App-Ausspielung – 11. September 2026
+# Wirkungsticker App-Ausspielung - 11. September 2026
 
 ## Änderung
 
