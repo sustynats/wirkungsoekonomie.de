@@ -2616,6 +2616,57 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
 .news-editorial-article__section { margin: 0 0 2.5rem; }
 .news-editorial-article__section h2 { margin-bottom: .8rem; font-size: clamp(1.6rem, 3vw, 2.25rem); }
 .news-editorial-article__section p { font-size: 1.06rem; line-height: 1.72; }
+
+/* Shared reading rhythm for approved books, columns and media reviews. */
+.news-editorial-article__main .news-editorial-article__section {
+  margin-block: 0 clamp(2.5rem, 5vw, 3.5rem);
+  max-width: 72ch;
+}
+.news-editorial-article__section > :is(h2, h3, h4) {
+  text-wrap: balance;
+  line-height: 1.22;
+  margin-block: 0 1rem;
+}
+.news-editorial-article__section > :is(p, ul, ol, blockquote) + :is(h2, h3, h4) {
+  margin-block-start: 2.2rem;
+}
+.news-editorial-article__main .news-editorial-article__section > p + p,
+.news-author-perspective > p + p { margin-block-start: 1.1rem; }
+.news-editorial-article__section > :is(ul, ol) { margin-block: 1.2rem; padding-inline-start: 1.35rem; }
+.news-editorial-article__section li + li { margin-block-start: .55rem; }
+.news-editorial-article__main .news-author-perspective {
+  margin-block: 3rem;
+  padding: clamp(1.2rem, 4vw, 2.4rem);
+  background: #f6f0de;
+  border: 1px solid #c4af6b;
+  border-inline-start: .3rem solid #a27925;
+  border-radius: 1rem;
+}
+.news-author-perspective__header {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  margin-block-end: 1.5rem;
+}
+.news-author-perspective__header .news-author-perspective__portrait {
+  display: block;
+  width: 5rem;
+  height: auto;
+  border-radius: .6rem;
+}
+.news-author-perspective__header .news-author-perspective__byline {
+  margin: 0 0 .4rem;
+  font-size: .8rem;
+  line-height: 1.5;
+  color: #625025;
+  font-weight: 700;
+}
+.news-author-perspective__header h2 { margin: 0; font-size: clamp(1.5rem, 4vw, 2.1rem); }
+@media (max-width: 380px) {
+  .news-author-perspective__header { grid-template-columns: 3.75rem minmax(0, 1fr); gap: .7rem; }
+  .news-author-perspective__header .news-author-perspective__portrait { width: 3.75rem; }
+}
 .news-editorial-article__aside { position: sticky; top: 6rem; display: grid; gap: 1rem; }
 .news-editorial-author-image { width: 100%; max-height: 25rem; object-fit: cover; object-position: 50% 28%; border-radius: .85rem; }
 .news-editorial-sources, .news-editorial-ledger, .news-editorial-counterevidence { display: grid; gap: .8rem; padding-left: 1.25rem; }
