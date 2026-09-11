@@ -135,7 +135,7 @@ test('Discord notice is private and sent once per new preview',async t=>{
 });
 
 test('manual news research creates a native bridge job and never a personal article',async t=>{
- const f=setup(t),j=await job(f);j.intake.kind='news';j.input.request.kind='news';j.intake.news_research={...preview(),format:'news'};j.intake.news_research.sources.unshift({url:'https://example.org/unavailable',title:'Nicht erreichbare Zusatzquelle'});f.store.put(j);
+ const f=setup(t),j=await job(f);j.intake.kind='news';j.input.request.kind='news';j.intake.news_research={...preview(),format:'news',title:'Synthetisch: Kommune eröffnet eine Bibliothek'};j.intake.news_research.sources.unshift({url:'https://example.org/unavailable',title:'Nicht erreichbare Zusatzquelle'});f.store.put(j);
  const {prepareIntakeNews}=await import('../../scripts/news/bridge/intake-news.mjs');
  const source={source_id:'test-news',name:'Test',url:'https://example.org',feed_url:'https://example.org/feed',role:'A',publisher_id:'test',source_type:'media_rss',primary_source:false};
  const article={headline:'Synthetisch: Kommune eröffnet eine Bibliothek',description:'Eine neue öffentliche Bibliothek bietet zusätzliche Arbeitsplätze zum Lernen. Der Fall ist vollständig synthetisch und dient ausschließlich der technischen Prüfung.',datePublished:new Date().toISOString(),'@type':'NewsArticle'};
@@ -152,4 +152,33 @@ test('private previews waiting for owner approval do not fill the research queue
  const f=setup(t);
  for(let i=0;i<12;i++)f.store.put({input:{job_id:'wt_20260910T000000Z_'+i.toString(16).padStart(24,'0'),job_type:'editorial_request'},status:'accepted',accepted:{staged:true}});
  const created=await job(f);assert.equal(created.input.job_type,'editorial_request');assert.equal(f.approval.claimPublications().length,0);
+});
+
+test('a manual lead is provenance, while independent registered articles supply the facts',async t=>{
+ const {prepareIntakeNews}=await import('../../scripts/news/bridge/intake-news.mjs');
+ for(const scenario of ['social_tip','no_link','unbound_tip','unrelated_article','unavailable_article'])await t.test(scenario,async t=>{
+  const f=setup(t),j=await job(f),lead='https://social.example/tip';
+  j.intake.kind='news';j.input.request.kind='news';j.input.request.brief='Eine Kommune eröffnet eine Bibliothek.';
+  j.input.request.links=scenario==='no_link'?[]:[lead];
+  j.intake.news_research={...preview(),format:'news',title:'Eine Kommune eröffnet eine Bibliothek',subtitle:'Zusätzliche öffentliche Räume zum Lernen.',sources:[{url:'https://example.org/source',title:'Eigenständiger Nachrichtenbeleg'}]};
+  if(scenario!=='unbound_tip'&&scenario!=='no_link')j.intake.news_research.sources.unshift({url:lead,title:'Nutzerhinweis'});
+  f.store.put(j);
+  const source={source_id:'test-news',name:'Test',url:'https://example.org',feed_url:'https://example.org/feed',role:'A',publisher_id:'test',source_type:'media_rss',primary_source:false};
+  const article={'@type':'NewsArticle',headline:scenario==='unrelated_article'?'Ein Waldbrand zerstört ein Hotel in Kanada':'Eine Kommune eröffnet eine Bibliothek',description:scenario==='unrelated_article'?'Ein kanadisches Hotel wurde vollständig durch einen Waldbrand zerstört. Feuerwehrleute konnten das Feuer unter Kontrolle bringen. Die Ermittlungen zur Ursache laufen.':'Die Kommune eröffnet eine neue öffentliche Bibliothek. Sie bietet zusätzliche Lernräume und Arbeitsplätze für die Bevölkerung. Der gesamte Fall dient ausschließlich einem synthetischen Test.',datePublished:new Date().toISOString()};
+  const calls=[];const fetchArticle=async({url})=>{calls.push(url);if(scenario==='unavailable_article')throw Error('SOURCE_TIMEOUT');return {final_url:url,body:'<script type="application/ld+json">'+JSON.stringify(article)+'</script><article><p>'+article.description+'</p></article>'};};
+  await prepareIntakeNews({...f,registry:{sources:[source],policy:{}},fetchArticle});
+  const parent=f.store.get(j.input.job_id),child=f.store.get(parent.intake.news_job_id||'');
+  assert.ok(!calls.includes(lead),'an unregistered social tip must not be fetched as evidence');
+  assert.equal(f.approval.list(owner).length,0,'research never skips the regular analysis and approval');
+  if(['social_tip','no_link'].includes(scenario)){
+   assert.equal(child.input.job_type,'new_story');assert.equal(child.intake_news_parent,j.input.job_id);
+   assert.deepEqual(parent.intake.source_provenance.lead_urls,j.input.request.links);
+   assert.deepEqual(parent.intake.source_provenance.verified_source_urls,['https://example.org/source']);
+   assert.ok(child.input.wirkungsticker.analysis_prompt.includes(j.input.request.brief));
+   const count=f.store.all().length;await prepareIntakeNews({...f,registry:{sources:[source],policy:{}},fetchArticle});assert.equal(f.store.all().length,count);
+  }else{
+   assert.equal(child,null);
+   assert.equal(parent.last_error.error_code,{unbound_tip:'INTAKE_NEWS_LEAD_UNBOUND',unrelated_article:'INTAKE_NEWS_SOURCE_MISMATCH',unavailable_article:'INTAKE_NEWS_VERIFIED_SOURCE_REQUIRED'}[scenario]);
+  }
+ });
 });
