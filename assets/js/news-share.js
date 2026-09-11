@@ -1,8 +1,9 @@
 (function () {
   "use strict";
 
-  var buttons = document.querySelectorAll("[data-news-share-button]");
-  if (!buttons.length) return;
+  if (window.woekNewsShareBound) return;
+  window.woekNewsShareBound = true;
+  var bound = new WeakSet();
 
   function legacyCopy(text) {
     var field = document.createElement("textarea");
@@ -36,7 +37,10 @@
     return legacyCopy(url);
   }
 
-  buttons.forEach(function (button) {
+  function bindShares() {
+  document.querySelectorAll("[data-news-share-button]").forEach(function (button) {
+    if (bound.has(button)) return;
+    bound.add(button);
     var container = button.closest("[data-news-share]");
     var status = container ? container.querySelector("[data-news-share-status]") : null;
 
@@ -68,4 +72,7 @@
       announce(copied ? "Link zur Nachricht kopiert." : "Bitte kopiere diesen Nachrichtenlink: " + url);
     });
   });
+  }
+  bindShares();
+  document.addEventListener("wirkungsraum:content-added", bindShares);
 })();
