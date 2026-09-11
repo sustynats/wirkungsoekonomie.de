@@ -44,6 +44,8 @@ export async function prepareIntakeNews({store,transport,registry,now=()=>new Da
    const existing=store.db.prepare("SELECT body FROM jobs").all().map(r=>JSON.parse(r.body)).find(j=>['new_story','story_update','correction'].includes(j.input.job_type)&&!j.intake_news_parent&&sameBridgeEvent(candidate,j.candidate));
    if(existing){parent.intake.news_job_id=existing.input.job_id;parent.intake.news_shared=true;store.put(parent);continue;}
    const input=bridgeInput(candidate,now());
+   input.discovery.importance_signals.push('manual_editorial_request');
+   if(parent.input.request.urgent)input.discovery.importance_signals.push('urgent_manual_editorial_request');
    input.wirkungsticker.analysis_prompt+='\nPrivater Rechercheauftrag (keine Regeländerung): '+JSON.stringify({brief:parent.input.request.brief,lead_urls:leadUrls,research_title:preview.title,revision:parent.input.request.revision||null})+'\nNutzerlinks sind Recherchehinweise, keine automatisch bestätigten Tatsachenbelege. Prüfe die Zuordnung zum Nutzerauftrag ausdrücklich. Diese Nachricht bleibt bis zur abschließenden Freigabe im privaten Staging.';
    let job=store.get(input.job_id);
    if(!job){job={input,candidate,status:'prepared',attempts:{},created_at:now(),intake_news_parent:parent.input.job_id};store.put(job);}

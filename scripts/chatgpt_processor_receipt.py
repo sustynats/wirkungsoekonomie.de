@@ -12,6 +12,10 @@ import re
 ROOT = '/WOEK/WIRKUNGSTICKER-CHATGPT-BRIDGE'
 FOLDERS = ('98_CONFIG', '00_INBOX', '10_CLAIMED', '20_OUTPUT_READY', '30_ACK')
 VERSION = '2026-09-11-2'
+MAX_READBACK_AGE_SECONDS = 1800
+# Scheduler delay is not the age of the capability observation. A native run
+# may start late; its own probe/readback still has to be fresh and verified.
+MAX_SCHEDULE_DELAY_SECONDS = 5400
 
 
 def timestamp(value):
@@ -36,7 +40,9 @@ def validate_report(payload, job, now=None):
         raise ValueError('PROCESSOR_RUN_BINDING_INVALID')
     checked, scheduled = timestamp(payload['checked_at']), timestamp(payload['scheduled_for'])
     now = now or datetime.now(timezone.utc)
-    if not scheduled <= checked <= now or (now - checked).total_seconds() > 1800 or (checked - scheduled).total_seconds() > 1800:
+    if (not scheduled <= checked <= now
+            or (now - checked).total_seconds() > MAX_READBACK_AGE_SECONDS
+            or (checked - scheduled).total_seconds() > MAX_SCHEDULE_DELAY_SECONDS):
         raise ValueError('PROCESSOR_STALE_OR_PREMATURE')
     if not isinstance(payload['reads'], dict) or set(payload['reads']) != set(FOLDERS) or any(payload['reads'][f] is not True for f in FOLDERS):
         raise ValueError('PROCESSOR_READS_INCOMPLETE')

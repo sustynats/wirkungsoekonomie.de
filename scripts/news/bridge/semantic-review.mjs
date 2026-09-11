@@ -1,3 +1,4 @@
+import { isHistoricalJob } from './processor.mjs';
 import { verifyImpactResearch, researchSourceSchema } from './impact-research.mjs';
 import { hash, bridgePath, parsePacket } from './contract.mjs';
 import { IMPACT_VERSION, IMPACT_CONTRACT_FILE, IMPACT_RULE, IMPACT_SCHEMA, IMPACT_DEFS } from '../impact-assessment.mjs';
@@ -64,6 +65,8 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
       processing_mode: 'dropbox_chatgpt_bridge', contract_path: bridgePath('98_CONFIG', IMPACT_CONTRACT_FILE),
       impact_version: IMPACT_VERSION, semantics_revision: POTENTIAL_REVISION,
       parent_job_id: job.input.job_id, parent_output_hash: outputHash,
+      backfill: isHistoricalJob(job), manual_request: Boolean(job.intake_news_parent||job.candidate?.manual_request||job.input.discovery?.importance_signals?.includes('manual_editorial_request')),
+      urgent: Boolean(job.input.urgent||job.input.request?.urgent||job.candidate?.urgent||job.input.discovery?.importance_signals?.includes('urgent_manual_editorial_request')),
       instructions: `Unabhängiger zweiter fachlicher Prüfpass: Beurteile Quellen und Wirkungsmetadaten neu, ohne die Entscheidung des ersten Autors zu übernehmen. ${IMPACT_RULE} Prüfe auch Quelle gegen Zusammenfassung, Überzeichnung, unterschlagene Gegenpfade und begründete Nichtkompensation. Eine amtliche Einstufung ist kein Verbot und ein Programm kein Folgenbeweis. Korrigiere ausschließlich impact_assessment, keine Originalnachricht oder persönliche Meinung. Bei Kernfehlern, die sich aus den gebundenen Quellen nicht beheben lassen: needs_review. Keine Bilder, keine Anbieter-API. Prüfe alle aufgeführten Checks einzeln mit Begründung. Ein Prüflabel ohne fachliche Prüfung genügt nicht. Gib das vollständige geprüfte impact_assessment zurück. output.json atomar zuletzt; Claim-/ACK-Regeln bleiben erhalten.`,
       record: reviewRecord,
       proposed_assessment: proposed,
