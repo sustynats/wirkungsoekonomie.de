@@ -2,7 +2,7 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-10T23:29:10.002Z",
+  "updated_at": "2026-09-11T00:07:07.128Z",
   "stories": [
     {
       "story_id": "wt-2e8df4ac304551de",
@@ -12291,17 +12291,17 @@
         "mode": "editorial",
         "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-6c03eaef419dfa34-og.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-1f83358fb9f25df5-og.png",
           "width": 1200,
           "height": 630
         },
         "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-f65dada69d416afe-wide.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-6c27416ae799f973-wide.png",
           "width": 1200,
           "height": 675
         },
         "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-8e0d23cf42e43501-square.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32b3751a955beeba-4463fd9539585925-square.png",
           "width": 1080,
           "height": 1080
         },
@@ -12320,11 +12320,1050 @@
         "Klima"
       ],
       "status": "laufende Umsetzung",
-      "analysis_type": "ex_ante",
+      "analysis_type": "ongoing",
       "importance": "mittel",
-      "impact_assessment": null,
-      "impact_sources": [],
-      "dimensions": null,
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Aktueller Bericht über den Tauchaer Bewässerungsversuch; amtlicher Durchführungszeitraum Oktober 2025 bis September 2027",
+        "evaluation_target": {
+          "label": "Erprobung und mögliche spätere Anwendung präziser Unterflurbewässerung im Freilandgemüsebau",
+          "type": "technology"
+        },
+        "temporal_status": "ongoing",
+        "systemic_relevance": "medium",
+        "baseline": "Betriebsübliche oberirdische Bewässerung bei vergleichbaren Kulturen, Boden- und Wetterbedingungen; für Wasserfolgen einschließlich nutzbarer Rückflüsse.",
+        "counterfactual": "Ohne zusätzliche Versuchstechnik bliebe die Vergleichsbewässerung maßgeblich. Andere Anpassungen und Forschung wären weiterhin möglich.",
+        "reference_frame": [
+          "Anbausicherheit und tragfähige Lebensbedingungen, SDG 2 und 8",
+          "Nachhaltige Wassernutzung und Ökosystemschutz, SDG 6 und 15",
+          "Nachvollziehbare verantwortliche Entscheidungen, SDG 16"
+        ],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "likelihood": "medium",
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "research_pass": "second_pass",
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "label": "Gezieltere Bewässerung könnte Anbausicherheit und betriebliche Spielräume verbessern",
+                "direction": "positive",
+                "magnitude": 2,
+                "likelihood": "medium",
+                "evidence": "medium",
+                "path_quality": [
+                  "direct",
+                  "indirect"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "source_ids": [
+                  "mdr-nachrichten",
+                  "research-lfulg-taucha-unterflur"
+                ],
+                "mechanism": "Wenn bedarfsgerechte Wasserzufuhr bei wirtschaftlich tragbarem Aufwand den Gemüseanbau zuverlässiger macht, könnten Ertragsausfälle und betriebliche Belastungen geringer werden. Ob Ertrag, Qualität und Gesamtkosten günstiger ausfallen, muss der Vergleichsversuch erst zeigen.",
+                "recipients": [
+                  "Beschäftigte und Mitglieder des beteiligten Gemüsebaubetriebs",
+                  "Bei späterer Übertragung weitere Gemüsebaubetriebe und ihre Abnehmer"
+                ],
+                "reference_space": "Beteiligter Freilandgemüsebau bei gleichen Kulturen, Böden und Wetterbedingungen gegenüber der betriebsüblichen oberirdischen Bewässerung.",
+                "time_horizon": "Versuch bis September 2027; weitere Anbauperioden nur bei erfolgreicher Anwendung.",
+                "condition": "Wasser erreicht die Kulturen passend, Ertrag und Qualität bleiben mindestens erhalten, Einbau und Wartung sind wirtschaftlich tragbar.",
+                "assumptions": "Bewertet wird der konkrete betriebliche Vorteil einer funktionierenden Anwendung, kein landesweiter Ernährungssicherungseffekt.",
+                "source_support": "Der amtliche Versuch prüft ausdrücklich Ertrag und Qualität im Methodenvergleich. Das stützt den Prüfpfad, nicht ein positives Messergebnis.",
+                "limitations": "Keine gebundenen abschließenden Ertrags- oder Kostendaten. Einbau, Wartung und Unterschiede zwischen Kulturen können den Vorteil begrenzen oder umkehren.",
+                "first_order": "Die Wasserzufuhr zum Wurzelraum verändert sich.",
+                "second_order": "Bei erfolgreicher Steuerung könnten Trockenstress und betriebliche Ausfallrisiken sinken.",
+                "third_order": "Übertragbare Ergebnisse könnten zukünftige betriebliche Anpassungsentscheidungen verbessern; flächendeckende Umsetzung ist nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Ohne Ertrags- oder Kostenvorteil praktisch vernachlässigbare zusätzliche Verbesserung; bei wiederholter erfolgreicher Anwendung deutlicher betrieblicher Nutzen."
+                },
+                "research_result": "Originalbericht und amtlichen Vergleichsaufbau geprüft. Versuchszeitraum Oktober 2025 bis September 2027; aktuelle Berichterstattung ist kein Beleg eines erst heute begonnenen Projekts.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Zunächst lokaler Betrieb und begrenzte Anbauflächen; Ausweitung bleibt ein gesondertes Szenario.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Modelliert ist ein begrenzter Vorteil für Produktionssicherheit, keine bereits nachgewiesene Existenzsicherung.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Bei erfolgreicher Anwendung können mehrere Anbauperioden betroffen sein.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Betriebliche Vorgehensweisen lassen sich grundsätzlich anpassen; kein irreversibler Wohlfahrtsgewinn belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betriebe mit wenig Wasser oder engen Reserven könnten stärker profitieren; extreme Lastkonzentration ist nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Die Erkenntnis kann weitere betriebliche Entscheidungen beeinflussen, ohne die Agrarordnung umzubauen.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "status": "not_decisive",
+                  "rationale": "Für den konkret abgegrenzten Pfad ist keine schwere Schutzgrenzverletzung belegt oder als notwendiger Bestandteil modelliert. Es gilt kein pauschaler Mindestwert aus dem Thema.",
+                  "reference_frame": "Beteiligter Freilandgemüsebau bei gleichen Kulturen, Böden und Wetterbedingungen gegenüber der betriebsüblichen oberirdischen Bewässerung.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur"
+                  ]
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Wenn bedarfsgerechte Wasserzufuhr bei wirtschaftlich tragbarem Aufwand den Gemüseanbau zuverlässiger macht, könnten Ertragsausfälle und betriebliche Belastungen geringer werden. Ob Ertrag, Qualität und Gesamtkosten günstiger ausfallen, muss der Vergleichsversuch erst zeigen. Keine gebundenen abschließenden Ertrags- oder Kostendaten. Einbau, Wartung und Unterschiede zwischen Kulturen können den Vorteil begrenzen oder umkehren.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Gezieltere Bewässerung könnte Anbausicherheit und betriebliche Spielräume verbessern",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Gezieltere Bewässerung könnte Anbausicherheit und betriebliche Spielräume verbessern",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "likelihood": "medium",
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "research_pass": "second_pass",
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "label": "Weniger tatsächlich verbrauchtes Wasser könnte lokale Wasserressourcen entlasten",
+                "direction": "positive",
+                "magnitude": 2,
+                "likelihood": "medium",
+                "evidence": "medium",
+                "path_quality": [
+                  "direct",
+                  "indirect"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "source_ids": [
+                  "mdr-nachrichten",
+                  "research-lfulg-taucha-unterflur",
+                  "research-fao-real-water-savings"
+                ],
+                "mechanism": "Eine präzisere Zufuhr kann unnötige Verdunstung begrenzen. Wenn der tatsächliche Wasserverbrauch im relevanten Wasserhaushalt dadurch sinkt, könnten lokale Ressourcen entlastet werden. Weniger Bewässerungszufuhr allein beweist diesen Nettoeffekt nicht.",
+                "recipients": [
+                  "Lokale Wasserressourcen und davon abhängige Ökosysteme",
+                  "Bewässerte Böden im betrachteten Anbausystem"
+                ],
+                "reference_space": "Versuchsflächen und der dazugehörige lokale Wasserhaushalt bei vergleichbarer Produktion gegenüber üblicher Oberflächenbewässerung.",
+                "time_horizon": "Bewässerungsperioden des laufenden Versuchs und, bedingt, weitere Nutzungsjahre.",
+                "condition": "Nicht nur die zugeführte Menge, sondern der tatsächliche zusätzliche Verbrauch sinkt; veränderte Rückflüsse und zusätzliche Nutzung heben den Vorteil nicht auf.",
+                "assumptions": "Positive Richtung bezeichnet den ausdrücklich bedingten Entlastungspfad. Es wird weder eine Halbierung noch eine bereits verbesserte Grundwassersituation behauptet.",
+                "source_support": "LfULG beschreibt die Zufuhr am Wurzelraum; FAO zeigt an einem anderen Beispiel die notwendige Unterscheidung zwischen Effizienz, Verbrauch und nutzbaren Rückflüssen.",
+                "limitations": "Das 50-Prozent-Ziel ist kein Ergebnis. Rückflüsse, Ausweitung der Bewässerung, Technikmaterialien und Betriebsenergie gehören in eine vollständige Bilanz; eine solche Taucha-Bilanz liegt hier nicht vor.",
+                "first_order": "Wasser wird räumlich anders zugeführt; oberflächennahe Verluste könnten geringer werden.",
+                "second_order": "Nur bei sinkendem tatsächlichem Verbrauch kann der lokale Ressourcendruck geringer werden.",
+                "third_order": "Bei späterer Verbreitung wären Wasserrechte, Nutzung und mögliche Mehrnachfrage gemeinsam zu prüfen; technische Effizienz garantiert keine systemweite Einsparung.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Ohne reale Einsparung kein zusätzlicher Ressourcenvorteil; bei wiederholter und übertragbarer Reduktion wäre ein deutlicherer lokaler Beitrag möglich."
+                },
+                "research_result": "FAO-Gegenevidenz gezielt ergänzt. Das Shiraz-Beispiel wird als methodische Warnung verwendet, nicht als Ergebnis des sächsischen Versuchs.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der konkret belegte Versuch ist lokal; keine globale Einsparungsreichweite wird angesetzt.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur",
+                      "research-fao-real-water-savings"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Bedingte begrenzte lokale Entlastung; fehlende Messwerte werden nicht durch das 50-Prozent-Ziel ersetzt.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur",
+                      "research-fao-real-water-savings"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Wiederholte erfolgreiche Anwendung könnte über mehrere Vegetationsperioden wirken.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur",
+                      "research-fao-real-water-savings"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Verlegung und Nutzungsänderungen sind anpassbar, erfordern aber Aufwand.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur",
+                      "research-fao-real-water-savings"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Wasserabhängige Empfänger können Trockenperioden begrenzt ausweichen; konkrete schwere Schäden sind hier nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur",
+                      "research-fao-real-water-savings"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Die Anwendung beeinflusst den lokalen Wasserpfad; eine Änderung des ganzen Wassermanagements ist noch nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur",
+                      "research-fao-real-water-savings"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "status": "not_decisive",
+                  "rationale": "Für den konkret abgegrenzten Pfad ist keine schwere Schutzgrenzverletzung belegt oder als notwendiger Bestandteil modelliert. Es gilt kein pauschaler Mindestwert aus dem Thema.",
+                  "reference_frame": "Versuchsflächen und der dazugehörige lokale Wasserhaushalt bei vergleichbarer Produktion gegenüber üblicher Oberflächenbewässerung.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Eine präzisere Zufuhr kann unnötige Verdunstung begrenzen. Wenn der tatsächliche Wasserverbrauch im relevanten Wasserhaushalt dadurch sinkt, könnten lokale Ressourcen entlastet werden. Weniger Bewässerungszufuhr allein beweist diesen Nettoeffekt nicht. Das 50-Prozent-Ziel ist kein Ergebnis. Rückflüsse, Ausweitung der Bewässerung, Technikmaterialien und Betriebsenergie gehören in eine vollständige Bilanz; eine solche Taucha-Bilanz liegt hier nicht vor.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Weniger tatsächlich verbrauchtes Wasser könnte lokale Wasserressourcen entlasten",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Weniger tatsächlich verbrauchtes Wasser könnte lokale Wasserressourcen entlasten",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "research_pass": "second_pass",
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "label": "Nachvollziehbare Versuchsergebnisse könnten Wasserentscheidungen besser überprüfbar machen",
+                "direction": "positive",
+                "magnitude": 2,
+                "likelihood": "low",
+                "evidence": "low",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "source_ids": [
+                  "mdr-nachrichten",
+                  "research-lfulg-taucha-unterflur",
+                  "research-fao-real-water-savings"
+                ],
+                "mechanism": "Wenn öffentlich nachvollziehbare Vergleichsergebnisse in Beratung oder öffentliche Wasserentscheidungen eingehen, können Annahmen und Zielkonflikte besser geprüft und korrigiert werden. Die Durchführung eines Versuchs allein belegt noch keine verbesserte demokratische Entscheidung.",
+                "recipients": [
+                  "Beteiligte und betroffene Betriebe bei öffentlichen Wasserentscheidungen",
+                  "Öffentliche Stellen und Bürgerinnen und Bürger in ihrer Kontroll- und Rückkopplungsbeziehung"
+                ],
+                "reference_space": "Nachvollziehbarkeit agrarischer Wasserentscheidungen im regionalen Anwendungskontext gegenüber Entscheidungen ohne die zusätzlichen überprüfbaren Erkenntnisse.",
+                "time_horizon": "Nach Auswertung und tatsächlicher Verwendung der Ergebnisse; nicht schon durch die heutige Meldung.",
+                "condition": "Ergebnisse einschließlich Einschränkungen werden zugänglich und bei Entscheidungen tatsächlich berücksichtigt; betroffene Interessen können sich einbringen.",
+                "assumptions": "Ein zusätzlicher Erkenntnisbeitrag kann öffentliche Korrektur erleichtern. Es wird keine bestehende wissenschaftliche oder demokratische Prüfleere unterstellt.",
+                "source_support": "Der veröffentlichte amtliche Versuchsaufbau erlaubt die Prüffrage; die FAO erläutert die Bedeutung konsistenter Wasserbilanzierung. Keine Quelle misst hier politischen Vertrauens- oder Beteiligungsgewinn.",
+                "limitations": "Keine nachgewiesene konkrete Verwaltungsentscheidung, Beteiligungsänderung oder Vertrauensmessung. Werden Ergebnisse nicht genutzt oder selektiv dargestellt, kann der angenommene Vorteil ausbleiben.",
+                "first_order": "Vergleichbare Beobachtungen könnten eine zusätzliche öffentliche Informationsgrundlage schaffen.",
+                "second_order": "Damit könnten betriebliche und öffentliche Annahmen leichter überprüfbar werden.",
+                "third_order": "Nur eine wiederholte tatsächliche Nutzung in Entscheidungen könnte institutionelle Lernfähigkeit stärken; das bleibt eine schwache Hypothese.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne Nutzung ist der zusätzliche institutionelle Effekt praktisch vernachlässigbar; selbst bei Nutzung bleibt der konkrete Beitrag regional begrenzt."
+                },
+                "research_result": "Zweiter Pass prüft den indirekten Wissens- und Korrekturpfad ausdrücklich. Keine belastbare Messung einer demokratischen Zustandsänderung gefunden.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Begrenzter regionaler Nutzer- und Entscheidungskreis, kein gesamtstaatlicher Effekt aus einem Versuch.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur",
+                      "research-fao-real-water-savings"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein zusätzlicher Prüfbeitrag verändert für sich keine Grundrechte oder Gewaltenteilung.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur",
+                      "research-fao-real-water-savings"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Erkenntnisse könnten mehrere folgende Entscheidungen informieren; Dauer nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur",
+                      "research-fao-real-water-savings"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Informationen und Entscheidungen lassen sich bei neuen Befunden korrigieren.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur",
+                      "research-fao-real-water-savings"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Für diesen Informationsbeitrag ist keine besondere Lastkonzentration nachgewiesen.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur",
+                      "research-fao-real-water-savings"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein begrenzter Erkenntnisrücklauf ist denkbar; institutioneller Systemumbau wird nicht unterstellt.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-lfulg-taucha-unterflur",
+                      "research-fao-real-water-savings"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "status": "not_decisive",
+                  "rationale": "Für den konkret abgegrenzten Pfad ist keine schwere Schutzgrenzverletzung belegt oder als notwendiger Bestandteil modelliert. Es gilt kein pauschaler Mindestwert aus dem Thema.",
+                  "reference_frame": "Nachvollziehbarkeit agrarischer Wasserentscheidungen im regionalen Anwendungskontext gegenüber Entscheidungen ohne die zusätzlichen überprüfbaren Erkenntnisse.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Wenn öffentlich nachvollziehbare Vergleichsergebnisse in Beratung oder öffentliche Wasserentscheidungen eingehen, können Annahmen und Zielkonflikte besser geprüft und korrigiert werden. Die Durchführung eines Versuchs allein belegt noch keine verbesserte demokratische Entscheidung. Keine nachgewiesene konkrete Verwaltungsentscheidung, Beteiligungsänderung oder Vertrauensmessung. Werden Ergebnisse nicht genutzt oder selektiv dargestellt, kann der angenommene Vorteil ausbleiben.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Nachvollziehbare Versuchsergebnisse könnten Wasserentscheidungen besser überprüfbar machen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Nachvollziehbare Versuchsergebnisse könnten Wasserentscheidungen besser überprüfbar machen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "system_check": {
+          "central_dimensions": [
+            "human",
+            "planet"
+          ],
+          "cross_dimension_review": {
+            "human": "Wenn bedarfsgerechte Wasserzufuhr bei wirtschaftlich tragbarem Aufwand den Gemüseanbau zuverlässiger macht, könnten Ertragsausfälle und betriebliche Belastungen geringer werden. Ob Ertrag, Qualität und Gesamtkosten günstiger ausfallen, muss der Vergleichsversuch erst zeigen.",
+            "planet": "Eine präzisere Zufuhr kann unnötige Verdunstung begrenzen. Wenn der tatsächliche Wasserverbrauch im relevanten Wasserhaushalt dadurch sinkt, könnten lokale Ressourcen entlastet werden. Weniger Bewässerungszufuhr allein beweist diesen Nettoeffekt nicht.",
+            "democracy": "Wenn öffentlich nachvollziehbare Vergleichsergebnisse in Beratung oder öffentliche Wasserentscheidungen eingehen, können Annahmen und Zielkonflikte besser geprüft und korrigiert werden. Die Durchführung eines Versuchs allein belegt noch keine verbesserte demokratische Entscheidung."
+          },
+          "first_order": "Der Versuch läuft; sein Start ist ein Output und kein Beleg der angestrebten Ressourceneinsparung.",
+          "second_order": "Mögliche Ertrags-, Kosten- und Wasserfolgen werden gegenüber einer Vergleichstechnik getrennt geprüft.",
+          "third_order": "Übertragung kann Nutzungsmuster und Korrekturschleifen verändern; Rebound und institutionelle Verwendung bleiben eigene Bedingungen.",
+          "enablement": [],
+          "counter_evidence": [
+            "Keine gebundenen abschließenden Ertrags- oder Kostendaten. Einbau, Wartung und Unterschiede zwischen Kulturen können den Vorteil begrenzen oder umkehren.",
+            "Das 50-Prozent-Ziel ist kein Ergebnis. Rückflüsse, Ausweitung der Bewässerung, Technikmaterialien und Betriebsenergie gehören in eine vollständige Bilanz; eine solche Taucha-Bilanz liegt hier nicht vor.",
+            "Keine nachgewiesene konkrete Verwaltungsentscheidung, Beteiligungsänderung oder Vertrauensmessung. Werden Ergebnisse nicht genutzt oder selektiv dargestellt, kann der angenommene Vorteil ausbleiben."
+          ],
+          "source_independence": "MDR berichtet über denselben Versuch wie die zuständige Landesbehörde. FAO liefert unabhängigen methodischen Kontext, keine zweite Messung aus Taucha.",
+          "institutional_status": "Amtlich begleiteter Agrarversuch, keine neue Wasserverordnung oder garantierte Förderentscheidung."
+        },
+        "publication_status": "ready",
+        "review": {
+          "status": "reassessed",
+          "at": "2026-09-11T00:07:07.128Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Aktueller Bericht und Einsparziel, kein bestätigtes Ergebnis."
+          },
+          {
+            "source_id": "research-lfulg-taucha-unterflur",
+            "functions": [
+              "mechanism"
+            ],
+            "supported_claim": "Amtlicher Versuchsaufbau mit Vergleichsparzellen; möglicher Mechanismus präziser Wasserzufuhr. Durchführungszeitraum Oktober 2025 bis September 2027; Ergebnis und Ertragseffekt sind Forschungsfragen, keine bestätigte Halbierung."
+          },
+          {
+            "source_id": "research-fao-real-water-savings",
+            "functions": [
+              "counter_evidence"
+            ],
+            "supported_claim": "Das erläuterte Shiraz-Beispiel zeigt, warum weniger Wasserzufuhr bzw. effizientere Bewässerung nicht automatisch eine tatsächliche Einsparung im Wasserhaushalt bedeutet. Kein Messergebnis über Taucha."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Laufende Prüfung",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://www.landwirtschaft.sachsen.de/unterflurbewaesserung-im-freilandgemueseanbau-74837.html",
+          "title": "Unterflurbewässerung im Freilandgemüseanbau",
+          "publisher": "Sächsisches Landesamt für Umwelt, Landwirtschaft und Geologie",
+          "source_id": "research-lfulg-taucha-unterflur",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://www.fao.org/platforms/water-scarcity/Knowledge/knowledge-products/detail/real-water-savings-in-agriculture/en",
+          "title": "Real Water Savings in Agriculture",
+          "publisher": "Food and Agriculture Organization of the United Nations",
+          "source_id": "research-fao-real-water-savings",
+          "source_function": "counter_evidence"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "likelihood": "medium",
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "research_pass": "second_pass",
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "label": "Gezieltere Bewässerung könnte Anbausicherheit und betriebliche Spielräume verbessern",
+              "direction": "positive",
+              "magnitude": 2,
+              "likelihood": "medium",
+              "evidence": "medium",
+              "path_quality": [
+                "direct",
+                "indirect"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "source_ids": [
+                "mdr-nachrichten",
+                "research-lfulg-taucha-unterflur"
+              ],
+              "mechanism": "Wenn bedarfsgerechte Wasserzufuhr bei wirtschaftlich tragbarem Aufwand den Gemüseanbau zuverlässiger macht, könnten Ertragsausfälle und betriebliche Belastungen geringer werden. Ob Ertrag, Qualität und Gesamtkosten günstiger ausfallen, muss der Vergleichsversuch erst zeigen.",
+              "recipients": [
+                "Beschäftigte und Mitglieder des beteiligten Gemüsebaubetriebs",
+                "Bei späterer Übertragung weitere Gemüsebaubetriebe und ihre Abnehmer"
+              ],
+              "reference_space": "Beteiligter Freilandgemüsebau bei gleichen Kulturen, Böden und Wetterbedingungen gegenüber der betriebsüblichen oberirdischen Bewässerung.",
+              "time_horizon": "Versuch bis September 2027; weitere Anbauperioden nur bei erfolgreicher Anwendung.",
+              "condition": "Wasser erreicht die Kulturen passend, Ertrag und Qualität bleiben mindestens erhalten, Einbau und Wartung sind wirtschaftlich tragbar.",
+              "assumptions": "Bewertet wird der konkrete betriebliche Vorteil einer funktionierenden Anwendung, kein landesweiter Ernährungssicherungseffekt.",
+              "source_support": "Der amtliche Versuch prüft ausdrücklich Ertrag und Qualität im Methodenvergleich. Das stützt den Prüfpfad, nicht ein positives Messergebnis.",
+              "limitations": "Keine gebundenen abschließenden Ertrags- oder Kostendaten. Einbau, Wartung und Unterschiede zwischen Kulturen können den Vorteil begrenzen oder umkehren.",
+              "first_order": "Die Wasserzufuhr zum Wurzelraum verändert sich.",
+              "second_order": "Bei erfolgreicher Steuerung könnten Trockenstress und betriebliche Ausfallrisiken sinken.",
+              "third_order": "Übertragbare Ergebnisse könnten zukünftige betriebliche Anpassungsentscheidungen verbessern; flächendeckende Umsetzung ist nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Ohne Ertrags- oder Kostenvorteil praktisch vernachlässigbare zusätzliche Verbesserung; bei wiederholter erfolgreicher Anwendung deutlicher betrieblicher Nutzen."
+              },
+              "research_result": "Originalbericht und amtlichen Vergleichsaufbau geprüft. Versuchszeitraum Oktober 2025 bis September 2027; aktuelle Berichterstattung ist kein Beleg eines erst heute begonnenen Projekts.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Zunächst lokaler Betrieb und begrenzte Anbauflächen; Ausweitung bleibt ein gesondertes Szenario.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Modelliert ist ein begrenzter Vorteil für Produktionssicherheit, keine bereits nachgewiesene Existenzsicherung.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Bei erfolgreicher Anwendung können mehrere Anbauperioden betroffen sein.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Betriebliche Vorgehensweisen lassen sich grundsätzlich anpassen; kein irreversibler Wohlfahrtsgewinn belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betriebe mit wenig Wasser oder engen Reserven könnten stärker profitieren; extreme Lastkonzentration ist nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Die Erkenntnis kann weitere betriebliche Entscheidungen beeinflussen, ohne die Agrarordnung umzubauen.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "status": "not_decisive",
+                "rationale": "Für den konkret abgegrenzten Pfad ist keine schwere Schutzgrenzverletzung belegt oder als notwendiger Bestandteil modelliert. Es gilt kein pauschaler Mindestwert aus dem Thema.",
+                "reference_frame": "Beteiligter Freilandgemüsebau bei gleichen Kulturen, Böden und Wetterbedingungen gegenüber der betriebsüblichen oberirdischen Bewässerung.",
+                "source_ids": [
+                  "mdr-nachrichten",
+                  "research-lfulg-taucha-unterflur"
+                ]
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Wenn bedarfsgerechte Wasserzufuhr bei wirtschaftlich tragbarem Aufwand den Gemüseanbau zuverlässiger macht, könnten Ertragsausfälle und betriebliche Belastungen geringer werden. Ob Ertrag, Qualität und Gesamtkosten günstiger ausfallen, muss der Vergleichsversuch erst zeigen. Keine gebundenen abschließenden Ertrags- oder Kostendaten. Einbau, Wartung und Unterschiede zwischen Kulturen können den Vorteil begrenzen oder umkehren.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Gezieltere Bewässerung könnte Anbausicherheit und betriebliche Spielräume verbessern",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Gezieltere Bewässerung könnte Anbausicherheit und betriebliche Spielräume verbessern",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "likelihood": "medium",
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "research_pass": "second_pass",
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "label": "Weniger tatsächlich verbrauchtes Wasser könnte lokale Wasserressourcen entlasten",
+              "direction": "positive",
+              "magnitude": 2,
+              "likelihood": "medium",
+              "evidence": "medium",
+              "path_quality": [
+                "direct",
+                "indirect"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "source_ids": [
+                "mdr-nachrichten",
+                "research-lfulg-taucha-unterflur",
+                "research-fao-real-water-savings"
+              ],
+              "mechanism": "Eine präzisere Zufuhr kann unnötige Verdunstung begrenzen. Wenn der tatsächliche Wasserverbrauch im relevanten Wasserhaushalt dadurch sinkt, könnten lokale Ressourcen entlastet werden. Weniger Bewässerungszufuhr allein beweist diesen Nettoeffekt nicht.",
+              "recipients": [
+                "Lokale Wasserressourcen und davon abhängige Ökosysteme",
+                "Bewässerte Böden im betrachteten Anbausystem"
+              ],
+              "reference_space": "Versuchsflächen und der dazugehörige lokale Wasserhaushalt bei vergleichbarer Produktion gegenüber üblicher Oberflächenbewässerung.",
+              "time_horizon": "Bewässerungsperioden des laufenden Versuchs und, bedingt, weitere Nutzungsjahre.",
+              "condition": "Nicht nur die zugeführte Menge, sondern der tatsächliche zusätzliche Verbrauch sinkt; veränderte Rückflüsse und zusätzliche Nutzung heben den Vorteil nicht auf.",
+              "assumptions": "Positive Richtung bezeichnet den ausdrücklich bedingten Entlastungspfad. Es wird weder eine Halbierung noch eine bereits verbesserte Grundwassersituation behauptet.",
+              "source_support": "LfULG beschreibt die Zufuhr am Wurzelraum; FAO zeigt an einem anderen Beispiel die notwendige Unterscheidung zwischen Effizienz, Verbrauch und nutzbaren Rückflüssen.",
+              "limitations": "Das 50-Prozent-Ziel ist kein Ergebnis. Rückflüsse, Ausweitung der Bewässerung, Technikmaterialien und Betriebsenergie gehören in eine vollständige Bilanz; eine solche Taucha-Bilanz liegt hier nicht vor.",
+              "first_order": "Wasser wird räumlich anders zugeführt; oberflächennahe Verluste könnten geringer werden.",
+              "second_order": "Nur bei sinkendem tatsächlichem Verbrauch kann der lokale Ressourcendruck geringer werden.",
+              "third_order": "Bei späterer Verbreitung wären Wasserrechte, Nutzung und mögliche Mehrnachfrage gemeinsam zu prüfen; technische Effizienz garantiert keine systemweite Einsparung.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Ohne reale Einsparung kein zusätzlicher Ressourcenvorteil; bei wiederholter und übertragbarer Reduktion wäre ein deutlicherer lokaler Beitrag möglich."
+              },
+              "research_result": "FAO-Gegenevidenz gezielt ergänzt. Das Shiraz-Beispiel wird als methodische Warnung verwendet, nicht als Ergebnis des sächsischen Versuchs.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der konkret belegte Versuch ist lokal; keine globale Einsparungsreichweite wird angesetzt.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Bedingte begrenzte lokale Entlastung; fehlende Messwerte werden nicht durch das 50-Prozent-Ziel ersetzt.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Wiederholte erfolgreiche Anwendung könnte über mehrere Vegetationsperioden wirken.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Verlegung und Nutzungsänderungen sind anpassbar, erfordern aber Aufwand.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Wasserabhängige Empfänger können Trockenperioden begrenzt ausweichen; konkrete schwere Schäden sind hier nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Die Anwendung beeinflusst den lokalen Wasserpfad; eine Änderung des ganzen Wassermanagements ist noch nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "status": "not_decisive",
+                "rationale": "Für den konkret abgegrenzten Pfad ist keine schwere Schutzgrenzverletzung belegt oder als notwendiger Bestandteil modelliert. Es gilt kein pauschaler Mindestwert aus dem Thema.",
+                "reference_frame": "Versuchsflächen und der dazugehörige lokale Wasserhaushalt bei vergleichbarer Produktion gegenüber üblicher Oberflächenbewässerung.",
+                "source_ids": [
+                  "mdr-nachrichten",
+                  "research-lfulg-taucha-unterflur",
+                  "research-fao-real-water-savings"
+                ]
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Eine präzisere Zufuhr kann unnötige Verdunstung begrenzen. Wenn der tatsächliche Wasserverbrauch im relevanten Wasserhaushalt dadurch sinkt, könnten lokale Ressourcen entlastet werden. Weniger Bewässerungszufuhr allein beweist diesen Nettoeffekt nicht. Das 50-Prozent-Ziel ist kein Ergebnis. Rückflüsse, Ausweitung der Bewässerung, Technikmaterialien und Betriebsenergie gehören in eine vollständige Bilanz; eine solche Taucha-Bilanz liegt hier nicht vor.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Weniger tatsächlich verbrauchtes Wasser könnte lokale Wasserressourcen entlasten",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Weniger tatsächlich verbrauchtes Wasser könnte lokale Wasserressourcen entlasten",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "research_pass": "second_pass",
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "label": "Nachvollziehbare Versuchsergebnisse könnten Wasserentscheidungen besser überprüfbar machen",
+              "direction": "positive",
+              "magnitude": 2,
+              "likelihood": "low",
+              "evidence": "low",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "source_ids": [
+                "mdr-nachrichten",
+                "research-lfulg-taucha-unterflur",
+                "research-fao-real-water-savings"
+              ],
+              "mechanism": "Wenn öffentlich nachvollziehbare Vergleichsergebnisse in Beratung oder öffentliche Wasserentscheidungen eingehen, können Annahmen und Zielkonflikte besser geprüft und korrigiert werden. Die Durchführung eines Versuchs allein belegt noch keine verbesserte demokratische Entscheidung.",
+              "recipients": [
+                "Beteiligte und betroffene Betriebe bei öffentlichen Wasserentscheidungen",
+                "Öffentliche Stellen und Bürgerinnen und Bürger in ihrer Kontroll- und Rückkopplungsbeziehung"
+              ],
+              "reference_space": "Nachvollziehbarkeit agrarischer Wasserentscheidungen im regionalen Anwendungskontext gegenüber Entscheidungen ohne die zusätzlichen überprüfbaren Erkenntnisse.",
+              "time_horizon": "Nach Auswertung und tatsächlicher Verwendung der Ergebnisse; nicht schon durch die heutige Meldung.",
+              "condition": "Ergebnisse einschließlich Einschränkungen werden zugänglich und bei Entscheidungen tatsächlich berücksichtigt; betroffene Interessen können sich einbringen.",
+              "assumptions": "Ein zusätzlicher Erkenntnisbeitrag kann öffentliche Korrektur erleichtern. Es wird keine bestehende wissenschaftliche oder demokratische Prüfleere unterstellt.",
+              "source_support": "Der veröffentlichte amtliche Versuchsaufbau erlaubt die Prüffrage; die FAO erläutert die Bedeutung konsistenter Wasserbilanzierung. Keine Quelle misst hier politischen Vertrauens- oder Beteiligungsgewinn.",
+              "limitations": "Keine nachgewiesene konkrete Verwaltungsentscheidung, Beteiligungsänderung oder Vertrauensmessung. Werden Ergebnisse nicht genutzt oder selektiv dargestellt, kann der angenommene Vorteil ausbleiben.",
+              "first_order": "Vergleichbare Beobachtungen könnten eine zusätzliche öffentliche Informationsgrundlage schaffen.",
+              "second_order": "Damit könnten betriebliche und öffentliche Annahmen leichter überprüfbar werden.",
+              "third_order": "Nur eine wiederholte tatsächliche Nutzung in Entscheidungen könnte institutionelle Lernfähigkeit stärken; das bleibt eine schwache Hypothese.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne Nutzung ist der zusätzliche institutionelle Effekt praktisch vernachlässigbar; selbst bei Nutzung bleibt der konkrete Beitrag regional begrenzt."
+              },
+              "research_result": "Zweiter Pass prüft den indirekten Wissens- und Korrekturpfad ausdrücklich. Keine belastbare Messung einer demokratischen Zustandsänderung gefunden.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Begrenzter regionaler Nutzer- und Entscheidungskreis, kein gesamtstaatlicher Effekt aus einem Versuch.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein zusätzlicher Prüfbeitrag verändert für sich keine Grundrechte oder Gewaltenteilung.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Erkenntnisse könnten mehrere folgende Entscheidungen informieren; Dauer nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Informationen und Entscheidungen lassen sich bei neuen Befunden korrigieren.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Für diesen Informationsbeitrag ist keine besondere Lastkonzentration nachgewiesen.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein begrenzter Erkenntnisrücklauf ist denkbar; institutioneller Systemumbau wird nicht unterstellt.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-lfulg-taucha-unterflur",
+                    "research-fao-real-water-savings"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "status": "not_decisive",
+                "rationale": "Für den konkret abgegrenzten Pfad ist keine schwere Schutzgrenzverletzung belegt oder als notwendiger Bestandteil modelliert. Es gilt kein pauschaler Mindestwert aus dem Thema.",
+                "reference_frame": "Nachvollziehbarkeit agrarischer Wasserentscheidungen im regionalen Anwendungskontext gegenüber Entscheidungen ohne die zusätzlichen überprüfbaren Erkenntnisse.",
+                "source_ids": [
+                  "mdr-nachrichten",
+                  "research-lfulg-taucha-unterflur",
+                  "research-fao-real-water-savings"
+                ]
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Wenn öffentlich nachvollziehbare Vergleichsergebnisse in Beratung oder öffentliche Wasserentscheidungen eingehen, können Annahmen und Zielkonflikte besser geprüft und korrigiert werden. Die Durchführung eines Versuchs allein belegt noch keine verbesserte demokratische Entscheidung. Keine nachgewiesene konkrete Verwaltungsentscheidung, Beteiligungsänderung oder Vertrauensmessung. Werden Ergebnisse nicht genutzt oder selektiv dargestellt, kann der angenommene Vorteil ausbleiben.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Nachvollziehbare Versuchsergebnisse könnten Wasserentscheidungen besser überprüfbar machen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Nachvollziehbare Versuchsergebnisse könnten Wasserentscheidungen besser überprüfbar machen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
       "visuals": null,
       "media_impact": null,
       "media_analysis_version": "2.1",
