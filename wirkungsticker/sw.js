@@ -1,5 +1,5 @@
-const CACHE_NAME = "woek-wirkungsticker-shell-20260906-pull-refresh1";
-// Keep the existing article cache across this logic-only update.
+const CACHE_NAME = "woek-wirkungsticker-shell-20260911-chronological2";
+// Keep the independent notification state while refreshing the app shell.
 const NAVIGATION_CACHE_GRACE_MS = 2500;
 const NAVIGATION_NETWORK_TIMEOUT_MS = 8000;
 const CACHE_LOOKUP_TIMEOUT_MS = 1000;
