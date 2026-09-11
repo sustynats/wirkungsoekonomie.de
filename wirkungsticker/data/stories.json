@@ -2,8 +2,1870 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-11T02:16:56.361Z",
+  "updated_at": "2026-09-11T02:36:54.688Z",
   "stories": [
+    {
+      "story_id": "wt-cf425582e30bc47c",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cf425582e30bc47c-3bd29076c27e4295-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cf425582e30bc47c-b32f4a8267fdd2fa-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-cf425582e30bc47c-9fb7d316d49e5bba-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "schreck-am-fruhen-abend-erdbeben-in-worms-spurbar-bis-ludwigshafen-und-mannheim-0bc47c",
+      "title": "Erdbeben der Stärke 3,4 bei Worms bis Mannheim spürbar",
+      "source_summary": "Am Donnerstag um 17:27 Uhr wurde bei Worms ein Erdbeben der automatisch bestimmten Stärke 3,4 registriert. Die Erschütterung war unter anderem in Worms, Ludwigshafen und Mannheim spürbar; beim Landeserdbebendienst gingen rund 2.500 Wahrnehmungsmeldungen ein. Polizei und Feuerwehr berichteten bis zum jeweiligen Stand von keinen bekannten Schäden oder Verletzten.\n\nDer Landeserdbebendienst kennzeichnet seine automatische Lokalisierung ausdrücklich als vorläufig und ungeprüft. Ein vom SWR zitierter Seismologe ordnete das Beben als moderat ein und erwartete keine Schäden. Mehrere deutlich schwächere Nachbeben wurden registriert; weitere schwache Nachbeben sind möglich. Magnitude und konkrete lokale Auswirkungen sind fachlich zu trennen. Für dieses konkrete Beben ist keine Ursache durch den heutigen Klimawandel belegt.",
+      "summary": "Ein Erdbeben der automatisch bestimmten Stärke 3,4 bei Worms war bis Ludwigshafen, Mannheim und darüber hinaus spürbar; bislang sind keine Schäden oder Verletzten bekannt. Weitere schwache Nachbeben können kurzfristig erneut Verunsicherung auslösen, eine größere Schadenslage ist derzeit nicht belegt.",
+      "detail_summary": "Am Donnerstag um 17:27 Uhr wurde bei Worms ein Erdbeben der automatisch bestimmten Stärke 3,4 registriert. Die amtliche Lokalisierung ist ausdrücklich vorläufig und noch nicht überprüft; der SWR ergänzt die Einordnung eines Seismologen sowie Angaben von Polizei und Feuerwehr. Die Erschütterung war in mehreren Städten spürbar, beim Landeserdbebendienst gingen rund 2.500 Wahrnehmungsmeldungen ein. Bis zum jeweiligen Berichtsstand waren keine Schäden oder Verletzten bekannt. Mehrere deutlich schwächere Nachbeben wurden registriert; weitere schwache Nachbeben können erneut kurzzeitig verunsichern. Für Umwelt und Infrastruktur ist bislang keine materielle Zustandsverschlechterung belegt. Die Erfassung solcher Ereignisse kann bestehende Gefährdungsanalysen und Vorsorge langfristig geringfügig ergänzen, ohne bereits einen verbesserten Sicherheitszustand zu beweisen.",
+      "why_relevant": "Das Beben war in einem größeren Teil der Rhein-Neckar-Region deutlich wahrnehmbar und löste viele Meldungen aus. Der bisherige Verlauf ist zugleich beruhigend: Schäden oder Verletzte sind bislang nicht bekannt.",
+      "topic": [
+        "Umwelt"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ongoing",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bei Worms wurde am Donnerstag um 17:27 Uhr ein Erdbeben der automatisch bestimmten Stärke 3,4 registriert und in Worms, Ludwigshafen, Mannheim und weiteren Teilen der Region wahrgenommen; bis zum Berichtsstand waren keine Schäden oder Verletzten bekannt.",
+        "evaluation_target": {
+          "label": "Beobachtete und mögliche Folgen des konkreten Erdbebens bei Worms",
+          "type": "event"
+        },
+        "baseline": "Zustand von Bevölkerung, Gebäuden, Umwelt und lokalen Diensten unmittelbar vor dem Erdbeben ohne die dadurch ausgelöste Erschütterung und Wahrnehmungsreaktion.",
+        "temporal_status": "ongoing",
+        "systemic_relevance": "low",
+        "counterfactual": "Ohne das konkrete Beben wären die berichtete Erschütterung, Wahrnehmungsmeldungen und kurzfristige Verunsicherung nicht eingetreten; mögliche weitere schwache Nachbeben aus diesem Ereignis wären nicht zu erwarten.",
+        "reference_frame": [
+          "Körperliche Unversehrtheit und Gesundheit",
+          "Bevölkerungsschutz und Risikowahrnehmung",
+          "Gebäude- und Infrastruktursicherheit",
+          "regionale seismische Vorsorge"
+        ],
+        "claim_ledger": [
+          {
+            "claim": "Bei Worms wurde am Donnerstag um 17:27 Uhr ein Erdbeben der Stärke 3,4 gemeldet.",
+            "status": "primary_source_claim",
+            "source_ids": [
+              "research-led-worms-event"
+            ],
+            "note": "Amtliche automatische Lokalisierung; ausdrücklich automatisch bestimmt und noch nicht überprüft."
+          },
+          {
+            "claim": "Das Beben war unter anderem in Worms, Ludwigshafen und Mannheim spürbar.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "note": "SWR berichtet Wahrnehmungen aus mehreren Orten der Region."
+          },
+          {
+            "claim": "Bis zum jeweiligen Berichtsstand waren keine Schäden oder Verletzten bekannt.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "note": "Zeitgebundener Stand, keine Garantie für später ausbleibende Meldungen."
+          },
+          {
+            "claim": "Rund 2.500 Wahrnehmungsmeldungen gingen beim Landeserdbebendienst ein.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "note": "Vom SWR dem Landeserdbebendienst zugeschrieben."
+          },
+          {
+            "claim": "Mehrere deutlich schwächere Nachbeben wurden registriert.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "note": "Zwischen den SWR-Fassungen zeitliche Aktualisierung von zwei auf drei Nachbeben."
+          }
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Beobachtet sind die Wahrnehmung der Erschütterung und kurzfristige Verunsicherung; Verletzungen oder andere Gesundheitsschäden sind bislang nicht bekannt. Weitere schwache Nachbeben können erneut kurzzeitig wahrgenommen werden.",
+            "planet": "Das Beben ist ein natürliches geologisches Ereignis. Ohne bekannte Sach- oder Umweltschäden ist derzeit nur ein sehr schwacher potenzieller Pfad über mögliche spätere lokale Auswirkungen zu modellieren.",
+            "democracy": "Polizei, Feuerwehr und Warnsysteme wurden durch Meldungen beansprucht, ohne bekannte Funktionsstörung. Monitoring und Vorsorge sind etablierte institutionelle Funktionen, nicht bereits verbesserte Outcomes dieses Bebens."
+          },
+          "central_dimensions": [
+            "human"
+          ],
+          "first_order": "Regionale Erschütterung, zahlreiche Wahrnehmungsmeldungen und kurzfristige Verunsicherung; keine bekannten Verletzten oder Sachschäden bis zum Berichtsstand.",
+          "second_order": "Weitere schwache Nachbeben können erneut wahrgenommen werden und kurzzeitig zusätzliche Anfragen auslösen; konkrete Schäden werden derzeit nicht erwartet.",
+          "third_order": "Aus dem einzelnen moderaten Ereignis ist keine strukturelle Beeinträchtigung von Gesundheit, Infrastruktur oder regionaler Resilienz ableitbar.",
+          "enablement": [],
+          "counter_evidence": [
+            "Bis zum Berichtsstand sind keine Schäden oder Verletzten bekannt.",
+            "Der benannte Seismologe ordnet das Beben als moderat ein und erwartet keine Schäden.",
+            "Die amtliche Stärke 3,4 stammt aus einer automatischen, ausdrücklich noch nicht überprüften Lokalisierung.",
+            "Magnitude beschreibt nicht automatisch lokale Auswirkungen; Intensität und konkrete Schäden müssen gesondert betrachtet werden."
+          ],
+          "source_independence": "Die beiden SWR-Berichte stammen vom selben Medienhaus und gelten nicht als unabhängige Ursprungsbestätigungen. Die amtliche automatische Ereignismeldung liefert einen separaten Primärbeleg für Ort, Zeitpunkt und vorläufige Magnitude; LGRB und LGB tragen nur Mechanismus- und Vorsorgekontext.",
+          "institutional_status": "Laufendes seismisches Monitoring. Die automatische Ereignismeldung ist vorläufig; Polizei und Feuerwehr melden bis zum jeweiligen Stand keine Schadenslage. Das Ereignis begründet keine Katastrophenlage."
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Menschen in mehreren Orten nahmen die Erschütterung wahr; zahlreiche besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen wurden berichtet.",
+            "direction": "negative",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "established",
+            "reference_frame": "Wohlbefinden und kurzfristige Sicherheitsempfindung",
+            "reference_space": "Menschen im wahrnehmbaren Bereich des Bebens gegenüber dem Zustand unmittelbar davor.",
+            "observed_at": "2026-09-10 nach 17:27 Uhr",
+            "temporal_status": "ex_post",
+            "magnitude": 1,
+            "mechanism": "Die Erschütterung wurde direkt wahrgenommen und löste bei einem Teil der Bevölkerung kurzfristige Verunsicherung sowie Kontakt zu Behörden aus.",
+            "recipients": [
+              "Menschen im wahrnehmbaren Bereich des Bebens"
+            ],
+            "time_horizon": "Sekunden bis kurze Zeit nach dem Ereignis.",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 3,
+                "rationale": "Die Erschütterung wurde regional in mehreren Städten wahrgenommen; der SWR berichtet rund 2.500 Wahrnehmungsmeldungen.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "intensity": {
+                "value": 1,
+                "rationale": "Belegt sind Wahrnehmung und kurzfristige Verunsicherung, nicht Verletzungen oder gesundheitliche Schäden.",
+                "source_ids": [
+                  "swr-aktuell",
+                  "research-lgrb-intensity"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die Erschütterung dauerte Sekunden; die berichtete Verunsicherung war kurzfristig.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "irreversibility": {
+                "value": 0,
+                "rationale": "Für die beobachtete Wahrnehmungs- und Verunsicherungswirkung ist keine irreversible Veränderung belegt.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "vulnerability": {
+                "value": 1,
+                "rationale": "Keine besondere gesundheitliche Betroffenheit vulnerabler Gruppen ist dokumentiert; bewertet wird nur kurzfristige Wahrnehmung und Sorge.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "system_depth": {
+                "value": 0,
+                "rationale": "Keine strukturelle Veränderung von Gesundheit oder Versorgung ist beobachtet.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Die berichtete kurzfristige Verunsicherung berührt keine schwere Schutzgrenze; Verletzungen oder andere substanzielle Gesundheitsschäden sind bislang nicht bekannt.",
+              "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "status": "not_decisive"
+            },
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 6,
+              "divisor": 6,
+              "raw": 1,
+              "rounded": 1,
+              "protection_floor": 0,
+              "final": 1
+            }
+          }
+        ],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 1,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Weitere schwache Nachbeben können erneut kurzfristige Verunsicherung auslösen",
+                "mechanism": "Wenn weitere deutlich schwächere Nachbeben lokal spürbar werden, können Menschen erneut Erschütterungen wahrnehmen und kurzfristig verunsichert reagieren, ohne dass daraus automatisch Verletzungen oder Sachschäden folgen.",
+                "recipients": [
+                  "Menschen im lokal wahrnehmbaren Bereich möglicher Nachbeben"
+                ],
+                "magnitude": 1,
+                "evidence": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "swr-aktuell",
+                  "research-lgrb-intensity"
+                ],
+                "condition": "Weitere Nachbeben treten auf und sind für Menschen lokal wahrnehmbar.",
+                "reference_space": "Bevölkerung im lokal wahrnehmbaren Bereich weiterer Nachbeben gegenüber dem Zustand ohne weitere Erschütterung.",
+                "time_horizon": "Stunden bis wenige Tage nach dem Hauptbeben.",
+                "path_quality": [
+                  "direct",
+                  "weak"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die bereits beobachteten Nachbeben bleiben deutlich schwächer. Es werden weder Verletzungen noch Gebäudeschäden unterstellt.",
+                "source_support": "SWR berichtet bereits deutlich schwächere Nachbeben und die Möglichkeit weiterer schwacher Ereignisse. Das LGRB stützt die Trennung von Wahrnehmbarkeit und tatsächlichem Schaden.",
+                "limitations": "Ort, Stärke und Wahrnehmbarkeit künftiger Nachbeben sind offen; spätere Schäden können nicht ausgeschlossen, aber derzeit auch nicht begründet erwartet werden.",
+                "first_order": "Weitere lokale Erschütterungen können erneut wahrgenommen werden.",
+                "second_order": "Kurzfristige Sorge oder zusätzliche Anfragen bei Polizei und Warnsystemen können entstehen.",
+                "third_order": "Eine längerfristige gesundheitliche oder gesellschaftliche Folge ist bei diesem schwachen Pfad nicht plausibel belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Bleiben weitere Nachbeben unspürbar, ist die zusätzliche Human-Wirkung praktisch null; bei lokal spürbaren schwachen Nachbeben bleibt sie voraussichtlich kurz und gering."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "initial",
+                "research_result": "SWR trägt schwache Nachbeben und kurzfristige Wahrnehmungsreaktionen; LGRB zeigt, dass spürbare Intensität nicht mit Verletzung oder Gebäudeschaden gleichzusetzen ist.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Ein spürbares Nachbeben könnte erneut einen regional begrenzten Personenkreis erreichen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Erwartet wird allenfalls Wahrnehmung und kurzfristige Verunsicherung, keine belegte Gesundheitsverletzung.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-lgrb-intensity"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Wahrnehmung und unmittelbare Sorge wären kurzzeitig.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ordinale Modellschätzung: Für diesen schwachen Pfad ist keine irreversible Human-Wirkung plausibel.",
+                    "source_ids": [
+                      "research-lgrb-intensity"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Keine konkrete besondere Vulnerabilität einer betroffenen Gruppe ist belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Ordinale Modellschätzung: Keine strukturelle Gesundheits- oder Versorgungsauswirkung wird aus schwachen Nachbeben abgeleitet.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der modellierte Pfad betrifft kurzfristige Wahrnehmung und Sorge. Eine konkrete schwere Gefährdung von Leben oder körperlicher Unversehrtheit ist nicht belegt.",
+                  "reference_frame": "Körperliche Unversehrtheit und Wohlbefinden",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-lgrb-intensity"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die beobachtete Human-Wirkung beschränkt sich bislang auf Wahrnehmung und kurzfristige Verunsicherung. Für weitere schwache Nachbeben wird deshalb nur ein kleiner negativer Potenzialpfad modelliert; fehlende Schäden oder Verletzte werden nicht in hypothetisch schwere Folgen umgedeutet.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen materiellen gegenläufigen positiven Hauptpfad desselben Ereignisses. Monitoring oder behördliche Reaktion mindern Risiken, sind aber kein positiver Ausgleich gegenüber der Baseline ohne Beben."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Weitere schwache Nachbeben können erneut kurzfristige Verunsicherung auslösen",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Menschen in mehreren Orten nahmen die Erschütterung wahr; zahlreiche besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen wurden berichtet.",
+                "direction": "negative",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "medium",
+                "attribution": "established",
+                "reference_frame": "Wohlbefinden und kurzfristige Sicherheitsempfindung",
+                "reference_space": "Menschen im wahrnehmbaren Bereich des Bebens gegenüber dem Zustand unmittelbar davor.",
+                "observed_at": "2026-09-10 nach 17:27 Uhr",
+                "temporal_status": "ex_post",
+                "magnitude": 1,
+                "mechanism": "Die Erschütterung wurde direkt wahrgenommen und löste bei einem Teil der Bevölkerung kurzfristige Verunsicherung sowie Kontakt zu Behörden aus.",
+                "recipients": [
+                  "Menschen im wahrnehmbaren Bereich des Bebens"
+                ],
+                "time_horizon": "Sekunden bis kurze Zeit nach dem Ereignis.",
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die Erschütterung wurde regional in mehreren Städten wahrgenommen; der SWR berichtet rund 2.500 Wahrnehmungsmeldungen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Belegt sind Wahrnehmung und kurzfristige Verunsicherung, nicht Verletzungen oder gesundheitliche Schäden.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-lgrb-intensity"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Erschütterung dauerte Sekunden; die berichtete Verunsicherung war kurzfristig.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Für die beobachtete Wahrnehmungs- und Verunsicherungswirkung ist keine irreversible Veränderung belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Keine besondere gesundheitliche Betroffenheit vulnerabler Gruppen ist dokumentiert; bewertet wird nur kurzfristige Wahrnehmung und Sorge.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine strukturelle Veränderung von Gesundheit oder Versorgung ist beobachtet.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die berichtete kurzfristige Verunsicherung berührt keine schwere Schutzgrenze; Verletzungen oder andere substanzielle Gesundheitsschäden sind bislang nicht bekannt.",
+                  "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 1,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Menschen in mehreren Orten nahmen die Erschütterung wahr; zahlreiche besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen wurden berichtet.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Menschen in mehreren Orten nahmen die Erschütterung wahr; zahlreiche besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen wurden berichtet.",
+              "direction": "negative",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "established",
+              "reference_frame": "Wohlbefinden und kurzfristige Sicherheitsempfindung",
+              "reference_space": "Menschen im wahrnehmbaren Bereich des Bebens gegenüber dem Zustand unmittelbar davor.",
+              "observed_at": "2026-09-10 nach 17:27 Uhr",
+              "temporal_status": "ex_post",
+              "magnitude": 1,
+              "mechanism": "Die Erschütterung wurde direkt wahrgenommen und löste bei einem Teil der Bevölkerung kurzfristige Verunsicherung sowie Kontakt zu Behörden aus.",
+              "recipients": [
+                "Menschen im wahrnehmbaren Bereich des Bebens"
+              ],
+              "time_horizon": "Sekunden bis kurze Zeit nach dem Ereignis.",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die Erschütterung wurde regional in mehreren Städten wahrgenommen; der SWR berichtet rund 2.500 Wahrnehmungsmeldungen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Belegt sind Wahrnehmung und kurzfristige Verunsicherung, nicht Verletzungen oder gesundheitliche Schäden.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-lgrb-intensity"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Erschütterung dauerte Sekunden; die berichtete Verunsicherung war kurzfristig.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Für die beobachtete Wahrnehmungs- und Verunsicherungswirkung ist keine irreversible Veränderung belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Keine besondere gesundheitliche Betroffenheit vulnerabler Gruppen ist dokumentiert; bewertet wird nur kurzfristige Wahrnehmung und Sorge.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine strukturelle Veränderung von Gesundheit oder Versorgung ist beobachtet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die berichtete kurzfristige Verunsicherung berührt keine schwere Schutzgrenze; Verletzungen oder andere substanzielle Gesundheitsschäden sind bislang nicht bekannt.",
+                "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 1,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Menschen in mehreren Orten nahmen die Erschütterung wahr; zahlreiche besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen wurden berichtet.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 1,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Menschen in mehreren Orten nahmen die Erschütterung wahr; zahlreiche besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen wurden berichtet.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "high",
+            "dominance": "none",
+            "direction": "neutral",
+            "magnitude": 0,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "neutral",
+                "label": "Weitere schwache Erschütterungen lassen im abgegrenzten Umweltzustand nur vernachlässigbare Veränderungen erwarten",
+                "mechanism": "Geologische Erschütterungen können den lokalen Umweltzustand verändern. Für das bislang als moderat eingeordnete Wormser Beben und weitere schwache Nachbeben werden nach dem aktuellen schadensfreien Berichtsstand im abgegrenzten Raum und Zeitraum nur praktisch vernachlässigbare materielle Umweltfolgen modelliert.",
+                "recipients": [
+                  "lokale Umwelt im wahrnehmbaren Bereich des Bebens"
+                ],
+                "magnitude": 0,
+                "evidence": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "high",
+                "source_ids": [
+                  "swr-aktuell",
+                  "research-led-worms-event",
+                  "research-lgrb-intensity"
+                ],
+                "condition": "Der bislang berichtete Zustand ohne Sach- oder Umweltschäden bleibt bestehen und weitere schwache Nachbeben verursachen ebenfalls keine materiellen Schäden.",
+                "reference_space": "Lokale Umwelt und bebaute Umgebung in Worms und der betroffenen Rhein-Neckar-Region gegenüber dem Zustand unmittelbar vor dem Beben.",
+                "time_horizon": "Vom Hauptbeben über die ersten Tage möglicher schwacher Nachbeben.",
+                "path_quality": [
+                  "direct",
+                  "weak"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die automatisch bestimmte Magnitude 3,4 wird nicht mit Umweltwirkung gleichgesetzt. Bewertet werden konkrete lokale Auswirkungen; bislang sind keine Schäden bekannt.",
+                "source_support": "Die amtliche automatische Meldung trägt Ort, Zeitpunkt und vorläufige Magnitude. Das LGRB trennt Magnitude ausdrücklich von lokalen Auswirkungen. SWR berichtet bis zum jeweiligen Stand keine bekannten Schäden.",
+                "limitations": "Spätere Schadensmeldungen sind grundsätzlich möglich; konkrete Umweltmessungen liegen nicht vor. Daraus wird keine erhöhte Katastrophengefahr abgeleitet.",
+                "first_order": "Die Erschütterung wurde regional wahrgenommen, ohne bislang bekannte materielle Umwelt- oder Sachschäden.",
+                "second_order": "Weitere schwache Nachbeben können erneut Erschütterungen verursachen, ohne dass derzeit ein Umweltzustandsschaden belegt ist.",
+                "third_order": "Eine strukturelle Veränderung von Boden, Ökosystemen oder Ressourcen ist aus diesem Ereignis nicht ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Bleibt der bisherige schadensfreie Stand bestehen, ist die materielle Umweltwirkung praktisch null. Nur bei später dokumentierten lokalen Schäden wäre eine kleine Neubewertung erforderlich."
+                },
+                "negligibility_rationale": "Im abgegrenzten lokalen Raum und über die ersten Tage sind keine Sach-, Umwelt- oder Infrastrukturfolgen bekannt. Die beobachtete Erschütterung allein ist keine materielle Verschlechterung von Boden, Wasser, Luft, Ökosystemen oder Ressourcen.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "initial",
+                "research_result": "LGRB bestätigt, dass Magnitude und tatsächliche lokale Auswirkungen getrennt zu bewerten sind. Für Worms ist bislang kein materieller Umweltzustandsschaden berichtet.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Für eine materielle Umweltzustandsänderung ist keine betroffene Fläche oder ökologische Reichweite belegt.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-lgrb-intensity"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine konkrete Umweltbeeinträchtigung ist bekannt; die Erschütterungsstärke selbst ist kein Umweltwirkungsmaß.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-lgrb-intensity"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Eine fortdauernde materielle Umweltveränderung ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Umweltzustandsänderung ist dokumentiert.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Kein vulnerables Ökosystem oder besonders exponierter Umweltbereich ist als geschädigt belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine Veränderung ökologischer oder ressourcenbezogener Systeme ist beobachtet.",
+                    "source_ids": [
+                      "swr-aktuell",
+                      "research-lgrb-intensity"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze ist durch das bislang schadensfreie Ereignis nicht berührt.",
+                  "reference_frame": "Lokale Umwelt- und Ressourcenzustände",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-lgrb-intensity"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der abgegrenzte Planet-Potenzialpfad wird mit 0 bewertet: Auf Grundlage der moderaten Einordnung und bislang fehlender Schadensmeldungen werden für die ersten Tage praktisch vernachlässigbare materielle Umweltänderungen modelliert. Das ist keine vollständige Umweltmessung. Die Bandbreite 0–1 bleibt bei späteren neuen Schadensbefunden überprüfbar; die seismologische Magnitude 3,4 ist keine MPD-Tragweite.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt derzeit weder einen materiellen negativen noch positiven Umwelt-Hauptpfad; der modellierte Zustand ist praktisch vernachlässigbar."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Weitere schwache Erschütterungen lassen im abgegrenzten Umweltzustand nur vernachlässigbare Veränderungen erwarten",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Weitere schwache Erschütterungen lassen im abgegrenzten Umweltzustand nur vernachlässigbare Veränderungen erwarten",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "mittel",
+            "likelihood_label": "hoch",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_positive",
+            "direction": "positive",
+            "magnitude": 1,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Die Ereignisdaten können bestehende seismische Gefährdungsanalyse und Vorsorge geringfügig ergänzen",
+                "mechanism": "Staatliche Erdbebenregistrierung sammelt Ereignisdaten, um Gebiete höherer seismischer Gefährdung zu erkennen und Risikostudien sowie bauliche Vorsorge zu unterstützen. Das konkrete Wormser Ereignis kann diesen bestehenden Datenbestand ergänzen, ohne dadurch bereits einen verbesserten Sicherheitszustand zu beweisen.",
+                "recipients": [
+                  "Landeserdbebendienste",
+                  "Fachbehörden für Risikovorsorge",
+                  "Bevölkerung mittelbar"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "research-led-worms-event",
+                  "research-lgb-monitoring",
+                  "swr-aktuell"
+                ],
+                "condition": "Die Mess- und Wahrnehmungsdaten des Ereignisses werden tatsächlich in bestehende Gefährdungsanalysen, Risikostudien oder Vorsorgeprozesse einbezogen.",
+                "reference_space": "Bestehende seismische Erkenntnis- und Vorsorgepraxis in Rheinland-Pfalz und Baden-Württemberg gegenüber dem Datenstand vor diesem Ereignis.",
+                "time_horizon": "Monate bis Jahre für mögliche Nutzung in Analysen und Vorsorgeplanung.",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Das Monitoring-System funktioniert bereits. Nicht angenommen werden ein neues Warnsystem, höhere Sicherheit, bessere Bauvorsorge oder mehr Vertrauen allein durch dieses Ereignis.",
+                "source_support": "Das LGB dokumentiert, dass Erdbebenregistrierung der Identifikation höherer Gefährdung und der Unterstützung von Risikostudien und baulicher Vorsorge dient. Die amtliche Ereignismeldung liefert einen neuen, noch automatisch bestimmten Datensatz; SWR berichtet zusätzliche Wahrnehmungsmeldungen.",
+                "limitations": "Es ist nicht belegt, ob dieses einzelne Ereignis konkrete Risikomodelle, Bauvorgaben oder Vorsorgemaßnahmen verändert.",
+                "first_order": "Mess- und Wahrnehmungsdaten des Bebens können in bestehenden Erdbebendiensten erfasst werden.",
+                "second_order": "Bei fachlicher Auswertung können sie bestehende regionale Gefährdungsanalysen geringfügig ergänzen.",
+                "third_order": "Nur bei kumulativer Nutzung vieler Ereignisse können Risikostudien oder bauliche Vorsorge langfristig präzisiert werden; ein solcher Effekt dieses Einzelbebens ist nicht beobachtet.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Bleibt das Ereignis ohne relevante neue Erkenntnis, ist die zusätzliche institutionelle Wirkung praktisch null; als zusätzlicher Datenpunkt kann es bestehende Vorsorgeprozesse geringfügig unterstützen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Das LGB trägt den allgemeinen Monitoring- und Vorsorgemechanismus. Es gibt keinen Beleg, dass das Wormser Einzelereignis bereits einen Sicherheits-, Vertrauens- oder Vorsorgezustand verbessert hat.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Eine mögliche Nutzung betrifft vor allem regionale Fach- und Vorsorgestrukturen, nicht das gesamte staatliche System.",
+                    "source_ids": [
+                      "research-lgb-monitoring"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Ein einzelner zusätzlicher Ereignisdatensatz kann bestehende Analysen nur geringfügig ergänzen.",
+                    "source_ids": [
+                      "research-led-worms-event",
+                      "research-lgb-monitoring"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Erfasste Daten können längerfristig in Gefährdungsanalysen verfügbar bleiben, auch wenn ihr Einzelbeitrag klein ist.",
+                    "source_ids": [
+                      "research-lgb-monitoring"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ordinale Modellschätzung: Analysen und Vorsorgebewertungen bleiben überprüf- und anpassbar.",
+                    "source_ids": [
+                      "research-lgb-monitoring"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Vorsorge kann besonders exponierten Gebieten zugutekommen; für dieses Ereignis ist keine spezifisch vulnerable Gruppe als Begünstigte belegt.",
+                    "source_ids": [
+                      "research-lgb-monitoring"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Monitoring ist Teil institutioneller Risikovorsorge, der zusätzliche Beitrag eines Einzelereignisses bleibt jedoch begrenzt.",
+                    "source_ids": [
+                      "research-lgb-monitoring"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der mögliche zusätzliche Erkenntnisgewinn berührt keine konkrete schwere demokratische oder institutionelle Schutzgrenze.",
+                  "reference_frame": "Staatliche Vorsorge- und Erkenntnisfähigkeit",
+                  "source_ids": [
+                    "research-lgb-monitoring"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Kurzfristige Anrufe und Wahrnehmungsmeldungen können Behörden geringfügig zusätzlich beanspruchen",
+                "mechanism": "Ein spürbares Beben kann besorgte Menschen zu Anrufen bei Polizei und Warnstellen veranlassen und dadurch kurzfristig zusätzliche Kommunikations- und Prüfaufgaben auslösen.",
+                "recipients": [
+                  "Polizei und lokale Warn- beziehungsweise Einsatzstrukturen"
+                ],
+                "magnitude": 1,
+                "evidence": "medium",
+                "temporal_status": "ongoing",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_effect",
+                "likelihood": "already_occurring",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Menschen melden Wahrnehmungen oder vermutete Gefahren bei Behörden.",
+                "reference_space": "Lokale Behördenkapazität unmittelbar nach dem Beben gegenüber dem normalen Betrieb davor.",
+                "time_horizon": "Minuten bis wenige Stunden.",
+                "path_quality": [
+                  "direct",
+                  "weak"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Bewertet wird nur zusätzliche kurzfristige Kommunikation; eine Einsatzüberlastung oder Funktionsstörung wird nicht unterstellt.",
+                "source_support": "SWR berichtet zahlreiche besorgte Anrufe und Wahrnehmungsmeldungen, zugleich aber keine größere Einsatzlage.",
+                "limitations": "Keine Daten zu zusätzlichem Personalaufwand oder Kapazitätsgrenzen.",
+                "first_order": "Zusätzliche Anrufe und Meldungen beanspruchen kurzfristig Kommunikationskapazität.",
+                "second_order": "Bei höherem Meldeaufkommen können Prüf- und Rückfrageaufgaben zunehmen.",
+                "third_order": "Eine dauerhafte institutionelle Beeinträchtigung ist nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Bei rascher Bearbeitung bleibt die Wirkung praktisch gering; eine Funktionsstörung ist nicht berichtet."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": "SWR berichtet viele besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "research_pass": "initial",
+                "research_result": "Belegt ist nur kurzfristiger zusätzlicher Kommunikationsaufwand; keine institutionelle Störung.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Regional begrenzte Behörden- und Meldestrukturen waren betroffen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Zusätzliche Kommunikation ist belegt, nicht aber eine relevante Funktionsbeeinträchtigung.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die erhöhte Nachfrage war kurzfristig.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Kein dauerhafter institutioneller Schaden ist belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Keine besondere institutionelle Verwundbarkeit oder Kapazitätsgrenze ist dokumentiert.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Effekt bleibt auf kurzfristige Kommunikations- und Prüfabläufe begrenzt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine relevante Einschränkung staatlicher Funktionsfähigkeit ist nicht beobachtet.",
+                  "reference_frame": "Funktionsfähigkeit lokaler Behörden und Warnstrukturen",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Der einzige plausible positive institutionelle Hauptpfad ist ein kleiner möglicher Lernbeitrag für bereits bestehendes seismisches Monitoring und Vorsorge. Kurzfristige Meldungen beanspruchten Behörden, ohne eine Funktionsstörung zu belegen; sie werden deshalb nur als Nebenpfad geführt.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der negative kurzfristige Kommunikationsaufwand ist ein begrenzter Nebenpfad und kein vergleichbarer Gegenhauptpfad zum möglichen langfristigen Erkenntnisbeitrag."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Die Ereignisdaten können bestehende seismische Gefährdungsanalyse und Vorsorge geringfügig ergänzen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Die Ereignisdaten können bestehende seismische Gefährdungsanalyse und Vorsorge geringfügig ergänzen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "swr-aktuell",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Trägt Wahrnehmbarkeit, bisherigen Stand ohne bekannte Schäden oder Verletzte, Seismologeneinordnung, Wahrnehmungsmeldungen und schwache Nachbeben."
+          },
+          {
+            "source_id": "research-led-worms-event",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Trägt Worms, Zeitpunkt 17:27 Uhr und automatisch bestimmte Stärke 3,4; weist ausdrücklich auf den ungeprüften automatischen Status hin."
+          },
+          {
+            "source_id": "research-lgrb-intensity",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Trägt die fachliche Trennung zwischen Magnitude und lokalen Auswirkungen beziehungsweise Intensität."
+          },
+          {
+            "source_id": "research-lgb-monitoring",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Trägt den allgemeinen Mechanismus staatlicher Erdbebenregistrierung für Gefährdungsanalyse und Vorsorge, nicht eine Wirkung dieses Einzelbebens."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Laufende Prüfung",
+        "relevance_label": "Geringe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://erdbeben.led-bw.de/erdbeben/260910_1526",
+          "title": "Automatische Erdbebenlokalisierung bei Worms am 10. September 2026",
+          "publisher": "Landeserdbebendienst Baden-Württemberg",
+          "source_id": "research-led-worms-event",
+          "source_function": "event"
+        },
+        {
+          "url": "https://www.lgrb-bw.de/geologischer-dienst/erdbeben",
+          "title": "Erdbeben: Unterschied zwischen Magnitude, Intensität und lokalen Auswirkungen",
+          "publisher": "LGRB Baden-Württemberg",
+          "source_id": "research-lgrb-intensity",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://www.lgb-rlp.de/fachthemen-des-amtes/projekte/landeserdbebendienst-rheinland-pfalz/erdbebenregistrierung",
+          "title": "Erdbebenregistrierung und seismische Vorsorge in Rheinland-Pfalz",
+          "publisher": "LGB Rheinland-Pfalz",
+          "source_id": "research-lgb-monitoring",
+          "source_function": "mechanism"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 1,
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Weitere schwache Nachbeben können erneut kurzfristige Verunsicherung auslösen",
+              "mechanism": "Wenn weitere deutlich schwächere Nachbeben lokal spürbar werden, können Menschen erneut Erschütterungen wahrnehmen und kurzfristig verunsichert reagieren, ohne dass daraus automatisch Verletzungen oder Sachschäden folgen.",
+              "recipients": [
+                "Menschen im lokal wahrnehmbaren Bereich möglicher Nachbeben"
+              ],
+              "magnitude": 1,
+              "evidence": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "swr-aktuell",
+                "research-lgrb-intensity"
+              ],
+              "condition": "Weitere Nachbeben treten auf und sind für Menschen lokal wahrnehmbar.",
+              "reference_space": "Bevölkerung im lokal wahrnehmbaren Bereich weiterer Nachbeben gegenüber dem Zustand ohne weitere Erschütterung.",
+              "time_horizon": "Stunden bis wenige Tage nach dem Hauptbeben.",
+              "path_quality": [
+                "direct",
+                "weak"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die bereits beobachteten Nachbeben bleiben deutlich schwächer. Es werden weder Verletzungen noch Gebäudeschäden unterstellt.",
+              "source_support": "SWR berichtet bereits deutlich schwächere Nachbeben und die Möglichkeit weiterer schwacher Ereignisse. Das LGRB stützt die Trennung von Wahrnehmbarkeit und tatsächlichem Schaden.",
+              "limitations": "Ort, Stärke und Wahrnehmbarkeit künftiger Nachbeben sind offen; spätere Schäden können nicht ausgeschlossen, aber derzeit auch nicht begründet erwartet werden.",
+              "first_order": "Weitere lokale Erschütterungen können erneut wahrgenommen werden.",
+              "second_order": "Kurzfristige Sorge oder zusätzliche Anfragen bei Polizei und Warnsystemen können entstehen.",
+              "third_order": "Eine längerfristige gesundheitliche oder gesellschaftliche Folge ist bei diesem schwachen Pfad nicht plausibel belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Bleiben weitere Nachbeben unspürbar, ist die zusätzliche Human-Wirkung praktisch null; bei lokal spürbaren schwachen Nachbeben bleibt sie voraussichtlich kurz und gering."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "initial",
+              "research_result": "SWR trägt schwache Nachbeben und kurzfristige Wahrnehmungsreaktionen; LGRB zeigt, dass spürbare Intensität nicht mit Verletzung oder Gebäudeschaden gleichzusetzen ist.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Ein spürbares Nachbeben könnte erneut einen regional begrenzten Personenkreis erreichen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Erwartet wird allenfalls Wahrnehmung und kurzfristige Verunsicherung, keine belegte Gesundheitsverletzung.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-lgrb-intensity"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Wahrnehmung und unmittelbare Sorge wären kurzzeitig.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ordinale Modellschätzung: Für diesen schwachen Pfad ist keine irreversible Human-Wirkung plausibel.",
+                  "source_ids": [
+                    "research-lgrb-intensity"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Keine konkrete besondere Vulnerabilität einer betroffenen Gruppe ist belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Ordinale Modellschätzung: Keine strukturelle Gesundheits- oder Versorgungsauswirkung wird aus schwachen Nachbeben abgeleitet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der modellierte Pfad betrifft kurzfristige Wahrnehmung und Sorge. Eine konkrete schwere Gefährdung von Leben oder körperlicher Unversehrtheit ist nicht belegt.",
+                "reference_frame": "Körperliche Unversehrtheit und Wohlbefinden",
+                "source_ids": [
+                  "swr-aktuell",
+                  "research-lgrb-intensity"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die beobachtete Human-Wirkung beschränkt sich bislang auf Wahrnehmung und kurzfristige Verunsicherung. Für weitere schwache Nachbeben wird deshalb nur ein kleiner negativer Potenzialpfad modelliert; fehlende Schäden oder Verletzte werden nicht in hypothetisch schwere Folgen umgedeutet.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen materiellen gegenläufigen positiven Hauptpfad desselben Ereignisses. Monitoring oder behördliche Reaktion mindern Risiken, sind aber kein positiver Ausgleich gegenüber der Baseline ohne Beben."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Weitere schwache Nachbeben können erneut kurzfristige Verunsicherung auslösen",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Menschen in mehreren Orten nahmen die Erschütterung wahr; zahlreiche besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen wurden berichtet.",
+              "direction": "negative",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "established",
+              "reference_frame": "Wohlbefinden und kurzfristige Sicherheitsempfindung",
+              "reference_space": "Menschen im wahrnehmbaren Bereich des Bebens gegenüber dem Zustand unmittelbar davor.",
+              "observed_at": "2026-09-10 nach 17:27 Uhr",
+              "temporal_status": "ex_post",
+              "magnitude": 1,
+              "mechanism": "Die Erschütterung wurde direkt wahrgenommen und löste bei einem Teil der Bevölkerung kurzfristige Verunsicherung sowie Kontakt zu Behörden aus.",
+              "recipients": [
+                "Menschen im wahrnehmbaren Bereich des Bebens"
+              ],
+              "time_horizon": "Sekunden bis kurze Zeit nach dem Ereignis.",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die Erschütterung wurde regional in mehreren Städten wahrgenommen; der SWR berichtet rund 2.500 Wahrnehmungsmeldungen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Belegt sind Wahrnehmung und kurzfristige Verunsicherung, nicht Verletzungen oder gesundheitliche Schäden.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-lgrb-intensity"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Erschütterung dauerte Sekunden; die berichtete Verunsicherung war kurzfristig.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Für die beobachtete Wahrnehmungs- und Verunsicherungswirkung ist keine irreversible Veränderung belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Keine besondere gesundheitliche Betroffenheit vulnerabler Gruppen ist dokumentiert; bewertet wird nur kurzfristige Wahrnehmung und Sorge.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine strukturelle Veränderung von Gesundheit oder Versorgung ist beobachtet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die berichtete kurzfristige Verunsicherung berührt keine schwere Schutzgrenze; Verletzungen oder andere substanzielle Gesundheitsschäden sind bislang nicht bekannt.",
+                "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 1,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Menschen in mehreren Orten nahmen die Erschütterung wahr; zahlreiche besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen wurden berichtet.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Menschen in mehreren Orten nahmen die Erschütterung wahr; zahlreiche besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen wurden berichtet.",
+            "direction": "negative",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "established",
+            "reference_frame": "Wohlbefinden und kurzfristige Sicherheitsempfindung",
+            "reference_space": "Menschen im wahrnehmbaren Bereich des Bebens gegenüber dem Zustand unmittelbar davor.",
+            "observed_at": "2026-09-10 nach 17:27 Uhr",
+            "temporal_status": "ex_post",
+            "magnitude": 1,
+            "mechanism": "Die Erschütterung wurde direkt wahrgenommen und löste bei einem Teil der Bevölkerung kurzfristige Verunsicherung sowie Kontakt zu Behörden aus.",
+            "recipients": [
+              "Menschen im wahrnehmbaren Bereich des Bebens"
+            ],
+            "time_horizon": "Sekunden bis kurze Zeit nach dem Ereignis.",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 3,
+                "rationale": "Die Erschütterung wurde regional in mehreren Städten wahrgenommen; der SWR berichtet rund 2.500 Wahrnehmungsmeldungen.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "intensity": {
+                "value": 1,
+                "rationale": "Belegt sind Wahrnehmung und kurzfristige Verunsicherung, nicht Verletzungen oder gesundheitliche Schäden.",
+                "source_ids": [
+                  "swr-aktuell",
+                  "research-lgrb-intensity"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die Erschütterung dauerte Sekunden; die berichtete Verunsicherung war kurzfristig.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "irreversibility": {
+                "value": 0,
+                "rationale": "Für die beobachtete Wahrnehmungs- und Verunsicherungswirkung ist keine irreversible Veränderung belegt.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "vulnerability": {
+                "value": 1,
+                "rationale": "Keine besondere gesundheitliche Betroffenheit vulnerabler Gruppen ist dokumentiert; bewertet wird nur kurzfristige Wahrnehmung und Sorge.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "system_depth": {
+                "value": 0,
+                "rationale": "Keine strukturelle Veränderung von Gesundheit oder Versorgung ist beobachtet.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Die berichtete kurzfristige Verunsicherung berührt keine schwere Schutzgrenze; Verletzungen oder andere substanzielle Gesundheitsschäden sind bislang nicht bekannt.",
+              "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "status": "not_decisive"
+            },
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 6,
+              "divisor": 6,
+              "raw": 1,
+              "rounded": 1,
+              "protection_floor": 0,
+              "final": 1
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 1,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Menschen in mehreren Orten nahmen die Erschütterung wahr; zahlreiche besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen wurden berichtet.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 1,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Menschen in mehreren Orten nahmen die Erschütterung wahr; zahlreiche besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen wurden berichtet.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "high",
+          "dominance": "none",
+          "direction": "neutral",
+          "magnitude": 0,
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "neutral",
+              "label": "Weitere schwache Erschütterungen lassen im abgegrenzten Umweltzustand nur vernachlässigbare Veränderungen erwarten",
+              "mechanism": "Geologische Erschütterungen können den lokalen Umweltzustand verändern. Für das bislang als moderat eingeordnete Wormser Beben und weitere schwache Nachbeben werden nach dem aktuellen schadensfreien Berichtsstand im abgegrenzten Raum und Zeitraum nur praktisch vernachlässigbare materielle Umweltfolgen modelliert.",
+              "recipients": [
+                "lokale Umwelt im wahrnehmbaren Bereich des Bebens"
+              ],
+              "magnitude": 0,
+              "evidence": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "high",
+              "source_ids": [
+                "swr-aktuell",
+                "research-led-worms-event",
+                "research-lgrb-intensity"
+              ],
+              "condition": "Der bislang berichtete Zustand ohne Sach- oder Umweltschäden bleibt bestehen und weitere schwache Nachbeben verursachen ebenfalls keine materiellen Schäden.",
+              "reference_space": "Lokale Umwelt und bebaute Umgebung in Worms und der betroffenen Rhein-Neckar-Region gegenüber dem Zustand unmittelbar vor dem Beben.",
+              "time_horizon": "Vom Hauptbeben über die ersten Tage möglicher schwacher Nachbeben.",
+              "path_quality": [
+                "direct",
+                "weak"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die automatisch bestimmte Magnitude 3,4 wird nicht mit Umweltwirkung gleichgesetzt. Bewertet werden konkrete lokale Auswirkungen; bislang sind keine Schäden bekannt.",
+              "source_support": "Die amtliche automatische Meldung trägt Ort, Zeitpunkt und vorläufige Magnitude. Das LGRB trennt Magnitude ausdrücklich von lokalen Auswirkungen. SWR berichtet bis zum jeweiligen Stand keine bekannten Schäden.",
+              "limitations": "Spätere Schadensmeldungen sind grundsätzlich möglich; konkrete Umweltmessungen liegen nicht vor. Daraus wird keine erhöhte Katastrophengefahr abgeleitet.",
+              "first_order": "Die Erschütterung wurde regional wahrgenommen, ohne bislang bekannte materielle Umwelt- oder Sachschäden.",
+              "second_order": "Weitere schwache Nachbeben können erneut Erschütterungen verursachen, ohne dass derzeit ein Umweltzustandsschaden belegt ist.",
+              "third_order": "Eine strukturelle Veränderung von Boden, Ökosystemen oder Ressourcen ist aus diesem Ereignis nicht ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Bleibt der bisherige schadensfreie Stand bestehen, ist die materielle Umweltwirkung praktisch null. Nur bei später dokumentierten lokalen Schäden wäre eine kleine Neubewertung erforderlich."
+              },
+              "negligibility_rationale": "Im abgegrenzten lokalen Raum und über die ersten Tage sind keine Sach-, Umwelt- oder Infrastrukturfolgen bekannt. Die beobachtete Erschütterung allein ist keine materielle Verschlechterung von Boden, Wasser, Luft, Ökosystemen oder Ressourcen.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "initial",
+              "research_result": "LGRB bestätigt, dass Magnitude und tatsächliche lokale Auswirkungen getrennt zu bewerten sind. Für Worms ist bislang kein materieller Umweltzustandsschaden berichtet.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Für eine materielle Umweltzustandsänderung ist keine betroffene Fläche oder ökologische Reichweite belegt.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-lgrb-intensity"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine konkrete Umweltbeeinträchtigung ist bekannt; die Erschütterungsstärke selbst ist kein Umweltwirkungsmaß.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-lgrb-intensity"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Eine fortdauernde materielle Umweltveränderung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Umweltzustandsänderung ist dokumentiert.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Kein vulnerables Ökosystem oder besonders exponierter Umweltbereich ist als geschädigt belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine Veränderung ökologischer oder ressourcenbezogener Systeme ist beobachtet.",
+                  "source_ids": [
+                    "swr-aktuell",
+                    "research-lgrb-intensity"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze ist durch das bislang schadensfreie Ereignis nicht berührt.",
+                "reference_frame": "Lokale Umwelt- und Ressourcenzustände",
+                "source_ids": [
+                  "swr-aktuell",
+                  "research-lgrb-intensity"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der abgegrenzte Planet-Potenzialpfad wird mit 0 bewertet: Auf Grundlage der moderaten Einordnung und bislang fehlender Schadensmeldungen werden für die ersten Tage praktisch vernachlässigbare materielle Umweltänderungen modelliert. Das ist keine vollständige Umweltmessung. Die Bandbreite 0–1 bleibt bei späteren neuen Schadensbefunden überprüfbar; die seismologische Magnitude 3,4 ist keine MPD-Tragweite.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt derzeit weder einen materiellen negativen noch positiven Umwelt-Hauptpfad; der modellierte Zustand ist praktisch vernachlässigbar."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Weitere schwache Erschütterungen lassen im abgegrenzten Umweltzustand nur vernachlässigbare Veränderungen erwarten",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Weitere schwache Erschütterungen lassen im abgegrenzten Umweltzustand nur vernachlässigbare Veränderungen erwarten",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "mittel",
+          "likelihood_label": "hoch",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_positive",
+          "direction": "positive",
+          "magnitude": 1,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Die Ereignisdaten können bestehende seismische Gefährdungsanalyse und Vorsorge geringfügig ergänzen",
+              "mechanism": "Staatliche Erdbebenregistrierung sammelt Ereignisdaten, um Gebiete höherer seismischer Gefährdung zu erkennen und Risikostudien sowie bauliche Vorsorge zu unterstützen. Das konkrete Wormser Ereignis kann diesen bestehenden Datenbestand ergänzen, ohne dadurch bereits einen verbesserten Sicherheitszustand zu beweisen.",
+              "recipients": [
+                "Landeserdbebendienste",
+                "Fachbehörden für Risikovorsorge",
+                "Bevölkerung mittelbar"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "research-led-worms-event",
+                "research-lgb-monitoring",
+                "swr-aktuell"
+              ],
+              "condition": "Die Mess- und Wahrnehmungsdaten des Ereignisses werden tatsächlich in bestehende Gefährdungsanalysen, Risikostudien oder Vorsorgeprozesse einbezogen.",
+              "reference_space": "Bestehende seismische Erkenntnis- und Vorsorgepraxis in Rheinland-Pfalz und Baden-Württemberg gegenüber dem Datenstand vor diesem Ereignis.",
+              "time_horizon": "Monate bis Jahre für mögliche Nutzung in Analysen und Vorsorgeplanung.",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Das Monitoring-System funktioniert bereits. Nicht angenommen werden ein neues Warnsystem, höhere Sicherheit, bessere Bauvorsorge oder mehr Vertrauen allein durch dieses Ereignis.",
+              "source_support": "Das LGB dokumentiert, dass Erdbebenregistrierung der Identifikation höherer Gefährdung und der Unterstützung von Risikostudien und baulicher Vorsorge dient. Die amtliche Ereignismeldung liefert einen neuen, noch automatisch bestimmten Datensatz; SWR berichtet zusätzliche Wahrnehmungsmeldungen.",
+              "limitations": "Es ist nicht belegt, ob dieses einzelne Ereignis konkrete Risikomodelle, Bauvorgaben oder Vorsorgemaßnahmen verändert.",
+              "first_order": "Mess- und Wahrnehmungsdaten des Bebens können in bestehenden Erdbebendiensten erfasst werden.",
+              "second_order": "Bei fachlicher Auswertung können sie bestehende regionale Gefährdungsanalysen geringfügig ergänzen.",
+              "third_order": "Nur bei kumulativer Nutzung vieler Ereignisse können Risikostudien oder bauliche Vorsorge langfristig präzisiert werden; ein solcher Effekt dieses Einzelbebens ist nicht beobachtet.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Bleibt das Ereignis ohne relevante neue Erkenntnis, ist die zusätzliche institutionelle Wirkung praktisch null; als zusätzlicher Datenpunkt kann es bestehende Vorsorgeprozesse geringfügig unterstützen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Das LGB trägt den allgemeinen Monitoring- und Vorsorgemechanismus. Es gibt keinen Beleg, dass das Wormser Einzelereignis bereits einen Sicherheits-, Vertrauens- oder Vorsorgezustand verbessert hat.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Eine mögliche Nutzung betrifft vor allem regionale Fach- und Vorsorgestrukturen, nicht das gesamte staatliche System.",
+                  "source_ids": [
+                    "research-lgb-monitoring"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Ein einzelner zusätzlicher Ereignisdatensatz kann bestehende Analysen nur geringfügig ergänzen.",
+                  "source_ids": [
+                    "research-led-worms-event",
+                    "research-lgb-monitoring"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Erfasste Daten können längerfristig in Gefährdungsanalysen verfügbar bleiben, auch wenn ihr Einzelbeitrag klein ist.",
+                  "source_ids": [
+                    "research-lgb-monitoring"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ordinale Modellschätzung: Analysen und Vorsorgebewertungen bleiben überprüf- und anpassbar.",
+                  "source_ids": [
+                    "research-lgb-monitoring"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Vorsorge kann besonders exponierten Gebieten zugutekommen; für dieses Ereignis ist keine spezifisch vulnerable Gruppe als Begünstigte belegt.",
+                  "source_ids": [
+                    "research-lgb-monitoring"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Monitoring ist Teil institutioneller Risikovorsorge, der zusätzliche Beitrag eines Einzelereignisses bleibt jedoch begrenzt.",
+                  "source_ids": [
+                    "research-lgb-monitoring"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der mögliche zusätzliche Erkenntnisgewinn berührt keine konkrete schwere demokratische oder institutionelle Schutzgrenze.",
+                "reference_frame": "Staatliche Vorsorge- und Erkenntnisfähigkeit",
+                "source_ids": [
+                  "research-lgb-monitoring"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Kurzfristige Anrufe und Wahrnehmungsmeldungen können Behörden geringfügig zusätzlich beanspruchen",
+              "mechanism": "Ein spürbares Beben kann besorgte Menschen zu Anrufen bei Polizei und Warnstellen veranlassen und dadurch kurzfristig zusätzliche Kommunikations- und Prüfaufgaben auslösen.",
+              "recipients": [
+                "Polizei und lokale Warn- beziehungsweise Einsatzstrukturen"
+              ],
+              "magnitude": 1,
+              "evidence": "medium",
+              "temporal_status": "ongoing",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_effect",
+              "likelihood": "already_occurring",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Menschen melden Wahrnehmungen oder vermutete Gefahren bei Behörden.",
+              "reference_space": "Lokale Behördenkapazität unmittelbar nach dem Beben gegenüber dem normalen Betrieb davor.",
+              "time_horizon": "Minuten bis wenige Stunden.",
+              "path_quality": [
+                "direct",
+                "weak"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Bewertet wird nur zusätzliche kurzfristige Kommunikation; eine Einsatzüberlastung oder Funktionsstörung wird nicht unterstellt.",
+              "source_support": "SWR berichtet zahlreiche besorgte Anrufe und Wahrnehmungsmeldungen, zugleich aber keine größere Einsatzlage.",
+              "limitations": "Keine Daten zu zusätzlichem Personalaufwand oder Kapazitätsgrenzen.",
+              "first_order": "Zusätzliche Anrufe und Meldungen beanspruchen kurzfristig Kommunikationskapazität.",
+              "second_order": "Bei höherem Meldeaufkommen können Prüf- und Rückfrageaufgaben zunehmen.",
+              "third_order": "Eine dauerhafte institutionelle Beeinträchtigung ist nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Bei rascher Bearbeitung bleibt die Wirkung praktisch gering; eine Funktionsstörung ist nicht berichtet."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": "SWR berichtet viele besorgte Anrufe und rund 2.500 Wahrnehmungsmeldungen.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "research_pass": "initial",
+              "research_result": "Belegt ist nur kurzfristiger zusätzlicher Kommunikationsaufwand; keine institutionelle Störung.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Regional begrenzte Behörden- und Meldestrukturen waren betroffen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Zusätzliche Kommunikation ist belegt, nicht aber eine relevante Funktionsbeeinträchtigung.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die erhöhte Nachfrage war kurzfristig.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Kein dauerhafter institutioneller Schaden ist belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Keine besondere institutionelle Verwundbarkeit oder Kapazitätsgrenze ist dokumentiert.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Effekt bleibt auf kurzfristige Kommunikations- und Prüfabläufe begrenzt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine relevante Einschränkung staatlicher Funktionsfähigkeit ist nicht beobachtet.",
+                "reference_frame": "Funktionsfähigkeit lokaler Behörden und Warnstrukturen",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Der einzige plausible positive institutionelle Hauptpfad ist ein kleiner möglicher Lernbeitrag für bereits bestehendes seismisches Monitoring und Vorsorge. Kurzfristige Meldungen beanspruchten Behörden, ohne eine Funktionsstörung zu belegen; sie werden deshalb nur als Nebenpfad geführt.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der negative kurzfristige Kommunikationsaufwand ist ein begrenzter Nebenpfad und kein vergleichbarer Gegenhauptpfad zum möglichen langfristigen Erkenntnisbeitrag."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Die Ereignisdaten können bestehende seismische Gefährdungsanalyse und Vorsorge geringfügig ergänzen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Die Ereignisdaten können bestehende seismische Gefährdungsanalyse und Vorsorge geringfügig ergänzen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "kommunen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-11T02:36:54.688Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T23:17:57.000Z",
+      "last_updated": "2026-09-11T02:36:54.688Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-7b13d479ed1512e2e747",
+      "case_file": null,
+      "source_published_at": "2026-09-10T21:36:19.000Z",
+      "published_at": "2026-09-11T02:36:54.688Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "swr-aktuell",
+              "swr-aktuell"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob nach dem bisherigen Berichtsstand noch Schäden oder Verletzte gemeldet werden.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Neue behördliche Angaben zu Schäden, Verletzten oder Einsätzen.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-fbc6a0ac32010d71",
+          "announced_at": "2026-09-10T23:17:57.000Z",
+          "follow_up_date": "2026-09-18T02:36:54.688Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob weitere Nachbeben registriert werden und ob sie spürbar oder schadensrelevant sind.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Aktualisierte Angaben des Landeserdbebendienstes zu Zahl, Stärke und Wahrnehmbarkeit weiterer Nachbeben.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0d05aee4220e6651",
+          "announced_at": "2026-09-10T23:17:57.000Z",
+          "follow_up_date": "2026-09-18T02:36:54.688Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/rheinland-pfalz/ludwigshafen/erdbeben-in-der-pfalz-epizentrum-worms-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T23:17:57.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/mannheim/erdbeben-mannheim-was-ist-passiert-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T21:36:19.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-056e05614272ee27",
       "title_image": {
