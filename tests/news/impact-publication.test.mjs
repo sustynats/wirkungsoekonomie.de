@@ -16,7 +16,13 @@ const readyReview = () => ({ status:'ready', checks:Object.fromEntries(SEMANTIC_
 const bsw = () => { const r=reviews[0], record=structuredClone(catalog.find(s=>s.story_id===r.story_id));record.impact_sources=r.assessment_sources;return {a:structuredClone(r.impact_assessment),record}; };
 
 test('backlog handoff fills a larger batch while reserving current-news and second-review capacity',async()=>{
-  const records=Array.from({length:40},(_,i)=>({...structuredClone(bsw().record),story_id:`wt-batch-${i}`}));
+  const records=Array.from({length:40},(_,i)=>{
+    const record={...structuredClone(bsw().record),story_id:`wt-batch-${i}`};
+    // Queue capacity is tested with unfinished work, independently of whether
+    // the source story has since completed its production reassessment.
+    delete record.impact_assessment;delete record.impact_assessment_basis;
+    return record;
+  });
   const jobs=new Map(),observations=new Map(),files=new Map();
   const bridge={maxPending:48,store:{all:async()=>[...jobs.values()],get:async id=>jobs.get(id),put:async j=>jobs.set(j.input.job_id,j),
     observe:async(k,v)=>observations.set(k,v),observation:async k=>observations.get(k)},
@@ -79,13 +85,15 @@ test('a recorded casualty cannot be published as a future risk',()=>{
   a.observed_effects=[];assert.ok(semanticIssues(a,record).includes('IMPACT_OCCURRED_HARM_AS_RISK'));
 });
 test('migration is idempotent and preserves every original article and source byte',()=>{
-  const first=migrateImpactCatalog(catalog),second=migrateImpactCatalog(first.records);
+  const legacy=catalog.map(record=>{const value=structuredClone(record);delete value.impact_assessment;delete value.impact_assessment_basis;return value;});
+  const first=migrateImpactCatalog(legacy),second=migrateImpactCatalog(first.records);
   assert.equal(second.report.changed,0);
   for(let i=0;i<catalog.length;i++)for(const k of ['title','source_summary','analysis','sources','versions'])assert.deepEqual(first.records[i][k],catalog[i][k]);
   assert.ok(first.report.needs_reassessment>0);assert.equal(first.report.errors.length,0);
 });
 test('historical validation accepts only a reproducible conservative projection',()=>{
-  const record=structuredClone(migrateImpactCatalog(catalog).records.find(r=>r.impact_assessment?.review?.status==='needs_reassessment'));
+  const legacy=structuredClone(bsw().record);delete legacy.impact_assessment;delete legacy.impact_assessment_basis;
+  const record=migrateImpactCatalog([legacy]).records[0];
   assert.deepEqual(persistedImpactAssessmentErrors(record),[]);
   record.impact_assessment.dimensions.human.magnitude=5;
   assert.deepEqual(persistedImpactAssessmentErrors(record),['IMPACT_LEGACY_PROJECTION_MODIFIED']);
@@ -108,6 +116,15 @@ test('metadata import refuses stale sources and source-foreign paths and leaves 
   assert.equal(changed.impact_assessment.review.status,'reassessed');
   assert.throws(()=>applyImpactOutput(out,job,{...record,content_hash:'new'},now),/BRIDGE_STALE_ANALYSIS/);
   out.impact_assessment.dimensions.human.primary_paths[0].source_ids=['invented'];assert.throws(()=>applyImpactOutput(out,job,record,now),/BRIDGE_PUBLICATION_GATE_FAILED/);
+});
+
+test('a missing assessment can enter reassessment without bypassing concurrent-update binding',()=>{
+  const {a,record}=bsw();delete record.impact_assessment;delete record.impact_assessment_basis;
+  const now='2026-09-10T12:00:00Z',input=impactReassessmentInput(record,now),job={input,candidate:record};
+  assert.equal(input.binding.previous_impact,hash(null));assert.equal(input.article.existing_assessment,null);
+  const output={schema_version:'1.0',job_id:input.job_id,input_hash:input.input_hash,processed_at:now,decision:{status:'publish',reason:'Vollständige quellengebundene Bewertung des bisher fehlenden Profils.'},impact_assessment:a};
+  assert.equal(applyImpactOutput(output,job,record,now).impact_assessment.review.status,'reassessed');
+  assert.throws(()=>applyImpactOutput(output,job,{...record,impact_assessment:a},now),/BRIDGE_STALE_ANALYSIS/);
 });
 test('separate review job is mandatory, idempotent, source-bound, and cannot be self-approved',async()=>{
   const {a,record}=bsw(),now='2026-09-10T12:00:00Z',input=impactReassessmentInput(record,now),parent={input,candidate:record,attempts:{},status:'queued'};
