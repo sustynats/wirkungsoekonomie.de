@@ -2,8 +2,3332 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-11T03:12:02.098Z",
+  "updated_at": "2026-09-11T04:17:03.819Z",
   "stories": [
+    {
+      "story_id": "wt-4c2f3496723fe5b4",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4c2f3496723fe5b4-e36c657c1899a2a0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4c2f3496723fe5b4-89d2cd74373c04fe-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4c2f3496723fe5b4-eca0976a82992f31-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4c2f3496723fe5b4-c200d0e9c27f87d7-source.png",
+          "alt_text": "Vier abstrakte Lichtformen auf dunklem Hintergrund als zurückhaltendes Symbol für vier gemeldete Todesopfer."
+        }
+      },
+      "slug": "israeli-strike-in-gaza-kills-family-of-four-including-two-children-3fe5b4",
+      "title": "Gaza: Vier Familienmitglieder bei Angriff in Beit Lahiya getötet",
+      "source_summary": "Bei einem israelischen Angriff in Beit Lahiya im nördlichen Gazastreifen wurden nach Krankenhausangaben mindestens vier Menschen getötet, darunter zwei Kinder. Der Angriff wurde am Donnerstag gemeldet. Euronews berichtet den Ereigniskern auf Grundlage von Krankenhausangaben; die ergänzend geprüfte AP-Berichterstattung führt ebenfalls zum Shifa-Krankenhaus und stellt daher keine unabhängige zweite Ursprungslinie dar.\n\nDas israelische Militär erklärte später, bei dem Angriff sei ein Kämpfer getötet worden, nannte in der vorliegenden Berichterstattung aber keine Identität oder weitere Einzelheiten. Welche Bedeutung diese Angabe für die Bewertung des konkreten Angriffs hat, bleibt deshalb offen. Weitere Verletzte sowie konkrete Infrastruktur- oder Umweltschäden dieses Angriffs sind bislang nicht belegt.",
+      "summary": "Nach Krankenhausangaben wurden bei einem israelischen Angriff in Beit Lahiya mindestens vier Menschen getötet, darunter zwei Kinder. Das Militär erklärte später, bei dem Angriff sei ein Kämpfer getötet worden; Identität und Bedeutung dieser Angabe für den Einzelfall bleiben offen.",
+      "detail_summary": "Bei einem israelischen Angriff in Beit Lahiya wurden nach Krankenhausangaben mindestens vier Menschen getötet, darunter zwei Kinder. Der Tod dieser Menschen ist der klar berichtete unmittelbare Schaden. Das israelische Militär erklärte später, bei dem Angriff sei ein Kämpfer getötet worden, nannte jedoch keine Identität oder weitere Einzelheiten. Deshalb bleibt offen, welche Bedeutung diese Angabe für die Bewertung des konkreten Angriffs hat. Weitere Verletzte oder konkrete Infrastruktur- und Umweltschäden dieses Angriffs sind bislang nicht belegt. Allgemeine Folgen explosiver Gewalt in bewohnten Gebieten sind bekannt, dürfen aber nicht als bereits eingetretene Folgen dieses Einzelfalls ausgegeben werden.",
+      "why_relevant": "Vier Menschen wurden getötet, darunter zwei Kinder. Entscheidend ist die Trennung zwischen diesem beobachteten Personenschaden, der späteren Militärangabe und noch nicht belegten weiteren Folgen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_post",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Am 10. September wurden bei einem israelischen Angriff in Beit Lahiya nach Angaben des Shifa-Krankenhauses vier Mitglieder einer Familie getötet, darunter zwei Töchter im Alter von 8 und 12 Jahren. Das israelische Militär erklärte später, bei demselben Angriff sei ein Kämpfer getötet worden, ohne eine Person zu identifizieren.",
+        "evaluation_target": {
+          "label": "Beobachtete und mögliche Folgen des einzelnen Angriffs in Beit Lahiya am 10. September",
+          "type": "event"
+        },
+        "baseline": "Zustand der unmittelbar betroffenen Menschen und des lokalen Umfelds vor diesem konkreten Angriff, ohne die dadurch berichteten Todesfälle und mögliche Folgeschäden.",
+        "temporal_status": "ex_post",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne diesen konkreten Angriff wären die dadurch berichteten vier Todesfälle nicht eingetreten. Weitere soziale, physische oder institutionelle Folgepfade aus diesem Einzelereignis wären nicht ausgelöst worden.",
+        "reference_frame": [
+          "Schutz des Lebens und körperliche Unversehrtheit",
+          "Schutz von Kindern in bewaffneten Konflikten",
+          "Zivilschutz in bewohnten Gebieten",
+          "Rechenschaft und überprüfbare Statuszuordnung"
+        ],
+        "claim_ledger": [
+          {
+            "claim": "Bei einem israelischen Angriff in Beit Lahiya wurden nach Angaben des Shifa-Krankenhauses vier Familienmitglieder getötet.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "research-ap-beit-lahiya",
+              "euronews-en"
+            ],
+            "note": "AP nennt das Shifa-Krankenhaus als Quelle; Euronews scheint dieselbe journalistische Ursprungslinie zu nutzen und ist keine unabhängige Bestätigung."
+          },
+          {
+            "claim": "Unter den vier Getöteten waren zwei Töchter im Alter von 8 und 12 Jahren.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "research-ap-beit-lahiya"
+            ],
+            "note": "AP nennt Alter und Familienbeziehung."
+          },
+          {
+            "claim": "Das israelische Militär erklärte später, bei demselben Angriff sei ein Kämpfer getötet worden.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "research-ap-beit-lahiya",
+              "euronews-en"
+            ],
+            "note": "Akteursangabe ohne Identifizierung der gemeinten Person."
+          },
+          {
+            "claim": "Der individuelle Kombattantenstatus der vier Getöteten ist nicht abschließend geklärt.",
+            "status": "uncertain_claim",
+            "source_ids": [
+              "research-ap-beit-lahiya"
+            ],
+            "note": "Die Militärangabe erlaubt keine sichere Zuordnung zu einer bestimmten getöteten Person."
+          }
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Vier gemeldete Todesfälle, darunter zwei Kinder, sind der beobachtete schwere negative Personenschaden. Weitere Folgen für Angehörige oder Versorgung bleiben bedingte Potenziale und werden nicht als bereits eingetreten behandelt.",
+            "planet": "Falls Gebäude oder Infrastruktur dieses Angriffs beschädigt wurden, können Trümmer-, Räumungs- und Wiederherstellungsbedarfe entstehen. Umfang und Eintritt solcher materiellen Folgen sind für diesen Fall nicht belegt.",
+            "democracy": "Unklare Ziel- und Statusfragen können Rechenschafts- und Schutzmechanismen relevant machen. Eine konkrete institutionelle oder globale Rechtsordnungswirkung dieses Einzelangriffs ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human"
+          ],
+          "first_order": "Beobachtet sind vier gemeldete Todesfälle nach Krankenhausangaben, darunter zwei Kinder. Weitere konkrete Verletzte oder Sachschäden dieses Angriffs sind nicht belegt.",
+          "second_order": "Für Angehörige können soziale oder materielle Belastungen entstehen; bei tatsächlich vorhandenen Sachschäden können Versorgung, Räumung oder Wiederherstellung beansprucht werden.",
+          "third_order": "Erst eine weitergehende dokumentierte Aufarbeitung könnte institutionelle Rechenschaftsfolgen zeigen; strukturelle Folgen des Gesamtkriegs werden diesem Einzelangriff nicht zugerechnet.",
+          "enablement": [],
+          "counter_evidence": [
+            "AP und Euronews bilden wahrscheinlich dieselbe journalistische Ursprungslinie und keine unabhängige Doppelbestätigung.",
+            "Das israelische Militär nennt einen getöteten Kämpfer, identifiziert aber keine der vier getöteten Personen.",
+            "Aus der Militärangabe folgt weder der Kombattantenstatus aller Getöteten noch eine abschließende rechtliche Bewertung des Angriffs.",
+            "Konkrete zusätzliche Verletzte, Infrastruktur- oder Umweltschäden dieses Angriffs sind bislang nicht belegt.",
+            "Das ICRC liefert nur allgemeine Wirkmechanismen explosiver Gewalt in bewohnten Gebieten, keine Falluntersuchung zu Beit Lahiya."
+          ],
+          "source_independence": "AP konkretisiert die Krankenhausangaben; Euronews scheint darauf beziehungsweise auf dieselbe Agenturberichterstattung zurückzugehen und zählt nicht als unabhängige zweite Ursprungslinie. ICRC ist unabhängig, belegt aber nur allgemeine Mechanismen und keine Falltatsachen.",
+          "institutional_status": "Es handelt sich um einen berichteten Einzelangriff in einer laufenden bewaffneten Konfliktlage. Zielwahl, individueller Status der Getöteten und eine abschließende völkerrechtliche Bewertung sind mit den vorliegenden Quellen nicht geklärt."
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Nach Angaben des Shifa-Krankenhauses wurden bei dem Angriff vier Mitglieder einer Familie getötet, darunter zwei Töchter im Alter von 8 und 12 Jahren.",
+            "direction": "negative",
+            "source_ids": [
+              "research-ap-beit-lahiya",
+              "euronews-en"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "established",
+            "reference_frame": "Schutz des Lebens und körperliche Unversehrtheit",
+            "reference_space": "Die vier gemeldeten Getöteten in Beit Lahiya gegenüber ihrem Zustand unmittelbar vor dem Angriff.",
+            "observed_at": "10. September 2026",
+            "temporal_status": "ex_post",
+            "magnitude": 4,
+            "mechanism": "AP berichtet unter Berufung auf das Shifa-Krankenhaus, dass der Angriff die vier Familienmitglieder tötete. Diese Ereigniskausalität wird quellengebunden übernommen. Die Militärangabe benennt die Zielperson nicht und ersetzt weder die gemeldeten Todesfälle noch eine fallbezogene rechtliche Prüfung.",
+            "recipients": [
+              "die vier gemeldeten getöteten Menschen",
+              "darunter zwei Kinder"
+            ],
+            "time_horizon": "Dauerhaft und irreversibel.",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Die beobachtete Zustandsänderung betrifft vier konkret gemeldete Menschen und damit einzelne Empfänger.",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ]
+              },
+              "intensity": {
+                "value": 5,
+                "rationale": "Tod ist für die unmittelbar Betroffenen eine fundamentale Zustandsveränderung.",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ]
+              },
+              "duration": {
+                "value": 5,
+                "rationale": "Die Zustandsänderung ist dauerhaft.",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Der Tod der Betroffenen ist irreversibel.",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ]
+              },
+              "vulnerability": {
+                "value": 5,
+                "rationale": "Das Schutzgut Leben ist vollständig betroffen; zusätzlich sind zwei der Getöteten als Kinder belegt.",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Der beobachtete Schaden betrifft unmittelbar vier Personen. Weitergehende soziale oder institutionelle Folgen werden separat als Potenziale behandelt.",
+                "source_ids": [
+                  "research-ap-beit-lahiya",
+                  "research-icrc-ewipa"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der berichtete Tod von vier konkreten Menschen verletzt unmittelbar und irreversibel das fundamentale Schutzgut Leben. Die Mindeststufe 4 folgt aus dieser beobachteten Zustandsänderung, nicht aus einer vermuteten Absicht oder Rechtsqualifikation.",
+              "reference_frame": "Schutz des Lebens",
+              "source_ids": [
+                "research-ap-beit-lahiya"
+              ],
+              "status": "observed"
+            },
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 22,
+              "divisor": 6,
+              "raw": 3.6666666666666665,
+              "rounded": 4,
+              "protection_floor": 4,
+              "final": 4
+            }
+          }
+        ],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Verlust familiärer Unterstützung",
+                "mechanism": "Der Verlust mehrerer Mitglieder einer Familie kann Unterstützungs-, Betreuungs- und Haushaltsbeziehungen unterbrechen und dadurch für verbleibende nahestehende Personen längerfristige Belastungen erzeugen.",
+                "recipients": [
+                  "nahe Angehörige oder andere unmittelbar verbundene Personen, soweit vorhanden"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "research-ap-beit-lahiya",
+                  "research-icrc-ewipa"
+                ],
+                "condition": "Es bestehen über die vier Getöteten hinaus tatsächlich enge persönliche, wirtschaftliche oder unterstützende Beziehungen, die durch ihren Tod dauerhaft beeinträchtigt werden.",
+                "reference_space": "Unmittelbar mit den vier Getöteten verbundene Personen gegenüber ihrer Situation vor dem Angriff.",
+                "time_horizon": "Wochen bis Jahre nach dem Angriff.",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es werden keine Zahl von Hinterbliebenen, psychische Diagnose oder konkrete Einkommens- und Betreuungsverluste unterstellt. Modelliert wird nur der allgemeine Folgepfad eines mehrfachen Todesfalls innerhalb einer Familie.",
+                "source_support": "AP belegt den Tod von zwei Eltern und ihren beiden Töchtern. ICRC trägt allgemein die Schwere unmittelbarer menschlicher Folgen explosiver Gewalt in bewohnten Gebieten, untersucht aber keine individuellen Folgebeziehungen dieser Familie.",
+                "limitations": "Keine Informationen zu weiteren Angehörigen, Abhängigkeiten, Haushaltseinkommen, Betreuungspflichten oder gesundheitlichen Folgen nahestehender Personen.",
+                "first_order": "Der Tod mehrerer Mitglieder derselben Familie kann bestehende persönliche und unterstützende Beziehungen abrupt beenden.",
+                "second_order": "Soweit andere Personen von diesen Beziehungen abhängig waren, können soziale, organisatorische oder materielle Belastungen entstehen.",
+                "third_order": "Bei länger anhaltender fehlender Unterstützung können Teilhabe und Alltagsstabilität einzelner Betroffener beeinträchtigt bleiben; dafür liegen keine fallbezogenen Daten vor.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Bei wenigen oder gut abgesicherten verbleibenden Beziehungen bleibt der Folgepfad begrenzt; bei engen Abhängigkeiten kann er für einzelne Betroffene deutlich sein."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen bestätigen den familiären Mehrfachverlust, liefern aber keine Daten zu konkreten Hinterbliebenen oder deren Lebenslage. Der Folgepfad bleibt deshalb niedrig evidenziert und bedingt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Der potenzielle Folgepfad betrifft einen kleinen, unmittelbar verbundenen Personenkreis, nicht die Bevölkerung insgesamt.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Der Verlust mehrerer enger Bezugspersonen kann für tatsächlich abhängige Personen eine deutliche soziale oder materielle Belastung darstellen.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya",
+                      "research-icrc-ewipa"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Folgen unterbrochener familiärer Unterstützungsbeziehungen können mittel- bis längerfristig bestehen.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Der Verlust der Personen selbst ist unumkehrbar; konkrete soziale und materielle Folgeprobleme können jedoch teilweise durch andere Unterstützung gemindert werden.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Falls abhängige Angehörige oder andere unterstützungsbedürftige Personen betroffen sind, kann ihre Belastung erhöht sein; konkrete Vulnerabilität ist nicht dokumentiert.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Der Pfad kann Haushalt und unmittelbares soziales Umfeld betreffen, ohne aus diesem Einzelereignis eine breitere Systemwirkung abzuleiten.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya",
+                      "research-icrc-ewipa"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der bereits eingetretene Tod ist separat als beobachtete Schutzgrenzverletzung erfasst. Für die hier modellierten nachgelagerten sozialen oder materiellen Folgen ist keine weitere konkrete schwere Schutzgrenzverletzung belegt.",
+                  "reference_frame": "Soziale Stabilität, materielle Sicherheit und Teilhabe nahestehender Personen",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die Todesfälle selbst sind nicht erneut als Potenzial bewertet. Modelliert wird nur ein möglicher negativer Folgepfad für nahestehende Personen. Die Faktoren 1+3+3+2+2+2 ergeben 13/6=2,17 und damit Magnitude 2; Eintritt und konkrete Betroffenheit bleiben unsicher.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein vergleichbarer positiver Hauptpfad gegenüber der Baseline vor dem Angriff besteht nicht; mögliche Hilfe oder Unterstützung wäre lediglich Schadensminderung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Verlust familiärer Unterstützung",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Nach Angaben des Shifa-Krankenhauses wurden bei dem Angriff vier Mitglieder einer Familie getötet, darunter zwei Töchter im Alter von 8 und 12 Jahren.",
+                "direction": "negative",
+                "source_ids": [
+                  "research-ap-beit-lahiya",
+                  "euronews-en"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "medium",
+                "attribution": "established",
+                "reference_frame": "Schutz des Lebens und körperliche Unversehrtheit",
+                "reference_space": "Die vier gemeldeten Getöteten in Beit Lahiya gegenüber ihrem Zustand unmittelbar vor dem Angriff.",
+                "observed_at": "10. September 2026",
+                "temporal_status": "ex_post",
+                "magnitude": 4,
+                "mechanism": "AP berichtet unter Berufung auf das Shifa-Krankenhaus, dass der Angriff die vier Familienmitglieder tötete. Diese Ereigniskausalität wird quellengebunden übernommen. Die Militärangabe benennt die Zielperson nicht und ersetzt weder die gemeldeten Todesfälle noch eine fallbezogene rechtliche Prüfung.",
+                "recipients": [
+                  "die vier gemeldeten getöteten Menschen",
+                  "darunter zwei Kinder"
+                ],
+                "time_horizon": "Dauerhaft und irreversibel.",
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die beobachtete Zustandsänderung betrifft vier konkret gemeldete Menschen und damit einzelne Empfänger.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 5,
+                    "rationale": "Tod ist für die unmittelbar Betroffenen eine fundamentale Zustandsveränderung.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "duration": {
+                    "value": 5,
+                    "rationale": "Die Zustandsänderung ist dauerhaft.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 5,
+                    "rationale": "Der Tod der Betroffenen ist irreversibel.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 5,
+                    "rationale": "Das Schutzgut Leben ist vollständig betroffen; zusätzlich sind zwei der Getöteten als Kinder belegt.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der beobachtete Schaden betrifft unmittelbar vier Personen. Weitergehende soziale oder institutionelle Folgen werden separat als Potenziale behandelt.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya",
+                      "research-icrc-ewipa"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Der berichtete Tod von vier konkreten Menschen verletzt unmittelbar und irreversibel das fundamentale Schutzgut Leben. Die Mindeststufe 4 folgt aus dieser beobachteten Zustandsänderung, nicht aus einer vermuteten Absicht oder Rechtsqualifikation.",
+                  "reference_frame": "Schutz des Lebens",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ],
+                  "status": "observed"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 22,
+                  "divisor": 6,
+                  "raw": 3.6666666666666665,
+                  "rounded": 4,
+                  "protection_floor": 4,
+                  "final": 4
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 4,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Nach Angaben des Shifa-Krankenhauses wurden bei dem Angriff vier Mitglieder einer Familie getötet, darunter zwei Töchter im Alter von 8 und 12 Jahren.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Nach Angaben des Shifa-Krankenhauses wurden bei dem Angriff vier Mitglieder einer Familie getötet, darunter zwei Töchter im Alter von 8 und 12 Jahren.",
+              "direction": "negative",
+              "source_ids": [
+                "research-ap-beit-lahiya",
+                "euronews-en"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "established",
+              "reference_frame": "Schutz des Lebens und körperliche Unversehrtheit",
+              "reference_space": "Die vier gemeldeten Getöteten in Beit Lahiya gegenüber ihrem Zustand unmittelbar vor dem Angriff.",
+              "observed_at": "10. September 2026",
+              "temporal_status": "ex_post",
+              "magnitude": 4,
+              "mechanism": "AP berichtet unter Berufung auf das Shifa-Krankenhaus, dass der Angriff die vier Familienmitglieder tötete. Diese Ereigniskausalität wird quellengebunden übernommen. Die Militärangabe benennt die Zielperson nicht und ersetzt weder die gemeldeten Todesfälle noch eine fallbezogene rechtliche Prüfung.",
+              "recipients": [
+                "die vier gemeldeten getöteten Menschen",
+                "darunter zwei Kinder"
+              ],
+              "time_horizon": "Dauerhaft und irreversibel.",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die beobachtete Zustandsänderung betrifft vier konkret gemeldete Menschen und damit einzelne Empfänger.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Tod ist für die unmittelbar Betroffenen eine fundamentale Zustandsveränderung.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "duration": {
+                  "value": 5,
+                  "rationale": "Die Zustandsänderung ist dauerhaft.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Der Tod der Betroffenen ist irreversibel.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 5,
+                  "rationale": "Das Schutzgut Leben ist vollständig betroffen; zusätzlich sind zwei der Getöteten als Kinder belegt.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der beobachtete Schaden betrifft unmittelbar vier Personen. Weitergehende soziale oder institutionelle Folgen werden separat als Potenziale behandelt.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya",
+                    "research-icrc-ewipa"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der berichtete Tod von vier konkreten Menschen verletzt unmittelbar und irreversibel das fundamentale Schutzgut Leben. Die Mindeststufe 4 folgt aus dieser beobachteten Zustandsänderung, nicht aus einer vermuteten Absicht oder Rechtsqualifikation.",
+                "reference_frame": "Schutz des Lebens",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ],
+                "status": "observed"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 22,
+                "divisor": 6,
+                "raw": 3.6666666666666665,
+                "rounded": 4,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Nach Angaben des Shifa-Krankenhauses wurden bei dem Angriff vier Mitglieder einer Familie getötet, darunter zwei Töchter im Alter von 8 und 12 Jahren.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Nach Angaben des Shifa-Krankenhauses wurden bei dem Angriff vier Mitglieder einer Familie getötet, darunter zwei Töchter im Alter von 8 und 12 Jahren.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Ressourcenbedarf durch mögliche Gebäudeschäden",
+                "mechanism": "Ein explosiver Angriff auf ein Gebäude kann Bauteile beschädigen. Falls dies beim konkreten Haus in relevantem Umfang geschah, entstehen Trümmer sowie Material-, Transport- und Energiebedarf für Räumung oder Wiederherstellung.",
+                "recipients": [
+                  "lokale Umwelt im unmittelbaren Schadensbereich",
+                  "Ressourcen- und Entsorgungsprozesse der Wiederherstellung"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "research-ap-beit-lahiya",
+                  "research-icrc-ewipa"
+                ],
+                "condition": "Der Angriff hat am betroffenen Gebäude tatsächlich materielle Schäden verursacht, die Räumung, Reparatur oder Ersatz erfordern.",
+                "reference_space": "Unmittelbarer Gebäudestandort in Beit Lahiya gegenüber dem Zustand vor dem konkreten Angriff.",
+                "time_horizon": "Tage bis Monate; bei umfangreicherer Reparatur länger.",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es werden weder konkrete Trümmermengen noch Schadstoffe, Brandfolgen oder Gebäudeverlust unterstellt. Modelliert wird nur der physische Ressourcenpfad einer möglichen Gebäudebeschädigung.",
+                "source_support": "AP beschreibt einen Angriff auf das Wohnhaus, belegt aber keinen quantifizierten Gebäudeschaden. ICRC trägt allgemein, dass explosive Gewalt in bewohnten Gebieten Sachschäden und indirekte Folgen verursachen kann; es untersucht diesen Fall nicht.",
+                "limitations": "Keine Angaben zu Schadensumfang, Baumaterialien, Trümmermenge, Reparaturbedarf, Emissionen oder Schadstofffreisetzung.",
+                "first_order": "Bei tatsächlicher Gebäudebeschädigung entstehen beschädigte Bauteile oder Trümmer.",
+                "second_order": "Räumung und Reparatur können zusätzlichen Material-, Energie- und Transportbedarf auslösen.",
+                "third_order": "Nur bei größerem längerfristigem Wiederaufbau könnte der Ressourcenpfad über den unmittelbaren Standort hinausreichen; dafür gibt es keinen Fallbeleg.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Bei geringem oder keinem relevanten Gebäudeschaden ist der zusätzliche Umweltpfad praktisch null; bei klarer lokaler Reparatur- oder Räumungsnotwendigkeit bleibt er begrenzt."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "ICRC trägt den allgemeinen Mechanismus von Sachschäden durch explosive Gewalt. AP trägt den konkreten Angriff auf ein Haus, aber keinen messbaren Umwelt- oder Trümmerbefund. Deshalb niedrige Evidenz und konservative Magnitude 1.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Der modellierte physische Pfad ist auf einen einzelnen lokalen Gebäudestandort begrenzt.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Reparatur- oder Räumungsbedarf kann lokal materiell relevant sein, ohne dass umfangreiche Zerstörung belegt ist.",
+                    "source_ids": [
+                      "research-icrc-ewipa"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Trümmerbeseitigung oder Reparatur kann über Tage bis Monate dauern, falls sie erforderlich wird.",
+                    "source_ids": [
+                      "research-icrc-ewipa"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Gebäudeschäden können grundsätzlich repariert oder ersetzt werden; irreversible Umweltfolgen sind nicht belegt.",
+                    "source_ids": [
+                      "research-icrc-ewipa"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung für den eng abgegrenzten normalen Räumungs- und Reparaturpfad am einzelnen Standort. Besondere Schadstoffexposition oder empfindliche Ökosysteme sind nicht Teil dieses Basisszenarios; dazu fehlen Fallbefunde. Die Einschränkung und Bandbreite sind separat dokumentiert.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Der Pfad bleibt lokal und begründet keine Änderung übergeordneter Umwelt- oder Ressourcensysteme.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya",
+                      "research-icrc-ewipa"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere oder irreversible ökologische Schutzgrenzverletzung ist für diesen einzelnen Angriff nicht belegt.",
+                  "reference_frame": "Lokale Umwelt und Ressourcenverbrauch bei Schadensbeseitigung",
+                  "source_ids": [
+                    "research-ap-beit-lahiya",
+                    "research-icrc-ewipa"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der Planet-Pfad ist negativ, lokal und bedingt. Die Faktoren 1+2+2+1+1+1 ergeben 8/6=1,33 und damit Magnitude 1. Fehlende Fallmessungen senken die Evidenz, werden aber nicht als Nullwirkung interpretiert.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen vergleichbaren positiven Umwelt-Hauptpfad gegenüber der Baseline ohne Angriff; mögliche spätere Reparatur ist Schadensminderung beziehungsweise Wiederherstellung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Ressourcenbedarf durch mögliche Gebäudeschäden",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Ressourcenbedarf durch mögliche Gebäudeschäden",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Aufklärung und öffentliche Rechenschaft",
+                "mechanism": "Wenn nach dem tödlichen Angriff zentrale Tatsachen zu Zielwahl und Ablauf dauerhaft ungeklärt bleiben, können Verantwortungszuordnung, Schutzprüfung und öffentliche Rechenschaft erschwert werden. Die Krankenhausangabe zu vier Getöteten und die nicht individualisierte Militärangabe müssen sich nicht widersprechen.",
+                "recipients": [
+                  "Betroffene und Angehörige",
+                  "zuständige Untersuchungs- und Rechtsinstitutionen",
+                  "Öffentlichkeit mit Interesse an überprüfbarer Rechenschaft"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "research-ap-beit-lahiya",
+                  "research-icrc-ewipa"
+                ],
+                "condition": "Es erfolgt keine ausreichend nachvollziehbare Klärung von Zielwahl, Opferstatus und relevanten Umständen des konkreten Angriffs, obwohl solche Fragen für Schutz und Rechenschaft materiell sind.",
+                "reference_space": "Rechenschafts- und Aufklärungsfähigkeit bezogen auf den einzelnen Angriff in Beit Lahiya gegenüber einem Zustand mit belastbarer, überprüfbarer Klärung der relevanten Tatsachen.",
+                "time_horizon": "Wochen bis Monate; bei dauerhaft ausbleibender Klärung länger.",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird weder unterstellt, dass eine Untersuchung zwingend stattfinden muss, noch dass sie bereits versagt hat. Modelliert wird ausschließlich der Fall, dass relevante Status- und Zielklärungen dauerhaft ausbleiben.",
+                "source_support": "AP trägt den tödlichen Ereigniskern und die separate Militärangabe zu einem getöteten Kämpfer ohne Identifizierung. ICRC trägt allgemein die Relevanz ziviler Schutzwirkungen explosiver Gewalt in bewohnten Gebieten, nicht die rechtliche Bewertung dieses Einzelfalls.",
+                "limitations": "Keine fallbezogene Untersuchung, kein gesicherter individueller Kombattantenstatus und keine abschließende rechtliche Bewertung liegen vor. Eine globale oder systemweite Institutionskrise ist nicht belegt.",
+                "first_order": "Ungeklärte Identität und Statuszuordnung können die unmittelbare sachliche Bewertung des Angriffs erschweren.",
+                "second_order": "Bleiben zentrale Tatsachen dauerhaft ungeklärt, können Rechenschafts- und Schutzprüfungen für diesen Fall schwächer nachvollziehbar werden.",
+                "third_order": "Nur bei wiederholtem systematischem Ausbleiben überprüfbarer Aufarbeitung könnte institutionelle Glaubwürdigkeit breiter beeinträchtigt werden; dies wird aus diesem Einzelereignis nicht abgeleitet.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Bei später belastbarer Klärung bleibt der institutionelle Folgepfad klein. Bei dauerhaft ausbleibender Aufarbeitung kann die Rechenschaftsfähigkeit für diesen Fall deutlich beeinträchtigt werden."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "AP belegt die offene Statuszuordnung; ICRC liefert nur allgemeinen Schutz- und Folgenkontext. Es gibt keinen Beleg für bereits gescheiterte Aufarbeitung, daher bleibt Eintritt unbekannt und Evidenz niedrig.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Der Pfad betrifft primär die Aufarbeitung eines einzelnen Angriffs und einen begrenzten Kreis direkt sowie institutionell Betroffener.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Fehlende belastbare Klärung kann Rechenschaft für den Einzelfall spürbar schwächen, ohne automatisch institutionelle Funktionsunfähigkeit zu bedeuten.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya",
+                      "research-icrc-ewipa"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Ungeklärte Status- und Verantwortungsfragen können über Monate oder länger fortbestehen, falls keine belastbare Aufarbeitung erfolgt.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Spätere Aufklärung kann Defizite teilweise korrigieren, wird mit Zeitablauf aber potenziell schwieriger.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Betroffene und Angehörige haben ein besonderes Interesse an nachvollziehbarer Klärung; konkrete zusätzliche Schutzbedürftigkeit einzelner Personen wird nicht erfunden.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Der Pfad berührt Rechenschafts- und Schutzmechanismen, bleibt aber auf diesen Einzelfall begrenzt und begründet keine globale Institutionskrise.",
+                    "source_ids": [
+                      "research-ap-beit-lahiya",
+                      "research-icrc-ewipa"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Nachvollziehbare Rechenschaft und Schutzprüfung sind wichtige institutionelle Güter. Eine schwere konkrete institutionelle Grenzverletzung ist durch die bislang offene Aufarbeitung dieses Einzelfalls jedoch nicht belegt.",
+                  "reference_frame": "Rechenschaft, überprüfbare Statusklärung und ziviler Schutz",
+                  "source_ids": [
+                    "research-ap-beit-lahiya",
+                    "research-icrc-ewipa"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die Richtung ist negativ, weil der modellierte Gegenstand nicht das unbekannte Ergebnis einer künftigen Aufarbeitung ist, sondern der bedingte Fall ihres Ausbleibens. Die Faktoren 2+2+3+2+2+2 ergeben 13/6=2,17 und damit Magnitude 2; Eintritt und Evidenz bleiben davon getrennt unsicher.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Eine mögliche spätere erfolgreiche Aufarbeitung wäre Schadensbegrenzung beziehungsweise Korrektur des negativen Pfads und kein eigenständiger positiver Hauptpfad gegenüber der Baseline mit belastbarer Klärung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Aufklärung und öffentliche Rechenschaft",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Aufklärung und öffentliche Rechenschaft",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "euronews-en",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Trägt den Feed-Anlass: mindestens vier Tote, darunter zwei Kinder, sowie die attribuierte Militärangabe zu einem getöteten Kämpfer."
+          },
+          {
+            "source_id": "research-ap-beit-lahiya",
+            "functions": [
+              "event",
+              "counter_evidence"
+            ],
+            "supported_claim": "Trägt Shifa-Hospital-Angaben zu vier Familienmitgliedern, Alter der beiden Töchter und die separate Militärangabe ohne Identifizierung."
+          },
+          {
+            "source_id": "research-icrc-ewipa",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Trägt allgemein direkte Todes-, Verletzungs- und Schadensmechanismen sowie mögliche indirekte Folgen explosiver Gewalt in bewohnten Gebieten; keine Beit-Lahiya-Fallbestätigung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex post",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://infonews.ca/news/7866342/houthis-seize-strategic-red-sea-port-in-yemen-and-other-mideast-developments/",
+          "title": "Associated Press: Bericht zu Beit Lahiya im Nahost-Livebericht",
+          "publisher": "Associated Press / iNFOnews",
+          "source_id": "research-ap-beit-lahiya",
+          "source_function": "event"
+        },
+        {
+          "url": "https://www.icrc.org/en/document/explosive-weapons-populated-areas-consequences-civilians",
+          "title": "Explosive weapons in populated areas: The consequences for civilians",
+          "publisher": "International Committee of the Red Cross",
+          "source_id": "research-icrc-ewipa",
+          "source_function": "mechanism"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Verlust familiärer Unterstützung",
+              "mechanism": "Der Verlust mehrerer Mitglieder einer Familie kann Unterstützungs-, Betreuungs- und Haushaltsbeziehungen unterbrechen und dadurch für verbleibende nahestehende Personen längerfristige Belastungen erzeugen.",
+              "recipients": [
+                "nahe Angehörige oder andere unmittelbar verbundene Personen, soweit vorhanden"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "research-ap-beit-lahiya",
+                "research-icrc-ewipa"
+              ],
+              "condition": "Es bestehen über die vier Getöteten hinaus tatsächlich enge persönliche, wirtschaftliche oder unterstützende Beziehungen, die durch ihren Tod dauerhaft beeinträchtigt werden.",
+              "reference_space": "Unmittelbar mit den vier Getöteten verbundene Personen gegenüber ihrer Situation vor dem Angriff.",
+              "time_horizon": "Wochen bis Jahre nach dem Angriff.",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es werden keine Zahl von Hinterbliebenen, psychische Diagnose oder konkrete Einkommens- und Betreuungsverluste unterstellt. Modelliert wird nur der allgemeine Folgepfad eines mehrfachen Todesfalls innerhalb einer Familie.",
+              "source_support": "AP belegt den Tod von zwei Eltern und ihren beiden Töchtern. ICRC trägt allgemein die Schwere unmittelbarer menschlicher Folgen explosiver Gewalt in bewohnten Gebieten, untersucht aber keine individuellen Folgebeziehungen dieser Familie.",
+              "limitations": "Keine Informationen zu weiteren Angehörigen, Abhängigkeiten, Haushaltseinkommen, Betreuungspflichten oder gesundheitlichen Folgen nahestehender Personen.",
+              "first_order": "Der Tod mehrerer Mitglieder derselben Familie kann bestehende persönliche und unterstützende Beziehungen abrupt beenden.",
+              "second_order": "Soweit andere Personen von diesen Beziehungen abhängig waren, können soziale, organisatorische oder materielle Belastungen entstehen.",
+              "third_order": "Bei länger anhaltender fehlender Unterstützung können Teilhabe und Alltagsstabilität einzelner Betroffener beeinträchtigt bleiben; dafür liegen keine fallbezogenen Daten vor.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Bei wenigen oder gut abgesicherten verbleibenden Beziehungen bleibt der Folgepfad begrenzt; bei engen Abhängigkeiten kann er für einzelne Betroffene deutlich sein."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen bestätigen den familiären Mehrfachverlust, liefern aber keine Daten zu konkreten Hinterbliebenen oder deren Lebenslage. Der Folgepfad bleibt deshalb niedrig evidenziert und bedingt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Der potenzielle Folgepfad betrifft einen kleinen, unmittelbar verbundenen Personenkreis, nicht die Bevölkerung insgesamt.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Der Verlust mehrerer enger Bezugspersonen kann für tatsächlich abhängige Personen eine deutliche soziale oder materielle Belastung darstellen.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya",
+                    "research-icrc-ewipa"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Folgen unterbrochener familiärer Unterstützungsbeziehungen können mittel- bis längerfristig bestehen.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Der Verlust der Personen selbst ist unumkehrbar; konkrete soziale und materielle Folgeprobleme können jedoch teilweise durch andere Unterstützung gemindert werden.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Falls abhängige Angehörige oder andere unterstützungsbedürftige Personen betroffen sind, kann ihre Belastung erhöht sein; konkrete Vulnerabilität ist nicht dokumentiert.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Der Pfad kann Haushalt und unmittelbares soziales Umfeld betreffen, ohne aus diesem Einzelereignis eine breitere Systemwirkung abzuleiten.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya",
+                    "research-icrc-ewipa"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der bereits eingetretene Tod ist separat als beobachtete Schutzgrenzverletzung erfasst. Für die hier modellierten nachgelagerten sozialen oder materiellen Folgen ist keine weitere konkrete schwere Schutzgrenzverletzung belegt.",
+                "reference_frame": "Soziale Stabilität, materielle Sicherheit und Teilhabe nahestehender Personen",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die Todesfälle selbst sind nicht erneut als Potenzial bewertet. Modelliert wird nur ein möglicher negativer Folgepfad für nahestehende Personen. Die Faktoren 1+3+3+2+2+2 ergeben 13/6=2,17 und damit Magnitude 2; Eintritt und konkrete Betroffenheit bleiben unsicher.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein vergleichbarer positiver Hauptpfad gegenüber der Baseline vor dem Angriff besteht nicht; mögliche Hilfe oder Unterstützung wäre lediglich Schadensminderung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Verlust familiärer Unterstützung",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Nach Angaben des Shifa-Krankenhauses wurden bei dem Angriff vier Mitglieder einer Familie getötet, darunter zwei Töchter im Alter von 8 und 12 Jahren.",
+              "direction": "negative",
+              "source_ids": [
+                "research-ap-beit-lahiya",
+                "euronews-en"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "established",
+              "reference_frame": "Schutz des Lebens und körperliche Unversehrtheit",
+              "reference_space": "Die vier gemeldeten Getöteten in Beit Lahiya gegenüber ihrem Zustand unmittelbar vor dem Angriff.",
+              "observed_at": "10. September 2026",
+              "temporal_status": "ex_post",
+              "magnitude": 4,
+              "mechanism": "AP berichtet unter Berufung auf das Shifa-Krankenhaus, dass der Angriff die vier Familienmitglieder tötete. Diese Ereigniskausalität wird quellengebunden übernommen. Die Militärangabe benennt die Zielperson nicht und ersetzt weder die gemeldeten Todesfälle noch eine fallbezogene rechtliche Prüfung.",
+              "recipients": [
+                "die vier gemeldeten getöteten Menschen",
+                "darunter zwei Kinder"
+              ],
+              "time_horizon": "Dauerhaft und irreversibel.",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die beobachtete Zustandsänderung betrifft vier konkret gemeldete Menschen und damit einzelne Empfänger.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Tod ist für die unmittelbar Betroffenen eine fundamentale Zustandsveränderung.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "duration": {
+                  "value": 5,
+                  "rationale": "Die Zustandsänderung ist dauerhaft.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Der Tod der Betroffenen ist irreversibel.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 5,
+                  "rationale": "Das Schutzgut Leben ist vollständig betroffen; zusätzlich sind zwei der Getöteten als Kinder belegt.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der beobachtete Schaden betrifft unmittelbar vier Personen. Weitergehende soziale oder institutionelle Folgen werden separat als Potenziale behandelt.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya",
+                    "research-icrc-ewipa"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der berichtete Tod von vier konkreten Menschen verletzt unmittelbar und irreversibel das fundamentale Schutzgut Leben. Die Mindeststufe 4 folgt aus dieser beobachteten Zustandsänderung, nicht aus einer vermuteten Absicht oder Rechtsqualifikation.",
+                "reference_frame": "Schutz des Lebens",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ],
+                "status": "observed"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 22,
+                "divisor": 6,
+                "raw": 3.6666666666666665,
+                "rounded": 4,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Nach Angaben des Shifa-Krankenhauses wurden bei dem Angriff vier Mitglieder einer Familie getötet, darunter zwei Töchter im Alter von 8 und 12 Jahren.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Nach Angaben des Shifa-Krankenhauses wurden bei dem Angriff vier Mitglieder einer Familie getötet, darunter zwei Töchter im Alter von 8 und 12 Jahren.",
+            "direction": "negative",
+            "source_ids": [
+              "research-ap-beit-lahiya",
+              "euronews-en"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "established",
+            "reference_frame": "Schutz des Lebens und körperliche Unversehrtheit",
+            "reference_space": "Die vier gemeldeten Getöteten in Beit Lahiya gegenüber ihrem Zustand unmittelbar vor dem Angriff.",
+            "observed_at": "10. September 2026",
+            "temporal_status": "ex_post",
+            "magnitude": 4,
+            "mechanism": "AP berichtet unter Berufung auf das Shifa-Krankenhaus, dass der Angriff die vier Familienmitglieder tötete. Diese Ereigniskausalität wird quellengebunden übernommen. Die Militärangabe benennt die Zielperson nicht und ersetzt weder die gemeldeten Todesfälle noch eine fallbezogene rechtliche Prüfung.",
+            "recipients": [
+              "die vier gemeldeten getöteten Menschen",
+              "darunter zwei Kinder"
+            ],
+            "time_horizon": "Dauerhaft und irreversibel.",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Die beobachtete Zustandsänderung betrifft vier konkret gemeldete Menschen und damit einzelne Empfänger.",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ]
+              },
+              "intensity": {
+                "value": 5,
+                "rationale": "Tod ist für die unmittelbar Betroffenen eine fundamentale Zustandsveränderung.",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ]
+              },
+              "duration": {
+                "value": 5,
+                "rationale": "Die Zustandsänderung ist dauerhaft.",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Der Tod der Betroffenen ist irreversibel.",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ]
+              },
+              "vulnerability": {
+                "value": 5,
+                "rationale": "Das Schutzgut Leben ist vollständig betroffen; zusätzlich sind zwei der Getöteten als Kinder belegt.",
+                "source_ids": [
+                  "research-ap-beit-lahiya"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Der beobachtete Schaden betrifft unmittelbar vier Personen. Weitergehende soziale oder institutionelle Folgen werden separat als Potenziale behandelt.",
+                "source_ids": [
+                  "research-ap-beit-lahiya",
+                  "research-icrc-ewipa"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der berichtete Tod von vier konkreten Menschen verletzt unmittelbar und irreversibel das fundamentale Schutzgut Leben. Die Mindeststufe 4 folgt aus dieser beobachteten Zustandsänderung, nicht aus einer vermuteten Absicht oder Rechtsqualifikation.",
+              "reference_frame": "Schutz des Lebens",
+              "source_ids": [
+                "research-ap-beit-lahiya"
+              ],
+              "status": "observed"
+            },
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 22,
+              "divisor": 6,
+              "raw": 3.6666666666666665,
+              "rounded": 4,
+              "protection_floor": 4,
+              "final": 4
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Nach Angaben des Shifa-Krankenhauses wurden bei dem Angriff vier Mitglieder einer Familie getötet, darunter zwei Töchter im Alter von 8 und 12 Jahren.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Nach Angaben des Shifa-Krankenhauses wurden bei dem Angriff vier Mitglieder einer Familie getötet, darunter zwei Töchter im Alter von 8 und 12 Jahren.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Ressourcenbedarf durch mögliche Gebäudeschäden",
+              "mechanism": "Ein explosiver Angriff auf ein Gebäude kann Bauteile beschädigen. Falls dies beim konkreten Haus in relevantem Umfang geschah, entstehen Trümmer sowie Material-, Transport- und Energiebedarf für Räumung oder Wiederherstellung.",
+              "recipients": [
+                "lokale Umwelt im unmittelbaren Schadensbereich",
+                "Ressourcen- und Entsorgungsprozesse der Wiederherstellung"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "research-ap-beit-lahiya",
+                "research-icrc-ewipa"
+              ],
+              "condition": "Der Angriff hat am betroffenen Gebäude tatsächlich materielle Schäden verursacht, die Räumung, Reparatur oder Ersatz erfordern.",
+              "reference_space": "Unmittelbarer Gebäudestandort in Beit Lahiya gegenüber dem Zustand vor dem konkreten Angriff.",
+              "time_horizon": "Tage bis Monate; bei umfangreicherer Reparatur länger.",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es werden weder konkrete Trümmermengen noch Schadstoffe, Brandfolgen oder Gebäudeverlust unterstellt. Modelliert wird nur der physische Ressourcenpfad einer möglichen Gebäudebeschädigung.",
+              "source_support": "AP beschreibt einen Angriff auf das Wohnhaus, belegt aber keinen quantifizierten Gebäudeschaden. ICRC trägt allgemein, dass explosive Gewalt in bewohnten Gebieten Sachschäden und indirekte Folgen verursachen kann; es untersucht diesen Fall nicht.",
+              "limitations": "Keine Angaben zu Schadensumfang, Baumaterialien, Trümmermenge, Reparaturbedarf, Emissionen oder Schadstofffreisetzung.",
+              "first_order": "Bei tatsächlicher Gebäudebeschädigung entstehen beschädigte Bauteile oder Trümmer.",
+              "second_order": "Räumung und Reparatur können zusätzlichen Material-, Energie- und Transportbedarf auslösen.",
+              "third_order": "Nur bei größerem längerfristigem Wiederaufbau könnte der Ressourcenpfad über den unmittelbaren Standort hinausreichen; dafür gibt es keinen Fallbeleg.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Bei geringem oder keinem relevanten Gebäudeschaden ist der zusätzliche Umweltpfad praktisch null; bei klarer lokaler Reparatur- oder Räumungsnotwendigkeit bleibt er begrenzt."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "ICRC trägt den allgemeinen Mechanismus von Sachschäden durch explosive Gewalt. AP trägt den konkreten Angriff auf ein Haus, aber keinen messbaren Umwelt- oder Trümmerbefund. Deshalb niedrige Evidenz und konservative Magnitude 1.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Der modellierte physische Pfad ist auf einen einzelnen lokalen Gebäudestandort begrenzt.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Reparatur- oder Räumungsbedarf kann lokal materiell relevant sein, ohne dass umfangreiche Zerstörung belegt ist.",
+                  "source_ids": [
+                    "research-icrc-ewipa"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Trümmerbeseitigung oder Reparatur kann über Tage bis Monate dauern, falls sie erforderlich wird.",
+                  "source_ids": [
+                    "research-icrc-ewipa"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Gebäudeschäden können grundsätzlich repariert oder ersetzt werden; irreversible Umweltfolgen sind nicht belegt.",
+                  "source_ids": [
+                    "research-icrc-ewipa"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung für den eng abgegrenzten normalen Räumungs- und Reparaturpfad am einzelnen Standort. Besondere Schadstoffexposition oder empfindliche Ökosysteme sind nicht Teil dieses Basisszenarios; dazu fehlen Fallbefunde. Die Einschränkung und Bandbreite sind separat dokumentiert.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Der Pfad bleibt lokal und begründet keine Änderung übergeordneter Umwelt- oder Ressourcensysteme.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya",
+                    "research-icrc-ewipa"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere oder irreversible ökologische Schutzgrenzverletzung ist für diesen einzelnen Angriff nicht belegt.",
+                "reference_frame": "Lokale Umwelt und Ressourcenverbrauch bei Schadensbeseitigung",
+                "source_ids": [
+                  "research-ap-beit-lahiya",
+                  "research-icrc-ewipa"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der Planet-Pfad ist negativ, lokal und bedingt. Die Faktoren 1+2+2+1+1+1 ergeben 8/6=1,33 und damit Magnitude 1. Fehlende Fallmessungen senken die Evidenz, werden aber nicht als Nullwirkung interpretiert.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen vergleichbaren positiven Umwelt-Hauptpfad gegenüber der Baseline ohne Angriff; mögliche spätere Reparatur ist Schadensminderung beziehungsweise Wiederherstellung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Ressourcenbedarf durch mögliche Gebäudeschäden",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Ressourcenbedarf durch mögliche Gebäudeschäden",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Aufklärung und öffentliche Rechenschaft",
+              "mechanism": "Wenn nach dem tödlichen Angriff zentrale Tatsachen zu Zielwahl und Ablauf dauerhaft ungeklärt bleiben, können Verantwortungszuordnung, Schutzprüfung und öffentliche Rechenschaft erschwert werden. Die Krankenhausangabe zu vier Getöteten und die nicht individualisierte Militärangabe müssen sich nicht widersprechen.",
+              "recipients": [
+                "Betroffene und Angehörige",
+                "zuständige Untersuchungs- und Rechtsinstitutionen",
+                "Öffentlichkeit mit Interesse an überprüfbarer Rechenschaft"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "research-ap-beit-lahiya",
+                "research-icrc-ewipa"
+              ],
+              "condition": "Es erfolgt keine ausreichend nachvollziehbare Klärung von Zielwahl, Opferstatus und relevanten Umständen des konkreten Angriffs, obwohl solche Fragen für Schutz und Rechenschaft materiell sind.",
+              "reference_space": "Rechenschafts- und Aufklärungsfähigkeit bezogen auf den einzelnen Angriff in Beit Lahiya gegenüber einem Zustand mit belastbarer, überprüfbarer Klärung der relevanten Tatsachen.",
+              "time_horizon": "Wochen bis Monate; bei dauerhaft ausbleibender Klärung länger.",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird weder unterstellt, dass eine Untersuchung zwingend stattfinden muss, noch dass sie bereits versagt hat. Modelliert wird ausschließlich der Fall, dass relevante Status- und Zielklärungen dauerhaft ausbleiben.",
+              "source_support": "AP trägt den tödlichen Ereigniskern und die separate Militärangabe zu einem getöteten Kämpfer ohne Identifizierung. ICRC trägt allgemein die Relevanz ziviler Schutzwirkungen explosiver Gewalt in bewohnten Gebieten, nicht die rechtliche Bewertung dieses Einzelfalls.",
+              "limitations": "Keine fallbezogene Untersuchung, kein gesicherter individueller Kombattantenstatus und keine abschließende rechtliche Bewertung liegen vor. Eine globale oder systemweite Institutionskrise ist nicht belegt.",
+              "first_order": "Ungeklärte Identität und Statuszuordnung können die unmittelbare sachliche Bewertung des Angriffs erschweren.",
+              "second_order": "Bleiben zentrale Tatsachen dauerhaft ungeklärt, können Rechenschafts- und Schutzprüfungen für diesen Fall schwächer nachvollziehbar werden.",
+              "third_order": "Nur bei wiederholtem systematischem Ausbleiben überprüfbarer Aufarbeitung könnte institutionelle Glaubwürdigkeit breiter beeinträchtigt werden; dies wird aus diesem Einzelereignis nicht abgeleitet.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Bei später belastbarer Klärung bleibt der institutionelle Folgepfad klein. Bei dauerhaft ausbleibender Aufarbeitung kann die Rechenschaftsfähigkeit für diesen Fall deutlich beeinträchtigt werden."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "AP belegt die offene Statuszuordnung; ICRC liefert nur allgemeinen Schutz- und Folgenkontext. Es gibt keinen Beleg für bereits gescheiterte Aufarbeitung, daher bleibt Eintritt unbekannt und Evidenz niedrig.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Der Pfad betrifft primär die Aufarbeitung eines einzelnen Angriffs und einen begrenzten Kreis direkt sowie institutionell Betroffener.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Fehlende belastbare Klärung kann Rechenschaft für den Einzelfall spürbar schwächen, ohne automatisch institutionelle Funktionsunfähigkeit zu bedeuten.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya",
+                    "research-icrc-ewipa"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Ungeklärte Status- und Verantwortungsfragen können über Monate oder länger fortbestehen, falls keine belastbare Aufarbeitung erfolgt.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Spätere Aufklärung kann Defizite teilweise korrigieren, wird mit Zeitablauf aber potenziell schwieriger.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Betroffene und Angehörige haben ein besonderes Interesse an nachvollziehbarer Klärung; konkrete zusätzliche Schutzbedürftigkeit einzelner Personen wird nicht erfunden.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Der Pfad berührt Rechenschafts- und Schutzmechanismen, bleibt aber auf diesen Einzelfall begrenzt und begründet keine globale Institutionskrise.",
+                  "source_ids": [
+                    "research-ap-beit-lahiya",
+                    "research-icrc-ewipa"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Nachvollziehbare Rechenschaft und Schutzprüfung sind wichtige institutionelle Güter. Eine schwere konkrete institutionelle Grenzverletzung ist durch die bislang offene Aufarbeitung dieses Einzelfalls jedoch nicht belegt.",
+                "reference_frame": "Rechenschaft, überprüfbare Statusklärung und ziviler Schutz",
+                "source_ids": [
+                  "research-ap-beit-lahiya",
+                  "research-icrc-ewipa"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die Richtung ist negativ, weil der modellierte Gegenstand nicht das unbekannte Ergebnis einer künftigen Aufarbeitung ist, sondern der bedingte Fall ihres Ausbleibens. Die Faktoren 2+2+3+2+2+2 ergeben 13/6=2,17 und damit Magnitude 2; Eintritt und Evidenz bleiben davon getrennt unsicher.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Eine mögliche spätere erfolgreiche Aufarbeitung wäre Schadensbegrenzung beziehungsweise Korrektur des negativen Pfads und kein eigenständiger positiver Hauptpfad gegenüber der Baseline mit belastbarer Klärung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Aufklärung und öffentliche Rechenschaft",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Aufklärung und öffentliche Rechenschaft",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "third_order",
+            "path": "Eine spätere Aufklärung von Zielwahl und Opferstatus kann für Rechenschaft relevant werden; eine konkrete institutionelle Folge ist bislang nicht beobachtet.",
+            "direction": "open",
+            "condition": "Es erfolgt tatsächlich eine belastbare institutionelle oder rechtliche Aufarbeitung.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "democracy"
+            ]
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "kinder_jugend"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-11T04:17:03.819Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-11T02:33:53.000Z",
+      "last_updated": "2026-09-11T04:17:03.819Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-2a47218274cc49ecffd2",
+      "case_file": null,
+      "source_published_at": "2026-09-11T02:33:53.000Z",
+      "published_at": "2026-09-11T04:17:03.819Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "euronews-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob Euronews die Meldung um weitere belastbare Angaben zur Identität oder Einordnung des vom israelischen Militär genannten Kämpfers ergänzt.",
+          "source_id": "euronews-en",
+          "expected_by": null,
+          "measurable_indicator": "Neue konkrete Angaben zur Identität, Statuszuordnung oder militärischen Einordnung in der Euronews-Meldung.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a6bfee7bc8556eda",
+          "announced_at": "2026-09-11T02:33:53.000Z",
+          "follow_up_date": "2026-09-18T04:17:03.819Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob Euronews weitere konkrete Angaben zu Verletzten oder Sach- und Infrastrukturschäden dieses Angriffs ergänzt.",
+          "source_id": "euronews-en",
+          "expected_by": null,
+          "measurable_indicator": "Neue belastbare Angaben zu weiteren Verletzten, Gebäudeschäden oder Infrastrukturschäden in der Euronews-Meldung.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-eb23f24418e5563a",
+          "announced_at": "2026-09-11T02:33:53.000Z",
+          "follow_up_date": "2026-09-18T04:17:03.819Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Euronews",
+          "url": "https://www.euronews.com/2026/09/11/israeli-strike-in-gaza-kills-family-of-four-including-two-children",
+          "source_type": "media_rss",
+          "published_at": "2026-09-11T02:33:53.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-d9bcb56a98c6cdc7",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d9bcb56a98c6cdc7-20b50d79f61e85cc-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d9bcb56a98c6cdc7-a968804ffac12267-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d9bcb56a98c6cdc7-424bafa724dcc3ea-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d9bcb56a98c6cdc7-7bfef8451e7ba7bd-source.png",
+          "alt_text": "Stilisierte Stadtbrücke mit getrennten Bereichen für Straßenbahn, Auto-, Rad- und Fußverkehr als Symbol für die beschlossene Entwurfsvariante."
+        }
+      },
+      "slug": "fragen-und-antworten-zum-neubau-der-carolabrucke-in-dresden-c6cdc7",
+      "title": "Carolabrücke Dresden: Siegerentwurf steht fest – Genehmigungsfragen bleiben offen",
+      "source_summary": "Beim geplanten Ersatzneubau der Dresdner Carolabrücke ist die Planung konkreter geworden. Der Stadtrat hat Anfang September einen Entwurf von FHECOR Deutschland und TSSB ausgewählt; laut MDR fiel die Entscheidung mit 39 zu 31 Stimmen. Vorgesehen sind vier Autospuren, Straßenbahngleise sowie getrennte Wege für Radfahrer und Fußgänger. Nach Angaben der Planer wäre derselbe Entwurf auch mit zwei Autospuren umsetzbar.\n\nDer ausgewählte Entwurf ist laut MDR 2,50 Meter höher als die alte Brücke und enthält ein zusätzliches Pfeilerpaar. Die Stadt will ihn trotzdem als Ersatzneubau zur Genehmigung vorlegen. Ob diese Einordnung im Genehmigungsverfahren trägt und ob tatsächlich Klagen folgen, ist offen. Die neue Brücke ist noch nicht gebaut; Verkehrs-, Klima- oder Erreichbarkeitswirkungen sind deshalb bislang keine beobachteten Folgen.",
+      "summary": "Für die Carolabrücke steht nach der Stadtratsentscheidung Anfang September ein konkreter Siegerentwurf fest. Gebaut ist noch nichts: Genehmigung, mögliche Rechtsmittel und die späteren Verkehrs- und Umweltwirkungen bleiben offen.",
+      "detail_summary": "Der Dresdner Stadtrat hat Anfang September einen konkreten Entwurf für den Ersatzneubau der Carolabrücke ausgewählt. Laut MDR erhielt er 39 zu 31 Stimmen. Geplant sind vier Autospuren, Straßenbahn sowie getrennte Wege für Rad- und Fußverkehr; technisch wären nach Planerangaben auch zwei Autospuren möglich. Der Entwurf weicht mit größerer Höhe und einem zusätzlichen Pfeilerpaar von früheren Vorgaben ab. Die Stadt will ihn als Ersatzneubau zur Genehmigung vorlegen, mögliche Klagen sind bislang nur ein Risiko. Weil die Brücke noch nicht gebaut ist, sind bessere Erreichbarkeit, veränderte Verkehrsströme oder Umweltfolgen noch Potenziale und keine beobachteten Ergebnisse.",
+      "why_relevant": "Mit der Auswahl eines konkreten Entwurfs wird aus dem grundsätzlichen Ersatzneubau ein deutlich bestimmterer Infrastrukturplan. Damit werden Verkehrsaufteilung und Genehmigungsfragen materiell relevant.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Der Dresdner Stadtrat hat am 3. September 2026 das Team FHECOR Deutschland/TSSB für die weitere Planung des Ersatzneubaus der Carolabrücke ausgewählt. Der Entwurf sieht unter anderem vier Autospuren, Straßenbahn sowie getrennte Rad- und Fußwege vor; die Brücke ist noch nicht gebaut.",
+        "evaluation_target": {
+          "label": "Mögliche Folgen des ausgewählten Ersatzneubaus der Carolabrücke gegenüber einer fortbestehend fehlenden Brückenverbindung",
+          "type": "decision"
+        },
+        "baseline": "Fortbestehender Zustand ohne wiederhergestellte Carolabrücken-Verbindung über die Elbe.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne erfolgreiche weitere Planung, Genehmigung und Realisierung des ausgewählten Ersatzneubaus bleibt die direkte Carolabrücken-Verbindung länger unterbrochen; die Verkehrsbeziehungen müssen weiterhin über andere Verbindungen abgewickelt werden.",
+        "reference_frame": [
+          "Erreichbarkeit und sichere multimodale Mobilität",
+          "Zugängliche städtische Infrastruktur",
+          "Resilienz kommunaler Verkehrsnetze",
+          "Transparente kommunale Planung und rechtliche Kontrollfähigkeit"
+        ],
+        "claim_ledger": [
+          {
+            "claim": "Der Dresdner Stadtrat wählte am 3. September 2026 das Team FHECOR Deutschland/TSSB für die weitere Planung aus.",
+            "status": "primary_source_claim",
+            "source_ids": [
+              "research-dresden-carola-decision"
+            ],
+            "note": "Amtliche Mitteilung der Landeshauptstadt Dresden."
+          },
+          {
+            "claim": "Der MDR nennt für die Stadtratsentscheidung ein Abstimmungsergebnis von 39 zu 31 Stimmen.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "mdr-nachrichten"
+            ],
+            "note": "Journalistische Berichterstattung zum Ratsbeschluss."
+          },
+          {
+            "claim": "Vorgesehen sind vier Autospuren, Straßenbahngleise sowie getrennte Wege für Rad- und Fußverkehr; laut Planern ist derselbe Entwurf auch mit zwei Autospuren umsetzbar.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "mdr-nachrichten"
+            ],
+            "note": "Die Zweispurigkeit ist eine technische Möglichkeit, nicht die aktuell beschlossene Verkehrsaufteilung."
+          },
+          {
+            "claim": "Die amtlich genannten nächsten Schritte umfassen Vorplanung, Statik, Konstruktion, Straßenaufbauten, Entwässerung, Kostenplanung, Fernwärme, Beleuchtung, Fahrleitungsanlage, Behördenabstimmung und Ausschreibung.",
+            "status": "primary_source_claim",
+            "source_ids": [
+              "research-dresden-carola-decision"
+            ],
+            "note": "Planungs- und Umsetzungsschritte, keine bereits realisierten Wirkungen."
+          },
+          {
+            "claim": "Ein Baubeginn im Mai 2028 ist geplant.",
+            "status": "primary_source_claim",
+            "source_ids": [
+              "research-dresden-carola-decision"
+            ],
+            "note": "Planungsziel, keine Garantie für tatsächlichen Baubeginn."
+          },
+          {
+            "claim": "Das Begleitgremium hatte zuvor am 18. August einen anderen Entwurf bevorzugt; der Stadtrat entschied sich anschließend für FHECOR/TSSB.",
+            "status": "primary_source_claim",
+            "source_ids": [
+              "research-dresden-carola-decision"
+            ],
+            "note": "Abweichende fachliche Präferenz innerhalb des Planungsverfahrens; daraus folgt keine institutionelle Fehlfunktion."
+          },
+          {
+            "claim": "Die Planer kommunizieren die Auswahl ihres eigenen Entwurfs am 3. September.",
+            "status": "primary_source_claim",
+            "source_ids": [
+              "research-carola-planner-decision"
+            ],
+            "note": "Eigeninteressierte Projektkommunikation; geeignet zur Bestätigung eigener Projektangaben, nicht als unabhängige Bewertung."
+          }
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Eine wiederhergestellte Brückenverbindung kann nach Fertigstellung Erreichbarkeit und Mobilitätsoptionen für Straßenbahn-, Auto-, Rad- und Fußverkehr verbessern. Die Wirkung ist noch nicht beobachtet und hängt von Genehmigung, Bau und tatsächlicher Nutzung ab.",
+            "planet": "Bau und Betrieb erzeugen Ressourcen- und Verkehrsfolgen. Die ökologische Bilanz hängt von Bauweise, Materialeinsatz und späteren Verkehrsströmen ab; eine Zweispur-Variante ist als eigener Variantenvergleich zu behandeln und nicht als Gegenfaktum zur fehlenden Brücke.",
+            "democracy": "Der Stadtrat hat innerhalb eines kommunalen Planungsverfahrens entschieden. Eine Abweichung von der Empfehlung des Begleitgremiums ist für sich kein demokratischer Schaden; Genehmigung und mögliche Rechtsmittel bleiben reguläre Kontrollmechanismen."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Der konkrete Planungsgegenstand für den Ersatzneubau ist ausgewählt; die Brücke selbst und ihre Mobilitätswirkungen bestehen noch nicht.",
+          "second_order": "Bei erfolgreicher Genehmigung und Realisierung kann die zusätzliche Elbquerung Wege, Erreichbarkeit und Netzresilienz verändern; Bau und Verkehrsaufteilung erzeugen zugleich Ressourcen- und Verteilungsfolgen.",
+          "third_order": "Langfristig kann die gebaute Brücke die Struktur des Dresdner Verkehrsnetzes und die Flächenverteilung zwischen Verkehrsträgern mitprägen; Umfang und Richtung einzelner Effekte hängen von der endgültigen Ausführung und Nutzung ab.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Brücke ist noch nicht gebaut; es gibt daher keine beobachtete Verbesserung von Erreichbarkeit, Verkehr oder Klima.",
+            "Die amtliche Mitteilung nennt weitere Planungs-, Behörden- und Ausschreibungsschritte; der geplante Baubeginn ist kein garantierter Termin.",
+            "Die technisch mögliche Zweispurigkeit ist keine beschlossene Alternative und darf nicht mit dem Hauptgegenfaktum einer weiterhin fehlenden Brückenverbindung vermischt werden.",
+            "Das Begleitgremium hatte einen anderen Entwurf bevorzugt; die spätere Ratsentscheidung ist dennoch ein regulärer politischer Entscheidungsschritt und kein Beleg für institutionelles Versagen.",
+            "Die Planerquelle hat ein Eigeninteresse und wird nicht als unabhängige Wirkungsbewertung verwendet."
+          ],
+          "source_independence": "Die Landeshauptstadt Dresden ist Primärquelle für Ratsentscheidung und weitere Planungsschritte. MDR berichtet journalistisch darüber. Die Projektseite von TSSB bestätigt eigene Projektangaben, ist wegen Eigeninteresses aber keine unabhängige Bewertungsquelle.",
+          "institutional_status": "Der Stadtrat hat das Planungsteam ausgewählt. Weitere Vorplanung, technische Konkretisierung, Behördenabstimmung und Ausschreibung stehen noch aus; eine fertige oder bereits genutzte Brücke liegt nicht vor."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_positive",
+            "direction": "positive",
+            "magnitude": 3,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Neue Brücke kann Wege und Erreichbarkeit verbessern",
+                "mechanism": "Wird die ausgewählte Brücke genehmigt, gebaut und eröffnet, entsteht an dieser Stelle wieder eine direkte Elbquerung für Straßenbahn, Auto-, Rad- und Fußverkehr. Dadurch können Wege, Netzzugang und Ausweichmöglichkeiten gegenüber dem Zustand ohne funktionierende Carolabrücke verbessert werden.",
+                "recipients": [
+                  "Nutzerinnen und Nutzer des Dresdner Verkehrsnetzes",
+                  "Fahrgäste des öffentlichen Verkehrs",
+                  "Radfahrerinnen und Radfahrer",
+                  "Fußgängerinnen und Fußgänger",
+                  "Autoverkehr auf der wiederhergestellten Verbindung"
+                ],
+                "magnitude": 3,
+                "evidence": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "mdr-nachrichten",
+                  "research-dresden-carola-decision"
+                ],
+                "condition": "Der ausgewählte Entwurf durchläuft Planung und Genehmigung erfolgreich, wird tatsächlich gebaut und als multimodale Elbquerung in Betrieb genommen.",
+                "reference_space": "Dresdner Verkehrs- und Erreichbarkeitsbeziehungen mit realisierter Carolabrücke gegenüber einem länger fortbestehenden Zustand ohne diese direkte Brückenverbindung.",
+                "time_horizon": "Ab Inbetriebnahme über viele Jahre; der amtlich genannte Baubeginn im Mai 2028 ist lediglich geplant und keine Fertigstellungsgarantie.",
+                "path_quality": [
+                  "direct",
+                  "systemic"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Bewertet wird nur der zusätzliche Nutzen einer wiederhergestellten multimodalen Verbindung gegenüber der fehlenden Brücke. Die Frage zwei versus vier Autospuren ist ein separater Variantenvergleich und verändert dieses Gegenfaktum nicht.",
+                "source_support": "MDR und Stadt Dresden belegen den ausgewählten Entwurf und die vorgesehenen Verkehrsarten. Die amtliche Quelle zeigt, dass weitere Planung und Umsetzung noch bevorstehen. Die Quellen belegen keine bereits eingetretene Mobilitätsverbesserung.",
+                "limitations": "Keine aktuellen Nutzungsprognosen, Reisezeitmessungen oder belastbaren quantitativen Verkehrsfolgen liegen in den verwendeten Quellen vor. Genehmigung, Bau und tatsächliche Nutzung bleiben Bedingungen.",
+                "first_order": "Nach Fertigstellung entsteht an der Stelle wieder eine direkte Verbindung für mehrere Verkehrsträger.",
+                "second_order": "Diese Verbindung kann Umwege reduzieren, zusätzliche Netzoptionen schaffen und die Erreichbarkeit zwischen beiden Elbseiten verbessern.",
+                "third_order": "Als zusätzliche wichtige Querung kann die Brücke längerfristig die Robustheit und räumliche Struktur des Dresdner Verkehrsnetzes mitprägen; die tatsächliche Verkehrsverteilung bleibt offen.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Bei begrenzter tatsächlicher Nutzung oder starken Alternativrouten bleibt der Nutzen moderat; bei hoher Netzbedeutung und breiter multimodaler Nutzung kann die Wirkung stadtweit deutlich und lang anhaltend sein."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "initial",
+                "research_result": "Die amtliche Quelle bestätigt einen realen Planungsschritt und die noch ausstehenden Umsetzungsphasen. MDR trägt die multimodale Ausgestaltung. Es gibt noch keine beobachteten Mobilitätsdaten; deshalb wird der Pfad ex ante mit mittlerer Evidenz modelliert.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Die Brücke ist eine städtische Elbquerung mit potenziell breiter Bedeutung für mehrere Verkehrsträger und damit mindestens regional beziehungsweise stadtweit relevant.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-dresden-carola-decision"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Eine zusätzliche direkte Querung kann Wege und Erreichbarkeit spürbar verbessern, ohne dass aus den Quellen bereits starke individuelle Zeit- oder Zugangsgewinne quantifiziert werden können.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-dresden-carola-decision"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Wird die Brücke gebaut, prägt die Infrastruktur die Mobilitätsmöglichkeiten voraussichtlich über einen langen Zeitraum.",
+                    "source_ids": [
+                      "research-dresden-carola-decision"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Eine gebaute Brücke und ihre Grundstruktur sind nur mit erheblichem baulichem Aufwand veränderbar; betriebliche Verkehrsführung bleibt eher anpassbar.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-dresden-carola-decision"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Eine wiederhergestellte Verbindung kann auch Menschen zugutekommen, die auf ÖPNV, Fuß- oder Radverbindungen angewiesen sind; besondere Betroffenheit einzelner vulnerabler Gruppen ist nicht quantifiziert.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Eine zentrale Elbquerung kann Netzbeziehungen und Ausweichmöglichkeiten über den einzelnen Baukörper hinaus beeinflussen, ohne bereits eine grundlegende Transformation des gesamten Verkehrssystems zu belegen.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-dresden-carola-decision"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Erreichbarkeit und zugängliche Mobilität sind wichtige öffentliche Funktionen. Eine konkrete schwere Schutzgrenzverletzung oder existenzielle Versorgungslücke wird im hier bewerteten Potenzialpfad jedoch nicht belegt.",
+                  "reference_frame": "Zugängliche Mobilität, Erreichbarkeit und robuste städtische Infrastruktur",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-dresden-carola-decision"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Gegenüber einer weiterhin fehlenden Brückenverbindung kann die realisierte multimodale Querung Wege und Erreichbarkeit verbessern. Die einzeln begründeten Faktoren 3+2+4+3+2+3 ergeben 17/6 und damit Tragweite 3. Der Vergleich zwischen zwei und vier Autospuren gehört zu einem eigenen Variantenvergleich.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es liegt kein materiell vergleichbarer negativer Hauptpfad mit demselben Gegenstand und derselben Baseline vor. Bauaufwand und Spurvarianten werden in anderen Dimensionen beziehungsweise separaten Variantenvergleichen bewertet."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Neue Brücke kann Wege und Erreichbarkeit verbessern",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Neue Brücke kann Wege und Erreichbarkeit verbessern",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "balanced",
+            "direction": "mixed",
+            "magnitude": 3,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Brückenbau braucht Material und Energie",
+                "mechanism": "Für Brückenkonstruktion, Straßenaufbauten, Entwässerung, Leitungs- und Verkehrstechnik werden Material, Bauleistungen, Transporte und Energie benötigt. Gegenüber einer weiterhin fehlenden Brücke entsteht dadurch zusätzlicher physischer Ressourcenbedarf.",
+                "recipients": [
+                  "lokale Umwelt im Bau- und Anschlussbereich",
+                  "Material- und Energieflüsse des Bauprojekts",
+                  "kommunale Infrastruktur"
+                ],
+                "magnitude": 3,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "high",
+                "source_ids": [
+                  "research-dresden-carola-decision",
+                  "mdr-nachrichten"
+                ],
+                "condition": "Der ausgewählte Entwurf wird genehmigt und tatsächlich als Ersatzneubau umgesetzt.",
+                "reference_space": "Bau und Herstellung der Carolabrücke gegenüber einem fortbestehenden Zustand ohne diesen Ersatzneubau.",
+                "time_horizon": "Vor allem Planungs- und Bauphase; Teile des gebundenen Materials wirken über die Nutzungsdauer fort.",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Bewertet wird der physische Bauaufwand des realisierten Projekts. Es werden keine nicht belegten Materialmengen, Emissionen oder Schadstoffwerte unterstellt.",
+                "source_support": "Die amtliche Quelle nennt Statik, Konstruktion, Straßenaufbauten, Entwässerung, Fernwärme, Beleuchtung und Fahrleitungsanlage als weitere Planungselemente. MDR beschreibt die konkrete Brückengeometrie. Keine Quelle liefert eine Umweltbilanz.",
+                "limitations": "Keine belastbaren Mengen zu Beton, Stahl, Energie, Transport, Flächenwirkung oder Treibhausgasemissionen. Besondere lokale ökologische Empfindlichkeiten oder Lastkonzentrationen sind mit den vorliegenden Quellen nicht bewertbar und begrenzen die Bandbreitensicherheit.",
+                "first_order": "Bei Realisierung werden Baumaterialien, Energie und Bauleistungen für den Ersatzneubau eingesetzt.",
+                "second_order": "Herstellung, Transporte und Baustellenbetrieb erzeugen weitere Ressourcen- und Umweltbelastungen, deren Umfang noch nicht quantifiziert ist.",
+                "third_order": "Die gebaute Infrastruktur bindet Materialien über viele Jahre und kann spätere Instandhaltungs- und Ersatzbedarfe erzeugen; deren Umfang ist offen.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Ein großer Brückenneubau hat plausibel mehr als nur lokalen Bagatellaufwand. Ohne Mengen- und Umweltbilanz bleibt offen, ob die Umwelttragweite begrenzt oder deutlich ist."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die amtliche Projektbeschreibung bestätigt umfangreiche technische Bau- und Ausrüstungselemente, aber keine quantifizierte Umweltbilanz. Deshalb wird der negative Ressourcenpfad mit niedriger Evidenz und Bandbreite 2 bis 4 modelliert.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Der Neubau betrifft eine große städtische Infrastruktur mit Material- und Bauketten über den unmittelbaren Brückenstandort hinaus.",
+                    "source_ids": [
+                      "research-dresden-carola-decision",
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Ein vollständiger Brückenersatz mit Fahrbahnen, Straßenbahn- und technischer Infrastruktur erfordert einen deutlich materiellen Bauaufwand.",
+                    "source_ids": [
+                      "research-dresden-carola-decision",
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Der Ressourcenverbrauch konzentriert sich auf Planung und Bau; gebundene Materialien und Instandhaltung wirken mittel- bis längerfristig fort.",
+                    "source_ids": [
+                      "research-dresden-carola-decision"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Eine errichtete Brückenkonstruktion und der darin gebundene Materialeinsatz lassen sich nur durch erheblichen baulichen Aufwand verändern. Rückbau und Materialrückgewinnung sind grundsätzlich möglich; absolute Unumkehrbarkeit wird nicht behauptet.",
+                    "source_ids": [
+                      "research-dresden-carola-decision",
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Im eng abgegrenzten Basisszenario verteilt sich der Ressourcenverbrauch auf Bau- und Lieferketten; eine extreme Lastkonzentration auf einen einzelnen Schutzempfänger ist nicht Teil dieses modellierten Pfads.",
+                    "source_ids": [
+                      "research-dresden-carola-decision",
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Der Pfad betrifft eine zentrale Verkehrsinfrastruktur und deren Bau- und Instandhaltungssystem, ohne eine überregionale Ressourcenstruktur grundlegend zu verändern.",
+                    "source_ids": [
+                      "research-dresden-carola-decision"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Ein materieller Bau- und Ressourcenpfad ist plausibel, aber keine konkrete schwere ökologische Schutzgrenzverletzung ist belegt.",
+                  "reference_frame": "Ressourcenschonung und natürliche Lebensgrundlagen",
+                  "source_ids": [
+                    "research-dresden-carola-decision",
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              },
+              {
+                "direction": "positive",
+                "label": "Straßenbahn, Rad und Fuß können Autofahrten vermeiden",
+                "mechanism": "Die geplante Brücke schafft wieder eine direkte Querung für Straßenbahn, Rad- und Fußverkehr. Gegenüber einer weiterhin fehlenden Verbindung können dadurch Wege kürzer werden oder einzelne Autofahrten entfallen, wenn Menschen diese Angebote tatsächlich nutzen und nicht lediglich zusätzliche Wege entstehen.",
+                "recipients": [
+                  "lokale Luft- und Klimawirkung des Verkehrs",
+                  "Nutzerinnen und Nutzer von Straßenbahn, Rad- und Fußverkehr",
+                  "städtischer Verkehrsraum"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "mdr-nachrichten",
+                  "research-dresden-carola-decision"
+                ],
+                "condition": "Die Brücke wird gebaut, die vorgesehenen Straßenbahn-, Rad- und Fußverbindungen werden realisiert und tatsächlich so genutzt, dass gegenüber der weiter fehlenden Verbindung Autofahrten vermieden oder Wege verkürzt werden; zusätzliche motorisierte Fahrten dürfen den Effekt nicht vollständig aufheben.",
+                "reference_space": "Nutzungsphase der realisierten multimodalen Carolabrücke gegenüber einem fortbestehenden Zustand ohne diese direkte Brückenverbindung.",
+                "time_horizon": "Ab Inbetriebnahme über die Nutzungsdauer der Brücke.",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Aus Straßenbahn-, Rad- und Fußinfrastruktur wird kein sicherer Modalgewinn abgeleitet. Der positive Pfad entsteht nur bei tatsächlicher Vermeidung von Autofahrten oder Verkürzung von Wegen gegenüber der fehlenden Verbindung.",
+                "source_support": "MDR belegt die geplanten Verkehrsarten. Die amtliche Quelle bestätigt die weitere Planung einschließlich Fahrleitungsanlage. Keine Quelle misst spätere Verkehrsverlagerung, Energieverbrauch oder Emissionen.",
+                "limitations": "Keine Verkehrsprognose, Modal-Split-Daten oder Klimabilanz für den ausgewählten Entwurf. Ob und wie stark tatsächlich Autofahrten vermieden oder Wege verkürzt werden, ist offen; besondere lokale Belastungsschwerpunkte sind nicht quantifiziert.",
+                "first_order": "Mit der gebauten Brücke stehen wieder direkte Straßenbahn-, Rad- und Fußverbindungen an dieser Querung zur Verfügung.",
+                "second_order": "Wenn dadurch gegenüber der fehlenden Verbindung Autofahrten entfallen oder Wege kürzer werden, kann Verkehrsenergie eingespart werden.",
+                "third_order": "Bei dauerhaft entsprechender Nutzung kann die Querung den lokalen Verkehrspfad mitprägen; eine tatsächliche Klimaentlastung ist noch nicht beobachtet.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Ohne tatsächliche Vermeidung oder Verkürzung motorisierter Wege bleibt die Wirkung gering; bei breiter dauerhafter Nutzung kann sie lokal bis stadtweit relevant werden."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen belegen die multimodale Infrastruktur, aber keine Nutzungs- oder Emissionswirkung. Der positive Nutzungspfad bleibt daher niedrig evidenziert und bedingt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Eine zentrale städtische Querung kann viele Wege und mehrere Verkehrsträger betreffen.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-dresden-carola-decision"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Umweltentlastungen aus einzelnen verlagerten oder verkürzten Wegen wären begrenzt bis spürbar; konkrete Größen sind nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Wird die Infrastruktur genutzt, kann der Verkehrsmodus über viele Jahre beeinflusst werden.",
+                    "source_ids": [
+                      "research-dresden-carola-decision"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Verkehrsverhalten und Betriebsangebote bleiben grundsätzlich veränderbar; eine einmalige Nutzung bindet keinen dauerhaften Zustand.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Der potenzielle Nutzen betrifft im Basisszenario breit verteilte städtische Luft-, Klima- und Ressourcenwirkungen und ist nicht auf einen einzelnen besonders vulnerablen Empfänger konzentriert.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-dresden-carola-decision"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Die Verbindung kann den lokalen Modal-Mix beeinflussen, ohne allein das Dresdner Verkehrssystem grundlegend umzubauen.",
+                    "source_ids": [
+                      "mdr-nachrichten",
+                      "research-dresden-carola-decision"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der mögliche Umweltvorteil ist eine bedingte Verkehrs- und Ressourcenauswirkung, keine Schutzgrenzfrage.",
+                  "reference_frame": "Klimaschutz und ressourcenärmere städtische Mobilität",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "open",
+                "label": "Zwei oder vier Autospuren verändern den Verkehrsraum",
+                "mechanism": "Weniger Autospuren können mehr Raum für andere Nutzungen lassen; zugleich hängt die tatsächliche Umweltwirkung von Verkehrsmenge, Verlagerung und Netzreaktionen ab.",
+                "recipients": [
+                  "städtischer Verkehrsraum",
+                  "lokale Umwelt",
+                  "Nutzer verschiedener Verkehrsträger"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": false,
+                "type": "side_effect",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Die Spuraufteilung wird im weiteren Verfahren gegenüber dem ausgewählten Vierspurstand tatsächlich verändert oder belastbar vergleichend bewertet.",
+                "reference_space": "Separater Variantenvergleich innerhalb einer realisierten Carolabrücke: zwei gegenüber vier Autospuren; nicht Bestandteil der Hauptbilanz gegen die fehlende Brücke.",
+                "time_horizon": "Ab Inbetriebnahme über Jahre.",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Keine Variante wird automatisch als ökologisch besser gewertet; entscheidend wären tatsächliche Verkehrs- und Flächenwirkungen.",
+                "source_support": "MDR belegt nur, dass der Entwurf technisch mit zwei Autospuren umsetzbar ist und aktuell vier vorgesehen sind.",
+                "limitations": "Keine belastbare Verkehrs- oder Umweltmodellierung der beiden Varianten liegt vor. Verteilungseffekte auf besonders belastete Gruppen oder Orte sind daher nicht quantifizierbar und erweitern die Unsicherheit.",
+                "first_order": "Eine andere Spurzahl verändert die Flächenaufteilung der Brücke.",
+                "second_order": "Dies kann Kapazität und Attraktivität verschiedener Verkehrsnutzungen beeinflussen.",
+                "third_order": "Langfristige Verkehrs- und Klimaeffekte hängen von Netz- und Nutzerreaktionen ab und bleiben offen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Varianten können lokal begrenzte bis stadtweit relevante Folgen haben; ihre Richtung und Stärke sind ohne Verkehrsmodell offen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "MDR bestätigt die technische Zwei-Spuren-Option, liefert aber keine Wirkungsanalyse. Deshalb bleibt die Richtung offen und die Evidenz niedrig.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Der Variantenunterschied betrifft eine wichtige städtische Verkehrsverbindung.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Spurzahl kann Verkehrs- und Flächenverteilung spürbar beeinflussen, ohne dass der Effekt quantifiziert ist.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Eine baulich umgesetzte Spuraufteilung kann über viele Jahre wirken.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Eine spätere bauliche oder verkehrliche Anpassung ist möglich, aber mit Aufwand verbunden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Im eng abgegrenzten Variantenvergleich betreffen mögliche Umweltfolgen primär den allgemeinen städtischen Verkehrs- und Flächenraum; eine extreme Lastkonzentration ist nicht Teil des Basisszenarios.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad kann lokale Netz- und Modalwirkungen haben, bleibt aber unterhalb einer grundlegenden Systemänderung.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Für den Variantenvergleich ist keine konkrete schwere ökologische Schutzgrenze belegt.",
+                  "reference_frame": "Städtische Flächen- und Verkehrsökologie",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "rationale": "Der Hauptvergleich bleibt realisierte Brücke gegenüber fehlender Verbindung: Bauressourcen wirken negativ, mögliche vermiedene oder verkürzte Autofahrten bei tatsächlicher multimodaler Nutzung positiv. Der Zwei-vier-Spuren-Vergleich steht separat und geht nicht in diese Hauptbilanz ein.",
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Negativer Bauressourcenpfad Magnitude 3 und positiver multimodaler Nutzungspfad Magnitude 2 sind materielle Folgen desselben Projekts und derselben Baseline. Keine Seite überwiegt um mindestens zwei Stufen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Brückenbau braucht Material und Energie",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Brückenbau braucht Material und Energie",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Nachvollziehbarkeit kommunaler Entscheidungen",
+                "mechanism": "Nach der politischen Auswahl folgen technische Planung, Behördenabstimmung und Genehmigung. Werden Abweichungen, Einwände und Entscheidungsgründe nachvollziehbar geprüft, bleibt die Entscheidung korrigierbar; werden materielle Konflikte nicht transparent bearbeitet, kann die Nachvollziehbarkeit des Verfahrens sinken.",
+                "recipients": [
+                  "Dresdner Öffentlichkeit",
+                  "betroffene Nutzerinnen und Nutzer",
+                  "kommunale Entscheidungsträger und Fachverwaltung",
+                  "mögliche Einwender und Betroffene"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "research-dresden-carola-decision",
+                  "mdr-nachrichten"
+                ],
+                "condition": "Im weiteren Planungs- und Genehmigungsverfahren entstehen tatsächlich materielle Abwägungs- oder Rechtsfragen, deren Bearbeitung für die Nachvollziehbarkeit und Korrekturfähigkeit relevant ist.",
+                "reference_space": "Kommunale Entscheidungs- und Kontrollfähigkeit beim realisierten Carolabrückenprojekt gegenüber einem Zustand ohne dieses konkrete Projekt und seine nachfolgenden Prüfentscheidungen.",
+                "time_horizon": "Während weiterer Planung, Behördenabstimmung, Genehmigung und gegebenenfalls Rechtsprüfung; potenziell über mehrere Jahre.",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die erfolgte Ratsentscheidung wird weder als Demokratiegewinn noch als Schaden gewertet. Auch die abweichende Empfehlung des Begleitgremiums ist für sich kein Defizit. Bewertet wird nur die spätere Qualität tatsächlicher Prüfung, Begründung und Korrektur.",
+                "source_support": "Die Stadt belegt Ratsentscheidung und weitere Behördenabstimmung. MDR beschreibt mögliche Genehmigungs- und Klagerisiken. Keine Quelle belegt bislang eine institutionelle Verbesserung, Behinderung oder Rechtsverletzung.",
+                "limitations": "Kein abgeschlossenes Genehmigungsverfahren, keine belegte Klage und keine dokumentierte spätere Reaktion auf konkrete Einwände. Ob einzelne Gruppen später besonders von Zugangs- oder Beteiligungshürden betroffen sind, ist mit den vorliegenden Quellen nicht bewertbar.",
+                "first_order": "Die Auswahl des Entwurfs schafft einen konkreten Gegenstand für weitere technische und behördliche Prüfung.",
+                "second_order": "Bei materiellen Einwänden kann nachvollziehbare Prüfung Korrekturfähigkeit erhalten; unzureichende Bearbeitung könnte sie für dieses Projekt schwächen.",
+                "third_order": "Nur dauerhaft systematische Defizite oder besonders transparente Korrekturprozesse könnten Vertrauen und kommunale Verfahrenspraxis breiter beeinflussen; dafür gibt es derzeit keinen Beleg.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Bei routinemäßiger konfliktarmer Prüfung bleibt der Demokratieeffekt klein. Bei erheblichen strittigen Fragen kann die Qualität von Begründung und Korrektur für das konkrete Großprojekt deutlich relevant werden."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen dokumentieren ein reguläres Rats- und weiteres Planungsverfahren sowie mögliche Rechtsfragen. Sie zeigen weder bereits verbesserte noch geschwächte demokratische Funktionsfähigkeit; daher bleibt die Richtung sachlich offen und die Evidenz niedrig.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Das Verfahren betrifft ein stadtweit bedeutsames Infrastrukturprojekt und damit kommunale Öffentlichkeit, Verwaltung und zahlreiche potenzielle Nutzer.",
+                    "source_ids": [
+                      "research-dresden-carola-decision",
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Qualität von Begründung und Prüfung kann für Akzeptanz und Korrekturfähigkeit spürbar sein, ohne eine grundlegende Institutionenwirkung zu begründen.",
+                    "source_ids": [
+                      "research-dresden-carola-decision",
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Planung, Genehmigung und mögliche Rechtsprüfung können über einen längeren Projektzeitraum relevant bleiben.",
+                    "source_ids": [
+                      "research-dresden-carola-decision"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Verfahrensentscheidungen können grundsätzlich überprüft, nachgebessert oder korrigiert werden.",
+                    "source_ids": [
+                      "research-dresden-carola-decision",
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Der modellierte Verfahrenspfad betrifft die stadtweite Nachvollziehbarkeit und Korrekturfähigkeit eines Infrastrukturprojekts; im Basisszenario konzentriert sich die institutionelle Last nicht existenziell auf einen einzelnen Empfängerkreis.",
+                    "source_ids": [
+                      "research-dresden-carola-decision",
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Der Pfad berührt kommunale Abwägungs- und Kontrollprozesse, bleibt aber auf dieses konkrete Infrastrukturvorhaben begrenzt.",
+                    "source_ids": [
+                      "research-dresden-carola-decision",
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Transparente Begründung, rechtliche Kontrolle und Korrekturfähigkeit sind relevante demokratische Funktionen. Eine konkrete schwere institutionelle Grenzverletzung ist nicht belegt.",
+                  "reference_frame": "Kommunale Rechenschaft, rechtsstaatliche Kontrolle und demokratische Korrekturfähigkeit",
+                  "source_ids": [
+                    "research-dresden-carola-decision",
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die Richtung ist sachlich offen, weil der modellierte Gegenstand die Qualität der noch folgenden Prüfung und Korrektur ist: transparente Bearbeitung materieller Fragen kann die Funktionsfähigkeit stützen, unzureichende Bearbeitung sie schwächen. Die Faktoren 3+2+3+1+1+2 ergeben 12/6=2,0 und damit Magnitude 2.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es werden keine zwei bereits belegten gegenläufigen Hauptpfade konstruiert. Die offene Richtung entsteht aus der tatsächlich noch unbekannten Qualität desselben künftigen Prüf- und Korrekturprozesses."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Nachvollziehbarkeit kommunaler Entscheidungen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Nachvollziehbarkeit kommunaler Entscheidungen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "event",
+              "counter_evidence"
+            ],
+            "supported_claim": "Trägt Abstimmungsergebnis, Entwurfsmerkmale, vorgesehene Verkehrsaufteilung, technische Zweispur-Option und dargestellte Genehmigungsrisiken."
+          },
+          {
+            "source_id": "research-dresden-carola-decision",
+            "functions": [
+              "event",
+              "reference",
+              "counter_evidence"
+            ],
+            "supported_claim": "Amtliche Primärquelle für die Auswahl am 3. September, weitere Planungsschritte und den geplanten, nicht garantierten Baubeginn."
+          },
+          {
+            "source_id": "research-carola-planner-decision",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Bestätigt als eigeninteressierte Projektkommunikation die Auswahl des Planungsteams; keine unabhängige Wirkungsbewertung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://www.dresden.de/de/rathaus/aktuelles/pressemitteilungen/2026/09/pm_018.php",
+          "title": "Carolabrücke: Stadtrat hat sich für Brückenentwurf entschieden",
+          "publisher": "Landeshauptstadt Dresden",
+          "source_id": "research-dresden-carola-decision",
+          "source_function": "event"
+        },
+        {
+          "url": "https://xn--carolabrcke-0hb.com/nachrichten/stadtrat-waehlt-carola-3-0/",
+          "title": "Der Stadtrat entscheidet sich für CAROLA 3.0",
+          "publisher": "ZARLO Systems im Auftrag von TSSB architekten",
+          "source_id": "research-carola-planner-decision",
+          "source_function": "event"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_positive",
+          "direction": "positive",
+          "magnitude": 3,
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Neue Brücke kann Wege und Erreichbarkeit verbessern",
+              "mechanism": "Wird die ausgewählte Brücke genehmigt, gebaut und eröffnet, entsteht an dieser Stelle wieder eine direkte Elbquerung für Straßenbahn, Auto-, Rad- und Fußverkehr. Dadurch können Wege, Netzzugang und Ausweichmöglichkeiten gegenüber dem Zustand ohne funktionierende Carolabrücke verbessert werden.",
+              "recipients": [
+                "Nutzerinnen und Nutzer des Dresdner Verkehrsnetzes",
+                "Fahrgäste des öffentlichen Verkehrs",
+                "Radfahrerinnen und Radfahrer",
+                "Fußgängerinnen und Fußgänger",
+                "Autoverkehr auf der wiederhergestellten Verbindung"
+              ],
+              "magnitude": 3,
+              "evidence": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "mdr-nachrichten",
+                "research-dresden-carola-decision"
+              ],
+              "condition": "Der ausgewählte Entwurf durchläuft Planung und Genehmigung erfolgreich, wird tatsächlich gebaut und als multimodale Elbquerung in Betrieb genommen.",
+              "reference_space": "Dresdner Verkehrs- und Erreichbarkeitsbeziehungen mit realisierter Carolabrücke gegenüber einem länger fortbestehenden Zustand ohne diese direkte Brückenverbindung.",
+              "time_horizon": "Ab Inbetriebnahme über viele Jahre; der amtlich genannte Baubeginn im Mai 2028 ist lediglich geplant und keine Fertigstellungsgarantie.",
+              "path_quality": [
+                "direct",
+                "systemic"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Bewertet wird nur der zusätzliche Nutzen einer wiederhergestellten multimodalen Verbindung gegenüber der fehlenden Brücke. Die Frage zwei versus vier Autospuren ist ein separater Variantenvergleich und verändert dieses Gegenfaktum nicht.",
+              "source_support": "MDR und Stadt Dresden belegen den ausgewählten Entwurf und die vorgesehenen Verkehrsarten. Die amtliche Quelle zeigt, dass weitere Planung und Umsetzung noch bevorstehen. Die Quellen belegen keine bereits eingetretene Mobilitätsverbesserung.",
+              "limitations": "Keine aktuellen Nutzungsprognosen, Reisezeitmessungen oder belastbaren quantitativen Verkehrsfolgen liegen in den verwendeten Quellen vor. Genehmigung, Bau und tatsächliche Nutzung bleiben Bedingungen.",
+              "first_order": "Nach Fertigstellung entsteht an der Stelle wieder eine direkte Verbindung für mehrere Verkehrsträger.",
+              "second_order": "Diese Verbindung kann Umwege reduzieren, zusätzliche Netzoptionen schaffen und die Erreichbarkeit zwischen beiden Elbseiten verbessern.",
+              "third_order": "Als zusätzliche wichtige Querung kann die Brücke längerfristig die Robustheit und räumliche Struktur des Dresdner Verkehrsnetzes mitprägen; die tatsächliche Verkehrsverteilung bleibt offen.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Bei begrenzter tatsächlicher Nutzung oder starken Alternativrouten bleibt der Nutzen moderat; bei hoher Netzbedeutung und breiter multimodaler Nutzung kann die Wirkung stadtweit deutlich und lang anhaltend sein."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "initial",
+              "research_result": "Die amtliche Quelle bestätigt einen realen Planungsschritt und die noch ausstehenden Umsetzungsphasen. MDR trägt die multimodale Ausgestaltung. Es gibt noch keine beobachteten Mobilitätsdaten; deshalb wird der Pfad ex ante mit mittlerer Evidenz modelliert.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Die Brücke ist eine städtische Elbquerung mit potenziell breiter Bedeutung für mehrere Verkehrsträger und damit mindestens regional beziehungsweise stadtweit relevant.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-dresden-carola-decision"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Eine zusätzliche direkte Querung kann Wege und Erreichbarkeit spürbar verbessern, ohne dass aus den Quellen bereits starke individuelle Zeit- oder Zugangsgewinne quantifiziert werden können.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-dresden-carola-decision"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Wird die Brücke gebaut, prägt die Infrastruktur die Mobilitätsmöglichkeiten voraussichtlich über einen langen Zeitraum.",
+                  "source_ids": [
+                    "research-dresden-carola-decision"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Eine gebaute Brücke und ihre Grundstruktur sind nur mit erheblichem baulichem Aufwand veränderbar; betriebliche Verkehrsführung bleibt eher anpassbar.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-dresden-carola-decision"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Eine wiederhergestellte Verbindung kann auch Menschen zugutekommen, die auf ÖPNV, Fuß- oder Radverbindungen angewiesen sind; besondere Betroffenheit einzelner vulnerabler Gruppen ist nicht quantifiziert.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Eine zentrale Elbquerung kann Netzbeziehungen und Ausweichmöglichkeiten über den einzelnen Baukörper hinaus beeinflussen, ohne bereits eine grundlegende Transformation des gesamten Verkehrssystems zu belegen.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-dresden-carola-decision"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Erreichbarkeit und zugängliche Mobilität sind wichtige öffentliche Funktionen. Eine konkrete schwere Schutzgrenzverletzung oder existenzielle Versorgungslücke wird im hier bewerteten Potenzialpfad jedoch nicht belegt.",
+                "reference_frame": "Zugängliche Mobilität, Erreichbarkeit und robuste städtische Infrastruktur",
+                "source_ids": [
+                  "mdr-nachrichten",
+                  "research-dresden-carola-decision"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Gegenüber einer weiterhin fehlenden Brückenverbindung kann die realisierte multimodale Querung Wege und Erreichbarkeit verbessern. Die einzeln begründeten Faktoren 3+2+4+3+2+3 ergeben 17/6 und damit Tragweite 3. Der Vergleich zwischen zwei und vier Autospuren gehört zu einem eigenen Variantenvergleich.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es liegt kein materiell vergleichbarer negativer Hauptpfad mit demselben Gegenstand und derselben Baseline vor. Bauaufwand und Spurvarianten werden in anderen Dimensionen beziehungsweise separaten Variantenvergleichen bewertet."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Neue Brücke kann Wege und Erreichbarkeit verbessern",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Neue Brücke kann Wege und Erreichbarkeit verbessern",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "balanced",
+          "direction": "mixed",
+          "magnitude": 3,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Brückenbau braucht Material und Energie",
+              "mechanism": "Für Brückenkonstruktion, Straßenaufbauten, Entwässerung, Leitungs- und Verkehrstechnik werden Material, Bauleistungen, Transporte und Energie benötigt. Gegenüber einer weiterhin fehlenden Brücke entsteht dadurch zusätzlicher physischer Ressourcenbedarf.",
+              "recipients": [
+                "lokale Umwelt im Bau- und Anschlussbereich",
+                "Material- und Energieflüsse des Bauprojekts",
+                "kommunale Infrastruktur"
+              ],
+              "magnitude": 3,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "high",
+              "source_ids": [
+                "research-dresden-carola-decision",
+                "mdr-nachrichten"
+              ],
+              "condition": "Der ausgewählte Entwurf wird genehmigt und tatsächlich als Ersatzneubau umgesetzt.",
+              "reference_space": "Bau und Herstellung der Carolabrücke gegenüber einem fortbestehenden Zustand ohne diesen Ersatzneubau.",
+              "time_horizon": "Vor allem Planungs- und Bauphase; Teile des gebundenen Materials wirken über die Nutzungsdauer fort.",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Bewertet wird der physische Bauaufwand des realisierten Projekts. Es werden keine nicht belegten Materialmengen, Emissionen oder Schadstoffwerte unterstellt.",
+              "source_support": "Die amtliche Quelle nennt Statik, Konstruktion, Straßenaufbauten, Entwässerung, Fernwärme, Beleuchtung und Fahrleitungsanlage als weitere Planungselemente. MDR beschreibt die konkrete Brückengeometrie. Keine Quelle liefert eine Umweltbilanz.",
+              "limitations": "Keine belastbaren Mengen zu Beton, Stahl, Energie, Transport, Flächenwirkung oder Treibhausgasemissionen. Besondere lokale ökologische Empfindlichkeiten oder Lastkonzentrationen sind mit den vorliegenden Quellen nicht bewertbar und begrenzen die Bandbreitensicherheit.",
+              "first_order": "Bei Realisierung werden Baumaterialien, Energie und Bauleistungen für den Ersatzneubau eingesetzt.",
+              "second_order": "Herstellung, Transporte und Baustellenbetrieb erzeugen weitere Ressourcen- und Umweltbelastungen, deren Umfang noch nicht quantifiziert ist.",
+              "third_order": "Die gebaute Infrastruktur bindet Materialien über viele Jahre und kann spätere Instandhaltungs- und Ersatzbedarfe erzeugen; deren Umfang ist offen.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Ein großer Brückenneubau hat plausibel mehr als nur lokalen Bagatellaufwand. Ohne Mengen- und Umweltbilanz bleibt offen, ob die Umwelttragweite begrenzt oder deutlich ist."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die amtliche Projektbeschreibung bestätigt umfangreiche technische Bau- und Ausrüstungselemente, aber keine quantifizierte Umweltbilanz. Deshalb wird der negative Ressourcenpfad mit niedriger Evidenz und Bandbreite 2 bis 4 modelliert.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Der Neubau betrifft eine große städtische Infrastruktur mit Material- und Bauketten über den unmittelbaren Brückenstandort hinaus.",
+                  "source_ids": [
+                    "research-dresden-carola-decision",
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Ein vollständiger Brückenersatz mit Fahrbahnen, Straßenbahn- und technischer Infrastruktur erfordert einen deutlich materiellen Bauaufwand.",
+                  "source_ids": [
+                    "research-dresden-carola-decision",
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Der Ressourcenverbrauch konzentriert sich auf Planung und Bau; gebundene Materialien und Instandhaltung wirken mittel- bis längerfristig fort.",
+                  "source_ids": [
+                    "research-dresden-carola-decision"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Eine errichtete Brückenkonstruktion und der darin gebundene Materialeinsatz lassen sich nur durch erheblichen baulichen Aufwand verändern. Rückbau und Materialrückgewinnung sind grundsätzlich möglich; absolute Unumkehrbarkeit wird nicht behauptet.",
+                  "source_ids": [
+                    "research-dresden-carola-decision",
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Im eng abgegrenzten Basisszenario verteilt sich der Ressourcenverbrauch auf Bau- und Lieferketten; eine extreme Lastkonzentration auf einen einzelnen Schutzempfänger ist nicht Teil dieses modellierten Pfads.",
+                  "source_ids": [
+                    "research-dresden-carola-decision",
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Der Pfad betrifft eine zentrale Verkehrsinfrastruktur und deren Bau- und Instandhaltungssystem, ohne eine überregionale Ressourcenstruktur grundlegend zu verändern.",
+                  "source_ids": [
+                    "research-dresden-carola-decision"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Ein materieller Bau- und Ressourcenpfad ist plausibel, aber keine konkrete schwere ökologische Schutzgrenzverletzung ist belegt.",
+                "reference_frame": "Ressourcenschonung und natürliche Lebensgrundlagen",
+                "source_ids": [
+                  "research-dresden-carola-decision",
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            },
+            {
+              "direction": "positive",
+              "label": "Straßenbahn, Rad und Fuß können Autofahrten vermeiden",
+              "mechanism": "Die geplante Brücke schafft wieder eine direkte Querung für Straßenbahn, Rad- und Fußverkehr. Gegenüber einer weiterhin fehlenden Verbindung können dadurch Wege kürzer werden oder einzelne Autofahrten entfallen, wenn Menschen diese Angebote tatsächlich nutzen und nicht lediglich zusätzliche Wege entstehen.",
+              "recipients": [
+                "lokale Luft- und Klimawirkung des Verkehrs",
+                "Nutzerinnen und Nutzer von Straßenbahn, Rad- und Fußverkehr",
+                "städtischer Verkehrsraum"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "mdr-nachrichten",
+                "research-dresden-carola-decision"
+              ],
+              "condition": "Die Brücke wird gebaut, die vorgesehenen Straßenbahn-, Rad- und Fußverbindungen werden realisiert und tatsächlich so genutzt, dass gegenüber der weiter fehlenden Verbindung Autofahrten vermieden oder Wege verkürzt werden; zusätzliche motorisierte Fahrten dürfen den Effekt nicht vollständig aufheben.",
+              "reference_space": "Nutzungsphase der realisierten multimodalen Carolabrücke gegenüber einem fortbestehenden Zustand ohne diese direkte Brückenverbindung.",
+              "time_horizon": "Ab Inbetriebnahme über die Nutzungsdauer der Brücke.",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Aus Straßenbahn-, Rad- und Fußinfrastruktur wird kein sicherer Modalgewinn abgeleitet. Der positive Pfad entsteht nur bei tatsächlicher Vermeidung von Autofahrten oder Verkürzung von Wegen gegenüber der fehlenden Verbindung.",
+              "source_support": "MDR belegt die geplanten Verkehrsarten. Die amtliche Quelle bestätigt die weitere Planung einschließlich Fahrleitungsanlage. Keine Quelle misst spätere Verkehrsverlagerung, Energieverbrauch oder Emissionen.",
+              "limitations": "Keine Verkehrsprognose, Modal-Split-Daten oder Klimabilanz für den ausgewählten Entwurf. Ob und wie stark tatsächlich Autofahrten vermieden oder Wege verkürzt werden, ist offen; besondere lokale Belastungsschwerpunkte sind nicht quantifiziert.",
+              "first_order": "Mit der gebauten Brücke stehen wieder direkte Straßenbahn-, Rad- und Fußverbindungen an dieser Querung zur Verfügung.",
+              "second_order": "Wenn dadurch gegenüber der fehlenden Verbindung Autofahrten entfallen oder Wege kürzer werden, kann Verkehrsenergie eingespart werden.",
+              "third_order": "Bei dauerhaft entsprechender Nutzung kann die Querung den lokalen Verkehrspfad mitprägen; eine tatsächliche Klimaentlastung ist noch nicht beobachtet.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Ohne tatsächliche Vermeidung oder Verkürzung motorisierter Wege bleibt die Wirkung gering; bei breiter dauerhafter Nutzung kann sie lokal bis stadtweit relevant werden."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen belegen die multimodale Infrastruktur, aber keine Nutzungs- oder Emissionswirkung. Der positive Nutzungspfad bleibt daher niedrig evidenziert und bedingt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Eine zentrale städtische Querung kann viele Wege und mehrere Verkehrsträger betreffen.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-dresden-carola-decision"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Umweltentlastungen aus einzelnen verlagerten oder verkürzten Wegen wären begrenzt bis spürbar; konkrete Größen sind nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Wird die Infrastruktur genutzt, kann der Verkehrsmodus über viele Jahre beeinflusst werden.",
+                  "source_ids": [
+                    "research-dresden-carola-decision"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Verkehrsverhalten und Betriebsangebote bleiben grundsätzlich veränderbar; eine einmalige Nutzung bindet keinen dauerhaften Zustand.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Der potenzielle Nutzen betrifft im Basisszenario breit verteilte städtische Luft-, Klima- und Ressourcenwirkungen und ist nicht auf einen einzelnen besonders vulnerablen Empfänger konzentriert.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-dresden-carola-decision"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Die Verbindung kann den lokalen Modal-Mix beeinflussen, ohne allein das Dresdner Verkehrssystem grundlegend umzubauen.",
+                  "source_ids": [
+                    "mdr-nachrichten",
+                    "research-dresden-carola-decision"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der mögliche Umweltvorteil ist eine bedingte Verkehrs- und Ressourcenauswirkung, keine Schutzgrenzfrage.",
+                "reference_frame": "Klimaschutz und ressourcenärmere städtische Mobilität",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "open",
+              "label": "Zwei oder vier Autospuren verändern den Verkehrsraum",
+              "mechanism": "Weniger Autospuren können mehr Raum für andere Nutzungen lassen; zugleich hängt die tatsächliche Umweltwirkung von Verkehrsmenge, Verlagerung und Netzreaktionen ab.",
+              "recipients": [
+                "städtischer Verkehrsraum",
+                "lokale Umwelt",
+                "Nutzer verschiedener Verkehrsträger"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": false,
+              "type": "side_effect",
+              "likelihood": "unknown",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Die Spuraufteilung wird im weiteren Verfahren gegenüber dem ausgewählten Vierspurstand tatsächlich verändert oder belastbar vergleichend bewertet.",
+              "reference_space": "Separater Variantenvergleich innerhalb einer realisierten Carolabrücke: zwei gegenüber vier Autospuren; nicht Bestandteil der Hauptbilanz gegen die fehlende Brücke.",
+              "time_horizon": "Ab Inbetriebnahme über Jahre.",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Keine Variante wird automatisch als ökologisch besser gewertet; entscheidend wären tatsächliche Verkehrs- und Flächenwirkungen.",
+              "source_support": "MDR belegt nur, dass der Entwurf technisch mit zwei Autospuren umsetzbar ist und aktuell vier vorgesehen sind.",
+              "limitations": "Keine belastbare Verkehrs- oder Umweltmodellierung der beiden Varianten liegt vor. Verteilungseffekte auf besonders belastete Gruppen oder Orte sind daher nicht quantifizierbar und erweitern die Unsicherheit.",
+              "first_order": "Eine andere Spurzahl verändert die Flächenaufteilung der Brücke.",
+              "second_order": "Dies kann Kapazität und Attraktivität verschiedener Verkehrsnutzungen beeinflussen.",
+              "third_order": "Langfristige Verkehrs- und Klimaeffekte hängen von Netz- und Nutzerreaktionen ab und bleiben offen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Varianten können lokal begrenzte bis stadtweit relevante Folgen haben; ihre Richtung und Stärke sind ohne Verkehrsmodell offen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "MDR bestätigt die technische Zwei-Spuren-Option, liefert aber keine Wirkungsanalyse. Deshalb bleibt die Richtung offen und die Evidenz niedrig.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Der Variantenunterschied betrifft eine wichtige städtische Verkehrsverbindung.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Spurzahl kann Verkehrs- und Flächenverteilung spürbar beeinflussen, ohne dass der Effekt quantifiziert ist.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Eine baulich umgesetzte Spuraufteilung kann über viele Jahre wirken.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Eine spätere bauliche oder verkehrliche Anpassung ist möglich, aber mit Aufwand verbunden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Im eng abgegrenzten Variantenvergleich betreffen mögliche Umweltfolgen primär den allgemeinen städtischen Verkehrs- und Flächenraum; eine extreme Lastkonzentration ist nicht Teil des Basisszenarios.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad kann lokale Netz- und Modalwirkungen haben, bleibt aber unterhalb einer grundlegenden Systemänderung.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Für den Variantenvergleich ist keine konkrete schwere ökologische Schutzgrenze belegt.",
+                "reference_frame": "Städtische Flächen- und Verkehrsökologie",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "rationale": "Der Hauptvergleich bleibt realisierte Brücke gegenüber fehlender Verbindung: Bauressourcen wirken negativ, mögliche vermiedene oder verkürzte Autofahrten bei tatsächlicher multimodaler Nutzung positiv. Der Zwei-vier-Spuren-Vergleich steht separat und geht nicht in diese Hauptbilanz ein.",
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Negativer Bauressourcenpfad Magnitude 3 und positiver multimodaler Nutzungspfad Magnitude 2 sind materielle Folgen desselben Projekts und derselben Baseline. Keine Seite überwiegt um mindestens zwei Stufen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Brückenbau braucht Material und Energie",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Brückenbau braucht Material und Energie",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "none",
+          "direction": "open",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Nachvollziehbarkeit kommunaler Entscheidungen",
+              "mechanism": "Nach der politischen Auswahl folgen technische Planung, Behördenabstimmung und Genehmigung. Werden Abweichungen, Einwände und Entscheidungsgründe nachvollziehbar geprüft, bleibt die Entscheidung korrigierbar; werden materielle Konflikte nicht transparent bearbeitet, kann die Nachvollziehbarkeit des Verfahrens sinken.",
+              "recipients": [
+                "Dresdner Öffentlichkeit",
+                "betroffene Nutzerinnen und Nutzer",
+                "kommunale Entscheidungsträger und Fachverwaltung",
+                "mögliche Einwender und Betroffene"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "research-dresden-carola-decision",
+                "mdr-nachrichten"
+              ],
+              "condition": "Im weiteren Planungs- und Genehmigungsverfahren entstehen tatsächlich materielle Abwägungs- oder Rechtsfragen, deren Bearbeitung für die Nachvollziehbarkeit und Korrekturfähigkeit relevant ist.",
+              "reference_space": "Kommunale Entscheidungs- und Kontrollfähigkeit beim realisierten Carolabrückenprojekt gegenüber einem Zustand ohne dieses konkrete Projekt und seine nachfolgenden Prüfentscheidungen.",
+              "time_horizon": "Während weiterer Planung, Behördenabstimmung, Genehmigung und gegebenenfalls Rechtsprüfung; potenziell über mehrere Jahre.",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die erfolgte Ratsentscheidung wird weder als Demokratiegewinn noch als Schaden gewertet. Auch die abweichende Empfehlung des Begleitgremiums ist für sich kein Defizit. Bewertet wird nur die spätere Qualität tatsächlicher Prüfung, Begründung und Korrektur.",
+              "source_support": "Die Stadt belegt Ratsentscheidung und weitere Behördenabstimmung. MDR beschreibt mögliche Genehmigungs- und Klagerisiken. Keine Quelle belegt bislang eine institutionelle Verbesserung, Behinderung oder Rechtsverletzung.",
+              "limitations": "Kein abgeschlossenes Genehmigungsverfahren, keine belegte Klage und keine dokumentierte spätere Reaktion auf konkrete Einwände. Ob einzelne Gruppen später besonders von Zugangs- oder Beteiligungshürden betroffen sind, ist mit den vorliegenden Quellen nicht bewertbar.",
+              "first_order": "Die Auswahl des Entwurfs schafft einen konkreten Gegenstand für weitere technische und behördliche Prüfung.",
+              "second_order": "Bei materiellen Einwänden kann nachvollziehbare Prüfung Korrekturfähigkeit erhalten; unzureichende Bearbeitung könnte sie für dieses Projekt schwächen.",
+              "third_order": "Nur dauerhaft systematische Defizite oder besonders transparente Korrekturprozesse könnten Vertrauen und kommunale Verfahrenspraxis breiter beeinflussen; dafür gibt es derzeit keinen Beleg.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Bei routinemäßiger konfliktarmer Prüfung bleibt der Demokratieeffekt klein. Bei erheblichen strittigen Fragen kann die Qualität von Begründung und Korrektur für das konkrete Großprojekt deutlich relevant werden."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen dokumentieren ein reguläres Rats- und weiteres Planungsverfahren sowie mögliche Rechtsfragen. Sie zeigen weder bereits verbesserte noch geschwächte demokratische Funktionsfähigkeit; daher bleibt die Richtung sachlich offen und die Evidenz niedrig.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Das Verfahren betrifft ein stadtweit bedeutsames Infrastrukturprojekt und damit kommunale Öffentlichkeit, Verwaltung und zahlreiche potenzielle Nutzer.",
+                  "source_ids": [
+                    "research-dresden-carola-decision",
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Qualität von Begründung und Prüfung kann für Akzeptanz und Korrekturfähigkeit spürbar sein, ohne eine grundlegende Institutionenwirkung zu begründen.",
+                  "source_ids": [
+                    "research-dresden-carola-decision",
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Planung, Genehmigung und mögliche Rechtsprüfung können über einen längeren Projektzeitraum relevant bleiben.",
+                  "source_ids": [
+                    "research-dresden-carola-decision"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Verfahrensentscheidungen können grundsätzlich überprüft, nachgebessert oder korrigiert werden.",
+                  "source_ids": [
+                    "research-dresden-carola-decision",
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Der modellierte Verfahrenspfad betrifft die stadtweite Nachvollziehbarkeit und Korrekturfähigkeit eines Infrastrukturprojekts; im Basisszenario konzentriert sich die institutionelle Last nicht existenziell auf einen einzelnen Empfängerkreis.",
+                  "source_ids": [
+                    "research-dresden-carola-decision",
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Der Pfad berührt kommunale Abwägungs- und Kontrollprozesse, bleibt aber auf dieses konkrete Infrastrukturvorhaben begrenzt.",
+                  "source_ids": [
+                    "research-dresden-carola-decision",
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Transparente Begründung, rechtliche Kontrolle und Korrekturfähigkeit sind relevante demokratische Funktionen. Eine konkrete schwere institutionelle Grenzverletzung ist nicht belegt.",
+                "reference_frame": "Kommunale Rechenschaft, rechtsstaatliche Kontrolle und demokratische Korrekturfähigkeit",
+                "source_ids": [
+                  "research-dresden-carola-decision",
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die Richtung ist sachlich offen, weil der modellierte Gegenstand die Qualität der noch folgenden Prüfung und Korrektur ist: transparente Bearbeitung materieller Fragen kann die Funktionsfähigkeit stützen, unzureichende Bearbeitung sie schwächen. Die Faktoren 3+2+3+1+1+2 ergeben 12/6=2,0 und damit Magnitude 2.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es werden keine zwei bereits belegten gegenläufigen Hauptpfade konstruiert. Die offene Richtung entsteht aus der tatsächlich noch unbekannten Qualität desselben künftigen Prüf- und Korrekturprozesses."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Nachvollziehbarkeit kommunaler Entscheidungen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Nachvollziehbarkeit kommunaler Entscheidungen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "first_order",
+            "path": "Der Siegerentwurf ist ausgewählt; Bauform und vorgesehene Verkehrsaufteilung sind damit konkreter als nach dem früheren Grundsatzbeschluss.",
+            "direction": "open",
+            "condition": "Die Planungsentscheidung wird in Genehmigung und Ausführung weitergeführt; konkrete spätere Wirkung hängt von der gebauten Variante ab.",
+            "evidence": "plausible_path",
+            "claim_ids": [],
+            "dimensions": [
+              "human",
+              "planet",
+              "democracy"
+            ]
+          },
+          {
+            "order": "second_order",
+            "path": "Die Wahl zwischen zwei und vier Autospuren kann Flächenverteilung und Verkehrsangebote unterschiedlich beeinflussen; das ist ein separater Variantenvergleich.",
+            "direction": "open",
+            "condition": "Die endgültige Spuraufteilung wird festgelegt und umgesetzt.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "human",
+              "planet"
+            ]
+          },
+          {
+            "order": "second_order",
+            "path": "Falls rechtliche Einwände tatsächlich erhoben werden, können Genehmigung und Projektablauf beeinflusst werden.",
+            "direction": "open",
+            "condition": "Es werden konkrete Rechtsmittel eingelegt oder Genehmigungsfragen führen zu Änderungen.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "democracy"
+            ]
+          }
+        ],
+        "affected_groups": [
+          "kommunen",
+          "verbraucherinnen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-11T04:17:03.819Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-11T03:00:04.000Z",
+      "last_updated": "2026-09-11T04:17:03.819Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-3e39a0736eab98c02a31",
+      "case_file": null,
+      "source_published_at": "2026-09-11T03:00:04.000Z",
+      "published_at": "2026-09-11T04:17:03.819Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob die Stadt den ausgewählten Entwurf inzwischen formell zur Genehmigung als Ersatzneubau eingereicht hat.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "MDR berichtet über die tatsächliche Einreichung oder einen neuen Genehmigungsstand.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-ba7669cbd08b2845",
+          "announced_at": "2026-09-11T03:00:04.000Z",
+          "follow_up_date": "2026-09-18T04:17:03.819Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob sich die vorgesehene Verkehrsaufteilung mit vier Autospuren im weiteren Verfahren ändert.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "MDR berichtet über einen neuen Beschluss oder eine verbindliche Planänderung zur Zahl der Autospuren.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e5897caa94aceff5",
+          "announced_at": "2026-09-11T03:00:04.000Z",
+          "follow_up_date": "2026-09-18T04:17:03.819Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob aus den bislang nur möglichen Rechtsrisiken ein konkretes Verfahren oder eine tatsächliche Verzögerung wird.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "MDR berichtet über eingereichte Rechtsmittel, eine Genehmigungsentscheidung oder eine dadurch belegte Terminfolge.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6afb7521760398d1",
+          "announced_at": "2026-09-11T03:00:04.000Z",
+          "follow_up_date": "2026-09-18T04:17:03.819Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen/dresden/stadtrat-entscheidung-risiken,carolabruecke-neubau-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-11T03:00:04.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-5bb1cea072c71034",
       "title_image": {
