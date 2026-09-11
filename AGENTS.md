@@ -91,6 +91,13 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - `author_perspective` bleibt von Fakten und methodischer Analyse getrennt. Historischen Analysen keine Haltung nachtraeglich erfinden; erst bei einer beauftragten redaktionellen Aktualisierung versioniert ergaenzen. Bestehende Daten bleiben rueckwaertskompatibel.
 - Qualitaetsgate: False Balance, konkrete Grundlage positiver Pfade, getrennte Unsicherheitsdimensionen, Schutzplanken als Begrenzung, klares Urteil, 90-Sekunden-Verstaendlichkeit, funktionale Icons/Visualisierung, MPD-Richtung und getrennte Autorinnenperspektive pruefen. Formale Labels ersetzen keine inhaltliche Evidenzpruefung.
 
+## Volltext-Vorlesen mit Systemstimme
+
+- Nutzerentscheidung vom 12.09.2026: Der Vorlese-Button fuer Nachrichten, Analysen, Buch- und Medienbesprechungen sowie geeignete Artikelseiten verwendet zunaechst eine lokale Systemstimme des Lesegeraets.
+- Das ist die Wiedergabe des vorhandenen Textes. Keine neue Zusammenfassung, Autorinnenmeinung, Sprachaufnahme oder eigene Stimmkopie erzeugen. Keine kostenpflichtigen Dienste anbinden.
+- Nur nach bewusstem Start vorlesen; Pause, Fortsetzen und Beenden anbieten. Tabellen mit Spaltenkontext erschliessen, Navigation und private Notizen auslassen. Fehlende lokale Stimmen verstaendlich anzeigen, ohne still auf einen entfernten Sprachdienst auszuweichen.
+- Die unten beschriebenen Audio-Kurzfassungen sind ein getrenntes Vorhaben und keine Voraussetzung fuer den Systemstimmen-Button.
+
 ## Audio-Kurzfassungen des Wirkungstickers
 
 - Verbindliches TTS-Zusatzbudget: 0 EUR, auch fuer Einrichtung und Tests. Das umfasst Sprechfassung, Sprach-/Pruefmodelle, CPU/GPU, Speicher, Datentransfer und weitere Audio-Dienstkosten. Bestehende Budgets fuer die unabhaengige Nachrichtenverarbeitung werden dadurch weder erhoeht noch abgeschaltet.

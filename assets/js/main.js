@@ -8026,3 +8026,11 @@ document.addEventListener("DOMContentLoaded", () => {
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", reveal, {once:true}); else reveal();
   window.addEventListener("hashchange", reveal);
 })();
+
+// One optional article reader for news, reviews and public knowledge pages.
+// Loading it never starts speech or selects a remote voice.
+(function loadArticleReader() {
+  const init = () => import(new URL('read-aloud.js?v=20260912-1', mainScriptUrl || location.href).href)
+    .then(module => module.initReadAloud()).catch(() => {});
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, {once:true}); else init();
+})();

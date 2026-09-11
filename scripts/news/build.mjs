@@ -364,7 +364,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
 <html lang="de" class="ticker-app-document">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>${escapeHtml(title)} | Wirkungsökonomie</title>
   <meta name="description" content="${escapeHtml(description)}">
   ${publicUpdatedAt ? `<meta name="woek-news-revision" content="${PUBLIC_RELEASE}:${escapeHtml(publicUpdatedAt)}">` : ""}
@@ -400,7 +400,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <link rel="alternate" type="application/feed+json" title="Wirkungsticker JSON Feed" href="${SITE}/wirkungsticker/feed.json">` : ""}
   <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${base}assets/css/style.css?v=20260830-news">
-  <link rel="stylesheet" href="${base}assets/css/news.css?v=${PUBLIC_RELEASE}-app-20260911">
+  <link rel="stylesheet" href="${base}assets/css/news.css?v=${PUBLIC_RELEASE}-app-20260912-search2">
   <script type="application/ld+json">${safeJson(jsonLd)}</script>
 </head>
 <body class="ticker-app-shell">
@@ -409,7 +409,7 @@ ${appNavigation(canonical)}
 ${renderIconSprite()}
 ${body}
 ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkungsticker-Transparenz"><a href="${base}wirkungsticker/quellen/">Quellen &amp; Auswahlkriterien</a></nav></footer>`)}
-<script src="${base}assets/js/main.js?v=20260911-dynamic-bookmarks"></script>
+<script src="${base}assets/js/main.js?v=20260912-system-voice"></script>
 <script src="${base}assets/js/news-install.js?v=20260904-reader2"></script>
 <script src="${base}assets/js/news-pwa.js?v=${PUBLIC_RELEASE}"></script>
 <script src="${base}assets/js/news-navigation.js?v=20260911-reader4"></script>
@@ -819,7 +819,7 @@ function combinedFeedItems(stories, analyses) {
 
 function legacyRedirect(target, title = "Wirkungsticker") {
   return `<!doctype html>
-<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${escapeHtml(title)} – neue Adresse</title><link rel="canonical" href="${escapeHtml(`${SITE}${target}`)}">
 <meta http-equiv="refresh" content="0;url=${escapeHtml(target)}"><script>location.replace(${JSON.stringify(target)} + location.search + location.hash)</script></head>
 <body><main><h1>${escapeHtml(title)}</h1><p>Der Wirkungsticker hat eine eigene Adresse. <a href="${escapeHtml(target)}">Jetzt öffnen</a>.</p></main></body></html>`;
