@@ -4,6 +4,7 @@
 Security properties:
 - treats issue content strictly as data; no code from the issue is executed
 - writes only to the fixed Wirkungsticker bridge output directory
+- binds destination filenames to the job id
 - rejects path separators and unexpected envelope fields/versions
 - uses short-lived Dropbox access tokens obtained from a refresh token
 - is idempotent: an already-identical target is accepted without rewriting
@@ -26,7 +27,8 @@ from typing import Any
 
 BRIDGE_VERSION = 1
 DROPBOX_OUTPUT_DIR = "/WOEK/WIRKUNGSTICKER-CHATGPT-BRIDGE/20_OUTPUT_READY"
-MAX_PAYLOAD_BYTES = 2_000_000
+MAX_ISSUE_BODY_BYTES = 60_000
+MAX_PAYLOAD_BYTES = 55_000
 SAFE_FILENAME = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,179}\.json$")
 SAFE_JOB_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,159}$")
 
@@ -78,7 +80,7 @@ def _load_issue_envelope() -> dict[str, Any]:
     body = issue.get("body")
     if not isinstance(body, str) or not body.strip():
         raise BridgeError("bridge issue body is empty")
-    if len(body.encode("utf-8")) > MAX_PAYLOAD_BYTES:
+    if len(body.encode("utf-8")) > MAX_ISSUE_BODY_BYTES:
         raise BridgeError("bridge issue body exceeds size limit")
 
     try:
@@ -108,6 +110,12 @@ def _validate_envelope(envelope: dict[str, Any]) -> tuple[str, str, Any]:
         raise BridgeError("invalid destination_filename")
     if "/" in filename or "\\" in filename or filename in {".", ".."}:
         raise BridgeError("destination_filename must be a basename")
+
+    allowed_filenames = {f"{job_id}.output.json", f"{job_id}.probe.json"}
+    if filename not in allowed_filenames:
+        raise BridgeError(
+            "destination_filename must equal <job_id>.output.json or <job_id>.probe.json"
+        )
 
     if "payload" not in envelope:
         raise BridgeError("missing payload")
