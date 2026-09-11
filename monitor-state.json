@@ -8,12 +8,13 @@
     "bridge-queue": {
       "firstSeen": "2026-09-10T17:06:12.591Z",
       "active": true
-    },
-    "bridge-import": {
-      "firstSeen": "2026-09-10T22:50:45.106Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "3800d5dcca41bd001aa04daf",
+      "content": "✓ WÖk-Störung behoben\nÜbernahme fertiger Meldungen\nPrüfung: 2026-09-11T00:51:01.950Z"
+    }
+  ],
   "dailyDate": "2026-09-10"
 }
