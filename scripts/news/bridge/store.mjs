@@ -25,25 +25,34 @@ export class BridgeStore {
   acquire(now, phase = 'combined', { manualRunId = null } = {}) {
     try { this.lock.exec('BEGIN IMMEDIATE'); } catch { throw new Error('BRIDGE_RUN_LOCKED'); }
     this.locked = true;
-    if (!['discovery','import','combined','test'].includes(phase) || !Number.isFinite(Date.parse(now))) {
-      this.lock.exec('ROLLBACK'); this.locked = false; throw new Error('BRIDGE_SLOT_INVALID');
+    try {
+      if (!['discovery','import','combined','test'].includes(phase) || !Number.isFinite(Date.parse(now))) throw new Error('BRIDGE_SLOT_INVALID');
+      const interval = phase === 'discovery' ? 900000 : phase === 'test' ? 3600000 : 300000;
+      const offset = phase === 'discovery' ? 300000 : 0;
+      this.slot = `v2:${phase}:${Math.floor((Date.parse(now) - offset) / interval)}`;
+      if (manualRunId !== null) {
+        if (!/^\d{1,20}:\d{1,5}$/.test(manualRunId)) throw new Error('BRIDGE_MANUAL_RUN_INVALID');
+        this.slot = `manual:${phase}:${manualRunId}`;
+      }
+      if (this.db.prepare('SELECT status FROM slots WHERE slot=?').get(this.slot)?.status === 'completed') {
+        throw new Error('BRIDGE_SLOT_ALREADY_COMPLETED');
+      }
+      this.db.prepare("INSERT INTO slots VALUES (?, 'running') ON CONFLICT(slot) DO UPDATE SET status='running'").run(this.slot);
+    } catch (error) {
+      // Slot bookkeeping uses the shared journal, while lane ownership lives in
+      // a separate connection. A journal error must not strand that lane lock.
+      try { this.lock.exec('ROLLBACK'); } finally { this.locked = false; this.slot = null; }
+      throw error;
     }
-    const interval = phase === 'discovery' ? 900000 : phase === 'test' ? 3600000 : 300000;
-    const offset = phase === 'discovery' ? 300000 : 0;
-    this.slot = `v2:${phase}:${Math.floor((Date.parse(now) - offset) / interval)}`;
-    if (manualRunId !== null) {
-      if (!/^\d{1,20}:\d{1,5}$/.test(manualRunId)) { this.lock.exec('ROLLBACK'); this.locked = false; throw new Error('BRIDGE_MANUAL_RUN_INVALID'); }
-      this.slot = `manual:${phase}:${manualRunId}`;
-    }
-    if (this.db.prepare('SELECT status FROM slots WHERE slot=?').get(this.slot)?.status === 'completed') {
-      this.lock.exec('ROLLBACK'); this.locked = false; throw new Error('BRIDGE_SLOT_ALREADY_COMPLETED');
-    }
-    this.db.prepare("INSERT INTO slots VALUES (?, 'running') ON CONFLICT(slot) DO UPDATE SET status='running'").run(this.slot);
   }
   release(success) {
     if (!this.locked) return;
-    this.db.prepare('UPDATE slots SET status=? WHERE slot=?').run(success ? 'completed' : 'failed', this.slot);
-    this.lock.exec('ROLLBACK'); this.locked = false;
+    try {
+      this.db.prepare('UPDATE slots SET status=? WHERE slot=?').run(success ? 'completed' : 'failed', this.slot);
+    } finally {
+      // Keep the journal failure visible, but always release the process lock.
+      try { this.lock.exec('ROLLBACK'); } finally { this.locked = false; }
+    }
   }
   get(id) { const row = this.db.prepare('SELECT body FROM jobs WHERE id=?').get(id); return row ? JSON.parse(row.body) : null; }
   put(job) {

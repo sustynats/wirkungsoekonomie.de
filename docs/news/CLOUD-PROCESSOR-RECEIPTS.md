@@ -79,3 +79,20 @@ approval for personal contributions.
 Validation: Python transport/crypto/security tests and existing news/processor
 tests. Production activation additionally requires an actual scheduled run with
 its own probe, private health receipt and independently observed scheduler time.
+
+## Import lane recovery (11 September 2026)
+
+The lane lock and queue journal use different SQLite connections. A journal
+write failure after lane acquisition (or while recording completion) previously
+left the lane transaction open. Subsequent imports could only return
+`BRIDGE_RUN_LOCKED`. Acquisition failures now roll back lane ownership, and
+release always rolls back even if slot bookkeeping fails. Remote-owner
+bookkeeping failures also release the newly acquired lane. Active owners and
+completed slots remain protected; there is no timeout takeover.
+
+Four regression tests exercise real SQLite write contention, release failure,
+repeated acquisition by an active owner, and completed-slot protection. The
+private authenticated monitor exposes lane ownership for operational diagnosis.
+Deploy the tested store to both existing Oracle services after backing up the
+queue and service code; restart only those services to release a pre-existing
+orphaned in-memory transaction. No queue reset or lock-file deletion is required.
