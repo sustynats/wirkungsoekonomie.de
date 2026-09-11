@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { assertChronologicalFeedHtml } from "./feed-order.mjs";
 import { checkManualPages } from "./check-manual-pages.mjs";
 import { editorialLabel } from "./systemic-analysis.mjs";
 import { readerHtmlHasEditorialResidue } from "./reader-copy.mjs";
@@ -65,6 +66,7 @@ for (const relative of ["news/index.html", "wirkungsticker/index.html", "wirkung
   if (!fs.existsSync(path.join(ROOT, relative))) fail(`GENERATED_FILE_MISSING:${relative}`);
 }
 const index = fs.readFileSync(path.join(ROOT, "wirkungsticker/index.html"), "utf8");
+assertChronologicalFeedHtml(index);
 if (!index.includes("https://wirkungsoekonomie.de/wirkungsticker/") || !index.includes("Methodik und Qualitätsgate")) fail("NEWS_INDEX_INVALID");
 if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Einordnung aktualisiert") || !index.includes("data-news-refresh-button") || !index.includes("Push-Benachrichtigungen") || !index.includes("data-news-story-id")) fail("NEWS_APP_UI_INVALID");
 const activeStories = store.stories.filter((item) => item.published && item.listed !== false).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));

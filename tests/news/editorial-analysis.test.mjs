@@ -454,7 +454,7 @@ test("Generator bindet Portrait, eigenständige Route, Rücklink, RSS und gemisc
   assert.match(sourceCode, /Zur Ursprungsgeschichte/);
   assert.match(sourceCode, /combinedFeedItems/);
   assert.match(sourceCode, /mixedCards/);
-  assert.match(sourceCode, /\(stories\.length \+ 1\)\) \/ \(analyses\.length \+ 1\)/);
+  assert.match(sourceCode, /mixedFeedItems\(stories, analyses\)/);
   const story = highStory("render");
   const analysis = { analysis_id: "analysis-render", story_id: story.story_id, slug: "render-analysis", published_at: "2026-09-05T10:00:00Z", updated_at: "2026-09-05T10:00:00Z", reading_time_minutes: 8, transparency_note: "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie", source_snapshot: story.sources.map((source) => ({ ...source, source_id: editorialSourceRef(source) })), ...validEditorial(story) };
   const html = editorialAnalysisPage(analysis, story);
