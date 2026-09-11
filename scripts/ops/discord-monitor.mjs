@@ -197,6 +197,11 @@ export function evaluateChecks(data, now) {
     // Retire obsolete API incidents silently, including pending old notifications.
     for (const check of checks) if (['run','provider','queue','publication-flow','images','sources','editorial-coverage','budget'].includes(check.id)) Object.assign(check,{ok:true,retired:true});
     const b=data.bridge || {}, paused=data.discovery_enabled===false;
+    const health=b.processor_health || {};
+    const currentNewsWaiting=Number(health.current_news_open)>0
+      || health.current_news_open==null && Number(b.open_count)>0 && Number(health.incoming_jobs_last_hour)>0;
+    const lastPublication=b.metrics?.last_publication_at || b.last_publication_at;
+    const noPublicProgress=currentNewsWaiting && !paused && age(lastPublication,now)>120;
     summary.queue={total:Number(b.open_count||0),capacity:0,technical:Number(b.errors||0),editorial:0,status:b.status||'unbekannt'};
     summary.runCompleted=b.poll_at||null;
     checks.push(
@@ -207,6 +212,8 @@ export function evaluateChecks(data, now) {
       {id:'bridge-queue',name:'Bridge-Verarbeitung',ok:b.reachable!==true || Number(b.oldest_claim_minutes||0)<=120,reason:'Ein tatsächlich übernommener Bridge-Auftrag wartet seit über zwei Stunden auf Rückgabe.',immediate:false},
       {id:'bridge-queue-size',name:'Redaktionsrückstau',ok:b.reachable!==true || Number(b.open_count||0)<=10,reason:`${Number(b.open_count||0)>20?'QUEUE_CRITICAL':'QUEUE_WARNING'}: ${Number(b.open_count||0)} offene Bridge-Aufträge. Historischen Backfill zurückstellen; aktuelle Meldungen und Updates weiter erfassen.`,immediate:false},
       {id:'bridge-processor',name:'ChatGPT-Redaktionsworker',ok:b.reachable!==true || !Number(b.open_count||0) || b.processor_health?.processor_available===true && age(b.processor_health.checked_at,now)<=45,reason:'Offene Aufträge, aber kein frischer Lese-/Schreibnachweis eines tatsächlichen Automation-Workers. Ein erreichbarer Dropbox-Server ist kein Worker-Nachweis.',immediate:false},
+      {id:'bridge-shards',name:'Vollständigkeit der Redaktionsworker',ok:b.reachable!==true || !Number(b.open_count||0) || health.all_shards_available===true,reason:'Mindestens einer der drei Redaktionsworker hat keinen aktuellen Verfügbarkeitsnachweis. Ein einzelner erreichbarer Worker belegt keine vollständige Verarbeitungskapazität.',immediate:false},
+      {id:'bridge-publication-flow',name:'Aktuelle Nachrichten tatsächlich veröffentlicht',ok:b.reachable!==true || !noPublicProgress,reason:'Aktuelle Nachrichten warten, aber seit über zwei Stunden ist keine Veröffentlichung nachgewiesen. Erfolgreiche Verbindungsprüfungen, private Entwürfe und abgeschlossene Fachprüfjobs ersetzen keine veröffentlichte Nachricht.',immediate:false},
       {id:'bridge-throughput',name:'Redaktionsdurchsatz',ok:b.reachable!==true || !b.processor_health?.alerts?.includes('PROCESSING_CAPACITY_INSUFFICIENT'),reason:'In zwei vollständig beobachteten Stunden kamen mehr Aufträge hinzu als abgeschlossen wurden.',immediate:false},
       {id:'bridge-review',name:'Fachliche Nachprüfung',ok:b.reachable!==true || !Number(b.review_required_count||0),reason:`${Number(b.review_required_count||0)} Wirkungsanalyse(n) benötigen nach dem zweiten Prüfpass redaktionelle Klärung. Die anderen Aufträge laufen weiter.`,immediate:false},
       {id:'bridge-import',name:'Übernahme fertiger Meldungen',ok:b.reachable!==true || Number(b.output_wait_minutes||0)<=10,reason:'Ein bereits erkanntes Ergebnis wartet seit über zehn Minuten auf Übernahme.',immediate:false},
@@ -225,7 +232,9 @@ export function dailyReport(summary, checks) {
   const unit = operating?.news?.cost_per_first_publication_eur;
   return [
     `WÖk Tagesbericht · ${summary.today} · Europe/Berlin`,
-    ...(summary.processing_mode==='dropbox_chatgpt_bridge' ? ['Betrieb: ChatGPT-Dropbox-Bridge für Redaktion und Analyse; Higgsfield ausschließlich für freigegebene Bilder. Keine Text-KI-API. Normale Verarbeitungs- und Prüfwartezeiten bleiben ohne Störungsmeldung.',`Bridge: ${summary.bridge?.status||'Status nicht verfügbar'}; Quellenlauf ${summary.bridge?.discovery_last_success||'noch nicht gestartet'}.`] : []),
+    ...(summary.processing_mode==='dropbox_chatgpt_bridge' ? ['Betrieb: ChatGPT-Dropbox-Bridge für Redaktion und Analyse; Higgsfield ausschließlich für freigegebene Bilder. Keine Text-KI-API. Verfügbarkeit, redaktionelle Abschlüsse und Veröffentlichungen werden getrennt geprüft.',`Bridge: ${summary.bridge?.status||'Status nicht verfügbar'}; Quellenlauf ${summary.bridge?.discovery_last_success||'noch nicht gestartet'}.`,
+      `Letzte Nachrichtenveröffentlichung: ${summary.bridge?.metrics?.last_publication_at||'nicht nachgewiesen'}. Abgeschlossene Arbeitsaufträge in der letzten Stunde: ${summary.bridge?.processor_health?.completed_jobs_last_hour??'nicht verfügbar'} (einschließlich Prüfungen und Ablehnungen; keine Artikelzahl).`,
+      `Aktuelle Nachrichtenaufträge: ${summary.bridge?.processor_health?.current_news_open??'noch nicht getrennt erfasst'}; davon ohne vollständige Ausgabe ${summary.bridge?.processor_health?.current_news_stages?.awaiting_output??'unbekannt'}, in Zweitprüfung ${summary.bridge?.processor_health?.current_news_stages?.awaiting_second_pass??'unbekannt'}, mit Korrekturbedarf ${summary.bridge?.processor_health?.current_news_stages?.needs_editorial_repair??'unbekannt'}, zur Übernahme ${summary.bridge?.processor_health?.current_news_stages?.awaiting_import??'unbekannt'}.`] : []),
     ...checks.filter(c => TARGETS.some(t => t.id === c.id)).map(c => `${c.ok ? '✓' : '⚠'} ${c.name}: ${c.ok ? 'erreichbar' : c.reason}`),
     `Ticker: ${summary.live ?? 'nicht verfügbar'} live · ${summary.active} aktuelle Lagen und Einzelakten aus ${summary.underlyingActive} aktiven Wirkungsakten${summary.caseCount ? ` · ${summary.caseCount} ${summary.caseCount === 1 ? 'Lageakte' : 'Lageakten'}` : ''}.`,
     `Erstveröffentlichungen gestern (${summary.yesterday}): ${summary.newYesterday}; heute bisher: ${summary.newToday} (inkl. später archivierter/zusammengeführter Akten).`,

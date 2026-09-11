@@ -127,6 +127,30 @@ test('reachable Dropbox with 62 jobs and no writable automation raises processor
   d.bridge.processor_health.checked_at='2026-09-04T04:00:00Z';
   assert.equal(evaluateChecks(d,now).checks.find(c=>c.id==='bridge-processor').ok,false);
 });
+
+test('one fresh worker cannot mask missing shards or stalled news publication',()=>{
+ const d=fixture();d.processing_mode='dropbox_chatgpt_bridge';
+ d.bridge={reachable:true,poll_at:now,discovery_last_success:now,open_count:242,
+   metrics:{last_publication_at:'2026-09-03T06:00:00Z'},processor_health:{processor_available:true,all_shards_available:false,checked_at:now,current_news_open:150,completed_jobs_last_hour:15,alerts:[]}};
+ let checks=evaluateChecks(d,now).checks;
+ assert.equal(checks.find(c=>c.id==='bridge-processor').ok,true);
+ assert.equal(checks.find(c=>c.id==='bridge-shards').ok,false);
+ assert.equal(checks.find(c=>c.id==='bridge-publication-flow').ok,false,'15 completed technical/review jobs are not 15 published news articles');
+ d.bridge.metrics.last_publication_at=now;
+ checks=evaluateChecks(d,now).checks;
+ assert.equal(checks.find(c=>c.id==='bridge-publication-flow').ok,true);
+ assert.equal(checks.find(c=>c.id==='bridge-shards').ok,false);
+});
+
+test('old news alone does not alert without waiting current news; missing publication proof does',()=>{
+ const d=fixture();d.processing_mode='dropbox_chatgpt_bridge';
+ d.bridge={reachable:true,poll_at:now,discovery_last_success:now,open_count:12,processor_health:{processor_available:true,all_shards_available:true,checked_at:now,current_news_open:0}};
+ assert.equal(evaluateChecks(d,now).checks.find(c=>c.id==='bridge-publication-flow').ok,true);
+ d.bridge.processor_health.current_news_open=5;
+ assert.equal(evaluateChecks(d,now).checks.find(c=>c.id==='bridge-publication-flow').ok,false);
+ d.bridge.reachable=false;
+ assert.equal(evaluateChecks(d,now).checks.find(c=>c.id==='bridge-publication-flow').ok,true,'access failure has its own alert');
+});
 test('green runs without queue progress trigger a distinct flow warning, not a provider failure', () => {
   const data = fixture();
   data.report.queue = { before: 27, after: 28, capacity: 26, oldest_minutes: 900, status: 'draining' };

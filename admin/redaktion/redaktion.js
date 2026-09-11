@@ -1,11 +1,11 @@
 import { EDITORIAL_COMMENT_LIMIT, COMMENT_TOO_LONG_MESSAGE } from './feedback-limits.js';
-import {approvalStates,orderedReviews,requestWithReview} from './review-state.js';
+import {approvalStates,orderedReviews,requestWithReview,requestPresentation} from './review-state.js';
 const API='https://130.162.217.58.sslip.io/api/admin/news-editorial';
 const $=id=>document.getElementById(id);
 const auth=()=>localStorage.getItem('woek_community_auth')||'';
 const types={news:'Nachricht',opinion_analysis:'Meinung & Analyse',book_review:'Buch & Wirkung',listened:'Nachgehört',watched:'Nachgesehen'};
-const states={draft:'Noch nicht abgesendet',intake_prepared:'Wird vorbereitet',queued:'Wartet auf Bearbeitung',claimed:'In Bearbeitung',accepted:'Wird übernommen',acknowledged:'Abgeschlossen',quarantined:'Prüfung erforderlich',archive_failed:'Übernommen · Archivierung offen'};
 let selectedFiles=[],requests=[],sending=false,pendingId=null,poll;
+let previewGeneration=0;
 function note(message,error=false){$('status').textContent=message;$('status').classList.toggle('error',error);}
 function element(tag,text,className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}
 async function api(path='',options={}){
@@ -26,6 +26,7 @@ function login(){
 $('login-button').addEventListener('click',login);
 $('login-retry').addEventListener('click',()=>load().catch(error=>note(error.message,true)));
 function show(view){
+  previewGeneration++;$('request-preview').hidden=true;$('request-list').hidden=false;
   for(const id of ['compose','requests','receipt','approvals'])$(id).hidden=id!==view;
   for(const [id,active] of [['tab-new',view==='compose'],['tab-list',view==='requests'],['tab-approval',view==='approvals']]){$(id).classList.toggle('selected',active);$(id).setAttribute('aria-pressed',String(active));}
   note('');window.scrollTo({top:0,behavior:'smooth'});
@@ -82,16 +83,36 @@ function drawRequests(){
   for(const request of requests){
     const card=element('article',undefined,'request-card'),meta=element('div',undefined,'request-meta');
     meta.append(element('span',types[request.kind]||'Redaktionsauftrag'),element('time',new Date(request.created_at).toLocaleString('de-DE',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})));
-    const label=request.review_status?(approvalStates[request.review_status]||'Wird geprüft'):request.publication_url?'Veröffentlicht':request.ack_status==='staged'?'Privater Entwurf bereit':request.ack_status==='hold'?'Rückfrage / Prüfung erforderlich':request.ack_status==='reject'?'Nicht zur Veröffentlichung geeignet':states[request.status]||'Wird geprüft';
-    const attention=request.review_status?['NEEDS_REVIEW','REVISION_REQUESTED','HOLD'].includes(request.review_status):['quarantined','archive_failed'].includes(request.status)||request.ack_status==='hold';
+    const {label,attention,description}=requestPresentation(request);
     const state=element('span',label,`state${attention?' hold':''}`);
     card.append(meta,element('h2',request.title||request.brief.slice(0,110)),state);
-    if(request.status_note)card.append(element('p',request.status_note));
+    if(description)card.append(element('p',description));
     if(request.publication_url){try{const url=new URL(request.publication_url);if(url.origin==='https://wirkungsoekonomie.de'){const link=element('a','Beitrag öffnen ↗');link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';card.append(link);}}catch{/* Display only validated public URLs. */}}
     if(request.review_status){const button=element('button','Vorschau und Kommentare','text-button');button.type='button';button.addEventListener('click',()=>{show('approvals');openReview(request.review_job_id||request.job_id).catch(error=>note(error.message,true));});card.append(button);}
-    else if(request.preview_available){const button=element('button','Privaten Entwurf ansehen','text-button');button.type='button';button.addEventListener('click',async()=>{try{const data=await api(`/requests/${request.job_id}/preview`);const details=element('details'),summary=element('summary','Entwurf'),text=element('p',data.text);details.open=true;details.append(summary,text);card.append(details);button.remove();}catch(error){note(error.message,true);}});card.append(button);}
+    else if(request.preview_available){const button=element('button','Zwischenstand lesen','text-button');button.type='button';button.dataset.previewJob=request.job_id;button.addEventListener('click',()=>openPrivatePreview(request));card.append(button);}
     mount.append(card);
   }
+}
+async function openPrivatePreview(request){
+  const generation=++previewGeneration,mount=$('request-preview');
+  mount.replaceChildren();mount.hidden=false;$('request-list').hidden=true;
+  const back=element('button','← Alle Aufträge','text-button');back.type='button';
+  back.addEventListener('click',()=>{previewGeneration++;mount.hidden=true;$('request-list').hidden=false;
+    [...document.querySelectorAll('[data-preview-job]')].find(button=>button.dataset.previewJob===request.job_id)?.focus();});
+  const heading=element('h2',request.title||'Dein privater Zwischenstand');heading.tabIndex=-1;
+  const status=element('p','Text wird geladen …','preview-status');status.setAttribute('role','status');
+  mount.append(back,heading,element('p','Noch nicht veröffentlicht. Die vollständige Fassung zur Freigabe erscheint nach Abschluss der Prüfung unter „Freigeben“.','quiet'),status);
+  mount.setAttribute('aria-busy','true');mount.scrollIntoView({block:'start'});heading.focus({preventScroll:true});
+  try{
+    const data=await api(`/requests/${request.job_id}/preview`);
+    if(generation!==previewGeneration)return;
+    if(typeof data.text!=='string'||!data.text.trim())throw Error('Der Text ist noch nicht verfügbar. Bitte später erneut versuchen.');
+    status.remove();mount.append(element('div',data.text,'private-preview-text'));
+  }catch(error){
+    if(generation!==previewGeneration)return;
+    status.textContent=error.message;status.classList.add('error');status.setAttribute('role','alert');
+    const retry=element('button','Erneut versuchen','secondary');retry.type='button';retry.addEventListener('click',()=>openPrivatePreview(request));mount.append(retry);
+  }finally{if(generation===previewGeneration)mount.setAttribute('aria-busy','false');}
 }
 async function load(){
   if(!auth())return;
