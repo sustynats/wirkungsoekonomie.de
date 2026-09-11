@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import net from 'node:net';
+import { researchSourceSchema } from './research-source-schema.mjs';
 
 export const BRIDGE_ROOT = '/WOEK/WIRKUNGSTICKER-CHATGPT-BRIDGE';
 export const FOLDERS = Object.freeze(['00_INBOX', '10_CLAIMED', '20_OUTPUT_READY', '30_ACK', '40_ARCHIVE', '90_ERRORS', '95_LOGS', '98_CONFIG']);
@@ -57,7 +58,7 @@ const dimension = object({ direction: text(100), analysis: text(), evidence: tex
 // The compact exchange schema is an envelope, not a replacement for the existing
 // production analysis contract. Publish/merge additionally require that contract.
 export const outputSchema = object({
-  research_sources: { type: 'array', maxItems: 12, items: { type:'object' } },
+  research_sources: researchSourceSchema,
   visual_brief: visualBriefSchema,
   schema_version: { const: '1.0' }, job_id: { ...text(80), pattern: JOB_ID.source }, processed_at: timestamp,
   input_hash: { ...text(64), pattern: '^[a-f0-9]{64}$' },
@@ -85,7 +86,7 @@ export function safeUrl(raw) {
 }
 
 export function assertSchema(schema, value, at = '$', depth = 0) {
-  const fail = () => { throw new Error(`BRIDGE_SCHEMA_INVALID:${at}`); };
+  const fail = (field = at) => { throw new Error(`BRIDGE_SCHEMA_INVALID:${field}`); };
   if (depth > 30) fail();
   const type = value === null ? 'null' : Array.isArray(value) ? 'array' : typeof value;
   if (schema.type && ![].concat(schema.type).some(t => t === type || t === 'integer' && Number.isInteger(value))) fail();
@@ -102,10 +103,11 @@ export function assertSchema(schema, value, at = '$', depth = 0) {
     value.forEach((v, i) => assertSchema(schema.items || {}, v, `${at}[${i}]`, depth + 1));
   }
   if (type === 'object') {
-    if ((schema.required || []).some(key => !Object.hasOwn(value, key))) fail();
+    const missing = (schema.required || []).find(key => !Object.hasOwn(value, key));
+    if (missing) fail(`${at}.${missing}`);
     for (const [key, v] of Object.entries(value)) {
       if (['__proto__', 'constructor', 'prototype'].includes(key) || /^(?:access_token|refresh_token|api_key|client_secret|authorization|password|credentials)$/i.test(key)) throw new Error('BRIDGE_UNSAFE_KEY');
-      if (schema.additionalProperties === false && !Object.hasOwn(schema.properties || {}, key)) fail();
+      if (schema.additionalProperties === false && !Object.hasOwn(schema.properties || {}, key)) fail(`${at}.${key}`);
       assertSchema(schema.properties?.[key] || {}, v, `${at}.${key}`, depth + 1);
     }
   }

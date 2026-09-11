@@ -1,3 +1,4 @@
+import { researchSourceSchema, RESEARCH_SOURCE_RULE } from './research-source-schema.mjs';
 import { bridgePath, hash } from './contract.mjs';
 
 export const CORRECTION_LIMIT = 2;
@@ -45,6 +46,8 @@ export async function finishCorrection(provider, job, now = new Date().toISOStri
       contract_path: job.input.job_type==='editorial_request'?job.input.contract_path:bridgePath('98_CONFIG', 'correction-protocol-20260910-1.json'),
       original_input: job.input, original_output_path: correction.error_output_path,
       validation_errors: correction.error,
+      ...(['new_story', 'story_update', 'correction', 'impact_reassessment', 'impact_semantic_review'].includes(job.input.job_type)
+        ? { research_sources_schema: researchSourceSchema, research_sources_rule: RESEARCH_SOURCE_RULE } : {}),
       instructions: 'Gezielte Nachbearbeitung desselben Jobs. Originalinput und Quellen unverändert. Vorhandenes ACK prüfen, dann diesen repair-Auftrag nach 10_CLAIMED verschieben. Alle benannten Fehler und die vollständige native Analyse prüfen. Keine Belege, Hashes oder Wirkpfade erfinden. Korrigiertes vollständiges output.json atomar nach 20_OUTPUT_READY schreiben. Bei unzureichender Beleglage hold/reject. Keine API-Aufrufe und keine ChatGPT-Bilder. Während eines aktiven Durchlaufs neue repair-Aufträge mit abholen; ansonsten bestehender Stundenlauf. Kein neuer Server-Trigger.',
     };
     await transport.writeAtomic(correction.request_path, packet);

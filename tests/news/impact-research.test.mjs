@@ -48,3 +48,24 @@ test('research uses the same normalized registry and explicit access overrides a
   await assert.rejects(verifyImpactResearch(fixture(),[source],[],now,{root,fetchDocument}),/SOURCE_METADATA_ONLY/);
  }finally{fs.rmSync(root,{recursive:true,force:true});}
 });
+
+test('the news exchange contract exposes the exact research verification schema', async () => {
+  const { outputSchema, assertSchema } = await import('../../scripts/news/bridge/contract.mjs');
+  const { researchSourceSchema } = await import('../../scripts/news/bridge/impact-research.mjs');
+  assert.equal(outputSchema.properties.research_sources, researchSourceSchema);
+  assert.doesNotThrow(() => assertSchema(outputSchema.properties.research_sources, [source], '$.research_sources'));
+  const paraphraseOnly = { source_id: source.source_id, url: source.url, function: 'mechanism', excerpt: 'A summary, not a verified original quote.' };
+  assert.throws(() => assertSchema(outputSchema.properties.research_sources, [paraphraseOnly], '$.research_sources'),
+    { message: 'BRIDGE_SCHEMA_INVALID:$.research_sources[0].title' });
+});
+
+test('missing or unsupported research fields point to the exact correction without a fetch', async () => {
+  let fetched = false;
+  const fetchDocument = async () => { fetched = true; throw Error('unexpected fetch'); };
+  const noQuote = { ...source }; delete noQuote.quote;
+  await assert.rejects(verifyImpactResearch(fixture(), [noQuote], [], now, { fetchDocument }),
+    { message: 'BRIDGE_SCHEMA_INVALID:$.research_sources[0].quote' });
+  await assert.rejects(verifyImpactResearch(fixture(), [{ ...source, excerpt: 'unsupported alias' }], [], now, { fetchDocument }),
+    { message: 'BRIDGE_SCHEMA_INVALID:$.research_sources[0].excerpt' });
+  assert.equal(fetched, false);
+});
