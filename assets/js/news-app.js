@@ -30,24 +30,25 @@ async function boot(root){
   const meta=new Map(Object.values(manifest.lookup).map(r=>[r.id,r]));
   return selected.filter(id=>filter==='alle'||meta.get(id)?.type===filter).sort((a,b)=>String(meta.get(b)?.date).localeCompare(meta.get(a)?.date));
  }
- async function load(){
+ async function load({refreshRevision=true}={}){
   if(busy||done)return;const ticket=epoch;busy=true;updateMore();
   try{
-   let items;
+   let items,nextDone;
    if(mode==='news'||mode==='analysen'){
     const feed=manifest.feeds[mode+'-'+filter];
-    if(!feed||page>=feed.pages){items=[];done=true;}
-    else{const data=await json('feeds/'+mode+'-'+filter+'-'+page+'.json',abort.signal);if(data.revision!==manifest.revision)throw Error('REVISION_CHANGED');items=data.items;done=page+1>=feed.pages;}
-   }else{items=await Promise.all(ids.slice(page*20,(page+1)*20).map(id=>json('items/'+id+'.json',abort.signal)));done=(page+1)*20>=ids.length;}
+    if(!feed||page>=feed.pages){items=[];nextDone=true;}
+    else{const data=await json('feeds/'+mode+'-'+filter+'-'+page+'.json',abort.signal);if(data.revision!==manifest.revision)throw Error('REVISION_CHANGED');items=data.items;nextDone=page+1>=feed.pages;}
+   }else{items=await Promise.all(ids.slice(page*20,(page+1)*20).map(id=>json('items/'+id+'.json',abort.signal)));nextDone=(page+1)*20>=ids.length;}
    if(ticket!==epoch)return;
+   done=nextDone;
    grid.insertAdjacentHTML('beforeend',items.map(item=>item.html).join(''));
    page++;controls();
    const count=grid.querySelectorAll('[data-news-card]').length;
    info(count?`${count} ${count===1?'Beitrag':'Beiträge'}${done?' · Keine weiteren Beiträge':''}`:mode==='merkzettel'?'Noch nichts gespeichert. Tippe bei einem Beitrag auf das Lesezeichen, um ihn hier wiederzufinden.':mode==='suche'&&!words(term).length?'Gib mindestens zwei Zeichen ein.':'Keine passenden Beiträge.');
-  }catch(e){if(ticket===epoch&&e.name!=='AbortError'){info('Die Beiträge konnten nicht geladen werden. Bitte erneut versuchen.');more.textContent='Erneut versuchen';more.hidden=false;}}
+  }catch(e){if(ticket===epoch&&e.message==='REVISION_CHANGED'&&refreshRevision){cache.clear();try{const current=await json('manifest.json',abort.signal);if(ticket!==epoch)return;manifest=current;await reset({refreshRevision:false});return;}catch(refreshError){if(refreshError.name==='AbortError')return;}}if(ticket===epoch&&e.name!=='AbortError'){info('Die Beiträge konnten nicht geladen werden. Bitte erneut versuchen.');more.textContent='Erneut versuchen';more.hidden=false;}}
   finally{if(ticket===epoch){busy=false;updateMore();if(status.textContent.includes('erneut versuchen'))more.textContent='Erneut versuchen';}}
  }
- async function reset({restore=false,scroll=false}={}){
+ async function reset({restore=false,scroll=false,refreshRevision=true}={}){
   epoch++;abort?.abort();abort=new AbortController();const ticket=epoch;busy=false;done=false;page=0;
   const params=new URLSearchParams(location.search);filter=params.get(mode==='news'?'ressort':'typ')||'alle';
   if(!root.querySelector(`[data-app-filter="${CSS.escape(filter)}"]`))filter='alle';
@@ -58,7 +59,7 @@ async function boot(root){
    grid.innerHTML=stored.html;page=stored.page;done=stored.done;ids=stored.ids||[];controls();info(`${grid.querySelectorAll('[data-news-card]').length} Beiträge`);updateMore();requestAnimationFrame(()=>window.scrollTo(0,stored.scroll));return;
   }
   grid.replaceChildren();info('Wird geladen …');if(scroll)window.scrollTo({top:root.querySelector('.ticker-app-toolbar').offsetTop-60,behavior:'instant'});
-  try{ids=['suche','merkzettel'].includes(mode)?await chooseIds(abort.signal):[];if(ticket!==epoch)return;await load();}catch(e){if(e.name!=='AbortError')info('Die Suche ist gerade nicht erreichbar. Bitte erneut versuchen.');}
+  try{const nextIds=['suche','merkzettel'].includes(mode)?await chooseIds(abort.signal):[];if(ticket!==epoch)return;ids=nextIds;await load({refreshRevision});}catch(e){if(ticket===epoch&&e.name!=='AbortError')info('Die Suche ist gerade nicht erreichbar. Bitte erneut versuchen.');}
  }
  function navigate(params){saveState();history.pushState(null,'','?'+params);reset({scroll:true});}
  root.querySelectorAll('[data-app-filter]').forEach(a=>a.addEventListener('click',e=>{if(e.metaKey||e.ctrlKey)return;e.preventDefault();const params=new URLSearchParams(location.search);params.set(mode==='news'?'ressort':'typ',a.dataset.appFilter);navigate(params);}));
