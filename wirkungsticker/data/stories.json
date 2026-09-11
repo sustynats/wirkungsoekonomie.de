@@ -2,8 +2,1922 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-11T01:17:31.263Z",
+  "updated_at": "2026-09-11T01:41:58.593Z",
   "stories": [
+    {
+      "story_id": "wt-4e92fe054ca8e98a",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4e92fe054ca8e98a-13341692566bde35-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4e92fe054ca8e98a-c5eec95ef33ab096-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4e92fe054ca8e98a-6add7e19ccfa1674-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4e92fe054ca8e98a-028bb324cfe2a7ba-source.png",
+          "alt_text": "Abstrakte Darstellung eines gerissenen Schaufensterglases als Symbol für Schäden an einem zivilen Ort."
+        }
+      },
+      "slug": "ukraine-meldet-mindestens-funf-tote-bei-russischem-angriff-auf-einkaufszentrum-a8e98a",
+      "title": "Ukraine meldet sieben Tote und rund 70 Verletzte bei Angriff auf Einkaufszentrum in Pawlohrad",
+      "source_summary": "Ukrainische Behörden melden nach dem Angriff auf ein Einkaufszentrum in Pawlohrad inzwischen sieben Tote und rund 70 Verletzte. Der Deutschlandfunk berichtete diesen aktualisierten Stand in der Nacht zum Freitag. Eine ältere stern/AFP-Meldung hatte zuvor mindestens fünf Tote und 67 Verletzte genannt und außerdem Schäden an Geschäftsräumen und Fahrzeugen beschrieben.\n\nDie aktuelle Opferzahl ist damit ein fortgeschriebener Behördenstand, bislang ohne unabhängig bestätigte zweite Ursprungsquelle. Über Art und Schwere der Verletzungen ist nichts Näheres bekannt. Auch zusätzliche Folgen für Versorgung, Umwelt oder Infrastruktur sind bislang nicht konkret dokumentiert. Die im selben Deutschlandfunk-Beitrag erwähnten Angriffe in Russland sind eigenständige Ereignisse und werden getrennt behandelt.",
+      "summary": "Ukrainische Behörden melden nach dem Angriff auf ein Einkaufszentrum in Pawlohrad sieben Tote und rund 70 Verletzte. Weitere gesundheitliche, infrastrukturelle und ökologische Folgen sind möglich, ihr konkretes Ausmaß ist bislang offen.",
+      "detail_summary": "Nach Angaben ukrainischer Behörden sind bei dem Angriff auf ein Einkaufszentrum in Pawlohrad sieben Menschen getötet und rund 70 verletzt worden. Eine ältere Meldung hatte zuvor mindestens fünf Tote und 67 Verletzte genannt. Zusätzlich wurden beschädigte Geschäftsräume und Fahrzeuge gemeldet. Die Todesfälle und Verletzungen sind bereits eingetretener Personenschaden; über die Schwere der Verletzungen liegen keine näheren Angaben vor. Bei schwereren Verletzungen können weitere gesundheitliche und soziale Folgen entstehen. Sachschäden können außerdem Räumung, Reparatur und Wiederaufbau auslösen und damit zusätzliche Material-, Energie- und Entsorgungsbedarfe verursachen. Konkrete längerfristige Versorgungs-, Umwelt- oder Institutionsfolgen in Pawlohrad sind bislang nicht belegt.",
+      "why_relevant": "Der gemeldete Angriff hat bereits schweren Personenschaden verursacht. Für die weitere Einordnung ist entscheidend, den aktualisierten Behördenstand von noch nicht belegten Langzeit-, Infrastruktur- und Umweltfolgen zu trennen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_post",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Ukrainische Behörden melden nach einem Angriff auf ein Einkaufszentrum in Pawlohrad sieben Tote und rund 70 Verletzte; ein älterer Bericht hatte mindestens fünf Tote und 67 Verletzte genannt.",
+        "evaluation_target": {
+          "label": "Beobachtete und mögliche Folgen des konkreten Angriffs auf das Einkaufszentrum in Pawlohrad",
+          "type": "event"
+        },
+        "baseline": "Zustand der unmittelbar Betroffenen und des lokalen Umfelds vor dem gemeldeten Angriff, ohne die dadurch berichteten Todesfälle, Verletzungen und Sachschäden.",
+        "temporal_status": "ex_post",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne den konkreten Angriff wären die dadurch gemeldeten Todesfälle, Verletzungen und Sachschäden nicht eingetreten; weitere Folgepfade wie Rehabilitation, Versorgungsbelastung oder Trümmer- und Wiederaufbaubedarf wären aus diesem Ereignis nicht ausgelöst worden.",
+        "reference_frame": [
+          "Leben und körperliche Unversehrtheit",
+          "Gesundheit und Rehabilitation nach Verletzungen",
+          "Funktionsfähigkeit lokaler ziviler Versorgung",
+          "natürliche Lebensgrundlagen bei Trümmer-, Entsorgungs- und Wiederaufbaufolgen"
+        ],
+        "claim_ledger": [
+          {
+            "claim": "Sieben Tote nach dem Angriff in Pawlohrad",
+            "status": "single_source_claim",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "evidence_ids": [
+              "e1_0",
+              "e1_1"
+            ],
+            "note": "Aktuellster gebundener Behördenstand; keine unabhängige zweite Ursprungsbestätigung."
+          },
+          {
+            "claim": "Rund 70 Verletzte",
+            "status": "single_source_claim",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "evidence_ids": [
+              "e1_2"
+            ],
+            "note": "Aktuellster gebundener Behördenstand; Verletzungsschwere offen."
+          },
+          {
+            "claim": "Mindestens fünf Tote und 67 Verletzte",
+            "status": "superseded_update",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "evidence_ids": [
+              "e0_1"
+            ],
+            "note": "Älterer Zwischenstand, durch den neueren Meldestand ersetzt; kein Zahlenmittelwert."
+          },
+          {
+            "claim": "Beschädigte Geschäftsräume und Fahrzeuge",
+            "status": "single_source_claim",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "evidence_ids": [
+              "e0_2"
+            ],
+            "note": "Sachschaden berichtet, Umfang nicht quantifiziert."
+          }
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Sieben gemeldete Todesfälle und rund 70 Verletzte sind beobachteter negativer Personenschaden. Längerfristige körperliche und soziale Folgen bleiben von der unbekannten Verletzungsschwere abhängig.",
+            "planet": "Gemeldete Sachschäden können Trümmer-, Entsorgungs-, Wiederaufbau- und Ressourcenfolgen auslösen. Eintritt und Umfang sind für Pawlohrad nicht gemessen; Wiederverwendung geeigneter Trümmer kann Lasten begrenzen.",
+            "democracy": "Ein Angriff auf einen zivil genutzten Stadtbereich kann Rettungs-, Versorgungs- und Sicherheitsfunktionen beanspruchen. Eine konkrete institutionelle Zustandsänderung ist für dieses Einzelereignis noch nicht belegt."
+          },
+          "central_dimensions": [
+            "human"
+          ],
+          "first_order": "Aktueller Behördenstand: sieben Tote, rund 70 Verletzte sowie zuvor gemeldete Schäden an Geschäftsräumen und Fahrzeugen.",
+          "second_order": "Verletzte können abhängig von Art und Schwere weitere gesundheitliche und soziale Folgen entwickeln; Sachschäden können lokale Versorgung, Entsorgung und Reparatur beanspruchen. Konkrete Langzeitverläufe sind nicht belegt.",
+          "third_order": "Bei schweren Langzeitverletzungen oder größeren Infrastrukturfolgen können Familien, Teilhabe und lokale Resilienz länger belastet werden; aus dem Einzelereignis allein ist keine strukturelle Veränderung belegt.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Opferzahlen stammen aus ukrainischen Behördenangaben in journalistischen Sekundärquellen und sind nicht unabhängig bestätigt.",
+            "Art und Schwere der rund 70 Verletzungen sind unbekannt.",
+            "Für konkrete Versorgungs-, Umwelt- oder institutionelle Folgeschäden in Pawlohrad liegen keine Zustandsdaten vor.",
+            "UNDP zeigt allgemein, dass geeignete Kriegstrümmer wiederverwendet werden können; konkrete Recyclingpraxis in Pawlohrad ist nicht belegt."
+          ],
+          "source_independence": "DLF und stern/AFP dokumentieren aufeinanderfolgende ukrainische Behördenstände und gelten nicht als zwei unabhängig bestätigende Ereignisursprünge. ICRC und UNDP sind eigenständige Mechanismus- und Kontextquellen, aber keine unabhängige Bestätigung der Opferzahlen oder konkreter Folgeausfälle in Pawlohrad.",
+          "institutional_status": "Laufende Kriegslage und aktualisierte Behördenmeldung. Aus Opferzahl und Ort werden weder militärische Absicht, Zielwahl noch völkerrechtliche Qualifikation abgeleitet; die im DLF ebenfalls genannten Angriffe in Russland sind getrennte Ereignisse."
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Nach aktuellem Behördenstand wurden sieben Menschen getötet.",
+            "direction": "negative",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "open",
+            "reference_frame": "Leben und körperliche Unversehrtheit",
+            "reference_space": "Die sieben gemeldeten Getöteten in Pawlohrad gegenüber ihrem Zustand vor dem Angriff.",
+            "observed_at": "2026-09-10 bis 2026-09-11 gemeldeter Ereignisstand",
+            "temporal_status": "ex_post",
+            "magnitude": 4,
+            "mechanism": "Die Todesfälle werden im Zusammenhang mit dem gemeldeten Angriff berichtet; eine unabhängige Verursachungsbestätigung liegt im gebundenen Material nicht vor.",
+            "recipients": [
+              "die sieben gemeldeten getöteten Menschen"
+            ],
+            "time_horizon": "Dauerhaft und irreversibel.",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Begrenzte Gruppe von sieben gemeldeten Todesopfern.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 5,
+                "rationale": "Tod ist für die unmittelbar Betroffenen eine fundamentale Zustandsveränderung.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 5,
+                "rationale": "Die Zustandsveränderung ist dauerhaft.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Tod ist irreversibel.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 5,
+                "rationale": "Das Schutzgut Leben ist für die unmittelbar Getöteten vollständig betroffen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Primär unmittelbarer Personenschaden mit möglichen Folgen für Angehörige; aus diesem Einzelereignis ist keine umfassende Systemveränderung belegt.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der berichtete Tod konkreter Menschen verletzt bei Zutreffen des Behördenstands unmittelbar das fundamentale Schutzgut Leben; die Einstufung beruht auf der beobachteten Zustandsänderung, nicht auf einem Schlagwort oder einer vermuteten Absicht.",
+              "reference_frame": "Schutz des Lebens",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 24,
+              "divisor": 6,
+              "raw": 4,
+              "rounded": 4,
+              "protection_floor": 4,
+              "final": 4
+            }
+          },
+          {
+            "dimension": "human",
+            "change": "Nach aktuellem Behördenstand wurden rund 70 Menschen verletzt.",
+            "direction": "negative",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "open",
+            "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+            "reference_space": "Die rund 70 gemeldeten Verletzten gegenüber ihrem Gesundheitszustand vor dem Angriff.",
+            "observed_at": "2026-09-10 bis 2026-09-11 gemeldeter Ereignisstand",
+            "temporal_status": "ex_post",
+            "magnitude": 2,
+            "mechanism": "Die Verletzungen werden im Zusammenhang mit dem gemeldeten Angriff berichtet; Art und Schwere sowie unabhängige Attribution fehlen.",
+            "recipients": [
+              "die rund 70 gemeldeten verletzten Menschen"
+            ],
+            "time_horizon": "Unmittelbarer Gesundheitsschaden; weitere Dauer ist mangels Angaben zur Verletzungsschwere offen.",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Rund 70 gemeldete Verletzte bilden eine begrenzte lokale Personengruppe. Die Einstufung beschreibt den betrachteten Empfängerkreis; die gesundheitliche Schwere wird unabhängig davon im Intensitätsfaktor behandelt.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 3,
+                "rationale": "Verletzungen sind eine deutliche gesundheitliche Beeinträchtigung; schwere oder lebensverändernde Verletzungen werden mangels Detailangaben nicht pauschal angenommen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Belegt ist zunächst der akute Verletzungszustand; eine längere Dauer ist für die konkrete Gruppe nicht dokumentiert.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 1,
+                "rationale": "Dauerhafte Schäden sind möglich, aber für die konkrete Gruppe nicht belegt; der beobachtete Akutzustand wird nicht als irreversibel eingestuft.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 4,
+                "rationale": "Verletzte Menschen sind unmittelbar gesundheitlich belastet und auf Versorgung angewiesen; individuelle Schweregrade fehlen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Primär individueller Gesundheitsschaden mit möglicher Belastung von Versorgung und Angehörigen, aber ohne belegte strukturelle Systemänderung.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Körperliche Unversehrtheit ist ein fundamentales Schutzgut; eine für alle rund 70 Verletzten schwere oder dauerhafte Grenzverletzung ist mangels Verletzungsdaten jedoch nicht konkret belegt.",
+              "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 13,
+              "divisor": 6,
+              "raw": 2.1666666666666665,
+              "rounded": 2,
+              "protection_floor": 0,
+              "final": 2
+            }
+          }
+        ],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 3,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Ein Teil der Verletzten kann über die Akutphase hinaus gesundheitliche und soziale Folgen entwickeln",
+                "mechanism": "Die gemeldeten Verletzungen können abhängig von ihrer unbekannten Schwere über den akuten Schaden hinaus weitere Behandlung, funktionelle Einschränkungen oder soziale Belastungen nach sich ziehen. Die verfügbare ICRC-Quelle trägt allgemeine direkte und indirekte Folgen explosiver Gewalt, nicht einen konkreten Rehabilitationsbedarf dieser Verletzten.",
+                "recipients": [
+                  "die rund 70 gemeldeten Verletzten"
+                ],
+                "magnitude": 3,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-icrc-urban-services"
+                ],
+                "condition": "Mindestens ein Teil der gemeldeten Verletzungen verursacht über die Akutphase hinaus gesundheitliche, funktionelle oder soziale Folgen.",
+                "reference_space": "Die gemeldeten Verletzten gegenüber ihrem Gesundheitszustand vor dem Angriff.",
+                "time_horizon": "Tage bis Jahre, abhängig von Art und Schwere der Verletzungen.",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Nicht angenommen wird, dass alle rund 70 Verletzten schwer oder dauerhaft beeinträchtigt sind. Die konkrete Verletzungsschwere ist unbekannt.",
+                "source_support": "DLF trägt den aktuellen Behördenstand von rund 70 Verletzten. ICRC trägt allgemeine direkte und indirekte Folgen explosiver Gewalt in bewohnten Gebieten, aber keine individuelle Prognose und keinen Rehabilitationsnachweis für Pawlohrad.",
+                "limitations": "Art, Schwere, Behandlung und Prognose der konkreten Verletzungen fehlen.",
+                "first_order": "Ein Teil der Verletzten kann nach der akuten Verletzung weitere gesundheitliche Versorgung benötigen.",
+                "second_order": "Bei schwereren Verletzungen können funktionelle Einschränkungen, Belastungen des Alltags oder zusätzlicher Unterstützungsbedarf entstehen.",
+                "third_order": "Mehrere länger anhaltende Verletzungsfolgen könnten Familien und lokale Versorgungsstrukturen zusätzlich beanspruchen; dafür fehlen Fallinformationen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Bei überwiegend leichten Verletzungen bleibt der Folgepfad klein; bei mehreren schweren Verletzungen kann er deutlich sein. Die Verteilung der Schweregrade ist unbekannt."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Ohne verwendbare WHO-Quelle besteht kein belastbarer Rehabilitationsmechanismus für diesen Fall. ICRC und DLF tragen nur den berichteten Verletzungsausgangspunkt und allgemeine indirekte Folgen; der Langzeitpfad wird deshalb als niedrig evidenzierte Modellhypothese begrenzt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Begrenzte lokale Gruppe: Der bedingte Folgepfad betrifft einen unbekannten Teil der rund 70 gemeldeten Verletzten. Eine regionale Gesamtbevölkerung ist nicht als Empfänger dieses individuellen Gesundheitspfads belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Bei schwereren Verletzungen können gesundheitliche und funktionelle Folgen deutlich sein; ICRC trägt den allgemeinen Schadenskontext, nicht den konkreten Schweregrad.",
+                    "source_ids": [
+                      "research-icrc-urban-services"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Mögliche Folgen können über die Akutphase hinausreichen; eine langfristige Dauer ist für die konkrete Gruppe nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-icrc-urban-services"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Manche Verletzungsfolgen können nur mit Aufwand rückgebildet werden, dauerhafte Schäden werden mangels Daten nicht vorausgesetzt.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-icrc-urban-services"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Bereits verletzte Menschen sind gegenüber weiteren gesundheitlichen Belastungen deutlich vulnerabel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Primär individueller Gesundheitspfad mit möglichen Familien- und Versorgungseffekten; keine tiefe Systemänderung ist belegt.",
+                    "source_ids": [
+                      "research-icrc-urban-services"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Schwere dauerhafte Verletzungsfolgen könnten eine maßgebliche Schutzgrenze berühren, sind für die konkrete Gruppe aber nicht belegt.",
+                  "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-icrc-urban-services"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 15,
+                  "divisor": 6,
+                  "raw": 2.5,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der modellierte Human-Folgepfad bleibt negativ, wird ohne verwendbare WHO-Quelle aber konservativer bewertet. Die eingetretenen Todesfälle und Verletzungen stehen separat in observed_effects; mögliche Langzeitfolgen bleiben niedrig evidenzierte Potenziale.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Kein materieller positiver Hauptpfad desselben Targets und derselben Baseline liegt vor; mögliche Hilfe oder Rehabilitation mindert Folgeschäden, gleicht den Angriffsschaden aber nicht aus."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Ein Teil der Verletzten kann über die Akutphase hinaus gesundheitliche und soziale Folgen entwickeln",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Nach aktuellem Behördenstand wurden sieben Menschen getötet.",
+                "direction": "negative",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "medium",
+                "attribution": "open",
+                "reference_frame": "Leben und körperliche Unversehrtheit",
+                "reference_space": "Die sieben gemeldeten Getöteten in Pawlohrad gegenüber ihrem Zustand vor dem Angriff.",
+                "observed_at": "2026-09-10 bis 2026-09-11 gemeldeter Ereignisstand",
+                "temporal_status": "ex_post",
+                "magnitude": 4,
+                "mechanism": "Die Todesfälle werden im Zusammenhang mit dem gemeldeten Angriff berichtet; eine unabhängige Verursachungsbestätigung liegt im gebundenen Material nicht vor.",
+                "recipients": [
+                  "die sieben gemeldeten getöteten Menschen"
+                ],
+                "time_horizon": "Dauerhaft und irreversibel.",
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Begrenzte Gruppe von sieben gemeldeten Todesopfern.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 5,
+                    "rationale": "Tod ist für die unmittelbar Betroffenen eine fundamentale Zustandsveränderung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 5,
+                    "rationale": "Die Zustandsveränderung ist dauerhaft.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 5,
+                    "rationale": "Tod ist irreversibel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 5,
+                    "rationale": "Das Schutzgut Leben ist für die unmittelbar Getöteten vollständig betroffen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Primär unmittelbarer Personenschaden mit möglichen Folgen für Angehörige; aus diesem Einzelereignis ist keine umfassende Systemveränderung belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Der berichtete Tod konkreter Menschen verletzt bei Zutreffen des Behördenstands unmittelbar das fundamentale Schutzgut Leben; die Einstufung beruht auf der beobachteten Zustandsänderung, nicht auf einem Schlagwort oder einer vermuteten Absicht.",
+                  "reference_frame": "Schutz des Lebens",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "observed"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 24,
+                  "divisor": 6,
+                  "raw": 4,
+                  "rounded": 4,
+                  "protection_floor": 4,
+                  "final": 4
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 4,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Nach aktuellem Behördenstand wurden sieben Menschen getötet.",
+                  "direction": "negative"
+                }
+              },
+              {
+                "dimension": "human",
+                "change": "Nach aktuellem Behördenstand wurden rund 70 Menschen verletzt.",
+                "direction": "negative",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "data_status": "secondary_source",
+                "evidence": "medium",
+                "attribution": "open",
+                "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+                "reference_space": "Die rund 70 gemeldeten Verletzten gegenüber ihrem Gesundheitszustand vor dem Angriff.",
+                "observed_at": "2026-09-10 bis 2026-09-11 gemeldeter Ereignisstand",
+                "temporal_status": "ex_post",
+                "magnitude": 2,
+                "mechanism": "Die Verletzungen werden im Zusammenhang mit dem gemeldeten Angriff berichtet; Art und Schwere sowie unabhängige Attribution fehlen.",
+                "recipients": [
+                  "die rund 70 gemeldeten verletzten Menschen"
+                ],
+                "time_horizon": "Unmittelbarer Gesundheitsschaden; weitere Dauer ist mangels Angaben zur Verletzungsschwere offen.",
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Rund 70 gemeldete Verletzte bilden eine begrenzte lokale Personengruppe. Die Einstufung beschreibt den betrachteten Empfängerkreis; die gesundheitliche Schwere wird unabhängig davon im Intensitätsfaktor behandelt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Verletzungen sind eine deutliche gesundheitliche Beeinträchtigung; schwere oder lebensverändernde Verletzungen werden mangels Detailangaben nicht pauschal angenommen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Belegt ist zunächst der akute Verletzungszustand; eine längere Dauer ist für die konkrete Gruppe nicht dokumentiert.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Dauerhafte Schäden sind möglich, aber für die konkrete Gruppe nicht belegt; der beobachtete Akutzustand wird nicht als irreversibel eingestuft.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Verletzte Menschen sind unmittelbar gesundheitlich belastet und auf Versorgung angewiesen; individuelle Schweregrade fehlen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Primär individueller Gesundheitsschaden mit möglicher Belastung von Versorgung und Angehörigen, aber ohne belegte strukturelle Systemänderung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Körperliche Unversehrtheit ist ein fundamentales Schutzgut; eine für alle rund 70 Verletzten schwere oder dauerhafte Grenzverletzung ist mangels Verletzungsdaten jedoch nicht konkret belegt.",
+                  "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "observed"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 2,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Nach aktuellem Behördenstand wurden rund 70 Menschen verletzt.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Nach aktuellem Behördenstand wurden sieben Menschen getötet.",
+              "direction": "negative",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "open",
+              "reference_frame": "Leben und körperliche Unversehrtheit",
+              "reference_space": "Die sieben gemeldeten Getöteten in Pawlohrad gegenüber ihrem Zustand vor dem Angriff.",
+              "observed_at": "2026-09-10 bis 2026-09-11 gemeldeter Ereignisstand",
+              "temporal_status": "ex_post",
+              "magnitude": 4,
+              "mechanism": "Die Todesfälle werden im Zusammenhang mit dem gemeldeten Angriff berichtet; eine unabhängige Verursachungsbestätigung liegt im gebundenen Material nicht vor.",
+              "recipients": [
+                "die sieben gemeldeten getöteten Menschen"
+              ],
+              "time_horizon": "Dauerhaft und irreversibel.",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Begrenzte Gruppe von sieben gemeldeten Todesopfern.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Tod ist für die unmittelbar Betroffenen eine fundamentale Zustandsveränderung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 5,
+                  "rationale": "Die Zustandsveränderung ist dauerhaft.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Tod ist irreversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 5,
+                  "rationale": "Das Schutzgut Leben ist für die unmittelbar Getöteten vollständig betroffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Primär unmittelbarer Personenschaden mit möglichen Folgen für Angehörige; aus diesem Einzelereignis ist keine umfassende Systemveränderung belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der berichtete Tod konkreter Menschen verletzt bei Zutreffen des Behördenstands unmittelbar das fundamentale Schutzgut Leben; die Einstufung beruht auf der beobachteten Zustandsänderung, nicht auf einem Schlagwort oder einer vermuteten Absicht.",
+                "reference_frame": "Schutz des Lebens",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 24,
+                "divisor": 6,
+                "raw": 4,
+                "rounded": 4,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Nach aktuellem Behördenstand wurden sieben Menschen getötet.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 4,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Nach aktuellem Behördenstand wurden sieben Menschen getötet.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Gemeldete Sachschäden können Trümmer-, Entsorgungs- und Wiederaufbaubedarf erzeugen",
+                "mechanism": "Beschädigte Geschäftsräume und Fahrzeuge können bei Reparatur, Räumung oder Ersatz Material-, Energie-, Transport- und Entsorgungsbedarf auslösen. Geeignete Trümmer können teilweise wiederverwendet werden, wodurch die zusätzliche Ressourcenlast begrenzt werden kann.",
+                "recipients": [
+                  "lokale Umwelt",
+                  "kommunale Entsorgungs- und Wiederaufbaustrukturen",
+                  "Ressourcenbestände mittelbar"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "research-undp-debris-reuse",
+                  "research-icrc-urban-services"
+                ],
+                "condition": "Die gemeldeten Sachschäden erfordern tatsächlich relevante Räumungs-, Reparatur-, Ersatz- oder Wiederaufbauarbeiten.",
+                "reference_space": "Lokales Umfeld des beschädigten Einkaufszentrums gegenüber dem Zustand vor dem Angriff ohne die dadurch ausgelösten Sachschäden.",
+                "time_horizon": "Tage bis mehrere Jahre, abhängig vom tatsächlichen Schadensumfang und Wiederaufbau.",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Aus den gemeldeten Sachschäden wird kein bestimmtes Trümmer-, Emissions- oder Schadstoffvolumen abgeleitet. Wiederverwendung geeigneter Materialien kann die zusätzliche Last mindern, macht den Zustand gegenüber der Baseline ohne Angriff aber nicht positiv.",
+                "source_support": "stern berichtet beschädigte Geschäftsräume und Fahrzeuge. ICRC beschreibt allgemein indirekte Folgen von Explosivwaffen in bebauten Gebieten. UNDP zeigt für Kriegstrümmer in der Ukraine, dass geeignete Materialien als Sekundärrohstoffe wiederverwendet werden können. Keine Quelle misst konkrete Umweltfolgen in Pawlohrad.",
+                "limitations": "Schadensfläche, Trümmermenge, Brand- oder Schadstofffreisetzung, Entsorgungsweg und Umfang eines Wiederaufbaus sind unbekannt.",
+                "first_order": "Beschädigte Sachwerte können Räumung, Reparatur oder Ersatz erforderlich machen.",
+                "second_order": "Dadurch können zusätzliche Material-, Energie-, Transport- und Entsorgungsbedarfe entstehen.",
+                "third_order": "Bei größeren Schäden kann Wiederaufbau längerfristig Ressourcen beanspruchen; Wiederverwendung geeigneter Trümmer kann diese Last teilweise reduzieren.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Bei geringem Sachschaden bleibt die Umweltfolge klein; bei umfangreicher Räumung und Wiederherstellung kann sie lokal deutlich werden. Konkrete Mengen fehlen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "UNDP bestätigt, dass Kriegstrümmer Ressourcen- und Entsorgungsfragen erzeugen und geeignete Materialien wiederverwendet werden können. ICRC trägt den allgemeinen Mechanismus indirekter urbaner Folgen. Für Pawlohrad fehlen konkrete Umweltmessungen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Der Pfad ist auf den lokalen Schadens- und Wiederaufbauraum begrenzt; stern belegt Sachschäden, nicht deren räumliches Gesamtmaß.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Reparatur und Ersatz können relevante lokale Ressourcen- und Entsorgungsbedarfe erzeugen; konkrete Mengen sind nicht belegt.",
+                    "source_ids": [
+                      "research-undp-debris-reuse"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Räumung und Reparatur können kurzfristig bis über Monate wirken; mehrjährige Folgen sind nur bei größerem Wiederaufbau denkbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "research-undp-debris-reuse"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Ein großer Teil von Räumungs- und Materialfolgen ist durch Sanierung, Wiederverwendung und Wiederaufbau begrenzbar; vollständige Wiederherstellung ist nicht garantiert.",
+                    "source_ids": [
+                      "research-undp-debris-reuse"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Lokale Umwelt- und Entsorgungsstrukturen können belastet werden, eine besondere konkrete ökologische Vulnerabilität des Ortes ist nicht belegt.",
+                    "source_ids": [
+                      "research-icrc-urban-services"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Der Pfad betrifft lokale Wiederherstellungs- und Entsorgungsprozesse, ohne belegte tiefere ökologische Systemveränderung.",
+                    "source_ids": [
+                      "research-icrc-urban-services",
+                      "research-undp-debris-reuse"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine konkrete schwere oder irreversible ökologische Grenzverletzung am Ereignisort belegt.",
+                  "reference_frame": "Natürliche Lebensgrundlagen und Ressourcenverbrauch",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "research-undp-debris-reuse"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der Planet-Pfad bleibt negativ und bedingt: Die gemeldeten Sachschäden können zusätzliche Entsorgungs- und Wiederaufbaulasten erzeugen. Fehlende Fallmessungen begrenzen Eintritt und Ausmaß, nicht die Richtung dieses Pfads, falls solche Arbeiten tatsächlich erforderlich werden.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Wiederverwendung geeigneter Trümmer kann negative Ressourcenfolgen mindern, ist gegenüber der Baseline ohne Angriff aber kein positiver Hauptpfad."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Gemeldete Sachschäden können Trümmer-, Entsorgungs- und Wiederaufbaubedarf erzeugen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Gemeldete Sachschäden können Trümmer-, Entsorgungs- und Wiederaufbaubedarf erzeugen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Der Angriff kann lokale Rettungs-, Versorgungs- und Verwaltungsfunktionen zusätzlich beanspruchen",
+                "mechanism": "Schwere Personenschäden und Sachschäden in einem bewohnten Stadtbereich können Rettungsdienste, medizinische Versorgung, Verkehrs- und Verwaltungsabläufe sowie Wiederherstellungsaufgaben zusätzlich beanspruchen. ICRC beschreibt solche indirekten beziehungsweise nachhallenden Effekte in gekoppelten urbanen Versorgungssystemen allgemein.",
+                "recipients": [
+                  "lokale Rettungs- und Versorgungsdienste",
+                  "kommunale und regionale Institutionen",
+                  "Bevölkerung im betroffenen Stadtgebiet"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "stern-schlagzeilen",
+                  "research-icrc-urban-services"
+                ],
+                "condition": "Die gemeldeten Personen- und Sachschäden führen tatsächlich zu zusätzlichem längerfristigem Rettungs-, Versorgungs-, Verkehrs- oder Wiederherstellungsbedarf über die unmittelbare Ereignisreaktion hinaus.",
+                "reference_space": "Lokale institutionelle Funktionsfähigkeit in Pawlohrad gegenüber dem Zustand vor dem konkreten Angriff.",
+                "time_horizon": "Stunden bis Monate; länger nur bei tatsächlich größeren Infrastruktur- oder Wiederherstellungsfolgen.",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Es wird keine konkrete Zerstörung kritischer Infrastruktur und kein dauerhafter Ausfall staatlicher Funktionen angenommen. Modelliert wird nur eine mögliche zusätzliche Beanspruchung lokaler Systeme durch den berichteten Schaden.",
+                "source_support": "DLF und stern tragen Personen- beziehungsweise Sachschäden. ICRC belegt allgemein, dass explosive Gewalt in bewohnten Gebieten indirekte und nachhallende Folgen für miteinander gekoppelte zivile Dienste haben kann. Für Pawlohrad sind konkrete institutionelle Ausfälle nicht belegt.",
+                "limitations": "Keine Angaben zu Ausfällen von Strom, Wasser, Gesundheitsversorgung, Verkehr, Verwaltung oder anderen kritischen Diensten. Dauer und zusätzliche institutionelle Belastung sind unbekannt.",
+                "first_order": "Rettung, medizinische Versorgung und Schadensbewältigung können durch die gemeldeten Opfer und Sachschäden zusätzlich beansprucht werden.",
+                "second_order": "Bei größeren Schäden können lokale Dienste und Wiederherstellungsprozesse zeitweise unter zusätzlichen Kapazitätsdruck geraten.",
+                "third_order": "Erst bei wiederholten oder länger anhaltenden Ausfällen könnte die lokale institutionelle Resilienz strukturell geschwächt werden; dies ist für dieses Einzelereignis nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Bei rascher Bewältigung bleibt die institutionelle Folge klein; bei größeren Folgeausfällen kann sie lokal deutlich werden. Dafür fehlen derzeit Zustandsdaten."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "ICRC bestätigt den allgemeinen Mechanismus indirekter urbaner Dienstefolgen. Für Pawlohrad liegen keine belastbaren Angaben über konkrete Ausfälle oder dauerhafte institutionelle Beeinträchtigungen vor.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Eine mögliche Funktionsbelastung wäre zunächst lokal auf das betroffene Stadtgebiet und dortige Dienste begrenzt.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Zusätzliche Belastung lokaler Dienste kann relevant sein, ohne dass ein tatsächlicher Funktionsausfall belegt ist.",
+                    "source_ids": [
+                      "research-icrc-urban-services"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Ereignisreaktion und Wiederherstellung können Stunden bis Monate beanspruchen; eine langfristige Dauer ist nicht belegt.",
+                    "source_ids": [
+                      "research-icrc-urban-services"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Institutionelle Belastungen sind grundsätzlich durch Wiederherstellung und Kapazitätsanpassung reversibel; dauerhafte Schäden sind nicht belegt.",
+                    "source_ids": [
+                      "research-icrc-urban-services"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Die lokale Bevölkerung ist auf funktionierende Rettungs- und Versorgungsdienste angewiesen; eine besonders extreme institutionelle Verwundbarkeit ist nicht nachgewiesen.",
+                    "source_ids": [
+                      "research-icrc-urban-services"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Gekoppelte urbane Dienste können bei tatsächlichen Ausfällen Folgen zweiter Ordnung erzeugen; ICRC trägt diesen allgemeinen Systemmechanismus, nicht dessen Eintritt in Pawlohrad.",
+                    "source_ids": [
+                      "research-icrc-urban-services"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere konkrete Verletzung institutioneller Schutz- oder Versorgungsfunktionen ist nicht belegt; modelliert wird nur eine bedingte lokale Beanspruchung.",
+                  "reference_frame": "Zivile Sicherheit, institutionelle Funktionsfähigkeit und lokale Versorgungsresilienz",
+                  "source_ids": [
+                    "research-icrc-urban-services",
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der Demokratie-/Institutionenpfad ist begrenzt negativ und ex ante. Aus dem schweren Personenschaden folgt plausibel zusätzliche lokale Systembeanspruchung, aber kein belegter Ausfall kritischer Infrastruktur und keine nachgewiesene strukturelle Veränderung demokratischer Institutionen.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Rettung, Versorgung und Wiederherstellung sind Reaktionen auf den Schaden und kein positiver Hauptpfad gegenüber der Baseline ohne Angriff."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Der Angriff kann lokale Rettungs-, Versorgungs- und Verwaltungsfunktionen zusätzlich beanspruchen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Der Angriff kann lokale Rettungs-, Versorgungs- und Verwaltungsfunktionen zusätzlich beanspruchen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Trägt den aktuellsten gebundenen Behördenstand von sieben Toten und rund 70 Verletzten."
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Trägt den älteren Zwischenstand von mindestens fünf Toten und 67 Verletzten sowie gemeldete Schäden an Geschäftsräumen und Fahrzeugen."
+          },
+          {
+            "source_id": "research-icrc-urban-services",
+            "functions": [
+              "mechanism"
+            ],
+            "supported_claim": "Trägt den allgemeinen Mechanismus indirekter und nachhallender Folgen von Explosivwaffen auf gekoppelte städtische Versorgungssysteme; keine Pawlohrad-Bestätigung."
+          },
+          {
+            "source_id": "research-undp-debris-reuse",
+            "functions": [
+              "counter_evidence"
+            ],
+            "supported_claim": "Trägt den begrenzenden Mechanismus, dass geeignete Kriegstrümmer als Sekundärrohstoff wiederverwendet werden können; keine Aussage zur Praxis am Ereignisort."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex post",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://www.undp.org/ukraine/press-releases/ukraine-could-recover-82-million-tonnes-secondary-raw-materials-war-generated-debris-undp-study-reveals",
+          "title": "Ukraine could recover up to 8.2 million tonnes of secondary raw materials from war-generated debris, UNDP study reveals",
+          "publisher": "UNDP",
+          "source_id": "research-undp-debris-reuse",
+          "source_function": "counter_evidence"
+        },
+        {
+          "url": "https://www.icrc.org/en/document/addressing-indirect-effects-explosive-weapons",
+          "title": "Safeguarding Essential Services: Addressing Indirect Effects of Explosive Weapons in Populated Areas",
+          "publisher": "ICRC",
+          "source_id": "research-icrc-urban-services",
+          "source_function": "mechanism"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 3,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Ein Teil der Verletzten kann über die Akutphase hinaus gesundheitliche und soziale Folgen entwickeln",
+              "mechanism": "Die gemeldeten Verletzungen können abhängig von ihrer unbekannten Schwere über den akuten Schaden hinaus weitere Behandlung, funktionelle Einschränkungen oder soziale Belastungen nach sich ziehen. Die verfügbare ICRC-Quelle trägt allgemeine direkte und indirekte Folgen explosiver Gewalt, nicht einen konkreten Rehabilitationsbedarf dieser Verletzten.",
+              "recipients": [
+                "die rund 70 gemeldeten Verletzten"
+              ],
+              "magnitude": 3,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-icrc-urban-services"
+              ],
+              "condition": "Mindestens ein Teil der gemeldeten Verletzungen verursacht über die Akutphase hinaus gesundheitliche, funktionelle oder soziale Folgen.",
+              "reference_space": "Die gemeldeten Verletzten gegenüber ihrem Gesundheitszustand vor dem Angriff.",
+              "time_horizon": "Tage bis Jahre, abhängig von Art und Schwere der Verletzungen.",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Nicht angenommen wird, dass alle rund 70 Verletzten schwer oder dauerhaft beeinträchtigt sind. Die konkrete Verletzungsschwere ist unbekannt.",
+              "source_support": "DLF trägt den aktuellen Behördenstand von rund 70 Verletzten. ICRC trägt allgemeine direkte und indirekte Folgen explosiver Gewalt in bewohnten Gebieten, aber keine individuelle Prognose und keinen Rehabilitationsnachweis für Pawlohrad.",
+              "limitations": "Art, Schwere, Behandlung und Prognose der konkreten Verletzungen fehlen.",
+              "first_order": "Ein Teil der Verletzten kann nach der akuten Verletzung weitere gesundheitliche Versorgung benötigen.",
+              "second_order": "Bei schwereren Verletzungen können funktionelle Einschränkungen, Belastungen des Alltags oder zusätzlicher Unterstützungsbedarf entstehen.",
+              "third_order": "Mehrere länger anhaltende Verletzungsfolgen könnten Familien und lokale Versorgungsstrukturen zusätzlich beanspruchen; dafür fehlen Fallinformationen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Bei überwiegend leichten Verletzungen bleibt der Folgepfad klein; bei mehreren schweren Verletzungen kann er deutlich sein. Die Verteilung der Schweregrade ist unbekannt."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Ohne verwendbare WHO-Quelle besteht kein belastbarer Rehabilitationsmechanismus für diesen Fall. ICRC und DLF tragen nur den berichteten Verletzungsausgangspunkt und allgemeine indirekte Folgen; der Langzeitpfad wird deshalb als niedrig evidenzierte Modellhypothese begrenzt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Begrenzte lokale Gruppe: Der bedingte Folgepfad betrifft einen unbekannten Teil der rund 70 gemeldeten Verletzten. Eine regionale Gesamtbevölkerung ist nicht als Empfänger dieses individuellen Gesundheitspfads belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Bei schwereren Verletzungen können gesundheitliche und funktionelle Folgen deutlich sein; ICRC trägt den allgemeinen Schadenskontext, nicht den konkreten Schweregrad.",
+                  "source_ids": [
+                    "research-icrc-urban-services"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Mögliche Folgen können über die Akutphase hinausreichen; eine langfristige Dauer ist für die konkrete Gruppe nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-icrc-urban-services"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Manche Verletzungsfolgen können nur mit Aufwand rückgebildet werden, dauerhafte Schäden werden mangels Daten nicht vorausgesetzt.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-icrc-urban-services"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Bereits verletzte Menschen sind gegenüber weiteren gesundheitlichen Belastungen deutlich vulnerabel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Primär individueller Gesundheitspfad mit möglichen Familien- und Versorgungseffekten; keine tiefe Systemänderung ist belegt.",
+                  "source_ids": [
+                    "research-icrc-urban-services"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Schwere dauerhafte Verletzungsfolgen könnten eine maßgebliche Schutzgrenze berühren, sind für die konkrete Gruppe aber nicht belegt.",
+                "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-icrc-urban-services"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 15,
+                "divisor": 6,
+                "raw": 2.5,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der modellierte Human-Folgepfad bleibt negativ, wird ohne verwendbare WHO-Quelle aber konservativer bewertet. Die eingetretenen Todesfälle und Verletzungen stehen separat in observed_effects; mögliche Langzeitfolgen bleiben niedrig evidenzierte Potenziale.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Kein materieller positiver Hauptpfad desselben Targets und derselben Baseline liegt vor; mögliche Hilfe oder Rehabilitation mindert Folgeschäden, gleicht den Angriffsschaden aber nicht aus."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Ein Teil der Verletzten kann über die Akutphase hinaus gesundheitliche und soziale Folgen entwickeln",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Nach aktuellem Behördenstand wurden sieben Menschen getötet.",
+              "direction": "negative",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "open",
+              "reference_frame": "Leben und körperliche Unversehrtheit",
+              "reference_space": "Die sieben gemeldeten Getöteten in Pawlohrad gegenüber ihrem Zustand vor dem Angriff.",
+              "observed_at": "2026-09-10 bis 2026-09-11 gemeldeter Ereignisstand",
+              "temporal_status": "ex_post",
+              "magnitude": 4,
+              "mechanism": "Die Todesfälle werden im Zusammenhang mit dem gemeldeten Angriff berichtet; eine unabhängige Verursachungsbestätigung liegt im gebundenen Material nicht vor.",
+              "recipients": [
+                "die sieben gemeldeten getöteten Menschen"
+              ],
+              "time_horizon": "Dauerhaft und irreversibel.",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Begrenzte Gruppe von sieben gemeldeten Todesopfern.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 5,
+                  "rationale": "Tod ist für die unmittelbar Betroffenen eine fundamentale Zustandsveränderung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 5,
+                  "rationale": "Die Zustandsveränderung ist dauerhaft.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 5,
+                  "rationale": "Tod ist irreversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 5,
+                  "rationale": "Das Schutzgut Leben ist für die unmittelbar Getöteten vollständig betroffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Primär unmittelbarer Personenschaden mit möglichen Folgen für Angehörige; aus diesem Einzelereignis ist keine umfassende Systemveränderung belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Der berichtete Tod konkreter Menschen verletzt bei Zutreffen des Behördenstands unmittelbar das fundamentale Schutzgut Leben; die Einstufung beruht auf der beobachteten Zustandsänderung, nicht auf einem Schlagwort oder einer vermuteten Absicht.",
+                "reference_frame": "Schutz des Lebens",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 24,
+                "divisor": 6,
+                "raw": 4,
+                "rounded": 4,
+                "protection_floor": 4,
+                "final": 4
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 4,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Nach aktuellem Behördenstand wurden sieben Menschen getötet.",
+                "direction": "negative"
+              }
+            },
+            {
+              "dimension": "human",
+              "change": "Nach aktuellem Behördenstand wurden rund 70 Menschen verletzt.",
+              "direction": "negative",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "data_status": "secondary_source",
+              "evidence": "medium",
+              "attribution": "open",
+              "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+              "reference_space": "Die rund 70 gemeldeten Verletzten gegenüber ihrem Gesundheitszustand vor dem Angriff.",
+              "observed_at": "2026-09-10 bis 2026-09-11 gemeldeter Ereignisstand",
+              "temporal_status": "ex_post",
+              "magnitude": 2,
+              "mechanism": "Die Verletzungen werden im Zusammenhang mit dem gemeldeten Angriff berichtet; Art und Schwere sowie unabhängige Attribution fehlen.",
+              "recipients": [
+                "die rund 70 gemeldeten verletzten Menschen"
+              ],
+              "time_horizon": "Unmittelbarer Gesundheitsschaden; weitere Dauer ist mangels Angaben zur Verletzungsschwere offen.",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Rund 70 gemeldete Verletzte bilden eine begrenzte lokale Personengruppe. Die Einstufung beschreibt den betrachteten Empfängerkreis; die gesundheitliche Schwere wird unabhängig davon im Intensitätsfaktor behandelt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Verletzungen sind eine deutliche gesundheitliche Beeinträchtigung; schwere oder lebensverändernde Verletzungen werden mangels Detailangaben nicht pauschal angenommen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Belegt ist zunächst der akute Verletzungszustand; eine längere Dauer ist für die konkrete Gruppe nicht dokumentiert.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Dauerhafte Schäden sind möglich, aber für die konkrete Gruppe nicht belegt; der beobachtete Akutzustand wird nicht als irreversibel eingestuft.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Verletzte Menschen sind unmittelbar gesundheitlich belastet und auf Versorgung angewiesen; individuelle Schweregrade fehlen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Primär individueller Gesundheitsschaden mit möglicher Belastung von Versorgung und Angehörigen, aber ohne belegte strukturelle Systemänderung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Körperliche Unversehrtheit ist ein fundamentales Schutzgut; eine für alle rund 70 Verletzten schwere oder dauerhafte Grenzverletzung ist mangels Verletzungsdaten jedoch nicht konkret belegt.",
+                "reference_frame": "Körperliche Unversehrtheit und Gesundheit",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 2,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Nach aktuellem Behördenstand wurden rund 70 Menschen verletzt.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Nach aktuellem Behördenstand wurden sieben Menschen getötet.",
+            "direction": "negative",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "data_status": "secondary_source",
+            "evidence": "medium",
+            "attribution": "open",
+            "reference_frame": "Leben und körperliche Unversehrtheit",
+            "reference_space": "Die sieben gemeldeten Getöteten in Pawlohrad gegenüber ihrem Zustand vor dem Angriff.",
+            "observed_at": "2026-09-10 bis 2026-09-11 gemeldeter Ereignisstand",
+            "temporal_status": "ex_post",
+            "magnitude": 4,
+            "mechanism": "Die Todesfälle werden im Zusammenhang mit dem gemeldeten Angriff berichtet; eine unabhängige Verursachungsbestätigung liegt im gebundenen Material nicht vor.",
+            "recipients": [
+              "die sieben gemeldeten getöteten Menschen"
+            ],
+            "time_horizon": "Dauerhaft und irreversibel.",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Begrenzte Gruppe von sieben gemeldeten Todesopfern.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 5,
+                "rationale": "Tod ist für die unmittelbar Betroffenen eine fundamentale Zustandsveränderung.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 5,
+                "rationale": "Die Zustandsveränderung ist dauerhaft.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 5,
+                "rationale": "Tod ist irreversibel.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 5,
+                "rationale": "Das Schutzgut Leben ist für die unmittelbar Getöteten vollständig betroffen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 2,
+                "rationale": "Primär unmittelbarer Personenschaden mit möglichen Folgen für Angehörige; aus diesem Einzelereignis ist keine umfassende Systemveränderung belegt.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": true,
+              "rationale": "Der berichtete Tod konkreter Menschen verletzt bei Zutreffen des Behördenstands unmittelbar das fundamentale Schutzgut Leben; die Einstufung beruht auf der beobachteten Zustandsänderung, nicht auf einem Schlagwort oder einer vermuteten Absicht.",
+              "reference_frame": "Schutz des Lebens",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 24,
+              "divisor": 6,
+              "raw": 4,
+              "rounded": 4,
+              "protection_floor": 4,
+              "final": 4
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 4,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Nach aktuellem Behördenstand wurden sieben Menschen getötet.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 4,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Nach aktuellem Behördenstand wurden sieben Menschen getötet.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Gemeldete Sachschäden können Trümmer-, Entsorgungs- und Wiederaufbaubedarf erzeugen",
+              "mechanism": "Beschädigte Geschäftsräume und Fahrzeuge können bei Reparatur, Räumung oder Ersatz Material-, Energie-, Transport- und Entsorgungsbedarf auslösen. Geeignete Trümmer können teilweise wiederverwendet werden, wodurch die zusätzliche Ressourcenlast begrenzt werden kann.",
+              "recipients": [
+                "lokale Umwelt",
+                "kommunale Entsorgungs- und Wiederaufbaustrukturen",
+                "Ressourcenbestände mittelbar"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "stern-schlagzeilen",
+                "research-undp-debris-reuse",
+                "research-icrc-urban-services"
+              ],
+              "condition": "Die gemeldeten Sachschäden erfordern tatsächlich relevante Räumungs-, Reparatur-, Ersatz- oder Wiederaufbauarbeiten.",
+              "reference_space": "Lokales Umfeld des beschädigten Einkaufszentrums gegenüber dem Zustand vor dem Angriff ohne die dadurch ausgelösten Sachschäden.",
+              "time_horizon": "Tage bis mehrere Jahre, abhängig vom tatsächlichen Schadensumfang und Wiederaufbau.",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Aus den gemeldeten Sachschäden wird kein bestimmtes Trümmer-, Emissions- oder Schadstoffvolumen abgeleitet. Wiederverwendung geeigneter Materialien kann die zusätzliche Last mindern, macht den Zustand gegenüber der Baseline ohne Angriff aber nicht positiv.",
+              "source_support": "stern berichtet beschädigte Geschäftsräume und Fahrzeuge. ICRC beschreibt allgemein indirekte Folgen von Explosivwaffen in bebauten Gebieten. UNDP zeigt für Kriegstrümmer in der Ukraine, dass geeignete Materialien als Sekundärrohstoffe wiederverwendet werden können. Keine Quelle misst konkrete Umweltfolgen in Pawlohrad.",
+              "limitations": "Schadensfläche, Trümmermenge, Brand- oder Schadstofffreisetzung, Entsorgungsweg und Umfang eines Wiederaufbaus sind unbekannt.",
+              "first_order": "Beschädigte Sachwerte können Räumung, Reparatur oder Ersatz erforderlich machen.",
+              "second_order": "Dadurch können zusätzliche Material-, Energie-, Transport- und Entsorgungsbedarfe entstehen.",
+              "third_order": "Bei größeren Schäden kann Wiederaufbau längerfristig Ressourcen beanspruchen; Wiederverwendung geeigneter Trümmer kann diese Last teilweise reduzieren.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Bei geringem Sachschaden bleibt die Umweltfolge klein; bei umfangreicher Räumung und Wiederherstellung kann sie lokal deutlich werden. Konkrete Mengen fehlen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "UNDP bestätigt, dass Kriegstrümmer Ressourcen- und Entsorgungsfragen erzeugen und geeignete Materialien wiederverwendet werden können. ICRC trägt den allgemeinen Mechanismus indirekter urbaner Folgen. Für Pawlohrad fehlen konkrete Umweltmessungen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Der Pfad ist auf den lokalen Schadens- und Wiederaufbauraum begrenzt; stern belegt Sachschäden, nicht deren räumliches Gesamtmaß.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Reparatur und Ersatz können relevante lokale Ressourcen- und Entsorgungsbedarfe erzeugen; konkrete Mengen sind nicht belegt.",
+                  "source_ids": [
+                    "research-undp-debris-reuse"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Räumung und Reparatur können kurzfristig bis über Monate wirken; mehrjährige Folgen sind nur bei größerem Wiederaufbau denkbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "research-undp-debris-reuse"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Ein großer Teil von Räumungs- und Materialfolgen ist durch Sanierung, Wiederverwendung und Wiederaufbau begrenzbar; vollständige Wiederherstellung ist nicht garantiert.",
+                  "source_ids": [
+                    "research-undp-debris-reuse"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Lokale Umwelt- und Entsorgungsstrukturen können belastet werden, eine besondere konkrete ökologische Vulnerabilität des Ortes ist nicht belegt.",
+                  "source_ids": [
+                    "research-icrc-urban-services"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Der Pfad betrifft lokale Wiederherstellungs- und Entsorgungsprozesse, ohne belegte tiefere ökologische Systemveränderung.",
+                  "source_ids": [
+                    "research-icrc-urban-services",
+                    "research-undp-debris-reuse"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine konkrete schwere oder irreversible ökologische Grenzverletzung am Ereignisort belegt.",
+                "reference_frame": "Natürliche Lebensgrundlagen und Ressourcenverbrauch",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "research-undp-debris-reuse"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der Planet-Pfad bleibt negativ und bedingt: Die gemeldeten Sachschäden können zusätzliche Entsorgungs- und Wiederaufbaulasten erzeugen. Fehlende Fallmessungen begrenzen Eintritt und Ausmaß, nicht die Richtung dieses Pfads, falls solche Arbeiten tatsächlich erforderlich werden.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Wiederverwendung geeigneter Trümmer kann negative Ressourcenfolgen mindern, ist gegenüber der Baseline ohne Angriff aber kein positiver Hauptpfad."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Gemeldete Sachschäden können Trümmer-, Entsorgungs- und Wiederaufbaubedarf erzeugen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Gemeldete Sachschäden können Trümmer-, Entsorgungs- und Wiederaufbaubedarf erzeugen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Der Angriff kann lokale Rettungs-, Versorgungs- und Verwaltungsfunktionen zusätzlich beanspruchen",
+              "mechanism": "Schwere Personenschäden und Sachschäden in einem bewohnten Stadtbereich können Rettungsdienste, medizinische Versorgung, Verkehrs- und Verwaltungsabläufe sowie Wiederherstellungsaufgaben zusätzlich beanspruchen. ICRC beschreibt solche indirekten beziehungsweise nachhallenden Effekte in gekoppelten urbanen Versorgungssystemen allgemein.",
+              "recipients": [
+                "lokale Rettungs- und Versorgungsdienste",
+                "kommunale und regionale Institutionen",
+                "Bevölkerung im betroffenen Stadtgebiet"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten",
+                "stern-schlagzeilen",
+                "research-icrc-urban-services"
+              ],
+              "condition": "Die gemeldeten Personen- und Sachschäden führen tatsächlich zu zusätzlichem längerfristigem Rettungs-, Versorgungs-, Verkehrs- oder Wiederherstellungsbedarf über die unmittelbare Ereignisreaktion hinaus.",
+              "reference_space": "Lokale institutionelle Funktionsfähigkeit in Pawlohrad gegenüber dem Zustand vor dem konkreten Angriff.",
+              "time_horizon": "Stunden bis Monate; länger nur bei tatsächlich größeren Infrastruktur- oder Wiederherstellungsfolgen.",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Es wird keine konkrete Zerstörung kritischer Infrastruktur und kein dauerhafter Ausfall staatlicher Funktionen angenommen. Modelliert wird nur eine mögliche zusätzliche Beanspruchung lokaler Systeme durch den berichteten Schaden.",
+              "source_support": "DLF und stern tragen Personen- beziehungsweise Sachschäden. ICRC belegt allgemein, dass explosive Gewalt in bewohnten Gebieten indirekte und nachhallende Folgen für miteinander gekoppelte zivile Dienste haben kann. Für Pawlohrad sind konkrete institutionelle Ausfälle nicht belegt.",
+              "limitations": "Keine Angaben zu Ausfällen von Strom, Wasser, Gesundheitsversorgung, Verkehr, Verwaltung oder anderen kritischen Diensten. Dauer und zusätzliche institutionelle Belastung sind unbekannt.",
+              "first_order": "Rettung, medizinische Versorgung und Schadensbewältigung können durch die gemeldeten Opfer und Sachschäden zusätzlich beansprucht werden.",
+              "second_order": "Bei größeren Schäden können lokale Dienste und Wiederherstellungsprozesse zeitweise unter zusätzlichen Kapazitätsdruck geraten.",
+              "third_order": "Erst bei wiederholten oder länger anhaltenden Ausfällen könnte die lokale institutionelle Resilienz strukturell geschwächt werden; dies ist für dieses Einzelereignis nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Bei rascher Bewältigung bleibt die institutionelle Folge klein; bei größeren Folgeausfällen kann sie lokal deutlich werden. Dafür fehlen derzeit Zustandsdaten."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "ICRC bestätigt den allgemeinen Mechanismus indirekter urbaner Dienstefolgen. Für Pawlohrad liegen keine belastbaren Angaben über konkrete Ausfälle oder dauerhafte institutionelle Beeinträchtigungen vor.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Eine mögliche Funktionsbelastung wäre zunächst lokal auf das betroffene Stadtgebiet und dortige Dienste begrenzt.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Zusätzliche Belastung lokaler Dienste kann relevant sein, ohne dass ein tatsächlicher Funktionsausfall belegt ist.",
+                  "source_ids": [
+                    "research-icrc-urban-services"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Ereignisreaktion und Wiederherstellung können Stunden bis Monate beanspruchen; eine langfristige Dauer ist nicht belegt.",
+                  "source_ids": [
+                    "research-icrc-urban-services"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Institutionelle Belastungen sind grundsätzlich durch Wiederherstellung und Kapazitätsanpassung reversibel; dauerhafte Schäden sind nicht belegt.",
+                  "source_ids": [
+                    "research-icrc-urban-services"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Die lokale Bevölkerung ist auf funktionierende Rettungs- und Versorgungsdienste angewiesen; eine besonders extreme institutionelle Verwundbarkeit ist nicht nachgewiesen.",
+                  "source_ids": [
+                    "research-icrc-urban-services"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Gekoppelte urbane Dienste können bei tatsächlichen Ausfällen Folgen zweiter Ordnung erzeugen; ICRC trägt diesen allgemeinen Systemmechanismus, nicht dessen Eintritt in Pawlohrad.",
+                  "source_ids": [
+                    "research-icrc-urban-services"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere konkrete Verletzung institutioneller Schutz- oder Versorgungsfunktionen ist nicht belegt; modelliert wird nur eine bedingte lokale Beanspruchung.",
+                "reference_frame": "Zivile Sicherheit, institutionelle Funktionsfähigkeit und lokale Versorgungsresilienz",
+                "source_ids": [
+                  "research-icrc-urban-services",
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der Demokratie-/Institutionenpfad ist begrenzt negativ und ex ante. Aus dem schweren Personenschaden folgt plausibel zusätzliche lokale Systembeanspruchung, aber kein belegter Ausfall kritischer Infrastruktur und keine nachgewiesene strukturelle Veränderung demokratischer Institutionen.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Rettung, Versorgung und Wiederherstellung sind Reaktionen auf den Schaden und kein positiver Hauptpfad gegenüber der Baseline ohne Angriff."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Der Angriff kann lokale Rettungs-, Versorgungs- und Verwaltungsfunktionen zusätzlich beanspruchen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Der Angriff kann lokale Rettungs-, Versorgungs- und Verwaltungsfunktionen zusätzlich beanspruchen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-11T01:41:58.593Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T21:48:39.000Z",
+      "last_updated": "2026-09-11T01:41:58.593Z",
+      "version": 1,
+      "news_status": "updated",
+      "event_id": "event-414f6cbe7e7270d04325",
+      "case_file": null,
+      "source_published_at": "2026-09-10T21:48:39.000Z",
+      "published_at": "2026-09-11T01:41:58.593Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "stern-schlagzeilen"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Aktualisierte Opferbilanz und Angaben zur Verletzungsschwere prüfen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue behördliche oder unabhängig bestätigte Angaben zu Toten, Verletzten und Verletzungsschwere.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-dc3c5e5484003e38",
+          "announced_at": "2026-09-11T00:22:22.000Z",
+          "follow_up_date": "2026-09-18T01:41:58.593Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Weitere dokumentierte Sach-, Infrastruktur- oder Umweltfolgen des Angriffs prüfen.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Neue belastbare Angaben zu Gebäuden, Versorgung, Trümmern, Bränden oder Schadstofffreisetzung.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b513e050c40bf4af",
+          "announced_at": "2026-09-10T21:48:39.000Z",
+          "follow_up_date": "2026-09-18T01:41:58.593Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/ukraine-meldet-mindestens-fuenf-tote-bei-russischem-angriff-auf-einkaufszentrum-38235658.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T21:48:39.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/ukraine-meldet-sieben-tote-bei-russischem-angriff-auf-einkaufszentrum-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-11T00:22:22.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-0cf7af435088225d",
       "title_image": {
