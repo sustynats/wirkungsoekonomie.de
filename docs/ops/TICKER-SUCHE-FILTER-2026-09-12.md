@@ -28,6 +28,8 @@ Keine externe Suchplattform, kein KI-Aufruf und keine neue Infrastruktur. Der vo
 - Vorhandene Tests für verspätete Antworten, wechselnde Publikationsstände und Wiederholungsfehler bleiben erhalten; zusätzlicher Test für Zurück-Navigation mit bereits geladenen Seiten.
 - Browser: Illner + Nachgesehen + Politik; Goepel/Göpel; KI und Arbeit; 20 → 40 Wirtschaftsbeiträge; Wechsel zu Technik und Zurück; Eingabe mit Leerzeichen während der Suche.
 - Bei 390 Pixeln: 310 Pixel Suchfeld. Bei 320 Pixeln: 240 Pixel Suchfeld. Keine horizontale Seitenüberbreite.
+- Auf kleinen Bildschirmen passt sich das geöffnete Filtermenü an den Platz oberhalb der Bottom-Navigation an und scrollt bei Bedarf intern. Bei 320 × 640 Pixeln bleiben beide Aktionsschaltflächen erreichbar.
+- Gemeinsamer Stand mit Systemstimme: 1.049 Nachrichtentests bestanden, Syntaxprüfung und Nachrichtenvalidierung erfolgreich. Der Sprachlint besteht mit 25 unveränderten Bestandsmeldungen.
 - Physisches iPhone/PWA und VoiceOver wurden nicht direkt getestet; Safe-Area-Regeln, 16-Pixel-Eingabeschrift und Bedienelemente ab 44 Pixeln sind umgesetzt.
 
 Eine Suche kann nur veröffentlichte Beiträge finden. Noch nicht freigegebene Redaktionspakete und unpublizierte Nachrichten werden dadurch nicht öffentlich.
