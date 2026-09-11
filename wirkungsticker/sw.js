@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-wirkungsticker-shell-20260911-chronological2";
+const CACHE_NAME = "woek-wirkungsticker-shell-20260911-app1";
 // Keep the independent notification state while refreshing the app shell.
 const NAVIGATION_CACHE_GRACE_MS = 2500;
 const NAVIGATION_NETWORK_TIMEOUT_MS = 8000;
@@ -15,6 +15,7 @@ const APP_SHELL = [
   "/assets/css/news.css",
   "/assets/js/main.js",
   "/assets/js/news.js",
+  "/assets/js/news-app.js",
   "/assets/js/news-pwa.js",
   "/assets/js/news-install.js",
   "/assets/js/news-share.js",

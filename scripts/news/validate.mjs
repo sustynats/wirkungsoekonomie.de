@@ -66,12 +66,29 @@ for (const relative of ["news/index.html", "wirkungsticker/index.html", "wirkung
   if (!fs.existsSync(path.join(ROOT, relative))) fail(`GENERATED_FILE_MISSING:${relative}`);
 }
 const index = fs.readFileSync(path.join(ROOT, "wirkungsticker/index.html"), "utf8");
-assertChronologicalFeedHtml(index);
-if (!index.includes("https://wirkungsoekonomie.de/wirkungsticker/") || !index.includes("Methodik und Qualitätsgate")) fail("NEWS_INDEX_INVALID");
-if (!index.includes("data-news-search-input") || !index.includes("data-news-load-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !index.includes("Fakten- &amp; Folgencheck öffnen") || !index.includes("Ausgangsmeldung vom") || !index.includes("WÖk-Einordnung aktualisiert") || !index.includes("data-news-refresh-button") || !index.includes("Push-Benachrichtigungen") || !index.includes("data-news-story-id")) fail("NEWS_APP_UI_INVALID");
+const appNews = fs.readFileSync(path.join(ROOT, "wirkungsticker/news/index.html"), "utf8");
+const appMore = fs.readFileSync(path.join(ROOT, "wirkungsticker/mehr/index.html"), "utf8");
+const appManifest = JSON.parse(fs.readFileSync(path.join(ROOT,"wirkungsticker/data/app/manifest.json")));
+assertChronologicalFeedHtml(appNews);
+if (!index.includes("https://wirkungsoekonomie.de/wirkungsticker/") || !index.includes("/wirkungsticker/methodik/")) fail("NEWS_INDEX_INVALID");
+if (!appNews.includes('data-ticker-app="news"') || !appNews.includes("data-app-more") || !index.includes("wirkungsticker/manifest.webmanifest") || !appNews.includes("Fakten- &amp; Folgencheck öffnen") || !appNews.includes("WÖk-Einordnung aktualisiert") || !appMore.includes("Push-Benachrichtigungen") || !appNews.includes("data-news-story-id")) fail("NEWS_APP_UI_INVALID");
+for (const route of ['news','analysen','merkzettel','suche','mehr']) {
+  const html = fs.readFileSync(path.join(ROOT,`wirkungsticker/${route}/index.html`),'utf8');
+  if (!html.includes('/wirkungsticker/suche/') || !html.includes('ticker-app-nav')) fail(`NEWS_APP_ROUTE_INVALID:${route}`);
+}
+let allAppCards='';
+for (const mode of ['news','analysen']) {
+  let combined='';let count=0;const seen=new Set();const feed=appManifest.feeds[mode+'-alle'];
+  for(let page=0;page<feed.pages;page++){
+    const packet=JSON.parse(fs.readFileSync(path.join(ROOT,`wirkungsticker/data/app/feeds/${mode}-alle-${page}.json`)));
+    if(packet.revision!==appManifest.revision||packet.items.length>20)fail('NEWS_APP_PAGINATION_INVALID');
+    for(const item of packet.items){if(seen.has(item.id)||(item.type==='news')!==(mode==='news'))fail('NEWS_APP_CONTENT_MODE_INVALID');seen.add(item.id);combined+=item.html;count++;}
+  }
+  if(count!==feed.count)fail('NEWS_APP_COVERAGE_INVALID');assertChronologicalFeedHtml(combined);allAppCards+=combined;
+}
 const activeStories = store.stories.filter((item) => item.published && item.listed !== false).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
 const grouping = buildCaseFiles(activeStories);
-const readerOrder = [...index.matchAll(/data-news-href="\.\/([^"]+\/)"/g)].map((match) => match[1]);
+const readerOrder = Object.keys(appManifest.lookup).map(url=>url.slice('/wirkungsticker/'.length));
 const detailReaderHref = (href) => href.startsWith("analyse/") ? `../${href}` : `../${href}`;
 for (const story of activeStories) {
   const detail = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
@@ -120,7 +137,7 @@ for (const caseFile of grouping.cases) {
   const integrityErrors = caseIntegrityErrors(caseFile, activeStories);
   if (integrityErrors.length) fail(integrityErrors.join(","));
   if (caseFile.member_count < 3 || !caseFile.members.some((member) => member.current) || caseFile.members.filter((member) => member.current).length !== 1) fail(`NEWS_CASE_FILE_INVALID:${caseFile.case_id}`);
-  if (!index.includes(`story-${caseFile.representative_slug}`) || caseFile.members.filter((member) => index.includes(`story-${member.slug}`)).length !== 1) fail(`NEWS_CASE_FILE_INDEX_INVALID:${caseFile.case_id}`);
+  if (!allAppCards.includes(`story-${caseFile.representative_slug}`) || caseFile.members.filter((member) => allAppCards.includes(`story-${member.slug}`)).length !== 1) fail(`NEWS_CASE_FILE_INDEX_INVALID:${caseFile.case_id}`);
 }
 const manifest = readJson("wirkungsticker/manifest.webmanifest");
 if (manifest.id !== "/wirkungsticker/" || manifest.scope !== "/wirkungsticker/" || manifest.start_url !== "/wirkungsticker/?source=pwa" || manifest.display !== "standalone" || !Array.isArray(manifest.icons) || manifest.icons.length < 2) fail("NEWS_MANIFEST_INVALID");

@@ -103,3 +103,21 @@ erfolgreicher Output-/ACK-Roundtrip, weniger als zehn offene Jobs und normale
 Wartezeiten ergeben Betriebs-PASS. Grüne Unit-Tests oder angelegte Zeitpläne allein
 sind kein Betriebs-PASS. Historische Claims mit Eigentümerkonflikt bleiben in einer
 begründeten Prüfliste; keine Löschung oder automatische Reanalyse derselben Jobs.
+
+
+## Vorrang aktueller Nutzeraufträge (11.09.2026)
+
+Queue-Policy `lifo-2026-09-11`, Vertrag `processor-contract-2026-09-11-3.json`:
+Innerhalb derselben fachlichen Priorität wird der zuletzt eingegangene Auftrag
+zuerst verarbeitet. Ein Altersbonus darf diese ausdrücklich beauftragte LIFO-
+Reihenfolge nicht verdeckt wieder umdrehen. Breaking/urgent bleibt zuerst,
+danach direkte Redaktionsaufträge einschließlich ihrer Revisionen und
+Nachrichten-Prüfaufträge, dann Updates/Fachprüfungen, sehr hohe, hohe und normale
+neue Nachrichten. Bei kritischer Queue bleibt historischer Backfill pausiert.
+Dessen Reparaturen und zweite Prüfungen erben die historische Zuordnung.
+
+Das Originaldatum einer Nachricht und der Inhalt ihrer Quellen ändern sich dadurch
+nicht. Bereits laufende Claims bleiben geschützt. Shards, Preflight, unveränderliche
+Outputs, Quellenprüfung, unabhängiger Fachpass und finale persönliche Freigabe
+bleiben verbindlich. Die Rückkehr zu einer anderen Routinepriorisierung erfordert
+eine neue explizite Policy-Version.
