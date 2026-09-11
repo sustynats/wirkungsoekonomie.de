@@ -2,8 +2,1858 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-11T00:07:07.128Z",
+  "updated_at": "2026-09-11T01:17:31.263Z",
   "stories": [
+    {
+      "story_id": "wt-0cf7af435088225d",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-0cf7af435088225d-1c4c512df02e197c-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-0cf7af435088225d-4d0d57fb1dc65690-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-0cf7af435088225d-09275ac377aa0c15-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-0cf7af435088225d-760eb2329564dadd-source.png",
+          "alt_text": "Abstrakte Illustration mit Schulbuch, Smartphone, Familienunterstützung und Haushaltsdokument."
+        }
+      },
+      "slug": "haushaltsdebatte-im-bundestag-bundesbildungsministerin-prien-verspricht-rasche-reaktion--88225d",
+      "title": "Prien kündigt nach Pisa weitere Bildungsmaßnahmen noch 2026 an",
+      "source_summary": "Deutschlandfunk berichtet aus der Haushaltsdebatte des Bundestags, dass Bundesbildungsministerin Prien eine rasche Reaktion auf die schlechten Pisa-Ergebnisse angekündigt hat. Sie verwies auf wissenschaftliche Empfehlungen und nannte als konkrete Ansätze mehr sogenannte Elternbegleiter sowie eine stärkere Regulierung der Social-Media-Nutzung durch Kinder; entsprechende Maßnahmen sollten noch in diesem Jahr umgesetzt werden.\n\nGleichzeitig nennt der Bericht für das Bundesministerium für Bildung, Familie, Senioren, Frauen und Jugend im kommenden Jahr einen Etat von rund 15,48 Milliarden Euro, 1,2 Milliarden Euro weniger als im laufenden Jahr. Die Linke kritisierte Einsparungen bei Familien, die AfD fehlende Anreize für höhere Geburtenzahlen. Belegt sind damit politische Ankündigungen und Haushaltszahlen, nicht bereits eingetretene Bildungswirkungen.",
+      "summary": "Bundesbildungsministerin Prien kündigt nach den schlechten Pisa-Ergebnissen weitere Maßnahmen an, darunter mehr Elternbegleiter und eine stärkere Regulierung der Social-Media-Nutzung von Kindern noch in diesem Jahr. Der Etat ihres Ministeriums soll laut Deutschlandfunk im kommenden Jahr rund 15,48 Milliarden Euro betragen und damit 1,2 Milliarden Euro unter dem laufenden Jahr liegen.",
+      "detail_summary": "Deutschlandfunk berichtet aus der Haushaltsdebatte des Bundestags, dass Bundesbildungsministerin Prien eine rasche Reaktion auf die schlechten Pisa-Ergebnisse angekündigt hat. Sie verwies auf wissenschaftliche Empfehlungen und nannte als konkrete Ansätze mehr sogenannte Elternbegleiter sowie eine stärkere Regulierung der Social-Media-Nutzung durch Kinder; entsprechende Maßnahmen sollten noch in diesem Jahr umgesetzt werden.\n\nGleichzeitig nennt der Bericht für das Bundesministerium für Bildung, Familie, Senioren, Frauen und Jugend im kommenden Jahr einen Etat von rund 15,48 Milliarden Euro, 1,2 Milliarden Euro weniger als im laufenden Jahr. Die Linke kritisierte Einsparungen bei Familien, die AfD fehlende Anreize für höhere Geburtenzahlen. Belegt sind damit politische Ankündigungen und Haushaltszahlen, nicht bereits eingetretene Bildungswirkungen.",
+      "why_relevant": "Die angekündigten Maßnahmen adressieren Bildungschancen und Familienunterstützung nach den schlechten Pisa-Ergebnissen. Ihre tatsächliche Wirkung hängt von konkreter Ausgestaltung, Reichweite, Finanzierung und Umsetzung ab; die bloße Ankündigung ist noch kein Wirkungsnachweis.",
+      "topic": [
+        "Bildung"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bundesbildungs- und Familienministerin Karin Prien kündigt in der Bundestags-Haushaltsdebatte nach schlechten PISA-Ergebnissen mehr Elternbegleiter sowie noch 2026 Maßnahmen zur stärkeren Regulierung der Social-Media-Nutzung von Kindern an; Deutschlandfunk nennt zugleich einen Ministeriumsetat von rund 15,48 Milliarden Euro für das kommende Jahr.",
+        "evaluation_target": {
+          "label": "Angekündigte zusätzliche Elternbegleitung und noch nicht konkretisierte stärkere Regulierung der Social-Media-Nutzung von Kindern",
+          "type": "proposal"
+        },
+        "baseline": "Bestehende Elternbegleitungs-, Familienunterstützungs- und Jugendschutzarchitektur einschließlich bereits bestehender EU-Minderjährigenschutzregeln sowie föderaler Bildungszuständigkeiten vor den zusätzlich angekündigten Maßnahmen.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne die angekündigten zusätzlichen Maßnahmen würden bestehende Unterstützungsangebote und die bisherige Regulierungsarchitektur fortbestehen. Spezifische Verbesserungen oder Nachteile einer zusätzlichen Ausweitung oder Regulierung träten dann nicht aufgrund dieser Ankündigung ein.",
+        "reference_frame": [
+          "Bildungschancen und gesellschaftliche Teilhabe",
+          "Kindeswohl und Schutz vor digitalen Risiken",
+          "Familienunterstützung und Zugang zu Bildungsressourcen",
+          "Verhältnismäßigkeit und Kinderrechte bei digitaler Regulierung",
+          "Föderale Kompetenzordnung"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Zusätzliche qualifizierte Elternbegleitung kann Unterstützungszugänge verbessern. Eine geeignete Social-Media-Regulierung kann Schutz- und Lernbedingungen unterstützen; ein empirischer Erfolg des unbekannten Instruments ist nicht belegt.",
+            "planet": "Das Maßnahmenpaket hat keinen unmittelbaren Umweltzweck. Nur indirekte Ressourcen- und Energiepfade der Umsetzung sind denkbar; Richtung und Umfang hängen von der konkreten Ausgestaltung ab.",
+            "democracy": "Minderjährigenschutz kann digitale Schutzrechte stärken; unverhältnismäßige Regeln können zugleich Kinderrechte beeinträchtigen. Die föderale Zuständigkeitsordnung begrenzt pauschale Bundeswirkungsannahmen im Bildungsbereich."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Beobachtet sind politische Ankündigungen und Haushaltsangaben. Zusätzliche Elternbegleiter, konkrete neue Plattformregeln und daraus entstehende Bildungs-, Gesundheits- oder Teilhabefolgen sind noch nicht beobachtet.",
+          "second_order": "Bei tatsächlicher Ausweitung kann qualifizierte Elternbegleitung Zugänge zu Bildungs- und Unterstützungsangeboten verbessern. Eine geeignete Social-Media-Regulierung kann risikoreiche Nutzungsbedingungen begrenzen; ungeeignete Regeln können legitime Nutzung einschränken.",
+          "third_order": "Dauerhaft wirksame Unterstützungsstrukturen können Teilhabechancen beeinflussen. Gut gestaltete Minderjährigenschutzregeln können Plattformstandards verändern; unverhältnismäßige Regeln können problematische Zugangshürden etablieren.",
+          "enablement": [],
+          "counter_evidence": [
+            "Der Nachrichtenanlass belegt keine kausale Erklärung der schlechten PISA-Ergebnisse.",
+            "Zahl, Qualifikation, Reichweite und Finanzierung zusätzlicher Elternbegleiter sind noch nicht dokumentiert.",
+            "Ein konkreter Entwurf der angekündigten Social-Media-Regulierung liegt im geprüften Material nicht vor.",
+            "Die EU verfügt bereits über Minderjährigenschutzleitlinien; neue Maßnahmen treffen daher auf eine bestehende Schutzarchitektur.",
+            "Die Gesamtetatdifferenz erlaubt ohne Detailhaushalt keine Aussage über die konkrete Finanzierung der angekündigten Maßnahmen.",
+            "Die schulische Umsetzung kann wegen der föderalen Kompetenzordnung nicht pauschal als alleinige Bundeszuständigkeit behandelt werden."
+          ],
+          "source_independence": "DLF trägt den Ereignisanlass. Zwei Bundesquellen tragen ausschließlich Erfahrungen und Mechanismen früherer Elternbegleitungsprogramme. Der Bundestag trägt die Kompetenzordnung. Das EU-PDF trägt Schutzdesign, Vulnerabilität und Verhältnismäßigkeitsanforderungen für Minderjährige, nicht die Wirkung von Priens unbekanntem Instrument.",
+          "institutional_status": "Politische Ankündigung ohne vorliegenden vollständigen Maßnahmen- oder Rechtsentwurf. Elternbegleitung knüpft an bestehende Bundesprogramme und lokale Strukturen an. Schulische Zuständigkeiten sind föderal verteilt. Für Online-Minderjährigenschutz besteht bereits eine EU-Regulierungsarchitektur."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_positive",
+            "direction": "positive",
+            "magnitude": 3,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Zusätzliche qualifizierte Elternbegleitung kann Zugang zu Bildungs- und Familienunterstützung verbessern",
+                "mechanism": "Qualifizierte Elternbegleiter können Familien niedrigschwellig mit Bildungs-, Beratungs- und Unterstützungsangeboten verbinden und Bildungsbegleitung verbessern.",
+                "recipients": [
+                  "Familien mit Unterstützungsbedarf",
+                  "Eltern",
+                  "Kinder und Jugendliche mittelbar"
+                ],
+                "magnitude": 3,
+                "evidence": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-bmfsfj-elternchancen-2024",
+                  "research-bmfsfj-elternchancen-evaluation"
+                ],
+                "condition": "Es entstehen tatsächlich zusätzliche qualifizierte und erreichbare Kapazitäten, die mit bestehenden Bildungs- und Unterstützungsstrukturen vernetzt und ausreichend finanziert sind.",
+                "reference_space": "Familien, die durch die zusätzliche Elternbegleitung gegenüber der bestehenden Unterstützungsstruktur neu oder besser erreicht werden.",
+                "time_horizon": "Monate für Zugangseffekte; mehrere Jahre für mögliche Bildungs- und Teilhabefolgen.",
+                "path_quality": [
+                  "indirect",
+                  "systemic"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die angekündigte Ausweitung orientiert sich funktional an den früher evaluierten Elternbegleitungsmodellen. Eine automatische Verbesserung von Lernleistungen wird nicht angenommen.",
+                "source_support": "DLF belegt die angekündigte Ausweitung. Die beiden Bundesquellen tragen Erfahrungen und Mechanismen früherer Elternbegleitungsprogramme; sie beweisen keine Wirkung der neuen Maßnahme.",
+                "limitations": "Zahl, Qualifikation, Finanzierung, regionale Verteilung und Zielgruppen der neuen Ausweitung sind unbekannt.",
+                "first_order": "Zusätzliche qualifizierte Ansprechpartner können Beratung und Lotsenleistungen für weitere Familien verfügbar machen.",
+                "second_order": "Erreichte Familien können bestehende Bildungs- und Unterstützungsangebote besser nutzen, wenn Zugangshürden sinken.",
+                "third_order": "Bei dauerhafter hoher Reichweite können Unterstützungsstrukturen zwischen Familien und Bildungsinstitutionen gestärkt werden; langfristige Bildungsfolgen müssten separat evaluiert werden.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 3,
+                  "rationale": "Bei kleiner oder schlecht erreichbarer Ausweitung bleibt der Effekt begrenzt; bei breiter, qualifizierter und dauerhaft finanzierter Umsetzung ist ein deutlicher Unterstützungsbeitrag plausibel."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Frühere Bundesprogramme stützen den Unterstützungsmechanismus. Eine Effektübertragung auf Priens noch unbestimmte Ausweitung ist nur bedingt zulässig.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Eine bundesweit angelegte Ausweitung kann viele Familien erreichen; DLF belegt die bundespolitische Ankündigung, nicht die spätere tatsächliche Reichweite.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Elternbegleitung kann Unterstützungszugänge spürbar verbessern, ersetzt aber keine umfassende schulische Qualitätssteuerung.",
+                    "source_ids": [
+                      "research-bmfsfj-elternchancen-evaluation"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Unterstützungs- und Bildungsbegleitungsbeziehungen können bei fortgesetztem Angebot mittel- bis längerfristig wirken.",
+                    "source_ids": [
+                      "research-bmfsfj-elternchancen-evaluation"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Beratungs- und Unterstützungswirkungen sind grundsätzlich veränderbar und keine irreversiblen Zustandsänderungen.",
+                    "source_ids": [
+                      "research-bmfsfj-elternchancen-evaluation"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Niedrigschwellige Familienunterstützung kann besonders Haushalte mit höherem Unterstützungsbedarf erreichen.",
+                    "source_ids": [
+                      "research-bmfsfj-elternchancen-2024"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Elternbegleitung kann Schnittstellen zwischen Familie und Bildungs-/Unterstützungssystemen beeinflussen, ohne allein das Bildungssystem strukturell zu verändern.",
+                    "source_ids": [
+                      "research-bmfsfj-elternchancen-evaluation"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Bildung und Teilhabe sind relevante Schutzgüter, aber dieser positive Unterstützungsmechanismus modelliert keine konkrete schwere Grenzverletzung.",
+                  "reference_frame": "Bildungschancen und gesellschaftliche Teilhabe",
+                  "source_ids": [
+                    "research-bmfsfj-elternchancen-evaluation"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              },
+              {
+                "direction": "positive",
+                "label": "Geeignete Social-Media-Regulierung kann Schutz- und Lernbedingungen von Kindern verbessern",
+                "mechanism": "Wenn zusätzliche Regeln gezielt Plattformpraktiken begrenzen, die Minderjährige zu problematischer Nutzung anreizen, können sich digitale Schutzbedingungen verbessern. Ein daraus folgender Lern- oder Gesundheitserfolg ist nicht belegt und bleibt hypothetisch.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "Familien",
+                  "Schülerinnen und Schüler"
+                ],
+                "magnitude": 3,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-eu-dsa-minors"
+                ],
+                "condition": "Das konkrete Instrument adressiert tatsächlich belegte Designrisiken, ist altersangemessen, verhältnismäßig, praktisch wirksam und schafft gegenüber der bestehenden Schutzarchitektur einen zusätzlichen Nutzen.",
+                "reference_space": "Minderjährige Nutzer, deren digitale Nutzungsbedingungen sich gegenüber der bestehenden EU-/nationalen Schutzarchitektur durch zusätzliche Regeln verändern.",
+                "time_horizon": "Ab Umsetzung über die Geltungsdauer der Maßnahme; mögliche Lernfolgen erst nach längerer Beobachtung.",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die angekündigte Regulierung betrifft tatsächlich suchtfördernde oder vergleichbare risikorelevante Plattformpraktiken. Es wird weder eine Ursache der PISA-Ergebnisse noch ein empirischer Bildungs- oder Gesundheitseffekt unterstellt.",
+                "source_support": "DLF belegt die Ankündigung einer stärkeren Regulierung. Das EU-PDF belegt besondere Vulnerabilität Minderjähriger gegenüber suchtfördernden Praktiken und bestehende Schutzleitlinien; es evaluiert Priens Instrument nicht.",
+                "limitations": "Regelungstyp, Altersgrenzen, technische Umsetzung, Durchsetzung und zusätzlicher Effekt gegenüber bestehendem EU-Recht sind unbekannt.",
+                "first_order": "Zusätzliche Regeln können bestimmte Plattformpraktiken oder Zugangsbedingungen für Minderjährige verändern.",
+                "second_order": "Wenn die Regeln relevante Designrisiken tatsächlich reduzieren, können problematische Nutzungsbedingungen zurückgehen; dies ist noch nicht beobachtet.",
+                "third_order": "Bei breiter und wirksamer Umsetzung können Schutzstandards für Minderjährige strukturell beeinflusst werden; Lern- und Gesundheitsfolgen benötigen eigene Evaluation.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Eine wirkungsarme oder redundante Regel hätte geringe Zusatzwirkung; ein zielgenaues, breit wirksames Instrument könnte Schutzbedingungen vieler Minderjähriger deutlich verändern."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die verifizierte EU-Quelle trägt Designrisiko und Schutzarchitektur, aber keinen empirischen Erfolg des angekündigten Instruments. Der positive Pfad bleibt daher niedrig evidenzierte Modellhypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Eine bundesweit oder plattformweit geltende Regel kann viele Minderjährige betreffen; DLF belegt nur die politische Ankündigung des Regelungsgegenstands.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Eine erfolgreiche Begrenzung risikorelevanter Plattformpraktiken kann Schutzbedingungen relevant verändern; das EU-PDF trägt das Designrisiko, nicht die Effektstärke von Priens Maßnahme.",
+                    "source_ids": [
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Regulatorisch veränderte Plattformbedingungen können über die Geltungsdauer einer Maßnahme mittel- bis längerfristig bestehen.",
+                    "source_ids": [
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Regulierungs- und Plattformregeln sind korrigierbar, während veränderte Nutzungsbedingungen zeitweise nachwirken können.",
+                    "source_ids": [
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung mit direktem Quellenanker: Das EU-PDF beschreibt Minderjährige ausdrücklich als besonders vulnerabel gegenüber Praktiken, die suchtförderndes Verhalten stimulieren können.",
+                    "source_ids": [
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Plattformbezogene Regeln können Standards über einzelne Nutzer hinaus verändern, bleiben aber nur ein Faktor der Bildungs- und Entwicklungsbedingungen.",
+                    "source_ids": [
+                      "research-eu-dsa-minors"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Pfad betrifft Kinderschutz, aber eine konkrete schwere Schutzgrenzverletzung oder deren sichere Vermeidung durch Priens noch unbekanntes Instrument ist nicht belegt.",
+                  "reference_frame": "Kindeswohl und sichere digitale Umgebung",
+                  "source_ids": [
+                    "research-eu-dsa-minors"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Ungeeignete oder unverhältnismäßige Regulierung kann legitime digitale Nutzungsmöglichkeiten einschränken",
+                "mechanism": "Zu breite oder schlecht austarierte Schutzmaßnahmen können Kinderrechte und legitime Nutzungsmöglichkeiten unangemessen beschränken, ohne das adressierte Risiko hinreichend zu reduzieren.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "Familien"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "medium",
+                "source_ids": [
+                  "research-eu-dsa-rights",
+                  "dlf-nachrichten"
+                ],
+                "condition": "Das konkrete Instrument ist gegenüber dem Schutzproblem nicht angemessen oder unverhältnismäßig und beschränkt Nutzung stärker als erforderlich.",
+                "reference_space": "Minderjährige Nutzer unter zusätzlichen Regeln gegenüber der bestehenden Schutzarchitektur.",
+                "time_horizon": "Ab Einführung bis zu rechtlicher, politischer oder technischer Korrektur.",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Priens späteres Instrument könnte in Kinderrechte eingreifen; ein solcher konkreter Entwurf ist noch nicht belegt.",
+                "source_support": "Die EU-Leitlinien verlangen ausdrücklich geeignete Maßnahmen ohne unverhältnismäßige oder unangemessene Einschränkung von Kinderrechten. DLF belegt lediglich die angekündigte stärkere Regulierung.",
+                "limitations": "Ohne Entwurf sind Art und Intensität möglicher Einschränkungen unbekannt.",
+                "first_order": "Zusätzliche Vorgaben könnten einzelne legitime Nutzungsmöglichkeiten beschränken.",
+                "second_order": "Bei zu breitem Design können Informations-, Kommunikations- oder Teilhabemöglichkeiten unnötig erschwert werden.",
+                "third_order": "Eine dauerhafte strukturelle Einschränkung ist ohne konkreten Entwurf nicht belastbar ableitbar.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Zielgenaue Regeln minimieren den Nebenpfad; eine breite unverhältnismäßige Regel könnte viele Minderjährige stärker betreffen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Das EU-PDF bestätigt die Verhältnismäßigkeitsanforderung. Ob Priens Maßnahme dieses Risiko tatsächlich erzeugt, bleibt mangels Entwurf offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Eine breit geltende Regel könnte viele Minderjährige betreffen; DLF trägt den angekündigten bundespolitischen Regelungsgegenstand.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Unangemessene Einschränkungen von Kinderrechten können relevant sein; das EU-PDF trägt die Schutzanforderung, nicht die konkrete Eingriffsstärke.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Einschränkungen würden grundsätzlich für die Dauer der jeweiligen Regel gelten und könnten korrigiert werden.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Regulatorische Zugangsbeschränkungen sind grundsätzlich rechtlich oder technisch revidierbar.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Minderjährige sind von Schutzregeln besonders abhängig und zugleich eigene Rechtsträger; die EU-Quelle trägt ausdrücklich den Kinderrechtsbezug.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Ein unangemessenes Instrument kann digitale Zugangsbedingungen beeinflussen, ohne mangels konkreten Entwurfs eine tiefe Systemwirkung zu begründen.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere konkrete Kinderrechtsverletzung ist ohne Regelungsentwurf nicht hinreichend bestimmt modellierbar.",
+                  "reference_frame": "Kinderrechte und Verhältnismäßigkeit",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "rationale": "Die Human-Dimension wird durch den plausiblen Unterstützungsmechanismus zusätzlicher Elternbegleitung positiv dominiert. Der mögliche Schutzbeitrag einer Social-Media-Regulierung bleibt mangels konkreten Instruments niedrig evidenziert; ein kleineres negatives Nebenrisiko unverhältnismäßiger Regulierung wird separat ausgewiesen.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der stärkste positive Pfad betrifft Elternbegleitung mit Magnitude 3. Das negative Regulierungsrisiko betrifft einen anderen Teilmechanismus und erreicht Magnitude 2; es erzeugt keine balanced-Gesamtbewertung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Zusätzliche qualifizierte Elternbegleitung kann Zugang zu Bildungs- und Familienunterstützung verbessern",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzliche qualifizierte Elternbegleitung kann Zugang zu Bildungs- und Familienunterstützung verbessern",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Indirekte Ressourcen- und Energieeffekte der Umsetzung sind möglich, ihre Netto-Richtung ist derzeit nicht bestimmbar",
+                "mechanism": "Zusätzliche Elternbegleitung kann Personal-, Raum-, Mobilitäts- und digitale Infrastrukturbedarfe verändern; eine stärkere Regulierung kann zugleich digitale Nutzungsbedingungen verändern. Ohne konkrete Ausgestaltung lässt sich daraus weder ein belastbarer positiver noch negativer Umweltpfad ableiten.",
+                "recipients": [
+                  "Klima und Energieverbrauch mittelbar",
+                  "Ressourcenverbrauch zusätzlicher Unterstützungs- und Regulierungsstrukturen"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-bmfsfj-elternchancen-2024",
+                  "research-bmfsfj-elternchancen-evaluation",
+                  "research-eu-dsa-minors",
+                  "research-eu-dsa-rights"
+                ],
+                "condition": "Die angekündigten Maßnahmen führen tatsächlich zu zusätzlichen Personal-, Mobilitäts-, Raum-, IT- oder geänderten digitalen Nutzungsbedarfen in einem messbaren Umfang.",
+                "reference_space": "Zusätzlicher Ressourcen- und Energiebedarf der angekündigten Maßnahmen gegenüber der bestehenden Unterstützungs- und Minderjährigenschutzarchitektur.",
+                "time_horizon": "Ab Umsetzung kurzfristig bis über die Laufzeit der jeweiligen Maßnahme; strukturelle Umweltfolgen sind nicht belegt.",
+                "path_quality": [
+                  "weak",
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Maßnahmen benötigen in irgendeinem Umfang organisatorische oder digitale Ressourcen. Art und Umfang dieser zusätzlichen Bedarfe sind unbekannt. Gegenläufige Effekte durch veränderte digitale Nutzung sind ebenfalls möglich. Es wird keine Netto-Umweltrichtung unterstellt.",
+                "source_support": "DLF belegt die angekündigten Maßnahmen. Die Bundesquellen zeigen, dass Elternbegleitung über reale Unterstützungsstrukturen umgesetzt wird; die EU-Quelle belegt regulatorische Eingriffe in Plattformbedingungen. Keine dieser Quellen quantifiziert den Umweltfußabdruck der neuen Maßnahmen.",
+                "limitations": "Keine belastbaren Angaben zu zusätzlichem Personal, Räumen, Reisen, Beschaffung, IT-Betrieb oder veränderter Gerätenutzung. Deshalb bleibt die Richtung offen und die Tragweite konservativ niedrig.",
+                "first_order": "Umsetzung kann zusätzliche oder vermiedene Energie- und Ressourcenverbräuche verursachen.",
+                "second_order": "Der Nettoeffekt hängt von Organisationsform, Digitalisierung, Mobilität und tatsächlicher Veränderung digitaler Nutzung ab.",
+                "third_order": "Eine relevante strukturelle Veränderung von Klima-, Ressourcen- oder Ökosystemzuständen ist auf Basis der vorliegenden Informationen nicht plausibel ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Bei Nutzung weitgehend bestehender Strukturen kann die zusätzliche Umweltwirkung praktisch vernachlässigbar bleiben. Selbst bei neuen Umsetzungsbedarfen ist ohne investitions- oder infrastrukturlastiges Design nur ein kleiner indirekter Effekt plausibel."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die fünf verifizierten Forschungsquellen liefern keine direkte Umweltwirkungsanalyse. Sie bestätigen nur die Existenz realer Unterstützungs- bzw. Regulierungsstrukturen als mögliche Ausgangspunkte kleiner indirekter Ressourcenfolgen. Eine gerichtete materielle Umweltwirkung bleibt unbelegt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Etwaige Umweltfolgen würden die zusätzlichen Umsetzungsstrukturen und betroffenen digitalen Nutzungsprozesse erreichen, nicht das gesamte Umwelt- oder Energiesystem. DLF und die Programm-/EU-Quellen belegen den organisatorischen bzw. regulatorischen Ausgangspunkt, nicht die tatsächliche Reichweite der Umweltwirkung.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-bmfsfj-elternchancen-2024",
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Ohne Hinweise auf große Infrastruktur-, Verkehrs- oder Beschaffungsvolumina ist pro Umsetzungseinheit nur eine geringe zusätzliche oder vermiedene Ressourcenwirkung plausibel.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-bmfsfj-elternchancen-evaluation"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Falls zusätzliche Strukturen geschaffen werden, können deren Ressourcenwirkungen über die jeweilige Maßnahmenlaufzeit anhalten. Eine mehrjährige strukturelle Dauer ist möglich, aber nicht belegt; deshalb keine Stufe 3.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-bmfsfj-elternchancen-2024",
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ordinale Modellschätzung: Für den modellierten kleinen Ressourcenpfad ist keine irreversible Zustandsänderung belegt oder aus den Maßnahmen zwingend ableitbar.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-bmfsfj-elternchancen-evaluation"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Es ist keine besondere Konzentration der möglichen kleinen Umweltlast auf ein spezifisch vulnerables Ökosystem oder eine besonders exponierte Region belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Der Pfad bleibt ein indirekter Ressourcen-Nebenpfad ohne belegte relevante Rückkopplung auf Energie-, Klima- oder Ökosystemsysteme.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-bmfsfj-elternchancen-2024",
+                      "research-eu-dsa-minors"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere ökologische Schutzgrenze ist durch die angekündigten Maßnahmen belegt oder unter den vorliegenden Bedingungen plausibel betroffen.",
+                  "reference_frame": "Klima-, Energie- und Ressourcenschutz",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-bmfsfj-elternchancen-2024",
+                    "research-eu-dsa-minors"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die angekündigten Maßnahmen haben keinen unmittelbaren ökologischen Zielmechanismus. Plausibel sind nur kleine indirekte Ressourcen- und Energieeffekte aus ihrer Umsetzung oder veränderten digitalen Nutzung. Mangels konkreter Ausgestaltung ist deren Netto-Richtung offen; eine materielle Umweltwirkung ist derzeit nicht belegt.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keine belastbaren positiven oder negativen materiellen Hauptpfade. Kleine gegenläufige indirekte Effekte sind möglich, reichen aber nicht für eine gerichtete Gesamtbewertung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Indirekte Ressourcen- und Energieeffekte der Umsetzung sind möglich, ihre Netto-Richtung ist derzeit nicht bestimmbar",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Indirekte Ressourcen- und Energieeffekte der Umsetzung sind möglich, ihre Netto-Richtung ist derzeit nicht bestimmbar",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "balanced",
+            "direction": "mixed",
+            "magnitude": 2,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Risikobasierter Minderjährigenschutz kann digitale Schutzrechte und selbstbestimmtere Teilhabe stärken",
+                "mechanism": "Zusätzliche Regeln können Plattformpraktiken begrenzen, die Minderjährige zu problematischer Nutzung anreizen. Wenn solche Maßnahmen zielgenau, datensparsam und verhältnismäßig ausgestaltet sind, können Sicherheit und Schutz in digitalen Räumen gestärkt werden.",
+                "recipients": [
+                  "Kinder und Jugendliche als digitale Rechtsträger",
+                  "Familien",
+                  "digitale Öffentlichkeit mittelbar"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-eu-dsa-minors",
+                  "research-eu-dsa-rights"
+                ],
+                "condition": "Die zusätzliche Regulierung schließt tatsächlich Schutzlücken, adressiert relevante Plattformpraktiken, wahrt Verhältnismäßigkeit und schafft gegenüber der bestehenden EU-Schutzarchitektur einen zusätzlichen Nutzen.",
+                "reference_space": "Digitale Schutz- und Teilhabebedingungen minderjähriger Nutzer unter zusätzlichen Regeln gegenüber der bereits bestehenden EU-/nationalen Minderjährigenschutzarchitektur.",
+                "time_horizon": "Ab Umsetzung über die Geltungsdauer der Maßnahme; mögliche institutionelle Standardwirkung über mehrere Jahre.",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Priens angekündigte Regulierung adressiert tatsächlich Plattformpraktiken, wie sie in den EU-Leitlinien als Schutzproblem beschrieben werden. Ein konkreter Entwurf und ein empirischer Wirksamkeitsnachweis liegen nicht vor.",
+                "source_support": "DLF belegt die angekündigte stärkere Regulierung. Das verifizierte EU-PDF belegt die besondere Vulnerabilität Minderjähriger gegenüber suchtfördernden Praktiken sowie Schutz- und Verhältnismäßigkeitsanforderungen; es belegt nicht den Erfolg von Priens noch unbekanntem Instrument.",
+                "limitations": "Regelungsart, Altersgrenzen, technische Umsetzung, Durchsetzung und Zusatznutzen gegenüber bestehender EU-Regulierung sind unbekannt.",
+                "first_order": "Zusätzliche Schutzpflichten oder technische Vorgaben können Plattformbedingungen für Minderjährige verändern.",
+                "second_order": "Wenn relevante Designrisiken tatsächlich reduziert werden, können digitale Schutzbedingungen verbessert und problematische Plattformanreize begrenzt werden.",
+                "third_order": "Bei breiter und rechtsstaatlich tragfähiger Umsetzung können Standards kindgerechter digitaler Dienste und institutionelle Schutzfähigkeit gestärkt werden; dies ist noch nicht beobachtet.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Bei bloßer Doppelregulierung wäre der Zusatznutzen gering; eine zielgenaue und breit wirksame Schließung relevanter Schutzlücken könnte die digitalen Schutzbedingungen vieler Minderjähriger deutlich verändern."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die verifizierte EU-Quelle bestätigt Schutzbedarf, besondere Vulnerabilität Minderjähriger und die Notwendigkeit verhältnismäßiger Maßnahmen. Der konkrete zusätzliche Schutzbeitrag von Priens angekündigtem Instrument bleibt mangels Entwurf offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Eine bundesweit oder plattformweit relevante Regel kann viele minderjährige Nutzer betreffen; DLF belegt den angekündigten bundespolitischen Regelungsgegenstand, nicht die spätere tatsächliche Reichweite.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Eine erfolgreiche Begrenzung risikorelevanter Plattformpraktiken kann Schutzbedingungen relevant verbessern; das EU-PDF trägt den Schutzmechanismus, nicht die Effektstärke von Priens Maßnahme.",
+                    "source_ids": [
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Schutzbedingungen können während der Geltung einer Regel fortbestehen, bleiben aber rechtlich und technisch korrigierbar.",
+                    "source_ids": [
+                      "research-eu-dsa-minors",
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Regulatorische und technische Schutzvorgaben sind grundsätzlich revidierbar; die EU-Quelle trägt den regulatorischen Ausgangspunkt.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung mit direktem Quellenanker: Das EU-PDF beschreibt Minderjährige ausdrücklich als besonders vulnerabel gegenüber Praktiken, die suchtförderndes Verhalten stimulieren können.",
+                    "source_ids": [
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Eine zusätzliche Regulierung kann Plattformstandards und institutionelle Schutzpraxis beeinflussen, ohne mangels konkreten Entwurfs eine tiefgreifende demokratische Systemänderung zu begründen.",
+                    "source_ids": [
+                      "research-eu-dsa-minors",
+                      "research-eu-dsa-rights"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Kinderrechte und digitale Selbstbestimmung sind relevante Schutzgüter, aber eine konkrete schwere Grenzverletzung oder deren sichere Vermeidung durch Priens unbekanntes Instrument ist nicht belegt.",
+                  "reference_frame": "Digitale Selbstbestimmung, Sicherheit und Schutz Minderjähriger",
+                  "source_ids": [
+                    "research-eu-dsa-minors",
+                    "research-eu-dsa-rights"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "direction": "negative",
+                "label": "Unverhältnismäßige oder zu breite Regulierung kann Kinderrechte und legitime digitale Teilhabe einschränken",
+                "mechanism": "Wenn zusätzliche Schutzmaßnahmen über das zur Risikobegrenzung Erforderliche hinausgehen, können rechtmäßige Informations-, Kommunikations- oder Teilhabemöglichkeiten unangemessen beschränkt werden. Die EU-Leitlinien verlangen deshalb ausdrücklich geeignete und nicht unverhältnismäßige Maßnahmen.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "Familien",
+                  "digitale Dienste und Öffentlichkeit mittelbar"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-eu-dsa-rights",
+                  "research-eu-dsa-minors"
+                ],
+                "condition": "Das konkrete Instrument beschränkt Nutzung oder Zugang breiter als für das Schutzproblem erforderlich oder ist technisch so ausgestaltet, dass Kinderrechte unnötig beeinträchtigt werden.",
+                "reference_space": "Kinderrechte und digitale Teilhabemöglichkeiten unter zusätzlichen nationalen Regeln gegenüber der bestehenden EU-/nationalen Schutzarchitektur.",
+                "time_horizon": "Ab Einführung bis zu rechtlicher, politischer oder technischer Korrektur; bei institutioneller Verstetigung über mehrere Jahre.",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Priens späteres Instrument könnte Zugangsbeschränkungen oder andere eingriffsintensive Schutzmaßnahmen enthalten. Ein solcher konkreter Entwurf ist bislang nicht belegt.",
+                "source_support": "DLF belegt lediglich die angekündigte stärkere Regulierung. Das verifizierte EU-PDF fordert ausdrücklich geeignete Maßnahmen, die Kinderrechte nicht unverhältnismäßig oder unangemessen beschränken. Dies trägt das Designrisiko, nicht die Behauptung eines bereits geplanten Rechtseingriffs.",
+                "limitations": "Ohne konkreten Entwurf sind betroffene Rechte, Eingriffstiefe, technische Umsetzung und tatsächliche Reichweite unbekannt.",
+                "first_order": "Zusätzliche Regeln könnten bestimmte legitime Zugänge oder Nutzungsmöglichkeiten von Minderjährigen einschränken.",
+                "second_order": "Bei zu breiter Ausgestaltung können Informations-, Kommunikations- oder Teilhabemöglichkeiten unnötig erschwert werden.",
+                "third_order": "Ein dauerhaft schlecht austariertes Regulierungsmodell könnte unangemessene Standards für digitale Zugangskontrolle etablieren; dafür gibt es bislang keinen konkreten Beleg.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Zielgenaue und verhältnismäßige Regeln begrenzen den Gegenpfad; eine breite oder unangemessene Regulierung könnte viele Minderjährige deutlicher betreffen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die verifizierte EU-Quelle bestätigt ausdrücklich die Verhältnismäßigkeits- und Kinderrechtsanforderung. Ob Priens konkrete Maßnahme dieses Risiko tatsächlich erzeugt, bleibt mangels Entwurf offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Eine bundesweit oder plattformweit geltende Regel könnte viele Minderjährige betreffen; DLF trägt den angekündigten Regelungsgegenstand, nicht die spätere tatsächliche Reichweite.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Unangemessene Einschränkungen von Kinderrechten können relevant sein; das EU-PDF trägt die Verhältnismäßigkeitsanforderung, nicht die konkrete Eingriffsstärke.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Einschränkungen würden grundsätzlich für die Geltungsdauer der Regel bestehen und könnten rechtlich oder technisch korrigiert werden.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Regulatorische Beschränkungen und technische Vorgaben sind grundsätzlich revidierbar.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Minderjährige sind zugleich besonders schutzbedürftig und eigene Rechtsträger; die EU-Quelle trägt ausdrücklich diesen Kinderrechts- und Schutzkontext.",
+                    "source_ids": [
+                      "research-eu-dsa-minors",
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Ein unangemessenes Instrument kann digitale Zugangs- und Teilhabebedingungen über einzelne Nutzer hinaus beeinflussen, ohne mangels konkreten Designs eine tiefe demokratische Systemwirkung zu belegen.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine fundamentale oder schwere konkrete Kinderrechtsverletzung wäre schutzgrenzenrelevant, ist für das noch unbekannte Instrument aber weder belegt noch hinreichend konkret modellierbar.",
+                  "reference_frame": "Kinderrechte, Verhältnismäßigkeit und digitale Teilhabe",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die Demokratie- und Rechtsdimension bleibt materiell ambivalent. Eine gut gestaltete Regulierung kann Schutz und digitale Selbstbestimmung Minderjähriger stärken; eine unverhältnismäßige Ausgestaltung kann dieselben Kinder in ihren Rechten und legitimen Teilhabemöglichkeiten beeinträchtigen. Da kein konkreter Entwurf vorliegt, sind beide Pfade ex ante und niedrig evidenziert.",
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Beide Hauptpfade betreffen denselben Regulierungsgegenstand, dieselbe Baseline und dieselbe Nutzergruppe. Beide erreichen Magnitude 2; ohne konkretes Design besteht keine belastbare Dominanz."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Risikobasierter Minderjährigenschutz kann digitale Schutzrechte und selbstbestimmtere Teilhabe stärken",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Risikobasierter Minderjährigenschutz kann digitale Schutzrechte und selbstbestimmtere Teilhabe stärken",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Trägt Priens Ankündigungen und die berichtete Haushaltszahl."
+          },
+          {
+            "source_id": "research-bmfsfj-elternchancen-2024",
+            "functions": [
+              "mechanism"
+            ],
+            "supported_claim": "Trägt Befragungsgrundlagen und Erfahrungen des bestehenden ElternChanceN-Programms."
+          },
+          {
+            "source_id": "research-bmfsfj-elternchancen-evaluation",
+            "functions": [
+              "mechanism"
+            ],
+            "supported_claim": "Trägt den allgemeinen Unterstützungsmechanismus früherer qualifizierter Elternbegleitung."
+          },
+          {
+            "source_id": "research-bundestag-competence",
+            "functions": [
+              "reference"
+            ],
+            "supported_claim": "Trägt die allgemeine föderale Aufgaben- und Kompetenzordnung."
+          },
+          {
+            "source_id": "research-eu-dsa-minors",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Trägt besondere Vulnerabilität Minderjähriger gegenüber suchtfördernder Plattformgestaltung und bestehende Schutzleitlinien."
+          },
+          {
+            "source_id": "research-eu-dsa-rights",
+            "functions": [
+              "counter_evidence",
+              "reference"
+            ],
+            "supported_claim": "Trägt die Anforderung verhältnismäßiger Schutzmaßnahmen ohne unangemessene Einschränkung von Kinderrechten."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://www.bmbfsfj.bund.de/bmbfsfj/service/publikationen/eltern-im-blickpunkt-250416",
+          "title": "Eltern im Blickpunkt",
+          "publisher": "Bundesministerium für Familie, Senioren, Frauen und Jugend",
+          "source_id": "research-bmfsfj-elternchancen-2024",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/alle-meldungen/evaluationsbericht-zum-bundesprogramm-elternchance-ist-kinderchance-erschienen-75864",
+          "title": "Evaluationsbericht zum Bundesprogramm Elternchance ist Kinderchance erschienen",
+          "publisher": "Bundesministerium für Familie, Senioren, Frauen und Jugend",
+          "source_id": "research-bmfsfj-elternchancen-evaluation",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://www.bundestag.de/parlament/aufgaben/gesetzgebung_neu/gesetzgebung/bundesstaatsprinzip-255460",
+          "title": "Gesetzgebungszuständigkeiten von Bund und Ländern",
+          "publisher": "Deutscher Bundestag",
+          "source_id": "research-bundestag-competence",
+          "source_function": "reference"
+        },
+        {
+          "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_25_1820/IP_25_1820_EN.pdf",
+          "title": "Commission presents guidelines and age verification app prototype for a safer online space for children",
+          "publisher": "European Commission",
+          "source_id": "research-eu-dsa-minors",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_25_1820/IP_25_1820_EN.pdf",
+          "title": "Commission presents guidelines and age verification app prototype for a safer online space for children",
+          "publisher": "European Commission",
+          "source_id": "research-eu-dsa-rights",
+          "source_function": "counter_evidence"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_positive",
+          "direction": "positive",
+          "magnitude": 3,
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Zusätzliche qualifizierte Elternbegleitung kann Zugang zu Bildungs- und Familienunterstützung verbessern",
+              "mechanism": "Qualifizierte Elternbegleiter können Familien niedrigschwellig mit Bildungs-, Beratungs- und Unterstützungsangeboten verbinden und Bildungsbegleitung verbessern.",
+              "recipients": [
+                "Familien mit Unterstützungsbedarf",
+                "Eltern",
+                "Kinder und Jugendliche mittelbar"
+              ],
+              "magnitude": 3,
+              "evidence": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-bmfsfj-elternchancen-2024",
+                "research-bmfsfj-elternchancen-evaluation"
+              ],
+              "condition": "Es entstehen tatsächlich zusätzliche qualifizierte und erreichbare Kapazitäten, die mit bestehenden Bildungs- und Unterstützungsstrukturen vernetzt und ausreichend finanziert sind.",
+              "reference_space": "Familien, die durch die zusätzliche Elternbegleitung gegenüber der bestehenden Unterstützungsstruktur neu oder besser erreicht werden.",
+              "time_horizon": "Monate für Zugangseffekte; mehrere Jahre für mögliche Bildungs- und Teilhabefolgen.",
+              "path_quality": [
+                "indirect",
+                "systemic"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die angekündigte Ausweitung orientiert sich funktional an den früher evaluierten Elternbegleitungsmodellen. Eine automatische Verbesserung von Lernleistungen wird nicht angenommen.",
+              "source_support": "DLF belegt die angekündigte Ausweitung. Die beiden Bundesquellen tragen Erfahrungen und Mechanismen früherer Elternbegleitungsprogramme; sie beweisen keine Wirkung der neuen Maßnahme.",
+              "limitations": "Zahl, Qualifikation, Finanzierung, regionale Verteilung und Zielgruppen der neuen Ausweitung sind unbekannt.",
+              "first_order": "Zusätzliche qualifizierte Ansprechpartner können Beratung und Lotsenleistungen für weitere Familien verfügbar machen.",
+              "second_order": "Erreichte Familien können bestehende Bildungs- und Unterstützungsangebote besser nutzen, wenn Zugangshürden sinken.",
+              "third_order": "Bei dauerhafter hoher Reichweite können Unterstützungsstrukturen zwischen Familien und Bildungsinstitutionen gestärkt werden; langfristige Bildungsfolgen müssten separat evaluiert werden.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 3,
+                "rationale": "Bei kleiner oder schlecht erreichbarer Ausweitung bleibt der Effekt begrenzt; bei breiter, qualifizierter und dauerhaft finanzierter Umsetzung ist ein deutlicher Unterstützungsbeitrag plausibel."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Frühere Bundesprogramme stützen den Unterstützungsmechanismus. Eine Effektübertragung auf Priens noch unbestimmte Ausweitung ist nur bedingt zulässig.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Eine bundesweit angelegte Ausweitung kann viele Familien erreichen; DLF belegt die bundespolitische Ankündigung, nicht die spätere tatsächliche Reichweite.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Elternbegleitung kann Unterstützungszugänge spürbar verbessern, ersetzt aber keine umfassende schulische Qualitätssteuerung.",
+                  "source_ids": [
+                    "research-bmfsfj-elternchancen-evaluation"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Unterstützungs- und Bildungsbegleitungsbeziehungen können bei fortgesetztem Angebot mittel- bis längerfristig wirken.",
+                  "source_ids": [
+                    "research-bmfsfj-elternchancen-evaluation"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Beratungs- und Unterstützungswirkungen sind grundsätzlich veränderbar und keine irreversiblen Zustandsänderungen.",
+                  "source_ids": [
+                    "research-bmfsfj-elternchancen-evaluation"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Niedrigschwellige Familienunterstützung kann besonders Haushalte mit höherem Unterstützungsbedarf erreichen.",
+                  "source_ids": [
+                    "research-bmfsfj-elternchancen-2024"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Elternbegleitung kann Schnittstellen zwischen Familie und Bildungs-/Unterstützungssystemen beeinflussen, ohne allein das Bildungssystem strukturell zu verändern.",
+                  "source_ids": [
+                    "research-bmfsfj-elternchancen-evaluation"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Bildung und Teilhabe sind relevante Schutzgüter, aber dieser positive Unterstützungsmechanismus modelliert keine konkrete schwere Grenzverletzung.",
+                "reference_frame": "Bildungschancen und gesellschaftliche Teilhabe",
+                "source_ids": [
+                  "research-bmfsfj-elternchancen-evaluation"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            },
+            {
+              "direction": "positive",
+              "label": "Geeignete Social-Media-Regulierung kann Schutz- und Lernbedingungen von Kindern verbessern",
+              "mechanism": "Wenn zusätzliche Regeln gezielt Plattformpraktiken begrenzen, die Minderjährige zu problematischer Nutzung anreizen, können sich digitale Schutzbedingungen verbessern. Ein daraus folgender Lern- oder Gesundheitserfolg ist nicht belegt und bleibt hypothetisch.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "Familien",
+                "Schülerinnen und Schüler"
+              ],
+              "magnitude": 3,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-eu-dsa-minors"
+              ],
+              "condition": "Das konkrete Instrument adressiert tatsächlich belegte Designrisiken, ist altersangemessen, verhältnismäßig, praktisch wirksam und schafft gegenüber der bestehenden Schutzarchitektur einen zusätzlichen Nutzen.",
+              "reference_space": "Minderjährige Nutzer, deren digitale Nutzungsbedingungen sich gegenüber der bestehenden EU-/nationalen Schutzarchitektur durch zusätzliche Regeln verändern.",
+              "time_horizon": "Ab Umsetzung über die Geltungsdauer der Maßnahme; mögliche Lernfolgen erst nach längerer Beobachtung.",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die angekündigte Regulierung betrifft tatsächlich suchtfördernde oder vergleichbare risikorelevante Plattformpraktiken. Es wird weder eine Ursache der PISA-Ergebnisse noch ein empirischer Bildungs- oder Gesundheitseffekt unterstellt.",
+              "source_support": "DLF belegt die Ankündigung einer stärkeren Regulierung. Das EU-PDF belegt besondere Vulnerabilität Minderjähriger gegenüber suchtfördernden Praktiken und bestehende Schutzleitlinien; es evaluiert Priens Instrument nicht.",
+              "limitations": "Regelungstyp, Altersgrenzen, technische Umsetzung, Durchsetzung und zusätzlicher Effekt gegenüber bestehendem EU-Recht sind unbekannt.",
+              "first_order": "Zusätzliche Regeln können bestimmte Plattformpraktiken oder Zugangsbedingungen für Minderjährige verändern.",
+              "second_order": "Wenn die Regeln relevante Designrisiken tatsächlich reduzieren, können problematische Nutzungsbedingungen zurückgehen; dies ist noch nicht beobachtet.",
+              "third_order": "Bei breiter und wirksamer Umsetzung können Schutzstandards für Minderjährige strukturell beeinflusst werden; Lern- und Gesundheitsfolgen benötigen eigene Evaluation.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Eine wirkungsarme oder redundante Regel hätte geringe Zusatzwirkung; ein zielgenaues, breit wirksames Instrument könnte Schutzbedingungen vieler Minderjähriger deutlich verändern."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die verifizierte EU-Quelle trägt Designrisiko und Schutzarchitektur, aber keinen empirischen Erfolg des angekündigten Instruments. Der positive Pfad bleibt daher niedrig evidenzierte Modellhypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Eine bundesweit oder plattformweit geltende Regel kann viele Minderjährige betreffen; DLF belegt nur die politische Ankündigung des Regelungsgegenstands.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Eine erfolgreiche Begrenzung risikorelevanter Plattformpraktiken kann Schutzbedingungen relevant verändern; das EU-PDF trägt das Designrisiko, nicht die Effektstärke von Priens Maßnahme.",
+                  "source_ids": [
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Regulatorisch veränderte Plattformbedingungen können über die Geltungsdauer einer Maßnahme mittel- bis längerfristig bestehen.",
+                  "source_ids": [
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Regulierungs- und Plattformregeln sind korrigierbar, während veränderte Nutzungsbedingungen zeitweise nachwirken können.",
+                  "source_ids": [
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung mit direktem Quellenanker: Das EU-PDF beschreibt Minderjährige ausdrücklich als besonders vulnerabel gegenüber Praktiken, die suchtförderndes Verhalten stimulieren können.",
+                  "source_ids": [
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Plattformbezogene Regeln können Standards über einzelne Nutzer hinaus verändern, bleiben aber nur ein Faktor der Bildungs- und Entwicklungsbedingungen.",
+                  "source_ids": [
+                    "research-eu-dsa-minors"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Pfad betrifft Kinderschutz, aber eine konkrete schwere Schutzgrenzverletzung oder deren sichere Vermeidung durch Priens noch unbekanntes Instrument ist nicht belegt.",
+                "reference_frame": "Kindeswohl und sichere digitale Umgebung",
+                "source_ids": [
+                  "research-eu-dsa-minors"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Ungeeignete oder unverhältnismäßige Regulierung kann legitime digitale Nutzungsmöglichkeiten einschränken",
+              "mechanism": "Zu breite oder schlecht austarierte Schutzmaßnahmen können Kinderrechte und legitime Nutzungsmöglichkeiten unangemessen beschränken, ohne das adressierte Risiko hinreichend zu reduzieren.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "Familien"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "medium",
+              "source_ids": [
+                "research-eu-dsa-rights",
+                "dlf-nachrichten"
+              ],
+              "condition": "Das konkrete Instrument ist gegenüber dem Schutzproblem nicht angemessen oder unverhältnismäßig und beschränkt Nutzung stärker als erforderlich.",
+              "reference_space": "Minderjährige Nutzer unter zusätzlichen Regeln gegenüber der bestehenden Schutzarchitektur.",
+              "time_horizon": "Ab Einführung bis zu rechtlicher, politischer oder technischer Korrektur.",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Priens späteres Instrument könnte in Kinderrechte eingreifen; ein solcher konkreter Entwurf ist noch nicht belegt.",
+              "source_support": "Die EU-Leitlinien verlangen ausdrücklich geeignete Maßnahmen ohne unverhältnismäßige oder unangemessene Einschränkung von Kinderrechten. DLF belegt lediglich die angekündigte stärkere Regulierung.",
+              "limitations": "Ohne Entwurf sind Art und Intensität möglicher Einschränkungen unbekannt.",
+              "first_order": "Zusätzliche Vorgaben könnten einzelne legitime Nutzungsmöglichkeiten beschränken.",
+              "second_order": "Bei zu breitem Design können Informations-, Kommunikations- oder Teilhabemöglichkeiten unnötig erschwert werden.",
+              "third_order": "Eine dauerhafte strukturelle Einschränkung ist ohne konkreten Entwurf nicht belastbar ableitbar.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Zielgenaue Regeln minimieren den Nebenpfad; eine breite unverhältnismäßige Regel könnte viele Minderjährige stärker betreffen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Das EU-PDF bestätigt die Verhältnismäßigkeitsanforderung. Ob Priens Maßnahme dieses Risiko tatsächlich erzeugt, bleibt mangels Entwurf offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Eine breit geltende Regel könnte viele Minderjährige betreffen; DLF trägt den angekündigten bundespolitischen Regelungsgegenstand.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Unangemessene Einschränkungen von Kinderrechten können relevant sein; das EU-PDF trägt die Schutzanforderung, nicht die konkrete Eingriffsstärke.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Einschränkungen würden grundsätzlich für die Dauer der jeweiligen Regel gelten und könnten korrigiert werden.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Regulatorische Zugangsbeschränkungen sind grundsätzlich rechtlich oder technisch revidierbar.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Minderjährige sind von Schutzregeln besonders abhängig und zugleich eigene Rechtsträger; die EU-Quelle trägt ausdrücklich den Kinderrechtsbezug.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Ein unangemessenes Instrument kann digitale Zugangsbedingungen beeinflussen, ohne mangels konkreten Entwurfs eine tiefe Systemwirkung zu begründen.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere konkrete Kinderrechtsverletzung ist ohne Regelungsentwurf nicht hinreichend bestimmt modellierbar.",
+                "reference_frame": "Kinderrechte und Verhältnismäßigkeit",
+                "source_ids": [
+                  "research-eu-dsa-rights"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "rationale": "Die Human-Dimension wird durch den plausiblen Unterstützungsmechanismus zusätzlicher Elternbegleitung positiv dominiert. Der mögliche Schutzbeitrag einer Social-Media-Regulierung bleibt mangels konkreten Instruments niedrig evidenziert; ein kleineres negatives Nebenrisiko unverhältnismäßiger Regulierung wird separat ausgewiesen.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der stärkste positive Pfad betrifft Elternbegleitung mit Magnitude 3. Das negative Regulierungsrisiko betrifft einen anderen Teilmechanismus und erreicht Magnitude 2; es erzeugt keine balanced-Gesamtbewertung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzliche qualifizierte Elternbegleitung kann Zugang zu Bildungs- und Familienunterstützung verbessern",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Zusätzliche qualifizierte Elternbegleitung kann Zugang zu Bildungs- und Familienunterstützung verbessern",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "direction": "open",
+          "magnitude": 1,
+          "evidence": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Indirekte Ressourcen- und Energieeffekte der Umsetzung sind möglich, ihre Netto-Richtung ist derzeit nicht bestimmbar",
+              "mechanism": "Zusätzliche Elternbegleitung kann Personal-, Raum-, Mobilitäts- und digitale Infrastrukturbedarfe verändern; eine stärkere Regulierung kann zugleich digitale Nutzungsbedingungen verändern. Ohne konkrete Ausgestaltung lässt sich daraus weder ein belastbarer positiver noch negativer Umweltpfad ableiten.",
+              "recipients": [
+                "Klima und Energieverbrauch mittelbar",
+                "Ressourcenverbrauch zusätzlicher Unterstützungs- und Regulierungsstrukturen"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-bmfsfj-elternchancen-2024",
+                "research-bmfsfj-elternchancen-evaluation",
+                "research-eu-dsa-minors",
+                "research-eu-dsa-rights"
+              ],
+              "condition": "Die angekündigten Maßnahmen führen tatsächlich zu zusätzlichen Personal-, Mobilitäts-, Raum-, IT- oder geänderten digitalen Nutzungsbedarfen in einem messbaren Umfang.",
+              "reference_space": "Zusätzlicher Ressourcen- und Energiebedarf der angekündigten Maßnahmen gegenüber der bestehenden Unterstützungs- und Minderjährigenschutzarchitektur.",
+              "time_horizon": "Ab Umsetzung kurzfristig bis über die Laufzeit der jeweiligen Maßnahme; strukturelle Umweltfolgen sind nicht belegt.",
+              "path_quality": [
+                "weak",
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Maßnahmen benötigen in irgendeinem Umfang organisatorische oder digitale Ressourcen. Art und Umfang dieser zusätzlichen Bedarfe sind unbekannt. Gegenläufige Effekte durch veränderte digitale Nutzung sind ebenfalls möglich. Es wird keine Netto-Umweltrichtung unterstellt.",
+              "source_support": "DLF belegt die angekündigten Maßnahmen. Die Bundesquellen zeigen, dass Elternbegleitung über reale Unterstützungsstrukturen umgesetzt wird; die EU-Quelle belegt regulatorische Eingriffe in Plattformbedingungen. Keine dieser Quellen quantifiziert den Umweltfußabdruck der neuen Maßnahmen.",
+              "limitations": "Keine belastbaren Angaben zu zusätzlichem Personal, Räumen, Reisen, Beschaffung, IT-Betrieb oder veränderter Gerätenutzung. Deshalb bleibt die Richtung offen und die Tragweite konservativ niedrig.",
+              "first_order": "Umsetzung kann zusätzliche oder vermiedene Energie- und Ressourcenverbräuche verursachen.",
+              "second_order": "Der Nettoeffekt hängt von Organisationsform, Digitalisierung, Mobilität und tatsächlicher Veränderung digitaler Nutzung ab.",
+              "third_order": "Eine relevante strukturelle Veränderung von Klima-, Ressourcen- oder Ökosystemzuständen ist auf Basis der vorliegenden Informationen nicht plausibel ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Bei Nutzung weitgehend bestehender Strukturen kann die zusätzliche Umweltwirkung praktisch vernachlässigbar bleiben. Selbst bei neuen Umsetzungsbedarfen ist ohne investitions- oder infrastrukturlastiges Design nur ein kleiner indirekter Effekt plausibel."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die fünf verifizierten Forschungsquellen liefern keine direkte Umweltwirkungsanalyse. Sie bestätigen nur die Existenz realer Unterstützungs- bzw. Regulierungsstrukturen als mögliche Ausgangspunkte kleiner indirekter Ressourcenfolgen. Eine gerichtete materielle Umweltwirkung bleibt unbelegt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Etwaige Umweltfolgen würden die zusätzlichen Umsetzungsstrukturen und betroffenen digitalen Nutzungsprozesse erreichen, nicht das gesamte Umwelt- oder Energiesystem. DLF und die Programm-/EU-Quellen belegen den organisatorischen bzw. regulatorischen Ausgangspunkt, nicht die tatsächliche Reichweite der Umweltwirkung.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-bmfsfj-elternchancen-2024",
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Ohne Hinweise auf große Infrastruktur-, Verkehrs- oder Beschaffungsvolumina ist pro Umsetzungseinheit nur eine geringe zusätzliche oder vermiedene Ressourcenwirkung plausibel.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-bmfsfj-elternchancen-evaluation"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Falls zusätzliche Strukturen geschaffen werden, können deren Ressourcenwirkungen über die jeweilige Maßnahmenlaufzeit anhalten. Eine mehrjährige strukturelle Dauer ist möglich, aber nicht belegt; deshalb keine Stufe 3.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-bmfsfj-elternchancen-2024",
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ordinale Modellschätzung: Für den modellierten kleinen Ressourcenpfad ist keine irreversible Zustandsänderung belegt oder aus den Maßnahmen zwingend ableitbar.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-bmfsfj-elternchancen-evaluation"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Es ist keine besondere Konzentration der möglichen kleinen Umweltlast auf ein spezifisch vulnerables Ökosystem oder eine besonders exponierte Region belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Der Pfad bleibt ein indirekter Ressourcen-Nebenpfad ohne belegte relevante Rückkopplung auf Energie-, Klima- oder Ökosystemsysteme.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-bmfsfj-elternchancen-2024",
+                    "research-eu-dsa-minors"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere ökologische Schutzgrenze ist durch die angekündigten Maßnahmen belegt oder unter den vorliegenden Bedingungen plausibel betroffen.",
+                "reference_frame": "Klima-, Energie- und Ressourcenschutz",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-bmfsfj-elternchancen-2024",
+                  "research-eu-dsa-minors"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die angekündigten Maßnahmen haben keinen unmittelbaren ökologischen Zielmechanismus. Plausibel sind nur kleine indirekte Ressourcen- und Energieeffekte aus ihrer Umsetzung oder veränderten digitalen Nutzung. Mangels konkreter Ausgestaltung ist deren Netto-Richtung offen; eine materielle Umweltwirkung ist derzeit nicht belegt.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keine belastbaren positiven oder negativen materiellen Hauptpfade. Kleine gegenläufige indirekte Effekte sind möglich, reichen aber nicht für eine gerichtete Gesamtbewertung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Indirekte Ressourcen- und Energieeffekte der Umsetzung sind möglich, ihre Netto-Richtung ist derzeit nicht bestimmbar",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Indirekte Ressourcen- und Energieeffekte der Umsetzung sind möglich, ihre Netto-Richtung ist derzeit nicht bestimmbar",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "balanced",
+          "direction": "mixed",
+          "magnitude": 2,
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Risikobasierter Minderjährigenschutz kann digitale Schutzrechte und selbstbestimmtere Teilhabe stärken",
+              "mechanism": "Zusätzliche Regeln können Plattformpraktiken begrenzen, die Minderjährige zu problematischer Nutzung anreizen. Wenn solche Maßnahmen zielgenau, datensparsam und verhältnismäßig ausgestaltet sind, können Sicherheit und Schutz in digitalen Räumen gestärkt werden.",
+              "recipients": [
+                "Kinder und Jugendliche als digitale Rechtsträger",
+                "Familien",
+                "digitale Öffentlichkeit mittelbar"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-eu-dsa-minors",
+                "research-eu-dsa-rights"
+              ],
+              "condition": "Die zusätzliche Regulierung schließt tatsächlich Schutzlücken, adressiert relevante Plattformpraktiken, wahrt Verhältnismäßigkeit und schafft gegenüber der bestehenden EU-Schutzarchitektur einen zusätzlichen Nutzen.",
+              "reference_space": "Digitale Schutz- und Teilhabebedingungen minderjähriger Nutzer unter zusätzlichen Regeln gegenüber der bereits bestehenden EU-/nationalen Minderjährigenschutzarchitektur.",
+              "time_horizon": "Ab Umsetzung über die Geltungsdauer der Maßnahme; mögliche institutionelle Standardwirkung über mehrere Jahre.",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Priens angekündigte Regulierung adressiert tatsächlich Plattformpraktiken, wie sie in den EU-Leitlinien als Schutzproblem beschrieben werden. Ein konkreter Entwurf und ein empirischer Wirksamkeitsnachweis liegen nicht vor.",
+              "source_support": "DLF belegt die angekündigte stärkere Regulierung. Das verifizierte EU-PDF belegt die besondere Vulnerabilität Minderjähriger gegenüber suchtfördernden Praktiken sowie Schutz- und Verhältnismäßigkeitsanforderungen; es belegt nicht den Erfolg von Priens noch unbekanntem Instrument.",
+              "limitations": "Regelungsart, Altersgrenzen, technische Umsetzung, Durchsetzung und Zusatznutzen gegenüber bestehender EU-Regulierung sind unbekannt.",
+              "first_order": "Zusätzliche Schutzpflichten oder technische Vorgaben können Plattformbedingungen für Minderjährige verändern.",
+              "second_order": "Wenn relevante Designrisiken tatsächlich reduziert werden, können digitale Schutzbedingungen verbessert und problematische Plattformanreize begrenzt werden.",
+              "third_order": "Bei breiter und rechtsstaatlich tragfähiger Umsetzung können Standards kindgerechter digitaler Dienste und institutionelle Schutzfähigkeit gestärkt werden; dies ist noch nicht beobachtet.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Bei bloßer Doppelregulierung wäre der Zusatznutzen gering; eine zielgenaue und breit wirksame Schließung relevanter Schutzlücken könnte die digitalen Schutzbedingungen vieler Minderjähriger deutlich verändern."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die verifizierte EU-Quelle bestätigt Schutzbedarf, besondere Vulnerabilität Minderjähriger und die Notwendigkeit verhältnismäßiger Maßnahmen. Der konkrete zusätzliche Schutzbeitrag von Priens angekündigtem Instrument bleibt mangels Entwurf offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Eine bundesweit oder plattformweit relevante Regel kann viele minderjährige Nutzer betreffen; DLF belegt den angekündigten bundespolitischen Regelungsgegenstand, nicht die spätere tatsächliche Reichweite.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Eine erfolgreiche Begrenzung risikorelevanter Plattformpraktiken kann Schutzbedingungen relevant verbessern; das EU-PDF trägt den Schutzmechanismus, nicht die Effektstärke von Priens Maßnahme.",
+                  "source_ids": [
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Schutzbedingungen können während der Geltung einer Regel fortbestehen, bleiben aber rechtlich und technisch korrigierbar.",
+                  "source_ids": [
+                    "research-eu-dsa-minors",
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Regulatorische und technische Schutzvorgaben sind grundsätzlich revidierbar; die EU-Quelle trägt den regulatorischen Ausgangspunkt.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung mit direktem Quellenanker: Das EU-PDF beschreibt Minderjährige ausdrücklich als besonders vulnerabel gegenüber Praktiken, die suchtförderndes Verhalten stimulieren können.",
+                  "source_ids": [
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Eine zusätzliche Regulierung kann Plattformstandards und institutionelle Schutzpraxis beeinflussen, ohne mangels konkreten Entwurfs eine tiefgreifende demokratische Systemänderung zu begründen.",
+                  "source_ids": [
+                    "research-eu-dsa-minors",
+                    "research-eu-dsa-rights"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Kinderrechte und digitale Selbstbestimmung sind relevante Schutzgüter, aber eine konkrete schwere Grenzverletzung oder deren sichere Vermeidung durch Priens unbekanntes Instrument ist nicht belegt.",
+                "reference_frame": "Digitale Selbstbestimmung, Sicherheit und Schutz Minderjähriger",
+                "source_ids": [
+                  "research-eu-dsa-minors",
+                  "research-eu-dsa-rights"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "direction": "negative",
+              "label": "Unverhältnismäßige oder zu breite Regulierung kann Kinderrechte und legitime digitale Teilhabe einschränken",
+              "mechanism": "Wenn zusätzliche Schutzmaßnahmen über das zur Risikobegrenzung Erforderliche hinausgehen, können rechtmäßige Informations-, Kommunikations- oder Teilhabemöglichkeiten unangemessen beschränkt werden. Die EU-Leitlinien verlangen deshalb ausdrücklich geeignete und nicht unverhältnismäßige Maßnahmen.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "Familien",
+                "digitale Dienste und Öffentlichkeit mittelbar"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-eu-dsa-rights",
+                "research-eu-dsa-minors"
+              ],
+              "condition": "Das konkrete Instrument beschränkt Nutzung oder Zugang breiter als für das Schutzproblem erforderlich oder ist technisch so ausgestaltet, dass Kinderrechte unnötig beeinträchtigt werden.",
+              "reference_space": "Kinderrechte und digitale Teilhabemöglichkeiten unter zusätzlichen nationalen Regeln gegenüber der bestehenden EU-/nationalen Schutzarchitektur.",
+              "time_horizon": "Ab Einführung bis zu rechtlicher, politischer oder technischer Korrektur; bei institutioneller Verstetigung über mehrere Jahre.",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Priens späteres Instrument könnte Zugangsbeschränkungen oder andere eingriffsintensive Schutzmaßnahmen enthalten. Ein solcher konkreter Entwurf ist bislang nicht belegt.",
+              "source_support": "DLF belegt lediglich die angekündigte stärkere Regulierung. Das verifizierte EU-PDF fordert ausdrücklich geeignete Maßnahmen, die Kinderrechte nicht unverhältnismäßig oder unangemessen beschränken. Dies trägt das Designrisiko, nicht die Behauptung eines bereits geplanten Rechtseingriffs.",
+              "limitations": "Ohne konkreten Entwurf sind betroffene Rechte, Eingriffstiefe, technische Umsetzung und tatsächliche Reichweite unbekannt.",
+              "first_order": "Zusätzliche Regeln könnten bestimmte legitime Zugänge oder Nutzungsmöglichkeiten von Minderjährigen einschränken.",
+              "second_order": "Bei zu breiter Ausgestaltung können Informations-, Kommunikations- oder Teilhabemöglichkeiten unnötig erschwert werden.",
+              "third_order": "Ein dauerhaft schlecht austariertes Regulierungsmodell könnte unangemessene Standards für digitale Zugangskontrolle etablieren; dafür gibt es bislang keinen konkreten Beleg.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Zielgenaue und verhältnismäßige Regeln begrenzen den Gegenpfad; eine breite oder unangemessene Regulierung könnte viele Minderjährige deutlicher betreffen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die verifizierte EU-Quelle bestätigt ausdrücklich die Verhältnismäßigkeits- und Kinderrechtsanforderung. Ob Priens konkrete Maßnahme dieses Risiko tatsächlich erzeugt, bleibt mangels Entwurf offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Eine bundesweit oder plattformweit geltende Regel könnte viele Minderjährige betreffen; DLF trägt den angekündigten Regelungsgegenstand, nicht die spätere tatsächliche Reichweite.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Unangemessene Einschränkungen von Kinderrechten können relevant sein; das EU-PDF trägt die Verhältnismäßigkeitsanforderung, nicht die konkrete Eingriffsstärke.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Einschränkungen würden grundsätzlich für die Geltungsdauer der Regel bestehen und könnten rechtlich oder technisch korrigiert werden.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Regulatorische Beschränkungen und technische Vorgaben sind grundsätzlich revidierbar.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Minderjährige sind zugleich besonders schutzbedürftig und eigene Rechtsträger; die EU-Quelle trägt ausdrücklich diesen Kinderrechts- und Schutzkontext.",
+                  "source_ids": [
+                    "research-eu-dsa-minors",
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Ein unangemessenes Instrument kann digitale Zugangs- und Teilhabebedingungen über einzelne Nutzer hinaus beeinflussen, ohne mangels konkreten Designs eine tiefe demokratische Systemwirkung zu belegen.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine fundamentale oder schwere konkrete Kinderrechtsverletzung wäre schutzgrenzenrelevant, ist für das noch unbekannte Instrument aber weder belegt noch hinreichend konkret modellierbar.",
+                "reference_frame": "Kinderrechte, Verhältnismäßigkeit und digitale Teilhabe",
+                "source_ids": [
+                  "research-eu-dsa-rights"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die Demokratie- und Rechtsdimension bleibt materiell ambivalent. Eine gut gestaltete Regulierung kann Schutz und digitale Selbstbestimmung Minderjähriger stärken; eine unverhältnismäßige Ausgestaltung kann dieselben Kinder in ihren Rechten und legitimen Teilhabemöglichkeiten beeinträchtigen. Da kein konkreter Entwurf vorliegt, sind beide Pfade ex ante und niedrig evidenziert.",
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Beide Hauptpfade betreffen denselben Regulierungsgegenstand, dieselbe Baseline und dieselbe Nutzergruppe. Beide erreichen Magnitude 2; ohne konkretes Design besteht keine belastbare Dominanz."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Risikobasierter Minderjährigenschutz kann digitale Schutzrechte und selbstbestimmtere Teilhabe stärken",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Risikobasierter Minderjährigenschutz kann digitale Schutzrechte und selbstbestimmtere Teilhabe stärken",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Ministeriumsetat kommendes Jahr",
+            "value": "15,48",
+            "unit": "Milliarden Euro",
+            "context": "Im Deutschlandfunk genannter Etat des Ministeriums für das kommende Jahr.",
+            "claim_id": "wt-0cf7af435088225d-v1-claim-3"
+          },
+          {
+            "label": "Differenz zum laufenden Jahr",
+            "value": "1,2",
+            "unit": "Milliarden Euro",
+            "context": "Im Bericht genannte Differenz zum laufenden Jahr.",
+            "claim_id": "wt-0cf7af435088225d-v1-claim-3"
+          }
+        ],
+        "affected_groups": [
+          "kinder_jugend",
+          "haushalte",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-11T01:17:31.263Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-10T14:25:39.000Z",
+      "last_updated": "2026-09-11T01:17:31.263Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-8b34293c9f78d1d37623",
+      "case_file": null,
+      "source_published_at": "2026-09-10T14:25:39.000Z",
+      "published_at": "2026-09-11T01:17:31.263Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Konkrete Ausgestaltung und Umsetzung der angekündigten Social-Media-Regulierung und der zusätzlichen Elternbegleitung prüfen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichter Maßnahmen- oder Gesetzentwurf, konkrete Zahl zusätzlicher Elternbegleiter und ausgewiesene Finanzierung.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-3a2a630285783349",
+          "announced_at": "2026-09-10T14:25:39.000Z",
+          "follow_up_date": "2026-09-18T01:17:31.263Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bundesbildungsministerin-prien-verspricht-rasche-reaktion-auf-schlechte-pisa-ergebnisse-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-10T14:25:39.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-2e8df4ac304551de",
       "title_image": {
