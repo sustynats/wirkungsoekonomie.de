@@ -28,7 +28,7 @@ from typing import Any
 BRIDGE_VERSION = 1
 DROPBOX_OUTPUT_DIR = "/WOEK/WIRKUNGSTICKER-CHATGPT-BRIDGE/20_OUTPUT_READY"
 MAX_ISSUE_BODY_BYTES = 60_000
-MAX_PAYLOAD_BYTES = 55_000
+MAX_PAYLOAD_BYTES = 256_000
 SAFE_FILENAME = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,179}\.json$")
 SAFE_JOB_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,159}$")
 
@@ -73,6 +73,20 @@ def _load_issue_envelope() -> dict[str, Any]:
     event_path = Path(_required_env("GITHUB_EVENT_PATH"))
     event = json.loads(event_path.read_text(encoding="utf-8"))
     issue = event.get("issue") or {}
+    if event.get('action') not in {'opened', 'reopened'} or issue.get('pull_request'):
+        raise BridgeError('unsupported issue event')
+    # Both the submitting account and the account causing a rerun must have
+    # current write access. Public issue text cannot confer authorization.
+    repository = _required_env('GITHUB_REPOSITORY')
+    if (event.get('repository') or {}).get('full_name') != repository:
+        raise BridgeError('repository mismatch')
+    for login in {str((issue.get('user') or {}).get('login') or ''), str((event.get('sender') or {}).get('login') or ''), _required_env('GITHUB_ACTOR')}:
+        if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9-]{0,38}(?:\[bot\])?', login):
+            raise BridgeError('invalid issue actor')
+        _, permission_raw = _request('https://api.github.com/repos/' + repository + '/collaborators/' + urllib.parse.quote(login, safe='') + '/permission',
+            headers={'Authorization': 'Bearer ' + _required_env('GH_TOKEN'), 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28'})
+        if json.loads(permission_raw).get('permission') not in {'write', 'admin', 'maintain'}:
+            raise BridgeError('issue actor requires repository write permission')
     title = str(issue.get("title") or "")
     if not title.startswith("[CHATGPT-BRIDGE] "):
         raise BridgeError("issue title is not a ChatGPT bridge request")
@@ -89,16 +103,19 @@ def _load_issue_envelope() -> dict[str, Any]:
         raise BridgeError(f"issue body is not valid JSON: {exc}") from exc
     if not isinstance(envelope, dict):
         raise BridgeError("bridge envelope must be a JSON object")
+    if title != '[CHATGPT-BRIDGE] ' + str(envelope.get('job_id', '')):
+        raise BridgeError('issue title and job mismatch')
     return envelope
 
 
 def _validate_envelope(envelope: dict[str, Any]) -> tuple[str, str, Any]:
-    allowed = {"bridge_version", "job_id", "destination_filename", "payload"}
+    encrypted = envelope.get('bridge_version') == 2
+    allowed = {"bridge_version", "job_id", "destination_filename", 'sealed_payload' if encrypted else 'payload'}
     unknown = set(envelope) - allowed
     if unknown:
         raise BridgeError(f"unexpected bridge fields: {', '.join(sorted(unknown))}")
 
-    if envelope.get("bridge_version") != BRIDGE_VERSION:
+    if type(envelope.get('bridge_version')) is not int or envelope.get("bridge_version") not in {BRIDGE_VERSION, 2}:
         raise BridgeError(f"unsupported bridge_version: {envelope.get('bridge_version')!r}")
 
     job_id = envelope.get("job_id")
@@ -117,9 +134,23 @@ def _validate_envelope(envelope: dict[str, Any]) -> tuple[str, str, Any]:
             "destination_filename must equal <job_id>.output.json or <job_id>.probe.json"
         )
 
-    if "payload" not in envelope:
+    if encrypted:
+        from chatgpt_bridge_crypto import unseal
+        try:
+            payload = unseal(envelope, _required_env('CHATGPT_BRIDGE_PRIVATE_KEY').encode())
+        except ValueError:
+            raise BridgeError('encrypted payload verification failed') from None
+    elif "payload" not in envelope:
         raise BridgeError("missing payload")
-    payload = envelope["payload"]
+    else:
+        payload = envelope['payload']
+        # Only an inert, tightly bounded probe may be sent in plaintext.
+        if filename != job_id + '.probe.json' or not isinstance(payload, dict) or set(payload) != {'probe_id', 'test_only'} or payload != {'probe_id': job_id, 'test_only': True}:
+            raise BridgeError('plaintext editorial payloads are forbidden')
+    if not isinstance(payload, dict):
+        raise BridgeError('payload must be an object')
+    if filename.endswith('.output.json') and (payload.get('job_id') != job_id or not re.fullmatch(r'[a-f0-9]{64}', str(payload.get('input_hash', '')))):
+        raise BridgeError('output job or input hash mismatch')
     return job_id, filename, payload
 
 
@@ -191,10 +222,10 @@ def _download(token: str, path: str, *, allow_missing: bool) -> bytes | None:
 def _upload(token: str, path: str, data: bytes) -> None:
     args = {
         "path": path,
-        "mode": "overwrite",
+        "mode": "add",
         "autorename": False,
         "mute": True,
-        "strict_conflict": False,
+        "strict_conflict": True,
     }
     _request(
         "https://content.dropboxapi.com/2/files/upload",
@@ -232,7 +263,23 @@ def main() -> int:
             )
             return 0
 
-        _upload(token, destination, data)
+        if existing is not None:
+            raise BridgeError('existing output differs; overwrite forbidden')
+        if filename.endswith('.output.json'):
+            input_raw = _download(token, DROPBOX_OUTPUT_DIR.replace('/20_OUTPUT_READY', '/10_CLAIMED') + '/' + job_id + '.input.json', allow_missing=False)
+            claimed = json.loads(input_raw)
+            if claimed.get('job_id') != job_id or claimed.get('input_hash') != payload.get('input_hash'):
+                raise BridgeError('output does not match the claimed input')
+            ack = _download(token, DROPBOX_OUTPUT_DIR.replace('/20_OUTPUT_READY', '/30_ACK') + '/' + job_id + '.ack.json', allow_missing=True)
+            if ack is not None:
+                raise BridgeError('job already acknowledged')
+        try:
+            _upload(token, destination, data)
+        except BridgeError:
+            # A simultaneous identical delivery is safe. Different bytes stay
+            # untouched because Dropbox enforces add + strict_conflict.
+            if _download(token, destination, allow_missing=True) != data:
+                raise
         verified = _download(token, destination, allow_missing=False)
         if verified != data:
             raise BridgeError("read-after-write verification failed: Dropbox bytes differ")
@@ -253,7 +300,7 @@ def main() -> int:
         print(f"BRIDGE_ERROR: {exc}", file=sys.stderr)
         return 1
     except Exception as exc:  # fail closed and keep error visible in the Actions log
-        print(f"BRIDGE_UNEXPECTED_ERROR: {type(exc).__name__}: {exc}", file=sys.stderr)
+        print(f"BRIDGE_UNEXPECTED_ERROR: {type(exc).__name__}", file=sys.stderr)
         return 1
 
 

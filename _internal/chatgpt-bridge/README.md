@@ -1,98 +1,56 @@
-# ChatGPT → Dropbox Bridge
+# ChatGPT → Dropbox: verschlüsselte Übergabe
 
-## Zweck
+Der redaktionelle Worker liest und beansprucht Jobs weiterhin über den bestehenden Dropbox-Connector. GitHub Actions transportiert fertige, **verschlüsselte** Ausgaben nach Dropbox. Der Importer und seine fachlichen Qualitäts- und Freigabegates bleiben zuständig für jede Veröffentlichung.
 
-Dieser Bridge-Weg ersetzt `Dropbox.upload_file` für **neu von ChatGPT erzeugte JSON-Dateien**. Der Dropbox-Connector bleibt für Lesen, Auflisten sowie Operationen auf bereits vorhandenen Dropbox-Dateien nutzbar. Neue redaktionelle Outputs werden dagegen als GitHub-Issue übergeben und serverseitig nach Dropbox geschrieben.
+## Zugriffe und Datenschutz
 
-Damit liegt kein lokaler `/mnt/data`-Pfad und keine ChatGPT-File-Referenz mehr auf dem Egress-Pfad zu Dropbox.
+- Dieses Repository ist öffentlich. Persönliche Entwürfe, Quellenpakete und Redaktionsnotizen dürfen nie unverschlüsselt in Issues stehen.
+- Neue Artikeloutputs benötigen den Envelope `bridge_version: 2`. RSA-OAEP-SHA256 schützt den zufälligen AES-256-GCM-Schlüssel. AES-GCM authentifiziert auch Job-ID, Dateiname und Schlüsselkennung. Gzip erfolgt vor der Verschlüsselung.
+- Nur der öffentliche Schlüssel in `public-key.pem` wird dem ChatGPT-Worker gegeben. Der private Schlüssel liegt ausschließlich im Repository-Secret `CHATGPT_BRIDGE_PRIVATE_KEY` und im privaten Betriebsbackup.
+- Die drei Dropbox-Secrets heißen `DROPBOX_APP_KEY`, `DROPBOX_APP_SECRET`, `DROPBOX_REFRESH_TOKEN`. Sie gehören zu einer separaten Scoped-Access-/Full-Dropbox-App. Angefragte Scopes sind `files.content.read` und `files.content.write`; Dropbox ergänzt `files.metadata.read` als Abhängigkeit.
+- Der Workflow prüft vor dem Dropbox-Zugriff, ob Issue-Autor und auslösender Account aktuell Schreibrechte am Repository besitzen. Der normale GitHub-Token genügt; kein zusätzlicher GitHub-PAT für den Receiver.
+- Keine Zugangswerte oder entschlüsselten Texte in Logs oder Issue-Kommentaren. Entschlüsselung verleiht keine redaktionelle Veröffentlichungsfreigabe.
 
-## Datenfluss
+## Envelope erstellen
 
-```text
-Dropbox 00_INBOX
-   │  list/read/claim mit bestehendem Dropbox-Connector
-   ▼
-ChatGPT Redaktion
-   │  create_issue (reiner UTF-8-Text)
-   ▼
-GitHub Issue  [CHATGPT-BRIDGE] <job_id>
-   │  issues: opened/reopened
-   ▼
-GitHub Action auf vertrauenswürdigem main
-   │  JSON validieren → Dropbox API upload → Dropbox API download → Bytevergleich
-   ▼
-Dropbox 20_OUTPUT_READY/<destination_filename>
-   │
-   └─ Issue wird erst nach erfolgreichem Read-after-write geschlossen
+Der Worker benötigt Python mit `cryptography`, das Script `scripts/chatgpt_bridge_crypto.py` und ausschließlich den öffentlichen Schlüssel. Die Encoder-Datei enthält keine Zugangswerte.
+
+```sh
+python chatgpt_bridge_crypto.py public-key.pem JOB.output.json JOB.issue.json
 ```
 
-## GitHub-Issue-Vertrag
+Die Ausgabe ist ein JSON-Objekt mit `bridge_version`, `job_id`, `destination_filename` und `sealed_payload`. Den kompletten Inhalt von `JOB.issue.json` als reinen Text mit dem verbundenen GitHub-Issue-Werkzeug einstellen. Keine Markdown-Codezäune und kein Datei-Egress nötig.
 
-Titel:
+Issue-Titel: `[CHATGPT-BRIDGE] <job_id>`
 
-```text
-[CHATGPT-BRIDGE] <job_id>
-```
+Ziel ausschließlich: `/WOEK/WIRKUNGSTICKER-CHATGPT-BRIDGE/20_OUTPUT_READY/<job_id>.output.json` bzw. `<job_id>.probe.json`.
 
-Der Issue-Body besteht **nur aus gültigem JSON**, ohne Markdown-Codeblock:
+Maximal 60.000 Bytes Issue-Envelope und 256.000 Bytes entschlüsseltes Output-JSON. Zu große Aufträge nicht abschneiden oder auf mehrere selbst erfundene Jobs aufteilen; in technische Prüfung geben.
 
-```json
-{
-  "bridge_version": 1,
-  "job_id": "editorial-20260911-001",
-  "destination_filename": "editorial-20260911-001.output.json",
-  "payload": {
-    "job_id": "editorial-20260911-001",
-    "status": "ready"
-  }
-}
-```
+## Unveränderlichkeit und Jobbindung
 
-### Regeln
+- Output-Job-ID und `input_hash` müssen dem vorhandenen `10_CLAIMED/<job_id>.input.json` entsprechen.
+- Ein vorhandenes ACK verhindert eine neue Ausgabe.
+- Identische vorhandene Bytes führen zu `already_delivered`; abweichende vorhandene Bytes werden niemals überschrieben.
+- Upload verwendet atomar `add`, `autorename: false`, `strict_conflict: true`. Das schützt auch bei gleichzeitigen Versuchen aus unterschiedlichen Issues.
+- Erst nach bytegleichem Dropbox-Readback wird das Issue mit `BRIDGE_DELIVERED` kommentiert und geschlossen.
+- Bei Fehler bleibt es offen. Keine Ausgabe unter anderem Dateinamen versuchen.
+- Existierende Import-, ACK-, Reparatur- und Archivierungsregeln bleiben erhalten.
 
-- `bridge_version` muss `1` sein.
-- `job_id` und `destination_filename` dürfen nur sichere ASCII-Zeichen enthalten.
-- `destination_filename` muss exakt `<job_id>.output.json` oder `<job_id>.probe.json` sein; ein beliebiger Dropbox-Dateiname ist nicht zulässig.
-- Zielverzeichnis ist im Worker fest verdrahtet auf:
-  `/WOEK/WIRKUNGSTICKER-CHATGPT-BRIDGE/20_OUTPUT_READY`
-- `payload` wird als UTF-8-JSON mit abschließendem Newline gespeichert.
-- Maximale serialisierte Payload-Größe: 55 KB; der komplette Issue-Body ist auf 60 KB begrenzt.
-- Wiederholung desselben Jobs ist sicher: Wenn in Dropbox bereits exakt dieselben Bytes liegen, wird der Job als `already_delivered` akzeptiert.
-- Ein Issue wird nur nach erfolgreichem Read-after-write geschlossen.
-- Bei Fehler bleibt das Issue offen; ein erneuter Lauf kann über einen Actions-Rerun oder durch Wiederöffnen ausgelöst werden.
+## Capability-Preflight und Freigabe
 
-## Einmalige Einrichtung
+Jeder tatsächliche redaktionelle Kontext muss zuerst 98_CONFIG, 00_INBOX, 10_CLAIMED, 20_OUTPUT_READY und 30_ACK lesen. Danach erzeugt er selbst eine eindeutige, harmlose Probe, sendet sie über den verschlüsselten Issue-Weg und liest die geschriebenen Bytes über Dropbox zurück. Kein Claim vor diesem PASS. Ein Codex-API-Test ist kein Nachweis für eine ChatGPT-Automation.
 
-Im Repository unter **Settings → Secrets and variables → Actions** diese Repository-Secrets anlegen:
+Für eine rein technische Minimalprobe ist weiterhin Version 1 erlaubt, aber ausschließlich mit `payload: {"probe_id":"<job_id>","test_only":true}` und dem dazugehörigen `.probe.json`-Dateinamen. Unverschlüsselte redaktionelle Outputs werden abgewiesen.
 
-- `DROPBOX_APP_KEY`
-- `DROPBOX_APP_SECRET`
-- `DROPBOX_REFRESH_TOKEN`
+## Testfolge vor Nachrichtenbetrieb
 
-Die Dropbox-App benötigt Zugriff auf den Pfad unter `/WOEK/WIRKUNGSTICKER-CHATGPT-BRIDGE` und mindestens die für Upload/Download erforderlichen Content-Berechtigungen. Für den hier verwendeten absoluten Dropbox-Pfad ist eine passend konfigurierte Dropbox-App erforderlich.
+1. Unit-Tests: `python -m unittest discover -s tests/bridge -v`.
+2. Genau geprüften PR-Stand mit gebundenem Testplan verwenden.
+3. Eindeutiges verschlüsseltes Probe-Issue anlegen.
+4. Issue → Action → Dropbox-Datei → Bytevergleich → geschlossenes Issue nachweisen.
+5. Identische Wiederholung prüfen; keine zweite Dateiversion erzeugen.
+6. Im tatsächlichen ChatGPT-Kontext den eigenen Preflight durchführen.
+7. Erst danach aktuelle Updates und neue Meldungen bearbeiten; historische Neubewertungen bleiben nachrangig.
 
-Secrets niemals in Issues, Commits, Chat-Prompts oder Logdateien eintragen.
-
-## Produktionsregel für ChatGPT
-
-Für neu erzeugte Bridge-Ausgaben gilt ab Aktivierung:
-
-1. **Nie** `Dropbox.upload_file` für generierte Dateien verwenden.
-2. Fertigen Output in den oben beschriebenen GitHub-Issue-Envelope einbetten.
-3. Issue über die GitHub-API erstellen.
-4. Dropbox-Datei über den vorhandenen Dropbox-Leseweg zurücklesen und erst dann den Job fachlich als vollständig behandeln.
-5. Bei fehlendem Dropbox-Readback nicht erneut mit anderem Dateinamen senden; denselben `job_id`/Dateinamen idempotent wiederverwenden.
-
-## Preflight nach Aktivierung
-
-Ein Probe-Issue mit einem eindeutigen `job_id` anlegen und folgende Kette prüfen:
-
-```text
-ISSUE_CREATED
-→ ACTION_SUCCESS
-→ DROPBOX_FILE_EXISTS
-→ DROPBOX_CONTENT_MATCH
-→ ISSUE_CLOSED
-```
-
-Erst wenn alle fünf Schritte erfolgreich sind, darf die reguläre Stundenautomation auf diesen Schreibweg umgestellt werden.
+Die Vorbereitung aktiviert keine Automation. Nachrichten brauchen weiterhin vollständige Quellen- und Wirkungsprüfung. Persönliche Beiträge bleiben an Natalies Freigabe gebunden.
