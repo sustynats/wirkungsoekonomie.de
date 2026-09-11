@@ -146,20 +146,78 @@ class EncryptionTests(unittest.TestCase):
 
     def test_output_requires_claim_and_matching_hash(self):
         e=self.sealed(); data=bridge._serialize_payload(self.payload)
-        with mock.patch.dict(os.environ,{'CHATGPT_BRIDGE_PRIVATE_KEY':self.private.decode()}), mock.patch.object(bridge,'_load_issue_envelope',return_value=e), mock.patch.object(bridge,'_dropbox_access_token',return_value='MOCK'), mock.patch.object(bridge,'_download',side_effect=[None,json.dumps({'job_id':e['job_id'],'input_hash':'x'*64}).encode()]), mock.patch.object(bridge,'_upload') as upload, contextlib.redirect_stderr(io.StringIO()):
+        with mock.patch.dict(os.environ,{'CHATGPT_BRIDGE_PRIVATE_KEY':self.private.decode()}), mock.patch.object(bridge,'_load_issue_envelope',return_value=e), mock.patch.object(bridge,'_dropbox_access_token',return_value='MOCK'), mock.patch.object(bridge,'_download',side_effect=[None,None,None,None,None,json.dumps({'job_id':e['job_id'],'input_hash':'x'*64}).encode()]), mock.patch.object(bridge,'_upload') as upload, contextlib.redirect_stderr(io.StringIO()):
             self.assertEqual(bridge.main(),1)
             upload.assert_not_called()
 
     def test_acknowledged_job_is_not_written(self):
         e=self.sealed()
-        with mock.patch.dict(os.environ,{'CHATGPT_BRIDGE_PRIVATE_KEY':self.private.decode()}), mock.patch.object(bridge,'_load_issue_envelope',return_value=e), mock.patch.object(bridge,'_dropbox_access_token',return_value='MOCK'), mock.patch.object(bridge,'_download',side_effect=[None,json.dumps(self.payload).encode(),b'ACK']), mock.patch.object(bridge,'_upload') as upload, contextlib.redirect_stderr(io.StringIO()):
+        with mock.patch.dict(os.environ,{'CHATGPT_BRIDGE_PRIVATE_KEY':self.private.decode()}), mock.patch.object(bridge,'_load_issue_envelope',return_value=e), mock.patch.object(bridge,'_dropbox_access_token',return_value='MOCK'), mock.patch.object(bridge,'_download',side_effect=[None,None,None,None,None,json.dumps(self.payload).encode(),b'ACK']), mock.patch.object(bridge,'_upload') as upload, contextlib.redirect_stderr(io.StringIO()):
             self.assertEqual(bridge.main(),1)
             upload.assert_not_called()
 
     def test_complete_claimed_output_can_be_delivered(self):
         e=self.sealed(); data=bridge._serialize_payload(self.payload)
-        with mock.patch.dict(os.environ,{'CHATGPT_BRIDGE_PRIVATE_KEY':self.private.decode()}), mock.patch.object(bridge,'_load_issue_envelope',return_value=e), mock.patch.object(bridge,'_dropbox_access_token',return_value='MOCK'), mock.patch.object(bridge,'_download',side_effect=[None,json.dumps(self.payload).encode(),None,data]), mock.patch.object(bridge,'_upload') as upload, contextlib.redirect_stdout(io.StringIO()):
+        with mock.patch.dict(os.environ,{'CHATGPT_BRIDGE_PRIVATE_KEY':self.private.decode()}), mock.patch.object(bridge,'_load_issue_envelope',return_value=e), mock.patch.object(bridge,'_dropbox_access_token',return_value='MOCK'), mock.patch.object(bridge,'_download',side_effect=[None,None,None,None,None,json.dumps(self.payload).encode(),None,data]), mock.patch.object(bridge,'_upload') as upload, contextlib.redirect_stdout(io.StringIO()):
             self.assertEqual(bridge.main(),0)
             upload.assert_called_once()
+
+class RepairClaimTests(unittest.TestCase):
+    job_id = 'wt_20260911T000000Z_' + 'c' * 24
+    input_hash = 'd' * 64
+
+    def check(self, files):
+        root = bridge.DROPBOX_OUTPUT_DIR.removesuffix('/20_OUTPUT_READY')
+        def download(token, path, *, allow_missing):
+            key = path.removeprefix(root + '/')
+            if key not in files:
+                if allow_missing:
+                    return None
+                raise bridge.BridgeError('missing claimed input')
+            return json.dumps(files[key]).encode()
+        with mock.patch.object(bridge, '_download', side_effect=download):
+            bridge._validate_claimed_output('MOCK', self.job_id,
+                {'job_id': self.job_id, 'input_hash': self.input_hash})
+
+    def repair(self, attempt):
+        return {'job_id': self.job_id, 'input_hash': self.input_hash,
+                'job_type': 'correction', 'correction_attempt': attempt,
+                'original_input': {'job_id': self.job_id, 'input_hash': self.input_hash}}
+
+    def test_repair_only_claim_is_sufficient(self):
+        for attempt in (1, 2):
+            with self.subTest(attempt=attempt):
+                self.check({f'10_CLAIMED/{self.job_id}.repair-{attempt}.json': self.repair(attempt)})
+
+    def test_pending_newer_repair_blocks_original_and_older_claim(self):
+        for old_name, old in [('input', self.repair(1)['original_input']), ('repair-1', self.repair(1))]:
+            with self.subTest(old=old_name), self.assertRaisesRegex(bridge.BridgeError, 'not been claimed'):
+                self.check({f'10_CLAIMED/{self.job_id}.{old_name}.json': old,
+                    f'00_INBOX/{self.job_id}.repair-2.json': self.repair(2)})
+
+    def test_newer_invalid_claim_cannot_fall_back_to_old_valid_claim(self):
+        bad = self.repair(2); bad['original_input']['input_hash'] = 'e' * 64
+        with self.assertRaisesRegex(bridge.BridgeError, 'lineage'):
+            self.check({f'10_CLAIMED/{self.job_id}.repair-2.json': bad,
+                f'10_CLAIMED/{self.job_id}.input.json': self.repair(1)['original_input']})
+
+    def test_repair_metadata_and_job_are_bound(self):
+        for patch in [{'correction_attempt': 1}, {'correction_attempt': True},
+                      {'job_type': 'new_story'}, {'job_id': 'other'}, {'input_hash': 'e' * 64}]:
+            with self.subTest(patch=patch), self.assertRaises(bridge.BridgeError):
+                self.check({f'10_CLAIMED/{self.job_id}.repair-2.json': self.repair(2) | patch})
+
+    def test_ack_blocks_repaired_output(self):
+        with self.assertRaisesRegex(bridge.BridgeError, 'acknowledged'):
+            self.check({f'10_CLAIMED/{self.job_id}.repair-2.json': self.repair(2),
+                f'30_ACK/{self.job_id}.ack.json': {'status': 'accepted'}})
+
+    def test_missing_claim_is_not_authorized(self):
+        with self.assertRaisesRegex(bridge.BridgeError, 'missing claimed input'):
+            self.check({})
+
+    def test_limit_matches_correction_protocol(self):
+        protocol = (Path(__file__).resolve().parents[2] / 'scripts/news/bridge/corrections.mjs').read_text()
+        self.assertIn(f'export const CORRECTION_LIMIT = {bridge.MAX_CORRECTION_ATTEMPTS};', protocol)
 
 if __name__=='__main__': unittest.main()
