@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { withRequestDeadline } from '../request-deadline.mjs';
 
-export function bridgeSession(env = process.env) {
+export function bridgeSession(env = process.env, { fetchImpl = fetch } = {}) {
   const endpoint = env.WOEK_NEWS_BRIDGE_URL;
   const secret = env.WOEK_NEWS_BRIDGE_TOKEN;
   const runId = env.GITHUB_RUN_ID;
@@ -11,17 +11,33 @@ export function bridgeSession(env = process.env) {
   const url = new URL(endpoint);
   if (url.protocol !== 'https:' || url.hostname !== '130.162.217.58.sslip.io' || url.pathname !== '/api/news-bridge' || url.search || url.hash || url.username || url.password) throw new Error('BRIDGE_REMOTE_URL_INVALID');
   const owner = `${runId}:${env.GITHUB_RUN_ATTEMPT || '1'}`;
-  async function request(op, args = []) {
+  const readOperations = new Set(['store.get', 'store.all', 'store.impactStagingIndex', 'store.observation',
+    'dropbox.list', 'dropbox.read', 'dropbox.readBinary', 'dropbox.metadata', 'bridge.status', 'bridge.monitor']);
+  async function requestOnce(op, args) {
     return withRequestDeadline(async signal => {
-    const response = await fetch(url, { method: 'POST', redirect: 'error', signal,
+    const response = await fetchImpl(url, { method: 'POST', redirect: 'error', signal,
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${secret}`, 'X-Bridge-Owner': owner,
         'X-Bridge-Lane': env.WOEK_NEWS_BRIDGE_PHASE === 'discovery' ? 'discovery' : 'import' }, body: JSON.stringify({ op, args }) });
     const chunks = []; let size = 0;
     for await (const chunk of response.body) { size += chunk.length; if (size > 24 * 1024 * 1024) throw new Error('BRIDGE_RESPONSE_TOO_LARGE'); chunks.push(chunk); }
-    let result; try { result = JSON.parse(Buffer.concat(chunks)); } catch { throw Object.assign(new Error('BRIDGE_REMOTE_INVALID_RESPONSE'), { retryable: response.status >= 500 }); }
+    let result; try { result = JSON.parse(Buffer.concat(chunks)); } catch { throw Object.assign(new Error('BRIDGE_REMOTE_INVALID_RESPONSE'), {
+      retryable: response.status >= 500, http_status: response.status, operation: op, response_bytes: size,
+      // Authentication/permission failures and writes must never be retried.
+      read_retryable: response.status === 200 || response.status >= 500,
+    }); }
     if (!response.ok || !result.ok) throw Object.assign(new Error(result.error || 'BRIDGE_REMOTE_UNAVAILABLE'), { retryable: response.status >= 500, ...(Number.isFinite(result.retry_after_seconds) ? { retry_after_seconds: result.retry_after_seconds } : {}) });
     return result.result;
     }, {timeoutMs:180000, code:'BRIDGE_REMOTE_TIMEOUT'});
+  }
+  async function request(op, args = []) {
+    try { return await requestOnce(op, args); }
+    catch (error) {
+      if (!readOperations.has(op) || error.message !== 'BRIDGE_REMOTE_INVALID_RESPONSE' || !error.read_retryable) throw error;
+      // One idempotent reread can recover a truncated gateway response. The
+      // second failure remains a real run error; no stale/default result is used.
+      console.warn(JSON.stringify({ event: 'bridge_read_retry', operation: op, http_status: error.http_status, response_bytes: error.response_bytes }));
+      return requestOnce(op, args);
+    }
   }
   const store = Object.fromEntries(['acquire','get','put','all','impactStagingIndex','observe','observation','release','editorialClaim','editorialFinalize','editorialFailure'].map(op => [op, (...args) => request(`store.${op}`, args)]));
   const transport = Object.fromEntries(['list','read','metadata','move','writeAtomic','archive'].map(op => [op, (...args) => request(`dropbox.${op}`, args)]));

@@ -2,8 +2,9 @@ import { createHash } from "node:crypto";
 import { storySimilarity } from "./lib.mjs";
 import { eventCompatibility } from "./newsroom.mjs";
 import { fileSubject, livingFileMatch, subjectConflict } from "./living-files.mjs";
+import { crossLanguageSourceSupport } from './source-language-support.mjs';
 
-export const SOURCE_INTEGRITY_VERSION = "1.0";
+export const SOURCE_INTEGRITY_VERSION = "1.1";
 
 const normalHost = (value) => {
   try { return new URL(value).hostname.toLowerCase().replace(/^www\./, ""); }
@@ -86,7 +87,8 @@ function highConfidenceSubjectConflict(source, story) {
   return null;
 }
 
-function semanticSupport(source, story) {
+function semanticSupport(source, story, registrySource) {
+  const translation = crossLanguageSourceSupport({ ...source, language: source.language || registrySource?.language }, story);
   const titleScore = storySimilarity(source.title, story.title);
   const contextScore = storySimilarity(`${source.title || ""} ${source.summary || ""}`, `${story.title || ""} ${story.source_summary || story.analysis?.summary || ""}`);
   const direct = eventCompatibility(source, { title: story.title, summary: story.source_summary || story.analysis?.summary, published_at: story.last_updated || story.published_at, event_geography: story.event_geography || [] });
@@ -99,7 +101,7 @@ function semanticSupport(source, story) {
       || storySimilarity(source.title, other.title) >= 0.24
       || storySimilarity(`${source.title || ""} ${source.summary || ""}`, `${other.title || ""} ${other.summary || ""}`) >= 0.2
       || livingFileMatch(source, { ...story, sources: [other] }).score >= 0.98));
-  return { supported: titleScore >= 0.18 || contextScore >= 0.2 || direct.related || sharedReference || peer, title_score: Number(titleScore.toFixed(3)), context_score: Number(contextScore.toFixed(3)), shared_reference: sharedReference, peer_support: peer };
+  return { supported: titleScore >= 0.18 || contextScore >= 0.2 || direct.related || sharedReference || peer || translation.supported, title_score: Number(titleScore.toFixed(3)), context_score: Number(contextScore.toFixed(3)), shared_reference: sharedReference, peer_support: peer, translation_support: translation };
 }
 
 export function sourceIntegrityForStory(story, registry, existingStories = [], now = new Date().toISOString()) {
@@ -132,7 +134,7 @@ export function sourceIntegrityForStory(story, registry, existingStories = [], n
     if (undatedReference) warnings.push({ source_id: source.source_id, url: source.url, code: "SOURCE_REFERENCE_UNDATED", detail: "Amtlicher Kontext ohne ausgewiesenes Veröffentlichungsdatum; Abrufdatum separat dokumentiert, kein Aktualitätssignal." });
     const conflict = highConfidenceSubjectConflict(source, story);
     if (conflict) add("SOURCE_STORY_SUBJECT_CONFLICT", conflict);
-    const semantic = semanticSupport(source, story);
+    const semantic = semanticSupport(source, story, registrySource);
     if (!semantic.supported) add("SOURCE_SEMANTIC_FIT_OPEN", `Titel-/Kontextpassung nicht ausreichend belegt (${semantic.title_score}/${semantic.context_score}).`);
     const conflictingReuse = (existingStories || []).filter((other) => other.story_id !== story.story_id && other.published && other.listed !== false
       && (other.sources || []).some((candidate) => candidate.url === source.url)
