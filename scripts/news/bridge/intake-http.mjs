@@ -1,9 +1,10 @@
+import { EDITORIAL_DECISION_BODY_LIMIT, COMMENT_TOO_LONG_MESSAGE } from '../../../admin/redaktion/feedback-limits.js';
 import { hash } from './contract.mjs';
 import { INTAKE_FILE_LIMIT } from './intake.mjs';
 
 const ORIGINS=['https://wirkungsoekonomie.de','https://www.wirkungsoekonomie.de'];
 const BASE='/api/admin/news-editorial';
-const MESSAGES={INTAKE_QUEUE_FULL:'Die Redaktion bearbeitet gerade die maximale Zahl offener Aufträge. Bitte später erneut absenden.',INTAKE_ATTACHMENTS_PENDING:'Ein Screenshot fehlt noch. Bitte die Übertragung erneut starten.',INTAKE_ALREADY_SUBMITTED:'Dieser Auftrag wurde bereits abgesendet.',INTAKE_IDEMPOTENCY_CONFLICT:'Der bereits gespeicherte Auftrag hat einen anderen Inhalt.',BRIDGE_RUN_LOCKED:'Die Recherche ist gerade aktiv. Dein Entwurf bleibt gespeichert; bitte in Kürze erneut absenden.',INTAKE_NOT_FOUND:'Dieser Auftrag wurde nicht gefunden.',INTAKE_PREVIEW_PENDING:'Der private Entwurf ist noch nicht fertig.',INTAKE_DRAFT_LIMIT:'Es liegen bereits zu viele unvollständige Entwürfe vor. Bitte die Redaktion prüfen lassen.'};
+const MESSAGES={EDITORIAL_COMMENT_TOO_LONG:COMMENT_TOO_LONG_MESSAGE,EDITORIAL_COMMENT_REQUIRED:'Bitte schreibe dazu, was geändert werden soll.',INTAKE_QUEUE_FULL:'Die Redaktion bearbeitet gerade die maximale Zahl offener Aufträge. Bitte später erneut absenden.',INTAKE_ATTACHMENTS_PENDING:'Ein Screenshot fehlt noch. Bitte die Übertragung erneut starten.',INTAKE_ALREADY_SUBMITTED:'Dieser Auftrag wurde bereits abgesendet.',INTAKE_IDEMPOTENCY_CONFLICT:'Der bereits gespeicherte Auftrag hat einen anderen Inhalt.',BRIDGE_RUN_LOCKED:'Die Recherche ist gerade aktiv. Dein Entwurf bleibt gespeichert; bitte in Kürze erneut absenden.',INTAKE_NOT_FOUND:'Dieser Auftrag wurde nicht gefunden.',INTAKE_PREVIEW_PENDING:'Der private Entwurf ist noch nicht fertig.',INTAKE_DRAFT_LIMIT:'Es liegen bereits zu viele unvollständige Entwürfe vor. Bitte die Redaktion prüfen lassen.'};
 const fail=(message,status)=>{throw Object.assign(Error(message),{status});};
 export function existingAdminAuthorizer({fetchImpl=fetch}={}){
   const cache=new Map();
@@ -56,7 +57,7 @@ export function createEditorialIntakeHandler({intake,approval,authorize=existing
       if(request.method==='GET'&&route==='/reviews'){respond(200,{reviews:approval.list(owner).map(({preview,...r})=>({...r,title:preview.title,format:preview.format}))});return true;}
       let reviewMatch=route.match(/^\/reviews\/(wt_\d{8}T\d{6}Z_[a-f0-9]{24})(?:\/(decision))?$/);
       if(reviewMatch&&request.method==='GET'&&!reviewMatch[2]){respond(200,approval.preview(owner,reviewMatch[1]));return true;}
-      if(reviewMatch&&request.method==='POST'&&reviewMatch[2]){respond(200,approval.decide(owner,reviewMatch[1],await readBody(request,15000)));return true;}
+      if(reviewMatch&&request.method==='POST'&&reviewMatch[2]){respond(200,approval.decide(owner,reviewMatch[1],await readBody(request,EDITORIAL_DECISION_BODY_LIMIT)));return true;}
       if(request.method==='GET'&&route==='/requests'){respond(200,{requests:intake.list(owner)});return true;}
       if(request.method==='POST'&&route==='/drafts'){const draft=intake.draft(owner,await readBody(request,100000));respond(201,{id:draft.id});return true;}
       let match=route.match(/^\/drafts\/([a-f0-9-]{36})\/attachments\/([0-3])$/);
