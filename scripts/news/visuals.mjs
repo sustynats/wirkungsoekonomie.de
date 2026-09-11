@@ -1,6 +1,6 @@
 import { MAGNITUDE_FACTORS } from './impact-magnitude.mjs';
 import { deriveImpactPresentation, IMPACT_LEGEND } from './impact-assessment.mjs';
-import { publicImpactAssessment, IMPACT_REVISION_NOTICE } from './impact-release.mjs';
+import { publicImpactAssessment } from './impact-release.mjs';
 // Visuelle Anker des Wirkungstickers.
 //
 // Zwei Ebenen:
@@ -488,7 +488,7 @@ export function renderImpactRing(presentation, dimensionLabel) {
 }
 
 export function renderDimensionMeters(analysis = {}, { compact = false, context = {} } = {}) {
-  if (!context.privateImpactPreview && !publicImpactAssessment(analysis)) return compact ? '' : `<p class="news-method-note">${IMPACT_REVISION_NOTICE}</p>`;
+  if (!context.privateImpactPreview && !publicImpactAssessment(analysis)) return '';
   const profile = deriveImpactPresentation(analysis, context);
   const target = profile.evaluation_target?.label;
   const reference = `<div class="wt-dims__reference">${profile.show_target || !compact ? `<p><strong>Bewertet:</strong> ${escapeHtml(target || "Gegenstand noch zu präzisieren")}</p>` : ""}<p class="wt-impact-time">${escapeHtml(profile.time_label)}</p>${!compact && profile.baseline ? `<p><strong>Vergleich:</strong> ${escapeHtml(profile.baseline)}</p>` : ""}</div>`;

@@ -6,6 +6,7 @@ import { bridgeInput, adaptOutput, validateOutputBinding, sameBridgeEvent } from
 import { BRIDGE_ROOT, bridgePath, parsePacket, outputSchema, hash } from './contract.mjs';
 import { storyPage } from '../build.mjs';
 import { waitingForReview, observeOutput } from './status.mjs';
+import { protectedCurrentCandidate, updateProcessorHealth } from './processor.mjs';
 
 const newsJob = job => ['new_story','story_update','correction'].includes(job.input.job_type);
 const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
@@ -21,7 +22,8 @@ export class DropboxChatGPTBridgeProvider {
     const activeRequests = active.filter(j => j.input.job_type !== 'impact_semantic_review');
     const selected = [];
     for (const candidate of candidates) {
-      if (selected.length >= Math.min(this.maxJobs, this.maxPending - activeRequests.length)) break;
+      if (selected.length >= this.maxJobs) break;
+      if (activeRequests.length + selected.length >= this.maxPending && !protectedCurrentCandidate(candidate)) continue;
       if (checkpoints[candidate.story_id] === candidate.content_hash || active.some(j => newsJob(j) && sameBridgeEvent(candidate, j.candidate)) || selected.some(c => sameBridgeEvent(candidate,c))) continue;
       selected.push(candidate);
     }
@@ -37,7 +39,8 @@ export class DropboxChatGPTBridgeProvider {
       await this.queuePrepared(job, now, results);
     }
     for (const candidate of candidates) {
-      if (created >= this.maxJobs || jobs.filter(j => !terminal.has(j.status) && j.input.job_type !== 'impact_semantic_review').length >= this.maxPending) break;
+      if (created >= this.maxJobs) break;
+      if (jobs.filter(j => !terminal.has(j.status) && j.input.job_type !== 'impact_semantic_review').length >= this.maxPending && !protectedCurrentCandidate(candidate)) continue;
       const input = bridgeInput(candidate, now, { stories, testOnly });
       let job = await this.store.get(input.job_id);
       if (!job) {
@@ -275,6 +278,13 @@ export class DropboxChatGPTBridgeProvider {
         && Date.parse(now) - Date.parse(observed.at) >= 600000) report.alerts.push(`OUTPUT_OVERDUE:${id}`);
     }
     Object.assign(report, await this.store.observation('completion-metrics') || { completed: 0, average_queue_minutes: null, last_publication_at: null });
+    try {
+      report.processor_health = await updateProcessorHealth(this.store, this.transport, now);
+      report.alerts.push(...report.processor_health.alerts);
+    } catch {
+      // Discovery and import survive a monitoring failure; never report healthy.
+      report.alerts.push('PROCESSOR_HEALTH_UNAVAILABLE');
+    }
     await this.store.observe('monitor', report);
     await this.transport.writeAtomic(bridgePath('95_LOGS', `${now.replace(/[^0-9TZ]/g, '')}.${hash(report).slice(0,12)}.server.json`), report);
     return report;

@@ -6,7 +6,6 @@ import {assessmentBasis} from './migrate-impact-assessments.mjs';
 export const IMPACT_RELEASE = JSON.parse(fs.readFileSync(new URL('../../content/news/impact-release.json', import.meta.url), 'utf8'));
 export const PUBLIC_IMPACT_PROFILE_VERSION = IMPACT_RELEASE.public_version;
 export const REVIEWED_IMPACT_PROFILE_VERSION = IMPACT_RELEASE.reviewed_record_version || null;
-export const IMPACT_REVISION_NOTICE = 'Wir überarbeiten die Wirkungsprofile. Die Nachrichten, redaktionellen Einordnungen und Quellen bleiben verfügbar.';
 
 export function publicImpactAssessment(record = {}) {
   const assessment = record.dimensions && record.version ? record : record.impact_assessment || record.analysis?.impact_assessment;
@@ -26,6 +25,7 @@ export function publicImpactAssessment(record = {}) {
 // pages. A private preview must never be copied into the release artifact.
 export function assertPublicImpactHtml(html) {
   if (html.includes('data-private-impact-preview')) throw Error('IMPACT_PRIVATE_PREVIEW_IN_PUBLIC_ARTIFACT');
+  if (/Neu geprüfte Wirkungsprofile sind bereits sichtbar|Wir überarbeiten die Wirkungsprofile|Dimensionsfilter erfassen derzeit|Altbestand wird weiterhin überarbeitet/u.test(html)) throw Error('IMPACT_PUBLIC_INTERNAL_STATUS');
   if (html.includes('Keine Größenschätzung vorhanden') || /class="wt-dim[^>]*>[\s\S]*kein(?: belastbarer| wesentlicher)? Wirkpfad/iu.test(html)) throw Error('IMPACT_PUBLIC_DEBUG_FALLBACK');
   if (!PUBLIC_IMPACT_PROFILE_VERSION && !REVIEWED_IMPACT_PROFILE_VERSION && /class="wt-dim wt-dim--|data-potential-model=/.test(html)) throw Error('IMPACT_PUBLIC_PROFILE_NOT_RELEASED');
   if (!PUBLIC_IMPACT_PROFILE_VERSION && /data-potential-model=/.test(html)

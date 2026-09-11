@@ -47,6 +47,10 @@ export function impactReassessmentInput(record, now) {
 
 export async function discoverImpactJobs(bridge, records, now, { limit = 24, newsReserve = 12 } = {}) {
   const jobs = await bridge.store.all(), created = [];
+  if (jobs.filter(j => !closed.has(j.status)).length > 20) {
+    await bridge.store.observe('impact-reassessment', { at: now, created, paused: true, reason: 'QUEUE_CRITICAL' });
+    return created; // Keep historical inputs and prepared jobs; current news remains independent.
+  }
   const capacity = () => {
     const active = jobs.filter(j => !closed.has(j.status));
     const reviewParents = new Set(active.filter(j => j.input.job_type === 'impact_semantic_review').map(j => j.input.parent_job_id));
