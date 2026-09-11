@@ -125,12 +125,17 @@ export class EditorialIntake {
   }
   list(owner){
     return this.store.db.prepare("SELECT body FROM jobs WHERE json_extract(body,'$.intake.owner')=? ORDER BY json_extract(body,'$.created_at') DESC LIMIT 100").all(owner).map(row=>{
-      const j=JSON.parse(row.body);return {job_id:j.input.job_id,kind:j.intake.kind,brief:j.input.request.brief,title:j.accepted?.editorial?.title||j.accepted?.record?.title||null,created_at:j.created_at,status:j.intake.covered_url?'covered':this.store.observation(`claim:${j.input.job_id}`)&&j.status==='queued'?'claimed':j.status,ack_status:j.ack?.status||null,publication_url:j.intake.covered_url||j.ack?.url||null,preview_available:Boolean(j.staging),status_note:j.intake.covered_url?'Diese Meldung ist bereits veröffentlicht. Es wurde keine Dublette angelegt.':j.last_error?'Ein Prüfschritt braucht Aufmerksamkeit. Der Auftrag bleibt gespeichert.':j.accepted?.reason||null};
+      const j=JSON.parse(row.body);
+      const parent=j.intake.review_parent?this.store.get(j.intake.review_parent):null;
+      const reviewJobId=parent?.intake?.owner===owner?parent.input.job_id:j.input.job_id;
+      return {job_id:j.input.job_id,review_job_id:reviewJobId,kind:j.intake.kind,brief:j.input.request.brief,title:j.accepted?.editorial?.title||j.accepted?.record?.title||null,created_at:j.created_at,status:j.intake.covered_url?'covered':this.store.observation(`claim:${j.input.job_id}`)&&j.status==='queued'?'claimed':j.status,ack_status:j.ack?.status||null,publication_url:j.intake.covered_url||j.ack?.url||null,preview_available:Boolean(j.staging?.editorial_preview?.markdown||j.staging?.text||j.staging?.record?.source_summary||j.staging?.record?.analysis?.summary),status_note:j.intake.covered_url?'Diese Meldung ist bereits veröffentlicht. Es wurde keine Dublette angelegt.':j.last_error?'Ein Prüfschritt braucht Aufmerksamkeit. Der Auftrag bleibt gespeichert.':j.accepted?.reason||null};
     });
   }
   preview(owner,id){
     const job=this.store.get(id);if(!job||job.intake?.owner!==owner)fail('INTAKE_NOT_FOUND',404);
     if(!job.staging)fail('INTAKE_PREVIEW_PENDING',409);
-    return {text:job.staging.text||job.staging.record?.source_summary||job.staging.record?.analysis?.summary||'Der geprüfte Entwurf wurde privat übernommen.'};
+    const text=job.staging.editorial_preview?.markdown||job.staging.text||job.staging.record?.source_summary||job.staging.record?.analysis?.summary;
+    if(!text)fail('INTAKE_PREVIEW_PENDING',409);
+    return {text};
   }
 }
