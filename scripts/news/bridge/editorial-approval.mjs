@@ -1,3 +1,4 @@
+import { EDITORIAL_COMMENT_LIMIT } from '../../../admin/redaktion/feedback-limits.js';
 import { hash, safeUrl, JOB_ID } from './contract.mjs';
 import {publicPersonalEdition} from '../personal-editorial.mjs';
 import { renderEditorialMarkdown } from '../editorial-markdown.mjs';
@@ -69,7 +70,8 @@ export class EditorialApproval {
       if(preview_hash!==r.preview_hash||editorialPreviewHash(r.preview)!==r.preview_hash)fail('EDITORIAL_PREVIEW_CHANGED',409);
       if(action==='APPROVE'&&r.status==='APPROVED_FOR_PUBLICATION'){this.db.exec('COMMIT');return r;}
       if(!['AWAITING_FINAL_APPROVAL','HOLD','APPROVED_FOR_PUBLICATION','NEEDS_REVIEW'].includes(r.status)||r.status==='NEEDS_REVIEW'&&action==='APPROVE')fail('EDITORIAL_REVIEW_NOT_READY',409);
-      if(typeof comment!=='string'||comment.length>10000||action==='REVISE'&&!comment.trim())fail('EDITORIAL_COMMENT_REQUIRED');
+      if(typeof comment!=='string'||action==='REVISE'&&!comment.trim())fail('EDITORIAL_COMMENT_REQUIRED');
+      if(comment.length>EDITORIAL_COMMENT_LIMIT)fail('EDITORIAL_COMMENT_TOO_LONG');
       const next={...r,status:{APPROVE:'APPROVED_FOR_PUBLICATION',REVISE:'REVISION_REQUESTED',HOLD:'HOLD',SKIP:'SKIPPED'}[action],updated_at:this.now(),approval:null};
       if(action==='APPROVE'){validateEditorialPreview(r.preview);next.approval={by:owner,at:this.now(),preview_hash};}
       if(comment.trim())next.comments=[...r.comments,{by:owner,at:this.now(),preview_hash,comment:comment.trim()}];
