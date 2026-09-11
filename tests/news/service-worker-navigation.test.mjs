@@ -103,7 +103,8 @@ test("freshness probes never fall back to cached news and retain the existing ca
   h.listeners.get("fetch")({ request: new Request("https://wirkungsoekonomie.de/wirkungsticker/feed.json?check=123"), respondWith: promise => { response = promise; } });
   await assert.rejects(response, /network down/);
   assert.equal(fetches, 1); assert.equal(cacheOpens, 0);
-  assert.match(source, /CACHE_NAME = "woek-wirkungsticker-shell-20260906-pull-refresh1"/);
+  assert.match(source, /CACHE_NAME = "woek-wirkungsticker-shell-[a-z0-9-]+"/);
+  assert.match(source, /NEWS_STATE_CACHE = "woek-wirkungsticker-notification-state-v1"/);
 });
 
 test("essential same-origin reader assets outside the worker path are handled, not APIs or large discovery data", async () => {

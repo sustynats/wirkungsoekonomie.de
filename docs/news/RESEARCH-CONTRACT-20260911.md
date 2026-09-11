@@ -1,4 +1,4 @@
-# Gemeinsamer Vertrag für Recherchequellen — 11.09.2026
+# Gemeinsamer Vertrag für Recherchequellen - 11.09.2026
 
 Der Bridge-3-Umschlag erlaubte bislang beliebige Objekte in `research_sources`.
 Die spätere Quellenprüfung verlangte dagegen benannte Felder und ein überprüfbares
