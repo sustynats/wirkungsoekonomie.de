@@ -14,7 +14,7 @@ function shareHarness({ native = true, cancel = false, clipboard = true, legacy 
   });
   let field;
   vm.runInNewContext(script, {
-    document: { title: "Overview", querySelectorAll: () => buttons,
+    document: { title: "Overview", querySelectorAll: () => buttons, addEventListener() {},
       body: { appendChild() {} }, createElement: () => (field = { style: {}, setAttribute() {}, select() {}, remove() {} }),
       execCommand: () => { if (legacy) copied.push(field.value); return legacy; } },
     window: { location: { href: "https://wirkungsoekonomie.de/wirkungsticker/" } },
@@ -64,5 +64,5 @@ test("generated cards provide paired controls, unique status IDs and the share s
   assert.ok(cards.length >= 10);
   assert.equal(shareIds.length, cards.length);
   assert.equal(new Set(shareIds).size, shareIds.length);
-  assert.match(html, /assets\/js\/news-share\.js\?v=20260904-actions1/);
+  assert.match(html, /assets\/js\/news-share\.js\?v=20260911-dynamic-share/);
 });

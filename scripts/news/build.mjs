@@ -1,3 +1,5 @@
+import {renderShowIdentity} from './show-identity.mjs';
+import {appNavigation,buildAppPages} from './app-pages.mjs';
 import { impactMethodology } from './impact-methodology.mjs';
 import { impactCoverage, assertImpactCoverage } from './impact-coverage.mjs';
 import {PERSONAL_FORMAT,loadPersonalEditorials,personalLabel,personalArticleBody,personalPortrait} from './personal-editorial.mjs';
@@ -337,7 +339,7 @@ function editorialCard(analysis, story, index) {
   const topic = (story?.topic || analysis.tags || []).join(" ").toLowerCase();
   const searchText = [analysis.title, analysis.subtitle, analysis.teaser, analysis.analysis_type, ...(story?.topic || [])].join(" ").toLowerCase();
   const titleImage = publicTitleImage(analysis.title_image);
-  const preview = book ? `<div class="news-editorial-card__book${analysis.book.volumes ? " news-editorial-card__book--volumes" : ""}">${renderBookCover(analysis)}</div>` : titleImage?.wide ? `<a class="news-editorial-card__preview" href="${escapeHtml(href)}" aria-hidden="true" tabindex="-1"><img src="${escapeHtml(titleImage.wide.url)}" width="1200" height="675" alt="" loading="lazy" decoding="async"></a>` : "";
+  const preview = personal && analysis.source_media ? renderShowIdentity(analysis.source_media) : book ? `<div class="news-editorial-card__book${analysis.book.volumes ? " news-editorial-card__book--volumes" : ""}">${renderBookCover(analysis)}</div>` : titleImage?.wide ? `<a class="news-editorial-card__preview" href="${escapeHtml(href)}" aria-hidden="true" tabindex="-1"><img src="${escapeHtml(titleImage.wide.url)}" width="1200" height="675" alt="" loading="lazy" decoding="async"></a>` : "";
   return `<article class="news-editorial-card${index === 0 ? " news-editorial-card--lead" : ""}${preview ? " news-editorial-card--illustrated" : ""}" data-news-card data-news-format="${book ? BOOK_FORMAT : "analysis"}" data-news-editorial-analysis data-news-story-id="analysis-${escapeHtml(analysis.analysis_id)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topic)}" data-dimensions="${book || !publicImpactAssessment(analysis) ? "" : "mensch planet demokratie"}" data-high-impact="${!book && !personal}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(feedDate(analysis, "analysis"))}">
   <div class="news-editorial-card__content"><p class="hero-kicker">${escapeHtml(editorialLabel(analysis))}</p><h2><a href="${escapeHtml(href)}">${escapeHtml(analysis.title)}</a></h2><p class="news-editorial-card__subtitle">${escapeHtml(analysis.subtitle)}</p>${book && analysis.teaser === analysis.subtitle ? "" : `<p>${escapeHtml(analysis.teaser)}</p>`}${personal ? `<p class="news-editorial-card__origin">${escapeHtml(analysis.source_media?.show || personalLabel(analysis.subtype))}</p>` : book ? `<p class="news-editorial-card__origin">${escapeHtml(analysis.subtype)} · ${escapeHtml(analysis.book.author)} · ${escapeHtml(analysis.book.title)}</p>` : `<p class="news-editorial-card__origin">Entstanden aus: <a class="text-link" href="./${escapeHtml(story?.slug || "")}/">${escapeHtml(story?.title || "Wirkungsticker-Story")}</a></p>`}<div class="news-editorial-card__byline"><img src="${personal ? personalPortrait(analysis.subtype) : book ? escapeHtml(analysis.author.image) : "../assets/img/people/natalie-weber-woek-analyse.jpg"}" alt="${book ? escapeHtml(analysis.author.image_alt) : "Natalie Weber"}" width="72" height="${book ? 96 : 72}" loading="lazy" decoding="async"><span><strong>Natalie Weber</strong><small><a class="text-link" href="../methodik/">${escapeHtml(analysis.transparency_note)}</a></small><small>${escapeHtml(`${analysis.reading_time_minutes || 8} Min. · veröffentlicht ${formatDate(analysis.published_at, { dateOnly: true })}`)}</small></span></div></div>
   ${preview}<div class="news-editorial-card__actions"><a class="btn btn-primary" href="${escapeHtml(href)}">${book ? (analysis.self_authored_work ? "Autorinnenbeitrag lesen" : "Buchbesprechung lesen") : "Analyse lesen"}${renderIcon("pfeil")}</a>${editorialSaveControl(analysis)}${editorialShareControl(analysis)}</div>
@@ -359,7 +361,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   const imageAlt = shareCard?.alt || "Wirkungsökonomie - Mensch, Planet und Demokratie";
   if (shareCard) { jsonLd = { ...jsonLd, image: imageUrl }; ogType = "article"; }
   return `<!doctype html>
-<html lang="de">
+<html lang="de" class="ticker-app-document">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -398,18 +400,20 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <link rel="alternate" type="application/feed+json" title="Wirkungsticker JSON Feed" href="${SITE}/wirkungsticker/feed.json">` : ""}
   <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${base}assets/css/style.css?v=20260830-news">
-  <link rel="stylesheet" href="${base}assets/css/news.css?v=${PUBLIC_RELEASE}-chronological-20260911">
+  <link rel="stylesheet" href="${base}assets/css/news.css?v=${PUBLIC_RELEASE}-app-20260911">
   <script type="application/ld+json">${safeJson(jsonLd)}</script>
 </head>
-<body>
+<body class="ticker-app-shell">
 ${header}
+${appNavigation(canonical)}
 ${renderIconSprite()}
 ${body}
 ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkungsticker-Transparenz"><a href="${base}wirkungsticker/quellen/">Quellen &amp; Auswahlkriterien</a></nav></footer>`)}
-<script src="${base}assets/js/main.js?v=20260904-actions1"></script>
+<script src="${base}assets/js/main.js?v=20260911-dynamic-bookmarks"></script>
 <script src="${base}assets/js/news-install.js?v=20260904-reader2"></script>
 <script src="${base}assets/js/news-pwa.js?v=${PUBLIC_RELEASE}"></script>
 <script src="${base}assets/js/news-navigation.js?v=20260911-reader4"></script>
+<script src="${base}assets/js/news-share.js?v=20260911-dynamic-share"></script>
 ${extraScript}
 </body>
 </html>`;
@@ -490,7 +494,7 @@ export function indexPage(stories, updatedAt, { totalStories = stories.length, c
       "@context": "https://schema.org", "@type": "CollectionPage", "@id": `${SITE}/wirkungsticker/#page`, url: `${SITE}/wirkungsticker/`, name: "Wirkungsticker", inLanguage: "de",
       dateModified: updatedAt, mainEntity: { "@type": "ItemList", itemListElement: stories.map((story, index) => ({ "@type": "ListItem", position: index + 1, url: `${SITE}/wirkungsticker/${story.slug}/`, name: story.title })) },
     },
-    extraScript: '<script src="../assets/js/news.js?v=20260911-chronological2"></script><script src="../assets/js/news-share.js?v=20260904-actions1"></script>',
+    extraScript: '<script src="../assets/js/news.js?v=20260911-chronological2"></script><script src="../assets/js/news-share.js?v=20260911-dynamic-share"></script>',
   });
 }
 
@@ -685,7 +689,7 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
       publisher: { "@type": "Organization", name: "Wirkungsökonomie", url: SITE },
       articleSection: story.topic, citation: story.sources.map((source) => source.url),
     },
-    extraScript: '<script src="../../assets/js/news-share.js?v=20260904-actions1"></script>',
+    extraScript: '<script src="../../assets/js/news-share.js?v=20260911-dynamic-share"></script>',
   });
 }
 
@@ -759,7 +763,7 @@ export function editorialAnalysisPage(analysis, story = {}, { nextItem = null, r
       ...(titleImage?.og?.url ? { image: titleImage.og.url } : {}),
       articleSection: editorialLabel(analysis), wordCount: (book ? analysis.body_markdown : (analysis.sections || []).flatMap((section) => section.paragraphs || []).join(" ")).split(/\s+/).filter(Boolean).length,
     },
-    extraScript: '<script src="../../../assets/js/news-share.js?v=20260904-actions1"></script>',
+    extraScript: '<script src="../../../assets/js/news-share.js?v=20260911-dynamic-share"></script>',
   });
 }
 
@@ -769,7 +773,7 @@ function personalEditorialPage(a, {nextItem = null} = {}){
  const body=`<main id="main-content" data-search-content data-no-glossary data-news-reader="analysis" data-personal-editorial="true" data-editorial-content-hash="${escapeHtml(a.content_hash)}"><article class="news-editorial-article news-editorial-article--commentary">
  <header class="hero news-editorial-hero"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../../">Start</a><span>/</span><a href="../../">Wirkungsticker</a></nav><p class="hero-kicker">${escapeHtml(label)}</p><h1 class="hero-title">${escapeHtml(a.title)}</h1><p class="hero-subtitle">${escapeHtml(a.subtitle)}</p><div class="news-editorial-byline"><img src="${personalPortrait(a.subtype)}" alt="${['listened','watched'].includes(a.subtype)?'Natalie Weber mit Kopfhörern und Smartphone am Tisch':'Natalie Weber'}" width="144" height="192"><div><strong>Natalie Weber</strong><span>Meinung &amp; Analyse</span><span>${escapeHtml(formatDate(a.published_at,{dateOnly:true}))} · ${a.reading_time_minutes} Min.</span></div></div><p class="news-editorial-transparency">Persönliche Meinung und wirkungsökonomische Analyse</p></div></header>
  <section class="section"><div class="news-editorial-layout"><div class="news-editorial-article__main">${personalArticleBody(a)}</div></div></section><footer class="section news-story-footer"><div class="news-story-footer__inner"><p>Fassung ${a.revision} · ${escapeHtml(formatDate(a.published_at,{dateOnly:true}))}</p><div class="news-reader-actions">${editorialSaveControl(a)}${editorialShareControl(a)}<a class="btn btn-secondary" href="../../" data-news-return-to-list>Zum Wirkungsticker</a></div><div class="news-reader-actions" data-search-exclude><button class="btn btn-secondary" type="button" data-news-reader-back hidden>← Zurück im Leseweg</button><p class="news-swipe-hint" data-news-swipe-hint hidden>Wischen: rechts zurück${nextItem?', links zum nächsten Beitrag':''}.</p></div>${nextItem?`<nav class="news-story-pagination" aria-label="Zwischen Beiträgen blättern">${nextLink}</nav>`:''}<p class="news-method-note"><a class="text-link" href="../../../so-wirkt-wirkungsoekonomie/">Wirkungsökonomie einfach erklärt</a> · <a class="text-link" href="../../../methodik/">Methodik hinter dieser Analyse</a> · <a class="text-link" href="../../#methodik">So arbeitet der Wirkungsticker</a></p></div></footer></article></main>`;
- return pageShell({title:a.title,description:a.subtitle,canonical,body,base:'../../../',extraScript:'<script src="../../../assets/js/news-share.js?v=20260904-actions1"></script>',jsonLd:{'@context':'https://schema.org','@type':'Article',url:canonical,articleSection:label,headline:a.title,datePublished:a.published_at,author:{'@type':'Person',name:'Natalie Weber'},citation:a.sources.map(s=>s.url)}});
+ return pageShell({title:a.title,description:a.subtitle,canonical,body,base:'../../../',extraScript:'<script src="../../../assets/js/news-share.js?v=20260911-dynamic-share"></script>',jsonLd:{'@context':'https://schema.org','@type':'Article',url:canonical,articleSection:label,headline:a.title,datePublished:a.published_at,author:{'@type':'Person',name:'Natalie Weber'},citation:a.sources.map(s=>s.url)}});
 }
 
 function retiredStoryPage(story) {
@@ -926,7 +930,7 @@ export function buildNewsSite() {
   const previousEditorialSlugs = fs.existsSync(EDITORIAL_MANIFEST_FILE) ? readJson(EDITORIAL_MANIFEST_FILE).slugs || [] : [];
   const currentEditorialSlugs = new Set(editorialAnalyses.map((analysis) => analysis.slug));
   for (const slug of previousEditorialSlugs) if (!currentEditorialSlugs.has(slug) && /^[a-z0-9-]+$/.test(slug)) fs.rmSync(path.join(TICKER_DIR, "analyse", slug), { recursive: true, force: true });
-  write(path.join(TICKER_DIR, "index.html"), indexPage(stories, publicationUpdatedAt, { totalStories: activeStories.length, caseCount: grouping.cases.length, editorialAnalyses, storiesById }));
+  const appRoutes = buildAppPages({root:ROOT,stories,analyses:editorialAnalyses,storiesById,storyCard,editorialCard,pageShell,write,updatedAt:publicationUpdatedAt,appTools:indexPage([],publicationUpdatedAt).match(/<section class="section news-app-tools"[\s\S]*?<\/section>/)?.[0]||""});
   for (const story of pageStories) {
     const representativeIndex = stories.findIndex((item) => item.story_id === (story.case_file?.representative_id || story.story_id));
     const sameCaseIds = new Set(story.case_file?.members.map((member) => member.story_id) || []);
@@ -969,7 +973,7 @@ export function buildNewsSite() {
   write(path.join(TICKER_DIR, 'methodik/index.html'), pageShell({title:'Wie der Wirkungsticker Wirkungen bewertet', description:'Richtung, Tragweite, Eintrittsplausibilität und Evidenz: die sechs Faktoren und Schutzgrenzen des Wirkungstickers verständlich erklärt.', canonical:`${SITE}/wirkungsticker/methodik/`, base:'../../', body:impactMethodology({profilesReleased:Boolean(PUBLIC_IMPACT_PROFILE_VERSION)}), jsonLd:{'@context':'https://schema.org','@type':'WebPage',name:'Methodik des Wirkungstickers',url:`${SITE}/wirkungsticker/methodik/`}}));
   const sourceRoutes = buildSourcePages(loadNewsRegistry(ROOT), readJson(path.join(ROOT, "data/news/state.json")), { pageShell, write, escapeHtml, root: ROOT, site: SITE, formatDate });
   const editorialRoutes = editorialAnalyses.map((analysis) => `wirkungsticker/analyse/${analysis.slug}/`);
-  updateSitemap(pageStories, publicationUpdatedAt, oldSlugs, [...sourceRoutes, ...editorialRoutes, 'wirkungsticker/methodik/']);
+  updateSitemap(pageStories, publicationUpdatedAt, oldSlugs, [...sourceRoutes, ...editorialRoutes, ...appRoutes, 'wirkungsticker/methodik/']);
   console.log(`Wirkungsticker gebaut: ${stories.length} aktuelle Lagen und Einzelakten aus ${activeStories.length} Wirkungsakten; ${editorialAnalyses.length} WÖk-Analyse(n), ${grouping.cases.length} Lageakte(n), ${retiredStories.length} transparent archivierte Storys, RSS/Atom/JSON.`);
   return { stories: stories.length, underlying_stories: activeStories.length, editorial_analyses: editorialAnalyses.length, case_files: grouping.cases.length, retired_stories: retiredStories.length, updated_at: publicationUpdatedAt };
 }

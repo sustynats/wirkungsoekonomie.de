@@ -1,8 +1,8 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4588**
+- Sitemap routes: **4591**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14631**
+- Extra tracked source HTML not in sitemap: **14633**
 - Routes with non-default #253 action: **3590**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **263**
 
@@ -3676,7 +3676,6 @@ Signals are review candidates, not automatic errors.
 - `wirkungsfelder/gesundheit-pflege/dossiers/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsfelder/finanzsystem-kapital/steuer-abgabenarchitektur-kapital/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
 - `blog/demokratie-braucht-mehr-als-gute-sachpolitik.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/deutlicher-anstieg-bei-den-verteidigungsausgaben-05d4f9/index.html` - alternativen, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/john-ternus-apple-bringt-erstes-auffaltbares-iphone-heraus-396b15/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/olpreis-wieder-uber-100-dollar-spritpreise-binnen-einer-woche-stark-gestiegen-41bab3/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
@@ -3698,6 +3697,7 @@ Signals are review candidates, not automatic errors.
 - `wirkungsticker/analyse/polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/grosseinsatz-am-hambacher-forst-was-die-erfolglose-suche-uber-stromnetz-resilienz--3f27f4/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/news/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `begriffe/index.html` - wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/affektheuristik/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/algorithmische-fairness/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
@@ -3873,8 +3873,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1301**
-- Combined matrix items (routes + extra HTML + support): **20520**
+- Tracked support text files inventoried: **1303**
+- Combined matrix items (routes + extra HTML + support): **20527**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -4443,7 +4443,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **20521**
+- Combined reviewed items: **20528**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
