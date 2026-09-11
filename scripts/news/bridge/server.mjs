@@ -45,7 +45,12 @@ const server = http.createServer(async (req, res) => {
     const { op, args } = JSON.parse(Buffer.concat(chunks));
     if (!operations.has(op) || !Array.isArray(args) || args.length > 4) throw new Error('BRIDGE_OPERATION_INVALID');
     if (op === 'bridge.status') { finish(200, { ok: true, result: await editorialOutputStatus(store, transport) }); return; }
-    if (op === 'bridge.monitor') { finish(200, { ok: true, result: await monitorStatus(store, new Date().toISOString()) }); return; }
+    if (op === 'bridge.monitor') {
+      const ownership = store.observation(ownerKey);
+      finish(200, { ok: true, result: { ...await monitorStatus(store, new Date().toISOString()),
+        run_lock: { lane, process_holds_lock: store.locked === true, owner: ownership?.owner || null, acquired_at: ownership?.at || null } } });
+      return;
+    }
     if (!validOwner(owner)) throw new Error('BRIDGE_OWNER_INVALID');
     if (op === 'store.observe' && String(args[0]).startsWith('remote-owner')) throw new Error('BRIDGE_RESERVED_OBSERVATION');
     if (busy.has(lane)) throw new Error('BRIDGE_OPERATION_BUSY');
@@ -56,7 +61,11 @@ const server = http.createServer(async (req, res) => {
         if (!await ownerCompleted(current.owner)) throw new Error('BRIDGE_RUN_LOCKED');
         store.release(false); store.observe(ownerKey, null); current = null;
       }
-      if (!current) { store.acquire(...args); store.observe(ownerKey, { owner, at: new Date().toISOString() }); }
+      if (!current) {
+        store.acquire(...args);
+        try { store.observe(ownerKey, { owner, at: new Date().toISOString() }); }
+        catch (error) { try { store.release(false); } catch { /* Lane rollback is guaranteed by release. */ } throw error; }
+      }
       else if (!store.locked) store.acquire(...args); // process restart; same owning workflow only
       finish(200, { ok: true, result: true }); return;
     }

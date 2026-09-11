@@ -75,8 +75,9 @@ def unseal(envelope, private_pem):
 if __name__ == '__main__':
     public, source, destination = map(Path, sys.argv[1:4])
     payload = json.loads(source.read_text())
-    job = payload.get('job_id') or payload.get('probe_id')
-    suffix = '.output.json' if payload.get('job_id') else '.probe.json'
+    report = payload.get('report_type') == 'processor_preflight'
+    job = 'processor-' + payload['run_id'] if report else payload.get('job_id') or payload.get('probe_id')
+    suffix = '.processor.json' if report else '.output.json' if payload.get('job_id') else '.probe.json'
     result = seal(payload, job, job + suffix, public.read_bytes())
     destination.write_text(json.dumps(result, separators=(',', ':')) + '\n')
     print('Encrypted envelope prepared: ' + destination.name)

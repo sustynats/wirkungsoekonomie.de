@@ -3,7 +3,8 @@
 
 Security properties:
 - treats issue content strictly as data; no code from the issue is executed
-- writes only to the fixed Wirkungsticker bridge output directory
+- writes outputs to the fixed bridge output directory; verified worker
+  attestations have one derived private 95_LOGS destination
 - binds destination filenames to the job id
 - rejects path separators and unexpected envelope fields/versions
 - uses short-lived Dropbox access tokens obtained from a refresh token
@@ -129,9 +130,11 @@ def _validate_envelope(envelope: dict[str, Any]) -> tuple[str, str, Any]:
         raise BridgeError("destination_filename must be a basename")
 
     allowed_filenames = {f"{job_id}.output.json", f"{job_id}.probe.json"}
+    if encrypted:
+        allowed_filenames.add(f"{job_id}.processor.json")
     if filename not in allowed_filenames:
         raise BridgeError(
-            "destination_filename must equal <job_id>.output.json or <job_id>.probe.json"
+            "destination_filename must be a supported job-bound JSON filename"
         )
 
     if encrypted:
@@ -149,6 +152,12 @@ def _validate_envelope(envelope: dict[str, Any]) -> tuple[str, str, Any]:
             raise BridgeError('plaintext editorial payloads are forbidden')
     if not isinstance(payload, dict):
         raise BridgeError('payload must be an object')
+    if filename.endswith('.processor.json'):
+        from chatgpt_processor_receipt import validate_report
+        try:
+            validate_report(payload, job_id)
+        except ValueError as exc:
+            raise BridgeError(str(exc)) from None
     if filename.endswith('.output.json') and (payload.get('job_id') != job_id or not re.fullmatch(r'[a-f0-9]{64}', str(payload.get('input_hash', '')))):
         raise BridgeError('output job or input hash mismatch')
     return job_id, filename, payload
@@ -243,11 +252,18 @@ def main() -> int:
     try:
         envelope = _load_issue_envelope()
         job_id, filename, payload = _validate_envelope(envelope)
+        destination = f"{DROPBOX_OUTPUT_DIR}/{filename}"
+        token = _dropbox_access_token()
+        if filename.endswith('.processor.json'):
+            from chatgpt_processor_receipt import validate_report, verified_receipt
+            try:
+                destination = validate_report(payload, job_id)
+                probe_path = f"{DROPBOX_OUTPUT_DIR}/preflight-{payload['run_id']}.probe.json"
+                payload = verified_receipt(payload, _download(token, probe_path, allow_missing=False))
+            except ValueError as exc:
+                raise BridgeError(str(exc)) from None
         data = _serialize_payload(payload)
         digest = hashlib.sha256(data).hexdigest()
-        destination = f"{DROPBOX_OUTPUT_DIR}/{filename}"
-
-        token = _dropbox_access_token()
         existing = _download(token, destination, allow_missing=True)
         if existing == data:
             print(
