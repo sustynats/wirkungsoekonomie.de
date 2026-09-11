@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {hash,safeUrl} from './bridge/contract.mjs';
 import {escape,renderEditorialMarkdown} from './editorial-markdown.mjs';
+import {renderEditorialSection} from './editorial-layout.mjs';
 
 export const personalPortrait=kind=>['listened','watched'].includes(kind)?'/assets/img/people/nats_portrait_nachgehoert.jpg':kind==='book_review'?'/assets/img/people/natalie-weber-buch-und-wirkung.jpeg':'/assets/img/people/natalie-weber-woek-analyse.jpg';
 export const PERSONAL_FORMAT='approved_editorial';
@@ -35,5 +36,6 @@ export function loadPersonalEditorials(root){
 export function personalArticleBody(a){
  const m=a.source_media;
  const source=m?`<aside class="news-editorial-origin"><strong>Besprochen: ${escape(m.show)}</strong><p>${escape(m.episode_title)}</p><p>${escape([m.original_release_date,...(m.hosts||[]),...(m.guests||[])].filter(Boolean).join(' · '))}</p><a class="text-link" href="${escape(safeUrl(m.original_url))}" target="_blank" rel="noopener noreferrer">Original ${a.subtype==='watched'?'ansehen':'anhören'}</a></aside>`:'';
- return `${source}${a.visual?`<figure><img style="max-width:100%;height:auto" src="${escape(a.visual.url)}" alt="${escape(a.visual.alt)}"><figcaption>${escape(a.visual.credit)}</figcaption></figure>`:''}${renderEditorialMarkdown(a.body_markdown).html}<section class="news-story-section"><h2>Quellen und Originale</h2><ul>${a.sources.map(s=>`<li><a class="text-link" href="${escape(s.url)}" target="_blank" rel="noopener noreferrer">${escape(s.publisher)}: ${escape(s.title)}</a></li>`).join('')}</ul></section>`;
+ const body=renderEditorialMarkdown(a.body_markdown).sections.map(section=>renderEditorialSection(section,{portrait:personalPortrait(a.subtype),portraitAlt:['listened','watched'].includes(a.subtype)?'Natalie Weber mit Kopfhörern und Smartphone am Tisch':'Natalie Weber'})).join('\n');
+ return `${source}${a.visual?`<figure><img style="max-width:100%;height:auto" src="${escape(a.visual.url)}" alt="${escape(a.visual.alt)}"><figcaption>${escape(a.visual.credit)}</figcaption></figure>`:''}${body}<section class="news-story-section"><h2>Quellen und Originale</h2><ul>${a.sources.map(s=>`<li><a class="text-link" href="${escape(s.url)}" target="_blank" rel="noopener noreferrer">${escape(s.publisher)}: ${escape(s.title)}</a></li>`).join('')}</ul></section>`;
 }
