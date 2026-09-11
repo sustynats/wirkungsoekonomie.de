@@ -92,7 +92,9 @@ def load_sitemap(root: Path) -> list[str]:
     for loc in tree.findall("sm:url/sm:loc", ns):
         if loc.text and loc.text.startswith(SITE):
             urls.append(loc.text.strip())
-    return urls
+    # Feed generators may reorder sitemap groups without changing any route.
+    # Keep the audit stable across those builds while retaining duplicates.
+    return sorted(urls)
 
 
 def url_to_relpath(url: str) -> str:
