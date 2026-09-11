@@ -764,7 +764,7 @@
 }
 
 .news-view-switch__button {
-  min-height: 2.35rem;
+  min-height: 44px;
   padding: 0.35rem 0.7rem;
   border: 0;
   border-radius: 999px;
@@ -793,12 +793,8 @@
 }
 
 .news-grid--compact .news-card__why,
-.news-grid--compact .news-card__signals,
 .news-grid--compact .news-card__source,
-.news-grid--compact .news-card__meta,
-.news-grid--compact .news-editorial-card__subtitle,
-.news-grid--compact .news-editorial-card__byline,
-.news-grid--compact .news-editorial-card__origin {
+.news-grid--compact .news-editorial-card__subtitle {
   display: none;
 }
 
