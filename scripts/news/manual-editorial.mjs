@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { escape, renderEditorialMarkdown, renderEditorialMarkdownWithFootnotes } from "./editorial-markdown.mjs";
+import {renderEditorialSection} from './editorial-layout.mjs';
 
 export const BOOK_FORMAT = "book_and_impact";
 export const EDITORIAL_AUTHOR = Object.freeze({
@@ -149,6 +150,7 @@ export function renderManualArticle(analysis) {
   const contents = `<details class="news-editorial-toc"><summary>${analysis.self_authored_work ? 'Inhalt des Autorinnenbeitrags' : 'Inhalt der Buchbesprechung'}</summary><ol>${analysis.rendered.headings.filter(h => h.level === 2).map(h => `<li><a href="#${h.id}">${escape(h.title)}</a></li>`).join("")}</ol></details>`;
   return contents + analysis.rendered.sections.map(s => {
     const personal = s.title === "Meine Einordnung", book = s.title === "Das Buch";
+    if (personal) return renderEditorialSection(s, {portrait: analysis.author.image, portraitAlt: analysis.author.image_alt});
     return `<section class="news-editorial-article__section${personal ? " news-author-perspective" : ""}${book ? " news-book-metadata" : ""}" id="${s.id}"${personal ? ' aria-label="Persönliche Einordnung der Autorin"' : ""}>${book ? `<figure class="news-book-cover"><img src="${escape(cover.cover)}" width="${cover.coverWidth}" height="${cover.coverHeight}" alt="Offizielles Cover: ${escape(cover.title)} von ${escape(cover.author)}" loading="lazy" decoding="async"><figcaption><a class="text-link" href="${escape(cover.coverSource)}" target="_blank" rel="noopener noreferrer">${escape(cover.coverCredit)}</a></figcaption></figure><div>${s.html}</div>` : s.html}</section>`;
   }).join("\n");
 }

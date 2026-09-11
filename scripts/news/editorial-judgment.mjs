@@ -1,4 +1,5 @@
 import { DIMENSIONS, renderIcon, renderDimensionMeters } from "./visuals.mjs";
+import {authorPerspectiveHeader} from './editorial-layout.mjs';
 
 // Versioned additions: old publications are not assigned a new judgment or voice.
 export const EDITORIAL_RULES_VERSION = "2.0";
@@ -99,5 +100,5 @@ export function renderEditorialFinding(analysis) {
 
 export function renderAuthorPerspective(analysis) {
   if (!analysis.author_perspective?.paragraphs?.length) return "";
-  return `<section id="meine-einordnung" class="news-author-perspective" aria-labelledby="author-perspective-title"><p class="hero-kicker">Persönliche Einordnung der Autorin</p><h2 id="author-perspective-title">Meine Einordnung</h2><p class="news-method-note">Natalie Weber · Persönliche Gewichtung der zuvor belegten und analysierten Befunde.</p>${analysis.author_perspective.paragraphs.map(paragraph => `<p>${escape(paragraph)}</p>`).join("")}</section>`;
+  return `<section id="meine-einordnung" class="news-author-perspective" aria-labelledby="author-perspective-title">${authorPerspectiveHeader({heading:'<h2 id="author-perspective-title">Meine Einordnung</h2>'})}<p class="news-method-note">Persönliche Gewichtung der zuvor belegten und analysierten Befunde.</p>${analysis.author_perspective.paragraphs.map(paragraph => `<p>${escape(paragraph)}</p>`).join("")}</section>`;
 }
