@@ -78,7 +78,16 @@ export class BridgeStore {
       this.db.exec('COMMIT');
     } catch (error) { this.db.exec('ROLLBACK'); throw error; }
   }
-  all() { return this.db.prepare("SELECT body FROM jobs WHERE json_extract(body,'$.archived_at') IS NULL ORDER BY id").all().map(row => { const job = JSON.parse(row.body); delete job.staging; return job; }); }
+  all(page) {
+    const select = "SELECT id, json_remove(body,'$.staging') AS body FROM jobs WHERE json_extract(body,'$.archived_at') IS NULL";
+    if (page === undefined) return this.db.prepare(select + ' ORDER BY id').all().map(row => JSON.parse(row.body));
+    if (!page || !Number.isInteger(page.page_size) || page.page_size < 1 || page.page_size > 20
+      || typeof page.after !== 'string' || page.after.length > 180) throw Error('BRIDGE_QUEUE_PAGE_INVALID');
+    const rows = this.db.prepare(select + ' AND id > ? ORDER BY id LIMIT ?').all(page.after, page.page_size + 1);
+    const visible = rows.slice(0, page.page_size);
+    return { page_version: 1, items: visible.map(row => JSON.parse(row.body)),
+      next_cursor: rows.length > page.page_size ? visible.at(-1).id : null };
+  }
   impactStagingIndex() {
     return this.db.prepare("SELECT id, json_extract(body,'$.staging.impact_record_hash') AS record_hash FROM jobs WHERE json_extract(body,'$.input.job_type')='impact_reassessment' AND json_extract(body,'$.staging.impact_record.impact_assessment.version')='2.1' AND json_extract(body,'$.accepted.decision')='publish' ORDER BY id").all();
   }

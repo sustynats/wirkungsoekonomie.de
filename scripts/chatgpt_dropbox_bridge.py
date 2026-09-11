@@ -32,6 +32,8 @@ MAX_ISSUE_BODY_BYTES = 60_000
 MAX_PAYLOAD_BYTES = 256_000
 SAFE_FILENAME = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,179}\.json$")
 SAFE_JOB_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,159}$")
+# Matches the bounded correction protocol in news/bridge/corrections.mjs.
+MAX_CORRECTION_ATTEMPTS = 2
 
 
 class BridgeError(RuntimeError):
@@ -248,6 +250,37 @@ def _upload(token: str, path: str, data: bytes) -> None:
     )
 
 
+def _validate_claimed_output(token: str, job_id: str, payload: dict[str, Any]) -> None:
+    root = DROPBOX_OUTPUT_DIR.removesuffix('/20_OUTPUT_READY')
+    claimed = None
+    # A newer correction supersedes an older claim. An unclaimed correction
+    # must not authorize delivery through a leftover original/older claim.
+    for attempt in range(MAX_CORRECTION_ATTEMPTS, 0, -1):
+        name = f'{job_id}.repair-{attempt}.json'
+        raw = _download(token, f'{root}/10_CLAIMED/{name}', allow_missing=True)
+        if raw is not None:
+            claimed = json.loads(raw)
+            original = claimed.get('original_input') if isinstance(claimed, dict) else None
+            if (not isinstance(original, dict)
+                    or claimed.get('job_type') != 'correction'
+                    or type(claimed.get('correction_attempt')) is not int
+                    or claimed.get('correction_attempt') != attempt
+                    or original.get('job_id') != job_id
+                    or original.get('input_hash') != payload.get('input_hash')):
+                raise BridgeError('invalid claimed correction lineage')
+            break
+        if _download(token, f'{root}/00_INBOX/{name}', allow_missing=True) is not None:
+            raise BridgeError('latest correction has not been claimed')
+    if claimed is None:
+        raw = _download(token, f'{root}/10_CLAIMED/{job_id}.input.json', allow_missing=False)
+        claimed = json.loads(raw)
+    if (not isinstance(claimed, dict) or claimed.get('job_id') != job_id
+            or claimed.get('input_hash') != payload.get('input_hash')):
+        raise BridgeError('output does not match the claimed input')
+    if _download(token, f'{root}/30_ACK/{job_id}.ack.json', allow_missing=True) is not None:
+        raise BridgeError('job already acknowledged')
+
+
 def main() -> int:
     try:
         envelope = _load_issue_envelope()
@@ -282,13 +315,7 @@ def main() -> int:
         if existing is not None:
             raise BridgeError('existing output differs; overwrite forbidden')
         if filename.endswith('.output.json'):
-            input_raw = _download(token, DROPBOX_OUTPUT_DIR.replace('/20_OUTPUT_READY', '/10_CLAIMED') + '/' + job_id + '.input.json', allow_missing=False)
-            claimed = json.loads(input_raw)
-            if claimed.get('job_id') != job_id or claimed.get('input_hash') != payload.get('input_hash'):
-                raise BridgeError('output does not match the claimed input')
-            ack = _download(token, DROPBOX_OUTPUT_DIR.replace('/20_OUTPUT_READY', '/30_ACK') + '/' + job_id + '.ack.json', allow_missing=True)
-            if ack is not None:
-                raise BridgeError('job already acknowledged')
+            _validate_claimed_output(token, job_id, payload)
         try:
             _upload(token, destination, data)
         except BridgeError:
