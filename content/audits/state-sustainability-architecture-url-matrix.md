@@ -13,103 +13,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | Route | File | Classification | Signals |
 |---|---|---|---|
 | https://wirkungsoekonomie.de/ | `index.html` | CORRECT_OVERCLAIM, ADD_STATE_SUSTAINABILITY_ARCHITECTURE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/verstehen.html | `verstehen.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | dns, alternativen |
-| https://wirkungsoekonomie.de/wirkungsoekonomie.html | `wirkungsoekonomie.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | dns |
-| https://wirkungsoekonomie.de/modell.html | `modell.html` | CORRECT_OVERCLAIM, ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/kompass.html | `kompass.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | nachhaltigkeitspruefung |
-| https://wirkungsoekonomie.de/fuer/politik.html | `fuer/politik.html` | REWRITE_REQUIRED, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_DNS_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/evidenz/ | `evidenz/index.html` | ADD_SOURCE_LINKS | - |
-| https://wirkungsoekonomie.de/methodik/ | `methodik/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/methodik/datenbasis.html | `methodik/datenbasis.html` | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/methodik/daten-standards-regularien.html | `methodik/daten-standards-regularien.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/methodik/externe-quellen.html | `methodik/externe-quellen.html` | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/verstehen/ausgangslage/ | `verstehen/ausgangslage/index.html` | CORRECT_OVERCLAIM | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/ | `verstehen/sdgs-sdgplus/index.html` | ADD_DNS_REFERENCE | folgenabschaetzung, dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-1-keine-armut/ | `verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/ | `verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/ | `verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/ | `verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/ | `verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/ | `verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/ | `verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/ | `verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/ | `verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/ | `verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/ | `verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/ | `verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/ | `verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/ | `verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/ | `verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/ | `verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/ | `verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/geschichte/ | `verstehen/sdgs-sdgplus/geschichte/index.html` | ADD_DNS_REFERENCE | - |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/ | `verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/dossiers/sdgs-und-agenda-2030-als-globaler-referenzrahmen/ | `verstehen/sdgs-sdgplus/dossiers/sdgs-und-agenda-2030-als-globaler-referenzrahmen/index.html` | ADD_DNS_REFERENCE | folgenabschaetzung, dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/ | `verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/dossiers/sdg-als-erweiterung-der-wirkungsoekonomie/ | `verstehen/sdgs-sdgplus/dossiers/sdg-als-erweiterung-der-wirkungsoekonomie/index.html` | ADD_DNS_REFERENCE | folgenabschaetzung, dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/ | `verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/dossiers/sdg-unterziele-global-europa-und-deutschland/ | `verstehen/sdgs-sdgplus/dossiers/sdg-unterziele-global-europa-und-deutschland/index.html` | ADD_DNS_REFERENCE | folgenabschaetzung, dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/agenda-2030/ | `verstehen/sdgs-sdgplus/agenda-2030/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdgplus/ | `verstehen/sdgs-sdgplus/sdgplus/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/ | `verstehen/sdgs-sdgplus/unterziele/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-1/ | `verstehen/sdgs-sdgplus/unterziele/sdg-1/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-2/ | `verstehen/sdgs-sdgplus/unterziele/sdg-2/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-3/ | `verstehen/sdgs-sdgplus/unterziele/sdg-3/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-4/ | `verstehen/sdgs-sdgplus/unterziele/sdg-4/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-5/ | `verstehen/sdgs-sdgplus/unterziele/sdg-5/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-6/ | `verstehen/sdgs-sdgplus/unterziele/sdg-6/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-7/ | `verstehen/sdgs-sdgplus/unterziele/sdg-7/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-8/ | `verstehen/sdgs-sdgplus/unterziele/sdg-8/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-9/ | `verstehen/sdgs-sdgplus/unterziele/sdg-9/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-10/ | `verstehen/sdgs-sdgplus/unterziele/sdg-10/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-11/ | `verstehen/sdgs-sdgplus/unterziele/sdg-11/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-12/ | `verstehen/sdgs-sdgplus/unterziele/sdg-12/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-13/ | `verstehen/sdgs-sdgplus/unterziele/sdg-13/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-14/ | `verstehen/sdgs-sdgplus/unterziele/sdg-14/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-15/ | `verstehen/sdgs-sdgplus/unterziele/sdg-15/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-16/ | `verstehen/sdgs-sdgplus/unterziele/sdg-16/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-17/ | `verstehen/sdgs-sdgplus/unterziele/sdg-17/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
-| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/ | `verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html` | ADD_DNS_REFERENCE | evaluation |
-| https://wirkungsoekonomie.de/verstehen/woek-auf-einer-seite/ | `verstehen/woek-auf-einer-seite/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | wirkungsblind, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/ | `bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html` | REVIEW_REQUIRED | wirkungsblind, folgenabschaetzung, alternativen, evaluation |
-| https://wirkungsoekonomie.de/bibliothek/wirkungssteuer-wstg-3-0/ | `bibliothek/wirkungssteuer-wstg-3-0/index.html` | REVIEW_REQUIRED | alternativen, evaluation |
-| https://wirkungsoekonomie.de/blog/nachhaltigkeit-ist-keine-parteifarbe.html | `blog/nachhaltigkeit-ist-keine-parteifarbe.html` | NO_CHANGE_REQUIRED, CURRENT_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
-| https://wirkungsoekonomie.de/blog/enap-woek-benchmark-fuenf-bundesvorhaben.html | `blog/enap-woek-benchmark-fuenf-bundesvorhaben.html` | BENCHMARK_REFERENCE, ADD_BENCHMARK_COMPARISON | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
-| https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/ | `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` | REVIEW_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
-| https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/ | `bibliothek/woek-master-items-register/index.html` | REVIEW_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns |
-| https://wirkungsoekonomie.de/wirkungswissenschaften/ | `wirkungswissenschaften/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/ | `wirkungsfelder/staat-recht-demokratie/index.html` | CORRECT_OVERCLAIM, ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/ | `wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/index.html` | ADD_GGO_GFA_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/ | `wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/index.html` | ADDENDUM_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkungsrat-governance/ | `wirkungsfelder/staat-recht-demokratie/wirkungsrat-governance/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/staat-als-wirkungsarchitektur-resilienzstaat/ | `wirkungsfelder/staat-recht-demokratie/staat-als-wirkungsarchitektur-resilienzstaat/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/ | `werkstatt/dossiers/staat-recht-demokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkung-als-rechtsprinzip/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkung-als-rechtsprinzip/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkung-als-rechtsprinzip/ | `werkstatt/dossiers/staat-recht-demokratie/wirkung-als-rechtsprinzip/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungssteuergesetz-wstg/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungssteuergesetz-wstg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungssteuergesetz-wstg/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungssteuergesetz-wstg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/index.html` | REVIEW_REQUIRED | evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungsumsatzsteuer-rechtsrahmen/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungsumsatzsteuer-rechtsrahmen/index.html` | REVIEW_REQUIRED | evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungseinkommensteuer-westg/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungseinkommensteuer-westg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungseinkommensteuer-westg/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungseinkommensteuer-westg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungshaushalt/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungshaushalt/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungshaushalt/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungshaushalt/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsrat/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsrat/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungsrat/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungsrat/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/verwaltung-rechtsschutz-korrektur/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/verwaltung-rechtsschutz-korrektur/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/verwaltung-rechtsschutz-korrektur/ | `werkstatt/dossiers/staat-recht-demokratie/verwaltung-rechtsschutz-korrektur/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/index.html` | REVIEW_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/ | `werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/index.html` | REWRITE_OR_ADDENDUM_REQUIRED, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/lobbyismus-machtkonzentration/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/lobbyismus-machtkonzentration/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/lobbyismus-machtkonzentration/ | `werkstatt/dossiers/staat-recht-demokratie/lobbyismus-machtkonzentration/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/referenz/aktualisierung/ | `referenz/aktualisierung/index.html` | REVIEW_REQUIRED, ADD_DNS_REFERENCE | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/ | `begriffe/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/7-bundeshaushaltsordnung/ | `begriffe/7-bundeshaushaltsordnung/index.html` | ADD_GLOSSARY_CROSSLINKS | nachhaltigkeitspruefung, enap, dns |
-| https://wirkungsoekonomie.de/begriffe/fuenftes-p-planet/ | `begriffe/fuenftes-p-planet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/sechster-kondratieff/ | `begriffe/sechster-kondratieff/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/abfallhierarchie/ | `begriffe/abfallhierarchie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/abregelung/ | `begriffe/abregelung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ac-laden/ | `begriffe/ac-laden/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -119,6 +24,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/adoptions-und-verhaltensaenderungsplan/ | `begriffe/adoptions-und-verhaltensaenderungsplan/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/adverse-selection/ | `begriffe/adverse-selection/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/advocacy-organisation/ | `begriffe/advocacy-organisation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/aeussere-loops/ | `begriffe/aeussere-loops/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/afd-ideologie/ | `begriffe/afd-ideologie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/affekt/ | `begriffe/affekt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/affektheuristik/ | `begriffe/affektheuristik/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
@@ -170,15 +76,15 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/archetyp/ | `begriffe/archetyp/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/archetypen/ | `begriffe/archetypen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/architekturprinzipien-und-entscheidungsprotokolle/ | `begriffe/architekturprinzipien-und-entscheidungsprotokolle/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/art-2-euv-werte-der-europaeischen-union/ | `begriffe/art-2-euv-werte-der-europaeischen-union/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/art-3-euv-nachhaltige-entwicklung-europas/ | `begriffe/art-3-euv-nachhaltige-entwicklung-europas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/art-11-aeuv-umweltintegrationsprinzip/ | `begriffe/art-11-aeuv-umweltintegrationsprinzip/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/art-20a-gg/ | `begriffe/art-20a-gg/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/art-37-eu-grundrechtecharta-umweltschutz/ | `begriffe/art-37-eu-grundrechtecharta-umweltschutz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip/ | `begriffe/art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/art-2-euv-werte-der-europaeischen-union/ | `begriffe/art-2-euv-werte-der-europaeischen-union/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/art-20a-gg/ | `begriffe/art-20a-gg/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/art-3-euv-nachhaltige-entwicklung-europas/ | `begriffe/art-3-euv-nachhaltige-entwicklung-europas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/art-37-eu-grundrechtecharta-umweltschutz/ | `begriffe/art-37-eu-grundrechtecharta-umweltschutz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/artikel-20a-grundgesetz/ | `begriffe/artikel-20a-grundgesetz/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung |
-| https://wirkungsoekonomie.de/begriffe/assurance/ | `begriffe/assurance/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/assurance-game/ | `begriffe/assurance-game/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/assurance/ | `begriffe/assurance/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/astroturfing/ | `begriffe/astroturfing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/atlas-network/ | `begriffe/atlas-network/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/attraktor/ | `begriffe/attraktor/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -192,7 +98,6 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/aufwaertswettbewerb/ | `begriffe/aufwaertswettbewerb/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/ausland-statt-inland-narrativ/ | `begriffe/ausland-statt-inland-narrativ/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ausloeser/ | `begriffe/ausloeser/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/aeussere-loops/ | `begriffe/aeussere-loops/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/austeritaet/ | `begriffe/austeritaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/autokratie/ | `begriffe/autokratie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/autokratisierung/ | `begriffe/autokratisierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -202,8 +107,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/autonome-systeme/ | `begriffe/autonome-systeme/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/autopoiesis/ | `begriffe/autopoiesis/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/autoritaeres-wirkungspotenzial/ | `begriffe/autoritaeres-wirkungspotenzial/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/autoritarismus/ | `begriffe/autoritarismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/autoritaetsbias/ | `begriffe/autoritaetsbias/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
+| https://wirkungsoekonomie.de/begriffe/autoritarismus/ | `begriffe/autoritarismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/backend-ladeinfrastruktur/ | `begriffe/backend-ladeinfrastruktur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/backfire-effekt/ | `begriffe/backfire-effekt/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/backup-kapazitaet/ | `begriffe/backup-kapazitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
@@ -211,8 +116,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/bandluecke/ | `begriffe/bandluecke/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/bandwagon-effekt/ | `begriffe/bandwagon-effekt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/barrier-bow-tie-und-kontrollwirksamkeitskarte/ | `begriffe/barrier-bow-tie-und-kontrollwirksamkeitskarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/baseline/ | `begriffe/baseline/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/baseline-verschiebung/ | `begriffe/baseline-verschiebung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/baseline/ | `begriffe/baseline/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/basisinnovation/ | `begriffe/basisinnovation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/batterie/ | `begriffe/batterie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/batteriealterung/ | `begriffe/batteriealterung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -246,9 +151,9 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/berichtsdaten/ | `begriffe/berichtsdaten/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/beschaffung-als-wirkungshebel/ | `begriffe/beschaffung-als-wirkungshebel/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/beschwerdemechanismus-access-to-remedy/ | `begriffe/beschwerdemechanismus-access-to-remedy/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/bestaetigungsfehler/ | `begriffe/bestaetigungsfehler/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/bestands-und-flussmodell/ | `begriffe/bestands-und-flussmodell/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/bestandsimmobilie/ | `begriffe/bestandsimmobilie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/bestaetigungsfehler/ | `begriffe/bestaetigungsfehler/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/beteiligungs-und-repraesentationsdesign/ | `begriffe/beteiligungs-und-repraesentationsdesign/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/betriebsemissionen/ | `begriffe/betriebsemissionen/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/betroffenenperspektive/ | `begriffe/betroffenenperspektive/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -278,19 +183,19 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/brennstoffkette/ | `begriffe/brennstoffkette/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/brutblanket/ | `begriffe/brutblanket/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/bruttokreditaufnahme/ | `begriffe/bruttokreditaufnahme/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/bullshit-asymmetrie-brandolinis-gesetz/ | `begriffe/bullshit-asymmetrie-brandolinis-gesetz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/bundesregierung/ | `begriffe/bundesregierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/buergerbeteiligung/ | `begriffe/buergerbeteiligung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/buergerenergie/ | `begriffe/buergerenergie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/buergerenergiegesellschaft/ | `begriffe/buergerenergiegesellschaft/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/buergerinitiative/ | `begriffe/buergerinitiative/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/buergerrat/ | `begriffe/buergerrat/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/bullshit-asymmetrie-brandolinis-gesetz/ | `begriffe/bullshit-asymmetrie-brandolinis-gesetz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/bundesregierung/ | `begriffe/bundesregierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/business-architecture-systemkarte/ | `begriffe/business-architecture-systemkarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/business-ecosystem/ | `begriffe/business-ecosystem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/business-impact-analysis-fuer-kritische-wirkungsservices/ | `begriffe/business-impact-analysis-fuer-kritische-wirkungsservices/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/business-model/ | `begriffe/business-model/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/business-model-canvas/ | `begriffe/business-model-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/business-model/ | `begriffe/business-model/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/business-value/ | `begriffe/business-value/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/business-architecture-systemkarte/ | `begriffe/business-architecture-systemkarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/bystander-effekt/ | `begriffe/bystander-effekt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/c-rate/ | `begriffe/c-rate/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/cancel-culture/ | `begriffe/cancel-culture/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -300,30 +205,29 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/capability-gap-und-investitionspriorisierung/ | `begriffe/capability-gap-und-investitionspriorisierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/capability-reifegrad-und-heatmap/ | `begriffe/capability-reifegrad-und-heatmap/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/capability-to-impact-matrix/ | `begriffe/capability-to-impact-matrix/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/capex/ | `begriffe/capex/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/capex-plan/ | `begriffe/capex-plan/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/capture/ | `begriffe/capture/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/capex/ | `begriffe/capex/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/capture-price/ | `begriffe/capture-price/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/capture/ | `begriffe/capture/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/carbon-budget/ | `begriffe/carbon-budget/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/carbon-credits/ | `begriffe/carbon-credits/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/carbonfaserverstaerkter-kunststoff/ | `begriffe/carbonfaserverstaerkter-kunststoff/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/care-feministische-oekonomie/ | `begriffe/care-feministische-oekonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/care-oekonomie/ | `begriffe/care-oekonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/cbam-co2-grenzausgleichssystem/ | `begriffe/cbam-co2-grenzausgleichssystem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/cbam/ | `begriffe/cbam/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/cbam-und-grenzausgleich/ | `begriffe/cbam-und-grenzausgleich/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
+| https://wirkungsoekonomie.de/begriffe/cbam/ | `begriffe/cbam/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ccs-ladestecker/ | `begriffe/ccs-ladestecker/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/chademo/ | `begriffe/chademo/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/change-story-und-kommunikationsarchitektur/ | `begriffe/change-story-und-kommunikationsarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/change-impact-und-betroffenheitsanalyse/ | `begriffe/change-impact-und-betroffenheitsanalyse/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/change-netzwerk-und-multiplikatorenmodell/ | `begriffe/change-netzwerk-und-multiplikatorenmodell/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/change-story-und-kommunikationsarchitektur/ | `begriffe/change-story-und-kommunikationsarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/checks-and-balances/ | `begriffe/checks-and-balances/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/cherry-picking/ | `begriffe/cherry-picking/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/chicago-school/ | `begriffe/chicago-school/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/chicken-game/ | `begriffe/chicken-game/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/circular-regenerative-economy/ | `begriffe/circular-regenerative-economy/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/circular-economy-butterfly-model/ | `begriffe/circular-economy-butterfly-model/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/zirkularitaetsindikator/ | `begriffe/zirkularitaetsindikator/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/circular-regenerative-economy/ | `begriffe/circular-regenerative-economy/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/civic-literacy/ | `begriffe/civic-literacy/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/clean-industrial-deal/ | `begriffe/clean-industrial-deal/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/climate-neutral-claim/ | `begriffe/climate-neutral-claim/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -331,8 +235,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/co2e/ | `begriffe/co2e/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/coase-theorem/ | `begriffe/coase-theorem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/cognitive-ease/ | `begriffe/cognitive-ease/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
-| https://wirkungsoekonomie.de/begriffe/commons/ | `begriffe/commons/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/commons-gemeingueter/ | `begriffe/commons-gemeingueter/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/commons/ | `begriffe/commons/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/conflict-minerals-regulation/ | `begriffe/conflict-minerals-regulation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/contracts-for-difference/ | `begriffe/contracts-for-difference/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/cooling-off-regel/ | `begriffe/cooling-off-regel/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -343,8 +247,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/cradle-to-grave/ | `begriffe/cradle-to-grave/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/creator-als-oeffentliche-akteure/ | `begriffe/creator-als-oeffentliche-akteure/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/crrem/ | `begriffe/crrem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/csddd/ | `begriffe/csddd/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/csddd-corporate-sustainability-due-diligence-directive/ | `begriffe/csddd-corporate-sustainability-due-diligence-directive/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/csddd/ | `begriffe/csddd/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/cso/ | `begriffe/cso/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/csrd/ | `begriffe/csrd/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/cyberresilienz/ | `begriffe/cyberresilienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -375,8 +279,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/deliberation/ | `begriffe/deliberation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/deliberative-demokratie/ | `begriffe/deliberative-demokratie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/demand-response/ | `begriffe/demand-response/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/demokratie/ | `begriffe/demokratie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/demokratie-umdeutung/ | `begriffe/demokratie-umdeutung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/demokratie/ | `begriffe/demokratie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/demokratiefeindlichkeit/ | `begriffe/demokratiefeindlichkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/demokratiekompetenz/ | `begriffe/demokratiekompetenz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/demokratieprinzip/ | `begriffe/demokratieprinzip/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -386,8 +290,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/demokratische-gegenwirkung/ | `begriffe/demokratische-gegenwirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/demokratische-korrekturfaehigkeit/ | `begriffe/demokratische-korrekturfaehigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/demokratische-oeffentlichkeit/ | `begriffe/demokratische-oeffentlichkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/demokratische-resilienz/ | `begriffe/demokratische-resilienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/demokratische-resilienz-gegen-extremismus/ | `begriffe/demokratische-resilienz-gegen-extremismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/demokratische-resilienz/ | `begriffe/demokratische-resilienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/demokratische-rueckkopplung/ | `begriffe/demokratische-rueckkopplung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/demokratische-staatsschuld/ | `begriffe/demokratische-staatsschuld/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/demokratische-wirkungsarchitektur/ | `begriffe/demokratische-wirkungsarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -402,14 +306,14 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/destruktive-vertrauensbindung/ | `begriffe/destruktive-vertrauensbindung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/destruktives-narrativ/ | `begriffe/destruktives-narrativ/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/deutsche-nachhaltigkeitsstrategie/ | `begriffe/deutsche-nachhaltigkeitsstrategie/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, dns |
-| https://wirkungsoekonomie.de/begriffe/dezentralisierung/ | `begriffe/dezentralisierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/dezentralisierung-von-macht/ | `begriffe/dezentralisierung-von-macht/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/dezentralisierung/ | `begriffe/dezentralisierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/diffusion/ | `begriffe/diffusion/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/digital-ki-plattform-standards/ | `begriffe/digital-ki-plattform-standards/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/digitale-selbstbestimmung/ | `begriffe/digitale-selbstbestimmung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/digitaler-produktpass/ | `begriffe/digitaler-produktpass/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/digitalisierung/ | `begriffe/digitalisierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/digitalisierung-als-infrastruktur-der-wirkungsoekonomie/ | `begriffe/digitalisierung-als-infrastruktur-der-wirkungsoekonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/digitalisierung/ | `begriffe/digitalisierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/diktatur/ | `begriffe/diktatur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/direkte-demokratie/ | `begriffe/direkte-demokratie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/direkte-elektrifizierung/ | `begriffe/direkte-elektrifizierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -432,12 +336,13 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/donut-oekonomie/ | `begriffe/donut-oekonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/doppelte-wesentlichkeit/ | `begriffe/doppelte-wesentlichkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/dora/ | `begriffe/dora/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/dosis/ | `begriffe/dosis/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/dosis-wirkungs-beziehung/ | `begriffe/dosis-wirkungs-beziehung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/dosis/ | `begriffe/dosis/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/downcycling/ | `begriffe/downcycling/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/drain-the-swamp/ | `begriffe/drain-the-swamp/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/drehtuer-effekt/ | `begriffe/drehtuer-effekt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/dsa/ | `begriffe/dsa/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/dsa-digital-services-act/ | `begriffe/dsa-digital-services-act/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/dsa/ | `begriffe/dsa/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/dsgvo/ | `begriffe/dsgvo/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/dunkelflaute/ | `begriffe/dunkelflaute/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/dunning-kruger-effekt/ | `begriffe/dunning-kruger-effekt/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
@@ -445,13 +350,13 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/dynamisches-lastmanagement/ | `begriffe/dynamisches-lastmanagement/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/e-fuel/ | `begriffe/e-fuel/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/e-gesetzgebung/ | `begriffe/e-gesetzgebung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa |
-| https://wirkungsoekonomie.de/begriffe/eba/ | `begriffe/eba/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/eba-leitlinien-esg-risiken/ | `begriffe/eba-leitlinien-esg-risiken/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/eba/ | `begriffe/eba/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ecg-gwoe/ | `begriffe/ecg-gwoe/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/echokammer/ | `begriffe/echokammer/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/eeg/ | `begriffe/eeg/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/effektivitaet/ | `begriffe/effektivitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/effektivitaet-vs-effizienz/ | `begriffe/effektivitaet-vs-effizienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/effektivitaet/ | `begriffe/effektivitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/effizienz/ | `begriffe/effizienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/efrag/ | `begriffe/efrag/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/efuels/ | `begriffe/efuels/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
@@ -475,8 +380,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/elektromobilitaetsdienstleister/ | `begriffe/elektromobilitaetsdienstleister/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/elektronische-nachhaltigkeitspruefung/ | `begriffe/elektronische-nachhaltigkeitspruefung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns |
 | https://wirkungsoekonomie.de/begriffe/elinor-ostrom/ | `begriffe/elinor-ostrom/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/emergenz/ | `begriffe/emergenz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/emergenz-des-klassischen/ | `begriffe/emergenz-des-klassischen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/emergenz/ | `begriffe/emergenz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/emissionsfaktor/ | `begriffe/emissionsfaktor/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/emissionshandel/ | `begriffe/emissionshandel/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/emotionale-arbeit/ | `begriffe/emotionale-arbeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -507,8 +412,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/energiewende/ | `begriffe/energiewende/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/energiewirtschaft/ | `begriffe/energiewirtschaft/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/energiewirtschaftsgesetz/ | `begriffe/energiewirtschaftsgesetz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/energy-sharing/ | `begriffe/energy-sharing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/energy-only-markt/ | `begriffe/energy-only-markt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/energy-sharing/ | `begriffe/energy-sharing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/engpass-und-reverse-merit-analyse/ | `begriffe/engpass-und-reverse-merit-analyse/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/engpass-verschwendungs-und-externalitaetenanalyse/ | `begriffe/engpass-verschwendungs-und-externalitaetenanalyse/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/engpasslogik/ | `begriffe/engpasslogik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -539,21 +444,21 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/erwuenschte-wirkung/ | `begriffe/erwuenschte-wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/esap/ | `begriffe/esap/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/esef/ | `begriffe/esef/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/esg/ | `begriffe/esg/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/esg-beratung/ | `begriffe/esg-beratung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/esg-rating/ | `begriffe/esg-rating/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/esg/ | `begriffe/esg/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/esma/ | `begriffe/esma/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/espr/ | `begriffe/espr/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/esrs/ | `begriffe/esrs/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/esrs-themenstandards/ | `begriffe/esrs-themenstandards/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/esrs/ | `begriffe/esrs/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ets/ | `begriffe/ets/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/eu/ | `begriffe/eu/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/eu-climate-law/ | `begriffe/eu-climate-law/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/eu-ecolabel/ | `begriffe/eu-ecolabel/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/eu-green-bond-standard/ | `begriffe/eu-green-bond-standard/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/eu-nachhaltigkeitsverfassungsrahmen/ | `begriffe/eu-nachhaltigkeitsverfassungsrahmen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/eu-taxonomie/ | `begriffe/eu-taxonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/eu-taxonomie-immobilien/ | `begriffe/eu-taxonomie-immobilien/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/eu-taxonomie/ | `begriffe/eu-taxonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/eu/ | `begriffe/eu/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/eudr/ | `begriffe/eudr/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/europa-als-wirkungsraum/ | `begriffe/europa-als-wirkungsraum/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/europaeisches-klimagesetz/ | `begriffe/europaeisches-klimagesetz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -571,8 +476,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/externalisierung/ | `begriffe/externalisierung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/externalisierungsluecke/ | `begriffe/externalisierungsluecke/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/externalitaet/ | `begriffe/externalitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/externalitaeten/ | `begriffe/externalitaeten/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/externalitaeten-und-kostenverlagerungskarte/ | `begriffe/externalitaeten-und-kostenverlagerungskarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/externalitaeten/ | `begriffe/externalitaeten/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/extraktiver-kapitalismus/ | `begriffe/extraktiver-kapitalismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/extrem/ | `begriffe/extrem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/extremismus/ | `begriffe/extremismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -611,21 +516,21 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/flexibilitaet-energiesystem/ | `begriffe/flexibilitaet-energiesystem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/flexibilitaetsmarkt/ | `begriffe/flexibilitaetsmarkt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/flood-the-zone/ | `begriffe/flood-the-zone/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/foerdercontrolling/ | `begriffe/foerdercontrolling/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/foerderlogik/ | `begriffe/foerderlogik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/folgekosten/ | `begriffe/folgekosten/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/folgekostenvermeidung/ | `begriffe/folgekostenvermeidung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/folgencheck/ | `begriffe/folgencheck/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/folgenfreiheit/ | `begriffe/folgenfreiheit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/folgewirkung/ | `begriffe/folgewirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/forced-labour-regulation/ | `begriffe/forced-labour-regulation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/foerdercontrolling/ | `begriffe/foerdercontrolling/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/foerderlogik/ | `begriffe/foerderlogik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/fossile-alternative/ | `begriffe/fossile-alternative/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/fossile-systemkosten/ | `begriffe/fossile-systemkosten/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/fossiles-kraftwerk/ | `begriffe/fossiles-kraftwerk/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/frame/ | `begriffe/frame/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/framing/ | `begriffe/framing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/framekontrolle/ | `begriffe/framekontrolle/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/framing-sprache-tonalitaet/ | `begriffe/framing-sprache-tonalitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
+| https://wirkungsoekonomie.de/begriffe/framing/ | `begriffe/framing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/frankfurter-schule/ | `begriffe/frankfurter-schule/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/fraunhofersche-linien/ | `begriffe/fraunhofersche-linien/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/frederic-vester/ | `begriffe/frederic-vester/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -640,15 +545,16 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/friedrich-hayek/ | `begriffe/friedrich-hayek/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/fuehrerkult/ | `begriffe/fuehrerkult/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/fuehrerprinzip/ | `begriffe/fuehrerprinzip/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/fuenftes-p-planet/ | `begriffe/fuenftes-p-planet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/functional-finance/ | `begriffe/functional-finance/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/fundamentaler-attributionsfehler/ | `begriffe/fundamentaler-attributionsfehler/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/funktionale-wirkungsfinanzpolitik/ | `begriffe/funktionale-wirkungsfinanzpolitik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/fusion/ | `begriffe/fusion/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/garantie/ | `begriffe/garantie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/gaskraftwerk/ | `begriffe/gaskraftwerk/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/gebaeudestandards/ | `begriffe/gebaeudestandards/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/gebaeudeenergiegesetz/ | `begriffe/gebaeudeenergiegesetz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/gebaeudeenergieperformance/ | `begriffe/gebaeudeenergieperformance/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/gebaeudestandards/ | `begriffe/gebaeudestandards/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/gebrauchsgueter/ | `begriffe/gebrauchsgueter/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/gebrauchswert/ | `begriffe/gebrauchswert/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/gedaechtniskonsolidierung/ | `begriffe/gedaechtniskonsolidierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -727,13 +633,13 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/grenzkraftwerk/ | `begriffe/grenzkraftwerk/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/grenznutzen/ | `begriffe/grenznutzen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/gri/ | `begriffe/gri/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/gruener-kapitalismus/ | `begriffe/gruener-kapitalismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/gruener-wasserstoff/ | `begriffe/gruener-wasserstoff/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/gruenstrom/ | `begriffe/gruenstrom/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/grunddividende/ | `begriffe/grunddividende/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/grundgesetz/ | `begriffe/grundgesetz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/grundlast/ | `begriffe/grundlast/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/grundrechte/ | `begriffe/grundrechte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/gruener-kapitalismus/ | `begriffe/gruener-kapitalismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/gruener-wasserstoff/ | `begriffe/gruener-wasserstoff/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/gruenstrom/ | `begriffe/gruenstrom/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/gruppenbezogene-menschenfeindlichkeit/ | `begriffe/gruppenbezogene-menschenfeindlichkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/gruppendenken/ | `begriffe/gruppendenken/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/gsbp/ | `begriffe/gsbp/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -771,8 +677,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/heizkostenrisiko/ | `begriffe/heizkostenrisiko/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/heritage-foundation/ | `begriffe/heritage-foundation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/herkunftsframe/ | `begriffe/herkunftsframe/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/herkunftsnachweis/ | `begriffe/herkunftsnachweis/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/herkunftsnachweis-hkn/ | `begriffe/herkunftsnachweis-hkn/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/herkunftsnachweis/ | `begriffe/herkunftsnachweis/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/herkunftstransparenz/ | `begriffe/herkunftstransparenz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/herstellen-arendt/ | `begriffe/herstellen-arendt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/hfcs-hydrofluorocarbons/ | `begriffe/hfcs-hydrofluorocarbons/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -780,47 +686,46 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/hitzestress/ | `begriffe/hitzestress/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/hoax/ | `begriffe/hoax/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/hochspannung/ | `begriffe/hochspannung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/hoechstspannung/ | `begriffe/hoechstspannung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/hochwasserrisiko/ | `begriffe/hochwasserrisiko/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/hoechstspannung/ | `begriffe/hoechstspannung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/homo-oeconomicus/ | `begriffe/homo-oeconomicus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/horizon-scanning-und-schwache-signale-radar/ | `begriffe/horizon-scanning-und-schwache-signale-radar/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/host-wirkungsscore/ | `begriffe/host-wirkungsscore/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/host-wirkung/ | `begriffe/host-wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
+| https://wirkungsoekonomie.de/begriffe/host-wirkungsscore/ | `begriffe/host-wirkungsscore/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/hostile-media-effect/ | `begriffe/hostile-media-effect/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/hotspot-analyse/ | `begriffe/hotspot-analyse/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/hpc-charger/ | `begriffe/hpc-charger/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/human-rights-due-diligence/ | `begriffe/human-rights-due-diligence/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/human-rights-impact-assessment/ | `begriffe/human-rights-impact-assessment/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/maturana-varela/ | `begriffe/maturana-varela/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/humusaufbau/ | `begriffe/humusaufbau/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/hunger-hungerbekaempfung/ | `begriffe/hunger-hungerbekaempfung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/hybride-kriegsfuehrung/ | `begriffe/hybride-kriegsfuehrung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/hybridregime/ | `begriffe/hybridregime/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/hydrologischer-kreislauf/ | `begriffe/hydrologischer-kreislauf/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/hydrometallurgie/ | `begriffe/hydrometallurgie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/identitaetsschutz/ | `begriffe/identitaetsschutz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/identitaetsschutz-kognition/ | `begriffe/identitaetsschutz-kognition/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/identitaetsschutz/ | `begriffe/identitaetsschutz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/idgs/ | `begriffe/idgs/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/iea/ | `begriffe/iea/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/illiberale-demokratie/ | `begriffe/illiberale-demokratie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/ilo/ | `begriffe/ilo/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ilo-kernarbeitsnormen/ | `begriffe/ilo-kernarbeitsnormen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/ilo/ | `begriffe/ilo/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/immanuel-kant/ | `begriffe/immanuel-kant/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/immobilien/ | `begriffe/immobilien/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/impact/ | `begriffe/impact/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
-| https://wirkungsoekonomie.de/begriffe/impact-benefits-realization/ | `begriffe/impact-benefits-realization/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/impact-fit/ | `begriffe/impact-fit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/impact-investing/ | `begriffe/impact-investing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/impact-materiality/ | `begriffe/impact-materiality/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/impact-strategie/ | `begriffe/impact-strategie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/impact-value/ | `begriffe/impact-value/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/impact-and-benefits-realization-map/ | `begriffe/impact-and-benefits-realization-map/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/impact-benefits-realization/ | `begriffe/impact-benefits-realization/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/impact-controlling/ | `begriffe/impact-controlling/index.html` | ADD_GLOSSARY_CROSSLINKS | novelty_or_absence |
+| https://wirkungsoekonomie.de/begriffe/impact-fit/ | `begriffe/impact-fit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/impact-governance-frameworks/ | `begriffe/impact-governance-frameworks/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/impact-investing/ | `begriffe/impact-investing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/impact-management/ | `begriffe/impact-management/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/impact-marketing/ | `begriffe/impact-marketing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/impact-materiality/ | `begriffe/impact-materiality/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/impact-of-investment/ | `begriffe/impact-of-investment/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/impact-strategie/ | `begriffe/impact-strategie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/impact-value/ | `begriffe/impact-value/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/impact-washing/ | `begriffe/impact-washing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/ingroup-outgroup-dynamik/ | `begriffe/ingroup-outgroup-dynamik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/impact/ | `begriffe/impact/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/industrielle-dekonstruktion/ | `begriffe/industrielle-dekonstruktion/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/industriestrom/ | `begriffe/industriestrom/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/inertia/ | `begriffe/inertia/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -832,6 +737,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/informelles-wissen/ | `begriffe/informelles-wissen/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/infraschall/ | `begriffe/infraschall/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/infrastrukturelle-staatsschuld/ | `begriffe/infrastrukturelle-staatsschuld/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/ingroup-outgroup-dynamik/ | `begriffe/ingroup-outgroup-dynamik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/initiativenauftrag-und-wirkungsvertrag/ | `begriffe/initiativenauftrag-und-wirkungsvertrag/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/innere-loops/ | `begriffe/innere-loops/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/innovation/ | `begriffe/innovation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -845,10 +751,10 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/institutionenkritik/ | `begriffe/institutionenkritik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/institutionenoekonomik/ | `begriffe/institutionenoekonomik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/integration-als-infrastruktur/ | `begriffe/integration-als-infrastruktur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/integrierte-assurance/ | `begriffe/integrierte-assurance/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/integrierte-assurance-map-und-three-lines/ | `begriffe/integrierte-assurance-map-und-three-lines/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/interdependenz/ | `begriffe/interdependenz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/integrierte-assurance/ | `begriffe/integrierte-assurance/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/interdependenz-und-abhaengigkeitsmatrix/ | `begriffe/interdependenz-und-abhaengigkeitsmatrix/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/interdependenz/ | `begriffe/interdependenz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/interdisziplinaritaet/ | `begriffe/interdisziplinaritaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/interessenkonflikt/ | `begriffe/interessenkonflikt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/interessenvertretung/ | `begriffe/interessenvertretung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -865,8 +771,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/ipbes/ | `begriffe/ipbes/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ipcc/ | `begriffe/ipcc/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/iro/ | `begriffe/iro/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/iso/ | `begriffe/iso/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/iso-14040-14044/ | `begriffe/iso-14040-14044/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/iso/ | `begriffe/iso/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/issb-ifrs-s1-s2/ | `begriffe/issb-ifrs-s1-s2/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/jobs-to-be-done/ | `begriffe/jobs-to-be-done/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/jochen-roepke/ | `begriffe/jochen-roepke/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -878,9 +784,9 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/kapazitaets-ressourcen-und-kritischer-pfad-plan/ | `begriffe/kapazitaets-ressourcen-und-kritischer-pfad-plan/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kapazitaetsmarkt/ | `begriffe/kapazitaetsmarkt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kapazitaetsreserve/ | `begriffe/kapazitaetsreserve/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/kapital/ | `begriffe/kapital/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/kapital-als-machtverhaeltnis/ | `begriffe/kapital-als-machtverhaeltnis/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kapital-als-werkzeug/ | `begriffe/kapital-als-werkzeug/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/kapital/ | `begriffe/kapital/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/kapitalakkumulation/ | `begriffe/kapitalakkumulation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kapitalfluss/ | `begriffe/kapitalfluss/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kapitalismus/ | `begriffe/kapitalismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -898,20 +804,19 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/key-impact-controls-und-kontrollbibliothek/ | `begriffe/key-impact-controls-und-kontrollbibliothek/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/key-impact-indicator/ | `begriffe/key-impact-indicator/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/keynesianismus/ | `begriffe/keynesianismus/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
-| https://wirkungsoekonomie.de/begriffe/ki-und-arbeit/ | `begriffe/ki-und-arbeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ki-agenten-incident-abschalt-und-rueckbauplan/ | `begriffe/ki-agenten-incident-abschalt-und-rueckbauplan/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ki-governance/ | `begriffe/ki-governance/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/ki-lebenszyklus-modellrisiko-und-human-oversight-canvas/ | `begriffe/ki-lebenszyklus-modellrisiko-und-human-oversight-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ki-system-wirkungsfolgenabschaetzung/ | `begriffe/ki-system-wirkungsfolgenabschaetzung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung |
-| https://wirkungsoekonomie.de/begriffe/kii/ | `begriffe/kii/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
+| https://wirkungsoekonomie.de/begriffe/ki-und-arbeit/ | `begriffe/ki-und-arbeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kii-design-key-impact-indicators/ | `begriffe/kii-design-key-impact-indicators/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/kii/ | `begriffe/kii/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/kinderarbeit-zwangsarbeit/ | `begriffe/kinderarbeit-zwangsarbeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/kipppunkt/ | `begriffe/kipppunkt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kipppunkt-systemschwelle/ | `begriffe/kipppunkt-systemschwelle/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/kipppunkt/ | `begriffe/kipppunkt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kipppunkte/ | `begriffe/kipppunkte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/klassischer-liberalismus/ | `begriffe/klassischer-liberalismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kleptokratie/ | `begriffe/kleptokratie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/klimastandards/ | `begriffe/klimastandards/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/klimaanpassung/ | `begriffe/klimaanpassung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/klimaanpassungsmanagerin/ | `begriffe/klimaanpassungsmanagerin/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/klimabeschluss-des-bundesverfassungsgerichts/ | `begriffe/klimabeschluss-des-bundesverfassungsgerichts/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung |
@@ -920,9 +825,11 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/klimaneutralitaet/ | `begriffe/klimaneutralitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/klimarisiko/ | `begriffe/klimarisiko/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/klimaschutz/ | `begriffe/klimaschutz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/klimastandards/ | `begriffe/klimastandards/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/klimawandel/ | `begriffe/klimawandel/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/knallzeugen-effekt-blitzlichterinnerung/ | `begriffe/knallzeugen-effekt-blitzlichterinnerung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/knappheit/ | `begriffe/knappheit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/koerperliche-selbstbestimmung/ | `begriffe/koerperliche-selbstbestimmung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kognitive-belastung/ | `begriffe/kognitive-belastung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kognitive-dissonanz/ | `begriffe/kognitive-dissonanz/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/kognitive-last-und-teaminteraktionskarte/ | `begriffe/kognitive-last-und-teaminteraktionskarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -960,7 +867,6 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/kooperationslogik/ | `begriffe/kooperationslogik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kooperative-wehrhaftigkeit/ | `begriffe/kooperative-wehrhaftigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/koordinationsdilemma/ | `begriffe/koordinationsdilemma/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/koerperliche-selbstbestimmung/ | `begriffe/koerperliche-selbstbestimmung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kosten-des-nicht-handelns/ | `begriffe/kosten-des-nicht-handelns/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kosten-des-nichthandelns/ | `begriffe/kosten-des-nichthandelns/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kpi/ | `begriffe/kpi/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -977,29 +883,29 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/krisensimulation-red-teaming-und-tabletop-exercise/ | `begriffe/krisensimulation-red-teaming-und-tabletop-exercise/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kritische-energieinfrastruktur/ | `begriffe/kritische-energieinfrastruktur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kritische-rohstoffe/ | `begriffe/kritische-rohstoffe/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/kuenstliche-intelligenz/ | `begriffe/kuenstliche-intelligenz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kultur-als-resonanzsystem/ | `begriffe/kultur-als-resonanzsystem/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/kultur-verhaltens-und-anreizlandkarte/ | `begriffe/kultur-verhaltens-und-anreizlandkarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kulturelle-anschlussfaehigkeit/ | `begriffe/kulturelle-anschlussfaehigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/kundenanlage/ | `begriffe/kundenanlage/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kundennutzen/ | `begriffe/kundennutzen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/kuenstliche-intelligenz/ | `begriffe/kuenstliche-intelligenz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kurzzeitspeicher/ | `begriffe/kurzzeitspeicher/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/kybernetik/ | `begriffe/kybernetik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/kybernetik-zweiter-ordnung/ | `begriffe/kybernetik-zweiter-ordnung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/kybernetik/ | `begriffe/kybernetik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/label-siegel/ | `begriffe/label-siegel/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/labelwashing/ | `begriffe/labelwashing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/laecherlichkeitsframe/ | `begriffe/laecherlichkeitsframe/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ladeangst/ | `begriffe/ladeangst/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ladeeinrichtung/ | `begriffe/ladeeinrichtung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ladefenster/ | `begriffe/ladefenster/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ladehub/ | `begriffe/ladehub/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ladeinfrastruktur/ | `begriffe/ladeinfrastruktur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ladeleistung/ | `begriffe/ladeleistung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/ladepark/ | `begriffe/ladepark/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ladepark-mittelspannungsanschluss/ | `begriffe/ladepark-mittelspannungsanschluss/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/ladepark/ | `begriffe/ladepark/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ladepunkt/ | `begriffe/ladepunkt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ladepunktbetreiber/ | `begriffe/ladepunktbetreiber/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ladesaeule/ | `begriffe/ladesaeule/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/laecherlichkeitsframe/ | `begriffe/laecherlichkeitsframe/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/laffer-kurve/ | `begriffe/laffer-kurve/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/langfristige-produkt-und-wirkungsverantwortungskarte/ | `begriffe/langfristige-produkt-und-wirkungsverantwortungskarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/langzeitspeicher/ | `begriffe/langzeitspeicher/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1050,15 +956,15 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/lksg/ | `begriffe/lksg/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/lobbyismus/ | `begriffe/lobbyismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/lobbyregister/ | `begriffe/lobbyregister/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/lock-in-pfadabhaengigkeit/ | `begriffe/lock-in-pfadabhaengigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/lock-in-effekt/ | `begriffe/lock-in-effekt/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
+| https://wirkungsoekonomie.de/begriffe/lock-in-pfadabhaengigkeit/ | `begriffe/lock-in-pfadabhaengigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/lohnabstand/ | `begriffe/lohnabstand/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/lohnstueckkosten/ | `begriffe/lohnstueckkosten/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/lokale-energie-als-wirkungsinfrastruktur/ | `begriffe/lokale-energie-als-wirkungsinfrastruktur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ludwig-erhard/ | `begriffe/ludwig-erhard/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ludwig-wittgenstein/ | `begriffe/ludwig-wittgenstein/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/macht-und-gewalt/ | `begriffe/macht-und-gewalt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/macht-abhaengigkeits-und-entscheidungsraumanalyse/ | `begriffe/macht-abhaengigkeits-und-entscheidungsraumanalyse/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/macht-und-gewalt/ | `begriffe/macht-und-gewalt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/macht-widerstands-und-konfliktkarte/ | `begriffe/macht-widerstands-und-konfliktkarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/machtbegrenzung/ | `begriffe/machtbegrenzung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/machtdezentralisierung/ | `begriffe/machtdezentralisierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1083,6 +989,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/material-footprint/ | `begriffe/material-footprint/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/materialgesundheit/ | `begriffe/materialgesundheit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/materialpass/ | `begriffe/materialpass/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/maturana-varela/ | `begriffe/maturana-varela/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/medienfreiheit/ | `begriffe/medienfreiheit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/mediengleichschaltung/ | `begriffe/mediengleichschaltung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/medienqualitaet/ | `begriffe/medienqualitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1154,11 +1061,11 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/nationaler-wohlfahrtsindex/ | `begriffe/nationaler-wohlfahrtsindex/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nationalismus/ | `begriffe/nationalismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/natrium-ionen-batterie/ | `begriffe/natrium-ionen-batterie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/natuerliches-monopol/ | `begriffe/natuerliches-monopol/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/natur-labels/ | `begriffe/natur-labels/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/naturbasierte-loesungen/ | `begriffe/naturbasierte-loesungen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nature-positive/ | `begriffe/nature-positive/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nature-related-risks/ | `begriffe/nature-related-risks/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/natuerliches-monopol/ | `begriffe/natuerliches-monopol/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nca-batterie/ | `begriffe/nca-batterie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nebenwirkung/ | `begriffe/nebenwirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nebenwirkungs-wechselwirkungs-und-rebound-analyse/ | `begriffe/nebenwirkungs-wechselwirkungs-und-rebound-analyse/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1194,9 +1101,9 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/neuropsychologische-wirkmechanismen/ | `begriffe/neuropsychologische-wirkmechanismen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/neutrale-wirkung/ | `begriffe/neutrale-wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nfrd/ | `begriffe/nfrd/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/ngo/ | `begriffe/ngo/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ngo-capture/ | `begriffe/ngo-capture/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ngo-wirkungspruefung/ | `begriffe/ngo-wirkungspruefung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/ngo/ | `begriffe/ngo/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nicht-dualitaet/ | `begriffe/nicht-dualitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nicht-finanzielle-staatsschulden/ | `begriffe/nicht-finanzielle-staatsschulden/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/ | `begriffe/nichtkompensationsprinzip/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1225,18 +1132,17 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/normativer-wert/ | `begriffe/normativer-wert/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/normatives-management/ | `begriffe/normatives-management/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nostalgie-effekt/ | `begriffe/nostalgie-effekt/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
-| https://wirkungsoekonomie.de/begriffe/zero-waste/ | `begriffe/zero-waste/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nullsummenfehler/ | `begriffe/nullsummenfehler/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nutzenergie/ | `begriffe/nutzenergie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nutzenmaximierung/ | `begriffe/nutzenmaximierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nutzer-stakeholder-und-betroffenenreise/ | `begriffe/nutzer-stakeholder-und-betroffenenreise/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/nutzungsdauerverlaengerung/ | `begriffe/nutzungsdauerverlaengerung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/nwi/ | `begriffe/nwi/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oberschwingungen/ | `begriffe/oberschwingungen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/objektspezifische-staatliche-pruefarchitektur/ | `begriffe/objektspezifische-staatliche-pruefarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, evaluation |
-| https://wirkungsoekonomie.de/begriffe/state-assessment-benchmark/ | `begriffe/state-assessment-benchmark/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
 | https://wirkungsoekonomie.de/begriffe/ocpp/ | `begriffe/ocpp/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/oecd/ | `begriffe/oecd/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oecd-leitsaetze/ | `begriffe/oecd-leitsaetze/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/oecd/ | `begriffe/oecd/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oef-organisation-environmental-footprint/ | `begriffe/oef-organisation-environmental-footprint/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oeffentliche-beschaffung/ | `begriffe/oeffentliche-beschaffung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/oeffentliche-finanzen-schulden-wirkung/ | `begriffe/oeffentliche-finanzen-schulden-wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
@@ -1247,21 +1153,22 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/oeffentliche-wirkung/ | `begriffe/oeffentliche-wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oeffentlicher-raum-arendt/ | `begriffe/oeffentlicher-raum-arendt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oeffentlicher-t-sroi/ | `begriffe/oeffentlicher-t-sroi/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/oeffentlichkeit/ | `begriffe/oeffentlichkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oeffentlichkeit-als-wirkungsraum/ | `begriffe/oeffentlichkeit-als-wirkungsraum/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/offsetting-kompensation/ | `begriffe/offsetting-kompensation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/offshore-netzumlage/ | `begriffe/offshore-netzumlage/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/offshore-windenergie/ | `begriffe/offshore-windenergie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/oeffentlichkeit/ | `begriffe/oeffentlichkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oekofeminismus/ | `begriffe/oekofeminismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oekologische-oekonomie/ | `begriffe/oekologische-oekonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oekologische-staatsschuld/ | `begriffe/oekologische-staatsschuld/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oekosoziale-marktwirtschaft/ | `begriffe/oekosoziale-marktwirtschaft/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/oekosystem/ | `begriffe/oekosystem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oekosystem-und-plattformorchestrierungsarchitektur/ | `begriffe/oekosystem-und-plattformorchestrierungsarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/oekosystem/ | `begriffe/oekosystem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oekosystemleistungen-oekosystemfunktionen/ | `begriffe/oekosystemleistungen-oekosystemfunktionen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/oelkraftwerk/ | `begriffe/oelkraftwerk/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/oesterreichische-schule/ | `begriffe/oesterreichische-schule/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/offsetting-kompensation/ | `begriffe/offsetting-kompensation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/offshore-netzumlage/ | `begriffe/offshore-netzumlage/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/offshore-windenergie/ | `begriffe/offshore-windenergie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oligarchie/ | `begriffe/oligarchie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/oligopol/ | `begriffe/oligopol/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/oelkraftwerk/ | `begriffe/oelkraftwerk/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/on-board-charger/ | `begriffe/on-board-charger/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/one-health/ | `begriffe/one-health/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/onshore-windenergie/ | `begriffe/onshore-windenergie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1276,10 +1183,9 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/organisation-environmental-footprint/ | `begriffe/organisation-environmental-footprint/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/organisationswirkungs-canvas/ | `begriffe/organisationswirkungs-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/orientierung/ | `begriffe/orientierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/oesterreichische-schule/ | `begriffe/oesterreichische-schule/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/outcome/ | `begriffe/outcome/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
-| https://wirkungsoekonomie.de/begriffe/outcome-und-empfaengerlandkarte/ | `begriffe/outcome-und-empfaengerlandkarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/outcome-stream-map/ | `begriffe/outcome-stream-map/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/outcome-und-empfaengerlandkarte/ | `begriffe/outcome-und-empfaengerlandkarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/outcome/ | `begriffe/outcome/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/outgroup-homogenitaet/ | `begriffe/outgroup-homogenitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/output/ | `begriffe/output/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/overton-fenster/ | `begriffe/overton-fenster/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1323,8 +1229,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/planetary-health/ | `begriffe/planetary-health/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/planwirtschaft/ | `begriffe/planwirtschaft/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/platform-on-sustainable-finance/ | `begriffe/platform-on-sustainable-finance/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/plattform-und-netzwerkeffekt-canvas/ | `begriffe/plattform-und-netzwerkeffekt-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/plattform-als-wirkungsinfrastruktur-canvas/ | `begriffe/plattform-als-wirkungsinfrastruktur-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/plattform-und-netzwerkeffekt-canvas/ | `begriffe/plattform-und-netzwerkeffekt-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/plattformarbeit/ | `begriffe/plattformarbeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/plattformkapitalismus/ | `begriffe/plattformkapitalismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/plattformlogik-und-algorithmen/ | `begriffe/plattformlogik-und-algorithmen/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
@@ -1351,12 +1257,11 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/positive-netto-wirkung/ | `begriffe/positive-netto-wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/positive-wirkung/ | `begriffe/positive-wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/power-purchase-agreement/ | `begriffe/power-purchase-agreement/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/spannungsqualitaet/ | `begriffe/spannungsqualitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/power-to-x/ | `begriffe/power-to-x/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/praediktive-verarbeitung/ | `begriffe/praediktive-verarbeitung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/praeferenzen/ | `begriffe/praeferenzen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/praevention/ | `begriffe/praevention/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/praevention-als-wirkleistung/ | `begriffe/praevention-als-wirkleistung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/praevention/ | `begriffe/praevention/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/praeventionsdividende/ | `begriffe/praeventionsdividende/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/praeventionsoekonomie/ | `begriffe/praeventionsoekonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/praeventionsschulden/ | `begriffe/praeventionsschulden/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1375,12 +1280,12 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/problem-und-wirkungsbaum/ | `begriffe/problem-und-wirkungsbaum/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/problem-wirkungs-system-markt-fit/ | `begriffe/problem-wirkungs-system-markt-fit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/process-mining-und-realitaetsreview/ | `begriffe/process-mining-und-realitaetsreview/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/product-as-a-service/ | `begriffe/product-as-a-service/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/product-carbon-footprint/ | `begriffe/product-carbon-footprint/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/product-environmental-footprint/ | `begriffe/product-environmental-footprint/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/product-as-a-service/ | `begriffe/product-as-a-service/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/product-market-fit/ | `begriffe/product-market-fit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/produkt-labels/ | `begriffe/produkt-labels/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/produkt-id/ | `begriffe/produkt-id/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/produkt-labels/ | `begriffe/produkt-labels/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/produkt-markt-wirkungs-fit/ | `begriffe/produkt-markt-wirkungs-fit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/produktdaten/ | `begriffe/produktdaten/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/produktfinanzierungs-und-outcome-portfolio/ | `begriffe/produktfinanzierungs-und-outcome-portfolio/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1396,17 +1301,17 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/projektions-bias/ | `begriffe/projektions-bias/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/propaganda/ | `begriffe/propaganda/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/prosumer/ | `begriffe/prosumer/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/prozess-und-systemintegration/ | `begriffe/prozess-und-systemintegration/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/prozess-kii-und-wirkungskontrollpunkte/ | `begriffe/prozess-kii-und-wirkungskontrollpunkte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/prozess-und-systemintegration/ | `begriffe/prozess-und-systemintegration/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/prozessdenken/ | `begriffe/prozessdenken/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/psychologische-sicherheit/ | `begriffe/psychologische-sicherheit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/psychologische-sicherheit-und-wirkungswiderspruch/ | `begriffe/psychologische-sicherheit-und-wirkungswiderspruch/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/psychologische-sicherheit/ | `begriffe/psychologische-sicherheit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/psychologischer-wirkungscheck/ | `begriffe/psychologischer-wirkungscheck/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/psychologisches-stoeckchen/ | `begriffe/psychologisches-stoeckchen/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/ptl-kraftstoff/ | `begriffe/ptl-kraftstoff/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/public-affairs/ | `begriffe/public-affairs/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/public-purpose/ | `begriffe/public-purpose/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/public-purpose-finance/ | `begriffe/public-purpose-finance/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/public-purpose/ | `begriffe/public-purpose/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/pufferspeicher-ladepark/ | `begriffe/pufferspeicher-ladepark/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/pumpspeicher/ | `begriffe/pumpspeicher/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/purpose-washing/ | `begriffe/purpose-washing/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
@@ -1454,8 +1359,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/rechts-politisch/ | `begriffe/rechts-politisch/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/rechtsextremismus/ | `begriffe/rechtsextremismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/rechtsprechung-als-korrekturinstanz/ | `begriffe/rechtsprechung-als-korrekturinstanz/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
-| https://wirkungsoekonomie.de/begriffe/rechtsschutz/ | `begriffe/rechtsschutz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/rechtsschutz-gegen-wirkungsentscheidungen/ | `begriffe/rechtsschutz-gegen-wirkungsentscheidungen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/rechtsschutz/ | `begriffe/rechtsschutz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/rechtsstaatlichkeit/ | `begriffe/rechtsstaatlichkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/rechtsstaatsabbau/ | `begriffe/rechtsstaatsabbau/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/rechtsstaatsprinzip/ | `begriffe/rechtsstaatsprinzip/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1463,11 +1368,11 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/recyclingeffizienz/ | `begriffe/recyclingeffizienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/recyclingquote/ | `begriffe/recyclingquote/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/red-herring/ | `begriffe/red-herring/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/redispatch/ | `begriffe/redispatch/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/redispatch-2-0/ | `begriffe/redispatch-2-0/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/redispatch/ | `begriffe/redispatch/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/redox-flow-batterie/ | `begriffe/redox-flow-batterie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/referenzrahmen/ | `begriffe/referenzrahmen/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/referenzrahmen-und-standardmapping/ | `begriffe/referenzrahmen-und-standardmapping/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/referenzrahmen/ | `begriffe/referenzrahmen/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/refinanzierung/ | `begriffe/refinanzierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/refinanzierungsresilienz/ | `begriffe/refinanzierungsresilienz/index.html` | ADD_GLOSSARY_CROSSLINKS | novelty_or_absence |
 | https://wirkungsoekonomie.de/begriffe/reform/ | `begriffe/reform/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1498,8 +1403,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/reparaturfaehigkeit/ | `begriffe/reparaturfaehigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/reparaturschulden/ | `begriffe/reparaturschulden/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/reparaturwohlstand/ | `begriffe/reparaturwohlstand/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/reparierbarkeit/ | `begriffe/reparierbarkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/reparierbarkeit-recht-auf-reparatur/ | `begriffe/reparierbarkeit-recht-auf-reparatur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/reparierbarkeit/ | `begriffe/reparierbarkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/reporting/ | `begriffe/reporting/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/repowering/ | `begriffe/repowering/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/repraesentation/ | `begriffe/repraesentation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1555,12 +1460,12 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/rueckbauverpflichtung/ | `begriffe/rueckbauverpflichtung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/rueckkopplung/ | `begriffe/rueckkopplung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/rueckkopplungsfaehigkeit/ | `begriffe/rueckkopplungsfaehigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
+| https://wirkungsoekonomie.de/begriffe/rueckkopplungspreis/ | `begriffe/rueckkopplungspreis/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/ruecknahmefaehigkeit/ | `begriffe/ruecknahmefaehigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ruecknahmesystem/ | `begriffe/ruecknahmesystem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/rueckschaufehler/ | `begriffe/rueckschaufehler/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/rueckstellfaehigkeit/ | `begriffe/rueckstellfaehigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/rueckverstromung/ | `begriffe/rueckverstromung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/rueckkopplungspreis/ | `begriffe/rueckkopplungspreis/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/sachleistung/ | `begriffe/sachleistung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/salienz/ | `begriffe/salienz/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/salienzsteuerung/ | `begriffe/salienzsteuerung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1590,18 +1495,19 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/schwarzstartfaehigkeit/ | `begriffe/schwarzstartfaehigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/schweigespirale/ | `begriffe/schweigespirale/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/schwellenwert/ | `begriffe/schwellenwert/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/scope-1/ | `begriffe/scope-1/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/scope-1-2-3/ | `begriffe/scope-1-2-3/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/scope-1/ | `begriffe/scope-1/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/scope-2/ | `begriffe/scope-2/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/scope-3/ | `begriffe/scope-3/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/scope-3-datenqualitaet/ | `begriffe/scope-3-datenqualitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
+| https://wirkungsoekonomie.de/begriffe/scope-3/ | `begriffe/scope-3/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/scorecard/ | `begriffe/scorecard/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/sdg-plus/ | `begriffe/sdg-plus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sdg-sdgplus-referenzrahmen/ | `begriffe/sdg-sdgplus-referenzrahmen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sdg-washing/ | `begriffe/sdg-washing/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
-| https://wirkungsoekonomie.de/begriffe/sdgs/ | `begriffe/sdgs/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sdgs-und-verschwoerungsnarrative/ | `begriffe/sdgs-und-verschwoerungsnarrative/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
+| https://wirkungsoekonomie.de/begriffe/sdgs/ | `begriffe/sdgs/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sealioning/ | `begriffe/sealioning/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/sechster-kondratieff/ | `begriffe/sechster-kondratieff/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/second-life-batterie/ | `begriffe/second-life-batterie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sektorkopplung/ | `begriffe/sektorkopplung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sekundaerregelung/ | `begriffe/sekundaerregelung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1622,6 +1528,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/sfdr/ | `begriffe/sfdr/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/shaolin/ | `begriffe/shaolin/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/shareholder-value/ | `begriffe/shareholder-value/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
+| https://wirkungsoekonomie.de/begriffe/sharing/ | `begriffe/sharing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sicherheits-t-sroi/ | `begriffe/sicherheits-t-sroi/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sicherheitspolitische-staatsschuld/ | `begriffe/sicherheitspolitische-staatsschuld/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sicherheitsresilienz/ | `begriffe/sicherheitsresilienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1632,8 +1539,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/small-modular-reactor/ | `begriffe/small-modular-reactor/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/smart-charging/ | `begriffe/smart-charging/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/smart-grid/ | `begriffe/smart-grid/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/smart-meter/ | `begriffe/smart-meter/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/smart-meter-gateway/ | `begriffe/smart-meter-gateway/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/smart-meter/ | `begriffe/smart-meter/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/social-credit/ | `begriffe/social-credit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/social-solidarity-economy/ | `begriffe/social-solidarity-economy/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/social-taxonomy/ | `begriffe/social-taxonomy/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1641,7 +1548,6 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/solidaritaet/ | `begriffe/solidaritaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sorgearbeit/ | `begriffe/sorgearbeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/souveraenes-stranding-risiko/ | `begriffe/souveraenes-stranding-risiko/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
-| https://wirkungsoekonomie.de/begriffe/sozialstandards/ | `begriffe/sozialstandards/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sozialabgaben/ | `begriffe/sozialabgaben/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/soziale-ansteckung/ | `begriffe/soziale-ansteckung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/soziale-bewaehrtheit/ | `begriffe/soziale-bewaehrtheit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1659,8 +1565,10 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/sozialliberalismus/ | `begriffe/sozialliberalismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sozialstaats-suendenbock/ | `begriffe/sozialstaats-suendenbock/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sozialstaatsprinzip/ | `begriffe/sozialstaatsprinzip/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/sozialstandards/ | `begriffe/sozialstandards/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/sozialtourismus-frame/ | `begriffe/sozialtourismus-frame/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/spannungshaltung/ | `begriffe/spannungshaltung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/spannungsqualitaet/ | `begriffe/spannungsqualitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/speicher-energie/ | `begriffe/speicher-energie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/spekulationslogik/ | `begriffe/spekulationslogik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/spiegeln/ | `begriffe/spiegeln/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1672,10 +1580,9 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/st-galler-management-modell/ | `begriffe/st-galler-management-modell/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/st-galler-managementlehre/ | `begriffe/st-galler-managementlehre/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/st-galler-managementmodell/ | `begriffe/st-galler-managementmodell/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/staat/ | `begriffe/staat/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/staat-2035/ | `begriffe/staat-2035/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/begriffe/staat/ | `begriffe/staat/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/staatliche-nachhaltigkeitsarchitektur/ | `begriffe/staatliche-nachhaltigkeitsarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
-| https://wirkungsoekonomie.de/begriffe/state-gfa-enap-benchmark/ | `begriffe/state-gfa-enap-benchmark/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns |
 | https://wirkungsoekonomie.de/begriffe/staatsdelegitimierung/ | `begriffe/staatsdelegitimierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/staatsfinanzielle-wirkungsblindheit/ | `begriffe/staatsfinanzielle-wirkungsblindheit/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/staatsform/ | `begriffe/staatsform/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1698,12 +1605,14 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/standardmodell-der-teilchenphysik/ | `begriffe/standardmodell-der-teilchenphysik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/standortscorecard/ | `begriffe/standortscorecard/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/standortwirkung/ | `begriffe/standortwirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/state-assessment-benchmark/ | `begriffe/state-assessment-benchmark/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
 | https://wirkungsoekonomie.de/begriffe/state-capture/ | `begriffe/state-capture/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/state-gfa-enap-benchmark/ | `begriffe/state-gfa-enap-benchmark/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns |
 | https://wirkungsoekonomie.de/begriffe/state-of-charge/ | `begriffe/state-of-charge/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/state-of-health/ | `begriffe/state-of-health/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/stationaerer-batteriespeicher/ | `begriffe/stationaerer-batteriespeicher/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/status-threat/ | `begriffe/status-threat/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/status-quo-bias/ | `begriffe/status-quo-bias/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, alternativen |
+| https://wirkungsoekonomie.de/begriffe/status-threat/ | `begriffe/status-threat/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/steuergeld-frame/ | `begriffe/steuergeld-frame/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/steuerkritik/ | `begriffe/steuerkritik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/steuerungsdaten/ | `begriffe/steuerungsdaten/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1733,8 +1642,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/strukturelles-driften/ | `begriffe/strukturelles-driften/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/studienfinanzierung/ | `begriffe/studienfinanzierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/subsidiaritaet/ | `begriffe/subsidiaritaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/suffizienz/ | `begriffe/suffizienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/suendenbockmechanismus/ | `begriffe/suendenbockmechanismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/suffizienz/ | `begriffe/suffizienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/superkondensator/ | `begriffe/superkondensator/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/superposition/ | `begriffe/superposition/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/supply-chain-resilienz/ | `begriffe/supply-chain-resilienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1749,8 +1658,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/systemdienstleistungen/ | `begriffe/systemdienstleistungen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/systemgrenze/ | `begriffe/systemgrenze/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/systemgrenzen-und-reichweiten-canvas/ | `begriffe/systemgrenzen-und-reichweiten-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/systemhebel/ | `begriffe/systemhebel/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/systemhebel-analyse/ | `begriffe/systemhebel-analyse/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/systemhebel/ | `begriffe/systemhebel/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/systemisch-positives-summenspiel/ | `begriffe/systemisch-positives-summenspiel/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/systemische-kohaerenz/ | `begriffe/systemische-kohaerenz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/systemische-kooperation/ | `begriffe/systemische-kooperation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1772,13 +1681,12 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/tar-mittelspannung/ | `begriffe/tar-mittelspannung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/target-gain/ | `begriffe/target-gain/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/tauschwert/ | `begriffe/tauschwert/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/taxonomy-kpis/ | `begriffe/taxonomy-kpis/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/taxonomiefaehigkeit/ | `begriffe/taxonomiefaehigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/taxonomiekonformitaet/ | `begriffe/taxonomiekonformitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/taxonomy-compass/ | `begriffe/taxonomy-compass/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/taxonomy-kpis/ | `begriffe/taxonomy-kpis/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/taxonomy-navigator/ | `begriffe/taxonomy-navigator/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/tcfd/ | `begriffe/tcfd/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/trump-derangement-syndrome/ | `begriffe/trump-derangement-syndrome/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/technische-anschlussregel/ | `begriffe/technische-anschlussregel/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/technische-bewertungskriterien/ | `begriffe/technische-bewertungskriterien/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/technischer-kreislauf/ | `begriffe/technischer-kreislauf/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1787,20 +1695,18 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/technologieabhaengigkeits-lock-in-und-souveraenitaetskarte/ | `begriffe/technologieabhaengigkeits-lock-in-und-souveraenitaetskarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/technologieoffenheit/ | `begriffe/technologieoffenheit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/technologiereifegrad/ | `begriffe/technologiereifegrad/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/sharing/ | `begriffe/sharing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/teilgabe/ | `begriffe/teilgabe/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/teilhabe/ | `begriffe/teilhabe/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/territorialbilanz/ | `begriffe/territorialbilanz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/drain-the-swamp/ | `begriffe/drain-the-swamp/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/theokratie/ | `begriffe/theokratie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/theory-of-change/ | `begriffe/theory-of-change/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/thermal-runaway/ | `begriffe/thermal-runaway/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/thermischer-strompfad/ | `begriffe/thermischer-strompfad/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/thermisches-kraftwerk/ | `begriffe/thermisches-kraftwerk/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/thg/ | `begriffe/thg/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/thg-emissions-scopes/ | `begriffe/thg-emissions-scopes/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/thinktank/ | `begriffe/thinktank/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/thg/ | `begriffe/thg/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/thinktank-netzwerk/ | `begriffe/thinktank-netzwerk/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/thinktank/ | `begriffe/thinktank/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/thomas-piketty/ | `begriffe/thomas-piketty/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/thought-terminating-cliches/ | `begriffe/thought-terminating-cliches/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/tiere/ | `begriffe/tiere/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1808,14 +1714,14 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/tipping-point/ | `begriffe/tipping-point/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/tnfd/ | `begriffe/tnfd/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/tone-policing/ | `begriffe/tone-policing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/totalitarismus/ | `begriffe/totalitarismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/totalitarismus-arendt/ | `begriffe/totalitarismus-arendt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/totalitarismus/ | `begriffe/totalitarismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/totalverweigerer-frame/ | `begriffe/totalverweigerer-frame/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/trafostation/ | `begriffe/trafostation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/transaktionskosten/ | `begriffe/transaktionskosten/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/transferentzugsrate/ | `begriffe/transferentzugsrate/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/transformation/ | `begriffe/transformation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/transformation-office-design-und-delivery-review/ | `begriffe/transformation-office-design-und-delivery-review/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/transformation/ | `begriffe/transformation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/transformationsbacklog-und-portfolio-kanban/ | `begriffe/transformationsbacklog-und-portfolio-kanban/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/transformationsbonus/ | `begriffe/transformationsbonus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/transformationscluster/ | `begriffe/transformationscluster/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1840,6 +1746,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/trittbrettfahren/ | `begriffe/trittbrettfahren/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/trittbrettfahrerproblem/ | `begriffe/trittbrettfahrerproblem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/triviale-maschine/ | `begriffe/triviale-maschine/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/trump-derangement-syndrome/ | `begriffe/trump-derangement-syndrome/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/trustblock/ | `begriffe/trustblock/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/tu-quoque/ | `begriffe/tu-quoque/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/typ-2-stecker/ | `begriffe/typ-2-stecker/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1855,8 +1762,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/umspannwerk/ | `begriffe/umspannwerk/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/umwandlungskette/ | `begriffe/umwandlungskette/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/umweltgerechtigkeit/ | `begriffe/umweltgerechtigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/un/ | `begriffe/un/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/un-guiding-principles/ | `begriffe/un-guiding-principles/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/un/ | `begriffe/un/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/unabhaengige-methoden-modell-und-wirkungspruefung/ | `begriffe/unabhaengige-methoden-modell-und-wirkungspruefung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/unbezahlte-arbeit/ | `begriffe/unbezahlte-arbeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/unesco/ | `begriffe/unesco/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1868,20 +1775,19 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/unterlassungsschuld/ | `begriffe/unterlassungsschuld/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/unternehmen-2035/ | `begriffe/unternehmen-2035/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/unternehmen-als-wirkungssystem/ | `begriffe/unternehmen-als-wirkungssystem/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
-| https://wirkungsoekonomie.de/begriffe/impact-governance-frameworks/ | `begriffe/impact-governance-frameworks/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/unternehmerfunktion/ | `begriffe/unternehmerfunktion/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/unternehmerische-kompetenz/ | `begriffe/unternehmerische-kompetenz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/unternehmerisches-lernen/ | `begriffe/unternehmerisches-lernen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/unternehmertypen-jochen-roepke/ | `begriffe/unternehmertypen-jochen-roepke/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/unvollstaendiger-preis/ | `begriffe/unvollstaendiger-preis/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/upcycling/ | `begriffe/upcycling/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/urban-mining/ | `begriffe/urban-mining/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/urban-mining-batterien/ | `begriffe/urban-mining-batterien/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/urban-mining/ | `begriffe/urban-mining/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/ursachen-incident-und-lernanalyse/ | `begriffe/ursachen-incident-und-lernanalyse/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/urteilskraft/ | `begriffe/urteilskraft/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/value-proposition/ | `begriffe/value-proposition/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/value-proposition-canvas/ | `begriffe/value-proposition-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/value-based-pricing/ | `begriffe/value-based-pricing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/value-proposition-canvas/ | `begriffe/value-proposition-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/value-proposition/ | `begriffe/value-proposition/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/varietaet/ | `begriffe/varietaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/vehicle-to-grid/ | `begriffe/vehicle-to-grid/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/vehicle-to-home/ | `begriffe/vehicle-to-home/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1900,9 +1806,9 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/verfassungspatriotismus/ | `begriffe/verfassungspatriotismus/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/verfuegbarkeitsheuristik/ | `begriffe/verfuegbarkeitsheuristik/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/verfuegbarkeitskaskade/ | `begriffe/verfuegbarkeitskaskade/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/verhaeltnismaessigkeit/ | `begriffe/verhaeltnismaessigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/verhaeltnismaessigkeit-in-der-wirkungsoekonomie/ | `begriffe/verhaeltnismaessigkeit-in-der-wirkungsoekonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/verhaeltnismaessigkeit-nach-wirkung/ | `begriffe/verhaeltnismaessigkeit-nach-wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, alternativen, evaluation |
+| https://wirkungsoekonomie.de/begriffe/verhaeltnismaessigkeit/ | `begriffe/verhaeltnismaessigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/verlustaversion/ | `begriffe/verlustaversion/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/verlustleistung/ | `begriffe/verlustleistung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/verlustschulden/ | `begriffe/verlustschulden/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
@@ -1933,6 +1839,10 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/vulnerabilitaet/ | `begriffe/vulnerabilitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/ | `begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/index.html` | ADD_GLOSSARY_CROSSLINKS | nachhaltigkeitspruefung, enap, evaluation |
 | https://wirkungsoekonomie.de/begriffe/w-bip/ | `begriffe/w-bip/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/waerme-t-sroi/ | `begriffe/waerme-t-sroi/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/waermepumpe/ | `begriffe/waermepumpe/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/waermespeicher/ | `begriffe/waermespeicher/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/waermewende/ | `begriffe/waermewende/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wahlintegritaet/ | `begriffe/wahlintegritaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wahlmanipulation/ | `begriffe/wahlmanipulation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wahrhaftigkeit/ | `begriffe/wahrhaftigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1945,16 +1855,12 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wandlermessung/ | `begriffe/wandlermessung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/waok/ | `begriffe/waok/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/warenfetisch/ | `begriffe/warenfetisch/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/waerme-t-sroi/ | `begriffe/waerme-t-sroi/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/waermepumpe/ | `begriffe/waermepumpe/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/waermespeicher/ | `begriffe/waermespeicher/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/waermewende/ | `begriffe/waermewende/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/warmmietenneutralitaet/ | `begriffe/warmmietenneutralitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wartung/ | `begriffe/wartung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wasserkraft/ | `begriffe/wasserkraft/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wasserstoff/ | `begriffe/wasserstoff/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/wasserstoff-hierarchie/ | `begriffe/wasserstoff-hierarchie/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/wasserstoff-kernnetz/ | `begriffe/wasserstoff-kernnetz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wasserstoff/ | `begriffe/wasserstoff/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/wasserstoffspeicher/ | `begriffe/wasserstoffspeicher/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wasserstress/ | `begriffe/wasserstress/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/watchdog-organisation/ | `begriffe/watchdog-organisation/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -1990,36 +1896,37 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirklichkeitsbindung/ | `begriffe/wirklichkeitsbindung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirklichkeitsfaehigkeit/ | `begriffe/wirklichkeitsfaehigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, alternativen |
 | https://wirkungsoekonomie.de/begriffe/wirklichkeitskonstruktion/ | `begriffe/wirklichkeitskonstruktion/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
-| https://wirkungsoekonomie.de/begriffe/wirkmechanismus/ | `begriffe/wirkmechanismus/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
 | https://wirkungsoekonomie.de/begriffe/wirkmechanismus-canvas/ | `begriffe/wirkmechanismus-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkmechanismus/ | `begriffe/wirkmechanismus/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
+| https://wirkungsoekonomie.de/begriffe/wirkpfad/ | `begriffe/wirkpfad/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirksame-arbeit/ | `begriffe/wirksame-arbeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirksames-management/ | `begriffe/wirksames-management/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirksamkeit/ | `begriffe/wirksamkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkschulden/ | `begriffe/wirkschulden/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkstoff/ | `begriffe/wirkstoff/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkung/ | `begriffe/wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkung-als-rechtsprinzip/ | `begriffe/wirkung-als-rechtsprinzip/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung |
 | https://wirkungsoekonomie.de/begriffe/wirkung-dritter-ordnung/ | `begriffe/wirkung-dritter-ordnung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkung-erster-ordnung/ | `begriffe/wirkung-erster-ordnung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkung-im-preisschild/ | `begriffe/wirkung-im-preisschild/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkung-statt-kapital/ | `begriffe/wirkung-statt-kapital/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkung-zweiter-ordnung/ | `begriffe/wirkung-zweiter-ordnung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkung-im-preisschild/ | `begriffe/wirkung-im-preisschild/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
+| https://wirkungsoekonomie.de/begriffe/wirkung/ | `begriffe/wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungs-bip/ | `begriffe/wirkungs-bip/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungs-bonus-malus-logik/ | `begriffe/wirkungs-bonus-malus-logik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungs-capability/ | `begriffe/wirkungs-capability/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungs-capability-map/ | `begriffe/wirkungs-capability-map/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungs-capability/ | `begriffe/wirkungs-capability/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungs-excellence-selbstbewertung/ | `begriffe/wirkungs-excellence-selbstbewertung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungs-konversion-von-altkapital/ | `begriffe/wirkungs-konversion-von-altkapital/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungs-mvp/ | `begriffe/wirkungs-mvp/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungs-product-operating-model/ | `begriffe/wirkungs-product-operating-model/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungs-product-operating-model-canvas/ | `begriffe/wirkungs-product-operating-model-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungs-product-operating-model/ | `begriffe/wirkungs-product-operating-model/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungs-systemstresstest/ | `begriffe/wirkungs-systemstresstest/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsabwehr/ | `begriffe/wirkungsabwehr/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
-| https://wirkungsoekonomie.de/begriffe/wirkungsanalyse/ | `begriffe/wirkungsanalyse/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungsanalyse-von-sprache/ | `begriffe/wirkungsanalyse-von-sprache/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungsanalyse/ | `begriffe/wirkungsanalyse/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungsarchitektur/ | `begriffe/wirkungsarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, evaluation |
-| https://wirkungsoekonomie.de/begriffe/wirkungsassurance/ | `begriffe/wirkungsassurance/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsassurance-audit-und-methodenpruefung/ | `begriffe/wirkungsassurance-audit-und-methodenpruefung/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
+| https://wirkungsoekonomie.de/begriffe/wirkungsassurance/ | `begriffe/wirkungsassurance/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsaudit/ | `begriffe/wirkungsaudit/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsausgabe/ | `begriffe/wirkungsausgabe/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsbasierter-handel/ | `begriffe/wirkungsbasierter-handel/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
@@ -2035,11 +1942,11 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungsbudgetierung/ | `begriffe/wirkungsbudgetierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungscontrolling/ | `begriffe/wirkungscontrolling/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsdashboard-und-managementcockpit/ | `begriffe/wirkungsdashboard-und-managementcockpit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungsdaten/ | `begriffe/wirkungsdaten/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsdaten-governance-und-data-ownership/ | `begriffe/wirkungsdaten-governance-und-data-ownership/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsdaten-inventur-und-datenflusskarte/ | `begriffe/wirkungsdaten-inventur-und-datenflusskarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungsdatenraum/ | `begriffe/wirkungsdatenraum/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
+| https://wirkungsoekonomie.de/begriffe/wirkungsdaten/ | `begriffe/wirkungsdaten/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsdatenraeume/ | `begriffe/wirkungsdatenraeume/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungsdatenraum/ | `begriffe/wirkungsdatenraum/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsdefizit/ | `begriffe/wirkungsdefizit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsdesign-doppelschleife/ | `begriffe/wirkungsdesign-doppelschleife/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsdilemma/ | `begriffe/wirkungsdilemma/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2051,8 +1958,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungseffizienz/ | `begriffe/wirkungseffizienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungseinkommen/ | `begriffe/wirkungseinkommen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungseinkommensteuer/ | `begriffe/wirkungseinkommensteuer/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungsempfaenger/ | `begriffe/wirkungsempfaenger/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsempfaenger-und-stakeholder-landkarte/ | `begriffe/wirkungsempfaenger-und-stakeholder-landkarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungsempfaenger/ | `begriffe/wirkungsempfaenger/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsentscheidungsmemo/ | `begriffe/wirkungsentscheidungsmemo/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsethik/ | `begriffe/wirkungsethik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsexperiment/ | `begriffe/wirkungsexperiment/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2066,14 +1973,14 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungsfruehwarn-und-eskalationssystem/ | `begriffe/wirkungsfruehwarn-und-eskalationssystem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsfuehrungsrad/ | `begriffe/wirkungsfuehrungsrad/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsgesellschaft/ | `begriffe/wirkungsgesellschaft/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungsgovernance/ | `begriffe/wirkungsgovernance/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungsgovernance-canvas/ | `begriffe/wirkungsgovernance-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungsgovernance/ | `begriffe/wirkungsgovernance/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungsgrad/ | `begriffe/wirkungsgrad/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsgrenze/ | `begriffe/wirkungsgrenze/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsgrenzen-und-rechtepruefung/ | `begriffe/wirkungsgrenzen-und-rechtepruefung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsgutschrift/ | `begriffe/wirkungsgutschrift/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, alternativen |
-| https://wirkungsoekonomie.de/begriffe/wirkungshaushalt/ | `begriffe/wirkungshaushalt/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungshaushalt-ausland/ | `begriffe/wirkungshaushalt-ausland/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungshaushalt/ | `begriffe/wirkungshaushalt/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungshebel/ | `begriffe/wirkungshebel/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungshypothesen-register/ | `begriffe/wirkungshypothesen-register/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsindikator/ | `begriffe/wirkungsindikator/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
@@ -2083,15 +1990,15 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungsintegritaet/ | `begriffe/wirkungsintegritaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsinvestition-des-staates/ | `begriffe/wirkungsinvestition-des-staates/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungskapazitaet-des-staates/ | `begriffe/wirkungskapazitaet-des-staates/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
-| https://wirkungsoekonomie.de/begriffe/wirkungskapital/ | `begriffe/wirkungskapital/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungskapital-und-investitionsgate/ | `begriffe/wirkungskapital-und-investitionsgate/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungskapital/ | `begriffe/wirkungskapital/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungskette/ | `begriffe/wirkungskette/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungsklasse/ | `begriffe/wirkungsklasse/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungskommunikation/ | `begriffe/wirkungskommunikation/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
-| https://wirkungsoekonomie.de/begriffe/wirkungskompass/ | `begriffe/wirkungskompass/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungskompass-ausrichtung/ | `begriffe/wirkungskompass-ausrichtung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungskompetenz/ | `begriffe/wirkungskompetenz/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
+| https://wirkungsoekonomie.de/begriffe/wirkungskompass/ | `begriffe/wirkungskompass/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungskompetenz-matrix/ | `begriffe/wirkungskompetenz-matrix/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungskompetenz/ | `begriffe/wirkungskompetenz/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungskonversionskredit/ | `begriffe/wirkungskonversionskredit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungskredit/ | `begriffe/wirkungskredit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungslenkung/ | `begriffe/wirkungslenkung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2103,10 +2010,9 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungsnachweis/ | `begriffe/wirkungsnachweis/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungsnachweiskonto/ | `begriffe/wirkungsnachweiskonto/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungsnetz/ | `begriffe/wirkungsnetz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungsoffenheit/ | `begriffe/wirkungsoffenheit/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, alternativen |
-| https://wirkungsoekonomie.de/begriffe/wirkungsoekonomin-ph-woek/ | `begriffe/wirkungsoekonomin-ph-woek/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungsoekonomie/ | `begriffe/wirkungsoekonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsoekonomie-im-alltag/ | `begriffe/wirkungsoekonomie-im-alltag/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
+| https://wirkungsoekonomie.de/begriffe/wirkungsoekonomie/ | `begriffe/wirkungsoekonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungsoekonomin-ph-woek/ | `begriffe/wirkungsoekonomin-ph-woek/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsoekonomische-erfolgslogik/ | `begriffe/wirkungsoekonomische-erfolgslogik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsoekonomische-kaufkraftlogik/ | `begriffe/wirkungsoekonomische-kaufkraftlogik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsoekonomische-managementarchitektur/ | `begriffe/wirkungsoekonomische-managementarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2115,6 +2021,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungsoekonomischer-wirkungsgrad/ | `begriffe/wirkungsoekonomischer-wirkungsgrad/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsoekonomisches-managementmodell/ | `begriffe/wirkungsoekonomisches-managementmodell/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsoekonomisches-methodensystem/ | `begriffe/wirkungsoekonomisches-methodensystem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungsoffenheit/ | `begriffe/wirkungsoffenheit/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, alternativen |
 | https://wirkungsoekonomie.de/begriffe/wirkungsoptionen-und-ideenportfolio/ | `begriffe/wirkungsoptionen-und-ideenportfolio/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsordnungen-landkarte/ | `begriffe/wirkungsordnungen-landkarte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsorientierte-forschung-und-innovation/ | `begriffe/wirkungsorientierte-forschung-und-innovation/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
@@ -2127,7 +2034,6 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungsorientiertes-operating-model/ | `begriffe/wirkungsorientiertes-operating-model/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungspaedagogik/ | `begriffe/wirkungspaedagogik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungspartnerschaft/ | `begriffe/wirkungspartnerschaft/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkpfad/ | `begriffe/wirkpfad/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungspflicht-des-eigentums/ | `begriffe/wirkungspflicht-des-eigentums/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungspilot-design/ | `begriffe/wirkungspilot-design/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungspionier/ | `begriffe/wirkungspionier/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2137,13 +2043,14 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungspraxis/ | `begriffe/wirkungspraxis/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsproblem-canvas/ | `begriffe/wirkungsproblem-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsproblem-loesungs-fit/ | `begriffe/wirkungsproblem-loesungs-fit/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen |
-| https://wirkungsoekonomie.de/begriffe/wirkungsprofil/ | `begriffe/wirkungsprofil/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsprofil-im-radardiagramm/ | `begriffe/wirkungsprofil-im-radardiagramm/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungsprofil/ | `begriffe/wirkungsprofil/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsprototyp-canvas/ | `begriffe/wirkungsprototyp-canvas/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungspruefung/ | `begriffe/wirkungspruefung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, folgenabschaetzung, alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungspruefung-oeffentlicher-mittel/ | `begriffe/wirkungspruefung-oeffentlicher-mittel/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungspruefung/ | `begriffe/wirkungspruefung/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, folgenabschaetzung, alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungspunkte/ | `begriffe/wirkungspunkte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsqualitaet-der-schulden/ | `begriffe/wirkungsqualitaet-der-schulden/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungsrad/ | `begriffe/wirkungsrad/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsradar/ | `begriffe/wirkungsradar/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsrat/ | `begriffe/wirkungsrat/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungsraum/ | `begriffe/wirkungsraum/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2152,14 +2059,14 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungsregister/ | `begriffe/wirkungsregister/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsrelevanz-statt-rechtsform/ | `begriffe/wirkungsrelevanz-statt-rechtsform/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsrelevanz-und-materialitaetsanalyse/ | `begriffe/wirkungsrelevanz-und-materialitaetsanalyse/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungsrendite/ | `begriffe/wirkungsrendite/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsrendite-oeffentlicher-ausgaben/ | `begriffe/wirkungsrendite-oeffentlicher-ausgaben/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungsrendite/ | `begriffe/wirkungsrendite/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsrente/ | `begriffe/wirkungsrente/index.html` | ADD_GLOSSARY_CROSSLINKS | novelty_or_absence |
-| https://wirkungsoekonomie.de/begriffe/wirkungsresilienz/ | `begriffe/wirkungsresilienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsresilienz-pfade/ | `begriffe/wirkungsresilienz-pfade/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungsresilienz/ | `begriffe/wirkungsresilienz/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsreview-und-lernende-retrospektive/ | `begriffe/wirkungsreview-und-lernende-retrospektive/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
-| https://wirkungsoekonomie.de/begriffe/wirkungsrisiko/ | `begriffe/wirkungsrisiko/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsrisiko-matrix/ | `begriffe/wirkungsrisiko-matrix/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungsrisiko/ | `begriffe/wirkungsrisiko/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wirkungsrisikomanagement/ | `begriffe/wirkungsrisikomanagement/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsrisikoposition/ | `begriffe/wirkungsrisikoposition/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsrollen-und-verantwortungsmatrix/ | `begriffe/wirkungsrollen-und-verantwortungsmatrix/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2191,8 +2098,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/wirkungswashing/ | `begriffe/wirkungswashing/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungswert/ | `begriffe/wirkungswert/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungswertschoepfung/ | `begriffe/wirkungswertschoepfung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungswertstrom/ | `begriffe/wirkungswertstrom/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungswertstrom-karte/ | `begriffe/wirkungswertstrom-karte/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wirkungswertstrom/ | `begriffe/wirkungswertstrom/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungswissenschaften/ | `begriffe/wirkungswissenschaften/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, evaluation, novelty_or_absence |
 | https://wirkungsoekonomie.de/begriffe/wirkungszielbild/ | `begriffe/wirkungszielbild/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wirkungsziele-und-impact-okr/ | `begriffe/wirkungsziele-und-impact-okr/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2209,18 +2116,10 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/witch-hunt/ | `begriffe/witch-hunt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wix-vi/ | `begriffe/wix-vi/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wkg/ | `begriffe/wkg/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wohlfahrtsoekonomie/ | `begriffe/wohlfahrtsoekonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wohlfahrtsoekonomik/ | `begriffe/wohlfahrtsoekonomik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wohlfahrtsstaat/ | `begriffe/wohlfahrtsstaat/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wohlstand/ | `begriffe/wohlstand/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wohlstand-als-systemzustand/ | `begriffe/wohlstand-als-systemzustand/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wohnwirkung/ | `begriffe/wohnwirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/woek/ | `begriffe/woek/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/woek-id/ | `begriffe/woek-id/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/nwi/ | `begriffe/nwi/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/woek-ids/ | `begriffe/woek-ids/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/woek-indikatorenarchitektur/ | `begriffe/woek-indikatorenarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wirkungsrad/ | `begriffe/wirkungsrad/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/woek/ | `begriffe/woek/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/woemm-betriebssystem/ | `begriffe/woemm-betriebssystem/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/woemm-managementfunktion/ | `begriffe/woemm-managementfunktion/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/woems-auftragsklaerung/ | `begriffe/woems-auftragsklaerung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2231,10 +2130,16 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/woems-realisierungs-und-betriebsmethoden/ | `begriffe/woems-realisierungs-und-betriebsmethoden/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/woems-reifegrad-und-faehigkeitsassessment/ | `begriffe/woems-reifegrad-und-faehigkeitsassessment/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/woems-workshop-journey/ | `begriffe/woems-workshop-journey/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wohlfahrtsoekonomie/ | `begriffe/wohlfahrtsoekonomie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wohlfahrtsoekonomik/ | `begriffe/wohlfahrtsoekonomik/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wohlfahrtsstaat/ | `begriffe/wohlfahrtsstaat/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wohlstand-als-systemzustand/ | `begriffe/wohlstand-als-systemzustand/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wohlstand/ | `begriffe/wohlstand/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wohnwirkung/ | `begriffe/wohnwirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wr/ | `begriffe/wr/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wstg/ | `begriffe/wstg/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/wu-wei/ | `begriffe/wu-wei/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wu-wei-wirksames-nicht-erzwingen/ | `begriffe/wu-wei-wirksames-nicht-erzwingen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/wu-wei/ | `begriffe/wu-wei/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/wustg/ | `begriffe/wustg/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/xbrl/ | `begriffe/xbrl/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/xenophobie/ | `begriffe/xenophobie/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2246,16 +2151,18 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/zen/ | `begriffe/zen/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zentralverwaltungswirtschaft/ | `begriffe/zentralverwaltungswirtschaft/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zero-sum-bias/ | `begriffe/zero-sum-bias/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/zero-waste/ | `begriffe/zero-waste/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zertifizierung/ | `begriffe/zertifizierung/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zielarchitektur-und-uebergangszustaende/ | `begriffe/zielarchitektur-und-uebergangszustaende/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zielbezug-und-wirkung/ | `begriffe/zielbezug-und-wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | dns |
 | https://wirkungsoekonomie.de/begriffe/zielkonflikt/ | `begriffe/zielkonflikt/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zielkonflikte/ | `begriffe/zielkonflikte/index.html` | ADD_GLOSSARY_CROSSLINKS | alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/zielzustand/ | `begriffe/zielzustand/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
-| https://wirkungsoekonomie.de/begriffe/zinslast/ | `begriffe/zinslast/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zinslast-ohne-gegenwert/ | `begriffe/zinslast-ohne-gegenwert/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/zinslast/ | `begriffe/zinslast/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zirkulaeres-geschaeftsmodell/ | `begriffe/zirkulaeres-geschaeftsmodell/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zirkularitaet/ | `begriffe/zirkularitaet/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/begriffe/zirkularitaetsindikator/ | `begriffe/zirkularitaetsindikator/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zivilgesellschaft/ | `begriffe/zivilgesellschaft/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zivilgesellschaftsrepression/ | `begriffe/zivilgesellschaftsrepression/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zugangsgerechtigkeit/ | `begriffe/zugangsgerechtigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
@@ -2268,6 +2175,20 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/zurechnung-ohne-scheingenauigkeit/ | `begriffe/zurechnung-ohne-scheingenauigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zuschuss/ | `begriffe/zuschuss/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
 | https://wirkungsoekonomie.de/begriffe/zyklenfestigkeit/ | `begriffe/zyklenfestigkeit/index.html` | ADD_GLOSSARY_CROSSLINKS | - |
+| https://wirkungsoekonomie.de/bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/ | `bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html` | REVIEW_REQUIRED | wirkungsblind, folgenabschaetzung, alternativen, evaluation |
+| https://wirkungsoekonomie.de/bibliothek/wirkungssteuer-wstg-3-0/ | `bibliothek/wirkungssteuer-wstg-3-0/index.html` | REVIEW_REQUIRED | alternativen, evaluation |
+| https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/ | `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` | REVIEW_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
+| https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/ | `bibliothek/woek-master-items-register/index.html` | REVIEW_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns |
+| https://wirkungsoekonomie.de/blog/enap-woek-benchmark-fuenf-bundesvorhaben.html | `blog/enap-woek-benchmark-fuenf-bundesvorhaben.html` | BENCHMARK_REFERENCE, ADD_BENCHMARK_COMPARISON | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
+| https://wirkungsoekonomie.de/blog/nachhaltigkeit-ist-keine-parteifarbe.html | `blog/nachhaltigkeit-ist-keine-parteifarbe.html` | NO_CHANGE_REQUIRED, CURRENT_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
+| https://wirkungsoekonomie.de/evidenz/ | `evidenz/index.html` | ADD_SOURCE_LINKS | - |
+| https://wirkungsoekonomie.de/fuer/politik.html | `fuer/politik.html` | REWRITE_REQUIRED, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_DNS_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/kompass.html | `kompass.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | nachhaltigkeitspruefung |
+| https://wirkungsoekonomie.de/methodik/ | `methodik/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/methodik/daten-standards-regularien.html | `methodik/daten-standards-regularien.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/methodik/datenbasis.html | `methodik/datenbasis.html` | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/methodik/externe-quellen.html | `methodik/externe-quellen.html` | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/modell.html | `modell.html` | CORRECT_OVERCLAIM, ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/quellenarchiv/ | `quellenarchiv/index.html` | ADD_SOURCE_LINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-e-0001/ | `quellenarchiv/wok-e-0001/index.html` | ADD_SOURCE_LINKS | - |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-e-0002/ | `quellenarchiv/wok-e-0002/index.html` | ADD_SOURCE_LINKS | - |
@@ -3602,102 +3523,90 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9048/ | `quellenarchiv/wok-q-9048/index.html` | ADD_SOURCE_LINKS | enap, dns |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9049/ | `quellenarchiv/wok-q-9049/index.html` | ADD_SOURCE_LINKS | dns |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9050/ | `quellenarchiv/wok-q-9050/index.html` | ADD_SOURCE_LINKS | dns, evaluation |
+| https://wirkungsoekonomie.de/referenz/aktualisierung/ | `referenz/aktualisierung/index.html` | REVIEW_REQUIRED, ADD_DNS_REFERENCE | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/verstehen.html | `verstehen.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | dns, alternativen |
+| https://wirkungsoekonomie.de/verstehen/ausgangslage/ | `verstehen/ausgangslage/index.html` | CORRECT_OVERCLAIM | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/ | `verstehen/sdgs-sdgplus/index.html` | ADD_DNS_REFERENCE | folgenabschaetzung, dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/agenda-2030/ | `verstehen/sdgs-sdgplus/agenda-2030/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/ | `verstehen/sdgs-sdgplus/detailkonzepte/sdg-als-erweiterung-der-wirkungsoekonomie/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/ | `verstehen/sdgs-sdgplus/detailkonzepte/sdg-unterziele-global-europa-und-deutschland/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/ | `verstehen/sdgs-sdgplus/detailkonzepte/sdgs-und-agenda-2030-als-globaler-referenzrahmen/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/dossiers/sdg-als-erweiterung-der-wirkungsoekonomie/ | `verstehen/sdgs-sdgplus/dossiers/sdg-als-erweiterung-der-wirkungsoekonomie/index.html` | ADD_DNS_REFERENCE | folgenabschaetzung, dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/dossiers/sdg-unterziele-global-europa-und-deutschland/ | `verstehen/sdgs-sdgplus/dossiers/sdg-unterziele-global-europa-und-deutschland/index.html` | ADD_DNS_REFERENCE | folgenabschaetzung, dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/dossiers/sdgs-und-agenda-2030-als-globaler-referenzrahmen/ | `verstehen/sdgs-sdgplus/dossiers/sdgs-und-agenda-2030-als-globaler-referenzrahmen/index.html` | ADD_DNS_REFERENCE | folgenabschaetzung, dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/geschichte/ | `verstehen/sdgs-sdgplus/geschichte/index.html` | ADD_DNS_REFERENCE | - |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/ | `verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html` | ADD_DNS_REFERENCE | evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-1-keine-armut/ | `verstehen/sdgs-sdgplus/sdg-1-keine-armut/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/ | `verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/ | `verstehen/sdgs-sdgplus/sdg-11-nachhaltige-staedte-gemeinden/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/ | `verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-13-klimaschutz/ | `verstehen/sdgs-sdgplus/sdg-13-klimaschutz/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/ | `verstehen/sdgs-sdgplus/sdg-14-leben-unter-wasser/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-15-leben-an-land/ | `verstehen/sdgs-sdgplus/sdg-15-leben-an-land/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/ | `verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-17-partnerschaften/ | `verstehen/sdgs-sdgplus/sdg-17-partnerschaften/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-2-kein-hunger/ | `verstehen/sdgs-sdgplus/sdg-2-kein-hunger/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/ | `verstehen/sdgs-sdgplus/sdg-3-gesundheit-wohlergehen/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/ | `verstehen/sdgs-sdgplus/sdg-4-hochwertige-bildung/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/ | `verstehen/sdgs-sdgplus/sdg-5-geschlechtergleichstellung/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/ | `verstehen/sdgs-sdgplus/sdg-6-sauberes-wasser-sanitaereinrichtungen/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/ | `verstehen/sdgs-sdgplus/sdg-7-bezahlbare-saubere-energie/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/ | `verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/ | `verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/sdgplus/ | `verstehen/sdgs-sdgplus/sdgplus/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/ | `verstehen/sdgs-sdgplus/unterziele/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-1/ | `verstehen/sdgs-sdgplus/unterziele/sdg-1/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-10/ | `verstehen/sdgs-sdgplus/unterziele/sdg-10/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-11/ | `verstehen/sdgs-sdgplus/unterziele/sdg-11/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-12/ | `verstehen/sdgs-sdgplus/unterziele/sdg-12/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-13/ | `verstehen/sdgs-sdgplus/unterziele/sdg-13/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-14/ | `verstehen/sdgs-sdgplus/unterziele/sdg-14/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-15/ | `verstehen/sdgs-sdgplus/unterziele/sdg-15/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-16/ | `verstehen/sdgs-sdgplus/unterziele/sdg-16/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-17/ | `verstehen/sdgs-sdgplus/unterziele/sdg-17/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-2/ | `verstehen/sdgs-sdgplus/unterziele/sdg-2/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-3/ | `verstehen/sdgs-sdgplus/unterziele/sdg-3/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-4/ | `verstehen/sdgs-sdgplus/unterziele/sdg-4/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-5/ | `verstehen/sdgs-sdgplus/unterziele/sdg-5/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-6/ | `verstehen/sdgs-sdgplus/unterziele/sdg-6/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-7/ | `verstehen/sdgs-sdgplus/unterziele/sdg-7/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-8/ | `verstehen/sdgs-sdgplus/unterziele/sdg-8/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/unterziele/sdg-9/ | `verstehen/sdgs-sdgplus/unterziele/sdg-9/index.html` | ADD_DNS_REFERENCE | dns, evaluation |
+| https://wirkungsoekonomie.de/verstehen/woek-auf-einer-seite/ | `verstehen/woek-auf-einer-seite/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | wirkungsblind, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/ | `werkstatt/dossiers/staat-recht-demokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/lobbyismus-machtkonzentration/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/lobbyismus-machtkonzentration/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/index.html` | REVIEW_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/verwaltung-rechtsschutz-korrektur/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/verwaltung-rechtsschutz-korrektur/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkung-als-rechtsprinzip/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkung-als-rechtsprinzip/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungseinkommensteuer-westg/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungseinkommensteuer-westg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungshaushalt/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungshaushalt/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsrat/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsrat/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungssteuergesetz-wstg/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungssteuergesetz-wstg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/index.html` | REVIEW_REQUIRED | evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/lobbyismus-machtkonzentration/ | `werkstatt/dossiers/staat-recht-demokratie/lobbyismus-machtkonzentration/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/ | `werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/index.html` | REWRITE_OR_ADDENDUM_REQUIRED, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/verwaltung-rechtsschutz-korrektur/ | `werkstatt/dossiers/staat-recht-demokratie/verwaltung-rechtsschutz-korrektur/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkung-als-rechtsprinzip/ | `werkstatt/dossiers/staat-recht-demokratie/wirkung-als-rechtsprinzip/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungseinkommensteuer-westg/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungseinkommensteuer-westg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungshaushalt/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungshaushalt/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungsrat/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungsrat/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungssteuergesetz-wstg/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungssteuergesetz-wstg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungsumsatzsteuer-rechtsrahmen/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungsumsatzsteuer-rechtsrahmen/index.html` | REVIEW_REQUIRED | evaluation |
+| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/ | `wirkungsfelder/staat-recht-demokratie/index.html` | CORRECT_OVERCLAIM, ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/staat-als-wirkungsarchitektur-resilienzstaat/ | `wirkungsfelder/staat-recht-demokratie/staat-als-wirkungsarchitektur-resilienzstaat/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/ | `wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/index.html` | ADD_GGO_GFA_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/ | `wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/index.html` | ADDENDUM_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkungsrat-governance/ | `wirkungsfelder/staat-recht-demokratie/wirkungsrat-governance/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/wirkungsoekonomie.html | `wirkungsoekonomie.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | dns |
+| https://wirkungsoekonomie.de/wirkungswissenschaften/ | `wirkungswissenschaften/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 
 ## Claim-signal review
 
 Signals are review candidates, not automatic errors.
 
-- `modell.html` - wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation - Add German DNS operationalisation and existing GGO/GFA/eNAP architecture; define Wirkungsblindheit as incomplete causal/decision feedback.
-- `fuer/akademie.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `fuer/gesundheit.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `fuer/rente.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `buch.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `blog/wirkungsoekonomie-kein-parteiprogramm.html` - dns, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `blog/wirkungsoekonomie-lernendes-kreislaufsystem.html` - wirkungsblind - No material #253 change identified by path rule; semantic scan still applies.
-- `blog/leistung-ohne-wirkung.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `werkzeuge/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/arbeit-einkommen/wirkungseinkommen/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/index.html` - folgenabschaetzung, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/medien-oeffentlichkeit/konzept/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/index.html` - alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/wirtschaft-unternehmen/marketing-vertrieb-fuenftes-p-planet/index.html` - wirkungsblind, alternativen, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/migration-vielfalt/vielfalt-als-resilienzfaktor/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/digitalisierung-ki-wirkungsdatenraeume/digitale-produktpaesse/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsdatenraeume/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/digitalisierung-ki-wirkungsdatenraeume/ki-governance/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/digitalisierung-ki-wirkungsdatenraeume/algorithmische-fairness/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/digitalisierung-ki-wirkungsdatenraeume/digitale-souveraenitaet/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/digitalisierung-ki-wirkungsdatenraeume/cyberresilienz/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/digitalisierung-ki-wirkungsdatenraeume/plattformlogik/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsscanner/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/digitalisierung-ki-wirkungsdatenraeume/interoperabilitaet-register/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/digitalisierung-ki-wirkungsdatenraeume/audit-assurance-datenqualitaet/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/kritik-missverstaendnisse-schutzarchitektur/widerstand-neue-massstaebe/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/kritik-missverstaendnisse-schutzarchitektur/sdgs-verschwoerungsnarrativ/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/kritik-missverstaendnisse-schutzarchitektur/technokratie-social-credit/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/kritik-missverstaendnisse-schutzarchitektur/wirkungssimulation-manipulation/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/kritik-missverstaendnisse-schutzarchitektur/freiheit-markt-planwirtschaft/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/kritik-missverstaendnisse-schutzarchitektur/fehlbarkeit-korrektur/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/kritik-missverstaendnisse-schutzarchitektur/datenmacht-datenschutz/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/kritik-missverstaendnisse-schutzarchitektur/kommunikation-framing-akzeptanz/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/kritik-missverstaendnisse-schutzarchitektur/missbrauchsschutz-rechtsschutz-governance/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/kritik-missverstaendnisse-schutzarchitektur/kritikwerkstatt-beteiligung/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/zukunftsbilder-wirkungswohlstand/alltag-2035/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/zukunftsbilder-wirkungswohlstand/unternehmen-2035/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/zukunftsbilder-wirkungswohlstand/staat-2035/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/zukunftsbilder-wirkungswohlstand/globale-ordnung-2050/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/zukunftsbilder-wirkungswohlstand/wirkungswohlstand/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/zukunftsbilder-wirkungswohlstand/buergerinnen-co-autorinnen/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/zukunftsbilder-wirkungswohlstand/wirkungspraxis/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/zukunftsbilder-wirkungswohlstand/zukunftskommunikation/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/zukunftsbilder-wirkungswohlstand/wirkungs-bip-verlustleistung/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/zukunftsbilder-wirkungswohlstand/schlussbild/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `portale/zukunftsbilder-wirkungswohlstand/gesamtdossier/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/index.html` - wirkungsblind, folgenabschaetzung, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `verstehen/woek-auf-einer-seite/index.html` - wirkungsblind, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation - Add a short fair Anschlussdefinition without overloading the entry page.
-- `erleben/index.html` - folgenabschaetzung, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html` - wirkungsblind, folgenabschaetzung, alternativen, evaluation - Review published artefacts; add visible current-method note/erratum when materially required; never silently rewrite historical files.
-- `blog/wie-wirksam-ist-das-sondervermoegen-wirklich.html` - wirkungsblind, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `blog/nachhaltigkeit-ist-keine-parteifarbe.html` - folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence - Preserve as current source-bound reference; crosslink from relevant current pages.
-- `blog/enap-woek-benchmark-fuenf-bundesvorhaben.html` - folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence - Use as canonical five-case calibration corpus; recheck GGO §§43/44 claims and keep public-GFA vs public-eNAP provenance explicit.
-- `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` - wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence - Review published artefacts; add visible current-method note/erratum when materially required; never silently rewrite historical files.
-- `wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/index.html` - wirkungsblind, alternativen, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `werkzeuge/impact-controlling/index.html` - folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/gesundheit-pflege/dossiers/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsfelder/finanzsystem-kapital/steuer-abgabenarchitektur-kapital/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
-- `blog/demokratie-braucht-mehr-als-gute-sachpolitik.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/deutlicher-anstieg-bei-den-verteidigungsausgaben-05d4f9/index.html` - alternativen, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/john-ternus-apple-bringt-erstes-auffaltbares-iphone-heraus-396b15/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/olpreis-wieder-uber-100-dollar-spritpreise-binnen-einer-woche-stark-gestiegen-41bab3/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/bund-fordert-beethoven-jubilaum-mit-2-3-millionen-euro-staatsminister-weimer-2027-wird-b-58f666/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/bundestag-haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-bee914/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-russland-setzt-angriffe-auf-kiew-nach-dreitagiger-pause-fort-bb3e85/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/us-vermittler-in-der-ukraine-trumps-schwiegersohn-doch-nicht-so-wichtig-7549bd/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/zukunftsangst-dampft-kinderwunsch-64b8b5/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/generaldebatte-deutschland-braucht-mehr-als-einen-gewonnenen-schlagabtausch/index.html` - dns, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/entzauberung-durch-macht-sachsen-anhalt-kein-politisches-experiment/index.html` - alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/grosseinsatz-am-hambacher-forst-was-die-erfolglose-suche-uber-stromnetz-resilienz--3f27f4/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
-- `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `begriffe/index.html` - wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/affektheuristik/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/algorithmische-fairness/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
@@ -3797,8 +3706,8 @@ Signals are review candidates, not automatic errors.
 - `begriffe/rueckschaufehler/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/salienz/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/scheinleistung/index.html` - wirkungsblind, evaluation - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
-- `begriffe/scope-3/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/scope-3-datenqualitaet/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
+- `begriffe/scope-3/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/sdg-washing/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/sdgs-und-verschwoerungsnarrative/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/self-serving-bias/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
@@ -3823,8 +3732,8 @@ Signals are review candidates, not automatic errors.
 - `begriffe/widerstand-gegen-neue-massstaebe/index.html` - wirkungsblind, evaluation - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirklichkeitsfaehigkeit/index.html` - wirkungsblind, alternativen - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirklichkeitskonstruktion/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
-- `begriffe/wirkung/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkung-im-preisschild/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
+- `begriffe/wirkung/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkungs-bip/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkungs-konversion-von-altkapital/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkungsabwehr/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
@@ -3867,14 +3776,105 @@ Signals are review candidates, not automatic errors.
 - `begriffe/wissenschaft-als-wirkungsinfrastruktur/index.html` - wirkungsblind, alternativen - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wissenschaftliche-politikberatung/index.html` - wirkungsblind, folgenabschaetzung, alternativen, evaluation - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wissensrat/index.html` - wirkungsblind - Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
+- `bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html` - wirkungsblind, folgenabschaetzung, alternativen, evaluation - Review published artefacts; add visible current-method note/erratum when materially required; never silently rewrite historical files.
+- `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` - wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence - Review published artefacts; add visible current-method note/erratum when materially required; never silently rewrite historical files.
+- `blog/demokratie-braucht-mehr-als-gute-sachpolitik.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `blog/enap-woek-benchmark-fuenf-bundesvorhaben.html` - folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence - Use as canonical five-case calibration corpus; recheck GGO §§43/44 claims and keep public-GFA vs public-eNAP provenance explicit.
+- `blog/leistung-ohne-wirkung.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `blog/nachhaltigkeit-ist-keine-parteifarbe.html` - folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence - Preserve as current source-bound reference; crosslink from relevant current pages.
+- `blog/wie-wirksam-ist-das-sondervermoegen-wirklich.html` - wirkungsblind, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `blog/wirkungsoekonomie-kein-parteiprogramm.html` - dns, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `blog/wirkungsoekonomie-lernendes-kreislaufsystem.html` - wirkungsblind - No material #253 change identified by path rule; semantic scan still applies.
+- `buch.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `erleben/index.html` - folgenabschaetzung, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `fuer/akademie.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `fuer/gesundheit.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `fuer/rente.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `modell.html` - wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation - Add German DNS operationalisation and existing GGO/GFA/eNAP architecture; define Wirkungsblindheit as incomplete causal/decision feedback.
+- `portale/digitalisierung-ki-wirkungsdatenraeume/algorithmische-fairness/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/digitalisierung-ki-wirkungsdatenraeume/audit-assurance-datenqualitaet/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/digitalisierung-ki-wirkungsdatenraeume/cyberresilienz/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/digitalisierung-ki-wirkungsdatenraeume/digitale-produktpaesse/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/digitalisierung-ki-wirkungsdatenraeume/digitale-souveraenitaet/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/digitalisierung-ki-wirkungsdatenraeume/interoperabilitaet-register/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/digitalisierung-ki-wirkungsdatenraeume/ki-governance/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/digitalisierung-ki-wirkungsdatenraeume/plattformlogik/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsdatenraeume/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/digitalisierung-ki-wirkungsdatenraeume/wirkungsscanner/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/kritik-missverstaendnisse-schutzarchitektur/datenmacht-datenschutz/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/kritik-missverstaendnisse-schutzarchitektur/fehlbarkeit-korrektur/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/kritik-missverstaendnisse-schutzarchitektur/freiheit-markt-planwirtschaft/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/kritik-missverstaendnisse-schutzarchitektur/kommunikation-framing-akzeptanz/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/kritik-missverstaendnisse-schutzarchitektur/kritikwerkstatt-beteiligung/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/kritik-missverstaendnisse-schutzarchitektur/missbrauchsschutz-rechtsschutz-governance/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/kritik-missverstaendnisse-schutzarchitektur/sdgs-verschwoerungsnarrativ/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/kritik-missverstaendnisse-schutzarchitektur/technokratie-social-credit/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/kritik-missverstaendnisse-schutzarchitektur/widerstand-neue-massstaebe/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/kritik-missverstaendnisse-schutzarchitektur/wirkungssimulation-manipulation/index.html` - wirkungsblind, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/migration-vielfalt/vielfalt-als-resilienzfaktor/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/zukunftsbilder-wirkungswohlstand/alltag-2035/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/zukunftsbilder-wirkungswohlstand/buergerinnen-co-autorinnen/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/zukunftsbilder-wirkungswohlstand/gesamtdossier/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/zukunftsbilder-wirkungswohlstand/globale-ordnung-2050/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/zukunftsbilder-wirkungswohlstand/schlussbild/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/zukunftsbilder-wirkungswohlstand/staat-2035/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/zukunftsbilder-wirkungswohlstand/unternehmen-2035/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/zukunftsbilder-wirkungswohlstand/wirkungs-bip-verlustleistung/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/zukunftsbilder-wirkungswohlstand/wirkungspraxis/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/zukunftsbilder-wirkungswohlstand/wirkungswohlstand/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `portale/zukunftsbilder-wirkungswohlstand/zukunftskommunikation/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
 - `quellenarchiv/index.html` - wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation - Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0465/index.html` - novelty_or_absence - Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0843/index.html` - wirkungsblind - Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
+- `verstehen/woek-auf-einer-seite/index.html` - wirkungsblind, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation - Add a short fair Anschlussdefinition without overloading the entry page.
+- `werkzeuge/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `werkzeuge/impact-controlling/index.html` - folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/arbeit-einkommen/arbeit-einkommen-wirkung/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/arbeit-einkommen/automatisierung-maschinenleistung/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/arbeit-einkommen/care-bildung-ehrenamt/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/arbeit-einkommen/sozialabgaben-entkoppeln/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/arbeit-einkommen/uebergangsarbeitsmarkt-weiterbildung/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/arbeit-einkommen/unternehmen-roboter-mitbestimmung/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/arbeit-einkommen/wirkungseinkommen/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/arbeit-einkommen/wirkungseinkommensteuer/index.html` - folgenabschaetzung, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/finanzsystem-kapital/steuer-abgabenarchitektur-kapital/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/gesundheit-pflege/dossiers/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/medien-oeffentlichkeit/konzept/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/index.html` - wirkungsblind, folgenabschaetzung, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/index.html` - wirkungsblind, alternativen, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/wirtschaft-unternehmen/marketing-vertrieb-fuenftes-p-planet/index.html` - wirkungsblind, alternativen, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/wirtschaft-unternehmen/unternehmen-als-wirkungssysteme/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/index.html` - alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsfelder/wirtschaft-unternehmen/wirkungsorientierte-unternehmensfuehrung/index.html` - wirkungsblind, evaluation - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/entzauberung-durch-macht-sachsen-anhalt-kein-politisches-experiment/index.html` - alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/generaldebatte-deutschland-braucht-mehr-als-einen-gewonnenen-schlagabtausch/index.html` - dns, alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/grosseinsatz-am-hambacher-forst-was-die-erfolglose-suche-uber-stromnetz-resilienz--3f27f4/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/bund-fordert-beethoven-jubilaum-mit-2-3-millionen-euro-staatsminister-weimer-2027-wird-b-58f666/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/bundestag-haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-bee914/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/deutlicher-anstieg-bei-den-verteidigungsausgaben-05d4f9/index.html` - alternativen, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/john-ternus-apple-bringt-erstes-auffaltbares-iphone-heraus-396b15/index.html` - evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/olpreis-wieder-uber-100-dollar-spritpreise-binnen-einer-woche-stark-gestiegen-41bab3/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-russland-setzt-angriffe-auf-kiew-nach-dreitagiger-pause-fort-bb3e85/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/us-vermittler-in-der-ukraine-trumps-schwiegersohn-doch-nicht-so-wichtig-7549bd/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/zukunftsangst-dampft-kinderwunsch-64b8b5/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1299**
-- Combined matrix items (routes + extra HTML + support): **20517**
+- Tracked support text files inventoried: **1300**
+- Combined matrix items (routes + extra HTML + support): **20518**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -4443,7 +4443,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **20518**
+- Combined reviewed items: **20519**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
