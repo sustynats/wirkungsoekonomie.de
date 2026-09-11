@@ -52,11 +52,11 @@ Der Issue-Body besteht **nur aus gültigem JSON**, ohne Markdown-Codeblock:
 
 - `bridge_version` muss `1` sein.
 - `job_id` und `destination_filename` dürfen nur sichere ASCII-Zeichen enthalten.
-- `destination_filename` ist nur ein Dateiname, niemals ein Pfad.
+- `destination_filename` muss exakt `<job_id>.output.json` oder `<job_id>.probe.json` sein; ein beliebiger Dropbox-Dateiname ist nicht zulässig.
 - Zielverzeichnis ist im Worker fest verdrahtet auf:
   `/WOEK/WIRKUNGSTICKER-CHATGPT-BRIDGE/20_OUTPUT_READY`
 - `payload` wird als UTF-8-JSON mit abschließendem Newline gespeichert.
-- Maximale Payload-Größe: 2 MB.
+- Maximale serialisierte Payload-Größe: 55 KB; der komplette Issue-Body ist auf 60 KB begrenzt.
 - Wiederholung desselben Jobs ist sicher: Wenn in Dropbox bereits exakt dieselben Bytes liegen, wird der Job als `already_delivered` akzeptiert.
 - Ein Issue wird nur nach erfolgreichem Read-after-write geschlossen.
 - Bei Fehler bleibt das Issue offen; ein erneuter Lauf kann über einen Actions-Rerun oder durch Wiederöffnen ausgelöst werden.
