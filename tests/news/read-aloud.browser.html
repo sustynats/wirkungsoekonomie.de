@@ -1,0 +1,83 @@
+<!doctype html><meta charset="utf-8"><title>Read-aloud browser regression tests</title>
+<h1>Read-aloud browser regression tests</h1><pre id="result">Running</pre>
+<script type="module">
+import {articleRoots, readingBlocks, tableSpeech, initReadAloud} from '../../assets/js/read-aloud.js';
+const results = [];
+const check = (name, fn) => { try { fn(); results.push({name, status:'PASS'}); } catch (error) { results.push({name, status:'FAIL', error:error.message}); } };
+const assert = (condition, reason) => { if (!condition) throw new Error(reason); };
+const parse = html => new DOMParser().parseFromString(`<html lang="de"><body>${html}</body></html>`, 'text/html');
+const content = '<main><h1>Testbeitrag</h1><div class="news-story-main"><p>Erste Aussage.</p><p>Zweite Aussage.</p></div></main>';
+check('all ticker article formats use the same reader', () => {
+  for (const selector of ['news-story-main','news-editorial-article__main','article-body']) {
+    const doc = parse(content.replace('news-story-main',selector));
+    assert(readingBlocks(articleRoots(doc)).map(b=>b.text).join(' ') === 'Testbeitrag Erste Aussage. Zweite Aussage.', selector);
+  }
+});
+check('generic articles supported, feeds excluded', () => {
+  const doc=parse('<main data-search-content><h1>Wissen</h1><p>Beitrag.</p></main>');
+  assert(articleRoots(doc).length===1,'article'); doc.querySelector('main').dataset.newsReader='list';
+  assert(articleRoots(doc).length===0,'feed');
+});
+check('private notes, navigation, controls and hidden material excluded', () => {
+  const doc=parse('<main data-search-content><h1>Titel</h1><p>Lesetext <button>Teilen</button><a href="https://example.com">https://example.com</a></p><nav>Navigation</nav><div class="wirkungsraum-note-panel">Private Notiz</div><p hidden>Versteckt</p><aside class="news-story-aside">Seitenleiste</aside><details><summary>Frühere Fassung</summary>Alt</details><footer>Footer</footer></main>');
+  const text=readingBlocks(articleRoots(doc)).map(b=>b.text).join(' ');
+  assert(text==='Titel Lesetext',text);
+});
+check('table preserves each column label and value', () => {
+  const doc=parse('<table><caption>Zwei Pfade</caption><thead><tr><th>Frage</th><th>Pfad A</th><th>Pfad B</th></tr></thead><tbody><tr><th scope="row">Kontrolle</th><td>Hier</td><td>Dort</td></tr><tr><th scope="row">Dauer</th><td>Lang</td><td></td></tr></tbody></table>');
+  const text=tableSpeech(doc.querySelector('table')).join(' ');
+  assert(text.includes('Frage: Kontrolle; Pfad A: Hier; Pfad B: Dort'),text);
+  assert(text.includes('Pfad B: keine Angabe'),text);
+});
+check('merged cells do not invent column relationships', () => {
+  const doc=parse('<table><tr><th colspan="2">Gruppe</th></tr><tr><td>A</td><td>B</td></tr></table>');
+  const text=tableSpeech(doc.querySelector('table')).join(' ');
+  assert(text.includes('Verbundene Zellen')&&text.includes('Zeile 2. A; B.')&&!text.includes('Gruppe: A'),text);
+});
+check('headings, nested lists, diagram descriptions remain readable', () => {
+  const doc=parse('<main data-search-content><h1>Titel</h1><ul><li>Oberpunkt<ul><li>Unterpunkt</li></ul></li></ul><svg role="img"><desc>Ein bedingter Wirkpfad.</desc></svg></main>');
+  const text=readingBlocks(articleRoots(doc)).map(b=>b.text).join(' ');
+  assert(text==='Titel Oberpunkt Unterpunkt Diagramm: Ein bedingter Wirkpfad.',text);
+});
+function mount(supported=true, voices=[]) {
+  const doc=parse(content); const spoken=[]; const listeners={};
+  const synth={cancel(){},resume(){},speak(u){spoken.push(u);},getVoices(){return voices;},addEventListener(name,fn){listeners[name]=fn;}};
+  const win={speechSynthesis:supported?synth:null,SpeechSynthesisUtterance:class{constructor(text){this.text=text;}},addEventListener(){},innerHeight:844,getComputedStyle(){return {position:'static'};}};
+  const reader=initReadAloud(doc,win);
+  return {doc,reader,spoken,voices,listeners,play:()=>doc.querySelector('.read-aloud > button').click()};
+}
+const voice={voiceURI:'local-a',name:'Anna',lang:'de-DE',localService:true};
+check('unsupported browser offers device fallback without broken control', () => {
+  const s=mount(false); assert(s.doc.querySelector('.read-aloud > button').disabled,'disabled');
+  assert(s.doc.querySelector('[role=status]').textContent.includes('Geräts'),'explanation');
+});
+check('no local voice means no remote synthesis', () => {
+  const s=mount(true,[{...voice,localService:false}]); s.play(); assert(s.spoken.length===0,'remote voice used');
+  assert(s.doc.querySelector('[role=status]').textContent.includes('keine lokale Stimme'),'explanation');
+});
+check('voices arriving asynchronously become usable', () => {
+  const s=mount(); s.voices.push(voice); s.listeners.voiceschanged(); s.play();
+  assert(s.spoken[0].voice===voice,'late voice');
+});
+check('voice selection survives reordered available voices', () => {
+  const b={...voice,name:'Berta',voiceURI:'local-b'}; const s=mount(true,[voice,b]);
+  s.doc.querySelector('select').value='1'; s.voices.push({...voice,name:'Adele',voiceURI:'local-c'}); s.listeners.voiceschanged(); s.play();
+  assert(s.spoken[0].voice===b,'wrong selected voice');
+});
+check('click through start, pause, resume, next, speed and stop', () => {
+  const s=mount(true,[voice]); const buttons=s.doc.querySelectorAll('.read-aloud__controls button'); s.play();
+  assert(s.reader.state==='playing'&&s.spoken[0].text==='Testbeitrag','start');
+  buttons[0].click(); assert(s.reader.state==='paused'&&buttons[0].textContent==='Fortsetzen','pause');
+  buttons[0].click(); assert(s.reader.state==='playing','resume');
+  buttons[1].click(); assert(s.spoken.at(-1).text==='Erste Aussage.','next');
+  const rate=s.doc.querySelector('[aria-label="Vorlesetempo"]'); rate.value='1.5';rate.dispatchEvent(new Event('change'));
+  assert(s.spoken.at(-1).rate===1.5,'rate');buttons[2].click(); assert(s.reader.state==='idle','stop');
+});
+check('initialization is idempotent and never starts automatically', () => {
+  const s=mount(true,[voice]); initReadAloud(s.doc,{});
+  assert(s.doc.querySelectorAll('[data-read-aloud-player]').length===1,'duplicate');assert(s.spoken.length===0,'autoplay');
+});
+window.__readAloudTestResults=results;
+document.querySelector('#result').textContent=JSON.stringify(results,null,2);
+document.title=results.some(r=>r.status==='FAIL')?'FAIL: Read aloud':'PASS: Read aloud';
+</script>

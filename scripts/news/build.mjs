@@ -409,7 +409,7 @@ ${appNavigation(canonical)}
 ${renderIconSprite()}
 ${body}
 ${footer.replace("</footer>", `<nav class="footer-nav-links" aria-label="Wirkungsticker-Transparenz"><a href="${base}wirkungsticker/quellen/">Quellen &amp; Auswahlkriterien</a></nav></footer>`)}
-<script src="${base}assets/js/main.js?v=20260911-dynamic-bookmarks"></script>
+<script src="${base}assets/js/main.js?v=20260912-system-voice"></script>
 <script src="${base}assets/js/news-install.js?v=20260904-reader2"></script>
 <script src="${base}assets/js/news-pwa.js?v=${PUBLIC_RELEASE}"></script>
 <script src="${base}assets/js/news-navigation.js?v=20260911-reader4"></script>
