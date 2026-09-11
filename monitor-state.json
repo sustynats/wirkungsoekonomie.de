@@ -12,12 +12,13 @@
     "bridge-queue-size": {
       "firstSeen": "2026-09-11T07:35:24.922Z",
       "active": true
-    },
-    "bridge-processor": {
-      "firstSeen": "2026-09-11T07:35:24.922Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "20a4a9d3d53e0af806a898d2",
+      "content": "✓ WÖk-Störung behoben\nChatGPT-Redaktionsworker\nPrüfung: 2026-09-11T11:50:53.722Z"
+    }
+  ],
   "dailyDate": "2026-09-11"
 }
