@@ -1,7 +1,7 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { bridgePath, hash, JOB_ID } from './contract.mjs';
 
-export const PROCESSOR_VERSION = '2026-09-11-1';
+export const PROCESSOR_VERSION = '2026-09-11-2';
 export const PROCESSOR_CONTRACT = `processor-contract-${PROCESSOR_VERSION}.json`;
 export const PROCESSOR_SHARDS = Object.freeze([
   { id: 'A', index: 0, minute: 0 }, { id: 'B', index: 1, minute: 20 }, { id: 'C', index: 2, minute: 40 },
@@ -205,8 +205,8 @@ export function processorHealth({ jobs, receipts = [], throughput = {}, metrics 
   if (overloaded) alerts.push('PROCESSING_CAPACITY_INSUFFICIENT');
   if (!workers.some(w => w.processor_available)) alerts.push('CHATGPT_DROPBOX_UNAVAILABLE');
   return { version: PROCESSOR_VERSION, checked_at: now, processor_available: workers.some(w => w.processor_available),
-    all_shards_available: workers.every(w => w.processor_available), dropbox_read_ok: workers.some(w => w.processor_available && w.dropbox_read_ok),
-    dropbox_write_ok: workers.some(w => w.processor_available && w.dropbox_write_ok), workers,
+    all_shards_available: workers.every(w => w.processor_available), dropbox_read_ok: workers.some(w => w.dropbox_read_ok),
+    dropbox_write_ok: workers.some(w => w.dropbox_write_ok), workers,
     open_jobs: open.length, oldest_open_job_age_minutes: Math.max(0, ...open.map(age)),
     incoming_jobs_last_hour: fullHour ? events.filter(e => e.type === 'incoming').length : null,
     completed_jobs_last_hour: fullHour ? events.filter(e => e.type === 'completed').length : null,

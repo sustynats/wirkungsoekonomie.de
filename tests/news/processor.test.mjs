@@ -132,6 +132,13 @@ test('62 jobs with no actual automation receipt is critical, never processor ava
   assert.equal(h.processor_available, false); assert.ok(h.alerts.includes('QUEUE_CRITICAL'));
   assert.equal(h.incoming_jobs_last_hour, null); assert.equal(h.historical_backfill_paused, true);
 });
+test('health reports proven read capability independently of blocked output writes', () => {
+  const receipts = [0, 1, 2].map(shard => ({ checked_at: now, shard, context,
+    status: 'CHATGPT_DROPBOX_UNAVAILABLE', dropbox_read_ok: true, dropbox_write_ok: false }));
+  const h = processorHealth({ jobs: [], receipts, now });
+  assert.equal(h.dropbox_read_ok, true); assert.equal(h.dropbox_write_ok, false);
+  assert.equal(h.processor_available, false); assert.equal(h.all_shards_available, false);
+});
 test('warning thresholds are strictly greater than 10 and 20', () => {
   for (const [count, expected] of [[10, null], [11, 'QUEUE_WARNING'], [20, 'QUEUE_WARNING'], [21, 'QUEUE_CRITICAL']]) {
     const h = processorHealth({ jobs: Array.from({ length: count }, (_, n) => ({ input: { job_id: id(n) }, status: 'queued', created_at: now })), now });
