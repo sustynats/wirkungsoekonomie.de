@@ -18,8 +18,11 @@ export function bridgeSession(env = process.env, { fetchImpl = fetch } = {}) {
     const response = await fetchImpl(url, { method: 'POST', redirect: 'error', signal,
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${secret}`, 'X-Bridge-Owner': owner,
         'X-Bridge-Lane': env.WOEK_NEWS_BRIDGE_PHASE === 'discovery' ? 'discovery' : 'import' }, body: JSON.stringify({ op, args }) });
+    // Older Oracle releases return one array and ignore pagination arguments.
+    // Keep that rolling-upgrade response bounded while new servers page jobs.
+    const responseLimit = (op === 'store.all' ? 64 : 24) * 1024 * 1024;
     const chunks = []; let size = 0;
-    for await (const chunk of response.body) { size += chunk.length; if (size > 24 * 1024 * 1024) throw new Error('BRIDGE_RESPONSE_TOO_LARGE'); chunks.push(chunk); }
+    for await (const chunk of response.body) { size += chunk.length; if (size > responseLimit) throw new Error('BRIDGE_RESPONSE_TOO_LARGE'); chunks.push(chunk); }
     let result; try { result = JSON.parse(Buffer.concat(chunks)); } catch { throw Object.assign(new Error('BRIDGE_REMOTE_INVALID_RESPONSE'), {
       retryable: response.status >= 500, http_status: response.status, operation: op, response_bytes: size,
       // Authentication/permission failures and writes must never be retried.
@@ -40,6 +43,20 @@ export function bridgeSession(env = process.env, { fetchImpl = fetch } = {}) {
     }
   }
   const store = Object.fromEntries(['acquire','get','put','all','impactStagingIndex','observe','observation','release','editorialClaim','editorialFinalize','editorialFailure'].map(op => [op, (...args) => request(`store.${op}`, args)]));
+  store.all = async () => {
+    const jobs = [], cursors = new Set(); let after = '';
+    for (;;) {
+      const page = await request('store.all', [{ page_size: 20, after }]);
+      if (Array.isArray(page) && !after) return page; // legacy server
+      if (page?.page_version !== 1 || !Array.isArray(page.items)
+        || page.items.length > 20 || !(page.next_cursor === null || typeof page.next_cursor === 'string')) throw Error('BRIDGE_QUEUE_PAGE_INVALID');
+      jobs.push(...page.items);
+      if (jobs.length > 10000) throw Error('BRIDGE_QUEUE_ITEM_LIMIT');
+      if (page.next_cursor === null) return jobs;
+      if (!page.items.length || !page.next_cursor || cursors.has(page.next_cursor)) throw Error('BRIDGE_QUEUE_CURSOR_INVALID');
+      cursors.add(page.next_cursor); after = page.next_cursor;
+    }
+  };
   const transport = Object.fromEntries(['list','read','metadata','move','writeAtomic','archive'].map(op => [op, (...args) => request(`dropbox.${op}`, args)]));
   transport.readBinary = async file => Buffer.from(await request('dropbox.readBinary', [file]), 'base64');
   return { store, transport, status: () => request('bridge.status'), monitor: () => request('bridge.monitor') };
