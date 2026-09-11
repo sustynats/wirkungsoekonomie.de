@@ -26,7 +26,7 @@ Neue gemeinsame Dateien: `assets/js/read-aloud.js`, `assets/css/read-aloud.css`.
 ## Verifikation
 
 - `npm run news:test`: 1.039 Tests bestanden, einschließlich acht neuer Controller-/Datenschutztests.
-- `tests/news/read-aloud.browser.html`: zwölf DOM-/Bedienungstests bestanden, einschließlich Tabellen, später verfügbarer Stimmen, fehlender lokaler Stimme, Feed-Ausschluss und Ausschluss privater Notizen.
+- `tests/news/read-aloud.browser.fixture`: zwölf DOM-/Bedienungstests bestanden, einschließlich Tabellen, später verfügbarer Stimmen, fehlender lokaler Stimme, Feed-Ausschluss und Ausschluss privater Notizen.
 - Browser mit echter lokaler deutscher Systemstimme: Start meldet `speechSynthesis.speaking = true`, Pause stoppt; die Steuerung bleibt bedienbar.
 - Ansichten: 320 und 390 Pixel sowie Desktop geprüft; keine horizontale Überbreite, Bedienelemente mindestens 44 Pixel. Aktiver Player und mobile Navigation überlagern einander nicht.
 - Beispielseiten: Europa-Analyse mit Tabellen, Sumy-Nachricht, Buchbeitrag, Nachgesehen, Journalartikel; Newsfeed bleibt ohne Vorlese-Button.
@@ -34,4 +34,12 @@ Neue gemeinsame Dateien: `assets/js/read-aloud.js`, `assets/css/read-aloud.css`.
 - `npm run lint` erfolgreich; 25 vorhandene Sprach-Audit-Funde unverändert. Keine neuen Funde durch diese Funktion.
 - Kein Test auf einem physischen iPhone. Stimmqualität hängt von den installierten Stimmen des jeweiligen Geräts ab.
 
-Browsertests lokal: Repository per HTTP bereitstellen und `/tests/news/read-aloud.browser.html` öffnen. Ergebnis steht in `window.__readAloudTestResults`. Das Testverzeichnis ist vom öffentlichen Release-Artefakt ausgeschlossen.
+Browsertests lokal: Die HTML-Testdaten in `tests/news/read-aloud.browser.fixture` mit einem lokalen HTTP-Server als `text/html` bereitstellen. Ergebnis steht in `window.__readAloudTestResults`. Das Testverzeichnis ist vom öffentlichen Release-Artefakt ausgeschlossen; die Fixture ist keine Website-Seite und gehört nicht in deren Suchindex oder Inhaltsaudit.
+
+Beispiel aus dem Repository-Stamm:
+
+```sh
+python3 -c 'from http.server import HTTPServer, SimpleHTTPRequestHandler; SimpleHTTPRequestHandler.extensions_map[".fixture"]="text/html"; HTTPServer(("127.0.0.1", 18937), SimpleHTTPRequestHandler).serve_forever()'
+```
+
+Dann `http://127.0.0.1:18937/tests/news/read-aloud.browser.fixture` öffnen. Die Tickerseiten und Suchpartitionen werden beim Release mit den aktuellen Nachrichten aus den bestehenden Generatoren gebaut; dieses UX-Paket schreibt keinen veralteten Nachrichten-Snapshot zurück.
