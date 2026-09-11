@@ -2,7 +2,7 @@ import { impactMethodology } from './impact-methodology.mjs';
 import { impactCoverage, assertImpactCoverage } from './impact-coverage.mjs';
 import {PERSONAL_FORMAT,loadPersonalEditorials,personalLabel,personalArticleBody,personalPortrait} from './personal-editorial.mjs';
 import { deriveImpactPresentation, IMPACT_LEGEND } from './impact-assessment.mjs';
-import { publicImpactAssessment, PUBLIC_IMPACT_PROFILE_VERSION, REVIEWED_IMPACT_PROFILE_VERSION, IMPACT_REVISION_NOTICE, assertPublicImpactHtml, IMPACT_RELEASE } from './impact-release.mjs';
+import { publicImpactAssessment, PUBLIC_IMPACT_PROFILE_VERSION, REVIEWED_IMPACT_PROFILE_VERSION, assertPublicImpactHtml, IMPACT_RELEASE } from './impact-release.mjs';
 import { renderStoryVisual, renderEditorialClaimMap } from "./story-visual.mjs";
 import { EDITORIAL_TRANSPARENCY_NOTE, editorialLabel, isEditorialCommentary, isCommissionedAnalysis, renderSystemicVisual, renderSystemicDimensions, renderSystemicMonitoring, renderSectionAnchor, renderEditorialContents } from "./systemic-analysis.mjs";
 import { renderEditorialFinding, renderAuthorPerspective, renderEditorialBalance } from "./editorial-judgment.mjs";
@@ -416,7 +416,7 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <link rel="alternate" type="application/feed+json" title="Wirkungsticker JSON Feed" href="${SITE}/wirkungsticker/feed.json">` : ""}
   <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="${base}assets/css/style.css?v=20260830-news">
-  <link rel="stylesheet" href="${base}assets/css/news.css?v=${PUBLIC_RELEASE}">
+  <link rel="stylesheet" href="${base}assets/css/news.css?v=${PUBLIC_RELEASE}-reading-20260911">
   <script type="application/ld+json">${safeJson(jsonLd)}</script>
 </head>
 <body>
@@ -458,7 +458,6 @@ export function indexPage(stories, updatedAt, { totalStories = stories.length, c
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a><span aria-hidden="true">/</span><a href="../oeffentlicher-wirkungsraum/">Öffentlicher Wirkungsraum</a></nav>
       <p class="hero-kicker news-hero__kicker">${renderIcon("folgen")}<span>Wirkungsticker</span></p>
       <h1 class="hero-title">Wichtige Nachrichten. Fakten, Folgen, Zusammenhänge.</h1>
-      ${PUBLIC_IMPACT_PROFILE_VERSION ? '' : `<p class="notice" role="note">${hasReviewedProfiles ? 'Neu geprüfte Wirkungsprofile sind bereits sichtbar. Ältere Bewertungen werden überarbeitet; die Dimensionsfilter erfassen derzeit nur vollständig geprüfte Profile.' : IMPACT_REVISION_NOTICE}</p>`}
       <p class="news-method-note">Ein Projekt des Wirkungsinstituts. <a href="../institut/projekte/wirkungsticker/">Projektauftrag, Entwicklung und laufende Aufgaben</a>.</p>
       <p class="hero-subtitle">Aus Politik, Wirtschaft, Gesellschaft, Umwelt und Technik. Der Wirkungsticker erklärt, was passiert ist, was belegt ist und welche Folgen möglich sind. Er zeigt Zusammenhänge und prüft auch, wie über Ereignisse gesprochen wird.</p>
       <ul class="news-hero__stats"><li><strong>${stories.length}</strong> aktuelle Lagen und Einzelakten</li><li><strong>${totalStories}</strong> redaktionelle Wirkungsakten${caseCount ? ` · ${caseCount} automatisch gebündelte ${caseCount === 1 ? "Lageakte" : "Lageakten"}` : ""}</li>${editorialAnalyses.length ? `<li><strong>${editorialAnalyses.length}</strong> ${editorialAnalyses.length === 1 ? "Beitrag" : "Beiträge"} in Meinung &amp; Analyse / Buch &amp; Wirkung</li>` : ""}<li><strong>${highCount}</strong> mit hoher systemischer Relevanz</li><li>${renderIcon("uhr")}<span>Stand ${escapeHtml(formatDate(updatedAt))} · automatische Quellenprüfung</span></li><li><a class="text-link" href="#methodik">Methodik und Qualitätsgate</a> · <a class="text-link" href="quellen/">Quellen &amp; Auswahl</a></li></ul>
