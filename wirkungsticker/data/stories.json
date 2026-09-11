@@ -2,8 +2,1676 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-11T01:41:58.593Z",
+  "updated_at": "2026-09-11T02:16:56.361Z",
   "stories": [
+    {
+      "story_id": "wt-056e05614272ee27",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-056e05614272ee27-df116187f31ccc09-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-056e05614272ee27-6ce7c262fb0101f8-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-056e05614272ee27-ee74a11a6189f560-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-056e05614272ee27-a93a34ddd1b8062b-source.png",
+          "alt_text": "Abstraktes generisches Smartphone in einem offenen Schutzring als Symbol für digitalen Kinder- und Jugendschutz."
+        }
+      },
+      "slug": "kinder-und-jugendschutz-social-media-expertenkommission-legt-abschlussbericht-vor-72ee27",
+      "title": "Digitaler Jugendschutz: Expertenkommission soll heute Abschlussbericht vorlegen",
+      "source_summary": "Für heute ist die Abschlusskonferenz der Expertenkommission zum Kinder- und Jugendschutz in der digitalen Welt angekündigt. Nach dem Deutschlandfunk soll der Abschlussbericht an Familienministerin Karin Prien übergeben und anschließend gemeinsam mit den Vorsitzenden diskutiert werden. Ende Juni hatte die Kommission bereits 56 Empfehlungen für eine Gesamtstrategie vorgestellt.\n\nDie Empfehlungen betreffen altersgerechten Schutz, Befähigung und Beteiligung von Kindern und Jugendlichen in digitalen Räumen. Prien kündigte an, in den kommenden Wochen einen Gesetzentwurf vorzulegen. Welche Empfehlungen darin konkret übernommen, verändert oder verworfen werden, ist bislang nicht bekannt. Eine Übergabe des Abschlussberichts oder eine gesetzliche Umsetzung ist am frühen Morgen noch nicht als erfolgt belegt; auch eine Wirkung neuer Regeln ist nicht beobachtet.",
+      "summary": "Für heute ist der Abschluss der Expertenkommission zum Kinder- und Jugendschutz in der digitalen Welt angekündigt; 56 Empfehlungen liegen bereits seit Juni vor. Welche davon in Priens angekündigten Gesetzentwurf einfließen und wie sie wirken, ist noch offen.",
+      "detail_summary": "Für heute ist die Abschlusskonferenz der Expertenkommission zum Kinder- und Jugendschutz in der digitalen Welt angekündigt. Die 56 Empfehlungen selbst wurden bereits Ende Juni vorgestellt und sind daher nicht der neue Tagesbefund. Inhaltlich geht es um altersgerechten Schutz, Befähigung und Beteiligung von Kindern und Jugendlichen in digitalen Räumen. Prien will in den kommenden Wochen einen Gesetzentwurf vorlegen. Damit rückt eine mögliche gesetzliche Umsetzung näher, ohne dass konkrete neue Regeln bereits feststehen. Schutzmaßnahmen können Risiken mindern, müssen aber Befähigung, Beteiligung, Informationszugang und Datenschutz berücksichtigen. Eine tatsächliche Wirkung lässt sich erst nach konkreter Ausgestaltung und Umsetzung prüfen.",
+      "why_relevant": "Die Kommission liefert einen möglichen Bauplan für künftige Regeln in digitalen Räumen von Kindern. Welche Schutz-, Bildungs- und Teilhabefolgen entstehen, hängt von Auswahl und Ausgestaltung der Maßnahmen ab.",
+      "topic": [
+        "Soziales"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Für heute sind Abschlusskonferenz und Übergabe des Abschlussberichts der Expertenkommission zum Kinder- und Jugendschutz in der digitalen Welt angekündigt; 56 Empfehlungen wurden bereits im Juni veröffentlicht, Prien kündigt einen Gesetzentwurf in den kommenden Wochen an.",
+        "evaluation_target": {
+          "label": "Mögliche Umsetzung konkreter Schutz-, Befähigungs- und Teilhabeempfehlungen für Kinder und Jugendliche in digitalen Räumen",
+          "type": "proposal"
+        },
+        "baseline": "Bestehende Regeln, Plattformbedingungen, Bildungs- und Unterstützungsangebote sowie die bestehende EU-Minderjährigenschutzarchitektur vor zusätzlichen Maßnahmen aus den Kommissionsempfehlungen.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne zusätzliche Umsetzung blieben bestehende Schutz-, Befähigungs- und Beteiligungsstrukturen maßgeblich. Zusätzliche Schutzwirkungen, Zugangsbeschränkungen oder neue Beteiligungs- und Befähigungseffekte träten dann nicht aufgrund dieser Empfehlungen ein.",
+        "reference_frame": [
+          "Kindeswohl und Gesundheit",
+          "Digitale Selbstbestimmung und Informationszugang",
+          "Bildung und Medienkompetenz",
+          "Kinderrechte und gesellschaftliche Teilhabe",
+          "Verhältnismäßigkeit und Datenschutz"
+        ],
+        "claim_ledger": [
+          {
+            "claim": "Für heute ist die Abschlusskonferenz angekündigt.",
+            "status": "primary_source_claim",
+            "source_ids": [
+              "research-bmbfsfj-youth-participation"
+            ],
+            "note": "Ankündigung des Termins, kein Nachweis bereits erfolgter Übergabe."
+          },
+          {
+            "claim": "Die Kommission hatte bereits im Juni 56 Empfehlungen vorgelegt.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "note": "Früherer Empfehlungsstand, nicht der neue Tagesbefund."
+          },
+          {
+            "claim": "Jugendliche verlangen Schutz und Beteiligung.",
+            "status": "primary_source_claim",
+            "source_ids": [
+              "research-bmbfsfj-youth-participation"
+            ],
+            "note": "Belegt Beteiligungsanliegen und Prozess, keine Zustandswirkung."
+          },
+          {
+            "claim": "Alter, soziale Lage und psychische Belastungen beeinflussen digitale Verwundbarkeit erheblich.",
+            "status": "primary_source_claim",
+            "source_ids": [
+              "research-bmbfsfj-digital-vulnerability"
+            ],
+            "note": "Mechanismus- und Verteilungsbeleg."
+          },
+          {
+            "claim": "Prien will in den kommenden Wochen einen Gesetzentwurf vorlegen.",
+            "status": "single_source_claim",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "note": "Politische Ankündigung; kein vorliegender Entwurf."
+          }
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Geeignete Schutz- und Befähigungsmaßnahmen können Risiken senken und Informations- sowie Handlungskompetenz stärken; Wirkung und Verteilung hängen vom konkreten Instrument ab. Besonders verletzliche Gruppen können unterschiedlich profitieren oder belastet werden.",
+            "planet": "Nur schwache indirekte Effekte über veränderte Geräte-, Plattform- oder Nutzungsbedingungen sind plausibel; Richtung und Ausmaß hängen von der technischen Umsetzung ab.",
+            "democracy": "Beteiligung und sichere digitale Teilhabe können gestärkt werden; unverhältnismäßige Zugangskontrollen oder invasive Altersprüfung können Informations-, Beteiligungs- und Datenschutzrechte beeinträchtigen."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Konkrete spätere Regeln oder Befähigungsangebote könnten Zugangs-, Nutzungs- und Schutzbedingungen für Minderjährige verändern.",
+          "second_order": "Zielgenaue Maßnahmen können Belastungen reduzieren und Medienkompetenz stärken; zu breite oder invasive Regeln können zugleich legitimen Zugang oder Datenschutz beeinträchtigen.",
+          "third_order": "Dauerhafte Regel- und Designstandards können digitale Entwicklungsbedingungen, Plattformgestaltung und Teilhabemöglichkeiten strukturell beeinflussen.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Abschlussveranstaltung selbst ist keine Wirkungsmaßnahme.",
+            "Die 56 Empfehlungen stammen bereits aus dem Juni.",
+            "Ein konkreter Gesetzentwurf liegt noch nicht vor.",
+            "Die EU verfügt bereits über Minderjährigenschutzleitlinien; zusätzliche nationale Maßnahmen müssen daher zusätzlichen Nutzen und Verhältnismäßigkeit zeigen.",
+            "Beteiligung am Kommissionsprozess ist zunächst ein Output und kein Nachweis verbesserter Lebensbedingungen."
+          ],
+          "source_independence": "Die Ministeriumsquellen sind Primärquellen für eigenen Prozess, Bestandsaufnahme und Beteiligungsdarstellung, aber keine unabhängigen Wirkungsstudien. Die EU-Quelle trägt bestehende Schutz- und Verhältnismäßigkeitsmechanismen. DLF trägt den aktuellen politischen Anlass.",
+          "institutional_status": "Die 56 Empfehlungen liegen seit Juni vor. Abschlusskonferenz und Übergabe des Abschlussberichts sind für heute angekündigt. Ein Gesetzentwurf ist angekündigt, aber noch nicht veröffentlicht, beschlossen oder in Kraft."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_positive",
+            "direction": "positive",
+            "magnitude": 3,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Zielgenaue Schutz- und Befähigungsmaßnahmen können digitale Belastungen reduzieren und Handlungskompetenz stärken",
+                "mechanism": "Maßnahmen, die konkrete risikorelevante Plattformpraktiken begrenzen und mit Medienkompetenz sowie erreichbarer Unterstützung verbinden, können Schutzbedingungen und selbstbestimmte Nutzung verbessern.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "besonders vulnerable Minderjährige",
+                  "Familien mittelbar"
+                ],
+                "magnitude": 3,
+                "evidence": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "research-bmbfsfj-digital-vulnerability",
+                  "research-eu-dsa-minors",
+                  "research-bmbfsfj-youth-participation"
+                ],
+                "condition": "Konkrete Maßnahmen adressieren belegte Risiken, sind altersgerecht, erreichbar und mit Befähigung statt ausschließlich Zugangsbeschränkung verbunden.",
+                "reference_space": "Kinder und Jugendliche, deren digitale Schutz- oder Befähigungsbedingungen sich gegenüber der bestehenden Architektur tatsächlich verändern.",
+                "time_horizon": "Monate bis mehrere Jahre nach Umsetzung.",
+                "path_quality": [
+                  "indirect",
+                  "systemic"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Nicht jede Empfehlung ist gleich wirksam. Modelliert wird eine zielgenaue Kombination aus Schutz und Befähigung, nicht ein pauschales Social-Media-Verbot.",
+                "source_support": "Die Bestandsaufnahme trägt unterschiedliche Verwundbarkeit; die EU-Quelle trägt Plattformrisiken; die Beteiligungsquelle zeigt, dass Jugendliche Schutz und Mitwirkung zusammen denken. Keine Quelle belegt die Wirkung eines noch unbekannten Gesetzes.",
+                "limitations": "Instrumentenmix, Reichweite, Durchsetzung, Bildungsangebote und technische Ausgestaltung sind offen.",
+                "first_order": "Risikorelevante Plattformbedingungen oder Unterstützungsangebote können sich für Minderjährige verändern.",
+                "second_order": "Bei guter Umsetzung können besonders belastete Gruppen Risiken besser vermeiden und digitale Angebote informierter nutzen.",
+                "third_order": "Dauerhafte Schutz- und Kompetenzstrukturen können Entwicklungs-, Bildungs- und Teilhabechancen stabilisieren; langfristige Effekte müssten evaluiert werden.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Bei begrenzter oder schlecht erreichbarer Umsetzung bleibt die Wirkung moderat; bei bundesweit wirksamen, zielgenauen Schutz- und Befähigungsstrukturen kann sie hoch sein."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen stützen Schutzbedarf, ungleiche Vulnerabilität und den Mechanismus zielgerichteter Schutzmaßnahmen. Der konkrete Zusatznutzen des späteren deutschen Instruments bleibt ex ante.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Bundesweite Regeln oder Programme können einen großen Teil minderjähriger Nutzer betreffen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Zielgenaue Schutz- und Befähigungsmaßnahmen können Nutzungs- und Entwicklungsbedingungen spürbar verändern, ohne sämtliche Belastungsursachen zu beseitigen.",
+                    "source_ids": [
+                      "research-bmbfsfj-digital-vulnerability",
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Dauerhafte Regeln und Kompetenzangebote können über Jahre wirken, sofern sie fortbestehen und genutzt werden.",
+                    "source_ids": [
+                      "research-bmbfsfj-youth-participation",
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Schutz- und Bildungsinstrumente sind grundsätzlich politisch, technisch und pädagogisch anpassbar.",
+                    "source_ids": [
+                      "research-bmbfsfj-youth-participation",
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Die Bestandsaufnahme benennt ausdrücklich Unterschiede nach Alter, sozialer Lage und psychischer Belastung; besonders vulnerable Gruppen können daher überproportional betroffen sein.",
+                    "source_ids": [
+                      "research-bmbfsfj-digital-vulnerability"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Verbindliche Plattformregeln und dauerhafte Befähigungsstrukturen können über individuelle Nutzung hinaus institutionelle Standards prägen.",
+                    "source_ids": [
+                      "research-eu-dsa-minors",
+                      "research-bmbfsfj-youth-participation"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Kindeswohl und körperlich-psychische Entwicklung sind zentrale Schutzgüter, aber eine konkret schwere Schutzgrenzverletzung oder deren sichere Vermeidung durch die noch unbekannten Maßnahmen ist nicht belegt.",
+                  "reference_frame": "Kindeswohl, Gesundheit und Entwicklung",
+                  "source_ids": [
+                    "research-bmbfsfj-digital-vulnerability",
+                    "research-eu-dsa-minors"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Unverhältnismäßige oder invasive Umsetzung kann Informationszugang, Selbstbestimmung und Datenschutz beeinträchtigen",
+                "mechanism": "Zu breite Verbote oder technisch eingriffsintensive Altersprüfungen können legitime digitale Nutzung erschweren oder zusätzliche Datenverarbeitung erzeugen, ohne den Schutzgewinn entsprechend zu erhöhen.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "besonders auf digitale Zugänge angewiesene Minderjährige",
+                  "Familien mittelbar"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "research-eu-dsa-rights",
+                  "research-bmbfsfj-youth-participation"
+                ],
+                "condition": "Die konkrete Ausgestaltung beschränkt Zugang oder verarbeitet Daten stärker als für den Schutz Minderjähriger erforderlich.",
+                "reference_space": "Minderjährige unter zusätzlichen Regeln gegenüber der bestehenden Schutzarchitektur.",
+                "time_horizon": "Ab Einführung bis zu rechtlicher oder technischer Korrektur; bei Verstetigung mehrere Jahre.",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird nicht unterstellt, dass der angekündigte Entwurf tatsächlich unverhältnismäßig sein wird; modelliert wird ein relevanter Gestaltungsgegenpfad.",
+                "source_support": "Die EU-Quelle verlangt ausdrücklich verhältnismäßige Schutzmaßnahmen. Die Beteiligungsquelle zeigt, dass junge Menschen nicht nur Objekt von Schutzmaßnahmen sein wollen.",
+                "limitations": "Konkrete Altersprüfung, Datenerhebung und Reichweite von Zugangsbeschränkungen sind noch unbekannt.",
+                "first_order": "Legitime digitale Zugänge oder Nutzungen können durch zu breite Regeln eingeschränkt werden.",
+                "second_order": "Informations-, Lern- oder Beteiligungsmöglichkeiten können für einzelne Gruppen schwerer erreichbar werden.",
+                "third_order": "Dauerhaft schlecht austarierte Regeln können problematische Zugangshürden oder datenintensive Kontrollstandards verstetigen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Zielgenaue, datensparsame Regeln halten den Gegenpfad klein; breite oder invasive Lösungen könnten viele Minderjährige deutlich betreffen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen tragen Verhältnismäßigkeits- und Beteiligungsanforderungen, aber keinen bereits geplanten konkreten Rechtseingriff. Der Gegenpfad bleibt daher niedrig evidenzierte Modellhypothese. Deshalb wird dieser bedingte Fehlgestaltungsfall als Nebenrisiko geführt, nicht als bereits im konkreten Vorhaben angelegter gleichrangiger Gegenhauptpfad.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Bundesweit oder plattformweit geltende Zugangsvorgaben könnten viele Minderjährige betreffen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Einschränkungen von Informationszugang oder Datenschutz können relevant sein; konkrete Eingriffstiefe ist unbekannt.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Zugangsbeschränkungen würden für die Geltungsdauer bestehen und könnten angepasst werden.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Regeln und technische Verfahren sind grundsätzlich revidierbar.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Minderjährige mit besonderer Abhängigkeit von digitalen Informations- oder Unterstützungszugängen können stärker betroffen sein.",
+                    "source_ids": [
+                      "research-bmbfsfj-digital-vulnerability",
+                      "research-bmbfsfj-youth-participation"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Zugangsvorgaben können Plattform- und Nutzungspraxis verändern, ohne mangels konkreten Designs eine tiefgreifende Systemwirkung zu begründen.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Kinderrechte, Informationszugang und Datenschutz sind relevante Schutzgüter; eine konkret schwere oder unverhältnismäßige Verletzung ist ohne Entwurf nicht belegt.",
+                  "reference_frame": "Kinderrechte, Informationszugang und Datenschutz",
+                  "source_ids": [
+                    "research-eu-dsa-rights",
+                    "research-bmbfsfj-youth-participation"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "rationale": "Der bewertete Hauptpfad ist das positive Potenzial zielgenauer Schutz- und Befähigungsmaßnahmen. Die Umsetzung steht noch aus. Zu breite oder invasive Regeln bleiben als eigenständiges bedingtes Nebenrisiko dokumentiert; ohne konkreten Entwurf ist nicht belegt, dass gerade diese Fehlgestaltung Bestandteil des Vorhabens wird.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Die Quellen tragen einen Schutz- und Befähigungsmechanismus und Anforderungen an Verhältnismäßigkeit. Sie belegen noch keine konkret vorgesehene unverhältnismäßige Umsetzung. Eine mögliche Fehlgestaltung wird daher nicht allein durch ihre denkbare Tragweite zu einem gleichrangigen Gegenhauptpfad. Ihre Faktoren bleiben separat sichtbar und werden nicht klein gerechnet."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Zielgenaue Schutz- und Befähigungsmaßnahmen können digitale Belastungen reduzieren und Handlungskompetenz stärken",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zielgenaue Schutz- und Befähigungsmaßnahmen können digitale Belastungen reduzieren und Handlungskompetenz stärken",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Zusätzliche technische Schutz- und Zugangssysteme können einen kleinen zusätzlichen Ressourcenbedarf erzeugen",
+                "mechanism": "Falls spätere Maßnahmen neue technische Altersprüfungs-, Zugangs- oder Kontrollinfrastruktur erfordern, können zusätzlicher IT-Betrieb, Datenverarbeitung und technische Anpassungen Ressourcen und Energie beanspruchen.",
+                "recipients": [
+                  "Energie- und Ressourcenverbrauch digitaler Infrastruktur mittelbar"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-eu-dsa-rights",
+                  "research-eu-dsa-minors"
+                ],
+                "condition": "Der spätere Gesetzentwurf verlangt tatsächlich zusätzliche technische Prüf-, Zugangs- oder Kontrollsysteme gegenüber der bestehenden Infrastruktur.",
+                "reference_space": "Zusätzlicher technischer Ressourcenbedarf der umgesetzten Maßnahmen gegenüber der bestehenden digitalen Schutzarchitektur.",
+                "time_horizon": "Ab technischer Einführung über die Laufzeit der jeweiligen Systeme; bei rein organisatorischen oder pädagogischen Maßnahmen entfällt dieser Pfad weitgehend.",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Nicht jede Empfehlung benötigt neue technische Infrastruktur. Modelliert wird nur der Fall zusätzlicher digitaler Prüf- oder Kontrollsysteme; ein Umweltvorteil oder konkreter Mehrverbrauch wird nicht als beobachtet unterstellt.",
+                "source_support": "DLF belegt, dass ein Gesetzentwurf angekündigt ist. Die EU-Quellen zeigen, dass technische Schutz- und Altersprüfungsansätze Teil der bestehenden Regulierungsarchitektur sein können. Keine der Quellen misst Umwelt- oder Energieeffekte der noch unbekannten deutschen Umsetzung.",
+                "limitations": "Konkretes Instrument, technische Architektur, Rechenaufwand, Datenvolumen, Geräteeinsatz und zusätzliche Energie- oder Materialmengen sind unbekannt.",
+                "first_order": "Neue technische Prüf- oder Zugangssysteme können zusätzlichen IT-Betrieb und Datenverarbeitung erfordern.",
+                "second_order": "Bei breiter Nutzung können daraus zusätzliche Energie- und Infrastrukturbedarfe entstehen.",
+                "third_order": "Nur bei dauerhaft großskaliger technischer Infrastruktur könnte sich ein struktureller Ressourcenpfad verfestigen; dafür gibt es derzeit keinen Beleg.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne zusätzliche Technik ist die Umweltänderung praktisch null; bei flächendeckender neuer Prüfinfrastruktur kann ein kleiner bis begrenzter zusätzlicher Ressourcenbedarf entstehen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die vorhandenen Quellen tragen nur den regulatorischen und technischen Ausgangspunkt. Mangels Umweltmessung bleibt der Pfad eine konservative Modellhypothese mit niedriger Evidenz.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Bundesweit oder plattformweit eingeführte technische Vorgaben könnten einen großen Nutzerkreis betreffen; die Quellen belegen nur den potenziellen Regelungsraum.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Pro Nutzungsvorgang ist ohne Hinweise auf besonders ressourcenintensive Technik nur ein geringer zusätzlicher Umweltbeitrag plausibel.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ordinale Modellschätzung: Technische Systeme könnten über die Geltungsdauer einer Regel betrieben werden, sofern sie überhaupt eingeführt werden.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ordinale Modellschätzung: Zusätzliche technische Systeme sind grundsätzlich abschalt- oder ersetzbar; irreversible ökologische Veränderungen sind nicht belegt.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Ordinale Modellschätzung: Keine Quelle weist auf eine besondere Konzentration dieses möglichen Ressourcenpfads auf ein vulnerables Ökosystem oder eine bestimmte Region hin.",
+                    "source_ids": [
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Der Pfad bleibt ein schwacher technischer Nebenpfad ohne belegte Veränderung von Energie- oder Ressourcensystemen.",
+                    "source_ids": [
+                      "research-eu-dsa-rights",
+                      "research-eu-dsa-minors"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete schwere ökologische Schutzgrenzverletzung ist aus den noch unbekannten technischen Maßnahmen nicht ableitbar.",
+                  "reference_frame": "Energie- und Ressourcenverbrauch digitaler Infrastruktur",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-eu-dsa-rights"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der ökologische Pfad ist schwach und bedingt. Zusätzliche technische Alters- oder Zugangskontrollen können Ressourcen beanspruchen, falls sie tatsächlich eingeführt werden; rein organisatorische, pädagogische oder beteiligungsorientierte Maßnahmen müssen diesen Pfad nicht auslösen.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein eigenständiger positiver Umwelt-Hauptpfad ist nicht belegt. Der modellierte negative Pfad bleibt klein und vollständig von der späteren technischen Ausgestaltung abhängig."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Zusätzliche technische Schutz- und Zugangssysteme können einen kleinen zusätzlichen Ressourcenbedarf erzeugen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Zusätzliche technische Schutz- und Zugangssysteme können einen kleinen zusätzlichen Ressourcenbedarf erzeugen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_positive",
+            "direction": "positive",
+            "magnitude": 3,
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Schutz, Befähigung und Beteiligung können sichere und selbstbestimmte digitale Teilhabe stärken",
+                "mechanism": "Wenn Schutzmaßnahmen mit Medienkompetenz, altersgerechter Information und tatsächlicher Beteiligung verbunden werden, können Kinder und Jugendliche digitale Räume sicherer und selbstbestimmter nutzen und ihre Interessen wirksamer einbringen.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "besonders vulnerable Minderjährige",
+                  "digitale Öffentlichkeit mittelbar"
+                ],
+                "magnitude": 3,
+                "evidence": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "research-bmbfsfj-youth-participation",
+                  "research-bmbfsfj-digital-vulnerability",
+                  "research-eu-dsa-minors"
+                ],
+                "condition": "Spätere Maßnahmen verbinden tatsächlichen Schutz mit zugänglicher Befähigung und Beteiligung und berücksichtigen unterschiedlich vulnerable Gruppen.",
+                "reference_space": "Digitale Informations-, Beteiligungs- und Selbstbestimmungsbedingungen Minderjähriger gegenüber der bestehenden Schutzarchitektur.",
+                "time_horizon": "Monate bis mehrere Jahre nach einer tatsächlichen Umsetzung.",
+                "path_quality": [
+                  "indirect",
+                  "systemic"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Beteiligung im Kommissionsprozess selbst wird nicht als verbesserte gesellschaftliche Teilhabe gewertet. Modelliert wird erst eine spätere Umsetzung, die Schutz, Befähigung und Beteiligung funktional verbindet.",
+                "source_support": "Die Ministeriumsquelle belegt, dass junge Menschen nicht nur Gegenstand von Schutzmaßnahmen sein wollen. Die Bestandsaufnahme trägt ungleiche Verwundbarkeit; die EU-Quelle trägt den Schutzmechanismus für Minderjährige. Keine Quelle belegt bereits eine Wirkung künftiger deutscher Regeln.",
+                "limitations": "Konkrete Beteiligungsrechte, Bildungsangebote, Plattformpflichten und Umsetzungsmechanismen stehen noch nicht fest.",
+                "first_order": "Minderjährige können bei geeigneter Umsetzung besseren Schutz, verständlichere Informationen oder stärkere Beteiligungsmöglichkeiten erhalten.",
+                "second_order": "Bessere Befähigung und Beteiligung können selbstbestimmtere Nutzung und Zugang zu digitaler Information und Kommunikation unterstützen.",
+                "third_order": "Dauerhafte altersgerechte Standards können die Stellung Minderjähriger als eigenständige Nutzer und Rechtsträger in digitalen Räumen strukturell stärken.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Symbolische Beteiligung oder schwache Umsetzung begrenzt die Wirkung; verbindliche bundesweite Schutz-, Befähigungs- und Beteiligungsstandards können deutlich größere strukturelle Effekte entfalten."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen stützen Beteiligungsanspruch, unterschiedliche Verwundbarkeit und Minderjährigenschutz. Ob daraus konkrete zusätzliche Beteiligungs- und Selbstbestimmungsrechte entstehen, hängt vom späteren Instrument ab.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Bundesweite Regeln oder Programme können einen großen Teil der Kinder und Jugendlichen betreffen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-bmbfsfj-youth-participation"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Schutz, Befähigung und tatsächliche Beteiligung können Informations- und Handlungsmöglichkeiten spürbar verändern.",
+                    "source_ids": [
+                      "research-bmbfsfj-youth-participation",
+                      "research-eu-dsa-minors"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Dauerhafte Regeln und Beteiligungsstrukturen können über mehrere Jahre wirken, sofern sie verstetigt werden.",
+                    "source_ids": [
+                      "research-bmbfsfj-youth-participation"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Beteiligungs- und Schutzregeln sind grundsätzlich politisch und technisch anpassbar.",
+                    "source_ids": [
+                      "research-bmbfsfj-youth-participation",
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Die Bestandsaufnahme belegt ausdrücklich unterschiedliche Verwundbarkeit nach Alter, sozialer Lage und psychischer Belastung.",
+                    "source_ids": [
+                      "research-bmbfsfj-digital-vulnerability"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Dauerhafte Schutz- und Beteiligungsstandards können Plattformpraxis und institutionellen Umgang mit minderjährigen Nutzern prägen.",
+                    "source_ids": [
+                      "research-bmbfsfj-youth-participation",
+                      "research-eu-dsa-minors"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Digitale Teilhabe und Kinderrechte sind zentrale Referenzgüter; eine konkret schwere Grenzverletzung oder deren sichere Vermeidung durch die noch unbekannten Maßnahmen ist nicht belegt.",
+                  "reference_frame": "Kinderrechte, digitale Selbstbestimmung und gesellschaftliche Teilhabe",
+                  "source_ids": [
+                    "research-bmbfsfj-youth-participation",
+                    "research-eu-dsa-minors"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Unverhältnismäßige Zugangskontrollen können Informations-, Beteiligungs- und Datenschutzrechte einschränken",
+                "mechanism": "Zu breite Zugangsbeschränkungen oder invasive Altersprüfung können legitime digitale Information, Kommunikation und Beteiligung erschweren oder zusätzliche personenbezogene Datenverarbeitung verlangen.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "besonders auf digitale Zugänge angewiesene Minderjährige"
+                ],
+                "magnitude": 3,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "research-eu-dsa-rights",
+                  "research-bmbfsfj-youth-participation",
+                  "research-bmbfsfj-digital-vulnerability"
+                ],
+                "condition": "Spätere Regeln beschränken Zugang oder erheben beziehungsweise verarbeiten Daten stärker als für den Schutz Minderjähriger erforderlich.",
+                "reference_space": "Informations-, Beteiligungs- und Datenschutzbedingungen Minderjähriger unter zusätzlichen Regeln gegenüber der bestehenden Schutzarchitektur.",
+                "time_horizon": "Ab Einführung über die Geltungsdauer der jeweiligen Regeln; strukturell länger bei dauerhafter technischer Standardisierung.",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird nicht unterstellt, dass der angekündigte Gesetzentwurf diesen Gegenpfad verwirklicht. Modelliert wird eine relevante Fehlgestaltungsmöglichkeit bei konkreten Zugangskontrollen oder Altersprüfung.",
+                "source_support": "Die EU-Quelle verlangt ausdrücklich angemessene und nicht unverhältnismäßige Maßnahmen. Die Beteiligungsquelle unterstreicht, dass junge Menschen nicht nur Objekt von Schutzmaßnahmen sein wollen. Die Bestandsaufnahme zeigt ungleiche Verwundbarkeit.",
+                "limitations": "Konkrete Zugangsregeln, Altersprüfung, Datenerhebung, Rechtsgrundlage und Ausnahmen liegen noch nicht vor.",
+                "first_order": "Legitime digitale Zugänge oder Nutzungsmöglichkeiten können durch zu breite Regeln eingeschränkt werden.",
+                "second_order": "Informationsbeschaffung, Kommunikation oder Beteiligung können insbesondere für stärker abhängige Gruppen erschwert werden.",
+                "third_order": "Dauerhaft invasive oder zu breite Standards können problematische Zugangshürden und datenintensive Kontrollpraktiken institutionalisieren.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Datensparsame, zielgenaue Regeln halten den Gegenpfad klein; flächendeckende invasive oder pauschale Zugangskontrollen könnten deutlich größere Rechte- und Teilhabefolgen haben."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen tragen Verhältnismäßigkeits-, Beteiligungs- und Vulnerabilitätsanforderungen, aber keinen Beleg für einen bereits geplanten unverhältnismäßigen Eingriff. Der Pfad bleibt deshalb eine niedrig evidenzierte Modellhypothese. Deshalb wird dieser bedingte Fehlgestaltungsfall als Nebenrisiko geführt, nicht als bereits im konkreten Vorhaben angelegter gleichrangiger Gegenhauptpfad.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Ordinale Modellschätzung: Bundesweit oder plattformweit geltende Zugangsvorgaben könnten viele Minderjährige betreffen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Einschränkungen legitimer Informations-, Kommunikations- oder Datenschutzrechte können für Betroffene deutlich sein; konkrete Eingriffstiefe ist unbekannt.",
+                    "source_ids": [
+                      "research-eu-dsa-rights",
+                      "research-bmbfsfj-youth-participation"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Zugangsvorgaben oder Altersprüfungen können über die gesamte Geltungsdauer einer Regel fortbestehen.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ordinale Modellschätzung: Rechts- und Technikdesigns sind grundsätzlich korrigierbar, auch wenn etablierte Systeme Anpassungskosten erzeugen können.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Besonders vulnerable oder auf digitale Informationszugänge angewiesene Minderjährige können überproportional betroffen sein.",
+                    "source_ids": [
+                      "research-bmbfsfj-digital-vulnerability"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Ordinale Modellschätzung: Flächendeckende Zugangskontrollen können Plattformstandards und institutionelle Zugangspraxis über einzelne Nutzer hinaus prägen.",
+                    "source_ids": [
+                      "research-eu-dsa-rights"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Informationszugang, Beteiligung und Datenschutz sind wichtige Kinderrechte. Eine konkret schwere oder unverhältnismäßige Grenzverletzung ist ohne vorliegenden Entwurf jedoch nicht festgestellt.",
+                  "reference_frame": "Kinderrechte, Informationsfreiheit, Datenschutz und digitale Teilhabe",
+                  "source_ids": [
+                    "research-eu-dsa-rights",
+                    "research-bmbfsfj-youth-participation"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "rationale": "Der bewertete Hauptpfad ist das positive Potenzial sicherer, befähigter und selbstbestimmter digitaler Teilhabe. Eine unverhältnismäßige Altersprüfung oder Zugangsbeschränkung könnte dieses Ziel unterlaufen, ist aber ohne konkreten Entwurf nur als bedingtes Nebenrisiko belegt. Beteiligung an der Kommission selbst zählt noch nicht als verbesserter Zustand.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Die Quellen tragen einen Schutz- und Befähigungsmechanismus und Anforderungen an Verhältnismäßigkeit. Sie belegen noch keine konkret vorgesehene unverhältnismäßige Umsetzung. Eine mögliche Fehlgestaltung wird daher nicht allein durch ihre denkbare Tragweite zu einem gleichrangigen Gegenhauptpfad. Ihre Faktoren bleiben separat sichtbar und werden nicht klein gerechnet."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Schutz, Befähigung und Beteiligung können sichere und selbstbestimmte digitale Teilhabe stärken",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Schutz, Befähigung und Beteiligung können sichere und selbstbestimmte digitale Teilhabe stärken",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "mittel",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Trägt den aktuellen Nachrichtenanlass, die bereits im Juni genannten Empfehlungen und Priens angekündigten Gesetzentwurf."
+          },
+          {
+            "source_id": "research-bmbfsfj-youth-participation",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Trägt Abschlusskonferenz, Beteiligungsprozess und das Anliegen junger Menschen, nicht nur Objekt von Schutzmaßnahmen zu sein."
+          },
+          {
+            "source_id": "research-bmbfsfj-digital-vulnerability",
+            "functions": [
+              "mechanism"
+            ],
+            "supported_claim": "Trägt ungleich verteilte Verwundbarkeit nach Alter, sozialer Lage und psychischer Belastung."
+          },
+          {
+            "source_id": "research-eu-dsa-minors",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Trägt besondere Vulnerabilität Minderjähriger gegenüber suchtfördernden Plattformpraktiken und bestehende Schutzarchitektur."
+          },
+          {
+            "source_id": "research-eu-dsa-rights",
+            "functions": [
+              "counter_evidence",
+              "reference"
+            ],
+            "supported_claim": "Trägt die Anforderung, Schutzmaßnahmen verhältnismäßig zu gestalten und Kinderrechte nicht unangemessen einzuschränken."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/schuetzen-befaehigen-beteiligen-was-kinder-und-jugendliche-von-der-digitalen-welt-erwarten-293958",
+          "title": "Schützen, befähigen, beteiligen: Was Kinder und Jugendliche von der digitalen Welt erwarten",
+          "publisher": "BMBFSFJ",
+          "source_id": "research-bmbfsfj-youth-participation",
+          "source_function": "event"
+        },
+        {
+          "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/bestandsaufnahme-der-expertenkommission-zum-kinder-und-jugendschutz-in-der-digitalen-welt-vorgelegt-284744",
+          "title": "Bestandsaufnahme der Expertenkommission zum Kinder- und Jugendschutz in der digitalen Welt vorgelegt",
+          "publisher": "BMBFSFJ",
+          "source_id": "research-bmbfsfj-digital-vulnerability",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_25_1820/IP_25_1820_EN.pdf",
+          "title": "Commission presents guidelines and age verification app prototype for a safer online space for children",
+          "publisher": "European Commission",
+          "source_id": "research-eu-dsa-minors",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_25_1820/IP_25_1820_EN.pdf",
+          "title": "Commission presents guidelines and age verification app prototype for a safer online space for children",
+          "publisher": "European Commission",
+          "source_id": "research-eu-dsa-rights",
+          "source_function": "counter_evidence"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_positive",
+          "direction": "positive",
+          "magnitude": 3,
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Zielgenaue Schutz- und Befähigungsmaßnahmen können digitale Belastungen reduzieren und Handlungskompetenz stärken",
+              "mechanism": "Maßnahmen, die konkrete risikorelevante Plattformpraktiken begrenzen und mit Medienkompetenz sowie erreichbarer Unterstützung verbinden, können Schutzbedingungen und selbstbestimmte Nutzung verbessern.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "besonders vulnerable Minderjährige",
+                "Familien mittelbar"
+              ],
+              "magnitude": 3,
+              "evidence": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "research-bmbfsfj-digital-vulnerability",
+                "research-eu-dsa-minors",
+                "research-bmbfsfj-youth-participation"
+              ],
+              "condition": "Konkrete Maßnahmen adressieren belegte Risiken, sind altersgerecht, erreichbar und mit Befähigung statt ausschließlich Zugangsbeschränkung verbunden.",
+              "reference_space": "Kinder und Jugendliche, deren digitale Schutz- oder Befähigungsbedingungen sich gegenüber der bestehenden Architektur tatsächlich verändern.",
+              "time_horizon": "Monate bis mehrere Jahre nach Umsetzung.",
+              "path_quality": [
+                "indirect",
+                "systemic"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Nicht jede Empfehlung ist gleich wirksam. Modelliert wird eine zielgenaue Kombination aus Schutz und Befähigung, nicht ein pauschales Social-Media-Verbot.",
+              "source_support": "Die Bestandsaufnahme trägt unterschiedliche Verwundbarkeit; die EU-Quelle trägt Plattformrisiken; die Beteiligungsquelle zeigt, dass Jugendliche Schutz und Mitwirkung zusammen denken. Keine Quelle belegt die Wirkung eines noch unbekannten Gesetzes.",
+              "limitations": "Instrumentenmix, Reichweite, Durchsetzung, Bildungsangebote und technische Ausgestaltung sind offen.",
+              "first_order": "Risikorelevante Plattformbedingungen oder Unterstützungsangebote können sich für Minderjährige verändern.",
+              "second_order": "Bei guter Umsetzung können besonders belastete Gruppen Risiken besser vermeiden und digitale Angebote informierter nutzen.",
+              "third_order": "Dauerhafte Schutz- und Kompetenzstrukturen können Entwicklungs-, Bildungs- und Teilhabechancen stabilisieren; langfristige Effekte müssten evaluiert werden.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Bei begrenzter oder schlecht erreichbarer Umsetzung bleibt die Wirkung moderat; bei bundesweit wirksamen, zielgenauen Schutz- und Befähigungsstrukturen kann sie hoch sein."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen stützen Schutzbedarf, ungleiche Vulnerabilität und den Mechanismus zielgerichteter Schutzmaßnahmen. Der konkrete Zusatznutzen des späteren deutschen Instruments bleibt ex ante.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Bundesweite Regeln oder Programme können einen großen Teil minderjähriger Nutzer betreffen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Zielgenaue Schutz- und Befähigungsmaßnahmen können Nutzungs- und Entwicklungsbedingungen spürbar verändern, ohne sämtliche Belastungsursachen zu beseitigen.",
+                  "source_ids": [
+                    "research-bmbfsfj-digital-vulnerability",
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Dauerhafte Regeln und Kompetenzangebote können über Jahre wirken, sofern sie fortbestehen und genutzt werden.",
+                  "source_ids": [
+                    "research-bmbfsfj-youth-participation",
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Schutz- und Bildungsinstrumente sind grundsätzlich politisch, technisch und pädagogisch anpassbar.",
+                  "source_ids": [
+                    "research-bmbfsfj-youth-participation",
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Die Bestandsaufnahme benennt ausdrücklich Unterschiede nach Alter, sozialer Lage und psychischer Belastung; besonders vulnerable Gruppen können daher überproportional betroffen sein.",
+                  "source_ids": [
+                    "research-bmbfsfj-digital-vulnerability"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Verbindliche Plattformregeln und dauerhafte Befähigungsstrukturen können über individuelle Nutzung hinaus institutionelle Standards prägen.",
+                  "source_ids": [
+                    "research-eu-dsa-minors",
+                    "research-bmbfsfj-youth-participation"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Kindeswohl und körperlich-psychische Entwicklung sind zentrale Schutzgüter, aber eine konkret schwere Schutzgrenzverletzung oder deren sichere Vermeidung durch die noch unbekannten Maßnahmen ist nicht belegt.",
+                "reference_frame": "Kindeswohl, Gesundheit und Entwicklung",
+                "source_ids": [
+                  "research-bmbfsfj-digital-vulnerability",
+                  "research-eu-dsa-minors"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Unverhältnismäßige oder invasive Umsetzung kann Informationszugang, Selbstbestimmung und Datenschutz beeinträchtigen",
+              "mechanism": "Zu breite Verbote oder technisch eingriffsintensive Altersprüfungen können legitime digitale Nutzung erschweren oder zusätzliche Datenverarbeitung erzeugen, ohne den Schutzgewinn entsprechend zu erhöhen.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "besonders auf digitale Zugänge angewiesene Minderjährige",
+                "Familien mittelbar"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "unknown",
+              "source_ids": [
+                "research-eu-dsa-rights",
+                "research-bmbfsfj-youth-participation"
+              ],
+              "condition": "Die konkrete Ausgestaltung beschränkt Zugang oder verarbeitet Daten stärker als für den Schutz Minderjähriger erforderlich.",
+              "reference_space": "Minderjährige unter zusätzlichen Regeln gegenüber der bestehenden Schutzarchitektur.",
+              "time_horizon": "Ab Einführung bis zu rechtlicher oder technischer Korrektur; bei Verstetigung mehrere Jahre.",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird nicht unterstellt, dass der angekündigte Entwurf tatsächlich unverhältnismäßig sein wird; modelliert wird ein relevanter Gestaltungsgegenpfad.",
+              "source_support": "Die EU-Quelle verlangt ausdrücklich verhältnismäßige Schutzmaßnahmen. Die Beteiligungsquelle zeigt, dass junge Menschen nicht nur Objekt von Schutzmaßnahmen sein wollen.",
+              "limitations": "Konkrete Altersprüfung, Datenerhebung und Reichweite von Zugangsbeschränkungen sind noch unbekannt.",
+              "first_order": "Legitime digitale Zugänge oder Nutzungen können durch zu breite Regeln eingeschränkt werden.",
+              "second_order": "Informations-, Lern- oder Beteiligungsmöglichkeiten können für einzelne Gruppen schwerer erreichbar werden.",
+              "third_order": "Dauerhaft schlecht austarierte Regeln können problematische Zugangshürden oder datenintensive Kontrollstandards verstetigen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Zielgenaue, datensparsame Regeln halten den Gegenpfad klein; breite oder invasive Lösungen könnten viele Minderjährige deutlich betreffen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen tragen Verhältnismäßigkeits- und Beteiligungsanforderungen, aber keinen bereits geplanten konkreten Rechtseingriff. Der Gegenpfad bleibt daher niedrig evidenzierte Modellhypothese. Deshalb wird dieser bedingte Fehlgestaltungsfall als Nebenrisiko geführt, nicht als bereits im konkreten Vorhaben angelegter gleichrangiger Gegenhauptpfad.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Bundesweit oder plattformweit geltende Zugangsvorgaben könnten viele Minderjährige betreffen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Einschränkungen von Informationszugang oder Datenschutz können relevant sein; konkrete Eingriffstiefe ist unbekannt.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Zugangsbeschränkungen würden für die Geltungsdauer bestehen und könnten angepasst werden.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Regeln und technische Verfahren sind grundsätzlich revidierbar.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Minderjährige mit besonderer Abhängigkeit von digitalen Informations- oder Unterstützungszugängen können stärker betroffen sein.",
+                  "source_ids": [
+                    "research-bmbfsfj-digital-vulnerability",
+                    "research-bmbfsfj-youth-participation"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Zugangsvorgaben können Plattform- und Nutzungspraxis verändern, ohne mangels konkreten Designs eine tiefgreifende Systemwirkung zu begründen.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Kinderrechte, Informationszugang und Datenschutz sind relevante Schutzgüter; eine konkret schwere oder unverhältnismäßige Verletzung ist ohne Entwurf nicht belegt.",
+                "reference_frame": "Kinderrechte, Informationszugang und Datenschutz",
+                "source_ids": [
+                  "research-eu-dsa-rights",
+                  "research-bmbfsfj-youth-participation"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "rationale": "Der bewertete Hauptpfad ist das positive Potenzial zielgenauer Schutz- und Befähigungsmaßnahmen. Die Umsetzung steht noch aus. Zu breite oder invasive Regeln bleiben als eigenständiges bedingtes Nebenrisiko dokumentiert; ohne konkreten Entwurf ist nicht belegt, dass gerade diese Fehlgestaltung Bestandteil des Vorhabens wird.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Die Quellen tragen einen Schutz- und Befähigungsmechanismus und Anforderungen an Verhältnismäßigkeit. Sie belegen noch keine konkret vorgesehene unverhältnismäßige Umsetzung. Eine mögliche Fehlgestaltung wird daher nicht allein durch ihre denkbare Tragweite zu einem gleichrangigen Gegenhauptpfad. Ihre Faktoren bleiben separat sichtbar und werden nicht klein gerechnet."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zielgenaue Schutz- und Befähigungsmaßnahmen können digitale Belastungen reduzieren und Handlungskompetenz stärken",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Zielgenaue Schutz- und Befähigungsmaßnahmen können digitale Belastungen reduzieren und Handlungskompetenz stärken",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Zusätzliche technische Schutz- und Zugangssysteme können einen kleinen zusätzlichen Ressourcenbedarf erzeugen",
+              "mechanism": "Falls spätere Maßnahmen neue technische Altersprüfungs-, Zugangs- oder Kontrollinfrastruktur erfordern, können zusätzlicher IT-Betrieb, Datenverarbeitung und technische Anpassungen Ressourcen und Energie beanspruchen.",
+              "recipients": [
+                "Energie- und Ressourcenverbrauch digitaler Infrastruktur mittelbar"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-eu-dsa-rights",
+                "research-eu-dsa-minors"
+              ],
+              "condition": "Der spätere Gesetzentwurf verlangt tatsächlich zusätzliche technische Prüf-, Zugangs- oder Kontrollsysteme gegenüber der bestehenden Infrastruktur.",
+              "reference_space": "Zusätzlicher technischer Ressourcenbedarf der umgesetzten Maßnahmen gegenüber der bestehenden digitalen Schutzarchitektur.",
+              "time_horizon": "Ab technischer Einführung über die Laufzeit der jeweiligen Systeme; bei rein organisatorischen oder pädagogischen Maßnahmen entfällt dieser Pfad weitgehend.",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Nicht jede Empfehlung benötigt neue technische Infrastruktur. Modelliert wird nur der Fall zusätzlicher digitaler Prüf- oder Kontrollsysteme; ein Umweltvorteil oder konkreter Mehrverbrauch wird nicht als beobachtet unterstellt.",
+              "source_support": "DLF belegt, dass ein Gesetzentwurf angekündigt ist. Die EU-Quellen zeigen, dass technische Schutz- und Altersprüfungsansätze Teil der bestehenden Regulierungsarchitektur sein können. Keine der Quellen misst Umwelt- oder Energieeffekte der noch unbekannten deutschen Umsetzung.",
+              "limitations": "Konkretes Instrument, technische Architektur, Rechenaufwand, Datenvolumen, Geräteeinsatz und zusätzliche Energie- oder Materialmengen sind unbekannt.",
+              "first_order": "Neue technische Prüf- oder Zugangssysteme können zusätzlichen IT-Betrieb und Datenverarbeitung erfordern.",
+              "second_order": "Bei breiter Nutzung können daraus zusätzliche Energie- und Infrastrukturbedarfe entstehen.",
+              "third_order": "Nur bei dauerhaft großskaliger technischer Infrastruktur könnte sich ein struktureller Ressourcenpfad verfestigen; dafür gibt es derzeit keinen Beleg.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne zusätzliche Technik ist die Umweltänderung praktisch null; bei flächendeckender neuer Prüfinfrastruktur kann ein kleiner bis begrenzter zusätzlicher Ressourcenbedarf entstehen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die vorhandenen Quellen tragen nur den regulatorischen und technischen Ausgangspunkt. Mangels Umweltmessung bleibt der Pfad eine konservative Modellhypothese mit niedriger Evidenz.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Bundesweit oder plattformweit eingeführte technische Vorgaben könnten einen großen Nutzerkreis betreffen; die Quellen belegen nur den potenziellen Regelungsraum.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Pro Nutzungsvorgang ist ohne Hinweise auf besonders ressourcenintensive Technik nur ein geringer zusätzlicher Umweltbeitrag plausibel.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ordinale Modellschätzung: Technische Systeme könnten über die Geltungsdauer einer Regel betrieben werden, sofern sie überhaupt eingeführt werden.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ordinale Modellschätzung: Zusätzliche technische Systeme sind grundsätzlich abschalt- oder ersetzbar; irreversible ökologische Veränderungen sind nicht belegt.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Ordinale Modellschätzung: Keine Quelle weist auf eine besondere Konzentration dieses möglichen Ressourcenpfads auf ein vulnerables Ökosystem oder eine bestimmte Region hin.",
+                  "source_ids": [
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Der Pfad bleibt ein schwacher technischer Nebenpfad ohne belegte Veränderung von Energie- oder Ressourcensystemen.",
+                  "source_ids": [
+                    "research-eu-dsa-rights",
+                    "research-eu-dsa-minors"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete schwere ökologische Schutzgrenzverletzung ist aus den noch unbekannten technischen Maßnahmen nicht ableitbar.",
+                "reference_frame": "Energie- und Ressourcenverbrauch digitaler Infrastruktur",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-eu-dsa-rights"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der ökologische Pfad ist schwach und bedingt. Zusätzliche technische Alters- oder Zugangskontrollen können Ressourcen beanspruchen, falls sie tatsächlich eingeführt werden; rein organisatorische, pädagogische oder beteiligungsorientierte Maßnahmen müssen diesen Pfad nicht auslösen.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein eigenständiger positiver Umwelt-Hauptpfad ist nicht belegt. Der modellierte negative Pfad bleibt klein und vollständig von der späteren technischen Ausgestaltung abhängig."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Zusätzliche technische Schutz- und Zugangssysteme können einen kleinen zusätzlichen Ressourcenbedarf erzeugen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Zusätzliche technische Schutz- und Zugangssysteme können einen kleinen zusätzlichen Ressourcenbedarf erzeugen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_positive",
+          "direction": "positive",
+          "magnitude": 3,
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Schutz, Befähigung und Beteiligung können sichere und selbstbestimmte digitale Teilhabe stärken",
+              "mechanism": "Wenn Schutzmaßnahmen mit Medienkompetenz, altersgerechter Information und tatsächlicher Beteiligung verbunden werden, können Kinder und Jugendliche digitale Räume sicherer und selbstbestimmter nutzen und ihre Interessen wirksamer einbringen.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "besonders vulnerable Minderjährige",
+                "digitale Öffentlichkeit mittelbar"
+              ],
+              "magnitude": 3,
+              "evidence": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "research-bmbfsfj-youth-participation",
+                "research-bmbfsfj-digital-vulnerability",
+                "research-eu-dsa-minors"
+              ],
+              "condition": "Spätere Maßnahmen verbinden tatsächlichen Schutz mit zugänglicher Befähigung und Beteiligung und berücksichtigen unterschiedlich vulnerable Gruppen.",
+              "reference_space": "Digitale Informations-, Beteiligungs- und Selbstbestimmungsbedingungen Minderjähriger gegenüber der bestehenden Schutzarchitektur.",
+              "time_horizon": "Monate bis mehrere Jahre nach einer tatsächlichen Umsetzung.",
+              "path_quality": [
+                "indirect",
+                "systemic"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Beteiligung im Kommissionsprozess selbst wird nicht als verbesserte gesellschaftliche Teilhabe gewertet. Modelliert wird erst eine spätere Umsetzung, die Schutz, Befähigung und Beteiligung funktional verbindet.",
+              "source_support": "Die Ministeriumsquelle belegt, dass junge Menschen nicht nur Gegenstand von Schutzmaßnahmen sein wollen. Die Bestandsaufnahme trägt ungleiche Verwundbarkeit; die EU-Quelle trägt den Schutzmechanismus für Minderjährige. Keine Quelle belegt bereits eine Wirkung künftiger deutscher Regeln.",
+              "limitations": "Konkrete Beteiligungsrechte, Bildungsangebote, Plattformpflichten und Umsetzungsmechanismen stehen noch nicht fest.",
+              "first_order": "Minderjährige können bei geeigneter Umsetzung besseren Schutz, verständlichere Informationen oder stärkere Beteiligungsmöglichkeiten erhalten.",
+              "second_order": "Bessere Befähigung und Beteiligung können selbstbestimmtere Nutzung und Zugang zu digitaler Information und Kommunikation unterstützen.",
+              "third_order": "Dauerhafte altersgerechte Standards können die Stellung Minderjähriger als eigenständige Nutzer und Rechtsträger in digitalen Räumen strukturell stärken.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Symbolische Beteiligung oder schwache Umsetzung begrenzt die Wirkung; verbindliche bundesweite Schutz-, Befähigungs- und Beteiligungsstandards können deutlich größere strukturelle Effekte entfalten."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen stützen Beteiligungsanspruch, unterschiedliche Verwundbarkeit und Minderjährigenschutz. Ob daraus konkrete zusätzliche Beteiligungs- und Selbstbestimmungsrechte entstehen, hängt vom späteren Instrument ab.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Bundesweite Regeln oder Programme können einen großen Teil der Kinder und Jugendlichen betreffen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-bmbfsfj-youth-participation"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Schutz, Befähigung und tatsächliche Beteiligung können Informations- und Handlungsmöglichkeiten spürbar verändern.",
+                  "source_ids": [
+                    "research-bmbfsfj-youth-participation",
+                    "research-eu-dsa-minors"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Dauerhafte Regeln und Beteiligungsstrukturen können über mehrere Jahre wirken, sofern sie verstetigt werden.",
+                  "source_ids": [
+                    "research-bmbfsfj-youth-participation"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Beteiligungs- und Schutzregeln sind grundsätzlich politisch und technisch anpassbar.",
+                  "source_ids": [
+                    "research-bmbfsfj-youth-participation",
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Die Bestandsaufnahme belegt ausdrücklich unterschiedliche Verwundbarkeit nach Alter, sozialer Lage und psychischer Belastung.",
+                  "source_ids": [
+                    "research-bmbfsfj-digital-vulnerability"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Dauerhafte Schutz- und Beteiligungsstandards können Plattformpraxis und institutionellen Umgang mit minderjährigen Nutzern prägen.",
+                  "source_ids": [
+                    "research-bmbfsfj-youth-participation",
+                    "research-eu-dsa-minors"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Digitale Teilhabe und Kinderrechte sind zentrale Referenzgüter; eine konkret schwere Grenzverletzung oder deren sichere Vermeidung durch die noch unbekannten Maßnahmen ist nicht belegt.",
+                "reference_frame": "Kinderrechte, digitale Selbstbestimmung und gesellschaftliche Teilhabe",
+                "source_ids": [
+                  "research-bmbfsfj-youth-participation",
+                  "research-eu-dsa-minors"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Unverhältnismäßige Zugangskontrollen können Informations-, Beteiligungs- und Datenschutzrechte einschränken",
+              "mechanism": "Zu breite Zugangsbeschränkungen oder invasive Altersprüfung können legitime digitale Information, Kommunikation und Beteiligung erschweren oder zusätzliche personenbezogene Datenverarbeitung verlangen.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "besonders auf digitale Zugänge angewiesene Minderjährige"
+              ],
+              "magnitude": 3,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "unknown",
+              "source_ids": [
+                "research-eu-dsa-rights",
+                "research-bmbfsfj-youth-participation",
+                "research-bmbfsfj-digital-vulnerability"
+              ],
+              "condition": "Spätere Regeln beschränken Zugang oder erheben beziehungsweise verarbeiten Daten stärker als für den Schutz Minderjähriger erforderlich.",
+              "reference_space": "Informations-, Beteiligungs- und Datenschutzbedingungen Minderjähriger unter zusätzlichen Regeln gegenüber der bestehenden Schutzarchitektur.",
+              "time_horizon": "Ab Einführung über die Geltungsdauer der jeweiligen Regeln; strukturell länger bei dauerhafter technischer Standardisierung.",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird nicht unterstellt, dass der angekündigte Gesetzentwurf diesen Gegenpfad verwirklicht. Modelliert wird eine relevante Fehlgestaltungsmöglichkeit bei konkreten Zugangskontrollen oder Altersprüfung.",
+              "source_support": "Die EU-Quelle verlangt ausdrücklich angemessene und nicht unverhältnismäßige Maßnahmen. Die Beteiligungsquelle unterstreicht, dass junge Menschen nicht nur Objekt von Schutzmaßnahmen sein wollen. Die Bestandsaufnahme zeigt ungleiche Verwundbarkeit.",
+              "limitations": "Konkrete Zugangsregeln, Altersprüfung, Datenerhebung, Rechtsgrundlage und Ausnahmen liegen noch nicht vor.",
+              "first_order": "Legitime digitale Zugänge oder Nutzungsmöglichkeiten können durch zu breite Regeln eingeschränkt werden.",
+              "second_order": "Informationsbeschaffung, Kommunikation oder Beteiligung können insbesondere für stärker abhängige Gruppen erschwert werden.",
+              "third_order": "Dauerhaft invasive oder zu breite Standards können problematische Zugangshürden und datenintensive Kontrollpraktiken institutionalisieren.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Datensparsame, zielgenaue Regeln halten den Gegenpfad klein; flächendeckende invasive oder pauschale Zugangskontrollen könnten deutlich größere Rechte- und Teilhabefolgen haben."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen tragen Verhältnismäßigkeits-, Beteiligungs- und Vulnerabilitätsanforderungen, aber keinen Beleg für einen bereits geplanten unverhältnismäßigen Eingriff. Der Pfad bleibt deshalb eine niedrig evidenzierte Modellhypothese. Deshalb wird dieser bedingte Fehlgestaltungsfall als Nebenrisiko geführt, nicht als bereits im konkreten Vorhaben angelegter gleichrangiger Gegenhauptpfad.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Ordinale Modellschätzung: Bundesweit oder plattformweit geltende Zugangsvorgaben könnten viele Minderjährige betreffen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Einschränkungen legitimer Informations-, Kommunikations- oder Datenschutzrechte können für Betroffene deutlich sein; konkrete Eingriffstiefe ist unbekannt.",
+                  "source_ids": [
+                    "research-eu-dsa-rights",
+                    "research-bmbfsfj-youth-participation"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Zugangsvorgaben oder Altersprüfungen können über die gesamte Geltungsdauer einer Regel fortbestehen.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ordinale Modellschätzung: Rechts- und Technikdesigns sind grundsätzlich korrigierbar, auch wenn etablierte Systeme Anpassungskosten erzeugen können.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Besonders vulnerable oder auf digitale Informationszugänge angewiesene Minderjährige können überproportional betroffen sein.",
+                  "source_ids": [
+                    "research-bmbfsfj-digital-vulnerability"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Ordinale Modellschätzung: Flächendeckende Zugangskontrollen können Plattformstandards und institutionelle Zugangspraxis über einzelne Nutzer hinaus prägen.",
+                  "source_ids": [
+                    "research-eu-dsa-rights"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Informationszugang, Beteiligung und Datenschutz sind wichtige Kinderrechte. Eine konkret schwere oder unverhältnismäßige Grenzverletzung ist ohne vorliegenden Entwurf jedoch nicht festgestellt.",
+                "reference_frame": "Kinderrechte, Informationsfreiheit, Datenschutz und digitale Teilhabe",
+                "source_ids": [
+                  "research-eu-dsa-rights",
+                  "research-bmbfsfj-youth-participation"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "rationale": "Der bewertete Hauptpfad ist das positive Potenzial sicherer, befähigter und selbstbestimmter digitaler Teilhabe. Eine unverhältnismäßige Altersprüfung oder Zugangsbeschränkung könnte dieses Ziel unterlaufen, ist aber ohne konkreten Entwurf nur als bedingtes Nebenrisiko belegt. Beteiligung an der Kommission selbst zählt noch nicht als verbesserter Zustand.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Die Quellen tragen einen Schutz- und Befähigungsmechanismus und Anforderungen an Verhältnismäßigkeit. Sie belegen noch keine konkret vorgesehene unverhältnismäßige Umsetzung. Eine mögliche Fehlgestaltung wird daher nicht allein durch ihre denkbare Tragweite zu einem gleichrangigen Gegenhauptpfad. Ihre Faktoren bleiben separat sichtbar und werden nicht klein gerechnet."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Schutz, Befähigung und Beteiligung können sichere und selbstbestimmte digitale Teilhabe stärken",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Schutz, Befähigung und Beteiligung können sichere und selbstbestimmte digitale Teilhabe stärken",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "mittel",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Empfehlungen",
+            "value": "56",
+            "unit": "Empfehlungen",
+            "context": "Ende Juni vorgestellte Empfehlungen für eine Gesamtstrategie.",
+            "claim_id": "wt-056e05614272ee27-v1-claim-2"
+          }
+        ],
+        "affected_groups": [
+          "kinder_jugend",
+          "haushalte",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-11T02:16:56.361Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-11T00:22:22.000Z",
+      "last_updated": "2026-09-11T02:16:56.361Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-2d2b1ffcb9dbcf93b7c6",
+      "case_file": null,
+      "source_published_at": "2026-09-11T00:22:22.000Z",
+      "published_at": "2026-09-11T02:16:56.361Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prien will in den kommenden Wochen einen Gesetzentwurf vorlegen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichter Gesetzentwurf mit konkreten Maßnahmen, Altersgrenzen, Zuständigkeiten und Umsetzungsregeln.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8e0191c018378fde",
+          "announced_at": "2026-09-11T00:22:22.000Z",
+          "follow_up_date": "2026-09-18T02:16:56.361Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, welche der 56 Empfehlungen nach der Abschlussveranstaltung politisch weiterverfolgt werden.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Auswahl, Beschluss oder Umsetzungsplan zu konkreten Empfehlungen.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-734fa8bcd004f151",
+          "announced_at": "2026-09-11T00:22:22.000Z",
+          "follow_up_date": "2026-09-18T02:16:56.361Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/social-media-expertenkommission-legt-abschlussbericht-vor-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-11T00:22:22.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-4e92fe054ca8e98a",
       "title_image": {
