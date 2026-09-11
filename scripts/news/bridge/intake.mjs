@@ -96,8 +96,23 @@ export class EditorialIntake {
     try{
       for(const job of jobs){
         try{
-          const draft=this.getDraft(job.intake.owner,job.intake.draft_id);
-          for(const [index,upload] of Object.entries(draft.uploads))await this.transport.writeBinaryAtomic(job.input.request.attachments[Number(index)].path,fs.readFileSync(upload.file));
+          if(job.intake.draft_id){
+            const draft=this.getDraft(job.intake.owner,job.intake.draft_id);
+            for(const [index,upload] of Object.entries(draft.uploads))await this.transport.writeBinaryAtomic(job.input.request.attachments[Number(index)].path,fs.readFileSync(upload.file));
+          }else{
+            // Existing-publication reviews and research packets have no form draft.
+            // Only a server-created revision of the owner's current returned
+            // preview may use that path; a missing ordinary intake stays invalid.
+            const parent=job.intake.review_parent?this.store.get(job.intake.review_parent):null;
+            const row=this.store.db.prepare('SELECT body FROM editorial_reviews WHERE job_id=?').get(job.intake.review_parent||'');
+            const review=row?JSON.parse(row.body):null,revision=job.input.request.revision;
+            const trace=this.store.observation('editorial-revision:'+job.input.job_id);
+            if(!parent||parent.intake?.owner!==job.intake.owner||review?.owner!==job.intake.owner
+              ||review.status!=='REVISION_REQUESTED'||trace?.parent!==parent.input.job_id
+              ||trace.preview_hash!==review.preview_hash||revision?.previous_hash!==review.preview_hash
+              ||hash(revision.previous_preview)!==hash(review.preview)||hash(revision.comments)!==hash(review.comments)
+              ||job.input.input_hash!==hash(job.input.request)||job.input.request.attachments?.length)fail('INTAKE_REVISION_SOURCE_INVALID');
+          }
           await this.transport.writeAtomic(bridgePath('00_INBOX',`${job.input.job_id}.input.json`),job.input);
           job.status='queued';job.queued_at=this.now();delete job.last_error;this.store.put(job);
         }catch(error){

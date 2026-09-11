@@ -69,6 +69,41 @@ test('comments return one revision to the same bridge and require approval of th
  f.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:now(),preview:p}));
  assert.equal((await importEditorialPreviews(f)).staged,1);assert.equal(f.approval.get(j.input.job_id).revision,2);assert.equal(f.approval.list(owner).length,1);assert.equal(f.approval.claimPublications().length,0);
 });
+test('a returned existing-publication review needs no obsolete form draft and stages a fresh approval',async t=>{
+ const f=setup(t),j=await job(f);delete j.intake.draft_id;f.store.put(j);
+ f.store.db.exec('DELETE FROM editorial_drafts');
+ const r=f.approval.stage(j,preview());
+ f.approval.decide(owner,j.input.job_id,{action:'REVISE',preview_hash:r.preview_hash,comment:'Bitte meinen mitgeteilten Entstehungsgedanken ergänzen.'});
+ assert.equal(prepareEditorialRevisions(f),1);assert.equal(prepareEditorialRevisions(f),0);
+ await f.intake.preparePending();
+ const child=f.store.all().find(j=>j.intake.review_parent);
+ assert.equal(child.status,'queued');assert.equal(child.last_error,undefined);
+ assert.ok(f.files.has(bridgePath('00_INBOX',child.input.job_id+'.input.json')));
+ const p={...preview(),markdown:preview().markdown+'\n\nErgänzter synthetischer Entstehungsgedanke zur erneuten Prüfung.'};
+ f.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:now(),preview:p}));
+ assert.equal((await importEditorialPreviews(f)).staged,1);
+ const fresh=f.approval.get(j.input.job_id);
+ assert.equal(fresh.status,'AWAITING_FINAL_APPROVAL');assert.equal(fresh.revision,2);assert.equal(fresh.approval,null);
+ assert.equal(fresh.comments[0].comment,'Bitte meinen mitgeteilten Entstehungsgedanken ergänzen.');
+ assert.equal(f.approval.list(owner).length,1);assert.equal(f.approval.claimPublications().length,0);
+ assert.throws(()=>f.approval.decide(owner,j.input.job_id,{action:'APPROVE',preview_hash:r.preview_hash}),/PREVIEW_CHANGED/);
+});
+test('draftless intake rejects missing provenance, other owners, stale comments and missing attachments',async t=>{
+ for(const corrupt of ['ordinary','owner','trace','comment','attachment'])await t.test(corrupt,async t=>{
+  const f=setup(t),j=await job(f);delete j.intake.draft_id;f.store.put(j);
+  const r=f.approval.stage(j,preview());f.approval.decide(owner,j.input.job_id,{action:'REVISE',preview_hash:r.preview_hash,comment:'Synthetischer Änderungswunsch.'});
+  prepareEditorialRevisions(f);const child=f.store.all().find(j=>j.intake.review_parent);
+  if(corrupt==='ordinary')delete child.intake.review_parent;
+  if(corrupt==='owner')child.intake.owner=other;
+  if(corrupt==='trace')f.store.observe('editorial-revision:'+child.input.job_id,{parent:'wrong'});
+  if(corrupt==='comment')child.input.request.revision.comments[0].comment='Nicht autorisierter Austausch';
+  if(corrupt==='attachment')child.input.request.attachments=[{path:'missing.jpg'}];
+  f.store.put(child);await f.intake.preparePending();
+  const failed=f.store.get(child.input.job_id);assert.equal(failed.last_error.error_code,'INTAKE_REVISION_SOURCE_INVALID');
+  assert.equal(f.files.has(bridgePath('00_INBOX',child.input.job_id+'.input.json')),false);
+  assert.equal(f.approval.claimPublications().length,0);
+ });
+});
 test('HTTP rejects unauthenticated, wrong-owner and cross-origin decisions',async t=>{
  const f=setup(t),j=await job(f),r=f.approval.stage(j,preview());
  const handler=createEditorialIntakeHandler({...f,authorize:async req=>req.headers.authorization==='Bearer owner'?owner:req.headers.authorization==='Bearer other'?other:null});
