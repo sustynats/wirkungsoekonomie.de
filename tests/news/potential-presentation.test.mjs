@@ -47,15 +47,29 @@ test('list and detail explain signed potentials without a mixed total or hidden 
   }
 });
 
-test('the reported Dröge case changes through the shared presentation, not a content override',()=>{
+test('a legacy copy of the Dröge case is not silently promoted by presentation',()=>{
   const s=JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.slug==='droge-mussen-antrag-zum-afd-verbot-einbringen-ac1645');
-  assert.ok(s);const before=JSON.stringify(s);
+  assert.ok(s);delete s.impact_assessment;delete s.impact_assessment_basis;
+  const before=JSON.stringify(s);
   for(const html of [storyCard(s),storyPage(s)]) {
     assert.doesNotMatch(html,/Gegenläufige Wirkpfade/);
     assert.doesNotMatch(html,/data-magnitude=/);
     assert.equal(deriveImpactPresentation(s).review.status,'needs_reassessment');
   }
   assert.equal(JSON.stringify(s),before);
+});
+
+test('completed production reassessments retain all three public magnitude bars',()=>{
+  const assessed=JSON.parse(fs.readFileSync('data/news/stories.json')).stories.filter(s=>s.impact_assessment?.review?.status==='reassessed');
+  assert.ok(assessed.length,'the checked publication fixtures include completed assessments');
+  for(const story of assessed){
+    const before=JSON.stringify(story);
+    for(const html of [storyCard(story),storyPage(story)]){
+      assert.ok((html.match(/data-magnitude="[0-5]"/g)||[]).length>=3,story.slug);
+      for(const key of ['human','planet','democracy'])assert.ok(html.includes('wt-dim--'+key),story.slug+':'+key);
+    }
+    assert.equal(JSON.stringify(story),before);
+  }
 });
 
 test('legacy mixed records are not silently promoted to the new semantic contract',()=>{
@@ -77,7 +91,8 @@ test('newly researched manual reviews use the same contract as automatic assessm
 
 test('an unscoped historical judgment cannot appear as a verdict about the headline event',()=>{
   const s=JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.slug==='afd-wahler-in-sachsen-anhalt-wer-die-partei-gewahlt-hat-bfbf87');
-  assert.ok(s);const before=JSON.stringify(s);
+  assert.ok(s);delete s.impact_assessment;delete s.impact_assessment_basis;
+  const before=JSON.stringify(s);
   assert.equal(dimensionAssessment(s.analysis,'democracy').status,'unscoped');
   for(const html of [storyCard(s),storyPage(s)]) {
     assert.doesNotMatch(html,/data-magnitude=/);
