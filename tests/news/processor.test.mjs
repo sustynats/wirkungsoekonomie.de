@@ -163,3 +163,25 @@ test('throughput does not double-count unchanged jobs and remains available afte
   assert.equal(log.events.length, 2); assert.equal(log.hours['2026-09-11T09:00:00.000Z'].incoming, 1);
   assert.equal(log.hours['2026-09-11T09:00:00.000Z'].completed, 1);
 });
+
+test('equal-priority jobs use LIFO, even when the older normal item waited days',()=>{
+ const jobs=Array.from({length:100},(_,n)=>({job_id:id(n),job_type:'new_story',created_at:now})).filter(j=>processorShard(j.job_id)===0).slice(0,3);
+ jobs[0].created_at='2026-09-01T00:00:00Z';jobs[1].created_at='2026-09-11T09:00:00Z';
+ assert.deepEqual(selectProcessorBatch(jobs,0,now).map(j=>j.job_id),[jobs[2],jobs[1],jobs[0]].map(j=>j.job_id));
+ assert.equal(jobs[0].created_at,'2026-09-01T00:00:00Z');
+});
+test('direct requests and their repairs precede ordinary updates without jumping urgent work',()=>{
+ const jobs=Array.from({length:100},(_,n)=>({job_id:id(n),created_at:now,job_type:'story_update'})).filter(j=>processorShard(j.job_id)===0).slice(0,5);
+ jobs[1].job_type='editorial_request';jobs[1].created_at='2026-09-11T09:01:00Z';
+ jobs[2].job_type='correction';jobs[2].original_input={job_type:'editorial_request'};jobs[2].created_at='2026-09-11T09:02:00Z';
+ jobs[3].manual_request=true;jobs[3].created_at='2026-09-11T09:03:00Z';jobs[4].urgent=true;
+ assert.deepEqual(selectProcessorBatch(jobs,0,now).map(j=>j.job_id),[jobs[4],jobs[3],jobs[2],jobs[1],jobs[0]].map(j=>j.job_id));
+});
+test('backfill repairs and inherited semantic reviews remain paused in a critical queue',()=>{
+ const jobs=Array.from({length:100},(_,n)=>({job_id:id(n),created_at:now,job_type:'new_story'})).filter(j=>processorShard(j.job_id)===0).slice(0,4);
+ jobs[0].job_type='correction';jobs[0].original_input={job_type:'impact_reassessment'};
+ jobs[1].job_type='impact_semantic_review';jobs[1].backfill=true;
+ jobs[2].job_type='correction';jobs[2].original_input={job_type:'correction',original_input:{discovery:{trigger_type:'backfill'}}};
+ assert.deepEqual(selectProcessorBatch(jobs,0,now,{queueCritical:true}).map(j=>j.job_id),[jobs[3].job_id]);
+ assert.equal(selectProcessorBatch(jobs,0,now).length,4);
+});

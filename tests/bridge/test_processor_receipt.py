@@ -61,6 +61,24 @@ class ReceiptTests(unittest.TestCase):
         p, _, job, now = fixture(); p['readback_sha256'] = '0'*64
         with self.assertRaises(ValueError): receipts.validate_report(p, job, now)
 
+    def test_delayed_scheduler_does_not_make_a_fresh_readback_stale(self):
+        p, raw, job, now = fixture()
+        p['scheduled_for'] = (now - timedelta(minutes=55)).isoformat().replace('+00:00', 'Z')
+        self.assertTrue(receipts.validate_report(p, job, now).endswith('.json'))
+        self.assertEqual(receipts.verified_receipt(p, raw)['status'], 'PASS')
+        # The independently recent observation is still required, even when
+        # the scheduler-delay allowance would admit the scheduled occurrence.
+        p['checked_at'] = (now - timedelta(minutes=31)).isoformat().replace('+00:00', 'Z')
+        with self.assertRaises(ValueError): receipts.validate_report(p, job, now)
+
+    def test_scheduler_delay_is_bounded_and_never_allows_a_future_readback(self):
+        p, _, job, now = fixture()
+        p['scheduled_for'] = (now - timedelta(minutes=92)).isoformat().replace('+00:00', 'Z')
+        with self.assertRaises(ValueError): receipts.validate_report(p, job, now)
+        p['scheduled_for'] = (now - timedelta(minutes=50)).isoformat().replace('+00:00', 'Z')
+        p['checked_at'] = (now + timedelta(seconds=1)).isoformat().replace('+00:00', 'Z')
+        with self.assertRaises(ValueError): receipts.validate_report(p, job, now)
+
     def test_foreign_probe_and_tampered_bytes_rejected(self):
         p, raw, _, _ = fixture()
         with self.assertRaises(ValueError): receipts.verified_receipt(p, raw + b' ')

@@ -88,14 +88,14 @@ function drawRequests(){
     card.append(meta,element('h2',request.title||request.brief.slice(0,110)),state);
     if(request.status_note)card.append(element('p',request.status_note));
     if(request.publication_url){try{const url=new URL(request.publication_url);if(url.origin==='https://wirkungsoekonomie.de'){const link=element('a','Beitrag öffnen ↗');link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';card.append(link);}}catch{/* Display only validated public URLs. */}}
-    if(request.review_status){const button=element('button','Vorschau und Kommentare','text-button');button.type='button';button.addEventListener('click',()=>{show('approvals');openReview(request.job_id).catch(error=>note(error.message,true));});card.append(button);}
+    if(request.review_status){const button=element('button','Vorschau und Kommentare','text-button');button.type='button';button.addEventListener('click',()=>{show('approvals');openReview(request.review_job_id||request.job_id).catch(error=>note(error.message,true));});card.append(button);}
     else if(request.preview_available){const button=element('button','Privaten Entwurf ansehen','text-button');button.type='button';button.addEventListener('click',async()=>{try{const data=await api(`/requests/${request.job_id}/preview`);const details=element('details'),summary=element('summary','Entwurf'),text=element('p',data.text);details.open=true;details.append(summary,text);card.append(details);button.remove();}catch(error){note(error.message,true);}});card.append(button);}
     mount.append(card);
   }
 }
 async function load(){
   if(!auth())return;
-  const [data,reviewData]=await Promise.all([api('/requests'),api('/reviews')]);const reviews=new Map(reviewData.reviews.map(r=>[r.job_id,r]));requests=data.requests.map(r=>requestWithReview(r,reviews.get(r.job_id)));drawReviews(reviewData.reviews);
+  const [data,reviewData]=await Promise.all([api('/requests'),api('/reviews')]);const reviews=new Map(reviewData.reviews.map(r=>[r.job_id,r]));requests=data.requests.map(r=>requestWithReview(r,reviews.get(r.review_job_id||r.job_id)));drawReviews(reviewData.reviews);
   $('login').hidden=true;$('workspace').hidden=false;drawRequests();if(location.hash==='#freigeben'){show('approvals');history.replaceState(null,'',location.pathname);}
   if(!poll)poll=setInterval(()=>{if(!document.hidden&&!sending)load().catch(error=>note(error.message,true));},60000);
 }

@@ -204,3 +204,22 @@ test('long Unicode feedback survives HTTP, storage, revision handoff and preview
  assert.equal(packet.request.revision.comments.at(-1).comment,comment);
  assert.equal(f.approval.publishable(j.input.job_id),false);
 });
+
+test('intake previews return the saved full draft, never a successful placeholder',async t=>{
+ const f=setup(t),j=await job(f),p=preview();j.staging={editorial_preview:p};f.store.put(j);
+ assert.equal(f.intake.preview(owner,j.input.job_id).text,p.markdown);
+ assert.equal(f.intake.list(owner)[0].preview_available,true);
+ assert.throws(()=>f.intake.preview(other,j.input.job_id),/NOT_FOUND/);
+ j.staging={preview_hash:'diagnostic-only'};f.store.put(j);
+ assert.equal(f.intake.list(owner)[0].preview_available,false);
+ assert.throws(()=>f.intake.preview(owner,j.input.job_id),/PREVIEW_PENDING/);
+});
+
+test('revision preview references are exposed only for the same owner',async t=>{
+ const f=setup(t),j=await job(f),r=f.approval.stage(j,preview());
+ f.approval.decide(owner,j.input.job_id,{action:'REVISE',preview_hash:r.preview_hash,comment:'Synthetische Rückgabe.'});
+ prepareEditorialRevisions(f);const child=f.store.all().find(j=>j.intake.review_parent);
+ assert.equal(f.intake.list(owner).find(r=>r.job_id===child.input.job_id).review_job_id,j.input.job_id);
+ j.intake.owner=other;f.store.put(j);
+ assert.equal(f.intake.list(owner).find(r=>r.job_id===child.input.job_id).review_job_id,child.input.job_id);
+});

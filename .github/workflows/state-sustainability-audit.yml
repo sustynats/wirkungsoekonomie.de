@@ -20,6 +20,7 @@ on:
       - '!scripts/ops/**'
       - '!scripts/chatgpt_dropbox_bridge.py'
       - '!scripts/chatgpt_bridge_crypto.py'
+      - '!scripts/chatgpt_processor_receipt.py'
       # Parliament image candidates do not project state sustainability content.
       # Keep this branch-writing audit off that isolated provider/QA lane.
       - '!scripts/parliament/impact-visuals/**'

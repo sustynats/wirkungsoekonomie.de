@@ -42,3 +42,10 @@ test('pending approvals and returns stay above more recently published editions 
   assert.deepEqual(orderedReviews(reviews).map(r=>r.job_id),['ready-new','ready-old','returned','live']);
   assert.equal(reviews[0].job_id,'live');
 });
+
+test('revision follow-ups open the server-bound parent review and reflect its current decision',()=>{
+ const child={...request,job_id:'revision',review_job_id:'book'};
+ const state=requestWithReview(child,{job_id:'book',status:'AWAITING_FINAL_APPROVAL',title:'Revised title'});
+ assert.equal(state.review_job_id,'book');assert.equal(state.review_status,'AWAITING_FINAL_APPROVAL');assert.equal(state.title,'Revised title');
+ assert.equal(requestWithReview(child,{job_id:'foreign',status:'PUBLISHED'}),child);
+});
