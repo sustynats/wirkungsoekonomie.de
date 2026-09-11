@@ -38,9 +38,9 @@ test("the public HTML gate rejects interspersed newer cards including across pag
   assert.throws(() => assertChronologicalFeedHtml(card("") + card("2026-09-11")), /NEWS_FEED_NOT_CHRONOLOGICAL/);
 });
 
-test("the generated overview is chronological and retains the shared pagination grid", () => {
-  const html = fs.readFileSync(new URL("../../wirkungsticker/index.html", import.meta.url), "utf8");
-  assert.match(html, /Neueste Veröffentlichungen und Aktualisierungen/);
-  assert.match(html, /data-news-grid/);
+test("the generated news route is chronological and paginates real news", () => {
+  const html = fs.readFileSync(new URL("../../wirkungsticker/news/index.html", import.meta.url), "utf8");
+  assert.match(html, /data-ticker-app="news"/);
+  assert.match(html, /data-app-grid/);
   assertChronologicalFeedHtml(html);
 });

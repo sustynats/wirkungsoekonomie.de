@@ -4261,6 +4261,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function isContentPath(path = window.location.pathname) {
+    if (/^\/wirkungsticker\/(?:news\/|analysen\/|merkzettel\/|suche\/|mehr\/)?(?:index\.html)?$/.test(path)) return false;
     if (excludedPathPattern.test(path)) return false;
     if (relevantPathPattern.test(path)) return true;
     if (!hasPublicContentSurface()) return false;
@@ -5255,7 +5256,7 @@ const WirkungsraumLayer = (() => {
     if (typeof window.requestAnimationFrame === "function") window.requestAnimationFrame(refreshSaveButtons);
   }
 
-  function initContentSaveButtons() {
+  function bindContentSaveButtons() {
     document.querySelectorAll("button[data-wirkungsraum-save-url]").forEach((button) => {
       const url = comparablePath(button.dataset.wirkungsraumSaveUrl);
       const title = button.dataset.wirkungsraumSaveTitle?.trim();
@@ -5268,6 +5269,11 @@ const WirkungsraumLayer = (() => {
       };
       bindSaveButton(button, () => item);
     });
+  }
+
+  function initContentSaveButtons() {
+    bindContentSaveButtons();
+    document.addEventListener("wirkungsraum:content-added", bindContentSaveButtons);
     document.addEventListener("wirkungsraum:changed", refreshSaveButtons);
     window.addEventListener("pageshow", refreshResumedSaveButtons);
     window.addEventListener("storage", refreshSaveButtons);
@@ -5405,6 +5411,7 @@ const WirkungsraumLayer = (() => {
   }
 
   function isNotePath(path = window.location.pathname) {
+    if (/^\/wirkungsticker\/(?:news\/|analysen\/|merkzettel\/|suche\/|mehr\/)?(?:index\.html)?$/.test(path)) return false;
     return !excludedPathPattern.test(path) && (noteScopePattern.test(path) || isContentPath(path));
   }
 

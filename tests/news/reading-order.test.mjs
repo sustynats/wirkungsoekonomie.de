@@ -76,9 +76,9 @@ test("public ticker copy explains quality without infrastructure internals", () 
   assert.doesNotMatch(html, /\b(?:Oracle|OCI|Higgsfield|OpenAI|Anthropic|GPT-\d)/i);
   assert.doesNotMatch(html, /URL-\/Hash-Deduplizierung|Story-Clustering|Fail closed/i);
   assert.doesNotMatch(html, /attributed_single_source|media_trigger|controlled_source_text|provider_reported_usage|AI_INPUT_/i);
-  assert.match(html, /Vorprüfen und bündeln/);
-  assert.match(html, /Nur Belastbares veröffentlichen/);
-  assert.match(html, /Name und E-Mail-Adresse sind nicht erforderlich/);
+  assert.match(html, /Faktencheck, Folgencheck/);
+  const more = fs.readFileSync(new URL("../../wirkungsticker/mehr/index.html", import.meta.url), "utf8");
+  assert.match(more, /Name und E-Mail-Adresse sind nicht erforderlich/);
 });
 
 test("all existing reader pages keep concrete findings but no editorial boilerplate", () => {
