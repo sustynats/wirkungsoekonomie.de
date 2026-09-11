@@ -5,21 +5,12 @@ import { fetchPublicArticle, extractArticleText } from '../lib.mjs';
 import { safeUrl, hash, assertSchema } from './contract.mjs';
 import {sourceAccess} from '../access-policy.mjs';
 import {withRequestDeadline} from '../request-deadline.mjs';
-export const RESEARCH_FUNCTIONS = ['event','mechanism','reference','counter_evidence'];
-export const researchSourceSchema = {
-  type: 'array', maxItems: 12, items: { type: 'object', additionalProperties: false,
-    required: ['source_id','url','title','publisher','source_function','quote','supports'], properties: {
-      source_id: { type:'string', pattern:'^research-[a-z0-9-]{3,100}$' }, url: { type:'string', format:'https-url', maxLength:4000 },
-      title:{type:'string',minLength:8,maxLength:1000},publisher:{type:'string',minLength:2,maxLength:500},
-      source_function:{enum:RESEARCH_FUNCTIONS},quote:{type:'string',minLength:40,maxLength:1200},
-      supports:{type:'string',minLength:12,maxLength:2000}, published_at:{type:['string','null'],maxLength:80},
-    },
-  },
-};
+import { RESEARCH_FUNCTIONS, researchSourceSchema } from './research-source-schema.mjs';
+export { RESEARCH_FUNCTIONS, researchSourceSchema } from './research-source-schema.mjs';
 const comparable = value => String(value).normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
 export async function verifyImpactResearch(bridge, candidates = [], existing = [], now, { root = process.cwd(), fetchDocument = fetchPublicArticle } = {}) {
   if (!Array.isArray(candidates) || candidates.length > 12) throw Error('IMPACT_RESEARCH_SOURCE_LIMIT');
-  assertSchema(researchSourceSchema, candidates);
+  assertSchema(researchSourceSchema, candidates, '$.research_sources');
   if (!candidates.length) return [];
   const registry = loadNewsRegistry(root);
   const ids = new Set(existing.map(s=>s.source_id)), accepted = [];
