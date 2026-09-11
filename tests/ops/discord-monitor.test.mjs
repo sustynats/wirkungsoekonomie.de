@@ -113,6 +113,20 @@ test('fresh coverage gaps are distinct editorial alerts, not provider outages or
   d.report.event_coverage.checked_at='2026-09-03T12:00:00Z';
   assert.equal(evaluateChecks(d,now).checks.find(check=>check.id==='editorial-coverage').ok,true);
 });
+
+test('reachable Dropbox with 62 jobs and no writable automation raises processor and capacity alerts',()=>{
+  const d=fixture();d.processing_mode='dropbox_chatgpt_bridge';
+  d.bridge={reachable:true,poll_at:now,discovery_last_success:now,open_count:62,oldest_claim_minutes:0,errors:0};
+  let checks=evaluateChecks(d,now).checks;
+  assert.equal(checks.find(c=>c.id==='bridge-access').ok,true);
+  assert.equal(checks.find(c=>c.id==='bridge-processor').ok,false);
+  assert.equal(checks.find(c=>c.id==='bridge-queue-size').ok,false);
+  assert.match(checks.find(c=>c.id==='bridge-queue-size').reason,/QUEUE_CRITICAL/);
+  d.bridge.processor_health={processor_available:true,checked_at:now,alerts:[]};
+  assert.equal(evaluateChecks(d,now).checks.find(c=>c.id==='bridge-processor').ok,true);
+  d.bridge.processor_health.checked_at='2026-09-04T04:00:00Z';
+  assert.equal(evaluateChecks(d,now).checks.find(c=>c.id==='bridge-processor').ok,false);
+});
 test('green runs without queue progress trigger a distinct flow warning, not a provider failure', () => {
   const data = fixture();
   data.report.queue = { before: 27, after: 28, capacity: 26, oldest_minutes: 900, status: 'draining' };
