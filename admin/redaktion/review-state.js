@@ -21,11 +21,12 @@ export function orderedReviews(reviews) {
 // A staging ACK describes an import. The versioned review describes the
 // owner's current decision and the independently verified publication.
 export function requestWithReview(request, review) {
-  if (!review || review.job_id !== request.job_id) return request;
+  if (!review || review.job_id !== (request.review_job_id || request.job_id)) return request;
   return {
     ...request,
     title: review.title || request.title,
     review_status: review.status,
+    review_job_id: review.job_id,
     publication_url: review.status === 'PUBLISHED' ? review.publication?.url || null : null,
     preview_available: false,
     status_note: review.status === 'REVISION_REQUESTED'
