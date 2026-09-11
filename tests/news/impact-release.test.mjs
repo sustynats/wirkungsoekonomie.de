@@ -56,6 +56,9 @@ test('public artifact gate rejects debug output and accidentally copied private 
   assert.throws(() => assertPublicImpactHtml('<span>Keine Größenschätzung vorhanden</span>'), /IMPACT_PUBLIC_DEBUG_FALLBACK/);
   assert.throws(() => assertPublicImpactHtml('<div class="wt-dim wt-dim--human" data-potential-model="2.1">'), /IMPACT_PUBLIC_PROFILE_NOT_RELEASED/);
   assert.doesNotThrow(() => assertPublicImpactHtml('<h1>Eine weiterhin lesbare Nachricht</h1>'));
+  for (const message of ['Neu geprüfte Wirkungsprofile sind bereits sichtbar.', 'Wir überarbeiten die Wirkungsprofile.', 'Die Dimensionsfilter erfassen derzeit nur vollständig geprüfte Profile.', 'Der Altbestand wird weiterhin überarbeitet.']) {
+    assert.throws(() => assertPublicImpactHtml(`<p>${message}</p>`), /IMPACT_PUBLIC_INTERNAL_STATUS/);
+  }
 });
 test('a complete independently reviewed current profile is visible without waiting for unrelated legacy backfill',()=>{
  const story=structuredClone(catalog.find(s=>s.published&&s.analysis));
