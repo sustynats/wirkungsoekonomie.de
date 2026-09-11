@@ -16,12 +16,13 @@
     "bridge-throughput": {
       "firstSeen": "2026-09-11T13:05:38.985Z",
       "active": true
-    },
-    "bridge-import": {
-      "firstSeen": "2026-09-11T18:05:42.688Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "fd116b532dd997b410ab7bde",
+      "content": "✓ WÖk-Störung behoben\nÜbernahme fertiger Meldungen\nPrüfung: 2026-09-11T18:35:45.237Z"
+    }
+  ],
   "dailyDate": "2026-09-11"
 }
