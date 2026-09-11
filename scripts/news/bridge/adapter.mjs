@@ -1,3 +1,4 @@
+import { RESEARCH_SOURCE_RULE } from './research-source-schema.mjs';
 import { IMPACT_VERSION, impactAssessmentErrors, migrateImpactAssessment } from '../impact-assessment.mjs';
 import { POTENTIAL_REVISION } from '../impact-potential.mjs';
 import { buildAnalysisPrompt, sanitizeFeedText, sha256, suppliedEvidenceIds } from '../lib.mjs';
@@ -41,7 +42,7 @@ export function bridgeInput(candidate, now, { testOnly = false, canonicalFingerp
     visual_context: visualContext(candidate, stories),
     wirkungsticker: { story_id: candidate.story_id, expected_content_hash: candidate.content_hash,
       expected_analysis_hash: existing?.published ? sha256(JSON.stringify(existing.analysis)) : null,
-      analysis_prompt: buildAnalysisPrompt([candidate]) + "\n" + "Technik und Wirtschaft: Wenige berichtende Medien sind allein kein Ausschlussgrund. Prüfe konkrete Neuerung und nachvollziehbares Wirkungspotenzial für Wettbewerb, Arbeit, Ressourcen, Zugang oder gesellschaftliche Teilhabe. Eine verlässliche, klar zugeschriebene Einzelquelle kann eine vorläufige Meldung tragen; Quellenfunktion, requires_corroboration und Evidenzgates gelten unverändert. Herstellerbehauptung ist kein Nachweis realisierter Wirkung, Produktwerbung kein automatischer Nachrichtenwert.", governance_version: '1.7', output_extension: 'wirkungsticker.analysis' },
+      analysis_prompt: buildAnalysisPrompt([candidate]) + "\n" + RESEARCH_SOURCE_RULE + "\n" + "Technik und Wirtschaft: Wenige berichtende Medien sind allein kein Ausschlussgrund. Prüfe konkrete Neuerung und nachvollziehbares Wirkungspotenzial für Wettbewerb, Arbeit, Ressourcen, Zugang oder gesellschaftliche Teilhabe. Eine verlässliche, klar zugeschriebene Einzelquelle kann eine vorläufige Meldung tragen; Quellenfunktion, requires_corroboration und Evidenzgates gelten unverändert. Herstellerbehauptung ist kein Nachweis realisierter Wirkung, Produktwerbung kein automatischer Nachrichtenwert.", governance_version: '1.7', output_extension: 'wirkungsticker.analysis' },
   };
   return assertSchema(inputSchema, input);
 }

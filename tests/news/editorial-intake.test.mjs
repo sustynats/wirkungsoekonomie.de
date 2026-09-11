@@ -182,3 +182,25 @@ test('a manual lead is provenance, while independent registered articles supply 
   }
  });
 });
+
+test('long Unicode feedback survives HTTP, storage, revision handoff and preview without truncation',async t=>{
+ const {EDITORIAL_COMMENT_LIMIT}=await import('../../admin/redaktion/feedback-limits.js');
+ const f=setup(t),j=await job(f),r=f.approval.stage(j,preview());
+ const handler=createEditorialIntakeHandler({...f,authorize:async()=>owner});
+ const server=http.createServer((req,res)=>handler(req,res));server.listen(0,'127.0.0.1');await once(server,'listening');t.after(()=>{handler.close();server.close();});
+ const url='http://127.0.0.1:'+server.address().port+'/api/admin/news-editorial/reviews/'+j.input.job_id+'/decision';
+ const headers={'Content-Type':'application/json',Origin:'https://wirkungsoekonomie.de'};
+ const overlong='ä'.repeat(EDITORIAL_COMMENT_LIMIT+1);
+ const denied=await fetch(url,{method:'POST',headers,body:JSON.stringify({action:'REVISE',preview_hash:r.preview_hash,comment:overlong})});
+ assert.equal(denied.status,400);assert.match((await denied.json()).error,/50.000/);
+ assert.equal(f.approval.get(j.input.job_id).status,'AWAITING_FINAL_APPROVAL');assert.equal(f.approval.get(j.input.job_id).comments.length,0);
+ const comment='Ü'+ '\u0001'.repeat(EDITORIAL_COMMENT_LIMIT-2)+'ß';
+ const response=await fetch(url,{method:'POST',headers,body:JSON.stringify({action:'REVISE',preview_hash:r.preview_hash,comment})});
+ assert.equal(response.status,200);assert.equal((await response.json()).comments.at(-1).comment,comment);
+ assert.equal(f.approval.get(j.input.job_id).comments.at(-1).comment,comment);
+ assert.equal(prepareEditorialRevisions(f),1);await f.intake.preparePending();
+ const revision=f.store.all().find(x=>x.intake?.review_parent===j.input.job_id);
+ const packet=JSON.parse(f.files.get(bridgePath('00_INBOX',revision.input.job_id+'.input.json')));
+ assert.equal(packet.request.revision.comments.at(-1).comment,comment);
+ assert.equal(f.approval.publishable(j.input.job_id),false);
+});
