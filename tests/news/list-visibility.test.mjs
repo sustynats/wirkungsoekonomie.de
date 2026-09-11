@@ -9,6 +9,7 @@ const script = fs.readFileSync(new URL("assets/js/news.js", root), "utf8");
 function element(dataset = {}) {
   return {
     dataset, hidden: false, value: "", textContent: "", events: new Map(),
+    classList: { values: new Set(), toggle(name, force) { if (force) this.values.add(name); else this.values.delete(name); }, contains(name) { return this.values.has(name); } },
     addEventListener(name, handler) { this.events.set(name, handler); },
     setAttribute() {}, querySelector() { return null; },
     hasAttribute(name) { return name === "data-news-editorial-analysis" && this.dataset.newsEditorialAnalysis !== undefined; },
@@ -24,23 +25,28 @@ function list() {
     newsSearch: index % 3 === 0 ? "Speicher Analyse" : "Schule Nachricht",
   }));
   const controls = ["all", "energie", "bildung", "analysis", "book_and_impact"].map(newsFilter => element({ newsFilter }));
-  const search = element(), more = element(), moreWrap = element(), empty = element();
+  const search = element(), more = element(), moreWrap = element(), empty = element(), grid = element();
+  const viewControls = ["detailed", "compact"].map(newsView => element({ newsView }));
+  const local = new Map();
   const location = new URL("https://wirkungsoekonomie.de/wirkungsticker/");
   const singles = {
     "[data-news-search-input]": search, "[data-news-load-more]": more,
     "[data-news-load-more-wrap]": moreWrap, "[data-news-filter-empty]": empty,
+    "[data-news-grid]": grid,
   };
   vm.runInNewContext(script, {
     URL, Date,
     document: {
       querySelector: selector => singles[selector] || null,
       querySelectorAll: selector => selector === "[data-news-card]" ? cards
-        : selector === "[data-news-filter]" ? controls : [],
+        : selector === "[data-news-filter]" ? controls : selector === "[data-news-view]" ? viewControls : [],
     },
-    window: { location, addEventListener() {}, history: { state: null, replaceState() {} } },
+    window: { location, addEventListener() {}, history: { state: null, replaceState() {} }, localStorage: {
+      getItem: key => local.get(key) || null, setItem: (key, value) => local.set(key, value),
+    } },
   });
   return {
-    cards, moreWrap, empty,
+    cards, moreWrap, empty, grid, viewControls, local,
     visible: () => cards.filter(card => !card.hidden),
     next: () => more.events.get("click")(),
     search(value) { search.value = value; search.events.get("input")(); },
@@ -59,6 +65,16 @@ test("all ticker card variants honor hidden despite their own display rules", ()
     assert.ok(new RegExp(`<article class="${variant}[^>]*\\bdata-news-card\\b`).test(build),
       `${variant} must use the same data-news-card marker as the pagination script`);
   }
+});
+
+test("readers can switch to a persistent compact feed without changing filtering", () => {
+  const h = list();
+  assert.equal(h.grid.classList.contains("news-grid--compact"), false);
+  h.viewControls[1].events.get("click")();
+  assert.equal(h.grid.classList.contains("news-grid--compact"), true);
+  assert.equal(h.local.get("woek:wirkungsticker:feed-view:v1"), "compact");
+  assert.deepEqual(h.visible(), h.cards.slice(0, 10));
+  assert.ok(h.viewControls[1].events.has("click"));
 });
 
 test("news and analyses share ten-card pagination without extra analysis cards", () => {

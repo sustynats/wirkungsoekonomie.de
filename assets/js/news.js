@@ -8,11 +8,28 @@
   const loadMore = document.querySelector("[data-news-load-more]");
   const loadMoreWrap = document.querySelector("[data-news-load-more-wrap]");
   const filterBar = document.querySelector(".news-filter-bar");
+  const grid = document.querySelector("[data-news-grid]");
+  const viewControls = Array.from(document.querySelectorAll("[data-news-view]"));
   const header = document.querySelector(".site-header");
   const pageSize = 10;
   const listStateKey = "woek:wirkungsticker:list-state:v1";
+  const viewStateKey = "woek:wirkungsticker:feed-view:v1";
   let activeFilter = "all";
   let visibleLimit = pageSize;
+
+  function setFeedView(value, { persist = true } = {}) {
+    const view = value === "compact" ? "compact" : "detailed";
+    grid?.classList.toggle("news-grid--compact", view === "compact");
+    viewControls.forEach((control) => control.setAttribute("aria-pressed", String(control.dataset.newsView === view)));
+    if (persist) {
+      try { window.localStorage.setItem(viewStateKey, view); } catch (_error) { /* Optional local preference. */ }
+    }
+  }
+
+  let initialView = "detailed";
+  try { initialView = window.localStorage.getItem(viewStateKey) || initialView; } catch (_error) { /* Keep accessible default. */ }
+  setFeedView(initialView, { persist: false });
+  viewControls.forEach((control) => control.addEventListener("click", () => setFeedView(control.dataset.newsView)));
 
   function saveListState(card) {
     const state = {
