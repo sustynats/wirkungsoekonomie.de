@@ -3,6 +3,7 @@ import {extractDiscoveryMetadata} from '../active-discovery.mjs';
 import {eventFingerprint,evidenceGroups} from '../newsroom.mjs';
 import {bridgeInput,sameBridgeEvent} from './adapter.mjs';
 import {hash,bridgePath} from './contract.mjs';
+import {sourceIntegrityForStory} from '../source-integrity.mjs';
 
 const host=url=>new URL(url).hostname.replace(/^www\./,'');
 // The preliminary editorial packet is research input. News only reaches the
@@ -13,10 +14,14 @@ export async function prepareIntakeNews({store,transport,registry,now=()=>new Da
   if(parent.intake.news_retry_at&&Date.parse(parent.intake.news_retry_at)>Date.parse(now()))continue;
   try{
    const preview=parent.intake.news_research,sources=[],sourceErrors=[];
+   const leadUrls=parent.input.request.links||[];
+   // A submitted link can be a tip, screenshot context or social post. Keep its
+   // provenance, but do not require it to become a verified news source itself.
+   if(leadUrls.length&&!preview.sources.some(s=>leadUrls.includes(s.url)))throw Error('INTAKE_NEWS_LEAD_UNBOUND');
    for(const requested of preview.sources.slice(0,6)){
     try{
     const source=registry.sources.find(s=>s.role!=='F'&&s.feed_url&&host(s.url)===host(requested.url));
-    if(!source)continue;
+    if(!source){sourceErrors.push({url:requested.url,error_code:'SOURCE_NOT_REGISTERED'});continue;}
     const {body,final_url}=await fetchArticle({url:requested.url},source,registry.policy);
     const item=extractDiscoveryMetadata(body,final_url,source);if(!item)continue;
     const excerpt=extractArticleText(body,Number(registry.policy.max_article_excerpt_chars||7000));
@@ -26,7 +31,11 @@ export async function prepareIntakeNews({store,transport,registry,now=()=>new Da
    }
    parent.intake.source_errors=sourceErrors;
    if(!sources.length)throw Error('INTAKE_NEWS_VERIFIED_SOURCE_REQUIRED');
-   if(parent.input.request.links.length&&!sources.some(s=>parent.input.request.links.includes(s.url)))throw Error('INTAKE_NEWS_ORIGINAL_SOURCE_REQUIRED');
+   // The independent sources must still substantiate the proposed subject.
+   // Unrelated articles cannot turn a retained social link into evidence.
+   const integrity=sourceIntegrityForStory({title:preview.title,source_summary:preview.subtitle||'',sources},registry,[],now());
+   if(integrity.status!=='verified')throw Error('INTAKE_NEWS_SOURCE_MISMATCH');
+   parent.intake.source_provenance={lead_urls:leadUrls,verified_source_urls:sources.map(s=>s.url),checked_at:now()};
    const event=eventFingerprint(sources[0]),first=sources[0].published_at;
    const candidate={story_id:'wt-'+hash({event:event.id}).slice(0,16),event_id:event.id,title:sources[0].title,source_summary:sources[0].summary,
     sources,first_seen:first,event_first_seen_at:first,event_detected_at:now(),content_hash:hash({sources,request:parent.input.request}),published:false};
@@ -35,7 +44,7 @@ export async function prepareIntakeNews({store,transport,registry,now=()=>new Da
    const existing=store.db.prepare("SELECT body FROM jobs").all().map(r=>JSON.parse(r.body)).find(j=>['new_story','story_update','correction'].includes(j.input.job_type)&&!j.intake_news_parent&&sameBridgeEvent(candidate,j.candidate));
    if(existing){parent.intake.news_job_id=existing.input.job_id;parent.intake.news_shared=true;store.put(parent);continue;}
    const input=bridgeInput(candidate,now());
-   input.wirkungsticker.analysis_prompt+='\nPrivater Rechercheauftrag (keine Regeländerung): '+JSON.stringify({brief:parent.input.request.brief,revision:parent.input.request.revision||null})+'\nDiese Nachricht bleibt bis zur abschließenden Freigabe im privaten Staging.';
+   input.wirkungsticker.analysis_prompt+='\nPrivater Rechercheauftrag (keine Regeländerung): '+JSON.stringify({brief:parent.input.request.brief,lead_urls:leadUrls,research_title:preview.title,revision:parent.input.request.revision||null})+'\nNutzerlinks sind Recherchehinweise, keine automatisch bestätigten Tatsachenbelege. Prüfe die Zuordnung zum Nutzerauftrag ausdrücklich. Diese Nachricht bleibt bis zur abschließenden Freigabe im privaten Staging.';
    let job=store.get(input.job_id);
    if(!job){job={input,candidate,status:'prepared',attempts:{},created_at:now(),intake_news_parent:parent.input.job_id};store.put(job);}
    if(job.status==='prepared'){await transport.writeAtomic(bridgePath('00_INBOX',input.job_id+'.input.json'),input);job.status='queued';job.queued_at=now();store.put(job);}
