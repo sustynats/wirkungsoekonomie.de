@@ -1,3 +1,4 @@
+import {approvalStates,orderedReviews,requestWithReview} from './review-state.js';
 const API='https://130.162.217.58.sslip.io/api/admin/news-editorial';
 const $=id=>document.getElementById(id);
 const auth=()=>localStorage.getItem('woek_community_auth')||'';
@@ -80,18 +81,20 @@ function drawRequests(){
   for(const request of requests){
     const card=element('article',undefined,'request-card'),meta=element('div',undefined,'request-meta');
     meta.append(element('span',types[request.kind]||'Redaktionsauftrag'),element('time',new Date(request.created_at).toLocaleString('de-DE',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'})));
-    const label=request.publication_url?'Veröffentlicht':request.ack_status==='staged'?'Privater Entwurf bereit':request.ack_status==='hold'?'Rückfrage / Prüfung erforderlich':request.ack_status==='reject'?'Nicht zur Veröffentlichung geeignet':states[request.status]||'Wird geprüft';
-    const state=element('span',label,`state${['quarantined','archive_failed'].includes(request.status)||request.ack_status==='hold'?' hold':''}`);
+    const label=request.review_status?(approvalStates[request.review_status]||'Wird geprüft'):request.publication_url?'Veröffentlicht':request.ack_status==='staged'?'Privater Entwurf bereit':request.ack_status==='hold'?'Rückfrage / Prüfung erforderlich':request.ack_status==='reject'?'Nicht zur Veröffentlichung geeignet':states[request.status]||'Wird geprüft';
+    const attention=request.review_status?['NEEDS_REVIEW','REVISION_REQUESTED','HOLD'].includes(request.review_status):['quarantined','archive_failed'].includes(request.status)||request.ack_status==='hold';
+    const state=element('span',label,`state${attention?' hold':''}`);
     card.append(meta,element('h2',request.title||request.brief.slice(0,110)),state);
     if(request.status_note)card.append(element('p',request.status_note));
     if(request.publication_url){try{const url=new URL(request.publication_url);if(url.origin==='https://wirkungsoekonomie.de'){const link=element('a','Beitrag öffnen ↗');link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';card.append(link);}}catch{/* Display only validated public URLs. */}}
-    if(request.preview_available){const button=element('button','Privaten Entwurf ansehen','text-button');button.type='button';button.addEventListener('click',async()=>{try{const data=await api(`/requests/${request.job_id}/preview`);const details=element('details'),summary=element('summary','Entwurf'),text=element('p',data.text);details.open=true;details.append(summary,text);card.append(details);button.remove();}catch(error){note(error.message,true);}});card.append(button);}
+    if(request.review_status){const button=element('button','Vorschau und Kommentare','text-button');button.type='button';button.addEventListener('click',()=>{show('approvals');openReview(request.job_id).catch(error=>note(error.message,true));});card.append(button);}
+    else if(request.preview_available){const button=element('button','Privaten Entwurf ansehen','text-button');button.type='button';button.addEventListener('click',async()=>{try{const data=await api(`/requests/${request.job_id}/preview`);const details=element('details'),summary=element('summary','Entwurf'),text=element('p',data.text);details.open=true;details.append(summary,text);card.append(details);button.remove();}catch(error){note(error.message,true);}});card.append(button);}
     mount.append(card);
   }
 }
 async function load(){
   if(!auth())return;
-  const [data,reviewData]=await Promise.all([api('/requests'),api('/reviews')]);requests=data.requests;drawReviews(reviewData.reviews);
+  const [data,reviewData]=await Promise.all([api('/requests'),api('/reviews')]);const reviews=new Map(reviewData.reviews.map(r=>[r.job_id,r]));requests=data.requests.map(r=>requestWithReview(r,reviews.get(r.job_id)));drawReviews(reviewData.reviews);
   $('login').hidden=true;$('workspace').hidden=false;drawRequests();if(location.hash==='#freigeben'){show('approvals');history.replaceState(null,'',location.pathname);}
   if(!poll)poll=setInterval(()=>{if(!document.hidden&&!sending)load().catch(error=>note(error.message,true));},60000);
 }
@@ -103,12 +106,11 @@ if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch
 load().catch(error=>note(error.message,true));
 
 $('tab-approval').addEventListener('click',()=>{show('approvals');load().catch(error=>note(error.message,true));});
-const approvalStates={NEEDS_REVIEW:'Erneute Prüfung erforderlich',PUBLISHING:'Wird veröffentlicht',AWAITING_FINAL_APPROVAL:'Bereit für Deine Freigabe',APPROVED_FOR_PUBLICATION:'Freigegeben · Veröffentlichung vorbereitet',REVISION_REQUESTED:'Mit Kommentar zurückgegeben',HOLD:'Zurückgestellt',SKIPPED:'Übersprungen',PUBLISHED:'Veröffentlicht'};
 function drawReviews(reviews){
   $('approval-count').textContent=reviews.filter(r=>['AWAITING_FINAL_APPROVAL','NEEDS_REVIEW'].includes(r.status)).length||'';
   const list=$('approval-list');list.replaceChildren();
   if(!reviews.length){list.append(element('p','Sobald ein Beitrag fertig vorbereitet ist, erscheint hier seine Vorschau.','quiet'));return;}
-  for(const r of reviews){const card=element('article',undefined,'request-card');card.append(element('span',types[r.format]||'Redaktion','eyebrow'),element('h2',r.title),element('p',approvalStates[r.status]||r.status));const button=element('button','Vorschau öffnen','text-button');button.type='button';button.addEventListener('click',()=>openReview(r.job_id).catch(e=>note(e.message,true)));card.append(button);list.append(card);}
+  for(const r of orderedReviews(reviews)){const card=element('article',undefined,'request-card');card.append(element('span',types[r.format]||'Redaktion','eyebrow'),element('h2',r.title),element('p',approvalStates[r.status]||r.status));const button=element('button','Vorschau öffnen','text-button');button.type='button';button.addEventListener('click',()=>openReview(r.job_id).catch(e=>note(e.message,true)));card.append(button);list.append(card);}
 }
 async function openReview(id){
  const r=await api(`/reviews/${id}`),p=r.preview,mount=$('approval-preview');mount.replaceChildren();mount.hidden=false;$('approval-list').hidden=true;
