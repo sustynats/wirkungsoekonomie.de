@@ -18,6 +18,8 @@ on:
       # their tests and the complete PR website gates still run independently.
       - '!scripts/news/**'
       - '!scripts/ops/**'
+      - '!scripts/chatgpt_dropbox_bridge.py'
+      - '!scripts/chatgpt_bridge_crypto.py'
       # Parliament image candidates do not project state sustainability content.
       # Keep this branch-writing audit off that isolated provider/QA lane.
       - '!scripts/parliament/impact-visuals/**'
