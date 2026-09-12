@@ -28,6 +28,18 @@ Nachrichten werden getrennt gezählt. Der private Bericht liegt unter
 `/var/lib/woek-news-bridge/self-heal/status.json`; das Journal enthält nur
 Statuscodes und Reparaturaktionen, keine Manuskripte oder Zugangsdaten.
 
+Seit Version `2026-09-12-2` misst er zusätzlich offene persönliche Aufträge,
+deren ältesten Eingangszeitpunkt, offene Korrekturen, tatsächlich zur finalen
+Freigabe gespeicherte Vorschauen und ausstehende unabhängige zweite Prüfpässe.
+Diese SQL-Aggregate lesen keine Manuskripte in den Prozessspeicher.
+Nach 90 Minuten unbearbeiteter Redaktionsarbeit entsteht
+`EDITORIAL_DELIVERY_STALLED`; bei gleichzeitig leerer Freigabe zusätzlich
+`APPROVAL_QUEUE_EMPTY_WITH_PENDING_WORK`. Überfällige zweite Prüfpässe werden
+als `SECOND_PASS_STALLED` erfasst. Auch frische Nachrichten können diese
+Störungen nicht aufheben. Begründete abgeschlossene Recherche-HOLDs und das
+Warten auf Natalies Entscheidung gelten nicht als unbearbeitete Redaktionsjobs.
+Diese Befunde belegen einen offenen Fehler, keine ausgeführte Reparatur.
+
 ## Begrenzte automatische Reparaturen
 
 - Nach drei fehlgeschlagenen lokalen HTTP-Prüfungen: Neustart ausschließlich des
