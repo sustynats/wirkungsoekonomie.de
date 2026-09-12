@@ -3,6 +3,27 @@ import fs from "node:fs";
 import test from "node:test";
 import vm from "node:vm";
 
+test("new badges distinguish a first visit, recent unseen news and historical backfill", () => {
+  const app=fs.readFileSync("assets/js/news-pwa.js","utf8");
+  const code=app.slice(app.indexOf("  function newestCardTimestamp("),app.indexOf("  async function initializeNotifications("));
+  const now=Date.parse('2026-09-12T15:00:00Z');
+  class Clock extends Date {static now(){return now;}}
+  for(const stored of [null,'invalid','2026-09-08T00:00:00Z']) {
+    const data=new Map(stored===null?[]:[['seen',stored]]),badges=[];
+    const cards=[['2026-09-09T10:00:00Z',false],['2026-09-12T14:00:00Z',false],['2026-09-12T13:00:00Z',true]].map(([date,late])=>{
+      const badge={hidden:false};return {dataset:{newsUpdatedAt:date,newsLateDelivery:String(late)},badge,querySelector:()=>badge};
+    });
+    const markReadButton={hidden:false};
+    const context={Date:Clock,cards,lastSeenKey:'seen',markReadButton,updateAppBadge:n=>badges.push(n),window:{localStorage:{getItem:k=>data.get(k)??null,setItem:(k,v)=>data.set(k,v)}}};
+    vm.runInNewContext(`${code}\ninitializeNewsState()`,context);
+    const returning=stored==='2026-09-08T00:00:00Z';
+    assert.deepEqual(cards.map(c=>!c.badge.hidden),[false,returning,false]);
+    assert.equal(badges.at(-1),returning?1:0);
+    assert.equal(markReadButton.hidden,!returning);
+    if(!returning)assert.equal(data.get('seen'),'2026-09-12T14:00:00.000Z');
+  }
+});
+
 test("Wirkungsticker registers real Web Push and preserves the periodic fallback", () => {
   const app = fs.readFileSync("assets/js/news-pwa.js", "utf8");
   const worker = fs.readFileSync("wirkungsticker/sw.js", "utf8");
