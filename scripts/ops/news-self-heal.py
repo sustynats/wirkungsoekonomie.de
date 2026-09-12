@@ -12,7 +12,7 @@ import time
 import urllib.error
 import urllib.request
 
-VERSION = "2026-09-12-1"
+VERSION = "2026-09-12-2"
 SERVICES = {"bridge": ("woek-news-bridge.service", 8786, "/api/news-bridge", 401),
             "editorial": ("woek-news-editorial.service", 8788, "/internal/status", 200)}
 DIRECTORY = Path("/var/lib/woek-news-bridge")
@@ -95,11 +95,29 @@ def journal_metrics(directory, now):
                                      " AND json_extract(body,'$.ack.status')='imported'", (iso(now - 3600),)).fetchone()
         row = db.execute("SELECT body FROM observations WHERE key='processor-health'").fetchone()
         health = json.loads(row[0]) if row else {}
+        # Personal requests are a separate delivery lane. A healthy news import
+        # says nothing about whether Natalie has received a reviewable preview.
+        editorial = db.execute("SELECT count(*), min(json_extract(body,'$.input.created_at')), "
+                               "sum(CASE WHEN json_extract(body,'$.status') IN "
+                               "('correction_pending','correction_prepared','quarantined') THEN 1 ELSE 0 END) "
+                               "FROM jobs WHERE json_extract(body,'$.input.job_type')='editorial_request' "
+                               "AND json_extract(body,'$.ack') IS NULL AND json_extract(body,'$.accepted') IS NULL "
+                               "AND coalesce(json_extract(body,'$.status'),'') NOT IN ('acknowledged','archive_failed')").fetchone()
+        semantic = db.execute("SELECT count(*), min(json_extract(body,'$.input.created_at')) "
+                              "FROM jobs WHERE json_extract(body,'$.input.job_type')='impact_semantic_review' "
+                              "AND json_extract(body,'$.ack') IS NULL AND json_extract(body,'$.accepted') IS NULL "
+                              "AND coalesce(json_extract(body,'$.status'),'') NOT IN ('acknowledged','archive_failed')").fetchone()
+        ready = db.execute("SELECT count(*) FROM editorial_reviews "
+                           "WHERE json_extract(body,'$.status')='AWAITING_FINAL_APPROVAL'").fetchone()[0]
     workers = [{"id": worker.get("id"), "fresh": worker.get("processor_available") is True
                 and 0 <= now - timestamp(worker.get("checked_at")) < 5400}
                for worker in health.get("workers", [])]
     return {"open_primary_news": open_count, "last_import_ack": latest,
-            "imported_primary_news_last_hour": imported or 0, "workers": workers}
+            "imported_primary_news_last_hour": imported or 0, "workers": workers,
+            "open_editorial_requests": editorial[0], "oldest_editorial_request_at": editorial[1],
+            "editorial_requests_needing_repair": editorial[2] or 0,
+            "ready_for_final_approval": ready,
+            "open_semantic_reviews": semantic[0], "oldest_semantic_review_at": semantic[1]}
 
 
 def fetch_public_feed(now):
@@ -119,12 +137,23 @@ def publication_alerts(metrics, public, now):
     alerts = []
     if not public.get("ok") or now - public.get("checked_at", 0) > 600:
         alerts.append("PUBLIC_FEED_UNVERIFIED")
-    if metrics.get("open_primary_news", 0):
+    if any(metrics.get(key, 0) for key in ("open_primary_news", "open_editorial_requests", "open_semantic_reviews")):
         if len(metrics.get("workers", [])) != 3 or not all(w["fresh"] for w in metrics.get("workers", [])):
             alerts.append("EDITORIAL_WORKER_STALE")
+    if metrics.get("open_primary_news", 0):
         latest = timestamp(public.get("latest_news_published_at"))
         if public.get("ok") and (not latest or now - latest > 5400):
             alerts.append("PUBLICATION_STALLED")
+    # Pending author decisions are not processor failures. Only unfinished work
+    # upstream of the approval screen contributes to these stall alerts.
+    for count, oldest, alert in (("open_editorial_requests", "oldest_editorial_request_at", "EDITORIAL_DELIVERY_STALLED"),
+                                  ("open_semantic_reviews", "oldest_semantic_review_at", "SECOND_PASS_STALLED")):
+        if metrics.get(count, 0):
+            started = timestamp(metrics.get(oldest))
+            if not started or now - started > 5400:
+                alerts.append(alert)
+    if "EDITORIAL_DELIVERY_STALLED" in alerts and metrics.get("ready_for_final_approval") == 0:
+        alerts.append("APPROVAL_QUEUE_EMPTY_WITH_PENDING_WORK")
     return alerts
 
 

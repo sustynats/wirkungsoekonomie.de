@@ -63,7 +63,8 @@ class RecoveryTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             directory = Path(temp)
             with sqlite3.connect(directory / 'queue.sqlite') as db:
-                db.executescript('CREATE TABLE jobs(body TEXT); CREATE TABLE observations(key TEXT, body TEXT);')
+                db.executescript('CREATE TABLE jobs(body TEXT); CREATE TABLE observations(key TEXT, body TEXT); '
+                                 'CREATE TABLE editorial_reviews(body TEXT);')
                 for kind, status, ack in [('new_story','queued',None), ('new_story','quarantined',None),
                                           ('editorial_request','queued',None), ('new_story','acknowledged',{'status':'imported'})]:
                     db.execute('INSERT INTO jobs VALUES (?)', (json.dumps({'input':{'job_type':kind},'status':status,
@@ -71,6 +72,51 @@ class RecoveryTests(unittest.TestCase):
             result = supervisor.journal_metrics(directory, 10000)
             self.assertEqual(result['open_primary_news'], 1)
             self.assertEqual(result['imported_primary_news_last_hour'], 1)
+            self.assertEqual(result['open_editorial_requests'], 1)
+            self.assertEqual(result['ready_for_final_approval'], 0)
+
+    def test_editorial_delivery_is_not_hidden_by_fresh_news(self):
+        metrics = {'open_editorial_requests': 2, 'oldest_editorial_request_at': supervisor.iso(1000),
+                   'ready_for_final_approval': 0, 'workers': [{'id': x, 'fresh': True} for x in 'ABC']}
+        public = {'ok': True, 'checked_at': 10000, 'latest_news_published_at': supervisor.iso(9990)}
+        alerts = supervisor.publication_alerts(metrics, public, 10000)
+        self.assertIn('EDITORIAL_DELIVERY_STALLED', alerts)
+        self.assertIn('APPROVAL_QUEUE_EMPTY_WITH_PENDING_WORK', alerts)
+
+    def test_new_request_gets_processing_time_and_awaiting_owner_is_not_failure(self):
+        public = {'ok': True, 'checked_at': 10000}
+        workers = [{'id': x, 'fresh': True} for x in 'ABC']
+        metrics = {'open_editorial_requests': 1, 'oldest_editorial_request_at': supervisor.iso(9500),
+                   'ready_for_final_approval': 0, 'workers': workers}
+        self.assertEqual(supervisor.publication_alerts(metrics, public, 10000), [])
+        self.assertEqual(supervisor.publication_alerts({'ready_for_final_approval': 5}, public, 10000), [])
+
+    def test_second_pass_stall_is_visible_without_news_jobs(self):
+        metrics = {'open_semantic_reviews': 1, 'oldest_semantic_review_at': supervisor.iso(1000)}
+        alerts = supervisor.publication_alerts(metrics, {'ok': True, 'checked_at': 10000}, 10000)
+        self.assertIn('SECOND_PASS_STALLED', alerts)
+        self.assertIn('EDITORIAL_WORKER_STALE', alerts)
+
+    def test_delivery_metrics_separate_research_holds_repairs_and_actual_previews(self):
+        import json
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp)
+            with sqlite3.connect(directory / 'queue.sqlite') as db:
+                db.executescript('CREATE TABLE jobs(body TEXT); CREATE TABLE observations(key TEXT, body TEXT); '
+                                 'CREATE TABLE editorial_reviews(body TEXT);')
+                for kind, status, accepted in [('editorial_request', 'correction_pending', None),
+                                               ('editorial_request', 'accepted', {'decision': 'hold'}),
+                                               ('editorial_request', 'accepted', {'staged': True}),
+                                               ('impact_semantic_review', 'queued', None)]:
+                    db.execute('INSERT INTO jobs VALUES (?)', (json.dumps({'input': {'job_type': kind,
+                               'created_at': supervisor.iso(1000)}, 'status': status, 'accepted': accepted}),))
+                for status in ['AWAITING_FINAL_APPROVAL', 'PUBLISHED', 'SKIPPED']:
+                    db.execute('INSERT INTO editorial_reviews VALUES (?)', (json.dumps({'status': status}),))
+            result = supervisor.journal_metrics(directory, 10000)
+            self.assertEqual(result['open_editorial_requests'], 1)
+            self.assertEqual(result['editorial_requests_needing_repair'], 1)
+            self.assertEqual(result['ready_for_final_approval'], 1)
+            self.assertEqual(result['open_semantic_reviews'], 1)
 
     def test_failed_restart_timeout_returns_failure(self):
         import subprocess
