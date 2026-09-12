@@ -21,11 +21,16 @@
       "firstSeen": "2026-09-12T04:05:38.205Z",
       "active": true
     },
-    "bridge-throughput": {
-      "firstSeen": "2026-09-12T04:20:41.013Z",
-      "active": true
+    "bridge-shards": {
+      "firstSeen": "2026-09-12T05:14:50.523Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "aa5c4880d3b25cf33813821b",
+      "content": "✓ WÖk-Störung behoben\nRedaktionsdurchsatz\nPrüfung: 2026-09-12T05:14:50.523Z"
+    }
+  ],
   "dailyDate": "2026-09-11"
 }
