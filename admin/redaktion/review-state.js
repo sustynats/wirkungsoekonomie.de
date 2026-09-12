@@ -22,6 +22,10 @@ export function requestPresentation(request) {
     description: request.status_note || '',
   };
   if (request.publication_url) return {label: 'Veröffentlicht', attention: false, description: ''};
+  if (request.research_status) return {
+    label: request.research_status === 'hold' ? 'Quellenklärung erforderlich' : 'Nachrecherche beauftragt',
+    attention: request.research_status === 'hold', description: request.status_note || '',
+  };
   if (['quarantined', 'archive_failed'].includes(request.status) || request.ack_status === 'hold') return {
     label: requestStates[request.status] || 'Prüfung erforderlich', attention: true,
     description: request.status_note || 'Die Redaktion muss einen Prüfschritt klären. Der Auftrag ist gespeichert.',

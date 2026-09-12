@@ -3,8 +3,8 @@ import { createHash, randomUUID } from 'node:crypto';
 import { bridgePath, hash, JOB_ID } from './contract.mjs';
 
 export const PROCESSOR_VERSION = '2026-09-11-2';
-export const PROCESSOR_CONTRACT = "processor-contract-2026-09-12-4.json";
-export const PROCESSOR_QUEUE_POLICY = "lifo-source-2026-09-12";
+export const PROCESSOR_CONTRACT = "processor-contract-2026-09-12-5.json";
+export const PROCESSOR_QUEUE_POLICY = "manual-first-lifo-2026-09-12";
 export const PROCESSOR_SHARDS = Object.freeze([
   { id: 'A', index: 0, minute: 0 }, { id: 'B', index: 1, minute: 20 }, { id: 'C', index: 2, minute: 40 },
 ]);
@@ -95,9 +95,9 @@ export function processorPriority(value, now) {
   const importance=input.systemic_relevance||candidate.impact_assessment?.systemic_relevance;
   const tier=input.editorial_priority||candidate.preanalysis?.event_score?.priority;
   if(lineage.some(i=>i.urgent||i.request?.urgent||i.discovery?.importance_signals?.includes('urgent_manual_editorial_request'))||candidate.urgent||tier==='TOP')return 600;
+  if(lineage.some(i=>i.job_type==='editorial_request'||i.manual_request===true||i.discovery?.importance_signals?.includes('manual_editorial_request'))||value.intake_news_parent||candidate.manual_request)return 590;
   if (lineage.some(i => ['new_story','story_update'].includes(i.job_type))
     && currentEvidence(candidate.sources?.length ? candidate : { sources: lineage.flatMap(i => i.sources || []) }, now, 1)) return 580;
-  if(lineage.some(i=>i.job_type==='editorial_request'||i.manual_request===true||i.discovery?.importance_signals?.includes('manual_editorial_request'))||value.intake_news_parent||candidate.manual_request)return 550;
   if(['story_update','correction','impact_semantic_review'].includes(input.job_type))return 500;
   if(['critical','very_high'].includes(importance))return 400;
   return importance==='high'||tier==='HIGH'?300:200;

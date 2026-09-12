@@ -238,3 +238,44 @@ test('revision preview references are exposed only for the same owner',async t=>
  j.intake.owner=other;f.store.put(j);
  assert.equal(f.intake.list(owner).find(r=>r.job_id===child.input.job_id).review_job_id,child.input.job_id);
 });
+
+test('unusable manual news sources create one immutable research revision and preserve the original receipt',async t=>{
+ const {prepareIntakeNews}=await import('../../scripts/news/bridge/intake-news.mjs');
+ const f=setup(t),j=await job(f);
+ j.input.request.kind='news';j.intake.kind='news';j.intake.news_research={...preview(),format:'news'};
+ j.status='acknowledged';j.ack={status:'staged',output_hash:'a'.repeat(64)};j.accepted={staged:true,output_hash:'a'.repeat(64)};
+ f.store.put(j);const original=structuredClone(j),registry={sources:[{source_id:'permitted',name:'Test',url:'https://permitted.example',feed_url:'https://permitted.example/feed',role:'A',enabled:true},{source_id:'disabled',url:'https://blocked.example',feed_url:'https://blocked.example/rss',enabled:false}],policy:{}};
+ let attempts=0;const atomic=f.transport.writeAtomic;
+ f.transport.writeAtomic=async(p,v)=>{if(p.endsWith('.input.json')&&++attempts===1)throw Error('BRIDGE_DROPBOX_HTTP_503');return atomic(p,v);};
+ const args={...f,registry,fetchArticle:async()=>assert.fail('unregistered sources cannot be fetched')};
+ await prepareIntakeNews(args);
+ let parent=f.store.get(j.input.job_id),child=f.store.get(parent.intake.news_repair_job_id);
+ assert.equal(child.status,'news_research_prepared');assert.notEqual(child.input.job_id,j.input.job_id);
+ await prepareIntakeNews(args);await prepareIntakeNews(args);
+ parent=f.store.get(j.input.job_id);child=f.store.get(parent.intake.news_repair_job_id);
+ assert.equal(child.status,'queued');assert.equal(f.store.all().length,2);assert.equal(attempts,2);
+ assert.deepEqual(parent.input,original.input);assert.deepEqual(parent.ack,original.ack);assert.deepEqual(parent.accepted,original.accepted);
+ assert.equal(child.intake.review_parent,parent.input.job_id);assert.equal(child.intake.news_research_attempt,1);
+ assert.deepEqual(child.input.request.links,original.input.request.links);assert.equal(child.input.manual_only,true);
+ assert.deepEqual(child.input.request.research_repair.allowed_discovery_sources.map(s=>s.source_id),['permitted']);
+ assert.equal(f.intake.list(owner).length,1);assert.match(f.intake.list(owner)[0].status_note,/nachrecherchiert/);
+ assert.equal(f.approval.claimPublications().length,0);
+ const output={...preview(),format:'news',sources:[...preview().sources,{url:'https://permitted.example/source',title:'Synthetisch: Kommune eröffnet Bibliothek'}]};
+ f.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:now(),preview:output}));
+ await importEditorialPreviews(f);
+ assert.ok(f.store.get(child.input.job_id).intake.news_research);assert.equal(f.approval.list(owner).length,0);
+});
+
+test('manual source repairs have a bounded chain; temporary source failures keep their ordinary retry',async t=>{
+ const {prepareIntakeNews}=await import('../../scripts/news/bridge/intake-news.mjs');
+ for(const scenario of ['temporary','limit'])await t.test(scenario,async t=>{
+  const f=setup(t),j=await job(f);j.input.request.kind='news';j.intake.kind='news';j.intake.news_research={...preview(),format:'news'};
+  if(scenario==='limit')j.intake.news_research_attempt=2;
+  f.store.put(j);
+  const sources=scenario==='temporary'?[{source_id:'test',url:'https://example.org',feed_url:'https://example.org/feed',role:'A'}]:[];
+  await prepareIntakeNews({...f,registry:{sources,policy:{}},fetchArticle:async()=>{throw Error('SOURCE_TIMEOUT');}});
+  const result=f.store.get(j.input.job_id);assert.equal(f.store.all().length,1);assert.equal(result.intake.news_repair_job_id,undefined);
+  assert.equal(Boolean(result.intake.news_research_hold),scenario==='limit');
+  assert.equal(f.approval.claimPublications().length,0);
+ });
+});

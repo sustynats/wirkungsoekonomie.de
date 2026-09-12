@@ -191,8 +191,9 @@ test('equal-priority jobs use LIFO, even when the older normal item waited days'
  assert.deepEqual(selectProcessorBatch(jobs,0,now).map(j=>j.job_id),[jobs[2],jobs[1],jobs[0]].map(j=>j.job_id));
  assert.equal(jobs[0].created_at,'2026-09-01T00:00:00Z');
 });
-test('direct requests and their repairs precede ordinary updates without jumping urgent work',()=>{
+test('direct requests and their repairs precede even last-hour discovery without jumping urgent work',()=>{
  const jobs=Array.from({length:100},(_,n)=>({job_id:id(n),created_at:now,job_type:'story_update'})).filter(j=>processorShard(j.job_id)===0).slice(0,5);
+ jobs[0].sources=[{published_at:'2026-09-11T09:39:00Z'}];
  jobs[1].job_type='editorial_request';jobs[1].created_at='2026-09-11T09:01:00Z';
  jobs[2].job_type='correction';jobs[2].original_input={job_type:'editorial_request'};jobs[2].created_at='2026-09-11T09:02:00Z';
  jobs[3].manual_request=true;jobs[3].created_at='2026-09-11T09:03:00Z';jobs[4].urgent=true;
