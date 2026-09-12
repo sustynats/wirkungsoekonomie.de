@@ -14,6 +14,8 @@ Abgeschnittene Antworten beim Lesen der Bridge bleiben nach dem begrenzten Wiede
 
 Die private Redaktionsoberfläche löst die fremde schreibende #253-Inhaltsprojektion nicht mehr aus. Deren automatischer Commit hatte andernfalls hunderte öffentliche Projektionen in den UX-PR geschrieben und Konflikte mit laufenden News-Imports erzeugt. Die vollständigen Website-, Datenschutz-, Such- und Sicherheitsprüfungen laufen weiter.
 
+Der native Import verlangte zusätzlich zu einem gültigen Impact-Assessment 2.1 noch `direction_assessment_version` aus dem abgelösten Modell. Ein vollständiger Draft-Regressionstest scheiterte ausschließlich mit `AI_DIRECTION_ASSESSMENT_REQUIRED`. Die Zusatzprüfung gilt jetzt konsistent mit dem zentralen Validator nur für Altdaten ohne Impact-Assessment. Ungültige 2.1-Daten, fehlende Magnituden, Quellen- und Faktenfehler bleiben blockiert; keine Bewertungen werden erfunden oder in das alte Modell zurückübersetzt.
+
 ## Unveränderte Grenzen
 
 Keine Lockerung der Quellen-, Fakten-, MPD- oder Freigabegates. Keine Erfindung von Autorenmeinungen. Kein Übergehen eines fehlgeschlagenen Transports. Kein neuer Dienst und keine zusätzlichen kostenpflichtigen Anbieter. Die Änderungen am Monitor und Processor werden von den bestehenden GitHub-Läufen genutzt; keine neue lokale Automation ist erforderlich.

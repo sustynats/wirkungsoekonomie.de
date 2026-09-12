@@ -92,7 +92,9 @@ export function prepareReviewedStory(review, registry, stories, now) {
     claims: analysis.event_claims ? persistClaimEvidence(analysis, candidate, now) : candidate.claims }).visuals;
   const historicalReview = Date.parse(review.research_checked_at) < RECIPIENT_CONTRACT_FROM;
   const errors = [...candidate.source_integrity.issues.map(issue => issue.code), ...validateAnalysis(analysis, candidate, { requireDirectionAssessment: !historicalReview })];
-  if ((correction || draftReview) && !['1.1', '1.2'].includes(analysis.direction_assessment_version)) errors.push('AI_DIRECTION_ASSESSMENT_REQUIRED');
+  // validateAnalysis validates the full current impact_assessment above. Only
+  // legacy records without it need the superseded separate direction contract.
+  if ((correction || draftReview) && !analysis.impact_assessment && !['1.1', '1.2'].includes(analysis.direction_assessment_version)) errors.push('AI_DIRECTION_ASSESSMENT_REQUIRED');
   if (errors.length) return { errors, candidate };
   const record = publishedRecord(candidate, analysis, { provider: "editorial_review", model: "source_bound_review", mode: "editorial_review", method_sources: review.method_sources }, now);
   if (correction || draftReview) record.versions.at(-1).review_id = reviewId;
