@@ -17,8 +17,11 @@ const directory=process.env.WOEK_NEWS_BRIDGE_DIRECTORY,owner=process.env.WOEK_ED
 if(!path.isAbsolute(directory||'')||!/^\d{15,22}$/.test(owner||''))throw Error('EDITORIAL_PRIVATE_CONFIGURATION_REQUIRED');
 const db=path.join(directory,'queue.sqlite');
 const store=new BridgeStore(db,{lane:'discovery'}),importStore=new BridgeStore(db,{lane:'import'});
+// Short, durable user submissions must not wait for a long discovery/import run.
+// Delivery retains the existing discovery lane and its collision protection.
+const intakeStore=new BridgeStore(db,{lane:'intake'});
 const transport=new DropboxTransport({credentials:loadDropboxCredentials(path.join(directory,'dropbox.json'),process.cwd())});
-const approval=new EditorialApproval(store.db),intake=new EditorialIntake({store,transport,directory:path.join(directory,'editorial-uploads')});
+const approval=new EditorialApproval(store.db),intake=new EditorialIntake({store:intakeStore,deliveryStore:store,transport,directory:path.join(directory,'editorial-uploads')});
 const admin=existingAdminAuthorizer();
 const handler=createEditorialIntakeHandler({intake,approval,authorize:async req=>(await admin(req))===owner?owner:null});
 await transport.writeAtomic(bridgePath('98_CONFIG','editorial-request-contract-3.json'),EDITORIAL_REQUEST_CONTRACT);
@@ -71,4 +74,4 @@ const server=http.createServer(async(req,res)=>{
 });
 server.requestTimeout=120000;
 server.listen(8788,'127.0.0.1');
-for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>{clearInterval(timer);handler.close();server.close(()=>{store.close();importStore.close();process.exit(0);});});
+for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>{clearInterval(timer);handler.close();server.close(()=>{intakeStore.close();store.close();importStore.close();process.exit(0);});});

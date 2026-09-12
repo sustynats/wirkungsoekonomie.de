@@ -10,6 +10,7 @@ import {importApprovedEditorials} from '../../scripts/news/bridge/personal-publi
 import {editorialAnalysisPage} from '../../scripts/news/build.mjs';
 import {loadManualEditorials} from '../../scripts/news/manual-editorial.mjs';
 import {importEditorialPreviews} from '../../scripts/news/bridge/intake-processing.mjs';
+import {BridgeStore} from '../../scripts/news/bridge/store.mjs';
 const root=path.resolve('.'),owner='1206956406805102593';
 const original=JSON.parse(fs.readFileSync('data/news/editorial-analyses.json')).analyses.find(a=>a.status==='published'&&a.author_perspective?.paragraphs?.length);
 function input(base=structuredClone(original),body){
@@ -67,17 +68,19 @@ test('new contract requires Meine Einordnung last, metadata may follow, historic
  const s=setup(),{job,preview}=input();delete preview.editorial_revision;preview.markdown='## Ein älterer Entwurf\n\n'+('Dieser Testtext hat eine ältere Struktur und wird nicht automatisch nachträglich umgeschrieben. ').repeat(2);
  assert.throws(()=>s.stage(job,preview),/FINAL_PERSPECTIVE_REQUIRED/);delete job.input.contract_path;assert.doesNotThrow(()=>s.stage(job,preview));s.db.close();
 });
-test('ordinary Dropbox import binds an existing revision to server data and stages without publication',async()=>{
+test('ordinary Dropbox import binds an existing revision to server data and stages without publication',async t=>{
  const s=setup(),{job,preview}=input();
  Object.assign(job.input,{job_type:'editorial_request',input_hash:'1'.repeat(64),created_at:'2026-09-10T21:00:00Z',request:{kind:preview.format,links:preview.sources.map(v=>v.url)}});
  Object.assign(job,{candidate:{story_id:'wt-aaaaaaaaaaaaaaaa'},status:'queued',attempts:{}});
  Object.assign(job.intake,{revision_base:structuredClone(preview.editorial_revision.base),revision_story:{}});
  const forged=structuredClone(preview);forged.editorial_revision.base.title='Nicht vertrauenswürdiger Ersatz';forged.editorial_revision.target.slug='anderes-ziel';
  const output={schema_version:'1.0',job_id:job.input.job_id,input_hash:job.input.input_hash,processed_at:'2026-09-10T21:01:00Z',preview:forged};
- const store={all:()=>[job],put:()=>{},get:()=>job};
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'editorial-revision-import-'));
+ const store=new BridgeStore(path.join(dir,'queue.sqlite'),{lane:'import'});store.put(job);
+ t.after(()=>{store.close();fs.rmSync(dir,{recursive:true,force:true});});
  const transport={list:async()=>[{name:job.input.job_id+'.output.json'}],read:async()=>JSON.stringify(output)};
  const result=await importEditorialPreviews({store,transport,approval:s,now:()=> '2026-09-10T22:00:00Z'});
- assert.deepEqual(result,{staged:1,failed:[]});assert.equal(job.accepted.staged,true);
+ assert.deepEqual(result,{staged:1,failed:[]});assert.equal(store.get(job.input.job_id).accepted.staged,true);
  const staged=s.get(job.input.job_id);assert.equal(staged.preview.editorial_revision.target.slug,original.slug);assert.equal(staged.preview.editorial_revision.base.title,original.title);
  assert.equal(s.claimPublications().length,0);assert.equal((await importEditorialPreviews({store,transport,approval:s})).staged,0);s.db.close();
 });

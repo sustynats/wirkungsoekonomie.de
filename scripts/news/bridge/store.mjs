@@ -9,7 +9,7 @@ import { recordProcessorThroughput } from './processor.mjs';
 export class BridgeStore {
   constructor(file, { lane = 'global' } = {}) {
     if (!path.isAbsolute(file)) throw new Error('BRIDGE_DB_ABSOLUTE_PATH_REQUIRED');
-    if (!['global','discovery','import'].includes(lane)) throw new Error('BRIDGE_LANE_INVALID');
+    if (!['global','discovery','import','intake'].includes(lane)) throw new Error('BRIDGE_LANE_INVALID');
     fs.mkdirSync(path.dirname(file), { recursive: true, mode: 0o700 });
     this.db = new DatabaseSync(file);
     fs.chmodSync(file, 0o600);
