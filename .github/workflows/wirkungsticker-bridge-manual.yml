@@ -7,7 +7,7 @@ on:
         description: Authentifizierte manuelle Serveraktion
         type: choice
         required: true
-        options: [DISCOVERY_NOW, IMPORT_NOW, SERVER_CYCLE_NOW]
+        options: [DISCOVERY_NOW, IMPORT_NOW, SERVER_CYCLE_NOW, ORACLE_CONNECTIVITY_CHECK]
 permissions:
   contents: read
   actions: write
@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   dispatch:
-    if: vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge'
+    if: vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && inputs.action != 'ORACLE_CONNECTIVITY_CHECK'
     runs-on: ubuntu-latest
     timeout-minutes: 70
     env:
@@ -32,3 +32,21 @@ jobs:
           node-version: '22'
       - name: Run the same discovery and import phases in order
         run: node scripts/news/bridge/admin.mjs "$BRIDGE_ACTION" --execute
+  connectivity:
+    if: inputs.action == 'ORACLE_CONNECTIVITY_CHECK'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    permissions: {}
+    steps:
+      - name: Check existing Oracle SSH service without authentication
+        run: |
+          python3 - <<'PY'
+          import json,socket
+          try:
+              with socket.create_connection(('130.162.217.58',22),timeout=8) as s:
+                  s.settimeout(8)
+                  banner=s.recv(256).decode('ascii',errors='replace').splitlines()[0]
+                  print(json.dumps({'ssh_reachable':True,'ssh_banner':banner.startswith('SSH-')}))
+          except OSError as e:
+              print(json.dumps({'ssh_reachable':False,'error_type':type(e).__name__}))
+          PY
