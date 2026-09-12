@@ -170,6 +170,19 @@ test('temporary research and remote timeouts preserve complete output and never 
   assert.ok(transport.files.has(file));assert.equal((await transport.list('90_ERRORS')).length,0);
  }
 });
+test('a publisher research wait preserves complete output past the ordinary retry limit',async t=>{
+ const {provider,store,transport}=setup(t);provider.correctionsEnabled=true;
+ await provider.enqueue([candidate()],[],now);const job=store.all()[0];
+ const file=bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json');
+ await transport.writeAtomic(file,output(job.input));const original=transport.files.get(file);
+ for(let i=0;i<4;i++)await provider.failure(job,'import',Object.assign(Error('BRIDGE_RESEARCH_UNAVAILABLE'),{
+   retryable:true,retry_after_seconds:1800,issues:['ROBOTS_CRAWL_DELAY_DEFERRED:research-example'],
+ }),now);
+ const saved=store.get(job.input.job_id);
+ assert.equal(saved.status,'queued');assert.equal(saved.corrections,undefined);assert.equal(saved.ack,undefined);
+ assert.ok(Date.parse(saved.retry_at)>=Date.parse(now)+1800000);
+ assert.equal(transport.files.get(file),original);assert.equal((await transport.list('90_ERRORS')).length,0);
+});
 test('repeated truncated bridge reads preserve the same complete output for a later import',async t=>{
  const {provider,store,transport}=setup(t);provider.correctionsEnabled=true;
  await provider.enqueue([candidate()],[],now);const job=store.all()[0];

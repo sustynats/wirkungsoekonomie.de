@@ -19,3 +19,11 @@ Pruefen eines anderen Zitats im selben Dokument mit der richtigen Quelle gemelde
 
 Validierung: Tests fuer verweigerten RSL-/Robots-/HTTP-Zugang, ausbleibende
 Belegspeicherung und fehlende Zitate bei Erstpruefung sowie vorhandenem Cache.
+
+Im anschliessenden Import wurde zudem eine vorgeschriebene Abrufpause als
+redaktioneller Fehler behandelt (`ROBOTS_CRAWL_DELAY_DEFERRED`). Eine Pause ist
+kein unzulaessiger Zugang. Sie wird nun mit verbleibender Wartefrist an die
+bestehende dauerhafte Retry-Logik uebergeben. Bereits verifizierte Quellen und
+die vollstaendige Ausgabe bleiben erhalten, ohne eine Korrekturrunde zu zaehlen.
+Ein echter Robots-/RSL-Ausschluss bleibt gesperrt. Tests pruefen auch mehrere
+Quellen derselben Domain und die Wiederaufnahme ueber das normale Retry-Limit.
