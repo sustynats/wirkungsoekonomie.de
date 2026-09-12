@@ -1,4 +1,4 @@
-import {fetchPublicArticle,extractArticleText,preAnalyzeStory,claimLedgerFor} from '../lib.mjs';
+import {fetchPublicArticle,extractArticleText,preAnalyzeStory,claimLedgerFor,slugify} from '../lib.mjs';
 import {extractDiscoveryMetadata} from '../active-discovery.mjs';
 import {eventFingerprint,evidenceGroups} from '../newsroom.mjs';
 import {bridgeInput,sameBridgeEvent} from './adapter.mjs';
@@ -48,6 +48,7 @@ export async function prepareIntakeNews({store,transport,registry,now=()=>new Da
    const event=eventFingerprint(sources[0]),first=sources[0].published_at;
    const candidate={story_id:'wt-'+hash({event:event.id}).slice(0,16),event_id:event.id,title:sources[0].title,source_summary:sources[0].summary,
     sources,first_seen:first,event_first_seen_at:first,event_detected_at:now(),content_hash:hash({sources,request:parent.input.request}),published:false};
+   candidate.slug=`${slugify(candidate.title)}-${candidate.story_id.slice(-6)}`;
    candidate.preanalysis=preAnalyzeStory(candidate,now());candidate.topic=candidate.preanalysis.topics;
    candidate.claims=claimLedgerFor(sources,candidate.story_id,now());candidate.evidence_groups=evidenceGroups(sources);
    const existing=existingIntakeNewsJob(store,candidate);
