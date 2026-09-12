@@ -905,6 +905,12 @@
   color: #fff;
 }
 
+/* Badge layout must not override the native hidden state, including cards
+   inserted later by the paginated app feed. */
+.news-badge[hidden] {
+  display: none !important;
+}
+
 .news-badge--case {
   border-color: rgba(184, 139, 28, 0.42);
   background: rgba(222, 174, 45, 0.13);
