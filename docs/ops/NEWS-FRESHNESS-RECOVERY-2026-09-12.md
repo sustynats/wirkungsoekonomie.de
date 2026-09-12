@@ -2,7 +2,7 @@
 
 ## Befund
 
-Die Untersuchung des Quellenfensters 04:36–05:36 UTC fand 49 Feed-Einträge in 49 zwischengespeicherten Quellenpaketen. Dies sind Rohmetadaten, keine 49 fertig recherchierten Ereignisse. Insbesondere gleichlautende Feed-Zeitpunkte sind noch kein Beleg für ein neues Ereignis. In der tatsächlichen Queue war im geprüften Zeitraum nur ein neu eingestelltes altes Update (Briefwahl vom 5. September) sichtbar. Eine erfolgreiche Discovery oder ein Preflight beweist keinen veröffentlichten Artikel.
+Die Untersuchung des Quellenfensters 04:36-05:36 UTC fand 49 Feed-Einträge in 49 zwischengespeicherten Quellenpaketen. Dies sind Rohmetadaten, keine 49 fertig recherchierten Ereignisse. Insbesondere gleichlautende Feed-Zeitpunkte sind noch kein Beleg für ein neues Ereignis. In der tatsächlichen Queue war im geprüften Zeitraum nur ein neu eingestelltes altes Update (Briefwahl vom 5. September) sichtbar. Eine erfolgreiche Discovery oder ein Preflight beweist keinen veröffentlichten Artikel.
 
 Zwei technische Stellen begrenzten aktuelle Kandidaten: `run.mjs` verlangte mindestens 30 Punkte im alten Vorfilter. `provider.mjs` ließ bei voller Queue vor allem TOP/HIGH oder Updates bereits publizierter Geschichten passieren. Unauffällig formulierte neue Meldungen hatten damit keinen gleichwertigen Zugang.
 
