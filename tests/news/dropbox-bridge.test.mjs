@@ -642,6 +642,62 @@ for (const pass of [true,false]) test(`separate semantic review controls image g
   if(!pass){assert.equal(f.store.get(parent.input.job_id).publication_gate.status,'needs_review');assert.deepEqual(f.store.get(parent.input.job_id).attempts,{});}
 });
 
+test('an all-pass semantic output with a missing required path returns for correction before acceptance',async t=>{
+  const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];
+  const assessment=syntheticImpact21(review.impact_assessment);
+  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
+  record.sources.push(...review.assessment_sources);record.impact_assessment=assessment;
+  let images=0;
+  const f=setup(t,{correctionsEnabled:true,stageOnly:false,adapt:()=>({decision:'publish',record}),semanticReview:ensureSemanticReview,visualProvider:{receive:async()=>{images++;return {status:'fallback'};}}});
+  await f.provider.enqueue([candidate()],[],now);const parent=f.store.all()[0];parent.candidate=record;f.store.put(parent);
+  const first=output(parent.input,'publish');first.wirkungsticker={analysis:{impact_assessment:assessment}};
+  first.story.headline=record.title;first.story.detailed_summary=record.source_summary;
+  const parentPath=bridgePath('20_OUTPUT_READY',parent.input.job_id+'.output.json'),parentRaw=JSON.stringify(first);
+  f.transport.files.set(parentPath,parentRaw);
+  await f.provider.reconcile({},[record],later);
+  const child=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');
+  const checked={status:'ready',checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im separaten Test-Prüfpass gegen gebundene Quellen und Wirkpfade geprüft.'}])),findings:[]};
+  const invalid=structuredClone(assessment);invalid.system_check.enablement=[];
+  const result={schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:invalid,review:checked};
+  const reviewPath=bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),raw=JSON.stringify(result);
+  f.transport.files.set(reviewPath,raw);
+  assert.deepEqual(await f.provider.reconcile({},[record],later),[]);
+  const saved=f.store.get(child.input.job_id);
+  assert.equal(saved.status,'correction_pending');assert.equal(saved.accepted,undefined);assert.equal(saved.ack,undefined);
+  assert.ok(saved.last_error.issues.includes('IMPACT_POWER_PATH_REQUIRED'));
+  assert.equal(f.transport.files.get(bridgePath('90_ERRORS',child.input.job_id+'.correction-1.output.json')),raw);
+  assert.equal(f.transport.files.get(parentPath),parentRaw);assert.equal(f.store.get(parent.input.job_id).semantic_review,undefined);assert.equal(images,0);
+  await f.provider.reconcile({},[record],later);
+  assert.equal(f.store.get(child.input.job_id).corrections.length,1,'waiting does not generate duplicate repairs');
+  result.impact_assessment=assessment;f.transport.files.set(reviewPath,JSON.stringify(result));
+  assert.equal((await f.provider.reconcile({},[record],later)).length,1);
+  assert.equal(f.store.get(child.input.job_id).accepted.decision,'reviewed');assert.equal(images,1);
+});
+
+test('a legacy all-pass hold becomes a bounded parent repair without rewriting its accepted review',async t=>{
+  const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];
+  const assessment=syntheticImpact21(review.impact_assessment);
+  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
+  record.sources.push(...review.assessment_sources);record.impact_assessment=assessment;
+  const f=setup(t,{correctionsEnabled:true,stageOnly:false,adapt:()=>({decision:'publish',record}),semanticReview:ensureSemanticReview});
+  await f.provider.enqueue([candidate()],[],now);let parent=f.store.all()[0];parent.candidate=record;f.store.put(parent);
+  const first=output(parent.input,'publish');first.wirkungsticker={analysis:{impact_assessment:assessment}};
+  first.story.headline=record.title;first.story.detailed_summary=record.source_summary;
+  const parentPath=bridgePath('20_OUTPUT_READY',parent.input.job_id+'.output.json'),raw=JSON.stringify(first);f.transport.files.set(parentPath,raw);
+  await f.provider.reconcile({},[record],later);
+  const child=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');
+  const invalid=structuredClone(assessment);invalid.system_check.enablement=[];
+  parent=f.store.get(parent.input.job_id);parent.semantic_review={review_job_id:child.input.job_id,output_hash:hash(first),assessment:invalid,review:{status:'ready',checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im separaten Test-Prüfpass gegen gebundene Quellen und Wirkpfade geprüft.'}])),findings:[]}};
+  parent.publication_gate={status:'needs_review',issues:['IMPACT_POWER_PATH_REQUIRED']};f.store.put(parent);
+  child.status='accepted';child.accepted={job_id:child.input.job_id,decision:'hold',record:null,output_hash:hash('old review')};f.store.put(child);
+  const immutable=f.store.get(child.input.job_id);
+  await f.provider.reconcile({},[record],later);
+  assert.equal(f.store.get(parent.input.job_id).status,'correction_pending');
+  assert.deepEqual(f.store.get(child.input.job_id),immutable);
+  assert.equal(f.transport.files.get(bridgePath('90_ERRORS',parent.input.job_id+'.correction-1.output.json')),raw);
+  assert.equal(f.store.get(parent.input.job_id).ack,undefined);
+});
+
 test('temporary OAuth refusal is retryable while invalid credentials remain terminal', async () => {
   for (const status of [400, 429, 503]) {
     const transport = new DropboxTransport({ credentials: {}, fetchImpl: async () => new Response('{}', { status, headers: { 'retry-after': '60' } }) });

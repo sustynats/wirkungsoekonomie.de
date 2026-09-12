@@ -179,3 +179,17 @@ dateiexportierende Werkzeug erstellt (im geprüften manuellen Kontext
 Fehlt dieses Werkzeug im geplanten Kontext, keine Artikel claimen. Eine bereits
 zurückgewiesene Datei niemals durch anderen Transport oder bloße Neuregistrierung
 übertragen; Datei-/Approval-/Safety-Sperren bleiben verbindlich.
+# Unvollständige Zweitprüfung nachbearbeiten
+
+Ein Zweitprüfoutput mit `review.status=ready` und ausschließlich bestandenen
+Einzelchecks ist nicht abgeschlossen, wenn das serverseitige Qualitätsgate noch
+Fehler meldet. Er geht vor der Annahme durch denselben begrenzten
+Korrekturprozess wie andere fehlerhafte Ausgaben. Das unveränderte Original bleibt
+im Fehlerarchiv; die Reparatur nutzt dieselbe Job-/Input-Bindung. Es gibt weder
+eine Veröffentlichung noch eine automatische inhaltliche Ergänzung.
+
+Bereits angenommene Prüfungen bleiben unveränderlich. Bei einer historischen,
+widersprüchlichen `ready`-Prüfung wird der noch nicht angenommene Elternauftrag
+zur Korrektur zurückgegeben. Ausdrückliches `needs_review`, `blocked` oder ein
+fehlgeschlagener fachlicher Einzelcheck bleibt eine redaktionelle Rückstellung.
+Diese Entscheidungen werden nicht durch automatische Reparaturschleifen ersetzt.
