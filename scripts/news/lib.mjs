@@ -916,7 +916,9 @@ export function analysisInputFor(stories) {
 // graphics keep the previous ceiling; the mandatory full evidence packet gets
 // a bounded 5k reserve instead of dropping sources or governing checks.
 export const ANALYSIS_PROMPT_MAX_CHARS = 44000;
-export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
+export const BRIDGE_ANALYSIS_PROMPT_MAX_CHARS = 64000;
+export function buildAnalysisPrompt(stories, { includeVisuals = true, transport = 'api' } = {}) {
+  if (!['api', 'dropbox_chatgpt_bridge'].includes(transport)) throw new Error('ANALYSIS_PROMPT_TRANSPORT_INVALID');
   const input = analysisInputFor(stories);
   const lines = [
     READER_COPY_RULE,
@@ -1004,12 +1006,16 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
     "UNTRUSTED_SOURCE_DATA_END",
   ];
   try {
-    lines[lines.length - 2] = fitAnalysisInput(input, (includeVisuals ? 39000 : ANALYSIS_PROMPT_MAX_CHARS) - lines.join("\n").length);
+    // The paid API has its own request budget. Private file delivery can carry
+    // a larger, still bounded source catalog without removing evidence or rules.
+    const maxChars = transport === 'dropbox_chatgpt_bridge' ? BRIDGE_ANALYSIS_PROMPT_MAX_CHARS
+      : includeVisuals ? 39000 : ANALYSIS_PROMPT_MAX_CHARS;
+    lines[lines.length - 2] = fitAnalysisInput(input, maxChars - lines.join("\n").length);
   } catch (error) {
     // Optional new illustrations must not crowd out a complete source catalog.
     // Retry prompt assembly locally, never the provider. No required rule or
     // source record is removed, and genuinely oversized input still fails safe.
-    if (includeVisuals && error.message === "AI_INPUT_TOO_LARGE") return buildAnalysisPrompt(stories, { includeVisuals: false });
+    if (includeVisuals && error.message === "AI_INPUT_TOO_LARGE") return buildAnalysisPrompt(stories, { includeVisuals: false, transport });
     throw error;
   }
   return lines.join("\n");

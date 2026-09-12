@@ -129,6 +129,29 @@ test('oversize preflight preserves a queue item and leaves the paid slot to anot
   assert.equal(again.input_holds[0].reused,undefined); assert.equal(again.ai_calls,0);
 });
 
+test('bridge discovery retries an API-size hold using the same native file budget as enqueue', async t => {
+  const keys = ['WIRKUNGSTICKER_PROCESSING_MODE', 'VISUAL_GENERATION_PROVIDER'];
+  const old = Object.fromEntries(keys.map(k => [k, process.env[k]]));
+  Object.assign(process.env, { WIRKUNGSTICKER_PROCESSING_MODE: 'dropbox_chatgpt_bridge', VISUAL_GENERATION_PROVIDER: 'higgsfield' });
+  t.after(() => { for (const k of keys) if (old[k] === undefined) delete process.env[k]; else process.env[k] = old[k]; });
+  const previous = storedStory();
+  previous.pending_update = { reason: 'AI_INPUT_TOO_LARGE', detected_at: now,
+    sources: Array.from({length: 24}, (_, i) => ({...item, url: `https://example.org/document/${i}/${'x'.repeat(1100)}`})) };
+  let captured, candidates;
+  const report = await runWirkungsticker(options(previous, {
+    captureState: value => captured = value,
+    captureBridgeCandidates: value => candidates = value,
+    callAiImpl: async () => assert.fail('Native bridge discovery must not call an API'),
+  }));
+  assert.equal(report.input_holds.length, 0);
+  assert.equal(report.ai_calls, 0);
+  assert.ok(candidates.some(c => c.story_id === previous.story_id));
+  const saved = captured.storyStore.stories.find(s => s.story_id === previous.story_id);
+  assert.equal(saved.pending_update.reason, 'BRIDGE_PENDING');
+  assert.deepEqual(saved.analysis, previous.analysis);
+  assert.deepEqual(saved.versions, previous.versions);
+});
+
 test('malformed AI output is retained and retried automatically after backoff', async () => {
   let captured, calls=0, fail=true;
   const callAiImpl=async stories=>{
