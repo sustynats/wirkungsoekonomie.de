@@ -27,6 +27,20 @@ function setup(t){
  t.after(()=>{store.close();fs.rmSync(directory,{recursive:true,force:true});});return {directory,store,files,transport,intake,approval};
 }
 async function job(f){const d=f.intake.draft(owner,{client_id:randomUUID(),kind:'opinion_analysis',brief:'Bitte diesen synthetischen Testfall vorbereiten.',links:'https://example.org/source',author_notes:'',attachments:[],publish:true,urgent:false});const result=await f.intake.submit(owner,d.id);await f.intake.preparePending();return f.store.get(result.job_id);}
+test('a legacy import receipt is not a readable manuscript and cannot mask the real text',async t=>{
+ const f=setup(t),j=await job(f),receipt='Der geprüfte Entwurf wurde privat übernommen.';
+ j.staging={text:receipt};f.store.put(j);
+ assert.equal(f.intake.list(owner)[0].preview_available,false);
+ assert.throws(()=>f.intake.preview(owner,j.input.job_id),e=>e.message==='INTAKE_PREVIEW_PENDING'&&e.status===409);
+ assert.equal(f.store.get(j.input.job_id).staging.text,receipt);
+ j.staging.record={source_summary:'Ein echter, kurzer Recherchetext.\n\nMit einem weiteren Absatz.'};f.store.put(j);
+ assert.equal(f.intake.list(owner)[0].preview_available,true);
+ assert.equal(f.intake.preview(owner,j.input.job_id).text,j.staging.record.source_summary);
+ j.staging.editorial_preview=preview();f.store.put(j);
+ assert.equal(f.intake.preview(owner,j.input.job_id).text,preview().markdown);
+ assert.throws(()=>f.intake.preview(other,j.input.job_id),e=>e.status===404);
+ assert.equal(f.approval.claimPublications().length,0);
+});
 test('screenshot intake uses the real atomic Dropbox writer and releases input only after intact attachments',async t=>{
  const f=setup(t),transport=new DropboxTransport({credentials:{}}),files=new Map(),moves=[];
  transport.request=async(op,args,body,binary)=>{

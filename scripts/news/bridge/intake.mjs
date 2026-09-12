@@ -9,6 +9,14 @@ const UUID=/^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/;
 const TYPES={'image/png':'png','image/jpeg':'jpg','image/webp':'webp'};
 export const INTAKE_FILE_LIMIT=8*1024*1024;
 const fail=(code,status=400)=>{throw Object.assign(Error(code),{status});};
+// Old imports sometimes staged only this receipt. It is not a manuscript.
+// Keep the stored history, but advertise a preview only for actual content.
+const IMPORT_RECEIPTS=new Set(['Der geprüfte Entwurf wurde privat übernommen.','Der Entwurf wurde privat übernommen.']);
+function privatePreviewText(job){
+  const s=job.staging;
+  return [s?.editorial_preview?.markdown,s?.record?.source_summary,s?.record?.analysis?.summary,s?.text]
+    .find(text=>typeof text==='string'&&text.trim()&&!IMPORT_RECEIPTS.has(text.trim()))||null;
+}
 export function normalizeSubmission(value){
   assertSchema({type:'object'},value);
   if(!UUID.test(value.client_id||'')||!INTAKE_KINDS.includes(value.kind))fail('INTAKE_INVALID');
@@ -128,13 +136,13 @@ export class EditorialIntake {
       const j=JSON.parse(row.body);
       const parent=j.intake.review_parent?this.store.get(j.intake.review_parent):null;
       const reviewJobId=parent?.intake?.owner===owner?parent.input.job_id:j.input.job_id;
-      return {job_id:j.input.job_id,review_job_id:reviewJobId,kind:j.intake.kind,brief:j.input.request.brief,title:j.accepted?.editorial?.title||j.accepted?.record?.title||null,created_at:j.created_at,status:j.intake.covered_url?'covered':this.store.observation(`claim:${j.input.job_id}`)&&j.status==='queued'?'claimed':j.status,ack_status:j.ack?.status||null,publication_url:j.intake.covered_url||j.ack?.url||null,preview_available:Boolean(j.staging?.editorial_preview?.markdown||j.staging?.text||j.staging?.record?.source_summary||j.staging?.record?.analysis?.summary),status_note:j.intake.covered_url?'Diese Meldung ist bereits veröffentlicht. Es wurde keine Dublette angelegt.':j.last_error?'Ein Prüfschritt braucht Aufmerksamkeit. Der Auftrag bleibt gespeichert.':j.accepted?.reason||null};
+      return {job_id:j.input.job_id,review_job_id:reviewJobId,kind:j.intake.kind,brief:j.input.request.brief,title:j.accepted?.editorial?.title||j.accepted?.record?.title||null,created_at:j.created_at,status:j.intake.covered_url?'covered':this.store.observation(`claim:${j.input.job_id}`)&&j.status==='queued'?'claimed':j.status,ack_status:j.ack?.status||null,publication_url:j.intake.covered_url||j.ack?.url||null,preview_available:Boolean(privatePreviewText(j)),status_note:j.intake.covered_url?'Diese Meldung ist bereits veröffentlicht. Es wurde keine Dublette angelegt.':j.last_error?'Ein Prüfschritt braucht Aufmerksamkeit. Der Auftrag bleibt gespeichert.':j.accepted?.reason||null};
     });
   }
   preview(owner,id){
     const job=this.store.get(id);if(!job||job.intake?.owner!==owner)fail('INTAKE_NOT_FOUND',404);
     if(!job.staging)fail('INTAKE_PREVIEW_PENDING',409);
-    const text=job.staging.editorial_preview?.markdown||job.staging.text||job.staging.record?.source_summary||job.staging.record?.analysis?.summary;
+    const text=privatePreviewText(job);
     if(!text)fail('INTAKE_PREVIEW_PENDING',409);
     return {text};
   }
