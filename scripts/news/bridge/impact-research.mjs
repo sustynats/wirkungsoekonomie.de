@@ -7,7 +7,10 @@ import {sourceAccess} from '../access-policy.mjs';
 import {withRequestDeadline} from '../request-deadline.mjs';
 import { RESEARCH_FUNCTIONS, researchSourceSchema } from './research-source-schema.mjs';
 export { RESEARCH_FUNCTIONS, researchSourceSchema } from './research-source-schema.mjs';
-const comparable = value => String(value).normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
+const comparable = value => String(value).normalize('NFKC').toLowerCase().replace(/\s+/g,' ')
+  // HTML extraction inserts spaces at inline tag boundaries, e.g.
+  // <strong>Rekordniveau</strong>. Words and numeric notation stay exact.
+  .replace(/(\p{L}) +([.,;:!?])/gu,'$1$2').trim();
 function sourceFailure(error, sourceId) {
   // Keep access refusals intact, but identify the supplementary source in the
   // private repair packet. No URL, document text or provider response is added.
