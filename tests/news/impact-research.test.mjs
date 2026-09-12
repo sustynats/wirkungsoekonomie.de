@@ -83,3 +83,29 @@ test('missing or unsupported research fields point to the exact correction witho
     { message: 'BRIDGE_SCHEMA_INVALID:$.research_sources[0].excerpt' });
   assert.equal(fetched, false);
 });
+
+test('RSL, robots and HTTP refusals name the research source without retry or cached proof', async () => {
+  for (const code of ['RSL_STATUS_OPEN','RSL_AI_INPUT_DISALLOWED','ROBOTS_DISALLOWED','ARTICLE_HTTP_403']) {
+    const bridge=fixture(); let calls=0;
+    const original=Object.assign(new Error(code),{retryable:false,http_status:403});
+    await assert.rejects(verifyImpactResearch(bridge,[source],[],now,{fetchDocument:async()=>{calls++;throw original;}}), error=>{
+      assert.equal(error.message,`${code}:${source.source_id}`);
+      assert.equal(error.cause,original); assert.equal(error.retryable,false); assert.equal(error.http_status,403);
+      return true;
+    });
+    assert.equal(calls,1); assert.equal(bridge.data.size,0);
+  }
+});
+
+test('missing original quotes name the failed source on initial and cached-document verification', async () => {
+  const bridge=fixture(), fetchDocument=async()=>({body:`<article>${quote}</article>`});
+  const other={...source,quote:'This second claim is not present in the actual source document that was retrieved.'};
+  await assert.rejects(verifyImpactResearch(bridge,[other],[],now,{fetchDocument}),
+    {message:`IMPACT_RESEARCH_QUOTE_NOT_FOUND:${source.source_id}`});
+  assert.equal(bridge.data.size,0);
+  await verifyImpactResearch(bridge,[source],[],now,{fetchDocument});
+  const proof=[...bridge.data.values()][0];
+  await assert.rejects(verifyImpactResearch(bridge,[other],[],now,{fetchDocument}),
+    {message:`IMPACT_RESEARCH_QUOTE_NOT_FOUND:${source.source_id}`});
+  assert.deepEqual([...bridge.data.values()],[proof]);
+});
