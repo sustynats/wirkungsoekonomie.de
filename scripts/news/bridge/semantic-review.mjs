@@ -7,6 +7,15 @@ import { derivePublicationStatus, semanticIssues, structuredSemanticChecks, SEMA
 
 export const SEMANTIC_JOB_TYPE = 'impact_semantic_review';
 const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
+// A nominally successful review with remaining validation errors is an
+// incomplete output, not an editorial HOLD. Return it through the bounded
+// correction workflow; explicit editorial holds and failed checks stay held.
+function assertCompleteReadyReview(review, gate) {
+  if (review?.status === 'ready' && structuredSemanticChecks(review)
+    && SEMANTIC_CHECKS.every(key => review.checks[key].status === 'pass') && gate.issues.length) {
+    throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: gate.issues });
+  }
+}
 export const semanticOutputSchema = {
   type: 'object', additionalProperties: false, required: ['schema_version', 'job_id', 'input_hash', 'processed_at', 'review', 'impact_assessment'],
   properties: {
@@ -43,6 +52,7 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
     && receipt.assessment.semantics_revision === POTENTIAL_REVISION && structuredSemanticChecks(receipt.review)) {
     const gate = derivePublicationStatus(receipt.assessment, record, { review: receipt.review, secondPassComplete: true });
     job.publication_gate = gate; await bridge.store.put(job);
+    assertCompleteReadyReview(receipt.review, gate);
     return { ...gate, assessment: receipt.assessment, receipt, record };
   }
   // Old acknowledgments remain immutable. A malformed legacy check list gets
@@ -109,7 +119,7 @@ export async function importSemanticReviews(bridge, now) {
   const names = new Set((await bridge.transport.list('20_OUTPUT_READY')).map(e => e.name));
   const results = [];
   for (const job of await bridge.store.all()) {
-    if (job.input.job_type !== SEMANTIC_JOB_TYPE || terminal.has(job.status) || !names.has(job.input.job_id + '.output.json')) continue;
+    if (job.input.job_type !== SEMANTIC_JOB_TYPE || job.accepted || terminal.has(job.status) || !names.has(job.input.job_id + '.output.json')) continue;
     if (job.input.impact_version !== IMPACT_VERSION || job.input.semantics_revision !== POTENTIAL_REVISION || job.superseded_by) continue;
     try {
       const output = parsePacket(await bridge.transport.read(bridgePath('20_OUTPUT_READY', job.input.job_id + '.output.json')), semanticOutputSchema);
@@ -125,6 +135,7 @@ export async function importSemanticReviews(bridge, now) {
       }
       const reviewRecord = {...job.candidate,impact_sources:[...(job.candidate.impact_sources||[]),...research]};
       const gate = derivePublicationStatus(output.impact_assessment, reviewRecord, { review: output.review, secondPassComplete: true });
+      assertCompleteReadyReview(output.review, gate);
       if (gate.issues.some(issue => /IMPACT_(?:VERSION|MATERIAL_MAGNITUDE|FACTOR_|MAGNITUDE_CALCULATION|MAIN_AGGREGATE|OBSERVED_DIRECTION|SOURCE_FUNCTION|RESEARCH_RESULT|RESEARCH_CHECK|BOUNDARY_)/.test(issue))) throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:gate.issues});
       parent.semantic_review = { review_job_id: job.input.job_id, output_hash: job.input.parent_output_hash, reviewed_at: now,
         assessment: output.impact_assessment, review: output.review, research_sources: research, verified_context_sources: reviewRecord.impact_sources, gate };
