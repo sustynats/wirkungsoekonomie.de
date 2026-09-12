@@ -142,12 +142,23 @@
 
   function initializeNewsState() {
     const newest = newestCardTimestamp();
-    const stored = Date.parse(window.localStorage.getItem(lastSeenKey) || 0);
-    if (!stored && newest) {
+    const stored = Date.parse(window.localStorage.getItem(lastSeenKey) || "");
+    cards.forEach((card) => {
+      const badge = card.querySelector("[data-news-new-badge]");
+      if (badge) badge.hidden = true;
+    });
+    if (!Number.isFinite(stored) && newest) {
       window.localStorage.setItem(lastSeenKey, new Date(newest).toISOString());
+      updateAppBadge(0);
+      if (markReadButton) markReadButton.hidden = true;
       return;
     }
-    const newCards = cards.filter((card) => card.dataset.newsLateDelivery !== "true" && Date.parse(card.dataset.newsUpdatedAt || 0) > stored);
+    const now = Date.now();
+    const newCards = cards.filter((card) => {
+      const timestamp = Date.parse(card.dataset.newsUpdatedAt || "");
+      return card.dataset.newsLateDelivery !== "true" && timestamp > stored
+        && timestamp <= now && now - timestamp <= 24 * 60 * 60 * 1000;
+    });
     newCards.forEach((card) => {
       const badge = card.querySelector("[data-news-new-badge]");
       if (badge) badge.hidden = false;
