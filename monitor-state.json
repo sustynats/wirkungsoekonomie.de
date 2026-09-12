@@ -12,16 +12,17 @@
     "bridge-queue-size": {
       "firstSeen": "2026-09-11T07:35:24.922Z",
       "active": true
-    },
-    "bridge-shards": {
-      "firstSeen": "2026-09-12T00:50:41.401Z",
-      "active": true
-    },
-    "bridge-processor": {
-      "firstSeen": "2026-09-12T01:50:28.178Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "c31d9baef9af54f4e96f6e61",
+      "content": "✓ WÖk-Störung behoben\nChatGPT-Redaktionsworker\nPrüfung: 2026-09-12T02:50:35.215Z"
+    },
+    {
+      "id": "af1d25d3d7b2476f0ceaaec7",
+      "content": "✓ WÖk-Störung behoben\nVollständigkeit der Redaktionsworker\nPrüfung: 2026-09-12T02:50:35.215Z"
+    }
+  ],
   "dailyDate": "2026-09-11"
 }
