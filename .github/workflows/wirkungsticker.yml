@@ -65,6 +65,12 @@ concurrency:
 
 jobs:
   update:
+    # The lanes share one Oracle process. Keep per-lane trigger coalescing above,
+    # but never load the full legacy queue concurrently with discovery/monitor.
+    concurrency:
+      group: ${{ vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && 'wirkungsticker-oracle-bridge-access' || 'wirkungsticker-api-access' }}
+      queue: max
+      cancel-in-progress: false
     if: >-
       (vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '*/5 * * * *' || github.ref == 'refs/heads/codex/wirkungsticker-import-clock')) ||
       (vars.WIRKUNGSTICKER_PROCESSING_MODE != 'dropbox_chatgpt_bridge' && github.event.schedule != '*/5 * * * *' && github.ref != 'refs/heads/codex/wirkungsticker-import-clock')
