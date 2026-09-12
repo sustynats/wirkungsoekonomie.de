@@ -135,7 +135,7 @@
 
   function newestCardTimestamp() {
     return cards.reduce((latest, card) => {
-      const timestamp = Date.parse(card.dataset.newsUpdatedAt || 0);
+      const timestamp = Date.parse(card.dataset.newsUpdatedAt || "");
       return timestamp > latest ? timestamp : latest;
     }, 0);
   }
@@ -423,7 +423,10 @@
       const feed = await response.json();
       if (!Array.isArray(feed.items)) throw new Error("NEWS_FEED_INVALID");
       if (reloadStarted) return true;
-      const feedLatest = (feed.items || []).reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || 0)), 0);
+      const feedLatest = feed.items.reduce((value, item) => {
+        const timestamp = Date.parse(item.date_modified || item.date_published || "");
+        return timestamp <= Date.now() && timestamp > value ? timestamp : value;
+      }, 0);
       latestFeedTimestamp = feedLatest;
       const pageLatest = newestCardTimestamp();
       const pageRevision = document.querySelector('meta[name="woek-news-revision"]')?.content;
@@ -441,10 +444,19 @@
           return true;
         }
       }
-      const lastSeen = Date.parse(window.localStorage.getItem(lastSeenKey) || 0);
-      const lastNotified = Date.parse(window.localStorage.getItem(lastNotifiedKey) || 0);
-      const updates = (feed.items || []).filter((item) => !item._woek_late_delivery && Date.parse(item.date_modified || item.date_published || 0) > lastSeen);
-      const latest = updates.reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || 0)), 0);
+      let lastSeen = Date.parse(window.localStorage.getItem(lastSeenKey) || "");
+      if (!Number.isFinite(lastSeen)) {
+        lastSeen = feedLatest || Date.now();
+        window.localStorage.setItem(lastSeenKey, new Date(lastSeen).toISOString());
+      }
+      const lastNotified = Date.parse(window.localStorage.getItem(lastNotifiedKey) || "") || 0;
+      const now = Date.now();
+      const updates = feed.items.filter((item) => {
+        const timestamp = Date.parse(item.date_modified || item.date_published || "");
+        return !item._woek_late_delivery && timestamp > lastSeen
+          && timestamp <= now && now - timestamp <= 24 * 60 * 60 * 1000;
+      });
+      const latest = updates.reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || "") || 0), 0);
       await updateAppBadge(updates.length);
       if (!updates.length || latest <= lastNotified || document.visibilityState === "visible") return false;
       const registration = await registrationPromise;
