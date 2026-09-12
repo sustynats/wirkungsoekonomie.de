@@ -73,6 +73,23 @@ test("archival revisions refresh automatically without inventing a news timestam
   }
 });
 
+test('a later feed refresh cannot revive old badges or invent unread news on first use',async()=>{
+ const app=fs.readFileSync('assets/js/news-pwa.js','utf8');
+ const code=app.slice(app.indexOf('  async function checkForNews('),app.indexOf('  async function markNewsAsSeen('));
+ const now=Date.parse('2026-09-12T15:00:00Z');class Clock extends Date{static now(){return now;}}
+ const feed={items:[{date_modified:'2026-09-09T12:00:00Z'},{date_modified:'2026-09-12T14:00:00Z'},{date_modified:'2026-09-12T13:00:00Z',_woek_late_delivery:true},{date_modified:'2026-09-13T14:00:00Z'},{date_modified:'invalid'},{}]};
+ for(const stored of [null,'invalid','2026-09-08T00:00:00Z']){
+  const data=new Map(stored===null?[]:[['seen',stored]]),badges=[],notifications=[];
+  const context={Date:Clock,AbortController,navigator:{},cards:[],reloadStarted:false,latestFeedTimestamp:0,autoReloadKey:'reload',lastSeenKey:'seen',lastNotifiedKey:'notified',notificationTag:'news',newestCardTimestamp:()=>0,
+   document:{visibilityState:'hidden',querySelector:()=>null},refreshStatus:{textContent:''},updateAppBadge:async n=>badges.push(n),registrationPromise:Promise.resolve({showNotification:async(...args)=>notifications.push(args)}),
+   window:{setTimeout,clearTimeout,sessionStorage:{getItem:()=>null,setItem(){}},localStorage:{getItem:k=>data.get(k)??null,setItem:(k,v)=>data.set(k,v)},location:{reload(){throw Error('Unexpected reload');}}},fetch:async()=>({ok:true,json:async()=>feed})};
+  await vm.runInNewContext(`${code}\ncheckForNews()`,context);
+  const returning=stored==='2026-09-08T00:00:00Z';assert.equal(badges.at(-1),returning?1:0);assert.equal(notifications.length,returning?1:0);
+  if(!returning)assert.equal(data.get('seen'),'2026-09-12T14:00:00.000Z');
+  await vm.runInNewContext('checkForNews()',context);assert.equal(notifications.length,returning?1:0);
+ }
+});
+
 test("ticker push job runs after a successful deploy despite skipped release-assets", () => {
   const workflow = fs.readFileSync(".github/workflows/deploy.yml", "utf8");
   const notificationJob = workflow.split("  notify-ticker:")[1];
