@@ -2,8 +2,1966 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-12T00:39:55.085Z",
+  "updated_at": "2026-09-12T01:44:31.526Z",
   "stories": [
+    {
+      "story_id": "wt-e35490f299667146",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e35490f299667146-bb4d6c18d6e652ac-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e35490f299667146-682db3304ce1856b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e35490f299667146-f5f8d854418cd75a-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e35490f299667146-50bf79e9b275819f-source.png",
+          "alt_text": "Illustration von Rechenzentrum, Stromnetz und Investitionsströmen nach Deutschland."
+        }
+      },
+      "slug": "energie-und-ki-in-deutschland-emirate-wollen-geld-regnen-lassen-667146",
+      "title": "VAE kündigen 40 Milliarden Euro zusätzliche Investitionen in Deutschland an",
+      "source_summary": "Die Vereinigten Arabischen Emirate haben bei einem Staatsbesuch zusätzliche Investitionen von 40 Milliarden Euro in Deutschland angekündigt. Die gebundene taz-Quelle nennt Energieversorgung, Lieferketten und digitale Infrastruktur; vorgesehen sind unter anderem moderne Rechenzentren mit rund einem Gigawatt Kapazität. Außerdem berichtet sie über 29 Vereinbarungen zwischen Unternehmen beider Länder mit einem Gesamtvolumen von mehr als 9,36 Milliarden Euro.\n\nDie gemeinsame Erklärung der Bundesregierung bestätigt das 40-Milliarden-Euro-Paket, die geplante Rechenzentrumskapazität und die 29 Unternehmensvereinbarungen. Deutschland und die VAE wollen zugleich die Kooperation bei LNG, erneuerbaren Energien und Wasserstoff vertiefen. Offen sind die tatsächlichen Mittelabflüsse, konkrete Standorte, die Energieversorgung der Rechenzentren, die Aufteilung des Pakets auf Technologien sowie mögliche Eigentums- und Kontrollrechte.",
+      "summary": "Die VAE kündigen zusätzliche Investitionen von 40 Milliarden Euro in Deutschland an, vor allem für Digital-, Energie- und Lieferketteninfrastruktur. Das Potenzial ist gemischt: Investitionschancen stehen Strombedarf, möglichen LNG-Lock-ins und offenen Governance-Fragen gegenüber.",
+      "detail_summary": "Die angekündigten 40 Milliarden Euro können neue Digital-, Energie- und Lieferketteninfrastruktur ermöglichen, wenn aus den Zusagen tatsächlich zusätzliche Projekte werden. Für Menschen liegt das größte positive Potenzial in Investitionen, Aufträgen und besserer Infrastruktur; zusätzliche Rechenzentrumslast kann lokal Netze und Kosten belasten. Für den Planeten verlaufen zwei gegenläufige Hauptpfade: Erneuerbare Energien und Wasserstoff können Dekarbonisierung unterstützen, während zusätzliche LNG-Bindungen fossile Nutzung verlängern können. Für Demokratie und Resilienz ist entscheidend, welche Eigentums- und Kontrollrechte in strategischer Infrastruktur entstehen; dazu liegen bislang keine belastbaren Belege vor. Die Tragweite hängt deshalb nicht von der angekündigten Summe allein ab, sondern von Umsetzung, Energie-Mix, Netzintegration und Governance. Eine bereits eingetretene Gesamtwirkung lässt sich aus der Ankündigung nicht ableiten.",
+      "why_relevant": "Das angekündigte Volumen und der Infrastrukturbezug können Energie-, Digital- und Wirtschaftsstrukturen über Jahre prägen; die tatsächliche Wirkung hängt von Umsetzung und Projektmix ab.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Die VAE kündigen zusätzliche Investitionen von 40 Milliarden Euro in Deutschland an; die Kooperation umfasst digitale Infrastruktur, Energie und Lieferketten.",
+        "evaluation_target": {
+          "label": "Umsetzung des angekündigten VAE-Investitionspakets und der vertieften Energie- und Digitalinfrastrukturkooperation",
+          "type": "development"
+        },
+        "baseline": "Bestehende deutsch-emiratische Wirtschafts- und Energiekooperation ohne das neu angekündigte 40-Milliarden-Euro-Paket und die damit verbundenen zusätzlichen Projekte.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne dieses angekündigte VAE-Paket würden die spezifisch aus diesem Paket angekündigten zusätzlichen VAE-Investitions- und Kooperationsvorhaben nicht daraus entstehen. Ob andere Investoren oder Projekte sie ersetzen würden, ist aus den gebundenen Quellen nicht ableitbar.",
+        "reference_frame": [
+          "wirtschaftliche Teilhabe und Beschäftigung",
+          "bezahlbare und resiliente Energieversorgung",
+          "Klimaschutz und fossile Lock-ins",
+          "strategische Autonomie und demokratische Korrekturfähigkeit"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Investitions- und Infrastrukturvorhaben können bei tatsächlicher Umsetzung wirtschaftliche Chancen schaffen; Beschäftigungs-, Produktivitäts-, Stromkosten- und Verteilungseffekte sind in den gebundenen Quellen nicht als Outcome belegt und werden als getrennte Modellhypothesen geführt.",
+            "planet": "Die Energiekooperation nennt LNG, Erneuerbare und Wasserstoff. Die Richtung der jeweiligen bedingten Pfade ist klar, aber zusätzliche Emissionen, vermiedene Emissionen, Volumina und Laufzeiten sind nicht belegt; beide Seiten bleiben ex-ante Modellhypothesen.",
+            "democracy": "Strategische Investitionen werden als zwei getrennte bedingte Pfade modelliert: positive Resilienz/Diversifizierung bei wirksamer Prüfung und Governance versus negative Abhängigkeit/Kontrollverlust bei kontrollrelevanten Rechten oder langfristigen Hebeln. Keine politische Einflussnahme wird aus der Ankündigung abgeleitet."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Angekündigt sind zusätzliche VAE-Investitionen und eine vertiefte Digital-, Energie- und Lieferkettenkooperation; dies ist noch kein realisierter Folgeeffekt.",
+          "second_order": "Nur bei Umsetzung können sich Infrastrukturkapazitäten, Stromnachfrage, Energiebeziehungen, Aufträge und Kontrollstrukturen verändern.",
+          "third_order": "Erst aus dauerhaft realisierten Projekten könnten längerfristig Wettbewerbsfähigkeit, Dekarbonisierung, fossile Bindungen oder strategische Korrigierbarkeit beeinflusst werden.",
+          "enablement": [],
+          "counter_evidence": [
+            "40 Milliarden Euro sind eine Ankündigung, kein bereits vollständiger Mittelabfluss.",
+            "Das Energiepaket umfasst fossile und erneuerbare Pfade; eine einheitliche Klimarichtung ist nicht belegt.",
+            "Konkrete Eigentums- und Kontrollrechte der geplanten Projekte sind offen.",
+            "Die gebundenen Quellen belegen keine politischen Konditionen, konkreten Kontrollrechte oder bereits eingetretene Veränderung demokratischer Korrigierbarkeit."
+          ],
+          "source_independence": "Die drei research-bundesregierung-vae-* IDs stammen aus derselben gemeinsamen Regierungserklärung und zählen daher als eine Primärquellenherkunft. Die taz ist die gebundene journalistische Ausgangsquelle; Deutschlandfunk bestätigt unabhängig Teile des Ereigniskerns (Energieprojekte, Rechenzentren, Lieferketten), nicht jedoch alle Detailzahlen und keine der modellierten Wirkmechanismen.",
+          "institutional_status": "Politische gemeinsame Erklärung und Investitionsankündigung; keine vollständige Umsetzung, keine Mittelabflussstatistik und keine belegten projektbezogenen Eigentums- oder Kontrollrechte."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "dominance": "dominant_positive",
+            "direction": "positive",
+            "magnitude": 3,
+            "evidence": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Investitionen können Beschäftigung, Infrastruktur und industrielle Kapazitäten stärken",
+                "mechanism": "Zusätzlich realisiertes Kapital für digitale Infrastruktur, Energie und Lieferketten kann Aufträge, Kapazitäten und Produktivität ermöglichen.",
+                "recipients": [
+                  "Beschäftigte",
+                  "Unternehmen",
+                  "Nutzer digitaler und energetischer Infrastruktur"
+                ],
+                "magnitude": 3,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "taz-aktuell",
+                  "research-bundesregierung-vae-package"
+                ],
+                "condition": "Die angekündigten Mittel werden tatsächlich zusätzlich in Deutschland investiert und führen zu realen Projekten.",
+                "reference_space": "Deutschland, besonders Infrastruktur-, Energie- und Technologiesektoren",
+                "time_horizon": "mehrere Jahre",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ein materieller Teil der angekündigten Investitionen wird zusätzlich realisiert und erzeugt reale Nachfrage nach Infrastrukturleistungen; diese Annahme ist nicht als eingetretener Effekt belegt.",
+                "source_support": "taz und gemeinsame Regierungserklärung belegen das angekündigte Investitionspaket und seine Infrastrukturfelder. Sie belegen keine Beschäftigungs-, Produktivitäts- oder Versorgungseffekte und keinen kausalen Wirkmechanismus hierfür.",
+                "limitations": "Umsetzungsquote, Zusätzlichkeit, sektorale Verteilung, Verdrängung, Beschäftigungsintensität und Produktivitätseffekte sind offen; deshalb ist die Realisierungswahrscheinlichkeit nicht belastbar einzuordnen.",
+                "first_order": "Investitionszusagen werden in konkrete Projekte und Aufträge überführt.",
+                "second_order": "Zusätzliche Nachfrage nach Bau-, IT-, Energie- und Zulieferleistungen kann Beschäftigung und Kapazitäten stärken.",
+                "third_order": "Bei erfolgreicher Umsetzung können Standort- und Versorgungsbedingungen langfristig verbessert werden.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Bandbreite beschreibt die bedingte Tragweite bei tatsächlicher Umsetzung des großen, mehrere Sektoren betreffenden Pakets; sie ist keine Aussage über Eintrittswahrscheinlichkeit."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der unabhängige zweite Quellenpass bestätigt Ereignis und Infrastrukturbezug, findet in den gebundenen Quellen aber keinen eigenständigen Mechanismus- oder Outcome-Beleg für Beschäftigung oder Produktivität. Der Pfad bleibt low-evidence, ex ante und likelihood=unknown.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Das angekündigte Paket betrifft mehrere Infrastruktur- und Wirtschaftsbereiche in Deutschland.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Bei tatsächlicher Umsetzung können Investitionen und Aufträge spürbare sektorale Veränderungen auslösen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Infrastrukturinvestitionen wirken typischerweise über mehrere Jahre; konkrete Laufzeiten sind noch offen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Investitions- und Infrastrukturentscheidungen sind mit Aufwand veränderbar, aber nicht vollständig kurzfristig reversibel.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Chancen und Belastungen können Branchen, Beschäftigte und Regionen unterschiedlich treffen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Digital-, Energie- und Lieferketteninfrastruktur wirken über mehrere gekoppelte Wirtschaftsbereiche.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Aus der Investitionsankündigung selbst ist keine konkrete schwere Schutzgrenzverletzung belegt.",
+                  "reference_frame": "wirtschaftliche Teilhabe, Beschäftigung und Versorgung",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Zusätzliche Rechenzentren können Stromsysteme und lokale Kosten belasten",
+                "mechanism": "Neue Rechenzentrumskapazität erhöht bei Betrieb die elektrische Last; ohne zusätzliche Erzeugung, Netze und Flexibilität können Engpässe oder Mehrkosten entstehen.",
+                "recipients": [
+                  "Stromverbraucher",
+                  "Netzbetreiber",
+                  "Standortkommunen"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "research-bundesregierung-vae-datacentres"
+                ],
+                "condition": "Die angekündigten Rechenzentren werden gebaut und die zusätzliche Last wird nicht vollständig durch Erzeugung, Netze und Flexibilität abgefedert.",
+                "reference_space": "deutsche Stromsysteme an den künftigen Rechenzentrumsstandorten",
+                "time_horizon": "mehrere Jahre",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Bei tatsächlichem Bau und Betrieb würde die geplante Kapazität erhebliche zusätzliche elektrische Last erzeugen; Standorte und Versorgungskonzepte sind noch unbekannt.",
+                "source_support": "Die gemeinsame Erklärung belegt geplante Rechenzentrumskapazität von etwa 1 Gigawatt. Sie belegt weder Stromverbrauch, Standorte noch Netzengpässe oder Mehrkosten.",
+                "limitations": "Standorte, Lastprofile, Auslastung, Effizienz, Strombeschaffung, zusätzliche Erzeugung, Netzanschlüsse und Flexibilitätsoptionen sind offen; deshalb bleibt auch die Eintrittswahrscheinlichkeit unbekannt.",
+                "first_order": "Bau und Betrieb schaffen zusätzliche elektrische Last.",
+                "second_order": "Erzeugung, Netze und Flexibilität bestimmen, ob Engpässe oder Kosten entstehen.",
+                "third_order": "Bei dauerhaft hoher Zusatzlast können regionale Kosten- und Verteilungswirkungen entstehen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Mechanismus ist plausibel, aber ohne Standort- und Energiekonzept nur konservativ einzuordnen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der zweite Quellenpass bestätigt nur die geplante Kapazität. Ein gebundener Netz- oder Stromsystembeleg für konkrete Engpässe beziehungsweise Kosten liegt nicht vor; der Pfad bleibt Modellhypothese mit niedriger Evidenz.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die Wirkung wäre auf die betroffenen Netzregionen konzentriert, kann aber mehrere Standorte betreffen.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-datacentres"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die konkrete Belastung hängt von Lastprofil, Erzeugung und Netzintegration ab.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-datacentres"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Rechenzentren werden bei Umsetzung über Jahre betrieben.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-datacentres"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Standort- und Netzentscheidungen sind langfristig, aber technisch anpassbar.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-datacentres"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Kosten und Engpässe können Haushalte, Unternehmen und Regionen unterschiedlich treffen.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-datacentres"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft Stromnetze, Erzeugung und lokale Infrastruktur.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-datacentres"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Aus der Investitionsankündigung selbst ist keine konkrete schwere Schutzgrenzverletzung belegt.",
+                  "reference_frame": "bezahlbare und verlässliche Energieversorgung",
+                  "source_ids": [
+                    "research-bundesregierung-vae-datacentres"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "rationale": "Das Investitionsvolumen und die Infrastrukturfelder sind belegt. Beschäftigungs-, Produktivitäts- und Versorgungswirkungen sind jedoch keine quellenbelegten Outcomes oder Mechanismen. Der positive Hauptpfad bleibt deshalb eine bedingte Modellhypothese; der Rechenzentrums-Lastpfad ist ein ebenfalls bedingtes Nebenrisiko.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der negative Pfad ist ein bedingtes Nebenrisiko und nicht gleichrangig mit dem Investitionshauptpfad."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Investitionen können Beschäftigung, Infrastruktur und industrielle Kapazitäten stärken",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Investitionen können Beschäftigung, Infrastruktur und industrielle Kapazitäten stärken",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "dominance": "balanced",
+            "direction": "mixed",
+            "magnitude": 3,
+            "evidence": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Vertiefte LNG-Kooperation kann fossile Bindungen und Emissionen verlängern",
+                "mechanism": "Neue oder verlängerte LNG-Liefer- und Infrastrukturbeziehungen können fossile Gasnutzung länger wirtschaftlich absichern.",
+                "recipients": [
+                  "Klima",
+                  "Ökosysteme",
+                  "künftige Generationen"
+                ],
+                "magnitude": 3,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "research-bundesregierung-vae-energy"
+                ],
+                "condition": "Die vertiefte LNG-Kooperation würde in zusätzliche oder länger laufende fossile Liefer- oder Infrastrukturbindungen umgesetzt.",
+                "reference_space": "Deutschland und vorgelagerte Gaslieferketten",
+                "time_horizon": "mehrere Jahre bis Jahrzehnte",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die angekündigte Kooperation materialisiert sich in zusätzlichen oder verlängerten fossilen Verträgen oder Anlagen.",
+                "source_support": "Die gemeinsame Erklärung belegt LNG als Teil einer ausgeweiteten langfristigen Energiekooperation. Sie belegt keine zusätzlichen LNG-Mengen, Laufzeiten, neue Infrastruktur, Emissionen oder einen tatsächlich eintretenden Lock-in.",
+                "limitations": "Zusätzlichkeit, Mengen, Vertragslaufzeiten, Infrastruktur, Substitution anderer Energieträger und Verhältnis zu erneuerbaren Projekten sind offen; ein konkreter Lock-in ist nicht festgestellt.",
+                "first_order": "Kooperation erleichtert potenziell LNG-Lieferungen und Investitionen.",
+                "second_order": "Langfristige Verträge oder Infrastruktur können fossile Nutzung wirtschaftlich stabilisieren.",
+                "third_order": "Bei langen Bindungen kann der Dekarbonisierungspfad verzögert werden.",
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Bandbreite beschreibt ausschließlich die mögliche Tragweite, falls zusätzliche längerfristige fossile Bindungen tatsächlich entstehen; konkrete Mengen und Laufzeiten fehlen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der unabhängige zweite Quellenpass findet in der gebundenen Fassung keinen Mechanismus- oder Mengenbeleg, der einen LNG-Lock-in als gestützten Mechanismus rechtfertigt. Der bedingte negative Pfad bleibt low-evidence, model_hypothesis und likelihood=unknown.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "LNG-Lieferketten können nationale Energieversorgung und vorgelagerte Emissionen betreffen.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-energy"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Fossile Bindungen können bei zusätzlicher Nutzung relevante Emissionswirkungen haben; konkrete Mengen fehlen.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-energy"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Langfristige Energiekooperation kann über viele Jahre wirken.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-energy"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 3,
+                    "rationale": "Verträge und Infrastruktur können Pfadabhängigkeiten erzeugen, bleiben aber politisch und technisch veränderbar.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-energy"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Klimafolgen verteilen sich räumlich und sozial ungleich; objektspezifische Betroffenheit ist nicht belegt.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-energy"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 4,
+                    "rationale": "Der Pfad betrifft Energiesystem, Importabhängigkeit und Dekarbonisierung.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-energy"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Aus der Investitionsankündigung selbst ist keine konkrete schwere Schutzgrenzverletzung belegt.",
+                  "reference_frame": "Klimaschutz und Vermeidung fossiler Lock-ins",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 20,
+                  "divisor": 6,
+                  "raw": 3.3333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              },
+              {
+                "direction": "positive",
+                "label": "Erneuerbare Energien und Wasserstoff können Dekarbonisierung unterstützen",
+                "mechanism": "Zusätzliche Investitionen und Kooperation bei erneuerbaren Energien und Wasserstoff können emissionsärmere Energie- und Industriekapazitäten ermöglichen.",
+                "recipients": [
+                  "Klima",
+                  "Energiesystem",
+                  "Industrie"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "research-bundesregierung-vae-energy"
+                ],
+                "condition": "Die angekündigte Kooperation wird in zusätzliche, tatsächlich emissionsarme Projekte umgesetzt.",
+                "reference_space": "Deutschland und verbundene Energie-Lieferketten",
+                "time_horizon": "mehrere Jahre",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Projekte sind zusätzlich und erfüllen belastbare Nachhaltigkeitskriterien; Herkunft und Emissionsintensität des Wasserstoffs sind noch offen.",
+                "source_support": "Die gemeinsame Erklärung belegt Erneuerbare und Wasserstoff als Felder der ausgeweiteten Kooperation. Sie belegt keine zusätzlichen Projektvolumina, Herkunft des Wasserstoffs oder vermiedene Emissionen.",
+                "limitations": "Projektvolumen, Zusätzlichkeit, Wasserstoffherkunft, Emissionsintensität und Substitution fossiler Energie sind offen; eine tatsächliche Dekarbonisierung ist nicht beobachtet.",
+                "first_order": "Investitionen schaffen neue Erzeugungs- oder Importmöglichkeiten.",
+                "second_order": "Bei niedriger Emissionsintensität können fossile Energieträger ersetzt werden.",
+                "third_order": "Langfristig kann dies Industrie- und Energiepfade dekarbonisieren, sofern Netze und Nachfrage passen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Positives Potenzial ist plausibel, aber konkrete Projekte und Emissionsqualität sind noch offen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der zweite Quellenpass bestätigt die Kooperationsfelder, aber keinen Outcome- oder Mechanismusbeleg für konkrete Emissionsminderung. Der positive Pfad bleibt model_hypothesis, low-evidence und likelihood=unknown.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Zusätzliche Projekte könnten mehrere Energie- und Industriesektoren in Deutschland betreffen.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-energy"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der konkrete Emissionsnutzen hängt von Zusätzlichkeit, Technologie und Herkunft ab.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-energy"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Energieprojekte wirken bei Umsetzung über mehrere Jahre.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-energy"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Investitionsentscheidungen schaffen Pfade, sind aber technisch und politisch anpassbar.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-energy"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Direkte Verteilungswirkungen sind aus der Ankündigung nur schwach ableitbar.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-energy"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad verbindet Energieversorgung, Industrie und Dekarbonisierung.",
+                    "source_ids": [
+                      "research-bundesregierung-vae-energy"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Aus der Investitionsankündigung selbst ist keine konkrete schwere Schutzgrenzverletzung belegt.",
+                  "reference_frame": "Klimaschutz und nachhaltige Energieversorgung",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "LNG, erneuerbare Energien und Wasserstoff sind als Kooperationsfelder belegt. Zusätzliche fossile Bindungen, Emissionen oder tatsächliche Dekarbonisierung sind jedoch nicht belegt. Die gegenläufigen Richtungen bleiben bedingt klar; beide Hauptpfade sind Modellhypothesen mit niedriger Evidenz und unbekannter Realisierung.",
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Beide Pfade gehören zum selben Kooperationspaket; der negative Pfad ist mit Stufe 3 nur eine Stufe stärker als der positive Pfad."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Vertiefte LNG-Kooperation kann fossile Bindungen und Emissionen verlängern",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Vertiefte LNG-Kooperation kann fossile Bindungen und Emissionen verlängern",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "dominance": "balanced",
+            "direction": "mixed",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Diversifizierte Investitionen können Resilienz und strategische Handlungsfähigkeit stärken",
+                "mechanism": "Zusätzliches Kapital für Energie- und Digitalinfrastruktur kann Finanzierung und Bezugsbeziehungen verbreitern. Wenn Projekte diversifiziert bleiben und wirksamer Investitionsprüfung sowie Corporate Governance unterliegen, kann dies Abhängigkeiten reduzieren und institutionelle Handlungsfähigkeit stützen.",
+                "recipients": [
+                  "öffentliche Institutionen",
+                  "kritische Infrastrukturbetreiber",
+                  "Bevölkerung"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "taz-aktuell",
+                  "research-bundesregierung-vae-package"
+                ],
+                "condition": "Die Projekte verbreitern tatsächlich Finanzierungs- oder Versorgungsoptionen, ohne kontrollrelevante Abhängigkeiten zu erzeugen, und bleiben unter wirksamer deutscher beziehungsweise europäischer Investitionsprüfung und Governance.",
+                "reference_space": "Deutschland, insbesondere strategische Energie- und Digitalinfrastruktur",
+                "time_horizon": "mehrere Jahre",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Konkrete Eigentums- und Kontrollstrukturen sind noch nicht bekannt; der positive Pfad ist deshalb ausdrücklich bedingt und keine beobachtete Wirkung.",
+                "source_support": "Die gebundenen Quellen belegen zusätzliches Investitionsvolumen und strategische Energie-/Digitalinfrastruktur. Sie belegen keine bereits eingetretene Resilienzsteigerung; diese ist ein bedingter Wirkpfad.",
+                "limitations": "Nicht bekannt sind Projektstandorte, Eigentumsquoten, Vetorechte, Vertragsbindungen und die tatsächliche Diversifizierungswirkung.",
+                "first_order": "Zusätzliche Investitionsoptionen können Kapital- und Infrastrukturspielräume verbreitern.",
+                "second_order": "Investitionsprüfung, Diversifizierung und Corporate Governance können Konzentrations- und Kontrollrisiken begrenzen.",
+                "third_order": "Bei dauerhaft diversifizierter Struktur kann die strategische Korrigierbarkeit gegenüber einzelnen Liefer- oder Kapitalbeziehungen steigen; dies ist noch nicht beobachtet.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Ohne konkrete Projekt- und Kontrollstruktur reicht das plausible Potenzial von geringem Resilienzeffekt bis zu sektoraler strategischer Bedeutung."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der unabhängige Quellenpass bestätigt Investitions- und Infrastrukturbezug, aber keine tatsächliche Diversifizierung oder Resilienzsteigerung. Die positive Richtung gilt nur unter der ausdrücklich genannten Bedingung.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mögliche Resilienzeffekte betreffen vor allem strategische Projekte, Betreiber und zuständige Institutionen; eine gesamtgesellschaftliche direkte Wirkung ist nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ohne konkrete Projektstruktur ist eine mögliche Stärkung der Handlungsfähigkeit begrenzt, aber bei strategischer Infrastruktur relevant.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Infrastruktur- und Finanzierungsbeziehungen können über mehrere Jahre bestehen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Projekt- und Eigentumsstrukturen sind veränderbar, aber regelmäßig nur mit Zeit und Kosten.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere Last- oder Schutzkonzentration auf vulnerable Gruppen ist für diesen positiven Governance-Pfad nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad kann Governance und strategische Resilienz einzelner Infrastrukturbereiche berühren, bleibt aber von konkreter Ausgestaltung abhängig.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Aus der Investitionsankündigung selbst ist keine konkrete schwere Schutzgrenzverletzung belegt.",
+                  "reference_frame": "demokratische Korrekturfähigkeit und strategische Autonomie",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "direction": "negative",
+                "label": "Kontrollrechte in strategischer Infrastruktur können neue Abhängigkeiten und geringere Korrigierbarkeit schaffen",
+                "mechanism": "Falls die angekündigten Investitionen kontrollrelevante Eigentumsanteile, Vetorechte oder langfristige Vertragshebel in kritischer Energie- oder Digitalinfrastruktur schaffen, können neue Abhängigkeiten entstehen und spätere politische oder regulatorische Korrekturen kostspieliger werden.",
+                "recipients": [
+                  "öffentliche Institutionen",
+                  "kritische Infrastrukturbetreiber",
+                  "Bevölkerung"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "taz-aktuell",
+                  "research-bundesregierung-vae-package"
+                ],
+                "condition": "Kontrollrelevante Eigentums-, Vetorechte oder langfristige Vertragsbindungen entstehen tatsächlich und sind nicht ausreichend diversifiziert oder durch Investitionsprüfung und Governance begrenzt.",
+                "reference_space": "Deutschland, insbesondere strategische Energie- und Digitalinfrastruktur",
+                "time_horizon": "mehrere Jahre",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Solche Kontrollrechte oder Einflussbedingungen sind in den gebundenen Quellen nicht belegt; der negative Pfad ist daher eine bedingte Modellhypothese und keine Unterstellung politischer Einflussnahme.",
+                "source_support": "Die Quellen belegen das große Investitionsvolumen und strategische Infrastrukturbezüge. Sie belegen keine politischen Konditionen, Vetorechte oder konkrete Kontrollmacht.",
+                "limitations": "Eigentumsquoten, Vetorechte, Investitionsprüfungen, Sicherheitsauflagen und Vertragslaufzeiten sind offen.",
+                "first_order": "Kontrollrelevante Beteiligungen oder Vertragsrechte könnten Entscheidungsabhängigkeiten bei einzelnen Infrastrukturprojekten schaffen.",
+                "second_order": "Hohe Konzentration oder schwer lösbare Vertragsbindungen könnten regulatorische und betriebliche Wechseloptionen einschränken.",
+                "third_order": "Nur bei materieller Konzentration in strategischen Bereichen könnte demokratische Korrekturfähigkeit beziehungsweise strategische Autonomie strukturell sinken; dafür gibt es bislang keinen Zustandsbeleg.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Ohne konkrete Kontrollrechte bleibt das Risiko zwischen geringem Governance-Effekt und sektoraler Abhängigkeit; eine stärkere Systemwirkung ist nicht belegt."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der unabhängige Quellenpass findet keine belegten Vetorechte, politischen Konditionen oder konkrete Kontrollmacht. Der negative Pfad ist ausschließlich eine bedingte Governance-Hypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mögliche Abhängigkeiten wären zunächst auf strategische Projekte, Betreiber und zuständige Institutionen konzentriert.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ohne bekannte Kontrollrechte ist die Intensität eines möglichen Abhängigkeitsverlusts nur begrenzt anzusetzen.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Eigentums- und langfristige Vertragsbeziehungen können über Jahre fortwirken.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Kontroll- und Vertragsstrukturen sind grundsätzlich veränderbar, können aber nur mit erheblichem Zeit- und Kostenaufwand gelöst werden.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere Betroffenheit vulnerabler Gruppen ist nicht belegt; betroffen wäre primär institutionelle Korrigierbarkeit.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Bei strategischer Infrastruktur kann ein begrenzter struktureller Governance-Pfad entstehen; konkrete institutionelle Kontrolle ist aber nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell",
+                      "research-bundesregierung-vae-package"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Aus der Investitionsankündigung selbst ist keine konkrete schwere Schutzgrenzverletzung belegt.",
+                  "reference_frame": "demokratische Korrekturfähigkeit und strategische Autonomie",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Zwei bedingte, gegenläufige Governance-Pfade bleiben plausibel: zusätzliche Optionen können bei echter Diversifizierung Resilienz stärken; kontrollrelevante Rechte oder schwer lösbare Bindungen können Korrigierbarkeit schwächen. Die Quellen belegen weder Diversifizierungswirkung noch Kontrollrechte, daher bleiben beide Pfade low-evidence, likelihood=unknown und balanced.",
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Beide bedingten Hauptpfade haben dieselbe modellierte Tragweite 2 und niedrige Evidenz. Da weder konkrete Diversifizierungswirkung noch Kontrollrechte belegt sind, ist kein Pfad dominant; die Dimension ist mixed/balanced."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Diversifizierte Investitionen können Resilienz und strategische Handlungsfähigkeit stärken",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Diversifizierte Investitionen können Resilienz und strategische Handlungsfähigkeit stärken",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "taz-aktuell",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Journalistische Ausgangsquelle für Investitionsankündigung, Infrastrukturfelder und Kontext; kein Mechanismusbeleg für die modellierten Folgen."
+          },
+          {
+            "source_id": "research-bundesregierung-vae-package",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Gemeinsame Regierungserklärung bestätigt das angekündigte Investitionspaket; gleiche Primärquellenherkunft wie die beiden weiteren BPA-IDs."
+          },
+          {
+            "source_id": "research-bundesregierung-vae-datacentres",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Dieselbe Regierungserklärung bestätigt geplante digitale Infrastruktur und etwa 1 Gigawatt Rechenzentrumskapazität; kein Netz- oder Stromkosten-Outcome."
+          },
+          {
+            "source_id": "research-bundesregierung-vae-energy",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Dieselbe Regierungserklärung nennt LNG, Erneuerbare und Wasserstoff als Kooperationsfelder; keine zusätzlichen Mengen oder Emissionsfolgen."
+          },
+          {
+            "source_id": "research-deutschlandfunk-vae-investitionen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Unabhängige journalistische Bestätigung für Teile des Ereigniskerns: Energieprojekte, Rechenzentren und Lieferketten; keine Bestätigung der modellierten Wirkmechanismen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/joint-declaration-on-the-occasion-of-the-state-visit-of-the-president-of-the-united-arab-emirates-to-the-federal-republic-of-germany-2452242",
+          "title": "Joint Declaration on the occasion of the State Visit of the President of the United Arab Emirates to the Federal Republic of Germany",
+          "publisher": "Presse- und Informationsamt der Bundesregierung (BPA)",
+          "source_id": "research-bundesregierung-vae-package",
+          "source_function": "event"
+        },
+        {
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/joint-declaration-on-the-occasion-of-the-state-visit-of-the-president-of-the-united-arab-emirates-to-the-federal-republic-of-germany-2452242",
+          "title": "Joint Declaration on the occasion of the State Visit of the President of the United Arab Emirates to the Federal Republic of Germany",
+          "publisher": "Presse- und Informationsamt der Bundesregierung (BPA)",
+          "source_id": "research-bundesregierung-vae-datacentres",
+          "source_function": "event"
+        },
+        {
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/joint-declaration-on-the-occasion-of-the-state-visit-of-the-president-of-the-united-arab-emirates-to-the-federal-republic-of-germany-2452242",
+          "title": "Joint Declaration on the occasion of the State Visit of the President of the United Arab Emirates to the Federal Republic of Germany",
+          "publisher": "Presse- und Informationsamt der Bundesregierung (BPA)",
+          "source_id": "research-bundesregierung-vae-energy",
+          "source_function": "event"
+        },
+        {
+          "url": "https://www.deutschlandfunk.de/vereinigte-arabische-emirate-kuendigen-weitere-milliarden-investitionen-in-deutschland-an-100.html",
+          "title": "Vereinigte Arabische Emirate kündigen weitere Milliarden-Investitionen in Deutschland an",
+          "publisher": "Deutschlandfunk",
+          "source_id": "research-deutschlandfunk-vae-investitionen",
+          "source_function": "event"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "dominance": "dominant_positive",
+          "direction": "positive",
+          "magnitude": 3,
+          "evidence": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Investitionen können Beschäftigung, Infrastruktur und industrielle Kapazitäten stärken",
+              "mechanism": "Zusätzlich realisiertes Kapital für digitale Infrastruktur, Energie und Lieferketten kann Aufträge, Kapazitäten und Produktivität ermöglichen.",
+              "recipients": [
+                "Beschäftigte",
+                "Unternehmen",
+                "Nutzer digitaler und energetischer Infrastruktur"
+              ],
+              "magnitude": 3,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "taz-aktuell",
+                "research-bundesregierung-vae-package"
+              ],
+              "condition": "Die angekündigten Mittel werden tatsächlich zusätzlich in Deutschland investiert und führen zu realen Projekten.",
+              "reference_space": "Deutschland, besonders Infrastruktur-, Energie- und Technologiesektoren",
+              "time_horizon": "mehrere Jahre",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ein materieller Teil der angekündigten Investitionen wird zusätzlich realisiert und erzeugt reale Nachfrage nach Infrastrukturleistungen; diese Annahme ist nicht als eingetretener Effekt belegt.",
+              "source_support": "taz und gemeinsame Regierungserklärung belegen das angekündigte Investitionspaket und seine Infrastrukturfelder. Sie belegen keine Beschäftigungs-, Produktivitäts- oder Versorgungseffekte und keinen kausalen Wirkmechanismus hierfür.",
+              "limitations": "Umsetzungsquote, Zusätzlichkeit, sektorale Verteilung, Verdrängung, Beschäftigungsintensität und Produktivitätseffekte sind offen; deshalb ist die Realisierungswahrscheinlichkeit nicht belastbar einzuordnen.",
+              "first_order": "Investitionszusagen werden in konkrete Projekte und Aufträge überführt.",
+              "second_order": "Zusätzliche Nachfrage nach Bau-, IT-, Energie- und Zulieferleistungen kann Beschäftigung und Kapazitäten stärken.",
+              "third_order": "Bei erfolgreicher Umsetzung können Standort- und Versorgungsbedingungen langfristig verbessert werden.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Bandbreite beschreibt die bedingte Tragweite bei tatsächlicher Umsetzung des großen, mehrere Sektoren betreffenden Pakets; sie ist keine Aussage über Eintrittswahrscheinlichkeit."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der unabhängige zweite Quellenpass bestätigt Ereignis und Infrastrukturbezug, findet in den gebundenen Quellen aber keinen eigenständigen Mechanismus- oder Outcome-Beleg für Beschäftigung oder Produktivität. Der Pfad bleibt low-evidence, ex ante und likelihood=unknown.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Das angekündigte Paket betrifft mehrere Infrastruktur- und Wirtschaftsbereiche in Deutschland.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Bei tatsächlicher Umsetzung können Investitionen und Aufträge spürbare sektorale Veränderungen auslösen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Infrastrukturinvestitionen wirken typischerweise über mehrere Jahre; konkrete Laufzeiten sind noch offen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Investitions- und Infrastrukturentscheidungen sind mit Aufwand veränderbar, aber nicht vollständig kurzfristig reversibel.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Chancen und Belastungen können Branchen, Beschäftigte und Regionen unterschiedlich treffen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Digital-, Energie- und Lieferketteninfrastruktur wirken über mehrere gekoppelte Wirtschaftsbereiche.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Aus der Investitionsankündigung selbst ist keine konkrete schwere Schutzgrenzverletzung belegt.",
+                "reference_frame": "wirtschaftliche Teilhabe, Beschäftigung und Versorgung",
+                "source_ids": [
+                  "taz-aktuell",
+                  "research-bundesregierung-vae-package"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Zusätzliche Rechenzentren können Stromsysteme und lokale Kosten belasten",
+              "mechanism": "Neue Rechenzentrumskapazität erhöht bei Betrieb die elektrische Last; ohne zusätzliche Erzeugung, Netze und Flexibilität können Engpässe oder Mehrkosten entstehen.",
+              "recipients": [
+                "Stromverbraucher",
+                "Netzbetreiber",
+                "Standortkommunen"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "unknown",
+              "source_ids": [
+                "research-bundesregierung-vae-datacentres"
+              ],
+              "condition": "Die angekündigten Rechenzentren werden gebaut und die zusätzliche Last wird nicht vollständig durch Erzeugung, Netze und Flexibilität abgefedert.",
+              "reference_space": "deutsche Stromsysteme an den künftigen Rechenzentrumsstandorten",
+              "time_horizon": "mehrere Jahre",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Bei tatsächlichem Bau und Betrieb würde die geplante Kapazität erhebliche zusätzliche elektrische Last erzeugen; Standorte und Versorgungskonzepte sind noch unbekannt.",
+              "source_support": "Die gemeinsame Erklärung belegt geplante Rechenzentrumskapazität von etwa 1 Gigawatt. Sie belegt weder Stromverbrauch, Standorte noch Netzengpässe oder Mehrkosten.",
+              "limitations": "Standorte, Lastprofile, Auslastung, Effizienz, Strombeschaffung, zusätzliche Erzeugung, Netzanschlüsse und Flexibilitätsoptionen sind offen; deshalb bleibt auch die Eintrittswahrscheinlichkeit unbekannt.",
+              "first_order": "Bau und Betrieb schaffen zusätzliche elektrische Last.",
+              "second_order": "Erzeugung, Netze und Flexibilität bestimmen, ob Engpässe oder Kosten entstehen.",
+              "third_order": "Bei dauerhaft hoher Zusatzlast können regionale Kosten- und Verteilungswirkungen entstehen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Mechanismus ist plausibel, aber ohne Standort- und Energiekonzept nur konservativ einzuordnen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der zweite Quellenpass bestätigt nur die geplante Kapazität. Ein gebundener Netz- oder Stromsystembeleg für konkrete Engpässe beziehungsweise Kosten liegt nicht vor; der Pfad bleibt Modellhypothese mit niedriger Evidenz.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die Wirkung wäre auf die betroffenen Netzregionen konzentriert, kann aber mehrere Standorte betreffen.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-datacentres"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die konkrete Belastung hängt von Lastprofil, Erzeugung und Netzintegration ab.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-datacentres"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Rechenzentren werden bei Umsetzung über Jahre betrieben.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-datacentres"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Standort- und Netzentscheidungen sind langfristig, aber technisch anpassbar.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-datacentres"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Kosten und Engpässe können Haushalte, Unternehmen und Regionen unterschiedlich treffen.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-datacentres"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft Stromnetze, Erzeugung und lokale Infrastruktur.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-datacentres"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Aus der Investitionsankündigung selbst ist keine konkrete schwere Schutzgrenzverletzung belegt.",
+                "reference_frame": "bezahlbare und verlässliche Energieversorgung",
+                "source_ids": [
+                  "research-bundesregierung-vae-datacentres"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "rationale": "Das Investitionsvolumen und die Infrastrukturfelder sind belegt. Beschäftigungs-, Produktivitäts- und Versorgungswirkungen sind jedoch keine quellenbelegten Outcomes oder Mechanismen. Der positive Hauptpfad bleibt deshalb eine bedingte Modellhypothese; der Rechenzentrums-Lastpfad ist ein ebenfalls bedingtes Nebenrisiko.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der negative Pfad ist ein bedingtes Nebenrisiko und nicht gleichrangig mit dem Investitionshauptpfad."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Investitionen können Beschäftigung, Infrastruktur und industrielle Kapazitäten stärken",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Investitionen können Beschäftigung, Infrastruktur und industrielle Kapazitäten stärken",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "dominance": "balanced",
+          "direction": "mixed",
+          "magnitude": 3,
+          "evidence": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Vertiefte LNG-Kooperation kann fossile Bindungen und Emissionen verlängern",
+              "mechanism": "Neue oder verlängerte LNG-Liefer- und Infrastrukturbeziehungen können fossile Gasnutzung länger wirtschaftlich absichern.",
+              "recipients": [
+                "Klima",
+                "Ökosysteme",
+                "künftige Generationen"
+              ],
+              "magnitude": 3,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "research-bundesregierung-vae-energy"
+              ],
+              "condition": "Die vertiefte LNG-Kooperation würde in zusätzliche oder länger laufende fossile Liefer- oder Infrastrukturbindungen umgesetzt.",
+              "reference_space": "Deutschland und vorgelagerte Gaslieferketten",
+              "time_horizon": "mehrere Jahre bis Jahrzehnte",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die angekündigte Kooperation materialisiert sich in zusätzlichen oder verlängerten fossilen Verträgen oder Anlagen.",
+              "source_support": "Die gemeinsame Erklärung belegt LNG als Teil einer ausgeweiteten langfristigen Energiekooperation. Sie belegt keine zusätzlichen LNG-Mengen, Laufzeiten, neue Infrastruktur, Emissionen oder einen tatsächlich eintretenden Lock-in.",
+              "limitations": "Zusätzlichkeit, Mengen, Vertragslaufzeiten, Infrastruktur, Substitution anderer Energieträger und Verhältnis zu erneuerbaren Projekten sind offen; ein konkreter Lock-in ist nicht festgestellt.",
+              "first_order": "Kooperation erleichtert potenziell LNG-Lieferungen und Investitionen.",
+              "second_order": "Langfristige Verträge oder Infrastruktur können fossile Nutzung wirtschaftlich stabilisieren.",
+              "third_order": "Bei langen Bindungen kann der Dekarbonisierungspfad verzögert werden.",
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Bandbreite beschreibt ausschließlich die mögliche Tragweite, falls zusätzliche längerfristige fossile Bindungen tatsächlich entstehen; konkrete Mengen und Laufzeiten fehlen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der unabhängige zweite Quellenpass findet in der gebundenen Fassung keinen Mechanismus- oder Mengenbeleg, der einen LNG-Lock-in als gestützten Mechanismus rechtfertigt. Der bedingte negative Pfad bleibt low-evidence, model_hypothesis und likelihood=unknown.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "LNG-Lieferketten können nationale Energieversorgung und vorgelagerte Emissionen betreffen.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Fossile Bindungen können bei zusätzlicher Nutzung relevante Emissionswirkungen haben; konkrete Mengen fehlen.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Langfristige Energiekooperation kann über viele Jahre wirken.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 3,
+                  "rationale": "Verträge und Infrastruktur können Pfadabhängigkeiten erzeugen, bleiben aber politisch und technisch veränderbar.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Klimafolgen verteilen sich räumlich und sozial ungleich; objektspezifische Betroffenheit ist nicht belegt.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ]
+                },
+                "system_depth": {
+                  "value": 4,
+                  "rationale": "Der Pfad betrifft Energiesystem, Importabhängigkeit und Dekarbonisierung.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Aus der Investitionsankündigung selbst ist keine konkrete schwere Schutzgrenzverletzung belegt.",
+                "reference_frame": "Klimaschutz und Vermeidung fossiler Lock-ins",
+                "source_ids": [
+                  "research-bundesregierung-vae-energy"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 20,
+                "divisor": 6,
+                "raw": 3.3333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            },
+            {
+              "direction": "positive",
+              "label": "Erneuerbare Energien und Wasserstoff können Dekarbonisierung unterstützen",
+              "mechanism": "Zusätzliche Investitionen und Kooperation bei erneuerbaren Energien und Wasserstoff können emissionsärmere Energie- und Industriekapazitäten ermöglichen.",
+              "recipients": [
+                "Klima",
+                "Energiesystem",
+                "Industrie"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "research-bundesregierung-vae-energy"
+              ],
+              "condition": "Die angekündigte Kooperation wird in zusätzliche, tatsächlich emissionsarme Projekte umgesetzt.",
+              "reference_space": "Deutschland und verbundene Energie-Lieferketten",
+              "time_horizon": "mehrere Jahre",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Projekte sind zusätzlich und erfüllen belastbare Nachhaltigkeitskriterien; Herkunft und Emissionsintensität des Wasserstoffs sind noch offen.",
+              "source_support": "Die gemeinsame Erklärung belegt Erneuerbare und Wasserstoff als Felder der ausgeweiteten Kooperation. Sie belegt keine zusätzlichen Projektvolumina, Herkunft des Wasserstoffs oder vermiedene Emissionen.",
+              "limitations": "Projektvolumen, Zusätzlichkeit, Wasserstoffherkunft, Emissionsintensität und Substitution fossiler Energie sind offen; eine tatsächliche Dekarbonisierung ist nicht beobachtet.",
+              "first_order": "Investitionen schaffen neue Erzeugungs- oder Importmöglichkeiten.",
+              "second_order": "Bei niedriger Emissionsintensität können fossile Energieträger ersetzt werden.",
+              "third_order": "Langfristig kann dies Industrie- und Energiepfade dekarbonisieren, sofern Netze und Nachfrage passen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Positives Potenzial ist plausibel, aber konkrete Projekte und Emissionsqualität sind noch offen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der zweite Quellenpass bestätigt die Kooperationsfelder, aber keinen Outcome- oder Mechanismusbeleg für konkrete Emissionsminderung. Der positive Pfad bleibt model_hypothesis, low-evidence und likelihood=unknown.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Zusätzliche Projekte könnten mehrere Energie- und Industriesektoren in Deutschland betreffen.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der konkrete Emissionsnutzen hängt von Zusätzlichkeit, Technologie und Herkunft ab.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Energieprojekte wirken bei Umsetzung über mehrere Jahre.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Investitionsentscheidungen schaffen Pfade, sind aber technisch und politisch anpassbar.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Direkte Verteilungswirkungen sind aus der Ankündigung nur schwach ableitbar.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad verbindet Energieversorgung, Industrie und Dekarbonisierung.",
+                  "source_ids": [
+                    "research-bundesregierung-vae-energy"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Aus der Investitionsankündigung selbst ist keine konkrete schwere Schutzgrenzverletzung belegt.",
+                "reference_frame": "Klimaschutz und nachhaltige Energieversorgung",
+                "source_ids": [
+                  "research-bundesregierung-vae-energy"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "LNG, erneuerbare Energien und Wasserstoff sind als Kooperationsfelder belegt. Zusätzliche fossile Bindungen, Emissionen oder tatsächliche Dekarbonisierung sind jedoch nicht belegt. Die gegenläufigen Richtungen bleiben bedingt klar; beide Hauptpfade sind Modellhypothesen mit niedriger Evidenz und unbekannter Realisierung.",
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Beide Pfade gehören zum selben Kooperationspaket; der negative Pfad ist mit Stufe 3 nur eine Stufe stärker als der positive Pfad."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Vertiefte LNG-Kooperation kann fossile Bindungen und Emissionen verlängern",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Vertiefte LNG-Kooperation kann fossile Bindungen und Emissionen verlängern",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "dominance": "balanced",
+          "direction": "mixed",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Diversifizierte Investitionen können Resilienz und strategische Handlungsfähigkeit stärken",
+              "mechanism": "Zusätzliches Kapital für Energie- und Digitalinfrastruktur kann Finanzierung und Bezugsbeziehungen verbreitern. Wenn Projekte diversifiziert bleiben und wirksamer Investitionsprüfung sowie Corporate Governance unterliegen, kann dies Abhängigkeiten reduzieren und institutionelle Handlungsfähigkeit stützen.",
+              "recipients": [
+                "öffentliche Institutionen",
+                "kritische Infrastrukturbetreiber",
+                "Bevölkerung"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "taz-aktuell",
+                "research-bundesregierung-vae-package"
+              ],
+              "condition": "Die Projekte verbreitern tatsächlich Finanzierungs- oder Versorgungsoptionen, ohne kontrollrelevante Abhängigkeiten zu erzeugen, und bleiben unter wirksamer deutscher beziehungsweise europäischer Investitionsprüfung und Governance.",
+              "reference_space": "Deutschland, insbesondere strategische Energie- und Digitalinfrastruktur",
+              "time_horizon": "mehrere Jahre",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Konkrete Eigentums- und Kontrollstrukturen sind noch nicht bekannt; der positive Pfad ist deshalb ausdrücklich bedingt und keine beobachtete Wirkung.",
+              "source_support": "Die gebundenen Quellen belegen zusätzliches Investitionsvolumen und strategische Energie-/Digitalinfrastruktur. Sie belegen keine bereits eingetretene Resilienzsteigerung; diese ist ein bedingter Wirkpfad.",
+              "limitations": "Nicht bekannt sind Projektstandorte, Eigentumsquoten, Vetorechte, Vertragsbindungen und die tatsächliche Diversifizierungswirkung.",
+              "first_order": "Zusätzliche Investitionsoptionen können Kapital- und Infrastrukturspielräume verbreitern.",
+              "second_order": "Investitionsprüfung, Diversifizierung und Corporate Governance können Konzentrations- und Kontrollrisiken begrenzen.",
+              "third_order": "Bei dauerhaft diversifizierter Struktur kann die strategische Korrigierbarkeit gegenüber einzelnen Liefer- oder Kapitalbeziehungen steigen; dies ist noch nicht beobachtet.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Ohne konkrete Projekt- und Kontrollstruktur reicht das plausible Potenzial von geringem Resilienzeffekt bis zu sektoraler strategischer Bedeutung."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der unabhängige Quellenpass bestätigt Investitions- und Infrastrukturbezug, aber keine tatsächliche Diversifizierung oder Resilienzsteigerung. Die positive Richtung gilt nur unter der ausdrücklich genannten Bedingung.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mögliche Resilienzeffekte betreffen vor allem strategische Projekte, Betreiber und zuständige Institutionen; eine gesamtgesellschaftliche direkte Wirkung ist nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ohne konkrete Projektstruktur ist eine mögliche Stärkung der Handlungsfähigkeit begrenzt, aber bei strategischer Infrastruktur relevant.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Infrastruktur- und Finanzierungsbeziehungen können über mehrere Jahre bestehen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Projekt- und Eigentumsstrukturen sind veränderbar, aber regelmäßig nur mit Zeit und Kosten.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere Last- oder Schutzkonzentration auf vulnerable Gruppen ist für diesen positiven Governance-Pfad nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad kann Governance und strategische Resilienz einzelner Infrastrukturbereiche berühren, bleibt aber von konkreter Ausgestaltung abhängig.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Aus der Investitionsankündigung selbst ist keine konkrete schwere Schutzgrenzverletzung belegt.",
+                "reference_frame": "demokratische Korrekturfähigkeit und strategische Autonomie",
+                "source_ids": [
+                  "taz-aktuell",
+                  "research-bundesregierung-vae-package"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "direction": "negative",
+              "label": "Kontrollrechte in strategischer Infrastruktur können neue Abhängigkeiten und geringere Korrigierbarkeit schaffen",
+              "mechanism": "Falls die angekündigten Investitionen kontrollrelevante Eigentumsanteile, Vetorechte oder langfristige Vertragshebel in kritischer Energie- oder Digitalinfrastruktur schaffen, können neue Abhängigkeiten entstehen und spätere politische oder regulatorische Korrekturen kostspieliger werden.",
+              "recipients": [
+                "öffentliche Institutionen",
+                "kritische Infrastrukturbetreiber",
+                "Bevölkerung"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "taz-aktuell",
+                "research-bundesregierung-vae-package"
+              ],
+              "condition": "Kontrollrelevante Eigentums-, Vetorechte oder langfristige Vertragsbindungen entstehen tatsächlich und sind nicht ausreichend diversifiziert oder durch Investitionsprüfung und Governance begrenzt.",
+              "reference_space": "Deutschland, insbesondere strategische Energie- und Digitalinfrastruktur",
+              "time_horizon": "mehrere Jahre",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Solche Kontrollrechte oder Einflussbedingungen sind in den gebundenen Quellen nicht belegt; der negative Pfad ist daher eine bedingte Modellhypothese und keine Unterstellung politischer Einflussnahme.",
+              "source_support": "Die Quellen belegen das große Investitionsvolumen und strategische Infrastrukturbezüge. Sie belegen keine politischen Konditionen, Vetorechte oder konkrete Kontrollmacht.",
+              "limitations": "Eigentumsquoten, Vetorechte, Investitionsprüfungen, Sicherheitsauflagen und Vertragslaufzeiten sind offen.",
+              "first_order": "Kontrollrelevante Beteiligungen oder Vertragsrechte könnten Entscheidungsabhängigkeiten bei einzelnen Infrastrukturprojekten schaffen.",
+              "second_order": "Hohe Konzentration oder schwer lösbare Vertragsbindungen könnten regulatorische und betriebliche Wechseloptionen einschränken.",
+              "third_order": "Nur bei materieller Konzentration in strategischen Bereichen könnte demokratische Korrekturfähigkeit beziehungsweise strategische Autonomie strukturell sinken; dafür gibt es bislang keinen Zustandsbeleg.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Ohne konkrete Kontrollrechte bleibt das Risiko zwischen geringem Governance-Effekt und sektoraler Abhängigkeit; eine stärkere Systemwirkung ist nicht belegt."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der unabhängige Quellenpass findet keine belegten Vetorechte, politischen Konditionen oder konkrete Kontrollmacht. Der negative Pfad ist ausschließlich eine bedingte Governance-Hypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mögliche Abhängigkeiten wären zunächst auf strategische Projekte, Betreiber und zuständige Institutionen konzentriert.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ohne bekannte Kontrollrechte ist die Intensität eines möglichen Abhängigkeitsverlusts nur begrenzt anzusetzen.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Eigentums- und langfristige Vertragsbeziehungen können über Jahre fortwirken.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Kontroll- und Vertragsstrukturen sind grundsätzlich veränderbar, können aber nur mit erheblichem Zeit- und Kostenaufwand gelöst werden.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere Betroffenheit vulnerabler Gruppen ist nicht belegt; betroffen wäre primär institutionelle Korrigierbarkeit.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Bei strategischer Infrastruktur kann ein begrenzter struktureller Governance-Pfad entstehen; konkrete institutionelle Kontrolle ist aber nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell",
+                    "research-bundesregierung-vae-package"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Aus der Investitionsankündigung selbst ist keine konkrete schwere Schutzgrenzverletzung belegt.",
+                "reference_frame": "demokratische Korrekturfähigkeit und strategische Autonomie",
+                "source_ids": [
+                  "taz-aktuell",
+                  "research-bundesregierung-vae-package"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Zwei bedingte, gegenläufige Governance-Pfade bleiben plausibel: zusätzliche Optionen können bei echter Diversifizierung Resilienz stärken; kontrollrelevante Rechte oder schwer lösbare Bindungen können Korrigierbarkeit schwächen. Die Quellen belegen weder Diversifizierungswirkung noch Kontrollrechte, daher bleiben beide Pfade low-evidence, likelihood=unknown und balanced.",
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Beide bedingten Hauptpfade haben dieselbe modellierte Tragweite 2 und niedrige Evidenz. Da weder konkrete Diversifizierungswirkung noch Kontrollrechte belegt sind, ist kein Pfad dominant; die Dimension ist mixed/balanced."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Diversifizierte Investitionen können Resilienz und strategische Handlungsfähigkeit stärken",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Diversifizierte Investitionen können Resilienz und strategische Handlungsfähigkeit stärken",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die taz-Überschrift „Emirate wollen Geld regnen lassen“ verwendet einen bildhaften ökonomischen Überfluss-Frame für ein bislang angekündigtes Investitionspaket. Das ist für die Trennung von Ankündigung und realisierter Wirkung relevant.",
+        "factual_core": "Die VAE haben zusätzliche Investitionen von 40 Milliarden Euro in Deutschland angekündigt. Die gemeinsame Regierungserklärung bestätigt das Paket sowie geplante Digital- und Energievorhaben; tatsächlicher Mittelabfluss und konkrete Folgewirkungen sind noch offen.",
+        "epistemic_status": {
+          "confirmed": [
+            "Die VAE haben ein zusätzliches Investitionspaket von 40 Milliarden Euro in Deutschland angekündigt.",
+            "Die gemeinsame Regierungserklärung nennt digitale Infrastruktur, geplante Rechenzentren sowie eine vertiefte Energiekooperation."
+          ],
+          "actor_claims": [],
+          "open": [
+            "Tatsächlicher Mittelabfluss, Projektstandorte, Stromversorgung und konkrete Eigentums- beziehungsweise Kontrollrechte sind noch offen.",
+            "Eine beobachtete Wirkung der taz-Überschrift auf Publikum oder Diskurs ist nicht belegt."
+          ]
+        },
+        "attribution": {
+          "frame_source": "taz",
+          "speaker": "taz-Redaktion",
+          "original_term": "Geld regnen lassen",
+          "usage_type": "editorial",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "editorial"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "taz-Redaktion",
+          "statement": "Geld regnen lassen",
+          "status": "interpretation"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Geld regnen lassen",
+          "origin_in_story": "taz",
+          "media_usage": "headline",
+          "attribution_quality": "erscheint wie redaktioneller Fakt",
+          "factual_status": "Interpretation",
+          "frame_type": [
+            "ökonomischer Frame"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Geld regnen lassen",
+          "frame_type": [
+            "ökonomischer Frame"
+          ],
+          "problem_definition": "Die bildhafte Formulierung setzt den Schwerpunkt auf einen großen erwarteten Kapitalzufluss und kann den Unterschied zwischen angekündigtem Volumen und bereits realisierter Investition in den Hintergrund rücken.",
+          "implied_cause": "",
+          "implied_responsibility": "",
+          "implied_threat": "",
+          "implied_solution_space": "Große Investitionssummen erscheinen als unmittelbar verfügbarer wirtschaftlicher Impuls; die tatsächliche Umsetzung bleibt davon getrennt zu prüfen.",
+          "material_omissions": [
+            "Die Überschrift selbst macht nicht sichtbar, dass Mittelabfluss, Projektmix und Folgewirkungen noch offen sind."
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Aus der Überschrift lässt sich keine politische oder manipulative Absicht der Redaktion ableiten."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Öffentliche Wahrnehmung der angekündigten Investitionen in Deutschland.",
+          "normalization_potential": "low",
+          "repetition_risk": "medium",
+          "polarization_potential": "gering; der Frame ist ökonomisch zugespitzt, aber nicht als polarisierende Akteursabwertung belegt.",
+          "trust_effect_potential": "offen; eine tatsächliche Vertrauenswirkung ist nicht beobachtet.",
+          "discourse_effect_potential": "Bei wiederholter isolierter Nutzung könnte die bildhafte Überschrift den Ankündigungscharakter gegenüber Umsetzungs- und Evidenzgrenzen weniger sichtbar machen."
+        },
+        "impact_path": {
+          "first_order": "Die Überschrift verdichtet eine Investitionsankündigung zu einem Bild plötzlichen Geldzuflusses.",
+          "second_order": "Wer nur die Überschrift wahrnimmt, könnte angekündigtes Volumen eher mit bereits verfügbarer oder realisierter Investition verknüpfen; dies ist ein Potenzial, keine beobachtete Wirkung.",
+          "third_order": "Bei wiederholter Übernahme ähnlicher Verkürzungen könnte die öffentliche Bewertung stärker an angekündigten Summen als an tatsächlicher Umsetzung ausgerichtet werden; dafür liegt hier kein Wirkungsnachweis vor."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Die taz verwendet die Formulierung „Geld regnen lassen“ in der Überschrift. Die amtliche Erklärung und weitere Berichterstattung bestätigen die Investitionsankündigung, nicht einen bereits erfolgten vollständigen Mittelabfluss.",
+          "what_is_inferred": "Dass die Überschrift den Ankündigungscharakter weniger sichtbar machen kann, ist eine vorsichtige Wirkungsannahme zur medialen Vermittlung.",
+          "what_is_open": "Ob und wie Leserinnen und Leser die Formulierung tatsächlich verstanden haben und ob daraus eine messbare Diskurswirkung entstand, ist nicht belegt.",
+          "facts": [
+            "Die Überschrift enthält die Formulierung „Geld regnen lassen“.",
+            "Das 40-Milliarden-Euro-Paket ist angekündigt; tatsächliche Umsetzung und Mittelabfluss sind offen."
+          ],
+          "observations": [
+            "Der bildhafte Ausdruck steht prominent in der Überschrift."
+          ],
+          "inferences": [
+            "Die Formulierung kann die angekündigte Summe unmittelbarer erscheinen lassen als eine nüchterne Ankündigungsformulierung."
+          ],
+          "impact_potentials": [
+            "Mögliche stärkere Wahrnehmung des angekündigten Volumens gegenüber Umsetzungsbedingungen."
+          ],
+          "impact_risks": [
+            "Ankündigung und bereits realisierte Investition könnten bei verkürzter Rezeption leichter vermischt werden."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine Rezeptionsdaten oder Messung einer tatsächlichen Medienwirkung.",
+            "Keine belastbare Grundlage für eine Motiv- oder Absichtszuschreibung an die Redaktion."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Die taz überschreibt die Investitionsankündigung mit „Emirate wollen Geld regnen lassen“. Das ist eine redaktionelle Zuspitzung, kein Zitat der VAE oder der Bundesregierung. Belegt ist: Die VAE haben zusätzliche Investitionen von 40 Milliarden Euro angekündigt; die Regierungserklärung nennt unter anderem digitale Infrastruktur und Energiekooperation. Nicht belegt ist, dass diese Summe bereits vollständig investiert wurde oder schon entsprechende Folgen ausgelöst hat. Der bildhafte Ausdruck kann beim schnellen Lesen den Unterschied zwischen Ankündigung und Umsetzung weniger sichtbar machen. Das ist ein mögliches Vermittlungsrisiko, keine nachgewiesene Wirkung auf Leserinnen, Leser oder den politischen Diskurs. Deshalb verwendet der Wirkungsticker eine sachliche Überschrift und trennt angekündigtes Volumen, tatsächliche Umsetzung und mögliche Folgen ausdrücklich voneinander.",
+        "editorial_assessment": "Der Ausdruck „Geld regnen lassen“ ist eine redaktionelle Zuspitzung der taz und kein Zitat eines politischen Akteurs. Er kann beim isolierten Wiederholen die Ankündigung unmittelbarer und bereits wirksamer erscheinen lassen, als es der belegte Stand trägt. Eine tatsächlich eingetretene Medien- oder Diskurswirkung ist nicht belegt.",
+        "fact_first_alternative": "VAE kündigen 40 Milliarden Euro zusätzliche Investitionen in Deutschland an – Umsetzung, Projektmix und Folgewirkungen sind noch offen.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "VAE kündigen 40 Milliarden Euro zusätzliche Investitionen in Deutschland an",
+          "recommended_summary": "Die VAE kündigen zusätzliche Investitionen in Deutschland an. Die gemeinsame Regierungserklärung nennt Digital- und Energievorhaben; Mittelabfluss, konkrete Projekte und Folgewirkungen sind noch offen.",
+          "recommended_meta_description": "Die VAE kündigen ein zusätzliches 40-Milliarden-Euro-Investitionspaket für Deutschland an. Der Wirkungsticker trennt Ankündigung, Umsetzung und mögliche Folgen."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-12T01:38:55.761Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-11T07:29:00.000Z",
+      "last_updated": "2026-09-12T01:38:55.761Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-0b07bc76e15549dd1048",
+      "case_file": null,
+      "source_published_at": "2026-09-11T07:29:00.000Z",
+      "published_at": "2026-09-12T01:38:55.761Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Umsetzungsstand, Mittelabfluss und konkrete Projektstandorte beobachten.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Verbindliche Projektentscheidungen, Investitionssummen und Standorte.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2018283fca673ae7",
+          "announced_at": "2026-09-11T07:29:00.000Z",
+          "follow_up_date": "2026-09-19T01:38:55.761Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Energie-und-KI-in-Deutschland/!6212486",
+          "source_type": "media_rss",
+          "published_at": "2026-09-11T07:29:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-4c2f3496723fe5b4",
       "title_image": {
