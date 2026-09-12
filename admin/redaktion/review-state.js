@@ -22,6 +22,10 @@ export function requestPresentation(request) {
     description: request.status_note || '',
   };
   if (request.publication_url) return {label: 'Veröffentlicht', attention: false, description: ''};
+  if (request.editorial_hold) return {
+    label: request.editorial_hold.code === 'EDITORIAL_CONTEXT_MISSING' ? 'Themenbezug fehlt' : 'Redaktionelle Klärung erforderlich',
+    attention: true, description: request.status_note || request.editorial_hold.reason,
+  };
   if (request.research_status) return {
     label: request.research_status === 'hold' ? 'Quellenklärung erforderlich' : 'Nachrecherche beauftragt',
     attention: request.research_status === 'hold', description: request.status_note || '',
