@@ -6,7 +6,9 @@ import { bridgePath } from './contract.mjs';
 
 export const PREVIOUS_TRANSPORT = 'processor-transport-20260911-5.json';
 export const PROCESSOR_TRANSPORT = 'processor-transport-20260912-6.json';
-export const PREVIOUS_SHA256 = 'd312a28081dec02d29e9a54fc3f22345386b321666ab0437b1782bb75b47fbe5';
+// Hash the 14,061 stored bytes. The connector's text extraction adds a second
+// terminal newline; its 14,062-byte representation is not the raw Dropbox file.
+export const PREVIOUS_SHA256 = '9bbd0862125d8b2390820d7f796e47a0698cd2fdf807f1a4107b6e3c86f31320';
 const digest = text => createHash('sha256').update(text).digest('hex');
 
 export function updateProbeContract(previousText, expectedHash = PREVIOUS_SHA256) {
