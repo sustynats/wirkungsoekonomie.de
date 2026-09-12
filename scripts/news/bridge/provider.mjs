@@ -1,4 +1,5 @@
 import { currentEvidence, latestEvidenceTime } from '../discovery-admission.mjs';
+import { slugify } from '../lib.mjs';
 import { retainPotentialHistory } from '../impact-potential.mjs';
 import { ensureSemanticReview, importSemanticReviews } from './semantic-review.mjs';
 import { migrateImpactAssessment, impactClaimLedger, withMagnitudeCalculations } from '../impact-assessment.mjs';
@@ -80,7 +81,11 @@ export class DropboxChatGPTBridgeProvider {
     for (const job of await this.store.all()) {
       if (!newsJob(job) || terminal.has(job.status)) continue;
       if (!retryDue(job, 'import', now)) continue;
-      const jobStories = job.input.test_only && !stories.some(s => s.story_id === job.candidate.story_id)
+      // Legacy private candidates predate public-page metadata. Derive only the
+      // stable route; immutable input, source hashes and approval remain intact.
+      if (job.intake_news_parent && !job.candidate.slug) job.candidate = { ...job.candidate,
+        slug: `${slugify(job.candidate.title)}-${job.candidate.story_id.slice(-6)}` };
+      const jobStories = (job.input.test_only || job.intake_news_parent) && !stories.some(s => s.story_id === job.candidate.story_id)
         ? [...stories, job.candidate] : stories;
       if (job.status === 'accepted') {
         const accepted = job.accepted;
