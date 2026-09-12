@@ -102,16 +102,8 @@ jobs:
         run: |
           python tools/apply_state_sustainability_build_integration.py
           git diff --exit-code -- scripts/glossary/build-glossary-registry.mjs
-      - name: Verify #253 state sustainability architecture
-        if: steps.release-mode.outputs.ticker_only != 'true'
-        run: |
-          bash scripts/ops/prepare-release-history.sh
-          python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
-          python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
-          python tools/finalize_state_sustainability_matrix.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
-          python tools/check_state_sustainability_architecture.py
-          python tools/check_state_sustainability_wiwi_scope.py
-          git diff --exit-code -- content/audits/state-sustainability-architecture-url-matrix.json content/audits/state-sustainability-architecture-url-matrix.md
+      - name: Prepare pinned release history
+        run: bash scripts/ops/prepare-release-history.sh
       - name: Build static reference data and search
         if: steps.release-mode.outputs.ticker_only != 'true'
         run: WOEK_PDF_BUILD_MODE=verify npm run build
@@ -129,6 +121,18 @@ jobs:
           npm run normalize:footer
           npm run build:search
           npm run news:validate
+      - name: Audit the generated release including new news routes
+        run: bash scripts/ops/audit-generated-release.sh
+      - name: Retain commit-bound release audit
+        if: always() && !cancelled()
+        uses: actions/upload-artifact@v4
+        with:
+          name: state-sustainability-release-${{ steps.release-source.outputs.commit }}
+          if-no-files-found: error
+          path: |
+            content/audits/state-sustainability-architecture-url-matrix.json
+            content/audits/state-sustainability-architecture-url-matrix.md
+            reports/generated-release-audit.txt
       - name: Build public deploy artifact
         run: npm run build:artifact
       - name: Check public artifact privacy
