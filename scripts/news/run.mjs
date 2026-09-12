@@ -391,6 +391,19 @@ export function pendingRecord(candidate, reason, now, qualityErrors = []) {
   };
 }
 
+export function restorePendingBridgeRecords(byId, jobs, now) {
+  for (const job of jobs) {
+    // Manual intake is staged by the approval service. Its private candidate
+    // must never enter the canonical news store through recovery, even before
+    // an output exists. Publication still requires the approved edition.
+    if (!['new_story', 'story_update', 'correction'].includes(job.input.job_type)
+        || job.input.test_only || job.intake_news_parent
+        || byId.has(job.candidate.story_id)
+        || ['quarantined', 'archive_failed', 'acknowledged'].includes(job.status)) continue;
+    byId.set(job.candidate.story_id, pendingRecord(job.candidate, 'BRIDGE_PENDING', now));
+  }
+}
+
 function shouldRetireAfterReassessment(candidate, errors) {
   return Boolean(candidate.reassessment)
     && errors.length > 0
@@ -1382,12 +1395,9 @@ export async function runWirkungsticker(options = {}) {
         if (bridge.editorialEnabled && fs.existsSync(path.join(ROOT, 'data/news/editorial-analyses.json'))) report.bridge_editorial_enqueued = await (await import('./bridge/editorial.mjs')).discoverEditorialJobs(bridge, ROOT, now);
       }
       if (bridgePhase !== 'discovery') {
-        // Discovery writes no public Git data. A newly queued event therefore
-        // obtains its private draft from the immutable journal at first import.
-        for (const job of await bridge.store.all()) {
-          if (['new_story','story_update','correction'].includes(job.input.job_type) && !job.input.test_only && !byId.has(job.candidate.story_id) && !['quarantined','archive_failed','acknowledged'].includes(job.status))
-            byId.set(job.candidate.story_id, pendingRecord(job.candidate, 'BRIDGE_PENDING', now));
-        }
+        // Only regular discovery candidates get a pending canonical record;
+        // manually submitted news stays in the separate private approval store.
+        restorePendingBridgeRecords(byId, await bridge.store.all(), now);
         const results = await bridge.reconcile(registry, [...byId.values()], now);
         report.bridge_results = results.map(r => ({ job_id: r.job_id, decision: r.decision, staged: r.staged, visual_status: r.visual?.status || null }));
         for (const result of results) {
