@@ -1330,7 +1330,7 @@ export async function runWirkungsticker(options = {}) {
       newsroom.decisions.push({ at: now, story_id: candidate.story_id, decision: "unchanged_review_reused", checked_at: candidate.existing_story.review_checkpoint.checked_at });
       return false;
     }
-    try { buildAnalysisPrompt([candidate]); return true; }
+    try { buildAnalysisPrompt([candidate], { transport: mode === 'dropbox_chatgpt_bridge' ? mode : 'api' }); return true; }
     catch (error) {
       if (error.message !== "AI_INPUT_TOO_LARGE") throw error;
       byId.set(candidate.story_id, { ...pendingRecord(candidate, "AI_INPUT_TOO_LARGE", now, [error.message]), review_checkpoint: reviewCheckpoint(candidate, now, "input_too_large") });
