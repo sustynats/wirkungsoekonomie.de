@@ -17,6 +17,7 @@ import {loadPersonalEditorials,PERSONAL_FILE} from '../../scripts/news/personal-
 import {editorialAnalysisPage} from '../../scripts/news/build.mjs';
 import {bridgePath} from '../../scripts/news/bridge/contract.mjs';
 import {DropboxTransport} from '../../scripts/news/bridge/dropbox.mjs';
+import {DropboxChatGPTBridgeProvider} from '../../scripts/news/bridge/provider.mjs';
 const owner='1206956406805102593',other='111111111111111111';
 const now=()=>new Date().toISOString();
 const preview=()=>({format:'opinion_analysis',title:'Ein ausdrücklich fiktiver Vorschautext',subtitle:'Prüfung des privaten Freigabewegs',markdown:'## Test der Freigabe\n\nDieser synthetische Text beschreibt ausschließlich den technischen Test einer Vorschau. Er ist kein wirklicher Beitrag und enthält keine persönliche Position oder Erfahrung der Autorin.\n\n## Meine Einordnung\n\nAuch dieser Schlussabschnitt ist ausschließlich eine synthetische Prüfung des Freigabewegs.',sources:[{url:'https://example.org/source',title:'Synthetische Testquelle',publisher:'Test'}],checks:{source_binding:true,editorial_validation:true,personal_experiences_invented:false}});
@@ -27,6 +28,41 @@ function setup(t){
  t.after(()=>{store.close();fs.rmSync(directory,{recursive:true,force:true});});return {directory,store,files,transport,intake,approval};
 }
 async function job(f){const d=f.intake.draft(owner,{client_id:randomUUID(),kind:'opinion_analysis',brief:'Bitte diesen synthetischen Testfall vorbereiten.',links:'https://example.org/source',author_notes:'',attachments:[],publish:true,urgent:false});const result=await f.intake.submit(owner,d.id);await f.intake.preparePending();return f.store.get(result.job_id);}
+const holdOutput=j=>({schema_version:'1.0',job_id:j.input.job_id,input_hash:j.input.input_hash,processed_at:now(),disposition:'hold',hold:{code:'EDITORIAL_CONTEXT_MISSING',reason:'Zum Auftrag fehlt der konkrete Themenbezug.',requested_information:'Bitte die Quelle oder das Thema ergänzen.'}});
+
+test('a research hold is visible, ACKed without publication and does not stop the next private preview',async t=>{
+ const f=setup(t),j=await job(f);
+ const d=f.intake.draft(owner,{client_id:randomUUID(),kind:'opinion_analysis',brief:'Zweiter vollständiger synthetischer Auftrag.',links:'https://example.org/source',author_notes:'',attachments:[],publish:false,urgent:false});
+ const submitted=await f.intake.submit(owner,d.id);await f.intake.preparePending();const next=f.store.get(submitted.job_id);
+ f.files.set(bridgePath('20_OUTPUT_READY',j.input.job_id+'.output.json'),JSON.stringify(holdOutput(j)));
+ f.files.set(bridgePath('20_OUTPUT_READY',next.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:next.input.job_id,input_hash:next.input.input_hash,processed_at:now(),preview:preview()}));
+ assert.deepEqual(await importEditorialPreviews(f),{staged:1,failed:[],held:1});
+ const held=f.store.get(j.input.job_id);assert.equal(held.accepted.decision,'hold');assert.equal(held.staging,undefined);
+ assert.equal(f.approval.get(j.input.job_id),null);assert.equal(f.approval.get(next.input.job_id).status,'AWAITING_FINAL_APPROVAL');
+ assert.equal(f.approval.claimPublications().length,0);
+ const shown=f.intake.list(owner).find(r=>r.job_id===j.input.job_id);
+ assert.equal(shown.editorial_hold.code,'EDITORIAL_CONTEXT_MISSING');assert.match(shown.status_note,/Themenbezug/);assert.equal(shown.preview_available,false);
+ assert.deepEqual(f.intake.list(other),[]);
+ f.transport.archive=async()=>{};
+ const provider=new DropboxChatGPTBridgeProvider(f);await provider.finalize([],now());
+ const ack=f.store.get(j.input.job_id).ack;assert.equal(ack.status,'hold');assert.equal(ack.url,null);assert.equal(ack.publication_id,null);
+ assert.equal(f.store.get(j.input.job_id).input.input_hash,j.input.input_hash);
+ assert.equal((await importEditorialPreviews(f)).staged,0);
+});
+
+test('a hold cannot bypass identity, timestamp or strict non-article schema checks',async t=>{
+ for(const scenario of ['identity','hash','time','preview','reason'])await t.test(scenario,async t=>{
+  const f=setup(t),j=await job(f),output=holdOutput(j);
+  if(scenario==='identity')output.job_id='wt_20260910T000000Z_'+'a'.repeat(24);
+  if(scenario==='hash')output.input_hash='b'.repeat(64);
+  if(scenario==='time')output.processed_at='2000-01-01T00:00:00Z';
+  if(scenario==='preview')output.preview=preview();
+  if(scenario==='reason')delete output.hold.reason;
+  f.files.set(bridgePath('20_OUTPUT_READY',j.input.job_id+'.output.json'),JSON.stringify(output));
+  const result=await importEditorialPreviews(f);assert.equal(result.failed.length,1);
+  assert.equal(f.store.get(j.input.job_id).accepted,undefined);assert.equal(f.approval.get(j.input.job_id),null);
+ });
+});
 test('a legacy import receipt is not a readable manuscript and cannot mask the real text',async t=>{
  const f=setup(t),j=await job(f),receipt='Der geprüfte Entwurf wurde privat übernommen.';
  j.staging={text:receipt};f.store.put(j);
@@ -169,6 +205,34 @@ test('private previews waiting for owner approval do not fill the research queue
  const created=await job(f);assert.equal(created.input.job_type,'editorial_request');assert.equal(f.approval.claimPublications().length,0);
 });
 
+test('busy discovery and a full processing backlog do not reject a durable user submission',async t=>{
+ const f=setup(t),inputStore=new BridgeStore(path.join(f.directory,'queue.sqlite'),{lane:'intake'});
+ t.after(()=>inputStore.close());
+ const intake=new EditorialIntake({store:inputStore,deliveryStore:f.store,transport:f.transport,directory:path.join(f.directory,'uploads')});
+ for(let i=0;i<30;i++)f.store.put({input:{job_id:'wt_20260910T000000Z_'+i.toString(16).padStart(24,'0'),job_type:'editorial_request'},status:'queued'});
+ inputStore.all=()=>{throw Error('MUST_NOT_LOAD_ENTIRE_QUEUE');};
+ f.store.acquire(now(),'discovery',{manualRunId:'12345:1'});
+ const d=intake.draft(owner,{client_id:randomUUID(),kind:'news',brief:'Neuer direkter Nutzerauftrag trotz laufender Recherche.',links:'',author_notes:'',attachments:[],publish:false,urgent:false});
+ const submitted=await intake.submit(owner,d.id),saved=inputStore.get(submitted.job_id);
+ assert.equal(saved.status,'intake_prepared');assert.equal(saved.input.manual_only,true);
+ assert.equal(f.files.size,0);assert.equal(f.store.locked,true);
+ await assert.rejects(intake.preparePending(),/BRIDGE_RUN_LOCKED/);
+ assert.equal(inputStore.get(submitted.job_id).status,'intake_prepared');
+ f.store.release(true);
+ await intake.preparePending();
+ assert.equal(inputStore.get(submitted.job_id).status,'queued');assert.equal(f.files.size,1);
+ assert.equal((await intake.submit(owner,d.id)).duplicate,true);
+ assert.equal(f.approval.claimPublications().length,0);
+});
+
+test('private output import does not materialize unrelated published manuscripts',async t=>{
+ const f=setup(t),j=await job(f);
+ f.store.all=()=>{throw Error('MUST_NOT_LOAD_ENTIRE_QUEUE');};
+ f.files.set(bridgePath('20_OUTPUT_READY',j.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:j.input.job_id,input_hash:j.input.input_hash,processed_at:now(),preview:preview()}));
+ const result=await importEditorialPreviews(f);
+ assert.equal(result.staged,1);assert.equal(f.approval.claimPublications().length,0);
+});
+
 test('a manual lead is provenance, while independent registered articles supply the facts',async t=>{
  const {prepareIntakeNews}=await import('../../scripts/news/bridge/intake-news.mjs');
  for(const scenario of ['social_tip','no_link','unbound_tip','unrelated_article','unavailable_article'])await t.test(scenario,async t=>{
@@ -237,4 +301,45 @@ test('revision preview references are exposed only for the same owner',async t=>
  assert.equal(f.intake.list(owner).find(r=>r.job_id===child.input.job_id).review_job_id,j.input.job_id);
  j.intake.owner=other;f.store.put(j);
  assert.equal(f.intake.list(owner).find(r=>r.job_id===child.input.job_id).review_job_id,child.input.job_id);
+});
+
+test('unusable manual news sources create one immutable research revision and preserve the original receipt',async t=>{
+ const {prepareIntakeNews}=await import('../../scripts/news/bridge/intake-news.mjs');
+ const f=setup(t),j=await job(f);
+ j.input.request.kind='news';j.intake.kind='news';j.intake.news_research={...preview(),format:'news'};
+ j.status='acknowledged';j.ack={status:'staged',output_hash:'a'.repeat(64)};j.accepted={staged:true,output_hash:'a'.repeat(64)};
+ f.store.put(j);const original=structuredClone(j),registry={sources:[{source_id:'permitted',name:'Test',url:'https://permitted.example',feed_url:'https://permitted.example/feed',role:'A',enabled:true},{source_id:'disabled',url:'https://blocked.example',feed_url:'https://blocked.example/rss',enabled:false}],policy:{}};
+ let attempts=0;const atomic=f.transport.writeAtomic;
+ f.transport.writeAtomic=async(p,v)=>{if(p.endsWith('.input.json')&&++attempts===1)throw Error('BRIDGE_DROPBOX_HTTP_503');return atomic(p,v);};
+ const args={...f,registry,fetchArticle:async()=>assert.fail('unregistered sources cannot be fetched')};
+ await prepareIntakeNews(args);
+ let parent=f.store.get(j.input.job_id),child=f.store.get(parent.intake.news_repair_job_id);
+ assert.equal(child.status,'news_research_prepared');assert.notEqual(child.input.job_id,j.input.job_id);
+ await prepareIntakeNews(args);await prepareIntakeNews(args);
+ parent=f.store.get(j.input.job_id);child=f.store.get(parent.intake.news_repair_job_id);
+ assert.equal(child.status,'queued');assert.equal(f.store.all().length,2);assert.equal(attempts,2);
+ assert.deepEqual(parent.input,original.input);assert.deepEqual(parent.ack,original.ack);assert.deepEqual(parent.accepted,original.accepted);
+ assert.equal(child.intake.review_parent,parent.input.job_id);assert.equal(child.intake.news_research_attempt,1);
+ assert.deepEqual(child.input.request.links,original.input.request.links);assert.equal(child.input.manual_only,true);
+ assert.deepEqual(child.input.request.research_repair.allowed_discovery_sources.map(s=>s.source_id),['permitted']);
+ assert.equal(f.intake.list(owner).length,1);assert.match(f.intake.list(owner)[0].status_note,/nachrecherchiert/);
+ assert.equal(f.approval.claimPublications().length,0);
+ const output={...preview(),format:'news',sources:[...preview().sources,{url:'https://permitted.example/source',title:'Synthetisch: Kommune eröffnet Bibliothek'}]};
+ f.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:now(),preview:output}));
+ await importEditorialPreviews(f);
+ assert.ok(f.store.get(child.input.job_id).intake.news_research);assert.equal(f.approval.list(owner).length,0);
+});
+
+test('manual source repairs have a bounded chain; temporary source failures keep their ordinary retry',async t=>{
+ const {prepareIntakeNews}=await import('../../scripts/news/bridge/intake-news.mjs');
+ for(const scenario of ['temporary','limit'])await t.test(scenario,async t=>{
+  const f=setup(t),j=await job(f);j.input.request.kind='news';j.intake.kind='news';j.intake.news_research={...preview(),format:'news'};
+  if(scenario==='limit')j.intake.news_research_attempt=2;
+  f.store.put(j);
+  const sources=scenario==='temporary'?[{source_id:'test',url:'https://example.org',feed_url:'https://example.org/feed',role:'A'}]:[];
+  await prepareIntakeNews({...f,registry:{sources,policy:{}},fetchArticle:async()=>{throw Error('SOURCE_TIMEOUT');}});
+  const result=f.store.get(j.input.job_id);assert.equal(f.store.all().length,1);assert.equal(result.intake.news_repair_job_id,undefined);
+  assert.equal(Boolean(result.intake.news_research_hold),scenario==='limit');
+  assert.equal(f.approval.claimPublications().length,0);
+ });
 });
