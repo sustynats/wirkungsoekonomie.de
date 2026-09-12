@@ -49,7 +49,7 @@ export class EditorialApproval {
     if(!JOB_ID.test(job?.input?.job_id||'')||!actor(job.intake?.owner))fail('EDITORIAL_JOB_OWNER_REQUIRED');
     if(preview.editorial_revision&&hash(preview.editorial_revision.target)!==hash(job.intake?.revision_target||null))fail('EDITORIAL_REVISION_TARGET_UNTRUSTED');
     validateEditorialPreview(preview);
-    if(preview.format!=='news'&&job.input.contract_path?.endsWith('/editorial-request-contract-3.json'))assertFinalPersonalSection(preview.markdown,{footnotes:preview.editorial_revision?.base?.self_authored_work});
+    if(preview.format!=='news'&&/\/editorial-request-contract-[34]\.json$/.test(job.input.contract_path||''))assertFinalPersonalSection(preview.markdown,{footnotes:preview.editorial_revision?.base?.self_authored_work});
     this.db.exec('BEGIN IMMEDIATE');
     try{
       const id=job.input.job_id,old=this.get(id),preview_hash=editorialPreviewHash(preview);

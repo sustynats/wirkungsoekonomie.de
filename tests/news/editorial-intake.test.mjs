@@ -17,6 +17,7 @@ import {loadPersonalEditorials,PERSONAL_FILE} from '../../scripts/news/personal-
 import {editorialAnalysisPage} from '../../scripts/news/build.mjs';
 import {bridgePath} from '../../scripts/news/bridge/contract.mjs';
 import {DropboxTransport} from '../../scripts/news/bridge/dropbox.mjs';
+import {DropboxChatGPTBridgeProvider} from '../../scripts/news/bridge/provider.mjs';
 const owner='1206956406805102593',other='111111111111111111';
 const now=()=>new Date().toISOString();
 const preview=()=>({format:'opinion_analysis',title:'Ein ausdrücklich fiktiver Vorschautext',subtitle:'Prüfung des privaten Freigabewegs',markdown:'## Test der Freigabe\n\nDieser synthetische Text beschreibt ausschließlich den technischen Test einer Vorschau. Er ist kein wirklicher Beitrag und enthält keine persönliche Position oder Erfahrung der Autorin.\n\n## Meine Einordnung\n\nAuch dieser Schlussabschnitt ist ausschließlich eine synthetische Prüfung des Freigabewegs.',sources:[{url:'https://example.org/source',title:'Synthetische Testquelle',publisher:'Test'}],checks:{source_binding:true,editorial_validation:true,personal_experiences_invented:false}});
@@ -27,6 +28,41 @@ function setup(t){
  t.after(()=>{store.close();fs.rmSync(directory,{recursive:true,force:true});});return {directory,store,files,transport,intake,approval};
 }
 async function job(f){const d=f.intake.draft(owner,{client_id:randomUUID(),kind:'opinion_analysis',brief:'Bitte diesen synthetischen Testfall vorbereiten.',links:'https://example.org/source',author_notes:'',attachments:[],publish:true,urgent:false});const result=await f.intake.submit(owner,d.id);await f.intake.preparePending();return f.store.get(result.job_id);}
+const holdOutput=j=>({schema_version:'1.0',job_id:j.input.job_id,input_hash:j.input.input_hash,processed_at:now(),disposition:'hold',hold:{code:'EDITORIAL_CONTEXT_MISSING',reason:'Zum Auftrag fehlt der konkrete Themenbezug.',requested_information:'Bitte die Quelle oder das Thema ergänzen.'}});
+
+test('a research hold is visible, ACKed without publication and does not stop the next private preview',async t=>{
+ const f=setup(t),j=await job(f);
+ const d=f.intake.draft(owner,{client_id:randomUUID(),kind:'opinion_analysis',brief:'Zweiter vollständiger synthetischer Auftrag.',links:'https://example.org/source',author_notes:'',attachments:[],publish:false,urgent:false});
+ const submitted=await f.intake.submit(owner,d.id);await f.intake.preparePending();const next=f.store.get(submitted.job_id);
+ f.files.set(bridgePath('20_OUTPUT_READY',j.input.job_id+'.output.json'),JSON.stringify(holdOutput(j)));
+ f.files.set(bridgePath('20_OUTPUT_READY',next.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:next.input.job_id,input_hash:next.input.input_hash,processed_at:now(),preview:preview()}));
+ assert.deepEqual(await importEditorialPreviews(f),{staged:1,failed:[],held:1});
+ const held=f.store.get(j.input.job_id);assert.equal(held.accepted.decision,'hold');assert.equal(held.staging,undefined);
+ assert.equal(f.approval.get(j.input.job_id),null);assert.equal(f.approval.get(next.input.job_id).status,'AWAITING_FINAL_APPROVAL');
+ assert.equal(f.approval.claimPublications().length,0);
+ const shown=f.intake.list(owner).find(r=>r.job_id===j.input.job_id);
+ assert.equal(shown.editorial_hold.code,'EDITORIAL_CONTEXT_MISSING');assert.match(shown.status_note,/Themenbezug/);assert.equal(shown.preview_available,false);
+ assert.deepEqual(f.intake.list(other),[]);
+ f.transport.archive=async()=>{};
+ const provider=new DropboxChatGPTBridgeProvider(f);await provider.finalize([],now());
+ const ack=f.store.get(j.input.job_id).ack;assert.equal(ack.status,'hold');assert.equal(ack.url,null);assert.equal(ack.publication_id,null);
+ assert.equal(f.store.get(j.input.job_id).input.input_hash,j.input.input_hash);
+ assert.equal((await importEditorialPreviews(f)).staged,0);
+});
+
+test('a hold cannot bypass identity, timestamp or strict non-article schema checks',async t=>{
+ for(const scenario of ['identity','hash','time','preview','reason'])await t.test(scenario,async t=>{
+  const f=setup(t),j=await job(f),output=holdOutput(j);
+  if(scenario==='identity')output.job_id='wt_20260910T000000Z_'+'a'.repeat(24);
+  if(scenario==='hash')output.input_hash='b'.repeat(64);
+  if(scenario==='time')output.processed_at='2000-01-01T00:00:00Z';
+  if(scenario==='preview')output.preview=preview();
+  if(scenario==='reason')delete output.hold.reason;
+  f.files.set(bridgePath('20_OUTPUT_READY',j.input.job_id+'.output.json'),JSON.stringify(output));
+  const result=await importEditorialPreviews(f);assert.equal(result.failed.length,1);
+  assert.equal(f.store.get(j.input.job_id).accepted,undefined);assert.equal(f.approval.get(j.input.job_id),null);
+ });
+});
 test('a legacy import receipt is not a readable manuscript and cannot mask the real text',async t=>{
  const f=setup(t),j=await job(f),receipt='Der geprüfte Entwurf wurde privat übernommen.';
  j.staging={text:receipt};f.store.put(j);

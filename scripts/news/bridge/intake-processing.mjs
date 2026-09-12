@@ -17,21 +17,45 @@ export const EDITORIAL_REQUEST_CONTRACT={schema_version:'3.0',workflow:'single_f
     preview:{type:'object',required:['format','title','markdown','sources','checks'],properties:{format:{enum:['news','opinion_analysis','book_review','listened','watched']},title:{type:'string',minLength:5,maxLength:250},subtitle:{type:'string',maxLength:1000},markdown:{type:'string',minLength:100,maxLength:100000},sources:{type:'array',minItems:1,maxItems:40,items:{type:'object'}},source_media:{type:['object','null']},author_notes:{type:'string',maxLength:10000},visual:{type:['object','null']},checks:{type:'object',properties:{source_binding:{const:true},editorial_validation:{const:true},personal_experiences_invented:{const:false}},required:['source_binding','editorial_validation','personal_experiences_invented']}}}
   }}};
 
+// A justified research hold is a complete operational result, not an article.
+// It must not invent a preview or assert a source check that did not pass.
+export const EDITORIAL_HOLD_SCHEMA={type:'object',additionalProperties:false,
+ required:['schema_version','job_id','input_hash','processed_at','disposition','hold'],properties:{
+ schema_version:{const:'1.0'},job_id:{type:'string',pattern:JOB_ID.source},input_hash:{type:'string',pattern:'^[a-f0-9]{64}$'},processed_at:{type:'string',format:'date-time'},disposition:{const:'hold'},
+ hold:{type:'object',additionalProperties:false,required:['code','reason','requested_information'],properties:{
+  code:{enum:['EDITORIAL_CONTEXT_MISSING','SOURCE_VERIFICATION_REQUIRED','EDITORIAL_CLARIFICATION_REQUIRED']},
+  reason:{type:'string',minLength:10,maxLength:2000},requested_information:{type:'string',maxLength:2000}
+ }}
+}};
+export const EDITORIAL_REQUEST_CONTRACT_V4={...EDITORIAL_REQUEST_CONTRACT,schema_version:'4.0',hold_output_schema:EDITORIAL_HOLD_SCHEMA,
+ instructions:[...EDITORIAL_REQUEST_CONTRACT.instructions,
+ 'Wenn Thema, Quellen oder entscheidende Angaben fehlen, liefere statt eines erfundenen Artikels eine vollständige HOLD-Antwort gemäß hold_output_schema im selben job_id.output.json. Keine preview und keine erfundenen source_binding-Prüfungen. Konkreten Grund und benötigte Angaben nennen. Der Auftrag bleibt sichtbar, privat und ohne Publikationsfreigabe.',
+ 'Ein redaktioneller HOLD betrifft diesen Auftrag. Danach weitere zulässige Jobs desselben Shards innerhalb des Laufbudgets prüfen. Fehlender Connector-/Dateiexport, Safety- oder Zugriffsfreigaben sind dagegen keine redaktionellen HOLDs: sofort stoppen, keine gesperrte Datei erneut senden oder über einen anderen Weg übertragen.'
+ ]};
+
 export async function importEditorialPreviews({store,transport,approval,now=()=>new Date().toISOString()}){
  const jobs=store.db.prepare("SELECT body FROM jobs WHERE json_extract(body,'$.input.job_type')='editorial_request' AND json_extract(body,'$.accepted') IS NULL AND json_extract(body,'$.ack') IS NULL AND json_extract(body,'$.status') NOT IN ('quarantined','archive_failed')").all().map(row=>JSON.parse(row.body));
  if(!jobs.length)return {staged:0};
  const names=new Set((await transport.list('20_OUTPUT_READY')).map(e=>e.name));
- let staged=0;
+ let staged=0,held=0;
  const failed=[];
  for(const job of jobs){
   try{
   if(job.status==='correction_prepared'){await finishCorrection({store,transport},job,now());continue;}
   if(!names.has(job.input.job_id+'.output.json'))continue;
-  const output=parsePacket(await transport.read(bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json')),EDITORIAL_REQUEST_CONTRACT.output_schema);
-  if(output.job_id!==job.input.job_id||output.input_hash!==job.input.input_hash||output.preview.format!==job.input.request.kind)throw Error('EDITORIAL_PREVIEW_INPUT_CHANGED');
+  const raw=await transport.read(bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json'));
+  const envelope=parsePacket(raw,{type:'object'});
+  const output=parsePacket(raw,envelope.disposition==='hold'?EDITORIAL_HOLD_SCHEMA:EDITORIAL_REQUEST_CONTRACT.output_schema);
+  if(output.job_id!==job.input.job_id||output.input_hash!==job.input.input_hash)throw Error('EDITORIAL_PREVIEW_INPUT_CHANGED');
+  if(Date.parse(output.processed_at)<Date.parse(job.input.created_at)||Date.parse(output.processed_at)>Date.parse(now())+300000)throw Error('EDITORIAL_OUTPUT_TIME_INVALID');
+  if(output.disposition==='hold'){
+   job.intake.editorial_hold={...output.hold,held_at:output.processed_at};
+   job.accepted={job_id:job.input.job_id,story_id:job.candidate.story_id,decision:'hold',reason:output.hold.reason,output_hash:hash(output),accepted_at:now()};
+   job.status='accepted';job.accepted_at=now();delete job.last_error;store.put(job);held++;continue;
+  }
+  if(output.preview.format!==job.input.request.kind)throw Error('EDITORIAL_PREVIEW_INPUT_CHANGED');
   const requested=job.input.request.links||[];
   if(requested.length&&!output.preview.sources.some(s=>requested.includes(s.url)))throw Error('EDITORIAL_PREVIEW_EVENT_UNBOUND');
-  if(Date.parse(output.processed_at)<Date.parse(job.input.created_at)||Date.parse(output.processed_at)>Date.parse(now())+300000)throw Error('EDITORIAL_OUTPUT_TIME_INVALID');
   output.preview.author_notes=job.input.request.author_notes||'';
   // Model output cannot supply a trusted native publication record.
   delete output.preview.news_record;
@@ -52,5 +76,5 @@ export async function importEditorialPreviews({store,transport,approval,now=()=>
    else{job.status='quarantined';store.put(job);}
   }
  }
- return {staged,failed};
+ return {staged,failed,...(held?{held}:{})};
 }
