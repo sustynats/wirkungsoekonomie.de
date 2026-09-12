@@ -8,6 +8,14 @@ import { processorShard, processorPreflight, assertProcessorReady, beginProcesso
 const now = '2026-09-11T09:40:00.000Z';
 const context = { actor: 'chatgpt', kind: 'automation', context_id: 'context-test-1', automation_id: 'automation-test-1', shard: 2 };
 const id = n => `wt_20260911T080000Z_${n.toString(16).padStart(24, '0')}`;
+test('last-hour news outranks requeued old updates and uses source LIFO within its shard', () => {
+  const ids=Array.from({length:30},(_,i)=>id(i)).filter(x=>processorShard(x)===0);
+  const make=(i,date,created,job_type='new_story')=>({input:{job_id:ids[i],created_at:created,job_type,sources:[{published_at:date}]},status:'queued'});
+  const latest=make(0,'2026-09-11T09:35:00Z','2026-09-11T09:36:00Z');
+  const earlier=make(1,'2026-09-11T09:20:00Z','2026-09-11T09:39:00Z');
+  const old=make(2,'2026-09-05T09:00:00Z','2026-09-11T09:40:00Z','story_update');
+  assert.deepEqual(selectProcessorBatch([old,earlier,latest],0,now).map(j=>j.input.job_id),[ids[0],ids[1],ids[2]]);
+});
 function transport() {
   const files = new Map([[bridgePath('98_CONFIG', 'contract-2026-09-10-bridge-3.json'), '{}']]);
   return { files, moves: 0, async list(folder) { return [...files.keys()].filter(k => k.includes(`/${folder}/`)).map(k => ({ name: k.split('/').at(-1) })); },
