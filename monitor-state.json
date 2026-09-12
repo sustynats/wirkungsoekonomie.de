@@ -13,19 +13,28 @@
       "firstSeen": "2026-09-11T07:35:24.922Z",
       "active": true
     },
-    "bridge-throughput": {
-      "firstSeen": "2026-09-12T00:05:36.445Z",
-      "active": true
-    },
     "bridge-shards": {
       "firstSeen": "2026-09-12T00:50:41.401Z",
-      "active": false
+      "active": true
     },
     "bridge-publication-flow": {
       "firstSeen": "2026-09-12T00:50:41.401Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "4a69cfbde5e65ca6e83a89ce",
+      "content": "⚠ WÖk-Betriebsstörung\nVollständigkeit der Redaktionsworker: Mindestens einer der drei Redaktionsworker hat keinen aktuellen Verfügbarkeitsnachweis. Ein einzelner erreichbarer Worker belegt keine vollständige Verarbeitungskapazität.\nSeit: 2026-09-12T00:50:41.401Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "28b4692da54a9366d5c59a37",
+      "content": "⚠ WÖk-Betriebsstörung\nAktuelle Nachrichten tatsächlich veröffentlicht: Aktuelle Nachrichten warten, aber seit über zwei Stunden ist keine Veröffentlichung nachgewiesen. Erfolgreiche Verbindungsprüfungen, private Entwürfe und abgeschlossene Fachprüfjobs ersetzen keine veröffentlichte Nachricht.\nSeit: 2026-09-12T00:50:41.401Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "6f18fc42626232e41e08ff34",
+      "content": "✓ WÖk-Störung behoben\nRedaktionsdurchsatz\nPrüfung: 2026-09-12T01:05:59.866Z"
+    }
+  ],
   "dailyDate": "2026-09-11"
 }
