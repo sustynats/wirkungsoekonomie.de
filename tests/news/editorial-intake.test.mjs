@@ -199,6 +199,29 @@ test('manual news research creates a native bridge job and never a personal arti
  await prepareIntakeNews({...f,registry:{sources:[source],policy:{}},fetchArticle});assert.equal(f.store.all().length,count);
 });
 
+test('a metadata-poor first source cannot starve later sources across publisher crawl-delay retries',async t=>{
+ const f=setup(t),j=await job(f);let time=Date.now(),round=0;const calls=[];
+ j.input.request.kind='news';j.intake.kind='news';j.intake.news_research={...preview(),format:'news',title:'Synthetisch: Kommune eröffnet eine Bibliothek',sources:[{url:'https://example.org/no-date',title:'Quelle ohne Datum'},...preview().sources]};f.store.put(j);
+ const {prepareIntakeNews}=await import('../../scripts/news/bridge/intake-news.mjs');
+ const source={source_id:'test-news',name:'Test',url:'https://example.org',feed_url:'https://example.org/feed',role:'A',publisher_id:'test',source_type:'media_rss'};
+ const article={headline:j.intake.news_research.title,description:'Eine neue öffentliche Bibliothek bietet zusätzliche Arbeitsplätze zum Lernen. Der Fall ist vollständig synthetisch und dient ausschließlich der technischen Prüfung.',datePublished:new Date(time).toISOString(),'@type':'NewsArticle'};
+ const fetchArticle=async({url})=>{
+  calls.push(url);
+  if(url.endsWith('/no-date'))return {final_url:url,body:'<meta property="og:title" content="Quelle ohne Datum">'};
+  if(!round)throw Object.assign(Error('ROBOTS_CRAWL_DELAY_DEFERRED'),{retry_after_seconds:120});
+  return {final_url:url,body:'<script type="application/ld+json">'+JSON.stringify(article)+'</script><article>'+article.description+'</article>'};
+ };
+ const args={...f,registry:{sources:[source],policy:{}},now:()=>new Date(time).toISOString(),fetchArticle};
+ await prepareIntakeNews(args);let parent=f.store.get(j.input.job_id);
+ assert.equal(parent.intake.source_errors[0].error_code,'SOURCE_PUBLICATION_METADATA_MISSING');
+ assert.equal(Date.parse(parent.intake.news_retry_at),time+120000);assert.equal(parent.intake.news_job_id,undefined);
+ await prepareIntakeNews(args);assert.equal(calls.length,2); // no early retry
+ time+=121000;round++;calls.length=0;await prepareIntakeNews(args);parent=f.store.get(j.input.job_id);
+ assert.equal(calls[0],'https://example.org/source');
+ const child=f.store.get(parent.intake.news_job_id);assert.equal(child.input.job_type,'new_story');assert.equal(child.candidate.published,false);
+ assert.equal(f.approval.claimPublications().length,0);
+});
+
 test('private previews waiting for owner approval do not fill the research queue or prevent a new manual request',async t=>{
  const f=setup(t);
  for(let i=0;i<12;i++)f.store.put({input:{job_id:'wt_20260910T000000Z_'+i.toString(16).padStart(24,'0'),job_type:'editorial_request'},status:'accepted',accepted:{staged:true}});
