@@ -112,6 +112,8 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 
 ## Regionale Nachrichtenabdeckung
 
+- Direkt erteilte redaktionelle Nutzeraufträge einschließlich ihrer Nachrecherchen haben nach dringenden/Breaking-Fällen Vorrang vor automatisch entdeckten Meldungen. Innerhalb der Prioritätsklassen gilt LIFO; ältere Nachrichten behalten ihr Originaldatum. Ein technischer Importbeleg ist kein fertiger Artikel. Persönliche Beiträge bleiben an die abschließende Freigabe gebunden.
+
 - Ziel sind dauerhaft regelmaessig ueberwachte regionale Quellen fuer alle 16 Bundeslaender. Die Laenderzuordnung steht explizit in der bestehenden Source Registry; eine pauschale DE-Zuordnung zaehlt nicht als regionale Vollabdeckung.
 - Fehlende, deaktivierte, ueberfaellige und noch nicht erfolgreich abgerufene Zugaenge getrennt ausweisen. Amtliche Pressequellen koennen eine Grundabdeckung liefern, ersetzen aber keine unabhaengige Regionalberichterstattung. Regierungsangaben bleiben attribuiert.
 - Zugang, Robots/RSL und Nutzungsrahmen vor Aktivierung pruefen; Abdeckungsziele duerfen keine Sperren oder Rechtspruefung umgehen. Regionale Routine, Termine, Sport und Eigenwerbung vor der KI filtern; materielle neue Entwicklungen weiter zulassen.

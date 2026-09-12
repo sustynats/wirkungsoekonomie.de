@@ -132,11 +132,18 @@ export class EditorialIntake {
     }finally{this.store.release(true);}
   }
   list(owner){
-    return this.store.db.prepare("SELECT body FROM jobs WHERE json_extract(body,'$.intake.owner')=? ORDER BY json_extract(body,'$.created_at') DESC LIMIT 100").all(owner).map(row=>{
+    return this.store.db.prepare("SELECT body FROM jobs WHERE json_extract(body,'$.intake.owner')=? AND json_extract(body,'$.intake.research_parent') IS NULL ORDER BY json_extract(body,'$.created_at') DESC LIMIT 100").all(owner).map(row=>{
       const j=JSON.parse(row.body);
       const parent=j.intake.review_parent?this.store.get(j.intake.review_parent):null;
       const reviewJobId=parent?.intake?.owner===owner?parent.input.job_id:j.input.job_id;
-      return {job_id:j.input.job_id,review_job_id:reviewJobId,kind:j.intake.kind,brief:j.input.request.brief,title:j.accepted?.editorial?.title||j.accepted?.record?.title||null,created_at:j.created_at,status:j.intake.covered_url?'covered':this.store.observation(`claim:${j.input.job_id}`)&&j.status==='queued'?'claimed':j.status,ack_status:j.ack?.status||null,publication_url:j.intake.covered_url||j.ack?.url||null,preview_available:Boolean(privatePreviewText(j)),status_note:j.intake.covered_url?'Diese Meldung ist bereits veröffentlicht. Es wurde keine Dublette angelegt.':j.last_error?'Ein Prüfschritt braucht Aufmerksamkeit. Der Auftrag bleibt gespeichert.':j.accepted?.reason||null};
+      let research=j;
+      for(let depth=0;depth<2&&research.intake?.news_repair_job_id;depth++){
+        const next=this.store.get(research.intake.news_repair_job_id);
+        if(next?.intake?.owner!==owner)break;
+        research=next;
+      }
+      const researchStatus=research.intake?.news_research_hold?'hold':j.intake.news_repair_job_id?'queued':null;
+      return {job_id:j.input.job_id,review_job_id:reviewJobId,kind:j.intake.kind,brief:j.input.request.brief,title:j.accepted?.editorial?.title||j.accepted?.record?.title||j.intake.news_research?.title||null,created_at:j.created_at,status:j.intake.covered_url?'covered':this.store.observation(`claim:${j.input.job_id}`)&&j.status==='queued'?'claimed':j.status,ack_status:j.ack?.status||null,publication_url:j.intake.covered_url||j.ack?.url||null,preview_available:Boolean(privatePreviewText(j)),research_status:researchStatus,status_note:j.intake.covered_url?'Diese Meldung ist bereits veröffentlicht. Es wurde keine Dublette angelegt.':researchStatus==='hold'?'Die Quellenbasis reicht noch nicht aus. Der Auftrag bleibt zur redaktionellen Klärung gespeichert.':researchStatus==='queued'?'Die Quellenbasis wird redaktionell nachrecherchiert. Anschließend folgen Nachrichtenprüfung und Vorschau.':j.last_error?'Ein Prüfschritt braucht Aufmerksamkeit. Der Auftrag bleibt gespeichert.':j.accepted?.reason||null};
     });
   }
   preview(owner,id){

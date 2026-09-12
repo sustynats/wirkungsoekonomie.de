@@ -49,8 +49,9 @@ Ziel fünf bis zehn normale Jobs, vertiefte Recherche darf weniger ergeben. Vor
 jedem weiteren Claim prüfen, ob eine vollständige Bearbeitung noch realistisch
 ist. Kein Vorab-Claim eines ganzen Batches. Begonnene Arbeit nicht als fertig ausgeben.
 
-Priorität gemäß `lifo-source-2026-09-12`: urgent/breaking, neue Nachrichten mit
-Ereignisbeleg aus der letzten Stunde, direkte Nutzeraufträge, Updates/Korrekturen
+Priorität gemäß `manual-first-lifo-2026-09-12`: urgent/breaking, direkte
+Nutzeraufträge einschließlich ihrer Nachrecherche, neue Nachrichten mit
+Ereignisbeleg aus der letzten Stunde, Updates/Korrekturen
 und wartende Zweitprüfungen, critical/very_high, high, reguläre neue Meldungen,
 historischer Backfill. Innerhalb der Klasse bestimmt der tatsächliche
 Quellenzeitpunkt LIFO. Ein späterer Requeue macht eine alte Meldung nicht aktuell.
@@ -136,3 +137,27 @@ Reparatur oder Import. Ältere Nachlieferungen behalten auch öffentlich ihren
 ursprünglichen Platz; sie werden nicht als Neu-Meldung angekündigt.
 Native Dateiregistrierung, Sicherheitsablehnungen und jede Freigabe bleiben
 unverändert. Ein erfolgreiches Preflight zählt weiterhin nicht als Artikel.
+
+## Vorrang direkter Aufträge und Dateiexport vom 12.09.2026
+
+Die ausdrückliche erneute Priorisierung durch Natalie ersetzt die Reihenfolge
+der vorstehenden Präzisierung: `manual-first-lifo-2026-09-12`, Vertrag
+`processor-contract-2026-09-12-5.json`. Direkte Aufträge und ihre Nachrecherchen
+kommen nach Breaking/urgent und vor automatisch erkannten Nachrichten der
+letzten Stunde. Innerhalb jeder Klasse bleibt LIFO erhalten.
+
+Ein privates Recherchepaket ohne nutzbare Ereignisquellen ist noch kein fertiger
+Artikel. Der Server erzeugt höchstens zwei versionierte Nachrecherchen mit neuer
+Job-ID, während ursprünglicher Input, Output und ACK unverändert bleiben.
+Danach bleibt der Auftrag zur Klärung gespeichert. Vorübergehende Abruffehler
+behalten ihren zeitlich begrenzten Wiederholungsversuch. Die finale Freigabe wird
+dadurch nicht ersetzt.
+
+Der geplante Lauf muss sein tatsächlich verfügbares Dateiexport-Werkzeug prüfen:
+Eine nur in einer privaten Python-Runtime erzeugte Datei ist kein nachgewiesen
+exportierbares Gesprächsartefakt. Die neue harmlose Probe wird über das native
+dateiexportierende Werkzeug erstellt (im geprüften manuellen Kontext
+`python_user_visible.exec`), anschließend nativ übertragen und zurückgelesen.
+Fehlt dieses Werkzeug im geplanten Kontext, keine Artikel claimen. Eine bereits
+zurückgewiesene Datei niemals durch anderen Transport oder bloße Neuregistrierung
+übertragen; Datei-/Approval-/Safety-Sperren bleiben verbindlich.
