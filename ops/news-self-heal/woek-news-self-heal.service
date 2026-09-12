@@ -1,0 +1,17 @@
+[Unit]
+Description=Bounded Wirkungsticker recovery and publication verification
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/local/lib/woek-news-self-heal/news-self-heal.py
+TimeoutStartSec=90
+MemoryMax=64M
+CPUQuota=10%
+Nice=10
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/woek-news-bridge
