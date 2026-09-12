@@ -16,12 +16,13 @@
     "bridge-publication-flow": {
       "firstSeen": "2026-09-12T04:05:38.205Z",
       "active": true
-    },
-    "bridge-shards": {
-      "firstSeen": "2026-09-12T05:14:50.523Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "4d9cc21868f3657b48daa229",
+      "content": "✓ WÖk-Störung behoben\nVollständigkeit der Redaktionsworker\nPrüfung: 2026-09-12T05:50:19.940Z"
+    }
+  ],
   "dailyDate": "2026-09-11"
 }
