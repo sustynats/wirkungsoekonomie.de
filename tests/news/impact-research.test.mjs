@@ -127,3 +127,29 @@ test('publisher crawl delay preserves verified source progress and supplies a re
   assert.equal(fetched,1); assert.equal(robotsRequests,1);
   assert.equal(bridge.data.size,1); // the first verified excerpt survives
 });
+
+test('inline HTML punctuation spacing does not reject a verbatim research quote', async () => {
+  const bridge=fixture(); let calls=0;
+  const original='2027 wird das dritte Jahr in Folge mit Investitionen auf Rekordniveau.';
+  const candidate={...source,quote:original};
+  const fetchDocument=async()=>{calls++;return {body:'<article><p>2027 wird das dritte Jahr in Folge mit Investitionen auf <strong>Rekordniveau</strong>.</p></article>'};};
+  const result=await verifyImpactResearch(bridge,[candidate],[],now,{fetchDocument});
+  assert.equal(result[0].research_verification.status,'source_text_verified');
+  assert.ok(result[0].article_excerpt.includes(original.toLowerCase()));
+  await verifyImpactResearch(bridge,[candidate],[],now,{fetchDocument});
+  assert.equal(calls,1);
+});
+
+test('punctuation normalization preserves words, negation and numerical claims', async () => {
+  for(const [actual,claimed] of [
+    ['Die Kosten betragen nach dem veröffentlichten Bericht 1 .5 Milliarden Euro.','Die Kosten betragen nach dem veröffentlichten Bericht 1.5 Milliarden Euro.'],
+    ['Die Investitionen wachsen laut dem veröffentlichten Bericht nicht weiter.','Die Investitionen wachsen laut dem veröffentlichten Bericht weiter.'],
+    ['Die Investitionen wachsen laut dem veröffentlichten Bericht langsamer.','Die Investitionen wachsen laut dem veröffentlichten Bericht schneller.'],
+    ['Die Kosten betragen nach dem veröffentlichten Bericht 1,5 Milliarden Euro.','Die Kosten betragen nach dem veröffentlichten Bericht 15 Milliarden Euro.'],
+  ]) {
+    const bridge=fixture();
+    await assert.rejects(verifyImpactResearch(bridge,[{...source,quote:claimed}],[],now,{fetchDocument:async()=>({body:`<article>${actual}</article>`})}),
+      {message:`IMPACT_RESEARCH_QUOTE_NOT_FOUND:${source.source_id}`});
+    assert.equal(bridge.data.size,0);
+  }
+});
