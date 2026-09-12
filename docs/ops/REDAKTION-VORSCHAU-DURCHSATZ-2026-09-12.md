@@ -18,6 +18,8 @@ Der native Import verlangte zusätzlich zu einem gültigen Impact-Assessment 2.1
 
 ## Unveränderte Grenzen
 
+Die zusätzliche Prüfung freigegebener privater Nachrichten verwendete nur Ereignisquellen und ließ die bereits geprüften `impact_sources` weg. Dadurch wurden gültige Mechanismusbelege beim Freigeben oder Importieren fälschlich als unbekannt verworfen. Beide Quellengruppen werden jetzt wie im zentralen Validator berücksichtigt. Der Regressionstest bestätigt, dass derselbe Datensatz ohne den erforderlichen Kontextbeleg weiterhin gesperrt bleibt. Freigabe und Versionsbindung bleiben unverändert.
+
 Keine Lockerung der Quellen-, Fakten-, MPD- oder Freigabegates. Keine Erfindung von Autorenmeinungen. Kein Übergehen eines fehlgeschlagenen Transports. Kein neuer Dienst und keine zusätzlichen kostenpflichtigen Anbieter. Die Änderungen am Monitor und Processor werden von den bestehenden GitHub-Läufen genutzt; keine neue lokale Automation ist erforderlich.
 
 ## Prüfung
