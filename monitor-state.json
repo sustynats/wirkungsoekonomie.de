@@ -17,15 +17,20 @@
       "firstSeen": "2026-09-12T04:05:38.205Z",
       "active": true
     },
-    "bridge-import": {
-      "firstSeen": "2026-09-12T04:05:38.205Z",
-      "active": true
-    },
     "bridge-shards": {
       "firstSeen": "2026-09-12T05:14:50.523Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "14187d5fdb03db3a85f2e543",
+      "content": "⚠ WÖk-Betriebsstörung\nVollständigkeit der Redaktionsworker: Mindestens einer der drei Redaktionsworker hat keinen aktuellen Verfügbarkeitsnachweis. Ein einzelner erreichbarer Worker belegt keine vollständige Verarbeitungskapazität.\nSeit: 2026-09-12T05:14:50.523Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "28bb1010981dd93d38b1e728",
+      "content": "✓ WÖk-Störung behoben\nÜbernahme fertiger Meldungen\nPrüfung: 2026-09-12T05:33:43.562Z"
+    }
+  ],
   "dailyDate": "2026-09-11"
 }
