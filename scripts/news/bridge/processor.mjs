@@ -191,6 +191,15 @@ export function protectedCurrentCandidate(candidate) {
 
 export function processorHealth({ jobs, receipts = [], throughput = {}, metrics = {}, now }) {
   const open = jobs.filter(j => !closed.has(j.status) && !j.ack);
+  const currentNews = open.filter(j => !isHistoricalJob(j) && inputLineage(j).some(i => ['new_story','story_update'].includes(i.job_type)));
+  const newsStages = { awaiting_output:0, awaiting_second_pass:0, needs_editorial_repair:0, awaiting_import:0 };
+  for (const job of currentNews) {
+    const stage = job.accepted?.record ? 'awaiting_import'
+      : job.publication_gate?.status === 'needs_second_pass' ? 'awaiting_second_pass'
+      : job.last_error || ['needs_review','blocked'].includes(job.publication_gate?.status) ? 'needs_editorial_repair'
+      : 'awaiting_output';
+    newsStages[stage]++;
+  }
   const age = j => Math.max(0, (Date.parse(now) - Date.parse(j.created_at || j.input?.created_at)) / 60000) || 0;
   const fresh = receipts.filter(r => r.context?.kind === 'automation' && validTime(r.checked_at)
     && Date.parse(now) >= Date.parse(r.checked_at) && Date.parse(now) - Date.parse(r.checked_at) < 90 * 60000);
@@ -211,10 +220,12 @@ export function processorHealth({ jobs, receipts = [], throughput = {}, metrics 
   if (open.length > 20) alerts.push('QUEUE_CRITICAL'); else if (open.length > 10) alerts.push('QUEUE_WARNING');
   if (overloaded) alerts.push('PROCESSING_CAPACITY_INSUFFICIENT');
   if (!workers.some(w => w.processor_available)) alerts.push('CHATGPT_DROPBOX_UNAVAILABLE');
+  else if (open.length && !workers.every(w => w.processor_available)) alerts.push('PROCESSOR_SHARD_UNAVAILABLE');
   return { version: PROCESSOR_VERSION, checked_at: now, processor_available: workers.some(w => w.processor_available),
     all_shards_available: workers.every(w => w.processor_available), dropbox_read_ok: workers.some(w => w.dropbox_read_ok),
     dropbox_write_ok: workers.some(w => w.dropbox_write_ok), workers,
-    open_jobs: open.length, oldest_open_job_age_minutes: Math.max(0, ...open.map(age)),
+    open_jobs: open.length, current_news_open:currentNews.length, current_news_stages:newsStages,
+    oldest_current_news_age_minutes:Math.max(0,...currentNews.map(age)), oldest_open_job_age_minutes: Math.max(0, ...open.map(age)),
     incoming_jobs_last_hour: fullHour ? events.filter(e => e.type === 'incoming').length : null,
     completed_jobs_last_hour: fullHour ? events.filter(e => e.type === 'completed').length : null,
     throughput_coverage_started_at: throughput.coverage_started_at || null,

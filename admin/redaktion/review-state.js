@@ -9,6 +9,34 @@ export const approvalStates = {
   PUBLISHED: 'Veröffentlicht',
 };
 
+const requestStates = {
+  draft: 'Noch nicht abgesendet', intake_prepared: 'Wird vorbereitet', queued: 'Wartet auf Bearbeitung',
+  claimed: 'In Bearbeitung', accepted: 'Wird übernommen', acknowledged: 'Abgeschlossen',
+  quarantined: 'Bearbeitung blockiert', archive_failed: 'Übernommen · Archivierung offen',
+};
+
+export function requestPresentation(request) {
+  if (request.review_status) return {
+    label: approvalStates[request.review_status] || 'Wird geprüft',
+    attention: ['NEEDS_REVIEW', 'REVISION_REQUESTED', 'HOLD'].includes(request.review_status),
+    description: request.status_note || '',
+  };
+  if (request.publication_url) return {label: 'Veröffentlicht', attention: false, description: ''};
+  if (['quarantined', 'archive_failed'].includes(request.status) || request.ack_status === 'hold') return {
+    label: requestStates[request.status] || 'Prüfung erforderlich', attention: true,
+    description: request.status_note || 'Die Redaktion muss einen Prüfschritt klären. Der Auftrag ist gespeichert.',
+  };
+  if (request.ack_status === 'reject') return {label: 'Nicht zur Veröffentlichung geeignet', attention: true, description: request.status_note || ''};
+  // Staging is a transport receipt, not proof of a complete, approvable article.
+  if (request.preview_available || request.ack_status === 'staged') return {
+    label: request.preview_available ? 'Zwischenstand vorhanden' : 'Weiterverarbeitung läuft', attention: false,
+    description: request.preview_available
+      ? 'Du kannst den bisherigen Text lesen. Die vollständige Fassung erscheint nach der Prüfung unter „Freigeben“.'
+      : 'Das Rechercheergebnis wurde übernommen. Eine vollständige Vorschau zur Freigabe liegt noch nicht vor.',
+  };
+  return {label: requestStates[request.status] || 'Wird geprüft', attention: false, description: request.status_note || ''};
+}
+
 const priority = {
   AWAITING_FINAL_APPROVAL: 0, NEEDS_REVIEW: 0, REVISION_REQUESTED: 1,
   APPROVED_FOR_PUBLICATION: 2, PUBLISHING: 2, HOLD: 3, PUBLISHED: 4, SKIPPED: 4,
