@@ -2,6 +2,15 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {requestWithReview, orderedReviews, requestPresentation} from '../../admin/redaktion/review-state.js';
 
+test('a source repair is not described as a completed draft or completed receipt',()=>{
+ for(const state of ['queued','hold']){
+  const display=requestPresentation({ack_status:'staged',status:'acknowledged',research_status:state,status_note:'Die Quellenbasis wird geprüft.'});
+  assert.equal(display.label,state==='hold'?'Quellenklärung erforderlich':'Nachrecherche beauftragt');
+  assert.equal(display.attention,state==='hold');assert.equal(display.description,'Die Quellenbasis wird geprüft.');
+ }
+ assert.equal(requestPresentation({research_status:'queued',review_status:'PUBLISHED'}).label,'Veröffentlicht');
+});
+
 test('a transport staging receipt cannot promise an approvable draft',()=>{
  assert.equal(requestPresentation({ack_status:'staged'}).label,'Weiterverarbeitung läuft');
  assert.equal(requestPresentation({ack_status:'staged',preview_available:true}).label,'Zwischenstand vorhanden');
