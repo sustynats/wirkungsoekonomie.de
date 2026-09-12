@@ -19,9 +19,14 @@
     },
     "bridge-shards": {
       "firstSeen": "2026-09-12T07:58:31.123Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "70f8dbc79ce9b9f71b18da05",
+      "content": "⚠ WÖk-Betriebsstörung\nVollständigkeit der Redaktionsworker: Mindestens einer der drei Redaktionsworker hat keinen aktuellen Verfügbarkeitsnachweis. Ein einzelner erreichbarer Worker belegt keine vollständige Verarbeitungskapazität.\nSeit: 2026-09-12T07:58:31.123Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-12"
 }
