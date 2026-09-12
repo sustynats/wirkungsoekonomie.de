@@ -6,6 +6,15 @@ import {hash,bridgePath} from './contract.mjs';
 import {sourceIntegrityForStory} from '../source-integrity.mjs';
 
 const host=url=>new URL(url).hostname.replace(/^www\./,'');
+// Project only matching metadata inside SQLite; manuscripts/staging must never
+// be materialized in Node merely to locate an existing event in a large queue.
+export function existingIntakeNewsJob(store,candidate){
+ for(const row of store.db.prepare("SELECT id,json_extract(body,'$.candidate') AS candidate FROM jobs WHERE json_extract(body,'$.input.job_type') IN ('new_story','story_update','correction') AND json_extract(body,'$.intake_news_parent') IS NULL").iterate()){
+  const other=JSON.parse(row.candidate||'null');
+  if(other?.sources&&sameBridgeEvent(candidate,other))return row.id;
+ }
+ return null;
+}
 // The preliminary editorial packet is research input. News only reaches the
 // approval screen after the normal native analysis AND independent review.
 export async function prepareIntakeNews({store,transport,registry,now=()=>new Date().toISOString(),fetchArticle=fetchPublicArticle}){
@@ -41,8 +50,8 @@ export async function prepareIntakeNews({store,transport,registry,now=()=>new Da
     sources,first_seen:first,event_first_seen_at:first,event_detected_at:now(),content_hash:hash({sources,request:parent.input.request}),published:false};
    candidate.preanalysis=preAnalyzeStory(candidate,now());candidate.topic=candidate.preanalysis.topics;
    candidate.claims=claimLedgerFor(sources,candidate.story_id,now());candidate.evidence_groups=evidenceGroups(sources);
-   const existing=store.db.prepare("SELECT body FROM jobs").all().map(r=>JSON.parse(r.body)).find(j=>['new_story','story_update','correction'].includes(j.input.job_type)&&!j.intake_news_parent&&sameBridgeEvent(candidate,j.candidate));
-   if(existing){parent.intake.news_job_id=existing.input.job_id;parent.intake.news_shared=true;store.put(parent);continue;}
+   const existing=existingIntakeNewsJob(store,candidate);
+   if(existing){parent.intake.news_job_id=existing;parent.intake.news_shared=true;store.put(parent);continue;}
    const input=bridgeInput(candidate,now());
    input.discovery.importance_signals.push('manual_editorial_request');
    if(parent.input.request.urgent)input.discovery.importance_signals.push('urgent_manual_editorial_request');

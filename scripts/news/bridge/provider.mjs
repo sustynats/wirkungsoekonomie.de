@@ -1,3 +1,4 @@
+import { currentEvidence, latestEvidenceTime } from '../discovery-admission.mjs';
 import { retainPotentialHistory } from '../impact-potential.mjs';
 import { ensureSemanticReview, importSemanticReviews } from './semantic-review.mjs';
 import { migrateImpactAssessment, impactClaimLedger, withMagnitudeCalculations } from '../impact-assessment.mjs';
@@ -16,14 +17,17 @@ export class DropboxChatGPTBridgeProvider {
     if (!Number.isInteger(retentionDays) || retentionDays < 30) throw new Error('BRIDGE_RETENTION_INVALID');
     Object.assign(this, { store, transport, visualProvider, editorialEnabled, correctionsEnabled, stageOnly, maxJobs, maxPending, retentionDays, adapt, semanticReview });
   }
-  async selectCandidates(candidates) {
+  async selectCandidates(candidates, now = new Date().toISOString()) {
     const checkpoints = await this.store.observation('source-checkpoints') || {};
     const active = (await this.store.all()).filter(j => !terminal.has(j.status));
     const activeRequests = active.filter(j => j.input.job_type !== 'impact_semantic_review');
     const selected = [];
-    for (const candidate of candidates) {
+    const urgent = c => Number(c.urgent === true || c.preanalysis?.event_score?.priority === 'TOP');
+    for (const candidate of [...candidates].sort((a,b) => urgent(b)-urgent(a)
+      || Number(currentEvidence(b,now,1))-Number(currentEvidence(a,now,1))
+      || latestEvidenceTime(b,now)-latestEvidenceTime(a,now))) {
       if (selected.length >= this.maxJobs) break;
-      if (activeRequests.length + selected.length >= this.maxPending && !protectedCurrentCandidate(candidate)) continue;
+      if (activeRequests.length + selected.length >= this.maxPending && !protectedCurrentCandidate(candidate, now)) continue;
       if (checkpoints[candidate.story_id] === candidate.content_hash || active.some(j => newsJob(j) && sameBridgeEvent(candidate, j.candidate)) || selected.some(c => sameBridgeEvent(candidate,c))) continue;
       selected.push(candidate);
     }
@@ -40,7 +44,7 @@ export class DropboxChatGPTBridgeProvider {
     }
     for (const candidate of candidates) {
       if (created >= this.maxJobs) break;
-      if (jobs.filter(j => !terminal.has(j.status) && j.input.job_type !== 'impact_semantic_review').length >= this.maxPending && !protectedCurrentCandidate(candidate)) continue;
+      if (jobs.filter(j => !terminal.has(j.status) && j.input.job_type !== 'impact_semantic_review').length >= this.maxPending && !protectedCurrentCandidate(candidate, now)) continue;
       const input = bridgeInput(candidate, now, { stories, testOnly });
       let job = await this.store.get(input.job_id);
       if (!job) {

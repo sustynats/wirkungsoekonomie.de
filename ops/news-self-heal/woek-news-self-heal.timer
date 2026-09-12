@@ -1,0 +1,11 @@
+[Unit]
+Description=Check Wirkungsticker services and real publication every minute
+
+[Timer]
+OnBootSec=90
+OnUnitInactiveSec=60
+AccuracySec=5s
+Unit=woek-news-self-heal.service
+
+[Install]
+WantedBy=timers.target
