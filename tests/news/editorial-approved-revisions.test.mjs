@@ -68,6 +68,13 @@ test('new contract requires Meine Einordnung last, metadata may follow, historic
  const s=setup(),{job,preview}=input();delete preview.editorial_revision;preview.markdown='## Ein älterer Entwurf\n\n'+('Dieser Testtext hat eine ältere Struktur und wird nicht automatisch nachträglich umgeschrieben. ').repeat(2);
  assert.throws(()=>s.stage(job,preview),/FINAL_PERSPECTIVE_REQUIRED/);delete job.input.contract_path;assert.doesNotThrow(()=>s.stage(job,preview));s.db.close();
 });
+
+test('contract 4 retains the personal closing-section gate',()=>{
+ const s=setup(),{job,preview}=input();job.input.contract_path='/98_CONFIG/editorial-request-contract-4.json';
+ delete preview.editorial_revision;
+ preview.markdown='## Meine Einordnung\n\nEin Urteil.\n\n## Späterer Hauptabschnitt\n\n'+('Ein synthetischer nachträglicher Haupttext. ').repeat(5);
+ assert.throws(()=>s.stage(job,preview),/FINAL_PERSPECTIVE_REQUIRED/);s.db.close();
+});
 test('ordinary Dropbox import binds an existing revision to server data and stages without publication',async t=>{
  const s=setup(),{job,preview}=input();
  Object.assign(job.input,{job_type:'editorial_request',input_hash:'1'.repeat(64),created_at:'2026-09-10T21:00:00Z',request:{kind:preview.format,links:preview.sources.map(v=>v.url)}});

@@ -11,7 +11,7 @@ import {bridgePath} from './contract.mjs';
 import {EditorialIntake} from './intake.mjs';
 import {EditorialApproval} from './editorial-approval.mjs';
 import {createEditorialIntakeHandler,existingAdminAuthorizer} from './intake-http.mjs';
-import {EDITORIAL_REQUEST_CONTRACT,importEditorialPreviews} from './intake-processing.mjs';
+import {EDITORIAL_REQUEST_CONTRACT,EDITORIAL_REQUEST_CONTRACT_V4,importEditorialPreviews} from './intake-processing.mjs';
 
 const directory=process.env.WOEK_NEWS_BRIDGE_DIRECTORY,owner=process.env.WOEK_EDITORIAL_OWNER_DISCORD_ID;
 if(!path.isAbsolute(directory||'')||!/^\d{15,22}$/.test(owner||''))throw Error('EDITORIAL_PRIVATE_CONFIGURATION_REQUIRED');
@@ -25,6 +25,7 @@ const approval=new EditorialApproval(store.db),intake=new EditorialIntake({store
 const admin=existingAdminAuthorizer();
 const handler=createEditorialIntakeHandler({intake,approval,authorize:async req=>(await admin(req))===owner?owner:null});
 await transport.writeAtomic(bridgePath('98_CONFIG','editorial-request-contract-3.json'),EDITORIAL_REQUEST_CONTRACT);
+await transport.writeAtomic(bridgePath('98_CONFIG','editorial-request-contract-4.json'),EDITORIAL_REQUEST_CONTRACT_V4);
 const notificationFile=path.join(directory,'editorial-discord.json');
 const notificationConfig=fs.existsSync(notificationFile)?JSON.parse(fs.readFileSync(notificationFile)):null;
 const registry=loadNewsRegistry(process.cwd());
