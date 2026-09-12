@@ -3,8 +3,8 @@ import { createHash, randomUUID } from 'node:crypto';
 import { bridgePath, hash, JOB_ID } from './contract.mjs';
 
 export const PROCESSOR_VERSION = '2026-09-11-2';
-export const PROCESSOR_CONTRACT = "processor-contract-2026-09-11-3.json";
-export const PROCESSOR_QUEUE_POLICY = "lifo-2026-09-11";
+export const PROCESSOR_CONTRACT = "processor-contract-2026-09-12-4.json";
+export const PROCESSOR_QUEUE_POLICY = "lifo-source-2026-09-12";
 export const PROCESSOR_SHARDS = Object.freeze([
   { id: 'A', index: 0, minute: 0 }, { id: 'B', index: 1, minute: 20 }, { id: 'C', index: 2, minute: 40 },
 ]);

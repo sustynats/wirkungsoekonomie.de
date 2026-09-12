@@ -49,11 +49,14 @@ Ziel fünf bis zehn normale Jobs, vertiefte Recherche darf weniger ergeben. Vor
 jedem weiteren Claim prüfen, ob eine vollständige Bearbeitung noch realistisch
 ist. Kein Vorab-Claim eines ganzen Batches. Begonnene Arbeit nicht als fertig ausgeben.
 
-Priorität: urgent/breaking, Updates/Korrekturen und wartende Zweitprüfungen,
-critical/very_high, high, reguläre neue Meldungen, historischer Backfill. Altern
-erhöht die Priorität schrittweise; normale Jobs verdrängen dadurch keine aktuellen
-Updates oder dringenden Aufträge. Die Trennung von Nachrichten und persönlicher
-Redaktion sowie deren abschließende Freigabe bleibt bestehen.
+Priorität gemäß `lifo-source-2026-09-12`: urgent/breaking, neue Nachrichten mit
+Ereignisbeleg aus der letzten Stunde, direkte Nutzeraufträge, Updates/Korrekturen
+und wartende Zweitprüfungen, critical/very_high, high, reguläre neue Meldungen,
+historischer Backfill. Innerhalb der Klasse bestimmt der tatsächliche
+Quellenzeitpunkt LIFO. Ein späterer Requeue macht eine alte Meldung nicht aktuell.
+Ohne Quellenzeit dient die Eingabezeit als Sortierhilfe, nicht als Aktualitätsbeleg.
+Die Trennung von Nachrichten und persönlicher Redaktion sowie deren abschließende
+Freigabe bleibt bestehen.
 
 ## Claim und Output
 
@@ -85,7 +88,8 @@ unterscheidet einen funktionierenden Shard vom vollständigen Betrieb.
 Mehr als zehn offene Jobs: QUEUE_WARNING. Mehr als zwanzig: QUEUE_CRITICAL.
 Bei kritischer Queue keine neuen historischen Neubewertungen starten. Kandidaten
 werden behalten; aktuelle TOP/HIGH-Meldungen und Updates dürfen die weiche
-Queue-Grenze passieren, pro Discovery-Lauf bleibt das vorhandene Batchlimit.
+Queue-Grenze passieren, ebenso tatsächlich neue Quellen aus den letzten drei
+Stunden. Pro Discovery-Lauf bleibt das vorhandene Batchlimit.
 Discovery, aktuelle Nachrichten und Import werden dafür nicht abgeschaltet.
 
 Eingänge und dauerhafte Abschlüsse werden beim erstmaligen Speichern gezählt;
@@ -121,3 +125,14 @@ nicht. Bereits laufende Claims bleiben geschützt. Shards, Preflight, unverände
 Outputs, Quellenprüfung, unabhängiger Fachpass und finale persönliche Freigabe
 bleiben verbindlich. Die Rückkehr zu einer anderen Routinepriorisierung erfordert
 eine neue explizite Policy-Version.
+
+## Präzisierung vom 12.09.2026
+
+Die vorstehende Fassung vom 11.09. wird durch Queue-Policy
+`lifo-source-2026-09-12`, Vertrag `processor-contract-2026-09-12-4.json`, präzisiert:
+Nach Breaking/urgent haben die Nachrichten der letzten Stunde Vorrang. LIFO
+bezieht sich bei Nachrichten auf Originalquellen, nicht auf Wiederaufnahme,
+Reparatur oder Import. Ältere Nachlieferungen behalten auch öffentlich ihren
+ursprünglichen Platz; sie werden nicht als Neu-Meldung angekündigt.
+Native Dateiregistrierung, Sicherheitsablehnungen und jede Freigabe bleiben
+unverändert. Ein erfolgreiches Preflight zählt weiterhin nicht als Artikel.
