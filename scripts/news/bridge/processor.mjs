@@ -1,9 +1,10 @@
+import { currentEvidence, latestEvidenceTime } from '../discovery-admission.mjs';
 import { createHash, randomUUID } from 'node:crypto';
 import { bridgePath, hash, JOB_ID } from './contract.mjs';
 
 export const PROCESSOR_VERSION = '2026-09-11-2';
-export const PROCESSOR_CONTRACT = "processor-contract-2026-09-11-3.json";
-export const PROCESSOR_QUEUE_POLICY = "lifo-2026-09-11";
+export const PROCESSOR_CONTRACT = "processor-contract-2026-09-12-4.json";
+export const PROCESSOR_QUEUE_POLICY = "lifo-source-2026-09-12";
 export const PROCESSOR_SHARDS = Object.freeze([
   { id: 'A', index: 0, minute: 0 }, { id: 'B', index: 1, minute: 20 }, { id: 'C', index: 2, minute: 40 },
 ]);
@@ -88,12 +89,14 @@ export function isHistoricalJob(value) {
   return value?.backfill===true||inputLineage(value).some(input=>input.job_type==='impact_reassessment'
     ||input.backfill===true||input.discovery?.trigger_type==='backfill');
 }
-export function processorPriority(value, _now) {
+export function processorPriority(value, now) {
   if(isHistoricalJob(value))return 0;
   const lineage=inputLineage(value),input=lineage[0]||{},candidate=value.candidate||{};
   const importance=input.systemic_relevance||candidate.impact_assessment?.systemic_relevance;
   const tier=input.editorial_priority||candidate.preanalysis?.event_score?.priority;
   if(lineage.some(i=>i.urgent||i.request?.urgent||i.discovery?.importance_signals?.includes('urgent_manual_editorial_request'))||candidate.urgent||tier==='TOP')return 600;
+  if (lineage.some(i => ['new_story','story_update'].includes(i.job_type))
+    && currentEvidence(candidate.sources?.length ? candidate : { sources: lineage.flatMap(i => i.sources || []) }, now, 1)) return 580;
   if(lineage.some(i=>i.job_type==='editorial_request'||i.manual_request===true||i.discovery?.importance_signals?.includes('manual_editorial_request'))||value.intake_news_parent||candidate.manual_request)return 550;
   if(['story_update','correction','impact_semantic_review'].includes(input.job_type))return 500;
   if(['critical','very_high'].includes(importance))return 400;
@@ -105,6 +108,7 @@ export function selectProcessorBatch(jobs, shard, now, { maxJobs = 10, queueCrit
     && JOB_ID.test((j.input || j).job_id) && processorShard((j.input || j).job_id) === shard
     && !(queueCritical && isHistoricalJob(j)))
     .sort((a, b) => processorPriority(b, now) - processorPriority(a, now)
+      || latestEvidenceTime(b.candidate || b.input || b, now) - latestEvidenceTime(a.candidate || a.input || a, now)
       || String((b.input || b).created_at).localeCompare(String((a.input || a).created_at))
       || (a.input || a).job_id.localeCompare((b.input || b).job_id))
     .slice(0, Math.max(1, Math.min(10, maxJobs)));
@@ -184,9 +188,10 @@ export async function finishProcessorRun(transport, run, completed, now) {
   return result;
 }
 
-export function protectedCurrentCandidate(candidate) {
+export function protectedCurrentCandidate(candidate, now = new Date().toISOString()) {
   return !isHistoricalJob(candidate) && (Boolean(candidate.existing_story?.published) || candidate.urgent === true
-    || ['TOP', 'HIGH'].includes(candidate.preanalysis?.event_score?.priority));
+    || ['TOP', 'HIGH'].includes(candidate.preanalysis?.event_score?.priority)
+    || currentEvidence(candidate, now));
 }
 
 export function processorHealth({ jobs, receipts = [], throughput = {}, metrics = {}, now }) {

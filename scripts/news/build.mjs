@@ -10,7 +10,7 @@ import { EDITORIAL_TRANSPARENCY_NOTE, editorialLabel, isEditorialCommentary, isC
 import { renderEditorialFinding, renderAuthorPerspective, renderEditorialBalance } from "./editorial-judgment.mjs";
 import { relatedEditorialAnalyses, renderRelatedEditorialAnalyses, renderEditorialParagraphs } from "./editorial-presentation.mjs";
 import fs from "node:fs";
-import { feedDate, mixedFeedItems, assertChronologicalFeedHtml } from "./feed-order.mjs";
+import { feedDate, originalNewsDate, isLateNewsDelivery, mixedFeedItems, assertChronologicalFeedHtml } from "./feed-order.mjs";
 import { publicTitleImage } from "./title-image/pipeline.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -32,7 +32,7 @@ import {applyApprovedEditorialRevisions} from './editorial-approved-revisions.mj
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260910-impact-backfill-hold";
+const PUBLIC_RELEASE = "20260912-news-freshness";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
@@ -119,12 +119,7 @@ export function formatEditorialSourceDate(source) {
 }
 
 function firstSourceDate(story) {
-  const timestamps = (story.sources || [])
-    .filter(source => !["legal_context", "election_calendar", "background"].includes(source.source_role))
-    .map((source) => Date.parse(source.published_at || ""))
-    .filter(Number.isFinite)
-    .sort((a, b) => a - b);
-  return timestamps.length ? new Date(timestamps[0]).toISOString() : story.first_seen;
+  return originalNewsDate(story) || story.first_seen;
 }
 
 function list(items, className = "") {
@@ -306,11 +301,11 @@ export function storyCard(story, index, {privateImpactPreview = false} = {}) {
   const updateBanner = renderUpdateBanner(story);
   const href = storyHref(story);
   const visual = renderStoryVisual(story, { href, loading: index === 0 ? "eager" : "lazy", sourceLabel: `${publisherLabel} · Ausgangsmeldung ${formatDate(firstSourceDate(story), { dateOnly: true })}`, impactContext:{privateImpactPreview} });
-  return `<article class="news-card${visual ? " news-card--visual" : ""}${index === 0 ? " news-card--lead" : ""}" ${privateImpactPreview ? 'data-private-impact-preview ' : ''}id="story-${escapeHtml(story.slug)}" data-news-card data-news-story-id="${escapeHtml(story.slug)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topics)}" data-dimensions="${escapeHtml(dimensionKeys)}" data-high-impact="${high}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(feedDate(story))}">
+  return `<article class="news-card${visual ? " news-card--visual" : ""}${index === 0 ? " news-card--lead" : ""}" ${privateImpactPreview ? 'data-private-impact-preview ' : ''}id="story-${escapeHtml(story.slug)}" data-news-card data-news-story-id="${escapeHtml(story.slug)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topics)}" data-dimensions="${escapeHtml(dimensionKeys)}" data-high-impact="${high}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(feedDate(story))}" data-news-late-delivery="${isLateNewsDelivery(story)}">
   ${updateBanner}
   <div class="news-card__topline">
     <span class="news-card__topic">${renderIcon(topicIcon(story.topic), "wt-icon--topic")}<span class="card-kicker">${escapeHtml((story.topic || []).slice(0, 3).join(" · "))}</span></span>
-    <span class="news-card__flags">${updateBanner ? "" : '<span class="news-badge news-badge--new" data-news-new-badge hidden>Neu</span>'}${caseFileBadge(story)}${!updateBanner && version > 1 ? `<span class="news-badge news-badge--update">Version ${version}</span>` : ""}${high ? `<span class="news-badge news-badge--high">${escapeHtml(impactProfile.relevance_label)} systemische Relevanz</span>` : ""}</span>
+    <span class="news-card__flags">${updateBanner || isLateNewsDelivery(story) ? "" : '<span class="news-badge news-badge--new" data-news-new-badge hidden>Neu</span>'}${caseFileBadge(story)}${!updateBanner && version > 1 ? `<span class="news-badge news-badge--update">Version ${version}</span>` : ""}${high ? `<span class="news-badge news-badge--high">${escapeHtml(impactProfile.relevance_label)} systemische Relevanz</span>` : ""}</span>
   </div>
   ${visual}
   <div class="news-card__body">
@@ -812,7 +807,7 @@ function feedXml(items, updatedAt, atom = false) {
 
 function combinedFeedItems(stories, analyses) {
   return [
-    ...stories.map((story) => ({ id: story.story_id, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, published_at: story.published_at, updated_at: story.last_updated, tags: story.topic, type: "Wirkungsakte" })),
+    ...stories.map((story) => ({ id: story.story_id, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, published_at: feedDate(story), updated_at: feedDate(story), late_delivery: isLateNewsDelivery(story), tags: story.topic, type: "Wirkungsakte" })),
     ...analyses.map((analysis) => ({ id: analysis.analysis_id, url: `${SITE}/wirkungsticker/analyse/${analysis.slug}/`, title: `${editorialLabel(analysis)}: ${analysis.title}`, summary: analysis.teaser, published_at: analysis.published_at, updated_at: analysis.updated_at, tags: [editorialLabel(analysis)], type: editorialLabel(analysis) })),
   ].sort((left, right) => Date.parse(right.updated_at || 0) - Date.parse(left.updated_at || 0));
 }
@@ -894,7 +889,7 @@ export function buildNewsSite() {
   editorialStore.analyses=revisedEditorials.filter(a=>![BOOK_FORMAT,PERSONAL_FORMAT].includes(a.format));
   const manualEditorials = revisedEditorials.filter(a=>[BOOK_FORMAT,PERSONAL_FORMAT].includes(a.format));
   const publicationUpdatedAt = [data.public_updated_at || data.updated_at, editorialStore.updated_at, ...manualEditorials.filter(a => a.status === "published").map(a => a.updated_at)].filter(Boolean).sort((left, right) => Date.parse(right) - Date.parse(left))[0];
-  const activeStories = (data.stories || []).filter((story) => story.published && story.analysis && story.listed !== false).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
+  const activeStories = (data.stories || []).filter((story) => story.published && story.analysis && story.listed !== false).sort((a, b) => Date.parse(feedDate(b)) - Date.parse(feedDate(a)));
   const publicStorySlugs = new Set((data.stories || []).filter(story => story.published && story.analysis).map(story => story.slug));
   const grouping = buildCaseFiles(activeStories);
   const stories = grouping.visibleStories;
@@ -956,7 +951,7 @@ export function buildNewsSite() {
   write(path.join(TICKER_DIR, "feed.json"), JSON.stringify({
     _woek_revision: `${PUBLIC_RELEASE}:${publicationUpdatedAt}`,
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
-    items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, tags: item.tags, _woek_type: item.type })),
+    items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, tags: item.tags, _woek_type: item.type, ...(item.type === "Wirkungsakte" ? { _woek_late_delivery: item.late_delivery } : {}) })),
   }, null, 2));
   write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.2", impact_profile_version: PUBLIC_IMPACT_PROFILE_VERSION || REVIEWED_IMPACT_PROFILE_VERSION, impact_profile_status: PUBLIC_IMPACT_PROFILE_VERSION ? "ready" : REVIEWED_IMPACT_PROFILE_VERSION ? "reviewed_records_only" : "reassessment_in_progress", updated_at: publicationUpdatedAt, stories: stories.map((story) => publicStory(story, editorialByStory.get(story.story_id))), editorial_analyses: editorialAnalyses.map((analysis) => ({ analysis_id: analysis.analysis_id, story_id: analysis.story_id, slug: analysis.slug, title: analysis.title, subtitle: analysis.subtitle, teaser: analysis.teaser, published_at: analysis.published_at, updated_at: analysis.updated_at, reading_time_minutes: analysis.reading_time_minutes, ...(analysis.format === BOOK_FORMAT ? { format: BOOK_FORMAT, manual_only: true, subtype: analysis.subtype, ...(analysis.self_authored_work ? { self_authored_work: true } : {}) } : {}) })) }, null, 2));
   write(MANIFEST_FILE, JSON.stringify({ slugs: [...currentSlugs].sort() }, null, 2));
@@ -968,7 +963,7 @@ export function buildNewsSite() {
   write(path.join(LEGACY_NEWS_DIR, "feed.atom"), feedXml(feedItems, publicationUpdatedAt, true));
   write(path.join(LEGACY_NEWS_DIR, "feed.json"), JSON.stringify({
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
-    items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, tags: item.tags, _woek_type: item.type })),
+    items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, tags: item.tags, _woek_type: item.type, ...(item.type === "Wirkungsakte" ? { _woek_late_delivery: item.late_delivery } : {}) })),
   }, null, 2));
   write(path.join(TICKER_DIR, 'methodik/index.html'), pageShell({title:'Wie der Wirkungsticker Wirkungen bewertet', description:'Richtung, Tragweite, Eintrittsplausibilität und Evidenz: die sechs Faktoren und Schutzgrenzen des Wirkungstickers verständlich erklärt.', canonical:`${SITE}/wirkungsticker/methodik/`, base:'../../', body:impactMethodology({profilesReleased:Boolean(PUBLIC_IMPACT_PROFILE_VERSION)}), jsonLd:{'@context':'https://schema.org','@type':'WebPage',name:'Methodik des Wirkungstickers',url:`${SITE}/wirkungsticker/methodik/`}}));
   const sourceRoutes = buildSourcePages(loadNewsRegistry(ROOT), readJson(path.join(ROOT, "data/news/state.json")), { pageShell, write, escapeHtml, root: ROOT, site: SITE, formatDate });

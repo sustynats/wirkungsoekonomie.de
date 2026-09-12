@@ -147,7 +147,7 @@
       window.localStorage.setItem(lastSeenKey, new Date(newest).toISOString());
       return;
     }
-    const newCards = cards.filter((card) => Date.parse(card.dataset.newsUpdatedAt || 0) > stored);
+    const newCards = cards.filter((card) => card.dataset.newsLateDelivery !== "true" && Date.parse(card.dataset.newsUpdatedAt || 0) > stored);
     newCards.forEach((card) => {
       const badge = card.querySelector("[data-news-new-badge]");
       if (badge) badge.hidden = false;
@@ -432,7 +432,7 @@
       }
       const lastSeen = Date.parse(window.localStorage.getItem(lastSeenKey) || 0);
       const lastNotified = Date.parse(window.localStorage.getItem(lastNotifiedKey) || 0);
-      const updates = (feed.items || []).filter((item) => Date.parse(item.date_modified || item.date_published || 0) > lastSeen);
+      const updates = (feed.items || []).filter((item) => !item._woek_late_delivery && Date.parse(item.date_modified || item.date_published || 0) > lastSeen);
       const latest = updates.reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || 0)), 0);
       await updateAppBadge(updates.length);
       if (!updates.length || latest <= lastNotified || document.visibilityState === "visible") return false;
