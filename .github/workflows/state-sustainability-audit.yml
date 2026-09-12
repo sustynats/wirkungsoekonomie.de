@@ -7,6 +7,9 @@ on:
   pull_request:
     paths:
       - '**/*.html'
+      # The private editorial app does not project public #253 content. Its
+      # source-only fixes must not receive stale generated news from this writer.
+      - '!admin/redaktion/**'
       # Internal UX reference artboards are excluded from public deployment.
       # They must not trigger unrelated, branch-writing site projections.
       - '!docs/parlament/ux/**'

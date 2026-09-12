@@ -8,12 +8,12 @@ test('a truncated successful response gets one idempotent reread',async()=>{
 });
 test('persistent invalid reads fail with safe diagnostics after two attempts',async()=>{
   let calls=0;const s=bridgeSession(env,{fetchImpl:async()=>{calls++;return new Response('not-json');}});
-  await assert.rejects(()=>s.store.observation('completion-metrics'),e=>e.message==='BRIDGE_REMOTE_INVALID_RESPONSE'&&e.http_status===200&&e.operation==='store.observation'&&e.response_bytes===8&&!JSON.stringify(e).includes('private-test-token'));
+  await assert.rejects(()=>s.store.observation('completion-metrics'),e=>e.message==='BRIDGE_REMOTE_INVALID_RESPONSE'&&e.retryable===true&&e.transient_read_failure===true&&e.http_status===200&&e.operation==='store.observation'&&e.response_bytes===8&&!JSON.stringify(e).includes('private-test-token'));
   assert.equal(calls,2);
 });
 test('an uncertain write is never replayed',async()=>{
   let calls=0;const s=bridgeSession(env,{fetchImpl:async()=>{calls++;return new Response('not-json');}});
-  await assert.rejects(()=>s.store.put({input:{job_id:'test'}}),/BRIDGE_REMOTE_INVALID_RESPONSE/);assert.equal(calls,1);
+  await assert.rejects(()=>s.store.put({input:{job_id:'test'}}),e=>e.message==='BRIDGE_REMOTE_INVALID_RESPONSE'&&e.transient_read_failure===false);assert.equal(calls,1);
 });
 test('unauthorized or forbidden responses and valid application errors are not retried',async()=>{
   for(const status of [401,403,409]){let calls=0;const s=bridgeSession(env,{fetchImpl:async()=>{calls++;return new Response('access denied',{status});}});await assert.rejects(()=>s.monitor(),/BRIDGE_REMOTE_INVALID_RESPONSE/);assert.equal(calls,1);}

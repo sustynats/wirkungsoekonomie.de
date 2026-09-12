@@ -170,6 +170,17 @@ test('temporary research and remote timeouts preserve complete output and never 
   assert.ok(transport.files.has(file));assert.equal((await transport.list('90_ERRORS')).length,0);
  }
 });
+test('repeated truncated bridge reads preserve the same complete output for a later import',async t=>{
+ const {provider,store,transport}=setup(t);provider.correctionsEnabled=true;
+ await provider.enqueue([candidate()],[],now);const job=store.all()[0];
+ const file=bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json');
+ await transport.writeAtomic(file,output(job.input));const original=transport.files.get(file);
+ for(let i=0;i<5;i++)await provider.failure(job,'import',Object.assign(Error('BRIDGE_REMOTE_INVALID_RESPONSE'),{retryable:true,transient_read_failure:true}),now);
+ const saved=store.get(job.input.job_id);
+ assert.equal(saved.status,'queued');assert.equal(saved.last_error.retryable,true);assert.ok(saved.retry_at);
+ assert.equal(saved.corrections,undefined);assert.equal(saved.ack,undefined);assert.equal(transport.files.get(file),original);
+ assert.equal((await transport.list('90_ERRORS')).length,0);
+});
 test('Dropbox explicit throttling retries at most twice and respects short retry windows', async()=>{
   let calls=0; const delays=[];
   const transport=new DropboxTransport({credentials:{},sleep:async ms=>delays.push(ms),fetchImpl:async()=>{
