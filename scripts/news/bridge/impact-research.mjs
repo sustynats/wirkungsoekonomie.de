@@ -8,6 +8,16 @@ import {withRequestDeadline} from '../request-deadline.mjs';
 import { RESEARCH_FUNCTIONS, researchSourceSchema } from './research-source-schema.mjs';
 export { RESEARCH_FUNCTIONS, researchSourceSchema } from './research-source-schema.mjs';
 const comparable = value => String(value).normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
+function sourceFailure(error, sourceId) {
+  // Keep access refusals intact, but identify the supplementary source in the
+  // private repair packet. No URL, document text or provider response is added.
+  if (!/^(?:RSL_|ROBOTS_|ARTICLE_)[A-Z_0-9]{1,80}$/.test(error?.message || '')) return error;
+  const contextual = new Error(`${error.message}:${sourceId}`, { cause: error });
+  for (const key of ['retryable', 'http_status', 'retry_after_seconds']) {
+    if (error[key] !== undefined) contextual[key] = error[key];
+  }
+  return contextual;
+}
 export async function verifyImpactResearch(bridge, candidates = [], existing = [], now, { root = process.cwd(), fetchDocument = fetchPublicArticle } = {}) {
   if (!Array.isArray(candidates) || candidates.length > 12) throw Error('IMPACT_RESEARCH_SOURCE_LIMIT');
   assertSchema(researchSourceSchema, candidates, '$.research_sources');
@@ -28,7 +38,8 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
     // does not mistakenly discard the event source or retry the wrong URL.
     if(!access.allowed)throw Error(`${access.reason}:${candidate.source_id}`);
     const fetchBounded=()=>withRequestDeadline(()=>fetchDocument({url},source,{...registry.policy,allow_public_pdf:true,respect_robots:true}),
-      {timeoutMs:120000,code:'IMPACT_RESEARCH_REQUEST_TIMEOUT'});
+      {timeoutMs:120000,code:'IMPACT_RESEARCH_REQUEST_TIMEOUT'})
+      .catch(error=>{throw sourceFailure(error,candidate.source_id);});
     if(process.env.GITHUB_ACTIONS==='true')console.info(JSON.stringify({event:'impact_research',source_id:candidate.source_id,stage:'start'}));
     const cacheKey = `impact-research-document:${hash(url)}`;
     let document = await bridge.store.observation(cacheKey);
@@ -38,7 +49,7 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
       // Only a bounded private excerpt is retained, never the complete document.
       const normalized = comparable(text), quote = comparable(candidate.quote);
       const at = normalized.indexOf(quote);
-      if (quote.length < 40 || at < 0) throw Error('IMPACT_RESEARCH_QUOTE_NOT_FOUND');
+      if (quote.length < 40 || at < 0) throw Error(`IMPACT_RESEARCH_QUOTE_NOT_FOUND:${candidate.source_id}`);
       document = { at:now,url,final_url:fetched.final_url,content_hash:hash(text),
         excerpt: normalized.slice(Math.max(0,at-160),at+quote.length+320), excerpt_hash:hash(quote) };
       await bridge.store.observe(cacheKey,document);
@@ -48,7 +59,7 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
       const fetched = await fetchBounded();
       const text = fetched.extracted_from === 'public_pdf' ? fetched.body : extractArticleText(fetched.body,120000);
       const full = comparable(text), quote = comparable(candidate.quote), at = full.indexOf(quote);
-      if (quote.length<40 || at<0) throw Error('IMPACT_RESEARCH_QUOTE_NOT_FOUND');
+      if (quote.length<40 || at<0) throw Error(`IMPACT_RESEARCH_QUOTE_NOT_FOUND:${candidate.source_id}`);
       document = {at:now,url,final_url:fetched.final_url,content_hash:hash(text),excerpt:full.slice(Math.max(0,at-160),at+quote.length+320),excerpt_hash:hash(quote)};
       await bridge.store.observe(cacheKey,document);
     }
