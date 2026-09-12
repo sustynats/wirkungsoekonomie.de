@@ -37,13 +37,30 @@ export function extractDiscoveryMetadata(body, url, source) {
   }
   const title = sanitizeFeedText(article?.headline || meta['og:title'] || '', 220);
   const summary = sanitizeFeedText(article?.description || meta.description || meta['og:description'] || '', 1000);
-  const rawDate = article?.datePublished || meta['article:published_time'];
+  const declaredDay = source.primary_source && source.official_endpoint_verified
+    ? pressReleaseDay(text) : null;
+  const rawDate = article?.datePublished || meta['article:published_time'] || declaredDay;
   // Never promote dateModified or sitemap lastmod to publication time.
   if (!title || !rawDate || !ms(rawDate)) return null;
   return { source_id: source.source_id, publisher: source.name, source_type: source.source_type,
     primary_source: Boolean(source.primary_source), source_priority: 0, source_topic: source.topic,
-    title, summary, url, published_at: new Date(ms(rawDate)).toISOString(), item_id: sha256(url),
+    title, summary, url, published_at: rawDate === declaredDay ? declaredDay : new Date(ms(rawDate)).toISOString(),
+    ...(rawDate === declaredDay ? {published_precision:'day'} : {}), item_id: sha256(url),
     content_hash: sha256(`${title}:${summary}:${rawDate}`), categories: [] };
+}
+
+// An explicitly labelled release heading is publication evidence. Dates in
+// paragraphs, URLs, update metadata or related links are not publication dates.
+function pressReleaseDay(html) {
+  const clean=String(html).replace(/<!--[\s\S]*?-->/g,'').replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi,'');
+  const headings=[...clean.matchAll(/<h[12]\b[^>]*>([\s\S]*?)<\/h[12]>/gi)].map(m=>sanitizeFeedText(m[1],500).trim());
+  const declarations=headings.filter(s=>/^Pressemitteilung\b/i.test(s));
+  if(declarations.length!==1)return null;
+  const m=declarations[0].match(/^Pressemitteilung(?:\s+Nr\.?\s+[\w/-]+)?\s+vom\s+(\d{1,2})\.\s+(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)\s+(20\d{2})$/i);
+  if(!m)return null;
+  const months=['januar','februar','märz','april','mai','juni','juli','august','september','oktober','november','dezember'];
+  const day=`${m[3]}-${String(months.indexOf(m[2].toLowerCase())+1).padStart(2,'0')}-${m[1].padStart(2,'0')}`;
+  return Number.isFinite(Date.parse(day))&&new Date(day).toISOString().slice(0,10)===day?day:null;
 }
 
 export function agendaSignal(item) {
