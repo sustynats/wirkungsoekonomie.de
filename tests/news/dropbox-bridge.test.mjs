@@ -9,7 +9,7 @@ import path from 'node:path';
 import { deflateSync } from 'node:zlib';
 import { execFileSync } from 'node:child_process';
 import { BridgeStore } from '../../scripts/news/bridge/store.mjs';
-import { bridgeInput, adaptOutput, validateOutputBinding } from '../../scripts/news/bridge/adapter.mjs';
+import { bridgeInput, adaptOutput, validateOutputBinding, validateOutputPreflight } from '../../scripts/news/bridge/adapter.mjs';
 import { DropboxChatGPTBridgeProvider } from '../../scripts/news/bridge/provider.mjs';
 import { ChatGPTBridgeVisualProvider, visualContext } from '../../scripts/news/bridge/visual.mjs';
 import { inputSchema, outputSchema, visualSchema, assertSchema, parsePacket, safeUrl, bridgePath, hash } from '../../scripts/news/bridge/contract.mjs';
@@ -290,7 +290,7 @@ test('API, batch, remote visual transport and local Higgsfield all reject before
   assert.throws(()=>processingMode({WIRKUNGSTICKER_PROCESSING_MODE:'typo'}));
   assert.equal(visualGenerationProvider({WIRKUNGSTICKER_PROCESSING_MODE:'dropbox_chatgpt_bridge',VISUAL_GENERATION_PROVIDER:'higgsfield'}), 'higgsfield');
 });
-test('real native correction adapter passes existing gates, preserves version and rejects stale source',()=>{
+function nativeReviewFixture() {
   const review=JSON.parse(fs.readFileSync('content/news/reviews/eeg-netzpaket-richtungsbezug-2026-09-09.json'));
   const original=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
   const version=original.versions.find(v=>sha256(JSON.stringify(v.analysis))===review.expected_analysis_hash);
@@ -301,6 +301,11 @@ test('real native correction adapter passes existing gates, preserves version an
   Object.assign(value.story,{headline:review.title,short_summary:review.analysis.summary,detailed_summary:review.analysis.source_summary});
   value.wirkungsticker={analysis:review.analysis,correction_note:review.correction_note};
   const registry=loadNewsRegistry(process.cwd());
+  return { review, original, c, created, processed, input, value, registry };
+}
+
+test('real native correction adapter passes existing gates, preserves version and rejects stale source',()=>{
+  const { review, original, c, created, processed, input, value, registry } = nativeReviewFixture();
   const result=adaptOutput(value,{input,candidate:c},registry,[original],processed);
   assert.equal(result.record.story_id,original.story_id);assert.ok(result.record.corrections.length);assert.deepEqual(result.record.versions.slice(0,-1),original.versions);
   const wrapped={...value,wirkungsticker:{...value.wirkungsticker,analysis:{analyses:[{...review.analysis,story_id:original.story_id}]}}};
@@ -316,6 +321,44 @@ test('real native correction adapter passes existing gates, preserves version an
   assert.equal(adaptOutput(fresh,{input:freshInput,candidate:freshCandidate},registry,[draft],processed).record.published,true);
   const merge={...value,decision:{...value.decision,status:'merge',merge_into:original.story_id},wirkungsticker:{...value.wirkungsticker,merge_expected_content_hash:original.content_hash,merge_expected_analysis_hash:sha256(JSON.stringify(original.analysis))}};
   const merged=adaptOutput(merge,{input,candidate:c},registry,[original],processed);assert.equal(merged.record.story_id,original.story_id);
+});
+
+test('article errors are returned together before allocating an independent impact review',async t=>{
+  const { original, c, created, processed, input, value, registry }=nativeReviewFixture();
+  const {provider,store,transport}=setup(t,{correctionsEnabled:true});
+  let reviews=0;
+  provider.semanticReview=async()=>{reviews++;return {status:'needs_review'};};
+  value.wirkungsticker.analysis.summary+=' Eine weitere Aussage.';
+  value.story.short_summary=value.wirkungsticker.analysis.summary;
+  value.wirkungsticker.analysis.source_summary=value.wirkungsticker.analysis.source_summary.replace(/\n\s*\n/g,' ');
+  value.story.detailed_summary=value.wirkungsticker.analysis.source_summary;
+  // Both faults used to remain hidden behind the independent MPD review.
+  value.wirkungsticker.analysis.impact_assessment={version:'2.1'};
+  const before=structuredClone({original,c,input,value});
+  store.put({input,candidate:c,status:'queued',attempts:{},created_at:created});
+  transport.files.set(bridgePath('20_OUTPUT_READY',input.job_id+'.output.json'),JSON.stringify(value));
+  assert.deepEqual(await provider.reconcile(registry,[original],processed),[]);
+  assert.equal(reviews,0);
+  const job=store.get(input.job_id);
+  assert.equal(job.status,'correction_pending');
+  assert.ok(job.last_error.issues.includes('AI_SUMMARY_SENTENCE_COUNT'));
+  assert.ok(job.last_error.issues.includes('AI_SOURCE_SUMMARY_PARAGRAPHS'));
+  assert.equal(job.accepted,undefined);
+  assert.equal(job.semantic_review,undefined);
+  assert.equal(store.all().length,1);
+  assert.deepEqual({original,c,input,value},before,'preflight must not rewrite source, copy or review input');
+});
+
+test('passing article preflight cannot substitute for required impact assessment or weaken evidence gates',()=>{
+  const {original,c,processed,input,value,registry}=nativeReviewFixture();
+  input.wirkungsticker.analysis_prompt+=' impact_assessment 2.1';
+  const job={input,candidate:c};
+  assert.doesNotThrow(()=>validateOutputPreflight(value,job,registry,[original],processed));
+  assert.throws(()=>adaptOutput(value,job,registry,[original],processed),error=>error.issues?.some(issue=>issue.startsWith('IMPACT_')));
+  value.wirkungsticker.analysis.summary='Es wurden 987654321 neue Stellen geschaffen. Der Befund ist gesichert.';
+  value.story.short_summary=value.wirkungsticker.analysis.summary;
+  assert.throws(()=>validateOutputPreflight(value,job,registry,[original],processed),error=>error.issues?.includes('AI_UNSUPPORTED_NUMBER:987654321'));
+  assert.throws(()=>validateOutputPreflight({...value,input_hash:hash('stale')},job,registry,[original],processed),/BRIDGE_JOB_BINDING_MISMATCH/);
 });
 
 function png(width=1200,height=675){

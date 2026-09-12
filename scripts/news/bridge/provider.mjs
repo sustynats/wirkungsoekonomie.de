@@ -4,7 +4,7 @@ import { retainPotentialHistory } from '../impact-potential.mjs';
 import { ensureSemanticReview, importSemanticReviews } from './semantic-review.mjs';
 import { migrateImpactAssessment, impactClaimLedger, withMagnitudeCalculations } from '../impact-assessment.mjs';
 import { canRequestCorrection, prepareCorrection, recoverCorrections } from './corrections.mjs';
-import { bridgeInput, adaptOutput, validateOutputBinding, sameBridgeEvent } from './adapter.mjs';
+import { bridgeInput, adaptOutput, validateOutputPreflight, sameBridgeEvent } from './adapter.mjs';
 import { BRIDGE_ROOT, bridgePath, parsePacket, outputSchema, hash } from './contract.mjs';
 import { storyPage } from '../build.mjs';
 import { waitingForReview, observeOutput } from './status.mjs';
@@ -107,7 +107,7 @@ export class DropboxChatGPTBridgeProvider {
       if (!names.has(`${job.input.job_id}.output.json`)) continue;
       try {
         const output = parsePacket(await this.transport.read(bridgePath('20_OUTPUT_READY', `${job.input.job_id}.output.json`)), outputSchema);
-        if (this.adapt === adaptOutput) validateOutputBinding(output, job, jobStories, now);
+        if (this.adapt === adaptOutput) validateOutputPreflight(output, job, registry, jobStories, now);
         let validatedOutput = output;
         if (['publish','merge'].includes(output.decision.status)) {
           const raw = output.wirkungsticker?.analysis;

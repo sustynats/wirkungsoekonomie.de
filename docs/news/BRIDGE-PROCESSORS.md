@@ -6,6 +6,15 @@ einer geprüften Übergabe abgelöst. Ein geöffneter Chat ist kein Verfügbarke
 
 ## Freigabe des Betriebs
 
+Die Übernahme prüft zuerst Quellenbindung, Lesertext und das native Artikelformat
+mit denselben Regeln wie die abschließende Veröffentlichung. Fehler werden vor
+dem unabhängigen MPD-Prüfauftrag gesammelt als Reparatur zurückgegeben. Der
+Vorabcheck schreibt keinen Artikel und erteilt keine fachliche Freigabe. Die
+MPD-Prüfung bleibt an die unveränderte vollständige Ausgabefassung gebunden;
+danach laufen sämtliche Veröffentlichungsgates erneut. So verbrauchen einfache
+Textfehler nicht erst einen zusätzlichen Redaktionspass, ohne die Quellen- oder
+Wirkungsprüfung zu lockern.
+
 Jeder tatsächliche Automation-Kontext besteht zuerst einen einmaligen Test ohne
 Nachrichtenauftrag. Codex-Zugriff, Serverzugriff und ein manueller Chat-Test zählen
 nicht als Nachweis für einen Automation-Kontext. Erst nach überprüftem Test darf

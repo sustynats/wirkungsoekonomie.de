@@ -75,7 +75,7 @@ export function validateOutputBinding(output, job, stories, now) {
   return { decision, id, target, analysisHash, declared, sourcePool };
 }
 
-export function adaptOutput(output, job, registry, stories, now) {
+function prepareOutputReview(output, job, stories, now) {
   const binding = validateOutputBinding(output, job, stories, now);
   if (['hold', 'reject'].includes(binding.decision)) return binding;
   const { decision, id, target, analysisHash, declared, sourcePool } = binding;
@@ -91,8 +91,6 @@ export function adaptOutput(output, job, registry, stories, now) {
   // Only IDs actually supplied in this immutable prompt can resolve.
   resolveEvidenceReferences(analysis, job.candidate, suppliedEvidenceIds(job.input.wirkungsticker.analysis_prompt)[job.candidate.story_id] || []);
   normalizeEvidenceExcerpts(analysis, job.candidate);
-  const impactErrors = impactAssessmentErrors(analysis.impact_assessment, [...job.candidate.sources,...(job.semantic_review?.verified_context_sources || [])], { required: /impact_assessment 2\.[01]|Wirkungsticker2\.1\/all-dimensions-1/.test(job.input.wirkungsticker.analysis_prompt) });
-  if (impactErrors.length) throw Object.assign(new Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: impactErrors });
   const review = {
     review_type: target.published ? 'story_correction' : 'story_draft_review', story_id: id,
     expected_content_hash: target.content_hash, ...(target.published ? { expected_analysis_hash: analysisHash } : {}),
@@ -103,6 +101,26 @@ export function adaptOutput(output, job, registry, stories, now) {
     ...(target.published ? { correction_note: output.wirkungsticker.correction_note } : {}),
   };
   if (target.published && !review.correction_note) throw new Error('BRIDGE_CORRECTION_NOTE_REQUIRED');
+  return { decision, review, analysis };
+}
+
+// Run the existing article/source gates before allocating an independent MPD
+// review. Collect text errors even when the proposed assessment needs repair.
+// This is read-only; only adaptOutput after the review may accept a record.
+export function validateOutputPreflight(output, job, registry, stories, now) {
+  const prepared = prepareOutputReview(output, job, stories, now);
+  if (!prepared.review) return;
+  const result = prepareReviewedStory(prepared.review, registry, stories, now);
+  const issues = result.errors.filter(issue => !issue.startsWith('IMPACT_'));
+  if (issues.length) throw Object.assign(new Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues });
+}
+
+export function adaptOutput(output, job, registry, stories, now) {
+  const prepared = prepareOutputReview(output, job, stories, now);
+  if (!prepared.review) return prepared;
+  const { decision, review, analysis } = prepared;
+  const impactErrors = impactAssessmentErrors(analysis.impact_assessment, [...job.candidate.sources,...(job.semantic_review?.verified_context_sources || [])], { required: /impact_assessment 2\.[01]|Wirkungsticker2\.1\/all-dimensions-1/.test(job.input.wirkungsticker.analysis_prompt) });
+  if (impactErrors.length) throw Object.assign(new Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: impactErrors });
   const result = prepareReviewedStory(review, registry, stories, now);
   if (result.errors.length) throw Object.assign(new Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: result.errors });
   result.record.impact_assessment = migrateImpactAssessment(result.record.analysis, { title: result.record.title });
