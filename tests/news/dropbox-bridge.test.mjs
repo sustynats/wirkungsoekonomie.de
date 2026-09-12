@@ -9,7 +9,7 @@ import path from 'node:path';
 import { deflateSync } from 'node:zlib';
 import { execFileSync } from 'node:child_process';
 import { BridgeStore } from '../../scripts/news/bridge/store.mjs';
-import { bridgeInput, adaptOutput } from '../../scripts/news/bridge/adapter.mjs';
+import { bridgeInput, adaptOutput, validateOutputBinding } from '../../scripts/news/bridge/adapter.mjs';
 import { DropboxChatGPTBridgeProvider } from '../../scripts/news/bridge/provider.mjs';
 import { ChatGPTBridgeVisualProvider, visualContext } from '../../scripts/news/bridge/visual.mjs';
 import { inputSchema, outputSchema, visualSchema, assertSchema, parsePacket, safeUrl, bridgePath, hash } from '../../scripts/news/bridge/contract.mjs';
@@ -22,7 +22,7 @@ import { createHiggsfieldAdapter } from '../../scripts/news/title-image/higgsfie
 import { loadNewsRegistry } from '../../scripts/news/registry.mjs';
 import { digest } from '../../scripts/news/title-image/policy.mjs';
 import { outputStatus } from '../../scripts/news/bridge/status.mjs';
-import { runWirkungsticker } from '../../scripts/news/run.mjs';
+import { runWirkungsticker, restorePendingBridgeRecords } from '../../scripts/news/run.mjs';
 
 const now = '2026-09-10T06:45:00.000Z';
 const later = '2026-09-10T07:30:00.000Z';
@@ -61,6 +61,29 @@ function setup(t, options = {}) {
   t.after(()=>{store.close();fs.rmSync(directory,{recursive:true,force:true});});
   return {directory,store,transport,provider:new DropboxChatGPTBridgeProvider({store,transport,...(options.adapt ? {semanticReview:async (_bridge,_job,_output,_record,proposed)=>({status:"ready",assessment:proposed})} : {}),...options})};
 }
+
+test('import recovery keeps manual intake private while regular news remains recoverable', () => {
+  const manual = candidate(1), regular = candidate(2), published = {...candidate(3), published:true};
+  delete manual.slug; // A valid private research candidate has no public page yet.
+  const privateJob = {input:{job_type:'new_story'},candidate:manual,status:'queued',intake_news_parent:'manual-parent'};
+  const jobs = [privateJob, {input:{job_type:'new_story'},candidate:regular,status:'queued'},
+    {input:{job_type:'story_update'},candidate:published,status:'queued'}];
+  const before = structuredClone(jobs), byId = new Map([[published.story_id, published]]);
+  restorePendingBridgeRecords(byId, jobs, now);
+  assert.equal(byId.has(manual.story_id), false, 'private candidate must not poison the canonical schema or leak into Git');
+  assert.equal(byId.get(regular.story_id).slug, regular.slug);
+  assert.equal(byId.get(regular.story_id).pending_reason, 'BRIDGE_PENDING');
+  assert.equal(byId.get(published.story_id), published, 'recovery must not replace a published story');
+  assert.deepEqual(jobs, before, 'private journal, input binding and approval state remain untouched');
+  for (const status of ['quarantined', 'archive_failed', 'acknowledged']) {
+    const records = new Map();
+    restorePendingBridgeRecords(records, [{...jobs[1], status}], now);
+    assert.equal(records.size, 0);
+  }
+  const tests = new Map();
+  restorePendingBridgeRecords(tests, [{...jobs[1],input:{job_type:'new_story',test_only:true}}], now);
+  assert.equal(tests.size, 0);
+});
 
 test('three synthetic events: stable retries, multiple sources in one job, no duplicate enqueue',async t=>{
   const {store,transport,provider}=setup(t);const candidates=[1,2,3].map(candidate);
@@ -621,6 +644,24 @@ test('a manual news child always stages even when production publication is enab
  await provider.enqueue([candidate()],[],now);const job=store.all()[0];job.intake_news_parent='wt_20260910T000000Z_aaaaaaaaaaaaaaaaaaaaaaaa';store.put(job);
  await transport.writeAtomic(bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json'),output(job.input));
  const results=await provider.reconcile({},[],later);assert.equal(results[0].staged,true);assert.equal(job.input.test_only,false);
+});
+
+test('a legacy private news candidate passes source binding without a canonical draft or public write', async t => {
+ const publicStories=[], c=candidate();let adapted=false;
+ const {store,transport,provider}=setup(t,{stageOnly:false,adapt:(value,job,registry,stories,at)=>{
+  const binding=validateOutputBinding(value,job,stories,at);
+  assert.equal(binding.target.story_id,c.story_id);
+  assert.ok(binding.target.slug.endsWith('-000001'));
+  adapted=true;return {decision:'hold',record:null,story_id:c.story_id};
+ }});
+ await provider.enqueue([c],[],now);const job=store.all()[0],inputBefore=structuredClone(job.input);
+ job.intake_news_parent='wt_20260910T000000Z_aaaaaaaaaaaaaaaaaaaaaaaa';delete job.candidate.slug;store.put(job);
+ const value=output(job.input,'publish');value.wirkungsticker={analysis:{}};
+ await transport.writeAtomic(bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json'),value);
+ const results=await provider.reconcile({},publicStories,later);
+ assert.equal(adapted,true);assert.equal(results[0].staged,true);
+ assert.deepEqual(publicStories,[]);assert.deepEqual(store.get(job.input.job_id).input,inputBefore);
+ assert.equal(store.get(job.input.job_id).ack,undefined);
 });
 
 test('large completed backlog is acknowledged and archived in bounded resumable batches, newest results first',async t=>{
