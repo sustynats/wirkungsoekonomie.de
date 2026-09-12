@@ -24,7 +24,8 @@ export function bridgeSession(env = process.env, { fetchImpl = fetch } = {}) {
     const chunks = []; let size = 0;
     for await (const chunk of response.body) { size += chunk.length; if (size > responseLimit) throw new Error('BRIDGE_RESPONSE_TOO_LARGE'); chunks.push(chunk); }
     let result; try { result = JSON.parse(Buffer.concat(chunks)); } catch { throw Object.assign(new Error('BRIDGE_REMOTE_INVALID_RESPONSE'), {
-      retryable: response.status >= 500, http_status: response.status, operation: op, response_bytes: size,
+      retryable: response.status >= 500 || response.status === 200 && readOperations.has(op), http_status: response.status, operation: op, response_bytes: size,
+      transient_read_failure: readOperations.has(op) && (response.status === 200 || response.status >= 500),
       // Authentication/permission failures and writes must never be retried.
       read_retryable: response.status === 200 || response.status >= 500,
     }); }

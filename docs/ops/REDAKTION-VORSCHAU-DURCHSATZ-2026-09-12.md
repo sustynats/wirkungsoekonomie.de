@@ -10,6 +10,10 @@ Im Bridge-Modus war die frühere Prüfung auf ausbleibende Veröffentlichungen a
 
 Processor-Health unterscheidet aktuelle Nachrichtenaufträge ohne vollständige Ausgabe, in Zweitprüfung, mit Korrekturbedarf und vor dem Import. Zweitprüfjobs und historische Neubewertungen zählen dabei nicht als zusätzliche Nachrichtenaufträge. Die vorhandene tägliche private Discord-Auswertung zeigt diese Stufen und nennt abgeschlossene Jobs ausdrücklich nicht Artikel.
 
+Abgeschnittene Antworten beim Lesen der Bridge bleiben nach dem begrenzten Wiederholungsversuch ein sichtbarer Transportfehler. Sie dürfen aber auch nach mehreren Läufen keinen vollständigen Output als fachlich fehlerhaft quarantänisieren. Solche Leseausfälle behalten denselben Auftrag und unveränderten Output mit begrenztem Retry-Zeitpunkt. Schreiboperationen werden nicht blind wiederholt; Zugriffsfehler erhalten diese Behandlung nicht. Die vorbereitete serverseitige Pagination muss zusätzlich auf Oracle installiert werden.
+
+Die private Redaktionsoberfläche löst die fremde schreibende #253-Inhaltsprojektion nicht mehr aus. Deren automatischer Commit hatte andernfalls hunderte öffentliche Projektionen in den UX-PR geschrieben und Konflikte mit laufenden News-Imports erzeugt. Die vollständigen Website-, Datenschutz-, Such- und Sicherheitsprüfungen laufen weiter.
+
 ## Unveränderte Grenzen
 
 Keine Lockerung der Quellen-, Fakten-, MPD- oder Freigabegates. Keine Erfindung von Autorenmeinungen. Kein Übergehen eines fehlgeschlagenen Transports. Kein neuer Dienst und keine zusätzlichen kostenpflichtigen Anbieter. Die Änderungen am Monitor und Processor werden von den bestehenden GitHub-Läufen genutzt; keine neue lokale Automation ist erforderlich.
