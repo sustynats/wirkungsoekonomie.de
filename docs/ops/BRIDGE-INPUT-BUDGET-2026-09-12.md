@@ -23,7 +23,14 @@ nicht, bleibt es zur Bearbeitung gespeichert. Bestehende fachliche
 Entscheidungen werden nicht ersetzt. Technische Größenstopps werden bereits
 durch die vorhandene Retry-Logik erneut geprüft.
 
-Prüfung: 1.085 Nachrichten- und Betriebsprüfungen erfolgreich; Typecheck,
+Zusätzlich werden explizite Crawl-Wartezeiten nicht länger durch vorherige
+Fehlversuche exponentiell verlängert. Ein zweiminütiges Publisher-Fenster
+wird im nächsten regulären Fünfminutenzyklus erneut geprüft; längere
+vorgegebene Wartezeiten bleiben vollständig erhalten. Tatsächliche Ausfälle
+behalten ihren Backoff. Bereits gespeicherte Fristen werden nicht nachträglich
+verkürzt, wenn deren ursprüngliche Vorgabe nicht mehr nachweisbar ist.
+
+Prüfung: 1.086 Nachrichten- und Betriebsprüfungen erfolgreich; Typecheck,
 Lint und Nachrichten-Build erfolgreich. Neue Tests prüfen den vollständigen
 Quellenkatalog in der Bridge, die unveränderte API-Grenze, die endliche
 Bridge-Grenze, die erneute Kandidatenzulassung ohne API-Aufruf sowie die

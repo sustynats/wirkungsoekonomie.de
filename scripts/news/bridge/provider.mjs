@@ -206,8 +206,14 @@ export class DropboxChatGPTBridgeProvider {
     const retryable = error.retryable === true && (infrastructure || attempt < 3);
     job.last_error = { job_id: job.input.job_id, stage, error_code: code, message: code, retryable, failed_at: now, attempt };
     if (infrastructure) {
-      const backoff = Math.min(3600, 300 * 2 ** Math.min(attempt - 1, 4));
       const requested = Number(error.retry_after_seconds);
+      // A publisher's explicit crawl window is a scheduling condition, not a
+      // repeatedly failing service. Earlier repairs must not turn a two-minute
+      // source wait into an hour. Longer publisher deadlines remain binding.
+      const crawlWait = code === 'BRIDGE_RESEARCH_UNAVAILABLE' && Number.isFinite(requested) && requested > 0
+        && error.issues?.some(issue => typeof issue === 'string' && /^ROBOTS_CRAWL_DELAY_DEFERRED:research-[a-z0-9-]+$/.test(issue));
+      const backoff = crawlWait ? 300 : Math.min(3600, 300 * 2 ** Math.min(attempt - 1, 4));
+      if (Number.isFinite(requested) && requested > 0) job.last_error.retry_after_seconds = requested;
       job.retry_at = new Date(Date.parse(now) + Math.max(backoff, Number.isFinite(requested) ? requested : 0) * 1000).toISOString();
     }
     if (Array.isArray(error.issues)) job.last_error.issues = error.issues.map(issue => typeof issue === 'string' ? issue.slice(0,160) : String(issue.code || 'VALIDATION_FAILED').slice(0,160)).slice(0,50);
