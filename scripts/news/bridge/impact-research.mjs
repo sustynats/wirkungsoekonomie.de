@@ -23,7 +23,10 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
       access:{status:'public',article:'bounded_public_text',cost_usd:0,requires_login:false,requires_payment:false},
       rsl_url:new URL('/.well-known/rsl.xml',url).href };
     const access=sourceAccess(source,'article');
-    if(!access.allowed)throw Error(access.reason);
+    // A supplementary source can be blocked while the original news source is
+    // allowed. Keep the exact research ID in the repair request so the worker
+    // does not mistakenly discard the event source or retry the wrong URL.
+    if(!access.allowed)throw Error(`${access.reason}:${candidate.source_id}`);
     const fetchBounded=()=>withRequestDeadline(()=>fetchDocument({url},source,{...registry.policy,allow_public_pdf:true,respect_robots:true}),
       {timeoutMs:120000,code:'IMPACT_RESEARCH_REQUEST_TIMEOUT'});
     if(process.env.GITHUB_ACTIONS==='true')console.info(JSON.stringify({event:'impact_research',source_id:candidate.source_id,stage:'start'}));
