@@ -4,10 +4,10 @@ import { retainPotentialHistory } from '../impact-potential.mjs';
 import { ensureSemanticReview, importSemanticReviews } from './semantic-review.mjs';
 import { migrateImpactAssessment, impactClaimLedger, withMagnitudeCalculations } from '../impact-assessment.mjs';
 import { canRequestCorrection, prepareCorrection, recoverCorrections } from './corrections.mjs';
-import { bridgeInput, adaptOutput, validateOutputBinding, sameBridgeEvent } from './adapter.mjs';
+import { bridgeInput, adaptOutput, validateOutputPreflight, sameBridgeEvent } from './adapter.mjs';
 import { BRIDGE_ROOT, bridgePath, parsePacket, outputSchema, hash } from './contract.mjs';
 import { storyPage } from '../build.mjs';
-import { waitingForReview, observeOutput } from './status.mjs';
+import { waitingForReview, observeOutput, outputJobId } from './status.mjs';
 import { protectedCurrentCandidate, updateProcessorHealth } from './processor.mjs';
 
 const newsJob = job => ['new_story','story_update','correction'].includes(job.input.job_type);
@@ -107,7 +107,7 @@ export class DropboxChatGPTBridgeProvider {
       if (!names.has(`${job.input.job_id}.output.json`)) continue;
       try {
         const output = parsePacket(await this.transport.read(bridgePath('20_OUTPUT_READY', `${job.input.job_id}.output.json`)), outputSchema);
-        if (this.adapt === adaptOutput) validateOutputBinding(output, job, jobStories, now);
+        if (this.adapt === adaptOutput) validateOutputPreflight(output, job, registry, jobStories, now);
         let validatedOutput = output;
         if (['publish','merge'].includes(output.decision.status)) {
           const raw = output.wirkungsticker?.analysis;
@@ -286,7 +286,9 @@ export class DropboxChatGPTBridgeProvider {
     if (report.review_required) report.alerts.push('EDITORIAL_REVIEW_REQUIRED');
     if (report.errors) report.alerts.push('QUARANTINED_JOBS');
     for (const entry of folders['20_OUTPUT_READY'].filter(e => e.name.endsWith('.output.json'))) {
-      const id = entry.name.slice(0,-12), job = await this.store.get(id);
+      const id = outputJobId(entry.name);
+      if (!id) { report.alerts.push(`UNKNOWN_OUTPUT:${entry.name}`); continue; }
+      const job = await this.store.get(id);
       if (!job) { report.alerts.push(`UNKNOWN_OUTPUT:${entry.name}`); continue; }
       if (job.status === 'correction_prepared') continue;
       const observed = await observeOutput(this.store, job, now);
