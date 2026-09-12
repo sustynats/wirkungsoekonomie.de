@@ -18,6 +18,11 @@ concurrency:
   cancel-in-progress: false
 jobs:
   discover:
+    # Share the Oracle resource guard, not the independent lane/claim identity.
+    concurrency:
+      group: wirkungsticker-oracle-bridge-access
+      queue: max
+      cancel-in-progress: false
     if: vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && vars.WOEK_NEWS_BRIDGE_DISCOVERY_ENABLED != 'false'
     runs-on: ubuntu-latest
     timeout-minutes: 15
