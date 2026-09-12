@@ -1,4 +1,5 @@
 import { assessmentBasis } from './migrate-impact-assessments.mjs';
+import { importBackgroundImpact } from './bridge/background-import.mjs';
 import { migrateImpactAssessment } from './impact-assessment.mjs';
 import { createBridgeRuntime } from './bridge/runtime.mjs';
 import { fetchDiscoverySource } from './bridge/discovery-cache.mjs';
@@ -1833,8 +1834,7 @@ export async function runWirkungsticker(options = {}) {
       writeJson(files.report, report);
     }
     if (bridge && bridgePhase !== 'discovery') {
-      report.bridge_impact_results = await (await import('./bridge/impact.mjs')).importImpactJobs(bridge, ROOT, now);
-      if (report.bridge_impact_results.some(r => r.changed)) report.public_changed = true;
+      await importBackgroundImpact(() => import('./bridge/impact.mjs').then(module => module.importImpactJobs(bridge, ROOT, now)), report, now);
       writeJson(files.report, report);
     }
     if(bridge && bridgePhase !== 'discovery'){
