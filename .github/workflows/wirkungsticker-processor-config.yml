@@ -28,4 +28,4 @@ jobs:
           DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
           DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
           DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
-        run: node scripts/news/bridge/write-processor-transport.mjs
+        run: node scripts/news/bridge/write-native-output-config.mjs
