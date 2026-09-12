@@ -7,7 +7,7 @@ import {sourceIntegrityForStory} from '../source-integrity.mjs';
 
 const host=url=>new URL(url).hostname.replace(/^www\./,'');
 const RESEARCH_REPAIR_LIMIT=2;
-const permanentSourceError=code=>/^(?:SOURCE_NOT_REGISTERED|SOURCE_DISABLED|ROBOTS_DISALLOWED|RSL_STATUS_OPEN|RSL_DENIED|PAYWALL|LOGIN_REQUIRED)$/.test(code||'');
+const permanentSourceError=code=>/^(?:SOURCE_NOT_REGISTERED|SOURCE_DISABLED|SOURCE_PUBLICATION_METADATA_MISSING|ARTICLE_TEXT_TOO_SHORT|ROBOTS_DISALLOWED|RSL_STATUS_OPEN|RSL_DENIED|PAYWALL|LOGIN_REQUIRED)$/.test(code||'');
 
 // A completed preliminary packet is immutable. An unusable source basis needs
 // fresh research under a new job ID, not repeated downloads of the same links.
@@ -66,16 +66,22 @@ export async function prepareIntakeNews({store,transport,registry,now=()=>new Da
    // A submitted link can be a tip, screenshot context or social post. Keep its
    // provenance, but do not require it to become a verified news source itself.
    if(leadUrls.length&&!preview.sources.some(s=>leadUrls.includes(s.url)))throw Error('INTAKE_NEWS_LEAD_UNBOUND');
-   for(const requested of preview.sources.slice(0,6)){
+   // A source that returned unusable metadata must not consume the publisher's
+   // crawl window before every later source on every retry. Persist attempt
+   // order; a deferred request was not fetched and keeps its earlier turn.
+   const checked=parent.intake.news_source_checked_at||={};
+   for(const requested of preview.sources.slice(0,6).sort((a,b)=>(Date.parse(checked[hash(a.url)]||'')||0)-(Date.parse(checked[hash(b.url)]||'')||0))){
     try{
     const source=registry.sources.find(s=>s.role!=='F'&&s.feed_url&&host(s.url)===host(requested.url));
     if(!source){sourceErrors.push({url:requested.url,error_code:'SOURCE_NOT_REGISTERED'});continue;}
     const {body,final_url}=await fetchArticle({url:requested.url},source,registry.policy);
-    const item=extractDiscoveryMetadata(body,final_url,source);if(!item)continue;
+    checked[hash(requested.url)]=now();
+    const item=extractDiscoveryMetadata(body,final_url,source);if(!item)throw Error('SOURCE_PUBLICATION_METADATA_MISSING');
     const excerpt=extractArticleText(body,Number(registry.policy.max_article_excerpt_chars||7000));
-    if(excerpt.length<120)continue;
+    if(excerpt.length<120)throw Error('ARTICLE_TEXT_TOO_SHORT');
     sources.push({...item,article_excerpt:excerpt,retrieved_at:now(),publisher_id:source.publisher_id,requires_corroboration:Boolean(source.requires_corroboration)});
-    }catch(error){sourceErrors.push({url:requested.url,error_code:/^[A-Z_]+$/.test(error.message)?error.message:'SOURCE_TEMPORARILY_UNAVAILABLE'});}
+    }catch(error){sourceErrors.push({url:requested.url,error_code:/^[A-Z_]+$/.test(error.message)?error.message:'SOURCE_TEMPORARILY_UNAVAILABLE',
+     ...(Number.isFinite(error.retry_after_seconds)&&error.retry_after_seconds>0?{retry_after_seconds:error.retry_after_seconds}:{})});}
    }
    parent.intake.source_errors=sourceErrors;
    if(!sources.length)throw Error('INTAKE_NEWS_VERIFIED_SOURCE_REQUIRED');
@@ -101,7 +107,9 @@ export async function prepareIntakeNews({store,transport,registry,now=()=>new Da
    if(job.status==='prepared'){await transport.writeAtomic(bridgePath('00_INBOX',input.job_id+'.input.json'),input);job.status='queued';job.queued_at=now();store.put(job);}
    parent.intake.news_job_id=input.job_id;delete parent.last_error;store.put(parent);
   }catch(error){
-   parent.intake.news_retry_at=new Date(Date.parse(now())+15*60000).toISOString();parent.last_error={stage:'news_research',error_code:/^[A-Z_]+$/.test(error.message)?error.message:'INTAKE_NEWS_RESEARCH_PENDING',retryable:true,failed_at:now()};store.put(parent);
+   const delays=(parent.intake.source_errors||[]).filter(s=>s.error_code==='ROBOTS_CRAWL_DELAY_DEFERRED').map(s=>s.retry_after_seconds).filter(n=>Number.isFinite(n)&&n>0);
+   const retryMs=delays.length?Math.max(30000,Math.min(...delays)*1000):15*60000;
+   parent.intake.news_retry_at=new Date(Date.parse(now())+retryMs).toISOString();parent.last_error={stage:'news_research',error_code:/^[A-Z_]+$/.test(error.message)?error.message:'INTAKE_NEWS_RESEARCH_PENDING',retryable:true,failed_at:now()};store.put(parent);
    const needsResearch=['INTAKE_NEWS_LEAD_UNBOUND','INTAKE_NEWS_SOURCE_MISMATCH'].includes(error.message)
     ||error.message==='INTAKE_NEWS_VERIFIED_SOURCE_REQUIRED'&&parent.intake.source_errors?.length
       &&parent.intake.source_errors.every(s=>permanentSourceError(s.error_code));
