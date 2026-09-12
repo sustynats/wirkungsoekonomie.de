@@ -1,3 +1,4 @@
+import { discoveryAdmission } from './discovery-admission.mjs';
 import { execFileSync } from 'node:child_process';
 import { createHash } from "node:crypto";
 import { assertAutomatable } from "./manual-policy.mjs";
@@ -677,6 +678,7 @@ export function preAnalyzeStory(story, now = new Date().toISOString()) {
   if (!mechanismHints.length) mechanismHints.push("Wirkmechanismus anhand der Primärquelle noch zu konkretisieren");
   return {
     filter_version: EVENT_RELEVANCE_VERSION,
+    discovery_review: discoveryAdmission(story.sources),
     material_development_review: materialDevelopmentReview(story.sources, story.existing_story?.published ? story.existing_story.sources : [], now),
     internal_relevance_score: eventScore.total_relevance_score,
     public_relevance: eventScore.total_relevance_score >= 68 ? 'sehr hoch' : eventScore.total_relevance_score >= 48 ? 'hoch' : eventScore.total_relevance_score >= 30 ? 'mittel' : 'gering',

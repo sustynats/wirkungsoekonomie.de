@@ -1272,7 +1272,7 @@ export async function runWirkungsticker(options = {}) {
   report.monthly_spend_before_usd = Number(spendBefore.toFixed(6));
   report.monthly_budget_usd = budget;
   const initiallyEligible = clusters
-    .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= 30)
+    .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= 30 || candidate.preanalysis.discovery_review?.review === true)
     .sort((a, b) => queuePriority(b, now) - queuePriority(a, now) || latestSourceDate(b.sources) - latestSourceDate(a.sources));
   const eligible = eventAuditEnabled ? balanceEventQueue(initiallyEligible.map(candidate => ({ ...candidate, selection_base_priority: queuePriority(candidate, now) })), categoryCoverage(storyStore.stories, now)) : initiallyEligible;
   const eligibleIds = new Set(eligible.map(candidate => candidate.story_id));
@@ -1360,7 +1360,7 @@ export async function runWirkungsticker(options = {}) {
       if (bridgePhase !== 'import') {
         if (report.all_sources_failed) throw new Error('BRIDGE_DISCOVERY_SOURCE_FAILURE');
         report.bridge_enqueued = await bridge.enqueue([], [...byId.values()], now);
-        for (const candidate of await bridge.selectCandidates(ready)) {
+        for (const candidate of await bridge.selectCandidates(ready, now)) {
           const permitted = new Set(articleSourceOrder(candidate).filter(s => {
             const registered = enabledSources.find(r => r.source_id === s.source_id);
             return registered && sourceAccess(registered, 'article').allowed;

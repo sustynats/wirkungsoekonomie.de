@@ -637,3 +637,14 @@ test('large completed backlog is acknowledged and archived in bounded resumable 
  assert.ok(ids.every(id=>store.get(id).archived_at));const written=transport.writes;
  await provider.finalize([],later,{committed:true});assert.equal(transport.writes,written);
 });
+
+test('fresh normal news crosses the soft queue cap before a late historical update and stays deduplicated',async t=>{
+ const {provider,store}=setup(t,{maxPending:1,maxJobs:1});
+ await provider.enqueue([candidate(1)],[],now);
+ const fresh=candidate(2),old={...candidate(3),existing_story:{published:true,story_id:'old',analysis:{}}};
+ old.sources[0].published_at='2026-09-01T06:00:00Z';
+ const selected=await provider.selectCandidates([old,fresh],now);
+ assert.equal(selected.length,1);assert.equal(selected[0].story_id,fresh.story_id);
+ await provider.enqueue(selected,[],now);assert.equal(store.all().length,2);
+ assert.equal((await provider.selectCandidates([fresh],now)).length,0);
+});

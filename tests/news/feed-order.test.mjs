@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { feedDate, mixedFeedItems, assertChronologicalFeedHtml } from "../../scripts/news/feed-order.mjs";
+import { feedDate, isLateNewsDelivery, mixedFeedItems, assertChronologicalFeedHtml } from "../../scripts/news/feed-order.mjs";
 
 test("recent analyses and news share chronological order across page boundaries without rewriting dates", () => {
   const stories = Array.from({ length: 50 }, (_, i) => ({ story_id: `news-${i}`, last_updated: new Date(Date.UTC(2026, 8, 11, 12, i)).toISOString() }));
@@ -43,4 +43,33 @@ test("the generated news route is chronological and paginates real news", () => 
   assert.match(html, /data-ticker-app="news"/);
   assert.match(html, /data-app-grid/);
   assertChronologicalFeedHtml(html);
+});
+
+test('late news returns to its original position without a new badge or changed stored dates',()=>{
+  const old={story_id:'backfill',published_at:'2026-09-12T06:00:00Z',last_updated:'2026-09-12T06:00:00Z',sources:[{published_at:'2026-09-10T12:00:00Z'}]};
+  const current={story_id:'current',published_at:'2026-09-12T05:50:00Z',sources:[{published_at:'2026-09-12T05:45:00Z'}]};
+  const before=JSON.stringify(old);
+  assert.equal(feedDate(old),'2026-09-10T12:00:00.000Z');
+  assert.equal(isLateNewsDelivery(old),true);assert.equal(isLateNewsDelivery(current),false);
+  assert.equal(mixedFeedItems([old,current],[])[0].value.story_id,'current');assert.equal(JSON.stringify(old),before);
+  assert.equal(feedDate({...old,news_update_at:'2026-09-12T05:55:00Z'}),'2026-09-12T05:55:00.000Z');
+});
+
+test('context dates cannot turn a new event into historical news', () => {
+  const story = { sources: [
+    {source_role:'background',published_at:'2020-01-01T00:00:00Z'},
+    {source_role:'legal_context',published_at:'1949-05-23T00:00:00Z'},
+    {source_role:'event',published_at:'2026-09-12T06:00:00Z',source_published_at:'2026-09-12T05:00:00Z'},
+  ] };
+  assert.equal(feedDate(story),'2026-09-12T05:00:00.000Z');
+});
+
+test('late-delivery flags survive the generated feed and cards without announcing old news as new', () => {
+  const feed=JSON.parse(fs.readFileSync(new URL('../../wirkungsticker/feed.json',import.meta.url),'utf8'));
+  const late=feed.items.filter(item=>item._woek_type==='Wirkungsakte'&&item._woek_late_delivery===true);
+  assert.ok(late.length>0);
+  for(const item of late) assert.equal(item.date_modified,item.date_published);
+  const page=fs.readFileSync(new URL('../../wirkungsticker/news/index.html',import.meta.url),'utf8');
+  for(const card of page.matchAll(/<article\b[^>]*data-news-late-delivery="true"[\s\S]*?<\/article>/g))
+    assert.doesNotMatch(card[0],/data-news-new-badge/);
 });
