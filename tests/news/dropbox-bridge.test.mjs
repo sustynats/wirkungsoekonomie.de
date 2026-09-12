@@ -9,7 +9,7 @@ import path from 'node:path';
 import { deflateSync } from 'node:zlib';
 import { execFileSync } from 'node:child_process';
 import { BridgeStore } from '../../scripts/news/bridge/store.mjs';
-import { bridgeInput, adaptOutput } from '../../scripts/news/bridge/adapter.mjs';
+import { bridgeInput, adaptOutput, validateOutputBinding } from '../../scripts/news/bridge/adapter.mjs';
 import { DropboxChatGPTBridgeProvider } from '../../scripts/news/bridge/provider.mjs';
 import { ChatGPTBridgeVisualProvider, visualContext } from '../../scripts/news/bridge/visual.mjs';
 import { inputSchema, outputSchema, visualSchema, assertSchema, parsePacket, safeUrl, bridgePath, hash } from '../../scripts/news/bridge/contract.mjs';
@@ -644,6 +644,24 @@ test('a manual news child always stages even when production publication is enab
  await provider.enqueue([candidate()],[],now);const job=store.all()[0];job.intake_news_parent='wt_20260910T000000Z_aaaaaaaaaaaaaaaaaaaaaaaa';store.put(job);
  await transport.writeAtomic(bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json'),output(job.input));
  const results=await provider.reconcile({},[],later);assert.equal(results[0].staged,true);assert.equal(job.input.test_only,false);
+});
+
+test('a legacy private news candidate passes source binding without a canonical draft or public write', async t => {
+ const publicStories=[], c=candidate();let adapted=false;
+ const {store,transport,provider}=setup(t,{stageOnly:false,adapt:(value,job,registry,stories,at)=>{
+  const binding=validateOutputBinding(value,job,stories,at);
+  assert.equal(binding.target.story_id,c.story_id);
+  assert.ok(binding.target.slug.endsWith('-000001'));
+  adapted=true;return {decision:'hold',record:null,story_id:c.story_id};
+ }});
+ await provider.enqueue([c],[],now);const job=store.all()[0],inputBefore=structuredClone(job.input);
+ job.intake_news_parent='wt_20260910T000000Z_aaaaaaaaaaaaaaaaaaaaaaaa';delete job.candidate.slug;store.put(job);
+ const value=output(job.input,'publish');value.wirkungsticker={analysis:{}};
+ await transport.writeAtomic(bridgePath('20_OUTPUT_READY',job.input.job_id+'.output.json'),value);
+ const results=await provider.reconcile({},publicStories,later);
+ assert.equal(adapted,true);assert.equal(results[0].staged,true);
+ assert.deepEqual(publicStories,[]);assert.deepEqual(store.get(job.input.job_id).input,inputBefore);
+ assert.equal(store.get(job.input.job_id).ack,undefined);
 });
 
 test('large completed backlog is acknowledged and archived in bounded resumable batches, newest results first',async t=>{

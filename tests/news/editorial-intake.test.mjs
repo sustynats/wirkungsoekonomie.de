@@ -156,6 +156,7 @@ test('manual news research creates a native bridge job and never a personal arti
  const fetchArticle=async({url})=>{if(url.endsWith('/unavailable'))throw Error('SOURCE_TIMEOUT');return {final_url:'https://example.org/source',body:'<script type="application/ld+json">'+JSON.stringify(article)+'</script><article><p>'+article.description+'</p></article>'};};
  await prepareIntakeNews({...f,registry:{sources:[source],policy:{}},fetchArticle});
  const parent=f.store.get(j.input.job_id),child=f.store.get(parent.intake.news_job_id);assert.equal(child.input.job_type,'new_story');assert.equal(child.intake_news_parent,j.input.job_id);assert.equal(child.input.test_only,false);
+ assert.ok(child.candidate.slug.endsWith('-'+child.candidate.story_id.slice(-6)));assert.equal(child.candidate.published,false);
  assert.equal(parent.intake.source_errors[0].error_code,'SOURCE_TIMEOUT');
  const {assertSchema,inputSchema}=await import('../../scripts/news/bridge/contract.mjs');assertSchema(inputSchema,child.input);
  assert.equal(f.approval.list(owner).length,0);const count=f.store.all().length;
