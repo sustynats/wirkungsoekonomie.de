@@ -24,12 +24,13 @@
     "bridge-throughput": {
       "firstSeen": "2026-09-12T09:20:51.975Z",
       "active": true
-    },
-    "bridge-processor": {
-      "firstSeen": "2026-09-12T09:29:01.583Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "88b6085adbb0e8da68f33048",
+      "content": "✓ WÖk-Störung behoben\nChatGPT-Redaktionsworker\nPrüfung: 2026-09-12T09:57:42.609Z"
+    }
+  ],
   "dailyDate": "2026-09-12"
 }
