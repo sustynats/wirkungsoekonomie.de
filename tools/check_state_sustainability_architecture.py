@@ -4,7 +4,9 @@
 The checks are deliberately fail-closed on the living public surfaces and provenance records.
 They do not infer political judgements; they verify that the approved state-vs-WÖk distinction
 survives generation, that historical publications were not silently rewritten, and that the
-complete sitewide matrix required by #253 is committed/reproducible.
+complete sitewide matrix required by #253 describes the checked release. The
+deployment regenerates and retains it as a commit-bound artifact; the repository
+also keeps a reviewable baseline snapshot.
 """
 from __future__ import annotations
 
