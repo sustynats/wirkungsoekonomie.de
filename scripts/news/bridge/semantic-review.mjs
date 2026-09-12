@@ -32,7 +32,7 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
         const sources = await verifyImpactResearch(bridge, output.research_sources, [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])], now);
         job.verified_research = {output_hash:outputHash,sources}; await bridge.store.put(job);
       } catch (error) {
-        if(error.retryable)throw Object.assign(Error('BRIDGE_RESEARCH_UNAVAILABLE'),{retryable:true,issues:[error.message]});
+        if(error.retryable)throw Object.assign(Error('BRIDGE_RESEARCH_UNAVAILABLE'),{retryable:true,retry_after_seconds:error.retry_after_seconds,issues:[error.message]});
         throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'), {issues:[error.message]});
       }
     }
@@ -120,7 +120,7 @@ export async function importSemanticReviews(bridge, now) {
       let research = [];
       try { research = await verifyImpactResearch(bridge, output.research_sources || [], [...(job.candidate.sources || job.candidate.source_snapshot || []), ...(job.candidate.impact_sources || [])], now); }
       catch (error) {
-        if(error.retryable)throw Object.assign(Error('BRIDGE_RESEARCH_UNAVAILABLE'),{retryable:true,issues:[error.message]});
+        if(error.retryable)throw Object.assign(Error('BRIDGE_RESEARCH_UNAVAILABLE'),{retryable:true,retry_after_seconds:error.retry_after_seconds,issues:[error.message]});
         throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:[error.message]});
       }
       const reviewRecord = {...job.candidate,impact_sources:[...(job.candidate.impact_sources||[]),...research]};

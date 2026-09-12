@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import {sourceAccess} from '../../scripts/news/access-policy.mjs';
+import {sourceAccess,respectRobots} from '../../scripts/news/access-policy.mjs';
 import { verifyImpactResearch } from '../../scripts/news/bridge/impact-research.mjs';
 const now='2026-09-10T14:00:00Z';
 const quote='A documented mechanism connects the proposed change to the observed system response.';
@@ -82,4 +82,48 @@ test('missing or unsupported research fields point to the exact correction witho
   await assert.rejects(verifyImpactResearch(fixture(), [{ ...source, excerpt: 'unsupported alias' }], [], now, { fetchDocument }),
     { message: 'BRIDGE_SCHEMA_INVALID:$.research_sources[0].excerpt' });
   assert.equal(fetched, false);
+});
+
+test('RSL, robots and HTTP refusals name the research source without retry or cached proof', async () => {
+  for (const code of ['RSL_STATUS_OPEN','RSL_AI_INPUT_DISALLOWED','ROBOTS_DISALLOWED','ARTICLE_HTTP_403']) {
+    const bridge=fixture(); let calls=0;
+    const original=Object.assign(new Error(code),{retryable:false,http_status:403});
+    await assert.rejects(verifyImpactResearch(bridge,[source],[],now,{fetchDocument:async()=>{calls++;throw original;}}), error=>{
+      assert.equal(error.message,`${code}:${source.source_id}`);
+      assert.equal(error.cause,original); assert.equal(error.retryable,false); assert.equal(error.http_status,403);
+      return true;
+    });
+    assert.equal(calls,1); assert.equal(bridge.data.size,0);
+  }
+});
+
+test('missing original quotes name the failed source on initial and cached-document verification', async () => {
+  const bridge=fixture(), fetchDocument=async()=>({body:`<article>${quote}</article>`});
+  const other={...source,quote:'This second claim is not present in the actual source document that was retrieved.'};
+  await assert.rejects(verifyImpactResearch(bridge,[other],[],now,{fetchDocument}),
+    {message:`IMPACT_RESEARCH_QUOTE_NOT_FOUND:${source.source_id}`});
+  assert.equal(bridge.data.size,0);
+  await verifyImpactResearch(bridge,[source],[],now,{fetchDocument});
+  const proof=[...bridge.data.values()][0];
+  await assert.rejects(verifyImpactResearch(bridge,[other],[],now,{fetchDocument}),
+    {message:`IMPACT_RESEARCH_QUOTE_NOT_FOUND:${source.source_id}`});
+  assert.deepEqual([...bridge.data.values()],[proof]);
+});
+
+test('publisher crawl delay preserves verified source progress and supplies a retry deadline', async () => {
+  const bridge=fixture(); let fetched=0,robotsRequests=0;
+  const fetchDocument=async item=>{
+    await respectRobots(item.url,{},async()=>{robotsRequests++;return new Response('User-agent: *\nCrawl-delay: 120\n');},async()=>{},[]);
+    fetched++; return {body:`<article>${quote}</article>`,final_url:item.url};
+  };
+  const first={...source,url:'https://delayed-research.example/first'};
+  const second={...source,source_id:'research-second-source',url:'https://delayed-research.example/second'};
+  await assert.rejects(verifyImpactResearch(bridge,[first,second],[],now,{fetchDocument}),error=>{
+    assert.equal(error.message,'ROBOTS_CRAWL_DELAY_DEFERRED:research-second-source');
+    assert.equal(error.retryable,true);
+    assert.ok(error.retry_after_seconds>110 && error.retry_after_seconds<=120);
+    return true;
+  });
+  assert.equal(fetched,1); assert.equal(robotsRequests,1);
+  assert.equal(bridge.data.size,1); // the first verified excerpt survives
 });

@@ -101,7 +101,9 @@ async function readRobots(rawUrl, policy, fetchImpl, assertSafeUrl, allowedHosts
   const decision = robotsDecision(cached.body, url, policy.user_agent || "WOek-Wirkungsticker");
   if (!decision.allowed) throw new Error("ROBOTS_DISALLOWED");
   const wait = Math.max(0, (nextRequests.get(url.origin) || 0) - Date.now());
-  if (wait > 15000) throw new Error("ROBOTS_CRAWL_DELAY_DEFERRED");
+  if (wait > 15000) throw Object.assign(new Error("ROBOTS_CRAWL_DELAY_DEFERRED"), {
+    retryable: true, retry_after_seconds: Math.ceil(wait / 1000),
+  });
   nextRequests.set(url.origin, Date.now() + wait + decision.crawl_delay_seconds * 1000);
   if (wait) await new Promise((resolve) => setTimeout(resolve, wait));
   return decision;
