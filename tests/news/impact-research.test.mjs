@@ -33,6 +33,20 @@ test('research accepts extracted public PDF text without retaining the complete 
 test('empty supplementary research requires no registry or network access',async()=>{
   assert.deepEqual(await verifyImpactResearch(fixture(),[],[],now,{root:'/nonexistent',fetchDocument:async()=>{throw Error('unexpected network');}}),[]);
 });
+test('a disabled supplementary source names the actual research ID and never fetches it', async () => {
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'impact-disabled-source-'));
+ let fetched=false;
+ try {
+  fs.mkdirSync(path.join(root,'content/news'),{recursive:true});
+  fs.writeFileSync(path.join(root,'content/news/source-registry.json'),JSON.stringify({policy:{},sources:[
+   {source_id:'allowed-event',name:'Original news',url:'https://original.example.org/',feed_url:'https://original.example.org/rss',source_type:'official_rss',enabled:true},
+   {source_id:'disabled-research',name:'Restricted research',url:source.url,feed_url:source.url,source_type:'official_rss',enabled:false},
+  ]}));
+  await assert.rejects(verifyImpactResearch(fixture(),[source],[{source_id:'allowed-event'}],now,{root,fetchDocument:async()=>{fetched=true;}}),
+   {message:`SOURCE_DISABLED:${source.source_id}`});
+  assert.equal(fetched,false);
+ } finally { fs.rmSync(root,{recursive:true,force:true}); }
+});
 test('research uses the same normalized registry and explicit access overrides as discovery',async()=>{
  const fetchDocument=async(item,registry)=>{
   const access=sourceAccess(registry,'article');if(!access.allowed)throw Error(access.reason);
