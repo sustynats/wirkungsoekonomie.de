@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-12T17:47:53.621Z",
+  "last_successful_run": "2026-09-12T19:48:43.466Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -65983,6 +65983,8 @@
     }
   },
   "pending_story_ids": [
+    "wt-ee4f0b658952e0d8",
+    "wt-e8b1970ed7ff6cef",
     "wt-4ffdac807d955510",
     "wt-4983e7a6366e93c6",
     "wt-f3be839db95ac373",
@@ -66345,6 +66347,7 @@
     "wt-62f87cee54b3aaa5",
     "wt-05ffa4fef8bee914",
     "wt-6f1ebd47aa7215ca",
+    "wt-78b8df2827ab4527",
     "wt-de413d33343f350b",
     "wt-cc761e3990971b29",
     "wt-61bb6c2918c26f16",
@@ -66407,11 +66410,26 @@
     "wt-9812656e38b0d665",
     "wt-98ff7e403362fdf9",
     "wt-990631d7dc3586cb",
-    "wt-ee4f0b658952e0d8",
-    "wt-e8b1970ed7ff6cef"
+    "wt-fdfca386143a9b85",
+    "wt-34ac253470b5559b",
+    "wt-217e50bce53c6e0e",
+    "wt-a588de500e776898",
+    "wt-b5daed572887c15a",
+    "wt-be9933fe22c0b6bb",
+    "wt-da4b0a8d0e70de72",
+    "wt-fbf5fdd49080c31e",
+    "wt-cf344969bd707086",
+    "wt-82497eae5eeb898e",
+    "wt-696e2ce245f09d37",
+    "wt-e64d8b561f052313",
+    "wt-00411e5ea3c3c5b7",
+    "wt-f1d0be33af7f0fdc",
+    "wt-6d5a8b097b87f070",
+    "wt-77d9c9407a7f454a",
+    "wt-6affab461a3837de"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-12T17:47:53.621Z",
+  "last_attempted_run": "2026-09-12T19:48:43.466Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1592,
@@ -67569,18 +67587,6 @@
       "checked_at": "2026-09-10T06:38:01.275Z"
     },
     {
-      "id": "agenda-ecf7bbad408d4f83d100",
-      "title": "Apples große Show nach dem Machtwechsel: Was zu erwarten ist",
-      "source_id": "zdfheute-nachrichten",
-      "url": "https://www.zdfheute.de/wirtschaft/unternehmen/apple-event-keynote-iphone-ternus-100.html",
-      "source_published_at": "2026-09-09T09:45:00.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T18:07:31.891Z"
-    },
-    {
       "id": "agenda-9ec147234a43b59b5cfb",
       "title": "NDR Info 17:00 | 09.09.2026",
       "source_id": "ndr-info",
@@ -67629,18 +67635,6 @@
       "checked_at": "2026-09-10T04:52:43.677Z"
     },
     {
-      "id": "agenda-0ac4adb3eaf3a2b442e5",
-      "title": "In der Haushaltsdebatte kritisiert Weidel die Energiewende",
-      "source_id": "mdr-nachrichten",
-      "url": "https://www.mdr.de/nachrichten/deutschland/politik/weidel-afd-hasuhaltsdebatte-kraftwerke,video-akt-1104.html",
-      "source_published_at": "2026-09-09T11:23:49.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T19:06:39.083Z"
-    },
-    {
       "id": "agenda-a84e0fb4bb044e51b67c",
       "title": "Die AfD hat eine Erzählung - der Kanzler nicht",
       "source_id": "tagesschau-access",
@@ -67687,30 +67681,6 @@
       "status": "watch_for_material_development",
       "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
       "checked_at": "2026-09-09T21:31:22.351Z"
-    },
-    {
-      "id": "agenda-b079e6040ff68854e232",
-      "title": "Booking: Was die Marktdominanz für Hotels und Kunden bedeutet",
-      "source_id": "zdfheute-nachrichten",
-      "url": "https://www.zdfheute.de/wirtschaft/booking-urlaub-buchung-vergleichsportal-marktmacht-100.html",
-      "source_published_at": "2026-09-09T05:42:44.160Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T18:07:31.891Z"
-    },
-    {
-      "id": "agenda-32dc6b2d483a1e9f5803",
-      "title": "Generaldebatte wird zur Bewährungsprobe für Kanzler Merz",
-      "source_id": "mdr-nachrichten",
-      "url": "https://www.mdr.de/nachrichten/deutschland/politik/merz-weidel-bundestag-haushalt-analyse,generaldebatte-146.html",
-      "source_published_at": "2026-09-09T16:40:00.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T19:06:39.083Z"
     },
     {
       "id": "agenda-08b3a575d9b02dadd5f8",
@@ -67819,18 +67789,6 @@
       "status": "watch_for_material_development",
       "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
       "checked_at": "2026-09-10T05:52:24.824Z"
-    },
-    {
-      "id": "agenda-ffc11f0ea0cbb671d6a2",
-      "title": "Merz sieht auch nach AfD-Sieg in Sachsen-Anhalt Verbotsverfahren weiterhin skeptisch",
-      "source_id": "stern-schlagzeilen",
-      "url": "https://www.stern.de/news/merz-sieht-auch-nach-afd-sieg-in-sachsen-anhalt-verbotsverfahren-weiterhin-skeptisch-38229818.html",
-      "source_published_at": "2026-09-09T18:10:29.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T19:06:39.083Z"
     },
     {
       "id": "agenda-f07df726062e9894ca83",
