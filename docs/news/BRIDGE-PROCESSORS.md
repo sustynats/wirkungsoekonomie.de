@@ -15,6 +15,12 @@ danach laufen sämtliche Veröffentlichungsgates erneut. So verbrauchen einfache
 Textfehler nicht erst einen zusätzlichen Redaktionspass, ohne die Quellen- oder
 Wirkungsprüfung zu lockern.
 
+Reparaturpakete benennen außerdem den exakten `output_path`. Die native
+Nachrichtenbridge erwartet `<job_id>.output.json`, nicht
+`<job_id>.repair-N.output.json`. Der verworfene Output liegt vor Zustellung des
+Reparaturauftrags bereits unverändert in `90_ERRORS`. Ein unerwartet vorhandener
+Output oder ACK wird niemals überschrieben.
+
 Jeder tatsächliche Automation-Kontext besteht zuerst einen einmaligen Test ohne
 Nachrichtenauftrag. Codex-Zugriff, Serverzugriff und ein manueller Chat-Test zählen
 nicht als Nachweis für einen Automation-Kontext. Erst nach überprüftem Test darf

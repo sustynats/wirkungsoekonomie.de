@@ -519,6 +519,8 @@ test('failed editorial output returns to same inbox/job with evidence and bounde
     await provider.reconcile({},[],later);const job=store.get(id);assert.equal(job.status,'correction_pending');assert.equal(job.corrections.length,attempt);
     const repair=JSON.parse(transport.files.get(bridgePath('00_INBOX',id+`.repair-${attempt}.json`)));
     assert.equal(repair.job_id,id);assert.equal(repair.original_input.input_hash,job.input.input_hash);assert.equal(repair.validation_errors.issues[0],'CLAIM_NUMBER_NOT_IN_EVIDENCE');
+    assert.equal(repair.output_path,bridgePath('20_OUTPUT_READY',id+'.output.json'));
+    assert.equal(await transport.metadata(repair.output_path),null,'failed output is already preserved in 90_ERRORS, so no overwrite is necessary');
     assert.ok(transport.files.has(bridgePath('90_ERRORS',id+`.correction-${attempt}.output.json`)));
     assert.ok(!transport.files.has(bridgePath('20_OUTPUT_READY',id+'.output.json')));
     const attempts=structuredClone(job.attempts);await provider.reconcile({},[],later);assert.deepEqual(store.get(id).attempts,attempts);
