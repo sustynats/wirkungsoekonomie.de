@@ -23,9 +23,18 @@
     },
     "bridge-throughput": {
       "firstSeen": "2026-09-12T09:20:51.975Z",
+      "active": true
+    },
+    "bridge-processor": {
+      "firstSeen": "2026-09-12T09:29:01.583Z",
       "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "20b044d66ef398da9662331b",
+      "content": "⚠ WÖk-Betriebsstörung\nRedaktionsdurchsatz: In zwei vollständig beobachteten Stunden kamen mehr Aufträge hinzu als abgeschlossen wurden.\nSeit: 2026-09-12T09:20:51.975Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-12"
 }
