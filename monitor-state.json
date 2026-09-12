@@ -17,19 +17,20 @@
       "firstSeen": "2026-09-12T00:50:41.401Z",
       "active": true
     },
-    "bridge-publication-flow": {
-      "firstSeen": "2026-09-12T00:50:41.401Z",
-      "active": true
-    },
     "bridge-processor": {
       "firstSeen": "2026-09-12T01:50:28.178Z",
-      "active": false
-    },
-    "bridge-import": {
-      "firstSeen": "2026-09-12T01:50:28.178Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "95d41664b7ef8c070f772682",
+      "content": "⚠ WÖk-Betriebsstörung\nChatGPT-Redaktionsworker: Offene Aufträge, aber kein frischer Lese-/Schreibnachweis eines tatsächlichen Automation-Workers. Ein erreichbarer Dropbox-Server ist kein Worker-Nachweis.\nSeit: 2026-09-12T01:50:28.178Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "faee78e4d4f2338bdf9b1748",
+      "content": "✓ WÖk-Störung behoben\nAktuelle Nachrichten tatsächlich veröffentlicht\nPrüfung: 2026-09-12T02:05:37.743Z"
+    }
+  ],
   "dailyDate": "2026-09-11"
 }
