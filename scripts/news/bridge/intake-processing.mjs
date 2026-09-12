@@ -18,7 +18,7 @@ export const EDITORIAL_REQUEST_CONTRACT={schema_version:'3.0',workflow:'single_f
   }}};
 
 export async function importEditorialPreviews({store,transport,approval,now=()=>new Date().toISOString()}){
- const jobs=store.all().filter(j=>j.input.job_type==='editorial_request'&&!j.accepted&&!j.ack&&!['quarantined','archive_failed'].includes(j.status));
+ const jobs=store.db.prepare("SELECT body FROM jobs WHERE json_extract(body,'$.input.job_type')='editorial_request' AND json_extract(body,'$.accepted') IS NULL AND json_extract(body,'$.ack') IS NULL AND json_extract(body,'$.status') NOT IN ('quarantined','archive_failed')").all().map(row=>JSON.parse(row.body));
  if(!jobs.length)return {staged:0};
  const names=new Set((await transport.list('20_OUTPUT_READY')).map(e=>e.name));
  let staged=0;

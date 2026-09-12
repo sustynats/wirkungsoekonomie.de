@@ -35,8 +35,8 @@ export function normalizeSubmission(value){
 // Submitted work lives in the existing jobs table. Drafts are unsubmitted form
 // data, never a second processing queue and never visible to the ChatGPT worker.
 export class EditorialIntake {
-  constructor({store,transport,directory,now=()=>new Date().toISOString()}){
-    Object.assign(this,{store,transport,directory,now});
+  constructor({store,deliveryStore=store,transport,directory,now=()=>new Date().toISOString()}){
+    Object.assign(this,{store,deliveryStore,transport,directory,now});
     if(!path.isAbsolute(directory))fail('INTAKE_PRIVATE_DIRECTORY_REQUIRED');
     fs.mkdirSync(directory,{recursive:true,mode:0o700});
     store.db.exec('CREATE TABLE IF NOT EXISTS editorial_drafts (id TEXT PRIMARY KEY, owner TEXT NOT NULL, client_id TEXT NOT NULL, body TEXT NOT NULL, UNIQUE(owner,client_id))');
@@ -82,7 +82,9 @@ export class EditorialIntake {
     try{
       const existing=this.store.observation(`intake-fingerprint:${fingerprint}`);
       if(existing){draft.job_id=existing.job_id;this.saveDraft(draft);return {job_id:existing.job_id,duplicate:true};}
-      if(this.store.all().filter(j=>j.input.job_type==='editorial_request'&&!j.accepted?.staged&&!['acknowledged','quarantined','archive_failed'].includes(j.status)).length>=12)fail('INTAKE_QUEUE_FULL',409);
+      // Intake is durable, authenticated work, not an active worker slot. The
+      // processor's batch budget limits execution; a backlog must not reject a
+      // submitted request or require the owner to submit it again later.
       const stamp=new Date(draft.created_at).toISOString().replace(/[-:]/g,'').slice(0,15)+'Z';
       const jobId=`wt_${stamp}_${fingerprint.slice(0,24)}`;
       const attachments=Object.entries(draft.uploads).map(([index,a])=>({name:request.attachments[index].name,path:bridgePath('00_INBOX',`${jobId}.attachment-${index}.${TYPES[a.mime]}`),mime:a.mime,sha256:a.sha256,size:a.size}));
@@ -98,9 +100,9 @@ export class EditorialIntake {
     }finally{this.store.release(true);}
   }
   async preparePending(){
-    const jobs=this.store.all().filter(j=>j.status==='intake_prepared');
+    const jobs=this.store.db.prepare("SELECT body FROM jobs WHERE json_extract(body,'$.status')='intake_prepared'").all().map(row=>JSON.parse(row.body));
     if(!jobs.length)return;
-    this.store.acquire(this.now(),'discovery',{manualRunId:`${Date.now()}:${randomInt(100000)}`});
+    this.deliveryStore.acquire(this.now(),'discovery',{manualRunId:`${Date.now()}:${randomInt(100000)}`});
     try{
       for(const job of jobs){
         try{
@@ -129,7 +131,7 @@ export class EditorialIntake {
           if(attempt>=3)job.status='quarantined';this.store.put(job);
         }
       }
-    }finally{this.store.release(true);}
+    }finally{this.deliveryStore.release(true);}
   }
   list(owner){
     return this.store.db.prepare("SELECT body FROM jobs WHERE json_extract(body,'$.intake.owner')=? AND json_extract(body,'$.intake.research_parent') IS NULL ORDER BY json_extract(body,'$.created_at') DESC LIMIT 100").all(owner).map(row=>{

@@ -169,6 +169,34 @@ test('private previews waiting for owner approval do not fill the research queue
  const created=await job(f);assert.equal(created.input.job_type,'editorial_request');assert.equal(f.approval.claimPublications().length,0);
 });
 
+test('busy discovery and a full processing backlog do not reject a durable user submission',async t=>{
+ const f=setup(t),inputStore=new BridgeStore(path.join(f.directory,'queue.sqlite'),{lane:'intake'});
+ t.after(()=>inputStore.close());
+ const intake=new EditorialIntake({store:inputStore,deliveryStore:f.store,transport:f.transport,directory:path.join(f.directory,'uploads')});
+ for(let i=0;i<30;i++)f.store.put({input:{job_id:'wt_20260910T000000Z_'+i.toString(16).padStart(24,'0'),job_type:'editorial_request'},status:'queued'});
+ inputStore.all=()=>{throw Error('MUST_NOT_LOAD_ENTIRE_QUEUE');};
+ f.store.acquire(now(),'discovery',{manualRunId:'12345:1'});
+ const d=intake.draft(owner,{client_id:randomUUID(),kind:'news',brief:'Neuer direkter Nutzerauftrag trotz laufender Recherche.',links:'',author_notes:'',attachments:[],publish:false,urgent:false});
+ const submitted=await intake.submit(owner,d.id),saved=inputStore.get(submitted.job_id);
+ assert.equal(saved.status,'intake_prepared');assert.equal(saved.input.manual_only,true);
+ assert.equal(f.files.size,0);assert.equal(f.store.locked,true);
+ await assert.rejects(intake.preparePending(),/BRIDGE_RUN_LOCKED/);
+ assert.equal(inputStore.get(submitted.job_id).status,'intake_prepared');
+ f.store.release(true);
+ await intake.preparePending();
+ assert.equal(inputStore.get(submitted.job_id).status,'queued');assert.equal(f.files.size,1);
+ assert.equal((await intake.submit(owner,d.id)).duplicate,true);
+ assert.equal(f.approval.claimPublications().length,0);
+});
+
+test('private output import does not materialize unrelated published manuscripts',async t=>{
+ const f=setup(t),j=await job(f);
+ f.store.all=()=>{throw Error('MUST_NOT_LOAD_ENTIRE_QUEUE');};
+ f.files.set(bridgePath('20_OUTPUT_READY',j.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:j.input.job_id,input_hash:j.input.input_hash,processed_at:now(),preview:preview()}));
+ const result=await importEditorialPreviews(f);
+ assert.equal(result.staged,1);assert.equal(f.approval.claimPublications().length,0);
+});
+
 test('a manual lead is provenance, while independent registered articles supply the facts',async t=>{
  const {prepareIntakeNews}=await import('../../scripts/news/bridge/intake-news.mjs');
  for(const scenario of ['social_tip','no_link','unbound_tip','unrelated_article','unavailable_article'])await t.test(scenario,async t=>{
