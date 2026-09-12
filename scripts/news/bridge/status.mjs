@@ -1,6 +1,12 @@
 import { visualGenerationProvider } from '../processing-mode.mjs';
 import { IMPACT_VERSION } from '../impact-assessment.mjs';
 import { POTENTIAL_REVISION } from '../impact-potential.mjs';
+import { JOB_ID } from './contract.mjs';
+export function outputJobId(name) {
+  if (typeof name !== 'string' || !name.endsWith('.output.json')) return null;
+  const id = name.slice(0, -12);
+  return JOB_ID.test(id) ? id : null;
+}
 export async function waitingForReview(store, job) {
   const gate = job.publication_gate;
   const assessment = job.semantic_review?.assessment;
@@ -34,7 +40,9 @@ export async function outputStatus(store, transport, now) {
   const names = new Set(entries.map(e=>e.name));
   const ready = [], unknown = [];
   for (const entry of entries.filter(e => e.name.endsWith('.output.json'))) {
-    const id = entry.name.slice(0,-12), job = await store.get(id);
+    const id = outputJobId(entry.name);
+    if (!id) { unknown.push(entry.name); continue; }
+    const job = await store.get(id);
     if (!job) { unknown.push(entry.name); continue; }
     if (['quarantined','archive_failed','correction_prepared'].includes(job.status) || job.archived_at) continue;
     await observeOutput(store, job, now);

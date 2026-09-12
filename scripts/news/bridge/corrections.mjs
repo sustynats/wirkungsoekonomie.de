@@ -45,10 +45,11 @@ export async function finishCorrection(provider, job, now = new Date().toISOStri
       created_at: correction.requested_at, test_only: job.input.test_only,
       contract_path: job.input.job_type==='editorial_request'?job.input.contract_path:bridgePath('98_CONFIG', 'correction-protocol-20260910-1.json'),
       original_input: job.input, original_output_path: correction.error_output_path,
+      output_path: bridgePath('20_OUTPUT_READY', `${job.input.job_id}.output.json`),
       validation_errors: correction.error,
       ...(['new_story', 'story_update', 'correction', 'impact_reassessment', 'impact_semantic_review'].includes(job.input.job_type)
         ? { research_sources_schema: researchSourceSchema, research_sources_rule: RESEARCH_SOURCE_RULE } : {}),
-      instructions: 'Gezielte Nachbearbeitung desselben Jobs. Originalinput und Quellen unverändert. Vorhandenes ACK prüfen, dann diesen repair-Auftrag nach 10_CLAIMED verschieben. Alle benannten Fehler und die vollständige native Analyse prüfen. Keine Belege, Hashes oder Wirkpfade erfinden. Korrigiertes vollständiges output.json atomar nach 20_OUTPUT_READY schreiben. Bei unzureichender Beleglage hold/reject. Keine API-Aufrufe und keine ChatGPT-Bilder. Während eines aktiven Durchlaufs neue repair-Aufträge mit abholen; ansonsten bestehender Stundenlauf. Kein neuer Server-Trigger.',
+      instructions: 'Gezielte Nachbearbeitung desselben Jobs. Originalinput und Quellen unverändert. Vorhandenes ACK prüfen, dann diesen repair-Auftrag nach 10_CLAIMED verschieben. Alle benannten Fehler und die vollständige native Analyse prüfen. Keine Belege, Hashes oder Wirkpfade erfinden. Korrigiertes vollständiges output.json atomar an den exakten output_path schreiben, ohne repair-N im Ausgabedateinamen. Der abgelehnte Basisoutput liegt bereits unverändert unter original_output_path in 90_ERRORS. Vorhandenes Output oder ACK niemals überschreiben. Bei unzureichender Beleglage hold/reject. Keine API-Aufrufe und keine ChatGPT-Bilder. Während eines aktiven Durchlaufs neue repair-Aufträge mit abholen; ansonsten bestehender Stundenlauf. Kein neuer Server-Trigger.',
     };
     await transport.writeAtomic(correction.request_path, packet);
     job.status = 'correction_pending';

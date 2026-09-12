@@ -6,6 +6,24 @@ einer geprüften Übergabe abgelöst. Ein geöffneter Chat ist kein Verfügbarke
 
 ## Freigabe des Betriebs
 
+Die Übernahme prüft zuerst Quellenbindung, Lesertext und das native Artikelformat
+mit denselben Regeln wie die abschließende Veröffentlichung. Fehler werden vor
+dem unabhängigen MPD-Prüfauftrag gesammelt als Reparatur zurückgegeben. Der
+Vorabcheck schreibt keinen Artikel und erteilt keine fachliche Freigabe. Die
+MPD-Prüfung bleibt an die unveränderte vollständige Ausgabefassung gebunden;
+danach laufen sämtliche Veröffentlichungsgates erneut. So verbrauchen einfache
+Textfehler nicht erst einen zusätzlichen Redaktionspass, ohne die Quellen- oder
+Wirkungsprüfung zu lockern.
+
+Reparaturpakete benennen außerdem den exakten `output_path`. Die native
+Nachrichtenbridge erwartet `<job_id>.output.json`, nicht
+`<job_id>.repair-N.output.json`. Der verworfene Output liegt vor Zustellung des
+Reparaturauftrags bereits unverändert in `90_ERRORS`. Ein unerwartet vorhandener
+Output oder ACK wird niemals überschrieben.
+Unbekannte Ausgabedateinamen werden als `UNKNOWN_OUTPUT` gemeldet und bleiben
+unverändert liegen. Sie werden nicht als Auftragsnummer an den Server geschickt
+und dürfen den Import anderer geprüfter Nachrichten nicht abbrechen.
+
 Jeder tatsächliche Automation-Kontext besteht zuerst einen einmaligen Test ohne
 Nachrichtenauftrag. Codex-Zugriff, Serverzugriff und ein manueller Chat-Test zählen
 nicht als Nachweis für einen Automation-Kontext. Erst nach überprüftem Test darf
