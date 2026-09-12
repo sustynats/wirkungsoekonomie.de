@@ -6,7 +6,9 @@ import {sameBridgeEvent} from './adapter.mjs';
 
 export function validateApprovedNews(record){
  if(!record?.published||!record.analysis||record.impact_semantic_review?.status!=='ready')throw Error('EDITORIAL_NEWS_NATIVE_REVIEW_REQUIRED');
- const errors=[...validateAnalysis({...record.analysis,source_summary:record.source_summary},record,{persisted:true}),...impactAssessmentErrors(record.impact_assessment,record.sources,{required:true})];
+ // The approved edition retains both event evidence and verified mechanism/context sources.
+ const sources=[...(record.sources||[]),...(record.impact_sources||[])];
+ const errors=[...validateAnalysis({...record.analysis,source_summary:record.source_summary},record,{persisted:true}),...impactAssessmentErrors(record.impact_assessment,sources,{required:true})];
  if(errors.length)throw Object.assign(Error('EDITORIAL_NEWS_VALIDATION_FAILED'),{issues:errors});
 }
 export function publicNewsEdition(review){

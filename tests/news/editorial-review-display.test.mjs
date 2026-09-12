@@ -1,6 +1,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {requestWithReview, orderedReviews} from '../../admin/redaktion/review-state.js';
+import {requestWithReview, orderedReviews, requestPresentation} from '../../admin/redaktion/review-state.js';
+
+test('a transport staging receipt cannot promise an approvable draft',()=>{
+ assert.equal(requestPresentation({ack_status:'staged'}).label,'Weiterverarbeitung läuft');
+ assert.equal(requestPresentation({ack_status:'staged',preview_available:true}).label,'Zwischenstand vorhanden');
+ assert.match(requestPresentation({ack_status:'staged'}).description,/noch nicht vor/);
+});
+
+test('a failed check remains visible despite an older staging receipt',()=>{
+ const state=requestPresentation({ack_status:'staged',status:'quarantined',preview_available:true,status_note:'Prüfung blockiert'});
+ assert.equal(state.label,'Bearbeitung blockiert');assert.equal(state.attention,true);assert.equal(state.description,'Prüfung blockiert');
+});
+
+test('only the versioned review announces final approval readiness',()=>{
+ assert.equal(requestPresentation({ack_status:'staged',review_status:'AWAITING_FINAL_APPROVAL'}).label,'Bereit für Deine Freigabe');
+ assert.equal(requestPresentation({ack_status:'staged',review_status:'REVISION_REQUESTED'}).label,'Mit Kommentar zurückgegeben');
+});
 
 const request = {job_id:'book', title:null, ack_status:'staged', preview_available:true,
   publication_url:'https://wirkungsoekonomie.de/wirkungsticker/analyse/old/', status_note:'Old import error'};

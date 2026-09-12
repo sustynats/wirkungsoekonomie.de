@@ -7,6 +7,8 @@ import { sourceIntegrityForStory } from "../../scripts/news/source-integrity.mjs
 import { duplicateGroups } from "../../scripts/news/living-files.mjs";
 import { storyPage } from "../../scripts/news/build.mjs";
 import { prepareEditorialReview } from "../../scripts/news/publish-editorial-review.mjs";
+import { syntheticPotentialAssessment } from './fixtures/impact21.mjs';
+import { validateApprovedNews } from '../../scripts/news/bridge/approved-news.mjs';
 
 const review = JSON.parse(fs.readFileSync(new URL("../../content/news/reviews/sachsen-anhalt-kandidatur-2026-09-05.json", import.meta.url)));
 const registry = loadNewsRegistry(new URL("../../", import.meta.url).pathname);
@@ -144,6 +146,33 @@ const debateOpinion = JSON.parse(fs.readFileSync(new URL("../../content/news/rev
 function pendingDebate() {
   return { story_id: debateReview.story_id, slug: "so-lauft-die-generaldebatte-im-bundestag-merz-gegen-weidel-d260ce", event_id: "original-debate-event", published: false, content_hash: debateReview.expected_content_hash, sources: structuredClone(debateReview.sources), first_seen: "2026-09-09T07:00:00Z", versions: [] };
 }
+test('native 2.1 draft review uses the validated current assessment without a second legacy direction model', () => {
+  const modern=structuredClone(debateReview);
+  modern.analysis.impact_assessment=JSON.parse(JSON.stringify(syntheticPotentialAssessment()).replaceAll('"official"',JSON.stringify(modern.sources[0].source_id)));
+  delete modern.analysis.direction_assessment_version;
+  const result=prepareReviewedStory(modern,registry,[pendingDebate()],"2026-09-12T00:00:00Z");
+  assert.deepEqual(result.errors,[]);
+  assert.equal(result.record.impact_assessment.version,'2.1');
+  modern.analysis.impact_assessment.dimensions.planet.magnitude=null;
+  const invalid=prepareReviewedStory(modern,registry,[pendingDebate()],"2026-09-12T00:00:00Z");
+  assert.ok(invalid.errors.some(code=>code.startsWith('IMPACT_')));assert.equal(invalid.record,undefined);
+});
+test('private news approval retains the verified context sources used by its MPD assessment', () => {
+  const modern=structuredClone(debateReview);
+  modern.analysis.impact_assessment=JSON.parse(JSON.stringify(syntheticPotentialAssessment()).replaceAll('"official"',JSON.stringify(modern.sources[0].source_id)));
+  const record=prepareReviewedStory(modern,registry,[pendingDebate()],"2026-09-12T00:00:00Z").record;
+  record.impact_semantic_review={status:'ready'};
+  const context={...record.sources[0],source_id:'research-synthetic-context'};
+  record.impact_sources=[context];
+  const assessment=record.impact_assessment,path=assessment.dimensions.human.primary_paths[0];
+  path.source_ids=[context.source_id];
+  for(const factor of Object.values(path.magnitude_factors))factor.source_ids=[context.source_id];
+  assessment.research_check.source_functions.push({source_id:context.source_id,functions:['mechanism'],supported_claim:'Der synthetische Kontextbeleg stützt den modellierten Mechanismus.'});
+  record.analysis.impact_assessment=assessment;
+  assert.doesNotThrow(()=>validateApprovedNews(record));
+  record.impact_sources=[];
+  assert.throws(()=>validateApprovedNews(record),/EDITORIAL_NEWS_VALIDATION_FAILED/);
+});
 test("reviewed draft retains the original event and URL, then supports a separate commissioned opinion", () => {
   const draft = pendingDebate();
   const original = structuredClone(draft);

@@ -139,6 +139,19 @@ test('health reports proven read capability independently of blocked output writ
   assert.equal(h.dropbox_read_ok, true); assert.equal(h.dropbox_write_ok, false);
   assert.equal(h.processor_available, false); assert.equal(h.all_shards_available, false);
 });
+
+test('news stages do not count a secondary review or a historical repair as another article',()=>{
+ const jobs=[
+  {input:{job_id:id(1),job_type:'new_story'},status:'queued',created_at:now},
+  {input:{job_id:id(2),job_type:'new_story'},status:'queued',created_at:now,publication_gate:{status:'needs_second_pass'}},
+  {input:{job_id:id(3),job_type:'impact_semantic_review',parent_job_id:id(2)},status:'queued',created_at:now},
+  {input:{job_id:id(4),job_type:'correction',original_input:{job_type:'impact_reassessment'}},status:'queued',created_at:now},
+  {input:{job_id:id(5),job_type:'story_update'},status:'accepted',created_at:now,accepted:{record:{title:'ready'}}},
+  {input:{job_id:id(6),job_type:'new_story'},status:'correction_pending',created_at:now,last_error:{error_code:'INVALID_OUTPUT'}},
+ ];
+ const h=processorHealth({jobs,now});assert.equal(h.open_jobs,6);assert.equal(h.current_news_open,4);
+ assert.deepEqual(h.current_news_stages,{awaiting_output:1,awaiting_second_pass:1,needs_editorial_repair:1,awaiting_import:1});
+});
 test('warning thresholds are strictly greater than 10 and 20', () => {
   for (const [count, expected] of [[10, null], [11, 'QUEUE_WARNING'], [20, 'QUEUE_WARNING'], [21, 'QUEUE_CRITICAL']]) {
     const h = processorHealth({ jobs: Array.from({ length: count }, (_, n) => ({ input: { job_id: id(n) }, status: 'queued', created_at: now })), now });
