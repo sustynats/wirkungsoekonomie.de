@@ -12,7 +12,7 @@ import { BridgeStore } from '../../scripts/news/bridge/store.mjs';
 import { bridgeInput, adaptOutput, validateOutputBinding, validateOutputPreflight } from '../../scripts/news/bridge/adapter.mjs';
 import { DropboxChatGPTBridgeProvider } from '../../scripts/news/bridge/provider.mjs';
 import { ChatGPTBridgeVisualProvider, visualContext } from '../../scripts/news/bridge/visual.mjs';
-import { inputSchema, outputSchema, visualSchema, assertSchema, parsePacket, safeUrl, bridgePath, hash } from '../../scripts/news/bridge/contract.mjs';
+import { inputSchema, outputSchema, visualSchema, assertSchema, parsePacket, safeUrl, bridgePath, hash, JOB_ID } from '../../scripts/news/bridge/contract.mjs';
 import { allowedPath, DropboxTransport } from '../../scripts/news/bridge/dropbox.mjs';
 import { processingMode, visualGenerationProvider } from '../../scripts/news/processing-mode.mjs';
 import { callWoekAi, sha256 } from '../../scripts/news/lib.mjs';
@@ -61,6 +61,23 @@ function setup(t, options = {}) {
   t.after(()=>{store.close();fs.rmSync(directory,{recursive:true,force:true});});
   return {directory,store,transport,provider:new DropboxChatGPTBridgeProvider({store,transport,...(options.adapt ? {semanticReview:async (_bridge,_job,_output,_record,proposed)=>({status:"ready",assessment:proposed})} : {}),...options})};
 }
+
+test('unknown output filenames cannot abort import monitoring through a strict remote job lookup',async t=>{
+  const {provider,store,transport}=setup(t);
+  await provider.enqueue([candidate()],[],now);
+  const id=store.all()[0].input.job_id;
+  const known=id+'.output.json', invalid=[id+'.repair-2.output.json','unrelated.output.json'];
+  for(const name of [known,...invalid])transport.files.set(bridgePath('20_OUTPUT_READY',name),'{}');
+  const get=store.get.bind(store);
+  store.get=key=>{if(!JOB_ID.test(key))throw Error('BRIDGE_JOB_ID_INVALID');return get(key);};
+  const monitored=await provider.monitor(later);
+  for(const name of invalid)assert.ok(monitored.alerts.includes('UNKNOWN_OUTPUT:'+name));
+  const polled=await outputStatus(store,transport,later);
+  assert.deepEqual(polled.unknown_outputs,invalid);
+  assert.ok(polled.ready.includes(id));
+  assert.equal(store.get(id).status,'queued','monitoring never publishes or mutates the job');
+  for(const name of invalid)assert.equal(transport.files.get(bridgePath('20_OUTPUT_READY',name)),'{}','unknown files remain untouched for diagnosis');
+});
 
 test('import recovery keeps manual intake private while regular news remains recoverable', () => {
   const manual = candidate(1), regular = candidate(2), published = {...candidate(3), published:true};

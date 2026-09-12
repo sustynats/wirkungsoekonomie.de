@@ -20,6 +20,9 @@ Nachrichtenbridge erwartet `<job_id>.output.json`, nicht
 `<job_id>.repair-N.output.json`. Der verworfene Output liegt vor Zustellung des
 Reparaturauftrags bereits unverändert in `90_ERRORS`. Ein unerwartet vorhandener
 Output oder ACK wird niemals überschrieben.
+Unbekannte Ausgabedateinamen werden als `UNKNOWN_OUTPUT` gemeldet und bleiben
+unverändert liegen. Sie werden nicht als Auftragsnummer an den Server geschickt
+und dürfen den Import anderer geprüfter Nachrichten nicht abbrechen.
 
 Jeder tatsächliche Automation-Kontext besteht zuerst einen einmaligen Test ohne
 Nachrichtenauftrag. Codex-Zugriff, Serverzugriff und ein manueller Chat-Test zählen
