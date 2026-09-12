@@ -194,6 +194,26 @@ test('repeated truncated bridge reads preserve the same complete output for a la
  assert.equal(saved.corrections,undefined);assert.equal(saved.ack,undefined);assert.equal(transport.files.get(file),original);
  assert.equal((await transport.list('90_ERRORS')).length,0);
 });
+test('explicit publisher crawl windows never grow with previous failures and longer deadlines remain binding', async t => {
+  const {provider, store, transport} = setup(t); provider.correctionsEnabled = true;
+  await provider.enqueue([candidate()], [], now); const job = store.all()[0];
+  job.attempts.import = 8;
+  for (const seconds of [120, 1800, 7200]) {
+    await provider.failure(job, 'import', Object.assign(Error('BRIDGE_RESEARCH_UNAVAILABLE'), {
+      retryable: true, retry_after_seconds: seconds, issues: ['ROBOTS_CRAWL_DELAY_DEFERRED:research-example'],
+    }), now);
+    const saved = store.get(job.input.job_id);
+    assert.equal(Date.parse(saved.retry_at) - Date.parse(now), Math.max(300, seconds) * 1000);
+    assert.equal(saved.last_error.retry_after_seconds, seconds);
+    assert.equal(saved.status, 'queued'); assert.equal(saved.corrections, undefined);
+  }
+  // An actual timeout remains subject to the ordinary outage backoff.
+  await provider.failure(job, 'import', Object.assign(Error('BRIDGE_RESEARCH_UNAVAILABLE'), {
+    retryable: true, issues: ['IMPACT_RESEARCH_REQUEST_TIMEOUT'],
+  }), now);
+  assert.equal(Date.parse(store.get(job.input.job_id).retry_at) - Date.parse(now), 3600000);
+  assert.equal((await transport.list('90_ERRORS')).length, 0);
+});
 test('Dropbox explicit throttling retries at most twice and respects short retry windows', async()=>{
   let calls=0; const delays=[];
   const transport=new DropboxTransport({credentials:{},sleep:async ms=>delays.push(ms),fetchImpl:async()=>{
