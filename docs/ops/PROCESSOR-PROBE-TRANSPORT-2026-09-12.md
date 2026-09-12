@@ -10,6 +10,10 @@ die exakte Nutzlast `{probe_id, test_only: true}` eine Klartext-Testprobe.
 `write-processor-transport.mjs` ergänzt diese eng begrenzte Ausnahme im neuen
 unveränderlichen Vertrag `processor-transport-20260912-6.json`. Er prüft vorab
 die SHA256 der tatsächlich gelesenen v5-Datei. Die alte Datei bleibt erhalten.
+Dropbox meldet 14.061 gespeicherte Bytes (Revision `65b39346945d2000a748b`);
+die Text-Extraktion des Connectors hängt ein zusätzliches Zeilenende an.
+Der Prüfwert bezieht sich auf die gespeicherte Datei mit einem End-Zeilenumbruch,
+nicht auf diese 14.062-Byte-Extraktion. Inhaltliche Abweichungen bleiben blockiert.
 Der vorhandene atomare Dropbox-Transport verhindert abweichendes Überschreiben;
 abschließend wird der vollständige Text zurückgelesen und verglichen.
 
