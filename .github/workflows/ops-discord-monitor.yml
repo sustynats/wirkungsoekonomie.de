@@ -21,6 +21,11 @@ concurrency:
 
 jobs:
   monitor:
+    # The legacy health endpoint also reads the complete private queue.
+    concurrency:
+      group: ${{ vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && 'wirkungsticker-oracle-bridge-access' || 'woek-ops-monitor-api-access' }}
+      queue: max
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
