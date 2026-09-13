@@ -44,6 +44,7 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
     ...(packet.original_input ? ['VALIDATOR_FEEDBACK: ' + JSON.stringify({ validation_errors: packet.validation_errors, attempt: packet.correction_attempt, prior_output: priorOutput })] : []),
   ].join('\n\n') : JSON.stringify({
     task: 'Erzeuge eine vollständige neue Ausgabe für diesen unveränderten Rechercheauftrag. Keine Tools aufrufen. Keine Veröffentlichung oder Freigabe ausführen.',
+    ...(kind === 'review' ? { review_scope: 'Prüfe das modellierte Wirkungspotenzial, nicht ob eine vorgeschlagene Maßnahme bereits umgesetzt wurde. Unabhängiger Fachpass bedeutet unabhängiges Prüfurteil; es ist keine pauschale Zwei-Quellen-Pflicht. Eine korrekt zugeschriebene vorläufige Meldung kann auf einer verlässlichen Einzelquelle beruhen. confirmed_claim und schwere strittige Vorwürfe brauchen die jeweils strengeren Belege. Fehlender Beschluss, unbekannte Konditionen oder fehlende gemessene Folgen dürfen eine korrekt als Vorschlag und ex ante bezeichnete Analyse nicht allein blockieren. institutional_status prüft die zutreffende Bezeichnung des realen Status, nicht das Vorliegen einer endgültigen Entscheidung. magnitude prüft Faktoren, Wirkungsraum und Berechnung; geringe Evidenz gehört nach evidence und darf nicht mit Tragweite vermischt werden. Keine Quellen erfinden. Echte Beleglücken, unbedingte Behauptungen oder fehlerhafte Pfade bleiben Sperrgründe; korrigiere den Assessment-Entwurf nur quellengebunden.' } : {}),
     output_contract: contract,
     assignment: original,
     ...(packet.original_input ? { repair: { validation_errors: packet.validation_errors, attempt: packet.correction_attempt, prior_output: priorOutput } } : {}),
@@ -218,6 +219,14 @@ export class ApiEditorialProcessor {
         try {
           output = validateApiOutput(result.output, packet, this.now());
           await this.preflightOutput(output, current, this.now());
+          // One bounded clarification of a provisional negative review. This
+          // never flips a verdict: the model must re-examine its actual reasons;
+          // a remaining negative verdict is delivered unchanged as a HOLD.
+          if (request.kind === 'review' && attemptRequest.attempt === 0 && output.review.status !== 'ready') {
+            throw Object.assign(Error('API_EDITORIAL_REVIEW_CLARIFICATION_REQUIRED'), { issues: [
+              'Prüfe deine Sperrgründe noch einmal am review_scope. Ein Vorschlag braucht keinen Umsetzungsnachweis; Tragweite ist nicht Evidenz. Behebe behebbaren Assessment-Fehler. Verbleibende echte Fehler und fehlende Belege ausdrücklich beibehalten, niemals automatisch PASS setzen.',
+            ] });
+          }
           break;
         }
         catch (error) {

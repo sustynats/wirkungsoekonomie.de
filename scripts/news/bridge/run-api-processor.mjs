@@ -7,6 +7,7 @@ import { editorialKnowledge } from './editorial-knowledge.mjs';
 import { ApiEditorialProcessor, apiProcessorPreflight, selectApiJobs } from './api-processor.mjs';
 import { validateOutputPreflight } from './adapter.mjs';
 import { loadNewsRegistry } from '../registry.mjs';
+import { derivePublicationStatus, SEMANTIC_CHECKS } from '../impact-publication.mjs';
 
 // Explicit operator activation. A cron without credentials/config is not
 // counted as healthy; dry-run lists selected IDs and never claims or calls AI.
@@ -65,6 +66,13 @@ try {
     const registry = loadNewsRegistry(root);
     const processor = new ApiEditorialProcessor({ store, transport, api, knowledge: editorialKnowledge(root), now,
       preflightOutput: (output, job, at) => {
+        if (job.input.job_type === 'impact_semantic_review') {
+          if (output.review.status === 'ready' && SEMANTIC_CHECKS.every(key => output.review.checks[key].status === 'pass')) {
+            const gate = derivePublicationStatus(output.impact_assessment, job.candidate, { review: output.review, secondPassComplete: true });
+            if (gate.issues.length) throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: gate.issues });
+          }
+          return;
+        }
         if (!['new_story','story_update'].includes(job.input.job_type)) return;
         // A bounded snapshot is sufficient for early article validation. The
         // importer still checks the actual complete/public state independently.
