@@ -60,7 +60,12 @@ permissions:
   contents: write
 
 concurrency:
-  group: wirkungsticker-main
+  # Ignored discovery-clock/API-only triggers must not replace a pending import
+  # before the job-level condition is evaluated. Keep this eligibility in sync
+  # with update.if; the regression matrix exercises both processing modes.
+  group: >-
+    ${{ ((vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '*/5 * * * *' || github.ref == 'refs/heads/codex/wirkungsticker-import-clock')) ||
+    (vars.WIRKUNGSTICKER_PROCESSING_MODE != 'dropbox_chatgpt_bridge' && github.event.schedule != '*/5 * * * *' && github.ref != 'refs/heads/codex/wirkungsticker-import-clock')) && 'wirkungsticker-main' || 'wirkungsticker-inactive-trigger' }}
   cancel-in-progress: false
 
 jobs:
