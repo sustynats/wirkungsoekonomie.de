@@ -11,7 +11,7 @@ export function bridgeSession(env = process.env, { fetchImpl = fetch } = {}) {
   const url = new URL(endpoint);
   if (url.protocol !== 'https:' || url.hostname !== '130.162.217.58.sslip.io' || url.pathname !== '/api/news-bridge' || url.search || url.hash || url.username || url.password) throw new Error('BRIDGE_REMOTE_URL_INVALID');
   const owner = `${runId}:${env.GITHUB_RUN_ATTEMPT || '1'}`;
-  const readOperations = new Set(['store.get', 'store.all', 'store.impactStagingIndex', 'store.observation',
+  const readOperations = new Set(['store.get', 'store.all', 'store.semanticReviews', 'store.impactStagingIndex', 'store.observation',
     'dropbox.list', 'dropbox.read', 'dropbox.readBinary', 'dropbox.metadata', 'bridge.status', 'bridge.monitor']);
   async function requestOnce(op, args) {
     return withRequestDeadline(async signal => {
@@ -56,6 +56,14 @@ export function bridgeSession(env = process.env, { fetchImpl = fetch } = {}) {
       if (page.next_cursor === null) return jobs;
       if (!page.items.length || !page.next_cursor || cursors.has(page.next_cursor)) throw Error('BRIDGE_QUEUE_CURSOR_INVALID');
       cursors.add(page.next_cursor); after = page.next_cursor;
+    }
+  };
+  store.semanticReviews = async parent => {
+    try { return await request('store.semanticReviews', [parent]); }
+    catch (error) {
+      if (error.message !== 'BRIDGE_OPERATION_INVALID') throw error;
+      // Rolling deployment: only old servers fall back to their bounded pages.
+      return (await store.all()).filter(job => job.input.job_type === 'impact_semantic_review' && job.input.parent_job_id === parent);
     }
   };
   const transport = Object.fromEntries(['list','read','metadata','move','writeAtomic','archive'].map(op => [op, (...args) => request(`dropbox.${op}`, args)]));

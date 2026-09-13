@@ -62,6 +62,21 @@ function setup(t, options = {}) {
   return {directory,store,transport,provider:new DropboxChatGPTBridgeProvider({store,transport,...(options.adapt ? {semanticReview:async (_bridge,_job,_output,_record,proposed)=>({status:"ready",assessment:proposed})} : {}),...options})};
 }
 
+test('publication pickup preserves manual priority and processes fresh news before older ready files',async t=>{
+  const f=setup(t), candidates=[candidate(1),candidate(2),candidate(3)];
+  const times=['2026-09-10T06:30:00.000Z','2026-09-10T06:35:00.000Z','2026-09-10T06:40:00.000Z'];
+  const ids=[];
+  for(let i=0;i<3;i++){
+    const c={...candidates[i],sources:candidates[i].sources.map(s=>({...s,published_at:times[i]}))};
+    const input=bridgeInput(c,now);ids.push(input.job_id);
+    f.store.put({input,candidate:c,status:'queued',created_at:now,attempts:{},...(i===0?{intake_news_parent:'manual-parent'}:{})});
+    f.transport.files.set(bridgePath('20_OUTPUT_READY',input.job_id+'.output.json'),JSON.stringify(output(input)));
+  }
+  const result=await f.provider.reconcile({sources:[]},[],later);
+  assert.deepEqual(result.map(r=>r.job_id),[ids[0],ids[2],ids[1]]);
+  for(let i=0;i<3;i++)assert.equal(f.store.get(ids[i]).candidate.sources[0].published_at,times[i]);
+});
+
 test('unknown output filenames cannot abort import monitoring through a strict remote job lookup',async t=>{
   const {provider,store,transport}=setup(t);
   await provider.enqueue([candidate()],[],now);
