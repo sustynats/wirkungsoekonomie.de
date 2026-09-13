@@ -106,3 +106,36 @@ Quelldatum. Er stellt den älteren Nachrichtenstapel zurück, ohne ihn zu lösch
 Der normale Sechs-Stunden-Rahmen bleibt: Ein frisch ausgewählter Artikel darf
 seinen unabhängigen Fachpass auch nach Ablauf der ersten Stunde noch abschließen.
 Persönliche Aufträge unterliegen diesem Nachrichtenstichtag nicht.
+
+Formatprüfung im laufenden Pilot: Der Web-Recherchepass liefert wiederholt
+syntaktisch ungültige Freitext-JSON-Antworten. Die nächste begrenzte Pilotfassung
+verwendet deshalb eine JSON-Schema-Ausgabehülle; die vollständigen fachlichen
+Validatoren bleiben verpflichtend. `ready` bezeichnet auch die geprüft korrekte
+Darstellung einer ausdrücklich vorläufig zugeschriebenen Nachricht, nicht deren
+Umwandlung in eine unabhängig bestätigte Tatsachenbehauptung.
+Die Web-Recherche erhält die bereits im Register für begrenzte Artikelprüfung
+zugelassenen Hosts. Eigene WÖk-Seiten dienen dabei nicht als Ereignisbeleg;
+Robots-, RSL-, Zitat- und Quellenprüfungen bleiben unverändert.
+
+Der echte Recherchepilot bestätigt gültige Schema-Antworten mit Web-Suche.
+Oracle benötigt für zugelassene PDF-Belege `poppler-utils` (`pdftotext`). Fehlende
+Werkzeuge und vorübergehende Quellen-/Netzfehler stoppen nur die Validierung;
+die fertige Antwort wird bei Wiederaufnahme erneut geprüft, ohne dafür einen
+weiteren Text zu generieren. Ein fachlicher Prüffehler bleibt davon getrennt.
+
+Für neue unabhängige Fachprüfungen wird GPT-5.4 Mini mit reasoning medium
+gezielt geprüft, statt denselben günstigen Entwurfstyp erneut einzusetzen.
+Der bisherige Forschungs-Pilot lieferte formal gültige Antworten, übernahm
+aber widersprüchliche Haupt-/Nebenpfade. Die festen Reserven und Monatsgrenzen
+bleiben erhalten, ebenso der Höchstwert von drei Aufrufen pro Auftrag.
+Vorhandene Ergebnisse behalten Modell, Tarif und Request-Key. Kein Modell-
+Fallback bei erschöpften Aufträgen. Entwurf: weiterhin GPT-5.6 Luna.
+Tarifnachweis: https://developers.openai.com/api/docs/models/gpt-5.4-mini
+(Input/Cache/Output USD 0.75/0.075/4.50 je Million Tokens).
+
+Ein abgeschlossener Provider-Response kann zusätzlich zu zwei abgeschlossenen
+Suchen einen noch als `searching` markierten Platzhalter enthalten. Die
+Ausführungsgrenze zählt abgeschlossene Operationen; das Kostenjournal zählt
+vorsorglich weiterhin alle gemeldeten Aufrufe. Drei abgeschlossene Suchen bleiben
+gesperrt. Bereits gespeicherte Antworten mit diesem reinen Statuszählfehler
+können ohne neue Generierung in die unveränderte fachliche Prüfung zurückkehren.
