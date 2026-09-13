@@ -1,4 +1,4 @@
-import { syntheticImpact21 } from './fixtures/impact21.mjs';
+import { syntheticImpact21, syntheticPotentialAssessment } from './fixtures/impact21.mjs';
 import { ensureSemanticReview } from '../../scripts/news/bridge/semantic-review.mjs';
 import { SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import test from 'node:test';
@@ -533,6 +533,48 @@ test('bridge3 duplicate concept falls back without spending and required=false r
   const v=new HiggsfieldBridgeVisualProvider({directory});const response=await v.receive({input},later,{record:candidate(),output:{visual_brief:brief3},staged:false});assert.equal(response.status,'fallback');
   let calls=0;const p=createTitleImagePipeline({root:directory,generate:async()=>{calls++;throw Error('No');},publish:async()=>({}),raster:async(svg,{width,height})=>({png:png(width,height)})});
   await p({...candidate(),visual_brief:{...brief3,required:false}});assert.equal(calls,0);
+});
+
+test('native news without an optional visual brief reaches production acceptance and committed ACK',async t=>{
+  bridge3Env(t);
+  const {original,c,created,processed,input,value,registry}=nativeReviewFixture();
+  const {directory,provider,store,transport}=setup(t,{stageOnly:false,correctionsEnabled:true});
+  let imagePipelines=0,reviews=0;
+  provider.semanticReview=async()=>{reviews++;return {status:'ready',assessment:JSON.parse(JSON.stringify(syntheticPotentialAssessment()).replaceAll('"official"',JSON.stringify(c.sources[0].source_id)))};};
+  provider.visualProvider=new HiggsfieldBridgeVisualProvider({directory,pipeline:()=>{imagePipelines++;throw Error('NO_PAID_IMAGE');}});
+  store.put({input,candidate:c,status:'queued',attempts:{},created_at:created});
+  const raw=JSON.stringify(value),file=bridgePath('20_OUTPUT_READY',input.job_id+'.output.json');
+  assert.equal(Object.hasOwn(value,'visual_brief'),false);
+  transport.files.set(file,raw);
+  const [accepted]=await provider.reconcile(registry,[original],processed);
+  assert.ok(accepted?.record,JSON.stringify(store.get(input.job_id).last_error));
+  assert.equal(reviews,1);assert.equal(imagePipelines,0);
+  assert.equal(accepted.staged,false);assert.equal(accepted.visual.reason,'BRIDGE_VISUAL_BRIEF_MISSING');
+  assert.equal(store.get(input.job_id).status,'accepted');
+  assert.equal(store.get(input.job_id).corrections,undefined);
+  assert.equal(transport.files.get(file),raw,'no rewriting a valid paid editorial output');
+  await provider.finalize([accepted.record],processed,{committed:false});
+  assert.equal(store.get(input.job_id).ack,undefined);
+  await provider.finalize([accepted.record],processed,{committed:true});
+  assert.equal(store.get(input.job_id).ack.status,'imported');
+  assert.ok(store.get(input.job_id).ack.url.endsWith('/'+accepted.record.slug+'/'));
+});
+
+test('missing visual brief renders a private free card and invalid supplied briefs remain blocked',async t=>{
+  bridge3Env(t);const {directory}=setup(t);
+  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.published&&s.listed!==false));delete record.title_image;
+  let generations=0,renders=0;
+  const visual=new HiggsfieldBridgeVisualProvider({directory,pipeline:options=>createTitleImagePipeline({...options,
+    generate:async()=>{generations++;throw Error('NO_PAID_IMAGE');},
+    raster:async(_svg,{width,height})=>{renders++;return {png:png(width,height)};}})});
+  const job={input:bridgeInput(candidate(),now)};
+  const result=await visual.receive(job,later,{output:{},record,staged:true});
+  assert.equal(result.status,'staged');assert.equal(result.reason,'BRIDGE_VISUAL_BRIEF_MISSING');
+  assert.equal(result.staging.title_image.mode,'impact_card');assert.ok(result.staging.png_base64);
+  assert.ok(renders>0);assert.equal(generations,0);
+  for(const invalid of [null,{},'missing']) await assert.rejects(
+    visual.receive(job,later,{output:{visual_brief:invalid},record,staged:false}),/BRIDGE_SCHEMA_INVALID:\$\.visual_brief/);
+  assert.equal(generations,0);
 });
 
 
