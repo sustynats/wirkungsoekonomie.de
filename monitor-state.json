@@ -39,9 +39,14 @@
     },
     "bridge-api-results": {
       "firstSeen": "2026-09-13T19:53:41.600Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "5ffd6352748cc18b2b4b3604",
+      "content": "⚠ WÖk-Betriebsstörung\nAPI-Redaktionsverarbeitung: Der Oracle-API-Worker meldet unvollständige oder ungewisse Ergebnisse beziehungsweise ein Budgetproblem. Gelieferte Entwürfe sind noch keine Veröffentlichungen.\nSeit: 2026-09-13T19:53:41.600Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-13"
 }
