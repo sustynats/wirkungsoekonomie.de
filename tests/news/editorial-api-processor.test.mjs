@@ -131,11 +131,24 @@ test('article preflight errors reach bounded repair before any output is deliver
 test('deep schema ordering retains all fields and supplied evidence unchanged', async () => {
   const {orderNativePrompt}=await import('../../scripts/news/bridge/api-processor.mjs');
   const schema={analyses:[{story_id:'string',impact_assessment:{dimensions:{human:{}}},systemic_relevance:'string',publication_gate:{news_value:'new_evidence'}}],$defs:{path:{}}};
-  const evidence='UNTRUSTED_SOURCE_DATA_BEGIN\n{"quoted":"source text"}\nUNTRUSTED_SOURCE_DATA_END';
+  const evidence='UNTRUSTED_SOURCE_DATA_BEGIN\n'+JSON.stringify(schema)+'\n{"quoted":"source text"}\nUNTRUSTED_SOURCE_DATA_END';
   const result=orderNativePrompt(JSON.stringify(schema)+'\n'+evidence);
   assert.deepEqual(JSON.parse(result.split('\n')[0]),schema);
   assert.equal(Object.keys(JSON.parse(result.split('\n')[0]).analyses[0]).at(-1),'impact_assessment');
   assert.ok(result.endsWith(evidence));
+});
+test('transport-compatible completed response retains its paid request key and usage without another call',async()=>{
+  const f=fixture(),oldKey='d'.repeat(64),oldProfile='e'.repeat(64);
+  const receipt=await apiProcessorPreflight(f.transport,f.api,now);
+  const request=prepareApiJob(input,knowledge);
+  await f.transport.move(bridgePath('00_INBOX',id+'.input.json'),bridgePath('10_CLAIMED',id+'.input.json'));
+  f.observations.set('api-claim:'+id+'.input.json',{state:'claimed',key:oldKey});
+  f.processor.knowledge={...knowledge,compatibleHashes:[oldProfile]};
+  f.api.get=async()=>({key:oldKey,profile_hash:oldProfile,packet_hash:request.packet_hash,status:'completed',output:f.output,usage:{input_tokens:100,output_tokens:200}});
+  assert.equal((await f.processor.process(f.job,receipt)).status,'output_delivered');
+  assert.equal(f.calls.length,0);
+  const proof=JSON.parse(f.files.get(bridgePath('95_LOGS','processor-api-'+oldKey+'.json')));
+  assert.equal(proof.key,oldKey); assert.equal(proof.profile_hash,oldProfile); assert.equal(proof.usage.output_tokens,200);
 });
 test('current corrections finish before new drafts while independent review remains first',()=>{
   const f=fixture(),repair={...f.job,status:'correction_pending',input:{...input,job_id:id.replace(/a/g,'e')}};

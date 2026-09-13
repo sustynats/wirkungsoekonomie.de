@@ -10,7 +10,10 @@ import { latestEvidenceTime } from '../discovery-admission.mjs';
 // Keep the deep MPD schema last so it cannot swallow the remaining article
 // fields. Reordering preserves every field, rule and immutable source byte.
 export function orderNativePrompt(prompt) {
+  let untrusted = false;
   return prompt.split('\n').map(line => {
+    if (line === 'UNTRUSTED_SOURCE_DATA_BEGIN') untrusted = true;
+    if (untrusted) return line;
     if (!line.startsWith('{"analyses":')) return line;
     const schema = JSON.parse(line);
     schema.analyses = schema.analyses.map(({ impact_assessment, ...article }) => ({ ...article, impact_assessment }));
@@ -206,7 +209,8 @@ export class ApiEditorialProcessor {
         result = await this.api.submit(attemptRequest);
         if (result.provider_called !== false) providerAttempts++;
       }
-      this.store.observe(`api-result:${attemptRequest.key}`, { job_id: id, key: attemptRequest.key, at: this.now(), status: result.status, usage: result.usage || null });
+      const resultKey = result.key || attemptRequest.key;
+      this.store.observe(`api-result:${resultKey}`, { job_id: id, key: resultKey, at: this.now(), status: result.status, usage: result.usage || null });
       let validationError;
       if (result.status === 'completed') {
         if (result.output?.job_id !== id || result.output?.input_hash !== request.input_hash) throw Error('BRIDGE_JOB_BINDING_MISMATCH');
@@ -217,7 +221,7 @@ export class ApiEditorialProcessor {
         }
         catch (error) {
           validationError = [String(error.message), ...(error.issues || [])].join('\n').slice(0, 6000);
-          this.store.observe(`api-validation:${attemptRequest.key}`, {job_id:id,key:attemptRequest.key,at:this.now(),error:validationError});
+          this.store.observe(`api-validation:${resultKey}`, {job_id:id,key:resultKey,at:this.now(),error:validationError});
         }
       } else if (result.status === 'failed' && ['api_editorial_invalid_json', 'api_editorial_incomplete'].includes(result.error)) validationError = result.error;
       else return { job_id: id, status: result.status, provider_attempts: providerAttempts };
@@ -233,9 +237,9 @@ export class ApiEditorialProcessor {
     if (await this.transport.metadata(outputPath)) return { status: 'already_delivered', job_id: id };
     await this.transport.writeAtomic(outputPath, output);
     if (hash(JSON.parse(await this.transport.read(outputPath))) !== hash(output)) throw Error('API_EDITORIAL_DELIVERY_READBACK_FAILED');
-    await this.transport.writeAtomic(bridgePath('95_LOGS', `processor-api-${attemptRequest.key}.json`), {
-      actor: 'oracle_api', job_id: id, key: attemptRequest.key, output_hash: hash(output), delivered_at: this.now(),
-      profile_hash: request.profile_hash, usage: result.usage || null, status: 'OUTPUT_DELIVERED_NOT_PUBLISHED',
+    await this.transport.writeAtomic(bridgePath('95_LOGS', `processor-api-${result.key || attemptRequest.key}.json`), {
+      actor: 'oracle_api', job_id: id, key: result.key || attemptRequest.key, output_hash: hash(output), delivered_at: this.now(),
+      profile_hash: result.profile_hash || request.profile_hash, validated_profile_hash: request.profile_hash, usage: result.usage || null, status: 'OUTPUT_DELIVERED_NOT_PUBLISHED',
     });
     return { status: 'output_delivered', job_id: id, provider_attempts: providerAttempts };
   }

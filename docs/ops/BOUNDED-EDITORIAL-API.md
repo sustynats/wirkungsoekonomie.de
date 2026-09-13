@@ -13,7 +13,7 @@ unverändert. Eine gelieferte Ausgabe ist noch keine Veröffentlichung.
 - Oracle-Worker mit `api-processor-config.json` im bestehenden privaten
   Bridge-Verzeichnis: version 1, enabled, max_jobs_per_run 1..10,
   max_news_age_hours 1..24, news_only, excluded_job_ids. Pilot: news_only=true,
-  ein frischer Auftrag. `--dry-run` erzeugt weder Claims noch API-Aufrufe.
+  höchstens fünf frische Aufträge. `--dry-run` erzeugt weder Claims noch API-Aufrufe.
 - Gesonderter API-Read-/Write-Preflight, atomarer Dropbox-Claim, unveränderliche
   Ausgaben. Fremde Claims, ACKs und vorhandene Ausgaben bleiben unangetastet.
 - SQLite-Prozesslock verhindert parallele Worker. Timer alle zehn Minuten, erst
@@ -21,6 +21,15 @@ unverändert. Eine gelieferte Ausgabe ist noch keine Veröffentlichung.
   Discovery weiterführen; keine Sperren gewaltsam entfernen.
 - Originales Nachrichtendatum bleibt erhalten; standardmäßig maximal sechs
   Stunden alte Ereignisse, jüngste zuerst innerhalb der bestehenden Prioritäten.
+- Aktuelle Korrekturen und unabhängige Zweitprüfungen werden vor neuen Entwürfen
+  abgeschlossen. Die bestehende Artikelprüfung läuft bereits vor der Übergabe
+  und nochmals im Import. Dadurch geht konkretes Fehlerfeedback direkt in den
+  begrenzten Korrekturlauf, ohne zusätzliche GitHub-Runde.
+- Ein einziges natives News-Ausgabeformat; die Software ergänzt den Transport.
+  Fertige Antworten bleiben nach der reinen Transportkorrektur des Wissensprofils
+  wiederverwendbar, ausschließlich bei identischem Quellen-/Methodenmanifest.
+  Originaler Request-Key, Usage und Rohantwort bleiben erhalten. Keine neue
+  fachliche Bewertung durch bloßes Umbenennen oder automatische Score-Ergänzung.
 - Versionierte fachliche Regeln und Quellenmanifest statt angenommener
   ChatGPT-Erinnerungen. Tatsachen nur aus mitgelieferten Quellenauszügen. Fehlende
   Recherche wird als HOLD sichtbar; keine Quellenlektüre erfinden.
@@ -59,3 +68,13 @@ Nicht nur Dienststatus oder Output zählen: frischer Auftrag -> native Prüfung 
 getrennter Fachpass -> Import -> ACK -> tatsächlich abrufbare öffentliche URL.
 `api-processor-health` ist ergänzende Betriebsinformation, kein Ersatz für
 Publication Health. Ein einzelner Pilot belegt noch keinen stabilen Tagesbetrieb.
+
+Pilotbefunde: Die erste API-Einstellung verbrauchte ihr Ausgabelimit vollständig
+für internes Reasoning. Ein begrenztes Low-Profil liefert vollständige Antworten.
+Konkurrierende Ausgabeformate verursachten anschließend Verschachtelungsfehler;
+der Native-Vertrag und die frühe Artikelprüfung beheben diese Transportursache.
+Ein generischer Validatorfehler verwechselte ausdrücklich gespeicherte
+Pfadannahmen mit beobachteten Wirkungen. Er wurde separat mit Regressionstest
+korrigiert; Aussagen im Artikel, in Begründungen und Outcomes bleiben geprüft.
+HOLD, gelieferter Entwurf, unabhängige Prüfung und öffentliche Meldung werden
+weiterhin getrennt gezählt. Nicht abgeschlossene Pilotfälle sind kein PASS.
