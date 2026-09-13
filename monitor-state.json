@@ -5,11 +5,40 @@
       "firstSeen": "2026-09-12T15:10:39.580Z",
       "active": true
     },
-    "bridge-access": {
-      "firstSeen": "2026-09-13T10:37:42.952Z",
-      "active": true
+    "bridge-queue": {
+      "firstSeen": "2026-09-13T11:15:00.570Z",
+      "active": false
+    },
+    "bridge-queue-size": {
+      "firstSeen": "2026-09-13T11:15:00.570Z",
+      "active": false
+    },
+    "bridge-processor": {
+      "firstSeen": "2026-09-13T11:15:00.570Z",
+      "active": false
+    },
+    "bridge-shards": {
+      "firstSeen": "2026-09-13T11:15:00.570Z",
+      "active": false
+    },
+    "bridge-publication-flow": {
+      "firstSeen": "2026-09-13T11:15:00.570Z",
+      "active": false
+    },
+    "bridge-throughput": {
+      "firstSeen": "2026-09-13T11:15:00.570Z",
+      "active": false
+    },
+    "bridge-errors": {
+      "firstSeen": "2026-09-13T11:15:00.570Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "b1a417c4b828ce11f4bf8fd7",
+      "content": "✓ WÖk-Störung behoben\nDropbox-Bridge\nPrüfung: 2026-09-13T11:15:00.570Z"
+    }
+  ],
   "dailyDate": "2026-09-13"
 }
