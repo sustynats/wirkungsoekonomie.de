@@ -53,3 +53,21 @@ test('a genuine failed editorial check remains held, never automatically changed
  const result=await reviewPreflight(f.bridge,f.output,f.record,now);
  assert.equal(result.gate.status,'needs_review');assert.equal(f.output.review.checks.source_fidelity.status,'fail');
 });
+
+test('an unresolved first-pass media obligation blocks even an otherwise ready MPD review',async()=>{
+ const f=fixture();f.record.media_review_required=true;f.record.analysis={...f.record.analysis,media_impact:null};
+ await assert.rejects(reviewPreflight(f.bridge,f.output,f.record,now),e=>e.issues?.includes('MEDIA_INDEPENDENT_REVIEW_REQUIRED'));
+ f.output.media_applicability={relevant:false,reason:'Der unabhängig geprüfte synthetische Ereigniskern benötigt keine zusätzliche Medienwirkungsanalyse.'};
+ const result=await reviewPreflight(f.bridge,f.output,f.record,now);
+ assert.equal(result.gate.status,'ready');assert.deepEqual(result.reviewRecord.analysis.media_impact,f.output.media_applicability);
+ assert.equal(f.record.analysis.media_impact,null);
+ f.output.review.status='needs_review';f.output.review.checks.source_fidelity.status='fail';
+ assert.equal((await reviewPreflight(f.bridge,f.output,f.record,now)).gate.status,'needs_review');
+});
+test('a relevant but missing media check cannot be downgraded to an optional notice',async()=>{
+ const f=fixture();f.record.media_review_required=true;f.record.analysis={...f.record.analysis,media_impact:null};
+ f.output.media_applicability={relevant:true,reason:'Der unabhängige Prüfbefund erkennt einen relevanten Frame, dessen konkrete Prüfung hier noch fehlt.'};
+ await assert.rejects(reviewPreflight(f.bridge,f.output,f.record,now),e=>e.issues?.includes('MEDIA_IMPACT_REQUIRED'));
+ f.output.review.status='needs_review';f.output.review.checks.source_fidelity.status='fail';
+ assert.equal((await reviewPreflight(f.bridge,f.output,f.record,now)).gate.status,'needs_review');
+});
