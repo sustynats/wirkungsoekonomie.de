@@ -120,6 +120,14 @@ test('misplaced native sibling fields are copied losslessly and never used to in
   assert.deepEqual(result.wirkungsticker.analysis.impact_assessment,analysis.impact_assessment);
   assert.equal(analysis.publication_gate,undefined);
 });
+test('numeric transport preserves scores and never fills nulls or rewrites textual evidence',async()=>{
+ const {canonicalAssessmentNumbers}=await import('../../scripts/news/bridge/api-processor.mjs');
+ const a={dimensions:{human:{magnitude:'3',primary_paths:[{magnitude:'3',magnitude_range:{lower:'2',upper:'4'},magnitude_factors:{reach:{value:'2',source_ids:['3'],rationale:'3'}},direction:'negative'}],secondary_paths:[]},planet:{magnitude:null,primary_paths:[{magnitude:'unknown'}],secondary_paths:[]}},observed_effects:[{magnitude:'4'}]};
+ canonicalAssessmentNumbers(a);
+ assert.equal(a.dimensions.human.magnitude,3);assert.equal(a.dimensions.human.primary_paths[0].magnitude_factors.reach.value,2);
+ assert.deepEqual(a.dimensions.human.primary_paths[0].magnitude_factors.reach.source_ids,['3']);assert.equal(a.dimensions.human.primary_paths[0].magnitude_factors.reach.rationale,'3');
+ assert.equal(a.dimensions.planet.magnitude,null);assert.equal(a.dimensions.planet.primary_paths[0].magnitude,'unknown');assert.equal(a.observed_effects[0].magnitude,4);
+});
 test('article preflight errors reach bounded repair before any output is delivered', async () => {
   const f=fixture(); let checked=0;
   f.processor.preflightOutput=async()=>{ if (++checked === 1) throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:['AI_REQUIRED_STRING:systemic_relevance']}); };
