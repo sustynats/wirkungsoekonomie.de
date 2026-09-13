@@ -107,11 +107,11 @@ export class DropboxChatGPTBridgeProvider {
       if (!names.has(`${job.input.job_id}.output.json`)) continue;
       try {
         const output = parsePacket(await this.transport.read(bridgePath('20_OUTPUT_READY', `${job.input.job_id}.output.json`)), outputSchema);
-        if (this.adapt === adaptOutput) validateOutputPreflight(output, job, registry, jobStories, now);
+        const prepared = this.adapt === adaptOutput ? validateOutputPreflight(output, job, registry, jobStories, now) : null;
         let validatedOutput = output;
         if (['publish','merge'].includes(output.decision.status)) {
           const raw = output.wirkungsticker?.analysis;
-          const analysis = Array.isArray(raw?.analyses) ? raw.analyses[0] : raw;
+          const analysis = prepared?.analysis || (Array.isArray(raw?.analyses) ? raw.analyses[0] : raw);
           const record = { ...job.candidate, title: output.story.headline, source_summary: output.story.detailed_summary, analysis };
           const proposed = analysis?.impact_assessment || migrateImpactAssessment(analysis || {}, { title: record.title });
           const gate = await this.semanticReview(this, job, output, record, proposed, now);
