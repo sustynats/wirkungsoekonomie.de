@@ -29,15 +29,16 @@
       "firstSeen": "2026-09-13T13:49:45.461Z",
       "active": true
     },
-    "bridge-publication-flow": {
-      "firstSeen": "2026-09-13T18:12:53.497Z",
-      "active": true
-    },
     "bridge-review": {
       "firstSeen": "2026-09-13T19:09:37.148Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "a0d3d9f89bb2cb21e6a3b722",
+      "content": "✓ WÖk-Störung behoben\nAktuelle Nachrichten tatsächlich veröffentlicht\nPrüfung: 2026-09-13T21:18:18.198Z"
+    }
+  ],
   "dailyDate": "2026-09-13"
 }
