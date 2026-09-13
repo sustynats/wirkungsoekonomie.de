@@ -64,3 +64,30 @@ aktualisieren, nur bei deaktiviertem Timer und ohne laufenden API-Auftrag.
 Vorherige Codefassung und Zustandsjournale privat sichern. Bei Fehlern Code
 zurückrollen; Kosten- und Auftragsjournale niemals zurücksetzen. Der Timer
 bleibt bis zum belegten vollständigen neuen Zwei-Aufruf-Durchlauf deaktiviert.
+
+## Abschluss der zweiten Prüfung (13. September, Vertragsversion 5)
+
+Der zweite Aufruf prüft die Endfassung: unveränderten Nachrichtenwortlaut,
+bestätigtes oder korrigiertes Wirkungsprofil und gegebenenfalls einen vollständig
+ergänzten Mediencheck. Das strukturierte Antwortschema ordnet das Prüfurteil
+hinter diesen Feldern an. Behobene Erstfassungsfehler werden dokumentiert;
+unbehobene Text-, Quellen- oder Methodenfehler bleiben ein HOLD. Vorhandene
+negative Prüfurteile werden weder umgedeutet noch automatisch freigegeben.
+
+Bei einem fehlenden Mediencheck kann der unabhängige Prüfer jetzt auch einen
+vollständigen positiven Relevanzbefund liefern. Es gelten der bestehende
+Medienvalidator und dessen Quellen-/Attributionsregeln. Unbelegte politische
+Zuschreibungen, unbelegte beobachtete Medienwirkung und eine weiterhin nötige
+Textkorrektur sperren die Ausgabe. Eine nachvollziehbare negative
+Relevanzentscheidung bleibt zulässig. Persönliche Beiträge sind davon unberührt.
+
+Der lokale Protokollvalidator prüft `anyOf`-Varianten ausdrücklich; die
+Strukturgarantie des Anbieters ersetzt keine Prüfung importierter Antworten.
+Neue Rechercheauszüge müssen zusammenhängend und wörtlich sein. Die freie
+Zusammenfassung steht in `supports`, nicht im Feld `quote`. Fehlgeschlagene
+Zitatverifikation bleibt ein Sperrgrund und erzeugt keinen dritten Aufruf.
+
+Lokal geprüft: 1.244 Nachrichtentests, 96 Runtime-Tests, Nachrichtenbuild,
+Nachrichtenvalidator, Lint und Typecheck. Diese Ergebnisse belegen noch keinen
+neuen produktiven Artikel; der Betriebsnachweis braucht weiterhin die beiden
+bezahlten Journale, die unabhängige Freigabe, den Import und die öffentliche URL.

@@ -88,6 +88,14 @@ export function safeUrl(raw) {
 export function assertSchema(schema, value, at = '$', depth = 0) {
   const fail = (field = at) => { throw new Error(`BRIDGE_SCHEMA_INVALID:${field}`); };
   if (depth > 30) fail();
+  if (schema.anyOf) {
+    let matched=false;
+    for (const branch of schema.anyOf) {
+      try { assertSchema(branch,value,at,depth+1); matched=true; break; }
+      catch(error) { if (!error.message.startsWith('BRIDGE_SCHEMA_INVALID:')) throw error; }
+    }
+    if (!matched) fail();
+  }
   const type = value === null ? 'null' : Array.isArray(value) ? 'array' : typeof value;
   if (schema.type && ![].concat(schema.type).some(t => t === type || t === 'integer' && Number.isInteger(value))) fail();
   if ('const' in schema && value !== schema.const || schema.enum && !schema.enum.includes(value)) fail();

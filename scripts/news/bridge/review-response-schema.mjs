@@ -3,6 +3,7 @@ import { POTENTIAL_REVISION, PATH_QUALITIES } from '../impact-potential.mjs';
 import { FACTOR_KEYS } from '../impact-magnitude.mjs';
 import { SEMANTIC_CHECKS } from '../impact-publication.mjs';
 import { RESEARCH_FUNCTIONS, researchSourceSchema } from './research-source-schema.mjs';
+import { MEDIA_REVIEW_SCHEMA } from './media-review-schema.mjs';
 
 const string={type:'string'}, boolean={type:'boolean'}, score={type:'integer',enum:[0,1,2,3,4,5]};
 const en=values=>({type:'string',enum:values});
@@ -91,7 +92,7 @@ export function reviewResponseFormat(proposal, {mediaRequired = false} = {}) {
  const confirmationSchema=structuredClone(confirmation);
  confirmationSchema.properties.path_research=object(Object.fromEntries(reviewPathAddresses(proposal).map(({key})=>[key,
   object({search_indices:{...array({type:'integer',minimum:0}),minItems:1},result:{...string,minLength:12}})])));
- format.name='impact_review_bound_confirmation_v3';
+ format.name='impact_review_bound_confirmation_v5';
  delete format.schema.properties.impact_assessment;
  delete format.schema.properties.assessment_confirmation;
  format.schema.properties.assessment_result={anyOf:[
@@ -99,9 +100,12 @@ export function reviewResponseFormat(proposal, {mediaRequired = false} = {}) {
   object({action:en(['replace']),impact_assessment:assessment}),
  ]};
  if (mediaRequired) {
-  format.name='impact_review_bound_confirmation_v4';
-  format.schema.properties.media_applicability=object({relevant:boolean,reason:{...string,minLength:30}});
+  format.name='impact_review_bound_confirmation_v5';
+  format.schema.properties.media_applicability=structuredClone(MEDIA_REVIEW_SCHEMA);
  }
+ // Generate the independent verdict after the corrected final fields.
+ const {review,...finalFields}=format.schema.properties;
+ format.schema.properties={...finalFields,review};
  format.schema.required=Object.keys(format.schema.properties);
  return format;
 }
