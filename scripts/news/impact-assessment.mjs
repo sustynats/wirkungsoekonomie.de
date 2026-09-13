@@ -66,6 +66,33 @@ export function withMagnitudeCalculations(assessment) {
   return result;
 }
 
+// Derive redundant mathematical outputs from the supplied editorial factors.
+// Never invent a factor, source, pathway direction or protection boundary.
+// This is used only on new API working copies; stored originals stay untouched.
+export function deriveAssessmentCalculations(assessment) {
+  if (assessment?.version !== IMPACT_VERSION) return assessment;
+  const calculate = p => {
+    if (typeof p?.protection_boundary?.decisive !== 'boolean') return;
+    try {
+      const calculation=calculateMagnitude(p.magnitude_factors,{protectionBoundaryDecisive:p.protection_boundary.decisive});
+      p.magnitude=calculation.final;p.magnitude_calculation=calculation;
+    } catch { /* incomplete factors remain invalid */ }
+  };
+  for (const d of Object.values(assessment.dimensions || {})) {
+    [...(d.primary_paths || []),...(d.secondary_paths || [])].forEach(calculate);
+    const paths=d.primary_paths || [];
+    if (!paths.length || paths.some(p=>!p.same_target || !p.same_baseline || !['main_path','counter_path'].includes(p.type))) continue;
+    try {
+      const result=aggregateMainPaths(paths);
+      Object.assign(d,{magnitude:result.magnitude,direction:result.direction,dominance:result.dominance});
+      if (d.balance) Object.assign(d.balance,{protection_boundary_decisive:result.protection_boundary_decisive,
+        comparable_material_paths:result.dominance==='balanced'});
+    } catch { /* incomplete main paths remain invalid */ }
+  }
+  (assessment.observed_effects || []).forEach(calculate);
+  return assessment;
+}
+
 export function impactClaimLedger(assessment, sources = [], date = null) {
   return IMPACT_KEYS.flatMap(key => [...(assessment.dimensions?.[key]?.primary_paths || []), ...(assessment.dimensions?.[key]?.secondary_paths || [])].map(p => ({
     claim: p.label, claim_type: p.direction === 'negative' ? 'impact_risk' : 'impact_potential',
