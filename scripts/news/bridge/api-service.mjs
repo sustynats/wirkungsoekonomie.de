@@ -118,6 +118,20 @@ export class EditorialApiService {
       catch (error) { if (error.code === 'EEXIST') return this.get(input.key); throw error; }
       try {
         const researched = input.kind === 'review';
+        let researchHosts;
+        if (researched) {
+          let packet = input.prompt;
+          for (let depth=0; depth<3 && typeof packet==='string'; depth++) {
+            try { packet=JSON.parse(packet); } catch { break; }
+            if (packet?.research_access?.article_candidates) {
+              const hosts=packet.research_access.article_candidates;
+              if (Array.isArray(hosts) && hosts.length>0 && hosts.length<=100
+                && hosts.every(host=>typeof host==='string' && /^(?:[a-z0-9-]+\.)+[a-z]{2,}$/.test(host))) researchHosts=[...new Set(hosts)];
+              break;
+            }
+            packet=packet?.assignment;
+          }
+        }
         const result = await this.withBudget(async () => {
           record.provider_called = true; await this.save(record);
           // Fixed priced model, no hidden retries/fallback. Ordinary drafting
@@ -128,9 +142,14 @@ export class EditorialApiService {
             headers: { Authorization: `Bearer ${this.apiKey}`, 'Content-Type': 'application/json', 'X-Client-Request-Id': input.key },
             body: JSON.stringify({ model: 'gpt-5.6-luna', store: false, reasoning: { effort: 'medium' },
               max_output_tokens: 48000, instructions: input.instructions, input: input.prompt,
-              ...(researched ? { tools: [{ type: 'web_search', search_context_size: 'low' }], tool_choice: 'required', max_tool_calls: 2,
+              ...(researched ? { tools: [{ type: 'web_search', search_context_size: 'low',
+                ...(researchHosts ? {filters:{allowed_domains:researchHosts}} : {}) }], tool_choice: 'required', max_tool_calls: 2,
                 include: ['web_search_call.action.sources'] } : {}),
-              ...(!researched ? { text: { format: { type: 'json_object' } } } : {}) }),
+              text: { format: researched ? { type: 'json_schema', name: 'impact_review', strict: false,
+                schema: { type: 'object', properties: { review: {type: 'object'}, impact_assessment: {type: 'object'},
+                  research_sources: {type: 'array', items: {type: 'object'}} },
+                  required: ['review','impact_assessment'], additionalProperties: true } }
+                : { type: 'json_object' } } }),
           });
           const raw = await boundedResponse(response);
           record.provider_request_id = response.headers.get('x-request-id');

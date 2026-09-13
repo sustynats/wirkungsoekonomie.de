@@ -106,3 +106,13 @@ Quelldatum. Er stellt den älteren Nachrichtenstapel zurück, ohne ihn zu lösch
 Der normale Sechs-Stunden-Rahmen bleibt: Ein frisch ausgewählter Artikel darf
 seinen unabhängigen Fachpass auch nach Ablauf der ersten Stunde noch abschließen.
 Persönliche Aufträge unterliegen diesem Nachrichtenstichtag nicht.
+
+Formatprüfung im laufenden Pilot: Der Web-Recherchepass liefert wiederholt
+syntaktisch ungültige Freitext-JSON-Antworten. Die nächste begrenzte Pilotfassung
+verwendet deshalb eine JSON-Schema-Ausgabehülle; die vollständigen fachlichen
+Validatoren bleiben verpflichtend. `ready` bezeichnet auch die geprüft korrekte
+Darstellung einer ausdrücklich vorläufig zugeschriebenen Nachricht, nicht deren
+Umwandlung in eine unabhängig bestätigte Tatsachenbehauptung.
+Die Web-Recherche erhält die bereits im Register für begrenzte Artikelprüfung
+zugelassenen Hosts. Eigene WÖk-Seiten dienen dabei nicht als Ereignisbeleg;
+Robots-, RSL-, Zitat- und Quellenprüfungen bleiben unverändert.

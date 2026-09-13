@@ -37,7 +37,9 @@ test('only independent reviews get bounded search and account tool calls even fo
  assert.equal(result.status,'failed'); assert.equal(f.bodies[0].max_tool_calls,2);
  assert.equal(f.bodies[0].tool_choice,'required');
  assert.deepEqual(f.bodies[0].tools,[{type:'web_search',search_context_size:'low'}]);
- assert.equal(f.bodies[0].text,undefined); // provider rejects Web Search + JSON mode
+ assert.equal(f.bodies[0].text.format.type,'json_schema');
+ assert.deepEqual(f.bodies[0].text.format.schema.required,['review','impact_assessment']);
+ assert.equal(f.bodies[0].text.format.strict,false); // full domain validation remains local
  assert.equal(f.reservations[0],0.5); assert.equal(f.charges[1].usage.web_search_calls,2);
  await f.service.submit(request({kind:'review'})); assert.equal(f.calls.length,1);
 });
@@ -45,6 +47,16 @@ test('JSON transport closes only outer containers, never missing words or values
  assert.deepEqual(parseEditorialJson('{"review":{"status":"ready"}'),{review:{status:'ready'}});
  assert.deepEqual(parseEditorialJson('{"paths":[{"magnitude":3}]'),{paths:[{magnitude:3}]});
  for(const invalid of ['{"a":"unterminated','{"a":','{"a":1','{"a":{},','{"a":{}]','{"a":{} "b":{}}','not JSON']) assert.throws(()=>parseEditorialJson(invalid));
+});
+test('review research uses registered article domains, including bounded repair requests',async t=>{
+ const f=await fixture(t,{searches:1});
+ const assignment=JSON.stringify({research_access:{article_candidates:['www.bundestag.de','www.umweltbundesamt.de']}});
+ await f.service.submit(request({kind:'review',prompt:JSON.stringify({assignment,repair:{attempt:1}})}));
+ assert.deepEqual(f.bodies[0].tools[0].filters.allowed_domains,['www.bundestag.de','www.umweltbundesamt.de']);
+ const knowledge=editorialKnowledge(process.cwd());
+ assert.ok(knowledge.research_access.article_candidates.includes('www.bundestag.de'));
+ assert.ok(!knowledge.research_access.article_candidates.includes('wirkungsoekonomie.de'));
+ assert.ok(!knowledge.research_access.article_candidates.some(host=>host in knowledge.research_access.article_exclusions));
 });
 test('completed raw response with missing outer brace is recovered without changing journal or spending again',async t=>{
  const f=await fixture(t),input=request(),record={...input,status:'failed',error:'api_editorial_invalid_json',http_status:200,provider_called:true,

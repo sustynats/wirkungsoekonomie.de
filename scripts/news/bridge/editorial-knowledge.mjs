@@ -41,7 +41,7 @@ export function editorialKnowledge(root) {
     'Reguläre News: ausschließlich das im Auftrag verlangte native Analyseformat liefern. Den Bridge-Umschlag erstellt die Software; ihn nicht zusätzlich erzeugen.',
     'Reguläre News: native Analyse und vollständigen Bridge-Umschlag liefern.');
   const compatibleHashes = [hash({ ...manifest, version: '2026-09-13-1', rules_hash: hash(previousRules) })];
-  const access = new Map(), seenHosts = new Set();
+  const access = new Map(), candidates = new Set(), seenHosts = new Set();
   for (const source of loadNewsRegistry(root).sources) {
     for (const url of [source.url, source.feed_url].filter(Boolean)) {
       const host = new URL(url).hostname;
@@ -49,9 +49,10 @@ export function editorialKnowledge(root) {
       seenHosts.add(host); // same first registered host match as the verifier
       const decision = sourceAccess(source, 'article');
       if (!decision.allowed) access.set(host, decision.reason);
+      else if (!host.endsWith('wirkungsoekonomie.de')) candidates.add(host);
     }
   }
   return { manifest, hash: hash(manifest), instructions: rules, compatibleHashes,
-    research_access: { article_exclusions: Object.fromEntries([...access].sort()),
+    research_access: { article_exclusions: Object.fromEntries([...access].sort()), article_candidates: [...candidates].sort(),
       rule: 'Diese Hosts sind für neue Artikelbelege im bestehenden Zugangsregister gesperrt oder nur für Metadaten zugelassen. Nicht als research_sources nachreichen. Amtliche, wissenschaftliche oder anderweitig zugelassene Primärbelege bevorzugen; Robots und konkrete Zugangsbedingungen werden zusätzlich geprüft. Bereits gelieferte Belege behalten ihren dokumentierten Umfang.' } };
 }
