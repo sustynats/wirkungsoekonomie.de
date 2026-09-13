@@ -201,3 +201,12 @@ Transportnamensraum überführt; kollidierende oder auf andere URLs umgedeutete
 IDs bleiben gesperrt. Quelleninhalt und Belegfunktion werden weiterhin tatsächlich
 geprüft. Ein Quellenverweis an einem Faktor trägt dessen Tatsachengrundlage und
 ist kein Beweis, dass die Quelle die ordinale Schätzung selbst vorgenommen hat.
+
+Responses-Ausgaben können vor und nach einer Web-Recherche mehrere getrennte
+Assistant-Nachrichten enthalten. Ausschließlich die letzte abgeschlossene
+Antwort wird als redaktionelles Ergebnis gelesen. `commentary` wird nicht mit
+`final_answer` verklebt. Ein unvollständiges, verweigertes oder fehlerhaftes
+Endergebnis darf nicht durch einen früheren Entwurf ersetzt werden. Bereits
+bezahlte, vollständig gespeicherte Antworten mit diesem Transportfehler werden
+ohne neue Generierung erneut ausgewertet; Rohantwort, Kosten und sämtliche
+fachlichen Prüfungen bleiben erhalten.

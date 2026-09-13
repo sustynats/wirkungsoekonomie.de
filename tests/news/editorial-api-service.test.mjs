@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { EditorialApiService, apiRequestKey, API_EDITORIAL_PROTOCOL, publicApiJob, parseEditorialJson } from '../../scripts/news/bridge/api-service.mjs';
+import { EditorialApiService, apiRequestKey, API_EDITORIAL_PROTOCOL, publicApiJob, parseEditorialJson, finalEditorialOutputText } from '../../scripts/news/bridge/api-service.mjs';
 import { editorialKnowledge } from '../../scripts/news/bridge/editorial-knowledge.mjs';
 import { REVIEW_RESPONSE_FORMAT } from '../../scripts/news/bridge/review-response-schema.mjs';
 
@@ -73,6 +73,30 @@ test('JSON transport closes only outer containers, never missing words or values
  assert.deepEqual(parseEditorialJson('{"review":{"status":"ready"}'),{review:{status:'ready'}});
  assert.deepEqual(parseEditorialJson('{"paths":[{"magnitude":3}]'),{paths:[{magnitude:3}]});
  for(const invalid of ['{"a":"unterminated','{"a":','{"a":1','{"a":{},','{"a":{}]','{"a":{} "b":{}}','not JSON']) assert.throws(()=>parseEditorialJson(invalid));
+});
+test('only the final assistant message is parsed, never concatenated commentary or an earlier valid draft',()=>{
+ const draft={type:'message',role:'assistant',phase:'commentary',status:'completed',content:[{type:'output_text',text:'{"review":{"status":"ready"}}'}]};
+ const final={...draft,phase:'final_answer',content:[{type:'output_text',text:'{"review":'},{type:'output_text',text:'{"status":"blocked"}}'}]};
+ assert.equal(JSON.parse(finalEditorialOutputText({output:[draft,{type:'web_search_call',status:'completed'},final]})).review.status,'blocked');
+ for(const last of [{...final,phase:'commentary'},{...final,status:'incomplete'},{...final,role:'user'},
+  {...final,content:[{type:'refusal',refusal:'Cannot answer.'}]}]) {
+  assert.throws(()=>finalEditorialOutputText({output:[draft,last]}));
+ }
+ assert.throws(()=>parseEditorialJson(finalEditorialOutputText({output:[draft,{...final,content:[{type:'output_text',text:'broken'}]}]})));
+});
+test('final message selection applies to fresh requests and recovers a paid multi-message response without rewriting its journal',async t=>{
+ const f=await fixture(t),input=request({kind:'review'}),payload={status:'completed',usage:{input_tokens:100,output_tokens:200},output:[
+  {type:'message',role:'assistant',phase:'commentary',status:'completed',content:[{type:'output_text',text:'{"review":{"status":"ready"}}'}]},
+  {type:'web_search_call',status:'completed'},
+  {type:'message',role:'assistant',phase:'final_answer',status:'completed',content:[{type:'output_text',text:'{"review":{"status":"blocked"}}'}]},
+ ]};
+ let calls=0;f.service.fetch=async()=>{calls++;return Response.json(payload);};
+ const first=await f.service.submit(input);assert.equal(first.status,'completed');assert.equal(first.output.review.status,'blocked');assert.equal(calls,1);
+ const record={...first,status:'failed',error:'api_editorial_invalid_json'};delete record.output;
+ await fs.writeFile(f.service.file(input.key),JSON.stringify(record));
+ const recovered=await f.service.submit(input);assert.equal(recovered.status,'completed');assert.equal(recovered.output.review.status,'blocked');
+ assert.equal(recovered.transport_recovery,'final_message_v1');assert.equal(calls,1);
+ assert.deepEqual(JSON.parse(await fs.readFile(f.service.file(input.key),'utf8')),record);
 });
 test('review research uses registered article domains, including bounded repair requests',async t=>{
  const f=await fixture(t,{searches:1});
