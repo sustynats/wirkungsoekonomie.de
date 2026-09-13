@@ -13,7 +13,9 @@ export class BridgeStore {
     fs.mkdirSync(path.dirname(file), { recursive: true, mode: 0o700 });
     this.db = new DatabaseSync(file);
     fs.chmodSync(file, 0o600);
-    this.db.exec(`PRAGMA journal_mode=WAL; PRAGMA synchronous=FULL;
+    // Import, intake and the API processor share short journal transactions.
+    // Wait briefly for those writes; only the separate lane lock is fail-fast.
+    this.db.exec(`PRAGMA busy_timeout=5000; PRAGMA journal_mode=WAL; PRAGMA synchronous=FULL;
       CREATE TABLE IF NOT EXISTS jobs (id TEXT PRIMARY KEY, body TEXT NOT NULL);
       CREATE TABLE IF NOT EXISTS slots (slot TEXT PRIMARY KEY, status TEXT NOT NULL);
       CREATE TABLE IF NOT EXISTS observations (key TEXT PRIMARY KEY, body TEXT NOT NULL);`);

@@ -139,3 +139,15 @@ Ausführungsgrenze zählt abgeschlossene Operationen; das Kostenjournal zählt
 vorsorglich weiterhin alle gemeldeten Aufrufe. Drei abgeschlossene Suchen bleiben
 gesperrt. Bereits gespeicherte Antworten mit diesem reinen Statuszählfehler
 können ohne neue Generierung in die unveränderte fachliche Prüfung zurückkehren.
+
+Discovery, API und private Redaktion verwenden dasselbe Journal. Kurze
+gleichzeitige Schreibtransaktionen warten dort höchstens fünf Sekunden;
+die gesonderten Verarbeitungssperren bleiben dagegen ohne Wartezeit exklusiv.
+Ein echter paralleler Schreibtest prüft den Erhalt beider Einträge. Bleibt das
+Journal darüber hinaus gesperrt, bleibt der Fehler sichtbar; kein Ergebnis und
+kein Kostenjournal wird zurückgesetzt.
+
+Zuständigkeit: technische Störungen und redaktionelle Nachrecherche werden im
+Betrieb bearbeitet. Natalie erhält in der Admin-App die fertige, geprüfte Fassung
+für die jeweils erforderliche abschließende Freigabe. Ein technischer HOLD ist
+keine Freigabeaufgabe, eine automatische Themenwahl keine persönliche Zustimmung.
