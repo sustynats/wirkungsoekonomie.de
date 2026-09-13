@@ -44,10 +44,6 @@
   },
   "outbox": [
     {
-      "id": "50d058121fbbb0ccb5fea416",
-      "content": "⚠ WÖk-Betriebsstörung\nRedaktionsrückstau: QUEUE_CRITICAL: 476 offene Bridge-Aufträge. Historischen Backfill zurückstellen; aktuelle Meldungen und Updates weiter erfassen.\nSeit: 2026-09-13T13:49:45.461Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
-    },
-    {
       "id": "38d395546365b2cc9c40450e",
       "content": "⚠ WÖk-Betriebsstörung\nRedaktionsworker: Offene Aufträge ohne passenden frischen Lese-/Schreibnachweis. Der API-Nachrichtenworker ersetzt keinen fehlenden Bearbeiter persönlicher Aufträge.\nSeit: 2026-09-13T13:49:45.461Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
     },
