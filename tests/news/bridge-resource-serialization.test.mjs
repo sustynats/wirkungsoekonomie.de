@@ -27,3 +27,32 @@ test('the resource guard preserves independent discovery and publication lanes',
   assert.doesNotMatch(workflows[1].text, /WOEK_NEWS_BRIDGE_PUBLISH:/);
   assert.match(workflows[2].text, /Test monitor invariants/);
 });
+
+test('ignored clock triggers cannot evict an eligible pending import', () => {
+  const text = workflows[0].text;
+  const group = text.match(/^  group: >-\n([\s\S]+?)\n  cancel-in-progress:/m)?.[1].trim().replace(/^\$\{\{\s*|\s*\}\}$/g, '');
+  const condition = text.match(/^    if: >-\n([\s\S]+?)\n    runs-on:/m)?.[1].trim();
+  assert.ok(group && condition, 'exercise the deployed workflow expressions');
+  const evaluate = (expression, mode, event) => Function('vars', 'github', `return (${expression});`)(
+    { WIRKUNGSTICKER_PROCESSING_MODE: mode }, event);
+  const events = [
+    { name: 'manual', event_name: 'workflow_dispatch', event: {}, ref: 'refs/heads/main', bridge: true, api: true },
+    { name: 'import clock', event_name: 'push', event: {}, ref: 'refs/heads/codex/wirkungsticker-import-clock', bridge: true, api: false },
+    { name: 'discovery clock', event_name: 'push', event: {}, ref: 'refs/heads/codex/wirkungsticker-clock', bridge: false, api: true },
+    { name: 'five minute schedule', event_name: 'schedule', event: { schedule: '*/5 * * * *' }, ref: 'refs/heads/main', bridge: true, api: false },
+    { name: 'API schedule', event_name: 'schedule', event: { schedule: '7,22,37,52 * * * *' }, ref: 'refs/heads/main', bridge: false, api: true },
+  ];
+  for (const mode of ['dropbox_chatgpt_bridge', 'api', '']) {
+    for (const event of events) {
+      const eligible = mode === 'dropbox_chatgpt_bridge' ? event.bridge : event.api;
+      const label = `${mode || 'default'} / ${event.name}`;
+      assert.equal(evaluate(condition, mode, event), eligible, `${label}: preserve lane eligibility`);
+      assert.equal(evaluate(group, mode, event), eligible ? 'wirkungsticker-main' : 'wirkungsticker-inactive-trigger', label);
+    }
+  }
+  // Reproduce the incident: an import waits while discovery has the Oracle slot,
+  // then an ignored clock fires. GitHub can coalesce only within the same group.
+  const pending = evaluate(group, 'dropbox_chatgpt_bridge', events[1]);
+  assert.notEqual(evaluate(group, 'dropbox_chatgpt_bridge', events[2]), pending);
+  assert.equal(evaluate(group, 'dropbox_chatgpt_bridge', events[3]), pending);
+});
