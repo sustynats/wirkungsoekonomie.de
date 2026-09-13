@@ -88,6 +88,27 @@ export class BridgeStore {
     return { page_version: 1, items: visible.map(row => JSON.parse(row.body)),
       next_cursor: rows.length > page.page_size ? visible.at(-1).id : null };
   }
+  // Polling and health checks must never materialize full articles, source
+  // packets or review histories. The legacy queue can exceed the server heap.
+  statusJobs() {
+    return this.db.prepare(`SELECT id, json_extract(body,'$.status') AS status,
+      json_extract(body,'$.created_at') AS created_at,
+      json_extract(body,'$.publication_gate.status') AS gate_status,
+      json_extract(body,'$.publication_gate.review_job_id') AS review_job_id,
+      json_extract(body,'$.semantic_review.assessment.version') AS assessment_version,
+      json_extract(body,'$.semantic_review.assessment.semantics_revision') AS assessment_revision,
+      json_type(body,'$.accepted') AS accepted_type,
+      json_type(body,'$.ack') AS ack_type,
+      COALESCE(json_array_length(body,'$.corrections'),0) AS correction_count
+      FROM jobs WHERE json_extract(body,'$.archived_at') IS NULL ORDER BY id`).all().map(row => ({
+        input: {job_id: row.id}, status: row.status, created_at: row.created_at,
+        publication_gate: {status: row.gate_status, review_job_id: row.review_job_id},
+        semantic_review: row.assessment_version ? {assessment: {version: row.assessment_version,
+          semantics_revision: row.assessment_revision}} : null,
+        accepted: row.accepted_type != null && row.accepted_type !== 'null',
+        ack: row.ack_type != null && row.ack_type !== 'null', correction_count: row.correction_count,
+      }));
+  }
   impactStagingIndex() {
     return this.db.prepare("SELECT id, json_extract(body,'$.staging.impact_record_hash') AS record_hash FROM jobs WHERE json_extract(body,'$.input.job_type')='impact_reassessment' AND json_extract(body,'$.staging.impact_record.impact_assessment.version')='2.1' AND json_extract(body,'$.accepted.decision')='publish' ORDER BY id").all();
   }
