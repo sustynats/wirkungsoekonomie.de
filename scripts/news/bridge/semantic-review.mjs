@@ -1,3 +1,4 @@
+import {needsMediaReview,reviewedMediaRecord} from './media-review.mjs';
 import { isHistoricalJob, compareProcessorJobs } from './processor.mjs';
 import { verifyImpactResearch, researchSourceSchema } from './impact-research.mjs';
 import { hash, bridgePath, parsePacket } from './contract.mjs';
@@ -20,6 +21,7 @@ function assertCompleteReadyReview(review, gate) {
 export const semanticOutputSchema = {
   type: 'object', additionalProperties: false, required: ['schema_version', 'job_id', 'input_hash', 'processed_at', 'review', 'impact_assessment'],
   properties: {
+    media_applicability: {type:'object',additionalProperties:false,required:['relevant','reason'],properties:{relevant:{type:'boolean'},reason:{type:'string',minLength:30,maxLength:3000}}},
     research_sources: researchSourceSchema,
     schema_version: { const: '1.0' }, job_id: { type: 'string', pattern: '^wt_\\d{8}T\\d{6}Z_[a-f0-9]{24}$' },
     input_hash: { type: 'string', pattern: '^[a-f0-9]{64}$' }, processed_at: { type: 'string', format: 'date-time' },
@@ -51,7 +53,10 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
   if (receipt?.output_hash === outputHash && receipt?.research_sources?.length) record = {...record,impact_sources:[...(record.impact_sources||[]),...receipt.research_sources]};
   if (receipt?.output_hash === outputHash && receipt.assessment?.version === IMPACT_VERSION
     && receipt.assessment.semantics_revision === POTENTIAL_REVISION && structuredSemanticChecks(receipt.review)) {
+    let mediaIssue=null;
+    try { record = reviewedMediaRecord(record, receipt); } catch(error) { mediaIssue=error.message; }
     const gate = derivePublicationStatus(receipt.assessment, record, { review: receipt.review, secondPassComplete: true });
+    if(mediaIssue){gate.issues.push(mediaIssue);gate.status='needs_review';}
     job.publication_gate = gate; await bridge.store.put(job);
     assertCompleteReadyReview(receipt.review, gate);
     return { ...gate, assessment: receipt.assessment, receipt, record };
@@ -59,6 +64,7 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
   // Old acknowledgments remain immutable. A malformed legacy check list gets
   // a new, protocol-bound review job; it never becomes an editorial approval.
   const reviewRecord = { title: record.title, source_summary: record.source_summary || record.research_summary || '',
+        ...(needsMediaReview(record) ? {media_review_required:true} : {}),
         analysis: record.analysis || { sections: record.sections, claim_ledger: record.claim_ledger },
         sources: [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])].map(s => ({ source_id: s.source_id, url: s.url, title: s.title, publisher: s.publisher, excerpt: s.article_excerpt || s.summary || '', source_role: s.source_role || s.source_function || null })) };
   // Only editorial content belongs in the identity. Discovery check timestamps
@@ -88,6 +94,7 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
       review_format_rule: 'Jeder der 14 Checks ist ein Objekt {"status":"pass" oder "fail","rationale":"konkrete fachliche Begründung"}. Ein Wort wie geprüft, true oder ein allgemeines Gesamturteil genügt nicht. Alle gebundenen Quellen anhand ihrer Belegfunktion prüfen, auch ergänzte amtliche/programmatische/wissenschaftliche Quellen. Ein fehlender Umsetzungsbeschluss macht einen belegten bedingten Wirkungspfad nicht richtungslos.',
       requested_output: { schema_version: '1.0', job_id: id, input_hash: inputHash, processed_at: 'ISO timestamp',
         review: { status: 'ready|needs_review|blocked', checks: Object.fromEntries(SEMANTIC_CHECKS.map(k => [k, { status: 'pass|fail', rationale: 'fachliche Begründung' }])), findings: ['verbleibende Befunde oder leere Liste'] },
+        ...(needsMediaReview(record) ? {media_applicability:{relevant:'boolean: independent judgment; true requires the missing full media check and therefore HOLD',reason:'Concrete independent rationale, at least 30 characters'}} : {}),
         research_sources: [], impact_assessment: IMPACT_SCHEMA, $defs: IMPACT_DEFS },
     };
     reviewJob = { input, candidate: record, proposed, status: 'prepared_semantic', attempts: {}, created_at: now };
@@ -140,7 +147,7 @@ export async function importSemanticReviews(bridge, now) {
       }
       const {research,reviewRecord,gate} = validated;
       parent.semantic_review = { review_job_id: job.input.job_id, output_hash: job.input.parent_output_hash, reviewed_at: now,
-        assessment: output.impact_assessment, review: output.review, research_sources: research, verified_context_sources: reviewRecord.impact_sources, gate };
+        assessment: output.impact_assessment, review: output.review, ...(output.media_applicability ? {media_applicability:output.media_applicability} : {}), research_sources: research, verified_context_sources: reviewRecord.impact_sources, gate };
       parent.publication_gate = gate;
       await bridge.store.put(parent);
       job.status = 'accepted'; job.accepted_at = now;

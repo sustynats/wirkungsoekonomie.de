@@ -695,24 +695,35 @@ test('bridge pending drafts and updates retain source metadata but never persist
   }
 });
 
-for (const pass of [true,false]) test(`separate semantic review controls image generation and ACK (pass=${pass})`,async t=>{
+for (const deferredMedia of [false,true]) for (const pass of [true,false]) test(`separate semantic review controls image generation and ACK (pass=${pass}, media=${deferredMedia})`,async t=>{
   const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];review.impact_assessment=syntheticImpact21(review.impact_assessment);
   const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
   record.sources.push(...review.assessment_sources);record.impact_assessment=review.impact_assessment;
-  let images=0;
-  const f=setup(t,{stageOnly:true,adapt:()=>({decision:'publish',record}),semanticReview:ensureSemanticReview,visualProvider:{receive:async()=>{images++;return {status:'fallback'};}}});
+  if(deferredMedia){record.media_review_required=true;record.analysis={...record.analysis,media_impact:null};}
+  let images=0,adapted=[];
+  const f=setup(t,{stageOnly:true,adapt:packet=>{adapted.push(packet);return {decision:'publish',record};},semanticReview:ensureSemanticReview,visualProvider:{receive:async()=>{images++;return {status:'fallback'};}}});
   await f.provider.enqueue([candidate()],[],now,{testOnly:true});let parent=f.store.all()[0];parent.candidate=record;f.store.put(parent);
   const first=output(parent.input,'publish');first.wirkungsticker={analysis:{impact_assessment:review.impact_assessment}};
   first.story.headline=record.title;first.story.detailed_summary=record.source_summary;
   f.transport.files.set(bridgePath('20_OUTPUT_READY',parent.input.job_id+'.output.json'),JSON.stringify(first));
   assert.deepEqual(await f.provider.reconcile({},[record],later),[]);assert.equal(images,0);
   await f.provider.finalize([],later);assert.equal(f.store.get(parent.input.job_id).ack,undefined);
-  const child=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');assert.ok(child);
+  const child=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');assert.ok(child);assert.equal(child.input.record.media_review_required, deferredMedia?true:undefined);
   const checks=Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im separaten Durchgang gegen den jeweiligen gebundenen Quellenstand geprüft.'}]));
   if(!pass)checks.source_fidelity={status:'fail',rationale:'Eine tragende Behauptung widerspricht dem gebundenen Quellenauszug.'};
-  f.transport.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:review.impact_assessment,review:{status:'ready',checks,findings:[]}}));
+  f.transport.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:review.impact_assessment,review:{status:'ready',checks,findings:[]},...(deferredMedia?{media_applicability:{relevant:false,reason:'Der unabhängig geprüfte synthetische Ereigniskern benötigt keine zusätzliche Medienwirkungsanalyse.'}}:{})}));
   const accepted=await f.provider.reconcile({},[record],later);
   assert.equal(accepted.length,pass?1:0);assert.equal(images,pass?1:0);
+  if(pass&&deferredMedia){
+    const saved=f.store.get(parent.input.job_id);
+    assert.equal(saved.semantic_review.media_applicability.relevant,false);
+    assert.deepEqual(adapted[0].wirkungsticker.analysis.media_impact,saved.semantic_review.media_applicability);
+    assert.equal(first.wirkungsticker.analysis.media_impact,undefined);
+    saved.accepted.staged=false;f.store.put(saved);
+    assert.equal((await f.provider.reconcile({},[record],later)).length,1,'accepted output survives a restart before canonical import');
+    assert.deepEqual(adapted.at(-1).wirkungsticker.analysis.media_impact,saved.semantic_review.media_applicability);
+    saved.accepted.staged=true;f.store.put(saved);
+  }
   await f.provider.finalize([],later);
   assert.equal(f.store.get(parent.input.job_id).ack?.status,pass?'staged':undefined);
   if(!pass){assert.equal(f.store.get(parent.input.job_id).publication_gate.status,'needs_review');assert.deepEqual(f.store.get(parent.input.job_id).attempts,{});}

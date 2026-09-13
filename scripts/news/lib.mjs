@@ -1182,11 +1182,12 @@ function collectStrings(value, result = []) {
   return result;
 }
 
-function sentenceCount(value) {
+export function sentenceCount(value) {
   const protectedText = String(value)
     .replace(/\b(?:Mrd|Mio|Mr|Mrs|Dr|Prof|Nr|bzw|ca|usw|vgl|ggf)\./gi, (match) => match.replaceAll(".", "∯"))
     .replace(/\b(?:d\.\s*h|z\.\s*B|u\.\s*a)\./gi, (match) => match.replaceAll(".", "∯"))
-    .replace(/(\d)\.(\d)/g, "$1∯$2");
+    .replace(/(\d)\.(\d)/g, "$1∯$2")
+    .replace(/\b(\d{1,2})\.(?=\s+(?:Januar|Februar|März|Maerz|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)\b)/gi, "$1∯");
   return protectedText.split(/[.!?]+(?:[”"'»)]*\s|$)/).filter((part) => part.trim()).length;
 }
 

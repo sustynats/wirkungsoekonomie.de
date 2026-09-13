@@ -1,3 +1,4 @@
+import {reviewedMediaRecord} from './media-review.mjs';
 import { verifyImpactResearch } from './impact-research.mjs';
 import { derivePublicationStatus, semanticIssues, SEMANTIC_CHECKS } from '../impact-publication.mjs';
 
@@ -19,8 +20,11 @@ export async function reviewPreflight(bridge, output, record, now, options = {})
         ...(error.source_repair_context ? ['SOURCE_REPAIR_CONTEXT: Tatsächlich gelesener begrenzter Ausschnitt; die angefragte Behauptung ist damit NICHT verifiziert. Nur belegte Aussagen verwenden, sonst Quelle weglassen und Recherchegrenze dokumentieren. '+JSON.stringify(error.source_repair_context)] : [])],
     });
   }
-  const reviewRecord = {...record, impact_sources:[...(record.impact_sources || []), ...research]};
+  let mediaRecord=record, mediaIssue=null;
+  try { mediaRecord=reviewedMediaRecord(record,output); } catch(error) { mediaIssue=error.message; }
+  const reviewRecord = {...mediaRecord, impact_sources:[...(record.impact_sources || []), ...research]};
   const gate = derivePublicationStatus(output.impact_assessment, reviewRecord, {review:output.review, secondPassComplete:true});
+  if(mediaIssue){gate.issues.push(mediaIssue);gate.status='needs_review';}
   const ready = output.review?.status === 'ready' && SEMANTIC_CHECKS.every(key => output.review.checks?.[key]?.status === 'pass');
   if (gate.issues.length && (ready || gate.issues.some(issue => /IMPACT_(?:VERSION|MATERIAL_MAGNITUDE|FACTOR_|MAGNITUDE_CALCULATION|MAIN_AGGREGATE|OBSERVED_DIRECTION|SOURCE_FUNCTION|RESEARCH_RESULT|RESEARCH_CHECK|BOUNDARY_)/.test(issue)))) {
     throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'), {issues:gate.issues});
