@@ -1,6 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {assertsRealisedExAnteEffect} from '../../scripts/news/lib.mjs';
+test('a model condition is not an observed effect, but the same assertion in an outcome remains checked',()=>{
+ const text='Die Forderung führt zu konkreten parlamentarischen Entscheidungen.';
+ const analysis={impact_assessment:{dimensions:{democracy:{primary_paths:[{condition:text}]}}}};
+ assert.equal(assertsRealisedExAnteEffect(analysis),false);
+ assert.equal(analysis.impact_assessment.dimensions.democracy.primary_paths[0].condition,text);
+ analysis.impact_assessment.dimensions.democracy.primary_paths[0].rationale=text;
+ assert.equal(assertsRealisedExAnteEffect(analysis),true);
+ assert.equal(assertsRealisedExAnteEffect({summary:text}),true);
+});
 test('modelled path assumptions are not mistaken for observed outcomes',()=>{
  const analysis={impact_assessment:{dimensions:{human:{primary_paths:[{assumptions:'Öffentliche Debatte führt zu höherer Aufmerksamkeit für Finanzierungsregeln.'}]}}}};
  assert.equal(assertsRealisedExAnteEffect(analysis),false);

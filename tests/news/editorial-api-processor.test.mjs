@@ -150,6 +150,18 @@ test('numeric transport preserves scores and never fills nulls or rewrites textu
  assert.deepEqual(a.dimensions.human.primary_paths[0].magnitude_factors.reach.source_ids,['3']);assert.equal(a.dimensions.human.primary_paths[0].magnitude_factors.reach.rationale,'3');
  assert.equal(a.dimensions.planet.magnitude,null);assert.equal(a.dimensions.planet.primary_paths[0].magnitude,'unknown');assert.equal(a.observed_effects[0].magnitude,4);
 });
+test('misplaced complete MPD fields move to their sole contract location without changing values or resolving conflicts',async()=>{
+ const {wrapNativeNewsOutput}=await import('../../scripts/news/bridge/api-processor.mjs');
+ const original={...input,wirkungsticker:{story_id:'native-id'}};
+ const analysis={story_id:'native-id',publication_recommendation:true,publication_gate:{rationale:'Belegtes neues Ereignis.'},impact_assessment:{version:'2.1'},dimensions:{human:{direction:'negative'}},research_check:{status:'needs_research'},observed_effects:[]};
+ const snapshot=structuredClone(analysis),r=wrapNativeNewsOutput({analyses:[analysis]},original).wirkungsticker.analysis;
+ for(const field of ['dimensions','research_check','observed_effects']){assert.deepEqual(r.impact_assessment[field],snapshot[field]);assert.equal(field in r,false);}
+ assert.deepEqual(analysis,snapshot);
+ analysis.impact_assessment.dimensions={human:{direction:'open'}};
+ const conflict=wrapNativeNewsOutput({analyses:[analysis]},original).wirkungsticker.analysis;
+ assert.deepEqual(conflict.impact_assessment.dimensions,analysis.impact_assessment.dimensions);
+ assert.deepEqual(conflict.dimensions,analysis.dimensions);
+});
 test('failed article preflight keeps the result private without another paid attempt', async () => {
   const f=fixture(); let checked=0;
   f.processor.preflightOutput=async()=>{ if (++checked === 1) throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:['AI_REQUIRED_STRING:systemic_relevance']}); };

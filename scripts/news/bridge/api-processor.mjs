@@ -9,7 +9,7 @@ import { apiRequestKey, API_EDITORIAL_PROTOCOL, validateApiRequest } from './api
 import { processorPriority, isHistoricalJob } from './processor.mjs';
 import { latestEvidenceTime } from '../discovery-admission.mjs';
 
-export const API_VALIDATION_REVISION = 'single-paid-attempt-1';
+export const API_VALIDATION_REVISION = 'single-paid-attempt-2';
 
 // Keep the deep MPD schema last so it cannot swallow the remaining article
 // fields. Reordering preserves every field, rule and immutable source byte.
@@ -134,6 +134,17 @@ export function canonicalAssessmentNumbers(assessment) {
 export function wrapNativeNewsOutput(output, original) {
   if (output.analyses.length !== 1 || output.analyses[0]?.story_id !== original.wirkungsticker?.story_id) throw Error('BRIDGE_ANALYSIS_BINDING_MISMATCH');
   const a = structuredClone(output.analyses[0]), publish = a.publication_recommendation;
+  // These fields belong only to the impact assessment. Some complete native
+  // responses close that object before emitting its final fields. Relocate
+  // supplied values only when the destination is absent; never merge or infer
+  // conflicting assessments. The original provider response stays immutable.
+  if(a.impact_assessment?.version==='2.1') {
+    for(const field of ['dimensions','research_check','observed_effects']) {
+      if(!(field in a.impact_assessment) && field in a) {
+        a.impact_assessment[field]=a[field];delete a[field];
+      }
+    }
+  }
   // Recognize only unambiguous native siblings sometimes placed one level too
   // deep by the model. No score, source, text or review decision is invented.
   // Keep the original raw response and nested copy as audit evidence.
