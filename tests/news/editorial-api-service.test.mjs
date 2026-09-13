@@ -36,6 +36,7 @@ test('only independent reviews get bounded search and account tool calls even fo
  const result=await f.service.submit(request({kind:'review'}));
  assert.equal(result.status,'failed'); assert.equal(f.bodies[0].max_tool_calls,2);
  assert.equal(f.bodies[0].tool_choice,'required');
+ assert.equal(f.bodies[0].model,'gpt-5.4-mini');
  assert.deepEqual(f.bodies[0].tools,[{type:'web_search',search_context_size:'low'}]);
  assert.equal(f.bodies[0].text.format.type,'json_schema');
  assert.deepEqual(f.bodies[0].text.format.schema.required,['review','impact_assessment']);

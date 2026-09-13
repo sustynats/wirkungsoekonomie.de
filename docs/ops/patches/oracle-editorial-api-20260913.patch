@@ -58,10 +58,10 @@ index 27ac01c..58f3226 100644
 +    newsEditorialService,
 diff --git a/src/services/editorialApiService.mjs b/src/services/editorialApiService.mjs
 new file mode 100644
-index 0000000..4765ada
+index 0000000..bf0eab0
 --- /dev/null
 +++ b/src/services/editorialApiService.mjs
-@@ -0,0 +1,213 @@
+@@ -0,0 +1,214 @@
 +import { createHash } from 'node:crypto';
 +import { mkdir, readFile, writeFile, rename, open, readdir } from 'node:fs/promises';
 +import path from 'node:path';
@@ -182,6 +182,7 @@ index 0000000..4765ada
 +      catch (error) { if (error.code === 'EEXIST') return this.get(input.key); throw error; }
 +      try {
 +        const researched = input.kind === 'review';
++        const model = researched ? 'gpt-5.4-mini' : 'gpt-5.6-luna';
 +        let researchHosts;
 +        if (researched) {
 +          let packet = input.prompt;
@@ -204,7 +205,7 @@ index 0000000..4765ada
 +          const response = await this.fetch('https://api.openai.com/v1/responses', {
 +            method: 'POST', redirect: 'error', signal: AbortSignal.timeout(180000),
 +            headers: { Authorization: `Bearer ${this.apiKey}`, 'Content-Type': 'application/json', 'X-Client-Request-Id': input.key },
-+            body: JSON.stringify({ model: 'gpt-5.6-luna', store: false, reasoning: { effort: 'medium' },
++            body: JSON.stringify({ model, store: false, reasoning: { effort: 'medium' },
 +              max_output_tokens: 48000, instructions: input.instructions, input: input.prompt,
 +              ...(researched ? { tools: [{ type: 'web_search', search_context_size: 'low',
 +                ...(researchHosts ? {filters:{allowed_domains:researchHosts}} : {}) }], tool_choice: 'required', max_tool_calls: 2,
@@ -228,9 +229,9 @@ index 0000000..4765ada
 +            cached_input_tokens: u.input_tokens_details?.cached_tokens ?? 0, ...(researched ? { web_search_calls: searchCalls } : {}) };
 +          const validUsage = usage && Object.values(usage).every(n => Number.isInteger(n) && n >= 0)
 +            && usage.cached_input_tokens <= usage.input_tokens;
-+          const evidence = validUsage ? { model: 'gpt-5.6-luna', usage } : undefined;
++          const evidence = validUsage ? { model, usage } : undefined;
 +          record.usage = validUsage ? usage : null;
-+          record.model = 'gpt-5.6-luna';
++          record.model = model;
 +          const fail = code => { throw new this.ProviderError('Redaktionelle API-Ausgabe nicht verwendbar.', 502, code, evidence); };
 +          if (!response.ok) fail('api_editorial_provider_rejected');
 +          if (searchCalls > (researched ? 2 : 0)) fail('api_editorial_tool_limit');
@@ -244,7 +245,7 @@ index 0000000..4765ada
 +          // Software-owned bindings/time; no model-generated hashes or approval.
 +          Object.assign(output, { schema_version: '1.0', job_id: input.job_id, input_hash: input.input_hash, processed_at: this.now() });
 +          record.output = output;
-+          return { model: 'gpt-5.6-luna', ...(validUsage ? { usage } : {}) };
++          return { model, ...(validUsage ? { usage } : {}) };
 +        }, researched ? 0.5 : 0.25);
 +        record.status = 'completed'; record.model = result.model;
 +      } catch (error) {
