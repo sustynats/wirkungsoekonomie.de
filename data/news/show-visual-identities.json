@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-11.1",
+  "version": "2026-09-13.1",
   "shows": [
     {
       "id": "neudenken",
@@ -150,6 +150,33 @@
       "aliases": [],
       "stable_accent": "#674d87",
       "rights_status": "UNKNOWN"
+    },
+    {
+      "id": "hart_aber_fair",
+      "show_name": "Hart aber fair",
+      "aliases": [
+        "Hart aber Fair",
+        "hart aber fair"
+      ],
+      "canonical_url": "https://www1.wdr.de/daserste/hartaberfair/index.html",
+      "stable_accent": "#76513e",
+      "rights_status": "UNKNOWN",
+      "rights_notes": "Keine Freigabe für Sendungslogo, Pressefoto oder Thumbnail dokumentiert. Eigene textliche Show-Kennung verwenden.",
+      "watch": {
+        "tier": "CORE",
+        "format": "watched",
+        "selection": "editorial_relevance_required",
+        "manual_only": true,
+        "requested_at": "2026-09-13",
+        "text_access_priority": [
+          "OFFICIAL_TRANSCRIPT",
+          "OFFICIAL_SUBTITLES",
+          "OFFICIAL_CAPTIONS",
+          "OFFICIAL_SHOW_NOTES",
+          "PUBLIC_TRANSCRIPT_OTHER",
+          "NO_TEXT_ACCESS"
+        ]
+      }
     },
     {
       "id": "phoenix_runde",
