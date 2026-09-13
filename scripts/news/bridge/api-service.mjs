@@ -141,13 +141,15 @@ export class EditorialApiService {
       catch (error) { if (error.code === 'EEXIST') return this.get(input.key); throw error; }
       try {
         const researched = input.kind === 'review';
-        const model = researched ? 'gpt-5.4-mini' : 'gpt-5.6-luna';
+        // Independent requests/roles, not duplicate generation or paid rewrites.
+        // Both use the priced high-volume model; all review gates stay intact.
+        const model = 'gpt-5.6-luna';
         let researchHosts, responseFormat, providerPrompt = input.prompt;
         if (researched) {
           let packet = input.prompt;
           for (let depth=0; depth<3 && typeof packet==='string'; depth++) {
             try { packet=JSON.parse(packet); } catch { break; }
-            if (['impact_review_factors_v1','impact_review_confirmation_v2'].includes(packet?.output_contract?.response_format?.name)) {
+            if (['impact_review_factors_v1','impact_review_confirmation_v2','impact_review_bound_confirmation_v3'].includes(packet?.output_contract?.response_format?.name)) {
               const proposed=packet.output_contract.response_format;
               if (proposed.type !== 'json_schema' || proposed.strict !== true || proposed.schema?.type !== 'object'
                 || JSON.stringify(proposed).length>40000) throw Error('API_EDITORIAL_RESPONSE_CONTRACT_INVALID');

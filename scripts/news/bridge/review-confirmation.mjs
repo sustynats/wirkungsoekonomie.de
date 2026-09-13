@@ -1,11 +1,27 @@
 import { structuredSemanticChecks, SEMANTIC_CHECKS } from '../impact-publication.mjs';
 import { parsePacket } from './contract.mjs';
-import { REVIEW_RESPONSE_FORMAT } from './review-response-schema.mjs';
+import { REVIEW_RESPONSE_FORMAT, reviewResponseFormat, reviewPathAddresses } from './review-response-schema.mjs';
 
 // Transport expansion only. The immutable proposal supplies every editorial
 // judgment. The independent reviewer supplies its own research documentation.
 // The ordinary source, method and publication gates still run afterwards.
 export function expandReviewConfirmation(output, original) {
+  if (Object.hasOwn(output,'assessment_result')) {
+    if (Object.hasOwn(output,'impact_assessment') || Object.hasOwn(output,'assessment_confirmation')) throw Error('API_REVIEW_CONFIRMATION_CONFLICT');
+    const result=output.assessment_result, branches=reviewResponseFormat(original.proposed_assessment).schema.properties.assessment_result.anyOf;
+    if (!['confirm','replace'].includes(result?.action)) throw Error('API_REVIEW_CONFIRMATION_INVALID');
+    parsePacket(JSON.stringify(result),branches[result.action==='confirm'?0:1]);
+    if(result.action==='replace') {
+      output.impact_assessment=result.impact_assessment;
+      output.assessment_confirmation=null;
+    } else {
+      output.impact_assessment=null;
+      output.assessment_confirmation={...result.confirmation,path_research:reviewPathAddresses(original.proposed_assessment).map(({key,...address})=>({
+        ...address,...result.confirmation.path_research[key],
+      }))};
+    }
+    delete output.assessment_result;
+  }
   if (!Object.hasOwn(output, 'assessment_confirmation')) return output;
   const confirmation = output.assessment_confirmation;
   if (confirmation === null && output.impact_assessment) {

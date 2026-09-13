@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import { prepareApiJob, validateApiOutput } from '../../scripts/news/bridge/api-processor.mjs';
 import { derivePublicationStatus, SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import { syntheticPotentialAssessment } from './fixtures/impact21.mjs';
+import { reviewResponseFormat, reviewPathAddresses } from '../../scripts/news/bridge/review-response-schema.mjs';
+import { parsePacket } from '../../scripts/news/bridge/contract.mjs';
 
 function fixture() {
   const assessment = syntheticPotentialAssessment();
@@ -18,6 +20,34 @@ function fixture() {
   return {packet,output};
 }
 const now='2026-09-13T12:06:00Z';
+function boundFixture() {
+  const f=fixture();
+  f.packet.proposed_assessment.dimensions.human.secondary_paths=[structuredClone(f.packet.proposed_assessment.dimensions.human.primary_paths[0])];
+  const old=f.output.assessment_confirmation;
+  f.output.assessment_result={action:'confirm',confirmation:{research_check:old.research_check,
+    path_research:Object.fromEntries(reviewPathAddresses(f.packet.proposed_assessment).map(({key})=>[key,{search_indices:[0],result:old.path_research[0].result}]))}};
+  delete f.output.assessment_confirmation;delete f.output.impact_assessment;
+  return f;
+}
+test('the generation contract requires every actual main and secondary path before paying for a response',()=>{
+  const f=boundFixture(), format=reviewResponseFormat(f.packet.proposed_assessment);
+  const branch=format.schema.properties.assessment_result.anyOf[0];
+  assert.deepEqual(branch.properties.confirmation.properties.path_research.required,
+    ['human_primary_paths_0','human_secondary_paths_0','planet_primary_paths_0','democracy_primary_paths_0']);
+  assert.doesNotThrow(()=>parsePacket(JSON.stringify(f.output.assessment_result),branch));
+  delete f.output.assessment_result.confirmation.path_research.human_secondary_paths_0;
+  assert.throws(()=>parsePacket(JSON.stringify(f.output.assessment_result),branch));
+  assert.throws(()=>validateApiOutput(f.output,f.packet,now));
+});
+test('bound confirmation expands exactly once and cannot mix replacement and confirmation',()=>{
+  const f=boundFixture(), before=structuredClone(f);
+  const result=validateApiOutput(f.output,f.packet,now);
+  assert.deepEqual(f,before);
+  assert.equal(result.assessment_result,undefined);
+  assert.equal(result.impact_assessment.dimensions.human.secondary_paths[0].research_pass,'second_pass');
+  f.output.assessment_result.impact_assessment=f.packet.proposed_assessment;
+  assert.throws(()=>validateApiOutput(f.output,f.packet,now));
+});
 test('confirmation preserves every judgment and raw record while documenting the independent research',()=>{
   const {packet,output}=fixture(), original=structuredClone({packet,output});
   const result=validateApiOutput(output,packet,now);

@@ -52,6 +52,12 @@ test('exact research URL identifiers normalize throughout references without cha
  const retarget={research_sources:[{source_id:'publisher-id',url:'https://other.example.org/report'}]};
  canonicalResearchIdentifiers(retarget,[{source_id:'publisher-id',url}]);
  assert.equal(retarget.research_sources[0].source_id,'publisher-id');
+ const exact={research_sources:[{source_id:'research-actual-source',url,quote:'Exact source words.'}],source_ids:[url,'nonexistent']};
+ canonicalResearchIdentifiers(exact);
+ assert.deepEqual(exact.source_ids,['research-actual-source','nonexistent']);
+ assert.equal(exact.research_sources[0].quote,'Exact source words.');
+ const ambiguous={research_sources:[{source_id:'research-one',url},{source_id:'research-two',url}],source_ids:[url]};
+ canonicalResearchIdentifiers(ambiguous);assert.deepEqual(ambiguous.source_ids,[url]);
 });
 
 test('arithmetic and aggregation follow given factors and path roles without inventing editorial judgments',()=>{

@@ -78,3 +78,26 @@ export const REVIEW_RESPONSE_FORMAT={type:'json_schema',name:'impact_review_conf
   description:'Tatsächlich vorhandene Beleg-IDs für die Ausgangstatsachen bzw. den Mechanismus dieser begründeten ordinalen Schätzung. Die Quelle behauptet dadurch nicht den Schätzwert. Modellannahmen und Wissensgrenzen in der Begründung offenlegen; keine Scheinbelege oder aus fehlender Evidenz abgeleiteten niedrigen Werte.'}}),path:object(pathProperties),
   main_path:object({...pathProperties,type:en(['main_path','counter_path']),same_target:{type:'boolean',enum:[true]},same_baseline:{type:'boolean',enum:[true]}}),dimension}},
 };
+
+export function reviewPathAddresses(assessment) {
+ return ['human','planet','democracy'].flatMap(dimension=>['primary_paths','secondary_paths'].flatMap(path_set=>
+  (assessment?.dimensions?.[dimension]?.[path_set] || []).map((_,path_index)=>({dimension,path_set,path_index,key:`${dimension}_${path_set}_${path_index}`}))));
+}
+
+// Bind completeness BEFORE generation. An unconstrained array could omit a
+// secondary path and discover that omission only after paying for the response.
+export function reviewResponseFormat(proposal) {
+ const format=structuredClone(REVIEW_RESPONSE_FORMAT);
+ const confirmationSchema=structuredClone(confirmation);
+ confirmationSchema.properties.path_research=object(Object.fromEntries(reviewPathAddresses(proposal).map(({key})=>[key,
+  object({search_indices:{...array({type:'integer',minimum:0}),minItems:1},result:{...string,minLength:12}})])));
+ format.name='impact_review_bound_confirmation_v3';
+ delete format.schema.properties.impact_assessment;
+ delete format.schema.properties.assessment_confirmation;
+ format.schema.properties.assessment_result={anyOf:[
+  object({action:en(['confirm']),confirmation:confirmationSchema}),
+  object({action:en(['replace']),impact_assessment:assessment}),
+ ]};
+ format.schema.required=Object.keys(format.schema.properties);
+ return format;
+}

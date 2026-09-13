@@ -8,15 +8,18 @@ Profil erneut ausgeben, auch wenn keine fachliche Änderung nötig war. Außerde
 standen ein identisches Profil und das Antwortschema teilweise doppelt im
 Input. Das erhöhte Umfang und Kosten und erzeugte neue inkonsistente Felder.
 
-`impact_review_confirmation_v2` erlaubt zwei eindeutige Antworten:
+`impact_review_bound_confirmation_v3` erlaubt zwei eindeutig getrennte
+Antwortzweige in `assessment_result`:
 
-- Vollständiges korrigiertes `impact_assessment`, `assessment_confirmation:null`.
-- `impact_assessment:null` und Bestätigung des unveränderten, über den Auftrag
+- `action:replace` mit vollständigem korrigiertem `impact_assessment`.
+- `action:confirm` und Bestätigung des unveränderten, über den Auftrag
   gebundenen `proposed_assessment`. Dafür müssen alle 14 Checks bestanden sein.
-  Die unabhängige Recherche wird separat dokumentiert. Jeder unsichere Pfad
+  Die unabhängige Recherche wird separat dokumentiert. Jeder vorhandene Pfad
   braucht einen konkreten Ergebnistext und einen gültigen Verweis auf die
   tatsächlich durchgeführte Recherche. Der erste Entwurf kann diese Prüfung
-  nicht selbst bestätigen.
+  nicht selbst bestätigen. Haupt- UND Nebenpfade stehen bereits vor dem Aufruf
+  als individuell erforderliche Schlüssel im strikten Antwortschema; eine frei
+  lange Liste darf diese Vollständigkeit nicht erst nachträglich prüfen.
 
 Die Software expandiert die Bestätigung in einer Arbeitskopie. Faktoren,
 Richtungen, Belegbindungen, Annahmen und Wirkpfade stammen unverändert aus dem
@@ -31,6 +34,17 @@ historisches Profil bleibt enthalten. Das strikte Antwortschema wird einmal
 über `text.format` gesendet. Die unveränderte Originalanfrage bleibt Grundlage
 für Journal und Idempotenz; vorhandene bezahlte Ergebnisse sind kostenfrei
 wieder abrufbar. Alte vollständige Review-Ausgaben bleiben kompatibel.
+
+Beide getrennten Aufrufe verwenden `gpt-5.6-luna` mit `medium` Reasoning; es
+gibt keinen zusätzlichen kostenpflichtigen Fallback. Der Prüfschritt behält
+seinen eigenen Auftrag, die 14 Checks und bis zu zwei Suchzugriffe. Die
+Unabhängigkeit wird über getrennte, unveränderlich gebundene Aufträge und
+eigenständige Begründungen geprüft, nicht allein über verschiedene Modellnamen.
+Die offiziellen Angaben bestätigen Structured Outputs, Web Search und Preise
+von 0,20 USD Input / 1,20 USD Output je Million Tokens. Toolkosten kommen hinzu:
+[OpenAI-Modellseite](https://developers.openai.com/api/docs/models/gpt-5.6-luna).
+Das Kostenziel und die fachliche Trefferquote sind am realen Durchlauf zu
+messen, nicht aus dem Modellnamen abzuleiten.
 
 Weiterhin höchstens ein bezahlter Aufruf pro unveränderlichem Auftrag, keine
 automatischen Neufassungen, kein Modell-Fallback und keine Budgeterhöhung.
