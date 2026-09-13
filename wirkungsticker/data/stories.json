@@ -2,8 +2,1153 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-13T15:58:45.429Z",
+  "updated_at": "2026-09-13T21:10:16.736Z",
   "stories": [
+    {
+      "story_id": "wt-3ebf459426cfe071",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3ebf459426cfe071-4446dfb11f887499-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3ebf459426cfe071-883baca3d0d551da-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3ebf459426cfe071-ad3a09fafc7342ae-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-krieg-russischer-angriff-auf-zug-nach-warschau-polens-ministerprasident-tusk-wir-cfe071",
+      "title": "Ukraine-Krieg - Russischer Angriff auf Zug nach Warschau - Polens Ministerpräsident Tusk wirft Moskau Eskalation vor",
+      "source_summary": "Der Deutschlandfunk berichtet über einen Angriff auf die Lokomotive eines Passagierzuges am ukrainischen Grenzbahnhof Jahodyn. Nach Angaben der ukrainischen Eisenbahn wurde die Lokomotive in Brand gesetzt; Verletzte habe es nicht gegeben. Das polnische Verteidigungsministerium meldete zudem Drohneneinschläge im Westen der Ukraine nahe der Grenze.\n\nPolens Ministerpräsident Donald Tusk bezeichnete die Vorgänge bei einer Sitzung des Krisenstabs als Zeichen einer Eskalation, die näher an die polnische Grenze rücke. Er schloss nicht aus, dass künftige Angriffe polnisches Territorium betreffen könnten. Die vorliegende Quelle liefert noch keine unabhängige Bestätigung, keine gesicherte Täterzuordnung und keinen Beleg für einen Übergriff auf polnisches Gebiet.",
+      "summary": "Ein Zug nahe der ukrainisch-polnischen Grenze ist nach Angaben der ukrainischen Eisenbahn angegriffen worden. Polens Ministerpräsident Donald Tusk sieht darin eine mögliche Eskalation, ein Angriff auf polnisches Gebiet ist aber nicht belegt.",
+      "detail_summary": "Nach Angaben der ukrainischen Eisenbahn wurde die Lokomotive eines Passagierzuges am Grenzbahnhof Jahodyn angegriffen und in Brand gesetzt. Verletzte wurden nicht gemeldet. Polens Ministerpräsident Donald Tusk deutet den Vorfall als Zeichen einer Eskalation näher an der polnischen Grenze. Das Wirkungspotenzial liegt vor allem in höherem Sicherheitsdruck für den grenznahen Verkehr und in politischen Reaktionen. Täterzuordnung, Schadensumfang und eine mögliche Ausweitung auf polnisches Gebiet bleiben offen.",
+      "why_relevant": "Der Vorfall betrifft einen grenznahen Verkehrskorridor und kann die Sicherheitswahrnehmung sowie politische Entscheidungen in Polen und der Ukraine beeinflussen. Der Nachrichtenkern ist zunächst nur aus einer journalistischen Quelle belegt.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Nach Angaben der ukrainischen Eisenbahn wurde die Lokomotive eines Passagierzuges am Grenzbahnhof Jahodyn angegriffen und in Brand gesetzt; der Deutschlandfunk veröffentlichte den Bericht am 13. September 2026.",
+        "evaluation_target": {
+          "label": "grenznaher Zugangriff und daraus mögliches Sicherheits- und Verkehrsrisiko",
+          "type": "event"
+        },
+        "baseline": "Grenznaher Zugverkehr ohne den berichteten Angriff und ohne daraus abgeleitete zusätzliche Sicherheitsmaßnahmen.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne den berichteten Angriff bliebe der konkrete Zugbetrieb von diesem Vorfall unberührt; die allgemeine Kriegslage und andere Sicherheitsrisiken bestünden unabhängig davon fort.",
+        "reference_frame": [
+          "Sicherheit von Zivilpersonen und Verkehrsteilnehmenden",
+          "Funktionsfähigkeit grenznaher Verkehrsinfrastruktur",
+          "demokratische Kontrolle sicherheitspolitischer Reaktionen"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein bestätigter Zugangriff könnte Reisende, Beschäftigte und grenznahe Gemeinden durch Verletzungsrisiken, Kontrollen oder Verkehrsstörungen betreffen. Die EU-Kommission beschreibt Drohnenangriffe und andere externe Gefahren als mögliche Auslöser störender Vorfälle bei kritischer Infrastruktur. Umfang und Dauer des konkreten Vorfalls bleiben unbelegt.",
+            "planet": "Ein möglicher Lokomotivbrand kann lokal begrenzte Sach- oder Umweltfolgen haben. Das gelesene EU-Material belegt den allgemeinen Störungsmechanismus kritischer Infrastruktur, aber keine konkrete Umweltbelastung, Schadstofffreisetzung oder Flächenschädigung in Jahodyn.",
+            "democracy": "Der Vorfall kann politische Entscheidungen über Schutzmaßnahmen und Unterstützung beeinflussen. Die EU-Kommission verweist auf die Notwendigkeit koordinierter Sicherheits- und Resilienzmaßnahmen; eine konkrete politische Folge, ein Beschluss oder eine Einschränkung demokratischer Verfahren ist hier nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Mögliche Beeinträchtigung oder zusätzliche Absicherung des betroffenen Verkehrs sowie politische Reaktion auf den grenznahen Angriff.",
+          "second_order": "Bei bestätigten Wiederholungen könnten Sicherheitsaufwand, Verkehrsabläufe und öffentliche Bedrohungswahrnehmung verändert werden. Zusätzliche Sicherheitsanforderungen können laut EU-Referenz neue Verfahren, Personal- und Ausrüstungsbedarfe auslösen.",
+          "third_order": "Eine dauerhafte Verlagerung von Angriffen an die Grenze könnte regionale Sicherheitsordnungen und politische Korrekturfähigkeit belasten; dafür gibt es noch keinen Zustandsbeleg.",
+          "enablement": [
+            "enables_majority",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Es wurden keine Verletzten gemeldet.",
+            "Ein Angriff auf polnisches Territorium ist nicht belegt.",
+            "Die Quelle nennt keine längerfristige Verkehrsstörung und keine bestätigte Wiederholung.",
+            "Die ergänzenden EU-Quellen beschreiben allgemeine Mechanismen und bestätigen nicht den konkreten Vorfall."
+          ],
+          "source_independence": "Der Ereigniskern beruht auf dem Deutschlandfunk-Bericht mit zugeschriebenen Angaben der ukrainischen Eisenbahn, des polnischen Verteidigungsministeriums und Donald Tusks. Die ergänzten EU-Quellen sind unabhängig, betreffen aber nur allgemeine Sicherheits- und Resilienzmechanismen, nicht das Ereignis selbst.",
+          "institutional_status": "Tusk äußerte sich als polnischer Regierungschef bei einer Sitzung des Krisenstabs. Ein Beschluss, eine neue Maßnahme oder ein Angriff auf polnisches Staatsgebiet ist nicht belegt."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Bei bestätigtem Angriff und möglicher Wiederholung können Reisende, Beschäftigte und grenznahe Gemeinden durch zusätzliche Kontrollen, Verkehrsunterbrechungen und Sicherheitsrisiken belastet werden.",
+                "mechanism": "Ein Angriff auf eine Lokomotive kann den betroffenen Betrieb beeinträchtigen. Bei Wiederholung können Betreiber und Behörden zusätzliche Sicherheitsverfahren, Personal oder Ausrüstung einsetzen.",
+                "recipients": [
+                  "Reisende",
+                  "Beschäftigte im Bahnverkehr",
+                  "grenznahe Gemeinden",
+                  "Bahnunternehmen und Infrastrukturbetreiber"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-ec-critical-infrastructure-2026",
+                  "research-ec-passenger-rail-security"
+                ],
+                "condition": "Der Angriff muss bestätigt werden; zusätzliche oder länger anhaltende Belastungen setzen weitere Vorfälle oder konkrete Sicherheitsmaßnahmen voraus.",
+                "reference_space": "grenznaher Bahnverkehr zwischen Ukraine und Polen",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Der berichtete Angriff führt bei Bestätigung zu einer betrieblichen oder sicherheitsbezogenen Reaktion.",
+                "source_support": "Der Deutschlandfunk trägt den zugeschriebenen Ereignisbericht. Die EU-Quellen stützen den allgemeinen Störungs- und Sicherheitsmechanismus, nicht die konkrete Schadenshöhe oder Wiederholung.",
+                "limitations": "Keine Angaben zu Betriebsunterbrechung, Schadensumfang, Zahl der Betroffenen oder tatsächlicher Umsetzung zusätzlicher Sicherheitsmaßnahmen.",
+                "first_order": "Mögliche Prüfung, Absicherung oder Unterbrechung des betroffenen Zugverkehrs.",
+                "second_order": "Bei Wiederholung mögliche Belastung von Fahrplänen, Reisezeiten, Zugang zum grenznahen Verkehr sowie zusätzlicher Aufwand für Betreiber und Behörden.",
+                "third_order": "Bei anhaltender Ausweitung möglicher Druck auf regionale Versorgung und Sicherheitsplanung; nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die unmittelbare Belastung kann begrenzt bleiben, könnte bei bestätigten Wiederholungen aber mehrere Gruppen und Verkehrsabläufe betreffen."
+                },
+                "negligibility_rationale": "Nicht vernachlässigbar, weil ein bestätigter Angriff auf einen grenznahen Passagierverkehr Sicherheitsprüfungen und betriebliche Reaktionen auslösen kann; das Ausmaß bleibt jedoch offen.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Recherche abgeschlossen. Die EU-Quellen stützen den allgemeinen Wirkmechanismus; eine Ereignisbestätigung und konkrete Folgebeobachtung wurden nicht gefunden.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen wäre zunächst eine begrenzte grenznahe Verkehrsgruppe; bei Wiederholung könnten weitere Reisende, Beschäftigte und Betreiber einbezogen werden.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-ec-passenger-rail-security"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ein Angriff auf eine Lokomotive ist potenziell deutlich; Verletzte und schwere konkrete Folgeschäden wurden jedoch nicht gemeldet.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Mögliche Auswirkungen reichen von einer kurzfristigen Störung bis zu wiederholten Kontrollen; die Dauer ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-ec-critical-infrastructure-2026"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Verkehrsabläufe, Kontrollen und organisatorische Maßnahmen wären grundsätzlich korrigierbar, sofern keine dauerhaften Schäden entstehen.",
+                    "source_ids": [
+                      "research-ec-critical-infrastructure-2026",
+                      "research-ec-passenger-rail-security"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Reisende und Beschäftigte in einem Konflikt- und Grenzraum sind deutlich schutzbedürftig; eine extreme Lastkonzentration ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad kann über Verkehr und Sicherheitsmaßnahmen hinaus grenznahe Versorgung und Vertrauen berühren, belegt aber keine strukturelle Systemveränderung.",
+                    "source_ids": [
+                      "research-ec-critical-infrastructure-2026"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine Verletzung oder konkrete schwere Schutzgrenzverletzung ist belegt.",
+                  "reference_frame": "Sicherheit von Reisenden und Zivilpersonen",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der modellierte negative Pfad betrifft zunächst den grenznahen Verkehr und mögliche Sicherheitsbelastungen. Die Tragweite bleibt wegen fehlender Verletzter, unbekannter Schäden und fehlender Bestätigung einer Wiederholung begrenzt.",
+            "balance": {
+              "rationale": "Es gibt keinen konkret belegten positiven Gegenpfad desselben Gegenstands. Sicherheitsmaßnahmen wären Risikominderung und keine positive Kompensation.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Bei bestätigtem Angriff und möglicher Wiederholung können Reisende, Beschäftigte und grenznahe Gemeinden durch zusätzliche Kontrollen, Verkehrsunterbrechungen und Sicherheitsrisiken belastet werden.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Bei bestätigtem Angriff und möglicher Wiederholung können Reisende, Beschäftigte und grenznahe Gemeinden durch zusätzliche Kontrollen, Verkehrsunterbrechungen und Sicherheitsrisiken belastet werden.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Ein Brand an einer Lokomotive könnte lokal begrenzte materielle oder ökologische Schäden verursacht haben; Art und Umfang sind nicht belegt.",
+                "mechanism": "Ein Angriff und ein möglicher Brand können lokal Emissionen oder Schäden an Infrastruktur verursachen. Die Richtung der ökologischen Zustandsveränderung bleibt wegen fehlender Angaben zu Brand, Schadstoffen und Fläche offen.",
+                "recipients": [
+                  "lokale Umwelt",
+                  "Bahninfrastruktur",
+                  "Anwohnerinnen und Anwohner im unmittelbaren Umfeld"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-ec-critical-infrastructure-2026"
+                ],
+                "condition": "Es müsste bestätigt sein, dass die Lokomotive tatsächlich in Brand gesetzt wurde und dadurch relevante Umweltfolgen entstanden.",
+                "reference_space": "unmittelbare Umgebung des Grenzbahnhofs Jahodyn",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der in der Quelle genannte Brand führt über den materiellen Schaden hinaus zu messbaren lokalen Umweltfolgen.",
+                "source_support": "Die Quelle berichtet zugeschrieben von einer in Brand gesetzten Lokomotive, nennt aber keine Umweltmessungen oder ökologischen Schäden. Die EU-Quelle stützt nur den allgemeinen Mechanismus störender Vorfälle bei kritischer Infrastruktur.",
+                "limitations": "Keine Angaben zu Branddauer, Schadstoffen, betroffener Fläche, Löschmitteln oder Folgen für Natur und Gesundheit.",
+                "first_order": "Möglicher lokaler Sach- und Brandschaden.",
+                "second_order": "Mögliche lokale Belastung von Boden oder Luft, falls Schadstoffe freigesetzt wurden.",
+                "third_order": "Keine belastbare dritte Ordnung ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ohne Angaben zu Brand, Schadstoffen oder Fläche ist nur eine geringe, möglicherweise vernachlässigbare lokale Veränderung plausibel."
+                },
+                "negligibility_rationale": "Der Pfad bleibt als mögliche lokale Zustandsveränderung dokumentiert, ist mangels Umwelt- und Schadensdaten aber wahrscheinlich gering und nicht belastbar richtungsbestimmt.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Recherche abgeschlossen. Es wurde kein konkreter Umwelt- oder Schadensbeleg zum Ereignis gefunden; Richtung und Folgen bleiben offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Pfad betrifft höchstens die unmittelbare Umgebung des Zuges.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine relevante Umweltintensität ist nicht belegt; der mögliche Brand wird nur als lokaler, unquantifizierter Pfad modelliert.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Mögliche lokale Folgen wären nach dem Material eher kurzfristig, aber unbelegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine dauerhafte oder irreversible Umweltveränderung ist nicht belegt; im definierten lokalen und kurzfristigen Raum bleibt der modellierte Pfad praktisch vernachlässigbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere ökologische Vulnerabilität oder extreme Lastkonzentration ist aus dem Material nicht ableitbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein weitergehender ökologischer Folgepfad ist nicht belegt; die EU-Quelle beschreibt nur allgemeine Infrastrukturstörungen.",
+                    "source_ids": [
+                      "research-ec-critical-infrastructure-2026"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Umweltgrenzverletzung ist belegt.",
+                  "reference_frame": "lokale Umwelt und Infrastruktur",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Ein möglicher lokaler Brandpfad ist dokumentiert, aber ohne Umwelt- oder Schadensdaten nicht belastbar zu quantifizieren. Die Richtung bleibt offen und die Tragweite niedrig.",
+            "balance": {
+              "rationale": "Es gibt keinen belegten positiven Umweltpfad. Die offene Richtung folgt der fehlenden konkreten Umweltbeobachtung, nicht einer Gleichsetzung von Nutzen und Schaden.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Ein Brand an einer Lokomotive könnte lokal begrenzte materielle oder ökologische Schäden verursacht haben; Art und Umfang sind nicht belegt.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein Brand an einer Lokomotive könnte lokal begrenzte materielle oder ökologische Schäden verursacht haben; Art und Umfang sind nicht belegt.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Die politische Einordnung als mögliche Eskalation kann den Handlungsdruck auf Sicherheits- und Außenpolitik erhöhen, ohne bereits einen Beschluss zu belegen.",
+                "mechanism": "Ein grenznaher Sicherheitsvorfall und seine öffentliche Bewertung können parlamentarische und exekutive Entscheidungen über Schutzmaßnahmen und Unterstützung beeinflussen. Bei unbestätigten Ereignissen besteht zugleich das Risiko, dass politische Prioritäten auf ungesicherter Grundlage verschoben werden.",
+                "recipients": [
+                  "polnische Regierung",
+                  "parlamentarische und sicherheitspolitische Institutionen",
+                  "Bevölkerung in der Grenzregion"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-ec-critical-infrastructure-2026"
+                ],
+                "condition": "Der Vorfall muss bestätigt werden und politische Akteure müssen daraus konkrete Entscheidungen oder Prioritäten ableiten.",
+                "reference_space": "Polnische und europäische Sicherheits- und Außenpolitik",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die öffentliche Bewertung eines grenznahen Vorfalls beeinflusst die politische Prioritätensetzung.",
+                "source_support": "Die Quelle belegt Tusks Bewertung und seine Prognose, nicht eine konkrete politische Folge oder einen Beschluss. Die EU-Quellen belegen allgemeine institutionelle Reaktions- und Resilienzmechanismen, nicht die konkrete politische Reaktion in Polen.",
+                "limitations": "Keine Angaben zu parlamentarischen Reaktionen, Maßnahmen, Mehrheiten oder Veränderungen der öffentlichen Meinungsbildung.",
+                "first_order": "Erhöhter politischer Prüf- und Reaktionsdruck.",
+                "second_order": "Mögliche Verschiebung von Sicherheits- und Außenpolitikprioritäten bei bestätigten Wiederholungen.",
+                "third_order": "Möglicher Druck auf institutionelle Korrekturfähigkeit, wenn unbestätigte Vorwürfe dauerhaft als gesicherte Tatsachen behandelt würden.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der aktuelle Vorfall kann politisch begrenzt bleiben, bei Bestätigung und Wiederholung aber institutionelle Prioritäten beeinflussen."
+                },
+                "negligibility_rationale": "Nicht vernachlässigbar, weil ein grenznaher Vorfall politische Prioritätensetzung beeinflussen kann; ein tatsächlicher institutioneller Eingriff ist jedoch nicht belegt.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Recherche abgeschlossen. Die EU-Quellen stützen allgemeine Reaktions- und Resilienzmechanismen, aber keine konkrete politische Folgeentscheidung. Der Pfad bleibt eine bedingte Modellhypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Zunächst sind vor allem polnische und regionale Institutionen betroffen; eine bundesweite oder gesamteuropäische politische Wirkung ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die politische Bewertung ist deutlich, ein konkreter Beschluss oder institutioneller Eingriff fehlt jedoch.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Der politische Druck kann über die unmittelbare Meldung hinaus anhalten, seine Dauer ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische Prioritäten und Maßnahmen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-ec-critical-infrastructure-2026"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Grenzregionen und sicherheitspolitisch betroffene Bevölkerungsgruppen können ungleich belastet werden; eine fundamentale Schutzbedürftigkeit ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad kann institutionelle Prioritäten und Sicherheitsentscheidungen berühren, ohne eine strukturelle Veränderung zu belegen.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-ec-critical-infrastructure-2026"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenzverletzung ist nicht belegt; der Pfad betrifft ein mögliches Risiko für Entscheidungsqualität und institutionelle Priorisierung.",
+                  "reference_frame": "transparente und verhältnismäßige sicherheitspolitische Entscheidungen",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die politische Wirkung entsteht nicht aus der Reichweite der Meldung allein, sondern aus der möglichen Überführung eines noch unbestätigten Vorfalls in konkrete Sicherheitsentscheidungen. Dieser Pfad ist plausibel, aber nicht beobachtet.",
+            "balance": {
+              "rationale": "Ein möglicher Nutzen besserer Sicherheitskoordination wäre Risikominderung und keine positive Gegenwirkung. Ein eigenständiger positiver Gegenpfad desselben Ereignisses ist nicht belegt.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Die politische Einordnung als mögliche Eskalation kann den Handlungsdruck auf Sicherheits- und Außenpolitik erhöhen, ohne bereits einen Beschluss zu belegen.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Die politische Einordnung als mögliche Eskalation kann den Handlungsdruck auf Sicherheits- und Außenpolitik erhöhen, ohne bereits einen Beschluss zu belegen.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Die Quelle berichtet zugeschrieben über den Angriff auf die Lokomotive, fehlende Verletzte, Drohneneinschläge nahe der Grenze und Tusks Einordnung."
+          },
+          {
+            "source_id": "research-ec-critical-infrastructure-2026",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Die Quelle beschreibt Drohnenangriffe und andere externe Gefahren als mögliche Auslöser grenzüberschreitender oder sektorübergreifender Störungen kritischer Infrastruktur sowie Maßnahmen zu Schutz und Wiederherstellung."
+          },
+          {
+            "source_id": "research-ec-passenger-rail-security",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Die Quelle beschreibt mögliche Folgen zusätzlicher Sicherheitsanforderungen für Bahnunternehmen, Infrastrukturbetreiber, Beschäftigte und Behörden."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://home-affairs.ec.europa.eu/news/commission-issues-guidance-strengthen-resilience-critical-infrastructure-2026-07-10_en",
+          "title": "Commission issues guidance to strengthen resilience of critical infrastructure",
+          "publisher": "European Commission, Directorate-General for Migration and Home Affairs",
+          "source_id": "research-ec-critical-infrastructure-2026",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://transport.ec.europa.eu/transport-themes/security-safety/land-transport-security/improving-passenger-rail-security-stakeholder-consultation-strategy_en?prefLang=es",
+          "title": "Improving Passenger Rail Security: Stakeholder Consultation Strategy",
+          "publisher": "European Commission, Directorate-General for Mobility and Transport",
+          "source_id": "research-ec-passenger-rail-security",
+          "source_function": "reference"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Bei bestätigtem Angriff und möglicher Wiederholung können Reisende, Beschäftigte und grenznahe Gemeinden durch zusätzliche Kontrollen, Verkehrsunterbrechungen und Sicherheitsrisiken belastet werden.",
+              "mechanism": "Ein Angriff auf eine Lokomotive kann den betroffenen Betrieb beeinträchtigen. Bei Wiederholung können Betreiber und Behörden zusätzliche Sicherheitsverfahren, Personal oder Ausrüstung einsetzen.",
+              "recipients": [
+                "Reisende",
+                "Beschäftigte im Bahnverkehr",
+                "grenznahe Gemeinden",
+                "Bahnunternehmen und Infrastrukturbetreiber"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-ec-critical-infrastructure-2026",
+                "research-ec-passenger-rail-security"
+              ],
+              "condition": "Der Angriff muss bestätigt werden; zusätzliche oder länger anhaltende Belastungen setzen weitere Vorfälle oder konkrete Sicherheitsmaßnahmen voraus.",
+              "reference_space": "grenznaher Bahnverkehr zwischen Ukraine und Polen",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Der berichtete Angriff führt bei Bestätigung zu einer betrieblichen oder sicherheitsbezogenen Reaktion.",
+              "source_support": "Der Deutschlandfunk trägt den zugeschriebenen Ereignisbericht. Die EU-Quellen stützen den allgemeinen Störungs- und Sicherheitsmechanismus, nicht die konkrete Schadenshöhe oder Wiederholung.",
+              "limitations": "Keine Angaben zu Betriebsunterbrechung, Schadensumfang, Zahl der Betroffenen oder tatsächlicher Umsetzung zusätzlicher Sicherheitsmaßnahmen.",
+              "first_order": "Mögliche Prüfung, Absicherung oder Unterbrechung des betroffenen Zugverkehrs.",
+              "second_order": "Bei Wiederholung mögliche Belastung von Fahrplänen, Reisezeiten, Zugang zum grenznahen Verkehr sowie zusätzlicher Aufwand für Betreiber und Behörden.",
+              "third_order": "Bei anhaltender Ausweitung möglicher Druck auf regionale Versorgung und Sicherheitsplanung; nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die unmittelbare Belastung kann begrenzt bleiben, könnte bei bestätigten Wiederholungen aber mehrere Gruppen und Verkehrsabläufe betreffen."
+              },
+              "negligibility_rationale": "Nicht vernachlässigbar, weil ein bestätigter Angriff auf einen grenznahen Passagierverkehr Sicherheitsprüfungen und betriebliche Reaktionen auslösen kann; das Ausmaß bleibt jedoch offen.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Recherche abgeschlossen. Die EU-Quellen stützen den allgemeinen Wirkmechanismus; eine Ereignisbestätigung und konkrete Folgebeobachtung wurden nicht gefunden.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen wäre zunächst eine begrenzte grenznahe Verkehrsgruppe; bei Wiederholung könnten weitere Reisende, Beschäftigte und Betreiber einbezogen werden.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-ec-passenger-rail-security"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ein Angriff auf eine Lokomotive ist potenziell deutlich; Verletzte und schwere konkrete Folgeschäden wurden jedoch nicht gemeldet.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Mögliche Auswirkungen reichen von einer kurzfristigen Störung bis zu wiederholten Kontrollen; die Dauer ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-ec-critical-infrastructure-2026"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Verkehrsabläufe, Kontrollen und organisatorische Maßnahmen wären grundsätzlich korrigierbar, sofern keine dauerhaften Schäden entstehen.",
+                  "source_ids": [
+                    "research-ec-critical-infrastructure-2026",
+                    "research-ec-passenger-rail-security"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Reisende und Beschäftigte in einem Konflikt- und Grenzraum sind deutlich schutzbedürftig; eine extreme Lastkonzentration ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad kann über Verkehr und Sicherheitsmaßnahmen hinaus grenznahe Versorgung und Vertrauen berühren, belegt aber keine strukturelle Systemveränderung.",
+                  "source_ids": [
+                    "research-ec-critical-infrastructure-2026"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine Verletzung oder konkrete schwere Schutzgrenzverletzung ist belegt.",
+                "reference_frame": "Sicherheit von Reisenden und Zivilpersonen",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der modellierte negative Pfad betrifft zunächst den grenznahen Verkehr und mögliche Sicherheitsbelastungen. Die Tragweite bleibt wegen fehlender Verletzter, unbekannter Schäden und fehlender Bestätigung einer Wiederholung begrenzt.",
+          "balance": {
+            "rationale": "Es gibt keinen konkret belegten positiven Gegenpfad desselben Gegenstands. Sicherheitsmaßnahmen wären Risikominderung und keine positive Kompensation.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Bei bestätigtem Angriff und möglicher Wiederholung können Reisende, Beschäftigte und grenznahe Gemeinden durch zusätzliche Kontrollen, Verkehrsunterbrechungen und Sicherheitsrisiken belastet werden.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Bei bestätigtem Angriff und möglicher Wiederholung können Reisende, Beschäftigte und grenznahe Gemeinden durch zusätzliche Kontrollen, Verkehrsunterbrechungen und Sicherheitsrisiken belastet werden.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Ein Brand an einer Lokomotive könnte lokal begrenzte materielle oder ökologische Schäden verursacht haben; Art und Umfang sind nicht belegt.",
+              "mechanism": "Ein Angriff und ein möglicher Brand können lokal Emissionen oder Schäden an Infrastruktur verursachen. Die Richtung der ökologischen Zustandsveränderung bleibt wegen fehlender Angaben zu Brand, Schadstoffen und Fläche offen.",
+              "recipients": [
+                "lokale Umwelt",
+                "Bahninfrastruktur",
+                "Anwohnerinnen und Anwohner im unmittelbaren Umfeld"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-ec-critical-infrastructure-2026"
+              ],
+              "condition": "Es müsste bestätigt sein, dass die Lokomotive tatsächlich in Brand gesetzt wurde und dadurch relevante Umweltfolgen entstanden.",
+              "reference_space": "unmittelbare Umgebung des Grenzbahnhofs Jahodyn",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der in der Quelle genannte Brand führt über den materiellen Schaden hinaus zu messbaren lokalen Umweltfolgen.",
+              "source_support": "Die Quelle berichtet zugeschrieben von einer in Brand gesetzten Lokomotive, nennt aber keine Umweltmessungen oder ökologischen Schäden. Die EU-Quelle stützt nur den allgemeinen Mechanismus störender Vorfälle bei kritischer Infrastruktur.",
+              "limitations": "Keine Angaben zu Branddauer, Schadstoffen, betroffener Fläche, Löschmitteln oder Folgen für Natur und Gesundheit.",
+              "first_order": "Möglicher lokaler Sach- und Brandschaden.",
+              "second_order": "Mögliche lokale Belastung von Boden oder Luft, falls Schadstoffe freigesetzt wurden.",
+              "third_order": "Keine belastbare dritte Ordnung ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ohne Angaben zu Brand, Schadstoffen oder Fläche ist nur eine geringe, möglicherweise vernachlässigbare lokale Veränderung plausibel."
+              },
+              "negligibility_rationale": "Der Pfad bleibt als mögliche lokale Zustandsveränderung dokumentiert, ist mangels Umwelt- und Schadensdaten aber wahrscheinlich gering und nicht belastbar richtungsbestimmt.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Recherche abgeschlossen. Es wurde kein konkreter Umwelt- oder Schadensbeleg zum Ereignis gefunden; Richtung und Folgen bleiben offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Pfad betrifft höchstens die unmittelbare Umgebung des Zuges.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine relevante Umweltintensität ist nicht belegt; der mögliche Brand wird nur als lokaler, unquantifizierter Pfad modelliert.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Mögliche lokale Folgen wären nach dem Material eher kurzfristig, aber unbelegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine dauerhafte oder irreversible Umweltveränderung ist nicht belegt; im definierten lokalen und kurzfristigen Raum bleibt der modellierte Pfad praktisch vernachlässigbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere ökologische Vulnerabilität oder extreme Lastkonzentration ist aus dem Material nicht ableitbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein weitergehender ökologischer Folgepfad ist nicht belegt; die EU-Quelle beschreibt nur allgemeine Infrastrukturstörungen.",
+                  "source_ids": [
+                    "research-ec-critical-infrastructure-2026"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Umweltgrenzverletzung ist belegt.",
+                "reference_frame": "lokale Umwelt und Infrastruktur",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Ein möglicher lokaler Brandpfad ist dokumentiert, aber ohne Umwelt- oder Schadensdaten nicht belastbar zu quantifizieren. Die Richtung bleibt offen und die Tragweite niedrig.",
+          "balance": {
+            "rationale": "Es gibt keinen belegten positiven Umweltpfad. Die offene Richtung folgt der fehlenden konkreten Umweltbeobachtung, nicht einer Gleichsetzung von Nutzen und Schaden.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein Brand an einer Lokomotive könnte lokal begrenzte materielle oder ökologische Schäden verursacht haben; Art und Umfang sind nicht belegt.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Ein Brand an einer Lokomotive könnte lokal begrenzte materielle oder ökologische Schäden verursacht haben; Art und Umfang sind nicht belegt.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Die politische Einordnung als mögliche Eskalation kann den Handlungsdruck auf Sicherheits- und Außenpolitik erhöhen, ohne bereits einen Beschluss zu belegen.",
+              "mechanism": "Ein grenznaher Sicherheitsvorfall und seine öffentliche Bewertung können parlamentarische und exekutive Entscheidungen über Schutzmaßnahmen und Unterstützung beeinflussen. Bei unbestätigten Ereignissen besteht zugleich das Risiko, dass politische Prioritäten auf ungesicherter Grundlage verschoben werden.",
+              "recipients": [
+                "polnische Regierung",
+                "parlamentarische und sicherheitspolitische Institutionen",
+                "Bevölkerung in der Grenzregion"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-ec-critical-infrastructure-2026"
+              ],
+              "condition": "Der Vorfall muss bestätigt werden und politische Akteure müssen daraus konkrete Entscheidungen oder Prioritäten ableiten.",
+              "reference_space": "Polnische und europäische Sicherheits- und Außenpolitik",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die öffentliche Bewertung eines grenznahen Vorfalls beeinflusst die politische Prioritätensetzung.",
+              "source_support": "Die Quelle belegt Tusks Bewertung und seine Prognose, nicht eine konkrete politische Folge oder einen Beschluss. Die EU-Quellen belegen allgemeine institutionelle Reaktions- und Resilienzmechanismen, nicht die konkrete politische Reaktion in Polen.",
+              "limitations": "Keine Angaben zu parlamentarischen Reaktionen, Maßnahmen, Mehrheiten oder Veränderungen der öffentlichen Meinungsbildung.",
+              "first_order": "Erhöhter politischer Prüf- und Reaktionsdruck.",
+              "second_order": "Mögliche Verschiebung von Sicherheits- und Außenpolitikprioritäten bei bestätigten Wiederholungen.",
+              "third_order": "Möglicher Druck auf institutionelle Korrekturfähigkeit, wenn unbestätigte Vorwürfe dauerhaft als gesicherte Tatsachen behandelt würden.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der aktuelle Vorfall kann politisch begrenzt bleiben, bei Bestätigung und Wiederholung aber institutionelle Prioritäten beeinflussen."
+              },
+              "negligibility_rationale": "Nicht vernachlässigbar, weil ein grenznaher Vorfall politische Prioritätensetzung beeinflussen kann; ein tatsächlicher institutioneller Eingriff ist jedoch nicht belegt.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Recherche abgeschlossen. Die EU-Quellen stützen allgemeine Reaktions- und Resilienzmechanismen, aber keine konkrete politische Folgeentscheidung. Der Pfad bleibt eine bedingte Modellhypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Zunächst sind vor allem polnische und regionale Institutionen betroffen; eine bundesweite oder gesamteuropäische politische Wirkung ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die politische Bewertung ist deutlich, ein konkreter Beschluss oder institutioneller Eingriff fehlt jedoch.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Der politische Druck kann über die unmittelbare Meldung hinaus anhalten, seine Dauer ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische Prioritäten und Maßnahmen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-ec-critical-infrastructure-2026"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Grenzregionen und sicherheitspolitisch betroffene Bevölkerungsgruppen können ungleich belastet werden; eine fundamentale Schutzbedürftigkeit ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad kann institutionelle Prioritäten und Sicherheitsentscheidungen berühren, ohne eine strukturelle Veränderung zu belegen.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-ec-critical-infrastructure-2026"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenzverletzung ist nicht belegt; der Pfad betrifft ein mögliches Risiko für Entscheidungsqualität und institutionelle Priorisierung.",
+                "reference_frame": "transparente und verhältnismäßige sicherheitspolitische Entscheidungen",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die politische Wirkung entsteht nicht aus der Reichweite der Meldung allein, sondern aus der möglichen Überführung eines noch unbestätigten Vorfalls in konkrete Sicherheitsentscheidungen. Dieser Pfad ist plausibel, aber nicht beobachtet.",
+          "balance": {
+            "rationale": "Ein möglicher Nutzen besserer Sicherheitskoordination wäre Risikominderung und keine positive Gegenwirkung. Ein eigenständiger positiver Gegenpfad desselben Ereignisses ist nicht belegt.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Die politische Einordnung als mögliche Eskalation kann den Handlungsdruck auf Sicherheits- und Außenpolitik erhöhen, ohne bereits einen Beschluss zu belegen.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Die politische Einordnung als mögliche Eskalation kann den Handlungsdruck auf Sicherheits- und Außenpolitik erhöhen, ohne bereits einen Beschluss zu belegen.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-13T21:10:16.736Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-13T18:43:28.000Z",
+      "last_updated": "2026-09-13T21:10:16.736Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-cdc26e3b09bb666028a0",
+      "case_file": {
+        "case_id": "case-e872d2468771e2",
+        "member_count": 3,
+        "publisher_count": 1,
+        "members": [
+          {
+            "story_id": "wt-3ebf459426cfe071",
+            "slug": "ukraine-krieg-russischer-angriff-auf-zug-nach-warschau-polens-ministerprasident-tusk-wir-cfe071",
+            "title": "Ukraine-Krieg - Russischer Angriff auf Zug nach Warschau - Polens Ministerpräsident Tusk wirft Moskau Eskalation vor",
+            "summary": "Ein Zug nahe der ukrainisch-polnischen Grenze ist nach Angaben der ukrainischen Eisenbahn angegriffen worden. Polens Ministerpräsident Donald Tusk sieht darin eine mögliche Eskalation, ein Angriff auf polnisches Gebiet ist aber nicht belegt.",
+            "updated_at": "2026-09-13T21:10:16.736Z",
+            "published_at": "2026-09-13T21:10:16.736Z",
+            "kind": "Neues Ereignis",
+            "current": true
+          },
+          {
+            "story_id": "wt-46e6bd810843b8fe",
+            "slug": "ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe",
+            "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
+            "summary": "Saporischschja ist wieder an das Stromnetz angeschlossen. Zuvor lief die Anlage fast drei Wochen nur über Notstromgeneratoren.",
+            "updated_at": "2026-09-08T07:39:41.053Z",
+            "published_at": "2026-09-07T23:09:24.588Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-de413d33343f350b",
+            "slug": "ukraine-krieg-russland-nimmt-angriffe-auf-kiew-nach-dreitagiger-feuerpause-wieder-auf-uk-3f350b",
+            "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
+            "summary": "Russland hat laut der Quelle die Angriffe auf Kiew nach einer dreitägigen Pause wieder aufgenommen. Zugleich werden Angriffe der Ukraine auf Saratow und Schäden sowie Opfer auf beiden Seiten genannt.",
+            "updated_at": "2026-09-08T04:53:23.148Z",
+            "published_at": "2026-09-08T04:53:23.148Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-13T18:43:28.000Z",
+      "published_at": "2026-09-13T21:10:16.736Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Unabhängige Bestätigung des Angriffs auf den Passagierzug und der Schäden an der Lokomotive.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung durch ukrainische, polnische oder internationale Stellen sowie Angaben zu Schäden und Verletzten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6294f5e7f111885b",
+          "announced_at": "2026-09-13T18:43:28.000Z",
+          "follow_up_date": "2026-09-20T21:10:16.736Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Klärung, ob und wo Drohnen nahe der polnisch-ukrainischen Grenze eingeschlagen sind.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Amtliche Angaben zu Ort, Schäden, Verletzten und Ursache",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a7beb06c6d2fc97a",
+          "announced_at": "2026-09-13T18:43:28.000Z",
+          "follow_up_date": "2026-09-20T21:10:16.736Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/russischer-angriff-auf-zug-nach-warschau-polens-ministerpraesident-tusk-wirft-moskau-eskalation-vor-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-13T18:43:28.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e18435f6b86d293a",
       "title_image": {
@@ -45111,99 +46256,6 @@
       ]
     },
     {
-      "story_id": "wt-46e6bd810843b8fe",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e6bd810843b8fe-900600699b2b1ea5-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e6bd810843b8fe-048e3dc6d508d40a-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e6bd810843b8fe-86c2509d80451c6b-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe",
-      "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
-      "source_summary": "Das Atomkraftwerk Saporischschja in der Ukraine wird nach Angaben der Meldung wieder über eine externe Stromleitung versorgt. Zuvor sei während einer begrenzten Feuerpause eine beschädigte Verbindung repariert worden, teilte der Generaldirektor der Internationalen Atomenergiebehörde, Grossi, mit.\n\nDie Quelle nennt als Hintergrund, dass die Anlage in Frontnähe fast drei Wochen lang nur von Notstromgeneratoren versorgt worden sei. Die Stromversorgung diene dazu, radioaktives Material im Kraftwerk zu kühlen; ohne Reparatur der Leitung hätte laut Atomenergiebehörde ein Ausfall der Energieversorgung der Sicherheitssysteme gedroht. Die Reaktoren seien derzeit abgeschaltet.",
-      "summary": "Saporischschja ist wieder an das Stromnetz angeschlossen. Zuvor lief die Anlage fast drei Wochen nur über Notstromgeneratoren.",
-      "detail_summary": "Die Meldung beschreibt eine technische Zustandsänderung am Atomkraftwerk Saporischschja: Eine beschädigte externe Stromverbindung wurde repariert, danach wurde die Anlage wieder an eine externe Leitung angeschlossen. Das ist relevant, weil die Quelle den Strom für die Kühlung radioaktiven Materials und für Sicherheitssysteme nennt. Der Wirkpfad ist damit klar technisch: stabilere Energieversorgung senkt das Risiko eines Ausfalls der Kühlung. Für Mensch und Umwelt liegt die mögliche Folge in einer verminderten Gefährdung bei einem länger anhaltenden Stromverlust. Offen bleibt aber, wie belastbar die Reparatur ist und ob weitere Leitungen oder Reservewege verfügbar sind. Die Evidenz stammt aus einer einzelnen journalistischen Meldung mit zugeschriebener IAEA-Aussage; unabhängige technische Prüfung wird nicht belegt.",
-      "why_relevant": "Die Nachricht betrifft eine sicherheitsrelevante Infrastruktur im Krieg und eine mögliche Änderung des Risikos für einen nuklearen Ausfall. Damit ist sie für Bevölkerung, Umwelt und Krisenlage materiell.",
-      "topic": [
-        "Energie",
-        "Geopolitik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "impact_assessment": null,
-      "impact_sources": [],
-      "dimensions": null,
-      "visuals": {
-        "affected_groups": [
-          "staat",
-          "europa",
-          "natur"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T07:36:44.231Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-07T20:26:58.000Z",
-      "last_updated": "2026-09-08T07:39:41.053Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-5e80ce591f52469f8da2",
-      "case_file": null,
-      "source_published_at": "2026-09-07T20:26:58.000Z",
-      "published_at": "2026-09-07T23:09:24.588Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T20:26:58.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T07:33:34.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-05ffa4fef8bee914",
       "title_image": {
         "mode": "editorial",
@@ -45787,90 +46839,6 @@
           "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-08T05:19:17.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-de413d33343f350b",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-de413d33343f350b-3b8ebf7de7017a9c-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-de413d33343f350b-bb015e023dff4963-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-de413d33343f350b-e75577bd531ebe93-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "ukraine-krieg-russland-nimmt-angriffe-auf-kiew-nach-dreitagiger-feuerpause-wieder-auf-uk-3f350b",
-      "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
-      "source_summary": "Nach einer dreitägigen Pause hat Russland die Luftangriffe auf Kiew in der Nacht wieder aufgenommen. Der Bericht nennt dafür Angaben des Katastrophenschutzes, des Bürgermeisters Klitschko und der staatlichen russischen Nachrichtenagentur Tass. Genannt werden Angriffe mit Drohnen und ballistischen Raketen, beschädigte Wohngebäude, Lagerhallen und eine Schule sowie mindestens zwei Tote und sieben Verletzte. Zugleich berichtet die Quelle über ukrainische Drohnenangriffe auf Saratow, wo laut Regionalgouverneur mehrere Menschen verletzt worden seien.\n\nDie Meldung ordnet das Geschehen in den Besuch der US-Gesandten Witkoff und Kushner in Moskau und Kiew ein und verweist darauf, dass die Kriegsparteien für die Dauer des Besuchs auf Angriffe auf die jeweiligen Hauptstädte verzichten wollten.",
-      "summary": "Russland hat laut der Quelle die Angriffe auf Kiew nach einer dreitägigen Pause wieder aufgenommen. Zugleich werden Angriffe der Ukraine auf Saratow und Schäden sowie Opfer auf beiden Seiten genannt.",
-      "detail_summary": "Der berichtete Kern ist klar: Nach drei Tagen Pause wurden Kiew erneut Drohnen- und Raketenangriffe zugeschrieben, mit beschädigten Gebäuden und mindestens zwei Toten. Das ist als laufende Entwicklung relevant, weil es eine sichtbare Änderung der militärischen Lage und des Schutzstatus von Zivilinfrastruktur bedeutet. Ein möglicher Wirkpfad führt über neue Zerstörung, erneute Evakuierungs- und Sicherheitsbedarfe und zusätzlichen Druck auf lokale Versorgung und staatliche Schutzkapazitäten. Als weitere mögliche Folge kommt eine Verschärfung der Gegenschläge in Betracht, weil im selben Text auch ukrainische Drohnenangriffe auf Saratow erwähnt werden. Die Evidenz bleibt aber begrenzt, weil die Meldung auf einer einzelnen journalistischen Quelle beruht und die genaue Lage, die Verantwortlichkeiten im Detail und das Ausmaß der Schäden nicht unabhängig bestätigt sind.",
-      "why_relevant": "Die Meldung beschreibt eine neue militärische Lageänderung mit Opfern, Schäden und möglichen Folgeeffekten für Zivilbevölkerung und Infrastruktur.",
-      "topic": [
-        "Geopolitik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "impact_assessment": null,
-      "impact_sources": [],
-      "dimensions": null,
-      "visuals": {
-        "affected_groups": [
-          "kinder_jugend",
-          "haushalte",
-          "staat",
-          "kommunen"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T04:52:08.677Z",
-      "editorial_analysis": {
-        "analysis_id": "woek-analysis-58daf5723737",
-        "slug": "kiew-wieder-unter-beschuss-was-die-neue-angriffswelle-systemisch-auslost-58daf5",
-        "title": "Kiew wieder unter Beschuss: Was die neue Angriffswelle systemisch auslöst",
-        "teaser": "Nach drei Tagen Pause trifft Kiew wieder ein Angriff. Das ist mehr als eine Einzelmeldung: Es verschiebt Schutzbedarf, bindet Rettungskräfte und kann Eskalationsmuster verstärken.",
-        "published_at": "2026-09-08T14:11:43.546Z",
-        "updated_at": "2026-09-10T22:51:05.899Z"
-      },
-      "first_seen": "2026-09-08T04:39:24.000Z",
-      "last_updated": "2026-09-08T04:53:23.148Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-3470c749db18fcf27790",
-      "case_file": null,
-      "source_published_at": "2026-09-08T04:39:24.000Z",
-      "published_at": "2026-09-08T04:53:23.148Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T04:39:24.000Z",
           "primary_source": false
         }
       ]
