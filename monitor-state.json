@@ -35,13 +35,22 @@
     },
     "bridge-api-results": {
       "firstSeen": "2026-09-13T19:09:37.148Z",
-      "active": false
+      "active": true
     },
     "bridge-review": {
       "firstSeen": "2026-09-13T19:09:37.148Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "43c93fb8f58b9a9f49b9255c",
+      "content": "⚠ WÖk-Betriebsstörung\nAPI-Redaktionsverarbeitung: Der Oracle-API-Worker meldet unvollständige oder ungewisse Ergebnisse beziehungsweise ein Budgetproblem. Gelieferte Entwürfe sind noch keine Veröffentlichungen.\nSeit: 2026-09-13T19:09:37.148Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "87a0c99577f64ff3dcd7aaa4",
+      "content": "⚠ WÖk-Betriebsstörung\nFachliche Nachprüfung: 1 Wirkungsanalyse(n) benötigen nach dem zweiten Prüfpass redaktionelle Klärung. Die anderen Aufträge laufen weiter.\nSeit: 2026-09-13T19:09:37.148Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-13"
 }
