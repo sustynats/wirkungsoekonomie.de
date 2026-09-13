@@ -108,7 +108,7 @@ export class DropboxChatGPTBridgeProvider {
             const raw = recovered.wirkungsticker.analysis;
             const analysis = Array.isArray(raw.analyses) ? raw.analyses[0] : raw;
             analysis.impact_assessment = job.semantic_review.assessment;
-            if (job.semantic_review.media_applicability?.relevant === false) analysis.media_impact = structuredClone(job.semantic_review.media_applicability);
+            if (job.semantic_review.media_applicability) analysis.media_impact = structuredClone(job.semantic_review.media_applicability);
           }
           this.adapt(recovered, job, registry, jobStories, now);
           results.push(accepted);
