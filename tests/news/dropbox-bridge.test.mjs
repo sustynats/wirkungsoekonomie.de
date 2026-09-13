@@ -393,6 +393,25 @@ test('passing article preflight cannot substitute for required impact assessment
   assert.throws(()=>validateOutputPreflight({...value,input_hash:hash('stale')},job,registry,[original],processed),/BRIDGE_JOB_BINDING_MISMATCH/);
 });
 
+test('independent review receives the source-normalized preflight copy, not the raw transport assessment',async t=>{
+ const {original,c,created,processed,input,value,registry}=nativeReviewFixture();
+ const {provider,store,transport}=setup(t,{correctionsEnabled:true});
+ value.wirkungsticker.analysis.impact_assessment={version:'2.1',dimensions:{human:{primary_paths:[{source_ids:['e0_0'],magnitude:2}]}}};
+ const originalBytes=JSON.stringify(value);let reviews=0;
+ provider.semanticReview=async(_bridge,_job,raw,record,proposed)=>{
+  reviews++;
+  assert.deepEqual(proposed.dimensions.human.primary_paths[0].source_ids,[c.sources[0].source_id]);
+  assert.equal(record.analysis.impact_assessment,proposed);
+  assert.equal(JSON.stringify(raw),originalBytes);
+  return {status:'needs_review'};
+ };
+ store.put({input,candidate:c,status:'queued',attempts:{},created_at:created});
+ transport.files.set(bridgePath('20_OUTPUT_READY',input.job_id+'.output.json'),originalBytes);
+ assert.deepEqual(await provider.reconcile(registry,[original],processed),[]);
+ assert.equal(reviews,1);assert.equal(transport.files.get(bridgePath('20_OUTPUT_READY',input.job_id+'.output.json')),originalBytes);
+ assert.equal(store.get(input.job_id).accepted,undefined);
+});
+
 function png(width=1200,height=675){
   const chunk=(name,data)=>{
     const n=Buffer.alloc(4);n.writeUInt32BE(data.length);

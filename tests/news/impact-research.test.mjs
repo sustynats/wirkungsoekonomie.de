@@ -184,3 +184,14 @@ test('an exact supplied RSS event excerpt is reusable without crawling or becomi
   assert.equal(calls,0);
  } finally {fs.rmSync(root,{recursive:true,force:true});}
 });
+
+test('quote repair includes only bounded original text and never certifies an unmatched claim',async()=>{
+ const original='Unrelated public source material. '.repeat(300);
+ await assert.rejects(verifyImpactResearch(fixture(),[source],[],now,{fetchDocument:async()=>({body:'<article>'+original+'</article>'})}),e=>{
+  assert.equal(e.message,`IMPACT_RESEARCH_QUOTE_NOT_FOUND:${source.source_id}`);
+  assert.equal(e.source_repair_context.claim_verified,false);
+  assert.ok(e.source_repair_context.excerpt.length<=1400);
+  assert.ok(original.includes(e.source_repair_context.excerpt));
+  return true;
+ });
+});

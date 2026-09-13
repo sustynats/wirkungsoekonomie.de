@@ -151,3 +151,23 @@ Zuständigkeit: technische Störungen und redaktionelle Nachrecherche werden im
 Betrieb bearbeitet. Natalie erhält in der Admin-App die fertige, geprüfte Fassung
 für die jeweils erforderliche abschließende Freigabe. Ein technischer HOLD ist
 keine Freigabeaufgabe, eine automatische Themenwahl keine persönliche Zustimmung.
+# Durchgängiger Prüfvertrag (13.09.2026)
+
+API-Prüfung und Import verwenden gemeinsam `reviewPreflight`. Ein nicht auffindbarer
+Rechercheauszug darf weitere bekannte Schema-, Faktoren- oder Recherchefehler nicht
+verdecken: Der begrenzte Korrekturauftrag erhält alle unabhängigen Befunde zusammen.
+Bei einer erfolglosen Zitatprüfung wird zusätzlich ein begrenzter tatsächlich gelesener
+Quellenausschnitt als ungeprüftes Diagnosematerial mitgegeben. Er bestätigt weder die
+beantragte Behauptung noch eine Veröffentlichungsfreigabe. Transportfehler bleiben
+wiederholbare Validierungsfehler ohne neue Textgenerierung.
+
+Die Kurzreferenzen des unveränderlichen Nachrichtenauftrags werden auch innerhalb
+des MPD-Assessments verlustfrei auf dessen vorhandene Quellen aufgelöst. Der zweite
+Fachpass erhält diese normalisierte Arbeitskopie; die originale Transportausgabe und
+ihre Prüfsumme bleiben unverändert. Unbekannte oder nicht mitgelieferte Referenzen
+bleiben ungültig. Es werden keine Quellen, Pfade, Tragweiten oder Urteile ergänzt.
+
+Erfolgreiche Tests dieser Übergänge sind noch kein Produktivnachweis. Dafür bleiben
+geprüfter Artikel, dauerhafter Import, ACK und tatsächlich erreichbare öffentliche URL
+erforderlich. Ein HOLD, eine zugestellte Ausgabe oder ein grüner Scheduler ist keine
+Veröffentlichung.

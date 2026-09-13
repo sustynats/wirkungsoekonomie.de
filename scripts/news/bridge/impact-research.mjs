@@ -21,6 +21,22 @@ function sourceFailure(error, sourceId) {
   }
   return contextual;
 }
+function quoteNotFound(candidate, text) {
+  // Supply actual bounded source text to the repair, not only an opaque code
+  // that would make the next model guess the same quotation again. This is
+  // diagnostic material, not confirmation that the requested claim is true.
+  const words = [...new Set(comparable(candidate.quote).match(/\p{L}{5,}/gu) || [])];
+  let start=0, best=-1;
+  for (let at=0;at<text.length;at+=700) {
+    const part=comparable(text.slice(at,at+1400));
+    const score=words.filter(word=>part.includes(word)).length;
+    if (score>best) {best=score;start=at;}
+  }
+  return Object.assign(Error(`IMPACT_RESEARCH_QUOTE_NOT_FOUND:${candidate.source_id}`), {
+    source_repair_context:{source_id:candidate.source_id,url:candidate.url,
+      excerpt:text.slice(start,start+1400),claim_verified:false},
+  });
+}
 export async function verifyImpactResearch(bridge, candidates = [], existing = [], now, { root = process.cwd(), fetchDocument = fetchPublicArticle } = {}) {
   if (!Array.isArray(candidates) || candidates.length > 12) throw Error('IMPACT_RESEARCH_SOURCE_LIMIT');
   assertSchema(researchSourceSchema, candidates, '$.research_sources');
@@ -67,7 +83,7 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
       // Only a bounded private excerpt is retained, never the complete document.
       const normalized = comparable(text), quote = comparable(candidate.quote);
       const at = normalized.indexOf(quote);
-      if (quote.length < 40 || at < 0) throw Error(`IMPACT_RESEARCH_QUOTE_NOT_FOUND:${candidate.source_id}`);
+      if (quote.length < 40 || at < 0) throw quoteNotFound(candidate,text);
       document = { at:now,url,final_url:fetched.final_url,content_hash:hash(text),
         excerpt: normalized.slice(Math.max(0,at-160),at+quote.length+320), excerpt_hash:hash(quote) };
       await bridge.store.observe(cacheKey,document);
@@ -77,7 +93,7 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
       const fetched = await fetchBounded();
       const text = fetched.extracted_from === 'public_pdf' ? fetched.body : extractArticleText(fetched.body,120000);
       const full = comparable(text), quote = comparable(candidate.quote), at = full.indexOf(quote);
-      if (quote.length<40 || at<0) throw Error(`IMPACT_RESEARCH_QUOTE_NOT_FOUND:${candidate.source_id}`);
+      if (quote.length<40 || at<0) throw quoteNotFound(candidate,text);
       document = {at:now,url,final_url:fetched.final_url,content_hash:hash(text),excerpt:full.slice(Math.max(0,at-160),at+quote.length+320),excerpt_hash:hash(quote)};
       await bridge.store.observe(cacheKey,document);
     }
