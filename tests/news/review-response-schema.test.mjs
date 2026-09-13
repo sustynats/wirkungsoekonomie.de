@@ -23,7 +23,9 @@ test('review decoding has a closed fully required domain schema instead of unres
  assert.deepEqual(root.properties.review.properties.checks.required,SEMANTIC_CHECKS);
  assert.deepEqual(root.$defs.path.properties.magnitude_factors.required,FACTOR_KEYS);
  assert.ok(root.$defs.path.required.includes('protection_boundary'));
- assert.ok(root.properties.impact_assessment.required.includes('research_check'));
+ assert.ok(root.properties.impact_assessment.anyOf[0].required.includes('research_check'));
+ assert.equal(root.properties.impact_assessment.anyOf[1].type,'null');
+ assert.ok(root.properties.assessment_confirmation.anyOf[0].required.includes('path_research'));
  assert.equal(root.$defs.path.properties.magnitude,undefined);
  for(const key of ['magnitude','direction','dominance']) assert.equal(root.$defs.dimension.properties[key],undefined);
  assert.deepEqual(root.$defs.main_path.properties.type.enum,['main_path','counter_path']);

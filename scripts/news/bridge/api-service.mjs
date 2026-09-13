@@ -142,12 +142,12 @@ export class EditorialApiService {
       try {
         const researched = input.kind === 'review';
         const model = researched ? 'gpt-5.4-mini' : 'gpt-5.6-luna';
-        let researchHosts, responseFormat;
+        let researchHosts, responseFormat, providerPrompt = input.prompt;
         if (researched) {
           let packet = input.prompt;
           for (let depth=0; depth<3 && typeof packet==='string'; depth++) {
             try { packet=JSON.parse(packet); } catch { break; }
-            if (packet?.output_contract?.response_format?.name === 'impact_review_factors_v1') {
+            if (['impact_review_factors_v1','impact_review_confirmation_v2'].includes(packet?.output_contract?.response_format?.name)) {
               const proposed=packet.output_contract.response_format;
               if (proposed.type !== 'json_schema' || proposed.strict !== true || proposed.schema?.type !== 'object'
                 || JSON.stringify(proposed).length>40000) throw Error('API_EDITORIAL_RESPONSE_CONTRACT_INVALID');
@@ -159,6 +159,15 @@ export class EditorialApiService {
                 Object.values(value).forEach(inspect);
               };
               inspect(proposed.schema);responseFormat=proposed;
+              // Strict decoding already sends this exact schema in text.format.
+              // Avoid paying to repeat it in the user prompt. The original
+              // request, identity and immutable journal remain unchanged.
+              if (depth === 0) {
+                const compact = structuredClone(packet);
+                delete compact.output_contract.response_format;
+                compact.output_contract.response_format_name = proposed.name;
+                providerPrompt = JSON.stringify(compact);
+              }
             }
             if (packet?.research_access?.article_candidates) {
               const hosts=packet.research_access.article_candidates;
@@ -178,7 +187,7 @@ export class EditorialApiService {
             method: 'POST', redirect: 'error', signal: AbortSignal.timeout(180000),
             headers: { Authorization: `Bearer ${this.apiKey}`, 'Content-Type': 'application/json', 'X-Client-Request-Id': input.key },
             body: JSON.stringify({ model, store: false, reasoning: { effort: 'medium' },
-              max_output_tokens: 48000, instructions: input.instructions, input: input.prompt,
+              max_output_tokens: 48000, instructions: input.instructions, input: providerPrompt,
               ...(researched ? { tools: [{ type: 'web_search', search_context_size: 'low',
                 ...(researchHosts ? {filters:{allowed_domains:researchHosts}} : {}) }], tool_choice: 'required', max_tool_calls: 2,
                 include: ['web_search_call.action.sources'] } : {}),

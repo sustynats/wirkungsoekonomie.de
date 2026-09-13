@@ -66,6 +66,9 @@ test('complete review schema reaches the initial request while paid repairs are 
  assert.equal(f.calls.length,1);
  for(const body of f.bodies) {
   assert.deepEqual(body.text.format,REVIEW_RESPONSE_FORMAT);assert.equal(body.max_tool_calls,2);
+  assert.equal(JSON.parse(body.input).output_contract.response_format,undefined);
+  assert.equal(JSON.parse(body.input).output_contract.response_format_name,REVIEW_RESPONSE_FORMAT.name);
+  assert.ok(body.input.length < assignment.length / 2);
   assert.deepEqual(body.tools[0].filters.allowed_domains,['www.bundestag.de']);
  }
 });
