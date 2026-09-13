@@ -5,6 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {sourceAccess,respectRobots} from '../../scripts/news/access-policy.mjs';
 import { verifyImpactResearch } from '../../scripts/news/bridge/impact-research.mjs';
+import { evidenceGroups } from '../../scripts/news/newsroom.mjs';
 const now='2026-09-10T14:00:00Z';
 const quote='A documented mechanism connects the proposed change to the observed system response.';
 const source={source_id:'research-mechanism-test',url:'https://research.example.org/paper',title:'Public mechanism evidence',publisher:'Test publisher',source_function:'mechanism',quote,supports:'This passage supplies the mechanism for the explicitly bounded scenario.'};
@@ -152,4 +153,34 @@ test('punctuation normalization preserves words, negation and numerical claims',
       {message:`IMPACT_RESEARCH_QUOTE_NOT_FOUND:${source.source_id}`});
     assert.equal(bridge.data.size,0);
   }
+});
+
+test('an exact supplied RSS event excerpt is reusable without crawling or becoming independent evidence', async () => {
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'impact-rss-alias-'));
+ const event={...source,source_function:'event'};
+ const supplied={source_id:'event-feed',url:source.url,title:'Original title',publisher:'Original publisher',excerpt:quote};
+ let calls=0;
+ const options={root,fetchDocument:async()=>{calls++;throw Error('unexpected article access');}};
+ const writeRegistry=enabled=>fs.writeFileSync(path.join(root,'content/news/source-registry.json'),JSON.stringify({policy:{},sources:[
+  {source_id:'event-feed',name:'Original publisher',url:source.url,feed_url:'https://research.example.org/rss',source_type:'official_rss',role:'A',enabled,
+   access:{status:'public',article:'disabled',cost_usd:0,requires_login:false,requires_payment:false}},
+ ]}));
+ try {
+  fs.mkdirSync(path.join(root,'content/news'),{recursive:true});writeRegistry(true);
+  const [result]=await verifyImpactResearch(fixture(),[event],[supplied],now,options);
+  assert.equal(result.research_verification.status,'provided_excerpt_verified');
+  assert.equal(result.research_verification.new_independent_source,false);
+  assert.equal(result.original_source_id,supplied.source_id);
+  assert.equal(result.url,supplied.url);assert.equal(result.publisher,supplied.publisher);
+  assert.equal(result.article_excerpt,quote);assert.equal(calls,0);
+  assert.equal(evidenceGroups([supplied,result]).possible_independent_origins,1);
+  for (const candidate of [
+   {...event,quote:quote+' A further unsupported consequence is claimed here.'},
+   {...event,url:'https://research.example.org/different-event'},
+   {...event,source_function:'mechanism'},
+  ]) await assert.rejects(verifyImpactResearch(fixture(),[candidate],[supplied],now,options),/SOURCE_METADATA_ONLY/);
+  writeRegistry(false);
+  await assert.rejects(verifyImpactResearch(fixture(),[event],[supplied],now,options),/SOURCE_DISABLED/);
+  assert.equal(calls,0);
+ } finally {fs.rmSync(root,{recursive:true,force:true});}
 });
