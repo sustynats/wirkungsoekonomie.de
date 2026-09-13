@@ -181,7 +181,8 @@ export class ApiEditorialProcessor {
     let recovered;
     if (ownership && ownership.key !== request.key) {
       recovered = await this.api.get(ownership.key);
-      if (recovered?.status !== 'completed' || recovered.packet_hash !== request.packet_hash || recovered.profile_hash !== request.profile_hash) return { status: 'legacy_claim_attention', job_id: id };
+      if (recovered?.status !== 'completed' || recovered.packet_hash !== request.packet_hash
+        || ![request.profile_hash, ...(this.knowledge.compatibleHashes || [])].includes(recovered.profile_hash)) return { status: 'legacy_claim_attention', job_id: id };
     }
     if (!ownership) {
       ownership = { job_id: id, key: request.key, packet_hash: hash(packet), claim_path: claimPath, claimed_at: at, actor: 'oracle_api', state: 'intent' };

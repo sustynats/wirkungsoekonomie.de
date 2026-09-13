@@ -32,5 +32,12 @@ export function editorialKnowledge(root) {
     agents.slice(start, end),
   ].join('\n\n');
   const manifest = { version: EDITORIAL_KNOWLEDGE_VERSION, sources: documents.map(d => ({ path: d.file, sha256: hash(d.text) })), rules_hash: hash(rules) };
-  return { manifest, hash: hash(manifest), instructions: rules };
+  // Version 1 has identical factual/editorial governance; only its transport
+  // instruction asked the model to duplicate the envelope. Completed outputs
+  // may be recovered against the SAME source/method manifest and current gates.
+  const previousRules = rules.replace(
+    'Reguläre News: ausschließlich das im Auftrag verlangte native Analyseformat liefern. Den Bridge-Umschlag erstellt die Software; ihn nicht zusätzlich erzeugen.',
+    'Reguläre News: native Analyse und vollständigen Bridge-Umschlag liefern.');
+  const compatibleHashes = [hash({ ...manifest, version: '2026-09-13-1', rules_hash: hash(previousRules) })];
+  return { manifest, hash: hash(manifest), instructions: rules, compatibleHashes };
 }
