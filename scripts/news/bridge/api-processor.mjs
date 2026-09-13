@@ -59,7 +59,7 @@ export function wrapNativeNewsOutput(output, original) {
   if (output.analyses.length !== 1 || output.analyses[0]?.story_id !== original.wirkungsticker?.story_id) throw Error('BRIDGE_ANALYSIS_BINDING_MISMATCH');
   const a = output.analyses[0], publish = a.publication_recommendation;
   if (typeof publish !== 'boolean') throw Error('API_EDITORIAL_NATIVE_DECISION_REQUIRED');
-  const reason = publish ? a.publication_gate?.rationale : a.rejection?.reason;
+  const reason = publish ? a.publication_gate?.rationale : a.rejection?.reason || a.publication_gate?.rationale;
   if (typeof reason !== 'string' || !reason.trim()) throw Error('API_EDITORIAL_NATIVE_REASON_REQUIRED');
   const string = v => typeof v === 'string' ? v : '';
   const list = v => Array.isArray(v) ? v : [];
@@ -71,7 +71,7 @@ export function wrapNativeNewsOutput(output, original) {
   }));
   return {
     schema_version: output.schema_version, job_id: output.job_id, input_hash: output.input_hash, processed_at: output.processed_at,
-    decision: { status: publish ? 'publish' : a.rejection?.code === 'insufficient_evidence' ? 'hold' : 'reject', reason, merge_into: null, priority: 50 },
+    decision: { status: publish ? 'publish' : !a.rejection?.code || a.rejection.code === 'insufficient_evidence' ? 'hold' : 'reject', reason, merge_into: null, priority: 50 },
     story: { headline: original.event?.canonical_title || '', subheadline: '', short_summary: string(a.summary),
       detailed_summary: string(a.source_summary), what_happened: string(a.source_summary), why_it_matters: string(a.why_relevant) },
     facts: { confirmed: claims.filter(c => c.status === 'confirmed_claim'), uncertain: claims.filter(c => c.status === 'uncertain_claim'), contradictions: [], missing_information: list(a.uncertainties) },
