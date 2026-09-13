@@ -2,16 +2,31 @@ diff --git a/package.json b/package.json
 index 01a9bea..1eb29d4 100644
 --- a/package.json
 +++ b/package.json
-@@ -10 +10 @@
+@@ -7,7 +7,7 @@
+   "scripts": {
+     "dev": "tsx src/index.ts",
+     "register": "tsx src/register-commands.ts",
 -    "build": "tsc -p tsconfig.build.json && node polls/copy-runtime.mjs",
 +    "build": "tsc -p tsconfig.build.json && node polls/copy-runtime.mjs && cp src/services/editorialApiService.mjs dist/src/services/editorialApiService.mjs",
+     "start": "node dist/src/index.js",
+     "rss:backfill": "node dist/src/scripts/backfillWebsiteFeeds.js",
+     "rss:backfill:dev": "tsx src/scripts/backfillWebsiteFeeds.ts",
 diff --git a/src/http/apiServer.ts b/src/http/apiServer.ts
 index 9b7ab5d..153efd7 100644
 --- a/src/http/apiServer.ts
 +++ b/src/http/apiServer.ts
-@@ -76,0 +77 @@ export interface ApiProviderSet {
+@@ -74,6 +74,7 @@ export interface ApiProviderSet {
+   newsAiProvider?: WoekAiAnswerProvider;
+   newsAnalysisBudget?: NewsAnalysisBudget;
+   newsBatchService?: NewsBatchService;
 +  newsEditorialService?: { submit(input: unknown): Promise<Record<string, unknown>>; get(key: string): Promise<Record<string, unknown> | null> };
-@@ -316,0 +318,27 @@ export function startApiServer(service: FactcheckService, config: RuntimeConfig,
+   newsVisualProvider?: NewsVisualProvider;
+   parliamentVisualProvider?: ParliamentVisualProvider;
+   productCheckProvider?: ProductCheckProvider;
+@@ -314,6 +315,33 @@ export function startApiServer(service: FactcheckService, config: RuntimeConfig,
+         return;
+       }
+ 
 +      if (requestUrl.pathname === '/api/news-analysis/editorial-jobs' || requestUrl.pathname.startsWith('/api/news-analysis/editorial-jobs/')) {
 +        // Private Oracle worker only; never expose draft bodies to browser CORS.
 +        if (request.headers.origin || !providers.newsPushService?.isAuthorized(readBearerToken(request))) {
@@ -39,29 +54,47 @@ index 9b7ab5d..153efd7 100644
 +        return;
 +      }
 +
+       if (request.method === "POST" && requestUrl.pathname === "/api/news-analysis") {
+         if (!providers.newsPushService?.isAuthorized(readBearerToken(request))) {
+           sendJson(response, 401, { ok: false, error: "Nicht autorisiert." });
 diff --git a/src/index.ts b/src/index.ts
 index 27ac01c..58f3226 100644
 --- a/src/index.ts
 +++ b/src/index.ts
-@@ -0,0 +1,3 @@
+@@ -1,3 +1,6 @@
 +// @ts-ignore - versioned ESM runtime copied alongside the compiled service
 +import { EditorialApiService } from './services/editorialApiService.mjs';
 +import { FactcheckProviderError } from './services/openaiFactcheck.js';
-@@ -142,0 +146,6 @@ const newsBatchService = process.env.NEWS_BATCH_ENABLED === 'true' && config.ope
+ import { Client, Events, GatewayIntentBits } from "discord.js";
+ import { readConfig } from "./config.js";
+ import { registerCommunityAutoRole } from "./discord/communityAutoRole.js";
+@@ -140,6 +143,12 @@ const newsBatchService = process.env.NEWS_BATCH_ENABLED === 'true' && config.ope
+   file: './data/news-analysis-batches.json', apiKey: config.openAiApiKey,
+   budgets: { news: newsAnalysisBudget, shared: budgetTracker },
+ }) : undefined;
 +const newsEditorialService = process.env.NEWS_BRIDGE_API_ENABLED === 'true' && config.openAiApiKey && config.apiBudgetEnabled
 +  ? new EditorialApiService({ directory: path.resolve('./data/editorial-api'),
 +      apiKey: config.openAiApiKey, ProviderError: FactcheckProviderError,
 +      withBudget: (action: () => Promise<{model: string; usage?: {input_tokens: number; output_tokens: number; cached_input_tokens?: number}}>, reservationUsd: number) =>
 +        budgetTracker.withBudget('news-analysis', () => newsAnalysisBudget.withBudget(action, reservationUsd), reservationUsd),
 +    }) : undefined;
-@@ -164,0 +174 @@ if (config.apiEnabled) {
+ const accessQuotaTracker = new AccessQuotaTracker({
+   enabled: config.accessQuota.enabled,
+   file: config.accessQuota.file,
+@@ -162,6 +171,7 @@ if (config.apiEnabled) {
+     newsAiProvider,
+     newsAnalysisBudget,
+     newsBatchService,
 +    newsEditorialService,
+     newsVisualProvider,
+     parliamentVisualProvider,
+     discordAnalyticsStore
 diff --git a/src/services/editorialApiService.mjs b/src/services/editorialApiService.mjs
 new file mode 100644
-index 0000000..ffef4d9
+index 0000000..16923fb
 --- /dev/null
 +++ b/src/services/editorialApiService.mjs
-@@ -0,0 +1,225 @@
+@@ -0,0 +1,238 @@
 +import { createHash } from 'node:crypto';
 +import { mkdir, readFile, writeFile, rename, open, readdir } from 'node:fs/promises';
 +import path from 'node:path';
@@ -186,11 +219,24 @@ index 0000000..ffef4d9
 +      try {
 +        const researched = input.kind === 'review';
 +        const model = researched ? 'gpt-5.4-mini' : 'gpt-5.6-luna';
-+        let researchHosts;
++        let researchHosts, responseFormat;
 +        if (researched) {
 +          let packet = input.prompt;
 +          for (let depth=0; depth<3 && typeof packet==='string'; depth++) {
 +            try { packet=JSON.parse(packet); } catch { break; }
++            if (packet?.output_contract?.response_format?.name === 'impact_review_factors_v1') {
++              const proposed=packet.output_contract.response_format;
++              if (proposed.type !== 'json_schema' || proposed.strict !== true || proposed.schema?.type !== 'object'
++                || JSON.stringify(proposed).length>40000) throw Error('API_EDITORIAL_RESPONSE_CONTRACT_INVALID');
++              const inspect=value=>{
++                if (!value || typeof value!=='object') return;
++                if (value.$ref && !/^#\/\$defs\/[a-z_]+$/.test(value.$ref)) throw Error('API_EDITORIAL_RESPONSE_CONTRACT_INVALID');
++                if (value.type==='object' && (value.additionalProperties!==false || !Array.isArray(value.required)
++                  || Object.keys(value.properties || {}).some(key=>!value.required.includes(key)))) throw Error('API_EDITORIAL_RESPONSE_CONTRACT_INVALID');
++                Object.values(value).forEach(inspect);
++              };
++              inspect(proposed.schema);responseFormat=proposed;
++            }
 +            if (packet?.research_access?.article_candidates) {
 +              const hosts=packet.research_access.article_candidates;
 +              if (Array.isArray(hosts) && hosts.length>0 && hosts.length<=100
@@ -204,7 +250,7 @@ index 0000000..ffef4d9
 +          record.provider_called = true; await this.save(record);
 +          // Fixed priced model, no hidden retries/fallback. Ordinary drafting
 +          // reserves USD .25. A review reserves .50, covering even the model's
-+          // full 1.05M input context, 48k output and two USD .01 search calls.
++          // bounded 300KB input, 48k output and two USD .01 search calls.
 +          const response = await this.fetch('https://api.openai.com/v1/responses', {
 +            method: 'POST', redirect: 'error', signal: AbortSignal.timeout(180000),
 +            headers: { Authorization: `Bearer ${this.apiKey}`, 'Content-Type': 'application/json', 'X-Client-Request-Id': input.key },
@@ -213,7 +259,7 @@ index 0000000..ffef4d9
 +              ...(researched ? { tools: [{ type: 'web_search', search_context_size: 'low',
 +                ...(researchHosts ? {filters:{allowed_domains:researchHosts}} : {}) }], tool_choice: 'required', max_tool_calls: 2,
 +                include: ['web_search_call.action.sources'] } : {}),
-+              text: { format: researched ? { type: 'json_schema', name: 'impact_review', strict: false,
++              text: { format: researched ? responseFormat || { type: 'json_schema', name: 'impact_review', strict: false,
 +                schema: { type: 'object', properties: { review: {type: 'object'}, impact_assessment: {type: 'object'},
 +                  research_sources: {type: 'array', items: {type: 'object'}} },
 +                  required: ['review','impact_assessment'], additionalProperties: true } }
@@ -291,51 +337,97 @@ diff --git a/src/services/newsAnalysisBudget.ts b/src/services/newsAnalysisBudge
 index 0225c1f..045312f 100644
 --- a/src/services/newsAnalysisBudget.ts
 +++ b/src/services/newsAnalysisBudget.ts
-@@ -19,2 +19,3 @@ export class NewsAnalysisBudget {
+@@ -16,8 +16,9 @@ export class NewsAnalysisBudget {
+     if (Object.entries(monthlyLimitsUsd).some(([month, limit]) => !/^\d{4}-(0[1-9]|1[0-2])$/.test(month) || !Number.isFinite(limit) || limit < 0)) throw new Error('Invalid newsroom monthly budget override');
+   }
+ 
 -  withBudget<T extends UsageResult>(action: () => Promise<T>): Promise<T> {
 -    const operation = this.queue.then(() => this.run(action));
 +  withBudget<T extends UsageResult>(action: () => Promise<T>, reservation = 0.25): Promise<T> {
 +    if (![0.25, 0.5].includes(reservation)) return Promise.reject(new Error('Invalid newsroom reservation'));
 +    const operation = this.queue.then(() => this.run(action, reservation));
-@@ -73 +74 @@ export class NewsAnalysisBudget {
+     this.queue = operation.catch(() => undefined);
+     return operation;
+   }
+@@ -70,7 +71,7 @@ export class NewsAnalysisBudget {
+     return operation;
+   }
+ 
 -  private async run<T extends UsageResult>(action: () => Promise<T>): Promise<T> {
 +  private async run<T extends UsageResult>(action: () => Promise<T>, reservation: number): Promise<T> {
-@@ -83 +83,0 @@ export class NewsAnalysisBudget {
+     let state: BudgetState;
+     try { state = JSON.parse(await readFile(this.file, "utf8")) as BudgetState; }
+     catch (error) {
+@@ -80,7 +81,6 @@ export class NewsAnalysisBudget {
+     if (state.version !== 1 || !state.months) throw new Error("Invalid newsroom budget ledger");
+     const month = this.now().toISOString().slice(0, 7);
+     const current = state.months[month] ?? { chargedUsd: 0, requests: 0 };
 -    const reservation = 0.25;
+     // Resolve per request, so a temporary grant expires without a restart.
+     const limitUsd = this.monthlyLimitsUsd[month] ?? this.limitUsd;
+     if (!Number.isFinite(current.chargedUsd) || current.chargedUsd + reservation > limitUsd) throw new FactcheckProviderError("Das monatliche Nachrichten-KI-Budget ist ausgeschöpft.", 429, "news_monthly_budget_reached");
 diff --git a/src/services/providerUsage.ts b/src/services/providerUsage.ts
 index bd581da..aa21384 100644
 --- a/src/services/providerUsage.ts
 +++ b/src/services/providerUsage.ts
-@@ -4,0 +5 @@ export interface ProviderTokenUsage {
+@@ -2,6 +2,7 @@ export interface ProviderTokenUsage {
+   input_tokens: number;
+   output_tokens: number;
+   cached_input_tokens?: number;
 +  web_search_calls?: number;
-@@ -17 +18,2 @@ export function validProviderUsage(value: unknown): value is ProviderTokenUsage
+ }
+ 
+ export interface ProviderUsageEvidence {
+@@ -14,14 +15,17 @@ export function validProviderUsage(value: unknown): value is ProviderTokenUsage
+   return Boolean(usage && Number.isSafeInteger(usage.input_tokens) && usage.input_tokens >= 0
+     && Number.isSafeInteger(usage.output_tokens) && usage.output_tokens >= 0
+     && (usage.cached_input_tokens === undefined || Number.isSafeInteger(usage.cached_input_tokens)
 -      && usage.cached_input_tokens >= 0 && usage.cached_input_tokens <= usage.input_tokens));
 +      && usage.cached_input_tokens >= 0 && usage.cached_input_tokens <= usage.input_tokens)
 +    && (usage.web_search_calls === undefined || Number.isSafeInteger(usage.web_search_calls) && usage.web_search_calls >= 0));
-@@ -23 +25 @@ export function miniUsageUsd(evidence: ProviderUsageEvidence | undefined): numbe
+ }
+ 
+ // Preserve the existing verified model tariff. Unknown models are not priced
+ // by guessing; the caller keeps its conservative reservation instead.
+ export function miniUsageUsd(evidence: ProviderUsageEvidence | undefined): number | undefined {
 -  if (evidence?.model !== 'gpt-5.4-mini' || !validProviderUsage(evidence.usage)) return undefined;
 +  if (!evidence || !['gpt-5.4-mini','gpt-5.6-luna'].includes(evidence.model) || !validProviderUsage(evidence.usage)) return undefined;
-@@ -26 +28,3 @@ export function miniUsageUsd(evidence: ProviderUsageEvidence | undefined): numbe
+   const usage = evidence.usage;
+   const cached = usage.cached_input_tokens ?? 0;
 -  return ((usage.input_tokens - cached) * 0.75 + cached * 0.075 + usage.output_tokens * 4.5) / 1e6;
 +  // Official standard tariff, verified 2026-09-13; old journals retain mini pricing.
 +  const [input, cache, output] = evidence.model === 'gpt-5.6-luna' ? [0.2,0.02,1.2] : [0.75,0.075,4.5];
 +  return ((usage.input_tokens - cached) * input + cached * cache + usage.output_tokens * output) / 1e6 + (usage.web_search_calls ?? 0) * 0.01;
+ }
 diff --git a/src/services/tokenUsageBudget.ts b/src/services/tokenUsageBudget.ts
 index a30d8da..9abe8c8 100644
 --- a/src/services/tokenUsageBudget.ts
 +++ b/src/services/tokenUsageBudget.ts
-@@ -25 +25,2 @@ export class UsageBudgetTracker {
+@@ -22,13 +22,14 @@ export class UsageBudgetTracker {
+   private limitForMonth(month: string): number {
+     return this.options.monthlyBudgetOverridesCents?.[month] ?? this.options.monthlyBudgetCents;
+   }
 -  async withBudget<T>(feature: BudgetFeature, action: () => Promise<T>): Promise<T> {
 +  async withBudget<T>(feature: BudgetFeature, action: () => Promise<T>, reservationUsd = 0.25): Promise<T> {
 +    if (![0.25,0.5].includes(reservationUsd)) throw new Error('Invalid API reservation');
-@@ -31 +32 @@ export class UsageBudgetTracker {
+     if (!this.options.enabled) return action();
+     const id = randomUUID();
+     const month = new Date().toISOString().slice(0, 7);
+     await this.mutate(state => {
+       const current = state.months[month] ??= emptyMonth();
 -      const reserve = feature === 'news-analysis' ? cents(0.25 * USD_TO_GROSS_EUR_CENTS) : Math.max(35, this.legacyEstimate(feature));
 +      const reserve = feature === 'news-analysis' ? cents(reservationUsd * USD_TO_GROSS_EUR_CENTS) : Math.max(35, this.legacyEstimate(feature));
+       if (current.estimatedCents + reserve > this.limitForMonth(month)) throw new FactcheckProviderError('Das monatliche KI-Budget ist ausgeschöpft.', 429, 'monthly_budget_reached');
+       state.entries.push({ id, feature, month, at: new Date().toISOString(), chargedCents: reserve, basis: 'reserved_unknown' });
+       this.charge(current, feature, reserve, 1);
 diff --git a/tests/apiServer.test.ts b/tests/apiServer.test.ts
 index 4f77105..0a23592 100644
 --- a/tests/apiServer.test.ts
 +++ b/tests/apiServer.test.ts
-@@ -192,0 +193,22 @@ describe("api server rate-limit client key", () => {
+@@ -190,3 +190,25 @@ describe("api server rate-limit client key", () => {
+     expect(clientKey(request)).toBe("ip:203.0.113.7");
+   });
+ });
 +
 +it('guards durable editorial jobs, returns recoverable output and hides raw provider data', async () => {
 +  let called = 0;

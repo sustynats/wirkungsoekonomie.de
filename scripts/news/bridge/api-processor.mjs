@@ -1,6 +1,8 @@
 import { randomUUID } from 'node:crypto';
 import { hash, JOB_ID, bridgePath, parsePacket, outputSchema } from './contract.mjs';
 import { semanticOutputSchema } from './semantic-review.mjs';
+import { REVIEW_RESPONSE_FORMAT } from './review-response-schema.mjs';
+import { deriveAssessmentCalculations } from '../impact-assessment.mjs';
 import { EDITORIAL_REQUEST_CONTRACT_V4 } from './intake-processing.mjs';
 import { validateEditorialPreview } from './editorial-approval.mjs';
 import { apiRequestKey, API_EDITORIAL_PROTOCOL, validateApiRequest } from './api-service.mjs';
@@ -43,13 +45,14 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
     'QUELLENGATE: Zwei unabhängige Quellen sind KEINE allgemeine Veröffentlichungsvoraussetzung. Eine verlässliche Einzelquelle kann einen klar zugeschriebenen neuen Ereigniskern als initial/preliminary und single_source_claim tragen. Bestätigt/confirmed_claim ist etwas anderes. Nicht nur wegen fehlender unabhängiger Bestätigung ablehnen; benenne bei HOLD die konkret unzureichend belegte Kernbehauptung oder den fehlenden materiellen Nachrichtenwert. Bei strittigen schweren Vorwürfen und requires_corroboration bleiben Originalbeleg und unabhängige Prüfung erforderlich. Keine fehlenden Tatsachen ergänzen, nur um eine Textlänge zu erreichen.',
     ...(packet.original_input ? ['VALIDATOR_FEEDBACK: ' + JSON.stringify({ validation_errors: packet.validation_errors, attempt: packet.correction_attempt, prior_output: priorOutput })] : []),
   ].join('\n\n') : JSON.stringify({
-    transport_revision: 'researched-luna-schema-4',
+    transport_revision: 'researched-factors-schema-5',
     task: 'Erzeuge eine vollständige neue Ausgabe für diesen unveränderten Rechercheauftrag. Keine Veröffentlichung oder Freigabe ausführen.' + (kind === 'review' ? ' Du darfst höchstens zwei Web-Suchzugriffe für konkret fehlende Wirkungs-/Kontextbelege verwenden. Primärquellen bevorzugen, keine Paywall/Login-Umgehung. Nur tatsächlich gelesene kurze Belege mit exakter URL und Originalauszug als höchstens zwei research_sources ausweisen. Prüfe aktiv mindestens einen tatsächlich fehlenden Ereignis- oder Mechanismusbeleg, bevor du fehlende unabhängige Belege als Sperrgrund nennst. Die nachgelagerte Software prüft jeden zusätzlichen Beleg.' : ' Keine Tools aufrufen.'),
     ...(kind === 'review' ? { readiness_definition: 'ready bedeutet: Die vorliegende Darstellung einschließlich ihrer ausdrücklich vorläufigen Zuschreibung besteht die fachliche Prüfung. ready ist weder confirmed_claim noch die unabhängige Bestätigung jeder Ereignisbehauptung. Ein initial/preliminary-Artikel kann deshalb ready sein. evidence bewertet, ob Text und Pfade die belastbare Quellenbasis korrekt wiedergeben, ohne mehr Gewissheit vorzutäuschen. Fehlende Primärbestätigung einer offen zugeschriebenen Aussage ist allein kein Sperrgrund. Bei unzuverlässiger Quelle, widersprüchlicher Darstellung, Überzeichnung, schwerem strittigem Vorwurf oder requires_corroboration gelten weiterhin die strengeren Gates. Benenne bei fail die konkret unbelegte Behauptung, die der Artikel selbst als gesichert ausgibt.' } : {}),
-    ...(kind === 'review' ? { review_scope: 'Zahlen wie magnitude, magnitude_range.lower/upper und magnitude_factors.*.value sind JSON-Zahlen, keine Strings. Alle 6 Faktoren selbst am Pfad begründen und die angegebene Formel exakt berechnen; keinen bisherigen Fehler übernehmen. Für low/high_uncertainty-Pfade den tatsächlichen Recherchepass dokumentieren. Prüfe das modellierte Wirkungspotenzial, nicht ob eine vorgeschlagene Maßnahme bereits umgesetzt wurde. Unabhängiger Fachpass bedeutet unabhängiges Prüfurteil; es ist keine pauschale Zwei-Quellen-Pflicht. Eine korrekt zugeschriebene vorläufige Meldung kann auf einer verlässlichen Einzelquelle beruhen. confirmed_claim und schwere strittige Vorwürfe brauchen die jeweils strengeren Belege. Fehlender Beschluss, unbekannte Konditionen oder fehlende gemessene Folgen dürfen eine korrekt als Vorschlag und ex ante bezeichnete Analyse nicht allein blockieren. institutional_status prüft die zutreffende Bezeichnung des realen Status, nicht das Vorliegen einer endgültigen Entscheidung. magnitude prüft Faktoren, Wirkungsraum und Berechnung; geringe Evidenz gehört nach evidence und darf nicht mit Tragweite vermischt werden. Keine Quellen erfinden. Echte Beleglücken, unbedingte Behauptungen oder fehlerhafte Pfade bleiben Sperrgründe; korrigiere den Assessment-Entwurf nur quellengebunden.' } : {}),
-    output_contract: contract,
+    ...(kind === 'review' ? { review_scope: 'Zahlen wie magnitude, magnitude_range.lower/upper und magnitude_factors.*.value sind JSON-Zahlen, keine Strings. Alle 6 Faktoren selbst am Pfad begründen; die Software berechnet daraus die Tragweite. Keinen bisherigen Faktorenfehler übernehmen. Für low/high_uncertainty-Pfade den tatsächlichen Recherchepass dokumentieren. Prüfe das modellierte Wirkungspotenzial, nicht ob eine vorgeschlagene Maßnahme bereits umgesetzt wurde. Unabhängiger Fachpass bedeutet unabhängiges Prüfurteil; es ist keine pauschale Zwei-Quellen-Pflicht. Eine korrekt zugeschriebene vorläufige Meldung kann auf einer verlässlichen Einzelquelle beruhen. confirmed_claim und schwere strittige Vorwürfe brauchen die jeweils strengeren Belege. Fehlender Beschluss, unbekannte Konditionen oder fehlende gemessene Folgen dürfen eine korrekt als Vorschlag und ex ante bezeichnete Analyse nicht allein blockieren. institutional_status prüft die zutreffende Bezeichnung des realen Status, nicht das Vorliegen einer endgültigen Entscheidung. magnitude prüft Faktoren, Wirkungsraum und Berechnung; geringe Evidenz gehört nach evidence und darf nicht mit Tragweite vermischt werden. Keine Quellen erfinden. Echte Beleglücken, unbedingte Behauptungen oder fehlerhafte Pfade bleiben Sperrgründe; korrigiere den Assessment-Entwurf nur quellengebunden.' } : {}),
+    output_contract: kind === 'review' ? {response_format:REVIEW_RESPONSE_FORMAT,
+      calculation_rule:'Nur die redaktionell begründeten Faktoren und einzelnen Pfadrichtungen liefern. magnitude, magnitude_calculation und die aggregierte Dimensionsrichtung/Dominanz berechnet die Software. Keine Berechnung ersetzen, indem ein Faktor oder eine Pfadrichtung passend gemacht wird. primary_paths nur main_path/counter_path desselben Gegenstands und Vergleichs; Nebenrisiken in secondary_paths. Alle Schutzgrenzen ausdrücklich mit Begründung prüfen. Eine abgeschlossene erfolglose Recherche bleibt completed mit dokumentierten Wissensgrenzen; keine Quelle erfinden. Bei echter nicht abgeschlossener Prüfung needs_research und needs_review.'} : contract,
     ...(kind === 'review' ? { research_access: knowledge.research_access || null } : {}),
-    assignment: original,
+    assignment: kind === 'review' ? {...original,requested_output:undefined} : original,
     ...(packet.original_input ? { repair: { validation_errors: packet.validation_errors, attempt: packet.correction_attempt, prior_output: priorOutput } } : {}),
     binding_rule: 'job_id, input_hash, schema_version und processed_at setzt der Server. Keine anderen Bindungen oder Quellen-IDs verändern. Eine native News-Analyse steht einmal unter wirkungsticker.analysis, nicht in einem analyses-Array. Keine technischen Zusatzfelder im Output.',
   });
@@ -66,9 +69,11 @@ export function validateApiOutput(output, packet, now) {
   if (kind === 'news' && Array.isArray(output.analyses)) output = wrapNativeNewsOutput(output, original);
   const schema = kind === 'news' ? outputSchema : kind === 'review' ? semanticOutputSchema
     : output.disposition === 'hold' ? EDITORIAL_REQUEST_CONTRACT_V4.hold_output_schema : EDITORIAL_REQUEST_CONTRACT_V4.output_schema;
-  parsePacket(JSON.stringify(output), schema);
   output = structuredClone(output);
+  canonicalResearchIdentifiers(output,original.record?.sources || original.sources || []);
+  parsePacket(JSON.stringify(output), schema);
   canonicalAssessmentNumbers(output.impact_assessment || output.wirkungsticker?.analysis?.impact_assessment);
+  deriveAssessmentCalculations(output.impact_assessment || output.wirkungsticker?.analysis?.impact_assessment);
   if (output.job_id !== original.job_id || output.input_hash !== original.input_hash) throw Error('BRIDGE_JOB_BINDING_MISMATCH');
   if (!Number.isFinite(Date.parse(output.processed_at)) || Date.parse(output.processed_at) < Date.parse(original.created_at)
     || Date.parse(output.processed_at) > Date.parse(now) + 300000) throw Error('BRIDGE_OUTPUT_TIME_INVALID');
@@ -78,6 +83,30 @@ export function validateApiOutput(output, packet, now) {
     if (output.preview.format !== 'news') validateEditorialPreview(output.preview);
   }
   return output;
+}
+
+// A research source sometimes uses an informal local ID. Give that same
+// source a protocol ID and update only explicit identifier fields. The
+// URL, quotation, judgment and immutable provider response are not changed.
+export function canonicalResearchIdentifiers(output, originalSources=[]) {
+  const replacements=new Map();
+  const seen=new Set();
+  for(const source of output.research_sources || []) {
+    if(seen.has(source.source_id))return output; // ambiguous duplicate stays invalid
+    seen.add(source.source_id);
+    const original=originalSources.find(s=>s.source_id===source.source_id);
+    if(original && original.url!==source.url)return output; // cannot retarget an existing identifier
+    if(typeof source.source_id==='string' && source.source_id.trim() && !/^research-[a-z0-9-]{3,100}$/.test(source.source_id) && /^https:\/\//.test(source.url)) {
+      replacements.set(source.source_id,'research-'+hash(source.url).slice(0,32));
+    }
+  }
+  const visit=value=>{
+    if(!value || typeof value!=='object')return;
+    if(typeof value.source_id==='string' && replacements.has(value.source_id))value.source_id=replacements.get(value.source_id);
+    if(Array.isArray(value.source_ids))value.source_ids=value.source_ids.map(id=>replacements.get(id)||id);
+    Object.values(value).forEach(visit);
+  };
+  visit(output);return output;
 }
 
 // Lossless transport typing only: an explicitly supplied "3" is the number 3.

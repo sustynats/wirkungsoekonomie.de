@@ -122,11 +122,24 @@ export class EditorialApiService {
       try {
         const researched = input.kind === 'review';
         const model = researched ? 'gpt-5.4-mini' : 'gpt-5.6-luna';
-        let researchHosts;
+        let researchHosts, responseFormat;
         if (researched) {
           let packet = input.prompt;
           for (let depth=0; depth<3 && typeof packet==='string'; depth++) {
             try { packet=JSON.parse(packet); } catch { break; }
+            if (packet?.output_contract?.response_format?.name === 'impact_review_factors_v1') {
+              const proposed=packet.output_contract.response_format;
+              if (proposed.type !== 'json_schema' || proposed.strict !== true || proposed.schema?.type !== 'object'
+                || JSON.stringify(proposed).length>40000) throw Error('API_EDITORIAL_RESPONSE_CONTRACT_INVALID');
+              const inspect=value=>{
+                if (!value || typeof value!=='object') return;
+                if (value.$ref && !/^#\/\$defs\/[a-z_]+$/.test(value.$ref)) throw Error('API_EDITORIAL_RESPONSE_CONTRACT_INVALID');
+                if (value.type==='object' && (value.additionalProperties!==false || !Array.isArray(value.required)
+                  || Object.keys(value.properties || {}).some(key=>!value.required.includes(key)))) throw Error('API_EDITORIAL_RESPONSE_CONTRACT_INVALID');
+                Object.values(value).forEach(inspect);
+              };
+              inspect(proposed.schema);responseFormat=proposed;
+            }
             if (packet?.research_access?.article_candidates) {
               const hosts=packet.research_access.article_candidates;
               if (Array.isArray(hosts) && hosts.length>0 && hosts.length<=100
@@ -140,7 +153,7 @@ export class EditorialApiService {
           record.provider_called = true; await this.save(record);
           // Fixed priced model, no hidden retries/fallback. Ordinary drafting
           // reserves USD .25. A review reserves .50, covering even the model's
-          // full 1.05M input context, 48k output and two USD .01 search calls.
+          // bounded 300KB input, 48k output and two USD .01 search calls.
           const response = await this.fetch('https://api.openai.com/v1/responses', {
             method: 'POST', redirect: 'error', signal: AbortSignal.timeout(180000),
             headers: { Authorization: `Bearer ${this.apiKey}`, 'Content-Type': 'application/json', 'X-Client-Request-Id': input.key },
@@ -149,7 +162,7 @@ export class EditorialApiService {
               ...(researched ? { tools: [{ type: 'web_search', search_context_size: 'low',
                 ...(researchHosts ? {filters:{allowed_domains:researchHosts}} : {}) }], tool_choice: 'required', max_tool_calls: 2,
                 include: ['web_search_call.action.sources'] } : {}),
-              text: { format: researched ? { type: 'json_schema', name: 'impact_review', strict: false,
+              text: { format: researched ? responseFormat || { type: 'json_schema', name: 'impact_review', strict: false,
                 schema: { type: 'object', properties: { review: {type: 'object'}, impact_assessment: {type: 'object'},
                   research_sources: {type: 'array', items: {type: 'object'}} },
                   required: ['review','impact_assessment'], additionalProperties: true } }
