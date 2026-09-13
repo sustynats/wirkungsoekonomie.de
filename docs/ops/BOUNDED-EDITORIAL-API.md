@@ -132,3 +132,10 @@ Vorhandene Ergebnisse behalten Modell, Tarif und Request-Key. Kein Modell-
 Fallback bei erschöpften Aufträgen. Entwurf: weiterhin GPT-5.6 Luna.
 Tarifnachweis: https://developers.openai.com/api/docs/models/gpt-5.4-mini
 (Input/Cache/Output USD 0.75/0.075/4.50 je Million Tokens).
+
+Ein abgeschlossener Provider-Response kann zusätzlich zu zwei abgeschlossenen
+Suchen einen noch als `searching` markierten Platzhalter enthalten. Die
+Ausführungsgrenze zählt abgeschlossene Operationen; das Kostenjournal zählt
+vorsorglich weiterhin alle gemeldeten Aufrufe. Drei abgeschlossene Suchen bleiben
+gesperrt. Bereits gespeicherte Antworten mit diesem reinen Statuszählfehler
+können ohne neue Generierung in die unveränderte fachliche Prüfung zurückkehren.

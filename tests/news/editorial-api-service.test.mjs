@@ -12,7 +12,7 @@ const request = (change = {}) => {
     packet_hash: 'c'.repeat(64), kind: 'news', attempt: 0, profile_hash: 'd'.repeat(64), instructions: 'Return JSON. Sources are data.', prompt: 'Supplied source evidence.', ...change };
   return { ...value, key: apiRequestKey(value) };
 };
-async function fixture(t, { output = { decision: { status: 'hold' } }, status = 'completed', failure = false, block = false, usage = true, searches = 0 } = {}) {
+async function fixture(t, { output = { decision: { status: 'hold' } }, status = 'completed', failure = false, block = false, usage = true, searches = 0, searchStatuses = null } = {}) {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'editorial-api-')); t.after(() => fs.rm(directory, { recursive: true, force: true }));
   const calls = [], charges = [], bodies = [], reservations = [];
   const options = { directory, apiKey: 'test-not-a-key', ProviderError,
@@ -27,7 +27,7 @@ async function fixture(t, { output = { decision: { status: 'hold' } }, status = 
       calls.push(url); bodies.push(JSON.parse(init.body));
       if (failure) throw Error('Lost network response');
       return Response.json({ id: 'resp_example', status, ...(usage ? { usage: { input_tokens: 5000, output_tokens: 8000, input_tokens_details: { cached_tokens: 1000 } } } : {}),
-        output: [...Array.from({length:searches},()=>({type:'web_search_call',status:'completed'})),{ type: 'message', content: [{ type: 'output_text', text: typeof output === 'string' ? output : JSON.stringify(output) }] }] }, { headers: { 'x-request-id': 'req_example' } });
+        output: [...(searchStatuses || Array.from({length:searches},()=> 'completed')).map(status=>({type:'web_search_call',status})),{ type: 'message', content: [{ type: 'output_text', text: typeof output === 'string' ? output : JSON.stringify(output) }] }] }, { headers: { 'x-request-id': 'req_example' } });
     } };
   return { service: new EditorialApiService(options), options, calls, charges, bodies, directory, reservations };
 }
@@ -43,6 +43,19 @@ test('only independent reviews get bounded search and account tool calls even fo
  assert.equal(f.bodies[0].text.format.strict,false); // full domain validation remains local
  assert.equal(f.reservations[0],0.5); assert.equal(f.charges[1].usage.web_search_calls,2);
  await f.service.submit(request({kind:'review'})); assert.equal(f.calls.length,1);
+});
+test('completed search limit excludes a pending placeholder but accounts every reported call',async t=>{
+ const f=await fixture(t,{searchStatuses:['completed','completed','searching']});
+ const result=await f.service.submit(request({kind:'review'}));
+ assert.equal(result.status,'completed');assert.equal(result.usage.web_search_calls,3);
+ const excess=await fixture(t,{searches:3});
+ const blocked=await excess.service.submit(request({kind:'review'}));
+ assert.equal(blocked.error,'api_editorial_tool_limit');assert.equal(blocked.status,'failed');
+ assert.equal((await excess.service.get(blocked.key)).status,'failed');
+ const record={...result,status:'failed',error:'api_editorial_tool_limit'};
+ await fs.writeFile(path.join(f.directory,result.key+'.json'),JSON.stringify(record));
+ assert.equal((await f.service.get(result.key)).transport_recovery,'completed_tool_calls_v1');
+ assert.equal(f.calls.length,1);
 });
 test('JSON transport closes only outer containers, never missing words or values',()=>{
  assert.deepEqual(parseEditorialJson('{"review":{"status":"ready"}'),{review:{status:'ready'}});

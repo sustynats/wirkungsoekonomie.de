@@ -61,17 +61,20 @@ export class EditorialApiService {
       const record = JSON.parse(await readFile(this.file(key), 'utf8'));
       if (record.key !== key || record.protocol !== API_EDITORIAL_PROTOCOL) throw Error('API_EDITORIAL_JOURNAL_INVALID');
       if (rejectedBeforeExecution(record)) return { ...record, pre_execution_rejected: true };
-      if (record.status === 'failed' && record.error === 'api_editorial_invalid_json' && record.http_status === 200) {
+      if (record.status === 'failed' && ['api_editorial_invalid_json','api_editorial_tool_limit'].includes(record.error) && record.http_status === 200) {
         try {
           const payload = JSON.parse(record.provider_response);
           if (payload.status !== 'completed') return record;
+          if (record.error === 'api_editorial_tool_limit'
+            && (record.kind !== 'review' || completedSearchCalls(payload) > 2)) return record;
           const text = (payload.output || []).flatMap(item => item.type === 'message' ? item.content || [] : [])
             .filter(item => item.type === 'output_text').map(item => item.text).join('');
           const output = parseEditorialJson(text);
           if (!output || Array.isArray(output) || typeof output !== 'object'
             || output.job_id && output.job_id !== record.job_id || output.input_hash && output.input_hash !== record.input_hash) return record;
           Object.assign(output, {schema_version:'1.0',job_id:record.job_id,input_hash:record.input_hash,processed_at:record.updated_at});
-          return {...record,status:'completed',output,transport_recovery:'close_outer_containers_v1'};
+          return {...record,status:'completed',output,transport_recovery:record.error === 'api_editorial_tool_limit'
+            ? 'completed_tool_calls_v1' : 'close_outer_containers_v1'};
         } catch { /* Preserve the original failure; never infer missing content. */ }
       }
       // A process crash must never cause a second charge for the same attempt.
@@ -170,7 +173,10 @@ export class EditorialApiService {
           record.model = model;
           const fail = code => { throw new this.ProviderError('Redaktionelle API-Ausgabe nicht verwendbar.', 502, code, evidence); };
           if (!response.ok) fail('api_editorial_provider_rejected');
-          if (searchCalls > (researched ? 2 : 0)) fail('api_editorial_tool_limit');
+          // max_tool_calls can leave a nonexecuted "searching" placeholder in a
+          // completed response. Count completed operations for the execution
+          // limit, while conservatively accounting every reported call above.
+          if (completedSearchCalls(payload) > (researched ? 2 : 0)) fail('api_editorial_tool_limit');
           if (payload.status !== 'completed') fail('api_editorial_incomplete');
           const text = (payload.output || []).flatMap(item => item.type === 'message' ? item.content || [] : [])
             .filter(item => item.type === 'output_text').map(item => item.text).join('');
@@ -195,6 +201,11 @@ export class EditorialApiService {
       return record;
     } finally { this.active.delete(input.key); }
   }
+}
+
+function completedSearchCalls(payload) {
+  return (payload.output || []).filter(item => item.type === 'web_search_call'
+    && !['searching','in_progress','failed'].includes(item.status)).length;
 }
 
 async function boundedResponse(response) {
