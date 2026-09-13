@@ -35,6 +35,21 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
     const source = original || { source_id:candidate.source_id,url,feed_url:url,enabled:true,role:'B',
       access:{status:'public',article:'bounded_public_text',cost_usd:0,requires_login:false,requires_payment:false},
       rsl_url:new URL('/.well-known/rsl.xml',url).href };
+    // A reviewer may repeat the already supplied RSS event excerpt under a
+    // research ID. Verify that exact bounded evidence, without downloading a
+    // metadata-only article or pretending this is a new independent source.
+    const bound = existing.find(s => s.url === url
+      && comparable(s.article_excerpt || s.excerpt || s.summary || '').includes(comparable(candidate.quote)));
+    if (bound && original && candidate.source_function === 'event' && sourceAccess(original, 'feed').allowed) {
+      const excerpt = candidate.quote;
+      accepted.push({...bound,source_id:candidate.source_id,source_role:'event',source_function:'event',
+        publisher_id:bound.publisher_id || bound.source_id,
+        article_excerpt:excerpt,original_source_id:bound.original_source_id || bound.source_id,
+        research_verification:{status:'provided_excerpt_verified',at:now,
+          content_hash:hash(excerpt),excerpt_hash:hash(comparable(candidate.quote)),
+          new_independent_source:false,original_source_id:bound.original_source_id || bound.source_id}});
+      continue;
+    }
     const access=sourceAccess(source,'article');
     // A supplementary source can be blocked while the original news source is
     // allowed. Keep the exact research ID in the repair request so the worker
