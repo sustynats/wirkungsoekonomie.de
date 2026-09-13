@@ -7,41 +7,78 @@
     },
     "bridge-queue": {
       "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": false
+      "active": true
     },
     "bridge-queue-size": {
       "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": false
+      "active": true
     },
     "bridge-processor": {
       "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": false
+      "active": true
     },
     "bridge-shards": {
       "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": false
+      "active": true
     },
     "bridge-api-results": {
       "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": false
+      "active": true
     },
     "bridge-publication-flow": {
       "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": false
+      "active": true
     },
     "bridge-throughput": {
       "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": false
+      "active": true
     },
     "bridge-import": {
       "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": false
+      "active": true
     },
     "bridge-errors": {
       "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "cfbb4d7b521a7531ccfca5ae",
+      "content": "⚠ WÖk-Betriebsstörung\nBridge-Verarbeitung: Ein tatsächlich übernommener Bridge-Auftrag wartet seit über zwei Stunden auf Rückgabe.\nSeit: 2026-09-13T13:49:45.461Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "50d058121fbbb0ccb5fea416",
+      "content": "⚠ WÖk-Betriebsstörung\nRedaktionsrückstau: QUEUE_CRITICAL: 476 offene Bridge-Aufträge. Historischen Backfill zurückstellen; aktuelle Meldungen und Updates weiter erfassen.\nSeit: 2026-09-13T13:49:45.461Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "38d395546365b2cc9c40450e",
+      "content": "⚠ WÖk-Betriebsstörung\nRedaktionsworker: Offene Aufträge ohne passenden frischen Lese-/Schreibnachweis. Der API-Nachrichtenworker ersetzt keinen fehlenden Bearbeiter persönlicher Aufträge.\nSeit: 2026-09-13T13:49:45.461Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "7085d027b908344a62af88b1",
+      "content": "⚠ WÖk-Betriebsstörung\nVollständigkeit der Redaktionsworker: Die offenen Auftragsarten sind nicht vollständig durch nachgewiesene Worker abgedeckt. Ein Nachrichtenworker allein belegt keine Verarbeitung persönlicher Beiträge.\nSeit: 2026-09-13T13:49:45.461Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "7c0638519602b77d6d649919",
+      "content": "⚠ WÖk-Betriebsstörung\nAPI-Redaktionsverarbeitung: Der Oracle-API-Worker meldet unvollständige oder ungewisse Ergebnisse beziehungsweise ein Budgetproblem. Gelieferte Entwürfe sind noch keine Veröffentlichungen.\nSeit: 2026-09-13T13:49:45.461Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "6982152fe0791ce0398a1558",
+      "content": "⚠ WÖk-Betriebsstörung\nAktuelle Nachrichten tatsächlich veröffentlicht: Aktuelle Nachrichten warten, aber seit über zwei Stunden ist keine Veröffentlichung nachgewiesen. Erfolgreiche Verbindungsprüfungen, private Entwürfe und abgeschlossene Fachprüfjobs ersetzen keine veröffentlichte Nachricht.\nSeit: 2026-09-13T13:49:45.461Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "de4b90ca39f4cf80c7693dcf",
+      "content": "⚠ WÖk-Betriebsstörung\nRedaktionsdurchsatz: In zwei vollständig beobachteten Stunden kamen mehr Aufträge hinzu als abgeschlossen wurden.\nSeit: 2026-09-13T13:49:45.461Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "99e9c35cf2b6d0ccec1e1a16",
+      "content": "⚠ WÖk-Betriebsstörung\nÜbernahme fertiger Meldungen: Ein bereits erkanntes Ergebnis wartet seit über zehn Minuten auf Übernahme.\nSeit: 2026-09-13T13:49:45.461Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "982fe0a462787fe394cb18e0",
+      "content": "⚠ WÖk-Betriebsstörung\nBridge-Quarantäne: 10 Bridge-Auftrag/Aufträge benötigen Prüfung. Keine erneute automatische KI-Verarbeitung.\nSeit: 2026-09-13T13:49:45.461Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-13"
 }
