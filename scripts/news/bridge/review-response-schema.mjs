@@ -54,15 +54,50 @@ const assessment=object({version:en([IMPACT_VERSION]),semantics_revision:en([POT
  dimensions:object({human:ref('dimension'),planet:ref('dimension'),democracy:ref('dimension')}),
 });
 
+// A second reviewer may approve the bound proposal without rewriting its
+// factors, paths and evidence. Research remains an explicit second-pass result.
+const confirmation=object({
+ research_check:assessment.properties.research_check,
+ path_research:array(object({dimension:en(['human','planet','democracy']),
+  path_set:en(['primary_paths','secondary_paths']),path_index:{type:'integer',minimum:0},
+  search_indices:{...array({type:'integer',minimum:0}),minItems:1},
+  result:{...string,minLength:12},
+ })),
+});
+
 // Arithmetic and dimension aggregates are software-owned. Empty paths/strings
 // can express an incomplete blocked review; only the domain gate can publish.
-export const REVIEW_RESPONSE_FORMAT={type:'json_schema',name:'impact_review_factors_v1',strict:true,
+export const REVIEW_RESPONSE_FORMAT={type:'json_schema',name:'impact_review_confirmation_v2',strict:true,
  schema:{...object({
   review:object({status:en(['ready','needs_review','blocked']),checks:object(Object.fromEntries(SEMANTIC_CHECKS.map(key=>[key,
    object({status:en(['pass','fail']),rationale:string})]))),findings:strings}),
-  impact_assessment:assessment,
+  impact_assessment:{anyOf:[assessment,{type:'null'}]},
+  assessment_confirmation:{anyOf:[confirmation,{type:'null'}],description:'Genau eines setzen: vollständige korrigierte impact_assessment ODER Bestätigung der unveränderten gebundenen proposed_assessment. Bestätigung nur bei ready und allen Checks pass. Tatsächlich durchgeführte Recherche pro unsicherem Pfad mit Suchindex und Ergebnis dokumentieren; nicht durchgeführte Recherche niemals als abgeschlossen ausgeben.'},
   research_sources:{...array(object(researchProperties)),maxItems:2},
  }),$defs:{factor:object({value:score,rationale:{...string,minLength:12},source_ids:{...strings,minItems:1,
   description:'Tatsächlich vorhandene Beleg-IDs für die Ausgangstatsachen bzw. den Mechanismus dieser begründeten ordinalen Schätzung. Die Quelle behauptet dadurch nicht den Schätzwert. Modellannahmen und Wissensgrenzen in der Begründung offenlegen; keine Scheinbelege oder aus fehlender Evidenz abgeleiteten niedrigen Werte.'}}),path:object(pathProperties),
   main_path:object({...pathProperties,type:en(['main_path','counter_path']),same_target:{type:'boolean',enum:[true]},same_baseline:{type:'boolean',enum:[true]}}),dimension}},
 };
+
+export function reviewPathAddresses(assessment) {
+ return ['human','planet','democracy'].flatMap(dimension=>['primary_paths','secondary_paths'].flatMap(path_set=>
+  (assessment?.dimensions?.[dimension]?.[path_set] || []).map((_,path_index)=>({dimension,path_set,path_index,key:`${dimension}_${path_set}_${path_index}`}))));
+}
+
+// Bind completeness BEFORE generation. An unconstrained array could omit a
+// secondary path and discover that omission only after paying for the response.
+export function reviewResponseFormat(proposal) {
+ const format=structuredClone(REVIEW_RESPONSE_FORMAT);
+ const confirmationSchema=structuredClone(confirmation);
+ confirmationSchema.properties.path_research=object(Object.fromEntries(reviewPathAddresses(proposal).map(({key})=>[key,
+  object({search_indices:{...array({type:'integer',minimum:0}),minItems:1},result:{...string,minLength:12}})])));
+ format.name='impact_review_bound_confirmation_v3';
+ delete format.schema.properties.impact_assessment;
+ delete format.schema.properties.assessment_confirmation;
+ format.schema.properties.assessment_result={anyOf:[
+  object({action:en(['confirm']),confirmation:confirmationSchema}),
+  object({action:en(['replace']),impact_assessment:assessment}),
+ ]};
+ format.schema.required=Object.keys(format.schema.properties);
+ return format;
+}
