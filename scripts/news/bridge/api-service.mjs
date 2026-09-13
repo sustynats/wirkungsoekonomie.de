@@ -65,6 +65,9 @@ export function validateApiRequest(input) {
 // that process's shared account AND news ledgers. No key, budget or publisher is
 // created here. The EUR 5/day aspiration is deliberately not an admission gate.
 export class EditorialApiService {
+  // Exposed only by the authenticated worker health endpoint. A new worker
+  // must not assume that a still-running older service enforces this policy.
+  executionPolicy = Object.freeze({ max_paid_attempts_per_job: 1, automatic_rewrites: false });
   constructor({ directory, apiKey, withBudget, ProviderError, fetchImpl = fetch, now = () => new Date().toISOString() }) {
     if (!path.isAbsolute(directory || '') || !apiKey || typeof withBudget !== 'function' || !ProviderError) throw Error('API_EDITORIAL_CONFIGURATION_REQUIRED');
     Object.assign(this, { directory, apiKey, withBudget, ProviderError, fetch: fetchImpl, now });
@@ -115,7 +118,9 @@ export class EditorialApiService {
       kind: input.kind, attempt: input.attempt, status: 'started', created_at: this.now(), provider_called: false };
     this.active.add(input.key);
     try {
-      // Every kind of correction shares one three-call limit for this job.
+      // One paid generation per immutable job. Importer repairs, changed
+      // prompts and changed profiles cannot buy another generation. Previously
+      // paid results remain recoverable through their original keys above.
       // Unknown outcomes block new keys too, so changing a prompt cannot silently
       // repeat a potentially billed request after a crash or lost response.
       let called = 0;
@@ -126,7 +131,7 @@ export class EditorialApiService {
         if (old.status === 'unknown' || old.status === 'started') return { status: 'unknown', error: 'API_EDITORIAL_JOB_INTERRUPTED', provider_called: false };
         called++;
       }
-      if (called >= 3) return { status: 'repair_exhausted', provider_called: false };
+      if (called >= 1 || input.attempt > 0) return { status: 'automatic_rewrite_disabled', provider_called: false };
       try {
         if (previous) {
           record.previous_budget_refusal_at = previous.updated_at;

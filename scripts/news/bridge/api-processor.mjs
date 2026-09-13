@@ -9,6 +9,8 @@ import { apiRequestKey, API_EDITORIAL_PROTOCOL, validateApiRequest } from './api
 import { processorPriority, isHistoricalJob } from './processor.mjs';
 import { latestEvidenceTime } from '../discovery-admission.mjs';
 
+export const API_VALIDATION_REVISION = 'single-paid-attempt-1';
+
 // Keep the deep MPD schema last so it cannot swallow the remaining article
 // fields. Reordering preserves every field, rule and immutable source byte.
 export function orderNativePrompt(prompt) {
@@ -189,6 +191,9 @@ export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, new
 // Unlike ChatGPT's connector attestation this explicitly attests an Oracle API
 // producer. Read/write proof cannot be reused to pretend a chat has Dropbox.
 export async function apiProcessorPreflight(transport, api, now) {
+  const capability = await api.health();
+  if (capability.protocol !== API_EDITORIAL_PROTOCOL || capability.enabled !== true || capability.budget_guards !== true) throw Error('API_EDITORIAL_ENDPOINT_UNAVAILABLE');
+  if (capability.execution_policy?.max_paid_attempts_per_job !== 1 || capability.execution_policy?.automatic_rewrites !== false) throw Error('API_EDITORIAL_EXECUTION_POLICY_UNAVAILABLE');
   const runId = randomUUID();
   const receipt = { actor: 'oracle_api', run_id: runId, at: now, status: 'UNAVAILABLE', reads: {}, write_ok: false };
   for (const folder of ['98_CONFIG', '00_INBOX', '10_CLAIMED', '20_OUTPUT_READY', '30_ACK']) {
@@ -203,8 +208,7 @@ export async function apiProcessorPreflight(transport, api, now) {
   // folder until its bounded listing stops the entire publication pipeline.
   await transport.move(probePath, bridgePath('95_LOGS', `preflight-api-${runId}.probe.json`));
   receipt.write_ok = true;
-  const capability = await api.health();
-  if (capability.protocol !== API_EDITORIAL_PROTOCOL || capability.enabled !== true || capability.budget_guards !== true) throw Error('API_EDITORIAL_ENDPOINT_UNAVAILABLE');
+  receipt.execution_policy = capability.execution_policy;
   receipt.status = 'PASS';
   await transport.writeAtomic(bridgePath('95_LOGS', `processor-api-preflight-${runId}.json`), receipt);
   return receipt;
@@ -244,6 +248,12 @@ export class ApiEditorialProcessor {
       if (sameBinding && recovered.pre_execution_rejected) recovered = null;
       else if (recovered?.status !== 'completed' || !sameBinding) return { status: 'legacy_claim_attention', job_id: id };
     }
+    // Corrections can recover existing paid output, but never create a new
+    // paid request or claim an unprocessed repair as if it were fresh news.
+    if (packet.original_input && !ownership && !await this.api.get(request.key)) {
+      this.store.observe(`api-attention:${id}`,{job_id:id,at:this.now(),validation_revision:API_VALIDATION_REVISION,status:'automatic_rewrite_disabled'});
+      return {status:'automatic_rewrite_disabled',job_id:id,provider_attempts:0};
+    }
     if (!ownership) {
       ownership = { job_id: id, key: request.key, packet_hash: hash(packet), claim_path: claimPath, claimed_at: at, actor: 'oracle_api', state: 'intent' };
       this.store.observe(`api-claim:${name}`, ownership);
@@ -255,14 +265,15 @@ export class ApiEditorialProcessor {
     }
     if (ownership.state !== 'claimed') return { status: 'claim_unknown', job_id: id };
     if (hash(JSON.parse(await this.transport.read(claimPath))) !== request.packet_hash) throw Error('API_EDITORIAL_CLAIM_CHANGED');
-    let attemptRequest = request, result, output, providerAttempts = 0;
-    // A malformed response is repaired at most twice, using the immutable
-    // packet and validator feedback. The API also caps ALL paid attempts per
-    // job, including later importer corrections, at three. GET recovers every
-    // completed attempt; a retry of this loop never buys the same attempt twice.
-    for (;;) {
-      result = recovered || await this.api.get(attemptRequest.key); recovered = null;
+    const attemptRequest = request;
+    let result, output, providerAttempts = 0;
+    {
+      result = recovered || await this.api.get(attemptRequest.key);
       if (!result || result.status === 'budget_blocked' && result.provider_called === false) {
+        if (packet.original_input || attemptRequest.attempt > 0) {
+          this.store.observe(`api-attention:${id}`,{job_id:id,at:this.now(),validation_revision:API_VALIDATION_REVISION,status:'automatic_rewrite_disabled'});
+          return {status:'automatic_rewrite_disabled',job_id:id,provider_attempts:0};
+        }
         result = await this.api.submit(attemptRequest);
         if (result.provider_called !== false) providerAttempts++;
       }
@@ -274,15 +285,6 @@ export class ApiEditorialProcessor {
         try {
           output = validateApiOutput(result.output, packet, this.now());
           await this.preflightOutput(output, current, this.now());
-          // One bounded clarification of a provisional negative review. This
-          // never flips a verdict: the model must re-examine its actual reasons;
-          // a remaining negative verdict is delivered unchanged as a HOLD.
-          if (request.kind === 'review' && attemptRequest.attempt === 0 && output.review.status !== 'ready') {
-            throw Object.assign(Error('API_EDITORIAL_REVIEW_CLARIFICATION_REQUIRED'), { issues: [
-              'Prüfe deine Sperrgründe noch einmal am review_scope. Ein Vorschlag braucht keinen Umsetzungsnachweis; Tragweite ist nicht Evidenz. Behebe behebbaren Assessment-Fehler. Verbleibende echte Fehler und fehlende Belege ausdrücklich beibehalten, niemals automatisch PASS setzen.',
-            ] });
-          }
-          break;
         }
         catch (error) {
           // A missing executable or temporary source/network failure cannot be
@@ -299,13 +301,14 @@ export class ApiEditorialProcessor {
           this.store.observe(`api-validation:${resultKey}`, {job_id:id,key:resultKey,at:this.now(),error:validationError});
         }
       } else if (result.status === 'failed' && ['api_editorial_invalid_json', 'api_editorial_incomplete'].includes(result.error)) validationError = result.error;
-      else return { job_id: id, status: result.status, provider_attempts: providerAttempts };
-      if (attemptRequest.attempt >= 2) return { job_id: id, status: 'repair_exhausted', provider_attempts: providerAttempts };
-      attemptRequest = { ...request, attempt: attemptRequest.attempt + 1,
-        prompt: JSON.stringify({ assignment: request.prompt, repair: {
-          attempt: attemptRequest.attempt + 1, validation_error: validationError,
-          prior_output: result.output || null, instruction: 'Behebe diese konkreten Formatfehler. Quellenbindung und inhaltliche Qualitätsanforderungen bleiben unverändert. Vollständiges JSON liefern.' } }) };
-      attemptRequest.key = apiRequestKey(attemptRequest); validateApiRequest(attemptRequest);
+      else {
+        if(['automatic_rewrite_disabled','failed','unknown','preparation_failed'].includes(result.status))this.store.observe(`api-attention:${id}`,{job_id:id,at:this.now(),validation_revision:API_VALIDATION_REVISION,status:result.status});
+        return { job_id: id, status: result.status, provider_attempts: providerAttempts };
+      }
+      if (validationError) {
+        this.store.observe(`api-attention:${id}`,{job_id:id,key:resultKey,at:this.now(),validation_revision:API_VALIDATION_REVISION,status:'validation_failed',error:validationError});
+        return {job_id:id,status:'validation_failed',provider_attempts:providerAttempts};
+      }
     }
     const latest = this.store.get(id);
     if (latest.ack || latest.accepted) return { status: 'already_processed', job_id: id };

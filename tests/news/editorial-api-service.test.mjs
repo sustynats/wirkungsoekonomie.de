@@ -59,11 +59,11 @@ test('completed search limit excludes a pending placeholder but accounts every r
  assert.equal(f.calls.length,1);
 });
 
-test('complete review schema reaches the provider on initial requests and repairs, without changing paid limits',async t=>{
+test('complete review schema reaches the initial request while paid repairs are refused',async t=>{
  const f=await fixture(t),assignment=JSON.stringify({output_contract:{response_format:REVIEW_RESPONSE_FORMAT},research_access:{article_candidates:['www.bundestag.de']}});
  await f.service.submit(request({kind:'review',prompt:assignment}));
- await f.service.submit(request({kind:'review',prompt:JSON.stringify({assignment,repair:{attempt:1}}),attempt:1}));
- assert.equal(f.calls.length,2);
+ assert.equal((await f.service.submit(request({kind:'review',prompt:JSON.stringify({assignment,repair:{attempt:1}}),attempt:1}))).status,'automatic_rewrite_disabled');
+ assert.equal(f.calls.length,1);
  for(const body of f.bodies) {
   assert.deepEqual(body.text.format,REVIEW_RESPONSE_FORMAT);assert.equal(body.max_tool_calls,2);
   assert.deepEqual(body.tools[0].filters.allowed_domains,['www.bundestag.de']);
@@ -189,11 +189,12 @@ test('a budget-only refusal can resume after funding without duplicating provide
   assert.equal((await available.submit(input)).status, 'completed');
   await available.submit(input); assert.equal(f.calls.length, 1);
 });
-test('all correction keys share a three-generation ceiling, and unknown outcomes block new keys', async t => {
+test('all changed prompt/profile/correction keys share a one-generation ceiling and unknowns stay blocked', async t => {
   const f = await fixture(t);
   for (let attempt = 0; attempt < 3; attempt++) await f.service.submit(request({ attempt }));
-  assert.equal((await f.service.submit(request({ prompt: 'different' }))).status, 'repair_exhausted');
-  assert.equal(f.calls.length, 3);
+  assert.equal((await f.service.submit(request({ prompt: 'different' }))).status, 'automatic_rewrite_disabled');
+  assert.equal((await f.service.submit(request({ profile_hash:'e'.repeat(64) }))).status, 'automatic_rewrite_disabled');
+  assert.equal(f.calls.length, 1);
   const broken = await fixture(t, { failure: true });
   await broken.service.submit(request());
   assert.equal((await broken.service.submit(request({ attempt: 1 }))).status, 'unknown');

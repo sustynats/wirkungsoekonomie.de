@@ -12,14 +12,14 @@ index 01a9bea..1eb29d4 100644
      "rss:backfill": "node dist/src/scripts/backfillWebsiteFeeds.js",
      "rss:backfill:dev": "tsx src/scripts/backfillWebsiteFeeds.ts",
 diff --git a/src/http/apiServer.ts b/src/http/apiServer.ts
-index 9b7ab5d..153efd7 100644
+index 9b7ab5d..f950690 100644
 --- a/src/http/apiServer.ts
 +++ b/src/http/apiServer.ts
 @@ -74,6 +74,7 @@ export interface ApiProviderSet {
    newsAiProvider?: WoekAiAnswerProvider;
    newsAnalysisBudget?: NewsAnalysisBudget;
    newsBatchService?: NewsBatchService;
-+  newsEditorialService?: { submit(input: unknown): Promise<Record<string, unknown>>; get(key: string): Promise<Record<string, unknown> | null> };
++  newsEditorialService?: { executionPolicy?: { max_paid_attempts_per_job: number; automatic_rewrites: boolean }; submit(input: unknown): Promise<Record<string, unknown>>; get(key: string): Promise<Record<string, unknown> | null> };
    newsVisualProvider?: NewsVisualProvider;
    parliamentVisualProvider?: ParliamentVisualProvider;
    productCheckProvider?: ProductCheckProvider;
@@ -34,7 +34,7 @@ index 9b7ab5d..153efd7 100644
 +        }
 +        const base = '/api/news-analysis/editorial-jobs';
 +        if (request.method === 'GET' && requestUrl.pathname === base + '/health') {
-+          sendJson(response, 200, { protocol: 'woek-editorial-api-1', enabled: Boolean(providers.newsEditorialService), budget_guards: Boolean(providers.newsEditorialService && config.apiBudgetEnabled) }); return;
++          sendJson(response, 200, { protocol: 'woek-editorial-api-1', enabled: Boolean(providers.newsEditorialService), budget_guards: Boolean(providers.newsEditorialService && config.apiBudgetEnabled), execution_policy: providers.newsEditorialService?.executionPolicy || null }); return;
 +        }
 +        if (!providers.newsEditorialService) { sendJson(response, 503, { ok: false, code: 'API_EDITORIAL_DISABLED' }); return; }
 +        try {
@@ -91,10 +91,10 @@ index 27ac01c..58f3226 100644
      discordAnalyticsStore
 diff --git a/src/services/editorialApiService.mjs b/src/services/editorialApiService.mjs
 new file mode 100644
-index 0000000..80bc9d8
+index 0000000..217f7bd
 --- /dev/null
 +++ b/src/services/editorialApiService.mjs
-@@ -0,0 +1,251 @@
+@@ -0,0 +1,256 @@
 +import { createHash } from 'node:crypto';
 +import { mkdir, readFile, writeFile, rename, open, readdir } from 'node:fs/promises';
 +import path from 'node:path';
@@ -162,6 +162,9 @@ index 0000000..80bc9d8
 +// that process's shared account AND news ledgers. No key, budget or publisher is
 +// created here. The EUR 5/day aspiration is deliberately not an admission gate.
 +export class EditorialApiService {
++  // Exposed only by the authenticated worker health endpoint. A new worker
++  // must not assume that a still-running older service enforces this policy.
++  executionPolicy = Object.freeze({ max_paid_attempts_per_job: 1, automatic_rewrites: false });
 +  constructor({ directory, apiKey, withBudget, ProviderError, fetchImpl = fetch, now = () => new Date().toISOString() }) {
 +    if (!path.isAbsolute(directory || '') || !apiKey || typeof withBudget !== 'function' || !ProviderError) throw Error('API_EDITORIAL_CONFIGURATION_REQUIRED');
 +    Object.assign(this, { directory, apiKey, withBudget, ProviderError, fetch: fetchImpl, now });
@@ -212,7 +215,9 @@ index 0000000..80bc9d8
 +      kind: input.kind, attempt: input.attempt, status: 'started', created_at: this.now(), provider_called: false };
 +    this.active.add(input.key);
 +    try {
-+      // Every kind of correction shares one three-call limit for this job.
++      // One paid generation per immutable job. Importer repairs, changed
++      // prompts and changed profiles cannot buy another generation. Previously
++      // paid results remain recoverable through their original keys above.
 +      // Unknown outcomes block new keys too, so changing a prompt cannot silently
 +      // repeat a potentially billed request after a crash or lost response.
 +      let called = 0;
@@ -223,7 +228,7 @@ index 0000000..80bc9d8
 +        if (old.status === 'unknown' || old.status === 'started') return { status: 'unknown', error: 'API_EDITORIAL_JOB_INTERRUPTED', provider_called: false };
 +        called++;
 +      }
-+      if (called >= 3) return { status: 'repair_exhausted', provider_called: false };
++      if (called >= 1 || input.attempt > 0) return { status: 'automatic_rewrite_disabled', provider_called: false };
 +      try {
 +        if (previous) {
 +          record.previous_budget_refusal_at = previous.updated_at;
@@ -434,7 +439,7 @@ index a30d8da..9abe8c8 100644
        state.entries.push({ id, feature, month, at: new Date().toISOString(), chargedCents: reserve, basis: 'reserved_unknown' });
        this.charge(current, feature, reserve, 1);
 diff --git a/tests/apiServer.test.ts b/tests/apiServer.test.ts
-index 4f77105..0a23592 100644
+index 4f77105..1447347 100644
 --- a/tests/apiServer.test.ts
 +++ b/tests/apiServer.test.ts
 @@ -190,3 +190,25 @@ describe("api server rate-limit client key", () => {
@@ -446,7 +451,7 @@ index 4f77105..0a23592 100644
 +  let called = 0;
 +  const server = startApiServer({} as FactcheckService, { apiPort: 0, apiHost: '127.0.0.1', apiAllowedOrigins: [], apiMaxBodyBytes: 180000, apiBudgetEnabled: true } as unknown as RuntimeConfig, {
 +    newsPushService: { isAuthorized: (token: string) => token === 'test-only' } as unknown as NewsPushService,
-+    newsEditorialService: { submit: async () => { called++; return { status: 'completed', output: { job_id: 'fixture' }, provider_response: 'private raw trace' }; },
++    newsEditorialService: { executionPolicy: {max_paid_attempts_per_job:1,automatic_rewrites:false}, submit: async () => { called++; return { status: 'completed', output: { job_id: 'fixture' }, provider_response: 'private raw trace' }; },
 +      get: async () => ({ status: 'completed', output: { job_id: 'fixture' }, provider_response: 'private raw trace' }) },
 +  });
 +  await once(server, 'listening');
@@ -457,7 +462,7 @@ index 4f77105..0a23592 100644
 +    expect((await fetch(base, { method: 'POST', body: '{}' })).status).toBe(401);
 +    expect((await fetch(base, { method: 'POST', body: '{}', headers: { ...headers, Origin: 'https://wirkungsoekonomie.de' } })).status).toBe(401);
 +    expect(called).toBe(0);
-+    expect(await (await fetch(base + '/health', { headers })).json()).toMatchObject({ enabled: true, budget_guards: true });
++    expect(await (await fetch(base + '/health', { headers })).json()).toMatchObject({ enabled: true, budget_guards: true, execution_policy: {max_paid_attempts_per_job:1,automatic_rewrites:false} });
 +    expect(await (await fetch(base, { method: 'POST', body: '{}', headers })).json()).toEqual({ ok: true, job: { status: 'completed', output: { job_id: 'fixture' } } });
 +    expect(await (await fetch(base + '/' + 'a'.repeat(64), { headers })).json()).toEqual({ ok: true, job: { status: 'completed', output: { job_id: 'fixture' } } });
 +    expect(called).toBe(1);

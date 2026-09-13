@@ -28,7 +28,7 @@ function fixture() {
     move: async (a, b) => { if (files.has(b)) throw Error('CONFLICT'); files.set(b, files.get(a)); files.delete(a); },
     writeAtomic: async (p, v) => { const value = JSON.stringify(v); if (files.has(p)) assert.equal(files.get(p), value); files.set(p, value); } };
   const results = new Map();
-  const api = { health: async () => ({ protocol: 'woek-editorial-api-1', enabled: true, budget_guards: true }),
+  const api = { health: async () => ({ protocol: 'woek-editorial-api-1', enabled: true, budget_guards: true, execution_policy: {max_paid_attempts_per_job:1,automatic_rewrites:false} }),
     get: async key => results.get(key), submit: async req => { calls.push(req); const result = { status: 'completed', output }; results.set(req.key, result); return result; } };
   const processor = new ApiEditorialProcessor({ store, transport, api, knowledge, now: () => now });
   return { job, files, observations, calls, output, api, transport, processor };
@@ -37,6 +37,14 @@ test('Oracle preflight is a distinct real read/write proof, not a ChatGPT attest
   const f = fixture(), receipt = await apiProcessorPreflight(f.transport, f.api, now);
   assert.equal(receipt.actor, 'oracle_api'); assert.equal(receipt.status, 'PASS'); assert.equal(receipt.write_ok, true);
   assert.equal(f.calls.length, 0);
+});
+test('a worker refuses an old or unverified retry policy before touching Dropbox', async () => {
+  for (const policy of [undefined, {max_paid_attempts_per_job:3,automatic_rewrites:false}, {max_paid_attempts_per_job:1,automatic_rewrites:true}]) {
+    const f=fixture(), before=[...f.files];
+    f.api.health=async()=>({protocol:'woek-editorial-api-1',enabled:true,budget_guards:true,execution_policy:policy});
+    await assert.rejects(apiProcessorPreflight(f.transport,f.api,now),/EXECUTION_POLICY_UNAVAILABLE/);
+    assert.deepEqual([...f.files],before);assert.equal(f.calls.length,0);
+  }
 });
 test('native output is delivered atomically once, never called a publication', async () => {
   const f = fixture(), receipt = await apiProcessorPreflight(f.transport, f.api, now);
@@ -81,12 +89,13 @@ test('personal topics use the final approval contract and remain separate from o
   const request = prepareApiJob({ ...input, job_type: 'editorial_request', request: { kind: 'watched', author_notes: 'Meine wirkliche Vorgabe.' } }, knowledge);
   assert.equal(request.kind, 'personal'); assert.match(request.prompt, /single_final_approval/); assert.match(request.prompt, /Meine wirkliche Vorgabe/);
 });
-test('shape repairs are bounded and their completed results are reused on later runs', async () => {
+test('invalid shape spends once and never triggers a paid correction on subsequent runs', async () => {
   const f = fixture(); delete f.output.decision;
   const receipt = await apiProcessorPreflight(f.transport, f.api, now);
-  assert.equal((await f.processor.process(f.job, receipt)).status, 'repair_exhausted');
-  assert.equal((await f.processor.process(f.job, receipt)).status, 'repair_exhausted');
-  assert.equal(f.calls.length, 3);
+  assert.equal((await f.processor.process(f.job, receipt)).status, 'validation_failed');
+  assert.equal((await f.processor.process(f.job, receipt)).status, 'validation_failed');
+  assert.equal(f.calls.length, 1);
+  assert.equal(f.observations.get('api-attention:'+id).status,'validation_failed');
   assert.equal(f.files.has(bridgePath('20_OUTPUT_READY', id + '.output.json')), false);
 });
 test('current independent reviews cannot be starved by a constant inflow of fresh drafts', () => {
@@ -134,13 +143,14 @@ test('numeric transport preserves scores and never fills nulls or rewrites textu
  assert.deepEqual(a.dimensions.human.primary_paths[0].magnitude_factors.reach.source_ids,['3']);assert.equal(a.dimensions.human.primary_paths[0].magnitude_factors.reach.rationale,'3');
  assert.equal(a.dimensions.planet.magnitude,null);assert.equal(a.dimensions.planet.primary_paths[0].magnitude,'unknown');assert.equal(a.observed_effects[0].magnitude,4);
 });
-test('article preflight errors reach bounded repair before any output is delivered', async () => {
+test('failed article preflight keeps the result private without another paid attempt', async () => {
   const f=fixture(); let checked=0;
   f.processor.preflightOutput=async()=>{ if (++checked === 1) throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:['AI_REQUIRED_STRING:systemic_relevance']}); };
   const result=await f.processor.process(f.job,await apiProcessorPreflight(f.transport,f.api,now));
-  assert.equal(result.status,'output_delivered'); assert.equal(f.calls.length,2);
-  assert.match(f.calls[1].prompt,/AI_REQUIRED_STRING:systemic_relevance/);
-  assert.equal(checked,2);
+  assert.equal(result.status,'validation_failed'); assert.equal(f.calls.length,1);
+  assert.match(f.observations.get('api-attention:'+id).error,/AI_REQUIRED_STRING:systemic_relevance/);
+  assert.equal(checked,1);
+  assert.equal(f.files.has(bridgePath('20_OUTPUT_READY',id+'.output.json')),false);
 });
 test('technical validation failures resume the paid result without buying a rewritten article', async () => {
   for (const error of [Object.assign(Error('spawnSync pdftotext ENOENT'),{code:'ENOENT'}),
@@ -177,7 +187,7 @@ test('transport-compatible completed response retains its paid request key and u
   const proof=JSON.parse(f.files.get(bridgePath('95_LOGS','processor-api-'+oldKey+'.json')));
   assert.equal(proof.key,oldKey); assert.equal(proof.profile_hash,oldProfile); assert.equal(proof.usage.output_tokens,200);
 });
-test('a negative independent review is reconsidered once, never automatically changed to PASS',async()=>{
+test('a negative independent review is delivered once, never challenged through a paid clarification',async()=>{
  const {semanticOutputSchema}=await import('../../scripts/news/bridge/semantic-review.mjs');
  const f=fixture();f.job.input.job_type='impact_semantic_review';
  f.files.set(bridgePath('00_INBOX',id+'.input.json'),JSON.stringify(f.job.input));
@@ -185,9 +195,9 @@ test('a negative independent review is reconsidered once, never automatically ch
  review.review.status='blocked';for(const check of Object.values(review.review.checks))check.status='fail';
  for(const key of Object.keys(f.output))delete f.output[key];Object.assign(f.output,review);
  const result=await f.processor.process(f.job,await apiProcessorPreflight(f.transport,f.api,now));
- assert.equal(result.status,'output_delivered');assert.equal(f.calls.length,2);
+ assert.equal(result.status,'output_delivered');assert.equal(f.calls.length,1);
  assert.equal(JSON.parse(f.files.get(bridgePath('20_OUTPUT_READY',id+'.output.json'))).review.status,'blocked');
- assert.match(f.calls[1].prompt,/API_EDITORIAL_REVIEW_CLARIFICATION_REQUIRED/);
+ assert.equal(f.calls.some(c=>c.attempt>0),false);
 });
 test('current corrections finish before new drafts while independent review remains first',()=>{
   const f=fixture(),repair={...f.job,status:'correction_pending',input:{...input,job_id:id.replace(/a/g,'e')}};
