@@ -120,3 +120,25 @@ test('misplaced native sibling fields are copied losslessly and never used to in
   assert.deepEqual(result.wirkungsticker.analysis.impact_assessment,analysis.impact_assessment);
   assert.equal(analysis.publication_gate,undefined);
 });
+test('article preflight errors reach bounded repair before any output is delivered', async () => {
+  const f=fixture(); let checked=0;
+  f.processor.preflightOutput=async()=>{ if (++checked === 1) throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:['AI_REQUIRED_STRING:systemic_relevance']}); };
+  const result=await f.processor.process(f.job,await apiProcessorPreflight(f.transport,f.api,now));
+  assert.equal(result.status,'output_delivered'); assert.equal(f.calls.length,2);
+  assert.match(f.calls[1].prompt,/AI_REQUIRED_STRING:systemic_relevance/);
+  assert.equal(checked,2);
+});
+test('deep schema ordering retains all fields and supplied evidence unchanged', async () => {
+  const {orderNativePrompt}=await import('../../scripts/news/bridge/api-processor.mjs');
+  const schema={analyses:[{story_id:'string',impact_assessment:{dimensions:{human:{}}},systemic_relevance:'string',publication_gate:{news_value:'new_evidence'}}],$defs:{path:{}}};
+  const evidence='UNTRUSTED_SOURCE_DATA_BEGIN\n{"quoted":"source text"}\nUNTRUSTED_SOURCE_DATA_END';
+  const result=orderNativePrompt(JSON.stringify(schema)+'\n'+evidence);
+  assert.deepEqual(JSON.parse(result.split('\n')[0]),schema);
+  assert.equal(Object.keys(JSON.parse(result.split('\n')[0]).analyses[0]).at(-1),'impact_assessment');
+  assert.ok(result.endsWith(evidence));
+});
+test('current corrections finish before new drafts while independent review remains first',()=>{
+  const f=fixture(),repair={...f.job,status:'correction_pending',input:{...input,job_id:id.replace(/a/g,'e')}};
+  const review={...f.job,input:{...input,job_id:id.replace(/a/g,'f'),job_type:'impact_semantic_review'}};
+  assert.deepEqual(selectApiJobs([f.job,repair,review],now),[review,repair,f.job]);
+});

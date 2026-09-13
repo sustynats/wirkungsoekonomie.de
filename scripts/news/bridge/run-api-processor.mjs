@@ -5,6 +5,8 @@ import { BridgeStore } from './store.mjs';
 import { DropboxTransport, loadDropboxCredentials } from './dropbox.mjs';
 import { editorialKnowledge } from './editorial-knowledge.mjs';
 import { ApiEditorialProcessor, apiProcessorPreflight, selectApiJobs } from './api-processor.mjs';
+import { validateOutputPreflight } from './adapter.mjs';
+import { loadNewsRegistry } from '../registry.mjs';
 
 // Explicit operator activation. A cron without credentials/config is not
 // counted as healthy; dry-run lists selected IDs and never claims or calls AI.
@@ -60,7 +62,16 @@ try {
     const api = { health: () => request('/health'), get: key => request('/' + key), submit: input => request('', input) };
     const transport = new DropboxTransport({ credentials: loadDropboxCredentials(path.join(directory, 'dropbox.json'), root) });
     const receipt = await apiProcessorPreflight(transport, api, now());
-    const processor = new ApiEditorialProcessor({ store, transport, api, knowledge: editorialKnowledge(root), now });
+    const registry = loadNewsRegistry(root);
+    const processor = new ApiEditorialProcessor({ store, transport, api, knowledge: editorialKnowledge(root), now,
+      preflightOutput: (output, job, at) => {
+        if (!['new_story','story_update'].includes(job.input.job_type)) return;
+        // A bounded snapshot is sufficient for early article validation. The
+        // importer still checks the actual complete/public state independently.
+        const target = job.candidate.existing_story?.published ? job.candidate.existing_story : { ...job.candidate, published: false };
+        validateOutputPreflight(output, job, registry, [target], at);
+      },
+    });
     const results = [], started = Date.now(); let attempted = 0;
     for (const selected of jobs) {
       if (attempted >= configured.max_jobs_per_run || Date.now() - started > 600000) break;

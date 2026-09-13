@@ -7,6 +7,17 @@ import { apiRequestKey, API_EDITORIAL_PROTOCOL, validateApiRequest } from './api
 import { processorPriority, isHistoricalJob } from './processor.mjs';
 import { latestEvidenceTime } from '../discovery-admission.mjs';
 
+// Keep the deep MPD schema last so it cannot swallow the remaining article
+// fields. Reordering preserves every field, rule and immutable source byte.
+export function orderNativePrompt(prompt) {
+  return prompt.split('\n').map(line => {
+    if (!line.startsWith('{"analyses":')) return line;
+    const schema = JSON.parse(line);
+    schema.analyses = schema.analyses.map(({ impact_assessment, ...article }) => ({ ...article, impact_assessment }));
+    return JSON.stringify(schema);
+  }).join('\n');
+}
+
 export function apiJobKind(packet) {
   const original = packet.original_input || packet;
   if (['new_story', 'story_update', 'correction'].includes(original.job_type)) return 'news';
@@ -22,9 +33,10 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
     : kind === 'review' ? { output_schema: semanticOutputSchema, requested_output: original.requested_output }
       : EDITORIAL_REQUEST_CONTRACT_V4;
   const prompt = kind === 'news' && original.wirkungsticker?.analysis_prompt ? [
-    original.wirkungsticker.analysis_prompt,
+    orderNativePrompt(original.wirkungsticker.analysis_prompt),
     'TRANSPORT: Nur das oben definierte native Objekt {analyses:[...]} zurückgeben. Keine Bridge-Hülle, keine zusätzlichen facts/story/editorial/wirkungsticker-Felder. Die Software verpackt die Analyse nachträglich. Ablehnungen im oben definierten kurzen rejection-Format.',
     'NESTING: publication_gate, importance, impact_potential, mechanisms, first_order, second_order, third_order, transformation_potential, resilience, side_effects, uncertainties, evidence_level, attribution, watch_next, reference_frameworks, visuals und media_impact sind Geschwister von impact_assessment im analyses-Eintrag. Sie gehören NICHT in impact_assessment.',
+    'PRÜFUNG: analyses[0].systemic_relevance ist ein eigener begründender String, zusätzlich zum strukturierten impact_assessment.systemic_relevance. publication_recommendation:true ist mit news_value:context_only unvereinbar. Ein neues belegtes Ereignis kann new_evidence sein; reine Einordnung ohne neue Tatsachen wird kurz abgelehnt. summary genau zwei Sätze. Ex-ante-Folgen als bedingtes Potenzial formulieren und vom beobachteten Anlass trennen.',
     ...(packet.original_input ? ['VALIDATOR_FEEDBACK: ' + JSON.stringify({ validation_errors: packet.validation_errors, attempt: packet.correction_attempt, prior_output: priorOutput })] : []),
   ].join('\n\n') : JSON.stringify({
     task: 'Erzeuge eine vollständige neue Ausgabe für diesen unveränderten Rechercheauftrag. Keine Tools aufrufen. Keine Veröffentlichung oder Freigabe ausführen.',
@@ -101,7 +113,7 @@ export function wrapNativeNewsOutput(output, original) {
 export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, excludedIds = [] } = {}) {
   // Finish the independent gate for current prepared news before opening more
   // new drafts. Otherwise a constant inflow can starve actual publication.
-  const priority = job => job.input?.job_type === 'impact_semantic_review' ? 595 : processorPriority(job, now);
+  const priority = job => job.input?.job_type === 'impact_semantic_review' ? 595 : job.status === 'correction_pending' ? 585 : processorPriority(job, now);
   return jobs.filter(job => {
     const input = job.input || job;
     if (job.ack || job.accepted || ['quarantined', 'archive_failed'].includes(job.status)
@@ -141,8 +153,8 @@ export async function apiProcessorPreflight(transport, api, now) {
 }
 
 export class ApiEditorialProcessor {
-  constructor({ store, transport, api, knowledge, now = () => new Date().toISOString() }) {
-    Object.assign(this, { store, transport, api, knowledge, now });
+  constructor({ store, transport, api, knowledge, preflightOutput = () => {}, now = () => new Date().toISOString() }) {
+    Object.assign(this, { store, transport, api, knowledge, preflightOutput, now });
   }
   async process(job, receipt) {
     const at = this.now(), age = Date.parse(at) - Date.parse(receipt?.at);
@@ -197,9 +209,13 @@ export class ApiEditorialProcessor {
       let validationError;
       if (result.status === 'completed') {
         if (result.output?.job_id !== id || result.output?.input_hash !== request.input_hash) throw Error('BRIDGE_JOB_BINDING_MISMATCH');
-        try { output = validateApiOutput(result.output, packet, this.now()); break; }
+        try {
+          output = validateApiOutput(result.output, packet, this.now());
+          await this.preflightOutput(output, current, this.now());
+          break;
+        }
         catch (error) {
-          validationError = String(error.message).slice(0, 6000);
+          validationError = [String(error.message), ...(error.issues || [])].join('\n').slice(0, 6000);
           this.store.observe(`api-validation:${attemptRequest.key}`, {job_id:id,key:attemptRequest.key,at:this.now(),error:validationError});
         }
       } else if (result.status === 'failed' && ['api_editorial_invalid_json', 'api_editorial_incomplete'].includes(result.error)) validationError = result.error;
