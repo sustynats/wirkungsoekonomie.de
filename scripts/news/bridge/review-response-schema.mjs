@@ -86,7 +86,7 @@ export function reviewPathAddresses(assessment) {
 
 // Bind completeness BEFORE generation. An unconstrained array could omit a
 // secondary path and discover that omission only after paying for the response.
-export function reviewResponseFormat(proposal) {
+export function reviewResponseFormat(proposal, {mediaRequired = false} = {}) {
  const format=structuredClone(REVIEW_RESPONSE_FORMAT);
  const confirmationSchema=structuredClone(confirmation);
  confirmationSchema.properties.path_research=object(Object.fromEntries(reviewPathAddresses(proposal).map(({key})=>[key,
@@ -98,6 +98,10 @@ export function reviewResponseFormat(proposal) {
   object({action:en(['confirm']),confirmation:confirmationSchema}),
   object({action:en(['replace']),impact_assessment:assessment}),
  ]};
+ if (mediaRequired) {
+  format.name='impact_review_bound_confirmation_v4';
+  format.schema.properties.media_applicability=object({relevant:boolean,reason:{...string,minLength:30}});
+ }
  format.schema.required=Object.keys(format.schema.properties);
  return format;
 }
