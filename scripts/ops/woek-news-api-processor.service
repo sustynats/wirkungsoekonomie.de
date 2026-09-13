@@ -1,0 +1,22 @@
+[Unit]
+Description=Prepare current news through the guarded API and existing publication gates
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/woek-news-api/current
+Environment=WOEK_NEWS_BRIDGE_DIRECTORY=/var/lib/woek-news-bridge
+Environment=WOEK_API_PROCESSOR_ENABLED=true
+ExecStart=/usr/bin/node --max-old-space-size=128 scripts/news/bridge/run-api-processor.mjs
+UMask=0077
+MemoryMax=200M
+CPUQuota=40%
+TimeoutStartSec=1200
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/woek-news-bridge

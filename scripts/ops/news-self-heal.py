@@ -12,7 +12,7 @@ import time
 import urllib.error
 import urllib.request
 
-VERSION = "2026-09-12-2"
+VERSION = "2026-09-13-1"
 SERVICES = {"bridge": ("woek-news-bridge.service", 8786, "/api/news-bridge", 401),
             "editorial": ("woek-news-editorial.service", 8788, "/internal/status", 200)}
 DIRECTORY = Path("/var/lib/woek-news-bridge")
@@ -95,6 +95,10 @@ def journal_metrics(directory, now):
                                      " AND json_extract(body,'$.ack.status')='imported'", (iso(now - 3600),)).fetchone()
         row = db.execute("SELECT body FROM observations WHERE key='processor-health'").fetchone()
         health = json.loads(row[0]) if row else {}
+        api_row = db.execute("SELECT body FROM observations WHERE key='api-processor-health'").fetchone()
+        api_health = json.loads(api_row[0]) if api_row else {}
+        api_config_file = directory / 'api-processor-config.json'
+        api_config = json.loads(api_config_file.read_text()) if api_config_file.exists() else {}
         # Personal requests are a separate delivery lane. A healthy news import
         # says nothing about whether Natalie has received a reviewable preview.
         editorial = db.execute("SELECT count(*), min(json_extract(body,'$.input.created_at')), "
@@ -114,6 +118,12 @@ def journal_metrics(directory, now):
                for worker in health.get("workers", [])]
     return {"open_primary_news": open_count, "last_import_ack": latest,
             "imported_primary_news_last_hour": imported or 0, "workers": workers,
+            "api_processor": {"enabled": api_config.get('enabled') is True,
+                              "news_only": api_config.get('news_only') is True,
+                              "fresh": api_health.get('actor') == 'oracle_api' and
+                              0 <= now - timestamp(api_health.get('at')) < 1800,
+                              "status": api_health.get('status'), "at": api_health.get('at'),
+                              "delivered": api_health.get('delivered', 0)},
             "open_editorial_requests": editorial[0], "oldest_editorial_request_at": editorial[1],
             "editorial_requests_needing_repair": editorial[2] or 0,
             "ready_for_final_approval": ready,
@@ -138,8 +148,14 @@ def publication_alerts(metrics, public, now):
     if not public.get("ok") or now - public.get("checked_at", 0) > 600:
         alerts.append("PUBLIC_FEED_UNVERIFIED")
     if any(metrics.get(key, 0) for key in ("open_primary_news", "open_editorial_requests", "open_semantic_reviews")):
-        if len(metrics.get("workers", [])) != 3 or not all(w["fresh"] for w in metrics.get("workers", [])):
+        api = metrics.get('api_processor', {})
+        api_covers_work = api.get('enabled') and api.get('fresh') and api.get('status') == 'RUN_COMPLETED'
+        if metrics.get('open_editorial_requests') and api.get('news_only'):
+            api_covers_work = False
+        if not api_covers_work and (len(metrics.get("workers", [])) != 3 or not all(w["fresh"] for w in metrics.get("workers", []))):
             alerts.append("EDITORIAL_WORKER_STALE")
+        if api.get('enabled') and api.get('status') == 'ATTENTION':
+            alerts.append('API_PROCESSOR_ATTENTION')
     if metrics.get("open_primary_news", 0):
         latest = timestamp(public.get("latest_news_published_at"))
         if public.get("ok") and (not latest or now - latest > 5400):
@@ -224,6 +240,17 @@ def run(directory=DIRECTORY):
             subprocess.run(["systemctl", "start", "--no-block", "woek-news-bridge-poll.service"], timeout=5, check=True)
             result["actions"].append({"action": "wake_existing_output_detector"})
         result["status"] = "ATTENTION" if result["alerts"] else "OK"
+        # Only an explicitly enabled production timer authorizes this recovery.
+        # Never activate a pilot, repeat an in-flight generation, remove a lock,
+        # approve content, change budgets or silently replace an unknown output.
+        result['last_api_wakeup'] = previous.get('last_api_wakeup', 0)
+        api = result['metrics'].get('api_processor', {})
+        if api.get('enabled') and not api.get('fresh') and now - result['last_api_wakeup'] >= 600:
+            if service_command('is-enabled', 'woek-news-api-processor.timer', 5):
+                result['last_api_wakeup'] = now
+                write_private(state_file, result)
+                subprocess.run(['systemctl', 'start', '--no-block', 'woek-news-api-processor.service'], timeout=5, check=True)
+                result['actions'].append({'action': 'wake_enabled_api_processor'})
         write_private(state_file, result)
         print(json.dumps({"status": result["status"], "alerts": result["alerts"], "actions": result["actions"]}))
 

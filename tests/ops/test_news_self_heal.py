@@ -118,6 +118,18 @@ class RecoveryTests(unittest.TestCase):
             self.assertEqual(result['ready_for_final_approval'], 1)
             self.assertEqual(result['open_semantic_reviews'], 1)
 
+    def test_api_health_does_not_hide_stalled_publication_or_personal_queue(self):
+        metrics = {'open_primary_news': 20, 'api_processor': {'enabled': True, 'fresh': True,
+                   'status': 'RUN_COMPLETED', 'news_only': True}}
+        public = {'ok': True, 'checked_at': 10000, 'latest_news_published_at': supervisor.iso(1000)}
+        alerts = supervisor.publication_alerts(metrics, public, 10000)
+        self.assertNotIn('EDITORIAL_WORKER_STALE', alerts)
+        self.assertIn('PUBLICATION_STALLED', alerts)
+        metrics['open_editorial_requests'] = 1
+        self.assertIn('EDITORIAL_WORKER_STALE', supervisor.publication_alerts(metrics, public, 10000))
+        metrics['api_processor']['status'] = 'ATTENTION'
+        self.assertIn('API_PROCESSOR_ATTENTION', supervisor.publication_alerts(metrics, public, 10000))
+
     def test_failed_restart_timeout_returns_failure(self):
         import subprocess
         with patch.object(supervisor.subprocess, 'run', side_effect=subprocess.TimeoutExpired('systemctl', 20)):
