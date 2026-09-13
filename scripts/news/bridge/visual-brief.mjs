@@ -12,11 +12,17 @@ export class HiggsfieldBridgeVisualProvider {
     this.pipeline = pipeline;
   }
   async receive(job, now, { output, record, staged }) {
-    const brief = assertSchema(visualBriefSchema, output.visual_brief);
+    // Native API news deliberately has no image-generation brief. Its absence
+    // is valid in outputSchema and must use the existing free impact card.
+    // A supplied invalid brief still fails validation; never invent one.
+    const brief = Object.hasOwn(output, 'visual_brief')
+      ? assertSchema(visualBriefSchema, output.visual_brief, '$.visual_brief') : null;
     const normalize = value => String(value).normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
-    const duplicate = job.input.visual_context.recent_visual_concepts.some(v => v.story_id !== record.story_id && v.description_verified && normalize(v.concept) === normalize(brief.concept));
-    const result = { status: duplicate ? 'fallback' : 'brief_validated', brief,
-      brief_hash: hash(brief), ...(duplicate ? { reason: 'BRIDGE_VISUAL_DUPLICATE' } : {}) };
+    const duplicate = brief && job.input.visual_context.recent_visual_concepts.some(v => v.story_id !== record.story_id && v.description_verified && normalize(v.concept) === normalize(brief.concept));
+    const cardsOnly = !brief || brief.required === false || duplicate;
+    const result = { status: cardsOnly ? 'fallback' : 'brief_validated',
+      ...(brief ? { brief, brief_hash: hash(brief) } : {}),
+      ...(cardsOnly ? { reason: !brief ? 'BRIDGE_VISUAL_BRIEF_MISSING' : duplicate ? 'BRIDGE_VISUAL_DUPLICATE' : 'BRIDGE_VISUAL_NOT_REQUIRED' } : {}) };
     if (!staged) return result;
     // The real pipeline writes its normal assets, but a test can never call the
     // public GitHub release store. Only the rendered wide PNG enters SQLite.
@@ -28,7 +34,7 @@ export class HiggsfieldBridgeVisualProvider {
         files.set(url, file); return [path.basename(file), url];
       })),
     });
-    const prepared = await prepare({ ...record, visual_brief: brief }, { cardsOnly: duplicate });
+    const prepared = await prepare({ ...record, ...(brief ? { visual_brief: brief } : {}) }, { cardsOnly });
     const image = prepared.title_image;
     const file = files.get(image?.wide?.url);
     const bytes = file ? fs.readFileSync(file) : null;
