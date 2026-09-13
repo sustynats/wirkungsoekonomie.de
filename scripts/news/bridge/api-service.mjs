@@ -7,6 +7,22 @@ const sha = value => createHash('sha256').update(JSON.stringify(value)).digest('
 const ID = /^wt_\d{8}T\d{6}Z_[a-f0-9]{24}$/;
 const digest = /^[a-f0-9]{64}$/;
 const kinds = ['news', 'review', 'personal'];
+// Only close unfinished outer containers after a complete value. No missing
+// text, number, property, quote or separator is inferred. Full content gates
+// still reject incomplete records; the provider's raw bytes remain immutable.
+export function parseEditorialJson(text) {
+  try { return JSON.parse(text); } catch {}
+  const trimmed = text.trim(), stack = []; let quoted = false, escaped = false;
+  if (!trimmed.startsWith('{') || !/[}\]]$/.test(trimmed)) throw Error('API_EDITORIAL_JSON_INVALID');
+  for (const char of trimmed) {
+    if (quoted) { if (escaped) escaped = false; else if (char === '\\') escaped = true; else if (char === '"') quoted = false; continue; }
+    if (char === '"') quoted = true;
+    else if (char === '{' || char === '[') stack.push(char === '{' ? '}' : ']');
+    else if (char === '}' || char === ']') { if (stack.pop() !== char) throw Error('API_EDITORIAL_JSON_INVALID'); }
+  }
+  if (quoted || !stack.length || stack.length > 8) throw Error('API_EDITORIAL_JSON_INVALID');
+  return JSON.parse(trimmed + stack.reverse().join(''));
+}
 function rejectedBeforeExecution(record) {
   if (record.http_status !== 400 || !record.provider_response) return false;
   try {
@@ -25,7 +41,7 @@ export function validateApiRequest(input) {
     || !kinds.includes(input.kind) || !Number.isInteger(input.attempt) || input.attempt < 0 || input.attempt > 2
     || typeof input.instructions !== 'string' || !input.instructions.trim()
     || typeof input.prompt !== 'string' || !input.prompt.trim()
-    || Buffer.byteLength(input.instructions + input.prompt) > 150000
+    || Buffer.byteLength(input.instructions + input.prompt) > 300000
     || !digest.test(input.key || '') || input.key !== apiRequestKey(input)) throw Error('API_EDITORIAL_INPUT_INVALID');
   return input;
 }
@@ -45,6 +61,19 @@ export class EditorialApiService {
       const record = JSON.parse(await readFile(this.file(key), 'utf8'));
       if (record.key !== key || record.protocol !== API_EDITORIAL_PROTOCOL) throw Error('API_EDITORIAL_JOURNAL_INVALID');
       if (rejectedBeforeExecution(record)) return { ...record, pre_execution_rejected: true };
+      if (record.status === 'failed' && record.error === 'api_editorial_invalid_json' && record.http_status === 200) {
+        try {
+          const payload = JSON.parse(record.provider_response);
+          if (payload.status !== 'completed') return record;
+          const text = (payload.output || []).flatMap(item => item.type === 'message' ? item.content || [] : [])
+            .filter(item => item.type === 'output_text').map(item => item.text).join('');
+          const output = parseEditorialJson(text);
+          if (!output || Array.isArray(output) || typeof output !== 'object'
+            || output.job_id && output.job_id !== record.job_id || output.input_hash && output.input_hash !== record.input_hash) return record;
+          Object.assign(output, {schema_version:'1.0',job_id:record.job_id,input_hash:record.input_hash,processed_at:record.updated_at});
+          return {...record,status:'completed',output,transport_recovery:'close_outer_containers_v1'};
+        } catch { /* Preserve the original failure; never infer missing content. */ }
+      }
       // A process crash must never cause a second charge for the same attempt.
       return record.status === 'started' && !this.active.has(key) ? { ...record, status: 'unknown', error: 'API_EDITORIAL_INTERRUPTED' } : record;
     } catch (error) { if (error.code === 'ENOENT') return null; throw error; }
@@ -93,13 +122,13 @@ export class EditorialApiService {
           record.provider_called = true; await this.save(record);
           // Fixed priced model, no hidden retries/fallback. Ordinary drafting
           // reserves USD .25. A review reserves .50, covering even the model's
-          // full 400k input context, 24k output and two USD .01 search calls.
+          // full 1.05M input context, 48k output and two USD .01 search calls.
           const response = await this.fetch('https://api.openai.com/v1/responses', {
             method: 'POST', redirect: 'error', signal: AbortSignal.timeout(180000),
             headers: { Authorization: `Bearer ${this.apiKey}`, 'Content-Type': 'application/json', 'X-Client-Request-Id': input.key },
-            body: JSON.stringify({ model: 'gpt-5.4-mini', store: false, reasoning: { effort: 'low' },
-              max_output_tokens: 24000, instructions: input.instructions, input: input.prompt,
-              ...(researched ? { tools: [{ type: 'web_search', search_context_size: 'low' }], max_tool_calls: 2,
+            body: JSON.stringify({ model: 'gpt-5.6-luna', store: false, reasoning: { effort: 'medium' },
+              max_output_tokens: 48000, instructions: input.instructions, input: input.prompt,
+              ...(researched ? { tools: [{ type: 'web_search', search_context_size: 'low' }], tool_choice: 'required', max_tool_calls: 2,
                 include: ['web_search_call.action.sources'] } : {}),
               ...(!researched ? { text: { format: { type: 'json_object' } } } : {}) }),
           });
@@ -116,9 +145,9 @@ export class EditorialApiService {
             cached_input_tokens: u.input_tokens_details?.cached_tokens ?? 0, ...(researched ? { web_search_calls: searchCalls } : {}) };
           const validUsage = usage && Object.values(usage).every(n => Number.isInteger(n) && n >= 0)
             && usage.cached_input_tokens <= usage.input_tokens;
-          const evidence = validUsage ? { model: 'gpt-5.4-mini', usage } : undefined;
+          const evidence = validUsage ? { model: 'gpt-5.6-luna', usage } : undefined;
           record.usage = validUsage ? usage : null;
-          record.model = 'gpt-5.4-mini';
+          record.model = 'gpt-5.6-luna';
           const fail = code => { throw new this.ProviderError('Redaktionelle API-Ausgabe nicht verwendbar.', 502, code, evidence); };
           if (!response.ok) fail('api_editorial_provider_rejected');
           if (searchCalls > (researched ? 2 : 0)) fail('api_editorial_tool_limit');
@@ -126,13 +155,13 @@ export class EditorialApiService {
           const text = (payload.output || []).flatMap(item => item.type === 'message' ? item.content || [] : [])
             .filter(item => item.type === 'output_text').map(item => item.text).join('');
           let output;
-          try { output = JSON.parse(text); } catch { fail('api_editorial_invalid_json'); }
+          try { output = parseEditorialJson(text); } catch { fail('api_editorial_invalid_json'); }
           if (!output || Array.isArray(output) || typeof output !== 'object') fail('api_editorial_invalid_json');
           if (output.job_id && output.job_id !== input.job_id || output.input_hash && output.input_hash !== input.input_hash) fail('api_editorial_binding_mismatch');
           // Software-owned bindings/time; no model-generated hashes or approval.
           Object.assign(output, { schema_version: '1.0', job_id: input.job_id, input_hash: input.input_hash, processed_at: this.now() });
           record.output = output;
-          return { model: 'gpt-5.4-mini', ...(validUsage ? { usage } : {}) };
+          return { model: 'gpt-5.6-luna', ...(validUsage ? { usage } : {}) };
         }, researched ? 0.5 : 0.25);
         record.status = 'completed'; record.model = result.model;
       } catch (error) {
