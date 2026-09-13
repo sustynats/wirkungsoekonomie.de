@@ -3,7 +3,7 @@ import { execFileSync } from 'node:child_process';
 import { createHash } from "node:crypto";
 import { assertAutomatable } from "./manual-policy.mjs";
 import { usageCostStartedAt } from "./operating-cost.mjs";
-import { numberTokens, sourceNumberTokens, persistedNumericEvidence } from "./numeric-evidence.mjs";
+import { numberTokens, sourceNumberTokens, persistedNumericEvidence, withoutVerifiedPublicationDates } from "./numeric-evidence.mjs";
 import { analysisReaderCopy, hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
 import { politicalDevelopmentFor, materialDevelopmentReview } from "./political-development.mjs";
 import { lookup } from "node:dns/promises";
@@ -1221,12 +1221,14 @@ export function statusConsistencyErrors(analysis) {
 export function assertsRealisedExAnteEffect(analysis) {
   const causal=/\b(bewirkt|hat\s+[^.!?]{0,80}\b(?:verbessert|reduziert|erhöht)|führt\s+(?:unmittelbar\s+)?zu)\b/i;
   const assertions = structuredClone(analysis);
-  // A path's explicitly labelled assumptions are conditions of the model,
+  // A path's explicitly labelled assumptions/condition are conditions of the model,
   // not claims that the resulting effect has already occurred. Continue
   // checking every rationale, outcome, summary and unlabeled assertion.
   for (const dimension of Object.values(assertions.impact_assessment?.dimensions || {})) {
     for (const field of ['primary_paths','secondary_paths','opposing_paths']) {
-      for (const pathway of Array.isArray(dimension[field]) ? dimension[field] : []) delete pathway.assumptions;
+      for (const pathway of Array.isArray(dimension[field]) ? dimension[field] : []) {
+        delete pathway.assumptions;delete pathway.condition;
+      }
     }
   }
   return collectStrings(assertions).some(value=>value.split(/[.!?](?:\s|$)/).some(sentence=>
@@ -1329,7 +1331,7 @@ export function validateAnalysis(analysis, story, options = {}) {
   const textWithoutFrameworks = collectStrings(analysisReaderCopy({ ...analysis, source_summary: "", reference_frameworks: [], event_claims: [], followups: [], visuals: null, media_impact: mediaForNumbers })).join(" ");
   for (const token of numberTokens(withoutPublisherNames(textWithoutFrameworks))) if (!allowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_UNSUPPORTED_NUMBER:${token}`);
   if (options.validateSourceSummaryNumbers !== false) {
-    for (const token of numberTokens(withoutPublisherNames(analysis?.source_summary || ""))) if (!rawAllowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:${token}`);
+    for (const token of numberTokens(withoutPublisherNames(withoutVerifiedPublicationDates(analysis?.source_summary,story.sources)))) if (!rawAllowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:${token}`);
   }
   for (const token of numberTokens((analysis?.reference_frameworks || []).join(" "))) {
     if (!allowedNumbers.has(token) && token !== "2030" && !(Number(token) >= 1 && Number(token) <= 17)) errors.push(`AI_UNSUPPORTED_FRAMEWORK_NUMBER:${token}`);
