@@ -5,6 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { EditorialApiService, apiRequestKey, API_EDITORIAL_PROTOCOL, publicApiJob, parseEditorialJson } from '../../scripts/news/bridge/api-service.mjs';
 import { editorialKnowledge } from '../../scripts/news/bridge/editorial-knowledge.mjs';
+import { REVIEW_RESPONSE_FORMAT } from '../../scripts/news/bridge/review-response-schema.mjs';
 
 class ProviderError extends Error { constructor(message, statusCode, technicalMessage, usageEvidence) { super(message); Object.assign(this, { statusCode, technicalMessage, usageEvidence }); } }
 const request = (change = {}) => {
@@ -56,6 +57,17 @@ test('completed search limit excludes a pending placeholder but accounts every r
  await fs.writeFile(path.join(f.directory,result.key+'.json'),JSON.stringify(record));
  assert.equal((await f.service.get(result.key)).transport_recovery,'completed_tool_calls_v1');
  assert.equal(f.calls.length,1);
+});
+
+test('complete review schema reaches the provider on initial requests and repairs, without changing paid limits',async t=>{
+ const f=await fixture(t),assignment=JSON.stringify({output_contract:{response_format:REVIEW_RESPONSE_FORMAT},research_access:{article_candidates:['www.bundestag.de']}});
+ await f.service.submit(request({kind:'review',prompt:assignment}));
+ await f.service.submit(request({kind:'review',prompt:JSON.stringify({assignment,repair:{attempt:1}}),attempt:1}));
+ assert.equal(f.calls.length,2);
+ for(const body of f.bodies) {
+  assert.deepEqual(body.text.format,REVIEW_RESPONSE_FORMAT);assert.equal(body.max_tool_calls,2);
+  assert.deepEqual(body.tools[0].filters.allowed_domains,['www.bundestag.de']);
+ }
 });
 test('JSON transport closes only outer containers, never missing words or values',()=>{
  assert.deepEqual(parseEditorialJson('{"review":{"status":"ready"}'),{review:{status:'ready'}});
