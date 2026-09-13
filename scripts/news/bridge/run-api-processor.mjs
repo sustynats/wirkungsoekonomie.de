@@ -66,7 +66,7 @@ try {
       if (attempted >= configured.max_jobs_per_run || Date.now() - started > 600000) break;
       try {
         const result = await processor.process(store.get(selected.input.job_id), receipt); results.push(result);
-        if (!['already_processed','already_delivered','claimed_elsewhere','excluded','repair_exhausted','unknown'].includes(result.status)) attempted++;
+        if (result.provider_attempts > 0 || !['already_processed','already_delivered','claimed_elsewhere','excluded','repair_exhausted','unknown'].includes(result.status)) attempted++;
         if (['budget_blocked', 'busy'].includes(result.status)) break;
       } catch (error) {
         attempted++;

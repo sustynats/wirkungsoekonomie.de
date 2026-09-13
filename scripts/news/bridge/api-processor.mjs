@@ -165,14 +165,17 @@ export class ApiEditorialProcessor {
     }
     if (ownership.state !== 'claimed') return { status: 'claim_unknown', job_id: id };
     if (hash(JSON.parse(await this.transport.read(claimPath))) !== request.packet_hash) throw Error('API_EDITORIAL_CLAIM_CHANGED');
-    let attemptRequest = request, result, output;
+    let attemptRequest = request, result, output, providerAttempts = 0;
     // A malformed response is repaired at most twice, using the immutable
     // packet and validator feedback. The API also caps ALL paid attempts per
     // job, including later importer corrections, at three. GET recovers every
     // completed attempt; a retry of this loop never buys the same attempt twice.
     for (;;) {
       result = await this.api.get(attemptRequest.key);
-      if (!result || result.status === 'budget_blocked' && result.provider_called === false) result = await this.api.submit(attemptRequest);
+      if (!result || result.status === 'budget_blocked' && result.provider_called === false) {
+        result = await this.api.submit(attemptRequest);
+        if (result.provider_called !== false) providerAttempts++;
+      }
       this.store.observe(`api-result:${attemptRequest.key}`, { job_id: id, key: attemptRequest.key, at: this.now(), status: result.status, usage: result.usage || null });
       let validationError;
       if (result.status === 'completed') {
@@ -180,8 +183,8 @@ export class ApiEditorialProcessor {
         try { output = validateApiOutput(result.output, packet, this.now()); break; }
         catch (error) { validationError = String(error.message).slice(0, 6000); }
       } else if (result.status === 'failed' && ['api_editorial_invalid_json', 'api_editorial_incomplete'].includes(result.error)) validationError = result.error;
-      else return { job_id: id, status: result.status };
-      if (attemptRequest.attempt >= 2) return { job_id: id, status: 'repair_exhausted' };
+      else return { job_id: id, status: result.status, provider_attempts: providerAttempts };
+      if (attemptRequest.attempt >= 2) return { job_id: id, status: 'repair_exhausted', provider_attempts: providerAttempts };
       attemptRequest = { ...request, attempt: attemptRequest.attempt + 1,
         prompt: JSON.stringify({ assignment: JSON.parse(request.prompt), repair: {
           attempt: attemptRequest.attempt + 1, validation_error: validationError,
@@ -197,6 +200,6 @@ export class ApiEditorialProcessor {
       actor: 'oracle_api', job_id: id, key: attemptRequest.key, output_hash: hash(output), delivered_at: this.now(),
       profile_hash: request.profile_hash, usage: result.usage || null, status: 'OUTPUT_DELIVERED_NOT_PUBLISHED',
     });
-    return { status: 'output_delivered', job_id: id };
+    return { status: 'output_delivered', job_id: id, provider_attempts: providerAttempts };
   }
 }
