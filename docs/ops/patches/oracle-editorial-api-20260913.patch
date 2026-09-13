@@ -6,7 +6,7 @@ index 01a9bea..1eb29d4 100644
 -    "build": "tsc -p tsconfig.build.json && node polls/copy-runtime.mjs",
 +    "build": "tsc -p tsconfig.build.json && node polls/copy-runtime.mjs && cp src/services/editorialApiService.mjs dist/src/services/editorialApiService.mjs",
 diff --git a/src/http/apiServer.ts b/src/http/apiServer.ts
-index 9b7ab5d..c5d9cf1 100644
+index 9b7ab5d..153efd7 100644
 --- a/src/http/apiServer.ts
 +++ b/src/http/apiServer.ts
 @@ -76,0 +77 @@ export interface ApiProviderSet {
@@ -25,7 +25,7 @@ index 9b7ab5d..c5d9cf1 100644
 +        try {
 +          let record: Record<string, unknown> | null;
 +          if (request.method === 'POST' && requestUrl.pathname === base) {
-+            const input = await readJsonBody(request, Math.min(config.apiMaxBodyBytes, 180000));
++            const input = await readJsonBody(request, Math.min(config.apiMaxBodyBytes, 400000));
 +            record = await providers.newsEditorialService.submit(input);
 +          } else if (request.method === 'GET' && /^[a-f0-9]{64}$/.test(requestUrl.pathname.slice(base.length + 1))) {
 +            record = await providers.newsEditorialService.get(requestUrl.pathname.slice(base.length + 1));
@@ -58,7 +58,7 @@ index 27ac01c..58f3226 100644
 +    newsEditorialService,
 diff --git a/src/services/editorialApiService.mjs b/src/services/editorialApiService.mjs
 new file mode 100644
-index 0000000..d39e31d
+index 0000000..dd7f7d6
 --- /dev/null
 +++ b/src/services/editorialApiService.mjs
 @@ -0,0 +1,194 @@
@@ -105,7 +105,7 @@ index 0000000..d39e31d
 +    || !kinds.includes(input.kind) || !Number.isInteger(input.attempt) || input.attempt < 0 || input.attempt > 2
 +    || typeof input.instructions !== 'string' || !input.instructions.trim()
 +    || typeof input.prompt !== 'string' || !input.prompt.trim()
-+    || Buffer.byteLength(input.instructions + input.prompt) > 150000
++    || Buffer.byteLength(input.instructions + input.prompt) > 300000
 +    || !digest.test(input.key || '') || input.key !== apiRequestKey(input)) throw Error('API_EDITORIAL_INPUT_INVALID');
 +  return input;
 +}

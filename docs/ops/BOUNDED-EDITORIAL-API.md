@@ -35,7 +35,7 @@ unverändert. Eine gelieferte Ausgabe ist noch keine Veröffentlichung.
   Der unabhängige Fachpass verwendet einen bis maximal zwei Web-Suchzugriffe für fehlende Belege; maximal zwei Zusatzquellen werden durch die vorhandene Zugangs-/Zitat-
   Prüfung verifiziert. Fehlende Recherche bleibt HOLD; keine Quellenlektüre erfinden.
 - Modell gpt-5.6-luna, reasoning medium, maximal 48.000 Ausgabetokens und
-  150.000 UTF-8-Bytes Eingang; keine automatischen Provider-Retries, Bild- oder
+  300.000 UTF-8-Bytes Eingang; keine automatischen Provider-Retries, Bild- oder
   Schreibtools. Entwurf reserviert USD .25, Fachpass mit maximal zwei Suchzugriffen
   USD .50. Das ist eine vorherige Kostenreservierung innerhalb derselben
   Monatsgrenzen, keine Budgeterhöhung. Auch die Suchgebühr (USD .01 je Aufruf)
@@ -93,3 +93,10 @@ Tarifnachweis, geprüft 13.09.2026: https://developers.openai.com/api/docs/model
 Input/Cache/Output USD 0.20/0.02/1.20 je Million Tokens. Alte Mini-Antworten
 behalten ihren ursprünglichen Tarif. Die Reserven USD .25/.50 bleiben bestehen.
 Der Modellwechsel ist ein gezielter Pilot; kein automatischer Modell-Fallback.
+
+Der begrenzte Korrekturauftrag darf Quellenpaket und vorherige Ausgabe vollständig
+enthalten (maximal 300 KB vor Transport-Escaping). Kurze konkrete Empfänger-,
+Raum- und Zeitangaben werden nicht an einer Zwölf-Zeichen-Grenze verworfen;
+Mechanismen und Begründungen bleiben inhaltlich und formal erforderlich.
+Neue Recherche erhält die Ausschlüsse aus demselben Quellenregister wie die
+nachgelagerte Prüfung. Dies erweitert keine Zugangsrechte.

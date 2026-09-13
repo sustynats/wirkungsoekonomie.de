@@ -107,7 +107,7 @@ test('a journaled interrupted attempt cannot be retried by a new process', async
 });
 test('changed prompt, excessive input and unbounded repairs are rejected before spending', async t => {
   const f = await fixture(t), input = request();
-  for (const bad of [{ ...input, prompt: 'changed' }, request({ attempt: 3 }), request({ prompt: '€'.repeat(51000) }), request({ kind: 'publish' })])
+  for (const bad of [{ ...input, prompt: 'changed' }, request({ attempt: 3 }), request({ prompt: '€'.repeat(101000) }), request({ kind: 'publish' })])
     await assert.rejects(f.service.submit(bad), /INPUT_INVALID/);
   assert.equal(f.calls.length, 0);
 });
@@ -117,6 +117,7 @@ test('concurrent clients cannot generate the same job twice', async t => {
 test('knowledge pack is versioned, source-bound and preserves all MPD/approval rules', () => {
   const knowledge = editorialKnowledge(path.resolve('.'));
   assert.equal(knowledge.manifest.sources.length, 3); assert.equal(knowledge.hash.length, 64);
+  assert.ok(knowledge.research_access.article_exclusions['apnews.com']);
   for (const phrase of ['keinen Zugriff auf Natalies ChatGPT-Erinnerungen', 'abschließende Natalie-Freigabe', 'R/I/D/U/V/S', 'Reverse Merit Order', 'Meine Einordnung', 'Alle drei MPD-Dimensionen']) assert.ok(knowledge.instructions.includes(phrase));
 });
 test('a budget-only refusal can resume after funding without duplicating provider work', async t => {

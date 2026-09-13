@@ -41,7 +41,7 @@ export function validateApiRequest(input) {
     || !kinds.includes(input.kind) || !Number.isInteger(input.attempt) || input.attempt < 0 || input.attempt > 2
     || typeof input.instructions !== 'string' || !input.instructions.trim()
     || typeof input.prompt !== 'string' || !input.prompt.trim()
-    || Buffer.byteLength(input.instructions + input.prompt) > 150000
+    || Buffer.byteLength(input.instructions + input.prompt) > 300000
     || !digest.test(input.key || '') || input.key !== apiRequestKey(input)) throw Error('API_EDITORIAL_INPUT_INVALID');
   return input;
 }

@@ -8,6 +8,13 @@ const sources=[{source_id:'official',url:'https://example.org/original'}];
 const check=a=>impactAssessmentErrors(a,sources);
 const render=a=>renderDimensionMeters({impact_assessment:a,sources},{context:{privateImpactPreview:true}});
 
+test('short recipient and scope names are valid; explanatory reasoning remains required',()=>{
+ const a=profile(),p=a.dimensions.human.primary_paths[0];Object.assign(p,{label:'Versorgung',recipients:['Fahrgäste'],reference_space:'EU',time_horizon:'sofort'});
+ assert.deepEqual(check(a),[]);
+ p.recipients=[' '];assert.ok(check(a).includes('IMPACT_POTENTIAL_SCOPE_REQUIRED:human'));
+ p.recipients=['Fahrgäste'];p.mechanism='unklar';assert.ok(check(a).includes('IMPACT_POTENTIAL_SCOPE_REQUIRED:human'));
+});
+
 test('future proposal separates event, evaluation target, direction, likelihood and three numeric potentials',()=>{
  const a=profile();assert.deepEqual(check(a),[]);const p=deriveImpactPresentation(a);
  assert.equal(p.show_target,true);assert.equal(p.dimensions.human.label,'+ Potenzial');

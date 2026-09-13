@@ -6,6 +6,7 @@ export const POTENTIAL_REVISION = 'all-dimensions-1';
 export const POTENTIAL_KEYS = ['human', 'planet', 'democracy'];
 export const PATH_QUALITIES = ['direct', 'indirect', 'weak', 'systemic', 'high_uncertainty'];
 const text = value => typeof value === 'string' && value.trim().length >= 12;
+const shortText = value => typeof value === 'string' && value.trim().length >= 2;
 const score = value => Number.isInteger(value) && value >= 0 && value <= 5;
 const list = value => Array.isArray(value) ? value : [];
 const evidence = value => ['high', 'medium', 'low', 'not_assessable'].includes(value);
@@ -27,7 +28,7 @@ export function potentialDimensionErrors(assessment, sourceIds) {
     if (d.temporal_status==='ex_ante' && d.likelihood==='already_occurring') suffix('IMPACT_LIKELIHOOD_TIME_CONFLICT');
     if (!list(d.primary_paths).length || !Array.isArray(d.secondary_paths)) suffix('IMPACT_POTENTIAL_PATH_REQUIRED');
     for (const p of [...list(d.primary_paths), ...list(d.secondary_paths)]) {
-      if (!text(p?.label) || !text(p.mechanism) || !list(p.recipients).some(text) || !text(p.reference_space) || !text(p.time_horizon)
+      if (!shortText(p?.label) || !text(p.mechanism) || !list(p.recipients).some(shortText) || !shortText(p.reference_space) || !shortText(p.time_horizon)
         || !text(p.condition) || !text(p.first_order) || !text(p.second_order) || !text(p.third_order)) suffix('IMPACT_POTENTIAL_SCOPE_REQUIRED');
       if (!Array.isArray(p?.path_quality) || !p.path_quality.length || p.path_quality.some(q => !PATH_QUALITIES.includes(q))) suffix('IMPACT_PATH_QUALITY_REQUIRED');
       if (!score(p?.magnitude) || !evidence(p.evidence) || !likelihood(p.likelihood)
@@ -70,8 +71,8 @@ export function potentialDimensionErrors(assessment, sourceIds) {
       || !['measured', 'observed', 'secondary_source'].includes(effect.data_status)
       || !evidence(effect.evidence) || effect.evidence === 'not_assessable'
       || !['established', 'open'].includes(effect.attribution) || !text(effect.reference_frame)
-      || !text(effect.observed_at) || !text(effect.reference_space) || !text(effect.mechanism) || !text(effect.time_horizon)
-      || !list(effect.recipients).some(text) || !['ongoing','ex_post'].includes(effect.temporal_status) || !score(effect.magnitude)) fail('IMPACT_OBSERVED_EFFECT_INVALID');
+      || !shortText(effect.observed_at) || !shortText(effect.reference_space) || !text(effect.mechanism) || !shortText(effect.time_horizon)
+      || !list(effect.recipients).some(shortText) || !['ongoing','ex_post'].includes(effect.temporal_status) || !score(effect.magnitude)) fail('IMPACT_OBSERVED_EFFECT_INVALID');
     for (const issue of pathwayMagnitudeErrors(effect, sourceIds)) fail(`IMPACT_OBSERVED_${issue}:${effect.dimension}`);
   }
   return [...new Set(errors)];
