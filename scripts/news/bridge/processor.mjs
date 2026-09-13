@@ -107,11 +107,14 @@ export function selectProcessorBatch(jobs, shard, now, { maxJobs = 10, queueCrit
   return jobs.filter(j => !closed.has(j.status) && !j.ack && !j.output && !j.claim
     && JOB_ID.test((j.input || j).job_id) && processorShard((j.input || j).job_id) === shard
     && !(queueCritical && isHistoricalJob(j)))
-    .sort((a, b) => processorPriority(b, now) - processorPriority(a, now)
-      || latestEvidenceTime(b.candidate || b.input || b, now) - latestEvidenceTime(a.candidate || a.input || a, now)
-      || String((b.input || b).created_at).localeCompare(String((a.input || a).created_at))
-      || (a.input || a).job_id.localeCompare((b.input || b).job_id))
+    .sort((a, b) => compareProcessorJobs(a, b, now))
     .slice(0, Math.max(1, Math.min(10, maxJobs)));
+}
+export function compareProcessorJobs(a, b, now) {
+  return processorPriority(b, now) - processorPriority(a, now)
+    || latestEvidenceTime(b.candidate || b.input || b, now) - latestEvidenceTime(a.candidate || a.input || a, now)
+    || String((b.input || b).created_at).localeCompare(String((a.input || a).created_at))
+    || (a.input || a).job_id.localeCompare((b.input || b).job_id);
 }
 
 // Slot ownership does not expire while a slow worker may still be running.

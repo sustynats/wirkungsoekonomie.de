@@ -8,7 +8,7 @@ import { bridgeInput, adaptOutput, validateOutputPreflight, sameBridgeEvent } fr
 import { BRIDGE_ROOT, bridgePath, parsePacket, outputSchema, hash } from './contract.mjs';
 import { storyPage } from '../build.mjs';
 import { waitingForReview, observeOutput, outputJobId } from './status.mjs';
-import { protectedCurrentCandidate, updateProcessorHealth } from './processor.mjs';
+import { protectedCurrentCandidate, updateProcessorHealth, compareProcessorJobs } from './processor.mjs';
 
 const newsJob = job => ['new_story','story_update','correction'].includes(job.input.job_type);
 const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
@@ -78,7 +78,7 @@ export class DropboxChatGPTBridgeProvider {
     const entries = await this.transport.list('20_OUTPUT_READY');
     const names = new Set(entries.map(e => e.name));
     const results = [];
-    for (const job of await this.store.all()) {
+    for (const job of (await this.store.all()).sort((a,b) => compareProcessorJobs(a,b,now))) {
       if (!newsJob(job) || terminal.has(job.status)) continue;
       if (!retryDue(job, 'import', now)) continue;
       // Legacy private candidates predate public-page metadata. Derive only the

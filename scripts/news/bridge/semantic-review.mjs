@@ -1,4 +1,4 @@
-import { isHistoricalJob } from './processor.mjs';
+import { isHistoricalJob, compareProcessorJobs } from './processor.mjs';
 import { verifyImpactResearch, researchSourceSchema } from './impact-research.mjs';
 import { hash, bridgePath, parsePacket } from './contract.mjs';
 import { IMPACT_VERSION, IMPACT_CONTRACT_FILE, IMPACT_RULE, IMPACT_SCHEMA, IMPACT_DEFS } from '../impact-assessment.mjs';
@@ -62,7 +62,9 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
         sources: [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])].map(s => ({ source_id: s.source_id, url: s.url, title: s.title, publisher: s.publisher, excerpt: s.article_excerpt || s.summary || '', source_role: s.source_role || s.source_function || null })) };
   // Only editorial content belongs in the identity. Discovery check timestamps
   // and other operational fields must not create a new review every five minutes.
-  const existing = (await bridge.store.all()).find(j => j.input.job_type === SEMANTIC_JOB_TYPE
+  const related = typeof bridge.store.semanticReviews === 'function'
+    ? await bridge.store.semanticReviews(job.input.job_id) : await bridge.store.all();
+  const existing = related.find(j => j.input.job_type === SEMANTIC_JOB_TYPE
     && !terminal.has(j.status) && j.input.review_protocol === "impact-2.1-potential-1"
     && j.input.parent_job_id === job.input.job_id && j.input.parent_output_hash === outputHash
     && hash(j.input.record) === hash(reviewRecord) && hash(j.input.proposed_assessment) === hash(proposed));
@@ -101,7 +103,7 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
     // A semantic-version replacement is an explicit cancellation, not a
     // timeout or a failed editorial verdict. Keep its input/output and ACK
     // history, and point the reader of the old job to the new bound review.
-    for (const old of await bridge.store.all()) {
+    for (const old of related) {
       if (old.input.job_type !== SEMANTIC_JOB_TYPE || old.input.parent_job_id !== job.input.job_id
         || old.input.job_id === id || old.ack || old.accepted || terminal.has(old.status)) continue;
       old.superseded_by = id; old.superseded_at = now;
@@ -118,9 +120,11 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
 export async function importSemanticReviews(bridge, now) {
   const names = new Set((await bridge.transport.list('20_OUTPUT_READY')).map(e => e.name));
   const results = [];
-  for (const job of await bridge.store.all()) {
+  let attempted = 0;
+  for (const job of (await bridge.store.all()).sort((a,b) => compareProcessorJobs(a,b,now))) {
     if (job.input.job_type !== SEMANTIC_JOB_TYPE || job.accepted || terminal.has(job.status) || !names.has(job.input.job_id + '.output.json')) continue;
     if (job.input.impact_version !== IMPACT_VERSION || job.input.semantics_revision !== POTENTIAL_REVISION || job.superseded_by) continue;
+    if (attempted++ >= (bridge.maxJobs || 6)) break;
     try {
       const output = parsePacket(await bridge.transport.read(bridgePath('20_OUTPUT_READY', job.input.job_id + '.output.json')), semanticOutputSchema);
       if (output.job_id !== job.input.job_id || output.input_hash !== job.input.input_hash) throw Error('BRIDGE_JOB_BINDING_MISMATCH');

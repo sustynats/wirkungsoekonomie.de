@@ -115,6 +115,11 @@ export class BridgeStore {
   impactStagingIndex() {
     return this.db.prepare("SELECT id, json_extract(body,'$.staging.impact_record_hash') AS record_hash FROM jobs WHERE json_extract(body,'$.input.job_type')='impact_reassessment' AND json_extract(body,'$.staging.impact_record.impact_assessment.version')='2.1' AND json_extract(body,'$.accepted.decision')='publish' ORDER BY id").all();
   }
+  semanticReviews(parentJobId) {
+    if (!/^wt_\d{8}T\d{6}Z_[a-f0-9]{24}$/.test(parentJobId || '')) throw Error('BRIDGE_PARENT_JOB_INVALID');
+    return this.db.prepare("SELECT json_remove(body,'$.staging') AS body FROM jobs WHERE json_extract(body,'$.input.job_type')='impact_semantic_review' AND json_extract(body,'$.input.parent_job_id')=? AND json_extract(body,'$.archived_at') IS NULL ORDER BY id")
+      .all(parentJobId).map(row => JSON.parse(row.body));
+  }
   observe(key, value) { this.db.prepare('INSERT INTO observations VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET body=excluded.body').run(key, JSON.stringify(value)); }
   observation(key) { const row = this.db.prepare('SELECT body FROM observations WHERE key=?').get(key); return row ? JSON.parse(row.body) : null; }
   close() { this.release(false); this.lock.close(); this.db.close(); }

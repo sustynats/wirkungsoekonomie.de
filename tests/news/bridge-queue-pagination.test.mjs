@@ -7,6 +7,40 @@ import {bridgeSession} from '../../scripts/news/bridge/remote.mjs';
 import {BridgeStore} from '../../scripts/news/bridge/store.mjs';
 const env={WOEK_NEWS_BRIDGE_URL:'https://130.162.217.58.sslip.io/api/news-bridge',WOEK_NEWS_BRIDGE_TOKEN:'fixture',GITHUB_RUN_ID:'12345'};
 
+test('semantic review lookup reads only the requested parent in one remote call', async t=>{
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'woek-review-index-'));
+  const local=new BridgeStore(path.join(dir,'queue.sqlite'));
+  t.after(()=>{local.close();fs.rmSync(dir,{recursive:true,force:true});});
+  const parent='wt_20260913T120000Z_'+'a'.repeat(24);
+  for(let i=0;i<120;i++){
+    const job={input:{job_id:'review-'+i,job_type:'impact_semantic_review',parent_job_id:i===3?parent:'another-parent'},staging:{private_text:'retained'}};
+    local.db.prepare('INSERT INTO jobs VALUES (?,?)').run(job.input.job_id,JSON.stringify(job));
+  }
+  local.all=()=>{throw Error('whole queue must not be loaded');};
+  let calls=0;
+  const remote=bridgeSession(env,{fetchImpl:async(_url,options)=>{
+    calls++;const {op,args}=JSON.parse(options.body);assert.equal(op,'store.semanticReviews');
+    return Response.json({ok:true,result:local.semanticReviews(...args)});
+  }});
+  assert.deepEqual((await remote.store.semanticReviews(parent)).map(j=>j.input.job_id),['review-3']);
+  assert.equal(calls,1);
+  assert.equal(local.get('review-3').staging.private_text,'retained');
+  assert.throws(()=>local.semanticReviews('invalid'),/BRIDGE_PARENT_JOB_INVALID/);
+});
+
+test('only an old unsupported review lookup falls back; authentication and locks never do',async()=>{
+  const jobs=[{input:{job_type:'impact_semantic_review',parent_job_id:'parent'}},{input:{job_type:'impact_semantic_review',parent_job_id:'other'}}];
+  let calls=0;
+  const remote=bridgeSession(env,{fetchImpl:async()=>++calls===1
+    ?Response.json({ok:false,error:'BRIDGE_OPERATION_INVALID'},{status:400})
+    :Response.json({ok:true,result:jobs})});
+  assert.equal((await remote.store.semanticReviews('parent')).length,1);assert.equal(calls,2);
+  for(const error of ['BRIDGE_UNAUTHORIZED','BRIDGE_RUN_LOCKED']){
+    let count=0;const blocked=bridgeSession(env,{fetchImpl:async()=>{count++;return Response.json({ok:false,error},{status:403});}});
+    await assert.rejects(()=>blocked.store.semanticReviews('parent'),new RegExp(error));assert.equal(count,1);
+  }
+});
+
 test('paged remote queue returns every active job once and retains full get data', async t=>{
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'woek-queue-pages-'));
   const local=new BridgeStore(path.join(dir,'queue.sqlite'));
