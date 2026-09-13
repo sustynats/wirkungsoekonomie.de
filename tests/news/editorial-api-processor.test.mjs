@@ -88,3 +88,7 @@ test('shape repairs are bounded and their completed results are reused on later 
   assert.equal(f.calls.length, 3);
   assert.equal(f.files.has(bridgePath('20_OUTPUT_READY', id + '.output.json')), false);
 });
+test('current independent reviews cannot be starved by a constant inflow of fresh drafts', () => {
+  const f = fixture(), review = { input: { ...input, job_id: id.replace(/a/g,'f'), job_type: 'impact_semantic_review' }, candidate: { sources: [{ published_at: '2026-09-13T09:10:00Z' }] } };
+  assert.equal(selectApiJobs([f.job, review], now)[0].input.job_type, 'impact_semantic_review');
+});

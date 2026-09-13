@@ -37,10 +37,10 @@ try {
   if (configured.version !== 1 || !Number.isInteger(configured.max_jobs_per_run) || configured.max_jobs_per_run < 1 || configured.max_jobs_per_run > 10
     || !Number.isFinite(configured.max_news_age_hours) || configured.max_news_age_hours < 1 || configured.max_news_age_hours > 24) throw Error('API_EDITORIAL_CONFIG_INVALID');
   const jobs = selectApiJobs(candidates.filter(j => !configured.news_only || ['new_story','story_update','impact_semantic_review'].includes(j.input.job_type)), now(), {
-    maxJobs: configured.max_jobs_per_run, maxNewsAgeHours: configured.max_news_age_hours, excludedIds: configured.excluded_job_ids || [],
+    maxJobs: 150, maxNewsAgeHours: configured.max_news_age_hours, excludedIds: configured.excluded_job_ids || [],
   });
   if (process.argv.includes('--dry-run')) {
-    console.log(JSON.stringify({ status: 'DRY_RUN', selected: jobs.map(j => ({ job_id: j.input.job_id, kind: j.input.job_type })), api_calls: 0 }));
+    console.log(JSON.stringify({ status: 'DRY_RUN', selected: jobs.slice(0, configured.max_jobs_per_run).map(j => ({ job_id: j.input.job_id, kind: j.input.job_type })), eligible: jobs.length, api_calls: 0 }));
   } else {
     if (process.env.WOEK_API_PROCESSOR_ENABLED !== 'true' || configured.enabled !== true) throw Error('API_EDITORIAL_PROCESSOR_DISABLED');
     const tokenFile = path.join(directory, 'api-worker-token');
@@ -61,16 +61,19 @@ try {
     const transport = new DropboxTransport({ credentials: loadDropboxCredentials(path.join(directory, 'dropbox.json'), root) });
     const receipt = await apiProcessorPreflight(transport, api, now());
     const processor = new ApiEditorialProcessor({ store, transport, api, knowledge: editorialKnowledge(root), now });
-    const results = [];
+    const results = [], started = Date.now(); let attempted = 0;
     for (const selected of jobs) {
+      if (attempted >= configured.max_jobs_per_run || Date.now() - started > 600000) break;
       try {
         const result = await processor.process(store.get(selected.input.job_id), receipt); results.push(result);
+        if (!['already_processed','already_delivered','claimed_elsewhere','excluded','repair_exhausted','unknown'].includes(result.status)) attempted++;
         if (['budget_blocked', 'busy'].includes(result.status)) break;
       } catch (error) {
+        attempted++;
         results.push({ job_id: selected.input.job_id, status: 'attention', code: /^[A-Z_0-9:.-]+$/.test(error.message) ? error.message : 'API_EDITORIAL_FAILED' });
       }
     }
-    const report = { actor: 'oracle_api', at: now(), status: results.some(r => ['attention','unknown','budget_blocked'].includes(r.status)) ? 'ATTENTION' : 'RUN_COMPLETED',
+    const report = { actor: 'oracle_api', at: now(), status: results.some(r => ['attention','unknown','failed','repair_exhausted','claim_unknown','budget_blocked'].includes(r.status)) ? 'ATTENTION' : 'RUN_COMPLETED',
       delivered: results.filter(r => r.status === 'output_delivered').length, results };
     store.observe('api-processor-health', report);
     console.log(JSON.stringify(report));

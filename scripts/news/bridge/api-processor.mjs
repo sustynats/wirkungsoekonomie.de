@@ -51,6 +51,9 @@ export function validateApiOutput(output, packet, now) {
 }
 
 export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, excludedIds = [] } = {}) {
+  // Finish the independent gate for current prepared news before opening more
+  // new drafts. Otherwise a constant inflow can starve actual publication.
+  const priority = job => job.input?.job_type === 'impact_semantic_review' ? 595 : processorPriority(job, now);
   return jobs.filter(job => {
     const input = job.input || job;
     if (job.ack || job.accepted || ['quarantined', 'archive_failed'].includes(job.status)
@@ -60,7 +63,7 @@ export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, exc
     const evidence = latestEvidenceTime(job.candidate || input.record || input, now);
     return Number.isFinite(evidence) && evidence <= Date.parse(now) + 300000
       && evidence >= Date.parse(now) - maxNewsAgeHours * 3600000;
-  }).sort((a, b) => processorPriority(b, now) - processorPriority(a, now)
+  }).sort((a, b) => priority(b) - priority(a)
     || latestEvidenceTime(b.candidate || b.input, now) - latestEvidenceTime(a.candidate || a.input, now)
     || a.input.job_id.localeCompare(b.input.job_id)).slice(0, maxJobs);
 }
