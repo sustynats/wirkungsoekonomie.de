@@ -153,7 +153,9 @@ function sentenceFragment(value, fallback, maxLength = 96) {
 
 function expandedDetailSummary(analysis) {
   const direct = String(analysis.detail_summary || "").trim();
-  if (direct.length >= 500) return direct;
+  // Initial reports allow 300-499 characters. Never replace a supplied,
+  // validated summary with longer template prose during publication.
+  if (direct) return direct;
   const mechanism = sentenceFragment(analysis.mechanisms?.[0], analysis.impact_potential);
   const immediate = sentenceFragment(analysis.first_order?.[0], analysis.impact_potential);
   const downstream = sentenceFragment(analysis.second_order?.[0], analysis.side_effects?.[0]);

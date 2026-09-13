@@ -26,6 +26,17 @@ function originalMediaStory() {
   return item;
 }
 
+test('initial detail prose is rendered unchanged instead of expanded beyond its publication limit', () => {
+  const story=originalMediaStory();
+  const text='Die Quelle beschreibt ein neues Ereignis und ordnet dessen bisherigen Stand ein. Eine weitergehende Entscheidung ist noch nicht belegt. Mögliche Folgen werden deshalb als bedingtes Wirkungspotenzial beschrieben. Die Quellenlage trägt diesen vorläufigen Befund. Weitere Entwicklungen müssen getrennt geprüft und später als solche dokumentiert werden.';
+  assert.ok(text.length>=300 && text.length<500);
+  story.analysis={...story.analysis,publication_depth:'initial',detail_summary:text};
+  const html=storyPage(story);
+  const summary=html.match(/news-story-summary[\s\S]*?<p class="news-analysis-copy">([\s\S]*?)<\/p>/)?.[1];
+  assert.equal(summary,text);
+  assert.equal(story.analysis.detail_summary,text);
+});
+
 test("media-only review preserves event, sources, claims, scores and history", () => {
   const original = originalMediaStory();
   const copy = structuredClone(original);
