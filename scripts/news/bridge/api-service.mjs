@@ -87,7 +87,7 @@ export class EditorialApiService {
           const response = await this.fetch('https://api.openai.com/v1/responses', {
             method: 'POST', redirect: 'error', signal: AbortSignal.timeout(180000),
             headers: { Authorization: `Bearer ${this.apiKey}`, 'Content-Type': 'application/json', 'X-Client-Request-Id': input.key },
-            body: JSON.stringify({ model: 'gpt-5.4-mini', store: false, reasoning: { effort: 'medium' },
+            body: JSON.stringify({ model: 'gpt-5.4-mini', store: false, reasoning: { effort: 'low' },
               max_output_tokens: 24000, instructions: input.instructions, input: input.prompt,
               text: { format: { type: 'json_object' } } }),
           });

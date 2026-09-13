@@ -24,7 +24,7 @@ unverändert. Eine gelieferte Ausgabe ist noch keine Veröffentlichung.
 - Versionierte fachliche Regeln und Quellenmanifest statt angenommener
   ChatGPT-Erinnerungen. Tatsachen nur aus mitgelieferten Quellenauszügen. Fehlende
   Recherche wird als HOLD sichtbar; keine Quellenlektüre erfinden.
-- Modell gpt-5.4-mini, reasoning medium, maximal 24.000 Ausgabetokens,
+- Modell gpt-5.4-mini, reasoning low, maximal 24.000 Ausgabetokens,
   maximal 150.000 UTF-8-Bytes Eingang, keine Tools/automatischen Provider-Retries.
   Beides passt in die bestehende Vorabreservierung. Tatsächliche Usage wird auch
   bei unbrauchbarem Ergebnis verbucht; Rohantwort bleibt privat gesichert.

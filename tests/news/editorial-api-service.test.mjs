@@ -37,7 +37,7 @@ test('complete result survives client retry and process restart with exactly one
   assert.equal((await new EditorialApiService(f.options).submit(input)).status, 'completed');
   assert.equal(f.calls.length, 1); assert.equal(f.charges.length, 2);
   assert.equal(f.bodies[0].tools, undefined); assert.equal(f.bodies[0].store, false);
-  assert.equal(f.bodies[0].reasoning.effort, 'medium');
+  assert.equal(f.bodies[0].reasoning.effort, 'low');
   assert.equal(publicApiJob(first).provider_response, undefined);
   assert.ok((await fs.stat(f.service.file(input.key))).mode & 0o600);
   assert.equal((await fs.stat(f.service.file(input.key))).mode & 0o077, 0);
