@@ -1,0 +1,90 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { ApiEditorialProcessor, prepareApiJob, selectApiJobs, apiProcessorPreflight } from '../../scripts/news/bridge/api-processor.mjs';
+import { bridgePath, outputSchema } from '../../scripts/news/bridge/contract.mjs';
+const now = '2026-09-13T10:00:00Z';
+const id = 'wt_20260913T093000Z_' + 'a'.repeat(24);
+const input = { job_id: id, input_hash: 'b'.repeat(64), created_at: '2026-09-13T09:30:00Z', job_type: 'new_story', sources: [{ published_at: '2026-09-13T09:30:00Z' }] };
+const knowledge = { hash: 'c'.repeat(64), instructions: 'Quellen und WÖk prüfen. Vollständiges JSON.' };
+function shape(schema) {
+  if ('const' in schema) return schema.const;
+  if (schema.enum) return schema.enum[0];
+  const type = [].concat(schema.type)[0];
+  if (type === 'array') return [];
+  if (type === 'boolean') return false;
+  if (type === 'integer' || type === 'number') return schema.minimum || 0;
+  if (type === 'object') return Object.fromEntries((schema.required || []).map(key => [key, shape(schema.properties[key])]));
+  return 'Fachlich begründeter Befund';
+}
+function fixture() {
+  const files = new Map([[bridgePath('00_INBOX', id + '.input.json'), JSON.stringify(input)]]), observations = new Map();
+  const job = { status: 'queued', input: structuredClone(input), candidate: { sources: input.sources } };
+  const output = { ...shape(outputSchema), schema_version: '1.0', job_id: id, input_hash: input.input_hash, processed_at: now,
+    decision: { status: 'hold', reason: 'Konkrete Quelle fehlt zur geprüften Nachricht.', merge_into: null, priority: 50 } };
+  const calls = [];
+  const store = { get: () => job, observation: key => observations.get(key), observe: (key, value) => observations.set(key, value) };
+  const transport = { list: async () => [], metadata: async p => files.has(p) ? { name: p.split('/').at(-1) } : null,
+    read: async p => { if (!files.has(p)) throw Error('NOT_FOUND'); return files.get(p); },
+    move: async (a, b) => { if (files.has(b)) throw Error('CONFLICT'); files.set(b, files.get(a)); files.delete(a); },
+    writeAtomic: async (p, v) => { const value = JSON.stringify(v); if (files.has(p)) assert.equal(files.get(p), value); files.set(p, value); } };
+  const results = new Map();
+  const api = { health: async () => ({ protocol: 'woek-editorial-api-1', enabled: true, budget_guards: true }),
+    get: async key => results.get(key), submit: async req => { calls.push(req); const result = { status: 'completed', output }; results.set(req.key, result); return result; } };
+  const processor = new ApiEditorialProcessor({ store, transport, api, knowledge, now: () => now });
+  return { job, files, observations, calls, output, api, transport, processor };
+}
+test('Oracle preflight is a distinct real read/write proof, not a ChatGPT attestation', async () => {
+  const f = fixture(), receipt = await apiProcessorPreflight(f.transport, f.api, now);
+  assert.equal(receipt.actor, 'oracle_api'); assert.equal(receipt.status, 'PASS'); assert.equal(receipt.write_ok, true);
+  assert.equal(f.calls.length, 0);
+});
+test('native output is delivered atomically once, never called a publication', async () => {
+  const f = fixture(), receipt = await apiProcessorPreflight(f.transport, f.api, now);
+  assert.equal((await f.processor.process(f.job, receipt)).status, 'output_delivered');
+  assert.equal((await f.processor.process(f.job, receipt)).status, 'already_delivered');
+  assert.equal(f.calls.length, 1); assert.equal(f.job.accepted, undefined); assert.equal(f.job.ack, undefined);
+  assert.ok(f.files.has(bridgePath('20_OUTPUT_READY', id + '.output.json')));
+});
+test('an existing foreign claim, ACK or output cannot trigger generation', async () => {
+  for (const [folder, name] of [['10_CLAIMED', id + '.input.json'], ['30_ACK', id + '.ack.json'], ['20_OUTPUT_READY', id + '.output.json']]) {
+    const f = fixture(); f.files.set(bridgePath(folder, name), '{}');
+    await f.processor.process(f.job, await apiProcessorPreflight(f.transport, f.api, now)); assert.equal(f.calls.length, 0);
+  }
+});
+test('atomic claim conflict is not mistaken for ownership even with identical content', async () => {
+  const f = fixture(); f.transport.move = async (a,b) => { f.files.set(b, f.files.get(a)); f.files.delete(a); throw Error('AMBIGUOUS'); };
+  const receipt = await apiProcessorPreflight(f.transport, f.api, now);
+  assert.equal((await f.processor.process(f.job, receipt)).status, 'claim_unknown');
+  assert.equal((await f.processor.process(f.job, receipt)).status, 'claimed_elsewhere'); assert.equal(f.calls.length, 0);
+});
+test('invalid output is retained upstream and never retried or uploaded as an article', async () => {
+  const f = fixture(); f.output.job_id = 'wrong';
+  const receipt = await apiProcessorPreflight(f.transport, f.api, now);
+  await assert.rejects(f.processor.process(f.job, receipt));
+  await assert.rejects(f.processor.process(f.job, receipt));
+  assert.equal(f.calls.length, 1); assert.equal(f.files.has(bridgePath('20_OUTPUT_READY', id + '.output.json')), false);
+});
+test('blocked files and historical news are excluded; fresh news sorted LIFO', async () => {
+  const f = fixture(); f.observations.set('api-excluded:' + id, { reason: 'prior_export_block' });
+  assert.equal((await f.processor.process(f.job, await apiProcessorPreflight(f.transport, f.api, now))).status, 'excluded');
+  assert.equal(f.calls.length, 0);
+  const older = { input: { ...input, job_id: id.replace(/a/g, 'd') }, candidate: { sources: [{ published_at: '2026-09-12T09:30:00Z' }] } };
+  const newest = { input: { ...input, job_id: id.replace(/a/g, 'e') }, candidate: { sources: [{ published_at: '2026-09-13T09:59:00Z' }] } };
+  assert.deepEqual(selectApiJobs([older, f.job, newest], now).map(j => j.input.job_id), [newest.input.job_id, id]);
+});
+test('unsafe legacy automatic analyses and unbounded repairs never reach the API', () => {
+  assert.throws(() => prepareApiJob({ ...input, job_type: 'editorial_analysis' }, knowledge), /UNSUPPORTED/);
+  assert.throws(() => prepareApiJob({ ...input, original_input: input, correction_attempt: 3 }, knowledge), /INPUT_INVALID/);
+});
+test('personal topics use the final approval contract and remain separate from ordinary news', () => {
+  const request = prepareApiJob({ ...input, job_type: 'editorial_request', request: { kind: 'watched', author_notes: 'Meine wirkliche Vorgabe.' } }, knowledge);
+  assert.equal(request.kind, 'personal'); assert.match(request.prompt, /single_final_approval/); assert.match(request.prompt, /Meine wirkliche Vorgabe/);
+});
+test('shape repairs are bounded and their completed results are reused on later runs', async () => {
+  const f = fixture(); delete f.output.decision;
+  const receipt = await apiProcessorPreflight(f.transport, f.api, now);
+  assert.equal((await f.processor.process(f.job, receipt)).status, 'repair_exhausted');
+  assert.equal((await f.processor.process(f.job, receipt)).status, 'repair_exhausted');
+  assert.equal(f.calls.length, 3);
+  assert.equal(f.files.has(bridgePath('20_OUTPUT_READY', id + '.output.json')), false);
+});
