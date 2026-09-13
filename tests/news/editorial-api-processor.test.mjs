@@ -150,6 +150,18 @@ test('transport-compatible completed response retains its paid request key and u
   const proof=JSON.parse(f.files.get(bridgePath('95_LOGS','processor-api-'+oldKey+'.json')));
   assert.equal(proof.key,oldKey); assert.equal(proof.profile_hash,oldProfile); assert.equal(proof.usage.output_tokens,200);
 });
+test('a negative independent review is reconsidered once, never automatically changed to PASS',async()=>{
+ const {semanticOutputSchema}=await import('../../scripts/news/bridge/semantic-review.mjs');
+ const f=fixture();f.job.input.job_type='impact_semantic_review';
+ f.files.set(bridgePath('00_INBOX',id+'.input.json'),JSON.stringify(f.job.input));
+ const review={...shape(semanticOutputSchema),schema_version:'1.0',job_id:id,input_hash:input.input_hash,processed_at:now};
+ review.review.status='blocked';for(const check of Object.values(review.review.checks))check.status='fail';
+ for(const key of Object.keys(f.output))delete f.output[key];Object.assign(f.output,review);
+ const result=await f.processor.process(f.job,await apiProcessorPreflight(f.transport,f.api,now));
+ assert.equal(result.status,'output_delivered');assert.equal(f.calls.length,2);
+ assert.equal(JSON.parse(f.files.get(bridgePath('20_OUTPUT_READY',id+'.output.json'))).review.status,'blocked');
+ assert.match(f.calls[1].prompt,/API_EDITORIAL_REVIEW_CLARIFICATION_REQUIRED/);
+});
 test('current corrections finish before new drafts while independent review remains first',()=>{
   const f=fixture(),repair={...f.job,status:'correction_pending',input:{...input,job_id:id.replace(/a/g,'e')}};
   const review={...f.job,input:{...input,job_id:id.replace(/a/g,'f'),job_type:'impact_semantic_review'}};

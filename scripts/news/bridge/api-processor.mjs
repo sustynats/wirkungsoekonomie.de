@@ -43,7 +43,7 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
     'QUELLENGATE: Zwei unabhängige Quellen sind KEINE allgemeine Veröffentlichungsvoraussetzung. Eine verlässliche Einzelquelle kann einen klar zugeschriebenen neuen Ereigniskern als initial/preliminary und single_source_claim tragen. Bestätigt/confirmed_claim ist etwas anderes. Nicht nur wegen fehlender unabhängiger Bestätigung ablehnen; benenne bei HOLD die konkret unzureichend belegte Kernbehauptung oder den fehlenden materiellen Nachrichtenwert. Bei strittigen schweren Vorwürfen und requires_corroboration bleiben Originalbeleg und unabhängige Prüfung erforderlich. Keine fehlenden Tatsachen ergänzen, nur um eine Textlänge zu erreichen.',
     ...(packet.original_input ? ['VALIDATOR_FEEDBACK: ' + JSON.stringify({ validation_errors: packet.validation_errors, attempt: packet.correction_attempt, prior_output: priorOutput })] : []),
   ].join('\n\n') : JSON.stringify({
-    task: 'Erzeuge eine vollständige neue Ausgabe für diesen unveränderten Rechercheauftrag. Keine Tools aufrufen. Keine Veröffentlichung oder Freigabe ausführen.',
+    task: 'Erzeuge eine vollständige neue Ausgabe für diesen unveränderten Rechercheauftrag. Keine Veröffentlichung oder Freigabe ausführen.' + (kind === 'review' ? ' Du darfst höchstens zwei Web-Suchzugriffe für konkret fehlende Wirkungs-/Kontextbelege verwenden. Primärquellen bevorzugen, keine Paywall/Login-Umgehung. Nur tatsächlich gelesene kurze Belege mit exakter URL und Originalauszug als höchstens zwei research_sources ausweisen. Ohne Bedarf kein Suchaufruf. Die nachgelagerte Software prüft jeden zusätzlichen Beleg.' : ' Keine Tools aufrufen.'),
     ...(kind === 'review' ? { review_scope: 'Prüfe das modellierte Wirkungspotenzial, nicht ob eine vorgeschlagene Maßnahme bereits umgesetzt wurde. Unabhängiger Fachpass bedeutet unabhängiges Prüfurteil; es ist keine pauschale Zwei-Quellen-Pflicht. Eine korrekt zugeschriebene vorläufige Meldung kann auf einer verlässlichen Einzelquelle beruhen. confirmed_claim und schwere strittige Vorwürfe brauchen die jeweils strengeren Belege. Fehlender Beschluss, unbekannte Konditionen oder fehlende gemessene Folgen dürfen eine korrekt als Vorschlag und ex ante bezeichnete Analyse nicht allein blockieren. institutional_status prüft die zutreffende Bezeichnung des realen Status, nicht das Vorliegen einer endgültigen Entscheidung. magnitude prüft Faktoren, Wirkungsraum und Berechnung; geringe Evidenz gehört nach evidence und darf nicht mit Tragweite vermischt werden. Keine Quellen erfinden. Echte Beleglücken, unbedingte Behauptungen oder fehlerhafte Pfade bleiben Sperrgründe; korrigiere den Assessment-Entwurf nur quellengebunden.' } : {}),
     output_contract: contract,
     assignment: original,
@@ -52,7 +52,9 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
   });
   const request = { protocol: API_EDITORIAL_PROTOCOL, job_id: original.job_id, input_hash: original.input_hash,
     packet_hash: hash(packet), kind, attempt: packet.correction_attempt || 0, profile_hash: knowledge.hash,
-    instructions: knowledge.instructions, prompt };
+    instructions: kind === 'review' ? knowledge.instructions.replace(
+      'Du hast in diesem Aufruf keine Browser-, Such-, Bild- oder Dateitools. Verwende als Tatsachenbelege nur tatsächlich mitgelieferte Textauszüge.',
+      'In diesem Fachpass steht ausschließlich das begrenzte Web-Suchtool zur Verfügung. Verwende als Tatsachenbelege mitgelieferte Textauszüge oder tatsächlich durch dieses Tool gelesene Belege. Keine Bilder oder Dateien erzeugen.') : knowledge.instructions, prompt };
   request.key = apiRequestKey(request);
   return validateApiRequest(request);
 }

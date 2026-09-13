@@ -79,16 +79,19 @@ export class EditorialApiService {
       }
       catch (error) { if (error.code === 'EEXIST') return this.get(input.key); throw error; }
       try {
+        const researched = input.kind === 'review';
         const result = await this.withBudget(async () => {
           record.provider_called = true; await this.save(record);
-          // Fixed priced model: the maximum UTF-8 input bytes plus 24k output
-          // tokens fit the existing USD .25 prepaid reservation. No tools,
-          // hidden retries, model fallback or unaccounted image/search calls.
+          // Fixed priced model, no hidden retries/fallback. Ordinary drafting
+          // reserves USD .25. A review reserves .50, covering even the model's
+          // full 400k input context, 24k output and two USD .01 search calls.
           const response = await this.fetch('https://api.openai.com/v1/responses', {
             method: 'POST', redirect: 'error', signal: AbortSignal.timeout(180000),
             headers: { Authorization: `Bearer ${this.apiKey}`, 'Content-Type': 'application/json', 'X-Client-Request-Id': input.key },
             body: JSON.stringify({ model: 'gpt-5.4-mini', store: false, reasoning: { effort: 'low' },
               max_output_tokens: 24000, instructions: input.instructions, input: input.prompt,
+              ...(researched ? { tools: [{ type: 'web_search', search_context_size: 'low' }], max_tool_calls: 2,
+                include: ['web_search_call.action.sources'] } : {}),
               text: { format: { type: 'json_object' } } }),
           });
           const raw = await boundedResponse(response);
@@ -99,8 +102,9 @@ export class EditorialApiService {
           record.provider_response = raw; await this.save(record);
           const payload = JSON.parse(raw);
           record.response_id = payload.id || null;
+          const searchCalls = (payload.output || []).filter(item => item.type === 'web_search_call').length;
           const u = payload.usage, usage = u && { input_tokens: u.input_tokens, output_tokens: u.output_tokens,
-            cached_input_tokens: u.input_tokens_details?.cached_tokens ?? 0 };
+            cached_input_tokens: u.input_tokens_details?.cached_tokens ?? 0, ...(researched ? { web_search_calls: searchCalls } : {}) };
           const validUsage = usage && Object.values(usage).every(n => Number.isInteger(n) && n >= 0)
             && usage.cached_input_tokens <= usage.input_tokens;
           const evidence = validUsage ? { model: 'gpt-5.4-mini', usage } : undefined;
@@ -108,6 +112,7 @@ export class EditorialApiService {
           record.model = 'gpt-5.4-mini';
           const fail = code => { throw new this.ProviderError('Redaktionelle API-Ausgabe nicht verwendbar.', 502, code, evidence); };
           if (!response.ok) fail('api_editorial_provider_rejected');
+          if (searchCalls > (researched ? 2 : 0)) fail('api_editorial_tool_limit');
           if (payload.status !== 'completed') fail('api_editorial_incomplete');
           const text = (payload.output || []).flatMap(item => item.type === 'message' ? item.content || [] : [])
             .filter(item => item.type === 'output_text').map(item => item.text).join('');
@@ -119,7 +124,7 @@ export class EditorialApiService {
           Object.assign(output, { schema_version: '1.0', job_id: input.job_id, input_hash: input.input_hash, processed_at: this.now() });
           record.output = output;
           return { model: 'gpt-5.4-mini', ...(validUsage ? { usage } : {}) };
-        });
+        }, researched ? 0.5 : 0.25);
         record.status = 'completed'; record.model = result.model;
       } catch (error) {
         const code = error.technicalMessage || '';

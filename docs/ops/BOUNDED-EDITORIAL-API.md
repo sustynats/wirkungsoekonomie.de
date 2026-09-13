@@ -31,11 +31,16 @@ unverändert. Eine gelieferte Ausgabe ist noch keine Veröffentlichung.
   Originaler Request-Key, Usage und Rohantwort bleiben erhalten. Keine neue
   fachliche Bewertung durch bloßes Umbenennen oder automatische Score-Ergänzung.
 - Versionierte fachliche Regeln und Quellenmanifest statt angenommener
-  ChatGPT-Erinnerungen. Tatsachen nur aus mitgelieferten Quellenauszügen. Fehlende
-  Recherche wird als HOLD sichtbar; keine Quellenlektüre erfinden.
+  ChatGPT-Erinnerungen. Der Entwurf verwendet mitgelieferte Quellenauszüge.
+  Der unabhängige Fachpass kann maximal zwei Web-Suchzugriffe für fehlende Belege
+  nutzen; maximal zwei Zusatzquellen werden durch die vorhandene Zugangs-/Zitat-
+  Prüfung verifiziert. Fehlende Recherche bleibt HOLD; keine Quellenlektüre erfinden.
 - Modell gpt-5.4-mini, reasoning low, maximal 24.000 Ausgabetokens,
-  maximal 150.000 UTF-8-Bytes Eingang, keine Tools/automatischen Provider-Retries.
-  Beides passt in die bestehende Vorabreservierung. Tatsächliche Usage wird auch
+- 150.000 UTF-8-Bytes Eingang; keine automatischen Provider-Retries, Bild- oder
+  Schreibtools. Entwurf reserviert USD .25, Fachpass mit maximal zwei Suchzugriffen
+  USD .50. Das ist eine vorherige Kostenreservierung innerhalb derselben
+  Monatsgrenzen, keine Budgeterhöhung. Auch die Suchgebühr (USD .01 je Aufruf)
+  wird in beiden Journalen verbucht. Tatsächliche Usage wird auch
   bei unbrauchbarem Ergebnis verbucht; Rohantwort bleibt privat gesichert.
 - Dauerhafte Request-Keys ermöglichen GET-Wiederaufnahme ohne erneute Erstellung.
   Ungewisse Providerantworten sperren auch weitere Keys dieses Jobs. Insgesamt

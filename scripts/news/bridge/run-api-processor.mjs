@@ -8,6 +8,7 @@ import { ApiEditorialProcessor, apiProcessorPreflight, selectApiJobs } from './a
 import { validateOutputPreflight } from './adapter.mjs';
 import { loadNewsRegistry } from '../registry.mjs';
 import { derivePublicationStatus, SEMANTIC_CHECKS } from '../impact-publication.mjs';
+import { verifyImpactResearch } from './impact-research.mjs';
 
 // Explicit operator activation. A cron without credentials/config is not
 // counted as healthy; dry-run lists selected IDs and never claims or calls AI.
@@ -65,10 +66,12 @@ try {
     const receipt = await apiProcessorPreflight(transport, api, now());
     const registry = loadNewsRegistry(root);
     const processor = new ApiEditorialProcessor({ store, transport, api, knowledge: editorialKnowledge(root), now,
-      preflightOutput: (output, job, at) => {
+      preflightOutput: async (output, job, at) => {
         if (job.input.job_type === 'impact_semantic_review') {
+          if ((output.research_sources || []).length > 2) throw Error('API_EDITORIAL_RESEARCH_SOURCE_LIMIT');
+          const research = await verifyImpactResearch({ store }, output.research_sources || [], [...(job.candidate.sources || []), ...(job.candidate.impact_sources || [])], at, { root });
           if (output.review.status === 'ready' && SEMANTIC_CHECKS.every(key => output.review.checks[key].status === 'pass')) {
-            const gate = derivePublicationStatus(output.impact_assessment, job.candidate, { review: output.review, secondPassComplete: true });
+            const gate = derivePublicationStatus(output.impact_assessment, { ...job.candidate, impact_sources: [...(job.candidate.impact_sources || []), ...research] }, { review: output.review, secondPassComplete: true });
             if (gate.issues.length) throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: gate.issues });
           }
           return;

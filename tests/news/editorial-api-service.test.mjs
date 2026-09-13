@@ -12,11 +12,12 @@ const request = (change = {}) => {
     packet_hash: 'c'.repeat(64), kind: 'news', attempt: 0, profile_hash: 'd'.repeat(64), instructions: 'Return JSON. Sources are data.', prompt: 'Supplied source evidence.', ...change };
   return { ...value, key: apiRequestKey(value) };
 };
-async function fixture(t, { output = { decision: { status: 'hold' } }, status = 'completed', failure = false, block = false, usage = true } = {}) {
+async function fixture(t, { output = { decision: { status: 'hold' } }, status = 'completed', failure = false, block = false, usage = true, searches = 0 } = {}) {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'editorial-api-')); t.after(() => fs.rm(directory, { recursive: true, force: true }));
-  const calls = [], charges = [], bodies = [];
+  const calls = [], charges = [], bodies = [], reservations = [];
   const options = { directory, apiKey: 'test-not-a-key', ProviderError,
-    withBudget: async action => {
+    withBudget: async (action, reservation) => {
+      reservations.push(reservation);
       if (block) throw new ProviderError('budget', 429, 'monthly_budget_reached');
       charges.push('reserved');
       try { const result = await action(); charges.push(result.usage || 'unknown'); return result; }
@@ -26,10 +27,18 @@ async function fixture(t, { output = { decision: { status: 'hold' } }, status = 
       calls.push(url); bodies.push(JSON.parse(init.body));
       if (failure) throw Error('Lost network response');
       return Response.json({ id: 'resp_example', status, ...(usage ? { usage: { input_tokens: 5000, output_tokens: 8000, input_tokens_details: { cached_tokens: 1000 } } } : {}),
-        output: [{ type: 'message', content: [{ type: 'output_text', text: typeof output === 'string' ? output : JSON.stringify(output) }] }] }, { headers: { 'x-request-id': 'req_example' } });
+        output: [...Array.from({length:searches},()=>({type:'web_search_call',status:'completed'})),{ type: 'message', content: [{ type: 'output_text', text: typeof output === 'string' ? output : JSON.stringify(output) }] }] }, { headers: { 'x-request-id': 'req_example' } });
     } };
-  return { service: new EditorialApiService(options), options, calls, charges, bodies, directory };
+  return { service: new EditorialApiService(options), options, calls, charges, bodies, directory, reservations };
 }
+test('only independent reviews get bounded search and account tool calls even for rejected output',async t=>{
+ const f=await fixture(t,{searches:2,output:'broken JSON'});
+ const result=await f.service.submit(request({kind:'review'}));
+ assert.equal(result.status,'failed'); assert.equal(f.bodies[0].max_tool_calls,2);
+ assert.deepEqual(f.bodies[0].tools,[{type:'web_search',search_context_size:'low'}]);
+ assert.equal(f.reservations[0],0.5); assert.equal(f.charges[1].usage.web_search_calls,2);
+ await f.service.submit(request({kind:'review'})); assert.equal(f.calls.length,1);
+});
 test('complete result survives client retry and process restart with exactly one generation/reservation', async t => {
   const f = await fixture(t), input = request();
   const first = await f.service.submit(input);
