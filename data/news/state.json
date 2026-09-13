@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-12T21:20:09.575Z",
+  "last_successful_run": "2026-09-13T06:47:14.635Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -65983,6 +65983,9 @@
     }
   },
   "pending_story_ids": [
+    "wt-b2ba3a50a698ce59",
+    "wt-45abce81639fbe07",
+    "wt-aa8f331e64a140e1",
     "wt-ba4e871e2e3b382a",
     "wt-dbc0457015f9dde5",
     "wt-af9f5f28f7f75173",
@@ -66379,8 +66382,10 @@
     "wt-eb6e7bfa7e906259",
     "wt-60f4e4d7d43fad99",
     "wt-3de38f5a311ccd32",
+    "wt-06837a611e9459ce",
     "wt-46e5c503d6322ccb",
     "wt-86ea1ddfd89beabf",
+    "wt-166e870242fc37e6",
     "wt-6347f9739484a7d1",
     "wt-3d901522efd87e2d",
     "wt-6a7145e6dc679f95",
@@ -66432,12 +66437,46 @@
     "wt-9812656e38b0d665",
     "wt-98ff7e403362fdf9",
     "wt-990631d7dc3586cb",
-    "wt-b2ba3a50a698ce59",
-    "wt-aa8f331e64a140e1",
-    "wt-45abce81639fbe07"
+    "wt-cb40b4475e8a4a31",
+    "wt-41bfafe84d0c1ec7",
+    "wt-8cf6ee062788c734",
+    "wt-8c41c56fd417c986",
+    "wt-cdcdf3a05cc51781",
+    "wt-3463cb2f7f332007",
+    "wt-1cdbd962b89866d2",
+    "wt-323c7a76ad23fc93",
+    "wt-38da84a3dd303a8c",
+    "wt-e211da6b2c3eefc1",
+    "wt-0a7402fa78415a5c",
+    "wt-993cd12a2ef89cef",
+    "wt-be978d3685210942",
+    "wt-e7b0c1aec93fc844",
+    "wt-8b9dcaed8f6ae023",
+    "wt-7d43255a2ac730bd",
+    "wt-61edc7b80f20dffe",
+    "wt-4314eda4672b1e4e",
+    "wt-1c4bee2541d491e9",
+    "wt-ca57a08193f68eb4",
+    "wt-ab7345938acb616e",
+    "wt-5fa77600338da325",
+    "wt-3bcb2c87a6e97f38",
+    "wt-5b9497d8a9171340",
+    "wt-aae1c4dac2701b47",
+    "wt-9729dc71b935177c",
+    "wt-2c65c5dbc43e5591",
+    "wt-411638f66cd85148",
+    "wt-5064f7b430e5a70c",
+    "wt-018d03dc0fd669a9",
+    "wt-420a50187b37d11f",
+    "wt-427d84772b1d07b5",
+    "wt-e02d1c2546939103",
+    "wt-131f2f3964f4cb0a",
+    "wt-c802188d3fdff1df",
+    "wt-b3464cd87cf5fd8f",
+    "wt-3f8350d9ce76cdc3"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-12T21:20:09.575Z",
+  "last_attempted_run": "2026-09-13T06:47:14.635Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1592,
@@ -67535,18 +67574,6 @@
       "checked_at": "2026-09-10T07:22:26.766Z"
     },
     {
-      "id": "agenda-97836ba399f42ba72df0",
-      "title": "News: Generaldebatte, Friedrich Merz, AfD, Tech-Konzerne, US-Demokraten, EUDI-Wallet für digitalen Ausweis",
-      "source_id": "spiegel-schlagzeilen",
-      "url": "https://www.spiegel.de/politik/deutschland/news-generaldebatte-friedrich-merz-afd-tech-konzerne-us-demokraten-eudi-wallet-fuer-digitalen-ausweis-a-8273271a-5953-4c4e-aec1-7ad5c30e62f0",
-      "source_published_at": "2026-09-09T03:38:00.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T01:52:13.831Z"
-    },
-    {
       "id": "agenda-611b00528bd7de7fe086",
       "title": "„Wir werden die Zukunft unseres Landes in die Hand nehmen“",
       "source_id": "bundesregierung-kompakt",
@@ -67571,42 +67598,6 @@
       "checked_at": "2026-09-10T07:07:45.286Z"
     },
     {
-      "id": "agenda-8a97c80ff58b793f770f",
-      "title": "„Und dann hat er nur noch gebrüllt“: Rechter Streamer greift Polizeisprecher bei AfD-Demo in Berlin an",
-      "source_id": "tagesspiegel-home",
-      "url": "https://www.tagesspiegel.de/berlin/polizei-justiz/und-dann-hat-er-nur-noch-gebrullt-rechter-streamer-greift-polizeisprecher-bei-afd-demo-in-berlin-an-16036543.html",
-      "source_published_at": "2026-09-09T15:54:04.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T22:52:17.389Z"
-    },
-    {
-      "id": "agenda-e5299179061b65f29e9a",
-      "title": "Generaldebatte im Bundestag: Hyperaggressiv vs. hilflos",
-      "source_id": "taz-aktuell",
-      "url": "https://taz.de/Generaldebatte-im-Bundestag/!6211741",
-      "source_published_at": "2026-09-09T14:20:00.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T06:38:01.275Z"
-    },
-    {
-      "id": "agenda-84df976b721308182394",
-      "title": "\"Sie sind eine destruktive Kraft\"",
-      "source_id": "tagesschau-access",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/generaldebatte-bundestag-weidel-merz-100.html",
-      "source_published_at": "2026-09-09T09:45:02.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T04:23:01.465Z"
-    },
-    {
       "id": "agenda-df1fda614220732014bf",
       "title": "Kommentar zur Generaldebatte: \"Kanzler steht mit Rücken zur Wand\"",
       "source_id": "ndr-info",
@@ -67617,66 +67608,6 @@
       "status": "watch_for_material_development",
       "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
       "checked_at": "2026-09-10T07:07:45.286Z"
-    },
-    {
-      "id": "agenda-65c512a02c28013d920f",
-      "title": "Politologe von Lucke: \"Merz ist bereit, das Blatt zu wenden\"",
-      "source_id": "ndr-info",
-      "url": "https://www.ndr.de/nachrichten/info/politologe-von-lucke-merz-ist-bereit-blatt-zu-wenden,audio-3467614.html",
-      "source_published_at": "2026-09-09T15:59:44.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T04:52:43.677Z"
-    },
-    {
-      "id": "agenda-a84e0fb4bb044e51b67c",
-      "title": "Die AfD hat eine Erzählung - der Kanzler nicht",
-      "source_id": "tagesschau-access",
-      "url": "https://www.tagesschau.de/kommentar/generaldebatte-148.html",
-      "source_published_at": "2026-09-09T16:15:01.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T04:23:01.465Z"
-    },
-    {
-      "id": "agenda-90bc76b7f79111624a7f",
-      "title": "Generaldebatte im Bundestag - Merz verteidigt Reformpläne der Koalition - Weidel nennt Haushaltsentwurf \"Kapitulationserklärung\"",
-      "source_id": "dlf-nachrichten",
-      "url": "https://www.deutschlandfunk.de/merz-verteidigt-reformplaene-der-koalition-weidel-nennt-haushaltsentwurf-kapitulationserklaerung-100.html",
-      "source_published_at": "2026-09-09T21:13:30.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T21:31:22.351Z"
-    },
-    {
-      "id": "agenda-63e928c9dbff1095b582",
-      "title": "Bundestag - Neuer Sportstaatsminister Rauhe will Olympia nach Deutschland holen, AfD kritisiert Benennung",
-      "source_id": "dlf-nachrichten",
-      "url": "https://www.deutschlandfunk.de/neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritisiert-benennung-100.html",
-      "source_published_at": "2026-09-09T21:13:30.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T21:31:22.351Z"
-    },
-    {
-      "id": "agenda-cb49d1ac5d97012dfdcf",
-      "title": "Erfurt - BSW-Fraktion in Thüringen aufgelöst - neue Fraktion \"Thüringen.Gerecht\" gegründet",
-      "source_id": "dlf-nachrichten",
-      "url": "https://www.deutschlandfunk.de/bsw-fraktion-in-thueringen-aufgeloest-neue-fraktion-thueringen-gerecht-gegruendet-100.html",
-      "source_published_at": "2026-09-09T21:13:30.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T21:31:22.351Z"
     },
     {
       "id": "agenda-08b3a575d9b02dadd5f8",
@@ -67763,30 +67694,6 @@
       "checked_at": "2026-09-10T07:07:45.286Z"
     },
     {
-      "id": "agenda-12629745650cc7e87c51",
-      "title": "Generaldebatte im Bundestag: Lernfähiger Nachhilfeschüler",
-      "source_id": "taz-aktuell",
-      "url": "https://taz.de/Generaldebatte-im-Bundestag/!6206693",
-      "source_published_at": "2026-09-09T16:59:00.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T06:38:01.275Z"
-    },
-    {
-      "id": "agenda-afc386cf573ffa2a198d",
-      "title": "Chemnitz: Termin für Oberbürgermeister-Wahl steht fest",
-      "source_id": "mdr-nachrichten",
-      "url": "https://www.mdr.de/nachrichten/sachsen/chemnitz/chemnitz-stollberg/news-termin-waehlen,oberbuergermeister-wahlen-100.html",
-      "source_published_at": "2026-09-09T17:52:24.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T05:52:24.824Z"
-    },
-    {
       "id": "agenda-f07df726062e9894ca83",
       "title": "Apple: Das iPhone Duo ist das bisher teuerste iPhone in der Geschichte des Konzerns",
       "source_id": "manager-magazin-news",
@@ -67811,30 +67718,6 @@
       "checked_at": "2026-09-10T07:22:26.766Z"
     },
     {
-      "id": "agenda-205cddad0df17a860e00",
-      "title": "Erstmals vor Kongresswahlen: Republikaner halten Parteitag ab",
-      "source_id": "stern-schlagzeilen",
-      "url": "https://www.stern.de/news/erstmals-vor-kongresswahlen--republikaner-halten-parteitag-ab-38230090.html",
-      "source_published_at": "2026-09-09T20:01:10.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T22:07:04.931Z"
-    },
-    {
-      "id": "agenda-7165d6995cbb8448817f",
-      "title": "Neues faltbares iPhone - neuer Schwerpunkt",
-      "source_id": "zdfheute-nachrichten",
-      "url": "https://www.zdfheute.de/wirtschaft/unternehmen/apple-iphone-duo-faltbar-100.html",
-      "source_published_at": "2026-09-09T20:02:00.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T02:52:15.582Z"
-    },
-    {
       "id": "agenda-c850745ad9d254264694",
       "title": "Bundestag - Haushaltsdebatte wird fortgesetzt - Linnemann mit erster Plenarrede als Ressortchef",
       "source_id": "dlf-nachrichten",
@@ -67845,90 +67728,6 @@
       "status": "watch_for_material_development",
       "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
       "checked_at": "2026-09-10T07:07:45.286Z"
-    },
-    {
-      "id": "agenda-5de0af3486b5991dfb15",
-      "title": "Orden zieht um: Neustart für Nonnen bei Bingen – Hospiz in Engelthal geplant",
-      "source_id": "stern-schlagzeilen",
-      "url": "https://www.stern.de/gesellschaft/regional/hessen/orden-zieht-um--neustart-fuer-nonnen-bei-bingen---hospiz-in-engelthal-geplant-38230354.html",
-      "source_published_at": "2026-09-10T01:00:07.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T02:07:26.280Z"
-    },
-    {
-      "id": "agenda-af78096de33bf3025d67",
-      "title": "35 Jahre MeLa: MeLa öffnet mit fast 900 Ausstellern",
-      "source_id": "stern-schlagzeilen",
-      "url": "https://www.stern.de/gesellschaft/regional/mecklenburg-vorpommern/35-jahre-mela--mela-oeffnet-mit-fast-900-ausstellern-38230388.html",
-      "source_published_at": "2026-09-10T01:30:07.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T02:07:26.280Z"
-    },
-    {
-      "id": "agenda-cc30344c9d979e9a84d3",
-      "title": "EZB gibt Leitzinsentscheidung bekannt - Weitere Erhöhung erwartet",
-      "source_id": "stern-schlagzeilen",
-      "url": "https://www.stern.de/news/ezb-gibt-leitzinsentscheidung-bekannt---weitere-erhoehung-erwartet-38230498.html",
-      "source_published_at": "2026-09-10T02:11:11.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T02:52:15.582Z"
-    },
-    {
-      "id": "agenda-611351374afed676f083",
-      "title": "Panorama-Rundbau: Neue Touristen-Attraktion am Bodensee öffnet",
-      "source_id": "stern-schlagzeilen",
-      "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/panorama-rundbau--neue-touristen-attraktion-am-bodensee-oeffnet-38230482.html",
-      "source_published_at": "2026-09-10T02:01:01.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T02:36:57.426Z"
-    },
-    {
-      "id": "agenda-f29fff0567a58209c83a",
-      "title": "Verkehr: ADAC: Mit dem Ferienende rollt die Rückreisewelle",
-      "source_id": "stern-schlagzeilen",
-      "url": "https://www.stern.de/gesellschaft/regional/bayern/verkehr--adac--mit-dem-ferienende-rollt-die-rueckreisewelle-38230722.html",
-      "source_published_at": "2026-09-10T03:15:04.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T04:23:01.465Z"
-    },
-    {
-      "id": "agenda-a32ea0922d7f6dee30be",
-      "title": "Wetter: Kältere Nächte in Berlin und Brandenburg erwartet",
-      "source_id": "stern-schlagzeilen",
-      "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/wetter--kaeltere-naechte-in-berlin-und-brandenburg-erwartet-38230782.html",
-      "source_published_at": "2026-09-10T03:46:10.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T04:52:43.677Z"
-    },
-    {
-      "id": "agenda-3992ca10403d8f87f636",
-      "title": "Wetter: Kältere Nächte in Berlin und Brandenburg erwartet",
-      "source_id": "tagesspiegel-home",
-      "url": "https://www.tagesspiegel.de/berlin/dpa-wetter-16037392.html",
-      "source_published_at": "2026-09-10T03:47:32.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T05:22:36.276Z"
     },
     {
       "id": "agenda-630a1597e8819a4ee6b9",
@@ -67955,30 +67754,6 @@
       "checked_at": "2026-09-10T07:07:45.286Z"
     },
     {
-      "id": "agenda-2cc228a976502c3e2352",
-      "title": "MeLa startet in Mühlengeez: Rund 60.000 Besucher erwartet",
-      "source_id": "ndr-info",
-      "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/mela-startet-in-muehlengeez-rund-60000-besucher-erwartet,mela-116.html",
-      "source_published_at": "2026-09-10T04:51:51.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T05:52:24.824Z"
-    },
-    {
-      "id": "agenda-a9c8b34d9cb294bbe6a3",
-      "title": "Apple-Keynote: Apple dreht an der Preisschraube",
-      "source_id": "wiwo-schlagzeilen",
-      "url": "https://www.wiwo.de/unternehmen/it/apple-iphone-duo-wie-der-ceo-mit-hoeheren-preisen-umsatz-steigert/100253336.html",
-      "source_published_at": "2026-09-10T05:17:09.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T06:10:25.721Z"
-    },
-    {
       "id": "agenda-62a239c4592bb732e72c",
       "title": "Temperatursturz zum Wochenende: 20 Grad am Tag, bis zu 3 Grad in der Nacht in Berlin und Brandenburg erwartet",
       "source_id": "tagesspiegel-home",
@@ -67989,18 +67764,6 @@
       "status": "watch_for_material_development",
       "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
       "checked_at": "2026-09-10T07:07:45.286Z"
-    },
-    {
-      "id": "agenda-be9af28c7b249ae377fd",
-      "title": "Tennis: Zverev mit Becker-Rekord ins Halbfinale - Termin nervt ihn",
-      "source_id": "stern-schlagzeilen",
-      "url": "https://www.stern.de/sport/tennis--zverev-mit-becker-rekord-ins-halbfinale---termin-nervt-ihn-38230598.html",
-      "source_published_at": "2026-09-10T05:59:22.000Z",
-      "scheduled_date": null,
-      "schedule_precision": "not_established",
-      "status": "watch_for_material_development",
-      "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-10T06:10:25.721Z"
     },
     {
       "id": "agenda-f0ecce3ee51c7172ac8f",
