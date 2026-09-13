@@ -142,6 +142,19 @@ test('article preflight errors reach bounded repair before any output is deliver
   assert.match(f.calls[1].prompt,/AI_REQUIRED_STRING:systemic_relevance/);
   assert.equal(checked,2);
 });
+test('technical validation failures resume the paid result without buying a rewritten article', async () => {
+  for (const error of [Object.assign(Error('spawnSync pdftotext ENOENT'),{code:'ENOENT'}),
+    Object.assign(Error('IMPACT_RESEARCH_REQUEST_TIMEOUT'),{retryable:true}), Error('ARTICLE_HTTP_503:research-context')]) {
+    const f=fixture(), receipt=await apiProcessorPreflight(f.transport,f.api,now);
+    f.processor.preflightOutput=async()=>{throw error;};
+    await assert.rejects(f.processor.process(f.job,receipt), /VALIDATION_DEPENDENCY_UNAVAILABLE/);
+    assert.equal(f.calls.length,1);
+    assert.equal(f.files.has(bridgePath('20_OUTPUT_READY',id+'.output.json')),false);
+    f.processor.preflightOutput=async()=>{};
+    assert.equal((await f.processor.process(f.job,receipt)).status,'output_delivered');
+    assert.equal(f.calls.length,1);
+  }
+});
 test('deep schema ordering retains all fields and supplied evidence unchanged', async () => {
   const {orderNativePrompt}=await import('../../scripts/news/bridge/api-processor.mjs');
   const schema={analyses:[{story_id:'string',impact_assessment:{dimensions:{human:{}}},systemic_relevance:'string',publication_gate:{news_value:'new_evidence'}}],$defs:{path:{}}};
