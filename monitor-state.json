@@ -36,12 +36,13 @@
     "bridge-review": {
       "firstSeen": "2026-09-13T19:09:37.148Z",
       "active": true
-    },
-    "bridge-api-results": {
-      "firstSeen": "2026-09-13T19:53:41.600Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "25d222071c18a21dbd97736d",
+      "content": "✓ WÖk-Störung behoben\nAPI-Redaktionsverarbeitung\nPrüfung: 2026-09-13T20:46:24.360Z"
+    }
+  ],
   "dailyDate": "2026-09-13"
 }
