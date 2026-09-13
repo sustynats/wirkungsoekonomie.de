@@ -102,6 +102,13 @@ test('current independent reviews cannot be starved by a constant inflow of fres
   const f = fixture(), review = { input: { ...input, job_id: id.replace(/a/g,'f'), job_type: 'impact_semantic_review' }, candidate: { sources: [{ published_at: '2026-09-13T09:10:00Z' }] } };
   assert.equal(selectApiJobs([f.job, review], now)[0].input.job_type, 'impact_semantic_review');
 });
+test('a targeted canary selects only its existing job and cannot bypass freshness or exclusions', () => {
+  const f=fixture(), other={...f.job,input:{...input,job_id:id.replace(/a/g,'f')}};
+  assert.deepEqual(selectApiJobs([other,f.job],now,{onlyJobId:id}).map(j=>j.input.job_id),[id]);
+  assert.deepEqual(selectApiJobs([f.job],now,{onlyJobId:id,excludedIds:[id]}),[]);
+  assert.deepEqual(selectApiJobs([f.job],'2026-09-14T10:00:00Z',{onlyJobId:id}),[]);
+  assert.throws(()=>selectApiJobs([f.job],now,{onlyJobId:'invalid'}),/TARGET_INVALID/);
+});
 test('fresh-start cutoff leaves the old queue intact and lets selected news finish review after an hour',()=>{
  const make=(digit,date,kind='new_story')=>({input:{...input,job_id:id.replace(/a/g,digit),job_type:kind},candidate:{sources:[{published_at:date}]}});
  const old=make('c','2026-09-13T08:00:00Z','impact_semantic_review'),review=make('d','2026-09-13T10:13:00Z','impact_semantic_review'),fresh=make('e','2026-09-13T11:20:00Z');

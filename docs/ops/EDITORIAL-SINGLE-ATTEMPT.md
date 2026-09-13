@@ -47,6 +47,11 @@ Die gemessenen Stückkosten sind getrennt von der Aufrufgrenze auszuweisen.
 - Zwei Modellaufrufe, Quellenprüfung, MPD, Import, ACK und Auslieferung prüfen.
 - Erst danach den vorhandenen serverseitigen Timer wieder aktivieren.
 
+Der vorhandene Runner kann mit `--job-id=<vorhandene Job-ID>` auf genau einen
+Auftrag begrenzt werden. Das lässt Frischeprüfung, Ausschlüsse, serverseitige
+Kostenbegrenzung und vollständige Inhaltsprüfung unverändert. Ohne diesen
+Parameter bleibt die normale LIFO-Auswahl aktiv.
+
 Historische Reparaturen erhalten keine neuen bezahlten Aufrufe. Ein wirklich
 neues Ereignisupdate bleibt ein neuer Auftrag mit eigener Quellenbindung; es
 darf nicht als Umgehung für einen fehlgeschlagenen unveränderten Auftrag dienen.

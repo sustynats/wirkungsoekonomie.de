@@ -169,12 +169,14 @@ export function wrapNativeNewsOutput(output, original) {
   };
 }
 
-export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, newsNotBefore = null, excludedIds = [] } = {}) {
+export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, newsNotBefore = null, excludedIds = [], onlyJobId = null } = {}) {
+  if(onlyJobId !== null && !JOB_ID.test(onlyJobId))throw Error('API_EDITORIAL_TARGET_INVALID');
   // Finish the independent gate for current prepared news before opening more
   // new drafts. Otherwise a constant inflow can starve actual publication.
   const priority = job => job.input?.job_type === 'impact_semantic_review' ? 595 : job.status === 'correction_pending' ? 585 : processorPriority(job, now);
   return jobs.filter(job => {
     const input = job.input || job;
+    if(onlyJobId !== null && input.job_id !== onlyJobId)return false;
     if (job.ack || job.accepted || ['quarantined', 'archive_failed'].includes(job.status)
       || !JOB_ID.test(input.job_id || '') || excludedIds.includes(input.job_id) || isHistoricalJob(job)) return false;
     let kind; try { kind = apiJobKind(input); } catch { return false; }

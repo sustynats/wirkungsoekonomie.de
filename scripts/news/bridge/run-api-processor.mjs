@@ -49,6 +49,7 @@ try {
   });
   const jobs = selectApiJobs(admitted, now(), {
     maxJobs: 150, maxNewsAgeHours: configured.max_news_age_hours, newsNotBefore: configured.news_not_before || null, excludedIds: configured.excluded_job_ids || [],
+    onlyJobId: process.argv.find(arg=>arg.startsWith('--job-id='))?.slice('--job-id='.length) ?? null,
   });
   if (process.argv.includes('--dry-run')) {
     console.log(JSON.stringify({ status: 'DRY_RUN', selected: jobs.slice(0, configured.max_jobs_per_run).map(j => ({ job_id: j.input.job_id, kind: j.input.job_type })), eligible: jobs.length, attention_count:attention.length, api_calls: 0 }));
