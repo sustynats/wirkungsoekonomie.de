@@ -21,7 +21,11 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
   const contract = kind === 'news' ? { output_schema: outputSchema }
     : kind === 'review' ? { output_schema: semanticOutputSchema, requested_output: original.requested_output }
       : EDITORIAL_REQUEST_CONTRACT_V4;
-  const prompt = JSON.stringify({
+  const prompt = kind === 'news' && original.wirkungsticker?.analysis_prompt ? [
+    original.wirkungsticker.analysis_prompt,
+    'TRANSPORT: Nur das oben definierte native Objekt {analyses:[...]} zurückgeben. Keine Bridge-Hülle, keine zusätzlichen facts/story/editorial/wirkungsticker-Felder. Die Software verpackt die Analyse nachträglich. Ablehnungen im oben definierten kurzen rejection-Format.',
+    ...(packet.original_input ? ['VALIDATOR_FEEDBACK: ' + JSON.stringify({ validation_errors: packet.validation_errors, attempt: packet.correction_attempt, prior_output: priorOutput })] : []),
+  ].join('\n\n') : JSON.stringify({
     task: 'Erzeuge eine vollständige neue Ausgabe für diesen unveränderten Rechercheauftrag. Keine Tools aufrufen. Keine Veröffentlichung oder Freigabe ausführen.',
     output_contract: contract,
     assignment: original,
@@ -153,7 +157,13 @@ export class ApiEditorialProcessor {
     if (packet.job_id !== id || packet.input_hash !== current.input.input_hash) throw Error('BRIDGE_JOB_BINDING_MISMATCH');
     const priorOutput = packet.original_output_path ? JSON.parse(await this.transport.read(packet.original_output_path)) : null;
     const request = prepareApiJob(packet, this.knowledge, { priorOutput });
-    if (ownership && ownership.key !== request.key) throw Error('API_EDITORIAL_CLAIM_CHANGED');
+    // A previously completed response remains recoverable after a transport
+    // encoder update, but source packet and leading methodology must match.
+    let recovered;
+    if (ownership && ownership.key !== request.key) {
+      recovered = await this.api.get(ownership.key);
+      if (recovered?.status !== 'completed' || recovered.packet_hash !== request.packet_hash || recovered.profile_hash !== request.profile_hash) return { status: 'legacy_claim_attention', job_id: id };
+    }
     if (!ownership) {
       ownership = { job_id: id, key: request.key, packet_hash: hash(packet), claim_path: claimPath, claimed_at: at, actor: 'oracle_api', state: 'intent' };
       this.store.observe(`api-claim:${name}`, ownership);
@@ -171,7 +181,7 @@ export class ApiEditorialProcessor {
     // job, including later importer corrections, at three. GET recovers every
     // completed attempt; a retry of this loop never buys the same attempt twice.
     for (;;) {
-      result = await this.api.get(attemptRequest.key);
+      result = recovered || await this.api.get(attemptRequest.key); recovered = null;
       if (!result || result.status === 'budget_blocked' && result.provider_called === false) {
         result = await this.api.submit(attemptRequest);
         if (result.provider_called !== false) providerAttempts++;
@@ -186,7 +196,7 @@ export class ApiEditorialProcessor {
       else return { job_id: id, status: result.status, provider_attempts: providerAttempts };
       if (attemptRequest.attempt >= 2) return { job_id: id, status: 'repair_exhausted', provider_attempts: providerAttempts };
       attemptRequest = { ...request, attempt: attemptRequest.attempt + 1,
-        prompt: JSON.stringify({ assignment: JSON.parse(request.prompt), repair: {
+        prompt: JSON.stringify({ assignment: request.prompt, repair: {
           attempt: attemptRequest.attempt + 1, validation_error: validationError,
           prior_output: result.output || null, instruction: 'Behebe diese konkreten Formatfehler. Quellenbindung und inhaltliche Qualitätsanforderungen bleiben unverändert. Vollständiges JSON liefern.' } }) };
       attemptRequest.key = apiRequestKey(attemptRequest); validateApiRequest(attemptRequest);

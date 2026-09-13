@@ -66,14 +66,14 @@ try {
       if (attempted >= configured.max_jobs_per_run || Date.now() - started > 600000) break;
       try {
         const result = await processor.process(store.get(selected.input.job_id), receipt); results.push(result);
-        if (result.provider_attempts > 0 || !['already_processed','already_delivered','claimed_elsewhere','excluded','repair_exhausted','unknown'].includes(result.status)) attempted++;
+        if (result.provider_attempts > 0 || !['already_processed','already_delivered','claimed_elsewhere','excluded','repair_exhausted','legacy_claim_attention','unknown'].includes(result.status)) attempted++;
         if (['budget_blocked', 'busy'].includes(result.status)) break;
       } catch (error) {
         attempted++;
         results.push({ job_id: selected.input.job_id, status: 'attention', code: /^[A-Z_0-9:.-]+$/.test(error.message) ? error.message : 'API_EDITORIAL_FAILED' });
       }
     }
-    const report = { actor: 'oracle_api', at: now(), status: results.some(r => ['attention','unknown','failed','repair_exhausted','claim_unknown','budget_blocked'].includes(r.status)) ? 'ATTENTION' : 'RUN_COMPLETED',
+    const report = { actor: 'oracle_api', at: now(), status: results.some(r => ['attention','unknown','failed','repair_exhausted','legacy_claim_attention','claim_unknown','budget_blocked'].includes(r.status)) ? 'ATTENTION' : 'RUN_COMPLETED',
       delivered: results.filter(r => r.status === 'output_delivered').length, results };
     store.observe('api-processor-health', report);
     console.log(JSON.stringify(report));

@@ -106,3 +106,9 @@ test('native analysis is wrapped without changing its content or skipping downst
   const rejected={...analysis,publication_recommendation:false,rejection:{code:'insufficient_evidence',reason:'Der Beleg für die zentrale Behauptung fehlt.'}};
   assert.equal(wrapNativeNewsOutput({...native,analyses:[rejected]},original).decision.status,'hold');
 });
+test('native news request has one output contract, not a competing bridge schema', () => {
+  const request=prepareApiJob({...input,wirkungsticker:{story_id:'native-id',analysis_prompt:'Native analysis contract and original evidence.'}},knowledge);
+  assert.ok(request.prompt.startsWith('Native analysis contract'));
+  assert.equal(request.prompt.includes('output_schema'),false);
+  assert.match(request.prompt,/Keine Bridge-Hülle/);
+});
