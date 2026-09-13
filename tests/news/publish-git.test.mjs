@@ -4,7 +4,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
-import { mergeDisjointStoryStores, publishGitUpdate, regeneratablePublicationPath } from "../../scripts/news/publish-git.mjs";
+import { mergeDisjointStoryStores, publishGitUpdate, regeneratablePublicationPath, fetchPublicationBase } from "../../scripts/news/publish-git.mjs";
 const store = (stories, minute = 0) => ({ schema_version: "1.1", updated_at: `2026-09-06T01:${String(minute).padStart(2, "0")}:00Z`, stories });
 test("disjoint story edits preserve both complete records and version histories", () => {
   const a = { story_id: "a", versions: [{ v: 1 }], sources: ["original"] }, b = { story_id: "b", title: "before" };
@@ -33,12 +33,12 @@ test("concurrent main advances are rebased before each bounded push retry", asyn
   const calls=[];let pushes=0;
   const result=await publishGitUpdate({sleep:async()=>{},run:async args=>{calls.push(args);if(args[0]==='push'&&++pushes<3)throw new Error('fetch first');return 'unchanged';}});
   assert.equal(result.attempts,3);
-  assert.deepEqual(calls.filter(a=>['pull','push'].includes(a[0])).map(a=>a[0]),['pull','push','pull','push','pull','push']);
+  assert.deepEqual(calls.filter(a=>['rebase','push'].includes(a[0])).map(a=>a[0]),['rebase','push','rebase','push','rebase','push']);
   assert.ok(calls.every(a=>!a.some(v=>v.includes('force'))));
 });
 test("canonical conflicts abort this rebase without overwriting either version", async () => {
   const calls=[];
-  await assert.rejects(publishGitUpdate({run:async args=>{calls.push(args);if(args[0]==='pull')throw new Error('conflict');return args[0]==='diff'?'data/news/stories.json\0':'';}}),/PUBLISH_CANONICAL_CONFLICT/);
+  await assert.rejects(publishGitUpdate({run:async args=>{calls.push(args);if(args[0]==='rebase' && args[1]==='FETCH_HEAD')throw new Error('conflict');return args[0]==='diff'?'data/news/stories.json\0':'';}}),/PUBLISH_CANONICAL_CONFLICT/);
   assert.ok(calls.some(a=>a.join(' ')==='rebase --abort'));
   assert.ok(!calls.some(a=>['push','restore'].includes(a[0])));
 });
@@ -46,6 +46,36 @@ test("persistent push failures stop after three attempts", async () => {
   let pushes=0;
   await assert.rejects(publishGitUpdate({sleep:async()=>{},run:async args=>{if(args[0]==='push'){pushes++;throw new Error('unavailable');}}}),/unavailable/);
   assert.equal(pushes,3);
+});
+
+test('a shallow publication fetch is bounded and requires a proven common ancestor',async()=>{
+ const calls=[];let bases=0;
+ await fetchPublicationBase(async args=>{calls.push(args);if(args[1]==='--is-shallow-repository')return 'true';if(args[0]==='merge-base'){if(++bases===1)throw Error('missing');return 'a'.repeat(40);}return '';});
+ assert.deepEqual(calls.filter(a=>a[0]==='fetch').map(a=>a[2]),['--depth=64','--depth=256']);
+ assert.ok(calls.filter(a=>a[0]==='fetch').every(a=>a.includes('--no-tags')));
+ const failed=[];
+ await assert.rejects(fetchPublicationBase(async args=>{failed.push(args);if(args[1]==='--is-shallow-repository')return 'true';if(args[0]==='merge-base')throw Error('unrelated');return '';}),/PUBLISH_COMMON_ANCESTOR_NOT_FOUND/);
+ assert.equal(failed.filter(a=>a[0]==='fetch').length,3);
+ assert.ok(failed.every(a=>!a.includes('--unshallow')&&!a.includes('--force')));
+});
+
+test('a real depth-one Actions checkout retains its new article while integrating upstream',async t=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),'woek-shallow-publish-'));
+ t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const cmd=(cwd,args)=>execFileSync('git',args,{cwd,encoding:'utf8',stdio:['ignore','pipe','pipe'],env:{...process.env,GIT_EDITOR:'true'}});
+ const origin=path.join(root,'origin.git'),editor=path.join(root,'editor'),worker=path.join(root,'worker');
+ const identity=dir=>{cmd(dir,['config','user.name','Test']);cmd(dir,['config','user.email','test@example.org']);};
+ cmd(root,['init','--bare',origin]);cmd(root,['clone',origin,editor]);identity(editor);cmd(editor,['checkout','-b','main']);
+ fs.writeFileSync(path.join(editor,'upstream.txt'),'base');cmd(editor,['add','.']);cmd(editor,['commit','-m','base']);cmd(editor,['push','-u','origin','main']);
+ cmd(root,['clone','--depth=1','--branch','main','file://'+origin,worker]);identity(worker);
+ assert.equal(cmd(worker,['rev-parse','--is-shallow-repository']).trim(),'true');
+ fs.writeFileSync(path.join(worker,'article.txt'),'new verified article');cmd(worker,['add','.']);cmd(worker,['commit','-m','article']);
+ fs.writeFileSync(path.join(editor,'upstream.txt'),'new release');cmd(editor,['commit','-am','release']);cmd(editor,['push']);
+ const calls=[];
+ await publishGitUpdate({run:async args=>{calls.push(args);return cmd(worker,args);},rebuild:async()=>{},sleep:async()=>{}});
+ assert.ok(calls.some(a=>a.includes('--depth=64')));
+ assert.equal(cmd(worker,['show','origin/main:article.txt']),'new verified article');
+ assert.equal(cmd(worker,['show','origin/main:upstream.txt']),'new release');
 });
 
 test("only reproducible publication outputs are eligible for conflict recovery",()=>{
@@ -80,7 +110,7 @@ test("a later canonical conflict aborts the whole multi-commit recovery without 
   const calls = []; let conflicts = 0;
   await assert.rejects(publishGitUpdate({ run: async args => {
     calls.push(args);
-    if (args[0] === 'pull' || args.includes('--continue')) throw new Error('conflict');
+    if (args[0] === 'rebase' && args[1] === 'FETCH_HEAD' || args.includes('--continue')) throw new Error('conflict');
     if (args.includes('--diff-filter=U')) return ++conflicts === 1 ? 'reports/wirkungsticker-source-integrity.json\0' : 'scripts/news/lib.mjs\0';
     if (args.includes('--cached')) return 'data/news/state.json\0';
     return '';
@@ -93,7 +123,7 @@ test("a later canonical conflict aborts the whole multi-commit recovery without 
 test("repeated generated conflicts have a hard recovery bound and abort safely", async () => {
   let continuations = 0, aborted = false, pushed = false;
   await assert.rejects(publishGitUpdate({ run: async args => {
-    if (args[0] === 'pull') throw new Error('conflict');
+    if (args[0] === 'rebase' && args[1] === 'FETCH_HEAD') throw new Error('conflict');
     if (args.includes('--continue')) { continuations++; throw new Error('next conflict'); }
     if (args.includes('--diff-filter=U')) return 'reports/wirkungsticker-source-integrity.json\0';
     if (args.includes('--cached')) return 'data/news/state.json\0';

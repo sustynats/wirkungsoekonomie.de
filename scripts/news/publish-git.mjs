@@ -68,13 +68,30 @@ export async function rebuildPublication({ run = exec, env = process.env } = {})
   }
 }
 
+// Actions checks out one commit. An unbounded pull can fetch years of binary
+// publication history while holding the shared publication lane. Fetch only
+// enough history to prove the common ancestor; never rebase unrelated roots.
+export async function fetchPublicationBase(run = git) {
+  const shallow = stdout(await run(["rev-parse", "--is-shallow-repository"])).trim() === "true";
+  if (!shallow) { await run(["fetch", "--no-tags", "origin", "main"]); return; }
+  for (const depth of [64, 256, 1024]) {
+    await run(["fetch", "--no-tags", `--depth=${depth}`, "origin", "main"]);
+    try {
+      const base=stdout(await run(["merge-base", "HEAD", "FETCH_HEAD"])).trim();
+      if (/^[a-f0-9]{40,64}$/.test(base)) return;
+    } catch { /* need more ancestry; no mutation or unsafe fallback */ }
+  }
+  throw new Error("PUBLISH_COMMON_ANCESTOR_NOT_FOUND");
+}
+
 export async function publishGitUpdate({ run = git, rebuild = rebuildPublication, writeStoryStore = store => fs.writeFileSync(STORY_STORE, `${JSON.stringify(store, null, 2)}\n`), sleep = ms => new Promise(resolve => setTimeout(resolve, ms)) } = {}) {
   let regenerated = false;
   for (let attempt = 1; attempt <= 3; attempt++) {
     const before = stdout(await run(["rev-parse", "HEAD"])).trim();
     let recovered = false;
     try {
-      await run(["pull", "--rebase", "origin", "main"]);
+      await fetchPublicationBase(run);
+      await run(["rebase", "FETCH_HEAD"]);
     } catch (error) {
       const firstConflicts = stdout(await run(["diff", "--name-only", "--diff-filter=U", "-z"])).split("\0").filter(Boolean);
       if (!firstConflicts.length) throw error;
