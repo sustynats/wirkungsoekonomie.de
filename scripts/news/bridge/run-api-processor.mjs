@@ -96,7 +96,9 @@ try {
         results.push({ job_id: selected.input.job_id, status: 'attention', code: /^[A-Z_0-9:.-]+$/.test(error.message) ? error.message : 'API_EDITORIAL_FAILED' });
       }
     }
-    const report = { actor: 'oracle_api', at: now(), status: results.some(r => ['attention','unknown','failed','repair_exhausted','legacy_claim_attention','claim_unknown','budget_blocked'].includes(r.status)) ? 'ATTENTION' : 'RUN_COMPLETED',
+    const report = { actor: 'oracle_api', enabled: true, news_only: configured.news_only === true,
+      preflight: {status: receipt.status, at: receipt.at, write_ok: receipt.write_ok, reads: receipt.reads},
+      at: now(), status: results.some(r => ['attention','unknown','failed','repair_exhausted','legacy_claim_attention','claim_unknown','budget_blocked'].includes(r.status)) ? 'ATTENTION' : 'RUN_COMPLETED',
       delivered: results.filter(r => r.status === 'output_delivered').length, results };
     store.observe('api-processor-health', report);
     console.log(JSON.stringify(report));
