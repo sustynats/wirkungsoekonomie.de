@@ -24,6 +24,7 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
   const prompt = kind === 'news' && original.wirkungsticker?.analysis_prompt ? [
     original.wirkungsticker.analysis_prompt,
     'TRANSPORT: Nur das oben definierte native Objekt {analyses:[...]} zurückgeben. Keine Bridge-Hülle, keine zusätzlichen facts/story/editorial/wirkungsticker-Felder. Die Software verpackt die Analyse nachträglich. Ablehnungen im oben definierten kurzen rejection-Format.',
+    'NESTING: publication_gate, importance, impact_potential, mechanisms, first_order, second_order, third_order, transformation_potential, resilience, side_effects, uncertainties, evidence_level, attribution, watch_next, reference_frameworks, visuals und media_impact sind Geschwister von impact_assessment im analyses-Eintrag. Sie gehören NICHT in impact_assessment.',
     ...(packet.original_input ? ['VALIDATOR_FEEDBACK: ' + JSON.stringify({ validation_errors: packet.validation_errors, attempt: packet.correction_attempt, prior_output: priorOutput })] : []),
   ].join('\n\n') : JSON.stringify({
     task: 'Erzeuge eine vollständige neue Ausgabe für diesen unveränderten Rechercheauftrag. Keine Tools aufrufen. Keine Veröffentlichung oder Freigabe ausführen.',
@@ -61,7 +62,13 @@ export function validateApiOutput(output, packet, now) {
 // The unchanged importer still validates the native analysis and second pass.
 export function wrapNativeNewsOutput(output, original) {
   if (output.analyses.length !== 1 || output.analyses[0]?.story_id !== original.wirkungsticker?.story_id) throw Error('BRIDGE_ANALYSIS_BINDING_MISMATCH');
-  const a = output.analyses[0], publish = a.publication_recommendation;
+  const a = structuredClone(output.analyses[0]), publish = a.publication_recommendation;
+  // Recognize only unambiguous native siblings sometimes placed one level too
+  // deep by the model. No score, source, text or review decision is invented.
+  // Keep the original raw response and nested copy as audit evidence.
+  for (const field of ['publication_gate','importance','impact_potential','impact_risks','mechanisms','first_order','second_order','third_order','transformation_potential','resilience','side_effects','uncertainties','evidence_level','attribution','watch_next','reference_frameworks','visuals','media_impact']) {
+    if (!(field in a) && a.impact_assessment && field in a.impact_assessment) a[field] = structuredClone(a.impact_assessment[field]);
+  }
   if (typeof publish !== 'boolean') throw Error('API_EDITORIAL_NATIVE_DECISION_REQUIRED');
   const reason = publish ? a.publication_gate?.rationale : a.rejection?.reason || a.publication_gate?.rationale;
   if (typeof reason !== 'string' || !reason.trim()) throw Error('API_EDITORIAL_NATIVE_REASON_REQUIRED');
@@ -191,7 +198,10 @@ export class ApiEditorialProcessor {
       if (result.status === 'completed') {
         if (result.output?.job_id !== id || result.output?.input_hash !== request.input_hash) throw Error('BRIDGE_JOB_BINDING_MISMATCH');
         try { output = validateApiOutput(result.output, packet, this.now()); break; }
-        catch (error) { validationError = String(error.message).slice(0, 6000); }
+        catch (error) {
+          validationError = String(error.message).slice(0, 6000);
+          this.store.observe(`api-validation:${attemptRequest.key}`, {job_id:id,key:attemptRequest.key,at:this.now(),error:validationError});
+        }
       } else if (result.status === 'failed' && ['api_editorial_invalid_json', 'api_editorial_incomplete'].includes(result.error)) validationError = result.error;
       else return { job_id: id, status: result.status, provider_attempts: providerAttempts };
       if (attemptRequest.attempt >= 2) return { job_id: id, status: 'repair_exhausted', provider_attempts: providerAttempts };

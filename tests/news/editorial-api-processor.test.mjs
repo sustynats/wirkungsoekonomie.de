@@ -112,3 +112,11 @@ test('native news request has one output contract, not a competing bridge schema
   assert.equal(request.prompt.includes('output_schema'),false);
   assert.match(request.prompt,/Keine Bridge-Hülle/);
 });
+test('misplaced native sibling fields are copied losslessly and never used to invent an assessment', async () => {
+  const {wrapNativeNewsOutput}=await import('../../scripts/news/bridge/api-processor.mjs');
+  const analysis={story_id:'native-id',publication_recommendation:true,impact_assessment:{version:'2.1',publication_gate:{rationale:'Konkrete neue Änderung ist durch den Beleg gestützt.'},importance:'hoch'}};
+  const result=wrapNativeNewsOutput({analyses:[analysis]}, {...input,wirkungsticker:{story_id:'native-id'}});
+  assert.deepEqual(result.wirkungsticker.analysis.publication_gate,analysis.impact_assessment.publication_gate);
+  assert.deepEqual(result.wirkungsticker.analysis.impact_assessment,analysis.impact_assessment);
+  assert.equal(analysis.publication_gate,undefined);
+});
