@@ -1,4 +1,5 @@
 import {needsMediaReview,reviewedMediaRecord} from './media-review.mjs';
+import { MEDIA_REVIEW_SCHEMA } from './media-review-schema.mjs';
 import { isHistoricalJob, compareProcessorJobs } from './processor.mjs';
 import { verifyImpactResearch, researchSourceSchema } from './impact-research.mjs';
 import { hash, bridgePath, parsePacket } from './contract.mjs';
@@ -21,7 +22,9 @@ function assertCompleteReadyReview(review, gate) {
 export const semanticOutputSchema = {
   type: 'object', additionalProperties: false, required: ['schema_version', 'job_id', 'input_hash', 'processed_at', 'review', 'impact_assessment'],
   properties: {
-    media_applicability: {type:'object',additionalProperties:false,required:['relevant','reason'],properties:{relevant:{type:'boolean'},reason:{type:'string',minLength:30,maxLength:3000}}},
+    // Preserve old explicit HOLD receipts with a positive applicability finding.
+    // A ready receipt still needs the complete, domain-validated media object.
+    media_applicability: {anyOf:[...MEDIA_REVIEW_SCHEMA.anyOf,{type:'object',additionalProperties:false,required:['relevant','reason'],properties:{relevant:{type:'boolean'},reason:{type:'string',minLength:30,maxLength:3000}}}]},
     research_sources: researchSourceSchema,
     schema_version: { const: '1.0' }, job_id: { type: 'string', pattern: '^wt_\\d{8}T\\d{6}Z_[a-f0-9]{24}$' },
     input_hash: { type: 'string', pattern: '^[a-f0-9]{64}$' }, processed_at: { type: 'string', format: 'date-time' },
@@ -94,7 +97,7 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
       review_format_rule: 'Jeder der 14 Checks ist ein Objekt {"status":"pass" oder "fail","rationale":"konkrete fachliche Begründung"}. Ein Wort wie geprüft, true oder ein allgemeines Gesamturteil genügt nicht. Alle gebundenen Quellen anhand ihrer Belegfunktion prüfen, auch ergänzte amtliche/programmatische/wissenschaftliche Quellen. Ein fehlender Umsetzungsbeschluss macht einen belegten bedingten Wirkungspfad nicht richtungslos.',
       requested_output: { schema_version: '1.0', job_id: id, input_hash: inputHash, processed_at: 'ISO timestamp',
         review: { status: 'ready|needs_review|blocked', checks: Object.fromEntries(SEMANTIC_CHECKS.map(k => [k, { status: 'pass|fail', rationale: 'fachliche Begründung' }])), findings: ['verbleibende Befunde oder leere Liste'] },
-        ...(needsMediaReview(record) ? {media_applicability:{relevant:'boolean: independent judgment; true requires the missing full media check and therefore HOLD',reason:'Concrete independent rationale, at least 30 characters'}} : {}),
+        ...(needsMediaReview(record) ? {media_applicability:MEDIA_REVIEW_SCHEMA} : {}),
         research_sources: [], impact_assessment: IMPACT_SCHEMA, $defs: IMPACT_DEFS },
     };
     reviewJob = { input, candidate: record, proposed, status: 'prepared_semantic', attempts: {}, created_at: now };
