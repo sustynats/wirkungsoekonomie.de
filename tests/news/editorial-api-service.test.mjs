@@ -5,7 +5,9 @@ import os from 'node:os';
 import path from 'node:path';
 import { EditorialApiService, apiRequestKey, API_EDITORIAL_PROTOCOL, publicApiJob, parseEditorialJson, finalEditorialOutputText } from '../../scripts/news/bridge/api-service.mjs';
 import { editorialKnowledge } from '../../scripts/news/bridge/editorial-knowledge.mjs';
-import { REVIEW_RESPONSE_FORMAT } from '../../scripts/news/bridge/review-response-schema.mjs';
+import { reviewResponseFormat } from '../../scripts/news/bridge/review-response-schema.mjs';
+import { syntheticPotentialAssessment } from './fixtures/impact21.mjs';
+const REVIEW_RESPONSE_FORMAT=reviewResponseFormat(syntheticPotentialAssessment());
 
 class ProviderError extends Error { constructor(message, statusCode, technicalMessage, usageEvidence) { super(message); Object.assign(this, { statusCode, technicalMessage, usageEvidence }); } }
 const request = (change = {}) => {
@@ -37,7 +39,7 @@ test('only independent reviews get bounded search and account tool calls even fo
  const result=await f.service.submit(request({kind:'review'}));
  assert.equal(result.status,'failed'); assert.equal(f.bodies[0].max_tool_calls,2);
  assert.equal(f.bodies[0].tool_choice,'required');
- assert.equal(f.bodies[0].model,'gpt-5.4-mini');
+ assert.equal(f.bodies[0].model,'gpt-5.6-luna');
  assert.deepEqual(f.bodies[0].tools,[{type:'web_search',search_context_size:'low'}]);
  assert.equal(f.bodies[0].text.format.type,'json_schema');
  assert.deepEqual(f.bodies[0].text.format.schema.required,['review','impact_assessment']);
@@ -66,6 +68,9 @@ test('complete review schema reaches the initial request while paid repairs are 
  assert.equal(f.calls.length,1);
  for(const body of f.bodies) {
   assert.deepEqual(body.text.format,REVIEW_RESPONSE_FORMAT);assert.equal(body.max_tool_calls,2);
+  assert.equal(JSON.parse(body.input).output_contract.response_format,undefined);
+  assert.equal(JSON.parse(body.input).output_contract.response_format_name,REVIEW_RESPONSE_FORMAT.name);
+  assert.ok(body.input.length < assignment.length / 2);
   assert.deepEqual(body.tools[0].filters.allowed_domains,['www.bundestag.de']);
  }
 });

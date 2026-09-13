@@ -23,7 +23,9 @@ test('review decoding has a closed fully required domain schema instead of unres
  assert.deepEqual(root.properties.review.properties.checks.required,SEMANTIC_CHECKS);
  assert.deepEqual(root.$defs.path.properties.magnitude_factors.required,FACTOR_KEYS);
  assert.ok(root.$defs.path.required.includes('protection_boundary'));
- assert.ok(root.properties.impact_assessment.required.includes('research_check'));
+ assert.ok(root.properties.impact_assessment.anyOf[0].required.includes('research_check'));
+ assert.equal(root.properties.impact_assessment.anyOf[1].type,'null');
+ assert.ok(root.properties.assessment_confirmation.anyOf[0].required.includes('path_research'));
  assert.equal(root.$defs.path.properties.magnitude,undefined);
  for(const key of ['magnitude','direction','dominance']) assert.equal(root.$defs.dimension.properties[key],undefined);
  assert.deepEqual(root.$defs.main_path.properties.type.enum,['main_path','counter_path']);
@@ -50,6 +52,12 @@ test('exact research URL identifiers normalize throughout references without cha
  const retarget={research_sources:[{source_id:'publisher-id',url:'https://other.example.org/report'}]};
  canonicalResearchIdentifiers(retarget,[{source_id:'publisher-id',url}]);
  assert.equal(retarget.research_sources[0].source_id,'publisher-id');
+ const exact={research_sources:[{source_id:'research-actual-source',url,quote:'Exact source words.'}],source_ids:[url,'nonexistent']};
+ canonicalResearchIdentifiers(exact);
+ assert.deepEqual(exact.source_ids,['research-actual-source','nonexistent']);
+ assert.equal(exact.research_sources[0].quote,'Exact source words.');
+ const ambiguous={research_sources:[{source_id:'research-one',url},{source_id:'research-two',url}],source_ids:[url]};
+ canonicalResearchIdentifiers(ambiguous);assert.deepEqual(ambiguous.source_ids,[url]);
 });
 
 test('arithmetic and aggregation follow given factors and path roles without inventing editorial judgments',()=>{
