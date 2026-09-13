@@ -43,10 +43,11 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
     'QUELLENGATE: Zwei unabhängige Quellen sind KEINE allgemeine Veröffentlichungsvoraussetzung. Eine verlässliche Einzelquelle kann einen klar zugeschriebenen neuen Ereigniskern als initial/preliminary und single_source_claim tragen. Bestätigt/confirmed_claim ist etwas anderes. Nicht nur wegen fehlender unabhängiger Bestätigung ablehnen; benenne bei HOLD die konkret unzureichend belegte Kernbehauptung oder den fehlenden materiellen Nachrichtenwert. Bei strittigen schweren Vorwürfen und requires_corroboration bleiben Originalbeleg und unabhängige Prüfung erforderlich. Keine fehlenden Tatsachen ergänzen, nur um eine Textlänge zu erreichen.',
     ...(packet.original_input ? ['VALIDATOR_FEEDBACK: ' + JSON.stringify({ validation_errors: packet.validation_errors, attempt: packet.correction_attempt, prior_output: priorOutput })] : []),
   ].join('\n\n') : JSON.stringify({
-    transport_revision: 'research-text-json-2',
-    task: 'Erzeuge eine vollständige neue Ausgabe für diesen unveränderten Rechercheauftrag. Keine Veröffentlichung oder Freigabe ausführen.' + (kind === 'review' ? ' Du darfst höchstens zwei Web-Suchzugriffe für konkret fehlende Wirkungs-/Kontextbelege verwenden. Primärquellen bevorzugen, keine Paywall/Login-Umgehung. Nur tatsächlich gelesene kurze Belege mit exakter URL und Originalauszug als höchstens zwei research_sources ausweisen. Ohne Bedarf kein Suchaufruf. Die nachgelagerte Software prüft jeden zusätzlichen Beleg.' : ' Keine Tools aufrufen.'),
-    ...(kind === 'review' ? { review_scope: 'Prüfe das modellierte Wirkungspotenzial, nicht ob eine vorgeschlagene Maßnahme bereits umgesetzt wurde. Unabhängiger Fachpass bedeutet unabhängiges Prüfurteil; es ist keine pauschale Zwei-Quellen-Pflicht. Eine korrekt zugeschriebene vorläufige Meldung kann auf einer verlässlichen Einzelquelle beruhen. confirmed_claim und schwere strittige Vorwürfe brauchen die jeweils strengeren Belege. Fehlender Beschluss, unbekannte Konditionen oder fehlende gemessene Folgen dürfen eine korrekt als Vorschlag und ex ante bezeichnete Analyse nicht allein blockieren. institutional_status prüft die zutreffende Bezeichnung des realen Status, nicht das Vorliegen einer endgültigen Entscheidung. magnitude prüft Faktoren, Wirkungsraum und Berechnung; geringe Evidenz gehört nach evidence und darf nicht mit Tragweite vermischt werden. Keine Quellen erfinden. Echte Beleglücken, unbedingte Behauptungen oder fehlerhafte Pfade bleiben Sperrgründe; korrigiere den Assessment-Entwurf nur quellengebunden.' } : {}),
+    transport_revision: 'researched-luna-json-3',
+    task: 'Erzeuge eine vollständige neue Ausgabe für diesen unveränderten Rechercheauftrag. Keine Veröffentlichung oder Freigabe ausführen.' + (kind === 'review' ? ' Du darfst höchstens zwei Web-Suchzugriffe für konkret fehlende Wirkungs-/Kontextbelege verwenden. Primärquellen bevorzugen, keine Paywall/Login-Umgehung. Nur tatsächlich gelesene kurze Belege mit exakter URL und Originalauszug als höchstens zwei research_sources ausweisen. Prüfe aktiv mindestens einen tatsächlich fehlenden Ereignis- oder Mechanismusbeleg, bevor du fehlende unabhängige Belege als Sperrgrund nennst. Die nachgelagerte Software prüft jeden zusätzlichen Beleg.' : ' Keine Tools aufrufen.'),
+    ...(kind === 'review' ? { review_scope: 'Zahlen wie magnitude, magnitude_range.lower/upper und magnitude_factors.*.value sind JSON-Zahlen, keine Strings. Alle 6 Faktoren selbst am Pfad begründen und die angegebene Formel exakt berechnen; keinen bisherigen Fehler übernehmen. Für low/high_uncertainty-Pfade den tatsächlichen Recherchepass dokumentieren. Prüfe das modellierte Wirkungspotenzial, nicht ob eine vorgeschlagene Maßnahme bereits umgesetzt wurde. Unabhängiger Fachpass bedeutet unabhängiges Prüfurteil; es ist keine pauschale Zwei-Quellen-Pflicht. Eine korrekt zugeschriebene vorläufige Meldung kann auf einer verlässlichen Einzelquelle beruhen. confirmed_claim und schwere strittige Vorwürfe brauchen die jeweils strengeren Belege. Fehlender Beschluss, unbekannte Konditionen oder fehlende gemessene Folgen dürfen eine korrekt als Vorschlag und ex ante bezeichnete Analyse nicht allein blockieren. institutional_status prüft die zutreffende Bezeichnung des realen Status, nicht das Vorliegen einer endgültigen Entscheidung. magnitude prüft Faktoren, Wirkungsraum und Berechnung; geringe Evidenz gehört nach evidence und darf nicht mit Tragweite vermischt werden. Keine Quellen erfinden. Echte Beleglücken, unbedingte Behauptungen oder fehlerhafte Pfade bleiben Sperrgründe; korrigiere den Assessment-Entwurf nur quellengebunden.' } : {}),
     output_contract: contract,
+    ...(kind === 'review' ? { research_access: knowledge.research_access || null } : {}),
     assignment: original,
     ...(packet.original_input ? { repair: { validation_errors: packet.validation_errors, attempt: packet.correction_attempt, prior_output: priorOutput } } : {}),
     binding_rule: 'job_id, input_hash, schema_version und processed_at setzt der Server. Keine anderen Bindungen oder Quellen-IDs verändern. Eine native News-Analyse steht einmal unter wirkungsticker.analysis, nicht in einem analyses-Array. Keine technischen Zusatzfelder im Output.',
@@ -65,6 +66,8 @@ export function validateApiOutput(output, packet, now) {
   const schema = kind === 'news' ? outputSchema : kind === 'review' ? semanticOutputSchema
     : output.disposition === 'hold' ? EDITORIAL_REQUEST_CONTRACT_V4.hold_output_schema : EDITORIAL_REQUEST_CONTRACT_V4.output_schema;
   parsePacket(JSON.stringify(output), schema);
+  output = structuredClone(output);
+  canonicalAssessmentNumbers(output.impact_assessment || output.wirkungsticker?.analysis?.impact_assessment);
   if (output.job_id !== original.job_id || output.input_hash !== original.input_hash) throw Error('BRIDGE_JOB_BINDING_MISMATCH');
   if (!Number.isFinite(Date.parse(output.processed_at)) || Date.parse(output.processed_at) < Date.parse(original.created_at)
     || Date.parse(output.processed_at) > Date.parse(now) + 300000) throw Error('BRIDGE_OUTPUT_TIME_INVALID');
@@ -74,6 +77,22 @@ export function validateApiOutput(output, packet, now) {
     if (output.preview.format !== 'news') validateEditorialPreview(output.preview);
   }
   return output;
+}
+
+// Lossless transport typing only: an explicitly supplied "3" is the number 3.
+// Never derive scores, fill nulls, alter source IDs or adjust a method judgment.
+export function canonicalAssessmentNumbers(assessment) {
+  const numeric = (object, key) => { if (object && typeof object[key] === 'string' && /^[0-5]$/.test(object[key])) object[key] = Number(object[key]); };
+  const path = p => {
+    numeric(p, 'magnitude'); numeric(p?.magnitude_range, 'lower'); numeric(p?.magnitude_range, 'upper');
+    for (const key of ['reach','intensity','duration','irreversibility','vulnerability','system_depth']) numeric(p?.magnitude_factors?.[key], 'value');
+  };
+  for (const key of ['human','planet','democracy']) {
+    const dimension = assessment?.dimensions?.[key]; numeric(dimension, 'magnitude');
+    for (const p of [...(dimension?.primary_paths || []), ...(dimension?.secondary_paths || [])]) path(p);
+  }
+  for (const effect of assessment?.observed_effects || []) path(effect);
+  return assessment;
 }
 
 // The established analysis prompt returns {analyses:[...]}. Convert that native
@@ -118,7 +137,7 @@ export function wrapNativeNewsOutput(output, original) {
   };
 }
 
-export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, excludedIds = [] } = {}) {
+export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, newsNotBefore = null, excludedIds = [] } = {}) {
   // Finish the independent gate for current prepared news before opening more
   // new drafts. Otherwise a constant inflow can starve actual publication.
   const priority = job => job.input?.job_type === 'impact_semantic_review' ? 595 : job.status === 'correction_pending' ? 585 : processorPriority(job, now);
@@ -130,6 +149,7 @@ export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, exc
     if (kind === 'personal') return true;
     const evidence = latestEvidenceTime(job.candidate || input.record || input, now);
     return Number.isFinite(evidence) && evidence <= Date.parse(now) + 300000
+      && (newsNotBefore === null || evidence >= Date.parse(newsNotBefore))
       && evidence >= Date.parse(now) - maxNewsAgeHours * 3600000;
   }).sort((a, b) => priority(b) - priority(a)
     || latestEvidenceTime(b.candidate || b.input, now) - latestEvidenceTime(a.candidate || a.input, now)

@@ -13,7 +13,7 @@ unverändert. Eine gelieferte Ausgabe ist noch keine Veröffentlichung.
 - Oracle-Worker mit `api-processor-config.json` im bestehenden privaten
   Bridge-Verzeichnis: version 1, enabled, max_jobs_per_run 1..10,
   max_news_age_hours 1..24, news_only, excluded_job_ids. Pilot: news_only=true,
-  höchstens fünf frische Aufträge. `--dry-run` erzeugt weder Claims noch API-Aufrufe.
+  zunächst ein frischer Auftrag je manuell ausgelöstem Lauf. `--dry-run` erzeugt weder Claims noch API-Aufrufe.
 - Gesonderter API-Read-/Write-Preflight, atomarer Dropbox-Claim, unveränderliche
   Ausgaben. Fremde Claims, ACKs und vorhandene Ausgaben bleiben unangetastet.
 - SQLite-Prozesslock verhindert parallele Worker. Timer alle zehn Minuten, erst
@@ -32,11 +32,10 @@ unverändert. Eine gelieferte Ausgabe ist noch keine Veröffentlichung.
   fachliche Bewertung durch bloßes Umbenennen oder automatische Score-Ergänzung.
 - Versionierte fachliche Regeln und Quellenmanifest statt angenommener
   ChatGPT-Erinnerungen. Der Entwurf verwendet mitgelieferte Quellenauszüge.
-  Der unabhängige Fachpass kann maximal zwei Web-Suchzugriffe für fehlende Belege
-  nutzen; maximal zwei Zusatzquellen werden durch die vorhandene Zugangs-/Zitat-
+  Der unabhängige Fachpass verwendet einen bis maximal zwei Web-Suchzugriffe für fehlende Belege; maximal zwei Zusatzquellen werden durch die vorhandene Zugangs-/Zitat-
   Prüfung verifiziert. Fehlende Recherche bleibt HOLD; keine Quellenlektüre erfinden.
-- Modell gpt-5.4-mini, reasoning low, maximal 24.000 Ausgabetokens und
-  150.000 UTF-8-Bytes Eingang; keine automatischen Provider-Retries, Bild- oder
+- Modell gpt-5.6-luna, reasoning medium, maximal 48.000 Ausgabetokens und
+  300.000 UTF-8-Bytes Eingang; keine automatischen Provider-Retries, Bild- oder
   Schreibtools. Entwurf reserviert USD .25, Fachpass mit maximal zwei Suchzugriffen
   USD .50. Das ist eine vorherige Kostenreservierung innerhalb derselben
   Monatsgrenzen, keine Budgeterhöhung. Auch die Suchgebühr (USD .01 je Aufruf)
@@ -83,3 +82,27 @@ Pfadannahmen mit beobachteten Wirkungen. Er wurde separat mit Regressionstest
 korrigiert; Aussagen im Artikel, in Begründungen und Outcomes bleiben geprüft.
 HOLD, gelieferter Entwurf, unabhängige Prüfung und öffentliche Meldung werden
 weiterhin getrennt gezählt. Nicht abgeschlossene Pilotfälle sind kein PASS.
+
+Weitere Transportkorrektur: Vollständig beendete Werte dürfen ausschließlich um
+fehlende äußere JSON-Klammern ergänzt werden; keine Wörter, Zahlen oder Felder.
+Unvollständige Providerantworten bleiben gesperrt. Bereits explizit gelieferte
+Ziffernstrings 0..5 werden nur in Magnitude-/Faktorfeldern numerisch typisiert.
+Rohantwort und Kostenjournal bleiben unverändert; alle fachlichen Gates greifen.
+
+Tarifnachweis, geprüft 13.09.2026: https://developers.openai.com/api/docs/models/gpt-5.6-luna
+Input/Cache/Output USD 0.20/0.02/1.20 je Million Tokens. Alte Mini-Antworten
+behalten ihren ursprünglichen Tarif. Die Reserven USD .25/.50 bleiben bestehen.
+Der Modellwechsel ist ein gezielter Pilot; kein automatischer Modell-Fallback.
+
+Der begrenzte Korrekturauftrag darf Quellenpaket und vorherige Ausgabe vollständig
+enthalten (maximal 300 KB vor Transport-Escaping). Kurze konkrete Empfänger-,
+Raum- und Zeitangaben werden nicht an einer Zwölf-Zeichen-Grenze verworfen;
+Mechanismen und Begründungen bleiben inhaltlich und formal erforderlich.
+Neue Recherche erhält die Ausschlüsse aus demselben Quellenregister wie die
+nachgelagerte Prüfung. Dies erweitert keine Zugangsrechte.
+
+Optionaler Wiederanlauf-Stichtag `news_not_before` bezieht sich auf das belegte
+Quelldatum. Er stellt den älteren Nachrichtenstapel zurück, ohne ihn zu löschen.
+Der normale Sechs-Stunden-Rahmen bleibt: Ein frisch ausgewählter Artikel darf
+seinen unabhängigen Fachpass auch nach Ablauf der ersten Stunde noch abschließen.
+Persönliche Aufträge unterliegen diesem Nachrichtenstichtag nicht.

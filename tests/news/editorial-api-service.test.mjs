@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import { EditorialApiService, apiRequestKey, API_EDITORIAL_PROTOCOL, publicApiJob } from '../../scripts/news/bridge/api-service.mjs';
+import { EditorialApiService, apiRequestKey, API_EDITORIAL_PROTOCOL, publicApiJob, parseEditorialJson } from '../../scripts/news/bridge/api-service.mjs';
 import { editorialKnowledge } from '../../scripts/news/bridge/editorial-knowledge.mjs';
 
 class ProviderError extends Error { constructor(message, statusCode, technicalMessage, usageEvidence) { super(message); Object.assign(this, { statusCode, technicalMessage, usageEvidence }); } }
@@ -35,10 +35,26 @@ test('only independent reviews get bounded search and account tool calls even fo
  const f=await fixture(t,{searches:2,output:'broken JSON'});
  const result=await f.service.submit(request({kind:'review'}));
  assert.equal(result.status,'failed'); assert.equal(f.bodies[0].max_tool_calls,2);
+ assert.equal(f.bodies[0].tool_choice,'required');
  assert.deepEqual(f.bodies[0].tools,[{type:'web_search',search_context_size:'low'}]);
  assert.equal(f.bodies[0].text,undefined); // provider rejects Web Search + JSON mode
  assert.equal(f.reservations[0],0.5); assert.equal(f.charges[1].usage.web_search_calls,2);
  await f.service.submit(request({kind:'review'})); assert.equal(f.calls.length,1);
+});
+test('JSON transport closes only outer containers, never missing words or values',()=>{
+ assert.deepEqual(parseEditorialJson('{"review":{"status":"ready"}'),{review:{status:'ready'}});
+ assert.deepEqual(parseEditorialJson('{"paths":[{"magnitude":3}]'),{paths:[{magnitude:3}]});
+ for(const invalid of ['{"a":"unterminated','{"a":','{"a":1','{"a":{},','{"a":{}]','{"a":{} "b":{}}','not JSON']) assert.throws(()=>parseEditorialJson(invalid));
+});
+test('completed raw response with missing outer brace is recovered without changing journal or spending again',async t=>{
+ const f=await fixture(t),input=request(),record={...input,status:'failed',error:'api_editorial_invalid_json',http_status:200,provider_called:true,
+  updated_at:'2026-09-13T10:00:00Z',usage:{input_tokens:12,output_tokens:9},provider_response:JSON.stringify({status:'completed',output:[{type:'message',content:[{type:'output_text',text:'{"review":{"status":"blocked"}'}]}]})};
+ await fs.writeFile(f.service.file(input.key),JSON.stringify(record));
+ const result=await f.service.submit(input);
+ assert.equal(result.status,'completed');assert.equal(result.output.review.status,'blocked');assert.equal(f.calls.length,0);assert.equal(f.charges.length,0);
+ assert.deepEqual(JSON.parse(await fs.readFile(f.service.file(input.key),'utf8')),record);
+ record.provider_response=record.provider_response.replace('completed','incomplete');await fs.writeFile(f.service.file(input.key),JSON.stringify(record));
+ assert.equal((await f.service.get(input.key)).status,'failed');
 });
 test('documented pre-execution configuration rejection is not an inference retry or a lost paid response',async t=>{
  const f=await fixture(t);
@@ -58,7 +74,7 @@ test('complete result survives client retry and process restart with exactly one
   assert.equal((await new EditorialApiService(f.options).submit(input)).status, 'completed');
   assert.equal(f.calls.length, 1); assert.equal(f.charges.length, 2);
   assert.equal(f.bodies[0].tools, undefined); assert.equal(f.bodies[0].store, false);
-  assert.equal(f.bodies[0].reasoning.effort, 'low');
+  assert.equal(f.bodies[0].reasoning.effort, 'medium');
   assert.equal(publicApiJob(first).provider_response, undefined);
   assert.ok((await fs.stat(f.service.file(input.key))).mode & 0o600);
   assert.equal((await fs.stat(f.service.file(input.key))).mode & 0o077, 0);
@@ -91,7 +107,7 @@ test('a journaled interrupted attempt cannot be retried by a new process', async
 });
 test('changed prompt, excessive input and unbounded repairs are rejected before spending', async t => {
   const f = await fixture(t), input = request();
-  for (const bad of [{ ...input, prompt: 'changed' }, request({ attempt: 3 }), request({ prompt: '€'.repeat(51000) }), request({ kind: 'publish' })])
+  for (const bad of [{ ...input, prompt: 'changed' }, request({ attempt: 3 }), request({ prompt: '€'.repeat(101000) }), request({ kind: 'publish' })])
     await assert.rejects(f.service.submit(bad), /INPUT_INVALID/);
   assert.equal(f.calls.length, 0);
 });
@@ -101,6 +117,7 @@ test('concurrent clients cannot generate the same job twice', async t => {
 test('knowledge pack is versioned, source-bound and preserves all MPD/approval rules', () => {
   const knowledge = editorialKnowledge(path.resolve('.'));
   assert.equal(knowledge.manifest.sources.length, 3); assert.equal(knowledge.hash.length, 64);
+  assert.ok(knowledge.research_access.article_exclusions['apnews.com']);
   for (const phrase of ['keinen Zugriff auf Natalies ChatGPT-Erinnerungen', 'abschließende Natalie-Freigabe', 'R/I/D/U/V/S', 'Reverse Merit Order', 'Meine Einordnung', 'Alle drei MPD-Dimensionen']) assert.ok(knowledge.instructions.includes(phrase));
 });
 test('a budget-only refusal can resume after funding without duplicating provider work', async t => {
