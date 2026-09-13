@@ -7,6 +7,14 @@ const sha = value => createHash('sha256').update(JSON.stringify(value)).digest('
 const ID = /^wt_\d{8}T\d{6}Z_[a-f0-9]{24}$/;
 const digest = /^[a-f0-9]{64}$/;
 const kinds = ['news', 'review', 'personal'];
+function rejectedBeforeExecution(record) {
+  if (record.http_status !== 400 || !record.provider_response) return false;
+  try {
+    const value = JSON.parse(record.provider_response);
+    return !value.id && !value.usage && value.error?.type === 'invalid_request_error'
+      && value.error.message === 'Web Search cannot be used with JSON mode.';
+  } catch { return false; }
+}
 export function apiRequestKey(input) {
   const { protocol, job_id, input_hash, packet_hash, kind, attempt, profile_hash, instructions, prompt } = input;
   return sha({ protocol, job_id, input_hash, packet_hash, kind, attempt, profile_hash, instructions, prompt });
@@ -36,6 +44,7 @@ export class EditorialApiService {
     try {
       const record = JSON.parse(await readFile(this.file(key), 'utf8'));
       if (record.key !== key || record.protocol !== API_EDITORIAL_PROTOCOL) throw Error('API_EDITORIAL_JOURNAL_INVALID');
+      if (rejectedBeforeExecution(record)) return { ...record, pre_execution_rejected: true };
       // A process crash must never cause a second charge for the same attempt.
       return record.status === 'started' && !this.active.has(key) ? { ...record, status: 'unknown', error: 'API_EDITORIAL_INTERRUPTED' } : record;
     } catch (error) { if (error.code === 'ENOENT') return null; throw error; }
@@ -66,7 +75,7 @@ export class EditorialApiService {
       for (const file of await readdir(this.directory)) {
         if (!/^[a-f0-9]{64}\.json$/.test(file)) continue;
         const old = await this.get(file.slice(0, -5));
-        if (old.job_id !== input.job_id || !old.provider_called) continue;
+        if (old.job_id !== input.job_id || !old.provider_called || old.pre_execution_rejected) continue;
         if (old.status === 'unknown' || old.status === 'started') return { status: 'unknown', error: 'API_EDITORIAL_JOB_INTERRUPTED', provider_called: false };
         called++;
       }
@@ -92,7 +101,7 @@ export class EditorialApiService {
               max_output_tokens: 24000, instructions: input.instructions, input: input.prompt,
               ...(researched ? { tools: [{ type: 'web_search', search_context_size: 'low' }], max_tool_calls: 2,
                 include: ['web_search_call.action.sources'] } : {}),
-              text: { format: { type: 'json_object' } } }),
+              ...(!researched ? { text: { format: { type: 'json_object' } } } : {}) }),
           });
           const raw = await boundedResponse(response);
           record.provider_request_id = response.headers.get('x-request-id');

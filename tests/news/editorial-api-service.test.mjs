@@ -36,8 +36,20 @@ test('only independent reviews get bounded search and account tool calls even fo
  const result=await f.service.submit(request({kind:'review'}));
  assert.equal(result.status,'failed'); assert.equal(f.bodies[0].max_tool_calls,2);
  assert.deepEqual(f.bodies[0].tools,[{type:'web_search',search_context_size:'low'}]);
+ assert.equal(f.bodies[0].text,undefined); // provider rejects Web Search + JSON mode
  assert.equal(f.reservations[0],0.5); assert.equal(f.charges[1].usage.web_search_calls,2);
  await f.service.submit(request({kind:'review'})); assert.equal(f.calls.length,1);
+});
+test('documented pre-execution configuration rejection is not an inference retry or a lost paid response',async t=>{
+ const f=await fixture(t);
+ for(let i=0;i<3;i++){
+   const old=request({kind:'review',prompt:'unsupported config '+i});
+   await fs.writeFile(f.service.file(old.key),JSON.stringify({...old,status:'failed',provider_called:true,http_status:400,
+     provider_response:JSON.stringify({error:{type:'invalid_request_error',message:'Web Search cannot be used with JSON mode.'}})}));
+   assert.equal((await f.service.get(old.key)).pre_execution_rejected,true);
+ }
+ assert.equal((await f.service.submit(request({kind:'review',prompt:'supported config'}))).status,'completed');
+ assert.equal(f.calls.length,1);
 });
 test('complete result survives client retry and process restart with exactly one generation/reservation', async t => {
   const f = await fixture(t), input = request();

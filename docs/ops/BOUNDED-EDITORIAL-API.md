@@ -35,8 +35,8 @@ unverändert. Eine gelieferte Ausgabe ist noch keine Veröffentlichung.
   Der unabhängige Fachpass kann maximal zwei Web-Suchzugriffe für fehlende Belege
   nutzen; maximal zwei Zusatzquellen werden durch die vorhandene Zugangs-/Zitat-
   Prüfung verifiziert. Fehlende Recherche bleibt HOLD; keine Quellenlektüre erfinden.
-- Modell gpt-5.4-mini, reasoning low, maximal 24.000 Ausgabetokens,
-- 150.000 UTF-8-Bytes Eingang; keine automatischen Provider-Retries, Bild- oder
+- Modell gpt-5.4-mini, reasoning low, maximal 24.000 Ausgabetokens und
+  150.000 UTF-8-Bytes Eingang; keine automatischen Provider-Retries, Bild- oder
   Schreibtools. Entwurf reserviert USD .25, Fachpass mit maximal zwei Suchzugriffen
   USD .50. Das ist eine vorherige Kostenreservierung innerhalb derselben
   Monatsgrenzen, keine Budgeterhöhung. Auch die Suchgebühr (USD .01 je Aufruf)
