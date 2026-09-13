@@ -256,6 +256,16 @@ export class ApiEditorialProcessor {
           break;
         }
         catch (error) {
+          // A missing executable or temporary source/network failure cannot be
+          // repaired by rewriting an article. Keep the completed paid response
+          // for the next validation run; no new key, claim or model call.
+          const code = error?.code || error?.cause?.code;
+          if (error?.retryable === true || ['ENOENT','EACCES','ENOMEM','ENOSPC','EMFILE','ECONNRESET','ECONNREFUSED','ETIMEDOUT','EAI_AGAIN'].includes(code)
+            || /^(?:ARTICLE|ROBOTS|RSL)_HTTP_(?:429|5\d\d)(?::|$)/.test(error?.message || '')) {
+            const retry = Object.assign(Error('API_EDITORIAL_VALIDATION_DEPENDENCY_UNAVAILABLE'), { retryable: true, cause: error });
+            this.store.observe(`api-validation:${resultKey}`, {job_id:id,key:resultKey,at:this.now(),error:retry.message,retryable:true});
+            throw retry;
+          }
           validationError = [String(error.message), ...(error.issues || [])].join('\n').slice(0, 6000);
           this.store.observe(`api-validation:${resultKey}`, {job_id:id,key:resultKey,at:this.now(),error:validationError});
         }

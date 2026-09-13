@@ -116,3 +116,9 @@ Umwandlung in eine unabhängig bestätigte Tatsachenbehauptung.
 Die Web-Recherche erhält die bereits im Register für begrenzte Artikelprüfung
 zugelassenen Hosts. Eigene WÖk-Seiten dienen dabei nicht als Ereignisbeleg;
 Robots-, RSL-, Zitat- und Quellenprüfungen bleiben unverändert.
+
+Der echte Recherchepilot bestätigt gültige Schema-Antworten mit Web-Suche.
+Oracle benötigt für zugelassene PDF-Belege `poppler-utils` (`pdftotext`). Fehlende
+Werkzeuge und vorübergehende Quellen-/Netzfehler stoppen nur die Validierung;
+die fertige Antwort wird bei Wiederaufnahme erneut geprüft, ohne dafür einen
+weiteren Text zu generieren. Ein fachlicher Prüffehler bleibt davon getrennt.
