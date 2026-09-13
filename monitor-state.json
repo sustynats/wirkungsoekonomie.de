@@ -5,43 +5,48 @@
       "firstSeen": "2026-09-12T15:10:39.580Z",
       "active": true
     },
-    "bridge-queue": {
-      "firstSeen": "2026-09-13T11:15:00.570Z",
-      "active": true
-    },
-    "bridge-queue-size": {
-      "firstSeen": "2026-09-13T11:15:00.570Z",
-      "active": true
-    },
-    "bridge-processor": {
-      "firstSeen": "2026-09-13T11:15:00.570Z",
-      "active": true
-    },
-    "bridge-shards": {
-      "firstSeen": "2026-09-13T11:15:00.570Z",
-      "active": true
-    },
-    "bridge-publication-flow": {
-      "firstSeen": "2026-09-13T11:15:00.570Z",
-      "active": true
-    },
-    "bridge-throughput": {
-      "firstSeen": "2026-09-13T11:15:00.570Z",
-      "active": true
-    },
-    "bridge-errors": {
-      "firstSeen": "2026-09-13T11:15:00.570Z",
-      "active": true
-    },
-    "bridge-api-results": {
-      "firstSeen": "2026-09-13T11:38:12.296Z",
-      "active": true
-    },
-    "bridge-import": {
-      "firstSeen": "2026-09-13T12:02:48.943Z",
-      "active": true
+    "bridge-access": {
+      "firstSeen": "2026-09-13T12:59:24.809Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "69b2f74846ff8aa859fa3310",
+      "content": "✓ WÖk-Störung behoben\nBridge-Verarbeitung\nPrüfung: 2026-09-13T12:59:24.809Z"
+    },
+    {
+      "id": "3cffa9265452f81c1df359ff",
+      "content": "✓ WÖk-Störung behoben\nRedaktionsrückstau\nPrüfung: 2026-09-13T12:59:24.809Z"
+    },
+    {
+      "id": "06ecb4b5b0b8d6d9ea2b5e1d",
+      "content": "✓ WÖk-Störung behoben\nRedaktionsworker\nPrüfung: 2026-09-13T12:59:24.809Z"
+    },
+    {
+      "id": "e51ee6101ceadb088afc758a",
+      "content": "✓ WÖk-Störung behoben\nVollständigkeit der Redaktionsworker\nPrüfung: 2026-09-13T12:59:24.809Z"
+    },
+    {
+      "id": "0edfcfb056e90ad9212598ad",
+      "content": "✓ WÖk-Störung behoben\nAPI-Redaktionsverarbeitung\nPrüfung: 2026-09-13T12:59:24.809Z"
+    },
+    {
+      "id": "2c1157115fe804469432cabe",
+      "content": "✓ WÖk-Störung behoben\nAktuelle Nachrichten tatsächlich veröffentlicht\nPrüfung: 2026-09-13T12:59:24.809Z"
+    },
+    {
+      "id": "ff51975b86fcda3d2a2cde3f",
+      "content": "✓ WÖk-Störung behoben\nRedaktionsdurchsatz\nPrüfung: 2026-09-13T12:59:24.809Z"
+    },
+    {
+      "id": "75c31a249e4a6eb653e8a99c",
+      "content": "✓ WÖk-Störung behoben\nÜbernahme fertiger Meldungen\nPrüfung: 2026-09-13T12:59:24.809Z"
+    },
+    {
+      "id": "8a1aa754e1e459357d38df87",
+      "content": "✓ WÖk-Störung behoben\nBridge-Quarantäne\nPrüfung: 2026-09-13T12:59:24.809Z"
+    }
+  ],
   "dailyDate": "2026-09-13"
 }
