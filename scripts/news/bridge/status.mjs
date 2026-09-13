@@ -50,7 +50,7 @@ export async function outputStatus(store, transport, now) {
     if (visualGenerationProvider() === 'chatgpt_bridge' && names.has(`${id}.title.png`) !== names.has(`${id}.visual.json`)) continue;
     ready.push(id);
   }
-  for (const job of await store.all()) {
+  for (const job of await (store.statusJobs ? store.statusJobs() : store.all())) {
     if (job.status === 'correction_prepared' || job.status === 'accepted' || job.status === 'acknowledged' && !job.archived_at) ready.push(job.input.job_id);
   }
   const result = { at: now, status: ready.length ? 'OUTPUT_READY' : 'PROCESSING_PENDING',
@@ -61,10 +61,10 @@ export async function outputStatus(store, transport, now) {
 }
 
 export async function monitorStatus(store, now) {
-  const jobs=await store.all(), open=jobs.filter(j=>!['acknowledged','quarantined','archive_failed'].includes(j.status));
+  const jobs=await (store.statusJobs ? store.statusJobs() : store.all()), open=jobs.filter(j=>!['acknowledged','quarantined','archive_failed'].includes(j.status));
   const poll=await store.observation('output-poll'), detected=[];
   const claims=[];
-  for(const job of open){const claim=await store.observation(`claim:${job.input.job_id}`);const output=await store.observation(`output:${job.input.job_id}`);const outputExists=output?.at && Number(output.generation||0)===(job.corrections?.length||0);if(claim?.at && !outputExists && !job.accepted && !await waitingForReview(store,job))claims.push({job_id:job.input.job_id,at:claim.at});}
+  for(const job of open){const claim=await store.observation(`claim:${job.input.job_id}`);const output=await store.observation(`output:${job.input.job_id}`);const outputExists=output?.at && Number(output.generation||0)===(job.correction_count ?? job.corrections?.length ?? 0);if(claim?.at && !outputExists && !job.accepted && !await waitingForReview(store,job))claims.push({job_id:job.input.job_id,at:claim.at});}
   for(const id of poll?.ready||[]){const job=await store.get(id);if(job&&!job.ack&&!await waitingForReview(store,job)){const at=(await store.observation(`output:${id}`))?.at;if(at)detected.push(at);}}
   return { reachable:true, checked_at:now, poll_at:poll?.at||null, status:poll?.status||'PROCESSING_PENDING',
     open_count:open.length,
