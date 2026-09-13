@@ -7,9 +7,14 @@
     },
     "bridge-access": {
       "firstSeen": "2026-09-13T12:59:24.809Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "78f00284144fadb74c0c9886",
+      "content": "⚠ WÖk-Betriebsstörung\nDropbox-Bridge: Der private Oracle-Bridge-Dienst ist nicht erreichbar.\nSeit: 2026-09-13T12:59:24.809Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-13"
 }
