@@ -21,10 +21,6 @@
       "firstSeen": "2026-09-13T13:49:45.461Z",
       "active": true
     },
-    "bridge-api-results": {
-      "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": true
-    },
     "bridge-throughput": {
       "firstSeen": "2026-09-13T13:49:45.461Z",
       "active": true
@@ -34,6 +30,11 @@
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "b7c8d3e8b4fd61dd64719807",
+      "content": "✓ WÖk-Störung behoben\nAPI-Redaktionsverarbeitung\nPrüfung: 2026-09-13T17:29:14.328Z"
+    }
+  ],
   "dailyDate": "2026-09-13"
 }
