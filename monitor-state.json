@@ -1,39 +1,44 @@
 {
   "schema": 1,
   "incidents": {
-    "bridge-errors": {
-      "firstSeen": "2026-09-10T08:50:27.331Z",
-      "active": true
-    },
-    "bridge-queue": {
-      "firstSeen": "2026-09-10T17:06:12.591Z",
-      "active": true
-    },
-    "bridge-queue-size": {
-      "firstSeen": "2026-09-11T07:35:24.922Z",
-      "active": true
-    },
-    "bridge-publication-flow": {
-      "firstSeen": "2026-09-12T04:05:38.205Z",
-      "active": true
-    },
-    "bridge-shards": {
-      "firstSeen": "2026-09-12T07:58:31.123Z",
-      "active": true
-    },
     "publication": {
       "firstSeen": "2026-09-12T15:10:39.580Z",
       "active": true
     },
-    "bridge-processor": {
-      "firstSeen": "2026-09-12T16:29:25.679Z",
-      "active": true
-    },
-    "bridge-throughput": {
-      "firstSeen": "2026-09-13T03:20:42.718Z",
-      "active": true
+    "bridge-access": {
+      "firstSeen": "2026-09-13T10:37:42.952Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "139bbe186641793cd39fc579",
+      "content": "✓ WÖk-Störung behoben\nBridge-Verarbeitung\nPrüfung: 2026-09-13T10:37:42.952Z"
+    },
+    {
+      "id": "10a5d8ae03a181a3700b340f",
+      "content": "✓ WÖk-Störung behoben\nRedaktionsrückstau\nPrüfung: 2026-09-13T10:37:42.952Z"
+    },
+    {
+      "id": "9583fbcbc6e4bb66c63229be",
+      "content": "✓ WÖk-Störung behoben\nChatGPT-Redaktionsworker\nPrüfung: 2026-09-13T10:37:42.952Z"
+    },
+    {
+      "id": "f2fa0fa11e0fab2221c9bfb0",
+      "content": "✓ WÖk-Störung behoben\nVollständigkeit der Redaktionsworker\nPrüfung: 2026-09-13T10:37:42.952Z"
+    },
+    {
+      "id": "60b9da77d7afbc80afcdeadc",
+      "content": "✓ WÖk-Störung behoben\nAktuelle Nachrichten tatsächlich veröffentlicht\nPrüfung: 2026-09-13T10:37:42.952Z"
+    },
+    {
+      "id": "4cf748ebaefd1911056675f5",
+      "content": "✓ WÖk-Störung behoben\nRedaktionsdurchsatz\nPrüfung: 2026-09-13T10:37:42.952Z"
+    },
+    {
+      "id": "e8890af2e6c19bd8f5e2a185",
+      "content": "✓ WÖk-Störung behoben\nBridge-Quarantäne\nPrüfung: 2026-09-13T10:37:42.952Z"
+    }
+  ],
   "dailyDate": "2026-09-13"
 }
