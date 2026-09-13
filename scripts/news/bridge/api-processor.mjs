@@ -137,7 +137,7 @@ export function wrapNativeNewsOutput(output, original) {
   };
 }
 
-export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, excludedIds = [] } = {}) {
+export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, newsNotBefore = null, excludedIds = [] } = {}) {
   // Finish the independent gate for current prepared news before opening more
   // new drafts. Otherwise a constant inflow can starve actual publication.
   const priority = job => job.input?.job_type === 'impact_semantic_review' ? 595 : job.status === 'correction_pending' ? 585 : processorPriority(job, now);
@@ -149,6 +149,7 @@ export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, exc
     if (kind === 'personal') return true;
     const evidence = latestEvidenceTime(job.candidate || input.record || input, now);
     return Number.isFinite(evidence) && evidence <= Date.parse(now) + 300000
+      && (newsNotBefore === null || evidence >= Date.parse(newsNotBefore))
       && evidence >= Date.parse(now) - maxNewsAgeHours * 3600000;
   }).sort((a, b) => priority(b) - priority(a)
     || latestEvidenceTime(b.candidate || b.input, now) - latestEvidenceTime(a.candidate || a.input, now)

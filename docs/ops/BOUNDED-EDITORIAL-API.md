@@ -100,3 +100,9 @@ Raum- und Zeitangaben werden nicht an einer Zwölf-Zeichen-Grenze verworfen;
 Mechanismen und Begründungen bleiben inhaltlich und formal erforderlich.
 Neue Recherche erhält die Ausschlüsse aus demselben Quellenregister wie die
 nachgelagerte Prüfung. Dies erweitert keine Zugangsrechte.
+
+Optionaler Wiederanlauf-Stichtag `news_not_before` bezieht sich auf das belegte
+Quelldatum. Er stellt den älteren Nachrichtenstapel zurück, ohne ihn zu löschen.
+Der normale Sechs-Stunden-Rahmen bleibt: Ein frisch ausgewählter Artikel darf
+seinen unabhängigen Fachpass auch nach Ablauf der ersten Stunde noch abschließen.
+Persönliche Aufträge unterliegen diesem Nachrichtenstichtag nicht.

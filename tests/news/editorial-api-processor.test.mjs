@@ -93,6 +93,12 @@ test('current independent reviews cannot be starved by a constant inflow of fres
   const f = fixture(), review = { input: { ...input, job_id: id.replace(/a/g,'f'), job_type: 'impact_semantic_review' }, candidate: { sources: [{ published_at: '2026-09-13T09:10:00Z' }] } };
   assert.equal(selectApiJobs([f.job, review], now)[0].input.job_type, 'impact_semantic_review');
 });
+test('fresh-start cutoff leaves the old queue intact and lets selected news finish review after an hour',()=>{
+ const make=(digit,date,kind='new_story')=>({input:{...input,job_id:id.replace(/a/g,digit),job_type:kind},candidate:{sources:[{published_at:date}]}});
+ const old=make('c','2026-09-13T08:00:00Z','impact_semantic_review'),review=make('d','2026-09-13T10:13:00Z','impact_semantic_review'),fresh=make('e','2026-09-13T11:20:00Z');
+ assert.deepEqual(selectApiJobs([old,fresh,review],'2026-09-13T11:30:00Z',{newsNotBefore:'2026-09-13T10:00:00Z'}).map(j=>j.input.job_id),[review.input.job_id,fresh.input.job_id]);
+ assert.equal(old.input.job_type,'impact_semantic_review');
+});
 test('native analysis is wrapped without changing its content or skipping downstream gates', async () => {
   const { wrapNativeNewsOutput, validateApiOutput } = await import('../../scripts/news/bridge/api-processor.mjs');
   const original = { ...input, wirkungsticker: { story_id: 'wt-example' }, sources: [{source_id:'source-a',url:'https://example.com/story'}] };

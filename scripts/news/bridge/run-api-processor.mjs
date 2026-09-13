@@ -39,9 +39,10 @@ try {
     candidate: { sources: JSON.parse(row.sources || row.review_sources || '[]') } }));
   const configured = JSON.parse(fs.readFileSync(path.join(directory, 'api-processor-config.json'), 'utf8'));
   if (configured.version !== 1 || !Number.isInteger(configured.max_jobs_per_run) || configured.max_jobs_per_run < 1 || configured.max_jobs_per_run > 10
-    || !Number.isFinite(configured.max_news_age_hours) || configured.max_news_age_hours < 1 || configured.max_news_age_hours > 24) throw Error('API_EDITORIAL_CONFIG_INVALID');
+    || !Number.isFinite(configured.max_news_age_hours) || configured.max_news_age_hours < 1 || configured.max_news_age_hours > 24
+    || configured.news_not_before != null && (!Number.isFinite(Date.parse(configured.news_not_before)) || Date.parse(configured.news_not_before) > Date.now())) throw Error('API_EDITORIAL_CONFIG_INVALID');
   const jobs = selectApiJobs(candidates.filter(j => !configured.news_only || ['new_story','story_update','impact_semantic_review'].includes(j.input.job_type)), now(), {
-    maxJobs: 150, maxNewsAgeHours: configured.max_news_age_hours, excludedIds: configured.excluded_job_ids || [],
+    maxJobs: 150, maxNewsAgeHours: configured.max_news_age_hours, newsNotBefore: configured.news_not_before || null, excludedIds: configured.excluded_job_ids || [],
   });
   if (process.argv.includes('--dry-run')) {
     console.log(JSON.stringify({ status: 'DRY_RUN', selected: jobs.slice(0, configured.max_jobs_per_run).map(j => ({ job_id: j.input.job_id, kind: j.input.job_type })), eligible: jobs.length, api_calls: 0 }));
