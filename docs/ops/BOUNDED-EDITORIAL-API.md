@@ -171,3 +171,24 @@ Erfolgreiche Tests dieser Übergänge sind noch kein Produktivnachweis. Dafür b
 geprüfter Artikel, dauerhafter Import, ACK und tatsächlich erreichbare öffentliche URL
 erforderlich. Ein HOLD, eine zugestellte Ausgabe oder ein grüner Scheduler ist keine
 Veröffentlichung.
+
+## Geschlossene Fachausgabe und berechnete Ableitungen
+
+Der neue Fachpass liefert ein geschlossenes Structured-Outputs-Schema: alle
+MPD-Pfade, sechs begründete Faktoren, Quellen, Unsicherheiten und Schutzprüfungen.
+Die Software berechnet ausschließlich die redundanten arithmetischen Werte und
+die regelgebundene Aggregation der gelieferten Hauptpfade. Sie ergänzt keine
+fehlenden Faktoren, Einzelpfadrichtungen, Belege oder Schutzgrenzurteile. Der
+Original-Response bleibt im privaten Journal; nur die neue Arbeitskopie wird
+vervollständigt und danach vollständig fachlich und strukturell geprüft.
+
+Eine abgeschlossene, ergebnislose Recherche ist von einer noch ausstehenden
+Recherche getrennt. Wissensgrenzen und fehlende Belege bleiben ausdrücklich
+sichtbar; ein tatsächlich ungeklärter Kernfehler blockiert weiter. Vorhandene
+Aufrufgrenzen, Kostenjournale und Sperren ungewisser Ausgaben bleiben bestehen.
+
+Beim Runtime-Rollout reicht ein erfolgreicher systemd-Startauftrag nicht aus.
+Vor dem Wechsel muss der Dienstbenutzer das vollständige Modul-Paket laden
+können; anschließend müssen Prozess und authentifizierte HTTP-Abfrage bestehen.
+Bei Fehler wird die vorherige Runtime wieder eingesetzt, ohne Queue- oder
+Kostenjournale zurückzusetzen.
