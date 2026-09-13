@@ -28,6 +28,8 @@ test('compact status preserves correction, review, ACK and archival decisions',a
   put({...basic(5),status:'acknowledged',ack:{status:'imported'}});
   put({...basic(6),status:'acknowledged',archived_at:now});
   put({...basic(7),status:'quarantined'});
+  put({...basic(8),input:{job_id:id(8),job_type:'editorial_request'}});
+  store.observe('api-processor-health',{actor:'oracle_api',at:now,status:'ATTENTION'});
   store.observe(`claim:${id(1)}`,{at:'2026-09-13T06:00:00Z'});
   store.observe(`output:${id(1)}`,{at:now,generation:2});
   const transport={list:async()=>[{name:`${id(1)}.output.json`},{name:`${id(2)}.output.json`}]};
@@ -38,6 +40,8 @@ test('compact status preserves correction, review, ACK and archival decisions',a
   assert.deepEqual(await monitorStatus(store,now),expectedMonitor);
   assert.equal(expectedMonitor.oldest_claim_minutes,0);
   assert.equal(expectedMonitor.review_pending_count,1);
+  assert.equal(expectedMonitor.open_personal_count,1);
+  assert.equal(expectedMonitor.api_processor_health.actor,'oracle_api');
   assert.equal(expectedOutput.ready.includes(id(6)),false);
   assert.equal(store.statusJobs().some(row=>row.candidate),false);
   assert.equal(store.get(id(1)).candidate.text,'private content');

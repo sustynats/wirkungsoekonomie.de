@@ -92,6 +92,7 @@ export class BridgeStore {
   // packets or review histories. The legacy queue can exceed the server heap.
   statusJobs() {
     return this.db.prepare(`SELECT id, json_extract(body,'$.status') AS status,
+      json_extract(body,'$.input.job_type') AS job_type,
       json_extract(body,'$.created_at') AS created_at,
       json_extract(body,'$.publication_gate.status') AS gate_status,
       json_extract(body,'$.publication_gate.review_job_id') AS review_job_id,
@@ -101,7 +102,7 @@ export class BridgeStore {
       json_type(body,'$.ack') AS ack_type,
       COALESCE(json_array_length(body,'$.corrections'),0) AS correction_count
       FROM jobs WHERE json_extract(body,'$.archived_at') IS NULL ORDER BY id`).all().map(row => ({
-        input: {job_id: row.id}, status: row.status, created_at: row.created_at,
+        input: {job_id: row.id, job_type: row.job_type}, status: row.status, created_at: row.created_at,
         publication_gate: {status: row.gate_status, review_job_id: row.review_job_id},
         semantic_review: row.assessment_version ? {assessment: {version: row.assessment_version,
           semantics_revision: row.assessment_revision}} : null,
