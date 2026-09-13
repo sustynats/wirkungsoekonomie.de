@@ -1,6 +1,9 @@
 # Begrenzter API-Redaktionsprozess auf Oracle
 
-Stand 13.09.2026. Die API bereitet native Bridge-Ausgaben vor. Discovery, Import,
+Stand 13.09.2026. Die aktuelle Aufrufgrenze und der kontrollierte Wiederanlauf
+sind in [EDITORIAL-SINGLE-ATTEMPT.md](EDITORIAL-SINGLE-ATTEMPT.md) verbindlich
+beschrieben. Die früheren Pilotbefunde weiter unten dokumentieren die Entwicklung.
+Die API bereitet native Bridge-Ausgaben vor. Discovery, Import,
 Quellen-/Fakten-/MPD-Gates, unabhängiger semantischer Zweitpass und ACK bleiben
 unverändert. Eine gelieferte Ausgabe ist noch keine Veröffentlichung.
 
@@ -23,8 +26,8 @@ unverändert. Eine gelieferte Ausgabe ist noch keine Veröffentlichung.
   Stunden alte Ereignisse, jüngste zuerst innerhalb der bestehenden Prioritäten.
 - Aktuelle Korrekturen und unabhängige Zweitprüfungen werden vor neuen Entwürfen
   abgeschlossen. Die bestehende Artikelprüfung läuft bereits vor der Übergabe
-  und nochmals im Import. Dadurch geht konkretes Fehlerfeedback direkt in den
-  begrenzten Korrekturlauf, ohne zusätzliche GitHub-Runde.
+  und nochmals im Import. Fehlerfeedback bleibt gespeichert; es löst keine
+  weitere bezahlte Generierung aus. Technische Fehler verwenden die vorhandene Antwort.
 - Ein einziges natives News-Ausgabeformat; die Software ergänzt den Transport.
   Fertige Antworten bleiben nach der reinen Transportkorrektur des Wissensprofils
   wiederverwendbar, ausschließlich bei identischem Quellen-/Methodenmanifest.
@@ -43,7 +46,8 @@ unverändert. Eine gelieferte Ausgabe ist noch keine Veröffentlichung.
   bei unbrauchbarem Ergebnis verbucht; Rohantwort bleibt privat gesichert.
 - Dauerhafte Request-Keys ermöglichen GET-Wiederaufnahme ohne erneute Erstellung.
   Ungewisse Providerantworten sperren auch weitere Keys dieses Jobs. Insgesamt
-  höchstens drei Provider-Aufrufe je Job, einschließlich aller Korrekturpfade.
+  höchstens ein bezahlter Modellaufruf je Job. Ein regulärer Artikel hat einen
+  Erstellungs- und einen unabhängigen Prüfauftrag, damit zwei Modellschritte.
 - 5 EUR/Tag ist ein Effizienzziel, kein neuer Tagesstopp. Bestehende verbindliche
   Monatsfreigaben bleiben bestehen. Keine stillen Budgeterhöhungen.
 - Personalisierte Formate nur über `editorial_request` und bestehende finale
@@ -127,7 +131,7 @@ Für neue unabhängige Fachprüfungen wird GPT-5.4 Mini mit reasoning medium
 gezielt geprüft, statt denselben günstigen Entwurfstyp erneut einzusetzen.
 Der bisherige Forschungs-Pilot lieferte formal gültige Antworten, übernahm
 aber widersprüchliche Haupt-/Nebenpfade. Die festen Reserven und Monatsgrenzen
-bleiben erhalten, ebenso der Höchstwert von drei Aufrufen pro Auftrag.
+bleiben erhalten. Die aktuelle Grenze beträgt einen Aufruf pro Auftrag.
 Vorhandene Ergebnisse behalten Modell, Tarif und Request-Key. Kein Modell-
 Fallback bei erschöpften Aufträgen. Entwurf: weiterhin GPT-5.6 Luna.
 Tarifnachweis: https://developers.openai.com/api/docs/models/gpt-5.4-mini

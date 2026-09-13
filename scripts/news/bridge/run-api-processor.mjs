@@ -4,7 +4,7 @@ import { DatabaseSync } from 'node:sqlite';
 import { BridgeStore } from './store.mjs';
 import { DropboxTransport, loadDropboxCredentials } from './dropbox.mjs';
 import { editorialKnowledge } from './editorial-knowledge.mjs';
-import { ApiEditorialProcessor, apiProcessorPreflight, selectApiJobs } from './api-processor.mjs';
+import { ApiEditorialProcessor, apiProcessorPreflight, selectApiJobs, API_VALIDATION_REVISION } from './api-processor.mjs';
 import { validateOutputPreflight } from './adapter.mjs';
 import { loadNewsRegistry } from '../registry.mjs';
 import { reviewPreflight } from './review-preflight.mjs';
@@ -40,11 +40,19 @@ try {
   if (configured.version !== 1 || !Number.isInteger(configured.max_jobs_per_run) || configured.max_jobs_per_run < 1 || configured.max_jobs_per_run > 10
     || !Number.isFinite(configured.max_news_age_hours) || configured.max_news_age_hours < 1 || configured.max_news_age_hours > 24
     || configured.news_not_before != null && (!Number.isFinite(Date.parse(configured.news_not_before)) || Date.parse(configured.news_not_before) > Date.now())) throw Error('API_EDITORIAL_CONFIG_INVALID');
-  const jobs = selectApiJobs(candidates.filter(j => !configured.news_only || ['new_story','story_update','impact_semantic_review'].includes(j.input.job_type)), now(), {
+  const attention = [];
+  const admitted = candidates.filter(j => {
+    if(configured.news_only && !['new_story','story_update','impact_semantic_review'].includes(j.input.job_type))return false;
+    const blocked=store.observation(`api-attention:${j.input.job_id}`);
+    if(blocked?.validation_revision===API_VALIDATION_REVISION){attention.push({job_id:j.input.job_id,status:blocked.status});return false;}
+    return true;
+  });
+  const jobs = selectApiJobs(admitted, now(), {
     maxJobs: 150, maxNewsAgeHours: configured.max_news_age_hours, newsNotBefore: configured.news_not_before || null, excludedIds: configured.excluded_job_ids || [],
+    onlyJobId: process.argv.find(arg=>arg.startsWith('--job-id='))?.slice('--job-id='.length) ?? null,
   });
   if (process.argv.includes('--dry-run')) {
-    console.log(JSON.stringify({ status: 'DRY_RUN', selected: jobs.slice(0, configured.max_jobs_per_run).map(j => ({ job_id: j.input.job_id, kind: j.input.job_type })), eligible: jobs.length, api_calls: 0 }));
+    console.log(JSON.stringify({ status: 'DRY_RUN', selected: jobs.slice(0, configured.max_jobs_per_run).map(j => ({ job_id: j.input.job_id, kind: j.input.job_type })), eligible: jobs.length, attention_count:attention.length, api_calls: 0 }));
   } else {
     if (process.env.WOEK_API_PROCESSOR_ENABLED !== 'true' || configured.enabled !== true) throw Error('API_EDITORIAL_PROCESSOR_DISABLED');
     const tokenFile = path.join(directory, 'api-worker-token');
@@ -84,7 +92,7 @@ try {
       if (attempted >= configured.max_jobs_per_run || Date.now() - started > 600000) break;
       try {
         const result = await processor.process(store.get(selected.input.job_id), receipt); results.push(result);
-        if (result.provider_attempts > 0 || !['already_processed','already_delivered','claimed_elsewhere','excluded','repair_exhausted','legacy_claim_attention','unknown'].includes(result.status)) attempted++;
+        if (result.provider_attempts > 0 || !['already_processed','already_delivered','claimed_elsewhere','excluded','repair_exhausted','automatic_rewrite_disabled','legacy_claim_attention','unknown'].includes(result.status)) attempted++;
         if (['budget_blocked', 'busy'].includes(result.status)) break;
       } catch (error) {
         attempted++;
@@ -93,7 +101,8 @@ try {
     }
     const report = { actor: 'oracle_api', enabled: true, news_only: configured.news_only === true,
       preflight: {status: receipt.status, at: receipt.at, write_ok: receipt.write_ok, reads: receipt.reads},
-      at: now(), status: results.some(r => ['attention','unknown','failed','repair_exhausted','legacy_claim_attention','claim_unknown','budget_blocked'].includes(r.status)) ? 'ATTENTION' : 'RUN_COMPLETED',
+      at: now(), status: attention.length || results.some(r => ['attention','unknown','failed','repair_exhausted','automatic_rewrite_disabled','validation_failed','preparation_failed','legacy_claim_attention','claim_unknown','budget_blocked'].includes(r.status)) ? 'ATTENTION' : 'RUN_COMPLETED',
+      attention_count: attention.length, attention: attention.slice(0,20),
       delivered: results.filter(r => r.status === 'output_delivered').length, results };
     store.observe('api-processor-health', report);
     console.log(JSON.stringify(report));
