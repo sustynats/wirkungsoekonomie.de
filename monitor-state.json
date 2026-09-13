@@ -29,15 +29,16 @@
       "firstSeen": "2026-09-13T13:49:45.461Z",
       "active": true
     },
-    "bridge-api-results": {
-      "firstSeen": "2026-09-13T17:38:11.533Z",
-      "active": true
-    },
     "bridge-publication-flow": {
       "firstSeen": "2026-09-13T18:12:53.497Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "e7a25d4b8f950ffc3ebe862c",
+      "content": "✓ WÖk-Störung behoben\nAPI-Redaktionsverarbeitung\nPrüfung: 2026-09-13T18:46:27.628Z"
+    }
+  ],
   "dailyDate": "2026-09-13"
 }
