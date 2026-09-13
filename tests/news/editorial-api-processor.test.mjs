@@ -52,8 +52,9 @@ test('an existing foreign claim, ACK or output cannot trigger generation', async
   }
 });
 test('atomic claim conflict is not mistaken for ownership even with identical content', async () => {
-  const f = fixture(); f.transport.move = async (a,b) => { f.files.set(b, f.files.get(a)); f.files.delete(a); throw Error('AMBIGUOUS'); };
+  const f = fixture();
   const receipt = await apiProcessorPreflight(f.transport, f.api, now);
+  f.transport.move = async (a,b) => { f.files.set(b, f.files.get(a)); f.files.delete(a); throw Error('AMBIGUOUS'); };
   assert.equal((await f.processor.process(f.job, receipt)).status, 'claim_unknown');
   assert.equal((await f.processor.process(f.job, receipt)).status, 'claimed_elsewhere'); assert.equal(f.calls.length, 0);
 });
@@ -91,4 +92,17 @@ test('shape repairs are bounded and their completed results are reused on later 
 test('current independent reviews cannot be starved by a constant inflow of fresh drafts', () => {
   const f = fixture(), review = { input: { ...input, job_id: id.replace(/a/g,'f'), job_type: 'impact_semantic_review' }, candidate: { sources: [{ published_at: '2026-09-13T09:10:00Z' }] } };
   assert.equal(selectApiJobs([f.job, review], now)[0].input.job_type, 'impact_semantic_review');
+});
+test('native analysis is wrapped without changing its content or skipping downstream gates', async () => {
+  const { wrapNativeNewsOutput, validateApiOutput } = await import('../../scripts/news/bridge/api-processor.mjs');
+  const original = { ...input, wirkungsticker: { story_id: 'wt-example' }, sources: [{source_id:'source-a',url:'https://example.com/story'}] };
+  const analysis = { story_id:'wt-example', publication_recommendation:true, publication_gate:{rationale:'Belegte neue Entwicklung mit materieller Bedeutung.'}, summary:'Kurze Zusammenfassung.',source_summary:'Quellengebundener Text.' };
+  const native = { schema_version:'1.0',job_id:id,input_hash:input.input_hash,processed_at:now,analyses:[analysis] };
+  const wrapped = validateApiOutput(native, original, now);
+  assert.deepEqual(wrapped.wirkungsticker.analysis, analysis);
+  assert.equal(wrapped.story.short_summary, analysis.summary); assert.equal(wrapped.story.detailed_summary, analysis.source_summary);
+  assert.equal(wrapped.wirkungsticker.analysis.impact_assessment, undefined); // importer MUST reject missing MPD; converter never invents it
+  assert.throws(() => wrapNativeNewsOutput({...native,analyses:[{...analysis,story_id:'other'}]}, original), /BINDING/);
+  const rejected={...analysis,publication_recommendation:false,rejection:{code:'insufficient_evidence',reason:'Der Beleg für die zentrale Behauptung fehlt.'}};
+  assert.equal(wrapNativeNewsOutput({...native,analyses:[rejected]},original).decision.status,'hold');
 });

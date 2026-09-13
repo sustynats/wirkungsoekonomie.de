@@ -36,6 +36,7 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
 }
 export function validateApiOutput(output, packet, now) {
   const original = packet.original_input || packet, kind = apiJobKind(packet);
+  if (kind === 'news' && Array.isArray(output.analyses)) output = wrapNativeNewsOutput(output, original);
   const schema = kind === 'news' ? outputSchema : kind === 'review' ? semanticOutputSchema
     : output.disposition === 'hold' ? EDITORIAL_REQUEST_CONTRACT_V4.hold_output_schema : EDITORIAL_REQUEST_CONTRACT_V4.output_schema;
   parsePacket(JSON.stringify(output), schema);
@@ -48,6 +49,42 @@ export function validateApiOutput(output, packet, now) {
     if (output.preview.format !== 'news') validateEditorialPreview(output.preview);
   }
   return output;
+}
+
+// The established analysis prompt returns {analyses:[...]}. Convert that native
+// result into the existing transport envelope without asking a model to repeat
+// every fact and paragraph. All editorial values are copied, never re-scored.
+// The unchanged importer still validates the native analysis and second pass.
+export function wrapNativeNewsOutput(output, original) {
+  if (output.analyses.length !== 1 || output.analyses[0]?.story_id !== original.wirkungsticker?.story_id) throw Error('BRIDGE_ANALYSIS_BINDING_MISMATCH');
+  const a = output.analyses[0], publish = a.publication_recommendation;
+  if (typeof publish !== 'boolean') throw Error('API_EDITORIAL_NATIVE_DECISION_REQUIRED');
+  const reason = publish ? a.publication_gate?.rationale : a.rejection?.reason;
+  if (typeof reason !== 'string' || !reason.trim()) throw Error('API_EDITORIAL_NATIVE_REASON_REQUIRED');
+  const string = v => typeof v === 'string' ? v : '';
+  const list = v => Array.isArray(v) ? v : [];
+  const claims = list(a.event_claims);
+  const dimensions = Object.fromEntries(['human','planet','democracy'].map(key => {
+    const d = a.impact_assessment?.dimensions?.[key];
+    return [key, { direction: string(d?.direction) || 'not_assessed', analysis: string(d?.rationale) || reason,
+      evidence: string(d?.evidence) || 'not_assessable' }];
+  }));
+  return {
+    schema_version: output.schema_version, job_id: output.job_id, input_hash: output.input_hash, processed_at: output.processed_at,
+    decision: { status: publish ? 'publish' : a.rejection?.code === 'insufficient_evidence' ? 'hold' : 'reject', reason, merge_into: null, priority: 50 },
+    story: { headline: original.event?.canonical_title || '', subheadline: '', short_summary: string(a.summary),
+      detailed_summary: string(a.source_summary), what_happened: string(a.source_summary), why_it_matters: string(a.why_relevant) },
+    facts: { confirmed: claims.filter(c => c.status === 'confirmed_claim'), uncertain: claims.filter(c => c.status === 'uncertain_claim'), contradictions: [], missing_information: list(a.uncertainties) },
+    fact_check: { status: string(a.news_status) || 'not_assessed', summary: string(a.attribution), claims },
+    consequence_check: { direct: list(a.first_order), second_order: list(a.second_order), third_order: list(a.third_order), time_horizon: [] },
+    impact: { ...dimensions, net_assessment: string(a.impact_potential), uncertainty: list(a.uncertainties).join(' ') || reason },
+    frame_check: { relevant: Boolean(a.media_impact), frames: [], resonance_risks: [], notes: '' },
+    sources: original.sources.map(s => ({ source_id: s.source_id, url: s.url })),
+    editorial: { category: original.event?.category || '', tags: [], location: null, people: [], organisations: [], publishable: publish },
+    quality: { source_quality: string(a.publication_gate?.evidence_basis) || 'not_assessed', evidence_strength: string(a.evidence_level) || 'not_assessed', needs_human_review: false, warnings: [] },
+    wirkungsticker: { analysis: a },
+    ...(output.research_sources ? { research_sources: output.research_sources } : {}),
+  };
 }
 
 export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, excludedIds = [] } = {}) {
@@ -81,6 +118,9 @@ export async function apiProcessorPreflight(transport, api, now) {
   const probe = { actor: 'oracle_api', run_id: runId, purpose: 'transport_preflight_only', at: now };
   await transport.writeAtomic(probePath, probe);
   if (hash(JSON.parse(await transport.read(probePath))) !== hash(probe)) throw Error('API_EDITORIAL_PREFLIGHT_READBACK_FAILED');
+  // Keep immutable proof, but do not let daily probes fill the live output
+  // folder until its bounded listing stops the entire publication pipeline.
+  await transport.move(probePath, bridgePath('95_LOGS', `preflight-api-${runId}.probe.json`));
   receipt.write_ok = true;
   const capability = await api.health();
   if (capability.protocol !== API_EDITORIAL_PROTOCOL || capability.enabled !== true || capability.budget_guards !== true) throw Error('API_EDITORIAL_ENDPOINT_UNAVAILABLE');
