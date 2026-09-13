@@ -831,6 +831,27 @@ test('large completed backlog is acknowledged and archived in bounded resumable 
  await provider.finalize([],later,{committed:true});assert.equal(transport.writes,written);
 });
 
+test('unsuccessful import attempts are bounded and pending reviews do not starve the next news batch',async t=>{
+ const {provider,store,transport}=setup(t,{maxJobs:2,adapt:()=>{throw Error('review must finish first');}});
+ const visited=[];
+ provider.semanticReview=async(_bridge,job)=>{
+  visited.push(job.input.job_id);
+  const id=job.input.job_id.slice(0,20)+hash('review-'+job.input.job_id).slice(0,24);
+  store.put({input:{job_id:id,job_type:'impact_semantic_review',impact_version:'2.1',semantics_revision:'all-dimensions-1'},status:'queued'});
+  job.publication_gate={status:'needs_second_pass',review_job_id:id};store.put(job);
+  return {status:'needs_second_pass'};
+ };
+ for(let n=1;n<=3;n++) {
+  const c=candidate(n),input=bridgeInput(c,now),value=output(input,'publish');value.wirkungsticker={analysis:{}};
+  store.put({input,candidate:c,status:'queued',attempts:{},created_at:now});
+  transport.files.set(bridgePath('20_OUTPUT_READY',input.job_id+'.output.json'),JSON.stringify(value));
+ }
+ assert.deepEqual(await provider.reconcile({},[],later),[]);assert.equal(visited.length,2);
+ assert.deepEqual(await provider.reconcile({},[],later),[]);assert.equal(visited.length,3);
+ assert.equal(new Set(visited).size,3);
+ assert.ok(store.all().every(job=>!job.accepted));
+});
+
 test('fresh normal news crosses the soft queue cap before a late historical update and stays deduplicated',async t=>{
  const {provider,store}=setup(t,{maxPending:1,maxJobs:1});
  await provider.enqueue([candidate(1)],[],now);
