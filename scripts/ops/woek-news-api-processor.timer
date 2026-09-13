@@ -1,0 +1,11 @@
+[Unit]
+Description=Poll the current editorial queue without depending on the Mac
+
+[Timer]
+OnCalendar=*-*-* *:02/10:00
+Persistent=true
+RandomizedDelaySec=15
+Unit=woek-news-api-processor.service
+
+[Install]
+WantedBy=timers.target
