@@ -142,6 +142,30 @@ test('one fresh worker cannot mask missing shards or stalled news publication',(
  assert.equal(checks.find(c=>c.id==='bridge-shards').ok,false);
 });
 
+test('proven API worker covers news but never hides personal work or stalled publication',()=>{
+ const d=fixture();d.processing_mode='dropbox_chatgpt_bridge';
+ const api={actor:'oracle_api',enabled:true,news_only:true,at:now,status:'RUN_COMPLETED',
+   preflight:{status:'PASS',write_ok:true,reads:Object.fromEntries(['98_CONFIG','00_INBOX','10_CLAIMED','20_OUTPUT_READY','30_ACK'].map(k=>[k,true]))}};
+ d.bridge={reachable:true,poll_at:now,open_count:8,open_personal_count:0,
+   processor_health:{current_news_open:8,all_shards_available:false},api_processor_health:api};
+ let result=evaluateChecks(d,now),check=id=>result.checks.find(c=>c.id===id);
+ assert.equal(check('bridge-processor').ok,true);
+ assert.equal(check('bridge-shards').ok,true);
+ assert.equal(check('bridge-publication-flow').ok,false);
+ assert.match(dailyReport(result.summary,result.checks),/Oracle-API-Redaktionsworker/);
+ assert.doesNotMatch(dailyReport(result.summary,result.checks),/Keine Text-KI-API/);
+ d.bridge.open_personal_count=2;result=evaluateChecks(d,now);
+ assert.equal(check('bridge-processor').ok,false);
+ assert.equal(check('bridge-shards').ok,false);
+ d.bridge.open_personal_count=0;api.status='ATTENTION';result=evaluateChecks(d,now);
+ assert.equal(check('bridge-processor').ok,true,'available process and incomplete result are distinct');
+ assert.equal(check('bridge-api-results').ok,false);
+ api.at='2026-09-04T04:00:00Z';result=evaluateChecks(d,now);
+ assert.equal(check('bridge-processor').ok,false);
+ api.at=now;api.preflight.write_ok=false;result=evaluateChecks(d,now);
+ assert.equal(check('bridge-processor').ok,false);
+});
+
 test('old news alone does not alert without waiting current news; missing publication proof does',()=>{
  const d=fixture();d.processing_mode='dropbox_chatgpt_bridge';
  d.bridge={reachable:true,poll_at:now,discovery_last_success:now,open_count:12,processor_health:{processor_available:true,all_shards_available:true,checked_at:now,current_news_open:0}};
