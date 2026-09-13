@@ -111,9 +111,11 @@ export function validateOutputPreflight(output, job, registry, stories, now) {
   const prepared = prepareOutputReview(output, job, stories, now);
   if (!prepared.review) return;
   const result = prepareReviewedStory(prepared.review, registry, stories, now);
-  const issues = result.errors.filter(issue => !issue.startsWith('IMPACT_'));
+  // Classification may be completed in the already mandatory second pass.
+  // adaptOutput below still runs the complete publication gate afterwards.
+  const issues = result.errors.filter(issue => !issue.startsWith('IMPACT_') && !(issue === 'MEDIA_IMPACT_REQUIRED' && !prepared.analysis.media_impact));
   if (issues.length) throw Object.assign(new Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues });
-  return prepared;
+  return {...prepared,media_review_required:result.errors.includes('MEDIA_IMPACT_REQUIRED') && !prepared.analysis.media_impact};
 }
 
 export function adaptOutput(output, job, registry, stories, now) {

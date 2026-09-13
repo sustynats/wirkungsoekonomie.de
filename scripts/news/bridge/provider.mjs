@@ -106,7 +106,9 @@ export class DropboxChatGPTBridgeProvider {
           const recovered = structuredClone(output);
           if (job.semantic_review?.output_hash === hash(output) && recovered.wirkungsticker?.analysis) {
             const raw = recovered.wirkungsticker.analysis;
-            (Array.isArray(raw.analyses) ? raw.analyses[0] : raw).impact_assessment = job.semantic_review.assessment;
+            const analysis = Array.isArray(raw.analyses) ? raw.analyses[0] : raw;
+            analysis.impact_assessment = job.semantic_review.assessment;
+            if (job.semantic_review.media_applicability?.relevant === false) analysis.media_impact = structuredClone(job.semantic_review.media_applicability);
           }
           this.adapt(recovered, job, registry, jobStories, now);
           results.push(accepted);
@@ -124,7 +126,8 @@ export class DropboxChatGPTBridgeProvider {
         if (['publish','merge'].includes(output.decision.status)) {
           const raw = output.wirkungsticker?.analysis;
           const analysis = prepared?.analysis || (Array.isArray(raw?.analyses) ? raw.analyses[0] : raw);
-          const record = { ...job.candidate, title: output.story.headline, source_summary: output.story.detailed_summary, analysis };
+          const record = { ...job.candidate, title: output.story.headline, source_summary: output.story.detailed_summary, analysis,
+            ...(prepared?.media_review_required ? {media_review_required:true} : {}) };
           const proposed = analysis?.impact_assessment || migrateImpactAssessment(analysis || {}, { title: record.title });
           const gate = await this.semanticReview(this, job, output, record, proposed, now);
           if (gate.status !== 'ready') continue;
@@ -133,6 +136,7 @@ export class DropboxChatGPTBridgeProvider {
           validatedOutput = structuredClone(output);
           const approved = validatedOutput.wirkungsticker?.analysis;
           if (approved) (Array.isArray(approved.analyses) ? approved.analyses[0] : approved).impact_assessment = gate.assessment;
+          if (approved && job.semantic_review?.media_applicability) (Array.isArray(approved.analyses) ? approved.analyses[0] : approved).media_impact = structuredClone(gate.record.analysis.media_impact);
         }
         const result = this.adapt(validatedOutput, job, registry, jobStories, now);
         if (result.record?.impact_assessment) {
