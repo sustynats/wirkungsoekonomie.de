@@ -7,6 +7,21 @@ const sha = value => createHash('sha256').update(JSON.stringify(value)).digest('
 const ID = /^wt_\d{8}T\d{6}Z_[a-f0-9]{24}$/;
 const digest = /^[a-f0-9]{64}$/;
 const kinds = ['news', 'review', 'personal'];
+// A Responses run can emit commentary (including a complete JSON draft), use
+// tools, and then emit its final answer. Never concatenate separate messages
+// or fall back to an earlier draft when the final message is unusable.
+export function finalEditorialOutputText(payload) {
+  const message = (payload.output || []).filter(item => item.type === 'message').at(-1);
+  if (!message || message.role && message.role !== 'assistant'
+    || message.status && message.status !== 'completed'
+    || message.phase && message.phase !== 'final_answer'
+    || !Array.isArray(message.content) || message.content.some(item => item.type === 'refusal')) {
+    throw Error('API_EDITORIAL_FINAL_MESSAGE_REQUIRED');
+  }
+  const chunks = message.content.filter(item => item.type === 'output_text');
+  if (!chunks.length || chunks.some(item => typeof item.text !== 'string')) throw Error('API_EDITORIAL_FINAL_MESSAGE_REQUIRED');
+  return chunks.map(item => item.text).join('');
+}
 // Only close unfinished outer containers after a complete value. No missing
 // text, number, property, quote or separator is inferred. Full content gates
 // still reject incomplete records; the provider's raw bytes remain immutable.
@@ -67,14 +82,14 @@ export class EditorialApiService {
           if (payload.status !== 'completed') return record;
           if (record.error === 'api_editorial_tool_limit'
             && (record.kind !== 'review' || completedSearchCalls(payload) > 2)) return record;
-          const text = (payload.output || []).flatMap(item => item.type === 'message' ? item.content || [] : [])
-            .filter(item => item.type === 'output_text').map(item => item.text).join('');
+          const text = finalEditorialOutputText(payload);
           const output = parseEditorialJson(text);
           if (!output || Array.isArray(output) || typeof output !== 'object'
             || output.job_id && output.job_id !== record.job_id || output.input_hash && output.input_hash !== record.input_hash) return record;
           Object.assign(output, {schema_version:'1.0',job_id:record.job_id,input_hash:record.input_hash,processed_at:record.updated_at});
           return {...record,status:'completed',output,transport_recovery:record.error === 'api_editorial_tool_limit'
-            ? 'completed_tool_calls_v1' : 'close_outer_containers_v1'};
+            ? 'completed_tool_calls_v1' : (payload.output || []).filter(item=>item.type==='message').length > 1
+              ? 'final_message_v1' : 'close_outer_containers_v1'};
         } catch { /* Preserve the original failure; never infer missing content. */ }
       }
       // A process crash must never cause a second charge for the same attempt.
@@ -191,10 +206,8 @@ export class EditorialApiService {
           // limit, while conservatively accounting every reported call above.
           if (completedSearchCalls(payload) > (researched ? 2 : 0)) fail('api_editorial_tool_limit');
           if (payload.status !== 'completed') fail('api_editorial_incomplete');
-          const text = (payload.output || []).flatMap(item => item.type === 'message' ? item.content || [] : [])
-            .filter(item => item.type === 'output_text').map(item => item.text).join('');
           let output;
-          try { output = parseEditorialJson(text); } catch { fail('api_editorial_invalid_json'); }
+          try { output = parseEditorialJson(finalEditorialOutputText(payload)); } catch { fail('api_editorial_invalid_json'); }
           if (!output || Array.isArray(output) || typeof output !== 'object') fail('api_editorial_invalid_json');
           if (output.job_id && output.job_id !== input.job_id || output.input_hash && output.input_hash !== input.input_hash) fail('api_editorial_binding_mismatch');
           // Software-owned bindings/time; no model-generated hashes or approval.
