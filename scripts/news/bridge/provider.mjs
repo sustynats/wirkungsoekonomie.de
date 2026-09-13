@@ -2,7 +2,9 @@ import { currentEvidence, latestEvidenceTime } from '../discovery-admission.mjs'
 import { slugify } from '../lib.mjs';
 import { retainPotentialHistory } from '../impact-potential.mjs';
 import { ensureSemanticReview, importSemanticReviews } from './semantic-review.mjs';
-import { migrateImpactAssessment, impactClaimLedger, withMagnitudeCalculations } from '../impact-assessment.mjs';
+import { migrateImpactAssessment, impactClaimLedger, withMagnitudeCalculations, IMPACT_VERSION } from '../impact-assessment.mjs';
+import { POTENTIAL_REVISION } from '../impact-potential.mjs';
+import { structuredSemanticChecks, SEMANTIC_CHECKS } from '../impact-publication.mjs';
 import { canRequestCorrection, prepareCorrection, recoverCorrections } from './corrections.mjs';
 import { bridgeInput, adaptOutput, validateOutputPreflight, sameBridgeEvent } from './adapter.mjs';
 import { BRIDGE_ROOT, bridgePath, parsePacket, outputSchema, hash } from './contract.mjs';
@@ -78,9 +80,15 @@ export class DropboxChatGPTBridgeProvider {
     const entries = await this.transport.list('20_OUTPUT_READY');
     const names = new Set(entries.map(e => e.name));
     const results = [];
+    let attempted = 0;
     for (const job of (await this.store.all()).sort((a,b) => compareProcessorJobs(a,b,now))) {
       if (!newsJob(job) || terminal.has(job.status)) continue;
       if (!retryDue(job, 'import', now)) continue;
+      if (job.publication_gate?.status === 'needs_second_pass' && await waitingForReview(this.store, job)) continue;
+      const held = job.semantic_review;
+      if (['needs_review','blocked'].includes(job.publication_gate?.status)
+        && held?.assessment?.version === IMPACT_VERSION && held.assessment.semantics_revision === POTENTIAL_REVISION
+        && structuredSemanticChecks(held.review) && SEMANTIC_CHECKS.some(key=>held.review.checks[key].status === 'fail')) continue;
       // Legacy private candidates predate public-page metadata. Derive only the
       // stable route; immutable input, source hashes and approval remain intact.
       if (job.intake_news_parent && !job.candidate.slug) job.candidate = { ...job.candidate,
@@ -90,6 +98,7 @@ export class DropboxChatGPTBridgeProvider {
       if (job.status === 'accepted') {
         const accepted = job.accepted;
         if (!accepted.record || accepted.staged || stories.some(s => s.bridge_import?.job_id === job.input.job_id && s.bridge_import.output_hash === accepted.output_hash)) { results.push(accepted); continue; }
+        if (attempted++ >= this.maxJobs) break;
         // Recover only against the still-current source/analysis version.
         try {
           const output = parsePacket(await this.transport.read(bridgePath('20_OUTPUT_READY', `${job.input.job_id}.output.json`)), outputSchema);
@@ -105,13 +114,16 @@ export class DropboxChatGPTBridgeProvider {
         continue;
       }
       if (!names.has(`${job.input.job_id}.output.json`)) continue;
+      // A waiting or rejected result consumes work too. The limit must bound
+      // actual processing attempts, not only successful publications.
+      if (attempted++ >= this.maxJobs) break;
       try {
         const output = parsePacket(await this.transport.read(bridgePath('20_OUTPUT_READY', `${job.input.job_id}.output.json`)), outputSchema);
-        if (this.adapt === adaptOutput) validateOutputPreflight(output, job, registry, jobStories, now);
+        const prepared = this.adapt === adaptOutput ? validateOutputPreflight(output, job, registry, jobStories, now) : null;
         let validatedOutput = output;
         if (['publish','merge'].includes(output.decision.status)) {
           const raw = output.wirkungsticker?.analysis;
-          const analysis = Array.isArray(raw?.analyses) ? raw.analyses[0] : raw;
+          const analysis = prepared?.analysis || (Array.isArray(raw?.analyses) ? raw.analyses[0] : raw);
           const record = { ...job.candidate, title: output.story.headline, source_summary: output.story.detailed_summary, analysis };
           const proposed = analysis?.impact_assessment || migrateImpactAssessment(analysis || {}, { title: record.title });
           const gate = await this.semanticReview(this, job, output, record, proposed, now);

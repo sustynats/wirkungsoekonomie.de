@@ -326,6 +326,21 @@ export function resolveEvidenceReferences(analysis, story, suppliedIds = [], dir
     return [[evidence_id, proof], ...(supplied.has(shortId) ? [[shortId, proof]] : [])];
   })));
   const sourceIds = new Set(story.sources.map(source => source.source_id));
+  // The 2.1 assessment uses the same source IDs at several nested levels.
+  // Resolve only aliases actually present in this immutable request, just as
+  // for legacy paths below. An unknown reference keeps the complete list invalid.
+  const resolveIds = ids => Array.isArray(ids) && ids.every(id => sourceIds.has(id) || supplied.has(id) && catalog.has(id))
+    ? [...new Set(ids.map(id => sourceIds.has(id) ? id : catalog.get(id).source_id))] : ids;
+  const resolveImpact = value => {
+    if (!value || typeof value !== 'object') return;
+    if (Array.isArray(value)) { value.forEach(resolveImpact); return; }
+    for (const [key, entry] of Object.entries(value)) {
+      if (key === 'source_ids') value[key] = resolveIds(entry);
+      else if (key === 'source_id' && !sourceIds.has(entry) && supplied.has(entry) && catalog.has(entry)) value[key] = catalog.get(entry).source_id;
+      else resolveImpact(entry);
+    }
+  };
+  resolveImpact(analysis?.impact_assessment);
   Object.assign(directionDiagnostics, { supplied_evidence_refs: 0, unknown_refs: 0, resolved_refs: 0, resolved_paths: 0 });
   for (const dimension of ['human', 'planet', 'democracy']) {
     for (const key of ['positive_path', 'negative_path']) {

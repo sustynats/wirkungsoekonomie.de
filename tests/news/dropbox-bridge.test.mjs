@@ -393,6 +393,25 @@ test('passing article preflight cannot substitute for required impact assessment
   assert.throws(()=>validateOutputPreflight({...value,input_hash:hash('stale')},job,registry,[original],processed),/BRIDGE_JOB_BINDING_MISMATCH/);
 });
 
+test('independent review receives the source-normalized preflight copy, not the raw transport assessment',async t=>{
+ const {original,c,created,processed,input,value,registry}=nativeReviewFixture();
+ const {provider,store,transport}=setup(t,{correctionsEnabled:true});
+ value.wirkungsticker.analysis.impact_assessment={version:'2.1',dimensions:{human:{primary_paths:[{source_ids:['e0_0'],magnitude:2}]}}};
+ const originalBytes=JSON.stringify(value);let reviews=0;
+ provider.semanticReview=async(_bridge,_job,raw,record,proposed)=>{
+  reviews++;
+  assert.deepEqual(proposed.dimensions.human.primary_paths[0].source_ids,[c.sources[0].source_id]);
+  assert.equal(record.analysis.impact_assessment,proposed);
+  assert.equal(JSON.stringify(raw),originalBytes);
+  return {status:'needs_review'};
+ };
+ store.put({input,candidate:c,status:'queued',attempts:{},created_at:created});
+ transport.files.set(bridgePath('20_OUTPUT_READY',input.job_id+'.output.json'),originalBytes);
+ assert.deepEqual(await provider.reconcile(registry,[original],processed),[]);
+ assert.equal(reviews,1);assert.equal(transport.files.get(bridgePath('20_OUTPUT_READY',input.job_id+'.output.json')),originalBytes);
+ assert.equal(store.get(input.job_id).accepted,undefined);
+});
+
 function png(width=1200,height=675){
   const chunk=(name,data)=>{
     const n=Buffer.alloc(4);n.writeUInt32BE(data.length);
@@ -810,6 +829,27 @@ test('large completed backlog is acknowledged and archived in bounded resumable 
  for(let i=0;i<12;i++)await provider.finalize([],later,{committed:true});
  assert.ok(ids.every(id=>store.get(id).archived_at));const written=transport.writes;
  await provider.finalize([],later,{committed:true});assert.equal(transport.writes,written);
+});
+
+test('unsuccessful import attempts are bounded and pending reviews do not starve the next news batch',async t=>{
+ const {provider,store,transport}=setup(t,{maxJobs:2,adapt:()=>{throw Error('review must finish first');}});
+ const visited=[];
+ provider.semanticReview=async(_bridge,job)=>{
+  visited.push(job.input.job_id);
+  const id=job.input.job_id.slice(0,20)+hash('review-'+job.input.job_id).slice(0,24);
+  store.put({input:{job_id:id,job_type:'impact_semantic_review',impact_version:'2.1',semantics_revision:'all-dimensions-1'},status:'queued'});
+  job.publication_gate={status:'needs_second_pass',review_job_id:id};store.put(job);
+  return {status:'needs_second_pass'};
+ };
+ for(let n=1;n<=3;n++) {
+  const c=candidate(n),input=bridgeInput(c,now),value=output(input,'publish');value.wirkungsticker={analysis:{}};
+  store.put({input,candidate:c,status:'queued',attempts:{},created_at:now});
+  transport.files.set(bridgePath('20_OUTPUT_READY',input.job_id+'.output.json'),JSON.stringify(value));
+ }
+ assert.deepEqual(await provider.reconcile({},[],later),[]);assert.equal(visited.length,2);
+ assert.deepEqual(await provider.reconcile({},[],later),[]);assert.equal(visited.length,3);
+ assert.equal(new Set(visited).size,3);
+ assert.ok(store.all().every(job=>!job.accepted));
 });
 
 test('fresh normal news crosses the soft queue cap before a late historical update and stays deduplicated',async t=>{

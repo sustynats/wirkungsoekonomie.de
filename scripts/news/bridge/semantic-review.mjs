@@ -3,6 +3,7 @@ import { verifyImpactResearch, researchSourceSchema } from './impact-research.mj
 import { hash, bridgePath, parsePacket } from './contract.mjs';
 import { IMPACT_VERSION, IMPACT_CONTRACT_FILE, IMPACT_RULE, IMPACT_SCHEMA, IMPACT_DEFS } from '../impact-assessment.mjs';
 import { POTENTIAL_REVISION } from '../impact-potential.mjs';
+import { reviewPreflight } from './review-preflight.mjs';
 import { derivePublicationStatus, semanticIssues, structuredSemanticChecks, SEMANTIC_CHECKS } from '../impact-publication.mjs';
 
 export const SEMANTIC_JOB_TYPE = 'impact_semantic_review';
@@ -131,16 +132,13 @@ export async function importSemanticReviews(bridge, now) {
       if (Date.parse(output.processed_at) < Date.parse(job.input.created_at) || Date.parse(output.processed_at) > Date.parse(now) + 300000) throw Error('BRIDGE_OUTPUT_TIME_INVALID');
       const parent = await bridge.store.get(job.input.parent_job_id);
       if (!parent || parent.ack || parent.accepted) continue;
-      let research = [];
-      try { research = await verifyImpactResearch(bridge, output.research_sources || [], [...(job.candidate.sources || job.candidate.source_snapshot || []), ...(job.candidate.impact_sources || [])], now); }
+      let validated;
+      try { validated = await reviewPreflight(bridge, output, job.candidate, now); }
       catch (error) {
         if(error.retryable)throw Object.assign(Error('BRIDGE_RESEARCH_UNAVAILABLE'),{retryable:true,retry_after_seconds:error.retry_after_seconds,issues:[error.message]});
-        throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:[error.message]});
+        throw error;
       }
-      const reviewRecord = {...job.candidate,impact_sources:[...(job.candidate.impact_sources||[]),...research]};
-      const gate = derivePublicationStatus(output.impact_assessment, reviewRecord, { review: output.review, secondPassComplete: true });
-      assertCompleteReadyReview(output.review, gate);
-      if (gate.issues.some(issue => /IMPACT_(?:VERSION|MATERIAL_MAGNITUDE|FACTOR_|MAGNITUDE_CALCULATION|MAIN_AGGREGATE|OBSERVED_DIRECTION|SOURCE_FUNCTION|RESEARCH_RESULT|RESEARCH_CHECK|BOUNDARY_)/.test(issue))) throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'),{issues:gate.issues});
+      const {research,reviewRecord,gate} = validated;
       parent.semantic_review = { review_job_id: job.input.job_id, output_hash: job.input.parent_output_hash, reviewed_at: now,
         assessment: output.impact_assessment, review: output.review, research_sources: research, verified_context_sources: reviewRecord.impact_sources, gate };
       parent.publication_gate = gate;

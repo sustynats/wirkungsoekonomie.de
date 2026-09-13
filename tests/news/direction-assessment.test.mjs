@@ -90,6 +90,25 @@ test('unknown, unsent, foreign and malformed path references remain rejected wit
   assert.ok(directionAssessmentErrors(a,story.sources).includes('AI_DIRECTION_PATH_SOURCE_INVALID:human'),'resolving a reference does not supply a missing mechanism');
 });
 
+test('nested 2.1 references use the same immutable evidence catalog without altering assessments',()=>{
+ const story=referenceStory();
+ const a={impact_assessment:{dimensions:{human:{primary_paths:[{
+  source_ids:['e0_0'],magnitude:4,direction:'negative',mechanism:'Der vorhandene Mechanismus bleibt unverändert.',
+  magnitude_factors:{reach:{value:2,rationale:'Eine bereits begründete begrenzte Reichweite.',source_ids:['e0_1']}},
+  protection_boundary:{source_ids:['e0_0','e9_0']},
+ }]}},research_check:{source_functions:[{source_id:'e0_0',functions:['event']}],searches:[{source_ids:['e1_0']}]},
+ observed_effects:[{source_ids:['e0_0']}]} };
+ const before=structuredClone(a);resolveEvidenceReferences(a,story,['e0_0','e0_1','e1_0']);
+ const p=a.impact_assessment.dimensions.human.primary_paths[0];
+ assert.deepEqual(p.source_ids,['source-999']);assert.deepEqual(p.magnitude_factors.reach.source_ids,['source-999']);
+ assert.deepEqual(p.protection_boundary.source_ids,['e0_0','e9_0'],'an unknown alias must not be partially repaired');
+ assert.equal(p.magnitude,4);assert.equal(p.direction,'negative');assert.equal(p.mechanism,before.impact_assessment.dimensions.human.primary_paths[0].mechanism);
+ assert.equal(a.impact_assessment.research_check.source_functions[0].source_id,'source-999');
+ assert.deepEqual(a.impact_assessment.research_check.searches[0].source_ids,['source-other']);
+ assert.deepEqual(a.impact_assessment.observed_effects[0].source_ids,['source-999']);
+ const once=JSON.stringify(a);resolveEvidenceReferences(a,story,['e0_0','e0_1','e1_0']);assert.equal(JSON.stringify(a),once);
+});
+
 test('direction diagnostics retain only shape and counts, never provider text or source IDs',()=>{
   const a=fixture();
   for (const [path,shape] of [[undefined,'missing'],[null,'null'],['null','string'],[{},'object'],[[],'array'],[false,'boolean']]) {
