@@ -2,8 +2,1330 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-12T01:44:31.526Z",
+  "updated_at": "2026-09-13T15:58:45.429Z",
   "stories": [
+    {
+      "story_id": "wt-e18435f6b86d293a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e18435f6b86d293a-bd2566cd55d5fe4d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e18435f6b86d293a-c73f0f7ccf0a3238-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e18435f6b86d293a-cde5a4e94191a764-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nach-dem-wahlsieg-der-afd-feindliche-ubernahme-6d293a",
+      "title": "Nach dem Wahlsieg der AfD: Feindliche Übernahme",
+      "source_summary": "Die taz berichtet vier Tage nach dem Wahlsieg der AfD in Sachsen-Anhalt über öffentliche Äußerungen des AfD-Fraktionsvorsitzenden Ulrich Siegmund und über im Artikel beschriebene politische Vorhaben. Genannt werden unter anderem seine Aussage zu Rüstungsgütern für spätere Remigrations- und Abschiebeoffensiven sowie Pläne gegenüber Geflüchteten, Schulen, Medien und Ministerien.\n\nDie Quelle nennt 43,8 Prozent und einen Abstand von drei Abgeordneten zur absoluten Mehrheit. Ob die AfD eine Landesregierung bilden kann, welche Vorhaben parlamentarisch durchsetzbar sind und ob sie verbindliche Regierungspolitik werden, bleibt auf Grundlage des gelieferten Auszugs offen. Eine unabhängige Prüfung und Originaldokumente liegen nicht vor.",
+      "summary": "Die taz berichtet über den Wahlerfolg der AfD in Sachsen-Anhalt sowie über öffentliche Aussagen und beschriebene politische Vorhaben. Belegt sind weder eine Regierungsbildung noch die Umsetzung dieser Vorhaben; ihre mögliche Bedeutung bleibt deshalb vorläufig.",
+      "detail_summary": "Die AfD erhielt laut taz 43,8 Prozent und verfehlte die absolute Mehrheit um drei Abgeordnete. Der Artikel beschreibt Aussagen Ulrich Siegmunds und mögliche politische Vorhaben gegenüber Geflüchteten, Schulen, Medien und Ministerien. Werden solche Vorhaben beschlossen und umgesetzt, könnten sich staatliche Zugänge und institutionelle Kontrolle verändern. Ob es dazu kommt, ist nicht belegt. Die Einordnung stützt sich auf eine journalistische Einzelquelle.",
+      "why_relevant": "Der Bericht verbindet ein Wahlergebnis mit konkreten öffentlichen Aussagen und beschriebenen Vorhaben. Das ist materiell relevant, weil mögliche Änderungen bei staatlichen Leistungen, Medienordnung und Ministerialstrukturen Betroffene und demokratische Kontrolle berühren könnten; Regierungsbildung und Umsetzung sind jedoch offen.",
+      "topic": [
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Journalistischer Bericht vom 13. September 2026 über öffentliche Aussagen und beschriebene politische Vorhaben der AfD nach dem Wahlergebnis in Sachsen-Anhalt",
+        "evaluation_target": {
+          "label": "Mögliche politische Umsetzung der im Bericht beschriebenen AfD-Vorhaben in Sachsen-Anhalt",
+          "type": "proposal"
+        },
+        "baseline": "Zum Quelldatum liegt ein Wahlergebnis und eine journalistisch beschriebene Programmlage vor; eine AfD-Landesregierung, verbindliche Beschlüsse und Umsetzung sind nicht belegt.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne Umsetzung der beschriebenen Vorhaben blieben die bestehenden Regelungen und Zuständigkeiten zunächst bestehen; die Regierungsbildung bleibt offen.",
+        "reference_frame": [
+          "Grundrechte und rechtsstaatliche Grenzen",
+          "Agenda 2030/SDG 4 und SDG 10, soweit Bildung und Gleichbehandlung betroffen sind",
+          "Agenda 2030/SDG 16 und demokratische Korrekturfähigkeit",
+          "Zugang zu staatlicher Versorgung und institutionelle Kontrolle"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Bei Umsetzung könnten Geflüchtete, geflüchtete Kinder, Schulen und Kommunen betroffen sein. Richtung und Ausmaß hängen von konkreten Beschlüssen und deren Rechtmäßigkeit ab.",
+            "planet": "Der Bericht nennt keinen konkreten Umwelt-, Energie- oder Ressourcenpfad. Es bleibt nur ein sehr schwacher, offener Kopplungspfad über spätere politische Prioritäten.",
+            "democracy": "Die beschriebenen möglichen Eingriffe in Medien, Ministerien und Förderungen könnten institutionelle Kontrolle und pluralen Zugang beeinflussen. Regierungsbildung, Recht und Umsetzung sind offen."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Wahlergebnis und öffentliche Aussagen verändern die politische Ausgangslage; konkrete staatliche Zustandsänderungen sind nicht beobachtet.",
+          "second_order": "Bei parlamentarischer Durchsetzung könnten Zugänge zu Bildung, Unterbringung, Medienordnung und Verwaltung verändert werden.",
+          "third_order": "Längerfristig könnten sich institutionelle Routinen und politische Einflussverteilung verschieben; dies bleibt eine bedingte Hypothese.",
+          "enablement": [
+            "enables_majority",
+            "enables_legislation",
+            "enables_institutional_control",
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die AfD verfehlt laut Quelle die absolute Mehrheit um drei Abgeordnete.",
+            "Regierungsbildung und parlamentarische Durchsetzung sind nicht belegt.",
+            "Rechtliche Grenzen und Kooperationsbedingungen können die Pfade begrenzen."
+          ],
+          "source_independence": "Nur eine journalistische Quelle ist geliefert; unabhängige Originaldokumente oder weitere belastbare Belege liegen im Material nicht vor.",
+          "institutional_status": "Belegt sind Wahlergebnis und journalistisch zugeschriebene Positionen. Gesetzentwurf, Beschluss, Inkrafttreten oder laufende Umsetzung sind nicht belegt."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Bei Umsetzung der beschriebenen Vorhaben könnten sich Zugang und Bedingungen für Geflüchtete und geflüchtete Kinder verschlechtern.",
+                "mechanism": "Regelungen zu Unterbringung, Abschiebung und schulischen Sonderklassen würden staatliche Zugänge und Behandlung bestimmter Gruppen verändern.",
+                "recipients": [
+                  "Geflüchtete",
+                  "geflüchtete Kinder",
+                  "Schulen",
+                  "Kommunen"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "research-taz-aktuell"
+                ],
+                "condition": "Die beschriebenen Programmpunkte werden bestätigt, beschlossen und administrativ umgesetzt.",
+                "reference_space": "Sachsen-Anhalt; Geflüchtete, geflüchtete Kinder und öffentliche Einrichtungen",
+                "time_horizon": "mittel- bis längerfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die im Artikel beschriebenen Vorhaben entsprechen verbindlichen politischen Plänen und werden rechtlich sowie administrativ umgesetzt.",
+                "source_support": "Die Quelle beschreibt Vorhaben zu Geflüchteten und Schulen; sie belegt keine eingetretene Zustandsveränderung.",
+                "limitations": "Keine unabhängige Prüfung, keine Umsetzungsdaten und keine Folgenmessung.",
+                "first_order": "Mögliche Änderung von Unterbringung, Abschiebepraxis oder schulischen Zugängen.",
+                "second_order": "Mögliche stärkere Belastung von Geflüchteten, Kindern, Schulen und Kommunen.",
+                "third_order": "Mögliche dauerhafte institutionelle und soziale Ausgrenzung; ohne Umsetzungsdaten offen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Die Wirkung könnte begrenzt bleiben oder bei umfassender Umsetzung mehrere öffentliche Bereiche erfassen."
+                },
+                "negligibility_rationale": "Nicht vernachlässigbar, weil die beschriebenen Eingriffe mehrere Schutz- und Zugangsbereiche betreffen könnten; die konkrete Stärke bleibt jedoch unsicher.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Zusatzrecherche nach unabhängigen Mechanismusbelegen ergab keine belastbare Quelle; die Einschätzung bleibt am Artikeltext und dessen Vorhabensbeschreibung hängen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen wäre eine begrenzte, aber landesweit erreichbare Gruppe.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Die beschriebenen Maßnahmen könnten Zugänge zu Unterbringung und Bildung deutlich verändern.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Gesetzliche oder administrative Regeln könnten mittel- bis längerfristig gelten.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Änderungen wären grundsätzlich revidierbar, könnten während ihrer Geltung aber schwer auszugleichen sein.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Geflüchtete und geflüchtete Kinder wären potenziell besonders schutzbedürftig betroffen.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad könnte Schulen, Kommunen und Verwaltung über die unmittelbare Maßnahme hinaus beeinflussen.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist ex ante nicht belegt.",
+                  "reference_frame": "Grundrechte, Zugang zu Bildung und Schutz vor diskriminierender staatlicher Behandlung",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude": 3,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der Hauptpfad ist bedingt negativ, weil konkrete Vorhaben gegenüber Geflüchteten und im Bildungsbereich beschrieben werden. Die Tragweite bleibt wegen fehlender Originaldokumente, Rechtsprüfung und Umsetzungsdaten vorläufig.",
+            "balance": {
+              "rationale": "Ein konkret untersuchter positiver Hauptpfad desselben Gegenstands ist nicht belegt.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 3,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Bei Umsetzung der beschriebenen Vorhaben könnten sich Zugang und Bedingungen für Geflüchtete und geflüchtete Kinder verschlechtern.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Bei Umsetzung der beschriebenen Vorhaben könnten sich Zugang und Bedingungen für Geflüchtete und geflüchtete Kinder verschlechtern.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Eine mögliche Änderung politischer Prioritäten könnte spätere öffentliche Beschaffungs- und Infrastrukturentscheidungen beeinflussen; eine konkrete ökologische Zustandsänderung ist nicht belegt.",
+                "mechanism": "Politische Kursentscheidungen können Prioritäten für Ausgaben und Infrastruktur setzen, doch der Bericht nennt kein konkretes Umwelt-, Energie- oder Ressourcenprogramm.",
+                "recipients": [
+                  "Natur",
+                  "Kommunen",
+                  "Staat"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "research-taz-aktuell"
+                ],
+                "condition": "Die beschriebenen Vorhaben werden in konkrete Haushalts-, Infrastruktur- oder Beschaffungsentscheidungen übersetzt.",
+                "reference_space": "Sachsen-Anhalt; öffentliche Politik und mögliche Umweltfolgen",
+                "time_horizon": "mittel- bis längerfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die politische Kursänderung würde auch umwelt- oder ressourcenrelevante Entscheidungen erfassen.",
+                "source_support": "Die Quelle belegt keine konkrete Umwelt-, Energie- oder Ressourcenmaßnahme.",
+                "limitations": "Angaben zu Energie, Infrastruktur, Flächennutzung, Emissionen und Umweltstandards fehlen.",
+                "first_order": "Mögliche Verschiebung öffentlicher Prioritäten ohne derzeit bestimmbare Umweltwirkung.",
+                "second_order": "Ressourcenverbrauch, Versorgung oder Emissionen könnten je nach Ausgestaltung betroffen sein; Richtung bleibt offen.",
+                "third_order": "Keine belastbare dritte Ordnung ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Bericht trägt keinen konkreten Umweltpfad; ein schwacher indirekter Pfad ist nur bedingt denkbar."
+                },
+                "negligibility_rationale": "Der Pfad kann praktisch vernachlässigbar sein, weil kein konkretes Umweltprogramm belegt ist; er bleibt dennoch dokumentiert, da politische Prioritäten mittelbar umweltrelevant werden können.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzliche Mechanismus- oder Referenzquelle für Umweltfolgen gefunden; der Pfad bleibt eine schwache Modellhypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Wirkung wäre zunächst auf ein Bundesland begrenzt.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Eine konkrete ökologische Intensität ist nicht ableitbar.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Prioritätseffekt wäre an spätere Entscheidungen gebunden.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine konkrete ökologische Zustandsveränderung ist belegt.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere ökologische Lastverteilung ist nicht belegt.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Bericht trägt keinen konkreten Folgepfad über Umwelt- oder Ressourcensysteme hinweg.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenze oder Grenzverletzung ist belegt.",
+                  "reference_frame": "Ökologische Integrität und Ressourcenversorgung",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 4,
+                  "divisor": 6,
+                  "raw": 0.6666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Für den Planetenraum fehlt ein konkreter Gegenstand. Der dokumentierte schwache Pfad prüft nur eine mögliche Kopplung politischer Prioritäten, ohne eine Richtung oder ökologische Folge zu behaupten.",
+            "balance": {
+              "rationale": "Es liegt weder ein belegter positiver noch ein belegter negativer Umweltpfad vor.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Eine mögliche Änderung politischer Prioritäten könnte spätere öffentliche Beschaffungs- und Infrastrukturentscheidungen beeinflussen; eine konkrete ökologische Zustandsänderung ist nicht belegt.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine mögliche Änderung politischer Prioritäten könnte spätere öffentliche Beschaffungs- und Infrastrukturentscheidungen beeinflussen; eine konkrete ökologische Zustandsänderung ist nicht belegt.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Bei Umsetzung der beschriebenen Vorhaben könnten Medienordnung, Ministerialstruktur und politische Gegenstimmen institutionell geschwächt werden.",
+                "mechanism": "Die beschriebenen Pläne zur Kündigung des Medienstaatsvertrags, zur Streichung von Ministerien und zur Kürzung von Förderungen könnten Zuständigkeiten, Informationszugang und zivilgesellschaftliche Kontrolle verändern.",
+                "recipients": [
+                  "Bürgerinnen und Bürger",
+                  "Medien",
+                  "politisch missliebige Initiativen",
+                  "Ministerien",
+                  "Landtag"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "research-taz-aktuell"
+                ],
+                "condition": "Die beschriebenen Vorhaben werden bestätigt, beschlossen und rechtlich sowie administrativ umgesetzt.",
+                "reference_space": "Sachsen-Anhalt; Medien, Landesverwaltung und zivilgesellschaftliche Kontrolle",
+                "time_horizon": "mittel- bis längerfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die journalistisch beschriebenen Programmpunkte entsprechen verbindlichen politischen Vorhaben und greifen tatsächlich in Medien- und Verwaltungsstrukturen ein.",
+                "source_support": "Die Quelle nennt mögliche Eingriffe in Medienstaatsvertrag, Ministerien und Förderungen; sie belegt keine Umsetzung.",
+                "limitations": "Keine Originaldokumente, keine Rechtsprüfung, keine Angaben zu Mehrheiten und keine beobachteten institutionellen Folgen.",
+                "first_order": "Mögliche Veränderung von Medien- und Ministerialzuständigkeiten sowie Förderentscheidungen.",
+                "second_order": "Mögliche Schwächung pluraler Information und zivilgesellschaftlicher Kontrolle.",
+                "third_order": "Mögliche Normalisierung einer veränderten institutionellen Ordnung und geringere Korrekturfähigkeit.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Die Wirkung könnte bei fehlender Durchsetzung gering bleiben oder bei umfassender Umsetzung mehrere Kontrollstrukturen erfassen."
+                },
+                "negligibility_rationale": "Nicht vernachlässigbar, weil Eingriffe in Medien-, Förder- und Ministerialstrukturen die demokratische Korrekturfähigkeit substanziell berühren könnten.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Eine unabhängige Recherche zu Rechtsstatus, Originalprogramm und institutionellen Mechanismen war nicht erfolgreich; die Einschätzung bleibt vorläufig.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Medien, Landesverwaltung und geförderte Initiativen könnten landesweit betroffen sein.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Die beschriebenen Eingriffe könnten Zuständigkeiten und Informationszugänge deutlich verändern.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Änderungen an Institutionen und Förderstrukturen könnten längerfristig wirken.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Institutionelle Änderungen wären grundsätzlich revidierbar, könnten aber Routinen verfestigen.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Politisch missliebige Initiativen und Nutzerinnen und Nutzer pluraler Information könnten ungleich betroffen sein.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 4,
+                    "rationale": "Der Pfad berührt Medien, Verwaltung, Förderentscheidungen und demokratische Kontrolle.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete eingetretene schwere Schutzgrenzverletzung ist nicht belegt.",
+                  "reference_frame": "Pluralistische Information, institutionelle Kontrolle und demokratische Korrekturfähigkeit",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude": 3,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Längerfristig könnten sich institutionelle Routinen und die Verteilung politischer Einflussmöglichkeiten verändern.",
+                "mechanism": "Wiederholte politische Aussagen und Programmbeschreibungen können Wahrnehmung und Diskurs beeinflussen; ein solcher Effekt ist hier nicht beobachtet.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "politische Institutionen"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_effect",
+                "likelihood": "low",
+                "source_ids": [
+                  "research-taz-aktuell"
+                ],
+                "condition": "Die Aussagen werden wiederholt aufgegriffen und in politische Entscheidungen oder institutionelle Routinen übersetzt.",
+                "reference_space": "Öffentlicher und politischer Diskurs in Deutschland",
+                "time_horizon": "mittel- bis längerfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wiederholung führt tatsächlich zu veränderten Kategorien oder Entscheidungen.",
+                "source_support": "Die Quelle enthält politische Begriffe und Programmbeschreibungen, aber keinen Publikums- oder Wirkungsnachweis.",
+                "limitations": "Keine Resonanzdaten, Diskursanalyse oder Verhaltensdaten.",
+                "first_order": "Veränderte Sichtbarkeit und Anschlussfähigkeit der Positionen.",
+                "second_order": "Mögliche Verschiebung des politischen Diskursraums.",
+                "third_order": "Mögliche institutionelle Normalisierung; nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne Wirkungs- oder Publikumsdaten bleibt der mögliche Diskurseffekt niedrig und unsicher."
+                },
+                "negligibility_rationale": "Der Pfad kann gering sein, wenn die Aussagen folgenlos bleiben; er wird dennoch dokumentiert, weil wiederholte Rahmung institutionelle Wahrnehmung beeinflussen kann.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Resonanz- oder Diskursquellen wurden gefunden.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte über öffentliche Kommunikation eine begrenzte bis regionale Reichweite haben.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Veränderung von Einstellungen oder Entscheidungen ist nicht belegt.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Wiederholung könnte mittelfristig wirken, sofern sie tatsächlich stattfindet.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Diskursive Verschiebungen wären grundsätzlich reversibel.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffenheit und Lastverteilung sind nicht konkret belegt.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der mögliche Pfad betrifft Kategorien und Diskurs, nicht nachgewiesene institutionelle Zustände.",
+                    "source_ids": [
+                      "research-taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete Schutzgrenzverletzung ist beobachtet oder genau bedingt modelliert.",
+                  "reference_frame": "Demokratische Öffentlichkeit und pluraler politischer Diskurs",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "rationale": "Der demokratische Hauptpfad ist bedingt negativ, weil konkrete mögliche Eingriffe in Medien, Ministerien und Förderungen beschrieben werden. Der Diskurspfad bleibt ergänzend und unsicher.",
+            "balance": {
+              "rationale": "Ein materieller positiver Gegenpfad ist im gelieferten Material nicht konkret untersucht oder belegt.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 3,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Bei Umsetzung der beschriebenen Vorhaben könnten Medienordnung, Ministerialstruktur und politische Gegenstimmen institutionell geschwächt werden.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Bei Umsetzung der beschriebenen Vorhaben könnten Medienordnung, Ministerialstruktur und politische Gegenstimmen institutionell geschwächt werden.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "research-taz-aktuell",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Der Artikel berichtet das Wahlergebnis und nennt die beschriebenen 100-Tage-Maßnahmen als Ausgangspunkt für ex ante modellierte Wirkungspfade."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://taz.de/Nach-dem-Wahlsieg-der-AfD/!6208051",
+          "title": "Nach dem Wahlsieg der AfD: Feindliche Übernahme",
+          "publisher": "taz",
+          "source_id": "research-taz-aktuell",
+          "source_function": "event"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Bei Umsetzung der beschriebenen Vorhaben könnten sich Zugang und Bedingungen für Geflüchtete und geflüchtete Kinder verschlechtern.",
+              "mechanism": "Regelungen zu Unterbringung, Abschiebung und schulischen Sonderklassen würden staatliche Zugänge und Behandlung bestimmter Gruppen verändern.",
+              "recipients": [
+                "Geflüchtete",
+                "geflüchtete Kinder",
+                "Schulen",
+                "Kommunen"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "research-taz-aktuell"
+              ],
+              "condition": "Die beschriebenen Programmpunkte werden bestätigt, beschlossen und administrativ umgesetzt.",
+              "reference_space": "Sachsen-Anhalt; Geflüchtete, geflüchtete Kinder und öffentliche Einrichtungen",
+              "time_horizon": "mittel- bis längerfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die im Artikel beschriebenen Vorhaben entsprechen verbindlichen politischen Plänen und werden rechtlich sowie administrativ umgesetzt.",
+              "source_support": "Die Quelle beschreibt Vorhaben zu Geflüchteten und Schulen; sie belegt keine eingetretene Zustandsveränderung.",
+              "limitations": "Keine unabhängige Prüfung, keine Umsetzungsdaten und keine Folgenmessung.",
+              "first_order": "Mögliche Änderung von Unterbringung, Abschiebepraxis oder schulischen Zugängen.",
+              "second_order": "Mögliche stärkere Belastung von Geflüchteten, Kindern, Schulen und Kommunen.",
+              "third_order": "Mögliche dauerhafte institutionelle und soziale Ausgrenzung; ohne Umsetzungsdaten offen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Die Wirkung könnte begrenzt bleiben oder bei umfassender Umsetzung mehrere öffentliche Bereiche erfassen."
+              },
+              "negligibility_rationale": "Nicht vernachlässigbar, weil die beschriebenen Eingriffe mehrere Schutz- und Zugangsbereiche betreffen könnten; die konkrete Stärke bleibt jedoch unsicher.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Zusatzrecherche nach unabhängigen Mechanismusbelegen ergab keine belastbare Quelle; die Einschätzung bleibt am Artikeltext und dessen Vorhabensbeschreibung hängen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen wäre eine begrenzte, aber landesweit erreichbare Gruppe.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die beschriebenen Maßnahmen könnten Zugänge zu Unterbringung und Bildung deutlich verändern.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Gesetzliche oder administrative Regeln könnten mittel- bis längerfristig gelten.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Änderungen wären grundsätzlich revidierbar, könnten während ihrer Geltung aber schwer auszugleichen sein.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Geflüchtete und geflüchtete Kinder wären potenziell besonders schutzbedürftig betroffen.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad könnte Schulen, Kommunen und Verwaltung über die unmittelbare Maßnahme hinaus beeinflussen.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist ex ante nicht belegt.",
+                "reference_frame": "Grundrechte, Zugang zu Bildung und Schutz vor diskriminierender staatlicher Behandlung",
+                "source_ids": [
+                  "research-taz-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude": 3,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der Hauptpfad ist bedingt negativ, weil konkrete Vorhaben gegenüber Geflüchteten und im Bildungsbereich beschrieben werden. Die Tragweite bleibt wegen fehlender Originaldokumente, Rechtsprüfung und Umsetzungsdaten vorläufig.",
+          "balance": {
+            "rationale": "Ein konkret untersuchter positiver Hauptpfad desselben Gegenstands ist nicht belegt.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 3,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Bei Umsetzung der beschriebenen Vorhaben könnten sich Zugang und Bedingungen für Geflüchtete und geflüchtete Kinder verschlechtern.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Bei Umsetzung der beschriebenen Vorhaben könnten sich Zugang und Bedingungen für Geflüchtete und geflüchtete Kinder verschlechtern.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Eine mögliche Änderung politischer Prioritäten könnte spätere öffentliche Beschaffungs- und Infrastrukturentscheidungen beeinflussen; eine konkrete ökologische Zustandsänderung ist nicht belegt.",
+              "mechanism": "Politische Kursentscheidungen können Prioritäten für Ausgaben und Infrastruktur setzen, doch der Bericht nennt kein konkretes Umwelt-, Energie- oder Ressourcenprogramm.",
+              "recipients": [
+                "Natur",
+                "Kommunen",
+                "Staat"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "research-taz-aktuell"
+              ],
+              "condition": "Die beschriebenen Vorhaben werden in konkrete Haushalts-, Infrastruktur- oder Beschaffungsentscheidungen übersetzt.",
+              "reference_space": "Sachsen-Anhalt; öffentliche Politik und mögliche Umweltfolgen",
+              "time_horizon": "mittel- bis längerfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die politische Kursänderung würde auch umwelt- oder ressourcenrelevante Entscheidungen erfassen.",
+              "source_support": "Die Quelle belegt keine konkrete Umwelt-, Energie- oder Ressourcenmaßnahme.",
+              "limitations": "Angaben zu Energie, Infrastruktur, Flächennutzung, Emissionen und Umweltstandards fehlen.",
+              "first_order": "Mögliche Verschiebung öffentlicher Prioritäten ohne derzeit bestimmbare Umweltwirkung.",
+              "second_order": "Ressourcenverbrauch, Versorgung oder Emissionen könnten je nach Ausgestaltung betroffen sein; Richtung bleibt offen.",
+              "third_order": "Keine belastbare dritte Ordnung ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Bericht trägt keinen konkreten Umweltpfad; ein schwacher indirekter Pfad ist nur bedingt denkbar."
+              },
+              "negligibility_rationale": "Der Pfad kann praktisch vernachlässigbar sein, weil kein konkretes Umweltprogramm belegt ist; er bleibt dennoch dokumentiert, da politische Prioritäten mittelbar umweltrelevant werden können.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzliche Mechanismus- oder Referenzquelle für Umweltfolgen gefunden; der Pfad bleibt eine schwache Modellhypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Wirkung wäre zunächst auf ein Bundesland begrenzt.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Eine konkrete ökologische Intensität ist nicht ableitbar.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Prioritätseffekt wäre an spätere Entscheidungen gebunden.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine konkrete ökologische Zustandsveränderung ist belegt.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere ökologische Lastverteilung ist nicht belegt.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Bericht trägt keinen konkreten Folgepfad über Umwelt- oder Ressourcensysteme hinweg.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenze oder Grenzverletzung ist belegt.",
+                "reference_frame": "Ökologische Integrität und Ressourcenversorgung",
+                "source_ids": [
+                  "research-taz-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 4,
+                "divisor": 6,
+                "raw": 0.6666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Für den Planetenraum fehlt ein konkreter Gegenstand. Der dokumentierte schwache Pfad prüft nur eine mögliche Kopplung politischer Prioritäten, ohne eine Richtung oder ökologische Folge zu behaupten.",
+          "balance": {
+            "rationale": "Es liegt weder ein belegter positiver noch ein belegter negativer Umweltpfad vor.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine mögliche Änderung politischer Prioritäten könnte spätere öffentliche Beschaffungs- und Infrastrukturentscheidungen beeinflussen; eine konkrete ökologische Zustandsänderung ist nicht belegt.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Eine mögliche Änderung politischer Prioritäten könnte spätere öffentliche Beschaffungs- und Infrastrukturentscheidungen beeinflussen; eine konkrete ökologische Zustandsänderung ist nicht belegt.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Bei Umsetzung der beschriebenen Vorhaben könnten Medienordnung, Ministerialstruktur und politische Gegenstimmen institutionell geschwächt werden.",
+              "mechanism": "Die beschriebenen Pläne zur Kündigung des Medienstaatsvertrags, zur Streichung von Ministerien und zur Kürzung von Förderungen könnten Zuständigkeiten, Informationszugang und zivilgesellschaftliche Kontrolle verändern.",
+              "recipients": [
+                "Bürgerinnen und Bürger",
+                "Medien",
+                "politisch missliebige Initiativen",
+                "Ministerien",
+                "Landtag"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "research-taz-aktuell"
+              ],
+              "condition": "Die beschriebenen Vorhaben werden bestätigt, beschlossen und rechtlich sowie administrativ umgesetzt.",
+              "reference_space": "Sachsen-Anhalt; Medien, Landesverwaltung und zivilgesellschaftliche Kontrolle",
+              "time_horizon": "mittel- bis längerfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die journalistisch beschriebenen Programmpunkte entsprechen verbindlichen politischen Vorhaben und greifen tatsächlich in Medien- und Verwaltungsstrukturen ein.",
+              "source_support": "Die Quelle nennt mögliche Eingriffe in Medienstaatsvertrag, Ministerien und Förderungen; sie belegt keine Umsetzung.",
+              "limitations": "Keine Originaldokumente, keine Rechtsprüfung, keine Angaben zu Mehrheiten und keine beobachteten institutionellen Folgen.",
+              "first_order": "Mögliche Veränderung von Medien- und Ministerialzuständigkeiten sowie Förderentscheidungen.",
+              "second_order": "Mögliche Schwächung pluraler Information und zivilgesellschaftlicher Kontrolle.",
+              "third_order": "Mögliche Normalisierung einer veränderten institutionellen Ordnung und geringere Korrekturfähigkeit.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Die Wirkung könnte bei fehlender Durchsetzung gering bleiben oder bei umfassender Umsetzung mehrere Kontrollstrukturen erfassen."
+              },
+              "negligibility_rationale": "Nicht vernachlässigbar, weil Eingriffe in Medien-, Förder- und Ministerialstrukturen die demokratische Korrekturfähigkeit substanziell berühren könnten.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Eine unabhängige Recherche zu Rechtsstatus, Originalprogramm und institutionellen Mechanismen war nicht erfolgreich; die Einschätzung bleibt vorläufig.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Medien, Landesverwaltung und geförderte Initiativen könnten landesweit betroffen sein.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die beschriebenen Eingriffe könnten Zuständigkeiten und Informationszugänge deutlich verändern.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Änderungen an Institutionen und Förderstrukturen könnten längerfristig wirken.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Institutionelle Änderungen wären grundsätzlich revidierbar, könnten aber Routinen verfestigen.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Politisch missliebige Initiativen und Nutzerinnen und Nutzer pluraler Information könnten ungleich betroffen sein.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 4,
+                  "rationale": "Der Pfad berührt Medien, Verwaltung, Förderentscheidungen und demokratische Kontrolle.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete eingetretene schwere Schutzgrenzverletzung ist nicht belegt.",
+                "reference_frame": "Pluralistische Information, institutionelle Kontrolle und demokratische Korrekturfähigkeit",
+                "source_ids": [
+                  "research-taz-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude": 3,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Längerfristig könnten sich institutionelle Routinen und die Verteilung politischer Einflussmöglichkeiten verändern.",
+              "mechanism": "Wiederholte politische Aussagen und Programmbeschreibungen können Wahrnehmung und Diskurs beeinflussen; ein solcher Effekt ist hier nicht beobachtet.",
+              "recipients": [
+                "Öffentlichkeit",
+                "politische Institutionen"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_effect",
+              "likelihood": "low",
+              "source_ids": [
+                "research-taz-aktuell"
+              ],
+              "condition": "Die Aussagen werden wiederholt aufgegriffen und in politische Entscheidungen oder institutionelle Routinen übersetzt.",
+              "reference_space": "Öffentlicher und politischer Diskurs in Deutschland",
+              "time_horizon": "mittel- bis längerfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wiederholung führt tatsächlich zu veränderten Kategorien oder Entscheidungen.",
+              "source_support": "Die Quelle enthält politische Begriffe und Programmbeschreibungen, aber keinen Publikums- oder Wirkungsnachweis.",
+              "limitations": "Keine Resonanzdaten, Diskursanalyse oder Verhaltensdaten.",
+              "first_order": "Veränderte Sichtbarkeit und Anschlussfähigkeit der Positionen.",
+              "second_order": "Mögliche Verschiebung des politischen Diskursraums.",
+              "third_order": "Mögliche institutionelle Normalisierung; nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne Wirkungs- oder Publikumsdaten bleibt der mögliche Diskurseffekt niedrig und unsicher."
+              },
+              "negligibility_rationale": "Der Pfad kann gering sein, wenn die Aussagen folgenlos bleiben; er wird dennoch dokumentiert, weil wiederholte Rahmung institutionelle Wahrnehmung beeinflussen kann.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Resonanz- oder Diskursquellen wurden gefunden.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte über öffentliche Kommunikation eine begrenzte bis regionale Reichweite haben.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Veränderung von Einstellungen oder Entscheidungen ist nicht belegt.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Wiederholung könnte mittelfristig wirken, sofern sie tatsächlich stattfindet.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Diskursive Verschiebungen wären grundsätzlich reversibel.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffenheit und Lastverteilung sind nicht konkret belegt.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der mögliche Pfad betrifft Kategorien und Diskurs, nicht nachgewiesene institutionelle Zustände.",
+                  "source_ids": [
+                    "research-taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete Schutzgrenzverletzung ist beobachtet oder genau bedingt modelliert.",
+                "reference_frame": "Demokratische Öffentlichkeit und pluraler politischer Diskurs",
+                "source_ids": [
+                  "research-taz-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "rationale": "Der demokratische Hauptpfad ist bedingt negativ, weil konkrete mögliche Eingriffe in Medien, Ministerien und Förderungen beschrieben werden. Der Diskurspfad bleibt ergänzend und unsicher.",
+          "balance": {
+            "rationale": "Ein materieller positiver Gegenpfad ist im gelieferten Material nicht konkret untersucht oder belegt.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 3,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Bei Umsetzung der beschriebenen Vorhaben könnten Medienordnung, Ministerialstruktur und politische Gegenstimmen institutionell geschwächt werden.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Bei Umsetzung der beschriebenen Vorhaben könnten Medienordnung, Ministerialstruktur und politische Gegenstimmen institutionell geschwächt werden.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "first_order",
+            "path": "Die parlamentarische Ausgangslage verändert sich; laut Quelle fehlen der AfD drei Abgeordnete zur absoluten Mehrheit.",
+            "direction": "open",
+            "condition": "Die politische Ausgangslage ist verändert; eine Regierungsbildung oder konkrete Zustandsänderung ist noch nicht belegt.",
+            "evidence": "plausible_path",
+            "claim_ids": [],
+            "dimensions": [
+              "democracy"
+            ]
+          }
+        ],
+        "key_figures": [
+          {
+            "label": "Fehlende Abgeordnete zur Mehrheit",
+            "value": "drei",
+            "unit": "Abgeordnete",
+            "context": "Laut Quelle fehlen der AfD drei Abgeordnete zur absoluten Mehrheit.",
+            "claim_id": "wt-e18435f6b86d293a-v1-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "kommunen",
+          "staat",
+          "kinder_jugend"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-13T15:11:51.968Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-13T12:05:00.000Z",
+      "last_updated": "2026-09-13T15:11:51.968Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-56a2fde1ebea8abdb2db",
+      "case_file": null,
+      "source_published_at": "2026-09-13T12:05:00.000Z",
+      "published_at": "2026-09-13T15:11:51.968Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Welche Gespräche über die Bildung einer Landesregierung finden statt und welche Bedingungen werden genannt?",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Belegte Gespräche, Koalitionsbedingungen oder institutionelle Schritte",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-ffeb8db4640ce5be",
+          "announced_at": "2026-09-13T12:05:00.000Z",
+          "follow_up_date": "2026-09-20T15:11:51.968Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Welche der genannten Programmpunkte werden offiziell als Regierungsmaßnahmen bestätigt?",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Programmdokumente oder offizielle Beschlüsse",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f8cc1215330192ec",
+          "announced_at": "2026-09-13T12:05:00.000Z",
+          "follow_up_date": "2026-09-20T15:11:51.968Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Nach-dem-Wahlsieg-der-AfD/!6208051",
+          "source_type": "media_rss",
+          "published_at": "2026-09-13T12:05:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e35490f299667146",
       "title_image": {

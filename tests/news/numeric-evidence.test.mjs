@@ -1,8 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { numberTokens, numericEvidenceReceipt, persistedNumericEvidence } from '../../scripts/news/numeric-evidence.mjs';
+import { numberTokens, numericEvidenceReceipt, persistedNumericEvidence, withoutVerifiedPublicationDates } from '../../scripts/news/numeric-evidence.mjs';
 import { validateNewsroomAnalysis } from '../../scripts/news/newsroom.mjs';
 import { analysisValidationDiagnostics } from '../../scripts/news/run.mjs';
+
+test('an attributed publication date is metadata evidence, never evidence for an event date or quantity', () => {
+  const sources=[{publisher:'ZDFheute',published_at:'2026-09-13T14:37:00Z'}];
+  const text='ZDFheute berichtet am 13. September 2026 über 13 Betroffene.';
+  assert.equal(withoutVerifiedPublicationDates(text,sources),'ZDFheute berichtet am Veröffentlichungstag über 13 Betroffene.');
+  for(const value of ['ZDFheute berichtet am 12. September 2026 über den Fall.','Andere Quelle berichtet am 13. September 2026 über den Fall.','Das Ereignis geschah am 13. September 2026.'])assert.equal(withoutVerifiedPublicationDates(value,sources),value);
+  assert.equal(withoutVerifiedPublicationDates(text,[{...sources[0],published_at:'invalid'}]),text);
+  assert.equal(text,'ZDFheute berichtet am 13. September 2026 über 13 Betroffene.');
+});
 
 test('German grouped integers and decimal notation are normalized without changing magnitude', () => {
   for (const value of ['5.200', '5 200', '5\u00a0200', '5\u202f200', '5200']) assert.deepEqual([...numberTokens(value)], ['5200']);

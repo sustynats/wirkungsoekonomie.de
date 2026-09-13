@@ -34,6 +34,21 @@ export function sourceNumberTokens(source = {}, fields = ['title', 'summary', 'a
   return new Set(fields.flatMap(field => [...numberTokens(source[field], source.language)]));
 }
 
+// Publication metadata proves when this publisher reported, not when the
+// event occurred or any quantity in the story. Exclude only the exact,
+// attributed reporting date from the numeric check; keep reader copy intact.
+export function withoutVerifiedPublicationDates(value, sources = []) {
+  let text=String(value || '');
+  const escape=value=>value.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  for(const source of sources) {
+    if(!source.publisher || !source.published_at || !Number.isFinite(Date.parse(source.published_at)))continue;
+    const date=new Intl.DateTimeFormat('de-DE',{day:'numeric',month:'long',year:'numeric',timeZone:'Europe/Berlin'}).format(new Date(source.published_at));
+    const prefix=escape(source.publisher)+'\\s+berichtet(?:e)?\\s+am\\s+';
+    text=text.replace(new RegExp('('+prefix+')'+escape(date),'gu'),'$1Veröffentlichungstag');
+  }
+  return text;
+}
+
 export function evidenceNumberTokens(evidence, sources = []) {
   return new Set((Array.isArray(evidence) ? evidence : []).flatMap(proof => {
     const source = sources.find(entry => entry.source_id === proof?.source_id && entry.url === proof?.url);
