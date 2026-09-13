@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import { syntheticImpact21 } from './fixtures/impact21.mjs';
 import { SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import { reviewPreflight } from '../../scripts/news/bridge/review-preflight.mjs';
+import {syntheticMediaReview} from './fixtures/media-review.mjs';
 
 const now='2026-09-13T12:00:00Z';
 function fixture() {
@@ -70,4 +71,14 @@ test('a relevant but missing media check cannot be downgraded to an optional not
  await assert.rejects(reviewPreflight(f.bridge,f.output,f.record,now),e=>e.issues?.includes('MEDIA_IMPACT_REQUIRED'));
  f.output.review.status='needs_review';f.output.review.checks.source_fidelity.status='fail';
  assert.equal((await reviewPreflight(f.bridge,f.output,f.record,now)).gate.status,'needs_review');
+});
+
+test('a complete media review passes with the final assessment; failed independent checks still block it',async()=>{
+ const f=fixture();f.record.media_review_required=true;f.record.title='Im Beispiel wird vor einer Katastrophe gewarnt';
+ f.record.analysis={...f.record.analysis,media_impact:null};f.output.media_applicability=syntheticMediaReview();
+ let result=await reviewPreflight(f.bridge,f.output,f.record,now);
+ assert.equal(result.gate.status,'ready');assert.equal(result.reviewRecord.analysis.media_impact.relevant,true);
+ f.output.review.checks.counterpaths_and_dominance.status='fail';f.output.review.status='needs_review';
+ result=await reviewPreflight(f.bridge,f.output,f.record,now);
+ assert.equal(result.gate.status,'needs_review');assert.equal(f.record.analysis.media_impact,null);
 });

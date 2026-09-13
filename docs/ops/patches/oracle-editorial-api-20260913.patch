@@ -91,7 +91,7 @@ index 27ac01c..58f3226 100644
      discordAnalyticsStore
 diff --git a/src/services/editorialApiService.mjs b/src/services/editorialApiService.mjs
 new file mode 100644
-index 0000000..7995f7e
+index 0000000..df23546
 --- /dev/null
 +++ b/src/services/editorialApiService.mjs
 @@ -0,0 +1,267 @@
@@ -246,7 +246,7 @@ index 0000000..7995f7e
 +          let packet = input.prompt;
 +          for (let depth=0; depth<3 && typeof packet==='string'; depth++) {
 +            try { packet=JSON.parse(packet); } catch { break; }
-+            if (['impact_review_factors_v1','impact_review_confirmation_v2','impact_review_bound_confirmation_v3','impact_review_bound_confirmation_v4'].includes(packet?.output_contract?.response_format?.name)) {
++            if (['impact_review_factors_v1','impact_review_confirmation_v2','impact_review_bound_confirmation_v3','impact_review_bound_confirmation_v4','impact_review_bound_confirmation_v5'].includes(packet?.output_contract?.response_format?.name)) {
 +              const proposed=packet.output_contract.response_format;
 +              if (proposed.type !== 'json_schema' || proposed.strict !== true || proposed.schema?.type !== 'object'
 +                || JSON.stringify(proposed).length>40000) throw Error('API_EDITORIAL_RESPONSE_CONTRACT_INVALID');
