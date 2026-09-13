@@ -1220,7 +1220,16 @@ export function statusConsistencyErrors(analysis) {
 
 export function assertsRealisedExAnteEffect(analysis) {
   const causal=/\b(bewirkt|hat\s+[^.!?]{0,80}\b(?:verbessert|reduziert|erhöht)|führt\s+(?:unmittelbar\s+)?zu)\b/i;
-  return collectStrings(analysis).some(value=>value.split(/[.!?](?:\s|$)/).some(sentence=>
+  const assertions = structuredClone(analysis);
+  // A path's explicitly labelled assumptions are conditions of the model,
+  // not claims that the resulting effect has already occurred. Continue
+  // checking every rationale, outcome, summary and unlabeled assertion.
+  for (const dimension of Object.values(assertions.impact_assessment?.dimensions || {})) {
+    for (const field of ['primary_paths','secondary_paths','opposing_paths']) {
+      for (const pathway of Array.isArray(dimension[field]) ? dimension[field] : []) delete pathway.assumptions;
+    }
+  }
+  return collectStrings(assertions).some(value=>value.split(/[.!?](?:\s|$)/).some(sentence=>
     sentence.split(/[;:]|,\s*(?:aber|sondern|und|doch)\s+/i).some(clause=>causal.test(clause)
       && !/\b(?:bewirkt|führt\s+(?:unmittelbar\s+)?zu)\b[^;:.!?]{0,100}\b(?:noch\s+)?nicht\s*$/i.test(clause)
       && !/\bhat\s+(?:sich\s+)?(?:noch\s+)?nicht\b(?!\s+nur)[^;:.!?]{0,80}\b(?:verbessert|reduziert|erhöht)\b/i.test(clause))));

@@ -1,6 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {assertsRealisedExAnteEffect} from '../../scripts/news/lib.mjs';
+test('modelled path assumptions are not mistaken for observed outcomes',()=>{
+ const analysis={impact_assessment:{dimensions:{human:{primary_paths:[{assumptions:'Öffentliche Debatte führt zu höherer Aufmerksamkeit für Finanzierungsregeln.'}]}}}};
+ assert.equal(assertsRealisedExAnteEffect(analysis),false);
+ assert.equal(analysis.impact_assessment.dimensions.human.primary_paths[0].assumptions.includes('führt zu'),true);
+ analysis.impact_assessment.dimensions.human.primary_paths[0].rationale='Die Maßnahme hat die Kosten reduziert.';
+ assert.equal(assertsRealisedExAnteEffect(analysis),true);
+});
 test('an explicit denial of realised transformation does not reject an ex ante assessment',()=>{
  assert.equal(assertsRealisedExAnteEffect({transformation_potential:'Bei wirksamer Umsetzung können Unterstützungsstrukturen verbessert werden; die aktuelle Ankündigung allein bewirkt diese Transformation noch nicht.'}),false);
 });
