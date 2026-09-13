@@ -113,6 +113,7 @@ export function validateOutputPreflight(output, job, registry, stories, now) {
   const result = prepareReviewedStory(prepared.review, registry, stories, now);
   const issues = result.errors.filter(issue => !issue.startsWith('IMPACT_'));
   if (issues.length) throw Object.assign(new Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues });
+  return prepared;
 }
 
 export function adaptOutput(output, job, registry, stories, now) {
