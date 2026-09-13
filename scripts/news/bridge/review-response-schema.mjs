@@ -2,13 +2,21 @@ import { IMPACT_VERSION, TARGET_TYPES, TEMPORAL, EVIDENCE, LIKELIHOOD } from '..
 import { POTENTIAL_REVISION, PATH_QUALITIES } from '../impact-potential.mjs';
 import { FACTOR_KEYS } from '../impact-magnitude.mjs';
 import { SEMANTIC_CHECKS } from '../impact-publication.mjs';
-import { RESEARCH_FUNCTIONS } from './research-source-schema.mjs';
+import { RESEARCH_FUNCTIONS, researchSourceSchema } from './research-source-schema.mjs';
 
 const string={type:'string'}, boolean={type:'boolean'}, score={type:'integer',enum:[0,1,2,3,4,5]};
 const en=values=>({type:'string',enum:values});
 const array=items=>({type:'array',items});
 const object=properties=>({type:'object',properties,required:Object.keys(properties),additionalProperties:false});
 const strings=array(string), ref=name=>({$ref:'#/$defs/'+name});
+// Reuse the actual import contract, including its source-ID and length rules.
+// https-url is our local validator format; strict decoding uses its protocol
+// pattern, while the complete SSRF/access check remains server-side.
+const researchProperties=Object.fromEntries(Object.entries(researchSourceSchema.items.properties).map(([key,value])=>{
+ const converted={type:'string',...value};
+ if(converted.format==='https-url'){delete converted.format;converted.pattern='^https://';}
+ return [key,converted];
+}));
 const direction=en(['positive','negative','neutral','open']);
 const factors=object(Object.fromEntries(FACTOR_KEYS.map(key=>[key,ref('factor')])));
 const boundary=object({decisive:boolean,rationale:string,reference_frame:string,source_ids:strings,status:en(['observed','conditional','not_decisive'])});
@@ -53,7 +61,8 @@ export const REVIEW_RESPONSE_FORMAT={type:'json_schema',name:'impact_review_fact
   review:object({status:en(['ready','needs_review','blocked']),checks:object(Object.fromEntries(SEMANTIC_CHECKS.map(key=>[key,
    object({status:en(['pass','fail']),rationale:string})]))),findings:strings}),
   impact_assessment:assessment,
-  research_sources:array(object({source_id:string,url:string,title:string,publisher:string,source_function:en(RESEARCH_FUNCTIONS),quote:string,supports:string,published_at:{type:['string','null']}})),
- }),$defs:{factor:object({value:score,rationale:string,source_ids:strings}),path:object(pathProperties),
+  research_sources:{...array(object(researchProperties)),maxItems:2},
+ }),$defs:{factor:object({value:score,rationale:{...string,minLength:12},source_ids:{...strings,minItems:1,
+  description:'Tatsächlich vorhandene Beleg-IDs für die Ausgangstatsachen bzw. den Mechanismus dieser begründeten ordinalen Schätzung. Die Quelle behauptet dadurch nicht den Schätzwert. Modellannahmen und Wissensgrenzen in der Begründung offenlegen; keine Scheinbelege oder aus fehlender Evidenz abgeleiteten niedrigen Werte.'}}),path:object(pathProperties),
   main_path:object({...pathProperties,type:en(['main_path','counter_path']),same_target:{type:'boolean',enum:[true]},same_baseline:{type:'boolean',enum:[true]}}),dimension}},
 };

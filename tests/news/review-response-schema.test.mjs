@@ -5,6 +5,8 @@ import { deriveAssessmentCalculations, impactAssessmentErrors } from '../../scri
 import { syntheticPotentialAssessment, syntheticPotentialPath } from './fixtures/impact21.mjs';
 import { SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import { FACTOR_KEYS } from '../../scripts/news/impact-magnitude.mjs';
+import { researchSourceSchema } from '../../scripts/news/bridge/research-source-schema.mjs';
+import { canonicalResearchIdentifiers } from '../../scripts/news/bridge/api-processor.mjs';
 
 test('review decoding has a closed fully required domain schema instead of unrestricted nested objects',()=>{
  const format=REVIEW_RESPONSE_FORMAT, root=format.schema;
@@ -25,6 +27,29 @@ test('review decoding has a closed fully required domain schema instead of unres
  assert.equal(root.$defs.path.properties.magnitude,undefined);
  for(const key of ['magnitude','direction','dominance']) assert.equal(root.$defs.dimension.properties[key],undefined);
  assert.deepEqual(root.$defs.main_path.properties.type.enum,['main_path','counter_path']);
+ assert.equal(root.properties.research_sources.maxItems,2);
+ assert.equal(root.$defs.factor.properties.source_ids.minItems,1);
+ for(const key of ['source_id','title','publisher','quote','supports'])
+  assert.deepEqual(root.properties.research_sources.items.properties[key],researchSourceSchema.items.properties[key]);
+});
+
+test('exact research URL identifiers normalize throughout references without changing the evidence or text',()=>{
+ const url='https://example.org/report',a={research_sources:[{source_id:url,url,quote:'Unchanged original quotation'}],impact_assessment:{source_functions:[{source_id:url}],dimensions:{human:{primary_paths:[{source_ids:[url,'original'],mechanism:url}]}}}};
+ canonicalResearchIdentifiers(a);
+ const id=a.research_sources[0].source_id;
+ assert.match(id,/^research-[a-f0-9]{32}$/);
+ assert.equal(a.research_sources[0].url,url);assert.equal(a.research_sources[0].quote,'Unchanged original quotation');
+ assert.equal(a.impact_assessment.source_functions[0].source_id,id);
+ assert.deepEqual(a.impact_assessment.dimensions.human.primary_paths[0].source_ids,[id,'original']);
+ assert.equal(a.impact_assessment.dimensions.human.primary_paths[0].mechanism,url);
+ const duplicate={research_sources:[{source_id:url,url},{source_id:url,url}]};
+ canonicalResearchIdentifiers(duplicate);assert.equal(duplicate.research_sources[0].source_id,url);
+ const informal={research_sources:[{source_id:'publisher-id',url}],source_ids:['publisher-id']};
+ canonicalResearchIdentifiers(informal,[{source_id:'publisher-id',url}]);
+ assert.equal(informal.source_ids[0],id);
+ const retarget={research_sources:[{source_id:'publisher-id',url:'https://other.example.org/report'}]};
+ canonicalResearchIdentifiers(retarget,[{source_id:'publisher-id',url}]);
+ assert.equal(retarget.research_sources[0].source_id,'publisher-id');
 });
 
 test('arithmetic and aggregation follow given factors and path roles without inventing editorial judgments',()=>{

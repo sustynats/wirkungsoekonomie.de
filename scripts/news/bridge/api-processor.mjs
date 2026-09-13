@@ -69,8 +69,9 @@ export function validateApiOutput(output, packet, now) {
   if (kind === 'news' && Array.isArray(output.analyses)) output = wrapNativeNewsOutput(output, original);
   const schema = kind === 'news' ? outputSchema : kind === 'review' ? semanticOutputSchema
     : output.disposition === 'hold' ? EDITORIAL_REQUEST_CONTRACT_V4.hold_output_schema : EDITORIAL_REQUEST_CONTRACT_V4.output_schema;
-  parsePacket(JSON.stringify(output), schema);
   output = structuredClone(output);
+  canonicalResearchIdentifiers(output,original.record?.sources || original.sources || []);
+  parsePacket(JSON.stringify(output), schema);
   canonicalAssessmentNumbers(output.impact_assessment || output.wirkungsticker?.analysis?.impact_assessment);
   deriveAssessmentCalculations(output.impact_assessment || output.wirkungsticker?.analysis?.impact_assessment);
   if (output.job_id !== original.job_id || output.input_hash !== original.input_hash) throw Error('BRIDGE_JOB_BINDING_MISMATCH');
@@ -82,6 +83,30 @@ export function validateApiOutput(output, packet, now) {
     if (output.preview.format !== 'news') validateEditorialPreview(output.preview);
   }
   return output;
+}
+
+// A research source sometimes uses an informal local ID. Give that same
+// source a protocol ID and update only explicit identifier fields. The
+// URL, quotation, judgment and immutable provider response are not changed.
+export function canonicalResearchIdentifiers(output, originalSources=[]) {
+  const replacements=new Map();
+  const seen=new Set();
+  for(const source of output.research_sources || []) {
+    if(seen.has(source.source_id))return output; // ambiguous duplicate stays invalid
+    seen.add(source.source_id);
+    const original=originalSources.find(s=>s.source_id===source.source_id);
+    if(original && original.url!==source.url)return output; // cannot retarget an existing identifier
+    if(typeof source.source_id==='string' && source.source_id.trim() && !/^research-[a-z0-9-]{3,100}$/.test(source.source_id) && /^https:\/\//.test(source.url)) {
+      replacements.set(source.source_id,'research-'+hash(source.url).slice(0,32));
+    }
+  }
+  const visit=value=>{
+    if(!value || typeof value!=='object')return;
+    if(typeof value.source_id==='string' && replacements.has(value.source_id))value.source_id=replacements.get(value.source_id);
+    if(Array.isArray(value.source_ids))value.source_ids=value.source_ids.map(id=>replacements.get(id)||id);
+    Object.values(value).forEach(visit);
+  };
+  visit(output);return output;
 }
 
 // Lossless transport typing only: an explicitly supplied "3" is the number 3.

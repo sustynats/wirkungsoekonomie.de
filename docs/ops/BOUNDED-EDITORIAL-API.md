@@ -192,3 +192,12 @@ Vor dem Wechsel muss der Dienstbenutzer das vollständige Modul-Paket laden
 können; anschließend müssen Prozess und authentifizierte HTTP-Abfrage bestehen.
 Bei Fehler wird die vorherige Runtime wieder eingesetzt, ohne Queue- oder
 Kostenjournale zurückzusetzen.
+
+Das Quellenformat des Fachpasses verwendet unmittelbar den bestehenden
+Recherchevertrag einschließlich ID-Muster und Längengrenzen. Die zwei erlaubten
+Zusatzbelege sind auch im Ausgabeformat begrenzt. Informelle, eindeutig einer
+konkreten gelieferten Recherchequelle zugeordnete IDs werden verlustfrei in den
+Transportnamensraum überführt; kollidierende oder auf andere URLs umgedeutete
+IDs bleiben gesperrt. Quelleninhalt und Belegfunktion werden weiterhin tatsächlich
+geprüft. Ein Quellenverweis an einem Faktor trägt dessen Tatsachengrundlage und
+ist kein Beweis, dass die Quelle die ordinale Schätzung selbst vorgenommen hat.
