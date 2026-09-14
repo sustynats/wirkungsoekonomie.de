@@ -2,8 +2,387 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-14T15:49:21.164Z",
+  "updated_at": "2026-09-14T16:18:31.179Z",
   "stories": [
+    {
+      "story_id": "wt-aa6a91f8546c7299",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-aa6a91f8546c7299-3bb1ff96ea71211a-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-aa6a91f8546c7299-4f6159cca32883b6-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-aa6a91f8546c7299-3a3ddbfa01fd51c0-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "technologie-bundesregierung-nehmen-ki-warnungen-sehr-ernst-trump-sieht-verschworung-und--6c7299",
+      "title": "Deutschlandfunk berichtet: Bundesregierung nimmt KI-Warnungen ernst, Trump lehnt Regulierung ab",
+      "source_summary": "Der Deutschlandfunk berichtet über eine weitergehende Debatte zu Sicherheitsrisiken künstlicher Intelligenz. Das Bundesdigitalministerium verweist demnach auf ein neu gegründetes nationales KI-Sicherheitsinstitut, das sicherheitsrelevante Risiken frühzeitig identifizieren soll.\n\nIm Bericht werden außerdem Forderungen nach stärkerer Regulierung und die ablehnende Haltung von US-Präsident Trump gegenüber solchen Forderungen genannt. Trump habe Sicherheitsbedenken zurückgewiesen und von einer „Verschwörung“ gesprochen. Der vollständige Kontext der Aussagen und die konkrete Ausstattung oder Arbeitsweise des Instituts sind in den gelieferten Auszügen nicht belegt.",
+      "summary": "Der Deutschlandfunk berichtet über ein neues nationales KI-Sicherheitsinstitut und die Debatte über stärkere Regulierung. Zugleich weist US-Präsident Trump solche Forderungen zurück; konkrete Folgen der angekündigten oder geforderten Schritte sind noch offen.",
+      "detail_summary": "Der Deutschlandfunk berichtet über Forderungen nach einer Verlangsamung der KI-Forschung und über Sicherheitsrisiken der Technologie. Das Bundesdigitalministerium verweist auf ein neu gegründetes nationales KI-Sicherheitsinstitut zur frühen Identifizierung solcher Risiken. Der UN-Menschenrechtskommissar Türk fordert laut Bericht stärkere Regulierung. US-Präsident Trump weist solche Forderungen zurück und spricht von einer „Verschwörung“. Belegt ist damit eine politische Kontroverse, nicht aber eine bereits eingetretene Veränderung bei Sicherheit, Wettbewerb oder Zugang.",
+      "why_relevant": "Die Meldung verbindet einen neuen institutionellen Ansatz zur KI-Sicherheit mit einer international umstrittenen Regulierungsfrage. Die konkreten Folgen bleiben offen.",
+      "topic": [
+        "Technologie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über ein neu gegründetes nationales KI-Sicherheitsinstitut und gegensätzliche Positionen zur Regulierung künstlicher Intelligenz",
+        "evaluation_target": {
+          "label": "institutioneller und politischer Umgang mit KI-Sicherheitsrisiken",
+          "type": "dossier"
+        },
+        "baseline": "Vor der Meldung ist im gelieferten Material kein konkret beschriebener Auftrag, keine Befugnis und kein Umsetzungsstand des Instituts belegt.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne konkret belegte institutionelle oder regulatorische Schritte bliebe die im Bericht beschriebene Debatte zunächst ohne nachgewiesene Zustandsveränderung. Wie sich die Entwicklung ohne das Institut oder ohne stärkere Regulierung fortsetzt, ist nicht belegt.",
+        "reference_frame": [
+          "Sicherheit und Schutz vor KI-bezogenen Risiken",
+          "demokratische und staatliche Rechenschaft über Regulierung",
+          "Agenda 2030/SDG und DNS nur objektspezifisch, soweit anwendbar"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der Deutschlandfunk-Bericht nennt Sicherheitsrisiken und mögliche Regulierung, belegt aber keine konkrete Veränderung für Sicherheit, Arbeit, Zugang oder Verteilung. Vulnerable Gruppen und tatsächliche Empfänger bleiben offen.",
+            "planet": "Der Bericht behandelt keine ökologischen Folgen. Ein möglicher Zusammenhang mit Energie- oder Ressourcenverbrauch von KI ist hier nicht hinreichend gegenstandsbezogen belegt und bleibt offen.",
+            "democracy": "Der Bericht belegt eine politische Kontroverse und die Ankündigung beziehungsweise Bezugnahme auf ein Institut, aber keine Veränderung von Kontrolle, Beteiligung, Unabhängigkeit oder Korrekturfähigkeit. Auftrag und institutionelle Einbindung sind ungeklärt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Der Bericht nennt ein nationales KI-Sicherheitsinstitut und gegensätzliche politische Aussagen zur Regulierung.",
+          "second_order": "Veränderungen von Prüfungen, Anforderungen oder Zuständigkeiten sind nur bedingt denkbar, falls konkrete Maßnahmen beschlossen und umgesetzt werden. Diese Bedingungen sind nicht belegt.",
+          "third_order": "Langfristige Veränderungen von Innovations-, Sicherheits- oder internationalen Abstimmungsstrukturen bleiben wegen fehlender konkreter Maßnahmen, Reaktionen und Messdaten offen.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Quelle belegt nicht, dass das Institut bereits operative Befugnisse, ausreichende Ressourcen oder eine konkrete Aufsichtsfunktion besitzt.",
+            "Die Quelle belegt keine beschlossene Regulierung und keine eingetretene Verbesserung oder Verschlechterung der KI-Sicherheit.",
+            "Die ergänzende Recherche fand keinen verwendbaren gelesenen Primärbeleg innerhalb des zugelassenen Zugangsregisters, der Auftrag oder Befugnisse des Instituts konkretisiert."
+          ],
+          "source_independence": "Der Ereigniskern stützt sich auf den gelieferten Deutschlandfunk-Bericht. Die ergänzende Suche nach einem amtlichen Instituts- oder Mechanismusbeleg wurde durchgeführt, lieferte aber keinen tatsächlich gelesenen und verwertbaren Zusatzbeleg.",
+          "institutional_status": "Im Bericht wird ein neu gegründetes nationales KI-Sicherheitsinstitut erwähnt. Rechtlicher Status, Auftrag, Befugnisse, Ressourcen und tatsächliche Arbeitsaufnahme bleiben aus dem vorliegenden Material offen."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "temporal_status": "ex_ante",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "balance": null,
+            "rationale": "Der Ereignisbericht belegt eine politische und institutionelle Debatte, aber keine konkrete Zustandsveränderung für Menschen. Ein möglicher Pfad über Sicherheitsaufsicht, regulatorische Anforderungen oder Auswirkungen auf Arbeit und Zugang bleibt wegen fehlender Auftragstiefe, Empfänger, Bedingungen, Zeitangaben und Messdaten nicht ausreichend bestimmbar.",
+            "research_pass": "second_pass",
+            "research_result": "Der Bericht wurde erneut auf Ereigniskern, Empfänger, Mechanismus und zeitliche Einordnung geprüft. Zusätzlich wurde gezielt nach einem amtlichen Institutsbeleg und einem unabhängigen Mechanismusbeleg gesucht. Beide Recherchen wurden abgeschlossen, lieferten aber keinen verwertbaren Zusatzbeleg. Deshalb wird kein modellierter Pfad mit Tragweite ausgewiesen.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": null,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Der Ereignisbericht belegt eine politische und institutionelle Debatte, aber keine konkrete Zustandsveränderung für Menschen. Ein möglicher Pfad über Sicherheitsaufsicht, regulatorische Anforderungen oder Auswirkungen auf Arbeit und Zugang bleibt wegen fehlender Auftragstiefe, Empfänger, Bedingungen, Zeitangaben und Messdaten nicht ausreichend bestimmbar.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der Ereignisbericht belegt eine politische und institutionelle Debatte, aber keine konkrete Zustandsveränderung für Menschen. Ein möglicher Pfad über Sicherheitsaufsicht, regulatorische Anforderungen oder Auswirkungen auf Arbeit und Zugang bleibt wegen fehlender Auftragstiefe, Empfänger, Bedingungen, Zeitangaben und Messdaten nicht ausreichend bestimmbar.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "Tragweite offen",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Derzeit nicht ausreichend bewertbar",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "temporal_status": "ex_ante",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "balance": null,
+            "rationale": "Die Quelle behandelt keine ökologischen Folgen. Ein möglicher Zusammenhang mit Energie-, Ressourcen- oder Emissionswirkungen von KI wäre für diesen konkreten institutionellen Gegenstand nur eine nicht ausreichend belegte Modellhypothese. Es liegen weder konkrete Maßnahmen noch ein passender Mechanismus- oder Zustandsbeleg vor.",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle wurde erneut auf ökologische Aussagen und konkrete Wirkpfade geprüft. Eine gezielte Suche nach einem passenden Mechanismus- oder Referenzbeleg wurde durchgeführt, ergab aber keinen verwertbaren gelesenen Zusatzbeleg. Die Dimension bleibt daher ausdrücklich nicht ausreichend bewertbar.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": null,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Die Quelle behandelt keine ökologischen Folgen. Ein möglicher Zusammenhang mit Energie-, Ressourcen- oder Emissionswirkungen von KI wäre für diesen konkreten institutionellen Gegenstand nur eine nicht ausreichend belegte Modellhypothese. Es liegen weder konkrete Maßnahmen noch ein passender Mechanismus- oder Zustandsbeleg vor.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Die Quelle behandelt keine ökologischen Folgen. Ein möglicher Zusammenhang mit Energie-, Ressourcen- oder Emissionswirkungen von KI wäre für diesen konkreten institutionellen Gegenstand nur eine nicht ausreichend belegte Modellhypothese. Es liegen weder konkrete Maßnahmen noch ein passender Mechanismus- oder Zustandsbeleg vor.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "Tragweite offen",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Derzeit nicht ausreichend bewertbar",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "temporal_status": "ex_ante",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "balance": null,
+            "rationale": "Der Bericht belegt gegensätzliche politische Positionen und die Erwähnung eines Instituts, aber keine Veränderung von Macht, Rechenschaft, Beteiligung, institutioneller Unabhängigkeit oder Korrekturfähigkeit. Ein möglicher Aufsichtspfad hängt von ungeklärten Zuständigkeiten, Verfahren und Umsetzungsentscheidungen ab.",
+            "research_pass": "second_pass",
+            "research_result": "Die politische Aussage, der institutionelle Status und mögliche demokratische Wirkmechanismen wurden erneut getrennt geprüft. Die ergänzende Suche nach einem amtlichen Status- oder Verfahrensbeleg wurde abgeschlossen, ohne einen verwertbaren Zusatzbeleg zu liefern. Daher wird kein modellierter Pfad und keine Tragweite ausgewiesen.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": null,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Der Bericht belegt gegensätzliche politische Positionen und die Erwähnung eines Instituts, aber keine Veränderung von Macht, Rechenschaft, Beteiligung, institutioneller Unabhängigkeit oder Korrekturfähigkeit. Ein möglicher Aufsichtspfad hängt von ungeklärten Zuständigkeiten, Verfahren und Umsetzungsentscheidungen ab.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der Bericht belegt gegensätzliche politische Positionen und die Erwähnung eines Instituts, aber keine Veränderung von Macht, Rechenschaft, Beteiligung, institutioneller Unabhängigkeit oder Korrekturfähigkeit. Ein möglicher Aufsichtspfad hängt von ungeklärten Zuständigkeiten, Verfahren und Umsetzungsentscheidungen ab.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "Tragweite offen",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Derzeit nicht ausreichend bewertbar",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Der Deutschlandfunk-Bericht nennt ein neu gegründetes nationales KI-Sicherheitsinstitut, Forderungen nach stärkerer Regulierung und Trumps ablehnende Position."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "insufficient_basis",
+          "direction": "open",
+          "magnitude": null,
+          "evidence": "not_assessable",
+          "data_status": "missing",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "temporal_status": "ex_ante",
+          "primary_paths": [],
+          "secondary_paths": [],
+          "balance": null,
+          "rationale": "Der Ereignisbericht belegt eine politische und institutionelle Debatte, aber keine konkrete Zustandsveränderung für Menschen. Ein möglicher Pfad über Sicherheitsaufsicht, regulatorische Anforderungen oder Auswirkungen auf Arbeit und Zugang bleibt wegen fehlender Auftragstiefe, Empfänger, Bedingungen, Zeitangaben und Messdaten nicht ausreichend bestimmbar.",
+          "research_pass": "second_pass",
+          "research_result": "Der Bericht wurde erneut auf Ereigniskern, Empfänger, Mechanismus und zeitliche Einordnung geprüft. Zusätzlich wurde gezielt nach einem amtlichen Institutsbeleg und einem unabhängigen Mechanismusbeleg gesucht. Beide Recherchen wurden abgeschlossen, lieferten aber keinen verwertbaren Zusatzbeleg. Deshalb wird kein modellierter Pfad mit Tragweite ausgewiesen.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der Ereignisbericht belegt eine politische und institutionelle Debatte, aber keine konkrete Zustandsveränderung für Menschen. Ein möglicher Pfad über Sicherheitsaufsicht, regulatorische Anforderungen oder Auswirkungen auf Arbeit und Zugang bleibt wegen fehlender Auftragstiefe, Empfänger, Bedingungen, Zeitangaben und Messdaten nicht ausreichend bestimmbar.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": null,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Der Ereignisbericht belegt eine politische und institutionelle Debatte, aber keine konkrete Zustandsveränderung für Menschen. Ein möglicher Pfad über Sicherheitsaufsicht, regulatorische Anforderungen oder Auswirkungen auf Arbeit und Zugang bleibt wegen fehlender Auftragstiefe, Empfänger, Bedingungen, Zeitangaben und Messdaten nicht ausreichend bestimmbar.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "Tragweite offen",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Derzeit nicht ausreichend bewertbar",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "insufficient_basis",
+          "direction": "open",
+          "magnitude": null,
+          "evidence": "not_assessable",
+          "data_status": "missing",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "temporal_status": "ex_ante",
+          "primary_paths": [],
+          "secondary_paths": [],
+          "balance": null,
+          "rationale": "Die Quelle behandelt keine ökologischen Folgen. Ein möglicher Zusammenhang mit Energie-, Ressourcen- oder Emissionswirkungen von KI wäre für diesen konkreten institutionellen Gegenstand nur eine nicht ausreichend belegte Modellhypothese. Es liegen weder konkrete Maßnahmen noch ein passender Mechanismus- oder Zustandsbeleg vor.",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle wurde erneut auf ökologische Aussagen und konkrete Wirkpfade geprüft. Eine gezielte Suche nach einem passenden Mechanismus- oder Referenzbeleg wurde durchgeführt, ergab aber keinen verwertbaren gelesenen Zusatzbeleg. Die Dimension bleibt daher ausdrücklich nicht ausreichend bewertbar.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Die Quelle behandelt keine ökologischen Folgen. Ein möglicher Zusammenhang mit Energie-, Ressourcen- oder Emissionswirkungen von KI wäre für diesen konkreten institutionellen Gegenstand nur eine nicht ausreichend belegte Modellhypothese. Es liegen weder konkrete Maßnahmen noch ein passender Mechanismus- oder Zustandsbeleg vor.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": null,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Die Quelle behandelt keine ökologischen Folgen. Ein möglicher Zusammenhang mit Energie-, Ressourcen- oder Emissionswirkungen von KI wäre für diesen konkreten institutionellen Gegenstand nur eine nicht ausreichend belegte Modellhypothese. Es liegen weder konkrete Maßnahmen noch ein passender Mechanismus- oder Zustandsbeleg vor.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "Tragweite offen",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Derzeit nicht ausreichend bewertbar",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "insufficient_basis",
+          "direction": "open",
+          "magnitude": null,
+          "evidence": "not_assessable",
+          "data_status": "missing",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "temporal_status": "ex_ante",
+          "primary_paths": [],
+          "secondary_paths": [],
+          "balance": null,
+          "rationale": "Der Bericht belegt gegensätzliche politische Positionen und die Erwähnung eines Instituts, aber keine Veränderung von Macht, Rechenschaft, Beteiligung, institutioneller Unabhängigkeit oder Korrekturfähigkeit. Ein möglicher Aufsichtspfad hängt von ungeklärten Zuständigkeiten, Verfahren und Umsetzungsentscheidungen ab.",
+          "research_pass": "second_pass",
+          "research_result": "Die politische Aussage, der institutionelle Status und mögliche demokratische Wirkmechanismen wurden erneut getrennt geprüft. Die ergänzende Suche nach einem amtlichen Status- oder Verfahrensbeleg wurde abgeschlossen, ohne einen verwertbaren Zusatzbeleg zu liefern. Daher wird kein modellierter Pfad und keine Tragweite ausgewiesen.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der Bericht belegt gegensätzliche politische Positionen und die Erwähnung eines Instituts, aber keine Veränderung von Macht, Rechenschaft, Beteiligung, institutioneller Unabhängigkeit oder Korrekturfähigkeit. Ein möglicher Aufsichtspfad hängt von ungeklärten Zuständigkeiten, Verfahren und Umsetzungsentscheidungen ab.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": null,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Der Bericht belegt gegensätzliche politische Positionen und die Erwähnung eines Instituts, aber keine Veränderung von Macht, Rechenschaft, Beteiligung, institutioneller Unabhängigkeit oder Korrekturfähigkeit. Ein möglicher Aufsichtspfad hängt von ungeklärten Zuständigkeiten, Verfahren und Umsetzungsentscheidungen ab.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "Tragweite offen",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Derzeit nicht ausreichend bewertbar",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T16:18:31.179Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T15:29:12.000Z",
+      "last_updated": "2026-09-14T16:18:31.179Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-8002c1171d4b03e8fd28",
+      "case_file": null,
+      "source_published_at": "2026-09-14T15:29:12.000Z",
+      "published_at": "2026-09-14T16:18:31.179Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bundesregierung-nehmen-ki-warnungen-sehr-ernst-trump-sieht-verschwoerung-und-lehnt-regulierung-ab-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T15:29:12.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-7c4c284198ca4d1f",
       "title_image": {
