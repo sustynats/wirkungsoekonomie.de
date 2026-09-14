@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
 import { recordProcessorThroughput } from './processor.mjs';
+import { monitorJob } from './monitor-projection.mjs';
 
 // One authoritative private SQLite database on the existing Oracle host.
 // A separate SQLite write lock is held for the complete run: no expiring lease
@@ -111,6 +112,13 @@ export class BridgeStore {
         accepted: row.accepted_type != null && row.accepted_type !== 'null',
         ack: row.ack_type != null && row.ack_type !== 'null', correction_count: row.correction_count,
       }));
+  }
+  monitorJobs() {
+    const jobs = [];
+    for (const row of this.db.prepare("SELECT body FROM jobs WHERE json_extract(body,'$.archived_at') IS NULL ORDER BY id").iterate()) {
+      jobs.push(monitorJob(JSON.parse(row.body)));
+    }
+    return jobs;
   }
   impactStagingIndex() {
     return this.db.prepare("SELECT id, json_extract(body,'$.staging.impact_record_hash') AS record_hash FROM jobs WHERE json_extract(body,'$.input.job_type')='impact_reassessment' AND json_extract(body,'$.staging.impact_record.impact_assessment.version')='2.1' AND json_extract(body,'$.accepted.decision')='publish' ORDER BY id").all();

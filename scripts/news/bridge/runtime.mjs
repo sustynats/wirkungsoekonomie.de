@@ -7,9 +7,9 @@ import { ChatGPTBridgeVisualProvider } from './visual.mjs';
 import { HiggsfieldBridgeVisualProvider } from './visual-brief.mjs';
 import { visualGenerationProvider } from '../processing-mode.mjs';
 export function createBridgeRuntime() {
-  const { store, transport } = bridgeSession();
+  const { store, transport, monitorRun } = bridgeSession();
   const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-bridge-images-'));
-  return new DropboxChatGPTBridgeProvider({ store, transport,
+  return new DropboxChatGPTBridgeProvider({ store, transport, remoteMonitor: monitorRun,
     visualProvider: visualGenerationProvider() === 'higgsfield' ? new HiggsfieldBridgeVisualProvider({ directory }) : new ChatGPTBridgeVisualProvider({ transport, directory }),
     correctionsEnabled: process.env.WOEK_NEWS_BRIDGE_CORRECTIONS_ENABLED === 'true',
     stageOnly: process.env.WOEK_NEWS_BRIDGE_PUBLISH !== 'true',

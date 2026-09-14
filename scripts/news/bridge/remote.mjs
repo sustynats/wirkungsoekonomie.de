@@ -68,7 +68,8 @@ export function bridgeSession(env = process.env, { fetchImpl = fetch } = {}) {
   };
   const transport = Object.fromEntries(['list','read','metadata','move','writeAtomic','archive'].map(op => [op, (...args) => request(`dropbox.${op}`, args)]));
   transport.readBinary = async file => Buffer.from(await request('dropbox.readBinary', [file]), 'base64');
-  return { store, transport, status: () => request('bridge.status'), monitor: () => request('bridge.monitor') };
+  return { store, transport, status: () => request('bridge.status'), monitor: () => request('bridge.monitor'),
+    monitorRun: (now, options) => request('bridge.monitorRun', [now, options]) };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

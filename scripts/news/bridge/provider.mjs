@@ -10,8 +10,9 @@ import { canRequestCorrection, prepareCorrection, recoverCorrections } from './c
 import { bridgeInput, adaptOutput, validateOutputPreflight, sameBridgeEvent } from './adapter.mjs';
 import { BRIDGE_ROOT, bridgePath, parsePacket, outputSchema, hash } from './contract.mjs';
 import { storyPage } from '../build.mjs';
-import { waitingForReview, observeOutput, outputJobId } from './status.mjs';
-import { protectedCurrentCandidate, updateProcessorHealth, compareProcessorJobs, processorPriority, isHistoricalJob } from './processor.mjs';
+import { waitingForReview } from './status.mjs';
+import { runBridgeMonitor } from './monitor.mjs';
+import { protectedCurrentCandidate, compareProcessorJobs, processorPriority, isHistoricalJob } from './processor.mjs';
 
 const newsJob = job => ['new_story','story_update','correction'].includes(job.input.job_type);
 const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
@@ -28,9 +29,9 @@ function publicationPickupPriority(job, now) {
   return priority < 590 && !isHistoricalJob(job) && (reviewed || recovery) ? 585 : priority;
 }
 export class DropboxChatGPTBridgeProvider {
-  constructor({ store, transport, visualProvider, editorialEnabled = false, correctionsEnabled = false, stageOnly = true, maxJobs = 6, maxPending = 48, retentionDays = 30, adapt = adaptOutput, semanticReview = ensureSemanticReview }) {
+  constructor({ store, transport, remoteMonitor, visualProvider, editorialEnabled = false, correctionsEnabled = false, stageOnly = true, maxJobs = 6, maxPending = 48, retentionDays = 30, adapt = adaptOutput, semanticReview = ensureSemanticReview }) {
     if (!Number.isInteger(retentionDays) || retentionDays < 30) throw new Error('BRIDGE_RETENTION_INVALID');
-    Object.assign(this, { store, transport, visualProvider, editorialEnabled, correctionsEnabled, stageOnly, maxJobs, maxPending, retentionDays, adapt, semanticReview });
+    Object.assign(this, { store, transport, remoteMonitor, visualProvider, editorialEnabled, correctionsEnabled, stageOnly, maxJobs, maxPending, retentionDays, adapt, semanticReview });
   }
   async selectCandidates(candidates, now = new Date().toISOString()) {
     const checkpoints = await this.store.observation('source-checkpoints') || {};
@@ -284,64 +285,14 @@ export class DropboxChatGPTBridgeProvider {
     } catch { /* Oracle journal retains the failure during a Dropbox outage. */ }
   }
   async monitor(now) {
-    const folders = {};
-    for (const name of ['00_INBOX', '10_CLAIMED', '20_OUTPUT_READY', '90_ERRORS']) folders[name] = await this.transport.list(name);
-    const jobs = await this.store.all(), open = jobs.filter(j => !terminal.has(j.status));
-    const report = { correction_pending: jobs.filter(j => ['correction_pending','correction_prepared'].includes(j.status)).length, at: now, dropbox_reachable: true, inbox: folders['00_INBOX'].filter(e => /\.(?:input|repair-\d+)\.json$/.test(e.name)).length, claimed: folders['10_CLAIMED'].length,
-      output_ready: folders['20_OUTPUT_READY'].filter(e => e.name.endsWith('.output.json')).length,
-      errors: jobs.filter(j => ['quarantined','archive_failed'].includes(j.status)).length, oldest_open_minutes: Math.max(0, ...open.map(j => (Date.parse(now) - Date.parse(j.created_at)) / 60000)), alerts: [] };
-    const discovery = await this.store.observation('discovery');
-    report.discovery_last_success = discovery?.at || null;
-    report.last_chatgpt_expected_start = new Date(Math.floor(Date.parse(now)/3600000)*3600000).toISOString();
-    report.oldest_claim = null;
-    if (!discovery || Date.parse(now) - Date.parse(discovery.at) > 7200000) report.alerts.push('DISCOVERY_OVERDUE');
-    if (report.inbox > this.maxPending) report.alerts.push('QUEUE_CAPACITY_EXCEEDED');
-    const claims = new Map();
-    for (const entry of folders['10_CLAIMED']) {
-      const match = /^(.*)\.(input|repair-(\d+))\.json$/.exec(entry.name);
-      if (!match) continue;
-      const generation = Number(match[3] || 0);
-      if (!claims.has(match[1]) || claims.get(match[1]).generation < generation) claims.set(match[1], { name: entry.name, generation });
+    if (this.remoteMonitor) {
+      try { return await this.remoteMonitor(now, { maxPending: this.maxPending }); }
+      catch (error) {
+        // Only an old server lacking this operation uses the original path.
+        // Auth, ownership, timeout and uncertain writes never trigger replay.
+        if (error.message !== 'BRIDGE_OPERATION_INVALID') throw error;
+      }
     }
-    for (const [id, entry] of claims) {
-      const job = jobs.find(j => j.input.job_id === id);
-      if (!job || terminal.has(job.status) || job.ack || await waitingForReview(this.store, job)
-        || folders['20_OUTPUT_READY'].some(e => e.name === `${id}.output.json`)) continue;
-      const key = `claim:${id}`, previous = await this.store.observation(key);
-      // Only an explicitly new repair generation starts a new observation;
-      // age alone can never release or reset an existing claim.
-      const observed = previous && (!previous.name || previous.name === entry.name)
-        ? { ...previous, name: entry.name } : { at: now, name: entry.name };
-      await this.store.observe(key, observed);
-      if (!report.oldest_claim || observed.at < report.oldest_claim.at) report.oldest_claim = { job_id: id, at: observed.at };
-      if (Date.parse(now) - Date.parse(observed.at) > 7200000) report.alerts.push(`STALE_CLAIM:${id}`);
-      // Never reset a claim from age alone; a slow worker could still own it.
-    }
-    report.oldest_claim_minutes = report.oldest_claim ? Math.max(0, (Date.parse(now) - Date.parse(report.oldest_claim.at)) / 60000) : 0;
-    report.review_pending = open.filter(j => j.publication_gate?.status === 'needs_second_pass').length;
-    report.review_required = open.filter(j => ['needs_review','blocked'].includes(j.publication_gate?.status)).length;
-    if (report.review_required) report.alerts.push('EDITORIAL_REVIEW_REQUIRED');
-    if (report.errors) report.alerts.push('QUARANTINED_JOBS');
-    for (const entry of folders['20_OUTPUT_READY'].filter(e => e.name.endsWith('.output.json'))) {
-      const id = outputJobId(entry.name);
-      if (!id) { report.alerts.push(`UNKNOWN_OUTPUT:${entry.name}`); continue; }
-      const job = await this.store.get(id);
-      if (!job) { report.alerts.push(`UNKNOWN_OUTPUT:${entry.name}`); continue; }
-      if (job.status === 'correction_prepared') continue;
-      const observed = await observeOutput(this.store, job, now);
-      if (!job.ack && !terminal.has(job.status) && !await waitingForReview(this.store, job)
-        && Date.parse(now) - Date.parse(observed.at) >= 600000) report.alerts.push(`OUTPUT_OVERDUE:${id}`);
-    }
-    Object.assign(report, await this.store.observation('completion-metrics') || { completed: 0, average_queue_minutes: null, last_publication_at: null });
-    try {
-      report.processor_health = await updateProcessorHealth(this.store, this.transport, now);
-      report.alerts.push(...report.processor_health.alerts);
-    } catch {
-      // Discovery and import survive a monitoring failure; never report healthy.
-      report.alerts.push('PROCESSOR_HEALTH_UNAVAILABLE');
-    }
-    await this.store.observe('monitor', report);
-    await this.transport.writeAtomic(bridgePath('95_LOGS', `${now.replace(/[^0-9TZ]/g, '')}.${hash(report).slice(0,12)}.server.json`), report);
-    return report;
+    return runBridgeMonitor(this, now);
   }
 }

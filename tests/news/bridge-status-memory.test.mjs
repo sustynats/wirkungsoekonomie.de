@@ -53,12 +53,16 @@ test('status probes handle a queue larger than the process heap',t=>{
   assert.ok(store.db.prepare('SELECT sum(length(body)) AS bytes FROM jobs').get().bytes>75_000_000);
   const script=`import {BridgeStore} from ${JSON.stringify(new URL('../../scripts/news/bridge/store.mjs',import.meta.url).href)};
     import {monitorStatus,outputStatus} from ${JSON.stringify(new URL('../../scripts/news/bridge/status.mjs',import.meta.url).href)};
+    import {runBridgeMonitor} from ${JSON.stringify(new URL('../../scripts/news/bridge/monitor.mjs',import.meta.url).href)};
+    import {monitorStore} from ${JSON.stringify(new URL('../../scripts/news/bridge/monitor-projection.mjs',import.meta.url).href)};
     const store=new BridgeStore(process.argv[1]);
     store.all=()=>{throw Error('FULL_QUEUE_MUST_NOT_BE_LOADED');};
     for(let i=0;i<3;i++){
       const monitor=await monitorStatus(store,${JSON.stringify(now)});
       if(monitor.open_count!==240)throw Error('MISSING_JOBS');
       await outputStatus(store,{list:async()=>[]},${JSON.stringify(now)});
+      const full=await runBridgeMonitor({store:monitorStore(store),transport:{list:async()=>[],writeAtomic:async()=>{}}},${JSON.stringify(now)});
+      if(full.processor_health.open_jobs!==240)throw Error('MISSING_MONITOR_JOBS');
     }
     store.close();console.log('PASS');`;
   const result=spawnSync(process.execPath,['--max-old-space-size=48','--input-type=module','-e',script,file],{encoding:'utf8',timeout:30000});
