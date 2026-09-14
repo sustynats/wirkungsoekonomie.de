@@ -5,6 +5,7 @@ import datetime as dt
 import fcntl
 import json
 import os
+import re
 from pathlib import Path
 import sqlite3
 import subprocess
@@ -12,7 +13,7 @@ import time
 import urllib.error
 import urllib.request
 
-VERSION = "2026-09-13-1"
+VERSION = "2026-09-14-visibility"
 SERVICES = {"bridge": ("woek-news-bridge.service", 8786, "/api/news-bridge", 401),
             "editorial": ("woek-news-editorial.service", 8788, "/internal/status", 200)}
 DIRECTORY = Path("/var/lib/woek-news-bridge")
@@ -130,17 +131,45 @@ def journal_metrics(directory, now):
             "open_semantic_reviews": semantic[0], "oldest_semantic_review_at": semantic[1]}
 
 
-def fetch_public_feed(now):
+def observe_public_feed(items, previous, now):
+    """First public visibility is independent of the article's source date."""
+    baseline = not isinstance(previous.get("observed_urls"), dict)
+    entries = dict(previous.get("observed_urls") or {})
+    started = previous.get("visibility_started_at") if not baseline else iso(now)
+    last_new = previous.get("last_new_visible_at") if not baseline else None
+    news = [item for item in items if item.get("_woek_type") == "Wirkungsakte"
+            and re.fullmatch(r"https://wirkungsoekonomie\.de/wirkungsticker/[a-z0-9-]+/", item.get("url", ""))]
+    for item in news:
+        url = item["url"]
+        if url not in entries:
+            entries[url] = {"first_seen_at": None if baseline else iso(now),
+                            "source_at": item.get("date_published")}
+            if not baseline:
+                last_new = iso(now)
+    dates = [timestamp(item.get("date_published")) for item in news]
+    valid_dates = [date for date in dates if 0 < date <= now]
+    latest_source = iso(max(valid_dates)) if valid_dates else None
+    recent = [entry for entry in entries.values() if entry.get("first_seen_at")
+              and 0 <= now - timestamp(entry["first_seen_at"]) < 3600]
+    return {"checked_at": now, "ok": True, "observed_urls": entries,
+            "visibility_started_at": started, "last_new_visible_at": last_new,
+            "new_visible_last_hour": len(recent),
+            "current_new_visible_last_hour": sum(0 <= now - timestamp(entry.get("source_at")) <= 21600
+                                                  for entry in recent),
+            "latest_source_at": latest_source,
+            "latest_news_url": max(news, key=lambda x: timestamp(x.get("date_published"))).get("url") if news else None}
+
+
+def fetch_public_feed(now, previous=None):
     request = urllib.request.Request(PUBLIC_FEED, headers={"User-Agent": "WOeK-Operations/1.0"})
     with urllib.request.urlopen(request, timeout=5) as response:
         raw = response.read(2 * 1024 * 1024 + 1)
     if len(raw) > 2 * 1024 * 1024:
         raise ValueError("PUBLIC_FEED_SIZE_LIMIT")
-    items = [item for item in json.loads(raw).get("items", []) if item.get("_woek_type") == "Wirkungsakte"]
-    dates = [timestamp(item.get("date_published")) for item in items]
-    return {"checked_at": now, "ok": True, "latest_news_published_at": iso(max(dates)) if dates else None,
-            "visible_news_published_last_hour": sum(0 <= now - date < 3600 for date in dates),
-            "latest_news_url": max(items, key=lambda x: timestamp(x.get("date_published"))).get("url") if items else None}
+    feed = json.loads(raw)
+    if not isinstance(feed.get("items"), list):
+        raise ValueError("PUBLIC_FEED_ITEMS_INVALID")
+    return observe_public_feed(feed["items"], previous or {}, now)
 
 
 def publication_alerts(metrics, public, now):
@@ -157,9 +186,16 @@ def publication_alerts(metrics, public, now):
         if api.get('enabled') and api.get('status') == 'ATTENTION':
             alerts.append('API_PROCESSOR_ATTENTION')
     if metrics.get("open_primary_news", 0):
-        latest = timestamp(public.get("latest_news_published_at"))
-        if public.get("ok") and (not latest or now - latest > 5400):
-            alerts.append("PUBLICATION_STALLED")
+        if public.get("ok"):
+            last_new = timestamp(public.get("last_new_visible_at"))
+            started = timestamp(public.get("visibility_started_at"))
+            if (last_new or started) and now - (last_new or started) > 5400:
+                alerts.append("PUBLICATION_STALLED")
+            elif not last_new:
+                alerts.append("PUBLICATION_OBSERVATION_WARMUP")
+            source_at = timestamp(public.get("latest_source_at"))
+            if source_at and now - source_at > 5400:
+                alerts.append("NEWS_SOURCE_STALE")
     # Pending author decisions are not processor failures. Only unfinished work
     # upstream of the approval screen contributes to these stall alerts.
     for count, oldest, alert in (("open_editorial_requests", "oldest_editorial_request_at", "EDITORIAL_DELIVERY_STALLED"),
@@ -222,7 +258,7 @@ def run(directory=DIRECTORY):
         public = previous.get("public", {})
         if now - public.get("checked_at", 0) >= 300:
             try:
-                public = fetch_public_feed(now)
+                public = fetch_public_feed(now, public)
             except (OSError, ValueError, TimeoutError):
                 public = {**public, "checked_at": now, "ok": False}
         result["public"] = public

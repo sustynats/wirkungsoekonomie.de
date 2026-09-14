@@ -50,7 +50,7 @@ class RecoveryTests(unittest.TestCase):
 
     def test_green_server_does_not_make_stalled_publication_healthy(self):
         metrics = {"open_primary_news": 20, "workers": [{"id": x, "fresh": True} for x in "ABC"]}
-        public = {"ok": True, "checked_at": 10000, "latest_news_published_at": supervisor.iso(1000)}
+        public = {"ok": True, "checked_at": 10000, "last_new_visible_at": supervisor.iso(1000)}
         self.assertIn("PUBLICATION_STALLED", supervisor.publication_alerts(metrics, public, 10000))
 
     def test_missing_worker_and_unknown_feed_are_not_assumed_healthy(self):
@@ -121,7 +121,7 @@ class RecoveryTests(unittest.TestCase):
     def test_api_health_does_not_hide_stalled_publication_or_personal_queue(self):
         metrics = {'open_primary_news': 20, 'api_processor': {'enabled': True, 'fresh': True,
                    'status': 'RUN_COMPLETED', 'news_only': True}}
-        public = {'ok': True, 'checked_at': 10000, 'latest_news_published_at': supervisor.iso(1000)}
+        public = {'ok': True, 'checked_at': 10000, 'last_new_visible_at': supervisor.iso(1000)}
         alerts = supervisor.publication_alerts(metrics, public, 10000)
         self.assertNotIn('EDITORIAL_WORKER_STALE', alerts)
         self.assertIn('PUBLICATION_STALLED', alerts)
@@ -134,6 +134,45 @@ class RecoveryTests(unittest.TestCase):
         import subprocess
         with patch.object(supervisor.subprocess, 'run', side_effect=subprocess.TimeoutExpired('systemctl', 20)):
             self.assertFalse(supervisor.service_command('stop', 'woek-news-bridge.service', 20))
+
+    def test_visibility_baseline_is_not_a_batch_of_new_publications(self):
+        item = {'url': 'https://wirkungsoekonomie.de/wirkungsticker/example-one/',
+                '_woek_type': 'Wirkungsakte', 'date_published': supervisor.iso(9000)}
+        first = supervisor.observe_public_feed([item], {}, 10000)
+        self.assertEqual(first['new_visible_last_hour'], 0)
+        self.assertIsNone(first['last_new_visible_at'])
+        self.assertIn('PUBLICATION_OBSERVATION_WARMUP', supervisor.publication_alerts(
+            {'open_primary_news': 1}, first, 10000))
+        revised = {**item, 'title': 'Corrected headline', 'date_modified': supervisor.iso(11000)}
+        second = supervisor.observe_public_feed([revised], first, 11000)
+        self.assertEqual(second['new_visible_last_hour'], 0)
+
+    def test_new_visibility_and_old_source_are_separate_signals(self):
+        old = {'url': 'https://wirkungsoekonomie.de/wirkungsticker/example-one/',
+               '_woek_type': 'Wirkungsakte', 'date_published': supervisor.iso(1000)}
+        first = supervisor.observe_public_feed([old], {}, 10000)
+        new = {**old, 'url': 'https://wirkungsoekonomie.de/wirkungsticker/example-two/'}
+        second = supervisor.observe_public_feed([old, new], first, 11000)
+        self.assertEqual(second['new_visible_last_hour'], 1)
+        alerts = supervisor.publication_alerts({'open_primary_news': 1}, second, 11000)
+        self.assertNotIn('PUBLICATION_STALLED', alerts)
+        self.assertIn('NEWS_SOURCE_STALE', alerts)
+        third = supervisor.observe_public_feed([new], second, 11100)
+        fourth = supervisor.observe_public_feed([old, new], third, 11200)
+        self.assertEqual(fourth['new_visible_last_hour'], 1)
+        later = supervisor.observe_public_feed([old, new], fourth, 17000)
+        self.assertEqual(later['new_visible_last_hour'], 0)
+        self.assertIn('PUBLICATION_STALLED', supervisor.publication_alerts({'open_primary_news': 1}, later, 17000))
+
+    def test_editorials_external_urls_and_future_source_dates_do_not_fake_current_news(self):
+        base = {'url': 'https://wirkungsoekonomie.de/wirkungsticker/example-one/',
+                '_woek_type': 'Wirkungsakte', 'date_published': supervisor.iso(30000)}
+        first = supervisor.observe_public_feed([], {}, 10000)
+        seen = supervisor.observe_public_feed([base, {**base, '_woek_type': 'Analyse'},
+                    {**base, 'url': 'https://example.org/wirkungsticker/fake/'}], first, 11000)
+        self.assertEqual(seen['new_visible_last_hour'], 1)
+        self.assertEqual(seen['current_new_visible_last_hour'], 0)
+        self.assertIsNone(seen['latest_source_at'])
 
 
 if __name__ == '__main__':
