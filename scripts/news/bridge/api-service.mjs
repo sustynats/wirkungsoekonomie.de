@@ -240,6 +240,13 @@ export class EditorialApiService {
         }, researched ? 0.5 : 0.25);
         record.status = 'completed'; record.model = result.model;
       } catch (error) {
+        if (!record.provider_called && error.message === 'API_EDITORIAL_RESPONSE_CONTRACT_INVALID') {
+          record.error = error.message;
+          record.status = 'preparation_failed';
+          record.updated_at = this.now();
+          await this.save(record);
+          return record;
+        }
         const code = error.technicalMessage || '';
         record.error = /^[a-z_]+$/.test(code) ? code : 'API_EDITORIAL_REQUEST_UNKNOWN';
         record.status = !record.provider_called ? 'budget_blocked'
