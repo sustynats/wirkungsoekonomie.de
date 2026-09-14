@@ -6,11 +6,11 @@ Stand: 10.09.2026. Verbindlicher neuer Vertrag: `impact-assessment-contract-2.1-
 
 Jede reguläre Wirkungsticker-Meldung wird als Auslöser eines Wirkungspotenzials betrachtet. Für Mensch, Planet und Demokratie wird jeweils ein Wirkungspfad modelliert. Die Frage lautet nicht, ob Wirkungspotenzial vorhanden ist, sondern welche Richtung, Stärke, Wahrscheinlichkeit, Zeitwirkung und Evidenz es besitzt.
 
-Jede Dimension benötigt mindestens einen konkreten Potenzialpfad und eine numerische Tragweite 0 bis 5. `path_status` ist `modelled`. 0 bedeutet eine begründete praktisch vernachlässigbare Zustandsveränderung im betrachteten Referenzraum und Zeitraum. Der Pfad bleibt dokumentiert. Keine öffentliche Dimension darf fehlen oder einen technischen null-Wert als analytischen Befund ausgeben. Keine späteren Migrationen, Oberflächen oder Release-Prüfungen dürfen dies außer Kraft setzen.
+Präzisierung vom 14.09.2026: Jede Dimension bleibt sichtbar, aber nicht jede ist ausreichend bewertbar. Ein begründeter Potenzialpfad erhält eine numerische Tragweite 0 bis 5. `path_status` ist `modelled`. 0 bedeutet eine begründete praktisch vernachlässigbare Zustandsveränderung im betrachteten Referenzraum und Zeitraum. Der Pfad bleibt dokumentiert. Bei unzureichender Grundlage ist `insufficient_basis` mit `direction=open`, `magnitude=null`, `evidence=not_assessable`, `data_status=missing`, `likelihood=unknown`, `dominance=none`, `temporal_status=ex_ante` und leeren Pfadlisten ein valider Befund. Pflicht sind eine konkrete Begründung, `research_pass=second_pass`, `research_result` und tatsächlich geprüfte `reviewed_source_ids`. Die Anzeige lautet offen / nicht ausreichend bewertbar, niemals null/5 oder neutral. Diese Präzisierung ersetzt die frühere Pflicht zu drei numerischen Pfaden; historische Bewertungen werden nicht automatisch umgerechnet.
 
 ## Erkenntnisgrenzen
 
-Die Pflicht zur Modellierung ist kein Wirkungsnachweis. Ein Pfad braucht Auslöser, Empfänger, Mechanismus, Vergleich, Raum, Zeitraum und Bedingungen. `path_quality` unterscheidet direct, indirect, weak, systemic und high_uncertainty. Es gibt keine automatische Richtung nach Partei, Ressort oder Schlagwort.
+Die Prüfungspflicht ist kein Wirkungsnachweis und keine Pflicht zu erfundenen Pfaden. Ein Pfad braucht Auslöser, Empfänger, Mechanismus, Vergleich, Raum, Zeitraum und Bedingungen. `path_quality` unterscheidet direct, indirect, weak, systemic und high_uncertainty. Es gibt keine automatische Richtung nach Partei, Ressort oder Schlagwort.
 
 `source_support` legt offen, was die Quelle tatsächlich belegt. `epistemic_basis=model_hypothesis` weist eine hypothetische kausale Erweiterung aus und darf nur geringe/nicht bewertbare Evidenz tragen. `assumptions` und `limitations` bleiben sichtbar. Der Beleg eines Ereignisses ist kein Beleg sämtlicher Folgen. Wissenschaftliche, rechtliche oder institutionelle Mechanismusquellen zusätzlich recherchieren, wo erforderlich. Keine Quellen, Wirkungen, Genauigkeit oder Kaskaden erfinden.
 
@@ -18,7 +18,7 @@ Bei geringer Evidenz oder hoher Unsicherheit ist eine gezielte zweite Recherche 
 
 ## Getrennte Größen
 
-Systemische Relevanz der Meldung, Richtung, Tragweite, Eintrittsplausibilität und Evidenz sind unabhängig. `open` betrifft die Richtungsentscheidung; es entfernt weder Pfad noch Stärke. `neutral` ist ein begründeter Richtungsbefund, keine Datenlücke.
+Systemische Relevanz der Meldung, Richtung, Tragweite, Eintrittsplausibilität und Evidenz sind unabhängig. `open` kann die Richtung oder die unzureichende Bewertbarkeit kennzeichnen; ein bekannter Pfad mit offener Richtung kann weiterhin eine begründete Stärke besitzen. `neutral` ist ein begründeter Richtungsbefund, keine Datenlücke.
 
 Pro Pfad sechs Faktoren 0 bis 5: Reichweite R, Intensität I, Dauer D, Unumkehrbarkeit U, Verteilung/Vulnerabilität V, Systemtiefe S. Grundwert `(R+I+D+U+V+S)/6`. Grenzen: 0 wird 0; größer 0 bis unter 1,5 wird 1; unter 2,5 wird 2; unter 3,5 wird 3; unter 4,5 wird 4; ab 4,5 wird 5. Stufe 0 braucht eine explizite Begründung der vernachlässigbaren Veränderung in Raum und Zeit.
 
@@ -42,4 +42,4 @@ Alt-Relevanz ist keine Magnitude. Die technische Migration markiert ungeklärte 
 
 Die vorhandene Dropbox-Bridge, Claim-/ACK-Lifecycle, Idempotenz und Publication Gates bleiben bestehen. Keine kostenpflichtigen Textanbieter oder versteckten API-Fallbacks. Neue aktuelle Nachrichten haben Vorrang vor Altbestand. Review-Identitäten binden redaktionellen Inhalt, nicht veränderliche Abrufzeitstempel. Ein unabhängiger Fachpass prüft die vorgeschlagenen Metadaten und Quellen erneut.
 
-Prüfen: drei numerische Potenziale und Pfade; nachvollziehbare Faktoren; Quellenfunktionen; Modellannahmen; Raum/Zeit; getrennte Beobachtung/Attribution; Gegenpfade; Nichtkompensation; Ring unabhängig von Stärke; originale Bewertung unverändert; keine öffentlichen Debugtexte oder fehlenden MPD-Zeilen. Build, Tests, Lint, Typecheck und Mobile/Desktop-Preview vor Release.
+Prüfen: drei sichtbare Dimensionsbefunde, je ein begründeter Pfad oder dokumentierte offene Recherche; nachvollziehbare Faktoren; Quellenfunktionen; Modellannahmen; Raum/Zeit; getrennte Beobachtung/Attribution; Gegenpfade; Nichtkompensation; Ring unabhängig von Stärke; originale Bewertung unverändert; keine öffentlichen Debugtexte oder fehlenden MPD-Zeilen. Build, Tests, Lint, Typecheck und Mobile/Desktop-Preview vor Release.

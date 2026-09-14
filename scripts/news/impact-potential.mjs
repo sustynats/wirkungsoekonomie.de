@@ -1,5 +1,5 @@
-// The ticker models a potential in every dimension. These are conditional
-// analytical statements, never evidence that the proposed consequence exists.
+// Every MPD dimension remains visible. A documented evidence gap is an open
+// assessment, never a fabricated pathway, neutral verdict or numerical zero.
 import { aggregateMainPaths, pathwayMagnitudeErrors } from './impact-magnitude.mjs';
 
 export const POTENTIAL_REVISION = 'all-dimensions-1';
@@ -12,12 +12,31 @@ const list = value => Array.isArray(value) ? value : [];
 const evidence = value => ['high', 'medium', 'low', 'not_assessable'].includes(value);
 const likelihood = value => ['very_low', 'low', 'medium', 'high', 'very_high', 'already_occurring', 'unknown'].includes(value);
 
+// Explicit epistemic state, not a legacy migration fallback. The second research
+// pass must describe the gap and bind the sources actually examined.
+export function isGroundedOpenDimension(d, sourceIds = null) {
+  return d?.path_status === 'insufficient_basis' && d.direction === 'open'
+    && d.magnitude === null && d.evidence === 'not_assessable'
+    && d.data_status === 'missing' && d.temporal_status === 'ex_ante'
+    && d.likelihood === 'unknown' && d.dominance === 'none'
+    && Array.isArray(d.primary_paths) && d.primary_paths.length === 0
+    && Array.isArray(d.secondary_paths) && d.secondary_paths.length === 0
+    && text(d.rationale) && d.research_pass === 'second_pass' && text(d.research_result)
+    && Array.isArray(d.reviewed_source_ids) && d.reviewed_source_ids.length > 0
+    && (!sourceIds || d.reviewed_source_ids.every(id => sourceIds.has(id)));
+}
+
 export function potentialDimensionErrors(assessment, sourceIds) {
   const errors = [], fail = code => errors.push(code);
   const bound = ids => Array.isArray(ids) && ids.length > 0 && ids.every(id => sourceIds.has(id));
   if (assessment.semantics_revision !== POTENTIAL_REVISION) fail('IMPACT_POTENTIAL_REVISION_REQUIRED');
   for (const key of POTENTIAL_KEYS) {
     const d = assessment.dimensions?.[key], suffix = code => fail(`${code}:${key}`);
+    if (d?.path_status === 'insufficient_basis') {
+      if (!isGroundedOpenDimension(d, sourceIds)) suffix('IMPACT_OPEN_ASSESSMENT_INVALID');
+      if (d.observed_outcome != null) suffix('IMPACT_USE_SEPARATE_OBSERVED_EFFECTS');
+      continue;
+    }
     if (!d || d.path_status !== 'modelled') { suffix('IMPACT_POTENTIAL_PATH_REQUIRED'); continue; }
     if (!score(d.magnitude)) suffix('IMPACT_POTENTIAL_MAGNITUDE_REQUIRED');
     if (!['positive', 'negative', 'mixed', 'neutral', 'open'].includes(d.direction)) suffix('IMPACT_DIRECTION_INVALID');

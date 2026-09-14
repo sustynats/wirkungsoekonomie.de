@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import {PERSONAL_FILE,validatePersonalEdition} from '../personal-editorial.mjs';
+import {PERSONAL_FILE,validatePersonalEdition,loadPersonalEditorials} from '../personal-editorial.mjs';
 import {importApprovedNews} from './approved-news.mjs';
 import {loadNewsRegistry} from '../registry.mjs';
 import {loadManualEditorials} from '../manual-editorial.mjs';
@@ -20,10 +20,10 @@ export async function importApprovedEditorials(store,root){
    const revisionFile=path.join(root,EDITORIAL_REVISION_FILE),revisions=fs.existsSync(revisionFile)?JSON.parse(fs.readFileSync(revisionFile)):{schema_version:'1.0',editions:[]};
    if(revisions.editions.some(e=>e.content_hash===edition.content_hash))continue;
    const analysisFile=path.join(root,'data/news/editorial-analyses.json');
-   const originals=[...(fs.existsSync(analysisFile)?JSON.parse(fs.readFileSync(analysisFile)).analyses:[]),...loadManualEditorials(root)];
+   const originals=[...(fs.existsSync(analysisFile)?JSON.parse(fs.readFileSync(analysisFile)).analyses:[]),...loadManualEditorials(root),...loadPersonalEditorials(root)];
    const base=applyApprovedEditorialRevisions(originals,root).find(a=>a.analysis_id===edition.analysis_id);
    if(!base)throw Error('EDITORIAL_REVISION_TARGET_MISSING');
-   validateEditorialRevisionPreview({format:base.format==='book_and_impact'?'book_review':'opinion_analysis',title:base.title,
+   validateEditorialRevisionPreview({format:base.format==='book_and_impact'?'book_review':base.subtype||'opinion_analysis',title:base.title,
     markdown:edition.patch.body_markdown||'## Meine Einordnung\n\n'+edition.patch.author_perspective?.paragraphs.join('\n\n'),
     editorial_revision:{base,target:edition.target,patch:edition.patch}});
    revisions.editions.push(edition);

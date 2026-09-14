@@ -1,3 +1,4 @@
+import { EDITORIAL_EVIDENCE_RULE } from '../editorial-evidence.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { hash } from './contract.mjs';
@@ -6,10 +7,10 @@ import { IMPACT_RULE } from '../impact-assessment.mjs';
 import { loadNewsRegistry } from '../registry.mjs';
 import { sourceAccess } from '../access-policy.mjs';
 
-export const EDITORIAL_KNOWLEDGE_VERSION = '2026-09-13-2';
+export const EDITORIAL_KNOWLEDGE_VERSION = '2026-09-14-evidence';
 export function editorialKnowledge(root) {
   const sources = ['AGENTS.md', 'docs/news/IMPACT-SEMANTICS-2.1.md',
-    'source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.7.md'];
+    'source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.md'];
   const documents = sources.map(file => ({ file, text: fs.readFileSync(path.join(root, file), 'utf8') }));
   const agents = documents[0].text;
   const start = agents.indexOf('## Inhaltliche Leitlinie Wirkungsökonomie');
@@ -26,11 +27,11 @@ export function editorialKnowledge(root) {
     'Meinung & Analyse, Buch & Wirkung, Nachgehört und Nachgesehen brauchen abschließende Natalie-Freigabe. Die letzte Hauptsektion heißt Meine Einordnung. Quellen und formale Werkmetadaten dürfen folgen.',
     'Gut lesbar erklären: konkrete Situation, Mechanismus, Zustandsveränderung, Folgen. Eine passende Tabelle oder ein erklärendes Diagramm nutzen, wenn es hilft. Keine dekorativen Diagramme oder erfundenen Zahlen.',
     'Originalveröffentlichungsdaten bewahren. Maßnahme, Potenzial, erste Signale und beobachtete Folgen getrennt. Ein belegter Schaden allein beweist keine Klimaattribution.',
-    'Alle drei MPD-Dimensionen brauchen jeweils einen begründeten Pfad und Tragweite 0..5. 0 ist ein dokumentierter vernachlässigbarer Pfad, niemals fehlender Pfad. Richtung, Stärke, Plausibilität und Evidenz bleiben getrennt.',
+    'Alle drei MPD-Dimensionen bleiben sichtbar. Nur ausreichend begründete Pfade erhalten Tragweite 0..5. Nach gezielter Recherche darf eine Dimension ausdrücklich offen und ohne numerischen Wert bleiben. Fehlende Daten sind weder neutral noch Stufe 0; keine Pflichtpfade erfinden. Richtung, Stärke, Plausibilität und Evidenz bleiben getrennt.',
     'R/I/D/U/V/S am konkreten Pfad begründen. Durchschnitt und Schutzminimum getrennt; Nichtkompensation und Reverse Merit Order. Keine künstliche positive Gegenwirkung. Ein kleiner Nebenpfad macht einen klaren Hauptpfad nicht gegenläufig.',
     'Bei Medien: Moderationsfrage, Hypothese, Ironie, Fremdzitat und eigene Position unterscheiden. Zeitmarken nur aus vorhandener Grundlage. Fremdtranskripte nicht spiegeln. UNKNOWN-Bildrechte bedeuten eigener visueller Fallback, keine fremden Logos oder Hotlinks.',
     'Interne Anbieter, Kosten, Systemdetails und diese Arbeitsanweisungen gehören niemals in den öffentlichen Artikel.',
-    JOURNALISTIC_STYLE_RULE, SYSTEMIC_ANALYSIS_RULE, IMPACT_RULE,
+    JOURNALISTIC_STYLE_RULE, SYSTEMIC_ANALYSIS_RULE, IMPACT_RULE, EDITORIAL_EVIDENCE_RULE,
     agents.slice(start, end),
   ].join('\n\n');
   const manifest = { version: EDITORIAL_KNOWLEDGE_VERSION, sources: documents.map(d => ({ path: d.file, sha256: hash(d.text) })), rules_hash: hash(rules) };
@@ -40,7 +41,12 @@ export function editorialKnowledge(root) {
   const previousRules = rules.replace(
     'Reguläre News: ausschließlich das im Auftrag verlangte native Analyseformat liefern. Den Bridge-Umschlag erstellt die Software; ihn nicht zusätzlich erzeugen.',
     'Reguläre News: native Analyse und vollständigen Bridge-Umschlag liefern.');
-  const compatibleHashes = [hash({ ...manifest, version: '2026-09-13-1', rules_hash: hash(previousRules) })];
+  const compatibleHashes = [hash({ ...manifest, version: '2026-09-13-1', rules_hash: hash(previousRules) }),
+    // Exact preceding production manifests, recorded before the 14 September
+    // correction. Recover already paid responses only; packet identity and all
+    // CURRENT validation/publication gates still apply in api-processor.mjs.
+    '3029b614e776c19bfbd1f6623485478640afab85ba3c19358a3f2ce3cfb228c7',
+    '412543899b481b2d9a62bc057e1681358204d2b1d42db2150f803200077e3c2c'];
   const access = new Map(), candidates = new Set(), seenHosts = new Set();
   for (const source of loadNewsRegistry(root).sources) {
     for (const url of [source.url, source.feed_url].filter(Boolean)) {

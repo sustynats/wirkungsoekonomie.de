@@ -6,6 +6,7 @@ import { readerHtmlHasEditorialResidue } from "./reader-copy.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateAnalysis } from "./lib.mjs";
+import {editorialEvidenceIssues} from './editorial-evidence.mjs';
 import { loadNewsRegistry, registryErrors } from "./registry.mjs";
 import { isMerged, relatedStories, mergedStoryTargetValid } from "./living-files.mjs";
 import { buildCaseFiles, caseIntegrityErrors } from "./case-files.mjs";
@@ -51,6 +52,7 @@ for (const story of store.stories) {
     if (sourceSummaryWords < (story.analysis.publication_depth === "initial" ? 60 : 100) || sourceSummaryWords > 180 || sourceSummaryParagraphs < 2 || sourceSummaryParagraphs > 3) fail(`STORY_SOURCE_SUMMARY_INVALID:${story.story_id}:${sourceSummaryWords}:${sourceSummaryParagraphs}`);
     const errors = validateAnalysis({ source_summary: story.source_summary, ...story.analysis }, story, { validateSourceSummaryNumbers: false, persisted: true });
     if (errors.length) fail(`PUBLISHED_STORY_QUALITY_INVALID:${story.story_id}:${errors.join(",")}`);
+    for (const issue of editorialEvidenceIssues(story).filter(i=>i.severity==='warning')) console.warn(`${issue.code}:${story.story_id}:${issue.detail}`);
     if (!fs.existsSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"))) fail(`STORY_PAGE_MISSING:${story.slug}`);
   }
   if (story.published && story.listed === false) {

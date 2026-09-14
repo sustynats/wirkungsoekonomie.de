@@ -201,7 +201,7 @@ export function wrapNativeNewsOutput(output, original) {
   return {
     schema_version: output.schema_version, job_id: output.job_id, input_hash: output.input_hash, processed_at: output.processed_at,
     decision: { status: publish ? 'publish' : !a.rejection?.code || a.rejection.code === 'insufficient_evidence' ? 'hold' : 'reject', reason, merge_into: null, priority: 50 },
-    story: { headline: original.event?.canonical_title || '', subheadline: '', short_summary: string(a.summary),
+    story: { headline: string(a.headline).trim() || original.event?.canonical_title || '', subheadline: '', short_summary: string(a.summary),
       detailed_summary: string(a.source_summary), what_happened: string(a.source_summary), why_it_matters: string(a.why_relevant) },
     facts: { confirmed: claims.filter(c => c.status === 'confirmed_claim'), uncertain: claims.filter(c => c.status === 'uncertain_claim'), contradictions: [], missing_information: list(a.uncertainties) },
     fact_check: { status: string(a.news_status) || 'not_assessed', summary: string(a.attribution), claims },
