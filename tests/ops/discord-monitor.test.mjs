@@ -138,6 +138,9 @@ test('one fresh worker cannot mask missing shards or stalled news publication',(
  assert.equal(checks.find(c=>c.id==='bridge-publication-flow').ok,false,'15 completed technical/review jobs are not 15 published news articles');
  d.bridge.metrics.last_publication_at=now;
  checks=evaluateChecks(d,now).checks;
+ assert.equal(checks.find(c=>c.id==='bridge-publication-flow').ok,false,'an import ACK is not proof of publication');
+ d.publicDelivery={verified:true,observed_since:'2026-09-04T03:00:00Z',last_new_at:now};
+ checks=evaluateChecks(d,now).checks;
  assert.equal(checks.find(c=>c.id==='bridge-publication-flow').ok,true);
  assert.equal(checks.find(c=>c.id==='bridge-shards').ok,false);
 });
@@ -330,6 +333,15 @@ test('publication lag has grace period and compares versions rather than unchang
   assert.equal(summarizeNews(d, now).pendingPublication, 0);
   d.stories[0].last_updated = '2026-09-04T05:50:00Z';
   assert.equal(summarizeNews(d, now).pendingPublication, 0);
+});
+test('a delivered source date is not compared with a later import or MPD correction', () => {
+  const d = fixture();
+  d.stories = [{ published: true, slug: 'test', source_published_at: '2026-09-03T10:00:00Z',
+    published_at: '2026-09-03T20:00:00Z', last_updated: '2026-09-04T04:00:00Z' }];
+  d.liveFeed.items = [{ url: 'https://wirkungsoekonomie.de/wirkungsticker/test/', date_modified: '2026-09-03T10:00:00Z' }];
+  assert.equal(summarizeNews(d, now).pendingPublication, 0);
+  d.stories[0].news_update_at = '2026-09-04T04:00:00Z';
+  assert.equal(summarizeNews(d, now).pendingPublication, 1, 'a documented new event still must reach the feed');
 });
 test('case timeline members are not mistaken for missing live-feed publications', () => {
   const d = fixture();
