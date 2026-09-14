@@ -39,7 +39,22 @@ export class DropboxTransport {
     const { app_key, app_secret, refresh_token } = this.credentials;
     const body = new URLSearchParams({ grant_type: 'refresh_token', refresh_token, client_id: app_key,
       ...(app_secret ? { client_secret: app_secret } : {}) });
-    const response = await this.fetch('https://api.dropboxapi.com/oauth2/token', { method: 'POST', body, redirect: 'error', signal: AbortSignal.timeout(20000) });
+    let response;
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        response = await this.fetch('https://api.dropboxapi.com/oauth2/token', { method: 'POST', body, redirect: 'error', signal: AbortSignal.timeout(20000) });
+        break;
+      } catch (error) {
+        const code = error.code || error.cause?.code;
+        const temporary = error.name === 'TimeoutError'
+          || ['ETIMEDOUT', 'ECONNRESET', 'ECONNREFUSED', 'EAI_AGAIN', 'ENOTFOUND', 'ENETUNREACH', 'UND_ERR_CONNECT_TIMEOUT'].includes(code);
+        if (!temporary) throw error;
+        if (attempt) throw Object.assign(new Error('BRIDGE_DROPBOX_AUTH_UNAVAILABLE'), { retryable: true });
+        // Reusing this long-lived refresh token only obtains another access
+        // token. No claim, upload, other file mutation or model call is replayed.
+        await this.sleep(1000);
+      }
+    }
     if (!response.ok) {
       const temporary = response.status === 429 || response.status >= 500;
       const retryAfter = Number(response.headers.get('retry-after'));
@@ -55,9 +70,10 @@ export class DropboxTransport {
   }
   async request(endpoint, input, content, binary = false, attempt = 0) {
     const isContent = ['files/download', 'files/upload'].includes(endpoint);
+    const accessToken = await this.token();
     const response = await this.fetch(`https://${isContent ? 'content' : 'api'}.dropboxapi.com/2/${endpoint}`, {
       method: 'POST', redirect: 'error', signal: AbortSignal.timeout(45000),
-      headers: { Authorization: `Bearer ${await this.token()}`,
+      headers: { Authorization: `Bearer ${accessToken}`,
         ...(this.credentials.root_namespace_id ? { 'Dropbox-API-Path-Root': JSON.stringify({ '.tag': 'root', root: this.credentials.root_namespace_id }) } : {}),
         ...(isContent ? { 'Dropbox-API-Arg': JSON.stringify(input), ...(content === undefined ? {} : { 'Content-Type': 'application/octet-stream' }) } : { 'Content-Type': 'application/json' }) },
       ...(isContent ? content === undefined ? {} : { body: content } : { body: JSON.stringify(input) }),
