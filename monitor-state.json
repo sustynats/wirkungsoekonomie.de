@@ -37,12 +37,21 @@
       "firstSeen": "2026-09-14T07:11:04.518Z",
       "active": true
     },
-    "publication": {
-      "firstSeen": "2026-09-14T13:01:52.973Z",
+    "academy": {
+      "firstSeen": "2026-09-14T13:24:32.825Z",
       "active": false
+    },
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-09-14T13:24:32.825Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "2686fb25d3e0bfeb8b4f7498",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-09-14T13:24:32.825Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-14",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1062,10 +1071,18 @@
       "https://wirkungsoekonomie.de/wirkungsticker/evakuierung-wegen-kellerbrands-feuer-im-keller-80-menschen-mussen-reha-zentrum-verlassen-dadc1b/": {
         "first_seen_at": "2026-09-14T13:01:52.973Z",
         "source_at": "2026-09-14T11:15:42.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-russland-nimmt-angriffe-auf-kiew-nach-dreitagiger-feuerpause-wieder-auf-uk-3f350b/": {
+        "first_seen_at": "2026-09-14T13:24:32.825Z",
+        "source_at": "2026-09-08T04:39:24.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe/": {
+        "first_seen_at": "2026-09-14T13:24:32.825Z",
+        "source_at": "2026-09-07T20:26:58.000Z"
       }
     },
-    "last_new_at": "2026-09-14T13:01:52.973Z",
-    "checked_at": "2026-09-14T13:01:52.973Z",
+    "last_new_at": "2026-09-14T13:24:32.825Z",
+    "checked_at": "2026-09-14T13:24:32.825Z",
     "last_current_new_at": "2026-09-14T13:01:52.973Z"
   }
 }
