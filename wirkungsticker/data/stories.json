@@ -2,8 +2,818 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-14T14:50:49.065Z",
+  "updated_at": "2026-09-14T15:49:21.164Z",
   "stories": [
+    {
+      "story_id": "wt-7c4c284198ca4d1f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7c4c284198ca4d1f-f9f928910015afff-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7c4c284198ca4d1f-02689a6e1df4eb78-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7c4c284198ca4d1f-92d64cf36dbe422d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nahost-proteste-in-syrien-wegen-gestiegener-benzinpreise-ca4d1f",
+      "title": "Deutschlandfunk berichtet über Proteste in Syrien nach höheren Treibstoffpreisen",
+      "source_summary": "Der Deutschlandfunk berichtet über Proteste in mehreren Teilen Syriens. Menschen gingen demnach wegen gestiegener Benzinpreise und höherer Lebenshaltungskosten auf die Straße. Genannt werden die Provinzen Idlib, Aleppo, Hassaka und al-Rakka.\n\nEinige Demonstranten blockierten laut Bericht Autobahnen; teilweise räumten Sicherheitskräfte die Straßen. Die syrische Übergangsregierung habe den Dieselpreis am Wochenende um 40 Prozent angehoben. Auch Benzin und Gas seien teurer geworden. Als Gründe werden heimische Lieferengpässe und Störungen der Schifffahrt durch die Straße von Hormus genannt. Der vollständige Kontext und eine unabhängige Bestätigung liegen im Quellenpaket nicht vor.",
+      "summary": "In mehreren Teilen Syriens kam es laut Deutschlandfunk zu Protesten nach gestiegenen Treibstoff- und Lebenshaltungskosten. Belegt sind zunächst die Meldung selbst und einzelne Verkehrsblockaden; Umfang, Ursachen und weitere Folgen bleiben offen.",
+      "detail_summary": "Der Deutschlandfunk berichtet von Protesten in mehreren syrischen Provinzen nach höheren Benzin- und anderen Treibstoffpreisen. Einige Demonstranten sollen Autobahnen blockiert haben; Sicherheitskräfte räumten dem Bericht zufolge teilweise die Straßen. Die Übergangsregierung habe den Dieselpreis um 40 Prozent erhöht. Das kann den Zugang zu Mobilität und bezahlbarer Versorgung belasten, ist für diesen Fall aber nicht weiter belegt. Unklar bleiben Umfang, Dauer, mögliche Verletzte und die weitere politische Entwicklung.",
+      "why_relevant": "Die Meldung verbindet eine konkrete Preisänderung mit Protesten und staatlichen Reaktionen. Sie ist vorläufig, weil nur ein journalistischer Bericht vorliegt und Folgen für Haushalte, Versorgung und politische Stabilität nicht belegt sind.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Berichtete Proteste in mehreren Teilen Syriens nach gestiegenen Treibstoffpreisen",
+        "evaluation_target": {
+          "label": "Preissteigerung bei Treibstoffen und berichtete Proteste",
+          "type": "development"
+        },
+        "baseline": "Situation vor der berichteten Preissteigerung und den Protesten; konkrete Vergleichsdaten zu Preisen, Haushalten, Versorgung oder Institutionen fehlen.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne die berichtete Preissteigerung und die damit verbundenen Auslöser wären die konkret beschriebenen Proteste und Verkehrsblockaden in dieser Form möglicherweise nicht eingetreten. Eine Kausalität ist nicht nachgewiesen.",
+        "reference_frame": [
+          "Zugang zu bezahlbarer Mobilität und Versorgung",
+          "gesellschaftliche und institutionelle Stabilität"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der Deutschlandfunk berichtet über höhere Treibstoffpreise und Proteste. Mögliche Belastungen für Mobilität, Transporte und Lebenshaltung sind als Wirkmechanismus plausibel, aber fallbezogene Daten zu Betroffenen, Dauer, Intensität, Verteilung und Ausweichmöglichkeiten fehlen.",
+            "planet": "Für diesen Fall ist kein belastbarer ökologischer Wirkpfad belegt. Veränderungen bei Verbrauch, Emissionen oder Umweltbelastungen lassen sich aus der vorliegenden Quelle nicht ableiten.",
+            "democracy": "Proteste und das teilweise Räumen von Straßen sind als Ereignisse berichtet. Eine längerfristige Veränderung von Beteiligung, Repression, Institutionen oder demokratischer Korrekturfähigkeit ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Berichtete Preissteigerungen, Proteste und einzelne Verkehrsblockaden verändern an den genannten Orten zunächst die Kosten- und Verkehrssituation.",
+          "second_order": "Eine anhaltende Preisbelastung könnte Mobilität, Transporte und Versorgung beeinflussen. Dafür fehlen fallbezogene Angaben zu Dauer, Verteilung, Resilienz und Gegenmaßnahmen.",
+          "third_order": "Eine mögliche Verstetigung sozialer oder institutioneller Spannungen bleibt offen. Sie wird nicht als eingetretene Folge behauptet.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Quelle nennt keine Zahl der Beteiligten, keine Dauer der Proteste und keine Angaben zu Verletzten, Schäden oder Versorgungsausfällen.",
+            "Die Quelle belegt nicht, dass sämtliche Proteste durch die Preisänderung verursacht wurden.",
+            "Es fehlen unabhängige fallbezogene Daten zu Haushalten, Versorgung, institutionellen Folgen und ökologischen Veränderungen."
+          ],
+          "source_independence": "Es liegt nur der bereits gebundene journalistische Deutschlandfunk-Bericht vor. Eine unabhängige Bestätigung wurde bei der erneuten Recherche nicht gefunden.",
+          "institutional_status": "Der Deutschlandfunk berichtet, die syrische Übergangsregierung habe den Dieselpreis am Wochenende um 40 Prozent erhöht. Zuständigkeit, Rechtsstatus, genaue Umsetzung und Dauer der Preisentscheidung sind nicht weiter belegt."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "temporal_status": "ex_ante",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "balance": null,
+            "rationale": "Der berichtete Preisanstieg und die Proteste belegen noch keine ausreichend quantifizierbare oder fallbezogen belegte Zustandsveränderung bei Menschen oder Haushalten. Mögliche Belastungen von Mobilität, Lebenshaltung und Versorgung bleiben bedingte Wirkannahmen ohne ausreichende Fallbelege.",
+            "research_pass": "second_pass",
+            "research_result": "Die Ereignisquelle wurde erneut vollständig geprüft. Eine zusätzliche Recherche nach konkreten Folgen für Haushalte, Versorgung und Mobilität ergab keinen weiteren tatsächlich gelesenen zugelassenen Beleg. Daher bleibt die Dimension offen und erhält keine numerische Tragweite.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": null,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Der berichtete Preisanstieg und die Proteste belegen noch keine ausreichend quantifizierbare oder fallbezogen belegte Zustandsveränderung bei Menschen oder Haushalten. Mögliche Belastungen von Mobilität, Lebenshaltung und Versorgung bleiben bedingte Wirkannahmen ohne ausreichende Fallbelege.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der berichtete Preisanstieg und die Proteste belegen noch keine ausreichend quantifizierbare oder fallbezogen belegte Zustandsveränderung bei Menschen oder Haushalten. Mögliche Belastungen von Mobilität, Lebenshaltung und Versorgung bleiben bedingte Wirkannahmen ohne ausreichende Fallbelege.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "Tragweite offen",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Derzeit nicht ausreichend bewertbar",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "temporal_status": "ex_ante",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "balance": null,
+            "rationale": "Das Quellenmaterial enthält keine belastbaren Angaben zu Verbrauch, Emissionen, Umweltbelastungen oder ökologischen Gegenwirkungen. Aus der Preisänderung allein wird keine ökologische Zustandsveränderung abgeleitet.",
+            "research_pass": "second_pass",
+            "research_result": "Die Ereignisquelle wurde auf ökologische Angaben geprüft. Eine zusätzliche tatsächlich gelesene zugelassene Mechanismus- oder Folgenquelle wurde nicht gefunden. Die Dimension bleibt deshalb ausdrücklich nicht ausreichend bewertbar.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": null,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Das Quellenmaterial enthält keine belastbaren Angaben zu Verbrauch, Emissionen, Umweltbelastungen oder ökologischen Gegenwirkungen. Aus der Preisänderung allein wird keine ökologische Zustandsveränderung abgeleitet.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Das Quellenmaterial enthält keine belastbaren Angaben zu Verbrauch, Emissionen, Umweltbelastungen oder ökologischen Gegenwirkungen. Aus der Preisänderung allein wird keine ökologische Zustandsveränderung abgeleitet.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "Tragweite offen",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Derzeit nicht ausreichend bewertbar",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "temporal_status": "ex_ante",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "balance": null,
+            "rationale": "Proteste und das teilweise Räumen von Straßen sind als Ereignisse berichtet. Es fehlen jedoch Belege für längerfristige Veränderungen von Beteiligung, Repression, Institutionen, politischer Korrekturfähigkeit oder Machtverteilung.",
+            "research_pass": "second_pass",
+            "research_result": "Die Ereignisquelle wurde auf Aussagen zu staatlicher Reaktion und institutionellen Folgen geprüft. Eine zusätzliche tatsächlich gelesene zugelassene Quelle zu längerfristigen demokratischen Wirkungen wurde nicht gefunden. Die Dimension bleibt daher offen.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": null,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Proteste und das teilweise Räumen von Straßen sind als Ereignisse berichtet. Es fehlen jedoch Belege für längerfristige Veränderungen von Beteiligung, Repression, Institutionen, politischer Korrekturfähigkeit oder Machtverteilung.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Proteste und das teilweise Räumen von Straßen sind als Ereignisse berichtet. Es fehlen jedoch Belege für längerfristige Veränderungen von Beteiligung, Repression, Institutionen, politischer Korrekturfähigkeit oder Machtverteilung.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "Tragweite offen",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Derzeit nicht ausreichend bewertbar",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Der Deutschlandfunk berichtet am 14.09.2026 über Proteste in mehreren syrischen Provinzen, höhere Treibstoffpreise, einzelne Autobahnblockaden und das teilweise Räumen von Straßen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "insufficient_basis",
+          "direction": "open",
+          "magnitude": null,
+          "evidence": "not_assessable",
+          "data_status": "missing",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "temporal_status": "ex_ante",
+          "primary_paths": [],
+          "secondary_paths": [],
+          "balance": null,
+          "rationale": "Der berichtete Preisanstieg und die Proteste belegen noch keine ausreichend quantifizierbare oder fallbezogen belegte Zustandsveränderung bei Menschen oder Haushalten. Mögliche Belastungen von Mobilität, Lebenshaltung und Versorgung bleiben bedingte Wirkannahmen ohne ausreichende Fallbelege.",
+          "research_pass": "second_pass",
+          "research_result": "Die Ereignisquelle wurde erneut vollständig geprüft. Eine zusätzliche Recherche nach konkreten Folgen für Haushalte, Versorgung und Mobilität ergab keinen weiteren tatsächlich gelesenen zugelassenen Beleg. Daher bleibt die Dimension offen und erhält keine numerische Tragweite.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der berichtete Preisanstieg und die Proteste belegen noch keine ausreichend quantifizierbare oder fallbezogen belegte Zustandsveränderung bei Menschen oder Haushalten. Mögliche Belastungen von Mobilität, Lebenshaltung und Versorgung bleiben bedingte Wirkannahmen ohne ausreichende Fallbelege.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": null,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Der berichtete Preisanstieg und die Proteste belegen noch keine ausreichend quantifizierbare oder fallbezogen belegte Zustandsveränderung bei Menschen oder Haushalten. Mögliche Belastungen von Mobilität, Lebenshaltung und Versorgung bleiben bedingte Wirkannahmen ohne ausreichende Fallbelege.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "Tragweite offen",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Derzeit nicht ausreichend bewertbar",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "insufficient_basis",
+          "direction": "open",
+          "magnitude": null,
+          "evidence": "not_assessable",
+          "data_status": "missing",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "temporal_status": "ex_ante",
+          "primary_paths": [],
+          "secondary_paths": [],
+          "balance": null,
+          "rationale": "Das Quellenmaterial enthält keine belastbaren Angaben zu Verbrauch, Emissionen, Umweltbelastungen oder ökologischen Gegenwirkungen. Aus der Preisänderung allein wird keine ökologische Zustandsveränderung abgeleitet.",
+          "research_pass": "second_pass",
+          "research_result": "Die Ereignisquelle wurde auf ökologische Angaben geprüft. Eine zusätzliche tatsächlich gelesene zugelassene Mechanismus- oder Folgenquelle wurde nicht gefunden. Die Dimension bleibt deshalb ausdrücklich nicht ausreichend bewertbar.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Das Quellenmaterial enthält keine belastbaren Angaben zu Verbrauch, Emissionen, Umweltbelastungen oder ökologischen Gegenwirkungen. Aus der Preisänderung allein wird keine ökologische Zustandsveränderung abgeleitet.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": null,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Das Quellenmaterial enthält keine belastbaren Angaben zu Verbrauch, Emissionen, Umweltbelastungen oder ökologischen Gegenwirkungen. Aus der Preisänderung allein wird keine ökologische Zustandsveränderung abgeleitet.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "Tragweite offen",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Derzeit nicht ausreichend bewertbar",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "insufficient_basis",
+          "direction": "open",
+          "magnitude": null,
+          "evidence": "not_assessable",
+          "data_status": "missing",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "temporal_status": "ex_ante",
+          "primary_paths": [],
+          "secondary_paths": [],
+          "balance": null,
+          "rationale": "Proteste und das teilweise Räumen von Straßen sind als Ereignisse berichtet. Es fehlen jedoch Belege für längerfristige Veränderungen von Beteiligung, Repression, Institutionen, politischer Korrekturfähigkeit oder Machtverteilung.",
+          "research_pass": "second_pass",
+          "research_result": "Die Ereignisquelle wurde auf Aussagen zu staatlicher Reaktion und institutionellen Folgen geprüft. Eine zusätzliche tatsächlich gelesene zugelassene Quelle zu längerfristigen demokratischen Wirkungen wurde nicht gefunden. Die Dimension bleibt daher offen.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Proteste und das teilweise Räumen von Straßen sind als Ereignisse berichtet. Es fehlen jedoch Belege für längerfristige Veränderungen von Beteiligung, Repression, Institutionen, politischer Korrekturfähigkeit oder Machtverteilung.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": null,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Proteste und das teilweise Räumen von Straßen sind als Ereignisse berichtet. Es fehlen jedoch Belege für längerfristige Veränderungen von Beteiligung, Repression, Institutionen, politischer Korrekturfähigkeit oder Machtverteilung.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "Tragweite offen",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Derzeit nicht ausreichend bewertbar",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T15:49:21.164Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T14:32:48.000Z",
+      "last_updated": "2026-09-14T15:49:21.164Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-0eabff1e3b16815d7364",
+      "case_file": null,
+      "source_published_at": "2026-09-14T14:32:48.000Z",
+      "published_at": "2026-09-14T15:49:21.164Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/proteste-in-syrien-wegen-gestiegener-benzinpreise-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T14:32:48.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-e92f362208a8792e",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e92f362208a8792e-8e38d5e216ee1b30-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e92f362208a8792e-716e05821018fb27-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-e92f362208a8792e-9fafaaac9739cc53-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "kooperation-cheplapharm-aus-greifswald-und-sanofi-vor-milliarden-deal-a8792e",
+      "title": "Cheplapharm und Sanofi laut stern vor Milliarden-Deal",
+      "source_summary": "Der stern berichtet über eine geplante Transaktion zwischen dem Pharmakonzern Sanofi und Cheplapharm aus Greifswald. Cheplapharm wolle Medikamente und Produktionsstandorte von Sanofi übernehmen.\n\nNach der Darstellung des stern soll Cheplapharm dadurch zu einer der größten Pharmafirmen Deutschlands aufsteigen. Der gelieferte Auszug nennt weder konkrete Produkte und Standorte noch Kaufpreis, Zeitplan, Genehmigungen oder Folgen für Beschäftigte. Die Angaben stammen aus einer einzelnen journalistischen Quelle und müssen für diese Details weiter geprüft werden.",
+      "summary": "Der stern berichtet, dass Cheplapharm aus Greifswald Medikamente und Produktionsstandorte von Sanofi übernehmen will. Der Auszug belegt die geplante Transaktion, lässt Kaufpreis, Zeitplan, konkrete Standorte und Folgen aber offen.",
+      "detail_summary": "Der stern berichtet über eine geplante Übernahme von Medikamenten und Produktionsstandorten des Pharmakonzerns Sanofi durch Cheplapharm aus Greifswald. Als Ziel wird genannt, dass Cheplapharm dadurch zu einer der größten Pharmafirmen Deutschlands aufsteigen will. Das wäre grundsätzlich für Wettbewerb, Produktion und Beschäftigung relevant, lässt sich aus dem vorliegenden Auszug aber noch nicht bewerten. Unklar sind unter anderem Kaufpreis, Umfang, Genehmigungen und Zeitplan. Auch konkrete Folgen für Beschäftigte, Versorgung oder Standorte sind nicht belegt. Der Ereigniskern beruht zunächst auf einer einzelnen journalistischen Quelle.",
+      "why_relevant": "Eine Übernahme von Medikamenten und Produktionsstandorten kann Wettbewerb, Produktion und Beschäftigung berühren; Umfang und Folgen sind noch offen.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Der stern berichtet am 14. September 2026 über einen möglichen Milliarden-Deal zwischen Cheplapharm aus Greifswald und Sanofi.",
+        "evaluation_target": {
+          "label": "geplante Übernahme von Medikamenten und Produktionsstandorten",
+          "type": "proposal"
+        },
+        "baseline": "Vor einer möglichen Transaktion verbleiben die im Bericht genannten Eigentums- und Produktionsverhältnisse nach dem vorliegenden Material zunächst unverändert. Konkrete Ausgangsdaten zu Produkten, Standorten, Beschäftigung und Kapazitäten fehlen.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": null,
+        "counterfactual": "Ohne die geplante Transaktion würden die im Bericht genannten Medikamente und Produktionsstandorte zunächst nicht zu Cheplapharm wechseln. Ob sich dadurch Marktstruktur, Produktion, Beschäftigung oder Versorgung anders entwickeln würden, ist wegen des unbekannten Umfangs und Verfahrensstands offen.",
+        "reference_frame": [
+          "Pharmamarkt und Wettbewerb",
+          "Arzneimittelproduktion und Versorgung",
+          "Beschäftigung und regionale Standorte"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der berichtete Eigentums- und Produktionswechsel könnte Beschäftigte, regionale Standorte und mittelbar Patientinnen und Patienten betreffen. Der Ereigniskern belegt jedoch keine eingetretene Zustandsveränderung; Umfang, Standorte, Produkte und Beschäftigungsfolgen fehlen. Der Kontextbeleg zur Sanofi-Anlage zeigt nur, warum diese Angaben für die Bewertung relevant wären.",
+            "planet": "Produktionsstandorte können mit Energie-, Ressourcen-, Abfall- und Lieferkettenfragen verbunden sein. Für den konkreten Vorgang fehlen Angaben zu Anlagen, Produktionsverfahren, Verlagerungen und Emissionen. Die Richtung bleibt deshalb offen; aus der bloßen Möglichkeit folgt kein Umweltpfad.",
+            "democracy": "Der Eigentümerwechsel ist kein Beleg für eine demokratische Zustandsveränderung. Angaben zu Kartellprüfung, Behördenaufsicht, Genehmigungen, Beteiligung oder institutioneller Macht fehlen. Ein demokratischer Wirkpfad ist daher nicht ausreichend modellierbar."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Berichtet wird eine geplante mögliche Übernahme von Medikamenten und Produktionsstandorten durch Cheplapharm.",
+          "second_order": "Mögliche Veränderungen bei Investitionen, Beschäftigung, Produktion, Wettbewerb oder Versorgung sind denkbar, aber mangels Umfangs-, Standort- und Verfahrensdaten nicht belastbar modellierbar.",
+          "third_order": "Mögliche längerfristige Veränderungen von Marktstruktur, Lieferketten oder institutionellen Abhängigkeiten bleiben offen. Die Recherche fand hierfür keinen konkreten unabhängigen Beleg.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die ergänzende Recherche fand keinen zugänglichen amtlichen oder unabhängigen Beleg für den konkreten Deal, seine Konditionen, konkrete Standorte oder bereits eingetretene Folgen.",
+            "Die gelieferte journalistische Quelle kennzeichnet den Vorgang als berichtete geplante Transaktion und belegt keinen vollzogenen Eigentumswechsel."
+          ],
+          "source_independence": "Der Ereigniskern beruht auf der gebundenen Einzelquelle stern. Die ergänzend gelesenen Quellen liefern nur allgemeinen Sanofi-Produktions- und Standortkontext und bestätigen den konkreten Deal nicht.",
+          "institutional_status": "Belegt ist eine dem stern zugeschriebene geplante beziehungsweise berichtete Transaktion. Nicht belegt sind ein Vertragsabschluss, eine Genehmigung, ein Vollzug oder ein Inkrafttreten."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "insufficient_basis",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "temporal_status": "ex_ante",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "balance": null,
+            "rationale": "Der Ereigniskern ist als vorläufige Einzelquellenmeldung belegt, aber kein menschlicher Zustandswandel. Für einen modellierten Pfad fehlen konkrete Empfänger, Standorte, Produkte, Beschäftigungsdaten, Zeitplan und Bedingungen. Die Recherche hat nur allgemeinen Standortkontext gefunden.",
+            "research_pass": "second_pass",
+            "research_result": "Gezielte Suche nach Ereignis- und Mechanismusbelegen abgeschlossen. Ein unabhängiger Deal-Beleg wurde nicht gefunden; der allgemeine Sanofi-Produktionskontext reicht nicht für eine konkrete menschliche Wirkungsrichtung oder Tragweite.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "research-sanofi-production-context",
+              "research-sanofi-investment-context"
+            ],
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": null,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Der Ereigniskern ist als vorläufige Einzelquellenmeldung belegt, aber kein menschlicher Zustandswandel. Für einen modellierten Pfad fehlen konkrete Empfänger, Standorte, Produkte, Beschäftigungsdaten, Zeitplan und Bedingungen. Die Recherche hat nur allgemeinen Standortkontext gefunden.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der Ereigniskern ist als vorläufige Einzelquellenmeldung belegt, aber kein menschlicher Zustandswandel. Für einen modellierten Pfad fehlen konkrete Empfänger, Standorte, Produkte, Beschäftigungsdaten, Zeitplan und Bedingungen. Die Recherche hat nur allgemeinen Standortkontext gefunden.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "Tragweite offen",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Derzeit nicht ausreichend bewertbar",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "temporal_status": "ex_ante",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "balance": null,
+            "rationale": "Der gelieferte Bericht und die ergänzenden Kontextquellen enthalten keine konkreten Angaben zu Energie, Emissionen, Ressourcen, Abfällen, Produktionsverlagerungen oder Lieferketten des Vorhabens. Eine bloße mögliche Standortveränderung genügt nicht für einen planetaren Wirkpfad.",
+            "research_pass": "second_pass",
+            "research_result": "Gezielte Suche nach Umwelt- und Produktionsmechanismusbelegen abgeschlossen. Es wurde kein konkreter Umweltbeleg zum Deal gefunden; die Dimension bleibt ohne numerische Tragweite offen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "research-sanofi-production-context",
+              "research-sanofi-investment-context"
+            ],
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": null,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Der gelieferte Bericht und die ergänzenden Kontextquellen enthalten keine konkreten Angaben zu Energie, Emissionen, Ressourcen, Abfällen, Produktionsverlagerungen oder Lieferketten des Vorhabens. Eine bloße mögliche Standortveränderung genügt nicht für einen planetaren Wirkpfad.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der gelieferte Bericht und die ergänzenden Kontextquellen enthalten keine konkreten Angaben zu Energie, Emissionen, Ressourcen, Abfällen, Produktionsverlagerungen oder Lieferketten des Vorhabens. Eine bloße mögliche Standortveränderung genügt nicht für einen planetaren Wirkpfad.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "Tragweite offen",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Derzeit nicht ausreichend bewertbar",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "temporal_status": "ex_ante",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "balance": null,
+            "rationale": "Der Unternehmensdeal belegt keine Veränderung von Regulierung, Aufsicht, demokratischer Beteiligung oder institutioneller Macht. Angaben zu kartellrechtlichen oder sonstigen Verfahren fehlen. Deshalb ist kein demokratischer Wirkpfad modellierbar.",
+            "research_pass": "second_pass",
+            "research_result": "Gezielte Suche nach institutionellen, regulatorischen und rechtlichen Belegen abgeschlossen. Kein konkreter Beleg für eine demokratische Zustandsveränderung oder ein Verfahren zum Deal gefunden.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "research-sanofi-production-context",
+              "research-sanofi-investment-context"
+            ],
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": null,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Der Unternehmensdeal belegt keine Veränderung von Regulierung, Aufsicht, demokratischer Beteiligung oder institutioneller Macht. Angaben zu kartellrechtlichen oder sonstigen Verfahren fehlen. Deshalb ist kein demokratischer Wirkpfad modellierbar.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der Unternehmensdeal belegt keine Veränderung von Regulierung, Aufsicht, demokratischer Beteiligung oder institutioneller Macht. Angaben zu kartellrechtlichen oder sonstigen Verfahren fehlen. Deshalb ist kein demokratischer Wirkpfad modellierbar.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "Tragweite offen",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Derzeit nicht ausreichend bewertbar",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Der stern berichtet über die geplante Übernahme von Medikamenten und Produktionsstandorten durch Cheplapharm und nennt als Ziel den Aufstieg zu einer der größten Pharmafirmen Deutschlands."
+          },
+          {
+            "source_id": "research-sanofi-production-context",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Ein Sanofi-Produktionsstandort kann Produktion, Forschung, Verwaltung und zahlreiche Beschäftigte umfassen; dies begründet den Prüfbedarf zu Standorten und Beschäftigung, bestätigt aber nicht den konkreten Deal."
+          },
+          {
+            "source_id": "research-sanofi-investment-context",
+            "functions": [
+              "reference",
+              "mechanism"
+            ],
+            "supported_claim": "Standort- und Produktionsentscheidungen bei Sanofi können mit Investitionen und Veränderungen an Produktionsstätten verbunden sein; der konkrete Cheplapharm-Vorgang wird nicht bestätigt."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": null,
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://www.bundesregierung.de/breg-en/service/archive/archive/working-together-to-fight-resistant-bacteria-448386",
+          "title": "Working together to fight resistant bacteria",
+          "publisher": "Bundesregierung",
+          "source_id": "research-sanofi-production-context",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://www.deutschlandfunk.de/pharmaunternehmen-sanofi-prueft-investition-am-standort-frankfurt-102.html",
+          "title": "Pharmaunternehmen Sanofi prüft Investition am Standort Frankfurt",
+          "publisher": "Deutschlandfunk",
+          "source_id": "research-sanofi-investment-context",
+          "source_function": "reference"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "insufficient_basis",
+          "direction": "open",
+          "magnitude": null,
+          "evidence": "not_assessable",
+          "data_status": "missing",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "temporal_status": "ex_ante",
+          "primary_paths": [],
+          "secondary_paths": [],
+          "balance": null,
+          "rationale": "Der Ereigniskern ist als vorläufige Einzelquellenmeldung belegt, aber kein menschlicher Zustandswandel. Für einen modellierten Pfad fehlen konkrete Empfänger, Standorte, Produkte, Beschäftigungsdaten, Zeitplan und Bedingungen. Die Recherche hat nur allgemeinen Standortkontext gefunden.",
+          "research_pass": "second_pass",
+          "research_result": "Gezielte Suche nach Ereignis- und Mechanismusbelegen abgeschlossen. Ein unabhängiger Deal-Beleg wurde nicht gefunden; der allgemeine Sanofi-Produktionskontext reicht nicht für eine konkrete menschliche Wirkungsrichtung oder Tragweite.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "research-sanofi-production-context",
+            "research-sanofi-investment-context"
+          ],
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der Ereigniskern ist als vorläufige Einzelquellenmeldung belegt, aber kein menschlicher Zustandswandel. Für einen modellierten Pfad fehlen konkrete Empfänger, Standorte, Produkte, Beschäftigungsdaten, Zeitplan und Bedingungen. Die Recherche hat nur allgemeinen Standortkontext gefunden.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": null,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Der Ereigniskern ist als vorläufige Einzelquellenmeldung belegt, aber kein menschlicher Zustandswandel. Für einen modellierten Pfad fehlen konkrete Empfänger, Standorte, Produkte, Beschäftigungsdaten, Zeitplan und Bedingungen. Die Recherche hat nur allgemeinen Standortkontext gefunden.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "Tragweite offen",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Derzeit nicht ausreichend bewertbar",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "insufficient_basis",
+          "direction": "open",
+          "magnitude": null,
+          "evidence": "not_assessable",
+          "data_status": "missing",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "temporal_status": "ex_ante",
+          "primary_paths": [],
+          "secondary_paths": [],
+          "balance": null,
+          "rationale": "Der gelieferte Bericht und die ergänzenden Kontextquellen enthalten keine konkreten Angaben zu Energie, Emissionen, Ressourcen, Abfällen, Produktionsverlagerungen oder Lieferketten des Vorhabens. Eine bloße mögliche Standortveränderung genügt nicht für einen planetaren Wirkpfad.",
+          "research_pass": "second_pass",
+          "research_result": "Gezielte Suche nach Umwelt- und Produktionsmechanismusbelegen abgeschlossen. Es wurde kein konkreter Umweltbeleg zum Deal gefunden; die Dimension bleibt ohne numerische Tragweite offen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "research-sanofi-production-context",
+            "research-sanofi-investment-context"
+          ],
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der gelieferte Bericht und die ergänzenden Kontextquellen enthalten keine konkreten Angaben zu Energie, Emissionen, Ressourcen, Abfällen, Produktionsverlagerungen oder Lieferketten des Vorhabens. Eine bloße mögliche Standortveränderung genügt nicht für einen planetaren Wirkpfad.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": null,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Der gelieferte Bericht und die ergänzenden Kontextquellen enthalten keine konkreten Angaben zu Energie, Emissionen, Ressourcen, Abfällen, Produktionsverlagerungen oder Lieferketten des Vorhabens. Eine bloße mögliche Standortveränderung genügt nicht für einen planetaren Wirkpfad.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "Tragweite offen",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Derzeit nicht ausreichend bewertbar",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "insufficient_basis",
+          "direction": "open",
+          "magnitude": null,
+          "evidence": "not_assessable",
+          "data_status": "missing",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "temporal_status": "ex_ante",
+          "primary_paths": [],
+          "secondary_paths": [],
+          "balance": null,
+          "rationale": "Der Unternehmensdeal belegt keine Veränderung von Regulierung, Aufsicht, demokratischer Beteiligung oder institutioneller Macht. Angaben zu kartellrechtlichen oder sonstigen Verfahren fehlen. Deshalb ist kein demokratischer Wirkpfad modellierbar.",
+          "research_pass": "second_pass",
+          "research_result": "Gezielte Suche nach institutionellen, regulatorischen und rechtlichen Belegen abgeschlossen. Kein konkreter Beleg für eine demokratische Zustandsveränderung oder ein Verfahren zum Deal gefunden.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "research-sanofi-production-context",
+            "research-sanofi-investment-context"
+          ],
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der Unternehmensdeal belegt keine Veränderung von Regulierung, Aufsicht, demokratischer Beteiligung oder institutioneller Macht. Angaben zu kartellrechtlichen oder sonstigen Verfahren fehlen. Deshalb ist kein demokratischer Wirkpfad modellierbar.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": null,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Der Unternehmensdeal belegt keine Veränderung von Regulierung, Aufsicht, demokratischer Beteiligung oder institutioneller Macht. Angaben zu kartellrechtlichen oder sonstigen Verfahren fehlen. Deshalb ist kein demokratischer Wirkpfad modellierbar.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "Tragweite offen",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Derzeit nicht ausreichend bewertbar",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T15:49:21.164Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T14:31:24.000Z",
+      "last_updated": "2026-09-14T15:49:21.164Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-c2ff828848e864b00d3f",
+      "case_file": null,
+      "source_published_at": "2026-09-14T14:31:24.000Z",
+      "published_at": "2026-09-14T15:49:21.164Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen sind die konkreten übernommenen Medikamente und Produktionsstandorte, der Kaufpreis, der Verfahrensstand und mögliche Auswirkungen auf Beschäftigte und Standorte.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Originalbericht oder Unternehmensangaben mit Details zu Transaktion, Kaufpreis, Standorten und Beschäftigung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2247206febca526e",
+          "announced_at": "2026-09-14T14:31:24.000Z",
+          "follow_up_date": "2026-09-21T15:49:21.164Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/mecklenburg-vorpommern/kooperation--cheplapharm-aus-greifswald-und-sanofi-vor-milliarden-deal-38252644.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T14:31:24.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-7438a4da59c6467d",
       "title_image": {
