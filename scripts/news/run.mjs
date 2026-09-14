@@ -1,4 +1,5 @@
 import { assessmentBasis } from './migrate-impact-assessments.mjs';
+import {editorialEvidenceReceipt} from './editorial-evidence.mjs';
 import { newsInputReadiness } from './news-input-readiness.mjs';
 import { importBackgroundImpact } from './bridge/background-import.mjs';
 import { migrateImpactAssessment } from './impact-assessment.mjs';
@@ -592,6 +593,7 @@ export function publishedRecord(candidate, analysis, ai, now) {
     content_hash: candidate.content_hash,
     source_summary: sourceSummary,
     analysis: woekAnalysis,
+    editorial_evidence: editorialEvidenceReceipt({...candidate,analysis},now),
     provider: ai.provider,
     model: ai.model,
     mode: ai.mode,
@@ -605,7 +607,7 @@ export function publishedRecord(candidate, analysis, ai, now) {
     ...(existing?.publication_decision_review ? { publication_decision_review: existing.publication_decision_review, rejection_history: existing.rejection_history || [] } : {}),
     story_id: candidate.story_id,
     slug: candidate.slug,
-    title: candidate.title,
+    title: analysis.headline?.trim() || candidate.title,
     first_seen: candidate.first_seen,
     last_updated: now,
     published_at: existing?.published_at || now,
@@ -641,9 +643,10 @@ export function publishedRecord(candidate, analysis, ai, now) {
     relevance_filter_version: RELEVANCE_FILTER_VERSION,
     current_version: versionNumber,
     numeric_evidence: version.numeric_evidence,
+    editorial_evidence: version.editorial_evidence,
     source_summary: sourceSummary,
     analysis: woekAnalysis,
-    impact_assessment: migrateImpactAssessment(woekAnalysis, { title: candidate.title }),
+    impact_assessment: migrateImpactAssessment(woekAnalysis, { title: analysis.headline?.trim() || candidate.title }),
     impact_sources: candidate.impact_sources || existing?.impact_sources || [],
     impact_history: existing?.impact_history || [],
     versions: [...(existing?.versions || []), version],

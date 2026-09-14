@@ -245,3 +245,11 @@ test('current corrections finish before new drafts while independent review rema
   const review={...f.job,input:{...input,job_id:id.replace(/a/g,'f'),job_type:'impact_semantic_review'}};
   assert.deepEqual(selectApiJobs([f.job,repair,review],now),[review,repair,f.job]);
 });
+
+test('native source-bound headline survives transport instead of restoring source framing',async()=>{
+ const {wrapNativeNewsOutput}=await import('../../scripts/news/bridge/api-processor.mjs');
+ const original={...input,event:{canonical_title:'Russischer Angriff'},wirkungsticker:{story_id:'native-id'}};
+ const analysis={story_id:'native-id',headline:'Behörde macht Russland für den Angriff verantwortlich',publication_recommendation:true,publication_gate:{rationale:'Ein quellengebundener aktueller Sachverhalt wird geprüft.'}};
+ const result=wrapNativeNewsOutput({analyses:[analysis]},original);
+ assert.equal(result.story.headline,analysis.headline);assert.equal(original.event.canonical_title,'Russischer Angriff');
+});

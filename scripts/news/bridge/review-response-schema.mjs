@@ -32,11 +32,16 @@ const pathProperties={
  observed_signal:object({change:{type:['string','null']},source_ids:strings}),
  research_pass:en(['initial','second_pass']),research_result:string,magnitude_factors:factors,protection_boundary:boundary,
 };
-const dimension=object({path_status:en(['modelled']),likelihood:en(Object.keys(LIKELIHOOD)),evidence:en(Object.keys(EVIDENCE)),
+const modelledDimension=object({path_status:en(['modelled']),likelihood:en(Object.keys(LIKELIHOOD)),evidence:en(Object.keys(EVIDENCE)),
  data_status:en(['modelled','estimated']),temporal_status:en(['ex_ante','ongoing']),
  primary_paths:array(ref('main_path')),secondary_paths:array(ref('path')),rationale:string,
  balance:{anyOf:[object({rationale:string}),{type:'null'}]},
 });
+const openDimension=object({path_status:en(['insufficient_basis']),direction:en(['open']),magnitude:{type:'null'},
+ evidence:en(['not_assessable']),data_status:en(['missing']),likelihood:en(['unknown']),dominance:en(['none']),temporal_status:en(['ex_ante']),
+ primary_paths:{...array(ref('main_path')),maxItems:0},secondary_paths:{...array(ref('path')),maxItems:0},balance:{type:'null'},
+ rationale:string,research_pass:en(['second_pass']),research_result:string,reviewed_source_ids:strings});
+const dimension={anyOf:[modelledDimension,openDimension]};
 const assessment=object({version:en([IMPACT_VERSION]),semantics_revision:en([POTENTIAL_REVISION]),news_event:string,
  evaluation_target:object({label:string,type:en(TARGET_TYPES)}),baseline:string,temporal_status:en(TEMPORAL),
  systemic_relevance:{type:['string','null'],enum:['low','medium','high','very_high','critical',null]},

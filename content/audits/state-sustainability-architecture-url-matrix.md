@@ -1,8 +1,8 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4597**
+- Sitemap routes: **4624**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14634**
+- Extra tracked source HTML not in sitemap: **14661**
 - Routes with non-default #253 action: **3590**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **264**
 
@@ -3874,8 +3874,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1310**
-- Combined matrix items (routes + extra HTML + support): **20541**
+- Tracked support text files inventoried: **1325**
+- Combined matrix items (routes + extra HTML + support): **20610**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -4330,6 +4330,8 @@ Signals are review candidates, not automatic errors.
 | `scripts/methods/import-woems-source.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung |
 | `scripts/natalie/build-natalie-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/news/backfill-source-summaries.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | novelty_or_absence |
+| `scripts/news/bridge/media-review-schema.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
+| `scripts/news/bridge/review-response-schema.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/news/bridge/write-native-output-config.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/news/build.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `scripts/news/editorial-analysis.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | enap, dns |
@@ -4347,6 +4349,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/news/systemic-analysis.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/news/title-image/image-file.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | dns |
 | `scripts/news/visuals.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
+| `scripts/ops/discord-monitor.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | novelty_or_absence |
 | `scripts/ops/hosting-migration-policy.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/podcast/build-podcast-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/polls/visual.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | dns |
@@ -4445,7 +4448,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **20542**
+- Combined reviewed items: **20611**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
