@@ -4,7 +4,7 @@ import { eventCompatibility } from "./newsroom.mjs";
 import { fileSubject, livingFileMatch, subjectConflict } from "./living-files.mjs";
 import { crossLanguageSourceSupport } from './source-language-support.mjs';
 
-export const SOURCE_INTEGRITY_VERSION = "1.1";
+export const SOURCE_INTEGRITY_VERSION = "1.2";
 
 const normalHost = (value) => {
   try { return new URL(value).hostname.toLowerCase().replace(/^www\./, ""); }
@@ -87,6 +87,29 @@ function highConfidenceSubjectConflict(source, story) {
   return null;
 }
 
+// Explicit editorial comparison can establish a source relationship when a
+// translated or attributed headline no longer shares enough words. Bind it to
+// both exact texts; this does not waive publisher, date or subject-conflict gates.
+export function sourceSupportFingerprint(source, story) {
+  return createHash("sha256").update(JSON.stringify({
+    story_id: story.story_id, title: story.title, source_summary: story.source_summary,
+    summary: story.analysis?.summary,
+    source_id: source.source_id, url: source.url, source_title: source.title,
+    source_text: source.summary, article_excerpt: source.article_excerpt,
+    evidence_segments: source.evidence_segments, content_hash: source.content_hash,
+    published_at: source.source_published_at || source.published_at,
+  })).digest("hex");
+}
+
+function reviewedSourceSupport(source, story) {
+  return (story.editorial_evidence?.source_bindings || []).some(binding =>
+    binding.source_id === source.source_id && binding.url === source.url
+    && binding.review_method === "source_text_comparison"
+    && Number.isFinite(Date.parse(binding.reviewed_at || ""))
+    && String(binding.rationale || "").trim().length >= 40
+    && binding.fingerprint === sourceSupportFingerprint(source, story));
+}
+
 function semanticSupport(source, story, registrySource) {
   const translation = crossLanguageSourceSupport({ ...source, language: source.language || registrySource?.language }, story);
   const titleScore = storySimilarity(source.title, story.title);
@@ -101,7 +124,8 @@ function semanticSupport(source, story, registrySource) {
       || storySimilarity(source.title, other.title) >= 0.24
       || storySimilarity(`${source.title || ""} ${source.summary || ""}`, `${other.title || ""} ${other.summary || ""}`) >= 0.2
       || livingFileMatch(source, { ...story, sources: [other] }).score >= 0.98));
-  return { supported: titleScore >= 0.18 || contextScore >= 0.2 || direct.related || sharedReference || peer || translation.supported, title_score: Number(titleScore.toFixed(3)), context_score: Number(contextScore.toFixed(3)), shared_reference: sharedReference, peer_support: peer, translation_support: translation };
+  const reviewed = reviewedSourceSupport(source, story);
+  return { reviewed_source_support: reviewed, supported: reviewed || titleScore >= 0.18 || contextScore >= 0.2 || direct.related || sharedReference || peer || translation.supported, title_score: Number(titleScore.toFixed(3)), context_score: Number(contextScore.toFixed(3)), shared_reference: sharedReference, peer_support: peer, translation_support: translation };
 }
 
 export function sourceIntegrityForStory(story, registry, existingStories = [], now = new Date().toISOString()) {
