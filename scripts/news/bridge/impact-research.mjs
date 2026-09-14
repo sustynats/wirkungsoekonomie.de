@@ -71,7 +71,8 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
     // allowed. Keep the exact research ID in the repair request so the worker
     // does not mistakenly discard the event source or retry the wrong URL.
     if(!access.allowed)throw Error(`${access.reason}:${candidate.source_id}`);
-    const fetchBounded=()=>withRequestDeadline(()=>fetchDocument({url},source,{...registry.policy,allow_public_pdf:true,respect_robots:true}),
+    const fetchBounded=()=>withRequestDeadline(()=>fetchDocument({url},source,{...registry.policy,allow_public_pdf:true,
+      max_public_pdf_bytes:registry.policy.max_public_pdf_bytes ?? 4000000,respect_robots:true}),
       {timeoutMs:120000,code:'IMPACT_RESEARCH_REQUEST_TIMEOUT'})
       .catch(error=>{throw sourceFailure(error,candidate.source_id);});
     if(process.env.GITHUB_ACTIONS==='true')console.info(JSON.stringify({event:'impact_research',source_id:candidate.source_id,stage:'start'}));
