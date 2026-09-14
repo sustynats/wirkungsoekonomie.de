@@ -2783,7 +2783,7 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
 
 /* MPD 2.0: magnitude is the only bar quantity. Unknown is not zero. */
 .wt-dims--impact .wt-dim__track{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;width:100%;min-width:0}
-.wt-dims--impact .wt-meter--unknown i{background:transparent;border:1px dashed currentColor;opacity:.35}
+.wt-dims--impact .wt-meter--unknown i{background:transparent;border:1px dashed currentColor;opacity:.7}
 .wt-dims--impact .wt-impact-direction{font-weight:700;line-height:1.35}
 .wt-dims--impact .wt-impact-evidence{font-size:.85rem;line-height:1.5}
 .wt-dims--impact .wt-impact-paths{padding-left:1.2rem}

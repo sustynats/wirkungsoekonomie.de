@@ -43,3 +43,12 @@ Alt-Relevanz ist keine Magnitude. Die technische Migration markiert ungeklärte 
 Die vorhandene Dropbox-Bridge, Claim-/ACK-Lifecycle, Idempotenz und Publication Gates bleiben bestehen. Keine kostenpflichtigen Textanbieter oder versteckten API-Fallbacks. Neue aktuelle Nachrichten haben Vorrang vor Altbestand. Review-Identitäten binden redaktionellen Inhalt, nicht veränderliche Abrufzeitstempel. Ein unabhängiger Fachpass prüft die vorgeschlagenen Metadaten und Quellen erneut.
 
 Prüfen: drei sichtbare Dimensionsbefunde, je ein begründeter Pfad oder dokumentierte offene Recherche; nachvollziehbare Faktoren; Quellenfunktionen; Modellannahmen; Raum/Zeit; getrennte Beobachtung/Attribution; Gegenpfade; Nichtkompensation; Ring unabhängig von Stärke; originale Bewertung unverändert; keine öffentlichen Debugtexte oder fehlenden MPD-Zeilen. Build, Tests, Lint, Typecheck und Mobile/Desktop-Preview vor Release.
+
+
+## Reparatur der Potenzialprüfung – 14.09.2026
+
+Eine fehlende Outcome-Messung oder noch offene Umsetzung ist kein Grund, einen begründbaren bedingten Wirkpfad zu verwerfen. Zuerst den berichteten Sachverhalt bzw. die Maßnahme bewerten; die Warnung oder Berichterstattung selbst ist nur bei einem Kommunikationsgegenstand das Bewertungsobjekt. Die ordinale Tragweite ist eine begründete Schätzung am abgegrenzten Pfad und keine Behauptung, die Quelle habe diese Zahl gemessen.
+
+Die zweite Recherche umfasst Mechanismus, gekoppelte MPD-Folgen und Referenzraum. Die bekannten Discovery-Quellen sind keine abschließende Liste möglicher Forschungsquellen. Quellenrechte, Zugriff und Originalauszüge werden unverändert geprüft. Ein fehlgeschlagener Suchzugriff bleibt eine technische Rechercheaufgabe. Er darf nicht als abgeschlossener fachlicher Befund veröffentlicht werden.
+
+Die Balkenskala bleibt bei offenen Werten mit fünf gestrichelten Segmenten sichtbar. Sie kennzeichnet dann eine noch nicht bestimmte Tragweite und ausdrücklich nicht Stufe 0. Der Ring bleibt ausschließlich das Zeitstadium.

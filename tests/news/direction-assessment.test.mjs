@@ -176,7 +176,7 @@ test('unimplemented negative risk stays negative; uncertainty is not a positive 
   assert.match(renderDimensionMeters(a),/data-direction="negative"/);
   a.human.tendency='gemischt';assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_MIXED_PATHS_REQUIRED:human'));
   Object.assign(a.human,mixed());assert.deepEqual(directionAssessmentErrors(a,sources),[]);
-  assert.match(renderDimensionMeters(a),/aria-label="Tragweite offen, nicht null oder neutral"/);
+  assert.match(renderDimensionMeters(a),/aria-label="Tragweite offen für [^"]+; gestrichelte Skala, keine Bewertung mit null Punkten"/);
   a.human.positive_path.source_ids=['unknown'];assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_PATH_SOURCE_INVALID:human'));
   a.human.positive_path=structuredClone(a.human.negative_path);assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_MIXED_PATHS_REQUIRED:human'));
 });

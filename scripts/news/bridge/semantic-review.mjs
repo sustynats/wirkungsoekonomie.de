@@ -67,6 +67,7 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
   // Old acknowledgments remain immutable. A malformed legacy check list gets
   // a new, protocol-bound review job; it never becomes an editorial approval.
   const reviewRecord = { title: record.title, source_summary: record.source_summary || record.research_summary || '',
+        ...(record.impact_reassessment_request ? {requested_correction:record.impact_reassessment_request} : {}),
         ...(needsMediaReview(record) ? {media_review_required:true} : {}),
         analysis: record.analysis || { sections: record.sections, claim_ledger: record.claim_ledger },
         sources: [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])].map(s => ({ source_id: s.source_id, url: s.url, title: s.title, publisher: s.publisher, excerpt: s.article_excerpt || s.summary || '', source_role: s.source_role || s.source_function || null })) };
