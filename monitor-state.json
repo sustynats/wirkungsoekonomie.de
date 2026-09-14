@@ -36,13 +36,14 @@
     "bridge-publication-flow": {
       "firstSeen": "2026-09-14T00:52:09.688Z",
       "active": true
-    },
-    "bridge-throughput": {
-      "firstSeen": "2026-09-14T02:22:15.460Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "884ce46eeb2cc09e224916cc",
+      "content": "✓ WÖk-Störung behoben\nRedaktionsdurchsatz\nPrüfung: 2026-09-14T05:43:54.240Z"
+    }
+  ],
   "dailyDate": "2026-09-13",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -969,6 +970,6 @@
       }
     },
     "last_new_at": null,
-    "checked_at": "2026-09-14T05:06:00.782Z"
+    "checked_at": "2026-09-14T05:43:54.240Z"
   }
 }
