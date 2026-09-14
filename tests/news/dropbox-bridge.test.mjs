@@ -453,11 +453,17 @@ test('last 30 image references are supplied without inventing historical descrip
 });
 test('staging record survives ACK and duplicate reconciliation; production ACK requires committed marker',async t=>{
   const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.published&&s.listed!==false));
+  // Publication order and punctuation in real headlines change during imports.
+  // Exercise every HTML-sensitive character with a fixed title instead.
+  record.title = 'Synthetischer Test: "Mensch & Planet" <prüfen> und Europas \'Demokratie\'';
   const {provider,store,transport}=setup(t,{stageOnly:true,adapt:()=>({decision:'publish',record})});
   await provider.enqueue([candidate()],[],now,{testOnly:true});const job=store.all()[0];
   transport.files.set(bridgePath('20_OUTPUT_READY',`${job.input.job_id}.output.json`),JSON.stringify(output(job.input,'publish')));
   const [accepted]=await provider.reconcile({},[candidate()],later);assert.equal(accepted.staged,true);
-  await provider.finalize([],later);assert.ok(store.get(job.input.job_id).staging.html.includes(record.title.replace(/&/g,'&amp;')));
+  await provider.finalize([],later);
+  const html=store.get(job.input.job_id).staging.html;
+  assert.ok(html.includes('Synthetischer Test: &quot;Mensch &amp; Planet&quot; &lt;prüfen&gt; und Europas &#039;Demokratie&#039;'));
+  assert.ok(!html.includes(record.title),'unescaped title must never enter the preview HTML');
   assert.equal(store.get(job.input.job_id).ack.status,'staged');assert.equal(store.get(job.input.job_id).ack.url,null);
   assert.deepEqual(await provider.reconcile({},[],later),[]);
   assert.equal(store.observation('completion-metrics').completed,1);
