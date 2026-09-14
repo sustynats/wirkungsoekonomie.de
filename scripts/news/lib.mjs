@@ -436,7 +436,11 @@ export async function fetchPublicArticle(item, source, policy = {}, fetchImpl = 
     if (!response.ok) throw new Error(`ARTICLE_HTTP_${response.status}`);
     const contentType = response.headers.get("content-type") || "";
     if (policy.allow_public_pdf === true && /^application\/pdf\b/i.test(contentType)) {
-      const bytes = await readLimitedBody(response, Math.min(Number(policy.max_article_bytes || 2000000), 4000000), { binary: true });
+      // Public research PDFs have their own explicit allowance. Keep HTML/feed
+      // limits separate and never exceed the existing 4 MB PDF safety ceiling.
+      const configuredLimit = Number(policy.max_public_pdf_bytes ?? policy.max_article_bytes ?? 2000000);
+      if (!Number.isFinite(configuredLimit) || configuredLimit <= 0) throw Error('ARTICLE_PDF_LIMIT_INVALID');
+      const bytes = await readLimitedBody(response, Math.min(configuredLimit, 4000000), { binary: true });
       if (bytes.subarray(0,5).toString() !== '%PDF-') throw Error('ARTICLE_PDF_INVALID');
       const body = execFileSync('pdftotext', ['-layout', '-', '-'], { input: bytes, timeout: 12000, maxBuffer: 4000000, encoding: 'utf8' });
       return { body, final_url: current, content_type: 'text/plain', extracted_from: 'public_pdf' };
