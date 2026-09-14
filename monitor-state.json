@@ -36,6 +36,10 @@
     "bridge-throughput": {
       "firstSeen": "2026-09-14T07:11:04.518Z",
       "active": true
+    },
+    "publication": {
+      "firstSeen": "2026-09-14T13:01:52.973Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -1050,10 +1054,18 @@
       "https://wirkungsoekonomie.de/wirkungsticker/nach-der-landtagswahl-von-angern-erste-landtagssitzung-wird-meilenstein-704897/": {
         "first_seen_at": "2026-09-14T12:33:45.994Z",
         "source_at": "2026-09-14T10:11:36.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/mobilitatskosten-tankstellenverband-warnt-vor-spritpreisen-von-drei-euro-b66d93/": {
+        "first_seen_at": "2026-09-14T13:01:52.973Z",
+        "source_at": "2026-09-14T11:20:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/evakuierung-wegen-kellerbrands-feuer-im-keller-80-menschen-mussen-reha-zentrum-verlassen-dadc1b/": {
+        "first_seen_at": "2026-09-14T13:01:52.973Z",
+        "source_at": "2026-09-14T11:15:42.000Z"
       }
     },
-    "last_new_at": "2026-09-14T12:33:45.994Z",
-    "checked_at": "2026-09-14T12:33:45.994Z",
-    "last_current_new_at": "2026-09-14T12:33:45.994Z"
+    "last_new_at": "2026-09-14T13:01:52.973Z",
+    "checked_at": "2026-09-14T13:01:52.973Z",
+    "last_current_new_at": "2026-09-14T13:01:52.973Z"
   }
 }
