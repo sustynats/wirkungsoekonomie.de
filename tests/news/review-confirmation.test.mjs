@@ -1,3 +1,4 @@
+import {expandReviewConfirmation} from '../../scripts/news/bridge/review-confirmation.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { prepareApiJob, validateApiOutput } from '../../scripts/news/bridge/api-processor.mjs';
@@ -10,7 +11,7 @@ function fixture() {
   const assessment = syntheticPotentialAssessment();
   const p = assessment.dimensions.human.primary_paths[0];
   p.evidence = 'low'; p.epistemic_basis = 'model_hypothesis'; p.research_pass = 'initial';
-  const packet = {job_type:'impact_semantic_review', job_id:'wt_20260913T120000Z_'+'a'.repeat(24),
+  const packet = {job_type:'impact_semantic_review',parent_job_id:'wt_20260913T120000Z_'+'e'.repeat(24), job_id:'wt_20260913T120000Z_'+'a'.repeat(24),
     input_hash:'b'.repeat(64), created_at:'2026-09-13T12:00:00Z',
     proposed_assessment:assessment, record:{analysis:{impact_assessment:structuredClone(assessment)},sources:[{source_id:'official',excerpt:'Original source bytes.'}]}};
   const output = {schema_version:'1.0',job_id:packet.job_id,input_hash:packet.input_hash,processed_at:'2026-09-13T12:05:00Z',
@@ -96,4 +97,13 @@ test('only an identical duplicate proposal is omitted from the prompt, never sou
   packet.record.analysis.impact_assessment.baseline='A different historical baseline.';
   prompt=JSON.parse(prepareApiJob(packet,knowledge).prompt);
   assert.deepEqual(prompt.assignment.record.analysis.impact_assessment,packet.record.analysis.impact_assessment);
+});
+
+test('explicit research HOLD preserves the bound proposal without inventing factors or claiming ready',()=>{
+ const a=syntheticPotentialAssessment();
+ const output={assessment_result:{action:'hold',reason:'Die notwendige räumliche Abgrenzung fehlt nach der Quellenprüfung.'},review:{status:'needs_review',checks:{potential_scope:{status:'fail',rationale:'Eine belastbare Modellierung ist noch nicht begründbar.'}},findings:[]}};
+ const input={job_type:'impact_semantic_review',proposed_assessment:a};
+ const expanded=expandReviewConfirmation(structuredClone(output),input);
+ assert.deepEqual(expanded.impact_assessment,a);assert.equal(expanded.review.status,'needs_review');assert.equal(expanded.assessment_result,undefined);
+ output.review.status='ready';assert.throws(()=>expandReviewConfirmation(output,input),/API_REVIEW_HOLD_INVALID/);
 });

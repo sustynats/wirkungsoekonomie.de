@@ -4,6 +4,7 @@ import { ApiEditorialProcessor, prepareApiJob, selectApiJobs, apiProcessorPrefli
 import { bridgePath, outputSchema } from '../../scripts/news/bridge/contract.mjs';
 import { preparedNewsPrompt } from './fixtures/api-news-input.mjs';
 import { NEWS_INPUT_READINESS_VERSION } from '../../scripts/news/news-input-readiness.mjs';
+import { apiRequestKey } from '../../scripts/news/bridge/api-service.mjs';
 const now = '2026-09-13T10:00:00Z';
 const id = 'wt_20260913T093000Z_' + 'a'.repeat(24);
 const input = { job_id: id, input_hash: 'b'.repeat(64), created_at: '2026-09-13T09:30:00Z', job_type: 'new_story', sources: [{ published_at: '2026-09-13T09:30:00Z' }], wirkungsticker:{story_id:'test-news',analysis_prompt:preparedNewsPrompt()} };
@@ -30,7 +31,7 @@ function fixture() {
     move: async (a, b) => { if (files.has(b)) throw Error('CONFLICT'); files.set(b, files.get(a)); files.delete(a); },
     writeAtomic: async (p, v) => { const value = JSON.stringify(v); if (files.has(p)) assert.equal(files.get(p), value); files.set(p, value); } };
   const results = new Map();
-  const api = { health: async () => ({ protocol: 'woek-editorial-api-1', enabled: true, budget_guards: true, execution_policy: {max_paid_attempts_per_job:1,automatic_rewrites:false,input_readiness_version:NEWS_INPUT_READINESS_VERSION} }),
+  const api = { health: async () => ({ protocol: 'woek-editorial-api-1', enabled: true, budget_guards: true, execution_policy: {max_paid_reviews_per_parent:1,max_paid_attempts_per_job:1,automatic_rewrites:false,input_readiness_version:NEWS_INPUT_READINESS_VERSION} }),
     get: async key => results.get(key), submit: async req => { calls.push(req); const result = { status: 'completed', output }; results.set(req.key, result); return result; } };
   const processor = new ApiEditorialProcessor({ store, transport, api, knowledge, now: () => now });
   return { job, files, observations, calls, output, api, transport, processor };
@@ -41,7 +42,8 @@ test('Oracle preflight is a distinct real read/write proof, not a ChatGPT attest
   assert.equal(f.calls.length, 0);
 });
 test('a worker refuses an old or unverified retry policy before touching Dropbox', async () => {
-  for (const policy of [undefined, {max_paid_attempts_per_job:3,automatic_rewrites:false}, {max_paid_attempts_per_job:1,automatic_rewrites:true}, {max_paid_attempts_per_job:1,automatic_rewrites:false}]) {
+  for (const policy of [undefined, {max_paid_attempts_per_job:3,automatic_rewrites:false}, {max_paid_attempts_per_job:1,automatic_rewrites:true}, {max_paid_attempts_per_job:1,automatic_rewrites:false},
+    {max_paid_attempts_per_job:1,automatic_rewrites:false,input_readiness_version:NEWS_INPUT_READINESS_VERSION}]) {
     const f=fixture(), before=[...f.files];
     f.api.health=async()=>({protocol:'woek-editorial-api-1',enabled:true,budget_guards:true,execution_policy:policy});
     await assert.rejects(apiProcessorPreflight(f.transport,f.api,now),/EXECUTION_POLICY_UNAVAILABLE/);
@@ -206,12 +208,13 @@ test('technical validation failures resume the paid result without buying a rewr
     assert.equal(f.calls.length,1);
   }
 });
-test('deep schema ordering retains all fields and supplied evidence unchanged', async () => {
+test('queued author schema adopts the current MPD contract without changing article fields or evidence', async () => {
   const {orderNativePrompt}=await import('../../scripts/news/bridge/api-processor.mjs');
+  const {IMPACT_PROMPT_SCHEMA,IMPACT_PROMPT_DEFS}=await import('../../scripts/news/impact-assessment.mjs');
   const schema={analyses:[{story_id:'string',impact_assessment:{dimensions:{human:{}}},systemic_relevance:'string',publication_gate:{news_value:'new_evidence'}}],$defs:{path:{}}};
   const evidence='UNTRUSTED_SOURCE_DATA_BEGIN\n'+JSON.stringify(schema)+'\n{"quoted":"source text"}\nUNTRUSTED_SOURCE_DATA_END';
   const result=orderNativePrompt(JSON.stringify(schema)+'\n'+evidence);
-  assert.deepEqual(JSON.parse(result.split('\n')[0]),schema);
+  assert.deepEqual(JSON.parse(result.split('\n')[0]),{analyses:[{...schema.analyses[0],impact_assessment:IMPACT_PROMPT_SCHEMA}],$defs:{...schema.$defs,...IMPACT_PROMPT_DEFS}});
   assert.equal(Object.keys(JSON.parse(result.split('\n')[0]).analyses[0]).at(-1),'impact_assessment');
   assert.ok(result.endsWith(evidence));
 });
@@ -230,7 +233,7 @@ test('transport-compatible completed response retains its paid request key and u
 });
 test('a negative independent review is delivered once, never challenged through a paid clarification',async()=>{
  const {semanticOutputSchema}=await import('../../scripts/news/bridge/semantic-review.mjs');
- const f=fixture();f.job.input.job_type='impact_semantic_review';
+ const f=fixture();f.job.input.job_type='impact_semantic_review';f.job.input.parent_job_id=id.replace(/a/g,'e');
  f.files.set(bridgePath('00_INBOX',id+'.input.json'),JSON.stringify(f.job.input));
  const review={...shape(semanticOutputSchema),schema_version:'1.0',job_id:id,input_hash:input.input_hash,processed_at:now};
  review.review.status='blocked';for(const check of Object.values(review.review.checks))check.status='fail';
@@ -252,4 +255,50 @@ test('native source-bound headline survives transport instead of restoring sourc
  const analysis={story_id:'native-id',headline:'Behörde macht Russland für den Angriff verantwortlich',publication_recommendation:true,publication_gate:{rationale:'Ein quellengebundener aktueller Sachverhalt wird geprüft.'}};
  const result=wrapNativeNewsOutput({analyses:[analysis]},original);
  assert.equal(result.story.headline,analysis.headline);assert.equal(original.event.canonical_title,'Russischer Angriff');
+});
+
+test('review parent is explicitly taken from the immutable input and required before a claim',async()=>{
+ const f=fixture(),parent=id.replace(/a/g,'e');
+ const original={...input,job_type:'impact_semantic_review',parent_job_id:parent};
+ const request=prepareApiJob(original,knowledge);
+ assert.equal(request.parent_job_id,parent);
+ assert.equal(JSON.parse(request.prompt).assignment.parent_job_id,parent);
+ const other=prepareApiJob({...original,parent_job_id:id.replace(/a/g,'f')},knowledge);
+ assert.notEqual(request.key,other.key);
+ for(const bad of [undefined,id,'invalid'])assert.throws(()=>prepareApiJob({...original,parent_job_id:bad},knowledge),/REVIEW_INPUT_INVALID/);
+ f.job.input.job_type='impact_semantic_review';
+ f.files.set(bridgePath('00_INBOX',id+'.input.json'),JSON.stringify(f.job.input));
+ assert.equal((await f.processor.process(f.job,await apiProcessorPreflight(f.transport,f.api,now))).status,'preparation_failed');
+ assert.equal(f.calls.length,0);assert.ok(f.files.has(bridgePath('00_INBOX',id+'.input.json')));
+});
+test('a legacy budget-only refusal resumes across a request-key update but unknown paid ownership cannot',async()=>{
+ for(const status of ['budget_blocked','unknown']) {
+  const f=fixture(),oldKey='d'.repeat(64),request=prepareApiJob(input,knowledge);
+  const receipt=await apiProcessorPreflight(f.transport,f.api,now);
+  await f.transport.move(bridgePath('00_INBOX',id+'.input.json'),bridgePath('10_CLAIMED',id+'.input.json'));
+  f.observations.set('api-claim:'+id+'.input.json',{state:'claimed',key:oldKey});
+  const get=f.api.get;f.api.get=async key=>key===oldKey?{key:oldKey,profile_hash:request.profile_hash,packet_hash:request.packet_hash,status,provider_called:status!=='budget_blocked'}:get(key);
+  assert.equal((await f.processor.process(f.job,receipt)).status,status==='budget_blocked'?'output_delivered':'legacy_claim_attention');
+  assert.equal(f.calls.length,status==='budget_blocked'?1:0);
+ }
+});
+
+test('adding parent binding recovers the exact legacy review output under its original paid key',async()=>{
+ const {semanticOutputSchema}=await import('../../scripts/news/bridge/semantic-review.mjs');
+ const f=fixture();Object.assign(f.job.input,{job_type:'impact_semantic_review',parent_job_id:id.replace(/a/g,'e')});
+ const current=prepareApiJob(f.job.input,knowledge),legacy={...current};delete legacy.parent_job_id;legacy.key=apiRequestKey(legacy);
+ assert.notEqual(legacy.key,current.key);
+ const output={...shape(semanticOutputSchema),schema_version:'1.0',job_id:id,input_hash:input.input_hash,processed_at:now};
+ output.review.status='blocked';for(const check of Object.values(output.review.checks))check.status='fail';
+ const paid={key:legacy.key,profile_hash:legacy.profile_hash,packet_hash:legacy.packet_hash,status:'completed',provider_called:true,output,usage:{input_tokens:100,output_tokens:200}};
+ const before=structuredClone(paid);
+ f.files.set(bridgePath('00_INBOX',id+'.input.json'),JSON.stringify(f.job.input));
+ await f.transport.move(bridgePath('00_INBOX',id+'.input.json'),bridgePath('10_CLAIMED',id+'.input.json'));
+ f.observations.set('api-claim:'+id+'.input.json',{state:'claimed',key:legacy.key});
+ f.api.get=async key=>key===legacy.key?paid:null;
+ assert.equal((await f.processor.process(f.job,await apiProcessorPreflight(f.transport,f.api,now))).status,'output_delivered');
+ assert.equal(f.calls.length,0);assert.deepEqual(paid,before);
+ const receipt=JSON.parse(f.files.get(bridgePath('95_LOGS','processor-api-'+legacy.key+'.json')));
+ assert.equal(receipt.key,legacy.key);assert.equal(receipt.usage.output_tokens,200);
+ assert.equal(JSON.parse(f.files.get(bridgePath('20_OUTPUT_READY',id+'.output.json'))).review.status,'blocked');
 });

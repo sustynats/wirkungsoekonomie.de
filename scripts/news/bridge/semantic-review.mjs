@@ -1,3 +1,4 @@
+import { IMPACT_SCOPE_SCHEMA, IMPACT_SCOPE_REVISION, isModelledPublicationIssue } from '../impact-scope.mjs';
 import {needsMediaReview,reviewedMediaRecord} from './media-review.mjs';
 import { MEDIA_REVIEW_SCHEMA } from './media-review-schema.mjs';
 import { isHistoricalJob, compareProcessorJobs } from './processor.mjs';
@@ -15,7 +16,7 @@ const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
 // correction workflow; explicit editorial holds and failed checks stay held.
 function assertCompleteReadyReview(review, gate) {
   if (review?.status === 'ready' && structuredSemanticChecks(review)
-    && SEMANTIC_CHECKS.every(key => review.checks[key].status === 'pass') && gate.issues.length) {
+    && SEMANTIC_CHECKS.every(key => review.checks[key].status === 'pass') && gate.issues.some(issue=>!isModelledPublicationIssue(issue))) {
     throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: gate.issues });
   }
 }
@@ -29,6 +30,7 @@ export const semanticOutputSchema = {
     schema_version: { const: '1.0' }, job_id: { type: 'string', pattern: '^wt_\\d{8}T\\d{6}Z_[a-f0-9]{24}$' },
     input_hash: { type: 'string', pattern: '^[a-f0-9]{64}$' }, processed_at: { type: 'string', format: 'date-time' },
     review: { type: 'object', additionalProperties: false, required: ['status', 'checks', 'findings'], properties: {
+      scope: IMPACT_SCOPE_SCHEMA,
       status: { enum: ['ready', 'needs_review', 'blocked'] }, checks: { type: 'object', additionalProperties: false,
         required: SEMANTIC_CHECKS, properties: Object.fromEntries(SEMANTIC_CHECKS.map(key => [key, {
           type: 'object', additionalProperties: false, required: ['status','rationale'], properties: {
@@ -58,7 +60,7 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
     && receipt.assessment.semantics_revision === POTENTIAL_REVISION && structuredSemanticChecks(receipt.review)) {
     let mediaIssue=null;
     try { record = reviewedMediaRecord(record, receipt); } catch(error) { mediaIssue=error.message; }
-    const gate = derivePublicationStatus(receipt.assessment, record, { review: receipt.review, secondPassComplete: true });
+    const gate = derivePublicationStatus(receipt.assessment, record, { review: receipt.review, secondPassComplete: true, requireScope:receipt.scope_review_version === IMPACT_SCOPE_REVISION, requireModelledDimensions:true, isModelledPublicationIssue });
     if(mediaIssue){gate.issues.push(mediaIssue);gate.status='needs_review';}
     job.publication_gate = gate; await bridge.store.put(job);
     assertCompleteReadyReview(receipt.review, gate);
@@ -90,7 +92,7 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
     const input = {
       schema_version: '1.0', job_id: id, job_type: SEMANTIC_JOB_TYPE, input_hash: inputHash, created_at: now, test_only: job.input.test_only,
       processing_mode: 'dropbox_chatgpt_bridge', contract_path: bridgePath('98_CONFIG', IMPACT_CONTRACT_FILE),
-      impact_version: IMPACT_VERSION, semantics_revision: POTENTIAL_REVISION,
+      impact_version: IMPACT_VERSION, semantics_revision: POTENTIAL_REVISION, scope_review_version:IMPACT_SCOPE_REVISION,
       parent_job_id: job.input.job_id, parent_output_hash: outputHash,
       backfill: isHistoricalJob(job), manual_request: Boolean(job.intake_news_parent||job.candidate?.manual_request||job.input.discovery?.importance_signals?.includes('manual_editorial_request')),
       urgent: Boolean(job.input.urgent||job.input.request?.urgent||job.candidate?.urgent||job.input.discovery?.importance_signals?.includes('urgent_manual_editorial_request')),
@@ -148,13 +150,13 @@ export async function importSemanticReviews(bridge, now) {
       const parent = await bridge.store.get(job.input.parent_job_id);
       if (!parent || parent.ack || parent.accepted || terminal.has(parent.status)) continue;
       let validated;
-      try { validated = await reviewPreflight(bridge, output, job.candidate, now); }
+      try { validated = await reviewPreflight(bridge, output, job.candidate, now, {requireScope:job.input.scope_review_version === IMPACT_SCOPE_REVISION}); }
       catch (error) {
         if(error.retryable)throw Object.assign(Error('BRIDGE_RESEARCH_UNAVAILABLE'),{retryable:true,retry_after_seconds:error.retry_after_seconds,issues:[error.message]});
         throw error;
       }
       const {research,reviewRecord,gate} = validated;
-      parent.semantic_review = { review_job_id: job.input.job_id, output_hash: job.input.parent_output_hash, reviewed_at: now,
+      parent.semantic_review = { ...(job.input.scope_review_version ? {scope_review_version:job.input.scope_review_version} : {}), review_job_id: job.input.job_id, output_hash: job.input.parent_output_hash, reviewed_at: now,
         assessment: output.impact_assessment, review: output.review, ...(output.media_applicability ? {media_applicability:output.media_applicability} : {}), research_sources: research, verified_context_sources: reviewRecord.impact_sources, gate };
       parent.publication_gate = gate;
       await bridge.store.put(parent);

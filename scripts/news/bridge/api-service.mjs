@@ -49,12 +49,15 @@ function rejectedBeforeExecution(record) {
 }
 export function apiRequestKey(input) {
   const { protocol, job_id, input_hash, packet_hash, kind, attempt, profile_hash, instructions, prompt } = input;
-  return sha({ protocol, job_id, input_hash, packet_hash, kind, attempt, profile_hash, instructions, prompt });
+  // Omission preserves every historical request key and its recoverable output.
+  return sha({ protocol, job_id, input_hash, packet_hash, kind, attempt, profile_hash, instructions, prompt,
+    ...(input.parent_job_id !== undefined ? {parent_job_id:input.parent_job_id} : {}) });
 }
 export function validateApiRequest(input) {
   if (!input || input.protocol !== API_EDITORIAL_PROTOCOL || !ID.test(input.job_id)
     || ![input.input_hash, input.packet_hash, input.profile_hash].every(v => digest.test(v || ''))
     || !kinds.includes(input.kind) || !Number.isInteger(input.attempt) || input.attempt < 0 || input.attempt > 2
+    || input.parent_job_id !== undefined && (input.kind !== 'review' || !ID.test(input.parent_job_id) || input.parent_job_id === input.job_id)
     || typeof input.instructions !== 'string' || !input.instructions.trim()
     || typeof input.prompt !== 'string' || !input.prompt.trim()
     || Buffer.byteLength(input.instructions + input.prompt) > 300000
@@ -68,7 +71,7 @@ export function validateApiRequest(input) {
 export class EditorialApiService {
   // Exposed only by the authenticated worker health endpoint. A new worker
   // must not assume that a still-running older service enforces this policy.
-  executionPolicy = Object.freeze({ max_paid_attempts_per_job: 1, automatic_rewrites: false, input_readiness_version: NEWS_INPUT_READINESS_VERSION });
+  executionPolicy = Object.freeze({ max_paid_attempts_per_job: 1, max_paid_reviews_per_parent: 1, automatic_rewrites: false, input_readiness_version: NEWS_INPUT_READINESS_VERSION });
   constructor({ directory, apiKey, withBudget, ProviderError, fetchImpl = fetch, now = () => new Date().toISOString() }) {
     if (!path.isAbsolute(directory || '') || !apiKey || typeof withBudget !== 'function' || !ProviderError) throw Error('API_EDITORIAL_CONFIGURATION_REQUIRED');
     Object.assign(this, { directory, apiKey, withBudget, ProviderError, fetch: fetchImpl, now });
@@ -116,6 +119,7 @@ export class EditorialApiService {
     if (this.active.size) return { status: 'busy', provider_called: false };
     const record = { protocol: API_EDITORIAL_PROTOCOL, key: input.key, job_id: input.job_id,
       input_hash: input.input_hash, packet_hash: input.packet_hash, profile_hash: input.profile_hash,
+      ...(input.parent_job_id ? {parent_job_id:input.parent_job_id} : {}),
       kind: input.kind, attempt: input.attempt, status: 'started', created_at: this.now(), provider_called: false };
     this.active.add(input.key);
     try {
@@ -125,14 +129,43 @@ export class EditorialApiService {
       // Unknown outcomes block new keys too, so changing a prompt cannot silently
       // repeat a potentially billed request after a crash or lost response.
       let called = 0;
+      const paidReviews = [], paidParentDrafts = [];
       for (const file of await readdir(this.directory)) {
         if (!/^[a-f0-9]{64}\.json$/.test(file)) continue;
         const old = await this.get(file.slice(0, -5));
-        if (old.job_id !== input.job_id || !old.provider_called || old.pre_execution_rejected) continue;
+        if (!old.provider_called || old.pre_execution_rejected) continue;
+        if (old.kind === 'review') paidReviews.push({key:old.key,job_id:old.job_id,input_hash:old.input_hash,parent_job_id:old.parent_job_id,status:old.status});
+        if (old.job_id === input.parent_job_id) paidParentDrafts.push({status:old.status});
+        if (old.job_id !== input.job_id) continue;
         if (old.status === 'unknown' || old.status === 'started') return { status: 'unknown', error: 'API_EDITORIAL_JOB_INTERRUPTED', provider_called: false };
         called++;
       }
       if (called >= 1 || input.attempt > 0) return { status: 'automatic_rewrite_disabled', provider_called: false };
+      if (input.kind === 'review') {
+        if (!input.parent_job_id) return {status:'preparation_failed',error:'API_EDITORIAL_REVIEW_PARENT_REQUIRED',provider_called:false};
+        if (paidParentDrafts.some(old=>['unknown','started'].includes(old.status))) return {status:'unknown',error:'API_EDITORIAL_PARENT_DRAFT_INTERRUPTED',provider_called:false};
+        if (paidParentDrafts.length > 1) return {status:'automatic_rewrite_disabled',error:'API_EDITORIAL_PARENT_CALL_LIMIT',provider_called:false};
+        // Content-addressed semantic child IDs can change. They still share
+        // the one independent-review slot of their immutable parent article.
+        // Historical journals have no parent field: resolve only via an exact
+        // job/input binding exported from the durable bridge, never ID guesses.
+        let legacy;
+        for (const old of paidReviews) {
+          let parent = old.parent_job_id;
+          if (!parent) {
+            if (!legacy) {
+              try { legacy = JSON.parse(await readFile(path.join(this.directory,'review-lineage.json'),'utf8')); }
+              catch (error) { if (error.code !== 'ENOENT') throw error; legacy = {}; }
+            }
+            const binding = legacy.version === 1 && legacy.bindings?.[old.key];
+            if (binding?.job_id === old.job_id && binding.input_hash === old.input_hash) parent = binding.parent_job_id;
+          }
+          if (!ID.test(parent || '') || parent === old.job_id) return {status:'preparation_failed',error:'API_EDITORIAL_LEGACY_REVIEW_LINEAGE_REQUIRED',provider_called:false};
+          if (parent !== input.parent_job_id) continue;
+          return {status: ['unknown','started'].includes(old.status) ? 'unknown' : 'automatic_rewrite_disabled',
+            error: ['unknown','started'].includes(old.status) ? 'API_EDITORIAL_PARENT_REVIEW_INTERRUPTED' : 'API_EDITORIAL_PARENT_REVIEW_ALREADY_CALLED',provider_called:false};
+        }
+      }
       // Paid responses remain reusable above. Check new work before reserving
       // budget, journaling a paid attempt, or contacting the model provider.
       if (input.kind === 'news') {

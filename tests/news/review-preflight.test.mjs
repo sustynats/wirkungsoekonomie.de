@@ -44,6 +44,16 @@ test('valid structure never substitutes for a verified research source',async()=
  await assert.rejects(reviewPreflight(f.bridge,f.output,f.record,now,{fetchDocument:async()=>({body:'Unrelated original text.'})}),/BRIDGE_PUBLICATION_GATE_FAILED/);
  assert.equal(f.cache.size,0);
 });
+test('an oversized supplementary document names the blocked source and preserves paid content',async()=>{
+ const f=fixture();f.output.research_sources=[research];
+ const original=structuredClone(f.output);
+ await assert.rejects(reviewPreflight(f.bridge,f.output,f.record,now,{fetchDocument:async()=>{throw Error('FEED_TOO_LARGE');}}),e=>{
+  assert.equal(e.message,'BRIDGE_PUBLICATION_GATE_FAILED');
+  assert.ok(e.issues.includes('FEED_TOO_LARGE:research-preflight-test'));
+  return true;
+ });
+ assert.deepEqual(f.output,original);assert.equal(f.cache.size,0);
+});
 test('temporary source outages preserve retry classification instead of asking for a new article',async()=>{
  const f=fixture();f.output.research_sources=[research];
  const unavailable=Object.assign(Error('SOURCE_TEMPORARILY_UNAVAILABLE'),{retryable:true,retry_after_seconds:120});
