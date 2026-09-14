@@ -4,6 +4,7 @@ import { courtCaseRelation } from "./court-case-identity.mjs";
 import { structuredEventIdentity } from './event-identity.mjs';
 import { projectionCache } from './projection-cache.mjs';
 const subjects = projectionCache(), names = projectionCache(), visits = projectionCache();
+const documents = projectionCache(4096);
 const DAY = 86400000;
 const time = (value) => Date.parse(value || "") || 0;
 const normal = (value) => String(value || "").normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
@@ -55,6 +56,16 @@ export function sameDiplomaticVisit(a, b) {
 }
 
 export function documentKey(value) {
+  // Cache only the complete URL string, never the mutable source record.
+  // A changed URL, query or publisher article ID is always re-evaluated.
+  try {
+    const url = String(value);
+    return documents(url, () => uncachedDocumentKey(url));
+  }
+  catch { return ""; }
+}
+
+function uncachedDocumentKey(value) {
   try {
     const url = new URL(value);
     if (!/^https?:$/.test(url.protocol)) return "";

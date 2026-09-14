@@ -1,10 +1,14 @@
 // Routing evidence, not a legal or factual verification. Retain the court
 // prefix and procedure suffix: a bare number/year is not a case identity.
+import { projectionCache } from './projection-cache.mjs';
+const citationLists = projectionCache(2048);
 function citations(item = {}) {
   const text = `${item.title || ''} ${item.summary || ''}`;
-  const matches = text.matchAll(/\b([CTF])\s*[-\u2010-\u2015\u2212]\s*(\d{1,4})\s*\/\s*(\d{2})\b(?:\s+(P(?:\(R\))?|R|RX(?:-II)?)\b)?/g);
-  return [...new Set([...matches].map(([, court, number, year, suffix]) =>
-    `${court}-${number}/${year}${suffix ? ` ${suffix}` : ''}`))];
+  return citationLists(text, () => {
+    const matches = text.matchAll(/\b([CTF])\s*[-\u2010-\u2015\u2212]\s*(\d{1,4})\s*\/\s*(\d{2})\b(?:\s+(P(?:\(R\))?|R|RX(?:-II)?)\b)?/g);
+    return [...new Set([...matches].map(([, court, number, year, suffix]) =>
+      `${court}-${number}/${year}${suffix ? ` ${suffix}` : ''}`))];
+  });
 }
 
 function urlContainsCitation(item, reference) {
