@@ -2,8 +2,669 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-14T18:54:17.092Z",
+  "updated_at": "2026-09-14T19:12:11.534Z",
   "stories": [
+    {
+      "story_id": "wt-8d118596e0a5b188",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8d118596e0a5b188-186334346262c2d6-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8d118596e0a5b188-01f0addef4b7791c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-8d118596e0a5b188-d34fe3583297364d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "start-up-schmieden-diese-unis-haben-die-meisten-grunder-hervorgebracht-a5b188",
+      "title": "Laut einer Studie werden einige Hochschulen zu Start-up-Schmieden",
+      "source_summary": "manager magazin berichtet über eine Studie zu Hochschulen in Deutschland, der Schweiz und Österreich. Dem Bericht zufolge sind ein paar Dutzend Hochschulen in Deutschland und der Schweiz zu regelrechten Start-up-Schmieden geworden.\n\nFür den Zeitraum von 2014 bis 2024 nennt der Bericht Hunderttausende geschaffene Jobs. Für Österreich wird im selben Auszug kaum Vergleichbares beschrieben. Die Originalstudie, ihre Methodik und die genaue Aufschlüsselung der Hochschulen und Arbeitsplätze liegen in den gelieferten Belegen nicht vor.",
+      "summary": "Ein Bericht von manager magazin verweist auf eine Studie, nach der einige Hochschulen in Deutschland und der Schweiz viele Start-ups hervorgebracht und von 2014 bis 2024 Hunderttausende Jobs geschaffen haben. Die Originalstudie und ihre Methode sind noch zu prüfen.",
+      "detail_summary": "Der Bericht beschreibt einige Hochschulen in Deutschland und der Schweiz als wichtige Orte für die Entstehung von Start-ups. Er beruft sich dabei auf eine Studie, die für die Jahre 2014 bis 2024 Hunderttausende geschaffene Jobs nennt. Für Österreich sieht der Bericht kaum Vergleichbares. Das ist als Hinweis auf mögliche Unterschiede im Gründungsumfeld relevant, belegt aber noch nicht, welche Hochschulen genau gemeint sind oder wie die Arbeitsplätze gezählt wurden. Ohne die Originalstudie bleibt auch offen, welchen Anteil die Hochschulen selbst an dieser Entwicklung hatten.",
+      "why_relevant": "Die Meldung verweist auf mögliche Unterschiede zwischen Hochschulstandorten und Ländern bei Gründungen und Beschäftigung. Ihre zentrale Zahl ist im gelieferten Material jedoch nur sekundär belegt.",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_post",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Manager magazin berichtet am 14. September 2026 über eine Studie zu Hochschulen als Start-up-Schmieden und zu geschaffenen Arbeitsplätzen im Zeitraum 2014 bis 2024.",
+        "evaluation_target": {
+          "label": "Bedingter Wirkpfad von Hochschul-Gründungsförderung zu Start-up-Gründungen und Beschäftigung",
+          "type": "development"
+        },
+        "baseline": "Vergleich mit Hochschulen ohne vergleichbare Gründungsförderung sowie eine belastbare Gegenfaktualität sind nicht bestimmt. Die konkrete Auswahl der Hochschulen, die Studienmethodik und die Zählweise der Arbeitsplätze bleiben offen.",
+        "temporal_status": "ex_post",
+        "systemic_relevance": "medium",
+        "counterfactual": "Nicht bestimmbar. Es ist offen, welcher Anteil der berichteten Gründungen und Arbeitsplätze ohne die jeweiligen Hochschulbedingungen, Netzwerke und Förderangebote entstanden wäre.",
+        "reference_frame": [
+          "Beschäftigung und regionale Teilhabe",
+          "Hochschul- und Innovationspolitik",
+          "Wissenschafts- und Technologietransfer",
+          "SDG 8 und SDG 9 als thematische Referenzen, nicht als Wirkungsnachweis"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein konkreter bedingter Mechanismus ist fachlich plausibel und durch eine peer-reviewte Studie zur Hochschul-Gründungsförderung gestützt: Wissen, Netzwerke und Förderangebote können Gründungsaktivitäten erleichtern. Für die im Bericht behauptete Zahl von Arbeitsplätzen fehlen jedoch Originalstudie, Vergleichsgruppe und Kausalitätsprüfung. Betroffen wären vor allem Studierende, Forschende, Gründungsteams und regionale Arbeitsmärkte; Verteilung und tatsächliche Größenordnung bleiben offen.",
+            "planet": "Die Recherche fand keinen belastbaren Beleg dafür, dass die beschriebenen Hochschulgründungen bestimmte Emissionen, Ressourcenverbräuche oder ökologische Entlastungen verursacht haben. Ein planetarer Pfad kann aus dem Thema Start-ups und Hochschulen nicht automatisch abgeleitet werden; ökologische Wirkungen hängen vom jeweiligen Geschäftsmodell ab.",
+            "democracy": "Die Quellen belegen keinen konkreten Macht-, Zugangs- oder Korrektureffekt. Hochschulische Förderstrukturen könnten Zugang zu Netzwerken und Kapital ungleich verteilen, aber für diesen Bericht fehlen Angaben zu Auswahlregeln, Finanzierung, Beteiligung und institutioneller Rechenschaft."
+          },
+          "central_dimensions": [
+            "human"
+          ],
+          "first_order": "Unter bestimmten Bedingungen können Hochschulen über Wissen, Kontakte, Beratung und Förderangebote die Gründung von Start-ups erleichtern. Dieser Mechanismus ist für Hochschul-Gründungsförderung belegt, aber nicht als Erklärung der konkreten Jobzahl des Berichts nachgewiesen.",
+          "second_order": "Wenn daraus zusätzliche Unternehmen entstehen und überleben, können regionale Beschäftigung, Wissenstransfer und Zugang zu beruflichen Chancen beeinflusst werden. Umfang, Dauer und Verteilung sind für die genannten Hochschulen nicht bestimmt.",
+          "third_order": "Eine dauerhafte Konzentration von Gründungsressourcen könnte Unterschiede zwischen Regionen oder Hochschulen verstärken. Für diesen Pfad fehlen konkrete Daten zu Auswahl, regionaler Verteilung, Überlebensraten und Verdrängungseffekten.",
+          "enablement": [
+            "Hochschulische Gründungsförderung kann Kontakte, Wissen und Unterstützungsangebote bündeln.",
+            "Politische Programme wie Startup Factories zeigen, dass dieser Mechanismus institutionell angestrebt wird."
+          ],
+          "counter_evidence": [
+            "Die peer-reviewte Schweizer Studie beschreibt die Gründungsförderung an den meisten untersuchten Fachhochschulen noch als anfänglich.",
+            "Die Originalstudie des Berichts ist nicht vorgelegt.",
+            "Die behauptete Jobzahl ist nicht unabhängig bestätigt.",
+            "Es fehlen Definition, Zählweise, Vergleichsgruppe und Kausalitätsprüfung der Arbeitsplätze.",
+            "Der Österreich-Vergleich bleibt ohne Kennzahlen und Methodik offen."
+          ],
+          "source_independence": "Die neue Mechanismusquelle ist eine peer-reviewte Hochschulstudie aus der Schweiz; die Referenzquelle ist ein amtlicher deutscher Fortschrittsbericht. Beide stützen allgemeine institutionelle Mechanismen oder politische Zielsetzungen, nicht die konkrete Jobzahl des Berichts.",
+          "institutional_status": "Gegenstand ist ein journalistisch berichtetes Studienergebnis, kein Gesetz, Beschluss oder ein einzelnes Hochschulprogramm. Unabhängig davon dokumentiert der amtliche Fortschrittsbericht einen politischen Förderansatz für Start-up-Schmieden an deutschen Hochschulen; daraus folgt kein Folgenbeweis."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Bedingter Hochschul-Gründungs- und Beschäftigungspfad",
+                "mechanism": "Hochschulen bündeln Wissen, Forschungskontakte, Qualifikationen und Gründungsförderung. Unter Bedingungen können diese Funktionen die Gründung und Weiterentwicklung von Start-ups erleichtern. Ob dies bei den im Bericht genannten Hochschulen tatsächlich die behaupteten Arbeitsplätze verursacht hat, ist nicht belegt.",
+                "recipients": [
+                  "Studierende",
+                  "Forschende",
+                  "Gründungsteams",
+                  "Beschäftigte neu entstehender Unternehmen",
+                  "regionale Arbeitsmärkte"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "research-fhnw-startup-conditions-2019",
+                  "research-bmwk-startup-strategy-progress-2023"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die genannten Hochschulen tatsächlich wirksame Gründungsangebote, relevante Forschung oder Netzwerke bereitstellen und dass daraus tragfähige Unternehmen entstehen. Die behaupteten Beschäftigungszahlen und ihre Kausalität müssten durch die Originalstudie belegt werden.",
+                "reference_space": "Hochschulen und ihre regionalen Arbeitsmarkt- und Gründungsökosysteme in Deutschland; ein allgemeiner Mechanismus ist zusätzlich für Schweizer Fachhochschulen untersucht.",
+                "time_horizon": "mittel- bis längerfristig; mögliche Beschäftigungseffekte würden erst nach Gründung und Unternehmensentwicklung sichtbar.",
+                "path_quality": [
+                  "direct",
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die fachlich untersuchte Funktion von Hochschul-Gründungsförderung ist auf die im Bericht genannten Hochschulen grundsätzlich übertragbar. Das ist eine begrenzte Modellannahme und kein Nachweis der konkreten Jobzahl.",
+                "source_support": "Die peer-reviewte Studie stützt den Mechanismus von Hochschul-Gründungsförderung; der amtliche Bericht belegt den institutionellen Förderansatz. Keine der Quellen belegt die konkrete Beschäftigungszahl oder deren Kausalität.",
+                "limitations": "Keine Originalstudie des Berichts, keine belastbare Vergleichsgruppe, keine Definition der Jobs, keine Überlebens- oder Verdrängungsdaten und keine unabhängige Prüfung des Österreich-Vergleichs.",
+                "first_order": "Möglicherweise erleichterter Zugang zu Wissen, Netzwerken und Gründungsunterstützung.",
+                "second_order": "Unter Bedingungen zusätzliche Unternehmensgründungen und Beschäftigung in den betroffenen regionalen Ökosystemen.",
+                "third_order": "Mögliche Verstärkung regionaler oder institutioneller Unterschiede durch Konzentration von Gründungsressourcen; für diesen Fall nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Zustandsveränderung reicht von begrenzten Effekten für einzelne regionale Gründungsökosysteme bis zu sektorweit relevanten Beschäftigungs- und Wissenstransfereffekten. Eine höhere oder präzisere Tragweite ist wegen der fehlenden Originalmethodik nicht begründbar."
+                },
+                "negligibility_rationale": "Nicht vernachlässigbar, weil Hochschulische Gründungsförderung bei erfolgreicher Unternehmensbildung mehrere Empfänger und regionale Arbeitsmärkte erreichen kann. Die konkrete Größe bleibt unsicher.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der Pfad wurde nach gezielter Mechanismus- und Kontextrecherche erneut geprüft. Die FHNW-Studie stützt den Mechanismus, begrenzt ihn aber durch den Befund einer noch anfänglichen Förderung an den meisten untersuchten Fachhochschulen. Der BMWK-Bericht belegt einen politischen Förderansatz. Die konkrete Jobzahl und ihre Kausalität bleiben wegen der nicht auffindbaren Originalstudie modellierungsseitig offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Bei erfolgreichen Hochschulgründungen können regionale oder sektorale Ökosysteme sowie mehrere Gruppen von Studierenden, Forschenden und Beschäftigten betroffen sein; ein bundesweiter oder globaler Wirkungsraum ist nicht belegt.",
+                    "source_ids": [
+                      "research-fhnw-startup-conditions-2019"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der Mechanismus kann Zugänge zu Gründung und Beschäftigung verbessern, belegt aber keine schweren oder existenziellen Veränderungen für die Empfänger.",
+                    "source_ids": [
+                      "research-fhnw-startup-conditions-2019"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Erfolgreiche Unternehmensgründungen und Beschäftigung können mittel- bis längerfristig wirken; die Dauer der behaupteten Arbeitsplätze ist im Bericht nicht methodisch ausgewiesen.",
+                    "source_ids": [
+                      "manager-magazin-news",
+                      "research-fhnw-startup-conditions-2019"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Gründungs- und Beschäftigungseffekte können sich verfestigen, sind aber grundsätzlich mit Unternehmensentwicklung, Finanzierung und Marktbedingungen veränderbar.",
+                    "source_ids": [
+                      "research-fhnw-startup-conditions-2019"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Zugang zu Gründungsressourcen kann ungleich verteilt sein und einzelne Gruppen ausschließen; eine konkrete extreme Lastkonzentration oder Schutzgrenzverletzung ist nicht belegt.",
+                    "source_ids": [
+                      "research-fhnw-startup-conditions-2019",
+                      "research-bmwk-startup-strategy-progress-2023"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad reicht über die unmittelbare Hochschulfunktion hinaus zu Unternehmensgründungen, regionalen Arbeitsmärkten und Wissenstransfer. Eine starke strukturelle oder institutionelle Systemveränderung ist jedoch nicht belegt.",
+                    "source_ids": [
+                      "research-fhnw-startup-conditions-2019",
+                      "research-bmwk-startup-strategy-progress-2023"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die geprüften Quellen belegen keine schwere Schutzgrenzverletzung. Ungleicher Zugang zu Gründungsressourcen bleibt als Prüfpunkt offen, begrenzt den Pfad aber nicht auf einen Mindestwert.",
+                  "reference_frame": "Gleichberechtigter Zugang zu Hochschul- und Gründungsressourcen; kein konkreter Rechtsverstoß festgestellt.",
+                  "source_ids": [
+                    "research-fhnw-startup-conditions-2019",
+                    "research-bmwk-startup-strategy-progress-2023"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude": 3,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 15,
+                  "divisor": 6,
+                  "raw": 2.5,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Für die menschliche Dimension ist ein begrenzter, bedingter Wirkpfad fachlich begründbar. Er bewertet das Potenzial des Mechanismus und nicht die unbestätigte Jobzahl als eingetretene Wirkung.",
+            "balance": {
+              "rationale": "Es liegt kein belastbarer materieller Gegenpfad desselben Gegenstands vor. Mögliche regionale Konzentrations- oder Zugangseffekte sind nicht ausreichend belegt und werden nicht künstlich als Gegenwirkung verrechnet.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 3,
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Bedingter Hochschul-Gründungs- und Beschäftigungspfad",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Bedingter Hochschul-Gründungs- und Beschäftigungspfad",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "insufficient_basis",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "temporal_status": "ex_ante",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "balance": null,
+            "rationale": "Auch nach gezielter Recherche fehlt eine konkrete Modellierungsgrundlage für eine planetare Zustandsveränderung. Die ökologischen Folgen hängen vom jeweiligen Start-up, Produkt, Geschäftsmodell und Ressourcenverbrauch ab; aus Hochschulgründungen als Kategorie lässt sich keine Richtung ableiten.",
+            "research_pass": "second_pass",
+            "research_result": "Der geprüfte Mechanismusbeleg betrifft Hochschul-Gründungsförderung und Start-up-Aktivitäten, nicht Emissionen, Ressourcenverbrauch oder ökologische Entlastung. Der amtliche Kontextbeleg beschreibt politische Start-up-Förderung, enthält aber keine Umweltfolgen. Damit bleibt die konkrete planetare Modellierungsgrenze bestehen.",
+            "reviewed_source_ids": [
+              "research-fhnw-startup-conditions-2019",
+              "research-bmwk-startup-strategy-progress-2023"
+            ],
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": null,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Auch nach gezielter Recherche fehlt eine konkrete Modellierungsgrundlage für eine planetare Zustandsveränderung. Die ökologischen Folgen hängen vom jeweiligen Start-up, Produkt, Geschäftsmodell und Ressourcenverbrauch ab; aus Hochschulgründungen als Kategorie lässt sich keine Richtung ableiten.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Auch nach gezielter Recherche fehlt eine konkrete Modellierungsgrundlage für eine planetare Zustandsveränderung. Die ökologischen Folgen hängen vom jeweiligen Start-up, Produkt, Geschäftsmodell und Ressourcenverbrauch ab; aus Hochschulgründungen als Kategorie lässt sich keine Richtung ableiten.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "Tragweite offen",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Derzeit nicht ausreichend bewertbar",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "insufficient_basis",
+            "direction": "open",
+            "magnitude": null,
+            "evidence": "not_assessable",
+            "data_status": "missing",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "temporal_status": "ex_ante",
+            "primary_paths": [],
+            "secondary_paths": [],
+            "balance": null,
+            "rationale": "Auch nach gezielter Recherche fehlen konkrete Angaben zu Auswahlregeln, Machtverteilung, Finanzierung, institutioneller Rechenschaft oder demokratischer Korrekturfähigkeit. Eine demokratische Zustandsveränderung ist für den konkreten Bericht deshalb nicht ausreichend modellierbar.",
+            "research_pass": "second_pass",
+            "research_result": "Die geprüfte peer-reviewte Studie beschreibt organisatorische und strategische Voraussetzungen der Gründungsförderung, belegt aber keine demokratischen Folgen. Der amtliche Bericht belegt einen politischen Förderansatz, nicht dessen Auswirkungen auf Zugang, Macht oder Korrekturfähigkeit. Das Fehlen dieser konkreten institutionellen Angaben ist die verbleibende Modellierungsgrenze.",
+            "reviewed_source_ids": [
+              "research-fhnw-startup-conditions-2019",
+              "research-bmwk-startup-strategy-progress-2023"
+            ],
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": null,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Auch nach gezielter Recherche fehlen konkrete Angaben zu Auswahlregeln, Machtverteilung, Finanzierung, institutioneller Rechenschaft oder demokratischer Korrekturfähigkeit. Eine demokratische Zustandsveränderung ist für den konkreten Bericht deshalb nicht ausreichend modellierbar.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Auch nach gezielter Recherche fehlen konkrete Angaben zu Auswahlregeln, Machtverteilung, Finanzierung, institutioneller Rechenschaft oder demokratischer Korrekturfähigkeit. Eine demokratische Zustandsveränderung ist für den konkreten Bericht deshalb nicht ausreichend modellierbar.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "Tragweite offen",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Derzeit nicht ausreichend bewertbar",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "manager-magazin-news",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Der gelieferte Bericht schreibt die Aussagen zu Start-up-Schmieden, Arbeitsplätzen und Österreich einer Studie zu."
+          },
+          {
+            "source_id": "research-fhnw-startup-conditions-2019",
+            "functions": [
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Eine peer-reviewte Studie untersucht Bedingungen der Hochschul-Gründungsförderung in der Schweiz und begrenzt die Aussage, indem sie die Förderung an den meisten untersuchten Fachhochschulen als noch anfänglich beschreibt."
+          },
+          {
+            "source_id": "research-bmwk-startup-strategy-progress-2023",
+            "functions": [
+              "reference"
+            ],
+            "supported_claim": "Ein amtlicher Fortschrittsbericht dokumentiert den politischen Ansatz, sichtbare Start-up-Schmieden an deutschen Hochschulen zu schaffen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex post",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/- = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://irf.fhnw.ch/entities/publication/b6b0ada9-96fe-4701-ab4d-6e3d799bccea",
+          "title": "Fachhochschulen als Start Up Schmieden? Voraussetzungen der Gründungsförderung in der Schweiz",
+          "publisher": "FHNW Institutional Repository / Zeitschrift für Hochschulentwicklung",
+          "source_id": "research-fhnw-startup-conditions-2019",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://www.existenzgruendungsportal.de/SharedDocs/Downloads/DE/Publikationen/erster-fortschrittsbericht-start-up-strategie.pdf?__blob=publicationFile",
+          "title": "Erster Fortschrittsbericht zur Umsetzung der Start-up-Strategie der Bundesregierung",
+          "publisher": "Bundesministerium für Wirtschaft und Klimaschutz",
+          "source_id": "research-bmwk-startup-strategy-progress-2023",
+          "source_function": "reference"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Bedingter Hochschul-Gründungs- und Beschäftigungspfad",
+              "mechanism": "Hochschulen bündeln Wissen, Forschungskontakte, Qualifikationen und Gründungsförderung. Unter Bedingungen können diese Funktionen die Gründung und Weiterentwicklung von Start-ups erleichtern. Ob dies bei den im Bericht genannten Hochschulen tatsächlich die behaupteten Arbeitsplätze verursacht hat, ist nicht belegt.",
+              "recipients": [
+                "Studierende",
+                "Forschende",
+                "Gründungsteams",
+                "Beschäftigte neu entstehender Unternehmen",
+                "regionale Arbeitsmärkte"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "research-fhnw-startup-conditions-2019",
+                "research-bmwk-startup-strategy-progress-2023"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die genannten Hochschulen tatsächlich wirksame Gründungsangebote, relevante Forschung oder Netzwerke bereitstellen und dass daraus tragfähige Unternehmen entstehen. Die behaupteten Beschäftigungszahlen und ihre Kausalität müssten durch die Originalstudie belegt werden.",
+              "reference_space": "Hochschulen und ihre regionalen Arbeitsmarkt- und Gründungsökosysteme in Deutschland; ein allgemeiner Mechanismus ist zusätzlich für Schweizer Fachhochschulen untersucht.",
+              "time_horizon": "mittel- bis längerfristig; mögliche Beschäftigungseffekte würden erst nach Gründung und Unternehmensentwicklung sichtbar.",
+              "path_quality": [
+                "direct",
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die fachlich untersuchte Funktion von Hochschul-Gründungsförderung ist auf die im Bericht genannten Hochschulen grundsätzlich übertragbar. Das ist eine begrenzte Modellannahme und kein Nachweis der konkreten Jobzahl.",
+              "source_support": "Die peer-reviewte Studie stützt den Mechanismus von Hochschul-Gründungsförderung; der amtliche Bericht belegt den institutionellen Förderansatz. Keine der Quellen belegt die konkrete Beschäftigungszahl oder deren Kausalität.",
+              "limitations": "Keine Originalstudie des Berichts, keine belastbare Vergleichsgruppe, keine Definition der Jobs, keine Überlebens- oder Verdrängungsdaten und keine unabhängige Prüfung des Österreich-Vergleichs.",
+              "first_order": "Möglicherweise erleichterter Zugang zu Wissen, Netzwerken und Gründungsunterstützung.",
+              "second_order": "Unter Bedingungen zusätzliche Unternehmensgründungen und Beschäftigung in den betroffenen regionalen Ökosystemen.",
+              "third_order": "Mögliche Verstärkung regionaler oder institutioneller Unterschiede durch Konzentration von Gründungsressourcen; für diesen Fall nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Zustandsveränderung reicht von begrenzten Effekten für einzelne regionale Gründungsökosysteme bis zu sektorweit relevanten Beschäftigungs- und Wissenstransfereffekten. Eine höhere oder präzisere Tragweite ist wegen der fehlenden Originalmethodik nicht begründbar."
+              },
+              "negligibility_rationale": "Nicht vernachlässigbar, weil Hochschulische Gründungsförderung bei erfolgreicher Unternehmensbildung mehrere Empfänger und regionale Arbeitsmärkte erreichen kann. Die konkrete Größe bleibt unsicher.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der Pfad wurde nach gezielter Mechanismus- und Kontextrecherche erneut geprüft. Die FHNW-Studie stützt den Mechanismus, begrenzt ihn aber durch den Befund einer noch anfänglichen Förderung an den meisten untersuchten Fachhochschulen. Der BMWK-Bericht belegt einen politischen Förderansatz. Die konkrete Jobzahl und ihre Kausalität bleiben wegen der nicht auffindbaren Originalstudie modellierungsseitig offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Bei erfolgreichen Hochschulgründungen können regionale oder sektorale Ökosysteme sowie mehrere Gruppen von Studierenden, Forschenden und Beschäftigten betroffen sein; ein bundesweiter oder globaler Wirkungsraum ist nicht belegt.",
+                  "source_ids": [
+                    "research-fhnw-startup-conditions-2019"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der Mechanismus kann Zugänge zu Gründung und Beschäftigung verbessern, belegt aber keine schweren oder existenziellen Veränderungen für die Empfänger.",
+                  "source_ids": [
+                    "research-fhnw-startup-conditions-2019"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Erfolgreiche Unternehmensgründungen und Beschäftigung können mittel- bis längerfristig wirken; die Dauer der behaupteten Arbeitsplätze ist im Bericht nicht methodisch ausgewiesen.",
+                  "source_ids": [
+                    "manager-magazin-news",
+                    "research-fhnw-startup-conditions-2019"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Gründungs- und Beschäftigungseffekte können sich verfestigen, sind aber grundsätzlich mit Unternehmensentwicklung, Finanzierung und Marktbedingungen veränderbar.",
+                  "source_ids": [
+                    "research-fhnw-startup-conditions-2019"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Zugang zu Gründungsressourcen kann ungleich verteilt sein und einzelne Gruppen ausschließen; eine konkrete extreme Lastkonzentration oder Schutzgrenzverletzung ist nicht belegt.",
+                  "source_ids": [
+                    "research-fhnw-startup-conditions-2019",
+                    "research-bmwk-startup-strategy-progress-2023"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad reicht über die unmittelbare Hochschulfunktion hinaus zu Unternehmensgründungen, regionalen Arbeitsmärkten und Wissenstransfer. Eine starke strukturelle oder institutionelle Systemveränderung ist jedoch nicht belegt.",
+                  "source_ids": [
+                    "research-fhnw-startup-conditions-2019",
+                    "research-bmwk-startup-strategy-progress-2023"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die geprüften Quellen belegen keine schwere Schutzgrenzverletzung. Ungleicher Zugang zu Gründungsressourcen bleibt als Prüfpunkt offen, begrenzt den Pfad aber nicht auf einen Mindestwert.",
+                "reference_frame": "Gleichberechtigter Zugang zu Hochschul- und Gründungsressourcen; kein konkreter Rechtsverstoß festgestellt.",
+                "source_ids": [
+                  "research-fhnw-startup-conditions-2019",
+                  "research-bmwk-startup-strategy-progress-2023"
+                ],
+                "status": "conditional"
+              },
+              "magnitude": 3,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 15,
+                "divisor": 6,
+                "raw": 2.5,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Für die menschliche Dimension ist ein begrenzter, bedingter Wirkpfad fachlich begründbar. Er bewertet das Potenzial des Mechanismus und nicht die unbestätigte Jobzahl als eingetretene Wirkung.",
+          "balance": {
+            "rationale": "Es liegt kein belastbarer materieller Gegenpfad desselben Gegenstands vor. Mögliche regionale Konzentrations- oder Zugangseffekte sind nicht ausreichend belegt und werden nicht künstlich als Gegenwirkung verrechnet.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 3,
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Bedingter Hochschul-Gründungs- und Beschäftigungspfad",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Bedingter Hochschul-Gründungs- und Beschäftigungspfad",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "insufficient_basis",
+          "direction": "open",
+          "magnitude": null,
+          "evidence": "not_assessable",
+          "data_status": "missing",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "temporal_status": "ex_ante",
+          "primary_paths": [],
+          "secondary_paths": [],
+          "balance": null,
+          "rationale": "Auch nach gezielter Recherche fehlt eine konkrete Modellierungsgrundlage für eine planetare Zustandsveränderung. Die ökologischen Folgen hängen vom jeweiligen Start-up, Produkt, Geschäftsmodell und Ressourcenverbrauch ab; aus Hochschulgründungen als Kategorie lässt sich keine Richtung ableiten.",
+          "research_pass": "second_pass",
+          "research_result": "Der geprüfte Mechanismusbeleg betrifft Hochschul-Gründungsförderung und Start-up-Aktivitäten, nicht Emissionen, Ressourcenverbrauch oder ökologische Entlastung. Der amtliche Kontextbeleg beschreibt politische Start-up-Förderung, enthält aber keine Umweltfolgen. Damit bleibt die konkrete planetare Modellierungsgrenze bestehen.",
+          "reviewed_source_ids": [
+            "research-fhnw-startup-conditions-2019",
+            "research-bmwk-startup-strategy-progress-2023"
+          ],
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Auch nach gezielter Recherche fehlt eine konkrete Modellierungsgrundlage für eine planetare Zustandsveränderung. Die ökologischen Folgen hängen vom jeweiligen Start-up, Produkt, Geschäftsmodell und Ressourcenverbrauch ab; aus Hochschulgründungen als Kategorie lässt sich keine Richtung ableiten.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": null,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Auch nach gezielter Recherche fehlt eine konkrete Modellierungsgrundlage für eine planetare Zustandsveränderung. Die ökologischen Folgen hängen vom jeweiligen Start-up, Produkt, Geschäftsmodell und Ressourcenverbrauch ab; aus Hochschulgründungen als Kategorie lässt sich keine Richtung ableiten.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "Tragweite offen",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Derzeit nicht ausreichend bewertbar",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "insufficient_basis",
+          "direction": "open",
+          "magnitude": null,
+          "evidence": "not_assessable",
+          "data_status": "missing",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "temporal_status": "ex_ante",
+          "primary_paths": [],
+          "secondary_paths": [],
+          "balance": null,
+          "rationale": "Auch nach gezielter Recherche fehlen konkrete Angaben zu Auswahlregeln, Machtverteilung, Finanzierung, institutioneller Rechenschaft oder demokratischer Korrekturfähigkeit. Eine demokratische Zustandsveränderung ist für den konkreten Bericht deshalb nicht ausreichend modellierbar.",
+          "research_pass": "second_pass",
+          "research_result": "Die geprüfte peer-reviewte Studie beschreibt organisatorische und strategische Voraussetzungen der Gründungsförderung, belegt aber keine demokratischen Folgen. Der amtliche Bericht belegt einen politischen Förderansatz, nicht dessen Auswirkungen auf Zugang, Macht oder Korrekturfähigkeit. Das Fehlen dieser konkreten institutionellen Angaben ist die verbleibende Modellierungsgrenze.",
+          "reviewed_source_ids": [
+            "research-fhnw-startup-conditions-2019",
+            "research-bmwk-startup-strategy-progress-2023"
+          ],
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": null,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Auch nach gezielter Recherche fehlen konkrete Angaben zu Auswahlregeln, Machtverteilung, Finanzierung, institutioneller Rechenschaft oder demokratischer Korrekturfähigkeit. Eine demokratische Zustandsveränderung ist für den konkreten Bericht deshalb nicht ausreichend modellierbar.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": null,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Auch nach gezielter Recherche fehlen konkrete Angaben zu Auswahlregeln, Machtverteilung, Finanzierung, institutioneller Rechenschaft oder demokratischer Korrekturfähigkeit. Eine demokratische Zustandsveränderung ist für den konkreten Bericht deshalb nicht ausreichend modellierbar.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "Tragweite offen",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Derzeit nicht ausreichend bewertbar",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T19:12:11.534Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T16:00:00.000Z",
+      "last_updated": "2026-09-14T19:12:11.534Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-e10b42f24096552b4eca",
+      "case_file": null,
+      "source_published_at": "2026-09-14T16:00:00.000Z",
+      "published_at": "2026-09-14T19:12:11.534Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Originalstudie und ihre Methodik sollten geprüft werden, insbesondere Definition, Zählweise und Zuordnung der geschaffenen Arbeitsplätze.",
+          "source_id": "manager-magazin-news",
+          "expected_by": null,
+          "measurable_indicator": "Vorliegen der Originalstudie mit Stichprobe, Methode und Datenquelle",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8b1c3389a0d46ae7",
+          "announced_at": "2026-09-14T16:00:00.000Z",
+          "follow_up_date": "2026-09-21T19:12:11.534Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/hbm/start-up-schmieden-diese-unis-haben-die-meisten-gruender-hervorgebracht-a-6d54fcb3-a9d8-46d3-af46-a578b6a0d1b5",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T16:00:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-7c4c284198ca4d1f",
       "title_image": {
