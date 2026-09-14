@@ -2,8 +2,1765 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-14T07:25:39.539Z",
+  "updated_at": "2026-09-14T08:18:16.381Z",
   "stories": [
+    {
+      "story_id": "wt-35f79ae84a18d479",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-35f79ae84a18d479-1027221a24fb3050-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-35f79ae84a18d479-9c974bacb61e080e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-35f79ae84a18d479-39e933e6ff27c882-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nach-explosionen-in-weimar-fehlt-vom-hausbesitzer-jede-spur-18d479",
+      "title": "Nach Explosionen in Weimar fehlt vom Hausbesitzer jede Spur",
+      "source_summary": "Nach zwei Explosionen und einem Großbrand in Weimar-Lützendorf sucht die Polizei nach einem 61-jährigen Hausbesitzer. Unklar ist, ob er sich unter den Trümmern befindet oder das Grundstück verlassen hat. Die Polizei prüft zwei Brandherde und einen möglichen Zusammenhang mit Gasflaschen.\n\nWohnhaus und ein entfernt stehendes Nebengebäude mit Werkstatt und Stallungen wurden laut MDR bis auf die Grundmauern zerstört. Einsatzkräfte suchten in den Trümmern; die Bundesstraße 7 war bis zum Sonntagnachmittag gesperrt. Ursache, Aufenthaltsort des Mannes und genaue Schadenshöhe sind offen.",
+      "summary": "Nach zwei Explosionen und einem Großbrand in Weimar-Lützendorf sucht die Polizei nach dem 61-jährigen Hausbesitzer. Wohnhaus und Nebengebäude wurden zerstört; Ursache, Aufenthaltsort des Mannes und Schadenshöhe sind noch offen.",
+      "detail_summary": "In Weimar-Lützendorf haben Nachbarn zwei Explosionen gehört, während bereits Flammen und Rauch aufstiegen. Wohnhaus und ein entfernt stehendes Nebengebäude wurden vollständig zerstört. Die Polizei sucht nach dem 61-jährigen Hausbesitzer und prüft zwei Brandherde sowie einen möglichen Zusammenhang mit Gasflaschen. Die Bundesstraße 7 war zeitweise gesperrt. Der Bericht ist eine aktuelle Einzelquelle; Ermittlungsstand und genaue Schadenshöhe bleiben offen.",
+      "why_relevant": "Der Brand betrifft möglicherweise eine vermisste Person, zerstörte Gebäude und eine zeitweise gesperrte Verkehrsverbindung. Die Ursache ist noch Gegenstand der Ermittlungen.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ongoing",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Zwei Explosionen und ein Großbrand in Weimar-Lützendorf mit zerstörten Gebäuden, einer vermissten Person und zeitweiliger Sperrung der Bundesstraße 7.",
+        "evaluation_target": {
+          "label": "Folgen des Brand- und Explosionserereignisses für Menschen, lokale Infrastruktur und Gefahrenabwehr",
+          "type": "event"
+        },
+        "baseline": "Vor dem Ereignis waren Wohn- und Nebengebäude sowie die örtliche Verkehrsverbindung nutzbar; der Aufenthaltsort des Hausbesitzers war nicht ungeklärt.",
+        "temporal_status": "ongoing",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne das Ereignis wären die betroffenen Gebäude voraussichtlich nicht zerstört und die Bundesstraße 7 nicht wegen des Einsatzes gesperrt. Die weitere Entwicklung ohne zusätzliche Schäden ist nicht bekannt.",
+        "reference_frame": [
+          "Schutz von Leben und Gesundheit",
+          "Nutzbarkeit von Wohnraum und lokaler Infrastruktur",
+          "Funktionsfähigkeit örtlicher Gefahrenabwehr"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Quelle belegt zerstörte Wohn- und Nebengebäude, die Suche nach einer vermissten Person und eine zeitweise Verkehrssperrung. Ungeklärt bleiben Gesundheitszustand, weitere Betroffene, Wohnraumverlust und Wiederherstellungsdauer.",
+            "planet": "Brand und Trümmer können lokale Umweltmedien berühren. Die Recherche fand jedoch keinen gelesenen amtlichen Umwelt- oder Messbeleg für konkrete Boden-, Luft- oder Gewässerschäden; der ökologische Pfad bleibt daher eine schwache Modellhypothese.",
+            "democracy": "Der große Einsatz bindet örtliche öffentliche Ressourcen. Eine Beeinträchtigung demokratischer Entscheidungs- oder Kontrollfähigkeit ist nicht belegt; der Pfad bleibt auf eine mögliche, zeitlich begrenzte Ressourcenbindung beschränkt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Explosionen und Feuer zerstören Gebäude, gefährden möglicherweise eine Person und führen zu Such-, Sicherungs- und Löscharbeiten.",
+          "second_order": "Die Zerstörung kann Wohnraum und lokale Nutzungen beeinträchtigen. Einsatz- und Verkehrsmaßnahmen können örtliche Ressourcen und Erreichbarkeit vorübergehend belasten.",
+          "third_order": "Längerfristige Veränderungen der lokalen Resilienz oder institutionelle Folgen sind möglich, aber nicht belegt und werden nicht über das Ereignis hinaus verallgemeinert.",
+          "enablement": [],
+          "counter_evidence": [
+            "Keine Angaben zu Verletzten oder Todesfällen.",
+            "Keine Angaben zu Umweltmessungen, Gewässerverunreinigung oder überregionalen Versorgungsstörungen.",
+            "Die Einsatzkräfte haben Such- und Sicherungsmaßnahmen aufgenommen; eine vollständige Überlastung örtlicher Strukturen ist nicht belegt."
+          ],
+          "source_independence": "Im gelieferten Material liegt eine journalistische MDR-Quelle vor, die Angaben der Polizei wiedergibt. Eine unabhängige zweite Ereignisdarstellung wurde nicht gefunden; die Einzelquelle reicht für eine ausdrücklich vorläufige, zugeschriebene Meldung aus.",
+          "institutional_status": "Laufender Polizeieinsatz und laufende Ermittlungen; ein abschließender behördlicher, gerichtlicher oder ursächlicher Befund ist nicht belegt."
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Wohnhaus und Nebengebäude wurden vollständig zerstört; der Aufenthaltsort des Hausbesitzers ist ungeklärt.",
+            "direction": "negative",
+            "source_ids": [
+              "mdr-nachrichten"
+            ],
+            "data_status": "observed",
+            "evidence": "medium",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und nutzbarem Wohnraum",
+            "reference_space": "Betroffenes Grundstück in Weimar-Lützendorf",
+            "observed_at": "2026-09-14",
+            "temporal_status": "ongoing",
+            "mechanism": "Explosionen und Brand zerstörten die Gebäude; die Suche nach dem Hausbesitzer läuft.",
+            "recipients": [
+              "Hausbesitzer",
+              "Betroffene des Grundstücks",
+              "örtliche Einsatzkräfte"
+            ],
+            "time_horizon": "sofortige und möglicherweise längerfristige Folgen",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Nach der gelesenen Quelle ist unmittelbar ein Grundstück betroffen.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 3,
+                "rationale": "Wohnhaus und Nebengebäude wurden bis auf die Grundmauern zerstört.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 2,
+                "rationale": "Gebäudeverlust und Suchmaßnahmen können über den ursprünglichen Einsatz hinaus fortwirken; die Dauer ist nicht belegt.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 2,
+                "rationale": "Der Gebäudeverlust ist nicht kurzfristig rückgängig zu machen, aber grundsätzlich wiederaufbaubar.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 3,
+                "rationale": "Die ungeklärte Lage einer möglicherweise betroffenen Person und der Verlust von Wohnraum sind deutlich schutzrelevant.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Ein begrenzter lokaler Folgepfad ist belegt; strukturelle Folgen sind nicht belegt.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Eine schwere Schutzgrenzverletzung ist wegen des ungeklärten Aufenthaltsorts und fehlender Angaben zu Verletzungen oder Todesfällen nicht abschließend belegt.",
+              "reference_frame": "Schutz von Leben und Gesundheit",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "status": "not_decisive"
+            },
+            "magnitude": 2,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 12,
+              "divisor": 6,
+              "raw": 2,
+              "rounded": 2,
+              "protection_floor": 0,
+              "final": 2
+            }
+          }
+        ],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ongoing",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Zerstörung von Wohn- und Nebengebäuden sowie mögliche Gefährdung des vermissten Hausbesitzers",
+                "mechanism": "Explosionen und Brand zerstören Gebäude und können Menschen im Gefahrenbereich verletzen oder töten.",
+                "recipients": [
+                  "Hausbesitzer",
+                  "Betroffene des Grundstücks",
+                  "örtliche Einsatzkräfte"
+                ],
+                "evidence": "low",
+                "temporal_status": "ongoing",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Die Folgen beziehen sich auf das betroffene Grundstück und die laufende Suche. Weitere Verletzte, Todesfälle oder Betroffene werden nicht angenommen, solange sie nicht belegt sind.",
+                "reference_space": "Betroffenes Grundstück in Weimar-Lützendorf und unmittelbar eingesetzte lokale Strukturen",
+                "time_horizon": "während des Einsatzes und potenziell längerfristig durch Gebäudeverlust",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die im Bericht beschriebenen Gebäudeschäden und die laufende Suche bilden den Ausgangspunkt; zusätzliche Verletzungen und Todesfälle werden nicht als Tatsache unterstellt.",
+                "source_support": "Die Quelle belegt Explosionen, Gebäudeverlust und die Suche nach dem Hausbesitzer, nicht eine Verletzung oder Todesfolge.",
+                "limitations": "Aufenthaltsort, Gesundheitszustand, weitere Betroffene und Wiederherstellungsdauer sind offen.",
+                "first_order": "Gebäude sind zerstört und eine Person wird gesucht.",
+                "second_order": "Wohnraum und lokale Nutzungen können ausfallen; Umfang und Dauer sind offen.",
+                "third_order": "Längerfristige soziale oder institutionelle Folgen sind möglich, aber nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Ein lokaler Gebäudeverlust ist belegt; eine höhere Tragweite hängt von der ungeklärten Personensituation und weiteren bestätigten Folgen ab."
+                },
+                "negligibility_rationale": "Nicht vernachlässigbar, weil ein Wohnhaus und ein Nebengebäude vollständig zerstört wurden.",
+                "observed_signal": {
+                  "change": "Wohnhaus und Nebengebäude wurden vollständig zerstört.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Ereignisquelle wurde erneut gelesen. Eine zusätzliche belastbare Quelle zu Opferlage oder Langzeitfolgen wurde nicht gefunden; die Unsicherheit bleibt sichtbar.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Unmittelbar betroffen ist nach der Quelle ein Grundstück; weitere Reichweite ist nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Wohnhaus und Nebengebäude wurden vollständig zerstört.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Gebäudeverlust und Suche können länger fortwirken; die konkrete Dauer ist offen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Wiederaufbau ist grundsätzlich möglich, aber nicht kurzfristig.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Die ungeklärte Lage einer Person und möglicher Wohnraumverlust sind deutlich schutzrelevant.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Es gibt einen begrenzten Folgepfad über Wohnraum und lokale Einsatzressourcen; strukturelle Folgen sind nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine bestätigte schwere Schutzgrenzverletzung; die Personensituation ist offen.",
+                  "reference_frame": "Schutz von Leben und Gesundheit",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Vorübergehende Einschränkung der örtlichen Erreichbarkeit durch die Sperrung der Bundesstraße 7",
+                "mechanism": "Eine Einsatzsperrung unterbricht oder verlängert lokale Verkehrswege.",
+                "recipients": [
+                  "Anwohner",
+                  "Verkehrsteilnehmer",
+                  "Einsatzkräfte"
+                ],
+                "evidence": "low",
+                "temporal_status": "ongoing",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_effect",
+                "likelihood": "high",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Die Wirkung besteht nur, solange die Sperrung oder vergleichbare Sicherungsmaßnahmen andauern.",
+                "reference_space": "Bundesstraße 7 und angrenzendes lokales Verkehrsnetz",
+                "time_horizon": "bis zum Ende der Sperrung; genaue Dauer nicht belegt",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die genannte Sperrung beeinträchtigt zumindest einzelne lokale Wege.",
+                "source_support": "Die Quelle belegt die Sperrung bis zum Sonntagnachmittag, nicht konkrete Verzögerungen oder Versorgungsausfälle.",
+                "limitations": "Umfang der Verkehrsfolgen und aktueller Sperrstatus sind offen.",
+                "first_order": "Die Bundesstraße 7 ist zeitweise gesperrt.",
+                "second_order": "Lokale Wege können verlängert und Einsatzabläufe beeinflusst werden.",
+                "third_order": "Keine weitergehende regionale Wirkung belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 1,
+                  "rationale": "Die belegte Sperrung ist zeitlich und räumlich begrenzt."
+                },
+                "negligibility_rationale": "Nicht vollständig vernachlässigbar, weil ein lokaler Verkehrsweg vorübergehend nicht nutzbar war.",
+                "observed_signal": {
+                  "change": "Die Bundesstraße 7 war bis zum Sonntagnachmittag gesperrt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "research_pass": "second_pass",
+                "research_result": "Für den begrenzten Verkehrspfad reicht die Ereignisquelle; Folgen nach Ende der genannten Sperrzeit sind offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen ist ein lokaler Verkehrsweg.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine zeitweise Sperrung begrenzt die Erreichbarkeit, ohne konkrete Ausfälle zu belegen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Quelle nennt eine Sperrung bis zum Sonntagnachmittag.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine zeitweise Sperrung ist nach ihrer Aufhebung unmittelbar reversibel.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders ungleich betroffene Gruppen sind nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt auf einen lokalen Verkehrsweg begrenzt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine schwere Schutzgrenzverletzung durch die zeitweise Sperrung belegt.",
+                  "reference_frame": "Erreichbarkeit und lokale Gefahrenabwehr",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Der negative menschliche Hauptpfad ist durch zerstörte Gebäude und die ungeklärte Personensituation konkret begründet. Die Folgen bleiben lokal und hinsichtlich der Opferlage unvollständig belegt; deshalb bleibt die Tragweite begrenzt und die Evidenz niedrig.",
+            "balance": {
+              "rationale": "Es ist kein materieller positiver Gegenpfad desselben Ereignisses belegt.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "emerging",
+              "ringLabel": "Erste / laufende Wirkung",
+              "magnitudeBars": 2,
+              "directionLabel": "− laufende Wirkung",
+              "shortPathLabel": "Zerstörung von Wohn- und Nebengebäuden sowie mögliche Gefährdung des vermissten Hausbesitzers",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Wohnhaus und Nebengebäude wurden vollständig zerstört; der Aufenthaltsort des Hausbesitzers ist ungeklärt.",
+                "direction": "negative",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "data_status": "observed",
+                "evidence": "medium",
+                "attribution": "open",
+                "reference_frame": "Schutz von Leben und nutzbarem Wohnraum",
+                "reference_space": "Betroffenes Grundstück in Weimar-Lützendorf",
+                "observed_at": "2026-09-14",
+                "temporal_status": "ongoing",
+                "mechanism": "Explosionen und Brand zerstörten die Gebäude; die Suche nach dem Hausbesitzer läuft.",
+                "recipients": [
+                  "Hausbesitzer",
+                  "Betroffene des Grundstücks",
+                  "örtliche Einsatzkräfte"
+                ],
+                "time_horizon": "sofortige und möglicherweise längerfristige Folgen",
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Nach der gelesenen Quelle ist unmittelbar ein Grundstück betroffen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Wohnhaus und Nebengebäude wurden bis auf die Grundmauern zerstört.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Gebäudeverlust und Suchmaßnahmen können über den ursprünglichen Einsatz hinaus fortwirken; die Dauer ist nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Der Gebäudeverlust ist nicht kurzfristig rückgängig zu machen, aber grundsätzlich wiederaufbaubar.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Die ungeklärte Lage einer möglicherweise betroffenen Person und der Verlust von Wohnraum sind deutlich schutzrelevant.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein begrenzter lokaler Folgepfad ist belegt; strukturelle Folgen sind nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere Schutzgrenzverletzung ist wegen des ungeklärten Aufenthaltsorts und fehlender Angaben zu Verletzungen oder Todesfällen nicht abschließend belegt.",
+                  "reference_frame": "Schutz von Leben und Gesundheit",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                },
+                "presentation": {
+                  "ringStatus": "emerging",
+                  "ringLabel": "Erste / laufende Wirkung",
+                  "magnitudeBars": 2,
+                  "directionLabel": "− laufende Wirkung",
+                  "shortPathLabel": "Wohnhaus und Nebengebäude wurden vollständig zerstört; der Aufenthaltsort des Hausbesitzers ist ungeklärt.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Wohnhaus und Nebengebäude wurden vollständig zerstört; der Aufenthaltsort des Hausbesitzers ist ungeklärt.",
+              "direction": "negative",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "data_status": "observed",
+              "evidence": "medium",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und nutzbarem Wohnraum",
+              "reference_space": "Betroffenes Grundstück in Weimar-Lützendorf",
+              "observed_at": "2026-09-14",
+              "temporal_status": "ongoing",
+              "mechanism": "Explosionen und Brand zerstörten die Gebäude; die Suche nach dem Hausbesitzer läuft.",
+              "recipients": [
+                "Hausbesitzer",
+                "Betroffene des Grundstücks",
+                "örtliche Einsatzkräfte"
+              ],
+              "time_horizon": "sofortige und möglicherweise längerfristige Folgen",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Nach der gelesenen Quelle ist unmittelbar ein Grundstück betroffen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Wohnhaus und Nebengebäude wurden bis auf die Grundmauern zerstört.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Gebäudeverlust und Suchmaßnahmen können über den ursprünglichen Einsatz hinaus fortwirken; die Dauer ist nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Der Gebäudeverlust ist nicht kurzfristig rückgängig zu machen, aber grundsätzlich wiederaufbaubar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Die ungeklärte Lage einer möglicherweise betroffenen Person und der Verlust von Wohnraum sind deutlich schutzrelevant.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein begrenzter lokaler Folgepfad ist belegt; strukturelle Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere Schutzgrenzverletzung ist wegen des ungeklärten Aufenthaltsorts und fehlender Angaben zu Verletzungen oder Todesfällen nicht abschließend belegt.",
+                "reference_frame": "Schutz von Leben und Gesundheit",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              },
+              "presentation": {
+                "ringStatus": "emerging",
+                "ringLabel": "Erste / laufende Wirkung",
+                "magnitudeBars": 2,
+                "directionLabel": "− laufende Wirkung",
+                "shortPathLabel": "Wohnhaus und Nebengebäude wurden vollständig zerstört; der Aufenthaltsort des Hausbesitzers ist ungeklärt.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 2,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "Wohnhaus und Nebengebäude wurden vollständig zerstört; der Aufenthaltsort des Hausbesitzers ist ungeklärt.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Laufende Prüfung",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Mögliche lokale Belastung von Boden, Luft oder Materialien durch Brand und Trümmer",
+                "mechanism": "Ein Großbrand und zurückbleibende Trümmer können lokale Umweltmedien belasten; konkrete Belastungen sind nicht gemessen.",
+                "recipients": [
+                  "Natur",
+                  "Anwohner",
+                  "Bergungs- und Einsatzkräfte"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Der Pfad setzt messbare Brand- oder Trümmerbelastungen außerhalb der zerstörten Gebäude voraus.",
+                "reference_space": "Grundstück und unmittelbare Umgebung in Weimar-Lützendorf",
+                "time_horizon": "während der Bergung und möglichen Nachsorge",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Brand- und Trümmerlage kann Umweltmedien berühren; konkrete Stoffe oder Mengen werden nicht angenommen.",
+                "source_support": "Die Quelle belegt Brand und Zerstörung, aber keine Umweltbelastung.",
+                "limitations": "Keine Messwerte und keine Angaben zu Löschwasser, Schadstoffen, Boden, Luft oder Gewässern.",
+                "first_order": "Brand und Trümmer verändern den Zustand des Grundstücks.",
+                "second_order": "Eine lokale Umweltbelastung ist möglich, aber nicht nachgewiesen.",
+                "third_order": "Überregionale ökologische Folgen sind nicht plausibel belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ohne Mess- oder Schadstoffbeleg bleibt die mögliche ökologische Veränderung lokal, gering und unsicher."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht als fehlend bewertet; die Tragweite kann bei fehlender Belastung praktisch vernachlässigbar sein, bleibt aber wegen Brand und Trümmern prüfbedürftig.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Eine gezielte Suche nach einem zugelassenen amtlichen Umwelt- oder Mechanismusbeleg wurde durchgeführt, aber kein tatsächlich gelesener verwertbarer Beleg gefunden. Der Pfad bleibt eine schwache, unbestätigte Modellhypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der denkbare Pfad ist auf Grundstück und unmittelbare Umgebung begrenzt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Intensität ist nicht belegt; Brand und Trümmer begründen nur einen möglichen lokalen Einfluss.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Belastung wäre voraussichtlich zeitlich begrenzt; ihre Dauer ist unbekannt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Lokale Belastungen wären grundsätzlich sanierbar; konkrete Stoffe sind nicht bekannt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besondere ökologische Schutzgüter oder vulnerable Gruppen sind nicht benannt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Keine zweite oder dritte Ordnung ist belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenzverletzung ist belegt.",
+                  "reference_frame": "Lokaler Schutz von Boden, Luft und Gewässern",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Ein ökologischer Pfad muss wegen Brand und Trümmern geprüft werden, ist im gelieferten Material aber nicht beobachtet oder quantifiziert. Die Tragweite bleibt gering; die negative Richtung ist eine schwache, ausdrücklich unbestätigte Modellhypothese.",
+            "balance": {
+              "rationale": "Kein positiver oder materiell gegenläufiger Umweltpfad ist belegt.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche lokale Belastung von Boden, Luft oder Materialien durch Brand und Trümmer",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche lokale Belastung von Boden, Luft oder Materialien durch Brand und Trümmer",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Vorübergehende Bindung öffentlicher Einsatz- und Ermittlungsressourcen ohne belegte institutionelle Folgewirkung",
+                "mechanism": "Ein großer Feuerwehreinsatz sowie Such- und Ermittlungsarbeiten beanspruchen öffentliche Ressourcen; Auswirkungen auf demokratische Institutionen sind nicht belegt.",
+                "recipients": [
+                  "Staat",
+                  "Kommune",
+                  "örtliche Behörden",
+                  "andere Nutzer öffentlicher Einsatzressourcen"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Eine institutionelle Wirkung würde voraussetzen, dass der Einsatz über den lokalen und zeitlich begrenzten Rahmen hinaus Ressourcen oder Entscheidungsfähigkeit beeinträchtigt.",
+                "reference_space": "Örtliche Gefahrenabwehr und Verwaltung in Weimar",
+                "time_horizon": "während des Einsatzes und der Ermittlungen",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der im Bericht beschriebene große Einsatz bindet Ressourcen; eine Beeinträchtigung demokratischer Korrekturfähigkeit wird nicht unterstellt.",
+                "source_support": "Die Quelle beschreibt den Umfang des Einsatzes, belegt aber keine institutionelle Überlastung oder demokratische Folge.",
+                "limitations": "Keine Angaben zu Ressourcenengpässen, Entscheidungsverzögerungen oder Auswirkungen auf andere Aufgaben.",
+                "first_order": "Öffentliche Einsatzkräfte arbeiten an Brand, Suche und Ermittlungen.",
+                "second_order": "Lokale Behörden können vorübergehend gebunden sein.",
+                "third_order": "Eine demokratische oder institutionelle Strukturwirkung ist nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der Ressourcenpfad ist möglich, aber lokal, zeitlich begrenzt und ohne institutionellen Folgeschaden belegt."
+                },
+                "negligibility_rationale": "Die demokratische Zustandsveränderung kann praktisch vernachlässigbar sein, weil keine Einschränkung demokratischer Verfahren belegt ist; der Ressourcenpfad bleibt dennoch dokumentiert.",
+                "observed_signal": {
+                  "change": "Die Quelle beschreibt einen der größten Brandeinsätze der vergangenen Jahre in Weimar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "research_pass": "second_pass",
+                "research_result": "Eine ergänzende Quelle zu institutioneller Resilienz oder Ressourcenverlagerung wurde nicht gefunden. Der demokratische Folgepfad bleibt offen und sehr schwach.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen ist nach dem Bericht die örtliche Einsatzstruktur.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein großer Einsatz ist beschrieben, eine institutionelle Überlastung aber nicht.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der Ressourcenpfad bezieht sich auf Einsatz und Ermittlungen mit nicht belegter Dauer.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Zeitweilige Ressourcennutzung ist nach Einsatzende reversibel.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere demokratische Vulnerabilität ist nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine dritte Ordnung oder institutionelle Regelveränderung ist nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine demokratische Schutzgrenzverletzung ist belegt.",
+                  "reference_frame": "Örtliche institutionelle Funktions- und Korrekturfähigkeit",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Für Demokratie gibt es nur einen schwachen offenen Ressourcenpfad. Der Bericht belegt einen großen Einsatz, aber keine Beeinträchtigung demokratischer Institutionen; die Tragweite bleibt daher praktisch gering.",
+            "balance": {
+              "rationale": "Weder ein positiver Gegenpfad noch eine materielle institutionelle Folge sind belegt.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Vorübergehende Bindung öffentlicher Einsatz- und Ermittlungsressourcen ohne belegte institutionelle Folgewirkung",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Vorübergehende Bindung öffentlicher Einsatz- und Ermittlungsressourcen ohne belegte institutionelle Folgewirkung",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Die gelesene MDR-Quelle belegt den berichteten Ereigniskern, die Suche nach dem Hausbesitzer, die Zerstörung der Gebäude, zwei angenommene Brandherde und die zeitweise Sperrung der Bundesstraße 7. Sie belegt keine Verletzung, Todesfolge, Umweltbelastung oder institutionelle Überlastung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Laufende Prüfung",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ongoing",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Zerstörung von Wohn- und Nebengebäuden sowie mögliche Gefährdung des vermissten Hausbesitzers",
+              "mechanism": "Explosionen und Brand zerstören Gebäude und können Menschen im Gefahrenbereich verletzen oder töten.",
+              "recipients": [
+                "Hausbesitzer",
+                "Betroffene des Grundstücks",
+                "örtliche Einsatzkräfte"
+              ],
+              "evidence": "low",
+              "temporal_status": "ongoing",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Die Folgen beziehen sich auf das betroffene Grundstück und die laufende Suche. Weitere Verletzte, Todesfälle oder Betroffene werden nicht angenommen, solange sie nicht belegt sind.",
+              "reference_space": "Betroffenes Grundstück in Weimar-Lützendorf und unmittelbar eingesetzte lokale Strukturen",
+              "time_horizon": "während des Einsatzes und potenziell längerfristig durch Gebäudeverlust",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die im Bericht beschriebenen Gebäudeschäden und die laufende Suche bilden den Ausgangspunkt; zusätzliche Verletzungen und Todesfälle werden nicht als Tatsache unterstellt.",
+              "source_support": "Die Quelle belegt Explosionen, Gebäudeverlust und die Suche nach dem Hausbesitzer, nicht eine Verletzung oder Todesfolge.",
+              "limitations": "Aufenthaltsort, Gesundheitszustand, weitere Betroffene und Wiederherstellungsdauer sind offen.",
+              "first_order": "Gebäude sind zerstört und eine Person wird gesucht.",
+              "second_order": "Wohnraum und lokale Nutzungen können ausfallen; Umfang und Dauer sind offen.",
+              "third_order": "Längerfristige soziale oder institutionelle Folgen sind möglich, aber nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Ein lokaler Gebäudeverlust ist belegt; eine höhere Tragweite hängt von der ungeklärten Personensituation und weiteren bestätigten Folgen ab."
+              },
+              "negligibility_rationale": "Nicht vernachlässigbar, weil ein Wohnhaus und ein Nebengebäude vollständig zerstört wurden.",
+              "observed_signal": {
+                "change": "Wohnhaus und Nebengebäude wurden vollständig zerstört.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Ereignisquelle wurde erneut gelesen. Eine zusätzliche belastbare Quelle zu Opferlage oder Langzeitfolgen wurde nicht gefunden; die Unsicherheit bleibt sichtbar.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Unmittelbar betroffen ist nach der Quelle ein Grundstück; weitere Reichweite ist nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Wohnhaus und Nebengebäude wurden vollständig zerstört.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Gebäudeverlust und Suche können länger fortwirken; die konkrete Dauer ist offen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Wiederaufbau ist grundsätzlich möglich, aber nicht kurzfristig.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Die ungeklärte Lage einer Person und möglicher Wohnraumverlust sind deutlich schutzrelevant.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Es gibt einen begrenzten Folgepfad über Wohnraum und lokale Einsatzressourcen; strukturelle Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine bestätigte schwere Schutzgrenzverletzung; die Personensituation ist offen.",
+                "reference_frame": "Schutz von Leben und Gesundheit",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Vorübergehende Einschränkung der örtlichen Erreichbarkeit durch die Sperrung der Bundesstraße 7",
+              "mechanism": "Eine Einsatzsperrung unterbricht oder verlängert lokale Verkehrswege.",
+              "recipients": [
+                "Anwohner",
+                "Verkehrsteilnehmer",
+                "Einsatzkräfte"
+              ],
+              "evidence": "low",
+              "temporal_status": "ongoing",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_effect",
+              "likelihood": "high",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Die Wirkung besteht nur, solange die Sperrung oder vergleichbare Sicherungsmaßnahmen andauern.",
+              "reference_space": "Bundesstraße 7 und angrenzendes lokales Verkehrsnetz",
+              "time_horizon": "bis zum Ende der Sperrung; genaue Dauer nicht belegt",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die genannte Sperrung beeinträchtigt zumindest einzelne lokale Wege.",
+              "source_support": "Die Quelle belegt die Sperrung bis zum Sonntagnachmittag, nicht konkrete Verzögerungen oder Versorgungsausfälle.",
+              "limitations": "Umfang der Verkehrsfolgen und aktueller Sperrstatus sind offen.",
+              "first_order": "Die Bundesstraße 7 ist zeitweise gesperrt.",
+              "second_order": "Lokale Wege können verlängert und Einsatzabläufe beeinflusst werden.",
+              "third_order": "Keine weitergehende regionale Wirkung belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 1,
+                "rationale": "Die belegte Sperrung ist zeitlich und räumlich begrenzt."
+              },
+              "negligibility_rationale": "Nicht vollständig vernachlässigbar, weil ein lokaler Verkehrsweg vorübergehend nicht nutzbar war.",
+              "observed_signal": {
+                "change": "Die Bundesstraße 7 war bis zum Sonntagnachmittag gesperrt.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "research_pass": "second_pass",
+              "research_result": "Für den begrenzten Verkehrspfad reicht die Ereignisquelle; Folgen nach Ende der genannten Sperrzeit sind offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen ist ein lokaler Verkehrsweg.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine zeitweise Sperrung begrenzt die Erreichbarkeit, ohne konkrete Ausfälle zu belegen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Quelle nennt eine Sperrung bis zum Sonntagnachmittag.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine zeitweise Sperrung ist nach ihrer Aufhebung unmittelbar reversibel.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders ungleich betroffene Gruppen sind nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt auf einen lokalen Verkehrsweg begrenzt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine schwere Schutzgrenzverletzung durch die zeitweise Sperrung belegt.",
+                "reference_frame": "Erreichbarkeit und lokale Gefahrenabwehr",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Der negative menschliche Hauptpfad ist durch zerstörte Gebäude und die ungeklärte Personensituation konkret begründet. Die Folgen bleiben lokal und hinsichtlich der Opferlage unvollständig belegt; deshalb bleibt die Tragweite begrenzt und die Evidenz niedrig.",
+          "balance": {
+            "rationale": "Es ist kein materieller positiver Gegenpfad desselben Ereignisses belegt.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 2,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "Zerstörung von Wohn- und Nebengebäuden sowie mögliche Gefährdung des vermissten Hausbesitzers",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Wohnhaus und Nebengebäude wurden vollständig zerstört; der Aufenthaltsort des Hausbesitzers ist ungeklärt.",
+              "direction": "negative",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "data_status": "observed",
+              "evidence": "medium",
+              "attribution": "open",
+              "reference_frame": "Schutz von Leben und nutzbarem Wohnraum",
+              "reference_space": "Betroffenes Grundstück in Weimar-Lützendorf",
+              "observed_at": "2026-09-14",
+              "temporal_status": "ongoing",
+              "mechanism": "Explosionen und Brand zerstörten die Gebäude; die Suche nach dem Hausbesitzer läuft.",
+              "recipients": [
+                "Hausbesitzer",
+                "Betroffene des Grundstücks",
+                "örtliche Einsatzkräfte"
+              ],
+              "time_horizon": "sofortige und möglicherweise längerfristige Folgen",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Nach der gelesenen Quelle ist unmittelbar ein Grundstück betroffen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Wohnhaus und Nebengebäude wurden bis auf die Grundmauern zerstört.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Gebäudeverlust und Suchmaßnahmen können über den ursprünglichen Einsatz hinaus fortwirken; die Dauer ist nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Der Gebäudeverlust ist nicht kurzfristig rückgängig zu machen, aber grundsätzlich wiederaufbaubar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Die ungeklärte Lage einer möglicherweise betroffenen Person und der Verlust von Wohnraum sind deutlich schutzrelevant.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein begrenzter lokaler Folgepfad ist belegt; strukturelle Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere Schutzgrenzverletzung ist wegen des ungeklärten Aufenthaltsorts und fehlender Angaben zu Verletzungen oder Todesfällen nicht abschließend belegt.",
+                "reference_frame": "Schutz von Leben und Gesundheit",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              },
+              "presentation": {
+                "ringStatus": "emerging",
+                "ringLabel": "Erste / laufende Wirkung",
+                "magnitudeBars": 2,
+                "directionLabel": "− laufende Wirkung",
+                "shortPathLabel": "Wohnhaus und Nebengebäude wurden vollständig zerstört; der Aufenthaltsort des Hausbesitzers ist ungeklärt.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Wohnhaus und Nebengebäude wurden vollständig zerstört; der Aufenthaltsort des Hausbesitzers ist ungeklärt.",
+            "direction": "negative",
+            "source_ids": [
+              "mdr-nachrichten"
+            ],
+            "data_status": "observed",
+            "evidence": "medium",
+            "attribution": "open",
+            "reference_frame": "Schutz von Leben und nutzbarem Wohnraum",
+            "reference_space": "Betroffenes Grundstück in Weimar-Lützendorf",
+            "observed_at": "2026-09-14",
+            "temporal_status": "ongoing",
+            "mechanism": "Explosionen und Brand zerstörten die Gebäude; die Suche nach dem Hausbesitzer läuft.",
+            "recipients": [
+              "Hausbesitzer",
+              "Betroffene des Grundstücks",
+              "örtliche Einsatzkräfte"
+            ],
+            "time_horizon": "sofortige und möglicherweise längerfristige Folgen",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Nach der gelesenen Quelle ist unmittelbar ein Grundstück betroffen.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 3,
+                "rationale": "Wohnhaus und Nebengebäude wurden bis auf die Grundmauern zerstört.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 2,
+                "rationale": "Gebäudeverlust und Suchmaßnahmen können über den ursprünglichen Einsatz hinaus fortwirken; die Dauer ist nicht belegt.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 2,
+                "rationale": "Der Gebäudeverlust ist nicht kurzfristig rückgängig zu machen, aber grundsätzlich wiederaufbaubar.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 3,
+                "rationale": "Die ungeklärte Lage einer möglicherweise betroffenen Person und der Verlust von Wohnraum sind deutlich schutzrelevant.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Ein begrenzter lokaler Folgepfad ist belegt; strukturelle Folgen sind nicht belegt.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Eine schwere Schutzgrenzverletzung ist wegen des ungeklärten Aufenthaltsorts und fehlender Angaben zu Verletzungen oder Todesfällen nicht abschließend belegt.",
+              "reference_frame": "Schutz von Leben und Gesundheit",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "status": "not_decisive"
+            },
+            "magnitude": 2,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 12,
+              "divisor": 6,
+              "raw": 2,
+              "rounded": 2,
+              "protection_floor": 0,
+              "final": 2
+            },
+            "presentation": {
+              "ringStatus": "emerging",
+              "ringLabel": "Erste / laufende Wirkung",
+              "magnitudeBars": 2,
+              "directionLabel": "− laufende Wirkung",
+              "shortPathLabel": "Wohnhaus und Nebengebäude wurden vollständig zerstört; der Aufenthaltsort des Hausbesitzers ist ungeklärt.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "emerging",
+          "ringLabel": "Erste / laufende Wirkung",
+          "magnitudeBars": 2,
+          "directionLabel": "− laufende Wirkung",
+          "shortPathLabel": "Wohnhaus und Nebengebäude wurden vollständig zerstört; der Aufenthaltsort des Hausbesitzers ist ungeklärt.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Laufende Prüfung",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Mögliche lokale Belastung von Boden, Luft oder Materialien durch Brand und Trümmer",
+              "mechanism": "Ein Großbrand und zurückbleibende Trümmer können lokale Umweltmedien belasten; konkrete Belastungen sind nicht gemessen.",
+              "recipients": [
+                "Natur",
+                "Anwohner",
+                "Bergungs- und Einsatzkräfte"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Der Pfad setzt messbare Brand- oder Trümmerbelastungen außerhalb der zerstörten Gebäude voraus.",
+              "reference_space": "Grundstück und unmittelbare Umgebung in Weimar-Lützendorf",
+              "time_horizon": "während der Bergung und möglichen Nachsorge",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Brand- und Trümmerlage kann Umweltmedien berühren; konkrete Stoffe oder Mengen werden nicht angenommen.",
+              "source_support": "Die Quelle belegt Brand und Zerstörung, aber keine Umweltbelastung.",
+              "limitations": "Keine Messwerte und keine Angaben zu Löschwasser, Schadstoffen, Boden, Luft oder Gewässern.",
+              "first_order": "Brand und Trümmer verändern den Zustand des Grundstücks.",
+              "second_order": "Eine lokale Umweltbelastung ist möglich, aber nicht nachgewiesen.",
+              "third_order": "Überregionale ökologische Folgen sind nicht plausibel belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ohne Mess- oder Schadstoffbeleg bleibt die mögliche ökologische Veränderung lokal, gering und unsicher."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht als fehlend bewertet; die Tragweite kann bei fehlender Belastung praktisch vernachlässigbar sein, bleibt aber wegen Brand und Trümmern prüfbedürftig.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Eine gezielte Suche nach einem zugelassenen amtlichen Umwelt- oder Mechanismusbeleg wurde durchgeführt, aber kein tatsächlich gelesener verwertbarer Beleg gefunden. Der Pfad bleibt eine schwache, unbestätigte Modellhypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der denkbare Pfad ist auf Grundstück und unmittelbare Umgebung begrenzt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Intensität ist nicht belegt; Brand und Trümmer begründen nur einen möglichen lokalen Einfluss.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Belastung wäre voraussichtlich zeitlich begrenzt; ihre Dauer ist unbekannt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Lokale Belastungen wären grundsätzlich sanierbar; konkrete Stoffe sind nicht bekannt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besondere ökologische Schutzgüter oder vulnerable Gruppen sind nicht benannt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Keine zweite oder dritte Ordnung ist belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenzverletzung ist belegt.",
+                "reference_frame": "Lokaler Schutz von Boden, Luft und Gewässern",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Ein ökologischer Pfad muss wegen Brand und Trümmern geprüft werden, ist im gelieferten Material aber nicht beobachtet oder quantifiziert. Die Tragweite bleibt gering; die negative Richtung ist eine schwache, ausdrücklich unbestätigte Modellhypothese.",
+          "balance": {
+            "rationale": "Kein positiver oder materiell gegenläufiger Umweltpfad ist belegt.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche lokale Belastung von Boden, Luft oder Materialien durch Brand und Trümmer",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche lokale Belastung von Boden, Luft oder Materialien durch Brand und Trümmer",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Vorübergehende Bindung öffentlicher Einsatz- und Ermittlungsressourcen ohne belegte institutionelle Folgewirkung",
+              "mechanism": "Ein großer Feuerwehreinsatz sowie Such- und Ermittlungsarbeiten beanspruchen öffentliche Ressourcen; Auswirkungen auf demokratische Institutionen sind nicht belegt.",
+              "recipients": [
+                "Staat",
+                "Kommune",
+                "örtliche Behörden",
+                "andere Nutzer öffentlicher Einsatzressourcen"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Eine institutionelle Wirkung würde voraussetzen, dass der Einsatz über den lokalen und zeitlich begrenzten Rahmen hinaus Ressourcen oder Entscheidungsfähigkeit beeinträchtigt.",
+              "reference_space": "Örtliche Gefahrenabwehr und Verwaltung in Weimar",
+              "time_horizon": "während des Einsatzes und der Ermittlungen",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der im Bericht beschriebene große Einsatz bindet Ressourcen; eine Beeinträchtigung demokratischer Korrekturfähigkeit wird nicht unterstellt.",
+              "source_support": "Die Quelle beschreibt den Umfang des Einsatzes, belegt aber keine institutionelle Überlastung oder demokratische Folge.",
+              "limitations": "Keine Angaben zu Ressourcenengpässen, Entscheidungsverzögerungen oder Auswirkungen auf andere Aufgaben.",
+              "first_order": "Öffentliche Einsatzkräfte arbeiten an Brand, Suche und Ermittlungen.",
+              "second_order": "Lokale Behörden können vorübergehend gebunden sein.",
+              "third_order": "Eine demokratische oder institutionelle Strukturwirkung ist nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der Ressourcenpfad ist möglich, aber lokal, zeitlich begrenzt und ohne institutionellen Folgeschaden belegt."
+              },
+              "negligibility_rationale": "Die demokratische Zustandsveränderung kann praktisch vernachlässigbar sein, weil keine Einschränkung demokratischer Verfahren belegt ist; der Ressourcenpfad bleibt dennoch dokumentiert.",
+              "observed_signal": {
+                "change": "Die Quelle beschreibt einen der größten Brandeinsätze der vergangenen Jahre in Weimar.",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ]
+              },
+              "research_pass": "second_pass",
+              "research_result": "Eine ergänzende Quelle zu institutioneller Resilienz oder Ressourcenverlagerung wurde nicht gefunden. Der demokratische Folgepfad bleibt offen und sehr schwach.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen ist nach dem Bericht die örtliche Einsatzstruktur.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein großer Einsatz ist beschrieben, eine institutionelle Überlastung aber nicht.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Ressourcenpfad bezieht sich auf Einsatz und Ermittlungen mit nicht belegter Dauer.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Zeitweilige Ressourcennutzung ist nach Einsatzende reversibel.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere demokratische Vulnerabilität ist nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine dritte Ordnung oder institutionelle Regelveränderung ist nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine demokratische Schutzgrenzverletzung ist belegt.",
+                "reference_frame": "Örtliche institutionelle Funktions- und Korrekturfähigkeit",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Für Demokratie gibt es nur einen schwachen offenen Ressourcenpfad. Der Bericht belegt einen großen Einsatz, aber keine Beeinträchtigung demokratischer Institutionen; die Tragweite bleibt daher praktisch gering.",
+          "balance": {
+            "rationale": "Weder ein positiver Gegenpfad noch eine materielle institutionelle Folge sind belegt.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Vorübergehende Bindung öffentlicher Einsatz- und Ermittlungsressourcen ohne belegte institutionelle Folgewirkung",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Vorübergehende Bindung öffentlicher Einsatz- und Ermittlungsressourcen ohne belegte institutionelle Folgewirkung",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T08:18:16.381Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T06:18:45.000Z",
+      "last_updated": "2026-09-14T08:18:16.381Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-b89505ba6810c5c1d87d",
+      "case_file": null,
+      "source_published_at": "2026-09-14T06:18:45.000Z",
+      "published_at": "2026-09-14T08:18:16.381Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Polizei klärt, ob sich der vermisste Hausbesitzer unter den Trümmern befindet oder das Grundstück verlassen hat.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Identität und Aufenthaltsort des Hausbesitzers sowie Abschluss der Suche in den Trümmern",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cfc1abc3747d7b18",
+          "announced_at": "2026-09-14T06:18:45.000Z",
+          "follow_up_date": "2026-09-21T08:18:16.381Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die Ermittler klären Ursache und Zusammenhang der zwei Brandherde sowie einen möglichen Einsatz von Gasflaschen.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Ermittlungsergebnis zu Brandursache, Brandherden und möglichem vorsätzlichem Vorgehen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cee57f87ea4454ce",
+          "announced_at": "2026-09-14T06:18:45.000Z",
+          "follow_up_date": "2026-09-21T08:18:16.381Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/thueringen/mitte-thueringen/weimar/brand-bundesstrasse-sperrung-polizei-feuerwehr-bewohner-vermisst,wohnhaus-feuer-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T06:18:45.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-b6a1d81a1c4e660b",
       "title_image": {
