@@ -1,3 +1,4 @@
+import {isGroundedOpenDimension} from '../../scripts/news/impact-potential.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -43,8 +44,8 @@ test('the actual mixed publication catalog renders every complete profile and ke
    assert.equal(assessment.version,'2.1');assert.equal(story.impact_semantic_review.status,'ready');
    for(const key of ['human','planet','democracy']){
     assert.match(html,new RegExp('wt-dim--'+key));
-    assert.ok(Number.isInteger(assessment.dimensions[key].magnitude));
-    assert.ok(assessment.dimensions[key].primary_paths.length);
+    assert.ok(isGroundedOpenDimension(assessment.dimensions[key]) || Number.isInteger(assessment.dimensions[key].magnitude));
+    assert.ok(isGroundedOpenDimension(assessment.dimensions[key]) || assessment.dimensions[key].primary_paths.length);
    }
   }else assert.doesNotMatch(html,/data-potential-model=/);
  }

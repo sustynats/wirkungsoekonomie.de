@@ -286,7 +286,7 @@ function impactPanel(u, { x, y, width, height, dimensions, riskDirections, statu
     parts.push(textLine(meta.label, rx + 32 * u, ry + 17 * u, "sans-600", 20 * u, PALETTE.white));
     parts.push(textLine(levelText, rx + columnWidth, ry + 17 * u, "sans-500", 15 * u, PALETTE.textMuted, { anchor: "end" }));
     const dimension=dimensions?.[key],ring=dimension?.ringStatus;
-    const ringMarkup=(presentation,atX,atY,size)=>`<g data-impact-ring="${escape(presentation.ringStatus)}" data-magnitude="${presentation.magnitudeBars}" transform="translate(${atX.toFixed(1)},${atY.toFixed(1)}) scale(${(size/24).toFixed(3)})" color="${color}" role="img"><title>${escape(`${meta.label}: ${presentation.ringLabel}, Tragweite ${presentation.magnitudeBars}/5, ${presentation.directionLabel}`)}</title>${impactRingSymbol(presentation.ringStatus)}</g>`;
+    const ringMarkup=(presentation,atX,atY,size)=>`<g data-impact-ring="${escape(presentation.ringStatus)}" data-magnitude="${presentation.magnitudeBars ?? "open"}" transform="translate(${atX.toFixed(1)},${atY.toFixed(1)}) scale(${(size/24).toFixed(3)})" color="${color}" role="img"><title>${escape(`${meta.label}: ${presentation.ringLabel}, Tragweite ${Number.isInteger(presentation.magnitudeBars) ? `${presentation.magnitudeBars}/5` : "offen"}, ${presentation.directionLabel}`)}</title>${impactRingSymbol(presentation.ringStatus)}</g>`;
     if(ring)parts.push(ringMarkup(dimension,rx,ry+31*u,23*u));
     parts.push(meter(rx+(ring?31*u:0), ry + 36 * u, columnWidth-(ring?31*u:0), 13 * u, level, color, u));
     const direction = dimension?.directionLabel || dimension?.label || '? offen';

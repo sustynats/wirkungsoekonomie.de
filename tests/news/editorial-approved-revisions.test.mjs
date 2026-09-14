@@ -91,3 +91,21 @@ test('ordinary Dropbox import binds an existing revision to server data and stag
  const staged=s.get(job.input.job_id);assert.equal(staged.preview.editorial_revision.target.slug,original.slug);assert.equal(staged.preview.editorial_revision.base.title,original.title);
  assert.equal(s.claimPublications().length,0);assert.equal((await importEditorialPreviews({store,transport,approval:s})).staged,0);s.db.close();
 });
+
+test('personal factual correction previews and imports only after fresh approval, preserving the published edition',async t=>{
+ const {loadPersonalEditorials,PERSONAL_FILE}=await import('../../scripts/news/personal-editorial.mjs');
+ const temp=fs.mkdtempSync(path.join(os.tmpdir(),'personal-correction-'));t.after(()=>fs.rmSync(temp,{recursive:true,force:true}));
+ fs.mkdirSync(path.join(temp,'data/news'),{recursive:true});fs.cpSync(path.join(root,PERSONAL_FILE),path.join(temp,PERSONAL_FILE));fs.symlinkSync(path.join(root,'assets'),path.join(temp,'assets'));
+ const base=loadPersonalEditorials(temp).find(a=>a.analysis_id==='woek-personal-39347c140c3c919a'),before=fs.readFileSync(path.join(temp,PERSONAL_FILE),'utf8');
+ const patch={body_markdown:base.body_markdown.replace('Gesellschaftliche Wirkung','Kommunikatives Wirkungspotenzial'),correction_note:'Die kommunikative Resonanz wird als Potenzial bezeichnet.'};
+ const target={analysis_id:base.analysis_id,slug:base.slug,base_hash:editorialRevisionBaseHash(base)};
+ const preview={format:base.subtype,title:base.title,markdown:patch.body_markdown,sources:base.sources,checks:{source_binding:true,editorial_validation:true,personal_experiences_invented:false},editorial_revision:{base,target,patch}};
+ const job={input:{job_id:'wt_20260914T120000Z_aaaaaaaaaaaaaaaaaaaaaaaa'},intake:{owner,revision_target:target}},s=setup();t.after(()=>s.db.close());
+ const staged=s.stage(job,preview);assert.equal(s.claimPublications().length,0);
+ assert.match(s.preview(owner,job.input.job_id).html,/Kommunikatives Wirkungspotenzial/);
+ s.decide(owner,job.input.job_id,{action:'APPROVE',preview_hash:staged.preview_hash});const editions=s.claimPublications();
+ const imported=await importApprovedEditorials({editorialClaim:async()=>editions},temp);assert.deepEqual(imported.failed,[]);assert.equal(imported.changed,true);
+ assert.equal(fs.readFileSync(path.join(temp,PERSONAL_FILE),'utf8'),before);
+ const updated=applyApprovedEditorialRevisions(loadPersonalEditorials(temp),temp).find(a=>a.analysis_id===base.analysis_id);
+ assert.equal(updated.published_at,base.published_at);assert.equal(updated.slug,base.slug);assert.match(editorialAnalysisPage(updated),/Korrektur vom/);
+});

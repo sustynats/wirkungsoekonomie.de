@@ -1,3 +1,4 @@
+import { isGroundedOpenDimension } from './impact-potential.mjs';
 import { IMPACT_KEYS, impactAssessmentErrors } from './impact-assessment.mjs';
 
 export const SEMANTIC_CHECKS = ['event_target', 'time_and_observation', 'path_and_recipients', 'direction_and_reference', 'magnitude', 'likelihood', 'evidence', 'potential_scope', 'second_third_order', 'policy_coverage', 'source_fidelity', 'counterpaths_and_dominance', 'institutional_status', 'counterfactual'];
@@ -28,13 +29,13 @@ export function semanticIssues(assessment, record = {}, { secondPassComplete = f
   const researched = assessment.research_check?.status === 'completed' && Array.isArray(assessment.research_check.searches) && assessment.research_check.searches.some(s => text(s.question) && text(s.result));
   if (assessment.version === '2.1' && !researched) issues.push('IMPACT_RESEARCH_CHECK_REQUIRED');
   const central = new Set([...requirements.central_dimensions, ...(system?.central_dimensions || []).filter(k => IMPACT_KEYS.includes(k))]);
-  if (high && IMPACT_KEYS.every(k => !assessment.dimensions?.[k]?.primary_paths?.length)) issues.push('IMPACT_HIGH_RELEVANCE_WITHOUT_PATH');
+  if (high && IMPACT_KEYS.every(k => !assessment.dimensions?.[k]?.primary_paths?.length) && !(researched && IMPACT_KEYS.every(k => isGroundedOpenDimension(assessment.dimensions?.[k])))) issues.push('IMPACT_HIGH_RELEVANCE_WITHOUT_PATH');
   for (const key of central) {
     const d = assessment.dimensions?.[key];
     if (high && (!d || d.path_status !== 'modelled' || d.direction === 'open') && !(secondPassComplete && researched)) issues.push(`IMPACT_CENTRAL_DIMENSION_UNRESOLVED:${key}`);
   }
-  if (requirements.power && (!assessment.dimensions?.democracy?.primary_paths?.length || !system?.enablement?.length)) issues.push('IMPACT_POWER_PATH_REQUIRED');
-  if (requirements.energy && !assessment.dimensions?.planet?.primary_paths?.length) issues.push('IMPACT_ENERGY_PATH_REVIEW_REQUIRED');
+  if (requirements.power && !isGroundedOpenDimension(assessment.dimensions?.democracy) && (!assessment.dimensions?.democracy?.primary_paths?.length || !system?.enablement?.length)) issues.push('IMPACT_POWER_PATH_REQUIRED');
+  if (requirements.energy && !isGroundedOpenDimension(assessment.dimensions?.planet) && !assessment.dimensions?.planet?.primary_paths?.length) issues.push('IMPACT_ENERGY_PATH_REVIEW_REQUIRED');
   if (requirements.harm && !assessment.observed_effects?.some(e => e.dimension === 'human' && e.direction === 'negative')) issues.push('IMPACT_OCCURRED_HARM_AS_RISK');
   for (const key of IMPACT_KEYS) {
     const d = assessment.dimensions?.[key];

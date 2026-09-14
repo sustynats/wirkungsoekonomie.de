@@ -1,3 +1,4 @@
+import { EDITORIAL_EVIDENCE_RULE, editorialEvidenceErrors } from './editorial-evidence.mjs';
 import { discoveryAdmission, isProgrammeListing } from './discovery-admission.mjs';
 import { execFileSync } from 'node:child_process';
 import { createHash } from "node:crypto";
@@ -957,7 +958,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true, transport 
     "Einzelfall/Produkt/Gebühr braucht belegte Intensität/Breite/Präzedenz; denkbare Übertragbarkeit reicht nicht. Publikationsform kein Ausschluss: Statistik/Interview/Rede/Parlamentsantwort kann neue Zustandsdaten, Entscheidung, Zusage, Evidenz oder Kurswechsel liefern.",
     "Ablehnen: Meinung/Wiederholung/Spekulation/Zeremonie/Routinezahl ohne Neuigkeit, unbeantwortete Frage ohne materielle Antwort, formaler Vorgang ohne relevanten Pfad. Quellenrang/Aufmerksamkeit kein Relevanzbeweis. Rückblick ohne neue Information: related_ticker_history prüfen, duplicate_without_new_information.",
     "material_development_review: Kandidatur/Rücktritt/Koalition/Regierungsbildung/Ergebnis auf Neuigkeit prüfen; neues Medium allein Dublette. Artikelzeit≠Aussagezeit; Videoüberschrift≠Originalton. Kurswechsel: frühere Bedingungen/datierte Aussagen/Nachträge prüfen. Zeitdruck≠Evidenz. Parteien/Medien gleich behandeln; Landtagswahl≠Regierungschefwahl.",
-    IMPACT_PROMPT_RULE,
+    IMPACT_PROMPT_RULE, EDITORIAL_EVIDENCE_RULE,
     "Hauptgegenstand zum Quelldatum: Kabinetts-Gesetzentwurf=Entwurf, beschlossen=endgültig verabschiedet, in Kraft=belegtes Inkrafttreten. Geltendes Recht nicht zurückstufen. Frist/Entwurf/Beschluss/Inkrafttreten/Umsetzung trennen, Teilvergleich setzt nicht Hauptstatus. Unklar=offen. Ex ante betrifft Folgen, auch nach Inkrafttreten.",
     "Zielbezug ist kein Kausalitätsbeweis. Fakten, Inferenz und Bewertung trennen.",
     "Keine Personen-/Parteien-/Moralrangliste. Reichweite≠Wirkung. Nichtkompensation/Reverse Merit Order bei materiellen Schutzgrenzen/Priorisierung.",
@@ -977,9 +978,10 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true, transport 
       analyses: [{
         story_id: "string",
         publication_recommendation: true,
+        headline: "Quellengetreuer Titel",
         news_status: "developing|preliminary|confirmed|disputed|corrected|updated",
         publication_depth: "initial|deepened",
-        event_claims: [{ claim: "string", status: "single_source_claim|confirmed_claim|disputed_claim|primary_source_claim|uncertain_claim", evidence: [{ evidence_id: "string" }] }],
+        event_claims: [{ claim: "string", claim_type: "siehe Regel", attribution_required: false, attributed_to: null, headline_claim: false, headline_qualifier: null, status: "single_source_claim|confirmed_claim|disputed_claim|primary_source_claim|uncertain_claim", evidence: [{ evidence_id: "string" }] }],
         followups: [{ claim: "string", source_id: "string", expected_by: null, expected_by_evidence: "Fristbeleg, sonst null", measurable_indicator: "string" }],
         source_summary: "string",
         summary: "string",
@@ -1261,7 +1263,7 @@ export function assertsRealisedExAnteEffect(analysis) {
 }
 
 export function validateAnalysis(analysis, story, options = {}) {
-  const errors = [];
+  const errors = editorialEvidenceErrors({...story, analysis});
   const filterVersion = Number.parseFloat(story?.preanalysis?.filter_version || story?.relevance_filter_version || "0");
   if (filterVersion >= 4 && analysis?.story_id === story.story_id && analysis.publication_recommendation === false && ["not_material", "no_new_information", "insufficient_evidence", "superseded"].includes(analysis.rejection?.code) && typeof analysis.rejection?.reason === "string" && analysis.rejection.reason.length >= 30 && analysis.rejection.reason.length <= 300) {
     return ["AI_PUBLICATION_NOT_RECOMMENDED", { not_material: "AI_MATERIALITY_TOO_LOW", no_new_information: "AI_DUPLICATE_WITHOUT_UPDATE", insufficient_evidence: "AI_EVIDENCE_INSUFFICIENT", superseded: "AI_DUPLICATE_WITHOUT_UPDATE" }[analysis.rejection.code]];
@@ -1270,6 +1272,7 @@ export function validateAnalysis(analysis, story, options = {}) {
   const requiredStrings = ["story_id", "source_summary", "summary", "why_relevant", "status", "analysis_type", "importance", "impact_potential", "systemic_relevance", "transformation_potential", "resilience", "evidence_level", "attribution", ...(requiresPublicationGate ? ["detail_summary"] : [])];
   for (const key of requiredStrings) if (typeof analysis?.[key] !== "string" || !analysis[key].trim()) errors.push(`AI_REQUIRED_STRING:${key}`);
   if (analysis?.story_id !== story.story_id) errors.push("AI_STORY_ID_MISMATCH");
+  if (analysis?.headline != null && (typeof analysis.headline !== "string" || analysis.headline.trim().length < 10 || analysis.headline.length > 260)) errors.push("EDITORIAL_HEADLINE_INVALID");
   errors.push(...statusConsistencyErrors(analysis));
   if (hasEditorialResidue(analysisReaderCopy(analysis))) errors.push("AI_PUBLIC_EDITORIAL_RESIDUE");
   if (!new Set(["angekündigt", "Entwurf", "beschlossen", "in Kraft", "laufende Umsetzung", "erste Daten", "evaluiert", "laufende Entwicklung", "offen"]).has(analysis?.status)) errors.push("AI_STATUS_INVALID");
