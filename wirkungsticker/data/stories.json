@@ -2,8 +2,2817 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-14T04:45:11.161Z",
+  "updated_at": "2026-09-14T06:10:40.031Z",
   "stories": [
+    {
+      "story_id": "wt-b3218fb325e74077",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b3218fb325e74077-e0f54f58b0012f2f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b3218fb325e74077-8f26e0acd47b3f8f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b3218fb325e74077-f8f9beab3f6271af-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "infrastruktur-helgoland-autark-insel-fur-zwei-tage-ohne-festlandstrom-e74077",
+      "title": "Infrastruktur: Helgoland autark - Insel für zwei Tage ohne Festlandstrom",
+      "source_summary": "Wegen Arbeiten am Seekabel ist Helgoland laut dem gelieferten Bericht kurzzeitig ohne Festlandstrom und Internet. Die Stromversorgung übernimmt ein Diesel-Aggregat; Notrufe bleiben erreichbar. Der Titel nennt einen Zeitraum von zwei Tagen.\n\nDer Bericht beschreibt damit eine zeitlich begrenzte Unterbrechung zentraler Infrastruktur. Nicht aus dem gelieferten Material hervorgehen der genaue Beginn und das Ende der Arbeiten, die betroffene Zahl von Haushalten oder Betrieben, der Dieselverbrauch sowie unabhängige Bestätigungen oder technische Details zur Internetversorgung.",
+      "summary": "Helgoland ist wegen Arbeiten am Seekabel vorübergehend ohne Festlandstrom und Internet. Ein Diesel-Aggregat hält die Stromversorgung aufrecht, während Notrufe erreichbar bleiben.",
+      "detail_summary": "Wegen Arbeiten am Seekabel fällt auf Helgoland nach dem gelieferten Bericht vorübergehend der Festlandstrom aus. Auch das Internet ist nicht verfügbar; Notrufe bleiben erreichbar. Ein Diesel-Aggregat übernimmt die Stromversorgung. Für Haushalte, Betriebe und öffentliche Einrichtungen bedeutet das eine zeitlich begrenzte Umstellung auf eine lokale Notversorgung. Offen bleiben der genaue Ablauf, die Dauer der Arbeiten und die Folgen für Verbrauch und Betrieb.",
+      "why_relevant": "Der Vorfall macht die Abhängigkeit einer Insel von einer einzelnen Versorgungsverbindung sichtbar. Belegt ist zunächst eine vorläufige Einzelquelle; Umfang und Dauer der praktischen Folgen müssen weiter geprüft werden.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Vorübergehende Unterbrechung der Festlandstromverbindung nach Helgoland wegen Seekabelarbeiten; Dieselaggregate sollen die Stromversorgung überbrücken. Die Internet-, Mobilfunk- und Festnetzverbindung soll laut NDR am 17. September 2026 für rund zehn Stunden unterbrochen werden.",
+        "evaluation_target": {
+          "label": "Versorgungsunterbrechung und lokale Ersatzstromversorgung auf Helgoland",
+          "type": "event"
+        },
+        "baseline": "Reguläre Versorgung Helgolands über die Festlandstromverbindung sowie reguläre Internet-, Mobilfunk- und Festnetzverbindungen vor Beginn der Seekabelarbeiten.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne die geplanten Seekabelarbeiten blieben die regulären Verbindungen im betrachteten Zeitraum voraussichtlich verfügbar. Der Vergleich bezieht sich auf die angekündigte, zeitlich begrenzte Betriebsunterbrechung; längerfristige Wiederholungs- oder Ausfallrisiken sind nicht belegt.",
+        "reference_frame": [
+          "Versorgungssicherheit und Resilienz kritischer Infrastruktur",
+          "Digitale Erreichbarkeit und öffentliche Sicherheit",
+          "SDG 7, SDG 9 und SDG 11, soweit anwendbar"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der Ereigniskern ist durch die NDR-Berichterstattung unabhängig vom Ausgangsbericht gestützt. Die Stromversorgung soll über Dieselaggregate überbrückt werden; Internet, Mobilfunk und Festnetz sollen für rund zehn Stunden ausfallen. Dadurch können Haushalte, Betriebe und Einrichtungen kurzfristig auf Ersatzversorgung und eingeschränkte Kommunikation angewiesen sein. Notrufe sollen erreichbar bleiben; konkrete Schäden und Betroffenenzahlen sind nicht belegt.",
+            "planet": "Der Dieselbetrieb erzeugt plausibel einen zusätzlichen Brennstoff- und Emissionspfad gegenüber einer regulären Versorgung, sofern die Aggregate tatsächlich eingesetzt werden. Die konkrete Menge, Betriebsdauer und Vergleichsemissionen sind nicht belegt. Eine weitergehende Klima- oder Ökosystemwirkung ist aus dem Ereignis nicht ableitbar.",
+            "democracy": "Der zeitweise Ausfall von Internet, Mobilfunk und Festnetz kann digitale Information und Kommunikation erschweren. Die Bundesnetzagentur beschreibt Stromausfälle als möglichen direkten Belastungsmechanismus für Telekommunikationsnetze. Eine konkrete Einschränkung demokratischer Beteiligung oder ein institutioneller Effekt ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Die Festlandstromverbindung wird während der Arbeiten unterbrochen; Dieselaggregate sollen die Stromversorgung überbrücken. Internet, Mobilfunk und Festnetz sollen am 17. September 2026 für rund zehn Stunden ausfallen; Notrufe sollen erreichbar bleiben.",
+          "second_order": "Versorgungssicherheit und betriebliche Abläufe hängen vorübergehend von Aggregatbetrieb, Brennstofflogistik und verfügbaren Ersatzkommunikationswegen ab.",
+          "third_order": "Das Ereignis kann die Bedeutung redundanter Inselinfrastruktur sichtbar machen. Eine dauerhafte Investitions-, Resilienz- oder Regulierungslücke folgt daraus nicht ohne weitere Ereignisse und Daten.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die NDR-Quelle nennt eine zeitlich begrenzte Abschaltung und eine geplante Ersatzstromversorgung.",
+            "Notrufe sollen weiterhin möglich sein.",
+            "Es liegen keine Belege für Todesfälle, Verletzungen, dauerhafte Versorgungsschäden oder institutionelle demokratische Folgen vor.",
+            "Die Reichweite des Internetausfalls wird durch die NDR-Angabe von rund zehn Stunden begrenzt."
+          ],
+          "source_independence": "Der Ereigniskern ist durch den gelieferten Stern-Bericht und eine unabhängige NDR-Berichterstattung gestützt. Der Telekommunikationsmechanismus wird zusätzlich durch ein Bundesnetzagentur-Dokument gestützt. Technische Betreiberdaten zu Leistung, Verbrauch und tatsächlichen Auswirkungen fehlen.",
+          "institutional_status": "Laufender beziehungsweise angekündigter technischer Ereignis- und Versorgungsstatus; keine politische Maßnahme, endgültige Entscheidung oder Rechtsänderung."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "high",
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Zeitweise Unterbrechung von Strom- und Kommunikationsverbindungen belastet lokale Abläufe.",
+                "mechanism": "Die Festlandstromverbindung wird für Seekabelarbeiten unterbrochen; Dieselaggregate sollen die Stromversorgung überbrücken. Internet, Mobilfunk und Festnetz sollen zeitweise ausfallen.",
+                "recipients": [
+                  "Haushalte",
+                  "Unternehmen",
+                  "öffentliche Einrichtungen",
+                  "Bewohnerinnen und Bewohner",
+                  "Besucherinnen und Besucher"
+                ],
+                "evidence": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "high",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "research-helgoland-ndr-2026-09-01"
+                ],
+                "condition": "Die angekündigten Arbeiten und Unterbrechungen finden im genannten Zeitraum statt; konkrete Beeinträchtigungen hängen von Ersatzkapazität und individuellen Abhängigkeiten ab.",
+                "reference_space": "Helgoland; lokale Haushalte, Betriebe und öffentliche Einrichtungen während der angekündigten Unterbrechung",
+                "time_horizon": "kurzfristig; Stromunterbrechung im Zeitraum 16. bis 18. September 2026, Kommunikationsunterbrechung laut NDR rund zehn Stunden am 17. September 2026",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die angekündigte Unterbrechung tritt ein und betrifft die regulären Verbindungen; Notrufe bleiben wie berichtet erreichbar.",
+                "source_support": "Stern und NDR belegen beziehungsweise bestätigen die Unterbrechung, die Ersatzstromversorgung und die zeitliche Begrenzung. Konkrete Schäden und Betroffenenzahlen sind nicht belegt.",
+                "limitations": "Keine Angaben zu Kapazität, Lastabwurf, konkreten Ausfällen, Ersatzkommunikation oder realen Beeinträchtigungen einzelner Einrichtungen.",
+                "first_order": "Reguläre Verbindungen werden vorübergehend unterbrochen; Strom wird lokal über Aggregate überbrückt.",
+                "second_order": "Abläufe können auf Ersatzversorgung und eingeschränkte digitale Kommunikation angewiesen sein.",
+                "third_order": "Bei längeren oder wiederkehrenden Ereignissen könnten Resilienz- und Redundanzfragen an Bedeutung gewinnen; das ist für diesen Einzelfall nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Pfad betrifft die gesamte Insel, bleibt aber zeitlich kurz und wird durch Ersatzstrom sowie erreichbare Notrufe begrenzt. Die konkrete Belastung einzelner Empfänger ist offen."
+                },
+                "negligibility_rationale": "Nicht vernachlässigbar, weil eine zentrale Inselverbindung und mehrere Kommunikationswege angekündigt unterbrochen werden.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die NDR-Recherche bestätigt Zeitraum, Ersatzstrom und Kommunikationsausfall. Konkrete individuelle Folgen bleiben offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die angekündigte Unterbrechung betrifft die Inselversorgung und damit potenziell Haushalte, Betriebe und öffentliche Einrichtungen auf Helgoland.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Unterbrechung zentraler Verbindungen ist begrenzt, wird beim Strom durch Aggregate abgefedert und bei Notrufen durch die angegebene Erreichbarkeit begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Kommunikationsunterbrechung ist mit rund zehn Stunden angegeben; der gesamte Arbeitszeitraum reicht vom 16. bis 18. September.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Die angekündigte Unterbrechung ist nach Abschluss der Arbeiten grundsätzlich reversibel.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Eine Inselbevölkerung und lokal abhängige Einrichtungen können stärker auf die wenigen Versorgungs- und Kommunikationswege angewiesen sein; konkrete Lastverteilung ist nicht belegt.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Neben dem unmittelbaren Ausfall entstehen begrenzte Folgepfade über Ersatzstrom, Brennstofflogistik und digitale Abläufe, ohne belegte strukturelle Wirkung.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01",
+                      "research-telekommunikationsresilienz-bnetza"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine belegte schwere Schutzgrenzverletzung dokumentiert. Erreichbare Notrufe begrenzen den Sicherheitsrisikopfad; eine vollständige Schutzbewertung der lokalen Notfallversorgung ist nicht möglich.",
+                  "reference_frame": "öffentliche Sicherheit und erreichbare Notfallhilfe während der angekündigten Unterbrechung",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "research-helgoland-ndr-2026-09-01"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der menschliche Pfad ist als zeitlich begrenzte, potenziell inselweite Belastung plausibel und durch eine unabhängige Ereignisquelle gestützt. Die Tragweite bleibt wegen fehlender Betroffenenzahlen und unbekannter Ersatzkapazität begrenzt.",
+            "balance": {
+              "rationale": "Die Ersatzstromversorgung und erreichbare Notrufe mindern Risiken, sind aber keine positive Gegenwirkung gegenüber der Unterbrechung.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Zeitweise Unterbrechung von Strom- und Kommunikationsverbindungen belastet lokale Abläufe.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Zeitweise Unterbrechung von Strom- und Kommunikationsverbindungen belastet lokale Abläufe.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "mittel",
+            "likelihood_label": "hoch",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Der vorübergehende Dieselbetrieb kann zusätzliche lokale Emissionen und Brennstofftransporte verursachen.",
+                "mechanism": "Dieselaggregate sollen die reguläre Stromversorgung während der Seekabelarbeiten ersetzen.",
+                "recipients": [
+                  "Bewohnerinnen und Bewohner",
+                  "Besucherinnen und Besucher",
+                  "lokale Umwelt"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "research-helgoland-ndr-2026-09-01"
+                ],
+                "condition": "Die Aggregate werden tatsächlich eingesetzt und verursachen gegenüber der regulären Festlandstromversorgung zusätzliche Emissionen; Verbrauch, Laufzeit und Strommixvergleich sind unbekannt.",
+                "reference_space": "Helgoland und die mit der Ersatzversorgung verbundenen Brennstofftransporte",
+                "time_horizon": "kurzfristig während des Ersatzbetriebs im Zeitraum der Seekabelarbeiten",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Dieselbetrieb erzeugt zusätzliche lokale Emissionen gegenüber dem Vergleichszustand ohne Unterbrechung.",
+                "source_support": "NDR bestätigt die geplante Diesel-Ersatzversorgung. Keine gelesene Quelle belegt Verbrauch, Emissionsmenge oder konkrete Umweltfolgen.",
+                "limitations": "Keine Messung, keine Aggregatdaten, kein Vergleich zur regulären Stromversorgung und keine Grundlage für weitergehende Klima- oder Ökosystemfolgen.",
+                "first_order": "Temporärer Dieselbetrieb ersetzt die reguläre Stromversorgung.",
+                "second_order": "Brennstoffverbrauch und Transport können lokale Emissionen und logistische Abhängigkeiten erzeugen.",
+                "third_order": "Keine belastbare Grundlage für dauerhafte Klima-, Gesundheits- oder Ökosystemwirkungen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist plausibel, aber räumlich und zeitlich begrenzt; ohne Verbrauchs- und Betriebsdaten bleibt die mögliche Tragweite niedrig und unsicher."
+                },
+                "negligibility_rationale": "Nicht als fehlender Pfad behandelt: Ein begrenzter zusätzlicher Emissionspfad ist mechanistisch plausibel. Eine praktisch vernachlässigbare Größenordnung kann wegen fehlender Betriebsdaten nicht sicher festgestellt werden.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Ereignisrecherche bestätigt den Dieselbetrieb. Eine belastbare Quelle mit Verbrauchs- oder Emissionsdaten zum konkreten Aggregatbetrieb wurde im zulässigen Rechercheumfang nicht gefunden.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Emissionspfad ist lokal auf Helgoland und die zugehörige Brennstofflogistik begrenzt.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Zusätzliche Emissionen sind plausibel, ihre Stärke ist mangels Verbrauchs- und Lastdaten nicht quantifizierbar.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der Dieselbetrieb ist an die zeitlich begrenzten Seekabelarbeiten gebunden.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Der mögliche zusätzliche Emissionspfad endet mit dem Ersatzbetrieb; keine dauerhafte Zustandsänderung ist belegt.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere ungleiche Umweltlast ist nicht belegt; mögliche lokale Belastungen werden nur allgemein modelliert.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft einen begrenzten Betriebs- und Logistikzusammenhang ohne belegte Rückkopplung oder strukturelle Wirkung.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere, belegte Umwelt- oder Gesundheitsgrenzverletzung liegt nicht vor. Der Pfad bleibt eine bedingte Nebenfolge des Ersatzbetriebs.",
+                  "reference_frame": "lokale Umwelt- und Gesundheitsbelastung während des Aggregatbetriebs",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der planetare Pfad ist eine modellierte Nebenfolge mit niedriger Evidenz. Er darf nicht als gemessene Emissionswirkung oder als Beleg für eine Klimawirkung ausgegeben werden.",
+            "balance": {
+              "rationale": "Die Ersatzstromversorgung begrenzt menschliche Versorgungsausfälle, erzeugt aber keine belegte positive Umweltwirkung und kompensiert mögliche zusätzliche Emissionen nicht.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Der vorübergehende Dieselbetrieb kann zusätzliche lokale Emissionen und Brennstofftransporte verursachen.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Der vorübergehende Dieselbetrieb kann zusätzliche lokale Emissionen und Brennstofftransporte verursachen.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Der zeitweise Ausfall von Internet, Mobilfunk und Festnetz kann digitale Information und Kommunikation erschweren.",
+                "mechanism": "Die Kommunikationsverbindungen sollen während des Seekabel-Umschlusses vorübergehend unterbrochen werden. Die Bundesnetzagentur beschreibt Stromausfälle als möglichen direkten Belastungsmechanismus für Telekommunikationsnetze.",
+                "recipients": [
+                  "Bewohnerinnen und Bewohner",
+                  "Besucherinnen und Besucher",
+                  "Unternehmen",
+                  "öffentliche Einrichtungen"
+                ],
+                "evidence": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "research-helgoland-ndr-2026-09-01",
+                  "research-telekommunikationsresilienz-bnetza"
+                ],
+                "condition": "Die angekündigte Kommunikationsunterbrechung tritt ein und alternative Zugänge ersetzen die betroffenen Verbindungen nicht vollständig.",
+                "reference_space": "Helgoland; digitale Information und Kommunikation während der angekündigten Unterbrechung",
+                "time_horizon": "rund zehn Stunden am 17. September 2026 laut NDR",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Unterbrechung betrifft für einzelne Empfänger relevante Kommunikations- und Informationswege; Notrufe bleiben erreichbar.",
+                "source_support": "NDR belegt die angekündigte Unterbrechung von Internet, Mobilfunk und Festnetz. Die Bundesnetzagentur stützt den allgemeinen Zusammenhang zwischen Stromausfall und Telekommunikationsnetzen. Eine demokratische Folge im engeren Sinn ist nicht belegt.",
+                "limitations": "Keine Angaben zu Rundfunk, Satellitenkommunikation, Ersatzwegen, Behördenbetrieb, tatsächlichen Informationsausfällen oder politischer Beteiligung.",
+                "first_order": "Mehrere digitale Kommunikationswege sind zeitweise nicht verfügbar.",
+                "second_order": "Zugang zu digitaler Information und Kommunikation kann lokal erschwert sein.",
+                "third_order": "Ein dauerhafter institutioneller oder demokratischer Effekt ist aus dem Material nicht ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Unterbrechung ist kurz und räumlich begrenzt; ihre Bedeutung für demokratische Information bleibt wegen unbekannter Ersatzwege offen."
+                },
+                "negligibility_rationale": "Nicht als fehlender Pfad behandelt: Mehrere Kommunikationswege können zeitweise ausfallen. Eine erhebliche demokratische Zustandsveränderung ist jedoch nicht belegt.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "NDR bestätigt den Kommunikationsausfall; die Bundesnetzagentur liefert den allgemeinen Mechanismusbeleg. Konkrete demokratische Folgen und Ersatzwege wurden nicht gefunden.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft potenziell die Inselbevölkerung und lokale Einrichtungen, nicht aber einen überregionalen Kommunikationsraum.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der mögliche Informations- und Kommunikationsverlust ist zeitlich begrenzt; Notrufe sollen erreichbar bleiben.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die NDR-Quelle nennt rund zehn Stunden für Internet, Mobilfunk und Festnetz.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Die Kommunikationsverbindungen sollen nach Abschluss der Arbeiten wieder verfügbar sein.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere demokratische Vulnerabilität einzelner Gruppen ist nicht belegt; mögliche Abhängigkeiten bleiben offen.",
+                    "source_ids": [
+                      "research-helgoland-ndr-2026-09-01"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft zeitweise digitale Erreichbarkeit, ohne belegte institutionelle Rückkopplung oder dauerhafte Regelwirkung.",
+                    "source_ids": [
+                      "research-telekommunikationsresilienz-bnetza"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere Schutzgrenzverletzung demokratischer Rechte ist nicht belegt. Der Pfad bleibt eine mögliche kurzfristige Einschränkung digitaler Erreichbarkeit.",
+                  "reference_frame": "Zugang zu Information, Kommunikation und erreichbarer Notfallhilfe",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "research-helgoland-ndr-2026-09-01"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der demokratische Pfad betrifft Kommunikationsvoraussetzungen, nicht eine beobachtete demokratische Wirkung. Die kurze Dauer, der lokale Raum und fehlende Angaben zu tatsächlichen Informationsausfällen begrenzen die Tragweite.",
+            "balance": {
+              "rationale": "Erreichbare Notrufe und mögliche Ersatzwege begrenzen das Risiko, sind aber keine positive demokratische Gegenwirkung und nicht vollständig dokumentiert.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Der zeitweise Ausfall von Internet, Mobilfunk und Festnetz kann digitale Information und Kommunikation erschweren.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Der zeitweise Ausfall von Internet, Mobilfunk und Festnetz kann digitale Information und Kommunikation erschweren.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "mittel",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Der gelieferte Bericht trägt den vorläufig zugeschriebenen Ereigniskern: Seekabelarbeiten, zeitweise Unterbrechung, Dieselaggregat und erreichbare Notrufe."
+          },
+          {
+            "source_id": "research-helgoland-ndr-2026-09-01",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "NDR bestätigt die geplante Abschaltung vom 16. bis 18. September, Dieselaggregate für die Stromversorgung sowie eine rund zehnstündige Unterbrechung von Internet, Mobilfunk und Festnetz am 17. September."
+          },
+          {
+            "source_id": "research-telekommunikationsresilienz-bnetza",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Bundesnetzagentur beschreibt Stromausfälle als direkten Belastungsmechanismus für Telekommunikationsnetze."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://www.ndr.de/nachrichten/schleswig-holstein/dithmarschen_steinburg/helgoland-internet-und-strom-werden-zeitweise-abgeschaltet%2Cregionheidenews-3620.html",
+          "title": "Helgoland: Internet und Strom werden zeitweise abgeschaltet",
+          "publisher": "NDR",
+          "source_id": "research-helgoland-ndr-2026-09-01",
+          "source_function": "event"
+        },
+        {
+          "url": "https://www.bundesnetzagentur.de/DE/Fachthemen/Telekommunikation/Resilienz/Strategiepapier_Resilienz.pdf?__blob=publicationFile&v=1",
+          "title": "Resilienz der Telekommunikationsnetze",
+          "publisher": "Bundesnetzagentur",
+          "source_id": "research-telekommunikationsresilienz-bnetza",
+          "source_function": "mechanism"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "high",
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Zeitweise Unterbrechung von Strom- und Kommunikationsverbindungen belastet lokale Abläufe.",
+              "mechanism": "Die Festlandstromverbindung wird für Seekabelarbeiten unterbrochen; Dieselaggregate sollen die Stromversorgung überbrücken. Internet, Mobilfunk und Festnetz sollen zeitweise ausfallen.",
+              "recipients": [
+                "Haushalte",
+                "Unternehmen",
+                "öffentliche Einrichtungen",
+                "Bewohnerinnen und Bewohner",
+                "Besucherinnen und Besucher"
+              ],
+              "evidence": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "high",
+              "source_ids": [
+                "stern-schlagzeilen",
+                "research-helgoland-ndr-2026-09-01"
+              ],
+              "condition": "Die angekündigten Arbeiten und Unterbrechungen finden im genannten Zeitraum statt; konkrete Beeinträchtigungen hängen von Ersatzkapazität und individuellen Abhängigkeiten ab.",
+              "reference_space": "Helgoland; lokale Haushalte, Betriebe und öffentliche Einrichtungen während der angekündigten Unterbrechung",
+              "time_horizon": "kurzfristig; Stromunterbrechung im Zeitraum 16. bis 18. September 2026, Kommunikationsunterbrechung laut NDR rund zehn Stunden am 17. September 2026",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die angekündigte Unterbrechung tritt ein und betrifft die regulären Verbindungen; Notrufe bleiben wie berichtet erreichbar.",
+              "source_support": "Stern und NDR belegen beziehungsweise bestätigen die Unterbrechung, die Ersatzstromversorgung und die zeitliche Begrenzung. Konkrete Schäden und Betroffenenzahlen sind nicht belegt.",
+              "limitations": "Keine Angaben zu Kapazität, Lastabwurf, konkreten Ausfällen, Ersatzkommunikation oder realen Beeinträchtigungen einzelner Einrichtungen.",
+              "first_order": "Reguläre Verbindungen werden vorübergehend unterbrochen; Strom wird lokal über Aggregate überbrückt.",
+              "second_order": "Abläufe können auf Ersatzversorgung und eingeschränkte digitale Kommunikation angewiesen sein.",
+              "third_order": "Bei längeren oder wiederkehrenden Ereignissen könnten Resilienz- und Redundanzfragen an Bedeutung gewinnen; das ist für diesen Einzelfall nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Pfad betrifft die gesamte Insel, bleibt aber zeitlich kurz und wird durch Ersatzstrom sowie erreichbare Notrufe begrenzt. Die konkrete Belastung einzelner Empfänger ist offen."
+              },
+              "negligibility_rationale": "Nicht vernachlässigbar, weil eine zentrale Inselverbindung und mehrere Kommunikationswege angekündigt unterbrochen werden.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die NDR-Recherche bestätigt Zeitraum, Ersatzstrom und Kommunikationsausfall. Konkrete individuelle Folgen bleiben offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die angekündigte Unterbrechung betrifft die Inselversorgung und damit potenziell Haushalte, Betriebe und öffentliche Einrichtungen auf Helgoland.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Unterbrechung zentraler Verbindungen ist begrenzt, wird beim Strom durch Aggregate abgefedert und bei Notrufen durch die angegebene Erreichbarkeit begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Kommunikationsunterbrechung ist mit rund zehn Stunden angegeben; der gesamte Arbeitszeitraum reicht vom 16. bis 18. September.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Die angekündigte Unterbrechung ist nach Abschluss der Arbeiten grundsätzlich reversibel.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Eine Inselbevölkerung und lokal abhängige Einrichtungen können stärker auf die wenigen Versorgungs- und Kommunikationswege angewiesen sein; konkrete Lastverteilung ist nicht belegt.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Neben dem unmittelbaren Ausfall entstehen begrenzte Folgepfade über Ersatzstrom, Brennstofflogistik und digitale Abläufe, ohne belegte strukturelle Wirkung.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01",
+                    "research-telekommunikationsresilienz-bnetza"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine belegte schwere Schutzgrenzverletzung dokumentiert. Erreichbare Notrufe begrenzen den Sicherheitsrisikopfad; eine vollständige Schutzbewertung der lokalen Notfallversorgung ist nicht möglich.",
+                "reference_frame": "öffentliche Sicherheit und erreichbare Notfallhilfe während der angekündigten Unterbrechung",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "research-helgoland-ndr-2026-09-01"
+                ],
+                "status": "conditional"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der menschliche Pfad ist als zeitlich begrenzte, potenziell inselweite Belastung plausibel und durch eine unabhängige Ereignisquelle gestützt. Die Tragweite bleibt wegen fehlender Betroffenenzahlen und unbekannter Ersatzkapazität begrenzt.",
+          "balance": {
+            "rationale": "Die Ersatzstromversorgung und erreichbare Notrufe mindern Risiken, sind aber keine positive Gegenwirkung gegenüber der Unterbrechung.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Zeitweise Unterbrechung von Strom- und Kommunikationsverbindungen belastet lokale Abläufe.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Zeitweise Unterbrechung von Strom- und Kommunikationsverbindungen belastet lokale Abläufe.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "mittel",
+          "likelihood_label": "hoch",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Der vorübergehende Dieselbetrieb kann zusätzliche lokale Emissionen und Brennstofftransporte verursachen.",
+              "mechanism": "Dieselaggregate sollen die reguläre Stromversorgung während der Seekabelarbeiten ersetzen.",
+              "recipients": [
+                "Bewohnerinnen und Bewohner",
+                "Besucherinnen und Besucher",
+                "lokale Umwelt"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "stern-schlagzeilen",
+                "research-helgoland-ndr-2026-09-01"
+              ],
+              "condition": "Die Aggregate werden tatsächlich eingesetzt und verursachen gegenüber der regulären Festlandstromversorgung zusätzliche Emissionen; Verbrauch, Laufzeit und Strommixvergleich sind unbekannt.",
+              "reference_space": "Helgoland und die mit der Ersatzversorgung verbundenen Brennstofftransporte",
+              "time_horizon": "kurzfristig während des Ersatzbetriebs im Zeitraum der Seekabelarbeiten",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Dieselbetrieb erzeugt zusätzliche lokale Emissionen gegenüber dem Vergleichszustand ohne Unterbrechung.",
+              "source_support": "NDR bestätigt die geplante Diesel-Ersatzversorgung. Keine gelesene Quelle belegt Verbrauch, Emissionsmenge oder konkrete Umweltfolgen.",
+              "limitations": "Keine Messung, keine Aggregatdaten, kein Vergleich zur regulären Stromversorgung und keine Grundlage für weitergehende Klima- oder Ökosystemfolgen.",
+              "first_order": "Temporärer Dieselbetrieb ersetzt die reguläre Stromversorgung.",
+              "second_order": "Brennstoffverbrauch und Transport können lokale Emissionen und logistische Abhängigkeiten erzeugen.",
+              "third_order": "Keine belastbare Grundlage für dauerhafte Klima-, Gesundheits- oder Ökosystemwirkungen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist plausibel, aber räumlich und zeitlich begrenzt; ohne Verbrauchs- und Betriebsdaten bleibt die mögliche Tragweite niedrig und unsicher."
+              },
+              "negligibility_rationale": "Nicht als fehlender Pfad behandelt: Ein begrenzter zusätzlicher Emissionspfad ist mechanistisch plausibel. Eine praktisch vernachlässigbare Größenordnung kann wegen fehlender Betriebsdaten nicht sicher festgestellt werden.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Ereignisrecherche bestätigt den Dieselbetrieb. Eine belastbare Quelle mit Verbrauchs- oder Emissionsdaten zum konkreten Aggregatbetrieb wurde im zulässigen Rechercheumfang nicht gefunden.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Emissionspfad ist lokal auf Helgoland und die zugehörige Brennstofflogistik begrenzt.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Zusätzliche Emissionen sind plausibel, ihre Stärke ist mangels Verbrauchs- und Lastdaten nicht quantifizierbar.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Dieselbetrieb ist an die zeitlich begrenzten Seekabelarbeiten gebunden.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Der mögliche zusätzliche Emissionspfad endet mit dem Ersatzbetrieb; keine dauerhafte Zustandsänderung ist belegt.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere ungleiche Umweltlast ist nicht belegt; mögliche lokale Belastungen werden nur allgemein modelliert.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft einen begrenzten Betriebs- und Logistikzusammenhang ohne belegte Rückkopplung oder strukturelle Wirkung.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere, belegte Umwelt- oder Gesundheitsgrenzverletzung liegt nicht vor. Der Pfad bleibt eine bedingte Nebenfolge des Ersatzbetriebs.",
+                "reference_frame": "lokale Umwelt- und Gesundheitsbelastung während des Aggregatbetriebs",
+                "source_ids": [
+                  "research-helgoland-ndr-2026-09-01"
+                ],
+                "status": "conditional"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der planetare Pfad ist eine modellierte Nebenfolge mit niedriger Evidenz. Er darf nicht als gemessene Emissionswirkung oder als Beleg für eine Klimawirkung ausgegeben werden.",
+          "balance": {
+            "rationale": "Die Ersatzstromversorgung begrenzt menschliche Versorgungsausfälle, erzeugt aber keine belegte positive Umweltwirkung und kompensiert mögliche zusätzliche Emissionen nicht.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Der vorübergehende Dieselbetrieb kann zusätzliche lokale Emissionen und Brennstofftransporte verursachen.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Der vorübergehende Dieselbetrieb kann zusätzliche lokale Emissionen und Brennstofftransporte verursachen.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Der zeitweise Ausfall von Internet, Mobilfunk und Festnetz kann digitale Information und Kommunikation erschweren.",
+              "mechanism": "Die Kommunikationsverbindungen sollen während des Seekabel-Umschlusses vorübergehend unterbrochen werden. Die Bundesnetzagentur beschreibt Stromausfälle als möglichen direkten Belastungsmechanismus für Telekommunikationsnetze.",
+              "recipients": [
+                "Bewohnerinnen und Bewohner",
+                "Besucherinnen und Besucher",
+                "Unternehmen",
+                "öffentliche Einrichtungen"
+              ],
+              "evidence": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "research-helgoland-ndr-2026-09-01",
+                "research-telekommunikationsresilienz-bnetza"
+              ],
+              "condition": "Die angekündigte Kommunikationsunterbrechung tritt ein und alternative Zugänge ersetzen die betroffenen Verbindungen nicht vollständig.",
+              "reference_space": "Helgoland; digitale Information und Kommunikation während der angekündigten Unterbrechung",
+              "time_horizon": "rund zehn Stunden am 17. September 2026 laut NDR",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Unterbrechung betrifft für einzelne Empfänger relevante Kommunikations- und Informationswege; Notrufe bleiben erreichbar.",
+              "source_support": "NDR belegt die angekündigte Unterbrechung von Internet, Mobilfunk und Festnetz. Die Bundesnetzagentur stützt den allgemeinen Zusammenhang zwischen Stromausfall und Telekommunikationsnetzen. Eine demokratische Folge im engeren Sinn ist nicht belegt.",
+              "limitations": "Keine Angaben zu Rundfunk, Satellitenkommunikation, Ersatzwegen, Behördenbetrieb, tatsächlichen Informationsausfällen oder politischer Beteiligung.",
+              "first_order": "Mehrere digitale Kommunikationswege sind zeitweise nicht verfügbar.",
+              "second_order": "Zugang zu digitaler Information und Kommunikation kann lokal erschwert sein.",
+              "third_order": "Ein dauerhafter institutioneller oder demokratischer Effekt ist aus dem Material nicht ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Unterbrechung ist kurz und räumlich begrenzt; ihre Bedeutung für demokratische Information bleibt wegen unbekannter Ersatzwege offen."
+              },
+              "negligibility_rationale": "Nicht als fehlender Pfad behandelt: Mehrere Kommunikationswege können zeitweise ausfallen. Eine erhebliche demokratische Zustandsveränderung ist jedoch nicht belegt.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "NDR bestätigt den Kommunikationsausfall; die Bundesnetzagentur liefert den allgemeinen Mechanismusbeleg. Konkrete demokratische Folgen und Ersatzwege wurden nicht gefunden.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft potenziell die Inselbevölkerung und lokale Einrichtungen, nicht aber einen überregionalen Kommunikationsraum.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der mögliche Informations- und Kommunikationsverlust ist zeitlich begrenzt; Notrufe sollen erreichbar bleiben.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die NDR-Quelle nennt rund zehn Stunden für Internet, Mobilfunk und Festnetz.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Die Kommunikationsverbindungen sollen nach Abschluss der Arbeiten wieder verfügbar sein.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere demokratische Vulnerabilität einzelner Gruppen ist nicht belegt; mögliche Abhängigkeiten bleiben offen.",
+                  "source_ids": [
+                    "research-helgoland-ndr-2026-09-01"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft zeitweise digitale Erreichbarkeit, ohne belegte institutionelle Rückkopplung oder dauerhafte Regelwirkung.",
+                  "source_ids": [
+                    "research-telekommunikationsresilienz-bnetza"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere Schutzgrenzverletzung demokratischer Rechte ist nicht belegt. Der Pfad bleibt eine mögliche kurzfristige Einschränkung digitaler Erreichbarkeit.",
+                "reference_frame": "Zugang zu Information, Kommunikation und erreichbarer Notfallhilfe",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "research-helgoland-ndr-2026-09-01"
+                ],
+                "status": "conditional"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der demokratische Pfad betrifft Kommunikationsvoraussetzungen, nicht eine beobachtete demokratische Wirkung. Die kurze Dauer, der lokale Raum und fehlende Angaben zu tatsächlichen Informationsausfällen begrenzen die Tragweite.",
+          "balance": {
+            "rationale": "Erreichbare Notrufe und mögliche Ersatzwege begrenzen das Risiko, sind aber keine positive demokratische Gegenwirkung und nicht vollständig dokumentiert.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Der zeitweise Ausfall von Internet, Mobilfunk und Festnetz kann digitale Information und Kommunikation erschweren.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Der zeitweise Ausfall von Internet, Mobilfunk und Festnetz kann digitale Information und Kommunikation erschweren.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "mittel",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "kommunen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T06:10:40.031Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T03:00:24.000Z",
+      "last_updated": "2026-09-14T06:10:40.031Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-743b11c040f44822e77d",
+      "case_file": null,
+      "source_published_at": "2026-09-14T03:00:24.000Z",
+      "published_at": "2026-09-14T06:10:40.031Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, wann die Arbeiten am Seekabel abgeschlossen und Festlandstrom sowie Internet wieder verfügbar sind.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Wiederherstellung der Festlandstrom- und Internetverbindung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d63fa6f74aaba588",
+          "announced_at": "2026-09-14T03:00:24.000Z",
+          "follow_up_date": "2026-09-21T06:10:40.031Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/infrastruktur--helgoland-autark---insel-fuer-zwei-tage-ohne-festlandstrom-38248770.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T03:00:24.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-bbf462183939f712",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbf462183939f712-1426c7d12f3043bf-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbf462183939f712-b8e74d970c92d420-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-bbf462183939f712-5fa14ee8b9f98f13-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "waymo-geheime-robotaxi-plane-fur-berlin-39f712",
+      "title": "Waymo: Geheime Robotaxi-Pläne für Berlin",
+      "source_summary": "Manager magazin berichtet, Waymo plane eine weitreichendere Expansion in Deutschland als bisher bekannt. Grundlage des Berichts seien interne Dokumente. Danach seien die Vorbereitungen für einen vollständig fahrerlosen Robotaxi-Dienst in Berlin weit fortgeschritten.\n\nDie vorgelegte Quelle belegt damit einen journalistischen Bericht über interne Planungen, aber noch keinen Start des Dienstes, keine Genehmigung und keinen Betrieb in Berlin. Die Originaldokumente und der vollständige Kontext sind in der vorliegenden Textauswahl nicht enthalten.",
+      "summary": "Manager magazin berichtet unter Berufung auf interne Dokumente über weit fortgeschrittene Vorbereitungen von Waymo für einen fahrerlosen Robotaxi-Dienst in Berlin. Ob daraus ein genehmigter oder tatsächlich startender Betrieb wird, ist offen.",
+      "detail_summary": "Der neue Nachrichtenkern ist ein Bericht über interne Waymo-Planungen für Berlin. Die Quelle beschreibt die Vorbereitungen als weit fortgeschritten, belegt aber weder eine Genehmigung noch einen Betriebsstart. Relevant ist der mögliche Eintritt eines neuen Mobilitätsanbieters in einen städtischen Verkehrsmarkt. Folgen für Wettbewerb, Arbeit, Zugang und Verkehr lassen sich zunächst nur bedingt modellieren, weil Umfang, Zeitplan und regulatorischer Status fehlen.",
+      "why_relevant": "Ein möglicher fahrerloser Robotaxi-Dienst würde einen neuen Anbieter und eine neue Technologie in den Berliner Mobilitätsmarkt bringen. Der Bericht belegt jedoch nur interne Vorbereitungen, nicht deren Umsetzung.",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht von manager magazin über interne Dokumente zu weit fortgeschrittenen Vorbereitungen für einen möglichen fahrerlosen Robotaxi-Dienst von Waymo in Berlin",
+        "evaluation_target": {
+          "label": "mögliche Einführung eines fahrerlosen Robotaxi-Dienstes in Berlin",
+          "type": "proposal"
+        },
+        "baseline": "Zum Zeitpunkt des Berichts ist kein Waymo-Robotaxi-Betrieb in Berlin belegt. Bestehende Mobilitätsangebote sowie die geltenden Genehmigungs- und Aufsichtsstrukturen bilden den Vergleichszustand.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne Umsetzung der berichteten Planung bliebe das Berliner Mobilitätsangebot ohne diesen möglichen Waymo-Dienst; bestehende Anbieter, der öffentliche Verkehr und andere Verkehrsmittel würden den Markt weiterhin prägen.",
+        "reference_frame": [
+          "städtischer Mobilitätszugang",
+          "Wettbewerb und Arbeit im Mobilitätssektor",
+          "Verkehrs- und Umweltwirkungen",
+          "Verkehrssicherheit und regulatorische Korrekturfähigkeit"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Falls aus den Vorbereitungen ein genehmigter und zugänglicher Betrieb entsteht, könnte sich das Angebot individueller Fahrten verändern. Mögliche Folgen für Preise, Zugang, Beschäftigung und bestehende Anbieter hängen von Flottengröße, Einsatzgebiet und Betriebsbedingungen ab und sind nicht belegt.",
+            "planet": "Ein möglicher Betrieb könnte Fahrzeugkilometer, Energiebedarf und Verkehrsmengen verändern. Ob dadurch zusätzliche Belastungen oder Einsparungen entstehen, ist ohne Angaben zu Fahrzeugen, Energiequelle, Auslastung und Ersatzwirkungen offen.",
+            "democracy": "Eine Konkretisierung des Vorhabens könnte Prüfungen und Entscheidungen zu Genehmigung, Sicherheit, Zugang und Aufsicht auslösen. Ein Verfahren, eine Entscheidung oder eine konkrete Einflussnahme ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Ein möglicher neuer fahrerloser Fahrdienst könnte das städtische Mobilitätsangebot und den regulatorischen Prüfbedarf verändern. Belegt ist derzeit nur ein zugeschriebener Bericht über interne Vorbereitungen.",
+          "second_order": "Bei tatsächlicher Einführung könnten sich Nachfrage, Beschäftigung, Verkehrsmengen und Zugang zwischen Stadtteilen oder Nutzergruppen verschieben. Die Richtung ist von noch unbekannten Betriebsbedingungen abhängig.",
+          "third_order": "Ein dauerhaft etablierter Dienst könnte langfristig Erwartungen an automatisierte Mobilität, Verkehrsplanung und Regulierung beeinflussen. Eine solche Kaskade ist derzeit nur ein bedingtes Szenario.",
+          "enablement": [
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Die Originaldokumente liegen in der vorliegenden Textauswahl nicht vor.",
+            "Es gibt keine vorgelegte Bestätigung durch Waymo oder eine zuständige Berliner Behörde.",
+            "Ein möglicher Dienst könnte wegen Genehmigungen, Kosten, begrenztem Gebiet oder geringer Flottengröße lokal und materiell begrenzt bleiben.",
+            "Öffentlicher Verkehr und andere Mobilitätsangebote können als Ausweichoptionen fortbestehen; ihre konkrete Wirkung ist nicht untersucht."
+          ],
+          "source_independence": "Die gebundene Ereignisquelle ist ein einzelner journalistischer Bericht. Die ergänzende Recherche nach einer amtlichen oder unabhängigen Bestätigung sowie nach Mechanismusbelegen war abgeschlossen, lieferte aber keine zugängliche und tatsächlich gelesene Zusatzquelle aus dem zulässigen Quellenregister.",
+          "institutional_status": "Kein belegtes Genehmigungs-, Beschluss- oder Inkrafttretensergebnis. Der rechtliche und administrative Status eines möglichen Berliner Betriebs bleibt offen."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Mögliche Veränderung des Zugangs zu städtischen Fahrdiensten und der Beschäftigungsstruktur im Mobilitätssektor",
+                "mechanism": "Wenn Waymo einen genehmigten Dienst mit relevantem Umfang und zugänglichen Preisen aufnimmt, könnten zusätzliche Fahrten angeboten und Aufgaben sowie Nachfrage in einem Teil des Mobilitätssektors verschoben werden.",
+                "recipients": [
+                  "Verkehrsnutzerinnen und Verkehrsnutzer",
+                  "Beschäftigte im Mobilitätssektor",
+                  "bestehende Fahrdienstanbieter"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Waymo erhält die erforderlichen Genehmigungen und nimmt einen Dienst mit relevantem Umfang und zugänglichen Preisen auf.",
+                "reference_space": "Berlin, städtischer Mobilitätsmarkt",
+                "time_horizon": "mittelfristig nach einem möglichen Betriebsstart",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die berichteten Vorbereitungen führen zu einem realen Dienst; Betriebsumfang, Preise, Einsatzgebiet und Zugangsbedingungen sind noch offen.",
+                "source_support": "Die gebundene Quelle belegt nur den zugeschriebenen Bericht über interne Vorbereitungen, nicht deren Umsetzung oder soziale Folgen.",
+                "limitations": "Keine Angaben zu Preis, Einsatzgebiet, Flottengröße, Beschäftigungseffekten, Barrierefreiheit oder konkreten Nutzergruppen.",
+                "first_order": "Möglicher zusätzlicher Fahrdienst und mögliche Aufgabenverlagerung.",
+                "second_order": "Mögliche Veränderung von Nachfrage und Zugang zwischen Nutzergruppen, abhängig von Preis, Gebiet und Verfügbarkeit.",
+                "third_order": "Langfristige Veränderung städtischer Mobilitätsmuster bleibt ein unsicheres Szenario ohne Beleg für eine eingetretene Kaskade.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne Umsetzung entsteht keine Zustandsveränderung; bei begrenztem Berliner Betrieb ist eine lokale und begrenzte Veränderung plausibel."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht fehlend, aber ohne Umsetzung oder relevanten Betriebsumfang praktisch vernachlässigbar.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Recherche nach einem unabhängigen Mechanismusbeleg wurde durchgeführt, lieferte aber keine zugängliche und tatsächlich gelesene zulässige Quelle. Der Pfad bleibt eine niedrig evidenzierte Modellhypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der mögliche Wirkungsraum ist zunächst auf den Berliner Stadt- und Mobilitätsmarkt begrenzt; der Bericht nennt Berlin als konkreten Ort.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Veränderung des Angebots wäre zunächst gering bis begrenzt; konkrete Betriebsdaten und Auswirkungen fehlen.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer eines möglichen Betriebs und seiner sozialen Folgen ist unbekannt; ein begrenzter, veränderbarer Dienst ist möglich.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ein Dienst könnte grundsätzlich mit begrenztem Aufwand angepasst, eingeschränkt oder eingestellt werden; dauerhafte Lock-ins sind nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Preis, Gebiet und Zugänglichkeit könnten einzelne Nutzergruppen oder Beschäftigte ungleich treffen; konkrete vulnerable Gruppen und Lasten sind jedoch nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft zunächst einen begrenzten Mobilitätsmarkt; relevante Rückkopplungen auf Beschäftigung oder Zugang sind möglich, aber nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete schwere Schutzgrenzverletzung bei Zugang, Beschäftigung oder Sicherheit ist weder beobachtet noch ex ante genau bedingt modelliert.",
+                  "reference_frame": "Zugang zu Mobilität, faire Arbeitsbedingungen und Barrierefreiheit",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Mögliche ungleiche Verteilung des Zugangs",
+                "mechanism": "Ein begrenztes Einsatzgebiet oder ein hoher Preis könnte Vorteile auf bestimmte Stadtteile oder Nutzergruppen konzentrieren.",
+                "recipients": [
+                  "Haushalte mit geringem Einkommen",
+                  "Menschen mit eingeschränkter Mobilität",
+                  "Bewohnerinnen und Bewohner nicht angebundener Stadtteile"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "low",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Der mögliche Dienst bleibt räumlich oder preislich selektiv.",
+                "reference_space": "Berlin, Zugang zu individueller Mobilität",
+                "time_horizon": "kurz- bis mittelfristig nach einem möglichen Betriebsstart",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der Dienst wird nicht flächendeckend oder nicht zu gleichen Bedingungen verfügbar.",
+                "source_support": "Die Quelle nennt keine Preise, Einsatzgebiete oder Zugangsvorgaben; der Pfad ist nur aus dem beschriebenen möglichen Betriebsmodell abgeleitet.",
+                "limitations": "Keine Daten zu Preisen, Barrierefreiheit, Abdeckung oder konkreten Betroffenengruppen.",
+                "first_order": "Ungleiche Verfügbarkeit möglicher Fahrten.",
+                "second_order": "Mögliche Verstärkung bestehender räumlicher oder sozialer Mobilitätsunterschiede.",
+                "third_order": "Dauerhafte Zugangsmuster sind ohne Betriebs- und Nutzungsdaten nicht assessierbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der Nebenpfad bleibt ohne belegte Betriebsbedingungen praktisch vernachlässigbar bis begrenzt."
+                },
+                "negligibility_rationale": "Er ist ein kleines bedingtes Nebenrisiko und verändert die offene Hauptrichtung nicht.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Quelle zu Zugangs- oder Verteilungswirkungen wurde tatsächlich gelesen; der Pfad bleibt eine niedrig evidenzierte Modellhypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Nebenpfad betrifft nur möglicherweise ausgeschlossene oder bevorzugte Teilgruppen in Berlin.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Zugangslücke wäre zunächst begrenzt; konkrete Belastungen sind nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer und Stabilität einer möglichen Zugangslücke sind unbekannt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Zugang, Gebiet und Preise könnten regulatorisch oder betrieblich verändert werden.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen mit geringem Einkommen oder eingeschränkter Mobilität könnten überproportional betroffen sein; konkrete Betroffenheit ist nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Zugangslücke bliebe zunächst ein begrenzter Nebenpfad ohne belegte strukturelle Rückkopplung.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Schutzgrenzverletzung oder diskriminierende Zugangsregel ist belegt.",
+                  "reference_frame": "gleichberechtigter und barrierearmer Zugang zu Mobilität",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Das menschliche Potenzial besteht als niedrig evidenziertes, offenes ex-ante-Szenario. Der Bericht belegt weder Betrieb noch konkrete Folgen für Zugang oder Arbeit. Ein mögliches Verteilungsrisiko wird getrennt als kleiner Nebenpfad geführt.",
+            "balance": {
+              "rationale": "Die offene Hauptrichtung bleibt angemessen, weil positive und negative Folgen gleichermaßen von unbekannten Betriebsbedingungen abhängen; der negative Zugangspfad ist nur ein begrenztes Nebenrisiko.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung des Zugangs zu städtischen Fahrdiensten und der Beschäftigungsstruktur im Mobilitätssektor",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung des Zugangs zu städtischen Fahrdiensten und der Beschäftigungsstruktur im Mobilitätssektor",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Mögliche Veränderung von Verkehrsmengen, Energiebedarf und Ressourcenverbrauch durch einen Robotaxi-Betrieb",
+                "mechanism": "Eine autonome Fahrzeugflotte könnte zusätzliche Fahrten erzeugen oder andere Verkehrsmittel ersetzen. Dadurch könnten sich Fahrzeugkilometer, Energiebedarf und Umweltbelastungen verändern.",
+                "recipients": [
+                  "Stadtbevölkerung",
+                  "Verkehrs- und Energiesystem",
+                  "Umwelt"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Ein realer Betrieb entsteht und verändert Verkehrsmittelwahl, Auslastung oder Fahrzeugkilometer in relevantem Umfang.",
+                "reference_space": "Berlin, Verkehr, Energie- und Ressourcenverbrauch",
+                "time_horizon": "mittelfristig nach einem möglichen Betriebsstart",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der Dienst beeinflusst Verkehrsmengen oder Auslastung; Fahrzeugtechnik, Energiequelle, Auslastung und Ersatzwirkungen sind unbekannt.",
+                "source_support": "Die Quelle belegt nur berichtete Vorbereitungen, keine Fahrzeuge im Betrieb und keine Umweltkennzahlen.",
+                "limitations": "Keine Daten zu Fahrzeugen, Energie, Auslastung, Fahrzeugkilometern, Ersatzverkehr oder Emissionen.",
+                "first_order": "Mögliche zusätzliche oder veränderte Fahrten.",
+                "second_order": "Mögliche Veränderung von Energiebedarf, Verkehrsdichte und Flächennutzung.",
+                "third_order": "Ökologische Rückkopplungen oder fossile beziehungsweise technische Lock-ins sind ohne Betriebsdaten nicht belastbar modellierbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ohne Umsetzung oder relevante Verkehrsveränderung bleibt der Pfad praktisch vernachlässigbar; die Quelle trägt keine höhere konkrete Tragweite."
+                },
+                "negligibility_rationale": "Der Pfad bleibt ohne reale Flotte und nachgewiesene Verkehrsveränderung praktisch vernachlässigbar.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Recherche nach einer unabhängigen Mechanismus- oder Umweltquelle wurde durchgeführt, lieferte aber keine zugängliche und tatsächlich gelesene zulässige Quelle. Richtung und Eintritt bleiben offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der mögliche Umweltpfad wäre zunächst auf Berlin und einen einzelnen Dienst begrenzt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Umweltveränderung ist nicht belegt; der mögliche Effekt wäre zunächst gering.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer eines möglichen Betriebs und seiner Umweltwirkung ist unbekannt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Verkehrs- und Betriebsentscheidungen wären grundsätzlich veränderbar; konkrete irreversible Lock-ins sind nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ungleiche Umweltbelastungen sind denkbar, aber nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine relevante ökologische Rückkopplung ist aus der Quelle nicht ableitbar; ein begrenzter Folgepfad bleibt möglich.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete Umweltgrenzverletzung oder schwere Schutzschädigung ist belegt oder ex ante genau bedingt modelliert.",
+                  "reference_frame": "städtische Umwelt-, Klima- und Ressourcenbelastung",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "open",
+                "label": "Mögliche Verlagerung statt Verringerung von Umweltbelastungen",
+                "mechanism": "Ein Robotaxi-Angebot könnte öffentliche oder private Fahrten ergänzen statt ersetzen; dadurch könnte der Energie- und Verkehrsaufwand steigen, sinken oder sich nur verlagern.",
+                "recipients": [
+                  "Stadtbevölkerung",
+                  "Verkehrssystem",
+                  "Umwelt"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Der Dienst verändert die Verkehrsmittelwahl, ohne ausreichend andere Fahrten zu ersetzen.",
+                "reference_space": "Berlin, Verkehr und Umwelt",
+                "time_horizon": "mittelfristig nach einem möglichen Betriebsstart",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Zusätzliche Nachfrage oder Leerfahrten treten auf; Auslastung und Ersatzverkehr sind unbekannt.",
+                "source_support": "Die Quelle enthält keine Verkehrs- oder Energiedaten; der Pfad ist eine bedingte Modellannahme.",
+                "limitations": "Keine Angaben zu Leerfahrten, Auslastung, Fahrzeugantrieb oder Verlagerung aus dem öffentlichen Verkehr.",
+                "first_order": "Mögliche zusätzliche Fahrzeugkilometer.",
+                "second_order": "Möglicher zusätzlicher Energie- und Flächenbedarf.",
+                "third_order": "Dauerhafte Verkehrs- oder Energiepfade sind nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ohne Flotte und Nutzungsdaten bleibt der mögliche Verlagerungspfad praktisch vernachlässigbar bis begrenzt."
+                },
+                "negligibility_rationale": "Der Pfad ist ein kleines, unsicheres Nebenrisiko und keine belegte Umweltfolge.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Kein unabhängiger Mechanismusbeleg wurde tatsächlich gelesen; der Pfad bleibt nicht assessierbar mit begrenzter konservativer Tragweite.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Verlagerung beträfe zunächst den Berliner Verkehr.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der Umfang möglicher Zusatzfahrten ist unbekannt und zunächst als gering anzusetzen.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer hängt von einem möglichen Betriebsmodell ab.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Fahrten und Betriebsumfang könnten grundsätzlich verändert werden.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ungleiche Belastungen sind möglich, aber nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine systemische Umweltwirkung ist nicht belegt und bleibt auf einen möglichen begrenzten Folgepfad beschränkt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Umwelt- oder Gesundheitsschutzgrenzverletzung ist belegt.",
+                  "reference_frame": "städtische Umwelt- und Gesundheitsbelastung",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Der Planetpfad muss wegen der möglichen Verkehrstechnologie geprüft werden, ist aber sehr schwach belegt. Die Quelle enthält keine Angaben zu Energie, Emissionen, Auslastung oder Verkehrsverlagerung; eine positive oder negative Richtung wird deshalb nicht behauptet.",
+            "balance": {
+              "rationale": "Es gibt keinen belegten positiven oder negativen Umweltpfad. Die offene Richtung ist eine Folge fehlender Betriebs- und Mechanismusdaten, nicht eine neutrale Bewertung.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung von Verkehrsmengen, Energiebedarf und Ressourcenverbrauch durch einen Robotaxi-Betrieb",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung von Verkehrsmengen, Energiebedarf und Ressourcenverbrauch durch einen Robotaxi-Betrieb",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Mögliche Veränderung regulatorischer Entscheidungen und öffentlicher Rechenschaft über automatisierte Mobilität",
+                "mechanism": "Ein konkret werdender Robotaxi-Dienst müsste Genehmigungs-, Sicherheits- und Aufsichtsanforderungen erfüllen. Dadurch könnten Prüfungen und öffentliche Entscheidungen zu automatisierter Mobilität ausgelöst werden.",
+                "recipients": [
+                  "Berliner Behörden",
+                  "politische Entscheidungsträgerinnen und Entscheidungsträger",
+                  "Öffentlichkeit",
+                  "Verkehrsteilnehmende"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Die Planung wird konkret und erreicht ein Genehmigungs- oder Aufsichtsverfahren mit öffentlicher Relevanz.",
+                "reference_space": "Berlin, kommunale und regulatorische Entscheidungsstrukturen",
+                "time_horizon": "mittelfristig bei weiterer Konkretisierung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ein möglicher Dienst führt zu formalen Prüfungen und öffentlicher Debatte; konkrete Verfahren sind nicht belegt.",
+                "source_support": "Die Quelle belegt keine Behördenentscheidung und kein Verfahren, sondern nur berichtete interne Vorbereitungen.",
+                "limitations": "Unklar sind Zuständigkeit, Genehmigungsweg, Beteiligung der Öffentlichkeit und Sicherheitsanforderungen.",
+                "first_order": "Möglicher Prüf- und Genehmigungsbedarf.",
+                "second_order": "Mögliche politische Debatte über Regeln, Sicherheit, Zugang und Rechenschaft.",
+                "third_order": "Eine langfristige Veränderung institutioneller Regeln ist möglich, aber nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ohne Konkretisierung entsteht keine belegte institutionelle Zustandsveränderung; bei weiterer Planung wäre der Effekt zunächst begrenzt."
+                },
+                "negligibility_rationale": "Ohne ein konkretes Verfahren bleibt der institutionelle Pfad praktisch vernachlässigbar; der Pfad selbst ist wegen des möglichen Genehmigungsbedarfs dokumentiert.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Recherche nach einer amtlichen Rechts- oder Behördenquelle wurde durchgeführt, lieferte aber keine zugängliche und tatsächlich gelesene zulässige Quelle. Institutioneller Status und konkrete Verfahren bleiben offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der mögliche institutionelle Pfad wäre zunächst auf Berliner Behörden und die lokale Öffentlichkeit begrenzt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Prüfbedarf wäre zunächst begrenzt; konkrete politische Entscheidungen fehlen.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer und Fortbestand eines möglichen Verfahrens sind unbekannt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Regulatorische Entscheidungen wären grundsätzlich korrigierbar; dauerhafte Regeländerungen sind nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Mögliche Verteilungs- und Zugangsfragen sind offen; eine konkrete demokratische Schutzbedürftigkeit ist nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein möglicher institutioneller Folgepfad bleibt zunächst begrenzt und ohne belegte Regel- oder Machtverschiebung.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Verletzung demokratischer oder rechtlicher Schutzgrenzen ist belegt oder ex ante genau bedingt modelliert.",
+                  "reference_frame": "öffentliche Rechenschaft, transparente Regulierung und demokratische Korrekturfähigkeit",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Mögliches Transparenz- und Einflussrisiko bei einem privat geplanten Mobilitätsdienst",
+                "mechanism": "Falls ein Vorhaben ohne ausreichende öffentliche Informationen oder Beteiligung konkret würde, könnte die Nachvollziehbarkeit regulatorischer Entscheidungen beeinträchtigt werden.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "kommunale Entscheidungsträgerinnen und Entscheidungsträger",
+                  "Verkehrsteilnehmende"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "condition": "Ein Verfahren wird eingeleitet und bleibt zugleich intransparent oder unzureichend öffentlich nachvollziehbar.",
+                "reference_space": "Berlin, öffentliche Regulierung automatisierter Mobilität",
+                "time_horizon": "bei einer möglichen späteren Genehmigungs- oder Aufsichtsphase",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ein möglicher privater Anbieter erhält politischen oder administrativen Einfluss ohne ausreichende Transparenz; dafür gibt es keinen konkreten Beleg.",
+                "source_support": "Die Quelle belegt interne Planungen, aber keine Einflussnahme, Intransparenz oder Behördenentscheidung.",
+                "limitations": "Der Pfad ist spekulativ und darf nicht als festgestellter demokratischer Schaden gelesen werden.",
+                "first_order": "Möglicher zusätzlicher Informations- und Prüfbedarf.",
+                "second_order": "Mögliche Debatte über Transparenz und Verantwortlichkeit.",
+                "third_order": "Eine dauerhafte Macht- oder Regelverschiebung ist nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ohne Verfahren oder konkreten Transparenzmangel bleibt der Pfad praktisch vernachlässigbar bis begrenzt."
+                },
+                "negligibility_rationale": "Der Pfad ist ein schwaches, nicht belegtes Nebenrisiko und begründet keine negative Hauptrichtung.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Quelle zu Einflussnahme, Transparenz oder demokratischer Wirkung wurde tatsächlich gelesen; der Pfad bleibt eine niedrig evidenzierte Modellhypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Transparenzmangel beträfe zunächst ein lokales Verfahren in Berlin.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Beeinträchtigung ist nicht belegt; der mögliche Effekt wäre zunächst begrenzt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer und Fortbestand eines möglichen Verfahrens sind unbekannt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Transparenz und Beteiligung könnten grundsätzlich nachgebessert werden.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Schutzbedürftigkeit oder Ausschlusswirkung ist nicht belegt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine Regel- oder Machtverschiebung ist nicht belegt; der mögliche Folgepfad bliebe zunächst begrenzt.",
+                    "source_ids": [
+                      "manager-magazin-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Verletzung demokratischer, rechtsstaatlicher oder transparenzbezogener Schutzgrenzen ist belegt.",
+                  "reference_frame": "Transparenz, öffentliche Beteiligung und demokratische Kontrolle",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Der Demokratiepfad betrifft mögliche spätere Genehmigungs- und Aufsichtsentscheidungen, nicht eine bereits eingetretene politische Wirkung. Da weder ein Verfahren noch eine Entscheidung belegt ist, bleibt die Tragweite niedrig und die Richtung offen.",
+            "balance": {
+              "rationale": "Der mögliche institutionelle Prüfpfad und das kleine Transparenzrisiko sind beide konditional. Das Nebenrisiko verändert die offene Hauptrichtung nicht.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung regulatorischer Entscheidungen und öffentlicher Rechenschaft über automatisierte Mobilität",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung regulatorischer Entscheidungen und öffentlicher Rechenschaft über automatisierte Mobilität",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "manager-magazin-news",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Der zugeschriebene Bericht beschreibt eine weitreichendere Waymo-Expansion und laut internen Dokumenten weit fortgeschrittene Vorbereitungen für einen vollständig fahrerlosen Robotaxi-Dienst in Berlin."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Mögliche Veränderung des Zugangs zu städtischen Fahrdiensten und der Beschäftigungsstruktur im Mobilitätssektor",
+              "mechanism": "Wenn Waymo einen genehmigten Dienst mit relevantem Umfang und zugänglichen Preisen aufnimmt, könnten zusätzliche Fahrten angeboten und Aufgaben sowie Nachfrage in einem Teil des Mobilitätssektors verschoben werden.",
+              "recipients": [
+                "Verkehrsnutzerinnen und Verkehrsnutzer",
+                "Beschäftigte im Mobilitätssektor",
+                "bestehende Fahrdienstanbieter"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Waymo erhält die erforderlichen Genehmigungen und nimmt einen Dienst mit relevantem Umfang und zugänglichen Preisen auf.",
+              "reference_space": "Berlin, städtischer Mobilitätsmarkt",
+              "time_horizon": "mittelfristig nach einem möglichen Betriebsstart",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die berichteten Vorbereitungen führen zu einem realen Dienst; Betriebsumfang, Preise, Einsatzgebiet und Zugangsbedingungen sind noch offen.",
+              "source_support": "Die gebundene Quelle belegt nur den zugeschriebenen Bericht über interne Vorbereitungen, nicht deren Umsetzung oder soziale Folgen.",
+              "limitations": "Keine Angaben zu Preis, Einsatzgebiet, Flottengröße, Beschäftigungseffekten, Barrierefreiheit oder konkreten Nutzergruppen.",
+              "first_order": "Möglicher zusätzlicher Fahrdienst und mögliche Aufgabenverlagerung.",
+              "second_order": "Mögliche Veränderung von Nachfrage und Zugang zwischen Nutzergruppen, abhängig von Preis, Gebiet und Verfügbarkeit.",
+              "third_order": "Langfristige Veränderung städtischer Mobilitätsmuster bleibt ein unsicheres Szenario ohne Beleg für eine eingetretene Kaskade.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne Umsetzung entsteht keine Zustandsveränderung; bei begrenztem Berliner Betrieb ist eine lokale und begrenzte Veränderung plausibel."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht fehlend, aber ohne Umsetzung oder relevanten Betriebsumfang praktisch vernachlässigbar.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Recherche nach einem unabhängigen Mechanismusbeleg wurde durchgeführt, lieferte aber keine zugängliche und tatsächlich gelesene zulässige Quelle. Der Pfad bleibt eine niedrig evidenzierte Modellhypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der mögliche Wirkungsraum ist zunächst auf den Berliner Stadt- und Mobilitätsmarkt begrenzt; der Bericht nennt Berlin als konkreten Ort.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Veränderung des Angebots wäre zunächst gering bis begrenzt; konkrete Betriebsdaten und Auswirkungen fehlen.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer eines möglichen Betriebs und seiner sozialen Folgen ist unbekannt; ein begrenzter, veränderbarer Dienst ist möglich.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ein Dienst könnte grundsätzlich mit begrenztem Aufwand angepasst, eingeschränkt oder eingestellt werden; dauerhafte Lock-ins sind nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Preis, Gebiet und Zugänglichkeit könnten einzelne Nutzergruppen oder Beschäftigte ungleich treffen; konkrete vulnerable Gruppen und Lasten sind jedoch nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft zunächst einen begrenzten Mobilitätsmarkt; relevante Rückkopplungen auf Beschäftigung oder Zugang sind möglich, aber nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete schwere Schutzgrenzverletzung bei Zugang, Beschäftigung oder Sicherheit ist weder beobachtet noch ex ante genau bedingt modelliert.",
+                "reference_frame": "Zugang zu Mobilität, faire Arbeitsbedingungen und Barrierefreiheit",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Mögliche ungleiche Verteilung des Zugangs",
+              "mechanism": "Ein begrenztes Einsatzgebiet oder ein hoher Preis könnte Vorteile auf bestimmte Stadtteile oder Nutzergruppen konzentrieren.",
+              "recipients": [
+                "Haushalte mit geringem Einkommen",
+                "Menschen mit eingeschränkter Mobilität",
+                "Bewohnerinnen und Bewohner nicht angebundener Stadtteile"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "low",
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Der mögliche Dienst bleibt räumlich oder preislich selektiv.",
+              "reference_space": "Berlin, Zugang zu individueller Mobilität",
+              "time_horizon": "kurz- bis mittelfristig nach einem möglichen Betriebsstart",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der Dienst wird nicht flächendeckend oder nicht zu gleichen Bedingungen verfügbar.",
+              "source_support": "Die Quelle nennt keine Preise, Einsatzgebiete oder Zugangsvorgaben; der Pfad ist nur aus dem beschriebenen möglichen Betriebsmodell abgeleitet.",
+              "limitations": "Keine Daten zu Preisen, Barrierefreiheit, Abdeckung oder konkreten Betroffenengruppen.",
+              "first_order": "Ungleiche Verfügbarkeit möglicher Fahrten.",
+              "second_order": "Mögliche Verstärkung bestehender räumlicher oder sozialer Mobilitätsunterschiede.",
+              "third_order": "Dauerhafte Zugangsmuster sind ohne Betriebs- und Nutzungsdaten nicht assessierbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der Nebenpfad bleibt ohne belegte Betriebsbedingungen praktisch vernachlässigbar bis begrenzt."
+              },
+              "negligibility_rationale": "Er ist ein kleines bedingtes Nebenrisiko und verändert die offene Hauptrichtung nicht.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Quelle zu Zugangs- oder Verteilungswirkungen wurde tatsächlich gelesen; der Pfad bleibt eine niedrig evidenzierte Modellhypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Nebenpfad betrifft nur möglicherweise ausgeschlossene oder bevorzugte Teilgruppen in Berlin.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Zugangslücke wäre zunächst begrenzt; konkrete Belastungen sind nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer und Stabilität einer möglichen Zugangslücke sind unbekannt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Zugang, Gebiet und Preise könnten regulatorisch oder betrieblich verändert werden.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen mit geringem Einkommen oder eingeschränkter Mobilität könnten überproportional betroffen sein; konkrete Betroffenheit ist nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Zugangslücke bliebe zunächst ein begrenzter Nebenpfad ohne belegte strukturelle Rückkopplung.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Schutzgrenzverletzung oder diskriminierende Zugangsregel ist belegt.",
+                "reference_frame": "gleichberechtigter und barrierearmer Zugang zu Mobilität",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Das menschliche Potenzial besteht als niedrig evidenziertes, offenes ex-ante-Szenario. Der Bericht belegt weder Betrieb noch konkrete Folgen für Zugang oder Arbeit. Ein mögliches Verteilungsrisiko wird getrennt als kleiner Nebenpfad geführt.",
+          "balance": {
+            "rationale": "Die offene Hauptrichtung bleibt angemessen, weil positive und negative Folgen gleichermaßen von unbekannten Betriebsbedingungen abhängen; der negative Zugangspfad ist nur ein begrenztes Nebenrisiko.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung des Zugangs zu städtischen Fahrdiensten und der Beschäftigungsstruktur im Mobilitätssektor",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung des Zugangs zu städtischen Fahrdiensten und der Beschäftigungsstruktur im Mobilitätssektor",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Mögliche Veränderung von Verkehrsmengen, Energiebedarf und Ressourcenverbrauch durch einen Robotaxi-Betrieb",
+              "mechanism": "Eine autonome Fahrzeugflotte könnte zusätzliche Fahrten erzeugen oder andere Verkehrsmittel ersetzen. Dadurch könnten sich Fahrzeugkilometer, Energiebedarf und Umweltbelastungen verändern.",
+              "recipients": [
+                "Stadtbevölkerung",
+                "Verkehrs- und Energiesystem",
+                "Umwelt"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Ein realer Betrieb entsteht und verändert Verkehrsmittelwahl, Auslastung oder Fahrzeugkilometer in relevantem Umfang.",
+              "reference_space": "Berlin, Verkehr, Energie- und Ressourcenverbrauch",
+              "time_horizon": "mittelfristig nach einem möglichen Betriebsstart",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der Dienst beeinflusst Verkehrsmengen oder Auslastung; Fahrzeugtechnik, Energiequelle, Auslastung und Ersatzwirkungen sind unbekannt.",
+              "source_support": "Die Quelle belegt nur berichtete Vorbereitungen, keine Fahrzeuge im Betrieb und keine Umweltkennzahlen.",
+              "limitations": "Keine Daten zu Fahrzeugen, Energie, Auslastung, Fahrzeugkilometern, Ersatzverkehr oder Emissionen.",
+              "first_order": "Mögliche zusätzliche oder veränderte Fahrten.",
+              "second_order": "Mögliche Veränderung von Energiebedarf, Verkehrsdichte und Flächennutzung.",
+              "third_order": "Ökologische Rückkopplungen oder fossile beziehungsweise technische Lock-ins sind ohne Betriebsdaten nicht belastbar modellierbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ohne Umsetzung oder relevante Verkehrsveränderung bleibt der Pfad praktisch vernachlässigbar; die Quelle trägt keine höhere konkrete Tragweite."
+              },
+              "negligibility_rationale": "Der Pfad bleibt ohne reale Flotte und nachgewiesene Verkehrsveränderung praktisch vernachlässigbar.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Recherche nach einer unabhängigen Mechanismus- oder Umweltquelle wurde durchgeführt, lieferte aber keine zugängliche und tatsächlich gelesene zulässige Quelle. Richtung und Eintritt bleiben offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der mögliche Umweltpfad wäre zunächst auf Berlin und einen einzelnen Dienst begrenzt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Umweltveränderung ist nicht belegt; der mögliche Effekt wäre zunächst gering.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer eines möglichen Betriebs und seiner Umweltwirkung ist unbekannt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Verkehrs- und Betriebsentscheidungen wären grundsätzlich veränderbar; konkrete irreversible Lock-ins sind nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ungleiche Umweltbelastungen sind denkbar, aber nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine relevante ökologische Rückkopplung ist aus der Quelle nicht ableitbar; ein begrenzter Folgepfad bleibt möglich.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete Umweltgrenzverletzung oder schwere Schutzschädigung ist belegt oder ex ante genau bedingt modelliert.",
+                "reference_frame": "städtische Umwelt-, Klima- und Ressourcenbelastung",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "open",
+              "label": "Mögliche Verlagerung statt Verringerung von Umweltbelastungen",
+              "mechanism": "Ein Robotaxi-Angebot könnte öffentliche oder private Fahrten ergänzen statt ersetzen; dadurch könnte der Energie- und Verkehrsaufwand steigen, sinken oder sich nur verlagern.",
+              "recipients": [
+                "Stadtbevölkerung",
+                "Verkehrssystem",
+                "Umwelt"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "very_low",
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Der Dienst verändert die Verkehrsmittelwahl, ohne ausreichend andere Fahrten zu ersetzen.",
+              "reference_space": "Berlin, Verkehr und Umwelt",
+              "time_horizon": "mittelfristig nach einem möglichen Betriebsstart",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Zusätzliche Nachfrage oder Leerfahrten treten auf; Auslastung und Ersatzverkehr sind unbekannt.",
+              "source_support": "Die Quelle enthält keine Verkehrs- oder Energiedaten; der Pfad ist eine bedingte Modellannahme.",
+              "limitations": "Keine Angaben zu Leerfahrten, Auslastung, Fahrzeugantrieb oder Verlagerung aus dem öffentlichen Verkehr.",
+              "first_order": "Mögliche zusätzliche Fahrzeugkilometer.",
+              "second_order": "Möglicher zusätzlicher Energie- und Flächenbedarf.",
+              "third_order": "Dauerhafte Verkehrs- oder Energiepfade sind nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ohne Flotte und Nutzungsdaten bleibt der mögliche Verlagerungspfad praktisch vernachlässigbar bis begrenzt."
+              },
+              "negligibility_rationale": "Der Pfad ist ein kleines, unsicheres Nebenrisiko und keine belegte Umweltfolge.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Kein unabhängiger Mechanismusbeleg wurde tatsächlich gelesen; der Pfad bleibt nicht assessierbar mit begrenzter konservativer Tragweite.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Verlagerung beträfe zunächst den Berliner Verkehr.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der Umfang möglicher Zusatzfahrten ist unbekannt und zunächst als gering anzusetzen.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer hängt von einem möglichen Betriebsmodell ab.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Fahrten und Betriebsumfang könnten grundsätzlich verändert werden.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ungleiche Belastungen sind möglich, aber nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine systemische Umweltwirkung ist nicht belegt und bleibt auf einen möglichen begrenzten Folgepfad beschränkt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Umwelt- oder Gesundheitsschutzgrenzverletzung ist belegt.",
+                "reference_frame": "städtische Umwelt- und Gesundheitsbelastung",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Der Planetpfad muss wegen der möglichen Verkehrstechnologie geprüft werden, ist aber sehr schwach belegt. Die Quelle enthält keine Angaben zu Energie, Emissionen, Auslastung oder Verkehrsverlagerung; eine positive oder negative Richtung wird deshalb nicht behauptet.",
+          "balance": {
+            "rationale": "Es gibt keinen belegten positiven oder negativen Umweltpfad. Die offene Richtung ist eine Folge fehlender Betriebs- und Mechanismusdaten, nicht eine neutrale Bewertung.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung von Verkehrsmengen, Energiebedarf und Ressourcenverbrauch durch einen Robotaxi-Betrieb",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung von Verkehrsmengen, Energiebedarf und Ressourcenverbrauch durch einen Robotaxi-Betrieb",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Mögliche Veränderung regulatorischer Entscheidungen und öffentlicher Rechenschaft über automatisierte Mobilität",
+              "mechanism": "Ein konkret werdender Robotaxi-Dienst müsste Genehmigungs-, Sicherheits- und Aufsichtsanforderungen erfüllen. Dadurch könnten Prüfungen und öffentliche Entscheidungen zu automatisierter Mobilität ausgelöst werden.",
+              "recipients": [
+                "Berliner Behörden",
+                "politische Entscheidungsträgerinnen und Entscheidungsträger",
+                "Öffentlichkeit",
+                "Verkehrsteilnehmende"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Die Planung wird konkret und erreicht ein Genehmigungs- oder Aufsichtsverfahren mit öffentlicher Relevanz.",
+              "reference_space": "Berlin, kommunale und regulatorische Entscheidungsstrukturen",
+              "time_horizon": "mittelfristig bei weiterer Konkretisierung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ein möglicher Dienst führt zu formalen Prüfungen und öffentlicher Debatte; konkrete Verfahren sind nicht belegt.",
+              "source_support": "Die Quelle belegt keine Behördenentscheidung und kein Verfahren, sondern nur berichtete interne Vorbereitungen.",
+              "limitations": "Unklar sind Zuständigkeit, Genehmigungsweg, Beteiligung der Öffentlichkeit und Sicherheitsanforderungen.",
+              "first_order": "Möglicher Prüf- und Genehmigungsbedarf.",
+              "second_order": "Mögliche politische Debatte über Regeln, Sicherheit, Zugang und Rechenschaft.",
+              "third_order": "Eine langfristige Veränderung institutioneller Regeln ist möglich, aber nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ohne Konkretisierung entsteht keine belegte institutionelle Zustandsveränderung; bei weiterer Planung wäre der Effekt zunächst begrenzt."
+              },
+              "negligibility_rationale": "Ohne ein konkretes Verfahren bleibt der institutionelle Pfad praktisch vernachlässigbar; der Pfad selbst ist wegen des möglichen Genehmigungsbedarfs dokumentiert.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Recherche nach einer amtlichen Rechts- oder Behördenquelle wurde durchgeführt, lieferte aber keine zugängliche und tatsächlich gelesene zulässige Quelle. Institutioneller Status und konkrete Verfahren bleiben offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der mögliche institutionelle Pfad wäre zunächst auf Berliner Behörden und die lokale Öffentlichkeit begrenzt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Prüfbedarf wäre zunächst begrenzt; konkrete politische Entscheidungen fehlen.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer und Fortbestand eines möglichen Verfahrens sind unbekannt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Regulatorische Entscheidungen wären grundsätzlich korrigierbar; dauerhafte Regeländerungen sind nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Mögliche Verteilungs- und Zugangsfragen sind offen; eine konkrete demokratische Schutzbedürftigkeit ist nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein möglicher institutioneller Folgepfad bleibt zunächst begrenzt und ohne belegte Regel- oder Machtverschiebung.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Verletzung demokratischer oder rechtlicher Schutzgrenzen ist belegt oder ex ante genau bedingt modelliert.",
+                "reference_frame": "öffentliche Rechenschaft, transparente Regulierung und demokratische Korrekturfähigkeit",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Mögliches Transparenz- und Einflussrisiko bei einem privat geplanten Mobilitätsdienst",
+              "mechanism": "Falls ein Vorhaben ohne ausreichende öffentliche Informationen oder Beteiligung konkret würde, könnte die Nachvollziehbarkeit regulatorischer Entscheidungen beeinträchtigt werden.",
+              "recipients": [
+                "Öffentlichkeit",
+                "kommunale Entscheidungsträgerinnen und Entscheidungsträger",
+                "Verkehrsteilnehmende"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "very_low",
+              "source_ids": [
+                "manager-magazin-news"
+              ],
+              "condition": "Ein Verfahren wird eingeleitet und bleibt zugleich intransparent oder unzureichend öffentlich nachvollziehbar.",
+              "reference_space": "Berlin, öffentliche Regulierung automatisierter Mobilität",
+              "time_horizon": "bei einer möglichen späteren Genehmigungs- oder Aufsichtsphase",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ein möglicher privater Anbieter erhält politischen oder administrativen Einfluss ohne ausreichende Transparenz; dafür gibt es keinen konkreten Beleg.",
+              "source_support": "Die Quelle belegt interne Planungen, aber keine Einflussnahme, Intransparenz oder Behördenentscheidung.",
+              "limitations": "Der Pfad ist spekulativ und darf nicht als festgestellter demokratischer Schaden gelesen werden.",
+              "first_order": "Möglicher zusätzlicher Informations- und Prüfbedarf.",
+              "second_order": "Mögliche Debatte über Transparenz und Verantwortlichkeit.",
+              "third_order": "Eine dauerhafte Macht- oder Regelverschiebung ist nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ohne Verfahren oder konkreten Transparenzmangel bleibt der Pfad praktisch vernachlässigbar bis begrenzt."
+              },
+              "negligibility_rationale": "Der Pfad ist ein schwaches, nicht belegtes Nebenrisiko und begründet keine negative Hauptrichtung.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Quelle zu Einflussnahme, Transparenz oder demokratischer Wirkung wurde tatsächlich gelesen; der Pfad bleibt eine niedrig evidenzierte Modellhypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Transparenzmangel beträfe zunächst ein lokales Verfahren in Berlin.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Beeinträchtigung ist nicht belegt; der mögliche Effekt wäre zunächst begrenzt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer und Fortbestand eines möglichen Verfahrens sind unbekannt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Transparenz und Beteiligung könnten grundsätzlich nachgebessert werden.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Schutzbedürftigkeit oder Ausschlusswirkung ist nicht belegt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine Regel- oder Machtverschiebung ist nicht belegt; der mögliche Folgepfad bliebe zunächst begrenzt.",
+                  "source_ids": [
+                    "manager-magazin-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Verletzung demokratischer, rechtsstaatlicher oder transparenzbezogener Schutzgrenzen ist belegt.",
+                "reference_frame": "Transparenz, öffentliche Beteiligung und demokratische Kontrolle",
+                "source_ids": [
+                  "manager-magazin-news"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Der Demokratiepfad betrifft mögliche spätere Genehmigungs- und Aufsichtsentscheidungen, nicht eine bereits eingetretene politische Wirkung. Da weder ein Verfahren noch eine Entscheidung belegt ist, bleibt die Tragweite niedrig und die Richtung offen.",
+          "balance": {
+            "rationale": "Der mögliche institutionelle Prüfpfad und das kleine Transparenzrisiko sind beide konditional. Das Nebenrisiko verändert die offene Hauptrichtung nicht.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung regulatorischer Entscheidungen und öffentlicher Rechenschaft über automatisierte Mobilität",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung regulatorischer Entscheidungen und öffentlicher Rechenschaft über automatisierte Mobilität",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "first_order",
+            "path": "Mögliche Veränderung des Mobilitätsangebots in Berlin, falls aus den berichteten Vorbereitungen ein genehmigter Betrieb wird.",
+            "direction": "open",
+            "condition": "Nur wenn Genehmigung und tatsächlicher Betrieb zustande kommen; der konkrete Zugang für verschiedene Nutzergruppen und die regulatorische Ausgestaltung sind nicht belegt.",
+            "evidence": "plausible_path",
+            "claim_ids": [],
+            "dimensions": [
+              "human",
+              "democracy"
+            ]
+          }
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T06:10:40.031Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T04:59:00.000Z",
+      "last_updated": "2026-09-14T06:10:40.031Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-22bd030eb159bee216c1",
+      "case_file": null,
+      "source_published_at": "2026-09-14T04:59:00.000Z",
+      "published_at": "2026-09-14T06:10:40.031Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/tech/waymo-geheime-robotaxi-plaene-fuer-berlin-a-9cd1e990-5f8b-4d55-92ed-5155b161716e",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T04:59:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-0f12159372a8de7b",
       "title_image": {
