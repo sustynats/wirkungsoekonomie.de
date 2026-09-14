@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-wirkungsticker-shell-20260914-news-refresh";
+const CACHE_NAME = "woek-wirkungsticker-shell-20260914-viewport";
 // Keep the independent notification state while refreshing the app shell.
 const NAVIGATION_CACHE_GRACE_MS = 2500;
 const NAVIGATION_NETWORK_TIMEOUT_MS = 8000;
@@ -20,6 +20,7 @@ const APP_SHELL = [
   "/assets/js/news-install.js",
   "/assets/js/news-share.js",
   "/assets/js/news-navigation.js",
+  "/assets/js/news-app-viewport.js",
   "/assets/img/brand/favicon.svg",
   "/assets/img/brand/apple-touch-icon.png",
   "/assets/img/brand/app-icon-192.png",
