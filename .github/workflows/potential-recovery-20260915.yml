@@ -1,0 +1,119 @@
+name: Validate isolated potential recovery
+
+on:
+  push:
+    branches: [chatgpt/wirkungspotenzial-recovery-20260915]
+    paths: [.github/workflows/potential-recovery-20260915.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: potential-recovery-20260915
+  cancel-in-progress: false
+
+env:
+  SOURCE_DATE_EPOCH: '1787270400'
+
+jobs:
+  recover:
+    if: github.repository == 'sustynats/wirkungsoekonomie.de' && github.ref == 'refs/heads/chatgpt/wirkungspotenzial-recovery-20260915'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Pin source and preserve latest main imports
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'wirkungsticker-recovery'
+          git config user.email 'wirkungsticker-recovery@users.noreply.github.com'
+          git fetch --no-tags --depth=50 origin main
+          CURRENT_BASE="$(git rev-parse FETCH_HEAD)"
+          git merge --no-edit "$CURRENT_BASE"
+          echo "CURRENT_BASE=$CURRENT_BASE" >> "$GITHUB_ENV"
+          git fetch --no-tags --depth=1 origin a985626602d3deebdd8ae7625bfcd53874b31a77
+          git fetch --no-tags --depth=1 origin 6048f1b5336458cae9501088180af01f93409772
+      - name: Recover only reviewed non-conflicting profiles and publication guards
+        run: python tools/recover_potential_pr771.py
+      - name: Verify canonical source binding and complete recovered dimensions
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import { persistedImpactAssessmentErrors } from './scripts/news/migrate-impact-assessments.mjs';
+          import { modelledPublicationIssues } from './scripts/news/impact-scope.mjs';
+          const report=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/potential-recovery-report.json'));
+          const stories=JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
+          for(const entry of report.applied){
+            const record=stories.find(s=>s.story_id===entry.story_id);
+            assert.deepEqual(persistedImpactAssessmentErrors(record),[],entry.story_id+' source binding');
+            assert.deepEqual(modelledPublicationIssues(record.impact_assessment),[],entry.story_id+' complete potential');
+            assert.equal(record.impact_semantic_review.review_job_id,entry.review_job_id);
+          }
+          console.log('PASS: source-bound existing independent reviews; recovered profiles:',report.applied.length);
+          JS
+      - name: Run existing news and operations regressions
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run news:test > "$RUNNER_TEMP/potential-recovery-tests.log" 2>&1 || { tail -160 "$RUNNER_TEMP/potential-recovery-tests.log"; exit 1; }
+          tail -16 "$RUNNER_TEMP/potential-recovery-tests.log"
+      - name: Regenerate ticker views and verify output
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run polls:test
+          npm run polls:build
+          npm run news:build
+          npm run build:search
+          npm run news:validate
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import crypto from 'node:crypto';
+          const report=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/potential-recovery-report.json'));
+          assert.equal(crypto.createHash('sha256').update(fs.readFileSync('data/news/stories.json')).digest('hex'),report.result_sha256,'Build must not rewrite canonical evaluations');
+          for(const row of report.applied){
+            if(!row.slug) continue;
+            assert.match(row.slug,/^[a-z0-9-]+$/);
+            const html=fs.readFileSync('wirkungsticker/'+row.slug+'/index.html','utf8');
+            assert.ok((html.match(/data-magnitude="[0-5]"/g)||[]).length>=3,row.story_id+' rendered magnitudes');
+            assert.ok(html.includes('data-potential-model="2.1"'),row.story_id+' potential rendering');
+          }
+          console.log('PASS: generated views and unchanged canonical source data');
+          JS
+      - name: Commit validated recovery to its own branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          BRANCH='chatgpt/wirkungspotenzial-recovery-20260915'
+          [[ "$(git ls-remote origin "refs/heads/$BRANCH" | cut -f1)" == "$GITHUB_SHA" ]] || { echo 'Concurrent recovery-branch change; no push.' >&2; exit 1; }
+          git diff --check
+          git add -- scripts/news/reviewed-impact.mjs scripts/news/publish-reviewed.mjs scripts/news/impact-coverage.mjs tests/news/reviewed-impact.test.mjs tests/news/impact-coverage.test.mjs data/news/stories.json news/ wirkungsticker/ assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json sitemap.xml
+          git diff --cached --quiet && { echo 'No validated correction to commit.' >&2; exit 1; }
+          git commit -m '[wirkungsticker] Restore reviewed potential profiles and close manual publication gaps'
+          git push origin "HEAD:refs/heads/$BRANCH"
+          echo "RECOVERY_COMMIT=$(git rev-parse HEAD)"
+          echo 'This is a validated branch, not a production deployment.'
+      - name: Retain recovery evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: potential-recovery-${{ github.run_id }}
+          retention-days: 7
+          if-no-files-found: ignore
+          path: |
+            ${{ runner.temp }}/potential-recovery-report.json
+            ${{ runner.temp }}/potential-recovery-tests.log
