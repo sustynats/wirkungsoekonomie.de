@@ -45,7 +45,7 @@ Die vorhandene Dropbox-Bridge, Claim-/ACK-Lifecycle, Idempotenz und Publication 
 Prüfen: drei sichtbare Dimensionsbefunde, je ein begründeter Pfad oder dokumentierte offene Recherche; nachvollziehbare Faktoren; Quellenfunktionen; Modellannahmen; Raum/Zeit; getrennte Beobachtung/Attribution; Gegenpfade; Nichtkompensation; Ring unabhängig von Stärke; originale Bewertung unverändert; keine öffentlichen Debugtexte oder fehlenden MPD-Zeilen. Build, Tests, Lint, Typecheck und Mobile/Desktop-Preview vor Release.
 
 
-## Reparatur der Potenzialprüfung – 14.09.2026
+## Reparatur der Potenzialprüfung - 14.09.2026
 
 Eine fehlende Outcome-Messung oder noch offene Umsetzung ist kein Grund, einen begründbaren bedingten Wirkpfad zu verwerfen. Zuerst den berichteten Sachverhalt bzw. die Maßnahme bewerten; die Warnung oder Berichterstattung selbst ist nur bei einem Kommunikationsgegenstand das Bewertungsobjekt. Die ordinale Tragweite ist eine begründete Schätzung am abgegrenzten Pfad und keine Behauptung, die Quelle habe diese Zahl gemessen.
 
