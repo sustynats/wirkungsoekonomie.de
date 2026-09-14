@@ -36,6 +36,10 @@
     "bridge-throughput": {
       "firstSeen": "2026-09-14T07:11:04.518Z",
       "active": true
+    },
+    "bridge-publication-flow": {
+      "firstSeen": "2026-09-14T22:01:07.285Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -1113,7 +1117,7 @@
       }
     },
     "last_new_at": "2026-09-14T19:38:30.811Z",
-    "checked_at": "2026-09-14T21:34:29.476Z",
+    "checked_at": "2026-09-14T22:01:07.285Z",
     "last_current_new_at": "2026-09-14T19:38:30.811Z"
   }
 }
