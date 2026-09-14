@@ -108,4 +108,9 @@ test('personal factual correction previews and imports only after fresh approval
  assert.equal(fs.readFileSync(path.join(temp,PERSONAL_FILE),'utf8'),before);
  const updated=applyApprovedEditorialRevisions(loadPersonalEditorials(temp),temp).find(a=>a.analysis_id===base.analysis_id);
  assert.equal(updated.published_at,base.published_at);assert.equal(updated.slug,base.slug);assert.match(editorialAnalysisPage(updated),/Korrektur vom/);
+ const html=editorialAnalysisPage(updated);
+ assert.ok(html.includes('data-editorial-content-hash="'+editions[0].content_hash+'"'));
+ assert.ok(!html.includes('data-editorial-content-hash="'+base.content_hash+'"'));
+ assert.equal(updated.content_hash,base.content_hash);
+ assert.ok(editorialAnalysisPage(base).includes('data-editorial-content-hash="'+base.content_hash+'"'));
 });
