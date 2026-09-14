@@ -2,8 +2,2773 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-14T12:11:06.335Z",
+  "updated_at": "2026-09-14T12:36:25.205Z",
   "stories": [
+    {
+      "story_id": "wt-5d50472ee2b66d93",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5d50472ee2b66d93-ce02d288a3cb12b9-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5d50472ee2b66d93-234020d839d5a484-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5d50472ee2b66d93-6fdb69d406d3bf51-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "mobilitatskosten-tankstellenverband-warnt-vor-spritpreisen-von-drei-euro-b66d93",
+      "title": "Mobilitätskosten: Tankstellenverband warnt vor Spritpreisen von drei Euro",
+      "source_summary": "Die vorliegende WirtschaftsWoche-Zusammenfassung berichtet über neue Höchststände bei den Preisen für Benzin und Diesel an Tankstellen. Der Tankstellenverband warnt dem Titel zufolge vor möglichen Spritpreisen von drei Euro.\n\nAußerdem wird Kritik an Mineralölkonzernen wiedergegeben. Die Formulierung „Es wird abkassiert“ ist als zugeschriebener Vorwurf kenntlich. Nicht vorliegend sind der genaue Wortlaut des Verbands, eine Frist für die Drei-Euro-Prognose, konkrete Preisangaben oder eine unabhängige Einordnung der Ursachen.",
+      "summary": "Der Tankstellenverband warnt vor Spritpreisen von drei Euro, während Benzin und Diesel laut vorliegender Zusammenfassung bereits neue Höchststände erreichen. Das ist zunächst eine zugeschriebene Prognose, kein Beleg dafür, dass dieser Preis tatsächlich erreicht wird.",
+      "detail_summary": "Die vorliegende Meldung enthält einen neuen, klar zugeschriebenen Warnhinweis des Tankstellenverbands. Der konkrete Sachverhalt ist die Prognose möglicher Spritpreise von drei Euro; zugleich werden neue Höchststände bei Benzin und Diesel berichtet. Falls die Preise weiter steigen, könnten Haushalte, Pendler und Betriebe höhere Mobilitätskosten tragen. Offen bleiben der Zeitraum, die Berechnungsgrundlage und die tatsächliche Preisentwicklung. Die Einordnung bleibt deshalb vorläufig.",
+      "why_relevant": "Eine Warnung vor deutlich höheren Mobilitätskosten kann für Haushalte, Pendler und Unternehmen relevant sein. Der materielle Nachrichtenwert liegt in der konkreten Drei-Euro-Prognose; ihr Eintritt ist aber nicht belegt.",
+      "topic": [
+        "Europa"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Zugeschriebene Warnung des Tankstellenverbands vor möglichen Spritpreisen von drei Euro bei berichteten neuen Höchstständen für Benzin und Diesel",
+        "evaluation_target": {
+          "label": "Mögliche weitere Verteuerung von Benzin und Diesel",
+          "type": "development"
+        },
+        "baseline": "Preisniveau zum Quelldatum ohne belegten Eintritt eines Drei-Euro-Preises",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne eine weitere und anhaltende Preissteigerung blieben die zusätzlichen Kosten und Verhaltensanpassungen dieses konkreten Warnszenarios aus. Die im Ausgangsmaterial berichteten Höchststände bilden die Ausgangslage, nicht bereits die Folge des Warnszenarios.",
+        "reference_frame": [
+          "bezahlbare Mobilität und Energieversorgung",
+          "Verteilung der Kosten zwischen Haushalten und Unternehmen",
+          "Verkehrsleistung, Ressourcenverbrauch und mögliche Emissionspfade",
+          "öffentliche Debatte und demokratische Korrekturfähigkeit"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Eine weitere Preissteigerung würde direkt die Kosten von Fahrten und Transporten erhöhen. Besonders betroffen wären Haushalte ohne erreichbare Alternativen sowie kraftstoffabhängige Betriebe. Verteilungsdaten, konkrete Preisreihen und der Zeitraum fehlen.",
+            "planet": "Höhere Endenergiepreise können Verkehrsleistung und Kraftstoffnachfrage dämpfen. Die UBA-Mechanismusquelle stützt diesen bedingten Pfad. Eine tatsächliche Emissions- oder Verbrauchsänderung ist jedoch nicht beobachtet; Ausweichverkehre und alternative Antriebe können die Richtung beeinflussen.",
+            "democracy": "Die Warnung kann Aufmerksamkeit und politische Forderungen zu Mobilitätskosten verstärken. Eine nachgewiesene Veränderung von Mehrheiten, Budgets, Regeln, Personalentscheidungen oder institutioneller Korrekturfähigkeit liegt nicht vor. Die Kommunikationswirkung bleibt daher von einer demokratischen Ereigniswirkung getrennt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Eine weitere Verteuerung erhöht unmittelbar die Kosten fossiler Mobilität für Nutzerinnen und Nutzer sowie für Transporte.",
+          "second_order": "Bei anhaltender Belastung können Fahrten, Transportmengen, Ausgabenprioritäten und politische Forderungen angepasst werden. Diese Folgen sind bedingt und nicht beobachtet.",
+          "third_order": "Bei längerem Andauern können sich Mobilitäts- und Investitionsentscheidungen sowie Verteilungsfragen strukturell verschieben. Ein solcher Lock-in oder Systemwechsel ist nicht belegt.",
+          "enablement": [
+            "Die UBA-Mechanismusquellen stützen einen bedingten Zusammenhang zwischen Energiepreisen, Verkehrsleistung und Energieverbrauch.",
+            "Der getrennte Wirkpfad für die öffentliche Debatte verhindert, dass eine mögliche Medienresonanz als institutionelle demokratische Wirkung ausgegeben wird."
+          ],
+          "counter_evidence": [
+            "Das Ausgangsmaterial enthält keine konkrete Preisreihe, keine Frist und keine Berechnungsgrundlage für drei Euro.",
+            "Die UBA-Quellen belegen allgemeine Verkehrs- und Preismechanismen, nicht den Eintritt dieser konkreten Prognose.",
+            "Ausweichmöglichkeiten, Entlastungen, sinkende Rohstoffpreise oder Nachfrageanpassungen können die Belastung begrenzen.",
+            "Eine Warnung allein belegt weder eine politische Entscheidung noch eine eingetretene Umwelt- oder Verteilungswirkung."
+          ],
+          "source_independence": "Der Ereigniskern beruht auf einer zugeschriebenen journalistischen Einzelquelle. Die beiden ergänzten UBA-Quellen sind unabhängige amtliche Mechanismusquellen, bestätigen aber nicht den konkreten Ereigniskern.",
+          "institutional_status": "Gegenstand ist eine zugeschriebene Marktprognose beziehungsweise Warnung. Eine staatliche Maßnahme, ein Beschluss, ein Inkrafttreten oder eine festgestellte Rechtsverletzung ist nicht belegt."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Eine mögliche weitere Kraftstoffverteuerung belastet verfügbare Einkommen und betriebliche Mobilitätskosten.",
+                "mechanism": "Ein höherer Preis je Liter erhöht die direkten Kosten von Fahrten und Transporten. Bei anhaltender Belastung können betroffene Haushalte und Unternehmen Ausgaben oder Mobilitätsmengen anpassen.",
+                "recipients": [
+                  "Haushalte mit Benzin- oder Dieselbedarf",
+                  "Pendlerinnen und Pendler",
+                  "kraftstoffabhängige Unternehmen"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "wiwo-schlagzeilen",
+                  "research-uba-preiswirkung-verkehr-2025"
+                ],
+                "condition": "Die zugeschriebene Warnung tritt in Form einer weiteren und anhaltenden Preissteigerung tatsächlich ein und wird nicht vollständig durch geringeren Verbrauch, Ausweichmöglichkeiten oder Entlastungen kompensiert.",
+                "reference_space": "Deutschland; private Haushalte und Unternehmen mit Benzin- oder Dieselbedarf",
+                "time_horizon": "kurz- bis mittelfristig nach einer möglichen Preissteigerung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die zusätzliche Kostenbelastung erreicht die direkten Nutzer und wird zumindest teilweise nicht durch Verhaltensanpassungen oder politische Entlastung neutralisiert.",
+                "source_support": "Die Ereignisquelle trägt die Warnung und neue Höchststände. Die UBA-Quellen stützen den allgemeinen Energie- und Verkehrsmechanismus, nicht die konkrete Kostenhöhe oder Betroffenenzahl.",
+                "limitations": "Keine belastbare Preisreihe, keine Frist, keine Betroffenenzahlen, keine Verteilungsdaten und keine Messung einer aktuellen Haushalts- oder Unternehmensreaktion.",
+                "first_order": "Direkte Mehrkosten für Kraftstoff, Fahrten und Transporte.",
+                "second_order": "Mögliche Einschränkungen anderer Ausgaben, geringere Fahrleistung oder Weitergabe von Transportkosten.",
+                "third_order": "Mögliche Verstärkung sozialer Unterschiede zwischen Menschen mit und ohne erreichbare Alternativen sowie zwischen unterschiedlich kraftstoffabhängigen Betrieben.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Bei kurzer Dauer oder hoher Anpassungsfähigkeit bleibt die Zustandsveränderung begrenzt; bei anhaltender Belastung und hoher Kraftstoffabhängigkeit kann sie deutlich werden. Der obere Rand ist wegen fehlender Preis- und Verteilungsdaten konservativ begrenzt."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht praktisch vernachlässigbar, weil eine tatsächliche Preissteigerung direkte Kosten pro Fahrt und Transport verändern würde.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Erneute Prüfung abgeschlossen. Die UBA-Quellen stützen den allgemeinen Preis-Verkehr-Mechanismus; konkrete aktuelle Belastungsdaten zur Meldung fehlen weiterhin.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Kraftstoffpreise können in Deutschland regional und sektorübergreifend viele Haushalte und Unternehmen betreffen. Die konkrete Reichweite der angekündigten Preissteigerung ist aber nicht quantifiziert.",
+                    "source_ids": [
+                      "wiwo-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine mögliche zusätzliche Kostenbelastung wäre für direkt abhängige Nutzer begrenzt bis deutlich, ihre konkrete Höhe ist nicht belegt.",
+                    "source_ids": [
+                      "wiwo-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer der Preissteigerung ist unbekannt. Der Pfad wird nur für einen kurz- bis mittelfristig anhaltenden Anstieg modelliert.",
+                    "source_ids": [
+                      "wiwo-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Die unmittelbare Preisbelastung ist grundsätzlich reversibel, wenn sich Preise ändern oder Fahrten und Antriebe angepasst werden. Dauerhafte soziale oder betriebliche Schäden sind nicht belegt.",
+                    "source_ids": [
+                      "research-uba-preiswirkung-verkehr-2025"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen ohne erreichbare Alternativen und kraftstoffabhängige Betriebe können ungleich stärker belastet werden. Der Mechanismus ist plausibel, konkrete Verteilungsdaten fehlen.",
+                    "source_ids": [
+                      "research-uba-verkehr-energie-2026"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Über Transportkosten und Ausgabenanpassungen ist ein begrenzter Folgepfad zweiter Ordnung plausibel; eine strukturelle Systemveränderung ist nicht belegt.",
+                    "source_ids": [
+                      "research-uba-preiswirkung-verkehr-2025"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete schwere Verletzung einer Schutzgrenze ist weder beobachtet noch als genau bedingter ex-ante-Pfad belegt.",
+                  "reference_frame": "Bezahlbare Mobilität, soziale Verteilung und erreichbare Alternativen",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "open",
+                "label": "Mögliche Weitergabe höherer Transportkosten in andere Preise.",
+                "mechanism": "Kraftstoffkosten können in betriebliche Transport- und Lieferkosten eingehen. Umfang, Zeitverzug und Verteilung sind offen.",
+                "recipients": [
+                  "Unternehmen",
+                  "Verbraucherinnen und Verbraucher"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_effect",
+                "likelihood": "low",
+                "source_ids": [
+                  "research-uba-preiswirkung-verkehr-2025"
+                ],
+                "condition": "Die Preissteigerung hält an und betroffene Unternehmen geben einen Teil der Mehrkosten weiter.",
+                "reference_space": "Deutschland; transportintensive Liefer- und Wertschöpfungsketten",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Weitergabe überwiegt mögliche Produktivitäts- oder Nachfrageanpassungen.",
+                "source_support": "Der allgemeine Verkehrs- und Kostenmechanismus ist gestützt; eine aktuelle Preisweitergabe aus diesem Ereignis ist nicht belegt.",
+                "limitations": "Keine sektoralen Daten und keine Messung von Zweitrundeneffekten.",
+                "first_order": "Höhere betriebliche Transportkosten.",
+                "second_order": "Mögliche Preisweitergabe oder Nachfragerückgänge.",
+                "third_order": "Keine belastbare Grundlage für eine gesamtwirtschaftliche Strukturveränderung.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Nebenpfad kann ausbleiben oder begrenzt bleiben; seine konkrete Stärke ist nicht messbar."
+                },
+                "negligibility_rationale": "Nicht als sicher eingetretene Wirkung zu behandeln; als möglicher Nebenpfad bleibt er dokumentiert.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der Mechanismus wurde geprüft, eine aktuelle Ereignisfolge aber nicht gefunden.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Transportkosten können mehrere Branchen erreichen, aber nicht jede Wertschöpfungskette gleich stark.",
+                    "source_ids": [
+                      "research-uba-preiswirkung-verkehr-2025"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche indirekte Preisweitergabe wäre zunächst gering bis begrenzt.",
+                    "source_ids": [
+                      "research-uba-preiswirkung-verkehr-2025"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Der Pfad wäre bei anhaltender Preisbelastung mittelfristig möglich; die Dauer ist offen.",
+                    "source_ids": [
+                      "wiwo-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Preisweitergaben und Nachfrageanpassungen sind grundsätzlich reversibel.",
+                    "source_ids": [
+                      "research-uba-preiswirkung-verkehr-2025"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Transportintensive Betriebe und einkommensschwache Haushalte könnten ungleich betroffen sein; konkrete Daten fehlen.",
+                    "source_ids": [
+                      "research-uba-verkehr-energie-2026"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein begrenzter Folgepfad über Lieferketten ist plausibel, aber keine starke strukturelle Rückkopplung belegt.",
+                    "source_ids": [
+                      "research-uba-preiswirkung-verkehr-2025"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Schutzgrenzverletzung belegt.",
+                  "reference_frame": "Bezahlbarkeit und Verteilung von Transportkosten",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "rationale": "Der Hauptpfad ist eine bedingte negative Kostenwirkung. Der Wirkmechanismus ist für höhere Endenergiepreise und Verkehr grundsätzlich fachlich gestützt, die konkrete Prognose und aktuelle Betroffenheit aber nicht bestätigt. Der Nebenpfad der Kostenweitergabe bleibt offen und verändert die Hauptrichtung nicht.",
+            "balance": {
+              "rationale": "Es gibt keinen gleichwertig belegten positiven Gegenpfad. Mögliche Ausweichreaktionen sind Risikominderung oder ein eigener bedingter Umweltpfad, aber kein Ausgleich gegenüber der zusätzlichen Kostenbelastung.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "- Risiko",
+              "shortPathLabel": "Eine mögliche weitere Kraftstoffverteuerung belastet verfügbare Einkommen und betriebliche Mobilitätskosten.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "- Risiko",
+            "shortPathLabel": "Eine mögliche weitere Kraftstoffverteuerung belastet verfügbare Einkommen und betriebliche Mobilitätskosten.",
+            "display_direction": "negative",
+            "label": "- Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "- Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Eine mögliche anhaltende Preissteigerung kann Kraftstoffnachfrage und Verkehrsleistung verändern; die Netto-Wirkung auf Umwelt und Emissionen bleibt offen.",
+                "mechanism": "Höhere Endenergiepreise können die Verkehrsleistung und den Kraftstoffverbrauch dämpfen. Ausweichverkehr, alternative Antriebe und die konkrete Energiequelle können den Nettoeffekt begrenzen oder verlagern.",
+                "recipients": [
+                  "Verkehrsteilnehmende",
+                  "Verkehrssysteme",
+                  "Umwelt und Klima"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "wiwo-schlagzeilen",
+                  "research-uba-verkehr-energie-2026",
+                  "research-uba-preiswirkung-verkehr-2025"
+                ],
+                "condition": "Die Preissteigerung tritt ein, hält an und verändert Verkehrsleistung, Kraftstoffverbrauch oder Investitionsentscheidungen tatsächlich.",
+                "reference_space": "Deutschland; Straßenverkehr, Kraftstoffverbrauch und damit verbundene Umwelt- und Emissionspfade",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Preisänderung ist groß und dauerhaft genug, um über reine Kostenverlagerung hinaus Fahrleistung oder Verkehrsmittelwahl zu beeinflussen.",
+                "source_support": "Das UBA beschreibt einen hohen Energieverbrauch des Verkehrs und einen modellierten Zusammenhang zwischen höheren Endenergiepreisen und geringerer Verkehrsleistung. Es gibt keinen Beleg für eine aktuelle Umweltveränderung infolge der vorliegenden Warnung.",
+                "limitations": "Keine aktuelle Nachfrage- oder Emissionsmessung, keine Angaben zu alternativen Verkehrsmitteln, Fahrzeugbestand, Energiequellen oder Dauer der Preiswirkung.",
+                "first_order": "Mögliche Veränderung von Kraftstoffnachfrage und Verkehrsleistung.",
+                "second_order": "Mögliche Verlagerung zu Bahn, Bus, Fahrrad, Fußverkehr oder anderen Antrieben; die ökologische Wirkung hängt von der konkreten Alternative ab.",
+                "third_order": "Mögliche langfristige Veränderung von Mobilitäts- und Investitionsstrukturen ohne belegten Eintritt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Bei kurzer oder vollständig kompensierter Preiswirkung bleibt die Umweltveränderung begrenzt. Bei anhaltender Wirkung können Verkehrsleistung und Verbrauch mittelbar beeinflusst werden; die konkrete Stärke bleibt wegen fehlender Daten offen."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht als fehlend zu behandeln, weil amtliche Quellen einen fachlichen Preis-Verkehr-Mechanismus beschreiben. Eine konkrete aktuelle Umweltwirkung ist jedoch nicht beobachtet.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Erneute Mechanismusprüfung abgeschlossen. Die UBA-Quellen stützen den bedingten Zusammenhang; es wurde kein Beleg für eine eingetretene Umweltfolge dieses konkreten Ereignisses gefunden.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der modellierte Pfad betrifft den deutschen Verkehrs- und Kraftstoffraum, nicht das globale Gesamtsystem.",
+                    "source_ids": [
+                      "research-uba-verkehr-energie-2026"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine einzelne Preiswarnung belegt keine starke ökologische Zustandsveränderung; der mögliche Effekt wäre zunächst gering.",
+                    "source_ids": [
+                      "research-uba-preiswirkung-verkehr-2025"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Relevante Umweltfolgen setzen eine anhaltende Preis- und Verhaltenswirkung voraus; deren Dauer ist unbekannt.",
+                    "source_ids": [
+                      "wiwo-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Preis- und Verhaltensreaktionen sind grundsätzlich reversibel. Dauerhafte Lock-ins oder irreversible Schäden sind nicht belegt.",
+                    "source_ids": [
+                      "research-uba-preiswirkung-verkehr-2025"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Umwelt- und Gesundheitslasten können räumlich und sozial ungleich verteilt sein, konkrete zusätzliche Belastungen durch dieses Ereignis sind aber nicht belegt.",
+                    "source_ids": [
+                      "research-uba-verkehr-energie-2026"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein Folgepfad über Verkehrsleistung, Kraftstoffverbrauch und Emissionen ist plausibel, eine starke Rückkopplung oder dritte Ordnung aber nicht nachgewiesen.",
+                    "source_ids": [
+                      "research-uba-verkehr-energie-2026",
+                      "research-uba-preiswirkung-verkehr-2025"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere ökologische Schutzgrenzverletzung ist beobachtet oder genau bedingt modelliert.",
+                  "reference_frame": "Ressourcenverbrauch, Verkehrsenergie und mögliche Emissionspfade",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "open",
+                "label": "Mögliche Verlagerung zu anderen Verkehrsmitteln oder Antrieben mit unklarem Umweltresultat.",
+                "mechanism": "Höhere Kraftstoffkosten können Ausweichreaktionen auslösen. Die Umweltwirkung hängt von Auslastung, Energiequelle, zusätzlichem Verkehr und tatsächlicher Verlagerung ab.",
+                "recipients": [
+                  "Verkehrsteilnehmende",
+                  "Umwelt und Klima"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_effect",
+                "likelihood": "low",
+                "source_ids": [
+                  "research-uba-preiswirkung-verkehr-2025"
+                ],
+                "condition": "Betroffene verfügen über erreichbare Alternativen und reagieren tatsächlich auf die Preisänderung.",
+                "reference_space": "Deutschland; Personen- und Güterverkehr",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es kommt zu echter Verkehrsverlagerung statt nur zu Kostenübernahme oder Ausweichfahrten.",
+                "source_support": "Die Quelle stützt preisinduzierte Verkehrsveränderung als Mechanismus, nicht die konkrete Ausweichreaktion dieses Ereignisses.",
+                "limitations": "Keine Modal-Split-, Fahrzeug- oder Emissionsdaten zur Meldung.",
+                "first_order": "Mögliche Änderung der Verkehrsmittelwahl.",
+                "second_order": "Mögliche Änderung von Energieverbrauch und Emissionen.",
+                "third_order": "Keine belastbare Grundlage für einen strukturellen Übergang.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad kann ausbleiben oder begrenzt bleiben; ein stärkerer Effekt ist wegen fehlender Verhaltensdaten nicht begründbar."
+                },
+                "negligibility_rationale": "Als bedingter Nebenpfad dokumentiert, nicht als positiver Ausgleich gegenüber anderen Wirkungen.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Mechanismus geprüft; konkrete Ausweichreaktion nicht belegt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mögliche Verlagerung betrifft Teile des deutschen Personen- und Güterverkehrs.",
+                    "source_ids": [
+                      "research-uba-preiswirkung-verkehr-2025"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die konkrete Intensität der Verlagerung ist nicht belegt.",
+                    "source_ids": [
+                      "research-uba-preiswirkung-verkehr-2025"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine dauerhafte Änderung setzt anhaltende Preise und Verhalten voraus; beides ist offen.",
+                    "source_ids": [
+                      "wiwo-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Verkehrsmittelwahl und Fahrleistung sind grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "research-uba-preiswirkung-verkehr-2025"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen ohne erreichbare Alternativen können weniger ausweichen; konkrete Daten fehlen.",
+                    "source_ids": [
+                      "research-uba-verkehr-energie-2026"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad kann Energie- und Verkehrsstrukturen berühren, eine starke Systemtiefe ist nicht belegt.",
+                    "source_ids": [
+                      "research-uba-verkehr-energie-2026"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Schutzgrenzverletzung belegt.",
+                  "reference_frame": "Erreichbare und umweltverträgliche Mobilitätsalternativen",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "rationale": "Die planetare Richtung bleibt offen, weil höhere Preise sowohl Nachfrage dämpfen als auch Verlagerungen mit unklarer Umweltwirkung auslösen können. Der Mechanismus ist amtlich plausibilisiert, aber es gibt weder eine beobachtete Folge noch eine belastbare Grundlage für einen positiven Nettoeffekt.",
+            "balance": {
+              "rationale": "Mögliche ökologische Vorteile sind ein bedingter Nebenpfad und keine automatische Gegenwirkung. Die offene Richtung beruht auf konkurrierenden, jeweils unsicheren Mechanismen.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Eine mögliche anhaltende Preissteigerung kann Kraftstoffnachfrage und Verkehrsleistung verändern; die Netto-Wirkung auf Umwelt und Emissionen bleibt offen.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine mögliche anhaltende Preissteigerung kann Kraftstoffnachfrage und Verkehrsleistung verändern; die Netto-Wirkung auf Umwelt und Emissionen bleibt offen.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Die zugeschriebene Warnung kann die öffentliche Debatte über Mobilitätskosten beeinflussen, ohne bereits eine institutionelle Zustandsveränderung zu belegen.",
+                "mechanism": "Eine öffentlich verbreitete Warnung kann Aufmerksamkeit und Forderungen nach Entlastung oder Regulierung erhöhen. Erst nachweisbare Änderungen von Debatte, Prioritäten oder Entscheidungen wären demokratische Zustandsveränderungen.",
+                "recipients": [
+                  "politische Öffentlichkeit",
+                  "Haushalte",
+                  "staatliche und politische Akteure"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "wiwo-schlagzeilen"
+                ],
+                "condition": "Die Warnung wird wahrgenommen und führt zu einer nachweisbaren Veränderung von öffentlicher Debatte, politischen Prioritäten oder Entscheidungen.",
+                "reference_space": "Deutschland; öffentliche Debatte und politische Reaktionen auf Mobilitätskosten",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die journalistische Darstellung erreicht relevante Akteure und löst mehr als bloße Aufmerksamkeit aus.",
+                "source_support": "Die Quelle belegt die veröffentlichte Warnung, nicht ihre Reichweite, Resonanz oder politische Anschlusswirkung.",
+                "limitations": "Keine Publikums-, Diskurs-, Umfrage- oder Entscheidungsdaten; keine belegte politische Reaktion.",
+                "first_order": "Mögliche zusätzliche Aufmerksamkeit für Mobilitätskosten.",
+                "second_order": "Mögliche Forderungen nach Entlastung, Regulierung oder weiterer Marktaufklärung.",
+                "third_order": "Keine belastbare Grundlage für eine Veränderung institutioneller Regeln, Mehrheiten, Budgets oder demokratischer Korrekturfähigkeit.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ohne nachgewiesene Resonanz bleibt der mögliche demokratische Zustandsimpuls praktisch gering. Eine etwas stärkere Wirkung wäre nur bei belegter politischer Anschlusswirkung plausibel."
+                },
+                "negligibility_rationale": "Der Pfad bleibt dokumentiert, weil öffentliche Kommunikation grundsätzlich ein mögliches Resonanzpotenzial besitzt; eine institutionelle Wirkung ist nicht belegt.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Erneute Prüfung abgeschlossen. Es wurden keine Diskurs- oder Entscheidungsdaten gefunden; Kommunikationspotenzial und demokratische Ereigniswirkung bleiben getrennt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Publikumsreichweite der zugrunde liegenden Darstellung ist nicht belegt.",
+                    "source_ids": [
+                      "wiwo-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Warnung kann Aufmerksamkeit erzeugen, belegt aber keine starke politische oder institutionelle Veränderung.",
+                    "source_ids": [
+                      "wiwo-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Debattenwirkung ist offen und ohne Resonanzdaten nicht höher einzuschätzen.",
+                    "source_ids": [
+                      "wiwo-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Aufmerksamkeit und politische Forderungen sind grundsätzlich korrigierbar; dauerhafte institutionelle Folgen sind nicht belegt.",
+                    "source_ids": [
+                      "wiwo-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine spezifische demokratische Schutzverletzung oder besondere Belastung vulnerabler Gruppen ist nicht belegt.",
+                    "source_ids": [
+                      "wiwo-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Es gibt keinen Beleg für Veränderungen von Regeln, Mehrheiten, Budgets, Personal oder institutioneller Korrekturfähigkeit.",
+                    "source_ids": [
+                      "wiwo-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere demokratische Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                  "reference_frame": "Informierte öffentliche Debatte und demokratische Korrekturfähigkeit",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der demokratische Pfad betrifft ausschließlich ein mögliches Kommunikations- und Debattenpotenzial. Eine tatsächliche Resonanz, politische Entscheidung oder institutionelle Zustandsänderung ist nicht belegt.",
+            "balance": {
+              "rationale": "Es ist kein materieller Gegenpfad zur möglichen Debattenwirkung belegt. Die sehr geringe Eintrittswahrscheinlichkeit und die fehlenden Resonanzdaten werden getrennt von der Tragweite ausgewiesen.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Die zugeschriebene Warnung kann die öffentliche Debatte über Mobilitätskosten beeinflussen, ohne bereits eine institutionelle Zustandsveränderung zu belegen.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Die zugeschriebene Warnung kann die öffentliche Debatte über Mobilitätskosten beeinflussen, ohne bereits eine institutionelle Zustandsveränderung zu belegen.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Die gelieferte Zusammenfassung trägt die Zuschreibung der Warnung vor möglichen Spritpreisen von drei Euro, die Angabe neuer Höchststände sowie den ausdrücklich zugeschriebenen Vorwurf gegen Mineralölkonzerne."
+          },
+          {
+            "source_id": "research-uba-verkehr-energie-2026",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Die amtliche Quelle beschreibt den hohen Energieverbrauch des Verkehrs und den Zusammenhang von Verkehrswachstum und Energieverbrauch."
+          },
+          {
+            "source_id": "research-uba-preiswirkung-verkehr-2025",
+            "functions": [
+              "mechanism"
+            ],
+            "supported_claim": "Die amtliche Studie beschreibt einen modellierten Zusammenhang zwischen höheren Endenergiepreisen und einem Rückgang der Verkehrsleistung im Güterverkehr."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/- = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://www.umweltbundesamt.de/daten/umweltzustand-trends/verkehr/energieverbrauch-kraftstoffe",
+          "title": "Energieverbrauch und Kraftstoffe",
+          "publisher": "Umweltbundesamt",
+          "source_id": "research-uba-verkehr-energie-2026",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/17_2025_cc.pdf",
+          "title": "Lenkungswirkung von Endenergiepreisen im Verkehrssektor",
+          "publisher": "Umweltbundesamt",
+          "source_id": "research-uba-preiswirkung-verkehr-2025",
+          "source_function": "mechanism"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Eine mögliche weitere Kraftstoffverteuerung belastet verfügbare Einkommen und betriebliche Mobilitätskosten.",
+              "mechanism": "Ein höherer Preis je Liter erhöht die direkten Kosten von Fahrten und Transporten. Bei anhaltender Belastung können betroffene Haushalte und Unternehmen Ausgaben oder Mobilitätsmengen anpassen.",
+              "recipients": [
+                "Haushalte mit Benzin- oder Dieselbedarf",
+                "Pendlerinnen und Pendler",
+                "kraftstoffabhängige Unternehmen"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "wiwo-schlagzeilen",
+                "research-uba-preiswirkung-verkehr-2025"
+              ],
+              "condition": "Die zugeschriebene Warnung tritt in Form einer weiteren und anhaltenden Preissteigerung tatsächlich ein und wird nicht vollständig durch geringeren Verbrauch, Ausweichmöglichkeiten oder Entlastungen kompensiert.",
+              "reference_space": "Deutschland; private Haushalte und Unternehmen mit Benzin- oder Dieselbedarf",
+              "time_horizon": "kurz- bis mittelfristig nach einer möglichen Preissteigerung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die zusätzliche Kostenbelastung erreicht die direkten Nutzer und wird zumindest teilweise nicht durch Verhaltensanpassungen oder politische Entlastung neutralisiert.",
+              "source_support": "Die Ereignisquelle trägt die Warnung und neue Höchststände. Die UBA-Quellen stützen den allgemeinen Energie- und Verkehrsmechanismus, nicht die konkrete Kostenhöhe oder Betroffenenzahl.",
+              "limitations": "Keine belastbare Preisreihe, keine Frist, keine Betroffenenzahlen, keine Verteilungsdaten und keine Messung einer aktuellen Haushalts- oder Unternehmensreaktion.",
+              "first_order": "Direkte Mehrkosten für Kraftstoff, Fahrten und Transporte.",
+              "second_order": "Mögliche Einschränkungen anderer Ausgaben, geringere Fahrleistung oder Weitergabe von Transportkosten.",
+              "third_order": "Mögliche Verstärkung sozialer Unterschiede zwischen Menschen mit und ohne erreichbare Alternativen sowie zwischen unterschiedlich kraftstoffabhängigen Betrieben.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Bei kurzer Dauer oder hoher Anpassungsfähigkeit bleibt die Zustandsveränderung begrenzt; bei anhaltender Belastung und hoher Kraftstoffabhängigkeit kann sie deutlich werden. Der obere Rand ist wegen fehlender Preis- und Verteilungsdaten konservativ begrenzt."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht praktisch vernachlässigbar, weil eine tatsächliche Preissteigerung direkte Kosten pro Fahrt und Transport verändern würde.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Erneute Prüfung abgeschlossen. Die UBA-Quellen stützen den allgemeinen Preis-Verkehr-Mechanismus; konkrete aktuelle Belastungsdaten zur Meldung fehlen weiterhin.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Kraftstoffpreise können in Deutschland regional und sektorübergreifend viele Haushalte und Unternehmen betreffen. Die konkrete Reichweite der angekündigten Preissteigerung ist aber nicht quantifiziert.",
+                  "source_ids": [
+                    "wiwo-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine mögliche zusätzliche Kostenbelastung wäre für direkt abhängige Nutzer begrenzt bis deutlich, ihre konkrete Höhe ist nicht belegt.",
+                  "source_ids": [
+                    "wiwo-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer der Preissteigerung ist unbekannt. Der Pfad wird nur für einen kurz- bis mittelfristig anhaltenden Anstieg modelliert.",
+                  "source_ids": [
+                    "wiwo-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Die unmittelbare Preisbelastung ist grundsätzlich reversibel, wenn sich Preise ändern oder Fahrten und Antriebe angepasst werden. Dauerhafte soziale oder betriebliche Schäden sind nicht belegt.",
+                  "source_ids": [
+                    "research-uba-preiswirkung-verkehr-2025"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen ohne erreichbare Alternativen und kraftstoffabhängige Betriebe können ungleich stärker belastet werden. Der Mechanismus ist plausibel, konkrete Verteilungsdaten fehlen.",
+                  "source_ids": [
+                    "research-uba-verkehr-energie-2026"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Über Transportkosten und Ausgabenanpassungen ist ein begrenzter Folgepfad zweiter Ordnung plausibel; eine strukturelle Systemveränderung ist nicht belegt.",
+                  "source_ids": [
+                    "research-uba-preiswirkung-verkehr-2025"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete schwere Verletzung einer Schutzgrenze ist weder beobachtet noch als genau bedingter ex-ante-Pfad belegt.",
+                "reference_frame": "Bezahlbare Mobilität, soziale Verteilung und erreichbare Alternativen",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "open",
+              "label": "Mögliche Weitergabe höherer Transportkosten in andere Preise.",
+              "mechanism": "Kraftstoffkosten können in betriebliche Transport- und Lieferkosten eingehen. Umfang, Zeitverzug und Verteilung sind offen.",
+              "recipients": [
+                "Unternehmen",
+                "Verbraucherinnen und Verbraucher"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_effect",
+              "likelihood": "low",
+              "source_ids": [
+                "research-uba-preiswirkung-verkehr-2025"
+              ],
+              "condition": "Die Preissteigerung hält an und betroffene Unternehmen geben einen Teil der Mehrkosten weiter.",
+              "reference_space": "Deutschland; transportintensive Liefer- und Wertschöpfungsketten",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Weitergabe überwiegt mögliche Produktivitäts- oder Nachfrageanpassungen.",
+              "source_support": "Der allgemeine Verkehrs- und Kostenmechanismus ist gestützt; eine aktuelle Preisweitergabe aus diesem Ereignis ist nicht belegt.",
+              "limitations": "Keine sektoralen Daten und keine Messung von Zweitrundeneffekten.",
+              "first_order": "Höhere betriebliche Transportkosten.",
+              "second_order": "Mögliche Preisweitergabe oder Nachfragerückgänge.",
+              "third_order": "Keine belastbare Grundlage für eine gesamtwirtschaftliche Strukturveränderung.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Nebenpfad kann ausbleiben oder begrenzt bleiben; seine konkrete Stärke ist nicht messbar."
+              },
+              "negligibility_rationale": "Nicht als sicher eingetretene Wirkung zu behandeln; als möglicher Nebenpfad bleibt er dokumentiert.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der Mechanismus wurde geprüft, eine aktuelle Ereignisfolge aber nicht gefunden.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Transportkosten können mehrere Branchen erreichen, aber nicht jede Wertschöpfungskette gleich stark.",
+                  "source_ids": [
+                    "research-uba-preiswirkung-verkehr-2025"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche indirekte Preisweitergabe wäre zunächst gering bis begrenzt.",
+                  "source_ids": [
+                    "research-uba-preiswirkung-verkehr-2025"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Der Pfad wäre bei anhaltender Preisbelastung mittelfristig möglich; die Dauer ist offen.",
+                  "source_ids": [
+                    "wiwo-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Preisweitergaben und Nachfrageanpassungen sind grundsätzlich reversibel.",
+                  "source_ids": [
+                    "research-uba-preiswirkung-verkehr-2025"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Transportintensive Betriebe und einkommensschwache Haushalte könnten ungleich betroffen sein; konkrete Daten fehlen.",
+                  "source_ids": [
+                    "research-uba-verkehr-energie-2026"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein begrenzter Folgepfad über Lieferketten ist plausibel, aber keine starke strukturelle Rückkopplung belegt.",
+                  "source_ids": [
+                    "research-uba-preiswirkung-verkehr-2025"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Schutzgrenzverletzung belegt.",
+                "reference_frame": "Bezahlbarkeit und Verteilung von Transportkosten",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "rationale": "Der Hauptpfad ist eine bedingte negative Kostenwirkung. Der Wirkmechanismus ist für höhere Endenergiepreise und Verkehr grundsätzlich fachlich gestützt, die konkrete Prognose und aktuelle Betroffenheit aber nicht bestätigt. Der Nebenpfad der Kostenweitergabe bleibt offen und verändert die Hauptrichtung nicht.",
+          "balance": {
+            "rationale": "Es gibt keinen gleichwertig belegten positiven Gegenpfad. Mögliche Ausweichreaktionen sind Risikominderung oder ein eigener bedingter Umweltpfad, aber kein Ausgleich gegenüber der zusätzlichen Kostenbelastung.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "- Risiko",
+            "shortPathLabel": "Eine mögliche weitere Kraftstoffverteuerung belastet verfügbare Einkommen und betriebliche Mobilitätskosten.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "- Risiko",
+          "shortPathLabel": "Eine mögliche weitere Kraftstoffverteuerung belastet verfügbare Einkommen und betriebliche Mobilitätskosten.",
+          "display_direction": "negative",
+          "label": "- Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "- Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Eine mögliche anhaltende Preissteigerung kann Kraftstoffnachfrage und Verkehrsleistung verändern; die Netto-Wirkung auf Umwelt und Emissionen bleibt offen.",
+              "mechanism": "Höhere Endenergiepreise können die Verkehrsleistung und den Kraftstoffverbrauch dämpfen. Ausweichverkehr, alternative Antriebe und die konkrete Energiequelle können den Nettoeffekt begrenzen oder verlagern.",
+              "recipients": [
+                "Verkehrsteilnehmende",
+                "Verkehrssysteme",
+                "Umwelt und Klima"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "wiwo-schlagzeilen",
+                "research-uba-verkehr-energie-2026",
+                "research-uba-preiswirkung-verkehr-2025"
+              ],
+              "condition": "Die Preissteigerung tritt ein, hält an und verändert Verkehrsleistung, Kraftstoffverbrauch oder Investitionsentscheidungen tatsächlich.",
+              "reference_space": "Deutschland; Straßenverkehr, Kraftstoffverbrauch und damit verbundene Umwelt- und Emissionspfade",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Preisänderung ist groß und dauerhaft genug, um über reine Kostenverlagerung hinaus Fahrleistung oder Verkehrsmittelwahl zu beeinflussen.",
+              "source_support": "Das UBA beschreibt einen hohen Energieverbrauch des Verkehrs und einen modellierten Zusammenhang zwischen höheren Endenergiepreisen und geringerer Verkehrsleistung. Es gibt keinen Beleg für eine aktuelle Umweltveränderung infolge der vorliegenden Warnung.",
+              "limitations": "Keine aktuelle Nachfrage- oder Emissionsmessung, keine Angaben zu alternativen Verkehrsmitteln, Fahrzeugbestand, Energiequellen oder Dauer der Preiswirkung.",
+              "first_order": "Mögliche Veränderung von Kraftstoffnachfrage und Verkehrsleistung.",
+              "second_order": "Mögliche Verlagerung zu Bahn, Bus, Fahrrad, Fußverkehr oder anderen Antrieben; die ökologische Wirkung hängt von der konkreten Alternative ab.",
+              "third_order": "Mögliche langfristige Veränderung von Mobilitäts- und Investitionsstrukturen ohne belegten Eintritt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Bei kurzer oder vollständig kompensierter Preiswirkung bleibt die Umweltveränderung begrenzt. Bei anhaltender Wirkung können Verkehrsleistung und Verbrauch mittelbar beeinflusst werden; die konkrete Stärke bleibt wegen fehlender Daten offen."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht als fehlend zu behandeln, weil amtliche Quellen einen fachlichen Preis-Verkehr-Mechanismus beschreiben. Eine konkrete aktuelle Umweltwirkung ist jedoch nicht beobachtet.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Erneute Mechanismusprüfung abgeschlossen. Die UBA-Quellen stützen den bedingten Zusammenhang; es wurde kein Beleg für eine eingetretene Umweltfolge dieses konkreten Ereignisses gefunden.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der modellierte Pfad betrifft den deutschen Verkehrs- und Kraftstoffraum, nicht das globale Gesamtsystem.",
+                  "source_ids": [
+                    "research-uba-verkehr-energie-2026"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine einzelne Preiswarnung belegt keine starke ökologische Zustandsveränderung; der mögliche Effekt wäre zunächst gering.",
+                  "source_ids": [
+                    "research-uba-preiswirkung-verkehr-2025"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Relevante Umweltfolgen setzen eine anhaltende Preis- und Verhaltenswirkung voraus; deren Dauer ist unbekannt.",
+                  "source_ids": [
+                    "wiwo-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Preis- und Verhaltensreaktionen sind grundsätzlich reversibel. Dauerhafte Lock-ins oder irreversible Schäden sind nicht belegt.",
+                  "source_ids": [
+                    "research-uba-preiswirkung-verkehr-2025"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Umwelt- und Gesundheitslasten können räumlich und sozial ungleich verteilt sein, konkrete zusätzliche Belastungen durch dieses Ereignis sind aber nicht belegt.",
+                  "source_ids": [
+                    "research-uba-verkehr-energie-2026"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein Folgepfad über Verkehrsleistung, Kraftstoffverbrauch und Emissionen ist plausibel, eine starke Rückkopplung oder dritte Ordnung aber nicht nachgewiesen.",
+                  "source_ids": [
+                    "research-uba-verkehr-energie-2026",
+                    "research-uba-preiswirkung-verkehr-2025"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere ökologische Schutzgrenzverletzung ist beobachtet oder genau bedingt modelliert.",
+                "reference_frame": "Ressourcenverbrauch, Verkehrsenergie und mögliche Emissionspfade",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "open",
+              "label": "Mögliche Verlagerung zu anderen Verkehrsmitteln oder Antrieben mit unklarem Umweltresultat.",
+              "mechanism": "Höhere Kraftstoffkosten können Ausweichreaktionen auslösen. Die Umweltwirkung hängt von Auslastung, Energiequelle, zusätzlichem Verkehr und tatsächlicher Verlagerung ab.",
+              "recipients": [
+                "Verkehrsteilnehmende",
+                "Umwelt und Klima"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_effect",
+              "likelihood": "low",
+              "source_ids": [
+                "research-uba-preiswirkung-verkehr-2025"
+              ],
+              "condition": "Betroffene verfügen über erreichbare Alternativen und reagieren tatsächlich auf die Preisänderung.",
+              "reference_space": "Deutschland; Personen- und Güterverkehr",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es kommt zu echter Verkehrsverlagerung statt nur zu Kostenübernahme oder Ausweichfahrten.",
+              "source_support": "Die Quelle stützt preisinduzierte Verkehrsveränderung als Mechanismus, nicht die konkrete Ausweichreaktion dieses Ereignisses.",
+              "limitations": "Keine Modal-Split-, Fahrzeug- oder Emissionsdaten zur Meldung.",
+              "first_order": "Mögliche Änderung der Verkehrsmittelwahl.",
+              "second_order": "Mögliche Änderung von Energieverbrauch und Emissionen.",
+              "third_order": "Keine belastbare Grundlage für einen strukturellen Übergang.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad kann ausbleiben oder begrenzt bleiben; ein stärkerer Effekt ist wegen fehlender Verhaltensdaten nicht begründbar."
+              },
+              "negligibility_rationale": "Als bedingter Nebenpfad dokumentiert, nicht als positiver Ausgleich gegenüber anderen Wirkungen.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Mechanismus geprüft; konkrete Ausweichreaktion nicht belegt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mögliche Verlagerung betrifft Teile des deutschen Personen- und Güterverkehrs.",
+                  "source_ids": [
+                    "research-uba-preiswirkung-verkehr-2025"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die konkrete Intensität der Verlagerung ist nicht belegt.",
+                  "source_ids": [
+                    "research-uba-preiswirkung-verkehr-2025"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine dauerhafte Änderung setzt anhaltende Preise und Verhalten voraus; beides ist offen.",
+                  "source_ids": [
+                    "wiwo-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Verkehrsmittelwahl und Fahrleistung sind grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "research-uba-preiswirkung-verkehr-2025"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen ohne erreichbare Alternativen können weniger ausweichen; konkrete Daten fehlen.",
+                  "source_ids": [
+                    "research-uba-verkehr-energie-2026"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad kann Energie- und Verkehrsstrukturen berühren, eine starke Systemtiefe ist nicht belegt.",
+                  "source_ids": [
+                    "research-uba-verkehr-energie-2026"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Schutzgrenzverletzung belegt.",
+                "reference_frame": "Erreichbare und umweltverträgliche Mobilitätsalternativen",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "rationale": "Die planetare Richtung bleibt offen, weil höhere Preise sowohl Nachfrage dämpfen als auch Verlagerungen mit unklarer Umweltwirkung auslösen können. Der Mechanismus ist amtlich plausibilisiert, aber es gibt weder eine beobachtete Folge noch eine belastbare Grundlage für einen positiven Nettoeffekt.",
+          "balance": {
+            "rationale": "Mögliche ökologische Vorteile sind ein bedingter Nebenpfad und keine automatische Gegenwirkung. Die offene Richtung beruht auf konkurrierenden, jeweils unsicheren Mechanismen.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine mögliche anhaltende Preissteigerung kann Kraftstoffnachfrage und Verkehrsleistung verändern; die Netto-Wirkung auf Umwelt und Emissionen bleibt offen.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Eine mögliche anhaltende Preissteigerung kann Kraftstoffnachfrage und Verkehrsleistung verändern; die Netto-Wirkung auf Umwelt und Emissionen bleibt offen.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Die zugeschriebene Warnung kann die öffentliche Debatte über Mobilitätskosten beeinflussen, ohne bereits eine institutionelle Zustandsveränderung zu belegen.",
+              "mechanism": "Eine öffentlich verbreitete Warnung kann Aufmerksamkeit und Forderungen nach Entlastung oder Regulierung erhöhen. Erst nachweisbare Änderungen von Debatte, Prioritäten oder Entscheidungen wären demokratische Zustandsveränderungen.",
+              "recipients": [
+                "politische Öffentlichkeit",
+                "Haushalte",
+                "staatliche und politische Akteure"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "wiwo-schlagzeilen"
+              ],
+              "condition": "Die Warnung wird wahrgenommen und führt zu einer nachweisbaren Veränderung von öffentlicher Debatte, politischen Prioritäten oder Entscheidungen.",
+              "reference_space": "Deutschland; öffentliche Debatte und politische Reaktionen auf Mobilitätskosten",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die journalistische Darstellung erreicht relevante Akteure und löst mehr als bloße Aufmerksamkeit aus.",
+              "source_support": "Die Quelle belegt die veröffentlichte Warnung, nicht ihre Reichweite, Resonanz oder politische Anschlusswirkung.",
+              "limitations": "Keine Publikums-, Diskurs-, Umfrage- oder Entscheidungsdaten; keine belegte politische Reaktion.",
+              "first_order": "Mögliche zusätzliche Aufmerksamkeit für Mobilitätskosten.",
+              "second_order": "Mögliche Forderungen nach Entlastung, Regulierung oder weiterer Marktaufklärung.",
+              "third_order": "Keine belastbare Grundlage für eine Veränderung institutioneller Regeln, Mehrheiten, Budgets oder demokratischer Korrekturfähigkeit.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ohne nachgewiesene Resonanz bleibt der mögliche demokratische Zustandsimpuls praktisch gering. Eine etwas stärkere Wirkung wäre nur bei belegter politischer Anschlusswirkung plausibel."
+              },
+              "negligibility_rationale": "Der Pfad bleibt dokumentiert, weil öffentliche Kommunikation grundsätzlich ein mögliches Resonanzpotenzial besitzt; eine institutionelle Wirkung ist nicht belegt.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Erneute Prüfung abgeschlossen. Es wurden keine Diskurs- oder Entscheidungsdaten gefunden; Kommunikationspotenzial und demokratische Ereigniswirkung bleiben getrennt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Publikumsreichweite der zugrunde liegenden Darstellung ist nicht belegt.",
+                  "source_ids": [
+                    "wiwo-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Warnung kann Aufmerksamkeit erzeugen, belegt aber keine starke politische oder institutionelle Veränderung.",
+                  "source_ids": [
+                    "wiwo-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Debattenwirkung ist offen und ohne Resonanzdaten nicht höher einzuschätzen.",
+                  "source_ids": [
+                    "wiwo-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Aufmerksamkeit und politische Forderungen sind grundsätzlich korrigierbar; dauerhafte institutionelle Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "wiwo-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine spezifische demokratische Schutzverletzung oder besondere Belastung vulnerabler Gruppen ist nicht belegt.",
+                  "source_ids": [
+                    "wiwo-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Es gibt keinen Beleg für Veränderungen von Regeln, Mehrheiten, Budgets, Personal oder institutioneller Korrekturfähigkeit.",
+                  "source_ids": [
+                    "wiwo-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere demokratische Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                "reference_frame": "Informierte öffentliche Debatte und demokratische Korrekturfähigkeit",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der demokratische Pfad betrifft ausschließlich ein mögliches Kommunikations- und Debattenpotenzial. Eine tatsächliche Resonanz, politische Entscheidung oder institutionelle Zustandsänderung ist nicht belegt.",
+          "balance": {
+            "rationale": "Es ist kein materieller Gegenpfad zur möglichen Debattenwirkung belegt. Die sehr geringe Eintrittswahrscheinlichkeit und die fehlenden Resonanzdaten werden getrennt von der Tragweite ausgewiesen.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Die zugeschriebene Warnung kann die öffentliche Debatte über Mobilitätskosten beeinflussen, ohne bereits eine institutionelle Zustandsveränderung zu belegen.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Die zugeschriebene Warnung kann die öffentliche Debatte über Mobilitätskosten beeinflussen, ohne bereits eine institutionelle Zustandsveränderung zu belegen.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T12:36:25.205Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T11:20:00.000Z",
+      "last_updated": "2026-09-14T12:36:25.205Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-dea6129a01ee01c96d5e",
+      "case_file": null,
+      "source_published_at": "2026-09-14T11:20:00.000Z",
+      "published_at": "2026-09-14T12:36:25.205Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wiwo-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Tankstellenverband die Drei-Euro-Prognose mit konkreten Annahmen oder einer Frist begründet, sollte anhand der Originalquelle geprüft werden.",
+          "source_id": "wiwo-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Begründung, Zeitraum und zugrunde liegende Preisentwicklung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a3ed4352afd12e97",
+          "announced_at": "2026-09-14T11:20:00.000Z",
+          "follow_up_date": "2026-09-21T12:36:25.205Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/deutschland/mobilitaetskosten-benzinpreis-auf-rekordhoch-diesel-kurz-davor/100254273.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T11:20:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-7d282bac7adadc1b",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7d282bac7adadc1b-19ce5f5c5a974b02-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7d282bac7adadc1b-0ad917c70288859d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7d282bac7adadc1b-e134e05a8f60478f-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "evakuierung-wegen-kellerbrands-feuer-im-keller-80-menschen-mussen-reha-zentrum-verlassen-dadc1b",
+      "title": "Evakuierung wegen Kellerbrands: Feuer im Keller: 80 Menschen müssen Reha-Zentrum verlassen",
+      "source_summary": "Am Morgen ist nach dem vorliegenden Bericht in einem Reha-Zentrum ein Feuer im Keller ausgebrochen. Das Gebäude wurde evakuiert; Patientinnen und Patienten sowie Angestellte mussten das Zentrum verlassen. Im Titel wird eine Zahl von 80 evakuierten Menschen genannt.\n\nDer Bericht beziffert den Schaden mit einer Größenordnung von Millionen. Nicht belegt sind in der gelieferten Textauswahl die Brandursache, mögliche Verletzte, die genaue Schadenshöhe und die Dauer der Evakuierung. Die Meldung beruht auf einer journalistischen Einzelquelle; eine unabhängige Bestätigung liegt nicht vor.",
+      "summary": "In einem Reha-Zentrum brannte es am Morgen im Keller; 80 Menschen mussten das Gebäude verlassen. Die Meldung ist vorläufig, weil Ursache, Verletzte und genaue Schadenshöhe noch offen sind.",
+      "detail_summary": "Ein Kellerbrand führte laut vorliegender Einzelquelle zur Evakuierung eines Reha-Zentrums. Betroffen waren Patientinnen und Patienten sowie Angestellte; im Titel werden 80 Menschen genannt. Der unmittelbare Wirkpfad ist eine Unterbrechung der Versorgung und des Arbeitsbetriebs, falls Bereiche des Zentrums vorübergehend nicht nutzbar sind. Wie lange diese Unterbrechung dauert und ob Menschen verletzt wurden, ist nicht belegt. Auch die genannte Schadenshöhe bleibt ohne genaue Zahl und unabhängige Bestätigung vorläufig.",
+      "why_relevant": "Ein Brand in einer Einrichtung mit Patientinnen und Patienten kann akut Sicherheit, Versorgung und Arbeitsabläufe beeinträchtigen. Der gesicherte Nachrichtenkern ist bislang auf Feuer und Evakuierung begrenzt.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Kellerbrand und Evakuierung eines Reha-Zentrums am Morgen des 14. September 2026",
+        "evaluation_target": {
+          "label": "Brandbedingte Evakuierung und mögliche Betriebsunterbrechung eines Reha-Zentrums",
+          "type": "event"
+        },
+        "baseline": "Regulärer Betrieb des Reha-Zentrums ohne Brand und Evakuierung",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "low",
+        "counterfactual": "Ohne Brand und Evakuierung könnten Patientinnen, Patienten und Angestellte das Zentrum regulär nutzen beziehungsweise dort arbeiten. Ob Schäden, eine längere Sperrung oder Versorgungsausfälle eintreten, bleibt offen.",
+        "reference_frame": [
+          "Sicherheit und Erreichbarkeit der medizinischen Rehabilitation",
+          "Schutz von Patientinnen, Patienten und Beschäftigten",
+          "Kontinuität der Versorgung"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die belegte Evakuierung verändert den Aufenthalt und den Arbeitsbetrieb im betroffenen Zentrum unmittelbar. Eine längere Unterbrechung der Rehabilitation ist nur bedingt modelliert, weil Dauer, Schäden und Ausweichversorgung unbekannt sind.",
+            "planet": "Ein Kellerbrand kann lokal Rauch-, Löschwasser- oder Materialfolgen verursachen. Für konkrete ökologische Zustandsveränderungen, Freisetzungen oder eine über das Gebäude hinausgehende Wirkung liegt kein Beleg vor.",
+            "democracy": "Aus dem Ereignistext ist keine demokratische oder institutionelle Zustandsveränderung ableitbar. Ein indirekter Pfad über Aufsicht oder Vertrauen wäre nur bei zusätzlichen Informationen zu Versagen, Entscheidungen oder öffentlicher Reaktion prüfbar."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Brandbedingte Evakuierung unterbricht Aufenthalt und Betrieb im betroffenen Bereich.",
+          "second_order": "Eine längere Gebäudesperrung könnte Behandlungen und Arbeitsabläufe verlagern oder verschieben, sofern keine ausreichenden Ausweichkapazitäten bestehen.",
+          "third_order": "Bei langer Sperrung und fehlenden Ausweichmöglichkeiten könnte die regionale Rehabilitationsversorgung belastet werden; dafür fehlen Daten zur Dauer, Kapazität und regionalen Einbindung.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die einzige gelieferte Quelle belegt keine Brandursache, Verletztenzahl, genaue Schadenshöhe oder Dauer der Evakuierung.",
+            "Die gezielte Suche nach einer unabhängigen Ereignisbestätigung ergab keinen passenden Treffer.",
+            "Die gezielte Suche nach einem amtlichen Mechanismus- oder Umweltbeleg ergab keinen passenden, tatsächlich gelesenen Beleg."
+          ],
+          "source_independence": "Nur die gelieferte journalistische Einzelquelle ist für das konkrete Ereignis verfügbar. Die ergänzende Suche auf den zugelassenen Quellen ergab keine passende unabhängige Bestätigung.",
+          "institutional_status": "Für das Ereignis sind weder behördliche Folgemaßnahmen noch ein rechtlicher Status der Gebäudesperrung belegt."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Vorübergehende Unterbrechung von Aufenthalt, Versorgung und Arbeit durch die Evakuierung",
+                "mechanism": "Die Evakuierung verlagert Patientinnen, Patienten und Beschäftigte aus dem Gebäude und unterbricht den regulären Betrieb im betroffenen Bereich.",
+                "recipients": [
+                  "Patientinnen und Patienten",
+                  "Angestellte"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Brand machte nach der vorliegenden Quelle eine Räumung erforderlich. Eine länger dauernde Versorgungsunterbrechung ist nicht belegt.",
+                "reference_space": "Betroffenes Reha-Zentrum und unmittelbar betroffene Nutzerinnen und Nutzer",
+                "time_horizon": "Kurzfristig; längerfristige Folgen offen",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die gemeldete Evakuierung führt zumindest vorübergehend zu einer Unterbrechung des regulären Aufenthalts und Betriebs.",
+                "source_support": "Die Quelle belegt Brand, Evakuierung sowie Patientinnen, Patienten und Angestellte als Betroffene; sie belegt keine Dauer und keinen konkreten Behandlungsausfall.",
+                "limitations": "Keine Angaben zu Verletzten, Evakuierungsdauer, Ausweichversorgung oder tatsächlicher Behandlungskontinuität.",
+                "first_order": "Das Gebäude wird geräumt; Aufenthalt und regulärer Betrieb im betroffenen Bereich werden unterbrochen.",
+                "second_order": "Bei längerer Sperrung könnten Behandlungen und Arbeitsabläufe verlagert oder verschoben werden.",
+                "third_order": "Bei fehlenden Ausweichkapazitäten könnte die regionale Versorgung belastet werden; dieser Pfad ist nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die unmittelbare Evakuierung ist belegt. Eine höhere Tragweite hängt von Dauer, Schaden und Ausweichversorgung ab, die unbekannt sind."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Suche nach einer unabhängigen Ereignisbestätigung und nach Angaben zu Dauer oder Versorgungsausfall ergab keinen passenden tatsächlich gelesenen Beleg. Der Pfad bleibt als vorläufiges, niedrig evidenziertes Potenzial bestehen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt 80 Menschen in einer einzelnen Einrichtung; die tatsächliche Gesamtzahl der Betroffenen ist nicht weiter belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Die Evakuierung unterbricht Aufenthalt und Betrieb deutlich; Verletzungen oder existenzielle Folgen sind nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine kurzfristige Unterbrechung ist plausibel, aber die Dauer der Sperrung ist unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Evakuierung und kurzfristige Betriebsunterbrechung sind grundsätzlich reversibel; dauerhafte Gebäudeschäden sind nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Patientinnen und Patienten in einer Reha-Einrichtung können auf kontinuierliche Versorgung angewiesen sein; individuelle Schutzbedarfe sind nicht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der belegte Pfad betrifft zunächst eine einzelne Einrichtung; regionale Folgen sind nur bedingt modelliert.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist nicht belegt und wird ex ante nicht als eingetretene Folge behauptet.",
+                  "reference_frame": "Sicherheit und Kontinuität der Versorgung von Patientinnen und Patienten",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Mögliche zusätzliche organisatorische Belastung bei Verlegung oder längerer Sperrung",
+                "mechanism": "Wenn das Zentrum länger nicht nutzbar ist, können Patientinnen, Patienten, Beschäftigte und Angehörige durch Verlegungen, Terminverschiebungen und zusätzliche Wege belastet werden.",
+                "recipients": [
+                  "Patientinnen und Patienten",
+                  "Angehörige",
+                  "Beschäftigte"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt eine längere Sperrung und unzureichende Ausweichversorgung voraus.",
+                "reference_space": "Betroffene Einrichtung und ihr unmittelbares Versorgungsumfeld",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Eine längere Betriebsunterbrechung erzeugt zusätzliche Wege- und Organisationslasten.",
+                "source_support": "Die Quelle belegt die Evakuierung, nicht jedoch Verlegung, Terminverschiebungen oder zusätzliche Belastungen.",
+                "limitations": "Keine Daten zu Sperrdauer, Ausweichkapazitäten, Entfernung oder tatsächlichen Verlegungen.",
+                "first_order": "Mögliche Verlegung oder Terminverschiebung.",
+                "second_order": "Zusätzliche organisatorische und zeitliche Belastung.",
+                "third_order": "Bei fehlenden Alternativen mögliche regionale Versorgungslücke; nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne belegte längere Sperrung bleibt der Pfad offen und voraussichtlich begrenzt; bei fehlenden Alternativen ist eine höhere lokale Tragweite möglich."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine passende unabhängige Quelle zu Verlegung, Sperrdauer oder Versorgungsausfall gefunden; der Nebenpfad bleibt eine bedingte Modellhypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen wären voraussichtlich Nutzerinnen und Nutzer sowie Beschäftigte einer einzelnen Einrichtung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Zusätzliche Wege und Terminverschiebungen wären belastend, aber keine schwere Folge ohne weitere Belege.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer hängt vollständig von einer nicht belegten Sperrung ab.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Organisatorische Belastungen und Verlegungen wären grundsätzlich reversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Reha-Patientinnen und -Patienten können durch Unterbrechungen besonders belastet sein; konkrete individuelle Folgen fehlen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt auf eine Einrichtung und ihr unmittelbares Umfeld begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Schutzgrenzverletzung belegt.",
+                  "reference_frame": "Erreichbarkeit und Kontinuität der Rehabilitation",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "rationale": "Die Evakuierung begründet einen direkten negativen menschlichen Pfad. Weitergehende Versorgungsschäden bleiben bedingt und niedrig evidenziert; kein materieller positiver Gegenpfad ist belegt.",
+            "balance": {
+              "rationale": "Es gibt keinen materiellen positiven Gegenpfad desselben Ereignisses und Vergleichsrahmens.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "- Risiko",
+              "shortPathLabel": "Vorübergehende Unterbrechung von Aufenthalt, Versorgung und Arbeit durch die Evakuierung",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "- Risiko",
+            "shortPathLabel": "Vorübergehende Unterbrechung von Aufenthalt, Versorgung und Arbeit durch die Evakuierung",
+            "display_direction": "negative",
+            "label": "- Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "- Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Mögliche lokale Brand-, Rauch- oder Löschwasserfolgen",
+                "mechanism": "Ein Kellerbrand kann Rauch, Löschwasser oder beschädigte Materialien verursachen. Ob solche Stoffe freigesetzt wurden und welche Umweltgüter betroffen sind, ist unbekannt.",
+                "recipients": [
+                  "Unmittelbare Umgebung",
+                  "Lokale Umwelt- und Ressourcenschutzgüter"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Es müssten konkrete Rauch-, Löschwasser- oder Materialeinträge vorliegen; dazu enthält die Quelle keine Angaben.",
+                "reference_space": "Gebäude und unmittelbare Umgebung des Reha-Zentrums",
+                "time_horizon": "Kurzfristig bis mittelfristig, abhängig von Schadensbeseitigung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ein Brand kann lokale materielle oder umweltbezogene Begleitfolgen verursachen, ohne dass deren Eintritt hier belegt ist.",
+                "source_support": "Die Quelle belegt ein Feuer im Keller, nicht konkrete ökologische Schäden, Emissionen oder Freisetzungen.",
+                "limitations": "Keine Angaben zu Rauch, Löschwasser, beschädigten Stoffen, Entsorgung, betroffener Fläche oder Schutzgütern.",
+                "first_order": "Mögliche lokale Rauch- und Brandschäden.",
+                "second_order": "Möglicher Material- und Entsorgungsaufwand bei der Schadensbeseitigung.",
+                "third_order": "Keine belastbare dritte Ordnung ableitbar; weitergehende Umweltfolgen bleiben offen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Eine praktisch vernachlässigbare bis begrenzte lokale Wirkung ist möglich; Daten für eine höhere Tragweite fehlen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Suche nach einem passenden amtlichen oder fachlichen Mechanismusbeleg ergab keinen tatsächlich gelesenen Treffer. Der Pfad bleibt daher eine offene Modellhypothese mit nicht einschätzbarer Evidenz.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der berichtete Brand betrifft eine einzelne Einrichtung; eine darüber hinausgehende Reichweite ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein lokaler Brand kann Begleitfolgen haben; die konkrete Umweltintensität ist unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Mögliche lokale Folgen wären nach dem verfügbaren Material begrenzt, ihre Dauer ist aber unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Für dauerhafte oder irreversible ökologische Veränderungen gibt es keinen Beleg.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere ökologische Vulnerabilität des Standorts ist nicht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Eine systemische ökologische Rückkopplung ist im Material nicht begründet.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenzverletzung belegt oder ex ante konkret bedingt modelliert.",
+                  "reference_frame": "Lokale Umwelt- und Ressourcenschutzgüter",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der Brand erlaubt einen schwachen offenen Umweltpfad. Konkrete ökologische Zustandsveränderungen sind weder beobachtet noch belegt; die Richtung bleibt deshalb offen und ist nicht mit neutral gleichzusetzen.",
+            "balance": {
+              "rationale": "Kein positiver oder negativer materieller Gegenpfad mit ausreichender Evidenz liegt vor.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche lokale Brand-, Rauch- oder Löschwasserfolgen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche lokale Brand-, Rauch- oder Löschwasserfolgen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "neutral",
+                "label": "Im definierten lokalen Ereignisrahmen keine praktisch relevante demokratische Zustandsveränderung",
+                "mechanism": "Das lokale Brandereignis verändert nach dem vorliegenden Material weder demokratische Institutionen noch Regeln oder öffentliche Korrekturfähigkeit.",
+                "recipients": [
+                  "Lokale öffentliche Institutionen",
+                  "Bevölkerung im Umfeld"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad gilt nur für den definierten lokalen und kurzfristigen Vergleichsrahmen. Eine andere Bewertung wäre bei belegtem institutionellem Versagen, politischen Entscheidungen oder einer relevanten Vertrauensreaktion zu prüfen.",
+                "reference_space": "Lokale öffentliche Institutionen und demokratische Korrekturfähigkeit",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ohne belegte institutionelle oder politische Folge bleibt die demokratische Zustandsveränderung im definierten Raum und Zeitraum praktisch vernachlässigbar.",
+                "source_support": "Die Quelle berichtet ausschließlich über Brand, Evakuierung und Schaden; sie belegt keine demokratische oder institutionelle Folge.",
+                "limitations": "Keine Angaben zu Aufsicht, Verantwortungsfragen, politischen Entscheidungen oder öffentlicher Vertrauensentwicklung.",
+                "first_order": "Keine demokratische Zustandsveränderung aus dem Ereigniskern ableitbar.",
+                "second_order": "Keine belastbare institutionelle Folge belegbar.",
+                "third_order": "Keine dritte Ordnung begründbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Im definierten lokalen und kurzfristigen Rahmen ist keine materielle demokratische Folge belegt; ein schwacher indirekter Pfad bleibt für den Fall zusätzlicher Informationen offen."
+                },
+                "negligibility_rationale": "Der dokumentierte Pfad beschreibt eine praktisch vernachlässigbare Zustandsveränderung im ausdrücklich begrenzten Referenzraum und Zeitraum, nicht fehlende Recherche.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Suche nach ergänzenden institutionellen oder demokratischen Folgen ergab keinen passenden tatsächlich gelesenen Beleg. Im definierten Ereignisrahmen bleibt der Pfad praktisch vernachlässigbar.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine demokratische Reichweite ist aus dem Ereignismaterial ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine demokratische Intensität ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine demokratische Dauerwirkung ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine demokratische Zustandsveränderung ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine besondere demokratische Vulnerabilität ist im Material benannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine institutionelle oder systemische demokratische Folge ist begründet.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine demokratische Schutzgrenzverletzung belegt oder ex ante konkret bedingt modelliert.",
+                  "reference_frame": "Demokratische Korrekturfähigkeit und institutionelle Integrität",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 0,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Für den demokratischen Raum ist im definierten lokalen und kurzfristigen Rahmen keine praktisch relevante Zustandsveränderung begründet. Ein kleiner indirekter Prüfpfad bleibt bei zusätzlichen Informationen offen.",
+            "balance": {
+              "rationale": "Es gibt keinen belegten demokratischen Haupt- oder Gegenpfad mit materieller Tragweite.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 0,
+            "direction": "neutral",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Im definierten lokalen Ereignisrahmen keine praktisch relevante demokratische Zustandsveränderung",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Im definierten lokalen Ereignisrahmen keine praktisch relevante demokratische Zustandsveränderung",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Die gelieferte Quelle berichtet über einen Kellerbrand, die Evakuierung eines Reha-Zentrums, Patientinnen, Patienten und Angestellte sowie eine Schadensgröße in Millionenhöhe."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Geringe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/- = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Vorübergehende Unterbrechung von Aufenthalt, Versorgung und Arbeit durch die Evakuierung",
+              "mechanism": "Die Evakuierung verlagert Patientinnen, Patienten und Beschäftigte aus dem Gebäude und unterbricht den regulären Betrieb im betroffenen Bereich.",
+              "recipients": [
+                "Patientinnen und Patienten",
+                "Angestellte"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Brand machte nach der vorliegenden Quelle eine Räumung erforderlich. Eine länger dauernde Versorgungsunterbrechung ist nicht belegt.",
+              "reference_space": "Betroffenes Reha-Zentrum und unmittelbar betroffene Nutzerinnen und Nutzer",
+              "time_horizon": "Kurzfristig; längerfristige Folgen offen",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die gemeldete Evakuierung führt zumindest vorübergehend zu einer Unterbrechung des regulären Aufenthalts und Betriebs.",
+              "source_support": "Die Quelle belegt Brand, Evakuierung sowie Patientinnen, Patienten und Angestellte als Betroffene; sie belegt keine Dauer und keinen konkreten Behandlungsausfall.",
+              "limitations": "Keine Angaben zu Verletzten, Evakuierungsdauer, Ausweichversorgung oder tatsächlicher Behandlungskontinuität.",
+              "first_order": "Das Gebäude wird geräumt; Aufenthalt und regulärer Betrieb im betroffenen Bereich werden unterbrochen.",
+              "second_order": "Bei längerer Sperrung könnten Behandlungen und Arbeitsabläufe verlagert oder verschoben werden.",
+              "third_order": "Bei fehlenden Ausweichkapazitäten könnte die regionale Versorgung belastet werden; dieser Pfad ist nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die unmittelbare Evakuierung ist belegt. Eine höhere Tragweite hängt von Dauer, Schaden und Ausweichversorgung ab, die unbekannt sind."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Suche nach einer unabhängigen Ereignisbestätigung und nach Angaben zu Dauer oder Versorgungsausfall ergab keinen passenden tatsächlich gelesenen Beleg. Der Pfad bleibt als vorläufiges, niedrig evidenziertes Potenzial bestehen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt 80 Menschen in einer einzelnen Einrichtung; die tatsächliche Gesamtzahl der Betroffenen ist nicht weiter belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die Evakuierung unterbricht Aufenthalt und Betrieb deutlich; Verletzungen oder existenzielle Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine kurzfristige Unterbrechung ist plausibel, aber die Dauer der Sperrung ist unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Evakuierung und kurzfristige Betriebsunterbrechung sind grundsätzlich reversibel; dauerhafte Gebäudeschäden sind nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Patientinnen und Patienten in einer Reha-Einrichtung können auf kontinuierliche Versorgung angewiesen sein; individuelle Schutzbedarfe sind nicht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der belegte Pfad betrifft zunächst eine einzelne Einrichtung; regionale Folgen sind nur bedingt modelliert.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist nicht belegt und wird ex ante nicht als eingetretene Folge behauptet.",
+                "reference_frame": "Sicherheit und Kontinuität der Versorgung von Patientinnen und Patienten",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Mögliche zusätzliche organisatorische Belastung bei Verlegung oder längerer Sperrung",
+              "mechanism": "Wenn das Zentrum länger nicht nutzbar ist, können Patientinnen, Patienten, Beschäftigte und Angehörige durch Verlegungen, Terminverschiebungen und zusätzliche Wege belastet werden.",
+              "recipients": [
+                "Patientinnen und Patienten",
+                "Angehörige",
+                "Beschäftigte"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "unknown",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt eine längere Sperrung und unzureichende Ausweichversorgung voraus.",
+              "reference_space": "Betroffene Einrichtung und ihr unmittelbares Versorgungsumfeld",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Eine längere Betriebsunterbrechung erzeugt zusätzliche Wege- und Organisationslasten.",
+              "source_support": "Die Quelle belegt die Evakuierung, nicht jedoch Verlegung, Terminverschiebungen oder zusätzliche Belastungen.",
+              "limitations": "Keine Daten zu Sperrdauer, Ausweichkapazitäten, Entfernung oder tatsächlichen Verlegungen.",
+              "first_order": "Mögliche Verlegung oder Terminverschiebung.",
+              "second_order": "Zusätzliche organisatorische und zeitliche Belastung.",
+              "third_order": "Bei fehlenden Alternativen mögliche regionale Versorgungslücke; nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne belegte längere Sperrung bleibt der Pfad offen und voraussichtlich begrenzt; bei fehlenden Alternativen ist eine höhere lokale Tragweite möglich."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine passende unabhängige Quelle zu Verlegung, Sperrdauer oder Versorgungsausfall gefunden; der Nebenpfad bleibt eine bedingte Modellhypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen wären voraussichtlich Nutzerinnen und Nutzer sowie Beschäftigte einer einzelnen Einrichtung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Zusätzliche Wege und Terminverschiebungen wären belastend, aber keine schwere Folge ohne weitere Belege.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer hängt vollständig von einer nicht belegten Sperrung ab.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Organisatorische Belastungen und Verlegungen wären grundsätzlich reversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Reha-Patientinnen und -Patienten können durch Unterbrechungen besonders belastet sein; konkrete individuelle Folgen fehlen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt auf eine Einrichtung und ihr unmittelbares Umfeld begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Schutzgrenzverletzung belegt.",
+                "reference_frame": "Erreichbarkeit und Kontinuität der Rehabilitation",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "rationale": "Die Evakuierung begründet einen direkten negativen menschlichen Pfad. Weitergehende Versorgungsschäden bleiben bedingt und niedrig evidenziert; kein materieller positiver Gegenpfad ist belegt.",
+          "balance": {
+            "rationale": "Es gibt keinen materiellen positiven Gegenpfad desselben Ereignisses und Vergleichsrahmens.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "- Risiko",
+            "shortPathLabel": "Vorübergehende Unterbrechung von Aufenthalt, Versorgung und Arbeit durch die Evakuierung",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "- Risiko",
+          "shortPathLabel": "Vorübergehende Unterbrechung von Aufenthalt, Versorgung und Arbeit durch die Evakuierung",
+          "display_direction": "negative",
+          "label": "- Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "- Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Mögliche lokale Brand-, Rauch- oder Löschwasserfolgen",
+              "mechanism": "Ein Kellerbrand kann Rauch, Löschwasser oder beschädigte Materialien verursachen. Ob solche Stoffe freigesetzt wurden und welche Umweltgüter betroffen sind, ist unbekannt.",
+              "recipients": [
+                "Unmittelbare Umgebung",
+                "Lokale Umwelt- und Ressourcenschutzgüter"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Es müssten konkrete Rauch-, Löschwasser- oder Materialeinträge vorliegen; dazu enthält die Quelle keine Angaben.",
+              "reference_space": "Gebäude und unmittelbare Umgebung des Reha-Zentrums",
+              "time_horizon": "Kurzfristig bis mittelfristig, abhängig von Schadensbeseitigung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ein Brand kann lokale materielle oder umweltbezogene Begleitfolgen verursachen, ohne dass deren Eintritt hier belegt ist.",
+              "source_support": "Die Quelle belegt ein Feuer im Keller, nicht konkrete ökologische Schäden, Emissionen oder Freisetzungen.",
+              "limitations": "Keine Angaben zu Rauch, Löschwasser, beschädigten Stoffen, Entsorgung, betroffener Fläche oder Schutzgütern.",
+              "first_order": "Mögliche lokale Rauch- und Brandschäden.",
+              "second_order": "Möglicher Material- und Entsorgungsaufwand bei der Schadensbeseitigung.",
+              "third_order": "Keine belastbare dritte Ordnung ableitbar; weitergehende Umweltfolgen bleiben offen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Eine praktisch vernachlässigbare bis begrenzte lokale Wirkung ist möglich; Daten für eine höhere Tragweite fehlen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Suche nach einem passenden amtlichen oder fachlichen Mechanismusbeleg ergab keinen tatsächlich gelesenen Treffer. Der Pfad bleibt daher eine offene Modellhypothese mit nicht einschätzbarer Evidenz.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der berichtete Brand betrifft eine einzelne Einrichtung; eine darüber hinausgehende Reichweite ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein lokaler Brand kann Begleitfolgen haben; die konkrete Umweltintensität ist unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Mögliche lokale Folgen wären nach dem verfügbaren Material begrenzt, ihre Dauer ist aber unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Für dauerhafte oder irreversible ökologische Veränderungen gibt es keinen Beleg.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere ökologische Vulnerabilität des Standorts ist nicht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Eine systemische ökologische Rückkopplung ist im Material nicht begründet.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenzverletzung belegt oder ex ante konkret bedingt modelliert.",
+                "reference_frame": "Lokale Umwelt- und Ressourcenschutzgüter",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der Brand erlaubt einen schwachen offenen Umweltpfad. Konkrete ökologische Zustandsveränderungen sind weder beobachtet noch belegt; die Richtung bleibt deshalb offen und ist nicht mit neutral gleichzusetzen.",
+          "balance": {
+            "rationale": "Kein positiver oder negativer materieller Gegenpfad mit ausreichender Evidenz liegt vor.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche lokale Brand-, Rauch- oder Löschwasserfolgen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche lokale Brand-, Rauch- oder Löschwasserfolgen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "neutral",
+              "label": "Im definierten lokalen Ereignisrahmen keine praktisch relevante demokratische Zustandsveränderung",
+              "mechanism": "Das lokale Brandereignis verändert nach dem vorliegenden Material weder demokratische Institutionen noch Regeln oder öffentliche Korrekturfähigkeit.",
+              "recipients": [
+                "Lokale öffentliche Institutionen",
+                "Bevölkerung im Umfeld"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad gilt nur für den definierten lokalen und kurzfristigen Vergleichsrahmen. Eine andere Bewertung wäre bei belegtem institutionellem Versagen, politischen Entscheidungen oder einer relevanten Vertrauensreaktion zu prüfen.",
+              "reference_space": "Lokale öffentliche Institutionen und demokratische Korrekturfähigkeit",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ohne belegte institutionelle oder politische Folge bleibt die demokratische Zustandsveränderung im definierten Raum und Zeitraum praktisch vernachlässigbar.",
+              "source_support": "Die Quelle berichtet ausschließlich über Brand, Evakuierung und Schaden; sie belegt keine demokratische oder institutionelle Folge.",
+              "limitations": "Keine Angaben zu Aufsicht, Verantwortungsfragen, politischen Entscheidungen oder öffentlicher Vertrauensentwicklung.",
+              "first_order": "Keine demokratische Zustandsveränderung aus dem Ereigniskern ableitbar.",
+              "second_order": "Keine belastbare institutionelle Folge belegbar.",
+              "third_order": "Keine dritte Ordnung begründbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Im definierten lokalen und kurzfristigen Rahmen ist keine materielle demokratische Folge belegt; ein schwacher indirekter Pfad bleibt für den Fall zusätzlicher Informationen offen."
+              },
+              "negligibility_rationale": "Der dokumentierte Pfad beschreibt eine praktisch vernachlässigbare Zustandsveränderung im ausdrücklich begrenzten Referenzraum und Zeitraum, nicht fehlende Recherche.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Suche nach ergänzenden institutionellen oder demokratischen Folgen ergab keinen passenden tatsächlich gelesenen Beleg. Im definierten Ereignisrahmen bleibt der Pfad praktisch vernachlässigbar.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine demokratische Reichweite ist aus dem Ereignismaterial ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine demokratische Intensität ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine demokratische Dauerwirkung ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine demokratische Zustandsveränderung ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine besondere demokratische Vulnerabilität ist im Material benannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine institutionelle oder systemische demokratische Folge ist begründet.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine demokratische Schutzgrenzverletzung belegt oder ex ante konkret bedingt modelliert.",
+                "reference_frame": "Demokratische Korrekturfähigkeit und institutionelle Integrität",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 0,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Für den demokratischen Raum ist im definierten lokalen und kurzfristigen Rahmen keine praktisch relevante Zustandsveränderung begründet. Ein kleiner indirekter Prüfpfad bleibt bei zusätzlichen Informationen offen.",
+          "balance": {
+            "rationale": "Es gibt keinen belegten demokratischen Haupt- oder Gegenpfad mit materieller Tragweite.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 0,
+          "direction": "neutral",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Im definierten lokalen Ereignisrahmen keine praktisch relevante demokratische Zustandsveränderung",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Im definierten lokalen Ereignisrahmen keine praktisch relevante demokratische Zustandsveränderung",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Evakuierte Menschen",
+            "value": "80",
+            "unit": "Menschen",
+            "context": "Im Titel des vorliegenden Berichts genannte Zahl der Menschen, die das Reha-Zentrum verlassen mussten.",
+            "claim_id": "wt-7d282bac7adadc1b-v1-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "patientinnen",
+          "beschaeftigte"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T12:36:25.205Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T11:15:42.000Z",
+      "last_updated": "2026-09-14T12:36:25.205Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-ca7437bfc572e81b9259",
+      "case_file": null,
+      "source_published_at": "2026-09-14T11:15:42.000Z",
+      "published_at": "2026-09-14T12:36:25.205Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Brandursache, mögliche Verletzte und die genaue Schadenshöhe müssen durch zuständige Stellen oder eine unabhängige weitere Quelle geprüft werden.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Angaben von Feuerwehr, Polizei, Betreiber oder weiteren unabhängigen Berichten zu Ursache, Verletzten und Schadenshöhe",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-423e31aacdff820b",
+          "announced_at": "2026-09-14T11:15:42.000Z",
+          "follow_up_date": "2026-09-21T12:36:25.205Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/bayern/evakuierung-wegen-kellerbrands--feuer-im-keller--80-menschen-muessen-reha-zentrum-verlassen-38251348.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T11:15:42.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-0e6b495d66e1da2a",
       "title_image": {
