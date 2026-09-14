@@ -2,8 +2,1264 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-14T10:10:36.350Z",
+  "updated_at": "2026-09-14T10:51:22.080Z",
   "stories": [
+    {
+      "story_id": "wt-9a5ca53dea779f2f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-9a5ca53dea779f2f-46678cbed780f244-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-9a5ca53dea779f2f-f85dbfd72eea7307-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-9a5ca53dea779f2f-2e3441b982cb048b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "steigende-olpreise-benzin-in-deutschland-so-teuer-wie-nie-779f2f",
+      "title": "Steigende Ölpreise - Benzin in Deutschland so teuer wie nie",
+      "source_summary": "Der Deutschlandfunk berichtet am 14. September 2026 über ein neues Rekordhoch bei den Benzinpreisen in Deutschland. Super E10 kostete demnach am Vortag bundesweit durchschnittlich 2,273 Euro je Liter. Das waren 1,7 Cent mehr als am Freitag und mehr als der bisherige Höchstpreis vom März 2022.\n\nAuch Diesel lag mit durchschnittlich 2,404 Euro je Liter nahe seinem Höchstwert. Als wichtigen Treiber nennt der Bericht den Rohölpreis. Brent kostete zum Handelsstart mehr als 107 US-Dollar je Fass. Als Gründe für die Unsicherheit werden Drohnenangriffe auf eine Pipeline in Saudi-Arabien sowie die Absage eines Treffens zwischen Iran und Oman genannt. Regional und je nach Uhrzeit können die Preise abweichen. Die Angaben stammen aus einer journalistischen Einzelquelle und sind noch unabhängig zu prüfen.",
+      "summary": "In Deutschland hat Super E10 laut Deutschlandfunk einen neuen Rekordpreis erreicht. Für Haushalte und Betriebe kann das kurzfristig höhere Mobilitätskosten bedeuten; wie lange der Anstieg anhält, ist offen.",
+      "detail_summary": "Super E10 kostete laut Deutschlandfunk bundesweit durchschnittlich 2,273 Euro je Liter und übertraf damit den bisherigen Höchstpreis vom März 2022. Auch Diesel lag mit 2,404 Euro je Liter nahe einem Höchstwert. Der Bericht verbindet die Entwicklung mit höheren Ölpreisen und Unsicherheit an wichtigen Transportwegen. Zunächst betrifft das vor allem Menschen und Unternehmen mit hohem Kraftstoffbedarf. Längerfristige Folgen für Nachfrage, Inflation oder Versorgung lassen sich aus dieser Einzelmeldung noch nicht ableiten.",
+      "why_relevant": "Der belegte Rekordpreis verändert unmittelbar die Kosten des Autofahrens und des Straßentransports. Betroffen sind insbesondere Haushalte und Unternehmen mit geringer Ausweichmöglichkeit; Dauer und weitere volkswirtschaftliche Folgen sind noch offen.",
+      "topic": [
+        "Europa"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Neues Rekordhoch beim deutschen Super-E10-Tagesdurchschnitt am 13. September 2026 sowie hohe Diesel- und Rohölpreise, berichtet am 14. September 2026.",
+        "evaluation_target": {
+          "label": "Kraftstoffpreis- und Energiepreisentwicklung",
+          "type": "development"
+        },
+        "baseline": "Deutschland vor dem gemeldeten Preisanstieg sowie der bisherige Kraftstoffpreisstand vom Freitag und der bisherige Super-E10-Höchstpreis vom März 2022.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne den beschriebenen Anstieg des Rohölpreises und die im Bericht genannte Unsicherheit wären die Kraftstoffpreise im betrachteten kurzen Zeitraum voraussichtlich nicht in gleicher Weise gestiegen. Ausmaß, Dauer und weitere Einflussfaktoren bleiben offen.",
+        "reference_frame": [
+          "bezahlbare Mobilität und Versorgung",
+          "ungleiche Belastung von Haushalten und Unternehmen",
+          "Energie- und Versorgungssicherheit",
+          "Agenda 2030/SDG 7 und SDG 10, soweit anwendbar"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der direkt belegte Preisstand verändert die Ausgaben je Liter. Ein bedingter Wirkungspfad betrifft Haushalte, Pendlerinnen und Pendler sowie transportabhängige Unternehmen, besonders bei geringer Ausweichmöglichkeit. Verteilungs- und Folgedaten liegen nicht vor.",
+            "planet": "Ein anhaltender Preisreiz kann fossile Nachfrage und Verkehrsmittelwahl beeinflussen. Die Richtung bleibt offen, weil Ausweichverkehre, fehlende Alternativen, Dauer sowie Emissions- und Umweltdaten nicht belegt sind.",
+            "democracy": "Eine anhaltende Kostenbelastung kann politische Aufmerksamkeit und Forderungen nach Entlastung oder Versorgungssicherung erhöhen. Der Bericht belegt jedoch keine institutionelle Veränderung, Machtverschiebung oder Kommunikationswirkung; der Pfad bleibt bedingt und schwach."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Der Preis je Liter Kraftstoff steigt und verändert unmittelbar die Ausgaben von Kraftstoffnutzerinnen und -nutzern.",
+          "second_order": "Bei anhaltender Belastung können Mobilitätsentscheidungen, Transportkosten und politische Nachfrage nach Entlastung oder Versorgungssicherung beeinflusst werden.",
+          "third_order": "Eine länger andauernde Ölpreis- und Versorgungskrise könnte Energiepolitik, Infrastrukturentscheidungen und Verteilungsfragen verändern. Dieser Pfad ist nur bedingt modelliert und nicht als eingetretene Folge belegt.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Quelle berichtet einen Tagesdurchschnitt; regionale und zeitliche Preisunterschiede können die Belastung einzelner Nutzerinnen und Nutzer deutlich verändern.",
+            "Der Bericht belegt keinen länger anhaltenden Preisverlauf, keine gesamtwirtschaftliche Inflation, keine Veränderung von Emissionen und keine politische Reaktion.",
+            "Der Zusammenhang zwischen Rohölpreis und Kraftstoffpreis wird im Bericht als typischer Mechanismus beschrieben, ersetzt aber keine unabhängige Folgedatenquelle."
+          ],
+          "source_independence": "Der Ereignis- und Kontextbeleg stammt aus einer journalistischen Deutschlandfunk-Meldung; die Preisangaben werden dem ADAC zugeschrieben. Ein zusätzlicher zugelassener unabhängiger Beleg konnte im Recherchepass nicht gelesen werden. Die fehlende Zusatzquelle begrenzt die Evidenz, blockiert die korrekt als vorläufig bezeichnete Erstmeldung aber nicht.",
+          "institutional_status": "Es geht um eine laufende Markt- und Preisentwicklung, nicht um einen Beschluss, ein Gesetz oder eine staatliche Umsetzung."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Höhere Kraftstoffpreise erhöhen kurzfristig die Ausgaben für notwendige Fahrten und den Straßentransport.",
+                "mechanism": "Der gemeldete höhere Preis je Liter erhöht die Kosten jeder getankten Kraftstoffmenge. Haushalte, Pendlerinnen und Pendler sowie Unternehmen mit geringer Ausweichmöglichkeit tragen diese Preisänderung unmittelbar, sofern sie ihre getankte Menge nicht vollständig reduzieren können.",
+                "recipients": [
+                  "Haushalte",
+                  "Pendlerinnen und Pendler",
+                  "transportabhängige Unternehmen"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der höhere Tagesdurchschnitt muss über mehrere Tage oder Wochen bestehen bleiben oder die betroffenen Personen und Unternehmen müssen kurzfristig weiter Kraftstoff benötigen.",
+                "reference_space": "Deutschland, Kraftstoffnutzerinnen und -nutzer sowie straßenabhängige Unternehmen",
+                "time_horizon": "kurzfristig bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Der Preis je Liter wirkt auf die Ausgaben, sofern die getankte Menge, die Fahrleistung und die Ausweichmöglichkeiten nicht vollständig angepasst werden.",
+                "source_support": "Die Quelle belegt den Preisstand und den Anstieg gegenüber Freitag. Sie belegt nicht die konkrete Belastungsverteilung, die Dauer oder bereits eingetretene Verhaltensänderungen.",
+                "limitations": "Keine Daten zu Einkommen, Fahrleistung, regionalen Unterschieden, Weitergabe an andere Preise oder tatsächlichen Mobilitätsanpassungen liegen vor.",
+                "first_order": "Höhere Ausgaben je Liter für Kraftstoff.",
+                "second_order": "Mögliche Einschränkung oder Verlagerung von Fahrten und höhere Transportkosten, falls der Preis anhält.",
+                "third_order": "Mögliche Verteilungs- und Versorgungspolitik bei längerer Belastung; nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die unmittelbare Preisänderung ist belegt, ihre Dauer, Verteilung und gesamtwirtschaftliche Reichweite aber nicht. Deshalb bleibt die mögliche Tragweite konservativ begrenzt."
+                },
+                "negligibility_rationale": "Nicht vernachlässigbar, weil der Preis je Liter unmittelbar die Ausgaben der weiter tankenden Nutzerinnen und Nutzer verändert. Die Reichweite und Dauer der Belastung sind jedoch unsicher.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der erneute Ereignis-, Mechanismus- und Folgencheck wurde durchgeführt. Es wurde kein zusätzlicher zugelassener Originalbeleg gelesen; der direkte Kostenmechanismus bleibt aus dem Ausgangsbeleg plausibel, Verteilung und Dauer bleiben offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Kraftstoffpreise betreffen regional und bundesweit viele Nutzerinnen und Nutzer sowie Teile des Straßentransports, aber nicht alle Menschen in gleicher Intensität.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der Preisrekord verändert die Ausgaben je Liter deutlich. Eine existenzielle Belastung für alle Betroffenen ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Belegt ist ein Tagesdurchschnitt; die weitere Dauer des Preisniveaus ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Die unmittelbare Preisbelastung ist bei sinkenden Preisen grundsätzlich leicht reversibel; mögliche verhaltens- oder verteilungspolitische Anpassungen sind nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen ohne gute Verkehrsalternative, Pendlerinnen und Pendler sowie Haushalte mit geringem Einkommen können stärker betroffen sein. Die konkrete Verteilung ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein Folgepfad über Transportkosten, Nachfrage und politische Entlastungsforderungen ist plausibel, aber keine tiefe strukturelle Wirkung beobachtet.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist im Material nicht belegt. Ungleiche Belastungen sind als Prüfpunkt berücksichtigt, begründen aber keine automatische Schutzuntergrenze.",
+                  "reference_frame": "bezahlbare Mobilität, soziale Teilhabe und ungleiche Belastung",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der direkte menschliche Hauptpfad ist die zusätzliche Kostenbelastung durch den gemeldeten Preisstand. Weitergehende Folgen für Mobilität, andere Preise und Versorgung bleiben wegen fehlender Dauer-, Verteilungs- und Verhaltensdaten bedingt.",
+            "balance": {
+              "rationale": "Es liegt kein materieller positiver Gegenpfad desselben Gegenstands und Vergleichs vor. Mögliche Ausweichreaktionen oder spätere Entlastungen sind keine belegte Gegenwirkung und werden nicht kompensierend verrechnet.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Höhere Kraftstoffpreise erhöhen kurzfristig die Ausgaben für notwendige Fahrten und den Straßentransport.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Höhere Kraftstoffpreise erhöhen kurzfristig die Ausgaben für notwendige Fahrten und den Straßentransport.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Eine anhaltende Kraftstoffverteuerung könnte fossile Nachfrage oder Ausweichverkehre verändern; die Umweltwirkung ist offen.",
+                "mechanism": "Preisänderungen können Mobilitäts- und Transportentscheidungen beeinflussen. Fehlende Alternativen, notwendige Fahrten oder längere Ausweichwege können den Effekt begrenzen oder umkehren.",
+                "recipients": [
+                  "Natur",
+                  "Verkehrssystem",
+                  "kraftstoffabhängige Unternehmen"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Preisbelastung muss anhalten und zu messbaren Änderungen bei Kraftstoffnachfrage, Fahrleistung oder Verkehrsmittelwahl führen.",
+                "reference_space": "Deutschland, fossile Mobilität und damit verbundene Umweltbelastungen",
+                "time_horizon": "mittelfristig bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Preisreize wirken auf Nachfrage, ohne dass Verlagerungen auf längere Wege oder andere belastende Optionen den Effekt vollständig aufheben.",
+                "source_support": "Die Quelle belegt Kraftstoff- und Rohölpreise sowie einen allgemeinen Preisübertragungsmechanismus, nicht Nachfrage-, Emissions- oder Umweltveränderungen.",
+                "limitations": "Keine Emissions-, Nachfrage-, Verkehrs- oder Umweltmessung liegt vor. Die Richtung des Nettoeffekts bleibt offen.",
+                "first_order": "Veränderter finanzieller Anreiz für fossile Mobilität.",
+                "second_order": "Mögliche Änderung von Fahrleistung, Verkehrsmittelwahl oder Transportkosten.",
+                "third_order": "Mögliche Rückwirkungen auf fossile Infrastruktur und Klimapfade; nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne Daten zu Dauer, Nachfrage und Verhaltensänderung ist nur eine kleine bis begrenzte mögliche Wirkungsspanne vertretbar. Die offene Richtung bedeutet nicht, dass der Pfad fehlt."
+                },
+                "negligibility_rationale": "Nicht als fehlender Pfad bewertet, weil ein bedingter Preis-zu-Nachfrage-Mechanismus plausibel ist. Die praktische Tragweite kann bei kurzer Dauer und fehlender Reaktion vernachlässigbar bleiben.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der erneute Mechanismus- und Umweltfolgencheck wurde durchgeführt. Es wurde kein zusätzlicher zugelassener Originalbeleg zu Nachfrage-, Emissions- oder Umweltfolgen gelesen; die Richtung bleibt deshalb offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der mögliche Umweltpfad betrifft Änderungen der betroffenen Mobilitäts- und Transportnachfrage, nicht automatisch die gesamte Bevölkerung oder das gesamte Energiesystem.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Umweltintensität ist nicht gemessen. Der Ausgangsbeleg beschreibt Preise, nicht Emissions- oder Schadstoffänderungen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer des Preissignals ist unbekannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Der modellierte Preisreiz und eine kurzfristige Nachfrageanpassung wären grundsätzlich reversibel; dauerhafte Umweltveränderungen sind nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ungleiche Umweltbetroffenheit ist möglich, aber im Material nicht konkret belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine indirekte Nachfragewirkung ist plausibel, eine systemische Rückkopplung oder ein Lock-in aber nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenzverletzung wird im Material belegt. Die mögliche Umweltwirkung bleibt ein bedingter Modellpfad.",
+                  "reference_frame": "Umwelt- und Klimabelastung durch fossile Mobilität",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "open",
+                "label": "Geopolitische Versorgungsunsicherheit könnte bei einer längeren Krise fossile Importabhängigkeiten und Umweltbelastungen verlagern.",
+                "mechanism": "Störungen an wichtigen Transportwegen könnten Beschaffung, Routen und Versorgungsstrategien verändern. Daraus könnten zusätzliche oder verlagerte Umweltbelastungen entstehen; ein solcher Verlauf ist nicht beobachtet.",
+                "recipients": [
+                  "Natur",
+                  "Energieversorgung",
+                  "Verkehrssystem"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die im Bericht genannte Unsicherheit muss zu tatsächlichen und anhaltenden Versorgungsstörungen oder Routenänderungen führen.",
+                "reference_space": "Internationale Ölversorgung mit möglichen Folgen für Deutschland",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Geopolitische Ereignisse verändern Transport- oder Beschaffungswege und führen dadurch zu messbaren Umwelt- oder Versorgungseffekten.",
+                "source_support": "Die Quelle berichtet über Unsicherheit, Angriffe und eine abgesagte Zusammenkunft, nicht über eingetretene Versorgungsausfälle, Routenänderungen oder Umweltfolgen.",
+                "limitations": "Keine Daten zu Mengen, Routen, Emissionen, Umweltschäden oder tatsächlichen Versorgungsausfällen liegen vor.",
+                "first_order": "Mögliche Veränderung von Öltransport und Beschaffung.",
+                "second_order": "Mögliche Verlagerung von Transportwegen und fossiler Infrastruktur.",
+                "third_order": "Mögliche Rückkopplungen auf Energiepolitik und fossile Lock-ins; nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist an mehrere ungeklärte Bedingungen geknüpft und bleibt deshalb begrenzt. Die offene Richtung bezieht sich auf die Umweltwirkung, nicht auf die Existenz des modellierten Risikopfads."
+                },
+                "negligibility_rationale": "Der Pfad ist bei ausbleibender Versorgungsstörung praktisch vernachlässigbar, bleibt aber als bedingtes Nebenrisiko dokumentiert.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der erneute Ereignis-, Mechanismus- und Umweltfolgencheck wurde durchgeführt. Es wurde kein zusätzlicher zugelassener Originalbeleg zu eingetretenen Versorgungs- oder Umweltfolgen gelesen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ein möglicher Versorgungspfad könnte mehrere Märkte betreffen, ist derzeit aber nicht als eingetretene Folge belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Konkrete Umweltintensität oder Versorgungsschwere fehlen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der berichteten Unsicherheit und einer möglichen Störung ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Beschaffungs- und Routenänderungen wären grundsätzlich reversibel, könnten unter Bedingungen aber längerfristige Lock-ins begünstigen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ungleiche Umwelt- oder Versorgungslasten sind möglich, aber nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte über Versorgung und Infrastruktur eine zweite Ordnung erreichen; eine dritte Ordnung ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Umweltgrenzverletzung ist belegt oder für diesen ex-ante-Pfad bedingt konkretisiert.",
+                  "reference_frame": "ökologische Folgen fossiler Versorgung",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Für die Planet-Dimension gibt es keinen beobachteten Umweltbefund. Ein offener Hauptpfad und ein schwaches bedingtes Nebenrisiko werden dokumentiert; Nachfrage-, Emissions- und Versorgungsdaten fehlen.",
+            "balance": {
+              "rationale": "Positive und negative Umweltwirkungen sind nicht belastbar vergleichbar. Ein höherer Preis kann Nachfrage dämpfen, aber Ausweichverkehre oder Versorgungsausweichstrategien können gegenläufig wirken; keiner dieser Pfade ist als eingetretene Wirkung belegt.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Eine anhaltende Kraftstoffverteuerung könnte fossile Nachfrage oder Ausweichverkehre verändern; die Umweltwirkung ist offen.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine anhaltende Kraftstoffverteuerung könnte fossile Nachfrage oder Ausweichverkehre verändern; die Umweltwirkung ist offen.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Anhaltende Kraftstoffpreise könnten politische Debatten über Entlastung, Energieversorgung und Mobilität verstärken.",
+                "mechanism": "Eine breit spürbare Kostenbelastung kann politische Aufmerksamkeit und öffentliche Forderungen beeinflussen, ohne dass daraus bereits ein institutioneller Effekt, eine Machtverschiebung oder eine Veränderung demokratischer Verfahren folgt.",
+                "recipients": [
+                  "Haushalte",
+                  "politische Institutionen",
+                  "Wählerinnen und Wähler"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Preisbelastung muss anhalten und politisch sichtbar verarbeitet werden; konkrete Reaktionen oder Prioritäten sind nicht belegt.",
+                "reference_space": "Deutschland, öffentliche Debatte und politische Entscheidungsprozesse",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Anhaltende Kostenbelastungen werden von Institutionen und Öffentlichkeit als politischer Handlungsdruck verarbeitet.",
+                "source_support": "Die Quelle berichtet Preise und geopolitische Unsicherheit, nicht politische Reaktionen, Umfragen, Entscheidungen oder Veränderungen demokratischer Institutionen.",
+                "limitations": "Keine Umfragen, Parlamentsdebatten, Entscheidungen oder Diskursdaten liegen vor. Eine mögliche politische Aufmerksamkeit ist nicht mit demokratischer Wirkung gleichzusetzen.",
+                "first_order": "Mögliche höhere politische Aufmerksamkeit für Kraftstoff- und Energiepreise.",
+                "second_order": "Mögliche Forderungen nach Entlastung oder Versorgungssicherung.",
+                "third_order": "Mögliche Veränderung politischer Prioritäten; nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die politische Wirkung hängt vollständig von Dauer, Wahrnehmung und Reaktionen ab. Deshalb ist nur eine geringe mögliche Tragweite vertretbar; der Pfad bleibt als offene Modellhypothese dokumentiert."
+                },
+                "negligibility_rationale": "Bei kurzer Preisdauer oder ausbleibender politischer Verarbeitung kann der Pfad praktisch vernachlässigbar bleiben. Ein fehlender Nachweis ist jedoch kein fehlender Pfad.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der erneute Demokratie- und Diskursfolgencheck wurde durchgeführt. Es wurde kein zusätzlicher zugelassener Originalbeleg zu politischen Reaktionen, Meinungsänderungen oder institutionellen Veränderungen gelesen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Kraftstoffpreise können viele Menschen betreffen, politische Verarbeitung ist aber nicht automatisch gleich weitreichend.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein institutioneller oder demokratischer Druck ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer des Preissignals und einer möglichen politischen Verarbeitung ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Politische Aufmerksamkeit und Prioritäten sind grundsätzlich korrigierbar; dauerhafte institutionelle Folgen sind nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ungleiche politische Betroffenheit ist möglich, aber nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Diskurs- oder Prioritätseffekt ist höchstens indirekt und nicht beobachtet; institutionelle oder regelverändernde Tiefe ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete Beeinträchtigung demokratischer Schutzrechte oder Institutionen ist belegt. Politischer Handlungsdruck allein ist keine Schutzgrenzverletzung.",
+                  "reference_frame": "demokratische Rechenschaft, politische Korrekturfähigkeit und faire Teilhabe",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die Demokratie-Dimension bleibt eine offene, schwache Modellhypothese. Der Bericht enthält keine Belege für politische Entscheidungen, Meinungsänderungen, institutionelle Machtverschiebungen oder eine beobachtete Kommunikationswirkung.",
+            "balance": {
+              "rationale": "Keine materiellen positiven oder negativen institutionellen Gegenpfade sind belegt. Eine mögliche politische Aufmerksamkeit wird nicht als positive oder negative demokratische Wirkung überzeichnet.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Anhaltende Kraftstoffpreise könnten politische Debatten über Entlastung, Energieversorgung und Mobilität verstärken.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Anhaltende Kraftstoffpreise könnten politische Debatten über Entlastung, Energieversorgung und Mobilität verstärken.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Die gelesene Deutschlandfunk-Meldung berichtet über den Super-E10-Tagesdurchschnitt von 2,273 Euro, den Dieselpreis von 2,404 Euro, den Brent-Preis von mehr als 107 US-Dollar sowie den im Bericht beschriebenen Zusammenhang zwischen Rohölpreisen und Kraftstoffpreisen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Höhere Kraftstoffpreise erhöhen kurzfristig die Ausgaben für notwendige Fahrten und den Straßentransport.",
+              "mechanism": "Der gemeldete höhere Preis je Liter erhöht die Kosten jeder getankten Kraftstoffmenge. Haushalte, Pendlerinnen und Pendler sowie Unternehmen mit geringer Ausweichmöglichkeit tragen diese Preisänderung unmittelbar, sofern sie ihre getankte Menge nicht vollständig reduzieren können.",
+              "recipients": [
+                "Haushalte",
+                "Pendlerinnen und Pendler",
+                "transportabhängige Unternehmen"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der höhere Tagesdurchschnitt muss über mehrere Tage oder Wochen bestehen bleiben oder die betroffenen Personen und Unternehmen müssen kurzfristig weiter Kraftstoff benötigen.",
+              "reference_space": "Deutschland, Kraftstoffnutzerinnen und -nutzer sowie straßenabhängige Unternehmen",
+              "time_horizon": "kurzfristig bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Der Preis je Liter wirkt auf die Ausgaben, sofern die getankte Menge, die Fahrleistung und die Ausweichmöglichkeiten nicht vollständig angepasst werden.",
+              "source_support": "Die Quelle belegt den Preisstand und den Anstieg gegenüber Freitag. Sie belegt nicht die konkrete Belastungsverteilung, die Dauer oder bereits eingetretene Verhaltensänderungen.",
+              "limitations": "Keine Daten zu Einkommen, Fahrleistung, regionalen Unterschieden, Weitergabe an andere Preise oder tatsächlichen Mobilitätsanpassungen liegen vor.",
+              "first_order": "Höhere Ausgaben je Liter für Kraftstoff.",
+              "second_order": "Mögliche Einschränkung oder Verlagerung von Fahrten und höhere Transportkosten, falls der Preis anhält.",
+              "third_order": "Mögliche Verteilungs- und Versorgungspolitik bei längerer Belastung; nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die unmittelbare Preisänderung ist belegt, ihre Dauer, Verteilung und gesamtwirtschaftliche Reichweite aber nicht. Deshalb bleibt die mögliche Tragweite konservativ begrenzt."
+              },
+              "negligibility_rationale": "Nicht vernachlässigbar, weil der Preis je Liter unmittelbar die Ausgaben der weiter tankenden Nutzerinnen und Nutzer verändert. Die Reichweite und Dauer der Belastung sind jedoch unsicher.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der erneute Ereignis-, Mechanismus- und Folgencheck wurde durchgeführt. Es wurde kein zusätzlicher zugelassener Originalbeleg gelesen; der direkte Kostenmechanismus bleibt aus dem Ausgangsbeleg plausibel, Verteilung und Dauer bleiben offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Kraftstoffpreise betreffen regional und bundesweit viele Nutzerinnen und Nutzer sowie Teile des Straßentransports, aber nicht alle Menschen in gleicher Intensität.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der Preisrekord verändert die Ausgaben je Liter deutlich. Eine existenzielle Belastung für alle Betroffenen ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Belegt ist ein Tagesdurchschnitt; die weitere Dauer des Preisniveaus ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Die unmittelbare Preisbelastung ist bei sinkenden Preisen grundsätzlich leicht reversibel; mögliche verhaltens- oder verteilungspolitische Anpassungen sind nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen ohne gute Verkehrsalternative, Pendlerinnen und Pendler sowie Haushalte mit geringem Einkommen können stärker betroffen sein. Die konkrete Verteilung ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein Folgepfad über Transportkosten, Nachfrage und politische Entlastungsforderungen ist plausibel, aber keine tiefe strukturelle Wirkung beobachtet.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist im Material nicht belegt. Ungleiche Belastungen sind als Prüfpunkt berücksichtigt, begründen aber keine automatische Schutzuntergrenze.",
+                "reference_frame": "bezahlbare Mobilität, soziale Teilhabe und ungleiche Belastung",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der direkte menschliche Hauptpfad ist die zusätzliche Kostenbelastung durch den gemeldeten Preisstand. Weitergehende Folgen für Mobilität, andere Preise und Versorgung bleiben wegen fehlender Dauer-, Verteilungs- und Verhaltensdaten bedingt.",
+          "balance": {
+            "rationale": "Es liegt kein materieller positiver Gegenpfad desselben Gegenstands und Vergleichs vor. Mögliche Ausweichreaktionen oder spätere Entlastungen sind keine belegte Gegenwirkung und werden nicht kompensierend verrechnet.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Höhere Kraftstoffpreise erhöhen kurzfristig die Ausgaben für notwendige Fahrten und den Straßentransport.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Höhere Kraftstoffpreise erhöhen kurzfristig die Ausgaben für notwendige Fahrten und den Straßentransport.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Eine anhaltende Kraftstoffverteuerung könnte fossile Nachfrage oder Ausweichverkehre verändern; die Umweltwirkung ist offen.",
+              "mechanism": "Preisänderungen können Mobilitäts- und Transportentscheidungen beeinflussen. Fehlende Alternativen, notwendige Fahrten oder längere Ausweichwege können den Effekt begrenzen oder umkehren.",
+              "recipients": [
+                "Natur",
+                "Verkehrssystem",
+                "kraftstoffabhängige Unternehmen"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Preisbelastung muss anhalten und zu messbaren Änderungen bei Kraftstoffnachfrage, Fahrleistung oder Verkehrsmittelwahl führen.",
+              "reference_space": "Deutschland, fossile Mobilität und damit verbundene Umweltbelastungen",
+              "time_horizon": "mittelfristig bis langfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Preisreize wirken auf Nachfrage, ohne dass Verlagerungen auf längere Wege oder andere belastende Optionen den Effekt vollständig aufheben.",
+              "source_support": "Die Quelle belegt Kraftstoff- und Rohölpreise sowie einen allgemeinen Preisübertragungsmechanismus, nicht Nachfrage-, Emissions- oder Umweltveränderungen.",
+              "limitations": "Keine Emissions-, Nachfrage-, Verkehrs- oder Umweltmessung liegt vor. Die Richtung des Nettoeffekts bleibt offen.",
+              "first_order": "Veränderter finanzieller Anreiz für fossile Mobilität.",
+              "second_order": "Mögliche Änderung von Fahrleistung, Verkehrsmittelwahl oder Transportkosten.",
+              "third_order": "Mögliche Rückwirkungen auf fossile Infrastruktur und Klimapfade; nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne Daten zu Dauer, Nachfrage und Verhaltensänderung ist nur eine kleine bis begrenzte mögliche Wirkungsspanne vertretbar. Die offene Richtung bedeutet nicht, dass der Pfad fehlt."
+              },
+              "negligibility_rationale": "Nicht als fehlender Pfad bewertet, weil ein bedingter Preis-zu-Nachfrage-Mechanismus plausibel ist. Die praktische Tragweite kann bei kurzer Dauer und fehlender Reaktion vernachlässigbar bleiben.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der erneute Mechanismus- und Umweltfolgencheck wurde durchgeführt. Es wurde kein zusätzlicher zugelassener Originalbeleg zu Nachfrage-, Emissions- oder Umweltfolgen gelesen; die Richtung bleibt deshalb offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der mögliche Umweltpfad betrifft Änderungen der betroffenen Mobilitäts- und Transportnachfrage, nicht automatisch die gesamte Bevölkerung oder das gesamte Energiesystem.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Umweltintensität ist nicht gemessen. Der Ausgangsbeleg beschreibt Preise, nicht Emissions- oder Schadstoffänderungen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer des Preissignals ist unbekannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Der modellierte Preisreiz und eine kurzfristige Nachfrageanpassung wären grundsätzlich reversibel; dauerhafte Umweltveränderungen sind nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ungleiche Umweltbetroffenheit ist möglich, aber im Material nicht konkret belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine indirekte Nachfragewirkung ist plausibel, eine systemische Rückkopplung oder ein Lock-in aber nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenzverletzung wird im Material belegt. Die mögliche Umweltwirkung bleibt ein bedingter Modellpfad.",
+                "reference_frame": "Umwelt- und Klimabelastung durch fossile Mobilität",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "open",
+              "label": "Geopolitische Versorgungsunsicherheit könnte bei einer längeren Krise fossile Importabhängigkeiten und Umweltbelastungen verlagern.",
+              "mechanism": "Störungen an wichtigen Transportwegen könnten Beschaffung, Routen und Versorgungsstrategien verändern. Daraus könnten zusätzliche oder verlagerte Umweltbelastungen entstehen; ein solcher Verlauf ist nicht beobachtet.",
+              "recipients": [
+                "Natur",
+                "Energieversorgung",
+                "Verkehrssystem"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "unknown",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die im Bericht genannte Unsicherheit muss zu tatsächlichen und anhaltenden Versorgungsstörungen oder Routenänderungen führen.",
+              "reference_space": "Internationale Ölversorgung mit möglichen Folgen für Deutschland",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Geopolitische Ereignisse verändern Transport- oder Beschaffungswege und führen dadurch zu messbaren Umwelt- oder Versorgungseffekten.",
+              "source_support": "Die Quelle berichtet über Unsicherheit, Angriffe und eine abgesagte Zusammenkunft, nicht über eingetretene Versorgungsausfälle, Routenänderungen oder Umweltfolgen.",
+              "limitations": "Keine Daten zu Mengen, Routen, Emissionen, Umweltschäden oder tatsächlichen Versorgungsausfällen liegen vor.",
+              "first_order": "Mögliche Veränderung von Öltransport und Beschaffung.",
+              "second_order": "Mögliche Verlagerung von Transportwegen und fossiler Infrastruktur.",
+              "third_order": "Mögliche Rückkopplungen auf Energiepolitik und fossile Lock-ins; nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist an mehrere ungeklärte Bedingungen geknüpft und bleibt deshalb begrenzt. Die offene Richtung bezieht sich auf die Umweltwirkung, nicht auf die Existenz des modellierten Risikopfads."
+              },
+              "negligibility_rationale": "Der Pfad ist bei ausbleibender Versorgungsstörung praktisch vernachlässigbar, bleibt aber als bedingtes Nebenrisiko dokumentiert.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der erneute Ereignis-, Mechanismus- und Umweltfolgencheck wurde durchgeführt. Es wurde kein zusätzlicher zugelassener Originalbeleg zu eingetretenen Versorgungs- oder Umweltfolgen gelesen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ein möglicher Versorgungspfad könnte mehrere Märkte betreffen, ist derzeit aber nicht als eingetretene Folge belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Konkrete Umweltintensität oder Versorgungsschwere fehlen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der berichteten Unsicherheit und einer möglichen Störung ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Beschaffungs- und Routenänderungen wären grundsätzlich reversibel, könnten unter Bedingungen aber längerfristige Lock-ins begünstigen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ungleiche Umwelt- oder Versorgungslasten sind möglich, aber nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte über Versorgung und Infrastruktur eine zweite Ordnung erreichen; eine dritte Ordnung ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Umweltgrenzverletzung ist belegt oder für diesen ex-ante-Pfad bedingt konkretisiert.",
+                "reference_frame": "ökologische Folgen fossiler Versorgung",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Für die Planet-Dimension gibt es keinen beobachteten Umweltbefund. Ein offener Hauptpfad und ein schwaches bedingtes Nebenrisiko werden dokumentiert; Nachfrage-, Emissions- und Versorgungsdaten fehlen.",
+          "balance": {
+            "rationale": "Positive und negative Umweltwirkungen sind nicht belastbar vergleichbar. Ein höherer Preis kann Nachfrage dämpfen, aber Ausweichverkehre oder Versorgungsausweichstrategien können gegenläufig wirken; keiner dieser Pfade ist als eingetretene Wirkung belegt.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine anhaltende Kraftstoffverteuerung könnte fossile Nachfrage oder Ausweichverkehre verändern; die Umweltwirkung ist offen.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Eine anhaltende Kraftstoffverteuerung könnte fossile Nachfrage oder Ausweichverkehre verändern; die Umweltwirkung ist offen.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Anhaltende Kraftstoffpreise könnten politische Debatten über Entlastung, Energieversorgung und Mobilität verstärken.",
+              "mechanism": "Eine breit spürbare Kostenbelastung kann politische Aufmerksamkeit und öffentliche Forderungen beeinflussen, ohne dass daraus bereits ein institutioneller Effekt, eine Machtverschiebung oder eine Veränderung demokratischer Verfahren folgt.",
+              "recipients": [
+                "Haushalte",
+                "politische Institutionen",
+                "Wählerinnen und Wähler"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Preisbelastung muss anhalten und politisch sichtbar verarbeitet werden; konkrete Reaktionen oder Prioritäten sind nicht belegt.",
+              "reference_space": "Deutschland, öffentliche Debatte und politische Entscheidungsprozesse",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Anhaltende Kostenbelastungen werden von Institutionen und Öffentlichkeit als politischer Handlungsdruck verarbeitet.",
+              "source_support": "Die Quelle berichtet Preise und geopolitische Unsicherheit, nicht politische Reaktionen, Umfragen, Entscheidungen oder Veränderungen demokratischer Institutionen.",
+              "limitations": "Keine Umfragen, Parlamentsdebatten, Entscheidungen oder Diskursdaten liegen vor. Eine mögliche politische Aufmerksamkeit ist nicht mit demokratischer Wirkung gleichzusetzen.",
+              "first_order": "Mögliche höhere politische Aufmerksamkeit für Kraftstoff- und Energiepreise.",
+              "second_order": "Mögliche Forderungen nach Entlastung oder Versorgungssicherung.",
+              "third_order": "Mögliche Veränderung politischer Prioritäten; nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die politische Wirkung hängt vollständig von Dauer, Wahrnehmung und Reaktionen ab. Deshalb ist nur eine geringe mögliche Tragweite vertretbar; der Pfad bleibt als offene Modellhypothese dokumentiert."
+              },
+              "negligibility_rationale": "Bei kurzer Preisdauer oder ausbleibender politischer Verarbeitung kann der Pfad praktisch vernachlässigbar bleiben. Ein fehlender Nachweis ist jedoch kein fehlender Pfad.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der erneute Demokratie- und Diskursfolgencheck wurde durchgeführt. Es wurde kein zusätzlicher zugelassener Originalbeleg zu politischen Reaktionen, Meinungsänderungen oder institutionellen Veränderungen gelesen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Kraftstoffpreise können viele Menschen betreffen, politische Verarbeitung ist aber nicht automatisch gleich weitreichend.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein institutioneller oder demokratischer Druck ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer des Preissignals und einer möglichen politischen Verarbeitung ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Politische Aufmerksamkeit und Prioritäten sind grundsätzlich korrigierbar; dauerhafte institutionelle Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ungleiche politische Betroffenheit ist möglich, aber nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Diskurs- oder Prioritätseffekt ist höchstens indirekt und nicht beobachtet; institutionelle oder regelverändernde Tiefe ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete Beeinträchtigung demokratischer Schutzrechte oder Institutionen ist belegt. Politischer Handlungsdruck allein ist keine Schutzgrenzverletzung.",
+                "reference_frame": "demokratische Rechenschaft, politische Korrekturfähigkeit und faire Teilhabe",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die Demokratie-Dimension bleibt eine offene, schwache Modellhypothese. Der Bericht enthält keine Belege für politische Entscheidungen, Meinungsänderungen, institutionelle Machtverschiebungen oder eine beobachtete Kommunikationswirkung.",
+          "balance": {
+            "rationale": "Keine materiellen positiven oder negativen institutionellen Gegenpfade sind belegt. Eine mögliche politische Aufmerksamkeit wird nicht als positive oder negative demokratische Wirkung überzeichnet.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Anhaltende Kraftstoffpreise könnten politische Debatten über Entlastung, Energieversorgung und Mobilität verstärken.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Anhaltende Kraftstoffpreise könnten politische Debatten über Entlastung, Energieversorgung und Mobilität verstärken.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T10:51:22.080Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T09:19:01.000Z",
+      "last_updated": "2026-09-14T10:51:22.080Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-dca8044be1ec17d167a8",
+      "case_file": null,
+      "source_published_at": "2026-09-14T09:19:01.000Z",
+      "published_at": "2026-09-14T10:51:22.080Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Bleiben die Kraftstoffpreise über mehrere Tage auf dem erhöhten Niveau oder sinken sie wieder?",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Tagesdurchschnittspreise für Super E10 und Diesel in Deutschland",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-7f1d17d13c60537c",
+          "announced_at": "2026-09-14T09:19:01.000Z",
+          "follow_up_date": "2026-09-21T10:51:22.080Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wie entwickeln sich die Ölpreise und die Lage an der Straße von Hormus weiter?",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Brent-Preis und belegte Veränderungen der Versorgungslage",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-7b2b1c2232e2b631",
+          "announced_at": "2026-09-14T09:19:01.000Z",
+          "follow_up_date": "2026-09-21T10:51:22.080Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/benzin-in-deutschland-so-teuer-wie-nie-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T09:19:01.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-0e6b495d66e1da2a",
       "title_image": {
