@@ -10,11 +10,22 @@ import { bridgeInput, adaptOutput, validateOutputPreflight, sameBridgeEvent } fr
 import { BRIDGE_ROOT, bridgePath, parsePacket, outputSchema, hash } from './contract.mjs';
 import { storyPage } from '../build.mjs';
 import { waitingForReview, observeOutput, outputJobId } from './status.mjs';
-import { protectedCurrentCandidate, updateProcessorHealth, compareProcessorJobs } from './processor.mjs';
+import { protectedCurrentCandidate, updateProcessorHealth, compareProcessorJobs, processorPriority, isHistoricalJob } from './processor.mjs';
 
 const newsJob = job => ['new_story','story_update','correction'].includes(job.input.job_type);
 const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
 const retryDue = (job, stage, now) => job.last_error?.stage !== stage || !(Date.parse(job.retry_at) > Date.parse(now));
+function publicationPickupPriority(job, now) {
+  const priority = processorPriority(job, now), receipt = job.semantic_review;
+  // Urgent/manual requests retain precedence; historical backfill stays last.
+  // A completed second pass must reach publication before another fresh draft
+  // consumes the bounded importer slot merely to request its own second pass.
+  const reviewed = job.publication_gate?.status === 'ready' && receipt?.review?.status === 'ready'
+    && receipt.assessment?.version === IMPACT_VERSION && receipt.assessment.semantics_revision === POTENTIAL_REVISION
+    && structuredSemanticChecks(receipt.review) && SEMANTIC_CHECKS.every(key => receipt.review.checks[key].status === 'pass');
+  const recovery = job.status === 'accepted' && job.accepted?.record && !job.accepted.staged;
+  return priority < 590 && !isHistoricalJob(job) && (reviewed || recovery) ? 585 : priority;
+}
 export class DropboxChatGPTBridgeProvider {
   constructor({ store, transport, visualProvider, editorialEnabled = false, correctionsEnabled = false, stageOnly = true, maxJobs = 6, maxPending = 48, retentionDays = 30, adapt = adaptOutput, semanticReview = ensureSemanticReview }) {
     if (!Number.isInteger(retentionDays) || retentionDays < 30) throw new Error('BRIDGE_RETENTION_INVALID');
@@ -81,7 +92,8 @@ export class DropboxChatGPTBridgeProvider {
     const names = new Set(entries.map(e => e.name));
     const results = [];
     let attempted = 0;
-    for (const job of (await this.store.all()).sort((a,b) => compareProcessorJobs(a,b,now))) {
+    for (const job of (await this.store.all()).sort((a,b) => publicationPickupPriority(b,now) - publicationPickupPriority(a,now)
+      || compareProcessorJobs(a,b,now))) {
       if (!newsJob(job) || terminal.has(job.status)) continue;
       if (!retryDue(job, 'import', now)) continue;
       if (job.publication_gate?.status === 'needs_second_pass' && await waitingForReview(this.store, job)) continue;
