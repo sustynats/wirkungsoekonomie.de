@@ -2,8 +2,1139 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-14T11:17:14.500Z",
+  "updated_at": "2026-09-14T11:43:01.717Z",
   "stories": [
+    {
+      "story_id": "wt-9ddca1b765941694",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-9ddca1b765941694-6fc43da151aa374d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-9ddca1b765941694-06bd5f8a259f5778-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-9ddca1b765941694-821cce3d56f11e32-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "gebaudetyp-e-geht-in-zweite-runde-941694",
+      "title": "Gebäudetyp-e geht in zweite Runde",
+      "source_summary": "Die Bayerische Staatsregierung kündigt die zweite Runde des Gebäudetyp-e an. Nach dem Wohnungsbau sollen diesmal Bildungsbauten wie Schulen und Hochschulen im Mittelpunkt stehen. Bewerbungen sind laut der mitgelieferten Pressemitteilung bis zum 30. Oktober 2026 möglich.\n\nBauminister Christian Bernreiter beschreibt den Ansatz als Prüfung bestehender Normen und Praktiken. Ziel sei, Kosten in Bau und Betrieb sinnvoll zu reduzieren, ohne die Qualität aufzugeben. Die Quelle belegt den Start der zweiten Runde und die politische Zielsetzung. Sie enthält noch keine ausgewählten Projekte, keine Umsetzungsergebnisse und keine gemessenen Einsparungen.",
+      "summary": "Bayern will den Gebäudetyp-e in einer zweiten Runde auf Schulen und Hochschulen ausweiten. Ob dadurch Kosten sinken und die Qualität erhalten bleibt, zeigt sich erst an ausgewählten Projekten und belastbaren Vergleichen.",
+      "detail_summary": "Bayern eröffnet eine zweite Runde des Gebäudetyp-e und richtet sie auf Bildungsbauten. Die Initiative soll bestehende Normen und Praktiken hinterfragen und Bau- sowie Betriebskosten senken. Für Schulen und Hochschulen könnte das den Spielraum bei Planung und Ausführung verändern. Belegt sind bislang die Ankündigung und die Bewerbungsfrist, nicht aber konkrete Projekte oder Einsparungen. Die Wirkung bleibt deshalb ein bedingtes Potenzial.",
+      "why_relevant": "Schulen und Hochschulen sind große öffentliche Bauaufgaben. Änderungen an Planungsregeln können Kosten, Bauzeiten und spätere Nutzungsbedingungen beeinflussen; konkrete Folgen sind noch nicht belegt.",
+      "topic": [
+        "Soziales"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Die Bayerische Staatsregierung kündigt die zweite Runde des Gebäudetyp-e mit Schwerpunkt auf Bildungsbauten an.",
+        "evaluation_target": {
+          "label": "Zweite Runde des Gebäudetyp-e für Bildungsbauten",
+          "type": "development"
+        },
+        "baseline": "Bisheriger Schwerpunkt auf Wohnungsbau; für die neue Runde sind noch keine ausgewählten Bildungsbauprojekte, konkreten Regelabweichungen oder Umsetzungsergebnisse belegt.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne die zweite Runde bliebe der angekündigte Bewerbungs- und Prüfrahmen für Bildungsbauprojekte aus; die bestehende Planungs- und Normpraxis würde im betrachteten Vorhaben zunächst fortgeführt.",
+        "reference_frame": [
+          "Sicherheit und Nutzungsqualität öffentlicher Bildungsgebäude",
+          "Wirtschaftlichkeit und langfristige Betriebsfähigkeit öffentlicher Infrastruktur",
+          "Ressourcenschonung und Energieeffizienz, soweit in konkreten Projekten belegt",
+          "SDG 4, SDG 9 und SDG 11, soweit anwendbar"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Initiative kann über Auswahl- und Planungsentscheidungen Kosten, Bauqualität, Zugänglichkeit, Innenraumkomfort und Nutzbarkeit von Schulen und Hochschulen beeinflussen. Die recherchierte Fachquelle zeigt, dass bei Bildungsgebäuden Energieverbrauch, Innenraumqualität und Nutzungsbedingungen nach der Inbetriebnahme geprüft werden müssen. Konkrete bayerische Projektfolgen oder Schutzverletzungen sind noch nicht belegt.",
+            "planet": "Bau- und Betriebsentscheidungen können Materialeinsatz, Energieverbrauch und langfristige Gebäudeperformance beeinflussen. Die EU-Quelle verweist auf Energieperformance, Lebenszyklusbetrachtung und Anforderungen an öffentliche Gebäude. Für die bayerische Runde fehlen jedoch konkrete technische Maßnahmen, Verbrauchswerte und ökologische Ergebnisse.",
+            "democracy": "Der staatliche Auswahl- und Prüfrahmen kann spätere öffentliche Bauentscheidungen und die institutionelle Auslegung von Planungspraktiken beeinflussen. Dieser Pfad bleibt ex ante und setzt transparente Auswahl, dokumentierte Evaluation und eine spätere institutionelle Nutzung der Ergebnisse voraus. Eine bereits eingetretene Regel- oder Machtveränderung ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Die zweite Runde schafft einen Bewerbungs- und Prüfrahmen für Bildungsbauten und kann bei ausgewählten Projekten Planungsentscheidungen verändern.",
+          "second_order": "Vergleichbare Projektergebnisse könnten spätere Entscheidungen von Kommunen, Bildungsträgern und Bauverwaltungen beeinflussen; ohne solche Daten bleibt die Übertragbarkeit offen.",
+          "third_order": "Eine breitere Veränderung öffentlicher Bau- und Regelpraxis ist nur bei wiederholbarer Qualität, transparenter Auswertung und institutioneller Übernahme denkbar.",
+          "enablement": [
+            "enables_institutional_control",
+            "enables_learning_from_pilot_projects"
+          ],
+          "counter_evidence": [
+            "Die Ausgangsquelle belegt keine konkreten Kostensenkungen, Bauzeitverkürzungen, Energieeinsparungen oder Qualitätsgewinne.",
+            "Die Ausgangsquelle nennt weder konkrete Projekte noch konkrete Normabweichungen.",
+            "Pilot- oder Bewerbungsverfahren belegen keine allgemeine Übertragbarkeit.",
+            "Die recherchierten Fachquellen liefern Kontext und Bewertungsanforderungen, aber keinen Wirksamkeitsnachweis für dieses bayerische Programm."
+          ],
+          "source_independence": "Der Ereigniskern stammt aus einer institutionellen Pressemitteilung der Bayerischen Staatsregierung. Die ergänzten Quellen sind unabhängig davon und dienen der Mechanismus- beziehungsweise Referenzprüfung; sie bestätigen nicht die angekündigten bayerischen Folgen.",
+          "institutional_status": "Angekündigte zweite Runde eines staatlichen Programmansatzes mit laufender Bewerbungsphase bis zum 30. Oktober 2026; konkrete Auswahl, Umsetzung, rechtliche Reichweite und Folgen sind offen."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Veränderte Planungs- und Betriebsentscheidungen können Kosten, Zugänglichkeit und Nutzungsqualität von Bildungsgebäuden beeinflussen.",
+                "mechanism": "Das Hinterfragen bestehender Normen und Praktiken kann bei ausgewählten Projekten Planungsentscheidungen, Bauaufwand, Innenraumqualität und spätere Betriebsbedingungen verändern. Bei Bildungsgebäuden müssen solche Wirkungen nach der Inbetriebnahme anhand von Energieverbrauch, Innenraumqualität und Nutzungsbedingungen überprüft werden.",
+                "recipients": [
+                  "Schülerinnen und Schüler",
+                  "Studierende",
+                  "Lehr- und Hochschulpersonal",
+                  "Kommunen",
+                  "öffentliche Haushalte",
+                  "Menschen mit Behinderungen und besonderem Unterstützungsbedarf"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "bayern-landesregierung-presse",
+                  "research-school-post-occupancy"
+                ],
+                "condition": "Der Pfad setzt ausgewählte Projekte, konkrete Planungsänderungen, die Einhaltung von Sicherheits- und Zugänglichkeitsanforderungen sowie eine vergleichbare Evaluation nach der Nutzung voraus.",
+                "reference_space": "Ausgewählte bayerische Bildungsbauprojekte",
+                "time_horizon": "Von der Planung über Bau und Inbetriebnahme bis in die ersten Betriebsjahre",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Der angekündigte Prüfrahmen führt tatsächlich zu veränderten Planungsentscheidungen und nicht nur zu einer administrativen Prüfung; die Änderungen bleiben funktional und werden im Betrieb überprüft.",
+                "source_support": "Die Ausgangsquelle belegt den Schwerpunkt auf Bildungsbauten und das Ziel, Kosten in Bau und Betrieb zu reduzieren. Die Fachquelle belegt die Notwendigkeit einer späteren Prüfung von Energieverbrauch, Energieeffizienz und Innenraumqualität in Bildungsgebäuden. Keine Quelle belegt bereits eingetretene bayerische Folgen.",
+                "limitations": "Keine Projektliste, keine konkreten Normabweichungen, keine bayerischen Vergleichswerte und keine Angaben zu Barrierefreiheit, Sicherheit oder Nutzungsqualität einzelner Vorhaben.",
+                "first_order": "Mögliche Veränderung von Prüf-, Planungs- und Bauentscheidungen in ausgewählten Bildungsbauprojekten.",
+                "second_order": "Mögliche Unterschiede bei Kosten, Zugänglichkeit, Innenraumkomfort, Energieverbrauch und Nutzbarkeit im späteren Betrieb.",
+                "third_order": "Mögliche Übernahme funktionierender Lösungen in weitere öffentliche Bildungsbauten; dies setzt transparente und vergleichbare Ergebnisse voraus.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der unmittelbare Wirkungsraum bleibt zunächst auf ausgewählte Projekte begrenzt. Bei dokumentiertem Erfolg oder problematischer Übertragung könnten mehrere öffentliche Bildungsbauten und ihre Nutzenden betroffen sein. Die Bandbreite bleibt wegen fehlender Projektdaten konservativ."
+                },
+                "negligibility_rationale": "Ein vollständig vernachlässigbarer Pfad ist nicht begründbar, weil die angekündigte Initiative ausdrücklich Bau- und Betriebsbedingungen öffentlicher Bildungsgebäude prüfen soll und Lernende sowie Beschäftigte betroffen sein können.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Gezielte zweite Recherche abgeschlossen. Eine zugelassene Fachquelle bestätigt den Mechanismus der notwendigen Nachbewertung von Energieverbrauch und Innenraumqualität in Bildungsgebäuden; konkrete Folgen der bayerischen Runde bleiben unbelegt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Unmittelbar betroffen wäre zunächst eine begrenzte Gruppe ausgewählter Bildungsbauprojekte; mittelbare Reichweite über weitere öffentliche Bauherren ist nur bedingt möglich.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Mögliche Veränderungen von Planung, Kosten, Innenraumqualität oder Zugänglichkeit wären für einzelne Gebäude begrenzt bis deutlich, aber nicht als schwerer oder fundamentaler Eingriff belegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse",
+                      "research-school-post-occupancy"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Wirkungen könnten sich von der Planung bis in den Gebäudebetrieb erstrecken, ohne dass eine strukturell dauerhafte Wirkung belegt ist.",
+                    "source_ids": [
+                      "research-school-post-occupancy"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Planungs- und Betriebsentscheidungen sind grundsätzlich korrigierbar, auch wenn bauliche Änderungen später Aufwand verursachen können; konkrete irreversible Bindungen sind nicht belegt.",
+                    "source_ids": [
+                      "research-school-post-occupancy"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Bildungsgebäude werden von Kindern, Jugendlichen, Studierenden und Beschäftigten genutzt; Barrierefreiheit und Nutzungsqualität können vulnerable Gruppen unterschiedlich betreffen. Eine konkrete ungleiche Belastung ist jedoch nicht belegt.",
+                    "source_ids": [
+                      "research-school-post-occupancy"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein begrenzter Folgepfad über Planung, Betrieb und mögliche Übertragung auf weitere Projekte ist plausibel; starke strukturelle Rückkopplungen sind nicht belegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse",
+                      "research-school-post-occupancy"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere Schutzgrenzverletzung bei Sicherheit, Barrierefreiheit oder Nutzungsqualität ist weder beobachtet noch als konkrete bedingte Folge modelliert.",
+                  "reference_frame": "Sicherheit, Zugänglichkeit, Innenraumqualität und Nutzbarkeit öffentlicher Bildungsgebäude",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der menschliche Pfad ist ein bedingtes ex-ante-Potenzial. Er ist wegen der ausdrücklich betroffenen Bildungsgebäude und ihrer Nutzenden materiell, bleibt aber aufgrund fehlender Projekte, Regelabweichungen und Folgenmessung mit niedriger Evidenz und offener Richtung bewertet.",
+            "balance": {
+              "rationale": "Es gibt keinen belegten gegenläufigen Hauptpfad desselben Gegenstands. Eine mögliche Kostensenkung ist kein Ausgleich für mögliche Einbußen bei Sicherheit, Zugänglichkeit oder Nutzungsqualität; diese Schutzfragen müssen projektbezogen geprüft werden.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Veränderte Planungs- und Betriebsentscheidungen können Kosten, Zugänglichkeit und Nutzungsqualität von Bildungsgebäuden beeinflussen.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Veränderte Planungs- und Betriebsentscheidungen können Kosten, Zugänglichkeit und Nutzungsqualität von Bildungsgebäuden beeinflussen.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Veränderte Bau- und Betriebsweisen können Materialeinsatz, Energieverbrauch und langfristige Gebäudeperformance beeinflussen.",
+                "mechanism": "Das angekündigte Hinterfragen von Normen und Praktiken könnte bauliche Lösungen, technische Ausstattung und Betriebsweisen von Bildungsgebäuden verändern. Energieperformance, Lebenszykluswirkungen und der spätere Betrieb sind dabei relevante, aber noch nicht projektspezifisch belegte Wirkungskanäle.",
+                "recipients": [
+                  "Natur",
+                  "öffentliche Bauherren",
+                  "Gebäudenutzende",
+                  "Bau- und Planungswirtschaft"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "bayern-landesregierung-presse",
+                  "research-epbd-public-buildings"
+                ],
+                "condition": "Der Pfad setzt konkrete technische oder bauliche Änderungen, eine Betrachtung von Bau- und Betriebsenergie sowie belastbare Vergleichsdaten zu Material- und Energieeinsatz voraus.",
+                "reference_space": "Ausgewählte Bildungsbauprojekte in Bayern und deren Bau- und Betriebsphase",
+                "time_horizon": "Planung und Bau bis zum langfristigen Gebäudebetrieb",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die angekündigte Betrachtung von Bau- und Betriebskosten berührt auch technische Entscheidungen mit Umwelt- oder Energiebezug; Kostensenkung und ökologische Verbesserung fallen nicht automatisch zusammen.",
+                "source_support": "Die Ausgangsquelle nennt Kosten in Bau und Betrieb, aber keine konkreten Energie-, Material- oder Emissionsziele. Die EU-Quelle belegt, dass Energieperformance, Lebenszyklusbetrachtung und öffentliche Gebäude fachlich miteinander verbunden sind.",
+                "limitations": "Keine technischen Projektangaben, keine Verbrauchswerte, keine Lebenszyklusdaten und keine ökologische Vergleichsbasis für die zweite bayerische Runde.",
+                "first_order": "Mögliche Veränderung von Material-, Bau- und Technikentscheidungen.",
+                "second_order": "Mögliche Veränderung des Energie- und Ressourcenverbrauchs im Betrieb sowie der langfristigen Gebäudeperformance.",
+                "third_order": "Mögliche Übernahme ressourcen- oder energieeffizienter Lösungen in weitere Bildungsbauten; ebenso möglich sind Verlagerungen in Wartung oder Betrieb, falls anfängliche Vereinfachungen spätere Aufwände erhöhen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne konkrete technische Maßnahmen bleibt der ökologische Pfad klein oder unbestimmt. Bei mehreren umgesetzten Projekten kann er über Bau und Betrieb messbar werden, die Richtung ist aber offen."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht als vollständig vernachlässigbar einzustufen, weil Bau- und Betriebsentscheidungen grundsätzlich langfristige Energie- und Ressourcenfolgen haben können. Ein verlässlicher höherer Wert ist mangels Projektdaten nicht begründbar.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Gezielte zweite Recherche abgeschlossen. Die EU-Quelle bestätigt die Relevanz von Energieperformance, Lebenszyklusbetrachtung und öffentlichen Gebäuden; konkrete ökologische Effekte der bayerischen Runde wurden nicht gefunden.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Zunächst sind nur ausgewählte Bildungsbauprojekte betroffen; eine breitere Reichweite setzt Übertragung voraus.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete ökologische Intensität ist nicht angegeben; mögliche Änderungen bleiben ohne technische Projektdaten gering bis unbestimmt.",
+                    "source_ids": [
+                      "research-epbd-public-buildings"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Bau- und Betriebsentscheidungen können über längere Zeit wirken, ohne dass eine generationenübergreifende oder strukturell dauerhafte Wirkung belegt ist.",
+                    "source_ids": [
+                      "research-epbd-public-buildings"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Technische und betriebliche Entscheidungen sind grundsätzlich veränderbar, auch wenn spätere Korrekturen Aufwand verursachen können; konkrete irreversible Festlegungen fehlen.",
+                    "source_ids": [
+                      "research-epbd-public-buildings"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere ökologische Lastverteilung oder extreme Betroffenheit vulnerabler Gruppen ist aus dem Material nicht ableitbar.",
+                    "source_ids": [
+                      "research-epbd-public-buildings"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein indirekter Folgepfad über Bau, Betrieb und mögliche Übertragung auf weitere öffentliche Gebäude ist plausibel; starke Rückkopplungen sind nicht belegt.",
+                    "source_ids": [
+                      "research-epbd-public-buildings"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenzverletzung ist belegt oder als bedingte Folge eines bestimmten Projekts modelliert.",
+                  "reference_frame": "Ressourcen- und Energieeinsatz öffentlicher Gebäude sowie langfristige Gebäudeperformance",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Ein planetarer Pfad ist wegen der möglichen Auswirkungen von Bau und Betrieb zu prüfen. Die recherchierten Quellen stützen den fachlichen Mechanismus, nicht aber eine konkrete Richtung oder eingetretene Wirkung der bayerischen Runde.",
+            "balance": {
+              "rationale": "Konkrete positive oder negative ökologische Hauptpfade sind nicht belegt. Eine mögliche Energie- oder Ressourceneinsparung darf nicht als Ausgleich für mögliche spätere Betriebs- oder Materialfolgen behauptet werden.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Veränderte Bau- und Betriebsweisen können Materialeinsatz, Energieverbrauch und langfristige Gebäudeperformance beeinflussen.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Veränderte Bau- und Betriebsweisen können Materialeinsatz, Energieverbrauch und langfristige Gebäudeperformance beeinflussen.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Ein staatliches Pilot- und Auswahlverfahren kann die spätere Auslegung öffentlicher Bau- und Prüfpraktiken beeinflussen.",
+                "mechanism": "Erfahrungen aus einem staatlich angekündigten Bewerbungs- und Prüfverfahren können als Referenz für spätere Entscheidungen von Kommunen, Bauverwaltungen und Bildungsträgern dienen. Eine solche institutionelle Wirkung setzt nachvollziehbare Auswahl, Evaluation, Korrekturfähigkeit und transparente Übertragung voraus.",
+                "recipients": [
+                  "Kommunen",
+                  "öffentliche Bauverwaltungen",
+                  "politische Entscheidungsträgerinnen und Entscheidungsträger",
+                  "Bildungsträger",
+                  "öffentliche Auftraggeber"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "bayern-landesregierung-presse",
+                  "research-epbd-public-buildings"
+                ],
+                "condition": "Es müssen konkrete Projekte ausgewählt, transparent dokumentiert, fachlich evaluiert und gegebenenfalls in spätere öffentliche Entscheidungen übernommen werden.",
+                "reference_space": "Bayerische öffentliche Bau- und Verwaltungsentscheidungen",
+                "time_horizon": "Von der Bewerbungs- und Auswahlphase bis zu möglichen späteren Regel-, Planungs- und Investitionsentscheidungen",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die zweite Runde erzeugt belastbare und zugängliche Erfahrungen, die über einzelne Projekte hinaus institutionell genutzt werden.",
+                "source_support": "Die Ausgangsquelle belegt eine staatliche zweite Runde und das erklärte Hinterfragen bestehender Praktiken. Sie belegt keine spätere Regeländerung, institutionelle Übernahme oder demokratische Wirkung. Die ergänzte EU-Quelle zeigt lediglich, dass öffentliche Gebäude und ihre Standards in übergeordnete politische und institutionelle Rahmen eingebettet sind.",
+                "limitations": "Keine Angaben zu Auswahlkriterien, Transparenz, Beteiligung, Evaluation, Veröffentlichung der Ergebnisse oder rechtlicher Bindungswirkung.",
+                "first_order": "Veränderter Bewerbungs- und Prüfrahmen für ausgewählte Bildungsbauprojekte.",
+                "second_order": "Mögliche Orientierung weiterer öffentlicher Bauentscheidungen an den Projektergebnissen.",
+                "third_order": "Mögliche Veränderung institutioneller Baupraxis oder Auslegung von Anforderungen; derzeit nur ein bedingtes Szenario.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der gegenwärtige institutionelle Effekt ist zunächst auf das angekündigte Verfahren und beteiligte Stellen begrenzt. Eine größere Wirkung setzt erfolgreiche Evaluation und institutionelle Übernahme voraus."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht vollständig vernachlässigbar, weil staatliche Pilotverfahren als Referenzen für spätere öffentliche Entscheidungen dienen können. Eine höhere Tragweite ist mangels Angaben zu Übernahme und Rechtswirkung nicht begründbar.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Gezielte zweite Recherche abgeschlossen. Es wurde kein unabhängiger Beleg für eine bereits eingetretene institutionelle Übernahme, Regeländerung oder Beteiligungswirkung gefunden. Der demokratische Pfad bleibt daher ein bedingtes Modell.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Unmittelbar betroffen sind zunächst beteiligte Projekte und zuständige Stellen; eine größere Reichweite setzt spätere Übertragung voraus.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Ankündigung verändert noch keine allgemeine Regel, Zuständigkeit oder Machtverteilung.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Erfahrungen können über die Projektdauer hinaus als Referenz genutzt werden, eine dauerhafte institutionelle Bindung ist aber nicht belegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Der angekündigte Prüfrahmen ist grundsätzlich korrigierbar; irreversible institutionelle Festlegungen sind nicht belegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere demokratische Lastkonzentration oder konkrete Einschränkung von Beteiligungs- oder Kontrollrechten ist nicht belegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Eine spätere institutionelle Übernahme ist als Folge zweiter oder dritter Ordnung denkbar, aber nicht belegt.",
+                    "source_ids": [
+                      "bayern-landesregierung-presse"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete demokratische Schutzgrenzverletzung bei Transparenz, Beteiligung, Kontrolle oder Korrekturfähigkeit ist belegt oder bedingt modelliert.",
+                  "reference_frame": "Transparenz, Nachvollziehbarkeit, Korrekturfähigkeit und institutionelle Kontrolle öffentlicher Bauentscheidungen",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der demokratische Pfad betrifft mögliche Lern- und Übertragungseffekte eines staatlichen Pilotverfahrens, nicht eine bereits eingetretene institutionelle Veränderung. Die Richtung bleibt offen, weil Auswahl, Evaluation, Transparenz und spätere Übernahme nicht feststehen.",
+            "balance": {
+              "rationale": "Es gibt keinen belegten gegenläufigen institutionellen Hauptpfad. Ein möglicher Lerngewinn ist kein Ausgleich für mögliche Transparenz- oder Kontrollprobleme; solche Risiken sind nur bei konkreten Verfahrensmängeln zu bewerten.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Ein staatliches Pilot- und Auswahlverfahren kann die spätere Auslegung öffentlicher Bau- und Prüfpraktiken beeinflussen.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein staatliches Pilot- und Auswahlverfahren kann die spätere Auslegung öffentlicher Bau- und Prüfpraktiken beeinflussen.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "bayern-landesregierung-presse",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Die Bayerische Staatsregierung kündigt die zweite Runde des Gebäudetyp-e an, nennt Bildungsbauten als Schwerpunkt und gibt den 30. Oktober 2026 als Bewerbungsfrist an."
+          },
+          {
+            "source_id": "research-epbd-public-buildings",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Energieperformance und Lebenszyklusbetrachtung sind für Gebäudeplanung und öffentliche Gebäude relevante Bewertungsdimensionen."
+          },
+          {
+            "source_id": "research-school-post-occupancy",
+            "functions": [
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Bei Bildungsgebäuden müssen Energieverbrauch, Energieeffizienz und Innenraumbedingungen nach der Nutzung mit den Planungszielen verglichen werden."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-performance-buildings/energy-performance-buildings-directive_en",
+          "title": "Energy Performance of Buildings Directive",
+          "publisher": "European Commission",
+          "source_id": "research-epbd-public-buildings",
+          "source_function": "mechanism"
+        },
+        {
+          "url": "https://build-up.ec.europa.eu/en/resources-and-tools/articles/technical-article-overview-post-occupancy-evaluation-educational",
+          "title": "Technical Article – An overview of post-occupancy evaluation in educational buildings",
+          "publisher": "European Commission BUILD UP",
+          "source_id": "research-school-post-occupancy",
+          "source_function": "reference"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Veränderte Planungs- und Betriebsentscheidungen können Kosten, Zugänglichkeit und Nutzungsqualität von Bildungsgebäuden beeinflussen.",
+              "mechanism": "Das Hinterfragen bestehender Normen und Praktiken kann bei ausgewählten Projekten Planungsentscheidungen, Bauaufwand, Innenraumqualität und spätere Betriebsbedingungen verändern. Bei Bildungsgebäuden müssen solche Wirkungen nach der Inbetriebnahme anhand von Energieverbrauch, Innenraumqualität und Nutzungsbedingungen überprüft werden.",
+              "recipients": [
+                "Schülerinnen und Schüler",
+                "Studierende",
+                "Lehr- und Hochschulpersonal",
+                "Kommunen",
+                "öffentliche Haushalte",
+                "Menschen mit Behinderungen und besonderem Unterstützungsbedarf"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "bayern-landesregierung-presse",
+                "research-school-post-occupancy"
+              ],
+              "condition": "Der Pfad setzt ausgewählte Projekte, konkrete Planungsänderungen, die Einhaltung von Sicherheits- und Zugänglichkeitsanforderungen sowie eine vergleichbare Evaluation nach der Nutzung voraus.",
+              "reference_space": "Ausgewählte bayerische Bildungsbauprojekte",
+              "time_horizon": "Von der Planung über Bau und Inbetriebnahme bis in die ersten Betriebsjahre",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Der angekündigte Prüfrahmen führt tatsächlich zu veränderten Planungsentscheidungen und nicht nur zu einer administrativen Prüfung; die Änderungen bleiben funktional und werden im Betrieb überprüft.",
+              "source_support": "Die Ausgangsquelle belegt den Schwerpunkt auf Bildungsbauten und das Ziel, Kosten in Bau und Betrieb zu reduzieren. Die Fachquelle belegt die Notwendigkeit einer späteren Prüfung von Energieverbrauch, Energieeffizienz und Innenraumqualität in Bildungsgebäuden. Keine Quelle belegt bereits eingetretene bayerische Folgen.",
+              "limitations": "Keine Projektliste, keine konkreten Normabweichungen, keine bayerischen Vergleichswerte und keine Angaben zu Barrierefreiheit, Sicherheit oder Nutzungsqualität einzelner Vorhaben.",
+              "first_order": "Mögliche Veränderung von Prüf-, Planungs- und Bauentscheidungen in ausgewählten Bildungsbauprojekten.",
+              "second_order": "Mögliche Unterschiede bei Kosten, Zugänglichkeit, Innenraumkomfort, Energieverbrauch und Nutzbarkeit im späteren Betrieb.",
+              "third_order": "Mögliche Übernahme funktionierender Lösungen in weitere öffentliche Bildungsbauten; dies setzt transparente und vergleichbare Ergebnisse voraus.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der unmittelbare Wirkungsraum bleibt zunächst auf ausgewählte Projekte begrenzt. Bei dokumentiertem Erfolg oder problematischer Übertragung könnten mehrere öffentliche Bildungsbauten und ihre Nutzenden betroffen sein. Die Bandbreite bleibt wegen fehlender Projektdaten konservativ."
+              },
+              "negligibility_rationale": "Ein vollständig vernachlässigbarer Pfad ist nicht begründbar, weil die angekündigte Initiative ausdrücklich Bau- und Betriebsbedingungen öffentlicher Bildungsgebäude prüfen soll und Lernende sowie Beschäftigte betroffen sein können.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Gezielte zweite Recherche abgeschlossen. Eine zugelassene Fachquelle bestätigt den Mechanismus der notwendigen Nachbewertung von Energieverbrauch und Innenraumqualität in Bildungsgebäuden; konkrete Folgen der bayerischen Runde bleiben unbelegt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Unmittelbar betroffen wäre zunächst eine begrenzte Gruppe ausgewählter Bildungsbauprojekte; mittelbare Reichweite über weitere öffentliche Bauherren ist nur bedingt möglich.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Mögliche Veränderungen von Planung, Kosten, Innenraumqualität oder Zugänglichkeit wären für einzelne Gebäude begrenzt bis deutlich, aber nicht als schwerer oder fundamentaler Eingriff belegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse",
+                    "research-school-post-occupancy"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Wirkungen könnten sich von der Planung bis in den Gebäudebetrieb erstrecken, ohne dass eine strukturell dauerhafte Wirkung belegt ist.",
+                  "source_ids": [
+                    "research-school-post-occupancy"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Planungs- und Betriebsentscheidungen sind grundsätzlich korrigierbar, auch wenn bauliche Änderungen später Aufwand verursachen können; konkrete irreversible Bindungen sind nicht belegt.",
+                  "source_ids": [
+                    "research-school-post-occupancy"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Bildungsgebäude werden von Kindern, Jugendlichen, Studierenden und Beschäftigten genutzt; Barrierefreiheit und Nutzungsqualität können vulnerable Gruppen unterschiedlich betreffen. Eine konkrete ungleiche Belastung ist jedoch nicht belegt.",
+                  "source_ids": [
+                    "research-school-post-occupancy"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein begrenzter Folgepfad über Planung, Betrieb und mögliche Übertragung auf weitere Projekte ist plausibel; starke strukturelle Rückkopplungen sind nicht belegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse",
+                    "research-school-post-occupancy"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere Schutzgrenzverletzung bei Sicherheit, Barrierefreiheit oder Nutzungsqualität ist weder beobachtet noch als konkrete bedingte Folge modelliert.",
+                "reference_frame": "Sicherheit, Zugänglichkeit, Innenraumqualität und Nutzbarkeit öffentlicher Bildungsgebäude",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der menschliche Pfad ist ein bedingtes ex-ante-Potenzial. Er ist wegen der ausdrücklich betroffenen Bildungsgebäude und ihrer Nutzenden materiell, bleibt aber aufgrund fehlender Projekte, Regelabweichungen und Folgenmessung mit niedriger Evidenz und offener Richtung bewertet.",
+          "balance": {
+            "rationale": "Es gibt keinen belegten gegenläufigen Hauptpfad desselben Gegenstands. Eine mögliche Kostensenkung ist kein Ausgleich für mögliche Einbußen bei Sicherheit, Zugänglichkeit oder Nutzungsqualität; diese Schutzfragen müssen projektbezogen geprüft werden.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Veränderte Planungs- und Betriebsentscheidungen können Kosten, Zugänglichkeit und Nutzungsqualität von Bildungsgebäuden beeinflussen.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Veränderte Planungs- und Betriebsentscheidungen können Kosten, Zugänglichkeit und Nutzungsqualität von Bildungsgebäuden beeinflussen.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Veränderte Bau- und Betriebsweisen können Materialeinsatz, Energieverbrauch und langfristige Gebäudeperformance beeinflussen.",
+              "mechanism": "Das angekündigte Hinterfragen von Normen und Praktiken könnte bauliche Lösungen, technische Ausstattung und Betriebsweisen von Bildungsgebäuden verändern. Energieperformance, Lebenszykluswirkungen und der spätere Betrieb sind dabei relevante, aber noch nicht projektspezifisch belegte Wirkungskanäle.",
+              "recipients": [
+                "Natur",
+                "öffentliche Bauherren",
+                "Gebäudenutzende",
+                "Bau- und Planungswirtschaft"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "bayern-landesregierung-presse",
+                "research-epbd-public-buildings"
+              ],
+              "condition": "Der Pfad setzt konkrete technische oder bauliche Änderungen, eine Betrachtung von Bau- und Betriebsenergie sowie belastbare Vergleichsdaten zu Material- und Energieeinsatz voraus.",
+              "reference_space": "Ausgewählte Bildungsbauprojekte in Bayern und deren Bau- und Betriebsphase",
+              "time_horizon": "Planung und Bau bis zum langfristigen Gebäudebetrieb",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die angekündigte Betrachtung von Bau- und Betriebskosten berührt auch technische Entscheidungen mit Umwelt- oder Energiebezug; Kostensenkung und ökologische Verbesserung fallen nicht automatisch zusammen.",
+              "source_support": "Die Ausgangsquelle nennt Kosten in Bau und Betrieb, aber keine konkreten Energie-, Material- oder Emissionsziele. Die EU-Quelle belegt, dass Energieperformance, Lebenszyklusbetrachtung und öffentliche Gebäude fachlich miteinander verbunden sind.",
+              "limitations": "Keine technischen Projektangaben, keine Verbrauchswerte, keine Lebenszyklusdaten und keine ökologische Vergleichsbasis für die zweite bayerische Runde.",
+              "first_order": "Mögliche Veränderung von Material-, Bau- und Technikentscheidungen.",
+              "second_order": "Mögliche Veränderung des Energie- und Ressourcenverbrauchs im Betrieb sowie der langfristigen Gebäudeperformance.",
+              "third_order": "Mögliche Übernahme ressourcen- oder energieeffizienter Lösungen in weitere Bildungsbauten; ebenso möglich sind Verlagerungen in Wartung oder Betrieb, falls anfängliche Vereinfachungen spätere Aufwände erhöhen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne konkrete technische Maßnahmen bleibt der ökologische Pfad klein oder unbestimmt. Bei mehreren umgesetzten Projekten kann er über Bau und Betrieb messbar werden, die Richtung ist aber offen."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht als vollständig vernachlässigbar einzustufen, weil Bau- und Betriebsentscheidungen grundsätzlich langfristige Energie- und Ressourcenfolgen haben können. Ein verlässlicher höherer Wert ist mangels Projektdaten nicht begründbar.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Gezielte zweite Recherche abgeschlossen. Die EU-Quelle bestätigt die Relevanz von Energieperformance, Lebenszyklusbetrachtung und öffentlichen Gebäuden; konkrete ökologische Effekte der bayerischen Runde wurden nicht gefunden.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Zunächst sind nur ausgewählte Bildungsbauprojekte betroffen; eine breitere Reichweite setzt Übertragung voraus.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete ökologische Intensität ist nicht angegeben; mögliche Änderungen bleiben ohne technische Projektdaten gering bis unbestimmt.",
+                  "source_ids": [
+                    "research-epbd-public-buildings"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Bau- und Betriebsentscheidungen können über längere Zeit wirken, ohne dass eine generationenübergreifende oder strukturell dauerhafte Wirkung belegt ist.",
+                  "source_ids": [
+                    "research-epbd-public-buildings"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Technische und betriebliche Entscheidungen sind grundsätzlich veränderbar, auch wenn spätere Korrekturen Aufwand verursachen können; konkrete irreversible Festlegungen fehlen.",
+                  "source_ids": [
+                    "research-epbd-public-buildings"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere ökologische Lastverteilung oder extreme Betroffenheit vulnerabler Gruppen ist aus dem Material nicht ableitbar.",
+                  "source_ids": [
+                    "research-epbd-public-buildings"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein indirekter Folgepfad über Bau, Betrieb und mögliche Übertragung auf weitere öffentliche Gebäude ist plausibel; starke Rückkopplungen sind nicht belegt.",
+                  "source_ids": [
+                    "research-epbd-public-buildings"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenzverletzung ist belegt oder als bedingte Folge eines bestimmten Projekts modelliert.",
+                "reference_frame": "Ressourcen- und Energieeinsatz öffentlicher Gebäude sowie langfristige Gebäudeperformance",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Ein planetarer Pfad ist wegen der möglichen Auswirkungen von Bau und Betrieb zu prüfen. Die recherchierten Quellen stützen den fachlichen Mechanismus, nicht aber eine konkrete Richtung oder eingetretene Wirkung der bayerischen Runde.",
+          "balance": {
+            "rationale": "Konkrete positive oder negative ökologische Hauptpfade sind nicht belegt. Eine mögliche Energie- oder Ressourceneinsparung darf nicht als Ausgleich für mögliche spätere Betriebs- oder Materialfolgen behauptet werden.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Veränderte Bau- und Betriebsweisen können Materialeinsatz, Energieverbrauch und langfristige Gebäudeperformance beeinflussen.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Veränderte Bau- und Betriebsweisen können Materialeinsatz, Energieverbrauch und langfristige Gebäudeperformance beeinflussen.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Ein staatliches Pilot- und Auswahlverfahren kann die spätere Auslegung öffentlicher Bau- und Prüfpraktiken beeinflussen.",
+              "mechanism": "Erfahrungen aus einem staatlich angekündigten Bewerbungs- und Prüfverfahren können als Referenz für spätere Entscheidungen von Kommunen, Bauverwaltungen und Bildungsträgern dienen. Eine solche institutionelle Wirkung setzt nachvollziehbare Auswahl, Evaluation, Korrekturfähigkeit und transparente Übertragung voraus.",
+              "recipients": [
+                "Kommunen",
+                "öffentliche Bauverwaltungen",
+                "politische Entscheidungsträgerinnen und Entscheidungsträger",
+                "Bildungsträger",
+                "öffentliche Auftraggeber"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "bayern-landesregierung-presse",
+                "research-epbd-public-buildings"
+              ],
+              "condition": "Es müssen konkrete Projekte ausgewählt, transparent dokumentiert, fachlich evaluiert und gegebenenfalls in spätere öffentliche Entscheidungen übernommen werden.",
+              "reference_space": "Bayerische öffentliche Bau- und Verwaltungsentscheidungen",
+              "time_horizon": "Von der Bewerbungs- und Auswahlphase bis zu möglichen späteren Regel-, Planungs- und Investitionsentscheidungen",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die zweite Runde erzeugt belastbare und zugängliche Erfahrungen, die über einzelne Projekte hinaus institutionell genutzt werden.",
+              "source_support": "Die Ausgangsquelle belegt eine staatliche zweite Runde und das erklärte Hinterfragen bestehender Praktiken. Sie belegt keine spätere Regeländerung, institutionelle Übernahme oder demokratische Wirkung. Die ergänzte EU-Quelle zeigt lediglich, dass öffentliche Gebäude und ihre Standards in übergeordnete politische und institutionelle Rahmen eingebettet sind.",
+              "limitations": "Keine Angaben zu Auswahlkriterien, Transparenz, Beteiligung, Evaluation, Veröffentlichung der Ergebnisse oder rechtlicher Bindungswirkung.",
+              "first_order": "Veränderter Bewerbungs- und Prüfrahmen für ausgewählte Bildungsbauprojekte.",
+              "second_order": "Mögliche Orientierung weiterer öffentlicher Bauentscheidungen an den Projektergebnissen.",
+              "third_order": "Mögliche Veränderung institutioneller Baupraxis oder Auslegung von Anforderungen; derzeit nur ein bedingtes Szenario.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der gegenwärtige institutionelle Effekt ist zunächst auf das angekündigte Verfahren und beteiligte Stellen begrenzt. Eine größere Wirkung setzt erfolgreiche Evaluation und institutionelle Übernahme voraus."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht vollständig vernachlässigbar, weil staatliche Pilotverfahren als Referenzen für spätere öffentliche Entscheidungen dienen können. Eine höhere Tragweite ist mangels Angaben zu Übernahme und Rechtswirkung nicht begründbar.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Gezielte zweite Recherche abgeschlossen. Es wurde kein unabhängiger Beleg für eine bereits eingetretene institutionelle Übernahme, Regeländerung oder Beteiligungswirkung gefunden. Der demokratische Pfad bleibt daher ein bedingtes Modell.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Unmittelbar betroffen sind zunächst beteiligte Projekte und zuständige Stellen; eine größere Reichweite setzt spätere Übertragung voraus.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Ankündigung verändert noch keine allgemeine Regel, Zuständigkeit oder Machtverteilung.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Erfahrungen können über die Projektdauer hinaus als Referenz genutzt werden, eine dauerhafte institutionelle Bindung ist aber nicht belegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Der angekündigte Prüfrahmen ist grundsätzlich korrigierbar; irreversible institutionelle Festlegungen sind nicht belegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere demokratische Lastkonzentration oder konkrete Einschränkung von Beteiligungs- oder Kontrollrechten ist nicht belegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Eine spätere institutionelle Übernahme ist als Folge zweiter oder dritter Ordnung denkbar, aber nicht belegt.",
+                  "source_ids": [
+                    "bayern-landesregierung-presse"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete demokratische Schutzgrenzverletzung bei Transparenz, Beteiligung, Kontrolle oder Korrekturfähigkeit ist belegt oder bedingt modelliert.",
+                "reference_frame": "Transparenz, Nachvollziehbarkeit, Korrekturfähigkeit und institutionelle Kontrolle öffentlicher Bauentscheidungen",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der demokratische Pfad betrifft mögliche Lern- und Übertragungseffekte eines staatlichen Pilotverfahrens, nicht eine bereits eingetretene institutionelle Veränderung. Die Richtung bleibt offen, weil Auswahl, Evaluation, Transparenz und spätere Übernahme nicht feststehen.",
+          "balance": {
+            "rationale": "Es gibt keinen belegten gegenläufigen institutionellen Hauptpfad. Ein möglicher Lerngewinn ist kein Ausgleich für mögliche Transparenz- oder Kontrollprobleme; solche Risiken sind nur bei konkreten Verfahrensmängeln zu bewerten.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein staatliches Pilot- und Auswahlverfahren kann die spätere Auslegung öffentlicher Bau- und Prüfpraktiken beeinflussen.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Ein staatliches Pilot- und Auswahlverfahren kann die spätere Auslegung öffentlicher Bau- und Prüfpraktiken beeinflussen.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "first_order",
+            "path": "Ausgewählte Bildungsbauprojekte erhalten möglicherweise einen veränderten Prüf- und Planungsrahmen.",
+            "direction": "open",
+            "condition": "Wenn Projekte ausgewählt und Anforderungen an Sicherheit, Qualität, Zugänglichkeit sowie Betrieb eingehalten werden, kann sich der Planungsrahmen für Bildungsbauten verändern.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "human",
+              "planet",
+              "democracy"
+            ]
+          },
+          {
+            "order": "second_order",
+            "path": "Bei funktionierenden Lösungen könnten Kommunen und andere öffentliche Bauherren ähnliche Ansätze prüfen.",
+            "direction": "open",
+            "condition": "Eine Übertragung setzt dokumentierte Projektergebnisse und vergleichbare Qualitäts- und Kostendaten voraus.",
+            "evidence": "plausible_path",
+            "claim_ids": [],
+            "dimensions": [
+              "human",
+              "planet",
+              "democracy"
+            ]
+          }
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T11:43:01.717Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T11:00:00.000Z",
+      "last_updated": "2026-09-14T11:43:01.717Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-91e1ee540e285423cfdd",
+      "case_file": null,
+      "source_published_at": "2026-09-14T11:00:00.000Z",
+      "published_at": "2026-09-14T11:43:01.717Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bayern-landesregierung-presse"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Welche Bildungsbauprojekte werden ausgewählt und welche konkreten Abweichungen von bisherigen Normen werden erprobt?",
+          "source_id": "bayern-landesregierung-presse",
+          "expected_by": null,
+          "measurable_indicator": "Ausgewählte Projekte, angewandte Regelabweichungen sowie dokumentierte Bau- und Betriebskosten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-4477358251437bd6",
+          "announced_at": "2026-09-14T11:00:00.000Z",
+          "follow_up_date": "2026-09-21T11:43:01.717Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Zeigen die ausgewählten Projekte messbare Veränderungen bei Bauzeit, Kosten, Energieverbrauch, Zugänglichkeit oder Nutzungsqualität?",
+          "source_id": "bayern-landesregierung-presse",
+          "expected_by": null,
+          "measurable_indicator": "Vergleichbare Projektkennzahlen vor und nach der Umsetzung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0d7351407b04dfcc",
+          "announced_at": "2026-09-14T11:00:00.000Z",
+          "follow_up_date": "2026-09-21T11:43:01.717Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Bayerische Staatsregierung - Pressemitteilungen",
+          "url": "https://www.bayern.de/gebaeudetyp-e-geht-in-zweite-runde",
+          "source_type": "official_rss",
+          "published_at": "2026-09-14T11:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-26b27a50d1cdf845",
       "title_image": {
