@@ -5,6 +5,11 @@ import { bridgePath, outputSchema } from '../../scripts/news/bridge/contract.mjs
 import { preparedNewsPrompt } from './fixtures/api-news-input.mjs';
 import { NEWS_INPUT_READINESS_VERSION } from '../../scripts/news/news-input-readiness.mjs';
 import { apiRequestKey } from '../../scripts/news/bridge/api-service.mjs';
+import { editorialKnowledge } from '../../scripts/news/bridge/editorial-knowledge.mjs';
+import { modelledPublicationIssues } from '../../scripts/news/impact-scope.mjs';
+import { syntheticPotentialAssessment } from './fixtures/impact21.mjs';
+import { IMPACT_RULE, IMPACT_PROMPT_RULE } from '../../scripts/news/impact-assessment.mjs';
+import { MAGNITUDE_STATE_RULE } from '../../scripts/news/impact-magnitude.mjs';
 const now = '2026-09-13T10:00:00Z';
 const id = 'wt_20260913T093000Z_' + 'a'.repeat(24);
 const input = { job_id: id, input_hash: 'b'.repeat(64), created_at: '2026-09-13T09:30:00Z', job_type: 'new_story', sources: [{ published_at: '2026-09-13T09:30:00Z' }], wirkungsticker:{story_id:'test-news',analysis_prompt:preparedNewsPrompt()} };
@@ -230,6 +235,56 @@ test('transport-compatible completed response retains its paid request key and u
   assert.equal(f.calls.length,0);
   const proof=JSON.parse(f.files.get(bridgePath('95_LOGS','processor-api-'+oldKey+'.json')));
   assert.equal(proof.key,oldKey); assert.equal(proof.profile_hash,oldProfile); assert.equal(proof.usage.output_tokens,200);
+});
+test('actual editorial instructions require three modelled dimensions and a whole-story hold without a defensible path',()=>{
+  const current=editorialKnowledge(new URL('../..',import.meta.url).pathname);
+  const request=prepareApiJob(input,current);
+  assert.ok(request.instructions.includes(IMPACT_RULE));
+  assert.match(request.instructions,/Alle drei MPD-Dimensionen neuer Veröffentlichungen brauchen modelled/);
+  assert.match(request.instructions,/ohne tragfähiges Modell needs_research und HOLD vor Veröffentlichung/);
+  assert.match(request.instructions,/null nur historische Lesekompatibilität/);
+  assert.doesNotMatch(request.instructions,/darf eine Dimension ausdrücklich offen und ohne numerischen Wert bleiben/);
+  assert.ok(request.instructions.includes(MAGNITUDE_STATE_RULE));
+  assert.ok(request.prompt.includes(IMPACT_PROMPT_RULE));
+  assert.match(request.instructions,/keine Browser-, Such-, Bild- oder Dateitools/);
+  const review=prepareApiJob({...input,job_type:'impact_semantic_review',parent_job_id:id.replace(/a/g,'e'),proposed_assessment:syntheticPotentialAssessment()},current);
+  assert.equal(JSON.parse(review.prompt).authoritative_impact_rule,IMPACT_PROMPT_RULE);
+  assert.match(JSON.parse(review.prompt).hold_rule,/unvollständige Endfassung nicht per confirm freigeben/);
+  assert.match(review.instructions,/ausschließlich das begrenzte Web-Suchtool/);
+  assert.doesNotMatch(review.instructions,/keine Browser-, Such-, Bild- oder Dateitools/);
+});
+test('preceding live knowledge recovers only completed identical packets and still applies current validation',async()=>{
+  const current=editorialKnowledge(new URL('../..',import.meta.url).pathname);
+  const oldProfile='c2fb082fee1631ac7252907df14b2e3fc0afa18fbc14475cc4da6f9c48aa9b85';
+  assert.ok(current.compatibleHashes.includes(oldProfile));assert.notEqual(current.hash,oldProfile);
+  for(const scenario of ['valid','null_dimension','changed_packet','unknown']) {
+    const f=fixture(),oldKey='d'.repeat(64),before=structuredClone(f.job.input);
+    const receipt=await apiProcessorPreflight(f.transport,f.api,now);
+    const request=prepareApiJob(input,current);
+    await f.transport.move(bridgePath('00_INBOX',id+'.input.json'),bridgePath('10_CLAIMED',id+'.input.json'));
+    f.observations.set('api-claim:'+id+'.input.json',{state:'claimed',key:oldKey});
+    f.processor.knowledge=current;
+    const paid={key:oldKey,profile_hash:oldProfile,packet_hash:scenario==='changed_packet'?'f'.repeat(64):request.packet_hash,
+      status:scenario==='unknown'?'unknown':'completed',output:f.output,usage:{input_tokens:100,output_tokens:200}};
+    const immutable=structuredClone(paid);f.api.get=async key=>key===oldKey?paid:null;
+    let checked=0;
+    f.processor.preflightOutput=()=>{
+      checked++;const assessment=syntheticPotentialAssessment();
+      if(scenario==='null_dimension')Object.assign(assessment.dimensions.planet,{path_status:'insufficient_basis',magnitude:null,primary_paths:[]});
+      const issues=modelledPublicationIssues(assessment);if(issues.length)throw Error(issues[0]);
+    };
+    const result=await f.processor.process(f.job,receipt);
+    assert.equal(result.status,scenario==='valid'?'output_delivered':scenario==='null_dimension'?'validation_failed':'legacy_claim_attention');
+    assert.equal(checked,['valid','null_dimension'].includes(scenario)?1:0);
+    assert.equal(f.calls.length,0);assert.deepEqual(paid,immutable);assert.deepEqual(f.job.input,before);
+    assert.equal(f.observations.get('api-claim:'+id+'.input.json').key,oldKey);
+    assert.equal(f.files.has(bridgePath('20_OUTPUT_READY',id+'.output.json')),scenario==='valid');
+    if(scenario==='valid'){
+      const proof=JSON.parse(f.files.get(bridgePath('95_LOGS','processor-api-'+oldKey+'.json')));
+      assert.equal(proof.key,oldKey);assert.equal(proof.profile_hash,oldProfile);assert.equal(proof.validated_profile_hash,current.hash);
+      assert.deepEqual(proof.usage,immutable.usage);
+    }
+  }
 });
 test('a negative independent review is delivered once, never challenged through a paid clarification',async()=>{
  const {semanticOutputSchema}=await import('../../scripts/news/bridge/semantic-review.mjs');

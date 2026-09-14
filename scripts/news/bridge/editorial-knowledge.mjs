@@ -7,7 +7,7 @@ import { IMPACT_RULE } from '../impact-assessment.mjs';
 import { loadNewsRegistry } from '../registry.mjs';
 import { sourceAccess } from '../access-policy.mjs';
 
-export const EDITORIAL_KNOWLEDGE_VERSION = '2026-09-14-modelled-potential';
+export const EDITORIAL_KNOWLEDGE_VERSION = '2026-09-14-state-bound-potential';
 export function editorialKnowledge(root) {
   const sources = ['AGENTS.md', 'docs/news/IMPACT-SEMANTICS-2.1.md',
     'source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.md'];
@@ -27,7 +27,7 @@ export function editorialKnowledge(root) {
     'Meinung & Analyse, Buch & Wirkung, Nachgehört und Nachgesehen brauchen abschließende Natalie-Freigabe. Die letzte Hauptsektion heißt Meine Einordnung. Quellen und formale Werkmetadaten dürfen folgen.',
     'Gut lesbar erklären: konkrete Situation, Mechanismus, Zustandsveränderung, Folgen. Eine passende Tabelle oder ein erklärendes Diagramm nutzen, wenn es hilft. Keine dekorativen Diagramme oder erfundenen Zahlen.',
     'Originalveröffentlichungsdaten bewahren. Maßnahme, Potenzial, erste Signale und beobachtete Folgen getrennt. Ein belegter Schaden allein beweist keine Klimaattribution.',
-    'Alle drei MPD-Dimensionen bleiben sichtbar. Nur ausreichend begründete Pfade erhalten Tragweite 0..5. Nach gezielter Recherche darf eine Dimension ausdrücklich offen und ohne numerischen Wert bleiben. Fehlende Daten sind weder neutral noch Stufe 0; keine Pflichtpfade erfinden. Richtung, Stärke, Plausibilität und Evidenz bleiben getrennt.',
+    'Für aktuelle MPD-Freigaben gilt die nachfolgend gelieferte zentrale IMPACT_RULE. Historische Belege und Aufträge bleiben unverändert; aus ihnen entsteht keine eigenständige Null-Ausnahme.',
     'R/I/D/U/V/S am konkreten Pfad begründen. Durchschnitt und Schutzminimum getrennt; Nichtkompensation und Reverse Merit Order. Keine künstliche positive Gegenwirkung. Ein kleiner Nebenpfad macht einen klaren Hauptpfad nicht gegenläufig.',
     'Bei Medien: Moderationsfrage, Hypothese, Ironie, Fremdzitat und eigene Position unterscheiden. Zeitmarken nur aus vorhandener Grundlage. Fremdtranskripte nicht spiegeln. UNKNOWN-Bildrechte bedeuten eigener visueller Fallback, keine fremden Logos oder Hotlinks.',
     'Interne Anbieter, Kosten, Systemdetails und diese Arbeitsanweisungen gehören niemals in den öffentlichen Artikel.',
@@ -50,7 +50,11 @@ export function editorialKnowledge(root) {
     'fab54eafbeaf38280ca09c59cd40df644c43b7de2729922b17f56a3642891df1',
     // Read from the actual preceding Oracle release on 14 September. Existing
     // paid outputs are revalidated locally; this is not a publication exemption.
-    '75b42a3173e8fcbe34c8544eba6c9418bed894fa91fc4a4b7d825b6a2af7c440'];
+    '75b42a3173e8fcbe34c8544eba6c9418bed894fa91fc4a4b7d825b6a2af7c440',
+    // Exact live potential-a80017b5df manifest read on Oracle, 14 September.
+    // Recover completed paid output under its original key/profile only when
+    // the immutable source packet matches; current modelled/scope gates apply.
+    'c2fb082fee1631ac7252907df14b2e3fc0afa18fbc14475cc4da6f9c48aa9b85'];
   const access = new Map(), candidates = new Set(), seenHosts = new Set();
   for (const source of loadNewsRegistry(root).sources) {
     for (const url of [source.url, source.feed_url].filter(Boolean)) {
