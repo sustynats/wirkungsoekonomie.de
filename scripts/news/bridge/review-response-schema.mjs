@@ -40,7 +40,8 @@ const modelledDimension=object({path_status:en(['modelled']),likelihood:en(Objec
 const openDimension=object({path_status:en(['insufficient_basis']),direction:en(['open']),magnitude:{type:'null'},
  evidence:en(['not_assessable']),data_status:en(['missing']),likelihood:en(['unknown']),dominance:en(['none']),temporal_status:en(['ex_ante']),
  primary_paths:{...array(ref('main_path')),maxItems:0},secondary_paths:{...array(ref('path')),maxItems:0},balance:{type:'null'},
- rationale:string,research_pass:en(['second_pass']),research_result:string,reviewed_source_ids:strings});
+ rationale:{...string,description:'Welche Grundlage fehlt nach Recherche selbst für einen bedingten Pfad? Fehlender Beschluss oder fehlende gemessene Folgen allein genügen nicht.'},research_pass:en(['second_pass']),
+ research_result:{...string,description:'Tatsächlich durchgeführte Mechanismus- und Kontextprüfung, geprüfte mögliche Zustandsänderung und verbleibende konkrete Modellierungsgrenze. Ein Tool-/Zugangsfehler ist keine abgeschlossene fachliche Recherche.'},reviewed_source_ids:strings});
 const dimension={anyOf:[modelledDimension,openDimension]};
 const assessment=object({version:en([IMPACT_VERSION]),semantics_revision:en([POTENTIAL_REVISION]),news_event:string,
  evaluation_target:object({label:string,type:en(TARGET_TYPES)}),baseline:string,temporal_status:en(TEMPORAL),

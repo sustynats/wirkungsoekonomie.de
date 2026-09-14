@@ -86,7 +86,7 @@ test('complete review schema reaches the initial request while paid repairs are 
   assert.equal(JSON.parse(body.input).output_contract.response_format,undefined);
   assert.equal(JSON.parse(body.input).output_contract.response_format_name,REVIEW_RESPONSE_FORMAT.name);
   assert.ok(body.input.length < assignment.length / 2);
-  assert.deepEqual(body.tools[0].filters.allowed_domains,['www.bundestag.de']);
+  assert.equal(body.tools[0].filters,undefined);
  }
 });
 test('the complete MPD and media-review contract reaches the provider without changing budgets',async t=>{
@@ -134,15 +134,18 @@ test('final message selection applies to fresh requests and recovers a paid mult
  assert.equal(recovered.transport_recovery,'final_message_v1');assert.equal(calls,1);
  assert.deepEqual(JSON.parse(await fs.readFile(f.service.file(input.key),'utf8')),record);
 });
-test('review research uses registered article domains, including bounded repair requests',async t=>{
+test('review can discover primary context outside news-feed domains while source access remains checked',async t=>{
  const f=await fixture(t,{searches:1});
  const assignment=JSON.stringify({research_access:{article_candidates:['www.bundestag.de','www.umweltbundesamt.de']}});
  await f.service.submit(request({kind:'review',prompt:JSON.stringify({assignment,repair:{attempt:1}})}));
- assert.deepEqual(f.bodies[0].tools[0].filters.allowed_domains,['www.bundestag.de','www.umweltbundesamt.de']);
+ assert.equal(f.bodies[0].tools[0].filters,undefined);
+ assert.equal(f.bodies[0].max_tool_calls,2);
+ assert.equal(f.bodies[0].tool_choice,'required');
  const knowledge=editorialKnowledge(process.cwd());
  assert.ok(knowledge.research_access.article_candidates.includes('www.bundestag.de'));
  assert.ok(!knowledge.research_access.article_candidates.includes('wirkungsoekonomie.de'));
  assert.ok(!knowledge.research_access.article_candidates.some(host=>host in knowledge.research_access.article_exclusions));
+ assert.match(knowledge.research_access.rule,/KEINE vollständige Such-Allowlist/);
 });
 test('completed raw response with missing outer brace is recovered without changing journal or spending again',async t=>{
  const f=await fixture(t),input=request(),record={...input,status:'failed',error:'api_editorial_invalid_json',http_status:200,provider_called:true,

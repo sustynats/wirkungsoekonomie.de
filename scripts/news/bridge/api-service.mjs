@@ -151,7 +151,7 @@ export class EditorialApiService {
         // Independent requests/roles, not duplicate generation or paid rewrites.
         // Both use the priced high-volume model; all review gates stay intact.
         const model = 'gpt-5.6-luna';
-        let researchHosts, responseFormat, providerPrompt = input.prompt;
+        let responseFormat, providerPrompt = input.prompt;
         if (researched) {
           let packet = input.prompt;
           for (let depth=0; depth<3 && typeof packet==='string'; depth++) {
@@ -178,12 +178,12 @@ export class EditorialApiService {
                 providerPrompt = JSON.stringify(compact);
               }
             }
-            if (packet?.research_access?.article_candidates) {
-              const hosts=packet.research_access.article_candidates;
-              if (Array.isArray(hosts) && hosts.length>0 && hosts.length<=100
-                && hosts.every(host=>typeof host==='string' && /^(?:[a-z0-9-]+\.)+[a-z]{2,}$/.test(host))) researchHosts=[...new Set(hosts)];
-              break;
-            }
+            // Feed discovery hosts are suggestions, not an exhaustive research
+            // allowlist. Restricting search to them excluded public scientific
+            // and institutional context which the source verifier can accept.
+            // Access exclusions stay in the prompt; every proposed quotation
+            // still passes the unchanged URL/rights/robots/content verifier.
+            if (packet?.research_access) break;
             packet=packet?.assignment;
           }
         }
@@ -197,8 +197,7 @@ export class EditorialApiService {
             headers: { Authorization: `Bearer ${this.apiKey}`, 'Content-Type': 'application/json', 'X-Client-Request-Id': input.key },
             body: JSON.stringify({ model, store: false, reasoning: { effort: 'medium' },
               max_output_tokens: 48000, instructions: input.instructions, input: providerPrompt,
-              ...(researched ? { tools: [{ type: 'web_search', search_context_size: 'low',
-                ...(researchHosts ? {filters:{allowed_domains:researchHosts}} : {}) }], tool_choice: 'required', max_tool_calls: 2,
+              ...(researched ? { tools: [{ type: 'web_search', search_context_size: 'low' }], tool_choice: 'required', max_tool_calls: 2,
                 include: ['web_search_call.action.sources'] } : {}),
               text: { format: researched ? responseFormat || { type: 'json_schema', name: 'impact_review', strict: false,
                 schema: { type: 'object', properties: { review: {type: 'object'}, impact_assessment: {type: 'object'},

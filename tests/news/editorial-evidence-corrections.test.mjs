@@ -30,7 +30,9 @@ test('three grounded open dimensions retain all rows without inventing any numer
  const before=JSON.stringify(a),html=renderDimensionMeters({impact_assessment:a},{compact:true,context:{privateImpactPreview:true}});
  assert.equal((html.match(/class="wt-dim wt-dim--/g)||[]).length,3);
  assert.equal((html.match(/class="wt-impact-ring /g)||[]).length,3);
- assert.equal((html.match(/class="wt-dim__track"/g)||[]).length,3);
+ assert.equal((html.match(/wt-dim__track wt-meter--unknown/g)||[]).length,3);
+ assert.equal((html.match(/data-magnitude="open"/g)||[]).length,3);
+ assert.equal((html.match(/<i><\/i>/g)||[]).length,15);
  assert.doesNotMatch(html,/data-magnitude="[0-5]"|null\/5/);
  assert.equal(JSON.stringify(a),before);
 });
