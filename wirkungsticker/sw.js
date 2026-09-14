@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-wirkungsticker-shell-20260911-app1";
+const CACHE_NAME = "woek-wirkungsticker-shell-20260914-news-refresh";
 // Keep the independent notification state while refreshing the app shell.
 const NAVIGATION_CACHE_GRACE_MS = 2500;
 const NAVIGATION_NETWORK_TIMEOUT_MS = 8000;
@@ -91,6 +91,10 @@ self.addEventListener("fetch", (event) => {
     return;
   }
   if (!url.pathname.startsWith("/wirkungsticker/")) return;
+  if (url.pathname.startsWith("/wirkungsticker/data/app/")) {
+    event.respondWith(networkFirst(request, event, { data: true }));
+    return;
+  }
   if (url.pathname === "/wirkungsticker/feed.json") {
     // A freshness probe must never mistake the offline cache for a live reply.
     if (url.searchParams.has("check")) {
@@ -118,7 +122,7 @@ function unavailableNavigation() {
   return new Response(`<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Wirkungsticker – Verbindung prüfen</title><body><main><h1>Die Seite konnte gerade nicht geladen werden.</h1><p>Die Verbindung ist unterbrochen oder dauert zu lange. Es liegt noch keine gespeicherte Fassung dieser Seite vor.</p><p><a href="">Diese Seite erneut laden</a> · <a href="/wirkungsticker/">Zum Wirkungsticker</a></p></main></body></html>`, { status: 503, headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" } });
 }
 
-async function networkFirst(request, event, { asset = false } = {}) {
+async function networkFirst(request, event, { asset = false, data = false } = {}) {
   // Fetch immediately. Storage access and cloning/writing the complete body
   // must never delay a usable network response or discard it on quota errors.
   const cache = boundedCache(() => caches.open(CACHE_NAME));
@@ -143,7 +147,7 @@ async function networkFirst(request, event, { asset = false } = {}) {
   event?.waitUntil(store);
   const liveOrFallback = network.then(async response => {
     if (response && response.status < 500) return response;
-    if (asset) return (await cached) || response || new Response("", { status: 504, statusText: "Asset unavailable" });
+    if (asset || data) return (await cached) || response || new Response("", { status: 504, statusText: "Resource unavailable" });
     return (await cached) || response
       || (await boundedCache(async () => (await cache)?.match("/wirkungsticker/offline.html")))
       || unavailableNavigation();

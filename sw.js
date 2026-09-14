@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-app-shell-20260903-wirkungsticker";
+const CACHE_NAME = "woek-app-shell-20260914-news-refresh";
 const NEWS_STATE_CACHE = "woek-news-notification-state-v1";
 const NEWS_STATE_URL = "/news/.notification-state";
 const NEWS_NOTIFICATION_TAG = "woek-news-updates";
@@ -88,7 +88,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  if (url.pathname === "/news/feed.json") {
+  if (url.pathname === "/news/feed.json" || url.pathname.startsWith("/wirkungsticker/data/app/")) {
     event.respondWith(networkFirst(request));
     return;
   }
