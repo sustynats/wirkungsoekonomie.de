@@ -41,7 +41,7 @@ test('list and detail explain signed potentials without a mixed total or hidden 
   for(const compact of [true,false]) {
     const html=renderDimensionMeters(a,{compact});
     assert.equal(deriveImpactPresentation(a).dimensions.human.direction,'open');
-    assert.match(html,/aria-label="Tragweite offen, nicht null oder neutral"/);
+    assert.match(html,/aria-label="Tragweite offen für [^"]+; gestrichelte Skala, keine Bewertung mit null Punkten"/);
     assert.doesNotMatch(html,/Relevanz:/);
     if (!compact) assert.match(html,/Stand der Einordnung/);
   }

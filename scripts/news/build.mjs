@@ -809,9 +809,16 @@ function feedXml(items, updatedAt, atom = false) {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wirkungsticker</title><link>${SITE}/wirkungsticker/</link><description>Wirkungsnachrichten sowie Meinung &amp; Analyse für Mensch, Planet und Demokratie</description><language>de-de</language><lastBuildDate>${new Date(updatedAt || 0).toUTCString()}</lastBuildDate><atom:link href="${SITE}/wirkungsticker/feed.xml" rel="self" type="application/rss+xml"/>${items.map((item) => `<item><title>${escapeXml(item.title)}</title><link>${item.url}</link><guid isPermaLink="true">${item.url}</guid><pubDate>${new Date(item.updated_at).toUTCString()}</pubDate><description>${escapeXml(item.summary)}</description></item>`).join("")}</channel></rss>`;
 }
 
+// The same displayed values as the cards; no internal review/health metadata.
+export function publicImpactSummary(story) {
+  if (!publicImpactAssessment(story)) return null;
+  return Object.fromEntries(Object.entries(deriveImpactPresentation(story).dimensions).map(([key,d]) =>
+    [key,{magnitude:d.magnitudeBars,direction:d.display_direction,status:d.ringStatus}]));
+}
+
 function combinedFeedItems(stories, analyses) {
   return [
-    ...stories.map((story) => ({ id: story.story_id, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, published_at: feedDate(story), updated_at: feedDate(story), late_delivery: isLateNewsDelivery(story), tags: story.topic, type: "Wirkungsakte" })),
+    ...stories.map((story) => ({ id: story.story_id, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, published_at: feedDate(story), updated_at: feedDate(story), late_delivery: isLateNewsDelivery(story), impact_profile:publicImpactSummary(story), tags: story.topic, type: "Wirkungsakte" })),
     ...analyses.map((analysis) => ({ id: analysis.analysis_id, url: `${SITE}/wirkungsticker/analyse/${analysis.slug}/`, title: `${editorialLabel(analysis)}: ${analysis.title}`, summary: analysis.teaser, published_at: analysis.published_at, updated_at: analysis.updated_at, tags: [editorialLabel(analysis)], type: editorialLabel(analysis) })),
   ].sort((left, right) => Date.parse(right.updated_at || 0) - Date.parse(left.updated_at || 0));
 }
@@ -955,7 +962,7 @@ export function buildNewsSite() {
   write(path.join(TICKER_DIR, "feed.json"), JSON.stringify({
     _woek_revision: `${PUBLIC_RELEASE}:${publicationUpdatedAt}`,
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
-    items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, tags: item.tags, _woek_type: item.type, ...(item.type === "Wirkungsakte" ? { _woek_late_delivery: item.late_delivery } : {}) })),
+    items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, tags: item.tags, _woek_type: item.type, ...(item.type === "Wirkungsakte" ? { _woek_late_delivery: item.late_delivery, _woek_impact_profile:item.impact_profile } : {}) })),
   }, null, 2));
   write(path.join(TICKER_DIR, "data/stories.json"), JSON.stringify({ schema_version: "1.2", impact_profile_version: PUBLIC_IMPACT_PROFILE_VERSION || REVIEWED_IMPACT_PROFILE_VERSION, impact_profile_status: PUBLIC_IMPACT_PROFILE_VERSION ? "ready" : REVIEWED_IMPACT_PROFILE_VERSION ? "reviewed_records_only" : "reassessment_in_progress", updated_at: publicationUpdatedAt, stories: stories.map((story) => publicStory(story, editorialByStory.get(story.story_id))), editorial_analyses: editorialAnalyses.map((analysis) => ({ analysis_id: analysis.analysis_id, story_id: analysis.story_id, slug: analysis.slug, title: analysis.title, subtitle: analysis.subtitle, teaser: analysis.teaser, published_at: analysis.published_at, updated_at: analysis.updated_at, reading_time_minutes: analysis.reading_time_minutes, ...(analysis.format === BOOK_FORMAT ? { format: BOOK_FORMAT, manual_only: true, subtype: analysis.subtype, ...(analysis.self_authored_work ? { self_authored_work: true } : {}) } : {}) })) }, null, 2));
   write(MANIFEST_FILE, JSON.stringify({ slugs: [...currentSlugs].sort() }, null, 2));
@@ -967,7 +974,7 @@ export function buildNewsSite() {
   write(path.join(LEGACY_NEWS_DIR, "feed.atom"), feedXml(feedItems, publicationUpdatedAt, true));
   write(path.join(LEGACY_NEWS_DIR, "feed.json"), JSON.stringify({
     version: "https://jsonfeed.org/version/1.1", title: "Wirkungsticker", home_page_url: `${SITE}/wirkungsticker/`, feed_url: `${SITE}/wirkungsticker/feed.json`, language: "de",
-    items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, tags: item.tags, _woek_type: item.type, ...(item.type === "Wirkungsakte" ? { _woek_late_delivery: item.late_delivery } : {}) })),
+    items: feedItems.map((item) => ({ id: item.url, url: item.url, title: item.title, summary: item.summary, date_published: item.published_at, date_modified: item.updated_at, tags: item.tags, _woek_type: item.type, ...(item.type === "Wirkungsakte" ? { _woek_late_delivery: item.late_delivery, _woek_impact_profile:item.impact_profile } : {}) })),
   }, null, 2));
   write(path.join(TICKER_DIR, 'methodik/index.html'), pageShell({title:'Wie der Wirkungsticker Wirkungen bewertet', description:'Richtung, Tragweite, Eintrittsplausibilität und Evidenz: die sechs Faktoren und Schutzgrenzen des Wirkungstickers verständlich erklärt.', canonical:`${SITE}/wirkungsticker/methodik/`, base:'../../', body:impactMethodology({profilesReleased:Boolean(PUBLIC_IMPACT_PROFILE_VERSION)}), jsonLd:{'@context':'https://schema.org','@type':'WebPage',name:'Methodik des Wirkungstickers',url:`${SITE}/wirkungsticker/methodik/`}}));
   const sourceRoutes = buildSourcePages(loadNewsRegistry(ROOT), readJson(path.join(ROOT, "data/news/state.json")), { pageShell, write, escapeHtml, root: ROOT, site: SITE, formatDate });

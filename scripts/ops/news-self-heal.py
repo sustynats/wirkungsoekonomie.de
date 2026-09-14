@@ -13,7 +13,7 @@ import time
 import urllib.error
 import urllib.request
 
-VERSION = "2026-09-14-visibility"
+VERSION = "2026-09-14-impact-profile"
 SERVICES = {"bridge": ("woek-news-bridge.service", 8786, "/api/news-bridge", 401),
             "editorial": ("woek-news-editorial.service", 8788, "/internal/status", 200)}
 DIRECTORY = Path("/var/lib/woek-news-bridge")
@@ -152,12 +152,28 @@ def observe_public_feed(items, previous, now):
     recent = [entry for entry in entries.values() if entry.get("first_seen_at")
               and 0 <= now - timestamp(entry["first_seen_at"]) < 3600]
     return {"checked_at": now, "ok": True, "observed_urls": entries,
+            "impact_quality": observe_impact_profiles(news),
             "visibility_started_at": started, "last_new_visible_at": last_new,
             "new_visible_last_hour": len(recent),
             "current_new_visible_last_hour": sum(0 <= now - timestamp(entry.get("source_at")) <= 21600
                                                   for entry in recent),
             "latest_source_at": latest_source,
             "latest_news_url": max(news, key=lambda x: timestamp(x.get("date_published"))).get("url") if news else None}
+
+
+def observe_impact_profiles(news):
+    recent = sorted(news, key=lambda item: timestamp(item.get('date_published')), reverse=True)[:50]
+    if not recent or not any('_woek_impact_profile' in item for item in recent):
+        return {'available': False}
+    missing, all_open = [], []
+    for item in recent:
+        profile = item.get('_woek_impact_profile')
+        if not isinstance(profile, dict) or not all(isinstance(profile.get(k), dict) for k in ('human', 'planet', 'democracy')):
+            missing.append(item['url'])
+        elif all(profile[k].get('magnitude') is None for k in ('human', 'planet', 'democracy')):
+            all_open.append(item['url'])
+    return {'available': True, 'recent_checked': len(recent), 'missing_profiles': missing,
+            'all_open_profiles': all_open}
 
 
 def fetch_public_feed(now, previous=None):
@@ -174,6 +190,12 @@ def fetch_public_feed(now, previous=None):
 
 def publication_alerts(metrics, public, now):
     alerts = []
+    quality = public.get('impact_quality', {})
+    if quality.get('available'):
+        if quality.get('missing_profiles'):
+            alerts.append('PUBLIC_MPD_PROFILE_MISSING')
+        if len(quality.get('all_open_profiles', [])) >= 2:
+            alerts.append('POTENTIAL_ASSESSMENT_REVIEW_REQUIRED')
     if not public.get("ok") or now - public.get("checked_at", 0) > 600:
         alerts.append("PUBLIC_FEED_UNVERIFIED")
     if any(metrics.get(key, 0) for key in ("open_primary_news", "open_editorial_requests", "open_semantic_reviews")):

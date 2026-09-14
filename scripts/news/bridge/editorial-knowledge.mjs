@@ -7,7 +7,7 @@ import { IMPACT_RULE } from '../impact-assessment.mjs';
 import { loadNewsRegistry } from '../registry.mjs';
 import { sourceAccess } from '../access-policy.mjs';
 
-export const EDITORIAL_KNOWLEDGE_VERSION = '2026-09-14-evidence';
+export const EDITORIAL_KNOWLEDGE_VERSION = '2026-09-14-potential-research';
 export function editorialKnowledge(root) {
   const sources = ['AGENTS.md', 'docs/news/IMPACT-SEMANTICS-2.1.md',
     'source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.md'];
@@ -46,7 +46,8 @@ export function editorialKnowledge(root) {
     // correction. Recover already paid responses only; packet identity and all
     // CURRENT validation/publication gates still apply in api-processor.mjs.
     '3029b614e776c19bfbd1f6623485478640afab85ba3c19358a3f2ce3cfb228c7',
-    '412543899b481b2d9a62bc057e1681358204d2b1d42db2150f803200077e3c2c'];
+    '412543899b481b2d9a62bc057e1681358204d2b1d42db2150f803200077e3c2c',
+    'fab54eafbeaf38280ca09c59cd40df644c43b7de2729922b17f56a3642891df1'];
   const access = new Map(), candidates = new Set(), seenHosts = new Set();
   for (const source of loadNewsRegistry(root).sources) {
     for (const url of [source.url, source.feed_url].filter(Boolean)) {
@@ -60,5 +61,5 @@ export function editorialKnowledge(root) {
   }
   return { manifest, hash: hash(manifest), instructions: rules, compatibleHashes,
     research_access: { article_exclusions: Object.fromEntries([...access].sort()), article_candidates: [...candidates].sort(),
-      rule: 'Diese Hosts sind für neue Artikelbelege im bestehenden Zugangsregister gesperrt oder nur für Metadaten zugelassen. Nicht als research_sources nachreichen. Amtliche, wissenschaftliche oder anderweitig zugelassene Primärbelege bevorzugen; Robots und konkrete Zugangsbedingungen werden zusätzlich geprüft. Bereits gelieferte Belege behalten ihren dokumentierten Umfang.' } };
+      rule: 'article_exclusions nennt gesperrte oder nur für Metadaten zugelassene Hosts: nicht als neue Volltextbelege nachreichen. article_candidates ist nur eine Auswahl bekannter Quellen, KEINE vollständige Such-Allowlist. Fehlende Wirkmechanismen gezielt auch in anderen amtlichen und wissenschaftlichen Primärquellen recherchieren. Der Import prüft weiterhin Zugangsrechte, Robots und jeden Originalauszug. Bereits gelieferte Belege behalten ihren dokumentierten Umfang.' } };
 }

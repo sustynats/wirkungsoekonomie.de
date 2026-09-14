@@ -132,8 +132,8 @@ test("deterministische Anker aus dem Analyse-Schema", () => {
   const meters = renderDimensionMeters(story().analysis, { compact: true });
   assert.match(meters, /wt-dim--human" data-potential-model="2.1"/);
   assert.match(meters, /wt-dim--democracy" data-potential-model="2.1"/);
-  assert.match(meters, /aria-label="Tragweite offen, nicht null oder neutral"/);
-  assert.match(meters, /aria-label="Tragweite offen, nicht null oder neutral"/);
+  assert.match(meters, /aria-label="Tragweite offen für [^"]+; gestrichelte Skala, keine Bewertung mit null Punkten"/);
+  assert.match(meters, /aria-label="Tragweite offen für [^"]+; gestrichelte Skala, keine Bewertung mit null Punkten"/);
   assert.doesNotMatch(meters, /wt-dim__note sr-only/);
   assert.equal((meters.match(/is-filled/g) || []).length, 0);
   assert.match(renderStatusTrack("beschlossen"), /is-current"[^>]*aria-current="step"[^>]*><span class="wt-track__dot"><\/span><span class="wt-track__label">Beschlossen/);

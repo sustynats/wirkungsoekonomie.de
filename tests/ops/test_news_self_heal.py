@@ -174,6 +174,26 @@ class RecoveryTests(unittest.TestCase):
         self.assertEqual(seen['current_new_visible_last_hour'], 0)
         self.assertIsNone(seen['latest_source_at'])
 
+    def test_publishing_articles_does_not_hide_missing_or_empty_mpd_profiles(self):
+        base = {'url': 'https://wirkungsoekonomie.de/wirkungsticker/example/', 'date_published': supervisor.iso(10000)}
+        empty = {key: {'magnitude': None, 'direction': 'open', 'status': 'potential'} for key in ('human', 'planet', 'democracy')}
+        values = [{**base, '_woek_impact_profile': empty},
+                  {**base, 'url': base['url'] + 'two', '_woek_impact_profile': empty},
+                  {**base, 'url': base['url'] + 'three', '_woek_impact_profile': None}]
+        result = supervisor.observe_impact_profiles(values)
+        self.assertEqual(len(result['all_open_profiles']), 2)
+        self.assertEqual(len(result['missing_profiles']), 1)
+        alerts = supervisor.publication_alerts({}, {'ok': True, 'checked_at': 10000, 'impact_quality': result}, 10000)
+        self.assertIn('POTENTIAL_ASSESSMENT_REVIEW_REQUIRED', alerts)
+        self.assertIn('PUBLIC_MPD_PROFILE_MISSING', alerts)
+
+    def test_individual_open_dimension_and_zero_are_not_a_profile_failure(self):
+        profile = {'human': {'magnitude': 3}, 'planet': {'magnitude': None}, 'democracy': {'magnitude': 0}}
+        result = supervisor.observe_impact_profiles([{'url': 'example', '_woek_impact_profile': profile}])
+        self.assertEqual(result['all_open_profiles'], [])
+        self.assertEqual(result['missing_profiles'], [])
+        self.assertFalse(supervisor.observe_impact_profiles([{'url': 'legacy'}])['available'])
+
 
 if __name__ == '__main__':
     unittest.main()

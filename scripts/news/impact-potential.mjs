@@ -5,6 +5,9 @@ import { aggregateMainPaths, pathwayMagnitudeErrors } from './impact-magnitude.m
 export const POTENTIAL_REVISION = 'all-dimensions-1';
 export const POTENTIAL_KEYS = ['human', 'planet', 'democracy'];
 export const PATH_QUALITIES = ['direct', 'indirect', 'weak', 'systemic', 'high_uncertainty'];
+// Shared by drafting and review. Evidence for an outcome is not a prerequisite
+// for estimating a conditional pathway; absence of research is not its result.
+export const POTENTIAL_RESEARCH_RULE = 'Potenzialprüfung: Sachverhalt/Maßnahme/Risiko bewerten, nicht automatisch die Meldung oder Warnung. Fehlender Beschluss oder fehlende Outcome-Messung allein begründen kein null/open. Belegten Mechanismus bedingt mit Empfängern, Raum/Zeit und ordinalen Faktoren bewerten; die Quelle muss den Schätzwert nicht messen. Mechanismen und gekoppelte MPD-Folgen recherchieren. Erstpass ohne Suche und Zugangsfehler bleiben needs_research. Zweitpass: Pfade selbst prüfen; bei insufficient_basis konkrete Modellierungsgrenze statt fehlender Beobachtung benennen.';
 const text = value => typeof value === 'string' && value.trim().length >= 12;
 const shortText = value => typeof value === 'string' && value.trim().length >= 2;
 const score = value => Number.isInteger(value) && value >= 0 && value <= 5;
