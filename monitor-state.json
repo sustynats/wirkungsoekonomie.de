@@ -39,10 +39,15 @@
     },
     "bridge-publication-flow": {
       "firstSeen": "2026-09-14T22:01:07.285Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "0b07ce9217d5d0a859eb2b93",
+      "content": "⚠ WÖk-Betriebsstörung\nAktuelle Nachrichten tatsächlich veröffentlicht: Aktuelle Nachrichten warten, aber seit über zwei Stunden ist keine Veröffentlichung nachgewiesen. Erfolgreiche Verbindungsprüfungen, private Entwürfe und abgeschlossene Fachprüfjobs ersetzen keine veröffentlichte Nachricht.\nSeit: 2026-09-14T22:01:07.285Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-14",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1117,7 +1122,7 @@
       }
     },
     "last_new_at": "2026-09-14T19:38:30.811Z",
-    "checked_at": "2026-09-14T22:01:07.285Z",
+    "checked_at": "2026-09-14T22:30:08.158Z",
     "last_current_new_at": "2026-09-14T19:38:30.811Z"
   }
 }
