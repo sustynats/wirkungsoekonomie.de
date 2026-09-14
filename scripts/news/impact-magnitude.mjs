@@ -10,6 +10,8 @@ export const MAGNITUDE_FACTORS = {
   system_depth: { symbol: 'S', label: 'Systemtiefe', levels: ['keine', 'isolierter Einzelfall', 'begrenzter Folgepfad', 'zweite Ordnung / relevante Rückkopplung', 'starke strukturelle Wirkung', 'dritte Ordnung / Regeln, Institutionen oder Systemzustand'] },
 };
 export const FACTOR_KEYS = Object.keys(MAGNITUDE_FACTORS);
+// This describes the assessed endpoint, without assigning any topic a score.
+export const MAGNITUDE_STATE_RULE = 'Alle Faktoren bewerten dieselbe benannte Empfänger-Zustandsgröße: D deren Dauer, U deren Rückführbarkeit; nicht die Laufzeit/Abstellbarkeit von Meldung, Maßnahme oder Betrieb. Fluss und Bestand trennen; Folgen jenseits des Bewertungszeitraums offenlegen. Auch kleine Änderungen können lange dauern. Unbekannt≠0/1: begründetes Szenario mit Bandbreite, keine Faktoren passend zum gewünschten Balken.';
 const score = value => Number.isInteger(value) && value >= 0 && value <= 5;
 const text = value => typeof value === 'string' && value.trim().length >= 12;
 

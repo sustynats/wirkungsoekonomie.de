@@ -6,7 +6,7 @@ Stand: 10.09.2026. Verbindlicher neuer Vertrag: `impact-assessment-contract-2.1-
 
 Jede reguläre Wirkungsticker-Meldung wird als Auslöser eines Wirkungspotenzials betrachtet. Für Mensch, Planet und Demokratie wird jeweils ein Wirkungspfad modelliert. Die Frage lautet nicht, ob Wirkungspotenzial vorhanden ist, sondern welche Richtung, Stärke, Wahrscheinlichkeit, Zeitwirkung und Evidenz es besitzt.
 
-Historischer Zwischenstand vom 14.09.2026 (durch die spätere direkte Nutzerentscheidung am Ende dieses Dokuments für neue Freigaben abgelöst): Jede Dimension bleibt sichtbar, aber nicht jede ist ausreichend bewertbar. Ein begründeter Potenzialpfad erhält eine numerische Tragweite 0 bis 5. `path_status` ist `modelled`. 0 bedeutet eine begründete praktisch vernachlässigbare Zustandsveränderung im betrachteten Referenzraum und Zeitraum. Der Pfad bleibt dokumentiert. Bei unzureichender Grundlage ist `insufficient_basis` mit `direction=open`, `magnitude=null`, `evidence=not_assessable`, `data_status=missing`, `likelihood=unknown`, `dominance=none`, `temporal_status=ex_ante` und leeren Pfadlisten ein valider Befund. Pflicht sind eine konkrete Begründung, `research_pass=second_pass`, `research_result` und tatsächlich geprüfte `reviewed_source_ids`. Die Anzeige lautet offen / nicht ausreichend bewertbar, niemals null/5 oder neutral. Diese Präzisierung ersetzt die frühere Pflicht zu drei numerischen Pfaden; historische Bewertungen werden nicht automatisch umgerechnet.
+Für jede neue Veröffentlichung und jede neue Freigabe werden alle drei Dimensionen als `modelled` mit einem begründeten Pfad und numerischer Tragweite 0 bis 5 geprüft. Fehlende Messwerte, fehlende Umsetzung und unbekannter Eintritt schließen eine bedingte Potenzialmodellierung nicht aus. Richtung und Evidenz dürfen offen bleiben, Pfad und Tragweite nicht. Gelingt trotz Recherche kein vertretbares Modell, bleibt der neue Beitrag intern zur Recherche und Prüfung zurückgestellt; keine Faktoren erfinden. Historische unvollständige Profile bleiben lesbar, zählen aber nicht als vollständig bewertet und dürfen nicht unverändert neu freigegeben werden.
 
 ## Erkenntnisgrenzen
 
@@ -18,7 +18,7 @@ Bei geringer Evidenz oder hoher Unsicherheit ist eine gezielte zweite Recherche 
 
 ## Getrennte Größen
 
-Systemische Relevanz der Meldung, Richtung, Tragweite, Eintrittsplausibilität und Evidenz sind unabhängig. `open` kann die Richtung oder die unzureichende Bewertbarkeit kennzeichnen; ein bekannter Pfad mit offener Richtung kann weiterhin eine begründete Stärke besitzen. `neutral` ist ein begründeter Richtungsbefund, keine Datenlücke.
+Systemische Relevanz der Meldung, Richtung, Tragweite, Eintrittsplausibilität und Evidenz sind unabhängig. `open` kennzeichnet eine offene Richtung, nicht fehlendes Potenzial; auch dieser Pfad benötigt eine begründete Tragweite. `neutral` ist ein begründeter Richtungsbefund, keine Datenlücke.
 
 Pro Pfad sechs Faktoren 0 bis 5: Reichweite R, Intensität I, Dauer D, Unumkehrbarkeit U, Verteilung/Vulnerabilität V, Systemtiefe S. Grundwert `(R+I+D+U+V+S)/6`. Grenzen: 0 wird 0; größer 0 bis unter 1,5 wird 1; unter 2,5 wird 2; unter 3,5 wird 3; unter 4,5 wird 4; ab 4,5 wird 5. Stufe 0 braucht eine explizite Begründung der vernachlässigbaren Veränderung in Raum und Zeit.
 
@@ -42,7 +42,7 @@ Alt-Relevanz ist keine Magnitude. Die technische Migration markiert ungeklärte 
 
 Die vorhandene Dropbox-Bridge, Claim-/ACK-Lifecycle, Idempotenz und Publication Gates bleiben bestehen. Keine kostenpflichtigen Textanbieter oder versteckten API-Fallbacks. Neue aktuelle Nachrichten haben Vorrang vor Altbestand. Review-Identitäten binden redaktionellen Inhalt, nicht veränderliche Abrufzeitstempel. Ein unabhängiger Fachpass prüft die vorgeschlagenen Metadaten und Quellen erneut.
 
-Prüfen: drei sichtbare Dimensionsbefunde, je ein begründeter Pfad oder dokumentierte offene Recherche; nachvollziehbare Faktoren; Quellenfunktionen; Modellannahmen; Raum/Zeit; getrennte Beobachtung/Attribution; Gegenpfade; Nichtkompensation; Ring unabhängig von Stärke; originale Bewertung unverändert; keine öffentlichen Debugtexte oder fehlenden MPD-Zeilen. Build, Tests, Lint, Typecheck und Mobile/Desktop-Preview vor Release.
+Vor jeder neuen Freigabe prüfen: drei sichtbare Dimensionsbefunde, jeweils ein begründeter modellierter Pfad mit numerischer Tragweite 0 bis 5; nachvollziehbare Faktoren; Quellenfunktionen; Modellannahmen; Raum/Zeit; getrennte Beobachtung/Attribution; Gegenpfade; Nichtkompensation; Ring unabhängig von Stärke; originale Bewertung unverändert; keine öffentlichen Debugtexte oder fehlenden MPD-Zeilen. Build, Tests, Lint, Typecheck und Mobile/Desktop-Preview vor Release.
 
 
 ## Reparatur der Potenzialprüfung - 14.09.2026
@@ -51,9 +51,14 @@ Eine fehlende Outcome-Messung oder noch offene Umsetzung ist kein Grund, einen b
 
 Die zweite Recherche umfasst Mechanismus, gekoppelte MPD-Folgen und Referenzraum. Die bekannten Discovery-Quellen sind keine abschließende Liste möglicher Forschungsquellen. Quellenrechte, Zugriff und Originalauszüge werden unverändert geprüft. Ein fehlgeschlagener Suchzugriff bleibt eine technische Rechercheaufgabe. Er darf nicht als abgeschlossener fachlicher Befund veröffentlicht werden.
 
-Die Balkenskala bleibt bei offenen Werten mit fünf gestrichelten Segmenten sichtbar. Sie kennzeichnet dann eine noch nicht bestimmte Tragweite und ausdrücklich nicht Stufe 0. Der Ring bleibt ausschließlich das Zeitstadium.
+Historische unvollständige Werte bleiben als gestrichelte Skala lesbar, bis eine quellengebundene Korrektur vorliegt; das ist ein Fehlerzustand des Bestands, keine gültige vollständige Bewertung. Eine neue Freigabe erlaubt diese Darstellung nicht. Der Ring bleibt ausschließlich das Zeitstadium.
 
 
 ## Präzisierung für neue Veröffentlichungen am 14.09.2026
 
-Die spätere direkte Nutzerentscheidung hebt die frühere heutige Null-Ausnahme für neue Freigaben auf: Mensch, Planet und Demokratie benötigen jeweils einen begründeten modellierten Pfad mit Tragweite 0 bis 5. Fehlende Messwerte oder unbekannter Eintritt verhindern keine quellengebundene bedingte Modellierung. Bei einer tatsächlich nicht vertretbar modellierbaren Dimension bleibt der neue Beitrag im Recherche-/Prüfstatus; niemals Faktoren erfinden. Historische insufficient_basis/null-Daten bleiben lesbar und unverändert. Die versionierte Abgrenzungsprüfung und der ausdrückliche HOLD-Zweig sind in [IMPACT-SCOPE-REVIEW.md](IMPACT-SCOPE-REVIEW.md) dokumentiert. Dies löst keine bezahlte Bestandsneubewertung aus.
+Die Umsetzung wird wieder an die bereits vorgegebene Produktinvariante gebunden: Mensch, Planet und Demokratie benötigen jeweils einen begründeten modellierten Pfad mit Tragweite 0 bis 5. Fehlende Messwerte oder unbekannter Eintritt verhindern keine quellengebundene bedingte Modellierung. Bei einer tatsächlich nicht vertretbar modellierbaren Dimension bleibt der neue Beitrag im Recherche-/Prüfstatus; niemals Faktoren erfinden. Historische insufficient_basis/null-Daten bleiben lesbar und unverändert. Die versionierte Abgrenzungsprüfung und der ausdrückliche HOLD-Zweig sind in [IMPACT-SCOPE-REVIEW.md](IMPACT-SCOPE-REVIEW.md) dokumentiert. Dies löst keine bezahlte Bestandsneubewertung aus.
+
+
+## Fehlerhistorie: außer Kraft gesetzte Zwischenregel vom 14.09.2026
+
+Die damalige Implementierung erlaubte nach einer dokumentierten Recherche `insufficient_basis`, `magnitude=null` und leere Pfadlisten als gültigen Abschluss. Diese Ausnahme widersprach der Produktinvariante und war eine Umsetzungsregression, keine neue fachliche Vorgabe. Sie wurde einschließlich der entsprechenden Vollständigkeits- und Freigabeausnahmen aufgehoben. Historische Verträge und gespeicherte Originale dokumentieren den damaligen Stand; sie sind keine Anweisung für neue Verarbeitung.

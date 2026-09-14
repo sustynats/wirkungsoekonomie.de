@@ -13,6 +13,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { BridgeStore } from '../../scripts/news/bridge/store.mjs';
+import { syntheticScopeReview } from './fixtures/impact21.mjs';
 const now='2026-09-10T14:00:00Z';
 function fixture(){
   const record=highStory('synthetic'),assessment=validEditorial(record).impact_assessment;
@@ -20,6 +21,7 @@ function fixture(){
   record.impact_assessment={...structuredClone(assessment),version:'2.0'};
   const input=impactReassessmentInput(record,now),review={status:'ready',checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Die explizite synthetische Grundlage ist für diesen Test geprüft.'}]))};
   const output={schema_version:'1.0',job_id:input.job_id,input_hash:input.input_hash,processed_at:now,decision:{status:'publish',reason:'Synthetische Metadatenkorrektur für die Freigabeprüfung.'},impact_assessment:assessment};
+  review.scope=syntheticScopeReview(assessment);
   const gate=derivePublicationStatus(assessment,record,{review,secondPassComplete:true});assert.equal(gate.status,'ready');
   const job={input,candidate:record,semantic_review:{review_job_id:'separate-review',reviewed_at:now,output_hash:hash(output),assessment,review,gate}};
   const staged=applyImpactOutput(output,job,record,now);
@@ -48,6 +50,27 @@ test('missing material magnitude, public diagnostic text and implausible filter 
   assert.equal(impactCoverage([staged],{minimumMaterialCounts:{human:2}}).pass,false);
   staged.impact_assessment.dimensions.human.magnitude=null;
   const report=impactCoverage([staged]);assert.equal(report.potential_without_magnitude,1);assert.equal(report.pass,false);
+});
+
+test('coverage counts a researched historical null as incomplete, never as full potential coverage',()=>{
+  const {staged}=fixture();
+  staged.impact_assessment.dimensions.planet={
+    path_status:'insufficient_basis',direction:'open',magnitude:null,evidence:'not_assessable',
+    data_status:'missing',temporal_status:'ex_ante',likelihood:'unknown',dominance:'none',
+    primary_paths:[],secondary_paths:[],balance:null,
+    rationale:'Historische Recherche hinterließ eine dokumentierte Wissenslücke.',
+    research_pass:'second_pass',research_result:'Die historische Prüfung modellierte trotz Quellenlektüre keinen Pfad.',
+    reviewed_source_ids:[staged.sources[0].source_id],
+  };
+  staged.impact_assessment_basis=assessmentBasis(staged);
+  const report=impactCoverage([staged]);
+  assert.equal(report.pass,false);
+  assert.equal(report.fully_assessed,0);
+  assert.equal(report.needs_reassessment,1);
+  assert.equal(report.potential_without_magnitude,1);
+  assert.equal(report.dimensions_without_path,1);
+  assert.equal(report.grounded_open_directions,0);
+  assert.ok(report.errors[0].errors.includes('IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:planet'));
 });
 
 test('archived staged assessments remain addressable without returning bulky private drafts in routine polls',t=>{
