@@ -2,9 +2,31 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { discoveryAdmission, currentEvidence, latestEvidenceTime } from '../../scripts/news/discovery-admission.mjs';
 import { eventSignals } from '../../scripts/news/event-relevance.mjs';
+import { classifyItem, preAnalyzeStory } from '../../scripts/news/lib.mjs';
 import { protectedCurrentCandidate } from '../../scripts/news/bridge/processor.mjs';
 const now='2026-09-12T06:00:00Z';
 const source=(title,summary='',url='https://example.org/politik/meldung')=>({title,summary,url,source_topic:'Politik',published_at:'2026-09-12T05:45:00Z'});
+
+test('programme plots cannot buy a paid news slot through score or recall admission', () => {
+  const plot = 'Im Thriller beschließt die Bundesregierung eine Reform. Eine Explosion verletzt Menschen; die Polizei evakuiert den Flughafen.';
+  for (const title of ['Vorschau: TV-Tipps am Montag', 'TV-Tipps: Der politische Thriller', 'Fernseh-Tipps für heute', 'Streaming-Tipps zum Wochenende']) {
+    const item = source(title, plot);
+    assert.ok(classifyItem(item, item, now).score < 30);
+    assert.equal(discoveryAdmission([item]).review, false);
+    const assessment = preAnalyzeStory({sources:[item]}, now);
+    assert.ok(assessment.internal_relevance_score < 30);
+    assert.equal(assessment.discovery_review.review, false);
+    assert.equal(assessment.context_only, true);
+  }
+});
+
+test('real media reporting and an independent event source remain eligible', () => {
+  for (const title of ['Sender plant Stellenabbau: 600 Arbeitsplätze betroffen', 'TV-Tipps droht Verbot nach Gerichtsurteil', 'Bei Miosga: Ministerin will Mietrechtsreform einführen']) {
+    assert.equal(discoveryAdmission([source(title)]).review, true, title);
+  }
+  const items = [source('Vorschau: TV-Tipps am Montag', 'Ein fiktiver Anschlag.'), source('Polizei evakuiert Flughafen nach Explosion', 'Mehrere Menschen verletzt.')];
+  assert.ok(preAnalyzeStory({sources:items}, now).internal_relevance_score >= 30);
+});
 
 for(const [title,summary] of [
   ['Hubig will Verstöße gegen Mietpreisbremse mit Bußgeldern bestrafen','Schutzlücken im Mietrecht schließen.'],
