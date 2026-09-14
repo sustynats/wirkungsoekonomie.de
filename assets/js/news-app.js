@@ -108,7 +108,11 @@ async function boot(root){
  root.addEventListener('click',e=>{const link=e.target.closest('a[href]');if(link&&!link.matches('[data-app-filter]'))saveState();});
  more.addEventListener('click',async()=>{if(!manifest){await initialize();return;}if(!page&&indexed())await reset();else await load();});
  if(mode==='merkzettel')document.addEventListener('wirkungsraum:changed',()=>reset());
- async function initialize(){try{setManifest(await json('manifest.json'));const restore=window.performance?.getEntriesByType('navigation')[0]?.type==='back_forward';await reset({restore,scroll:mode==='news'&&!restore});}catch{info('Der Feed ist gerade nicht erreichbar. Bitte erneut versuchen.');more.textContent='Erneut versuchen';more.hidden=false;}}
+ async function initialize(){
+  const ticket=++epoch;abort?.abort();abort=new AbortController();busy=true;
+  try{const current=await json('manifest.json',abort.signal);if(ticket!==epoch)return;setManifest(current);const restore=window.performance?.getEntriesByType('navigation')[0]?.type==='back_forward';await reset({restore,scroll:mode==='news'&&!restore});}
+  catch(e){if(ticket===epoch&&e.name!=='AbortError'){busy=false;info('Der Feed ist gerade nicht erreichbar. Bitte erneut versuchen.');more.disabled=false;more.textContent='Erneut versuchen';more.hidden=false;}}
+ }
  await initialize();
  if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{if(manifest&&entries.some(e=>e.isIntersecting)&&!status.textContent.includes('erneut versuchen'))load();},{rootMargin:'350px'});observer.observe(root.querySelector('[data-app-sentinel]'));}
 }

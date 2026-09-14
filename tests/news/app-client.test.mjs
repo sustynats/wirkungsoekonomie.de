@@ -92,3 +92,12 @@ test('a failed News refresh offers a working retry and does not masquerade as a 
  fail=false;version='v2';await app.more.events.click();
  assert.match(app.grid.innerHTML,/v2/);assert.doesNotMatch(app.grid.innerHTML,/v1/);
 });
+
+test('tapping News during startup cannot be overwritten by the late initial manifest',async()=>{
+ let release,reads=0;
+ const first=new Promise(resolve=>{release=resolve;});
+ const app=harness(file=>file==='manifest.json'?(++reads===1?first:manifest('v2')):packet('v2','LATEST'));
+ const initial=app.start();app.news();await tick();await tick();
+ release(manifest('v1'));await initial;await tick();
+ assert.match(app.grid.innerHTML,/LATEST/);assert.equal(app.status.textContent,'1 von 0 Beiträgen');assert.equal(reads,2);
+});
