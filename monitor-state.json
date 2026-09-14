@@ -36,6 +36,10 @@
     "bridge-throughput": {
       "firstSeen": "2026-09-14T07:11:04.518Z",
       "active": true
+    },
+    "academy": {
+      "firstSeen": "2026-09-14T10:21:38.057Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -1010,10 +1014,18 @@
       "https://wirkungsoekonomie.de/wirkungsticker/ukraine-news-trump-fordert-stopp-von-angriffen-auf-russische-raffinerien-23e317/": {
         "first_seen_at": "2026-09-14T09:11:59.216Z",
         "source_at": "2026-09-14T01:31:53.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ukrainekrieg-russischer-angriff-auf-personenzug-eu-aussenbeauftragte-kallas-spricht-eins-1fc8a9/": {
+        "first_seen_at": "2026-09-14T10:21:38.057Z",
+        "source_at": "2026-09-14T08:54:16.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/telemedizin-kabine-in-heringen-neues-patienten-angebot-in-apotheke-55bdf7/": {
+        "first_seen_at": "2026-09-14T10:21:38.057Z",
+        "source_at": "2026-09-14T08:52:08.000Z"
       }
     },
-    "last_new_at": "2026-09-14T09:11:59.216Z",
-    "checked_at": "2026-09-14T09:54:22.063Z",
-    "last_current_new_at": "2026-09-14T09:11:59.216Z"
+    "last_new_at": "2026-09-14T10:21:38.057Z",
+    "checked_at": "2026-09-14T10:21:38.057Z",
+    "last_current_new_at": "2026-09-14T10:21:38.057Z"
   }
 }
