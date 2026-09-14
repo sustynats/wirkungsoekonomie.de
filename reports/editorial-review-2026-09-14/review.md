@@ -1,4 +1,4 @@
-# Wirkungsticker: redaktioneller Review 12.–14.09.2026
+# Wirkungsticker: redaktioneller Review 12.-14.09.2026
 
 Interner QA-Bericht, vom öffentlichen Website-Artefakt ausgeschlossen. Snapshot bis 14.09.2026, 13:53 Uhr Berlin.
 
