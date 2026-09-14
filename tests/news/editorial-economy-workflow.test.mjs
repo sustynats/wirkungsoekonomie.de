@@ -38,18 +38,22 @@ test('release audit covers built news routes and still runs every semantic gate'
   assert.match(deploy, /state-sustainability-release-\$\{\{ steps\.release-source\.outputs\.commit \}\}/);
 });
 
-test('a semantic release failure aborts before producing a PASS receipt', t => {
+for (const failedGate of ['source', 'semantic']) test(`a ${failedGate} release failure aborts before producing a PASS receipt`, t => {
   const temp = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-release-audit-'));
   t.after(() => fs.rmSync(temp, { recursive: true, force: true }));
   const bin = path.join(temp, 'bin'); fs.mkdirSync(bin);
   fs.writeFileSync(path.join(bin, 'git'), '#!/bin/sh\necho 0123456789012345678901234567890123456789\n', { mode: 0o755 });
   fs.writeFileSync(path.join(bin, 'python3'), '#!/bin/sh\necho "$1" >> called\ncase "$1" in *check_state_sustainability_architecture.py) exit 42;; esac\n', { mode: 0o755 });
+  fs.writeFileSync(path.join(bin, 'node'), `#!/bin/sh\necho source >> called\nexit ${failedGate === 'source' ? 41 : 0}\n`, { mode: 0o755 });
   fs.mkdirSync(path.join(temp, 'reports'));
   fs.writeFileSync(path.join(temp, 'reports/generated-release-audit.txt'), 'stale PASS');
   const result = spawnSync('bash', [path.join(root, 'scripts/ops/audit-generated-release.sh')], { cwd: temp, env: { ...process.env, PATH: `${bin}:${process.env.PATH}` }, encoding: 'utf8' });
-  assert.equal(result.status, 42, result.stderr);
+  assert.equal(result.status, failedGate === 'source' ? 41 : 42, result.stderr);
   assert.equal(fs.existsSync(path.join(temp, 'reports/generated-release-audit.txt')), false);
-  assert.doesNotMatch(fs.readFileSync(path.join(temp, 'called'), 'utf8'), /check_state_sustainability_wiwi_scope/);
+  const called = fs.readFileSync(path.join(temp, 'called'), 'utf8');
+  assert.match(called, /^source\n/);
+  assert.doesNotMatch(called, /check_state_sustainability_wiwi_scope/);
+  if (failedGate === 'source') assert.equal(called, 'source\n');
 });
 
 test('shallow detached release obtains its comparison base and never changes release HEAD', t => {
