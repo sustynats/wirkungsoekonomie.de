@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import { scheduledSlot } from "./lib.mjs";
 import { processingMode } from './processing-mode.mjs';
+import { acquireLane } from './bridge/acquire-lane.mjs';
 
 const now = process.env.WOEK_NEWS_NOW ? new Date(process.env.WOEK_NEWS_NOW) : new Date();
 if (!Number.isFinite(now.getTime())) throw new Error("INVALID_RUN_TIME");
@@ -28,7 +29,8 @@ if (processingMode() === 'dropbox_chatgpt_bridge' && shouldRun) {
     if (status && !status.ready.length) {
       output.should_run = 'false'; output.bridge_status = 'PROCESSING_PENDING';
     } else {
-    await session.store.acquire(now.toISOString(), phase, { manualRunId: forced ? `${process.env.GITHUB_RUN_ID}:${process.env.GITHUB_RUN_ATTEMPT || '1'}` : null });
+    const lockRetries = await acquireLane(() => session.store.acquire(now.toISOString(), phase, { manualRunId: forced ? `${process.env.GITHUB_RUN_ID}:${process.env.GITHUB_RUN_ATTEMPT || '1'}` : null }));
+    output.bridge_lock_retries = String(lockRetries);
     output.slot = `Dropbox Bridge ${phase} ${now.toISOString().slice(0, 13)}`;
     output.bridge_phase = phase;
     output.bridge_acquired = 'true';
