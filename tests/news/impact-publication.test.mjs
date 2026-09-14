@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import { deriveImpactPresentation, impactAssessmentErrors } from '../../scripts/news/impact-assessment.mjs';
 import { derivePublicationStatus, semanticIssues, impactContextRequirements, SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import { migrateImpactCatalog, persistedImpactAssessmentErrors, assessmentBasis } from '../../scripts/news/migrate-impact-assessments.mjs';
-import { applyImpactOutput, impactReassessmentInput, discoverImpactJobs } from '../../scripts/news/bridge/impact.mjs';
+import { applyImpactOutput, impactReassessmentInput, discoverImpactJobs, assertImpactBinding } from '../../scripts/news/bridge/impact.mjs';
 import { ensureSemanticReview, importSemanticReviews, semanticOutputSchema } from '../../scripts/news/bridge/semantic-review.mjs';
 import { bridgePath, hash, parsePacket } from '../../scripts/news/bridge/contract.mjs';
 import { assertAutomaticImpactTransport } from '../../scripts/news/processing-mode.mjs';
@@ -126,9 +126,26 @@ test('a missing assessment can enter reassessment without bypassing concurrent-u
   assert.equal(applyImpactOutput(output,job,record,now).impact_assessment.review.status,'reassessed');
   assert.throws(()=>applyImpactOutput(output,job,{...record,impact_assessment:a},now),/BRIDGE_STALE_ANALYSIS/);
 });
+test('correction requests bind job identity and cannot reuse a stale instruction or receipt',()=>{
+  const {record}=bsw(),now='2026-09-10T12:00:00Z';
+  delete record.impact_reassessment_request;
+  const legacy=impactReassessmentInput(record,now);
+  const requested={...record,impact_reassessment_request:'Den berichteten Risikogegenstand und seine Bedingungen prüfen.'};
+  const first=impactReassessmentInput(requested,now);
+  const second=impactReassessmentInput({...requested,impact_reassessment_request:'Zusätzlich den Vergleichszustand für die Gegenpfade berichtigen.'},now);
+  assert.notEqual(first.job_id,legacy.job_id);assert.notEqual(first.job_id,second.job_id);
+  assert.notEqual(first.input_hash,second.input_hash);
+  const out={job_id:first.job_id,input_hash:first.input_hash,processed_at:now};
+  assert.doesNotThrow(()=>assertImpactBinding(out,{input:first},requested,now));
+  assert.throws(()=>assertImpactBinding(out,{input:first},record,now),/BRIDGE_STALE_ANALYSIS/,'removing a canonical correction request remains an editorial change');
+  assert.throws(()=>assertImpactBinding(out,{input:first},{...record,impact_reassessment_request:second.article.requested_correction},now),/BRIDGE_STALE_ANALYSIS/);
+  assert.throws(()=>assertImpactBinding(out,{input:second},record,now),/BRIDGE_JOB_BINDING_MISMATCH/);
+  assert.deepEqual(impactReassessmentInput(record,now),legacy,'unrelated legacy jobs retain exactly the same identity');
+});
 test('separate review job is mandatory, idempotent, source-bound, and cannot be self-approved',async()=>{
-  const {a,record}=bsw(),now='2026-09-10T12:00:00Z',input=impactReassessmentInput(record,now),parent={input,candidate:record,attempts:{},status:'queued'};
+  const {a,record}=bsw(),now='2026-09-10T12:00:00Z';
   record.impact_reassessment_request='Bedingten Mechanismus prüfen; fehlende Umsetzung allein ist keine Modellierungsgrenze.';
+  const input=impactReassessmentInput(record,now),parent={input,candidate:record,attempts:{},status:'queued'};
   const jobs=new Map([[input.job_id,parent]]),files=new Map();
   const bridge={stageOnly:false,store:{get:async id=>jobs.get(id),put:async j=>jobs.set(j.input.job_id,j),all:async()=>[...jobs.values()],observation:async()=>null},
     transport:{writeAtomic:async(p,v)=>{if(files.has(p))assert.equal(files.get(p),JSON.stringify(v));files.set(p,JSON.stringify(v));},list:async folder=>[...files.keys()].filter(p=>p.includes('/'+folder+'/')).map(p=>({name:p.split('/').at(-1)})),read:async p=>files.get(p)},failure:async(_j,_s,e)=>{throw e;}};
@@ -138,9 +155,19 @@ test('separate review job is mandatory, idempotent, source-bound, and cannot be 
   const child=[...jobs.values()].find(j=>j.input.parent_job_id===input.job_id);assert.match(child.input.job_id,/^wt_\d{8}T\d{6}Z_[a-f0-9]{24}$/);
   assert.deepEqual(child.input.validation_findings,[]);
   assert.equal(child.input.record.requested_correction,record.impact_reassessment_request);
+  const canonical=structuredClone(record);delete canonical.impact_reassessment_request;
+  await ensureSemanticReview(bridge,parent,output,canonical,a,now);
+  assert.equal(jobs.size,2,'reloading the canonical article must not lose the brief or create a second paid review');
+  assert.equal(parent.publication_gate.review_job_id,child.input.job_id);
+  assert.equal(child.superseded_by,undefined);
   assert.notEqual(child.input.job_id,input.job_id);
   const result={schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:now,review:readyReview(),impact_assessment:a};
   await bridge.transport.writeAtomic(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),result);
+  parent.status='quarantined';
+  assert.deepEqual(await importSemanticReviews(bridge,now),[]);
+  assert.equal(parent.semantic_review,undefined,'a completed child must not overwrite an operator hold');
+  assert.equal(child.accepted,undefined,'held output remains available and unchanged');
+  parent.status='queued';
   await importSemanticReviews(bridge,now);
   assert.equal((await ensureSemanticReview(bridge,parent,output,record,a,now)).status,'ready');
   assert.equal((await ensureSemanticReview(bridge,parent,{data:'edited first output'},record,a,now)).status,'needs_second_pass');
