@@ -1,4 +1,4 @@
-import { discoveryAdmission } from './discovery-admission.mjs';
+import { discoveryAdmission, isProgrammeListing } from './discovery-admission.mjs';
 import { execFileSync } from 'node:child_process';
 import { createHash } from "node:crypto";
 import { assertAutomatable } from "./manual-policy.mjs";
@@ -605,6 +605,12 @@ export function classifyItem(item, source = {}, now = new Date().toISOString()) 
   }
   const newsValueSignals = NEWS_VALUE_RULES.filter(([, pattern]) => pattern.test(text)).map(([value]) => value);
   const contextFormats = CONTEXT_FORMAT_RULES.filter(([, pattern]) => pattern.test(text)).map(([value]) => value);
+  const programmeListing = isProgrammeListing(item);
+  if (programmeListing) {
+    contextFormats.push('programme_listing');
+    score = Math.min(score, 24);
+    drivers.push('Programmtipps: Handlung einer Sendung ist kein belegtes Nachrichtenereignis');
+  }
   // Evergreen service/FAQ headlines are useful context, but not new events by
   // themselves. A concrete new decision/evidence in the available text still
   // overrides context_only through the existing news-value signals.
@@ -632,7 +638,7 @@ export function classifyItem(item, source = {}, now = new Date().toISOString()) 
     relevance: finalScore >= 68 ? "sehr hoch" : finalScore >= 48 ? "hoch" : finalScore >= 30 ? "mittel" : "gering",
     news_value_signals: newsValueSignals,
     context_formats: contextFormats,
-    context_only: contextFormats.length > 0 && newsValueSignals.length === 0,
+    context_only: programmeListing || contextFormats.length > 0 && newsValueSignals.length === 0,
   };
 }
 
@@ -664,7 +670,7 @@ export function preAnalyzeStory(story, now = new Date().toISOString()) {
   const classifications = story.sources.map((source) => classifyItem(source, source, now));
   const strongest = [...classifications].sort((a, b) => b.score - a.score)[0];
   const factualSources = story.sources.filter((source,index) => !(classifications[index].context_only
-    && (classifications[index].context_formats.some(format => ['commentary_or_column','service_explainer'].includes(format))
+    && (classifications[index].context_formats.some(format => ['commentary_or_column','service_explainer','programme_listing'].includes(format))
       || /\b(?:lehren|analyse|einordnung|kommentar|meinung|kolumne)\b/i.test(source.title))));
   const factualBase = Math.max(0,...story.sources.map((source,index)=>factualSources.includes(source)?classifications[index].score:0));
   const eventScore = scoreEvent({ ...story, sources: factualSources }, now, factualBase);
