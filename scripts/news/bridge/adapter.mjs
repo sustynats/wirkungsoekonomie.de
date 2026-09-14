@@ -1,3 +1,4 @@
+import { modelledPublicationIssues } from '../impact-scope.mjs';
 import { RESEARCH_SOURCE_RULE } from './research-source-schema.mjs';
 import { IMPACT_VERSION, impactAssessmentErrors, migrateImpactAssessment } from '../impact-assessment.mjs';
 import { POTENTIAL_REVISION } from '../impact-potential.mjs';
@@ -122,7 +123,7 @@ export function adaptOutput(output, job, registry, stories, now) {
   const prepared = prepareOutputReview(output, job, stories, now);
   if (!prepared.review) return prepared;
   const { decision, review, analysis } = prepared;
-  const impactErrors = impactAssessmentErrors(analysis.impact_assessment, [...job.candidate.sources,...(job.semantic_review?.verified_context_sources || [])], { required: /impact_assessment 2\.[01]|Wirkungsticker2\.1\/all-dimensions-1/.test(job.input.wirkungsticker.analysis_prompt) });
+  const impactErrors = [...modelledPublicationIssues(analysis.impact_assessment), ...impactAssessmentErrors(analysis.impact_assessment, [...job.candidate.sources,...(job.semantic_review?.verified_context_sources || [])], { required: /impact_assessment 2\.[01]|Wirkungsticker2\.1\/all-dimensions-1/.test(job.input.wirkungsticker.analysis_prompt) })];
   if (impactErrors.length) throw Object.assign(new Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: impactErrors });
   const result = prepareReviewedStory(review, registry, stories, now);
   if (result.errors.length) throw Object.assign(new Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: result.errors });

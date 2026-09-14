@@ -7,7 +7,7 @@ import { IMPACT_RULE } from '../impact-assessment.mjs';
 import { loadNewsRegistry } from '../registry.mjs';
 import { sourceAccess } from '../access-policy.mjs';
 
-export const EDITORIAL_KNOWLEDGE_VERSION = '2026-09-14-potential-research';
+export const EDITORIAL_KNOWLEDGE_VERSION = '2026-09-14-modelled-potential';
 export function editorialKnowledge(root) {
   const sources = ['AGENTS.md', 'docs/news/IMPACT-SEMANTICS-2.1.md',
     'source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.md'];
@@ -47,7 +47,10 @@ export function editorialKnowledge(root) {
     // CURRENT validation/publication gates still apply in api-processor.mjs.
     '3029b614e776c19bfbd1f6623485478640afab85ba3c19358a3f2ce3cfb228c7',
     '412543899b481b2d9a62bc057e1681358204d2b1d42db2150f803200077e3c2c',
-    'fab54eafbeaf38280ca09c59cd40df644c43b7de2729922b17f56a3642891df1'];
+    'fab54eafbeaf38280ca09c59cd40df644c43b7de2729922b17f56a3642891df1',
+    // Read from the actual preceding Oracle release on 14 September. Existing
+    // paid outputs are revalidated locally; this is not a publication exemption.
+    '75b42a3173e8fcbe34c8544eba6c9418bed894fa91fc4a4b7d825b6a2af7c440'];
   const access = new Map(), candidates = new Set(), seenHosts = new Set();
   for (const source of loadNewsRegistry(root).sources) {
     for (const url of [source.url, source.feed_url].filter(Boolean)) {

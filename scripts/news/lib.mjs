@@ -305,10 +305,17 @@ export async function assertSafeFeedUrl(raw, allowedHosts, { resolveDns = true }
 
 async function readLimitedBody(response, maxBytes, { binary = false } = {}) {
   const declared = Number(response.headers.get("content-length") || 0);
-  if (declared > maxBytes) throw new Error("FEED_TOO_LARGE");
+  const tooLarge = (receivedBytes = 0) => Object.assign(new Error("FEED_TOO_LARGE"), {
+    max_bytes: maxBytes, declared_bytes: declared, received_bytes: receivedBytes,
+  });
+  if (declared > maxBytes) {
+    // A rejected Content-Length must also stop the underlying download.
+    await response.body?.cancel().catch(() => {});
+    throw tooLarge();
+  }
   if (!response.body?.getReader) {
     const text = binary ? Buffer.from(await response.arrayBuffer()) : await response.text();
-    if (Buffer.byteLength(text, "utf8") > maxBytes) throw new Error("FEED_TOO_LARGE");
+    if (Buffer.byteLength(text, "utf8") > maxBytes) throw tooLarge(Buffer.byteLength(text, "utf8"));
     return text;
   }
   const reader = response.body.getReader();
@@ -319,8 +326,8 @@ async function readLimitedBody(response, maxBytes, { binary = false } = {}) {
     if (done) break;
     size += value.byteLength;
     if (size > maxBytes) {
-      await reader.cancel();
-      throw new Error("FEED_TOO_LARGE");
+      await reader.cancel().catch(() => {});
+      throw tooLarge(size);
     }
     chunks.push(value);
   }
@@ -438,10 +445,11 @@ export async function fetchPublicArticle(item, source, policy = {}, fetchImpl = 
     const contentType = response.headers.get("content-type") || "";
     if (policy.allow_public_pdf === true && /^application\/pdf\b/i.test(contentType)) {
       // Public research PDFs have their own explicit allowance. Keep HTML/feed
-      // limits separate and never exceed the existing 4 MB PDF safety ceiling.
+      // limits separate. An 8 MB binary ceiling accommodates image-heavy public
+      // reports; extracted text remains capped at 4 MB and extraction at 12 s.
       const configuredLimit = Number(policy.max_public_pdf_bytes ?? policy.max_article_bytes ?? 2000000);
       if (!Number.isFinite(configuredLimit) || configuredLimit <= 0) throw Error('ARTICLE_PDF_LIMIT_INVALID');
-      const bytes = await readLimitedBody(response, Math.min(configuredLimit, 4000000), { binary: true });
+      const bytes = await readLimitedBody(response, Math.min(configuredLimit, 8000000), { binary: true });
       if (bytes.subarray(0,5).toString() !== '%PDF-') throw Error('ARTICLE_PDF_INVALID');
       const body = execFileSync('pdftotext', ['-layout', '-', '-'], { input: bytes, timeout: 12000, maxBuffer: 4000000, encoding: 'utf8' });
       return { body, final_url: current, content_type: 'text/plain', extracted_from: 'public_pdf' };

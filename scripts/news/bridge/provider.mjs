@@ -1,3 +1,4 @@
+import { modelledPublicationIssues } from '../impact-scope.mjs';
 import { currentEvidence, latestEvidenceTime } from '../discovery-admission.mjs';
 import { slugify } from '../lib.mjs';
 import { retainPotentialHistory } from '../impact-potential.mjs';
@@ -98,6 +99,14 @@ export class DropboxChatGPTBridgeProvider {
       if (!retryDue(job, 'import', now)) continue;
       if (job.publication_gate?.status === 'needs_second_pass' && await waitingForReview(this.store, job)) continue;
       const held = job.semantic_review;
+      // Already-public history stays readable. A paid but not yet published
+      // legacy null-profile is held intact, without another provider attempt.
+      const alreadyPublic = job.accepted && stories.some(s=>s.bridge_import?.job_id === job.input.job_id && s.bridge_import.output_hash === job.accepted.output_hash);
+      const finalAssessment = held?.assessment || job.accepted?.record?.impact_assessment;
+      if (!alreadyPublic && finalAssessment && (held?.review?.status === 'ready' || job.accepted?.record)) {
+        const issues = modelledPublicationIssues(finalAssessment);
+        if (issues.length) { job.publication_gate={status:'needs_review',issues}; await this.store.put(job); continue; }
+      }
       if (['needs_review','blocked'].includes(job.publication_gate?.status)
         && held?.assessment?.version === IMPACT_VERSION && held.assessment.semantics_revision === POTENTIAL_REVISION
         && structuredSemanticChecks(held.review) && SEMANTIC_CHECKS.some(key=>held.review.checks[key].status === 'fail')) continue;

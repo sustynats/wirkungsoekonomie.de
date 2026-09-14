@@ -9,6 +9,7 @@ import { sourceIntegrityForStory } from "./source-integrity.mjs";
 import { publishedRecord, sanitizeAnalysisMediaImpact } from "./run.mjs";
 import { sanitizeVisuals } from "./visuals.mjs";
 import { mediaTriggerRecord } from "./media-impact.mjs";
+import { finalizeReviewedImpact } from './reviewed-impact.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 // Historical review packets retain their documented contract. Any newly
@@ -53,7 +54,7 @@ export function prepareReviewedMediaImpact(review, registry, stories, now) {
   return { errors: [], record, unchanged: false };
 }
 
-export function prepareReviewedStory(review, registry, stories, now) {
+export function prepareReviewedStory(review, registry, stories, now, { independentImpactReview = null } = {}) {
   if (['media_impact', 'analysis_phase'].includes(review.review_type)) return prepareReviewedMediaImpact(review, registry, stories, now);
   const correction = review.review_type === 'story_correction';
   const draftReview = review.review_type === 'story_draft_review';
@@ -96,7 +97,7 @@ export function prepareReviewedStory(review, registry, stories, now) {
   // legacy records without it need the superseded separate direction contract.
   if ((correction || draftReview) && !analysis.impact_assessment && !['1.1', '1.2'].includes(analysis.direction_assessment_version)) errors.push('AI_DIRECTION_ASSESSMENT_REQUIRED');
   if (errors.length) return { errors, candidate };
-  const record = publishedRecord(candidate, analysis, { provider: "editorial_review", model: "source_bound_review", mode: "editorial_review", method_sources: review.method_sources }, now);
+  let record = publishedRecord(candidate, analysis, { provider: "editorial_review", model: "source_bound_review", mode: "editorial_review", method_sources: review.method_sources }, now);
   if (correction || draftReview) record.versions.at(-1).review_id = reviewId;
   if (draftReview) record.editorial_draft_review = { previous_content_hash: existing.content_hash, review_id: reviewId, reviewed_at: now, source_urls: existing.sources.map(source => source.url) };
   record.editorial_review = { research_checked_at: review.research_checked_at, basis: review.review_basis, original_event_date: review.original_event_date, exclusions: review.exclusions || [] };
@@ -104,6 +105,7 @@ export function prepareReviewedStory(review, registry, stories, now) {
     if (typeof review.correction_note !== "string" || review.correction_note.length > 1500) throw new Error("EDITORIAL_CORRECTION_NOTE_INVALID");
     record.corrections = [...(existing.corrections || []), { at: now, note: review.correction_note }];
   }
+  if (independentImpactReview) record = finalizeReviewedImpact(record, review, independentImpactReview, existing, now);
   return { errors: [], record, unchanged: existing?.content_hash === candidate.content_hash };
 }
 
@@ -114,10 +116,13 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const file = path.join(ROOT, "data/news/stories.json");
   const store = JSON.parse(fs.readFileSync(file, "utf8"));
   const now = new Date().toISOString();
-  const result = prepareReviewedStory(review, loadNewsRegistry(ROOT), store.stories, now);
+  const receiptPath = process.argv.find(arg => arg.startsWith('--impact-review='))?.slice(16);
+  const independentImpactReview = receiptPath ? JSON.parse(fs.readFileSync(path.resolve(receiptPath), 'utf8')) : null;
+  const result = prepareReviewedStory(review, loadNewsRegistry(ROOT), store.stories, now, { independentImpactReview });
   if (result.errors.length) { console.error(JSON.stringify({ errors: result.errors, integrity: result.candidate.source_integrity.issues })); process.exitCode = 1; }
   else {
     if (process.argv.includes("--write") && !result.unchanged) {
+      if (result.record.impact_assessment?.version === '2.1' && !result.record.impact_semantic_review?.review_job_id) throw Error('EDITORIAL_IMPACT_INDEPENDENT_REVIEW_REQUIRED');
       const index = store.stories.findIndex(story => story.story_id === result.record.story_id);
       if (index < 0) store.stories.push(result.record);
       else store.stories[index] = result.record;

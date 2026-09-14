@@ -54,7 +54,7 @@ test('the second pass can complete a relevant media check, but cannot erase unsu
 });
 
 test('generation checks the completed final record last and preserves the original packet',()=>{
- const packet={job_type:'impact_semantic_review',job_id:'wt_20260913T120000Z_'+'a'.repeat(24),input_hash:'b'.repeat(64),
+ const packet={job_type:'impact_semantic_review',parent_job_id:'wt_20260913T120000Z_'+'e'.repeat(24),job_id:'wt_20260913T120000Z_'+'a'.repeat(24),input_hash:'b'.repeat(64),
   proposed_assessment:{},record:{media_review_required:true,analysis:{media_impact:null}},
   instructions:'Korrigiere ausschließlich impact_assessment, keine Originalnachricht oder persönliche Meinung. Gib das vollständige geprüfte impact_assessment zurück.'};
  const before=structuredClone(packet),prompt=JSON.parse(prepareApiJob(packet,{hash:'c'.repeat(64),instructions:'Independent review.'}).prompt);

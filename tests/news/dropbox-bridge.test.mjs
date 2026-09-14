@@ -1,5 +1,5 @@
 import {syntheticMediaReview} from './fixtures/media-review.mjs';
-import { syntheticImpact21, syntheticPotentialAssessment } from './fixtures/impact21.mjs';
+import { syntheticScopeReview, syntheticImpact21, syntheticPotentialAssessment } from './fixtures/impact21.mjs';
 import { ensureSemanticReview } from '../../scripts/news/bridge/semantic-review.mjs';
 import { SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import test from 'node:test';
@@ -341,6 +341,8 @@ function nativeReviewFixture() {
 
 test('real native correction adapter passes existing gates, preserves version and rejects stale source',()=>{
   const { review, original, c, created, processed, input, value, registry } = nativeReviewFixture();
+  assert.throws(()=>adaptOutput(value,{input,candidate:c},registry,[original],processed),error=>error.issues.includes('IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:human'),'old paid contract is not permission for new null publication');
+  review.analysis.impact_assessment=JSON.parse(JSON.stringify(syntheticPotentialAssessment()).replaceAll('official',c.sources[0].source_id));
   const result=adaptOutput(value,{input,candidate:c},registry,[original],processed);
   assert.equal(result.record.story_id,original.story_id);assert.ok(result.record.corrections.length);assert.deepEqual(result.record.versions.slice(0,-1),original.versions);
   const wrapped={...value,wirkungsticker:{...value.wirkungsticker,analysis:{analyses:[{...review.analysis,story_id:original.story_id}]}}};
@@ -722,7 +724,7 @@ for (const pass of [true,false]) test(`bounded import finishes an older second p
   const child=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');
   const checks=Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im unabhängigen Test-Prüfpass gegen den gebundenen Quellenstand geprüft.'}]));
   if(!pass)checks.source_fidelity={status:'fail',rationale:'Eine zentrale Aussage ist durch den gebundenen Beleg nicht gedeckt.'};
-  f.transport.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:assessment,review:{status:'ready',checks,findings:[]}}));
+  f.transport.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:assessment,review:{scope:syntheticScopeReview(assessment),status:'ready',checks,findings:[]}}));
   const freshIds=[];
   for(const n of [2,3]){
     const c=candidate(n);c.sources[0].published_at=`2026-09-10T07:2${n}:00.000Z`;
@@ -759,7 +761,7 @@ for (const deferredMedia of [false,true,'complete']) for (const pass of [true,fa
   const child=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');assert.ok(child);assert.equal(child.input.record.media_review_required, deferredMedia?true:undefined);
   const checks=Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im separaten Durchgang gegen den jeweiligen gebundenen Quellenstand geprüft.'}]));
   if(!pass)checks.source_fidelity={status:'fail',rationale:'Eine tragende Behauptung widerspricht dem gebundenen Quellenauszug.'};
-  f.transport.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:review.impact_assessment,review:{status:'ready',checks,findings:[]},...(deferredMedia?{media_applicability:deferredMedia==='complete'?syntheticMediaReview():{relevant:false,reason:'Der unabhängig geprüfte synthetische Ereigniskern benötigt keine zusätzliche Medienwirkungsanalyse.'}}:{})}));
+  f.transport.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:review.impact_assessment,review:{scope:syntheticScopeReview(review.impact_assessment),status:'ready',checks,findings:[]},...(deferredMedia?{media_applicability:deferredMedia==='complete'?syntheticMediaReview():{relevant:false,reason:'Der unabhängig geprüfte synthetische Ereigniskern benötigt keine zusätzliche Medienwirkungsanalyse.'}}:{})}));
   const accepted=await f.provider.reconcile({},[record],later);
   assert.equal(accepted.length,pass?1:0);assert.equal(images,pass?1:0);
   if(pass&&deferredMedia){
@@ -792,7 +794,7 @@ test('an all-pass semantic output with a missing required path returns for corre
   f.transport.files.set(parentPath,parentRaw);
   await f.provider.reconcile({},[record],later);
   const child=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');
-  const checked={status:'ready',checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im separaten Test-Prüfpass gegen gebundene Quellen und Wirkpfade geprüft.'}])),findings:[]};
+  const checked={scope:syntheticScopeReview(assessment),status:'ready',checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im separaten Test-Prüfpass gegen gebundene Quellen und Wirkpfade geprüft.'}])),findings:[]};
   const invalid=structuredClone(assessment);invalid.system_check.enablement=[];
   const result={schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:invalid,review:checked};
   const reviewPath=bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),raw=JSON.stringify(result);
@@ -1020,4 +1022,20 @@ test('fresh normal news crosses the soft queue cap before a late historical upda
  assert.equal(selected.length,1);assert.equal(selected[0].story_id,fresh.story_id);
  await provider.enqueue(selected,[],now);assert.equal(store.all().length,2);
  assert.equal((await provider.selectCandidates([fresh],now)).length,0);
+});
+
+for(const accepted of [false,true])test(`legacy paid null profile stays held before publication without a new call or rewrite (accepted=${accepted})`,async t=>{
+ const f=setup(t,{stageOnly:false,correctionsEnabled:true,semanticReview:ensureSemanticReview});
+ await f.provider.enqueue([candidate()],[],now);const job=f.store.all()[0];
+ const a=syntheticPotentialAssessment();a.dimensions.planet={path_status:'insufficient_basis',magnitude:null};
+ const checked={status:'ready',checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Historischer vollständig dokumentierter Prüfbefund dieses Testfalls.'}])),findings:[]};
+ const receipt={assessment:a,review:checked};job.semantic_review=receipt;job.publication_gate={status:'ready',issues:[]};
+ if(accepted){job.status='accepted';job.accepted={record:{impact_assessment:a},staged:false,output_hash:'unchanged'};}
+ f.store.put(job);const before=JSON.stringify(receipt);
+ const jobCount=f.store.all().length;
+ for(let i=0;i<2;i++)assert.deepEqual(await f.provider.reconcile({},[],later),[]);
+ const saved=f.store.get(job.input.job_id);
+ assert.equal(saved.publication_gate.status,'needs_review');assert.ok(saved.publication_gate.issues.includes('IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:planet'));
+ assert.equal(JSON.stringify(saved.semantic_review),before);assert.equal(f.store.all().length,jobCount);
+ assert.equal(saved.corrections,undefined);assert.deepEqual(saved.attempts,{});assert.equal(saved.ack,undefined);
 });
