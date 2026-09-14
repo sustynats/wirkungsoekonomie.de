@@ -966,7 +966,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true, transport 
     "WÖk-Einordnung: summary 2 Sätze/≤360 Zeichen; detail_summary initial 3-7 Sätze/300-1200 Zeichen, deepened 5-7/500-1200: Sachverhalt/Relevanz/Pfad/Folge/Grenze. Ohne eigene Feldvorgabe: Strings maximal 220 Zeichen; Arrays je1×180. Lesertextlimit: 10000 Zeichen mit relevantem Mediencheck, sonst 6300. impact_assessment separat vollständig, ohne Ein-Pfad-Grenze.",
     "Lesertexte deutsch, ohne URLs/IDs/Dokumentnummern; Zahlen exakt aus Claim/Quelle (Zahlwort bleibt Zahlwort). Keine Schemawiederholung. Beleg-IDs nur in Referenzfelder, außerhalb des Textbudgets.",
     "event_claims.evidence:[{evidence_id:...}]: jede Zahl im zitierten Segment; followups.source_id:source_id. MPD-source_ids:gelieferte source_id. Keine IDs erfinden. Originalbelege unübersetzt.",
-    "evidence_selection.incomplete kennzeichnet eine begrenzte Textstellenauswahl, keinen vollständig gelesenen Artikel. Keine Vollständigkeit behaupten; fehlt Beleg oder Kontext für eine Kernbehauptung, insufficient_evidence statt Ergänzen aus Vermutung.",
+    "evidence_selection.incomplete: begrenzte Textstellenauswahl, kein vollständig gelesener Artikel. Fehlender Kernbeleg/Kontext=insufficient_evidence; keine Vermutungen ergänzen.",
     ...MEDIA_PROMPT_RULES,
     ...(includeVisuals ? [...VISUALS_PROMPT_RULES,
       "Wenn ein Visual einen belegten Fakt aus article_excerpt nutzt, muss derselbe Fakt auch in source_summary stehen. So bleibt die Belegkette nach dem absichtlich flüchtigen Artikelabruf prüfbar."]
@@ -981,7 +981,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true, transport 
         headline: "Quellengetreuer Titel",
         news_status: "developing|preliminary|confirmed|disputed|corrected|updated",
         publication_depth: "initial|deepened",
-        event_claims: [{ claim: "string", claim_type: "siehe Regel", attribution_required: false, attributed_to: null, headline_claim: false, headline_qualifier: null, status: "single_source_claim|confirmed_claim|disputed_claim|primary_source_claim|uncertain_claim", evidence: [{ evidence_id: "string" }] }],
+        event_claims: [{ claim: "string", claim_type: "siehe Regel", temporal_status: "ex_ante|ongoing|ex_post", attribution_required: false, attributed_to: null, headline_claim: false, headline_qualifier: null, status: "single_source_claim|confirmed_claim|disputed_claim|primary_source_claim|uncertain_claim", evidence: [{ evidence_id: "string" }] }],
         followups: [{ claim: "string", source_id: "string", expected_by: null, expected_by_evidence: "Fristbeleg, sonst null", measurable_indicator: "string" }],
         source_summary: "string",
         summary: "string",

@@ -8,7 +8,7 @@ Interner QA-Bericht, vom öffentlichen Website-Artefakt ausgeschlossen. Snapshot
 
 - Der Native-API-Titel wurde beim Verpacken durch den Quellentitel ersetzt. Der eigene, geprüfte Titel wird nun durchgehend übernommen.
 - Die frühere Pflicht zu drei numerischen MPD-Pfaden begünstigte unbelegte Ausfüllungen. Ein dokumentierter zweiter Quellenabgleich erlaubt jetzt ausdrücklich offene Dimensionen ohne Nullwertung.
-- Neue strukturierte Attributionsprüfung bindet die genaue Zuschreibung im Titel an den betreffenden Claim. Amtliche Fakten ohne gebundene Primärquelle und starke Frames erzeugen sichtbare interne Prüfhinweise.
+- Neue strukturierte Attributionsprüfung bindet die genaue Zuschreibung im Titel an den betreffenden Claim. Amtliche Fakten ohne gebundene Primärquelle und starke Frames erzeugen sichtbare interne Prüfhinweise. Bereits aufgelöste Belegstellen werden berücksichtigt; das neue Prüfprotokoll speichert Verweise statt erneut die fremden Originalauszüge.
 - Ex-ante-Folgen bleiben vom beobachteten Anlass getrennt. Bestehende Text- und Negationsprüfungen bleiben aktiv.
 - Keine MPD-Gesamtampel, keine Richtung aus Relevanz oder Evidenz.
 - Persönliche Korrekturen verwenden dieselbe hashgebundene finale Freigabe und einen versionierten Overlay mit Korrekturhinweis.
@@ -283,7 +283,7 @@ Neben den Pflichtfällen: Klimaneutralitätsumfrage (Zweifel statt bereits erfol
 
 ## Prüfungen
 
-- 1.308 Nachrichtentests: PASS. Darunter offene Dimensionen, unzulässige Nullwertung, Quelle/Titel-Attribution, amtlicher Primärbeleg, Zukunft/Beobachtung, Metadaten, Bildformate und persönliche Freigabe/Import.
+- 1.309 Nachrichtentests: PASS. Darunter offene Dimensionen, unzulässige Nullwertung, Quelle/Titel-Attribution, amtlicher Primärbeleg, Zukunft/Beobachtung, Metadaten, Bildformate und persönliche Freigabe/Import.
 - news:build, news:validate, typecheck und lint: PASS. Lint meldet vorhandene globale Sprachhinweise, keinen Fehler.
 - Alle 1.660 Story-Identitäten, Slugs und Erstveröffentlichungszeiten unverändert; nur 23 Datensätze geändert.
 - Bilder: 69 bestehend gerenderte Titel-/OG-/Quadratkarten ohne Bildgenerierungsdienst, gespeichert im vorhandenen GitHub-Release-Archiv.

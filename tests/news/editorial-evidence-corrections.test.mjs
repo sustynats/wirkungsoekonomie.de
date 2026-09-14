@@ -73,3 +73,11 @@ test('dated factual personal revisions use the existing final approval flow and 
  assert.equal(changed.slug,base.slug);assert.equal(changed.published_at,base.published_at);assert.equal(changed.manual_only,true);
  assert.equal(base.body_markdown.includes('Gesellschaftliche Wirkung'),true);
 });
+
+test('native resolved evidence satisfies the primary gate without persisting source excerpts',async()=>{
+ const {editorialEvidenceReceipt}=await import('../../scripts/news/editorial-evidence.mjs');
+ const r={title:'Amtlicher Stand',sources:[{source_id:'amt',url:'https://example.org/result',primary_source:true}],analysis:{event_claims:[{claim:'Das amtliche Ergebnis',claim_type:'official_election_result',evidence:[{source_id:'amt',url:'https://example.org/result',excerpt:'Transienter Originaltext'}]}]}};
+ assert.deepEqual(editorialEvidenceIssues(r),[]);
+ const receipt=editorialEvidenceReceipt(r,'2026-09-14T12:00:00Z');assert.deepEqual(receipt.claims[0].source_ids,['amt']);assert.equal(JSON.stringify(receipt).includes('Transienter Originaltext'),false);
+ assert.deepEqual(editorialEvidenceIssues({...r,analysis:{},editorial_evidence:receipt}),[]);
+});

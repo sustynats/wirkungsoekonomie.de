@@ -1,5 +1,5 @@
 import { assessmentBasis } from './migrate-impact-assessments.mjs';
-import {editorialEvidenceIssues,EDITORIAL_EVIDENCE_VERSION} from './editorial-evidence.mjs';
+import {editorialEvidenceReceipt} from './editorial-evidence.mjs';
 import { newsInputReadiness } from './news-input-readiness.mjs';
 import { importBackgroundImpact } from './bridge/background-import.mjs';
 import { migrateImpactAssessment } from './impact-assessment.mjs';
@@ -593,9 +593,7 @@ export function publishedRecord(candidate, analysis, ai, now) {
     content_hash: candidate.content_hash,
     source_summary: sourceSummary,
     analysis: woekAnalysis,
-    editorial_evidence: {version:EDITORIAL_EVIDENCE_VERSION,checked_at:now,
-      claims:structuredClone(analysis.event_claims || []),
-      issues:editorialEvidenceIssues({...candidate,analysis})},
+    editorial_evidence: editorialEvidenceReceipt({...candidate,analysis},now),
     provider: ai.provider,
     model: ai.model,
     mode: ai.mode,

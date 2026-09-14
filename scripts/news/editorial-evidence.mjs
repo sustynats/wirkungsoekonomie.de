@@ -19,7 +19,8 @@ export function editorialEvidenceIssues(record = {}) {
       // in the title from satisfying attribution for this particular claim.
       if (qualifier.length < 5 || !normalize(title).includes(qualifier)) add('EDITORIAL_HEADLINE_ATTRIBUTION_REQUIRED','error',`Claim ${index+1}: Täter-/Ursachenzuordnung im Titel attribuieren.`);
     }
-    const bound = sources.filter(s => (c.source_ids || []).includes(s.source_id) || (c.source_urls || []).includes(s.url));
+    const bound = sources.filter(s => (c.source_ids || []).includes(s.source_id) || (c.source_urls || []).includes(s.url)
+      || (c.evidence || []).some(e=>e.source_id===s.source_id && e.url===s.url));
     if (['official_election_result','parliamentary_proceeding','legal_fact'].includes(c.claim_type) && !bound.some(primary)) add('EDITORIAL_PRIMARY_SOURCE_REQUIRED','warning',`Claim ${index+1}: amtlicher Fakt braucht einen gebundenen Originalbeleg; Sekundärquelle nicht als amtliche Bestätigung ausgeben.`);
     if (c.claim_type === 'observed_effect' && c.temporal_status === 'ex_ante') add('EDITORIAL_FUTURE_EFFECT_AS_OBSERVED','error',`Claim ${index+1}: erwartete Folge ist keine beobachtete Wirkung.`);
   }
@@ -30,3 +31,13 @@ export function editorialEvidenceIssues(record = {}) {
   return issues;
 }
 export const editorialEvidenceErrors = record => editorialEvidenceIssues(record).filter(i=>i.severity==='error').map(i=>i.code);
+// Keep the resolved binding and editorial classification, not transient source
+// excerpts. The existing evidence ledger retains the quotation hashes.
+export function editorialEvidenceReceipt(record,at){
+  const claims=(record.analysis?.event_claims || []).map(c=>({
+    ...Object.fromEntries(['claim','claim_type','temporal_status','status','attribution_required','attributed_to','headline_claim','headline_qualifier'].filter(k=>c[k]!==undefined).map(k=>[k,c[k]])),
+    source_ids:[...new Set([...(c.source_ids||[]),...(c.evidence||[]).map(e=>e.source_id)].filter(Boolean))],
+    source_urls:[...new Set([...(c.source_urls||[]),...(c.evidence||[]).map(e=>e.url)].filter(Boolean))],
+  }));
+  return {version:EDITORIAL_EVIDENCE_VERSION,checked_at:at,claims,issues:editorialEvidenceIssues(record)};
+}
