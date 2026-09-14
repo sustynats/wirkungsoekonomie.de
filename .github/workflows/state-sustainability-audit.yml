@@ -21,6 +21,10 @@ on:
       # their tests and the complete PR website gates still run independently.
       - '!scripts/news/**'
       - '!scripts/ops/**'
+      # Snapshot transport/build repairs do not change the #253 source content.
+      # Their complete PR build and semantic gates still run without this writer.
+      - '!scripts/quellenarchiv/source-snapshot.mjs'
+      - '!scripts/quellenarchiv/build-quellenarchiv-pages.mjs'
       - '!scripts/chatgpt_dropbox_bridge.py'
       - '!scripts/chatgpt_bridge_crypto.py'
       - '!scripts/chatgpt_processor_receipt.py'
