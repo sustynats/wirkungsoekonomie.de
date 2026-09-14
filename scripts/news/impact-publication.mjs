@@ -1,3 +1,4 @@
+import { impactScopeErrors } from './impact-scope.mjs';
 import { isGroundedOpenDimension } from './impact-potential.mjs';
 import { IMPACT_KEYS, impactAssessmentErrors } from './impact-assessment.mjs';
 
@@ -49,8 +50,8 @@ export function semanticIssues(assessment, record = {}, { secondPassComplete = f
 
 // The caller must obtain review from the separately persisted review job, never
 // from a review object supplied by the first writer in its own output.
-export function derivePublicationStatus(assessment, record = {}, { review = null, secondPassComplete = false } = {}) {
-  const issues = semanticIssues(assessment, record, { secondPassComplete });
+export function derivePublicationStatus(assessment, record = {}, { review = null, secondPassComplete = false, requireScope = false } = {}) {
+  const issues = [...semanticIssues(assessment, record, { secondPassComplete }), ...impactScopeErrors(review?.scope, assessment, [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])], {required:requireScope, publication:review?.status === 'ready'})];
   if (review?.status === 'blocked') return { status: 'blocked', issues: [...issues, 'IMPACT_REVIEW_BLOCKED'] };
   const reviewed = review?.status === 'ready' && structuredSemanticChecks(review) && SEMANTIC_CHECKS.every(key => review.checks[key].status === 'pass');
   if (issues.length || !reviewed) return { status: secondPassComplete ? 'needs_review' : 'needs_second_pass', issues: [...issues, ...(!reviewed ? ['IMPACT_INDEPENDENT_REVIEW_REQUIRED'] : [])] };

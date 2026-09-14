@@ -23,7 +23,7 @@ export async function reviewPreflight(bridge, output, record, now, options = {})
   }
   let reviewRecord={...record, impact_sources:[...(record.impact_sources || []), ...research]}, mediaIssues=[];
   try { reviewRecord=reviewedMediaRecord(reviewRecord,output); } catch(error) { mediaIssues=[error.message,...(error.issues || [])]; }
-  const gate = derivePublicationStatus(output.impact_assessment, reviewRecord, {review:output.review, secondPassComplete:true});
+  const gate = derivePublicationStatus(output.impact_assessment, reviewRecord, {review:output.review, secondPassComplete:true, requireScope:options.requireScope === true});
   const researchIssues = impactResearchHealth(output.impact_assessment);
   if (researchIssues.length) { gate.issues.push(...researchIssues); gate.status='needs_review'; }
   if(mediaIssues.length){gate.issues.push(...mediaIssues);gate.status='needs_review';}

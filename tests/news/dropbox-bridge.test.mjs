@@ -1,5 +1,5 @@
 import {syntheticMediaReview} from './fixtures/media-review.mjs';
-import { syntheticImpact21, syntheticPotentialAssessment } from './fixtures/impact21.mjs';
+import { syntheticScopeReview, syntheticImpact21, syntheticPotentialAssessment } from './fixtures/impact21.mjs';
 import { ensureSemanticReview } from '../../scripts/news/bridge/semantic-review.mjs';
 import { SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import test from 'node:test';
@@ -722,7 +722,7 @@ for (const pass of [true,false]) test(`bounded import finishes an older second p
   const child=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');
   const checks=Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im unabhängigen Test-Prüfpass gegen den gebundenen Quellenstand geprüft.'}]));
   if(!pass)checks.source_fidelity={status:'fail',rationale:'Eine zentrale Aussage ist durch den gebundenen Beleg nicht gedeckt.'};
-  f.transport.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:assessment,review:{status:'ready',checks,findings:[]}}));
+  f.transport.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:assessment,review:{scope:syntheticScopeReview(assessment),status:'ready',checks,findings:[]}}));
   const freshIds=[];
   for(const n of [2,3]){
     const c=candidate(n);c.sources[0].published_at=`2026-09-10T07:2${n}:00.000Z`;
@@ -759,7 +759,7 @@ for (const deferredMedia of [false,true,'complete']) for (const pass of [true,fa
   const child=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');assert.ok(child);assert.equal(child.input.record.media_review_required, deferredMedia?true:undefined);
   const checks=Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im separaten Durchgang gegen den jeweiligen gebundenen Quellenstand geprüft.'}]));
   if(!pass)checks.source_fidelity={status:'fail',rationale:'Eine tragende Behauptung widerspricht dem gebundenen Quellenauszug.'};
-  f.transport.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:review.impact_assessment,review:{status:'ready',checks,findings:[]},...(deferredMedia?{media_applicability:deferredMedia==='complete'?syntheticMediaReview():{relevant:false,reason:'Der unabhängig geprüfte synthetische Ereigniskern benötigt keine zusätzliche Medienwirkungsanalyse.'}}:{})}));
+  f.transport.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:review.impact_assessment,review:{scope:syntheticScopeReview(review.impact_assessment),status:'ready',checks,findings:[]},...(deferredMedia?{media_applicability:deferredMedia==='complete'?syntheticMediaReview():{relevant:false,reason:'Der unabhängig geprüfte synthetische Ereigniskern benötigt keine zusätzliche Medienwirkungsanalyse.'}}:{})}));
   const accepted=await f.provider.reconcile({},[record],later);
   assert.equal(accepted.length,pass?1:0);assert.equal(images,pass?1:0);
   if(pass&&deferredMedia){
@@ -792,7 +792,7 @@ test('an all-pass semantic output with a missing required path returns for corre
   f.transport.files.set(parentPath,parentRaw);
   await f.provider.reconcile({},[record],later);
   const child=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');
-  const checked={status:'ready',checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im separaten Test-Prüfpass gegen gebundene Quellen und Wirkpfade geprüft.'}])),findings:[]};
+  const checked={scope:syntheticScopeReview(assessment),status:'ready',checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im separaten Test-Prüfpass gegen gebundene Quellen und Wirkpfade geprüft.'}])),findings:[]};
   const invalid=structuredClone(assessment);invalid.system_check.enablement=[];
   const result={schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:invalid,review:checked};
   const reviewPath=bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),raw=JSON.stringify(result);

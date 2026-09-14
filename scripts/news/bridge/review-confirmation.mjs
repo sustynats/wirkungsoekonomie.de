@@ -8,9 +8,16 @@ import { REVIEW_RESPONSE_FORMAT, reviewResponseFormat, reviewPathAddresses } fro
 export function expandReviewConfirmation(output, original) {
   if (Object.hasOwn(output,'assessment_result')) {
     if (Object.hasOwn(output,'impact_assessment') || Object.hasOwn(output,'assessment_confirmation')) throw Error('API_REVIEW_CONFIRMATION_CONFLICT');
-    const result=output.assessment_result, branches=reviewResponseFormat(original.proposed_assessment).schema.properties.assessment_result.anyOf;
-    if (!['confirm','replace'].includes(result?.action)) throw Error('API_REVIEW_CONFIRMATION_INVALID');
-    parsePacket(JSON.stringify(result),branches[result.action==='confirm'?0:1]);
+    const result=output.assessment_result, branches=reviewResponseFormat(original.proposed_assessment,{legacy:true}).schema.properties.assessment_result.anyOf;
+    if (!['confirm','replace','hold'].includes(result?.action)) throw Error('API_REVIEW_CONFIRMATION_INVALID');
+    parsePacket(JSON.stringify(result),branches.find(branch=>branch.properties.action.enum.includes(result.action)));
+    if (result.action === 'hold') {
+      if (!['needs_review','blocked'].includes(output.review?.status) || !SEMANTIC_CHECKS.some(key=>output.review.checks?.[key]?.status==='fail')) throw Error('API_REVIEW_HOLD_INVALID');
+      output.impact_assessment=structuredClone(original.proposed_assessment);
+      output.review.findings=[...(output.review.findings || []),result.reason];
+      delete output.assessment_result;
+      return output;
+    }
     if(result.action==='replace') {
       output.impact_assessment=result.impact_assessment;
       output.assessment_confirmation=null;

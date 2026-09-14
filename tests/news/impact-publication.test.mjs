@@ -1,3 +1,4 @@
+import {syntheticScopeReview} from './fixtures/impact21.mjs';
 import { syntheticImpact21 } from './fixtures/impact21.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -161,7 +162,7 @@ test('separate review job is mandatory, idempotent, source-bound, and cannot be 
   assert.equal(parent.publication_gate.review_job_id,child.input.job_id);
   assert.equal(child.superseded_by,undefined);
   assert.notEqual(child.input.job_id,input.job_id);
-  const result={schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:now,review:readyReview(),impact_assessment:a};
+  const result={schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:now,review:{...readyReview(),scope:syntheticScopeReview(a)},impact_assessment:a};
   await bridge.transport.writeAtomic(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),result);
   parent.status='quarantined';
   assert.deepEqual(await importSemanticReviews(bridge,now),[]);
@@ -212,4 +213,26 @@ test('a bare checked label is a repairable output schema error, never a complete
   const {a}=bsw(),o={schema_version:'1.0',job_id:'wt_20260910T120000Z_aaaaaaaaaaaaaaaaaaaaaaaa',input_hash:'a'.repeat(64),processed_at:'2026-09-10T12:00:00Z',review:readyReview(),impact_assessment:a};
   assert.doesNotThrow(()=>parsePacket(JSON.stringify(o),semanticOutputSchema));
   o.review.checks.event_target='geprüft';assert.throws(()=>parsePacket(JSON.stringify(o),semanticOutputSchema),/BRIDGE_SCHEMA_INVALID/);
+});
+
+test('explicit research HOLD imports once and never starts another review for the unchanged paid proposal',async()=>{
+  const {expandReviewConfirmation}=await import('../../scripts/news/bridge/review-confirmation.mjs');
+  const {a,record}=bsw(),now='2026-09-14T22:00:00Z';
+  const input=impactReassessmentInput(record,now),parent={input,candidate:record,attempts:{},status:'queued'};
+  const jobs=new Map([[input.job_id,parent]]),files=new Map();
+  const bridge={store:{get:async id=>jobs.get(id),put:async j=>jobs.set(j.input.job_id,j),all:async()=>[...jobs.values()],observation:async()=>null},
+    transport:{writeAtomic:async(p,v)=>files.set(p,JSON.stringify(v)),list:async folder=>[...files.keys()].filter(p=>p.includes('/'+folder+'/')).map(p=>({name:p.split('/').at(-1)})),read:async p=>files.get(p)},failure:async(_j,_s,e)=>{throw e;}};
+  const first={data:'Unchanged independently bound author proposal'};
+  await ensureSemanticReview(bridge,parent,first,record,a,now);
+  const child=[...jobs.values()].find(j=>j.input.parent_job_id===input.job_id);
+  const checked={...readyReview(),scope:syntheticScopeReview(a),status:'needs_review'};
+  checked.checks.potential_scope={status:'fail',rationale:'Der Quellenstand erlaubt die notwendige Referenzraumprüfung noch nicht.'};
+  const result=expandReviewConfirmation({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:now,review:checked,assessment_result:{action:'hold',reason:'Vor einer neuen Freigabe fehlt die gezielte Recherche zum Wirkungsraum.'}},child.input);
+  await bridge.transport.writeAtomic(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),result);
+  await importSemanticReviews(bridge,now);
+  assert.equal(child.accepted.decision,'hold');assert.equal(parent.publication_gate.status,'needs_review');
+  assert.deepEqual(result.impact_assessment,a);
+  for(let i=0;i<2;i++)assert.equal((await ensureSemanticReview(bridge,parent,first,record,a,now)).status,'needs_review');
+  assert.equal(jobs.size,2);assert.equal(parent.accepted,undefined);
+  assert.deepEqual(await importSemanticReviews(bridge,now),[]);
 });

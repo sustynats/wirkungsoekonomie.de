@@ -1,3 +1,4 @@
+import {expandReviewConfirmation} from '../../scripts/news/bridge/review-confirmation.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { prepareApiJob, validateApiOutput } from '../../scripts/news/bridge/api-processor.mjs';
@@ -96,4 +97,13 @@ test('only an identical duplicate proposal is omitted from the prompt, never sou
   packet.record.analysis.impact_assessment.baseline='A different historical baseline.';
   prompt=JSON.parse(prepareApiJob(packet,knowledge).prompt);
   assert.deepEqual(prompt.assignment.record.analysis.impact_assessment,packet.record.analysis.impact_assessment);
+});
+
+test('explicit research HOLD preserves the bound proposal without inventing factors or claiming ready',()=>{
+ const a=syntheticPotentialAssessment();
+ const output={assessment_result:{action:'hold',reason:'Die notwendige räumliche Abgrenzung fehlt nach der Quellenprüfung.'},review:{status:'needs_review',checks:{potential_scope:{status:'fail',rationale:'Eine belastbare Modellierung ist noch nicht begründbar.'}},findings:[]}};
+ const input={job_type:'impact_semantic_review',proposed_assessment:a};
+ const expanded=expandReviewConfirmation(structuredClone(output),input);
+ assert.deepEqual(expanded.impact_assessment,a);assert.equal(expanded.review.status,'needs_review');assert.equal(expanded.assessment_result,undefined);
+ output.review.status='ready';assert.throws(()=>expandReviewConfirmation(output,input),/API_REVIEW_HOLD_INVALID/);
 });

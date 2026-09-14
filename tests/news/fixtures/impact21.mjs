@@ -43,3 +43,8 @@ export function syntheticPotentialAssessment() {
     dimensions:Object.fromEntries(['human','planet','democracy'].map(k=>[k,{direction:'positive',dominance:'dominant_positive',magnitude:3,evidence:'medium',likelihood:'medium',primary_paths:[syntheticPotentialPath()],secondary_paths:[],rationale:'Der mögliche Zugang wird unter den Testbedingungen verbessert.',balance:null}]))};
   return syntheticImpact21(a);
 }
+
+// Synthetic independent scope evidence for protocol tests, never production.
+export function syntheticScopeReview(a) {
+ return {version:'target-baseline-1',target:{label:a.evaluation_target.label,relation_to_news:['communication','narrative'].includes(a.evaluation_target.type)?'communication_itself':'underlying_subject',underlying_subject:'Im Test ausdrücklich festgelegter berichteter Sachverhalt.',rationale:'Der synthetische Test bestimmt diesen Gegenstand unabhängig vom Nachrichtenanlass.',source_ids:[a.research_check.source_functions[0].source_id]},baseline:{label:a.baseline,kind:'without_target',rationale:'Synthetischer Vergleich mit dem Testzustand ohne den festgelegten Eingriff.'},paths:Object.entries(a.dimensions).flatMap(([dimension,d])=>['primary_paths','secondary_paths'].flatMap(path_set=>(d[path_set]||[]).map((p,path_index)=>({dimension,path_set,path_index,target_relation:p.same_target?'same_target':'other_target',reference:p.same_baseline?'assessment_baseline':'other_baseline',baseline:p.same_baseline?a.baseline:'Im Test separat festgelegter abweichender Vergleichszustand.',effect_role:'substantive_change',rationale:'Die synthetische Zustandsveränderung ist im angegebenen Vergleich eigenständig begründet.'}))))};
+}
