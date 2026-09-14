@@ -39,7 +39,22 @@ export class DropboxTransport {
     const { app_key, app_secret, refresh_token } = this.credentials;
     const body = new URLSearchParams({ grant_type: 'refresh_token', refresh_token, client_id: app_key,
       ...(app_secret ? { client_secret: app_secret } : {}) });
-    const response = await this.fetch('https://api.dropboxapi.com/oauth2/token', { method: 'POST', body, redirect: 'error', signal: AbortSignal.timeout(20000) });
+    let response;
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        response = await this.fetch('https://api.dropboxapi.com/oauth2/token', { method: 'POST', body, redirect: 'error', signal: AbortSignal.timeout(20000) });
+        break;
+      } catch (error) {
+        const code = error.code || error.cause?.code;
+        const temporary = error.name === 'TimeoutError'
+          || ['ETIMEDOUT', 'ECONNRESET', 'ECONNREFUSED', 'EAI_AGAIN', 'ENOTFOUND', 'ENETUNREACH', 'UND_ERR_CONNECT_TIMEOUT'].includes(code);
+        if (!temporary) throw error;
+        if (attempt) throw Object.assign(new Error('BRIDGE_DROPBOX_AUTH_UNAVAILABLE'), { retryable: true });
+        // Reusing this long-lived refresh token only obtains another access
+        // token. No claim, upload, other file mutation or model call is replayed.
+        await this.sleep(1000);
+      }
+    }
     if (!response.ok) {
       const temporary = response.status === 429 || response.status >= 500;
       const retryAfter = Number(response.headers.get('retry-after'));

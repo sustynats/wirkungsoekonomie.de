@@ -842,6 +842,47 @@ test('temporary OAuth refusal is retryable while invalid credentials remain term
   }
 });
 
+test('a transient OAuth connection failure recovers once before a single claim move', async () => {
+  const calls=[],delays=[];let tokens=0;
+  const transport=new DropboxTransport({credentials:{app_key:'synthetic',refresh_token:'synthetic'},sleep:async ms=>delays.push(ms),fetchImpl:async url=>{
+    calls.push(url);
+    if(url.endsWith('/oauth2/token')) {
+      if(++tokens===1)throw Object.assign(new TypeError('fetch failed'),{cause:{code:'ETIMEDOUT'}});
+      return new Response(JSON.stringify({access_token:'synthetic-access',expires_in:14400}));
+    }
+    return new Response(JSON.stringify({metadata:{name:'synthetic.input.json'}}));
+  }});
+  await transport.move(bridgePath('00_INBOX','synthetic.input.json'),bridgePath('10_CLAIMED','synthetic.input.json'));
+  assert.equal(tokens,2);assert.deepEqual(delays,[1000]);
+  assert.equal(calls.filter(url=>url.endsWith('/files/move_v2')).length,1);
+  await transport.metadata(bridgePath('10_CLAIMED','synthetic.input.json'));
+  assert.equal(tokens,2);
+});
+
+test('OAuth network recovery is bounded and never retries an ambiguous file write', async () => {
+  for(const error of [Object.assign(new TypeError('fetch failed'),{cause:{code:'ETIMEDOUT'}}),new DOMException('Timed out','TimeoutError')]) {
+    let calls=0,delays=0;
+    const transport=new DropboxTransport({credentials:{},sleep:async()=>{delays++},fetchImpl:async url=>{calls++;assert.ok(url.endsWith('/oauth2/token'));throw error}});
+    await assert.rejects(transport.move(bridgePath('00_INBOX','synthetic.input.json'),bridgePath('10_CLAIMED','synthetic.input.json')),e=>e.message==='BRIDGE_DROPBOX_AUTH_UNAVAILABLE'&&e.retryable===true);
+    assert.equal(calls,2);assert.equal(delays,1);
+  }
+  let moves=0;
+  const transport=new DropboxTransport({credentials:{},sleep:async()=>assert.fail('must not retry a write'),fetchImpl:async url=>{
+    if(url.endsWith('/oauth2/token'))return new Response(JSON.stringify({access_token:'synthetic',expires_in:14400}));
+    moves++;throw Object.assign(new TypeError('fetch failed'),{cause:{code:'ETIMEDOUT'}});
+  }});
+  await assert.rejects(transport.move(bridgePath('00_INBOX','synthetic.input.json'),bridgePath('10_CLAIMED','synthetic.input.json')),/fetch failed/);
+  assert.equal(moves,1);
+});
+
+test('OAuth TLS failures and invalid responses do not trigger network recovery', async () => {
+  for(const result of [Object.assign(Error('certificate invalid'),{code:'CERT_HAS_EXPIRED'}),new Response('{}'),new Response('{}',{status:400})]) {
+    let calls=0;
+    const transport=new DropboxTransport({credentials:{},sleep:async()=>assert.fail('no auth retry'),fetchImpl:async()=>{calls++;if(result instanceof Error)throw result;return result}});
+    await assert.rejects(transport.token());assert.equal(calls,1);
+  }
+});
+
 test('Dropbox refuses a repair transfer repeatedly: keep one job and immutable history with durable backoff', async t => {
   const { provider, store, transport } = setup(t, { correctionsEnabled: true, stageOnly: false });
   await provider.enqueue([candidate()], [], now);
