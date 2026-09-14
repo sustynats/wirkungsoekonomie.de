@@ -1247,9 +1247,17 @@ export function assertsRealisedExAnteEffect(analysis) {
     }
   }
   return collectStrings(assertions).some(value=>value.split(/[.!?](?:\s|$)/).some(sentence=>
-    sentence.split(/[;:]|,\s*(?:aber|sondern|und|doch)\s+/i).some(clause=>causal.test(clause)
-      && !/\b(?:bewirkt|führt\s+(?:unmittelbar\s+)?zu)\b[^;:.!?]{0,100}\b(?:noch\s+)?nicht\s*$/i.test(clause)
-      && !/\bhat\s+(?:sich\s+)?(?:noch\s+)?nicht\b(?!\s+nur)[^;:.!?]{0,80}\b(?:verbessert|reduziert|erhöht)\b/i.test(clause))));
+    sentence.split(/[;:]|,\s*(?:aber|sondern|und|doch)\s+/i).some(clause=>
+      !/\b(?:bewirkt|führt\s+(?:unmittelbar\s+)?zu)\b[^;:.!?]{0,100}\b(?:noch\s+)?nicht\s*$/i.test(clause)
+      && !/\bhat\s+(?:sich\s+)?(?:noch\s+)?nicht\b(?!\s+nur)[^;:.!?]{0,80}\b(?:verbessert|reduziert|erhöht)\b/i.test(clause)
+      && [...clause.matchAll(new RegExp(causal.source,'ig'))].some(match=>{
+        if (!/^bewirkt$/i.test(match[0])) return true;
+        const prefix=clause.slice(0,match.index);
+        // A local negative noun phrase before this verb denies an effect.
+        // Check every other causal verb separately; never exempt the whole field.
+        const denial=/\bkein(?:e[nsrm]?)?\s+(?:(?!(?:aber|sondern|doch|und|dennoch|nur|nicht)\b)[\p{L}-]+\s+){1,6}$/iu.exec(prefix);
+        return !denial || /\bnicht\s+$/i.test(prefix.slice(0,denial.index));
+      }))));
 }
 
 export function validateAnalysis(analysis, story, options = {}) {
