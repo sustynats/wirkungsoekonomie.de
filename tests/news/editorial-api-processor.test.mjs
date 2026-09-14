@@ -64,6 +64,17 @@ test('unfinished source preparation neither claims nor submits a news job',async
  assert.equal(f.files.has(bridgePath('10_CLAIMED',id+'.input.json')),false);
  assert.equal(f.observations.get('api-input-preparation:'+id).status,'NEEDS_PREPARATION');
 });
+test('corrupt review paths are held before claim and do not block later prepared work',async()=>{
+ const f=fixture();
+ Object.assign(f.job.input,{job_type:'impact_semantic_review',proposed_assessment:{dimensions:{democracy:{primary_paths:[{label:'Retained path'},...Array(77).fill('stray output')]}}}});
+ f.files.set(bridgePath('00_INBOX',id+'.input.json'),JSON.stringify(f.job.input));
+ const result=await f.processor.process(f.job,await apiProcessorPreflight(f.transport,f.api,now));
+ assert.equal(result.status,'preparation_failed');assert.equal(result.provider_attempts,0);assert.equal(f.calls.length,0);
+ assert.equal(f.observations.get('api-attention:'+id).error,'API_EDITORIAL_REVIEW_INPUT_INVALID');
+ assert.ok(f.files.has(bridgePath('00_INBOX',id+'.input.json')));assert.equal(f.files.has(bridgePath('10_CLAIMED',id+'.input.json')),false);
+ assert.equal(f.job.input.proposed_assessment.dimensions.democracy.primary_paths.length,78);
+ const next=fixture();assert.equal((await next.processor.process(next.job,await apiProcessorPreflight(next.transport,next.api,now))).status,'output_delivered');
+});
 test('an existing foreign claim, ACK or output cannot trigger generation', async () => {
   for (const [folder, name] of [['10_CLAIMED', id + '.input.json'], ['30_ACK', id + '.ack.json'], ['20_OUTPUT_READY', id + '.output.json']]) {
     const f = fixture(); f.files.set(bridgePath(folder, name), '{}');

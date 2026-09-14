@@ -89,6 +89,22 @@ test('complete review schema reaches the initial request while paid repairs are 
   assert.deepEqual(body.tools[0].filters.allowed_domains,['www.bundestag.de']);
  }
 });
+test('the complete MPD and media-review contract reaches the provider without changing budgets',async t=>{
+ const f=await fixture(t),format=reviewResponseFormat(syntheticPotentialAssessment(),{mediaRequired:true});
+ assert.ok(JSON.stringify(format).length<40000);
+ const input=request({kind:'review',prompt:JSON.stringify({output_contract:{response_format:format}})});
+ const result=await f.service.submit(input);
+ assert.equal(result.status,'completed');assert.equal(f.calls.length,1);assert.deepEqual(f.reservations,[0.5]);
+ assert.deepEqual(f.bodies[0].text.format,format);assert.equal(f.bodies[0].max_tool_calls,2);
+ await f.service.submit(input);assert.equal(f.calls.length,1);
+});
+test('an oversized review contract is a preparation failure, not a budget stop',async t=>{
+ const f=await fixture(t),format=reviewResponseFormat(syntheticPotentialAssessment(),{mediaRequired:true});
+ format.schema.description='x'.repeat(64000);
+ const result=await f.service.submit(request({kind:'review',prompt:JSON.stringify({output_contract:{response_format:format}})}));
+ assert.equal(result.status,'preparation_failed');assert.equal(result.error,'API_EDITORIAL_RESPONSE_CONTRACT_INVALID');
+ assert.equal(result.provider_called,false);assert.equal(f.calls.length,0);assert.equal(f.reservations.length,0);
+});
 test('JSON transport closes only outer containers, never missing words or values',()=>{
  assert.deepEqual(parseEditorialJson('{"review":{"status":"ready"}'),{review:{status:'ready'}});
  assert.deepEqual(parseEditorialJson('{"paths":[{"magnitude":3}]'),{paths:[{magnitude:3}]});

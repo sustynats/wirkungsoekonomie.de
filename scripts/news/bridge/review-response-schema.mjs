@@ -81,8 +81,13 @@ export const REVIEW_RESPONSE_FORMAT={type:'json_schema',name:'impact_review_conf
 };
 
 export function reviewPathAddresses(assessment) {
- return ['human','planet','democracy'].flatMap(dimension=>['primary_paths','secondary_paths'].flatMap(path_set=>
-  (assessment?.dimensions?.[dimension]?.[path_set] || []).map((_,path_index)=>({dimension,path_set,path_index,key:`${dimension}_${path_set}_${path_index}`}))));
+ return ['human','planet','democracy'].flatMap(dimension=>['primary_paths','secondary_paths'].flatMap(path_set=>{
+  const paths=assessment?.dimensions?.[dimension]?.[path_set] ?? [];
+  // Corrupt draft arrays must not turn stray strings into dozens of required
+  // review slots. Keep the input intact for preparation; never drop evidence.
+  if(!Array.isArray(paths) || paths.some(p=>!p || typeof p!=='object' || Array.isArray(p))) throw Error('API_EDITORIAL_REVIEW_INPUT_INVALID');
+  return paths.map((_,path_index)=>({dimension,path_set,path_index,key:`${dimension}_${path_set}_${path_index}`}));
+ }));
 }
 
 // Bind completeness BEFORE generation. An unconstrained array could omit a
