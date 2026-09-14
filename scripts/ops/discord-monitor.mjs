@@ -7,6 +7,8 @@ import { reportOperationallyHealthy, sourceCoverageDegraded } from '../news/chec
 import { summarizeSourceFunnel } from '../news/source-funnel.mjs';
 import { operatingCostSummary, isImmediateNewsCostRun, usageCostStartedAt } from '../news/operating-cost.mjs';
 import { bridgeSession } from '../news/bridge/remote.mjs';
+import { feedDate } from '../news/feed-order.mjs';
+import { observeLiveNews, workflowChecks, planRecovery, recoverDelivery, RECOVERY_WORKFLOWS } from './news-recovery.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const MINUTE = 60_000;
@@ -51,7 +53,7 @@ export function publicationFlow(usage, report, now) {
   return { stalled, observed_runs: rows.length, observed_minutes: observedMinutes, publication_actions: actions, queue_completed: completions, capacity };
 }
 
-export function summarizeNews({ report, usage, stories, liveFeed }, now) {
+export function summarizeNews({ report, usage, stories, liveFeed, publicDelivery }, now) {
   const today = berlinParts(now).date;
   const yesterday = new Date(Date.parse(`${today}T12:00:00Z`) - 86_400_000).toISOString().slice(0, 10);
   const rows = uniqueRuns(usage);
@@ -84,7 +86,9 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
     const modified = s.last_updated || s.published_at;
     if (age(modified, now) < 45) return false;
     const url = `https://wirkungsoekonomie.de/wirkungsticker/${s.slug}/`;
-    return !live.has(url) || Date.parse(live.get(url)) < Date.parse(modified);
+    // The public feed deliberately keeps the source/event date. Comparing it
+    // with an MPD correction/import timestamp falsely flags delivered stories.
+    return !live.has(url) || Date.parse(live.get(url)) < Date.parse(feedDate(s));
   });
   const updatesToday = todayRuns.reduce((n, r) => n + Number(r.counts?.updated_stories || 0), 0);
   const newToday = published(today);
@@ -148,6 +152,7 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
     dailySourceFunnel,
     latestSourceFunnel,
     coverageAudit: report?.event_coverage || null,
+    publicDelivery: publicDelivery || null,
   };
 }
 
@@ -205,8 +210,10 @@ export function evaluateChecks(data, now) {
     const chatAvailable=health.processor_available===true && age(health.checked_at,now)<=45;
     const currentNewsWaiting=Number(health.current_news_open)>0
       || health.current_news_open==null && Number(b.open_count)>0 && Number(health.incoming_jobs_last_hour)>0;
-    const lastPublication=b.metrics?.last_publication_at || b.last_publication_at;
-    const noPublicProgress=currentNewsWaiting && !paused && age(lastPublication,now)>120;
+    const delivery = data.publicDelivery;
+    const noPublicProgress=currentNewsWaiting && !paused && (!delivery?.verified
+      || age(delivery.last_current_new_at,now)>120
+        && (age(delivery.observed_since,now)>120 || age(delivery.latest_source_at,now)>120));
     summary.queue={total:Number(b.open_count||0),capacity:0,technical:Number(b.errors||0),editorial:0,status:b.status||'unbekannt'};
     summary.runCompleted=b.poll_at||null;
     checks.push(
@@ -239,11 +246,12 @@ export function dailyReport(summary, checks) {
   return [
     `WÖk Tagesbericht · ${summary.today} · Europe/Berlin`,
     ...(summary.processing_mode==='dropbox_chatgpt_bridge' ? [summary.bridge?.api_processor_health?.enabled ? 'Betrieb: begrenzter Oracle-API-Redaktionsworker mit bestehender Dropbox-Bridge und unabhängiger Fachprüfung. Persönliche Beiträge benötigen die finale Freigabe in der Redaktionsapp. Worker-Verfügbarkeit, Entwürfe und echte Veröffentlichungen werden getrennt geprüft.' : 'Betrieb: ChatGPT-Dropbox-Bridge für Redaktion und Analyse; Higgsfield ausschließlich für freigegebene Bilder. Keine Text-KI-API. Verfügbarkeit, redaktionelle Abschlüsse und Veröffentlichungen werden getrennt geprüft.',`Bridge: ${summary.bridge?.status||'Status nicht verfügbar'}; Quellenlauf ${summary.bridge?.discovery_last_success||'noch nicht gestartet'}.`,
-      `Letzte Nachrichtenveröffentlichung: ${summary.bridge?.metrics?.last_publication_at||'nicht nachgewiesen'}. Abgeschlossene Arbeitsaufträge in der letzten Stunde: ${summary.bridge?.processor_health?.completed_jobs_last_hour??'nicht verfügbar'} (einschließlich Prüfungen und Ablehnungen; keine Artikelzahl).`,
+      `Zuletzt erstmals im Live-Feed gesehen: ${summary.publicDelivery?.last_new_at||'seit Beobachtungsbeginn noch nicht nachgewiesen'}. Neue sichtbare Nachrichten im beobachteten Stundenfenster: ${summary.publicDelivery?.verified ? summary.publicDelivery.new_visible_last_hour : 'nicht prüfbar'}; davon aus den letzten sechs Stunden: ${summary.publicDelivery?.verified ? summary.publicDelivery.current_new_visible_last_hour : 'nicht prüfbar'}. Beobachtungsbeginn: ${summary.publicDelivery?.observed_since||'nicht verfügbar'}.`,
+      `Letzte Importbestätigung: ${summary.bridge?.metrics?.last_publication_at||'nicht nachgewiesen'} (kein Live-Nachweis). Abgeschlossene Arbeitsaufträge in der letzten Stunde: ${summary.bridge?.processor_health?.completed_jobs_last_hour??'nicht verfügbar'} (einschließlich Prüfungen und Ablehnungen; keine Artikelzahl).`,
       `Aktuelle Nachrichtenaufträge: ${summary.bridge?.processor_health?.current_news_open??'noch nicht getrennt erfasst'}; davon ohne vollständige Ausgabe ${summary.bridge?.processor_health?.current_news_stages?.awaiting_output??'unbekannt'}, in Zweitprüfung ${summary.bridge?.processor_health?.current_news_stages?.awaiting_second_pass??'unbekannt'}, mit Korrekturbedarf ${summary.bridge?.processor_health?.current_news_stages?.needs_editorial_repair??'unbekannt'}, zur Übernahme ${summary.bridge?.processor_health?.current_news_stages?.awaiting_import??'unbekannt'}.`] : []),
     ...checks.filter(c => TARGETS.some(t => t.id === c.id)).map(c => `${c.ok ? '✓' : '⚠'} ${c.name}: ${c.ok ? 'erreichbar' : c.reason}`),
     `Ticker: ${summary.live ?? 'nicht verfügbar'} live · ${summary.active} aktuelle Lagen und Einzelakten aus ${summary.underlyingActive} aktiven Wirkungsakten${summary.caseCount ? ` · ${summary.caseCount} ${summary.caseCount === 1 ? 'Lageakte' : 'Lageakten'}` : ''}.`,
-    `Erstveröffentlichungen gestern (${summary.yesterday}): ${summary.newYesterday}; heute bisher: ${summary.newToday} (inkl. später archivierter/zusammengeführter Akten).`,
+    `Im Redaktionsbestand als veröffentlicht vermerkt: gestern (${summary.yesterday}) ${summary.newYesterday}; heute bisher ${summary.newToday} (inkl. später archivierter/zusammengeführter Akten; Live-Nachweis separat).`,
     `Letzter Lauf: ${summary.runCompleted || 'nicht verfügbar'}; ${summary.pendingCount} offene Prüfungen, ${summary.activeSources} aktive Quellen.`,
     `Queue: ${summary.queue.total || 0} offen (${summary.queue.capacity || 0} Kapazität · ${summary.queue.technical || 0} technisch · ${summary.queue.editorial || 0} redaktionell); Status ${summary.queue.status || 'unbekannt'}.`,
     `Quellen-Funnel heute: ${funnel.feedItems || 0} Feed-Einträge → ${funnel.changedItems || 0} neu/aktualisiert → ${funnel.candidates || 0} Story-Kandidaten → ${funnel.eligibleKnown ? funnel.eligible : 'noch nicht historisch erfasst'} geeignet → ${funnel.aiSelected || 0} KI → ${funnel.publicationActions || 0} Veröffentlichungen/Aktualisierungen. Lokal verworfen: ${funnel.localRejections || 0}; redaktionelle Quellenbeiträge: ${sourceTotals.editorial_rejections || 0}.`,
@@ -375,12 +383,26 @@ export async function main() {
     try { data.bridge=await bridgeSession().monitor(); }
     catch { data.bridge={reachable:false}; }
   }
-  const { checks, summary } = evaluateChecks(data, now);
-  if (dryRun) { console.log(JSON.stringify({ checks, summary, report: dailyReport(summary, checks) }, null, 2)); return; }
-  if (!process.env.GH_TOKEN || !process.env.WOEK_MONITOR_DISCORD_BOT_TOKEN || !/^\d{15,22}$/.test(process.env.WOEK_MONITOR_DISCORD_USER_ID || '')) throw new Error('MONITOR_DM_CONFIGURATION_MISSING');
+  if (!dryRun && (!process.env.GH_TOKEN || !process.env.WOEK_MONITOR_DISCORD_BOT_TOKEN || !/^\d{15,22}$/.test(process.env.WOEK_MONITOR_DISCORD_USER_ID || ''))) throw new Error('MONITOR_DM_CONFIGURATION_MISSING');
   const statePath = 'monitor-state.json';
-  const stored = await api(`contents/${statePath}?ref=${STATE_BRANCH}`, { allow404: true });
+  const stored = process.env.GH_TOKEN ? await api(`contents/${statePath}?ref=${STATE_BRANCH}`, { allow404: true }) : null;
   let state = stored ? JSON.parse(Buffer.from(stored.content, 'base64').toString('utf8')) : null;
+  const observed = observeLiveNews(state?.public_delivery, liveFeed, now);
+  data.publicDelivery = observed.summary;
+  const { checks, summary } = evaluateChecks(data, now);
+  let snapshot = null;
+  if (process.env.GH_TOKEN) {
+    try {
+      const results = await Promise.all(RECOVERY_WORKFLOWS.map(async workflow => [workflow,
+        (await api(`actions/workflows/${workflow}/runs?per_page=100`)).workflow_runs]));
+      snapshot = Object.fromEntries(results);
+    } catch { /* Unverified workflow state blocks recovery and raises a check. */ }
+  }
+  checks.push(...workflowChecks(snapshot, now));
+  const recoveryPlan = planRecovery({ head: process.env.WOEK_MONITOR_SOURCE_COMMIT, snapshot,
+    pendingPublication: summary.pendingPublication, bridge: data.bridge,
+    bridgeMode: data.processing_mode === 'dropbox_chatgpt_bridge', state, now });
+  if (dryRun) { console.log(JSON.stringify({ checks, summary, recoveryPlan, report: dailyReport(summary, checks) }, null, 2)); return; }
   let sha = stored?.sha;
   let persisted = JSON.stringify(state);
   const save = async () => {
@@ -398,7 +420,17 @@ export async function main() {
     }
   }
   state = advanceState(state, checks, summary, now, { reportNow: process.argv.includes('--report-now') });
+  state.public_delivery = observed.state;
   await save(); // Persist outbox BEFORE attempting delivery.
+  // Recovery does not depend on Discord being available. All entry points
+  // retain their existing locks, validation, author approvals and cost gates.
+  await recoverDelivery({ state, actions: recoveryPlan, save,
+    refresh: async workflow => {
+      const [head, runs] = await Promise.all([api('git/ref/heads/main'), api(`actions/workflows/${workflow}/runs?per_page=100`)]);
+      return { head: head.object.sha, runs: runs.workflow_runs };
+    },
+    dispatch: (workflow, body) => api(`actions/workflows/${workflow}/dispatches`, { method: 'POST', body: JSON.stringify(body) }),
+  });
   let delivered = 0;
   while (state.outbox.length) {
     await sendDiscord(state.outbox[0], { token: process.env.WOEK_MONITOR_DISCORD_BOT_TOKEN, recipient: process.env.WOEK_MONITOR_DISCORD_USER_ID });
@@ -406,7 +438,9 @@ export async function main() {
     await save();
     delivered++;
   }
-  console.log(JSON.stringify({ checked: checks.length, healthy: checks.filter(c => c.ok).length, activeIncidents: Object.keys(state.incidents).filter(k => state.incidents[k].active).length, delivered, dailyDate: state.dailyDate }));
+  console.log(JSON.stringify({ checked: checks.length, healthy: checks.filter(c => c.ok).length, activeIncidents: Object.keys(state.incidents).filter(k => state.incidents[k].active).length, delivered, dailyDate: state.dailyDate,
+    publicDelivery: observed.summary, recovery: (state.recovery_attempts || []).filter(attempt => attempt.at === now) }));
+  if ((state.recovery_attempts || []).some(attempt => attempt.at === now && attempt.status === 'dispatch_uncertain')) throw new Error('MONITOR_RECOVERY_DISPATCH_UNCERTAIN');
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main().catch(error => { console.error(/^MONITOR_[A-Z0-9_]+$/.test(error.message) ? error.message : 'MONITOR_EXECUTION_FAILED'); process.exitCode = 1; });

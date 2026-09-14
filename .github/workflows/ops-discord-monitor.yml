@@ -1,6 +1,9 @@
 name: WÖk Betriebsmonitor und Discord-Tagesbericht
 
 on:
+  workflow_run:
+    workflows: [Wirkungsticker, 'Deploy static site.']
+    types: [completed]
   schedule:
     - cron: '0,15,30,45 * * * *'
   push:
@@ -14,6 +17,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: woek-ops-discord-monitor
@@ -21,6 +25,7 @@ concurrency:
 
 jobs:
   monitor:
+    if: github.event_name != 'workflow_run' || contains(fromJSON('["failure","timed_out","action_required"]'), github.event.workflow_run.conclusion)
     # The legacy health endpoint also reads the complete private queue.
     concurrency:
       group: ${{ vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && 'wirkungsticker-oracle-bridge-access' || 'woek-ops-monitor-api-access' }}
@@ -35,6 +40,8 @@ jobs:
           sparse-checkout: |
             .github/workflows/ops-discord-monitor.yml
             scripts/ops/discord-monitor.mjs
+            scripts/ops/news-recovery.mjs
+            scripts/news/feed-order.mjs
             scripts/news/bridge/remote.mjs
             scripts/news/case-files.mjs
             scripts/news/publication-update.mjs
@@ -51,6 +58,7 @@ jobs:
             scripts/news/source-funnel.mjs
             scripts/news/operating-cost.mjs
             tests/ops/discord-monitor.test.mjs
+            tests/ops/news-recovery.test.mjs
             reports/wirkungsticker-latest-run.json
             data/news/stories.json
             data/news/usage.json
@@ -59,7 +67,9 @@ jobs:
         with:
           node-version: '22'
       - name: Test monitor invariants
-        run: node --test tests/ops/discord-monitor.test.mjs
+        run: node --test tests/ops/discord-monitor.test.mjs tests/ops/news-recovery.test.mjs
+      - name: Record the checked-out main revision
+        run: echo "WOEK_MONITOR_SOURCE_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
       - name: Check live services and deliver private Discord messages
         env:
           GH_TOKEN: ${{ github.token }}
