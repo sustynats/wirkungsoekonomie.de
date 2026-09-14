@@ -88,8 +88,15 @@ test('retroactive rendering covers every published story without rewriting store
       if(assessment){
         assert.deepEqual(statuses(html),['human','planet','democracy'].map(key=>assessment.dimensions[key].direction),story.slug);
         assert.match(html,/data-reviewed-impact-profile="2.1"/);
-        for(const key of ['human','planet','democracy'])assert.match(html,new RegExp('wt-dim--'+key));
-        assert.match(html,/data-magnitude=/);
+        for(const key of ['human','planet','democracy']) {
+          const row=html.split(`class="wt-dim wt-dim--${key}"`)[1]?.split('class="wt-dim wt-dim--')[0];
+          assert.ok(row,`${story.slug}: ${key} remains visible`);
+          const magnitude=assessment.dimensions[key].magnitude;
+          if(magnitude==null) {
+            assert.match(row,/Tragweite offen/);
+            assert.doesNotMatch(row,/data-magnitude="[0-5]"/);
+          } else assert.match(row,new RegExp(`data-magnitude="${magnitude}"`));
+        }
       }else{
         assert.deepEqual(statuses(html),[],story.slug);
         assert.match(html,/systemische Relevanz/);
