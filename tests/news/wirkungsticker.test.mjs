@@ -274,6 +274,12 @@ test("Artikeltext wird begrenzt aus dem Inhaltsbereich extrahiert", async () => 
   );
   assert.match(result.excerpt, /Gesicherter Artikelinhalt/);
 });
+test('player attribute JSON never becomes source evidence when it contains quoted markup',()=>{
+ const html='<main><h1>Weniger Anträge</h1><div data-player=\'{"title":"Audio > Nachricht","params":"?startTime=$start$&endTime=$ende$","legal":"&lt;a href=&quot;/nutzung&quot;&gt;Nutzung&lt;/a&gt;"}\'>Audio</div><p>Die Verwaltung meldet weniger Anträge. Die Unterbringungskosten bleiben wegen laufender Mietverträge zunächst bestehen.</p></main>';
+ const text=extractArticleText(html);
+ assert.equal(text,'Weniger Anträge Audio Die Verwaltung meldet weniger Anträge. Die Unterbringungskosten bleiben wegen laufender Mietverträge zunächst bestehen.');
+ assert.doesNotMatch(text,/params|startTime|legal|nutzung/);
+});
 
 test("Nur veröffentlichte und verifizierte WÖk-Parlamentsbewertungen werden übernommen", () => {
   const parliamentSource = {

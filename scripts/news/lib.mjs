@@ -384,7 +384,11 @@ export function extractArticleText(html, maxLength = 7000) {
     || raw;
   const withoutChrome = content
     .replace(/<(?:script|style|noscript|svg|nav|header|footer|form|dialog|button)\b[\s\S]*?<\/(?:script|style|noscript|svg|nav|header|footer|form|dialog|button)>/gi, " ")
-    .replace(/<!--([\s\S]*?)-->/g, " ");
+    .replace(/<!--([\s\S]*?)-->/g, " ")
+    // Strip HTML attributes BEFORE entity decoding. Player JSON can contain
+    // encoded markup and '>' inside quoted values; the old <[^>]+> stopped
+    // inside that attribute and leaked its remaining configuration as prose.
+    .replace(/<\/?[a-z][a-z0-9:-]*(?:\s+(?:[^<>"']|"[^"]*"|'[^']*')*)?\s*\/?>/gi, " ");
   let text = sanitizeFeedText(withoutChrome, maxLength + 3000);
   const linkCopyAt = text.slice(0, 2500).lastIndexOf("Link kopieren");
   if (linkCopyAt >= 0) text = text.slice(linkCopyAt + "Link kopieren".length).trim();

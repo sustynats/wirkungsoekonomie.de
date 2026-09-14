@@ -31,6 +31,8 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 
 ## Veröffentlichungsqualität
 
+- Vor jedem neuen kostenpflichtigen Nachrichtenentwurf ist das tatsächlich übermittelte, quellengebundene Eingabepaket lokal zu prüfen. `prepared` ist nur ein Transportstatus, keine redaktionelle Freigabe. Fehlender Ereigniszuschnitt, reine Überschriften, fehlende Belegbindungen und technische Extraktionsreste müssen vor Claim und Kostenbuchung in die Quellenaufbereitung zurückgehen. Ein zugelassener aussagekräftiger RSS-Auszug kann genügen; weder Volltext noch zwei Quellen sind pauschale Voraussetzungen. Diese kostenlose Vollständigkeitsprüfung ersetzt keine fachliche Auswahl oder Abschlussprüfung der erzeugten Antwort. Höchstens ein bezahlter Aufruf je Entwurfs-/Prüfauftrag; bereits bezahlte Antworten ohne Neugenerierung wiederverwenden.
+
 - Für die ausschließlich manuelle Rubrik „Buch & Wirkung“ gilt docs/news/BUCH-UND-WIRKUNG.md.
 - Die freigegebenen Manuskripte dieser Rubrik bleiben einschließlich Zeichensetzung unverändert (spezifische Ausnahme von der allgemeinen Typografie-Regel).
 - Nats ist der Spitzname der Autorin Natalie Weber. In dieser Rubrik ist ihr festes Dropbox-Portrait MIT ihrem eigenen Buch „Die neue Ordnung des Wohlstands“ verbindlich; das rezensierte Verlagscover bleibt separat. Keine Montage, keine Generierung, kein Buchtausch im Portrait.
