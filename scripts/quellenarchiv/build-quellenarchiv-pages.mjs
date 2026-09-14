@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import {loadSourceSnapshot} from './source-snapshot.mjs';
 
 // Quellenarchiv-Spiegel: baut statische, read-only Seiten aus dem kuratierten
 // Quellenarchiv des Wirkungsinstituts. EINE Datenquelle (die öffentliche Institut-API),
@@ -227,21 +228,11 @@ function attachEvidenceRegistryMetadata(data) {
 }
 
 async function loadData() {
-  if (process.env.QUELLENARCHIV_FETCH === "1") {
-    try {
-      const res = await fetch(API_URL, { headers: { accept: "application/json" } });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const json = await res.json();
-      if (!Array.isArray(json.sources) || !json.sources.length) throw new Error("leere Antwort");
-      fs.mkdirSync(path.dirname(SNAPSHOT_PATH), { recursive: true });
-      fs.writeFileSync(SNAPSHOT_PATH, `${JSON.stringify(json, null, 2)}\n`);
-      console.log(`[quellenarchiv] Snapshot aus API aktualisiert: ${json.sources.length} Quellen`);
-      return attachEvidenceRegistryMetadata(mergeSupplementalSourceRecords(json));
-    } catch (err) {
-      console.warn(`[quellenarchiv] API-Refresh fehlgeschlagen (${err.message}); nutze Snapshot.`);
-    }
-  }
-  return attachEvidenceRegistryMetadata(mergeSupplementalSourceRecords(JSON.parse(fs.readFileSync(SNAPSHOT_PATH, "utf8"))));
+  return loadSourceSnapshot({
+    apiUrl: API_URL, snapshotPath: SNAPSHOT_PATH,
+    refresh: process.env.QUELLENARCHIV_FETCH === '1',
+    validate: data => attachEvidenceRegistryMetadata(mergeSupplementalSourceRecords(data)),
+  });
 }
 
 // ---------------------------------------------------------------------------
