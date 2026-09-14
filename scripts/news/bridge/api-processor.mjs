@@ -287,7 +287,13 @@ export class ApiEditorialProcessor {
     const packet = JSON.parse(await this.transport.read(await this.transport.metadata(claimPath) ? claimPath : sourcePath));
     if (packet.job_id !== id || packet.input_hash !== current.input.input_hash) throw Error('BRIDGE_JOB_BINDING_MISMATCH');
     const priorOutput = packet.original_output_path ? JSON.parse(await this.transport.read(packet.original_output_path)) : null;
-    const request = prepareApiJob(packet, this.knowledge, { priorOutput });
+    let request;
+    try { request = prepareApiJob(packet, this.knowledge, { priorOutput }); }
+    catch (error) {
+      if (error.message !== 'API_EDITORIAL_REVIEW_INPUT_INVALID') throw error;
+      this.store.observe(`api-attention:${id}`,{job_id:id,at:this.now(),validation_revision:API_VALIDATION_REVISION,status:'preparation_failed',error:error.message});
+      return {status:'preparation_failed',job_id:id,provider_attempts:0,error:error.message};
+    }
     // A previously completed response remains recoverable after a transport
     // encoder update, but source packet and leading methodology must match.
     let recovered;
@@ -359,7 +365,7 @@ export class ApiEditorialProcessor {
         }
       } else if (result.status === 'failed' && ['api_editorial_invalid_json', 'api_editorial_incomplete'].includes(result.error)) validationError = result.error;
       else {
-        if(['automatic_rewrite_disabled','failed','unknown','preparation_failed'].includes(result.status))this.store.observe(`api-attention:${id}`,{job_id:id,at:this.now(),validation_revision:API_VALIDATION_REVISION,status:result.status});
+        if(['automatic_rewrite_disabled','failed','unknown','preparation_failed'].includes(result.status))this.store.observe(`api-attention:${id}`,{job_id:id,at:this.now(),validation_revision:API_VALIDATION_REVISION,status:result.status,error:result.error || null});
         return { job_id: id, status: result.status, provider_attempts: providerAttempts };
       }
       if (validationError) {
