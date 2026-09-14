@@ -11,8 +11,18 @@ import {aggregateMainPaths} from '../../scripts/news/impact-magnitude.mjs';
 import {assertsRealisedExAnteEffect} from '../../scripts/news/lib.mjs';
 import {semanticIssues} from '../../scripts/news/impact-publication.mjs';
 import {loadPersonalEditorials} from '../../scripts/news/personal-editorial.mjs';
+import {impactSourceRole} from '../../scripts/news/build.mjs';
 import {validateEditorialRevisionPreview,editorialRevisionBaseHash,reviseEditorial} from '../../scripts/news/editorial-approved-revisions.mjs';
 const sources=[{source_id:'official',primary_source:true}];
+test('legacy research functions keep their role instead of being labelled journalistic reports',()=>{
+ for(const role of ['event','mechanism','reference','counter_evidence']){
+  const label=impactSourceRole({source_function:role});
+  assert.doesNotMatch(label,/Journalistisch/);
+  assert.equal(label,impactSourceRole({source_role:role}));
+ }
+ assert.equal(impactSourceRole({source_function:'secondary_reporting'}),'Journalistischer Sekundärbericht');
+ assert.equal(impactSourceRole({source_function:'official_data'}),'Amtliche Daten');
+});
 const open=()=>({path_status:'insufficient_basis',direction:'open',magnitude:null,evidence:'not_assessable',data_status:'missing',likelihood:'unknown',dominance:'none',temporal_status:'ex_ante',primary_paths:[],secondary_paths:[],rationale:'Der zweite Quellenabgleich liefert keinen hinreichend bestimmten Pfad.',research_pass:'second_pass',research_result:'Es fehlen konkrete Maßnahmen, Empfänger und belastbare Vergleichsdaten.',reviewed_source_ids:['official'],balance:null});
 test('only democracy may be assessed, other dimensions stay explicitly open and valid',()=>{
  const a=profile();a.dimensions.human=open();a.dimensions.planet=open();a.system_check.central_dimensions=['democracy'];

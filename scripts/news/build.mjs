@@ -179,8 +179,8 @@ function renderImpactTime(story) { if (!publicImpactAssessment(story)) return ""
 
 function dimensions(story) { return renderDimensionMeters(story); }
 
-function impactSourceRole(source) {
-  return ({ primary_fact:'Primärbeleg zum Sachverhalt', official_data:'Amtliche Daten', legal_source:'Rechts-/Parlamentsquelle', original_statement:'Originalaussage / Programm', scientific_evidence:'Wissenschaftliche Evidenz', secondary_reporting:'Journalistischer Sekundärbericht', context:'Kontext', analysis:'Analyse', woek_reference:'WÖk-Referenz', official_status: 'Amtliche Einstufung', legal_framework: 'Rechtlicher Prüfrahmen', party_program: 'Programmaussage', scientific_mechanism: 'Wissenschaftlicher Mechanismusbeleg', scientific_outcome: 'Wissenschaftlicher Folgenbeleg', journalistic_analysis: 'Journalistische Analyse', assessment_context: 'Fachlicher Bewertungskontext' })[source.source_function || source.source_role]
+export function impactSourceRole(source) {
+  return ({ event:'Ereignisbeleg', mechanism:'Wirkmechanismus / Kontextbeleg', reference:'Referenzrahmen', counter_evidence:'Gegenevidenz', primary_fact:'Primärbeleg zum Sachverhalt', official_data:'Amtliche Daten', legal_source:'Rechts-/Parlamentsquelle', original_statement:'Originalaussage / Programm', scientific_evidence:'Wissenschaftliche Evidenz', secondary_reporting:'Journalistischer Sekundärbericht', context:'Kontext', analysis:'Analyse', woek_reference:'WÖk-Referenz', official_status: 'Amtliche Einstufung', legal_framework: 'Rechtlicher Prüfrahmen', party_program: 'Programmaussage', scientific_mechanism: 'Wissenschaftlicher Mechanismusbeleg', scientific_outcome: 'Wissenschaftlicher Folgenbeleg', journalistic_analysis: 'Journalistische Analyse', assessment_context: 'Fachlicher Bewertungskontext' })[source.source_function || source.source_role]
     || (source.primary_source ? 'Primärbeleg / Selbstauskunft' : 'Journalistischer Bericht / Kontext');
 }
 
