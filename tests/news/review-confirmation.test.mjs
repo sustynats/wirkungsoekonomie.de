@@ -10,7 +10,7 @@ function fixture() {
   const assessment = syntheticPotentialAssessment();
   const p = assessment.dimensions.human.primary_paths[0];
   p.evidence = 'low'; p.epistemic_basis = 'model_hypothesis'; p.research_pass = 'initial';
-  const packet = {job_type:'impact_semantic_review', job_id:'wt_20260913T120000Z_'+'a'.repeat(24),
+  const packet = {job_type:'impact_semantic_review',parent_job_id:'wt_20260913T120000Z_'+'e'.repeat(24), job_id:'wt_20260913T120000Z_'+'a'.repeat(24),
     input_hash:'b'.repeat(64), created_at:'2026-09-13T12:00:00Z',
     proposed_assessment:assessment, record:{analysis:{impact_assessment:structuredClone(assessment)},sources:[{source_id:'official',excerpt:'Original source bytes.'}]}};
   const output = {schema_version:'1.0',job_id:packet.job_id,input_hash:packet.input_hash,processed_at:'2026-09-13T12:05:00Z',

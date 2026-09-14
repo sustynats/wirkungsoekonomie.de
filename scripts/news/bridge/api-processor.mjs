@@ -58,6 +58,7 @@ export function apiJobKind(packet) {
 }
 export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
   const original = packet.original_input || packet, kind = apiJobKind(packet);
+  if (kind === 'review' && (!JOB_ID.test(original.parent_job_id || '') || original.parent_job_id === original.job_id)) throw Error('API_EDITORIAL_REVIEW_INPUT_INVALID');
   const contract = kind === 'news' ? { output_schema: outputSchema }
     : kind === 'review' ? { output_schema: semanticOutputSchema, requested_output: original.requested_output }
       : EDITORIAL_REQUEST_CONTRACT_V4;
@@ -86,6 +87,7 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
     binding_rule: 'job_id, input_hash, schema_version und processed_at setzt der Server. Keine anderen Bindungen oder Quellen-IDs verändern. Eine native News-Analyse steht einmal unter wirkungsticker.analysis, nicht in einem analyses-Array. Keine technischen Zusatzfelder im Output.',
   });
   const request = { protocol: API_EDITORIAL_PROTOCOL, job_id: original.job_id, input_hash: original.input_hash,
+    ...(kind === 'review' ? {parent_job_id:original.parent_job_id} : {}),
     packet_hash: hash(packet), kind, attempt: packet.correction_attempt || 0, profile_hash: knowledge.hash,
     instructions: kind === 'review' ? knowledge.instructions.replace(
       'Du hast in diesem Aufruf keine Browser-, Such-, Bild- oder Dateitools. Verwende als Tatsachenbelege nur tatsächlich mitgelieferte Textauszüge.',
@@ -246,6 +248,7 @@ export async function apiProcessorPreflight(transport, api, now) {
   const capability = await api.health();
   if (capability.protocol !== API_EDITORIAL_PROTOCOL || capability.enabled !== true || capability.budget_guards !== true) throw Error('API_EDITORIAL_ENDPOINT_UNAVAILABLE');
   if (capability.execution_policy?.max_paid_attempts_per_job !== 1 || capability.execution_policy?.automatic_rewrites !== false
+    || capability.execution_policy?.max_paid_reviews_per_parent !== 1
     || capability.execution_policy?.input_readiness_version !== NEWS_INPUT_READINESS_VERSION) throw Error('API_EDITORIAL_EXECUTION_POLICY_UNAVAILABLE');
   const runId = randomUUID();
   const receipt = { actor: 'oracle_api', run_id: runId, at: now, status: 'UNAVAILABLE', reads: {}, write_ok: false };
@@ -304,7 +307,7 @@ export class ApiEditorialProcessor {
       recovered = await this.api.get(ownership.key);
       const sameBinding = recovered?.packet_hash === request.packet_hash
         && [request.profile_hash, ...(this.knowledge.compatibleHashes || [])].includes(recovered.profile_hash);
-      if (sameBinding && recovered.pre_execution_rejected) recovered = null;
+      if (sameBinding && (recovered.pre_execution_rejected || recovered.status === 'budget_blocked' && recovered.provider_called === false)) recovered = null;
       else if (recovered?.status !== 'completed' || !sameBinding) return { status: 'legacy_claim_attention', job_id: id };
     }
     // Corrections can recover existing paid output, but never create a new
