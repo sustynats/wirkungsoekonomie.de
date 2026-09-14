@@ -168,7 +168,7 @@ test('five-minute polling records first detection and pending never consumes ret
   await provider.reconcile({},[candidate()],later);await provider.finalize([],'2026-09-10T07:32:00.000Z');
   assert.equal(store.get(job.input.job_id).import_pickup_latency,120);
 });
-test('real discovery runner queues new events without canonical writes, image work or AI',async t=>{
+for (const sourceAvailable of [true,false]) test(`real discovery runner ${sourceAvailable?'queues prepared events':'holds missing evidence'} without canonical writes, image work or AI`,async t=>{
   const {provider}=setup(t), keys=['WIRKUNGSTICKER_PROCESSING_MODE','VISUAL_GENERATION_PROVIDER','WOEK_NEWS_BRIDGE_PHASE'];
   const previous=Object.fromEntries(keys.map(k=>[k,process.env[k]]));
   Object.assign(process.env,{WIRKUNGSTICKER_PROCESSING_MODE:'dropbox_chatgpt_bridge',VISUAL_GENERATION_PROVIDER:'chatgpt_bridge',WOEK_NEWS_BRIDGE_PHASE:'discovery'});
@@ -181,9 +181,11 @@ test('real discovery runner queues new events without canonical writes, image wo
       state:{source_status:{},seen_items:{},pending_story_ids:[],relevance_filter_version:'4.0'},storyStore:{stories:[]},usage:{runs:[]},
       newsroom:{source_items:{},events:{},event_sources:[],discovery_candidates:[]},budgetFx:{rate_date:'2026-09-10',rate_usd_per_eur:1.16},
       fetchFeedImpl:async()=>{assert.ok(await provider.store.observation('impact-reassessment'),'existing-source reassessments must be handed off before feed I/O');return {body:rss,final_url:source.feed_url};},
-      fetchArticleImpl:async item=>{if(articleReads++)assert.ok(provider.store.all().some(j=>j.input.job_type==='new_story'&&j.status==='queued'),'first complete job reaches Inbox before the next source is fetched');return {excerpt:item.summary};},
+      fetchArticleImpl:async item=>{articleReads++;if(!sourceAvailable)throw Error('ARTICLE_HTTP_503');if(articleReads>1)assert.ok(provider.store.all().some(j=>j.input.job_type==='new_story'&&j.status==='queued'),'first complete job reaches Inbox before the next source is fetched');return {excerpt:item.summary+' Die Änderungen sollen im kommenden Jahr schrittweise umgesetzt werden. Die zuständige Verwaltung berichtet über den Beginn der Arbeiten und die vorgesehenen Übergangsfristen.'};},
       callAiImpl:async()=>{calls++;throw Error('NO_AI');},prepareTitleImage:async()=>{calls++;throw Error('NO_IMAGES');}});
-    assert.equal(calls,0);assert.equal(report.ai_calls,0);assert.equal(report.source_successes,1);assert.ok(report.bridge_enqueued.length);
+    assert.equal(calls,0);assert.equal(report.ai_calls,0);assert.equal(report.source_successes,1);
+    if(sourceAvailable)assert.ok(report.bridge_enqueued.length);
+    else{assert.equal(report.bridge_enqueued.length,0);assert.equal(report.news_preparation_holds.length,2);assert.ok(report.news_preparation_holds.every(h=>h.status==='NEEDS_PREPARATION'));}
     assert.equal(articleReads,2);assert.equal(provider.store.observation('discovery-progress').stage,'completed');
     assert.deepEqual(files.map(f=>digest(fs.readFileSync(f))),before);
   } finally {for(const k of keys)if(previous[k]===undefined)delete process.env[k];else process.env[k]=previous[k];}

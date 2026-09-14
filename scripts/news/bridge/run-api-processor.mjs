@@ -44,7 +44,7 @@ try {
   const admitted = candidates.filter(j => {
     if(configured.news_only && !['new_story','story_update','impact_semantic_review'].includes(j.input.job_type))return false;
     const blocked=store.observation(`api-attention:${j.input.job_id}`);
-    if(blocked?.validation_revision===API_VALIDATION_REVISION){attention.push({job_id:j.input.job_id,status:blocked.status});return false;}
+    if(blocked?.validation_revision===API_VALIDATION_REVISION){attention.push({job_id:j.input.job_id,status:blocked.status,error:blocked.error||null});return false;}
     return true;
   });
   const jobs = selectApiJobs(admitted, now(), {
@@ -92,7 +92,7 @@ try {
       if (attempted >= configured.max_jobs_per_run || Date.now() - started > 600000) break;
       try {
         const result = await processor.process(store.get(selected.input.job_id), receipt); results.push(result);
-        if (result.provider_attempts > 0 || !['already_processed','already_delivered','claimed_elsewhere','excluded','repair_exhausted','automatic_rewrite_disabled','legacy_claim_attention','unknown'].includes(result.status)) attempted++;
+        if (result.provider_attempts > 0 || !['already_processed','already_delivered','claimed_elsewhere','excluded','repair_exhausted','automatic_rewrite_disabled','legacy_claim_attention','unknown','preparation_failed'].includes(result.status)) attempted++;
         if (['budget_blocked', 'busy'].includes(result.status)) break;
       } catch (error) {
         attempted++;
