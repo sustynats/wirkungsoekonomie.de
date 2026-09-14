@@ -24,10 +24,15 @@ export function validateEditorialRevisionPreview(preview){
  const {base,target,patch}=r;
  if(preview.format==='news'||!base||!target||!patch||base.status!=='published'
   ||base.analysis_id!==target.analysis_id||base.slug!==target.slug
-  ||!/^woek-(?:analysis|manual)-[a-f0-9]+$/.test(target.analysis_id||'')
+  ||!/^woek-(?:analysis|manual|personal)-[a-f0-9]+$/.test(target.analysis_id||'')
   ||!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(target.slug||'')
   ||target.base_hash!==editorialRevisionBaseHash(base)||preview.title!==base.title)fail();
- if(base.format==='book_and_impact'){
+ if(base.format==='approved_editorial'){
+  if(preview.format!==base.subtype||!['body_markdown','correction_note'].every(k=>typeof patch[k]==='string'&&patch[k].trim())
+   ||Object.keys(patch).some(k=>!['body_markdown','correction_note'].includes(k))
+   ||patch.body_markdown!==preview.markdown||patch.correction_note.length>1500)fail();
+  assertFinalPersonalSection(patch.body_markdown);
+ }else if(base.format==='book_and_impact'){
   if(preview.format!=='book_review'||Object.keys(patch).join(',')!=='body_markdown'
    ||patch.body_markdown!==preview.markdown||typeof patch.body_markdown!=='string')fail();
   assertFinalPersonalSection(patch.body_markdown,{footnotes:base.self_authored_work});

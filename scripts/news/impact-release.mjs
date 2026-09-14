@@ -26,7 +26,7 @@ export function publicImpactAssessment(record = {}) {
 export function assertPublicImpactHtml(html) {
   if (html.includes('data-private-impact-preview')) throw Error('IMPACT_PRIVATE_PREVIEW_IN_PUBLIC_ARTIFACT');
   if (/Neu geprüfte Wirkungsprofile sind bereits sichtbar|Wir überarbeiten die Wirkungsprofile|Dimensionsfilter erfassen derzeit|Altbestand wird weiterhin überarbeitet/u.test(html)) throw Error('IMPACT_PUBLIC_INTERNAL_STATUS');
-  if (html.includes('Keine Größenschätzung vorhanden') || /class="wt-dim[^>]*>[\s\S]*kein(?: belastbarer| wesentlicher)? Wirkpfad/iu.test(html)) throw Error('IMPACT_PUBLIC_DEBUG_FALLBACK');
+  if (html.includes('Keine Größenschätzung vorhanden')) throw Error('IMPACT_PUBLIC_DEBUG_FALLBACK');
   if (!PUBLIC_IMPACT_PROFILE_VERSION && !REVIEWED_IMPACT_PROFILE_VERSION && /class="wt-dim wt-dim--|data-potential-model=/.test(html)) throw Error('IMPACT_PUBLIC_PROFILE_NOT_RELEASED');
   if (!PUBLIC_IMPACT_PROFILE_VERSION && /data-potential-model=/.test(html)
     && !html.includes('data-reviewed-impact-profile="2.1"')) throw Error('IMPACT_PUBLIC_PROFILE_NOT_RELEASED');

@@ -30,7 +30,7 @@ test('null, missing paths and old not_material/insufficient_basis cannot pass as
  for(const key of ['human','planet','democracy']){
   const a=profile();a.dimensions[key].magnitude=null;assert.ok(check(a).includes('IMPACT_POTENTIAL_MAGNITUDE_REQUIRED:'+key));
   a.dimensions[key].magnitude=3;a.dimensions[key].primary_paths=[];assert.ok(check(a).includes('IMPACT_POTENTIAL_PATH_REQUIRED:'+key));
-  for(const status of ['not_material','insufficient_basis']){a.dimensions[key].path_status=status;assert.ok(check(a).includes('IMPACT_POTENTIAL_PATH_REQUIRED:'+key));}
+  for(const status of ['not_material','insufficient_basis']){a.dimensions[key].path_status=status;assert.ok(check(a).includes((status==='insufficient_basis'?'IMPACT_OPEN_ASSESSMENT_INVALID:':'IMPACT_POTENTIAL_PATH_REQUIRED:')+key));}
  }
 });
 test('large potential retains size with uncertain direction and likelihood',()=>{
@@ -79,7 +79,7 @@ test('legacy migration preserves original data and never fabricates completed po
 test('communication and dossier targets are supported without political identity rules',()=>{
  const a=profile();a.evaluation_target={label:'Verbreitung eines wiederholten öffentlichen Narrativs',type:'communication'};assert.deepEqual(check(a),[]);
  a.evaluation_target={label:'Der fortbestehende Gegenstand einer übergeordneten Lageakte',type:'dossier'};assert.deepEqual(check(a),[]);
- assert.match(IMPACT_RULE,/ALLE DREI/);assert.match(IMPACT_RULE,/original\/current_potential_assessment/);
+ assert.match(IMPACT_RULE,/Alle drei MPD-Dimensionen/);assert.match(IMPACT_RULE,/original\/current_potential_assessment/);
 });
 test('the six factors, not the direction or prior relevance, determine magnitude',()=>{
  const a=profile(),p=a.dimensions.human.primary_paths[0];p.magnitude_factors=syntheticFactors(1,['official']);

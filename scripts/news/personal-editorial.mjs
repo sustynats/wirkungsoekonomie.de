@@ -30,7 +30,7 @@ export function validatePersonalEdition(value){
 export function loadPersonalEditorials(root){
  const file=path.join(root,PERSONAL_FILE);if(!fs.existsSync(file))return [];
  const data=JSON.parse(fs.readFileSync(file));if(data.schema_version!=='1.0'||!Array.isArray(data.editions))throw Error('PERSONAL_CATALOG_INVALID');
- return data.editions.map(value=>{validatePersonalEdition(value);if(!fs.existsSync(path.join(root,personalPortrait(value.subtype))))throw Error('PORTRAIT_ASSET_MISSING');return {...value,status:'published',updated_at:value.published_at,
+ return data.editions.map(value=>{validatePersonalEdition(value);if(!fs.existsSync(path.join(root,personalPortrait(value.subtype))))throw Error('PORTRAIT_ASSET_MISSING');return {...value,status:'published',updated_at:value.updated_at||value.published_at,
   teaser:value.subtitle,sections:[],source_snapshot:value.sources,tags:[personalLabel(value.subtype),'Meinung & Analyse'],
   transparency_note:'Persönliche Meinung und wirkungsökonomische Analyse',reading_time_minutes:Math.max(1,Math.ceil(value.body_markdown.split(/\s+/).length/210))};});
 }
@@ -38,5 +38,5 @@ export function personalArticleBody(a){
  const m=a.source_media;
  const source=m?`<aside class="news-editorial-origin">${renderShowIdentity(m)}<strong>Besprochen: ${escape(m.show)}</strong><p>${escape(m.episode_title)}</p><p>${escape([m.original_release_date,...(m.hosts||[]),...(m.guests||[])].filter(Boolean).join(' · '))}</p><a class="text-link" href="${escape(safeUrl(m.original_url))}" target="_blank" rel="noopener noreferrer">Original ${a.subtype==='watched'?'ansehen':'anhören'}</a></aside>`:'';
  const body=renderEditorialMarkdown(a.body_markdown).sections.map(section=>renderEditorialSection(section,{portrait:personalPortrait(a.subtype),portraitAlt:['listened','watched'].includes(a.subtype)?'Natalie Weber mit Kopfhörern und Smartphone am Tisch':'Natalie Weber'})).join('\n');
- return `${source}${a.visual?`<figure><img style="max-width:100%;height:auto" src="${escape(a.visual.url)}" alt="${escape(a.visual.alt)}"><figcaption>${escape(a.visual.credit)}</figcaption></figure>`:''}${body}<section class="news-story-section"><h2>Quellen und Originale</h2><ul>${a.sources.map(s=>`<li><a class="text-link" href="${escape(s.url)}" target="_blank" rel="noopener noreferrer">${escape(s.publisher)}: ${escape(s.title)}</a></li>`).join('')}</ul></section>`;
+ return `${a.approved_editorial_revision ? `<aside class="notice news-correction" role="note"><strong>Korrektur vom ${escape(a.approved_editorial_revision.at.slice(0,10))}</strong><p>${escape(a.correction_note || "Begrifflich präzisiert und erneut freigegeben.")}</p></aside>` : ""}${source}${a.visual?`<figure><img style="max-width:100%;height:auto" src="${escape(a.visual.url)}" alt="${escape(a.visual.alt)}"><figcaption>${escape(a.visual.credit)}</figcaption></figure>`:''}${body}<section class="news-story-section"><h2>Quellen und Originale</h2><ul>${a.sources.map(s=>`<li><a class="text-link" href="${escape(s.url)}" target="_blank" rel="noopener noreferrer">${escape(s.publisher)}: ${escape(s.title)}</a></li>`).join('')}</ul></section>`;
 }

@@ -1,3 +1,4 @@
+import { isGroundedOpenDimension } from './impact-potential.mjs';
 import { IMPACT_VERSION, IMPACT_KEYS, impactAssessmentErrors } from './impact-assessment.mjs';
 import { derivePublicationStatus } from './impact-publication.mjs';
 import { hash } from './bridge/contract.mjs';
@@ -22,8 +23,8 @@ export function impactCoverage(records, { publicHtml = [], minimumMaterialCounts
     }
     for (const key of IMPACT_KEYS) {
       const d=a?.dimensions?.[key], counts=report.by_dimension[key];
-      if (!d?.primary_paths?.length) report.dimensions_without_path++;
-      if (!Number.isInteger(d?.magnitude)||d.magnitude<0||d.magnitude>5)report.potential_without_magnitude++;
+      if (!isGroundedOpenDimension(d) && !d?.primary_paths?.length) report.dimensions_without_path++;
+      if (!isGroundedOpenDimension(d) && (!Number.isInteger(d?.magnitude)||d.magnitude<0||d.magnitude>5))report.potential_without_magnitude++;
       if (!d) continue;
       if(d.path_status==='modelled')counts.modelled++;
       if(d.path_status==='modelled'&&d.magnitude>0){report.material++;counts.material++;}
@@ -35,7 +36,7 @@ export function impactCoverage(records, { publicHtml = [], minimumMaterialCounts
       if (d.direction==='open') {report.open_directions++; if(valid)report.grounded_open_directions++;else report.technical_open_directions++;}
     }
   }
-  report.public_debug_fallbacks = publicHtml.filter(html=>/Keine Größenschätzung vorhanden|kein(?: belastbarer| wesentlicher)? Wirkpfad/iu.test(html)).length;
+  report.public_debug_fallbacks = publicHtml.filter(html=>/Keine Größenschätzung vorhanden/iu.test(html)).length;
   report.filter_count_regressions = IMPACT_KEYS.filter(key=>Number(minimumMaterialCounts[key])>0 && report.by_dimension[key].material<minimumMaterialCounts[key]);
   report.pass = report.active_stories>0 && report.invalid_assessment===0 && report.material_without_magnitude===0
     && report.potential_without_magnitude===0 && report.dimensions_without_path===0 && report.public_debug_fallbacks===0 && report.needs_reassessment===0 && report.filter_count_regressions.length===0;
