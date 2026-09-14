@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-14T16:18:31.179Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-14T18:41:24.887Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -148,6 +148,36 @@
         "human": {
           "magnitude": null,
           "direction": "open",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": null,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": null,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/pharma-sanofi-tut-sich-mit-dem-deutschen-pharmastar-cheplapharma-zusammen-20b497/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/pharma-sanofi-tut-sich-mit-dem-deutschen-pharmastar-cheplapharma-zusammen-20b497/",
+      "title": "Sanofi erwirbt laut WirtschaftsWoche gut ein Viertel an Cheplapharm",
+      "summary": "Sanofi steigt laut WirtschaftsWoche mit gut einem Viertel bei Cheplapharm ein. Welche Medikamente, Fabriken und Risiken genau betroffen sind, bleibt im vorliegenden Auszug offen.",
+      "date_published": "2026-09-14T13:27:51.000Z",
+      "date_modified": "2026-09-14T13:27:51.000Z",
+      "tags": [
+        "Wirtschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 3,
+          "direction": "mixed",
           "status": "potential"
         },
         "planet": {
