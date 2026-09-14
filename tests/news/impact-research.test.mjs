@@ -12,7 +12,7 @@ const source={source_id:'research-mechanism-test',url:'https://research.example.
 function fixture(){const data=new Map();return {store:{observation:async k=>data.get(k),observe:async(k,v)=>data.set(k,v)},data};}
 test('context research verifies a bounded source excerpt and reuses its cached proof',async()=>{
   const bridge=fixture();let calls=0;
-  const fetchDocument=async(item,registry,policy)=>{calls++;assert.equal(policy.respect_robots,true);assert.equal(policy.allow_public_pdf,true);assert.equal(registry.access.requires_payment,false);return {body:`<article><p>${quote}</p></article>`,final_url:item.url};};
+  const fetchDocument=async(item,registry,policy)=>{calls++;assert.equal(policy.respect_robots,true);assert.equal(policy.allow_public_pdf,true);assert.equal(policy.max_public_pdf_bytes,4000000);assert.equal(registry.access.requires_payment,false);return {body:`<article><p>${quote}</p></article>`,final_url:item.url};};
   const first=await verifyImpactResearch(bridge,[source],[],now,{fetchDocument});
   assert.equal(first[0].research_verification.status,'source_text_verified');assert.equal(first[0].source_function,'mechanism');
   assert.ok(first[0].article_excerpt.length<1200);
