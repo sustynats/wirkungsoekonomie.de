@@ -13,7 +13,7 @@ import time
 import urllib.error
 import urllib.request
 
-VERSION = "2026-09-14-impact-profile"
+VERSION = "2026-09-14-every-mpd-dimension"
 SERVICES = {"bridge": ("woek-news-bridge.service", 8786, "/api/news-bridge", 401),
             "editorial": ("woek-news-editorial.service", 8788, "/internal/status", 200)}
 DIRECTORY = Path("/var/lib/woek-news-bridge")
@@ -163,17 +163,28 @@ def observe_public_feed(items, previous, now):
 
 def observe_impact_profiles(news):
     recent = sorted(news, key=lambda item: timestamp(item.get('date_published')), reverse=True)[:50]
-    if not recent or not any('_woek_impact_profile' in item for item in recent):
-        return {'available': False}
-    missing, all_open = [], []
+    if not recent:
+        return {'available': False, 'recent_checked': 0}
+    missing, all_unestimated, incomplete = [], [], []
+    dimensions = ('human', 'planet', 'democracy')
     for item in recent:
         profile = item.get('_woek_impact_profile')
-        if not isinstance(profile, dict) or not all(isinstance(profile.get(k), dict) for k in ('human', 'planet', 'democracy')):
+        if not isinstance(profile, dict) or not all(isinstance(profile.get(k), dict) for k in dimensions):
             missing.append(item['url'])
-        elif all(profile[k].get('magnitude') is None for k in ('human', 'planet', 'democracy')):
-            all_open.append(item['url'])
+            continue
+        invalid = [key for key in dimensions
+                   if type(profile[key].get('magnitude')) is not int
+                   or not 0 <= profile[key]['magnitude'] <= 5]
+        if invalid:
+            incomplete.append({'url': item['url'], 'dimensions': invalid})
+        if all(profile[key].get('magnitude') is None for key in dimensions):
+            all_unestimated.append(item['url'])
     return {'available': True, 'recent_checked': len(recent), 'missing_profiles': missing,
-            'all_open_profiles': all_open}
+            'fully_numeric_profiles': len(recent) - len(missing) - len(incomplete),
+            'incomplete_profiles': incomplete, 'all_unestimated_profiles': all_unestimated,
+            # Compatibility for existing private consumers; open direction with
+            # a valid numerical magnitude never belongs to this legacy key.
+            'all_open_profiles': all_unestimated}
 
 
 def fetch_public_feed(now, previous=None):
@@ -194,7 +205,7 @@ def publication_alerts(metrics, public, now):
     if quality.get('available'):
         if quality.get('missing_profiles'):
             alerts.append('PUBLIC_MPD_PROFILE_MISSING')
-        if len(quality.get('all_open_profiles', [])) >= 2:
+        if quality.get('incomplete_profiles') or quality.get('all_open_profiles'):
             alerts.append('POTENTIAL_ASSESSMENT_REVIEW_REQUIRED')
     if not public.get("ok") or now - public.get("checked_at", 0) > 600:
         alerts.append("PUBLIC_FEED_UNVERIFIED")

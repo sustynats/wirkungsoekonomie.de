@@ -187,12 +187,35 @@ class RecoveryTests(unittest.TestCase):
         self.assertIn('POTENTIAL_ASSESSMENT_REVIEW_REQUIRED', alerts)
         self.assertIn('PUBLIC_MPD_PROFILE_MISSING', alerts)
 
-    def test_individual_open_dimension_and_zero_are_not_a_profile_failure(self):
+    def test_a_single_unestimated_dimension_requires_attention(self):
         profile = {'human': {'magnitude': 3}, 'planet': {'magnitude': None}, 'democracy': {'magnitude': 0}}
         result = supervisor.observe_impact_profiles([{'url': 'example', '_woek_impact_profile': profile}])
         self.assertEqual(result['all_open_profiles'], [])
         self.assertEqual(result['missing_profiles'], [])
-        self.assertFalse(supervisor.observe_impact_profiles([{'url': 'legacy'}])['available'])
+        self.assertEqual(result['fully_numeric_profiles'], 0)
+        self.assertEqual(result['incomplete_profiles'], [{'url': 'example', 'dimensions': ['planet']}])
+        self.assertIn('POTENTIAL_ASSESSMENT_REVIEW_REQUIRED', supervisor.publication_alerts(
+            {}, {'ok': True, 'checked_at': 10000, 'impact_quality': result}, 10000))
+
+    def test_open_direction_and_zero_magnitude_remain_valid(self):
+        profile = {key: {'magnitude': value, 'direction': 'open'}
+                   for key, value in [('human', 3), ('planet', 0), ('democracy', 5)]}
+        result = supervisor.observe_impact_profiles([{'url': 'example', '_woek_impact_profile': profile}])
+        self.assertEqual(result['fully_numeric_profiles'], 1)
+        self.assertEqual(result['incomplete_profiles'], [])
+        self.assertEqual(result['all_unestimated_profiles'], [])
+        self.assertNotIn('POTENTIAL_ASSESSMENT_REVIEW_REQUIRED', supervisor.publication_alerts(
+            {}, {'ok': True, 'checked_at': 10000, 'impact_quality': result}, 10000))
+
+    def test_invalid_values_or_an_entirely_missing_feed_extension_are_detected(self):
+        for value in [None, False, '3', -1, 6, 2.5]:
+            profile = {key: {'magnitude': value} for key in ('human', 'planet', 'democracy')}
+            result = supervisor.observe_impact_profiles([{'url': 'example', '_woek_impact_profile': profile}])
+            self.assertEqual(len(result['incomplete_profiles'][0]['dimensions']), 3)
+        result = supervisor.observe_impact_profiles([{'url': 'legacy'}])
+        self.assertTrue(result['available'])
+        self.assertEqual(result['missing_profiles'], ['legacy'])
+        self.assertFalse(supervisor.observe_impact_profiles([])['available'])
 
 
 if __name__ == '__main__':
