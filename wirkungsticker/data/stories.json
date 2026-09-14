@@ -2,8 +2,2799 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-14T09:43:11.294Z",
+  "updated_at": "2026-09-14T10:10:36.350Z",
   "stories": [
+    {
+      "story_id": "wt-0e6b495d66e1da2a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-0e6b495d66e1da2a-3f767c04d062347f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-0e6b495d66e1da2a-3c88be5011235aaf-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-0e6b495d66e1da2a-8b0fe448707cb8e8-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "10-jahre-mint-strategie-mehr-madchen-aber-noch-zu-wenige-vorbilder-e1da2a",
+      "title": "10 Jahre MINT-Strategie: Mehr Mädchen, aber noch zu wenige Vorbilder",
+      "source_summary": "Der SWR berichtet zum zehnjährigen Bestehen der rheinland-pfälzischen MINT-Strategie. Die Landesregierung startete sie 2016, um Netzwerke in Kitas, Schulen und Hochschulen aufzubauen und mehr Kinder und Jugendliche, besonders Mädchen, für Mathematik, Informatik, Naturwissenschaften und Technik zu interessieren.\n\nLaut dem Bericht wurden elf MINT-Regionen, 23 regionale Projekte und ein landesweites Partnernetz geschaffen. Über 400 Partner hätten mehr als 30.000 Jugendliche erreicht; von 2016 bis Ende 2025 seien rund 4,4 Millionen Euro investiert worden. Der Mädchenanteil in MINT-Fächern steige zwar, doch Mädchen entschieden sich weiterhin seltener für MINT-Ausbildungen und -Studiengänge. Ungeklärt bleibt anhand des vorliegenden Auszugs, wie stark die Strategie diese Entwicklung verursacht hat.",
+      "summary": "Rheinland-Pfalz zieht nach zehn Jahren MINT-Strategie eine vorläufige Bilanz. Der Bericht nennt mehr Netzwerke und erreichte Jugendliche, zeigt aber zugleich anhaltende Unterschiede bei MINT-Entscheidungen und weiblichen Vorbildern.",
+      "detail_summary": "Rheinland-Pfalz bündelt seit 2016 MINT-Angebote in Schulen, Kitas und Hochschulen. Laut Bildungsministerium entstanden elf MINT-Regionen, 23 Projekte und ein Netzwerk mit über 400 Partnern. Mehr als 30.000 Jugendliche wurden erreicht. Der Mädchenanteil in MINT-Fächern steigt dem Bericht zufolge, dennoch wählen Mädchen MINT-Ausbildungen und -Studiengänge weiterhin seltener. Die Strategie kann Zugänge und Orientierung verbessern, aber der vorliegende Bericht belegt keine eindeutige Kausalität.",
+      "why_relevant": "Die Meldung liefert eine neue, zeitlich gebundene Bilanz eines zehnjährigen Landesprogramms. Sie verbindet erreichte Strukturen und Teilnehmende mit einer weiterhin offenen Gleichstellungsfrage, ohne bereits einen Bildungseffekt nachzuweisen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Der SWR veröffentlicht am 14. September 2026 eine vorläufige Bilanz zum zehnjährigen Bestehen der rheinland-pfälzischen MINT-Strategie.",
+        "evaluation_target": {
+          "label": "MINT-Strategie Rheinland-Pfalz",
+          "type": "dossier"
+        },
+        "baseline": "Bildungs- und Unterstützungsangebote vor beziehungsweise ohne die seit 2016 aufgebauten MINT-Netzwerke und Projekte.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne die Strategie wären die konkret berichteten Netzwerke, Projekte und gebündelten Unterstützungsangebote in dieser Form nicht vorauszusetzen. Ob andere Angebote vergleichbare Funktionen übernommen hätten, bleibt offen.",
+        "reference_frame": [
+          "Bildungsteilhabe und chancengerechte Zugänge",
+          "Geschlechtergleichstellung in Bildung und Beruf",
+          "Agenda 2030/SDG 4 und SDG 5, soweit anwendbar"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der unmittelbar modellierte Pfad betrifft Bildungszugänge, Orientierung und mögliche Übergänge in MINT-Ausbildung oder -Studium. Der SWR belegt Angebote, Reichweite und fortbestehende Unterschiede, aber keinen kausalen Bildungseffekt. Regionale, soziale und geschlechtsspezifische Verteilung sowie Lehrkräfteengpässe begrenzen die Aussagekraft.",
+            "planet": "Ein möglicher Planet-Pfad führt nur indirekt über spätere Bildungs- und Berufsentscheidungen zu technischen Anwendungen. Der Artikel nennt weder Umweltziele noch konkrete Anwendungen oder Umweltwirkungen. Richtung und Eintritt bleiben deshalb offen und niedrig plausibel.",
+            "democracy": "Ein möglicher Demokratie-Pfad führt nur indirekt über Bildungs- und Teilhabechancen. Der Artikel belegt keine politische Beteiligung, institutionelle Veränderung oder demokratische Wirkung. Regionale und soziale Zugänglichkeit sind Bedingungen, keine nachgewiesenen Folgen."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Seit 2016 werden MINT-Angebote, regionale Netzwerke und Kooperationen von Schulen, Hochschulen, Kommunen und weiteren Partnern gebündelt.",
+          "second_order": "Bei ausreichender Qualität, Reichweite und Kontinuität können sich Interessen und Bildungsentscheidungen einzelner Gruppen verändern. Lehrkräftemangel und ungleiche regionale Erreichbarkeit können den Pfad begrenzen.",
+          "third_order": "Langfristige Effekte auf Fachkräftezugang, Innovation und gesellschaftliche Teilhabe sind möglich, aber aus dem Bericht weder zeitlich noch kausal nachgewiesen.",
+          "enablement": [
+            "Die berichteten Netzwerke und Partnerstrukturen können spätere Bildungsangebote koordinieren.",
+            "Die im Bericht genannte frühe Ansprache, Praxisorientierung und Sichtbarkeit weiblicher Vorbilder bilden plausible, aber nicht evaluierte Mechanismen."
+          ],
+          "counter_evidence": [
+            "Der Mädchenanteil steigt laut Bildungsministerium, dennoch entscheiden sich Mädchen weiterhin seltener für MINT-Ausbildung oder -Studium.",
+            "In Informatik und Physik fehlen laut Bildungsministerium Lehrkräfte.",
+            "Die Zahl erreichter Jugendlicher und die Zahl der Projekte belegen keine langfristigen Übergangseffekte.",
+            "Für Umwelt- und Demokratieeffekte nennt der Bericht keine konkreten Zustandsdaten."
+          ],
+          "source_independence": "Die vorliegende Belegbasis besteht aus einer journalistischen SWR-Darstellung. Mehrere Angaben werden dem rheinland-pfälzischen Bildungsministerium zugeschrieben. Die ergänzende Webprüfung konnte wegen nicht abrufbarer beziehungsweise nicht lesbarer Treffer keine neue Primärquelle hinzufügen.",
+          "institutional_status": "Die MINT-Strategie wird als laufendes Landesprogramm beschrieben. Der Bericht belegt keinen neuen Beschluss, keine Gesetzesänderung und keine abgeschlossene unabhängige Evaluation."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Bündelung von MINT-Angeboten kann Zugänge und Orientierung für Kinder und Jugendliche, insbesondere Mädchen, erweitern.",
+                "mechanism": "Frühe Ansprache, praktische Projekte und weibliche Vorbilder können Informationen, Selbstwirksamkeit und die wahrgenommene Passung von MINT-Fächern beeinflussen.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "Mädchen und junge Frauen",
+                  "Schulen und Hochschulen"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Die Angebote müssen dauerhaft, qualitätsgesichert und für unterschiedliche Regionen und soziale Gruppen erreichbar sein.",
+                "reference_space": "Rheinland-Pfalz; Kinder und Jugendliche in den beteiligten MINT-Angeboten",
+                "time_horizon": "mittelfristig bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die berichteten Angebote werden tatsächlich genutzt und erreichen auch bislang wenig MINT-affine oder schlechter angebundene Gruppen.",
+                "source_support": "Der SWR belegt Angebote, Netzwerke, Partner und erreichte Jugendliche sowie die im Bericht genannten Ansatzpunkte frühe Ansprache, Praxisprojekte und weibliche Vorbilder; er belegt keine kausale Bildungswirkung.",
+                "limitations": "Keine unabhängige Evaluation, keine Vergleichsgruppe und keine Verlaufsdaten zu Ausbildung oder Studium.",
+                "first_order": "Mehr sichtbare und gebündelte MINT-Angebote können Orientierungsmöglichkeiten erweitern.",
+                "second_order": "Bei anhaltender Nutzung könnten sich Bildungsentscheidungen einzelner Gruppen verändern; Lehrkräftemangel kann die Umsetzung begrenzen.",
+                "third_order": "Langfristige Veränderungen bei Fachkräftezugang und Teilhabe sind möglich, aber nicht nachgewiesen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die berichtete Reichweite und Dauer machen einen materiellen Bildungspfad plausibel. Der Übergang von Angebot zu Bildungsentscheidung ist jedoch nicht kausal belegt; die Bandbreite bleibt deshalb konservativ."
+                },
+                "negligibility_rationale": "Nicht vernachlässigbar, weil ein landesweites Programm mit vielen Partnern und berichteter Reichweite betroffen ist; die tatsächliche Zustandsveränderung bleibt unsicher.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die ergänzende Recherche wurde durchgeführt, lieferte aber keinen zusätzlich lesbaren unabhängigen Evaluations- oder Mechanismusbeleg. Der Pfad bleibt eine niedrig evidenzierte Modellhypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Der Bericht nennt mehr als 30.000 erreichte Jugendliche und landesweite Partnerstrukturen; die Gesamtbevölkerung wird nicht erfasst.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Angebote, Projekte und Vorbilder können Orientierung begrenzt verändern; ein starker individueller Effekt ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Strategie besteht seit 2016; ob Wirkungen über einzelne Angebote hinaus anhalten, ist offen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Orientierungen und Bildungsentscheidungen sind grundsätzlich veränderbar; einzelne Bildungswege können dennoch nachwirken.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Mädchen und Jugendliche mit geringerem Zugang zu MINT-Angeboten können besonders profitieren oder bei ungleicher Erreichbarkeit zurückbleiben.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht von Angeboten über Orientierung bis zu möglichen Bildungsentscheidungen; eine tiefere institutionelle Veränderung ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                  "reference_frame": "Bildungsteilhabe und Gleichberechtigung",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "direction": "negative",
+                "label": "Ungleiche regionale oder soziale Erreichbarkeit kann bestehende Bildungsunterschiede fortschreiben.",
+                "mechanism": "Wenn Ressourcen und Angebote vor allem gut angebundene Schulen und bereits interessierte Jugendliche erreichen, können Zugangsunterschiede bestehen bleiben.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "Schulen in unterschiedlich ausgestatteten Regionen",
+                  "sozial schlechter angebundene Gruppen"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Es fehlen ausreichende Ausgleichsmechanismen und eine gleichmäßige regionale oder soziale Erreichbarkeit.",
+                "reference_space": "Rheinland-Pfalz; beteiligte Schulen und Regionen",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Verteilung der Angebote und Teilnehmenden ist nicht gleichmäßig.",
+                "source_support": "Der Bericht nennt landesweite Netzwerke und Reichweite, aber keine sozialen Teilnahmequoten, Barrierefreiheitsdaten oder Wirkungsvergleiche zwischen Regionen.",
+                "limitations": "Keine Angaben zur sozialen Zusammensetzung, zur regionalen Nutzung oder zu konkreten Ausgleichsmaßnahmen.",
+                "first_order": "Unterschiedliche Zugänge zu Projekten und Partnern.",
+                "second_order": "Ungleiche Bildungsorientierung und Übergangschancen könnten fortbestehen.",
+                "third_order": "Eine Verstärkung regionaler Bildungsunterschiede ist möglich, aber nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne Verteilungsdaten ist nur ein begrenzter Risikopfad plausibel; eine schwere oder strukturelle Benachteiligung ist nicht belegt."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht als fehlend einzustufen, weil regionale und soziale Erreichbarkeit für die Wirkungsvoraussetzungen relevant ist; seine Tragweite bleibt begrenzt und unsicher.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die ergänzende Recherche wurde durchgeführt, lieferte aber keinen zusätzlich lesbaren Verteilungs- oder Evaluationsbeleg. Das Risiko bleibt niedrig evidenziert.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen wären begrenzte Gruppen mit unterschiedlichem Zugang zu den Angeboten.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Benachteiligung wäre zunächst begrenzt; ein starker Effekt ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Ungleichheiten könnten über mehrere Bildungsphasen fortwirken, bleiben aber veränderbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Angebote und Zugänge können grundsätzlich angepasst werden.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Schlechter angebundene oder sozial benachteiligte Gruppen wären bei ungleicher Erreichbarkeit stärker betroffen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein begrenzter Folgepfad ist plausibel; eine strukturelle Verstärkung ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                  "reference_frame": "Chancengerechtigkeit",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der positive Hauptpfad ist durch die berichteten Angebote und Ansatzpunkte plausibel, aber kausal nicht nachgewiesen. Das begrenzte Verteilungsrisiko ist kein gleichwertiger Gegenpfad und ändert die Hauptrichtung nicht.",
+            "balance": {
+              "rationale": "Die stärksten materiellen Pfade sind nicht gleichwertig: Der positive Pfad betrifft die mögliche Veränderung von Bildungszugängen, der negative Pfad eine unsichere Verteilungsbedingung.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": true
+            },
+            "magnitude": 2,
+            "direction": "mixed",
+            "dominance": "balanced",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Bündelung von MINT-Angeboten kann Zugänge und Orientierung für Kinder und Jugendliche, insbesondere Mädchen, erweitern.",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Bündelung von MINT-Angeboten kann Zugänge und Orientierung für Kinder und Jugendliche, insbesondere Mädchen, erweitern.",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "MINT-Bildung kann langfristig Kompetenzen für technische oder naturwissenschaftliche Anwendungen verbreitern, ohne dass eine konkrete Umweltwirkung belegt ist.",
+                "mechanism": "Bildungsangebote können spätere Kompetenz- und Berufsentscheidungen beeinflussen. Ob daraus ökologisch vorteilhafte oder nachteilige Anwendungen und Ressourcenwirkungen entstehen, bleibt offen.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "Unternehmen",
+                  "Forschungs- und Bildungseinrichtungen",
+                  "Umwelt und Ressourcen"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Spätere Bildungs- und Berufsentscheidungen müssen in konkrete Anwendungen mit ökologisch relevanter Wirkung übergehen.",
+                "reference_space": "Rheinland-Pfalz mit möglichen langfristigen Verbindungen zu Forschung, Technik und Ressourcenverbrauch",
+                "time_horizon": "langfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Strategie beeinflusst spätere Bildungs- oder Berufswege und diese führen zu ökologisch relevanten Anwendungen.",
+                "source_support": "Der SWR belegt Bildungs- und Netzwerkangebote, aber keine Umweltziele, konkreten Technologien oder Umweltwirkungen.",
+                "limitations": "Keine belastbare Richtungsbestimmung, keine Messwerte zu Emissionen, Ressourcen, Gesundheit oder Ökosystemen.",
+                "first_order": "Mögliche Erweiterung technischer und naturwissenschaftlicher Kompetenzen.",
+                "second_order": "Mögliche, aber nicht belegte Verbindung zu technischen Anwendungen mit Umweltfolgen.",
+                "third_order": "Ökologische Rückkopplungen sind ohne konkreten Anwendungsfall nicht bestimmbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der Bericht nennt keinen konkreten ökologischen Mechanismus; die mögliche Tragweite bleibt daher sehr niedrig und offen."
+                },
+                "negligibility_rationale": "Der Pfad ist schwach, aber nicht vollständig vernachlässigbar, weil langfristige Bildungs- und Berufswirkungen grundsätzlich in technische Anwendungsfelder übergehen könnten.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die ergänzende Recherche wurde durchgeführt, lieferte aber keinen zusätzlich lesbaren wissenschaftlichen oder amtlichen Mechanismusbeleg. Eine konkrete Planet-Wirkung bleibt nicht assessierbar.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Ein möglicher ökologischer Pfad betrifft nur spätere Anwendungen einzelner Bildungs- und Berufswege.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete ökologische Intensität ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine langfristige Dauer ist möglich, aber nicht nachgewiesen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Der Pfad modelliert keine konkrete irreversible Umweltveränderung; mögliche spätere Anwendungen wären grundsätzlich unterschiedlich reversibel.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ökologische Betroffenheit ist ohne konkreten Anwendungsfall nicht bestimmbar und wird deshalb nur niedrig angesetzt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein schwacher möglicher Folgepfad über spätere Anwendungen bleibt denkbar; Rückkopplungen sind nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                  "reference_frame": "Ökologische Nachhaltigkeit und Schutz von Umwelt und Ressourcen",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Ein Planet-Pfad wird als schwache Modellhypothese dokumentiert, weil MINT-Bildung langfristig in technische Anwendungen übergehen kann. Die Richtung bleibt offen; der Artikel enthält keine konkrete Umweltwirkung.",
+            "balance": {
+              "rationale": "Es liegt kein materieller positiver oder negativer Umweltpfad mit ausreichender Grundlage vor.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "MINT-Bildung kann langfristig Kompetenzen für technische oder naturwissenschaftliche Anwendungen verbreitern, ohne dass eine konkrete Umweltwirkung belegt ist.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "MINT-Bildung kann langfristig Kompetenzen für technische oder naturwissenschaftliche Anwendungen verbreitern, ohne dass eine konkrete Umweltwirkung belegt ist.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Breitere Bildungs- und Teilhabechancen können langfristig gesellschaftliche Mitwirkung unterstützen; ein direkter demokratischer Effekt ist nicht belegt.",
+                "mechanism": "Zugänge zu Bildung und technischen Kompetenzen können spätere Handlungs- und Beteiligungsmöglichkeiten erweitern, wenn sie sozial und regional erreichbar sind.",
+                "recipients": [
+                  "Kinder und Jugendliche",
+                  "Mädchen und junge Frauen",
+                  "Schulen und Kommunen"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Die Angebote müssen inklusiv zugänglich sein und tatsächlich zu längerfristigen Bildungs- und Teilhabechancen führen.",
+                "reference_space": "Rheinland-Pfalz; beteiligte Bildungs- und Kommunalstrukturen",
+                "time_horizon": "langfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Bildungszugänge übertragen sich teilweise auf spätere gesellschaftliche Mitwirkung.",
+                "source_support": "Der SWR belegt Kooperationen und Bildungsangebote, nicht politische Beteiligung, Vertrauen oder institutionelle Veränderungen.",
+                "limitations": "Keine Daten zu Teilhabe, politischer Beteiligung, Vertrauen oder demokratischen Institutionen.",
+                "first_order": "Mehr Bildungs- und Kooperationsangebote können lokale Kontakte und Zugänge erweitern.",
+                "second_order": "Mögliche langfristige Effekte auf Teilhabe und Selbstvertretung.",
+                "third_order": "Eine Veränderung demokratischer Strukturen ist nicht belegt und wird nicht vorausgesetzt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der demokratische Pfad ist nur indirekt und ohne spezifische Beteiligungsdaten plausibel; die konservative Bandbreite bleibt niedrig."
+                },
+                "negligibility_rationale": "Der mögliche Pfad ist nicht vollständig null, weil Bildung Teilhabechancen beeinflussen kann; ein institutioneller Demokratieeffekt ist jedoch nicht modelliert.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die ergänzende Recherche wurde durchgeführt, lieferte aber keinen zusätzlich lesbaren Beleg zu demokratischen Teilhabewirkungen. Richtung und Eintritt bleiben offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche demokratische Pfad betrifft nur einen Teil der erreichten Jugendlichen und spätere Lebensphasen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein direkter intensiver Effekt auf demokratische Zustände ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Langfristige Wirkung ist möglich, aber nicht nachgewiesen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Keine konkrete irreversible demokratische Zustandsveränderung wird modelliert; Bildungs- und Teilhabewege bleiben grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Bessere Zugänge könnten einzelne benachteiligte Gruppen unterstützen; deren konkrete Betroffenheit ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein schwacher indirekter Teilhabepfad ist denkbar; institutionelle Folgen sind nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete demokratische Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                  "reference_frame": "Demokratische Teilhabe und institutionelle Korrekturfähigkeit",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der Demokratiepfad wird nur als schwache, offene Möglichkeit dokumentiert. Bildungsangebote können Teilhabechancen unterstützen, doch der Bericht enthält keine Daten zu politischer Beteiligung oder institutionellen Veränderungen.",
+            "balance": {
+              "rationale": "Es gibt keinen belegten materiellen demokratischen Gegenpfad.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Breitere Bildungs- und Teilhabechancen können langfristig gesellschaftliche Mitwirkung unterstützen; ein direkter demokratischer Effekt ist nicht belegt.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Breitere Bildungs- und Teilhabechancen können langfristig gesellschaftliche Mitwirkung unterstützen; ein direkter demokratischer Effekt ist nicht belegt.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "swr-aktuell",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference",
+              "counter_evidence"
+            ],
+            "supported_claim": "Der SWR belegt den Berichtsanlass, den Start der Strategie 2016, die beschriebenen Netzwerke und Reichweitenangaben sowie die zugeschriebenen Aussagen zu Mädchenanteilen, Lehrkräften und fortbestehenden Übergangsunterschieden."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Bündelung von MINT-Angeboten kann Zugänge und Orientierung für Kinder und Jugendliche, insbesondere Mädchen, erweitern.",
+              "mechanism": "Frühe Ansprache, praktische Projekte und weibliche Vorbilder können Informationen, Selbstwirksamkeit und die wahrgenommene Passung von MINT-Fächern beeinflussen.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "Mädchen und junge Frauen",
+                "Schulen und Hochschulen"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Die Angebote müssen dauerhaft, qualitätsgesichert und für unterschiedliche Regionen und soziale Gruppen erreichbar sein.",
+              "reference_space": "Rheinland-Pfalz; Kinder und Jugendliche in den beteiligten MINT-Angeboten",
+              "time_horizon": "mittelfristig bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die berichteten Angebote werden tatsächlich genutzt und erreichen auch bislang wenig MINT-affine oder schlechter angebundene Gruppen.",
+              "source_support": "Der SWR belegt Angebote, Netzwerke, Partner und erreichte Jugendliche sowie die im Bericht genannten Ansatzpunkte frühe Ansprache, Praxisprojekte und weibliche Vorbilder; er belegt keine kausale Bildungswirkung.",
+              "limitations": "Keine unabhängige Evaluation, keine Vergleichsgruppe und keine Verlaufsdaten zu Ausbildung oder Studium.",
+              "first_order": "Mehr sichtbare und gebündelte MINT-Angebote können Orientierungsmöglichkeiten erweitern.",
+              "second_order": "Bei anhaltender Nutzung könnten sich Bildungsentscheidungen einzelner Gruppen verändern; Lehrkräftemangel kann die Umsetzung begrenzen.",
+              "third_order": "Langfristige Veränderungen bei Fachkräftezugang und Teilhabe sind möglich, aber nicht nachgewiesen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die berichtete Reichweite und Dauer machen einen materiellen Bildungspfad plausibel. Der Übergang von Angebot zu Bildungsentscheidung ist jedoch nicht kausal belegt; die Bandbreite bleibt deshalb konservativ."
+              },
+              "negligibility_rationale": "Nicht vernachlässigbar, weil ein landesweites Programm mit vielen Partnern und berichteter Reichweite betroffen ist; die tatsächliche Zustandsveränderung bleibt unsicher.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die ergänzende Recherche wurde durchgeführt, lieferte aber keinen zusätzlich lesbaren unabhängigen Evaluations- oder Mechanismusbeleg. Der Pfad bleibt eine niedrig evidenzierte Modellhypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Der Bericht nennt mehr als 30.000 erreichte Jugendliche und landesweite Partnerstrukturen; die Gesamtbevölkerung wird nicht erfasst.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Angebote, Projekte und Vorbilder können Orientierung begrenzt verändern; ein starker individueller Effekt ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Strategie besteht seit 2016; ob Wirkungen über einzelne Angebote hinaus anhalten, ist offen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Orientierungen und Bildungsentscheidungen sind grundsätzlich veränderbar; einzelne Bildungswege können dennoch nachwirken.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Mädchen und Jugendliche mit geringerem Zugang zu MINT-Angeboten können besonders profitieren oder bei ungleicher Erreichbarkeit zurückbleiben.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht von Angeboten über Orientierung bis zu möglichen Bildungsentscheidungen; eine tiefere institutionelle Veränderung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                "reference_frame": "Bildungsteilhabe und Gleichberechtigung",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "direction": "negative",
+              "label": "Ungleiche regionale oder soziale Erreichbarkeit kann bestehende Bildungsunterschiede fortschreiben.",
+              "mechanism": "Wenn Ressourcen und Angebote vor allem gut angebundene Schulen und bereits interessierte Jugendliche erreichen, können Zugangsunterschiede bestehen bleiben.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "Schulen in unterschiedlich ausgestatteten Regionen",
+                "sozial schlechter angebundene Gruppen"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "low",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Es fehlen ausreichende Ausgleichsmechanismen und eine gleichmäßige regionale oder soziale Erreichbarkeit.",
+              "reference_space": "Rheinland-Pfalz; beteiligte Schulen und Regionen",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Verteilung der Angebote und Teilnehmenden ist nicht gleichmäßig.",
+              "source_support": "Der Bericht nennt landesweite Netzwerke und Reichweite, aber keine sozialen Teilnahmequoten, Barrierefreiheitsdaten oder Wirkungsvergleiche zwischen Regionen.",
+              "limitations": "Keine Angaben zur sozialen Zusammensetzung, zur regionalen Nutzung oder zu konkreten Ausgleichsmaßnahmen.",
+              "first_order": "Unterschiedliche Zugänge zu Projekten und Partnern.",
+              "second_order": "Ungleiche Bildungsorientierung und Übergangschancen könnten fortbestehen.",
+              "third_order": "Eine Verstärkung regionaler Bildungsunterschiede ist möglich, aber nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne Verteilungsdaten ist nur ein begrenzter Risikopfad plausibel; eine schwere oder strukturelle Benachteiligung ist nicht belegt."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht als fehlend einzustufen, weil regionale und soziale Erreichbarkeit für die Wirkungsvoraussetzungen relevant ist; seine Tragweite bleibt begrenzt und unsicher.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die ergänzende Recherche wurde durchgeführt, lieferte aber keinen zusätzlich lesbaren Verteilungs- oder Evaluationsbeleg. Das Risiko bleibt niedrig evidenziert.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen wären begrenzte Gruppen mit unterschiedlichem Zugang zu den Angeboten.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Benachteiligung wäre zunächst begrenzt; ein starker Effekt ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Ungleichheiten könnten über mehrere Bildungsphasen fortwirken, bleiben aber veränderbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Angebote und Zugänge können grundsätzlich angepasst werden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Schlechter angebundene oder sozial benachteiligte Gruppen wären bei ungleicher Erreichbarkeit stärker betroffen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein begrenzter Folgepfad ist plausibel; eine strukturelle Verstärkung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                "reference_frame": "Chancengerechtigkeit",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der positive Hauptpfad ist durch die berichteten Angebote und Ansatzpunkte plausibel, aber kausal nicht nachgewiesen. Das begrenzte Verteilungsrisiko ist kein gleichwertiger Gegenpfad und ändert die Hauptrichtung nicht.",
+          "balance": {
+            "rationale": "Die stärksten materiellen Pfade sind nicht gleichwertig: Der positive Pfad betrifft die mögliche Veränderung von Bildungszugängen, der negative Pfad eine unsichere Verteilungsbedingung.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": true
+          },
+          "magnitude": 2,
+          "direction": "mixed",
+          "dominance": "balanced",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Bündelung von MINT-Angeboten kann Zugänge und Orientierung für Kinder und Jugendliche, insbesondere Mädchen, erweitern.",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Bündelung von MINT-Angeboten kann Zugänge und Orientierung für Kinder und Jugendliche, insbesondere Mädchen, erweitern.",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "MINT-Bildung kann langfristig Kompetenzen für technische oder naturwissenschaftliche Anwendungen verbreitern, ohne dass eine konkrete Umweltwirkung belegt ist.",
+              "mechanism": "Bildungsangebote können spätere Kompetenz- und Berufsentscheidungen beeinflussen. Ob daraus ökologisch vorteilhafte oder nachteilige Anwendungen und Ressourcenwirkungen entstehen, bleibt offen.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "Unternehmen",
+                "Forschungs- und Bildungseinrichtungen",
+                "Umwelt und Ressourcen"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Spätere Bildungs- und Berufsentscheidungen müssen in konkrete Anwendungen mit ökologisch relevanter Wirkung übergehen.",
+              "reference_space": "Rheinland-Pfalz mit möglichen langfristigen Verbindungen zu Forschung, Technik und Ressourcenverbrauch",
+              "time_horizon": "langfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Strategie beeinflusst spätere Bildungs- oder Berufswege und diese führen zu ökologisch relevanten Anwendungen.",
+              "source_support": "Der SWR belegt Bildungs- und Netzwerkangebote, aber keine Umweltziele, konkreten Technologien oder Umweltwirkungen.",
+              "limitations": "Keine belastbare Richtungsbestimmung, keine Messwerte zu Emissionen, Ressourcen, Gesundheit oder Ökosystemen.",
+              "first_order": "Mögliche Erweiterung technischer und naturwissenschaftlicher Kompetenzen.",
+              "second_order": "Mögliche, aber nicht belegte Verbindung zu technischen Anwendungen mit Umweltfolgen.",
+              "third_order": "Ökologische Rückkopplungen sind ohne konkreten Anwendungsfall nicht bestimmbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der Bericht nennt keinen konkreten ökologischen Mechanismus; die mögliche Tragweite bleibt daher sehr niedrig und offen."
+              },
+              "negligibility_rationale": "Der Pfad ist schwach, aber nicht vollständig vernachlässigbar, weil langfristige Bildungs- und Berufswirkungen grundsätzlich in technische Anwendungsfelder übergehen könnten.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die ergänzende Recherche wurde durchgeführt, lieferte aber keinen zusätzlich lesbaren wissenschaftlichen oder amtlichen Mechanismusbeleg. Eine konkrete Planet-Wirkung bleibt nicht assessierbar.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Ein möglicher ökologischer Pfad betrifft nur spätere Anwendungen einzelner Bildungs- und Berufswege.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete ökologische Intensität ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine langfristige Dauer ist möglich, aber nicht nachgewiesen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Der Pfad modelliert keine konkrete irreversible Umweltveränderung; mögliche spätere Anwendungen wären grundsätzlich unterschiedlich reversibel.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ökologische Betroffenheit ist ohne konkreten Anwendungsfall nicht bestimmbar und wird deshalb nur niedrig angesetzt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein schwacher möglicher Folgepfad über spätere Anwendungen bleibt denkbar; Rückkopplungen sind nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                "reference_frame": "Ökologische Nachhaltigkeit und Schutz von Umwelt und Ressourcen",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Ein Planet-Pfad wird als schwache Modellhypothese dokumentiert, weil MINT-Bildung langfristig in technische Anwendungen übergehen kann. Die Richtung bleibt offen; der Artikel enthält keine konkrete Umweltwirkung.",
+          "balance": {
+            "rationale": "Es liegt kein materieller positiver oder negativer Umweltpfad mit ausreichender Grundlage vor.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "MINT-Bildung kann langfristig Kompetenzen für technische oder naturwissenschaftliche Anwendungen verbreitern, ohne dass eine konkrete Umweltwirkung belegt ist.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "MINT-Bildung kann langfristig Kompetenzen für technische oder naturwissenschaftliche Anwendungen verbreitern, ohne dass eine konkrete Umweltwirkung belegt ist.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Breitere Bildungs- und Teilhabechancen können langfristig gesellschaftliche Mitwirkung unterstützen; ein direkter demokratischer Effekt ist nicht belegt.",
+              "mechanism": "Zugänge zu Bildung und technischen Kompetenzen können spätere Handlungs- und Beteiligungsmöglichkeiten erweitern, wenn sie sozial und regional erreichbar sind.",
+              "recipients": [
+                "Kinder und Jugendliche",
+                "Mädchen und junge Frauen",
+                "Schulen und Kommunen"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Die Angebote müssen inklusiv zugänglich sein und tatsächlich zu längerfristigen Bildungs- und Teilhabechancen führen.",
+              "reference_space": "Rheinland-Pfalz; beteiligte Bildungs- und Kommunalstrukturen",
+              "time_horizon": "langfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Bildungszugänge übertragen sich teilweise auf spätere gesellschaftliche Mitwirkung.",
+              "source_support": "Der SWR belegt Kooperationen und Bildungsangebote, nicht politische Beteiligung, Vertrauen oder institutionelle Veränderungen.",
+              "limitations": "Keine Daten zu Teilhabe, politischer Beteiligung, Vertrauen oder demokratischen Institutionen.",
+              "first_order": "Mehr Bildungs- und Kooperationsangebote können lokale Kontakte und Zugänge erweitern.",
+              "second_order": "Mögliche langfristige Effekte auf Teilhabe und Selbstvertretung.",
+              "third_order": "Eine Veränderung demokratischer Strukturen ist nicht belegt und wird nicht vorausgesetzt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der demokratische Pfad ist nur indirekt und ohne spezifische Beteiligungsdaten plausibel; die konservative Bandbreite bleibt niedrig."
+              },
+              "negligibility_rationale": "Der mögliche Pfad ist nicht vollständig null, weil Bildung Teilhabechancen beeinflussen kann; ein institutioneller Demokratieeffekt ist jedoch nicht modelliert.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die ergänzende Recherche wurde durchgeführt, lieferte aber keinen zusätzlich lesbaren Beleg zu demokratischen Teilhabewirkungen. Richtung und Eintritt bleiben offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche demokratische Pfad betrifft nur einen Teil der erreichten Jugendlichen und spätere Lebensphasen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein direkter intensiver Effekt auf demokratische Zustände ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Langfristige Wirkung ist möglich, aber nicht nachgewiesen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Keine konkrete irreversible demokratische Zustandsveränderung wird modelliert; Bildungs- und Teilhabewege bleiben grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Bessere Zugänge könnten einzelne benachteiligte Gruppen unterstützen; deren konkrete Betroffenheit ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein schwacher indirekter Teilhabepfad ist denkbar; institutionelle Folgen sind nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete demokratische Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                "reference_frame": "Demokratische Teilhabe und institutionelle Korrekturfähigkeit",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der Demokratiepfad wird nur als schwache, offene Möglichkeit dokumentiert. Bildungsangebote können Teilhabechancen unterstützen, doch der Bericht enthält keine Daten zu politischer Beteiligung oder institutionellen Veränderungen.",
+          "balance": {
+            "rationale": "Es gibt keinen belegten materiellen demokratischen Gegenpfad.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Breitere Bildungs- und Teilhabechancen können langfristig gesellschaftliche Mitwirkung unterstützen; ein direkter demokratischer Effekt ist nicht belegt.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Breitere Bildungs- und Teilhabechancen können langfristig gesellschaftliche Mitwirkung unterstützen; ein direkter demokratischer Effekt ist nicht belegt.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T10:10:36.350Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T09:21:39.000Z",
+      "last_updated": "2026-09-14T10:10:36.350Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-0ebe5b3c1617ea022c8d",
+      "case_file": null,
+      "source_published_at": "2026-09-14T09:21:39.000Z",
+      "published_at": "2026-09-14T10:10:36.350Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Der Mädchenanteil in MINT-Bildungsgängen und die Übergänge in MINT-Ausbildung oder -Studium sollen mit vergleichbaren Zeitreihen überprüft werden.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Mädchenanteil in MINT-Fächern sowie Zahl und Anteil der Übergänge in MINT-Ausbildung und -Studium",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e784202c6a17e6aa",
+          "announced_at": "2026-09-14T09:21:39.000Z",
+          "follow_up_date": "2026-09-21T10:10:36.350Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die tatsächliche Wirkung von Vorbildern, Projekten und MINT-Regionen auf Bildungsentscheidungen soll durch Evaluationen oder Verlaufsdaten geprüft werden.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Vergleichbare Teilnahme-, Übergangs- und Abschlussdaten nach Programmteilnahme",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cf0af091acde5bde",
+          "announced_at": "2026-09-14T09:21:39.000Z",
+          "follow_up_date": "2026-09-21T10:10:36.350Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/rheinland-pfalz/mint-zehn-jahre-runder-tisch-in-rlp-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T09:21:39.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-c00b926814353511",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c00b926814353511-a824fffd80fbe920-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c00b926814353511-1b583876f44a66ca-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c00b926814353511-043118aafd4ab591-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "russland-trifft-zug-nach-polen-wir-wussten-nichts-von-dem-angriff-353511",
+      "title": "Russland trifft Zug nach Polen: \"Wir wussten nichts von dem Angriff\"",
+      "source_summary": "Der SWR berichtet, Russland habe am Wochenende die ukrainische Grenzregion zu Polen angegriffen. Dabei seien unter anderem eine Tankstelle und ein Personenzug auf der Verbindung zwischen Kiew und Warschau getroffen worden. Der Zug sei rechtzeitig evakuiert worden; laut Bericht wurde niemand verletzt.\n\nAuf derselben Strecke habe ein Sonderzug mit westlichen Politikern anhalten und teilweise geräumt werden müssen. Ein mitreisender Bundestagsabgeordneter schildert, dass die Gruppe erst in Polen von dem Angriff auf der vorausfahrenden Strecke erfahren habe. Der Bericht gibt außerdem seine politische Bewertung und Forderung nach einer Reaktion wieder. Eine unabhängige Bestätigung oder weitere Angaben zu Schäden liegen im gelieferten Material nicht vor.",
+      "summary": "Ein SWR-Bericht meldet einen Drohnenangriff auf einen Personenzug in der ukrainischen Grenzregion zu Polen. Der Zug wurde evakuiert, Verletzte wurden nicht gemeldet; Umfang, Urheberschaft und Folgen außerhalb des Berichts bleiben offen.",
+      "detail_summary": "Der SWR berichtet von einem Angriff auf einen Personenzug zwischen Kiew und Warschau. Der Zug wurde demnach rechtzeitig evakuiert, niemand wurde verletzt. Ein Sonderzug mit westlichen Politikern musste ebenfalls anhalten und teilweise geräumt werden. Die Angaben stammen aus einer einzelnen journalistischen Quelle und sind im gelieferten Material nicht unabhängig bestätigt. Die politische Bewertung eines mitreisenden Abgeordneten wird als solche gekennzeichnet. Das mögliche Wirkungspotenzial liegt vor allem in der Verunsicherung grenznaher Verkehrswege und in sicherheitspolitischen Reaktionen; konkrete weitere Folgen sind nicht belegt.",
+      "why_relevant": "Der Bericht beschreibt einen neuen Angriff auf zivile Infrastruktur und einen grenznahen Verkehrsweg. Auch ohne gemeldete Verletzte berührt der Vorgang Sicherheit, Verkehrsverbindungen und die politische Reaktion auf den Krieg.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über einen Angriff auf einen Personenzug in der ukrainischen Grenzregion zu Polen am Wochenende",
+        "evaluation_target": {
+          "label": "Angriff auf zivile Verkehrs- und Sicherheitsinfrastruktur",
+          "type": "event"
+        },
+        "baseline": "Ziviler Bahnverkehr auf der Verbindung Kiew–Warschau ohne den berichteten Angriff; keine Annahme über einen ungestörten oder sicheren Kriegsverkehr darüber hinaus",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne den berichteten Angriff wäre die konkrete Evakuierung dieses Zuges nicht erforderlich gewesen. Ob es ohne den Vorfall weitere Verkehrs- oder Sicherheitsfolgen gegeben hätte, ist nicht belegt.",
+        "reference_frame": [
+          "Schutz von Menschen im zivilen Verkehr",
+          "Funktionsfähigkeit grenznaher Verkehrswege",
+          "demokratische und institutionelle Korrekturfähigkeit bei Sicherheitslagen"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Quelle berichtet einen Angriff, die Evakuierung eines Personenzugs und eine teilweise Räumung eines Sonderzugs. Diese unmittelbaren Zustandsveränderungen sind beobachtet; weitergehende Folgen für Sicherheit, Zugang und Verunsicherung bei Wiederholung bleiben modelliert und unbelegt.",
+            "planet": "Ein möglicher Pfad über Reparaturen, Umwege oder zusätzliche Sicherungsmaßnahmen ist nur bedingt plausibel. Der Bericht belegt keine Schäden, Umweltfolgen, Reparaturen, Umleitungen oder Emissionsänderungen. Der Planet-Pfad bleibt deshalb eine schwache Modellhypothese mit offener Richtung.",
+            "democracy": "Die Quelle gibt die politische Bewertung und Forderung eines mitreisenden Abgeordneten wieder. Mögliche Folgen für Sicherheitsdebatten und institutionelle Reaktionen sind bedingt modelliert; konkrete Entscheidungen, Normalisierung oder Einschränkungen demokratischer Korrekturfähigkeit sind nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Der Personenzug wurde laut Bericht evakuiert; ein Sonderzug mit westlichen Politikern musste anhalten und wurde teilweise geräumt.",
+          "second_order": "Bei bestätigten oder wiederholten Vorfällen könnten Verkehrsbetreiber, Reisende und staatliche Stellen zusätzliche Sicherungs- oder Ausweichmaßnahmen ergreifen. Solche längerfristigen Änderungen sind nicht belegt.",
+          "third_order": "Eine wiederholte Gefährdung ziviler Verkehrswege könnte Vertrauen in grenznahe Infrastruktur und sicherheitspolitische Entscheidungsprozesse belasten. Dieser Pfad bleibt hypothetisch und ist nicht als eingetretene Wirkung zu verstehen.",
+          "enablement": [],
+          "counter_evidence": [
+            "Der Bericht meldet keine Verletzten.",
+            "Der betroffene Zug konnte laut Bericht rechtzeitig evakuiert werden.",
+            "Der Sonderzug konnte seine Fahrt später fortsetzen.",
+            "Es liegen keine Angaben zu längerfristigen Betriebsunterbrechungen, Schäden, politischen Beschlüssen oder messbaren Verhaltensänderungen vor."
+          ],
+          "source_independence": "Für den Ereigniskern liegt nur der gelieferte SWR-Bericht vor. Die unabhängige Webprüfung konnte die angegebene SWR-Seite wegen eines Cache- beziehungsweise Zugriffsfehlers nicht erneut lesen. Die vorgelegten Auszüge tragen die zugeschriebenen Aussagen; eine unabhängige Ereignisbestätigung wurde nicht gefunden.",
+          "institutional_status": "Es ist kein Beschluss, kein neues Recht und keine konkrete staatliche Maßnahme belegt. Die Forderung des Abgeordneten bleibt eine ausdrücklich zugeschriebene politische Position."
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Der Personenzug wurde laut Bericht evakuiert; ein Sonderzug musste anhalten und wurde teilweise geräumt.",
+            "direction": "negative",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "data_status": "observed",
+            "evidence": "medium",
+            "attribution": "established",
+            "reference_frame": "unmittelbare Sicherheit von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+            "reference_space": "betroffener Personenzug und Sonderzug auf der Verbindung Kiew–Warschau",
+            "observed_at": "2026-09-14",
+            "temporal_status": "ex_post",
+            "mechanism": "Der berichtete Angriff löste eine Evakuierung beziehungsweise teilweise Räumung und eine vorübergehende Unterbrechung der normalen Nutzung aus.",
+            "recipients": [
+              "Reisende",
+              "Beschäftigte im Bahnverkehr",
+              "mitreisende politische Delegation"
+            ],
+            "time_horizon": "unmittelbarer Vorfall und kurze Betriebsunterbrechung",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Belegt sind ein betroffener Personenzug und ein weiterer Sonderzug auf derselben Strecke.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "intensity": {
+                "value": 2,
+                "rationale": "Evakuierung und teilweise Räumung stellen eine deutliche unmittelbare Sicherheitsbeeinträchtigung dar; Verletzte werden nicht berichtet.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Der Bericht belegt eine kurzfristige Unterbrechung beziehungsweise Verzögerung, aber keine anhaltende Betriebsstörung.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "irreversibility": {
+                "value": 1,
+                "rationale": "Die konkrete Evakuierung und Unterbrechung waren grundsätzlich reversibel; der Sonderzug konnte später weiterfahren.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "vulnerability": {
+                "value": 2,
+                "rationale": "Reisende und Beschäftigte waren einer konkreten Gefahrenlage ausgesetzt. Eine extreme oder dauerhaft ungleiche Lastverteilung ist nicht belegt.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Die beobachtete Zustandsveränderung betrifft zunächst den konkreten Verkehrsvorfall; systemische Rückkopplungen sind nicht beobachtet.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Eine schwere Schutzgrenzverletzung mit Verletzten ist nicht belegt. Die Evakuierung begründet jedoch einen negativen unmittelbaren Sicherheitspfad.",
+              "reference_frame": "Schutz von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "status": "not_decisive"
+            },
+            "magnitude": 1,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 8,
+              "divisor": 6,
+              "raw": 1.3333333333333333,
+              "rounded": 1,
+              "protection_floor": 0,
+              "final": 1
+            }
+          }
+        ],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "already_occurring",
+            "evidence": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ongoing",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Angriff und Evakuierung beeinträchtigen die sichere Nutzung des betroffenen zivilen Verkehrswegs",
+                "mechanism": "Der berichtete Angriff löst eine Evakuierung des Personenzugs und eine teilweise Räumung eines weiteren Zuges aus. Dadurch wird die normale Nutzung der Verbindung unmittelbar unterbrochen.",
+                "recipients": [
+                  "Reisende",
+                  "Beschäftigte im Bahnverkehr",
+                  "mitreisende politische Delegation"
+                ],
+                "evidence": "medium",
+                "temporal_status": "ongoing",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "already_occurring",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Der berichtete Angriff und die Evakuierungen müssen zutreffen; der beobachtete Pfad ist auf den konkreten Vorfall und den benannten Verkehrsraum begrenzt.",
+                "reference_space": "betroffener Personenzug und Verbindung Kiew–Warschau",
+                "time_horizon": "unmittelbarer Vorfall und kurze Betriebsunterbrechung; längerfristige Folgen offen",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die berichtete Evakuierung verändert die unmittelbare Nutzungssituation und Sicherheitslage der betroffenen Züge.",
+                "source_support": "Der gelieferte SWR-Auszug berichtet vom Angriff, der Evakuierung, der teilweisen Räumung und davon, dass niemand verletzt wurde. Weitergehende Verkehrs- oder Verhaltensfolgen werden nicht belegt.",
+                "limitations": "Keine unabhängige Bestätigung, keine Angaben zu Schäden, längerfristigen Betriebsfolgen oder Wiederholungen.",
+                "first_order": "Evakuierung, teilweise Räumung und Unterbrechung der normalen Fahrt.",
+                "second_order": "Bei Wiederholung mögliche zusätzliche Sicherung, Verzögerungen oder Vermeidung der Verbindung.",
+                "third_order": "Mögliche langfristige Verunsicherung ziviler Mobilität; dafür liegt kein Beobachtungsbeleg vor.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der beobachtete Vorfall ist räumlich begrenzt, besitzt aber bei bestätigten Wiederholungen ein größeres bedingtes Wirkungspotenzial."
+                },
+                "negligibility_rationale": "Nicht vernachlässigbar, weil eine konkrete Evakuierung und eine unmittelbare Sicherheitsbeeinträchtigung berichtet werden.",
+                "observed_signal": {
+                  "change": "Evakuierung des Personenzugs sowie Anhalten und teilweise Räumung des Sonderzugs",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der Ereignisbeleg wurde anhand des gelieferten Auszugs erneut gegen die Zusammenfassung geprüft. Die zulässige Webprüfung konnte die SWR-Seite nicht erneut lesen und ergab keine unabhängige Bestätigung. Die unmittelbare Wirkung bleibt als zugeschriebener beziehungsweise beobachteter Berichtseffekt belastbar; weitergehende Folgen bleiben offen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Belegt sind ein betroffener Personenzug und ein Sonderzug auf derselben Strecke, nicht eine regionale oder landesweite Betriebswirkung.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Evakuierung und teilweise Räumung zeigen eine deutliche unmittelbare Beeinträchtigung, zugleich werden keine Verletzten berichtet.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der Bericht belegt den unmittelbaren Vorfall und eine kurze Unterbrechung, aber keine länger anhaltende Störung.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Die konkrete Unterbrechung und Evakuierung sind grundsätzlich reversibel; eine strukturelle Veränderung ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Reisende und Beschäftigte waren einer konkreten Sicherheitslage ausgesetzt. Eine extreme Lastkonzentration ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der belegte Pfad betrifft zunächst den konkreten Verkehrsvorfall; systemische Folgeordnungen sind nur bedingt modelliert.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere Schutzgrenzverletzung mit Verletzten ist nicht belegt; die Evakuierung begründet dennoch einen negativen unmittelbaren Sicherheitspfad.",
+                  "reference_frame": "Schutz von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der direkte negative Pfad der Evakuierung ist als berichteter beziehungsweise beobachteter Effekt belegt, aber räumlich und zeitlich begrenzt. Eine hohe Tragweite wäre ohne Belege für Verletzte, Schäden, Wiederholung oder dauerhafte Verkehrsfolgen nicht begründet.",
+            "balance": {
+              "rationale": "Es gibt keinen belegten positiven Gegenpfad desselben Gegenstands. Die Fähigkeit zur Evakuierung begrenzt den Schaden, kompensiert aber nicht die Sicherheitsbeeinträchtigung.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "emerging",
+              "ringLabel": "Erste / laufende Wirkung",
+              "magnitudeBars": 1,
+              "directionLabel": "− laufende Wirkung",
+              "shortPathLabel": "Angriff und Evakuierung beeinträchtigen die sichere Nutzung des betroffenen zivilen Verkehrswegs",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Der Personenzug wurde laut Bericht evakuiert; ein Sonderzug musste anhalten und wurde teilweise geräumt.",
+                "direction": "negative",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "data_status": "observed",
+                "evidence": "medium",
+                "attribution": "established",
+                "reference_frame": "unmittelbare Sicherheit von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+                "reference_space": "betroffener Personenzug und Sonderzug auf der Verbindung Kiew–Warschau",
+                "observed_at": "2026-09-14",
+                "temporal_status": "ex_post",
+                "mechanism": "Der berichtete Angriff löste eine Evakuierung beziehungsweise teilweise Räumung und eine vorübergehende Unterbrechung der normalen Nutzung aus.",
+                "recipients": [
+                  "Reisende",
+                  "Beschäftigte im Bahnverkehr",
+                  "mitreisende politische Delegation"
+                ],
+                "time_horizon": "unmittelbarer Vorfall und kurze Betriebsunterbrechung",
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Belegt sind ein betroffener Personenzug und ein weiterer Sonderzug auf derselben Strecke.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Evakuierung und teilweise Räumung stellen eine deutliche unmittelbare Sicherheitsbeeinträchtigung dar; Verletzte werden nicht berichtet.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Der Bericht belegt eine kurzfristige Unterbrechung beziehungsweise Verzögerung, aber keine anhaltende Betriebsstörung.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Die konkrete Evakuierung und Unterbrechung waren grundsätzlich reversibel; der Sonderzug konnte später weiterfahren.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Reisende und Beschäftigte waren einer konkreten Gefahrenlage ausgesetzt. Eine extreme oder dauerhaft ungleiche Lastverteilung ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Die beobachtete Zustandsveränderung betrifft zunächst den konkreten Verkehrsvorfall; systemische Rückkopplungen sind nicht beobachtet.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere Schutzgrenzverletzung mit Verletzten ist nicht belegt. Die Evakuierung begründet jedoch einen negativen unmittelbaren Sicherheitspfad.",
+                  "reference_frame": "Schutz von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                },
+                "presentation": {
+                  "ringStatus": "observed",
+                  "ringLabel": "Beobachtete Wirkung",
+                  "magnitudeBars": 1,
+                  "directionLabel": "− beobachtet",
+                  "shortPathLabel": "Der Personenzug wurde laut Bericht evakuiert; ein Sonderzug musste anhalten und wurde teilweise geräumt.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Der Personenzug wurde laut Bericht evakuiert; ein Sonderzug musste anhalten und wurde teilweise geräumt.",
+              "direction": "negative",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "data_status": "observed",
+              "evidence": "medium",
+              "attribution": "established",
+              "reference_frame": "unmittelbare Sicherheit von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+              "reference_space": "betroffener Personenzug und Sonderzug auf der Verbindung Kiew–Warschau",
+              "observed_at": "2026-09-14",
+              "temporal_status": "ex_post",
+              "mechanism": "Der berichtete Angriff löste eine Evakuierung beziehungsweise teilweise Räumung und eine vorübergehende Unterbrechung der normalen Nutzung aus.",
+              "recipients": [
+                "Reisende",
+                "Beschäftigte im Bahnverkehr",
+                "mitreisende politische Delegation"
+              ],
+              "time_horizon": "unmittelbarer Vorfall und kurze Betriebsunterbrechung",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Belegt sind ein betroffener Personenzug und ein weiterer Sonderzug auf derselben Strecke.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Evakuierung und teilweise Räumung stellen eine deutliche unmittelbare Sicherheitsbeeinträchtigung dar; Verletzte werden nicht berichtet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Bericht belegt eine kurzfristige Unterbrechung beziehungsweise Verzögerung, aber keine anhaltende Betriebsstörung.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Die konkrete Evakuierung und Unterbrechung waren grundsätzlich reversibel; der Sonderzug konnte später weiterfahren.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Reisende und Beschäftigte waren einer konkreten Gefahrenlage ausgesetzt. Eine extreme oder dauerhaft ungleiche Lastverteilung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Die beobachtete Zustandsveränderung betrifft zunächst den konkreten Verkehrsvorfall; systemische Rückkopplungen sind nicht beobachtet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere Schutzgrenzverletzung mit Verletzten ist nicht belegt. Die Evakuierung begründet jedoch einen negativen unmittelbaren Sicherheitspfad.",
+                "reference_frame": "Schutz von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 1,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Der Personenzug wurde laut Bericht evakuiert; ein Sonderzug musste anhalten und wurde teilweise geräumt.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "observed",
+            "ringLabel": "Beobachtete Wirkung",
+            "magnitudeBars": 1,
+            "directionLabel": "− beobachtet",
+            "shortPathLabel": "Der Personenzug wurde laut Bericht evakuiert; ein Sonderzug musste anhalten und wurde teilweise geräumt.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "mittel",
+            "likelihood_label": "bereits eingetreten",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Laufende Prüfung",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Mögliche Schäden oder Betriebsumwege könnten zusätzliche Ressourcen und Infrastruktur beanspruchen",
+                "mechanism": "Falls der Angriff Schäden an Bahn- oder Umfeldinfrastruktur verursacht, könnten Reparaturen, Umleitungen oder zusätzliche Sicherungsmaßnahmen Ressourcen beanspruchen. Der gelieferte Bericht beschreibt solche Schäden oder Maßnahmen nicht.",
+                "recipients": [
+                  "Verkehrsinfrastruktur",
+                  "Betriebsunternehmen",
+                  "Natur und Umfeld der Verkehrsverbindung"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Es müssten konkrete Schäden, Reparaturen, Umwege oder zusätzliche Sicherungsmaßnahmen eintreten; der Bericht belegt dies nicht.",
+                "reference_space": "betroffene Bahnstrecke und ihre unmittelbare Umgebung",
+                "time_horizon": "kurz- bis mittelfristig, falls Schäden oder Umleitungen eintreten",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ein Angriff auf Verkehrsinfrastruktur kann materielle Folgearbeiten auslösen; für diesen Vorfall ist das lediglich eine bedingte Modellannahme.",
+                "source_support": "Der gelieferte SWR-Auszug belegt den berichteten Angriff und die Evakuierung, nicht Umwelt-, Ressourcen-, Reparatur- oder Emissionsfolgen.",
+                "limitations": "Keine Angaben zu Schäden, Reparaturen, Emissionen, Umleitungen, Ressourcenverbrauch oder Umweltbelastungen; kein unabhängiger Mechanismusbeleg gefunden.",
+                "first_order": "Nur bedingt mögliche materielle Beeinträchtigung der Infrastruktur.",
+                "second_order": "Bei bestätigten Schäden mögliche Reparatur- oder Umleitungsbedarfe.",
+                "third_order": "Keine belastbare Grundlage für ökologische Kaskaden oder dauerhafte Umweltveränderungen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Mangels belegter Schäden ist nur ein begrenzter bedingter Pfad vertretbar; die Richtung bleibt offen, weil konkrete Umwelt- oder Ressourcenveränderungen nicht bekannt sind."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht als eingetretene Wirkung belegt. Im definierten Raum und Zeitraum ist eine praktisch geringe Tragweite plausibel, sofern keine Schäden oder Umleitungen hinzukommen.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der zweite Suchzugriff wurde gezielt auf einen amtlichen Mechanismusbeleg zu Verkehrs-, Umwelt- oder Ressourcenfolgen von Angriffsschäden an Bahnstrecken gerichtet. Kein tatsächlich lesbarer zugelassener Beleg wurde gefunden. Die Wissensgrenze bleibt offen; der Pfad wird deshalb nur als schwache Modellhypothese geführt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Folgepfad wäre auf die betroffene Strecke und ihr unmittelbares Umfeld begrenzt; eine regionale oder überregionale Umweltwirkung ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche materielle oder ressourcenbezogene Folge wäre nach dem vorliegenden Material allenfalls gering; konkrete Schäden sind nicht beschrieben.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Ein länger anhaltender Umwelt- oder Infrastrukturzustand ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Reparaturen, Umleitungen oder Sicherungsmaßnahmen wären grundsätzlich reversibel; irreversible Umweltveränderungen sind nicht beschrieben.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders vulnerable Ökosysteme oder eine ungleiche Lastverteilung sind nicht konkret benannt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein begrenzter Folgepfad über Reparatur, Umleitung oder Ressourcenverbrauch ist denkbar; ökologische Rückkopplungen oder Kaskaden sind nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenzverletzung ist im gelieferten Material nicht belegt und wird ex ante nicht als konkrete Grenzverletzung modelliert.",
+                  "reference_frame": "Schutz der unmittelbaren Umwelt und Ressourcen der Verkehrsverbindung",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der Planet-Pfad bleibt eine schwache, bedingte Modellhypothese. Der Bericht nennt einen Angriff auf Infrastruktur, belegt aber keine Schäden, Reparaturen, Emissionen oder Umweltfolgen. Richtung und Eintritt bleiben daher offen.",
+            "balance": {
+              "rationale": "Es ist kein eigenständiger positiver Umweltpfad belegt. Die Möglichkeit einer schnellen Reparatur wäre lediglich Risikobegrenzung und keine positive Gegenwirkung.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Schäden oder Betriebsumwege könnten zusätzliche Ressourcen und Infrastruktur beanspruchen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Schäden oder Betriebsumwege könnten zusätzliche Ressourcen und Infrastruktur beanspruchen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Der Vorfall kann bei weiterer Bestätigung sicherheitspolitische Entscheidungen und öffentliche Deutungen beeinflussen",
+                "mechanism": "Ein Angriff auf einen zivilen Zug in Grenznähe kann als sicherheitspolitisches Signal interpretiert werden. Das kann Debatten über Schutz, Unterstützung oder Reaktionen anstoßen; konkrete institutionelle Folgen sind nicht belegt.",
+                "recipients": [
+                  "staatliche Institutionen",
+                  "Parlamente",
+                  "politische Öffentlichkeit",
+                  "Bevölkerung"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Der Angriff müsste weiter bestätigt werden und politische oder institutionelle Reaktionen müssten tatsächlich eintreten.",
+                "reference_space": "politische Sicherheitsdebatte in Deutschland, Polen und der Ukraine",
+                "time_horizon": "kurz- bis mittelfristig nach Bestätigung oder Wiederholung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die im Bericht wiedergegebene politische Bewertung ist ein möglicher Anknüpfungspunkt, aber kein Beleg für eine bereits eingetretene institutionelle Wirkung.",
+                "source_support": "Der gelieferte SWR-Auszug belegt die zugeschriebene Forderung eines Abgeordneten nach einer Reaktion. Er belegt keine Regierungsentscheidung, parlamentarische Maßnahme, breite Diskurswirkung oder Veränderung demokratischer Korrekturfähigkeit.",
+                "limitations": "Keine unabhängige Bestätigung, keine Daten zu öffentlicher Wahrnehmung, Abstimmungen, Regierungsentscheidungen, institutioneller Normalisierung oder dauerhaften Regeländerungen.",
+                "first_order": "Mögliche politische Debatte über Schutz und Reaktion.",
+                "second_order": "Mögliche Verschiebung von Prioritäten bei Sicherheits- oder Unterstützungsentscheidungen.",
+                "third_order": "Eine dauerhafte Normalisierung oder Veränderung institutioneller Regeln ist nicht belegt und bleibt offen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Ein einzelner, nicht unabhängig bestätigter Vorfall begrenzt die unmittelbare Tragweite; bei Bestätigung und Wiederholung wäre ein größerer politischer Folgepfad denkbar."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht praktisch vernachlässigbar, weil die Quelle bereits eine politische Deutung und Forderung wiedergibt. Eine institutionelle Wirkung ist jedoch nicht beobachtet.",
+                "observed_signal": {
+                  "change": "Ein mitreisender Abgeordneter bewertete den Vorgang als Eskalation und forderte eine Reaktion gegen Russlands Kriegsfinanzierung.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der zweite Pass prüfte die Trennung zwischen berichteter politischer Aussage und institutioneller Wirkung. Der gelieferte Auszug trägt die zugeschriebene Position, aber keine Entscheidung oder messbare Diskursfolge. Eine unabhängige Reaktionsquelle wurde im zulässigen Rechercheumfang nicht gefunden.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der mögliche politische Deutungspfad kann mehrere staatliche und politische Räume berühren, eine tatsächliche Reichweite ist aber nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die zugeschriebene Bewertung spricht von Eskalation und fordert eine Reaktion; eine institutionelle Entscheidung oder verbindliche Maßnahme ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine länger anhaltende politische Veränderung ist nicht nachgewiesen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Mögliche Debatten oder politische Maßnahmen wären grundsätzlich korrigierbar; dauerhafte institutionelle Änderungen sind nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine konkrete ungleiche Betroffenheit demokratischer Gruppen oder eine besondere Schutzbedürftigkeit ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Sicherheitsdeutungen könnten institutionelle Reaktionen anstoßen und damit über den Einzelfall hinauswirken; eine tatsächliche Rückkopplung ist nicht beobachtet.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenzverletzung ist nicht belegt. Der Pfad betrifft ein mögliches Entscheidungs- und Deutungsrisiko, nicht eine festgestellte Einschränkung demokratischer Rechte.",
+                  "reference_frame": "demokratische Entscheidungs- und Korrekturfähigkeit bei Sicherheitslagen",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der demokratische Pfad ist eine bedingte Modellhypothese. Die Quelle belegt eine politische Forderung, aber keine institutionelle Folge. Deshalb bleiben Richtung und Eintritt offen und die Tragweite begrenzt.",
+            "balance": {
+              "rationale": "Es gibt keinen belegten positiven demokratischen Gegenpfad. Die Möglichkeit politischer Reaktion ist weder automatisch demokratisch positiv noch ein Ausgleich für mögliche Eskalations- oder Verengungsrisiken.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Der Vorfall kann bei weiterer Bestätigung sicherheitspolitische Entscheidungen und öffentliche Deutungen beeinflussen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der Vorfall kann bei weiterer Bestätigung sicherheitspolitische Entscheidungen und öffentliche Deutungen beeinflussen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "swr-aktuell",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Der gelieferte SWR-Auszug trägt die zugeschriebenen Angaben zum Angriff, zur Evakuierung des Personenzugs, zur betroffenen Verbindung, zur teilweisen Räumung des Sonderzugs und zur politischen Aussage des Abgeordneten."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "already_occurring",
+          "evidence": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ongoing",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Angriff und Evakuierung beeinträchtigen die sichere Nutzung des betroffenen zivilen Verkehrswegs",
+              "mechanism": "Der berichtete Angriff löst eine Evakuierung des Personenzugs und eine teilweise Räumung eines weiteren Zuges aus. Dadurch wird die normale Nutzung der Verbindung unmittelbar unterbrochen.",
+              "recipients": [
+                "Reisende",
+                "Beschäftigte im Bahnverkehr",
+                "mitreisende politische Delegation"
+              ],
+              "evidence": "medium",
+              "temporal_status": "ongoing",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "already_occurring",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Der berichtete Angriff und die Evakuierungen müssen zutreffen; der beobachtete Pfad ist auf den konkreten Vorfall und den benannten Verkehrsraum begrenzt.",
+              "reference_space": "betroffener Personenzug und Verbindung Kiew–Warschau",
+              "time_horizon": "unmittelbarer Vorfall und kurze Betriebsunterbrechung; längerfristige Folgen offen",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die berichtete Evakuierung verändert die unmittelbare Nutzungssituation und Sicherheitslage der betroffenen Züge.",
+              "source_support": "Der gelieferte SWR-Auszug berichtet vom Angriff, der Evakuierung, der teilweisen Räumung und davon, dass niemand verletzt wurde. Weitergehende Verkehrs- oder Verhaltensfolgen werden nicht belegt.",
+              "limitations": "Keine unabhängige Bestätigung, keine Angaben zu Schäden, längerfristigen Betriebsfolgen oder Wiederholungen.",
+              "first_order": "Evakuierung, teilweise Räumung und Unterbrechung der normalen Fahrt.",
+              "second_order": "Bei Wiederholung mögliche zusätzliche Sicherung, Verzögerungen oder Vermeidung der Verbindung.",
+              "third_order": "Mögliche langfristige Verunsicherung ziviler Mobilität; dafür liegt kein Beobachtungsbeleg vor.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der beobachtete Vorfall ist räumlich begrenzt, besitzt aber bei bestätigten Wiederholungen ein größeres bedingtes Wirkungspotenzial."
+              },
+              "negligibility_rationale": "Nicht vernachlässigbar, weil eine konkrete Evakuierung und eine unmittelbare Sicherheitsbeeinträchtigung berichtet werden.",
+              "observed_signal": {
+                "change": "Evakuierung des Personenzugs sowie Anhalten und teilweise Räumung des Sonderzugs",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der Ereignisbeleg wurde anhand des gelieferten Auszugs erneut gegen die Zusammenfassung geprüft. Die zulässige Webprüfung konnte die SWR-Seite nicht erneut lesen und ergab keine unabhängige Bestätigung. Die unmittelbare Wirkung bleibt als zugeschriebener beziehungsweise beobachteter Berichtseffekt belastbar; weitergehende Folgen bleiben offen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Belegt sind ein betroffener Personenzug und ein Sonderzug auf derselben Strecke, nicht eine regionale oder landesweite Betriebswirkung.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Evakuierung und teilweise Räumung zeigen eine deutliche unmittelbare Beeinträchtigung, zugleich werden keine Verletzten berichtet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Bericht belegt den unmittelbaren Vorfall und eine kurze Unterbrechung, aber keine länger anhaltende Störung.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Die konkrete Unterbrechung und Evakuierung sind grundsätzlich reversibel; eine strukturelle Veränderung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Reisende und Beschäftigte waren einer konkreten Sicherheitslage ausgesetzt. Eine extreme Lastkonzentration ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der belegte Pfad betrifft zunächst den konkreten Verkehrsvorfall; systemische Folgeordnungen sind nur bedingt modelliert.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere Schutzgrenzverletzung mit Verletzten ist nicht belegt; die Evakuierung begründet dennoch einen negativen unmittelbaren Sicherheitspfad.",
+                "reference_frame": "Schutz von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der direkte negative Pfad der Evakuierung ist als berichteter beziehungsweise beobachteter Effekt belegt, aber räumlich und zeitlich begrenzt. Eine hohe Tragweite wäre ohne Belege für Verletzte, Schäden, Wiederholung oder dauerhafte Verkehrsfolgen nicht begründet.",
+          "balance": {
+            "rationale": "Es gibt keinen belegten positiven Gegenpfad desselben Gegenstands. Die Fähigkeit zur Evakuierung begrenzt den Schaden, kompensiert aber nicht die Sicherheitsbeeinträchtigung.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 1,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "Angriff und Evakuierung beeinträchtigen die sichere Nutzung des betroffenen zivilen Verkehrswegs",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Der Personenzug wurde laut Bericht evakuiert; ein Sonderzug musste anhalten und wurde teilweise geräumt.",
+              "direction": "negative",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "data_status": "observed",
+              "evidence": "medium",
+              "attribution": "established",
+              "reference_frame": "unmittelbare Sicherheit von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+              "reference_space": "betroffener Personenzug und Sonderzug auf der Verbindung Kiew–Warschau",
+              "observed_at": "2026-09-14",
+              "temporal_status": "ex_post",
+              "mechanism": "Der berichtete Angriff löste eine Evakuierung beziehungsweise teilweise Räumung und eine vorübergehende Unterbrechung der normalen Nutzung aus.",
+              "recipients": [
+                "Reisende",
+                "Beschäftigte im Bahnverkehr",
+                "mitreisende politische Delegation"
+              ],
+              "time_horizon": "unmittelbarer Vorfall und kurze Betriebsunterbrechung",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Belegt sind ein betroffener Personenzug und ein weiterer Sonderzug auf derselben Strecke.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Evakuierung und teilweise Räumung stellen eine deutliche unmittelbare Sicherheitsbeeinträchtigung dar; Verletzte werden nicht berichtet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Der Bericht belegt eine kurzfristige Unterbrechung beziehungsweise Verzögerung, aber keine anhaltende Betriebsstörung.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Die konkrete Evakuierung und Unterbrechung waren grundsätzlich reversibel; der Sonderzug konnte später weiterfahren.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Reisende und Beschäftigte waren einer konkreten Gefahrenlage ausgesetzt. Eine extreme oder dauerhaft ungleiche Lastverteilung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Die beobachtete Zustandsveränderung betrifft zunächst den konkreten Verkehrsvorfall; systemische Rückkopplungen sind nicht beobachtet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere Schutzgrenzverletzung mit Verletzten ist nicht belegt. Die Evakuierung begründet jedoch einen negativen unmittelbaren Sicherheitspfad.",
+                "reference_frame": "Schutz von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              },
+              "presentation": {
+                "ringStatus": "observed",
+                "ringLabel": "Beobachtete Wirkung",
+                "magnitudeBars": 1,
+                "directionLabel": "− beobachtet",
+                "shortPathLabel": "Der Personenzug wurde laut Bericht evakuiert; ein Sonderzug musste anhalten und wurde teilweise geräumt.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Der Personenzug wurde laut Bericht evakuiert; ein Sonderzug musste anhalten und wurde teilweise geräumt.",
+            "direction": "negative",
+            "source_ids": [
+              "swr-aktuell"
+            ],
+            "data_status": "observed",
+            "evidence": "medium",
+            "attribution": "established",
+            "reference_frame": "unmittelbare Sicherheit von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+            "reference_space": "betroffener Personenzug und Sonderzug auf der Verbindung Kiew–Warschau",
+            "observed_at": "2026-09-14",
+            "temporal_status": "ex_post",
+            "mechanism": "Der berichtete Angriff löste eine Evakuierung beziehungsweise teilweise Räumung und eine vorübergehende Unterbrechung der normalen Nutzung aus.",
+            "recipients": [
+              "Reisende",
+              "Beschäftigte im Bahnverkehr",
+              "mitreisende politische Delegation"
+            ],
+            "time_horizon": "unmittelbarer Vorfall und kurze Betriebsunterbrechung",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 1,
+                "rationale": "Belegt sind ein betroffener Personenzug und ein weiterer Sonderzug auf derselben Strecke.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "intensity": {
+                "value": 2,
+                "rationale": "Evakuierung und teilweise Räumung stellen eine deutliche unmittelbare Sicherheitsbeeinträchtigung dar; Verletzte werden nicht berichtet.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Der Bericht belegt eine kurzfristige Unterbrechung beziehungsweise Verzögerung, aber keine anhaltende Betriebsstörung.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "irreversibility": {
+                "value": 1,
+                "rationale": "Die konkrete Evakuierung und Unterbrechung waren grundsätzlich reversibel; der Sonderzug konnte später weiterfahren.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "vulnerability": {
+                "value": 2,
+                "rationale": "Reisende und Beschäftigte waren einer konkreten Gefahrenlage ausgesetzt. Eine extreme oder dauerhaft ungleiche Lastverteilung ist nicht belegt.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Die beobachtete Zustandsveränderung betrifft zunächst den konkreten Verkehrsvorfall; systemische Rückkopplungen sind nicht beobachtet.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Eine schwere Schutzgrenzverletzung mit Verletzten ist nicht belegt. Die Evakuierung begründet jedoch einen negativen unmittelbaren Sicherheitspfad.",
+              "reference_frame": "Schutz von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "status": "not_decisive"
+            },
+            "magnitude": 1,
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 8,
+              "divisor": 6,
+              "raw": 1.3333333333333333,
+              "rounded": 1,
+              "protection_floor": 0,
+              "final": 1
+            },
+            "presentation": {
+              "ringStatus": "observed",
+              "ringLabel": "Beobachtete Wirkung",
+              "magnitudeBars": 1,
+              "directionLabel": "− beobachtet",
+              "shortPathLabel": "Der Personenzug wurde laut Bericht evakuiert; ein Sonderzug musste anhalten und wurde teilweise geräumt.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "observed",
+          "ringLabel": "Beobachtete Wirkung",
+          "magnitudeBars": 1,
+          "directionLabel": "− beobachtet",
+          "shortPathLabel": "Der Personenzug wurde laut Bericht evakuiert; ein Sonderzug musste anhalten und wurde teilweise geräumt.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "mittel",
+          "likelihood_label": "bereits eingetreten",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Laufende Prüfung",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Mögliche Schäden oder Betriebsumwege könnten zusätzliche Ressourcen und Infrastruktur beanspruchen",
+              "mechanism": "Falls der Angriff Schäden an Bahn- oder Umfeldinfrastruktur verursacht, könnten Reparaturen, Umleitungen oder zusätzliche Sicherungsmaßnahmen Ressourcen beanspruchen. Der gelieferte Bericht beschreibt solche Schäden oder Maßnahmen nicht.",
+              "recipients": [
+                "Verkehrsinfrastruktur",
+                "Betriebsunternehmen",
+                "Natur und Umfeld der Verkehrsverbindung"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Es müssten konkrete Schäden, Reparaturen, Umwege oder zusätzliche Sicherungsmaßnahmen eintreten; der Bericht belegt dies nicht.",
+              "reference_space": "betroffene Bahnstrecke und ihre unmittelbare Umgebung",
+              "time_horizon": "kurz- bis mittelfristig, falls Schäden oder Umleitungen eintreten",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ein Angriff auf Verkehrsinfrastruktur kann materielle Folgearbeiten auslösen; für diesen Vorfall ist das lediglich eine bedingte Modellannahme.",
+              "source_support": "Der gelieferte SWR-Auszug belegt den berichteten Angriff und die Evakuierung, nicht Umwelt-, Ressourcen-, Reparatur- oder Emissionsfolgen.",
+              "limitations": "Keine Angaben zu Schäden, Reparaturen, Emissionen, Umleitungen, Ressourcenverbrauch oder Umweltbelastungen; kein unabhängiger Mechanismusbeleg gefunden.",
+              "first_order": "Nur bedingt mögliche materielle Beeinträchtigung der Infrastruktur.",
+              "second_order": "Bei bestätigten Schäden mögliche Reparatur- oder Umleitungsbedarfe.",
+              "third_order": "Keine belastbare Grundlage für ökologische Kaskaden oder dauerhafte Umweltveränderungen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Mangels belegter Schäden ist nur ein begrenzter bedingter Pfad vertretbar; die Richtung bleibt offen, weil konkrete Umwelt- oder Ressourcenveränderungen nicht bekannt sind."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht als eingetretene Wirkung belegt. Im definierten Raum und Zeitraum ist eine praktisch geringe Tragweite plausibel, sofern keine Schäden oder Umleitungen hinzukommen.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der zweite Suchzugriff wurde gezielt auf einen amtlichen Mechanismusbeleg zu Verkehrs-, Umwelt- oder Ressourcenfolgen von Angriffsschäden an Bahnstrecken gerichtet. Kein tatsächlich lesbarer zugelassener Beleg wurde gefunden. Die Wissensgrenze bleibt offen; der Pfad wird deshalb nur als schwache Modellhypothese geführt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Folgepfad wäre auf die betroffene Strecke und ihr unmittelbares Umfeld begrenzt; eine regionale oder überregionale Umweltwirkung ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche materielle oder ressourcenbezogene Folge wäre nach dem vorliegenden Material allenfalls gering; konkrete Schäden sind nicht beschrieben.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Ein länger anhaltender Umwelt- oder Infrastrukturzustand ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Reparaturen, Umleitungen oder Sicherungsmaßnahmen wären grundsätzlich reversibel; irreversible Umweltveränderungen sind nicht beschrieben.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders vulnerable Ökosysteme oder eine ungleiche Lastverteilung sind nicht konkret benannt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein begrenzter Folgepfad über Reparatur, Umleitung oder Ressourcenverbrauch ist denkbar; ökologische Rückkopplungen oder Kaskaden sind nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenzverletzung ist im gelieferten Material nicht belegt und wird ex ante nicht als konkrete Grenzverletzung modelliert.",
+                "reference_frame": "Schutz der unmittelbaren Umwelt und Ressourcen der Verkehrsverbindung",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der Planet-Pfad bleibt eine schwache, bedingte Modellhypothese. Der Bericht nennt einen Angriff auf Infrastruktur, belegt aber keine Schäden, Reparaturen, Emissionen oder Umweltfolgen. Richtung und Eintritt bleiben daher offen.",
+          "balance": {
+            "rationale": "Es ist kein eigenständiger positiver Umweltpfad belegt. Die Möglichkeit einer schnellen Reparatur wäre lediglich Risikobegrenzung und keine positive Gegenwirkung.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Schäden oder Betriebsumwege könnten zusätzliche Ressourcen und Infrastruktur beanspruchen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Schäden oder Betriebsumwege könnten zusätzliche Ressourcen und Infrastruktur beanspruchen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Der Vorfall kann bei weiterer Bestätigung sicherheitspolitische Entscheidungen und öffentliche Deutungen beeinflussen",
+              "mechanism": "Ein Angriff auf einen zivilen Zug in Grenznähe kann als sicherheitspolitisches Signal interpretiert werden. Das kann Debatten über Schutz, Unterstützung oder Reaktionen anstoßen; konkrete institutionelle Folgen sind nicht belegt.",
+              "recipients": [
+                "staatliche Institutionen",
+                "Parlamente",
+                "politische Öffentlichkeit",
+                "Bevölkerung"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Der Angriff müsste weiter bestätigt werden und politische oder institutionelle Reaktionen müssten tatsächlich eintreten.",
+              "reference_space": "politische Sicherheitsdebatte in Deutschland, Polen und der Ukraine",
+              "time_horizon": "kurz- bis mittelfristig nach Bestätigung oder Wiederholung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die im Bericht wiedergegebene politische Bewertung ist ein möglicher Anknüpfungspunkt, aber kein Beleg für eine bereits eingetretene institutionelle Wirkung.",
+              "source_support": "Der gelieferte SWR-Auszug belegt die zugeschriebene Forderung eines Abgeordneten nach einer Reaktion. Er belegt keine Regierungsentscheidung, parlamentarische Maßnahme, breite Diskurswirkung oder Veränderung demokratischer Korrekturfähigkeit.",
+              "limitations": "Keine unabhängige Bestätigung, keine Daten zu öffentlicher Wahrnehmung, Abstimmungen, Regierungsentscheidungen, institutioneller Normalisierung oder dauerhaften Regeländerungen.",
+              "first_order": "Mögliche politische Debatte über Schutz und Reaktion.",
+              "second_order": "Mögliche Verschiebung von Prioritäten bei Sicherheits- oder Unterstützungsentscheidungen.",
+              "third_order": "Eine dauerhafte Normalisierung oder Veränderung institutioneller Regeln ist nicht belegt und bleibt offen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Ein einzelner, nicht unabhängig bestätigter Vorfall begrenzt die unmittelbare Tragweite; bei Bestätigung und Wiederholung wäre ein größerer politischer Folgepfad denkbar."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht praktisch vernachlässigbar, weil die Quelle bereits eine politische Deutung und Forderung wiedergibt. Eine institutionelle Wirkung ist jedoch nicht beobachtet.",
+              "observed_signal": {
+                "change": "Ein mitreisender Abgeordneter bewertete den Vorgang als Eskalation und forderte eine Reaktion gegen Russlands Kriegsfinanzierung.",
+                "source_ids": [
+                  "swr-aktuell"
+                ]
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der zweite Pass prüfte die Trennung zwischen berichteter politischer Aussage und institutioneller Wirkung. Der gelieferte Auszug trägt die zugeschriebene Position, aber keine Entscheidung oder messbare Diskursfolge. Eine unabhängige Reaktionsquelle wurde im zulässigen Rechercheumfang nicht gefunden.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der mögliche politische Deutungspfad kann mehrere staatliche und politische Räume berühren, eine tatsächliche Reichweite ist aber nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die zugeschriebene Bewertung spricht von Eskalation und fordert eine Reaktion; eine institutionelle Entscheidung oder verbindliche Maßnahme ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine länger anhaltende politische Veränderung ist nicht nachgewiesen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Mögliche Debatten oder politische Maßnahmen wären grundsätzlich korrigierbar; dauerhafte institutionelle Änderungen sind nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine konkrete ungleiche Betroffenheit demokratischer Gruppen oder eine besondere Schutzbedürftigkeit ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Sicherheitsdeutungen könnten institutionelle Reaktionen anstoßen und damit über den Einzelfall hinauswirken; eine tatsächliche Rückkopplung ist nicht beobachtet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenzverletzung ist nicht belegt. Der Pfad betrifft ein mögliches Entscheidungs- und Deutungsrisiko, nicht eine festgestellte Einschränkung demokratischer Rechte.",
+                "reference_frame": "demokratische Entscheidungs- und Korrekturfähigkeit bei Sicherheitslagen",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der demokratische Pfad ist eine bedingte Modellhypothese. Die Quelle belegt eine politische Forderung, aber keine institutionelle Folge. Deshalb bleiben Richtung und Eintritt offen und die Tragweite begrenzt.",
+          "balance": {
+            "rationale": "Es gibt keinen belegten positiven demokratischen Gegenpfad. Die Möglichkeit politischer Reaktion ist weder automatisch demokratisch positiv noch ein Ausgleich für mögliche Eskalations- oder Verengungsrisiken.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Der Vorfall kann bei weiterer Bestätigung sicherheitspolitische Entscheidungen und öffentliche Deutungen beeinflussen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Der Vorfall kann bei weiterer Bestätigung sicherheitspolitische Entscheidungen und öffentliche Deutungen beeinflussen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T10:10:36.350Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T08:14:45.000Z",
+      "last_updated": "2026-09-14T10:10:36.350Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-454585df925bf0211c63",
+      "case_file": null,
+      "source_published_at": "2026-09-14T08:14:45.000Z",
+      "published_at": "2026-09-14T10:10:36.350Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell-radio/russland-trifft-ukrainischen-zug-nach-polen-angriff-drohnen-eskalation-krieg-nato-putin-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T08:14:45.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-36a96e491d1fc8a9",
       "title_image": {
