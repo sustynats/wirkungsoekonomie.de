@@ -1,5 +1,12 @@
 # Quellenarchiv: gültigen Snapshot vor fehlerhaften Aktualisierungen schützen
 
+Der branchschreibende Nachhaltigkeits-Audit hat während der Prüfung 696 fachfremde
+generierte Dateien an diesen Transport-Fix angehängt. Diese Änderungen werden
+zurückgenommen. Snapshot-Lader und Quellenarchiv-Builder lösen diesen zusätzlichen
+Schreiber künftig nicht aus; die vollständigen PR-Builds, Quellenarchiv- und
+öffentlichen Semantikprüfungen bleiben bestehen. Die Regeln für Änderungen an
+inhaltlichen Quellenbeständen bleiben unverändert.
+
 Der Lauf `34827758337` vom 14.09.2026 scheiterte beim Abgleich mit der
 Institut-API. Deren Antwort enthielt 1000 Einträge, davon 15 ohne Quellen-ID.
 Der Generator überschrieb zunächst den gespeicherten Snapshot und prüfte danach
