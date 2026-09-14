@@ -2,8 +2,2382 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-14T08:44:44.807Z",
+  "updated_at": "2026-09-14T09:43:11.294Z",
   "stories": [
+    {
+      "story_id": "wt-36a96e491d1fc8a9",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-36a96e491d1fc8a9-a7c092abc981acad-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-36a96e491d1fc8a9-f2838c13b26f4c26-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-36a96e491d1fc8a9-0edacec7a4e37012-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukrainekrieg-russischer-angriff-auf-personenzug-eu-aussenbeauftragte-kallas-spricht-eins-1fc8a9",
+      "title": "Ukrainekrieg - Russischer Angriff auf Personenzug - EU-Außenbeauftragte Kallas spricht Einschüchterungsversuch",
+      "source_summary": "Der Deutschlandfunk berichtet über einen russischen Angriff auf einen ukrainischen Passagierzug in Yahodyn nahe der polnischen Grenze. Nach dem vorliegenden Auszug gab es keine Verletzten. Kurz vor dem Angriff soll dort ein Zug mit Sicherheitsberatern mehrerer EU-Staaten gehalten haben.\n\nEU-Außenbeauftragte Kallas bezeichnete die Attacke als Einschüchterungsversuch und erklärte, sie solle westliche Staaten von der Unterstützung der Ukraine abbringen. Der französische Außenminister Barrot sprach von einem möglichen Ziel, die Europäer zu spalten. Diese Motivzuschreibungen sind Aussagen der Politiker; eine unabhängige Bestätigung des Ablaufs und der Absicht liegt im gelieferten Material nicht vor.",
+      "summary": "Ein russischer Angriff auf einen ukrainischen Passagierzug nahe der polnischen Grenze wird von EU-Vertretern als Einschüchterungsversuch bewertet. Belegt sind im vorliegenden Bericht ein Angriff und keine Verletzten; Ablauf, Ziel und Motiv brauchen weitere Prüfung.",
+      "detail_summary": "Der Deutschlandfunk berichtet über einen Angriff auf einen ukrainischen Passagierzug in Yahodyn nahe der polnischen Grenze. Verletzte wurden dem Bericht zufolge nicht gemeldet. Kallas deutet die Attacke als Versuch, westliche Unterstützung für die Ukraine einzuschüchtern; Barrot spricht von einem möglichen Ziel, Europa zu spalten. Für die Wirkung ist entscheidend, ob der Angriff tatsächlich auf den Zug oder den Bahnhof zielte und ob die behauptete Nähe zu EU-Sicherheitsberatern belegt wird. Das vorliegende Material stammt aus einer journalistischen Quelle und lässt Motiv, Schäden und unabhängige Bestätigung offen.",
+      "why_relevant": "Der Vorfall betrifft einen zivilen Transportweg nahe der polnischen Grenze und wird von europäischen Regierungsvertretern als Signal gegen die Unterstützung der Ukraine eingeordnet. Damit berührt er Sicherheit, grenznahe Infrastruktur und die politische Handlungsfähigkeit europäischer Staaten.",
+      "topic": [
+        "Europa"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Vorläufiger Bericht über einen russischen Angriff auf einen ukrainischen Passagierzug beziehungsweise einen Zug am Bahnhof Yahodyn nahe der polnischen Grenze am 14. September 2026. EU-Vertreter bewerten den Vorgang als möglichen Einschüchterungs- oder Spaltungsversuch.",
+        "evaluation_target": {
+          "label": "Berichteter Angriff auf einen zivilen Passagierzug beziehungsweise Bahnanlagen in Yahodyn und mögliche Folgen für grenznahe Sicherheit sowie europäische Sicherheitsdebatten",
+          "type": "event"
+        },
+        "baseline": "Vor dem berichteten Vorfall war im gelieferten Material keine bestätigte Attacke auf diesen Zug und keine belegte nachfolgende Änderung bei Verkehrsschutz, Nutzung oder europäischer Unterstützungspolitik dokumentiert.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne den berichteten Vorfall gäbe es im definierten Vergleichsraum keinen durch dieses Ereignis ausgelösten zusätzlichen Sicherheits- oder Deutungsimpuls. Allgemeine Kriegsrisiken und bereits bestehende politische Debatten bestehen unabhängig davon weiter.",
+        "reference_frame": [
+          "Schutz von Reisenden und Beschäftigten im zivilen Bahnverkehr",
+          "Funktionsfähigkeit und Vertrauen in grenznahe Verkehrswege",
+          "demokratische und institutionelle Entscheidungsfähigkeit bei europäischen Sicherheits- und Unterstützungsentscheidungen"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der Berichtete Angriff könnte die unmittelbare Sicherheitslage und Risikowahrnehmung von Reisenden, Beschäftigten und Betreibern verschlechtern. Verletzte, konkrete Sachschäden, Ausfälle oder eingetretene Verhaltensänderungen sind nicht belegt.",
+            "planet": "Ein indirekter negativer Pfad ist nur bedingt über mögliche Umleitungen, zusätzliche Sicherung oder veränderten Verkehrsaufwand plausibel. Umweltfolgen, Emissionsänderungen und räumliche Lastverlagerungen sind nicht beobachtet oder gemessen.",
+            "democracy": "Die politische Einordnung durch Kallas und Barrot kann die europäische Sicherheitsdebatte rahmen. Eine tatsächliche Änderung von Entscheidungen, Unterstützung oder demokratischer Korrekturfähigkeit ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Mögliche unmittelbare Verschlechterung der Sicherheitslage eines zivilen Verkehrswegs, sofern der berichtete Angriff und die Betroffenheit des Zuges bestätigt werden.",
+          "second_order": "Mögliche zusätzliche Sicherung, Umleitung, vorsichtigere Nutzung oder politische Reaktion. Diese Folgeschritte sind nicht als eingetretene Maßnahmen belegt.",
+          "third_order": "Bei bestätigten Wiederholungen mögliche längerfristige Verschiebungen bei Vertrauen, Schutzkoordination und politischer Prioritätensetzung. Eine solche Kaskade bleibt hypothetisch.",
+          "enablement": [
+            "enables_institutional_control",
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Im Ausgangsbericht werden keine Verletzten genannt.",
+            "Der Vorfall, sein genaues Ziel und die Nähe zu Sicherheitsberatern sind im gelieferten Material nicht unabhängig bestätigt.",
+            "Die politischen Motivdeutungen stammen von Akteuren und sind kein unabhängiger Nachweis der Absicht.",
+            "Es sind keine konkreten Verkehrs-, Sicherheits- oder politischen Folgemaßnahmen belegt."
+          ],
+          "source_independence": "Der Ereigniskern beruht auf einer gelieferten Deutschlandfunk-Meldung. Die ergänzende Recherche bestätigte den Bahnbezug Yahodyns, fand aber keine unabhängige Primärquelle zum konkreten Vorfall. Die Aussagen von Kallas und Barrot bleiben zugeschriebene Akteursaussagen.",
+          "institutional_status": "Es ist kein Beschluss, keine neue Rechtslage und keine konkrete staatliche Maßnahme belegt. Gegenstand der Bewertung ist ein vorläufig berichtetes Ereignis mit politischer Einordnung."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Mögliche erhöhte Unsicherheit und zusätzlicher Schutzbedarf im zivilen Bahnverkehr nahe der polnischen Grenze",
+                "mechanism": "Wenn der berichtete Angriff einen Passagierzug oder unmittelbar genutzte Bahnanlagen betraf, kann die Sicherheitslage des Verkehrswegs und die Risikowahrnehmung von Reisenden, Beschäftigten und Betreibern vorübergehend schlechter werden.",
+                "recipients": [
+                  "Reisende",
+                  "Beschäftigte im Bahnverkehr",
+                  "Betreiber und zuständige Sicherheitsstellen"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-ec-transport"
+                ],
+                "condition": "Der Angriff und die Betroffenheit des zivilen Verkehrswegs werden unabhängig bestätigt.",
+                "reference_space": "Betroffener ukrainischer Bahnverkehr in Yahodyn und seinem unmittelbaren grenznahen Umfeld",
+                "time_horizon": "Unmittelbar bis mittelfristig nach dem berichteten Vorfall",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Ein bestätigter Angriff auf zivile Verkehrsinfrastruktur kann Sicherheitswahrnehmung, Schutzbedarf und Nutzung eines Verkehrswegs beeinflussen.",
+                "source_support": "Der Deutschlandfunk berichtet den Angriff und keine Verletzten; die Europäische Kommission bestätigt den Bahnbezug Yahodyns. Keine Quelle belegt bereits eingetretene Verhaltens- oder Verkehrseffekte.",
+                "limitations": "Keine unabhängige Ereignisbestätigung, keine Angaben zu Schäden, Ausfällen, Umleitungen, Schutzmaßnahmen oder längerfristigem Verhalten.",
+                "first_order": "Mögliche Verschlechterung der unmittelbaren Sicherheitslage und des Sicherheitsgefühls.",
+                "second_order": "Mögliche zusätzliche Kontrollen, Sicherung oder vorsichtigere Nutzung des Verkehrswegs.",
+                "third_order": "Bei Wiederholung mögliche Verlagerung von Mobilität und Schutzaufwand; nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der direkte Wirkungsraum ist zunächst lokal bis regional begrenzt. Bei bestätigten Ausfällen oder Wiederholungen wären größere, aber weiterhin bedingte Folgen möglich."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht vernachlässigbar, weil ein bestätigter Angriff auf zivilen Verkehr unmittelbar Schutz- und Sicherheitsfragen berühren würde.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Suche nach einer unabhängigen Ereignisquelle abgeschlossen; keine solche Quelle gefunden. Der Bahnkontext wurde durch eine Quelle der Europäischen Kommission geprüft. Der Pfad bleibt deshalb ex ante, niedrig evidenziert und konditional.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der mögliche direkte Effekt betrifft einen begrenzten, grenznahen Verkehrsweg und dessen Nutzer; eine landesweite Reichweite ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-ec-transport"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ein bestätigter Angriff auf einen zivilen Zug oder die unmittelbare Bahnanlage wäre eine deutliche Sicherheitsgefährdung; Verletzte oder schwere Schäden sind jedoch nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine länger anhaltende Veränderung ist nicht belegt; modelliert wird zunächst eine kurzfristige bis mittelfristige Wirkung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Sicherheitsmaßnahmen, Nutzungsänderungen und Risikowahrnehmungen wären grundsätzlich korrigierbar; dauerhafte Lock-ins sind nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Reisende und Beschäftigte in einem zivilen Verkehrsraum wären betroffen. Eine extreme oder fundamental ungleiche Lastkonzentration ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der direkte Pfad betrifft zunächst einen einzelnen Verkehrsweg; weitergehende Systemwirkungen sind nur als mögliche Folge bei Wiederholung modelliert.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-ec-transport"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Bericht nennt einen Angriff, aber keine Verletzten und keine konkret belegte schwere Schutzgrenzverletzung. Eine Schutzgrenze wird daher nicht als tragweitenbestimmend gesetzt.",
+                  "reference_frame": "Schutz von Reisenden und Beschäftigten im zivilen Verkehr",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der menschliche Hauptpfad ist ein begrenztes negatives Potenzial unter der Bedingung, dass der berichtete Angriff und die Betroffenheit des zivilen Verkehrswegs bestätigt werden. Die niedrige Evidenz betrifft die Ereignisbestätigung und die Folgenbeobachtung, nicht die getrennt geschätzte mögliche Tragweite.",
+            "balance": {
+              "rationale": "Ein materieller positiver Gegenpfad desselben Gegenstands ist nicht belegt. Schutzmaßnahmen wären Risikominderung und keine positive Kompensation.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche erhöhte Unsicherheit und zusätzlicher Schutzbedarf im zivilen Bahnverkehr nahe der polnischen Grenze",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche erhöhte Unsicherheit und zusätzlicher Schutzbedarf im zivilen Bahnverkehr nahe der polnischen Grenze",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Mögliche geringe Ressourcen- und Emissionsverlagerung durch Verkehrsänderungen oder zusätzliche Sicherung",
+                "mechanism": "Falls der Vorfall zu Umleitungen, Ausfällen oder zusätzlichem Sicherungsaufwand führt, könnten Verkehrswege, Energiebedarf und lokale Belastungen geringfügig verschoben werden.",
+                "recipients": [
+                  "Umwelt im regionalen Verkehrskorridor",
+                  "Anwohnerinnen und Anwohner möglicher Ausweichrouten",
+                  "Betreiber der betroffenen Infrastruktur"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-ec-transport"
+                ],
+                "condition": "Der Vorfall wird bestätigt und führt tatsächlich zu Verkehrsänderungen oder zusätzlichem Sicherungsaufwand.",
+                "reference_space": "Betroffener Bahnverkehr und mögliche Ausweichrouten im regionalen Umfeld von Yahodyn",
+                "time_horizon": "Kurzfristig bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Verkehrs- oder Schutzänderungen können Ressourcenbedarf und Belastungen räumlich verlagern; Umfang und Richtung der konkreten Umweltwirkung sind nicht gemessen.",
+                "source_support": "Die Quellen belegen den Bahnkontext und den berichteten Vorfall, aber keine Umleitungen, Ausfälle, Emissionen oder Umweltfolgen.",
+                "limitations": "Keine Daten zu Verkehrsänderungen, Energieverbrauch, Emissionen, Schäden oder ökologischer Belastung. Die negative Richtung ist eine vorsichtige Modellhypothese für den Fall zusätzlicher oder verlagerter Verkehrs- und Sicherungsaufwände.",
+                "first_order": "Mögliche Änderung des Verkehrs- und Sicherungsaufwands.",
+                "second_order": "Mögliche räumliche Verlagerung kleiner lokaler Belastungen auf Ausweichrouten oder zusätzliche Infrastruktur.",
+                "third_order": "Keine belastbare dritte Ordnung aus dem Material ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ohne belegte Verkehrsänderung bleibt die potenzielle Umweltveränderung praktisch gering; ein kleiner indirekter Effekt ist unter der genannten Bedingung möglich."
+                },
+                "negligibility_rationale": "Im definierten regionalen Raum und kurzfristigen Zeitraum ist eine praktisch vernachlässigbare Wirkung plausibel, solange keine Verkehrsänderung eintritt. Der konditionale Pfad wird dennoch dokumentiert.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Suche nach Mechanismus- und Ereignisbelegen abgeschlossen. Der Bahnkontext wurde bestätigt, konkrete Verkehrs- und Umweltfolgen jedoch nicht. Die Richtung bleibt als schwache negative Modellhypothese konditional; die Evidenz bleibt niedrig.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Effekt wäre auf den betroffenen Verkehrskorridor und mögliche Ausweichrouten begrenzt.",
+                    "source_ids": [
+                      "research-ec-transport"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Umweltintensität ist nicht belegt; modelliert wird höchstens ein geringer indirekter Effekt.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-ec-transport"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte Umweltveränderung ist nicht belegt; der mögliche Pfad wäre zunächst kurzfristig bis mittelfristig.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Mögliche Verkehrs- oder Sicherungsverlagerungen wären grundsätzlich reversibel; keine irreversible ökologische Veränderung ist belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere ökologische oder soziale Lastkonzentration ist nicht belegt; mögliche lokale Belastungen wären begrenzt.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-ec-transport"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Eine ökologische Rückkopplung oder strukturelle Systemwirkung ist aus dem Material nicht ableitbar.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-ec-transport"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenzverletzung ist belegt oder bedingt konkret modelliert.",
+                  "reference_frame": "Ökologische Belastung durch mögliche Verkehrs- und Ressourcenverlagerung im regionalen Bahnraum",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 4,
+                  "divisor": 6,
+                  "raw": 0.6666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Für den Planeten ist nur ein sehr kleiner indirekter negativer Potenzialpfad vertretbar. Die Richtung wird nicht aus dem Ereignis selbst, sondern aus der konditionalen Annahme zusätzlicher oder verlagerter Verkehrs- und Sicherungsaufwände abgeleitet. Umweltfolgen sind nicht beobachtet.",
+            "balance": {
+              "rationale": "Ein positiver Umweltpfad ist nicht belegt. Die geringe Tragweite beruht auf Wirkungsraum, Bedingtheit und fehlender konkreter Verkehrsänderung, nicht auf fehlender Recherche oder niedriger Evidenz allein.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche geringe Ressourcen- und Emissionsverlagerung durch Verkehrsänderungen oder zusätzliche Sicherung",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche geringe Ressourcen- und Emissionsverlagerung durch Verkehrsänderungen oder zusätzliche Sicherung",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Möglicher politischer Druck auf europäische Sicherheits- und Unterstützungsdebatten durch einen Angriff nahe einer EU-Grenze",
+                "mechanism": "Ein bestätigter Angriff auf zivile Infrastruktur kann politische Akteure und Öffentlichkeit dazu veranlassen, über Unterstützung, Abschreckung, Schutz grenznaher Verbindungen und das Verhältnis zu Russland neu zu beraten.",
+                "recipients": [
+                  "europäische Regierungen",
+                  "Parlamente und zuständige Institutionen",
+                  "Öffentlichkeit in betroffenen Staaten"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "dlf-nachrichten",
+                  "research-ec-transport"
+                ],
+                "condition": "Der Angriff wird bestätigt und politische Akteure nehmen ihn als sicherheits- oder unterstützungspolitisch relevant auf.",
+                "reference_space": "Europäische Sicherheits- und Unterstützungspolitik im Zusammenhang mit dem Ukrainekrieg",
+                "time_horizon": "Kurzfristig bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die grenznahe Lage und die zugeschriebene politische Einordnung können die öffentliche und institutionelle Aufmerksamkeit erhöhen; daraus folgt nicht automatisch eine konkrete Entscheidung.",
+                "source_support": "Der Deutschlandfunk belegt zugeschriebene Einschätzungen von Kallas und Barrot sowie den Bahnbezug des Ereignisberichts. Die Europäische Kommission bestätigt den europäischen Bahnkontext Yahodyns. Keine Quelle belegt eine tatsächliche Entscheidungsänderung.",
+                "limitations": "Keine unabhängige Bestätigung des Motivs, keine Daten zu parlamentarischen Debatten, Meinungsänderungen, Regierungsentscheidungen oder institutionellen Reaktionen.",
+                "first_order": "Mögliche Intensivierung der politischen Debatte über Sicherheit und Unterstützung.",
+                "second_order": "Mögliche, aber nicht belegte Anpassungen bei Schutz- oder Unterstützungsentscheidungen.",
+                "third_order": "Bei wiederholten Vorfällen mögliche Normalisierung einer dauerhaften Sicherheitslogik oder Verschiebung politischer Prioritäten; nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Wirkung kann von einem kurzfristigen Debattenimpuls bis zu begrenzten institutionellen Reaktionen reichen. Eine strukturelle Veränderung demokratischer Institutionen ist nicht belegt."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht vernachlässigbar, weil ein bestätigter Angriff nahe einer EU-Grenze politisch aufgegriffen werden könnte. Sein Eintritt und seine Stärke bleiben jedoch unsicher.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Suche nach unabhängigen Belegen für politische Reaktionen und Entscheidungsänderungen abgeschlossen; solche Belege wurden nicht gefunden. Der Pfad bleibt eine bedingte politische Wirkungsannahme auf niedriger Evidenzbasis.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Der mögliche politische Bezug reicht über den einzelnen Zug hinaus in europäische Sicherheitsdebatten, bleibt aber auf den Konflikt- und Grenzkontext begrenzt.",
+                    "source_ids": [
+                      "dlf-nachrichten",
+                      "research-ec-transport"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ein Debattenimpuls oder politischer Druck wäre potenziell deutlich; eine konkrete institutionelle Änderung ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Politische Debatten können kurz- bis mittelfristig anhalten; eine dauerhafte Wirkung ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Debatten und einzelne politische Reaktionen sind grundsätzlich korrigierbar; dauerhafte Lock-ins sind nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffen wären Institutionen und Öffentlichkeit in einem angespannten sicherheitspolitischen Kontext; eine extreme Lastkonzentration oder konkrete Schutzgrenzverletzung ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad kann von einem Ereignis über politische Deutungen in institutionelle Entscheidungen führen. Eine dritte Ordnung oder Veränderung demokratischer Grundstrukturen ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete Einschränkung demokratischer Rechte, keine Manipulation von Wahlen und keine schwere demokratische Schutzgrenzverletzung ist belegt oder bedingt konkret modelliert.",
+                  "reference_frame": "Demokratische Entscheidungsfähigkeit, institutionelle Korrekturfähigkeit und pluralistische politische Beratung",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der demokratische Hauptpfad betrifft ein mögliches negatives Kommunikations- und Entscheidungspotenzial, nicht eine beobachtete Wirkung. Die zugeschriebenen Bewertungen von Kallas und Barrot liefern politischen Kontext, aber keinen Nachweis tatsächlicher Einflussnahme.",
+            "balance": {
+              "rationale": "Ein konkreter positiver Gegenpfad desselben Gegenstands ist nicht angekündigt oder belegt. Schutz- oder Aufklärungsmaßnahmen wären Risikominderung und keine positive Kompensation.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Möglicher politischer Druck auf europäische Sicherheits- und Unterstützungsdebatten durch einen Angriff nahe einer EU-Grenze",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Möglicher politischer Druck auf europäische Sicherheits- und Unterstützungsdebatten durch einen Angriff nahe einer EU-Grenze",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Der Deutschlandfunk berichtet über einen Drohnenangriff auf einen Zug beziehungsweise Bahnanlagen in Yahodyn, keine Verletzten sowie zugeschriebene Bewertungen von Kallas und Barrot."
+          },
+          {
+            "source_id": "research-ec-transport",
+            "functions": [
+              "reference"
+            ],
+            "supported_claim": "Die Europäische Kommission ordnet Yahodyn in das europäische Bahnnetz ein; die Quelle bestätigt nicht den konkreten Angriff."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [
+        {
+          "url": "https://transport.ec.europa.eu/system/files/2016-09/2010_03_situation_and_perspectives_of_the_rail_market.pdf",
+          "title": "Situation and perspectives of the rail market TREN/R1/350-2008 lot 2",
+          "publisher": "European Commission",
+          "source_id": "research-ec-transport",
+          "source_function": "reference"
+        }
+      ],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Mögliche erhöhte Unsicherheit und zusätzlicher Schutzbedarf im zivilen Bahnverkehr nahe der polnischen Grenze",
+              "mechanism": "Wenn der berichtete Angriff einen Passagierzug oder unmittelbar genutzte Bahnanlagen betraf, kann die Sicherheitslage des Verkehrswegs und die Risikowahrnehmung von Reisenden, Beschäftigten und Betreibern vorübergehend schlechter werden.",
+              "recipients": [
+                "Reisende",
+                "Beschäftigte im Bahnverkehr",
+                "Betreiber und zuständige Sicherheitsstellen"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-ec-transport"
+              ],
+              "condition": "Der Angriff und die Betroffenheit des zivilen Verkehrswegs werden unabhängig bestätigt.",
+              "reference_space": "Betroffener ukrainischer Bahnverkehr in Yahodyn und seinem unmittelbaren grenznahen Umfeld",
+              "time_horizon": "Unmittelbar bis mittelfristig nach dem berichteten Vorfall",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Ein bestätigter Angriff auf zivile Verkehrsinfrastruktur kann Sicherheitswahrnehmung, Schutzbedarf und Nutzung eines Verkehrswegs beeinflussen.",
+              "source_support": "Der Deutschlandfunk berichtet den Angriff und keine Verletzten; die Europäische Kommission bestätigt den Bahnbezug Yahodyns. Keine Quelle belegt bereits eingetretene Verhaltens- oder Verkehrseffekte.",
+              "limitations": "Keine unabhängige Ereignisbestätigung, keine Angaben zu Schäden, Ausfällen, Umleitungen, Schutzmaßnahmen oder längerfristigem Verhalten.",
+              "first_order": "Mögliche Verschlechterung der unmittelbaren Sicherheitslage und des Sicherheitsgefühls.",
+              "second_order": "Mögliche zusätzliche Kontrollen, Sicherung oder vorsichtigere Nutzung des Verkehrswegs.",
+              "third_order": "Bei Wiederholung mögliche Verlagerung von Mobilität und Schutzaufwand; nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der direkte Wirkungsraum ist zunächst lokal bis regional begrenzt. Bei bestätigten Ausfällen oder Wiederholungen wären größere, aber weiterhin bedingte Folgen möglich."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht vernachlässigbar, weil ein bestätigter Angriff auf zivilen Verkehr unmittelbar Schutz- und Sicherheitsfragen berühren würde.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Suche nach einer unabhängigen Ereignisquelle abgeschlossen; keine solche Quelle gefunden. Der Bahnkontext wurde durch eine Quelle der Europäischen Kommission geprüft. Der Pfad bleibt deshalb ex ante, niedrig evidenziert und konditional.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der mögliche direkte Effekt betrifft einen begrenzten, grenznahen Verkehrsweg und dessen Nutzer; eine landesweite Reichweite ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-ec-transport"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ein bestätigter Angriff auf einen zivilen Zug oder die unmittelbare Bahnanlage wäre eine deutliche Sicherheitsgefährdung; Verletzte oder schwere Schäden sind jedoch nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine länger anhaltende Veränderung ist nicht belegt; modelliert wird zunächst eine kurzfristige bis mittelfristige Wirkung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Sicherheitsmaßnahmen, Nutzungsänderungen und Risikowahrnehmungen wären grundsätzlich korrigierbar; dauerhafte Lock-ins sind nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Reisende und Beschäftigte in einem zivilen Verkehrsraum wären betroffen. Eine extreme oder fundamental ungleiche Lastkonzentration ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der direkte Pfad betrifft zunächst einen einzelnen Verkehrsweg; weitergehende Systemwirkungen sind nur als mögliche Folge bei Wiederholung modelliert.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-ec-transport"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Bericht nennt einen Angriff, aber keine Verletzten und keine konkret belegte schwere Schutzgrenzverletzung. Eine Schutzgrenze wird daher nicht als tragweitenbestimmend gesetzt.",
+                "reference_frame": "Schutz von Reisenden und Beschäftigten im zivilen Verkehr",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der menschliche Hauptpfad ist ein begrenztes negatives Potenzial unter der Bedingung, dass der berichtete Angriff und die Betroffenheit des zivilen Verkehrswegs bestätigt werden. Die niedrige Evidenz betrifft die Ereignisbestätigung und die Folgenbeobachtung, nicht die getrennt geschätzte mögliche Tragweite.",
+          "balance": {
+            "rationale": "Ein materieller positiver Gegenpfad desselben Gegenstands ist nicht belegt. Schutzmaßnahmen wären Risikominderung und keine positive Kompensation.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche erhöhte Unsicherheit und zusätzlicher Schutzbedarf im zivilen Bahnverkehr nahe der polnischen Grenze",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche erhöhte Unsicherheit und zusätzlicher Schutzbedarf im zivilen Bahnverkehr nahe der polnischen Grenze",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Mögliche geringe Ressourcen- und Emissionsverlagerung durch Verkehrsänderungen oder zusätzliche Sicherung",
+              "mechanism": "Falls der Vorfall zu Umleitungen, Ausfällen oder zusätzlichem Sicherungsaufwand führt, könnten Verkehrswege, Energiebedarf und lokale Belastungen geringfügig verschoben werden.",
+              "recipients": [
+                "Umwelt im regionalen Verkehrskorridor",
+                "Anwohnerinnen und Anwohner möglicher Ausweichrouten",
+                "Betreiber der betroffenen Infrastruktur"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-ec-transport"
+              ],
+              "condition": "Der Vorfall wird bestätigt und führt tatsächlich zu Verkehrsänderungen oder zusätzlichem Sicherungsaufwand.",
+              "reference_space": "Betroffener Bahnverkehr und mögliche Ausweichrouten im regionalen Umfeld von Yahodyn",
+              "time_horizon": "Kurzfristig bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Verkehrs- oder Schutzänderungen können Ressourcenbedarf und Belastungen räumlich verlagern; Umfang und Richtung der konkreten Umweltwirkung sind nicht gemessen.",
+              "source_support": "Die Quellen belegen den Bahnkontext und den berichteten Vorfall, aber keine Umleitungen, Ausfälle, Emissionen oder Umweltfolgen.",
+              "limitations": "Keine Daten zu Verkehrsänderungen, Energieverbrauch, Emissionen, Schäden oder ökologischer Belastung. Die negative Richtung ist eine vorsichtige Modellhypothese für den Fall zusätzlicher oder verlagerter Verkehrs- und Sicherungsaufwände.",
+              "first_order": "Mögliche Änderung des Verkehrs- und Sicherungsaufwands.",
+              "second_order": "Mögliche räumliche Verlagerung kleiner lokaler Belastungen auf Ausweichrouten oder zusätzliche Infrastruktur.",
+              "third_order": "Keine belastbare dritte Ordnung aus dem Material ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ohne belegte Verkehrsänderung bleibt die potenzielle Umweltveränderung praktisch gering; ein kleiner indirekter Effekt ist unter der genannten Bedingung möglich."
+              },
+              "negligibility_rationale": "Im definierten regionalen Raum und kurzfristigen Zeitraum ist eine praktisch vernachlässigbare Wirkung plausibel, solange keine Verkehrsänderung eintritt. Der konditionale Pfad wird dennoch dokumentiert.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Suche nach Mechanismus- und Ereignisbelegen abgeschlossen. Der Bahnkontext wurde bestätigt, konkrete Verkehrs- und Umweltfolgen jedoch nicht. Die Richtung bleibt als schwache negative Modellhypothese konditional; die Evidenz bleibt niedrig.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Effekt wäre auf den betroffenen Verkehrskorridor und mögliche Ausweichrouten begrenzt.",
+                  "source_ids": [
+                    "research-ec-transport"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Umweltintensität ist nicht belegt; modelliert wird höchstens ein geringer indirekter Effekt.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-ec-transport"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Umweltveränderung ist nicht belegt; der mögliche Pfad wäre zunächst kurzfristig bis mittelfristig.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Mögliche Verkehrs- oder Sicherungsverlagerungen wären grundsätzlich reversibel; keine irreversible ökologische Veränderung ist belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere ökologische oder soziale Lastkonzentration ist nicht belegt; mögliche lokale Belastungen wären begrenzt.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-ec-transport"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Eine ökologische Rückkopplung oder strukturelle Systemwirkung ist aus dem Material nicht ableitbar.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-ec-transport"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenzverletzung ist belegt oder bedingt konkret modelliert.",
+                "reference_frame": "Ökologische Belastung durch mögliche Verkehrs- und Ressourcenverlagerung im regionalen Bahnraum",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 4,
+                "divisor": 6,
+                "raw": 0.6666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Für den Planeten ist nur ein sehr kleiner indirekter negativer Potenzialpfad vertretbar. Die Richtung wird nicht aus dem Ereignis selbst, sondern aus der konditionalen Annahme zusätzlicher oder verlagerter Verkehrs- und Sicherungsaufwände abgeleitet. Umweltfolgen sind nicht beobachtet.",
+          "balance": {
+            "rationale": "Ein positiver Umweltpfad ist nicht belegt. Die geringe Tragweite beruht auf Wirkungsraum, Bedingtheit und fehlender konkreter Verkehrsänderung, nicht auf fehlender Recherche oder niedriger Evidenz allein.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche geringe Ressourcen- und Emissionsverlagerung durch Verkehrsänderungen oder zusätzliche Sicherung",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche geringe Ressourcen- und Emissionsverlagerung durch Verkehrsänderungen oder zusätzliche Sicherung",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Möglicher politischer Druck auf europäische Sicherheits- und Unterstützungsdebatten durch einen Angriff nahe einer EU-Grenze",
+              "mechanism": "Ein bestätigter Angriff auf zivile Infrastruktur kann politische Akteure und Öffentlichkeit dazu veranlassen, über Unterstützung, Abschreckung, Schutz grenznaher Verbindungen und das Verhältnis zu Russland neu zu beraten.",
+              "recipients": [
+                "europäische Regierungen",
+                "Parlamente und zuständige Institutionen",
+                "Öffentlichkeit in betroffenen Staaten"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "dlf-nachrichten",
+                "research-ec-transport"
+              ],
+              "condition": "Der Angriff wird bestätigt und politische Akteure nehmen ihn als sicherheits- oder unterstützungspolitisch relevant auf.",
+              "reference_space": "Europäische Sicherheits- und Unterstützungspolitik im Zusammenhang mit dem Ukrainekrieg",
+              "time_horizon": "Kurzfristig bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die grenznahe Lage und die zugeschriebene politische Einordnung können die öffentliche und institutionelle Aufmerksamkeit erhöhen; daraus folgt nicht automatisch eine konkrete Entscheidung.",
+              "source_support": "Der Deutschlandfunk belegt zugeschriebene Einschätzungen von Kallas und Barrot sowie den Bahnbezug des Ereignisberichts. Die Europäische Kommission bestätigt den europäischen Bahnkontext Yahodyns. Keine Quelle belegt eine tatsächliche Entscheidungsänderung.",
+              "limitations": "Keine unabhängige Bestätigung des Motivs, keine Daten zu parlamentarischen Debatten, Meinungsänderungen, Regierungsentscheidungen oder institutionellen Reaktionen.",
+              "first_order": "Mögliche Intensivierung der politischen Debatte über Sicherheit und Unterstützung.",
+              "second_order": "Mögliche, aber nicht belegte Anpassungen bei Schutz- oder Unterstützungsentscheidungen.",
+              "third_order": "Bei wiederholten Vorfällen mögliche Normalisierung einer dauerhaften Sicherheitslogik oder Verschiebung politischer Prioritäten; nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Wirkung kann von einem kurzfristigen Debattenimpuls bis zu begrenzten institutionellen Reaktionen reichen. Eine strukturelle Veränderung demokratischer Institutionen ist nicht belegt."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht vernachlässigbar, weil ein bestätigter Angriff nahe einer EU-Grenze politisch aufgegriffen werden könnte. Sein Eintritt und seine Stärke bleiben jedoch unsicher.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Suche nach unabhängigen Belegen für politische Reaktionen und Entscheidungsänderungen abgeschlossen; solche Belege wurden nicht gefunden. Der Pfad bleibt eine bedingte politische Wirkungsannahme auf niedriger Evidenzbasis.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Der mögliche politische Bezug reicht über den einzelnen Zug hinaus in europäische Sicherheitsdebatten, bleibt aber auf den Konflikt- und Grenzkontext begrenzt.",
+                  "source_ids": [
+                    "dlf-nachrichten",
+                    "research-ec-transport"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ein Debattenimpuls oder politischer Druck wäre potenziell deutlich; eine konkrete institutionelle Änderung ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Politische Debatten können kurz- bis mittelfristig anhalten; eine dauerhafte Wirkung ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Debatten und einzelne politische Reaktionen sind grundsätzlich korrigierbar; dauerhafte Lock-ins sind nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffen wären Institutionen und Öffentlichkeit in einem angespannten sicherheitspolitischen Kontext; eine extreme Lastkonzentration oder konkrete Schutzgrenzverletzung ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad kann von einem Ereignis über politische Deutungen in institutionelle Entscheidungen führen. Eine dritte Ordnung oder Veränderung demokratischer Grundstrukturen ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete Einschränkung demokratischer Rechte, keine Manipulation von Wahlen und keine schwere demokratische Schutzgrenzverletzung ist belegt oder bedingt konkret modelliert.",
+                "reference_frame": "Demokratische Entscheidungsfähigkeit, institutionelle Korrekturfähigkeit und pluralistische politische Beratung",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der demokratische Hauptpfad betrifft ein mögliches negatives Kommunikations- und Entscheidungspotenzial, nicht eine beobachtete Wirkung. Die zugeschriebenen Bewertungen von Kallas und Barrot liefern politischen Kontext, aber keinen Nachweis tatsächlicher Einflussnahme.",
+          "balance": {
+            "rationale": "Ein konkreter positiver Gegenpfad desselben Gegenstands ist nicht angekündigt oder belegt. Schutz- oder Aufklärungsmaßnahmen wären Risikominderung und keine positive Kompensation.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Möglicher politischer Druck auf europäische Sicherheits- und Unterstützungsdebatten durch einen Angriff nahe einer EU-Grenze",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Möglicher politischer Druck auf europäische Sicherheits- und Unterstützungsdebatten durch einen Angriff nahe einer EU-Grenze",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "second_order",
+            "path": "Eine bestätigte Gefährdung kann zu zusätzlicher Sicherung, Umleitungen oder vorsichtigerer Nutzung grenznaher Verkehrsverbindungen führen. Umfang und Dauer sind offen.",
+            "direction": "open",
+            "condition": "Erfordert bestätigte Gefährdung und anschließende Entscheidungen von Verkehrs- oder Sicherheitsbehörden; konkrete Maßnahmen sind nicht belegt.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "human",
+              "democracy"
+            ]
+          },
+          {
+            "order": "third_order",
+            "path": "Falls sich wiederholte Angriffe auf grenznahe Verkehrswege bestätigen, könnten sie Vertrauen in regionale Verbindungen und politische Sicherheitsentscheidungen beeinflussen. Eine solche Kaskade ist im Material nicht belegt.",
+            "direction": "open",
+            "condition": "Erfordert Wiederholung oder weitere bestätigte Angriffe sowie beobachtbare Änderungen bei Nutzung oder politischen Entscheidungen.",
+            "evidence": "open",
+            "claim_ids": [],
+            "dimensions": [
+              "human",
+              "democracy"
+            ]
+          }
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T09:43:11.294Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T08:54:16.000Z",
+      "last_updated": "2026-09-14T09:43:11.294Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-8c6c8e0fb82b53f540aa",
+      "case_file": null,
+      "source_published_at": "2026-09-14T08:54:16.000Z",
+      "published_at": "2026-09-14T09:43:11.294Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Angaben zum Angriff, zum angegriffenen Zug und zum Aufenthalt von Sicherheitsberatern am Bahnhof sollten anhand einer unabhängigen Original- oder Behördenquelle geprüft werden.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung von Ort, Ziel, Ablauf und möglichen Schäden oder Verletzten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-7200f90af3d874a1",
+          "announced_at": "2026-09-14T08:54:16.000Z",
+          "follow_up_date": "2026-09-21T09:43:11.294Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Es ist zu prüfen, ob sich die zugeschriebene Einschätzung eines Einschüchterungs- oder Spaltungsziels durch weitere amtliche oder unabhängige Quellen belegen lässt.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Weitere unabhängig belegte Aussagen oder Erkenntnisse zum Motiv",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-3fff516ff0c88c4f",
+          "announced_at": "2026-09-14T08:54:16.000Z",
+          "follow_up_date": "2026-09-21T09:43:11.294Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/russischer-angriff-auf-personenzug-eu-aussenbeauftragte-kallas-spricht-einschuechterungsversuch-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T08:54:16.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-53ce09a75455bdf7",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-53ce09a75455bdf7-f84218633f73aa50-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-53ce09a75455bdf7-9be49d7bd595ff95-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-53ce09a75455bdf7-b1bf158eb3561706-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "telemedizin-kabine-in-heringen-neues-patienten-angebot-in-apotheke-55bdf7",
+      "title": "Telemedizin-Kabine in Heringen: Neues Patienten-Angebot in Apotheke",
+      "source_summary": "In einer Apotheke im osthessischen Heringen können Menschen seit wenigen Wochen per Videosprechstunde ärztlichen Rat erhalten. Die Kabine bietet die Auswahl zugeschalteter Ärztinnen und Ärzte; laut Bericht können dort auch Medikamente verschrieben, Krankschreibungen ausgestellt und Vitalwerte gemessen werden. Der Betreiber bezeichnet sie als erste Einrichtung dieser Art in Hessen.\n\nDas Angebot ist bislang wenig genutzt worden: In den ersten beiden Monaten nahmen es laut Betreiber vier Menschen in Anspruch. Für Versicherte entstehen keine Zusatzkosten, die Apotheke kann aktuell 30 Euro abrechnen. Der Betreiber sieht die Kabine als Ergänzung für Randzeiten und ländliche Versorgung, während Hausärzte das Konzept kritisieren. Unklar bleiben die längerfristige Nachfrage, die medizinische Einordnung und die Wirkung auf die regionale Versorgung.",
+      "summary": "In Heringen können Menschen in einer Apotheke per Videosprechstunde ärztlichen Rat erhalten. Die neue Kabine soll Versorgungslücken abfedern, wurde bislang aber nur von vier Menschen genutzt und wird von Hausärzten kritisiert.",
+      "detail_summary": "In einer Apotheke in Heringen steht seit wenigen Wochen eine Telemedizin-Kabine. Menschen können dort per Videosprechstunde Ärztinnen und Ärzte erreichen; auch Vitalwerte lassen sich messen. Der Betreiber versteht das Angebot als Ergänzung für Randzeiten und eine Region mit älteren Arztpraxen. Bislang blieb die Nachfrage gering: In den ersten beiden Monaten nutzten vier Menschen die Kabine. Ob daraus ein verlässlicher Zugang zur Versorgung entsteht, ist deshalb offen; der Bericht liefert dafür noch keine längerfristigen Daten.",
+      "why_relevant": "Der Bericht beschreibt eine konkrete neue Versorgungsinfrastruktur in einer Kleinstadt. Nachrichtenwert entsteht durch die Verbindung von technischem Angebot, behaupteter Versorgungslücke, geringer bisheriger Nutzung und Kritik aus der Ärzteschaft.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Eröffnung und laufende Nutzung einer Telemedizin-Kabine in einer Apotheke in Heringen; berichtet am 14. September 2026",
+        "evaluation_target": {
+          "label": "Telemedizin-Kabine als ergänzendes ambulantes Versorgungsangebot",
+          "type": "technology"
+        },
+        "baseline": "Vorhandene ambulante Versorgung ohne diese konkrete Kabine; eine vollständige Versorgungslücke und ein Vorher-Nachher-Effekt sind nicht belegt.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne die Kabine entfiele der zusätzliche Zugang zu Videosprechstunden in dieser Apotheke. Ob Betroffene stattdessen eine Arztpraxis, einen Notdienst oder kein Angebot genutzt hätten, ist offen.",
+        "reference_frame": [
+          "Zugang zu ambulanter Gesundheitsversorgung",
+          "Versorgungsqualität und Erreichbarkeit in einer ländlichen Region",
+          "Agenda 2030/SDG 3 Gesundheit und Wohlergehen"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Kabine kann einen zusätzlichen Zugang zu ärztlicher Beratung schaffen. Die geringe Nutzung, fehlende Qualitäts- und Vergleichsdaten sowie die offene Abgrenzung zur persönlichen Untersuchung begrenzen die Aussage auf ein lokales, bedingtes Potenzial.",
+            "planet": "Ein möglicher Wegeeffekt steht dem Ressourcen- und Energieaufwand der technischen Infrastruktur gegenüber. Dafür wurden keine Nutzungs-, Wege- oder Verbrauchsdaten gefunden; eine relevante ökologische Zustandsveränderung ist nicht belegt.",
+            "democracy": "Die lokale Erprobung kann eine Debatte über Zuständigkeiten, Verantwortung und die Rolle von Apotheken auslösen. Eine institutionelle oder politische Zustandsveränderung ist nicht belegt; der Pfad bleibt schwach und hypothetisch."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Eine technische Zugangsmöglichkeit für ärztliche Videosprechstunden wird in einer Apotheke bereitgestellt; die bisherige Nutzung ist gering.",
+          "second_order": "Bei ausreichender Nutzung könnte der Zugang zu Beratung in Randzeiten ergänzt werden. Bei geringer Nutzung bleibt der Beitrag lokal und die wirtschaftliche Tragfähigkeit unsicher.",
+          "third_order": "Erfolg oder Scheitern der Erprobung könnte die Diskussion über weitere telemedizinische Versorgungsmodelle beeinflussen; eine Übertragung auf andere Regionen ist nicht belegt.",
+          "enablement": [],
+          "counter_evidence": [
+            "Laut Betreiber nutzten in den ersten beiden Monaten vier Menschen die Kabine.",
+            "Der Hessische Hausärzteverband kritisiert eine isolierte Videosprechstunde ohne Einbindung in ein lokales Versorgungskonzept.",
+            "Es liegen keine Daten zu Behandlungsergebnissen, Wartezeiten, Versorgungslücken oder einer verbesserten regionalen Versorgung vor."
+          ],
+          "source_independence": "Die Ereignisgrundlage ist eine journalistische Einzelquelle mit zugeschriebenen Angaben des Betreibers, Herstellers und Hausärzteverbands. Zwei gezielte Recherchepassagen auf zugelassenen amtlichen Quellen wurden durchgeführt; wegen fehlender tatsächlich gelesener, exakt belegbarer Originalpassagen wurden daraus keine neuen research_sources übernommen. Die Zusatzrecherche ergab daher keinen unabhängigen Nachweis für konkrete Folgen dieses lokalen Angebots.",
+          "institutional_status": "Laufendes lokales Angebot seit Juli 2026; kein belegter Beschluss, keine Regeländerung und keine flächendeckende Umsetzung."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Zusätzlicher Zugang zu ärztlicher Videosprechstunde in einer Apotheke",
+                "mechanism": "Die Kabine stellt Raum, Technik und zugeschaltete Ärztinnen und Ärzte für Videosprechstunden bereit. Dadurch kann ein zusätzlicher Zugang insbesondere außerhalb üblicher Praxiszeiten entstehen.",
+                "recipients": [
+                  "Menschen in Heringen und Umgebung",
+                  "Patientinnen und Patienten mit passendem Beratungsbedarf"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Das Angebot muss erreichbar, technisch funktionsfähig, medizinisch für den jeweiligen Fall geeignet und ausreichend genutzt werden; Termine müssen verfügbar sein.",
+                "reference_space": "Heringen und angrenzende ländliche Region",
+                "time_horizon": "laufender Betrieb; mögliche mittelfristige Versorgungswirkung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Menschen können und wollen die Kabine nutzen; Videosprechstunden sind für die jeweiligen Fälle geeignet; die Kabine ergänzt tatsächlich einen fehlenden oder schwer erreichbaren Zugang.",
+                "source_support": "Die Quelle belegt die Einrichtung, Videosprechstunden, Vitalmessungen, die beabsichtigte Nutzung in Randzeiten und die geringe bisherige Nutzung, nicht aber eine verbesserte Versorgung.",
+                "limitations": "Keine unabhängigen Daten zu Zugang, Qualität, Behandlungsergebnissen, Wartezeiten oder einem Vergleich ohne Kabine.",
+                "first_order": "Ärztliche Beratung wird über einen zusätzlichen Zugangskanal verfügbar.",
+                "second_order": "Bei ausreichender Nutzung kann sich die Erreichbarkeit in Randzeiten verbessern; bei geringer Nutzung bleibt der Effekt begrenzt.",
+                "third_order": "Das Modell könnte die lokale Diskussion über ergänzende Versorgungsformen beeinflussen; eine strukturelle Übertragung ist offen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Raum ist auf eine Kleinstadt und ihr Umfeld begrenzt. Eine relevante Zugangswirkung ist bei stabiler Nutzung plausibel, aber wegen der bisher geringen Nutzung und fehlender Qualitätsdaten nicht höher abzusichern."
+                },
+                "negligibility_rationale": "Nicht vernachlässigbar, weil ein zusätzlicher Versorgungskanal tatsächlich eingerichtet ist; eine Verbesserung des Gesundheitszustands oder der regionalen Versorgung ist jedoch nicht beobachtet.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Zusatzrecherche fand keinen exakt belegbaren unabhängigen Wirkungsnachweis. Der Pfad bleibt als niedrig evidentes, bedingtes Potenzial bestehen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Das Angebot richtet sich an eine begrenzte lokale Gruppe in Heringen und Umgebung.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Für einzelne geeignete Fälle kann der Zugang begrenzt hilfreich sein; eine schwere oder fundamentale Gesundheitsveränderung ist nicht belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Der Betrieb ist laufend angelegt, seine wirtschaftliche und organisatorische Dauerhaftigkeit bleibt aber offen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Das Angebot kann grundsätzlich beendet oder verändert werden; dauerhafte Zustandsänderungen sind nicht belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ein zusätzlicher Zugang kann für Menschen mit eingeschränkter Mobilität oder außerhalb von Praxiszeiten relevant sein. Eine konkrete ungleiche Betroffenheit ist jedoch nicht nachgewiesen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Bisher ist nur ein begrenzter direkter Folgepfad plausibel; strukturelle Rückkopplungen sind nicht belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere konkrete Schutzgrenzverletzung im humanen Bereich ist nicht belegt und wird auch ex ante nicht als notwendige Folge modelliert.",
+                  "reference_frame": "Zugang und Sicherheit ambulanter Gesundheitsversorgung",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Geringe Nutzung kann die wirtschaftliche Tragfähigkeit des lokalen Angebots begrenzen",
+                "mechanism": "Die Apotheke hat laut Bericht mehrere zehntausend Euro investiert; zugleich wurde die Kabine in den ersten beiden Monaten nur von vier Menschen genutzt.",
+                "recipients": [
+                  "Betreiber der Apotheke",
+                  "Menschen in Heringen und Umgebung"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "medium",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Die geringe Nachfrage hält an und es entstehen keine ausreichenden Einnahmen oder anderen Trägerstrukturen.",
+                "reference_space": "Betrieb der Kabine in Heringen",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die bisherige Nutzung ist für die Wirtschaftlichkeit relevant; weitere Finanzierungsquellen sind nicht bekannt.",
+                "source_support": "Die Quelle nennt Investitionshöhe, Nutzung von vier Personen und die Einschätzung des Betreibers, dass sich das Angebot aktuell betriebswirtschaftlich nicht rentiert.",
+                "limitations": "Keine vollständige Kostenrechnung, keine Prognose und keine Information zu alternativen Finanzierungen.",
+                "first_order": "Geringe Nutzung begrenzt Einnahmen.",
+                "second_order": "Der weitere Betrieb könnte von zusätzlicher Nachfrage oder Finanzierung abhängen.",
+                "third_order": "Ein Scheitern könnte die lokale Erprobung neuer Versorgungswege bremsen; das ist nicht als eingetretene Folge belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 2,
+                  "rationale": "Der mögliche wirtschaftliche Effekt bleibt lokal, kann aber bei Einstellung des Angebots den positiven Zugangspfad beenden."
+                },
+                "negligibility_rationale": "Nicht vollständig vernachlässigbar, weil der Betreiber die aktuelle fehlende Rentabilität ausdrücklich beschreibt; ein konkreter Schaden über das lokale Projekt hinaus ist nicht belegt.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Zusatzrecherche fand keinen ergänzenden Wirtschaftlichkeitsbeleg. Das lokale Betriebsrisiko bleibt durch die journalistische Quelle ausreichend als bedingter Nebenpfad beschrieben.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen sind zunächst der lokale Betreiber und das örtliche Angebot.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Investition und fehlende Rentabilität sind für den Betrieb relevant; ein existenzieller Schaden ist nicht belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Das Risiko besteht über die Betriebsdauer, deren Länge offen ist.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Der Betrieb kann beendet oder angepasst werden.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere Schutzbedürftigkeit der unmittelbar Betroffenen ist nicht konkret belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt auf das lokale Angebot begrenzt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Schutzgrenzverletzung ist belegt.",
+                  "reference_frame": "wirtschaftliche Tragfähigkeit des lokalen Angebots",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Der positive Hauptpfad betrifft ein zusätzliches Zugangsangebot, nicht bereits verbesserte Versorgung. Die geringe Nutzung, fehlende Qualitätsdaten und offene Wirtschaftlichkeit begrenzen die Tragweite. Das lokale Betriebsrisiko wird nicht als Ausgleich gegen den Zugangspfad verrechnet.",
+            "balance": {
+              "rationale": "Der positive Zugangspfad und das lokale Betriebsrisiko betreffen unterschiedliche Zustandsveränderungen und sind keine gleichartigen Hauptpfade desselben Schutzguts.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Zusätzlicher Zugang zu ärztlicher Videosprechstunde in einer Apotheke",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzlicher Zugang zu ärztlicher Videosprechstunde in einer Apotheke",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Mögliche Veränderung von Wegeaufwand und technischem Ressourcenverbrauch",
+                "mechanism": "Ein zusätzlicher lokaler Versorgungsort könnte einzelne Wege zu weiter entfernten Praxen vermeiden, benötigt aber Technik, Strom und einen eigenen Raum.",
+                "recipients": [
+                  "Menschen in Heringen und Umgebung",
+                  "lokale Umwelt"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Die Kabine muss tatsächlich Wege ersetzen und darf nicht überwiegend zusätzliche Nutzung erzeugen; dafür wären Nutzungs-, Wege- und Verbrauchsdaten erforderlich.",
+                "reference_space": "lokaler Betrieb in Heringen",
+                "time_horizon": "laufender Betrieb; mögliche Folgen bei längerer Nutzung",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ein Teil der Nutzungen würde sonst einen längeren Weg erfordern; Energie- und Materialaufwand der Kabine bleibt begrenzt.",
+                "source_support": "Die Quelle belegt den Standort und die technische Ausstattung, aber keine Wegedistanzen, Energieverbräuche oder ökologischen Folgen.",
+                "limitations": "Die Richtung ist nicht belastbar bestimmbar; es fehlen Vergleichsdaten zu vermiedenen Wegen sowie zusätzlichem Strom-, Material- und Datenaufwand.",
+                "first_order": "Versorgung wird an einem weiteren technischen Ort angeboten.",
+                "second_order": "Mögliche vermiedene Wege und zusätzlicher Strom- und Materialeinsatz können sich gegenüberstehen.",
+                "third_order": "Eine größere Verbreitung könnte Verkehrs- und Ressourcenpfade verändern; eine solche Entwicklung ist nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Für das einzelne lokale Angebot ist nur eine praktisch geringe ökologische Zustandsveränderung plausibel; Richtung und Umfang bleiben wegen fehlender Daten offen."
+                },
+                "negligibility_rationale": "Der Pfad ist als schwach und lokal begrenzt modelliert; eine konkrete ökologische Zustandsveränderung ist nicht belegt.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Zusatzrecherche ergab keinen exakt belegbaren ökologischen Wirkungsnachweis für dieses Angebot. Der Pfad bleibt offen und niedrig tragfähig.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Bisher betrifft der Pfad einen einzelnen Standort mit sehr geringer Nutzung.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete ökologische Intensität ist nicht belegt; der technische Betrieb dürfte im lokalen Maßstab begrenzt sein, ohne dass Verbrauchsdaten vorliegen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Technischer Betrieb kann über längere Zeit laufen, seine Dauer ist aber offen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Ein möglicher lokaler Wege- oder Ressourcenverbrauch wäre grundsätzlich reversibel; eine dauerhafte Zustandsänderung ist nicht belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Eine konkrete ökologische Schutzbetroffenheit ist nicht belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine belastbare ökologische Rückkopplung oder systemische Folge ist belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                  "reference_frame": "lokaler Ressourcen-, Energie- und Wegeaufwand",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 4,
+                  "divisor": 6,
+                  "raw": 0.6666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Für die Planet-Dimension bleibt nur ein schwacher offener Modellpfad. Die geringe Nutzung begrenzt die mögliche Tragweite, zugleich fehlen Daten, um vermiedene Wege und zusätzlichen Technikaufwand gegeneinander zu bewerten.",
+            "balance": {
+              "rationale": "Es liegen keine materiellen, vergleichbaren positiven oder negativen Umweltpfade mit ausreichender Evidenz vor.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung von Wegeaufwand und technischem Ressourcenverbrauch",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung von Wegeaufwand und technischem Ressourcenverbrauch",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Lokale Erprobung kann die Debatte über die Rolle von Apotheken und Telemedizin beeinflussen",
+                "mechanism": "Ein neues Versorgungsmodell erzeugt Erfahrungen und Konflikte über Ergänzung, Konkurrenz, Zuständigkeit und Verantwortung in der ambulanten Versorgung.",
+                "recipients": [
+                  "lokale Gesundheitsakteure",
+                  "kommunale und staatliche Institutionen",
+                  "Bewohnerinnen und Bewohner"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Die Erfahrungen werden aufgegriffen und führen zu überprüfbaren Entscheidungen, Regeln oder institutionellen Anpassungen; der Bericht belegt bislang nur eine lokale Debatte.",
+                "reference_space": "lokale Gesundheitsversorgung in Heringen",
+                "time_horizon": "mittelfristig; bei Ausweitung längerfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Kontroverse über Nutzen und Abgrenzung erreicht zuständige Institutionen oder beeinflusst weitere Entscheidungen.",
+                "source_support": "Die Quelle belegt unterschiedliche zugeschriebene Einschätzungen von Betreiber und Hausärzteverband, nicht aber eine institutionelle oder politische Folge.",
+                "limitations": "Keine Daten zu Entscheidungen, Regeländerungen, öffentlicher Resonanz oder Verbreitung des Modells.",
+                "first_order": "Akteure erhalten ein konkretes lokales Beispiel für eine telemedizinische Versorgungsform.",
+                "second_order": "Die Auseinandersetzung kann Erwartungen an Aufgaben von Apotheken und Hausarztpraxen verändern.",
+                "third_order": "Bei einer späteren Übertragung könnte die institutionelle Zuständigkeit für ergänzende Versorgung neu diskutiert werden; das bleibt spekulativ.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der mögliche Diskursimpuls ist lokal und nicht als institutionelle Zustandsveränderung belegt."
+                },
+                "negligibility_rationale": "Ein lokaler Diskursimpuls ist möglich, aber mangels beobachteter institutioneller Folge praktisch gering einzuschätzen.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Zusatzrecherche fand keinen exakt belegbaren institutionellen oder politischen Wirkungsnachweis. Es bleibt ein schwacher offener Potenzialpfad.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der Ausgangspunkt ist ein einzelnes lokales Angebot.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete institutionelle Veränderung ist nicht belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine Debatte könnte über die Betriebsdauer hinauswirken, ist aber nicht nachgewiesen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Mögliche Diskursimpulse sind grundsätzlich korrigierbar; eine dauerhafte Regeländerung ist nicht belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine konkrete demokratische Schutzgrenzverletzung oder besondere Lastverteilung ist belegt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein möglicher institutioneller Folgepfad ist schwach und bislang nicht beobachtet.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere demokratische Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                  "reference_frame": "institutionelle Verantwortlichkeit und demokratische Korrekturfähigkeit in der Gesundheitsversorgung",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die Demokratie-Dimension betrifft nur einen schwachen möglichen Diskurs- und Institutionenpfad. Die Quelle zeigt unterschiedliche Akteurspositionen, aber keine eingetretene politische oder institutionelle Zustandsveränderung.",
+            "balance": {
+              "rationale": "Keine vergleichbaren materiellen Gegenpfade oder Schutzgrenzverletzungen sind belegt.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Lokale Erprobung kann die Debatte über die Rolle von Apotheken und Telemedizin beeinflussen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Lokale Erprobung kann die Debatte über die Rolle von Apotheken und Telemedizin beeinflussen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "hr-hessenschau",
+            "functions": [
+              "event",
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle belegt die Existenz und die beschriebenen Funktionen der Kabine, die zugeschriebene Nutzung von vier Personen, die lokale wirtschaftliche Situation sowie unterschiedliche Einschätzungen von Betreiber und Hausärzteverband."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Zusätzlicher Zugang zu ärztlicher Videosprechstunde in einer Apotheke",
+              "mechanism": "Die Kabine stellt Raum, Technik und zugeschaltete Ärztinnen und Ärzte für Videosprechstunden bereit. Dadurch kann ein zusätzlicher Zugang insbesondere außerhalb üblicher Praxiszeiten entstehen.",
+              "recipients": [
+                "Menschen in Heringen und Umgebung",
+                "Patientinnen und Patienten mit passendem Beratungsbedarf"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Das Angebot muss erreichbar, technisch funktionsfähig, medizinisch für den jeweiligen Fall geeignet und ausreichend genutzt werden; Termine müssen verfügbar sein.",
+              "reference_space": "Heringen und angrenzende ländliche Region",
+              "time_horizon": "laufender Betrieb; mögliche mittelfristige Versorgungswirkung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Menschen können und wollen die Kabine nutzen; Videosprechstunden sind für die jeweiligen Fälle geeignet; die Kabine ergänzt tatsächlich einen fehlenden oder schwer erreichbaren Zugang.",
+              "source_support": "Die Quelle belegt die Einrichtung, Videosprechstunden, Vitalmessungen, die beabsichtigte Nutzung in Randzeiten und die geringe bisherige Nutzung, nicht aber eine verbesserte Versorgung.",
+              "limitations": "Keine unabhängigen Daten zu Zugang, Qualität, Behandlungsergebnissen, Wartezeiten oder einem Vergleich ohne Kabine.",
+              "first_order": "Ärztliche Beratung wird über einen zusätzlichen Zugangskanal verfügbar.",
+              "second_order": "Bei ausreichender Nutzung kann sich die Erreichbarkeit in Randzeiten verbessern; bei geringer Nutzung bleibt der Effekt begrenzt.",
+              "third_order": "Das Modell könnte die lokale Diskussion über ergänzende Versorgungsformen beeinflussen; eine strukturelle Übertragung ist offen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Raum ist auf eine Kleinstadt und ihr Umfeld begrenzt. Eine relevante Zugangswirkung ist bei stabiler Nutzung plausibel, aber wegen der bisher geringen Nutzung und fehlender Qualitätsdaten nicht höher abzusichern."
+              },
+              "negligibility_rationale": "Nicht vernachlässigbar, weil ein zusätzlicher Versorgungskanal tatsächlich eingerichtet ist; eine Verbesserung des Gesundheitszustands oder der regionalen Versorgung ist jedoch nicht beobachtet.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Zusatzrecherche fand keinen exakt belegbaren unabhängigen Wirkungsnachweis. Der Pfad bleibt als niedrig evidentes, bedingtes Potenzial bestehen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Das Angebot richtet sich an eine begrenzte lokale Gruppe in Heringen und Umgebung.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Für einzelne geeignete Fälle kann der Zugang begrenzt hilfreich sein; eine schwere oder fundamentale Gesundheitsveränderung ist nicht belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Der Betrieb ist laufend angelegt, seine wirtschaftliche und organisatorische Dauerhaftigkeit bleibt aber offen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Das Angebot kann grundsätzlich beendet oder verändert werden; dauerhafte Zustandsänderungen sind nicht belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ein zusätzlicher Zugang kann für Menschen mit eingeschränkter Mobilität oder außerhalb von Praxiszeiten relevant sein. Eine konkrete ungleiche Betroffenheit ist jedoch nicht nachgewiesen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Bisher ist nur ein begrenzter direkter Folgepfad plausibel; strukturelle Rückkopplungen sind nicht belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere konkrete Schutzgrenzverletzung im humanen Bereich ist nicht belegt und wird auch ex ante nicht als notwendige Folge modelliert.",
+                "reference_frame": "Zugang und Sicherheit ambulanter Gesundheitsversorgung",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Geringe Nutzung kann die wirtschaftliche Tragfähigkeit des lokalen Angebots begrenzen",
+              "mechanism": "Die Apotheke hat laut Bericht mehrere zehntausend Euro investiert; zugleich wurde die Kabine in den ersten beiden Monaten nur von vier Menschen genutzt.",
+              "recipients": [
+                "Betreiber der Apotheke",
+                "Menschen in Heringen und Umgebung"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "medium",
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Die geringe Nachfrage hält an und es entstehen keine ausreichenden Einnahmen oder anderen Trägerstrukturen.",
+              "reference_space": "Betrieb der Kabine in Heringen",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die bisherige Nutzung ist für die Wirtschaftlichkeit relevant; weitere Finanzierungsquellen sind nicht bekannt.",
+              "source_support": "Die Quelle nennt Investitionshöhe, Nutzung von vier Personen und die Einschätzung des Betreibers, dass sich das Angebot aktuell betriebswirtschaftlich nicht rentiert.",
+              "limitations": "Keine vollständige Kostenrechnung, keine Prognose und keine Information zu alternativen Finanzierungen.",
+              "first_order": "Geringe Nutzung begrenzt Einnahmen.",
+              "second_order": "Der weitere Betrieb könnte von zusätzlicher Nachfrage oder Finanzierung abhängen.",
+              "third_order": "Ein Scheitern könnte die lokale Erprobung neuer Versorgungswege bremsen; das ist nicht als eingetretene Folge belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 2,
+                "rationale": "Der mögliche wirtschaftliche Effekt bleibt lokal, kann aber bei Einstellung des Angebots den positiven Zugangspfad beenden."
+              },
+              "negligibility_rationale": "Nicht vollständig vernachlässigbar, weil der Betreiber die aktuelle fehlende Rentabilität ausdrücklich beschreibt; ein konkreter Schaden über das lokale Projekt hinaus ist nicht belegt.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Zusatzrecherche fand keinen ergänzenden Wirtschaftlichkeitsbeleg. Das lokale Betriebsrisiko bleibt durch die journalistische Quelle ausreichend als bedingter Nebenpfad beschrieben.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen sind zunächst der lokale Betreiber und das örtliche Angebot.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Investition und fehlende Rentabilität sind für den Betrieb relevant; ein existenzieller Schaden ist nicht belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Das Risiko besteht über die Betriebsdauer, deren Länge offen ist.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Der Betrieb kann beendet oder angepasst werden.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere Schutzbedürftigkeit der unmittelbar Betroffenen ist nicht konkret belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt auf das lokale Angebot begrenzt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Schutzgrenzverletzung ist belegt.",
+                "reference_frame": "wirtschaftliche Tragfähigkeit des lokalen Angebots",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Der positive Hauptpfad betrifft ein zusätzliches Zugangsangebot, nicht bereits verbesserte Versorgung. Die geringe Nutzung, fehlende Qualitätsdaten und offene Wirtschaftlichkeit begrenzen die Tragweite. Das lokale Betriebsrisiko wird nicht als Ausgleich gegen den Zugangspfad verrechnet.",
+          "balance": {
+            "rationale": "Der positive Zugangspfad und das lokale Betriebsrisiko betreffen unterschiedliche Zustandsveränderungen und sind keine gleichartigen Hauptpfade desselben Schutzguts.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzlicher Zugang zu ärztlicher Videosprechstunde in einer Apotheke",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Zusätzlicher Zugang zu ärztlicher Videosprechstunde in einer Apotheke",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Mögliche Veränderung von Wegeaufwand und technischem Ressourcenverbrauch",
+              "mechanism": "Ein zusätzlicher lokaler Versorgungsort könnte einzelne Wege zu weiter entfernten Praxen vermeiden, benötigt aber Technik, Strom und einen eigenen Raum.",
+              "recipients": [
+                "Menschen in Heringen und Umgebung",
+                "lokale Umwelt"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Die Kabine muss tatsächlich Wege ersetzen und darf nicht überwiegend zusätzliche Nutzung erzeugen; dafür wären Nutzungs-, Wege- und Verbrauchsdaten erforderlich.",
+              "reference_space": "lokaler Betrieb in Heringen",
+              "time_horizon": "laufender Betrieb; mögliche Folgen bei längerer Nutzung",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ein Teil der Nutzungen würde sonst einen längeren Weg erfordern; Energie- und Materialaufwand der Kabine bleibt begrenzt.",
+              "source_support": "Die Quelle belegt den Standort und die technische Ausstattung, aber keine Wegedistanzen, Energieverbräuche oder ökologischen Folgen.",
+              "limitations": "Die Richtung ist nicht belastbar bestimmbar; es fehlen Vergleichsdaten zu vermiedenen Wegen sowie zusätzlichem Strom-, Material- und Datenaufwand.",
+              "first_order": "Versorgung wird an einem weiteren technischen Ort angeboten.",
+              "second_order": "Mögliche vermiedene Wege und zusätzlicher Strom- und Materialeinsatz können sich gegenüberstehen.",
+              "third_order": "Eine größere Verbreitung könnte Verkehrs- und Ressourcenpfade verändern; eine solche Entwicklung ist nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Für das einzelne lokale Angebot ist nur eine praktisch geringe ökologische Zustandsveränderung plausibel; Richtung und Umfang bleiben wegen fehlender Daten offen."
+              },
+              "negligibility_rationale": "Der Pfad ist als schwach und lokal begrenzt modelliert; eine konkrete ökologische Zustandsveränderung ist nicht belegt.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Zusatzrecherche ergab keinen exakt belegbaren ökologischen Wirkungsnachweis für dieses Angebot. Der Pfad bleibt offen und niedrig tragfähig.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Bisher betrifft der Pfad einen einzelnen Standort mit sehr geringer Nutzung.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete ökologische Intensität ist nicht belegt; der technische Betrieb dürfte im lokalen Maßstab begrenzt sein, ohne dass Verbrauchsdaten vorliegen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Technischer Betrieb kann über längere Zeit laufen, seine Dauer ist aber offen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Ein möglicher lokaler Wege- oder Ressourcenverbrauch wäre grundsätzlich reversibel; eine dauerhafte Zustandsänderung ist nicht belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Eine konkrete ökologische Schutzbetroffenheit ist nicht belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine belastbare ökologische Rückkopplung oder systemische Folge ist belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                "reference_frame": "lokaler Ressourcen-, Energie- und Wegeaufwand",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 4,
+                "divisor": 6,
+                "raw": 0.6666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Für die Planet-Dimension bleibt nur ein schwacher offener Modellpfad. Die geringe Nutzung begrenzt die mögliche Tragweite, zugleich fehlen Daten, um vermiedene Wege und zusätzlichen Technikaufwand gegeneinander zu bewerten.",
+          "balance": {
+            "rationale": "Es liegen keine materiellen, vergleichbaren positiven oder negativen Umweltpfade mit ausreichender Evidenz vor.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung von Wegeaufwand und technischem Ressourcenverbrauch",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung von Wegeaufwand und technischem Ressourcenverbrauch",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Lokale Erprobung kann die Debatte über die Rolle von Apotheken und Telemedizin beeinflussen",
+              "mechanism": "Ein neues Versorgungsmodell erzeugt Erfahrungen und Konflikte über Ergänzung, Konkurrenz, Zuständigkeit und Verantwortung in der ambulanten Versorgung.",
+              "recipients": [
+                "lokale Gesundheitsakteure",
+                "kommunale und staatliche Institutionen",
+                "Bewohnerinnen und Bewohner"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Die Erfahrungen werden aufgegriffen und führen zu überprüfbaren Entscheidungen, Regeln oder institutionellen Anpassungen; der Bericht belegt bislang nur eine lokale Debatte.",
+              "reference_space": "lokale Gesundheitsversorgung in Heringen",
+              "time_horizon": "mittelfristig; bei Ausweitung längerfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Kontroverse über Nutzen und Abgrenzung erreicht zuständige Institutionen oder beeinflusst weitere Entscheidungen.",
+              "source_support": "Die Quelle belegt unterschiedliche zugeschriebene Einschätzungen von Betreiber und Hausärzteverband, nicht aber eine institutionelle oder politische Folge.",
+              "limitations": "Keine Daten zu Entscheidungen, Regeländerungen, öffentlicher Resonanz oder Verbreitung des Modells.",
+              "first_order": "Akteure erhalten ein konkretes lokales Beispiel für eine telemedizinische Versorgungsform.",
+              "second_order": "Die Auseinandersetzung kann Erwartungen an Aufgaben von Apotheken und Hausarztpraxen verändern.",
+              "third_order": "Bei einer späteren Übertragung könnte die institutionelle Zuständigkeit für ergänzende Versorgung neu diskutiert werden; das bleibt spekulativ.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der mögliche Diskursimpuls ist lokal und nicht als institutionelle Zustandsveränderung belegt."
+              },
+              "negligibility_rationale": "Ein lokaler Diskursimpuls ist möglich, aber mangels beobachteter institutioneller Folge praktisch gering einzuschätzen.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Zusatzrecherche fand keinen exakt belegbaren institutionellen oder politischen Wirkungsnachweis. Es bleibt ein schwacher offener Potenzialpfad.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der Ausgangspunkt ist ein einzelnes lokales Angebot.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete institutionelle Veränderung ist nicht belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine Debatte könnte über die Betriebsdauer hinauswirken, ist aber nicht nachgewiesen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Mögliche Diskursimpulse sind grundsätzlich korrigierbar; eine dauerhafte Regeländerung ist nicht belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine konkrete demokratische Schutzgrenzverletzung oder besondere Lastverteilung ist belegt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein möglicher institutioneller Folgepfad ist schwach und bislang nicht beobachtet.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere demokratische Schutzgrenzverletzung ist belegt oder bedingt modelliert.",
+                "reference_frame": "institutionelle Verantwortlichkeit und demokratische Korrekturfähigkeit in der Gesundheitsversorgung",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die Demokratie-Dimension betrifft nur einen schwachen möglichen Diskurs- und Institutionenpfad. Die Quelle zeigt unterschiedliche Akteurspositionen, aber keine eingetretene politische oder institutionelle Zustandsveränderung.",
+          "balance": {
+            "rationale": "Keine vergleichbaren materiellen Gegenpfade oder Schutzgrenzverletzungen sind belegt.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Lokale Erprobung kann die Debatte über die Rolle von Apotheken und Telemedizin beeinflussen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Lokale Erprobung kann die Debatte über die Rolle von Apotheken und Telemedizin beeinflussen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T09:43:11.294Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T08:52:08.000Z",
+      "last_updated": "2026-09-14T09:43:11.294Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-37ef8b7f7002ea6d9a84",
+      "case_file": null,
+      "source_published_at": "2026-09-14T08:52:08.000Z",
+      "published_at": "2026-09-14T09:43:11.294Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Wie entwickelt sich die Nutzung der Kabine nach einer längeren Einführungsphase?",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Anzahl der Sprechstunden und behandelten Personen über einen festgelegten Folgezeitraum",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c1c098af994e1507",
+          "announced_at": "2026-09-14T08:52:08.000Z",
+          "follow_up_date": "2026-09-21T09:43:11.294Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wie beurteilen Hausärzte und zuständige Gesundheitsakteure die Versorgungssicherheit und Abgrenzung zu Arztpraxen?",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Dokumentierte Stellungnahmen und konkrete Versorgungsdaten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-9680affef4990ada",
+          "announced_at": "2026-09-14T08:52:08.000Z",
+          "follow_up_date": "2026-09-21T09:43:11.294Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/panorama/telemedizin-kabine-in-heringen-neues-patienten-angebot-in-apotheke-v1,telemedizin-kabine-114.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T08:52:08.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-668e16a065c48a7c",
       "title_image": {
