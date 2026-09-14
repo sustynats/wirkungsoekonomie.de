@@ -34,7 +34,7 @@ const pathProperties={
 };
 const modelledDimension=object({path_status:en(['modelled']),likelihood:en(Object.keys(LIKELIHOOD)),evidence:en(Object.keys(EVIDENCE)),
  data_status:en(['modelled','estimated']),temporal_status:en(['ex_ante','ongoing']),
- primary_paths:array(ref('main_path')),secondary_paths:array(ref('path')),rationale:string,
+ primary_paths:{...array(ref('main_path')),minItems:1},secondary_paths:array(ref('path')),rationale:string,
  balance:{anyOf:[object({rationale:string}),{type:'null'}]},
 });
 const openDimension=object({path_status:en(['insufficient_basis']),direction:en(['open']),magnitude:{type:'null'},
@@ -72,8 +72,9 @@ const confirmation=object({
  })),
 });
 
-// Arithmetic and dimension aggregates are software-owned. Empty paths/strings
-// can express an incomplete blocked review; only the domain gate can publish.
+// Arithmetic and dimension aggregates are software-owned. A modelled dimension
+// requires a main path already at generation; open dimensions have their own
+// explicit variant. The domain gate still decides whether a review can publish.
 export const REVIEW_RESPONSE_FORMAT={type:'json_schema',name:'impact_review_confirmation_v2',strict:true,
  schema:{...object({
   review:object({status:en(['ready','needs_review','blocked']),checks:object(Object.fromEntries(SEMANTIC_CHECKS.map(key=>[key,
