@@ -24,6 +24,16 @@ test('legacy research functions keep their role instead of being labelled journa
  assert.equal(impactSourceRole({source_function:'official_data'}),'Amtliche Daten');
 });
 const open=()=>({path_status:'insufficient_basis',direction:'open',magnitude:null,evidence:'not_assessable',data_status:'missing',likelihood:'unknown',dominance:'none',temporal_status:'ex_ante',primary_paths:[],secondary_paths:[],rationale:'Der zweite Quellenabgleich liefert keinen hinreichend bestimmten Pfad.',research_pass:'second_pass',research_result:'Es fehlen konkrete Maßnahmen, Empfänger und belastbare Vergleichsdaten.',reviewed_source_ids:['official'],balance:null});
+test('three grounded open dimensions retain all rows without inventing any numeric bar',()=>{
+ const a=profile();for(const key of ['human','planet','democracy'])a.dimensions[key]=open();
+ assert.deepEqual(impactAssessmentErrors(a,sources),[]);
+ const before=JSON.stringify(a),html=renderDimensionMeters({impact_assessment:a},{compact:true,context:{privateImpactPreview:true}});
+ assert.equal((html.match(/class="wt-dim wt-dim--/g)||[]).length,3);
+ assert.equal((html.match(/class="wt-impact-ring /g)||[]).length,3);
+ assert.equal((html.match(/class="wt-dim__track"/g)||[]).length,3);
+ assert.doesNotMatch(html,/data-magnitude="[0-5]"|null\/5/);
+ assert.equal(JSON.stringify(a),before);
+});
 test('only democracy may be assessed, other dimensions stay explicitly open and valid',()=>{
  const a=profile();a.dimensions.human=open();a.dimensions.planet=open();a.system_check.central_dimensions=['democracy'];
  assert.deepEqual(impactAssessmentErrors(a,sources),[]);assert.deepEqual(semanticIssues(a,{sources},{secondPassComplete:true}),[]);
