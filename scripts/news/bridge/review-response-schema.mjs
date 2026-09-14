@@ -34,13 +34,14 @@ const pathProperties={
 };
 const modelledDimension=object({path_status:en(['modelled']),likelihood:en(Object.keys(LIKELIHOOD)),evidence:en(Object.keys(EVIDENCE)),
  data_status:en(['modelled','estimated']),temporal_status:en(['ex_ante','ongoing']),
- primary_paths:array(ref('main_path')),secondary_paths:array(ref('path')),rationale:string,
+ primary_paths:{...array(ref('main_path')),minItems:1},secondary_paths:array(ref('path')),rationale:string,
  balance:{anyOf:[object({rationale:string}),{type:'null'}]},
 });
 const openDimension=object({path_status:en(['insufficient_basis']),direction:en(['open']),magnitude:{type:'null'},
  evidence:en(['not_assessable']),data_status:en(['missing']),likelihood:en(['unknown']),dominance:en(['none']),temporal_status:en(['ex_ante']),
  primary_paths:{...array(ref('main_path')),maxItems:0},secondary_paths:{...array(ref('path')),maxItems:0},balance:{type:'null'},
- rationale:string,research_pass:en(['second_pass']),research_result:string,reviewed_source_ids:strings});
+ rationale:{...string,description:'Welche Grundlage fehlt nach Recherche selbst für einen bedingten Pfad? Fehlender Beschluss oder fehlende gemessene Folgen allein genügen nicht.'},research_pass:en(['second_pass']),
+ research_result:{...string,description:'Tatsächlich durchgeführte Mechanismus- und Kontextprüfung, geprüfte mögliche Zustandsänderung und verbleibende konkrete Modellierungsgrenze. Ein Tool-/Zugangsfehler ist keine abgeschlossene fachliche Recherche.'},reviewed_source_ids:strings});
 const dimension={anyOf:[modelledDimension,openDimension]};
 const assessment=object({version:en([IMPACT_VERSION]),semantics_revision:en([POTENTIAL_REVISION]),news_event:string,
  evaluation_target:object({label:string,type:en(TARGET_TYPES)}),baseline:string,temporal_status:en(TEMPORAL),
@@ -71,8 +72,9 @@ const confirmation=object({
  })),
 });
 
-// Arithmetic and dimension aggregates are software-owned. Empty paths/strings
-// can express an incomplete blocked review; only the domain gate can publish.
+// Arithmetic and dimension aggregates are software-owned. A modelled dimension
+// requires a main path already at generation; open dimensions have their own
+// explicit variant. The domain gate still decides whether a review can publish.
 export const REVIEW_RESPONSE_FORMAT={type:'json_schema',name:'impact_review_confirmation_v2',strict:true,
  schema:{...object({
   review:object({status:en(['ready','needs_review','blocked']),checks:object(Object.fromEntries(SEMANTIC_CHECKS.map(key=>[key,

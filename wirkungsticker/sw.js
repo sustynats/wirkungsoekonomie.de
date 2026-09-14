@@ -1,4 +1,4 @@
-const CACHE_NAME = "woek-wirkungsticker-shell-20260914-viewport";
+const CACHE_NAME = "woek-wirkungsticker-shell-20260914-potential-scale";
 // Keep the independent notification state while refreshing the app shell.
 const NAVIGATION_CACHE_GRACE_MS = 2500;
 const NAVIGATION_NETWORK_TIMEOUT_MS = 8000;

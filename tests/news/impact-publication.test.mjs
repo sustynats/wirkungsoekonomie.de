@@ -128,6 +128,7 @@ test('a missing assessment can enter reassessment without bypassing concurrent-u
 });
 test('separate review job is mandatory, idempotent, source-bound, and cannot be self-approved',async()=>{
   const {a,record}=bsw(),now='2026-09-10T12:00:00Z',input=impactReassessmentInput(record,now),parent={input,candidate:record,attempts:{},status:'queued'};
+  record.impact_reassessment_request='Bedingten Mechanismus prüfen; fehlende Umsetzung allein ist keine Modellierungsgrenze.';
   const jobs=new Map([[input.job_id,parent]]),files=new Map();
   const bridge={stageOnly:false,store:{get:async id=>jobs.get(id),put:async j=>jobs.set(j.input.job_id,j),all:async()=>[...jobs.values()],observation:async()=>null},
     transport:{writeAtomic:async(p,v)=>{if(files.has(p))assert.equal(files.get(p),JSON.stringify(v));files.set(p,JSON.stringify(v));},list:async folder=>[...files.keys()].filter(p=>p.includes('/'+folder+'/')).map(p=>({name:p.split('/').at(-1)})),read:async p=>files.get(p)},failure:async(_j,_s,e)=>{throw e;}};
@@ -136,6 +137,7 @@ test('separate review job is mandatory, idempotent, source-bound, and cannot be 
   await ensureSemanticReview(bridge,parent,output,record,a,now);assert.equal(jobs.size,2);
   const child=[...jobs.values()].find(j=>j.input.parent_job_id===input.job_id);assert.match(child.input.job_id,/^wt_\d{8}T\d{6}Z_[a-f0-9]{24}$/);
   assert.deepEqual(child.input.validation_findings,[]);
+  assert.equal(child.input.record.requested_correction,record.impact_reassessment_request);
   assert.notEqual(child.input.job_id,input.job_id);
   const result={schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:now,review:readyReview(),impact_assessment:a};
   await bridge.transport.writeAtomic(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),result);
