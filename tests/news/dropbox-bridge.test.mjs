@@ -704,6 +704,44 @@ test('bridge pending drafts and updates retain source metadata but never persist
   }
 });
 
+for (const pass of [true,false]) test(`bounded import finishes an older second pass before starting fresh drafts (pass=${pass})`,async t=>{
+  const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];
+  const assessment=syntheticImpact21(review.impact_assessment);
+  const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
+  record.sources.push(...review.assessment_sources);record.impact_assessment=assessment;
+  const visited=[];
+  const f=setup(t,{maxJobs:1,stageOnly:false,adapt:packet=>{
+    visited.push(packet.job_id);return {decision:packet.decision.status,record:packet.decision.status==='publish'?record:null};
+  },semanticReview:ensureSemanticReview});
+  await f.provider.enqueue([candidate()],[],now);const parent=f.store.all()[0];parent.candidate=record;f.store.put(parent);
+  const first=output(parent.input,'publish');first.wirkungsticker={analysis:{impact_assessment:assessment}};
+  first.story.headline=record.title;first.story.detailed_summary=record.source_summary;
+  const original=JSON.stringify(first),parentPath=bridgePath('20_OUTPUT_READY',parent.input.job_id+'.output.json');
+  f.transport.files.set(parentPath,original);
+  assert.deepEqual(await f.provider.reconcile({},[record],later),[]);
+  const child=f.store.all().find(j=>j.input.job_type==='impact_semantic_review');
+  const checks=Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Im unabhängigen Test-Prüfpass gegen den gebundenen Quellenstand geprüft.'}]));
+  if(!pass)checks.source_fidelity={status:'fail',rationale:'Eine zentrale Aussage ist durch den gebundenen Beleg nicht gedeckt.'};
+  f.transport.files.set(bridgePath('20_OUTPUT_READY',child.input.job_id+'.output.json'),JSON.stringify({schema_version:'1.0',job_id:child.input.job_id,input_hash:child.input.input_hash,processed_at:later,impact_assessment:assessment,review:{status:'ready',checks,findings:[]}}));
+  const freshIds=[];
+  for(const n of [2,3]){
+    const c=candidate(n);c.sources[0].published_at=`2026-09-10T07:2${n}:00.000Z`;
+    const input=bridgeInput(c,now);freshIds.push(input.job_id);
+    f.store.put({input,candidate:c,status:'queued',created_at:now,attempts:{}});
+    f.transport.files.set(bridgePath('20_OUTPUT_READY',input.job_id+'.output.json'),JSON.stringify(output(input)));
+  }
+  const results=await f.provider.reconcile({},[record],later);
+  assert.equal(results.length,1,'the total attempt limit stays one, even with a ready review');
+  assert.deepEqual(visited,[pass?parent.input.job_id:freshIds[1]],'ready parent is delivered; a held parent stays held and fresh LIFO proceeds');
+  assert.equal(f.store.get(parent.input.job_id).status,pass?'accepted':'queued');
+  assert.equal(f.store.get(parent.input.job_id).ack,undefined,'an imported review is not a publication ACK');
+  assert.equal(f.transport.files.get(parentPath),original,'neither paid output nor source timestamps are rewritten');
+  if(pass){
+    assert.equal(f.store.get(freshIds[1]).status,'queued');
+    assert.equal(results[0].staged,false);
+  }else assert.equal(f.store.get(parent.input.job_id).publication_gate.status,'needs_review');
+});
+
 for (const deferredMedia of [false,true,'complete']) for (const pass of [true,false]) test(`separate semantic review controls image generation and ACK (pass=${pass}, media=${deferredMedia})`,async t=>{
   const review=JSON.parse(fs.readFileSync('content/news/reviews/2026-09-10-impact-semantics.json')).reviews[0];review.impact_assessment=syntheticImpact21(review.impact_assessment);
   const record=structuredClone(JSON.parse(fs.readFileSync('data/news/stories.json')).stories.find(s=>s.story_id===review.story_id));
