@@ -65,8 +65,10 @@ async function boot(root){
   if(stored?.revision===manifest.revision&&(stored.page>0||stored.done)&&mode!=='merkzettel'){
    grid.innerHTML=stored.html;page=stored.page;done=stored.done;ids=stored.ids||[];controls();showCount();updateMore();requestAnimationFrame(()=>window.scrollTo({top:stored.scroll,behavior:'instant'}));return;
   }
+  // Move before replacing the grid so browser scroll anchoring cannot retain
+  // a footer position when the old feed collapses. Sticky offsets are not a page origin.
+  if(scroll)window.scrollTo({top:0,behavior:'instant'});
   grid.replaceChildren();busy=true;info('Wird geladen …');updateMore();
-  if(scroll){const toolbar=root.querySelector('.ticker-app-toolbar');window.scrollTo({top:toolbar.getBoundingClientRect().top+scrollY-parseFloat(getComputedStyle(toolbar).top),behavior:'instant'});}
   try{const nextIds=indexed()?await chooseIds(abort.signal):[];if(ticket!==epoch)return;ids=nextIds;busy=false;await load({refreshRevision});}
   catch(e){if(ticket===epoch&&e.name!=='AbortError'){busy=false;info('Die Suche ist gerade nicht erreichbar. Bitte erneut versuchen.');more.hidden=false;more.disabled=false;more.textContent='Erneut versuchen';}}
  }
