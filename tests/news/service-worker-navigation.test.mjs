@@ -140,3 +140,25 @@ test("uncached failed assets never receive the HTML offline page as CSS or JavaS
   assert.equal(response.status, 504);
   assert.equal(await response.text(), "");
 });
+
+test("app manifest and feed pages prefer live data to the saved previous edition", async () => {
+  for (const path of ["manifest.json", "feeds/news-alle-0.json"]) {
+    const h = harness({ cache: { match: async () => reply("old edition") } });
+    let response;
+    h.listeners.get("fetch")({ request: new Request(`https://wirkungsoekonomie.de/wirkungsticker/data/app/${path}`), waitUntil: h.event.waitUntil, respondWith: promise => { response = promise; } });
+    assert.equal(await (await response).text(), "fresh", path);
+    await Promise.all(h.background);
+  }
+});
+
+test("offline app data uses saved JSON and never substitutes an HTML page", async () => {
+  for (const saved of [true, false]) {
+    const h = harness({ fetch: async () => { throw new Error("offline"); }, cache: { match: async key => saved && typeof key !== 'string' ? reply('{"revision":"saved"}') : typeof key === 'string' ? reply('<html>Offline</html>') : null } });
+    let response;
+    h.listeners.get("fetch")({ request: new Request('https://wirkungsoekonomie.de/wirkungsticker/data/app/manifest.json'), waitUntil: h.event.waitUntil, respondWith: promise => { response = promise; } });
+    const result = await response;
+    assert.equal(result.status, saved ? 200 : 504);
+    assert.equal(await result.text(), saved ? '{"revision":"saved"}' : '');
+    await Promise.all(h.background);
+  }
+});

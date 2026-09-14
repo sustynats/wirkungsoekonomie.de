@@ -13,7 +13,7 @@ async function boot(root){
  function setView(value){const compact=value!=='detailed';grid.classList.toggle('news-grid--compact',compact);root.querySelectorAll('[data-app-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.appView===(compact?'compact':'detailed'))));}
  let view='compact';try{view=localStorage.getItem(VIEW_KEY)||view;}catch{}setView(view);
  root.querySelectorAll('[data-app-view]').forEach(b=>b.addEventListener('click',()=>{setView(b.dataset.appView);try{localStorage.setItem(VIEW_KEY,b.dataset.appView);}catch{}}));
- async function json(file,signal){if(cache.has(file))return cache.get(file);const r=await fetch(API+file,{cache:'no-cache',signal});if(!r.ok)throw Error('HTTP_'+r.status);const data=await r.json();cache.set(file,data);return data;}
+ async function json(file,signal){if(cache.has(file))return cache.get(file);const r=await fetch(API+file,{cache:'no-cache',signal});if(!r.ok)throw Error('HTTP_'+r.status);const data=await r.json();if(signal?.aborted)throw Object.assign(Error('Aborted'),{name:'AbortError'});cache.set(file,data);return data;}
  function setManifest(data){manifest=data;lookup=new Map(Object.values(manifest.lookup).map(r=>[r.id,r]));}
  const controls=()=>{document.dispatchEvent(new CustomEvent('wirkungsraum:content-added'));};
  function info(text){status.textContent=text;}
@@ -72,6 +72,15 @@ async function boot(root){
  }
  function navigate(params,{replace=false,scroll=true}={}){saveState();history[replace?'replaceState':'pushState'](null,'','?'+params);reset({scroll});}
  let timer;
+ async function refreshNews(){
+  clearTimeout(timer);saveState();if(filterMenu)filterMenu.open=false;
+  if(location.search)history.pushState(null,'',location.pathname);
+  const ticket=++epoch;abort?.abort();abort=new AbortController();cache.clear();manifest=null;busy=true;done=false;page=0;
+  info('Aktuelle Meldungen werden geladen …');updateMore();
+  try{const current=await json('manifest.json',abort.signal);if(ticket!==epoch)return;setManifest(current);await reset({scroll:true});}
+  catch(e){if(ticket===epoch&&e.name!=='AbortError'){busy=false;info('Aktuelle Meldungen konnten nicht geladen werden. Bitte erneut versuchen.');more.hidden=false;more.disabled=false;more.textContent='Erneut versuchen';}}
+ }
+ if(mode==='news')document.querySelectorAll('.ticker-app-nav a[href="/wirkungsticker/news/"]').forEach(link=>link.addEventListener('click',e=>{if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;e.preventDefault();refreshNews();}));
  root.querySelectorAll('[data-app-filter]').forEach(a=>a.addEventListener('click',e=>{if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;e.preventDefault();clearTimeout(timer);const params=new URLSearchParams(location.search);params.set(mode==='news'?'ressort':'typ',a.dataset.appFilter);if(query){if(query.value.trim())params.set('q',query.value.trim());else params.delete('q');}navigate(params);}));
  filterForm?.addEventListener('submit',e=>{e.preventDefault();clearTimeout(timer);const params=new URLSearchParams(location.search);for(const key of ['typ','ressort','sort']){const value=filterForm.elements.namedItem(key)?.value;if(value&&value!=='alle'&&value!=='relevanz')params.set(key,value);else params.delete(key);}if(query){if(query.value.trim())params.set('q',query.value.trim());else params.delete('q');}filterMenu.open=false;navigate(params);filterMenu.querySelector('summary').focus();});
  root.querySelector('[data-app-clear-filters]')?.addEventListener('click',()=>{clearTimeout(timer);const p=new URLSearchParams(location.search);['typ','ressort','sort'].forEach(k=>p.delete(k));if(query){if(query.value.trim())p.set('q',query.value.trim());else p.delete('q');}filterMenu.open=false;navigate(p);filterMenu.querySelector('summary').focus();});
@@ -97,7 +106,7 @@ async function boot(root){
  root.addEventListener('click',e=>{const link=e.target.closest('a[href]');if(link&&!link.matches('[data-app-filter]'))saveState();});
  more.addEventListener('click',async()=>{if(!manifest){await initialize();return;}if(!page&&indexed())await reset();else await load();});
  if(mode==='merkzettel')document.addEventListener('wirkungsraum:changed',()=>reset());
- async function initialize(){try{setManifest(await json('manifest.json'));await reset({restore:true});}catch{info('Der Feed ist gerade nicht erreichbar. Bitte erneut versuchen.');more.textContent='Erneut versuchen';more.hidden=false;}}
+ async function initialize(){try{setManifest(await json('manifest.json'));const restore=window.performance?.getEntriesByType('navigation')[0]?.type==='back_forward';await reset({restore,scroll:mode==='news'&&!restore});}catch{info('Der Feed ist gerade nicht erreichbar. Bitte erneut versuchen.');more.textContent='Erneut versuchen';more.hidden=false;}}
  await initialize();
  if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{if(manifest&&entries.some(e=>e.isIntersecting)&&!status.textContent.includes('erneut versuchen'))load();},{rootMargin:'350px'});observer.observe(root.querySelector('[data-app-sentinel]'));}
 }
