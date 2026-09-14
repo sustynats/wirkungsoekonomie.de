@@ -208,12 +208,13 @@ test('technical validation failures resume the paid result without buying a rewr
     assert.equal(f.calls.length,1);
   }
 });
-test('deep schema ordering retains all fields and supplied evidence unchanged', async () => {
+test('queued author schema adopts the current MPD contract without changing article fields or evidence', async () => {
   const {orderNativePrompt}=await import('../../scripts/news/bridge/api-processor.mjs');
+  const {IMPACT_PROMPT_SCHEMA,IMPACT_PROMPT_DEFS}=await import('../../scripts/news/impact-assessment.mjs');
   const schema={analyses:[{story_id:'string',impact_assessment:{dimensions:{human:{}}},systemic_relevance:'string',publication_gate:{news_value:'new_evidence'}}],$defs:{path:{}}};
   const evidence='UNTRUSTED_SOURCE_DATA_BEGIN\n'+JSON.stringify(schema)+'\n{"quoted":"source text"}\nUNTRUSTED_SOURCE_DATA_END';
   const result=orderNativePrompt(JSON.stringify(schema)+'\n'+evidence);
-  assert.deepEqual(JSON.parse(result.split('\n')[0]),schema);
+  assert.deepEqual(JSON.parse(result.split('\n')[0]),{analyses:[{...schema.analyses[0],impact_assessment:IMPACT_PROMPT_SCHEMA}],$defs:{...schema.$defs,...IMPACT_PROMPT_DEFS}});
   assert.equal(Object.keys(JSON.parse(result.split('\n')[0]).analyses[0]).at(-1),'impact_assessment');
   assert.ok(result.endsWith(evidence));
 });

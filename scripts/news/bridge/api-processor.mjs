@@ -4,7 +4,8 @@ import { hash, JOB_ID, bridgePath, parsePacket, outputSchema } from './contract.
 import { semanticOutputSchema } from './semantic-review.mjs';
 import { reviewResponseFormat } from './review-response-schema.mjs';
 import { expandReviewConfirmation } from './review-confirmation.mjs';
-import { deriveAssessmentCalculations } from '../impact-assessment.mjs';
+import { deriveAssessmentCalculations, IMPACT_PROMPT_SCHEMA, IMPACT_PROMPT_DEFS } from '../impact-assessment.mjs';
+import { IMPACT_SCOPE_RULE } from '../impact-scope.mjs';
 import { EDITORIAL_REQUEST_CONTRACT_V4 } from './intake-processing.mjs';
 import { validateEditorialPreview } from './editorial-approval.mjs';
 import { apiRequestKey, API_EDITORIAL_PROTOCOL, validateApiRequest } from './api-service.mjs';
@@ -13,7 +14,7 @@ import { latestEvidenceTime } from '../discovery-admission.mjs';
 import { newsInputReadiness, NEWS_INPUT_READINESS_VERSION } from '../news-input-readiness.mjs';
 import { POTENTIAL_RESEARCH_RULE } from '../impact-potential.mjs';
 
-export const API_VALIDATION_REVISION = 'single-paid-attempt-6';
+export const API_VALIDATION_REVISION = 'single-paid-attempt-7';
 
 function reviewAssignment(original) {
   const assignment = structuredClone(original);
@@ -33,8 +34,8 @@ function reviewAssignment(original) {
   return assignment;
 }
 
-// Keep the deep MPD schema last so it cannot swallow the remaining article
-// fields. Reordering preserves every field, rule and immutable source byte.
+// Apply the current generation contract even to a queued historical prompt.
+// Keep its MPD schema last; article fields and immutable source bytes stay intact.
 export function orderNativePrompt(prompt) {
   let untrusted = false;
   return prompt.split('\n').map(line => {
@@ -42,7 +43,8 @@ export function orderNativePrompt(prompt) {
     if (untrusted) return line;
     if (!line.startsWith('{"analyses":')) return line;
     const schema = JSON.parse(line);
-    schema.analyses = schema.analyses.map(({ impact_assessment, ...article }) => ({ ...article, impact_assessment }));
+    schema.analyses = schema.analyses.map(({ impact_assessment: _old, ...article }) => ({ ...article, impact_assessment: structuredClone(IMPACT_PROMPT_SCHEMA) }));
+    schema.$defs = { ...schema.$defs, ...structuredClone(IMPACT_PROMPT_DEFS) };
     return JSON.stringify(schema);
   }).join('\n');
 }
@@ -65,6 +67,8 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
   const prompt = kind === 'news' && original.wirkungsticker?.analysis_prompt ? [
     orderNativePrompt(original.wirkungsticker.analysis_prompt),
     ...(original.wirkungsticker.analysis_prompt.includes(POTENTIAL_RESEARCH_RULE) ? [] : [POTENTIAL_RESEARCH_RULE]),
+    IMPACT_SCOPE_RULE,
+    'AKTUELLE MPD-REGEL: Frühere Hinweise oder Schemavarianten zu insufficient_basis/null im gespeicherten Auftrag sind historisch und für diese neue Ausgabe abgelöst. Jede Dimension braucht einen quellengebundenen bedingten modelled-Pfad mit sechs begründeten Faktoren und Bandbreite. Fehlende Messdaten oder unbekannter Eintritt sind keine fehlende Tragweite. Ohne vertretbares Modell Recherche-/Prüfbedarf statt Veröffentlichung; keine Faktoren erfinden.',
     'TRANSPORT: Nur das oben definierte native Objekt {analyses:[...]} zurückgeben. Keine Bridge-Hülle, keine zusätzlichen facts/story/editorial/wirkungsticker-Felder. Die Software verpackt die Analyse nachträglich. Ablehnungen im oben definierten kurzen rejection-Format.',
     'NESTING: publication_gate, importance, impact_potential, mechanisms, first_order, second_order, third_order, transformation_potential, resilience, side_effects, uncertainties, evidence_level, attribution, watch_next, reference_frameworks, visuals und media_impact sind Geschwister von impact_assessment im analyses-Eintrag. Sie gehören NICHT in impact_assessment.',
     'PRÜFUNG: analyses[0].systemic_relevance ist ein eigener begründender String, zusätzlich zum strukturierten impact_assessment.systemic_relevance. publication_recommendation:true ist mit news_value:context_only unvereinbar. Ein neues belegtes Ereignis kann new_evidence sein; reine Einordnung ohne neue Tatsachen wird kurz abgelehnt. summary genau zwei Sätze. Ex-ante-Folgen als bedingtes Potenzial formulieren und vom beobachteten Anlass trennen.',
