@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { auditSourceIntegrity, reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory } from "../../scripts/news/source-integrity.mjs";
+import { auditSourceIntegrity, reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory, sourceSupportFingerprint } from "../../scripts/news/source-integrity.mjs";
 
 const registry = { sources: [
   { source_id: "swr", publisher_id: "swr", name: "SWR", url: "https://www.swr.de/", feed_url: "https://www.swr.de/feed.xml", primary_source: false, source_type: "media_rss", publisher_kind: "public_broadcasting", research_lane: "media", geography: ["DE"] },
@@ -47,4 +47,42 @@ test("Bestandsaudit listet nur offene Storys als Findings", () => {
   assert.equal(report.stories_checked, 2);
   assert.equal(report.held, 1);
   assert.equal(report.findings[0].story_id, bad.story_id);
+});
+
+const bind = (item, record) => {
+  record.editorial_evidence = { source_bindings: [{ source_id: item.source_id, url: item.url,
+    review_method: "source_text_comparison", reviewed_at: "2026-09-05T09:00:00Z",
+    rationale: "Der Quellenauszug und die übersetzte Zusammenfassung beschreiben denselben geprüften Gegenstand und bewahren die Attribution.",
+    fingerprint: sourceSupportFingerprint(item, record) }] };
+};
+
+test("geprüfte Übersetzung besteht trotz geringer Wortüberschneidung", () => {
+  const item = source("Cargo vessel struck near Qeshm Island", "https://www.swr.de/schiff.html");
+  const record = story("Frachter vor Insel getroffen: Staatsmedien berichten", [item]);
+  assert.ok(sourceIntegrityForStory(record, registry).issues.some(x => x.code === 'SOURCE_SEMANTIC_FIT_OPEN'));
+  bind(item, record);
+  assert.equal(sourceIntegrityForStory(record, registry).status, 'verified');
+  for (const change of [r => {r.title += ' anders';}, r => {r.source_summary += ' Zusatz';}, r => {r.analysis = {summary:'Neu'};}, r => {r.sources[0].summary += ' geändert';}, r => {r.sources[0].article_excerpt = 'Neue Belege';}, r => {r.sources[0].url += '?other';}, r => {r.sources[0].published_at = '2026-09-04T08:00:00Z';}]) {
+    const changed = structuredClone(record); change(changed);
+    assert.ok(sourceIntegrityForStory(changed, registry).issues.some(x => x.code === 'SOURCE_SEMANTIC_FIT_OPEN'));
+  }
+});
+
+test("Quellenzuordnung setzt Register-, Datum- und Gegenstandsprüfung nicht außer Kraft", () => {
+  const cases = [
+    [source('BerlinTrend vor der Berlin-Wahl', 'https://www.swr.de/wahl.html'), 'Vor der Wahl in Sachsen-Anhalt', 'SOURCE_STORY_SUBJECT_CONFLICT'],
+    [source('Quelle', 'https://www.fremd.de/quelle'), 'Eigener Titel', 'SOURCE_PUBLISHER_URL_MISMATCH'],
+    [source('Quelle', 'https://www.swr.de/quelle', {published_at:null}), 'Eigener Titel', 'SOURCE_PUBLICATION_DATE_INVALID'],
+    [source('Quelle', 'https://www.swr.de/quelle', {source_id:'unknown'}), 'Eigener Titel', 'SOURCE_REGISTRY_ID_UNKNOWN'],
+  ];
+  for(const [item,title,code] of cases) {const record=story(title,[item]);bind(item,record);assert.ok(sourceIntegrityForStory(record,registry).issues.some(x=>x.code===code));}
+});
+
+test("fehlende Begründung oder ungeprüfte Zuordnung genügt nicht", () => {
+  const item=source('Cargo vessel struck near Qeshm Island','https://www.swr.de/schiff.html');
+  for(const change of [{rationale:''},{review_method:'automatic_similarity'},{reviewed_at:null},{fingerprint:'invalid'}]) {
+    const record=story('Frachter vor Insel getroffen',[item]);bind(item,record);
+    Object.assign(record.editorial_evidence.source_bindings[0],change);
+    assert.ok(sourceIntegrityForStory(record,registry).issues.some(x=>x.code==='SOURCE_SEMANTIC_FIT_OPEN'));
+  }
 });
