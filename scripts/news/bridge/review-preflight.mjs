@@ -1,3 +1,4 @@
+import { isModelledPublicationIssue } from '../impact-scope.mjs';
 import {reviewedMediaRecord} from './media-review.mjs';
 import { verifyImpactResearch } from './impact-research.mjs';
 import { derivePublicationStatus, semanticIssues, SEMANTIC_CHECKS } from '../impact-publication.mjs';
@@ -23,12 +24,12 @@ export async function reviewPreflight(bridge, output, record, now, options = {})
   }
   let reviewRecord={...record, impact_sources:[...(record.impact_sources || []), ...research]}, mediaIssues=[];
   try { reviewRecord=reviewedMediaRecord(reviewRecord,output); } catch(error) { mediaIssues=[error.message,...(error.issues || [])]; }
-  const gate = derivePublicationStatus(output.impact_assessment, reviewRecord, {review:output.review, secondPassComplete:true, requireScope:options.requireScope === true});
+  const gate = derivePublicationStatus(output.impact_assessment, reviewRecord, {review:output.review, secondPassComplete:true, requireScope:options.requireScope === true, requireModelledDimensions:true});
   const researchIssues = impactResearchHealth(output.impact_assessment);
   if (researchIssues.length) { gate.issues.push(...researchIssues); gate.status='needs_review'; }
   if(mediaIssues.length){gate.issues.push(...mediaIssues);gate.status='needs_review';}
   const ready = output.review?.status === 'ready' && SEMANTIC_CHECKS.every(key => output.review.checks?.[key]?.status === 'pass');
-  if (gate.issues.length && (ready || gate.issues.some(issue => /IMPACT_(?:VERSION|MATERIAL_MAGNITUDE|FACTOR_|MAGNITUDE_CALCULATION|MAIN_AGGREGATE|OBSERVED_DIRECTION|SOURCE_FUNCTION|RESEARCH_RESULT|RESEARCH_CHECK|BOUNDARY_)/.test(issue)))) {
+  if (gate.issues.some(issue=>!isModelledPublicationIssue(issue)) && (ready || gate.issues.some(issue => /IMPACT_(?:VERSION|MATERIAL_MAGNITUDE|FACTOR_|MAGNITUDE_CALCULATION|MAIN_AGGREGATE|OBSERVED_DIRECTION|SOURCE_FUNCTION|RESEARCH_RESULT|RESEARCH_CHECK|BOUNDARY_)/.test(issue)))) {
     throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'), {issues:gate.issues});
   }
   return {research, reviewRecord, gate};

@@ -341,6 +341,8 @@ function nativeReviewFixture() {
 
 test('real native correction adapter passes existing gates, preserves version and rejects stale source',()=>{
   const { review, original, c, created, processed, input, value, registry } = nativeReviewFixture();
+  assert.throws(()=>adaptOutput(value,{input,candidate:c},registry,[original],processed),error=>error.issues.includes('IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:human'),'old paid contract is not permission for new null publication');
+  review.analysis.impact_assessment=JSON.parse(JSON.stringify(syntheticPotentialAssessment()).replaceAll('official',c.sources[0].source_id));
   const result=adaptOutput(value,{input,candidate:c},registry,[original],processed);
   assert.equal(result.record.story_id,original.story_id);assert.ok(result.record.corrections.length);assert.deepEqual(result.record.versions.slice(0,-1),original.versions);
   const wrapped={...value,wirkungsticker:{...value.wirkungsticker,analysis:{analyses:[{...review.analysis,story_id:original.story_id}]}}};
@@ -1020,4 +1022,20 @@ test('fresh normal news crosses the soft queue cap before a late historical upda
  assert.equal(selected.length,1);assert.equal(selected[0].story_id,fresh.story_id);
  await provider.enqueue(selected,[],now);assert.equal(store.all().length,2);
  assert.equal((await provider.selectCandidates([fresh],now)).length,0);
+});
+
+for(const accepted of [false,true])test(`legacy paid null profile stays held before publication without a new call or rewrite (accepted=${accepted})`,async t=>{
+ const f=setup(t,{stageOnly:false,correctionsEnabled:true,semanticReview:ensureSemanticReview});
+ await f.provider.enqueue([candidate()],[],now);const job=f.store.all()[0];
+ const a=syntheticPotentialAssessment();a.dimensions.planet={path_status:'insufficient_basis',magnitude:null};
+ const checked={status:'ready',checks:Object.fromEntries(SEMANTIC_CHECKS.map(k=>[k,{status:'pass',rationale:'Historischer vollständig dokumentierter Prüfbefund dieses Testfalls.'}])),findings:[]};
+ const receipt={assessment:a,review:checked};job.semantic_review=receipt;job.publication_gate={status:'ready',issues:[]};
+ if(accepted){job.status='accepted';job.accepted={record:{impact_assessment:a},staged:false,output_hash:'unchanged'};}
+ f.store.put(job);const before=JSON.stringify(receipt);
+ const jobCount=f.store.all().length;
+ for(let i=0;i<2;i++)assert.deepEqual(await f.provider.reconcile({},[],later),[]);
+ const saved=f.store.get(job.input.job_id);
+ assert.equal(saved.publication_gate.status,'needs_review');assert.ok(saved.publication_gate.issues.includes('IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:planet'));
+ assert.equal(JSON.stringify(saved.semantic_review),before);assert.equal(f.store.all().length,jobCount);
+ assert.equal(saved.corrections,undefined);assert.deepEqual(saved.attempts,{});assert.equal(saved.ack,undefined);
 });

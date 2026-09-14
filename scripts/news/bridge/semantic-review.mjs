@@ -1,4 +1,4 @@
-import { IMPACT_SCOPE_SCHEMA, IMPACT_SCOPE_REVISION } from '../impact-scope.mjs';
+import { IMPACT_SCOPE_SCHEMA, IMPACT_SCOPE_REVISION, isModelledPublicationIssue } from '../impact-scope.mjs';
 import {needsMediaReview,reviewedMediaRecord} from './media-review.mjs';
 import { MEDIA_REVIEW_SCHEMA } from './media-review-schema.mjs';
 import { isHistoricalJob, compareProcessorJobs } from './processor.mjs';
@@ -16,7 +16,7 @@ const terminal = new Set(['acknowledged', 'quarantined', 'archive_failed']);
 // correction workflow; explicit editorial holds and failed checks stay held.
 function assertCompleteReadyReview(review, gate) {
   if (review?.status === 'ready' && structuredSemanticChecks(review)
-    && SEMANTIC_CHECKS.every(key => review.checks[key].status === 'pass') && gate.issues.length) {
+    && SEMANTIC_CHECKS.every(key => review.checks[key].status === 'pass') && gate.issues.some(issue=>!isModelledPublicationIssue(issue))) {
     throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues: gate.issues });
   }
 }
@@ -60,7 +60,7 @@ export async function ensureSemanticReview(bridge, job, output, record, proposed
     && receipt.assessment.semantics_revision === POTENTIAL_REVISION && structuredSemanticChecks(receipt.review)) {
     let mediaIssue=null;
     try { record = reviewedMediaRecord(record, receipt); } catch(error) { mediaIssue=error.message; }
-    const gate = derivePublicationStatus(receipt.assessment, record, { review: receipt.review, secondPassComplete: true, requireScope:receipt.scope_review_version === IMPACT_SCOPE_REVISION });
+    const gate = derivePublicationStatus(receipt.assessment, record, { review: receipt.review, secondPassComplete: true, requireScope:receipt.scope_review_version === IMPACT_SCOPE_REVISION, requireModelledDimensions:true, isModelledPublicationIssue });
     if(mediaIssue){gate.issues.push(mediaIssue);gate.status='needs_review';}
     job.publication_gate = gate; await bridge.store.put(job);
     assertCompleteReadyReview(receipt.review, gate);

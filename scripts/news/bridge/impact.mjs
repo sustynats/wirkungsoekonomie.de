@@ -1,3 +1,4 @@
+import { modelledPublicationIssues } from '../impact-scope.mjs';
 import { researchSourceSchema } from './impact-research.mjs';
 import { withMagnitudeCalculations } from '../impact-assessment.mjs';
 import { retainPotentialHistory, POTENTIAL_REVISION } from '../impact-potential.mjs';
@@ -93,7 +94,7 @@ export function assertImpactBinding(output, job, current, now) {
 export function applyImpactOutput(output, job, current, now, { researchSources = [] } = {}) {
   assertImpactBinding(output, job, current, now);
   if (output.decision.status === 'hold') return null;
-  const issues = impactAssessmentErrors(output.impact_assessment, [...(current.sources || current.source_snapshot || []), ...(current.impact_sources || []), ...researchSources], { required: true });
+  const issues = [...modelledPublicationIssues(output.impact_assessment), ...impactAssessmentErrors(output.impact_assessment, [...(current.sources || current.source_snapshot || []), ...(current.impact_sources || []), ...researchSources], { required: true })];
   if (issues.length) throw Object.assign(Error('BRIDGE_PUBLICATION_GATE_FAILED'), { issues });
   const record = structuredClone(current);
   record.impact_sources = [...(record.impact_sources || []), ...researchSources];

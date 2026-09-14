@@ -95,3 +95,12 @@ test('unmeasured price change can retain negative modelled potential, low eviden
  const gate=derivePublicationStatus(a,{sources},{review:review(witness(a)),secondPassComplete:true,requireScope:true});
  assert.equal(gate.status,'ready');assert.ok(Object.values(a.dimensions).every(d=>d.magnitude===3));
 });
+
+test('publication admission is independent of legacy scope while historical presentation remains compatible',()=>{
+ const a=syntheticPotentialAssessment();a.dimensions.planet={path_status:'insufficient_basis',direction:'open',magnitude:null,evidence:'not_assessable',data_status:'missing',temporal_status:'ex_ante',likelihood:'unknown',dominance:'none',primary_paths:[],secondary_paths:[],balance:null,rationale:'Historisch nach Recherche ausdrücklich nicht ausreichend eingrenzbare Dimension.',research_pass:'second_pass',research_result:'Historische Recherche mit dokumentierter Grenze und geprüfter Quelle.',reviewed_source_ids:['official']};
+ const before=structuredClone(a);
+ assert.equal(derivePublicationStatus(a,{sources},{review:review(),secondPassComplete:true}).status,'ready');
+ const gate=derivePublicationStatus(a,{sources},{review:review(),secondPassComplete:true,requireModelledDimensions:true});
+ assert.equal(gate.status,'needs_review');assert.ok(gate.issues.includes('IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:planet'));
+ assert.deepEqual(a,before);
+});

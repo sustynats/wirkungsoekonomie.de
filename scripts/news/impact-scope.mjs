@@ -25,15 +25,20 @@ export const IMPACT_SCOPE_SCHEMA = object({
   }) },
 });
 
+export function modelledPublicationIssues(assessment) {
+  return ['human', 'planet', 'democracy'].flatMap(key => {
+    const d = assessment?.dimensions?.[key];
+    return d?.path_status === 'modelled' && Number.isInteger(d.magnitude) && d.magnitude >= 0 && d.magnitude <= 5 && d.primary_paths?.length ? [] : [`IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:${key}`];
+  });
+}
+export const isModelledPublicationIssue = issue => issue.startsWith('IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:');
+
 const text = value => typeof value === 'string' && value.trim().length >= 12;
 const list = value => Array.isArray(value) ? value : [];
 export function impactScopeErrors(scope, assessment, sources = [], { required = false, publication = false } = {}) {
   if (scope === undefined) return required ? ['IMPACT_SCOPE_REQUIRED'] : []; // Immutable historical review contract.
   const errors = [], fail = code => errors.push(code);
-  if (publication) for (const key of ['human', 'planet', 'democracy']) {
-    const d = assessment?.dimensions?.[key];
-    if (d?.path_status !== 'modelled' || !Number.isInteger(d.magnitude) || d.magnitude < 0 || d.magnitude > 5 || !d.primary_paths?.length) fail(`IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:${key}`);
-  }
+  if (publication) errors.push(...modelledPublicationIssues(assessment));
   if (!scope || scope.version !== IMPACT_SCOPE_REVISION) return ['IMPACT_SCOPE_INVALID'];
   const sourceIds = new Set(sources.map(source => source.source_id));
   const target = scope.target, baseline = scope.baseline;
