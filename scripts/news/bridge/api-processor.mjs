@@ -10,6 +10,7 @@ import { validateEditorialPreview } from './editorial-approval.mjs';
 import { apiRequestKey, API_EDITORIAL_PROTOCOL, validateApiRequest } from './api-service.mjs';
 import { processorPriority, isHistoricalJob } from './processor.mjs';
 import { latestEvidenceTime } from '../discovery-admission.mjs';
+import { newsInputReadiness, NEWS_INPUT_READINESS_VERSION } from '../news-input-readiness.mjs';
 
 export const API_VALIDATION_REVISION = 'single-paid-attempt-6';
 
@@ -241,7 +242,8 @@ export function selectApiJobs(jobs, now, { maxJobs = 5, maxNewsAgeHours = 6, new
 export async function apiProcessorPreflight(transport, api, now) {
   const capability = await api.health();
   if (capability.protocol !== API_EDITORIAL_PROTOCOL || capability.enabled !== true || capability.budget_guards !== true) throw Error('API_EDITORIAL_ENDPOINT_UNAVAILABLE');
-  if (capability.execution_policy?.max_paid_attempts_per_job !== 1 || capability.execution_policy?.automatic_rewrites !== false) throw Error('API_EDITORIAL_EXECUTION_POLICY_UNAVAILABLE');
+  if (capability.execution_policy?.max_paid_attempts_per_job !== 1 || capability.execution_policy?.automatic_rewrites !== false
+    || capability.execution_policy?.input_readiness_version !== NEWS_INPUT_READINESS_VERSION) throw Error('API_EDITORIAL_EXECUTION_POLICY_UNAVAILABLE');
   const runId = randomUUID();
   const receipt = { actor: 'oracle_api', run_id: runId, at: now, status: 'UNAVAILABLE', reads: {}, write_ok: false };
   for (const folder of ['98_CONFIG', '00_INBOX', '10_CLAIMED', '20_OUTPUT_READY', '30_ACK']) {
@@ -303,6 +305,13 @@ export class ApiEditorialProcessor {
       return {status:'automatic_rewrite_disabled',job_id:id,provider_attempts:0};
     }
     if (!ownership) {
+      // Preparation failure must not claim an input or consume a paid slot.
+      const existingResult = recovered || await this.api.get(request.key);
+      if (request.kind === 'news' && (!existingResult || existingResult.status === 'budget_blocked' && existingResult.provider_called === false)) {
+        const preparation = newsInputReadiness(request.prompt);
+        this.store.observe(`api-input-preparation:${id}`, {job_id:id,at:this.now(),packet_hash:request.packet_hash,...preparation});
+        if (preparation.status !== 'READY_FOR_DRAFT') return {status:'preparation_failed',job_id:id,provider_attempts:0,preparation};
+      }
       ownership = { job_id: id, key: request.key, packet_hash: hash(packet), claim_path: claimPath, claimed_at: at, actor: 'oracle_api', state: 'intent' };
       this.store.observe(`api-claim:${name}`, ownership);
       try { await this.transport.move(sourcePath, claimPath); }

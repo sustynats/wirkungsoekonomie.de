@@ -2,9 +2,11 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { ApiEditorialProcessor, prepareApiJob, selectApiJobs, apiProcessorPreflight } from '../../scripts/news/bridge/api-processor.mjs';
 import { bridgePath, outputSchema } from '../../scripts/news/bridge/contract.mjs';
+import { preparedNewsPrompt } from './fixtures/api-news-input.mjs';
+import { NEWS_INPUT_READINESS_VERSION } from '../../scripts/news/news-input-readiness.mjs';
 const now = '2026-09-13T10:00:00Z';
 const id = 'wt_20260913T093000Z_' + 'a'.repeat(24);
-const input = { job_id: id, input_hash: 'b'.repeat(64), created_at: '2026-09-13T09:30:00Z', job_type: 'new_story', sources: [{ published_at: '2026-09-13T09:30:00Z' }] };
+const input = { job_id: id, input_hash: 'b'.repeat(64), created_at: '2026-09-13T09:30:00Z', job_type: 'new_story', sources: [{ published_at: '2026-09-13T09:30:00Z' }], wirkungsticker:{story_id:'test-news',analysis_prompt:preparedNewsPrompt()} };
 const knowledge = { hash: 'c'.repeat(64), instructions: 'Quellen und WÖk prüfen. Vollständiges JSON.' };
 function shape(schema) {
   if ('const' in schema) return schema.const;
@@ -28,7 +30,7 @@ function fixture() {
     move: async (a, b) => { if (files.has(b)) throw Error('CONFLICT'); files.set(b, files.get(a)); files.delete(a); },
     writeAtomic: async (p, v) => { const value = JSON.stringify(v); if (files.has(p)) assert.equal(files.get(p), value); files.set(p, value); } };
   const results = new Map();
-  const api = { health: async () => ({ protocol: 'woek-editorial-api-1', enabled: true, budget_guards: true, execution_policy: {max_paid_attempts_per_job:1,automatic_rewrites:false} }),
+  const api = { health: async () => ({ protocol: 'woek-editorial-api-1', enabled: true, budget_guards: true, execution_policy: {max_paid_attempts_per_job:1,automatic_rewrites:false,input_readiness_version:NEWS_INPUT_READINESS_VERSION} }),
     get: async key => results.get(key), submit: async req => { calls.push(req); const result = { status: 'completed', output }; results.set(req.key, result); return result; } };
   const processor = new ApiEditorialProcessor({ store, transport, api, knowledge, now: () => now });
   return { job, files, observations, calls, output, api, transport, processor };
@@ -39,7 +41,7 @@ test('Oracle preflight is a distinct real read/write proof, not a ChatGPT attest
   assert.equal(f.calls.length, 0);
 });
 test('a worker refuses an old or unverified retry policy before touching Dropbox', async () => {
-  for (const policy of [undefined, {max_paid_attempts_per_job:3,automatic_rewrites:false}, {max_paid_attempts_per_job:1,automatic_rewrites:true}]) {
+  for (const policy of [undefined, {max_paid_attempts_per_job:3,automatic_rewrites:false}, {max_paid_attempts_per_job:1,automatic_rewrites:true}, {max_paid_attempts_per_job:1,automatic_rewrites:false}]) {
     const f=fixture(), before=[...f.files];
     f.api.health=async()=>({protocol:'woek-editorial-api-1',enabled:true,budget_guards:true,execution_policy:policy});
     await assert.rejects(apiProcessorPreflight(f.transport,f.api,now),/EXECUTION_POLICY_UNAVAILABLE/);
@@ -52,6 +54,15 @@ test('native output is delivered atomically once, never called a publication', a
   assert.equal((await f.processor.process(f.job, receipt)).status, 'already_delivered');
   assert.equal(f.calls.length, 1); assert.equal(f.job.accepted, undefined); assert.equal(f.job.ack, undefined);
   assert.ok(f.files.has(bridgePath('20_OUTPUT_READY', id + '.output.json')));
+});
+test('unfinished source preparation neither claims nor submits a news job',async()=>{
+ const f=fixture();f.job.input.wirkungsticker.analysis_prompt='A headline without sources';
+ f.files.set(bridgePath('00_INBOX',id+'.input.json'),JSON.stringify(f.job.input));
+ const result=await f.processor.process(f.job,await apiProcessorPreflight(f.transport,f.api,now));
+ assert.equal(result.status,'preparation_failed');assert.equal(result.provider_attempts,0);assert.equal(f.calls.length,0);
+ assert.ok(f.files.has(bridgePath('00_INBOX',id+'.input.json')));
+ assert.equal(f.files.has(bridgePath('10_CLAIMED',id+'.input.json')),false);
+ assert.equal(f.observations.get('api-input-preparation:'+id).status,'NEEDS_PREPARATION');
 });
 test('an existing foreign claim, ACK or output cannot trigger generation', async () => {
   for (const [folder, name] of [['10_CLAIMED', id + '.input.json'], ['30_ACK', id + '.ack.json'], ['20_OUTPUT_READY', id + '.output.json']]) {

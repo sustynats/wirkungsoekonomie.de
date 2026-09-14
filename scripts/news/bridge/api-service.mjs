@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import { mkdir, readFile, writeFile, rename, open, readdir } from 'node:fs/promises';
 import path from 'node:path';
+import { newsInputReadiness, NEWS_INPUT_READINESS_VERSION } from '../news-input-readiness.mjs';
 
 export const API_EDITORIAL_PROTOCOL = 'woek-editorial-api-1';
 const sha = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
@@ -67,7 +68,7 @@ export function validateApiRequest(input) {
 export class EditorialApiService {
   // Exposed only by the authenticated worker health endpoint. A new worker
   // must not assume that a still-running older service enforces this policy.
-  executionPolicy = Object.freeze({ max_paid_attempts_per_job: 1, automatic_rewrites: false });
+  executionPolicy = Object.freeze({ max_paid_attempts_per_job: 1, automatic_rewrites: false, input_readiness_version: NEWS_INPUT_READINESS_VERSION });
   constructor({ directory, apiKey, withBudget, ProviderError, fetchImpl = fetch, now = () => new Date().toISOString() }) {
     if (!path.isAbsolute(directory || '') || !apiKey || typeof withBudget !== 'function' || !ProviderError) throw Error('API_EDITORIAL_CONFIGURATION_REQUIRED');
     Object.assign(this, { directory, apiKey, withBudget, ProviderError, fetch: fetchImpl, now });
@@ -132,6 +133,12 @@ export class EditorialApiService {
         called++;
       }
       if (called >= 1 || input.attempt > 0) return { status: 'automatic_rewrite_disabled', provider_called: false };
+      // Paid responses remain reusable above. Check new work before reserving
+      // budget, journaling a paid attempt, or contacting the model provider.
+      if (input.kind === 'news') {
+        const preparation = newsInputReadiness(input.prompt);
+        if (preparation.status !== 'READY_FOR_DRAFT') return { status: 'preparation_failed', provider_called: false, preparation };
+      }
       try {
         if (previous) {
           record.previous_budget_refusal_at = previous.updated_at;
