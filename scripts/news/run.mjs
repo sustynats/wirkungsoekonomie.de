@@ -1,4 +1,5 @@
 import { assessmentBasis } from './migrate-impact-assessments.mjs';
+import { newsInputReadiness } from './news-input-readiness.mjs';
 import { importBackgroundImpact } from './bridge/background-import.mjs';
 import { migrateImpactAssessment } from './impact-assessment.mjs';
 import { createBridgeRuntime } from './bridge/runtime.mjs';
@@ -1386,9 +1387,17 @@ export async function runWirkungsticker(options = {}) {
               sources.push({ ...source, article_excerpt: result.excerpt, retrieved_at: now }); report.article_excerpts_fetched++;
             } catch { sources.push(source); report.article_excerpt_failures++; }
           }
-          // The complete packet becomes available immediately. A later slow
+          const preparedCandidate = { ...candidate, sources };
+          const preparation = newsInputReadiness(buildAnalysisPrompt([preparedCandidate], {transport:'dropbox_chatgpt_bridge'}));
+          if (preparation.status !== 'READY_FOR_DRAFT') {
+            (report.news_preparation_holds ||= []).push({story_id:candidate.story_id,...preparation});
+            byId.set(candidate.story_id, pendingRecord(preparedCandidate, 'NEWS_INPUT_NEEDS_PREPARATION', now, preparation.issues.map(issue=>issue.code)));
+            newsroom.decisions.push({at:now,story_id:candidate.story_id,decision:'needs_source_preparation',issues:preparation.issues});
+            continue;
+          }
+          // The prepared packet becomes available immediately. A later slow
           // source or interrupted worker must not hold back an earlier job.
-          const queued = await bridge.enqueue([{ ...candidate, sources }], [...byId.values()], now);
+          const queued = await bridge.enqueue([preparedCandidate], [...byId.values()], now);
           report.bridge_enqueued.push(...queued);
           await discoveryCheckpoint('job_enqueued', { jobs: report.bridge_enqueued.length, story_id: candidate.story_id });
         }

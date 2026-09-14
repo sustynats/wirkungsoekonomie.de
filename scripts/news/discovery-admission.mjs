@@ -1,5 +1,7 @@
 // Metadata admission to editorial review only. Never a publication or MPD score.
 import { eventCategories, normalizeEventText } from './event-relevance.mjs';
+import { isProgrammeListing } from './programme-listing.mjs';
+export { isProgrammeListing } from './programme-listing.mjs';
 
 export const DISCOVERY_ADMISSION_VERSION = '2026-09-14.1';
 const service = /\b(horoskop|lotto|gewinnspiel|gutschein|rabattcode|kaufberatung|produkttest|preisvergleich|streaming.tipps|wetterbericht|patchnotes?|firmware.update)\b/;
@@ -11,9 +13,6 @@ const publicSection = /\/(politik|politics|wirtschaft|economy|business|finanzen|
 // Programme listings can describe fictional crimes, wars and political decisions.
 // Those plot summaries must not promote the listing into a factual news event.
 // Anchored listing headings keep actual reporting about broadcasters eligible.
-export function isProgrammeListing(source = {}) {
-  return /^(?:vorschau\s*:\s*)?(?:tv|fernseh|streaming)[\s-]tipps?(?:\s*:|\s+(?:am|fur|zum|der|heute|morgen|diese[snr]?)\b|$)/.test(normalizeEventText(source.title).trim());
-}
 
 export function discoveryAdmission(sources = []) {
   const categories = eventCategories(sources);
