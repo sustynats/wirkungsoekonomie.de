@@ -1,4 +1,4 @@
-import { isGroundedOpenDimension } from './impact-potential.mjs';
+import { modelledPublicationIssues } from './impact-scope.mjs';
 import { IMPACT_VERSION, IMPACT_KEYS, impactAssessmentErrors } from './impact-assessment.mjs';
 import { derivePublicationStatus } from './impact-publication.mjs';
 import { hash } from './bridge/contract.mjs';
@@ -12,7 +12,7 @@ export function impactCoverage(records, { publicHtml = [], minimumMaterialCounts
     by_dimension:Object.fromEntries(IMPACT_KEYS.map(k=>[k,{modelled:0,material:0,not_material:0,insufficient_basis:0,magnitudes:Object.fromEntries([0,1,2,3,4,5].map(n=>[n,0]))}])), errors:[] };
   for (const record of records.filter(assessableRecord)) {
     report.active_stories++;
-    const a = record.impact_assessment, errors=impactAssessmentErrors(a,impactSources(record),{required:true});
+    const a = record.impact_assessment, errors=[...impactAssessmentErrors(a,impactSources(record),{required:true}), ...modelledPublicationIssues(a)];
     if (record.impact_assessment_basis !== assessmentBasis(record)) errors.push('IMPACT_COVERAGE_BASIS_MISMATCH');
     if (a?.publication_status !== 'ready' || record.impact_semantic_review?.status !== 'ready') errors.push('IMPACT_COVERAGE_REVIEW_REQUIRED');
     const valid = !errors.length;
@@ -23,8 +23,8 @@ export function impactCoverage(records, { publicHtml = [], minimumMaterialCounts
     }
     for (const key of IMPACT_KEYS) {
       const d=a?.dimensions?.[key], counts=report.by_dimension[key];
-      if (!isGroundedOpenDimension(d) && !d?.primary_paths?.length) report.dimensions_without_path++;
-      if (!isGroundedOpenDimension(d) && (!Number.isInteger(d?.magnitude)||d.magnitude<0||d.magnitude>5))report.potential_without_magnitude++;
+      if (!d?.primary_paths?.length) report.dimensions_without_path++;
+      if (!Number.isInteger(d?.magnitude)||d.magnitude<0||d.magnitude>5)report.potential_without_magnitude++;
       if (!d) continue;
       if(d.path_status==='modelled')counts.modelled++;
       if(d.path_status==='modelled'&&d.magnitude>0){report.material++;counts.material++;}
@@ -64,7 +64,7 @@ export function prepareImpactPromotion(records, jobs) {
       || staged.impact_semantic_review?.review_job_id !== job.semantic_review.review_job_id
       || job.input.binding.previous_impact !== hash(record.impact_assessment)
       || staged.impact_assessment_basis !== assessmentBasis(staged)
-      || derivePublicationStatus(staged.impact_assessment,staged,{review:job.semantic_review.review,secondPassComplete:true}).status !== 'ready') return record;
+      || derivePublicationStatus(staged.impact_assessment,staged,{review:job.semantic_review.review,secondPassComplete:true,requireModelledDimensions:true,requireScope:true}).status !== 'ready') return record;
     const result=structuredClone(record);
     for (const key of ['original_potential_assessment','current_potential_assessment','observed_effects','impact_assessment','impact_sources','impact_history','impact_claims','impact_import','impact_assessment_basis','impact_semantic_review']) result[key]=structuredClone(staged[key]);
     return result;
