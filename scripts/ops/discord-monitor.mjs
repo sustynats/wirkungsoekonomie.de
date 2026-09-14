@@ -212,7 +212,8 @@ export function evaluateChecks(data, now) {
       || health.current_news_open==null && Number(b.open_count)>0 && Number(health.incoming_jobs_last_hour)>0;
     const delivery = data.publicDelivery;
     const noPublicProgress=currentNewsWaiting && !paused && (!delivery?.verified
-      || age(delivery.last_new_at || delivery.observed_since,now)>120);
+      || age(delivery.last_current_new_at,now)>120
+        && (age(delivery.observed_since,now)>120 || age(delivery.latest_source_at,now)>120));
     summary.queue={total:Number(b.open_count||0),capacity:0,technical:Number(b.errors||0),editorial:0,status:b.status||'unbekannt'};
     summary.runCompleted=b.poll_at||null;
     checks.push(

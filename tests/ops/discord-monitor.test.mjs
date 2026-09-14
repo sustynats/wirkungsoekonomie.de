@@ -139,12 +139,22 @@ test('one fresh worker cannot mask missing shards or stalled news publication',(
  d.bridge.metrics.last_publication_at=now;
  checks=evaluateChecks(d,now).checks;
  assert.equal(checks.find(c=>c.id==='bridge-publication-flow').ok,false,'an import ACK is not proof of publication');
- d.publicDelivery={verified:true,observed_since:'2026-09-04T03:00:00Z',last_new_at:now};
+ d.publicDelivery={verified:true,observed_since:'2026-09-04T03:00:00Z',last_new_at:now,last_current_new_at:now};
  checks=evaluateChecks(d,now).checks;
  assert.equal(checks.find(c=>c.id==='bridge-publication-flow').ok,true);
  assert.equal(checks.find(c=>c.id==='bridge-shards').ok,false);
 });
 
+test('a new baseline or late historical delivery cannot clear a stale current-news incident', () => {
+ const d=fixture();d.processing_mode='dropbox_chatgpt_bridge';
+ d.bridge={reachable:true,processor_health:{current_news_open:5}};
+ d.publicDelivery={verified:true,observed_since:now,last_new_at:null,last_current_new_at:null,latest_source_at:'2026-09-03T06:00:00Z'};
+ assert.equal(evaluateChecks(d,now).checks.find(c=>c.id==='bridge-publication-flow').ok,false);
+ d.publicDelivery.last_new_at=now;
+ assert.equal(evaluateChecks(d,now).checks.find(c=>c.id==='bridge-publication-flow').ok,false);
+ d.publicDelivery.last_current_new_at=now;
+ assert.equal(evaluateChecks(d,now).checks.find(c=>c.id==='bridge-publication-flow').ok,true);
+});
 test('proven API worker covers news but never hides personal work or stalled publication',()=>{
  const d=fixture();d.processing_mode='dropbox_chatgpt_bridge';
  const api={actor:'oracle_api',enabled:true,news_only:true,at:now,status:'RUN_COMPLETED',

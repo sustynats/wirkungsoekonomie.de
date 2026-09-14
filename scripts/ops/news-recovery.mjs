@@ -17,7 +17,10 @@ export function observeLiveNews(previous, feed, now) {
     if (!state.entries[item.url]) {
       state.entries[item.url] = { first_seen_at: baseline ? null : now,
         source_at: item.date_published || null };
-      if (!baseline) state.last_new_at = now;
+      if (!baseline) {
+        state.last_new_at = now;
+        if (elapsed(item.date_published, now) >= 0 && elapsed(item.date_published, now) <= 360) state.last_current_new_at = now;
+      }
     }
   }
   state.checked_at = now;
@@ -25,6 +28,9 @@ export function observeLiveNews(previous, feed, now) {
     && elapsed(entry.first_seen_at, now) >= 0 && elapsed(entry.first_seen_at, now) <= 60);
   return { state, summary: { verified: true, observed_since: state.started_at,
     checked_at: now, visible_news: visible.length, last_new_at: state.last_new_at,
+    last_current_new_at: state.last_current_new_at || null,
+    latest_source_at: visible.map(item => item.date_published).filter(date => elapsed(date, now) >= 0)
+      .sort((a, b) => Date.parse(b) - Date.parse(a))[0] || null,
     new_visible_last_hour: recent.length,
     current_new_visible_last_hour: recent.filter(entry => elapsed(entry.source_at, now) >= 0
       && elapsed(entry.source_at, now) <= 360).length,
