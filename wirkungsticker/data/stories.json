@@ -2,8 +2,2342 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-14T06:37:31.016Z",
+  "updated_at": "2026-09-14T07:25:39.539Z",
   "stories": [
+    {
+      "story_id": "wt-b6a1d81a1c4e660b",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b6a1d81a1c4e660b-8cdce0b600e3820e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b6a1d81a1c4e660b-67178bdad8d36841-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b6a1d81a1c4e660b-c0901c81845429fd-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "olpreis-anstieg-auf-rund-107-dollar-pro-barrel-der-sorte-brent-4e660b",
+      "title": "Ölpreis - Anstieg auf rund 107 Dollar pro Barrel der Sorte Brent",
+      "source_summary": "Der Deutschlandfunk berichtet über einen erneuten Anstieg des Ölpreises. Ein Fass Brent kostete am Morgen 107 Dollar und 54 Cent, 2,8 Prozent mehr als zuvor. Der Bericht erklärt den Anstieg mit zunehmenden Spannungen in der Golfregion.\n\nAußerdem heißt es, Öl- und Gasmengen seien seit Februar infolge des im Bericht so bezeichneten Iran-Krieges auf dem Weltmarkt deutlich verknappt. Der Beitrag stellt einen unmittelbaren Zusammenhang zu den Treibstoffpreisen in Deutschland her und nennt die Sorge vor weiteren Störungen der weltweiten Energieversorgung. Eine unabhängige Bestätigung, die Dauer des Anstiegs und seine weiteren wirtschaftlichen Folgen liegen in der gelieferten Auswahl nicht vor.",
+      "summary": "Brent kostet laut Deutschlandfunk am Morgen 107 Dollar und 54 Cent. Der Bericht führt den Anstieg auf Spannungen in der Golfregion zurück; wie dauerhaft und breit die Folgen ausfallen, bleibt offen.",
+      "detail_summary": "Der Ölpreis für Brent ist laut Deutschlandfunk auf 107 Dollar und 54 Cent gestiegen. Als Anlass nennt der Bericht zunehmende Spannungen in der Golfregion und eine Verknappung von Öl und Gas auf dem Weltmarkt. Für Deutschland wird ein unmittelbarer Druck auf die Treibstoffpreise beschrieben. Daraus kann kurzfristig eine Belastung für Haushalte, Verkehr und Unternehmen entstehen, wenn der Preisschub anhält. Offen bleiben die Dauer, die weitere Preisentwicklung und die unabhängige Bestätigung der Ursachen.",
+      "why_relevant": "Ein neuer Preissprung bei einem zentralen Energieträger kann Treibstoffkosten und damit verbundene Belastungen verändern. Die gelieferte Quelle belegt den Preisstand, nicht bereits eingetretene breitere Wirtschafts- oder Sozialfolgen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Gemeldeter Anstieg des Brent-Preises auf 107 Dollar und 54 Cent am 14. September 2026",
+        "evaluation_target": {
+          "label": "aktueller Rohölpreisanstieg und sein bedingtes Wirkungspotenzial",
+          "type": "development"
+        },
+        "baseline": "Vorheriger Brent-Preis laut Bericht; für weitergehende Folgen Vergleich mit einer stabilen Versorgung und unveränderten Rohölpreisen",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne den gemeldeten Preisschub und die angenommene Verknappung blieben Rohöl- und daraus abgeleitete Treibstoffkosten im betrachteten Zeitraum niedriger oder weniger unter Druck; Ausmaß und Dauer dieses Vergleichs sind offen.",
+        "reference_frame": [
+          "Versorgungssicherheit und bezahlbare Energie",
+          "Belastung von Haushalten und Unternehmen",
+          "Energie- und Transportkosten in Deutschland",
+          "SDG 7, SDG 10 und SDG 13 als Referenzrahmen"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein anhaltender Rohölpreisanstieg kann über Treibstoff- und Transportkosten Haushalte, Beschäftigte und Unternehmen belasten. Die Verteilung nach Einkommen und Region ist nicht belegt; konkrete Gesundheits- oder Versorgungsschäden sind nicht nachgewiesen.",
+            "planet": "Höhere Ölpreise können Nachfrage, Effizienz und alternative Energien anreizen, zugleich aber eine Verlagerung auf andere fossile Energieträger begünstigen. Richtung und Größenordnung der ökologischen Folge sind auf Basis der gelieferten Quelle offen.",
+            "democracy": "Anhaltende Energiepreisschocks können politischen Handlungsdruck und Verteilungskonflikte erhöhen. Eine konkrete institutionelle Veränderung oder Einschränkung demokratischer Korrekturfähigkeit ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Gemeldeter Anstieg des Brent-Preises und möglicher Druck auf Treibstoffpreise.",
+          "second_order": "Bedingte Weitergabe über Mobilitäts-, Transport- und Betriebskosten mit unklarer Verteilung.",
+          "third_order": "Bedingte Veränderung von Energiepolitik, Importabhängigkeiten und Investitionsentscheidungen bei länger anhaltender Versorgungsknappheit.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die gelieferte Quelle belegt weder einen längerfristigen Preistrend noch einen tatsächlichen weltweiten Versorgungsengpass.",
+            "Kurzfristige Vorräte, alternative Lieferwege und eine sinkende Nachfrage könnten Folgen begrenzen.",
+            "Ein höherer Ölpreis kann zugleich Einsparungen oder Investitionen in Alternativen anreizen; deren Eintritt ist nicht belegt."
+          ],
+          "source_independence": "Nur eine journalistische Deutschlandfunk-Quelle liegt vor. Die Quelle ist nicht als unabhängig bestätigt; die älteren verwandten Meldungen sind keine zusätzliche Beleggrundlage für diese neue Meldung.",
+          "institutional_status": "Es liegt kein Beschluss, kein Gesetz und keine staatliche Umsetzung vor. Gegenstand ist eine berichtete Markt- und Versorgungslage."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Bei anhaltendem Rohölpreisschub steigen potenziell Treibstoff- und daraus folgende Mobilitäts- und Transportkosten.",
+                "mechanism": "Ein höherer Brent-Preis kann über Beschaffung und Preisweitergabe die Kosten von Treibstoffen erhöhen.",
+                "recipients": [
+                  "Haushalte",
+                  "Unternehmen",
+                  "Verkehrssektor"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Preisschub hält an und wird entlang der Lieferkette weitergegeben.",
+                "reference_space": "Deutschland, insbesondere Treibstoff- und transportabhängige Haushalte und Unternehmen",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Der im Bericht genannte unmittelbare Einfluss auf Treibstoffpreise setzt sich bei anhaltend höherem Rohölpreis fort.",
+                "source_support": "Die Quelle berichtet den Brent-Preis und einen unmittelbaren Einfluss auf Treibstoffpreise, quantifiziert aber weder Umfang noch Verteilung der Folgen.",
+                "limitations": "Keine unabhängige Bestätigung, keine Zeitreihe zu deutschen Treibstoffpreisen und keine Daten zu betroffenen Gruppen.",
+                "first_order": "Potentiell höhere Treibstoffkosten.",
+                "second_order": "Potentiell höhere Mobilitäts-, Transport- und Betriebskosten.",
+                "third_order": "Bedingte Verteilungs- und Versorgungskonflikte bei länger anhaltender Belastung; nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die direkte Preisweitergabe ist plausibel, ihre Dauer, Reichweite und soziale Verteilung sind jedoch offen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der direkte Mechanismus vom berichteten Rohölpreisanstieg zu möglichen Treibstoff-, Mobilitäts- und Transportkosten wurde anhand des gelieferten Deutschlandfunk-Auszuges geprüft. Eine zusätzliche lesbare amtliche Folgequelle wurde gesucht, aber nicht gewonnen. Der Pfad bleibt deshalb als supported_mechanism für die unmittelbare Preisweitergabe und als bedingte Modellierung für breitere soziale Folgen eingeordnet.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen sein können begrenzte, aber über Treibstoff und Transport verbundene Gruppen in Deutschland.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der Bericht nennt einen konkreten Rohölpreisanstieg und unmittelbaren Druck auf Treibstoffpreise, aber keine schwere Belastungsstufe.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer des Preisschubs ist offen; ein kurzfristiger bis mittelfristiger Pfad ist plausibel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Preisänderungen sind grundsätzlich leicht reversibel, sofern sich Markt- und Versorgungslage normalisieren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen und Betriebe mit geringer finanzieller oder logistischer Ausweichmöglichkeit könnten deutlich stärker belastet werden; konkrete Verteilungsdaten fehlen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht potenziell von Treibstoffpreisen zu Transport- und Betriebskosten, ohne belegte strukturelle Rückkopplung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist nicht belegt.",
+                  "reference_frame": "bezahlbare Mobilität und Energieversorgung",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der Hauptpfad ist ein bedingtes negatives Kostenrisiko für Haushalte und Unternehmen. Der gemeldete unmittelbare Treibstoffeffekt stützt den Mechanismus, nicht aber eine bereits eingetretene breite soziale Belastung.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein positiver Gegenpfad durch Einsparungen oder Alternativen ist möglich, aber nicht als gleichwertiger materieller Pfad belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Bei anhaltendem Rohölpreisschub steigen potenziell Treibstoff- und daraus folgende Mobilitäts- und Transportkosten.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Bei anhaltendem Rohölpreisschub steigen potenziell Treibstoff- und daraus folgende Mobilitäts- und Transportkosten.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 2,
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Ein anhaltender Ölpreisschock kann Nachfrage, Effizienz und Energieträgerwahl verändern; die ökologische Richtung bleibt offen.",
+                "mechanism": "Höhere fossile Energiekosten können Einsparungen und alternative Energien anreizen, aber auch eine Verlagerung auf andere Energieträger auslösen.",
+                "recipients": [
+                  "Natur",
+                  "Energieverbraucher",
+                  "Unternehmen"
+                ],
+                "magnitude": 2,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Preisschock hält an und verändert Verbrauchs- oder Investitionsentscheidungen.",
+                "reference_space": "Energie- und Verkehrssektor im internationalen Markt mit möglichen Folgen für Deutschland",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Preisänderungen beeinflussen Verhalten und Investitionen; konkrete Reaktionen hängen von Alternativen, Infrastruktur und Regulierung ab.",
+                "source_support": "Die Quelle belegt den Preisanstieg und die Sorge vor Versorgungsstörungen, nicht die ökologische Reaktion darauf.",
+                "limitations": "Keine Emissions-, Nachfrage-, Investitions- oder Energieträgerdaten; kein belegter Klimaeffekt.",
+                "first_order": "Potenzielle Veränderung der Nachfrage nach Öl und anderen Energieträgern.",
+                "second_order": "Potenzielle Verschiebung von Investitionen und Energieinfrastruktur.",
+                "third_order": "Mögliche Rückkopplungen zwischen Versorgungssicherheit, fossilen Lock-ins und Emissionen; nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Pfad ist systemisch plausibel, aber ohne zusätzliche Mechanismus- und Referenzdaten nicht richtungsfest einzuordnen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der mögliche Umweltpfad über Nachfrage, Effizienz, Investitionen und Energieträgerwahl wurde gezielt geprüft. Es wurde kein lesbarer unabhängiger Mechanismusbeleg gewonnen. Der Pfad bleibt eine low/not_assessable model_hypothesis mit offener Richtung; es werden keine Klima- oder Emissionsfolgen als beobachtet ausgegeben.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Öl ist ein international gehandelter Energieträger mit sektorübergreifender Reichweite.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der gemeldete Preissprung kann Anreize verändern, ist aber kein direkter ökologischer Zustandsbeleg.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer der Marktveränderung ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Preisbedingte Verhaltensänderungen können grundsätzlich reversibel sein; Investitionen könnten länger wirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ökologische Belastungen und ungleiche Betroffenheit sind möglich, aber nicht konkret belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Eine Verbindung zu Nachfrage und Investitionen ist möglich, eine dritte Ordnung aber nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Grenzverletzung wird berichtet.",
+                  "reference_frame": "ökologische Belastungsgrenzen und Emissionen",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Für den Planeten ist ein gekoppelte Wirkpfad zu Energieverbrauch und Investitionen denkbar, aber die Richtung ist offen. Der aktuelle Preisstand beweist weder Emissionsminderung noch zusätzliche Klimabelastung.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive und negative Umweltpfade sind beide nur hypothetisch; daher keine künstliche Gegenwirkung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Ein anhaltender Ölpreisschock kann Nachfrage, Effizienz und Energieträgerwahl verändern; die ökologische Richtung bleibt offen.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein anhaltender Ölpreisschock kann Nachfrage, Effizienz und Energieträgerwahl verändern; die ökologische Richtung bleibt offen.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Ein anhaltender Energiepreisschock kann politischen Verteilungsdruck und Konflikte über Versorgungssicherheit erhöhen.",
+                "mechanism": "Steigende Energie- und Mobilitätskosten können Forderungen nach Entlastung, Priorisierung und staatlicher Reaktion verstärken.",
+                "recipients": [
+                  "staatliche Institutionen",
+                  "Haushalte",
+                  "Unternehmen",
+                  "politische Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Preisschock hält an und wird als breite soziale Belastung wahrgenommen.",
+                "reference_space": "politische Entscheidungs- und Verteilungsprozesse in Deutschland",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Anhaltende Energiepreisbelastungen erhöhen politischen Handlungsdruck; konkrete institutionelle Reaktionen sind nicht vorhergesagt.",
+                "source_support": "Die Quelle berichtet Sorge vor weiteren Störungen der Energieversorgung, nicht politische Konflikte oder demokratische Folgen.",
+                "limitations": "Keine Daten zu öffentlicher Wahrnehmung, politischen Entscheidungen, Protesten oder institutioneller Korrekturfähigkeit.",
+                "first_order": "Potentiell höherer politischer Handlungsdruck bei Energie- und Preisfragen.",
+                "second_order": "Mögliche Verteilungskonflikte über Entlastungen und Versorgungssicherheit.",
+                "third_order": "Eine strukturelle Veränderung demokratischer Institutionen ist nicht belegt und wird nicht behauptet.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist indirekt und stark von Dauer sowie politischer Verarbeitung abhängig."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Der mögliche Pfad von anhaltendem Energiepreisdruck zu politischem Verteilungsdruck wurde gezielt geprüft. Es wurde kein lesbarer Zusatzbeleg zu tatsächlichen politischen oder demokratischen Folgen gewonnen. Der Pfad bleibt eine niedrig plausible Modellhypothese mit begrenzter Tragweite und ohne behauptete institutionelle Veränderung.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Energiepreise können mehrere gesellschaftliche Gruppen und politische Ebenen betreffen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der Bericht nennt Sorge vor Versorgungsstörungen, aber keinen demokratischen Konflikt oder institutionellen Schaden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Ein politischer Folgepfad wäre bei anhaltender Belastung möglich, die Dauer ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische Prioritäten und Entlastungsentscheidungen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ungleich belastete Gruppen könnten politischen Druck unterschiedlich erfahren; konkrete Verteilung ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein Einfluss auf politische Priorisierung ist denkbar, eine institutionelle oder normative Systemveränderung nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine konkrete Einschränkung demokratischer Rechte oder Korrekturfähigkeit belegt.",
+                  "reference_frame": "demokratische Korrekturfähigkeit und faire Verteilung politischer Lasten",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Ein länger anhaltender Energiepreisschock kann politischen Verteilungsdruck erzeugen, doch die Quelle berichtet keine konkrete demokratische Folge. Die Tragweite bleibt deshalb niedrig und die Evidenz ist schwach.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Ein positiver demokratischer Gegenpfad ist nicht konkret belegt; der schwache negative Pfad wird nicht zu einer Systemwirkung hochgestuft."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Ein anhaltender Energiepreisschock kann politischen Verteilungsdruck und Konflikte über Versorgungssicherheit erhöhen.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Ein anhaltender Energiepreisschock kann politischen Verteilungsdruck und Konflikte über Versorgungssicherheit erhöhen.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Der Deutschlandfunk-Beleg trägt den berichteten Brent-Preis von 107 Dollar und 54 Cent, den Anstieg um 2,8 Prozent sowie die ausdrücklich zugeschriebene Einordnung zu Golfspannungen, Verknappung und möglichem Druck auf Treibstoffpreise."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Bei anhaltendem Rohölpreisschub steigen potenziell Treibstoff- und daraus folgende Mobilitäts- und Transportkosten.",
+              "mechanism": "Ein höherer Brent-Preis kann über Beschaffung und Preisweitergabe die Kosten von Treibstoffen erhöhen.",
+              "recipients": [
+                "Haushalte",
+                "Unternehmen",
+                "Verkehrssektor"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Preisschub hält an und wird entlang der Lieferkette weitergegeben.",
+              "reference_space": "Deutschland, insbesondere Treibstoff- und transportabhängige Haushalte und Unternehmen",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Der im Bericht genannte unmittelbare Einfluss auf Treibstoffpreise setzt sich bei anhaltend höherem Rohölpreis fort.",
+              "source_support": "Die Quelle berichtet den Brent-Preis und einen unmittelbaren Einfluss auf Treibstoffpreise, quantifiziert aber weder Umfang noch Verteilung der Folgen.",
+              "limitations": "Keine unabhängige Bestätigung, keine Zeitreihe zu deutschen Treibstoffpreisen und keine Daten zu betroffenen Gruppen.",
+              "first_order": "Potentiell höhere Treibstoffkosten.",
+              "second_order": "Potentiell höhere Mobilitäts-, Transport- und Betriebskosten.",
+              "third_order": "Bedingte Verteilungs- und Versorgungskonflikte bei länger anhaltender Belastung; nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die direkte Preisweitergabe ist plausibel, ihre Dauer, Reichweite und soziale Verteilung sind jedoch offen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der direkte Mechanismus vom berichteten Rohölpreisanstieg zu möglichen Treibstoff-, Mobilitäts- und Transportkosten wurde anhand des gelieferten Deutschlandfunk-Auszuges geprüft. Eine zusätzliche lesbare amtliche Folgequelle wurde gesucht, aber nicht gewonnen. Der Pfad bleibt deshalb als supported_mechanism für die unmittelbare Preisweitergabe und als bedingte Modellierung für breitere soziale Folgen eingeordnet.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen sein können begrenzte, aber über Treibstoff und Transport verbundene Gruppen in Deutschland.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der Bericht nennt einen konkreten Rohölpreisanstieg und unmittelbaren Druck auf Treibstoffpreise, aber keine schwere Belastungsstufe.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer des Preisschubs ist offen; ein kurzfristiger bis mittelfristiger Pfad ist plausibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Preisänderungen sind grundsätzlich leicht reversibel, sofern sich Markt- und Versorgungslage normalisieren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen und Betriebe mit geringer finanzieller oder logistischer Ausweichmöglichkeit könnten deutlich stärker belastet werden; konkrete Verteilungsdaten fehlen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht potenziell von Treibstoffpreisen zu Transport- und Betriebskosten, ohne belegte strukturelle Rückkopplung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist nicht belegt.",
+                "reference_frame": "bezahlbare Mobilität und Energieversorgung",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der Hauptpfad ist ein bedingtes negatives Kostenrisiko für Haushalte und Unternehmen. Der gemeldete unmittelbare Treibstoffeffekt stützt den Mechanismus, nicht aber eine bereits eingetretene breite soziale Belastung.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein positiver Gegenpfad durch Einsparungen oder Alternativen ist möglich, aber nicht als gleichwertiger materieller Pfad belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Bei anhaltendem Rohölpreisschub steigen potenziell Treibstoff- und daraus folgende Mobilitäts- und Transportkosten.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Bei anhaltendem Rohölpreisschub steigen potenziell Treibstoff- und daraus folgende Mobilitäts- und Transportkosten.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "dominance": "none",
+          "direction": "open",
+          "magnitude": 2,
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Ein anhaltender Ölpreisschock kann Nachfrage, Effizienz und Energieträgerwahl verändern; die ökologische Richtung bleibt offen.",
+              "mechanism": "Höhere fossile Energiekosten können Einsparungen und alternative Energien anreizen, aber auch eine Verlagerung auf andere Energieträger auslösen.",
+              "recipients": [
+                "Natur",
+                "Energieverbraucher",
+                "Unternehmen"
+              ],
+              "magnitude": 2,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Preisschock hält an und verändert Verbrauchs- oder Investitionsentscheidungen.",
+              "reference_space": "Energie- und Verkehrssektor im internationalen Markt mit möglichen Folgen für Deutschland",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Preisänderungen beeinflussen Verhalten und Investitionen; konkrete Reaktionen hängen von Alternativen, Infrastruktur und Regulierung ab.",
+              "source_support": "Die Quelle belegt den Preisanstieg und die Sorge vor Versorgungsstörungen, nicht die ökologische Reaktion darauf.",
+              "limitations": "Keine Emissions-, Nachfrage-, Investitions- oder Energieträgerdaten; kein belegter Klimaeffekt.",
+              "first_order": "Potenzielle Veränderung der Nachfrage nach Öl und anderen Energieträgern.",
+              "second_order": "Potenzielle Verschiebung von Investitionen und Energieinfrastruktur.",
+              "third_order": "Mögliche Rückkopplungen zwischen Versorgungssicherheit, fossilen Lock-ins und Emissionen; nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Pfad ist systemisch plausibel, aber ohne zusätzliche Mechanismus- und Referenzdaten nicht richtungsfest einzuordnen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der mögliche Umweltpfad über Nachfrage, Effizienz, Investitionen und Energieträgerwahl wurde gezielt geprüft. Es wurde kein lesbarer unabhängiger Mechanismusbeleg gewonnen. Der Pfad bleibt eine low/not_assessable model_hypothesis mit offener Richtung; es werden keine Klima- oder Emissionsfolgen als beobachtet ausgegeben.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Öl ist ein international gehandelter Energieträger mit sektorübergreifender Reichweite.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der gemeldete Preissprung kann Anreize verändern, ist aber kein direkter ökologischer Zustandsbeleg.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer der Marktveränderung ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Preisbedingte Verhaltensänderungen können grundsätzlich reversibel sein; Investitionen könnten länger wirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ökologische Belastungen und ungleiche Betroffenheit sind möglich, aber nicht konkret belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Eine Verbindung zu Nachfrage und Investitionen ist möglich, eine dritte Ordnung aber nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Grenzverletzung wird berichtet.",
+                "reference_frame": "ökologische Belastungsgrenzen und Emissionen",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Für den Planeten ist ein gekoppelte Wirkpfad zu Energieverbrauch und Investitionen denkbar, aber die Richtung ist offen. Der aktuelle Preisstand beweist weder Emissionsminderung noch zusätzliche Klimabelastung.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive und negative Umweltpfade sind beide nur hypothetisch; daher keine künstliche Gegenwirkung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein anhaltender Ölpreisschock kann Nachfrage, Effizienz und Energieträgerwahl verändern; die ökologische Richtung bleibt offen.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Ein anhaltender Ölpreisschock kann Nachfrage, Effizienz und Energieträgerwahl verändern; die ökologische Richtung bleibt offen.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Ein anhaltender Energiepreisschock kann politischen Verteilungsdruck und Konflikte über Versorgungssicherheit erhöhen.",
+              "mechanism": "Steigende Energie- und Mobilitätskosten können Forderungen nach Entlastung, Priorisierung und staatlicher Reaktion verstärken.",
+              "recipients": [
+                "staatliche Institutionen",
+                "Haushalte",
+                "Unternehmen",
+                "politische Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Preisschock hält an und wird als breite soziale Belastung wahrgenommen.",
+              "reference_space": "politische Entscheidungs- und Verteilungsprozesse in Deutschland",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Anhaltende Energiepreisbelastungen erhöhen politischen Handlungsdruck; konkrete institutionelle Reaktionen sind nicht vorhergesagt.",
+              "source_support": "Die Quelle berichtet Sorge vor weiteren Störungen der Energieversorgung, nicht politische Konflikte oder demokratische Folgen.",
+              "limitations": "Keine Daten zu öffentlicher Wahrnehmung, politischen Entscheidungen, Protesten oder institutioneller Korrekturfähigkeit.",
+              "first_order": "Potentiell höherer politischer Handlungsdruck bei Energie- und Preisfragen.",
+              "second_order": "Mögliche Verteilungskonflikte über Entlastungen und Versorgungssicherheit.",
+              "third_order": "Eine strukturelle Veränderung demokratischer Institutionen ist nicht belegt und wird nicht behauptet.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist indirekt und stark von Dauer sowie politischer Verarbeitung abhängig."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Der mögliche Pfad von anhaltendem Energiepreisdruck zu politischem Verteilungsdruck wurde gezielt geprüft. Es wurde kein lesbarer Zusatzbeleg zu tatsächlichen politischen oder demokratischen Folgen gewonnen. Der Pfad bleibt eine niedrig plausible Modellhypothese mit begrenzter Tragweite und ohne behauptete institutionelle Veränderung.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Energiepreise können mehrere gesellschaftliche Gruppen und politische Ebenen betreffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der Bericht nennt Sorge vor Versorgungsstörungen, aber keinen demokratischen Konflikt oder institutionellen Schaden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Ein politischer Folgepfad wäre bei anhaltender Belastung möglich, die Dauer ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische Prioritäten und Entlastungsentscheidungen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ungleich belastete Gruppen könnten politischen Druck unterschiedlich erfahren; konkrete Verteilung ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein Einfluss auf politische Priorisierung ist denkbar, eine institutionelle oder normative Systemveränderung nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine konkrete Einschränkung demokratischer Rechte oder Korrekturfähigkeit belegt.",
+                "reference_frame": "demokratische Korrekturfähigkeit und faire Verteilung politischer Lasten",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Ein länger anhaltender Energiepreisschock kann politischen Verteilungsdruck erzeugen, doch die Quelle berichtet keine konkrete demokratische Folge. Die Tragweite bleibt deshalb niedrig und die Evidenz ist schwach.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Ein positiver demokratischer Gegenpfad ist nicht konkret belegt; der schwache negative Pfad wird nicht zu einer Systemwirkung hochgestuft."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Ein anhaltender Energiepreisschock kann politischen Verteilungsdruck und Konflikte über Versorgungssicherheit erhöhen.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Ein anhaltender Energiepreisschock kann politischen Verteilungsdruck und Konflikte über Versorgungssicherheit erhöhen.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T07:25:39.539Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T05:38:17.000Z",
+      "last_updated": "2026-09-14T07:25:39.539Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-7e615054d6029f6c4d32",
+      "case_file": null,
+      "source_published_at": "2026-09-14T05:38:17.000Z",
+      "published_at": "2026-09-14T07:25:39.539Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/anstieg-auf-rund-107-dollar-pro-barrel-der-sorte-brent-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T05:38:17.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-eb36c70c560b9e5d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-eb36c70c560b9e5d-c146c286c14ce3e5-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-eb36c70c560b9e5d-8d15820bd39bec67-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-eb36c70c560b9e5d-fbf591181eb52a1a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "kiezkantinen-in-berlin-her-mit-dem-veganem-essen-0b9e5d",
+      "title": "Kiezkantinen in Berlin: Her mit dem veganem Essen",
+      "source_summary": "Die taz veröffentlicht einen Gastkommentar von Friederike Schmitz über einen Vorschlag der Berliner Linkspartei. Die Partei wolle 20 Kiezkantinen mit staatlich geförderten Mahlzeiten aufbauen; im aktuellen Konzept sei eine Mindestquote pflanzlicher Lebensmittel vorgesehen.\n\nDer Beitrag ordnet Kiezkantinen als mögliche öffentliche Daseinsvorsorge ein und nennt Ernährungsarmut, Einsamkeit, Gesundheit, Klimaschutz und Gerechtigkeit als erhoffte Ziele. Für eine Pilot-Kiezkantine in Kreuzberg wird ein vegetarisch-veganes Angebot beschrieben, das laut Beitrag gut angenommen worden sei. Offen bleiben Finanzierung, Standorte, konkrete Ausgestaltung und die Umsetzung nach der Wahl am 20. September.",
+      "summary": "Die Berliner Linkspartei wirbt laut einem taz-Gastkommentar für 20 staatlich geförderte Kiezkantinen mit pflanzenbasiertem Angebot. Nachrichtenwert hat der Vorschlag als politische Ankündigung; seine Folgen bleiben ohne Konzept, Finanzierung und Umsetzungsentscheidung offen.",
+      "detail_summary": "Die Berliner Linkspartei will laut einem Gastkommentar 20 Kiezkantinen mit staatlich geförderten Mahlzeiten aufbauen. Im aktuellen Konzept sei eine Mindestquote pflanzlicher Lebensmittel vorgesehen. Das könnte den Zugang zu gemeinschaftlichem Essen verändern, wenn Finanzierung, Standorte und Angebot tatsächlich festgelegt werden. Der Beitrag nennt mögliche Bezüge zu Ernährungsarmut, Einsamkeit, Gesundheit und Klimaschutz, belegt aber keine eingetretenen Folgen. Die Umsetzung bleibt nach dem Quelldatum offen.",
+      "why_relevant": "Der Vorschlag verbindet eine konkrete politische Zusage mit öffentlicher Daseinsvorsorge und Ernährung. Er ist als vorläufige Ankündigung relevant, weil er Zugang, Angebot und mögliche kommunale Infrastruktur verändern könnte; Reichweite und Folgen sind noch nicht belegt.",
+      "topic": [
+        "Klima"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Die Berliner Linkspartei kündigt laut einem taz-Gastkommentar 20 staatlich geförderte Kiezkantinen mit pflanzenbasierter Vorgabe an.",
+        "evaluation_target": {
+          "label": "Angekündigtes Kiezkantinen-Konzept der Berliner Linkspartei",
+          "type": "proposal"
+        },
+        "baseline": "Vor dem möglichen Eingriff bestehen private, zivilgesellschaftliche und öffentliche Essensangebote; Umfang, Preise, Zugänglichkeit und regionale Verteilung sind im vorliegenden Material nicht quantifiziert.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne Umsetzung bleibt die im Material nicht näher bestimmte Angebotsstruktur bestehen. Ein zusätzliches gefördertes Mahlzeitenangebot, eine veränderte pflanzliche Auswahl und eine mögliche kommunale Trägerschaft würden nicht entstehen.",
+        "reference_frame": [
+          "Zugang zu bezahlbarer Ernährung und sozialer Teilhabe",
+          "öffentliche Daseinsvorsorge",
+          "kommunale Ernährungsvorsorge",
+          "Agenda 2030/SDG 2, SDG 3, SDG 10, SDG 11 und SDG 12 als Bezugsrahmen, nicht als Kausalitätsbeleg"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der bedingte Hauptpfad führt von staatlicher Förderung, Standorten und Preisen zu einem möglichen zusätzlichen Angebot an Mahlzeiten und sozialen Begegnungsorten. Ernährungsarmut und Einsamkeit werden im Gastkommentar als Problembezüge genannt; konkrete Daten zu Zugang, Nutzung und Verteilung fehlen. Ein gegenläufiger Zugangspfad ist nur als Nebenrisiko modelliert.",
+            "planet": "Der bedingte Pfad führt von der angekündigten Mindestquote pflanzlicher Lebensmittel zu einer veränderten Zusammensetzung der angebotenen Mahlzeiten. Eine tatsächliche Umwelt- oder Klimawirkung ist ohne Speisepläne, Mengen, Beschaffung und Vergleichsangebot nicht belegt.",
+            "democracy": "Ein möglicher institutioneller Pfad betrifft die politische Entscheidung über Budget, Zugang und kommunale Zuständigkeit. Eine konkrete Veränderung demokratischer Teilhabe, Machtverteilung oder Rechenschaft ist weder eingetreten noch belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Die politische Ankündigung benennt 20 Kiezkantinen, staatlich geförderte Mahlzeiten und eine Mindestquote pflanzlicher Lebensmittel. Sie verändert den bestehenden Versorgungszustand noch nicht.",
+          "second_order": "Bei Umsetzung könnten sich lokale Zugänge, Nachfrage und soziale Nutzung verändern. Richtung und Stärke hängen insbesondere von Preis, Standort, Öffnungszeiten, Barrierefreiheit, Qualität und tatsächlicher Nutzung ab.",
+          "third_order": "Bei dauerhafter Verstetigung könnte kommunale Ernährungsvorsorge institutionell stärker verankert werden. Dieser Folgepfad bleibt wegen fehlender Beschluss-, Finanzierungs- und Trägerdaten offen.",
+          "enablement": [
+            "enables_local_public_food_provision",
+            "could_shift_budgetary_and_accountability_questions_to_public_institutions"
+          ],
+          "counter_evidence": [
+            "Das vollständige Konzept, Finanzierungsrahmen, Standorte und Zugangskriterien liegen nicht vor.",
+            "Die Quelle ist ein zugeschriebener Gastkommentar und keine unabhängige Wirkungs- oder Konzeptprüfung.",
+            "Es liegen keine belastbaren Nutzungs-, Gesundheits-, Umwelt- oder Teilhabedaten zur Pilotkantine vor.",
+            "Die gezielte Suche nach zusätzlichen zugänglichen Belegen innerhalb des vorgegebenen Quellenregisters ergab keinen tatsächlich lesbaren unabhängigen Ereignis- oder Mechanismusbeleg."
+          ],
+          "source_independence": "Für die politische Ankündigung liegt eine journalistische Einzelquelle vor. Die Quelle ist für eine ausdrücklich vorläufig und zugeschrieben formulierte Meldung verwendbar, bestätigt aber keine Folgen. Die gezielte Ergänzungsrecherche lieferte keine zusätzliche tatsächlich gelesene Quelle.",
+          "institutional_status": "Angekündigtes Wahlkampfkonzept; kein belegter Beschluss, kein belegter Haushaltsansatz und kein belegtes Inkrafttreten."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Zusätzliche geförderte Mahlzeiten könnten für erreichbare Menschen den Zugang zu Essen und sozialen Kontakten erweitern.",
+                "mechanism": "Staatliche Förderung und lokale Standorte könnten das verfügbare Angebot und dessen Erreichbarkeit verändern.",
+                "recipients": [
+                  "Haushalte",
+                  "Menschen mit knappem Einkommen",
+                  "Kinder und Jugendliche",
+                  "ältere Menschen",
+                  "Menschen mit eingeschränkter sozialer Teilhabe"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Finanzierung, Standorte, erschwingliche Preise, barrierearme Zugänge, geeignete Öffnungszeiten und tatsächliche Nutzung werden umgesetzt.",
+                "reference_space": "Ausgewählte Berliner Kieze",
+                "time_horizon": "Ab einer möglichen Umsetzung bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Das zusätzliche Angebot erreicht Menschen, die bisher keinen gleichwertigen Zugang zu bezahlbaren Mahlzeiten oder Gemeinschaftsangeboten haben.",
+                "source_support": "Die Quelle belegt die angekündigten Kiezkantinen und nennt Ernährungsarmut sowie Einsamkeit als Problembezüge; sie belegt keine eingetretene Zugangs- oder Teilhabewirkung.",
+                "limitations": "Keine Daten zu Preisen, Standorten, Nachfrage, Nutzung, Barrierefreiheit oder tatsächlichen sozialen und gesundheitlichen Veränderungen.",
+                "first_order": "An ausgewählten Standorten könnte ein zusätzliches gefördertes Mahlzeitenangebot entstehen.",
+                "second_order": "Bei erreichbarem und erschwinglichem Zugang könnten sich Essensoptionen und soziale Kontakte bestimmter Nutzergruppen erweitern.",
+                "third_order": "Bei Verstetigung könnte kommunale Ernährungsvorsorge stärker als öffentliche Aufgabe behandelt werden; dieser Pfad ist nicht belegt.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die angekündigte Zahl von 20 Standorten begrenzt den möglichen Raum. Bei guter Erreichbarkeit kann die lokale Zustandsveränderung dennoch mehr als gering sein; Umfang und Verteilung bleiben unsicher."
+                },
+                "negligibility_rationale": "Nicht vernachlässigbar, weil ein zusätzliches lokales Angebot für erreichbare Nutzerinnen und Nutzer den Zugang tatsächlich verändern könnte; der Pfad bleibt jedoch ex ante.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Recherche nach einem zusätzlichen Ereignis- oder Mechanismusbeleg wurde abgeschlossen, ergab aber keinen tatsächlich lesbaren unabhängigen Beleg. Die Einschätzung bleibt deshalb eine niedrig evidenzbasierte Modellhypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft eine begrenzte Zahl angekündigter Standorte in ausgewählten Berliner Kiezen; Grundlage ist die Angabe von 20 Kiezkantinen in der Quelle.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Ein zusätzliches Mahlzeitenangebot könnte den Zugang einzelner Nutzergruppen begrenzt verändern; konkrete Preis- und Nutzungsdaten fehlen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Wirkung könnte während des Betriebs anhalten, ist wegen fehlender Finanzierungs- und Verstetigungsdaten aber nicht gesichert.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Angebote, Standorte und Förderung wären grundsätzlich politisch und organisatorisch veränderbar oder beendbar.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Der Beitrag nennt Ernährungsarmut und Einsamkeit; besonders belastete Gruppen könnten profitieren, ausgeschlossen oder unterschiedlich erreicht werden. Die konkrete Verteilung ist offen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad kann lokale Versorgung und soziale Teilhabe berühren, belegt aber keine starke institutionelle Rückkopplung.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist weder beobachtet noch für den ex-ante-Pfad bedingt belegt.",
+                  "reference_frame": "Zugang zu bezahlbarer Ernährung, sozialer Teilhabe und barrierearmer Hilfe",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Preise, Standorte, Öffnungszeiten oder Zugangskriterien könnten bestimmte Gruppen vom Angebot ausschließen.",
+                "mechanism": "Die konkrete Ausgestaltung entscheidet, welche Menschen das Angebot tatsächlich erreichen.",
+                "recipients": [
+                  "Menschen mit knappem Einkommen",
+                  "Kinder und Jugendliche",
+                  "ältere Menschen",
+                  "Menschen mit Behinderungen",
+                  "Menschen mit eingeschränkter Mobilität"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Das Angebot bleibt nicht niedrigschwellig, ist räumlich schlecht erreichbar oder berücksichtigt besondere Zugangsbedarfe nicht.",
+                "reference_space": "Ausgewählte Berliner Kieze",
+                "time_horizon": "Planung und möglicher Betrieb",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Preis, Öffnungszeiten, Lage und Zugangskriterien verteilen die Nutzung ungleich.",
+                "source_support": "Die Quelle nennt keine Zugangskriterien, Preise, Standorte oder Verteilungsdaten.",
+                "limitations": "Der Pfad ist eine bedingte Modellannahme ohne konkrete Ausgestaltung.",
+                "first_order": "Bestimmte Gruppen erreichen das Angebot möglicherweise nicht.",
+                "second_order": "Die beabsichtigte Entlastung bei Ernährungsarmut könnte ungleich ausfallen.",
+                "third_order": "Eine weitergehende institutionelle Folge ist nicht belastbar ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne konkrete Zugangsdaten reicht der plausible Bereich von praktisch gering bis lokal begrenzt."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht generell vernachlässigbar, weil vulnerable Gruppen betroffen sein könnten; sein Umfang ist aber vollständig auslegungsabhängig.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Suche nach belastbaren Zugangsdaten wurde abgeschlossen, ergab aber keinen tatsächlich lesbaren unabhängigen Beleg. Das Risiko bleibt als bedingte Modellhypothese dokumentiert.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen wären vor allem Nutzerinnen und Nutzer der jeweiligen Angebote.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Zugangshürden könnten die Nutzung begrenzt verändern; konkrete Hürden sind nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Hürden könnten während des Betriebs anhalten, wären aber grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Zugang, Preise und Öffnungszeiten könnten politisch oder organisatorisch angepasst werden.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Ungleicher Zugang könnte Menschen mit knappen Ressourcen, eingeschränkter Mobilität oder besonderem Unterstützungsbedarf stärker treffen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein tiefer struktureller Folgepfad ist nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist nicht belegt; das Risiko betrifft eine mögliche Ausgestaltungsfolge.",
+                  "reference_frame": "Gleichberechtigter Zugang zu Grundversorgung und erreichbarer Hilfe",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "rationale": "Der stärkste menschliche Pfad ist bedingt positiv und lokal begrenzt. Das Zugangsrisko betrifft die Ausgestaltung und ist kein gleich starker Gegenpfad zum angekündigten Vorhaben. Die Richtung des Hauptpfads bleibt positiv, die Evidenz niedrig und der Eintritt unsicher.",
+            "balance": {
+              "rationale": "Der positive Hauptpfad und das negative Nebenrisiko werden getrennt bewertet. Das Nebenrisiko kompensiert den Hauptpfad nicht und ändert dessen Richtung nicht.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Zusätzliche geförderte Mahlzeiten könnten für erreichbare Menschen den Zugang zu Essen und sozialen Kontakten erweitern.",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzliche geförderte Mahlzeiten könnten für erreichbare Menschen den Zugang zu Essen und sozialen Kontakten erweitern.",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "evidence": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Eine Mindestquote pflanzlicher Lebensmittel könnte die Zusammensetzung der geförderten Mahlzeiten zugunsten pflanzlicher Angebote verändern.",
+                "mechanism": "Eine Angebotsvorgabe würde die Auswahl innerhalb der möglichen Kiezkantinen verändern.",
+                "recipients": [
+                  "Nutzerinnen und Nutzer der Kiezkantinen",
+                  "Landwirtschaftliche und lebensmittelbezogene Lieferketten",
+                  "Umwelt"
+                ],
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Die Mindestquote wird beschlossen, umgesetzt und von ausreichend Menschen genutzt; die konkrete Beschaffung führt tatsächlich zu einer geringeren Umweltbelastung als das Vergleichsangebot.",
+                "reference_space": "Geförderte Kiezkantinen in Berlin und ihre Lieferketten",
+                "time_horizon": "Während eines möglichen Betriebs, mit möglichen längerfristigen Nachfrageeffekten",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Eine veränderte Zusammensetzung der Mahlzeiten kann gegenüber einem tierproduktreicheren Vergleichsangebot Umweltbelastungen reduzieren; Umfang und Richtung hängen von Lebensmitteln, Mengen, Beschaffung und Nutzung ab.",
+                "source_support": "Die Quelle belegt die angekündigte Mindestquote pflanzlicher Lebensmittel und ordnet das Vorhaben als Beitrag zum Klimaschutz ein; sie liefert keine Speisepläne, Mengen-, Emissions- oder Vergleichsdaten.",
+                "limitations": "Keine unabhängige Mechanismusquelle, keine Beschaffungsdaten, keine Mengen, keine Nutzungsdaten und kein belastbarer Umweltvergleich.",
+                "first_order": "Die Zusammensetzung des geförderten Speiseangebots könnte sich verändern.",
+                "second_order": "Die Nachfrage nach pflanzlichen Lebensmitteln könnte im begrenzten Versorgungsraum steigen.",
+                "third_order": "Eine systemische Veränderung von Lieferketten oder Emissionen ist aus dem Material nicht ableitbar.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 2,
+                  "rationale": "Der mögliche Pfad bleibt zunächst auf die angekündigten Angebote und deren Nutzung begrenzt. Ohne Mengen- und Beschaffungsdaten ist keine höhere Tragweite begründbar."
+                },
+                "negligibility_rationale": "Nicht vollständig vernachlässigbar, weil die Angebotszusammensetzung konkret verändert werden könnte; eine relevante Umweltwirkung ist jedoch nicht belegt.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Suche nach einem zugänglichen amtlichen oder wissenschaftlichen Mechanismusbeleg wurde abgeschlossen, ergab aber keinen tatsächlich lesbaren zusätzlichen Beleg. Der Umweltpfad bleibt eine niedrig evidenzbasierte Modellhypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen wäre zunächst das Angebot der angekündigten Kiezkantinen, nicht das gesamte Berliner Ernährungssystem.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Zusammensetzung der Mahlzeiten könnte sich begrenzt verändern; konkrete Mengen und Vergleichswerte fehlen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Veränderung könnte über die Betriebsdauer anhalten, sofern die Quote tatsächlich gilt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Speisepläne und Quoten wären grundsätzlich politisch und organisatorisch veränderbar.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere unmittelbare Lastkonzentration auf vulnerable Gruppen ist nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein begrenzter Nachfragepfad ist plausibel; eine starke Lieferketten- oder Klimarückkopplung ist nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete schwere ökologische Schutzgrenzverletzung oder messbare Verbesserung ist nicht belegt.",
+                  "reference_frame": "Umwelt- und Klimaschutz",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 2,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der planetare Pfad ist als bedingte Angebots- und Nachfrageveränderung plausibel, aber nicht durch unabhängige Mechanismus- oder Vergleichsdaten abgesichert. Die Tragweite bleibt deshalb begrenzt und die Evidenz niedrig.",
+            "balance": {
+              "rationale": "Ein belastbarer gegenläufiger Umweltpfad ist aus dem Material nicht ableitbar. Der positive Pfad ist dennoch nur Potenzial und kein Nachweis einer eingetretenen Klima- oder Umweltwirkung.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 2,
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Eine Mindestquote pflanzlicher Lebensmittel könnte die Zusammensetzung der geförderten Mahlzeiten zugunsten pflanzlicher Angebote verändern.",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Eine Mindestquote pflanzlicher Lebensmittel könnte die Zusammensetzung der geförderten Mahlzeiten zugunsten pflanzlicher Angebote verändern.",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "unknown",
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Eine dauerhafte öffentliche Ernährungsvorsorge könnte kommunale Zuständigkeiten, Budgetentscheidungen und politische Rechenschaft berühren.",
+                "mechanism": "Ein dauerhaftes öffentliches Angebot würde Entscheidungen über Förderung, Zugang, Trägerschaft und Kontrolle stärker in politische Institutionen verlagern.",
+                "recipients": [
+                  "Berliner Bezirke",
+                  "Land Berlin",
+                  "kommunale Träger",
+                  "Nutzerinnen und Nutzer"
+                ],
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "unknown",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "condition": "Das Konzept wird beschlossen, finanziert und als dauerhafte öffentliche Aufgabe institutionalisiert.",
+                "reference_space": "Berlin und kommunale Ernährungsvorsorge",
+                "time_horizon": "Mittel- bis längerfristig bei Verstetigung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die institutionelle Zuständigkeit könnte Transparenz, Kontrolle, Beteiligung oder Konflikte über Prioritäten verändern; Richtung und Ausmaß sind offen.",
+                "source_support": "Die Quelle bezeichnet Kiezkantinen als mögliche öffentliche Daseinsvorsorge, belegt aber keinen Beschluss und keine institutionelle Veränderung.",
+                "limitations": "Keine Angaben zu Trägerschaft, Haushaltskontrolle, Beteiligung, Transparenz, Beschwerdewegen oder demokratischen Verfahren.",
+                "first_order": "Politische Entscheidungen über Förderung, Zugang und Haushaltsmittel wären erforderlich.",
+                "second_order": "Bei Verstetigung könnten kommunale Zuständigkeiten und Rechenschaftsbeziehungen verändert werden.",
+                "third_order": "Eine langfristige Veränderung demokratischer Korrekturfähigkeit oder institutioneller Machtverteilung ist nicht belastbar ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne Beschluss und institutionelle Umsetzung ist eine demokratische Zustandsveränderung wahrscheinlich gering; bei Verstetigung wäre eine lokal begrenzte Veränderung möglich."
+                },
+                "negligibility_rationale": "Der Pfad ist nicht als fehlend zu behandeln, weil eine dauerhafte öffentliche Aufgabe institutionelle Entscheidungen berühren könnte. Die Richtung und der tatsächliche Eintritt bleiben offen.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Suche nach unabhängigen Informationen zu institutioneller Ausgestaltung, Beteiligung und Rechenschaft wurde abgeschlossen, ergab aber keinen tatsächlich lesbaren zusätzlichen Beleg. Der demokratische Pfad bleibt offen und niedrig abgesichert.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche institutionelle Pfad betrifft zunächst Berlin und die daran beteiligten kommunalen Strukturen.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine begrenzte Zuständigkeits- oder Rechenschaftsänderung wäre möglich, aber nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Bei Verstetigung könnte eine institutionelle Regelung länger anhalten.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Budget-, Zuständigkeits- und Trägerentscheidungen wären grundsätzlich politisch korrigierbar.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere demokratische Schutzbedürftigkeit oder konkrete Schutzverletzung ist nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte kommunale Zuständigkeiten berühren; eine starke institutionelle Rückkopplung ist nicht belegt.",
+                    "source_ids": [
+                      "taz-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete demokratische Schutzgrenzverletzung ist belegt oder für den ex-ante-Pfad bedingt modelliert.",
+                  "reference_frame": "Demokratische Rechenschaft, Transparenz und kommunale Korrekturfähigkeit",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude": 1,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Ein demokratischer Potenzialpfad ist wegen der möglichen Verlagerung von Versorgungsentscheidungen in öffentliche Institutionen zu dokumentieren. Die politische Ankündigung allein belegt jedoch keine demokratische Zustandsveränderung; deshalb bleibt die Richtung offen und die Evidenz nicht assessierbar.",
+            "balance": {
+              "rationale": "Es liegen weder ein gleich starker positiver noch ein gleich starker negativer demokratischer Gegenpfad vor. Die Richtung wird daher nicht künstlich als neutral oder positiv festgelegt.",
+              "protection_boundary_decisive": false,
+              "comparable_material_paths": false
+            },
+            "magnitude": 1,
+            "direction": "open",
+            "dominance": "none",
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Eine dauerhafte öffentliche Ernährungsvorsorge könnte kommunale Zuständigkeiten, Budgetentscheidungen und politische Rechenschaft berühren.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine dauerhafte öffentliche Ernährungsvorsorge könnte kommunale Zuständigkeiten, Budgetentscheidungen und politische Rechenschaft berühren.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "taz-aktuell",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Der Gastkommentar berichtet zugeschrieben über das Vorhaben von 20 staatlich geförderten Kiezkantinen und über eine im aktuellen Konzept genannte Mindestquote pflanzlicher Lebensmittel."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Zusätzliche geförderte Mahlzeiten könnten für erreichbare Menschen den Zugang zu Essen und sozialen Kontakten erweitern.",
+              "mechanism": "Staatliche Förderung und lokale Standorte könnten das verfügbare Angebot und dessen Erreichbarkeit verändern.",
+              "recipients": [
+                "Haushalte",
+                "Menschen mit knappem Einkommen",
+                "Kinder und Jugendliche",
+                "ältere Menschen",
+                "Menschen mit eingeschränkter sozialer Teilhabe"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Finanzierung, Standorte, erschwingliche Preise, barrierearme Zugänge, geeignete Öffnungszeiten und tatsächliche Nutzung werden umgesetzt.",
+              "reference_space": "Ausgewählte Berliner Kieze",
+              "time_horizon": "Ab einer möglichen Umsetzung bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Das zusätzliche Angebot erreicht Menschen, die bisher keinen gleichwertigen Zugang zu bezahlbaren Mahlzeiten oder Gemeinschaftsangeboten haben.",
+              "source_support": "Die Quelle belegt die angekündigten Kiezkantinen und nennt Ernährungsarmut sowie Einsamkeit als Problembezüge; sie belegt keine eingetretene Zugangs- oder Teilhabewirkung.",
+              "limitations": "Keine Daten zu Preisen, Standorten, Nachfrage, Nutzung, Barrierefreiheit oder tatsächlichen sozialen und gesundheitlichen Veränderungen.",
+              "first_order": "An ausgewählten Standorten könnte ein zusätzliches gefördertes Mahlzeitenangebot entstehen.",
+              "second_order": "Bei erreichbarem und erschwinglichem Zugang könnten sich Essensoptionen und soziale Kontakte bestimmter Nutzergruppen erweitern.",
+              "third_order": "Bei Verstetigung könnte kommunale Ernährungsvorsorge stärker als öffentliche Aufgabe behandelt werden; dieser Pfad ist nicht belegt.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die angekündigte Zahl von 20 Standorten begrenzt den möglichen Raum. Bei guter Erreichbarkeit kann die lokale Zustandsveränderung dennoch mehr als gering sein; Umfang und Verteilung bleiben unsicher."
+              },
+              "negligibility_rationale": "Nicht vernachlässigbar, weil ein zusätzliches lokales Angebot für erreichbare Nutzerinnen und Nutzer den Zugang tatsächlich verändern könnte; der Pfad bleibt jedoch ex ante.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Recherche nach einem zusätzlichen Ereignis- oder Mechanismusbeleg wurde abgeschlossen, ergab aber keinen tatsächlich lesbaren unabhängigen Beleg. Die Einschätzung bleibt deshalb eine niedrig evidenzbasierte Modellhypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft eine begrenzte Zahl angekündigter Standorte in ausgewählten Berliner Kiezen; Grundlage ist die Angabe von 20 Kiezkantinen in der Quelle.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Ein zusätzliches Mahlzeitenangebot könnte den Zugang einzelner Nutzergruppen begrenzt verändern; konkrete Preis- und Nutzungsdaten fehlen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Wirkung könnte während des Betriebs anhalten, ist wegen fehlender Finanzierungs- und Verstetigungsdaten aber nicht gesichert.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Angebote, Standorte und Förderung wären grundsätzlich politisch und organisatorisch veränderbar oder beendbar.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Der Beitrag nennt Ernährungsarmut und Einsamkeit; besonders belastete Gruppen könnten profitieren, ausgeschlossen oder unterschiedlich erreicht werden. Die konkrete Verteilung ist offen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad kann lokale Versorgung und soziale Teilhabe berühren, belegt aber keine starke institutionelle Rückkopplung.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist weder beobachtet noch für den ex-ante-Pfad bedingt belegt.",
+                "reference_frame": "Zugang zu bezahlbarer Ernährung, sozialer Teilhabe und barrierearmer Hilfe",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Preise, Standorte, Öffnungszeiten oder Zugangskriterien könnten bestimmte Gruppen vom Angebot ausschließen.",
+              "mechanism": "Die konkrete Ausgestaltung entscheidet, welche Menschen das Angebot tatsächlich erreichen.",
+              "recipients": [
+                "Menschen mit knappem Einkommen",
+                "Kinder und Jugendliche",
+                "ältere Menschen",
+                "Menschen mit Behinderungen",
+                "Menschen mit eingeschränkter Mobilität"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "unknown",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Das Angebot bleibt nicht niedrigschwellig, ist räumlich schlecht erreichbar oder berücksichtigt besondere Zugangsbedarfe nicht.",
+              "reference_space": "Ausgewählte Berliner Kieze",
+              "time_horizon": "Planung und möglicher Betrieb",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Preis, Öffnungszeiten, Lage und Zugangskriterien verteilen die Nutzung ungleich.",
+              "source_support": "Die Quelle nennt keine Zugangskriterien, Preise, Standorte oder Verteilungsdaten.",
+              "limitations": "Der Pfad ist eine bedingte Modellannahme ohne konkrete Ausgestaltung.",
+              "first_order": "Bestimmte Gruppen erreichen das Angebot möglicherweise nicht.",
+              "second_order": "Die beabsichtigte Entlastung bei Ernährungsarmut könnte ungleich ausfallen.",
+              "third_order": "Eine weitergehende institutionelle Folge ist nicht belastbar ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne konkrete Zugangsdaten reicht der plausible Bereich von praktisch gering bis lokal begrenzt."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht generell vernachlässigbar, weil vulnerable Gruppen betroffen sein könnten; sein Umfang ist aber vollständig auslegungsabhängig.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Suche nach belastbaren Zugangsdaten wurde abgeschlossen, ergab aber keinen tatsächlich lesbaren unabhängigen Beleg. Das Risiko bleibt als bedingte Modellhypothese dokumentiert.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen wären vor allem Nutzerinnen und Nutzer der jeweiligen Angebote.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Zugangshürden könnten die Nutzung begrenzt verändern; konkrete Hürden sind nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Hürden könnten während des Betriebs anhalten, wären aber grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Zugang, Preise und Öffnungszeiten könnten politisch oder organisatorisch angepasst werden.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Ungleicher Zugang könnte Menschen mit knappen Ressourcen, eingeschränkter Mobilität oder besonderem Unterstützungsbedarf stärker treffen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein tiefer struktureller Folgepfad ist nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete schwere Schutzgrenzverletzung ist nicht belegt; das Risiko betrifft eine mögliche Ausgestaltungsfolge.",
+                "reference_frame": "Gleichberechtigter Zugang zu Grundversorgung und erreichbarer Hilfe",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "rationale": "Der stärkste menschliche Pfad ist bedingt positiv und lokal begrenzt. Das Zugangsrisko betrifft die Ausgestaltung und ist kein gleich starker Gegenpfad zum angekündigten Vorhaben. Die Richtung des Hauptpfads bleibt positiv, die Evidenz niedrig und der Eintritt unsicher.",
+          "balance": {
+            "rationale": "Der positive Hauptpfad und das negative Nebenrisiko werden getrennt bewertet. Das Nebenrisiko kompensiert den Hauptpfad nicht und ändert dessen Richtung nicht.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzliche geförderte Mahlzeiten könnten für erreichbare Menschen den Zugang zu Essen und sozialen Kontakten erweitern.",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Zusätzliche geförderte Mahlzeiten könnten für erreichbare Menschen den Zugang zu Essen und sozialen Kontakten erweitern.",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "evidence": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Eine Mindestquote pflanzlicher Lebensmittel könnte die Zusammensetzung der geförderten Mahlzeiten zugunsten pflanzlicher Angebote verändern.",
+              "mechanism": "Eine Angebotsvorgabe würde die Auswahl innerhalb der möglichen Kiezkantinen verändern.",
+              "recipients": [
+                "Nutzerinnen und Nutzer der Kiezkantinen",
+                "Landwirtschaftliche und lebensmittelbezogene Lieferketten",
+                "Umwelt"
+              ],
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Die Mindestquote wird beschlossen, umgesetzt und von ausreichend Menschen genutzt; die konkrete Beschaffung führt tatsächlich zu einer geringeren Umweltbelastung als das Vergleichsangebot.",
+              "reference_space": "Geförderte Kiezkantinen in Berlin und ihre Lieferketten",
+              "time_horizon": "Während eines möglichen Betriebs, mit möglichen längerfristigen Nachfrageeffekten",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Eine veränderte Zusammensetzung der Mahlzeiten kann gegenüber einem tierproduktreicheren Vergleichsangebot Umweltbelastungen reduzieren; Umfang und Richtung hängen von Lebensmitteln, Mengen, Beschaffung und Nutzung ab.",
+              "source_support": "Die Quelle belegt die angekündigte Mindestquote pflanzlicher Lebensmittel und ordnet das Vorhaben als Beitrag zum Klimaschutz ein; sie liefert keine Speisepläne, Mengen-, Emissions- oder Vergleichsdaten.",
+              "limitations": "Keine unabhängige Mechanismusquelle, keine Beschaffungsdaten, keine Mengen, keine Nutzungsdaten und kein belastbarer Umweltvergleich.",
+              "first_order": "Die Zusammensetzung des geförderten Speiseangebots könnte sich verändern.",
+              "second_order": "Die Nachfrage nach pflanzlichen Lebensmitteln könnte im begrenzten Versorgungsraum steigen.",
+              "third_order": "Eine systemische Veränderung von Lieferketten oder Emissionen ist aus dem Material nicht ableitbar.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 2,
+                "rationale": "Der mögliche Pfad bleibt zunächst auf die angekündigten Angebote und deren Nutzung begrenzt. Ohne Mengen- und Beschaffungsdaten ist keine höhere Tragweite begründbar."
+              },
+              "negligibility_rationale": "Nicht vollständig vernachlässigbar, weil die Angebotszusammensetzung konkret verändert werden könnte; eine relevante Umweltwirkung ist jedoch nicht belegt.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Suche nach einem zugänglichen amtlichen oder wissenschaftlichen Mechanismusbeleg wurde abgeschlossen, ergab aber keinen tatsächlich lesbaren zusätzlichen Beleg. Der Umweltpfad bleibt eine niedrig evidenzbasierte Modellhypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen wäre zunächst das Angebot der angekündigten Kiezkantinen, nicht das gesamte Berliner Ernährungssystem.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Zusammensetzung der Mahlzeiten könnte sich begrenzt verändern; konkrete Mengen und Vergleichswerte fehlen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Veränderung könnte über die Betriebsdauer anhalten, sofern die Quote tatsächlich gilt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Speisepläne und Quoten wären grundsätzlich politisch und organisatorisch veränderbar.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere unmittelbare Lastkonzentration auf vulnerable Gruppen ist nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein begrenzter Nachfragepfad ist plausibel; eine starke Lieferketten- oder Klimarückkopplung ist nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete schwere ökologische Schutzgrenzverletzung oder messbare Verbesserung ist nicht belegt.",
+                "reference_frame": "Umwelt- und Klimaschutz",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 2,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der planetare Pfad ist als bedingte Angebots- und Nachfrageveränderung plausibel, aber nicht durch unabhängige Mechanismus- oder Vergleichsdaten abgesichert. Die Tragweite bleibt deshalb begrenzt und die Evidenz niedrig.",
+          "balance": {
+            "rationale": "Ein belastbarer gegenläufiger Umweltpfad ist aus dem Material nicht ableitbar. Der positive Pfad ist dennoch nur Potenzial und kein Nachweis einer eingetretenen Klima- oder Umweltwirkung.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 2,
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Eine Mindestquote pflanzlicher Lebensmittel könnte die Zusammensetzung der geförderten Mahlzeiten zugunsten pflanzlicher Angebote verändern.",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Eine Mindestquote pflanzlicher Lebensmittel könnte die Zusammensetzung der geförderten Mahlzeiten zugunsten pflanzlicher Angebote verändern.",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "unknown",
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Eine dauerhafte öffentliche Ernährungsvorsorge könnte kommunale Zuständigkeiten, Budgetentscheidungen und politische Rechenschaft berühren.",
+              "mechanism": "Ein dauerhaftes öffentliches Angebot würde Entscheidungen über Förderung, Zugang, Trägerschaft und Kontrolle stärker in politische Institutionen verlagern.",
+              "recipients": [
+                "Berliner Bezirke",
+                "Land Berlin",
+                "kommunale Träger",
+                "Nutzerinnen und Nutzer"
+              ],
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "unknown",
+              "source_ids": [
+                "taz-aktuell"
+              ],
+              "condition": "Das Konzept wird beschlossen, finanziert und als dauerhafte öffentliche Aufgabe institutionalisiert.",
+              "reference_space": "Berlin und kommunale Ernährungsvorsorge",
+              "time_horizon": "Mittel- bis längerfristig bei Verstetigung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die institutionelle Zuständigkeit könnte Transparenz, Kontrolle, Beteiligung oder Konflikte über Prioritäten verändern; Richtung und Ausmaß sind offen.",
+              "source_support": "Die Quelle bezeichnet Kiezkantinen als mögliche öffentliche Daseinsvorsorge, belegt aber keinen Beschluss und keine institutionelle Veränderung.",
+              "limitations": "Keine Angaben zu Trägerschaft, Haushaltskontrolle, Beteiligung, Transparenz, Beschwerdewegen oder demokratischen Verfahren.",
+              "first_order": "Politische Entscheidungen über Förderung, Zugang und Haushaltsmittel wären erforderlich.",
+              "second_order": "Bei Verstetigung könnten kommunale Zuständigkeiten und Rechenschaftsbeziehungen verändert werden.",
+              "third_order": "Eine langfristige Veränderung demokratischer Korrekturfähigkeit oder institutioneller Machtverteilung ist nicht belastbar ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne Beschluss und institutionelle Umsetzung ist eine demokratische Zustandsveränderung wahrscheinlich gering; bei Verstetigung wäre eine lokal begrenzte Veränderung möglich."
+              },
+              "negligibility_rationale": "Der Pfad ist nicht als fehlend zu behandeln, weil eine dauerhafte öffentliche Aufgabe institutionelle Entscheidungen berühren könnte. Die Richtung und der tatsächliche Eintritt bleiben offen.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Suche nach unabhängigen Informationen zu institutioneller Ausgestaltung, Beteiligung und Rechenschaft wurde abgeschlossen, ergab aber keinen tatsächlich lesbaren zusätzlichen Beleg. Der demokratische Pfad bleibt offen und niedrig abgesichert.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche institutionelle Pfad betrifft zunächst Berlin und die daran beteiligten kommunalen Strukturen.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine begrenzte Zuständigkeits- oder Rechenschaftsänderung wäre möglich, aber nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Bei Verstetigung könnte eine institutionelle Regelung länger anhalten.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Budget-, Zuständigkeits- und Trägerentscheidungen wären grundsätzlich politisch korrigierbar.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere demokratische Schutzbedürftigkeit oder konkrete Schutzverletzung ist nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte kommunale Zuständigkeiten berühren; eine starke institutionelle Rückkopplung ist nicht belegt.",
+                  "source_ids": [
+                    "taz-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete demokratische Schutzgrenzverletzung ist belegt oder für den ex-ante-Pfad bedingt modelliert.",
+                "reference_frame": "Demokratische Rechenschaft, Transparenz und kommunale Korrekturfähigkeit",
+                "source_ids": [
+                  "taz-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude": 1,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Ein demokratischer Potenzialpfad ist wegen der möglichen Verlagerung von Versorgungsentscheidungen in öffentliche Institutionen zu dokumentieren. Die politische Ankündigung allein belegt jedoch keine demokratische Zustandsveränderung; deshalb bleibt die Richtung offen und die Evidenz nicht assessierbar.",
+          "balance": {
+            "rationale": "Es liegen weder ein gleich starker positiver noch ein gleich starker negativer demokratischer Gegenpfad vor. Die Richtung wird daher nicht künstlich als neutral oder positiv festgelegt.",
+            "protection_boundary_decisive": false,
+            "comparable_material_paths": false
+          },
+          "magnitude": 1,
+          "direction": "open",
+          "dominance": "none",
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine dauerhafte öffentliche Ernährungsvorsorge könnte kommunale Zuständigkeiten, Budgetentscheidungen und politische Rechenschaft berühren.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Eine dauerhafte öffentliche Ernährungsvorsorge könnte kommunale Zuständigkeiten, Budgetentscheidungen und politische Rechenschaft berühren.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "second_order",
+            "path": "Bei erschwinglichem Zugang könnten Haushalte mit knappem Budget ihre verfügbaren Essensoptionen erweitern.",
+            "direction": "open",
+            "condition": "Nur bei Preisen, Standorten und Öffnungszeiten, die auch für einkommensarme Menschen erreichbar sind, könnte sich der Zugang verändern.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "human"
+            ]
+          }
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-14T07:25:39.539Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T05:26:00.000Z",
+      "last_updated": "2026-09-14T07:25:39.539Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-bedbce9d2da2fcdbad8b",
+      "case_file": null,
+      "source_published_at": "2026-09-14T05:26:00.000Z",
+      "published_at": "2026-09-14T07:25:39.539Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Welche Zahl von Kiezkantinen, welches Budget und welche Mindestquote stehen im vollständigen Konzept der Berliner Linkspartei?",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichtes Konzept mit Standorten, Finanzierungsrahmen und Mindestquote",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-820a9d5420e744a3",
+          "announced_at": "2026-09-14T05:26:00.000Z",
+          "follow_up_date": "2026-09-21T07:25:39.539Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wird das Vorhaben nach der Wahl am 20. September umgesetzt oder politisch weiterverfolgt?",
+          "source_id": "taz-aktuell",
+          "expected_by": "2026-09-20",
+          "measurable_indicator": "Beschluss, Haushaltsansatz oder belastbare Umsetzungszusage",
+          "expected_by_evidence_hash": "7b71a75b8e108add459388252267aee9b33a7b775a06c7839b8397be6d5c088c",
+          "followup_id": "followup-a90873b7836e08cc",
+          "announced_at": "2026-09-14T05:26:00.000Z",
+          "follow_up_date": "2026-09-20T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Kiezkantinen-in-Berlin/!6212727",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T05:26:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-74e1aa51fc20d7ff",
       "title_image": {
