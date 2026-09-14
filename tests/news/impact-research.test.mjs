@@ -12,7 +12,7 @@ const source={source_id:'research-mechanism-test',url:'https://research.example.
 function fixture(){const data=new Map();return {store:{observation:async k=>data.get(k),observe:async(k,v)=>data.set(k,v)},data};}
 test('context research verifies a bounded source excerpt and reuses its cached proof',async()=>{
   const bridge=fixture();let calls=0;
-  const fetchDocument=async(item,registry,policy)=>{calls++;assert.equal(policy.respect_robots,true);assert.equal(policy.allow_public_pdf,true);assert.equal(policy.max_public_pdf_bytes,4000000);assert.equal(registry.access.requires_payment,false);return {body:`<article><p>${quote}</p></article>`,final_url:item.url};};
+  const fetchDocument=async(item,registry,policy)=>{calls++;assert.equal(policy.respect_robots,true);assert.equal(policy.allow_public_pdf,true);assert.equal(policy.max_public_pdf_bytes,8000000);assert.equal(registry.access.requires_payment,false);return {body:`<article><p>${quote}</p></article>`,final_url:item.url};};
   const first=await verifyImpactResearch(bridge,[source],[],now,{fetchDocument});
   assert.equal(first[0].research_verification.status,'source_text_verified');assert.equal(first[0].source_function,'mechanism');
   assert.ok(first[0].article_excerpt.length<1200);
@@ -30,6 +30,22 @@ test('unknown excerpts, source ID collisions, unsafe URLs and access failures re
 test('research accepts extracted public PDF text without retaining the complete transcript or document',async()=>{
   const f=fixture();const result=await verifyImpactResearch(f,[source],[],now,{fetchDocument:async()=>({extracted_from:'public_pdf',body:'x'.repeat(10000)+quote+'y'.repeat(10000)})});
   assert.ok(result[0].article_excerpt.length<1600);assert.ok([...f.data.values()][0].excerpt.length<1600);
+});
+test('PDF discretionary hyphens and printed word wrapping verify the unchanged quote',async()=>{
+  const original='Der Leuchtturmwettbewerb soll international sichtbare Start-up-Schmieden an deutschen Hochschulen schaffen.';
+  const wrapped='Der Leuchtturm-\nwettbewerb soll interna\u00ad\ntional sichtbare Start-up-Schmieden an deutschen\nHochschulen schaffen.';
+  const f=fixture();
+  const result=await verifyImpactResearch(f,[{...source,quote:original}],[],now,{fetchDocument:async()=>({body:wrapped,extracted_from:'public_pdf'})});
+  assert.equal(result[0].research_verification.status,'source_text_verified');
+  assert.ok(result[0].article_excerpt.includes(original.toLowerCase()));
+  await assert.rejects(verifyImpactResearch(fixture(),[{...source,quote:original}],[],now,{fetchDocument:async()=>({body:wrapped})}),/QUOTE_NOT_FOUND/);
+});
+test('PDF normalization never deletes ordinary hyphens, negation or numeric range separators',async()=>{
+  for(const [actual,claimed] of [
+    ['Der Bericht untersucht konkrete Start-up-Schmieden an deutschen Hochschulen.','Der Bericht untersucht konkrete StartupSchmieden an deutschen Hochschulen.'],
+    ['Der Bericht sieht für das Programm nicht genügend verfügbare Mittel vor.','Der Bericht sieht für das Programm genügend verfügbare Mittel vor.'],
+    ['Der Bericht nennt für das Programm 10-\n20 zusätzliche Stellen im kommenden Jahr.','Der Bericht nennt für das Programm 1020 zusätzliche Stellen im kommenden Jahr.'],
+  ]) await assert.rejects(verifyImpactResearch(fixture(),[{...source,quote:claimed}],[],now,{fetchDocument:async()=>({body:actual,extracted_from:'public_pdf'})}),/QUOTE_NOT_FOUND/);
 });
 test('empty supplementary research requires no registry or network access',async()=>{
   assert.deepEqual(await verifyImpactResearch(fixture(),[],[],now,{root:'/nonexistent',fetchDocument:async()=>{throw Error('unexpected network');}}),[]);
@@ -86,12 +102,13 @@ test('missing or unsupported research fields point to the exact correction witho
 });
 
 test('RSL, robots and HTTP refusals name the research source without retry or cached proof', async () => {
-  for (const code of ['RSL_STATUS_OPEN','RSL_AI_INPUT_DISALLOWED','ROBOTS_DISALLOWED','ARTICLE_HTTP_403']) {
+  for (const code of ['RSL_STATUS_OPEN','RSL_AI_INPUT_DISALLOWED','ROBOTS_DISALLOWED','ARTICLE_HTTP_403','FEED_TOO_LARGE']) {
     const bridge=fixture(); let calls=0;
-    const original=Object.assign(new Error(code),{retryable:false,http_status:403});
+    const original=Object.assign(new Error(code),{retryable:false,http_status:403,max_bytes:4000000,received_bytes:4000001});
     await assert.rejects(verifyImpactResearch(bridge,[source],[],now,{fetchDocument:async()=>{calls++;throw original;}}), error=>{
       assert.equal(error.message,`${code}:${source.source_id}`);
       assert.equal(error.cause,original); assert.equal(error.retryable,false); assert.equal(error.http_status,403);
+      assert.equal(error.max_bytes,4000000); assert.equal(error.received_bytes,4000001);
       return true;
     });
     assert.equal(calls,1); assert.equal(bridge.data.size,0);

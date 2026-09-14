@@ -1,3 +1,4 @@
+import { IMPACT_SCOPE_SCHEMA } from '../impact-scope.mjs';
 import { IMPACT_VERSION, TARGET_TYPES, TEMPORAL, EVIDENCE, LIKELIHOOD } from '../impact-assessment.mjs';
 import { POTENTIAL_REVISION, PATH_QUALITIES } from '../impact-potential.mjs';
 import { FACTOR_KEYS } from '../impact-magnitude.mjs';
@@ -77,7 +78,7 @@ const confirmation=object({
 // explicit variant. The domain gate still decides whether a review can publish.
 export const REVIEW_RESPONSE_FORMAT={type:'json_schema',name:'impact_review_confirmation_v2',strict:true,
  schema:{...object({
-  review:object({status:en(['ready','needs_review','blocked']),checks:object(Object.fromEntries(SEMANTIC_CHECKS.map(key=>[key,
+  review:object({scope:IMPACT_SCOPE_SCHEMA,status:en(['ready','needs_review','blocked']),checks:object(Object.fromEntries(SEMANTIC_CHECKS.map(key=>[key,
    object({status:en(['pass','fail']),rationale:string})]))),findings:strings}),
   impact_assessment:{anyOf:[assessment,{type:'null'}]},
   assessment_confirmation:{anyOf:[confirmation,{type:'null'}],description:'Genau eines setzen: vollständige korrigierte impact_assessment ODER Bestätigung der unveränderten gebundenen proposed_assessment. Bestätigung nur bei ready und allen Checks pass. Tatsächlich durchgeführte Recherche pro unsicherem Pfad mit Suchindex und Ergebnis dokumentieren; nicht durchgeführte Recherche niemals als abgeschlossen ausgeben.'},
@@ -99,7 +100,7 @@ export function reviewPathAddresses(assessment) {
 
 // Bind completeness BEFORE generation. An unconstrained array could omit a
 // secondary path and discover that omission only after paying for the response.
-export function reviewResponseFormat(proposal, {mediaRequired = false} = {}) {
+export function reviewResponseFormat(proposal, {mediaRequired = false, legacy = false} = {}) {
  const format=structuredClone(REVIEW_RESPONSE_FORMAT);
  const confirmationSchema=structuredClone(confirmation);
  confirmationSchema.properties.path_research=object(Object.fromEntries(reviewPathAddresses(proposal).map(({key})=>[key,
@@ -115,6 +116,14 @@ export function reviewResponseFormat(proposal, {mediaRequired = false} = {}) {
   format.name='impact_review_bound_confirmation_v5';
   format.schema.properties.media_applicability=structuredClone(MEDIA_REVIEW_SCHEMA);
  }
+ if (!legacy) {
+  // New publications have three researched modelled dimensions. If that cannot
+  // be justified, HOLD preserves the proposal without inventing a numerical bar.
+  format.schema.$defs.dimension=structuredClone(modelledDimension);
+  const complete=['human','planet','democracy'].every(key=>proposal?.dimensions?.[key]?.path_status==='modelled' && proposal.dimensions[key].primary_paths?.length);
+  if (!complete) format.schema.properties.assessment_result.anyOf.shift();
+ }
+ format.schema.properties.assessment_result.anyOf.push(object({action:en(['hold']),reason:{...string,minLength:12,description:'Notwendige Recherche oder tragfähige Modellierung fehlt: konkrete offene Frage nennen. Unveränderten Entwurf halten, keine Faktoren erfinden. review.status needs_review/blocked; betroffene Checks fail.'}}));
  // Generate the independent verdict after the corrected final fields.
  const {review,...finalFields}=format.schema.properties;
  format.schema.properties={...finalFields,review};

@@ -11,12 +11,20 @@ const comparable = value => String(value).normalize('NFKC').toLowerCase().replac
   // HTML extraction inserts spaces at inline tag boundaries, e.g.
   // <strong>Rekordniveau</strong>. Words and numeric notation stay exact.
   .replace(/(\p{L}) +([.,;:!?])/gu,'$1$2').trim();
+function documentText(fetched) {
+  if (fetched.extracted_from !== 'public_pdf') return extractArticleText(fetched.body,120000);
+  // pdftotext preserves discretionary hyphens and printed word wrapping.
+  // Join only letter-to-lowercase line breaks; ordinary compound hyphens,
+  // numerical ranges, negation and wording remain part of the exact match.
+  return fetched.body.replace(/\u00ad(?:[ \t]*\r?\n[ \t]*)?/g,'')
+    .replace(/(\p{L})-[ \t]*\r?\n[ \t]*(\p{Ll})/gu,'$1$2');
+}
 function sourceFailure(error, sourceId) {
   // Keep access refusals intact, but identify the supplementary source in the
   // private repair packet. No URL, document text or provider response is added.
-  if (!/^(?:RSL_|ROBOTS_|ARTICLE_)[A-Z_0-9]{1,80}$/.test(error?.message || '')) return error;
+  if (!/^(?:(?:RSL_|ROBOTS_|ARTICLE_)[A-Z_0-9]{1,80}|FEED_TOO_LARGE)$/.test(error?.message || '')) return error;
   const contextual = new Error(`${error.message}:${sourceId}`, { cause: error });
-  for (const key of ['retryable', 'http_status', 'retry_after_seconds']) {
+  for (const key of ['retryable', 'http_status', 'retry_after_seconds', 'max_bytes', 'declared_bytes', 'received_bytes']) {
     if (error[key] !== undefined) contextual[key] = error[key];
   }
   return contextual;
@@ -72,7 +80,7 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
     // does not mistakenly discard the event source or retry the wrong URL.
     if(!access.allowed)throw Error(`${access.reason}:${candidate.source_id}`);
     const fetchBounded=()=>withRequestDeadline(()=>fetchDocument({url},source,{...registry.policy,allow_public_pdf:true,
-      max_public_pdf_bytes:registry.policy.max_public_pdf_bytes ?? 4000000,respect_robots:true}),
+      max_public_pdf_bytes:registry.policy.max_public_pdf_bytes ?? 8000000,respect_robots:true}),
       {timeoutMs:120000,code:'IMPACT_RESEARCH_REQUEST_TIMEOUT'})
       .catch(error=>{throw sourceFailure(error,candidate.source_id);});
     if(process.env.GITHUB_ACTIONS==='true')console.info(JSON.stringify({event:'impact_research',source_id:candidate.source_id,stage:'start'}));
@@ -80,7 +88,7 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
     let document = await bridge.store.observation(cacheKey);
     if (!document || Date.parse(now)-Date.parse(document.at)>86400000) {
       const fetched = await fetchBounded();
-      const text = fetched.extracted_from === 'public_pdf' ? fetched.body : extractArticleText(fetched.body,120000);
+      const text = documentText(fetched);
       // Only a bounded private excerpt is retained, never the complete document.
       const normalized = comparable(text), quote = comparable(candidate.quote);
       const at = normalized.indexOf(quote);
@@ -92,7 +100,7 @@ export async function verifyImpactResearch(bridge, candidates = [], existing = [
     if (!comparable(document.excerpt).includes(comparable(candidate.quote))) {
       // Different claims in the same document require their own verified excerpt.
       const fetched = await fetchBounded();
-      const text = fetched.extracted_from === 'public_pdf' ? fetched.body : extractArticleText(fetched.body,120000);
+      const text = documentText(fetched);
       const full = comparable(text), quote = comparable(candidate.quote), at = full.indexOf(quote);
       if (quote.length<40 || at<0) throw quoteNotFound(candidate,text);
       document = {at:now,url,final_url:fetched.final_url,content_hash:hash(text),excerpt:full.slice(Math.max(0,at-160),at+quote.length+320),excerpt_hash:hash(quote)};

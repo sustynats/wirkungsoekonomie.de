@@ -4,7 +4,8 @@ import { hash, JOB_ID, bridgePath, parsePacket, outputSchema } from './contract.
 import { semanticOutputSchema } from './semantic-review.mjs';
 import { reviewResponseFormat } from './review-response-schema.mjs';
 import { expandReviewConfirmation } from './review-confirmation.mjs';
-import { deriveAssessmentCalculations } from '../impact-assessment.mjs';
+import { deriveAssessmentCalculations, IMPACT_PROMPT_RULE, IMPACT_PROMPT_SCHEMA, IMPACT_PROMPT_DEFS } from '../impact-assessment.mjs';
+import { IMPACT_SCOPE_RULE } from '../impact-scope.mjs';
 import { EDITORIAL_REQUEST_CONTRACT_V4 } from './intake-processing.mjs';
 import { validateEditorialPreview } from './editorial-approval.mjs';
 import { apiRequestKey, API_EDITORIAL_PROTOCOL, validateApiRequest } from './api-service.mjs';
@@ -13,7 +14,7 @@ import { latestEvidenceTime } from '../discovery-admission.mjs';
 import { newsInputReadiness, NEWS_INPUT_READINESS_VERSION } from '../news-input-readiness.mjs';
 import { POTENTIAL_RESEARCH_RULE } from '../impact-potential.mjs';
 
-export const API_VALIDATION_REVISION = 'single-paid-attempt-6';
+export const API_VALIDATION_REVISION = 'single-paid-attempt-7';
 
 function reviewAssignment(original) {
   const assignment = structuredClone(original);
@@ -33,8 +34,8 @@ function reviewAssignment(original) {
   return assignment;
 }
 
-// Keep the deep MPD schema last so it cannot swallow the remaining article
-// fields. Reordering preserves every field, rule and immutable source byte.
+// Apply the current generation contract even to a queued historical prompt.
+// Keep its MPD schema last; article fields and immutable source bytes stay intact.
 export function orderNativePrompt(prompt) {
   let untrusted = false;
   return prompt.split('\n').map(line => {
@@ -42,7 +43,8 @@ export function orderNativePrompt(prompt) {
     if (untrusted) return line;
     if (!line.startsWith('{"analyses":')) return line;
     const schema = JSON.parse(line);
-    schema.analyses = schema.analyses.map(({ impact_assessment, ...article }) => ({ ...article, impact_assessment }));
+    schema.analyses = schema.analyses.map(({ impact_assessment: _old, ...article }) => ({ ...article, impact_assessment: structuredClone(IMPACT_PROMPT_SCHEMA) }));
+    schema.$defs = { ...schema.$defs, ...structuredClone(IMPACT_PROMPT_DEFS) };
     return JSON.stringify(schema);
   }).join('\n');
 }
@@ -58,12 +60,16 @@ export function apiJobKind(packet) {
 }
 export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
   const original = packet.original_input || packet, kind = apiJobKind(packet);
+  if (kind === 'review' && (!JOB_ID.test(original.parent_job_id || '') || original.parent_job_id === original.job_id)) throw Error('API_EDITORIAL_REVIEW_INPUT_INVALID');
   const contract = kind === 'news' ? { output_schema: outputSchema }
     : kind === 'review' ? { output_schema: semanticOutputSchema, requested_output: original.requested_output }
       : EDITORIAL_REQUEST_CONTRACT_V4;
   const prompt = kind === 'news' && original.wirkungsticker?.analysis_prompt ? [
     orderNativePrompt(original.wirkungsticker.analysis_prompt),
     ...(original.wirkungsticker.analysis_prompt.includes(POTENTIAL_RESEARCH_RULE) ? [] : [POTENTIAL_RESEARCH_RULE]),
+    IMPACT_PROMPT_RULE,
+    IMPACT_SCOPE_RULE,
+    'AKTUELLE MPD-REGEL: Frühere Hinweise oder Schemavarianten zu insufficient_basis/null im gespeicherten Auftrag sind historisch und für diese neue Ausgabe abgelöst. Jede Dimension braucht einen quellengebundenen bedingten modelled-Pfad mit sechs begründeten Faktoren und Bandbreite. Fehlende Messdaten oder unbekannter Eintritt sind keine fehlende Tragweite. Ohne vertretbares Modell Recherche-/Prüfbedarf statt Veröffentlichung; keine Faktoren erfinden.',
     'TRANSPORT: Nur das oben definierte native Objekt {analyses:[...]} zurückgeben. Keine Bridge-Hülle, keine zusätzlichen facts/story/editorial/wirkungsticker-Felder. Die Software verpackt die Analyse nachträglich. Ablehnungen im oben definierten kurzen rejection-Format.',
     'NESTING: publication_gate, importance, impact_potential, mechanisms, first_order, second_order, third_order, transformation_potential, resilience, side_effects, uncertainties, evidence_level, attribution, watch_next, reference_frameworks, visuals und media_impact sind Geschwister von impact_assessment im analyses-Eintrag. Sie gehören NICHT in impact_assessment.',
     'PRÜFUNG: analyses[0].systemic_relevance ist ein eigener begründender String, zusätzlich zum strukturierten impact_assessment.systemic_relevance. publication_recommendation:true ist mit news_value:context_only unvereinbar. Ein neues belegtes Ereignis kann new_evidence sein; reine Einordnung ohne neue Tatsachen wird kurz abgelehnt. summary genau zwei Sätze. Ex-ante-Folgen als bedingtes Potenzial formulieren und vom beobachteten Anlass trennen.',
@@ -77,6 +83,8 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
     ...(kind === 'review' ? { review_scope: 'Zahlen wie magnitude, magnitude_range.lower/upper und magnitude_factors.*.value sind JSON-Zahlen, keine Strings. Alle 6 Faktoren selbst am Pfad begründen; die Software berechnet daraus die Tragweite. Keinen bisherigen Faktorenfehler übernehmen. Für low/high_uncertainty-Pfade den tatsächlichen Recherchepass dokumentieren. Prüfe das modellierte Wirkungspotenzial, nicht ob eine vorgeschlagene Maßnahme bereits umgesetzt wurde. Unabhängiger Fachpass bedeutet unabhängiges Prüfurteil; es ist keine pauschale Zwei-Quellen-Pflicht. Eine korrekt zugeschriebene vorläufige Meldung kann auf einer verlässlichen Einzelquelle beruhen. confirmed_claim und schwere strittige Vorwürfe brauchen die jeweils strengeren Belege. Fehlender Beschluss, unbekannte Konditionen oder fehlende gemessene Folgen dürfen eine korrekt als Vorschlag und ex ante bezeichnete Analyse nicht allein blockieren. institutional_status prüft die zutreffende Bezeichnung des realen Status, nicht das Vorliegen einer endgültigen Entscheidung. magnitude prüft Faktoren, Wirkungsraum und Berechnung; geringe Evidenz gehört nach evidence und darf nicht mit Tragweite vermischt werden. Keine Quellen erfinden. Echte Beleglücken, unbedingte Behauptungen oder fehlerhafte Pfade bleiben Sperrgründe; korrigiere den Assessment-Entwurf nur quellengebunden.' } : {}),
     ...(kind === 'review' ? {final_version_rule:'Erst Quellen prüfen, dann zulässige Korrekturen vollständig ausarbeiten, zuletzt alle 14 Checks auf die ENDVERSION anwenden: unveränderter Artikeltext plus das von Dir bestätigte oder korrigierte Assessment und gegebenenfalls der vervollständigte Mediencheck. Ein in dieser Antwort vollständig behobener Erstfassungsfehler gehört in findings; er ist allein kein fail der Endfassung. Bleibt eine falsche Textbehauptung, Beleglücke oder ein sonstiger Pflichtteil ungelöst, bleibt der entsprechende Check fail und der Status needs_review/blocked. Keine automatische Freigabe, keine bloße Absichtserklärung einer Korrektur.'} : {}),
     ...(kind === 'review' && needsMediaReview(original.record) ? {media_completion:'Prüfe die kommunikative Relevanz eigenständig; der lokale Trigger ist nur ein Prüfhinweis. Gib unter media_applicability entweder {relevant:false,reason:konkrete Begründung} zurück oder bei relevant:true den VOLLSTÄNDIGEN Mediencheck gemäß dem Antwortschema. Dieser wird Teil der geprüften Endfassung. Belegter Sachverhalt, Akteursaussagen, Vermittlung, Inferenz und mögliche Wirkung strikt trennen; beobachtete Kommunikationswirkung benötigt eigene Evidenz, mindestens zwei gelieferte Belege. Keine Absichts- oder Manipulationszuschreibung. public_explanation 100–180 deutsche Wörter. source/evidence nur mit vorhandenen oder tatsächlich verifizierbaren neuen Quellen. Ist der nötige Check nicht abschließbar oder müsste der unveränderbare Artikeltext korrigiert werden, HOLD. Nicht zur Freigabe wegklassifizieren.'} : {}),
+    ...(kind === 'review' ? { authoritative_impact_rule: IMPACT_PROMPT_RULE, authoritative_scope_rule: IMPACT_SCOPE_RULE,
+      hold_rule: 'Die aktuellen MPD-Regeln ersetzen historische Null-Ausnahmen im gespeicherten Auftrag. Kann die Endfassung nicht fachlich freigegeben werden, assessment_result:{action:hold,reason:konkrete Grenze} und review.status needs_review/blocked mit dem betroffenen Check fail liefern. Keine Faktoren erfinden und eine unvollständige Endfassung nicht per confirm freigeben.' } : {}),
     output_contract: kind === 'review' ? {response_format:reviewResponseFormat(original.proposed_assessment,{mediaRequired:needsMediaReview(original.record)}),
       confirmation_rule:'Prüfe jeden Faktor und jeden der 14 Checks unabhängig. Wenn die fachlichen Werte, Pfade und Belegbindungen richtig sind, assessment_result:{action:confirm,confirmation:{research_check,path_research}} liefern. path_research ist ein Objekt mit den vorgegebenen Schlüsseln für ALLE Haupt- und Nebenpfade: jeweils tatsächlich geprüfte Suchindizes sowie konkretes Ergebnis. Auch erfolglose Recherche kann abgeschlossen sein. Nicht durchgeführte notwendige Recherche bleibt needs_research; dann keine Bestätigung. Bei echten Korrekturen assessment_result:{action:replace,impact_assessment:vollständiges korrigiertes Profil}. Kein Wortlaut muss umformuliert werden, nur weil Du der zweite Prüfer bist. second_pass bedeutet tatsächlich durchgeführte erneute Prüfung, nicht erfolgreiche Suche nach einer zweiten Quelle. Kurze konkrete deutsche Prüfbegründungen. Keine Markdown-Zitationen oder Toolmarker im JSON; in source_ids nur die konkreten gelieferten oder neu vergebenen research-source_ids, keine URLs. Bereits gelieferte Quellenauszüge nicht als neue research_sources duplizieren. Neue Quellen: quote exakt aus einem tatsächlich gelesenen Original kopieren, vorzugsweise eine kurze zusammenhängende Passage von 40–240 Zeichen. Originalsprache, Wortfolge und Zeichensetzung erhalten. Keine Übersetzung, Paraphrase, Auslassungszeichen oder Zusammenziehung mehrerer Textstellen. Die deutschsprachige Paraphrase gehört ausschließlich in supports. Kannst Du keinen exakten Auszug belegen, Quelle nicht aufnehmen; tatsächliches Suchergebnis und Grenze dokumentieren. Ein Suchtreffer-Snippet ist kein garantiert wörtlicher Originalbeleg.',
       calculation_rule:'Nur die redaktionell begründeten Faktoren und einzelnen Pfadrichtungen liefern. magnitude, magnitude_calculation und die aggregierte Dimensionsrichtung/Dominanz berechnet die Software. Keine Berechnung ersetzen, indem ein Faktor oder eine Pfadrichtung passend gemacht wird. primary_paths nur main_path/counter_path desselben Gegenstands und Vergleichs; Nebenrisiken in secondary_paths. Alle Schutzgrenzen ausdrücklich mit Begründung prüfen. Eine abgeschlossene erfolglose Recherche bleibt completed mit dokumentierten Wissensgrenzen; keine Quelle erfinden. Bei echter nicht abgeschlossener Prüfung needs_research und needs_review.'} : contract,
@@ -86,6 +94,7 @@ export function prepareApiJob(packet, knowledge, { priorOutput = null } = {}) {
     binding_rule: 'job_id, input_hash, schema_version und processed_at setzt der Server. Keine anderen Bindungen oder Quellen-IDs verändern. Eine native News-Analyse steht einmal unter wirkungsticker.analysis, nicht in einem analyses-Array. Keine technischen Zusatzfelder im Output.',
   });
   const request = { protocol: API_EDITORIAL_PROTOCOL, job_id: original.job_id, input_hash: original.input_hash,
+    ...(kind === 'review' ? {parent_job_id:original.parent_job_id} : {}),
     packet_hash: hash(packet), kind, attempt: packet.correction_attempt || 0, profile_hash: knowledge.hash,
     instructions: kind === 'review' ? knowledge.instructions.replace(
       'Du hast in diesem Aufruf keine Browser-, Such-, Bild- oder Dateitools. Verwende als Tatsachenbelege nur tatsächlich mitgelieferte Textauszüge.',
@@ -246,6 +255,7 @@ export async function apiProcessorPreflight(transport, api, now) {
   const capability = await api.health();
   if (capability.protocol !== API_EDITORIAL_PROTOCOL || capability.enabled !== true || capability.budget_guards !== true) throw Error('API_EDITORIAL_ENDPOINT_UNAVAILABLE');
   if (capability.execution_policy?.max_paid_attempts_per_job !== 1 || capability.execution_policy?.automatic_rewrites !== false
+    || capability.execution_policy?.max_paid_reviews_per_parent !== 1
     || capability.execution_policy?.input_readiness_version !== NEWS_INPUT_READINESS_VERSION) throw Error('API_EDITORIAL_EXECUTION_POLICY_UNAVAILABLE');
   const runId = randomUUID();
   const receipt = { actor: 'oracle_api', run_id: runId, at: now, status: 'UNAVAILABLE', reads: {}, write_ok: false };
@@ -304,7 +314,7 @@ export class ApiEditorialProcessor {
       recovered = await this.api.get(ownership.key);
       const sameBinding = recovered?.packet_hash === request.packet_hash
         && [request.profile_hash, ...(this.knowledge.compatibleHashes || [])].includes(recovered.profile_hash);
-      if (sameBinding && recovered.pre_execution_rejected) recovered = null;
+      if (sameBinding && (recovered.pre_execution_rejected || recovered.status === 'budget_blocked' && recovered.provider_called === false)) recovered = null;
       else if (recovered?.status !== 'completed' || !sameBinding) return { status: 'legacy_claim_attention', job_id: id };
     }
     // Corrections can recover existing paid output, but never create a new
