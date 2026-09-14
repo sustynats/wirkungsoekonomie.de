@@ -70,9 +70,10 @@ export class DropboxTransport {
   }
   async request(endpoint, input, content, binary = false, attempt = 0) {
     const isContent = ['files/download', 'files/upload'].includes(endpoint);
+    const accessToken = await this.token();
     const response = await this.fetch(`https://${isContent ? 'content' : 'api'}.dropboxapi.com/2/${endpoint}`, {
       method: 'POST', redirect: 'error', signal: AbortSignal.timeout(45000),
-      headers: { Authorization: `Bearer ${await this.token()}`,
+      headers: { Authorization: `Bearer ${accessToken}`,
         ...(this.credentials.root_namespace_id ? { 'Dropbox-API-Path-Root': JSON.stringify({ '.tag': 'root', root: this.credentials.root_namespace_id }) } : {}),
         ...(isContent ? { 'Dropbox-API-Arg': JSON.stringify(input), ...(content === undefined ? {} : { 'Content-Type': 'application/octet-stream' }) } : { 'Content-Type': 'application/json' }) },
       ...(isContent ? content === undefined ? {} : { body: content } : { body: JSON.stringify(input) }),

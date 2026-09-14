@@ -875,6 +875,22 @@ test('OAuth network recovery is bounded and never retries an ambiguous file writ
   assert.equal(moves,1);
 });
 
+test('the file-operation deadline starts only after OAuth recovery completes', async t => {
+  const events=[];let tokens=0;
+  const timeout=AbortSignal.timeout.bind(AbortSignal);
+  t.mock.method(AbortSignal,'timeout',ms=>{events.push(`timeout:${ms}`);return timeout(ms)});
+  const transport=new DropboxTransport({credentials:{},sleep:async ms=>events.push(`sleep:${ms}`),fetchImpl:async url=>{
+    if(url.endsWith('/oauth2/token')) {
+      events.push('auth');
+      if(++tokens===1)throw Object.assign(new TypeError('fetch failed'),{cause:{code:'ETIMEDOUT'}});
+      return new Response(JSON.stringify({access_token:'synthetic',expires_in:14400}));
+    }
+    events.push('move');return new Response('{}');
+  }});
+  await transport.move(bridgePath('00_INBOX','synthetic.input.json'),bridgePath('10_CLAIMED','synthetic.input.json'));
+  assert.deepEqual(events,['timeout:20000','auth','sleep:1000','timeout:20000','auth','timeout:45000','move']);
+});
+
 test('OAuth TLS failures and invalid responses do not trigger network recovery', async () => {
   for(const result of [Object.assign(Error('certificate invalid'),{code:'CERT_HAS_EXPIRED'}),new Response('{}'),new Response('{}',{status:400})]) {
     let calls=0;
