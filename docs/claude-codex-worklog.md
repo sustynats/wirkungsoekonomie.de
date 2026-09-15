@@ -230,3 +230,9 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Pfade:** `scripts/news/openai-transport.mjs`, `scripts/news/impact-gate.mjs`, `scripts/news/run-api.mjs`, `scripts/news/retire-backlog.mjs`, `scripts/news/queue-reassessment.mjs`, `.github/workflows/wirkungsticker.yml`, Änderungen in `run.mjs`/`lib.mjs`/`budget.mjs`; Doku `docs/ops/WIRKUNGSTICKER-DIREKTBETRIEB.md`, Übergabe `docs/handoff-wirkungsticker-direktbetrieb-codex.md`.
 - **Geprüft:** `tests/news/direct-operation.test.mjs` (12 Tests), `npm run news:test`, Probelauf gegen Live-Feeds (133 s, 0 Aufrufe), `news:validate`.
 - **Offen für Codex:** Erste Live-Läufe auswerten, Gate-Fehlercodes sammeln, Oracle-Bridge-Timer abschalten, Bridge-PRs #771/#772/#774 schließen. Private Redaktion (Meinung & Analyse, Nachgehört/Nachgesehen, Buch & Wirkung) unverändert.
+
+## 2026-09-15 - Claude: ZDF-Sendungslogos gebunden, Redaktionsfreigaben im Direktbetrieb
+
+- **Was:** Die am 14.09. freigegebenen ZDF-Logos (Markus Lanz, maybrit illner, MAITHINK X, Terra X Lesch & Co, Lanz + Precht) wurden am 15.09. über die Presseportal-Bildanfrage 118949 geliefert, proportional auf 800 px skaliert, mit SHA-256, Credit und Sendungsseite in `data/news/show-visual-identities.json` gebunden (`asset_delivery_status = DELIVERED`). Originale und Schriftwechsel im privaten Rechtearchiv. Zusätzlich übernimmt der Nachrichtenworkflow jetzt in jedem Lauf die in der privaten Redaktion freigegebenen Fassungen (`scripts/news/import-approved-editorials.mjs`, Claim vor Build, Finalize nach Push).
+- **Geprüft:** `tests/news/app-pages.test.mjs`, `tests/news/import-approved-editorials.test.mjs`, Workflow-Invarianten.
+- **Offen für Codex:** Oracle-seitige Entwurfserzeugung ohne ChatGPT (`bridge/run-api-processor.mjs` aktivieren), siehe Übergabe.
