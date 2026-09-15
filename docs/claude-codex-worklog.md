@@ -254,3 +254,9 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Nachgerechnet:** Mit dem neuen Transport wären aus Lauf 7 alle drei Antworten strukturell gate-fähig (29 → 1 bzw. 37 → 5 Fehler, Rest Textregeln), aus dem Takt-Lauf zwei von vier; die zwei entgleisten brauchen den zweiten bezahlten Versuch.
 - **Geprüft:** `tests/news/direct-operation.test.mjs` (17 Tests, davon 3 neu), Workflow-Invarianten, `npm run news:test`.
 - **Offen:** Mehrere Takt-Zyklen mit `medium` beobachten (Kosten je Meldung, Anteil vollständiger Antworten), dann Selektionsgewichte mit Daten nachziehen.
+
+## 2026-09-16 - Claude: Gezielte Nachlieferung des Wirkungspotenzials im selben Lauf
+
+- **Was:** Auch mit mittlerem Denkaufwand ließ das Modell in zwei von drei Antworten das `impact_assessment` weg oder halb geschrieben (Lauf 22:35 UTC). Der Transport macht jetzt bei deterministischem Befund genau einen kleinen Folgeaufruf, der nur `impact_assessment` mit den konkreten Prüfbefunden nachliefert (`assessmentIssues`, `repairAddendum`, `repair_calls` im Stundendeckel, Rohkopie `-nachlieferung.json`); Ablehnungen werden nie nachgefordert. Zusätzlich deterministisch: Nebenpfade ohne sechs Faktoren werden verworfen, `decisive` auf nicht negativen Pfaden zurückgesetzt. Nachgerechnet über die 14 Rohantworten der Nacht: alle verbliebenen Strukturfehler sind genau die Fälle, die die Nachlieferung abdeckt.
+- **Geprüft:** `tests/news/direct-operation.test.mjs` (20 Tests, 2 neu: Verwerfen/Zurücksetzen; genau ein Folgeaufruf, keiner bei vollständiger Antwort oder Ablehnung, Fehlschlag ohne Wurf, abschaltbar), Budget-, Ticker- und Ring-Tests 93/93.
+- **Offen:** Ausbeute je Lauf nach Merge messen; wenn die Nachlieferung selbst häufig scheitert, Structured Outputs (json_schema strict) für `impact_assessment` prüfen.
