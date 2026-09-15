@@ -1,0 +1,142 @@
+name: Final reviewed Wirkungspotenzial recovery
+
+on:
+  push:
+    branches: [chatgpt/wirkungspotenzial-final-recovery-20260915]
+    paths: [.github/workflows/potential-final-recovery-20260915.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: potential-final-recovery-20260915
+  cancel-in-progress: false
+
+env:
+  SOURCE_DATE_EPOCH: '1787270400'
+
+jobs:
+  recover:
+    if: github.repository == 'sustynats/wirkungsoekonomie.de' && github.ref == 'refs/heads/chatgpt/wirkungspotenzial-final-recovery-20260915'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Pin reviewed source and preserve latest main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'wirkungsticker-recovery'
+          git config user.email 'wirkungsticker-recovery@users.noreply.github.com'
+          git fetch --no-tags --depth=80 origin main
+          CURRENT_BASE="$(git rev-parse FETCH_HEAD)"
+          git merge --no-edit "$CURRENT_BASE"
+          echo "CURRENT_BASE=$CURRENT_BASE" >> "$GITHUB_ENV"
+          git fetch --no-tags --depth=1 origin a985626602d3deebdd8ae7625bfcd53874b31a77
+          git fetch --no-tags --depth=1 origin 6048f1b5336458cae9501088180af01f93409772
+
+      - name: Recover only existing independently reviewed profiles
+        run: python tools/recover_potential_final_20260915.py
+
+      - name: Verify canonical source binding and complete MPD profiles
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import { persistedImpactAssessmentErrors } from './scripts/news/migrate-impact-assessments.mjs';
+          import { modelledPublicationIssues } from './scripts/news/impact-scope.mjs';
+          const report=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/potential-final-recovery-report.json'));
+          const stories=JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
+          for(const entry of report.applied){
+            const record=stories.find(s=>s.story_id===entry.story_id);
+            assert.ok(record,entry.story_id+' exists');
+            assert.deepEqual(persistedImpactAssessmentErrors(record),[],entry.story_id+' source binding');
+            assert.deepEqual(modelledPublicationIssues(record.impact_assessment),[],entry.story_id+' complete potential');
+            assert.equal(record.impact_semantic_review.review_job_id,entry.review_job_id);
+          }
+          const ki=stories.find(s=>s.story_id==='wt-aa6a91f8546c7299');
+          assert.ok(ki,'KI example exists');
+          assert.deepEqual(modelledPublicationIssues(ki.impact_assessment),[],'KI example must have three modelled numeric potentials');
+          assert.deepEqual({
+            human:ki.impact_assessment.dimensions.human.magnitude,
+            planet:ki.impact_assessment.dimensions.planet.magnitude,
+            democracy:ki.impact_assessment.dimensions.democracy.magnitude,
+          },{human:3,planet:2,democracy:2});
+          console.log('PASS reviewed profiles:',report.applied.length,'held:',report.held.length,'stories:',report.story_count);
+          JS
+
+      - name: Run news and operations regressions
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run news:test > "$RUNNER_TEMP/potential-final-tests.log" 2>&1 || { tail -200 "$RUNNER_TEMP/potential-final-tests.log"; exit 1; }
+          tail -20 "$RUNNER_TEMP/potential-final-tests.log"
+
+      - name: Rebuild ticker, search and taxonomy
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run polls:test
+          npm run polls:build
+          npm run news:build
+          npm run build:search
+          npm run taxonomy:build
+          npm run news:validate
+
+      - name: Verify generated article and canonical source were not rewritten
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import crypto from 'node:crypto';
+          const report=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/potential-final-recovery-report.json'));
+          assert.equal(crypto.createHash('sha256').update(fs.readFileSync('data/news/stories.json')).digest('hex'),report.result_sha256,'Build must not rewrite canonical evaluations');
+          const kiSlug='technologie-bundesregierung-nehmen-ki-warnungen-sehr-ernst-trump-sieht-verschworung-und--6c7299';
+          const kiHtml=fs.readFileSync('wirkungsticker/'+kiSlug+'/index.html','utf8');
+          assert.ok((kiHtml.match(/data-magnitude="[0-5]"/g)||[]).length>=3,'KI article must render >=3 numeric magnitude bars');
+          assert.ok(kiHtml.includes('data-potential-model="2.1"'),'KI article uses potential model 2.1');
+          for(const row of report.applied){
+            if(!row.slug) continue;
+            const html=fs.readFileSync('wirkungsticker/'+row.slug+'/index.html','utf8');
+            assert.ok((html.match(/data-magnitude="[0-5]"/g)||[]).length>=3,row.story_id+' rendered magnitudes');
+          }
+          console.log('PASS generated potential displays');
+          JS
+
+      - name: Commit validated recovery to recovery branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          BRANCH='chatgpt/wirkungspotenzial-final-recovery-20260915'
+          [[ "$(git ls-remote origin "refs/heads/$BRANCH" | cut -f1)" == "$GITHUB_SHA" ]] || { echo 'Concurrent recovery branch change; no push.' >&2; exit 1; }
+          git diff --check
+          git add -- data/news/stories.json news/ wirkungsticker/ assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json sitemap.xml
+          git diff --cached --quiet && { echo 'No validated correction to commit.' >&2; exit 1; }
+          git commit -m '[wirkungsticker] Restore existing reviewed Wirkungspotenzial profiles'
+          git push origin "HEAD:refs/heads/$BRANCH"
+          echo "RECOVERY_COMMIT=$(git rev-parse HEAD)"
+
+      - name: Retain recovery evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: potential-final-recovery-${{ github.run_id }}
+          retention-days: 7
+          if-no-files-found: ignore
+          path: |
+            ${{ runner.temp }}/potential-final-recovery-report.json
+            ${{ runner.temp }}/potential-final-tests.log
