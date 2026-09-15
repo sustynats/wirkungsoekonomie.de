@@ -1,0 +1,46 @@
+name: Glossary evidence live verification
+on:
+  workflow_run:
+    workflows: ['Deploy static site.']
+    types: [completed]
+permissions:
+  contents: read
+concurrency:
+  group: glossary-evidence-live-verification
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' && !contains(github.event.workflow_run.head_commit.message, '[wirkungsticker]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      RELEASE_COMMIT: ${{ github.event.workflow_run.head_sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          sparse-checkout: |
+            scripts/glossary
+            content/glossary/editorial/finanzierung-evidenz-20260915
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify exact deployed source and live pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$(git rev-parse HEAD)" == "$RELEASE_COMMIT" ]] || exit 1
+          node --check scripts/glossary/check-financing-evidence-live.mjs
+          if ! node scripts/glossary/check-financing-evidence-live.mjs; then
+            echo 'Waiting once for CDN propagation before repeating the same read-only checks.'
+            sleep 60
+            node scripts/glossary/check-financing-evidence-live.mjs
+          fi
+          echo "Verified all 44 glossary detail pages, aliases, overview and sitemap for $RELEASE_COMMIT." >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: glossary-live-${{ github.event.workflow_run.head_sha }}
+          path: reports/glossary-financing-evidence-live.json
+          if-no-files-found: error
+          retention-days: 14
