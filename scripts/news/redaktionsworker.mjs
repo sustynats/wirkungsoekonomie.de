@@ -18,7 +18,11 @@ import { modelRates } from './budget.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const WORKER_ACTOR = 'github_direct_worker';
-export const WORKER_VERSION = 'redaktionsworker-2';
+export const WORKER_VERSION = 'redaktionsworker-3';
+// The three steps of one worker run (candidates, episodes, drafts) each acquire the
+// import lane; a shared manual run id would mark the slot completed after the first
+// step (23:35 UTC: BRIDGE_SLOT_ALREADY_COMPLETED skipped the drafts). The step digit
+// keeps the id in the required digits:digits form.
 const SKIP = new Set(['BRIDGE_RUN_LOCKED', 'BRIDGE_SLOT_ALREADY_COMPLETED', 'BRIDGE_REMOTE_CONFIG_REQUIRED']);
 const PAID_STATUS = new Set(['output_delivered', 'validation_failed', 'output_unusable']);
 const isoDay = (value) => String(value).slice(0, 10);
@@ -165,7 +169,7 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
   const live = { store, transport };
   let acquired = false;
   try {
-    await store.acquire(now(), 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}` });
+    await store.acquire(now(), 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}3` });
     acquired = true;
   } catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, results: [] }; throw error; }
   try {

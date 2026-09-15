@@ -287,3 +287,8 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Was:** Die zweite Catania-Meldung (gleiche Ereignis-ID, dieselbe Deutschlandfunk-Artikel-URL in neuer Revision) wurde als neue Datei geführt und kostete einen eigenen Aufruf. Ursache: `fileSubject` erkannte im gespeicherten `source_summary` „Deutschlandfunk“ als Deutschland (`deutsch\w*`), die neue Meldung dagegen Italien; `subjectConflict` trennte die Länder. Medien-Namen (Deutschlandfunk, Deutschlandradio, Deutsche Welle, dpa, Deutsche Bahn u. a.) werden vor der Länderprüfung entfernt; echte deutsche Bezüge zählen weiter.
 - **Geprüft:** `tests/news/living-files.test.mjs` (31 Tests, 1 neu mit dem Catania-Fall), Reproduktion gegen den Datenbestand: Ähnlichkeit 0 → 1.
 - **Offen:** Die bereits angelegte Dublette `wt-17d4a13881b167db` bleibt unveröffentlicht; beim nächsten Import wird sie als Aktualisierung der veröffentlichten Meldung geführt.
+
+## 2026-09-16 - Claude: Worker-Schritte mit eigenem Bridge-Slot
+
+- **Was:** Seit #791 laufen im Worker drei Schritte (Analysekandidaten, Sendungen, Entwürfe); alle holten die Import-Sperre mit derselben manuellen Lauf-ID. Nach dem ersten Schritt galt der Slot als abgeschlossen, Sendungen und Entwürfe wurden übersprungen (`BRIDGE_SLOT_ALREADY_COMPLETED`, Takt 23:35 UTC). Jeder Schritt hängt jetzt eine Schrittziffer an die Versuchsnummer (`<run>:<attempt><schritt>`, bleibt im Format Ziffern:Ziffern).
+- **Geprüft:** Worker-, Sendungs- und Workflow-Tests.
