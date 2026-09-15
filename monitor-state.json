@@ -9,16 +9,17 @@
       "firstSeen": "2026-09-15T17:35:41.081Z",
       "active": true
     },
-    "budget": {
-      "firstSeen": "2026-09-15T18:35:30.280Z",
-      "active": true
-    },
     "editorial-coverage": {
       "firstSeen": "2026-09-15T20:05:31.326Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "a982aadcfb21322b8ee30ad3",
+      "content": "✓ WÖk-Störung behoben\nKI-Monatsbudget\nPrüfung: 2026-09-15T20:35:38.779Z"
+    }
+  ],
   "dailyDate": "2026-09-15",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1093,7 +1094,7 @@
       }
     },
     "last_new_at": "2026-09-14T19:38:30.811Z",
-    "checked_at": "2026-09-15T20:20:43.557Z",
+    "checked_at": "2026-09-15T20:35:38.779Z",
     "last_current_new_at": "2026-09-14T19:38:30.811Z"
   }
 }
