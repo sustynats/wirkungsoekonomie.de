@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS } from '../../scripts/news/openai-transport.mjs';
 import { releaseDeterministicImpact, deterministicGateIssues } from '../../scripts/news/impact-gate.mjs';
-import { paidAttemptsExhausted } from '../../scripts/news/run.mjs';
+import { paidAttemptsExhausted, AI_PROCESSING_VERSION } from '../../scripts/news/run.mjs';
 import { validateAnalysis, sha256 } from '../../scripts/news/lib.mjs';
 import { publicImpactAssessment } from '../../scripts/news/impact-release.mjs';
 import { syntheticPotentialAssessment } from './fixtures/impact21.mjs';
@@ -124,7 +124,7 @@ test('a fresh publication requires three modelled dimensions in validateAnalysis
 
 test('a story with one exhausted paid attempt is not paid again for the same input', async () => {
   const { sourceReviewFingerprint } = await import('../../scripts/news/evidence-packets.mjs');
-  const candidate = { title: 'T', sources, existing_story: { current_version: 0, ai_retry: { version: '2026-09-06-throughput-3', retry_count: 1, fingerprint: sha256(JSON.stringify({ title: 'T', published_version: 0, sources: sources.map(sourceReviewFingerprint).sort() })) } } };
+  const candidate = { title: 'T', sources, existing_story: { current_version: 0, ai_retry: { version: AI_PROCESSING_VERSION, retry_count: 1, fingerprint: sha256(JSON.stringify({ title: 'T', published_version: 0, sources: sources.map(sourceReviewFingerprint).sort() })) } } };
   assert.equal(paidAttemptsExhausted(candidate, 1), true);
   assert.equal(paidAttemptsExhausted(candidate, 2), false);
   assert.equal(paidAttemptsExhausted({ ...candidate, sources: [{ ...sources[0], content_hash: 'changed' }] }, 1), false);

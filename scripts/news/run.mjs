@@ -57,7 +57,9 @@ import { releaseDeterministicImpact } from './impact-gate.mjs';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = EVENT_RELEVANCE_VERSION;
 const RELEVANCE_BACKFILL_DAYS = 2;
-const AI_PROCESSING_VERSION = "2026-09-06-throughput-3";
+// Direktbetrieb: geänderte Transport-/Prompt-Regeln machen frühere bezahlte
+// Versuche gegenstandslos; Kappung und Backoff zählen ab dieser Version neu.
+export const AI_PROCESSING_VERSION = "2026-09-15-direct-2";
 const OUTPUT_FORMAT_ERRORS = new Set(["AI_MALFORMED_JSON", "AI_SCHEMA_ANALYSES_REQUIRED", "AI_RESPONSE_TOO_LARGE", "AI_PROVIDER_OUTPUT_INVALID"]);
 const CAPACITY_HOLD_REASONS = new Set(["BRIDGE_PENDING", "AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_DISABLED"]);
 const TECHNICAL_HOLD_REASONS = new Set(["AI_PROVIDER_UNAVAILABLE", "AI_OUTPUT_INVALID", "AI_INPUT_TOO_LARGE"]);
