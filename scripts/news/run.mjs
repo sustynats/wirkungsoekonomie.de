@@ -52,6 +52,7 @@ import { EVENT_RELEVANCE_VERSION, EVENT_EDITORIAL_POLICY_VERSION, needsEventPoli
 import { observedMajorEvents, missedNewsRechecks, coverageAudit } from './coverage-audit.mjs';
 import { runActiveDiscovery, agendaSignal } from './active-discovery.mjs';
 import { processingMode, visualGenerationProvider, assertAutomaticImpactTransport } from './processing-mode.mjs';
+import { releaseDeterministicImpact } from './impact-gate.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = EVENT_RELEVANCE_VERSION;
@@ -413,6 +414,20 @@ function shouldRetireAfterReassessment(candidate, errors) {
     && errors.every((error) => EDITORIAL_REJECTION_ERRORS.has(error));
 }
 
+// Direktbetrieb: nicht mehr aktuelle, unveröffentlichte Kandidaten werden ohne
+// Aufruf geschlossen. Neue Evidenz zum selben Ereignis öffnet die Akte erneut.
+export function expiredRecord(record, now) {
+  const { pending_update: _pendingUpdate, pending_reason: _pendingReason, quality_retry_count: _qualityRetryCount, reassessment: _reassessment, ai_retry: _aiRetry, ...preserved } = record;
+  return {
+    ...preserved,
+    listed: false,
+    analysis_status: "nicht mehr aktuell; im LIFO-Betrieb ohne Aufruf geschlossen",
+    relevance_filter_version: RELEVANCE_FILTER_VERSION,
+    rejected_at: now,
+    rejection: { at: now, filter_version: RELEVANCE_FILTER_VERSION, editorial_policy_version: EVENT_EDITORIAL_POLICY_VERSION, reason_code: "LIFO_HORIZON_EXCEEDED", quality_errors: [] },
+  };
+}
+
 function rejectedRecord(record, now, qualityErrors) {
   const { pending_update: _pendingUpdate, pending_reason: _pendingReason, quality_retry_count: _qualityRetryCount, reassessment: _reassessment, ...preserved } = record;
   return {
@@ -691,13 +706,36 @@ export function queuePriority(candidate, now) {
   const waitingBonus = Math.min(36, Math.floor(ageHours / 6));
   const urgentReviewBonus = candidate.preanalysis.material_development_review?.time_sensitive ? 72 : 0;
   const concreteNewsBonus = candidate.preanalysis.news_value_signals?.length ? 24 : 0;
-  return candidate.preanalysis.internal_relevance_score + freshBonus + publishedUpdateBonus + firstPublicationBonus + reassessmentPenalty + waitingBonus + urgentReviewBonus + concreteNewsBonus;
+  // Beauftragte Potenzial-Neubewertungen laufen hinter frischen Meldungen, aber vor Altbestand.
+  const impactRepairBonus = candidate.impact_reassessment ? 40 : 0;
+  return candidate.preanalysis.internal_relevance_score + freshBonus + publishedUpdateBonus + firstPublicationBonus + reassessmentPenalty + waitingBonus + urgentReviewBonus + concreteNewsBonus + impactRepairBonus;
 }
 
 function retryInputFingerprint(candidate) {
   return sha256(JSON.stringify({ title: candidate.title,
     published_version: candidate.existing_story?.current_version || 0,
     sources: (candidate.sources || []).map(sourceReviewFingerprint).sort() }));
+}
+
+// Horizont in Stunden; 0 oder leer schaltet den Horizont ab (nur für Tests und
+// ausdrückliche Betriebsentscheidungen). Standard im Direktbetrieb: 24 Stunden.
+export function lifoHorizonMilliseconds(env = process.env) {
+  const configured = env.WOEK_NEWS_MAX_SOURCE_AGE_HOURS;
+  const hours = configured === undefined || configured === '' ? 24 : Number(configured);
+  return Number.isFinite(hours) && hours > 0 ? hours * 3600000 : 0;
+}
+
+// Ein bezahlter Versuch je Eingabestand. Einzige Ausnahme: eine formal
+// unbrauchbare Anbieterantwort (kein gültiges JSON) darf genau einmal
+// wiederholt werden, weil sie keine inhaltliche Entscheidung darstellt.
+export function paidAttemptsExhausted(candidate, limit = Number(process.env.WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT || 1)) {
+  const existing = candidate.existing_story;
+  const previous = existing?.ai_retry;
+  const reason = existing?.pending_update?.reason || existing?.pending_reason;
+  const effectiveLimit = reason === "AI_OUTPUT_INVALID" ? Math.max(2, limit) : Math.max(1, limit);
+  return Boolean(previous && previous.version === AI_PROCESSING_VERSION
+    && previous.fingerprint === retryInputFingerprint(candidate)
+    && Number(previous.retry_count || 0) >= effectiveLimit);
 }
 
 export function retryCoolingDown(candidate, now) {
@@ -768,7 +806,7 @@ export function catchUpQueueStage(stage, ready, usage, now, budget, spend) {
 
 export function partitionAiQueue(eligible, stage, maxStories, now = new Date().toISOString()) {
   const allowed = stage.stage >= 3 ? [] : eligible
-    .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= stage.threshold);
+    .filter((candidate) => candidate.reassessment || candidate.impact_reassessment || candidate.preanalysis.internal_relevance_score >= stage.threshold);
   const limit = Math.max(0, Math.min(maxStories, stage.max_stories_per_run ?? Infinity));
   let selected = allowed.slice(0, limit);
   // With the normal 12-slot run, reserve a quarter for older retryable work.
@@ -1206,7 +1244,7 @@ export async function runWirkungsticker(options = {}) {
     ));
   await discoveryCheckpoint('events_clustered', { changed_items: changedItems.length, clusters: freshCandidates.length });
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
-  const retryableReasons = new Set(["BRIDGE_PENDING", "AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_INPUT_TOO_LARGE", "SOURCE_INTEGRITY_OPEN"]);
+  const retryableReasons = new Set(["BRIDGE_PENDING", "IMPACT_REASSESSMENT_REQUESTED", "AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_INPUT_TOO_LARGE", "SOURCE_INTEGRITY_OPEN"]);
   const retryCandidates = (storyStore.stories || [])
     .filter((story) => !isMerged(story))
     .filter((story) => (!story.published || story.pending_update || dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id)) && !freshIds.has(story.story_id))
@@ -1231,6 +1269,7 @@ export async function runWirkungsticker(options = {}) {
         sources,
         existing_story: story,
         reassessment: Boolean(story.pending_update?.reassessment || story.reassessment),
+        impact_reassessment: Boolean(story.pending_update?.impact_reassessment),
         fresh: Boolean(story.pending_update?.fresh || story.fresh),
         event_id: story.event_id || eventFingerprint(sources[0] || {}).id,
         event_first_seen_at: story.event_first_seen_at || story.first_seen,
@@ -1288,22 +1327,39 @@ export async function runWirkungsticker(options = {}) {
   report.budget_throttle = { policy_version: "2.0", relevance_threshold: stage.threshold, max_stories_per_run: stage.max_stories_per_run ?? null, mode: stage.stage >= 3 ? "budget_stop" : stage.stage ? "bounded_throughput" : "normal" };
   report.monthly_spend_before_usd = Number(spendBefore.toFixed(6));
   report.monthly_budget_usd = budget;
-  const initiallyEligible = clusters
-    .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= 30 || candidate.preanalysis.discovery_review?.review === true)
+  // Direktbetrieb (LIFO): unveröffentlichte Kandidaten, deren jüngste Quelle
+  // älter als der Horizont ist, werden ohne Aufruf geschlossen. Veröffentlichte
+  // Akten, Folgetermine, Vertiefungen und beauftragte Neubewertungen bleiben.
+  const lifoHorizonMs = lifoHorizonMilliseconds();
+  const lifoExpired = clusters.filter((candidate) => lifoHorizonMs > 0 && !candidate.existing_story?.published && !candidate.impact_reassessment
+    && !candidate.followup_due && !candidate.deepening_due
+    && nowDate.getTime() - (latestSourceDate(candidate.sources) || Date.parse(candidate.first_seen || candidate.last_updated || now)) > lifoHorizonMs);
+  const lifoExpiredIds = new Set(lifoExpired.map((candidate) => candidate.story_id));
+  const currentClusters = clusters.filter((candidate) => !lifoExpiredIds.has(candidate.story_id));
+  report.lifo_expired = lifoExpired.length;
+  report.lifo_horizon_hours = lifoHorizonMs / 3600000;
+  const initiallyEligible = currentClusters
+    .filter((candidate) => candidate.reassessment || candidate.impact_reassessment || candidate.preanalysis.internal_relevance_score >= 30 || candidate.preanalysis.discovery_review?.review === true)
     .sort((a, b) => queuePriority(b, now) - queuePriority(a, now) || latestSourceDate(b.sources) - latestSourceDate(a.sources));
   const eligible = eventAuditEnabled ? balanceEventQueue(initiallyEligible.map(candidate => ({ ...candidate, selection_base_priority: queuePriority(candidate, now) })), categoryCoverage(storyStore.stories, now)) : initiallyEligible;
   const eligibleIds = new Set(eligible.map(candidate => candidate.story_id));
-  report.locally_rejected = clusters.length - eligible.length;
+  report.locally_rejected = currentClusters.length - eligible.length;
   report.eligible_stories = eligible.length;
   for (const candidate of eligible) bumpCandidateFunnel(sourceFunnel, candidate, "eligible_stories");
-  for (const candidate of clusters.filter((candidate) => !eligibleIds.has(candidate.story_id))) bumpCandidateFunnel(sourceFunnel, candidate, "local_rejections");
+  for (const candidate of currentClusters.filter((candidate) => !eligibleIds.has(candidate.story_id))) bumpCandidateFunnel(sourceFunnel, candidate, "local_rejections");
   newsroom.decisions ||= [];
-  for (const candidate of clusters.filter((candidate) => !eligibleIds.has(candidate.story_id))) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "local_relevance_below_threshold", preanalysis: candidate.preanalysis });
+  for (const candidate of currentClusters.filter((candidate) => !eligibleIds.has(candidate.story_id))) newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "local_relevance_below_threshold", preanalysis: candidate.preanalysis });
   const byId = new Map((storyStore.stories || []).map((story) => [story.story_id, story]));
+  for (const candidate of lifoExpired) {
+    const base = candidate.existing_story || pendingRecord(candidate, "LIFO_HORIZON_EXCEEDED", now);
+    byId.set(candidate.story_id, expiredRecord(base, now));
+    bumpCandidateFunnel(sourceFunnel, candidate, "local_rejections");
+    newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "lifo_horizon_expired", horizon_hours: lifoHorizonMs / 3600000 });
+  }
   // A local relevance rejection is a completed decision, not an AI-capacity
   // backlog. Preserve published text and history; changed source arrivals can
   // still reopen the same story through normal discovery.
-  for (const candidate of clusters.filter(candidate => !eligibleIds.has(candidate.story_id))) {
+  for (const candidate of currentClusters.filter(candidate => !eligibleIds.has(candidate.story_id))) {
     const existing = candidate.existing_story;
     if (!existing) continue;
     if (existing.published) {
@@ -1322,6 +1378,15 @@ export async function runWirkungsticker(options = {}) {
       byId.set(candidate.story_id, { ...preserved, review_checkpoint: { ...reviewCheckpoint(candidate, now, 'no_material_update'), reviewed_by: 'unchanged_published_evidence' } });
       report.local_queue_completed = Number(report.local_queue_completed || 0) + 1;
       newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: 'unchanged_published_evidence', reason: 'ranking_change_is_not_new_evidence' });
+      return false;
+    }
+    // Direktbetrieb: ein bezahlter Versuch je unverändertem Eingabestand. Erst
+    // neue Evidenz (anderer Fingerprint) darf erneut einen Aufruf auslösen.
+    if (paidAttemptsExhausted(candidate)) {
+      bumpCandidateFunnel(sourceFunnel, candidate, "editorial_rejections");
+      byId.set(candidate.story_id, pendingRecord(candidate, "AI_ATTEMPT_LIMIT_REACHED", now, candidate.existing_story?.pending_update?.quality_errors || candidate.existing_story?.quality_errors || []));
+      report.quality_holds.push({ story_id: candidate.story_id, reason: "AI_ATTEMPT_LIMIT_REACHED" });
+      newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: "paid_attempt_limit_hold" });
       return false;
     }
     // One durable retry clock for fresh feed arrivals, deepening and followups.
@@ -1575,6 +1640,12 @@ export async function runWirkungsticker(options = {}) {
           if (!errors.length) {
             nextPublished = publishedRecord(analysisCandidate, analysis, aiResult, options.now ? now : new Date().toISOString());
             errors.push(...validateAnalysis({ source_summary: nextPublished.source_summary, ...nextPublished.analysis }, nextPublished, { validateSourceSummaryNumbers: false, persisted: true }));
+            // Direktbetrieb: das deterministische Gate ersetzt die Zweitprüfung.
+            // Ohne vollständiges, modelliertes Profil wird nichts veröffentlicht.
+            if (!errors.length) {
+              const release = releaseDeterministicImpact(nextPublished, { now: options.now ? now : new Date().toISOString(), existing: candidate.existing_story });
+              if (!release.released) errors.push(...release.issues);
+            }
           }
           newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, diagnostics: errors.length ? analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing, candidate, mediaInputBeforeSanitizing, directionInputBeforeNormalization) : null, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
           if (errors.length) {

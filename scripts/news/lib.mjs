@@ -11,6 +11,7 @@ import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
 import { IMPACT_SCHEMA, IMPACT_DEFS, IMPACT_PROMPT_RULE, IMPACT_PROMPT_SCHEMA, IMPACT_PROMPT_DEFS, impactAssessmentErrors } from './impact-assessment.mjs';
+import { modelledPublicationIssues } from './impact-scope.mjs';
 import { directionAssessmentErrors } from './direction-assessment.mjs';
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
 import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, promptEvidenceSegments } from "./newsroom.mjs";
@@ -883,7 +884,7 @@ export function analysisInputFor(stories) {
   stories.forEach(story => { assertAutomatable(story); assertAutomatable(story.existing_story); });
   return stories.map((story) => ({
     story_id: story.story_id,
-    review_mode: story.deepening_due ? "deepen_existing_initial_report" : story.reassessment ? "historical_relevance_reassessment" : "new_or_updated_story",
+    review_mode: story.impact_reassessment ? "impact_potential_reassessment" : story.deepening_due ? "deepen_existing_initial_report" : story.reassessment ? "historical_relevance_reassessment" : "new_or_updated_story",
     canonical_title: cleanForPrompt(story.title, 220),
     already_published: Boolean(story.existing_story?.published),
     current_published_summary: cleanForPrompt(story.existing_story?.analysis?.summary, 720),
@@ -1149,7 +1150,10 @@ export function decodeWoekAiResponse(payload, prompt, requestAttempts = 1) {
   const suppliedIds = suppliedEvidenceIds(prompt);
   let parsed;
   try {
-    if (String(payload.answer || "").length > 40000) throw new Error("AI_RESPONSE_TOO_LARGE");
+    // Ein vollständiges 2.1-Paket (drei Dimensionen mit Faktoren, Texte, Claims)
+    // misst im Median rund 30.000 und im Ausnahmefall über 70.000 Zeichen. Die
+    // fachlichen Größenlimits prüft validateAnalysis; hier nur ein Transportschutz.
+    if (String(payload.answer || "").length > 200000) throw new Error("AI_RESPONSE_TOO_LARGE");
     parsed = extractJsonObject(payload.answer);
     if (!Array.isArray(parsed.analyses)) throw new Error("AI_SCHEMA_ANALYSES_REQUIRED");
   } catch (error) {
@@ -1315,6 +1319,8 @@ export function validateAnalysis(analysis, story, options = {}) {
     }
     errors.push(...directionAssessmentErrors(analysis, story.sources, { requireCurrent: options.requireDirectionAssessment === true }));
   }
+  // Direktbetrieb: eine neue Veröffentlichung braucht drei modellierte Dimensionen.
+  if (options.requireImpactAssessment === true && analysis?.impact_assessment?.version === "2.1") errors.push(...modelledPublicationIssues(analysis.impact_assessment));
   errors.push(...impactAssessmentErrors(analysis.impact_assessment, [...story.sources,...(story.impact_sources || [])], { required: options.requireImpactAssessment === true, ...(options.persisted && analysis.impact_assessment?.version === "2.0" ? {version:"2.0"} : {}) }));
   for (const key of ["impact_risks", "mechanisms", "first_order", "second_order", "third_order", "side_effects", "uncertainties", "watch_next", "reference_frameworks"]) {
     if (!Array.isArray(analysis?.[key])) errors.push(`AI_ARRAY_REQUIRED:${key}`);

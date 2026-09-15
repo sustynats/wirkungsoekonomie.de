@@ -1,5 +1,7 @@
 # Wirkungsticker: Betrieb und Architektur
 
+> **Stand 15.09.2026: Direktbetrieb.** Die maßgebliche Betriebsbeschreibung steht in [WIRKUNGSTICKER-DIREKTBETRIEB.md](WIRKUNGSTICKER-DIREKTBETRIEB.md): ein Workflow, genau ein OpenAI-Aufruf je Meldung, deterministisches Gate, keine Bridge. Die folgenden Abschnitte beschreiben Datenmodell, Darstellung und Qualitätsregeln, die unverändert gelten; Hinweise auf Oracle-WÖk-KI-Proxy, Bridge oder Zweitprüfung sind historisch.
+
 Der Wirkungsticker veröffentlicht als eigenständiges Produkt unter `/wirkungsticker/` eine kleine Zahl quellengebundener Wirkungsnachrichten. Die stabilen Detailadressen liegen unter `/wirkungsticker/<story-slug>/`, die Feeds unter `/wirkungsticker/feed.xml`, `/wirkungsticker/feed.atom` und `/wirkungsticker/feed.json`. Alte Ticker-Adressen unter `/news/` leiten auf die neuen Ziele weiter oder liefern vorübergehend einen kompatiblen Feed. `/news/` selbst bleibt ausschließlich das Portal „Neues aus der Wirkungsökonomie“ mit einem eigenen RSS-Feed unter `/feeds/neuigkeiten.xml`.
 
 Der Ticker nutzt keine neue Datenbank und keinen neuen KI-Anbieter: Der kanonische Zustand liegt versioniert in `data/news/`, die Analyse läuft über die bestehende Oracle-WÖk-KI (`/api/woek-ai`), die Auslieferung über den vorhandenen statischen GitHub-Pages-Build.
