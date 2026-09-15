@@ -104,7 +104,23 @@ Rolle der früheren ChatGPT-Worker ohne Serverzugang:
 3. Eine unbrauchbare oder ungültige Antwort wird einmal privat vermerkt
    (`github-attempt:<job>`) und nie erneut bezahlt; der Auftrag bleibt sichtbar in Bearbeitung.
 4. Tagesdeckel `WOEK_EDITORIAL_MAX_JOBS_PER_DAY` (10), je Lauf `WOEK_EDITORIAL_MAX_JOBS_PER_RUN` (2),
-   Kosten je Auftrag im privaten Beleg `95_LOGS/processor-github-<job>.json`.
+   Kosten je Auftrag im privaten Beleg `95_LOGS/processor-github-<job>.json`. Aufträge, die keinen
+   Aufruf kosten (bereits geliefert, Versuch verbraucht, frisch anderweitig übernommen), belegen
+   keinen bezahlten Platz des Laufs.
+5. **Begrenzte Web-Suche** (`WOEK_EDITORIAL_WEB_SEARCH`, Standard an; `WOEK_EDITORIAL_MAX_SEARCHES`,
+   Standard 5): Das Wissensprofil wurde für Worker ohne Werkzeuge geschrieben und verlangt bei nicht
+   lesbaren Quellen vertragsgemäß einen HOLD (`SOURCE_VERIFICATION_REQUIRED`); die ersten beiden
+   Aufträge kamen genau so zurück. Der Worker gibt dem Modell deshalb in demselben einen Aufruf das
+   gehostete Web-Suchwerkzeug mit Obergrenze, damit es die im Auftrag verlinkten Quellen tatsächlich
+   liest; der Profilsatz „keine Browser-, Such-…tools“ wird dafür durch die Werkzeugregel ersetzt.
+   Suchzugriffe werden mit 1 Cent je Zugriff zusätzlich zu den Token verbucht (`web_searches` im Beleg).
+6. **Liegengebliebene Übernahmen der Bridge-Ära:** Ein Eingabepaket, das ein abgeschalteter
+   ChatGPT-Worker nach `10_CLAIMED` verschoben hatte, blockierte den Auftrag dauerhaft
+   (`claimed_elsewhere`). Ist die Übernahme älter als sechs Stunden (`STALE_CLAIM_HOURS`), übernimmt
+   der GitHub-Worker sie (`adopted_stale_claim_from` im Vermerk); eine frische Übernahme wird
+   weiterhin respektiert.
+7. Eine 4xx-Ablehnung der Anfrage (etwa ein unzulässiger Parameter) erzeugt nichts und gilt nicht als
+   bezahlter Versuch; nur eine abgeschlossene Generierung verbraucht den einen Versuch je Auftrag.
 5. **Kandidaten für Meinung & Analyse** (`scripts/news/redaktions-kandidaten.mjs`, aktiv mit
    `WOEK_EDITORIAL_AUTO_CANDIDATES=true`): Aus stark relevanten, unabhängig belegten Meldungen der
    letzten 48 Stunden entsteht höchstens ein regulärer Auftrag je Lauf, zwei je Tag, je Meldung nur

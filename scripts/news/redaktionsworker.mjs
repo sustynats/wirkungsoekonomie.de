@@ -18,8 +18,9 @@ import { modelRates } from './budget.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const WORKER_ACTOR = 'github_direct_worker';
-export const WORKER_VERSION = 'redaktionsworker-1';
+export const WORKER_VERSION = 'redaktionsworker-2';
 const SKIP = new Set(['BRIDGE_RUN_LOCKED', 'BRIDGE_SLOT_ALREADY_COMPLETED', 'BRIDGE_REMOTE_CONFIG_REQUIRED']);
+const PAID_STATUS = new Set(['output_delivered', 'validation_failed', 'output_unusable']);
 const isoDay = (value) => String(value).slice(0, 10);
 
 export function selectEditorialRequests(rows, { limit = 2, excluded = new Set() } = {}) {
@@ -32,7 +33,23 @@ export function selectEditorialRequests(rows, { limit = 2, excluded = new Set() 
 // Exactly one paid model call with the unchanged editorial contract. The
 // server-bound fields (job_id, input_hash, schema_version, processed_at) are
 // set by software, never trusted from the model.
-export async function draftEditorialOutput(request, { apiKey = process.env.OPENAI_API_KEY, model = newsModel(), fetchImpl = fetch, reasoningEffort = process.env.WOEK_EDITORIAL_REASONING_EFFORT || 'medium', maxOutputTokens = 48000, timeoutMs = 300000 } = {}) {
+// The editorial profile was written for a worker without tools and tells the
+// model to HOLD whenever a linked source could not be read. The first live
+// requests therefore all came back as SOURCE_VERIFICATION_REQUIRED. The GitHub
+// worker gives the model a bounded hosted web search so it can actually read
+// the sources named in the request; the profile sentence is swapped for the
+// tool rule, everything else in the contract stays untouched.
+export const NO_TOOLS_SENTENCE = 'Du hast in diesem Aufruf keine Browser-, Such-, Bild- oder Dateitools. Verwende als Tatsachenbelege nur tatsächlich mitgelieferte Textauszüge.';
+export const webSearchRule = (maxSearches) => `In diesem Aufruf steht ausschließlich ein begrenztes Web-Suchtool zur Verfügung (höchstens ${maxSearches} Zugriffe). Nutze es zuerst, um die im Auftrag verlinkten Quellen tatsächlich zu lesen, danach nur für konkret fehlende tragende Tatsachen. Als Tatsachenbelege gelten mitgelieferte Textauszüge und tatsächlich über das Tool gelesene Belege; jede gelesene Quelle mit URL in sources nennen. Keine Bezahlschranke umgehen, keine Bilder oder Dateien erzeugen.`;
+export function researchInstructions(instructions, maxSearches) {
+  const rule = webSearchRule(maxSearches);
+  return instructions.includes(NO_TOOLS_SENTENCE) ? instructions.replace(NO_TOOLS_SENTENCE, rule) : `${rule}\n${instructions}`;
+}
+// OpenAI bills hosted web search per call in addition to the tokens it adds.
+export const WEB_SEARCH_USD_PER_CALL = 0.01;
+
+export async function draftEditorialOutput(request, { apiKey = process.env.OPENAI_API_KEY, model = newsModel(), fetchImpl = fetch, reasoningEffort = process.env.WOEK_EDITORIAL_REASONING_EFFORT || 'medium', maxOutputTokens = 48000, timeoutMs = 300000,
+  webSearch = process.env.WOEK_EDITORIAL_WEB_SEARCH !== 'false', maxSearches = Math.max(1, Math.min(10, Number(process.env.WOEK_EDITORIAL_MAX_SEARCHES) || 5)) } = {}) {
   if (!apiKey) throw Object.assign(new Error('OPENAI_API_KEY_MISSING'), { providerNotCalled: true });
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
@@ -41,22 +58,32 @@ export async function draftEditorialOutput(request, { apiKey = process.env.OPENA
     response = await fetchImpl(OPENAI_RESPONSES_URL, { method: 'POST', signal: controller.signal,
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
       body: JSON.stringify({ model, store: false, reasoning: { effort: reasoningEffort }, max_output_tokens: maxOutputTokens,
-        instructions: request.instructions, input: request.prompt, text: { format: { type: 'json_object' } } }) });
+        instructions: webSearch ? researchInstructions(request.instructions, maxSearches) : request.instructions, input: request.prompt, text: { format: { type: 'json_object' } },
+        ...(webSearch ? { tools: [{ type: 'web_search' }], tool_choice: 'auto', max_tool_calls: maxSearches } : {}) }) });
     payload = await response.json().catch(() => null);
   } finally { clearTimeout(timer); }
-  if (!response.ok) throw Object.assign(new Error(`AI_PROVIDER_ERROR:${response.status}`), { providerNotCalled: response.status === 401 || response.status === 403 || response.status === 429 });
+  // A rejected request (4xx) produced nothing and is not billed; only a
+  // completed generation counts as the one paid attempt of a request.
+  if (!response.ok) throw Object.assign(new Error(`AI_PROVIDER_ERROR:${response.status}`), { providerNotCalled: response.status >= 400 && response.status < 500 });
   const usage = decodeUsage(payload);
   const reportedModel = typeof payload?.model === 'string' && payload.model ? payload.model : model;
   const rates = modelRates(reportedModel);
-  const cost = usage ? Number((((usage.input_tokens - (usage.cached_input_tokens || 0)) * rates.inputUsdPerMillion + (usage.cached_input_tokens || 0) * rates.cachedInputUsdPerMillion + usage.output_tokens * rates.outputUsdPerMillion) / 1e6).toFixed(6)) : null;
+  const webSearches = (payload?.output || []).filter((item) => item?.type === 'web_search_call').length;
+  const cost = usage ? Number((((usage.input_tokens - (usage.cached_input_tokens || 0)) * rates.inputUsdPerMillion + (usage.cached_input_tokens || 0) * rates.cachedInputUsdPerMillion + usage.output_tokens * rates.outputUsdPerMillion) / 1e6 + webSearches * WEB_SEARCH_USD_PER_CALL).toFixed(6)) : null;
   const text = finalOutputText(payload);
   if (!text) throw Object.assign(new Error('AI_PROVIDER_OUTPUT_INVALID'), { usage, model: reportedModel, cost, incomplete: payload?.incomplete_details?.reason || null });
   let parsed;
   try { parsed = JSON.parse(text); } catch { throw Object.assign(new Error('AI_MALFORMED_JSON'), { usage, model: reportedModel, cost }); }
-  return { output: parsed, usage, model: reportedModel, cost, answer: text };
+  return { output: parsed, usage, model: reportedModel, cost, answer: text, web_searches: webSearches };
 }
 
-export async function processEditorialRequest(session, row, { knowledge, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR } = {}) {
+// Claims left behind by the decommissioned ChatGPT workers (bridge era, until
+// 15.09.2026) keep their request in 10_CLAIMED forever while the store row
+// stays queued. Such a claim can never be delivered by its owner any more; after
+// the stale window the GitHub worker adopts it instead of skipping the request
+// on every run. A recent claim is still respected.
+export const STALE_CLAIM_HOURS = 6;
+export async function processEditorialRequest(session, row, { knowledge, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR, staleClaimHours = STALE_CLAIM_HOURS } = {}) {
   const id = row.input.job_id;
   const job = await session.store.get(id);
   if (!job || job.ack || job.accepted || job.status !== 'queued') return { job_id: id, status: 'already_processed' };
@@ -66,11 +93,20 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   if (await session.transport.metadata(outputPath) || await session.transport.metadata(bridgePath('30_ACK', `${id}.ack.json`))) return { job_id: id, status: 'already_delivered' };
   const name = `${id}.input.json`, sourcePath = bridgePath('00_INBOX', name), claimPath = bridgePath('10_CLAIMED', name);
   const ownClaim = await session.store.observation(`github-claim:${name}`);
-  if (await session.transport.metadata(claimPath) && ownClaim?.state !== 'claimed') return { job_id: id, status: 'claimed_elsewhere' };
-  const packet = JSON.parse(await session.transport.read(ownClaim?.state === 'claimed' ? claimPath : sourcePath));
+  const foreignClaim = await session.transport.metadata(claimPath);
+  let adoptedClaim = null;
+  if (foreignClaim && ownClaim?.state !== 'claimed') {
+    const modified = Date.parse(foreignClaim.server_modified || foreignClaim.client_modified || '');
+    const stale = Number.isFinite(modified) && Date.parse(now()) - modified >= staleClaimHours * 3600e3;
+    if (!stale) return { job_id: id, status: 'claimed_elsewhere' };
+    adoptedClaim = foreignClaim.server_modified || foreignClaim.client_modified;
+  }
+  const packet = JSON.parse(await session.transport.read(ownClaim?.state === 'claimed' || adoptedClaim ? claimPath : sourcePath));
   if (packet.job_id !== id || packet.input_hash !== job.input.input_hash || packet.job_type !== 'editorial_request') throw new Error('BRIDGE_JOB_BINDING_MISMATCH');
   const request = prepareApiJob(packet, knowledge);
-  if (!ownClaim) {
+  if (adoptedClaim) {
+    await session.store.observe(`github-claim:${name}`, { job_id: id, actor: WORKER_ACTOR, packet_hash: hash(packet), state: 'claimed', adopted_stale_claim_from: adoptedClaim, at: now() });
+  } else if (!ownClaim) {
     await session.store.observe(`github-claim:${name}`, { job_id: id, actor: WORKER_ACTOR, packet_hash: hash(packet), state: 'intent', at: now() });
     try { await session.transport.move(sourcePath, claimPath); }
     catch { return { job_id: id, status: 'claim_unknown' }; }
@@ -100,9 +136,9 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   if (await session.transport.metadata(outputPath)) return { job_id: id, status: 'already_delivered', cost_usd: result.cost };
   await session.transport.writeAtomic(outputPath, validated);
   if (hash(JSON.parse(await session.transport.read(outputPath))) !== hash(validated)) throw new Error('EDITORIAL_DELIVERY_READBACK_FAILED');
-  await session.transport.writeAtomic(bridgePath('95_LOGS', `processor-github-${id}.json`), { actor: WORKER_ACTOR, version: WORKER_VERSION, job_id: id, request_key: request.key, output_hash: hash(validated), model: result.model, usage: result.usage, cost_usd: result.cost, delivered_at: now(), status: 'OUTPUT_DELIVERED_NOT_PUBLISHED', disposition: validated.disposition || 'preview' });
-  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', usage: result.usage, cost_usd: result.cost, at: now() });
-  return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: result.cost, model: result.model };
+  await session.transport.writeAtomic(bridgePath('95_LOGS', `processor-github-${id}.json`), { actor: WORKER_ACTOR, version: WORKER_VERSION, job_id: id, request_key: request.key, output_hash: hash(validated), model: result.model, usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, delivered_at: now(), status: 'OUTPUT_DELIVERED_NOT_PUBLISHED', disposition: validated.disposition || 'preview', ...(adoptedClaim ? { adopted_stale_claim_from: adoptedClaim } : {}) });
+  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, at: now() });
+  return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: result.cost, model: result.model, web_searches: result.web_searches ?? 0, ...(validated.disposition === 'hold' ? { hold_code: validated.hold?.code || null } : {}) };
 }
 
 export async function runRedaktionsworker({ session = null, root = ROOT, knowledge = null, draft = draftEditorialOutput, now = () => new Date().toISOString(), env = process.env,
@@ -121,16 +157,21 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     const counter = (await store.observation(`github-editorial-day:${day}`)) || { day, paid: 0, cost_usd: 0 };
     if (counter.paid >= maxJobsPerDay) return { status: 'daily_limit', day, paid: counter.paid, results: [] };
     const rows = await store.all();
-    const selected = selectEditorialRequests(rows, { limit: Math.min(maxJobsPerRun, maxJobsPerDay - counter.paid) });
+    // Rows that turn out to be delivered, exhausted or freshly claimed elsewhere
+    // cost no model call; they must not use up the paid slots of this run.
+    const budget = Math.min(maxJobsPerRun, maxJobsPerDay - counter.paid);
+    const candidates = selectEditorialRequests(rows, { limit: Math.max(budget, 0) + 20 });
     const resolvedKnowledge = knowledge || editorialKnowledge(root);
     const results = [];
-    for (const row of selected) {
+    let paid = 0;
+    for (const row of candidates) {
+      if (paid >= budget) break;
       const result = await processEditorialRequest(live, row, { knowledge: resolvedKnowledge, draft, now });
       results.push(result);
-      if (result.cost_usd) { counter.paid += 1; counter.cost_usd = Number((counter.cost_usd + result.cost_usd).toFixed(6)); await store.observe(`github-editorial-day:${day}`, counter); }
+      if (PAID_STATUS.has(result.status)) { paid += 1; counter.paid += 1; counter.cost_usd = Number((counter.cost_usd + (result.cost_usd || 0)).toFixed(6)); await store.observe(`github-editorial-day:${day}`, counter); }
       if (result.status === 'provider_unavailable') break;
     }
-    return { status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: selected.length, paid_today: counter.paid, cost_today_usd: counter.cost_usd, results };
+    return { status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, results };
   } finally {
     if (acquired) await store.release(true).catch(() => {});
   }
