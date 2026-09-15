@@ -264,3 +264,9 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Was:** Bei der Catania-Meldung wirkten die Mensch-Balken doppelt: Die Ansicht setzte die belegte, bereits eingetretene Wirkung (Flüge abgesagt) an die erste Stelle und das modellierte Potenzial darunter als „Weiteres Potenzial“; beide waren Stufe 2 und laufend. Jetzt führt in jeder Dimension das Wirkungspotenzial (Ring, Balken, Richtung, Pfadtitel), und eine beobachtete Wirkung folgt klar beschriftet als „Beobachtet:“ mit eigenem Ring und eigenen Balken (`scripts/news/visuals.mjs`). Die Ableitung (`deriveImpactPresentation`) ist unverändert; nur die Ansicht wechselt die Reihenfolge und die Beschriftung.
 - **Geprüft:** `tests/news/impact-status-ring.test.mjs` (Potenzial vor Beobachtet, keine „Weiteres Potenzial“-Zeile mehr), Ansichts- und Ticker-Tests 182/182, lokale Renderprobe der Catania-Meldung.
 - **Offen:** Live-Sichtprüfung nach dem Deploy.
+
+## 2026-09-16 - Claude: Clusterung: Verlagsname ist keine Ereignisgeografie
+
+- **Was:** Die zweite Catania-Meldung (gleiche Ereignis-ID, dieselbe Deutschlandfunk-Artikel-URL in neuer Revision) wurde als neue Datei geführt und kostete einen eigenen Aufruf. Ursache: `fileSubject` erkannte im gespeicherten `source_summary` „Deutschlandfunk“ als Deutschland (`deutsch\w*`), die neue Meldung dagegen Italien; `subjectConflict` trennte die Länder. Medien-Namen (Deutschlandfunk, Deutschlandradio, Deutsche Welle, dpa, Deutsche Bahn u. a.) werden vor der Länderprüfung entfernt; echte deutsche Bezüge zählen weiter.
+- **Geprüft:** `tests/news/living-files.test.mjs` (31 Tests, 1 neu mit dem Catania-Fall), Reproduktion gegen den Datenbestand: Ähnlichkeit 0 → 1.
+- **Offen:** Die bereits angelegte Dublette `wt-17d4a13881b167db` bleibt unveröffentlicht; beim nächsten Import wird sie als Aktualisierung der veröffentlichten Meldung geführt.
