@@ -248,7 +248,11 @@ test("an unchanged feed item is discarded before clustering, AI cost and publica
   assert.equal(aiCalls, 0);
   assert.deepEqual(captured.storyStore.stories, []);
 });
-test("outage recovery uses the source cursor, not a newer global run cursor", async () => {
+test("outage recovery uses the source cursor, not a newer global run cursor", async (t) => {
+  // Cursor logic under test, not the direct-operation freshness horizon.
+  const previousHorizon = process.env.WOEK_NEWS_MAX_SOURCE_AGE_HOURS;
+  process.env.WOEK_NEWS_MAX_SOURCE_AGE_HOURS = "0";
+  t.after(() => { if (previousHorizon === undefined) delete process.env.WOEK_NEWS_MAX_SOURCE_AGE_HOURS; else process.env.WOEK_NEWS_MAX_SOURCE_AGE_HOURS = previousHorizon; });
   const state = { last_successful_run: now, source_status: { test: { last_success: "2026-09-01T00:00:00Z" } }, seen_items: {}, pending_story_ids: [], relevance_filter_version: "4.0" };
   const rss = `<rss><channel><item><title>${item.title}</title><link>${item.url}</link><description>${item.summary}</description><pubDate>Wed, 02 Sep 2026 10:00:00 GMT</pubDate></item></channel></rss>`;
   const report = await runWirkungsticker(fixture({ state, fetchFeedImpl: async () => ({ body: rss, final_url: source.feed_url }), callAiImpl: async (stories) => ({ analyses: stories.map((story) => ({ story_id: story.story_id, publication_recommendation: false, rejection: { code: "insufficient_evidence", reason: "Der verfügbare Kurztext belegt den konkreten Nachrichtenkern noch nicht ausreichend." } })), model: "gpt-5.4-mini", reported_usage: { input_tokens: 100, output_tokens: 50 } }) }));
