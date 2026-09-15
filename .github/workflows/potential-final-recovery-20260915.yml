@@ -1,4 +1,4 @@
-# Retry with enough checkout history to preserve the current main ancestry.
+# Final retry: restore existing reviewed profiles; fail closed by holding any still-unreviewed fresh 2.1 publication instead of inventing scores.
 name: Final reviewed Wirkungspotenzial recovery
 
 on:
@@ -67,6 +67,12 @@ jobs:
             assert.deepEqual(modelledPublicationIssues(record.impact_assessment),[],entry.story_id+' complete potential');
             assert.equal(record.impact_semantic_review.review_job_id,entry.review_job_id);
           }
+          for(const entry of report.unreviewed_publication_holds||[]){
+            const record=stories.find(s=>s.story_id===entry.story_id);
+            assert.ok(record,entry.story_id+' held record exists');
+            assert.equal(record.published,false,entry.story_id+' must be off the public release');
+            assert.equal(record.publication_hold?.provider_call,false,entry.story_id+' hold must not call a provider');
+          }
           const ki=stories.find(s=>s.story_id==='wt-aa6a91f8546c7299');
           assert.ok(ki,'KI example exists');
           assert.deepEqual(modelledPublicationIssues(ki.impact_assessment),[],'KI example must have three modelled numeric potentials');
@@ -75,7 +81,7 @@ jobs:
             planet:ki.impact_assessment.dimensions.planet.magnitude,
             democracy:ki.impact_assessment.dimensions.democracy.magnitude,
           },{human:3,planet:2,democracy:2});
-          console.log('PASS reviewed profiles:',report.applied.length,'held:',report.held.length,'stories:',report.story_count);
+          console.log('PASS reviewed profiles:',report.applied.length,'conflict-held:',report.held.length,'unreviewed-publication-holds:',(report.unreviewed_publication_holds||[]).length,'stories:',report.story_count);
           JS
 
       - name: Run news and operations regressions
