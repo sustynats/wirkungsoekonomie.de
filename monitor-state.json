@@ -7,10 +7,15 @@
     },
     "images": {
       "firstSeen": "2026-09-15T17:35:41.081Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "064584516d00d7a20c9a7952",
+      "content": "⚠ WÖk-Betriebsstörung\nTitelbilder: 2 Symbolbilder mit technischem Fehler; vorhandene Bilder oder Wirkungskarten bleiben sichtbar. Nachrichten werden dadurch nicht zurückgehalten.\nSeit: 2026-09-15T17:35:41.081Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-15",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1085,7 +1090,7 @@
       }
     },
     "last_new_at": "2026-09-14T19:38:30.811Z",
-    "checked_at": "2026-09-15T17:35:41.081Z",
+    "checked_at": "2026-09-15T17:50:38.011Z",
     "last_current_new_at": "2026-09-14T19:38:30.811Z"
   }
 }
