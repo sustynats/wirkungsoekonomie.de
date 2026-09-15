@@ -12,16 +12,15 @@ assert.equal(decisions.decisions.length,44);assert.equal(by.size,after.length);
 assert.equal(new Set(after.map(t=>t.slug)).size,after.length);
 const baselinePath=process.env.GLOSSARY_BASELINE;
 if(baselinePath){
- const before=read(baselinePath).terms;
+ const before=read(baselinePath).terms;const beforeIds=new Set(before.map(t=>t.termId));
  for(const t of before){assert.ok(by.has(t.termId),`Lost term ${t.termId}`);for(const k of CORE)assert.deepEqual(by.get(t.termId)[k],t[k],`Canonical field changed: ${t.termId}.${k}`);}
- assert.equal(after.length,before.length+32);
+ const genuinelyNew=supplement.terms.filter(t=>!beforeIds.has(t.termId)).length;
+ assert.equal(after.length,before.length+genuinelyNew);
 }
 for(const d of decisions.decisions){
  const t=by.get(d.target);assert.ok(t,`Missing concept ${d.key}`);
  for(const alias of d.aliases)assert.ok(t.aliases.includes(alias),`Missing alias ${alias}`);
- assert.ok(t.longDefinition.length>=40);
- assert.ok(t.officialSources.length>0);
- assert.ok(t.relatedTerms.length>0);
+ assert.ok(t.longDefinition.length>=40);assert.ok(t.officialSources.length>0);assert.ok(t.relatedTerms.length>0);
  for(const rel of t.relatedTerms)assert.ok(by.has(rel),`Unresolved relation ${t.termId}.${rel}`);
  const section=d.action==='new'?'Im Gespräch':`Anwendungssprache: ${d.label}`;
  assert.ok(t.deepGlossarySections?.some(s=>s.title===section),`Missing learning section ${t.termId}`);
@@ -31,6 +30,7 @@ for(const d of decisions.decisions){
   assert.ok(!html.includes('[object Object]'),`Object residue ${t.slug}`);
   assert.ok(!html.match(/\/(?:Users|mnt\/data)\//),`Private path ${t.slug}`);
   assert.ok(html.includes(section),`Learning section not published: ${t.slug}`);
+  if(d.action==='new')assert.ok(html.includes('Bezeichnungen und Übersetzung'),`Missing visible translation: ${t.slug}`);
  }
 }
 assert.ok(!by.get('human-rights-due-diligence').aliases.includes('Due Diligence'));
