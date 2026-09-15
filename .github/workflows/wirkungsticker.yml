@@ -90,7 +90,9 @@ jobs:
           # Der Schlüssel liegt ausschließlich im Repository-Secret WIRKUNGSTICKER.
           OPENAI_API_KEY: ${{ secrets.WIRKUNGSTICKER }}
           WOEK_NEWS_MODEL: ${{ vars.WOEK_NEWS_MODEL || 'gpt-5.4-mini' }}
-          WOEK_NEWS_REASONING_EFFORT: ${{ vars.WOEK_NEWS_REASONING_EFFORT || 'low' }}
+          # medium seit 15.09. abends: gpt-5.6-luna entgleiste bei low in 2 von 4 Antworten
+          # im hinteren Teil (Planet/Demokratie als Fragmente, Kennungen verkürzt).
+          WOEK_NEWS_REASONING_EFFORT: ${{ vars.WOEK_NEWS_REASONING_EFFORT || 'medium' }}
           # Private Diagnosekopie der bezahlten Antworten (nur Laufartefakt, nie im Repo).
           WOEK_NEWS_RAW_OUTPUT_DIR: ${{ runner.temp }}/ai-raw-output
           # Bild-Uploads (Wirkungskarten) nutzen weiterhin den vorhandenen Release-Speicher.
