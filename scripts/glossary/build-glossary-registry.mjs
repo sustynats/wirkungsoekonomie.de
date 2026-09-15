@@ -1,3 +1,4 @@
+import { applyLearningSupplement } from './apply-learning-supplement.mjs';
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
@@ -11,6 +12,7 @@ const generatedAt = (() => {
 })();
 const source = path.join(root, "assets/data/term-registry.json");
 const supplementSources = [
+  path.join(root, "content/glossary/imports/finanzierung-evidenz-2026-09-15.json"),
   path.join(root, "content/glossary/imports/wirkungsfinanzpolitik-term-definitions.json"),
   path.join(root, "content/glossary/imports/legacy-detail-definitions.json"),
   path.join(root, "content/glossary/imports/wirkungsgrad-differenzierung.json"),
@@ -1045,8 +1047,8 @@ const rawTerms = [
 ];
 // Deduplizierte Datensätze können ältere Ergänzungsfelder wieder mitbringen.
 // Die kanonischen Kernbegriffe werden deshalb abschließend noch einmal gesetzt.
-const terms = dedupeCanonicalLabels(rawTerms.map(normalizeTerm))
-  .map(applyCanonicalTermOverride)
+const terms = applyLearningSupplement(dedupeCanonicalLabels(rawTerms.map(normalizeTerm))
+  .map(applyCanonicalTermOverride), root)
   .sort((a, b) => collator.compare(a.glossaryOrderKey || a.canonicalLabel, b.glossaryOrderKey || b.canonicalLabel));
 
 const glossarySourceRecords = attachGlossarySourceArchive(terms);

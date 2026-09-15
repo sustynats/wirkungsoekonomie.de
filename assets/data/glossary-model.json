@@ -148,6 +148,34 @@
       "version": "1.0"
     },
     {
+      "id": "abhaengigkeit",
+      "term": "Abhängigkeit",
+      "slug": "abhaengigkeit",
+      "shortDefinition": "Eine Abhängigkeit liegt vor, wenn eine Funktion oder ein Ergebnis auf bestimmte Ressourcen, Akteure, Infrastrukturen oder Bedingungen angewiesen ist.",
+      "longDefinition": "Abhängigkeiten sind zunächst Teil der Funktionsweise eines Systems und nicht automatisch ein Problem. Kritisch werden sie unter anderem bei fehlenden Alternativen, Konzentration oder langen Anpassungszeiten. Entscheidend ist, was bei einer Veränderung tatsächlich ausfällt oder teurer wird.\n\nKritische Funktion, benötigte Leistung, Ausfallfolge, Ersatzmöglichkeit und Zeit bis zur Anpassung erfassen. Abhängigkeit von einer Risikowahrscheinlichkeit getrennt halten.",
+      "synonyms": [
+        "Abhängigkeit",
+        "Dependency",
+        "Dependencies"
+      ],
+      "relatedTerms": [
+        "lock-in-pfadabhaengigkeit",
+        "resilienz",
+        "transmissionskanal",
+        "risiko",
+        "interdependenz",
+        "interdependenz-und-abhaengigkeitsmatrix"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Systeme, Steuerung und Resilienz",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "abregelung",
       "term": "Abregelung",
       "slug": "abregelung",
@@ -1214,6 +1242,32 @@
       "version": "1.0"
     },
     {
+      "id": "anfragenkoordination",
+      "term": "Anfragenkoordination",
+      "slug": "anfragenkoordination",
+      "shortDefinition": "Anfragenkoordination ist eine vereinbarte Funktion, die Informationsanfragen aufnimmt, fachlich zuordnet und bis zur freigegebenen Antwort verfolgt.",
+      "longDefinition": "Ein Response Desk bündelt Eingang, Fristen, Rückfragen, Quellenzuordnung und Freigabestatus. Er kann Entwürfe vorbereiten. Die fachliche Verantwortung der Datenlieferanten und die Entscheidungsbefugnis des Auftraggebers bleiben davon getrennt.\n\nLeistungsumfang, Reaktionszeit, Eskalation und Freigaberechte vereinbaren. Vertrauliche Unterlagen nur in zulässigen Arbeitsumgebungen verarbeiten. Keine Finanzierungs- oder Prüfungsentscheidung aus dem Namen ableiten.",
+      "synonyms": [
+        "Anfragenkoordination",
+        "Response Desk",
+        "Evidence Response Desk",
+        "Antwortkoordination"
+      ],
+      "relatedTerms": [
+        "datenverantwortung",
+        "nachweiszuordnung",
+        "managed-service"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Praxisbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "angstappell",
       "term": "Angstappell",
       "slug": "angstappell",
@@ -2119,7 +2173,11 @@
       "synonyms": [
         "Assurance",
         "Sustainability Assurance",
-        "Prüfung"
+        "Prüfung",
+        "Prüfungssicherheit",
+        "Assurance Engagement",
+        "Prüfung mit begrenzter Sicherheit",
+        "Prüfung mit hinreichender Sicherheit"
       ],
       "relatedTerms": [
         "limited-assurance",
@@ -2127,7 +2185,10 @@
         "datenqualitaet",
         "csrd",
         "qualitaetssicherung",
-        "wirkungscontrolling"
+        "wirkungscontrolling",
+        "evidenzgrad",
+        "due-diligence",
+        "audit-trail"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -2371,6 +2432,35 @@
       "category": "Anschlussbegriff / Prüfbegriff",
       "status": "approved",
       "version": "Glossar-Sanierung v1"
+    },
+    {
+      "id": "audit-trail",
+      "term": "Audit-Trail",
+      "slug": "audit-trail",
+      "shortDefinition": "Ein Audit-Trail ist eine nachvollziehbare Aufzeichnung von Ereignissen und Änderungen, mit der sich ein Vorgang rekonstruieren lässt.",
+      "longDefinition": "Er kann zeigen, wer wann welche Daten erfasst, geändert oder freigegeben hat und welche Version weitergegeben wurde. Dafür braucht es eine geeignete Protokollierung und nachvollziehbare Verknüpfungen. Ein Protokoll allein beweist nicht die sachliche Richtigkeit jeder Eingabe.\n\nZeitpunkt, Rolle, Veränderung, Grund und betroffenen Stand festhalten, soweit für den Zweck nötig. Zugriffsschutz und Integrität des Protokolls beachten. Keine umfassende Überwachung ohne angemessene Grundlage.",
+      "synonyms": [
+        "Audit-Trail",
+        "Audit Trail",
+        "Prüfpfad",
+        "Änderungsprotokoll"
+      ],
+      "relatedTerms": [
+        "datenherkunft",
+        "datenstand",
+        "assurance",
+        "evidenzbasis",
+        "datenverantwortung",
+        "single-source-of-truth"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
     },
     {
       "id": "aufmerksamkeit",
@@ -3170,14 +3260,23 @@
         "Baseline",
         "Ausgangswert",
         "Ausgangszustand",
-        "Referenzwert vor Intervention"
+        "Referenzwert vor Intervention",
+        "Ausgangslage",
+        "Basislinie"
       ],
       "relatedTerms": [
         "wirkungsanalyse",
         "wirkungsnachweis",
         "counterfactual",
         "attributionsforschung",
-        "datenqualitaet"
+        "datenqualitaet",
+        "wirkung",
+        "kennzahl",
+        "szenario",
+        "evidenzbasierung",
+        "claim",
+        "datenstand",
+        "proxy"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -5007,6 +5106,31 @@
       "version": "1.0"
     },
     {
+      "id": "bonitaet",
+      "term": "Bonität",
+      "slug": "bonitaet",
+      "shortDefinition": "Bonität bezeichnet die Beurteilung, inwieweit ein Schuldner voraussichtlich in der Lage und bereit ist, vereinbarte Verpflichtungen zu erfüllen.",
+      "longDefinition": "Die Beurteilung kann Zahlungsfähigkeit, wirtschaftliche Aussichten, bisheriges Verhalten und weitere relevante Informationen berücksichtigen. Sicherheiten beeinflussen die Risikostruktur, ersetzen aber nicht ohne Weiteres die Beurteilung der Rückzahlung. Eine Bonitätsaussage kann sich bei neuen Informationen ändern.\n\nFinanzierungsgegenstand, Schuldner und Beurteilungszeitpunkt trennen. Zwischen eigener Datendarstellung und Entscheidung der finanzierenden Institution unterscheiden. Keine Ratingverbesserung versprechen.",
+      "synonyms": [
+        "Bonität",
+        "Creditworthiness",
+        "Kreditwürdigkeit"
+      ],
+      "relatedTerms": [
+        "liquiditaet",
+        "dscr",
+        "finanzierungsrelevanz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "both-sidesism",
       "term": "Both-Sidesism",
       "slug": "both-sidesism",
@@ -5771,7 +5895,9 @@
         "kapitalrendite",
         "kapitalwirkung",
         "t-sroi",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "cashflow",
+        "wirkungspotenzial"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -5985,6 +6111,35 @@
       "relatedObjections": [],
       "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
       "status": "woek-praezisierungsbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "cashflow",
+      "term": "Cashflow",
+      "slug": "cashflow",
+      "shortDefinition": "Cashflow beschreibt Ein- und Auszahlungen beziehungsweise deren Saldo in einem bestimmten Zeitraum.",
+      "longDefinition": "Im Rechnungslegungskontext werden Zahlungsströme unter anderem nach betrieblicher Tätigkeit, Investitionen und Finanzierung unterschieden. Gewinn und Cashflow sind nicht identisch: Erträge können vor dem Zahlungseingang entstehen, und Abschreibungen sind nicht selbst Auszahlungen.\n\nPeriode und Cashflow-Definition nennen. Free Cashflow, operativer Cashflow und für den Schuldendienst verfügbarer Cashflow dürfen nicht austauschbar verwendet werden.",
+      "synonyms": [
+        "Cashflow",
+        "Cash Flow",
+        "Cash Flows",
+        "Zahlungsstrom"
+      ],
+      "relatedTerms": [
+        "liquiditaet",
+        "capex",
+        "opex",
+        "dscr",
+        "transmissionskanal",
+        "finanzierungsrelevanz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "status": "anschlussbegriff",
       "version": "1.0"
     },
     {
@@ -6449,6 +6604,32 @@
       "version": "1.0"
     },
     {
+      "id": "claim",
+      "term": "Claim",
+      "slug": "claim",
+      "shortDefinition": "Ein Claim ist eine Aussage, deren Inhalt, Reichweite und Beleglage geprüft werden müssen.",
+      "longDefinition": "Ein Claim kann eine gemessene Eigenschaft, eine Prognose oder ein Werturteil enthalten. „Der Verbrauch beträgt zehn Einheiten“ unterscheidet sich von „Die Maßnahme spart zehn Einheiten“. Die zweite Aussage benötigt zusätzlich eine belastbare Vergleichsbasis.\n\nDen genauen Wortlaut vor der Quellensuche festhalten. Aussagearten trennen und Übertreibungen vermeiden. Breite Wörter wie „nachhaltig“ brauchen eine präzise Eingrenzung.",
+      "synonyms": [
+        "Claim",
+        "Aussage",
+        "Wirkungsbehauptung"
+      ],
+      "relatedTerms": [
+        "evidenz",
+        "wirkung",
+        "wirkungspotenzial",
+        "baseline"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "clean-industrial-deal",
       "term": "Clean Industrial Deal",
       "slug": "clean-industrial-deal",
@@ -6782,6 +6963,32 @@
       "relatedDocuments": [],
       "relatedObjections": [],
       "category": "Messbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "covenant",
+      "term": "Covenant",
+      "slug": "covenant",
+      "shortDefinition": "Ein Covenant ist eine vertragliche Zusage oder Bedingung in einer Finanzierung, etwa zu Kennzahlen, Informationen oder zulässigen Handlungen.",
+      "longDefinition": "Finanzielle Covenants können die Einhaltung vereinbarter Kennzahlen betreffen. Andere Covenants regeln Informationspflichten oder bestimmte Handlungen. Maßgeblich ist der konkrete Vertrag mit seinen Definitionen, Prüfzeitpunkten und Folgen möglicher Verstöße.\n\nWortlaut, Berechnung, Stichtag und Verantwortlichkeit dokumentieren. Keine universelle Mindestkennzahl erfinden. Mögliche Folgen eines Verstoßes oder Heilungsmöglichkeiten rechtlich durch Zuständige beurteilen lassen.",
+      "synonyms": [
+        "Covenant",
+        "Covenants",
+        "Kreditauflage",
+        "vertragliche Kreditbedingung"
+      ],
+      "relatedTerms": [
+        "dscr",
+        "fremdkapital",
+        "datenstand"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
       "status": "anschlussbegriff",
       "version": "1.0"
     },
@@ -7425,7 +7632,8 @@
         "wirkungsgrenzen-und-rechtepruefung",
         "evidenz-und-annahmenregister",
         "wirkungsoekonomisches-methodensystem",
-        "wirkungsoekonomisches-managementmodell"
+        "wirkungsoekonomisches-managementmodell",
+        "datenherkunft"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -7535,6 +7743,36 @@
       "category": "Daten, Frühwarnung & internationale Kooperation",
       "status": "professionalisiert",
       "version": "1.1"
+    },
+    {
+      "id": "datenherkunft",
+      "term": "Datenherkunft",
+      "slug": "datenherkunft",
+      "shortDefinition": "Datenherkunft beschreibt, woher eine Information stammt und über welche Verarbeitungsschritte sie entstanden ist.",
+      "longDefinition": "Bei einer Kennzahl reicht der Name der letzten Excel-Datei selten aus. Zur Herkunft gehören Ausgangsdaten, Berechnung, Zusammenführung, Korrekturen und beteiligte Rollen. So wird nachvollziehbar, welche Änderungen am Eingang den veröffentlichten Wert beeinflusst haben.\n\nOriginalquelle, Transformationsschritte, Faktoren, Versionen und Verantwortlichkeiten verknüpfen. Datenherkunft und kausalen Wirkpfad nicht gleichsetzen. „Evidence Lineage“ ist hier eine praktische Bezeichnung für die Herkunft von Nachweisen.",
+      "synonyms": [
+        "Datenherkunft",
+        "Evidence Lineage",
+        "Data Lineage",
+        "Datenlinie",
+        "Datenprovenienz"
+      ],
+      "relatedTerms": [
+        "audit-trail",
+        "nachweiszuordnung",
+        "datenstand",
+        "evidenz",
+        "data-lineage-und-evidenzherkunftskarte",
+        "datenverantwortung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
     },
     {
       "id": "datenluecke",
@@ -7665,7 +7903,8 @@
         "wirkungsrueckkopplung",
         "produktwirkung",
         "responsible-marketing",
-        "fuenftes-p-planet"
+        "fuenftes-p-planet",
+        "evidenzgrad"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -7708,7 +7947,8 @@
         "wirkungsassurance",
         "wirkungsoekonomisches-methodensystem",
         "wirkungsoekonomisches-managementmodell",
-        "wirkungsassurance-audit-und-methodenpruefung"
+        "wirkungsassurance-audit-und-methodenpruefung",
+        "evidenzgrad"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -7748,6 +7988,38 @@
       "version": "1.0"
     },
     {
+      "id": "datenstand",
+      "term": "Datenstand",
+      "slug": "datenstand",
+      "shortDefinition": "Der Datenstand benennt den Zeitpunkt oder Zeitraum, auf den sich eine Angabe bezieht.",
+      "longDefinition": "Bezugszeitpunkt, Erhebungsdatum, Aktualisierung und Veröffentlichung können auseinanderliegen. Eine im September aktualisierte Datei kann unverändert Werte aus dem Vorjahr enthalten. Die Aktualität einer Aussage lässt sich daher nicht am Speicherdatum allein erkennen.\n\nStichtag und Berichtsperiode unterscheiden. Zusätzlich Erhebungs-, Freigabe- und Änderungsdatum festhalten, soweit nötig. Keine tagesaktuelle Aussage aus einem Jahresmittel ableiten.",
+      "synonyms": [
+        "Datenstand",
+        "As-of Date",
+        "As of Date",
+        "Stichtag",
+        "Bezugszeitpunkt"
+      ],
+      "relatedTerms": [
+        "datenherkunft",
+        "baseline",
+        "evidenzbasis",
+        "kennzahl",
+        "nachweiszuordnung",
+        "nachweiswiederverwendung",
+        "covenant",
+        "audit-trail"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Praxisbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "datenstandard",
       "term": "Datenstandard / Standardisierung von Risikomanagement",
       "slug": "datenstandard",
@@ -7767,6 +8039,36 @@
       "relatedObjections": [],
       "category": "Grundbegriff",
       "status": "approved",
+      "version": "1.0"
+    },
+    {
+      "id": "datenverantwortung",
+      "term": "Datenverantwortung",
+      "slug": "datenverantwortung",
+      "shortDefinition": "Datenverantwortung bezeichnet die organisatorisch zugewiesene Rechenschaft für Bedeutung, Qualität, Verwendung und Pflege bestimmter Daten.",
+      "longDefinition": "Ein Data Owner ist eine verantwortliche Rolle, kein automatischer juristischer Eigentümer von Daten. Die tägliche Pflege kann bei anderen Personen liegen. Entscheidend ist, wer Definitionen bestätigt, Qualitätsprobleme priorisiert und zulässige Verwendungen freigibt.\n\nVerantwortung von Pflege, technischer Speicherung und rechtlicher Datenschutzverantwortung unterscheiden. Rollen für Änderungen, Freigaben und Eskalation verbindlich festlegen.",
+      "synonyms": [
+        "Datenverantwortung",
+        "Data Owner",
+        "fachliche Datenverantwortung",
+        "Datenverantwortliche"
+      ],
+      "relatedTerms": [
+        "evidenzbasis",
+        "datenherkunft",
+        "audit-trail",
+        "evidenzluecke",
+        "anfragenkoordination",
+        "managed-service",
+        "single-source-of-truth"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Praxisbegriff",
+      "status": "anschlussbegriff",
       "version": "1.0"
     },
     {
@@ -9887,7 +10189,8 @@
         "financial-materiality",
         "impact-management",
         "impact-controlling",
-        "key-impact-indicator"
+        "key-impact-indicator",
+        "wesentlichkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -10117,6 +10420,32 @@
       "category": "Datenbegriff",
       "status": "approved",
       "version": "Glossar-Sanierung v1"
+    },
+    {
+      "id": "due-diligence",
+      "term": "Due Diligence",
+      "slug": "due-diligence",
+      "shortDefinition": "Due Diligence bezeichnet eine zweckbezogene sorgfältige Prüfung; in verantwortlicher Unternehmensführung auch einen fortlaufenden Prozess zum Umgang mit nachteiligen Auswirkungen.",
+      "longDefinition": "Bei Transaktionen können finanzielle, technische oder rechtliche Prüfungen gemeint sein. Im OECD-Kontext geht es um Erkennen, Vermeiden, Mindern und Nachverfolgen nachteiliger Auswirkungen auf Menschen und Umwelt. Diese Anwendungen teilen die Sorgfalt, sind aber nicht deckungsgleich.\n\nPrüfauftrag, Kriterien, Tiefe und verantwortliche Fachdisziplin benennen. Fortlaufende Sorgfalt nicht auf einen einmaligen Fragebogen reduzieren. Informationsvorbereitung nicht als abgeschlossene Fachprüfung ausgeben.",
+      "synonyms": [
+        "Due Diligence",
+        "Sorgfaltsprüfung",
+        "Due-Diligence-Prüfung"
+      ],
+      "relatedTerms": [
+        "evidenz",
+        "assurance",
+        "risiko",
+        "human-rights-due-diligence"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
     },
     {
       "id": "dunkelflaute",
@@ -10720,6 +11049,31 @@
       "category": "Soziale und gruppendynamische Effekte",
       "status": "approved",
       "version": "0.1"
+    },
+    {
+      "id": "eigenkapital",
+      "term": "Eigenkapital",
+      "slug": "eigenkapital",
+      "shortDefinition": "Eigenkapital ist im Rechnungslegungskontext der verbleibende Anteil am Vermögen nach Abzug der Schulden beziehungsweise Verpflichtungen.",
+      "longDefinition": "Es kann unter anderem durch Einlagen und einbehaltene Ergebnisse entstehen. Eigenkapital ist keine separate Kasse. Seine bilanzielle Höhe, sein Marktwert und die kurzfristig verfügbaren Zahlungsmittel sind unterschiedliche Größen. Spezielle regulatorische Eigenmittelbegriffe haben zusätzliche Regeln.\n\nRechnungslegungsrahmen, Konsolidierung und Bewertungsbasis nennen. Unternehmensbezogenes Eigenkapital nicht ungeprüft mit aufsichtsrechtlichem Kapital einer Bank oder Versicherung gleichsetzen.",
+      "synonyms": [
+        "Eigenkapital",
+        "Equity",
+        "Eigenmittel im Unternehmenskontext"
+      ],
+      "relatedTerms": [
+        "fremdkapital",
+        "liquiditaet",
+        "resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "status": "anschlussbegriff",
+      "version": "1.0"
     },
     {
       "id": "eigentum-mit-wirkungspflicht",
@@ -13695,6 +14049,38 @@
       "version": "2.0"
     },
     {
+      "id": "evidenz",
+      "term": "Evidenz",
+      "slug": "evidenz",
+      "shortDefinition": "Evidenz ist eine nachvollziehbare Grundlage, mit der eine Aussage gestützt, eingeschränkt oder widerlegt werden kann.",
+      "longDefinition": "Eine Information wird nicht dadurch belastbar, dass sie in einer Tabelle steht. Für ihre Belegkraft zählen Herkunft, Erhebungsmethode, Geltungsbereich und Unsicherheit. Je nach Frage können Messdaten, Dokumente, Beobachtungen und Forschungsergebnisse unterschiedlich viel beitragen. Evidenz bedeutet deshalb keine absolute Gewissheit.\n\nZur Aussage Quelle, Bezugszeitraum, Systemgrenze und Einschränkungen angeben. Widersprechende Befunde nicht ausblenden. Datenqualität, Kausalität und normative Bewertung getrennt beurteilen.",
+      "synonyms": [
+        "Evidenz",
+        "Evidence",
+        "Beleglage"
+      ],
+      "relatedTerms": [
+        "evidenzbasierung",
+        "evidenzgrad",
+        "evidenzluecke",
+        "claim",
+        "datenherkunft",
+        "wirkungsnachweis",
+        "selektive-evidenz",
+        "evidenzbasis",
+        "finanzierungsrelevanz",
+        "due-diligence"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "evidenz-und-annahmenregister",
       "term": "Evidenz- und Annahmenregister",
       "slug": "evidenz-und-annahmenregister",
@@ -13705,7 +14091,8 @@
       ],
       "relatedTerms": [
         "wirkungsoekonomisches-methodensystem",
-        "wirkungsoekonomisches-managementmodell"
+        "wirkungsoekonomisches-managementmodell",
+        "evidenzbasis"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -13715,6 +14102,120 @@
       "category": "WÖMS Methodensystem",
       "status": "approved",
       "version": "2.0"
+    },
+    {
+      "id": "evidenzbasierung",
+      "term": "Evidenzbasierung",
+      "slug": "evidenzbasierung",
+      "shortDefinition": "Evidenzbasierung bedeutet, Aussagen und Entscheidungen auf nachvollziehbare Befunde zu stützen und ihre Unsicherheit offenzulegen.",
+      "longDefinition": "Daten und Forschung helfen, Möglichkeiten und Folgen zu beurteilen. Sie treffen jedoch nicht automatisch die Entscheidung. Ziele, Verteilung, Rechte und politische Wertungen bleiben eigenständige Fragen. Im politischen Kontext verdeutlicht „evidenzinformiert“, dass Befunde Entscheidungen informieren, aber nicht vollständig bestimmen.\n\nFragestellung vor der Belegsuche klären. Quellenqualität und Gegenbefunde prüfen. Beobachtung, Prognose und Bewertung sprachlich trennen. Die Begriffe „evidence-based“ und „evidence-informed“ nicht in jedem Fachgebiet unterschiedslos verwenden.",
+      "synonyms": [
+        "Evidenzbasierung",
+        "Evidence-based",
+        "Evidence based",
+        "evidenzbasiert",
+        "evidenzgestützt"
+      ],
+      "relatedTerms": [
+        "evidenz",
+        "szenario",
+        "baseline"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "evidenzbasis",
+      "term": "Evidenzbasis",
+      "slug": "evidenzbasis",
+      "shortDefinition": "Eine Evidenzbasis ist ein geordneter Bestand von Aussagen, Daten und zugehörigen Nachweisen für bestimmte Fragestellungen.",
+      "longDefinition": "Gemeint ist nicht nur ein Speicherort für Dateien. Aussagen werden mit ihren Belegen, Datenständen und fachlichen Verantwortlichen verbunden. Dadurch lässt sich eine Antwort bei Rückfragen rekonstruieren. Die Evidenzbasis kann verteilt in vorhandenen Systemen liegen, sofern ihre Verweise und Regeln zusammenpassen.\n\nZuerst Verwendungszweck und Systemgrenzen festlegen. Freigaben, Aktualitätsregeln, Zugriff und Widersprüche dokumentieren. Wiederverwendung nur bei passender Definition und Bezugsperiode.",
+      "synonyms": [
+        "Evidenzbasis",
+        "Evidence Base",
+        "Nachweisbasis",
+        "Evidenzbestand"
+      ],
+      "relatedTerms": [
+        "evidenz",
+        "datenverantwortung",
+        "nachweiszuordnung",
+        "audit-trail",
+        "evidenz-und-annahmenregister",
+        "datenstand",
+        "nachweiswiederverwendung",
+        "single-source-of-truth"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Praxisbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "evidenzgrad",
+      "term": "Evidenzgrad",
+      "slug": "evidenzgrad",
+      "shortDefinition": "Der Evidenzgrad beschreibt nach einer offengelegten Methodik, wie belastbar die Belege für eine bestimmte Aussage sind.",
+      "longDefinition": "Nicht alle Nachweise tragen gleich weit. Eine aktuelle Primärquelle kann eine Mengenangabe gut belegen, aber noch nichts über deren Ursache sagen. Die Belegbewertung muss deshalb zur Frage passen. Herkunft, Aktualität, Messmethode und Unsicherheit sind unterschiedliche Prüfdimensionen.\n\nBewertungskriterien und Grenzen des Grades nennen. Die A-bis-D-Einstufung eines Evidenzmanagement-Services ist eine interne Arbeitskonvention, kein allgemeiner wissenschaftlicher Evidenzstandard. Sie ersetzt die führende WÖk-Systematik nicht.",
+      "synonyms": [
+        "Evidenzgrad",
+        "Evidence Grade",
+        "Evidence Quality",
+        "Belegqualität"
+      ],
+      "relatedTerms": [
+        "evidenz",
+        "evidenzluecke",
+        "assurance",
+        "proxy",
+        "datenqualitaets-und-evidenzmatrix",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "evidenzluecke",
+      "term": "Evidenzlücke",
+      "slug": "evidenzluecke",
+      "shortDefinition": "Eine Evidenzlücke besteht, wenn eine relevante Aussage nicht ausreichend, aktuell oder widerspruchsfrei belegt werden kann.",
+      "longDefinition": "Eine Lücke kann eine fehlende Information, eine unklare Definition oder widersprechende Datenstände betreffen. Sie sagt zunächst etwas über die Beleglage, nicht darüber, ob der tatsächliche Zustand gut oder schlecht ist. Auch ein vorhandener Wert kann für die konkrete Frage ungeeignet sein.\n\nFür jede Lücke Aussage, Relevanz, zuständige Rolle und Klärungsfrist erfassen. Offene Punkte sichtbar halten. Zulässige Schätzungen begründen und als solche kennzeichnen.",
+      "synonyms": [
+        "Evidenzlücke",
+        "Evidence Gap",
+        "Nachweislücke",
+        "Beleglücke"
+      ],
+      "relatedTerms": [
+        "evidenz",
+        "evidenzgrad",
+        "datenverantwortung",
+        "proxy"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Praxisbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
     },
     {
       "id": "evolutionstheorie",
@@ -14957,7 +15458,8 @@
         "wirkungsrisiko",
         "wirkungsresilienz",
         "csrd",
-        "esrs"
+        "esrs",
+        "wesentlichkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -14969,6 +15471,34 @@
       "category": "Datenbegriff",
       "status": "published",
       "version": "2026-06-04"
+    },
+    {
+      "id": "finanzierungsrelevanz",
+      "term": "Finanzierungsrelevanz",
+      "slug": "finanzierungsrelevanz",
+      "shortDefinition": "Finanzierungsrelevanz bezeichnet den begründeten Bezug einer Information zur Beurteilung eines Finanzierungsvorhabens oder einer bestehenden Finanzierung.",
+      "longDefinition": "Eine Information kann die Rückzahlungsfähigkeit, den Kapitalbedarf, die Risikoeinschätzung oder die Nachvollziehbarkeit eines Vorhabens betreffen. Nicht jeder Nachhaltigkeitsdatenpunkt hat bei jeder Finanzierung dieselbe Bedeutung. Der Bezug muss für die konkrete Fragestellung erklärt werden.\n\nBetroffene Finanzgröße, plausiblen Übertragungsweg, Zeitraum und nachfragenden Adressaten festhalten. Datenbedarf des Kapitalgebers nicht als pauschale gesetzliche Lieferpflicht jedes Unternehmens darstellen.",
+      "synonyms": [
+        "Finanzierungsrelevanz",
+        "Finance Relevance",
+        "Financing Relevance",
+        "finanzielle Relevanz im Finanzierungsdialog"
+      ],
+      "relatedTerms": [
+        "transmissionskanal",
+        "cashflow",
+        "wesentlichkeit",
+        "evidenz",
+        "bonitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "status": "anschlussbegriff",
+      "version": "1.0"
     },
     {
       "id": "finanzmarktkapitalismus",
@@ -15999,6 +16529,33 @@
       "category": "Glossar-Erweiterung",
       "status": "approved",
       "version": "2.0"
+    },
+    {
+      "id": "fremdkapital",
+      "term": "Fremdkapital und Debt",
+      "slug": "fremdkapital",
+      "shortDefinition": "Fremdkapital bezeichnet aus Unternehmenssicht Kapital beziehungsweise Verpflichtungen gegenüber Gläubigern; der englische Begriff Debt muss kontextbezogen abgegrenzt werden.",
+      "longDefinition": "In der Unternehmensfinanzierung meint Debt häufig verzinsliche Finanzschulden. In der Statistik kann die Definition auch weitere Schuldinstrumente umfassen. Fremdkapital ist deshalb nicht in jeder Kennzahl deckungsgleich mit einem eng gefassten Debt-Begriff. Auch innerhalb der Bilanz sind einzelne Verpflichtungsarten zu unterscheiden.\n\nVor Berechnungen klären, welche Verbindlichkeiten enthalten sind: etwa Bankkredite, Anleihen, Leasing oder Lieferantenverbindlichkeiten. Brutto- und Nettoschuld sowie Bilanz- und Vertragsdefinition auseinanderhalten.",
+      "synonyms": [
+        "Fremdkapital und Debt",
+        "Debt",
+        "Fremdkapital",
+        "Finanzverbindlichkeiten"
+      ],
+      "relatedTerms": [
+        "eigenkapital",
+        "covenant",
+        "dscr",
+        "refinanzierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "status": "anschlussbegriff",
+      "version": "1.0"
     },
     {
       "id": "frequenzhaltung",
@@ -20620,7 +21177,6 @@
         "menschenrechtliche Sorgfaltspflichten",
         "human rights due diligence",
         "Sorgfaltspflicht",
-        "Due Diligence",
         "Responsible Purchasing",
         "Supplier Engagement",
         "Lieferkettenresilienz",
@@ -20635,7 +21191,8 @@
         "lksg",
         "beschwerdemechanismus-access-to-remedy",
         "human-rights-impact-assessment",
-        "rohstoffkritikalitaet"
+        "rohstoffkritikalitaet",
+        "due-diligence"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -21247,7 +21804,8 @@
         "impact-management",
         "wirkungsbewertung",
         "csrd",
-        "esrs"
+        "esrs",
+        "wesentlichkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -22342,7 +22900,8 @@
         "wirkungsbewertung",
         "wirkungsraum",
         "nichtkompensationsprinzip",
-        "systemtheorie"
+        "systemtheorie",
+        "abhaengigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -22371,7 +22930,8 @@
         "wirkungsportfolio",
         "wirkungsrisiko-matrix",
         "wirkungsoekonomisches-methodensystem",
-        "wirkungsoekonomisches-managementmodell"
+        "wirkungsoekonomisches-managementmodell",
+        "abhaengigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -23725,6 +24285,35 @@
       "version": "2.0"
     },
     {
+      "id": "kennzahl",
+      "term": "Kennzahl",
+      "slug": "kennzahl",
+      "shortDefinition": "Eine Kennzahl ist eine nach einer festgelegten Definition ermittelte quantitative Größe zur Beschreibung oder Beurteilung eines Sachverhalts.",
+      "longDefinition": "Die Zahl wird erst durch Einheit, Zeitraum, Bezugsmenge und Berechnung verständlich. Sie kann eine Menge, einen Anteil, einen Aufwand oder einen Zustand beschreiben. Welche Entscheidung sie unterstützt, ist eine weitere Frage.\n\nDefinition, Zähler, Nenner, Einheit, Datenquelle und Stichtag angeben. Vergleichbare Namen bedeuten nicht automatisch vergleichbare Zahlen. KPI und KII nach der kanonischen Methodik getrennt halten.",
+      "synonyms": [
+        "Kennzahl",
+        "Metric",
+        "Metrics",
+        "Messgröße"
+      ],
+      "relatedTerms": [
+        "kpi",
+        "wirkung",
+        "datenstand",
+        "baseline",
+        "key-impact-indicator",
+        "kii"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "kernenergie",
       "term": "Kernenergie",
       "slug": "kernenergie",
@@ -23827,7 +24416,8 @@
         "woek-id",
         "impact-management",
         "iro",
-        "wirkungsdaten"
+        "wirkungsdaten",
+        "kennzahl"
       ],
       "relatedMethods": [
         "Impact Controlling",
@@ -24135,7 +24725,8 @@
         "sdgs",
         "agenda-2030",
         "sdg-plus",
-        "wirkungshaushalt"
+        "wirkungshaushalt",
+        "kennzahl"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -24611,7 +25202,8 @@
         "carbon-budget",
         "klimaanpassung",
         "klimawandel",
-        "art-20a-gg"
+        "art-20a-gg",
+        "risikominderung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -25756,11 +26348,19 @@
       "shortDefinition": "Ein Key Performance Indicator ist eine Kennzahl zur Beobachtung eines wichtigen Leistungs- oder Zielaspekts; er ersetzt keine umfassende Wirkungsbewertung.",
       "longDefinition": "Ein Key Performance Indicator ist eine Kennzahl zur Beobachtung eines wichtigen Leistungs- oder Zielaspekts; er ersetzt keine umfassende Wirkungsbewertung.",
       "synonyms": [
-        "KPI"
+        "KPI",
+        "Key Performance Indicator",
+        "Key Performance Indicators",
+        "Leistungskennzahl"
       ],
       "relatedTerms": [
         "key-impact-indicator",
-        "impact-controlling"
+        "impact-controlling",
+        "kennzahl",
+        "baseline",
+        "evidenzgrad",
+        "kii",
+        "managed-service"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -28164,6 +28764,32 @@
       "version": "1.0"
     },
     {
+      "id": "liquiditaet",
+      "term": "Liquidität",
+      "slug": "liquiditaet",
+      "shortDefinition": "Unternehmensliquidität ist die Fähigkeit, fällige Zahlungsverpflichtungen rechtzeitig erfüllen zu können.",
+      "longDefinition": "Dafür zählen verfügbare Zahlungsmittel, nutzbare Finanzierungsspielräume und der zeitliche Verlauf von Ein- und Auszahlungen. Im Kapitalmarkt hat „Liquidität“ zusätzlich die Bedeutung, wie leicht ein Vermögenswert ohne große Preiswirkung gehandelt werden kann.\n\nDie gemeinte Liquiditätsart benennen. Verfügbarkeit und Bedingungen von Kreditlinien prüfen. Ein Jahresüberschuss ersetzt keine Zahlungsplanung nach Fälligkeiten.",
+      "synonyms": [
+        "Liquidität",
+        "Liquidity",
+        "Zahlungsfähigkeit"
+      ],
+      "relatedTerms": [
+        "cashflow",
+        "refinanzierung",
+        "bonitaet",
+        "eigenkapital"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "lithium-ionen-batterie",
       "term": "Lithium-Ionen-Batterie",
       "slug": "lithium-ionen-batterie",
@@ -28336,12 +28962,19 @@
         "Pfadabhaengigkeit",
         "Carbon Lock-in",
         "fossiler Lock-in",
-        "Infrastruktur-Lock-in"
+        "Infrastruktur-Lock-in",
+        "Vendor Lock-in",
+        "Technologiebindung",
+        "Anbieterbindung"
       ],
       "relatedTerms": [
         "transition-risk",
         "stranded-assets",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "abhaengigkeit",
+        "resilienz",
+        "managed-service",
+        "pfadabhaengigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -28749,6 +29382,31 @@
       "relatedDocuments": [],
       "relatedObjections": [],
       "category": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "managed-service",
+      "term": "Managed Service",
+      "slug": "managed-service",
+      "shortDefinition": "Ein Managed Service ist eine fortlaufend erbrachte Dienstleistung mit abgegrenztem Leistungsumfang, Verantwortlichkeiten und vereinbarten Servicequalitäten.",
+      "longDefinition": "Anders als eine einmalige Beratung umfasst das Modell den laufenden Betrieb einer bestimmten Funktion. Der Begriff ist besonders in der IT etabliert und wird auch für andere spezialisierte Tätigkeiten verwendet. Ein monatlicher Preis allein macht eine Leistung noch nicht zum Managed Service.\n\nUmfang, Kapazität, Reaktionszeiten, Ausnahmen, Zuständigkeiten und Exit festlegen. Laufende Leistung darf nicht unbegrenzte Verfügbarkeit suggerieren. Der Kunde behält Zugang zu seinen Daten und nachvollziehbaren Ergebnissen.",
+      "synonyms": [
+        "Managed Service",
+        "laufend betriebene Dienstleistung",
+        "Betreiberdienstleistung"
+      ],
+      "relatedTerms": [
+        "anfragenkoordination",
+        "datenverantwortung",
+        "kpi"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
       "status": "anschlussbegriff",
       "version": "1.0"
     },
@@ -31162,6 +31820,62 @@
       "relatedDocuments": [],
       "relatedObjections": [],
       "category": "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "nachweiswiederverwendung",
+      "term": "Nachweiswiederverwendung",
+      "slug": "nachweiswiederverwendung",
+      "shortDefinition": "Nachweiswiederverwendung ist die erneute Verwendung eines belegten Informationsbausteins für einen weiteren, dazu passenden Zweck.",
+      "longDefinition": "Nicht für jede Anfrage muss dieselbe Quelle neu erhoben werden. Wiederverwendung gelingt, wenn Definition, Geltungsbereich, Datenstand und Nutzungsbefugnis zur neuen Anfrage passen. Die ursprünglichen Einschränkungen reisen mit der Information mit.\n\nVor Wiederverwendung Aktualität und Passung prüfen. Quelle und Version erhalten. Den allgemeinen Suchbegriff „Reuse“ nicht ungeprüft auf physische Wiederverwendung in der Kreislaufwirtschaft umlenken.",
+      "synonyms": [
+        "Nachweiswiederverwendung",
+        "Evidence Reuse",
+        "Data Reuse",
+        "Reuse",
+        "Wiederverwendung von Nachweisen"
+      ],
+      "relatedTerms": [
+        "evidenzbasis",
+        "nachweiszuordnung",
+        "datenstand"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Praxisbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "nachweiszuordnung",
+      "term": "Nachweiszuordnung",
+      "slug": "nachweiszuordnung",
+      "shortDefinition": "Nachweiszuordnung verbindet eine externe oder interne Anforderung mit den dazu passenden Daten, Aussagen und Quellen.",
+      "longDefinition": "Beim Mapping wird geprüft, ob ein vorhandener Datenbaustein die gestellte Frage tatsächlich beantwortet. Gleiche Wörter reichen nicht: Zeitraum, Unternehmensgrenze, Einheit und Nenner müssen passen. Eine Antwort kann mehrere Quellen benötigen, eine Quelle mehrere Antworten unterstützen.\n\nZuordnung samt Definition und möglichen Umrechnungen dokumentieren. Änderungen im Fragebogen oder Datenmodell erneut prüfen. Mapping nicht als automatische Gleichwertigkeit von Standards darstellen.",
+      "synonyms": [
+        "Nachweiszuordnung",
+        "Mapping",
+        "Evidence Mapping",
+        "Datenmapping",
+        "Anforderungsmapping"
+      ],
+      "relatedTerms": [
+        "evidenzbasis",
+        "datenstand",
+        "datenherkunft",
+        "nachweiswiederverwendung",
+        "anfragenkoordination"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Praxisbegriff",
       "status": "anschlussbegriff",
       "version": "1.0"
     },
@@ -34613,7 +35327,8 @@
         "operative Aufwendungen",
         "Betriebsausgaben",
         "Betriebskosten",
-        "laufende Betriebskosten"
+        "laufende Betriebskosten",
+        "Betriebsaufwand"
       ],
       "relatedTerms": [
         "capex",
@@ -34622,7 +35337,9 @@
         "wirkungsrueckkopplung",
         "systemkosten",
         "kapitalwirkung",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "cashflow",
+        "transmissionskanal"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -35921,7 +36638,9 @@
         "Klimaanpassung",
         "Urban Heat Island",
         "städtische Hitzeinsel",
-        "staedtische Hitzeinsel"
+        "staedtische Hitzeinsel",
+        "physische Risiken",
+        "Physisches Risiko"
       ],
       "relatedTerms": [
         "tcfd",
@@ -35934,7 +36653,11 @@
         "hochwasserrisiko",
         "issb-ifrs-s1-s2",
         "liability-risk",
-        "tnfd"
+        "tnfd",
+        "risiko",
+        "resilienz",
+        "risikominderung",
+        "abhaengigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -38763,6 +39486,32 @@
       "version": "1.0"
     },
     {
+      "id": "proxy",
+      "term": "Proxy",
+      "slug": "proxy",
+      "shortDefinition": "Ein Proxy ist eine ersatzweise verwendete Größe, die einen nicht direkt beobachteten Sachverhalt näherungsweise abbilden soll.",
+      "longDefinition": "Ein Branchenmittel oder ein indirekter Indikator kann eine Informationslücke teilweise überbrücken. Er ist aber nicht der direkt gemessene Wert des konkreten Unternehmens. Ob die Näherung brauchbar ist, hängt von Zusammenhang, Datenbasis und Verwendungszweck ab.\n\nGrund für den Ersatz, Herkunft, angenommene Beziehung und Unsicherheit dokumentieren. Eine spätere Überprüfung mit direkteren Daten vorsehen. Schätzung und Messung getrennt kennzeichnen.",
+      "synonyms": [
+        "Proxy",
+        "Ersatzindikator",
+        "Näherungswert",
+        "Ersatzgröße"
+      ],
+      "relatedTerms": [
+        "evidenzluecke",
+        "evidenzgrad",
+        "baseline"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "prozess-und-systemintegration",
       "term": "Prozess- und Systemintegration",
       "slug": "prozess-und-systemintegration",
@@ -40786,11 +41535,16 @@
       "shortDefinition": "Refinanzierung bezeichnet die Beschaffung neuer Mittel zur Ablösung, Verlängerung oder Finanzierung bestehender Kredite und Verpflichtungen.",
       "longDefinition": "Refinanzierung bezeichnet die Beschaffung neuer Mittel zur Ablösung, Verlängerung oder Finanzierung bestehender Kredite und Verpflichtungen.",
       "synonyms": [
-        "Refinanzierung"
+        "Refinanzierung",
+        "Refinancing",
+        "Anschlussfinanzierung"
       ],
       "relatedTerms": [
         "bruttokreditaufnahme",
-        "nettokreditaufnahme"
+        "nettokreditaufnahme",
+        "fremdkapital",
+        "liquiditaet",
+        "covenant"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -42015,7 +42769,8 @@
       "synonyms": [
         "Resilienz",
         "soziale Resilienz",
-        "demokratische Resilienz"
+        "demokratische Resilienz",
+        "Resilience"
       ],
       "relatedTerms": [
         "wirkungsresilienz",
@@ -42047,7 +42802,12 @@
         "rueckstellfaehigkeit",
         "daempfungsfaehigkeit",
         "anpassungsfaehigkeit",
-        "transformationsfaehigkeit"
+        "transformationsfaehigkeit",
+        "abhaengigkeit",
+        "risiko",
+        "risikominderung",
+        "szenario",
+        "eigenkapital"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -42848,6 +43608,37 @@
       "version": "2.0"
     },
     {
+      "id": "risiko",
+      "term": "Risiko",
+      "slug": "risiko",
+      "shortDefinition": "Risiko betrifft unsichere Entwicklungen und ihre möglichen Auswirkungen auf Ziele, Funktionen oder betroffene Zustände.",
+      "longDefinition": "Im Kredit- und ESG-Risikokontext stehen häufig nachteilige Folgen im Vordergrund. Andere Risikobegriffe erfassen Unsicherheit umfassender. Wahrscheinlichkeit, Ausmaß, Zeithorizont und Verteilung sind zu unterscheiden. Eine Gefahr allein beschreibt noch nicht die konkrete Betroffenheit eines Systems.\n\nDie im jeweiligen Kontext gültige Definition verwenden. Gefahr, Exposition, Verwundbarkeit und mögliche Folge benennen. Wahrscheinlichkeit mal Schaden ist nicht für jede tiefe Unsicherheit eine ausreichende Beurteilung.",
+      "synonyms": [
+        "Risiko",
+        "Risk"
+      ],
+      "relatedTerms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "resilienz",
+        "risikomanagement",
+        "wirkungsrisiko",
+        "abhaengigkeit",
+        "transmissionskanal",
+        "risikominderung",
+        "wesentlichkeit",
+        "due-diligence"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Systeme, Steuerung und Resilienz",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "risiko-und-resilienzregister",
       "term": "Risiko- und Resilienzregister",
       "slug": "risiko-und-resilienzregister",
@@ -42895,7 +43686,8 @@
       ],
       "relatedTerms": [
         "erm",
-        "wirkungsrisikomanagement"
+        "wirkungsrisikomanagement",
+        "risiko"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -42904,6 +43696,34 @@
       "relatedObjections": [],
       "category": "Grundbegriff",
       "status": "approved",
+      "version": "1.0"
+    },
+    {
+      "id": "risikominderung",
+      "term": "Risikominderung / Risk Mitigation",
+      "slug": "risikominderung",
+      "shortDefinition": "Mitigation bedeutet im Risikokontext die Minderung eines Risikos oder seiner Folgen; im Klimakontext bezeichnet es insbesondere Klimaschutz.",
+      "longDefinition": "Die Bedeutung hängt vom Fachgebiet ab. Im Risikomanagement können Maßnahmen Eintrittsmöglichkeiten oder Schadensfolgen reduzieren. In der Klimapolitik meint Mitigation die Verringerung von Treibhausgasquellen beziehungsweise die Stärkung von Senken. Anpassung an Klimafolgen wird als Adaptation unterschieden.\n\nImmer sagen, welches Risiko oder welche Belastung vermindert werden soll. Maßnahme, Restbelastung und neue Abhängigkeiten dokumentieren. Keine vollständige Beseitigung aus einer Minderung ableiten.",
+      "synonyms": [
+        "Risikominderung / Risk Mitigation",
+        "Risk Mitigation",
+        "Risikominderung",
+        "Schadensminderung",
+        "Mitigation (Risikomanagement)"
+      ],
+      "relatedTerms": [
+        "risiko",
+        "resilienz",
+        "physical-climate-risk",
+        "klimaschutz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Systeme, Steuerung und Resilienz",
+      "status": "anschlussbegriff",
       "version": "1.0"
     },
     {
@@ -44307,6 +45127,34 @@
       "version": "1.0"
     },
     {
+      "id": "dscr",
+      "term": "Schuldendienstdeckungsgrad (DSCR)",
+      "slug": "dscr",
+      "shortDefinition": "Der Schuldendienstdeckungsgrad setzt die für den Schuldendienst verfügbare finanzielle Größe ins Verhältnis zum fälligen Schuldendienst derselben Periode.",
+      "longDefinition": "In der Projektfinanzierung wird häufig der verfügbare Cashflow durch Zins und Tilgung geteilt. Welche Zahlungsbestandteile einbezogen werden, bestimmt die konkrete Definition. Ein Verhältnis von 1 bedeutet rechnerische Deckung nach dieser Definition, aber keine allgemeine Risikofreiheit.\n\nZähler, Nenner, Zeitraum, Ist- oder Planbezug sowie Vertragsdefinition nennen. EBITDA nicht pauschal als verfügbaren Cashflow einsetzen. Bei einem Nenner von null ist die einfache Quotientenform nicht anwendbar.",
+      "synonyms": [
+        "Schuldendienstdeckungsgrad (DSCR)",
+        "DSCR",
+        "Debt Service Coverage Ratio",
+        "Debt Service Cover Ratio",
+        "Schuldendienstdeckungsgrad"
+      ],
+      "relatedTerms": [
+        "cashflow",
+        "covenant",
+        "bonitaet",
+        "fremdkapital"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "schuldenmythos",
       "term": "Schuldenmythos",
       "slug": "schuldenmythos",
@@ -45404,7 +46252,8 @@
         "false-balance",
         "policy-laundering",
         "expertinnenlobbyismus",
-        "paltering"
+        "paltering",
+        "evidenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -45823,6 +46672,32 @@
       ],
       "relatedObjections": [],
       "category": "Energie, Strommarkt und Systemkosten",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "single-source-of-truth",
+      "term": "Single Source of Truth",
+      "slug": "single-source-of-truth",
+      "shortDefinition": "Single Source of Truth bezeichnet eine organisatorisch festgelegte, maßgebliche Quelle oder Zuordnung für eine bestimmte Information.",
+      "longDefinition": "Die „eine Quelle“ muss keine einzige physische Datenbank sein. Verschiedene Fachsysteme können für unterschiedliche Daten führend bleiben. Wesentlich ist, dass Zuständigkeit, Definition und gültige Fassung eindeutig sind und widersprechende Kopien nicht unkontrolliert nebeneinander verwendet werden.\n\nFestlegen, welches System für welches Merkmal führend ist. Änderungen, Ausnahmen und Korrekturen nachvollziehbar regeln. Quelldaten bei Exporten und Zusammenführungen nicht aus dem Blick verlieren.",
+      "synonyms": [
+        "Single Source of Truth",
+        "SSOT",
+        "verbindliche Datenbasis",
+        "führende Datenquelle"
+      ],
+      "relatedTerms": [
+        "evidenzbasis",
+        "datenverantwortung",
+        "audit-trail"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
       "status": "anschlussbegriff",
       "version": "1.0"
     },
@@ -49808,6 +50683,32 @@
       "version": "1.0"
     },
     {
+      "id": "szenario",
+      "term": "Szenario",
+      "slug": "szenario",
+      "shortDefinition": "Ein Szenario beschreibt eine in sich nachvollziehbare mögliche Entwicklung unter offengelegten Annahmen.",
+      "longDefinition": "Szenarien helfen, Entscheidungen bei unsicherer Zukunft zu prüfen. Sie sind keine garantierten Vorhersagen. Mehrere plausible Verläufe können unterschiedliche Belastungen, Chancen und Anpassungsoptionen sichtbar machen.\n\nAusgangslage, Annahmen, Zeithorizont und betroffene Größen festhalten. Szenario und Eintrittswahrscheinlichkeit trennen. Einzelfaktor-Sensitivität ist nicht automatisch eine vollständige Szenarioanalyse.",
+      "synonyms": [
+        "Szenario",
+        "Scenario",
+        "Szenarioanalyse"
+      ],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "resilienz",
+        "transmissionskanal",
+        "evidenzbasierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Systeme, Steuerung und Resilienz",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "t-sroi",
       "term": "T-SROI - Transformational Social Return on Investment",
       "slug": "t-sroi",
@@ -51842,7 +52743,10 @@
         "lock-in-pfadabhaengigkeit",
         "physical-climate-risk",
         "sbti",
-        "transition-finance"
+        "transition-finance",
+        "transmissionskanal",
+        "risiko",
+        "szenario"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -51850,6 +52754,35 @@
       "relatedDocuments": [],
       "relatedObjections": [],
       "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
+      "id": "transmissionskanal",
+      "term": "Transmissionskanal",
+      "slug": "transmissionskanal",
+      "shortDefinition": "Ein Transmissionskanal beschreibt den Weg, über den eine Veränderung auf andere Größen oder Risiken übertragen wird.",
+      "longDefinition": "Im Finanzkontext wird die Verbindung zwischen einem Einflussfaktor und einer finanziellen Größe beschrieben. Ein Strompreisanstieg kann über Beschaffung und Tarifregeln auf Betriebskosten, Ergebnis und Liquidität wirken. Ob und wie stark das geschieht, hängt von Verträgen, Weitergabeoptionen und Zeitverzögerungen ab.\n\nAuslöser, Zwischenschritte, betroffene Finanzgröße, Zeithorizont und Gegenmaßnahmen nennen. Die Kette nicht als automatische oder immer gleich starke Folge darstellen.",
+      "synonyms": [
+        "Transmissionskanal",
+        "Transmission Channel",
+        "Financial Transmission",
+        "finanzieller Übertragungsweg"
+      ],
+      "relatedTerms": [
+        "abhaengigkeit",
+        "risiko",
+        "cashflow",
+        "opex",
+        "finanzierungsrelevanz",
+        "szenario"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Systeme, Steuerung und Resilienz",
       "status": "anschlussbegriff",
       "version": "1.0"
     },
@@ -56171,6 +57104,34 @@
       "version": "1.0"
     },
     {
+      "id": "wesentlichkeit",
+      "term": "Wesentlichkeit",
+      "slug": "wesentlichkeit",
+      "shortDefinition": "Wesentlichkeit beschreibt, ob ein Sachverhalt für die maßgebliche Beurteilung, Entscheidung oder Wirkungsperspektive hinreichend bedeutsam ist.",
+      "longDefinition": "Der Maßstab muss genannt werden. Finanzielle Wesentlichkeit fragt nach entscheidungsrelevanten finanziellen Informationen. Wirkungswesentlichkeit betrifft Auswirkungen auf Menschen und Umwelt. Ein Sachverhalt kann aus einer Perspektive wesentlich sein und aus einer anderen anders gewichtet werden.\n\nPerspektive, Systemgrenze, Zeitraum und Kriterien offenlegen. Wesentlichkeit nicht mit bloßer Beliebtheit eines Themas verwechseln. Eine gesetzliche Berichtspflicht folgt nicht automatisch aus jeder internen Relevanzentscheidung.",
+      "synonyms": [
+        "Wesentlichkeit",
+        "Materiality",
+        "Materialität"
+      ],
+      "relatedTerms": [
+        "risiko",
+        "wirkung",
+        "finanzierungsrelevanz",
+        "doppelte-wesentlichkeit",
+        "financial-materiality",
+        "impact-materiality"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Datenbegriff",
+      "status": "anschlussbegriff",
+      "version": "1.0"
+    },
+    {
       "id": "wettbewerb-als-suchverfahren",
       "term": "Wettbewerb als Suchverfahren",
       "slug": "wettbewerb-als-suchverfahren",
@@ -56862,7 +57823,12 @@
         "output",
         "outcome",
         "impact",
-        "referenzrahmen"
+        "referenzrahmen",
+        "evidenz",
+        "baseline",
+        "claim",
+        "kennzahl",
+        "wesentlichkeit"
       ],
       "relatedMethods": [
         [
@@ -61428,7 +62394,8 @@
         "kontribution",
         "counterfactual",
         "baseline",
-        "datenqualitaet"
+        "datenqualitaet",
+        "evidenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -62606,7 +63573,8 @@
         "mögliche Wirkung",
         "Impact Potential",
         "Wirkungswahrscheinlichkeit",
-        "Wirkungsanlage"
+        "Wirkungsanlage",
+        "Potential Impact"
       ],
       "relatedTerms": [
         "wirkung",
@@ -62666,7 +63634,11 @@
         "katechon",
         "ausloeser",
         "iooi",
-        "wirkungsnachweis"
+        "wirkungsnachweis",
+        "szenario",
+        "abhaengigkeit",
+        "evidenz",
+        "claim"
       ],
       "relatedMethods": [
         [
@@ -64088,7 +65060,8 @@
         "ausloeser",
         "wirkmechanismus",
         "iooi",
-        "nebenwirkung"
+        "nebenwirkung",
+        "risiko"
       ],
       "relatedMethods": [
         [

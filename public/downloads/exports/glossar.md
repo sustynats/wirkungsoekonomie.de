@@ -1,6 +1,6 @@
 # Glossar der Wirkungsökonomie
 
-Stand: 2026-09-05T21:54:05.598Z
+Stand: 2026-09-15T07:24:11.881Z
 
 ## § 7 Bundeshaushaltsordnung (BHO)
 
@@ -33,6 +33,14 @@ Die Abfallhierarchie ordnet Maßnahmen nach Priorität: Vermeidung, Wiederverwen
 Die Abfallhierarchie ordnet Maßnahmen nach Priorität: Vermeidung, Wiederverwendung, Recycling, Verwertung und Beseitigung.
 
 Die WÖk erweitert sie um Wirkung auf Mensch, Planet und Demokratie sowie Produktdesign vor der Abfallphase.
+
+## Abhängigkeit
+
+Eine Abhängigkeit liegt vor, wenn eine Funktion oder ein Ergebnis auf bestimmte Ressourcen, Akteure, Infrastrukturen oder Bedingungen angewiesen ist.
+
+Abhängigkeiten sind zunächst Teil der Funktionsweise eines Systems und nicht automatisch ein Problem. Kritisch werden sie unter anderem bei fehlenden Alternativen, Konzentration oder langen Anpassungszeiten. Entscheidend ist, was bei einer Veränderung tatsächlich ausfällt oder teurer wird.
+
+Kritische Funktion, benötigte Leistung, Ausfallfolge, Ersatzmöglichkeit und Zeit bis zur Anpassung erfassen. Abhängigkeit von einer Risikowahrscheinlichkeit getrennt halten.
 
 ## Abregelung
 
@@ -313,6 +321,14 @@ Anarchokapitalismus lehnt staatliche Herrschaft ab und will Ordnung über Privat
 Anarchokapitalismus lehnt staatliche Herrschaft ab und will Ordnung über Privateigentum, Märkte, Verträge und private Sicherheits- oder Rechtsdienste organisieren.
 
 Als Extremmodell relevant, aber nicht auszubauen: Private Vertragslogik kann Gemeingüter, Umwelt, Machtkonzentration und demokratische Legitimität nicht ausreichend sichern.
+
+## Anfragenkoordination
+
+Anfragenkoordination ist eine vereinbarte Funktion, die Informationsanfragen aufnimmt, fachlich zuordnet und bis zur freigegebenen Antwort verfolgt.
+
+Ein Response Desk bündelt Eingang, Fristen, Rückfragen, Quellenzuordnung und Freigabestatus. Er kann Entwürfe vorbereiten. Die fachliche Verantwortung der Datenlieferanten und die Entscheidungsbefugnis des Auftraggebers bleiben davon getrennt.
+
+Leistungsumfang, Reaktionszeit, Eskalation und Freigaberechte vereinbaren. Vertrauliche Unterlagen nur in zulässigen Arbeitsumgebungen verarbeiten. Keine Finanzierungs- oder Prüfungsentscheidung aus dem Namen ableiten.
 
 ## Angstappell
 
@@ -605,6 +621,14 @@ Ein Audit ist eine systematische Prüfung von Informationen, Prozessen, Daten od
 Ein Audit ist eine systematische Prüfung von Informationen, Prozessen, Daten oder Systemen. In der WÖk dient ein Audit dazu, Wirkungsdaten, Scorecards, Nachweise und Rückkopplungen auf Plausibilität, Vollständigkeit und Regelkonformität zu prüfen.
 
 In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
+
+## Audit-Trail
+
+Ein Audit-Trail ist eine nachvollziehbare Aufzeichnung von Ereignissen und Änderungen, mit der sich ein Vorgang rekonstruieren lässt.
+
+Er kann zeigen, wer wann welche Daten erfasst, geändert oder freigegeben hat und welche Version weitergegeben wurde. Dafür braucht es eine geeignete Protokollierung und nachvollziehbare Verknüpfungen. Ein Protokoll allein beweist nicht die sachliche Richtigkeit jeder Eingabe.
+
+Zeitpunkt, Rolle, Veränderung, Grund und betroffenen Stand festhalten, soweit für den Zweck nötig. Zugriffsschutz und Integrität des Protokolls beachten. Keine umfassende Überwachung ohne angemessene Grundlage.
 
 ## Aufmerksamkeit
 
@@ -1260,6 +1284,14 @@ BNE steht für Bruttonationaleinkommen und erfasst die Einkommen der Inländerin
 
 BNE steht für Bruttonationaleinkommen und erfasst die Einkommen der Inländerinnen und Inländer unabhängig vom Ort ihrer Entstehung.
 
+## Bonität
+
+Bonität bezeichnet die Beurteilung, inwieweit ein Schuldner voraussichtlich in der Lage und bereit ist, vereinbarte Verpflichtungen zu erfüllen.
+
+Die Beurteilung kann Zahlungsfähigkeit, wirtschaftliche Aussichten, bisheriges Verhalten und weitere relevante Informationen berücksichtigen. Sicherheiten beeinflussen die Risikostruktur, ersetzen aber nicht ohne Weiteres die Beurteilung der Rückzahlung. Eine Bonitätsaussage kann sich bei neuen Informationen ändern.
+
+Finanzierungsgegenstand, Schuldner und Beurteilungszeitpunkt trennen. Zwischen eigener Datendarstellung und Entscheidung der finanzierenden Institution unterscheiden. Keine Ratingverbesserung versprechen.
+
 ## Both-Sidesism
 
 Konflikte werden reflexhaft als zwei gleich legitime Seiten erzählt, auch wenn Fakten- oder Machtlage asymmetrisch ist.
@@ -1524,6 +1556,14 @@ Care-Ökonomie beschreibt Sorge-, Pflege-, Erziehungs-, Beziehungs- und Reproduk
 
 Care umfasst bezahlte und unbezahlte Arbeit, die Menschen versorgt, stabilisiert, begleitet, schützt und soziale Systeme reproduziert.
 
+## Cashflow
+
+Cashflow beschreibt Ein- und Auszahlungen beziehungsweise deren Saldo in einem bestimmten Zeitraum.
+
+Im Rechnungslegungskontext werden Zahlungsströme unter anderem nach betrieblicher Tätigkeit, Investitionen und Finanzierung unterschieden. Gewinn und Cashflow sind nicht identisch: Erträge können vor dem Zahlungseingang entstehen, und Abschreibungen sind nicht selbst Auszahlungen.
+
+Periode und Cashflow-Definition nennen. Free Cashflow, operativer Cashflow und für den Schuldendienst verfügbarer Cashflow dürfen nicht austauschbar verwendet werden.
+
 ## CBAM - CO2-Grenzausgleichssystem
 
 CBAM ist der EU-Mechanismus für einen CO2-Grenzausgleich auf bestimmte importierte Waren, um Carbon Leakage zu vermeiden und Dekarbonisierung auch außerhalb der EU anzureizen.
@@ -1646,6 +1686,14 @@ Civic Literacy beschreibt politisches, institutionelles und gesellschaftliches G
 
 Ohne Civic Literacy bleiben Rechte, Beteiligung und Kontrolle für viele Menschen schwer nutzbar.
 
+## Claim
+
+Ein Claim ist eine Aussage, deren Inhalt, Reichweite und Beleglage geprüft werden müssen.
+
+Ein Claim kann eine gemessene Eigenschaft, eine Prognose oder ein Werturteil enthalten. „Der Verbrauch beträgt zehn Einheiten“ unterscheidet sich von „Die Maßnahme spart zehn Einheiten“. Die zweite Aussage benötigt zusätzlich eine belastbare Vergleichsbasis.
+
+Den genauen Wortlaut vor der Quellensuche festhalten. Aussagearten trennen und Übertreibungen vermeiden. Breite Wörter wie „nachhaltig“ brauchen eine präzise Eingrenzung.
+
 ## Clean Industrial Deal
 
 Der Clean Industrial Deal ist ein EU-Plan für industrielle Wettbewerbsfähigkeit und Dekarbonisierung.
@@ -1735,6 +1783,14 @@ Ein Counterfactual beschreibt den plausiblen Vergleichsfall, was ohne eine betra
 Counterfactuals sind nötig, weil beobachtete Veränderungen auch durch andere Ursachen, Trends, externe Schocks oder parallele Maßnahmen entstehen können. Je nach Fall werden sie mit Kontrollgruppen, Vorher-Nachher-Vergleichen, Zeitreihen, Vergleichsregionen, Simulationen oder transparenten Gegenhypothesen angenähert.
 
 Ein Counterfactual ist häufig keine unmittelbar beobachtbare Tatsache, sondern eine methodisch begründete Vergleichsannahme. Seine Qualität und Unsicherheit müssen offenliegen.
+
+## Covenant
+
+Ein Covenant ist eine vertragliche Zusage oder Bedingung in einer Finanzierung, etwa zu Kennzahlen, Informationen oder zulässigen Handlungen.
+
+Finanzielle Covenants können die Einhaltung vereinbarter Kennzahlen betreffen. Andere Covenants regeln Informationspflichten oder bestimmte Handlungen. Maßgeblich ist der konkrete Vertrag mit seinen Definitionen, Prüfzeitpunkten und Folgen möglicher Verstöße.
+
+Wortlaut, Berechnung, Stichtag und Verantwortlichkeit dokumentieren. Keine universelle Mindestkennzahl erfinden. Mögliche Folgen eines Verstoßes oder Heilungsmöglichkeiten rechtlich durch Zuständige beurteilen lassen.
 
 ## Cradle to Cradle
 
@@ -1864,6 +1920,14 @@ In der Wirkungsökonomie sind Frühwarndaten nicht nur technische Daten. Sie sin
 
 Daten- und Frühwarnkooperation verbindet:
 
+## Datenherkunft
+
+Datenherkunft beschreibt, woher eine Information stammt und über welche Verarbeitungsschritte sie entstanden ist.
+
+Bei einer Kennzahl reicht der Name der letzten Excel-Datei selten aus. Zur Herkunft gehören Ausgangsdaten, Berechnung, Zusammenführung, Korrekturen und beteiligte Rollen. So wird nachvollziehbar, welche Änderungen am Eingang den veröffentlichten Wert beeinflusst haben.
+
+Originalquelle, Transformationsschritte, Faktoren, Versionen und Verantwortlichkeiten verknüpfen. Datenherkunft und kausalen Wirkpfad nicht gleichsetzen. „Evidence Lineage“ ist hier eine praktische Bezeichnung für die Herkunft von Nachweisen.
+
 ## Datenlücke
 
 Eine Datenlücke liegt vor, wenn relevante Informationen für Bewertung, Vergleich oder Steuerung fehlen.
@@ -1898,11 +1962,27 @@ Datenschutz schützt Menschen bei der Verarbeitung personenbezogener Daten durch
 
 Datenschutz ist mehr als technische Geheimhaltung. Er schützt Selbstbestimmung, Privatsphäre und andere Grundrechte vor unnötiger oder missbräuchlicher Datenverarbeitung. Er schließt sinnvolle Datennutzung nicht aus, verlangt aber, dass Zweck, Umfang, Risiko, Zugriff und Löschung nachvollziehbar und verhältnismäßig geregelt sind.
 
+## Datenstand
+
+Der Datenstand benennt den Zeitpunkt oder Zeitraum, auf den sich eine Angabe bezieht.
+
+Bezugszeitpunkt, Erhebungsdatum, Aktualisierung und Veröffentlichung können auseinanderliegen. Eine im September aktualisierte Datei kann unverändert Werte aus dem Vorjahr enthalten. Die Aktualität einer Aussage lässt sich daher nicht am Speicherdatum allein erkennen.
+
+Stichtag und Berichtsperiode unterscheiden. Zusätzlich Erhebungs-, Freigabe- und Änderungsdatum festhalten, soweit nötig. Keine tagesaktuelle Aussage aus einem Jahresmittel ableiten.
+
 ## Datenstandard / Standardisierung von Risikomanagement
 
 Ein Datenstandard legt fest, wie Daten definiert, erhoben, dokumentiert, ausgetauscht und geprüft werden, damit Risikomanagement vergleichbar und nachvollziehbar wird.
 
 Ein Datenstandard legt fest, wie Daten definiert, erhoben, dokumentiert, ausgetauscht und geprüft werden, damit Risikomanagement vergleichbar und nachvollziehbar wird.
+
+## Datenverantwortung
+
+Datenverantwortung bezeichnet die organisatorisch zugewiesene Rechenschaft für Bedeutung, Qualität, Verwendung und Pflege bestimmter Daten.
+
+Ein Data Owner ist eine verantwortliche Rolle, kein automatischer juristischer Eigentümer von Daten. Die tägliche Pflege kann bei anderen Personen liegen. Entscheidend ist, wer Definitionen bestätigt, Qualitätsprobleme priorisiert und zulässige Verwendungen freigibt.
+
+Verantwortung von Pflege, technischer Speicherung und rechtlicher Datenschutzverantwortung unterscheiden. Rollen für Änderungen, Freigaben und Eskalation verbindlich festlegen.
 
 ## DC-Laden
 
@@ -2470,6 +2550,14 @@ DSGVO steht für Datenschutz-Grundverordnung. Sie schützt personenbezogene Date
 
 In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
 
+## Due Diligence
+
+Due Diligence bezeichnet eine zweckbezogene sorgfältige Prüfung; in verantwortlicher Unternehmensführung auch einen fortlaufenden Prozess zum Umgang mit nachteiligen Auswirkungen.
+
+Bei Transaktionen können finanzielle, technische oder rechtliche Prüfungen gemeint sein. Im OECD-Kontext geht es um Erkennen, Vermeiden, Mindern und Nachverfolgen nachteiliger Auswirkungen auf Menschen und Umwelt. Diese Anwendungen teilen die Sorgfalt, sind aber nicht deckungsgleich.
+
+Prüfauftrag, Kriterien, Tiefe und verantwortliche Fachdisziplin benennen. Fortlaufende Sorgfalt nicht auf einen einmaligen Fragebogen reduzieren. Informationsvorbereitung nicht als abgeschlossene Fachprüfung ausgeben.
+
 ## Dunkelflaute
 
 Dunkelflaute bezeichnet Phasen mit geringer Solar- und Windstromerzeugung.
@@ -2619,6 +2707,14 @@ Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Liefe
 Die eigene Gruppe wird homogener wahrgenommen, als sie tatsächlich ist.
 
 Die Eigengruppen-Homogenitätsverzerrung reduziert innere Vielfalt und erzeugt Druck zur Loyalität. Sie kann Differenzen innerhalb einer Bewegung, Partei oder Organisation unsichtbar machen und pluralistische Debatte schwächen.
+
+## Eigenkapital
+
+Eigenkapital ist im Rechnungslegungskontext der verbleibende Anteil am Vermögen nach Abzug der Schulden beziehungsweise Verpflichtungen.
+
+Es kann unter anderem durch Einlagen und einbehaltene Ergebnisse entstehen. Eigenkapital ist keine separate Kasse. Seine bilanzielle Höhe, sein Marktwert und die kurzfristig verfügbaren Zahlungsmittel sind unterschiedliche Größen. Spezielle regulatorische Eigenmittelbegriffe haben zusätzliche Regeln.
+
+Rechnungslegungsrahmen, Konsolidierung und Bewertungsbasis nennen. Unternehmensbezogenes Eigenkapital nicht ungeprüft mit aufsichtsrechtlichem Kapital einer Bank oder Versicherung gleichsetzen.
 
 ## Eigentum mit Wirkungspflicht
 
@@ -3356,6 +3452,14 @@ Eine verhältnismäßige Evaluation entwerfen, die Relevanz, Kohärenz, Wirksamk
 
 D12 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Evaluationsdesign mit Fragen, Kriterien, Methodenmix, Vergleichslogik, Beteiligung, Zeitplan und Nutzung.
 
+## Evidenz
+
+Evidenz ist eine nachvollziehbare Grundlage, mit der eine Aussage gestützt, eingeschränkt oder widerlegt werden kann.
+
+Eine Information wird nicht dadurch belastbar, dass sie in einer Tabelle steht. Für ihre Belegkraft zählen Herkunft, Erhebungsmethode, Geltungsbereich und Unsicherheit. Je nach Frage können Messdaten, Dokumente, Beobachtungen und Forschungsergebnisse unterschiedlich viel beitragen. Evidenz bedeutet deshalb keine absolute Gewissheit.
+
+Zur Aussage Quelle, Bezugszeitraum, Systemgrenze und Einschränkungen angeben. Widersprechende Befunde nicht ausblenden. Datenqualität, Kausalität und normative Bewertung getrennt beurteilen.
+
 ## Evidenz- und Annahmenregister
 
 Wissen, Schätzungen, normative Setzungen, Hypothesen und Unsicherheiten getrennt dokumentieren und über den Prozess fortschreiben.
@@ -3363,6 +3467,38 @@ Wissen, Schätzungen, normative Setzungen, Hypothesen und Unsicherheiten getrenn
 Wissen, Schätzungen, normative Setzungen, Hypothesen und Unsicherheiten getrennt dokumentieren und über den Prozess fortschreiben.
 
 A06 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Versioniertes Register mit Aussage, Typ, Evidenzstufe E0-E5, Quelle, Unsicherheit, Verantwortlichen und Prüfdatum.
+
+## Evidenzbasierung
+
+Evidenzbasierung bedeutet, Aussagen und Entscheidungen auf nachvollziehbare Befunde zu stützen und ihre Unsicherheit offenzulegen.
+
+Daten und Forschung helfen, Möglichkeiten und Folgen zu beurteilen. Sie treffen jedoch nicht automatisch die Entscheidung. Ziele, Verteilung, Rechte und politische Wertungen bleiben eigenständige Fragen. Im politischen Kontext verdeutlicht „evidenzinformiert“, dass Befunde Entscheidungen informieren, aber nicht vollständig bestimmen.
+
+Fragestellung vor der Belegsuche klären. Quellenqualität und Gegenbefunde prüfen. Beobachtung, Prognose und Bewertung sprachlich trennen. Die Begriffe „evidence-based“ und „evidence-informed“ nicht in jedem Fachgebiet unterschiedslos verwenden.
+
+## Evidenzbasis
+
+Eine Evidenzbasis ist ein geordneter Bestand von Aussagen, Daten und zugehörigen Nachweisen für bestimmte Fragestellungen.
+
+Gemeint ist nicht nur ein Speicherort für Dateien. Aussagen werden mit ihren Belegen, Datenständen und fachlichen Verantwortlichen verbunden. Dadurch lässt sich eine Antwort bei Rückfragen rekonstruieren. Die Evidenzbasis kann verteilt in vorhandenen Systemen liegen, sofern ihre Verweise und Regeln zusammenpassen.
+
+Zuerst Verwendungszweck und Systemgrenzen festlegen. Freigaben, Aktualitätsregeln, Zugriff und Widersprüche dokumentieren. Wiederverwendung nur bei passender Definition und Bezugsperiode.
+
+## Evidenzgrad
+
+Der Evidenzgrad beschreibt nach einer offengelegten Methodik, wie belastbar die Belege für eine bestimmte Aussage sind.
+
+Nicht alle Nachweise tragen gleich weit. Eine aktuelle Primärquelle kann eine Mengenangabe gut belegen, aber noch nichts über deren Ursache sagen. Die Belegbewertung muss deshalb zur Frage passen. Herkunft, Aktualität, Messmethode und Unsicherheit sind unterschiedliche Prüfdimensionen.
+
+Bewertungskriterien und Grenzen des Grades nennen. Die A-bis-D-Einstufung eines Evidenzmanagement-Services ist eine interne Arbeitskonvention, kein allgemeiner wissenschaftlicher Evidenzstandard. Sie ersetzt die führende WÖk-Systematik nicht.
+
+## Evidenzlücke
+
+Eine Evidenzlücke besteht, wenn eine relevante Aussage nicht ausreichend, aktuell oder widerspruchsfrei belegt werden kann.
+
+Eine Lücke kann eine fehlende Information, eine unklare Definition oder widersprechende Datenstände betreffen. Sie sagt zunächst etwas über die Beleglage, nicht darüber, ob der tatsächliche Zustand gut oder schlecht ist. Auch ein vorhandener Wert kann für die konkrete Frage ungeeignet sein.
+
+Für jede Lücke Aussage, Relevanz, zuständige Rolle und Klärungsfrist erfassen. Offene Punkte sichtbar halten. Zulässige Schätzungen begründen und als solche kennzeichnen.
 
 ## Evolutionstheorie / evolutorische Ökonomik
 
@@ -3654,6 +3790,14 @@ Financial Materiality bezeichnet Nachhaltigkeitsthemen, die für Kosten, Chancen
 
 Financial Materiality ist die Outside-In-Perspektive der doppelten Wesentlichkeit: Sie fragt, wie ökologische, soziale, politische und wirtschaftliche Entwicklungen auf Unternehmen zurückwirken.
 
+## Finanzierungsrelevanz
+
+Finanzierungsrelevanz bezeichnet den begründeten Bezug einer Information zur Beurteilung eines Finanzierungsvorhabens oder einer bestehenden Finanzierung.
+
+Eine Information kann die Rückzahlungsfähigkeit, den Kapitalbedarf, die Risikoeinschätzung oder die Nachvollziehbarkeit eines Vorhabens betreffen. Nicht jeder Nachhaltigkeitsdatenpunkt hat bei jeder Finanzierung dieselbe Bedeutung. Der Bezug muss für die konkrete Fragestellung erklärt werden.
+
+Betroffene Finanzgröße, plausiblen Übertragungsweg, Zeitraum und nachfragenden Adressaten festhalten. Datenbedarf des Kapitalgebers nicht als pauschale gesetzliche Lieferpflicht jedes Unternehmens darstellen.
+
 ## Finanzmarktkapitalismus
 
 Finanzmarktkapitalismus beschreibt eine Wirtschaftsform, in der Finanzmärkte, Renditeerwartungen, Shareholder Value und Kapitalallokation dominieren.
@@ -3881,6 +4025,14 @@ Fremdenfeindlichkeit bezeichnet ablehnende, ausgrenzende oder feindselige Haltun
 Fremdenfeindlichkeit bezeichnet ablehnende, ausgrenzende oder feindselige Haltungen gegenüber Personen oder Gruppen, die als „fremd“ markiert werden. Diese Fremdheit ist keine objektive Eigenschaft, sondern eine soziale Zuschreibung.
 
 Die WÖk nutzt den Begriff vorsichtig, weil er Wirkung sichtbar machen kann: Ausschluss aus Wohnraum, Arbeit, Bildung, öffentlichem Raum, politischer Teilhabe oder Sicherheit. Entscheidend ist nicht, ob jemand „wirklich fremd“ ist, sondern wer durch welche Zuschreibung belastet wird.
+
+## Fremdkapital und Debt
+
+Fremdkapital bezeichnet aus Unternehmenssicht Kapital beziehungsweise Verpflichtungen gegenüber Gläubigern; der englische Begriff Debt muss kontextbezogen abgegrenzt werden.
+
+In der Unternehmensfinanzierung meint Debt häufig verzinsliche Finanzschulden. In der Statistik kann die Definition auch weitere Schuldinstrumente umfassen. Fremdkapital ist deshalb nicht in jeder Kennzahl deckungsgleich mit einem eng gefassten Debt-Begriff. Auch innerhalb der Bilanz sind einzelne Verpflichtungsarten zu unterscheiden.
+
+Vor Berechnungen klären, welche Verbindlichkeiten enthalten sind: etwa Bankkredite, Anleihen, Leasing oder Lieferantenverbindlichkeiten. Brutto- und Nettoschuld sowie Bilanz- und Vertragsdefinition auseinanderhalten.
 
 ## Frequenzhaltung
 
@@ -5128,7 +5280,9 @@ N06 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefit
 
 ## Impact-Controlling
 
-Impact-Controlling plant, misst, bewertet und korrigiert Wirkung mit KII, Scorecards, Datenqualität, NWI und T-SROI.
+Impact-Controlling prüft, was eine Maßnahme tatsächlich verändert, wodurch die Veränderung entsteht und wie die Entscheidung danach verbessert werden kann. Es verbindet Planung, Messung, Bewertung und Rückkopplung.
+
+Impact-Controlling prüft, was eine Maßnahme tatsächlich verändert, wodurch die Veränderung entsteht und wie die Entscheidung danach verbessert werden kann. Es verbindet Planung, Messung, Bewertung und Rückkopplung.
 
 Impact-Controlling ist die operative Form des Wirkungscontrollings. Es übersetzt überprüfte Wirkungsdaten in Entscheidungen über Investitionen, Produkte, Beschaffung, Programme und Portfolios. Es misst nicht nur Aktivität oder Output, sondern die tatsächliche Veränderung von Zuständen und führt die Ergebnisse in Steuerung und Lernen zurück.
 
@@ -5673,6 +5827,14 @@ Verstärkende und ausgleichende Rückkopplungen, Verzögerungen und nichtlineare
 Verstärkende und ausgleichende Rückkopplungen, Verzögerungen und nichtlineare Dynamiken sichtbar machen.
 
 B04 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Causal Loop Diagram mit Variablen, Wirkungsrichtung, Polarität, Schleifen und Zeitverzögerungen.
+
+## Kennzahl
+
+Eine Kennzahl ist eine nach einer festgelegten Definition ermittelte quantitative Größe zur Beschreibung oder Beurteilung eines Sachverhalts.
+
+Die Zahl wird erst durch Einheit, Zeitraum, Bezugsmenge und Berechnung verständlich. Sie kann eine Menge, einen Anteil, einen Aufwand oder einen Zustand beschreiben. Welche Entscheidung sie unterstützt, ist eine weitere Frage.
+
+Definition, Zähler, Nenner, Einheit, Datenquelle und Stichtag angeben. Vergleichbare Namen bedeuten nicht automatisch vergleichbare Zahlen. KPI und KII nach der kanonischen Methodik getrennt halten.
 
 ## Kernenergie
 
@@ -6784,6 +6946,14 @@ Linksextremismus bezeichnet politische Strömungen, die demokratische Rechtsstaa
 
 Wirkungsökonomisch nach konkreten Angriffen auf Grundrechte, Rechtsstaat, Pluralismus, Eigentumsordnung und demokratische Verfahren prüfen.
 
+## Liquidität
+
+Unternehmensliquidität ist die Fähigkeit, fällige Zahlungsverpflichtungen rechtzeitig erfüllen zu können.
+
+Dafür zählen verfügbare Zahlungsmittel, nutzbare Finanzierungsspielräume und der zeitliche Verlauf von Ein- und Auszahlungen. Im Kapitalmarkt hat „Liquidität“ zusätzlich die Bedeutung, wie leicht ein Vermögenswert ohne große Preiswirkung gehandelt werden kann.
+
+Die gemeinte Liquiditätsart benennen. Verfügbarkeit und Bedingungen von Kreditlinien prüfen. Ein Jahresüberschuss ersetzt keine Zahlungsplanung nach Fälligkeiten.
+
 ## Lithium-Ionen-Batterie
 
 Lithium-Ionen-Batterien sind wiederaufladbare Batterien, bei denen Lithium-Ionen zwischen den Elektroden wandern.
@@ -6939,6 +7109,14 @@ Majoritarismus beschreibt eine Verkürzung von Demokratie auf bloße Mehrheitsma
 Majoritarismus beschreibt eine Verkürzung von Demokratie auf bloße Mehrheitsmacht.
 
 Majoritarismus ist ein demokratisches Wirkungsrisiko. Wenn Mehrheit ohne Minderheitenschutz, Rechtsstaat und Gewaltenteilung gedacht wird, kann Demokratie in autoritäre Herrschaft kippen.
+
+## Managed Service
+
+Ein Managed Service ist eine fortlaufend erbrachte Dienstleistung mit abgegrenztem Leistungsumfang, Verantwortlichkeiten und vereinbarten Servicequalitäten.
+
+Anders als eine einmalige Beratung umfasst das Modell den laufenden Betrieb einer bestimmten Funktion. Der Begriff ist besonders in der IT etabliert und wird auch für andere spezialisierte Tätigkeiten verwendet. Ein monatlicher Preis allein macht eine Leistung noch nicht zum Managed Service.
+
+Umfang, Kapazität, Reaktionszeiten, Ausnahmen, Zuständigkeiten und Exit festlegen. Laufende Leistung darf nicht unbegrenzte Verfügbarkeit suggerieren. Der Kunde behält Zugang zu seinen Daten und nachvollziehbaren Ergebnissen.
 
 ## Management
 
@@ -7552,6 +7730,22 @@ Der Nachtwächterstaat ist ein Minimalstaat, der sich auf Schutz von Eigentum, S
 Der Nachtwächterstaat ist ein Minimalstaat, der sich auf Schutz von Eigentum, Sicherheit und Rechtsordnung beschränkt.
 
 Als Grenzmodell hilfreich, um zu klären, welche Wirkungsprobleme reine Schutzfunktionen nicht lösen.
+
+## Nachweiswiederverwendung
+
+Nachweiswiederverwendung ist die erneute Verwendung eines belegten Informationsbausteins für einen weiteren, dazu passenden Zweck.
+
+Nicht für jede Anfrage muss dieselbe Quelle neu erhoben werden. Wiederverwendung gelingt, wenn Definition, Geltungsbereich, Datenstand und Nutzungsbefugnis zur neuen Anfrage passen. Die ursprünglichen Einschränkungen reisen mit der Information mit.
+
+Vor Wiederverwendung Aktualität und Passung prüfen. Quelle und Version erhalten. Den allgemeinen Suchbegriff „Reuse“ nicht ungeprüft auf physische Wiederverwendung in der Kreislaufwirtschaft umlenken.
+
+## Nachweiszuordnung
+
+Nachweiszuordnung verbindet eine externe oder interne Anforderung mit den dazu passenden Daten, Aussagen und Quellen.
+
+Beim Mapping wird geprüft, ob ein vorhandener Datenbaustein die gestellte Frage tatsächlich beantwortet. Gleiche Wörter reichen nicht: Zeitraum, Unternehmensgrenze, Einheit und Nenner müssen passen. Eine Antwort kann mehrere Quellen benötigen, eine Quelle mehrere Antworten unterstützen.
+
+Zuordnung samt Definition und möglichen Umrechnungen dokumentieren. Änderungen im Fragebogen oder Datenmodell erneut prüfen. Mapping nicht als automatische Gleichwertigkeit von Standards darstellen.
 
 ## Nahbereichsbias
 
@@ -9391,6 +9585,14 @@ Prosumer verbrauchen und erzeugen Energie.
 
 Relevant für PV, Eigenverbrauch, Netzentgelte, Dezentralisierung, Teilhabe und Verteilungswirkung.
 
+## Proxy
+
+Ein Proxy ist eine ersatzweise verwendete Größe, die einen nicht direkt beobachteten Sachverhalt näherungsweise abbilden soll.
+
+Ein Branchenmittel oder ein indirekter Indikator kann eine Informationslücke teilweise überbrücken. Er ist aber nicht der direkt gemessene Wert des konkreten Unternehmens. Ob die Näherung brauchbar ist, hängt von Zusammenhang, Datenbasis und Verwendungszweck ab.
+
+Grund für den Ersatz, Herkunft, angenommene Beziehung und Unsicherheit dokumentieren. Eine spätere Überprüfung mit direkteren Daten vorsehen. Schätzung und Messung getrennt kennzeichnen.
+
 ## Prozess- und Systemintegration
 
 Wirkungsentscheidungen, Daten, Rollen und Kontrollen in bestehende Kernprozesse und IT-Systeme einbauen, ohne Parallelbürokratie zu schaffen.
@@ -10403,6 +10605,14 @@ RINO ist ein abwertendes Etikett für Republikanerinnen und Republikaner, die al
 
 RINO kann parteiinterne Differenzen sichtbar machen, wirkt aber häufig als Disziplinierungsformel. Wer als RINO markiert wird, muss nicht mehr argumentativ widerlegt werden, sondern erscheint als unecht, illoyal oder verräterisch. Damit verschiebt sich die Debatte von Sachfragen auf Reinheit und Zugehörigkeit.
 
+## Risiko
+
+Risiko betrifft unsichere Entwicklungen und ihre möglichen Auswirkungen auf Ziele, Funktionen oder betroffene Zustände.
+
+Im Kredit- und ESG-Risikokontext stehen häufig nachteilige Folgen im Vordergrund. Andere Risikobegriffe erfassen Unsicherheit umfassender. Wahrscheinlichkeit, Ausmaß, Zeithorizont und Verteilung sind zu unterscheiden. Eine Gefahr allein beschreibt noch nicht die konkrete Betroffenheit eines Systems.
+
+Die im jeweiligen Kontext gültige Definition verwenden. Gefahr, Exposition, Verwundbarkeit und mögliche Folge benennen. Wahrscheinlichkeit mal Schaden ist nicht für jede tiefe Unsicherheit eine ausreichende Beurteilung.
+
 ## Risiko- und Resilienzregister
 
 Ein Risiko- und Resilienzregister ordnet zentrale Gefährdungsfelder und Schutzfähigkeiten eines Systems so, dass Wirkung, Frühwarnsignale und Rückkopplungen sichtbar werden.
@@ -10414,6 +10624,14 @@ Das Risiko- und Resilienzregister ist eine wirkungsökonomische Lesart der SDGs 
 Risikomanagement ist der fortlaufende Prozess, Risiken zu erkennen, zu bewerten, zu behandeln, zu überwachen und transparent zu kommunizieren.
 
 Risikomanagement ist der fortlaufende Prozess, Risiken zu erkennen, zu bewerten, zu behandeln, zu überwachen und transparent zu kommunizieren.
+
+## Risikominderung / Risk Mitigation
+
+Mitigation bedeutet im Risikokontext die Minderung eines Risikos oder seiner Folgen; im Klimakontext bezeichnet es insbesondere Klimaschutz.
+
+Die Bedeutung hängt vom Fachgebiet ab. Im Risikomanagement können Maßnahmen Eintrittsmöglichkeiten oder Schadensfolgen reduzieren. In der Klimapolitik meint Mitigation die Verringerung von Treibhausgasquellen beziehungsweise die Stärkung von Senken. Anpassung an Klimafolgen wird als Adaptation unterschieden.
+
+Immer sagen, welches Risiko oder welche Belastung vermindert werden soll. Maßnahme, Restbelastung und neue Abhängigkeiten dokumentieren. Keine vollständige Beseitigung aus einer Minderung ableiten.
 
 ## Risikoregister
 
@@ -10726,6 +10944,14 @@ Die Schuldenbremse begrenzt staatliche Neuverschuldung nach fiskalischen Regeln.
 Die Schuldenbremse begrenzt staatliche Neuverschuldung nach fiskalischen Regeln.
 
 Wirkungsökonomisch nicht nur fiskalisch bewerten, sondern nach Wirkung auf Zukunftsinvestitionen, Resilienz, Infrastruktur, Generationengerechtigkeit und Reparaturkosten.
+
+## Schuldendienstdeckungsgrad (DSCR)
+
+Der Schuldendienstdeckungsgrad setzt die für den Schuldendienst verfügbare finanzielle Größe ins Verhältnis zum fälligen Schuldendienst derselben Periode.
+
+In der Projektfinanzierung wird häufig der verfügbare Cashflow durch Zins und Tilgung geteilt. Welche Zahlungsbestandteile einbezogen werden, bestimmt die konkrete Definition. Ein Verhältnis von 1 bedeutet rechnerische Deckung nach dieser Definition, aber keine allgemeine Risikofreiheit.
+
+Zähler, Nenner, Zeitraum, Ist- oder Planbezug sowie Vertragsdefinition nennen. EBITDA nicht pauschal als verfügbaren Cashflow einsetzen. Bei einem Nenner von null ist die einfache Quotientenform nicht anwendbar.
 
 ## Schuldenmythos
 
@@ -11064,6 +11290,14 @@ Sicherheitsresilienz ist die Fähigkeit einer Gesellschaft, Bedrohungen zu verhi
 Eine sichtbare Rechnung umfasst Kosten, die direkt als Preis, Abgabe oder Steuer sichtbar werden.
 
 Sichtbare Rechnung bezeichnet Kosten, die unmittelbar als Preis, Abgabe, Steuer oder Zahlung auftreten. In Klimadebatten wird oft die sichtbare Rechnung des CO2-Preises mit einer scheinbaren Nullrechnung fossiler Folgekosten verwechselt.
+
+## Single Source of Truth
+
+Single Source of Truth bezeichnet eine organisatorisch festgelegte, maßgebliche Quelle oder Zuordnung für eine bestimmte Information.
+
+Die „eine Quelle“ muss keine einzige physische Datenbank sein. Verschiedene Fachsysteme können für unterschiedliche Daten führend bleiben. Wesentlich ist, dass Zuständigkeit, Definition und gültige Fassung eindeutig sind und widersprechende Kopien nicht unkontrolliert nebeneinander verwendet werden.
+
+Festlegen, welches System für welches Merkmal führend ist. Änderungen, Ausnahmen und Korrekturen nachvollziehbar regeln. Quelldaten bei Exporten und Zusammenführungen nicht aus dem Blick verlieren.
 
 ## Skandinavisches Modell / Nordic Model
 
@@ -12076,6 +12310,14 @@ Systemverzerrender Lobbyismus beeinflusst politische Entscheidungen durch Intran
 
 Wirkungsrisiko für Demokratie, Vertrauen, Rechtsstaatlichkeit und faire Marktregeln.
 
+## Szenario
+
+Ein Szenario beschreibt eine in sich nachvollziehbare mögliche Entwicklung unter offengelegten Annahmen.
+
+Szenarien helfen, Entscheidungen bei unsicherer Zukunft zu prüfen. Sie sind keine garantierten Vorhersagen. Mehrere plausible Verläufe können unterschiedliche Belastungen, Chancen und Anpassungsoptionen sichtbar machen.
+
+Ausgangslage, Annahmen, Zeithorizont und betroffene Größen festhalten. Szenario und Eintrittswahrscheinlichkeit trennen. Einzelfaktor-Sensitivität ist nicht automatisch eine vollständige Szenarioanalyse.
+
 ## T-SROI - Transformational Social Return on Investment
 
 T-SROI ist ein modellhaftes Euro-zu-Euro-Verhältnis: diskontierter, kausal zugerechneter direkter und transformativ belegter Nettonutzen je diskontiertem Ressourceneuro.
@@ -12556,6 +12798,14 @@ Die WÖk fragt, ob Ziele, Investitionen, Zeitpfade, Daten, Governance und sozial
 Transition Risk beschreibt Risiken aus dem Übergang zu einer klimaneutralen oder nachhaltigeren Wirtschaft.
 
 Die WÖk nutzt Transition Risk, um Kapitalwirkung, Stranded Assets, Regulierung, Technologiepfade und soziale Abfederung zusammenzudenken.
+
+## Transmissionskanal
+
+Ein Transmissionskanal beschreibt den Weg, über den eine Veränderung auf andere Größen oder Risiken übertragen wird.
+
+Im Finanzkontext wird die Verbindung zwischen einem Einflussfaktor und einer finanziellen Größe beschrieben. Ein Strompreisanstieg kann über Beschaffung und Tarifregeln auf Betriebskosten, Ergebnis und Liquidität wirken. Ob und wie stark das geschieht, hängt von Verträgen, Weitergabeoptionen und Zeitverzögerungen ab.
+
+Auslöser, Zwischenschritte, betroffene Finanzgröße, Zeithorizont und Gegenmaßnahmen nennen. Die Kette nicht als automatische oder immer gleich starke Folge darstellen.
 
 ## Transmutation
 
@@ -13663,6 +13913,14 @@ Ein wesentlicher Beitrag liegt vor, wenn eine Tätigkeit zu einem Taxonomie-Umwe
 
 Die WÖk liest den wesentlichen Beitrag als Teilinformation und prüft, ob zugleich Schäden, Nebenwirkungen und Rückkopplungen berücksichtigt sind.
 
+## Wesentlichkeit
+
+Wesentlichkeit beschreibt, ob ein Sachverhalt für die maßgebliche Beurteilung, Entscheidung oder Wirkungsperspektive hinreichend bedeutsam ist.
+
+Der Maßstab muss genannt werden. Finanzielle Wesentlichkeit fragt nach entscheidungsrelevanten finanziellen Informationen. Wirkungswesentlichkeit betrifft Auswirkungen auf Menschen und Umwelt. Ein Sachverhalt kann aus einer Perspektive wesentlich sein und aus einer anderen anders gewichtet werden.
+
+Perspektive, Systemgrenze, Zeitraum und Kriterien offenlegen. Wesentlichkeit nicht mit bloßer Beliebtheit eines Themas verwechseln. Eine gesetzliche Berichtspflicht folgt nicht automatisch aus jeder internen Relevanzentscheidung.
+
 ## Wettbewerb als Suchverfahren
 
 Wettbewerb als Suchverfahren beschreibt Märkte als dezentrale Entdeckungsprozesse: Akteure testen Lösungen, Informationen werden sichtbar, bessere Angebote können sich durchsetzen.
@@ -14599,9 +14857,9 @@ Die Bezeichnung ist kein staatlich verliehener akademischer Grad, keine Berufs- 
 
 ## Wirkungsökonomie
 
-Die Wirkungsökonomie ist ein Ordnungsmodell, das Wirtschaft, Staat, Kapital, Medien und gesellschaftliche Entscheidungen nach ihrer positiven Netto-Wirkung für Mensch, Planet und Demokratie ausrichtet. Kapital bleibt Werkzeug, Wirkung wird Kompass.
+Die Wirkungsökonomie ist ein umfassendes Wirtschafts- und Gesellschaftsmodell. Es richtet wirtschaftliche, staatliche und gesellschaftliche Entscheidungen an ihren tatsächlichen Folgen für Menschen, Umwelt und Demokratie aus. Angestrebt wird positive Netto-Wirkung.
 
-Die Wirkungsökonomie ist ein Ordnungsmodell, das Wirtschaft, Staat, Kapital, Medien und gesellschaftliche Entscheidungen nach ihrer positiven Netto-Wirkung für Mensch, Planet und Demokratie ausrichtet. Kapital bleibt Werkzeug, Wirkung wird Kompass.
+Die Wirkungsökonomie ist ein umfassendes Wirtschafts- und Gesellschaftsmodell. Es richtet wirtschaftliche, staatliche und gesellschaftliche Entscheidungen an ihren tatsächlichen Folgen für Menschen, Umwelt und Demokratie aus. Angestrebt wird positive Netto-Wirkung.
 
 In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
 

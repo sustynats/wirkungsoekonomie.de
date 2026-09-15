@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T11:46:46.689Z",
+  "generatedAt": "2026-09-15T07:24:12.058Z",
   "links": {
     "bundeshaushaltsordnung-paragraf-7": {
       "label": "§ 7 Bundeshaushaltsordnung (BHO)",
@@ -123,6 +123,32 @@
         "recycling",
         "lineare-wirtschaft",
         "zero-waste"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "abhaengigkeit": {
+      "label": "Abhängigkeit",
+      "slug": "abhaengigkeit",
+      "url": "/begriffe/abhaengigkeit/",
+      "hoverDefinition": "Eine Abhängigkeit liegt vor, wenn eine Funktion oder ein Ergebnis auf bestimmte Ressourcen, Akteure, Infrastrukturen oder Bedingungen angewiesen ist.",
+      "shortDefinition": "Eine Abhängigkeit liegt vor, wenn eine Funktion oder ein Ergebnis auf bestimmte Ressourcen, Akteure, Infrastrukturen oder Bedingungen angewiesen ist.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "synonyms": [
+        "Abhängigkeit",
+        "Dependency",
+        "Dependencies"
+      ],
+      "relatedTerms": [
+        "lock-in-pfadabhaengigkeit",
+        "resilienz",
+        "transmissionskanal",
+        "risiko",
+        "interdependenz",
+        "interdependenz-und-abhaengigkeitsmatrix"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -1124,6 +1150,30 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "anfragenkoordination": {
+      "label": "Anfragenkoordination",
+      "slug": "anfragenkoordination",
+      "url": "/begriffe/anfragenkoordination/",
+      "hoverDefinition": "Anfragenkoordination ist eine vereinbarte Funktion, die Informationsanfragen aufnimmt, fachlich zuordnet und bis zur freigegebenen Antwort verfolgt.",
+      "shortDefinition": "Anfragenkoordination ist eine vereinbarte Funktion, die Informationsanfragen aufnimmt, fachlich zuordnet und bis zur freigegebenen Antwort verfolgt.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Anfragenkoordination",
+        "Response Desk",
+        "Evidence Response Desk",
+        "Antwortkoordination"
+      ],
+      "relatedTerms": [
+        "datenverantwortung",
+        "nachweiszuordnung",
+        "managed-service"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "angstappell": {
       "label": "Angstappell",
       "slug": "angstappell",
@@ -1966,7 +2016,11 @@
       "synonyms": [
         "Assurance",
         "Sustainability Assurance",
-        "Prüfung"
+        "Prüfung",
+        "Prüfungssicherheit",
+        "Assurance Engagement",
+        "Prüfung mit begrenzter Sicherheit",
+        "Prüfung mit hinreichender Sicherheit"
       ],
       "relatedTerms": [
         "limited-assurance",
@@ -1974,7 +2028,10 @@
         "datenqualitaet",
         "csrd",
         "qualitaetssicherung",
-        "wirkungscontrolling"
+        "wirkungscontrolling",
+        "evidenzgrad",
+        "due-diligence",
+        "audit-trail"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -2195,6 +2252,33 @@
         "agenda-2030",
         "sdg-plus",
         "wirkungsoekonomie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "audit-trail": {
+      "label": "Audit-Trail",
+      "slug": "audit-trail",
+      "url": "/begriffe/audit-trail/",
+      "hoverDefinition": "Ein Audit-Trail ist eine nachvollziehbare Aufzeichnung von Ereignissen und Änderungen, mit der sich ein Vorgang rekonstruieren lässt.",
+      "shortDefinition": "Ein Audit-Trail ist eine nachvollziehbare Aufzeichnung von Ereignissen und Änderungen, mit der sich ein Vorgang rekonstruieren lässt.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Audit-Trail",
+        "Audit Trail",
+        "Prüfpfad",
+        "Änderungsprotokoll"
+      ],
+      "relatedTerms": [
+        "datenherkunft",
+        "datenstand",
+        "assurance",
+        "evidenzbasis",
+        "datenverantwortung",
+        "single-source-of-truth"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -2949,14 +3033,23 @@
         "Baseline",
         "Ausgangswert",
         "Ausgangszustand",
-        "Referenzwert vor Intervention"
+        "Referenzwert vor Intervention",
+        "Ausgangslage",
+        "Basislinie"
       ],
       "relatedTerms": [
         "wirkungsanalyse",
         "wirkungsnachweis",
         "counterfactual",
         "attributionsforschung",
-        "datenqualitaet"
+        "datenqualitaet",
+        "wirkung",
+        "kennzahl",
+        "szenario",
+        "evidenzbasierung",
+        "claim",
+        "datenstand",
+        "proxy"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -4657,6 +4750,29 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "bonitaet": {
+      "label": "Bonität",
+      "slug": "bonitaet",
+      "url": "/begriffe/bonitaet/",
+      "hoverDefinition": "Bonität bezeichnet die Beurteilung, inwieweit ein Schuldner voraussichtlich in der Lage und bereit ist, vereinbarte Verpflichtungen zu erfüllen.",
+      "shortDefinition": "Bonität bezeichnet die Beurteilung, inwieweit ein Schuldner voraussichtlich in der Lage und bereit ist, vereinbarte Verpflichtungen zu erfüllen.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "synonyms": [
+        "Bonität",
+        "Creditworthiness",
+        "Kreditwürdigkeit"
+      ],
+      "relatedTerms": [
+        "liquiditaet",
+        "dscr",
+        "finanzierungsrelevanz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "both-sidesism": {
       "label": "Both-Sidesism",
       "slug": "both-sidesism",
@@ -5367,7 +5483,9 @@
         "kapitalrendite",
         "kapitalwirkung",
         "t-sroi",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "cashflow",
+        "wirkungspotenzial"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -5557,6 +5675,33 @@
         "gender-budgeting",
         "service-ngo",
         "arbeiten-arendt"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "cashflow": {
+      "label": "Cashflow",
+      "slug": "cashflow",
+      "url": "/begriffe/cashflow/",
+      "hoverDefinition": "Cashflow beschreibt Ein- und Auszahlungen beziehungsweise deren Saldo in einem bestimmten Zeitraum.",
+      "shortDefinition": "Cashflow beschreibt Ein- und Auszahlungen beziehungsweise deren Saldo in einem bestimmten Zeitraum.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "synonyms": [
+        "Cashflow",
+        "Cash Flow",
+        "Cash Flows",
+        "Zahlungsstrom"
+      ],
+      "relatedTerms": [
+        "liquiditaet",
+        "capex",
+        "opex",
+        "dscr",
+        "transmissionskanal",
+        "finanzierungsrelevanz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -5993,6 +6138,30 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "claim": {
+      "label": "Claim",
+      "slug": "claim",
+      "url": "/begriffe/claim/",
+      "hoverDefinition": "Ein Claim ist eine Aussage, deren Inhalt, Reichweite und Beleglage geprüft werden müssen.",
+      "shortDefinition": "Ein Claim ist eine Aussage, deren Inhalt, Reichweite und Beleglage geprüft werden müssen.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Claim",
+        "Aussage",
+        "Wirkungsbehauptung"
+      ],
+      "relatedTerms": [
+        "evidenz",
+        "wirkung",
+        "wirkungspotenzial",
+        "baseline"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "clean-industrial-deal": {
       "label": "Clean Industrial Deal",
       "slug": "clean-industrial-deal",
@@ -6297,6 +6466,30 @@
         "wirkungsnachweis",
         "attributionsforschung",
         "kontribution"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "covenant": {
+      "label": "Covenant",
+      "slug": "covenant",
+      "url": "/begriffe/covenant/",
+      "hoverDefinition": "Ein Covenant ist eine vertragliche Zusage oder Bedingung in einer Finanzierung, etwa zu Kennzahlen, Informationen oder zulässigen Handlungen.",
+      "shortDefinition": "Ein Covenant ist eine vertragliche Zusage oder Bedingung in einer Finanzierung, etwa zu Kennzahlen, Informationen oder zulässigen Handlungen.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "synonyms": [
+        "Covenant",
+        "Covenants",
+        "Kreditauflage",
+        "vertragliche Kreditbedingung"
+      ],
+      "relatedTerms": [
+        "dscr",
+        "fremdkapital",
+        "datenstand"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -6903,7 +7096,8 @@
         "wirkungsgrenzen-und-rechtepruefung",
         "evidenz-und-annahmenregister",
         "wirkungsoekonomisches-methodensystem",
-        "wirkungsoekonomisches-managementmodell"
+        "wirkungsoekonomisches-managementmodell",
+        "datenherkunft"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -7007,6 +7201,34 @@
         "Wirkungsoekonomie in der Lieferkette",
         "Working-Paper Wirkungssteuergesetz"
       ],
+      "relatedObjections": []
+    },
+    "datenherkunft": {
+      "label": "Datenherkunft",
+      "slug": "datenherkunft",
+      "url": "/begriffe/datenherkunft/",
+      "hoverDefinition": "Datenherkunft beschreibt, woher eine Information stammt und über welche Verarbeitungsschritte sie entstanden ist.",
+      "shortDefinition": "Datenherkunft beschreibt, woher eine Information stammt und über welche Verarbeitungsschritte sie entstanden ist.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Datenherkunft",
+        "Evidence Lineage",
+        "Data Lineage",
+        "Datenlinie",
+        "Datenprovenienz"
+      ],
+      "relatedTerms": [
+        "audit-trail",
+        "nachweiszuordnung",
+        "datenstand",
+        "evidenz",
+        "data-lineage-und-evidenzherkunftskarte",
+        "datenverantwortung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "datenluecke": {
@@ -7135,7 +7357,8 @@
         "wirkungsrueckkopplung",
         "produktwirkung",
         "responsible-marketing",
-        "fuenftes-p-planet"
+        "fuenftes-p-planet",
+        "evidenzgrad"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -7176,7 +7399,8 @@
         "wirkungsassurance",
         "wirkungsoekonomisches-methodensystem",
         "wirkungsoekonomisches-managementmodell",
-        "wirkungsassurance-audit-und-methodenpruefung"
+        "wirkungsassurance-audit-und-methodenpruefung",
+        "evidenzgrad"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -7210,6 +7434,36 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "datenstand": {
+      "label": "Datenstand",
+      "slug": "datenstand",
+      "url": "/begriffe/datenstand/",
+      "hoverDefinition": "Der Datenstand benennt den Zeitpunkt oder Zeitraum, auf den sich eine Angabe bezieht.",
+      "shortDefinition": "Der Datenstand benennt den Zeitpunkt oder Zeitraum, auf den sich eine Angabe bezieht.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Datenstand",
+        "As-of Date",
+        "As of Date",
+        "Stichtag",
+        "Bezugszeitpunkt"
+      ],
+      "relatedTerms": [
+        "datenherkunft",
+        "baseline",
+        "evidenzbasis",
+        "kennzahl",
+        "nachweiszuordnung",
+        "nachweiswiederverwendung",
+        "covenant",
+        "audit-trail"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "datenstandard": {
       "label": "Datenstandard / Standardisierung von Risikomanagement",
       "slug": "datenstandard",
@@ -7223,6 +7477,34 @@
       "relatedTerms": [
         "datenqualitaet",
         "managementsystemstandards"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "datenverantwortung": {
+      "label": "Datenverantwortung",
+      "slug": "datenverantwortung",
+      "url": "/begriffe/datenverantwortung/",
+      "hoverDefinition": "Datenverantwortung bezeichnet die organisatorisch zugewiesene Rechenschaft für Bedeutung, Qualität, Verwendung und Pflege bestimmter Daten.",
+      "shortDefinition": "Datenverantwortung bezeichnet die organisatorisch zugewiesene Rechenschaft für Bedeutung, Qualität, Verwendung und Pflege bestimmter Daten.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Datenverantwortung",
+        "Data Owner",
+        "fachliche Datenverantwortung",
+        "Datenverantwortliche"
+      ],
+      "relatedTerms": [
+        "evidenzbasis",
+        "datenherkunft",
+        "audit-trail",
+        "evidenzluecke",
+        "anfragenkoordination",
+        "managed-service",
+        "single-source-of-truth"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -9208,7 +9490,8 @@
         "financial-materiality",
         "impact-management",
         "impact-controlling",
-        "key-impact-indicator"
+        "key-impact-indicator",
+        "wesentlichkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -9413,6 +9696,30 @@
         "agenda-2030",
         "sdg-plus",
         "wirkungsoekonomie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "due-diligence": {
+      "label": "Due Diligence",
+      "slug": "due-diligence",
+      "url": "/begriffe/due-diligence/",
+      "hoverDefinition": "Due Diligence bezeichnet eine zweckbezogene sorgfältige Prüfung; in verantwortlicher Unternehmensführung auch einen fortlaufenden Prozess zum Umgang mit nachteiligen Auswirkungen.",
+      "shortDefinition": "Due Diligence bezeichnet eine zweckbezogene sorgfältige Prüfung; in verantwortlicher Unternehmensführung auch einen fortlaufenden Prozess zum Umgang mit nachteiligen Auswirkungen.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Due Diligence",
+        "Sorgfaltsprüfung",
+        "Due-Diligence-Prüfung"
+      ],
+      "relatedTerms": [
+        "evidenz",
+        "assurance",
+        "risiko",
+        "human-rights-due-diligence"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -9976,6 +10283,29 @@
         "normative-konformitaet",
         "pluralistische-ignoranz",
         "schweigespirale"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "eigenkapital": {
+      "label": "Eigenkapital",
+      "slug": "eigenkapital",
+      "url": "/begriffe/eigenkapital/",
+      "hoverDefinition": "Eigenkapital ist im Rechnungslegungskontext der verbleibende Anteil am Vermögen nach Abzug der Schulden beziehungsweise Verpflichtungen.",
+      "shortDefinition": "Eigenkapital ist im Rechnungslegungskontext der verbleibende Anteil am Vermögen nach Abzug der Schulden beziehungsweise Verpflichtungen.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "synonyms": [
+        "Eigenkapital",
+        "Equity",
+        "Eigenmittel im Unternehmenskontext"
+      ],
+      "relatedTerms": [
+        "fremdkapital",
+        "liquiditaet",
+        "resilienz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -12732,6 +13062,36 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "evidenz": {
+      "label": "Evidenz",
+      "slug": "evidenz",
+      "url": "/begriffe/evidenz/",
+      "hoverDefinition": "Evidenz ist eine nachvollziehbare Grundlage, mit der eine Aussage gestützt, eingeschränkt oder widerlegt werden kann.",
+      "shortDefinition": "Evidenz ist eine nachvollziehbare Grundlage, mit der eine Aussage gestützt, eingeschränkt oder widerlegt werden kann.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Evidenz",
+        "Evidence",
+        "Beleglage"
+      ],
+      "relatedTerms": [
+        "evidenzbasierung",
+        "evidenzgrad",
+        "evidenzluecke",
+        "claim",
+        "datenherkunft",
+        "wirkungsnachweis",
+        "selektive-evidenz",
+        "evidenzbasis",
+        "finanzierungsrelevanz",
+        "due-diligence"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "evidenz-und-annahmenregister": {
       "label": "Evidenz- und Annahmenregister",
       "slug": "evidenz-und-annahmenregister",
@@ -12744,7 +13104,114 @@
       ],
       "relatedTerms": [
         "wirkungsoekonomisches-methodensystem",
-        "wirkungsoekonomisches-managementmodell"
+        "wirkungsoekonomisches-managementmodell",
+        "evidenzbasis"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "evidenzbasierung": {
+      "label": "Evidenzbasierung",
+      "slug": "evidenzbasierung",
+      "url": "/begriffe/evidenzbasierung/",
+      "hoverDefinition": "Evidenzbasierung bedeutet, Aussagen und Entscheidungen auf nachvollziehbare Befunde zu stützen und ihre Unsicherheit offenzulegen.",
+      "shortDefinition": "Evidenzbasierung bedeutet, Aussagen und Entscheidungen auf nachvollziehbare Befunde zu stützen und ihre Unsicherheit offenzulegen.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Evidenzbasierung",
+        "Evidence-based",
+        "Evidence based",
+        "evidenzbasiert",
+        "evidenzgestützt"
+      ],
+      "relatedTerms": [
+        "evidenz",
+        "szenario",
+        "baseline"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "evidenzbasis": {
+      "label": "Evidenzbasis",
+      "slug": "evidenzbasis",
+      "url": "/begriffe/evidenzbasis/",
+      "hoverDefinition": "Eine Evidenzbasis ist ein geordneter Bestand von Aussagen, Daten und zugehörigen Nachweisen für bestimmte Fragestellungen.",
+      "shortDefinition": "Eine Evidenzbasis ist ein geordneter Bestand von Aussagen, Daten und zugehörigen Nachweisen für bestimmte Fragestellungen.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Evidenzbasis",
+        "Evidence Base",
+        "Nachweisbasis",
+        "Evidenzbestand"
+      ],
+      "relatedTerms": [
+        "evidenz",
+        "datenverantwortung",
+        "nachweiszuordnung",
+        "audit-trail",
+        "evidenz-und-annahmenregister",
+        "datenstand",
+        "nachweiswiederverwendung",
+        "single-source-of-truth"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "evidenzgrad": {
+      "label": "Evidenzgrad",
+      "slug": "evidenzgrad",
+      "url": "/begriffe/evidenzgrad/",
+      "hoverDefinition": "Der Evidenzgrad beschreibt nach einer offengelegten Methodik, wie belastbar die Belege für eine bestimmte Aussage sind.",
+      "shortDefinition": "Der Evidenzgrad beschreibt nach einer offengelegten Methodik, wie belastbar die Belege für eine bestimmte Aussage sind.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Evidenzgrad",
+        "Evidence Grade",
+        "Evidence Quality",
+        "Belegqualität"
+      ],
+      "relatedTerms": [
+        "evidenz",
+        "evidenzluecke",
+        "assurance",
+        "proxy",
+        "datenqualitaets-und-evidenzmatrix",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "evidenzluecke": {
+      "label": "Evidenzlücke",
+      "slug": "evidenzluecke",
+      "url": "/begriffe/evidenzluecke/",
+      "hoverDefinition": "Eine Evidenzlücke besteht, wenn eine relevante Aussage nicht ausreichend, aktuell oder widerspruchsfrei belegt werden kann.",
+      "shortDefinition": "Eine Evidenzlücke besteht, wenn eine relevante Aussage nicht ausreichend, aktuell oder widerspruchsfrei belegt werden kann.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Evidenzlücke",
+        "Evidence Gap",
+        "Nachweislücke",
+        "Beleglücke"
+      ],
+      "relatedTerms": [
+        "evidenz",
+        "evidenzgrad",
+        "datenverantwortung",
+        "proxy"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -13911,7 +14378,8 @@
         "wirkungsrisiko",
         "wirkungsresilienz",
         "csrd",
-        "esrs"
+        "esrs",
+        "wesentlichkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -13919,6 +14387,32 @@
       "relatedDocuments": [
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
+      "relatedObjections": []
+    },
+    "finanzierungsrelevanz": {
+      "label": "Finanzierungsrelevanz",
+      "slug": "finanzierungsrelevanz",
+      "url": "/begriffe/finanzierungsrelevanz/",
+      "hoverDefinition": "Finanzierungsrelevanz bezeichnet den begründeten Bezug einer Information zur Beurteilung eines Finanzierungsvorhabens oder einer bestehenden Finanzierung.",
+      "shortDefinition": "Finanzierungsrelevanz bezeichnet den begründeten Bezug einer Information zur Beurteilung eines Finanzierungsvorhabens oder einer bestehenden Finanzierung.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "synonyms": [
+        "Finanzierungsrelevanz",
+        "Finance Relevance",
+        "Financing Relevance",
+        "finanzielle Relevanz im Finanzierungsdialog"
+      ],
+      "relatedTerms": [
+        "transmissionskanal",
+        "cashflow",
+        "wesentlichkeit",
+        "evidenz",
+        "bonitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "finanzmarktkapitalismus": {
@@ -14880,6 +15374,31 @@
         "sdgs",
         "integration-als-infrastruktur",
         "pluralitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "fremdkapital": {
+      "label": "Fremdkapital und Debt",
+      "slug": "fremdkapital",
+      "url": "/begriffe/fremdkapital/",
+      "hoverDefinition": "Fremdkapital bezeichnet aus Unternehmenssicht Kapital beziehungsweise Verpflichtungen gegenüber Gläubigern; der englische Begriff Debt muss kontextbezogen abgegrenzt werden.",
+      "shortDefinition": "Fremdkapital bezeichnet aus Unternehmenssicht Kapital beziehungsweise Verpflichtungen gegenüber Gläubigern; der englische Begriff Debt muss kontextbezogen abgegrenzt werden.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "synonyms": [
+        "Fremdkapital und Debt",
+        "Debt",
+        "Fremdkapital",
+        "Finanzverbindlichkeiten"
+      ],
+      "relatedTerms": [
+        "eigenkapital",
+        "covenant",
+        "dscr",
+        "refinanzierung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -19183,7 +19702,6 @@
         "menschenrechtliche Sorgfaltspflichten",
         "human rights due diligence",
         "Sorgfaltspflicht",
-        "Due Diligence",
         "Responsible Purchasing",
         "Supplier Engagement",
         "Lieferkettenresilienz",
@@ -19198,7 +19716,8 @@
         "lksg",
         "beschwerdemechanismus-access-to-remedy",
         "human-rights-impact-assessment",
-        "rohstoffkritikalitaet"
+        "rohstoffkritikalitaet",
+        "due-diligence"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -19766,7 +20285,8 @@
         "impact-management",
         "wirkungsbewertung",
         "csrd",
-        "esrs"
+        "esrs",
+        "wesentlichkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -20789,7 +21309,8 @@
         "wirkungsbewertung",
         "wirkungsraum",
         "nichtkompensationsprinzip",
-        "systemtheorie"
+        "systemtheorie",
+        "abhaengigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -20816,7 +21337,8 @@
         "wirkungsportfolio",
         "wirkungsrisiko-matrix",
         "wirkungsoekonomisches-methodensystem",
-        "wirkungsoekonomisches-managementmodell"
+        "wirkungsoekonomisches-managementmodell",
+        "abhaengigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -22078,6 +22600,33 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "kennzahl": {
+      "label": "Kennzahl",
+      "slug": "kennzahl",
+      "url": "/begriffe/kennzahl/",
+      "hoverDefinition": "Eine Kennzahl ist eine nach einer festgelegten Definition ermittelte quantitative Größe zur Beschreibung oder Beurteilung eines Sachverhalts.",
+      "shortDefinition": "Eine Kennzahl ist eine nach einer festgelegten Definition ermittelte quantitative Größe zur Beschreibung oder Beurteilung eines Sachverhalts.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Kennzahl",
+        "Metric",
+        "Metrics",
+        "Messgröße"
+      ],
+      "relatedTerms": [
+        "kpi",
+        "wirkung",
+        "datenstand",
+        "baseline",
+        "key-impact-indicator",
+        "kii"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "kernenergie": {
       "label": "Kernenergie",
       "slug": "kernenergie",
@@ -22176,7 +22725,8 @@
         "woek-id",
         "impact-management",
         "iro",
-        "wirkungsdaten"
+        "wirkungsdaten",
+        "kennzahl"
       ],
       "relatedMethods": [
         "Impact Controlling",
@@ -22470,7 +23020,8 @@
         "sdgs",
         "agenda-2030",
         "sdg-plus",
-        "wirkungshaushalt"
+        "wirkungshaushalt",
+        "kennzahl"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -22914,7 +23465,8 @@
         "carbon-budget",
         "klimaanpassung",
         "klimawandel",
-        "art-20a-gg"
+        "art-20a-gg",
+        "risikominderung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -23971,11 +24523,19 @@
       "shortDefinition": "Ein Key Performance Indicator ist eine Kennzahl zur Beobachtung eines wichtigen Leistungs- oder Zielaspekts; er ersetzt keine umfassende Wirkungsbewertung.",
       "category": "Grundbegriff",
       "synonyms": [
-        "KPI"
+        "KPI",
+        "Key Performance Indicator",
+        "Key Performance Indicators",
+        "Leistungskennzahl"
       ],
       "relatedTerms": [
         "key-impact-indicator",
-        "impact-controlling"
+        "impact-controlling",
+        "kennzahl",
+        "baseline",
+        "evidenzgrad",
+        "kii",
+        "managed-service"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -26215,6 +26775,30 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "liquiditaet": {
+      "label": "Liquidität",
+      "slug": "liquiditaet",
+      "url": "/begriffe/liquiditaet/",
+      "hoverDefinition": "Unternehmensliquidität ist die Fähigkeit, fällige Zahlungsverpflichtungen rechtzeitig erfüllen zu können.",
+      "shortDefinition": "Unternehmensliquidität ist die Fähigkeit, fällige Zahlungsverpflichtungen rechtzeitig erfüllen zu können.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "synonyms": [
+        "Liquidität",
+        "Liquidity",
+        "Zahlungsfähigkeit"
+      ],
+      "relatedTerms": [
+        "cashflow",
+        "refinanzierung",
+        "bonitaet",
+        "eigenkapital"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "lithium-ionen-batterie": {
       "label": "Lithium-Ionen-Batterie",
       "slug": "lithium-ionen-batterie",
@@ -26377,12 +26961,19 @@
         "Pfadabhaengigkeit",
         "Carbon Lock-in",
         "fossiler Lock-in",
-        "Infrastruktur-Lock-in"
+        "Infrastruktur-Lock-in",
+        "Vendor Lock-in",
+        "Technologiebindung",
+        "Anbieterbindung"
       ],
       "relatedTerms": [
         "transition-risk",
         "stranded-assets",
-        "wirkungsrisiko"
+        "wirkungsrisiko",
+        "abhaengigkeit",
+        "resilienz",
+        "managed-service",
+        "pfadabhaengigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -26753,6 +27344,29 @@
         "minderheitenschutz",
         "illiberale-demokratie",
         "demokratische-erosion"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "managed-service": {
+      "label": "Managed Service",
+      "slug": "managed-service",
+      "url": "/begriffe/managed-service/",
+      "hoverDefinition": "Ein Managed Service ist eine fortlaufend erbrachte Dienstleistung mit abgegrenztem Leistungsumfang, Verantwortlichkeiten und vereinbarten Servicequalitäten.",
+      "shortDefinition": "Ein Managed Service ist eine fortlaufend erbrachte Dienstleistung mit abgegrenztem Leistungsumfang, Verantwortlichkeiten und vereinbarten Servicequalitäten.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Managed Service",
+        "laufend betriebene Dienstleistung",
+        "Betreiberdienstleistung"
+      ],
+      "relatedTerms": [
+        "anfragenkoordination",
+        "datenverantwortung",
+        "kpi"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -28992,6 +29606,58 @@
         "minarchismus",
         "libertarismus",
         "staatsversagen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "nachweiswiederverwendung": {
+      "label": "Nachweiswiederverwendung",
+      "slug": "nachweiswiederverwendung",
+      "url": "/begriffe/nachweiswiederverwendung/",
+      "hoverDefinition": "Nachweiswiederverwendung ist die erneute Verwendung eines belegten Informationsbausteins für einen weiteren, dazu passenden Zweck.",
+      "shortDefinition": "Nachweiswiederverwendung ist die erneute Verwendung eines belegten Informationsbausteins für einen weiteren, dazu passenden Zweck.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Nachweiswiederverwendung",
+        "Evidence Reuse",
+        "Data Reuse",
+        "Reuse",
+        "Wiederverwendung von Nachweisen"
+      ],
+      "relatedTerms": [
+        "evidenzbasis",
+        "nachweiszuordnung",
+        "datenstand"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "nachweiszuordnung": {
+      "label": "Nachweiszuordnung",
+      "slug": "nachweiszuordnung",
+      "url": "/begriffe/nachweiszuordnung/",
+      "hoverDefinition": "Nachweiszuordnung verbindet eine externe oder interne Anforderung mit den dazu passenden Daten, Aussagen und Quellen.",
+      "shortDefinition": "Nachweiszuordnung verbindet eine externe oder interne Anforderung mit den dazu passenden Daten, Aussagen und Quellen.",
+      "category": "Praxisbegriff",
+      "synonyms": [
+        "Nachweiszuordnung",
+        "Mapping",
+        "Evidence Mapping",
+        "Datenmapping",
+        "Anforderungsmapping"
+      ],
+      "relatedTerms": [
+        "evidenzbasis",
+        "datenstand",
+        "datenherkunft",
+        "nachweiswiederverwendung",
+        "anfragenkoordination"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -32190,7 +32856,8 @@
         "operative Aufwendungen",
         "Betriebsausgaben",
         "Betriebskosten",
-        "laufende Betriebskosten"
+        "laufende Betriebskosten",
+        "Betriebsaufwand"
       ],
       "relatedTerms": [
         "capex",
@@ -32199,7 +32866,9 @@
         "wirkungsrueckkopplung",
         "systemkosten",
         "kapitalwirkung",
-        "positive-netto-wirkung"
+        "positive-netto-wirkung",
+        "cashflow",
+        "transmissionskanal"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -33406,7 +34075,9 @@
         "Klimaanpassung",
         "Urban Heat Island",
         "städtische Hitzeinsel",
-        "staedtische Hitzeinsel"
+        "staedtische Hitzeinsel",
+        "physische Risiken",
+        "Physisches Risiko"
       ],
       "relatedTerms": [
         "tcfd",
@@ -33419,7 +34090,11 @@
         "hochwasserrisiko",
         "issb-ifrs-s1-s2",
         "liability-risk",
-        "tnfd"
+        "tnfd",
+        "risiko",
+        "resilienz",
+        "risikominderung",
+        "abhaengigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -36070,6 +36745,30 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "proxy": {
+      "label": "Proxy",
+      "slug": "proxy",
+      "url": "/begriffe/proxy/",
+      "hoverDefinition": "Ein Proxy ist eine ersatzweise verwendete Größe, die einen nicht direkt beobachteten Sachverhalt näherungsweise abbilden soll.",
+      "shortDefinition": "Ein Proxy ist eine ersatzweise verwendete Größe, die einen nicht direkt beobachteten Sachverhalt näherungsweise abbilden soll.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Proxy",
+        "Ersatzindikator",
+        "Näherungswert",
+        "Ersatzgröße"
+      ],
+      "relatedTerms": [
+        "evidenzluecke",
+        "evidenzgrad",
+        "baseline"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "prozess-und-systemintegration": {
       "label": "Prozess- und Systemintegration",
       "slug": "prozess-und-systemintegration",
@@ -37951,11 +38650,16 @@
       "shortDefinition": "Refinanzierung bezeichnet die Beschaffung neuer Mittel zur Ablösung, Verlängerung oder Finanzierung bestehender Kredite und Verpflichtungen.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Refinanzierung"
+        "Refinanzierung",
+        "Refinancing",
+        "Anschlussfinanzierung"
       ],
       "relatedTerms": [
         "bruttokreditaufnahme",
-        "nettokreditaufnahme"
+        "nettokreditaufnahme",
+        "fremdkapital",
+        "liquiditaet",
+        "covenant"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -39092,7 +39796,8 @@
       "synonyms": [
         "Resilienz",
         "soziale Resilienz",
-        "demokratische Resilienz"
+        "demokratische Resilienz",
+        "Resilience"
       ],
       "relatedTerms": [
         "wirkungsresilienz",
@@ -39124,7 +39829,12 @@
         "rueckstellfaehigkeit",
         "daempfungsfaehigkeit",
         "anpassungsfaehigkeit",
-        "transformationsfaehigkeit"
+        "transformationsfaehigkeit",
+        "abhaengigkeit",
+        "risiko",
+        "risikominderung",
+        "szenario",
+        "eigenkapital"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -39858,6 +40568,35 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "risiko": {
+      "label": "Risiko",
+      "slug": "risiko",
+      "url": "/begriffe/risiko/",
+      "hoverDefinition": "Risiko betrifft unsichere Entwicklungen und ihre möglichen Auswirkungen auf Ziele, Funktionen oder betroffene Zustände.",
+      "shortDefinition": "Risiko betrifft unsichere Entwicklungen und ihre möglichen Auswirkungen auf Ziele, Funktionen oder betroffene Zustände.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "synonyms": [
+        "Risiko",
+        "Risk"
+      ],
+      "relatedTerms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "resilienz",
+        "risikomanagement",
+        "wirkungsrisiko",
+        "abhaengigkeit",
+        "transmissionskanal",
+        "risikominderung",
+        "wesentlichkeit",
+        "due-diligence"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "risiko-und-resilienzregister": {
       "label": "Risiko- und Resilienzregister",
       "slug": "risiko-und-resilienzregister",
@@ -39905,7 +40644,34 @@
       ],
       "relatedTerms": [
         "erm",
-        "wirkungsrisikomanagement"
+        "wirkungsrisikomanagement",
+        "risiko"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "risikominderung": {
+      "label": "Risikominderung / Risk Mitigation",
+      "slug": "risikominderung",
+      "url": "/begriffe/risikominderung/",
+      "hoverDefinition": "Mitigation bedeutet im Risikokontext die Minderung eines Risikos oder seiner Folgen; im Klimakontext bezeichnet es insbesondere Klimaschutz.",
+      "shortDefinition": "Mitigation bedeutet im Risikokontext die Minderung eines Risikos oder seiner Folgen; im Klimakontext bezeichnet es insbesondere Klimaschutz.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "synonyms": [
+        "Risikominderung / Risk Mitigation",
+        "Risk Mitigation",
+        "Risikominderung",
+        "Schadensminderung",
+        "Mitigation (Risikomanagement)"
+      ],
+      "relatedTerms": [
+        "risiko",
+        "resilienz",
+        "physical-climate-risk",
+        "klimaschutz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -41225,6 +41991,32 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "dscr": {
+      "label": "Schuldendienstdeckungsgrad (DSCR)",
+      "slug": "dscr",
+      "url": "/begriffe/dscr/",
+      "hoverDefinition": "Der Schuldendienstdeckungsgrad setzt die für den Schuldendienst verfügbare finanzielle Größe ins Verhältnis zum fälligen Schuldendienst derselben Periode.",
+      "shortDefinition": "Der Schuldendienstdeckungsgrad setzt die für den Schuldendienst verfügbare finanzielle Größe ins Verhältnis zum fälligen Schuldendienst derselben Periode.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "synonyms": [
+        "Schuldendienstdeckungsgrad (DSCR)",
+        "DSCR",
+        "Debt Service Coverage Ratio",
+        "Debt Service Cover Ratio",
+        "Schuldendienstdeckungsgrad"
+      ],
+      "relatedTerms": [
+        "cashflow",
+        "covenant",
+        "bonitaet",
+        "fremdkapital"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "schuldenmythos": {
       "label": "Schuldenmythos",
       "slug": "schuldenmythos",
@@ -42199,7 +42991,8 @@
         "false-balance",
         "policy-laundering",
         "expertinnenlobbyismus",
-        "paltering"
+        "paltering",
+        "evidenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -42586,6 +43379,30 @@
       "relatedDocuments": [
         "wirkungsradar-co2-preis-oder-fossile-systemkosten"
       ],
+      "relatedObjections": []
+    },
+    "single-source-of-truth": {
+      "label": "Single Source of Truth",
+      "slug": "single-source-of-truth",
+      "url": "/begriffe/single-source-of-truth/",
+      "hoverDefinition": "Single Source of Truth bezeichnet eine organisatorisch festgelegte, maßgebliche Quelle oder Zuordnung für eine bestimmte Information.",
+      "shortDefinition": "Single Source of Truth bezeichnet eine organisatorisch festgelegte, maßgebliche Quelle oder Zuordnung für eine bestimmte Information.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Single Source of Truth",
+        "SSOT",
+        "verbindliche Datenbasis",
+        "führende Datenquelle"
+      ],
+      "relatedTerms": [
+        "evidenzbasis",
+        "datenverantwortung",
+        "audit-trail"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "skandinavisches-modell": {
@@ -46290,6 +47107,30 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "szenario": {
+      "label": "Szenario",
+      "slug": "szenario",
+      "url": "/begriffe/szenario/",
+      "hoverDefinition": "Ein Szenario beschreibt eine in sich nachvollziehbare mögliche Entwicklung unter offengelegten Annahmen.",
+      "shortDefinition": "Ein Szenario beschreibt eine in sich nachvollziehbare mögliche Entwicklung unter offengelegten Annahmen.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "synonyms": [
+        "Szenario",
+        "Scenario",
+        "Szenarioanalyse"
+      ],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "resilienz",
+        "transmissionskanal",
+        "evidenzbasierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "t-sroi": {
       "label": "T-SROI - Transformational Social Return on Investment",
       "slug": "t-sroi",
@@ -48162,7 +49003,37 @@
         "lock-in-pfadabhaengigkeit",
         "physical-climate-risk",
         "sbti",
-        "transition-finance"
+        "transition-finance",
+        "transmissionskanal",
+        "risiko",
+        "szenario"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "transmissionskanal": {
+      "label": "Transmissionskanal",
+      "slug": "transmissionskanal",
+      "url": "/begriffe/transmissionskanal/",
+      "hoverDefinition": "Ein Transmissionskanal beschreibt den Weg, über den eine Veränderung auf andere Größen oder Risiken übertragen wird.",
+      "shortDefinition": "Ein Transmissionskanal beschreibt den Weg, über den eine Veränderung auf andere Größen oder Risiken übertragen wird.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "synonyms": [
+        "Transmissionskanal",
+        "Transmission Channel",
+        "Financial Transmission",
+        "finanzieller Übertragungsweg"
+      ],
+      "relatedTerms": [
+        "abhaengigkeit",
+        "risiko",
+        "cashflow",
+        "opex",
+        "finanzierungsrelevanz",
+        "szenario"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -52193,6 +53064,32 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "wesentlichkeit": {
+      "label": "Wesentlichkeit",
+      "slug": "wesentlichkeit",
+      "url": "/begriffe/wesentlichkeit/",
+      "hoverDefinition": "Wesentlichkeit beschreibt, ob ein Sachverhalt für die maßgebliche Beurteilung, Entscheidung oder Wirkungsperspektive hinreichend bedeutsam ist.",
+      "shortDefinition": "Wesentlichkeit beschreibt, ob ein Sachverhalt für die maßgebliche Beurteilung, Entscheidung oder Wirkungsperspektive hinreichend bedeutsam ist.",
+      "category": "Datenbegriff",
+      "synonyms": [
+        "Wesentlichkeit",
+        "Materiality",
+        "Materialität"
+      ],
+      "relatedTerms": [
+        "risiko",
+        "wirkung",
+        "finanzierungsrelevanz",
+        "doppelte-wesentlichkeit",
+        "financial-materiality",
+        "impact-materiality"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "wettbewerb-als-suchverfahren": {
       "label": "Wettbewerb als Suchverfahren",
       "slug": "wettbewerb-als-suchverfahren",
@@ -52846,7 +53743,12 @@
         "output",
         "outcome",
         "impact",
-        "referenzrahmen"
+        "referenzrahmen",
+        "evidenz",
+        "baseline",
+        "claim",
+        "kennzahl",
+        "wesentlichkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -57110,7 +58012,8 @@
         "kontribution",
         "counterfactual",
         "baseline",
-        "datenqualitaet"
+        "datenqualitaet",
+        "evidenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -58224,7 +59127,8 @@
         "mögliche Wirkung",
         "Impact Potential",
         "Wirkungswahrscheinlichkeit",
-        "Wirkungsanlage"
+        "Wirkungsanlage",
+        "Potential Impact"
       ],
       "relatedTerms": [
         "wirkung",
@@ -58284,7 +59188,11 @@
         "katechon",
         "ausloeser",
         "iooi",
-        "wirkungsnachweis"
+        "wirkungsnachweis",
+        "szenario",
+        "abhaengigkeit",
+        "evidenz",
+        "claim"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -59607,7 +60515,8 @@
         "ausloeser",
         "wirkmechanismus",
         "iooi",
-        "nebenwirkung"
+        "nebenwirkung",
+        "risiko"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
