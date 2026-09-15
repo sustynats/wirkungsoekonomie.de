@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { derivePublicationStatus, SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
+import { persistedImpactAssessmentErrors, assessmentBasis } from '../../scripts/news/migrate-impact-assessments.mjs';
 import { highStory, validEditorial } from './fixtures/editorial-bridge.mjs';
 import { editorialSourceRef } from '../../scripts/news/editorial-analysis.mjs';
 
@@ -13,7 +14,7 @@ const readyReview = () => ({
   findings: [],
 });
 
-test('v2.1 publication defaults fail closed when any MPD potential magnitude is still blank', () => {
+function blankPlanetFixture() {
   const record = highStory('potential-publication-invariant');
   record.sources = record.sources.map(source => ({ ...source, source_id: editorialSourceRef(source) }));
   const assessment = structuredClone(validEditorial(record).impact_assessment);
@@ -35,7 +36,11 @@ test('v2.1 publication defaults fail closed when any MPD potential magnitude is 
     research_result: 'Die historische Prüfung modellierte trotz Quellenlektüre keinen belastbaren Pfad.',
     reviewed_source_ids: [sourceId],
   };
+  return { record, assessment };
+}
 
+test('v2.1 publication defaults fail closed when any MPD potential magnitude is still blank', () => {
+  const { record, assessment } = blankPlanetFixture();
   const result = derivePublicationStatus(assessment, record, {
     review: readyReview(),
     secondPassComplete: true,
@@ -43,4 +48,15 @@ test('v2.1 publication defaults fail closed when any MPD potential magnitude is 
 
   assert.notEqual(result.status, 'ready');
   assert.ok(result.issues.includes('IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:planet'));
+});
+
+test('a persisted independently reviewed v2.1 record cannot claim ready while a potential bar is blank', () => {
+  const { record, assessment } = blankPlanetFixture();
+  assessment.publication_status = 'ready';
+  record.impact_assessment = assessment;
+  record.impact_semantic_review = { status: 'ready', review_job_id: 'synthetic-independent-review' };
+  record.impact_assessment_basis = assessmentBasis(record);
+
+  const errors = persistedImpactAssessmentErrors(record);
+  assert.ok(errors.includes('IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:planet'));
 });
