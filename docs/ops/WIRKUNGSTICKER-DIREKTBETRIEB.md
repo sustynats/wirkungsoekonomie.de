@@ -52,6 +52,11 @@ Ein einziger Workflow `.github/workflows/wirkungsticker.yml`, alle 15 Minuten:
 - Kapazität: `WOEK_NEWS_MAX_AI_STORIES_PER_RUN` (Standard 4 je Viertelstunde),
   `WOEK_NEWS_MAX_AI_CALLS_PER_HOUR` (Standard 12). Monatsbudget und Stufen unverändert in
   `scripts/news/budget.mjs` (70 % / 85 % / 95 %).
+- Reasoning-Aufwand über `WOEK_NEWS_REASONING_EFFORT` (Standard `low`; `medium` verdoppelte im
+  ersten Live-Lauf die Ausgabe-Token ohne bessere Struktur). Jede bezahlte Antwort wird als
+  privates Laufartefakt `ai-raw-output-<run>` (3 Tage) gesichert, damit Gate-Fehler erklärbar sind.
+- Der Transport wandelt nur Typen (Zahlen-Strings → Zahlen, Boolean-Strings → Booleans) und
+  rechnet die Tragweite aus den gelieferten Faktoren nach; er ergänzt nie Inhalte.
 - Modell über Repository-Variable `WOEK_NEWS_MODEL` (Standard `gpt-5.4-mini`; zugelassen
   `gpt-5.5`, `gpt-5.6-luna`). Richtwerte je Meldung bei rund 11k Eingabe- und 4k Ausgabe-Token:
   `gpt-5.6-luna` ≈ 0,7 Cent, `gpt-5.4-mini` ≈ 2,6 Cent, `gpt-5.5` ≈ 18 Cent.
