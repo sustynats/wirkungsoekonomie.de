@@ -190,16 +190,6 @@ test('paid answers are copied to the private diagnosis directory when configured
   assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('Checkliste je Eintrag'));
 });
 
-test('a queued potential reassessment survives a deferral hold of the published story', () => {
-  const existing = { story_id: 'wt-old', published: true, content_hash: 'old', sources: [{ url: 'https://example.org/old', source_id: 'official' }],
-    pending_update: { detected_at: '2026-09-15T18:00:00Z', reason: 'IMPACT_REASSESSMENT_REQUESTED', impact_reassessment: true, quality_errors: [], quality_retry_count: 0 } };
-  const candidate = { story_id: 'wt-old', content_hash: 'old', fresh: false, reassessment: false, impact_reassessment: true, existing_story: existing,
-    sources: [{ url: 'https://example.org/old', source_id: 'official', title: 'Q', summary: 'Q', content_hash: 'c' }], preanalysis: { internal_relevance_score: 40 } };
-  const held = pendingRecord(candidate, 'AI_BUDGET_OR_BATCH_LIMIT', '2026-09-16T00:00:00Z');
-  assert.equal(held.pending_update.impact_reassessment, true);
-  assert.equal(held.pending_update.reason, 'AI_BUDGET_OR_BATCH_LIMIT');
-  const plain = pendingRecord({ ...candidate, impact_reassessment: false, existing_story: { ...existing, pending_update: { detected_at: '2026-09-15T18:00:00Z' } } }, 'AI_BUDGET_OR_BATCH_LIMIT', '2026-09-16T00:00:00Z');
-  assert.equal('impact_reassessment' in plain.pending_update, false, 'an ordinary update never gains the flag');
 test('abbreviated or invented source ids are mapped back to the supplied sources before the gate', () => {
   const sources = [
     { source_id: 'rbb24-nachrichten', publisher: 'rbb24', url: 'https://example.org/r', title: 'R', summary: 'R' },
@@ -273,4 +263,16 @@ test('fragments where paths belong are discarded, incomplete paths stay for the 
   assert.ok(errors.includes('IMPACT_POTENTIAL_SCOPE_REQUIRED:planet'), 'the incomplete planet path still fails the gate');
   assert.equal(errors.some((e) => e.endsWith(':human') || e.endsWith(':democracy')), false, errors.join(','));
   assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('Datum der Berichterstattung wird nicht ergänzt'));
+});
+
+test('a queued potential reassessment survives a deferral hold of the published story', () => {
+  const existing = { story_id: 'wt-old', published: true, content_hash: 'old', sources: [{ url: 'https://example.org/old', source_id: 'official' }],
+    pending_update: { detected_at: '2026-09-15T18:00:00Z', reason: 'IMPACT_REASSESSMENT_REQUESTED', impact_reassessment: true, quality_errors: [], quality_retry_count: 0 } };
+  const candidate = { story_id: 'wt-old', content_hash: 'old', fresh: false, reassessment: false, impact_reassessment: true, existing_story: existing,
+    sources: [{ url: 'https://example.org/old', source_id: 'official', title: 'Q', summary: 'Q', content_hash: 'c' }], preanalysis: { internal_relevance_score: 40 } };
+  const held = pendingRecord(candidate, 'AI_BUDGET_OR_BATCH_LIMIT', '2026-09-16T00:00:00Z');
+  assert.equal(held.pending_update.impact_reassessment, true);
+  assert.equal(held.pending_update.reason, 'AI_BUDGET_OR_BATCH_LIMIT');
+  const plain = pendingRecord({ ...candidate, impact_reassessment: false, existing_story: { ...existing, pending_update: { detected_at: '2026-09-15T18:00:00Z' } } }, 'AI_BUDGET_OR_BATCH_LIMIT', '2026-09-16T00:00:00Z');
+  assert.equal('impact_reassessment' in plain.pending_update, false, 'an ordinary update never gains the flag');
 });
