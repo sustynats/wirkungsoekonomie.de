@@ -28,7 +28,7 @@ test('observed positive and negative consequences use their own size; remaining 
  for(const direction of ['positive','negative']){const a=profile();a.observed_effects=[observation('ex_post',direction)];
   const p=deriveImpactPresentation(a).dimensions.human;assert.equal(p.ringStatus,'observed');assert.equal(p.magnitudeBars,4);assert.equal(p.magnitude,3);
   assert.equal(p.directionLabel,direction==='negative'?'− beobachtet':'+ beobachtet');assert.equal(p.potential_presentation.ringStatus,'potential');
-  const html=render(a);assert.match(html,/wt-impact-ring--observed/);assert.match(html,/Weiteres Potenzial/);assert.match(html,/data-magnitude="4"/);
+  const html=render(a);assert.match(html,/wt-impact-ring--observed/);assert.match(html,/Beobachtet:/);assert.doesNotMatch(html,/Weiteres Potenzial/);assert.match(html,/data-magnitude="4"/);assert.match(html,/wt-impact-ring--potential[\s\S]*Beobachtet:/,'the potential leads, the observation follows');
  }
 });
 test('open direction never removes the ring, bars or path title',()=>{
