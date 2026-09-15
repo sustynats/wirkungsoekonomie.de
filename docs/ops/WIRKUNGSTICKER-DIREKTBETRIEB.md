@@ -39,10 +39,12 @@ Ein einziger Workflow `.github/workflows/wirkungsticker.yml`, alle 15 Minuten:
 
 ## Kostenregeln
 
-- **Ein bezahlter Versuch je Eingabestand.** `WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT=1`:
-  Scheitert das Gate, bleibt die Meldung als `QUALITY_GATE_FAILED` bzw.
-  `AI_ATTEMPT_LIMIT_REACHED` sichtbar liegen. Erst neue Evidenz (anderer Fingerprint) löst
-  erneut aus. Es gibt keine bezahlte Zweitprüfung und keinen Review-Kindjob.
+- **Höchstens zwei bezahlte Versuche je Eingabestand.** `WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT=2`:
+  Scheitert das Gate an einem strukturellen Fehler (fehlende Felder, Faktoren, Formate), folgt nach
+  15 Minuten Backoff genau ein zweiter Versuch mit denselben Quellen (mit luna rund 1 Cent).
+  Inhaltliche Ablehnungen (nicht materiell, Dublette, Evidenz unzureichend) werden nie erneut
+  bezahlt. Danach bleibt die Meldung als `AI_ATTEMPT_LIMIT_REACHED` sichtbar liegen; erst neue
+  Evidenz (anderer Fingerprint) löst erneut aus. Es gibt keine Zweitprüfung und keinen Review-Kindjob.
 - Transportfehler ohne Modellantwort (Timeout, 5xx, 429) sind kein bezahlter Versuch; höchstens
   ein zweiter Transportversuch, nie ein dritter. 401/403 bricht sofort ab.
 - Einzige Ausnahme von der Ein-Versuch-Regel: eine formal unbrauchbare Anbieterantwort

@@ -1027,6 +1027,9 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true, transport 
         // Absichtlich zuletzt: Modelle brechen nach dem umfangreichsten Objekt ab.
         // Alle Lesertext- und Gate-Felder stehen davor und werden so nie vergessen.
         impact_assessment: IMPACT_PROMPT_SCHEMA,
+        // Abschlussmarke: erst nach dem vollständigen impact_assessment. Fehlt sie,
+        // hat das Modell vorzeitig aufgehört. Der Transport entfernt sie wieder.
+        analysis_complete: true,
       }],
       $defs: IMPACT_PROMPT_DEFS,
     }),
