@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId } from '../../scripts/news/openai-transport.mjs';
 import { releaseDeterministicImpact, deterministicGateIssues } from '../../scripts/news/impact-gate.mjs';
-import { paidAttemptsExhausted, AI_PROCESSING_VERSION } from '../../scripts/news/run.mjs';
+import { paidAttemptsExhausted, AI_PROCESSING_VERSION, pendingRecord } from '../../scripts/news/run.mjs';
 import { validateAnalysis, sha256 } from '../../scripts/news/lib.mjs';
 import { publicImpactAssessment } from '../../scripts/news/impact-release.mjs';
 import { syntheticPotentialAssessment, syntheticPotentialPath } from './fixtures/impact21.mjs';
@@ -263,4 +263,16 @@ test('fragments where paths belong are discarded, incomplete paths stay for the 
   assert.ok(errors.includes('IMPACT_POTENTIAL_SCOPE_REQUIRED:planet'), 'the incomplete planet path still fails the gate');
   assert.equal(errors.some((e) => e.endsWith(':human') || e.endsWith(':democracy')), false, errors.join(','));
   assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('Datum der Berichterstattung wird nicht ergänzt'));
+});
+
+test('a queued potential reassessment survives a deferral hold of the published story', () => {
+  const existing = { story_id: 'wt-old', published: true, content_hash: 'old', sources: [{ url: 'https://example.org/old', source_id: 'official' }],
+    pending_update: { detected_at: '2026-09-15T18:00:00Z', reason: 'IMPACT_REASSESSMENT_REQUESTED', impact_reassessment: true, quality_errors: [], quality_retry_count: 0 } };
+  const candidate = { story_id: 'wt-old', content_hash: 'old', fresh: false, reassessment: false, impact_reassessment: true, existing_story: existing,
+    sources: [{ url: 'https://example.org/old', source_id: 'official', title: 'Q', summary: 'Q', content_hash: 'c' }], preanalysis: { internal_relevance_score: 40 } };
+  const held = pendingRecord(candidate, 'AI_BUDGET_OR_BATCH_LIMIT', '2026-09-16T00:00:00Z');
+  assert.equal(held.pending_update.impact_reassessment, true);
+  assert.equal(held.pending_update.reason, 'AI_BUDGET_OR_BATCH_LIMIT');
+  const plain = pendingRecord({ ...candidate, impact_reassessment: false, existing_story: { ...existing, pending_update: { detected_at: '2026-09-15T18:00:00Z' } } }, 'AI_BUDGET_OR_BATCH_LIMIT', '2026-09-16T00:00:00Z');
+  assert.equal('impact_reassessment' in plain.pending_update, false, 'an ordinary update never gains the flag');
 });

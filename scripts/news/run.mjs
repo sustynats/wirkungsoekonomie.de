@@ -356,6 +356,10 @@ export function pendingRecord(candidate, reason, now, qualityErrors = []) {
         reassessment: Boolean(candidate.reassessment),
         fresh: Boolean(candidate.fresh),
         consolidation: Boolean(existing.pending_update?.consolidation),
+        // A queued potential reassessment survives every hold; it is cleared
+        // only by the reassessed release itself. Until 16.09. a single deferral
+        // rewrote this record and silently emptied the repair queue.
+        ...(existing.pending_update?.impact_reassessment || candidate.impact_reassessment ? { impact_reassessment: true } : {}),
         source_integrity: sourceIntegrityRecord(candidate.source_integrity),
       },
     };
@@ -832,6 +836,14 @@ export function partitionAiQueue(eligible, stage, maxStories, now = new Date().t
     const reserved = queued.slice(0, reserve);
     const reservedIds = new Set(reserved.map((candidate) => candidate.story_id));
     selected = [...top, ...allowed.filter((candidate) => !reservedIds.has(candidate.story_id) && !topIds.has(candidate.story_id)).slice(0, limit - reserve - top.length), ...reserved];
+  }
+  // The newest online stories queued for a potential reassessment (the last
+  // 30 published without a complete profile) must not be starved by the fresh
+  // stream: one slot per run is theirs as long as any is waiting.
+  const repair = allowed.find((candidate) => candidate.impact_reassessment);
+  if (repair && limit >= 2 && !selected.some((candidate) => candidate.impact_reassessment)) {
+    const keep = selected.filter((candidate) => candidate.story_id !== repair.story_id);
+    selected = [...keep.slice(0, limit - 1), repair];
   }
   const selectedIds = new Set(selected.map((candidate) => candidate.story_id));
   return { selected, deferred: eligible.filter((candidate) => !selectedIds.has(candidate.story_id)) };
