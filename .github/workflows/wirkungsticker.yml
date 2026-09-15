@@ -9,7 +9,8 @@ run-name: ${{ inputs.request_id || 'Wirkungsticker' }}
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    # Versetzte Minuten: GitHub lässt Zeitpläne auf :00/:15/:30/:45 häufig aus.
+    - cron: "4,19,34,49 * * * *"
   workflow_dispatch:
     inputs:
       request_id:

@@ -14,7 +14,7 @@ test('the ticker workflow is a single serialized lane without bridge phases or c
   assert.match(outer, /cancel-in-progress: false\n/, 'in-flight publications must finish');
   assert.doesNotMatch(ticker, /WOEK_NEWS_BRIDGE_PHASE|dropbox_chatgpt_bridge|wirkungsticker-oracle-bridge-access|scripts\/news\/bridge\//);
   assert.doesNotMatch(ticker, /codex\/wirkungsticker(?:-import)?-clock/, 'no push-triggered clock branches');
-  assert.match(ticker, /^  schedule:\n    - cron: "\*\/15 \* \* \* \*"\n/m, 'one regular cadence');
+  assert.match(ticker, /^  schedule:\n(?:    #[^\n]*\n)*    - cron: "4,19,34,49 \* \* \* \*"\n/m, 'one regular cadence on off-peak minutes');
   assert.match(ticker, /if: vars\.WIRKUNGSTICKER_PROCESSING_MODE == 'api' \|\| vars\.WIRKUNGSTICKER_PROCESSING_MODE == ''/);
 });
 
