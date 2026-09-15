@@ -1533,7 +1533,8 @@ export async function runWirkungsticker(options = {}) {
   const aiEnabled = mode === 'api' && String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
   if (selected.length && aiEnabled) {
     assertAutomaticImpactTransport(typeof options.callAiImpl === 'function');
-    const aiDeadline = Date.now() + 7 * 60000;
+    // Direktbetrieb: bis zu vier Aufrufe je Lauf mit je bis zu sechs Minuten.
+    const aiDeadline = Date.now() + Number(process.env.WOEK_NEWS_AI_PHASE_MINUTES || 20) * 60000;
     const sourceRegistryById = new Map(enabledSources.map((source) => [source.source_id, source]));
     for (let offset = 0; offset < selected.length; offset += aiBatchSize) {
       const batch = selected.slice(offset, offset + aiBatchSize);

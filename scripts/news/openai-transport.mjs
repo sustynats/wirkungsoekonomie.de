@@ -39,9 +39,10 @@ export const SINGLE_CALL_INSTRUCTIONS = [
   'Antworte ausschließlich mit einem einzigen JSON-Objekt {"analyses":[...]} gemäß Schema, ohne Markdown und ohne Kommentar.',
 ].join('\n');
 
-// Ausgabebudget: ein vollständiges Paket braucht typisch 8k–12k, selten über 20k
-// Antwort-Token; Reasoning-Token zählen mit. 40k deckt das ab und begrenzt die Kosten.
-export function buildOpenAiRequest(prompt, { model, maxOutputTokens = 40000, reasoningEffort = 'low' } = {}) {
+// Ausgabebudget: ein vollständiges Paket braucht gemessen 6k–8k Antwort-Token;
+// Reasoning-Token zählen mit. 24k deckt das mit Reserve ab und begrenzt Laufzeit
+// und Kosten einer entgleisten Generierung (Lauf 6: zwei Aufrufe über 240 s).
+export function buildOpenAiRequest(prompt, { model, maxOutputTokens = 24000, reasoningEffort = 'low' } = {}) {
   return {
     model, store: false,
     reasoning: { effort: reasoningEffort },
@@ -130,7 +131,7 @@ export async function callOpenAiDirect(stories, options = {}) {
   const model = options.model || newsModel();
   const prompt = options.prompt || buildAnalysisPrompt(stories, { transport: 'api' });
   const body = JSON.stringify(buildOpenAiRequest(prompt, { model,
-    maxOutputTokens: Number(options.maxOutputTokens || process.env.WOEK_NEWS_MAX_OUTPUT_TOKENS || 40000),
+    maxOutputTokens: Number(options.maxOutputTokens || process.env.WOEK_NEWS_MAX_OUTPUT_TOKENS || 24000),
     reasoningEffort: options.reasoningEffort || process.env.WOEK_NEWS_REASONING_EFFORT || 'low' }));
   // A transport failure without any completed model output is not a paid
   // attempt. Two transport tries at most; never a third provider call.
