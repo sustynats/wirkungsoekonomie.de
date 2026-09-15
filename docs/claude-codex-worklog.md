@@ -242,3 +242,9 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Was:** Die Rolle der ChatGPT-Worker übernimmt ein GitHub-Workflow (`redaktionsworker.yml`, alle 15 Minuten versetzt): offene Redaktionsaufträge über die Oracle-Schnittstelle lesen, Eingabepaket atomar claimen, genau ein OpenAI-Aufruf mit dem unveränderten Vertrag V4, Prüfung mit `validateApiOutput`, Ablage als Entwurf in `20_OUTPUT_READY`; die Redaktionsapp legt ihn Natalie zur Freigabe vor. Zusätzlich `redaktions-kandidaten.mjs`: stark relevante Meldungen werden als regulärer Auftrag für Meinung & Analyse eingereiht (höchstens 1 je Lauf, 2 je Tag, je Meldung einmal; `author_notes` leer).
 - **Geprüft:** `tests/news/redaktionsworker.test.mjs` (5 Tests: Auswahl, Claim/Entwurf/Ablage, Ein-Versuch-Regel, Tagesdeckel und Sperre, Kandidaten).
 - **Offen:** Erste echte Aufträge beobachten; Natalie bestätigt einmal, dass Entwürfe in der App erscheinen. Oracle-Prozessor nicht aktivieren.
+
+## 2026-09-16 - Claude: Wirkungspotenzial führt jede Dimension, beobachtete Wirkung als eigene Zeile
+
+- **Was:** Bei der Catania-Meldung wirkten die Mensch-Balken doppelt: Die Ansicht setzte die belegte, bereits eingetretene Wirkung (Flüge abgesagt) an die erste Stelle und das modellierte Potenzial darunter als „Weiteres Potenzial“; beide waren Stufe 2 und laufend. Jetzt führt in jeder Dimension das Wirkungspotenzial (Ring, Balken, Richtung, Pfadtitel), und eine beobachtete Wirkung folgt klar beschriftet als „Beobachtet:“ mit eigenem Ring und eigenen Balken (`scripts/news/visuals.mjs`). Die Ableitung (`deriveImpactPresentation`) ist unverändert; nur die Ansicht wechselt die Reihenfolge und die Beschriftung.
+- **Geprüft:** `tests/news/impact-status-ring.test.mjs` (Potenzial vor Beobachtet, keine „Weiteres Potenzial“-Zeile mehr), Ansichts- und Ticker-Tests 182/182, lokale Renderprobe der Catania-Meldung.
+- **Offen:** Live-Sichtprüfung nach dem Deploy.
