@@ -130,6 +130,22 @@ Der Nachrichtenworkflow holt freigegebene Fassungen in jedem Lauf ab
 (`scripts/news/import-approved-editorials.mjs --claim`) und quittiert erst nach dem erfolgreichen
 Push (`--finalize`). Eine gestörte Redaktion hält den Nachrichtenlauf nie an.
 
+8. **Automatische Aufträge (seit 16.09.):** Meinung-&-Analyse-Kandidaten aus stark relevanten
+   Meldungen (`scripts/news/redaktions-kandidaten.mjs`, standardmäßig an, `WOEK_EDITORIAL_AUTO_CANDIDATES=false`
+   schaltet ab) und **Nachgesehen/Nachgehört aus den Sendungsfeeds** (`scripts/news/sendungs-kandidaten.mjs`,
+   Quellen in `data/news/show-feeds.json`: maybrit illner und Lanz + Precht über offizielle ZDF-Podcast-Feeds,
+   Markus Lanz, MAITHINK X und Terra X Lesch & Co über den MediathekViewWeb-Feed mit Link auf die
+   ZDF-Sendungsseite, NEU DENKEN über den Podigee-Feed). Neue Folgen der letzten sieben Tage werden je
+   Lauf höchstens eine, je Tag höchstens drei (`WOEK_EPISODE_CANDIDATES_PER_RUN/_PER_DAY`) als regulärer
+   Auftrag eingereiht: `kind` watched/listened, Beschreibung des Anbieters, Sendungsseite und Mediendatei
+   als Links. Liefert der Feed ein offizielles Transkript (`podcast:transcript`, bei Lanz + Precht und
+   NEU DENKEN als VTT mit Zeitmarken), reist es im Auftragspaket unter `origin.transcript` mit (bis
+   150 000 Zeichen), damit der eine Modellaufruf den Wortlaut kennt. ZDF-Sendungen haben kein Transkript;
+   dort arbeitet der Worker mit Sendungsseite und Web-Suche und meldet sonst HOLD. Folgen, die Natalie
+   bereits beauftragt oder veröffentlicht hat, werden über die URL erkannt und nicht erneut vorgeschlagen.
+   `author_notes` bleiben leer; der Entwurf ist ein Vorschlag zur Bestätigung.
+9. Tagesdeckel des Workers seit 16.09. auf 16 Aufträge (Rückstand plus Kandidaten).
+
 ## Prüfen
 
 ```bash

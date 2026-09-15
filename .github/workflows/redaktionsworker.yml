@@ -47,7 +47,11 @@ jobs:
       WOEK_NEWS_MODEL: ${{ vars.WOEK_NEWS_MODEL || 'gpt-5.4-mini' }}
       WOEK_EDITORIAL_REASONING_EFFORT: ${{ vars.WOEK_EDITORIAL_REASONING_EFFORT || 'medium' }}
       WOEK_EDITORIAL_MAX_JOBS_PER_RUN: ${{ inputs.max_jobs || vars.WOEK_EDITORIAL_MAX_JOBS_PER_RUN || '2' }}
-      WOEK_EDITORIAL_MAX_JOBS_PER_DAY: ${{ vars.WOEK_EDITORIAL_MAX_JOBS_PER_DAY || '10' }}
+      # 16 je Tag seit 16.09.: Rückstand von rund 20 Aufträgen plus automatische
+      # Sendungs- und Analysekandidaten; je Auftrag wenige Cent (gpt-5.6-luna).
+      WOEK_EDITORIAL_MAX_JOBS_PER_DAY: ${{ vars.WOEK_EDITORIAL_MAX_JOBS_PER_DAY || '16' }}
+      WOEK_EPISODE_CANDIDATES_PER_RUN: ${{ vars.WOEK_EPISODE_CANDIDATES_PER_RUN || '1' }}
+      WOEK_EPISODE_CANDIDATES_PER_DAY: ${{ vars.WOEK_EPISODE_CANDIDATES_PER_DAY || '3' }}
       # github.workspace ist auf Job-Ebene verfügbar; runner.temp nur in Schritten.
       # Kein Punkt-Ordner: upload-artifact lässt versteckte Dateien standardmäßig aus.
       WOEK_NEWS_RAW_OUTPUT_DIR: ${{ github.workspace }}/editorial-raw-output
@@ -64,9 +68,18 @@ jobs:
       - name: Worker tests
         run: node --test tests/news/redaktionsworker.test.mjs tests/news/import-approved-editorials.test.mjs
       - name: Propose Meinung-und-Analyse candidates as editorial requests
-        if: inputs.propose_candidates == true || vars.WOEK_EDITORIAL_AUTO_CANDIDATES == 'true'
+        # Seit 16.09. standardmäßig an (Natalie: Meinung & Analyse soll automatisiert laufen);
+        # abschaltbar über die Variable WOEK_EDITORIAL_AUTO_CANDIDATES=false.
+        if: inputs.propose_candidates == true || vars.WOEK_EDITORIAL_AUTO_CANDIDATES != 'false'
         continue-on-error: true
         run: node scripts/news/redaktions-kandidaten.mjs
+      - name: Propose Nachgesehen and Nachgehört requests from the followed shows
+        # Neue Folgen aus data/news/show-feeds.json werden als reguläre Aufträge eingereiht
+        # (mit offiziellem Transkript, wo der Feed eines liefert); abschaltbar über
+        # WOEK_EDITORIAL_AUTO_EPISODES=false.
+        if: vars.WOEK_EDITORIAL_AUTO_EPISODES != 'false'
+        continue-on-error: true
+        run: node scripts/news/sendungs-kandidaten.mjs
       - name: Draft open editorial requests (one paid call per request)
         run: node scripts/news/redaktionsworker.mjs
       - name: Preserve paid model answers for diagnosis
