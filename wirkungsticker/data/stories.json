@@ -2,8 +2,1804 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-15T17:16:38.937Z",
+  "updated_at": "2026-09-15T21:33:39.240Z",
   "stories": [
+    {
+      "story_id": "wt-3b985e43c3905275",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3b985e43c3905275-3acc33a434fa617b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3b985e43c3905275-2811f166ebcd1b2d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3b985e43c3905275-bd33e89f7d8ce7f8-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sizilien-flughafen-catania-bleibt-bis-zum-abend-wegen-aschewolke-des-vulkans-atna-geschl-905275",
+      "title": "Flughafen Catania bleibt wegen neuer Ätna-Aschewolke bis 22 Uhr geschlossen",
+      "source_summary": "Der Deutschlandfunk berichtet, dass der Flughafen Catania auf Sizilien wegen einer neuen Aschewolke des Ätna weiterhin gesperrt bleibt. Nach Behördenangaben wurden alle Starts und Landungen bis 22:00 Uhr abgesagt.\n\nDie Quelle schreibt, dass der Ätna seit Sonntag wieder Asche ausstößt und zahlreiche Flüge ausgefallen sind. Zunächst war eine Wiederöffnung am frühen Nachmittag erwartet worden. Eine unabhängige Bestätigung, genaue Passagierzahlen und die weitere Entwicklung nach 22:00 Uhr liegen in der gelieferten Auswahl nicht vor.",
+      "summary": "Eine neue Aschewolke des Ätna hält den Flughafen Catania bis 22 Uhr geschlossen. Belegt sind Flugausfälle; Umfang und weitere Dauer bleiben offen.",
+      "detail_summary": "Der Flughafen Catania bleibt wegen einer neuen Aschewolke des Ätna gesperrt. Nach Behördenangaben wurden Starts und Landungen bis 22:00 Uhr abgesagt. Der Vulkan stößt laut Deutschlandfunk seit Sonntag wieder Asche aus; zahlreiche Flüge fielen aus. Für Reisende entstehen dadurch kurzfristige Umleitungen, Wartezeiten und mögliche Folgekosten. Wie viele Menschen betroffen sind und wann der Betrieb vollständig zurückkehrt, ist nicht belegt. Die Wirkungsanalyse beschreibt deshalb bedingte Potenziale, keinen Wirkungsnachweis.",
+      "why_relevant": "Die Sperrung unterbricht grenzüberschreitenden Luftverkehr und kann Reisende, Beschäftigte und regionale Versorgung kurzfristig belasten. Die Reichweite der Störung ist noch nicht quantifiziert.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ongoing",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Sperrung des Flughafens Catania wegen einer neuen Ätna-Aschewolke bis 22:00 Uhr",
+        "evaluation_target": {
+          "label": "Flughafensperrung und daraus mögliche Verkehrsstörung",
+          "type": "event"
+        },
+        "baseline": "Regulärer Flugbetrieb am Flughafen Catania ohne die gemeldete Aschewolke und Sperrung",
+        "temporal_status": "ongoing",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne die Aschewolke und die Sicherheitsentscheidung wäre der reguläre Flugbetrieb voraussichtlich weniger stark unterbrochen; Dauer und Vergleich bleiben unquantifiziert.",
+        "reference_frame": [
+          "Sicherheit von Reisenden und Beschäftigten",
+          "Resilienz kritischer Verkehrsinfrastruktur",
+          "Agenda 2030/SDG 9 und SDG 11"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Sperrung kann Reisende, Beschäftigte und Unternehmen durch Ausfälle, Verzögerungen und Kosten betreffen. Verteilung und Intensität sind nicht gemessen.",
+            "planet": "Ausweichverkehre könnten zusätzliche Emissionen verursachen; zugleich kann ausgefallener Flugverkehr kurzfristig Emissionen vermeiden. Richtung und Umfang sind offen.",
+            "democracy": "Ein unmittelbarer institutioneller oder demokratischer Effekt ist nicht belegt. Indirekt kann die Bewältigung der Störung Anforderungen an transparente Sicherheits- und Krisenkommunikation stellen."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Der Flugbetrieb wird aus Sicherheitsgründen unterbrochen.",
+          "second_order": "Reise-, Wirtschafts- und Ausweichverkehrsfolgen können entstehen, wenn die Sperrung anhält.",
+          "third_order": "Bei wiederkehrenden oder längeren Störungen könnten Infrastrukturplanung und Krisenkoordination angepasst werden; dies ist nicht belegt.",
+          "enablement": [],
+          "counter_evidence": [
+            "Die Sperrung ist zeitlich bis 22:00 Uhr begrenzt; eine schnelle Wiederaufnahme könnte Folgeschäden begrenzen.",
+            "Es fehlen Zahlen zu Betroffenen, Ausweichverkehr und wirtschaftlichen Folgen."
+          ],
+          "source_independence": "Nur eine journalistische Quelle des Deutschlandfunks liegt vor. Sie beruft sich teilweise auf Behördenangaben; unabhängige Bestätigung ist nicht geliefert.",
+          "institutional_status": "Es handelt sich um eine laufende Flughafensperrung beziehungsweise Betriebsentscheidung; ein weitergehender rechtlicher oder politischer Beschluss ist nicht belegt."
+        },
+        "observed_effects": [
+          {
+            "dimension": "human",
+            "change": "Starts und Landungen am Flughafen Catania wurden nach Behördenangaben bis 22:00 Uhr abgesagt.",
+            "direction": "negative",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "data_status": "observed",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Erreichbarkeit und sichere Mobilität",
+            "reference_space": "Flughafen Catania und dessen Reisende",
+            "observed_at": "2026-09-15",
+            "temporal_status": "ongoing",
+            "magnitude": 2,
+            "mechanism": "Betriebsunterbrechung wegen Aschewolke",
+            "recipients": [
+              "Reisende",
+              "Beschäftigte"
+            ],
+            "time_horizon": "Bis mindestens 22:00 Uhr",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Zahl der betroffenen Reisenden ist nicht genannt; zahlreiche Flüge werden berichtet.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 3,
+                "rationale": "Starts und Landungen sind vollständig abgesagt.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die gemeldete Sperre reicht zunächst bis 22:00 Uhr.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 0,
+                "rationale": "Eine dauerhafte Veränderung ist nicht belegt.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 2,
+                "rationale": "Reisende mit Anschluss- oder Versorgungsabhängigkeit können besonders betroffen sein.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Die beobachtete Veränderung betrifft zunächst den Flughafenbetrieb.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Eine materielle Schutzgrenze für Menschen ist nicht belegt.",
+              "reference_frame": "Sichere Mobilität",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 9,
+              "divisor": 6,
+              "raw": 1.5,
+              "rounded": 2,
+              "protection_floor": 0,
+              "final": 2
+            }
+          }
+        ],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "modelled",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt eine vollständige Betriebsunterbrechung bis 22:00 Uhr und zahlreiche Ausfälle. Betroffenenzahl, Kosten und Dauer darüber hinaus bleiben unbekannt.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "temporal_status": "ongoing",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Kurzfristige Unterbrechung von Mobilität und Reiseplanung durch den Ausfall von Starts und Landungen",
+                "mechanism": "Die Aschewolke führt zur Sperrung des Flughafens; Reisende müssen warten oder ausweichen.",
+                "recipients": [
+                  "Reisende",
+                  "Beschäftigte",
+                  "Unternehmen"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ongoing",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Sperrung besteht bis 22:00 Uhr oder wird verlängert.",
+                "reference_space": "Flughafen Catania und angeschlossene Reiseverbindungen",
+                "time_horizon": "Stunden bis wenige Tage",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Ausgefallene Flüge erzeugen mindestens kurzfristige Verzögerungen oder Umleitungen.",
+                "source_support": "Belegt sind Sperrung und abgesagte Starts und Landungen; konkrete Betroffenenzahlen fehlen.",
+                "limitations": "Keine unabhängige Bestätigung und keine Daten zu Reisenden oder Folgekosten.",
+                "first_order": "Starts und Landungen entfallen.",
+                "second_order": "Reisende und Unternehmen müssen Verbindungen verschieben oder ersetzen.",
+                "third_order": "Bei Verlängerung können regionale Wirtschafts- und Versorgungsabläufe belastet werden.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die kurzfristige Störung ist belegt; ihre Reichweite bleibt wegen fehlender Zahlen begrenzt."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": "Starts und Landungen wurden bis 22:00 Uhr abgesagt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzlichen Wirkungsdaten in der gelieferten Quelle; Reichweite und Dauer bleiben Wissensgrenzen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Zahlreiche Flüge sind betroffen, die Zahl der Reisenden fehlt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Der reguläre Start- und Landebetrieb ist vollständig unterbrochen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Quelle nennt zunächst eine Begrenzung bis 22:00 Uhr.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine dauerhafte Zustandsänderung ist belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Abhängige Reisende und Beschäftigte können kurzfristig stärker belastet sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der primäre Effekt bleibt zunächst auf den Verkehrsknoten begrenzt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete Schutzgrenze für Menschen ist aus der Quelle ableitbar.",
+                  "reference_frame": "Sichere Mobilität",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "open",
+                "label": "Mögliche zusätzliche Kosten und Belastungen durch Ausweichverbindungen",
+                "mechanism": "Eine anhaltende Sperrung kann Reisende zu Umwegen, Umbuchungen oder Übernachtungen zwingen.",
+                "recipients": [
+                  "Reisende",
+                  "Unternehmen"
+                ],
+                "magnitude": 1,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "low",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Sperrung dauert länger an und Ausweichkapazitäten reichen nicht aus.",
+                "reference_space": "Sizilien und angeschlossene Reiseverbindungen",
+                "time_horizon": "Tage",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ausfälle führen zu zusätzlichen Reise- und Organisationsaufwänden.",
+                "source_support": "Die Quelle belegt zahlreiche Flugausfälle, nicht aber Kosten oder Umleitungen.",
+                "limitations": "Keine Betroffenen- oder Kostendaten.",
+                "first_order": "Verbindungen fallen aus.",
+                "second_order": "Ausweichplanung und zusätzliche Aufwände können entstehen.",
+                "third_order": "Bei längerer Dauer sind regionale Einnahmeausfälle denkbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist plausibel, aber mangels Umfangsdaten niedrig bis begrenzt einzuschätzen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle liefert keine Daten zu Kosten oder Ausweichverkehr; der Pfad bleibt hypothetisch.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffenenzahl und Reichweite der Ausweichfolgen sind unbekannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Zusatzbelastungen sind möglich, aber nicht quantifiziert.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer über 22:00 Uhr hinaus ist offen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Reiseaufwände wären grundsätzlich reversibel.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen ohne flexible Alternativen könnten stärker betroffen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt zunächst bei individuellen und betrieblichen Ausweichentscheidungen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete materielle Schutzgrenze ist belegt.",
+                  "reference_frame": "Zugang zu Mobilität",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Die beobachtete Betriebssperre hat kurzfristig negative Folgen für Mobilität. Weitergehende menschliche Folgen sind plausibel, aber wegen fehlender Zahlen und kurzer gemeldeter Dauer begrenzt.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt keinen vergleichbaren positiven Hauptpfad; mögliche Entlastungen durch vermiedene Risiken sind nicht quantifiziert."
+            },
+            "potential_presentation": {
+              "ringStatus": "emerging",
+              "ringLabel": "Erste / laufende Wirkung",
+              "magnitudeBars": 2,
+              "directionLabel": "− laufende Wirkung",
+              "shortPathLabel": "Kurzfristige Unterbrechung von Mobilität und Reiseplanung durch den Ausfall von Starts und Landungen",
+              "direction": "negative"
+            },
+            "observations": [
+              {
+                "dimension": "human",
+                "change": "Starts und Landungen am Flughafen Catania wurden nach Behördenangaben bis 22:00 Uhr abgesagt.",
+                "direction": "negative",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "data_status": "observed",
+                "evidence": "low",
+                "attribution": "open",
+                "reference_frame": "Erreichbarkeit und sichere Mobilität",
+                "reference_space": "Flughafen Catania und dessen Reisende",
+                "observed_at": "2026-09-15",
+                "temporal_status": "ongoing",
+                "magnitude": 2,
+                "mechanism": "Betriebsunterbrechung wegen Aschewolke",
+                "recipients": [
+                  "Reisende",
+                  "Beschäftigte"
+                ],
+                "time_horizon": "Bis mindestens 22:00 Uhr",
+                "same_target": true,
+                "same_baseline": true,
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Zahl der betroffenen Reisenden ist nicht genannt; zahlreiche Flüge werden berichtet.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Starts und Landungen sind vollständig abgesagt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die gemeldete Sperre reicht zunächst bis 22:00 Uhr.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine dauerhafte Veränderung ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Reisende mit Anschluss- oder Versorgungsabhängigkeit können besonders betroffen sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Die beobachtete Veränderung betrifft zunächst den Flughafenbetrieb.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine materielle Schutzgrenze für Menschen ist nicht belegt.",
+                  "reference_frame": "Sichere Mobilität",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "observed"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                },
+                "presentation": {
+                  "ringStatus": "emerging",
+                  "ringLabel": "Erste / laufende Wirkung",
+                  "magnitudeBars": 2,
+                  "directionLabel": "− laufende Wirkung",
+                  "shortPathLabel": "Starts und Landungen am Flughafen Catania wurden nach Behördenangaben bis 22:00 Uhr abgesagt.",
+                  "direction": "negative"
+                }
+              }
+            ],
+            "displayed_observation": {
+              "dimension": "human",
+              "change": "Starts und Landungen am Flughafen Catania wurden nach Behördenangaben bis 22:00 Uhr abgesagt.",
+              "direction": "negative",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "data_status": "observed",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Erreichbarkeit und sichere Mobilität",
+              "reference_space": "Flughafen Catania und dessen Reisende",
+              "observed_at": "2026-09-15",
+              "temporal_status": "ongoing",
+              "magnitude": 2,
+              "mechanism": "Betriebsunterbrechung wegen Aschewolke",
+              "recipients": [
+                "Reisende",
+                "Beschäftigte"
+              ],
+              "time_horizon": "Bis mindestens 22:00 Uhr",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Zahl der betroffenen Reisenden ist nicht genannt; zahlreiche Flüge werden berichtet.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Starts und Landungen sind vollständig abgesagt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die gemeldete Sperre reicht zunächst bis 22:00 Uhr.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine dauerhafte Veränderung ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Reisende mit Anschluss- oder Versorgungsabhängigkeit können besonders betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Die beobachtete Veränderung betrifft zunächst den Flughafenbetrieb.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine materielle Schutzgrenze für Menschen ist nicht belegt.",
+                "reference_frame": "Sichere Mobilität",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              },
+              "presentation": {
+                "ringStatus": "emerging",
+                "ringLabel": "Erste / laufende Wirkung",
+                "magnitudeBars": 2,
+                "directionLabel": "− laufende Wirkung",
+                "shortPathLabel": "Starts und Landungen am Flughafen Catania wurden nach Behördenangaben bis 22:00 Uhr abgesagt.",
+                "direction": "negative"
+              }
+            },
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 2,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "Starts und Landungen am Flughafen Catania wurden nach Behördenangaben bis 22:00 Uhr abgesagt.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Laufende Prüfung",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt weder zusätzliche Emissionen durch Ausweichverkehr noch vermiedene Emissionen durch Flugausfälle. Die ökologische Richtung bleibt offen.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Unklare Emissionsverlagerung durch Flugausfälle und mögliche Ausweichverkehre",
+                "mechanism": "Ausgefallene Flüge können Emissionen vermeiden, während alternative Verkehrswege oder spätere Ersatzflüge zusätzliche Emissionen verursachen können.",
+                "recipients": [
+                  "Natur",
+                  "Reisende",
+                  "Verkehrssysteme"
+                ],
+                "magnitude": 1,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Reisende oder Betreiber nutzen alternative oder nachgeholte Verbindungen.",
+                "reference_space": "Flughafen Catania und betroffene Reisewege",
+                "time_horizon": "Tage",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ausweich- und Nachholverkehr verändern die gegenüber dem Regelbetrieb anfallenden Emissionen.",
+                "source_support": "Die Quelle belegt Flugausfälle, enthält aber keine Emissions- oder Verkehrsvergleichsdaten.",
+                "limitations": "Richtung, Umfang und Dauer der Emissionsänderung sind unbekannt.",
+                "first_order": "Flüge fallen aus.",
+                "second_order": "Verkehr kann auf andere Wege oder Zeitpunkte verlagert werden.",
+                "third_order": "Kumulative Umweltfolgen wären nur bei längerer oder wiederholter Störung relevant.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Sowohl Vermeidung als auch Verlagerung sind möglich; ohne Verkehrsdaten bleibt die Bandbreite niedrig."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine Umwelt- oder Verkehrsdaten in der gelieferten Quelle; Richtung nicht entscheidbar.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Nur ein Flughafen und nicht quantifizierte Flugausfälle sind belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Emissionsänderung ist nicht gemessen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Sperrung ist zunächst zeitlich begrenzt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Kurzfristige Verkehrsemissionen verursachen hier keinen belegten irreversiblen Pfad.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ökologische Betroffenheit ist ohne Messdaten nicht näher bestimmbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein systemischer Umweltpfad ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenze ist in der Quelle ausgewiesen.",
+                  "reference_frame": "Verkehrsbedingte Emissionen und Umweltbelastung",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die Meldung trägt einen möglichen Umweltpfad über Verkehrsverlagerung, aber keine Richtung. Flugausfälle und Ersatzverkehre können gegenläufig wirken.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Vermeidene Flugemissionen und zusätzliche Ausweich- oder Nachholemissionen sind mögliche Gegenpfade; beide sind ungemessen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Unklare Emissionsverlagerung durch Flugausfälle und mögliche Ausweichverkehre",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Unklare Emissionsverlagerung durch Flugausfälle und mögliche Ausweichverkehre",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keinen belegten institutionellen oder demokratischen Folgeeffekt. Ein begrenztes Potenzial betrifft nur Transparenz und Krisenkommunikation.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Möglicher Bedarf an transparenter Krisenkommunikation bei längerer Flughafensperrung",
+                "mechanism": "Eine andauernde Störung kann Behörden und Betreiber zu klaren Informationen über Sicherheitslage, Dauer und Wiederöffnung veranlassen.",
+                "recipients": [
+                  "Reisende",
+                  "Behörden",
+                  "Flughafenbetreiber"
+                ],
+                "magnitude": 0,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Sperrung verlängert sich und widersprüchliche oder unvollständige Informationen erschweren Entscheidungen.",
+                "reference_space": "Öffentliche Krisenkommunikation rund um den Flughafen Catania",
+                "time_horizon": "Stunden bis Tage",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Transparente Informationen beeinflussen die Fähigkeit Betroffener, Entscheidungen zu treffen.",
+                "source_support": "Die Quelle berichtet über die Sperrung, belegt aber keinen Kommunikationskonflikt oder demokratischen Effekt.",
+                "limitations": "Keine Daten zu Vertrauen, Informationszugang oder institutioneller Reaktion.",
+                "first_order": "Behördenangaben zur Betriebsdauer werden öffentlich vermittelt.",
+                "second_order": "Reisende können ihre Entscheidungen an diesen Angaben ausrichten.",
+                "third_order": "Ein demokratischer oder institutioneller Strukturwandel ist nicht aus dem Ereignis ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der Pfad bleibt auf situative Information beschränkt und ist nicht als demokratische Zustandsänderung belegt."
+                },
+                "negligibility_rationale": "Im abgegrenzten Zeitraum und mangels belegter Vertrauens- oder Beteiligungseffekte ist eine demokratische Zustandsänderung praktisch vernachlässigbar.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle zu Vertrauen, Beteiligung, institutioneller Korrektur oder politischer Reaktion; demokratische Wirkung bleibt offen und voraussichtlich begrenzt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine demokratische Betroffenengruppe oder Reichweite ist belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Die Quelle weist keinen demokratischen Eingriff oder Konflikt aus.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Kein dauerhafter institutioneller Effekt ist belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible demokratische Veränderung ist plausibel belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine spezifische demokratische Schutzvulnerabilität ist erkennbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein institutioneller oder diskursiver Systempfad ist belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine demokratische Schutzgrenze wird durch die Meldung oder das Ereignis berührt.",
+                  "reference_frame": "Transparente Kriseninformation und demokratische Korrekturfähigkeit",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der Nachrichtenfall betrifft primär Sicherheit und Verkehr, nicht demokratische Institutionen. Ein möglicher Kommunikationspfad bleibt mangels Belegen vernachlässigbar.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es ist kein materieller demokratischer Positiv- oder Negativpfad belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Möglicher Bedarf an transparenter Krisenkommunikation bei längerer Flughafensperrung",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Möglicher Bedarf an transparenter Krisenkommunikation bei längerer Flughafensperrung",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "analysis_complete": true,
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-15T21:36:37.698Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Die Quelle trägt die Meldung über die Aschewolke, die Flughafensperrung bis 22:00 Uhr und ausgefallene Flüge."
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "mechanism"
+            ],
+            "supported_claim": "Die Quelle verbindet die Sperrung mit der neuen Aschewolke, belegt aber keinen vollständigen Sicherheitsmechanismus."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Laufende Prüfung",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "modelled",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt eine vollständige Betriebsunterbrechung bis 22:00 Uhr und zahlreiche Ausfälle. Betroffenenzahl, Kosten und Dauer darüber hinaus bleiben unbekannt.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "temporal_status": "ongoing",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Kurzfristige Unterbrechung von Mobilität und Reiseplanung durch den Ausfall von Starts und Landungen",
+              "mechanism": "Die Aschewolke führt zur Sperrung des Flughafens; Reisende müssen warten oder ausweichen.",
+              "recipients": [
+                "Reisende",
+                "Beschäftigte",
+                "Unternehmen"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ongoing",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Sperrung besteht bis 22:00 Uhr oder wird verlängert.",
+              "reference_space": "Flughafen Catania und angeschlossene Reiseverbindungen",
+              "time_horizon": "Stunden bis wenige Tage",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Ausgefallene Flüge erzeugen mindestens kurzfristige Verzögerungen oder Umleitungen.",
+              "source_support": "Belegt sind Sperrung und abgesagte Starts und Landungen; konkrete Betroffenenzahlen fehlen.",
+              "limitations": "Keine unabhängige Bestätigung und keine Daten zu Reisenden oder Folgekosten.",
+              "first_order": "Starts und Landungen entfallen.",
+              "second_order": "Reisende und Unternehmen müssen Verbindungen verschieben oder ersetzen.",
+              "third_order": "Bei Verlängerung können regionale Wirtschafts- und Versorgungsabläufe belastet werden.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die kurzfristige Störung ist belegt; ihre Reichweite bleibt wegen fehlender Zahlen begrenzt."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": "Starts und Landungen wurden bis 22:00 Uhr abgesagt.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzlichen Wirkungsdaten in der gelieferten Quelle; Reichweite und Dauer bleiben Wissensgrenzen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Zahlreiche Flüge sind betroffen, die Zahl der Reisenden fehlt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Der reguläre Start- und Landebetrieb ist vollständig unterbrochen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Quelle nennt zunächst eine Begrenzung bis 22:00 Uhr.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine dauerhafte Zustandsänderung ist belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Abhängige Reisende und Beschäftigte können kurzfristig stärker belastet sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der primäre Effekt bleibt zunächst auf den Verkehrsknoten begrenzt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete Schutzgrenze für Menschen ist aus der Quelle ableitbar.",
+                "reference_frame": "Sichere Mobilität",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "open",
+              "label": "Mögliche zusätzliche Kosten und Belastungen durch Ausweichverbindungen",
+              "mechanism": "Eine anhaltende Sperrung kann Reisende zu Umwegen, Umbuchungen oder Übernachtungen zwingen.",
+              "recipients": [
+                "Reisende",
+                "Unternehmen"
+              ],
+              "magnitude": 1,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "low",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Sperrung dauert länger an und Ausweichkapazitäten reichen nicht aus.",
+              "reference_space": "Sizilien und angeschlossene Reiseverbindungen",
+              "time_horizon": "Tage",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ausfälle führen zu zusätzlichen Reise- und Organisationsaufwänden.",
+              "source_support": "Die Quelle belegt zahlreiche Flugausfälle, nicht aber Kosten oder Umleitungen.",
+              "limitations": "Keine Betroffenen- oder Kostendaten.",
+              "first_order": "Verbindungen fallen aus.",
+              "second_order": "Ausweichplanung und zusätzliche Aufwände können entstehen.",
+              "third_order": "Bei längerer Dauer sind regionale Einnahmeausfälle denkbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist plausibel, aber mangels Umfangsdaten niedrig bis begrenzt einzuschätzen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle liefert keine Daten zu Kosten oder Ausweichverkehr; der Pfad bleibt hypothetisch.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffenenzahl und Reichweite der Ausweichfolgen sind unbekannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Zusatzbelastungen sind möglich, aber nicht quantifiziert.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer über 22:00 Uhr hinaus ist offen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Reiseaufwände wären grundsätzlich reversibel.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen ohne flexible Alternativen könnten stärker betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt zunächst bei individuellen und betrieblichen Ausweichentscheidungen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete materielle Schutzgrenze ist belegt.",
+                "reference_frame": "Zugang zu Mobilität",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Die beobachtete Betriebssperre hat kurzfristig negative Folgen für Mobilität. Weitergehende menschliche Folgen sind plausibel, aber wegen fehlender Zahlen und kurzer gemeldeter Dauer begrenzt.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt keinen vergleichbaren positiven Hauptpfad; mögliche Entlastungen durch vermiedene Risiken sind nicht quantifiziert."
+          },
+          "potential_presentation": {
+            "ringStatus": "emerging",
+            "ringLabel": "Erste / laufende Wirkung",
+            "magnitudeBars": 2,
+            "directionLabel": "− laufende Wirkung",
+            "shortPathLabel": "Kurzfristige Unterbrechung von Mobilität und Reiseplanung durch den Ausfall von Starts und Landungen",
+            "direction": "negative"
+          },
+          "observations": [
+            {
+              "dimension": "human",
+              "change": "Starts und Landungen am Flughafen Catania wurden nach Behördenangaben bis 22:00 Uhr abgesagt.",
+              "direction": "negative",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "data_status": "observed",
+              "evidence": "low",
+              "attribution": "open",
+              "reference_frame": "Erreichbarkeit und sichere Mobilität",
+              "reference_space": "Flughafen Catania und dessen Reisende",
+              "observed_at": "2026-09-15",
+              "temporal_status": "ongoing",
+              "magnitude": 2,
+              "mechanism": "Betriebsunterbrechung wegen Aschewolke",
+              "recipients": [
+                "Reisende",
+                "Beschäftigte"
+              ],
+              "time_horizon": "Bis mindestens 22:00 Uhr",
+              "same_target": true,
+              "same_baseline": true,
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Zahl der betroffenen Reisenden ist nicht genannt; zahlreiche Flüge werden berichtet.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Starts und Landungen sind vollständig abgesagt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die gemeldete Sperre reicht zunächst bis 22:00 Uhr.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine dauerhafte Veränderung ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Reisende mit Anschluss- oder Versorgungsabhängigkeit können besonders betroffen sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Die beobachtete Veränderung betrifft zunächst den Flughafenbetrieb.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine materielle Schutzgrenze für Menschen ist nicht belegt.",
+                "reference_frame": "Sichere Mobilität",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "observed"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              },
+              "presentation": {
+                "ringStatus": "emerging",
+                "ringLabel": "Erste / laufende Wirkung",
+                "magnitudeBars": 2,
+                "directionLabel": "− laufende Wirkung",
+                "shortPathLabel": "Starts und Landungen am Flughafen Catania wurden nach Behördenangaben bis 22:00 Uhr abgesagt.",
+                "direction": "negative"
+              }
+            }
+          ],
+          "displayed_observation": {
+            "dimension": "human",
+            "change": "Starts und Landungen am Flughafen Catania wurden nach Behördenangaben bis 22:00 Uhr abgesagt.",
+            "direction": "negative",
+            "source_ids": [
+              "dlf-nachrichten"
+            ],
+            "data_status": "observed",
+            "evidence": "low",
+            "attribution": "open",
+            "reference_frame": "Erreichbarkeit und sichere Mobilität",
+            "reference_space": "Flughafen Catania und dessen Reisende",
+            "observed_at": "2026-09-15",
+            "temporal_status": "ongoing",
+            "magnitude": 2,
+            "mechanism": "Betriebsunterbrechung wegen Aschewolke",
+            "recipients": [
+              "Reisende",
+              "Beschäftigte"
+            ],
+            "time_horizon": "Bis mindestens 22:00 Uhr",
+            "same_target": true,
+            "same_baseline": true,
+            "magnitude_factors": {
+              "reach": {
+                "value": 2,
+                "rationale": "Zahl der betroffenen Reisenden ist nicht genannt; zahlreiche Flüge werden berichtet.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "intensity": {
+                "value": 3,
+                "rationale": "Starts und Landungen sind vollständig abgesagt.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "duration": {
+                "value": 1,
+                "rationale": "Die gemeldete Sperre reicht zunächst bis 22:00 Uhr.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "irreversibility": {
+                "value": 0,
+                "rationale": "Eine dauerhafte Veränderung ist nicht belegt.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "vulnerability": {
+                "value": 2,
+                "rationale": "Reisende mit Anschluss- oder Versorgungsabhängigkeit können besonders betroffen sein.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "system_depth": {
+                "value": 1,
+                "rationale": "Die beobachtete Veränderung betrifft zunächst den Flughafenbetrieb.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "protection_boundary": {
+              "decisive": false,
+              "rationale": "Eine materielle Schutzgrenze für Menschen ist nicht belegt.",
+              "reference_frame": "Sichere Mobilität",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "status": "observed"
+            },
+            "magnitude_calculation": {
+              "method_version": "2.1",
+              "sum": 9,
+              "divisor": 6,
+              "raw": 1.5,
+              "rounded": 2,
+              "protection_floor": 0,
+              "final": 2
+            },
+            "presentation": {
+              "ringStatus": "emerging",
+              "ringLabel": "Erste / laufende Wirkung",
+              "magnitudeBars": 2,
+              "directionLabel": "− laufende Wirkung",
+              "shortPathLabel": "Starts und Landungen am Flughafen Catania wurden nach Behördenangaben bis 22:00 Uhr abgesagt.",
+              "direction": "negative"
+            }
+          },
+          "ringStatus": "emerging",
+          "ringLabel": "Erste / laufende Wirkung",
+          "magnitudeBars": 2,
+          "directionLabel": "− laufende Wirkung",
+          "shortPathLabel": "Starts und Landungen am Flughafen Catania wurden nach Behördenangaben bis 22:00 Uhr abgesagt.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Laufende Prüfung",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "none",
+          "direction": "open",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt weder zusätzliche Emissionen durch Ausweichverkehr noch vermiedene Emissionen durch Flugausfälle. Die ökologische Richtung bleibt offen.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Unklare Emissionsverlagerung durch Flugausfälle und mögliche Ausweichverkehre",
+              "mechanism": "Ausgefallene Flüge können Emissionen vermeiden, während alternative Verkehrswege oder spätere Ersatzflüge zusätzliche Emissionen verursachen können.",
+              "recipients": [
+                "Natur",
+                "Reisende",
+                "Verkehrssysteme"
+              ],
+              "magnitude": 1,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Reisende oder Betreiber nutzen alternative oder nachgeholte Verbindungen.",
+              "reference_space": "Flughafen Catania und betroffene Reisewege",
+              "time_horizon": "Tage",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ausweich- und Nachholverkehr verändern die gegenüber dem Regelbetrieb anfallenden Emissionen.",
+              "source_support": "Die Quelle belegt Flugausfälle, enthält aber keine Emissions- oder Verkehrsvergleichsdaten.",
+              "limitations": "Richtung, Umfang und Dauer der Emissionsänderung sind unbekannt.",
+              "first_order": "Flüge fallen aus.",
+              "second_order": "Verkehr kann auf andere Wege oder Zeitpunkte verlagert werden.",
+              "third_order": "Kumulative Umweltfolgen wären nur bei längerer oder wiederholter Störung relevant.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Sowohl Vermeidung als auch Verlagerung sind möglich; ohne Verkehrsdaten bleibt die Bandbreite niedrig."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine Umwelt- oder Verkehrsdaten in der gelieferten Quelle; Richtung nicht entscheidbar.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Nur ein Flughafen und nicht quantifizierte Flugausfälle sind belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Emissionsänderung ist nicht gemessen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Sperrung ist zunächst zeitlich begrenzt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Kurzfristige Verkehrsemissionen verursachen hier keinen belegten irreversiblen Pfad.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ökologische Betroffenheit ist ohne Messdaten nicht näher bestimmbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein systemischer Umweltpfad ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenze ist in der Quelle ausgewiesen.",
+                "reference_frame": "Verkehrsbedingte Emissionen und Umweltbelastung",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die Meldung trägt einen möglichen Umweltpfad über Verkehrsverlagerung, aber keine Richtung. Flugausfälle und Ersatzverkehre können gegenläufig wirken.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Vermeidene Flugemissionen und zusätzliche Ausweich- oder Nachholemissionen sind mögliche Gegenpfade; beide sind ungemessen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Unklare Emissionsverlagerung durch Flugausfälle und mögliche Ausweichverkehre",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Unklare Emissionsverlagerung durch Flugausfälle und mögliche Ausweichverkehre",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "dominance": "none",
+          "direction": "open",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keinen belegten institutionellen oder demokratischen Folgeeffekt. Ein begrenztes Potenzial betrifft nur Transparenz und Krisenkommunikation.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Möglicher Bedarf an transparenter Krisenkommunikation bei längerer Flughafensperrung",
+              "mechanism": "Eine andauernde Störung kann Behörden und Betreiber zu klaren Informationen über Sicherheitslage, Dauer und Wiederöffnung veranlassen.",
+              "recipients": [
+                "Reisende",
+                "Behörden",
+                "Flughafenbetreiber"
+              ],
+              "magnitude": 0,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Sperrung verlängert sich und widersprüchliche oder unvollständige Informationen erschweren Entscheidungen.",
+              "reference_space": "Öffentliche Krisenkommunikation rund um den Flughafen Catania",
+              "time_horizon": "Stunden bis Tage",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Transparente Informationen beeinflussen die Fähigkeit Betroffener, Entscheidungen zu treffen.",
+              "source_support": "Die Quelle berichtet über die Sperrung, belegt aber keinen Kommunikationskonflikt oder demokratischen Effekt.",
+              "limitations": "Keine Daten zu Vertrauen, Informationszugang oder institutioneller Reaktion.",
+              "first_order": "Behördenangaben zur Betriebsdauer werden öffentlich vermittelt.",
+              "second_order": "Reisende können ihre Entscheidungen an diesen Angaben ausrichten.",
+              "third_order": "Ein demokratischer oder institutioneller Strukturwandel ist nicht aus dem Ereignis ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der Pfad bleibt auf situative Information beschränkt und ist nicht als demokratische Zustandsänderung belegt."
+              },
+              "negligibility_rationale": "Im abgegrenzten Zeitraum und mangels belegter Vertrauens- oder Beteiligungseffekte ist eine demokratische Zustandsänderung praktisch vernachlässigbar.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle zu Vertrauen, Beteiligung, institutioneller Korrektur oder politischer Reaktion; demokratische Wirkung bleibt offen und voraussichtlich begrenzt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine demokratische Betroffenengruppe oder Reichweite ist belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Die Quelle weist keinen demokratischen Eingriff oder Konflikt aus.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Kein dauerhafter institutioneller Effekt ist belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible demokratische Veränderung ist plausibel belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine spezifische demokratische Schutzvulnerabilität ist erkennbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein institutioneller oder diskursiver Systempfad ist belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine demokratische Schutzgrenze wird durch die Meldung oder das Ereignis berührt.",
+                "reference_frame": "Transparente Kriseninformation und demokratische Korrekturfähigkeit",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der Nachrichtenfall betrifft primär Sicherheit und Verkehr, nicht demokratische Institutionen. Ein möglicher Kommunikationspfad bleibt mangels Belegen vernachlässigbar.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es ist kein materieller demokratischer Positiv- oder Negativpfad belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Möglicher Bedarf an transparenter Krisenkommunikation bei längerer Flughafensperrung",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Möglicher Bedarf an transparenter Krisenkommunikation bei längerer Flughafensperrung",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "second_order",
+            "path": "Reisende müssen auf spätere, andere oder alternative Verbindungen ausweichen; Umfang und Verteilung sind offen.",
+            "direction": "open",
+            "condition": "Wenn keine zeitnahe Wiederöffnung oder ausreichende Ausweichkapazität besteht, können Verzögerungen, Kosten und zusätzliche Wege entstehen.",
+            "evidence": "scenario",
+            "claim_ids": [],
+            "dimensions": [
+              "human",
+              "planet"
+            ]
+          },
+          {
+            "order": "third_order",
+            "path": "Bei längerer Dauer könnten regionale Wirtschafts- und Versorgungsketten belastet werden; dafür gibt es noch keine belastbare Messung.",
+            "direction": "open",
+            "condition": "Nur bei einer über den genannten Zeitraum hinausgehenden Sperrung und fehlenden Ausweichmöglichkeiten wäre ein systemischerer Pfad plausibel.",
+            "evidence": "open",
+            "claim_ids": [],
+            "dimensions": [
+              "human",
+              "planet"
+            ]
+          }
+        ],
+        "affected_groups": [
+          "verbraucherinnen",
+          "beschaeftigte",
+          "unternehmen",
+          "europa"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-15T21:33:39.240Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-15T17:04:58.000Z",
+      "last_updated": "2026-09-15T21:36:37.691Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-a42b74824cc385ee8ce5",
+      "case_file": null,
+      "source_published_at": "2026-09-15T21:31:50.000Z",
+      "published_at": "2026-09-15T21:36:37.691Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Es sollte geprüft werden, ob der Flughafen nach 22:00 Uhr wieder geöffnet wird und wie viele Flüge insgesamt betroffen sind.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Öffnungsstatus und Zahl der ausgefallenen Flüge",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2d8c44a48f8eb8fa",
+          "announced_at": "2026-09-15T21:31:50.000Z",
+          "follow_up_date": "2026-09-22T21:36:37.691Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/flughafen-catania-bleibt-bis-zum-abend-wegen-aschewolke-des-vulkans-aetna-geschlossen-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-15T21:31:50.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-8d118596e0a5b188",
       "title_image": {
