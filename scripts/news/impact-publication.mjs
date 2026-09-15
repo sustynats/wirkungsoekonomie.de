@@ -50,9 +50,14 @@ export function semanticIssues(assessment, record = {}, { secondPassComplete = f
 
 // The caller must obtain review from the separately persisted review job, never
 // from a review object supplied by the first writer in its own output.
-export function derivePublicationStatus(assessment, record = {}, { review = null, secondPassComplete = false, requireScope = false, requireModelledDimensions = false } = {}) {
+// Version 2.1 has a product invariant: a public release needs one modelled,
+// numerical MPD pathway in every dimension. Callers may no longer forget this
+// by omitting a flag. Read-only historical validation can opt out explicitly;
+// no publishing path should do so.
+export function derivePublicationStatus(assessment, record = {}, { review = null, secondPassComplete = false, requireScope = false, requireModelledDimensions = null } = {}) {
+  const modelledRequired = requireModelledDimensions ?? assessment?.version === '2.1';
   const issues = [...semanticIssues(assessment, record, { secondPassComplete }), ...impactScopeErrors(review?.scope, assessment, [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])], {required:requireScope, publication:review?.status === 'ready'})];
-  if (requireModelledDimensions) issues.push(...modelledPublicationIssues(assessment).filter(issue=>!issues.includes(issue)));
+  if (modelledRequired) issues.push(...modelledPublicationIssues(assessment).filter(issue=>!issues.includes(issue)));
   if (review?.status === 'blocked') return { status: 'blocked', issues: [...issues, 'IMPACT_REVIEW_BLOCKED'] };
   const reviewed = review?.status === 'ready' && structuredSemanticChecks(review) && SEMANTIC_CHECKS.every(key => review.checks[key].status === 'pass');
   if (issues.length || !reviewed) return { status: secondPassComplete ? 'needs_review' : 'needs_second_pass', issues: [...issues, ...(!reviewed ? ['IMPACT_INDEPENDENT_REVIEW_REQUIRED'] : [])] };

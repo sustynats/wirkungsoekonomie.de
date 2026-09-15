@@ -10,6 +10,7 @@ import { publishedRecord, sanitizeAnalysisMediaImpact } from "./run.mjs";
 import { sanitizeVisuals } from "./visuals.mjs";
 import { mediaTriggerRecord } from "./media-impact.mjs";
 import { finalizeReviewedImpact } from './reviewed-impact.mjs';
+import { modelledPublicationIssues } from './impact-scope.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 // Historical review packets retain their documented contract. Any newly
@@ -122,6 +123,8 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   if (result.errors.length) { console.error(JSON.stringify({ errors: result.errors, integrity: result.candidate.source_integrity.issues })); process.exitCode = 1; }
   else {
     if (process.argv.includes("--write") && !result.unchanged) {
+      const potentialIssues = modelledPublicationIssues(result.record.impact_assessment);
+      if (potentialIssues.length) throw Object.assign(Error('EDITORIAL_CURRENT_POTENTIAL_REQUIRED'), { issues: potentialIssues });
       if (result.record.impact_assessment?.version === '2.1' && !result.record.impact_semantic_review?.review_job_id) throw Error('EDITORIAL_IMPACT_INDEPENDENT_REVIEW_REQUIRED');
       const index = store.stories.findIndex(story => story.story_id === result.record.story_id);
       if (index < 0) store.stories.push(result.record);
