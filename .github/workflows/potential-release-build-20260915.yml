@@ -14,12 +14,12 @@ jobs:
   prepare:
     if: github.repository == 'sustynats/wirkungsoekonomie.de' && github.ref == 'refs/heads/chatgpt/potential-release-build-20260915'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
-          fetch-depth: 50
+          fetch-depth: 30
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -35,7 +35,7 @@ jobs:
           npm run check:hosting-cost
           git config user.name 'wirkungsticker-recovery'
           git config user.email 'wirkungsticker-recovery@users.noreply.github.com'
-          git fetch --no-tags --depth=100 origin main
+          git fetch --no-tags --depth=40 origin main
           CURRENT_MAIN="$(git rev-parse FETCH_HEAD)"
           echo "CURRENT_MAIN=$CURRENT_MAIN" >> "$GITHUB_ENV"
           export CURRENT_MAIN
@@ -53,7 +53,7 @@ jobs:
           npm run taxonomy:build
           npm run news:validate
           python tools/prepare_potential_release_772.py --verify
-      - name: Apply the existing approved architecture projections and regenerate audit matrix
+      - name: Apply existing architecture projections and regenerate audit matrix
         shell: bash
         run: |
           set -euo pipefail
@@ -61,26 +61,17 @@ jobs:
           import subprocess, yaml
           from pathlib import Path
           workflow = yaml.safe_load(Path('.github/workflows/state-sustainability-audit.yml').read_text())
-          required = ['Apply approved #253 deterministic projections', 'Generate committed exhaustive #253 URL/file matrix', 'Run hard #253 semantic gates']
-          steps = {step.get('name'): step for step in workflow['jobs']['audit']['steps']}
-          for name in required:
-              print('Running existing repository gate:', name, flush=True)
-              subprocess.run(['bash', '-euo', 'pipefail', '-c', steps[name]['run']], check=True)
+          steps = workflow['jobs']['audit']['steps']
+          # Existing YAML uses unquoted hash comments in these display names.
+          # Identify each unique parsed step; execute its original command unchanged.
+          for prefix in ['Apply approved', 'Generate committed exhaustive', 'Run hard']:
+              matches = [step for step in steps if str(step.get('name', '')).startswith(prefix)]
+              assert len(matches) == 1 and matches[0].get('run'), 'Ambiguous or missing gate: ' + prefix
+              print('Running existing repository gate:', matches[0]['name'], flush=True)
+              subprocess.run(['bash', '-euo', 'pipefail', '-c', matches[0]['run']], check=True)
           PY
           python tools/prepare_potential_release_772.py --verify
-      - name: Full website and public artifact gates
-        shell: bash
-        run: |
-          set -euo pipefail
-          WOEK_PDF_BUILD_MODE=verify npm run build > "$RUNNER_TEMP/potential-full-build.log" 2>&1 || { tail -160 "$RUNNER_TEMP/potential-full-build.log"; exit 1; }
-          tail -24 "$RUNNER_TEMP/potential-full-build.log"
-          npm run build:artifact
-          npm run check:privacy
-          npm run check:url-baseline
-          npm run check:site-links
-          npm run check:size
-          python tools/prepare_potential_release_772.py --verify
-      - name: Verify source binding and commit evidence on the isolated build branch
+      - name: Verify bindings and save the limited release candidate locally
         shell: bash
         run: |
           set -euo pipefail
@@ -97,19 +88,48 @@ jobs:
             assert.deepEqual(modelledPublicationIssues(record.impact_assessment),[],row.story_id);
             assert.equal(record.impact_semantic_review.review_job_id,row.review_job_id);
           }
+          report.validation_run_id=process.env.GITHUB_RUN_ID;
+          report.preparation_checks=['source binding','news and operations regressions','poll regressions','news validation','article, feed and bookmark potential rendering','architecture gates'];
+          fs.writeFileSync('docs/news/RECOVERY-POTENTIAL-2026-09-15-FINAL.json',JSON.stringify(report,null,2)+'\n');
           console.log('PASS: preserved independent reviews and canonical source bindings');
           JS
-          cp "$RUNNER_TEMP/potential-release-772.json" docs/news/RECOVERY-POTENTIAL-2026-09-15-FINAL.json
-          printf '\n## Abschlusspruefung nach erneuter Fehlermeldung\n\nDer erste PR-Lauf scheiterte am nicht regenerierten Taxonomieverzeichnis. Die Vorbereitung wurde mit aktuellem main, feldweisem Dreiwegeabgleich und unveraenderten Qualitaetsgates erneut ausgefuehrt. Artikelseiten, alle betreffenden News-Feedfragmente und Merkzettel-Einzelkarten werden ausdruecklich geprueft. Der genaue Quellenstand und eventuelle zurueckgehaltene Konflikte stehen in RECOVERY-POTENTIAL-2026-09-15-FINAL.json. Dieser Build allein ist noch kein Live-Nachweis.\n' >> docs/news/RECOVERY-POTENTIAL-2026-09-15.md
+          printf '\n## Fortsetzung nach erneuter Fehlermeldung\n\nDer erste PR-Lauf scheiterte am nicht regenerierten Taxonomieverzeichnis. Die Vorbereitung wurde mit aktuellem main, feldweisem Dreiwegeabgleich und unveraenderten Qualitaetsgates erneut ausgefuehrt. Artikelseiten, alle betreffenden News-Feedfragmente und Merkzettel-Einzelkarten werden ausdruecklich geprueft. Der genaue Quellenstand steht in RECOVERY-POTENTIAL-2026-09-15-FINAL.json. Der vollstaendige Website-Build prueft anschliessend denselben Kandidaten in einem separaten Arbeitsverzeichnis, damit seine weiteren generierten Dateien keine fremden Quellstaende ueberschreiben. Dieser Bericht allein ist kein Live-Nachweis.\n' >> docs/news/RECOVERY-POTENTIAL-2026-09-15.md
           git diff --check
           git add -A -- docs/news/RECOVERY-POTENTIAL-2026-09-15.md docs/news/RECOVERY-POTENTIAL-2026-09-15-FINAL.json news/ wirkungsticker/ assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/audits/state-sustainability-architecture-url-matrix.json content/audits/state-sustainability-architecture-url-matrix.md content/polls/public-catalog.json admin/umfragen/ umfragen/ sitemap.xml
           git diff --name-only > "$RUNNER_TEMP/potential-unstaged.log"
           if [[ -s "$RUNNER_TEMP/potential-unstaged.log" ]]; then
-            echo 'Unreviewed build changes remain; refusing commit:' >&2
+            echo 'Unreviewed preparation changes remain; refusing commit:' >&2
             cat "$RUNNER_TEMP/potential-unstaged.log"
             exit 1
           fi
-          git commit -m '[wirkungsticker] Integrate current news and fully validate potential recovery #772'
+          git commit -m '[wirkungsticker] Integrate current news and regenerate complete potential release #772'
+          echo "CANDIDATE_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          git worktree add --detach "$RUNNER_TEMP/potential-verify" HEAD
+      - name: Full website and public artifact gates on the exact candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/potential-verify"
+          [[ "$(git rev-parse HEAD)" == "$CANDIDATE_COMMIT" ]]
+          npm run build:search
+          git diff --exit-code -- assets/search/search-index.json public/data/woek-search-meta.json
+          npm run taxonomy:build
+          git diff --exit-code -- content/taxonomy/site-map.json
+          WOEK_PDF_BUILD_MODE=verify npm run build > "$RUNNER_TEMP/potential-full-build.log" 2>&1 || { tail -160 "$RUNNER_TEMP/potential-full-build.log"; exit 1; }
+          tail -24 "$RUNNER_TEMP/potential-full-build.log"
+          npm run build:artifact > "$RUNNER_TEMP/potential-artifact.log" 2>&1 || { tail -160 "$RUNNER_TEMP/potential-artifact.log"; exit 1; }
+          tail -24 "$RUNNER_TEMP/potential-artifact.log"
+          npm run check:privacy
+          npm run check:url-baseline
+          npm run check:site-links
+          npm run check:size
+          python tools/prepare_potential_release_772.py --verify
+      - name: Push only the tested candidate to the isolated build branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$(git rev-parse HEAD)" == "$CANDIDATE_COMMIT" ]]
+          git diff --exit-code
           BRANCH='chatgpt/potential-release-build-20260915'
           [[ "$(git ls-remote origin "refs/heads/$BRANCH" | cut -f1)" == "$GITHUB_SHA" ]] || { echo 'Build branch changed concurrently; refusing push.' >&2; exit 1; }
           git push origin "HEAD:refs/heads/$BRANCH"
@@ -128,4 +148,5 @@ jobs:
             ${{ runner.temp }}/potential-release-772.json
             ${{ runner.temp }}/potential-news-tests.log
             ${{ runner.temp }}/potential-full-build.log
+            ${{ runner.temp }}/potential-artifact.log
             ${{ runner.temp }}/potential-unstaged.log
