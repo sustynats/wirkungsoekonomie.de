@@ -32,9 +32,9 @@ jobs:
           import json, pathlib, shutil, subprocess
           root = pathlib.Path.cwd()
           out = pathlib.Path('/tmp/glossary-review')
-          paths = subprocess.check_output(['git','ls-files'], text=True).splitlines()
           prefixes = ('scripts/glossary/', 'scripts/lib/', 'scripts/export/', 'scripts/search/', 'scripts/quellenarchiv/', 'templates/', 'content/glossary/', 'content/quellenarchiv/', 'content/sources/', 'content/site/', 'assets/css/', 'assets/js/', 'docs/glossary/')
           exact = {'AGENTS.md', 'package.json', 'assets/data/term-registry.json', 'assets/data/glossary-model.json', 'public/data/glossary.terms.json', 'public/data/glossary-version-history.json', 'public/data/woek-search-meta.json', 'content/taxonomy/site-map.json', 'glossar/index.html', 'scripts/ops/check-hosting-cost-guard.mjs', '.github/workflows/deploy.yml', '.github/workflows/pr-quality.yml'}
+          paths = sorted(set(subprocess.check_output(['git','ls-files'], text=True).splitlines()) | exact)
           for path in paths:
               if path in exact or path.startswith(prefixes):
                   src = root / path
@@ -44,9 +44,10 @@ jobs:
                       shutil.copy2(src, dst)
           registry = json.loads((root / 'public/data/glossary.terms.json').read_text())
           terms = registry if isinstance(registry, list) else registry.get('terms', [])
-          compact = [{k: t.get(k) for k in ('termId','id','slug','label','preferredLabel','aliases','synonyms','shortDefinition','status')} for t in terms]
+          compact = [{k: t.get(k) for k in ('termId','id','slug','canonicalLabel','aliases','synonyms','shortDefinition','status')} for t in terms]
           (out / 'inventory.json').write_text(json.dumps(compact, ensure_ascii=False, indent=2))
           (out / 'COMMIT.txt').write_text(subprocess.check_output(['git','rev-parse','HEAD'], text=True))
+          assert (out / 'public/data/glossary.terms.json').is_file()
           print('Canonical terms:', len(terms))
           print('Files:', sum(p.is_file() for p in out.rglob('*')))
           PY
