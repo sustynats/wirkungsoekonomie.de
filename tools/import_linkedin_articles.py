@@ -317,9 +317,6 @@ def render_article(article: SourceArticle) -> str:
     <meta name="twitter:title" content="{escaped_title}">
     <meta name="twitter:description" content="{description}">
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/brand/logo-full.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap" rel="stylesheet">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../../assets/css/style.css">
   </head>
@@ -425,9 +422,6 @@ def render_archive(articles: list[SourceArticle], skipped: list[tuple[Path, str]
     <meta name="twitter:title" content="LinkedIn-Artikel - Wirkungsökonomie">
     <meta name="twitter:description" content="Archiv der von LinkedIn übernommenen Artikel von Natalie Weber zur Wirkungsökonomie.">
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/brand/logo-full.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../assets/css/style.css">
   </head>
