@@ -173,3 +173,24 @@ test('rows that cost no model call do not use up the paid slots of a run', async
   assert.deepEqual(report.results.map((r) => r.status), ['already_delivered', 'claimed_elsewhere', 'output_delivered']);
   assert.deepEqual(drafted, [jobId]); assert.equal(report.paid_this_run, 1); assert.equal(report.paid_today, 1); assert.equal(report.selected, 3);
 });
+
+test('a rejected web-search request is retried once with the older tool spelling, and the provider error text is kept', async () => {
+  const bodies = [];
+  const answer = JSON.stringify({ preview: preview() });
+  const ok = { model: 'gpt-5.6-luna', usage: { input_tokens: 1000, output_tokens: 500 }, output: [{ type: 'message', role: 'assistant', status: 'completed', content: [{ type: 'output_text', text: answer }] }] };
+  const request = { instructions: 'Regel.', prompt: '{"assignment":{}}' };
+  const result = await draftEditorialOutput(request, { apiKey: 'test', model: 'gpt-5.6-luna', maxSearches: 3, fetchImpl: async (url, init) => { const b = JSON.parse(init.body); bodies.push(b); return bodies.length === 1 ? { ok: false, status: 400, json: async () => ({ error: { message: "Invalid value: 'web_search'. Supported values are: 'web_search_preview'." } }) } : { ok: true, status: 200, json: async () => ok }; } });
+  assert.equal(bodies.length, 2); assert.deepEqual(bodies[0].tools, [{ type: 'web_search' }]); assert.equal(bodies[0].max_tool_calls, 3);
+  assert.deepEqual(bodies[1].tools, [{ type: 'web_search_preview' }]); assert.equal('max_tool_calls' in bodies[1], false); assert.equal(result.web_search_variant, 1);
+  let calls = 0;
+  const error = await draftEditorialOutput(request, { apiKey: 'test', fetchImpl: async () => { calls += 1; return { ok: false, status: 400, json: async () => ({ error: { message: 'Unknown parameter: tools[0].type sk-secret123' } }) }; } }).catch((e) => e);
+  assert.equal(calls, 2); assert.equal(error.providerNotCalled, true); assert.equal(error.detail, 'Unknown parameter: tools[0].type ***');
+  calls = 0;
+  const plain = await draftEditorialOutput(request, { apiKey: 'test', webSearch: false, fetchImpl: async () => { calls += 1; return { ok: false, status: 400, json: async () => ({ error: { message: 'x' } }) }; } }).catch((e) => e);
+  assert.equal(calls, 1, 'without web search a 400 is never retried'); assert.equal(plain.detail, 'x');
+  const session = fakeSession([queuedJob()]);
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
+  const out = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft: async () => { throw Object.assign(new Error('AI_PROVIDER_ERROR:400'), { providerNotCalled: true, detail: 'Unsupported parameter' }); }, now });
+  assert.equal(out.status, 'provider_unavailable'); assert.equal(out.error, 'AI_PROVIDER_ERROR:400 · Unsupported parameter');
+  assert.equal(session.observations.get(`github-attempt:${jobId}`).provider_called, false, 'a rejected request stays unpaid and retryable');
+});
