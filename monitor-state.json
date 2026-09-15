@@ -12,9 +12,18 @@
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-09-15T20:56:35.056Z",
       "active": true
+    },
+    "run": {
+      "firstSeen": "2026-09-15T21:20:41.202Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "39dcf9564afad8c00d077efd",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Seit über 45 Minuten kein abgeschlossener Laufbericht.\nSeit: 2026-09-15T21:20:41.202Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-15",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1089,7 +1098,7 @@
       }
     },
     "last_new_at": "2026-09-14T19:38:30.811Z",
-    "checked_at": "2026-09-15T21:06:15.369Z",
+    "checked_at": "2026-09-15T21:20:41.202Z",
     "last_current_new_at": "2026-09-14T19:38:30.811Z"
   }
 }
