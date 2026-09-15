@@ -12,7 +12,10 @@ test('the explicit September exception expires without resetting usage or weaken
   assert.equal(newsBudget(fx, '2026-09-07T14:00:00Z', 20).authorized_eur, 20);
   assert.equal(newsBudget(null, '2026-09-07T14:00:00Z').technical_limit_usd, 0);
   const nextFx = { rate_date: '2026-09-30', rate_usd_per_eur: 1.16 };
-  assert.equal(newsBudget(nextFx, '2026-09-30T23:59:59Z').authorized_eur, 75);
+  // Direct operation approval (15.09.2026 18:40 UTC): EUR 100 until October.
+  assert.equal(newsBudget({ rate_date: '2026-09-15', rate_usd_per_eur: 1.1551 }, '2026-09-15T18:39:59Z').authorized_eur, 75);
+  assert.equal(newsBudget({ rate_date: '2026-09-15', rate_usd_per_eur: 1.1551 }, '2026-09-15T18:40:00Z').authorized_eur, 100);
+  assert.equal(newsBudget(nextFx, '2026-09-30T23:59:59Z').authorized_eur, 100);
   assert.equal(newsBudget(nextFx, '2026-10-01T00:00:00Z', 500).authorized_eur, 25);
   assert.equal(newsBudget(nextFx, '2026-10-01T00:00:00Z').technical_limit_usd, 18.9);
 });
