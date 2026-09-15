@@ -1,4 +1,4 @@
-# Retry after aligning historical-read-only compatibility tests with the new fail-closed publication default.
+# Retry with enough checkout history to preserve the current main ancestry.
 name: Final reviewed Wirkungspotenzial recovery
 
 on:
@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
-          fetch-depth: 5
+          fetch-depth: 20
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -39,9 +39,9 @@ jobs:
           set -euo pipefail
           git config user.name 'wirkungsticker-recovery'
           git config user.email 'wirkungsticker-recovery@users.noreply.github.com'
-          git fetch --no-tags --depth=80 origin main
+          git fetch --no-tags --depth=20 origin main
           CURRENT_BASE="$(git rev-parse FETCH_HEAD)"
-          git merge --no-edit "$CURRENT_BASE"
+          git merge-base --is-ancestor "$CURRENT_BASE" HEAD || git merge --no-edit "$CURRENT_BASE"
           echo "CURRENT_BASE=$CURRENT_BASE" >> "$GITHUB_ENV"
           git fetch --no-tags --depth=1 origin a985626602d3deebdd8ae7625bfcd53874b31a77
           git fetch --no-tags --depth=1 origin 6048f1b5336458cae9501088180af01f93409772
