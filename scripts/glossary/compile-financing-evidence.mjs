@@ -25,12 +25,15 @@ for(const d of decisions.decisions){
  if(d.action==='new' && found && found.source!=='Fachbegriffe zu Finanzierung und Evidenz')throw Error(`New target already exists ${d.target}`);
  for(const alias of [d.label,...d.aliases]){
   const owners=existing.filter(t=>t.termId!==d.target && names(t).some(a=>n(a)===n(alias)) && !correctionAllows(t.termId,alias));
-  // The display label of an enrichment is not a replacement for the canonical label.
   if(owners.length && (d.action==='new'||d.aliases.includes(alias)))throw Error(`Alias collision ${alias}: ${owners.map(t=>t.termId)}`);
  }
  const sources=c.sources.map(k=>{const s=sourceByKey.get(k); if(!s)throw Error(`Missing source ${k}`);return `${s.title}|${s.url}`;});
  const relations=unique([...c.related.map(k=>{if(!targetByKey.has(k))throw Error(`Unknown relation ${k}`);return targetByKey.get(k)}),...d.related]).filter(k=>k!==d.target);
+ let labels=unique([d.label,...(d.action==='new'?d.aliases:c.aliases)]);
+ if(c.key==='resilienz')labels=['Resilienz','Resilience'];
+ const translation=c.key==='wirkung'?'Englischer Anschlussbegriff: Impact. Seine Abgrenzung hängt vom Fachgebiet ab; dafür besteht ein eigener Glossareintrag.':`Bezeichnungen und Übersetzung: ${labels.join(' / ')}.`;
  const sections=[
+  {title:'Bezeichnungen und Übersetzung',body:translation},
   {title:'Einfach erklärt',body:c.plain},
   {title:'Im Gespräch',body:c.sentence},
   {title:'Darauf kommt es in der Anwendung an',body:c.usage},
@@ -40,7 +43,7 @@ for(const d of decisions.decisions){
   const category=finance?'Finanzsystem, Kapital und Unternehmenssteuerung':c.kind==='arbeitsbegriff'?'Praxisbegriff':(['risiko','abhaengigkeit','mitigation','transmissionskanal','szenario'].includes(c.key)?'Systeme, Steuerung und Resilienz':'Datenbegriff');
   terms.push({termId:d.target,canonicalLabel:d.label,slug:d.target,aliases:d.aliases,shortDefinition:c.short,hoverDefinition:c.short,longDefinition:c.plain+'\n\n'+c.usage,woekRelation:c.relation,usageNote:c.usage,statusNote:c.kind==='arbeitsbegriff'?'Arbeitsbegriff für Daten- und Nachweisprozesse; kein vorgeschriebener Standard.':'Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.',status:'anschlussbegriff',version:'1.0',lastReviewed:'2026-09-15',source:'Fachbegriffe zu Finanzierung und Evidenz',sourceProvenance:'Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.',category,relatedTerms:relations,officialSources:sources,doNotConfuseWith:c.distinguish,examples:c.examples,deepGlossarySections:sections,classicGlossary:true});
  }else{
-  learning.push({termId:d.target,aliases:d.aliases,relatedTerms:relations,officialSources:sources,section:{title:`Anwendungssprache: ${d.label}`,body:c.plain,items:[c.usage,c.relation,...c.distinguish,...c.examples,c.sentence]}});
+  learning.push({termId:d.target,aliases:d.aliases,relatedTerms:relations,officialSources:sources,section:{title:`Anwendungssprache: ${d.label}`,body:c.plain,items:[translation,c.usage,c.relation,...c.distinguish,...c.examples,c.sentence]}});
  }
 }
 const output={schemaVersion:1,reviewedAt:'2026-09-15',terms,learning,aliasCorrections:corrections};
