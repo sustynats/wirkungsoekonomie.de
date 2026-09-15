@@ -55,6 +55,14 @@ test('show permission is asset-specific and fail-closed for unknown, expired, ed
  assert.equal(showIdentity(media,{use:'sharecard'}).usable_asset,null);
  const good=showIdentity(media);
  for(const patch of [{rights_status:'UNKNOWN'},{rights_status:'PRESS_EDITORIAL_USE_LIMITED'},{expires_at:'2020-01-01T00:00:00Z'},{asset_sha256:'0'.repeat(64)},{asset:'https://foreign.example/logo.jpg'},{allow_archive:false}])assert.equal(showIdentity(media,{shows:[{...good,...patch}]}).usable_asset,null);
- assert.doesNotMatch(renderShowIdentity({show:'MAITHINK X'}),/<img/);
+ // Without a delivered, checksum-bound original the renderer stays textual.
+ assert.doesNotMatch(renderShowIdentity({show:'Caren Miosga'}),/<img/);
  assert.match(renderShowIdentity(media),/Logo: Deutschlandradio/);
+ // ZDF originals delivered on 2026-09-15 (Presseportal Bildanfrage 118949).
+ for(const [show,credit] of [['MAITHINK X','Logo: ZDF/bildundtonfabrik'],['Markus Lanz','Logo: ZDF/Brand New Media'],['Terra X Lesch & Co','Logo: ZDF/Corporate Design']]){
+  const html=renderShowIdentity({show});
+  assert.match(html,/<img src="\/assets\/img\/shows\/[a-z0-9-]+-official\.(?:jpg|png)"/);
+  assert.ok(html.includes(credit),show);
+ }
+ assert.equal(showIdentity({show:'Lanz + Precht'},{use:'sharecard'}).usable_asset,'/assets/img/shows/lanz-precht-official.jpg');
 });

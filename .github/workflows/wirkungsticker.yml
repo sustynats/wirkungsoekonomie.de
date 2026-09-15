@@ -103,6 +103,14 @@ jobs:
           WOEK_NEWS_DRY_RUN: ${{ inputs.dry_run }}
         run: |
           if [ "$WOEK_NEWS_DRY_RUN" = "true" ]; then node scripts/news/run-api.mjs --dry-run; else node scripts/news/run-api.mjs; fi
+      - name: Take over editions approved in the private editorial desk
+        id: approved
+        if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
+        continue-on-error: true
+        env:
+          WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
+          WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+        run: node scripts/news/import-approved-editorials.mjs --claim
       - name: Read public ticker outcome
         id: outcome
         if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
@@ -143,8 +151,15 @@ jobs:
           [[ "$RELEASE_COMMIT" =~ ^[0-9a-f]{40}$ ]] || { echo "Invalid published commit." >&2; exit 1; }
           echo "commit=$RELEASE_COMMIT" >> "$GITHUB_OUTPUT"
           echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Acknowledge approved editions after the durable push
+        if: steps.commit.outputs.changed == 'true' && steps.approved.outputs.changed == 'true'
+        continue-on-error: true
+        env:
+          WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
+          WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+        run: node scripts/news/import-approved-editorials.mjs --finalize
       - name: Publish the committed ticker automatically
-        if: steps.commit.outputs.changed == 'true' && (steps.outcome.outputs.public_changed == 'true' || steps.polls.outputs.changed == 'true')
+        if: steps.commit.outputs.changed == 'true' && (steps.outcome.outputs.public_changed == 'true' || steps.polls.outputs.changed == 'true' || steps.approved.outputs.changed == 'true')
         env:
           GH_TOKEN: ${{ github.token }}
           TICKER_COMMIT: ${{ steps.commit.outputs.commit }}
@@ -168,4 +183,5 @@ jobs:
             data/news/state.json
             data/news/newsroom.json
             data/news/usage.json
+            data/news/editorial-analyses.json
             reports/wirkungsticker-latest-run.json
