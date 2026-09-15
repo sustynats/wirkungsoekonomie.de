@@ -11,6 +11,10 @@ name: Redaktionsworker
 on:
   schedule:
     - cron: "8,23,38,53 * * * *"
+  push:
+    # Oracle-Takt als Ausfallreserve für den unzuverlässigen GitHub-Cron.
+    branches:
+      - codex/wirkungsticker-clock
   workflow_dispatch:
     inputs:
       max_jobs:
