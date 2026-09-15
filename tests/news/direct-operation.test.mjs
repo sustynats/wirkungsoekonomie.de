@@ -169,6 +169,7 @@ test('numeric strings and boolean strings from the provider are coerced before t
   const analysis = normalizeAnalysisOutput({ publication_recommendation: 'true', event_claims: [{ claim: 'x', attribution_required: 'false', headline_claim: 'true' }], impact_assessment: assessment });
   assert.equal(analysis.publication_recommendation, true);
   assert.equal(analysis.event_claims[0].attribution_required, false); assert.equal(analysis.event_claims[0].headline_claim, true);
+  assert.equal('analysis_complete' in normalizeAnalysisOutput({ analysis_complete: true }), false, 'completion marker is stripped before the gate');
   const planet = analysis.impact_assessment.dimensions.planet;
   assert.equal(planet.primary_paths[0].magnitude, 3); assert.equal(planet.magnitude, 3);
   assert.deepEqual(Object.values(planet.primary_paths[0].magnitude_factors).map(f => f.value), [3, 3, 3, 3, 3, 3]);
