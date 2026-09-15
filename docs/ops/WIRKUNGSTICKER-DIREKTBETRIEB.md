@@ -63,6 +63,8 @@ Doppelläufe.
   Demokratie kamen als Fragmente; bei `gpt-5.4-mini` hatte `medium` nur die Ausgabe-Token
   verdoppelt). Jede bezahlte Antwort wird als privates Laufartefakt `ai-raw-output-<run>`
   (3 Tage) gesichert, damit Gate-Fehler erklärbar sind.
+- Ausgabebudget je Aufruf `WOEK_NEWS_MAX_OUTPUT_TOKENS` (Standard 32 000 seit 16.09.; bei mittlerem
+  Denkaufwand zählen Reasoning-Token mit, zwei Antworten der Nacht brachen bei 24 000 ab).
 - Der Transport ergänzt nie Inhalte. Er wandelt Typen (Zahlen-Strings → Zahlen, Boolean-Strings
   → Booleans), rechnet die Tragweite aus den gelieferten Faktoren nach und repariert seit
   15.09. abends deterministisch drei Etikettfehler, die sonst ganze Bindungsketten kippten
