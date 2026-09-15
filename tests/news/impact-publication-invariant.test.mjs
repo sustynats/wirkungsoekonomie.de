@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { derivePublicationStatus, SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import { persistedImpactAssessmentErrors, assessmentBasis } from '../../scripts/news/migrate-impact-assessments.mjs';
+import { publicImpactAssessment } from '../../scripts/news/impact-release.mjs';
 import { highStory, validEditorial } from './fixtures/editorial-bridge.mjs';
 import { editorialSourceRef } from '../../scripts/news/editorial-analysis.mjs';
 
@@ -59,4 +60,5 @@ test('a persisted independently reviewed v2.1 record cannot claim ready while a 
 
   const errors = persistedImpactAssessmentErrors(record);
   assert.ok(errors.includes('IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:planet'));
+  assert.equal(publicImpactAssessment(record), null);
 });
