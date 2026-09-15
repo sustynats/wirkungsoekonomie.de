@@ -282,3 +282,8 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Was:** Der erste Takt-Lauf mit Web-Suche (23:05 UTC) wurde vom Anbieter mit 400 abgelehnt (nicht bezahlt, Auftrag bleibt offen); der Lauf zeigte nur den Statuscode. Der Worker versucht bei 400 jetzt genau einmal die ältere Werkzeugschreibweise `web_search_preview` ohne optionale Parameter und hält den (bereinigten) Fehlertext des Anbieters im Ergebnis und Vermerk fest. Die adoptierte liegengebliebene Übernahme wurde wie vorgesehen bearbeitet (kein `claimed_elsewhere` mehr).
 - **Geprüft:** `tests/news/redaktionsworker.test.mjs` 10/10 (1 neu).
 - **Offen:** Nächsten Takt-Lauf lesen: Variante 0 oder 1 erfolgreich, sonst Fehlertext.
+## 2026-09-16 - Claude: Clusterung: Verlagsname ist keine Ereignisgeografie
+
+- **Was:** Die zweite Catania-Meldung (gleiche Ereignis-ID, dieselbe Deutschlandfunk-Artikel-URL in neuer Revision) wurde als neue Datei geführt und kostete einen eigenen Aufruf. Ursache: `fileSubject` erkannte im gespeicherten `source_summary` „Deutschlandfunk“ als Deutschland (`deutsch\w*`), die neue Meldung dagegen Italien; `subjectConflict` trennte die Länder. Medien-Namen (Deutschlandfunk, Deutschlandradio, Deutsche Welle, dpa, Deutsche Bahn u. a.) werden vor der Länderprüfung entfernt; echte deutsche Bezüge zählen weiter.
+- **Geprüft:** `tests/news/living-files.test.mjs` (31 Tests, 1 neu mit dem Catania-Fall), Reproduktion gegen den Datenbestand: Ähnlichkeit 0 → 1.
+- **Offen:** Die bereits angelegte Dublette `wt-17d4a13881b167db` bleibt unveröffentlicht; beim nächsten Import wird sie als Aktualisierung der veröffentlichten Meldung geführt.

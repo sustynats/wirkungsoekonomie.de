@@ -88,6 +88,7 @@ function placesIn(text) {
   const matches = String(text || "").matchAll(/\b(?:in|bei|nahe)\s+(?:der\s+Stadt\s+)?([A-ZÄÖÜ][\p{L}-]+(?:\s+(?:am|an der|im|ob der)\s+[A-ZÄÖÜ][\p{L}-]+)?)/gu);
   return unique([...matches].map((match) => canonicalPlace(match[1])).filter((place) => !PLACE_EXCLUSIONS.has(place)));
 }
+const MEDIA_NAMES = /\b(?:deutschlandfunk\w*|deutschlandradio\w*|deutsche welle|deutsche presse-agentur|deutschlandtrend|deutsche bahn\w*|british broadcasting corporation|france 24|france info|franceinfo)\b/g;
 const COUNTRY_RULES = [
   ["DE", /\b(deutsch\w*|germany|german|bundesregierung|bundestag|bundesrat)\b/],
   ["FR", /\b(frankreich|franzos\w*|france|french)\b/],
@@ -198,7 +199,11 @@ function deriveFileSubject(item, sourcePlace) {
   const networkPlace = cyber && new RegExp(`\\b${PUBLIC_NETWORK}\\b`).test(text) ? publicNetworkPlace(title, lead) : null;
   const titlePlaces = placesIn(title);
   const places = titlePlaces.length ? titlePlaces : placesIn(placeLead);
-  const countries = unique([...(item.event_geography || []), ...COUNTRY_RULES.filter(([, pattern]) => pattern.test(text)).map(([code]) => code)]);
+  // Publisher names are not event geography: "Deutschlandfunk" in a stored
+  // source summary made an Italian airport story German and split the file
+  // (16.09.: second Catania record with the same event and article URL).
+  const geography = text.replace(MEDIA_NAMES, ' ');
+  const countries = unique([...(item.event_geography || []), ...COUNTRY_RULES.filter(([, pattern]) => pattern.test(geography)).map(([code]) => code)]);
   const elections = unique(electionJurisdictions(`${title} ${lead}`));
   const election_stage = elections.length && /\b(?:umfrag\w*|wahlabsicht\w*)\b/.test(normal(title)) ? 'polling'
     : elections.length && /\b(?:hochrechnung\w*|wahlergebnis\w*|wahlsieg\w*|wahlniederlage\w*)\b/.test(normal(title)) ? 'result' : null;

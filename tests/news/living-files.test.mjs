@@ -402,3 +402,15 @@ test("a verified update retains canonical URL/history and uses one new publicati
   assert.deepEqual(next.living_file, old.living_file);
   assert.equal(next.publication_history.length, 2);
 });
+
+test("a publisher name in the stored summary is not event geography: the same Italian airport article stays one file", () => {
+  const source = { source_id: "dlf-nachrichten", publisher: "Deutschlandfunk", url: "https://www.deutschlandfunk.de/flughafen-catania-bleibt-bis-zum-abend-wegen-aschewolke-des-vulkans-aetna-geschlossen-102.html",
+    title: "Sizilien - Flughafen Catania bleibt bis zum Abend wegen Aschewolke des Vulkans Ätna geschlossen", summary: "Auf der italienischen Mittelmeerinsel Sizilien bleibt der Flughafen Catania wegen einer Aschewolke des Ätna geschlossen.", published_at: "2026-09-15T21:31:50.000Z" };
+  const story = { story_id: "wt-catania", title: "Flughafen Catania bleibt wegen neuer Ätna-Aschewolke bis 22 Uhr geschlossen", published: true, first_seen: source.published_at, last_updated: source.published_at, sources: [source],
+    source_summary: "Der Deutschlandfunk berichtet, dass der Flughafen Catania wegen einer Aschewolke des Ätna bis 22 Uhr geschlossen bleibt." };
+  assert.deepEqual(fileSubject(story).countries, [], "Deutschlandfunk is a publisher, not Germany");
+  assert.deepEqual(fileSubject({ ...story, source_summary: "Die Bundesregierung reagiert auf den Deutschlandfunk-Bericht." }).countries, ["DE"], "real German subjects still count");
+  const update = { ...source, url: source.url.replace("-102.html", "-104.html"), published_at: "2026-09-15T22:46:01.000Z" };
+  assert.equal(subjectConflict(update, story), false);
+  assert.ok(existingStoryMatch(update, { story, title: story.title, last_updated: story.last_updated, anchored_story: { ...story, sources: anchoredSources(story) } }, "2026-09-15T22:52:00.000Z") >= 0.64);
+});
