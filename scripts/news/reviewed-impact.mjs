@@ -28,7 +28,7 @@ export function finalizeReviewedImpact(record, packet, receipt, existing, now) {
     || record.title !== (packet.analysis.headline?.trim() || packet.title)
     || record.source_summary !== packet.analysis.source_summary
     || existing?.published_at && record.published_at !== existing.published_at) throw Error('EDITORIAL_IMPACT_REVIEW_BINDING_REQUIRED');
-  const gate = derivePublicationStatus(record.impact_assessment, record, { review: receipt.review, secondPassComplete: true });
+  const gate = derivePublicationStatus(record.impact_assessment, record, { review: receipt.review, secondPassComplete: true, requireModelledDimensions: true, requireScope: true });
   if (gate.status !== 'ready') throw Error(`EDITORIAL_IMPACT_REVIEW_FAILED:${gate.issues.join(',')}`);
   const corrected = structuredClone(record);
   const reviewId = `editorial-review-${sha256(JSON.stringify(receipt))}`;

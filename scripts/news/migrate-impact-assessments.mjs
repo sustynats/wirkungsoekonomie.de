@@ -3,6 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { IMPACT_VERSION, migrateImpactAssessment, impactAssessmentErrors } from './impact-assessment.mjs';
+import { modelledPublicationIssues } from './impact-scope.mjs';
 
 export const assessmentHash = value => crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
 export function assessmentBasis(record) {
@@ -28,7 +29,17 @@ export function persistedImpactAssessmentErrors(record) {
     delete actual.review.migrated_at;
     return assessmentHash(actual) === assessmentHash(expected) ? [] : ['IMPACT_LEGACY_PROJECTION_MODIFIED'];
   }
-  return impactAssessmentErrors(assessment, [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])], { required: true, version: assessment.version });
+  const errors = impactAssessmentErrors(assessment, [...(record.sources || record.source_snapshot || []), ...(record.impact_sources || [])], { required: true, version: assessment.version });
+  // Historical null/open projections remain readable only while explicitly
+  // awaiting reassessment. Once a 2.1 record claims publication/review ready,
+  // every MPD dimension must carry a modelled numeric potential. This makes
+  // the invariant part of persisted-data validation, so all release paths that
+  // already call this function fail closed without a separate optional flag.
+  if (assessment.version === '2.1'
+      && (assessment.publication_status === 'ready' || record.impact_semantic_review?.status === 'ready')) {
+    errors.push(...modelledPublicationIssues(assessment));
+  }
+  return [...new Set(errors)];
 }
 export function migrateImpactCatalog(records, { now = '2026-09-10T10:30:00.000Z' } = {}) {
   const report = { checked: 0, automatically_migrated: 0, reassessed: 0, needs_reassessment: 0, errors: [], changed: 0, records: [] };

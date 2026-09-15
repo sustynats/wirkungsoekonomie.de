@@ -1,0 +1,36 @@
+name: Wirkungsticker live potential smoke
+
+on:
+  workflow_run:
+    workflows: ["Deploy static site."]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ticker-live-potential-smoke
+  cancel-in-progress: true
+
+jobs:
+  live-readback:
+    if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact deployed source commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify live article, news-feed and bookmark potential surfaces
+        env:
+          WOEK_RELEASE_SHA: ${{ github.event.workflow_run.head_sha }}
+          WOEK_LIVE_BASE_URL: https://wirkungsoekonomie.de
+          WOEK_LIVE_SMOKE_ATTEMPTS: '12'
+          WOEK_LIVE_SMOKE_DELAY_MS: '10000'
+        run: node scripts/news/live-potential-smoke.mjs
