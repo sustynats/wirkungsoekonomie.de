@@ -11,10 +11,15 @@
     },
     "editorial-coverage": {
       "firstSeen": "2026-09-15T21:50:42.565Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "85138664c32c4f2a9030940f",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 10 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-09-15T21:50:42.565Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-15",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1086,10 +1091,14 @@
       "https://wirkungsoekonomie.de/wirkungsticker/start-up-schmieden-diese-unis-haben-die-meisten-grunder-hervorgebracht-a5b188/": {
         "first_seen_at": "2026-09-14T19:38:30.811Z",
         "source_at": "2026-09-14T16:00:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/sizilien-flughafen-catania-bleibt-bis-zum-abend-wegen-aschewolke-des-vulkans-atna-geschl-905275/": {
+        "first_seen_at": "2026-09-15T22:05:39.593Z",
+        "source_at": "2026-09-15T21:31:50.000Z"
       }
     },
-    "last_new_at": "2026-09-14T19:38:30.811Z",
-    "checked_at": "2026-09-15T21:50:42.565Z",
-    "last_current_new_at": "2026-09-14T19:38:30.811Z"
+    "last_new_at": "2026-09-15T22:05:39.593Z",
+    "checked_at": "2026-09-15T22:05:39.593Z",
+    "last_current_new_at": "2026-09-15T22:05:39.593Z"
   }
 }
