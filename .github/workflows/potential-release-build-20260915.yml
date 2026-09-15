@@ -1,0 +1,131 @@
+name: Complete potential repair 772
+on:
+  push:
+    branches: [chatgpt/potential-release-build-20260915]
+    paths: [.github/workflows/potential-release-build-20260915.yml]
+permissions:
+  contents: write
+concurrency:
+  group: potential-release-build-20260915
+  cancel-in-progress: false
+env:
+  SOURCE_DATE_EPOCH: '1787270400'
+jobs:
+  prepare:
+    if: github.repository == 'sustynats/wirkungsoekonomie.de' && github.ref == 'refs/heads/chatgpt/potential-release-build-20260915'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 50
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install existing build dependencies
+        run: python -m pip install openpyxl pymupdf pypdf python-docx reportlab PyYAML
+      - name: Verify hosting guard and integrate current main without replacing newer records
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run check:hosting-cost
+          git config user.name 'wirkungsticker-recovery'
+          git config user.email 'wirkungsticker-recovery@users.noreply.github.com'
+          git fetch --no-tags --depth=100 origin main
+          CURRENT_MAIN="$(git rev-parse FETCH_HEAD)"
+          echo "CURRENT_MAIN=$CURRENT_MAIN" >> "$GITHUB_ENV"
+          export CURRENT_MAIN
+          python tools/prepare_potential_release_772.py
+      - name: Rebuild current ticker, sources and all application feeds
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run news:test > "$RUNNER_TEMP/potential-news-tests.log" 2>&1 || { tail -120 "$RUNNER_TEMP/potential-news-tests.log"; exit 1; }
+          tail -12 "$RUNNER_TEMP/potential-news-tests.log"
+          npm run polls:test
+          npm run polls:build
+          npm run news:build
+          npm run build:search
+          npm run taxonomy:build
+          npm run news:validate
+          python tools/prepare_potential_release_772.py --verify
+      - name: Apply the existing approved architecture projections and regenerate audit matrix
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import subprocess, yaml
+          from pathlib import Path
+          workflow = yaml.safe_load(Path('.github/workflows/state-sustainability-audit.yml').read_text())
+          required = ['Apply approved #253 deterministic projections', 'Generate committed exhaustive #253 URL/file matrix', 'Run hard #253 semantic gates']
+          steps = {step.get('name'): step for step in workflow['jobs']['audit']['steps']}
+          for name in required:
+              print('Running existing repository gate:', name, flush=True)
+              subprocess.run(['bash', '-euo', 'pipefail', '-c', steps[name]['run']], check=True)
+          PY
+          python tools/prepare_potential_release_772.py --verify
+      - name: Full website and public artifact gates
+        shell: bash
+        run: |
+          set -euo pipefail
+          WOEK_PDF_BUILD_MODE=verify npm run build > "$RUNNER_TEMP/potential-full-build.log" 2>&1 || { tail -160 "$RUNNER_TEMP/potential-full-build.log"; exit 1; }
+          tail -24 "$RUNNER_TEMP/potential-full-build.log"
+          npm run build:artifact
+          npm run check:privacy
+          npm run check:url-baseline
+          npm run check:site-links
+          npm run check:size
+          python tools/prepare_potential_release_772.py --verify
+      - name: Verify source binding and commit evidence on the isolated build branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import {persistedImpactAssessmentErrors} from './scripts/news/migrate-impact-assessments.mjs';
+          import {modelledPublicationIssues} from './scripts/news/impact-scope.mjs';
+          const report=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/potential-release-772.json'));
+          const stories=JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
+          for(const row of report.applied){
+            const record=stories.find(s=>s.story_id===row.story_id);
+            assert.deepEqual(persistedImpactAssessmentErrors(record),[],row.story_id);
+            assert.deepEqual(modelledPublicationIssues(record.impact_assessment),[],row.story_id);
+            assert.equal(record.impact_semantic_review.review_job_id,row.review_job_id);
+          }
+          console.log('PASS: preserved independent reviews and canonical source bindings');
+          JS
+          cp "$RUNNER_TEMP/potential-release-772.json" docs/news/RECOVERY-POTENTIAL-2026-09-15-FINAL.json
+          printf '\n## Abschlusspruefung nach erneuter Fehlermeldung\n\nDer erste PR-Lauf scheiterte am nicht regenerierten Taxonomieverzeichnis. Die Vorbereitung wurde mit aktuellem main, feldweisem Dreiwegeabgleich und unveraenderten Qualitaetsgates erneut ausgefuehrt. Artikelseiten, alle betreffenden News-Feedfragmente und Merkzettel-Einzelkarten werden ausdruecklich geprueft. Der genaue Quellenstand und eventuelle zurueckgehaltene Konflikte stehen in RECOVERY-POTENTIAL-2026-09-15-FINAL.json. Dieser Build allein ist noch kein Live-Nachweis.\n' >> docs/news/RECOVERY-POTENTIAL-2026-09-15.md
+          git diff --check
+          git add -A -- docs/news/RECOVERY-POTENTIAL-2026-09-15.md docs/news/RECOVERY-POTENTIAL-2026-09-15-FINAL.json news/ wirkungsticker/ assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/audits/state-sustainability-architecture-url-matrix.json content/audits/state-sustainability-architecture-url-matrix.md content/polls/public-catalog.json admin/umfragen/ umfragen/ sitemap.xml
+          git diff --name-only > "$RUNNER_TEMP/potential-unstaged.log"
+          if [[ -s "$RUNNER_TEMP/potential-unstaged.log" ]]; then
+            echo 'Unreviewed build changes remain; refusing commit:' >&2
+            cat "$RUNNER_TEMP/potential-unstaged.log"
+            exit 1
+          fi
+          git commit -m '[wirkungsticker] Integrate current news and fully validate potential recovery #772'
+          BRANCH='chatgpt/potential-release-build-20260915'
+          [[ "$(git ls-remote origin "refs/heads/$BRANCH" | cut -f1)" == "$GITHUB_SHA" ]] || { echo 'Build branch changed concurrently; refusing push.' >&2; exit 1; }
+          git push origin "HEAD:refs/heads/$BRANCH"
+          echo "VALIDATED_COMMIT=$(git rev-parse HEAD)"
+          echo "VALIDATED_TREE=$(git rev-parse HEAD^{tree})"
+          echo "CURRENT_MAIN=$CURRENT_MAIN"
+          echo 'No main update or production deployment performed.'
+      - name: Keep build evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: potential-release-772-${{ github.run_id }}
+          retention-days: 7
+          if-no-files-found: ignore
+          path: |
+            ${{ runner.temp }}/potential-release-772.json
+            ${{ runner.temp }}/potential-news-tests.log
+            ${{ runner.temp }}/potential-full-build.log
+            ${{ runner.temp }}/potential-unstaged.log
