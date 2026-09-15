@@ -981,7 +981,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true, transport 
       "Wenn ein Visual einen belegten Fakt aus article_excerpt nutzt, muss derselbe Fakt auch in source_summary stehen. So bleibt die Belegkette nach dem absichtlich flüchtigen Artikelabruf prüfbar."]
       : ["Quellenumfang: In diesem Durchlauf visuals:null; keine neue optionale Grafik erzeugen. Quellen, Sachverhalt, Fakten-, Folgen- und Mediencheck sowie sämtliche Evidenz- und Qualitätsregeln bleiben vollständig verbindlich."]),
     "Gib ausschließlich valides JSON ohne Markdown aus. Schema:",
-    "Immer {analyses:[...]}, auch bei Ablehnung; bei einer Story genau ein Eintrag, nie den Eintrag als Wurzelobjekt.",
+    "Immer {analyses:[...]}, auch bei Ablehnung; je Story genau ein Eintrag, nie als Wurzelobjekt.",
     "$ref auflösen: drei vollständige impact_assessment.dimensions, keine $ref/$defs im Ergebnis. Pipe-Listen: genau einen erlaubten Wert wählen. Unbenötigte Pfadlisten leer, keine Schablonen. Keine zusätzliche alte MPD-Bewertung erzeugen.",
     JSON.stringify({
       analyses: [{
