@@ -74,7 +74,7 @@ test('a researched open dimension needs no invented scope paths or numerical fac
 test('fresh release rejects historical null but old receipt stays readable and no model is invented',()=>{
  const a=syntheticPotentialAssessment(),open={path_status:'insufficient_basis',direction:'open',magnitude:null,evidence:'not_assessable',data_status:'missing',temporal_status:'ex_ante',likelihood:'unknown',dominance:'none',primary_paths:[],secondary_paths:[],balance:null,rationale:'Nach der damaligen Prüfung verblieb eine ausdrücklich dokumentierte Wissenslücke.',research_pass:'second_pass',research_result:'Die historische Recherche begrenzte den untersuchten Modellierungsraum ausdrücklich.',reviewed_source_ids:['official']};
  a.dimensions.planet=open;
- const legacy=derivePublicationStatus(a,{sources},{review:review(),secondPassComplete:true});
+ const legacy=derivePublicationStatus(a,{sources},{review:review(),secondPassComplete:true,requireModelledDimensions:false});
  assert.equal(legacy.status,'ready');
  const fresh=derivePublicationStatus(a,{sources},{review:review(witness(a)),secondPassComplete:true,requireScope:true});
  assert.equal(fresh.status,'needs_review');assert.ok(fresh.issues.includes('IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:planet'));
@@ -99,7 +99,7 @@ test('unmeasured price change can retain negative modelled potential, low eviden
 test('publication admission is independent of legacy scope while historical presentation remains compatible',()=>{
  const a=syntheticPotentialAssessment();a.dimensions.planet={path_status:'insufficient_basis',direction:'open',magnitude:null,evidence:'not_assessable',data_status:'missing',temporal_status:'ex_ante',likelihood:'unknown',dominance:'none',primary_paths:[],secondary_paths:[],balance:null,rationale:'Historisch nach Recherche ausdrücklich nicht ausreichend eingrenzbare Dimension.',research_pass:'second_pass',research_result:'Historische Recherche mit dokumentierter Grenze und geprüfter Quelle.',reviewed_source_ids:['official']};
  const before=structuredClone(a);
- assert.equal(derivePublicationStatus(a,{sources},{review:review(),secondPassComplete:true}).status,'ready');
+ assert.equal(derivePublicationStatus(a,{sources},{review:review(),secondPassComplete:true,requireModelledDimensions:false}).status,'ready');
  const gate=derivePublicationStatus(a,{sources},{review:review(),secondPassComplete:true,requireModelledDimensions:true});
  assert.equal(gate.status,'needs_review');assert.ok(gate.issues.includes('IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:planet'));
  assert.deepEqual(a,before);
