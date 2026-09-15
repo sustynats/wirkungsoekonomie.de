@@ -1,46 +1,6 @@
 {
   "schema": 1,
   "incidents": {
-    "bridge-queue": {
-      "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": true
-    },
-    "bridge-queue-size": {
-      "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": true
-    },
-    "bridge-processor": {
-      "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": true
-    },
-    "bridge-shards": {
-      "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": true
-    },
-    "bridge-errors": {
-      "firstSeen": "2026-09-13T13:49:45.461Z",
-      "active": true
-    },
-    "bridge-review": {
-      "firstSeen": "2026-09-13T19:09:37.148Z",
-      "active": true
-    },
-    "bridge-api-results": {
-      "firstSeen": "2026-09-13T21:39:04.658Z",
-      "active": true
-    },
-    "bridge-import": {
-      "firstSeen": "2026-09-13T21:59:55.483Z",
-      "active": true
-    },
-    "bridge-throughput": {
-      "firstSeen": "2026-09-14T07:11:04.518Z",
-      "active": true
-    },
-    "bridge-publication-flow": {
-      "firstSeen": "2026-09-14T22:01:07.285Z",
-      "active": true
-    },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-09-15T06:42:24.942Z",
       "active": true
@@ -48,9 +8,54 @@
     "delivery-deploy.yml": {
       "firstSeen": "2026-09-15T06:42:24.942Z",
       "active": true
+    },
+    "bridge-access": {
+      "firstSeen": "2026-09-15T16:54:49.150Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "797bf57ad733014494bf8107",
+      "content": "✓ WÖk-Störung behoben\nBridge-Verarbeitung\nPrüfung: 2026-09-15T16:54:49.150Z"
+    },
+    {
+      "id": "d8a0ade0ee5d7a96b89ed49e",
+      "content": "✓ WÖk-Störung behoben\nRedaktionsrückstau\nPrüfung: 2026-09-15T16:54:49.150Z"
+    },
+    {
+      "id": "8ebb1ca81a636c4598cb8138",
+      "content": "✓ WÖk-Störung behoben\nRedaktionsworker\nPrüfung: 2026-09-15T16:54:49.150Z"
+    },
+    {
+      "id": "df0cb7f77258f0c8975f0ac7",
+      "content": "✓ WÖk-Störung behoben\nVollständigkeit der Redaktionsworker\nPrüfung: 2026-09-15T16:54:49.150Z"
+    },
+    {
+      "id": "706300671914c1993d97557f",
+      "content": "✓ WÖk-Störung behoben\nAPI-Redaktionsverarbeitung\nPrüfung: 2026-09-15T16:54:49.150Z"
+    },
+    {
+      "id": "a003a0f8fd0eb17222ee9a83",
+      "content": "✓ WÖk-Störung behoben\nAktuelle Nachrichten tatsächlich veröffentlicht\nPrüfung: 2026-09-15T16:54:49.150Z"
+    },
+    {
+      "id": "220ca296c0ca6b1a60d7697f",
+      "content": "✓ WÖk-Störung behoben\nRedaktionsdurchsatz\nPrüfung: 2026-09-15T16:54:49.150Z"
+    },
+    {
+      "id": "65ae2aa311044a0c620f510f",
+      "content": "✓ WÖk-Störung behoben\nFachliche Nachprüfung\nPrüfung: 2026-09-15T16:54:49.150Z"
+    },
+    {
+      "id": "a470bf6a9908a535b7150d92",
+      "content": "✓ WÖk-Störung behoben\nÜbernahme fertiger Meldungen\nPrüfung: 2026-09-15T16:54:49.150Z"
+    },
+    {
+      "id": "1646f99a88cf68af5b3a396d",
+      "content": "✓ WÖk-Störung behoben\nBridge-Quarantäne\nPrüfung: 2026-09-15T16:54:49.150Z"
+    }
+  ],
   "dailyDate": "2026-09-15",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1125,7 +1130,7 @@
       }
     },
     "last_new_at": "2026-09-14T19:38:30.811Z",
-    "checked_at": "2026-09-15T16:53:31.881Z",
+    "checked_at": "2026-09-15T16:54:49.150Z",
     "last_current_new_at": "2026-09-14T19:38:30.811Z"
   }
 }
