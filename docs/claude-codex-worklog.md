@@ -243,6 +243,11 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Geprüft:** `tests/news/redaktionsworker.test.mjs` (5 Tests: Auswahl, Claim/Entwurf/Ablage, Ein-Versuch-Regel, Tagesdeckel und Sperre, Kandidaten).
 - **Offen:** Erste echte Aufträge beobachten; Natalie bestätigt einmal, dass Entwürfe in der App erscheinen. Oracle-Prozessor nicht aktivieren.
 
+## 2026-09-16 - Claude: Redaktionsworker mit begrenzter Web-Suche, liegengebliebene Übernahmen, Platzvergabe
+
+- **Was:** Die ersten beiden echten Aufträge des Worker-Laufs kamen als HOLD `SOURCE_VERIFICATION_REQUIRED` zurück: Das Wissensprofil verbietet dem Modell, verlinkte Quellen als gelesen zu behandeln, und der API-Aufruf hatte keine Werkzeuge. Der Worker gibt dem Modell jetzt im selben einen Aufruf das gehostete Web-Suchwerkzeug mit Obergrenze (`WOEK_EDITORIAL_WEB_SEARCH`, `WOEK_EDITORIAL_MAX_SEARCHES`), ersetzt den Profilsatz durch die Werkzeugregel und verbucht Suchzugriffe (1 Cent je Zugriff). Übernahmen abgeschalteter ChatGPT-Worker in `10_CLAIMED` werden nach sechs Stunden adoptiert statt jeden Lauf als `claimed_elsewhere` übersprungen. Aufträge ohne Aufruf belegen keinen bezahlten Platz mehr. 4xx-Ablehnungen sind kein bezahlter Versuch. Diagnoseordner nur im Worker-Schritt gesetzt (die Tests schrieben eine Fixture-Antwort hinein).
+- **Geprüft:** `tests/news/redaktionsworker.test.mjs` 9/9 (3 neu), Workflow-Invarianten.
+- **Offen:** Ersten Lauf mit Web-Suche beobachten (Entwurf statt HOLD? Kosten je Auftrag); Natalie bestätigt, dass Entwürfe in der App erscheinen.
 ## 2026-09-16 - Claude: Reparaturschlange der alten Online-Meldungen hält jetzt
 
 - **Was:** Natalie sah eine Meldung vom 14.09. ohne Balken. Die 30 jüngsten Online-Meldungen ohne vollständiges Profil waren am 15.09. eingereiht, doch null trugen noch die Markierung: `pendingRecord` schreibt bei jedem Vertagungsvermerk einer veröffentlichten Meldung den Aktualisierungsvermerk neu, und `impact_reassessment` hing daran. Jetzt überlebt die Markierung jeden Vermerk, `queue-reassessment` läuft als fester Schritt in jedem Lauf (Limit `WOEK_NEWS_REASSESS_LIMIT`, Standard 30), und `partitionAiQueue` reserviert je Lauf einen Platz für eine wartende Neufassung.
@@ -254,3 +259,8 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Nachgerechnet:** Mit dem neuen Transport wären aus Lauf 7 alle drei Antworten strukturell gate-fähig (29 → 1 bzw. 37 → 5 Fehler, Rest Textregeln), aus dem Takt-Lauf zwei von vier; die zwei entgleisten brauchen den zweiten bezahlten Versuch.
 - **Geprüft:** `tests/news/direct-operation.test.mjs` (17 Tests, davon 3 neu), Workflow-Invarianten, `npm run news:test`.
 - **Offen:** Mehrere Takt-Zyklen mit `medium` beobachten (Kosten je Meldung, Anteil vollständiger Antworten), dann Selektionsgewichte mit Daten nachziehen.
+## 2026-09-16 - Claude: Wirkungspotenzial führt jede Dimension, beobachtete Wirkung als eigene Zeile
+
+- **Was:** Bei der Catania-Meldung wirkten die Mensch-Balken doppelt: Die Ansicht setzte die belegte, bereits eingetretene Wirkung (Flüge abgesagt) an die erste Stelle und das modellierte Potenzial darunter als „Weiteres Potenzial“; beide waren Stufe 2 und laufend. Jetzt führt in jeder Dimension das Wirkungspotenzial (Ring, Balken, Richtung, Pfadtitel), und eine beobachtete Wirkung folgt klar beschriftet als „Beobachtet:“ mit eigenem Ring und eigenen Balken (`scripts/news/visuals.mjs`). Die Ableitung (`deriveImpactPresentation`) ist unverändert; nur die Ansicht wechselt die Reihenfolge und die Beschriftung.
+- **Geprüft:** `tests/news/impact-status-ring.test.mjs` (Potenzial vor Beobachtet, keine „Weiteres Potenzial“-Zeile mehr), Ansichts- und Ticker-Tests 182/182, lokale Renderprobe der Catania-Meldung.
+- **Offen:** Live-Sichtprüfung nach dem Deploy.

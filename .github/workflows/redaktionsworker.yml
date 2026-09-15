@@ -48,9 +48,10 @@ jobs:
       WOEK_EDITORIAL_REASONING_EFFORT: ${{ vars.WOEK_EDITORIAL_REASONING_EFFORT || 'medium' }}
       WOEK_EDITORIAL_MAX_JOBS_PER_RUN: ${{ inputs.max_jobs || vars.WOEK_EDITORIAL_MAX_JOBS_PER_RUN || '2' }}
       WOEK_EDITORIAL_MAX_JOBS_PER_DAY: ${{ vars.WOEK_EDITORIAL_MAX_JOBS_PER_DAY || '10' }}
-      # github.workspace ist auf Job-Ebene verfügbar; runner.temp nur in Schritten.
-      # Kein Punkt-Ordner: upload-artifact lässt versteckte Dateien standardmäßig aus.
-      WOEK_NEWS_RAW_OUTPUT_DIR: ${{ github.workspace }}/editorial-raw-output
+      # Begrenzte Web-Suche je Auftrag, damit verlinkte Quellen wirklich gelesen werden
+      # (sonst antwortet das Profil vertragsgemäß mit SOURCE_VERIFICATION_REQUIRED).
+      WOEK_EDITORIAL_WEB_SEARCH: ${{ vars.WOEK_EDITORIAL_WEB_SEARCH || 'true' }}
+      WOEK_EDITORIAL_MAX_SEARCHES: ${{ vars.WOEK_EDITORIAL_MAX_SEARCHES || '5' }}
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -68,6 +69,11 @@ jobs:
         continue-on-error: true
         run: node scripts/news/redaktions-kandidaten.mjs
       - name: Draft open editorial requests (one paid call per request)
+        env:
+          # github.workspace ist auch in Schritten verfügbar; nur hier gesetzt, damit die
+          # Tests davor keine Fixture-Antworten in den Diagnoseordner schreiben.
+          # Kein Punkt-Ordner: upload-artifact lässt versteckte Dateien standardmäßig aus.
+          WOEK_NEWS_RAW_OUTPUT_DIR: ${{ github.workspace }}/editorial-raw-output
         run: node scripts/news/redaktionsworker.mjs
       - name: Preserve paid model answers for diagnosis
         if: always()
