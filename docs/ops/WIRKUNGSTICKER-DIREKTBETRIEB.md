@@ -14,7 +14,11 @@ Patches in zwei Tagen behandelten Symptome dieser Kette.
 
 ## Die gerade Linie
 
-Ein einziger Workflow `.github/workflows/wirkungsticker.yml`, alle 15 Minuten:
+Ein einziger Workflow `.github/workflows/wirkungsticker.yml`, alle 15 Minuten. Zeitgeber sind der
+GitHub-Cron auf versetzten Minuten (:04/:19/:34/:49) **und** der Oracle-Takt (systemd-Timer,
+leerer Commit mit aktuellem main-Baum auf `codex/wirkungsticker-clock`); am 15.09.2026 feuerte der
+GitHub-Cron für dieses Repository nur alle vier bis fünf Stunden. Die Workflow-Concurrency verhindert
+Doppelläufe.
 
 1. **Einsammeln** (kostenlos): amtliche Feeds aus `content/news/source-registry.json` plus die
    aktive Discovery über freigegebene Indizes (`scripts/news/active-discovery.mjs`).
