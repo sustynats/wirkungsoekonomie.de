@@ -1,0 +1,63 @@
+{
+  "version": "2026-09-16.1",
+  "note": "Episodenquellen der verfolgten Sendungen für automatische Nachgesehen/Nachgehört-Aufträge (scripts/news/sendungs-kandidaten.mjs). Logo-Rechte stehen getrennt in show-visual-identities.json.",
+  "shows": [
+    {
+      "id": "maybrit-illner",
+      "show_name": "maybrit illner",
+      "kind": "watched",
+      "feed": "https://www.zdf.de/rss/podcast/audio/zdf/politik/maybrit-illner",
+      "provider": "ZDF, offizieller Podcast-Feed",
+      "min_duration_seconds": 1500,
+      "enabled": true
+    },
+    {
+      "id": "markus-lanz",
+      "show_name": "Markus Lanz",
+      "kind": "watched",
+      "feed": "https://mediathekviewweb.de/feed?query=Markus+Lanz+%21ZDF",
+      "match": "^Markus Lanz",
+      "provider": "ZDF-Mediathek über MediathekViewWeb",
+      "min_duration_seconds": 1500,
+      "enabled": true
+    },
+    {
+      "id": "maithink-x",
+      "show_name": "MAITHINK X",
+      "kind": "watched",
+      "feed": "https://mediathekviewweb.de/feed?query=MAITHINK+X+%21ZDFneo",
+      "match": "MAITHINK",
+      "provider": "ZDFneo-Mediathek über MediathekViewWeb",
+      "min_duration_seconds": 900,
+      "enabled": true
+    },
+    {
+      "id": "terra-x-lesch-co",
+      "show_name": "Terra X Lesch & Co",
+      "kind": "watched",
+      "feed": "https://mediathekviewweb.de/feed?query=Terra+X+Lesch+%26+Co+%21ZDF",
+      "match": "Lesch",
+      "provider": "ZDF-Mediathek über MediathekViewWeb",
+      "min_duration_seconds": 600,
+      "enabled": true
+    },
+    {
+      "id": "lanz-precht",
+      "show_name": "Lanz + Precht",
+      "kind": "listened",
+      "feed": "https://cdn.julephosting.de/podcasts/1355-lanz-precht/feed.rss",
+      "provider": "ZDF/Podstars, offizieller Podcast-Feed",
+      "min_duration_seconds": 900,
+      "enabled": true
+    },
+    {
+      "id": "neudenken",
+      "show_name": "NEU DENKEN",
+      "kind": "listened",
+      "feed": "https://neu-denken-podcast.podigee.io/feed/mp3",
+      "provider": "Mission Wertvoll, offizieller Podcast-Feed",
+      "min_duration_seconds": 900,
+      "enabled": true
+    }
+  ]
+}
