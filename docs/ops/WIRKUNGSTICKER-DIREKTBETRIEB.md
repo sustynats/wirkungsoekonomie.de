@@ -74,11 +74,16 @@ Ein einziger Workflow `.github/workflows/wirkungsticker.yml`, alle 15 Minuten:
   im regulären Lauf mit genau einem Aufruf neu gefasst (Modus `impact_potential_reassessment`,
   Version +1, Veröffentlichungsdatum bleibt). Manuell über den Workflow-Input `reassess_limit`.
 
-## Was nicht in dieser Lane liegt
+## Private Redaktion (Meinung & Analyse, Nachgehört/Nachgesehen, Buch & Wirkung)
 
-Meinung & Analyse, Nachgehört/Nachgesehen und Buch & Wirkung laufen über die private Redaktion
-auf Oracle (`admin/redaktion`, `editorial-server`). Sie sind von dieser Umstellung nicht berührt
-und brauchen eine eigene Entscheidung, sobald die Nachrichtenlane stabil läuft.
+Eingabe, Entwurf und Freigabe laufen weiterhin über die private Redaktion auf Oracle
+(`admin/redaktion`, `editorial-server`). Der Nachrichtenworkflow holt in jedem Lauf die dort
+freigegebenen Fassungen über die vorhandene authentifizierte Schnittstelle ab
+(`scripts/news/import-approved-editorials.mjs --claim`, Import-Sperre wird gehalten), baut sie
+mit und quittiert die Übernahme erst nach dem erfolgreichen Push (`--finalize`). Eine gestörte
+Redaktion hält den Nachrichtenlauf nie an (`continue-on-error`). Die Entwurfserzeugung auf
+Oracle (bisher ChatGPT-Worker, vorbereitet: `bridge/run-api-processor.mjs` mit OpenAI) ist eine
+eigene Betriebsentscheidung.
 
 ## Prüfen
 

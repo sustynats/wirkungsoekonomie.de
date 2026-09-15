@@ -9,7 +9,7 @@ const cost = 0.002865;
 const response = (body, status = 200) => new Response(JSON.stringify(body), { status });
 const options = fetchImpl => ({ prompt: 'Local test only', attempts: 3, fetchImpl, retryDelayImpl: async () => {} });
 
-for (const [answer, code] of [['broken', 'AI_MALFORMED_JSON'], ['{"analyses":{}}', 'AI_SCHEMA_ANALYSES_REQUIRED'], ['x'.repeat(40001), 'AI_RESPONSE_TOO_LARGE']]) {
+for (const [answer, code] of [['broken', 'AI_MALFORMED_JSON'], ['{"analyses":{}}', 'AI_SCHEMA_ANALYSES_REQUIRED'], ['x'.repeat(200001), 'AI_RESPONSE_TOO_LARGE']]) {
   test(`retains token evidence while rejecting ${code}`, async () => {
     let calls = 0;
     await assert.rejects(callWoekAi([], options(async () => { calls++; return response({ ...envelope, answer }); })), error => {
