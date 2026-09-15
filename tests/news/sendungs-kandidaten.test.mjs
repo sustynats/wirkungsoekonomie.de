@@ -1,0 +1,113 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { bridgePath, JOB_ID } from '../../scripts/news/bridge/contract.mjs';
+import { parseEpisodes, selectNewEpisodes, buildEpisodeRequest, knownEpisodeUrls, pickTranscript, fetchTranscript, proposeEpisodeCandidates, durationSeconds, EPISODE_VERSION } from '../../scripts/news/sendungs-kandidaten.mjs';
+import { labelledTitle } from '../../scripts/news/build.mjs';
+
+const now = '2026-09-16T06:00:00.000Z';
+const zdf = `<?xml version="1.0"?><rss><channel><title>maybrit illner (AUDIO)</title>
+<item><title>Die Denkzettelwahl &#8211; was muss sich &#228;ndern?</title><itunes:summary>Mit Armin Laschet und Cem &#214;zdemir.</itunes:summary><link>https://www.zdf.de/video/talk/maybrit-illner-128/illner-100</link><enclosure url="https://podfileszdf-a.akamaihd.net/x.mp3" length="1" type="audio/mpeg"/><guid>https://www.zdf.de/uri/c27c443c</guid><pubDate>Thu, 10 Sep 2026 22:15:00 +0200</pubDate><itunes:duration>3718</itunes:duration></item>
+<item><title>Kurzer Clip</title><link>https://www.zdf.de/video/talk/maybrit-illner-128/clip-100</link><guid>clip</guid><pubDate>Fri, 11 Sep 2026 10:00:00 +0200</pubDate><itunes:duration>00:04:10</itunes:duration></item>
+</channel></rss>`;
+const mvw = `<rss><channel><item><title><![CDATA[Markus Lanz vom 10. September 2026 (S2026/E98)]]></title><description><![CDATA[Über den Vorschlag des BSW.]]></description><link>https://nrodlzdf-a.akamaihd.net/lanz.mp4</link><guid isPermaLink="false">Xs9R</guid><category><![CDATA[Markus Lanz]]></category><pubDate>Thu, 10 Sep 2026 21:45:00 GMT</pubDate><enclosure url="https://nrodlzdf-a.akamaihd.net/lanz.mp4" length="1" type="video/mp4"/><duration>3678</duration><websiteUrl>https://www.zdf.de/video/talk/markus-lanz-114/lanz-102</websiteUrl></item>
+<item><title><![CDATA[Terra X: Etwas anderes]]></title><link>https://nrodlzdf-a.akamaihd.net/terra.mp4</link><guid>t1</guid><category><![CDATA[Terra X]]></category><pubDate>Thu, 10 Sep 2026 20:00:00 GMT</pubDate><duration>1800</duration><websiteUrl>https://www.zdf.de/video/terra-100</websiteUrl></item></channel></rss>`;
+const jule = `<rss xmlns:podcast="https://podcastindex.org/namespace/1.0"><channel><item><title>#262 (Wenn die Mitte ihre Mehrheit verliert)</title><link>https://lanz-precht.example/262</link><description>In Sachsen-Anhalt bekommt die AfD 43,8 Prozent.</description><guid isPermaLink="false">g262</guid><pubDate>Thu, 10 Sep 2026 23:01:00 +0000</pubDate><enclosure url="https://cdn.jule.example/262.mp3" type="audio/mpeg" length="1"/><itunes:duration>3338</itunes:duration><podcast:transcript url="https://cdn.jule.example/262.transcript.txt?v=3" type="text/plain"/><podcast:transcript url="https://cdn.jule.example/262.vtt?v=3" type="text/vtt"/></item></channel></rss>`;
+const shows = {
+  illner: { id: 'maybrit-illner', show_name: 'maybrit illner', kind: 'watched', feed: 'https://feeds.example/illner', provider: 'ZDF', min_duration_seconds: 1500 },
+  lanz: { id: 'markus-lanz', show_name: 'Markus Lanz', kind: 'watched', feed: 'https://feeds.example/lanz', match: '^Markus Lanz', provider: 'MVW', min_duration_seconds: 1500 },
+  lp: { id: 'lanz-precht', show_name: 'Lanz + Precht', kind: 'listened', feed: 'https://feeds.example/lp', provider: 'Jule', min_duration_seconds: 900 },
+};
+
+test('feed items of the three feed shapes become episodes with page, media, transcript and duration; clips and other shows are dropped', () => {
+  const [illner, ...restIllner] = parseEpisodes(zdf, shows.illner);
+  assert.equal(restIllner.length, 0, 'a four-minute clip is below the show minimum');
+  assert.equal(illner.title, 'Die Denkzettelwahl – was muss sich ändern?'); assert.equal(illner.page, 'https://www.zdf.de/video/talk/maybrit-illner-128/illner-100');
+  assert.equal(illner.media, 'https://podfileszdf-a.akamaihd.net/x.mp3'); assert.equal(illner.duration, 3718); assert.equal(illner.published_at, '2026-09-10T20:15:00.000Z');
+  assert.ok(illner.summary.startsWith('Mit Armin Laschet und Cem Özdemir'));
+  const lanz = parseEpisodes(mvw, shows.lanz);
+  assert.equal(lanz.length, 1, 'the Terra X item does not match the show');
+  assert.equal(lanz[0].page, 'https://www.zdf.de/video/talk/markus-lanz-114/lanz-102'); assert.equal(lanz[0].media, 'https://nrodlzdf-a.akamaihd.net/lanz.mp4'); assert.equal(lanz[0].guid, 'Xs9R');
+  const [lp] = parseEpisodes(jule, shows.lp);
+  assert.deepEqual(lp.transcripts.map((t) => t.type), ['text/plain', 'text/vtt']);
+  assert.equal(pickTranscript(lp.transcripts).type, 'text/vtt', 'time marks win over plain text');
+  assert.equal(pickTranscript([]), null);
+  assert.equal(durationSeconds('01:02:03'), 3723); assert.equal(durationSeconds('abc'), null);
+  assert.throws(() => parseEpisodes('<!DOCTYPE x><rss/>', shows.lp), /SHOW_FEED_INVALID/);
+});
+
+test('only recent episodes are selected, newest first and bounded', () => {
+  const episodes = [{ published_at: '2026-09-01T00:00:00.000Z', title: 'alt' }, { published_at: '2026-09-15T00:00:00.000Z', title: 'neu' }, { published_at: '2026-09-12T00:00:00.000Z', title: 'mittel' }, { published_at: '2026-09-20T00:00:00.000Z', title: 'zukunft' }];
+  assert.deepEqual(selectNewEpisodes(episodes, now, { maxAgeDays: 7, limit: 5 }).map((e) => e.title), ['neu', 'mittel']);
+  assert.deepEqual(selectNewEpisodes(episodes, now, { maxAgeDays: 7, limit: 1 }).map((e) => e.title), ['neu']);
+});
+
+test('an episode becomes a regular private request with transcript, and never a position of the author', () => {
+  const [lp] = parseEpisodes(jule, shows.lp);
+  const transcript = { url: 'https://cdn.jule.example/262.vtt?v=3', type: 'text/vtt', chars: 82232, truncated: false, text: 'WEBVTT\n00:00:22.882 --> 00:00:26.375\nSchönen guten Morgen' };
+  const { job, fingerprint } = buildEpisodeRequest(lp, shows.lp, { owner: '1234567890123456', now, transcript });
+  assert.ok(JOB_ID.test(job.input.job_id)); assert.equal(job.input.job_type, 'editorial_request'); assert.equal(job.input.request.kind, 'listened'); assert.equal(job.intake.kind, 'listened');
+  assert.ok(job.input.request.brief.startsWith('Nachgehört: Lanz + Precht – „#262 (Wenn die Mitte ihre Mehrheit verliert)“ vom 11. September 2026.'));
+  assert.ok(job.input.request.brief.includes('origin.transcript')); assert.equal(job.input.request.author_notes, '');
+  assert.deepEqual(job.input.request.links, ['https://lanz-precht.example/262', 'https://cdn.jule.example/262.mp3', 'https://cdn.jule.example/262.vtt?v=3']);
+  assert.equal(job.input.origin.transcript.chars, 82232); assert.equal(job.input.origin.candidate_version, EPISODE_VERSION);
+  assert.match(job.candidate.story_id, /^wt-[a-f0-9]{16}$/); assert.equal(job.intake.trigger_type, 'automatic_episode'); assert.equal(job.input.manual_only, true);
+  const [lanz] = parseEpisodes(mvw, shows.lanz);
+  const plain = buildEpisodeRequest(lanz, shows.lanz, { owner: '1234567890123456', now }).job;
+  assert.equal(plain.input.request.kind, 'watched'); assert.ok(plain.input.request.brief.includes('Ein Transkript liegt nicht bei')); assert.equal('transcript' in plain.input.origin, false);
+  assert.notEqual(fingerprint, buildEpisodeRequest(lanz, shows.lanz, { owner: 'x', now }).fingerprint);
+});
+
+test('episodes Natalie already requested or published are known by URL', () => {
+  const known = knownEpisodeUrls({ editions: [{ sources: ['https://www.zdf.de/video/talk/maybrit-illner-128/illner-100?x=1', { url: 'https://cdn.jule.example/1.mp3' }] }], requests: [{ input: { request: { links: ['https://neu-denken.example/s6e5/'] } } }] });
+  assert.ok(known.has('https://www.zdf.de/video/talk/maybrit-illner-128/illner-100')); assert.ok(known.has('https://cdn.jule.example/1.mp3')); assert.ok(known.has('https://neu-denken.example/s6e5'));
+});
+
+test('transcripts are fetched with a size cap and html or json are flattened', async () => {
+  const long = 'x'.repeat(200000);
+  const fetchImpl = async (url) => ({ ok: !/missing/.test(url), text: async () => /json/.test(url) ? JSON.stringify([{ startTime: 1.5, speaker: 'A', body: 'Hallo Welt ' + 'und noch viel mehr Text '.repeat(12) }, { startTime: 3, body: 'Zweiter Satz.' }]) : /html/.test(url) ? `<html><body><p>${'Wort '.repeat(100)}</p></body></html>` : long });
+  const vtt = await fetchTranscript({ url: 'https://t.example/a.vtt', type: 'text/vtt' }, fetchImpl);
+  assert.equal(vtt.chars, 200000); assert.equal(vtt.truncated, true); assert.equal(vtt.text.length, 150000);
+  const html = await fetchTranscript({ url: 'https://t.example/a.html', type: 'text/html' }, fetchImpl);
+  assert.ok(!html.text.includes('<p>')); assert.ok(html.text.startsWith('Wort Wort'));
+  const json = await fetchTranscript({ url: 'https://t.example/a.json', type: 'application/json' }, fetchImpl);
+  assert.ok(json.text.startsWith('1.5 A: Hallo Welt'));
+  assert.equal(await fetchTranscript({ url: 'https://t.example/missing.vtt', type: 'text/vtt' }, fetchImpl), null);
+  assert.equal(await fetchTranscript(null, fetchImpl), null);
+});
+
+function fakeSession({ owner = '1234567890123456', links = [] } = {}) {
+  const files = new Map(), observations = new Map();
+  const jobs = [{ input: { job_id: 'wt_20260911T062716Z_' + 'a'.repeat(24), job_type: 'editorial_request', request: { links } }, status: 'queued', intake: { owner } }];
+  const store = { acquire: async () => {}, release: async () => {}, all: async () => jobs.map((j) => ({ input: { job_id: j.input.job_id, job_type: j.input.job_type }, status: j.status })),
+    get: async (id) => jobs.find((j) => j.input.job_id === id) || null, put: async (job) => { jobs.push(job); }, observe: async (k, v) => { observations.set(k, v); }, observation: async (k) => observations.get(k) ?? null };
+  const transport = { writeAtomic: async (p, v) => { files.set(p, v); } };
+  return { session: { store, transport }, files, observations, jobs };
+}
+const feeds = { 'https://feeds.example/illner': zdf, 'https://feeds.example/lanz': mvw, 'https://feeds.example/lp': jule };
+const fetchImpl = async (url) => ({ ok: url in feeds || /transcript|vtt/.test(url), text: async () => feeds[url] || `WEBVTT\n${'00:00:01.000 --> 00:00:02.000\nText mit Inhalt.\n'.repeat(20)}` });
+
+test('new episodes of the followed shows become requests once, newest first, within the daily cap and never for known episodes', async () => {
+  const { session, files, jobs } = fakeSession({ links: ['https://www.zdf.de/video/talk/maybrit-illner-128/illner-100'] });
+  const report = await proposeEpisodeCandidates({ session, root: '/nonexistent', now, env: {}, fetchImpl, shows: Object.values(shows), limit: 5, maxPerDay: 5, maxAgeDays: 7 });
+  assert.equal(report.status, 'ok'); assert.equal(report.fresh_episodes, 2, 'Illner is known, Lanz and Lanz+Precht are new');
+  assert.deepEqual(report.proposed.map((p) => [p.show_id, p.kind]), [['lanz-precht', 'listened'], ['markus-lanz', 'watched']]);
+  assert.equal(report.proposed[0].transcript_chars > 0, true); assert.equal(report.proposed[1].transcript_chars, 0);
+  assert.equal(jobs.length, 3); assert.equal(files.size, 2);
+  for (const job of jobs.slice(1)) assert.ok(files.has(bridgePath('00_INBOX', `${job.input.job_id}.input.json`)));
+  const again = await proposeEpisodeCandidates({ session, root: '/nonexistent', now, env: {}, fetchImpl, shows: Object.values(shows), limit: 5, maxPerDay: 5 });
+  assert.deepEqual(again.proposed, [], 'each episode is proposed once');
+  const capped = fakeSession();
+  const first = await proposeEpisodeCandidates({ session: capped.session, root: '/nonexistent', now, env: {}, fetchImpl, shows: Object.values(shows), limit: 1, maxPerDay: 1 });
+  assert.equal(first.proposed.length, 1); assert.equal(first.proposed[0].show_id, 'lanz-precht', 'newest first');
+  const second = await proposeEpisodeCandidates({ session: capped.session, root: '/nonexistent', now, env: {}, fetchImpl, shows: Object.values(shows), limit: 1, maxPerDay: 1 });
+  assert.equal(second.status, 'daily_limit');
+  const noOwner = fakeSession({ owner: 'unknown' });
+  assert.equal((await proposeEpisodeCandidates({ session: noOwner.session, root: '/nonexistent', now, env: {}, fetchImpl, shows: Object.values(shows) })).status, 'owner_unknown');
+  const broken = await proposeEpisodeCandidates({ session: fakeSession().session, root: '/nonexistent', now, env: {}, fetchImpl: async () => ({ ok: false, status: 503 }), shows: Object.values(shows) });
+  assert.equal(broken.feed_errors.length, 3); assert.deepEqual(broken.proposed, []);
+});
+
+test('feed titles carry the format label exactly once', () => {
+  assert.equal(labelledTitle({ format: 'approved_editorial', subtype: 'watched', title: 'Nachgesehen: Die Denkzettelwahl' }), 'Nachgesehen: Die Denkzettelwahl');
+  assert.equal(labelledTitle({ format: 'approved_editorial', subtype: 'listened', title: 'Gute Bildung' }), 'Nachgehört: Gute Bildung');
+});
