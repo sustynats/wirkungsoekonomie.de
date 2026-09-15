@@ -85,7 +85,13 @@ Doppelläufe.
 - `scripts/news/queue-reassessment.mjs --limit=30`: Die jüngsten Online-Meldungen ohne
   vollständiges freigegebenes Profil erhalten `pending_update.impact_reassessment` und werden
   im regulären Lauf mit genau einem Aufruf neu gefasst (Modus `impact_potential_reassessment`,
-  Version +1, Veröffentlichungsdatum bleibt). Manuell über den Workflow-Input `reassess_limit`.
+  Version +1, Veröffentlichungsdatum bleibt). Seit 16.09. fester Schritt jedes Laufs (Limit
+  `WOEK_NEWS_REASSESS_LIMIT`, Standard 30; Workflow-Input `reassess_limit` übersteuert), denn am
+  15.09. hatte ein einziger Vertagungsvermerk (`AI_BUDGET_OR_BATCH_LIMIT`) den Aktualisierungs-
+  vermerk der Meldungen neu geschrieben und die Markierung gelöscht: null Meldungen in der
+  Reparaturschlange, alte Meldungen blieben ohne Balken. Die Markierung überlebt jetzt jeden
+  Vertagungsvermerk, und `partitionAiQueue` reserviert je Lauf einen Platz für eine wartende
+  Neufassung, damit der frische Nachrichtenstrom sie nicht verdrängt.
 
 ## Private Redaktion (Meinung & Analyse, Nachgehört/Nachgesehen, Buch & Wirkung)
 

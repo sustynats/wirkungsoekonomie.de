@@ -79,10 +79,13 @@ jobs:
       - name: Unit and security tests
         if: steps.slot.outputs.should_run == 'true'
         run: npm run news:test
-      - name: Queue explicitly requested potential reassessments
-        if: steps.slot.outputs.should_run == 'true' && inputs.reassess_limit > 0
+      - name: Queue potential reassessments for the newest online stories
+        # Fester Bestandteil jedes Laufs (seit 16.09.): die jüngsten Online-Meldungen
+        # ohne vollständiges freigegebenes Profil bleiben eingereiht, bis die Neufassung
+        # das Gate passiert; ein Platz je Lauf ist dafür reserviert (partitionAiQueue).
+        if: steps.slot.outputs.should_run == 'true'
         env:
-          REASSESS_LIMIT: ${{ inputs.reassess_limit }}
+          REASSESS_LIMIT: ${{ inputs.reassess_limit || vars.WOEK_NEWS_REASSESS_LIMIT || '30' }}
         run: node scripts/news/queue-reassessment.mjs --limit="$REASSESS_LIMIT"
       - name: Import, analyze (one call per story) and build
         if: steps.slot.outputs.should_run == 'true'
