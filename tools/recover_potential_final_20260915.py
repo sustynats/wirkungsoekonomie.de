@@ -1,6 +1,8 @@
 """Conservative data-only recovery of already reviewed potential profiles from PR #771.
 
 No provider/LLM calls, no new scoring, no forced conflict resolution.
+Already-published fresh 2.1 records that still lack a reviewed MPD model are
+held from publication instead of receiving invented values.
 This helper is one-off recovery machinery and must not be merged to main.
 """
 import copy
@@ -16,6 +18,7 @@ BASE = "a985626602d3deebdd8ae7625bfcd53874b31a77"
 EXPECTED_BRANCH = "chatgpt/wirkungspotenzial-final-recovery-20260915"
 MISSING = object()
 DIMENSIONS = ("human", "planet", "democracy")
+HOLD_AT = "2026-09-15T06:41:00Z"
 
 
 def complete(record):
@@ -27,6 +30,29 @@ def complete(record):
         and 0 <= d["magnitude"] <= 5
         and bool(d.get("primary_paths"))
         for key in DIMENSIONS
+    )
+
+
+def missing_dimensions(record):
+    assessment = record.get("impact_assessment") or {}
+    dimensions = assessment.get("dimensions") or {}
+    missing = []
+    for key in DIMENSIONS:
+        d = dimensions.get(key) or {}
+        if not (d.get("path_status") == "modelled" and type(d.get("magnitude")) is int and 0 <= d["magnitude"] <= 5 and bool(d.get("primary_paths"))):
+            missing.append(key)
+    return missing
+
+
+def fresh_incomplete_publication(record):
+    assessment = record.get("impact_assessment") or {}
+    semantic = record.get("impact_semantic_review") or {}
+    return (
+        record.get("published") is True
+        and assessment.get("version") == "2.1"
+        and assessment.get("review", {}).get("status") != "needs_reassessment"
+        and (assessment.get("publication_status") == "ready" or semantic.get("status") == "ready")
+        and not complete(record)
     )
 
 
@@ -121,7 +147,8 @@ def run():
         "candidate_count": len(candidates),
         "applied": [],
         "held": [],
-        "policy": "Existing independent reviews only; no new scoring/provider calls; no concurrent/protected-field overwrite."
+        "unreviewed_publication_holds": [],
+        "policy": "Existing independent reviews only; no new scoring/provider calls; no concurrent/protected-field overwrite. Fresh incomplete 2.1 publications are held instead of guessed."
     }
 
     for key in candidates:
@@ -146,9 +173,44 @@ def run():
             "magnitudes": {k: merged["impact_assessment"]["dimensions"][k]["magnitude"] for k in DIMENSIONS},
         })
 
+    # Fail closed without inventing values: if a fresh 2.1 story is public but
+    # still incomplete after restoring all existing reviewed profiles, remove
+    # it from the public release and retain its record for later proper review.
+    # This does not enqueue or call any provider; it only prevents an invalid
+    # empty-potential card from remaining online.
+    for i, record in enumerate(store["stories"]):
+        if not fresh_incomplete_publication(record):
+            continue
+        held_record = copy.deepcopy(record)
+        missing = missing_dimensions(held_record)
+        held_record["published"] = False
+        assessment = held_record.get("impact_assessment") or {}
+        if assessment.get("publication_status") == "ready":
+            assessment["publication_status"] = "needs_review"
+        semantic = held_record.get("impact_semantic_review")
+        if isinstance(semantic, dict) and semantic.get("status") == "ready":
+            semantic["status"] = "needs_review"
+        held_record["publication_hold"] = {
+            "reason": "IMPACT_FRESH_MODELLED_DIMENSIONS_REQUIRED",
+            "held_at": HOLD_AT,
+            "missing_dimensions": missing,
+            "provider_call": False,
+            "note": "Nicht erneut bewerten oder Werte erfinden; erst mit vollständig geprüftem MPD-Potenzial wieder veröffentlichen."
+        }
+        store["stories"][i] = held_record
+        report["unreviewed_publication_holds"].append({
+            "story_id": held_record.get("story_id"),
+            "title": held_record.get("title"),
+            "slug": held_record.get("slug"),
+            "missing_dimensions": missing,
+        })
+
+    if len(report["unreviewed_publication_holds"]) > 10:
+        raise SystemExit(f"Unexpectedly broad unreviewed publication hold set ({len(report['unreviewed_publication_holds'])}); refusing bulk hold")
+
     assert set(current) == set(index(store["stories"])), "Story identities must be preserved"
     report["story_count"] = len(store["stories"])
-    if report["applied"]:
+    if report["applied"] or report["unreviewed_publication_holds"]:
         Path(filename).write_text(json.dumps(store, ensure_ascii=False, indent=2) + "\n")
     report["result_sha256"] = hashlib.sha256(Path(filename).read_bytes()).hexdigest()
     report_path = Path(os.environ["RUNNER_TEMP"]) / "potential-final-recovery-report.json"
