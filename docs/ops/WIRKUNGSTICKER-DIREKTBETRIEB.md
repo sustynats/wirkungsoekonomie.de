@@ -57,7 +57,9 @@ Ein einziger Workflow `.github/workflows/wirkungsticker.yml`, alle 15 Minuten:
   privates Laufartefakt `ai-raw-output-<run>` (3 Tage) gesichert, damit Gate-Fehler erklärbar sind.
 - Der Transport wandelt nur Typen (Zahlen-Strings → Zahlen, Boolean-Strings → Booleans) und
   rechnet die Tragweite aus den gelieferten Faktoren nach; er ergänzt nie Inhalte.
-- Modell über Repository-Variable `WOEK_NEWS_MODEL` (Standard `gpt-5.4-mini`; zugelassen
+- Betriebsmodell seit 15.09.2026 abends: `gpt-5.6-luna` (Variable `WOEK_NEWS_MODEL`, Entscheidung
+  Natalie); September-Freigabe auf 100 EUR angehoben (`NEWS_AI_BUDGET_DIRECT_OPERATION`).
+- Modell über Repository-Variable `WOEK_NEWS_MODEL` (Code-Standard `gpt-5.4-mini`; zugelassen
   `gpt-5.5`, `gpt-5.6-luna`). Richtwerte je Meldung bei rund 11k Eingabe- und 4k Ausgabe-Token:
   `gpt-5.6-luna` ≈ 0,7 Cent, `gpt-5.4-mini` ≈ 2,6 Cent, `gpt-5.5` ≈ 18 Cent.
 
