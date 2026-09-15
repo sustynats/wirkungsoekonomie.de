@@ -52,10 +52,6 @@ jobs:
       WOEK_EDITORIAL_MAX_JOBS_PER_DAY: ${{ vars.WOEK_EDITORIAL_MAX_JOBS_PER_DAY || '16' }}
       WOEK_EPISODE_CANDIDATES_PER_RUN: ${{ vars.WOEK_EPISODE_CANDIDATES_PER_RUN || '1' }}
       WOEK_EPISODE_CANDIDATES_PER_DAY: ${{ vars.WOEK_EPISODE_CANDIDATES_PER_DAY || '3' }}
-      # github.workspace ist auf Job-Ebene verfügbar; runner.temp nur in Schritten.
-      # Kein Punkt-Ordner: upload-artifact lässt versteckte Dateien standardmäßig aus.
-      WOEK_NEWS_RAW_OUTPUT_DIR: ${{ github.workspace }}/editorial-raw-output
-      WOEK_EDITORIAL_MAX_JOBS_PER_DAY: ${{ vars.WOEK_EDITORIAL_MAX_JOBS_PER_DAY || '10' }}
       # Begrenzte Web-Suche je Auftrag, damit verlinkte Quellen wirklich gelesen werden
       # (sonst antwortet das Profil vertragsgemäß mit SOURCE_VERIFICATION_REQUIRED).
       WOEK_EDITORIAL_WEB_SEARCH: ${{ vars.WOEK_EDITORIAL_WEB_SEARCH || 'true' }}
