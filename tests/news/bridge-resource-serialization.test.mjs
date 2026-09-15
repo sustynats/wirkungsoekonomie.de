@@ -20,7 +20,7 @@ test('the ticker workflow is a single serialized lane without bridge phases or c
 
 test('exactly one paid attempt per input and the key only from the repository secret', () => {
   assert.match(ticker, /OPENAI_API_KEY: \$\{\{ secrets\.WIRKUNGSTICKER \}\}/);
-  assert.match(ticker, /WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT: "1"/);
+  assert.match(ticker, /WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT: "2"/, "bounded: a second paid attempt only after a structural gate failure");
   assert.match(ticker, /WOEK_NEWS_AI_ATTEMPTS_PER_STORY: "1"/);
   assert.match(ticker, /WOEK_NEWS_AI_BATCH_SIZE: "1"/);
   assert.match(ticker, /WOEK_NEWS_MAX_SOURCE_AGE_HOURS: \$\{\{ vars\.WOEK_NEWS_MAX_SOURCE_AGE_HOURS \|\| '24' \}\}/, 'LIFO horizon explicit in production');

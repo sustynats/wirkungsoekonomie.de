@@ -96,8 +96,9 @@ jobs:
           WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: ${{ vars.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || '12' }}
           # LIFO ab heute: unveröffentlichte Kandidaten älter als der Horizont werden ohne Aufruf geschlossen.
           WOEK_NEWS_MAX_SOURCE_AGE_HOURS: ${{ vars.WOEK_NEWS_MAX_SOURCE_AGE_HOURS || '24' }}
-          # Genau ein bezahlter Versuch je Eingabestand; erst neue Evidenz löst erneut aus.
-          WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT: "1"
+          # Höchstens zwei bezahlte Versuche je Eingabestand, der zweite nur nach
+          # strukturellem Gate-Fehler mit Backoff; inhaltliche Ablehnungen nie erneut.
+          WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT: "2"
           WOEK_NEWS_AI_ATTEMPTS_PER_STORY: "1"
           WOEK_NEWS_AI_BATCH_SIZE: "1"
           WOEK_NEWS_AI_BATCH_DELAY_MS: "1500"
