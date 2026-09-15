@@ -48,10 +48,11 @@ Titelbildsystem, App-Ausspielung, Quellenregister, Budgetstufen.
 
 ## Private Redaktion
 
-Freigegebene Fassungen aus `admin/redaktion` werden weiterhin übernommen
+Freigegebene Fassungen aus `admin/redaktion` werden übernommen
 (`scripts/news/import-approved-editorials.mjs`, Claim vor dem Build, Finalize nach dem Push).
-Offen und Oracle-seitig: die Entwurfserzeugung ohne ChatGPT. Der vorbereitete
-`bridge/run-api-processor.mjs` (OpenAI, gpt-5.6-luna, ein bezahlter Aufruf je Auftrag) ist dafür
-der vorgesehene Weg; Aktivierung über `api-processor-config.json` (`enabled`, `news_only=false`)
-und `WOEK_API_PROCESSOR_ENABLED=true` auf Oracle. Bitte mit Natalie abstimmen und nach
-Aktivierung die Belege im Redaktionsjournal prüfen.
+Die Entwurfserzeugung läuft seit 15.09.2026 abends im **GitHub-Redaktionsworker**
+(`.github/workflows/redaktionsworker.yml`, `scripts/news/redaktionsworker.mjs`) über die
+vorhandene Oracle-Schnittstelle und Dropbox-Ablage; der Oracle-seitige `run-api-processor.mjs`
+muss NICHT aktiviert werden (Doppelbearbeitung vermeiden). Bitte auf Oracle nichts parallel
+starten, das `00_INBOX`-Aufträge claimt. Belege je Auftrag: `95_LOGS/processor-github-<job>.json`,
+Beobachtungen `github-attempt:<job>`, `github-claim:<name>`, `github-candidate:<story>`.

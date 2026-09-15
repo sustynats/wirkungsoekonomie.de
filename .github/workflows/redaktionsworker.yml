@@ -1,0 +1,73 @@
+name: Redaktionsworker
+
+# Direktbetrieb der privaten Redaktion (seit 15.09.2026): Übernimmt die Rolle
+# der früheren ChatGPT-Worker. Offene Redaktionsaufträge (Meinung & Analyse,
+# Nachgehört, Nachgesehen, Buch & Wirkung) werden über die vorhandene
+# authentifizierte Oracle-Schnittstelle gelesen, mit genau einem OpenAI-Aufruf
+# je Auftrag entworfen und als Entwurf abgelegt. Freigabe oder Rückgabe mit
+# Kommentar bleibt in der Redaktionsapp; nichts wird direkt veröffentlicht.
+# Doku: docs/ops/WIRKUNGSTICKER-DIREKTBETRIEB.md
+
+on:
+  schedule:
+    - cron: "8,23,38,53 * * * *"
+  workflow_dispatch:
+    inputs:
+      max_jobs:
+        description: "Höchstzahl bezahlter Aufträge in diesem Lauf"
+        type: number
+        default: 2
+      propose_candidates:
+        description: "Zusätzlich Kandidaten für Meinung & Analyse aus stark relevanten Meldungen als Auftrag einreihen"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: redaktionsworker
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    if: vars.WIRKUNGSTICKER_PROCESSING_MODE == 'api' || vars.WIRKUNGSTICKER_PROCESSING_MODE == ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      WIRKUNGSTICKER_PROCESSING_MODE: api
+      VISUAL_GENERATION_PROVIDER: higgsfield
+      WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
+      WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+      OPENAI_API_KEY: ${{ secrets.WIRKUNGSTICKER }}
+      WOEK_NEWS_MODEL: ${{ vars.WOEK_NEWS_MODEL || 'gpt-5.4-mini' }}
+      WOEK_EDITORIAL_REASONING_EFFORT: ${{ vars.WOEK_EDITORIAL_REASONING_EFFORT || 'medium' }}
+      WOEK_EDITORIAL_MAX_JOBS_PER_RUN: ${{ inputs.max_jobs || vars.WOEK_EDITORIAL_MAX_JOBS_PER_RUN || '2' }}
+      WOEK_EDITORIAL_MAX_JOBS_PER_DAY: ${{ vars.WOEK_EDITORIAL_MAX_JOBS_PER_DAY || '10' }}
+      WOEK_NEWS_RAW_OUTPUT_DIR: ${{ runner.temp }}/editorial-raw-output
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Worker tests
+        run: node --test tests/news/redaktionsworker.test.mjs tests/news/import-approved-editorials.test.mjs
+      - name: Propose Meinung-und-Analyse candidates as editorial requests
+        if: inputs.propose_candidates == true || vars.WOEK_EDITORIAL_AUTO_CANDIDATES == 'true'
+        continue-on-error: true
+        run: node scripts/news/redaktions-kandidaten.mjs
+      - name: Draft open editorial requests (one paid call per request)
+        run: node scripts/news/redaktionsworker.mjs
+      - name: Preserve paid model answers for diagnosis
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: editorial-raw-output-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 3
+          if-no-files-found: ignore
+          path: ${{ runner.temp }}/editorial-raw-output
