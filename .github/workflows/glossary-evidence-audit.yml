@@ -38,7 +38,7 @@ jobs:
           for path in paths:
               if path in exact or path.startswith(prefixes):
                   src = root / path
-                  if src.is_file() and src.stat().st_size < 15000000:
+                  if src.is_file() and (path in exact or src.stat().st_size < 15000000):
                       dst = out / path
                       dst.parent.mkdir(parents=True, exist_ok=True)
                       shutil.copy2(src, dst)
@@ -50,6 +50,7 @@ jobs:
           assert (out / 'public/data/glossary.terms.json').is_file()
           print('Canonical terms:', len(terms))
           print('Files:', sum(p.is_file() for p in out.rglob('*')))
+          print('Registry bytes:', (out / 'public/data/glossary.terms.json').stat().st_size)
           PY
       - uses: actions/upload-artifact@v4
         with:
