@@ -2,7 +2,9 @@ name: Complete potential repair 772
 on:
   push:
     branches: [chatgpt/potential-release-build-20260915]
-    paths: [.github/workflows/potential-release-build-20260915.yml]
+    paths:
+      - .github/workflows/potential-release-build-20260915.yml
+      - tools/prepare_potential_release_772.py
 permissions:
   contents: write
 concurrency:
@@ -98,7 +100,7 @@ jobs:
           fs.writeFileSync('docs/news/RECOVERY-POTENTIAL-2026-09-15-FINAL.json',JSON.stringify(report,null,2)+'\n');
           console.log('PASS: 13 preserved independent reviews and canonical source bindings; zero provider calls');
           JS
-          printf '\n## Abschluss nach erneuter Fehlermeldung\n\nDie bereits unabhaengig geprueften Potenzialprofile werden ohne neuen Provider- oder LLM-Aufruf in den aktuellen main-Stand integriert. Alle 13 geprueften Profile, ihre Artikelseiten, News-Feedfragmente und Merkzettel-Einzelkarten werden gemeinsam geprueft. Neuere Queue-Metadaten und die urspruengliche Potenzialbewertung bleiben erhalten. Der genaue Quellenstand steht in RECOVERY-POTENTIAL-2026-09-15-FINAL.json. Erst Deployment plus Live-Readback gilt als behoben.\n' >> docs/news/RECOVERY-POTENTIAL-2026-09-15.md
+          printf '\n## Abschluss nach erneuter Fehlermeldung\n\nDie bereits unabhaengig geprueften Potenzialprofile werden ohne neuen Provider- oder LLM-Aufruf in den aktuellen main-Stand integriert. Alle 13 geprueften Profile, ihre Artikelseiten, News-Feedfragmente und Merkzettel-Einzelkarten werden gemeinsam geprueft. Neuere Queue-Metadaten, Living-File-/Duplikatentscheidungen und die urspruengliche Potenzialbewertung bleiben erhalten. Der genaue Quellenstand steht in RECOVERY-POTENTIAL-2026-09-15-FINAL.json. Erst Deployment plus Live-Readback gilt als behoben.\n' >> docs/news/RECOVERY-POTENTIAL-2026-09-15.md
           git diff --check
           git add -A -- docs/news/RECOVERY-POTENTIAL-2026-09-15.md docs/news/RECOVERY-POTENTIAL-2026-09-15-FINAL.json news/ wirkungsticker/ assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/audits/state-sustainability-architecture-url-matrix.json content/audits/state-sustainability-architecture-url-matrix.md content/polls/public-catalog.json admin/umfragen/ umfragen/ sitemap.xml data/news/stories.json
           git diff --name-only > "$RUNNER_TEMP/potential-unstaged.log"
