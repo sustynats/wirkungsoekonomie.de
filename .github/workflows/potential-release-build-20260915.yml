@@ -14,7 +14,7 @@ jobs:
   prepare:
     if: github.repository == 'sustynats/wirkungsoekonomie.de' && github.ref == 'refs/heads/chatgpt/potential-release-build-20260915'
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -39,6 +39,9 @@ jobs:
           CURRENT_MAIN="$(git rev-parse FETCH_HEAD)"
           echo "CURRENT_MAIN=$CURRENT_MAIN" >> "$GITHUB_ENV"
           export CURRENT_MAIN
+          # Exact historical review inputs; fetching them does not execute any provider.
+          git fetch --no-tags --depth=1 origin a985626602d3deebdd8ae7625bfcd53874b31a77
+          git fetch --no-tags --depth=1 origin 6048f1b5336458cae9501088180af01f93409772
           python tools/prepare_potential_release_772.py
       - name: Rebuild current ticker, sources and all application feeds
         shell: bash
@@ -49,6 +52,7 @@ jobs:
           npm run polls:test
           npm run polls:build
           npm run news:build
+          npm run normalize:footer
           npm run build:search
           npm run taxonomy:build
           npm run news:validate
@@ -62,8 +66,6 @@ jobs:
           from pathlib import Path
           workflow = yaml.safe_load(Path('.github/workflows/state-sustainability-audit.yml').read_text())
           steps = workflow['jobs']['audit']['steps']
-          # Existing YAML uses unquoted hash comments in these display names.
-          # Identify each unique parsed step; execute its original command unchanged.
           for prefix in ['Apply approved', 'Generate committed exhaustive', 'Run hard']:
               matches = [step for step in steps if str(step.get('name', '')).startswith(prefix)]
               assert len(matches) == 1 and matches[0].get('run'), 'Ambiguous or missing gate: ' + prefix
@@ -82,6 +84,9 @@ jobs:
           import {modelledPublicationIssues} from './scripts/news/impact-scope.mjs';
           const report=JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP+'/potential-release-772.json'));
           const stories=JSON.parse(fs.readFileSync('data/news/stories.json')).stories;
+          assert.equal(report.provider_calls,0);
+          assert.equal(report.new_ratings,0);
+          assert.equal(report.applied.length,13);
           for(const row of report.applied){
             const record=stories.find(s=>s.story_id===row.story_id);
             assert.deepEqual(persistedImpactAssessmentErrors(record),[],row.story_id);
@@ -91,37 +96,37 @@ jobs:
           report.validation_run_id=process.env.GITHUB_RUN_ID;
           report.preparation_checks=['source binding','news and operations regressions','poll regressions','news validation','article, feed and bookmark potential rendering','architecture gates'];
           fs.writeFileSync('docs/news/RECOVERY-POTENTIAL-2026-09-15-FINAL.json',JSON.stringify(report,null,2)+'\n');
-          console.log('PASS: preserved independent reviews and canonical source bindings');
+          console.log('PASS: 13 preserved independent reviews and canonical source bindings; zero provider calls');
           JS
-          printf '\n## Fortsetzung nach erneuter Fehlermeldung\n\nDer erste PR-Lauf scheiterte am nicht regenerierten Taxonomieverzeichnis. Die Vorbereitung wurde mit aktuellem main, feldweisem Dreiwegeabgleich und unveraenderten Qualitaetsgates erneut ausgefuehrt. Artikelseiten, alle betreffenden News-Feedfragmente und Merkzettel-Einzelkarten werden ausdruecklich geprueft. Der genaue Quellenstand steht in RECOVERY-POTENTIAL-2026-09-15-FINAL.json. Der vollstaendige Website-Build prueft anschliessend denselben Kandidaten in einem separaten Arbeitsverzeichnis, damit seine weiteren generierten Dateien keine fremden Quellstaende ueberschreiben. Dieser Bericht allein ist kein Live-Nachweis.\n' >> docs/news/RECOVERY-POTENTIAL-2026-09-15.md
+          printf '\n## Abschluss nach erneuter Fehlermeldung\n\nDie bereits unabhaengig geprueften Potenzialprofile werden ohne neuen Provider- oder LLM-Aufruf in den aktuellen main-Stand integriert. Alle 13 geprueften Profile, ihre Artikelseiten, News-Feedfragmente und Merkzettel-Einzelkarten werden gemeinsam geprueft. Neuere Queue-Metadaten und die urspruengliche Potenzialbewertung bleiben erhalten. Der genaue Quellenstand steht in RECOVERY-POTENTIAL-2026-09-15-FINAL.json. Erst Deployment plus Live-Readback gilt als behoben.\n' >> docs/news/RECOVERY-POTENTIAL-2026-09-15.md
           git diff --check
-          git add -A -- docs/news/RECOVERY-POTENTIAL-2026-09-15.md docs/news/RECOVERY-POTENTIAL-2026-09-15-FINAL.json news/ wirkungsticker/ assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/audits/state-sustainability-architecture-url-matrix.json content/audits/state-sustainability-architecture-url-matrix.md content/polls/public-catalog.json admin/umfragen/ umfragen/ sitemap.xml
+          git add -A -- docs/news/RECOVERY-POTENTIAL-2026-09-15.md docs/news/RECOVERY-POTENTIAL-2026-09-15-FINAL.json news/ wirkungsticker/ assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/audits/state-sustainability-architecture-url-matrix.json content/audits/state-sustainability-architecture-url-matrix.md content/polls/public-catalog.json admin/umfragen/ umfragen/ sitemap.xml data/news/stories.json
           git diff --name-only > "$RUNNER_TEMP/potential-unstaged.log"
           if [[ -s "$RUNNER_TEMP/potential-unstaged.log" ]]; then
             echo 'Unreviewed preparation changes remain; refusing commit:' >&2
             cat "$RUNNER_TEMP/potential-unstaged.log"
             exit 1
           fi
-          git commit -m '[wirkungsticker] Integrate current news and regenerate complete potential release #772'
+          git commit -m '[wirkungsticker] Restore all 13 reviewed potential profiles without provider calls'
           echo "CANDIDATE_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
           git worktree add --detach "$RUNNER_TEMP/potential-verify" HEAD
-      - name: Full website and public artifact gates on the exact candidate
+      - name: Run the production-equivalent ticker release gates on the exact candidate
         shell: bash
         run: |
           set -euo pipefail
           cd "$RUNNER_TEMP/potential-verify"
           [[ "$(git rev-parse HEAD)" == "$CANDIDATE_COMMIT" ]]
+          npm run news:test > "$RUNNER_TEMP/potential-release-tests.log" 2>&1 || { tail -120 "$RUNNER_TEMP/potential-release-tests.log"; exit 1; }
+          npm run polls:test
+          npm run polls:build
+          npm run news:build
+          npm run normalize:footer
           npm run build:search
-          git diff --exit-code -- assets/search/search-index.json public/data/woek-search-meta.json
-          npm run taxonomy:build
-          git diff --exit-code -- content/taxonomy/site-map.json
-          WOEK_PDF_BUILD_MODE=verify npm run build > "$RUNNER_TEMP/potential-full-build.log" 2>&1 || { tail -160 "$RUNNER_TEMP/potential-full-build.log"; exit 1; }
-          tail -24 "$RUNNER_TEMP/potential-full-build.log"
+          npm run news:validate
+          bash scripts/ops/audit-generated-release.sh
           npm run build:artifact > "$RUNNER_TEMP/potential-artifact.log" 2>&1 || { tail -160 "$RUNNER_TEMP/potential-artifact.log"; exit 1; }
           tail -24 "$RUNNER_TEMP/potential-artifact.log"
           npm run check:privacy
-          npm run check:url-baseline
-          npm run check:site-links
           npm run check:size
           python tools/prepare_potential_release_772.py --verify
       - name: Push only the tested candidate to the isolated build branch
@@ -130,13 +135,17 @@ jobs:
           set -euo pipefail
           [[ "$(git rev-parse HEAD)" == "$CANDIDATE_COMMIT" ]]
           git diff --exit-code
+          # The exact tested candidate must still be based on the active main.
+          git fetch --no-tags --depth=1 origin main
+          LATEST_MAIN="$(git rev-parse FETCH_HEAD)"
+          [[ "$LATEST_MAIN" == "$CURRENT_MAIN" ]] || { echo "main advanced from $CURRENT_MAIN to $LATEST_MAIN; refusing a stale release candidate." >&2; exit 1; }
           BRANCH='chatgpt/potential-release-build-20260915'
           [[ "$(git ls-remote origin "refs/heads/$BRANCH" | cut -f1)" == "$GITHUB_SHA" ]] || { echo 'Build branch changed concurrently; refusing push.' >&2; exit 1; }
           git push origin "HEAD:refs/heads/$BRANCH"
           echo "VALIDATED_COMMIT=$(git rev-parse HEAD)"
           echo "VALIDATED_TREE=$(git rev-parse HEAD^{tree})"
           echo "CURRENT_MAIN=$CURRENT_MAIN"
-          echo 'No main update or production deployment performed.'
+          echo 'No provider/LLM call, no main update and no production deployment performed by this validation job.'
       - name: Keep build evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -147,6 +156,6 @@ jobs:
           path: |
             ${{ runner.temp }}/potential-release-772.json
             ${{ runner.temp }}/potential-news-tests.log
-            ${{ runner.temp }}/potential-full-build.log
+            ${{ runner.temp }}/potential-release-tests.log
             ${{ runner.temp }}/potential-artifact.log
             ${{ runner.temp }}/potential-unstaged.log
