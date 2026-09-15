@@ -124,3 +124,17 @@ test('an old source discovered just now is not an old queue entry', () => {
   const {event_detected_at, ...legacy} = oldArticle;
   assert.equal(queueSnapshot([legacy], catchupNow).oldest_minutes, 0);
 });
+
+test('one slot per run belongs to a queued potential reassessment while any is waiting', () => {
+  const fresh = Array.from({ length: 12 }, (_, index) => ({ story_id: `fresh-${index}`, fresh: true, preanalysis: { internal_relevance_score: 90 } }));
+  const repair = { story_id: 'repair-1', impact_reassessment: true, existing_story: { published: true, pending_update: { impact_reassessment: true } }, preanalysis: { internal_relevance_score: 20 } };
+  for (const limit of [2, 4, 8]) {
+    const result = partitionAiQueue([...fresh, repair], budgetStage(13.42, 18.9), limit);
+    assert.equal(result.selected.length, Math.min(limit, 8));
+    assert.ok(result.selected.some((item) => item.story_id === 'repair-1'), `limit ${limit}`);
+    assert.ok(!result.deferred.some((item) => item.story_id === 'repair-1'));
+  }
+  assert.ok(!partitionAiQueue([...fresh, repair], budgetStage(13.42, 18.9), 1).selected.some((item) => item.story_id === 'repair-1'), 'a single-slot run keeps the fresh story');
+  const none = partitionAiQueue(fresh, budgetStage(13.42, 18.9), 4);
+  assert.equal(none.selected.length, 4);
+});
