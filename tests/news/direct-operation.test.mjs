@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum } from '../../scripts/news/openai-transport.mjs';
+import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution } from '../../scripts/news/openai-transport.mjs';
 import { releaseDeterministicImpact, deterministicGateIssues } from '../../scripts/news/impact-gate.mjs';
 import { paidAttemptsExhausted, AI_PROCESSING_VERSION, pendingRecord } from '../../scripts/news/run.mjs';
 import { validateAnalysis, sha256 } from '../../scripts/news/lib.mjs';
@@ -320,4 +320,17 @@ test('an answer without a usable assessment gets exactly one focused follow-up i
   const off = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna', repair: false, fetchImpl: async () => ({ ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [texts()] })) }) });
   assert.equal(off.repair_calls, 0);
   assert.ok(repairAddendum('wt-9', ['IMPACT_X'], null).includes('Es lag noch kein impact_assessment vor.'));
+});
+
+test('an attributed headline claim without its qualifier in the title gets the attribution prefixed from the model\'s own words', () => {
+  const analysis = normalizeAnalysisOutput({ story_id: 'wt-1', headline: 'Sonderzug in Grenzregion nach Drohnenangriff teilweise geräumt',
+    event_claims: [{ claim: 'Ein Sonderzug hielt an', attribution_required: true, headline_claim: true, attributed_to: 'Bericht der Bahn', headline_qualifier: null }] }, null);
+  assert.equal(analysis.headline, 'Laut Bericht der Bahn: Sonderzug in Grenzregion nach Drohnenangriff teilweise geräumt');
+  assert.equal(analysis.event_claims[0].headline_qualifier, 'laut Bericht der Bahn');
+  assert.deepEqual(analysis.transport_repairs, ['headline:attribution prefixed (laut Bericht der Bahn)', 'event_claims:headline_qualifier set (laut Bericht der Bahn)']);
+  const fine = normalizeAnalysisOutput({ story_id: 'wt-1', headline: 'Laut Polizei: Brand gelöscht', event_claims: [{ claim: 'x', attribution_required: true, headline_claim: true, headline_qualifier: 'laut Polizei' }] }, null);
+  assert.equal(fine.headline, 'Laut Polizei: Brand gelöscht'); assert.equal('transport_repairs' in fine, false);
+  const noClaim = repairHeadlineAttribution({ headline: 'Titel ohne Zuordnung', event_claims: [{ claim: 'x', attribution_required: true, headline_claim: false }, { claim: 'y', attribution_required: true, headline_claim: true }] });
+  assert.equal(noClaim.headline, 'Titel ohne Zuordnung', 'without any attribution wording nothing is invented');
+  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('rationale (Begründungstext) und balance') && SINGLE_CALL_INSTRUCTIONS.includes('mehr als 20 Wörtern wörtlich'));
 });

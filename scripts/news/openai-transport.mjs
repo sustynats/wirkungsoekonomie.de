@@ -35,6 +35,8 @@ export const SINGLE_CALL_INSTRUCTIONS = [
   'Quellenkennungen wörtlich: In source_id und source_ids steht ausschließlich der exakte Wert aus dem Feld source_id der gelieferten sources (z. B. "rbb24-nachrichten", nicht "rbb24"). Keine Kurzformen, keine Kennungen aus Verlagsnamen, keine Quellen aus eigenem Wissen; research_check.searches und source_functions bleiben auf die gelieferten Quellen beschränkt.',
   'Pfadtypen: primary_paths enthalten nur main_path oder counter_path mit same_target true und same_baseline true; side_effect und side_risk gehören in secondary_paths. Bei path_status modelled ist data_status modelled oder estimated, nie missing.',
   'source_summary: 100 bis 180 Wörter in zwei bis drei Absätzen (Leerzeile), unabhängig von publication_depth. Lesertexte enthalten nur Zahlen, Daten und Jahreszahlen, die wörtlich in den gelieferten Quellentexten stehen; das Datum der Berichterstattung wird nicht ergänzt.',
+  'source_summary in eigenen Worten: keine Passage von mehr als 20 Wörtern wörtlich aus einer Quelle übernehmen.',
+  'Jede Dimension trägt zusätzlich rationale (Begründungstext) und balance (bei direction mixed ein Objekt mit comparable_material_paths, protection_boundary_decisive und rationale; sonst null). Diese beiden Schlüssel fehlten in der Hälfte der Antworten.',
   'Vollständigkeit ist Pflicht: Jeder Eintrag in analyses enthält ALLE Schlüssel des Schemas. Checkliste je Eintrag: story_id, publication_recommendation, headline, news_status, publication_depth, event_claims, followups, source_summary, summary, detail_summary, why_relevant, status, analysis_type, impact_assessment (mit dimensions.human/planet/democracy), importance, impact_potential, impact_risks, mechanisms, first_order, second_order, third_order, systemic_relevance, transformation_potential, resilience, side_effects, uncertainties, evidence_level, attribution, watch_next, reference_frameworks, publication_gate, visuals, media_impact. Ein fehlender Schlüssel macht die gesamte Antwort unbrauchbar.',
   'Reihenfolge: Erst alle Lesertext- und Gate-Felder (headline bis publication_gate, visuals, media_impact), dann impact_assessment mit allen drei Dimensionen, und als allerletzter Schlüssel analysis_complete:true. Ein Eintrag ohne impact_assessment oder ohne analysis_complete ist ungültig und wird verworfen; höre nie vor impact_assessment auf.',
   'Faktoren ohne Ausnahme: JEDER Pfad in JEDER Dimension (human, planet, democracy; primary_paths und secondary_paths) trägt magnitude_factors mit allen sechs Faktoren, protection_boundary, research_pass und research_result. Die letzte Dimension wird genauso vollständig ausgearbeitet wie die erste.',
@@ -228,6 +230,31 @@ export function repairPathPlacement(assessment, repairs = []) {
   return assessment;
 }
 
+// A headline that carries an attributed claim must name the attribution
+// (editorial-evidence rule). The model regularly sets attribution_required on
+// a headline claim, names attributed_to, and still leaves the qualifier out of
+// the title. The qualifier is derived from the model's own attribution and
+// prefixed once ("Laut Polizei: …"); nothing beyond the model's words is added.
+const foldTitle = (value) => String(value || '').normalize('NFKC').replace(/\s+/g, ' ').trim().toLocaleLowerCase('de');
+export function repairHeadlineAttribution(analysis, repairs = []) {
+  if (!analysis || typeof analysis !== 'object' || typeof analysis.headline !== 'string') return analysis;
+  for (const claim of Array.isArray(analysis.event_claims) ? analysis.event_claims : []) {
+    if (!claim || claim.attribution_required !== true || claim.headline_claim === false) continue;
+    let qualifier = typeof claim.headline_qualifier === 'string' ? claim.headline_qualifier.trim() : '';
+    if (qualifier.length < 5 && typeof claim.attributed_to === 'string' && claim.attributed_to.trim().length >= 3) qualifier = `laut ${claim.attributed_to.trim().replace(/[.]+$/, '')}`;
+    if (qualifier.length < 5) continue;
+    if (!foldTitle(analysis.headline).includes(foldTitle(qualifier))) {
+      const prefixed = `${qualifier[0].toLocaleUpperCase('de')}${qualifier.slice(1)}: ${analysis.headline.replace(/^Laut [^:]{3,80}:\s*/i, '')}`;
+      if (prefixed.length > 260) continue;
+      repairs.push(`headline:attribution prefixed (${qualifier})`);
+      analysis.headline = prefixed;
+    }
+    if (claim.headline_qualifier !== qualifier) { repairs.push(`event_claims:headline_qualifier set (${qualifier})`); claim.headline_qualifier = qualifier; }
+    break;
+  }
+  return analysis;
+}
+
 // Deterministic post-processing of the model output. Nothing editorial is
 // invented: magnitudes are recomputed from the model's own factors, and the
 // plausible range is only snapped to include that recomputed point value.
@@ -243,6 +270,7 @@ export function normalizeAnalysisOutput(analysis, story = null) {
     }
   }
   repairSourceBindings(analysis, story?.sources || [], repairs);
+  repairHeadlineAttribution(analysis, repairs);
   const finish = () => { if (repairs.length && analysis && typeof analysis === 'object') analysis.transport_repairs = repairs; return analysis; };
   const assessment = analysis?.impact_assessment;
   if (!assessment || assessment.version !== IMPACT_VERSION) return finish();
