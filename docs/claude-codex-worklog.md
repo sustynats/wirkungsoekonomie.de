@@ -236,3 +236,9 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Was:** Die am 14.09. freigegebenen ZDF-Logos (Markus Lanz, maybrit illner, MAITHINK X, Terra X Lesch & Co, Lanz + Precht) wurden am 15.09. über die Presseportal-Bildanfrage 118949 geliefert, proportional auf 800 px skaliert, mit SHA-256, Credit und Sendungsseite in `data/news/show-visual-identities.json` gebunden (`asset_delivery_status = DELIVERED`). Originale und Schriftwechsel im privaten Rechtearchiv. Zusätzlich übernimmt der Nachrichtenworkflow jetzt in jedem Lauf die in der privaten Redaktion freigegebenen Fassungen (`scripts/news/import-approved-editorials.mjs`, Claim vor Build, Finalize nach Push).
 - **Geprüft:** `tests/news/app-pages.test.mjs`, `tests/news/import-approved-editorials.test.mjs`, Workflow-Invarianten.
 - **Offen für Codex:** Oracle-seitige Entwurfserzeugung ohne ChatGPT (`bridge/run-api-processor.mjs` aktivieren), siehe Übergabe.
+
+## 2026-09-15 - Claude: Redaktionsworker in GitHub (Meinung & Analyse, Nachgehört, Nachgesehen, Buch)
+
+- **Was:** Die Rolle der ChatGPT-Worker übernimmt ein GitHub-Workflow (`redaktionsworker.yml`, alle 15 Minuten versetzt): offene Redaktionsaufträge über die Oracle-Schnittstelle lesen, Eingabepaket atomar claimen, genau ein OpenAI-Aufruf mit dem unveränderten Vertrag V4, Prüfung mit `validateApiOutput`, Ablage als Entwurf in `20_OUTPUT_READY`; die Redaktionsapp legt ihn Natalie zur Freigabe vor. Zusätzlich `redaktions-kandidaten.mjs`: stark relevante Meldungen werden als regulärer Auftrag für Meinung & Analyse eingereiht (höchstens 1 je Lauf, 2 je Tag, je Meldung einmal; `author_notes` leer).
+- **Geprüft:** `tests/news/redaktionsworker.test.mjs` (5 Tests: Auswahl, Claim/Entwurf/Ablage, Ein-Versuch-Regel, Tagesdeckel und Sperre, Kandidaten).
+- **Offen:** Erste echte Aufträge beobachten; Natalie bestätigt einmal, dass Entwürfe in der App erscheinen. Oracle-Prozessor nicht aktivieren.
