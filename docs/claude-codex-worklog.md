@@ -264,3 +264,9 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Was:** Bei der Catania-Meldung wirkten die Mensch-Balken doppelt: Die Ansicht setzte die belegte, bereits eingetretene Wirkung (Flüge abgesagt) an die erste Stelle und das modellierte Potenzial darunter als „Weiteres Potenzial“; beide waren Stufe 2 und laufend. Jetzt führt in jeder Dimension das Wirkungspotenzial (Ring, Balken, Richtung, Pfadtitel), und eine beobachtete Wirkung folgt klar beschriftet als „Beobachtet:“ mit eigenem Ring und eigenen Balken (`scripts/news/visuals.mjs`). Die Ableitung (`deriveImpactPresentation`) ist unverändert; nur die Ansicht wechselt die Reihenfolge und die Beschriftung.
 - **Geprüft:** `tests/news/impact-status-ring.test.mjs` (Potenzial vor Beobachtet, keine „Weiteres Potenzial“-Zeile mehr), Ansichts- und Ticker-Tests 182/182, lokale Renderprobe der Catania-Meldung.
 - **Offen:** Live-Sichtprüfung nach dem Deploy.
+
+## 2026-09-16 - Claude: Worker: Web-Suche-Variante bei Ablehnung, Fehlertext im Lauf
+
+- **Was:** Der erste Takt-Lauf mit Web-Suche (23:05 UTC) wurde vom Anbieter mit 400 abgelehnt (nicht bezahlt, Auftrag bleibt offen); der Lauf zeigte nur den Statuscode. Der Worker versucht bei 400 jetzt genau einmal die ältere Werkzeugschreibweise `web_search_preview` ohne optionale Parameter und hält den (bereinigten) Fehlertext des Anbieters im Ergebnis und Vermerk fest. Die adoptierte liegengebliebene Übernahme wurde wie vorgesehen bearbeitet (kein `claimed_elsewhere` mehr).
+- **Geprüft:** `tests/news/redaktionsworker.test.mjs` 10/10 (1 neu).
+- **Offen:** Nächsten Takt-Lauf lesen: Variante 0 oder 1 erfolgreich, sonst Fehlertext.
