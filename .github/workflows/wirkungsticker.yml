@@ -11,6 +11,12 @@ on:
   schedule:
     # Versetzte Minuten: GitHub lässt Zeitpläne auf :00/:15/:30/:45 häufig aus.
     - cron: "4,19,34,49 * * * *"
+  push:
+    # Oracle-Takt als Ausfallreserve: der systemd-Timer auf Oracle legt alle 15
+    # Minuten einen leeren Commit mit dem aktuellen main-Baum auf diesen Branch.
+    # Am 15.09.2026 feuerte der GitHub-Cron nur alle vier bis fünf Stunden.
+    branches:
+      - codex/wirkungsticker-clock
   workflow_dispatch:
     inputs:
       request_id:
