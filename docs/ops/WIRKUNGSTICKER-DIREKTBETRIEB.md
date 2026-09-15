@@ -81,14 +81,30 @@ Ein einziger Workflow `.github/workflows/wirkungsticker.yml`, alle 15 Minuten:
 
 ## Private Redaktion (Meinung & Analyse, Nachgehört/Nachgesehen, Buch & Wirkung)
 
-Eingabe, Entwurf und Freigabe laufen weiterhin über die private Redaktion auf Oracle
-(`admin/redaktion`, `editorial-server`). Der Nachrichtenworkflow holt in jedem Lauf die dort
-freigegebenen Fassungen über die vorhandene authentifizierte Schnittstelle ab
-(`scripts/news/import-approved-editorials.mjs --claim`, Import-Sperre wird gehalten), baut sie
-mit und quittiert die Übernahme erst nach dem erfolgreichen Push (`--finalize`). Eine gestörte
-Redaktion hält den Nachrichtenlauf nie an (`continue-on-error`). Die Entwurfserzeugung auf
-Oracle (bisher ChatGPT-Worker, vorbereitet: `bridge/run-api-processor.mjs` mit OpenAI) ist eine
-eigene Betriebsentscheidung.
+Eingabe und Freigabe bleiben in der Redaktionsapp (`admin/redaktion`, Oracle). Neu seit dem
+15.09.2026 abends: **Der Redaktionsworker in GitHub** (`.github/workflows/redaktionsworker.yml`,
+`scripts/news/redaktionsworker.mjs`, alle 15 Minuten versetzt zum Nachrichtenlauf) übernimmt die
+Rolle der früheren ChatGPT-Worker ohne Serverzugang:
+
+1. Er hält die Import-Sperre über die vorhandene authentifizierte Oracle-Schnittstelle, liest
+   offene Aufträge (`editorial_request`, Status `queued`), übernimmt das Eingabepaket atomar
+   (`00_INBOX` → `10_CLAIMED`) und macht **genau einen** OpenAI-Aufruf mit dem unveränderten
+   Redaktionsvertrag (`EDITORIAL_REQUEST_CONTRACT_V4`, Wissensprofil `editorialKnowledge`).
+2. Die Antwort wird mit den bestehenden Regeln geprüft (`validateApiOutput`, Vorschau- und
+   Quellenprüfung) und als `20_OUTPUT_READY/<job>.output.json` abgelegt. Die Redaktionsapp holt den
+   Entwurf innerhalb einer Minute ab und legt ihn zur Freigabe oder Rückgabe mit Kommentar vor.
+3. Eine unbrauchbare oder ungültige Antwort wird einmal privat vermerkt
+   (`github-attempt:<job>`) und nie erneut bezahlt; der Auftrag bleibt sichtbar in Bearbeitung.
+4. Tagesdeckel `WOEK_EDITORIAL_MAX_JOBS_PER_DAY` (10), je Lauf `WOEK_EDITORIAL_MAX_JOBS_PER_RUN` (2),
+   Kosten je Auftrag im privaten Beleg `95_LOGS/processor-github-<job>.json`.
+5. **Kandidaten für Meinung & Analyse** (`scripts/news/redaktions-kandidaten.mjs`, aktiv mit
+   `WOEK_EDITORIAL_AUTO_CANDIDATES=true`): Aus stark relevanten, unabhängig belegten Meldungen der
+   letzten 48 Stunden entsteht höchstens ein regulärer Auftrag je Lauf, zwei je Tag, je Meldung nur
+   einmal. `author_notes` bleiben leer; der Entwurf ist ein Vorschlag, keine Position der Autorin.
+
+Der Nachrichtenworkflow holt freigegebene Fassungen in jedem Lauf ab
+(`scripts/news/import-approved-editorials.mjs --claim`) und quittiert erst nach dem erfolgreichen
+Push (`--finalize`). Eine gestörte Redaktion hält den Nachrichtenlauf nie an.
 
 ## Prüfen
 
