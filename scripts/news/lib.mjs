@@ -998,7 +998,6 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true, transport 
         why_relevant: "string",
         status: "angekündigt|Entwurf|beschlossen|in Kraft|laufende Umsetzung|erste Daten|evaluiert|laufende Entwicklung|offen",
         analysis_type: "ex_ante|monitoring|ex_post",
-        impact_assessment: IMPACT_PROMPT_SCHEMA,
         importance: "gering|mittel|hoch|sehr hoch",
         impact_potential: "string",
         impact_risks: ["string"],
@@ -1025,6 +1024,9 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true, transport 
         },
         visuals: includeVisuals ? VISUALS_SCHEMA : null,
         media_impact: MEDIA_IMPACT_SCHEMA,
+        // Absichtlich zuletzt: Modelle brechen nach dem umfangreichsten Objekt ab.
+        // Alle Lesertext- und Gate-Felder stehen davor und werden so nie vergessen.
+        impact_assessment: IMPACT_PROMPT_SCHEMA,
       }],
       $defs: IMPACT_PROMPT_DEFS,
     }),
