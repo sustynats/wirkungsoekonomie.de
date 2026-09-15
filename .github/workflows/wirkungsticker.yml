@@ -83,7 +83,9 @@ jobs:
           # Der Schlüssel liegt ausschließlich im Repository-Secret WIRKUNGSTICKER.
           OPENAI_API_KEY: ${{ secrets.WIRKUNGSTICKER }}
           WOEK_NEWS_MODEL: ${{ vars.WOEK_NEWS_MODEL || 'gpt-5.4-mini' }}
-          WOEK_NEWS_REASONING_EFFORT: ${{ vars.WOEK_NEWS_REASONING_EFFORT || 'medium' }}
+          WOEK_NEWS_REASONING_EFFORT: ${{ vars.WOEK_NEWS_REASONING_EFFORT || 'low' }}
+          # Private Diagnosekopie der bezahlten Antworten (nur Laufartefakt, nie im Repo).
+          WOEK_NEWS_RAW_OUTPUT_DIR: ${{ runner.temp }}/ai-raw-output
           # Bild-Uploads (Wirkungskarten) nutzen weiterhin den vorhandenen Release-Speicher.
           WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
           GH_TOKEN: ${{ github.token }}
@@ -170,6 +172,14 @@ jobs:
       - name: Verify ticker run health
         if: always() && steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
         run: npm run news:health -- --started-after="$WOEK_NEWS_EXPECTED_AFTER"
+      - name: Preserve paid model answers for gate diagnosis
+        if: always() && steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-raw-output-${{ github.run_id }}-${{ github.run_attempt }}
+          retention-days: 3
+          if-no-files-found: ignore
+          path: ${{ runner.temp }}/ai-raw-output
       - name: Preserve failed-run work and usage for recovery
         if: failure() && steps.slot.outputs.should_run == 'true'
         uses: actions/upload-artifact@v4

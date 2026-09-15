@@ -157,3 +157,34 @@ test('reassessment queue targets only the newest published stories without a rel
   assert.equal(incomplete.pending_update.impact_reassessment, true); assert.equal(incomplete.review_checkpoint, undefined);
   assert.deepEqual(state.pending_story_ids, ['todo']);
 });
+
+test('numeric strings and boolean strings from the provider are coerced before the gate, nothing else changes', async () => {
+  const { coerceAssessmentTypes } = await import('../../scripts/news/openai-transport.mjs');
+  const assessment = syntheticPotentialAssessment();
+  const path = assessment.dimensions.planet.primary_paths[0];
+  for (const factor of Object.values(path.magnitude_factors)) factor.value = String(factor.value);
+  path.magnitude = '3'; path.magnitude_range = { lower: '2', upper: '4', rationale: 'Spanne als Strings geliefert, wird gewandelt.' };
+  path.same_target = 'true'; path.protection_boundary.decisive = 'false';
+  assessment.dimensions.planet.magnitude = '3';
+  const analysis = normalizeAnalysisOutput({ publication_recommendation: 'true', event_claims: [{ claim: 'x', attribution_required: 'false', headline_claim: 'true' }], impact_assessment: assessment });
+  assert.equal(analysis.publication_recommendation, true);
+  assert.equal(analysis.event_claims[0].attribution_required, false); assert.equal(analysis.event_claims[0].headline_claim, true);
+  const planet = analysis.impact_assessment.dimensions.planet;
+  assert.equal(planet.primary_paths[0].magnitude, 3); assert.equal(planet.magnitude, 3);
+  assert.deepEqual(Object.values(planet.primary_paths[0].magnitude_factors).map(f => f.value), [3, 3, 3, 3, 3, 3]);
+  assert.equal(planet.primary_paths[0].same_target, true); assert.equal(planet.primary_paths[0].protection_boundary.decisive, false);
+  assert.equal(planet.primary_paths[0].magnitude_range.lower, 2);
+  assert.equal(coerceAssessmentTypes({ dimensions: { human: { magnitude: 'viel' } } }).dimensions.human.magnitude, 'viel', 'non-numeric text is never coerced');
+  assert.equal(validateAnalysis({ story_id: 'wt-1', impact_assessment: analysis.impact_assessment }, { story_id: 'wt-1', sources: [{ source_id: 'official', url: 'https://example.org/a', title: 'Q', summary: 'Q' }], claims: [{ claim_id: 'c', claim: 'x', source_id: 'official' }] }, { requireImpactAssessment: true }).some(e => e.startsWith('IMPACT_')), false);
+});
+
+test('paid answers are copied to the private diagnosis directory when configured', async () => {
+  const fs = await import('node:fs'); const os = await import('node:os'); const path = await import('node:path');
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-raw-'));
+  await callOpenAiDirect(stories, { apiKey: 'test', rawOutputDir: dir, fetchImpl: async () => ({ ok: true, status: 200, json: async () => responsePayload('{"analyses":[]}') }) });
+  const files = fs.readdirSync(dir); assert.equal(files.length, 1);
+  const copy = JSON.parse(fs.readFileSync(path.join(dir, files[0]), 'utf8'));
+  assert.equal(copy.answer, '{"analyses":[]}'); assert.deepEqual(copy.story_ids, ['wt-1']); assert.equal(copy.usage.output_tokens, 800);
+  assert.equal(buildOpenAiRequest('P', { model: 'gpt-5.4-mini' }).reasoning.effort, 'low');
+  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('Checkliste je Eintrag'));
+});
