@@ -2,9 +2,13 @@ export const NEWS_AI_BUDGET_EUR = 25;
 // Dated approvals; past runs retain the authorization in force at that time.
 export const NEWS_AI_BUDGET_EXCEPTION = Object.freeze({ from: '2026-09-07T13:27:00.000Z', until: '2026-10-01T00:00:00.000Z', authorized_eur: 50 });
 export const NEWS_AI_BUDGET_SEPTEMBER_EXTENSION = Object.freeze({ from: '2026-09-09T04:57:00.000Z', until: '2026-10-01T00:00:00.000Z', authorized_eur: 75 });
+// Direktbetrieb (Natalie, 15.09.2026 abends): Umstellung auf gpt-5.6-luna und
+// Anhebung der September-Freigabe auf EUR 100 brutto, damit der neue Prozess bis
+// Monatsende läuft (gemessen rund 1 Cent je Meldung). Kein zusätzlicher Topf.
+export const NEWS_AI_BUDGET_DIRECT_OPERATION = Object.freeze({ from: '2026-09-15T18:40:00.000Z', until: '2026-10-01T00:00:00.000Z', authorized_eur: 100 });
 // The September 9 grant is a shared API ceiling, not another EUR 75 pot.
 // Oracle must independently enforce that aggregate ceiling across all features.
-const NEWS_AI_BUDGET_APPROVALS = Object.freeze([NEWS_AI_BUDGET_SEPTEMBER_EXTENSION, NEWS_AI_BUDGET_EXCEPTION]);
+const NEWS_AI_BUDGET_APPROVALS = Object.freeze([NEWS_AI_BUDGET_DIRECT_OPERATION, NEWS_AI_BUDGET_SEPTEMBER_EXTENSION, NEWS_AI_BUDGET_EXCEPTION]);
 export const NEWS_REQUEST_RESERVATION_USD = 0.25;
 const ECB_FX_URL = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
 
