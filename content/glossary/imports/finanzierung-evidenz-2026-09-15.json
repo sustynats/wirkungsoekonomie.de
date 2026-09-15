@@ -1,0 +1,2070 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-15",
+  "terms": [
+    {
+      "termId": "evidenz",
+      "canonicalLabel": "Evidenz",
+      "slug": "evidenz",
+      "aliases": [
+        "Evidence",
+        "Beleglage"
+      ],
+      "shortDefinition": "Evidenz ist eine nachvollziehbare Grundlage, mit der eine Aussage gestützt, eingeschränkt oder widerlegt werden kann.",
+      "hoverDefinition": "Evidenz ist eine nachvollziehbare Grundlage, mit der eine Aussage gestützt, eingeschränkt oder widerlegt werden kann.",
+      "longDefinition": "Eine Information wird nicht dadurch belastbar, dass sie in einer Tabelle steht. Für ihre Belegkraft zählen Herkunft, Erhebungsmethode, Geltungsbereich und Unsicherheit. Je nach Frage können Messdaten, Dokumente, Beobachtungen und Forschungsergebnisse unterschiedlich viel beitragen. Evidenz bedeutet deshalb keine absolute Gewissheit.\n\nZur Aussage Quelle, Bezugszeitraum, Systemgrenze und Einschränkungen angeben. Widersprechende Befunde nicht ausblenden. Datenqualität, Kausalität und normative Bewertung getrennt beurteilen.",
+      "woekRelation": "Wirkungsbehauptungen brauchen Belege zur Zustandsveränderung und eine begründete Zurechnung. Ein korrekt dokumentierter Mitteleinsatz belegt noch keine Wirkung auf Mensch, Planet oder Demokratie.",
+      "usageNote": "Zur Aussage Quelle, Bezugszeitraum, Systemgrenze und Einschränkungen angeben. Widersprechende Befunde nicht ausblenden. Datenqualität, Kausalität und normative Bewertung getrennt beurteilen.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Datenbegriff",
+      "relatedTerms": [
+        "evidenzbasierung",
+        "evidenzgrad",
+        "evidenzluecke",
+        "claim",
+        "datenherkunft",
+        "wirkungsnachweis",
+        "selektive-evidenz"
+      ],
+      "officialSources": [
+        "OECD: Mobilising Evidence for Good Governance, Introduction|https://www.oecd.org/en/publications/mobilising-evidence-for-good-governance_3f6f736b-en/full-report/component-4.html",
+        "Publications Office of the EU: Evidence-informed policy making|https://op.europa.eu/en/publication-detail/-/publication/b673ed06-751f-11ed-9887-01aa75ed71a1",
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      ],
+      "doNotConfuseWith": [
+        "Beweis: Evidenz kann eine Aussage stützen, ohne sie abschließend zu beweisen.",
+        "Behauptung: Die Aussage selbst ist noch kein Nachweis."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein Versorger nennt einen erneuerbaren Wärmeanteil. Erst mit Messperiode, Nenner, erfassten Anlagen und Berechnung wird er überprüfbar."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Eine Information wird nicht dadurch belastbar, dass sie in einer Tabelle steht. Für ihre Belegkraft zählen Herkunft, Erhebungsmethode, Geltungsbereich und Unsicherheit. Je nach Frage können Messdaten, Dokumente, Beobachtungen und Forschungsergebnisse unterschiedlich viel beitragen. Evidenz bedeutet deshalb keine absolute Gewissheit."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wir können zeigen, worauf die Aussage beruht und wo ihre Grenzen liegen.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Zur Aussage Quelle, Bezugszeitraum, Systemgrenze und Einschränkungen angeben. Widersprechende Befunde nicht ausblenden. Datenqualität, Kausalität und normative Bewertung getrennt beurteilen."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "evidenzbasis",
+      "canonicalLabel": "Evidenzbasis",
+      "slug": "evidenzbasis",
+      "aliases": [
+        "Evidence Base",
+        "Nachweisbasis",
+        "Evidenzbestand"
+      ],
+      "shortDefinition": "Eine Evidenzbasis ist ein geordneter Bestand von Aussagen, Daten und zugehörigen Nachweisen für bestimmte Fragestellungen.",
+      "hoverDefinition": "Eine Evidenzbasis ist ein geordneter Bestand von Aussagen, Daten und zugehörigen Nachweisen für bestimmte Fragestellungen.",
+      "longDefinition": "Gemeint ist nicht nur ein Speicherort für Dateien. Aussagen werden mit ihren Belegen, Datenständen und fachlichen Verantwortlichen verbunden. Dadurch lässt sich eine Antwort bei Rückfragen rekonstruieren. Die Evidenzbasis kann verteilt in vorhandenen Systemen liegen, sofern ihre Verweise und Regeln zusammenpassen.\n\nZuerst Verwendungszweck und Systemgrenzen festlegen. Freigaben, Aktualitätsregeln, Zugriff und Widersprüche dokumentieren. Wiederverwendung nur bei passender Definition und Bezugsperiode.",
+      "woekRelation": "Sie unterstützt die Rückkopplung zwischen Beobachtung und Entscheidung. Ein großer Datenbestand ist aber weder ein Wirkungsnachweis noch ein Maß für die Güte der Wirkungssteuerung.",
+      "usageNote": "Zuerst Verwendungszweck und Systemgrenzen festlegen. Freigaben, Aktualitätsregeln, Zugriff und Widersprüche dokumentieren. Wiederverwendung nur bei passender Definition und Bezugsperiode.",
+      "statusNote": "Arbeitsbegriff für Daten- und Nachweisprozesse; kein vorgeschriebener Standard.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Praxisbegriff",
+      "relatedTerms": [
+        "evidenz",
+        "datenverantwortung",
+        "nachweiszuordnung",
+        "audit-trail",
+        "evidenz-und-annahmenregister"
+      ],
+      "officialSources": [
+        "UK Government: Data quality action plan implementation guide|https://www.gov.uk/government/publications/implement-a-data-quality-action-plan/data-quality-action-plan-implementation-guide",
+        "Office for National Statistics: Metadata policy|https://www.ons.gov.uk/aboutus/transparencyandgovernance/datastrategy/datapolicies/metadatapolicy"
+      ],
+      "doNotConfuseWith": [
+        "Dokumentenablage: Ohne Zuordnung bleibt unklar, welches Dokument welche Aussage trägt.",
+        "Allgemeine Wahrheit: Eine Evidenzbasis bleibt korrigierbar."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Für eine Bankanfrage sind Wärmeanteil, Berechnung, Quelle und Freigabe verknüpft, ohne die technischen Rohdaten in ein zweites System zu kopieren."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Gemeint ist nicht nur ein Speicherort für Dateien. Aussagen werden mit ihren Belegen, Datenständen und fachlichen Verantwortlichen verbunden. Dadurch lässt sich eine Antwort bei Rückfragen rekonstruieren. Die Evidenzbasis kann verteilt in vorhandenen Systemen liegen, sofern ihre Verweise und Regeln zusammenpassen."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wir pflegen einen gemeinsamen Nachweisbestand, nicht für jede Anfrage eine neue Dateisammlung.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Zuerst Verwendungszweck und Systemgrenzen festlegen. Freigaben, Aktualitätsregeln, Zugriff und Widersprüche dokumentieren. Wiederverwendung nur bei passender Definition und Bezugsperiode."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "evidenzbasierung",
+      "canonicalLabel": "Evidenzbasierung",
+      "slug": "evidenzbasierung",
+      "aliases": [
+        "Evidence-based",
+        "Evidence based",
+        "evidenzbasiert",
+        "evidenzgestützt"
+      ],
+      "shortDefinition": "Evidenzbasierung bedeutet, Aussagen und Entscheidungen auf nachvollziehbare Befunde zu stützen und ihre Unsicherheit offenzulegen.",
+      "hoverDefinition": "Evidenzbasierung bedeutet, Aussagen und Entscheidungen auf nachvollziehbare Befunde zu stützen und ihre Unsicherheit offenzulegen.",
+      "longDefinition": "Daten und Forschung helfen, Möglichkeiten und Folgen zu beurteilen. Sie treffen jedoch nicht automatisch die Entscheidung. Ziele, Verteilung, Rechte und politische Wertungen bleiben eigenständige Fragen. Im politischen Kontext verdeutlicht „evidenzinformiert“, dass Befunde Entscheidungen informieren, aber nicht vollständig bestimmen.\n\nFragestellung vor der Belegsuche klären. Quellenqualität und Gegenbefunde prüfen. Beobachtung, Prognose und Bewertung sprachlich trennen. Die Begriffe „evidence-based“ und „evidence-informed“ nicht in jedem Fachgebiet unterschiedslos verwenden.",
+      "woekRelation": "Die Wirkungsökonomie braucht prüfbare Wirkannahmen und die Bereitschaft, Entscheidungen bei neuer Beleglage zu korrigieren. Evidenz ersetzt dabei weder demokratische Legitimation noch Schutzgrenzen.",
+      "usageNote": "Fragestellung vor der Belegsuche klären. Quellenqualität und Gegenbefunde prüfen. Beobachtung, Prognose und Bewertung sprachlich trennen. Die Begriffe „evidence-based“ und „evidence-informed“ nicht in jedem Fachgebiet unterschiedslos verwenden.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Datenbegriff",
+      "relatedTerms": [
+        "evidenz",
+        "szenario",
+        "baseline"
+      ],
+      "officialSources": [
+        "Publications Office of the EU: Evidence-informed policy making|https://op.europa.eu/en/publication-detail/-/publication/b673ed06-751f-11ed-9887-01aa75ed71a1",
+        "OECD: Mobilising Evidence for Good Governance, Introduction|https://www.oecd.org/en/publications/mobilising-evidence-for-good-governance_3f6f736b-en/full-report/component-4.html",
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      ],
+      "doNotConfuseWith": [
+        "Datengesteuert: Viele Daten machen eine Entscheidung nicht automatisch begründet.",
+        "Objektiv alternativlos: Aus Befunden folgt nicht zwingend nur eine erlaubte Entscheidung."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein Wärmenetz wird anhand mehrerer Nachfrageannahmen beurteilt. Welche Bezahlbarkeit angestrebt wird, ist zusätzlich eine Zielentscheidung."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Daten und Forschung helfen, Möglichkeiten und Folgen zu beurteilen. Sie treffen jedoch nicht automatisch die Entscheidung. Ziele, Verteilung, Rechte und politische Wertungen bleiben eigenständige Fragen. Im politischen Kontext verdeutlicht „evidenzinformiert“, dass Befunde Entscheidungen informieren, aber nicht vollständig bestimmen."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Unsere Einschätzung stützt sich auf überprüfbare Befunde; Ziele und verbleibende Unsicherheit benennen wir gesondert.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Fragestellung vor der Belegsuche klären. Quellenqualität und Gegenbefunde prüfen. Beobachtung, Prognose und Bewertung sprachlich trennen. Die Begriffe „evidence-based“ und „evidence-informed“ nicht in jedem Fachgebiet unterschiedslos verwenden."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "evidenzgrad",
+      "canonicalLabel": "Evidenzgrad",
+      "slug": "evidenzgrad",
+      "aliases": [
+        "Evidence Grade",
+        "Evidence Quality",
+        "Belegqualität"
+      ],
+      "shortDefinition": "Der Evidenzgrad beschreibt nach einer offengelegten Methodik, wie belastbar die Belege für eine bestimmte Aussage sind.",
+      "hoverDefinition": "Der Evidenzgrad beschreibt nach einer offengelegten Methodik, wie belastbar die Belege für eine bestimmte Aussage sind.",
+      "longDefinition": "Nicht alle Nachweise tragen gleich weit. Eine aktuelle Primärquelle kann eine Mengenangabe gut belegen, aber noch nichts über deren Ursache sagen. Die Belegbewertung muss deshalb zur Frage passen. Herkunft, Aktualität, Messmethode und Unsicherheit sind unterschiedliche Prüfdimensionen.\n\nBewertungskriterien und Grenzen des Grades nennen. Die A-bis-D-Einstufung eines Evidenzmanagement-Services ist eine interne Arbeitskonvention, kein allgemeiner wissenschaftlicher Evidenzstandard. Sie ersetzt die führende WÖk-Systematik nicht.",
+      "woekRelation": "Für Wirkungsbeurteilungen sind Datenqualität und kausale Zurechnung getrennt zu prüfen. Eine verifizierte Betriebskennzahl darf nicht automatisch als hochgradiger Nachweis gesellschaftlicher Wirkung erscheinen.",
+      "usageNote": "Bewertungskriterien und Grenzen des Grades nennen. Die A-bis-D-Einstufung eines Evidenzmanagement-Services ist eine interne Arbeitskonvention, kein allgemeiner wissenschaftlicher Evidenzstandard. Sie ersetzt die führende WÖk-Systematik nicht.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Datenbegriff",
+      "relatedTerms": [
+        "evidenz",
+        "evidenzluecke",
+        "assurance",
+        "proxy",
+        "datenqualitaets-und-evidenzmatrix",
+        "datenqualitaet"
+      ],
+      "officialSources": [
+        "UK Government: Data quality action plan implementation guide|https://www.gov.uk/government/publications/implement-a-data-quality-action-plan/data-quality-action-plan-implementation-guide",
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      ],
+      "doNotConfuseWith": [
+        "Kreditrating: Ein Evidenzgrad bewertet nicht die Bonität.",
+        "Prüfungsurteil: Eine interne Einstufung ist keine unabhängige Assurance."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein Zählerwert ist gut dokumentiert. Die behauptete Emissionsminderung bleibt von der Wahl des Vergleichsfalls abhängig."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Nicht alle Nachweise tragen gleich weit. Eine aktuelle Primärquelle kann eine Mengenangabe gut belegen, aber noch nichts über deren Ursache sagen. Die Belegbewertung muss deshalb zur Frage passen. Herkunft, Aktualität, Messmethode und Unsicherheit sind unterschiedliche Prüfdimensionen."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Die Zahl ist gut belegt; für die behauptete Wirkung brauchen wir zusätzliche Nachweise.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Bewertungskriterien und Grenzen des Grades nennen. Die A-bis-D-Einstufung eines Evidenzmanagement-Services ist eine interne Arbeitskonvention, kein allgemeiner wissenschaftlicher Evidenzstandard. Sie ersetzt die führende WÖk-Systematik nicht."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "evidenzluecke",
+      "canonicalLabel": "Evidenzlücke",
+      "slug": "evidenzluecke",
+      "aliases": [
+        "Evidence Gap",
+        "Nachweislücke",
+        "Beleglücke"
+      ],
+      "shortDefinition": "Eine Evidenzlücke besteht, wenn eine relevante Aussage nicht ausreichend, aktuell oder widerspruchsfrei belegt werden kann.",
+      "hoverDefinition": "Eine Evidenzlücke besteht, wenn eine relevante Aussage nicht ausreichend, aktuell oder widerspruchsfrei belegt werden kann.",
+      "longDefinition": "Eine Lücke kann eine fehlende Information, eine unklare Definition oder widersprechende Datenstände betreffen. Sie sagt zunächst etwas über die Beleglage, nicht darüber, ob der tatsächliche Zustand gut oder schlecht ist. Auch ein vorhandener Wert kann für die konkrete Frage ungeeignet sein.\n\nFür jede Lücke Aussage, Relevanz, zuständige Rolle und Klärungsfrist erfassen. Offene Punkte sichtbar halten. Zulässige Schätzungen begründen und als solche kennzeichnen.",
+      "woekRelation": "Unbelegte positive Wirkung darf nicht als erreicht verbucht werden. Zugleich darf fehlende Evidenz nicht pauschal als Beweis eines Schadens behandelt werden.",
+      "usageNote": "Für jede Lücke Aussage, Relevanz, zuständige Rolle und Klärungsfrist erfassen. Offene Punkte sichtbar halten. Zulässige Schätzungen begründen und als solche kennzeichnen.",
+      "statusNote": "Arbeitsbegriff für Daten- und Nachweisprozesse; kein vorgeschriebener Standard.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Praxisbegriff",
+      "relatedTerms": [
+        "evidenz",
+        "evidenzgrad",
+        "datenverantwortung",
+        "proxy"
+      ],
+      "officialSources": [
+        "UK Government: Data quality action plan implementation guide|https://www.gov.uk/government/publications/implement-a-data-quality-action-plan/data-quality-action-plan-implementation-guide"
+      ],
+      "doNotConfuseWith": [
+        "Negativbeweis: Kein Nachweis einer Verbesserung beweist nicht automatisch eine Verschlechterung.",
+        "Nullwert: Unbekannt ist nicht null."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Für einen Wärmeanteil fehlt der Nachweis, welche Anlagen einbezogen wurden. Der Wert wird bis zur Klärung nicht als Gruppenkennzahl verwendet."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Eine Lücke kann eine fehlende Information, eine unklare Definition oder widersprechende Datenstände betreffen. Sie sagt zunächst etwas über die Beleglage, nicht darüber, ob der tatsächliche Zustand gut oder schlecht ist. Auch ein vorhandener Wert kann für die konkrete Frage ungeeignet sein."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Hier fehlt uns noch die belastbare Grundlage; deshalb geben wir die Aussage so noch nicht frei.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Für jede Lücke Aussage, Relevanz, zuständige Rolle und Klärungsfrist erfassen. Offene Punkte sichtbar halten. Zulässige Schätzungen begründen und als solche kennzeichnen."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "datenherkunft",
+      "canonicalLabel": "Datenherkunft",
+      "slug": "datenherkunft",
+      "aliases": [
+        "Evidence Lineage",
+        "Data Lineage",
+        "Datenlinie",
+        "Datenprovenienz"
+      ],
+      "shortDefinition": "Datenherkunft beschreibt, woher eine Information stammt und über welche Verarbeitungsschritte sie entstanden ist.",
+      "hoverDefinition": "Datenherkunft beschreibt, woher eine Information stammt und über welche Verarbeitungsschritte sie entstanden ist.",
+      "longDefinition": "Bei einer Kennzahl reicht der Name der letzten Excel-Datei selten aus. Zur Herkunft gehören Ausgangsdaten, Berechnung, Zusammenführung, Korrekturen und beteiligte Rollen. So wird nachvollziehbar, welche Änderungen am Eingang den veröffentlichten Wert beeinflusst haben.\n\nOriginalquelle, Transformationsschritte, Faktoren, Versionen und Verantwortlichkeiten verknüpfen. Datenherkunft und kausalen Wirkpfad nicht gleichsetzen. „Evidence Lineage“ ist hier eine praktische Bezeichnung für die Herkunft von Nachweisen.",
+      "woekRelation": "Eine transparente Herkunftskette ermöglicht Prüfung und Lernen. Sie belegt die Entstehung einer Zahl, aber nicht allein die kausale Wirkung einer Maßnahme.",
+      "usageNote": "Originalquelle, Transformationsschritte, Faktoren, Versionen und Verantwortlichkeiten verknüpfen. Datenherkunft und kausalen Wirkpfad nicht gleichsetzen. „Evidence Lineage“ ist hier eine praktische Bezeichnung für die Herkunft von Nachweisen.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Datenbegriff",
+      "relatedTerms": [
+        "audit-trail",
+        "nachweiszuordnung",
+        "datenstand",
+        "evidenz",
+        "data-lineage-und-evidenzherkunftskarte"
+      ],
+      "officialSources": [
+        "W3C: PROV-Overview|https://www.w3.org/TR/prov-overview/"
+      ],
+      "doNotConfuseWith": [
+        "Audit-Trail: Er dokumentiert Ereignisse und Änderungen; Datenherkunft beschreibt insbesondere die Ableitung eines Ergebnisses.",
+        "Wirkpfad: Er beschreibt angenommene oder belegte Ursache-Folge-Beziehungen im untersuchten System."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Der Emissionswert lässt sich über den verwendeten Faktor auf Energieverbrauch, Messperiode und Zähler zurückverfolgen."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Bei einer Kennzahl reicht der Name der letzten Excel-Datei selten aus. Zur Herkunft gehören Ausgangsdaten, Berechnung, Zusammenführung, Korrekturen und beteiligte Rollen. So wird nachvollziehbar, welche Änderungen am Eingang den veröffentlichten Wert beeinflusst haben."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wir können die Zahl bis zu den Ausgangsdaten und den verwendeten Rechenschritten zurückverfolgen.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Originalquelle, Transformationsschritte, Faktoren, Versionen und Verantwortlichkeiten verknüpfen. Datenherkunft und kausalen Wirkpfad nicht gleichsetzen. „Evidence Lineage“ ist hier eine praktische Bezeichnung für die Herkunft von Nachweisen."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "claim",
+      "canonicalLabel": "Claim",
+      "slug": "claim",
+      "aliases": [
+        "Aussage",
+        "Wirkungsbehauptung"
+      ],
+      "shortDefinition": "Ein Claim ist eine Aussage, deren Inhalt, Reichweite und Beleglage geprüft werden müssen.",
+      "hoverDefinition": "Ein Claim ist eine Aussage, deren Inhalt, Reichweite und Beleglage geprüft werden müssen.",
+      "longDefinition": "Ein Claim kann eine gemessene Eigenschaft, eine Prognose oder ein Werturteil enthalten. „Der Verbrauch beträgt zehn Einheiten“ unterscheidet sich von „Die Maßnahme spart zehn Einheiten“. Die zweite Aussage benötigt zusätzlich eine belastbare Vergleichsbasis.\n\nDen genauen Wortlaut vor der Quellensuche festhalten. Aussagearten trennen und Übertreibungen vermeiden. Breite Wörter wie „nachhaltig“ brauchen eine präzise Eingrenzung.",
+      "woekRelation": "Wirkungsclaims sind an Systemgrenze, Zeitraum, betroffene Gruppen und Zurechnung zu binden. Positive und negative Wirkungen bleiben sichtbar; ein Werbesatz ist kein Wirkungsnachweis.",
+      "usageNote": "Den genauen Wortlaut vor der Quellensuche festhalten. Aussagearten trennen und Übertreibungen vermeiden. Breite Wörter wie „nachhaltig“ brauchen eine präzise Eingrenzung.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Datenbegriff",
+      "relatedTerms": [
+        "evidenz",
+        "wirkung",
+        "wirkungspotenzial",
+        "baseline"
+      ],
+      "officialSources": [
+        "Publications Office of the EU: Evidence-informed policy making|https://op.europa.eu/en/publication-detail/-/publication/b673ed06-751f-11ed-9887-01aa75ed71a1",
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      ],
+      "doNotConfuseWith": [
+        "Evidence: Der Claim ist die zu prüfende Aussage, nicht ihr Beleg.",
+        "Ziel: Eine beabsichtigte Verbesserung ist noch kein erreichtes Ergebnis."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: „Klimaneutrale Wärme“ wird ersetzt durch eine konkret abgegrenzte Aussage zum gemessenen Emissionswert und zur Bilanzgrenze."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Ein Claim kann eine gemessene Eigenschaft, eine Prognose oder ein Werturteil enthalten. „Der Verbrauch beträgt zehn Einheiten“ unterscheidet sich von „Die Maßnahme spart zehn Einheiten“. Die zweite Aussage benötigt zusätzlich eine belastbare Vergleichsbasis."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Welche genaue Aussage wollen wir nach außen treffen, und welcher Nachweis trägt genau diese Aussage?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Den genauen Wortlaut vor der Quellensuche festhalten. Aussagearten trennen und Übertreibungen vermeiden. Breite Wörter wie „nachhaltig“ brauchen eine präzise Eingrenzung."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "kennzahl",
+      "canonicalLabel": "Kennzahl",
+      "slug": "kennzahl",
+      "aliases": [
+        "Metric",
+        "Metrics",
+        "Messgröße"
+      ],
+      "shortDefinition": "Eine Kennzahl ist eine nach einer festgelegten Definition ermittelte quantitative Größe zur Beschreibung oder Beurteilung eines Sachverhalts.",
+      "hoverDefinition": "Eine Kennzahl ist eine nach einer festgelegten Definition ermittelte quantitative Größe zur Beschreibung oder Beurteilung eines Sachverhalts.",
+      "longDefinition": "Die Zahl wird erst durch Einheit, Zeitraum, Bezugsmenge und Berechnung verständlich. Sie kann eine Menge, einen Anteil, einen Aufwand oder einen Zustand beschreiben. Welche Entscheidung sie unterstützt, ist eine weitere Frage.\n\nDefinition, Zähler, Nenner, Einheit, Datenquelle und Stichtag angeben. Vergleichbare Namen bedeuten nicht automatisch vergleichbare Zahlen. KPI und KII nach der kanonischen Methodik getrennt halten.",
+      "woekRelation": "Wirkungscontrolling unterscheidet Leistungsdaten und wirkungsbezogene Zustandsdaten. Eine Kennzahl wird nicht allein durch ihre Bezeichnung zur Wirkungsmessung.",
+      "usageNote": "Definition, Zähler, Nenner, Einheit, Datenquelle und Stichtag angeben. Vergleichbare Namen bedeuten nicht automatisch vergleichbare Zahlen. KPI und KII nach der kanonischen Methodik getrennt halten.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Datenbegriff",
+      "relatedTerms": [
+        "kpi",
+        "wirkung",
+        "datenstand",
+        "baseline",
+        "key-impact-indicator",
+        "kii"
+      ],
+      "officialSources": [
+        "Oracle: What is a key performance indicator?|https://docs.oracle.com/en/cloud/saas/project-management/25c/oapjs/what-s-a-key-performance-indicator.html",
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      ],
+      "doNotConfuseWith": [
+        "KPI: Nicht jede Kennzahl ist eine ausgewählte Steuerungskennzahl.",
+        "Wirkung: Eine Zahl kann Aktivität oder Output messen, ohne einen Wirkungseffekt zu belegen."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Die Zahl beantworteter Anfragen misst Arbeitsmenge; sie belegt für sich keine bessere Versorgungssicherheit."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Die Zahl wird erst durch Einheit, Zeitraum, Bezugsmenge und Berechnung verständlich. Sie kann eine Menge, einen Anteil, einen Aufwand oder einen Zustand beschreiben. Welche Entscheidung sie unterstützt, ist eine weitere Frage."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Was misst diese Kennzahl genau, und welche Entscheidung soll sie unterstützen?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Definition, Zähler, Nenner, Einheit, Datenquelle und Stichtag angeben. Vergleichbare Namen bedeuten nicht automatisch vergleichbare Zahlen. KPI und KII nach der kanonischen Methodik getrennt halten."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "datenverantwortung",
+      "canonicalLabel": "Datenverantwortung",
+      "slug": "datenverantwortung",
+      "aliases": [
+        "Data Owner",
+        "fachliche Datenverantwortung",
+        "Datenverantwortliche"
+      ],
+      "shortDefinition": "Datenverantwortung bezeichnet die organisatorisch zugewiesene Rechenschaft für Bedeutung, Qualität, Verwendung und Pflege bestimmter Daten.",
+      "hoverDefinition": "Datenverantwortung bezeichnet die organisatorisch zugewiesene Rechenschaft für Bedeutung, Qualität, Verwendung und Pflege bestimmter Daten.",
+      "longDefinition": "Ein Data Owner ist eine verantwortliche Rolle, kein automatischer juristischer Eigentümer von Daten. Die tägliche Pflege kann bei anderen Personen liegen. Entscheidend ist, wer Definitionen bestätigt, Qualitätsprobleme priorisiert und zulässige Verwendungen freigibt.\n\nVerantwortung von Pflege, technischer Speicherung und rechtlicher Datenschutzverantwortung unterscheiden. Rollen für Änderungen, Freigaben und Eskalation verbindlich festlegen.",
+      "woekRelation": "Klare Datenverantwortung macht Rückkopplung handlungsfähig. Ohne zuständige Rolle können erkannte Fehler folgenlos bleiben und in Wirkungsbehauptungen weitergetragen werden.",
+      "usageNote": "Verantwortung von Pflege, technischer Speicherung und rechtlicher Datenschutzverantwortung unterscheiden. Rollen für Änderungen, Freigaben und Eskalation verbindlich festlegen.",
+      "statusNote": "Arbeitsbegriff für Daten- und Nachweisprozesse; kein vorgeschriebener Standard.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Praxisbegriff",
+      "relatedTerms": [
+        "evidenzbasis",
+        "datenherkunft",
+        "audit-trail"
+      ],
+      "officialSources": [
+        "UK Government: Data ownership model|https://www.gov.uk/government/publications/data-ownership-in-government/data-ownership-model"
+      ],
+      "doNotConfuseWith": [
+        "Dateneigentum: Der Rollentitel entscheidet keine Eigentums- oder Nutzungsrechte.",
+        "DSGVO-Verantwortlicher: Die rechtliche Rolle folgt eigenen Kriterien."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Die Netzabteilung verantwortet den Anlagenbestand, während IT das System betreibt und Controlling daraus Kennzahlen ableitet."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Ein Data Owner ist eine verantwortliche Rolle, kein automatischer juristischer Eigentümer von Daten. Die tägliche Pflege kann bei anderen Personen liegen. Entscheidend ist, wer Definitionen bestätigt, Qualitätsprobleme priorisiert und zulässige Verwendungen freigibt."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wer kann die fachliche Bedeutung dieser Daten bestätigen und eine Korrektur verbindlich veranlassen?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Verantwortung von Pflege, technischer Speicherung und rechtlicher Datenschutzverantwortung unterscheiden. Rollen für Änderungen, Freigaben und Eskalation verbindlich festlegen."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "datenstand",
+      "canonicalLabel": "Datenstand",
+      "slug": "datenstand",
+      "aliases": [
+        "As-of Date",
+        "As of Date",
+        "Stichtag",
+        "Bezugszeitpunkt"
+      ],
+      "shortDefinition": "Der Datenstand benennt den Zeitpunkt oder Zeitraum, auf den sich eine Angabe bezieht.",
+      "hoverDefinition": "Der Datenstand benennt den Zeitpunkt oder Zeitraum, auf den sich eine Angabe bezieht.",
+      "longDefinition": "Bezugszeitpunkt, Erhebungsdatum, Aktualisierung und Veröffentlichung können auseinanderliegen. Eine im September aktualisierte Datei kann unverändert Werte aus dem Vorjahr enthalten. Die Aktualität einer Aussage lässt sich daher nicht am Speicherdatum allein erkennen.\n\nStichtag und Berichtsperiode unterscheiden. Zusätzlich Erhebungs-, Freigabe- und Änderungsdatum festhalten, soweit nötig. Keine tagesaktuelle Aussage aus einem Jahresmittel ableiten.",
+      "woekRelation": "Wirkungsvergleiche brauchen passende Zeitbezüge. Unterschiedliche Perioden können Veränderungen vortäuschen oder tatsächlich eingetretene Entwicklungen verdecken.",
+      "usageNote": "Stichtag und Berichtsperiode unterscheiden. Zusätzlich Erhebungs-, Freigabe- und Änderungsdatum festhalten, soweit nötig. Keine tagesaktuelle Aussage aus einem Jahresmittel ableiten.",
+      "statusNote": "Arbeitsbegriff für Daten- und Nachweisprozesse; kein vorgeschriebener Standard.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Praxisbegriff",
+      "relatedTerms": [
+        "datenherkunft",
+        "baseline",
+        "evidenzbasis"
+      ],
+      "officialSources": [
+        "Office for National Statistics: Metadata policy|https://www.ons.gov.uk/aboutus/transparencyandgovernance/datastrategy/datapolicies/metadatapolicy"
+      ],
+      "doNotConfuseWith": [
+        "Dateidatum: Ein neuer Dateiname macht alte Daten nicht aktuell.",
+        "Messperiode: Ein Jahresverbrauch ist kein momentaner Bestand."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Eine Bankantwort vom September verwendet die geprüfte Jahresbilanz zum 31. Dezember und kennzeichnet diesen Bezug ausdrücklich."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Bezugszeitpunkt, Erhebungsdatum, Aktualisierung und Veröffentlichung können auseinanderliegen. Eine im September aktualisierte Datei kann unverändert Werte aus dem Vorjahr enthalten. Die Aktualität einer Aussage lässt sich daher nicht am Speicherdatum allein erkennen."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Von welchem Zeitraum sprechen wir, und wann wurde dieser Stand zuletzt fachlich geprüft?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Stichtag und Berichtsperiode unterscheiden. Zusätzlich Erhebungs-, Freigabe- und Änderungsdatum festhalten, soweit nötig. Keine tagesaktuelle Aussage aus einem Jahresmittel ableiten."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "nachweiszuordnung",
+      "canonicalLabel": "Nachweiszuordnung",
+      "slug": "nachweiszuordnung",
+      "aliases": [
+        "Mapping",
+        "Evidence Mapping",
+        "Datenmapping",
+        "Anforderungsmapping"
+      ],
+      "shortDefinition": "Nachweiszuordnung verbindet eine externe oder interne Anforderung mit den dazu passenden Daten, Aussagen und Quellen.",
+      "hoverDefinition": "Nachweiszuordnung verbindet eine externe oder interne Anforderung mit den dazu passenden Daten, Aussagen und Quellen.",
+      "longDefinition": "Beim Mapping wird geprüft, ob ein vorhandener Datenbaustein die gestellte Frage tatsächlich beantwortet. Gleiche Wörter reichen nicht: Zeitraum, Unternehmensgrenze, Einheit und Nenner müssen passen. Eine Antwort kann mehrere Quellen benötigen, eine Quelle mehrere Antworten unterstützen.\n\nZuordnung samt Definition und möglichen Umrechnungen dokumentieren. Änderungen im Fragebogen oder Datenmodell erneut prüfen. Mapping nicht als automatische Gleichwertigkeit von Standards darstellen.",
+      "woekRelation": "Eine nachvollziehbare Zuordnung verhindert, dass Kennzahlen außerhalb ihrer Aussagekraft als Wirkungsbelege verwendet werden.",
+      "usageNote": "Zuordnung samt Definition und möglichen Umrechnungen dokumentieren. Änderungen im Fragebogen oder Datenmodell erneut prüfen. Mapping nicht als automatische Gleichwertigkeit von Standards darstellen.",
+      "statusNote": "Arbeitsbegriff für Daten- und Nachweisprozesse; kein vorgeschriebener Standard.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Praxisbegriff",
+      "relatedTerms": [
+        "evidenzbasis",
+        "datenstand",
+        "datenherkunft"
+      ],
+      "officialSources": [
+        "W3C: PROV-Overview|https://www.w3.org/TR/prov-overview/",
+        "Office for National Statistics: Metadata policy|https://www.ons.gov.uk/aboutus/transparencyandgovernance/datastrategy/datapolicies/metadatapolicy"
+      ],
+      "doNotConfuseWith": [
+        "Kopieren: Vorhandene Antworten dürfen nicht ohne Bedeutungsprüfung übernommen werden.",
+        "Konformitätsnachweis: Eine Zuordnung bestätigt noch keine Normerfüllung."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Bank A fragt Emissionen der Gesellschaft, Bank B die des Konzerns ab. Ein Gruppenwert darf nicht beide Felder ungeprüft füllen."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Beim Mapping wird geprüft, ob ein vorhandener Datenbaustein die gestellte Frage tatsächlich beantwortet. Gleiche Wörter reichen nicht: Zeitraum, Unternehmensgrenze, Einheit und Nenner müssen passen. Eine Antwort kann mehrere Quellen benötigen, eine Quelle mehrere Antworten unterstützen."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wir prüfen zuerst, ob unsere Definition zur Frage passt, und ordnen dann den passenden Nachweis zu.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Zuordnung samt Definition und möglichen Umrechnungen dokumentieren. Änderungen im Fragebogen oder Datenmodell erneut prüfen. Mapping nicht als automatische Gleichwertigkeit von Standards darstellen."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "nachweiswiederverwendung",
+      "canonicalLabel": "Nachweiswiederverwendung",
+      "slug": "nachweiswiederverwendung",
+      "aliases": [
+        "Evidence Reuse",
+        "Data Reuse",
+        "Reuse",
+        "Wiederverwendung von Nachweisen"
+      ],
+      "shortDefinition": "Nachweiswiederverwendung ist die erneute Verwendung eines belegten Informationsbausteins für einen weiteren, dazu passenden Zweck.",
+      "hoverDefinition": "Nachweiswiederverwendung ist die erneute Verwendung eines belegten Informationsbausteins für einen weiteren, dazu passenden Zweck.",
+      "longDefinition": "Nicht für jede Anfrage muss dieselbe Quelle neu erhoben werden. Wiederverwendung gelingt, wenn Definition, Geltungsbereich, Datenstand und Nutzungsbefugnis zur neuen Anfrage passen. Die ursprünglichen Einschränkungen reisen mit der Information mit.\n\nVor Wiederverwendung Aktualität und Passung prüfen. Quelle und Version erhalten. Den allgemeinen Suchbegriff „Reuse“ nicht ungeprüft auf physische Wiederverwendung in der Kreislaufwirtschaft umlenken.",
+      "woekRelation": "Wiederverwendung kann Dokumentationsaufwand senken. Sie darf aber keine veralteten Annahmen verstetigen oder eine häufig wiederholte Behauptung scheinbar besser belegen.",
+      "usageNote": "Vor Wiederverwendung Aktualität und Passung prüfen. Quelle und Version erhalten. Den allgemeinen Suchbegriff „Reuse“ nicht ungeprüft auf physische Wiederverwendung in der Kreislaufwirtschaft umlenken.",
+      "statusNote": "Arbeitsbegriff für Daten- und Nachweisprozesse; kein vorgeschriebener Standard.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Praxisbegriff",
+      "relatedTerms": [
+        "evidenzbasis",
+        "nachweiszuordnung",
+        "datenstand"
+      ],
+      "officialSources": [
+        "UK Government: Data quality action plan implementation guide|https://www.gov.uk/government/publications/implement-a-data-quality-action-plan/data-quality-action-plan-implementation-guide",
+        "Office for National Statistics: Metadata policy|https://www.ons.gov.uk/aboutus/transparencyandgovernance/datastrategy/datapolicies/metadatapolicy"
+      ],
+      "doNotConfuseWith": [
+        "Kreislaufwirtschaftliche Wiederverwendung: Hier geht es ausdrücklich um Informationen und Nachweise.",
+        "Neue Prüfung: Eine vorhandene Freigabe gilt nicht automatisch für jede neue Aussage."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Eine geprüfte Energiemenge wird für Bericht und Bankfragebogen genutzt, jeweils mit derselben Bezugsperiode und Einheit."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Nicht für jede Anfrage muss dieselbe Quelle neu erhoben werden. Wiederverwendung gelingt, wenn Definition, Geltungsbereich, Datenstand und Nutzungsbefugnis zur neuen Anfrage passen. Die ursprünglichen Einschränkungen reisen mit der Information mit."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wir erheben nicht alles neu, prüfen aber bei jeder Verwendung, ob der Nachweis noch passt.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Vor Wiederverwendung Aktualität und Passung prüfen. Quelle und Version erhalten. Den allgemeinen Suchbegriff „Reuse“ nicht ungeprüft auf physische Wiederverwendung in der Kreislaufwirtschaft umlenken."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "anfragenkoordination",
+      "canonicalLabel": "Anfragenkoordination",
+      "slug": "anfragenkoordination",
+      "aliases": [
+        "Response Desk",
+        "Evidence Response Desk",
+        "Antwortkoordination"
+      ],
+      "shortDefinition": "Anfragenkoordination ist eine vereinbarte Funktion, die Informationsanfragen aufnimmt, fachlich zuordnet und bis zur freigegebenen Antwort verfolgt.",
+      "hoverDefinition": "Anfragenkoordination ist eine vereinbarte Funktion, die Informationsanfragen aufnimmt, fachlich zuordnet und bis zur freigegebenen Antwort verfolgt.",
+      "longDefinition": "Ein Response Desk bündelt Eingang, Fristen, Rückfragen, Quellenzuordnung und Freigabestatus. Er kann Entwürfe vorbereiten. Die fachliche Verantwortung der Datenlieferanten und die Entscheidungsbefugnis des Auftraggebers bleiben davon getrennt.\n\nLeistungsumfang, Reaktionszeit, Eskalation und Freigaberechte vereinbaren. Vertrauliche Unterlagen nur in zulässigen Arbeitsumgebungen verarbeiten. Keine Finanzierungs- oder Prüfungsentscheidung aus dem Namen ableiten.",
+      "woekRelation": "Die Funktion kann Rückkopplung organisatorisch unterstützen. Die Zahl beantworteter Anfragen ist jedoch eine Leistungsgröße, kein Nachweis positiver Systemwirkung.",
+      "usageNote": "Leistungsumfang, Reaktionszeit, Eskalation und Freigaberechte vereinbaren. Vertrauliche Unterlagen nur in zulässigen Arbeitsumgebungen verarbeiten. Keine Finanzierungs- oder Prüfungsentscheidung aus dem Namen ableiten.",
+      "statusNote": "Arbeitsbegriff für Daten- und Nachweisprozesse; kein vorgeschriebener Standard.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Praxisbegriff",
+      "relatedTerms": [
+        "datenverantwortung",
+        "nachweiszuordnung",
+        "managed-service"
+      ],
+      "officialSources": [
+        "UK Government: Data quality action plan implementation guide|https://www.gov.uk/government/publications/implement-a-data-quality-action-plan/data-quality-action-plan-implementation-guide",
+        "UK Government: Data ownership model|https://www.gov.uk/government/publications/data-ownership-in-government/data-ownership-model"
+      ],
+      "doNotConfuseWith": [
+        "Behörde oder Prüfstelle: Response Desk ist keine amtliche Funktion.",
+        "Kreditvermittlung: Die Koordination von Nachweisen vermittelt keinen Kredit."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Eine Anfrage zu Klima- und Investitionsdaten wird auf Technik, Nachhaltigkeit und Controlling verteilt; der finale Entwurf geht an die zuständige Freigaberolle."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Ein Response Desk bündelt Eingang, Fristen, Rückfragen, Quellenzuordnung und Freigabestatus. Er kann Entwürfe vorbereiten. Die fachliche Verantwortung der Datenlieferanten und die Entscheidungsbefugnis des Auftraggebers bleiben davon getrennt."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wir koordinieren die Antwort und ihre Belege. Die fachliche Freigabe bleibt bei den zuständigen Stellen.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Leistungsumfang, Reaktionszeit, Eskalation und Freigaberechte vereinbaren. Vertrauliche Unterlagen nur in zulässigen Arbeitsumgebungen verarbeiten. Keine Finanzierungs- oder Prüfungsentscheidung aus dem Namen ableiten."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "managed-service",
+      "canonicalLabel": "Managed Service",
+      "slug": "managed-service",
+      "aliases": [
+        "laufend betriebene Dienstleistung",
+        "Betreiberdienstleistung"
+      ],
+      "shortDefinition": "Ein Managed Service ist eine fortlaufend erbrachte Dienstleistung mit abgegrenztem Leistungsumfang, Verantwortlichkeiten und vereinbarten Servicequalitäten.",
+      "hoverDefinition": "Ein Managed Service ist eine fortlaufend erbrachte Dienstleistung mit abgegrenztem Leistungsumfang, Verantwortlichkeiten und vereinbarten Servicequalitäten.",
+      "longDefinition": "Anders als eine einmalige Beratung umfasst das Modell den laufenden Betrieb einer bestimmten Funktion. Der Begriff ist besonders in der IT etabliert und wird auch für andere spezialisierte Tätigkeiten verwendet. Ein monatlicher Preis allein macht eine Leistung noch nicht zum Managed Service.\n\nUmfang, Kapazität, Reaktionszeiten, Ausnahmen, Zuständigkeiten und Exit festlegen. Laufende Leistung darf nicht unbegrenzte Verfügbarkeit suggerieren. Der Kunde behält Zugang zu seinen Daten und nachvollziehbaren Ergebnissen.",
+      "woekRelation": "Dauerhafte Pflege kann Beobachtung und Anpassung ermöglichen. Ob daraus bessere Wirkung entsteht, hängt von der tatsächlichen Leistung ab, nicht von der Vertragsform.",
+      "usageNote": "Umfang, Kapazität, Reaktionszeiten, Ausnahmen, Zuständigkeiten und Exit festlegen. Laufende Leistung darf nicht unbegrenzte Verfügbarkeit suggerieren. Der Kunde behält Zugang zu seinen Daten und nachvollziehbaren Ergebnissen.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Datenbegriff",
+      "relatedTerms": [
+        "anfragenkoordination",
+        "datenverantwortung",
+        "kpi"
+      ],
+      "officialSources": [
+        "Australian Signals Directorate: Managed Service Provider|https://www.cyber.gov.au/glossary/managed-service-provider"
+      ],
+      "doNotConfuseWith": [
+        "Projekt: Ein Aufbauprojekt kann einen Service vorbereiten, ist aber noch kein laufender Betrieb.",
+        "Outsourcing aller Verantwortung: Nicht jede Verantwortung ist übertragbar."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein Dienstleister pflegt Nachweise im vereinbarten Monatsrhythmus und bearbeitet ein definiertes Anfragekontingent."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Anders als eine einmalige Beratung umfasst das Modell den laufenden Betrieb einer bestimmten Funktion. Der Begriff ist besonders in der IT etabliert und wird auch für andere spezialisierte Tätigkeiten verwendet. Ein monatlicher Preis allein macht eine Leistung noch nicht zum Managed Service."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Sie beauftragen eine laufende Funktion mit festem Umfang, nicht nur ein Konzept, das wir anschließend übergeben.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Umfang, Kapazität, Reaktionszeiten, Ausnahmen, Zuständigkeiten und Exit festlegen. Laufende Leistung darf nicht unbegrenzte Verfügbarkeit suggerieren. Der Kunde behält Zugang zu seinen Daten und nachvollziehbaren Ergebnissen."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "abhaengigkeit",
+      "canonicalLabel": "Abhängigkeit",
+      "slug": "abhaengigkeit",
+      "aliases": [
+        "Dependency",
+        "Dependencies"
+      ],
+      "shortDefinition": "Eine Abhängigkeit liegt vor, wenn eine Funktion oder ein Ergebnis auf bestimmte Ressourcen, Akteure, Infrastrukturen oder Bedingungen angewiesen ist.",
+      "hoverDefinition": "Eine Abhängigkeit liegt vor, wenn eine Funktion oder ein Ergebnis auf bestimmte Ressourcen, Akteure, Infrastrukturen oder Bedingungen angewiesen ist.",
+      "longDefinition": "Abhängigkeiten sind zunächst Teil der Funktionsweise eines Systems und nicht automatisch ein Problem. Kritisch werden sie unter anderem bei fehlenden Alternativen, Konzentration oder langen Anpassungszeiten. Entscheidend ist, was bei einer Veränderung tatsächlich ausfällt oder teurer wird.\n\nKritische Funktion, benötigte Leistung, Ausfallfolge, Ersatzmöglichkeit und Zeit bis zur Anpassung erfassen. Abhängigkeit von einer Risikowahrscheinlichkeit getrennt halten.",
+      "woekRelation": "Die wirkungsökonomische Sicht verbindet Wirkungen nach außen mit Rückwirkungen auf das betrachtete System. Eine Lösung kann eine Belastung vermindern und zugleich neue Abhängigkeiten schaffen.",
+      "usageNote": "Kritische Funktion, benötigte Leistung, Ausfallfolge, Ersatzmöglichkeit und Zeit bis zur Anpassung erfassen. Abhängigkeit von einer Risikowahrscheinlichkeit getrennt halten.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "relatedTerms": [
+        "lock-in-pfadabhaengigkeit",
+        "resilienz",
+        "transmissionskanal",
+        "risiko",
+        "interdependenz",
+        "interdependenz-und-abhaengigkeitsmatrix"
+      ],
+      "officialSources": [
+        "EBA: Guidelines on the management of ESG risks|https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks",
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      ],
+      "doNotConfuseWith": [
+        "Risiko: Eine Abhängigkeit ist noch kein eingetretener Schaden.",
+        "Lock-in: Nicht jede Abhängigkeit ist schwer auflösbar."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Eine Wärmeversorgung nutzt eine einzige Abwärmequelle. Ein Ausfall trifft sie anders als ein System mit einsatzbereiter Ersatzquelle."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Abhängigkeiten sind zunächst Teil der Funktionsweise eines Systems und nicht automatisch ein Problem. Kritisch werden sie unter anderem bei fehlenden Alternativen, Konzentration oder langen Anpassungszeiten. Entscheidend ist, was bei einer Veränderung tatsächlich ausfällt oder teurer wird."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wovon hängt die Leistung ab, und welche tragfähige Alternative haben wir, wenn diese Voraussetzung entfällt?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Kritische Funktion, benötigte Leistung, Ausfallfolge, Ersatzmöglichkeit und Zeit bis zur Anpassung erfassen. Abhängigkeit von einer Risikowahrscheinlichkeit getrennt halten."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "transmissionskanal",
+      "canonicalLabel": "Transmissionskanal",
+      "slug": "transmissionskanal",
+      "aliases": [
+        "Transmission Channel",
+        "Financial Transmission",
+        "finanzieller Übertragungsweg"
+      ],
+      "shortDefinition": "Ein Transmissionskanal beschreibt den Weg, über den eine Veränderung auf andere Größen oder Risiken übertragen wird.",
+      "hoverDefinition": "Ein Transmissionskanal beschreibt den Weg, über den eine Veränderung auf andere Größen oder Risiken übertragen wird.",
+      "longDefinition": "Im Finanzkontext wird die Verbindung zwischen einem Einflussfaktor und einer finanziellen Größe beschrieben. Ein Strompreisanstieg kann über Beschaffung und Tarifregeln auf Betriebskosten, Ergebnis und Liquidität wirken. Ob und wie stark das geschieht, hängt von Verträgen, Weitergabeoptionen und Zeitverzögerungen ab.\n\nAuslöser, Zwischenschritte, betroffene Finanzgröße, Zeithorizont und Gegenmaßnahmen nennen. Die Kette nicht als automatische oder immer gleich starke Folge darstellen.",
+      "woekRelation": "Die WÖk nutzt solche Übertragungswege, um Systemveränderungen und finanzielle Rückwirkungen nachvollziehbar zu verbinden. Ein plausibler Wirkpfad ersetzt keine empirische Bestätigung seiner Stärke.",
+      "usageNote": "Auslöser, Zwischenschritte, betroffene Finanzgröße, Zeithorizont und Gegenmaßnahmen nennen. Die Kette nicht als automatische oder immer gleich starke Folge darstellen.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "relatedTerms": [
+        "abhaengigkeit",
+        "risiko",
+        "cashflow",
+        "opex"
+      ],
+      "officialSources": [
+        "EBA: Guidelines on the management of ESG risks|https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks"
+      ],
+      "doNotConfuseWith": [
+        "Korrelation: Gleichzeitige Veränderungen erklären noch keinen Übertragungsweg.",
+        "Prognose: Ein möglicher Kanal ist keine sichere Vorhersage."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Energiepreis steigt, variable Erzeugungskosten steigen, eine verzögerte Preisanpassung belastet vorübergehend die Liquidität."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Im Finanzkontext wird die Verbindung zwischen einem Einflussfaktor und einer finanziellen Größe beschrieben. Ein Strompreisanstieg kann über Beschaffung und Tarifregeln auf Betriebskosten, Ergebnis und Liquidität wirken. Ob und wie stark das geschieht, hängt von Verträgen, Weitergabeoptionen und Zeitverzögerungen ab."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Über welchen konkreten Weg kann dieses Thema Kosten, Zahlungen oder Vermögenswerte beeinflussen?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Auslöser, Zwischenschritte, betroffene Finanzgröße, Zeithorizont und Gegenmaßnahmen nennen. Die Kette nicht als automatische oder immer gleich starke Folge darstellen."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "risikominderung",
+      "canonicalLabel": "Risikominderung / Risk Mitigation",
+      "slug": "risikominderung",
+      "aliases": [
+        "Risk Mitigation",
+        "Risikominderung",
+        "Schadensminderung",
+        "Mitigation (Risikomanagement)"
+      ],
+      "shortDefinition": "Mitigation bedeutet im Risikokontext die Minderung eines Risikos oder seiner Folgen; im Klimakontext bezeichnet es insbesondere Klimaschutz.",
+      "hoverDefinition": "Mitigation bedeutet im Risikokontext die Minderung eines Risikos oder seiner Folgen; im Klimakontext bezeichnet es insbesondere Klimaschutz.",
+      "longDefinition": "Die Bedeutung hängt vom Fachgebiet ab. Im Risikomanagement können Maßnahmen Eintrittsmöglichkeiten oder Schadensfolgen reduzieren. In der Klimapolitik meint Mitigation die Verringerung von Treibhausgasquellen beziehungsweise die Stärkung von Senken. Anpassung an Klimafolgen wird als Adaptation unterschieden.\n\nImmer sagen, welches Risiko oder welche Belastung vermindert werden soll. Maßnahme, Restbelastung und neue Abhängigkeiten dokumentieren. Keine vollständige Beseitigung aus einer Minderung ableiten.",
+      "woekRelation": "Maßnahmen sind auf tatsächliche Entlastung und mögliche Verlagerung von Schäden zu prüfen. Eine Versicherung kann finanzielle Folgen verteilen, verhindert aber nicht automatisch den physischen Schaden.",
+      "usageNote": "Immer sagen, welches Risiko oder welche Belastung vermindert werden soll. Maßnahme, Restbelastung und neue Abhängigkeiten dokumentieren. Keine vollständige Beseitigung aus einer Minderung ableiten.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "relatedTerms": [
+        "risiko",
+        "resilienz",
+        "physical-climate-risk",
+        "klimaschutz"
+      ],
+      "officialSources": [
+        "OECD: Due diligence for responsible business conduct|https://www.oecd.org/en/topics/due-diligence-for-responsible-business-conduct.html",
+        "IPCC: Global Warming of 1.5°C, Glossary|https://www.ipcc.ch/sr15/chapter/glossary/"
+      ],
+      "doNotConfuseWith": [
+        "Adaptation: Klimaanpassung und Klimaschutz beantworten unterschiedliche, verbundene Fragen.",
+        "Risikotransfer: Verlagerung ist nicht automatisch Verringerung des Gesamtschadens."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Hochwasserschutz kann die Exposition einer Anlage senken; eine Versicherung verändert dagegen vor allem die Verteilung finanzieller Folgen."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Die Bedeutung hängt vom Fachgebiet ab. Im Risikomanagement können Maßnahmen Eintrittsmöglichkeiten oder Schadensfolgen reduzieren. In der Klimapolitik meint Mitigation die Verringerung von Treibhausgasquellen beziehungsweise die Stärkung von Senken. Anpassung an Klimafolgen wird als Adaptation unterschieden."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Welche Ursache oder Folge reduziert die Maßnahme tatsächlich, und welches Restrisiko bleibt?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Immer sagen, welches Risiko oder welche Belastung vermindert werden soll. Maßnahme, Restbelastung und neue Abhängigkeiten dokumentieren. Keine vollständige Beseitigung aus einer Minderung ableiten."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "risiko",
+      "canonicalLabel": "Risiko",
+      "slug": "risiko",
+      "aliases": [
+        "Risk"
+      ],
+      "shortDefinition": "Risiko betrifft unsichere Entwicklungen und ihre möglichen Auswirkungen auf Ziele, Funktionen oder betroffene Zustände.",
+      "hoverDefinition": "Risiko betrifft unsichere Entwicklungen und ihre möglichen Auswirkungen auf Ziele, Funktionen oder betroffene Zustände.",
+      "longDefinition": "Im Kredit- und ESG-Risikokontext stehen häufig nachteilige Folgen im Vordergrund. Andere Risikobegriffe erfassen Unsicherheit umfassender. Wahrscheinlichkeit, Ausmaß, Zeithorizont und Verteilung sind zu unterscheiden. Eine Gefahr allein beschreibt noch nicht die konkrete Betroffenheit eines Systems.\n\nDie im jeweiligen Kontext gültige Definition verwenden. Gefahr, Exposition, Verwundbarkeit und mögliche Folge benennen. Wahrscheinlichkeit mal Schaden ist nicht für jede tiefe Unsicherheit eine ausreichende Beurteilung.",
+      "woekRelation": "Die WÖk fragt nach Risiken für Menschen, ökologische Lebensgrundlagen und demokratische Funktionen sowie nach den Rückwirkungen auf Organisationen. Ein unternehmensintern kleiner Schaden kann gesellschaftlich erheblich sein.",
+      "usageNote": "Die im jeweiligen Kontext gültige Definition verwenden. Gefahr, Exposition, Verwundbarkeit und mögliche Folge benennen. Wahrscheinlichkeit mal Schaden ist nicht für jede tiefe Unsicherheit eine ausreichende Beurteilung.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "relatedTerms": [
+        "physical-climate-risk",
+        "transition-risk",
+        "resilienz",
+        "risikomanagement",
+        "wirkungsrisiko"
+      ],
+      "officialSources": [
+        "EBA: Guidelines on the management of ESG risks|https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks",
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      ],
+      "doNotConfuseWith": [
+        "Schaden: Risiko ist nicht das bereits eingetretene Ereignis.",
+        "Unbekannt: Fehlende Daten lassen ein Risiko weder verschwinden noch beweisen sie es."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein Hochwasserereignis wird für eine Anlage erst im Zusammenhang mit Lage, Schutz und betroffenen Betriebsfunktionen beurteilt."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Im Kredit- und ESG-Risikokontext stehen häufig nachteilige Folgen im Vordergrund. Andere Risikobegriffe erfassen Unsicherheit umfassender. Wahrscheinlichkeit, Ausmaß, Zeithorizont und Verteilung sind zu unterscheiden. Eine Gefahr allein beschreibt noch nicht die konkrete Betroffenheit eines Systems."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Welches Ereignis oder welche Veränderung betrachten wir, wer ist betroffen, und was könnte daraus folgen?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Die im jeweiligen Kontext gültige Definition verwenden. Gefahr, Exposition, Verwundbarkeit und mögliche Folge benennen. Wahrscheinlichkeit mal Schaden ist nicht für jede tiefe Unsicherheit eine ausreichende Beurteilung."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "wesentlichkeit",
+      "canonicalLabel": "Wesentlichkeit",
+      "slug": "wesentlichkeit",
+      "aliases": [
+        "Materiality",
+        "Materialität"
+      ],
+      "shortDefinition": "Wesentlichkeit beschreibt, ob ein Sachverhalt für die maßgebliche Beurteilung, Entscheidung oder Wirkungsperspektive hinreichend bedeutsam ist.",
+      "hoverDefinition": "Wesentlichkeit beschreibt, ob ein Sachverhalt für die maßgebliche Beurteilung, Entscheidung oder Wirkungsperspektive hinreichend bedeutsam ist.",
+      "longDefinition": "Der Maßstab muss genannt werden. Finanzielle Wesentlichkeit fragt nach entscheidungsrelevanten finanziellen Informationen. Wirkungswesentlichkeit betrifft Auswirkungen auf Menschen und Umwelt. Ein Sachverhalt kann aus einer Perspektive wesentlich sein und aus einer anderen anders gewichtet werden.\n\nPerspektive, Systemgrenze, Zeitraum und Kriterien offenlegen. Wesentlichkeit nicht mit bloßer Beliebtheit eines Themas verwechseln. Eine gesetzliche Berichtspflicht folgt nicht automatisch aus jeder internen Relevanzentscheidung.",
+      "woekRelation": "Die Wirkungsökonomie reduziert relevante Schäden nicht auf kurzfristigen Unternehmenswert. Bestehende Definitionen zu doppelter und wirkungsbezogener Wesentlichkeit bleiben führend.",
+      "usageNote": "Perspektive, Systemgrenze, Zeitraum und Kriterien offenlegen. Wesentlichkeit nicht mit bloßer Beliebtheit eines Themas verwechseln. Eine gesetzliche Berichtspflicht folgt nicht automatisch aus jeder internen Relevanzentscheidung.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Datenbegriff",
+      "relatedTerms": [
+        "risiko",
+        "wirkung",
+        "finanzierungsrelevanz",
+        "doppelte-wesentlichkeit",
+        "financial-materiality",
+        "impact-materiality"
+      ],
+      "officialSources": [
+        "IFRS Foundation: Conceptual Framework for Financial Reporting|https://www.ifrs.org/issued-standards/list-of-standards/conceptual-framework/",
+        "EBA: Guidelines on the management of ESG risks|https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks",
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      ],
+      "doNotConfuseWith": [
+        "Priorität: Eine hohe Arbeitspriorität ist nicht zwingend finanzielle oder wirkungsbezogene Wesentlichkeit.",
+        "Berichtspflicht: Sie hat einen eigenen Anwendungsbereich."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein lokaler Eingriff kann für ein Ökosystem erheblich sein, auch wenn die unmittelbare finanzielle Größenordnung klein erscheint."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Der Maßstab muss genannt werden. Finanzielle Wesentlichkeit fragt nach entscheidungsrelevanten finanziellen Informationen. Wirkungswesentlichkeit betrifft Auswirkungen auf Menschen und Umwelt. Ein Sachverhalt kann aus einer Perspektive wesentlich sein und aus einer anderen anders gewichtet werden."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wesentlich für welche Entscheidung und aus welcher Perspektive: für das Unternehmen oder für die Betroffenen?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Perspektive, Systemgrenze, Zeitraum und Kriterien offenlegen. Wesentlichkeit nicht mit bloßer Beliebtheit eines Themas verwechseln. Eine gesetzliche Berichtspflicht folgt nicht automatisch aus jeder internen Relevanzentscheidung."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "finanzierungsrelevanz",
+      "canonicalLabel": "Finanzierungsrelevanz",
+      "slug": "finanzierungsrelevanz",
+      "aliases": [
+        "Finance Relevance",
+        "Financing Relevance",
+        "finanzielle Relevanz im Finanzierungsdialog"
+      ],
+      "shortDefinition": "Finanzierungsrelevanz bezeichnet den begründeten Bezug einer Information zur Beurteilung eines Finanzierungsvorhabens oder einer bestehenden Finanzierung.",
+      "hoverDefinition": "Finanzierungsrelevanz bezeichnet den begründeten Bezug einer Information zur Beurteilung eines Finanzierungsvorhabens oder einer bestehenden Finanzierung.",
+      "longDefinition": "Eine Information kann die Rückzahlungsfähigkeit, den Kapitalbedarf, die Risikoeinschätzung oder die Nachvollziehbarkeit eines Vorhabens betreffen. Nicht jeder Nachhaltigkeitsdatenpunkt hat bei jeder Finanzierung dieselbe Bedeutung. Der Bezug muss für die konkrete Fragestellung erklärt werden.\n\nBetroffene Finanzgröße, plausiblen Übertragungsweg, Zeitraum und nachfragenden Adressaten festhalten. Datenbedarf des Kapitalgebers nicht als pauschale gesetzliche Lieferpflicht jedes Unternehmens darstellen.",
+      "woekRelation": "Die finanzielle Rückwirkung ist eine Perspektive der WÖk, nicht ihr gesamter Wirkungsmaßstab. Nicht finanzierungsrelevante Auswirkungen können dennoch gesellschaftlich wesentlich sein.",
+      "usageNote": "Betroffene Finanzgröße, plausiblen Übertragungsweg, Zeitraum und nachfragenden Adressaten festhalten. Datenbedarf des Kapitalgebers nicht als pauschale gesetzliche Lieferpflicht jedes Unternehmens darstellen.",
+      "statusNote": "Arbeitsbegriff für Daten- und Nachweisprozesse; kein vorgeschriebener Standard.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "relatedTerms": [
+        "transmissionskanal",
+        "cashflow",
+        "wesentlichkeit",
+        "evidenz"
+      ],
+      "officialSources": [
+        "EBA: Guidelines on the management of ESG risks|https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks",
+        "IFRS Foundation: Conceptual Framework for Financial Reporting|https://www.ifrs.org/issued-standards/list-of-standards/conceptual-framework/"
+      ],
+      "doNotConfuseWith": [
+        "Finanzielle Wesentlichkeit: Ein Datenpunkt kann nützlich sein, ohne eine formale Wesentlichkeitsschwelle zu überschreiten.",
+        "Finanzierungszusage: Gute Informationen sichern keine Kreditentscheidung."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Die Abhängigkeit von einer Wärmequelle wird relevant, wenn ein Ausfall Nachinvestitionen oder Erlösausfälle auslösen könnte."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Eine Information kann die Rückzahlungsfähigkeit, den Kapitalbedarf, die Risikoeinschätzung oder die Nachvollziehbarkeit eines Vorhabens betreffen. Nicht jeder Nachhaltigkeitsdatenpunkt hat bei jeder Finanzierung dieselbe Bedeutung. Der Bezug muss für die konkrete Fragestellung erklärt werden."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wir erklären, warum die Information für diese Finanzierung zählt, statt nur zusätzliche ESG-Daten anzuhängen.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Betroffene Finanzgröße, plausiblen Übertragungsweg, Zeitraum und nachfragenden Adressaten festhalten. Datenbedarf des Kapitalgebers nicht als pauschale gesetzliche Lieferpflicht jedes Unternehmens darstellen."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "cashflow",
+      "canonicalLabel": "Cashflow",
+      "slug": "cashflow",
+      "aliases": [
+        "Cash Flow",
+        "Cash Flows",
+        "Zahlungsstrom"
+      ],
+      "shortDefinition": "Cashflow beschreibt Ein- und Auszahlungen beziehungsweise deren Saldo in einem bestimmten Zeitraum.",
+      "hoverDefinition": "Cashflow beschreibt Ein- und Auszahlungen beziehungsweise deren Saldo in einem bestimmten Zeitraum.",
+      "longDefinition": "Im Rechnungslegungskontext werden Zahlungsströme unter anderem nach betrieblicher Tätigkeit, Investitionen und Finanzierung unterschieden. Gewinn und Cashflow sind nicht identisch: Erträge können vor dem Zahlungseingang entstehen, und Abschreibungen sind nicht selbst Auszahlungen.\n\nPeriode und Cashflow-Definition nennen. Free Cashflow, operativer Cashflow und für den Schuldendienst verfügbarer Cashflow dürfen nicht austauschbar verwendet werden.",
+      "woekRelation": "Finanzielle Tragfähigkeit und Wirkungsqualität sind getrennte Fragen. Ein Projekt kann positive Zahlungsströme erzeugen und zugleich Schäden externalisieren; ein gesellschaftlich sinnvoller Umbau kann vorübergehend Finanzierung benötigen.",
+      "usageNote": "Periode und Cashflow-Definition nennen. Free Cashflow, operativer Cashflow und für den Schuldendienst verfügbarer Cashflow dürfen nicht austauschbar verwendet werden.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "relatedTerms": [
+        "liquiditaet",
+        "capex",
+        "opex",
+        "dscr"
+      ],
+      "officialSources": [
+        "IFRS Foundation: IAS 7 Statement of Cash Flows|https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/"
+      ],
+      "doNotConfuseWith": [
+        "Gewinn: Periodenergebnis ist keine vollständige Beschreibung der Zahlungen.",
+        "Liquidität: Cashflow ist eine Stromgröße, verfügbare Zahlungsmittel sind ein Bestand."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein Versorger stellt eine Rechnung im Dezember, erhält das Geld aber erst im Januar. Ertrag und Zahlung fallen in verschiedene Perioden."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Im Rechnungslegungskontext werden Zahlungsströme unter anderem nach betrieblicher Tätigkeit, Investitionen und Finanzierung unterschieden. Gewinn und Cashflow sind nicht identisch: Erträge können vor dem Zahlungseingang entstehen, und Abschreibungen sind nicht selbst Auszahlungen."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Entscheidend ist hier, wann das Geld tatsächlich zufließt oder abfließt, nicht nur wann der Ertrag entsteht.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Periode und Cashflow-Definition nennen. Free Cashflow, operativer Cashflow und für den Schuldendienst verfügbarer Cashflow dürfen nicht austauschbar verwendet werden."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "liquiditaet",
+      "canonicalLabel": "Liquidität",
+      "slug": "liquiditaet",
+      "aliases": [
+        "Liquidity",
+        "Zahlungsfähigkeit"
+      ],
+      "shortDefinition": "Unternehmensliquidität ist die Fähigkeit, fällige Zahlungsverpflichtungen rechtzeitig erfüllen zu können.",
+      "hoverDefinition": "Unternehmensliquidität ist die Fähigkeit, fällige Zahlungsverpflichtungen rechtzeitig erfüllen zu können.",
+      "longDefinition": "Dafür zählen verfügbare Zahlungsmittel, nutzbare Finanzierungsspielräume und der zeitliche Verlauf von Ein- und Auszahlungen. Im Kapitalmarkt hat „Liquidität“ zusätzlich die Bedeutung, wie leicht ein Vermögenswert ohne große Preiswirkung gehandelt werden kann.\n\nDie gemeinte Liquiditätsart benennen. Verfügbarkeit und Bedingungen von Kreditlinien prüfen. Ein Jahresüberschuss ersetzt keine Zahlungsplanung nach Fälligkeiten.",
+      "woekRelation": "Liquidität sichert kurzfristig Handlungsfähigkeit. Sie ist jedoch weder ein Wirkungsmaß noch ein vollständiger Nachweis langfristiger wirtschaftlicher Tragfähigkeit.",
+      "usageNote": "Die gemeinte Liquiditätsart benennen. Verfügbarkeit und Bedingungen von Kreditlinien prüfen. Ein Jahresüberschuss ersetzt keine Zahlungsplanung nach Fälligkeiten.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "relatedTerms": [
+        "cashflow",
+        "refinanzierung",
+        "bonitaet"
+      ],
+      "officialSources": [
+        "Reserve Bank of Australia: Glossary|https://www.rba.gov.au/glossary/",
+        "Nasdaq: Liquidity|https://www.nasdaq.com/glossary/m/liquidity"
+      ],
+      "doNotConfuseWith": [
+        "Eigenkapital: Bilanzielle Substanz ist nicht automatisch verfügbares Geld.",
+        "Marktliquidität: Handelbarkeit eines Vermögenswerts ist eine andere Perspektive."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Eine Gesellschaft kann profitabel sein und dennoch eine fällige Rechnung nicht bedienen, wenn Kundenzahlungen verspätet eintreffen."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Dafür zählen verfügbare Zahlungsmittel, nutzbare Finanzierungsspielräume und der zeitliche Verlauf von Ein- und Auszahlungen. Im Kapitalmarkt hat „Liquidität“ zusätzlich die Bedeutung, wie leicht ein Vermögenswert ohne große Preiswirkung gehandelt werden kann."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Reichen die tatsächlich verfügbaren Mittel zu den jeweiligen Fälligkeitsterminen?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Die gemeinte Liquiditätsart benennen. Verfügbarkeit und Bedingungen von Kreditlinien prüfen. Ein Jahresüberschuss ersetzt keine Zahlungsplanung nach Fälligkeiten."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "fremdkapital",
+      "canonicalLabel": "Fremdkapital und Debt",
+      "slug": "fremdkapital",
+      "aliases": [
+        "Debt",
+        "Fremdkapital",
+        "Finanzverbindlichkeiten"
+      ],
+      "shortDefinition": "Fremdkapital bezeichnet aus Unternehmenssicht Kapital beziehungsweise Verpflichtungen gegenüber Gläubigern; der englische Begriff Debt muss kontextbezogen abgegrenzt werden.",
+      "hoverDefinition": "Fremdkapital bezeichnet aus Unternehmenssicht Kapital beziehungsweise Verpflichtungen gegenüber Gläubigern; der englische Begriff Debt muss kontextbezogen abgegrenzt werden.",
+      "longDefinition": "In der Unternehmensfinanzierung meint Debt häufig verzinsliche Finanzschulden. In der Statistik kann die Definition auch weitere Schuldinstrumente umfassen. Fremdkapital ist deshalb nicht in jeder Kennzahl deckungsgleich mit einem eng gefassten Debt-Begriff. Auch innerhalb der Bilanz sind einzelne Verpflichtungsarten zu unterscheiden.\n\nVor Berechnungen klären, welche Verbindlichkeiten enthalten sind: etwa Bankkredite, Anleihen, Leasing oder Lieferantenverbindlichkeiten. Brutto- und Nettoschuld sowie Bilanz- und Vertragsdefinition auseinanderhalten.",
+      "woekRelation": "Fremdfinanzierung kann wirksame Investitionen ermöglichen und gleichzeitig künftige Zahlungsbindungen schaffen. Die Herkunft des Kapitals belegt noch keine positive oder negative Wirkung seiner Verwendung.",
+      "usageNote": "Vor Berechnungen klären, welche Verbindlichkeiten enthalten sind: etwa Bankkredite, Anleihen, Leasing oder Lieferantenverbindlichkeiten. Brutto- und Nettoschuld sowie Bilanz- und Vertragsdefinition auseinanderhalten.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "relatedTerms": [
+        "eigenkapital",
+        "covenant",
+        "dscr",
+        "refinanzierung"
+      ],
+      "officialSources": [
+        "IMF: Monetary and Financial Statistics Manual, Chapter 6, paragraphs 6.126 ff.|https://www.elibrary.imf.org/abstract/book/9781513579191/ch06.xml",
+        "IFRS Foundation: Conceptual Framework for Financial Reporting|https://www.ifrs.org/issued-standards/list-of-standards/conceptual-framework/"
+      ],
+      "doNotConfuseWith": [
+        "Eigenkapital: Es hat eine andere Anspruchs- und Verlusttragungsstruktur.",
+        "Alle Passiva: Nicht jede Position auf der Passivseite entspricht dem gemeinten Debt-Aggregat."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Eine Kennzahl verwendet nur verzinsliche Kredite, eine andere zusätzlich Leasingverbindlichkeiten. Die Werte sind ohne Überleitung nicht vergleichbar."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "In der Unternehmensfinanzierung meint Debt häufig verzinsliche Finanzschulden. In der Statistik kann die Definition auch weitere Schuldinstrumente umfassen. Fremdkapital ist deshalb nicht in jeder Kennzahl deckungsgleich mit einem eng gefassten Debt-Begriff. Auch innerhalb der Bilanz sind einzelne Verpflichtungsarten zu unterscheiden."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Welche Verpflichtungen zählen in Ihrer Definition zu Debt, und welche ausdrücklich nicht?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Vor Berechnungen klären, welche Verbindlichkeiten enthalten sind: etwa Bankkredite, Anleihen, Leasing oder Lieferantenverbindlichkeiten. Brutto- und Nettoschuld sowie Bilanz- und Vertragsdefinition auseinanderhalten."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "eigenkapital",
+      "canonicalLabel": "Eigenkapital",
+      "slug": "eigenkapital",
+      "aliases": [
+        "Equity",
+        "Eigenmittel im Unternehmenskontext"
+      ],
+      "shortDefinition": "Eigenkapital ist im Rechnungslegungskontext der verbleibende Anteil am Vermögen nach Abzug der Schulden beziehungsweise Verpflichtungen.",
+      "hoverDefinition": "Eigenkapital ist im Rechnungslegungskontext der verbleibende Anteil am Vermögen nach Abzug der Schulden beziehungsweise Verpflichtungen.",
+      "longDefinition": "Es kann unter anderem durch Einlagen und einbehaltene Ergebnisse entstehen. Eigenkapital ist keine separate Kasse. Seine bilanzielle Höhe, sein Marktwert und die kurzfristig verfügbaren Zahlungsmittel sind unterschiedliche Größen. Spezielle regulatorische Eigenmittelbegriffe haben zusätzliche Regeln.\n\nRechnungslegungsrahmen, Konsolidierung und Bewertungsbasis nennen. Unternehmensbezogenes Eigenkapital nicht ungeprüft mit aufsichtsrechtlichem Kapital einer Bank oder Versicherung gleichsetzen.",
+      "woekRelation": "Eigenkapital kann Verluste auffangen und Investitionsspielräume unterstützen. Eine hohe Quote ist aber kein Nachweis für positive soziale oder ökologische Wirkung.",
+      "usageNote": "Rechnungslegungsrahmen, Konsolidierung und Bewertungsbasis nennen. Unternehmensbezogenes Eigenkapital nicht ungeprüft mit aufsichtsrechtlichem Kapital einer Bank oder Versicherung gleichsetzen.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "relatedTerms": [
+        "fremdkapital",
+        "liquiditaet",
+        "resilienz"
+      ],
+      "officialSources": [
+        "IFRS Foundation: Conceptual Framework for Financial Reporting|https://www.ifrs.org/issued-standards/list-of-standards/conceptual-framework/"
+      ],
+      "doNotConfuseWith": [
+        "Liquidität: Ein hoher Eigenkapitalbestand bedeutet nicht, dass derselbe Betrag als Geld verfügbar ist.",
+        "Unternehmenswert: Bilanzwert und Marktwert können erheblich abweichen."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein Unternehmen verfügt über wertvolle Anlagen und hohes Eigenkapital, benötigt für eine kurzfristige Zahlung aber dennoch Liquiditätsmittel."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Es kann unter anderem durch Einlagen und einbehaltene Ergebnisse entstehen. Eigenkapital ist keine separate Kasse. Seine bilanzielle Höhe, sein Marktwert und die kurzfristig verfügbaren Zahlungsmittel sind unterschiedliche Größen. Spezielle regulatorische Eigenmittelbegriffe haben zusätzliche Regeln."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Die Eigenkapitalbasis und die Zahlungsfähigkeit betrachten wir getrennt.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Rechnungslegungsrahmen, Konsolidierung und Bewertungsbasis nennen. Unternehmensbezogenes Eigenkapital nicht ungeprüft mit aufsichtsrechtlichem Kapital einer Bank oder Versicherung gleichsetzen."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "covenant",
+      "canonicalLabel": "Covenant",
+      "slug": "covenant",
+      "aliases": [
+        "Covenants",
+        "Kreditauflage",
+        "vertragliche Kreditbedingung"
+      ],
+      "shortDefinition": "Ein Covenant ist eine vertragliche Zusage oder Bedingung in einer Finanzierung, etwa zu Kennzahlen, Informationen oder zulässigen Handlungen.",
+      "hoverDefinition": "Ein Covenant ist eine vertragliche Zusage oder Bedingung in einer Finanzierung, etwa zu Kennzahlen, Informationen oder zulässigen Handlungen.",
+      "longDefinition": "Finanzielle Covenants können die Einhaltung vereinbarter Kennzahlen betreffen. Andere Covenants regeln Informationspflichten oder bestimmte Handlungen. Maßgeblich ist der konkrete Vertrag mit seinen Definitionen, Prüfzeitpunkten und Folgen möglicher Verstöße.\n\nWortlaut, Berechnung, Stichtag und Verantwortlichkeit dokumentieren. Keine universelle Mindestkennzahl erfinden. Mögliche Folgen eines Verstoßes oder Heilungsmöglichkeiten rechtlich durch Zuständige beurteilen lassen.",
+      "woekRelation": "Vertragliche Bedingungen können Verhalten und Handlungsspielräume beeinflussen. Ihre tatsächlichen Wirkungen sind zu prüfen; ein Nachhaltigkeitsziel im Vertrag garantiert keine Zustandsverbesserung.",
+      "usageNote": "Wortlaut, Berechnung, Stichtag und Verantwortlichkeit dokumentieren. Keine universelle Mindestkennzahl erfinden. Mögliche Folgen eines Verstoßes oder Heilungsmöglichkeiten rechtlich durch Zuständige beurteilen lassen.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "relatedTerms": [
+        "dscr",
+        "fremdkapital",
+        "datenstand"
+      ],
+      "officialSources": [
+        "IFRS Foundation: Long-term debt with covenants, 31 October 2022|https://www.ifrs.org/news-and-events/news/2022/10/iasb-amends-accounting-standard-to-improve-information-about-long-term-debt-with-covenants/"
+      ],
+      "doNotConfuseWith": [
+        "Gesetz: Ein Covenant ist zunächst eine vertragliche Bedingung.",
+        "KPI: Eine intern gemessene Kennzahl wird nicht automatisch zur Vertragspflicht."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein Vertrag verlangt regelmäßige Finanzinformationen und einen definierten Schuldendienstdeckungsgrad. Beide Pflichten werden getrennt überwacht."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Finanzielle Covenants können die Einhaltung vereinbarter Kennzahlen betreffen. Andere Covenants regeln Informationspflichten oder bestimmte Handlungen. Maßgeblich ist der konkrete Vertrag mit seinen Definitionen, Prüfzeitpunkten und Folgen möglicher Verstöße."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wir verwenden die Definition und den Prüfzeitpunkt aus Ihrem Vertrag, nicht eine allgemeine Faustformel.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Wortlaut, Berechnung, Stichtag und Verantwortlichkeit dokumentieren. Keine universelle Mindestkennzahl erfinden. Mögliche Folgen eines Verstoßes oder Heilungsmöglichkeiten rechtlich durch Zuständige beurteilen lassen."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "dscr",
+      "canonicalLabel": "Schuldendienstdeckungsgrad (DSCR)",
+      "slug": "dscr",
+      "aliases": [
+        "DSCR",
+        "Debt Service Coverage Ratio",
+        "Debt Service Cover Ratio",
+        "Schuldendienstdeckungsgrad"
+      ],
+      "shortDefinition": "Der Schuldendienstdeckungsgrad setzt die für den Schuldendienst verfügbare finanzielle Größe ins Verhältnis zum fälligen Schuldendienst derselben Periode.",
+      "hoverDefinition": "Der Schuldendienstdeckungsgrad setzt die für den Schuldendienst verfügbare finanzielle Größe ins Verhältnis zum fälligen Schuldendienst derselben Periode.",
+      "longDefinition": "In der Projektfinanzierung wird häufig der verfügbare Cashflow durch Zins und Tilgung geteilt. Welche Zahlungsbestandteile einbezogen werden, bestimmt die konkrete Definition. Ein Verhältnis von 1 bedeutet rechnerische Deckung nach dieser Definition, aber keine allgemeine Risikofreiheit.\n\nZähler, Nenner, Zeitraum, Ist- oder Planbezug sowie Vertragsdefinition nennen. EBITDA nicht pauschal als verfügbaren Cashflow einsetzen. Bei einem Nenner von null ist die einfache Quotientenform nicht anwendbar.",
+      "woekRelation": "Die Kennzahl beschreibt finanzielle Deckung, nicht gesellschaftliche Wirkungsqualität. Eine Investition kann gute Wirkungen haben und trotzdem einen zusätzlichen Finanzierungsbedarf aufweisen.",
+      "usageNote": "Zähler, Nenner, Zeitraum, Ist- oder Planbezug sowie Vertragsdefinition nennen. EBITDA nicht pauschal als verfügbaren Cashflow einsetzen. Bei einem Nenner von null ist die einfache Quotientenform nicht anwendbar.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "relatedTerms": [
+        "cashflow",
+        "covenant",
+        "bonitaet"
+      ],
+      "officialSources": [
+        "World Bank PPP Resource Center: Key Issues in Developing Project Financed Transactions|https://ppp.worldbank.org/financing/issues-in-project-financed-transactions"
+      ],
+      "doNotConfuseWith": [
+        "Zinsdeckungsgrad: Dieser berücksichtigt nicht denselben vollständigen Schuldendienst.",
+        "Bonität: Eine einzelne Kennzahl ersetzt keine Kreditbeurteilung."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Bei typisierten 1,2 Millionen Euro verfügbarem Cashflow und 1,0 Million Euro Schuldendienst beträgt der DSCR 1,2. Das Beispiel setzt identische Perioden und eine ausdrücklich festgelegte Definition voraus."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "In der Projektfinanzierung wird häufig der verfügbare Cashflow durch Zins und Tilgung geteilt. Welche Zahlungsbestandteile einbezogen werden, bestimmt die konkrete Definition. Ein Verhältnis von 1 bedeutet rechnerische Deckung nach dieser Definition, aber keine allgemeine Risikofreiheit."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Welcher Cashflow zählt laut Vertrag zum Zähler, und welche Zahlungen umfasst der Schuldendienst?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Zähler, Nenner, Zeitraum, Ist- oder Planbezug sowie Vertragsdefinition nennen. EBITDA nicht pauschal als verfügbaren Cashflow einsetzen. Bei einem Nenner von null ist die einfache Quotientenform nicht anwendbar."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "bonitaet",
+      "canonicalLabel": "Bonität",
+      "slug": "bonitaet",
+      "aliases": [
+        "Creditworthiness",
+        "Kreditwürdigkeit"
+      ],
+      "shortDefinition": "Bonität bezeichnet die Beurteilung, inwieweit ein Schuldner voraussichtlich in der Lage und bereit ist, vereinbarte Verpflichtungen zu erfüllen.",
+      "hoverDefinition": "Bonität bezeichnet die Beurteilung, inwieweit ein Schuldner voraussichtlich in der Lage und bereit ist, vereinbarte Verpflichtungen zu erfüllen.",
+      "longDefinition": "Die Beurteilung kann Zahlungsfähigkeit, wirtschaftliche Aussichten, bisheriges Verhalten und weitere relevante Informationen berücksichtigen. Sicherheiten beeinflussen die Risikostruktur, ersetzen aber nicht ohne Weiteres die Beurteilung der Rückzahlung. Eine Bonitätsaussage kann sich bei neuen Informationen ändern.\n\nFinanzierungsgegenstand, Schuldner und Beurteilungszeitpunkt trennen. Zwischen eigener Datendarstellung und Entscheidung der finanzierenden Institution unterscheiden. Keine Ratingverbesserung versprechen.",
+      "woekRelation": "Wirkungen und Abhängigkeiten können über finanzielle Übertragungswege für Bonität relevant werden. Ein positiver Nachhaltigkeitsscore ist aber weder eine Bonitätsgarantie noch eine ausreichende Kreditgrundlage.",
+      "usageNote": "Finanzierungsgegenstand, Schuldner und Beurteilungszeitpunkt trennen. Zwischen eigener Datendarstellung und Entscheidung der finanzierenden Institution unterscheiden. Keine Ratingverbesserung versprechen.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Finanzsystem, Kapital und Unternehmenssteuerung",
+      "relatedTerms": [
+        "liquiditaet",
+        "dscr",
+        "finanzierungsrelevanz"
+      ],
+      "officialSources": [
+        "EBA: Guidelines on the management of ESG risks|https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks",
+        "IFRS Foundation: Conceptual Framework for Financial Reporting|https://www.ifrs.org/issued-standards/list-of-standards/conceptual-framework/"
+      ],
+      "doNotConfuseWith": [
+        "Liquidität: Sie betrifft insbesondere die fristgerechte Zahlungsfähigkeit.",
+        "ESG-Rating: Eine Nachhaltigkeitsbewertung beantwortet nicht dieselbe Frage."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein Investitionsvorhaben hat einen plausiblen Klimanutzen. Die Bank muss dennoch Rückzahlungsfähigkeit und Finanzierungsstruktur beurteilen."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Die Beurteilung kann Zahlungsfähigkeit, wirtschaftliche Aussichten, bisheriges Verhalten und weitere relevante Informationen berücksichtigen. Sicherheiten beeinflussen die Risikostruktur, ersetzen aber nicht ohne Weiteres die Beurteilung der Rückzahlung. Eine Bonitätsaussage kann sich bei neuen Informationen ändern."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wir liefern die nachvollziehbare Informationsgrundlage; die Bonitätsbeurteilung bleibt beim zuständigen Finanzierer.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Finanzierungsgegenstand, Schuldner und Beurteilungszeitpunkt trennen. Zwischen eigener Datendarstellung und Entscheidung der finanzierenden Institution unterscheiden. Keine Ratingverbesserung versprechen."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "due-diligence",
+      "canonicalLabel": "Due Diligence",
+      "slug": "due-diligence",
+      "aliases": [
+        "Sorgfaltsprüfung",
+        "Due-Diligence-Prüfung"
+      ],
+      "shortDefinition": "Due Diligence bezeichnet eine zweckbezogene sorgfältige Prüfung; in verantwortlicher Unternehmensführung auch einen fortlaufenden Prozess zum Umgang mit nachteiligen Auswirkungen.",
+      "hoverDefinition": "Due Diligence bezeichnet eine zweckbezogene sorgfältige Prüfung; in verantwortlicher Unternehmensführung auch einen fortlaufenden Prozess zum Umgang mit nachteiligen Auswirkungen.",
+      "longDefinition": "Bei Transaktionen können finanzielle, technische oder rechtliche Prüfungen gemeint sein. Im OECD-Kontext geht es um Erkennen, Vermeiden, Mindern und Nachverfolgen nachteiliger Auswirkungen auf Menschen und Umwelt. Diese Anwendungen teilen die Sorgfalt, sind aber nicht deckungsgleich.\n\nPrüfauftrag, Kriterien, Tiefe und verantwortliche Fachdisziplin benennen. Fortlaufende Sorgfalt nicht auf einen einmaligen Fragebogen reduzieren. Informationsvorbereitung nicht als abgeschlossene Fachprüfung ausgeben.",
+      "woekRelation": "Die WÖk verlangt, Risiken für das Unternehmen und Risiken für Betroffene auseinanderzuhalten. Eine wirtschaftlich erfolgreiche Transaktionsprüfung ist noch kein vollständiger Wirkungsnachweis.",
+      "usageNote": "Prüfauftrag, Kriterien, Tiefe und verantwortliche Fachdisziplin benennen. Fortlaufende Sorgfalt nicht auf einen einmaligen Fragebogen reduzieren. Informationsvorbereitung nicht als abgeschlossene Fachprüfung ausgeben.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Datenbegriff",
+      "relatedTerms": [
+        "evidenz",
+        "assurance",
+        "risiko",
+        "human-rights-due-diligence"
+      ],
+      "officialSources": [
+        "OECD: Due diligence for responsible business conduct|https://www.oecd.org/en/topics/due-diligence-for-responsible-business-conduct.html"
+      ],
+      "doNotConfuseWith": [
+        "Datenraum: Bereitgestellte Unterlagen sind Eingang einer Prüfung, nicht ihr Ergebnis.",
+        "Assurance: Eine Due Diligence hat nicht automatisch denselben Prüfungsstandard oder Aussagegrad."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein Dienstleister strukturiert Anlagenunterlagen. Die technische Bewertung übernimmt anschließend die dafür beauftragte Fachstelle."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Bei Transaktionen können finanzielle, technische oder rechtliche Prüfungen gemeint sein. Im OECD-Kontext geht es um Erkennen, Vermeiden, Mindern und Nachverfolgen nachteiliger Auswirkungen auf Menschen und Umwelt. Diese Anwendungen teilen die Sorgfalt, sind aber nicht deckungsgleich."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Welche Art von Due Diligence ist beauftragt, und welche Fragen gehören ausdrücklich zu ihrem Umfang?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Prüfauftrag, Kriterien, Tiefe und verantwortliche Fachdisziplin benennen. Fortlaufende Sorgfalt nicht auf einen einmaligen Fragebogen reduzieren. Informationsvorbereitung nicht als abgeschlossene Fachprüfung ausgeben."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "proxy",
+      "canonicalLabel": "Proxy",
+      "slug": "proxy",
+      "aliases": [
+        "Ersatzindikator",
+        "Näherungswert",
+        "Ersatzgröße"
+      ],
+      "shortDefinition": "Ein Proxy ist eine ersatzweise verwendete Größe, die einen nicht direkt beobachteten Sachverhalt näherungsweise abbilden soll.",
+      "hoverDefinition": "Ein Proxy ist eine ersatzweise verwendete Größe, die einen nicht direkt beobachteten Sachverhalt näherungsweise abbilden soll.",
+      "longDefinition": "Ein Branchenmittel oder ein indirekter Indikator kann eine Informationslücke teilweise überbrücken. Er ist aber nicht der direkt gemessene Wert des konkreten Unternehmens. Ob die Näherung brauchbar ist, hängt von Zusammenhang, Datenbasis und Verwendungszweck ab.\n\nGrund für den Ersatz, Herkunft, angenommene Beziehung und Unsicherheit dokumentieren. Eine spätere Überprüfung mit direkteren Daten vorsehen. Schätzung und Messung getrennt kennzeichnen.",
+      "woekRelation": "Wirkungsorientierte Entscheidungen können unter Datenknappheit mit Proxys arbeiten, müssen deren Grenzen aber sichtbar halten. Eine günstige Ersatzgröße darf direkte Gegenbefunde nicht verdrängen.",
+      "usageNote": "Grund für den Ersatz, Herkunft, angenommene Beziehung und Unsicherheit dokumentieren. Eine spätere Überprüfung mit direkteren Daten vorsehen. Schätzung und Messung getrennt kennzeichnen.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Datenbegriff",
+      "relatedTerms": [
+        "evidenzluecke",
+        "evidenzgrad",
+        "baseline"
+      ],
+      "officialSources": [
+        "UK Government: Data quality action plan implementation guide|https://www.gov.uk/government/publications/implement-a-data-quality-action-plan/data-quality-action-plan-implementation-guide",
+        "EBA: Guidelines on the management of ESG risks|https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks"
+      ],
+      "doNotConfuseWith": [
+        "Messwert: Ein Proxy ist keine direkte Beobachtung des Zielmerkmals.",
+        "Zufallswert: Die Ersatzbeziehung muss begründet sein."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Für einen Standort ohne vollständige Verbrauchsmessung wird vorläufig ein nachvollziehbarer Vergleichswert verwendet und später abgeglichen."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Ein Branchenmittel oder ein indirekter Indikator kann eine Informationslücke teilweise überbrücken. Er ist aber nicht der direkt gemessene Wert des konkreten Unternehmens. Ob die Näherung brauchbar ist, hängt von Zusammenhang, Datenbasis und Verwendungszweck ab."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Das ist ein begründeter Näherungswert, kein direkt gemessener Wert dieses Standorts.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Grund für den Ersatz, Herkunft, angenommene Beziehung und Unsicherheit dokumentieren. Eine spätere Überprüfung mit direkteren Daten vorsehen. Schätzung und Messung getrennt kennzeichnen."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "szenario",
+      "canonicalLabel": "Szenario",
+      "slug": "szenario",
+      "aliases": [
+        "Scenario",
+        "Szenarioanalyse"
+      ],
+      "shortDefinition": "Ein Szenario beschreibt eine in sich nachvollziehbare mögliche Entwicklung unter offengelegten Annahmen.",
+      "hoverDefinition": "Ein Szenario beschreibt eine in sich nachvollziehbare mögliche Entwicklung unter offengelegten Annahmen.",
+      "longDefinition": "Szenarien helfen, Entscheidungen bei unsicherer Zukunft zu prüfen. Sie sind keine garantierten Vorhersagen. Mehrere plausible Verläufe können unterschiedliche Belastungen, Chancen und Anpassungsoptionen sichtbar machen.\n\nAusgangslage, Annahmen, Zeithorizont und betroffene Größen festhalten. Szenario und Eintrittswahrscheinlichkeit trennen. Einzelfaktor-Sensitivität ist nicht automatisch eine vollständige Szenarioanalyse.",
+      "woekRelation": "Die WÖk nutzt Szenarien zur Beurteilung von Wirkungspotenzialen und Systemabhängigkeiten. Eine Entscheidung soll nicht allein auf einem günstigen Verlauf beruhen, während schwere Gegenrisiken ausgeblendet bleiben.",
+      "usageNote": "Ausgangslage, Annahmen, Zeithorizont und betroffene Größen festhalten. Szenario und Eintrittswahrscheinlichkeit trennen. Einzelfaktor-Sensitivität ist nicht automatisch eine vollständige Szenarioanalyse.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Systeme, Steuerung und Resilienz",
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "resilienz",
+        "transmissionskanal"
+      ],
+      "officialSources": [
+        "EBA: Guidelines on the management of ESG risks|https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks",
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      ],
+      "doNotConfuseWith": [
+        "Prognose: Sie formuliert eine erwartete Entwicklung nach einer bestimmten Methode.",
+        "Stressfall: Er ist eine gezielt belastende Szenariovariante, nicht jedes Szenario."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein Wärmenetz wird bei unterschiedlicher Anschlussentwicklung und Energiepreisen betrachtet, ohne einen Verlauf als sicher auszugeben."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Szenarien helfen, Entscheidungen bei unsicherer Zukunft zu prüfen. Sie sind keine garantierten Vorhersagen. Mehrere plausible Verläufe können unterschiedliche Belastungen, Chancen und Anpassungsoptionen sichtbar machen."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wir prüfen mehrere plausible Entwicklungen und zeigen, unter welchen Voraussetzungen die Lösung tragfähig bleibt.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Ausgangslage, Annahmen, Zeithorizont und betroffene Größen festhalten. Szenario und Eintrittswahrscheinlichkeit trennen. Einzelfaktor-Sensitivität ist nicht automatisch eine vollständige Szenarioanalyse."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "single-source-of-truth",
+      "canonicalLabel": "Single Source of Truth",
+      "slug": "single-source-of-truth",
+      "aliases": [
+        "SSOT",
+        "verbindliche Datenbasis",
+        "führende Datenquelle"
+      ],
+      "shortDefinition": "Single Source of Truth bezeichnet eine organisatorisch festgelegte, maßgebliche Quelle oder Zuordnung für eine bestimmte Information.",
+      "hoverDefinition": "Single Source of Truth bezeichnet eine organisatorisch festgelegte, maßgebliche Quelle oder Zuordnung für eine bestimmte Information.",
+      "longDefinition": "Die „eine Quelle“ muss keine einzige physische Datenbank sein. Verschiedene Fachsysteme können für unterschiedliche Daten führend bleiben. Wesentlich ist, dass Zuständigkeit, Definition und gültige Fassung eindeutig sind und widersprechende Kopien nicht unkontrolliert nebeneinander verwendet werden.\n\nFestlegen, welches System für welches Merkmal führend ist. Änderungen, Ausnahmen und Korrekturen nachvollziehbar regeln. Quelldaten bei Exporten und Zusammenführungen nicht aus dem Blick verlieren.",
+      "woekRelation": "Eine gemeinsame Datenregel unterstützt konsistente Entscheidungen. Sie darf nicht bedeuten, dass Gegenbefunde oder Korrekturen ausgeschlossen werden. Verbindlichkeit im Prozess ist nicht Unfehlbarkeit.",
+      "usageNote": "Festlegen, welches System für welches Merkmal führend ist. Änderungen, Ausnahmen und Korrekturen nachvollziehbar regeln. Quelldaten bei Exporten und Zusammenführungen nicht aus dem Blick verlieren.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Datenbegriff",
+      "relatedTerms": [
+        "evidenzbasis",
+        "datenverantwortung",
+        "audit-trail"
+      ],
+      "officialSources": [
+        "UK Government: Data ownership model|https://www.gov.uk/government/publications/data-ownership-in-government/data-ownership-model",
+        "Office for National Statistics: Metadata policy|https://www.ons.gov.uk/aboutus/transparencyandgovernance/datastrategy/datapolicies/metadatapolicy"
+      ],
+      "doNotConfuseWith": [
+        "Absolute Wahrheit: Eine führende Datenquelle kann Fehler enthalten.",
+        "Zentrale Datenbank: Die organisatorische Eindeutigkeit ist wichtiger als ein einziger Speicherort."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Anlagenstammdaten kommen verbindlich aus dem technischen System, Finanzwerte aus der Buchhaltung; das Reporting verweist nachvollziehbar auf beide."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Die „eine Quelle“ muss keine einzige physische Datenbank sein. Verschiedene Fachsysteme können für unterschiedliche Daten führend bleiben. Wesentlich ist, dass Zuständigkeit, Definition und gültige Fassung eindeutig sind und widersprechende Kopien nicht unkontrolliert nebeneinander verwendet werden."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Welche Quelle ist für diese Angabe führend, und wie werden widersprüchliche Versionen geklärt?“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Festlegen, welches System für welches Merkmal führend ist. Änderungen, Ausnahmen und Korrekturen nachvollziehbar regeln. Quelldaten bei Exporten und Zusammenführungen nicht aus dem Blick verlieren."
+        }
+      ],
+      "classicGlossary": true
+    },
+    {
+      "termId": "audit-trail",
+      "canonicalLabel": "Audit-Trail",
+      "slug": "audit-trail",
+      "aliases": [
+        "Audit Trail",
+        "Prüfpfad",
+        "Änderungsprotokoll"
+      ],
+      "shortDefinition": "Ein Audit-Trail ist eine nachvollziehbare Aufzeichnung von Ereignissen und Änderungen, mit der sich ein Vorgang rekonstruieren lässt.",
+      "hoverDefinition": "Ein Audit-Trail ist eine nachvollziehbare Aufzeichnung von Ereignissen und Änderungen, mit der sich ein Vorgang rekonstruieren lässt.",
+      "longDefinition": "Er kann zeigen, wer wann welche Daten erfasst, geändert oder freigegeben hat und welche Version weitergegeben wurde. Dafür braucht es eine geeignete Protokollierung und nachvollziehbare Verknüpfungen. Ein Protokoll allein beweist nicht die sachliche Richtigkeit jeder Eingabe.\n\nZeitpunkt, Rolle, Veränderung, Grund und betroffenen Stand festhalten, soweit für den Zweck nötig. Zugriffsschutz und Integrität des Protokolls beachten. Keine umfassende Überwachung ohne angemessene Grundlage.",
+      "woekRelation": "Der Prüfpfad unterstützt Rechenschaft und Lernen. Korrigierte Wirkungsbehauptungen bleiben nachvollziehbar, statt frühere Stände unsichtbar zu überschreiben.",
+      "usageNote": "Zeitpunkt, Rolle, Veränderung, Grund und betroffenen Stand festhalten, soweit für den Zweck nötig. Zugriffsschutz und Integrität des Protokolls beachten. Keine umfassende Überwachung ohne angemessene Grundlage.",
+      "statusNote": "Fachlicher Anschlussbegriff; die konkrete Anwendung und Abgrenzung sind offenzulegen.",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "lastReviewed": "2026-09-15",
+      "source": "Fachbegriffe zu Finanzierung und Evidenz",
+      "sourceProvenance": "Die externen Quellen stützen den Fachkontext. Die wirkungsökonomische Einordnung ist eine Modellanwendung; Beispiele sind typisiert.",
+      "category": "Datenbegriff",
+      "relatedTerms": [
+        "datenherkunft",
+        "datenstand",
+        "assurance"
+      ],
+      "officialSources": [
+        "NIST CSRC: Audit trail|https://csrc.nist.gov/glossary/term/audit_trail",
+        "W3C: PROV-Overview|https://www.w3.org/TR/prov-overview/"
+      ],
+      "doNotConfuseWith": [
+        "Datenherkunft: Sie beschreibt besonders die Ableitung eines Datenpunkts; der Audit-Trail zusätzlich den Ablauf von Änderungen und Freigaben.",
+        "Audit: Das Protokoll ist ein Prüfmittel, nicht schon die durchgeführte Prüfung."
+      ],
+      "examples": [
+        "Typisiertes Beispiel: Ein korrigierter Emissionsfaktor und die neu freigegebene Kennzahl werden mit dem bisher extern verwendeten Stand verknüpft."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Einfach erklärt",
+          "body": "Er kann zeigen, wer wann welche Daten erfasst, geändert oder freigegeben hat und welche Version weitergegeben wurde. Dafür braucht es eine geeignete Protokollierung und nachvollziehbare Verknüpfungen. Ein Protokoll allein beweist nicht die sachliche Richtigkeit jeder Eingabe."
+        },
+        {
+          "title": "Im Gespräch",
+          "body": "„Wir können nachvollziehen, welche Fassung wann geändert, freigegeben und verwendet wurde.“"
+        },
+        {
+          "title": "Darauf kommt es in der Anwendung an",
+          "body": "Zeitpunkt, Rolle, Veränderung, Grund und betroffenen Stand festhalten, soweit für den Zweck nötig. Zugriffsschutz und Integrität des Protokolls beachten. Keine umfassende Überwachung ohne angemessene Grundlage."
+        }
+      ],
+      "classicGlossary": true
+    }
+  ],
+  "learning": [
+    {
+      "termId": "kpi",
+      "aliases": [
+        "Key Performance Indicator",
+        "Key Performance Indicators",
+        "Leistungskennzahl"
+      ],
+      "relatedTerms": [
+        "kennzahl",
+        "baseline",
+        "evidenzgrad",
+        "key-impact-indicator",
+        "kii"
+      ],
+      "officialSources": [
+        "Oracle: What is a key performance indicator?|https://docs.oracle.com/en/cloud/saas/project-management/25c/oapjs/what-s-a-key-performance-indicator.html",
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      ],
+      "section": {
+        "title": "Anwendungssprache: KPI",
+        "body": "Ein KPI braucht einen klaren Zweck. Er macht beispielsweise Bearbeitungsdauer, Kosten oder Verfügbarkeit im Verhältnis zu einem Ziel sichtbar. Eine Sammlung möglichst vieler Werte ist noch kein Steuerungssystem.",
+        "items": [
+          "Ziel, Formel, Bezugsperiode, Verantwortlichkeit und Reaktion bei Abweichung festlegen. Gegenläufige Anreize beachten: Schnellere Antworten sind nur dann ein Fortschritt, wenn ihre Belegqualität nicht sinkt.",
+          "Die WÖk-Abgrenzung zwischen KPI und KII bleibt bestehen. Eine gute Prozessleistung kann Voraussetzung für Wirkung sein, ersetzt aber deren Beobachtung nicht.",
+          "Metric: Eine allgemeine Messgröße wird erst durch ihre Steuerungsrolle zum KPI.",
+          "KII: Ein Leistungsindikator ist nicht automatisch ein Wirkungsindikator.",
+          "Typisiertes Beispiel: Ein Response-Team misst die Zeit bis zum fachlich freigabefähigen Entwurf, nicht nur bis zur ersten E-Mail.",
+          "„Wir messen nicht nur, wie viel bearbeitet wird, sondern ob die vereinbarte Leistung zuverlässig erreicht wird.“"
+        ]
+      }
+    },
+    {
+      "termId": "wirkung",
+      "aliases": [],
+      "relatedTerms": [
+        "wirkungspotenzial",
+        "evidenz",
+        "baseline",
+        "impact"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      ],
+      "section": {
+        "title": "Anwendungssprache: Wirkung",
+        "body": "Die Aktivität einer Organisation und die Veränderung im betroffenen System sind unterschiedliche Dinge. Eine gebaute Anlage ist ein Ergebnis der Umsetzung. Ob Menschen besser versorgt werden oder Umweltbelastungen sinken, verlangt einen eigenen Blick auf die Zustände und Ursachen. Diese Lesehilfe ersetzt die ausführliche kanonische WÖk-Definition nicht.",
+        "items": [
+          "Beobachtete Veränderung, Vergleichsfall, Zurechnung, Zeitraum und Unsicherheit unterscheiden. Ex ante Wirkungspotenziale angeben. Nicht jede Veränderung nach einer Maßnahme wurde durch diese verursacht.",
+          "Mensch, Planet und demokratische beziehungsweise gesellschaftliche Systeme bilden die relevanten Wirkungsbezüge. Positive Ergebnisse in einem Bereich dürfen schwere Schäden in einem anderen nicht einfach verdecken.",
+          "Output: Erbrachte Leistung ist nicht automatisch Wirkung.",
+          "Wirkungspotenzial: Eine erwartete Veränderung ist noch nicht eingetreten.",
+          "Typisiertes Beispiel: Ein Wärmenetz ist gebaut. Ob Belastungen tatsächlich sinken, wird anhand des Betriebs, der ersetzten Versorgung und geeigneter Vergleichsdaten untersucht.",
+          "„Was hat sich für die Betroffenen verändert, und welchen Anteil daran können wir unserer Maßnahme zurechnen?“"
+        ]
+      }
+    },
+    {
+      "termId": "wirkungspotenzial",
+      "aliases": [
+        "Impact Potential",
+        "Potential Impact"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "szenario",
+        "abhaengigkeit",
+        "evidenz"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      ],
+      "section": {
+        "title": "Anwendungssprache: Wirkungspotenzial",
+        "body": "Bei einer geplanten Investition sind häufig nur Annahmen über spätere Folgen verfügbar. Das Potenzial hängt beispielsweise von Umsetzung, Nutzung, Verhalten, Energieträgern und Vergleichsfall ab. Es kann positive und negative Veränderungen betreffen. Eine hohe rechnerische Möglichkeit ist nicht dasselbe wie eine hohe Eintrittswahrscheinlichkeit.",
+        "items": [
+          "Voraussetzungen, Wirkpfad, Zeithorizont, Bandbreite und Vergleichsfall benennen. Potenzial, Wahrscheinlichkeit, Intensität und Belegqualität nicht zu einer scheinbar sicheren Zahl verschmelzen.",
+          "Die WÖk trennt vorausschauende Wirkannahmen und spätere Beobachtung. Potenziale ermöglichen Entscheidungen, müssen aber mit Grenzen und Rückkopplungspunkten verbunden werden.",
+          "Eingetretene Wirkung: Planung belegt keine bereits realisierte Verbesserung.",
+          "Automatischer Nutzen: Günstige Voraussetzungen müssen tatsächlich eintreten.",
+          "Typisiertes Beispiel: Eine geplante Wärmelösung kann Emissionen senken. Das Ausmaß hängt unter anderem von Anschlussquote, Strombezug und ersetzten Heizsystemen ab.",
+          "„Das ist das erwartete Wirkungspotenzial unter diesen Annahmen; die tatsächliche Entwicklung prüfen wir nach der Umsetzung.“"
+        ]
+      }
+    },
+    {
+      "termId": "resilienz",
+      "aliases": [
+        "Resilience"
+      ],
+      "relatedTerms": [
+        "abhaengigkeit",
+        "risiko",
+        "risikominderung",
+        "szenario",
+        "systemresilienz",
+        "wirkungsresilienz"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/",
+        "EBA: Guidelines on the management of ESG risks|https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks"
+      ],
+      "section": {
+        "title": "Anwendungssprache: Resilienz",
+        "body": "Eine Reserve kann die unmittelbare Störung abfedern. Anpassungsfähigkeit wird wichtig, wenn sich die Bedingungen dauerhaft ändern. Welche Funktionen erhalten werden sollen und für wen, muss benannt sein. Die bestehende kanonische WÖk-Differenzierung zwischen Resilienzbegriffen bleibt dabei maßgeblich.",
+        "items": [
+          "Systemgrenze, kritische Funktion, Störungsszenario, Erholungszeit und Belastung anderer Gruppen prüfen. Redundanz nur dann als Reserve zählen, wenn sie im relevanten Szenario nutzbar ist.",
+          "Wirkungsökonomisch zählt nicht nur, ob eine Organisation fortbesteht, sondern welche Funktionen für Mensch, Planet und Demokratie getragen werden. Der Fortbestand einer schädlichen Struktur ist kein hinreichender positiver Wirkungsnachweis.",
+          "Robustheit: Widerstehen ist nur ein Teil; Lernen und Anpassung können zusätzlich nötig sein.",
+          "Risikofreiheit: Auch ein resilientes System kann Schäden erleiden.",
+          "Typisiertes Beispiel: Zwei Pumpen helfen nicht gegen einen gemeinsamen Stromausfall, wenn keine unabhängige Versorgung vorhanden ist.",
+          "„Welche wesentliche Funktion bleibt unter dieser Störung erhalten, und wie schnell können wir sie wiederherstellen?“"
+        ]
+      }
+    },
+    {
+      "termId": "transition-risk",
+      "aliases": [
+        "Übergangsrisiko",
+        "Transitionsrisiko"
+      ],
+      "relatedTerms": [
+        "transmissionskanal",
+        "risiko",
+        "szenario",
+        "lock-in-pfadabhaengigkeit"
+      ],
+      "officialSources": [
+        "EBA: Guidelines on the management of ESG risks|https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks"
+      ],
+      "section": {
+        "title": "Anwendungssprache: Transitionsrisiko",
+        "body": "Im Klima- und Finanzkontext geht es etwa um Veränderungen von Kosten, Nachfrage oder Vermögenswerten während der Dekarbonisierung. Nicht die Existenz eines Klimaziels allein verursacht die finanzielle Folge, sondern der konkrete Übertragungsweg und die Anpassungsfähigkeit des betroffenen Geschäftsmodells.",
+        "items": [
+          "Szenario, Zeitpunkt, betroffene Erlös- oder Kostenposition und Handlungsoption benennen. Einen Übergang nicht generell als Schaden und den bestehenden Zustand nicht generell als risikofrei behandeln.",
+          "Eine wirkungsökonomische Betrachtung berücksichtigt Übergangslasten, langfristig vermiedene Schäden und die Verteilung zwischen Beteiligten. Kurzfristige Belastung und langfristige Systementlastung können gleichzeitig bestehen.",
+          "Physisches Risiko: Es betrifft unmittelbare physische Gefährdungen; beide Risikoarten können zusammenwirken.",
+          "Gesamte Transformation: Nicht jede Veränderung eines Unternehmens ist ein klimabezogenes Transitionsrisiko.",
+          "Typisiertes Beispiel: Eine veränderte Nachfrage kann die Auslastung einer Anlage senken, während neue Technik einen alternativen Betrieb ermöglicht.",
+          "„Welche Übergangsannahme verändert das Geschäftsmodell, und welche Anpassungsoption ist dafür belastbar vorbereitet?“"
+        ]
+      }
+    },
+    {
+      "termId": "physical-climate-risk",
+      "aliases": [
+        "Physical Risk",
+        "physische Risiken",
+        "physisches Klimarisiko",
+        "Physisches Risiko"
+      ],
+      "relatedTerms": [
+        "risiko",
+        "resilienz",
+        "risikominderung",
+        "abhaengigkeit"
+      ],
+      "officialSources": [
+        "EBA: Guidelines on the management of ESG risks|https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/sustainable-finance/guidelines-management-esg-risks"
+      ],
+      "section": {
+        "title": "Anwendungssprache: Physisches Risiko",
+        "body": "Akute Ereignisse und chronische Veränderungen wirken unterschiedlich. Ob daraus ein wesentlicher Schaden entsteht, hängt von Standort, Exposition, Verwundbarkeit und Schutz ab. Der Begriff ist nicht in jedem Fachgebiet ausschließlich auf Klima begrenzt.",
+        "items": [
+          "Gefahr, Standort, betrachteten Zeitraum, Funktion und Anpassungsmaßnahme getrennt dokumentieren. Eine Gefahrenkarte ist ein Eingang zur Bewertung, nicht schon die vollständige Risikoanalyse.",
+          "Wirkungsökonomisch sind betroffene Menschen, Ökosysteme und Versorgungsfunktionen ebenso wichtig wie Anlagenwerte. Ein finanziell versicherter Schaden kann weiterhin erhebliche gesellschaftliche Folgen haben.",
+          "Transitionsrisiko: Regulierungs- und Technologiewandel wirken über andere Auslöser.",
+          "Versicherbarkeit: Deckung eines Vermögensschadens garantiert keine Aufrechterhaltung der Funktion.",
+          "Typisiertes Beispiel: Hitze kann die Leistungsfähigkeit einer Anlage beeinträchtigen. Ob Kunden betroffen sind, hängt auch von Reserven und Ausweichwegen ab.",
+          "„Welche physischen Gefahren treffen diesen Standort, und was bedeutet das für seine konkrete Funktion?“"
+        ]
+      }
+    },
+    {
+      "termId": "capex",
+      "aliases": [],
+      "relatedTerms": [
+        "opex",
+        "cashflow",
+        "wirkungspotenzial"
+      ],
+      "officialSources": [
+        "IFRS Foundation: IAS 7 Statement of Cash Flows|https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/"
+      ],
+      "section": {
+        "title": "Anwendungssprache: CapEx",
+        "body": "Dazu können etwa Netze, Gebäude, Anlagen oder bestimmte aktivierbare Entwicklungsleistungen gehören. Die Zahlung für eine Investition und ihre Verteilung als Aufwand über Nutzungsperioden sind verschiedene Vorgänge. Welche Positionen ein Unternehmen unter CapEx ausweist, muss aus seiner Definition hervorgehen.",
+        "items": [
+          "Projektumfang, Abgrenzung, Zahlungszeitplan und aktivierte Bestandteile prüfen. Den betriebswirtschaftlichen Begriff nicht ungeprüft mit dem speziellen Taxonomie-CapEx-KPI gleichsetzen.",
+          "Investitionsausgaben ermöglichen Wirkungspotenziale, sind aber zunächst Input. Ein hoher Investitionsbetrag belegt weder Nutzen noch positive Netto-Wirkung.",
+          "Abschreibung: Sie ist nicht die Investitionsauszahlung selbst.",
+          "OpEx: Laufender Betrieb und Investition müssen sachgerecht unterschieden werden.",
+          "Typisiertes Beispiel: Der Bau einer Wärmeanlage löst Investitionszahlungen aus. Brennstoff und laufender Betrieb werden getrennt betrachtet.",
+          "„Welche Investitionszahlungen fallen wann an, und welche späteren Betriebskosten entstehen daraus?“"
+        ]
+      }
+    },
+    {
+      "termId": "opex",
+      "aliases": [
+        "Betriebsaufwand"
+      ],
+      "relatedTerms": [
+        "capex",
+        "cashflow",
+        "transmissionskanal"
+      ],
+      "officialSources": [
+        "IFRS Foundation: IAS 7 Statement of Cash Flows|https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/"
+      ],
+      "section": {
+        "title": "Anwendungssprache: OpEx",
+        "body": "Energiebezug, Personal oder laufende Wartung können dazu gehören. Aufwand und Auszahlung sind nicht immer zeitgleich. In Verträgen, Kennzahlen und speziellen Regelwerken kann der Umfang von OpEx unterschiedlich festgelegt sein.",
+        "items": [
+          "Kostenarten, Periodenabgrenzung und Zahlungsbezug benennen. Wartung, Ersatzinvestition und Abschreibung nicht ungeprüft vermischen. Taxonomie-OpEx nur nach der dortigen Definition verwenden.",
+          "Die WÖk betrachtet neben direkten Betriebskosten auch nicht eingepreiste Belastungen anderer Akteure. Niedrige betriebliche OpEx allein beweisen keine volkswirtschaftlich günstige Lösung.",
+          "CapEx: Ein langfristiger Vermögenswert folgt einer anderen Abgrenzung.",
+          "Gesamtkosten: Externe Schäden können in betrieblichen OpEx fehlen.",
+          "Typisiertes Beispiel: Eine billigere Anlage kann hohe Energie- und Wartungskosten verursachen, die erst im Betrieb sichtbar werden.",
+          "„Wir trennen die Anschaffung von den laufenden Kosten und prüfen die Definition hinter der Kennzahl.“"
+        ]
+      }
+    },
+    {
+      "termId": "refinanzierung",
+      "aliases": [
+        "Refinancing",
+        "Anschlussfinanzierung"
+      ],
+      "relatedTerms": [
+        "fremdkapital",
+        "liquiditaet",
+        "covenant"
+      ],
+      "officialSources": [
+        "World Bank PPP Resource Center: Key Issues in Developing Project Financed Transactions|https://ppp.worldbank.org/financing/issues-in-project-financed-transactions",
+        "Reserve Bank of Australia: Glossary|https://www.rba.gov.au/glossary/"
+      ],
+      "section": {
+        "title": "Anwendungssprache: Refinanzierung",
+        "body": "Bei einem Unternehmen kann ein fälliger Kredit durch eine neue Finanzierung ersetzt werden. Bei einer Bank beschreibt Refinanzierung auch allgemein, wie sie Mittel für ihr Geschäft beschafft. Deshalb muss der betrachtete Akteur benannt werden.",
+        "items": [
+          "Fälligkeiten, Zins- und Währungsbedingungen, mögliche Quellen und notwendige Nachweise erfassen. Verlängerungsoptionen von einer bereits zugesagten Finanzierung unterscheiden.",
+          "Langfristige Wirkungsziele können von wiederkehrendem Kapitalzugang abhängig sein. Eine spätere Refinanzierung ist eine Voraussetzung, deren Verfügbarkeit nicht als sicher angenommen werden sollte.",
+          "Neue Investition: Nicht jede Refinanzierung finanziert zusätzliche Anlagen.",
+          "Tilgung: Ablösung durch einen neuen Kredit kann die Finanzierung austauschen, ohne die Schuld wirtschaftlich zu beseitigen.",
+          "Typisiertes Beispiel: Ein Netzbetreiber muss ein endfälliges Darlehen ersetzen, während die finanzierte Anlage noch viele Jahre betrieben wird.",
+          "„Wann wird die bestehende Finanzierung fällig, und welche Voraussetzungen muss die Anschlussfinanzierung erfüllen?“"
+        ]
+      }
+    },
+    {
+      "termId": "assurance",
+      "aliases": [
+        "Prüfungssicherheit",
+        "Assurance Engagement",
+        "Prüfung mit begrenzter Sicherheit",
+        "Prüfung mit hinreichender Sicherheit"
+      ],
+      "relatedTerms": [
+        "evidenzgrad",
+        "due-diligence",
+        "audit-trail"
+      ],
+      "officialSources": [
+        "AUASB: ASAE 3000, Definitions, paragraph 12|https://standards.auasb.gov.au/node/479"
+      ],
+      "section": {
+        "title": "Anwendungssprache: Assurance",
+        "body": "Begrenzte und hinreichende Sicherheit unterscheiden sich in Prüfungsumfang und Aussage. Keine der beiden bedeutet absolute Gewissheit. Entscheidend sind Prüfgegenstand, Kriterien, geeignete Nachweise und der tatsächlich erteilte Vermerk.",
+        "items": [
+          "Prüfer, Standard, Gegenstand, Zeitraum und Sicherheitsniveau nennen. Interne Plausibilisierung oder Evidenzpflege nicht als unabhängige Assurance bezeichnen. Keine allgemeine Prozentwahrscheinlichkeit aus dem Prüfungsniveau ableiten.",
+          "Die Prüfung einer Kennzahl und der Nachweis einer gesellschaftlichen Wirkung sind nicht automatisch dasselbe. Ein Vermerk kann einen klar abgegrenzten Gegenstand betreffen, ohne die gesamte Wirkungsbehauptung zu bestätigen.",
+          "Garantie: Assurance beseitigt nicht jedes Fehlerrisiko.",
+          "Interne Freigabe: Sie ist kein unabhängiger Prüfungsauftrag.",
+          "Typisiertes Beispiel: Ein Vermerk betrifft ausgewählte Emissionsangaben. Daraus folgt keine Prüfung aller Investitionen auf positive Netto-Wirkung.",
+          "„Was genau wurde mit welchem Sicherheitsniveau geprüft, und was liegt außerhalb des Vermerks?“"
+        ]
+      }
+    },
+    {
+      "termId": "baseline",
+      "aliases": [
+        "Ausgangslage",
+        "Basislinie"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "kennzahl",
+        "szenario"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/",
+        "UK Government: Data quality action plan implementation guide|https://www.gov.uk/government/publications/implement-a-data-quality-action-plan/data-quality-action-plan-implementation-guide"
+      ],
+      "section": {
+        "title": "Anwendungssprache: Baseline",
+        "body": "Sie kann einen Zustand vor einer Maßnahme oder einen definierten Referenzfall beschreiben. Messdefinition, Zeitraum und Systemgrenze müssen vergleichbar bleiben. Ein einfacher Vorher-Nachher-Vergleich genügt nicht, um Veränderungen sicher einer Maßnahme zuzurechnen.",
+        "items": [
+          "Baseline vor Auswertung dokumentieren. Änderungen an Definition oder Datenbasis begründen und Vergleichbarkeit herstellen. Saisonalität und externe Veränderungen berücksichtigen.",
+          "Wirkungsbeurteilung benötigt eine geeignete Vergleichsbasis. Baseline, kontrafaktischer Verlauf und Zielwert sind verschiedene Größen und dürfen nicht stillschweigend gleichgesetzt werden.",
+          "Zielwert: Er beschreibt den angestrebten, nicht den ursprünglichen Zustand.",
+          "Kontrafaktum: Die Entwicklung ohne Maßnahme ist nicht immer der unveränderte Ausgangswert.",
+          "Typisiertes Beispiel: Der Energieverbrauch vor einer Sanierung wird dokumentiert; spätere Vergleiche berücksichtigen zusätzlich Witterung und Nutzung.",
+          "„Gegen welchen nachvollziehbaren Ausgangs- oder Vergleichszustand bewerten wir die Veränderung?“"
+        ]
+      }
+    },
+    {
+      "termId": "lock-in-pfadabhaengigkeit",
+      "aliases": [
+        "Vendor Lock-in",
+        "Technologiebindung",
+        "Anbieterbindung"
+      ],
+      "relatedTerms": [
+        "abhaengigkeit",
+        "resilienz",
+        "managed-service",
+        "pfadabhaengigkeit"
+      ],
+      "officialSources": [
+        "Wirkungsökonomie: führender Begriffsleitfaden (jeweils kanonische aktuelle Fassung)|https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/",
+        "Australian Signals Directorate: Managed Service Provider|https://www.cyber.gov.au/glossary/managed-service-provider"
+      ],
+      "section": {
+        "title": "Anwendungssprache: Lock-in",
+        "body": "Die Bindung kann technisch, vertraglich, wirtschaftlich oder organisatorisch sein. Entscheidend ist nicht nur, ob eine Alternative existiert, sondern ob sie rechtzeitig und mit vertretbarem Aufwand nutzbar wäre. Lock-in ist deshalb nicht mit jeder normalen Lieferbeziehung gleichzusetzen.",
+        "items": [
+          "Exportfähigkeit, Schnittstellen, Rechte, Ersatzteile, Know-how, Laufzeiten und Wechselkosten prüfen. Maßnahmen zur Öffnung gegen ihre eigenen Kosten und Risiken abwägen.",
+          "Langfristige Infrastruktur- und Datenentscheidungen können zukünftige Wirkungsmöglichkeiten begrenzen. Die WÖk betrachtet deshalb auch die späteren Wechsel- und Anpassungsoptionen.",
+          "Abhängigkeit: Sie kann auch kurzfristig oder leicht ersetzbar sein.",
+          "Schädlichkeit: Bindung ist nicht automatisch negativ; entscheidend sind Folgen und Alternativen.",
+          "Typisiertes Beispiel: Ein Steuerungssystem verwendet ein proprietäres Format, das einen Betreiberwechsel nur mit erheblicher Neuentwicklung ermöglicht.",
+          "„Wie aufwendig wäre ein Wechsel, und welche Handlungsoptionen verlieren wir mit dieser Entscheidung?“"
+        ]
+      }
+    }
+  ],
+  "aliasCorrections": [
+    {
+      "target": "human-rights-due-diligence",
+      "remove": [
+        "Due Diligence"
+      ],
+      "related": [
+        "due-diligence"
+      ],
+      "note": "Allgemeine Sorgfaltsprüfung ist nicht ausschließlich menschenrechtliche Sorgfalt."
+    }
+  ]
+}
