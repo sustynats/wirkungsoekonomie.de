@@ -1,0 +1,119 @@
+name: Prepare reviewed glossary evidence release
+on:
+  push:
+    branches: [chatgpt/glossar-finanzierung-evidenz-20260915]
+    paths: [.github/workflows/glossary-evidence-prepare.yml]
+permissions:
+  contents: write
+concurrency:
+  group: glossary-evidence-prepare
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      SOURCE_DATE_EPOCH: '1787270400'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preserve existing cost and deployment protections
+        run: npm run check:hosting-cost
+      - name: Capture unchanged canonical baseline
+        run: |
+          node scripts/glossary/build-glossary-registry.mjs
+          cp public/data/glossary.terms.json /tmp/glossary-before.json
+      - name: Compile reviewed additions and register normal build
+        run: |
+          node scripts/glossary/compile-financing-evidence.mjs
+          python scripts/glossary/integrate-financing-evidence.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('package.json'); data=json.loads(p.read_text())
+          command='GLOSSARY_CHECK_PAGES=1 node scripts/glossary/check-financing-evidence.mjs'
+          if command not in data['scripts']['postbuild']:
+              data['scripts']['postbuild'] += ' && '+command
+          p.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+          PY
+      - name: Generate glossary, hover, detail pages, source archive and relationships
+        run: |
+          node scripts/glossary/build-glossary-registry.mjs
+          GLOSSARY_BASELINE=/tmp/glossary-before.json node scripts/glossary/check-financing-evidence.mjs
+          node scripts/export/export-glossary.mjs
+          node scripts/glossary/build-term-links.mjs
+          node scripts/glossary/build-glossary-candidates.mjs
+          node scripts/glossary/build-glossary-reference-index.mjs
+          node scripts/glossary/build-glossary-pages.mjs
+          node scripts/glossary/check-legacy-detail-definitions.mjs
+          node scripts/glossary/check-wirkungsgrad-differentiation.mjs
+          node scripts/glossary/check-detail-page-composition.mjs
+          node scripts/glossary/check-impact-controlling-rechenlogiken.mjs
+          node scripts/glossary/build-glossary-lookup.mjs
+          node scripts/quellenarchiv/build-quellenarchiv-pages.mjs
+          node scripts/quellenarchiv/check-quellenarchiv-quality.mjs
+          node scripts/glossary/check-legal-source-coverage.mjs
+          node scripts/sources/check-evidence-source-archive-links.mjs
+          node scripts/glossary/build-glossary-relations.mjs
+          GLOSSARY_BASELINE=/tmp/glossary-before.json GLOSSARY_CHECK_PAGES=1 node scripts/glossary/check-financing-evidence.mjs
+          npm run check:glossary-publication
+      - name: Generate committed search and taxonomy
+        run: |
+          npm run build:search
+          npm run taxonomy:build
+      - name: Record exact reviewed change set and source snapshot
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p /tmp/glossary-release-review
+          git diff --stat > /tmp/glossary-release-review/diff-stat.txt
+          git diff -- scripts/glossary/build-glossary-registry.mjs package.json > /tmp/glossary-release-review/source.patch
+          python - <<'PY'
+          import json,pathlib,shutil,subprocess
+          r=pathlib.Path.cwd();o=pathlib.Path('/tmp/glossary-release-review')
+          for p in ['assets/data/navigation.json','assets/data/glossary-model.json','public/data/glossary.terms.json','assets/js/glossaryTerms.js','content/glossary/imports/finanzierung-evidenz-2026-09-15.json','reports/glossary-financing-evidence-audit.json','reports/glossary-publication-quality.json','reports/glossary-relation-curation.json','scripts/glossary/build-glossary-registry.mjs','package.json']:
+              s=r/p
+              if s.is_file():
+                  d=o/p;d.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(s,d)
+          decisions=json.loads((r/'content/glossary/editorial/finanzierung-evidenz-20260915/decisions.json').read_text())
+          for x in decisions['decisions']:
+              p=f"begriffe/{x['target']}/index.html";s=r/p
+              if s.is_file():
+                  d=o/p;d.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(s,d)
+          shutil.copytree(r/'assets/css',o/'assets/css',dirs_exist_ok=True)
+          (o/'status.txt').write_text(subprocess.check_output(['git','status','--short'],text=True))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: glossary-release-review-${{ github.sha }}
+          path: /tmp/glossary-release-review/
+          retention-days: 3
+          if-no-files-found: error
+      - name: Commit only glossary and integration outputs to this branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$GITHUB_REF_NAME" == 'chatgpt/glossar-finanzierung-evidenz-20260915' ]] || exit 1
+          [[ "$(git ls-remote origin "refs/heads/$GITHUB_REF_NAME" | cut -f1)" == "$GITHUB_SHA" ]] || { echo 'Concurrent branch change; refusing push.'; exit 1; }
+          python - <<'PY'
+          import subprocess
+          names=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())|set(subprocess.check_output(['git','ls-files','--others','--exclude-standard'],text=True).splitlines())
+          prefixes=('begriffe/','glossar/','quellenarchiv/','assets/data/glossary','public/data/glossary','assets/search/','public/data/woek-search-','reports/glossary')
+          exact={'scripts/glossary/build-glossary-registry.mjs','package.json','content/glossary/imports/finanzierung-evidenz-2026-09-15.json','content/quellenarchiv/glossary-source-records.json','content/taxonomy/site-map.json','assets/js/glossaryTerms.js','public/downloads/exports/glossar.md','glossar.html','sitemap.xml'}
+          selected=sorted(p for p in names if p in exact or p.startswith(prefixes))
+          print('Scoped commit files:',len(selected))
+          print('Unrelated unstaged generated files:',sorted(names-set(selected)))
+          if not selected:raise SystemExit('No generated release changes')
+          for p in selected:subprocess.run(['git','add','--',p],check=True)
+          PY
+          git config user.name 'sustynats'
+          git config user.email '226931777+sustynats@users.noreply.github.com'
+          git commit -m 'Integrate 44 reviewed glossary concepts with canonical safeguards'
+          git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
+          echo "Verified glossary source commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
