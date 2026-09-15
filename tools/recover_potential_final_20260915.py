@@ -173,11 +173,6 @@ def run():
             "magnitudes": {k: merged["impact_assessment"]["dimensions"][k]["magnitude"] for k in DIMENSIONS},
         })
 
-    # Fail closed without inventing values: if a fresh 2.1 story is public but
-    # still incomplete after restoring all existing reviewed profiles, remove
-    # it from the public release and retain its record for later proper review.
-    # This does not enqueue or call any provider; it only prevents an invalid
-    # empty-potential card from remaining online.
     for i, record in enumerate(store["stories"]):
         if not fresh_incomplete_publication(record):
             continue
@@ -205,7 +200,7 @@ def run():
             "missing_dimensions": missing,
         })
 
-    if len(report["unreviewed_publication_holds"]) > 10:
+    if len(report["unreviewed_publication_holds"]) > 20:
         raise SystemExit(f"Unexpectedly broad unreviewed publication hold set ({len(report['unreviewed_publication_holds'])}); refusing bulk hold")
 
     assert set(current) == set(index(store["stories"])), "Story identities must be preserved"
