@@ -954,7 +954,6 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true, transport 
     "event_claims: 1-6 Kernbehauptungen+Status+evidence_id. confirmed_claim braucht unabhängige Bestätigung. primary_source_claim nur primary_source:true; Gerichtsbericht≠Urteil. Widersprüche offenhalten, nicht mitteln. Keine False Balance; Belegtext unverändert.",
     "news_status developing/preliminary: gesicherter Kern, offene Fragen; confirmed: unabhängig bestätigt; sonst disputed/corrected/updated. Erstmeldung darf knappe Einordnung tragen. currentness/neue Quellen: Überholtes nicht als aktuell publizieren.",
     "deepen_existing_initial_report nur bei neuen Fakten/besserer Evidenz; Umformulierung=no_new_information, Erstmeldung erhalten.",
-    "impact_potential_reassessment: bereits veröffentlichte materielle Meldung wird vollständig neu gefasst (Ziel: vollständiges Wirkungspotenzial für alle drei Dimensionen). Kein Dublettenvergleich mit sich selbst: publication_recommendation:true, duplicate_status:material_update, publication_depth wie bisher; Fakten und Quellen unverändert.",
     "followups: prüfbare Zusagen/Prognosen, sonst []; expected_by: belegte ISO-Frist, sonst null; expected_by_evidence: exakter Fristbeleg/null. Studien: Original/DOI, Reviewstatus, Methode, Stichprobe, Grenzen, Interessen aus Belegen; Pressemitteilung ≠ Studie.",
     // The identical untrusted-data rule is already mandatory in MEDIA_PROMPT_RULES.
     "Transport unverändert auflösen: {$text:i}=text_pool[i]. cells-v2 *_table: columns=Felder, rows=Werte; null=fehlend außer present_nulls:[Zeile,Spalte]. evidence_table.source_index=Quellenindex; Rest=evidence_segment. source_defaults/claim_defaults ergänzen fehlende Felder; provenance_defaults nur vorhandene Objekte. abstract_claim_id→Claim. claim_from_source=(sources[index].title+\": \"+sources[index].abstract).slice(0,claim_text_length). excerpt_from:[field,start,length]=source[field].slice(start,start+length); excerpt_text:i=evidence_texts[i]. Beleg-ID/URL/Datum/Herkunft/Rolle/Widerspruch unverändert; Textgleichheit≠Unabhängigkeit.",
@@ -1151,7 +1150,10 @@ export function decodeWoekAiResponse(payload, prompt, requestAttempts = 1) {
   const suppliedIds = suppliedEvidenceIds(prompt);
   let parsed;
   try {
-    if (String(payload.answer || "").length > 40000) throw new Error("AI_RESPONSE_TOO_LARGE");
+    // Ein vollständiges 2.1-Paket (drei Dimensionen mit Faktoren, Texte, Claims)
+    // misst im Median rund 30.000 und im Ausnahmefall über 70.000 Zeichen. Die
+    // fachlichen Größenlimits prüft validateAnalysis; hier nur ein Transportschutz.
+    if (String(payload.answer || "").length > 200000) throw new Error("AI_RESPONSE_TOO_LARGE");
     parsed = extractJsonObject(payload.answer);
     if (!Array.isArray(parsed.analyses)) throw new Error("AI_SCHEMA_ANALYSES_REQUIRED");
   } catch (error) {

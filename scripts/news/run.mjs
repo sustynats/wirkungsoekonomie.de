@@ -717,11 +717,25 @@ function retryInputFingerprint(candidate) {
     sources: (candidate.sources || []).map(sourceReviewFingerprint).sort() }));
 }
 
+// Horizont in Stunden; 0 oder leer schaltet den Horizont ab (nur für Tests und
+// ausdrückliche Betriebsentscheidungen). Standard im Direktbetrieb: 24 Stunden.
+export function lifoHorizonMilliseconds(env = process.env) {
+  const configured = env.WOEK_NEWS_MAX_SOURCE_AGE_HOURS;
+  const hours = configured === undefined || configured === '' ? 24 : Number(configured);
+  return Number.isFinite(hours) && hours > 0 ? hours * 3600000 : 0;
+}
+
+// Ein bezahlter Versuch je Eingabestand. Einzige Ausnahme: eine formal
+// unbrauchbare Anbieterantwort (kein gültiges JSON) darf genau einmal
+// wiederholt werden, weil sie keine inhaltliche Entscheidung darstellt.
 export function paidAttemptsExhausted(candidate, limit = Number(process.env.WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT || 1)) {
-  const previous = candidate.existing_story?.ai_retry;
+  const existing = candidate.existing_story;
+  const previous = existing?.ai_retry;
+  const reason = existing?.pending_update?.reason || existing?.pending_reason;
+  const effectiveLimit = reason === "AI_OUTPUT_INVALID" ? Math.max(2, limit) : Math.max(1, limit);
   return Boolean(previous && previous.version === AI_PROCESSING_VERSION
     && previous.fingerprint === retryInputFingerprint(candidate)
-    && Number(previous.retry_count || 0) >= Math.max(1, limit));
+    && Number(previous.retry_count || 0) >= effectiveLimit);
 }
 
 export function retryCoolingDown(candidate, now) {
@@ -1316,8 +1330,8 @@ export async function runWirkungsticker(options = {}) {
   // Direktbetrieb (LIFO): unveröffentlichte Kandidaten, deren jüngste Quelle
   // älter als der Horizont ist, werden ohne Aufruf geschlossen. Veröffentlichte
   // Akten, Folgetermine, Vertiefungen und beauftragte Neubewertungen bleiben.
-  const lifoHorizonMs = Math.max(1, Number(process.env.WOEK_NEWS_MAX_SOURCE_AGE_HOURS || 24)) * 3600000;
-  const lifoExpired = clusters.filter((candidate) => !candidate.existing_story?.published && !candidate.impact_reassessment
+  const lifoHorizonMs = lifoHorizonMilliseconds();
+  const lifoExpired = clusters.filter((candidate) => lifoHorizonMs > 0 && !candidate.existing_story?.published && !candidate.impact_reassessment
     && !candidate.followup_due && !candidate.deepening_due
     && nowDate.getTime() - (latestSourceDate(candidate.sources) || Date.parse(candidate.first_seen || candidate.last_updated || now)) > lifoHorizonMs);
   const lifoExpiredIds = new Set(lifoExpired.map((candidate) => candidate.story_id));

@@ -8,15 +8,14 @@ import { spawnSync } from 'node:child_process';
 const root = path.resolve(import.meta.dirname, '../..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 
-test('scheduled editorial savings never disable news; explicit requests travel as data', () => {
+test('the direct news lane carries no scheduled editorial spending and no editorial request inputs', () => {
+  // Direktbetrieb seit 15.09.2026: Meinung & Analyse läuft nicht mehr als
+  // zweite bezahlte Lane im Nachrichtenworkflow. Explizite Aufträge gehören
+  // in die private Redaktion, nicht in den Nachrichtenlauf.
   const workflow = read('.github/workflows/wirkungsticker.yml');
-  const editorial = workflow.split('- name: Research and publish relevant WÖK analyses')[1].split('- name: Read public ticker outcome')[0];
-  assert.match(editorial, /args=\(--execute --background-only/);
-  assert.match(editorial, /EDITORIAL_REQUESTED_STORY_IDS: \$\{\{ inputs\.editorial_requested_story_ids \}\}/);
-  assert.match(editorial, /args\+=\(--request="\$EDITORIAL_REQUESTED_STORY_IDS"\)/);
-  assert.match(editorial, /exit 0/);
-  assert.match(workflow, /run: npm run news:run/);
-  const news = workflow.split('- name: Import, analyze and build')[1].split('- name: Backfill explicitly requested')[0];
+  assert.doesNotMatch(workflow, /Research and publish relevant WÖK analyses|news:editorial-analyses|EDITORIAL_REQUESTED_STORY_IDS|editorial_analysis_bootstrap/);
+  const news = workflow.split('- name: Import, analyze (one call per story) and build')[1].split('- name: Read public ticker outcome')[0];
+  assert.match(news, /node scripts\/news\/run-api\.mjs/);
   assert.doesNotMatch(news, /background-only|EDITORIAL_REQUESTED/);
 });
 

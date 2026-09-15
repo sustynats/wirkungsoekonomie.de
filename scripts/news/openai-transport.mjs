@@ -27,11 +27,14 @@ export const SINGLE_CALL_INSTRUCTIONS = [
   'Der zweite Recherchepass findet in diesem Durchgang statt: Bei evidence low/not_assessable oder path_quality high_uncertainty setze research_pass second_pass und formuliere research_result als konkrete Wissensgrenze. research_check.status completed, mindestens eine gezielte Prüfung in research_check.searches (question, result, source_ids nur aus gelieferten Quellen), source_functions für jede genutzte Quelle.',
   'system_check vollständig ausfüllen (cross_dimension_review für alle drei Dimensionen, first/second/third_order, counter_evidence, source_independence, institutional_status).',
   'Belegte eingetretene Schäden (Tote, Verletzte, Zerstörung) gehören zusätzlich als observed_effects mit eigenen Faktoren; das Potenzial bleibt daneben modelliert.',
+  'review_mode impact_potential_reassessment: Eine bereits veröffentlichte, materielle Meldung wird vollständig neu gefasst, damit das Wirkungspotenzial für alle drei Dimensionen modelliert vorliegt. Kein Dublettenvergleich mit sich selbst: publication_recommendation true, publication_gate.duplicate_status material_update, publication_depth wie bisher, Fakten und Quellen unverändert.',
   'Nur gelieferte Quellen und deren source_id/evidence_id verwenden. Keine Zahlen, Quellen oder Zitate erfinden. Alle Lesertexte auf Deutsch, ohne URLs, IDs oder HTML.',
   'Antworte ausschließlich mit einem einzigen JSON-Objekt {"analyses":[...]} gemäß Schema, ohne Markdown und ohne Kommentar.',
 ].join('\n');
 
-export function buildOpenAiRequest(prompt, { model, maxOutputTokens = 24000, reasoningEffort = 'medium' } = {}) {
+// Ausgabebudget: ein vollständiges Paket braucht typisch 8k–12k, selten über 20k
+// Antwort-Token; Reasoning-Token zählen mit. 40k deckt das ab und begrenzt die Kosten.
+export function buildOpenAiRequest(prompt, { model, maxOutputTokens = 40000, reasoningEffort = 'medium' } = {}) {
   return {
     model, store: false,
     reasoning: { effort: reasoningEffort },
@@ -87,7 +90,7 @@ export async function callOpenAiDirect(stories, options = {}) {
   const model = options.model || newsModel();
   const prompt = options.prompt || buildAnalysisPrompt(stories, { transport: 'api' });
   const body = JSON.stringify(buildOpenAiRequest(prompt, { model,
-    maxOutputTokens: Number(options.maxOutputTokens || process.env.WOEK_NEWS_MAX_OUTPUT_TOKENS || 24000),
+    maxOutputTokens: Number(options.maxOutputTokens || process.env.WOEK_NEWS_MAX_OUTPUT_TOKENS || 40000),
     reasoningEffort: options.reasoningEffort || process.env.WOEK_NEWS_REASONING_EFFORT || 'medium' }));
   // A transport failure without any completed model output is not a paid
   // attempt. Two transport tries at most; never a third provider call.

@@ -45,6 +45,10 @@ Ein einziger Workflow `.github/workflows/wirkungsticker.yml`, alle 15 Minuten:
   erneut aus. Es gibt keine bezahlte Zweitprüfung und keinen Review-Kindjob.
 - Transportfehler ohne Modellantwort (Timeout, 5xx, 429) sind kein bezahlter Versuch; höchstens
   ein zweiter Transportversuch, nie ein dritter. 401/403 bricht sofort ab.
+- Einzige Ausnahme von der Ein-Versuch-Regel: eine formal unbrauchbare Anbieterantwort
+  (`AI_OUTPUT_INVALID`, kein gültiges JSON) darf nach Backoff genau einmal wiederholt werden.
+  Inhaltliche Gate-Ablehnungen werden nie wiederholt.
+- LIFO-Horizont `WOEK_NEWS_MAX_SOURCE_AGE_HOURS` (Standard 24; 0 schaltet ab, nur für Tests).
 - Kapazität: `WOEK_NEWS_MAX_AI_STORIES_PER_RUN` (Standard 4 je Viertelstunde),
   `WOEK_NEWS_MAX_AI_CALLS_PER_HOUR` (Standard 12). Monatsbudget und Stufen unverändert in
   `scripts/news/budget.mjs` (70 % / 85 % / 95 %).
