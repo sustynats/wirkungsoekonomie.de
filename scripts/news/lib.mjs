@@ -11,6 +11,7 @@ import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
 import { IMPACT_SCHEMA, IMPACT_DEFS, IMPACT_PROMPT_RULE, IMPACT_PROMPT_SCHEMA, IMPACT_PROMPT_DEFS, impactAssessmentErrors } from './impact-assessment.mjs';
+import { modelledPublicationIssues } from './impact-scope.mjs';
 import { directionAssessmentErrors } from './direction-assessment.mjs';
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
 import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, promptEvidenceSegments } from "./newsroom.mjs";
@@ -883,7 +884,7 @@ export function analysisInputFor(stories) {
   stories.forEach(story => { assertAutomatable(story); assertAutomatable(story.existing_story); });
   return stories.map((story) => ({
     story_id: story.story_id,
-    review_mode: story.deepening_due ? "deepen_existing_initial_report" : story.reassessment ? "historical_relevance_reassessment" : "new_or_updated_story",
+    review_mode: story.impact_reassessment ? "impact_potential_reassessment" : story.deepening_due ? "deepen_existing_initial_report" : story.reassessment ? "historical_relevance_reassessment" : "new_or_updated_story",
     canonical_title: cleanForPrompt(story.title, 220),
     already_published: Boolean(story.existing_story?.published),
     current_published_summary: cleanForPrompt(story.existing_story?.analysis?.summary, 720),
@@ -953,6 +954,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true, transport 
     "event_claims: 1-6 Kernbehauptungen+Status+evidence_id. confirmed_claim braucht unabhängige Bestätigung. primary_source_claim nur primary_source:true; Gerichtsbericht≠Urteil. Widersprüche offenhalten, nicht mitteln. Keine False Balance; Belegtext unverändert.",
     "news_status developing/preliminary: gesicherter Kern, offene Fragen; confirmed: unabhängig bestätigt; sonst disputed/corrected/updated. Erstmeldung darf knappe Einordnung tragen. currentness/neue Quellen: Überholtes nicht als aktuell publizieren.",
     "deepen_existing_initial_report nur bei neuen Fakten/besserer Evidenz; Umformulierung=no_new_information, Erstmeldung erhalten.",
+    "impact_potential_reassessment: bereits veröffentlichte materielle Meldung wird vollständig neu gefasst (Ziel: vollständiges Wirkungspotenzial für alle drei Dimensionen). Kein Dublettenvergleich mit sich selbst: publication_recommendation:true, duplicate_status:material_update, publication_depth wie bisher; Fakten und Quellen unverändert.",
     "followups: prüfbare Zusagen/Prognosen, sonst []; expected_by: belegte ISO-Frist, sonst null; expected_by_evidence: exakter Fristbeleg/null. Studien: Original/DOI, Reviewstatus, Methode, Stichprobe, Grenzen, Interessen aus Belegen; Pressemitteilung ≠ Studie.",
     // The identical untrusted-data rule is already mandatory in MEDIA_PROMPT_RULES.
     "Transport unverändert auflösen: {$text:i}=text_pool[i]. cells-v2 *_table: columns=Felder, rows=Werte; null=fehlend außer present_nulls:[Zeile,Spalte]. evidence_table.source_index=Quellenindex; Rest=evidence_segment. source_defaults/claim_defaults ergänzen fehlende Felder; provenance_defaults nur vorhandene Objekte. abstract_claim_id→Claim. claim_from_source=(sources[index].title+\": \"+sources[index].abstract).slice(0,claim_text_length). excerpt_from:[field,start,length]=source[field].slice(start,start+length); excerpt_text:i=evidence_texts[i]. Beleg-ID/URL/Datum/Herkunft/Rolle/Widerspruch unverändert; Textgleichheit≠Unabhängigkeit.",
@@ -1315,6 +1317,8 @@ export function validateAnalysis(analysis, story, options = {}) {
     }
     errors.push(...directionAssessmentErrors(analysis, story.sources, { requireCurrent: options.requireDirectionAssessment === true }));
   }
+  // Direktbetrieb: eine neue Veröffentlichung braucht drei modellierte Dimensionen.
+  if (options.requireImpactAssessment === true && analysis?.impact_assessment?.version === "2.1") errors.push(...modelledPublicationIssues(analysis.impact_assessment));
   errors.push(...impactAssessmentErrors(analysis.impact_assessment, [...story.sources,...(story.impact_sources || [])], { required: options.requireImpactAssessment === true, ...(options.persisted && analysis.impact_assessment?.version === "2.0" ? {version:"2.0"} : {}) }));
   for (const key of ["impact_risks", "mechanisms", "first_order", "second_order", "third_order", "side_effects", "uncertainties", "watch_next", "reference_frameworks"]) {
     if (!Array.isArray(analysis?.[key])) errors.push(`AI_ARRAY_REQUIRED:${key}`);

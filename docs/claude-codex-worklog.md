@@ -223,3 +223,10 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - Laufberichte führen getrennte Zustände für Betrieb, Redaktion und Queue sowie Anbieter-Erfolge/-Fehler. Discord meldet erst echte technische Verzögerungen; der Tagesbericht enthält Queue, Quellen-Funnel, Monats-/Tageskosten und Kosten je Veröffentlichung/Aktualisierung.
 - Heise Wirtschaft, Netzpolitik und Security als kostenlose Metadatenfeeds ergänzt; lokale Systemrelevanz-Vorfilterung hält Produkttests, Deals, Kaufberatung und Routineupdates vor der KI zurück. Telepolis dient nur als bestätigungspflichtige Kontext-/Discovery-Quelle.
 - Legacy-HTTP-Links desselben HTTPS-Herausgebers werden sicher kanonisiert; Drittanbieter-Hosts bleiben unverändert. Dunkle WÖK-Analyse-Headlines erhalten den bereits getesteten hellen Kontraststil.
+
+## 2026-09-15 - Claude: Wirkungsticker auf Direktbetrieb umgestellt
+
+- **Was:** Bridge-Kette (Oracle → Dropbox → ChatGPT-Worker → Zweitprüfung) durch eine gerade Linie ersetzt: ein Workflow alle 15 Minuten, Import → lokale Bewertung (LIFO, Horizont 24 h) → genau ein OpenAI-Aufruf je Meldung → deterministisches Gate → Build → Pages. Altwarteschlange (759 Kandidaten) geschlossen, 19 jüngste Online-Meldungen ohne vollständiges Wirkungspotenzial zur Neubewertung eingereiht.
+- **Pfade:** `scripts/news/openai-transport.mjs`, `scripts/news/impact-gate.mjs`, `scripts/news/run-api.mjs`, `scripts/news/retire-backlog.mjs`, `scripts/news/queue-reassessment.mjs`, `.github/workflows/wirkungsticker.yml`, Änderungen in `run.mjs`/`lib.mjs`/`budget.mjs`; Doku `docs/ops/WIRKUNGSTICKER-DIREKTBETRIEB.md`, Übergabe `docs/handoff-wirkungsticker-direktbetrieb-codex.md`.
+- **Geprüft:** `tests/news/direct-operation.test.mjs` (12 Tests), `npm run news:test`, Probelauf gegen Live-Feeds (133 s, 0 Aufrufe), `news:validate`.
+- **Offen für Codex:** Erste Live-Läufe auswerten, Gate-Fehlercodes sammeln, Oracle-Bridge-Timer abschalten, Bridge-PRs #771/#772/#774 schließen. Private Redaktion (Meinung & Analyse, Nachgehört/Nachgesehen, Buch & Wirkung) unverändert.

@@ -1,96 +1,51 @@
 name: Wirkungsticker
 run-name: ${{ inputs.request_id || 'Wirkungsticker' }}
 
+# Direktbetrieb seit 15.09.2026: ein Workflow, eine gerade Linie.
+# Quellen einsammeln → lokal bewerten (LIFO) → genau ein OpenAI-Aufruf je
+# Meldung → deterministisches Gate → Build → Commit → Pages. Keine Bridge,
+# kein Dropbox, keine ChatGPT-Worker, keine bezahlte Zweitprüfung.
+# Doku: docs/ops/WIRKUNGSTICKER-DIREKTBETRIEB.md
+
 on:
-  push:
-    # Oracle-Ausfallreserve: eigener repo-begrenzter Deploy-Key, kein PAT.
-    branches:
-      - codex/wirkungsticker-clock
-      - codex/wirkungsticker-import-clock
   schedule:
-    # API-Rückwechsel behält den bisherigen Takt; Bridge pollt nur Dropbox.
-    - cron: "7,22,37,52 * * * *"
-    - cron: "*/5 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
-      bridge_phase:
-        description: "Manueller Bridge-Lauf (bestehende Stundensperren bleiben aktiv)"
-        type: choice
-        options: [import]
-        default: import
       request_id:
-        description: "Interne Zuordnung eines manuellen Serverlaufs"
+        description: "Interne Zuordnung eines manuellen Laufs"
         type: string
         default: ""
-      title_images_backfill:
-        description: "Vorhandene Akten ohne Titelbild nachziehen (verbraucht ggf. Higgsfield-Credits)"
-        type: boolean
-        default: false
-      title_images_limit:
-        description: "Maximale Aktenzahl für den ausdrücklich gestarteten Bild-Backfill"
-        type: number
-        default: 20
-      title_images_refresh_editorial:
-        description: "Ausdrücklich freigegebene Erneuerung alter Symbolbilder (Credit-Limits bleiben aktiv)"
-        type: boolean
-        default: false
-      media_impact_backfill:
-        description: "Selektiven, idempotenten Medien- und Sprachwirkungs-Backfill starten"
-        type: boolean
-        default: false
-      media_impact_limit:
-        description: "Maximale Anzahl bereits veröffentlichter Akten im Medienwirkungs-Backfill"
-        type: number
-        default: 10
-      editorial_analysis_limit:
-        description: "Technische Batchgröße für analysereife WÖK-Vertiefungen; keine redaktionelle Quote"
-        type: number
-        default: 6
-      editorial_analysis_bootstrap:
-        description: "Kontrollierter Erstbackfill; alle weiteren Kandidaten bleiben automatisch in der Queue"
-        type: boolean
-        default: false
-      editorial_requested_story_ids:
-        description: "Ausdrücklicher Auftrag: veröffentlichte Story-IDs, kommasepariert; priorisiert, Quellen-/Qualitäts- und Budgetgates bleiben aktiv"
+      max_ai_stories:
+        description: "Höchstzahl bezahlter Meldungen in diesem Lauf (leer = Standard)"
         type: string
         default: ""
+      reassess_limit:
+        description: "Jüngste veröffentlichte Meldungen ohne vollständiges Wirkungspotenzial zur Neubewertung einreihen (0 = keine)"
+        type: number
+        default: 0
+      dry_run:
+        description: "Nur Import und lokale Bewertung, kein Aufruf, kein Commit"
+        type: boolean
+        default: false
 
 permissions:
   actions: write
   contents: write
 
 concurrency:
-  # Ignored discovery-clock/API-only triggers must not replace a pending import
-  # before the job-level condition is evaluated. Keep this eligibility in sync
-  # with update.if; the regression matrix exercises both processing modes.
-  group: >-
-    ${{ ((vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '*/5 * * * *' || github.ref == 'refs/heads/codex/wirkungsticker-import-clock')) ||
-    (vars.WIRKUNGSTICKER_PROCESSING_MODE != 'dropbox_chatgpt_bridge' && github.event.schedule != '*/5 * * * *' && github.ref != 'refs/heads/codex/wirkungsticker-import-clock')) && 'wirkungsticker-main' || 'wirkungsticker-inactive-trigger' }}
+  group: wirkungsticker-main
   cancel-in-progress: false
 
 jobs:
   update:
-    # The lanes share one Oracle process. Keep per-lane trigger coalescing above,
-    # but never load the full legacy queue concurrently with discovery/monitor.
-    concurrency:
-      group: ${{ vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && 'wirkungsticker-oracle-bridge-access' || 'wirkungsticker-api-access' }}
-      queue: max
-      cancel-in-progress: false
-    if: >-
-      (vars.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '*/5 * * * *' || github.ref == 'refs/heads/codex/wirkungsticker-import-clock')) ||
-      (vars.WIRKUNGSTICKER_PROCESSING_MODE != 'dropbox_chatgpt_bridge' && github.event.schedule != '*/5 * * * *' && github.ref != 'refs/heads/codex/wirkungsticker-import-clock')
+    if: vars.WIRKUNGSTICKER_PROCESSING_MODE == 'api' || vars.WIRKUNGSTICKER_PROCESSING_MODE == ''
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 40
     env:
-      WIRKUNGSTICKER_PROCESSING_MODE: ${{ vars.WIRKUNGSTICKER_PROCESSING_MODE || 'api' }}
-      VISUAL_GENERATION_PROVIDER: ${{ vars.VISUAL_GENERATION_PROVIDER || 'higgsfield' }}
-      WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
-      WOEK_NEWS_BRIDGE_EDITORIAL_ENABLED: ${{ vars.WOEK_NEWS_BRIDGE_EDITORIAL_ENABLED }}
-      WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
-      WOEK_NEWS_BRIDGE_CORRECTIONS_ENABLED: ${{ vars.WOEK_NEWS_BRIDGE_CORRECTIONS_ENABLED }}
-      WOEK_NEWS_BRIDGE_PUBLISH: ${{ vars.WOEK_NEWS_BRIDGE_PUBLISH || 'false' }}
+      WIRKUNGSTICKER_PROCESSING_MODE: api
+      VISUAL_GENERATION_PROVIDER: higgsfield
       GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
-      WOEK_NEWS_BRIDGE_PHASE: import
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -101,7 +56,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Select Europe/Berlin slot
+      - name: Select run slot
         id: slot
         run: node scripts/news/schedule.mjs
       - name: Set up pinned title-image rasterizer
@@ -114,123 +69,49 @@ jobs:
       - name: Record expected run start
         if: steps.slot.outputs.should_run == 'true'
         run: echo "WOEK_NEWS_EXPECTED_AFTER=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
-      - name: Install local image and public-document validation tools
-        if: steps.slot.outputs.should_run == 'true' && env.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge'
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends imagemagick tesseract-ocr poppler-utils
       - name: Unit and security tests
         if: steps.slot.outputs.should_run == 'true'
+        run: npm run news:test
+      - name: Queue explicitly requested potential reassessments
+        if: steps.slot.outputs.should_run == 'true' && inputs.reassess_limit > 0
         env:
-          WIRKUNGSTICKER_PROCESSING_MODE: api
-          VISUAL_GENERATION_PROVIDER: higgsfield
-        run: |
-          npm run news:test
-          node --test tests/ops/discord-monitor.test.mjs
-      - name: Recover usage from failed atomic publications
-        if: steps.slot.outputs.should_run == 'true'
-        # Provider-side accounting remains authoritative if GitHub logs are
-        # temporarily unavailable; do not disable that independent cost gate.
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: node scripts/news/recover-failed-usage.mjs
-      - name: Import, analyze and build
+          REASSESS_LIMIT: ${{ inputs.reassess_limit }}
+        run: node scripts/news/queue-reassessment.mjs --limit="$REASSESS_LIMIT"
+      - name: Import, analyze (one call per story) and build
         if: steps.slot.outputs.should_run == 'true'
         env:
-          # Finite, dated authorization is enforced in scripts/news/budget.mjs.
-          WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
+          # Der Schlüssel liegt ausschließlich im Repository-Secret WIRKUNGSTICKER.
+          OPENAI_API_KEY: ${{ secrets.WIRKUNGSTICKER }}
+          WOEK_NEWS_MODEL: ${{ vars.WOEK_NEWS_MODEL || 'gpt-5.4-mini' }}
+          WOEK_NEWS_REASONING_EFFORT: ${{ vars.WOEK_NEWS_REASONING_EFFORT || 'medium' }}
+          # Bild-Uploads (Wirkungskarten) nutzen weiterhin den vorhandenen Release-Speicher.
           WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
-          WOEK_NEWS_VISUAL_API_URL: "https://130.162.217.58.sslip.io/api/news-title-image"
           GH_TOKEN: ${{ github.token }}
           WT_CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
-          # Isolated ephemeral runner, own escaped SVG, embedded assets only.
           WT_CHROME_NO_SANDBOX: "true"
-          # Eigene authentifizierte Nachrichten-Lane; öffentliche KI-Limits unverändert.
-          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: "12"
-          # Reserve eight of the 48 Oracle calls for the independent
-          # editorial/media gates and for a safe handover between runs.
-          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: "40"
-          # Technische Wiederholungen bleiben in der dauerhaften Stunden-Queue. So
-          # verbraucht ein 503 nicht mehrere der vier reservierten Worker-Slots.
+          # Durchsatz: bis zu 4 Meldungen je Viertelstundenlauf, höchstens 12 je Stunde.
+          WOEK_NEWS_MAX_AI_STORIES_PER_RUN: ${{ inputs.max_ai_stories || vars.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || '4' }}
+          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: ${{ vars.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || '12' }}
+          # Genau ein bezahlter Versuch je Eingabestand; erst neue Evidenz löst erneut aus.
+          WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT: "1"
           WOEK_NEWS_AI_ATTEMPTS_PER_STORY: "1"
-          # Längere Detailfassungen bleiben pro Anfrage unter dem Upstream-Zeitfenster.
           WOEK_NEWS_AI_BATCH_SIZE: "1"
-          WOEK_NEWS_AI_BATCH_DELAY_MS: "2500"
-          WOEK_NEWS_AI_TIMEOUT_MS: "120000"
-        run: npm run news:run
-      - name: Backfill explicitly requested title images
-        # Backfill is opt-in, never a second scheduler or a per-build credit spend.
-        if: env.WIRKUNGSTICKER_PROCESSING_MODE == 'api' && steps.slot.outputs.should_run == 'true' && (inputs.title_images_backfill == true || inputs.title_images_refresh_editorial == true)
-        env:
-          WOEK_NEWS_VISUAL_API_URL: "https://130.162.217.58.sslip.io/api/news-title-image"
-          WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
-          GH_TOKEN: ${{ github.token }}
-          WT_CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
-          WT_CHROME_NO_SANDBOX: "true"
-          TITLE_IMAGE_LIMIT: ${{ inputs.title_images_limit }}
-          TITLE_IMAGE_REFRESH: ${{ inputs.title_images_refresh_editorial }}
+          WOEK_NEWS_AI_BATCH_DELAY_MS: "1500"
+          WOEK_NEWS_AI_TIMEOUT_MS: "240000"
+          WOEK_NEWS_DRY_RUN: ${{ inputs.dry_run }}
         run: |
-          args=(--execute --limit="$TITLE_IMAGE_LIMIT")
-          if [ "$TITLE_IMAGE_REFRESH" = "true" ]; then args+=(--refresh-editorial); fi
-          npm run news:title-images:backfill -- "${args[@]}"
-      - name: Backfill selectively triggered media-impact checks
-        id: media_impact
-        if: env.WIRKUNGSTICKER_PROCESSING_MODE == 'api' && steps.slot.outputs.should_run == 'true' && (inputs.media_impact_backfill == true || vars.WOEK_NEWS_BATCH_ENABLED == 'true')
-        env:
-          # Uses the same dated authorization as the news worker.
-          WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
-          WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
-          WOEK_NEWS_BATCH_ENABLED: ${{ vars.WOEK_NEWS_BATCH_ENABLED || 'false' }}
-          MEDIA_IMPACT_LIMIT: ${{ inputs.media_impact_limit || 2 }}
-          MEDIA_IMPACT_EXPLICIT: ${{ inputs.media_impact_backfill || false }}
-        run: |
-          set +e
-          args=(--execute --limit="$MEDIA_IMPACT_LIMIT")
-          if [ "$MEDIA_IMPACT_EXPLICIT" != "true" ]; then args+=(--background-only); fi
-          npm run news:media-impact:backfill -- "${args[@]}"
-          status=$?
-          if [ "$status" -ne 0 ]; then echo "Hintergrund-Mediencheck zurückgestellt; aktuelle Nachrichten laufen weiter."; fi
-          if git diff --quiet -- data/news/stories.json; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-          exit 0
-      - name: Research and publish relevant WÖK analyses
-        id: editorial
-        if: env.WIRKUNGSTICKER_PROCESSING_MODE == 'api' && steps.slot.outputs.should_run == 'true'
-        env:
-          # Uses the same dated authorization as the news worker.
-          WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
-          WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
-          WOEK_NEWS_BATCH_ENABLED: ${{ vars.WOEK_NEWS_BATCH_ENABLED || 'false' }}
-          EDITORIAL_ANALYSIS_LIMIT: ${{ inputs.editorial_analysis_limit || 6 }}
-          EDITORIAL_ANALYSIS_BOOTSTRAP: ${{ inputs.editorial_analysis_bootstrap || false }}
-          EDITORIAL_REQUESTED_STORY_IDS: ${{ inputs.editorial_requested_story_ids }}
-        run: |
-          set +e
-          args=(--execute --background-only --limit="$EDITORIAL_ANALYSIS_LIMIT")
-          if [ "$EDITORIAL_ANALYSIS_BOOTSTRAP" = "true" ]; then args+=(--bootstrap); fi
-          if [ -n "$EDITORIAL_REQUESTED_STORY_IDS" ]; then args+=(--request="$EDITORIAL_REQUESTED_STORY_IDS"); fi
-          npm run news:editorial-analyses -- "${args[@]}"
-          status=$?
-          node -e 'const fs=require("node:fs"); const p="reports/wirkungsticker-editorial-analyses.json"; const r=fs.existsSync(p)?require("./"+p):{}; fs.appendFileSync(process.env.GITHUB_OUTPUT,"public_changed="+Boolean((r.editorial_analyses_published||0)+(r.editorial_analyses_updated||0))+"\n"); fs.appendFileSync(process.env.GITHUB_OUTPUT,"failed="+Boolean(r.failed?.length)+"\n");'
-          if [ "$status" -ne 0 ]; then echo "WÖK-Analyse zurückgestellt; Nachrichtenlauf und bestehende Veröffentlichungen laufen weiter."; fi
-          exit 0
+          if [ "$WOEK_NEWS_DRY_RUN" = "true" ]; then node scripts/news/run-api.mjs --dry-run; else node scripts/news/run-api.mjs; fi
       - name: Read public ticker outcome
         id: outcome
-        if: steps.slot.outputs.should_run == 'true'
+        if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
         run: node -e 'const fs=require("node:fs"); const report=require("./reports/wirkungsticker-latest-run.json"); fs.appendFileSync(process.env.GITHUB_OUTPUT, "public_changed=" + Boolean(report.public_changed) + "\n");'
       - name: Synchronize public survey pages from Oracle
         id: polls
-        if: steps.slot.outputs.should_run == 'true'
-        # A poll-API outage must not stop the existing news worker. On failure,
-        # keep the last public metadata snapshot; never publish drafts or votes.
+        if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
         continue-on-error: true
         run: npm run polls:sync
       - name: Build search index, taxonomy and validate output
-        if: steps.slot.outputs.should_run == 'true'
+        if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
         env:
           SOURCE_DATE_EPOCH: "1787270400"
         run: |
@@ -241,14 +122,14 @@ jobs:
           npm run news:validate
       - name: Commit one atomic update
         id: commit
-        if: steps.slot.outputs.should_run == 'true'
+        if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
         env:
           SLOT_NAME: ${{ steps.slot.outputs.slot }}
         run: |
           set -euo pipefail
           git config user.name "wirkungsticker-bot"
           git config user.email "wirkungsticker-bot@users.noreply.github.com"
-          git add -- data/news data/wirkungsticker/source-audit-2026-09-05.json news wirkungsticker reports/wirkungsticker-latest-run.json reports/wirkungsticker-source-integrity.json reports/wirkungsticker-source-portfolio.json reports/wirkungsticker-editorial-analyses.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/polls/public-catalog.json umfragen admin/umfragen
+          git add -- data/news data/wirkungsticker/source-audit-2026-09-05.json news wirkungsticker reports/wirkungsticker-latest-run.json reports/wirkungsticker-source-integrity.json reports/wirkungsticker-source-portfolio.json sitemap.xml assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json content/polls/public-catalog.json umfragen admin/umfragen
           if git diff --cached --quiet; then
             echo "Keine neue oder geänderte Wirkungsnachricht."
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -256,13 +137,12 @@ jobs:
           fi
           git commit -m "[wirkungsticker] ${SLOT_NAME} $(date -u +%Y-%m-%dT%H:%MZ)"
           node scripts/news/publish-git.mjs
-          # publish-git can rebase and rebuild; bind the release only AFTER its successful push.
           RELEASE_COMMIT="$(git rev-parse HEAD)"
           [[ "$RELEASE_COMMIT" =~ ^[0-9a-f]{40}$ ]] || { echo "Invalid published commit." >&2; exit 1; }
           echo "commit=$RELEASE_COMMIT" >> "$GITHUB_OUTPUT"
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Publish the committed ticker automatically
-        if: steps.commit.outputs.changed == 'true' && (steps.outcome.outputs.public_changed == 'true' || steps.polls.outputs.changed == 'true' || steps.media_impact.outputs.changed == 'true' || steps.editorial.outputs.public_changed == 'true')
+        if: steps.commit.outputs.changed == 'true' && (steps.outcome.outputs.public_changed == 'true' || steps.polls.outputs.changed == 'true')
         env:
           GH_TOKEN: ${{ github.token }}
           TICKER_COMMIT: ${{ steps.commit.outputs.commit }}
@@ -270,11 +150,8 @@ jobs:
           set -euo pipefail
           [[ "$TICKER_COMMIT" =~ ^[0-9a-f]{40}$ ]] || { echo "Missing exact published commit; refusing an unbound release." >&2; exit 1; }
           gh workflow run deploy.yml --ref main -f ticker_only=true -f "ticker_commit=$TICKER_COMMIT"
-      - name: Acknowledge durable bridge imports
-        if: steps.slot.outputs.should_run == 'true' && env.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge'
-        run: node scripts/news/bridge/finalize.mjs
       - name: Verify ticker run health
-        if: always() && steps.slot.outputs.should_run == 'true'
+        if: always() && steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
         run: npm run news:health -- --started-after="$WOEK_NEWS_EXPECTED_AFTER"
       - name: Preserve failed-run work and usage for recovery
         if: failure() && steps.slot.outputs.should_run == 'true'
@@ -289,11 +166,4 @@ jobs:
             data/news/state.json
             data/news/newsroom.json
             data/news/usage.json
-            data/news/editorial-analyses.json
             reports/wirkungsticker-latest-run.json
-            reports/wirkungsticker-editorial-analyses.json
-      - name: Release private bridge run lock
-        if: always() && steps.slot.outputs.bridge_acquired == 'true'
-        env:
-          BRIDGE_RUN_SUCCESS: ${{ job.status == 'success' }}
-        run: node scripts/news/bridge/remote.mjs --release
