@@ -1,6 +1,6 @@
 # Glossar der Wirkungsökonomie
 
-Stand: 2026-09-15T07:16:07.061Z
+Stand: 2026-09-15T07:24:11.881Z
 
 ## § 7 Bundeshaushaltsordnung (BHO)
 
