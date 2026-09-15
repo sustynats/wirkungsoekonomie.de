@@ -44,7 +44,8 @@ jobs:
       WOEK_EDITORIAL_REASONING_EFFORT: ${{ vars.WOEK_EDITORIAL_REASONING_EFFORT || 'medium' }}
       WOEK_EDITORIAL_MAX_JOBS_PER_RUN: ${{ inputs.max_jobs || vars.WOEK_EDITORIAL_MAX_JOBS_PER_RUN || '2' }}
       WOEK_EDITORIAL_MAX_JOBS_PER_DAY: ${{ vars.WOEK_EDITORIAL_MAX_JOBS_PER_DAY || '10' }}
-      WOEK_NEWS_RAW_OUTPUT_DIR: ${{ runner.temp }}/editorial-raw-output
+      # github.workspace ist auf Job-Ebene verfügbar; runner.temp nur in Schritten.
+      WOEK_NEWS_RAW_OUTPUT_DIR: ${{ github.workspace }}/.editorial-raw-output
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -70,4 +71,4 @@ jobs:
           name: editorial-raw-output-${{ github.run_id }}-${{ github.run_attempt }}
           retention-days: 3
           if-no-files-found: ignore
-          path: ${{ runner.temp }}/editorial-raw-output
+          path: ${{ github.workspace }}/.editorial-raw-output
