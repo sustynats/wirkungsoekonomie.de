@@ -1,10 +1,12 @@
-# Final retry: restore existing reviewed profiles; fail closed by holding any still-unreviewed fresh 2.1 publication instead of inventing scores.
+# Final retry after observing 17 unresolved fresh 2.1 publications: hold them without provider calls rather than invent values.
 name: Final reviewed Wirkungspotenzial recovery
 
 on:
   push:
     branches: [chatgpt/wirkungspotenzial-final-recovery-20260915]
-    paths: [.github/workflows/potential-final-recovery-20260915.yml]
+    paths:
+      - .github/workflows/potential-final-recovery-20260915.yml
+      - tools/recover_potential_final_20260915.py
 
 permissions:
   contents: write
