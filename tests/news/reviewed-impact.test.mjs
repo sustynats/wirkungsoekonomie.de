@@ -4,7 +4,7 @@ import { finalizeReviewedImpact } from '../../scripts/news/reviewed-impact.mjs';
 import { sha256 } from '../../scripts/news/lib.mjs';
 import { SEMANTIC_CHECKS } from '../../scripts/news/impact-publication.mjs';
 import { publicImpactAssessment } from '../../scripts/news/impact-release.mjs';
-import { syntheticPotentialAssessment } from './fixtures/impact21.mjs';
+import { syntheticPotentialAssessment, syntheticScopeReview } from './fixtures/impact21.mjs';
 
 const now = '2026-09-14T20:00:00Z';
 function fixture() {
@@ -15,7 +15,7 @@ function fixture() {
   const receipt = { kind: 'independent_agent_semantic_review', story_id: packet.story_id, review_packet_hash: sha256(JSON.stringify(packet)),
     author_actor: 'test-author', reviewer_actor: 'test-reviewer', reviewed_at: now,
     expected_content_hash: packet.expected_content_hash, expected_analysis_hash: packet.expected_analysis_hash,
-    review: { status: 'ready', checks: Object.fromEntries(SEMANTIC_CHECKS.map(key => [key, { status: 'pass', rationale: 'Explizite unabhängige synthetische Prüfentscheidung.' }])) } };
+    review: { status: 'ready', scope: syntheticScopeReview(assessment), checks: Object.fromEntries(SEMANTIC_CHECKS.map(key => [key, { status: 'pass', rationale: 'Explizite unabhängige synthetische Prüfentscheidung.' }])) } };
   return { record, packet, receipt };
 }
 test('separate reviewed correction releases all three profiles and preserves original history/date', () => {
@@ -46,6 +46,28 @@ test('blocked or incomplete independent checks never become public readiness', (
   assert.throws(() => finalizeReviewedImpact(record, packet, receipt, null, now), /REVIEW_FAILED/);
   delete receipt.review.checks.source_fidelity;
   assert.throws(() => finalizeReviewedImpact(record, packet, receipt, null, now), /REVIEW_FAILED/);
+});
+
+test('fresh manual release needs the same independent target and baseline witness as the worker', () => {
+  const {record,packet,receipt}=fixture();
+  delete receipt.review.scope;
+  assert.throws(()=>finalizeReviewedImpact(record,packet,receipt,null,now),/IMPACT_SCOPE_REQUIRED/);
+});
+
+test('a historical researched null cannot be freshly released even with every independent check marked pass', () => {
+  const { record, packet, receipt } = fixture();
+  packet.analysis.impact_assessment.dimensions.planet = {
+    path_status: 'insufficient_basis', direction: 'open', magnitude: null,
+    evidence: 'not_assessable', data_status: 'missing', temporal_status: 'ex_ante',
+    likelihood: 'unknown', dominance: 'none', primary_paths: [], secondary_paths: [], balance: null,
+    rationale: 'Die historische Prüfung hatte eine dokumentierte Wissenslücke hinterlassen.',
+    research_pass: 'second_pass', research_result: 'Historische Recherche abgeschlossen, ohne damals einen Pfad zu modellieren.',
+    reviewed_source_ids: ['official'],
+  };
+  record.analysis = structuredClone(packet.analysis);
+  record.impact_assessment = structuredClone(packet.analysis.impact_assessment);
+  record.content_hash = receipt.review_packet_hash = sha256(JSON.stringify(packet));
+  assert.throws(() => finalizeReviewedImpact(record, packet, receipt, null, now), /IMPACT_FRESH_MODELLED_DIMENSION_REQUIRED:planet/);
 });
 
 test('a changed record cannot borrow the unchanged reviewed packet or release an unreviewed assessment', () => {
