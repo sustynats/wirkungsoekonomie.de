@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { hash, bridgePath } from '../../scripts/news/bridge/contract.mjs';
-import { selectEditorialRequests, processEditorialRequest, runRedaktionsworker, WORKER_ACTOR } from '../../scripts/news/redaktionsworker.mjs';
+import { selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR } from '../../scripts/news/redaktionsworker.mjs';
 import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandidates } from '../../scripts/news/redaktions-kandidaten.mjs';
 
 const owner = '123456789012345678';
@@ -116,4 +116,60 @@ test('the worker workflow uses only contexts that GitHub allows at job level', a
   assert.match(yaml, /OPENAI_API_KEY: \$\{\{ secrets\.WIRKUNGSTICKER \}\}/);
   assert.match(yaml, /node scripts\/news\/redaktionsworker\.mjs/);
   assert.doesNotMatch(yaml, /contents: write/, 'the worker never commits');
+});
+
+test('the editorial call carries a bounded web search and a rejected request is not a paid attempt', async () => {
+  const bodies = [];
+  const answer = JSON.stringify({ preview: preview() });
+  const payload = { model: 'gpt-5.6-luna', usage: { input_tokens: 10000, output_tokens: 3000 }, output: [
+    { type: 'web_search_call', status: 'completed' }, { type: 'web_search_call', status: 'completed' },
+    { type: 'message', role: 'assistant', status: 'completed', content: [{ type: 'output_text', text: answer }] }] };
+  const request = { instructions: `Regel A.\n${NO_TOOLS_SENTENCE} URLs allein bedeuten nicht, dass eine Quelle gelesen wurde.\nRegel B.`, prompt: '{"assignment":{}}' };
+  const result = await draftEditorialOutput(request, { apiKey: 'test', model: 'gpt-5.6-luna', maxSearches: 4, fetchImpl: async (url, init) => { bodies.push(JSON.parse(init.body)); return { ok: true, status: 200, json: async () => payload }; } });
+  assert.deepEqual(bodies[0].tools, [{ type: 'web_search' }]); assert.equal(bodies[0].max_tool_calls, 4); assert.equal(bodies[0].store, false);
+  assert.ok(!bodies[0].instructions.includes(NO_TOOLS_SENTENCE)); assert.ok(bodies[0].instructions.includes('höchstens 4 Zugriffe')); assert.ok(bodies[0].instructions.includes('Regel B.'));
+  assert.equal(result.web_searches, 2); assert.equal(result.cost, Number((((10000 * 0.2) + (3000 * 1.2)) / 1e6 + 2 * WEB_SEARCH_USD_PER_CALL).toFixed(6)));
+  assert.equal(researchInstructions('ohne Satz', 5).startsWith('In diesem Aufruf steht'), true, 'a profile without the sentence still receives the rule');
+  const off = await draftEditorialOutput(request, { apiKey: 'test', model: 'gpt-5.6-luna', webSearch: false, fetchImpl: async (url, init) => { bodies.push(JSON.parse(init.body)); return { ok: true, status: 200, json: async () => payload }; } });
+  assert.equal('tools' in bodies[1], false); assert.equal(bodies[1].instructions, request.instructions); assert.equal(off.web_searches, 2);
+  for (const status of [400, 401, 422, 429]) {
+    const error = await draftEditorialOutput(request, { apiKey: 'test', fetchImpl: async () => ({ ok: false, status, json: async () => ({}) }) }).catch((e) => e);
+    assert.equal(error.providerNotCalled, true, `${status} produced nothing and is not paid`);
+  }
+  const server = await draftEditorialOutput(request, { apiKey: 'test', fetchImpl: async () => ({ ok: false, status: 500, json: async () => ({}) }) }).catch((e) => e);
+  assert.equal(server.providerNotCalled, false);
+});
+
+test('a claim left behind by a decommissioned worker is adopted after the stale window, a fresh one is respected', async () => {
+  for (const [age, expected] of [[8, 'output_delivered'], [1, 'claimed_elsewhere']]) {
+    const session = fakeSession([queuedJob()]);
+    const claimPath = bridgePath('10_CLAIMED', `${jobId}.input.json`);
+    session.files.set(claimPath, JSON.stringify(packetFor(jobId)));
+    const metadata = session.transport.metadata;
+    session.transport.metadata = async (p) => p === claimPath ? { name: p.split('/').at(-1), server_modified: new Date(Date.parse(now()) - age * 3600e3).toISOString() } : metadata(p);
+    let calls = 0;
+    const draft = async () => { calls++; return { output: { preview: preview() }, usage: { input_tokens: 5000, output_tokens: 2000 }, model: 'gpt-5.6-luna', cost: 0.003, answer: '{}', web_searches: 1 }; };
+    const result = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now });
+    assert.equal(result.status, expected, `claim age ${age}h`);
+    assert.equal(calls, expected === 'output_delivered' ? 1 : 0);
+    if (expected === 'output_delivered') {
+      assert.equal(session.observations.get(`github-claim:${jobId}.input.json`).state, 'claimed');
+      assert.ok(session.observations.get(`github-claim:${jobId}.input.json`).adopted_stale_claim_from);
+      assert.ok(session.files.has(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)));
+      assert.equal(JSON.parse(session.files.get(bridgePath('95_LOGS', `processor-github-${jobId}.json`))).web_searches, 1);
+    }
+  }
+});
+
+test('rows that cost no model call do not use up the paid slots of a run', async () => {
+  const delivered = 'wt_20260915T195800Z_' + 'a'.repeat(24), claimed = 'wt_20260915T195900Z_' + 'c'.repeat(24);
+  const session = fakeSession([queuedJob(delivered), queuedJob(claimed), queuedJob()]);
+  session.files.set(bridgePath('20_OUTPUT_READY', `${delivered}.output.json`), '{}');
+  session.files.set(bridgePath('10_CLAIMED', `${claimed}.input.json`), JSON.stringify(packetFor(claimed)));
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
+  const drafted = [];
+  const draft = async (request) => { drafted.push(request.job_id); return { output: { preview: preview() }, usage: { input_tokens: 5000, output_tokens: 2000 }, model: 'gpt-5.6-luna', cost: 0.003, answer: '{}' }; };
+  const report = await runRedaktionsworker({ session, knowledge, draft, now, env: {}, maxJobsPerRun: 1, maxJobsPerDay: 10 });
+  assert.deepEqual(report.results.map((r) => r.status), ['already_delivered', 'claimed_elsewhere', 'output_delivered']);
+  assert.deepEqual(drafted, [jobId]); assert.equal(report.paid_this_run, 1); assert.equal(report.paid_today, 1); assert.equal(report.selected, 3);
 });
