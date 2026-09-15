@@ -2,57 +2,41 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
-const workflows = ['wirkungsticker', 'wirkungsticker-discovery', 'ops-discord-monitor']
-  .map(name => ({ name, text: fs.readFileSync(new URL(`../../.github/workflows/${name}.yml`, import.meta.url), 'utf8') }));
+const read = name => fs.readFileSync(new URL(`../../.github/workflows/${name}.yml`, import.meta.url), 'utf8');
+const ticker = read('wirkungsticker'), discovery = read('wirkungsticker-discovery'), monitor = read('ops-discord-monitor');
 
-test('Oracle queue readers share one job-level resource guard without cancelling another lane', () => {
-  const workflowGroups = new Set();
-  for (const { name, text } of workflows) {
-    const outer = text.match(/^concurrency:\n((?:  [^\n]*\n)+)/m)?.[1];
-    assert.ok(outer, `${name}: keep trigger coalescing independent`);
-    workflowGroups.add(outer.match(/group: (.+)/)?.[1]);
-    const inner = text.match(/^    concurrency:\n((?:      [^\n]*\n)+)/m)?.[1];
-    assert.ok(inner, `${name}: missing shared resource guard`);
-    assert.match(inner, /group: .*wirkungsticker-oracle-bridge-access/);
-    assert.match(inner, /queue: max\n/, `${name}: another lane must not replace a waiting job`);
-    assert.match(inner, /cancel-in-progress: false\n/, `${name}: preserve in-flight writes`);
-  }
-  assert.equal(workflowGroups.size, workflows.length, 'separate lane trigger coalescing bounds duplicate clock runs');
+// Direktbetrieb seit 15.09.2026: der Nachrichtenworkflow ist eine gerade Linie
+// ohne Bridge-Phasen. Diese Invarianten schützen die Betriebsentscheidung.
+test('the ticker workflow is a single serialized lane without bridge phases or clock triggers', () => {
+  const outer = ticker.match(/^concurrency:\n((?:  [^\n]*\n)+)/m)?.[1];
+  assert.ok(outer, 'workflow-level concurrency required');
+  assert.match(outer, /group: wirkungsticker-main\n/);
+  assert.match(outer, /cancel-in-progress: false\n/, 'in-flight publications must finish');
+  assert.doesNotMatch(ticker, /WOEK_NEWS_BRIDGE_PHASE|dropbox_chatgpt_bridge|wirkungsticker-oracle-bridge-access|scripts\/news\/bridge\//);
+  assert.doesNotMatch(ticker, /codex\/wirkungsticker(?:-import)?-clock/, 'no push-triggered clock branches');
+  assert.match(ticker, /^  schedule:\n    - cron: "\*\/15 \* \* \* \*"\n/m, 'one regular cadence');
+  assert.match(ticker, /if: vars\.WIRKUNGSTICKER_PROCESSING_MODE == 'api' \|\| vars\.WIRKUNGSTICKER_PROCESSING_MODE == ''/);
 });
 
-test('the resource guard preserves independent discovery and publication lanes', () => {
-  assert.match(workflows[0].text, /WOEK_NEWS_BRIDGE_PHASE: import/);
-  assert.match(workflows[1].text, /WOEK_NEWS_BRIDGE_PHASE: discovery/);
-  assert.match(workflows[0].text, /WOEK_NEWS_BRIDGE_PUBLISH: \$\{\{ vars\.WOEK_NEWS_BRIDGE_PUBLISH \|\| 'false' \}\}/);
-  assert.doesNotMatch(workflows[1].text, /WOEK_NEWS_BRIDGE_PUBLISH:/);
-  assert.match(workflows[2].text, /Test monitor invariants/);
+test('exactly one paid attempt per input and the key only from the repository secret', () => {
+  assert.match(ticker, /OPENAI_API_KEY: \$\{\{ secrets\.WIRKUNGSTICKER \}\}/);
+  assert.match(ticker, /WOEK_NEWS_MAX_PAID_ATTEMPTS_PER_INPUT: "1"/);
+  assert.match(ticker, /WOEK_NEWS_AI_ATTEMPTS_PER_STORY: "1"/);
+  assert.match(ticker, /WOEK_NEWS_AI_BATCH_SIZE: "1"/);
+  assert.match(ticker, /WOEK_NEWS_MAX_SOURCE_AGE_HOURS: \$\{\{ vars\.WOEK_NEWS_MAX_SOURCE_AGE_HOURS \|\| '24' \}\}/, 'LIFO horizon explicit in production');
+  assert.match(ticker, /node scripts\/news\/run-api\.mjs/);
+  assert.doesNotMatch(ticker, /sk-[A-Za-z0-9_-]{20,}/);
+  assert.doesNotMatch(ticker, /news:editorial-analyses|news:media-impact:backfill/, 'no second paid lane inside the news run');
 });
 
-test('ignored clock triggers cannot evict an eligible pending import', () => {
-  const text = workflows[0].text;
-  const group = text.match(/^  group: >-\n([\s\S]+?)\n  cancel-in-progress:/m)?.[1].trim().replace(/^\$\{\{\s*|\s*\}\}$/g, '');
-  const condition = text.match(/^    if: >-\n([\s\S]+?)\n    runs-on:/m)?.[1].trim();
-  assert.ok(group && condition, 'exercise the deployed workflow expressions');
-  const evaluate = (expression, mode, event) => Function('vars', 'github', `return (${expression});`)(
-    { WIRKUNGSTICKER_PROCESSING_MODE: mode }, event);
-  const events = [
-    { name: 'manual', event_name: 'workflow_dispatch', event: {}, ref: 'refs/heads/main', bridge: true, api: true },
-    { name: 'import clock', event_name: 'push', event: {}, ref: 'refs/heads/codex/wirkungsticker-import-clock', bridge: true, api: false },
-    { name: 'discovery clock', event_name: 'push', event: {}, ref: 'refs/heads/codex/wirkungsticker-clock', bridge: false, api: true },
-    { name: 'five minute schedule', event_name: 'schedule', event: { schedule: '*/5 * * * *' }, ref: 'refs/heads/main', bridge: true, api: false },
-    { name: 'API schedule', event_name: 'schedule', event: { schedule: '7,22,37,52 * * * *' }, ref: 'refs/heads/main', bridge: false, api: true },
-  ];
-  for (const mode of ['dropbox_chatgpt_bridge', 'api', '']) {
-    for (const event of events) {
-      const eligible = mode === 'dropbox_chatgpt_bridge' ? event.bridge : event.api;
-      const label = `${mode || 'default'} / ${event.name}`;
-      assert.equal(evaluate(condition, mode, event), eligible, `${label}: preserve lane eligibility`);
-      assert.equal(evaluate(group, mode, event), eligible ? 'wirkungsticker-main' : 'wirkungsticker-inactive-trigger', label);
-    }
-  }
-  // Reproduce the incident: an import waits while discovery has the Oracle slot,
-  // then an ignored clock fires. GitHub can coalesce only within the same group.
-  const pending = evaluate(group, 'dropbox_chatgpt_bridge', events[1]);
-  assert.notEqual(evaluate(group, 'dropbox_chatgpt_bridge', events[2]), pending);
-  assert.equal(evaluate(group, 'dropbox_chatgpt_bridge', events[3]), pending);
+test('publication remains atomic: validate before commit, deploy only after a pushed commit', () => {
+  const validateAt = ticker.indexOf('npm run news:validate'), commitAt = ticker.indexOf('Commit one atomic update'), deployAt = ticker.indexOf('gh workflow run deploy.yml');
+  assert.ok(validateAt > 0 && commitAt > validateAt && deployAt > commitAt, 'validate → commit → deploy order');
+  assert.match(ticker, /steps\.commit\.outputs\.changed == 'true'/);
+  assert.match(ticker, /npm run news:health -- --started-after/);
+});
+
+test('legacy bridge lanes stay inactive unless the bridge mode is explicitly selected', () => {
+  assert.match(discovery, /if: vars\.WIRKUNGSTICKER_PROCESSING_MODE == 'dropbox_chatgpt_bridge'/);
+  assert.match(monitor, /Test monitor invariants/);
 });
