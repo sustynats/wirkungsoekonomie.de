@@ -810,6 +810,12 @@ function feedXml(items, updatedAt, atom = false) {
 }
 
 // The same displayed values as the cards; no internal review/health metadata.
+// Stored editorial titles may already carry their format label
+// ("Nachgesehen: …"); the feed must not repeat it.
+export function labelledTitle(analysis) {
+  const label = editorialLabel(analysis), title = String(analysis.title || '').trim();
+  return new RegExp(`^${label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*:`, 'i').test(title) ? title : `${label}: ${title}`;
+}
 export function publicImpactSummary(story) {
   if (!publicImpactAssessment(story)) return null;
   return Object.fromEntries(Object.entries(deriveImpactPresentation(story).dimensions).map(([key,d]) =>
@@ -819,7 +825,7 @@ export function publicImpactSummary(story) {
 function combinedFeedItems(stories, analyses) {
   return [
     ...stories.map((story) => ({ id: story.story_id, url: `${SITE}/wirkungsticker/${story.slug}/`, title: story.title, summary: story.analysis.summary, published_at: feedDate(story), updated_at: feedDate(story), late_delivery: isLateNewsDelivery(story), impact_profile:publicImpactSummary(story), tags: story.topic, type: "Wirkungsakte" })),
-    ...analyses.map((analysis) => ({ id: analysis.analysis_id, url: `${SITE}/wirkungsticker/analyse/${analysis.slug}/`, title: `${editorialLabel(analysis)}: ${analysis.title}`, summary: analysis.teaser, published_at: analysis.published_at, updated_at: analysis.updated_at, tags: [editorialLabel(analysis)], type: editorialLabel(analysis) })),
+    ...analyses.map((analysis) => ({ id: analysis.analysis_id, url: `${SITE}/wirkungsticker/analyse/${analysis.slug}/`, title: labelledTitle(analysis), summary: analysis.teaser, published_at: analysis.published_at, updated_at: analysis.updated_at, tags: [editorialLabel(analysis)], type: editorialLabel(analysis) })),
   ].sort((left, right) => Date.parse(right.updated_at || 0) - Date.parse(left.updated_at || 0));
 }
 
