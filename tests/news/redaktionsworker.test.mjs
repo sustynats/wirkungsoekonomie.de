@@ -107,3 +107,13 @@ test('Meinung-und-Analyse candidates become regular private requests bound to th
   assert.equal(second.proposed.length, 0, 'same story is never proposed twice');
   assert.equal((await proposeEditorialCandidates({ session: fakeSession([]), now: now(), env: {}, stories: [story], assess })).status, 'owner_unknown');
 });
+
+test('the worker workflow uses only contexts that GitHub allows at job level', async () => {
+  const fs = await import('node:fs');
+  const yaml = fs.readFileSync(new URL('../../.github/workflows/redaktionsworker.yml', import.meta.url), 'utf8');
+  const jobEnv = yaml.split('\n    env:\n')[1].split('\n    steps:')[0];
+  assert.doesNotMatch(jobEnv, /\$\{\{\s*runner\./, 'runner.* is a step-level context only');
+  assert.match(yaml, /OPENAI_API_KEY: \$\{\{ secrets\.WIRKUNGSTICKER \}\}/);
+  assert.match(yaml, /node scripts\/news\/redaktionsworker\.mjs/);
+  assert.doesNotMatch(yaml, /contents: write/, 'the worker never commits');
+});
