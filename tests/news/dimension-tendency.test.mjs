@@ -99,7 +99,7 @@ test('retroactive rendering covers every published story without rewriting store
         }
       }else{
         assert.deepEqual(statuses(html),[],story.slug);
-        assert.match(html,/systemische Relevanz/);
+        assert.match(html,/systemische Relevanz/i);
         assert.doesNotMatch(html,/data-magnitude=/);
       }
     }

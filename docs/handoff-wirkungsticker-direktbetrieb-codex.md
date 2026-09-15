@@ -46,7 +46,12 @@ Titelbildsystem, App-Ausspielung, Quellenregister, Budgetstufen.
    Variable inaktiv; Löschung nach einer Woche stabilem Betrieb.
 5. Offene PRs #771, #772, #774 sind durch diesen Umbau überholt (Bridge-Reparaturen).
 
-## Nicht Teil dieser Übergabe
+## Private Redaktion
 
-Meinung & Analyse, Nachgehört/Nachgesehen, Buch & Wirkung (private Redaktion auf Oracle).
-Dafür braucht es eine eigene Entscheidung, sobald die Nachrichtenlane stabil läuft.
+Freigegebene Fassungen aus `admin/redaktion` werden weiterhin übernommen
+(`scripts/news/import-approved-editorials.mjs`, Claim vor dem Build, Finalize nach dem Push).
+Offen und Oracle-seitig: die Entwurfserzeugung ohne ChatGPT. Der vorbereitete
+`bridge/run-api-processor.mjs` (OpenAI, gpt-5.6-luna, ein bezahlter Aufruf je Auftrag) ist dafür
+der vorgesehene Weg; Aktivierung über `api-processor-config.json` (`enabled`, `news_only=false`)
+und `WOEK_API_PROCESSOR_ENABLED=true` auf Oracle. Bitte mit Natalie abstimmen und nach
+Aktivierung die Belege im Redaktionsjournal prüfen.
