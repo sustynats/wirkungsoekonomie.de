@@ -30,8 +30,10 @@ REPORT = Path(os.environ['RUNNER_TEMP']) / 'potential-release-772.json'
 # article. They may advance while the already-reviewed public edition is being
 # recovered and therefore must be kept from current main.
 PRESERVE_LIVE_ON_CONFLICT = {'pending_update', 'ai_retry', 'queue_source_repartitions'}
-# A retrospective recovery must never rewrite the original forecast snapshot.
-ALWAYS_PRESERVE_LIVE = {'original_potential_assessment'}
+# A retrospective recovery must never rewrite the original forecast snapshot or
+# older duplicate/living-file decisions. The impact review does not re-author
+# either piece of lifecycle state.
+ALWAYS_PRESERVE_LIVE = {'original_potential_assessment', 'living_file'}
 
 
 def git(*args):
