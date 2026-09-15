@@ -11,7 +11,10 @@ const model = newsModel();
 try {
   const report = await runWirkungsticker({ dryRun, callAiImpl: (stories, options) => callOpenAiDirect(stories, { ...options, model }) });
   console.log(JSON.stringify({ ...report, transport: 'direct-single-call-1', configured_model: model }, null, 2));
-  if (report.ai_error) process.exitCode = 1;
+  // Ein gestörter Anbieter ist eine Betriebsmeldung des Health-Schritts, kein
+  // Grund, den Importstand zu verwerfen: Zustand wird gebaut und committet,
+  // betroffene Meldungen bleiben als AI_PROVIDER_UNAVAILABLE wiederholbar.
+  if (report.ai_error) console.error(JSON.stringify({ ai_error: report.ai_error, note: 'provider degraded; state committed, health step reports' }));
 } catch (error) {
   console.error(error);
   process.exitCode = 1;

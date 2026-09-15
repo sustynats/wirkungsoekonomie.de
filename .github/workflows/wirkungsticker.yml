@@ -102,7 +102,9 @@ jobs:
           WOEK_NEWS_AI_ATTEMPTS_PER_STORY: "1"
           WOEK_NEWS_AI_BATCH_SIZE: "1"
           WOEK_NEWS_AI_BATCH_DELAY_MS: "1500"
-          WOEK_NEWS_AI_TIMEOUT_MS: "240000"
+          # Lauf 6: zwei luna-Aufrufe liefen über 240 s. Sechs Minuten je Aufruf; die
+          # Ausgabe ist zusätzlich auf 24k Token begrenzt.
+          WOEK_NEWS_AI_TIMEOUT_MS: "360000"
           WOEK_NEWS_DRY_RUN: ${{ inputs.dry_run }}
         run: |
           if [ "$WOEK_NEWS_DRY_RUN" = "true" ]; then node scripts/news/run-api.mjs --dry-run; else node scripts/news/run-api.mjs; fi
