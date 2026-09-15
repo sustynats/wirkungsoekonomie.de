@@ -1,11 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS } from '../../scripts/news/openai-transport.mjs';
+import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId } from '../../scripts/news/openai-transport.mjs';
 import { releaseDeterministicImpact, deterministicGateIssues } from '../../scripts/news/impact-gate.mjs';
 import { paidAttemptsExhausted, AI_PROCESSING_VERSION, pendingRecord } from '../../scripts/news/run.mjs';
 import { validateAnalysis, sha256 } from '../../scripts/news/lib.mjs';
 import { publicImpactAssessment } from '../../scripts/news/impact-release.mjs';
-import { syntheticPotentialAssessment } from './fixtures/impact21.mjs';
+import { syntheticPotentialAssessment, syntheticPotentialPath } from './fixtures/impact21.mjs';
 import { retireBacklog } from '../../scripts/news/retire-backlog.mjs';
 import { queueReassessment, needsPotentialRepair } from '../../scripts/news/queue-reassessment.mjs';
 import { costFromUsage, modelRates } from '../../scripts/news/budget.mjs';
@@ -200,4 +200,77 @@ test('a queued potential reassessment survives a deferral hold of the published 
   assert.equal(held.pending_update.reason, 'AI_BUDGET_OR_BATCH_LIMIT');
   const plain = pendingRecord({ ...candidate, impact_reassessment: false, existing_story: { ...existing, pending_update: { detected_at: '2026-09-15T18:00:00Z' } } }, 'AI_BUDGET_OR_BATCH_LIMIT', '2026-09-16T00:00:00Z');
   assert.equal('impact_reassessment' in plain.pending_update, false, 'an ordinary update never gains the flag');
+test('abbreviated or invented source ids are mapped back to the supplied sources before the gate', () => {
+  const sources = [
+    { source_id: 'rbb24-nachrichten', publisher: 'rbb24', url: 'https://example.org/r', title: 'R', summary: 'R' },
+    { source_id: 'dlf-nachrichten', publisher: 'Deutschlandfunk', url: 'https://example.org/d', title: 'D', summary: 'D' },
+    { source_id: 'dlf-kultur', publisher: 'Deutschlandfunk Kultur', url: 'https://example.org/k', title: 'K', summary: 'K' },
+  ];
+  assert.equal(resolveSourceId('rbb24-nachrichten', sources), 'rbb24-nachrichten');
+  assert.equal(resolveSourceId('rbb24', sources), 'rbb24-nachrichten', 'unique prefix');
+  assert.equal(resolveSourceId('RBB24 Nachrichten', sources), 'rbb24-nachrichten', 'normalized spelling');
+  assert.equal(resolveSourceId('deutschlandfunk', sources), 'dlf-nachrichten', 'unique publisher name');
+  assert.equal(resolveSourceId('tagesschau-access', sources), null, 'a source that was never supplied is dropped');
+  assert.equal(resolveSourceId('dlf', sources), null, 'an ambiguous fragment never picks a source');
+  const story = { story_id: 'wt-1', sources, claims: [{ claim_id: 'c', claim: 'x', source_id: 'rbb24-nachrichten' }] };
+  const abbreviated = JSON.parse(JSON.stringify(syntheticPotentialAssessment()).replaceAll('"official"', '"rbb24"'));
+  abbreviated.dimensions.human.primary_paths[0].magnitude_factors.reach.source_ids.push('tagesschau-access');
+  const followups = () => [{ claim: 'x', source_id: 'rbb24', measurable_indicator: 'y' }];
+  const before = validateAnalysis({ story_id: 'wt-1', impact_assessment: structuredClone(abbreviated), followups: followups() }, story, { requireImpactAssessment: true });
+  assert.ok(before.includes('IMPACT_PATH_SOURCE_BINDING_REQUIRED:human') && before.includes('IMPACT_FACTOR_REQUIRED:reach:human') && before.includes('IMPACT_SOURCE_FUNCTION_INVALID'), before.join(','));
+  const analysis = normalizeAnalysisOutput({ story_id: 'wt-1', impact_assessment: abbreviated, followups: followups() }, story);
+  const after = validateAnalysis(analysis, story, { requireImpactAssessment: true });
+  assert.equal(after.some((e) => e.startsWith('IMPACT_') || e === 'FOLLOWUP_INVALID'), false, after.join(','));
+  assert.equal(analysis.followups[0].source_id, 'rbb24-nachrichten');
+  assert.deepEqual(analysis.impact_assessment.dimensions.human.primary_paths[0].magnitude_factors.reach.source_ids, ['rbb24-nachrichten']);
+  assert.deepEqual(analysis.impact_assessment.research_check.source_functions.map((s) => s.source_id), ['rbb24-nachrichten']);
+  assert.ok(analysis.transport_repairs.includes('human.paths[0].reach:tagesschau-access->dropped'));
+  assert.ok(analysis.transport_repairs.includes('followups[0]:rbb24->rbb24-nachrichten'));
+  const clean = normalizeAnalysisOutput({ story_id: 'wt-1', impact_assessment: syntheticPotentialAssessment() }, { story_id: 'wt-1', sources: [{ source_id: 'official' }] });
+  assert.equal('transport_repairs' in clean, false, 'correct ids leave no trace');
+  const unknownStory = normalizeAnalysisOutput({ story_id: 'wt-1', impact_assessment: JSON.parse(JSON.stringify(syntheticPotentialAssessment()).replaceAll('"official"', '"rbb24"')) }, null);
+  assert.deepEqual(unknownStory.impact_assessment.dimensions.human.primary_paths[0].source_ids, ['rbb24'], 'without supplied sources nothing is dropped');
+  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('"rbb24-nachrichten", nicht "rbb24"'));
+});
+
+test('side paths listed as primary move to secondary_paths and a missing data status becomes modelled', () => {
+  const assessment = syntheticPotentialAssessment();
+  const human = assessment.dimensions.human;
+  human.primary_paths.push(syntheticPotentialPath({ direction: 'negative', magnitude: 2, type: 'side_risk' }));
+  Object.assign(human, { direction: 'mixed', magnitude: 2, dominance: 'balanced' });
+  const planet = assessment.dimensions.planet;
+  planet.primary_paths = [syntheticPotentialPath({ direction: 'open', magnitude: 1, type: 'side_effect' })];
+  planet.data_status = 'missing';
+  const story = { story_id: 'wt-1', sources: [{ source_id: 'official', url: 'https://example.org/a', title: 'Q', summary: 'Q' }], claims: [{ claim_id: 'c', claim: 'x', source_id: 'official' }] };
+  const before = validateAnalysis({ story_id: 'wt-1', impact_assessment: structuredClone(assessment) }, story, { requireImpactAssessment: true });
+  assert.ok(before.includes('IMPACT_MAIN_SCOPE_REQUIRED:human') && before.includes('IMPACT_POTENTIAL_STATUS_INVALID:planet'), before.join(','));
+  const analysis = normalizeAnalysisOutput({ story_id: 'wt-1', impact_assessment: assessment }, story);
+  const after = validateAnalysis(analysis, story, { requireImpactAssessment: true });
+  assert.equal(after.some((e) => e.startsWith('IMPACT_')), false, after.join(','));
+  const h = analysis.impact_assessment.dimensions.human;
+  assert.equal(h.primary_paths.length, 1); assert.equal(h.secondary_paths[0].type, 'side_risk');
+  assert.equal(h.direction, 'positive'); assert.equal(h.magnitude, 3); assert.equal(h.dominance, 'dominant_positive');
+  const p = analysis.impact_assessment.dimensions.planet;
+  assert.equal(p.primary_paths[0].type, 'main_path'); assert.equal(p.data_status, 'modelled'); assert.equal(p.direction, 'open'); assert.equal(p.magnitude, 1);
+  assert.deepEqual(analysis.transport_repairs, ['human.primary_paths:side_risk->secondary_paths', 'planet.data_status:missing->modelled', 'planet.primary_paths:side_effect->main_path']);
+  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('side_effect und side_risk gehören in secondary_paths'));
+  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('source_summary: 100 bis 180 Wörter'));
+});
+
+test('fragments where paths belong are discarded, incomplete paths stay for the gate', () => {
+  const assessment = syntheticPotentialAssessment();
+  assessment.dimensions.human.secondary_paths = '],';
+  assessment.dimensions.planet.primary_paths.push({ label: 'nur Etikett, kein Mechanismus' }, 'text', null);
+  assessment.dimensions.democracy.secondary_paths = [{ direction: 'open' }, syntheticPotentialPath({ type: 'side_effect' })];
+  const story = { story_id: 'wt-1', sources: [{ source_id: 'official', url: 'https://example.org/a', title: 'Q', summary: 'Q' }], claims: [{ claim_id: 'c', claim: 'x', source_id: 'official' }] };
+  const analysis = normalizeAnalysisOutput({ story_id: 'wt-1', impact_assessment: assessment }, story);
+  const d = analysis.impact_assessment.dimensions;
+  assert.deepEqual(d.human.secondary_paths, []);
+  assert.equal(d.planet.primary_paths.length, 1); assert.equal(d.planet.secondary_paths.length, 1, 'a labelled path without mechanism or type is kept for the gate as side path, text and null are not');
+  assert.equal(d.democracy.secondary_paths.length, 1); assert.equal(d.democracy.secondary_paths[0].type, 'side_effect');
+  assert.deepEqual(analysis.transport_repairs, ['human.secondary_paths:1 fragment(s) discarded', 'planet.primary_paths:2 fragment(s) discarded', 'planet.primary_paths:untyped->secondary_paths', 'democracy.secondary_paths:1 fragment(s) discarded']);
+  const errors = validateAnalysis(analysis, story, { requireImpactAssessment: true });
+  assert.ok(errors.includes('IMPACT_POTENTIAL_SCOPE_REQUIRED:planet'), 'the incomplete planet path still fails the gate');
+  assert.equal(errors.some((e) => e.endsWith(':human') || e.endsWith(':democracy')), false, errors.join(','));
+  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('Datum der Berichterstattung wird nicht ergänzt'));
 });

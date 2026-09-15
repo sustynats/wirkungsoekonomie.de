@@ -58,11 +58,21 @@ Doppelläufe.
 - Kapazität: `WOEK_NEWS_MAX_AI_STORIES_PER_RUN` (Standard 4 je Viertelstunde),
   `WOEK_NEWS_MAX_AI_CALLS_PER_HOUR` (Standard 12). Monatsbudget und Stufen unverändert in
   `scripts/news/budget.mjs` (70 % / 85 % / 95 %).
-- Reasoning-Aufwand über `WOEK_NEWS_REASONING_EFFORT` (Standard `low`; `medium` verdoppelte im
-  ersten Live-Lauf die Ausgabe-Token ohne bessere Struktur). Jede bezahlte Antwort wird als
-  privates Laufartefakt `ai-raw-output-<run>` (3 Tage) gesichert, damit Gate-Fehler erklärbar sind.
-- Der Transport wandelt nur Typen (Zahlen-Strings → Zahlen, Boolean-Strings → Booleans) und
-  rechnet die Tragweite aus den gelieferten Faktoren nach; er ergänzt nie Inhalte.
+- Reasoning-Aufwand über `WOEK_NEWS_REASONING_EFFORT` (Standard seit 15.09. abends `medium`:
+  `gpt-5.6-luna` entgleiste bei `low` in zwei von vier Antworten im hinteren Teil, Planet und
+  Demokratie kamen als Fragmente; bei `gpt-5.4-mini` hatte `medium` nur die Ausgabe-Token
+  verdoppelt). Jede bezahlte Antwort wird als privates Laufartefakt `ai-raw-output-<run>`
+  (3 Tage) gesichert, damit Gate-Fehler erklärbar sind.
+- Der Transport ergänzt nie Inhalte. Er wandelt Typen (Zahlen-Strings → Zahlen, Boolean-Strings
+  → Booleans), rechnet die Tragweite aus den gelieferten Faktoren nach und repariert seit
+  15.09. abends deterministisch drei Etikettfehler, die sonst ganze Bindungsketten kippten
+  (Lauf 7: „rbb24“ statt `rbb24-nachrichten` ließ alle Faktoren als fehlend erscheinen):
+  Quellenkennungen werden auf die gelieferten `source_id` abgebildet (exakt, normalisiert,
+  eindeutiges Präfix, eindeutiger Verlagsname; nicht Zuordenbares wird verworfen, nie
+  ergänzt), Nebenpfade (`side_effect`, `side_risk`) wandern aus `primary_paths` nach
+  `secondary_paths`, `data_status: missing` einer modellierten Dimension wird `modelled`,
+  Textfragmente an Pfadstellen werden verworfen. Jede Reparatur steht im Analyseobjekt unter
+  `transport_repairs`. Ein unvollständiger Pfad bleibt unvollständig und fällt im Gate durch.
 - Betriebsmodell seit 15.09.2026 abends: `gpt-5.6-luna` (Variable `WOEK_NEWS_MODEL`, Entscheidung
   Natalie); September-Freigabe auf 100 EUR angehoben (`NEWS_AI_BUDGET_DIRECT_OPERATION`).
 - Modell über Repository-Variable `WOEK_NEWS_MODEL` (Code-Standard `gpt-5.4-mini`; zugelassen

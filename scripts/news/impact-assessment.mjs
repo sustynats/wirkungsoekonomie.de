@@ -37,7 +37,7 @@ const pathSchema = {
 export const IMPACT_DIMENSION_SCHEMA = {
   path_status: 'modelled', likelihood: Object.keys(LIKELIHOOD).join('|'), dominance: DOMINANCE.join('|'),
   direction: DIRECTIONS.join('|'), magnitude: '0..5; ohne begründete Modellierung HOLD vor Veröffentlichung', evidence: Object.keys(EVIDENCE).join('|'),
-  data_status: 'modelled|estimated|missing', research_pass: 'initial|second_pass', research_result: 'Rechercheergebnis / Wissensgrenze', reviewed_source_ids: ['geprüfte source_id'], temporal_status: 'ex_ante|ongoing',
+  data_status: 'modelled|estimated', research_pass: 'initial|second_pass', research_result: 'Rechercheergebnis / Wissensgrenze', reviewed_source_ids: ['geprüfte source_id'], temporal_status: 'ex_ante|ongoing',
   primary_paths: [{ $ref: '#/$defs/impact_path' }], secondary_paths: [{ $ref: '#/$defs/impact_path' }],
   rationale: 'Begründung von Potenzial oder offener Einordnung',
   balance: { comparable_material_paths: false, protection_boundary_decisive: false, rationale: 'Abwägung, bei mixed Pflicht; sonst Objekt null' },
