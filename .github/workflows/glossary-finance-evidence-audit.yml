@@ -1,0 +1,56 @@
+name: Glossary finance and evidence audit
+on:
+  push:
+    branches: [content/glossar-finanzierung-evidence-20260915]
+    paths: [.github/workflows/glossary-finance-evidence-audit.yml]
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect existing canonical terms without changing them
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, re
+          p=pathlib.Path('content/glossar/terms.json')
+          data=json.loads(p.read_text())
+          print('CANONICAL_TYPE',type(data).__name__)
+          if isinstance(data,dict):
+              print('KEYS',list(data.keys()))
+              seq=next((data[k] for k in ['entries','terms'] if isinstance(data.get(k),list)),None)
+              if seq is None: raise SystemExit('Unknown glossary structure')
+          else: seq=data
+          print('ENTRY_COUNT',len(seq))
+          def norm(x): return re.sub(r'[^a-z0-9äöüß]+',' ',str(x).lower()).strip()
+          targets=['Evidence','Evidenz','Evidence Base','evidenzbasiert','Evidence Grade','Evidence Gap','Evidence Lineage','Claim','Aussage','Metric','KPI','Data Owner','As-of Date','Mapping','Reuse','Response Desk','Managed Service','Impact','Wirkung','Wirkungspotenzial','Dependency','Abhängigkeit','Transmission Channel','Resilience','Resilienz','Mitigation','Risk','Risiko','Transition Risk','Physical Risk','Materiality','Wesentlichkeit','Finance Relevance','CapEx','OpEx','Cashflow','Liquidität','Debt','Fremdkapital','Equity','Eigenkapital','Refinanzierung','Covenant','DSCR','Bonität','Due Diligence','Assurance','Baseline','Proxy','Szenario','Lock-in','Single Source of Truth','Audit Trail']
+          inv=[]
+          for e in seq:
+              vals=[e.get('term',''),e.get('title',''),e.get('id',''),e.get('slug','')]
+              for k in ['aliases','synonyms','matchTerms']: vals+=e.get(k,[]) or []
+              for t in e.get('translations',[]) or []:
+                  vals+=list(t.values()) if isinstance(t,dict) else [t]
+              inv.append({'id':e.get('id'),'term':e.get('term',e.get('title')),'slug':e.get('slug'),'names':vals})
+          pathlib.Path('reports').mkdir(exist_ok=True)
+          pathlib.Path('reports/finance-evidence-inventory.json').write_text(json.dumps(inv,ensure_ascii=False,indent=2))
+          for t in targets:
+              hits=[e for e in inv if norm(t) in [norm(v) for v in e['names']]]
+              partial=[e for e in inv if any(norm(t) in norm(v) for v in e['names'])] if not hits else []
+              print(json.dumps({'requested':t,'exact':[e['id'] for e in hits],'near':[e['id'] for e in partial[:6]]},ensure_ascii=False))
+          print('SAMPLE',json.dumps(seq[0],ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: glossary-finance-evidence-source
+          retention-days: 3
+          path: |
+            content/glossar/terms.json
+            content/glossar/glossary-registry.ts
+            reports/finance-evidence-inventory.json
+            scripts/build-glossary.mjs
+            scripts/validate-glossary.mjs
+            scripts/validate-glossary-model.mjs
+            scripts/glossary/
+            package.json
