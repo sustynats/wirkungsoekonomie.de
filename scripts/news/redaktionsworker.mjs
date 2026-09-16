@@ -9,6 +9,7 @@
 import path from 'node:path';
 import { withoutProcessNotes } from './editorial-markdown.mjs';
 import { officialShowName } from './show-identity.mjs';
+import { EDITORIAL_HOUR_KEY, editorialDraftsInWindow, noteEditorialDraft, tickerStoriesInWindow, sharedHourlyRoom, configuredHourlyQuota } from './stundenkontingent.mjs';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
@@ -387,10 +388,23 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     const day = isoDay(now());
     const counter = (await store.observation(`github-editorial-day:${day}`)) || { day, paid: 0, cost_usd: 0 };
     if (counter.paid >= maxJobsPerDay) return { status: 'daily_limit', day, paid: counter.paid, results: [] };
+    // Ein Kontingent fuer alles, was bezahlt wird (Natalie am 16.09.: die
+    // Nachbesprechungen und Analysen sind Teil derselben Veroeffentlichung,
+    // „dann kommt dann ein Artikel jeweils weniger"). Automatisch erzeugt wird
+    // weiter beides; wartende Auftraege verfallen nicht, sie kommen im
+    // naechsten Lauf dran.
+    const quota = configuredHourlyQuota(env);
+    let hourUsage = (await store.observation(EDITORIAL_HOUR_KEY)) || { drafts: [] };
+    let tickerStories = 0;
+    try { tickerStories = tickerStoriesInWindow(JSON.parse(fs.readFileSync(path.join(root, 'data/news/usage.json'), 'utf8')), now()); }
+    catch { /* ohne Nutzungsdatei zaehlt nur die eigene Spur */ }
+    const hourlyRoom = sharedHourlyRoom({ configured: quota, tickerStories, editorialDrafts: editorialDraftsInWindow(hourUsage, now()) });
+    if (hourlyRoom <= 0) return { status: 'hourly_quota_reached', day, quota, ticker_stories_last_hour: tickerStories,
+      editorial_drafts_last_hour: editorialDraftsInWindow(hourUsage, now()), results: [] };
     const rows = await store.all();
     // Rows that turn out to be delivered, exhausted or freshly claimed elsewhere
     // cost no model call; they must not use up the paid slots of this run.
-    const budget = Math.min(maxJobsPerRun, maxJobsPerDay - counter.paid);
+    const budget = Math.min(maxJobsPerRun, maxJobsPerDay - counter.paid, hourlyRoom);
     const candidates = selectEditorialRequests(rows, { limit: Math.max(budget, 0) + 20 });
     // Hat Natalie nachgeliefert, trägt die Nachlieferung den ursprünglichen
     // Auftrag mit. Ein zweiter Entwurf ohne den Zusatz wäre eine veraltete
@@ -404,7 +418,13 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
       if (superseded.has(row.input.job_id)) { results.push({ job_id: row.input.job_id, status: 'superseded_by_supplement' }); continue; }
       const result = await processEditorialRequest(live, row, { knowledge: resolvedKnowledge, draft, now, fetchImpl });
       results.push(result);
-      if (PAID_STATUS.has(result.status)) { paid += 1; counter.paid += 1; counter.cost_usd = Number((counter.cost_usd + (result.cost_usd || 0)).toFixed(6)); await store.observe(`github-editorial-day:${day}`, counter); }
+      if (PAID_STATUS.has(result.status)) {
+        paid += 1; counter.paid += 1; counter.cost_usd = Number((counter.cost_usd + (result.cost_usd || 0)).toFixed(6));
+        await store.observe(`github-editorial-day:${day}`, counter);
+        // Der Vermerk macht den Platz fuer die Nachrichtenspur sichtbar.
+        hourUsage = noteEditorialDraft(hourUsage, now());
+        await store.observe(EDITORIAL_HOUR_KEY, hourUsage);
+      }
       if (result.status === 'provider_unavailable') break;
     }
     return { status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, superseded_by_supplement: [...superseded], paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, results };
