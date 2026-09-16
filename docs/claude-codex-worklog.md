@@ -305,3 +305,8 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 - **Was:** Erster Lauf mit Nachlieferung (00:07 UTC): vier Meldungen, sieben Aufrufe, eine veröffentlicht (Ukraine-Meldung nach drei vergeblichen Läufen, diesmal durch die deterministischen Reparaturen). Die drei Folgeaufrufe erzeugten je rund 9k Antwort-Token plus Reasoning und liefen in die 16k-Grenze: keine Endnachricht, bezahlt, keine Wirkung, und keine Rohkopie, weil nur Antworten mit Text gesichert wurden. Grenze auf 24k, Rohkopie auch ohne Endnachricht (Status, incomplete, Ausgabetypen).
 - **Geprüft:** `tests/news/direct-operation.test.mjs` 21/21.
+
+## 2026-09-16 - Claude: Quellenintegrität vor der Veröffentlichung, Audit nur bei neuen Findings hart
+
+- **Was:** Der Lauf 03:50 UTC scheiterte komplett am strikten Bestandsaudit (`held: 1`): kein Commit, kein Deploy, die Arbeit des Zyklus verworfen. Ursache: Der Kandidatencheck vergleicht die Quelle mit dem Feed-Titel, das Audit später mit der Modell-Überschrift und der eigenen Quellenzusammenfassung; die semantische Passung kann dadurch nach der KI-Fassung kippen. Jetzt prüft der Lauf die veröffentlichungsreife Fassung erneut (`publicationIntegrityIssues`) und hält genau diese Meldung (`SOURCE_INTEGRITY_OPEN:<code>`), statt dass das Audit hinterher alles verwirft. Das Audit unterscheidet zusätzlich neue von bekannten Findings (`newlyHeldStories`, Bezugspunkt ist der committete Bericht): `--strict` scheitert an einer Regression dieses Laufs, ein bereits öffentliches Altfinding wird dokumentiert (`known_findings_before`) und blockiert nicht jeden weiteren Zyklus; `--strict-all` bleibt für manuelle Audits.
+- **Geprüft:** `tests/news/source-integrity.test.mjs` (2 neu), Ticker-Tests.
