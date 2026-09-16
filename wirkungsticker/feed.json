@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-16T13:22:24.586Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-16T14:07:51.399Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -10,7 +10,7 @@
       "id": "https://wirkungsoekonomie.de/wirkungsticker/pcb-grenzwerte-uberschritten-nurnberger-kirche-wegen-schadstoffen-gesperrt-6ecd8e/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/pcb-grenzwerte-uberschritten-nurnberger-kirche-wegen-schadstoffen-gesperrt-6ecd8e/",
       "title": "Laut stern: Nürnberger Kirche wegen erhöhter PCB-Werte gesperrt",
-      "summary": "In einer Nürnberger Kirche wurden laut stern erhöhte PCB-Werte gemessen und die Kirche wegen Schadstoffen gesperrt. Ursache, Belastungshöhe und gesundheitliche Bedeutung bleiben in der vorliegenden Quelle offen.",
+      "summary": "Laut stern wurde eine Nürnberger Kirche nach erhöhten PCB-Messwerten wegen Schadstoffen gesperrt. Messhöhe, Ursache, Dauer und gesundheitliche Bedeutung bleiben offen.",
       "date_published": "2026-09-16T12:23:41.000Z",
       "date_modified": "2026-09-16T12:23:41.000Z",
       "tags": [
@@ -20,18 +20,18 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 2,
-          "direction": "positive",
+          "magnitude": 1,
+          "direction": "negative",
           "status": "potential"
         },
         "planet": {
           "magnitude": 1,
-          "direction": "open",
+          "direction": "negative",
           "status": "potential"
         },
         "democracy": {
           "magnitude": 1,
-          "direction": "open",
+          "direction": "negative",
           "status": "potential"
         }
       }
@@ -39,8 +39,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/auch-bahn-betroffen-bombenfund-bei-spergau-sperrkreis-eingerichtet-49e539/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/auch-bahn-betroffen-bombenfund-bei-spergau-sperrkreis-eingerichtet-49e539/",
-      "title": "Laut stern: Bombe bei Spergau erfolgreich entschärft",
-      "summary": "Bei Spergau wurde laut stern ein Sperrkreis für die Entschärfung einer Fliegerbombe eingerichtet. Beschäftigte wurden vorsorglich evakuiert; später meldete der stern eine erfolgreiche Entschärfung und aufgehobene Sperrungen.",
+      "title": "Laut stern: Bombe bei Spergau erfolgreich entschärft, Sperrungen aufgehoben",
+      "summary": "Bei Spergau wurde laut stern eine Fliegerbombe erfolgreich entschärft; zuvor waren ein Sperrkreis und vorsorgliche Evakuierungen eingerichtet worden. Angaben zu Schäden und Bahnfolgen bleiben offen.",
       "date_published": "2026-09-16T12:19:22.000Z",
       "date_modified": "2026-09-16T12:19:22.000Z",
       "tags": [
@@ -50,7 +50,7 @@
       "_woek_late_delivery": true,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 2,
+          "magnitude": 1,
           "direction": "positive",
           "status": "potential"
         },
@@ -1086,8 +1086,8 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/esa-gefahr-fur-menschen-durch-absturzenden-weltraumschrott-steigt-schnell-an-40c10f/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/esa-gefahr-fur-menschen-durch-absturzenden-weltraumschrott-steigt-schnell-an-40c10f/",
-      "title": "ESA warnt vor wachsenden Risiken durch mehr Satelliten und Weltraumschrott",
-      "summary": "Die Zahl der Satelliten wächst, während die ESA vor den Folgen von Weltraumschrott warnt. Belegt ist damit ein neues Risiko-Signal, nicht aber ein bereits eingetretener Personenschaden oder dessen genaue Größe.",
+      "title": "Laut ESA steigt das Risiko durch Weltraumschrott",
+      "summary": "Die Satellitenzahl wächst, und laut ESA steigt damit das Risiko durch Weltraumschrott. Konkrete Schäden oder Eintrittswahrscheinlichkeiten sind im vorliegenden Beleg nicht ausgewiesen.",
       "date_published": "2026-09-14T12:15:00.000Z",
       "date_modified": "2026-09-14T12:15:00.000Z",
       "tags": [
@@ -1095,7 +1095,23 @@
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": true,
-      "_woek_impact_profile": null
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/kunstliche-intelligenz-warnungen-schicken-aktien-von-siemens-energy-hochtief-und-softban-bd0fa9/",
