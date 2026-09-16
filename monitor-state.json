@@ -12,13 +12,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-09-15T21:50:42.565Z",
       "active": true
-    },
-    "delivery-deploy.yml": {
-      "firstSeen": "2026-09-16T05:35:42.786Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "fbc711289722e54cd0c1b164",
+      "content": "✓ WÖk-Störung behoben\nWebsite-Auslieferung\nPrüfung: 2026-09-16T05:50:32.348Z"
+    }
+  ],
   "dailyDate": "2026-09-15",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1122,10 +1123,14 @@
       "https://wirkungsoekonomie.de/wirkungsticker/trump-kundigt-schliessung-des-kennedy-centers-an-3832c1/": {
         "first_seen_at": "2026-09-16T04:50:45.830Z",
         "source_at": "2026-09-15T19:51:15.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/nach-niederlage-im-briefwahl-streit-trump-kritisiert-oberstes-us-gericht-scharf-b71b37/": {
+        "first_seen_at": "2026-09-16T05:50:32.348Z",
+        "source_at": "2026-09-16T04:03:28.000Z"
       }
     },
-    "last_new_at": "2026-09-16T04:50:45.830Z",
-    "checked_at": "2026-09-16T05:35:42.786Z",
-    "last_current_new_at": "2026-09-16T04:50:45.830Z"
+    "last_new_at": "2026-09-16T05:50:32.348Z",
+    "checked_at": "2026-09-16T05:50:32.348Z",
+    "last_current_new_at": "2026-09-16T05:50:32.348Z"
   }
 }
