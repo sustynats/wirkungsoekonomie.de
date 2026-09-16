@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { fileURLToPath } from 'node:url';
 import { bridgePath, JOB_ID } from '../../scripts/news/bridge/contract.mjs';
 import { parseEpisodes, selectNewEpisodes, buildEpisodeRequest, knownEpisodeUrls, pickTranscript, fetchTranscript, proposeEpisodeCandidates, durationSeconds, EPISODE_VERSION, mediathekEpisodes, mediathekQueryBody, episodeKey, loadShows } from '../../scripts/news/sendungs-kandidaten.mjs';
 import { parseSubtitleTrack, subtitleSeconds, fetchSubtitleTranscript, buildTranscriptText, timecode, audioSourceFor } from '../../scripts/news/sendungs-transkript.mjs';
@@ -136,7 +137,8 @@ test('die Mediathek-Abfrage führt Barrierefreiheitsfassungen zusammen und wähl
   const body = JSON.parse(mediathekQueryBody(illner));
   assert.deepEqual(body.queries, [{ fields: ['title'], query: 'maybrit illner' }, { fields: ['channel'], query: 'ZDF' }]);
   assert.equal(body.future, false); assert.equal(body.sortBy, 'timestamp');
-  assert.ok(loadShows('/Users/hagen/Documents/woek-ticker-main').every((show) => show.mediathek || /^https:\/\//.test(show.feed)), 'jede Sendung hat eine Quelle');
+  const root = fileURLToPath(new URL('../../', import.meta.url));
+  assert.ok(loadShows(root).every((show) => show.mediathek || /^https:\/\//.test(show.feed)), 'jede Sendung hat eine Quelle');
 });
 
 test('amtliche Untertitel werden als Wortlaut mit Zeitmarken gelesen, in EBU-TT, VTT und SRT', async () => {
