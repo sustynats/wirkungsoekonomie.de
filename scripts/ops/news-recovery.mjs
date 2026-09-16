@@ -2,7 +2,19 @@ import { createHash } from 'node:crypto';
 
 const MINUTE = 60_000;
 const elapsed = (date, now) => (Date.parse(now) - Date.parse(date)) / MINUTE;
-export const RECOVERY_WORKFLOWS = ['wirkungsticker.yml', 'deploy.yml'];
+// Der Redaktionslauf gehört dazu: Er trägt Meinung & Analyse, Nachgehört und
+// Nachgesehen. Fällt er aus, merkt es niemand, weil die Nachrichtenspur
+// weiterläuft - und in der App erscheint nichts zur Freigabe (16.09.).
+export const RECOVERY_WORKFLOWS = ['wirkungsticker.yml', 'deploy.yml', 'redaktionsworker.yml'];
+export const WORKFLOW_LABELS = { 'wirkungsticker.yml': 'Nachrichtenimport', 'deploy.yml': 'Website-Auslieferung', 'redaktionsworker.yml': 'Redaktionslauf' };
+// Ein Lauf, dessen letzter abgeschlossener Versuch gescheitert ist und bei dem
+// gerade nichts läuft, ist ein Hänger, den ein erneuter Anlauf beheben kann.
+export function workflowFailed(runs = [], now) {
+  const latest = [...runs].filter((run) => run.status === 'completed' && !['cancelled', 'skipped', 'neutral'].includes(run.conclusion))
+    .sort((a, b) => Date.parse(b.created_at) - Date.parse(a.created_at))[0];
+  const stuck = runs.some((run) => run.status !== 'completed' && elapsed(run.created_at, now) > 65);
+  return Boolean(stuck || (latest && ['failure', 'timed_out', 'action_required'].includes(latest.conclusion)));
+}
 const active = runs => runs.some(run => run.status !== 'completed');
 
 // Source dates control reader ordering. First visibility is measured separately;
@@ -47,7 +59,7 @@ export function workflowChecks(snapshot, now) {
       .sort((a, b) => Date.parse(b.created_at) - Date.parse(a.created_at))[0];
     const stuck = runs.some(run => run.status !== 'completed' && elapsed(run.created_at, now) > 65);
     const failed = latest?.status === 'completed' && ['failure', 'timed_out', 'action_required'].includes(latest.conclusion);
-    return { id: `delivery-${workflow}`, name: workflow === 'deploy.yml' ? 'Website-Auslieferung' : 'Nachrichtenimport',
+    return { id: `delivery-${workflow}`, name: WORKFLOW_LABELS[workflow] || workflow,
       ok: !stuck && !failed, immediate: Boolean(failed),
       reason: stuck ? 'Ein Auslieferungslauf wartet oder arbeitet seit über 65 Minuten.'
         : failed ? 'Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.'
@@ -67,6 +79,11 @@ export function planRecovery({ head, snapshot, pendingPublication, bridge, bridg
     ['wirkungsticker.yml', bridgeMode && bridge?.reachable === true
       && elapsed(bridge.poll_at, now) >= 0 && elapsed(bridge.poll_at, now) <= 15
       && Number(bridge.output_wait_minutes) > 10],
+    // Ein gescheiterter oder überfälliger Lauf bekommt genau einen erneuten
+    // Anlauf je Quellstand. Hilft er nicht, bleibt es dabei: die Ursache liegt
+    // dann im Code und gehört in einen PR, nicht in eine Wiederholungsschleife.
+    ['redaktionsworker.yml', workflowFailed(snapshot['redaktionsworker.yml'], now)],
+    ['wirkungsticker.yml', workflowFailed(snapshot['wirkungsticker.yml'], now)],
   ];
   for (const [workflow, needed] of needs) {
     if (!needed || active(snapshot[workflow])) continue;
@@ -91,7 +108,7 @@ export async function recoverDelivery({ state, actions, save, refresh, dispatch 
     try {
       await dispatch(action.workflow, action.workflow === 'wirkungsticker.yml'
         ? { ref: 'main', inputs: { bridge_phase: 'import', request_id: `recovery-${action.key.slice(0, 16)}` } }
-        : { ref: 'main' }); // Full normal deployment; every release gate remains.
+        : { ref: 'main' }); // Full normal run; every gate and every cap remains.
       attempt.status = 'dispatched';
     } catch {
       attempt.status = 'dispatch_uncertain';
