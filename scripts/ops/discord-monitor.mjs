@@ -186,9 +186,20 @@ export function evaluateChecks(data, now) {
   checks.push({ id: 'publication-flow', name: 'Fortschritt der Nachrichtenverarbeitung', ok: !flow.stalled, reason: flow.stalled
     ? `${flow.observed_runs} gespeicherte Läufe über mindestens zwei Stunden ohne Veröffentlichung, Aktualisierung oder abgeschlossene Warteschlangenprüfung; ${flow.capacity} Kandidaten warten auf Verarbeitung. Budget- und Auswahlsteuerung prüfen; dies belegt keinen Anbieterausfall.`
     : 'Kein belegter Stillstand einer wartenden Nachrichtenverarbeitung.', immediate: false });
-  const imageErrors = new Set(['HIGGSFIELD_RETRY_EXHAUSTED', 'HIGGSFIELD_AUTH_UNAVAILABLE', 'HIGGSFIELD_NOT_CONFIGURED', 'HIGGSFIELD_PROVIDER_UNAVAILABLE']);
-  const failedImages = data.stories.filter(s => s.published && s.listed !== false && imageErrors.has(s.title_image?.refresh_failure || s.title_image?.fallback_reason)).length;
-  checks.push({ id: 'images', name: 'Titelbilder', ok: failedImages === 0, reason: `${failedImages} ${failedImages === 1 ? 'Symbolbild' : 'Symbolbilder'} mit technischem Fehler; vorhandene Bilder oder Wirkungskarten bleiben sichtbar. Nachrichten werden dadurch nicht zurückgehalten.`, immediate: false });
+  // Natalies Entscheidung (15.09.): kein generisches KI-Titelfoto, sondern
+  // Wirkungskarte oder gekennzeichnetes Editorial-Motiv, und nie blockierend.
+  // Seither war ein nicht eingerichteter Bildanbieter der gewollte Zustand, die
+  // Prüfung meldete ihn aber als technischen Fehler (16.09.: vier
+  // veröffentlichte Meldungen rot, alle vier mit vollständiger Karte). Gemessen
+  // wird jetzt, was die Leserin sieht: hat eine veröffentlichte Meldung ein
+  // nutzbares Titelbild? Der Anbieterhinweis bleibt als Beifang im Text.
+  const usableTitleImage = (story) => Boolean(story?.title_image?.og?.url && story.title_image?.square?.url);
+  const livePublished = data.stories.filter((s) => s.published && s.listed !== false);
+  const missingImages = livePublished.filter((s) => !usableTitleImage(s)).length;
+  const providerFallbacks = livePublished.filter((s) => usableTitleImage(s)
+    && /^HIGGSFIELD_/.test(s.title_image?.refresh_failure || s.title_image?.fallback_reason || '')).length;
+  checks.push({ id: 'images', name: 'Titelbilder', ok: missingImages === 0, immediate: false,
+    reason: `${missingImages} veröffentlichte Meldung(en) ohne nutzbares Titelbild; ${providerFallbacks} mit Kartenfallback nach Anbieterhinweis (das ist der gewollte Zustand).` });
   checks.push({ id: 'sources', name: 'Quellenabruf', ok: !sourceCoverageDegraded(data.report), reason: `${summary.sourceFailures} fehlgeschlagene Quellenabrufe im letzten Lauf.`, immediate: false });
   const gaps = (summary.coverageAudit?.alerts || []).filter(item => item.severity === 'warning' && /CATEGORY_COVERAGE_GAP|BREAKING_PUBLICATION_GAP/.test(item.code));
   const freshCoverage = age(summary.coverageAudit?.checked_at, now) >= 0 && age(summary.coverageAudit?.checked_at, now) <= 45;
