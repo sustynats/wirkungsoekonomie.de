@@ -631,6 +631,16 @@ test('der Auftrag nennt genau eine Zielspanne je Meldung, damit ein Aufruf reich
   assert.equal(storyBriefing({ existing_story: { published: true }, impact_reassessment: true }), '');
   assert.equal(storyBriefing({}), '');
   assert.equal(storyBriefing(null), '');
+  // Vorgabe und nachträgliche Korrektur teilen dieselbe Ableitung.
+  const { requiredPublicationDepth, repairPublicationDepth } = await import('../../scripts/news/openai-transport.mjs');
+  for (const story of [{ existing_story: { published: false } }, { existing_story: { published: true } }]) {
+    const depth = requiredPublicationDepth(story);
+    assert.ok(storyBriefing(story).includes(`publication_depth: ${depth}.`));
+    const answer = { publication_depth: depth === 'initial' ? 'deepened' : 'initial' };
+    repairPublicationDepth(answer, story, []);
+    assert.equal(answer.publication_depth, depth);
+  }
+  assert.equal(requiredPublicationDepth({ existing_story: { published: true }, impact_reassessment: true }), null);
 
   // Beim einzelnen Aufruf steht die Vorgabe in der Anweisung, nicht im Meldungsteil.
   const bodies = [];

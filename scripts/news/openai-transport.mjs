@@ -63,12 +63,13 @@ export const SINGLE_CALL_INSTRUCTIONS = [
 // den Aktenstand, also nennt er genau eine Zielspanne, komfortabel innerhalb
 // der Prüfgrenzen, und sagt, wie Zahlen belegt sein müssen.
 export function storyBriefing(story) {
-  if (!story || typeof story !== 'object' || story.impact_reassessment) return '';
-  const published = story.existing_story?.published;
-  if (typeof published !== 'boolean') return '';
-  const deepened = published === true;
+  // Dieselbe Ableitung, die die Antwort später korrigiert: Vorgabe und Prüfung
+  // dürfen nicht auseinanderlaufen.
+  const depth = requiredPublicationDepth(story);
+  if (!depth) return '';
+  const deepened = depth === 'deepened';
   return ['VORGABEN FÜR DIESE MELDUNG (nicht zu wählen, sie folgen dem Aktenstand):',
-    `publication_depth: ${deepened ? 'deepened' : 'initial'}.`,
+    `publication_depth: ${depth}.`,
     deepened
       ? 'source_summary: 120 bis 170 Wörter in genau drei Absätzen (Leerzeile zwischen den Absätzen).'
       : 'source_summary: 90 bis 160 Wörter in genau drei Absätzen (Leerzeile zwischen den Absätzen).',
@@ -308,12 +309,16 @@ export function repairHeadlineAttribution(analysis, repairs = []) {
 // 100 bis 180), also entscheidet sie über Annahme oder Halt. 16.09.: drei
 // Meldungen wurden gehalten, weil das Modell „deepened" wählte und dann
 // initial-lange Texte schrieb. Eine Neubewertung behält ihre bisherige Tiefe.
-export function repairPublicationDepth(analysis, story, repairs = []) {
-  if (!analysis || typeof analysis !== 'object' || !story || story.impact_reassessment) return analysis;
+export function requiredPublicationDepth(story) {
+  if (!story || typeof story !== 'object' || story.impact_reassessment) return null;
   const published = story.existing_story?.published;
-  if (typeof published !== 'boolean') return analysis;
-  const required = published ? 'deepened' : 'initial';
-  if (analysis.publication_depth === required) return analysis;
+  return typeof published === 'boolean' ? (published ? 'deepened' : 'initial') : null;
+}
+
+export function repairPublicationDepth(analysis, story, repairs = []) {
+  if (!analysis || typeof analysis !== 'object') return analysis;
+  const required = requiredPublicationDepth(story);
+  if (!required || analysis.publication_depth === required) return analysis;
   repairs.push(`publication_depth:${analysis.publication_depth ?? 'fehlt'}->${required}`);
   analysis.publication_depth = required;
   return analysis;
