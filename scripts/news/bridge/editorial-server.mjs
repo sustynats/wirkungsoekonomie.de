@@ -12,6 +12,7 @@ import {EditorialIntake} from './intake.mjs';
 import {EditorialApproval} from './editorial-approval.mjs';
 import {createEditorialIntakeHandler,existingAdminAuthorizer} from './intake-http.mjs';
 import {EDITORIAL_REQUEST_CONTRACT,EDITORIAL_REQUEST_CONTRACT_V4,importEditorialPreviews} from './intake-processing.mjs';
+import {OPS_STATUS_KEY} from '../../ops/betriebsstatus.mjs';
 
 const directory=process.env.WOEK_NEWS_BRIDGE_DIRECTORY,owner=process.env.WOEK_EDITORIAL_OWNER_DISCORD_ID;
 if(!path.isAbsolute(directory||'')||!/^\d{15,22}$/.test(owner||''))throw Error('EDITORIAL_PRIVATE_CONFIGURATION_REQUIRED');
@@ -23,7 +24,10 @@ const intakeStore=new BridgeStore(db,{lane:'intake'});
 const transport=new DropboxTransport({credentials:loadDropboxCredentials(path.join(directory,'dropbox.json'),process.cwd())});
 const approval=new EditorialApproval(store.db),intake=new EditorialIntake({store:intakeStore,deliveryStore:store,transport,directory:path.join(directory,'editorial-uploads')});
 const admin=existingAdminAuthorizer();
-const handler=createEditorialIntakeHandler({intake,approval,authorize:async req=>(await admin(req))===owner?owner:null});
+// Der Betriebsbefund des Monitors liegt als Vermerk in derselben Ablage; die
+// Redaktions-App liest ihn ueber ihr eigenes, angemeldetes Konto.
+const handler=createEditorialIntakeHandler({intake,approval,authorize:async req=>(await admin(req))===owner?owner:null,
+  readStatus:()=>{try{return store.observation(OPS_STATUS_KEY);}catch{return null;}}});
 await transport.writeAtomic(bridgePath('98_CONFIG','editorial-request-contract-3.json'),EDITORIAL_REQUEST_CONTRACT);
 await transport.writeAtomic(bridgePath('98_CONFIG','editorial-request-contract-4.json'),EDITORIAL_REQUEST_CONTRACT_V4);
 const notificationFile=path.join(directory,'editorial-discord.json');
