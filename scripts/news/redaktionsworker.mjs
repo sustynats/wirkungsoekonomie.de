@@ -47,7 +47,15 @@ export function selectEditorialRequests(rows, { limit = 2, excluded = new Set() 
 // the sources named in the request; the profile sentence is swapped for the
 // tool rule, everything else in the contract stays untouched.
 export const NO_TOOLS_SENTENCE = 'Du hast in diesem Aufruf keine Browser-, Such-, Bild- oder Dateitools. Verwende als Tatsachenbelege nur tatsächlich mitgelieferte Textauszüge.';
-export const webSearchRule = (maxSearches) => `In diesem Aufruf steht ausschließlich ein begrenztes Web-Suchtool zur Verfügung (höchstens ${maxSearches} Zugriffe). Nutze es zuerst, um die im Auftrag verlinkten Quellen tatsächlich zu lesen, danach nur für konkret fehlende tragende Tatsachen. Als Tatsachenbelege gelten mitgelieferte Textauszüge (unter origin.source_excerpts liegen die tatsächlich abgerufenen Texte der verlinkten Quellen, unter origin.transcript ein offizielles Transkript) und tatsächlich über das Tool gelesene Belege; jede gelesene Quelle mit URL in sources nennen. Keine Bezahlschranke umgehen, keine Bilder oder Dateien erzeugen. Die Antwort ist genau ein JSON-Objekt als reiner Text: kein Markdown-Zaun, kein Kommentar davor oder danach.`;
+export const webSearchRule = (maxSearches) => [
+  `In diesem Aufruf steht ausschließlich ein begrenztes Web-Suchtool zur Verfügung (höchstens ${maxSearches} Zugriffe).`,
+  'Als Tatsachenbelege gelten mitgelieferte Textauszüge (unter origin.source_excerpts liegen die tatsächlich abgerufenen Texte der verlinkten Quellen, unter origin.transcript ein offizielles Transkript) und tatsächlich über das Tool gelesene Belege; jede gelesene Quelle mit URL in sources nennen.',
+  // The first run with excerpts (04:50 UTC on 16.09.) held for missing
+  // mechanism sources without using the tool once. Searching is the cheaper
+  // and more useful step than returning the request unanswered.
+  `Fehlen Dir tragende Tatsachen oder Mechanismusbelege für die verlangte Einordnung, dann suche genau danach, bevor Du einen HOLD ausgibst. Ein HOLD wegen fehlender Belege ist nur zulässig, nachdem Du das Suchwerkzeug dafür genutzt hast und es keine belastbaren Quellen ergeben hat; nenne dann in hold.reason die durchgeführten Suchen. Ohne Suchbedarf ist kein Zugriff nötig.`,
+  'Keine Bezahlschranke umgehen, keine Bilder oder Dateien erzeugen. Die Antwort ist genau ein JSON-Objekt als reiner Text: kein Markdown-Zaun, kein Kommentar davor oder danach.',
+].join(' ');
 export function researchInstructions(instructions, maxSearches) {
   const rule = webSearchRule(maxSearches);
   return instructions.includes(NO_TOOLS_SENTENCE) ? instructions.replace(NO_TOOLS_SENTENCE, rule) : `${rule}\n${instructions}`;
