@@ -103,9 +103,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           WT_CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
           WT_CHROME_NO_SANDBOX: "true"
-          # Durchsatz: bis zu 4 Meldungen je Viertelstundenlauf, höchstens 12 je Stunde.
+          # Durchsatz: Natalie am 16.09. „vier der relevantesten Meldungen pro
+          # Stunde". Die Stundengrenze zählt Meldungen, nicht Aufrufe; das Geld
+          # begrenzt zusätzlich die Taktung aus der Monatsfreigabe.
           WOEK_NEWS_MAX_AI_STORIES_PER_RUN: ${{ inputs.max_ai_stories || vars.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || '4' }}
-          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: ${{ vars.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || '12' }}
+          WOEK_NEWS_MAX_AI_STORIES_PER_HOUR: ${{ vars.WOEK_NEWS_MAX_AI_STORIES_PER_HOUR || '4' }}
+          WOEK_NEWS_MAX_AI_CALLS_PER_HOUR: ${{ vars.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || '4' }}
           # LIFO ab heute: unveröffentlichte Kandidaten älter als der Horizont werden ohne Aufruf geschlossen.
           WOEK_NEWS_MAX_SOURCE_AGE_HOURS: ${{ vars.WOEK_NEWS_MAX_SOURCE_AGE_HOURS || '24' }}
           # Höchstens zwei bezahlte Versuche je Eingabestand, der zweite nur nach
