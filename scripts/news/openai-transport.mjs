@@ -347,13 +347,19 @@ export function repairClaimIndependence(analysis, story, repairs = []) {
 // zweiten Lauf). Derselbe Auszug wie in der Prüfung, damit nichts auseinanderläuft.
 export const BRIEFING_NUMBERS_PER_SOURCE = 25;
 export function sourceNumberBriefing(story, limit = BRIEFING_NUMBERS_PER_SOURCE) {
-  const rows = [];
+  // Eine Zeile je Kennung: dieselbe Quelle steht oft mehrfach im Bestand (zwei
+  // Meldungen desselben Feeds), und die Prüfung vergleicht gegen die Kennung.
+  const byId = new Map();
   for (const source of Array.isArray(story?.sources) ? story.sources : []) {
     if (!source?.source_id) continue;
-    const numbers = [...sourceNumberTokens(source)].slice(0, limit);
-    rows.push(`${source.source_id}: ${numbers.length ? numbers.join(', ') : 'keine Zahlen'}`);
+    const numbers = byId.get(source.source_id) || new Set();
+    for (const token of sourceNumberTokens(source)) numbers.add(token);
+    byId.set(source.source_id, numbers);
   }
-  return rows;
+  return [...byId.entries()].map(([id, numbers]) => {
+    const list = [...numbers].slice(0, limit);
+    return `${id}: ${list.length ? list.join(', ') : 'keine Zahlen'}`;
+  });
 }
 
 // Wie viele voneinander unabhängige Herkünfte der gelieferte Quellenbestand
