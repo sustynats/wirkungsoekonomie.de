@@ -92,7 +92,7 @@ test('new episodes of the followed shows become requests once, newest first, wit
   const report = await proposeEpisodeCandidates({ session, root: '/nonexistent', now, env: {}, fetchImpl, shows: Object.values(shows), limit: 5, maxPerDay: 5, maxAgeDays: 7 });
   assert.equal(report.status, 'ok'); assert.equal(report.fresh_episodes, 2, 'Illner is known, Lanz and Lanz+Precht are new');
   assert.deepEqual(report.proposed.map((p) => [p.show_id, p.kind]), [['lanz-precht', 'listened'], ['markus-lanz', 'watched']]);
-  assert.equal(report.proposed[0].transcript_chars > 0, true); assert.equal(report.proposed[1].transcript_chars, 0);
+  assert.equal(report.proposed[0].transcript_chars > 0, true); assert.equal(report.proposed[0].transcript_origin, 'provider_transcript'); assert.equal(report.proposed[1].transcript_chars, 0);
   assert.equal(jobs.length, 3); assert.equal(files.size, 2);
   for (const job of jobs.slice(1)) assert.ok(files.has(bridgePath('00_INBOX', `${job.input.job_id}.input.json`)));
   const again = await proposeEpisodeCandidates({ session, root: '/nonexistent', now, env: {}, fetchImpl, shows: Object.values(shows), limit: 5, maxPerDay: 5 });
@@ -206,4 +206,33 @@ test('liegen amtliche Untertitel vor, wird nichts transkribiert und der Auftrag 
   assert.ok(job.request.brief.includes('amtlichen Untertitel'), job.request.brief.slice(0, 240));
   assert.equal(job.origin.transcript.origin, 'accessibility_subtitles');
   assert.ok(job.request.links.includes('https://utstreaming.zdf.de/mtt/illner.xml'));
+});
+
+test('eine ohne Wortlaut eingereihte Folge wird genau einmal erneut eingereiht, sobald der Wortlaut vorliegt', async () => {
+  const lanz = { id: 'markus-lanz', show_name: 'Markus Lanz', kind: 'watched', mediathek: { title: 'Markus Lanz', channel: 'ZDF' }, provider: 'ZDF-Mediathek', min_duration_seconds: 1500 };
+  const row = { title: 'Markus Lanz vom 15. September 2026', timestamp: Math.floor(Date.parse('2026-09-15T20:45:00Z') / 1000), duration: 4611,
+    url_website: 'https://www.zdf.de/video/talk/lanz-99', url_video_low: 'https://cdn.example/lanz.mp4', url_subtitle: '', id: 'lanz99' };
+  const session = fakeSession();
+  const track = `<tt:tt>${Array.from({ length: 30 }, (_, i) => `<tt:p begin="00:1${i % 10}:00.000">${'Aussage '.repeat(12)}</tt:p>`).join('')}</tt:tt>`;
+  const feed = (rows) => async (url, init) => init?.method === 'POST' ? { ok: true, json: async () => ({ result: { results: rows } }) } : { ok: true, text: async () => track };
+  const options = { session: session.session, root: '/nonexistent', env: {}, shows: [lanz], limit: 2, maxPerDay: 5, maxAgeDays: 7, transcribe: false, subtitleWaitHours: 18 };
+  // Erster Auftrag ohne Untertitel, nach dem Wartefenster.
+  const first = await proposeEpisodeCandidates({ ...options, now: '2026-09-16T20:00:00.000Z', fetchImpl: feed([row]) });
+  assert.deepEqual(first.proposed.map((p) => [p.show_id, p.transcript_origin]), [['markus-lanz', null]]);
+  const key = Object.keys(Object.fromEntries(session.observations)).find((k) => k.startsWith('github-episode:markus-lanz:'));
+  assert.equal(session.observations.get(key).transcript_origin, null);
+  // Ohne Wortlaut bleibt es dabei.
+  const again = await proposeEpisodeCandidates({ ...options, now: '2026-09-16T21:00:00.000Z', fetchImpl: feed([row]) });
+  assert.deepEqual(again.proposed, []);
+  assert.deepEqual(again.waiting_for_subtitles.map((w) => w.retry), [true], 'die Folge wartet weiter auf den Wortlaut');
+  // Sobald die Untertitel da sind, genau ein zweiter Auftrag.
+  const withSubtitles = [{ ...row, url_subtitle: 'https://utstreaming.zdf.de/mtt/lanz99.xml' }];
+  const second = await proposeEpisodeCandidates({ ...options, now: '2026-09-17T06:00:00.000Z', fetchImpl: feed(withSubtitles) });
+  assert.deepEqual(second.proposed.map((p) => p.transcript_origin), ['accessibility_subtitles']);
+  assert.notEqual(session.jobs.at(-1).input.job_id, session.jobs.at(-2).input.job_id, 'eigener Auftrag, kein Überschreiben');
+  assert.ok(session.jobs.at(-1).input.request.brief.includes('Erneuter Auftrag'));
+  assert.equal(session.observations.get(key).retried_with_transcript, true);
+  const third = await proposeEpisodeCandidates({ ...options, now: '2026-09-17T08:00:00.000Z', fetchImpl: feed(withSubtitles) });
+  assert.deepEqual(third.proposed, [], 'kein dritter Auftrag');
+  assert.deepEqual(third.waiting_for_subtitles, []);
 });
