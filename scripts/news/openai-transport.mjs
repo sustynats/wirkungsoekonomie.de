@@ -7,7 +7,7 @@ import { deriveAssessmentCalculations, IMPACT_VERSION } from './impact-assessmen
 import { semanticIssues } from './impact-publication.mjs';
 import { modelledPublicationIssues } from './impact-scope.mjs';
 import { secondPassComplete } from './impact-gate.mjs';
-import { impactAssessmentResponseFormat } from './impact-json-schema.mjs';
+import { impactAssessmentResponseFormat, IMPACT_ASSESSMENT_JSON_SCHEMA } from './impact-json-schema.mjs';
 import { analysisResponseFormat, schemaEligible, ANALYSIS_JSON_SCHEMA } from './analysis-json-schema.mjs';
 import { FACTOR_KEYS } from './impact-magnitude.mjs';
 import { modelRates } from './budget.mjs';
@@ -485,6 +485,22 @@ export function fieldRepairFormat(fields, name = 'wirkungsticker_nachlieferung_1
   return { type: 'json_schema', name, strict: true,
     schema: { type: 'object', additionalProperties: false, required: Object.keys(properties), properties } };
 }
+// Eine Meldung, an der beides fehlt, hatte bisher Pech: die Bewertung hatte
+// Vorrang, die Textbefunde bekamen keinen Versuch mehr und die Meldung blieb
+// liegen (16.09., Lauf 11:50: AI_SOURCE_SUMMARY_LENGTH neben einem
+// Bewertungsbefund). Die eine erlaubte Nachlieferung fragt deshalb beides in
+// einem Aufruf nach, schemagebunden auf genau diese Teile.
+export function combinedRepairFormat(fields = [], name = 'wirkungsticker_nachlieferung_2') {
+  const properties = { story_id: { type: 'string' }, impact_assessment: IMPACT_ASSESSMENT_JSON_SCHEMA };
+  for (const field of fields) {
+    const property = ANALYSIS_JSON_SCHEMA.properties[field];
+    if (!property || property.type === 'null') return null;
+    properties[field] = property;
+  }
+  return { type: 'json_schema', name, strict: true,
+    schema: { type: 'object', additionalProperties: false, required: Object.keys(properties), properties } };
+}
+
 export function repairAddendum(storyId, issues, previous, fields = [], depth = null) {
   if (fields.length) {
     // Dieselbe konkrete Spanne wie im ersten Aufruf. Die bedingte Formulierung
@@ -505,10 +521,12 @@ export function repairAddendum(storyId, issues, previous, fields = [], depth = n
       impact_potential: 'impact_potential: Wirkungen als Möglichkeit formulieren, keine Tatsachenform für noch nicht eingetretene Folgen.',
       media_impact: 'media_impact: vollständig nach der Medienwirkungs-Methode, public_explanation 80 bis 200 Wörter, reason, factual_core und editorial_assessment als Text, keine Absichtszuschreibung und keine Bewertung von Medienhäusern.',
     };
-    return [`NACHLIEFERUNG für story_id ${storyId}: Deine Antwort ist angekommen, aber einzelne Felder bestehen die Prüfung nicht.`,
+    const both = fields.length && issues.some((issue) => /^IMPACT_/.test(String(issue)));
+    return [`NACHLIEFERUNG für story_id ${storyId}: Deine Antwort ist angekommen, aber ${both ? 'das Bewertungsobjekt und einzelne Felder bestehen' : 'einzelne Felder bestehen'} die Prüfung nicht.`,
       `Prüfbefunde: ${issues.join(', ')}.`,
       `Liefere ausschließlich diese Felder neu: ${fields.join(', ')}. Alles andere bleibt unverändert und wird nicht erneut gesendet.`,
       ...fields.map((field) => hints[field]).filter(Boolean),
+      ...(both ? ['Zusätzlich impact_assessment vollständig nach Schema (Version 2.1, alle drei Dimensionen modelled mit primary_paths, sechs Faktoren je Pfad, research_check, system_check, observed_effects), source_ids exakt aus den gelieferten sources.'] : []),
       'Inhalt und Aussagen bleiben gleich; korrigiere nur den beanstandeten Punkt. Keine erfundenen Zahlen, Quellen oder Zitate.'].join('\n');
   }
   return [`NACHLIEFERUNG für story_id ${storyId}: Deine Antwort ist angekommen, aber impact_assessment fehlt oder besteht die deterministische Prüfung nicht.`,
@@ -519,12 +537,14 @@ export function repairAddendum(storyId, issues, previous, fields = [], depth = n
 const sumUsage = (a, b) => !a ? b : !b ? a : { input_tokens: a.input_tokens + b.input_tokens, output_tokens: a.output_tokens + b.output_tokens,
   ...((a.cached_input_tokens ?? b.cached_input_tokens) !== undefined ? { cached_input_tokens: (a.cached_input_tokens || 0) + (b.cached_input_tokens || 0) } : {}) };
 
-async function requestAssessmentRepair({ prompt, story, analysis, issues, model, apiKey, fetchImpl, timeoutMs, reasoningEffort, rawDir, schema = true, fields = [] }) {
+async function requestAssessmentRepair({ prompt, story, analysis, issues, model, apiKey, fetchImpl, timeoutMs, reasoningEffort, rawDir, schema = true, fields = [], assessment = false }) {
   const addendum = repairAddendum(story.story_id, issues, analysis.impact_assessment || null, fields, requiredPublicationDepth(story));
   // A schema-bound answer cannot omit a key. The provider may reject the
   // schema (unknown model, unsupported keyword); then exactly one further try
   // in plain JSON mode follows, which is the previous behaviour.
-  const wanted = fields.length ? fieldRepairFormat(fields) : impactAssessmentResponseFormat();
+  const wanted = assessment && fields.length ? combinedRepairFormat(fields)
+    : fields.length ? fieldRepairFormat(fields)
+    : impactAssessmentResponseFormat();
   const formats = schema && wanted ? [wanted, { type: 'json_object' }] : [{ type: 'json_object' }];
   let payload = null, status = 0, usedSchema = false;
   for (const [index, format] of formats.entries()) {
@@ -549,10 +569,11 @@ async function requestAssessmentRepair({ prompt, story, analysis, issues, model,
   if (fields.length) {
     const delivered = {};
     for (const field of fields) if (body && body[field] !== undefined) delivered[field] = body[field];
-    return { usage, fields: delivered, assessment: null, answerChars: (answer || '').length, status, schema: usedSchema };
+    const repaired = assessment && body?.impact_assessment && typeof body.impact_assessment === 'object' ? body.impact_assessment : null;
+    return { usage, fields: delivered, assessment: repaired, answerChars: (answer || '').length, status, schema: usedSchema };
   }
-  const assessment = body?.impact_assessment || (parsed?.dimensions && parsed?.version ? parsed : null);
-  return { usage, assessment: assessment && typeof assessment === 'object' ? assessment : null, answerChars: (answer || '').length, status, schema: usedSchema };
+  const repairedAssessment = body?.impact_assessment || (parsed?.dimensions && parsed?.version ? parsed : null);
+  return { usage, assessment: repairedAssessment && typeof repairedAssessment === 'object' ? repairedAssessment : null, answerChars: (answer || '').length, status, schema: usedSchema };
 }
 
 const retryable = (status) => status === 429 || status >= 500;
@@ -650,23 +671,22 @@ export async function callOpenAiDirect(stories, options = {}) {
       // Grenze, deshalb wird nicht beides in einem Schema verschachtelt.
       const issues = assessmentIssues(analysis, story);
       const textIssues = typeof options.findIssues === 'function' ? options.findIssues(analysis, story) : [];
-      const fields = issues.length ? [] : repairFields(textIssues);
+      const fields = repairFields(textIssues);
       if (!issues.length && !fields.length) continue;
       result.repair_calls += 1;
-      const repaired = await requestAssessmentRepair({ prompt, story, analysis, issues: issues.length ? issues : textIssues, fields, model, apiKey, fetchImpl, rawDir,
+      const repaired = await requestAssessmentRepair({ prompt, story, analysis, issues: [...issues, ...(fields.length ? textIssues : [])], fields, assessment: issues.length > 0, model, apiKey, fetchImpl, rawDir,
         schema: options.repairSchema !== false && process.env.WOEK_NEWS_REPAIR_SCHEMA !== 'false',
         timeoutMs: Number(options.timeoutMs || process.env.WOEK_NEWS_AI_TIMEOUT_MS || 240000), reasoningEffort: options.reasoningEffort || process.env.WOEK_NEWS_REASONING_EFFORT || 'low' });
       if (repaired.usage) result.reported_usage = sumUsage(result.reported_usage, repaired.usage);
       result.answer_chars = Number(result.answer_chars || 0) + repaired.answerChars;
-      if (repaired.assessment) {
-        analysis.impact_assessment = repaired.assessment;
+      const deliveredFields = repaired.fields && Object.keys(repaired.fields).length ? Object.keys(repaired.fields) : [];
+      if (repaired.assessment || deliveredFields.length) {
+        if (repaired.assessment) analysis.impact_assessment = repaired.assessment;
+        for (const [field, value] of Object.entries(repaired.fields || {})) analysis[field] = value;
         normalizeAnalysisOutput(analysis, story);
         const remaining = assessmentIssues(analysis, story);
-        (analysis.transport_repairs ||= []).push(`impact_assessment:nachgeliefert${repaired.schema ? ' mit Schema' : ''} (${issues.length} Befunde, danach ${remaining.length})`);
-      } else if (repaired.fields && Object.keys(repaired.fields).length) {
-        for (const [field, value] of Object.entries(repaired.fields)) analysis[field] = value;
-        normalizeAnalysisOutput(analysis, story);
-        (analysis.transport_repairs ||= []).push(`${Object.keys(repaired.fields).join('+')}:nachgeliefert${repaired.schema ? ' mit Schema' : ''} (${textIssues.length} Befunde)`);
+        const parts = [...(repaired.assessment ? ['impact_assessment'] : []), ...deliveredFields];
+        (analysis.transport_repairs ||= []).push(`${parts.join('+')}:nachgeliefert${repaired.schema ? ' mit Schema' : ''} (${issues.length + textIssues.length} Befunde, danach ${remaining.length})`);
       } else (analysis.transport_repairs ||= []).push(`${issues.length ? 'impact_assessment' : fields.join('+')}:nachlieferung ohne Ergebnis (HTTP ${repaired.status})`);
     }
   }
