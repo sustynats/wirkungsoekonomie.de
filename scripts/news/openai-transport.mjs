@@ -380,14 +380,25 @@ export function requiredPublicationDepth(story) {
     const stored = story.existing_story?.analysis?.publication_depth;
     return stored === 'initial' || stored === 'deepened' ? stored : null;
   }
+  // Die erste Auswertung einer Meldung ist „initial" - dafuer gibt es nichts zu
+  // waehlen. Bisher bekam genau dieser Fall keine Vorgabe: ohne Akte war
+  // `existing_story` leer, das Modell entschied sich fuer „deepened" (die
+  // Meldung wirkt ja gewichtig) und schrieb dann eine Zusammenfassung unter den
+  // 100 Woertern, die diese Tiefe verlangt. Ergebnis: AI_SOURCE_SUMMARY_LENGTH
+  // und ein zweiter bezahlter Aufruf fuer eine Regel, die der Server kennt
+  // (16.09., Laeufe 17:50 und 18:05 - die letzte verbliebene Nachbesserung).
   const published = story.existing_story?.published;
-  return typeof published === 'boolean' ? (published ? 'deepened' : 'initial') : null;
+  if (typeof published === 'boolean') return published ? 'deepened' : 'initial';
+  return story.existing_story ? null : 'initial';
 }
 
 export function repairPublicationDepth(analysis, story, repairs = []) {
   if (!analysis || typeof analysis !== 'object') return analysis;
   const required = requiredPublicationDepth(story);
-  if (!required || analysis.publication_depth === required) return analysis;
+  // Nur eine tatsaechlich gelieferte, abweichende Angabe wird berichtigt. Das
+  // strenge Schema verlangt das Feld ohnehin; ein fehlendes Feld gilt in der
+  // Pruefung als die strengere Tiefe und wird hier nicht erfunden.
+  if (!required || !analysis.publication_depth || analysis.publication_depth === required) return analysis;
   repairs.push(`publication_depth:${analysis.publication_depth ?? 'fehlt'}->${required}`);
   analysis.publication_depth = required;
   return analysis;
