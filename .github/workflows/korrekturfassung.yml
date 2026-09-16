@@ -1,0 +1,55 @@
+# Eine Korrekturfassung einer veröffentlichten persönlichen Ausgabe einreihen.
+#
+# Kein bezahlter Modellaufruf: der Text steht im Repository und wird
+# unverändert als Ergebnis abgelegt. Die Ablage bindet Identität, Zielversion
+# und Quellenbestand selbst an die Serverdaten. Die Fassung erscheint in
+# Natalies Freigabeliste und wird ausschließlich durch ihre Freigabe
+# veröffentlicht.
+name: Korrekturfassung einreihen
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Slug oder analysis_id der veröffentlichten Ausgabe"
+        required: true
+        type: string
+      body:
+        description: "Pfad der Textdatei im Repository (data/news/korrekturfassungen/...)"
+        required: true
+        type: string
+      note:
+        description: "Korrekturhinweis für die Leser (höchstens 1500 Zeichen)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: redaktionsworker
+  cancel-in-progress: false
+
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      WOEK_NEWS_BRIDGE_URL: "https://130.162.217.58.sslip.io/api/news-bridge"
+      WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+      WOEK_CORRECTION_SLUG: ${{ inputs.slug }}
+      WOEK_CORRECTION_BODY: ${{ inputs.body }}
+      WOEK_CORRECTION_NOTE: ${{ inputs.note }}
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Tests der Korrekturspur
+        run: node --test tests/news/korrekturfassung.test.mjs tests/news/editorial-approved-revisions.test.mjs
+      - name: Korrekturfassung einreihen und als Ergebnis ablegen
+        run: node scripts/news/korrekturfassung.mjs
