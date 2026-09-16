@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-16T00:52:02.546Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-16T02:22:02.413Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -32,6 +32,36 @@
         "democracy": {
           "magnitude": 2,
           "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/verteidigungsminister-pistorius-und-hegseth-schliessen-verteidigungsdeal-a8dbe2/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/verteidigungsminister-pistorius-und-hegseth-schliessen-verteidigungsdeal-a8dbe2/",
+      "title": "Laut stern: Pistorius und Hegseth schließen Verteidigungsdeal",
+      "summary": "Der stern berichtet über einen Verteidigungsdeal zwischen Boris Pistorius und Pete Hegseth. Inhalt, Status und Folgen der Vereinbarung sind im vorliegenden Auszug offen.",
+      "date_published": "2026-09-15T23:37:00.000Z",
+      "date_modified": "2026-09-15T23:37:00.000Z",
+      "tags": [
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
