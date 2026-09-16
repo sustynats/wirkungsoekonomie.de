@@ -466,3 +466,31 @@ test('die Stundengrenze zaehlt Meldungen, nicht Aufrufe', async () => {
   assert.equal(report.ai_hourly_limit, 1);
   assert.equal(report.ai_calls, 1, 'genau die letzte freie Meldung');
 });
+test('die Belegverweise sind aufgelöst, bevor die Nachlieferung geprüft wird', async () => {
+  const { storyEvidenceIds } = await import('../../scripts/news/run.mjs');
+  const { validateNewsroomAnalysis, resolveEvidenceReferences, promptEvidenceSegments } = await import('../../scripts/news/newsroom.mjs');
+  const story = { story_id: 'wt-test', title: item.title, sources: [{ ...item }], claims: [{ source_id: item.source_id }] };
+  // Die Antwort verweist auf die mitgelieferten Textstellen, wie der Auftrag es verlangt.
+  const ids = storyEvidenceIds(story);
+  assert.deepEqual(ids, promptEvidenceSegments(story.sources[0], 0).map((segment) => segment.evidence_id));
+  assert.ok(ids.includes('e0_0'), JSON.stringify(ids));
+  const answer = () => ({ story_id: 'wt-test', event_claims: [{ claim: 'Bund beschließt Klimagesetz', status: 'single_source_claim', evidence: [{ evidence_id: 'e0_0' }] }] });
+  // Unaufgelöst meldet die Prüfung einen Befund, den es nicht gibt - und genau
+  // der hat am 16.09. für jede Meldung eine bezahlte Nachlieferung ausgelöst.
+  assert.ok(validateNewsroomAnalysis(answer(), story).includes('CLAIM_EVIDENCE_NOT_IN_SOURCE'));
+  const resolved = answer();
+  resolveEvidenceReferences(resolved, story, ids, {});
+  assert.deepEqual(validateNewsroomAnalysis(resolved, story).filter((code) => code.startsWith('CLAIM_')), []);
+  // Der aufgelöste Beleg trägt Quelle, Adresse und wortgleiches Zitat.
+  const proof = resolved.event_claims[0].evidence[0];
+  assert.equal(proof.source_id, item.source_id);
+  assert.equal(proof.url, item.url);
+  assert.ok(proof.excerpt.length >= 12);
+  assert.ok(`${item.title} ${item.summary}`.includes(proof.excerpt), proof.excerpt);
+  // Eine zweite Auflösung lässt den vollständigen Beleg unangetastet.
+  const snapshot = JSON.stringify(resolved.event_claims[0].evidence);
+  resolveEvidenceReferences(resolved, story, ids, {});
+  assert.equal(JSON.stringify(resolved.event_claims[0].evidence), snapshot);
+  // Ohne Quellen gibt es keine Kennungen.
+  assert.deepEqual(storyEvidenceIds({}), []);
+});

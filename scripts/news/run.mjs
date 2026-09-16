@@ -36,7 +36,7 @@ import { buildNewsSite } from "./build.mjs";
 import { sanitizeVisuals } from "./visuals.mjs";
 import { loadNewsRegistry, normalizeNewsRegistry, registryErrors } from "./registry.mjs";
 import { sourceAccess } from "./access-policy.mjs";
-import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, evidenceGroups, freshnessFor, sourceHealth, coverageReport, dueFollowups, discoveryCandidates, persistClaimEvidence, nextDeepeningCheckpoint, normalizeEvidenceExcerpts, resolveEvidenceReferences } from "./newsroom.mjs";
+import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, evidenceGroups, freshnessFor, sourceHealth, coverageReport, dueFollowups, discoveryCandidates, persistClaimEvidence, nextDeepeningCheckpoint, normalizeEvidenceExcerpts, resolveEvidenceReferences, promptEvidenceSegments } from "./newsroom.mjs";
 import { duplicateGroups, mergeLivingFiles, isMerged, subjectConflict, livingFileMatch } from "./living-files.mjs";
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
@@ -710,6 +710,13 @@ function candidateQueuedAt(candidate) {
   return existing?.pending_update?.detected_at
     || (!existing?.published ? existing?.event_detected_at || candidate.event_detected_at : null)
     || existing?.updated_at;
+}
+
+// Die kurzen Belegkennungen, die der Auftrag je Quelle mitliefert (e0_0, e0_1,
+// e1_0 ...). Dieselbe Bildung wie im Auftrag, damit Verweis und Auflösung
+// zusammenpassen, ohne den Auftragstext erneut zu parsen.
+export function storyEvidenceIds(story) {
+  return (story?.sources || []).flatMap((source, index) => promptEvidenceSegments(source, index).map((segment) => segment.evidence_id));
 }
 
 export function queuePriority(candidate, now) {
@@ -1675,7 +1682,18 @@ export async function runWirkungsticker(options = {}) {
         const aiResult = await (options.callAiImpl || callWoekAi)(analysisBatch, {
           // Der Transport kennt das Bewertungsobjekt, nicht die Lesertextregeln.
           // Für die eine Nachlieferung bekommt er sie als Prüffunktion mit.
-          findIssues: (analysis, story) => validateAnalysis(analysis, story, { requireDirectionAssessment: true, requireImpactAssessment: true }),
+          // Die Belege der Antwort sind Verweise (evidence_id) auf die
+          // Textstellen, die der Auftrag mitgeliefert hat. Aufgelöst werden sie
+          // erst nach dem Aufruf - die Prüffunktion der Nachlieferung lief also
+          // gegen unaufgelöste Verweise und meldete für JEDE Meldung mit
+          // Aussagen CLAIM_EVIDENCE_NOT_IN_SOURCE. Ergebnis: eine bezahlte
+          // Nachlieferung je Meldung, ohne echten Befund (16.09., Quote 100 %).
+          // Jetzt wird zuerst aufgelöst; die spätere Auflösung bleibt folgenlos,
+          // weil ein vollständiger Beleg unangetastet bleibt.
+          findIssues: (analysis, story) => {
+            resolveEvidenceReferences(analysis, story, storyEvidenceIds(story), {});
+            return validateAnalysis(analysis, story, { requireDirectionAssessment: true, requireImpactAssessment: true });
+          },
           apiUrl: process.env.WOEK_NEWS_API_URL,
           authToken: process.env.WOEK_NEWS_ANALYSIS_TOKEN,
           timeoutMs: Number(process.env.WOEK_NEWS_AI_TIMEOUT_MS || 120000),
