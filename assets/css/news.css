@@ -2936,3 +2936,11 @@ html.ticker-app-document, body.ticker-app-shell {overflow-x:clip;overflow-y:visi
 .ticker-filter-actions .btn {flex:1;width:auto;min-width:0;min-height:44px;padding:.5rem;}
 .ticker-app-filter-menu :focus-visible {outline:3px solid #ba632f;outline-offset:2px;}
 @media(max-width:760px){.ticker-app-nav{top:auto}.ticker-app-toolbar{top:var(--ticker-header-height)}.ticker-app-toolbar .news-view-toggle{justify-content:flex-start}}
+
+/* Rückweg am Artikelanfang: sichtbar ohne Scrollen, gross genug fuer den Daumen.
+   Der Weg lag vorher nur im Fuss - bei einer langen Analyse unerreichbar. */
+.news-back-top{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;margin:.1rem 0 .8rem;padding:.35rem .85rem .35rem .6rem;border:1px solid #ffffff59;border-radius:999px;background:#ffffff1f;color:inherit;font-weight:700;font-size:.92rem;text-decoration:none}
+.news-back-top:hover,.news-back-top:focus-visible{background:#ffffff33;border-color:#ffffff8c}
+.news-back-top:focus-visible{outline:3px solid #ba632f;outline-offset:2px}
+.news-back-top__arrow{font-size:1.1rem;line-height:1}
+@media(max-width:760px){.news-back-top{width:auto;margin-bottom:1rem}}
