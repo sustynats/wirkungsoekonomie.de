@@ -18,12 +18,16 @@
       "id": "markus-lanz",
       "show_name": "Markus Lanz",
       "kind": "watched",
-      "provider": "ZDF-Mediathek über MediathekViewWeb, amtliche Untertitel",
+      "provider": "ZDF-Mediathek über MediathekViewWeb, amtliche Untertitel bis 14:00 des Folgetags",
       "min_duration_seconds": 1500,
       "enabled": true,
       "mediathek": {
         "title": "Markus Lanz",
         "channel": "ZDF"
+      },
+      "transcript_deadline": {
+        "day_offset": 1,
+        "berlin_hour": 14
       }
     },
     {
