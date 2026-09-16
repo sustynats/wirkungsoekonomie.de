@@ -2,8 +2,1529 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T00:07:55.766Z",
+  "updated_at": "2026-09-16T00:52:02.546Z",
   "stories": [
+    {
+      "story_id": "wt-90f05434b7e53384",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-90f05434b7e53384-350daaaaf7beb3d6-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-90f05434b7e53384-5195699ac8402c97-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-90f05434b7e53384-ced0f94fc9c57d8a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "landtagswahlen-merz-und-cdu-parteispitze-setzen-beratungen-an-kanzlerrede-auf-uno-vollve-e53384",
+      "title": "Laut Regierungskreisen sagt Merz Reise zur UNO-Vollversammlung ab und setzt CDU-Beratungen an",
+      "source_summary": "Der Deutschlandfunk berichtet, dass Bundeskanzler Friedrich Merz und die CDU-Parteispitze mehrere Sitzungen zu den Ergebnissen der Landtagswahlen und zum parteiinternen Druck angekündigt haben. Merz sagte dem Bericht zufolge seine Reise zur Generaldebatte der UNO-Vollversammlung in der kommenden Woche ab. Außenminister Wadephul soll Deutschland in New York vertreten.\n\nVorgesehen waren eine Sitzung des CDU-Präsidiums am Sonntagabend, weitere Sitzungen der Parteiführungen am Montag und eine Zusammenkunft der Unionsfraktion am Dienstag. Merz habe erklärt, trotz anhaltender Kritik an ihm im Amt bleiben und den Regierungskurs mit der SPD fortsetzen zu wollen. Das Wahlergebnis von Sachsen-Anhalt bezeichnete er als Bewährungsprobe für die Koalition. Der Bericht stützt sich auf eine journalistische Darstellung und Regierungskreise; unabhängige Bestätigungen oder Ergebnisse der angekündigten Beratungen liegen in der Quelle nicht vor.",
+      "summary": "Merz sagt laut Regierungskreisen eine UNO-Reise ab und setzt nach Landtagswahlen Beratungen von CDU und Unionsfraktion an. Ob daraus ein Kurs- oder Personalwechsel folgt, ist offen.",
+      "detail_summary": "Laut Deutschlandfunk reagiert Merz auf Wahlergebnisse und parteiinternen Druck mit mehreren angekündigten Sitzungen. Zugleich soll er die Reise zur Generaldebatte der UNO-Vollversammlung abgesagt haben. Außenminister Wadephul soll Deutschland in New York vertreten. Merz will nach der Darstellung im Amt bleiben und den Regierungskurs mit der SPD fortsetzen. Die Quelle belegt noch keine Entscheidungen oder Folgen der Beratungen.",
+      "why_relevant": "Die angekündigten Beratungen können die politische Handlungsfähigkeit der CDU, der Unionsfraktion und der Koalition beeinflussen. Konkrete Entscheidungen, Mehrheiten und ein möglicher Kurswechsel sind jedoch noch nicht belegt.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Angekündigte Beratungen von CDU, Parteiführung und Unionsfraktion nach Landtagswahlen sowie Absage der Merz-Reise zur UNO-Vollversammlung",
+        "evaluation_target": {
+          "label": "politischer Beratungs- und Entscheidungsprozess",
+          "type": "institution"
+        },
+        "baseline": "Vor den angekündigten Beratungen bestehen Wahldruck und innerparteiliche Kritik; konkrete Entscheidungen sind nicht bekannt.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne die angekündigten Sitzungen blieben Reaktionen auf Wahlergebnisse und parteiinternen Druck zunächst in den bisherigen Kommunikations- und Entscheidungswegen.",
+        "reference_frame": [
+          "demokratische Rechenschaft",
+          "politische Handlungsfähigkeit",
+          "institutionelle Korrekturfähigkeit"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Mögliche menschliche Folgen laufen indirekt über spätere politische Prioritäten; konkrete Auswirkungen auf Versorgung, Gesundheit oder Verteilung sind nicht belegt.",
+            "planet": "Mögliche Umweltfolgen wären nur über spätere politische Prioritäten ableitbar; die Quelle nennt keine konkrete Umweltmaßnahme.",
+            "democracy": "Die Beratungen können innerparteiliche Rechenschaft, Mehrheitsbildung und Regierungskontrolle beeinflussen; Ergebnisse und Richtung sind offen."
+          },
+          "central_dimensions": [
+            "democracy"
+          ],
+          "first_order": "Angekündigte Sitzungen verändern den unmittelbaren politischen Beratungsprozess.",
+          "second_order": "Mögliche Vereinbarungen könnten die Koordination von Partei, Fraktion und Koalition verändern; dies ist nicht belegt.",
+          "third_order": "Ein möglicher Personal- oder Kurswechsel könnte politische Entscheidungsstrukturen und Prioritäten verändern; Eintritt und Richtung sind offen.",
+          "enablement": [
+            "enables_majority",
+            "enables_office",
+            "enables_personnel_control",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Die Quelle nennt keine Beschlüsse, neuen Mehrheiten oder personellen Veränderungen.",
+            "Merz wird mit der Aussage wiedergegeben, im Amt bleiben und den Regierungskurs mit der SPD fortsetzen zu wollen."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle vor. Die Darstellung beruft sich teilweise auf Regierungskreise; unabhängige Bestätigung fehlt.",
+          "institutional_status": "Belegt sind angekündigte Parteiberatungen und eine geplante Fraktionssitzung, nicht aber ein staatlicher Beschluss oder eine Änderung des Regierungs- oder Rechtsstatus."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle belegt keinen direkten menschlichen Effekt. Ein indirekter Pfad über spätere politische Prioritäten ist möglich, doch Richtung, Reichweite und Eintritt bleiben unbekannt.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Politische Beratungen könnten spätere Entscheidungen mit Folgen für Versorgung, soziale Prioritäten oder Verteilung vorbereiten.",
+                "mechanism": "Parteiberatungen können politische Prioritäten und Koalitionskoordination beeinflussen; konkrete Sachentscheidungen sind nicht belegt.",
+                "recipients": [
+                  "haushalte",
+                  "beschaeftigte",
+                  "patientinnen"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Sitzungen müssen stattfinden und in konkrete politische Entscheidungen mit menschlichen Auswirkungen münden.",
+                "reference_space": "Deutschland; mögliche spätere Regierungs- und Koalitionsentscheidungen",
+                "time_horizon": "mittelfristig nach den angekündigten Beratungen",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Politische Prioritäten werden möglicherweise über Partei- und Koalitionsentscheidungen in staatliches Handeln übersetzt.",
+                "source_support": "Die Quelle belegt Beratungsankündigungen, aber keine Sachentscheidungen oder Folgen für Menschen.",
+                "limitations": "Keine Angaben zu betroffenen Programmen, Gruppen, Größenordnung oder Richtung einer möglichen Entscheidung.",
+                "first_order": "Beratungen verändern zunächst nur den politischen Entscheidungsprozess.",
+                "second_order": "Nur bei konkreten Vereinbarungen könnten Prioritäten für soziale oder versorgungsbezogene Politik beeinflusst werden.",
+                "third_order": "Eine dauerhafte politische Neuorientierung könnte Verteilung und Versorgung mittelbar verändern; dieser Pfad ist nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne konkrete Sachentscheidung reicht das plausible Potenzial von keiner bis zu begrenzter menschlicher Tragweite."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle weist einen eingetretenen menschlichen Effekt oder eine konkrete politische Maßnahme aus.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffene wären nur über spätere politische Entscheidungen erreichbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Belastung oder Verbesserung ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer möglicher Folgen hängt von späteren Entscheidungen ab.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible menschliche Zustandsänderung ist belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders betroffene Gruppen werden nicht konkret genannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Pfad bleibt indirekt und institutionell vermittelt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für Gesundheit, Versorgung oder Verteilung wird nicht berührt.",
+                  "reference_frame": "Schutz von Gesundheit, Versorgung und sozialer Teilhabe",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "open",
+                "label": "Die Reiseabsage könnte politische Aufmerksamkeit kurzfristig von internationalen Aufgaben auf innerparteiliche Beratung verlagern.",
+                "mechanism": "Terminverlagerung und politische Priorisierung könnten die Arbeitsorganisation verändern.",
+                "recipients": [
+                  "staat",
+                  "europa"
+                ],
+                "magnitude": 0,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Absage müsste zu einer tatsächlichen Verlagerung von Ressourcen mit menschlichen Folgen führen.",
+                "reference_space": "politische Arbeitsorganisation",
+                "time_horizon": "kurzfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Eine solche Verlagerung wird nicht automatisch angenommen.",
+                "source_support": "Belegt sind die Reiseabsage und die geplante Vertretung durch den Außenminister.",
+                "limitations": "Keine Angaben zu Arbeitsumfang, betroffenen Personen oder Folgen.",
+                "first_order": "Vertretung des Kanzlers durch den Außenminister.",
+                "second_order": "Mögliche Verschiebung politischer Aufmerksamkeit.",
+                "third_order": "Keine belastbare systemische Folge ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der mögliche menschliche Einfluss ist mangels konkreter Betroffenheit vernachlässigbar bis gering."
+                },
+                "negligibility_rationale": "Für Menschen ist innerhalb des belegten Zeit- und Sachrahmens keine konkrete Zustandsänderung ausgewiesen.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzlichen gelieferten Belege für menschliche Folgen der Reiseabsage.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine konkrete menschliche Empfängergruppe ist belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine konkrete Belastung oder Verbesserung ist belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine Wirkungsdauer ist ausgewiesen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Folge ist erkennbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine vulnerable Gruppe wird konkret betroffen genannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Der Pfad bleibt eine unbelegte organisatorische Möglichkeit.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete menschliche Schutzgrenze ist betroffen.",
+                  "reference_frame": "Schutz von Menschen und Versorgung",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "rationale": "Für Menschen besteht nur ein indirektes, niedriges und richtungsoffenes Potenzial über spätere politische Entscheidungen.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Politische Beratungen könnten spätere Entscheidungen mit Folgen für Versorgung, soziale Prioritäten oder Verteilung vorbereiten.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Politische Beratungen könnten spätere Entscheidungen mit Folgen für Versorgung, soziale Prioritäten oder Verteilung vorbereiten.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferten Quellen enthalten keine Umweltmaßnahme, Emissionsangabe, Infrastrukturentscheidung oder ökologische Zustandsänderung. Ein Umweltpfad über spätere politische Prioritäten bleibt eine konkrete Wissensgrenze.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Ein möglicher späterer Einfluss auf Umweltpolitik ist über den politischen Beratungsprozess denkbar, aber nicht konkretisiert.",
+                "mechanism": "Partei- und Koalitionsentscheidungen könnten politische Prioritäten beeinflussen.",
+                "recipients": [
+                  "natur",
+                  "staat"
+                ],
+                "magnitude": 0,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Es müsste zunächst eine konkrete umweltrelevante Entscheidung aus den Beratungen hervorgehen.",
+                "reference_space": "Deutschland; spätere politische Prioritäten",
+                "time_horizon": "nicht bestimmbar",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ein Zusammenhang zwischen innerparteilicher Beratung und Umweltpolitik wird nur als Möglichkeit betrachtet.",
+                "source_support": "Die Quelle nennt keine Umweltpolitik oder ökologische Maßnahme.",
+                "limitations": "Keine Daten zu Emissionen, Energie, Natur, Ressourcen oder betroffenen Ökosystemen.",
+                "first_order": "Beratungen verändern den politischen Prozess, nicht nachweisbar den Umweltzustand.",
+                "second_order": "Eine spätere politische Priorität könnte Umweltentscheidungen beeinflussen.",
+                "third_order": "Ökologische Systemfolgen sind aus den gelieferten Informationen nicht ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Mangels konkreter Umweltentscheidung bleibt das Potenzial vernachlässigbar bis gering."
+                },
+                "negligibility_rationale": "Im belegten Sachverhalt ist keine ökologische Zustandsänderung oder konkrete Umweltmaßnahme enthalten.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle enthält einen konkreten Umweltbezug, der eine stärkere Modellierung tragen würde.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine Umweltbetroffenen oder räumliche Reichweite sind belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Belastung oder Verbesserung ist belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine Dauer eines Umweltimpulses ist bekannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible ökologische Veränderung ist belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine verletzlichen Ökosysteme werden genannt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Wirkmechanismus ist konkret ausgewiesen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle berührt keine konkrete ökologische Schutzgrenze.",
+                  "reference_frame": "Schutz von Klima, Natur und Ressourcen",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der Nachrichtenkern betrifft politische Beratungen und enthält keinen konkreten Umweltbezug.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Ein möglicher späterer Einfluss auf Umweltpolitik ist über den politischen Beratungsprozess denkbar, aber nicht konkretisiert.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein möglicher späterer Einfluss auf Umweltpolitik ist über den politischen Beratungsprozess denkbar, aber nicht konkretisiert.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "balanced",
+            "direction": "mixed",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle belegt angekündigte Beratungen, anhaltende Kritik und Merz’ Aussage zum Verbleib im Amt, aber keinen Beschluss oder beobachteten demokratischen Effekt. Positive und negative institutionelle Pfade bleiben bedingt und richtungsoffen.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Die angekündigten Beratungen können innerparteiliche Rechenschaft und politische Kursklärung stärken.",
+                "mechanism": "Parteigremien und Fraktion beraten über Wahlergebnisse, Kritik und den Regierungskurs.",
+                "recipients": [
+                  "staat",
+                  "staatliche Institutionen",
+                  "waehlerinnen"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Die Sitzungen müssen stattfinden und zu nachvollziehbaren politischen oder personellen Entscheidungen führen.",
+                "reference_space": "Deutschland; CDU, Unionsfraktion und Koalitionssteuerung",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Offene Beratungen können Verantwortungszuordnung und politische Kursklärung verbessern.",
+                "source_support": "Die Quelle belegt angekündigte Sitzungen, Kritik und eine geplante Zusammenkunft der Unionsfraktion, aber kein Ergebnis.",
+                "limitations": "Keine Informationen zu Teilnehmerpositionen, Mehrheiten, Beschlüssen oder Folgen für parlamentarische Kontrolle.",
+                "first_order": "Parteigremien und Fraktion werden zu einem Beratungsprozess einberufen.",
+                "second_order": "Ein Ergebnis könnte Koalitionskoordination, Verantwortungszuordnung und politische Kontrolle verändern.",
+                "third_order": "Eine nachvollziehbare Kursklärung könnte demokratische Korrekturfähigkeit stärken; Eintritt und Dauer sind offen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die institutionelle Bedeutung reicht von begrenzter Beratung bis zu moderater Kurs- oder Verantwortungsänderung."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Belege für ein Ergebnis der Beratungen oder einen bereits eingetretenen demokratischen Effekt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "CDU, Unionsfraktion und Koalition können staatliche Entscheidungen beeinflussen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt anhaltende Kritik und eine Bewährungsprobe, aber keine Entscheidung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die angekündigte Sitzungsfolge kann über den unmittelbaren Termin hinauswirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische Beratungen sind grundsätzlich korrigierbar; spätere Entscheidungen könnten dauerhafter sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Politische Mehrheiten können gegenüber innerparteilichen Konflikten empfindlich sein.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad reicht von Parteiberatung über Fraktion und Koalition bis zur Regierungssteuerung.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze ist noch nicht verletzt; der positive Pfad bleibt bedingt.",
+                  "reference_frame": "demokratische Rechenschaft und Korrekturfähigkeit",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "direction": "negative",
+                "label": "Ein ungelöster parteiinterner Konflikt könnte die Koordination von Regierung und Fraktion erschweren.",
+                "mechanism": "Anhaltende Kritik und ungeklärte Führungsfragen können Entscheidungsprozesse verlangsamen oder blockieren.",
+                "recipients": [
+                  "staat",
+                  "staatliche Institutionen"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Beratungsprozess müsste ohne tragfähige Klärung bleiben und den Konflikt verschärfen.",
+                "reference_space": "Regierungs- und Fraktionskoordination in Deutschland",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Kritik und Führungsdruck werden als mögliche Koordinationsrisiken, nicht als eingetretene Blockade behandelt.",
+                "source_support": "Belegt sind anhaltende Kritik, parteiinterner Druck und geplante Sitzungen.",
+                "limitations": "Keine konkrete Blockade, Mehrheitsverschiebung oder institutionelle Einschränkung ist belegt.",
+                "first_order": "Zusätzlicher Beratungs- und Abstimmungsbedarf.",
+                "second_order": "Mögliche Verzögerung gemeinsamer Regierungspositionen.",
+                "third_order": "Eine dauerhafte Blockade könnte politische Korrekturfähigkeit schwächen; dies ist nicht belegt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Das Risiko reicht von keiner Folge bis zu begrenzter Koordinationsbeeinträchtigung.",
+                  "},": null
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Belege für eine bereits eingetretene Blockade oder einen Verlust parlamentarischer Handlungsfähigkeit.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen wäre vor allem die politische Koordination von Regierung und Fraktion.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Blockadewirkung ist nicht belegt.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer hängt vom Ausgang der Beratungen ab.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Koordinationsprobleme wären grundsätzlich politisch korrigierbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Führungs- und Koalitionskonflikte können politische Entscheidungsfähigkeit empfindlich machen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der mögliche Pfad reicht über Parteigremien in Regierung und Fraktion.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Grenze demokratischer Korrekturfähigkeit ist noch nicht überschritten.",
+                  "reference_frame": "parlamentarische Verantwortlichkeit und Regierungsfähigkeit",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Demokratisch besteht ein materielles, aber richtungsoffenes Potenzial: Beratungen können Rechenschaft und Kursklärung ermöglichen, zugleich aber bei ungelöstem Konflikt Koordination schwächen.",
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive und negative institutionelle Pfade sind vergleichbar. Mangels Ergebnissen ist keine Richtung dominant."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Die angekündigten Beratungen können innerparteiliche Rechenschaft und politische Kursklärung stärken.",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Die angekündigten Beratungen können innerparteiliche Rechenschaft und politische Kursklärung stärken.",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "analysis_complete": true,
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T00:55:10.155Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Angekündigte Beratungen, Reiseabsage und Merz zugeschriebene Aussagen."
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "mechanism"
+            ],
+            "supported_claim": "Die Beratungen bilden einen möglichen Ausgangspunkt für politische Prioritäten und Koordination; konkrete Wirkungen sind nicht belegt."
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "counter_evidence"
+            ],
+            "supported_claim": "Merz’ Aussage, im Amt bleiben und den Regierungskurs mit der SPD fortsetzen zu wollen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "none",
+          "direction": "open",
+          "magnitude": 1,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle belegt keinen direkten menschlichen Effekt. Ein indirekter Pfad über spätere politische Prioritäten ist möglich, doch Richtung, Reichweite und Eintritt bleiben unbekannt.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Politische Beratungen könnten spätere Entscheidungen mit Folgen für Versorgung, soziale Prioritäten oder Verteilung vorbereiten.",
+              "mechanism": "Parteiberatungen können politische Prioritäten und Koalitionskoordination beeinflussen; konkrete Sachentscheidungen sind nicht belegt.",
+              "recipients": [
+                "haushalte",
+                "beschaeftigte",
+                "patientinnen"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Sitzungen müssen stattfinden und in konkrete politische Entscheidungen mit menschlichen Auswirkungen münden.",
+              "reference_space": "Deutschland; mögliche spätere Regierungs- und Koalitionsentscheidungen",
+              "time_horizon": "mittelfristig nach den angekündigten Beratungen",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Politische Prioritäten werden möglicherweise über Partei- und Koalitionsentscheidungen in staatliches Handeln übersetzt.",
+              "source_support": "Die Quelle belegt Beratungsankündigungen, aber keine Sachentscheidungen oder Folgen für Menschen.",
+              "limitations": "Keine Angaben zu betroffenen Programmen, Gruppen, Größenordnung oder Richtung einer möglichen Entscheidung.",
+              "first_order": "Beratungen verändern zunächst nur den politischen Entscheidungsprozess.",
+              "second_order": "Nur bei konkreten Vereinbarungen könnten Prioritäten für soziale oder versorgungsbezogene Politik beeinflusst werden.",
+              "third_order": "Eine dauerhafte politische Neuorientierung könnte Verteilung und Versorgung mittelbar verändern; dieser Pfad ist nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne konkrete Sachentscheidung reicht das plausible Potenzial von keiner bis zu begrenzter menschlicher Tragweite."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle weist einen eingetretenen menschlichen Effekt oder eine konkrete politische Maßnahme aus.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffene wären nur über spätere politische Entscheidungen erreichbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Belastung oder Verbesserung ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer möglicher Folgen hängt von späteren Entscheidungen ab.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible menschliche Zustandsänderung ist belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders betroffene Gruppen werden nicht konkret genannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Pfad bleibt indirekt und institutionell vermittelt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für Gesundheit, Versorgung oder Verteilung wird nicht berührt.",
+                "reference_frame": "Schutz von Gesundheit, Versorgung und sozialer Teilhabe",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "open",
+              "label": "Die Reiseabsage könnte politische Aufmerksamkeit kurzfristig von internationalen Aufgaben auf innerparteiliche Beratung verlagern.",
+              "mechanism": "Terminverlagerung und politische Priorisierung könnten die Arbeitsorganisation verändern.",
+              "recipients": [
+                "staat",
+                "europa"
+              ],
+              "magnitude": 0,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "very_low",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Absage müsste zu einer tatsächlichen Verlagerung von Ressourcen mit menschlichen Folgen führen.",
+              "reference_space": "politische Arbeitsorganisation",
+              "time_horizon": "kurzfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Eine solche Verlagerung wird nicht automatisch angenommen.",
+              "source_support": "Belegt sind die Reiseabsage und die geplante Vertretung durch den Außenminister.",
+              "limitations": "Keine Angaben zu Arbeitsumfang, betroffenen Personen oder Folgen.",
+              "first_order": "Vertretung des Kanzlers durch den Außenminister.",
+              "second_order": "Mögliche Verschiebung politischer Aufmerksamkeit.",
+              "third_order": "Keine belastbare systemische Folge ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der mögliche menschliche Einfluss ist mangels konkreter Betroffenheit vernachlässigbar bis gering."
+              },
+              "negligibility_rationale": "Für Menschen ist innerhalb des belegten Zeit- und Sachrahmens keine konkrete Zustandsänderung ausgewiesen.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzlichen gelieferten Belege für menschliche Folgen der Reiseabsage.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine konkrete menschliche Empfängergruppe ist belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine konkrete Belastung oder Verbesserung ist belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine Wirkungsdauer ist ausgewiesen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Folge ist erkennbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine vulnerable Gruppe wird konkret betroffen genannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Der Pfad bleibt eine unbelegte organisatorische Möglichkeit.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete menschliche Schutzgrenze ist betroffen.",
+                "reference_frame": "Schutz von Menschen und Versorgung",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "rationale": "Für Menschen besteht nur ein indirektes, niedriges und richtungsoffenes Potenzial über spätere politische Entscheidungen.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Politische Beratungen könnten spätere Entscheidungen mit Folgen für Versorgung, soziale Prioritäten oder Verteilung vorbereiten.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Politische Beratungen könnten spätere Entscheidungen mit Folgen für Versorgung, soziale Prioritäten oder Verteilung vorbereiten.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "dominance": "none",
+          "direction": "open",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferten Quellen enthalten keine Umweltmaßnahme, Emissionsangabe, Infrastrukturentscheidung oder ökologische Zustandsänderung. Ein Umweltpfad über spätere politische Prioritäten bleibt eine konkrete Wissensgrenze.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Ein möglicher späterer Einfluss auf Umweltpolitik ist über den politischen Beratungsprozess denkbar, aber nicht konkretisiert.",
+              "mechanism": "Partei- und Koalitionsentscheidungen könnten politische Prioritäten beeinflussen.",
+              "recipients": [
+                "natur",
+                "staat"
+              ],
+              "magnitude": 0,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Es müsste zunächst eine konkrete umweltrelevante Entscheidung aus den Beratungen hervorgehen.",
+              "reference_space": "Deutschland; spätere politische Prioritäten",
+              "time_horizon": "nicht bestimmbar",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ein Zusammenhang zwischen innerparteilicher Beratung und Umweltpolitik wird nur als Möglichkeit betrachtet.",
+              "source_support": "Die Quelle nennt keine Umweltpolitik oder ökologische Maßnahme.",
+              "limitations": "Keine Daten zu Emissionen, Energie, Natur, Ressourcen oder betroffenen Ökosystemen.",
+              "first_order": "Beratungen verändern den politischen Prozess, nicht nachweisbar den Umweltzustand.",
+              "second_order": "Eine spätere politische Priorität könnte Umweltentscheidungen beeinflussen.",
+              "third_order": "Ökologische Systemfolgen sind aus den gelieferten Informationen nicht ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Mangels konkreter Umweltentscheidung bleibt das Potenzial vernachlässigbar bis gering."
+              },
+              "negligibility_rationale": "Im belegten Sachverhalt ist keine ökologische Zustandsänderung oder konkrete Umweltmaßnahme enthalten.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle enthält einen konkreten Umweltbezug, der eine stärkere Modellierung tragen würde.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine Umweltbetroffenen oder räumliche Reichweite sind belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Belastung oder Verbesserung ist belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine Dauer eines Umweltimpulses ist bekannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible ökologische Veränderung ist belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine verletzlichen Ökosysteme werden genannt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Wirkmechanismus ist konkret ausgewiesen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle berührt keine konkrete ökologische Schutzgrenze.",
+                "reference_frame": "Schutz von Klima, Natur und Ressourcen",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der Nachrichtenkern betrifft politische Beratungen und enthält keinen konkreten Umweltbezug.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein möglicher späterer Einfluss auf Umweltpolitik ist über den politischen Beratungsprozess denkbar, aber nicht konkretisiert.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Ein möglicher späterer Einfluss auf Umweltpolitik ist über den politischen Beratungsprozess denkbar, aber nicht konkretisiert.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "balanced",
+          "direction": "mixed",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle belegt angekündigte Beratungen, anhaltende Kritik und Merz’ Aussage zum Verbleib im Amt, aber keinen Beschluss oder beobachteten demokratischen Effekt. Positive und negative institutionelle Pfade bleiben bedingt und richtungsoffen.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Die angekündigten Beratungen können innerparteiliche Rechenschaft und politische Kursklärung stärken.",
+              "mechanism": "Parteigremien und Fraktion beraten über Wahlergebnisse, Kritik und den Regierungskurs.",
+              "recipients": [
+                "staat",
+                "staatliche Institutionen",
+                "waehlerinnen"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Die Sitzungen müssen stattfinden und zu nachvollziehbaren politischen oder personellen Entscheidungen führen.",
+              "reference_space": "Deutschland; CDU, Unionsfraktion und Koalitionssteuerung",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Offene Beratungen können Verantwortungszuordnung und politische Kursklärung verbessern.",
+              "source_support": "Die Quelle belegt angekündigte Sitzungen, Kritik und eine geplante Zusammenkunft der Unionsfraktion, aber kein Ergebnis.",
+              "limitations": "Keine Informationen zu Teilnehmerpositionen, Mehrheiten, Beschlüssen oder Folgen für parlamentarische Kontrolle.",
+              "first_order": "Parteigremien und Fraktion werden zu einem Beratungsprozess einberufen.",
+              "second_order": "Ein Ergebnis könnte Koalitionskoordination, Verantwortungszuordnung und politische Kontrolle verändern.",
+              "third_order": "Eine nachvollziehbare Kursklärung könnte demokratische Korrekturfähigkeit stärken; Eintritt und Dauer sind offen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die institutionelle Bedeutung reicht von begrenzter Beratung bis zu moderater Kurs- oder Verantwortungsänderung."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Belege für ein Ergebnis der Beratungen oder einen bereits eingetretenen demokratischen Effekt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "CDU, Unionsfraktion und Koalition können staatliche Entscheidungen beeinflussen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt anhaltende Kritik und eine Bewährungsprobe, aber keine Entscheidung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die angekündigte Sitzungsfolge kann über den unmittelbaren Termin hinauswirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische Beratungen sind grundsätzlich korrigierbar; spätere Entscheidungen könnten dauerhafter sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Politische Mehrheiten können gegenüber innerparteilichen Konflikten empfindlich sein.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad reicht von Parteiberatung über Fraktion und Koalition bis zur Regierungssteuerung.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze ist noch nicht verletzt; der positive Pfad bleibt bedingt.",
+                "reference_frame": "demokratische Rechenschaft und Korrekturfähigkeit",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "direction": "negative",
+              "label": "Ein ungelöster parteiinterner Konflikt könnte die Koordination von Regierung und Fraktion erschweren.",
+              "mechanism": "Anhaltende Kritik und ungeklärte Führungsfragen können Entscheidungsprozesse verlangsamen oder blockieren.",
+              "recipients": [
+                "staat",
+                "staatliche Institutionen"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "low",
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Beratungsprozess müsste ohne tragfähige Klärung bleiben und den Konflikt verschärfen.",
+              "reference_space": "Regierungs- und Fraktionskoordination in Deutschland",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Kritik und Führungsdruck werden als mögliche Koordinationsrisiken, nicht als eingetretene Blockade behandelt.",
+              "source_support": "Belegt sind anhaltende Kritik, parteiinterner Druck und geplante Sitzungen.",
+              "limitations": "Keine konkrete Blockade, Mehrheitsverschiebung oder institutionelle Einschränkung ist belegt.",
+              "first_order": "Zusätzlicher Beratungs- und Abstimmungsbedarf.",
+              "second_order": "Mögliche Verzögerung gemeinsamer Regierungspositionen.",
+              "third_order": "Eine dauerhafte Blockade könnte politische Korrekturfähigkeit schwächen; dies ist nicht belegt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Das Risiko reicht von keiner Folge bis zu begrenzter Koordinationsbeeinträchtigung.",
+                "},": null
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Belege für eine bereits eingetretene Blockade oder einen Verlust parlamentarischer Handlungsfähigkeit.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen wäre vor allem die politische Koordination von Regierung und Fraktion.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Blockadewirkung ist nicht belegt.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer hängt vom Ausgang der Beratungen ab.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Koordinationsprobleme wären grundsätzlich politisch korrigierbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Führungs- und Koalitionskonflikte können politische Entscheidungsfähigkeit empfindlich machen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der mögliche Pfad reicht über Parteigremien in Regierung und Fraktion.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Grenze demokratischer Korrekturfähigkeit ist noch nicht überschritten.",
+                "reference_frame": "parlamentarische Verantwortlichkeit und Regierungsfähigkeit",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Demokratisch besteht ein materielles, aber richtungsoffenes Potenzial: Beratungen können Rechenschaft und Kursklärung ermöglichen, zugleich aber bei ungelöstem Konflikt Koordination schwächen.",
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive und negative institutionelle Pfade sind vergleichbar. Mangels Ergebnissen ist keine Richtung dominant."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Die angekündigten Beratungen können innerparteiliche Rechenschaft und politische Kursklärung stärken.",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Die angekündigten Beratungen können innerparteiliche Rechenschaft und politische Kursklärung stärken.",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "first_order",
+            "path": "CDU, Parteiführung und Unionsfraktion beraten über Wahlergebnisse und parteiinternen Druck.",
+            "direction": "open",
+            "condition": "Nur wenn die angekündigten Sitzungen tatsächlich stattfinden und über politische oder personelle Fragen beraten wird, verändert sich der innerparteiliche Entscheidungsprozess.",
+            "evidence": "plausible_path",
+            "claim_ids": [],
+            "dimensions": [
+              "democracy"
+            ]
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "europa"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T00:52:02.546Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-15T23:29:52.000Z",
+      "last_updated": "2026-09-16T00:55:10.150Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-9a9364b0f68e957d3099",
+      "case_file": null,
+      "source_published_at": "2026-09-16T00:26:55.000Z",
+      "published_at": "2026-09-16T00:55:10.150Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die angekündigten Sitzungen sollen zeigen, wie CDU, Unionsfraktion und Koalition auf die Wahlergebnisse und den parteiinternen Druck reagieren.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Abgehaltene Sitzungen, veröffentlichte Beschlüsse oder neue Personal- und Kursaussagen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e4abc79adb82d100",
+          "announced_at": "2026-09-16T00:26:55.000Z",
+          "follow_up_date": "2026-09-23T00:55:10.150Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/merz-und-cdu-parteispitze-setzen-beratungen-an-kanzlerrede-auf-uno-vollversammlung-abgesagt-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T00:26:55.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e4954c3d2658fea3",
       "title_image": {
