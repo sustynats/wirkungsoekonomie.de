@@ -11,6 +11,7 @@ import { bridgeSession } from './bridge/remote.mjs';
 import { acquireLane } from './bridge/acquire-lane.mjs';
 import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
 import { decodeXml } from './lib.mjs';
+import { transcribeEpisode, fetchSubtitleTranscript } from './sendungs-transkript.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const EPISODE_VERSION = 'sendungs-kandidaten-1';
@@ -102,7 +103,10 @@ export function buildEpisodeRequest(episode, show, { owner, now, transcript = nu
   const brief = [`${label}: ${show.show_name} – „${episode.title}“ vom ${germanDate(episode.published_at)}.`,
     episode.summary ? `Beschreibung laut Anbieter: ${episode.summary}` : null,
     episode.duration ? `Dauer: ${germanDuration(episode.duration)}.` : null,
-    transcript ? `Das offizielle Transkript des Anbieters (${transcript.type}${transcript.truncated ? ', gekürzt' : ''}) liegt dem Auftrag unter origin.transcript bei; Zeitmarken daraus verwenden.` : 'Ein Transkript liegt nicht bei; Sendungsseite, Begleittext und Presseberichte zur Folge sind die Grundlage.',
+    transcript ? `${({
+      accessibility_subtitles: `Die amtlichen Untertitel der Sendung (Barrierefreiheit des Senders, ${transcript.segments || 0} Abschnitte mit Zeitmarken${transcript.truncated ? ', gekürzt' : ''}) liegen dem Auftrag unter origin.transcript bei. Sie sind die verbindliche Wortlautgrundlage; Sprecherkürzel wie „FB:“ kennzeichnen die Person. Live-Untertitel können kürzen, deshalb Zitate nur so weit wie belegt.`,
+      openai_whisper: `Eine eigene maschinelle Abschrift der Sendung (automatische Spracherkennung, ${transcript.segments || 0} Abschnitte mit Zeitmarken${transcript.truncated ? ', gekürzt' : ''}) liegt dem Auftrag unter origin.transcript bei. Sie ist keine amtliche Mitschrift: Hörfehler bei Namen und Zahlen einkalkulieren und nur belegbare Aussagen zuschreiben.`,
+    }[transcript.origin] || `Das offizielle Transkript des Anbieters (${transcript.type}${transcript.truncated ? ', gekürzt' : ''}) liegt dem Auftrag unter origin.transcript bei.`)} Zeitmarken daraus verwenden.` : 'Ein Transkript liegt nicht bei; Sendungsseite, Begleittext und Presseberichte zur Folge sind die Grundlage.',
     `Auftrag: ${label}-Beitrag nach Redaktionsvertrag. Kontext, Originalargument fair und mit Zeitmarken, Quellenprüfung, Wirkungspotenzial für Mensch, Planet und Demokratie, zuletzt „Meine Einordnung“ nur als Vorschlag zur Bestätigung. Reicht die Grundlage nicht, HOLD mit konkretem Bedarf. Vorschlag des Redaktionsworkers aus dem Sendungsfeed (${show.provider}).`]
     .filter(Boolean).join('\n').slice(0, 6000);
   const content = { kind, brief, links, author_notes: '', urgent: false, publication_intent: 'final_approval_required', attachments: [] };
@@ -122,8 +126,59 @@ export function buildEpisodeRequest(episode, show, { owner, now, transcript = nu
 }
 
 export function loadShows(root = ROOT) {
-  return (JSON.parse(fs.readFileSync(path.join(root, 'data/news/show-feeds.json'), 'utf8')).shows || []).filter((show) => show.enabled !== false && /^https:\/\//.test(show.feed || ''));
+  return (JSON.parse(fs.readFileSync(path.join(root, 'data/news/show-feeds.json'), 'utf8')).shows || [])
+    .filter((show) => show.enabled !== false && (/^https:\/\//.test(show.feed || '') || (show.mediathek?.title && show.mediathek?.channel)));
 }
+
+// MediathekViewWeb-Abfrage statt RSS: nur sie liefert url_subtitle, also die
+// amtlichen Untertitel. Dieselbe Folge steht oft mehrfach in der Liste (mit und
+// ohne Untertitel); je Folge gewinnt die Fassung mit Untertiteln.
+export const MEDIATHEK_QUERY_URL = 'https://mediathekviewweb.de/api/query';
+export function mediathekQueryBody(show, size = 12) {
+  return JSON.stringify({ queries: [{ fields: ['title'], query: show.mediathek.title }, { fields: ['channel'], query: show.mediathek.channel }],
+    sortBy: 'timestamp', sortOrder: 'desc', future: false, offset: 0, size });
+}
+// Dieselbe Folge liegt mehrfach in der Liste: Fassung mit Untertiteln, Fassung
+// in Gebärdensprache, Hörfassung, dazu kurze Vorschauclips. Der Schlüssel
+// ignoriert die Barrierefreiheitskennzeichnung, und je Folge gewinnt die
+// Fassung mit amtlichen Untertiteln.
+export const ACCESSIBILITY_VARIANT = /\s*\((?:Gebärdensprache|mit Gebärdensprache|Hörfassung|Audiodeskription|mit Audiodeskription|AD|UT|mit Untertiteln)\)\s*$/i;
+export const episodeKey = (title, seconds) => `${String(title).replace(ACCESSIBILITY_VARIANT, '').replace(/\s+/g, ' ').trim().toLowerCase()}|${seconds}`;
+
+export function mediathekEpisodes(rows, show) {
+  const byEpisode = new Map();
+  for (const row of Array.isArray(rows) ? rows : []) {
+    const title = String(row?.title || '').trim();
+    const seconds = Number(row?.timestamp);
+    if (!title || !Number.isFinite(seconds)) continue;
+    if (show.min_duration_seconds && Number(row.duration) && Number(row.duration) < show.min_duration_seconds) continue;
+    const page = String(row.url_website || '');
+    const media = String(row.url_video_low || row.url_video || '');
+    if (!/^https:\/\//.test(page) && !/^https:\/\//.test(media)) continue;
+    const key = episodeKey(title, seconds);
+    const candidate = { show_id: show.id, title: title.replace(ACCESSIBILITY_VARIANT, '').trim().slice(0, 200), page, media,
+      summary: String(row.description || '').replace(/\s+/g, ' ').trim().slice(0, 4000),
+      published_at: new Date(seconds * 1000).toISOString(), guid: String(row.id || page || media),
+      duration: Number(row.duration) || null, subtitle_url: /^https:\/\//.test(row.url_subtitle || '') ? row.url_subtitle : null, transcripts: [] };
+    const previous = byEpisode.get(key);
+    if (!previous || (!previous.subtitle_url && candidate.subtitle_url)) byEpisode.set(key, candidate);
+  }
+  return [...byEpisode.values()];
+}
+export async function fetchMediathekEpisodes(show, fetchImpl = fetch, timeoutMs = 25000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetchImpl(MEDIATHEK_QUERY_URL, { method: 'POST', signal: controller.signal,
+      headers: { 'Content-Type': 'text/plain', 'User-Agent': 'Mozilla/5.0 (Wirkungsticker Redaktionsworker)' }, body: mediathekQueryBody(show) });
+    if (!response.ok) throw new Error(`MEDIATHEK_QUERY_HTTP_${response.status}`);
+    const data = await response.json();
+    return mediathekEpisodes(data?.result?.results, show);
+  } finally { clearTimeout(timer); }
+}
+export const showEpisodes = async (show, fetchImpl = fetch) => show.mediathek
+  ? fetchMediathekEpisodes(show, fetchImpl)
+  : parseEpisodes(await fetchShowFeed(show, fetchImpl), show);
 
 export async function fetchShowFeed(show, fetchImpl = fetch, timeoutMs = 20000) {
   const controller = new AbortController();
@@ -136,7 +191,9 @@ export async function fetchShowFeed(show, fetchImpl = fetch, timeoutMs = 20000) 
 }
 
 export async function proposeEpisodeCandidates({ session = null, root = ROOT, now = new Date().toISOString(), env = process.env, fetchImpl = fetch, shows = null, laneWait = null,
-  limit = Number(env.WOEK_EPISODE_CANDIDATES_PER_RUN || 1), maxPerDay = Number(env.WOEK_EPISODE_CANDIDATES_PER_DAY || 3), maxAgeDays = Number(env.WOEK_EPISODE_MAX_AGE_DAYS || 7) } = {}) {
+  limit = Number(env.WOEK_EPISODE_CANDIDATES_PER_RUN || 1), maxPerDay = Number(env.WOEK_EPISODE_CANDIDATES_PER_DAY || 3), maxAgeDays = Number(env.WOEK_EPISODE_MAX_AGE_DAYS || 7),
+  transcribe = env.WOEK_EPISODE_TRANSCRIBE !== 'false', maxTranscriptsPerDay = Number(env.WOEK_EPISODE_TRANSCRIPTS_PER_DAY || 2), transcribeImpl = transcribeEpisode,
+  subtitleWaitHours = Number(env.WOEK_EPISODE_SUBTITLE_WAIT_HOURS || 18) } = {}) {
   let store, transport;
   try { ({ store, transport } = session || bridgeSession(env)); }
   catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, proposed: [] }; throw error; }
@@ -162,7 +219,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     const feedErrors = [], fresh = [];
     for (const show of shows || loadShows(root)) {
       try {
-        const episodes = selectNewEpisodes(parseEpisodes(await fetchShowFeed(show, fetchImpl), show), now, { maxAgeDays, limit: 3 });
+        const episodes = selectNewEpisodes(await showEpisodes(show, fetchImpl), now, { maxAgeDays, limit: 3 });
         for (const episode of episodes) {
           if (await store.observation(`github-episode:${show.id}:${hash(episode.guid).slice(0, 32)}`)) continue;
           if (seen(episode.page) || seen(episode.media)) continue;
@@ -172,8 +229,29 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     }
     fresh.sort((a, b) => b.episode.published_at.localeCompare(a.episode.published_at));
     const proposed = [];
+    const transcriptDay = (await store.observation(`github-transcript-day:${day}`)) || { day, transcribed: 0, cost_usd: 0 };
+    const transcriptErrors = [], waiting = [];
     for (const { episode, show } of fresh.slice(0, Math.max(0, Math.min(limit, maxPerDay - counter.proposed)))) {
-      const transcript = await fetchTranscript(pickTranscript(episode.transcripts), fetchImpl);
+      // Reihenfolge des Wortlauts: offizielles Podcast-Transkript, dann die
+      // amtlichen Untertitel für Hörgeschädigte, zuletzt eigene Spracherkennung.
+      let transcript = await fetchTranscript(pickTranscript(episode.transcripts), fetchImpl);
+      if (!transcript) transcript = await fetchSubtitleTranscript(episode.subtitle_url, fetchImpl);
+      // Untertitel erscheinen einige Stunden nach der Sendung. Solange das
+      // Wartefenster läuft, bleibt die Folge liegen statt ohne Wortlaut in eine
+      // Rückfrage zu laufen (16.09.: Lanz vom 15.09. ohne Untertitel).
+      const ageHours = (Date.parse(now) - Date.parse(episode.published_at)) / 3600000;
+      if (!transcript && ageHours < subtitleWaitHours) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)) }); continue; }
+      if (!transcript && transcribe && transcriptDay.transcribed < maxTranscriptsPerDay) {
+        try {
+          const machine = await transcribeImpl(episode, { apiKey: env.OPENAI_API_KEY, fetchImpl });
+          if (machine) {
+            transcript = machine;
+            transcriptDay.transcribed += 1;
+            transcriptDay.cost_usd = Number((transcriptDay.cost_usd + (machine.cost_usd || 0)).toFixed(4));
+            await store.observe(`github-transcript-day:${day}`, transcriptDay);
+          }
+        } catch (error) { transcriptErrors.push({ show_id: show.id, error: String(error?.message || error).slice(0, 80) }); }
+      }
       const { job, fingerprint } = buildEpisodeRequest(episode, show, { owner, now, transcript });
       const key = `github-episode:${show.id}:${hash(episode.guid).slice(0, 32)}`;
       if (await store.observation(`intake-fingerprint:${fingerprint}`)) { await store.observe(key, { job_id: null, fingerprint, at: now, version: EPISODE_VERSION, duplicate: true }); continue; }
@@ -181,10 +259,10 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
       await store.put(job);
       await store.observe(`intake-fingerprint:${fingerprint}`, { job_id: job.input.job_id });
       await transport.writeAtomic(bridgePath('00_INBOX', `${job.input.job_id}.input.json`), job.input);
-      proposed.push({ job_id: job.input.job_id, show_id: show.id, kind: job.intake.kind, title: episode.title, published_at: episode.published_at, transcript_chars: transcript?.chars || 0 });
+      proposed.push({ job_id: job.input.job_id, show_id: show.id, kind: job.intake.kind, title: episode.title, published_at: episode.published_at, transcript_chars: transcript?.chars || 0, transcript_origin: transcript?.origin || (transcript ? 'provider' : null), transcript_cost_usd: transcript?.cost_usd || 0 });
       counter.proposed += 1; await store.observe(`github-episode-day:${day}`, counter);
     }
-    return { status: 'ok', day, checked_shows: (shows || loadShows(root)).length, fresh_episodes: fresh.length, feed_errors: feedErrors, proposed };
+    return { status: 'ok', day, checked_shows: (shows || loadShows(root)).length, fresh_episodes: fresh.length, feed_errors: feedErrors, transcript_errors: transcriptErrors, waiting_for_subtitles: waiting, transcribed_today: transcriptDay.transcribed, transcript_cost_today_usd: transcriptDay.cost_usd, proposed };
   } finally { if (acquired) await store.release(true).catch(() => {}); }
 }
 

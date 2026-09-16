@@ -1,45 +1,54 @@
 {
   "version": "2026-09-16.1",
-  "note": "Episodenquellen der verfolgten Sendungen für automatische Nachgesehen/Nachgehört-Aufträge (scripts/news/sendungs-kandidaten.mjs). Logo-Rechte stehen getrennt in show-visual-identities.json.",
+  "note": "Episodenquellen der verfolgten Sendungen für automatische Nachgesehen/Nachgehört-Aufträge (scripts/news/sendungs-kandidaten.mjs). Mediathek-Sendungen laufen über die MediathekViewWeb-Abfrage, weil sie die amtlichen Untertitel für Hörgeschädigte (Barrierefreiheit) mitliefert; Podcasts über ihren offiziellen Feed mit podcast:transcript. Logo-Rechte stehen getrennt in show-visual-identities.json.",
   "shows": [
     {
       "id": "maybrit-illner",
       "show_name": "maybrit illner",
       "kind": "watched",
-      "feed": "https://www.zdf.de/rss/podcast/audio/zdf/politik/maybrit-illner",
-      "provider": "ZDF, offizieller Podcast-Feed",
+      "provider": "ZDF-Mediathek über MediathekViewWeb, amtliche Untertitel",
       "min_duration_seconds": 1500,
-      "enabled": true
+      "enabled": true,
+      "mediathek": {
+        "title": "maybrit illner",
+        "channel": "ZDF"
+      }
     },
     {
       "id": "markus-lanz",
       "show_name": "Markus Lanz",
       "kind": "watched",
-      "feed": "https://mediathekviewweb.de/feed?query=Markus+Lanz+%21ZDF",
-      "match": "^Markus Lanz",
-      "provider": "ZDF-Mediathek über MediathekViewWeb",
+      "provider": "ZDF-Mediathek über MediathekViewWeb, amtliche Untertitel",
       "min_duration_seconds": 1500,
-      "enabled": true
+      "enabled": true,
+      "mediathek": {
+        "title": "Markus Lanz",
+        "channel": "ZDF"
+      }
     },
     {
       "id": "maithink-x",
       "show_name": "MAITHINK X",
       "kind": "watched",
-      "feed": "https://mediathekviewweb.de/feed?query=MAITHINK+X+%21ZDFneo",
-      "match": "MAITHINK",
-      "provider": "ZDFneo-Mediathek über MediathekViewWeb",
+      "provider": "ZDF-Mediathek über MediathekViewWeb, amtliche Untertitel",
       "min_duration_seconds": 900,
-      "enabled": true
+      "enabled": true,
+      "mediathek": {
+        "title": "MAITHINK X",
+        "channel": "ZDF"
+      }
     },
     {
       "id": "terra-x-lesch-co",
       "show_name": "Terra X Lesch & Co",
       "kind": "watched",
-      "feed": "https://mediathekviewweb.de/feed?query=Terra+X+Lesch+%26+Co+%21ZDF",
-      "match": "Lesch",
-      "provider": "ZDF-Mediathek über MediathekViewWeb",
+      "provider": "ZDF-Mediathek über MediathekViewWeb, amtliche Untertitel",
       "min_duration_seconds": 600,
-      "enabled": true
+      "enabled": true,
+      "mediathek": {
+        "title": "Lesch",
+        "channel": "ZDF"
+      }
     },
     {
       "id": "lanz-precht",

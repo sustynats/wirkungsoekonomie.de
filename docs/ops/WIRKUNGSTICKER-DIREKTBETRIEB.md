@@ -174,11 +174,22 @@ Push (`--finalize`). Eine gestörte Redaktion hält den Nachrichtenlauf nie an.
    ZDF-Sendungsseite, NEU DENKEN über den Podigee-Feed). Neue Folgen der letzten sieben Tage werden je
    Lauf höchstens eine, je Tag höchstens drei (`WOEK_EPISODE_CANDIDATES_PER_RUN/_PER_DAY`) als regulärer
    Auftrag eingereiht: `kind` watched/listened, Beschreibung des Anbieters, Sendungsseite und Mediendatei
-   als Links. Liefert der Feed ein offizielles Transkript (`podcast:transcript`, bei Lanz + Precht und
-   NEU DENKEN als VTT mit Zeitmarken), reist es im Auftragspaket unter `origin.transcript` mit (bis
-   150 000 Zeichen), damit der eine Modellaufruf den Wortlaut kennt. ZDF-Sendungen haben kein Transkript;
-   dort arbeitet der Worker mit Sendungsseite und Web-Suche und meldet sonst HOLD. Folgen, die Natalie
-   bereits beauftragt oder veröffentlicht hat, werden über die URL erkannt und nicht erneut vorgeschlagen.
+   als Links. Folgen, die Natalie bereits beauftragt oder veröffentlicht hat, werden über die URL erkannt
+   und nicht erneut vorgeschlagen.
+   **Wortlaut in drei Stufen (seit 16.09., Hinweis von Natalie auf die Barrierefreiheit):**
+   (1) offizielles Podcast-Transkript (`podcast:transcript`, bei Lanz + Precht und NEU DENKEN als VTT),
+   (2) **amtliche Untertitel der Sendung** für Hörgeschädigte: Mediathek-Sendungen laufen deshalb über die
+   MediathekViewWeb-Abfrage (`mediathek: {title, channel}` in `show-feeds.json`), weil nur sie
+   `url_subtitle` mitliefert; EBU-TT/TTML, WebVTT und SRT werden zu Zeilen „HH:MM:SS Text“ gelesen
+   (Lanz vom 10.09.: 904 Abschnitte, 48 000 Zeichen, mit Sprecherkürzeln, kostenlos). Fassungen in
+   Gebärdensprache und Hörfassungen sind dieselbe Folge; je Folge gewinnt die Fassung mit Untertiteln.
+   (3) **eigene Spracherkennung** als letzte Stufe (`WOEK_EPISODE_TRANSCRIBE`, Deckel
+   `WOEK_EPISODE_TRANSCRIPTS_PER_DAY`, rund 0,45 USD je Sendung): ffmpeg zieht die Tonspur (mono, 16 kHz,
+   32 kbit/s, unter 25 MB), `whisper-1` liefert Segmente mit Zeitmarken.
+   Untertitel erscheinen einige Stunden nach der Sendung. Solange `WOEK_EPISODE_SUBTITLE_WAIT_HOURS`
+   (18) nicht abgelaufen ist, bleibt eine Folge ohne Wortlaut liegen, statt in eine Rückfrage zu laufen;
+   der Auftrag nennt die Herkunft des Wortlauts ausdrücklich (amtliche Untertitel sind verbindlich,
+   eine eigene Abschrift kann Hörfehler enthalten). Nichts davon wird veröffentlicht.
    `author_notes` bleiben leer; der Entwurf ist ein Vorschlag zur Bestätigung.
 9. Tagesdeckel des Workers seit 16.09. auf 16 Aufträge (Rückstand plus Kandidaten).
 
