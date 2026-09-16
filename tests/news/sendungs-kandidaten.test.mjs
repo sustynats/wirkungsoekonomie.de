@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { bridgePath, JOB_ID } from '../../scripts/news/bridge/contract.mjs';
-import { parseEpisodes, selectNewEpisodes, buildEpisodeRequest, knownEpisodeUrls, pickTranscript, fetchTranscript, proposeEpisodeCandidates, durationSeconds, EPISODE_VERSION } from '../../scripts/news/sendungs-kandidaten.mjs';
+import { parseEpisodes, selectNewEpisodes, buildEpisodeRequest, knownEpisodeUrls, pickTranscript, fetchTranscript, proposeEpisodeCandidates, durationSeconds, EPISODE_VERSION, mediathekEpisodes, mediathekQueryBody, episodeKey, loadShows } from '../../scripts/news/sendungs-kandidaten.mjs';
+import { parseSubtitleTrack, subtitleSeconds, fetchSubtitleTranscript, buildTranscriptText, timecode, audioSourceFor } from '../../scripts/news/sendungs-transkript.mjs';
 import { labelledTitle } from '../../scripts/news/build.mjs';
 
 const now = '2026-09-16T06:00:00.000Z';
@@ -110,4 +111,99 @@ test('new episodes of the followed shows become requests once, newest first, wit
 test('feed titles carry the format label exactly once', () => {
   assert.equal(labelledTitle({ format: 'approved_editorial', subtype: 'watched', title: 'Nachgesehen: Die Denkzettelwahl' }), 'Nachgesehen: Die Denkzettelwahl');
   assert.equal(labelledTitle({ format: 'approved_editorial', subtype: 'listened', title: 'Gute Bildung' }), 'Nachgehört: Gute Bildung');
+});
+
+const mediathekRows = () => [
+  { title: 'Thema und Gäste "maybrit illner" 10. September 2026', timestamp: 1789071300, duration: 25, url_website: 'https://www.zdf.de/video/talk/vorschau-100.html', url_video: 'https://cdn.example/vorschau.mp4', url_subtitle: '', id: 'a' },
+  { title: 'Die Denkzettelwahl – was muss sich ändern? - "maybrit illner" vom 10. September 2026 (S2026/E25) (Gebärdensprache)', timestamp: 1789071300, duration: 3718, url_website: 'https://www.zdf.de/video/talk/illner-100', url_video: 'https://cdn.example/illner-dgs.mp4', url_subtitle: '', id: 'b' },
+  { title: 'Die Denkzettelwahl – was muss sich ändern? - "maybrit illner" vom 10. September 2026 (S2026/E25)', timestamp: 1789071300, duration: 3718, description: 'Mit Armin Laschet und Cem Özdemir.', url_website: 'https://www.zdf.de/video/talk/illner-100', url_video_low: 'https://cdn.example/illner-low.mp4', url_video: 'https://cdn.example/illner.mp4', url_subtitle: 'https://utstreaming.zdf.de/mtt/illner.xml', id: 'c' },
+];
+const illner = { id: 'maybrit-illner', show_name: 'maybrit illner', kind: 'watched', mediathek: { title: 'maybrit illner', channel: 'ZDF' }, provider: 'ZDF-Mediathek', min_duration_seconds: 1500 };
+
+test('die Mediathek-Abfrage führt Barrierefreiheitsfassungen zusammen und wählt die Folge mit amtlichen Untertiteln', () => {
+  const episodes = mediathekEpisodes(mediathekRows(), illner);
+  assert.equal(episodes.length, 1, 'Vorschauclip fällt unter die Mindestdauer, Gebärdenfassung ist dieselbe Folge');
+  const [episode] = episodes;
+  assert.equal(episode.subtitle_url, 'https://utstreaming.zdf.de/mtt/illner.xml');
+  assert.equal(episode.title.endsWith('(S2026/E25)'), true, 'die Kennzeichnung steht nicht im Titel');
+  assert.equal(episode.media, 'https://cdn.example/illner-low.mp4', 'kleine Fassung genügt für die Tonspur');
+  assert.equal(episode.page, 'https://www.zdf.de/video/talk/illner-100');
+  assert.equal(episode.published_at, new Date(1789071300 * 1000).toISOString());
+  assert.equal(episode.duration, 3718); assert.ok(episode.summary.startsWith('Mit Armin Laschet'));
+  assert.equal(episodeKey('Titel (Gebärdensprache)', 7), episodeKey('Titel', 7));
+  assert.equal(episodeKey('Titel (Hörfassung)', 7), episodeKey('Titel  ', 7));
+  assert.notEqual(episodeKey('Titel', 7), episodeKey('Titel', 8));
+  const body = JSON.parse(mediathekQueryBody(illner));
+  assert.deepEqual(body.queries, [{ fields: ['title'], query: 'maybrit illner' }, { fields: ['channel'], query: 'ZDF' }]);
+  assert.equal(body.future, false); assert.equal(body.sortBy, 'timestamp');
+  assert.ok(loadShows('/Users/hagen/Documents/woek-ticker-main').every((show) => show.mediathek || /^https:\/\//.test(show.feed)), 'jede Sendung hat eine Quelle');
+});
+
+test('amtliche Untertitel werden als Wortlaut mit Zeitmarken gelesen, in EBU-TT, VTT und SRT', async () => {
+  const ebu = `<?xml version="1.0"?><tt:tt xmlns:tt="http://www.w3.org/ns/ttml"><tt:body><tt:div>
+    <tt:p xml:id="s0" begin="00:00:01.080" end="00:00:04.000">FB: Erster <tt:span>Satz</tt:span>.</tt:p>
+    <tt:p xml:id="s1" begin="00:27:32.400" end="00:27:36.000">Zweiter Satz<tt:br/>mit Umbruch &amp; Zeichen.</tt:p>
+    </tt:div></tt:body></tt:tt>`;
+  const parsed = parseSubtitleTrack(ebu, 'x.xml');
+  assert.equal(parsed.format, 'ebu-tt');
+  assert.deepEqual(parsed.segments, [{ start: 1.08, text: 'FB: Erster Satz.' }, { start: 1652.4, text: 'Zweiter Satz mit Umbruch & Zeichen.' }]);
+  assert.equal(buildTranscriptText(parsed.segments).text, '00:00:01 FB: Erster Satz.\n00:27:32 Zweiter Satz mit Umbruch & Zeichen.');
+  assert.equal(parseSubtitleTrack('WEBVTT\n\n00:00:02.000 --> 00:00:03.000\nHallo.').format, 'vtt');
+  assert.equal(parseSubtitleTrack('1\n00:00:02,000 --> 00:00:03,000\nHallo.').format, 'srt');
+  assert.throws(() => parseSubtitleTrack('<html><body>Fehlerseite</body></html>'), /SUBTITLE_FORMAT_UNKNOWN/);
+  assert.equal(subtitleSeconds('01:02:03.400'), 3723.4); assert.equal(subtitleSeconds('02:03'), 123); assert.equal(subtitleSeconds('nichts'), null);
+  assert.equal(timecode(3725.9), '01:02:05');
+  const long = Array.from({ length: 40 }, (_, i) => `<tt:p begin="00:00:${String(i).padStart(2, '0')}.000">${'Wort '.repeat(30)}</tt:p>`).join('');
+  const track = await fetchSubtitleTranscript('https://utstreaming.example/a.xml', async () => ({ ok: true, text: async () => `<tt:tt>${long}</tt:tt>` }));
+  assert.equal(track.origin, 'accessibility_subtitles'); assert.equal(track.type, 'subtitles/ebu-tt'); assert.equal(track.cost_usd, 0);
+  assert.ok(track.chars > 400 && track.segments === 40);
+  assert.equal(await fetchSubtitleTranscript('https://utstreaming.example/leer.xml', async () => ({ ok: true, text: async () => '<tt:tt><tt:p begin="00:00:01.000">Kurz.</tt:p></tt:tt>' })), null, 'zu kurz zählt nicht');
+  assert.equal(await fetchSubtitleTranscript('http://unsicher.example/a.xml', async () => assert.fail('darf nicht abrufen')), null);
+  assert.equal(await fetchSubtitleTranscript(null), null);
+  assert.equal(audioSourceFor({ media: 'https://cdn.example/a.mp4' }), 'https://cdn.example/a.mp4');
+  assert.equal(audioSourceFor({ page: 'https://zdf.example/seite' }), null);
+});
+
+test('ohne Wortlaut wartet die Folge auf die Untertitel, danach greift die eigene Abschrift', async () => {
+  const now = '2026-09-16T06:00:00.000Z';
+  const fresh = { title: 'Markus Lanz vom 15. September 2026', timestamp: Math.floor(Date.parse('2026-09-15T20:45:00Z') / 1000), duration: 4611,
+    url_website: 'https://www.zdf.de/video/talk/lanz-99', url_video_low: 'https://cdn.example/lanz.mp4', url_subtitle: '', id: 'neu' };
+  const old = { ...fresh, title: 'Markus Lanz vom 8. September 2026', timestamp: Math.floor(Date.parse('2026-09-08T21:15:00Z') / 1000), id: 'alt' };
+  const lanz = { id: 'markus-lanz', show_name: 'Markus Lanz', kind: 'watched', mediathek: { title: 'Markus Lanz', channel: 'ZDF' }, provider: 'ZDF-Mediathek', min_duration_seconds: 1500 };
+  const session = fakeSession();
+  const fetchImpl = async (url, init) => init?.method === 'POST'
+    ? { ok: true, json: async () => ({ result: { results: [fresh, old] } }) }
+    : { ok: false, status: 404, text: async () => '' };
+  const transcribed = [];
+  const transcribeImpl = async (episode) => { transcribed.push(episode.title); return { url: episode.media, type: 'machine_transcript/de', origin: 'openai_whisper', segments: 800, chars: 40000, cost_usd: 0.28, text: '00:00:01 Guten Abend.' }; };
+  const report = await proposeEpisodeCandidates({ session: session.session, root: '/nonexistent', now, env: {}, fetchImpl, shows: [lanz], limit: 3, maxPerDay: 5, maxAgeDays: 9, transcribeImpl, subtitleWaitHours: 18, maxTranscriptsPerDay: 2 });
+  assert.deepEqual(report.waiting_for_subtitles.map((w) => w.title), ['Markus Lanz vom 15. September 2026'], 'die junge Folge wartet auf die Untertitel');
+  assert.deepEqual(transcribed, ['Markus Lanz vom 8. September 2026'], 'die ältere Folge wird selbst transkribiert');
+  assert.deepEqual(report.proposed.map((p) => [p.title, p.transcript_origin, p.transcript_cost_usd]), [['Markus Lanz vom 8. September 2026', 'openai_whisper', 0.28]]);
+  assert.equal(report.transcribed_today, 1); assert.equal(report.transcript_cost_today_usd, 0.28);
+  const brief = session.jobs.at(-1).input.request.brief;
+  assert.ok(brief.includes('eigene maschinelle Abschrift'), brief.slice(0, 200));
+  const capped = await proposeEpisodeCandidates({ session: fakeSession().session, root: '/nonexistent', now, env: {}, fetchImpl, shows: [lanz], limit: 3, maxPerDay: 5, maxAgeDays: 9, transcribeImpl, transcribe: false, subtitleWaitHours: 18 });
+  assert.deepEqual(capped.proposed.map((p) => p.transcript_chars), [0], 'ohne Transkription wird die alte Folge ohne Wortlaut eingereiht');
+});
+
+test('liegen amtliche Untertitel vor, wird nichts transkribiert und der Auftrag nennt sie verbindlich', async () => {
+  const now = '2026-09-16T06:00:00.000Z';
+  const session = fakeSession();
+  const rows = mediathekRows().map((row) => ({ ...row, timestamp: Math.floor(Date.parse('2026-09-15T18:00:00Z') / 1000) }));
+  const track = `<tt:tt>${Array.from({ length: 30 }, (_, i) => `<tt:p begin="00:0${i % 10}:00.000">${'Aussage '.repeat(12)}</tt:p>`).join('')}</tt:tt>`;
+  const fetchImpl = async (url, init) => init?.method === 'POST'
+    ? { ok: true, json: async () => ({ result: { results: rows } }) }
+    : { ok: true, text: async () => track };
+  let transcribeCalls = 0;
+  const report = await proposeEpisodeCandidates({ session: session.session, root: '/nonexistent', now, env: {}, fetchImpl, shows: [illner], limit: 2, maxPerDay: 5, maxAgeDays: 7,
+    transcribeImpl: async () => { transcribeCalls += 1; return null; }, subtitleWaitHours: 18 });
+  assert.equal(transcribeCalls, 0, 'amtliche Untertitel schlagen die eigene Abschrift');
+  assert.deepEqual(report.proposed.map((p) => p.transcript_origin), ['accessibility_subtitles']);
+  assert.equal(report.proposed[0].transcript_cost_usd, 0);
+  assert.equal(report.transcribed_today, 0);
+  const job = session.jobs.at(-1).input;
+  assert.ok(job.request.brief.includes('amtlichen Untertitel'), job.request.brief.slice(0, 240));
+  assert.equal(job.origin.transcript.origin, 'accessibility_subtitles');
+  assert.ok(job.request.links.includes('https://utstreaming.zdf.de/mtt/illner.xml'));
 });
