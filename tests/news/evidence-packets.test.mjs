@@ -389,6 +389,14 @@ test('der Lauf nennt die Taktung und hält sich an sie', async () => {
   assert.equal(paused.ai_calls, 0, 'kein bezahlter Aufruf über die Taktung hinaus');
   assert.equal(paused.ai_budget_pacing.calls_this_month, 2);
   assert.equal(paused.ai_hourly_limit_configured, 4);
+  // Welche Befunde die Nachlieferung ausgelöst haben, steht im Bericht.
+  const withFindings = await runWirkungsticker(options(storedStory(), { usage: { runs: [] },
+    callAiImpl: async (stories) => ({ analyses: stories.map((story) => ({ story_id: story.story_id, publication_recommendation: false,
+        rejection: { code: 'no_new_information', reason: 'Die vorliegenden Quellen ergänzen keine neue materielle Information gegenüber der veröffentlichten Fassung.' } })),
+      model: 'gpt-5.6-luna', reported_usage: { input_tokens: 100, output_tokens: 50 },
+      repair_calls: 1, repair_findings: ['IMPACT_ASSESSMENT_REQUIRED', 'AI_SOURCE_SUMMARY_LENGTH', 'IMPACT_ASSESSMENT_REQUIRED'] }) }));
+  assert.deepEqual(withFindings.ai_repair_findings, { IMPACT_ASSESSMENT_REQUIRED: 2, AI_SOURCE_SUMMARY_LENGTH: 1 });
+  assert.equal(withFindings.ai_repair_calls, 1);
   // Eine ruhige Stunde lässt die feste Obergrenze zu.
   const quiet = await runWirkungsticker(options(storedStory(), { callAiImpl, usage: { runs: [] } }));
   assert.equal(quiet.ai_budget_pacing.paused, false);
