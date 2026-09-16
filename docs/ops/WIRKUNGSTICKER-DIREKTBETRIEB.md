@@ -1,7 +1,7 @@
 # Wirkungsticker: Direktbetrieb (seit 15.09.2026)
 
 Verbindliche Betriebsarchitektur des Wirkungstickers. Sie ersetzt die Dropbox-ChatGPT-Bridge
-(10.–15.09.2026) und die frühere Oracle-Proxy-Lane. Entscheidung: Natalie, 15.09.2026.
+(10.-15.09.2026) und die frühere Oracle-Proxy-Lane. Entscheidung: Natalie, 15.09.2026.
 
 ## Warum
 
