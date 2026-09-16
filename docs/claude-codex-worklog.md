@@ -340,3 +340,8 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 - **Was:** Nach den Strukturreparaturen sind die verbliebenen Gate-Fehler Textregeln. Gemessen am Lauf 05:22 UTC: `source_summary` 77 Wörter bei verlangten 100 (publication_depth deepened), `detail_summary` 458 Zeichen und 4 Sätze bei verlangten 500 und 5 bis 7. Beide Grenzen stehen jetzt mit der Tiefenunterscheidung (initial 60/300, deepened 100/500) in der Systemanweisung, mit dem ausdrücklichen Hinweis, dass zu kurz genauso ungültig ist wie zu lang.
 - **Geprüft:** `tests/news/direct-operation.test.mjs`.
+
+## 2026-09-16 - Claude: Folge ohne Wortlaut darf einmal nachrücken
+
+- **Was:** Der Lanz vom 15.09. war um 05:25 UTC beauftragt worden, bevor die amtlichen Untertitel erschienen, und lief vertragsgemäß in eine Rückfrage. Sein Auftrag ist damit verbraucht, und der Dublettenschutz hätte die Folge dauerhaft ausgeschlossen: die Sendung wäre verloren. Eine Folge, deren Vermerk `transcript_origin: null` trägt, wird deshalb genau einmal erneut eingereiht, sobald ein Wortlaut vorliegt (eigene Kennung, nichts wird überschrieben, der Auftragstext nennt den Grund). Nebenbei tragen Anbietertranskripte jetzt ebenfalls eine Herkunft (`provider_transcript`), damit der Vermerk eindeutig ist.
+- **Geprüft:** `tests/news/sendungs-kandidaten.test.mjs` 12/12 (neu: erster Auftrag ohne Wortlaut, Warten ohne zweiten Auftrag, genau ein zweiter Auftrag mit Untertiteln, kein dritter).
