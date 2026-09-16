@@ -337,6 +337,7 @@ test('an attributed headline claim without its qualifier in the title gets the a
   const noClaim = repairHeadlineAttribution({ headline: 'Titel ohne Zuordnung', event_claims: [{ claim: 'x', attribution_required: true, headline_claim: false }, { claim: 'y', attribution_required: true, headline_claim: true }] });
   assert.equal(noClaim.headline, 'Titel ohne Zuordnung', 'without any attribution wording nothing is invented');
   assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('rationale (Begründungstext) und balance') && SINGLE_CALL_INSTRUCTIONS.includes('mehr als 20 Wörtern wörtlich'));
+  for (const rule of ['bei deepened 100 bis 180 Wörter', 'bei deepened 500 bis 1200 Zeichen und 5 bis 7 Sätze', 'Zu kurz ist genauso ungültig wie zu lang']) assert.ok(SINGLE_CALL_INSTRUCTIONS.includes(rule), rule);
 });
 
 test('a missing dimension time status is derived from its paths and an unscored counter path gives way to a scored main path', () => {

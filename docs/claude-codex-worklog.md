@@ -321,3 +321,8 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Was:** Die Nachlieferung wirkt (Lauf 04:25 UTC: drei von vier Meldungen live, zweimal „nachgeliefert (1 Befund, danach 0)“), aber sie erbt die Schwäche des ersten Aufrufs: weggelassene Schlüssel (`rationale`, `balance`, ganze Dimensionen). Der Folgeaufruf ist jetzt an ein striktes JSON-Schema gebunden (`scripts/news/impact-json-schema.mjs`, 90 Objekte, alle Schlüssel Pflicht, keine Zusatzfelder, Verschachtelung 9 von erlaubten 10, Enums aus den Vertragsmodulen). Lehnt der Anbieter das Schema ab, folgt genau ein Versuch im einfachen JSON-Modus. Abschaltbar über `WOEK_NEWS_REPAIR_SCHEMA=false`.
 - **Geprüft:** `tests/news/direct-operation.test.mjs` 25/25 (2 neu: Schema deckt den Vertrag und erfüllt die Strict-Regeln inklusive Verschachtelungsgrenze; Schema zuerst, ein Fallback im JSON-Modus, abschaltbar).
 - **Offen:** Erste Läufe beobachten, ob `nachgeliefert mit Schema` die Restfehler beseitigt.
+
+## 2026-09-16 - Claude: Textlängen als harte Grenzen in der Anweisung
+
+- **Was:** Nach den Strukturreparaturen sind die verbliebenen Gate-Fehler Textregeln. Gemessen am Lauf 05:22 UTC: `source_summary` 77 Wörter bei verlangten 100 (publication_depth deepened), `detail_summary` 458 Zeichen und 4 Sätze bei verlangten 500 und 5 bis 7. Beide Grenzen stehen jetzt mit der Tiefenunterscheidung (initial 60/300, deepened 100/500) in der Systemanweisung, mit dem ausdrücklichen Hinweis, dass zu kurz genauso ungültig ist wie zu lang.
+- **Geprüft:** `tests/news/direct-operation.test.mjs`.
