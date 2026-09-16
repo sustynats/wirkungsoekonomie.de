@@ -1,5 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { fileURLToPath } from 'node:url';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
 import { hash, bridgePath } from '../../scripts/news/bridge/contract.mjs';
 import { selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts } from '../../scripts/news/redaktionsworker.mjs';
 import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandidates } from '../../scripts/news/redaktions-kandidaten.mjs';
@@ -246,7 +249,7 @@ test('the editorial steps wait for a busy import lane instead of skipping the cy
   assert.equal(skipped.status, 'skipped'); assert.equal(skipped.reason, 'BRIDGE_RUN_LOCKED'); assert.equal(attempts, 3);
 });
 
-test('der Redaktionsvertrag verlangt die Ablagefelder, die die Freigabe prüft', async () => {
+test('der Redaktionsvertrag nennt die Felder der Ablage, ohne einen fertigen Text daran scheitern zu lassen', async () => {
   const { validateApiOutput } = await import('../../scripts/news/bridge/api-processor.mjs');
   const { EDITORIAL_REQUEST_CONTRACT_V4 } = await import('../../scripts/news/bridge/intake-processing.mjs');
   const packet = packetFor(jobId);
@@ -256,12 +259,31 @@ test('der Redaktionsvertrag verlangt die Ablagefelder, die die Freigabe prüft',
     source_media: { show: 'NEU DENKEN', episode_title: 'Den Westen NEU DENKEN', original_release_date: '2026-09-15', original_url: 'https://neu-denken.example/s6e5' } });
   const episodePacket = { ...packet, request: { ...packet.request, kind: 'listened' } };
   assert.ok(validateApiOutput(wrap(episode()), episodePacket, now()), 'vollständige Folge besteht');
-  const withoutPublisher = episode(); withoutPublisher.sources = [{ url: 'https://neu-denken.example/s6e5', title: 'Folgenseite', function: 'Werkbeleg' }];
-  assert.throws(() => validateApiOutput(wrap(withoutPublisher), episodePacket, now()), /BRIDGE|EDITORIAL/, 'publisher ist Pflicht');
-  const wrongMedia = episode(); wrongMedia.source_media = { show: 'NEU DENKEN', episode: 'Den Westen NEU DENKEN', published_at: '2026-09-15T03:00:00.000Z' };
-  assert.throws(() => validateApiOutput(wrap(wrongMedia), episodePacket, now()), /BRIDGE|EDITORIAL/, 'alte Schlüsselnamen werden abgelehnt');
   const schema = EDITORIAL_REQUEST_CONTRACT_V4.output_schema.properties.preview.properties;
-  assert.deepEqual(schema.sources.items.required, ['url', 'title', 'publisher']);
-  assert.deepEqual(schema.source_media.required, ['show', 'episode_title', 'original_release_date', 'original_url']);
+  assert.deepEqual(schema.sources.items.required, ['url', 'title'], 'der Verlagsname wird erwartet, aber nicht erzwungen');
+  assert.ok('publisher' in schema.sources.items.properties, 'er steht als Feld im Schema');
+  for (const key of ['show', 'episode_title', 'original_release_date', 'original_url']) assert.ok(key in schema.source_media.properties, key);
   assert.ok(EDITORIAL_REQUEST_CONTRACT_V4.instructions.some((line) => line.includes('episode_title')), 'die Anweisung nennt die Schlüssel');
+  const raw = episode(); delete raw.source_media;
+  assert.throws(() => validateApiOutput(wrap(raw), episodePacket, now()), /BRIDGE|EDITORIAL/, 'ohne Sendungsangaben hält die Freigabeprüfung weiterhin');
+});
+
+test('kein Test und kein Skript enthält einen absoluten Pfad dieser Maschine', () => {
+  // Ein absoluter Pfad lief lokal und scheiterte in der Werkbank; der
+  // Nachrichtenlauf stand dadurch 50 Minuten (16.09.). Zugleich dürfen private
+  // Pfade ohnehin nicht im Repository stehen.
+  const fs = require('node:fs'), path = require('node:path');
+  const root = fileURLToPath(new URL('../../', import.meta.url));
+  const findings = [];
+  const walk = (dir) => {
+    for (const entry of fs.readdirSync(path.join(root, dir), { withFileTypes: true })) {
+      const rel = path.join(dir, entry.name);
+      if (entry.isDirectory()) { if (!['node_modules', '.git'].includes(entry.name)) walk(rel); continue; }
+      if (!/\.(mjs|js|json|yml|yaml)$/.test(entry.name)) continue;
+      const text = fs.readFileSync(path.join(root, rel), 'utf8');
+      for (const match of text.matchAll(/(?:\/Users\/[a-z0-9._-]+|\/home\/(?!runner)[a-z0-9._-]+)\/[A-Za-z0-9._/-]*/g)) findings.push(`${rel}: ${match[0].slice(0, 60)}`);
+    }
+  };
+  for (const dir of ['tests/news', 'tests/ops', 'scripts/news', '.github/workflows']) walk(dir);
+  assert.deepEqual(findings, [], `absolute Pfade gefunden: ${findings.slice(0, 5).join(' | ')}`);
 });
