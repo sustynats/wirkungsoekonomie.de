@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution } from '../../scripts/news/openai-transport.mjs';
+import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution, repairFields, fieldRepairFormat } from '../../scripts/news/openai-transport.mjs';
 import { releaseDeterministicImpact, deterministicGateIssues, secondPassComplete } from '../../scripts/news/impact-gate.mjs';
 import { paidAttemptsExhausted, AI_PROCESSING_VERSION, pendingRecord } from '../../scripts/news/run.mjs';
 import { validateAnalysis, sha256 } from '../../scripts/news/lib.mjs';
@@ -480,4 +480,45 @@ test('der erste Aufruf ist schemagebunden, fällt bei Ablehnung einmal zurück u
   assert.equal(fallback.request_attempts, 1, 'die Ablehnung zählt nicht als bezahlter Versuch');
   assert.equal(fallback.analysis_schema, false);
   assert.equal(fallback.analyses[0].story_id, 'wt-1');
+});
+
+test('bei Textbefunden liefert die eine Nachlieferung genau die betroffenen Felder nach', async () => {
+  const assessment = syntheticPotentialAssessment();
+  const texts = () => ({ story_id: 'wt-1', publication_recommendation: true, headline: 'H', summary: 'S',
+    source_summary: 'zu kurz', detail_summary: 'kurz', impact_assessment: structuredClone(assessment) });
+  assert.deepEqual(repairFields(['AI_SOURCE_SUMMARY_LENGTH', 'AI_DETAIL_SUMMARY_LENGTH']), ['source_summary', 'detail_summary']);
+  assert.deepEqual(repairFields(['CLAIM_NUMBER_NOT_IN_EVIDENCE']), ['event_claims']);
+  assert.deepEqual(repairFields(['IMPACT_RATIONALE_REQUIRED:human']), [], 'Bewertungsbefunde laufen über das Bewertungsschema');
+  const format = fieldRepairFormat(['source_summary', 'detail_summary']);
+  assert.deepEqual(format.schema.required, ['story_id', 'source_summary', 'detail_summary']);
+  assert.equal(format.schema.additionalProperties, false); assert.equal(format.strict, true);
+  const bodies = [];
+  const result = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna',
+    findIssues: (analysis) => analysis.source_summary === 'zu kurz' ? ['AI_SOURCE_SUMMARY_LENGTH', 'AI_DETAIL_SUMMARY_LENGTH'] : [],
+    fetchImpl: async (url, init) => {
+      const body = JSON.parse(init.body); bodies.push(body);
+      const answer = bodies.length === 1 ? JSON.stringify({ analyses: [texts()] })
+        : JSON.stringify({ story_id: 'wt-1', source_summary: 'Ein deutlich längerer Quellenabsatz.\n\nUnd ein zweiter Absatz.', detail_summary: 'Ausführlicher Text.' });
+      return { ok: true, status: 200, json: async () => responsePayload(answer) };
+    } });
+  assert.equal(bodies.length, 2); assert.equal(result.repair_calls, 1);
+  assert.equal(bodies[1].text.format.name, 'wirkungsticker_nachlieferung_1');
+  assert.deepEqual(bodies[1].text.format.schema.required, ['story_id', 'source_summary', 'detail_summary']);
+  assert.ok(bodies[1].input.includes('Liefere ausschließlich diese Felder neu: source_summary, detail_summary'));
+  assert.ok(bodies[1].input.includes('zwei bis drei Absätze'), 'die Längenregel steht im Klartext dabei');
+  assert.equal(result.analyses[0].source_summary, 'Ein deutlich längerer Quellenabsatz.\n\nUnd ein zweiter Absatz.');
+  assert.equal(result.analyses[0].detail_summary, 'Ausführlicher Text.');
+  assert.equal(result.analyses[0].headline, 'H', 'nicht betroffene Felder bleiben unverändert');
+  assert.equal(result.analyses[0].impact_assessment.version, '2.1');
+  assert.ok(result.analyses[0].transport_repairs.some((r) => r.startsWith('source_summary+detail_summary:nachgeliefert mit Schema')));
+  // Fehlt das Bewertungsobjekt, hat es Vorrang: nur ein Aufruf, nur die Bewertung.
+  const priority = [];
+  await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna',
+    findIssues: () => ['AI_SOURCE_SUMMARY_LENGTH'],
+    fetchImpl: async (url, init) => {
+      const body = JSON.parse(init.body); priority.push(body.text.format.name || body.text.format.type);
+      const answer = priority.length === 1 ? JSON.stringify({ analyses: [{ story_id: 'wt-1', publication_recommendation: true, headline: 'H', summary: 'S' }] }) : JSON.stringify(assessment);
+      return { ok: true, status: 200, json: async () => responsePayload(answer) };
+    } });
+  assert.deepEqual(priority, ['wirkungsticker_analyse_1', 'wirkungspotenzial_2_1'], 'das Bewertungsobjekt zuerst, danach kein weiterer Aufruf');
 });
