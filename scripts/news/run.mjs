@@ -766,6 +766,22 @@ export function retryCoolingDown(candidate, now) {
     && Date.parse(previous.retry_after) > Date.parse(now);
 }
 
+// Eine veröffentlichte Meldung ohne nutzbares Titelbild stand bisher in keiner
+// Schlange: die Nachrüstung lief nur über retry_after, und wer nie ein Bild
+// hatte, hat auch keinen Vermerk (16.09.: vier von 306 veröffentlichten
+// Meldungen ohne OG- und Quadratbild, für die Nachrüstung unsichtbar). Fehlt
+// das Bild, kommt die Meldung zuerst; Obergrenze je Lauf und Zeitbudget bleiben.
+export const missingTitleImage = (story) => !(story?.title_image?.og?.url && story?.title_image?.square?.url);
+export function pendingTitleImageQueue(stories, { now, changed = new Set(), limit = 4 } = {}) {
+  const at = Date.parse(now);
+  const due = (story) => story.title_image?.retry_after && Date.parse(story.title_image.retry_after) <= at;
+  return stories
+    .filter((story) => story?.published && story.listed !== false && !changed.has(story.story_id) && (missingTitleImage(story) || due(story)))
+    .sort((a, b) => (missingTitleImage(b) ? 1 : 0) - (missingTitleImage(a) ? 1 : 0)
+      || Date.parse(a.title_image?.retry_after || 0) - Date.parse(b.title_image?.retry_after || 0))
+    .slice(0, Math.max(0, limit));
+}
+
 export function aiRequestsInWindow(usage, now, windowMinutes = 60) {
   const nowMs = new Date(now).getTime();
   if (!Number.isFinite(nowMs)) throw new Error("INVALID_AI_USAGE_TIME");
@@ -1820,7 +1836,9 @@ export async function runWirkungsticker(options = {}) {
   report.title_images_changed = 0;
   if (!options.dryRun) {
     const prepareImage = options.prepareTitleImage || createTitleImagePipeline();
-    const pendingImages = [...byId.values()].filter((story) => mode === 'api' && story.published && story.listed !== false && !changedStoryIds.has(story.story_id) && story.title_image?.retry_after && Date.parse(story.title_image.retry_after) <= nowDate.getTime()).sort((a, b) => Date.parse(a.title_image.retry_after) - Date.parse(b.title_image.retry_after)).slice(0, IMAGE_CONFIG.max_generations_per_run);
+    const pendingImages = mode === 'api'
+      ? pendingTitleImageQueue([...byId.values()], { now, changed: changedStoryIds, limit: IMAGE_CONFIG.max_generations_per_run })
+      : [];
     const imageIds = [...changedStoryIds, ...pendingImages.map(story => story.story_id)];
     const imageDeadline = Date.now() + 4 * 60000;
     for (const storyId of imageIds) {

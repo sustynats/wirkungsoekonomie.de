@@ -402,3 +402,32 @@ test('der Lauf nennt die Taktung und hält sich an sie', async () => {
     assert.equal(off.ai_hourly_limit, off.ai_hourly_limit_configured);
   } finally { delete process.env.WOEK_NEWS_BUDGET_PACING; }
 });
+
+test('eine veröffentlichte Meldung ohne nutzbares Titelbild kommt in die Nachrüstung, und zwar zuerst', async () => {
+  const { pendingTitleImageQueue, missingTitleImage } = await import('../../scripts/news/run.mjs');
+  const image = { og: { url: 'https://example.org/og.png' }, square: { url: 'https://example.org/square.png' } };
+  const rows = [
+    { story_id: 'ohne-bild', published: true },
+    { story_id: 'halbes-bild', published: true, title_image: { og: { url: 'https://example.org/og.png' } } },
+    { story_id: 'faellig', published: true, title_image: { ...image, retry_after: '2026-09-16T09:00:00.000Z' } },
+    { story_id: 'faellig-spaeter', published: true, title_image: { ...image, retry_after: '2026-09-16T09:30:00.000Z' } },
+    { story_id: 'noch-nicht-faellig', published: true, title_image: { ...image, retry_after: '2026-09-16T23:00:00.000Z' } },
+    { story_id: 'fertig', published: true, title_image: image },
+    { story_id: 'nicht-gelistet', published: true, listed: false },
+    { story_id: 'unveroeffentlicht', published: false },
+    { story_id: 'gerade-geaendert', published: true },
+  ];
+  const now = '2026-09-16T10:30:00.000Z';
+  const queue = pendingTitleImageQueue(rows, { now, changed: new Set(['gerade-geaendert']), limit: 4 });
+  assert.deepEqual(queue.map((story) => story.story_id), ['ohne-bild', 'halbes-bild', 'faellig', 'faellig-spaeter'],
+    'fehlende Bilder zuerst, dann fällige Wiederholungen nach Termin');
+  // Die Obergrenze je Lauf bleibt bindend.
+  assert.equal(pendingTitleImageQueue(rows, { now, limit: 2 }).length, 2);
+  assert.deepEqual(pendingTitleImageQueue(rows, { now, limit: 0 }), []);
+  // Was kein Bild braucht, kommt nicht in die Schlange.
+  for (const id of ['fertig', 'nicht-gelistet', 'unveroeffentlicht', 'noch-nicht-faellig', 'gerade-geaendert'])
+    assert.equal(queue.some((story) => story.story_id === id), false, id);
+  assert.equal(missingTitleImage({ title_image: image }), false);
+  assert.equal(missingTitleImage({}), true);
+  assert.equal(missingTitleImage(null), true);
+});
