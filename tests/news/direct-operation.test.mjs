@@ -6,6 +6,7 @@ import { paidAttemptsExhausted, AI_PROCESSING_VERSION, pendingRecord } from '../
 import { validateAnalysis, sha256 } from '../../scripts/news/lib.mjs';
 import { publicImpactAssessment } from '../../scripts/news/impact-release.mjs';
 import { syntheticPotentialAssessment, syntheticPotentialPath } from './fixtures/impact21.mjs';
+import { impactAssessmentResponseFormat, IMPACT_ASSESSMENT_JSON_SCHEMA } from '../../scripts/news/impact-json-schema.mjs';
 import { retireBacklog } from '../../scripts/news/retire-backlog.mjs';
 import { queueReassessment, needsPotentialRepair } from '../../scripts/news/queue-reassessment.mjs';
 import { costFromUsage, modelRates } from '../../scripts/news/budget.mjs';
@@ -370,4 +371,67 @@ test('after a completed second pass a central dimension may stay explicitly open
   assert.equal(secondPassComplete(assessment), false);
   assert.ok(deterministicGateIssues(record).includes('IMPACT_CENTRAL_DIMENSION_UNRESOLVED:planet'), 'without the second pass an open central dimension still holds');
   assert.equal(secondPassComplete({ ...assessment, research_check: { ...assessment.research_check, status: 'needs_research' } }), false);
+});
+
+test('the strict schema covers the contract and every object forbids extra keys', () => {
+  const format = impactAssessmentResponseFormat();
+  assert.equal(format.type, 'json_schema'); assert.equal(format.strict, true);
+  const problems = [], seen = [];
+  const walk = (node, path, depth) => {
+    if (!node || typeof node !== 'object') return;
+    seen.push(depth);
+    const isObject = node.type === 'object' || (Array.isArray(node.type) && node.type.includes('object'));
+    if (isObject) {
+      if (node.additionalProperties !== false) problems.push(`${path}: additionalProperties`);
+      const properties = Object.keys(node.properties || {}), required = node.required || [];
+      if (properties.length !== required.length || properties.some((key) => !required.includes(key))) problems.push(`${path}: required`);
+    }
+    for (const [key, value] of Object.entries(node.properties || {})) walk(value, `${path}.${key}`, depth + 1);
+    if (node.items) walk(node.items, `${path}[]`, depth + 1);
+  };
+  walk(format.schema, 'root', 1);
+  assert.deepEqual(problems, [], problems.join(' | '));
+  assert.ok(Math.max(...seen) <= 10, `Verschachtelung ${Math.max(...seen)} überschreitet die Anbietergrenze`);
+  const dimension = IMPACT_ASSESSMENT_JSON_SCHEMA.properties.dimensions.properties;
+  assert.deepEqual(Object.keys(dimension), ['human', 'planet', 'democracy']);
+  for (const key of ['rationale', 'balance', 'temporal_status', 'research_pass', 'primary_paths', 'secondary_paths', 'data_status']) assert.ok(key in dimension.human.properties, key);
+  const path = dimension.human.properties.primary_paths.items.properties;
+  for (const factor of ['reach', 'intensity', 'duration', 'irreversibility', 'vulnerability', 'system_depth']) assert.ok(factor in path.magnitude_factors.properties, factor);
+  assert.deepEqual(path.type.enum, ['main_path', 'counter_path', 'side_effect', 'side_risk']);
+  assert.deepEqual(dimension.human.properties.data_status.enum, ['modelled', 'estimated']);
+  // A synthetic contract-valid assessment satisfies the schema's own key sets.
+  const assessment = syntheticPotentialAssessment();
+  const missing = Object.keys(IMPACT_ASSESSMENT_JSON_SCHEMA.properties).filter((key) => !(key in assessment));
+  assert.deepEqual(missing, [], `Schema verlangt Felder, die der Vertrag nicht kennt: ${missing.join(',')}`);
+});
+
+test('the follow-up asks with the strict schema and falls back to JSON mode when the provider rejects it', async () => {
+  const texts = () => ({ story_id: 'wt-1', publication_recommendation: true, headline: 'H', summary: 'S' });
+  const assessment = syntheticPotentialAssessment();
+  const bodies = [];
+  const schemaRun = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna', fetchImpl: async (url, init) => {
+    const body = JSON.parse(init.body); bodies.push(body);
+    return { ok: true, status: 200, json: async () => responsePayload(bodies.length === 1 ? JSON.stringify({ analyses: [texts()] }) : JSON.stringify(assessment)) };
+  } });
+  assert.equal(bodies[0].text.format.type, 'json_object', 'the main call stays in JSON mode');
+  assert.equal(bodies[1].text.format.type, 'json_schema'); assert.equal(bodies[1].text.format.strict, true);
+  assert.equal(schemaRun.analyses[0].impact_assessment.version, '2.1', 'a bare assessment object is accepted');
+  assert.ok(schemaRun.analyses[0].transport_repairs[0].includes('mit Schema'));
+  const rejected = [];
+  const fallback = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna', fetchImpl: async (url, init) => {
+    const body = JSON.parse(init.body); rejected.push(body.text.format.type);
+    if (rejected.length === 1) return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [texts()] })) };
+    if (body.text.format.type === 'json_schema') return { ok: false, status: 400, json: async () => ({ error: { message: 'Unsupported response format' } }) };
+    return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [{ story_id: 'wt-1', impact_assessment: assessment }] })) };
+  } });
+  assert.deepEqual(rejected, ['json_object', 'json_schema', 'json_object'], 'exactly one further try in JSON mode');
+  assert.equal(fallback.repair_calls, 1, 'the fallback stays one follow-up');
+  assert.equal(fallback.analyses[0].impact_assessment.version, '2.1');
+  assert.ok(!fallback.analyses[0].transport_repairs[0].includes('mit Schema'));
+  const off = [];
+  await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna', repairSchema: false, fetchImpl: async (url, init) => {
+    off.push(JSON.parse(init.body).text.format.type);
+    return { ok: true, status: 200, json: async () => responsePayload(off.length === 1 ? JSON.stringify({ analyses: [texts()] }) : JSON.stringify(assessment)) };
+  } });
+  assert.deepEqual(off, ['json_object', 'json_object'], 'the schema can be switched off');
 });
