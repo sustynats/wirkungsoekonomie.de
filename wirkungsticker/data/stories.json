@@ -2,8 +2,2738 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T10:37:35.261Z",
+  "updated_at": "2026-09-16T10:52:27.129Z",
   "stories": [
+    {
+      "story_id": "wt-3eddfb4384c350e5",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3eddfb4384c350e5-57879de793403254-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3eddfb4384c350e5-0d3129e64348829c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3eddfb4384c350e5-6639695c534d9263-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "milliardenloch-gesundheitswesen-sparen-wir-uns-krank-c350e5",
+      "title": "GKV-Stabilisierungsgesetz ist in Kraft – Folgen für Versorgung und Beiträge bleiben offen",
+      "source_summary": "Der MDR beschreibt das GKV-Beitragssatzstabilisierungsgesetz als bereits verabschiedet und seit dem 30. Juli 2026 geltend. Das Sparpaket soll die Beiträge der gesetzlichen Krankenkassen trotz einer Finanzierungslücke möglichst konstant halten und nimmt dafür nahezu alle Akteure des Gesundheitssystems in Anspruch.\n\nAls Ausgangslage nennt der Beitrag für das erste Halbjahr 2026 höhere Leistungsausgaben als beitragspflichtige Einnahmen. Der vdek fordert zusätzlich strukturelle Reformen und bezweifelt, dass die Sparmaßnahmen für eine Konsolidierung ausreichen. Der Bericht versammelt außerdem Kritik einer Kinderärztin; belastbare Daten zu tatsächlichen Versorgungsfolgen werden nicht vorgelegt.",
+      "summary": "Das Gesetz zur Stabilisierung der GKV-Beiträge gilt seit dem 30. Juli 2026. Ob die finanziellen Entlastungen die Versorgung belasten, ist offen und muss anhand späterer Daten geprüft werden.",
+      "detail_summary": "Das GKV-Beitragssatzstabilisierungsgesetz ist laut MDR seit dem 30. Juli 2026 in Kraft. Es verlangt finanzielle Zugeständnisse von nahezu allen Akteuren des Gesundheitssystems und soll die Beiträge trotz einer Finanzierungslücke möglichst konstant halten. Für das erste Halbjahr 2026 nennt der Bericht 7,4 Prozent Mehrausgaben gegenüber 4,1 Prozent höheren beitragspflichtigen Einnahmen. Daraus könnte ein Druck auf Praxen, Kliniken, Arzneimittelversorgung und Versicherte entstehen, falls Einsparungen nicht durch strukturelle Reformen abgefedert werden. Ob sich dadurch die Versorgung tatsächlich verändert, ist mit der vorliegenden Quelle nicht belegt.",
+      "why_relevant": "Das Gesetz verändert Finanzierungsbedingungen im Gesundheitswesen. Betroffene Einrichtungen und Versicherte könnten unterschiedliche Kosten und Versorgungsrisiken tragen.",
+      "topic": [
+        "Gesundheit",
+        "Politik"
+      ],
+      "status": "in Kraft",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Inkrafttreten des GKV-Beitragssatzstabilisierungsgesetzes und die im Bericht genannten Finanzdaten des ersten Halbjahres 2026",
+        "evaluation_target": {
+          "label": "GKV-Beitragssatzstabilisierungsgesetz",
+          "type": "law"
+        },
+        "baseline": "Vor dem Inkrafttreten geltende Finanzierungs- und Vergütungsbedingungen der gesetzlichen Krankenversicherung",
+        "counterfactual": "Ohne das Gesetz würden die im Bericht beschriebenen Ausgaben- und Einnahmedifferenzen unter den zuvor geltenden Regeln bearbeitet.",
+        "reference_frame": [
+          "Zugang und Qualität medizinischer Versorgung",
+          "finanzielle Tragfähigkeit der gesetzlichen Krankenversicherung",
+          "gerechte Verteilung von Anpassungslasten"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Das Gesetz könnte Beiträge stabilisieren, aber bei fehlender Abfederung finanziellen und versorgungsbezogenen Druck auf Patienten, Praxen und Kliniken verlagern.",
+            "planet": "Direkte ökologische Wirkungen sind nicht belegt. Indirekte Effekte könnten über Veränderungen bei Arzneimittelversorgung, Beschaffung und Infrastruktur entstehen, bleiben aber offen.",
+            "democracy": "Die Regel verändert institutionelle und finanzielle Spielräume im Gesundheitssystem. Rechenschaft und Korrekturfähigkeit hängen von transparenter Umsetzung und späteren Versorgungsdaten ab."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Das Gesetz setzt finanzielle Anpassungsanforderungen für nahezu alle Akteure des Gesundheitssystems.",
+          "second_order": "Die Anpassungen könnten Beiträge, Vergütungen, Leistungsangebote und Versorgungskapazitäten unterschiedlich beeinflussen.",
+          "third_order": "Dauerhafte Finanzierungsverschiebungen könnten die Struktur und regionale Verteilung medizinischer Versorgung verändern, wenn keine Gegensteuerung erfolgt.",
+          "enablement": [
+            "enables_legislation",
+            "enables_budget_control",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Der vdek fordert flankierende strukturelle Reformen und bezweifelt, dass die Sparmaßnahmen allein für eine Konsolidierung ausreichen.",
+            "Die Quelle belegt keine eingetretene Verschlechterung von Versorgung oder Patientenergebnissen."
+          ],
+          "source_independence": "Es liegt eine journalistische MDR-Quelle vor. Die darin wiedergegebenen Einschätzungen des vdek und einer Kinderärztin sind unterschiedliche Akteurspositionen, aber keine unabhängige Bestätigung der Wirkungsfolgen.",
+          "institutional_status": "Das Gesetz wurde laut MDR von Bundestag und Bundesrat verabschiedet und ist seit dem 30. Juli 2026 in Kraft."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle bestätigt weder eine Verbesserung noch eine Verschlechterung der Versorgung. Plausibel sind gegenläufige Pfade: mögliche Beitragsstabilisierung und möglicher Anpassungsdruck auf Leistungen; Umfang und Eintritt bleiben ungemessen.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Der Hauptpfad verbindet finanzielle Stabilisierung mit möglicher Kostenverlagerung. Beide Richtungen sind materiell, aber die Quelle belegt nur Ausgangsdaten und Akteursbewertungen, nicht die eingetretene Wirkung.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Beitragsstabilisierung bei gesetzlich Versicherten",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Ausgabenbegrenzungen könnten den Druck auf Beitragssätze kurzfristig dämpfen.",
+                "recipients": [
+                  "gesetzlich Versicherte"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Breiter Versichertenkreis, aber unklarer Umfang und keine gemessene Wirkung."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Das Gesetz betrifft die gesetzliche Krankenversicherung breit.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt Beitragsstabilisierung als Ziel, nicht deren Ausmaß.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer einer möglichen Entlastung ist nicht belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Beitragssätze und Finanzierungsregeln können politisch geändert werden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Versicherte mit geringem Einkommen reagieren besonders empfindlich auf Beiträge und Leistungen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft Finanzierung, nicht nachgewiesene Systemergebnisse.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für den Zugang zur Versorgung ist nicht beobachtet.",
+                  "reference_frame": "finanzieller Zugang zu notwendiger Gesundheitsversorgung",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Die Einsparungen müssen ausreichen, ohne relevante Versorgungskapazitäten zu verringern.",
+                "reference_space": "gesetzlich Versicherte in Deutschland",
+                "time_horizon": "kurz- bis mittelfristig nach dem 30. Juli 2026",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Beitragsstabilisierung hängt von tatsächlicher Ausgabenentwicklung und Umsetzung ab.",
+                "source_support": "Die Quelle belegt das Ziel der Beitragsstabilisierung und die Ausgaben-Einnahmen-Differenz, nicht den Erfolg.",
+                "limitations": "Keine Daten zu späteren Beiträgen oder Patientenergebnissen.",
+                "first_order": "Möglicherweise geringerer Beitragsdruck.",
+                "second_order": "Möglicher zusätzlicher Spielraum für Haushalte, sofern Leistungen unverändert bleiben.",
+                "third_order": "Finanzielle Stabilisierung könnte Vertrauen in die Tragfähigkeit der GKV stützen, ist aber nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Messung einer Beitragswirkung in der gelieferten Quelle.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Mögliche Verlagerung von Anpassungslasten auf Versorgung",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Finanzielle Zugeständnisse könnten Vergütungen, Praxis- und Klinikspielräume sowie Leistungsangebote unter Druck setzen.",
+                "recipients": [
+                  "Patienten",
+                  "Praxen",
+                  "Krankenhäuser",
+                  "Ärzte"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Breiter Mechanismus, aber unklare Umsetzung und keine beobachteten Versorgungsschäden."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Nahezu alle Akteure des Gesundheitssystems sind laut Quelle betroffen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Konkrete Kürzungshöhen und Versorgungseffekte fehlen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Anhaltender Finanzdruck könnte sich über mehrere Abrechnungsperioden auswirken.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vergütungs- und Leistungsentscheidungen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Patienten mit hohem Bedarf und Einrichtungen mit knappen Ressourcen wären besonders exponiert.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad könnte Finanzierung, Personal und Zugang miteinander koppeln.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle nennt ein Risiko für Versorgung, belegt aber keine konkrete Grenzverletzung.",
+                  "reference_frame": "Zugang zu ausreichender und guter Behandlung",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Der Pfad würde wahrscheinlicher, wenn Ausgabenbegrenzungen nicht durch strukturelle Reformen oder ausreichende Ressourcen ergänzt werden.",
+                "reference_space": "medizinische Versorgung in Deutschland",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Finanzielle Zugeständnisse wirken sich auf Kapazitäten aus, sofern keine Ausweichfinanzierung besteht.",
+                "source_support": "Die Quelle belegt das Sparpaket und eine zugeschriebene Kritik an möglichen Verlagerungen.",
+                "limitations": "Wartezeiten, Leistungsumfang und Patientenschäden sind nicht gemessen.",
+                "first_order": "Möglicherweise geringere finanzielle Spielräume.",
+                "second_order": "Mögliche Anpassung von Personal, Investitionen oder Leistungen.",
+                "third_order": "Mögliche regionale oder soziale Unterschiede beim Zugang.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Versorgungsdaten oder Folgenmessungen geliefert.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive Beitragsstabilisierung und negativer Versorgungsdruck sind vergleichbare, aber unbestätigte Hauptpfade; daher gemischte Richtung ohne dominante Seite."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Mögliche Beitragsstabilisierung bei gesetzlich Versicherten",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Mögliche Beitragsstabilisierung bei gesetzlich Versicherten",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle enthält keine belastbaren Angaben zu Emissionen, Ressourcenverbrauch, Beschaffung oder ökologischen Standards. Ein indirekter Pfad über Arzneimittelversorgung und Gesundheitseinrichtungen ist nur als Hypothese formulierbar.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Das Gesetz betrifft ein ressourcenintensives System, doch die Quelle belegt keine ökologische Zustandsänderung und keine Richtung.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Veränderung von Beschaffung und Ressourcenverbrauch im Gesundheitswesen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Finanzielle Zugeständnisse könnten Beschaffungs-, Arzneimittel- oder Betriebsentscheidungen verändern; die ökologische Richtung hängt von den konkreten Entscheidungen ab.",
+                "recipients": [
+                  "Umwelt",
+                  "Gesundheitseinrichtungen",
+                  "Patienten"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Indirekter, nicht belegter Pfad ohne ökologische Messwerte."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Das Gesundheitssystem hat breite Beschaffungsketten, deren Umfang hier nicht quantifiziert ist.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Keine konkrete ökologische Maßnahme oder Intensität wird genannt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Finanzielle Regeln könnten längerfristig Beschaffungen beeinflussen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Beschaffungs- und Betriebsentscheidungen sind grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ökologische Betroffenheit ist möglich, aber nicht objektspezifisch belegt.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der denkbare Pfad verbindet Finanzierung mit Liefer- und Betriebsentscheidungen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze oder relevante Überschreitung ist in der Quelle ausgewiesen.",
+                  "reference_frame": "Ressourcen- und Umweltwirkungen der Gesundheitsversorgung",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Nur wenn Finanzdruck konkrete Beschaffungs- oder Betriebsentscheidungen verändert.",
+                "reference_space": "Gesundheitseinrichtungen und ihre Lieferketten in Deutschland",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ökologische Effekte entstehen nur über nicht belegte Folgeentscheidungen.",
+                "source_support": "Die Quelle erwähnt Arzneimittelversorgung als Reformfeld, liefert aber keine Umwelt- oder Ressourcenanalyse.",
+                "limitations": "Keine Daten zu Emissionen, Abfällen, Energie, Lieferketten oder Beschaffung.",
+                "first_order": "Mögliche Änderung von Beschaffungsprioritäten.",
+                "second_order": "Mögliche Verlagerung von Ressourcen- oder Umweltlasten.",
+                "third_order": "Ökologische Systemfolgen sind ohne weitere Daten nicht bestimmbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Evidenz in der gelieferten Quelle.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung von Beschaffung und Ressourcenverbrauch im Gesundheitswesen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung von Beschaffung und Ressourcenverbrauch im Gesundheitswesen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt einen parlamentarischen Gesetzgebungs- und Umsetzungsstatus sowie öffentliche Kontroverse, aber keine Veränderung von Vertrauen, Beteiligung oder institutioneller Korrekturfähigkeit.",
+            "reviewed_source_ids": [
+              "mdr-nachrichten"
+            ],
+            "rationale": "Das Gesetz stärkt einerseits die Verbindlichkeit politischer Entscheidungen und kann andererseits Konflikte über Verteilung und Versorgung verschärfen. Demokratische Folgen bleiben abhängig von Transparenz, Kontrolle und späteren Daten.",
+            "primary_paths": [
+              {
+                "label": "Verbindliche politische Steuerung der GKV-Finanzierung",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Ein verabschiedetes und in Kraft getretenes Gesetz schafft verbindliche Regeln für Finanzierungs- und Ausgabenentscheidungen.",
+                "recipients": [
+                  "Bundestag",
+                  "Bundesrat",
+                  "Krankenkassen",
+                  "Leistungserbringer",
+                  "Versicherte"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Institutionelle Verbindlichkeit ist belegt, demokratische Qualitätswirkung aber nicht gemessen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Die Regel betrifft zentrale Akteure der gesetzlichen Krankenversicherung.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der institutionelle Eingriff ist verbindlich, seine Kontrollwirkung bleibt offen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Ein geltendes Gesetz prägt Entscheidungen über längere Zeit.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Parlamentarische Regeln können geändert oder aufgehoben werden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Institutionelle Belastungen treffen besonders Akteure mit geringer Verhandlungsmacht.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Finanzierungsregeln greifen in Zuständigkeiten und Rechenschaftsbeziehungen ein.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze ist nicht konkret belegt verletzt.",
+                  "reference_frame": "parlamentarische Rechenschaft und transparente Gesundheitssteuerung",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Die positive Wirkung hängt von transparenter Umsetzung und parlamentarischer Kontrolle ab.",
+                "reference_space": "gesetzliche Krankenversicherung in Deutschland",
+                "time_horizon": "während der Umsetzung und ihrer Evaluation",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Verbindliche Regeln verbessern Rechenschaft nur, wenn Informationen und Kontrolle zugänglich sind.",
+                "source_support": "Die Quelle belegt Verabschiedung und Inkrafttreten, nicht demokratische Folgen.",
+                "limitations": "Keine Daten zu Beteiligung, Vertrauen oder Kontrolle.",
+                "first_order": "Verbindliche Zuständigkeit und Ausgabenregeln.",
+                "second_order": "Mögliche stärkere Rechenschaft über Finanzierung und Versorgung.",
+                "third_order": "Mögliche Veränderung des Vertrauens in politische Gesundheitssteuerung.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Evidenz zu demokratischen Wirkungen geliefert.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 15,
+                  "divisor": 6,
+                  "raw": 2.5,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              },
+              {
+                "label": "Mögliche Verschärfung des Verteilungskonflikts",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Finanzielle Zugeständnisse und unterschiedliche Betroffenheit könnten Konflikte zwischen Politik, Leistungserbringern und Versicherten verstärken.",
+                "recipients": [
+                  "Versicherte",
+                  "Leistungserbringer",
+                  "politische Institutionen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Kontroverse ist belegt, eine dauerhafte demokratische Folge jedoch nicht."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Mehrere zentrale Akteursgruppen sind laut Quelle betroffen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle zeigt deutliche Kritik, aber keine gemessene Eskalation.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Der Konflikt könnte mit der Umsetzung anhalten, seine Dauer ist offen.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische Konflikte und Regelungen können durch Verfahren korrigiert werden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Patienten und kleinere Leistungserbringer haben möglicherweise geringere Ausweichmöglichkeiten.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft Verteilung und Legitimation, nicht nachgewiesene Institutionenschäden.",
+                    "source_ids": [
+                      "mdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle weist keine konkrete Einschränkung demokratischer Rechte aus.",
+                  "reference_frame": "faire Beteiligung und öffentliche Rechenschaft bei Gesundheitsreformen",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "condition": "Der Pfad würde wahrscheinlicher, wenn Versorgungslasten sichtbar ungleich verteilt werden und Korrekturen ausbleiben.",
+                "reference_space": "öffentliche und institutionelle Debatte über die GKV",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Materielle Verteilungsfolgen können politische Konflikte verstärken, müssen aber nicht zu demokratischer Verschlechterung führen.",
+                "source_support": "Die Quelle belegt öffentliche Kritik und unterschiedliche Akteurspositionen.",
+                "limitations": "Keine repräsentativen Daten zu Vertrauen, Beteiligung oder Polarisierung.",
+                "first_order": "Möglicherweise intensivere Auseinandersetzung über Kosten und Versorgung.",
+                "second_order": "Mögliche stärkere politische Mobilisierung betroffener Gruppen.",
+                "third_order": "Mögliche Veränderung von Vertrauen und Reformfähigkeit, sofern Konflikte dauerhaft ungelöst bleiben.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Messung von Polarisierung oder Vertrauenseffekten vorhanden.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Verbindliche Regelsetzung und möglicher Verteilungskonflikt sind gegenläufige, aber nicht gemessene Pfade; sie werden als ausgewogen offen modelliert."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Verbindliche politische Steuerung der GKV-Finanzierung",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Verbindliche politische Steuerung der GKV-Finanzierung",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T10:54:54.344Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "mdr-nachrichten",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference",
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle belegt den Rechtsstatus, die betroffenen Akteure, die Finanzdaten des ersten Halbjahres 2026 sowie zugeschriebene Einschätzungen zu möglichen Versorgungsfolgen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle bestätigt weder eine Verbesserung noch eine Verschlechterung der Versorgung. Plausibel sind gegenläufige Pfade: mögliche Beitragsstabilisierung und möglicher Anpassungsdruck auf Leistungen; Umfang und Eintritt bleiben ungemessen.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Der Hauptpfad verbindet finanzielle Stabilisierung mit möglicher Kostenverlagerung. Beide Richtungen sind materiell, aber die Quelle belegt nur Ausgangsdaten und Akteursbewertungen, nicht die eingetretene Wirkung.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Beitragsstabilisierung bei gesetzlich Versicherten",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Ausgabenbegrenzungen könnten den Druck auf Beitragssätze kurzfristig dämpfen.",
+              "recipients": [
+                "gesetzlich Versicherte"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Breiter Versichertenkreis, aber unklarer Umfang und keine gemessene Wirkung."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Das Gesetz betrifft die gesetzliche Krankenversicherung breit.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt Beitragsstabilisierung als Ziel, nicht deren Ausmaß.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer einer möglichen Entlastung ist nicht belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Beitragssätze und Finanzierungsregeln können politisch geändert werden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Versicherte mit geringem Einkommen reagieren besonders empfindlich auf Beiträge und Leistungen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft Finanzierung, nicht nachgewiesene Systemergebnisse.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für den Zugang zur Versorgung ist nicht beobachtet.",
+                "reference_frame": "finanzieller Zugang zu notwendiger Gesundheitsversorgung",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Die Einsparungen müssen ausreichen, ohne relevante Versorgungskapazitäten zu verringern.",
+              "reference_space": "gesetzlich Versicherte in Deutschland",
+              "time_horizon": "kurz- bis mittelfristig nach dem 30. Juli 2026",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Beitragsstabilisierung hängt von tatsächlicher Ausgabenentwicklung und Umsetzung ab.",
+              "source_support": "Die Quelle belegt das Ziel der Beitragsstabilisierung und die Ausgaben-Einnahmen-Differenz, nicht den Erfolg.",
+              "limitations": "Keine Daten zu späteren Beiträgen oder Patientenergebnissen.",
+              "first_order": "Möglicherweise geringerer Beitragsdruck.",
+              "second_order": "Möglicher zusätzlicher Spielraum für Haushalte, sofern Leistungen unverändert bleiben.",
+              "third_order": "Finanzielle Stabilisierung könnte Vertrauen in die Tragfähigkeit der GKV stützen, ist aber nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Messung einer Beitragswirkung in der gelieferten Quelle.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Mögliche Verlagerung von Anpassungslasten auf Versorgung",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Finanzielle Zugeständnisse könnten Vergütungen, Praxis- und Klinikspielräume sowie Leistungsangebote unter Druck setzen.",
+              "recipients": [
+                "Patienten",
+                "Praxen",
+                "Krankenhäuser",
+                "Ärzte"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Breiter Mechanismus, aber unklare Umsetzung und keine beobachteten Versorgungsschäden."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Nahezu alle Akteure des Gesundheitssystems sind laut Quelle betroffen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Konkrete Kürzungshöhen und Versorgungseffekte fehlen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Anhaltender Finanzdruck könnte sich über mehrere Abrechnungsperioden auswirken.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vergütungs- und Leistungsentscheidungen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Patienten mit hohem Bedarf und Einrichtungen mit knappen Ressourcen wären besonders exponiert.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad könnte Finanzierung, Personal und Zugang miteinander koppeln.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle nennt ein Risiko für Versorgung, belegt aber keine konkrete Grenzverletzung.",
+                "reference_frame": "Zugang zu ausreichender und guter Behandlung",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Der Pfad würde wahrscheinlicher, wenn Ausgabenbegrenzungen nicht durch strukturelle Reformen oder ausreichende Ressourcen ergänzt werden.",
+              "reference_space": "medizinische Versorgung in Deutschland",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Finanzielle Zugeständnisse wirken sich auf Kapazitäten aus, sofern keine Ausweichfinanzierung besteht.",
+              "source_support": "Die Quelle belegt das Sparpaket und eine zugeschriebene Kritik an möglichen Verlagerungen.",
+              "limitations": "Wartezeiten, Leistungsumfang und Patientenschäden sind nicht gemessen.",
+              "first_order": "Möglicherweise geringere finanzielle Spielräume.",
+              "second_order": "Mögliche Anpassung von Personal, Investitionen oder Leistungen.",
+              "third_order": "Mögliche regionale oder soziale Unterschiede beim Zugang.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Versorgungsdaten oder Folgenmessungen geliefert.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive Beitragsstabilisierung und negativer Versorgungsdruck sind vergleichbare, aber unbestätigte Hauptpfade; daher gemischte Richtung ohne dominante Seite."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Mögliche Beitragsstabilisierung bei gesetzlich Versicherten",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Mögliche Beitragsstabilisierung bei gesetzlich Versicherten",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle enthält keine belastbaren Angaben zu Emissionen, Ressourcenverbrauch, Beschaffung oder ökologischen Standards. Ein indirekter Pfad über Arzneimittelversorgung und Gesundheitseinrichtungen ist nur als Hypothese formulierbar.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Das Gesetz betrifft ein ressourcenintensives System, doch die Quelle belegt keine ökologische Zustandsänderung und keine Richtung.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Veränderung von Beschaffung und Ressourcenverbrauch im Gesundheitswesen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Finanzielle Zugeständnisse könnten Beschaffungs-, Arzneimittel- oder Betriebsentscheidungen verändern; die ökologische Richtung hängt von den konkreten Entscheidungen ab.",
+              "recipients": [
+                "Umwelt",
+                "Gesundheitseinrichtungen",
+                "Patienten"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Indirekter, nicht belegter Pfad ohne ökologische Messwerte."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Das Gesundheitssystem hat breite Beschaffungsketten, deren Umfang hier nicht quantifiziert ist.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Keine konkrete ökologische Maßnahme oder Intensität wird genannt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Finanzielle Regeln könnten längerfristig Beschaffungen beeinflussen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Beschaffungs- und Betriebsentscheidungen sind grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ökologische Betroffenheit ist möglich, aber nicht objektspezifisch belegt.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der denkbare Pfad verbindet Finanzierung mit Liefer- und Betriebsentscheidungen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze oder relevante Überschreitung ist in der Quelle ausgewiesen.",
+                "reference_frame": "Ressourcen- und Umweltwirkungen der Gesundheitsversorgung",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Nur wenn Finanzdruck konkrete Beschaffungs- oder Betriebsentscheidungen verändert.",
+              "reference_space": "Gesundheitseinrichtungen und ihre Lieferketten in Deutschland",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ökologische Effekte entstehen nur über nicht belegte Folgeentscheidungen.",
+              "source_support": "Die Quelle erwähnt Arzneimittelversorgung als Reformfeld, liefert aber keine Umwelt- oder Ressourcenanalyse.",
+              "limitations": "Keine Daten zu Emissionen, Abfällen, Energie, Lieferketten oder Beschaffung.",
+              "first_order": "Mögliche Änderung von Beschaffungsprioritäten.",
+              "second_order": "Mögliche Verlagerung von Ressourcen- oder Umweltlasten.",
+              "third_order": "Ökologische Systemfolgen sind ohne weitere Daten nicht bestimmbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Evidenz in der gelieferten Quelle.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung von Beschaffung und Ressourcenverbrauch im Gesundheitswesen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung von Beschaffung und Ressourcenverbrauch im Gesundheitswesen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt einen parlamentarischen Gesetzgebungs- und Umsetzungsstatus sowie öffentliche Kontroverse, aber keine Veränderung von Vertrauen, Beteiligung oder institutioneller Korrekturfähigkeit.",
+          "reviewed_source_ids": [
+            "mdr-nachrichten"
+          ],
+          "rationale": "Das Gesetz stärkt einerseits die Verbindlichkeit politischer Entscheidungen und kann andererseits Konflikte über Verteilung und Versorgung verschärfen. Demokratische Folgen bleiben abhängig von Transparenz, Kontrolle und späteren Daten.",
+          "primary_paths": [
+            {
+              "label": "Verbindliche politische Steuerung der GKV-Finanzierung",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Ein verabschiedetes und in Kraft getretenes Gesetz schafft verbindliche Regeln für Finanzierungs- und Ausgabenentscheidungen.",
+              "recipients": [
+                "Bundestag",
+                "Bundesrat",
+                "Krankenkassen",
+                "Leistungserbringer",
+                "Versicherte"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Institutionelle Verbindlichkeit ist belegt, demokratische Qualitätswirkung aber nicht gemessen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Die Regel betrifft zentrale Akteure der gesetzlichen Krankenversicherung.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der institutionelle Eingriff ist verbindlich, seine Kontrollwirkung bleibt offen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Ein geltendes Gesetz prägt Entscheidungen über längere Zeit.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Parlamentarische Regeln können geändert oder aufgehoben werden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Institutionelle Belastungen treffen besonders Akteure mit geringer Verhandlungsmacht.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Finanzierungsregeln greifen in Zuständigkeiten und Rechenschaftsbeziehungen ein.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze ist nicht konkret belegt verletzt.",
+                "reference_frame": "parlamentarische Rechenschaft und transparente Gesundheitssteuerung",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Die positive Wirkung hängt von transparenter Umsetzung und parlamentarischer Kontrolle ab.",
+              "reference_space": "gesetzliche Krankenversicherung in Deutschland",
+              "time_horizon": "während der Umsetzung und ihrer Evaluation",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Verbindliche Regeln verbessern Rechenschaft nur, wenn Informationen und Kontrolle zugänglich sind.",
+              "source_support": "Die Quelle belegt Verabschiedung und Inkrafttreten, nicht demokratische Folgen.",
+              "limitations": "Keine Daten zu Beteiligung, Vertrauen oder Kontrolle.",
+              "first_order": "Verbindliche Zuständigkeit und Ausgabenregeln.",
+              "second_order": "Mögliche stärkere Rechenschaft über Finanzierung und Versorgung.",
+              "third_order": "Mögliche Veränderung des Vertrauens in politische Gesundheitssteuerung.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Evidenz zu demokratischen Wirkungen geliefert.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 15,
+                "divisor": 6,
+                "raw": 2.5,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            },
+            {
+              "label": "Mögliche Verschärfung des Verteilungskonflikts",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Finanzielle Zugeständnisse und unterschiedliche Betroffenheit könnten Konflikte zwischen Politik, Leistungserbringern und Versicherten verstärken.",
+              "recipients": [
+                "Versicherte",
+                "Leistungserbringer",
+                "politische Institutionen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Kontroverse ist belegt, eine dauerhafte demokratische Folge jedoch nicht."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Mehrere zentrale Akteursgruppen sind laut Quelle betroffen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle zeigt deutliche Kritik, aber keine gemessene Eskalation.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Der Konflikt könnte mit der Umsetzung anhalten, seine Dauer ist offen.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische Konflikte und Regelungen können durch Verfahren korrigiert werden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Patienten und kleinere Leistungserbringer haben möglicherweise geringere Ausweichmöglichkeiten.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft Verteilung und Legitimation, nicht nachgewiesene Institutionenschäden.",
+                  "source_ids": [
+                    "mdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle weist keine konkrete Einschränkung demokratischer Rechte aus.",
+                "reference_frame": "faire Beteiligung und öffentliche Rechenschaft bei Gesundheitsreformen",
+                "source_ids": [
+                  "mdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "mdr-nachrichten"
+              ],
+              "condition": "Der Pfad würde wahrscheinlicher, wenn Versorgungslasten sichtbar ungleich verteilt werden und Korrekturen ausbleiben.",
+              "reference_space": "öffentliche und institutionelle Debatte über die GKV",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Materielle Verteilungsfolgen können politische Konflikte verstärken, müssen aber nicht zu demokratischer Verschlechterung führen.",
+              "source_support": "Die Quelle belegt öffentliche Kritik und unterschiedliche Akteurspositionen.",
+              "limitations": "Keine repräsentativen Daten zu Vertrauen, Beteiligung oder Polarisierung.",
+              "first_order": "Möglicherweise intensivere Auseinandersetzung über Kosten und Versorgung.",
+              "second_order": "Mögliche stärkere politische Mobilisierung betroffener Gruppen.",
+              "third_order": "Mögliche Veränderung von Vertrauen und Reformfähigkeit, sofern Konflikte dauerhaft ungelöst bleiben.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Messung von Polarisierung oder Vertrauenseffekten vorhanden.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Verbindliche Regelsetzung und möglicher Verteilungskonflikt sind gegenläufige, aber nicht gemessene Pfade; sie werden als ausgewogen offen modelliert."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Verbindliche politische Steuerung der GKV-Finanzierung",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Verbindliche politische Steuerung der GKV-Finanzierung",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T10:52:27.129Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T10:28:45.000Z",
+      "last_updated": "2026-09-16T10:54:54.340Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-43f557d28e327fc54d48",
+      "case_file": null,
+      "source_published_at": "2026-09-16T10:28:45.000Z",
+      "published_at": "2026-09-16T10:54:54.340Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die im ersten Halbjahr 2026 beschriebenen Ausgaben- und Einnahmetrends nach Inkrafttreten des Gesetzes anhalten, bleibt zu prüfen.",
+          "source_id": "mdr-nachrichten",
+          "measurable_indicator": "Entwicklung von Leistungsausgaben und beitragspflichtigen Einnahmen der gesetzlichen Krankenkassen",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-60be61de0518a7e8",
+          "announced_at": "2026-09-16T10:28:45.000Z",
+          "follow_up_date": "2026-09-23T10:54:54.340Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/gkv-gesundheitsreform-krankenkassen-beitraege-steigen-versorgung-gefaehrdet,dein-thema-deine-meinung-114.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T10:28:45.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-77e8a0ee8d765ef9",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-77e8a0ee8d765ef9-b9b47c6e8443d61a-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-77e8a0ee8d765ef9-fe5bfa3a1caaa5c2-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-77e8a0ee8d765ef9-b7468a4d9d761d7b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "bombe-von-zweitem-weltkrieg-spazierganger-findet-fliegerbombe-anwohner-werden-evakuiert-765ef9",
+      "title": "Fliegerbombenfund in Oberfranken: Anwohner evakuiert, laut Bericht des stern",
+      "source_summary": "Ein stern-Bericht meldet den Fund eines verdächtigen Gegenstands in einem Waldstück in Oberfranken. Nach ersten Untersuchungen sei der Gegenstand als Fliegerbombe aus dem Zweiten Weltkrieg eingeordnet worden.\n\nDer Titel nennt die Evakuierung von Anwohnern als Folge des Fundes. Die vorliegende Textauswahl enthält jedoch keine Angaben zum genauen Fundort, zur Zahl der evakuierten Menschen, zu einer Entschärfung oder zu möglichen Schäden. Beide gelieferten Belege stammen aus Veröffentlichungen desselben Mediums und sind daher keine unabhängigen Bestätigungen.",
+      "summary": "In Oberfranken wurde laut stern eine Fliegerbombe aus dem Zweiten Weltkrieg gefunden; Anwohner wurden evakuiert. Das akute Sicherheitsereignis ist belegt, Details zu Umfang, Entschärfung und Folgen bleiben offen.",
+      "detail_summary": "Ein Spaziergänger entdeckte laut stern in einem Waldstück in Oberfranken einen verdächtigen Gegenstand. Nach ersten Untersuchungen wurde er als Fliegerbombe aus dem Zweiten Weltkrieg eingeordnet. Der Titel berichtet außerdem von der Evakuierung von Anwohnern. Damit liegt ein konkreter akuter Sicherheitsanlass vor, aber keine vollständige Lagebeschreibung. Unklar bleiben unter anderem die Zahl der Betroffenen, der Zustand der Bombe, eine mögliche Entschärfung und Sachschäden. Das Wirkungspotenzial liegt vor allem in einer vorübergehenden Unterbrechung des Alltags und in Anforderungen an Gefahrenabwehr; weitergehende Folgen sind aus der Textauswahl nicht ableitbar.",
+      "why_relevant": "Ein möglicher Blindgänger erzeugt unmittelbar ein Sicherheitsrisiko und kann Evakuierungen sowie lokale Einschränkungen auslösen. Die Reichweite und Dauer bleiben offen.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Fund und vorläufige Einordnung einer Fliegerbombe in einem Waldstück in Oberfranken mit gemeldeter Evakuierung von Anwohnern",
+        "evaluation_target": {
+          "label": "lokale Gefahrenabwehr nach einem Fliegerbombenfund",
+          "type": "event"
+        },
+        "baseline": "Vor dem Fund bestand für die betroffene Umgebung nach der vorliegenden Akte keine dokumentierte Evakuierungslage.",
+        "counterfactual": "Ohne Fundmeldung und Gefahrenbewertung könnten Absperrung oder Evakuierung ausbleiben; ob dadurch ein Risiko entstünde, ist nicht belegt.",
+        "reference_frame": [
+          "Schutz von Leben und körperlicher Unversehrtheit",
+          "lokale Gefahrenabwehr",
+          "kommunale Resilienz"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "low",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Der zentrale Pfad betrifft Sicherheit, Evakuierung und mögliche Belastungen für Anwohner. Schutzwirkungen und Belastungen hängen von der tatsächlichen Gefährlichkeit und Dauer ab.",
+            "planet": "Ein begrenzter möglicher Pfad betrifft Boden, Vegetation und Ressourcen eines Einsatzes. Konkrete ökologische Veränderungen oder Schäden sind nicht belegt.",
+            "democracy": "Die Gefahrenlage könnte Anforderungen an behördliche Information, Zuständigkeit und Vertrauen erzeugen. Eine institutionelle oder politische Veränderung ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human"
+          ],
+          "first_order": "Die gemeldete Gefahrenbewertung könnte eine räumliche Sicherung und vorübergehende Evakuierung ermöglichen.",
+          "second_order": "Die Maßnahme könnte lokale Wege, Arbeit und Versorgung vorübergehend beeinträchtigen und Behördenressourcen binden.",
+          "third_order": "Bei unklarer oder längerer Lage könnten Vertrauen und kommunale Krisenkommunikation belastet werden; dieser Pfad bleibt hypothetisch.",
+          "enablement": [
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Es gibt keine Angaben zu einer Explosion, Verletzten, Schäden oder einer längeren Sperrung.",
+            "Die zwei Belege stammen aus demselben Medium und sind nicht unabhängig."
+          ],
+          "source_independence": "Beide gelieferten Quellenvarianten stammen aus Veröffentlichungen des stern; eine unabhängige Bestätigung ist nicht verifiziert.",
+          "institutional_status": "Die Akte belegt einen journalistisch gemeldeten Fund und eine gemeldete Evakuierung, aber keine behördliche Primärquelle und keinen rechtlichen Beschluss."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen belegen Fund und gemeldete Evakuierung, aber nicht Gefährlichkeitsgrad, Dauer, Betroffenenzahl oder Schäden. Deshalb bleibt die Richtung zwischen Schutzwirkung und Belastung offen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die mögliche Evakuierung kann Menschen vor einer Gefahrenstelle schützen, zugleich aber Alltag, Versorgung und Arbeit unterbrechen. Beide Pfade sind lokal plausibel, ihre Größenordnung ist wegen fehlender Lageangaben begrenzt.",
+            "primary_paths": [
+              {
+                "label": "Evakuierung könnte Anwohner vor einer möglichen Gefahrenstelle schützen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Eine vorläufige Gefahrenbewertung kann räumliche Trennung von Menschen und Fundstelle auslösen.",
+                "recipients": [
+                  "Anwohner",
+                  "Einsatzkräfte"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Lokaler Schutzpfad mit unklarer Gefährlichkeit und unbekannter Betroffenenzahl."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der mögliche Schutz betrifft vor allem das lokale Umfeld.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine Evakuierung kann Schutz bieten, die konkrete Gefahr bleibt unklar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der Maßnahme ist in der Quellenlage nicht genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine vorübergehende Evakuierung ist grundsätzlich reversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen nahe einer möglichen Bombe könnten besonders schutzbedürftig sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt überwiegend auf lokale Sicherheit begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Schutz von Leben und körperlicher Unversehrtheit kann bei tatsächlicher Explosionsgefahr vorrangig sein.",
+                  "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Gegenstand muss tatsächlich gefährlich sein und die Evakuierung muss die betroffene Gefahrenzone erreichen.",
+                "reference_space": "Waldstück und angrenzende Wohnbereiche in Oberfranken",
+                "time_horizon": "Kurzfristig bis zum Abschluss der Gefahrenbewertung",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Evakuierung und Absperrung werden sachgerecht umgesetzt; die gemeldete Einordnung ist zutreffend.",
+                "source_support": "Die Quelle trägt Fund, vorläufige Einordnung und Evakuierung, nicht aber den Schutzwirkungseintritt.",
+                "limitations": "Keine Angaben zu Gefahrenradius, Dauer, Zahl der Betroffenen oder Entschärfung.",
+                "first_order": "Menschen könnten den Gefahrenbereich verlassen.",
+                "second_order": "Betroffene könnten vorübergehend auf alternative Wege und Aufenthaltsorte angewiesen sein.",
+                "third_order": "Eine längere oder schlecht erklärte Maßnahme könnte Vertrauen und lokale Krisenkommunikation belasten.",
+                "research_pass": "second_pass",
+                "research_result": "Keine zusätzliche unabhängige Evidenz in der gelieferten Akte; Schutzwirkung bleibt bedingte Modellierung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Evakuierung könnte lokale Routinen und Versorgung vorübergehend unterbrechen",
+                "direction": "negative",
+                "type": "side_effect",
+                "mechanism": "Die räumliche Sicherung kann Wege, Aufenthaltsorte und Arbeitsabläufe begrenzen.",
+                "recipients": [
+                  "Anwohner",
+                  "örtliche Betriebe",
+                  "Einsatzkräfte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 2,
+                  "rationale": "Lokale Belastung ist plausibel, aber Umfang und Dauer fehlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen wäre voraussichtlich nur das Umfeld der Fundstelle.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Eine Evakuierung greift unmittelbar in den Alltag ein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der Unterbrechung ist nicht berichtet.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Wege und Routinen könnten nach Freigabe wiederhergestellt werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ältere, kranke oder mobilitätseingeschränkte Menschen könnten stärker belastet sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Nebenpfad bleibt voraussichtlich lokal und kurzfristig.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Belastung ist gegenüber dem bedingten Schutz von Leben nachrangig, sofern tatsächlich Explosionsgefahr besteht.",
+                  "reference_frame": "Alltagskontinuität und erreichbare Versorgung",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Eine Evakuierung oder Sperrung muss tatsächlich bestehen und länger als sehr kurz andauern.",
+                "reference_space": "Lokales Umfeld des Fundorts",
+                "time_horizon": "Während einer möglichen Sperrung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Evakuierung betrifft bewohnte oder genutzte Bereiche und erzeugt Umwege.",
+                "source_support": "Die Quelle nennt Evakuierung, aber keine konkreten Alltagsfolgen.",
+                "limitations": "Keine Angaben zu Infrastruktur, Dauer, Versorgung oder besonders betroffenen Gruppen.",
+                "first_order": "Mögliche Umwege und vorübergehende Abwesenheit vom Wohnort.",
+                "second_order": "Mögliche zusätzliche Belastung für lokale Betriebe und Einsatzkoordination.",
+                "third_order": "Eine lange Sperrung könnte lokale Resilienz schwächen; dafür fehlt jeder Nachweis.",
+                "research_pass": "second_pass",
+                "research_result": "Die Akte enthält keine Daten zu Dauer oder Verteilung der Belastung; Nebenpfad bleibt hypothetisch.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Schutz- und Belastungspfad betreffen denselben lokalen Vorgang. Die Schutzgrenze für Leben ist bei tatsächlicher Gefahr vorrangig; ohne bestätigte Gefährlichkeit bleibt die Gesamtbewertung gemischt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Evakuierung könnte Anwohner vor einer möglichen Gefahrenstelle schützen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Evakuierung könnte Anwohner vor einer möglichen Gefahrenstelle schützen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen enthalten keine Angaben zu Boden, Vegetation, Kampfmittelrückständen, Einsatzemissionen oder Entsorgungsfolgen. Ein ökologischer Pfad ist nur abstrakt und nicht richtungsfest modellierbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein Einsatz zur Sicherung oder Entschärfung könnte lokal Ressourcen und Boden beanspruchen; ebenso könnte eine erfolgreiche Gefahrenabwehr eine spätere Belastung verhindern. Richtung und Umfang sind nicht belegt.",
+            "primary_paths": [
+              {
+                "label": "Sicherung oder Entschärfung könnte lokale Boden- und Vegetationsbelastung begrenzen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Gefahrenabwehr könnte den Gegenstand kontrolliert sichern und eine unkontrollierte Freisetzung vermeiden.",
+                "recipients": [
+                  "Boden und Vegetation im Fundumfeld",
+                  "lokale Umwelt"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein möglicher lokaler Umweltpfad ist denkbar, aber ohne Angaben zu Zustand und Vorgehen kaum quantifizierbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Effekt wäre auf das Fundumfeld begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quellen belegen keine konkrete Umweltbelastung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Belastung könnte kurzzeitig oder dauerhaft sein; die Dauer ist offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Bodenfolgen wären möglicherweise begrenzt, aber nicht sicher reversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine besondere ökologische Empfindlichkeit des Fundorts ist nicht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Ein überlokaler ökologischer Systempfad ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze wird in den Quellen nicht beschrieben.",
+                  "reference_frame": "Lokale Boden- und Ökosystemintegrität",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Es müsste eine relevante Boden- oder Stoffbelastung bestehen und das Vorgehen müsste diese verändern.",
+                "reference_space": "Fundumfeld in Oberfranken",
+                "time_horizon": "Während und nach der Sicherung oder Entschärfung",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der Gegenstand enthält noch relevante Stoffe und die Bergung beeinflusst den lokalen Zustand.",
+                "source_support": "Die Quelle belegt weder ökologische Ausgangslage noch Umweltfolgen.",
+                "limitations": "Keine Daten zu Boden, Vegetation, Entsorgung, Sprengung oder Stoffen.",
+                "first_order": "Mögliche lokale Bodenstörung durch Sicherung oder Bergung.",
+                "second_order": "Mögliche Nachsorge oder Entsorgung bei kontaminiertem Material.",
+                "third_order": "Eine überregionale Umweltwirkung ist nicht plausibel belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Wirkungsinformation in der gelieferten Quelle; Richtung bleibt offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Sicherung oder Entschärfung könnte lokale Boden- und Vegetationsbelastung begrenzen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Sicherung oder Entschärfung könnte lokale Boden- und Vegetationsbelastung begrenzen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen enthalten keine Angaben zur behördlichen Kommunikation, zu Konflikten über Zuständigkeiten oder zu verändertem Vertrauen. Ein demokratischer Pfad bleibt deshalb offen und lokal begrenzt.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein akutes Sicherheitsereignis kann Anforderungen an Transparenz, Zuständigkeit und Kriseninformation erzeugen. Eine tatsächliche Wirkung auf Vertrauen oder Institutionen ist nicht belegt.",
+            "primary_paths": [
+              {
+                "label": "Gefahrenkommunikation könnte lokale Rechenschaft und Vertrauen beeinflussen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Informationen über Fund, Evakuierung und weitere Schritte könnten die Bewertung behördlicher Handlungsfähigkeit prägen.",
+                "recipients": [
+                  "Anwohner",
+                  "kommunale Behörden",
+                  "Einsatzorganisationen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Kommunikative Bedeutung ist möglich, aber weder Kommunikation noch Reaktion sind in der Akte dokumentiert."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Kommunikationspfad betrifft primär das lokale Umfeld.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Vertrauensänderung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Kommunikationswirkung bleibt offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Lokale Informationswirkungen wären grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders betroffene Anwohner könnten stärker auf verlässliche Information angewiesen sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein institutioneller Strukturwandel ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder Verletzung ist nicht dokumentiert.",
+                  "reference_frame": "Transparente Gefahreninformation und institutionelle Rechenschaft",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Es müsste eine öffentliche oder behördliche Kommunikation stattfinden und von Betroffenen wahrgenommen werden.",
+                "reference_space": "Lokale Öffentlichkeit und zuständige Behörden in Oberfranken",
+                "time_horizon": "Während der Gefahrenlage und ihrer Nachbereitung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Anwohner erhalten widersprüchliche oder besonders verlässliche Informationen und reagieren darauf.",
+                "source_support": "Die Quelle berichtet das Ereignis, nicht Kommunikationsqualität oder Vertrauensänderung.",
+                "limitations": "Keine Behördensprecher, keine Reaktionen, keine Umfragen und keine Dokumentation von Zuständigkeitskonflikten.",
+                "first_order": "Möglicher zusätzlicher Informationsbedarf der Anwohner.",
+                "second_order": "Mögliche Bewertung der lokalen Krisenkommunikation.",
+                "third_order": "Eine dauerhafte Veränderung institutionellen Vertrauens ist ohne weitere Evidenz nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Evidenz für eingetretene demokratische oder institutionelle Wirkungen; nur bedingter Kommunikationspfad.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Gefahrenkommunikation könnte lokale Rechenschaft und Vertrauen beeinflussen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Gefahrenkommunikation könnte lokale Rechenschaft und Vertrauen beeinflussen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T10:53:47.902Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event",
+              "counter_evidence"
+            ],
+            "supported_claim": "Journalistischer Bericht über Fund, vorläufige Einordnung als Fliegerbombe und Evakuierung; zugleich Beleg für die begrenzte Quellenbasis."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Geringe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen belegen Fund und gemeldete Evakuierung, aber nicht Gefährlichkeitsgrad, Dauer, Betroffenenzahl oder Schäden. Deshalb bleibt die Richtung zwischen Schutzwirkung und Belastung offen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die mögliche Evakuierung kann Menschen vor einer Gefahrenstelle schützen, zugleich aber Alltag, Versorgung und Arbeit unterbrechen. Beide Pfade sind lokal plausibel, ihre Größenordnung ist wegen fehlender Lageangaben begrenzt.",
+          "primary_paths": [
+            {
+              "label": "Evakuierung könnte Anwohner vor einer möglichen Gefahrenstelle schützen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Eine vorläufige Gefahrenbewertung kann räumliche Trennung von Menschen und Fundstelle auslösen.",
+              "recipients": [
+                "Anwohner",
+                "Einsatzkräfte"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Lokaler Schutzpfad mit unklarer Gefährlichkeit und unbekannter Betroffenenzahl."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der mögliche Schutz betrifft vor allem das lokale Umfeld.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine Evakuierung kann Schutz bieten, die konkrete Gefahr bleibt unklar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Maßnahme ist in der Quellenlage nicht genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine vorübergehende Evakuierung ist grundsätzlich reversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen nahe einer möglichen Bombe könnten besonders schutzbedürftig sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt überwiegend auf lokale Sicherheit begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Schutz von Leben und körperlicher Unversehrtheit kann bei tatsächlicher Explosionsgefahr vorrangig sein.",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Gegenstand muss tatsächlich gefährlich sein und die Evakuierung muss die betroffene Gefahrenzone erreichen.",
+              "reference_space": "Waldstück und angrenzende Wohnbereiche in Oberfranken",
+              "time_horizon": "Kurzfristig bis zum Abschluss der Gefahrenbewertung",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Evakuierung und Absperrung werden sachgerecht umgesetzt; die gemeldete Einordnung ist zutreffend.",
+              "source_support": "Die Quelle trägt Fund, vorläufige Einordnung und Evakuierung, nicht aber den Schutzwirkungseintritt.",
+              "limitations": "Keine Angaben zu Gefahrenradius, Dauer, Zahl der Betroffenen oder Entschärfung.",
+              "first_order": "Menschen könnten den Gefahrenbereich verlassen.",
+              "second_order": "Betroffene könnten vorübergehend auf alternative Wege und Aufenthaltsorte angewiesen sein.",
+              "third_order": "Eine längere oder schlecht erklärte Maßnahme könnte Vertrauen und lokale Krisenkommunikation belasten.",
+              "research_pass": "second_pass",
+              "research_result": "Keine zusätzliche unabhängige Evidenz in der gelieferten Akte; Schutzwirkung bleibt bedingte Modellierung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Evakuierung könnte lokale Routinen und Versorgung vorübergehend unterbrechen",
+              "direction": "negative",
+              "type": "side_effect",
+              "mechanism": "Die räumliche Sicherung kann Wege, Aufenthaltsorte und Arbeitsabläufe begrenzen.",
+              "recipients": [
+                "Anwohner",
+                "örtliche Betriebe",
+                "Einsatzkräfte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 2,
+                "rationale": "Lokale Belastung ist plausibel, aber Umfang und Dauer fehlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen wäre voraussichtlich nur das Umfeld der Fundstelle.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Eine Evakuierung greift unmittelbar in den Alltag ein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der Unterbrechung ist nicht berichtet.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Wege und Routinen könnten nach Freigabe wiederhergestellt werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ältere, kranke oder mobilitätseingeschränkte Menschen könnten stärker belastet sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Nebenpfad bleibt voraussichtlich lokal und kurzfristig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Belastung ist gegenüber dem bedingten Schutz von Leben nachrangig, sofern tatsächlich Explosionsgefahr besteht.",
+                "reference_frame": "Alltagskontinuität und erreichbare Versorgung",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Eine Evakuierung oder Sperrung muss tatsächlich bestehen und länger als sehr kurz andauern.",
+              "reference_space": "Lokales Umfeld des Fundorts",
+              "time_horizon": "Während einer möglichen Sperrung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Evakuierung betrifft bewohnte oder genutzte Bereiche und erzeugt Umwege.",
+              "source_support": "Die Quelle nennt Evakuierung, aber keine konkreten Alltagsfolgen.",
+              "limitations": "Keine Angaben zu Infrastruktur, Dauer, Versorgung oder besonders betroffenen Gruppen.",
+              "first_order": "Mögliche Umwege und vorübergehende Abwesenheit vom Wohnort.",
+              "second_order": "Mögliche zusätzliche Belastung für lokale Betriebe und Einsatzkoordination.",
+              "third_order": "Eine lange Sperrung könnte lokale Resilienz schwächen; dafür fehlt jeder Nachweis.",
+              "research_pass": "second_pass",
+              "research_result": "Die Akte enthält keine Daten zu Dauer oder Verteilung der Belastung; Nebenpfad bleibt hypothetisch.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Schutz- und Belastungspfad betreffen denselben lokalen Vorgang. Die Schutzgrenze für Leben ist bei tatsächlicher Gefahr vorrangig; ohne bestätigte Gefährlichkeit bleibt die Gesamtbewertung gemischt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Evakuierung könnte Anwohner vor einer möglichen Gefahrenstelle schützen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Evakuierung könnte Anwohner vor einer möglichen Gefahrenstelle schützen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen enthalten keine Angaben zu Boden, Vegetation, Kampfmittelrückständen, Einsatzemissionen oder Entsorgungsfolgen. Ein ökologischer Pfad ist nur abstrakt und nicht richtungsfest modellierbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein Einsatz zur Sicherung oder Entschärfung könnte lokal Ressourcen und Boden beanspruchen; ebenso könnte eine erfolgreiche Gefahrenabwehr eine spätere Belastung verhindern. Richtung und Umfang sind nicht belegt.",
+          "primary_paths": [
+            {
+              "label": "Sicherung oder Entschärfung könnte lokale Boden- und Vegetationsbelastung begrenzen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Gefahrenabwehr könnte den Gegenstand kontrolliert sichern und eine unkontrollierte Freisetzung vermeiden.",
+              "recipients": [
+                "Boden und Vegetation im Fundumfeld",
+                "lokale Umwelt"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein möglicher lokaler Umweltpfad ist denkbar, aber ohne Angaben zu Zustand und Vorgehen kaum quantifizierbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Effekt wäre auf das Fundumfeld begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quellen belegen keine konkrete Umweltbelastung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Belastung könnte kurzzeitig oder dauerhaft sein; die Dauer ist offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Bodenfolgen wären möglicherweise begrenzt, aber nicht sicher reversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine besondere ökologische Empfindlichkeit des Fundorts ist nicht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Ein überlokaler ökologischer Systempfad ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze wird in den Quellen nicht beschrieben.",
+                "reference_frame": "Lokale Boden- und Ökosystemintegrität",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Es müsste eine relevante Boden- oder Stoffbelastung bestehen und das Vorgehen müsste diese verändern.",
+              "reference_space": "Fundumfeld in Oberfranken",
+              "time_horizon": "Während und nach der Sicherung oder Entschärfung",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der Gegenstand enthält noch relevante Stoffe und die Bergung beeinflusst den lokalen Zustand.",
+              "source_support": "Die Quelle belegt weder ökologische Ausgangslage noch Umweltfolgen.",
+              "limitations": "Keine Daten zu Boden, Vegetation, Entsorgung, Sprengung oder Stoffen.",
+              "first_order": "Mögliche lokale Bodenstörung durch Sicherung oder Bergung.",
+              "second_order": "Mögliche Nachsorge oder Entsorgung bei kontaminiertem Material.",
+              "third_order": "Eine überregionale Umweltwirkung ist nicht plausibel belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Wirkungsinformation in der gelieferten Quelle; Richtung bleibt offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Sicherung oder Entschärfung könnte lokale Boden- und Vegetationsbelastung begrenzen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Sicherung oder Entschärfung könnte lokale Boden- und Vegetationsbelastung begrenzen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen enthalten keine Angaben zur behördlichen Kommunikation, zu Konflikten über Zuständigkeiten oder zu verändertem Vertrauen. Ein demokratischer Pfad bleibt deshalb offen und lokal begrenzt.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein akutes Sicherheitsereignis kann Anforderungen an Transparenz, Zuständigkeit und Kriseninformation erzeugen. Eine tatsächliche Wirkung auf Vertrauen oder Institutionen ist nicht belegt.",
+          "primary_paths": [
+            {
+              "label": "Gefahrenkommunikation könnte lokale Rechenschaft und Vertrauen beeinflussen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Informationen über Fund, Evakuierung und weitere Schritte könnten die Bewertung behördlicher Handlungsfähigkeit prägen.",
+              "recipients": [
+                "Anwohner",
+                "kommunale Behörden",
+                "Einsatzorganisationen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Kommunikative Bedeutung ist möglich, aber weder Kommunikation noch Reaktion sind in der Akte dokumentiert."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Kommunikationspfad betrifft primär das lokale Umfeld.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Vertrauensänderung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Kommunikationswirkung bleibt offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Lokale Informationswirkungen wären grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders betroffene Anwohner könnten stärker auf verlässliche Information angewiesen sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein institutioneller Strukturwandel ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder Verletzung ist nicht dokumentiert.",
+                "reference_frame": "Transparente Gefahreninformation und institutionelle Rechenschaft",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Es müsste eine öffentliche oder behördliche Kommunikation stattfinden und von Betroffenen wahrgenommen werden.",
+              "reference_space": "Lokale Öffentlichkeit und zuständige Behörden in Oberfranken",
+              "time_horizon": "Während der Gefahrenlage und ihrer Nachbereitung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Anwohner erhalten widersprüchliche oder besonders verlässliche Informationen und reagieren darauf.",
+              "source_support": "Die Quelle berichtet das Ereignis, nicht Kommunikationsqualität oder Vertrauensänderung.",
+              "limitations": "Keine Behördensprecher, keine Reaktionen, keine Umfragen und keine Dokumentation von Zuständigkeitskonflikten.",
+              "first_order": "Möglicher zusätzlicher Informationsbedarf der Anwohner.",
+              "second_order": "Mögliche Bewertung der lokalen Krisenkommunikation.",
+              "third_order": "Eine dauerhafte Veränderung institutionellen Vertrauens ist ohne weitere Evidenz nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Evidenz für eingetretene demokratische oder institutionelle Wirkungen; nur bedingter Kommunikationspfad.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Gefahrenkommunikation könnte lokale Rechenschaft und Vertrauen beeinflussen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Gefahrenkommunikation könnte lokale Rechenschaft und Vertrauen beeinflussen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T10:52:27.129Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T09:52:23.000Z",
+      "last_updated": "2026-09-16T10:53:47.898Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-ca654c7c9ecc1c465c85",
+      "case_file": null,
+      "source_published_at": "2026-09-16T09:52:23.000Z",
+      "published_at": "2026-09-16T10:53:47.898Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/bayern/bombe-von-zweitem-weltkrieg--spaziergaenger-findet-fliegerbombe--anwohner-werden-evakuiert-38261030.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T09:52:23.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/bayern/bombe-von-zweitem-weltkrieg--spaziergaenger-findet-fliegerbombe--anwohner-evakuiert-38261030.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T10:29:56.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-7bca08a77fd631f1",
       "title_image": {
@@ -113104,6 +115834,26 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-personal-23442a5b15cd08b4",
+      "slug": "was-meinen-wir-wenn-wir-den-westen-sagen-23442a",
+      "title": "Was meinen wir, wenn wir „den Westen“ sagen?",
+      "subtitle": "Nachgehört: Maja Göpel spricht mit dem Historiker Sebastian Conrad über die Geschichte, politische Nutzung und mögliche Zukunft des Begriffs „Westen“.",
+      "teaser": "Nachgehört: Maja Göpel spricht mit dem Historiker Sebastian Conrad über die Geschichte, politische Nutzung und mögliche Zukunft des Begriffs „Westen“.",
+      "published_at": "2026-09-16T09:56:32.611Z",
+      "updated_at": "2026-09-16T09:56:32.611Z",
+      "reading_time_minutes": 8
+    },
+    {
+      "analysis_id": "woek-personal-697da51ce4dc1953",
+      "slug": "der-westen-als-streitbegriff-was-historische-selbstbilder-heute-bewirken-697da5",
+      "title": "Der Westen als Streitbegriff: Was historische Selbstbilder heute bewirken",
+      "subtitle": "Nachgehört: Maja Göpel und Sebastian Conrad über die Geschichte des Westens, koloniale Legitimationsmuster und die Frage, welche gemeinsamen Regeln heute tragen können.",
+      "teaser": "Nachgehört: Maja Göpel und Sebastian Conrad über die Geschichte des Westens, koloniale Legitimationsmuster und die Frage, welche gemeinsamen Regeln heute tragen können.",
+      "published_at": "2026-09-16T09:55:52.088Z",
+      "updated_at": "2026-09-16T09:55:52.088Z",
+      "reading_time_minutes": 8
+    },
     {
       "analysis_id": "woek-personal-13800b375204e879",
       "slug": "sydney-sweeney-und-der-neue-alte-streit-daruber-wie-eine-frau-sein-darf-13800b",
