@@ -50,6 +50,7 @@
     initializeNewsState();
     initializeNotifications();
     initializeFreshnessChecks();
+    initializeSeenOnRead();
   }
 
   function initializePullToRefresh() {
@@ -131,6 +132,31 @@
     reader.addEventListener("touchcancel", cancel, { passive: true });
     window.addEventListener("pagehide", cancel);
     document.addEventListener("visibilitychange", () => { if (document.visibilityState !== "visible") cancel(); });
+  }
+
+  // Die Zahl am App-Symbol beantwortet die Frage „ist seit meinem letzten Blick
+  // etwas dazugekommen?". Bisher konnte sie nur wachsen: gesenkt hat sie
+  // ausschliesslich der Knopf „Als gelesen markieren", und den findet niemand,
+  // der einfach liest (16.09., Natalie: „die Zahl nimmt zu aber nicht ab, wenn
+  // ich gelesen habe" - Stand 60). Wer die Liste offen vor sich hat, hat
+  // hingesehen; danach ist die Zahl null. Die NEU-Marker an den Karten bleiben
+  // fuer diesen Besuch stehen, damit noch erkennbar ist, was neu war.
+  const SEEN_DWELL_MS = 1500;
+  let seenTimer = null;
+  function scheduleAcknowledge() {
+    if (!cards.length || document.visibilityState !== "visible") return;
+    if (seenTimer !== null) return;
+    seenTimer = window.setTimeout(() => {
+      seenTimer = null;
+      if (document.visibilityState === "visible") void acknowledgeVisibleNews();
+    }, SEEN_DWELL_MS);
+  }
+  function initializeSeenOnRead() {
+    scheduleAcknowledge();
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") scheduleAcknowledge();
+      else if (seenTimer !== null) { window.clearTimeout(seenTimer); seenTimer = null; }
+    });
   }
 
   function newestCardTimestamp() {
@@ -457,7 +483,13 @@
           && timestamp <= now && now - timestamp <= 24 * 60 * 60 * 1000;
       });
       const latest = updates.reduce((value, item) => Math.max(value, Date.parse(item.date_modified || item.date_published || "") || 0), 0);
-      await updateAppBadge(updates.length);
+      // Wer die Liste gerade offen vor sich hat, bekommt keine Zahl aufs Symbol:
+      // er sieht die Meldungen. Sonst haette der Hintergrundlauf die Zahl
+      // unmittelbar nach dem Lesen wieder gesetzt. Der Lesestand selbst wird
+      // hier nicht geschrieben - das tut nur die Bestaetigung auf der Seite,
+      // und zwar genau bis zur neuesten gerenderten Karte.
+      const watching = document.visibilityState === "visible" && cards.length > 0;
+      await updateAppBadge(watching ? 0 : updates.length);
       if (!updates.length || latest <= lastNotified || document.visibilityState === "visible") return false;
       const registration = await registrationPromise;
       await registration?.showNotification("Neue Wirkungsnachrichten", {
@@ -479,11 +511,15 @@
   }
 
   async function markNewsAsSeen() {
-    await acknowledgeVisibleNews({ hideMarkers: true });
+    await acknowledgeVisibleNews({ hideMarkers: true, includeFeed: true });
   }
 
-  async function acknowledgeVisibleNews({ hideMarkers = false } = {}) {
-    const newest = Math.max(newestCardTimestamp(), latestFeedTimestamp);
+  // includeFeed nur auf ausdrueckliche Ansage: der Feed kann Meldungen kennen,
+  // die diese Seite noch nicht zeigt. Die automatisch bestaetigte Grenze ist
+  // deshalb die neueste *gerenderte* Karte - sonst gilt als gelesen, was
+  // Natalie nie gesehen hat.
+  async function acknowledgeVisibleNews({ hideMarkers = false, includeFeed = false } = {}) {
+    const newest = includeFeed ? Math.max(newestCardTimestamp(), latestFeedTimestamp) : newestCardTimestamp();
     if (newest) {
       const value = new Date(newest).toISOString();
       window.localStorage.setItem(lastSeenKey, value);
