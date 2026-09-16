@@ -712,6 +712,10 @@ test('die Vorgabe nennt die belegbaren Zahlen je Quelle, mit demselben Auszug wi
   assert.deepEqual(sourceNumberBriefing({ sources: [ohne] }), ['rbb24: keine Zahlen']);
   assert.deepEqual(sourceNumberBriefing({}), []);
   assert.deepEqual(sourceNumberBriefing({ sources: [{ title: 'ohne Kennung' }] }), [], 'ohne source_id keine Zeile');
+  // Dieselbe Kennung mehrfach im Bestand ergibt eine Zeile mit allen Zahlen.
+  assert.deepEqual(sourceNumberBriefing({ sources: [
+    { source_id: 'stern', title: 'Zwölf Punkte', summary: 'Am 3. Tag' },
+    { source_id: 'stern', title: 'Andere Meldung mit 7', summary: '' }] }), ['stern: 3, 7']);
   // Lange Zahlenlisten werden begrenzt, damit die Anweisung nicht ausufert.
   const viele = { source_id: 'viele', title: Array.from({ length: 60 }, (_, i) => `${i + 1}`).join(' '), summary: '' };
   assert.equal(sourceNumberBriefing({ sources: [viele] })[0].split(', ').length, BRIEFING_NUMBERS_PER_SOURCE);
