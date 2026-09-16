@@ -559,3 +559,27 @@ test('ein Befund, der sein Feld selbst nennt, bestimmt die Nachlieferung ohne Ta
   const format = fieldRepairFormat(repairFields(['AI_ARRAY_REQUIRED:uncertainties', 'AI_REQUIRED_STRING:evidence_level']));
   assert.deepEqual(format.schema.required, ['story_id', 'uncertainties', 'evidence_level']);
 });
+
+test('das Analyseschema bleibt innerhalb aller Anbietergrenzen, sonst fällt der Lauf unbemerkt in den freien Modus', async () => {
+  const { analysisResponseFormat } = await import('../../scripts/news/analysis-json-schema.mjs');
+  const format = analysisResponseFormat();
+  let properties = 0, enumValues = 0, longestEnum = 0, depth = 0;
+  const walk = (node, level) => {
+    if (!node || typeof node !== 'object') return;
+    depth = Math.max(depth, level);
+    if (Array.isArray(node.enum)) { enumValues += node.enum.length; for (const value of node.enum) longestEnum = Math.max(longestEnum, String(value).length); }
+    for (const value of Object.values(node.properties || {})) { properties += 1; walk(value, level + 1); }
+    if (node.items) walk(node.items, level + 1);
+  };
+  walk(format.schema, 1);
+  const bytes = JSON.stringify(format).length;
+  // Grenzen der Structured Outputs: 120 000 Zeichen, 5000 Eigenschaften,
+  // 10 Verschachtelungsebenen, 1000 Enum-Werte (ab 250 Werten höchstens 250
+  // Zeichen je Wert). Wird eine überschritten, lehnt der Anbieter das Schema
+  // ab und der Lauf läuft wieder ungebunden - ohne dass es jemand merkt.
+  assert.ok(bytes <= 120000, `Schema ${bytes} Zeichen`);
+  assert.ok(properties <= 5000, `Schema ${properties} Eigenschaften`);
+  assert.ok(depth <= 10, `Verschachtelung ${depth}`);
+  assert.ok(enumValues <= 1000, `${enumValues} Enum-Werte`);
+  if (enumValues > 250) assert.ok(longestEnum <= 250, `längster Enum-Wert ${longestEnum} Zeichen`);
+});

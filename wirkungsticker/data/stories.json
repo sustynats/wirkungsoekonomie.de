@@ -2,8 +2,2712 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T08:52:21.569Z",
+  "updated_at": "2026-09-16T09:22:10.469Z",
   "stories": [
+    {
+      "story_id": "wt-b366fbf1c9a92998",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b366fbf1c9a92998-9f2775f123f0f1f7-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b366fbf1c9a92998-abd79b90d6a3801d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-b366fbf1c9a92998-2b1379e68c0eb49c-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "bnd-und-verfassungsschutz-kunftig-spitze-beim-abhoren-a92998",
+      "title": "Kabinettsentwurf sieht laut Legal Tribune Online neue Regeln für Nachrichtendienst-Überwachung vor",
+      "source_summary": "Legal Tribune Online berichtet über einen vom Bundeskabinett beschlossenen Gesetzentwurf zur Reform des Nachrichtendienstrechts. Der Beitrag beschreibt geplante Änderungen bei der Individualüberwachung, der massenhaften Auswertung von Kommunikationsdaten und der Zuständigkeit für die Kontrolle.\n\nBesonders hervorgehoben werden niedrigere Schwellen für bestimmte Überwachungsmaßnahmen des BND gegenüber Ausländern im Ausland sowie eine Bündelung der Aufsicht beim Unabhängigen Kontrollrat. Die Quelle ordnet den Entwurf rechtlich ein, ist aber die einzige gelieferte journalistische Darstellung; eine unabhängige Bestätigung und der vollständige Gesetzentwurf liegen hier nicht vor.",
+      "summary": "Ein Gesetzentwurf soll die Überwachungsbefugnisse von BND und Verfassungsschutz neu ordnen. Die möglichen Folgen für Grundrechtsschutz und Kontrolle sind erheblich, aber auf Basis einer einzelnen Darstellung noch nicht abschließend bewertbar.",
+      "detail_summary": "Der vom Bundeskabinett beschlossene Entwurf soll die Regeln für Nachrichtendienst-Überwachung neu ordnen. Laut Legal Tribune Online betrifft er sowohl individuelle Überwachung als auch die massenhafte Auswertung von Kommunikationsdaten. Für Ausländer im Ausland könnten beim BND niedrigere Eingriffsschwellen gelten. Zugleich soll die Aufsicht beim Unabhängigen Kontrollrat gebündelt werden. Das könnte die operative Arbeit und die Rechtskontrolle verändern, hängt aber von der endgültigen Gesetzesfassung und ihrer Umsetzung ab. Die Quelle beschreibt außerdem offene verfassungsrechtliche Fragen; eine unabhängige Bestätigung liegt nicht vor.",
+      "why_relevant": "Der Entwurf kann den Umfang staatlicher Überwachung, den Schutz persönlicher Kommunikation und die demokratische Kontrolle von Nachrichtendiensten verändern.",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über einen vom Bundeskabinett beschlossenen Gesetzentwurf zur Neuordnung von Nachrichtendienst-Überwachung und Aufsicht",
+        "evaluation_target": {
+          "label": "Neuordnung gesetzlicher Nachrichtendienstbefugnisse und ihrer Kontrolle",
+          "type": "proposal"
+        },
+        "baseline": "Bisherige, auf G 10 und BND-Gesetz verteilte Regelungen sowie die bisherige Zuständigkeit des Unabhängigen Kontrollrats.",
+        "counterfactual": "Ohne die Reform blieben die beschriebenen Zuständigkeiten, Schwellen und getrennten Regelungsbereiche zunächst bestehen.",
+        "reference_frame": [
+          "Grundrechtsschutz",
+          "Verhältnismäßigkeit staatlicher Überwachung",
+          "demokratische und gerichtliche Kontrolle"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Reform könnte Privatsphäre und Kommunikationsfreiheit verändern, insbesondere wenn niedrigere oder differenzierte Überwachungsschwellen angewandt werden. Die Reichweite tatsächlicher Eingriffe bleibt mangels Primärquelle und Anwendungsdaten offen.",
+            "planet": "Die Quelle behandelt Nachrichtendienstrecht, Telekommunikationsüberwachung und Aufsicht. Ein belastbarer ökologischer Wirkpfad, etwa über Ressourcen-, Energie- oder Infrastrukturveränderungen, ist daraus nicht konkret ableitbar.",
+            "democracy": "Die Neuordnung könnte die Aufsicht über Nachrichtendienste vereinheitlichen und damit Rechtskontrolle erleichtern. Zugleich könnten neue oder differenzierte Befugnisse die demokratische Korrekturfähigkeit unter Druck setzen, falls Kontrolle nicht entsprechend ausgestattet wird."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Mögliche Veränderung gesetzlicher Überwachungsschwellen und der Aufsichtsstruktur.",
+          "second_order": "Mögliche Verschiebung von Datenschutz, operativer Handlungsfähigkeit und Kontrollzugang unter Bedingungen der konkreten Gesetzesfassung.",
+          "third_order": "Mögliche langfristige Prägung des Verhältnisses von Sicherheit, Grundrechten und demokratischer Kontrolle; Eintritt und Richtung sind offen.",
+          "enablement": [
+            "enables_legislation",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Die Quelle berichtet, dass beim BfV kein Absinken des Schutzniveaus zu besorgen sei.",
+            "Die Quelle betont Einzelfallprüfung und abgestufte, nicht pauschal suspendierte Grundrechte.",
+            "Der Entwurf ist noch nicht als geltendes Recht belegt."
+          ],
+          "source_independence": "Nur eine journalistische Quelle ist geliefert. Eine unabhängige Primärquelle oder zweite journalistische Darstellung liegt nicht vor; die Unabhängigkeit weiterer Belege ist daher nicht prüfbar.",
+          "institutional_status": "Laut Quelle handelt es sich um einen vom Bundeskabinett beschlossenen Gesetzentwurf, nicht um geltendes Recht. Parlamentarische Beratung, endgültige Verabschiedung und Inkrafttreten sind offen."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt den beschriebenen rechtlichen Mechanismus, aber nicht die Zahl, Auswahl oder konkrete Belastung künftig Überwachter. Reichweite, Anwendungshäufigkeit und gerichtliche Korrektur bleiben ungeklärt.",
+            "reviewed_source_ids": [
+              "lto-news"
+            ],
+            "rationale": "Der mögliche Hauptpfad betrifft Privatsphäre und Kommunikationsfreiheit. Er ist rechtlich konkret beschrieben, aber in seiner tatsächlichen Reichweite unsicher. Wegen der bedingten Schutzgrenze wird die mögliche Tragweite nicht auf den Mittelwert der Faktoren reduziert.",
+            "primary_paths": [
+              {
+                "label": "Niedrigere oder differenzierte Überwachungsschwellen könnten den Schutz persönlicher Kommunikation für bestimmte Betroffene schwächen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wenn die beschriebenen niedrigeren Schwellen im Gesetz bestehen bleiben und angewandt werden, könnten Nachrichtendienste bestimmte Kommunikationsdaten unter erleichterten Voraussetzungen überwachen.",
+                "recipients": [
+                  "Personen im Ausland",
+                  "Personen mit vermuteten Verbindungen zu fremden Mächten",
+                  "Betroffene von Telekommunikationsüberwachung"
+                ],
+                "magnitude": 4,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Der Eingriff kann für einzelne Betroffene erheblich sein; Reichweite, Dauer und konkrete Anwendung sind jedoch nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt bestimmte Personengruppen, aber keine Gesamtzahl.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Die mögliche Auswertung von Meta- und Inhaltsdaten kann tief in Kommunikation eingreifen.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine konkrete Dauer möglicher Überwachungsmaßnahmen wird nicht belegt.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Ein erfolgter Datenzugriff lässt sich nachträglich nur begrenzt rückgängig machen.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Betroffene geheimer Maßnahmen haben eingeschränkte unmittelbare Abwehrmöglichkeiten.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft Grundrechtsschutz und Behördenpraxis, nicht alle Gesellschaftsbereiche.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Geheime Eingriffe in persönliche Kommunikation berühren eine zentrale Schutzgrenze; ihre tatsächliche Verletzung ist ex ante jedoch nur bedingt modellierbar.",
+                  "reference_frame": "Telekommunikationsgeheimnis und rechtsstaatliche Verhältnismäßigkeit",
+                  "source_ids": [
+                    "lto-news"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "lto-news"
+                ],
+                "condition": "Die Regelungen müssen verabschiedet, angewandt und nicht durch wirksame Aufsicht oder Gerichte begrenzt werden.",
+                "reference_space": "Nachrichtendienstliche Überwachung im Inland-Ausland-Verhältnis und gegenüber Ausländern im Ausland",
+                "time_horizon": "Nach möglichem Inkrafttreten und während der Anwendung",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die in der Quelle beschriebenen Schwellen und Überwachungsformen werden in vergleichbarer Form übernommen.",
+                "source_support": "Die Quelle beschreibt niedrigere Schwellen sowie die Auswertung von Meta- und Inhaltsdaten; sie belegt keine eingetretene Grundrechtsverletzung.",
+                "limitations": "Keine Primärquelle, keine Fallzahlen, keine Anwendungsdaten und keine unabhängige juristische Bestätigung.",
+                "first_order": "Bestimmte Überwachungsmaßnahmen könnten rechtlich leichter eingeleitet werden.",
+                "second_order": "Betroffene könnten weniger vorhersehbar einschätzen können, wann Kommunikation überwacht wird; Umfang und Häufigkeit bleiben offen.",
+                "third_order": "Eine dauerhafte Anwendung könnte das Verhältnis von Sicherheitsbehörden und individueller Privatsphäre verschieben; dies bleibt hypothetisch.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle quantifiziert Reichweite oder tatsächliche Eingriffe; der Pfad bleibt ein bedingtes Modell.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Der negative Hauptpfad berührt eine mögliche Schutzgrenze persönlicher Kommunikation. Ein materiell gleich starker positiver Gegenpfad für die menschliche Dimension ist in der gelieferten Quelle nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 4,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Niedrigere oder differenzierte Überwachungsschwellen könnten den Schutz persönlicher Kommunikation für bestimmte Betroffene schwächen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Niedrigere oder differenzierte Überwachungsschwellen könnten den Schutz persönlicher Kommunikation für bestimmte Betroffene schwächen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gezielte Prüfung der gelieferten Quelle findet keinen konkreten ökologischen Mechanismus, keine Umweltkennzahl und keine beobachtete Zustandsänderung. Die Wissensgrenze ist der vollständige Mangel an Angaben zu Ressourcen, Energie, Infrastruktur oder Emissionen.",
+            "reviewed_source_ids": [
+              "lto-news"
+            ],
+            "rationale": "Die Quelle behandelt Nachrichtendienstrecht und Kommunikationsüberwachung. Eine konkrete ökologische Zustandsänderung ist für den abgegrenzten Gegenstand und das gelieferte Material nicht plausibel modellierbar.",
+            "primary_paths": [
+              {
+                "label": "Keine belastbare direkte ökologische Zustandsänderung aus der beschriebenen Rechtsreform",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die beschriebenen Rechts- und Aufsichtsänderungen betreffen Nachrichtendienste; eine Verbindung zu ökologischen Zuständen wird nicht angegeben.",
+                "recipients": [
+                  "Umwelt und Ökosysteme"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Im gelieferten Material ist kein konkreter Planet-Mechanismus für den abgegrenzten Gegenstand erkennbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Reichweite wird in der Quelle beschrieben.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Intensität ist aus dem Sachverhalt ableitbar.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Wirkungsdauer wird genannt.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Umweltveränderung ist belegt oder plausibel konkretisiert.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine verletzliche ökologische Empfängergruppe wird genannt.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Systemmechanismus wird beschrieben.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze wird durch den gelieferten Sachverhalt nicht berührt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "lto-news"
+                ],
+                "condition": "Ein Planet-Pfad wäre nur bei zusätzlichen Belegen zu Ressourcen-, Infrastruktur- oder Emissionswirkungen prüfbar.",
+                "reference_space": "Ökologische Folgen der beschriebenen Rechtsreform",
+                "time_horizon": "Offen",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es werden keine nicht gelieferten Verbindungen zwischen Überwachungsinfrastruktur und Umweltwirkungen angenommen.",
+                "source_support": "Die Quelle belegt keinen ökologischen Mechanismus.",
+                "limitations": "Keine Umwelt-, Energie- oder Infrastrukturangaben liegen vor.",
+                "first_order": "Keine belastbare ökologische Erstwirkung modellierbar.",
+                "second_order": "Keine nachgelagerte ökologische Wirkung modellierbar.",
+                "third_order": "Keine systemische ökologische Kaskade modellierbar.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle enthält keine belastbare Grundlage für einen Planet-Pfad; die Wissensgrenze ist der vollständige Mangel an ökologischen Angaben.",
+                "negligibility_rationale": "Für den abgegrenzten Gegenstand und das gelieferte Material ist keine konkrete ökologische Zustandsänderung erkennbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Keine belastbare direkte ökologische Zustandsänderung aus der beschriebenen Rechtsreform",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine belastbare direkte ökologische Zustandsänderung aus der beschriebenen Rechtsreform",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle beschreibt sowohl eine mögliche Bündelung der Aufsicht als auch mögliche niedrigere Eingriffsschwellen. Sie belegt weder eine tatsächliche Verbesserung noch eine Verschlechterung demokratischer Kontrolle; die Richtung hängt von Ausgestaltung, Ressourcen und Praxis ab.",
+            "reviewed_source_ids": [
+              "lto-news"
+            ],
+            "rationale": "Die Reform könnte Kontrolle institutionell bündeln und dadurch vereinheitlichen, zugleich aber Überwachungsbefugnisse erweitern oder differenzieren. Die gegenläufigen Pfade sind quellengebunden, ihre relative Stärke und tatsächliche Umsetzung bleiben offen.",
+            "primary_paths": [
+              {
+                "label": "Bündelung der Aufsicht könnte Zuständigkeiten und Rechtskontrolle vereinheitlichen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Wenn der Kontrollrat ausreichende Ressourcen, Unabhängigkeit und Zugriff erhält, könnte die Zusammenführung getrennter Aufsichten Verfahren vergleichbarer und nachvollziehbarer machen.",
+                "recipients": [
+                  "Unabhängiger Kontrollrat",
+                  "Parlament",
+                  "Betroffene von Überwachungsmaßnahmen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Eine einheitlichere Kontrolle ist möglich, aber ihre Qualität hängt von Ausgestaltung und Ressourcen ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Aufsichtsstruktur betrifft mehrere Nachrichtendienstbereiche.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die institutionelle Wirkung wäre mittelbar und von der Praxis abhängig.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Eine gesetzliche Zuständigkeitsordnung könnte langfristig wirken.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Institutionelle Zuständigkeiten können politisch und rechtlich geändert werden.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Kontrollqualität hängt von Stellung und Ausstattung der Aufsicht ab.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad betrifft die Architektur staatlicher Rechtskontrolle.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der positive Pfad beschreibt eine mögliche institutionelle Verbesserung, keine belegte Schutzgrenzverletzung.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "lto-news"
+                ],
+                "condition": "Die Bündelung muss mit ausreichender Unabhängigkeit, Transparenz und effektiver Prüfung verbunden sein.",
+                "reference_space": "Aufsicht über BND und Verfassungsschutz",
+                "time_horizon": "Nach möglichem Inkrafttreten und bei dauerhafter Aufsichtspraxis",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die im Beitrag beschriebene Zusammenführung wird umgesetzt und organisatorisch funktionsfähig ausgestattet.",
+                "source_support": "Die Quelle beschreibt die geplante Bündelung beim Unabhängigen Kontrollrat; eine tatsächliche Verbesserung der Kontrolle ist nicht belegt.",
+                "limitations": "Keine Angaben zu Ressourcen, Transparenz, parlamentarischer Einbindung oder späterer Praxis.",
+                "first_order": "Zuständigkeiten könnten zusammengeführt werden.",
+                "second_order": "Kontrollentscheidungen könnten einheitlicher ausfallen oder zentraler gesteuert werden.",
+                "third_order": "Die demokratische Korrekturfähigkeit könnte sich stärken oder schwächen; die Richtung hängt von der institutionellen Ausgestaltung ab.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle belegt die geplante Strukturänderung, aber keine unabhängige Funktionsbewertung des Kontrollrats.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Erweiterte oder differenzierte Befugnisse könnten die demokratische Kontrolle unter Druck setzen",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Wenn niedrigere Eingriffsschwellen zu mehr Überwachung führen und Kontrolle nicht entsprechend verstärkt wird, könnte die staatliche Eingriffsmacht gegenüber Betroffenen wachsen.",
+                "recipients": [
+                  "Parlament",
+                  "Gerichte",
+                  "Betroffene und Öffentlichkeit"
+                ],
+                "magnitude": 4,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Der institutionelle Druck kann erheblich sein, konkrete Folgen für Kontrolle und Öffentlichkeit sind aber nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die mögliche Wirkung betrifft die Nachrichtendienstkontrolle, nicht jede Institution.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die demokratische Wirkung ist mittelbar und von Kontrolle abhängig.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Neue Befugnisse könnten über längere Zeit institutionell fortwirken.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Gesetzliche und institutionelle Änderungen bleiben grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Geheime Überwachung erschwert öffentliche und individuelle Gegenkontrolle.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad berührt Machtkontrolle und rechtsstaatliche Korrekturfähigkeit.",
+                    "source_ids": [
+                      "lto-news"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Demokratische Kontrolle darf durch neue Befugnisse nicht praktisch leer laufen; eine solche Grenzverletzung ist ex ante nur bedingt.",
+                  "reference_frame": "Korrekturfähigkeit und unabhängige Kontrolle staatlicher Macht",
+                  "source_ids": [
+                    "lto-news"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "lto-news"
+                ],
+                "condition": "Die negativen Folgen würden voraussetzen, dass Befugnisse erweitert und Kontrollmechanismen nicht ausreichend wirksam werden.",
+                "reference_space": "Nachrichtendienstliche Macht- und Kontrollstruktur in Deutschland",
+                "time_horizon": "Mittelfristig nach möglicher Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Niedrigere Schwellen werden tatsächlich genutzt und die Kontrolle bleibt hinter der Befugnisausweitung zurück.",
+                "source_support": "Die Quelle beschreibt niedrigere Schwellen und eine neue Aufsichtsordnung, aber keinen eingetretenen Kontrollverlust.",
+                "limitations": "Keine Daten zu Kontrollfällen, Ressourcen, Transparenz oder parlamentarischer Rechenschaft.",
+                "first_order": "Die Exekutive könnte in bestimmten Konstellationen leichter überwachen.",
+                "second_order": "Parlamentarische und gerichtliche Kontrolle könnten stärker auf nachträgliche Prüfung angewiesen sein.",
+                "third_order": "Wiederholte, wenig transparente Eingriffe könnten das institutionelle Gleichgewicht verschieben; dies ist eine bedingte Hypothese.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst demokratische Folgen oder Kontrollqualität; die Richtung bleibt von der Ausgestaltung abhängig.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 15,
+                  "divisor": 6,
+                  "raw": 2.5,
+                  "rounded": 3,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Bündelung der Aufsicht und mögliche Ausweitung beziehungsweise Differenzierung von Befugnissen sind gegenläufige institutionelle Pfade. Der negative Pfad ist wegen der möglichen Schutzgrenze und der höheren modellierten Tragweite dominant; die Dimension bleibt deshalb mixed."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 4,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Bündelung der Aufsicht könnte Zuständigkeiten und Rechtskontrolle vereinheitlichen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Bündelung der Aufsicht könnte Zuständigkeiten und Rechtskontrolle vereinheitlichen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T09:26:03.619Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "lto-news",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference",
+              "counter_evidence"
+            ],
+            "supported_claim": "Bericht über Kabinettsbeschluss und geplante Änderungen bei Überwachung, Eingriffsschwellen und Aufsicht einschließlich rechtlicher Einordnung und genannter Begrenzungen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt den beschriebenen rechtlichen Mechanismus, aber nicht die Zahl, Auswahl oder konkrete Belastung künftig Überwachter. Reichweite, Anwendungshäufigkeit und gerichtliche Korrektur bleiben ungeklärt.",
+          "reviewed_source_ids": [
+            "lto-news"
+          ],
+          "rationale": "Der mögliche Hauptpfad betrifft Privatsphäre und Kommunikationsfreiheit. Er ist rechtlich konkret beschrieben, aber in seiner tatsächlichen Reichweite unsicher. Wegen der bedingten Schutzgrenze wird die mögliche Tragweite nicht auf den Mittelwert der Faktoren reduziert.",
+          "primary_paths": [
+            {
+              "label": "Niedrigere oder differenzierte Überwachungsschwellen könnten den Schutz persönlicher Kommunikation für bestimmte Betroffene schwächen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wenn die beschriebenen niedrigeren Schwellen im Gesetz bestehen bleiben und angewandt werden, könnten Nachrichtendienste bestimmte Kommunikationsdaten unter erleichterten Voraussetzungen überwachen.",
+              "recipients": [
+                "Personen im Ausland",
+                "Personen mit vermuteten Verbindungen zu fremden Mächten",
+                "Betroffene von Telekommunikationsüberwachung"
+              ],
+              "magnitude": 4,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Der Eingriff kann für einzelne Betroffene erheblich sein; Reichweite, Dauer und konkrete Anwendung sind jedoch nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt bestimmte Personengruppen, aber keine Gesamtzahl.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die mögliche Auswertung von Meta- und Inhaltsdaten kann tief in Kommunikation eingreifen.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine konkrete Dauer möglicher Überwachungsmaßnahmen wird nicht belegt.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Ein erfolgter Datenzugriff lässt sich nachträglich nur begrenzt rückgängig machen.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Betroffene geheimer Maßnahmen haben eingeschränkte unmittelbare Abwehrmöglichkeiten.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft Grundrechtsschutz und Behördenpraxis, nicht alle Gesellschaftsbereiche.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Geheime Eingriffe in persönliche Kommunikation berühren eine zentrale Schutzgrenze; ihre tatsächliche Verletzung ist ex ante jedoch nur bedingt modellierbar.",
+                "reference_frame": "Telekommunikationsgeheimnis und rechtsstaatliche Verhältnismäßigkeit",
+                "source_ids": [
+                  "lto-news"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "lto-news"
+              ],
+              "condition": "Die Regelungen müssen verabschiedet, angewandt und nicht durch wirksame Aufsicht oder Gerichte begrenzt werden.",
+              "reference_space": "Nachrichtendienstliche Überwachung im Inland-Ausland-Verhältnis und gegenüber Ausländern im Ausland",
+              "time_horizon": "Nach möglichem Inkrafttreten und während der Anwendung",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die in der Quelle beschriebenen Schwellen und Überwachungsformen werden in vergleichbarer Form übernommen.",
+              "source_support": "Die Quelle beschreibt niedrigere Schwellen sowie die Auswertung von Meta- und Inhaltsdaten; sie belegt keine eingetretene Grundrechtsverletzung.",
+              "limitations": "Keine Primärquelle, keine Fallzahlen, keine Anwendungsdaten und keine unabhängige juristische Bestätigung.",
+              "first_order": "Bestimmte Überwachungsmaßnahmen könnten rechtlich leichter eingeleitet werden.",
+              "second_order": "Betroffene könnten weniger vorhersehbar einschätzen können, wann Kommunikation überwacht wird; Umfang und Häufigkeit bleiben offen.",
+              "third_order": "Eine dauerhafte Anwendung könnte das Verhältnis von Sicherheitsbehörden und individueller Privatsphäre verschieben; dies bleibt hypothetisch.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle quantifiziert Reichweite oder tatsächliche Eingriffe; der Pfad bleibt ein bedingtes Modell.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Der negative Hauptpfad berührt eine mögliche Schutzgrenze persönlicher Kommunikation. Ein materiell gleich starker positiver Gegenpfad für die menschliche Dimension ist in der gelieferten Quelle nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Niedrigere oder differenzierte Überwachungsschwellen könnten den Schutz persönlicher Kommunikation für bestimmte Betroffene schwächen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 4,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Niedrigere oder differenzierte Überwachungsschwellen könnten den Schutz persönlicher Kommunikation für bestimmte Betroffene schwächen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gezielte Prüfung der gelieferten Quelle findet keinen konkreten ökologischen Mechanismus, keine Umweltkennzahl und keine beobachtete Zustandsänderung. Die Wissensgrenze ist der vollständige Mangel an Angaben zu Ressourcen, Energie, Infrastruktur oder Emissionen.",
+          "reviewed_source_ids": [
+            "lto-news"
+          ],
+          "rationale": "Die Quelle behandelt Nachrichtendienstrecht und Kommunikationsüberwachung. Eine konkrete ökologische Zustandsänderung ist für den abgegrenzten Gegenstand und das gelieferte Material nicht plausibel modellierbar.",
+          "primary_paths": [
+            {
+              "label": "Keine belastbare direkte ökologische Zustandsänderung aus der beschriebenen Rechtsreform",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die beschriebenen Rechts- und Aufsichtsänderungen betreffen Nachrichtendienste; eine Verbindung zu ökologischen Zuständen wird nicht angegeben.",
+              "recipients": [
+                "Umwelt und Ökosysteme"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Im gelieferten Material ist kein konkreter Planet-Mechanismus für den abgegrenzten Gegenstand erkennbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Reichweite wird in der Quelle beschrieben.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Intensität ist aus dem Sachverhalt ableitbar.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Wirkungsdauer wird genannt.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Umweltveränderung ist belegt oder plausibel konkretisiert.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine verletzliche ökologische Empfängergruppe wird genannt.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Systemmechanismus wird beschrieben.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze wird durch den gelieferten Sachverhalt nicht berührt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "lto-news"
+              ],
+              "condition": "Ein Planet-Pfad wäre nur bei zusätzlichen Belegen zu Ressourcen-, Infrastruktur- oder Emissionswirkungen prüfbar.",
+              "reference_space": "Ökologische Folgen der beschriebenen Rechtsreform",
+              "time_horizon": "Offen",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es werden keine nicht gelieferten Verbindungen zwischen Überwachungsinfrastruktur und Umweltwirkungen angenommen.",
+              "source_support": "Die Quelle belegt keinen ökologischen Mechanismus.",
+              "limitations": "Keine Umwelt-, Energie- oder Infrastrukturangaben liegen vor.",
+              "first_order": "Keine belastbare ökologische Erstwirkung modellierbar.",
+              "second_order": "Keine nachgelagerte ökologische Wirkung modellierbar.",
+              "third_order": "Keine systemische ökologische Kaskade modellierbar.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle enthält keine belastbare Grundlage für einen Planet-Pfad; die Wissensgrenze ist der vollständige Mangel an ökologischen Angaben.",
+              "negligibility_rationale": "Für den abgegrenzten Gegenstand und das gelieferte Material ist keine konkrete ökologische Zustandsänderung erkennbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Keine belastbare direkte ökologische Zustandsänderung aus der beschriebenen Rechtsreform",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Keine belastbare direkte ökologische Zustandsänderung aus der beschriebenen Rechtsreform",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle beschreibt sowohl eine mögliche Bündelung der Aufsicht als auch mögliche niedrigere Eingriffsschwellen. Sie belegt weder eine tatsächliche Verbesserung noch eine Verschlechterung demokratischer Kontrolle; die Richtung hängt von Ausgestaltung, Ressourcen und Praxis ab.",
+          "reviewed_source_ids": [
+            "lto-news"
+          ],
+          "rationale": "Die Reform könnte Kontrolle institutionell bündeln und dadurch vereinheitlichen, zugleich aber Überwachungsbefugnisse erweitern oder differenzieren. Die gegenläufigen Pfade sind quellengebunden, ihre relative Stärke und tatsächliche Umsetzung bleiben offen.",
+          "primary_paths": [
+            {
+              "label": "Bündelung der Aufsicht könnte Zuständigkeiten und Rechtskontrolle vereinheitlichen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Wenn der Kontrollrat ausreichende Ressourcen, Unabhängigkeit und Zugriff erhält, könnte die Zusammenführung getrennter Aufsichten Verfahren vergleichbarer und nachvollziehbarer machen.",
+              "recipients": [
+                "Unabhängiger Kontrollrat",
+                "Parlament",
+                "Betroffene von Überwachungsmaßnahmen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Eine einheitlichere Kontrolle ist möglich, aber ihre Qualität hängt von Ausgestaltung und Ressourcen ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Aufsichtsstruktur betrifft mehrere Nachrichtendienstbereiche.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die institutionelle Wirkung wäre mittelbar und von der Praxis abhängig.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Eine gesetzliche Zuständigkeitsordnung könnte langfristig wirken.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Institutionelle Zuständigkeiten können politisch und rechtlich geändert werden.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Kontrollqualität hängt von Stellung und Ausstattung der Aufsicht ab.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad betrifft die Architektur staatlicher Rechtskontrolle.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der positive Pfad beschreibt eine mögliche institutionelle Verbesserung, keine belegte Schutzgrenzverletzung.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "lto-news"
+              ],
+              "condition": "Die Bündelung muss mit ausreichender Unabhängigkeit, Transparenz und effektiver Prüfung verbunden sein.",
+              "reference_space": "Aufsicht über BND und Verfassungsschutz",
+              "time_horizon": "Nach möglichem Inkrafttreten und bei dauerhafter Aufsichtspraxis",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die im Beitrag beschriebene Zusammenführung wird umgesetzt und organisatorisch funktionsfähig ausgestattet.",
+              "source_support": "Die Quelle beschreibt die geplante Bündelung beim Unabhängigen Kontrollrat; eine tatsächliche Verbesserung der Kontrolle ist nicht belegt.",
+              "limitations": "Keine Angaben zu Ressourcen, Transparenz, parlamentarischer Einbindung oder späterer Praxis.",
+              "first_order": "Zuständigkeiten könnten zusammengeführt werden.",
+              "second_order": "Kontrollentscheidungen könnten einheitlicher ausfallen oder zentraler gesteuert werden.",
+              "third_order": "Die demokratische Korrekturfähigkeit könnte sich stärken oder schwächen; die Richtung hängt von der institutionellen Ausgestaltung ab.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle belegt die geplante Strukturänderung, aber keine unabhängige Funktionsbewertung des Kontrollrats.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Erweiterte oder differenzierte Befugnisse könnten die demokratische Kontrolle unter Druck setzen",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Wenn niedrigere Eingriffsschwellen zu mehr Überwachung führen und Kontrolle nicht entsprechend verstärkt wird, könnte die staatliche Eingriffsmacht gegenüber Betroffenen wachsen.",
+              "recipients": [
+                "Parlament",
+                "Gerichte",
+                "Betroffene und Öffentlichkeit"
+              ],
+              "magnitude": 4,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Der institutionelle Druck kann erheblich sein, konkrete Folgen für Kontrolle und Öffentlichkeit sind aber nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die mögliche Wirkung betrifft die Nachrichtendienstkontrolle, nicht jede Institution.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die demokratische Wirkung ist mittelbar und von Kontrolle abhängig.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Neue Befugnisse könnten über längere Zeit institutionell fortwirken.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Gesetzliche und institutionelle Änderungen bleiben grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Geheime Überwachung erschwert öffentliche und individuelle Gegenkontrolle.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad berührt Machtkontrolle und rechtsstaatliche Korrekturfähigkeit.",
+                  "source_ids": [
+                    "lto-news"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Demokratische Kontrolle darf durch neue Befugnisse nicht praktisch leer laufen; eine solche Grenzverletzung ist ex ante nur bedingt.",
+                "reference_frame": "Korrekturfähigkeit und unabhängige Kontrolle staatlicher Macht",
+                "source_ids": [
+                  "lto-news"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "lto-news"
+              ],
+              "condition": "Die negativen Folgen würden voraussetzen, dass Befugnisse erweitert und Kontrollmechanismen nicht ausreichend wirksam werden.",
+              "reference_space": "Nachrichtendienstliche Macht- und Kontrollstruktur in Deutschland",
+              "time_horizon": "Mittelfristig nach möglicher Umsetzung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Niedrigere Schwellen werden tatsächlich genutzt und die Kontrolle bleibt hinter der Befugnisausweitung zurück.",
+              "source_support": "Die Quelle beschreibt niedrigere Schwellen und eine neue Aufsichtsordnung, aber keinen eingetretenen Kontrollverlust.",
+              "limitations": "Keine Daten zu Kontrollfällen, Ressourcen, Transparenz oder parlamentarischer Rechenschaft.",
+              "first_order": "Die Exekutive könnte in bestimmten Konstellationen leichter überwachen.",
+              "second_order": "Parlamentarische und gerichtliche Kontrolle könnten stärker auf nachträgliche Prüfung angewiesen sein.",
+              "third_order": "Wiederholte, wenig transparente Eingriffe könnten das institutionelle Gleichgewicht verschieben; dies ist eine bedingte Hypothese.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst demokratische Folgen oder Kontrollqualität; die Richtung bleibt von der Ausgestaltung abhängig.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 15,
+                "divisor": 6,
+                "raw": 2.5,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Bündelung der Aufsicht und mögliche Ausweitung beziehungsweise Differenzierung von Befugnissen sind gegenläufige institutionelle Pfade. Der negative Pfad ist wegen der möglichen Schutzgrenze und der höheren modellierten Tragweite dominant; die Dimension bleibt deshalb mixed."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Bündelung der Aufsicht könnte Zuständigkeiten und Rechtskontrolle vereinheitlichen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 4,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Bündelung der Aufsicht könnte Zuständigkeiten und Rechtskontrolle vereinheitlichen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T09:22:10.469Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T09:15:00.000Z",
+      "last_updated": "2026-09-16T09:26:03.616Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-375ee118aa210a1b126a",
+      "case_file": null,
+      "source_published_at": "2026-09-16T09:15:00.000Z",
+      "published_at": "2026-09-16T09:26:03.616Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "lto-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Legal Tribune Online",
+          "url": "https://www.lto.de/recht/hintergruende/h/bnd-verfassungsschutz-ueberwachung-reform-nachrichtendienste-telekommunikation-kontrolle-ki?r=rss",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T09:15:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-068fa5f5aba8a416",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-068fa5f5aba8a416-a3456f775982fc01-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-068fa5f5aba8a416-00b1077489cdf3d1-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-068fa5f5aba8a416-3affe508e0fa49f5-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "hessen-plant-1-7-milliarden-euro-neue-schulden-rekordetat-fur-schulen-a8a416",
+      "title": "Hessen plant für 2027 neue Schulden und Rekordausgaben für Schulen",
+      "source_summary": "Die hessenschau berichtet über den Haushaltsentwurf des Landes für 2027. Vorgesehen sind 39,3 Milliarden Euro Einnahmen und 41,6 Milliarden Euro Ausgaben; das entstehende Finanzloch soll durch Rücklagen und Kredite geschlossen werden. Geplant sind 1,7 Milliarden Euro neue Schulden.\n\nEin Schwerpunkt liegt mit 6,5 Milliarden Euro auf den Schulen. Zugleich sollen rund 50 Verwaltungsstellen wegfallen, während zusätzliche Lehrerstellen vorgesehen sind. Finanzminister Alexander Lorz begründet den Entwurf mit schwachen Steuereinnahmen, gestiegenen Zinsen und anhaltendem Spardruck. Die parlamentarische Beratung und der endgültige Beschluss stehen noch aus.",
+      "summary": "Hessen plant für 2027 neue Schulden und zugleich Rekordausgaben für Schulen. Der Entwurf setzt Prioritäten, ist aber noch nicht parlamentarisch beschlossen.",
+      "detail_summary": "Hessen will 2027 trotz Sparzwangs investieren und dafür 1,7 Milliarden Euro neue Schulden aufnehmen. Für Schulen sind 6,5 Milliarden Euro vorgesehen, über 300 Millionen Euro mehr als 2026. Zugleich sollen rund 50 Verwaltungsstellen wegfallen, während zusätzliche Lehrerstellen geplant sind. Der Entwurf steht damit für eine Verschiebung innerhalb begrenzter finanzieller Spielräume. Möglich wären kurzfristig bessere Voraussetzungen für Bildungsangebote, wenn die zusätzlichen Mittel umgesetzt werden. Offen bleibt, welche Ausgaben dauerhaft finanzierbar sind und wie der Landtag den Entwurf verändert.",
+      "why_relevant": "Der Entwurf verbindet eine hohe Kreditaufnahme mit einer Schwerpunktsetzung bei Bildung und legt damit finanzielle Prioritäten des Landes offen.",
+      "topic": [
+        "Europa",
+        "Finanzen"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Hessischer Haushaltsentwurf für 2027 mit geplanter Kreditaufnahme und Bildungspriorität",
+        "evaluation_target": {
+          "label": "Haushaltsentwurf des Landes Hessen für 2027",
+          "type": "proposal"
+        },
+        "baseline": "Bisherige Haushaltsplanung und staatliche Aufgabenwahrnehmung vor dem Entwurf für 2027",
+        "counterfactual": "Ohne den Entwurf würden Prioritäten, Kreditaufnahme und Ausgaben für Schulen im weiteren Haushaltsverfahren anders festgelegt oder fortgeschrieben.",
+        "reference_frame": [
+          "öffentliche Daseinsvorsorge",
+          "Haushalts- und Budgetkontrolle",
+          "SDG 4 hochwertige Bildung"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Zusätzliche Mittel könnten Schulen und Lehrkräfte unterstützen; mögliche Verteilungskonflikte und dauerhafte Kosten bleiben offen.",
+            "planet": "Die Quelle nennt keine konkreten Klima- oder Umweltziele des Entwurfs. Bau-, Verkehrs- oder Digitalausgaben könnten ökologische Folgen haben, sind hier aber nicht ausreichend belegt.",
+            "democracy": "Der Entwurf legt politische Prioritäten offen und wird parlamentarisch beraten. Langfristiger Schuldendruck könnte spätere Budgetentscheidungen beeinflussen, bleibt aber eine bedingte Möglichkeit."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Der Entwurf verteilt zusätzliche Mittel auf Schulen und ermöglicht Ausgaben trotz eines Finanzlochs.",
+          "second_order": "Die Priorisierung könnte die Verteilung zwischen Ressorts und die künftige Haushaltsplanung beeinflussen.",
+          "third_order": "Wiederholte finanzielle Bindungen könnten die spätere politische Korrekturfähigkeit verändern; Umfang und Eintritt sind offen.",
+          "enablement": [
+            "enables_budget_control",
+            "enables_legislation"
+          ],
+          "counter_evidence": [
+            "Der Entwurf ist noch nicht beschlossen und kann im Landtag verändert werden.",
+            "Die Quelle belegt weder konkrete Bildungsergebnisse noch ökologische oder demokratische Folgewirkungen.",
+            "Die angekündigte Begrenzung von Ausgaben und der Abbau von Verwaltungsstellen können gegen eine dauerhafte Ausweitung sprechen."
+          ],
+          "source_independence": "Es liegt eine journalistische Quelle mit nicht verifizierter unabhängiger Quellenbasis vor. Aussagen des Finanzministers und redaktionelle Angaben sind zu trennen; eine zweite unabhängige Darstellung fehlt.",
+          "institutional_status": "Es handelt sich um einen Haushaltsentwurf. Die Quelle stellt die Einbringung im September und eine Verabschiedung noch im selben Jahr in Aussicht; ein endgültiger Beschluss ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt zusätzliche geplante Bildungs- und Lehrerstellen, aber keine tatsächlichen Verbesserungen für Schülerinnen, Schüler oder Beschäftigte. Reichweite und Dauer der möglichen Wirkung hängen von Beschluss und Umsetzung ab.",
+            "reviewed_source_ids": [
+              "hr-hessenschau"
+            ],
+            "rationale": "Der stärkste bedingte Pfad führt über zusätzliche Bildungsressourcen zu möglichen Verbesserungen staatlicher Angebote. Gegenläufig könnten Kredit-, Personal- und Verteilungskosten andere Leistungen begrenzen; konkrete Betroffenenzahlen fehlen.",
+            "primary_paths": [
+              {
+                "label": "Zusätzliche Bildungsressourcen könnten Schulen und Lernende unterstützen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Mehr geplante Mittel und zusätzliche Lehrerstellen könnten die personelle und sachliche Ausstattung von Schulen erhöhen.",
+                "recipients": [
+                  "Schülerinnen und Schüler",
+                  "Lehrkräfte",
+                  "Schulen"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Bildungspriorität ist konkret beziffert, ihre Reichweite und tatsächliche Umsetzung sind jedoch offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Schulausgaben betreffen grundsätzlich viele Lernende und Schulen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Zusätzliche Mittel und Stellen könnten die Ausstattung spürbar verändern.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Bildungs- und Personalentscheidungen könnten über ein Haushaltsjahr hinaus wirken.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Haushalts- und Stellenentscheidungen wären grundsätzlich politisch korrigierbar.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Lernende mit Unterstützungsbedarf könnten von zusätzlichen Angeboten besonders abhängen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Bildungsausgaben greifen in öffentliche Infrastruktur und Chancenverteilung ein.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine konkrete Verletzung oder Sicherung einer Schutzgrenze.",
+                  "reference_frame": "Zugang zu öffentlicher Bildung",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Der Landtag muss die Mittel bestätigen und die zusätzlichen Stellen sowie Bildungsangebote müssen tatsächlich umgesetzt werden.",
+                "reference_space": "Schulen und Bildungsverwaltung in Hessen",
+                "time_horizon": "Haushaltsjahr 2027 und mögliche Folgejahre",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Geplante Mittel werden entsprechend dem Entwurf eingesetzt und erreichen Schulen.",
+                "source_support": "Die Quelle belegt die geplanten 6,5 Milliarden Euro für Schulen, zusätzliche Lehrerstellen und ein Bildungspaket; sie belegt keine Wirkung auf Lernergebnisse.",
+                "limitations": "Keine Umsetzungsdaten, keine Vergleichswerte zu Schulen und keine unabhängige Wirkungsstudie.",
+                "first_order": "Schulen könnten zusätzliche Mittel, Stunden oder Lehrkräfte erhalten.",
+                "second_order": "Die Ausstattung und Arbeitsorganisation könnten sich verändern, sofern die Maßnahmen umgesetzt werden.",
+                "third_order": "Langfristig könnten sich Bildungschancen und Erwartungen an staatliche Leistungen verschieben; das bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbare Messung späterer Bildungswirkungen in der gelieferten Quelle.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Kredit- und Personalkosten könnten andere öffentliche Leistungen begrenzen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Zusätzliche Schulden sowie steigende Personal- und Zinskosten könnten spätere Ausgabenspielräume einengen.",
+                "recipients": [
+                  "Nutzerinnen und Nutzer öffentlicher Leistungen",
+                  "Landesressorts"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Kostenbelastung ist belegt, die spätere Verteilung auf Leistungen aber nicht."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Haushaltsentscheidungen können mehrere Ressorts und Bevölkerungsgruppen betreffen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt Belastungen, aber keine konkrete Kürzung anderer Leistungen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Zinsen und Personalaufwand können über mehrere Haushaltsjahre fortwirken.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Künftige Parlamente können Prioritäten und Finanzierung grundsätzlich ändern.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Abhängige Nutzergruppen könnten bei späteren Einsparungen stärker betroffen sein.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad betrifft die wiederkehrende Steuerung öffentlicher Haushalte.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete materielle Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "Zugang zu öffentlichen Leistungen",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Die geplante Kreditaufnahme und die genannten Kosten müssen bestehen bleiben und zu späteren Priorisierungskonflikten führen.",
+                "reference_space": "Landeshaushalt Hessen",
+                "time_horizon": "Mittelfristig nach 2027",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Kredit- und Personalkosten begrenzen tatsächlich spätere Haushaltsentscheidungen.",
+                "source_support": "Die Quelle nennt 1,7 Milliarden Euro neue Schulden, gestiegene Zinsen und 340 Millionen Euro zusätzliche Personalkosten.",
+                "limitations": "Keine Projektion zur Schuldentragfähigkeit und keine Angaben zu späteren Kürzungen.",
+                "first_order": "Der Haushalt finanziert zusätzliche Ausgaben über Kredite und Rücklagen.",
+                "second_order": "Spätere Haushalte könnten stärker zwischen Aufgaben abwägen müssen.",
+                "third_order": "Die politische Fähigkeit zur Ausweitung anderer Leistungen könnte sinken; dies ist nicht nachgewiesen.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle enthält keine mittelfristige Finanzprojektion und keine belastbare Aussage zu späteren Leistungskürzungen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Zusätzliche Bildungsressourcen könnten Schulen und Lernende unterstützen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzliche Bildungsressourcen könnten Schulen und Lernende unterstützen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt Infrastruktur-, Wohn-, Verkehrs- und Digitalausgaben, aber keine Umweltziele, Emissionsdaten oder Projektwirkungen. Eine belastbare Richtung ist deshalb nicht ableitbar.",
+            "reviewed_source_ids": [
+              "hr-hessenschau"
+            ],
+            "rationale": "Ein ökologischer Wirkpfad ist über geplante Infrastruktur- und Verkehrsausgaben denkbar, bleibt wegen fehlender Projekt- und Umweltdaten aber offen.",
+            "primary_paths": [
+              {
+                "label": "Geplante Infrastruktur- und Verkehrsausgaben könnten ökologische Zustände verändern",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Ausgaben für Verkehr, Wohnen und Digitalisierung könnten Bau, Flächennutzung, Energiebedarf oder Netzinfrastruktur beeinflussen.",
+                "recipients": [
+                  "Ökosysteme",
+                  "Anwohnerinnen und Anwohner",
+                  "öffentliche Infrastruktur"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die genannten Ausgaben sind konkret, ihre ökologische Ausgestaltung und Wirkung jedoch unbekannt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Infrastruktur kann regional mehrere Räume und Gruppen betreffen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle beschreibt keine konkrete Umweltintensität der Vorhaben.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Gebäude und Infrastruktur können langfristige Zustände prägen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Flächen- und Infrastrukturentscheidungen sind teilweise schwer rückgängig zu machen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ökologisch besonders verletzliche Orte werden nicht genannt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine systemische Umweltwirkung ist ohne konkrete Projekte nicht belegbar.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenze oder Grenzüberschreitung ist in der Quelle belegt.",
+                  "reference_frame": "ökologische Belastbarkeit von Flächen und Infrastruktur",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Es müssten konkrete Verkehrs-, Wohn- oder Infrastrukturprojekte beschlossen und mit ökologisch relevanten Eigenschaften umgesetzt werden.",
+                "reference_space": "Hessen, projektbezogen",
+                "time_horizon": "Mittelfristig nach Haushaltsbeschluss",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die genannten Ausgaben führen zu materiellen Projekten mit relevanten Umweltwirkungen.",
+                "source_support": "Die Quelle nennt 3,7 Milliarden Euro für Wirtschaft, Verkehr und Wohnen sowie Mittel für Digitalisierung; konkrete Umweltfolgen werden nicht beschrieben.",
+                "limitations": "Keine Emissions-, Flächen-, Energie- oder Biodiversitätsdaten.",
+                "first_order": "Finanzierte Projekte könnten Ressourcen- und Flächennutzung verändern.",
+                "second_order": "Verkehrs- oder Wohnstrukturen könnten Energiebedarf und lokale Belastungen beeinflussen.",
+                "third_order": "Eine überregionale ökologische Wirkung ist aus den Angaben nicht bestimmbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine konkreten Projektunterlagen oder Umweltmessungen in den gelieferten Quellen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Geplante Infrastruktur- und Verkehrsausgaben könnten ökologische Zustände verändern",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Geplante Infrastruktur- und Verkehrsausgaben könnten ökologische Zustände verändern",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt die angekündigte parlamentarische Beratung und politische Priorisierung, aber keine Veränderung von Beteiligung, Kontrolle oder Mehrheitsverhältnissen. Positive und negative institutionelle Pfade bleiben deshalb bedingt.",
+            "reviewed_source_ids": [
+              "hr-hessenschau"
+            ],
+            "rationale": "Der Entwurf kann parlamentarische Rechenschaft und Prioritätensetzung sichtbar machen, zugleich könnten langfristige finanzielle Bindungen spätere Handlungsspielräume begrenzen. Beide Pfade sind nicht als eingetretene Wirkung belegt.",
+            "primary_paths": [
+              {
+                "label": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungsprozess",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Ein konkreter Entwurf mit benannten Einnahmen, Ausgaben und Prioritäten ermöglicht öffentliche und parlamentarische Kontrolle.",
+                "recipients": [
+                  "Landtag",
+                  "Öffentlichkeit",
+                  "Landesregierung"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der Prozess ist institutionell konkret, seine tatsächliche Kontrollqualität bleibt offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Landesweite Haushaltsentscheidungen betreffen mehrere Institutionen und Gruppen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der Entwurf macht Prioritäten sichtbar, verändert aber noch keine Verfahren.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die parlamentarische Beratung ist zeitlich begrenzt, kann aber Folgeentscheidungen prägen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Parlamentarische Prioritäten können in weiteren Beratungen geändert werden.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Gruppen mit hoher Abhängigkeit von Landesleistungen können mittelbar betroffen sein.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft Budgetkontrolle, nicht die Grundstruktur demokratischer Institutionen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Einschränkung demokratischer Rechte ist nicht belegt.",
+                  "reference_frame": "parlamentarische Budgetkontrolle",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Der Entwurf muss transparent beraten und parlamentarisch verändert oder beschlossen werden.",
+                "reference_space": "Landtag und Öffentlichkeit in Hessen",
+                "time_horizon": "Haushaltsberatung für 2027",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die parlamentarische Beratung ermöglicht tatsächlich Kontrolle und öffentliche Rechenschaft.",
+                "source_support": "Die Quelle kündigt die Einbringung in den Landtag und die spätere Verabschiedung an.",
+                "limitations": "Keine Angaben zur Debatte, zu Änderungsanträgen oder zur tatsächlichen Transparenz.",
+                "first_order": "Haushaltsprioritäten werden parlamentarisch verhandelbar.",
+                "second_order": "Akteure können Verantwortung für Bildungs-, Kredit- und Sparentscheidungen zuordnen.",
+                "third_order": "Die Debatte könnte Erwartungen an künftige Landespolitik prägen, ohne Institutionen grundsätzlich zu verändern.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Angaben zur Qualität der parlamentarischen Kontrolle oder zur öffentlichen Beteiligung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Langfristige finanzielle Bindungen könnten spätere demokratische Spielräume einengen",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Kredite sowie steigende Zins- und Personalkosten könnten künftige Parlamente zu engeren Priorisierungen zwingen.",
+                "recipients": [
+                  "künftige Parlamente",
+                  "Landesregierung",
+                  "betroffene Leistungsbezieher"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Belastungen sind im Entwurf genannt, eine Einschränkung demokratischer Entscheidungen ist jedoch nur indirekt möglich."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Künftige Haushaltsentscheidungen betreffen mehrere Ressorts und Gruppen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle belegt Kosten und Schulden, nicht den Grad späterer Einschränkungen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Schulden- und Personalbindungen können über mehrere Jahre wirken.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Politische Mehrheiten können Finanzierungsentscheidungen grundsätzlich korrigieren.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Besonders abhängige Gruppen könnten von engeren Budgets stärker betroffen sein.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der mögliche Pfad betrifft Budgetspielräume, nicht die demokratische Ordnung insgesamt.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt oder beschrieben.",
+                  "reference_frame": "demokratische Korrekturfähigkeit durch Haushaltsentscheidungen",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Die geplanten finanziellen Belastungen müssen bestehen bleiben und spätere Haushalte tatsächlich dominieren.",
+                "reference_space": "Landespolitik und Haushalte in Hessen",
+                "time_horizon": "Mittelfristig nach 2027",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Finanzielle Bindungen werden zu einer relevanten Begrenzung künftiger politischer Optionen.",
+                "source_support": "Die Quelle nennt neue Schulden, höhere Zinsen, steigende Personalkosten und anhaltenden Spardruck.",
+                "limitations": "Keine Schuldenprojektion, keine Angaben zu künftigen Mehrheiten oder zu konkreten Einschränkungen.",
+                "first_order": "Künftige Haushalte müssen Kredit-, Zins- und Personalkosten berücksichtigen.",
+                "second_order": "Der politische Wettbewerb um neue Ausgaben könnte sich verschärfen.",
+                "third_order": "Die Korrekturfähigkeit könnte sinken, falls Bindungen dauerhaft werden; ein solcher Effekt ist nicht nachgewiesen.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle erlaubt keine belastbare Aussage über spätere demokratische Einschränkungen durch den Entwurf.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Der positive Kontrollpfad und der negative Spielraumpfad sind beide bedingt plausibel; keiner überschreitet eine belegte Schutzgrenze, und die Evidenz reicht nicht für eine dominante Richtung."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungsprozess",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungsprozess",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T09:24:18.934Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "hr-hessenschau",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Belegt den Haushaltsentwurf, die geplante Kreditaufnahme, die Bildungs- und Verwaltungsprioritäten sowie die Begründungen des Finanzministers."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt zusätzliche geplante Bildungs- und Lehrerstellen, aber keine tatsächlichen Verbesserungen für Schülerinnen, Schüler oder Beschäftigte. Reichweite und Dauer der möglichen Wirkung hängen von Beschluss und Umsetzung ab.",
+          "reviewed_source_ids": [
+            "hr-hessenschau"
+          ],
+          "rationale": "Der stärkste bedingte Pfad führt über zusätzliche Bildungsressourcen zu möglichen Verbesserungen staatlicher Angebote. Gegenläufig könnten Kredit-, Personal- und Verteilungskosten andere Leistungen begrenzen; konkrete Betroffenenzahlen fehlen.",
+          "primary_paths": [
+            {
+              "label": "Zusätzliche Bildungsressourcen könnten Schulen und Lernende unterstützen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Mehr geplante Mittel und zusätzliche Lehrerstellen könnten die personelle und sachliche Ausstattung von Schulen erhöhen.",
+              "recipients": [
+                "Schülerinnen und Schüler",
+                "Lehrkräfte",
+                "Schulen"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Bildungspriorität ist konkret beziffert, ihre Reichweite und tatsächliche Umsetzung sind jedoch offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Schulausgaben betreffen grundsätzlich viele Lernende und Schulen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Zusätzliche Mittel und Stellen könnten die Ausstattung spürbar verändern.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Bildungs- und Personalentscheidungen könnten über ein Haushaltsjahr hinaus wirken.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Haushalts- und Stellenentscheidungen wären grundsätzlich politisch korrigierbar.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Lernende mit Unterstützungsbedarf könnten von zusätzlichen Angeboten besonders abhängen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Bildungsausgaben greifen in öffentliche Infrastruktur und Chancenverteilung ein.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine konkrete Verletzung oder Sicherung einer Schutzgrenze.",
+                "reference_frame": "Zugang zu öffentlicher Bildung",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Der Landtag muss die Mittel bestätigen und die zusätzlichen Stellen sowie Bildungsangebote müssen tatsächlich umgesetzt werden.",
+              "reference_space": "Schulen und Bildungsverwaltung in Hessen",
+              "time_horizon": "Haushaltsjahr 2027 und mögliche Folgejahre",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Geplante Mittel werden entsprechend dem Entwurf eingesetzt und erreichen Schulen.",
+              "source_support": "Die Quelle belegt die geplanten 6,5 Milliarden Euro für Schulen, zusätzliche Lehrerstellen und ein Bildungspaket; sie belegt keine Wirkung auf Lernergebnisse.",
+              "limitations": "Keine Umsetzungsdaten, keine Vergleichswerte zu Schulen und keine unabhängige Wirkungsstudie.",
+              "first_order": "Schulen könnten zusätzliche Mittel, Stunden oder Lehrkräfte erhalten.",
+              "second_order": "Die Ausstattung und Arbeitsorganisation könnten sich verändern, sofern die Maßnahmen umgesetzt werden.",
+              "third_order": "Langfristig könnten sich Bildungschancen und Erwartungen an staatliche Leistungen verschieben; das bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbare Messung späterer Bildungswirkungen in der gelieferten Quelle.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Kredit- und Personalkosten könnten andere öffentliche Leistungen begrenzen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Zusätzliche Schulden sowie steigende Personal- und Zinskosten könnten spätere Ausgabenspielräume einengen.",
+              "recipients": [
+                "Nutzerinnen und Nutzer öffentlicher Leistungen",
+                "Landesressorts"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Kostenbelastung ist belegt, die spätere Verteilung auf Leistungen aber nicht."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Haushaltsentscheidungen können mehrere Ressorts und Bevölkerungsgruppen betreffen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt Belastungen, aber keine konkrete Kürzung anderer Leistungen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Zinsen und Personalaufwand können über mehrere Haushaltsjahre fortwirken.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Künftige Parlamente können Prioritäten und Finanzierung grundsätzlich ändern.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Abhängige Nutzergruppen könnten bei späteren Einsparungen stärker betroffen sein.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad betrifft die wiederkehrende Steuerung öffentlicher Haushalte.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete materielle Schutzgrenze ist nicht belegt.",
+                "reference_frame": "Zugang zu öffentlichen Leistungen",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Die geplante Kreditaufnahme und die genannten Kosten müssen bestehen bleiben und zu späteren Priorisierungskonflikten führen.",
+              "reference_space": "Landeshaushalt Hessen",
+              "time_horizon": "Mittelfristig nach 2027",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Kredit- und Personalkosten begrenzen tatsächlich spätere Haushaltsentscheidungen.",
+              "source_support": "Die Quelle nennt 1,7 Milliarden Euro neue Schulden, gestiegene Zinsen und 340 Millionen Euro zusätzliche Personalkosten.",
+              "limitations": "Keine Projektion zur Schuldentragfähigkeit und keine Angaben zu späteren Kürzungen.",
+              "first_order": "Der Haushalt finanziert zusätzliche Ausgaben über Kredite und Rücklagen.",
+              "second_order": "Spätere Haushalte könnten stärker zwischen Aufgaben abwägen müssen.",
+              "third_order": "Die politische Fähigkeit zur Ausweitung anderer Leistungen könnte sinken; dies ist nicht nachgewiesen.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle enthält keine mittelfristige Finanzprojektion und keine belastbare Aussage zu späteren Leistungskürzungen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzliche Bildungsressourcen könnten Schulen und Lernende unterstützen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Zusätzliche Bildungsressourcen könnten Schulen und Lernende unterstützen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt Infrastruktur-, Wohn-, Verkehrs- und Digitalausgaben, aber keine Umweltziele, Emissionsdaten oder Projektwirkungen. Eine belastbare Richtung ist deshalb nicht ableitbar.",
+          "reviewed_source_ids": [
+            "hr-hessenschau"
+          ],
+          "rationale": "Ein ökologischer Wirkpfad ist über geplante Infrastruktur- und Verkehrsausgaben denkbar, bleibt wegen fehlender Projekt- und Umweltdaten aber offen.",
+          "primary_paths": [
+            {
+              "label": "Geplante Infrastruktur- und Verkehrsausgaben könnten ökologische Zustände verändern",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Ausgaben für Verkehr, Wohnen und Digitalisierung könnten Bau, Flächennutzung, Energiebedarf oder Netzinfrastruktur beeinflussen.",
+              "recipients": [
+                "Ökosysteme",
+                "Anwohnerinnen und Anwohner",
+                "öffentliche Infrastruktur"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die genannten Ausgaben sind konkret, ihre ökologische Ausgestaltung und Wirkung jedoch unbekannt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Infrastruktur kann regional mehrere Räume und Gruppen betreffen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle beschreibt keine konkrete Umweltintensität der Vorhaben.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Gebäude und Infrastruktur können langfristige Zustände prägen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Flächen- und Infrastrukturentscheidungen sind teilweise schwer rückgängig zu machen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ökologisch besonders verletzliche Orte werden nicht genannt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine systemische Umweltwirkung ist ohne konkrete Projekte nicht belegbar.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenze oder Grenzüberschreitung ist in der Quelle belegt.",
+                "reference_frame": "ökologische Belastbarkeit von Flächen und Infrastruktur",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Es müssten konkrete Verkehrs-, Wohn- oder Infrastrukturprojekte beschlossen und mit ökologisch relevanten Eigenschaften umgesetzt werden.",
+              "reference_space": "Hessen, projektbezogen",
+              "time_horizon": "Mittelfristig nach Haushaltsbeschluss",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die genannten Ausgaben führen zu materiellen Projekten mit relevanten Umweltwirkungen.",
+              "source_support": "Die Quelle nennt 3,7 Milliarden Euro für Wirtschaft, Verkehr und Wohnen sowie Mittel für Digitalisierung; konkrete Umweltfolgen werden nicht beschrieben.",
+              "limitations": "Keine Emissions-, Flächen-, Energie- oder Biodiversitätsdaten.",
+              "first_order": "Finanzierte Projekte könnten Ressourcen- und Flächennutzung verändern.",
+              "second_order": "Verkehrs- oder Wohnstrukturen könnten Energiebedarf und lokale Belastungen beeinflussen.",
+              "third_order": "Eine überregionale ökologische Wirkung ist aus den Angaben nicht bestimmbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine konkreten Projektunterlagen oder Umweltmessungen in den gelieferten Quellen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Geplante Infrastruktur- und Verkehrsausgaben könnten ökologische Zustände verändern",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Geplante Infrastruktur- und Verkehrsausgaben könnten ökologische Zustände verändern",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt die angekündigte parlamentarische Beratung und politische Priorisierung, aber keine Veränderung von Beteiligung, Kontrolle oder Mehrheitsverhältnissen. Positive und negative institutionelle Pfade bleiben deshalb bedingt.",
+          "reviewed_source_ids": [
+            "hr-hessenschau"
+          ],
+          "rationale": "Der Entwurf kann parlamentarische Rechenschaft und Prioritätensetzung sichtbar machen, zugleich könnten langfristige finanzielle Bindungen spätere Handlungsspielräume begrenzen. Beide Pfade sind nicht als eingetretene Wirkung belegt.",
+          "primary_paths": [
+            {
+              "label": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungsprozess",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Ein konkreter Entwurf mit benannten Einnahmen, Ausgaben und Prioritäten ermöglicht öffentliche und parlamentarische Kontrolle.",
+              "recipients": [
+                "Landtag",
+                "Öffentlichkeit",
+                "Landesregierung"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der Prozess ist institutionell konkret, seine tatsächliche Kontrollqualität bleibt offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Landesweite Haushaltsentscheidungen betreffen mehrere Institutionen und Gruppen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der Entwurf macht Prioritäten sichtbar, verändert aber noch keine Verfahren.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die parlamentarische Beratung ist zeitlich begrenzt, kann aber Folgeentscheidungen prägen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Parlamentarische Prioritäten können in weiteren Beratungen geändert werden.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Gruppen mit hoher Abhängigkeit von Landesleistungen können mittelbar betroffen sein.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft Budgetkontrolle, nicht die Grundstruktur demokratischer Institutionen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Einschränkung demokratischer Rechte ist nicht belegt.",
+                "reference_frame": "parlamentarische Budgetkontrolle",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Der Entwurf muss transparent beraten und parlamentarisch verändert oder beschlossen werden.",
+              "reference_space": "Landtag und Öffentlichkeit in Hessen",
+              "time_horizon": "Haushaltsberatung für 2027",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die parlamentarische Beratung ermöglicht tatsächlich Kontrolle und öffentliche Rechenschaft.",
+              "source_support": "Die Quelle kündigt die Einbringung in den Landtag und die spätere Verabschiedung an.",
+              "limitations": "Keine Angaben zur Debatte, zu Änderungsanträgen oder zur tatsächlichen Transparenz.",
+              "first_order": "Haushaltsprioritäten werden parlamentarisch verhandelbar.",
+              "second_order": "Akteure können Verantwortung für Bildungs-, Kredit- und Sparentscheidungen zuordnen.",
+              "third_order": "Die Debatte könnte Erwartungen an künftige Landespolitik prägen, ohne Institutionen grundsätzlich zu verändern.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Angaben zur Qualität der parlamentarischen Kontrolle oder zur öffentlichen Beteiligung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Langfristige finanzielle Bindungen könnten spätere demokratische Spielräume einengen",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Kredite sowie steigende Zins- und Personalkosten könnten künftige Parlamente zu engeren Priorisierungen zwingen.",
+              "recipients": [
+                "künftige Parlamente",
+                "Landesregierung",
+                "betroffene Leistungsbezieher"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Belastungen sind im Entwurf genannt, eine Einschränkung demokratischer Entscheidungen ist jedoch nur indirekt möglich."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Künftige Haushaltsentscheidungen betreffen mehrere Ressorts und Gruppen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle belegt Kosten und Schulden, nicht den Grad späterer Einschränkungen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Schulden- und Personalbindungen können über mehrere Jahre wirken.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Politische Mehrheiten können Finanzierungsentscheidungen grundsätzlich korrigieren.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Besonders abhängige Gruppen könnten von engeren Budgets stärker betroffen sein.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der mögliche Pfad betrifft Budgetspielräume, nicht die demokratische Ordnung insgesamt.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt oder beschrieben.",
+                "reference_frame": "demokratische Korrekturfähigkeit durch Haushaltsentscheidungen",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Die geplanten finanziellen Belastungen müssen bestehen bleiben und spätere Haushalte tatsächlich dominieren.",
+              "reference_space": "Landespolitik und Haushalte in Hessen",
+              "time_horizon": "Mittelfristig nach 2027",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Finanzielle Bindungen werden zu einer relevanten Begrenzung künftiger politischer Optionen.",
+              "source_support": "Die Quelle nennt neue Schulden, höhere Zinsen, steigende Personalkosten und anhaltenden Spardruck.",
+              "limitations": "Keine Schuldenprojektion, keine Angaben zu künftigen Mehrheiten oder zu konkreten Einschränkungen.",
+              "first_order": "Künftige Haushalte müssen Kredit-, Zins- und Personalkosten berücksichtigen.",
+              "second_order": "Der politische Wettbewerb um neue Ausgaben könnte sich verschärfen.",
+              "third_order": "Die Korrekturfähigkeit könnte sinken, falls Bindungen dauerhaft werden; ein solcher Effekt ist nicht nachgewiesen.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle erlaubt keine belastbare Aussage über spätere demokratische Einschränkungen durch den Entwurf.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Der positive Kontrollpfad und der negative Spielraumpfad sind beide bedingt plausibel; keiner überschreitet eine belegte Schutzgrenze, und die Evidenz reicht nicht für eine dominante Richtung."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungsprozess",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungsprozess",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T09:22:10.469Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T08:53:52.000Z",
+      "last_updated": "2026-09-16T09:24:18.929Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-0f868cd427ea8e3f5ff8",
+      "case_file": null,
+      "source_published_at": "2026-09-16T08:53:52.000Z",
+      "published_at": "2026-09-16T09:24:18.929Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, ob der Haushaltsentwurf in den Landtag eingebracht und im weiteren Verfahren verabschiedet wird.",
+          "source_id": "hr-hessenschau",
+          "measurable_indicator": "Einbringung des Haushaltsentwurfs in den Landtag und anschließende Verabschiedung",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bdbe70149e061506",
+          "announced_at": "2026-09-16T08:53:52.000Z",
+          "follow_up_date": "2026-09-23T09:24:18.929Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/hessen-plant-17-milliarden-euro-neue-schulden---rekordetat-fuer-schulen-v1,landeshaushalt-2027-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T08:53:52.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-2a30b5d43da541f7",
       "title_image": {
