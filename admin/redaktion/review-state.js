@@ -70,3 +70,21 @@ export function requestWithReview(request, review) {
       : review.status === 'NEEDS_REVIEW' ? request.status_note : null,
   };
 }
+
+// Nachliefern: Natalie darf jederzeit Material zu einem laufenden Auftrag
+// ergänzen. Der Zusatz wird ein eigener Auftrag, der den ursprünglichen mitsamt
+// bisheriger Fassung fortschreibt und erneut zur Freigabe kommt. Die Bindung
+// steht in der ersten Zeile des Auftragstexts, weil der Server nur die
+// Vertragsfelder kennt; dieselbe Zeile liest der Redaktionsworker
+// (scripts/news/editorial-supplement.mjs, gleiche Schreibweise per Test).
+export const SUPPLEMENT_PREFIX = 'Nachlieferung zu Auftrag';
+export const supplementBrief = (jobId, text) => `${SUPPLEMENT_PREFIX} ${jobId}\n\n${String(text || '').trim()}`;
+
+// Eine bereits veröffentlichte Fassung wird über die Freigabe geändert, nicht
+// über eine Nachlieferung: dafür fehlt dem neuen Auftrag die Bindung an die
+// bestehende Veröffentlichung. Übersprungene Aufträge bleiben übersprungen.
+export function supplementable(request) {
+  if (!request?.job_id) return false;
+  if (request.publication_url || ['PUBLISHED', 'PUBLISHING', 'SKIPPED', 'APPROVED_FOR_PUBLICATION'].includes(request.review_status || '')) return false;
+  return true;
+}

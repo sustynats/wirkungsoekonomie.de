@@ -11,6 +11,7 @@ import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
 import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
+import { supplementTarget, supplementContext, supersededBySupplement, withSupplement } from './editorial-supplement.mjs';
 import { prepareApiJob, validateApiOutput } from './bridge/api-processor.mjs';
 import { editorialKnowledge } from './bridge/editorial-knowledge.mjs';
 import { OPENAI_RESPONSES_URL, finalOutputText, decodeUsage, newsModel } from './openai-transport.mjs';
@@ -154,6 +155,18 @@ export async function draftEditorialOutput(request, { apiKey = process.env.OPENA
 // stays queued. Such a claim can never be delivered by its owner any more; after
 // the stale window the GitHub worker adopts it instead of skipping the request
 // on every run. A recent claim is still respected.
+// Die Liste des Servers trägt nur Kennung und Status, nicht den Auftragstext.
+// Die Bindung der Nachlieferung steht im Text, also wird sie an den vollständig
+// geladenen Aufträgen der Auswahl gelesen.
+export async function supersededCandidates(session, rows) {
+  const loaded = [];
+  for (const row of rows) {
+    const job = await session.store.get(row.input.job_id).catch(() => null);
+    if (job) loaded.push({ input: { job_type: 'editorial_request', job_id: row.input.job_id, request: job.input?.request } });
+  }
+  return supersededBySupplement(loaded);
+}
+
 export const STALE_CLAIM_HOURS = 6;
 // Formales gleicht die Software an, nicht die Redaktion. Ein fertiger Entwurf
 // darf nicht an einer Darstellungsregel verloren gehen (16.09.: ein Text begann
@@ -238,8 +251,15 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   const packet = JSON.parse(await session.transport.read(ownClaim?.state === 'claimed' || adoptedClaim ? claimPath : sourcePath));
   if (packet.job_id !== id || packet.input_hash !== job.input.input_hash || packet.job_type !== 'editorial_request') throw new Error('BRIDGE_JOB_BINDING_MISMATCH');
   // Prompt copy only: the stored packet and its input_hash stay untouched.
-  const sourceExcerpts = excerpts ? await collectSourceExcerpts(packet.request?.links || [], fetchImpl) : [];
-  const promptPacket = sourceExcerpts.length ? { ...packet, origin: { ...(packet.origin || {}), source_excerpts: sourceExcerpts } } : packet;
+  // Nachlieferung: der Zusatz ist der Auftrag, der frühere Auftrag und seine
+  // bisher gelieferte Fassung kommen als Material dazu. Nur die Prompt-Kopie;
+  // das abgelegte Paket und sein input_hash bleiben unberührt.
+  const target = supplementTarget(packet.request?.brief);
+  const supplement = target ? await supplementContext(session, target,
+    { paths: [bridgePath('20_OUTPUT_READY', `${target}.output.json`), bridgePath('30_ACK', `${target}.ack.json`)] }) : null;
+  const supplementedPacket = withSupplement(packet, supplement);
+  const sourceExcerpts = excerpts ? await collectSourceExcerpts(supplementedPacket.request?.links || [], fetchImpl) : [];
+  const promptPacket = sourceExcerpts.length ? { ...supplementedPacket, origin: { ...(supplementedPacket.origin || {}), source_excerpts: sourceExcerpts } } : supplementedPacket;
   const request = prepareApiJob(promptPacket, knowledge);
   if (adoptedClaim) {
     await session.store.observe(`github-claim:${name}`, { job_id: id, actor: WORKER_ACTOR, packet_hash: hash(packet), state: 'claimed', adopted_stale_claim_from: adoptedClaim, at: now() });
@@ -278,7 +298,8 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   if (hash(JSON.parse(await session.transport.read(outputPath))) !== hash(validated)) throw new Error('EDITORIAL_DELIVERY_READBACK_FAILED');
   await session.transport.writeAtomic(bridgePath('95_LOGS', `processor-github-${id}.json`), { actor: WORKER_ACTOR, version: WORKER_VERSION, job_id: id, request_key: request.key, output_hash: hash(validated), model: result.model, usage: result.usage, web_searches: result.web_searches ?? 0, preview_repairs: previewRepairs, cost_usd: result.cost, delivered_at: now(), status: 'OUTPUT_DELIVERED_NOT_PUBLISHED', disposition: validated.disposition || 'preview', ...(adoptedClaim ? { adopted_stale_claim_from: adoptedClaim } : {}) });
   await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', disposition: validated.disposition || 'preview', hold_code: validated.hold?.code || null, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, at: now(), ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
-  return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: result.cost, model: result.model, web_searches: result.web_searches ?? 0, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, preview_repairs: previewRepairs, ...(validated.disposition === 'hold' ? { hold_code: validated.hold?.code || null } : {}) };
+  return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: result.cost, model: result.model,
+    ...(supplement ? { supplement_of: supplement.job_id, supplement_previous_version: Boolean(supplement.previous_version) } : {}), web_searches: result.web_searches ?? 0, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, preview_repairs: previewRepairs, ...(validated.disposition === 'hold' ? { hold_code: validated.hold?.code || null } : {}) };
 }
 
 export async function runRedaktionsworker({ session = null, root = ROOT, knowledge = null, draft = draftEditorialOutput, now = () => new Date().toISOString(), env = process.env, laneWait = null, fetchImpl = fetch,
@@ -301,17 +322,22 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     // cost no model call; they must not use up the paid slots of this run.
     const budget = Math.min(maxJobsPerRun, maxJobsPerDay - counter.paid);
     const candidates = selectEditorialRequests(rows, { limit: Math.max(budget, 0) + 20 });
+    // Hat Natalie nachgeliefert, trägt die Nachlieferung den ursprünglichen
+    // Auftrag mit. Ein zweiter Entwurf ohne den Zusatz wäre eine veraltete
+    // Fassung und ein zweiter bezahlter Aufruf.
+    const superseded = await supersededCandidates(live, candidates);
     const resolvedKnowledge = knowledge || editorialKnowledge(root);
     const results = [];
     let paid = 0;
     for (const row of candidates) {
       if (paid >= budget) break;
+      if (superseded.has(row.input.job_id)) { results.push({ job_id: row.input.job_id, status: 'superseded_by_supplement' }); continue; }
       const result = await processEditorialRequest(live, row, { knowledge: resolvedKnowledge, draft, now, fetchImpl });
       results.push(result);
       if (PAID_STATUS.has(result.status)) { paid += 1; counter.paid += 1; counter.cost_usd = Number((counter.cost_usd + (result.cost_usd || 0)).toFixed(6)); await store.observe(`github-editorial-day:${day}`, counter); }
       if (result.status === 'provider_unavailable') break;
     }
-    return { status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, results };
+    return { status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, superseded_by_supplement: [...superseded], paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, results };
   } finally {
     if (acquired) await store.release(true).catch(() => {});
   }

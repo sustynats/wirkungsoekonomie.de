@@ -4,8 +4,9 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 import { hash, bridgePath } from '../../scripts/news/bridge/contract.mjs';
-import { selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview } from '../../scripts/news/redaktionsworker.mjs';
+import { selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview, supersededCandidates } from '../../scripts/news/redaktionsworker.mjs';
 import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandidates } from '../../scripts/news/redaktions-kandidaten.mjs';
+import { supplementBrief } from '../../scripts/news/editorial-supplement.mjs';
 
 const owner = '123456789012345678';
 const knowledge = { hash: 'a'.repeat(64), instructions: 'Synthetische Redaktionsanweisung für den Test.', compatibleHashes: [] };
@@ -356,4 +357,49 @@ test('die Angleichung berührt nur Mechanisches und erfindet nichts', () => {
   assert.equal(missing.sources[0].publisher, undefined, 'ohne gültige Adresse wird kein Verlag erfunden');
   assert.deepEqual(missing.checks, {}, 'Prüfvermerke werden nie gesetzt');
   assert.deepEqual(missingRepairs, []);
+});
+test('eine Nachlieferung trägt den früheren Auftrag samt bisheriger Fassung und der frühere läuft nicht mehr allein', async () => {
+  const original = queuedJob();
+  const supplementId = 'wt_20260916T090000Z_' + 'a'.repeat(24);
+  const supplementInput = packetFor(supplementId);
+  supplementInput.request = { ...supplementInput.request, brief: supplementBrief(jobId, 'Zusatz: die politische Ebene als Wirkungsanalyse.'), links: ['https://example.org/zusatz'] };
+  supplementInput.input_hash = hash(supplementInput.request);
+  const supplementJob = { input: supplementInput, status: 'queued', created_at: '2026-09-16T09:00:00.000Z', intake: { owner, kind: 'opinion_analysis', fingerprint: 'a'.repeat(64) } };
+  const session = fakeSession([original, supplementJob]);
+  // Die bisher gelieferte Fassung des früheren Auftrags liegt in der Ablage.
+  session.files.set(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`), JSON.stringify({ preview: { ...preview(), title: 'Erste Fassung' } }));
+  session.files.set(bridgePath('00_INBOX', `${supplementId}.input.json`), JSON.stringify(supplementInput));
+  let seen = null;
+  const draft = async (request) => { seen = request; return { output: { preview: preview() }, model: 'gpt-5.6-luna', usage: { input_tokens: 10, output_tokens: 10 }, cost: 0.01, answer: '{}' }; };
+  const result = await processEditorialRequest(session, { input: { job_id: supplementId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now: () => '2026-09-16T09:05:00.000Z' });
+  assert.equal(result.status, 'output_delivered');
+  assert.equal(result.supplement_of, jobId);
+  assert.equal(result.supplement_previous_version, true);
+  const sent = JSON.stringify(seen);
+  assert.ok(sent.includes('Zusatz: die politische Ebene'), 'der Zusatz ist der Auftrag');
+  assert.ok(!sent.includes('Nachlieferung zu Auftrag'), 'die technische Bindung steht nicht im Auftragstext');
+  assert.ok(sent.includes('Bitte diesen synthetischen Testfall vorbereiten'), 'der frühere Auftrag liegt als Material bei');
+  assert.ok(sent.includes('Erste Fassung'), 'die bisherige Fassung liegt als Material bei');
+  assert.ok(sent.includes('https://example.org/zusatz') && sent.includes('https://example.org/source'), 'beide Linkbestände');
+  // Das abgelegte Paket bleibt unberührt.
+  assert.equal(JSON.parse(session.files.get(bridgePath('10_CLAIMED', `${supplementId}.input.json`))).input_hash, supplementInput.input_hash);
+  // Der frühere Auftrag läuft nicht mehr allein.
+  const rows = await session.store.all();
+  const superseded = await supersededCandidates(session, selectEditorialRequests(rows, { limit: 10 }));
+  assert.deepEqual([...superseded], [jobId]);
+});
+
+test('eine Nachlieferung auf eine unbekannte Kennung bleibt ein gewöhnlicher Auftrag', async () => {
+  const strayId = 'wt_20260916T093000Z_' + 'c'.repeat(24);
+  const input = packetFor(strayId);
+  input.request = { ...input.request, brief: supplementBrief('wt_20200101T000000Z_' + '9'.repeat(24), 'Zusatz ohne Ziel.') };
+  input.input_hash = hash(input.request);
+  const session = fakeSession([{ input, status: 'queued', created_at: '2026-09-16T09:30:00.000Z', intake: { owner, kind: 'opinion_analysis', fingerprint: 'c'.repeat(64) } }]);
+  session.files.set(bridgePath('00_INBOX', `${strayId}.input.json`), JSON.stringify(input));
+  let seen = null;
+  const draft = async (request) => { seen = request; return { output: { preview: preview() }, model: 'gpt-5.6-luna', usage: { input_tokens: 10, output_tokens: 10 }, cost: 0.01, answer: '{}' }; };
+  const result = await processEditorialRequest(session, { input: { job_id: strayId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now: () => '2026-09-16T09:35:00.000Z' });
+  assert.equal(result.status, 'output_delivered');
+  assert.equal('supplement_of' in result, false);
+  assert.ok(JSON.stringify(seen).includes('Zusatz ohne Ziel'));
 });
