@@ -11,6 +11,7 @@ import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
 import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
+import { supplementTarget, supplementContext, supersededBySupplement, withSupplement } from './editorial-supplement.mjs';
 import { prepareApiJob, validateApiOutput } from './bridge/api-processor.mjs';
 import { editorialKnowledge } from './bridge/editorial-knowledge.mjs';
 import { OPENAI_RESPONSES_URL, finalOutputText, decodeUsage, newsModel } from './openai-transport.mjs';
@@ -21,7 +22,7 @@ import { modelRates } from './budget.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const WORKER_ACTOR = 'github_direct_worker';
-export const WORKER_VERSION = 'redaktionsworker-5';
+export const WORKER_VERSION = 'redaktionsworker-6';
 // The three steps of one worker run (candidates, episodes, drafts) each acquire the
 // import lane; a shared manual run id would mark the slot completed after the first
 // step (23:35 UTC: BRIDGE_SLOT_ALREADY_COMPLETED skipped the drafts). The step digit
@@ -154,6 +155,18 @@ export async function draftEditorialOutput(request, { apiKey = process.env.OPENA
 // stays queued. Such a claim can never be delivered by its owner any more; after
 // the stale window the GitHub worker adopts it instead of skipping the request
 // on every run. A recent claim is still respected.
+// Die Liste des Servers trägt nur Kennung und Status, nicht den Auftragstext.
+// Die Bindung der Nachlieferung steht im Text, also wird sie an den vollständig
+// geladenen Aufträgen der Auswahl gelesen.
+export async function supersededCandidates(session, rows) {
+  const loaded = [];
+  for (const row of rows) {
+    const job = await session.store.get(row.input.job_id).catch(() => null);
+    if (job) loaded.push({ input: { job_type: 'editorial_request', job_id: row.input.job_id, request: job.input?.request } });
+  }
+  return supersededBySupplement(loaded);
+}
+
 export const STALE_CLAIM_HOURS = 6;
 // Formales gleicht die Software an, nicht die Redaktion. Ein fertiger Entwurf
 // darf nicht an einer Darstellungsregel verloren gehen (16.09.: ein Text begann
@@ -208,10 +221,43 @@ export function normalizeEditorialPreview(preview, { links = [], repairs = [] } 
       if (page) { media.original_url = page; repairs.push('source_media:Sendungsseite aus dem Auftrag ergänzt'); }
     }
   }
+  // Ein Bild ohne belegte Nutzungserlaubnis ist kein Grund, einen fertigen Text
+  // zu verwerfen: der Vertrag erlaubt ausdrücklich visual null. Die Ablage
+  // verlangt eine Adresse auf wirkungsoekonomie.de, Alternativtext, Nachweis,
+  // gültigen Rechtestatus und die Freigabe für die Website (16.09.:
+  // EDITORIAL_PREVIEW_IMAGE_NOT_CLEARED verwarf einen vollständigen Entwurf).
+  if (preview.visual && !clearedVisual(preview.visual)) {
+    preview.visual = null;
+    repairs.push('visual:ohne belegte Freigabe entfernt');
+  }
   return preview;
 }
 
-export async function processEditorialRequest(session, row, { knowledge, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR, staleClaimHours = STALE_CLAIM_HOURS, fetchImpl = fetch, excerpts = process.env.WOEK_EDITORIAL_SOURCE_EXCERPTS !== 'false' } = {}) {
+export const VISUAL_RIGHTS = ['OWN', 'CLEARED', 'LICENSED', 'CC_LICENSED', 'PERMISSION_GRANTED'];
+export function clearedVisual(visual) {
+  if (!visual || typeof visual !== 'object') return false;
+  if (!/^https:\/\/wirkungsoekonomie\.de\//.test(visual.url || '')) return false;
+  if (!String(visual.alt || '').trim() || !String(visual.credit || '').trim()) return false;
+  if (!VISUAL_RIGHTS.includes(visual.rights_status)) return false;
+  if (visual.allow_website !== true) return false;
+  if (visual.expires_at && (!Number.isFinite(Date.parse(visual.expires_at)) || Date.parse(visual.expires_at) <= Date.now())) return false;
+  return true;
+}
+
+// Die Befunde im Klartext, ohne Codes zu erklären: das Modell sieht dieselbe
+// Prüfung, die die Ablage anwendet, und liefert dieselbe Fassung mit behobenen
+// Punkten. Neue Aussagen sind ausdrücklich nicht erwünscht.
+export function editorialRepairAddendum(issues = [], repairs = []) {
+  return ['NACHLIEFERUNG: Deine Ausgabe ist angekommen, wurde von der Ablage aber abgewiesen.',
+    `Befunde: ${issues.filter(Boolean).join(' | ')}.`,
+    ...(repairs.length ? [`Bereits automatisch angeglichen: ${repairs.join('; ')}.`] : []),
+    'Liefere dieselbe Fassung erneut als vollständiges output.json, nur mit diesen Punkten behoben.',
+    'Inhalt, Aussagen, Quellen und persönliche Passagen bleiben unverändert. Keine neuen Behauptungen, keine erfundenen Quellen oder Bilder.',
+    'Formatregeln: preview.markdown ohne Hauptüberschrift (#), Gliederung ab ##, keine HTML- oder Codeblöcke, keine Bilder im Text. Jede Quelle mit url (https), title und publisher. visual nur mit belegter Freigabe, sonst null.'].join('\n');
+}
+
+export async function processEditorialRequest(session, row, { knowledge, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR, staleClaimHours = STALE_CLAIM_HOURS, fetchImpl = fetch, excerpts = process.env.WOEK_EDITORIAL_SOURCE_EXCERPTS !== 'false',
+  repairPass = process.env.WOEK_EDITORIAL_REPAIR !== 'false' } = {}) {
   const id = row.input.job_id;
   const job = await session.store.get(id);
   if (!job || job.ack || job.accepted || job.status !== 'queued') return { job_id: id, status: 'already_processed' };
@@ -221,7 +267,15 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   // (16.09.: EDITORIAL_MARKDOWN_DUPLICATE_TITLE, der Vertrag nannte die Regel
   // nicht). Nach einer Vertragskorrektur, erkennbar an der höheren
   // Workerversion, darf genau ein weiterer Versuch folgen.
-  const contractFixed = attempt?.status === 'validation_failed' && attempt.version !== WORKER_VERSION && !attempt.retried_after_contract_fix;
+  // Kein Auftrag bleibt liegen: Ein Versuch, der nichts abgeliefert hat, war
+  // technisch oder formal gescheitert - nicht redaktionell entschieden. Nach
+  // einer Korrektur, erkennbar an der höheren Workerversion, folgt genau ein
+  // weiterer Versuch je Version. Ein gelieferter Entwurf (auch ein HOLD mit
+  // Begründung) ist ein Ergebnis und wird nicht wiederholt.
+  // 16.09.: drei Aufträge standen auf 'attempt_exhausted, delivered: false',
+  // einer davon seit dem 13.09.; Natalie hat sie nie zur Freigabe gesehen.
+  const contractFixed = Boolean(attempt) && attempt.status !== 'output_delivered' && attempt.version !== WORKER_VERSION
+    && attempt.retried_for_version !== WORKER_VERSION;
   if (attempt?.provider_called && !contractFixed) return { job_id: id, status: 'attempt_exhausted', delivered: attempt.status === 'output_delivered' };
   const outputPath = bridgePath('20_OUTPUT_READY', `${id}.output.json`);
   if (await session.transport.metadata(outputPath) || await session.transport.metadata(bridgePath('30_ACK', `${id}.ack.json`))) return { job_id: id, status: 'already_delivered' };
@@ -238,8 +292,15 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   const packet = JSON.parse(await session.transport.read(ownClaim?.state === 'claimed' || adoptedClaim ? claimPath : sourcePath));
   if (packet.job_id !== id || packet.input_hash !== job.input.input_hash || packet.job_type !== 'editorial_request') throw new Error('BRIDGE_JOB_BINDING_MISMATCH');
   // Prompt copy only: the stored packet and its input_hash stay untouched.
-  const sourceExcerpts = excerpts ? await collectSourceExcerpts(packet.request?.links || [], fetchImpl) : [];
-  const promptPacket = sourceExcerpts.length ? { ...packet, origin: { ...(packet.origin || {}), source_excerpts: sourceExcerpts } } : packet;
+  // Nachlieferung: der Zusatz ist der Auftrag, der frühere Auftrag und seine
+  // bisher gelieferte Fassung kommen als Material dazu. Nur die Prompt-Kopie;
+  // das abgelegte Paket und sein input_hash bleiben unberührt.
+  const target = supplementTarget(packet.request?.brief);
+  const supplement = target ? await supplementContext(session, target,
+    { paths: [bridgePath('20_OUTPUT_READY', `${target}.output.json`), bridgePath('30_ACK', `${target}.ack.json`)] }) : null;
+  const supplementedPacket = withSupplement(packet, supplement);
+  const sourceExcerpts = excerpts ? await collectSourceExcerpts(supplementedPacket.request?.links || [], fetchImpl) : [];
+  const promptPacket = sourceExcerpts.length ? { ...supplementedPacket, origin: { ...(supplementedPacket.origin || {}), source_excerpts: sourceExcerpts } } : supplementedPacket;
   const request = prepareApiJob(promptPacket, knowledge);
   if (adoptedClaim) {
     await session.store.observe(`github-claim:${name}`, { job_id: id, actor: WORKER_ACTOR, packet_hash: hash(packet), state: 'claimed', adopted_stale_claim_from: adoptedClaim, at: now() });
@@ -249,36 +310,53 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
     catch { return { job_id: id, status: 'claim_unknown' }; }
     await session.store.observe(`github-claim:${name}`, { job_id: id, actor: WORKER_ACTOR, packet_hash: hash(packet), state: 'claimed', at: now() });
   }
-  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'started', at: now(), request_key: request.key, ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
+  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'started', at: now(), request_key: request.key, ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
   let result;
   try { result = await draft(request); }
   catch (error) {
     const status = error.providerNotCalled ? 'provider_unavailable' : 'output_unusable';
     const message = [String(error.message), error.detail].filter(Boolean).join(' · ').slice(0, 320);
-    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: !error.providerNotCalled, status, error: message, usage: error.usage || null, cost_usd: error.cost ?? null, at: now(), ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
+    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: !error.providerNotCalled, status, error: message, usage: error.usage || null, cost_usd: error.cost ?? null, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
     return { job_id: id, status, error: message, cost_usd: error.cost ?? 0 };
   }
   if (rawOutputDir) {
     try { fs.mkdirSync(rawOutputDir, { recursive: true }); fs.writeFileSync(path.join(rawOutputDir, `${now().replace(/[:.]/g, '-')}-${id}.json`), JSON.stringify({ job_id: id, model: result.model, usage: result.usage, answer: result.answer }, null, 2)); } catch { /* best effort */ }
   }
-  const output = { ...result.output, schema_version: '1.0', job_id: id, input_hash: packet.input_hash, processed_at: now() };
+  // Die Ablage prüft streng, und eine abgewiesene Ausgabe war bisher das Ende
+  // des Auftrags: der Entwurf lag vor, niemand sah ihn, und erst eine Änderung
+  // am Code holte ihn zurück. Wie in der Nachrichtenspur folgt jetzt genau eine
+  // Nachlieferung im selben Lauf, die die Befunde im Klartext mitbekommt. Was
+  // die Software selbst angleichen kann, ist vorher schon angeglichen.
+  let output = { ...result.output, schema_version: '1.0', job_id: id, input_hash: packet.input_hash, processed_at: now() };
   const previewRepairs = [];
-  if (output.preview) normalizeEditorialPreview(output.preview, { links: packet.request?.links || [], repairs: previewRepairs });
-  let validated;
-  try { validated = validateApiOutput(output, packet, now()); }
-  catch (error) {
-    const message = [String(error.message), ...(error.issues || []), ...(previewRepairs.length ? [`angeglichen: ${previewRepairs.join('; ')}`] : [])].join('\n').slice(0, 2000);
-    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'validation_failed', error: message, usage: result.usage, cost_usd: result.cost, at: now(), ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
-    return { job_id: id, status: 'validation_failed', error: message.slice(0, 200), cost_usd: result.cost };
+  let validated = null, lastIssues = [], repairCalls = 0, cost = result.cost || 0, usage = result.usage;
+  for (let pass = 0; pass <= (repairPass ? 1 : 0); pass += 1) {
+    if (output.preview) normalizeEditorialPreview(output.preview, { links: packet.request?.links || [], repairs: previewRepairs });
+    try { validated = validateApiOutput(output, packet, now()); break; }
+    catch (error) { lastIssues = [String(error.message), ...(error.issues || [])]; }
+    if (pass >= (repairPass ? 1 : 0)) break;
+    let retry;
+    try { retry = await draft({ ...request, prompt: `${request.prompt}\n\n${editorialRepairAddendum(lastIssues, previewRepairs)}` }); }
+    catch (error) { cost += error.cost || 0; break; }
+    repairCalls += 1;
+    cost = Number((cost + (retry.cost || 0)).toFixed(6));
+    usage = retry.usage || usage;
+    output = { ...retry.output, schema_version: '1.0', job_id: id, input_hash: packet.input_hash, processed_at: now() };
+  }
+  if (!validated) {
+    const message = [...lastIssues, ...(previewRepairs.length ? [`angeglichen: ${previewRepairs.join('; ')}`] : []), ...(repairCalls ? ['eine Nachlieferung blieb erfolglos'] : [])].join('\n').slice(0, 2000);
+    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'validation_failed', error: message, usage, cost_usd: cost, repair_calls: repairCalls, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
+    return { job_id: id, status: 'validation_failed', error: message.slice(0, 200), cost_usd: cost, repair_calls: repairCalls };
   }
   const latest = await session.store.get(id);
   if (!latest || latest.ack || latest.accepted) return { job_id: id, status: 'already_processed', cost_usd: result.cost };
   if (await session.transport.metadata(outputPath)) return { job_id: id, status: 'already_delivered', cost_usd: result.cost };
   await session.transport.writeAtomic(outputPath, validated);
   if (hash(JSON.parse(await session.transport.read(outputPath))) !== hash(validated)) throw new Error('EDITORIAL_DELIVERY_READBACK_FAILED');
-  await session.transport.writeAtomic(bridgePath('95_LOGS', `processor-github-${id}.json`), { actor: WORKER_ACTOR, version: WORKER_VERSION, job_id: id, request_key: request.key, output_hash: hash(validated), model: result.model, usage: result.usage, web_searches: result.web_searches ?? 0, preview_repairs: previewRepairs, cost_usd: result.cost, delivered_at: now(), status: 'OUTPUT_DELIVERED_NOT_PUBLISHED', disposition: validated.disposition || 'preview', ...(adoptedClaim ? { adopted_stale_claim_from: adoptedClaim } : {}) });
-  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', disposition: validated.disposition || 'preview', hold_code: validated.hold?.code || null, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, at: now(), ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
-  return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: result.cost, model: result.model, web_searches: result.web_searches ?? 0, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, preview_repairs: previewRepairs, ...(validated.disposition === 'hold' ? { hold_code: validated.hold?.code || null } : {}) };
+  await session.transport.writeAtomic(bridgePath('95_LOGS', `processor-github-${id}.json`), { actor: WORKER_ACTOR, version: WORKER_VERSION, job_id: id, request_key: request.key, output_hash: hash(validated), model: result.model, usage, web_searches: result.web_searches ?? 0, preview_repairs: previewRepairs, repair_calls: repairCalls, cost_usd: cost, delivered_at: now(), status: 'OUTPUT_DELIVERED_NOT_PUBLISHED', disposition: validated.disposition || 'preview', ...(adoptedClaim ? { adopted_stale_claim_from: adoptedClaim } : {}) });
+  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', disposition: validated.disposition || 'preview', hold_code: validated.hold?.code || null, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, usage, web_searches: result.web_searches ?? 0, cost_usd: cost, repair_calls: repairCalls, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
+  return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: cost, model: result.model, ...(repairCalls ? { repair_calls: repairCalls } : {}),
+    ...(supplement ? { supplement_of: supplement.job_id, supplement_previous_version: Boolean(supplement.previous_version) } : {}), web_searches: result.web_searches ?? 0, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, preview_repairs: previewRepairs, ...(validated.disposition === 'hold' ? { hold_code: validated.hold?.code || null } : {}) };
 }
 
 export async function runRedaktionsworker({ session = null, root = ROOT, knowledge = null, draft = draftEditorialOutput, now = () => new Date().toISOString(), env = process.env, laneWait = null, fetchImpl = fetch,
@@ -301,17 +379,22 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
     // cost no model call; they must not use up the paid slots of this run.
     const budget = Math.min(maxJobsPerRun, maxJobsPerDay - counter.paid);
     const candidates = selectEditorialRequests(rows, { limit: Math.max(budget, 0) + 20 });
+    // Hat Natalie nachgeliefert, trägt die Nachlieferung den ursprünglichen
+    // Auftrag mit. Ein zweiter Entwurf ohne den Zusatz wäre eine veraltete
+    // Fassung und ein zweiter bezahlter Aufruf.
+    const superseded = await supersededCandidates(live, candidates);
     const resolvedKnowledge = knowledge || editorialKnowledge(root);
     const results = [];
     let paid = 0;
     for (const row of candidates) {
       if (paid >= budget) break;
+      if (superseded.has(row.input.job_id)) { results.push({ job_id: row.input.job_id, status: 'superseded_by_supplement' }); continue; }
       const result = await processEditorialRequest(live, row, { knowledge: resolvedKnowledge, draft, now, fetchImpl });
       results.push(result);
       if (PAID_STATUS.has(result.status)) { paid += 1; counter.paid += 1; counter.cost_usd = Number((counter.cost_usd + (result.cost_usd || 0)).toFixed(6)); await store.observe(`github-editorial-day:${day}`, counter); }
       if (result.status === 'provider_unavailable') break;
     }
-    return { status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, results };
+    return { status: 'ok', day, open_requests: rows.filter((row) => row?.input?.job_type === 'editorial_request' && row.status === 'queued').length, selected: results.length, superseded_by_supplement: [...superseded], paid_this_run: paid, paid_today: counter.paid, cost_today_usd: counter.cost_usd, results };
   } finally {
     if (acquired) await store.release(true).catch(() => {});
   }

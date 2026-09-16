@@ -4,8 +4,9 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 import { hash, bridgePath } from '../../scripts/news/bridge/contract.mjs';
-import { selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview } from '../../scripts/news/redaktionsworker.mjs';
+import { selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts, normalizeEditorialPreview, supersededCandidates } from '../../scripts/news/redaktionsworker.mjs';
 import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandidates } from '../../scripts/news/redaktions-kandidaten.mjs';
+import { supplementBrief } from '../../scripts/news/editorial-supplement.mjs';
 
 const owner = '123456789012345678';
 const knowledge = { hash: 'a'.repeat(64), instructions: 'Synthetische Redaktionsanweisung für den Test.', compatibleHashes: [] };
@@ -76,11 +77,47 @@ test('an unusable or invalid answer is recorded once and never paid again; nothi
   let calls = 0;
   const draft = async () => { calls++; return { output: { preview: { ...preview(), checks: { source_binding: false } } }, usage: { input_tokens: 1, output_tokens: 1 }, model: 'gpt-5.6-luna', cost: 0.001, answer: '{}' }; };
   const result = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now });
-  assert.equal(result.status, 'validation_failed'); assert.equal(calls, 1);
+  // Eine abgewiesene Ausgabe bekommt genau eine Nachlieferung im selben Lauf,
+  // danach ist der Auftrag für diese Workerversion verbraucht.
+  assert.equal(result.status, 'validation_failed'); assert.equal(calls, 2); assert.equal(result.repair_calls, 1);
   assert.ok(!session.files.has(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)));
   assert.equal(session.observations.get(`github-attempt:${jobId}`).status, 'validation_failed');
+  assert.match(session.observations.get(`github-attempt:${jobId}`).error, /Nachlieferung blieb erfolglos/);
   const again = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now });
-  assert.equal(again.status, 'attempt_exhausted'); assert.equal(calls, 1);
+  assert.equal(again.status, 'attempt_exhausted'); assert.equal(calls, 2);
+  // Abschaltbar: ohne Nachlieferung bleibt es bei einem Aufruf.
+  const plain = fakeSession([queuedJob()]);
+  plain.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
+  let single = 0;
+  const once = async () => { single++; return { output: { preview: { ...preview(), checks: { source_binding: false } } }, usage: { input_tokens: 1, output_tokens: 1 }, model: 'gpt-5.6-luna', cost: 0.001, answer: '{}' }; };
+  const off = await processEditorialRequest(plain, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft: once, now, repairPass: false });
+  assert.equal(off.status, 'validation_failed'); assert.equal(single, 1); assert.equal(off.repair_calls, 0);
+});
+
+test('die Nachlieferung im selben Lauf rettet eine formal abgewiesene Ausgabe', async () => {
+  const { editorialRepairAddendum } = await import('../../scripts/news/redaktionsworker.mjs');
+  const session = fakeSession([queuedJob()]);
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
+  const prompts = [];
+  const draft = async (request) => {
+    prompts.push(request.prompt);
+    return prompts.length === 1
+      ? { output: { preview: { ...preview(), checks: { source_binding: false } } }, usage: { input_tokens: 9000, output_tokens: 3000 }, model: 'gpt-5.6-luna', cost: 0.012, answer: '{}' }
+      : { output: { preview: preview() }, usage: { input_tokens: 9500, output_tokens: 3200 }, model: 'gpt-5.6-luna', cost: 0.013, answer: '{}' };
+  };
+  const result = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now });
+  assert.equal(result.status, 'output_delivered');
+  assert.equal(result.repair_calls, 1);
+  assert.equal(result.cost_usd, 0.025, 'beide Aufrufe zusammen');
+  assert.equal(prompts.length, 2);
+  assert.ok(prompts[1].startsWith(prompts[0]), 'die Nachlieferung hängt an denselben Auftrag an');
+  assert.ok(prompts[1].includes('NACHLIEFERUNG'));
+  assert.match(prompts[1], /Befunde: [A-Z][A-Z_]+/, 'der Befund steht im Klartext dabei');
+  assert.ok(session.files.has(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`)));
+  assert.equal(session.observations.get(`github-attempt:${jobId}`).repair_calls, 1);
+  const addendum = editorialRepairAddendum(['EDITORIAL_MARKDOWN_DUPLICATE_TITLE'], ['markdown:doppelter Titel entfernt']);
+  assert.ok(addendum.includes('Bereits automatisch angeglichen: markdown:doppelter Titel entfernt.'));
+  assert.ok(addendum.includes('Keine neuen Behauptungen'));
 });
 
 test('the worker holds the import lane, respects the daily cap and releases the lane', async () => {
@@ -356,4 +393,109 @@ test('die Angleichung berührt nur Mechanisches und erfindet nichts', () => {
   assert.equal(missing.sources[0].publisher, undefined, 'ohne gültige Adresse wird kein Verlag erfunden');
   assert.deepEqual(missing.checks, {}, 'Prüfvermerke werden nie gesetzt');
   assert.deepEqual(missingRepairs, []);
+});
+test('eine Nachlieferung trägt den früheren Auftrag samt bisheriger Fassung und der frühere läuft nicht mehr allein', async () => {
+  const original = queuedJob();
+  const supplementId = 'wt_20260916T090000Z_' + 'a'.repeat(24);
+  const supplementInput = packetFor(supplementId);
+  supplementInput.request = { ...supplementInput.request, brief: supplementBrief(jobId, 'Zusatz: die politische Ebene als Wirkungsanalyse.'), links: ['https://example.org/zusatz'] };
+  supplementInput.input_hash = hash(supplementInput.request);
+  const supplementJob = { input: supplementInput, status: 'queued', created_at: '2026-09-16T09:00:00.000Z', intake: { owner, kind: 'opinion_analysis', fingerprint: 'a'.repeat(64) } };
+  const session = fakeSession([original, supplementJob]);
+  // Die bisher gelieferte Fassung des früheren Auftrags liegt in der Ablage.
+  session.files.set(bridgePath('20_OUTPUT_READY', `${jobId}.output.json`), JSON.stringify({ preview: { ...preview(), title: 'Erste Fassung' } }));
+  session.files.set(bridgePath('00_INBOX', `${supplementId}.input.json`), JSON.stringify(supplementInput));
+  let seen = null;
+  const draft = async (request) => { seen = request; return { output: { preview: preview() }, model: 'gpt-5.6-luna', usage: { input_tokens: 10, output_tokens: 10 }, cost: 0.01, answer: '{}' }; };
+  const result = await processEditorialRequest(session, { input: { job_id: supplementId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now: () => '2026-09-16T09:05:00.000Z' });
+  assert.equal(result.status, 'output_delivered');
+  assert.equal(result.supplement_of, jobId);
+  assert.equal(result.supplement_previous_version, true);
+  const sent = JSON.stringify(seen);
+  assert.ok(sent.includes('Zusatz: die politische Ebene'), 'der Zusatz ist der Auftrag');
+  assert.ok(!sent.includes('Nachlieferung zu Auftrag'), 'die technische Bindung steht nicht im Auftragstext');
+  assert.ok(sent.includes('Bitte diesen synthetischen Testfall vorbereiten'), 'der frühere Auftrag liegt als Material bei');
+  assert.ok(sent.includes('Erste Fassung'), 'die bisherige Fassung liegt als Material bei');
+  assert.ok(sent.includes('https://example.org/zusatz') && sent.includes('https://example.org/source'), 'beide Linkbestände');
+  // Das abgelegte Paket bleibt unberührt.
+  assert.equal(JSON.parse(session.files.get(bridgePath('10_CLAIMED', `${supplementId}.input.json`))).input_hash, supplementInput.input_hash);
+  // Der frühere Auftrag läuft nicht mehr allein.
+  const rows = await session.store.all();
+  const superseded = await supersededCandidates(session, selectEditorialRequests(rows, { limit: 10 }));
+  assert.deepEqual([...superseded], [jobId]);
+});
+
+test('eine Nachlieferung auf eine unbekannte Kennung bleibt ein gewöhnlicher Auftrag', async () => {
+  const strayId = 'wt_20260916T093000Z_' + 'c'.repeat(24);
+  const input = packetFor(strayId);
+  input.request = { ...input.request, brief: supplementBrief('wt_20200101T000000Z_' + '9'.repeat(24), 'Zusatz ohne Ziel.') };
+  input.input_hash = hash(input.request);
+  const session = fakeSession([{ input, status: 'queued', created_at: '2026-09-16T09:30:00.000Z', intake: { owner, kind: 'opinion_analysis', fingerprint: 'c'.repeat(64) } }]);
+  session.files.set(bridgePath('00_INBOX', `${strayId}.input.json`), JSON.stringify(input));
+  let seen = null;
+  const draft = async (request) => { seen = request; return { output: { preview: preview() }, model: 'gpt-5.6-luna', usage: { input_tokens: 10, output_tokens: 10 }, cost: 0.01, answer: '{}' }; };
+  const result = await processEditorialRequest(session, { input: { job_id: strayId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now: () => '2026-09-16T09:35:00.000Z' });
+  assert.equal(result.status, 'output_delivered');
+  assert.equal('supplement_of' in result, false);
+  assert.ok(JSON.stringify(seen).includes('Zusatz ohne Ziel'));
+});
+
+test('kein Auftrag bleibt liegen: jeder Versuch ohne Ergebnis läuft nach einer Korrektur genau einmal je Version nach', async () => {
+  const { WORKER_VERSION } = await import('../../scripts/news/redaktionsworker.mjs');
+  const attemptKey = `github-attempt:${jobId}`;
+  const setup = (attempt) => {
+    const session = fakeSession([queuedJob()]);
+    session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
+    session.observations.set(attemptKey, { job_id: jobId, provider_called: true, ...attempt });
+    return session;
+  };
+  const draft = async () => ({ output: { preview: preview() }, usage: { input_tokens: 5000, output_tokens: 2000 }, model: 'gpt-5.6-luna', cost: 0.003, answer: '{}' });
+  const row = { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' };
+  // 16.09.: drei Aufträge standen auf „Versuch verbraucht, nichts geliefert",
+  // einer seit dem 13.09. Jede dieser Ursachen ist technisch oder formal.
+  for (const status of ['validation_failed', 'output_unusable', 'started']) {
+    const session = setup({ status, version: 'redaktionsworker-4' });
+    const retried = await processEditorialRequest(session, row, { knowledge, draft, now });
+    assert.equal(retried.status, 'output_delivered', status);
+    assert.equal(session.observations.get(attemptKey).retried_for_version, WORKER_VERSION);
+  }
+  // Ein Altvermerk ohne Versionsangabe gilt ebenfalls als ältere Version.
+  const legacy = setup({ status: 'output_unusable' });
+  assert.equal((await processEditorialRequest(legacy, row, { knowledge, draft, now })).status, 'output_delivered');
+  // Ein geliefertes Ergebnis ist ein Ergebnis, auch als begründeter HOLD.
+  const delivered = setup({ status: 'output_delivered', disposition: 'hold', version: 'redaktionsworker-4' });
+  assert.equal((await processEditorialRequest(delivered, row, { knowledge, draft: async () => assert.fail('kein Nachlauf nach geliefertem Ergebnis'), now })).status, 'attempt_exhausted');
+  // Pro Version genau ein Nachlauf, auch wenn dieser wieder scheitert.
+  const twice = setup({ status: 'validation_failed', version: 'redaktionsworker-4', retried_for_version: WORKER_VERSION });
+  assert.equal((await processEditorialRequest(twice, row, { knowledge, draft: async () => assert.fail('kein zweiter Nachlauf je Version'), now })).status, 'attempt_exhausted');
+});
+
+test('ein Bild ohne belegte Freigabe wird entfernt statt den Entwurf zu verwerfen', async () => {
+  const { clearedVisual, VISUAL_RIGHTS } = await import('../../scripts/news/redaktionsworker.mjs');
+  const cleared = { url: 'https://wirkungsoekonomie.de/assets/img/news/eigen.png', alt: 'Eigenes Motiv', credit: 'Wirkungsökonomie', rights_status: 'OWN', allow_website: true };
+  assert.equal(clearedVisual(cleared), true);
+  for (const broken of [{ url: 'https://example.org/fremd.jpg' }, { allow_website: false }, { rights_status: 'UNKNOWN' }, { alt: '' }, { credit: ' ' }, { expires_at: '2020-01-01T00:00:00.000Z' }, { url: '' }])
+    assert.equal(clearedVisual({ ...cleared, ...broken }), false, JSON.stringify(broken));
+  assert.ok(VISUAL_RIGHTS.includes('CC_LICENSED'));
+  // Der Entwurf bleibt vollständig, nur der Bildverweis fällt weg.
+  const draftPreview = { ...preview(), visual: { url: 'https://example.org/erfunden.jpg', alt: 'x', credit: 'y', rights_status: 'OWN', allow_website: true } };
+  const repairs = [];
+  normalizeEditorialPreview(draftPreview, { links: [], repairs });
+  assert.equal(draftPreview.visual, null);
+  assert.deepEqual(repairs, ['visual:ohne belegte Freigabe entfernt']);
+  assert.equal(draftPreview.markdown, preview().markdown, 'am Text ändert sich nichts');
+  // Ein freigegebenes Bild bleibt unangetastet.
+  const keep = { ...preview(), visual: { ...cleared } };
+  const kept = [];
+  normalizeEditorialPreview(keep, { links: [], repairs: kept });
+  assert.deepEqual(keep.visual, cleared);
+  assert.deepEqual(kept, []);
+  // Und die Ablage nimmt den angeglichenen Entwurf an.
+  const session = fakeSession([queuedJob()]);
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
+  const draft = async () => ({ output: { preview: { ...preview(), visual: { url: 'https://example.org/erfunden.jpg', alt: 'x', credit: 'y', rights_status: 'OWN', allow_website: true } } },
+    usage: { input_tokens: 5000, output_tokens: 2000 }, model: 'gpt-5.6-luna', cost: 0.004, answer: '{}' });
+  const result = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now });
+  assert.equal(result.status, 'output_delivered');
+  assert.deepEqual(result.preview_repairs, ['visual:ohne belegte Freigabe entfernt']);
 });

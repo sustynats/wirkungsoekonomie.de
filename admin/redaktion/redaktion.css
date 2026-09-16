@@ -3,3 +3,4 @@
 .review-image{width:100%;height:auto;border-radius:12px}.review-text{width:100%;height:65vh;min-height:420px;border:1px solid var(--line);border-radius:10px;background:#fff}.approval-actions{display:grid;gap:10px;margin-top:20px}.secondary{border:1px solid var(--ink);background:#fff;color:var(--ink);border-radius:12px;padding:14px;min-height:48px}#approval-preview{margin-top:22px}#approval-preview li{font-size:13px;margin:8px 0;overflow-wrap:anywhere}
 
 #request-preview{scroll-margin-top:20px;overflow-wrap:anywhere}#request-preview h2{margin-top:18px}.private-preview-text{white-space:pre-wrap;font-size:17px;line-height:1.75;margin-top:24px}.preview-status{margin:24px 0}.preview-status.error{color:#8a362e;background:#fff0ec;border:1px solid #ead4cc;padding:14px;border-radius:12px}
+.supplement-note{border-left:4px solid var(--ink);background:var(--accent);margin-bottom:16px}.supplement-note p{margin:0 0 8px}.supplement-note button{padding:0}
