@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { auditSourceIntegrity, reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory, sourceSupportFingerprint } from "../../scripts/news/source-integrity.mjs";
+import { auditSourceIntegrity, newlyHeldStories, reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory, sourceSupportFingerprint } from "../../scripts/news/source-integrity.mjs";
+import { publicationIntegrityIssues } from "../../scripts/news/run.mjs";
 
 const registry = { sources: [
   { source_id: "swr", publisher_id: "swr", name: "SWR", url: "https://www.swr.de/", feed_url: "https://www.swr.de/feed.xml", primary_source: false, source_type: "media_rss", publisher_kind: "public_broadcasting", research_lane: "media", geography: ["DE"] },
@@ -85,4 +86,28 @@ test("fehlende Begründung oder ungeprüfte Zuordnung genügt nicht", () => {
     Object.assign(record.editorial_evidence.source_bindings[0],change);
     assert.ok(sourceIntegrityForStory(record,registry).issues.some(x=>x.code==='SOURCE_SEMANTIC_FIT_OPEN'));
   }
+});
+
+test("die veröffentlichungsreife Fassung wird erneut geprüft: eine abweichende Modell-Überschrift hält genau diese Meldung", () => {
+  const item = source("Stimmung vor der Wahl in Sachsen-Anhalt", "https://www.swr.de/wahl-sachsen-anhalt.html");
+  const candidate = story("Stimmung vor der Wahl in Sachsen-Anhalt", [item]);
+  assert.equal(sourceIntegrityForStory(candidate, registry, [], "2026-09-05T09:00:00Z").status, "verified", "die Feed-Fassung besteht");
+  const published = { ...candidate, title: "BerlinTrend vor der Berlin-Wahl", source_summary: "Die Umfrage betrifft die Berlin-Wahl." };
+  const result = publicationIntegrityIssues(published, registry, [], "2026-09-05T09:00:00Z");
+  assert.ok(result.errors.length, "die veröffentlichte Fassung wird gehalten");
+  assert.ok(result.errors.every((code) => code.startsWith("SOURCE_INTEGRITY_OPEN:")), result.errors.join(","));
+  assert.equal(result.record.publication_status, "hold");
+  const clean = publicationIntegrityIssues(candidate, registry, [], "2026-09-05T09:00:00Z");
+  assert.deepEqual(clean.errors, []);
+  assert.equal(clean.record.publication_status, "eligible");
+});
+
+test("das Bestandsaudit unterscheidet neue von bereits bekannten Findings", () => {
+  const good = story("Vor der Wahl in Sachsen-Anhalt", [source("Stimmung vor der Wahl in Sachsen-Anhalt", "https://www.swr.de/wahl-sachsen-anhalt.html")]);
+  const bad = story("Vor der Wahl in Sachsen-Anhalt", [source("BerlinTrend vor der Berlin-Wahl", "https://www.swr.de/berlin-wahl.html")]);
+  const report = auditSourceIntegrity([good, bad], registry, "2026-09-05T09:00:00Z");
+  assert.deepEqual(newlyHeldStories(report, null), [bad.story_id], "ohne Vorbericht ist jedes Finding neu");
+  assert.deepEqual(newlyHeldStories(report, { findings: [{ story_id: bad.story_id }] }), [], "ein bekanntes Finding blockiert den Zyklus nicht");
+  assert.deepEqual(newlyHeldStories(report, { findings: [{ story_id: "andere-story" }] }), [bad.story_id]);
+  assert.deepEqual(newlyHeldStories({ findings: [] }, { findings: [{ story_id: bad.story_id }] }), [], "eine behobene Story erzeugt kein Finding");
 });
