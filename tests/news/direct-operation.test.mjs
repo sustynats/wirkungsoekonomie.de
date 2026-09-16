@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution, repairFields, fieldRepairFormat, fieldFromFinding } from '../../scripts/news/openai-transport.mjs';
+import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution, repairFields, fieldRepairFormat, fieldFromFinding, combinedRepairFormat } from '../../scripts/news/openai-transport.mjs';
 import { releaseDeterministicImpact, deterministicGateIssues, secondPassComplete } from '../../scripts/news/impact-gate.mjs';
 import { paidAttemptsExhausted, AI_PROCESSING_VERSION, pendingRecord } from '../../scripts/news/run.mjs';
 import { validateAnalysis, sha256 } from '../../scripts/news/lib.mjs';
@@ -511,7 +511,7 @@ test('bei Textbefunden liefert die eine Nachlieferung genau die betroffenen Feld
   assert.equal(result.analyses[0].headline, 'H', 'nicht betroffene Felder bleiben unverändert');
   assert.equal(result.analyses[0].impact_assessment.version, '2.1');
   assert.ok(result.analyses[0].transport_repairs.some((r) => r.startsWith('source_summary+detail_summary:nachgeliefert mit Schema')));
-  // Fehlt das Bewertungsobjekt, hat es Vorrang: nur ein Aufruf, nur die Bewertung.
+  // Fehlt beides, fragt die eine Nachlieferung beides in einem Aufruf nach.
   const priority = [];
   await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna',
     findIssues: () => ['AI_SOURCE_SUMMARY_LENGTH'],
@@ -520,7 +520,11 @@ test('bei Textbefunden liefert die eine Nachlieferung genau die betroffenen Feld
       const answer = priority.length === 1 ? JSON.stringify({ analyses: [{ story_id: 'wt-1', publication_recommendation: true, headline: 'H', summary: 'S' }] }) : JSON.stringify(assessment);
       return { ok: true, status: 200, json: async () => responsePayload(answer) };
     } });
-  assert.deepEqual(priority, ['wirkungsticker_analyse_1', 'wirkungspotenzial_2_1'], 'das Bewertungsobjekt zuerst, danach kein weiterer Aufruf');
+  assert.deepEqual(priority, ['wirkungsticker_analyse_1', 'wirkungsticker_nachlieferung_2'], 'ein Aufruf für Bewertung und Feld, kein dritter');
+  const combined = combinedRepairFormat(['source_summary']);
+  assert.deepEqual(combined.schema.required, ['story_id', 'impact_assessment', 'source_summary']);
+  assert.equal(combined.strict, true);
+  assert.equal(combinedRepairFormat(['media_impact']), null, 'für ein offenes Objekt gibt es kein gemeinsames Schema');
 });
 
 test('ein Medienbefund wird ohne Schema nachgeliefert, weil media_impact offen bleibt', async () => {
@@ -544,7 +548,7 @@ test('ein Medienbefund wird ohne Schema nachgeliefert, weil media_impact offen b
   assert.ok(bodies[1].input.includes('80 bis 200 Wörter'));
   assert.equal(result.analyses[0].media_impact.public_explanation, 'Eine ausreichend lange Erklärung.');
   assert.equal(result.analyses[0].headline, 'H');
-  assert.ok(result.analyses[0].transport_repairs.some((r) => r === 'media_impact:nachgeliefert (1 Befunde)'));
+  assert.ok(result.analyses[0].transport_repairs.some((r) => r.startsWith('media_impact:nachgeliefert (1 Befunde')), JSON.stringify(result.analyses[0].transport_repairs));
 });
 
 test('ein Befund, der sein Feld selbst nennt, bestimmt die Nachlieferung ohne Tabelle', () => {
@@ -722,4 +726,31 @@ test('die Vorgabe nennt die belegbaren Zahlen je Quelle, mit demselben Auszug wi
   // Und die Liste steht in der Vorgabe.
   assert.match(storyBriefing({ existing_story: { published: false }, sources: [source, ohne] }),
     /Belegbare Zahlen je Quelle .*swr-aktuell: 12, 300, 15, 2026, 4\.5 \| rbb24: keine Zahlen/);
+});
+
+test('fehlt Bewertung und Text, holt die eine Nachlieferung beides in einem Aufruf', async () => {
+  const assessment = syntheticPotentialAssessment();
+  const answered = () => ({ story_id: 'wt-1', publication_recommendation: true, headline: 'H', summary: 'S', source_summary: 'zu kurz' });
+  const bodies = [];
+  const result = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna',
+    findIssues: (analysis) => analysis.source_summary === 'zu kurz' ? ['AI_SOURCE_SUMMARY_LENGTH'] : [],
+    fetchImpl: async (url, init) => {
+      const body = JSON.parse(init.body); bodies.push(body);
+      const answer = bodies.length === 1 ? JSON.stringify({ analyses: [answered()] })
+        : JSON.stringify({ story_id: 'wt-1', impact_assessment: assessment, source_summary: 'Ein ausreichend langer Quellenabsatz.\n\nUnd ein zweiter Absatz.' });
+      return { ok: true, status: 200, json: async () => responsePayload(answer) };
+    } });
+  // Genau zwei Aufrufe: die Antwort und eine Nachlieferung für beides.
+  assert.equal(bodies.length, 2);
+  assert.equal(result.repair_calls, 1);
+  assert.equal(bodies[1].text.format.name, 'wirkungsticker_nachlieferung_2');
+  assert.deepEqual(bodies[1].text.format.schema.required, ['story_id', 'impact_assessment', 'source_summary']);
+  assert.match(bodies[1].input, /das Bewertungsobjekt und einzelne Felder bestehen/);
+  assert.match(bodies[1].input, /Zusätzlich impact_assessment vollständig nach Schema/);
+  // Beides landet in der Analyse, und der Vermerk nennt beides.
+  assert.equal(result.analyses[0].impact_assessment.version, '2.1');
+  assert.equal(result.analyses[0].source_summary, 'Ein ausreichend langer Quellenabsatz.\n\nUnd ein zweiter Absatz.');
+  assert.ok(result.analyses[0].transport_repairs.some((r) => r.startsWith('impact_assessment+source_summary:nachgeliefert mit Schema')),
+    JSON.stringify(result.analyses[0].transport_repairs));
+  assert.deepEqual(assessmentIssues(result.analyses[0], stories[0]), []);
 });
