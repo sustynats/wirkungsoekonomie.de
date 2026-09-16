@@ -308,3 +308,43 @@ test('Lanz wartet bis 14:00 des Folgetags auf die amtlichen Untertitel, danach g
   assert.equal(transcribed, 1);
   assert.deepEqual(late.proposed.map((p) => p.transcript_origin), ['openai_whisper']);
 });
+
+test('scheitert der direkte Zugriff auf die Mediathek, wird die Datei geholt und lokal umgewandelt', async () => {
+  const { extractAudio, downloadMedia, MEDIA_USER_AGENT } = await import('../../scripts/news/sendungs-transkript.mjs');
+  const fs = await import('node:fs');
+  const os = await import('node:os');
+  const path = await import('node:path');
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-audio-test-'));
+  // Erster Versuch direkt auf der Adresse, zweiter auf der geholten Datei.
+  const calls = [];
+  const exec = async (file, args) => {
+    calls.push(args[args.indexOf('-i') + 1]);
+    if (calls.length === 1) throw Object.assign(new Error('MEDIA_TRANSCODE_FAILED'), { detail: 'Server returned 403 Forbidden' });
+    fs.writeFileSync(args.at(-1), Buffer.alloc(2048, 1));
+    return { stdout: '', stderr: '' };
+  };
+  const fetched = [];
+  const fetchImpl = async (url, options) => { fetched.push([url, options.headers['User-Agent']]); return { ok: true, headers: { get: () => '2048' }, arrayBuffer: async () => new Uint8Array(2048).buffer }; };
+  const result = await extractAudio('https://rodlzdf-a.example/lanz.mp4', { dir, exec, fetchImpl });
+  assert.equal(result.downloaded, true);
+  assert.equal(result.size, 2048);
+  assert.equal(calls.length, 2);
+  assert.equal(calls[0], 'https://rodlzdf-a.example/lanz.mp4');
+  assert.ok(calls[1].endsWith('source.media'), calls[1]);
+  assert.deepEqual(fetched, [['https://rodlzdf-a.example/lanz.mp4', MEDIA_USER_AGENT]]);
+  assert.equal(fs.existsSync(path.join(dir, 'source.media')), false, 'die geholte Datei wird aufgeräumt');
+  // Der direkte Weg bleibt der Regelfall und holt nichts.
+  const straight = await extractAudio('https://rodlzdf-a.example/ok.mp4', { dir: fs.mkdtempSync(path.join(os.tmpdir(), 'woek-audio-test-')),
+    exec: async (file, args) => { fs.writeFileSync(args.at(-1), Buffer.alloc(64, 1)); return { stdout: '', stderr: '' }; },
+    fetchImpl: async () => assert.fail('kein Download nötig') });
+  assert.equal(straight.downloaded, false);
+  // Scheitern beide Wege, nennt der Fehler beide Gründe.
+  await assert.rejects(() => extractAudio('https://rodlzdf-a.example/kaputt.mp4', { dir: fs.mkdtempSync(path.join(os.tmpdir(), 'woek-audio-test-')),
+    exec: async () => { throw Object.assign(new Error('MEDIA_TRANSCODE_FAILED'), { detail: 'moov atom not found' }); }, fetchImpl }),
+    (error) => /direkt: moov atom not found/.test(error.detail) && /nach Download: moov atom not found/.test(error.detail));
+  // Eine zu große Datei wird nicht geholt.
+  await assert.rejects(() => downloadMedia('https://rodlzdf-a.example/riesig.mp4', path.join(dir, 'x'), { fetchImpl: async () => ({ ok: true, headers: { get: () => String(5 * 1024 * 1024 * 1024) } }) }),
+    /MEDIA_DOWNLOAD_TOO_LARGE/);
+  await assert.rejects(() => downloadMedia('https://rodlzdf-a.example/weg.mp4', path.join(dir, 'x'), { fetchImpl: async () => ({ ok: false, status: 404, headers: { get: () => null } }) }),
+    /MEDIA_DOWNLOAD_FAILED/);
+});
