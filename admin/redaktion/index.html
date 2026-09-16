@@ -20,7 +20,10 @@
   <a class="skip" href="#main">Zum Inhalt</a>
   <header class="app-header">
     <a class="brand" href="/wirkungsticker/"><img src="/assets/img/brand/signet.svg" width="34" height="34" alt=""><span>Wirkungsticker<small>Deine Redaktion</small></span></a>
-    <span class="private-badge">Privat</span>
+    <div class="app-header__meta">
+      <button id="tab-status" class="betrieb-chip" type="button" aria-pressed="false" hidden>Betrieb <span id="betrieb-dot" aria-hidden="true"></span></button>
+      <span class="private-badge">Privat</span>
+    </div>
   </header>
   <main id="main" class="shell">
     <section id="login" class="card login-card" aria-labelledby="login-title">
@@ -32,7 +35,7 @@
       <p class="quiet">Zugang mit Deinem bestehenden WÖk-Administrationskonto.</p>
     </section>
     <div id="workspace" hidden>
-      <nav class="tabs" aria-label="Redaktion"><button class="selected" id="tab-new" type="button" aria-pressed="true">Neuer Auftrag</button><button id="tab-list" type="button" aria-pressed="false">Aufträge <span id="count"></span></button><button id="tab-approval" type="button" aria-pressed="false">Freigeben <span id="approval-count"></span></button><button id="tab-status" type="button" aria-pressed="false">Betrieb <span id="betrieb-dot" aria-hidden="true"></span></button></nav>
+      <nav class="tabs" aria-label="Redaktion"><button class="selected" id="tab-new" type="button" aria-pressed="true">Neuer Auftrag</button><button id="tab-list" type="button" aria-pressed="false">Aufträge <span id="count"></span></button><button id="tab-approval" type="button" aria-pressed="false">Freigeben <span id="approval-count"></span></button></nav>
       <section id="compose" aria-labelledby="compose-title">
         <p class="eyebrow">Du gibst den Anstoß.</p>
         <h1 id="compose-title">Was soll in den Ticker?</h1>

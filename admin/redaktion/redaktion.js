@@ -155,7 +155,7 @@ async function openPrivatePreview(request){
 async function load(){
   if(!auth())return;
   const [data,reviewData]=await Promise.all([api('/requests'),api('/reviews')]);const reviews=new Map(reviewData.reviews.map(r=>[r.job_id,r]));requests=data.requests.map(r=>requestWithReview(r,reviews.get(r.review_job_id||r.job_id)));drawReviews(reviewData.reviews);
-  $('login').hidden=true;$('workspace').hidden=false;drawRequests();if(location.hash==='#freigeben'){show('approvals');history.replaceState(null,'',location.pathname);}
+  $('login').hidden=true;$('workspace').hidden=false;$('tab-status').hidden=false;drawRequests();if(location.hash==='#freigeben'){show('approvals');history.replaceState(null,'',location.pathname);}
   if(!poll)poll=setInterval(()=>{if(!document.hidden&&!sending)load().catch(error=>note(error.message,true));},60000);
 }
 window.addEventListener('online',()=>note('Du bist wieder online.'));
