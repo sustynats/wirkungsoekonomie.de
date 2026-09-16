@@ -322,3 +322,17 @@ test('one-time legacy decision review preserves rejections and never republishes
   assert.equal(captured.newsroom.decisions.at(-1).publication_recommendation, false);
   assert.equal(captured.newsroom.decisions.at(-1).rejection_code, 'insufficient_evidence');
 });
+
+test('der Bericht nennt, wie viele Aufrufe schemagebunden liefen und wie viele Nachlieferungen nötig waren', async () => {
+  const callAiImpl = async (stories) => ({ analyses: stories.map((story) => ({ story_id: story.story_id, publication_recommendation: false,
+      rejection: { code: 'no_new_information', reason: 'Die vorliegenden Quellen ergänzen keine neue materielle Information gegenüber der veröffentlichten Fassung.' } })),
+    model: 'gpt-5.6-luna', reported_usage: { input_tokens: 100, output_tokens: 50 }, analysis_schema: true, repair_calls: 1 });
+  const report = await runWirkungsticker(options(storedStory(), { callAiImpl }));
+  assert.equal(report.ai_schema_calls, 1, 'ein schemagebundener Aufruf');
+  assert.equal(report.ai_repair_calls, 1, 'eine Nachlieferung');
+  assert.equal(report.ai_calls, 2, 'Aufruf und Nachlieferung zusammen');
+  const ohne = await runWirkungsticker(options(storedStory(), { callAiImpl: async (stories) => ({ ...(await callAiImpl(stories)), analysis_schema: false, repair_calls: 0 }) }));
+  assert.equal(ohne.ai_schema_calls, 0);
+  assert.equal(ohne.ai_repair_calls, 0);
+  assert.equal(ohne.ai_calls, 1);
+});
