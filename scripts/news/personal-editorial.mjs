@@ -2,7 +2,7 @@ import {renderShowIdentity} from './show-identity.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {hash,safeUrl} from './bridge/contract.mjs';
-import {escape,renderEditorialMarkdown} from './editorial-markdown.mjs';
+import {escape,renderEditorialMarkdown,withoutProcessNotes} from './editorial-markdown.mjs';
 import {renderEditorialSection} from './editorial-layout.mjs';
 
 export const personalPortrait=kind=>['listened','watched'].includes(kind)?'/assets/img/people/nats_portrait_nachgehoert.jpg':kind==='book_review'?'/assets/img/people/natalie-weber-buch-und-wirkung.jpeg':'/assets/img/people/natalie-weber-woek-analyse.jpg';
@@ -15,7 +15,7 @@ export function publicPersonalEdition(review){
  const p=review.preview,id=hash(review.job_id).slice(0,16);
  const titleSlug=p.title.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,95).replace(/-$/,'');
  const content={analysis_id:`woek-personal-${id}`,slug:`${titleSlug}-${id.slice(0,6)}`,format:PERSONAL_FORMAT,subtype:p.format,manual_only:true,
-  title:p.title,subtitle:p.subtitle||'',body_markdown:p.markdown,sources:p.sources.map(({url,title,publisher,source_function,date})=>({url,title,publisher,...(source_function?{source_function}:{}),...(date?{date}:{})})),visual:p.visual?Object.fromEntries(['url','alt','credit','rights_status','allow_website','expires_at'].filter(k=>p.visual[k]!==undefined).map(k=>[k,p.visual[k]])):null,source_media:p.source_media?Object.fromEntries(['show','episode_title','original_release_date','original_url','hosts','guests','duration','timestamps'].filter(k=>p.source_media[k]!==undefined).map(k=>[k,p.source_media[k]])):null,
+  title:p.title,subtitle:p.subtitle||'',body_markdown:withoutProcessNotes(p.markdown),sources:p.sources.map(({url,title,publisher,source_function,date})=>({url,title,publisher,...(source_function?{source_function}:{}),...(date?{date}:{})})),visual:p.visual?Object.fromEntries(['url','alt','credit','rights_status','allow_website','expires_at'].filter(k=>p.visual[k]!==undefined).map(k=>[k,p.visual[k]])):null,source_media:p.source_media?Object.fromEntries(['show','episode_title','original_release_date','original_url','hosts','guests','duration','timestamps'].filter(k=>p.source_media[k]!==undefined).map(k=>[k,p.source_media[k]])):null,
   published_at:review.approval.at,revision:review.revision};
  return {...content,content_hash:personalContentHash(content)};
 }

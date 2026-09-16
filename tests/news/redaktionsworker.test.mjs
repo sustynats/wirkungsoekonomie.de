@@ -499,3 +499,42 @@ test('ein Bild ohne belegte Freigabe wird entfernt statt den Entwurf zu verwerfe
   assert.equal(result.status, 'output_delivered');
   assert.deepEqual(result.preview_repairs, ['visual:ohne belegte Freigabe entfernt']);
 });
+
+// 16.09.: Vier veröffentlichte Ausgaben trugen den Satz "Vorschlag zur
+// Bestätigung durch Natalie" im Lesertext - eine Werkstattnotiz, die auf der
+// fertigen Seite nicht nur störte, sondern falsch war: freigegeben war sie da.
+test('der Freigabevorbehalt bleibt im Entwurf und nicht im veröffentlichten Text', async () => {
+  const { withoutProcessNotes } = await import('../../scripts/news/editorial-markdown.mjs');
+  const repairs = [];
+  const preview = normalizeEditorialPreview({
+    title: 'Der Westen als Streitbegriff', format: 'listened',
+    markdown: ['Ein Begriff, drei Bedeutungen.', '',
+      'Der Beitrag ist ein Vorschlag zur abschließenden Bestätigung durch Natalie. Die Aussagen des Podcasts und die Wirkungsanalyse bleiben getrennt.', '',
+      '## Meine Einordnung', '', '**Vorschlag zur Bestätigung durch Natalie:**', '',
+      'An diesem Gespräch ist die Entscheidung interessant, den Begriff nicht mehr selbstverständlich zu nehmen.'].join('\n'),
+  }, { repairs });
+  assert.ok(!/Bestätigung durch Natalie/.test(preview.markdown), 'der Vorbehalt steht nicht im Text');
+  assert.ok(/Die Aussagen des Podcasts und die Wirkungsanalyse bleiben getrennt\./.test(preview.markdown), 'der Transparenzhinweis im selben Absatz bleibt');
+  assert.ok(/## Meine Einordnung/.test(preview.markdown) && /An diesem Gespräch/.test(preview.markdown), 'Abschnitt und Inhalt bleiben');
+  assert.ok(!/\n\n\n/.test(preview.markdown), 'keine Lücke, wo die Zeile stand');
+  assert.equal(repairs.filter((r) => /Freigabevermerk entfernt/.test(r)).length, 2, 'beide Fundstellen werden protokolliert');
+
+  // Eine Überschrift trägt den Vorbehalt genauso wie eine fette Zeile.
+  assert.equal(withoutProcessNotes('## Meine Einordnung\n\n### Vorschlag zur Bestätigung durch Natalie\n\nMich überzeugt die Unterscheidung.'),
+    '## Meine Einordnung\n\nMich überzeugt die Unterscheidung.');
+  // Ein Satz am Absatzende geht, der Absatz bleibt.
+  assert.equal(withoutProcessNotes('Mein Urteil steht. Dieser Abschnitt ist ein Vorschlag zur abschließenden Bestätigung durch Natalie Weber.'),
+    'Mein Urteil steht.');
+  // Text ohne Vorbehalt wird nicht angefasst - auch nicht in Formatierung.
+  const untouched = '## Meine Einordnung\n\nNatalie Weber hört jede Folge selbst.\n\n- Ein Punkt\n- Noch einer';
+  assert.equal(withoutProcessNotes(untouched), untouched);
+
+  // Eine Korrekturfassung muss ihren Patch mitführen, sonst verwirft die Ablage
+  // den Entwurf an patch.body_markdown !== preview.markdown.
+  const revised = normalizeEditorialPreview({
+    title: 'Fassung 2', format: 'listened',
+    markdown: '## Meine Einordnung\n\n**Vorschlag zur Bestätigung durch Natalie**\n\nKorrigierte Einordnung.',
+    editorial_revision: { patch: { body_markdown: '## Meine Einordnung\n\n**Vorschlag zur Bestätigung durch Natalie**\n\nKorrigierte Einordnung.', correction_note: 'Zahl berichtigt.' } },
+  });
+  assert.equal(revised.editorial_revision.patch.body_markdown, revised.markdown, 'Patch und Vorschau bleiben deckungsgleich');
+});
