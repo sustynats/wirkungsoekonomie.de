@@ -175,7 +175,9 @@ test('malformed AI output is retained and retried automatically after backoff', 
   await runWirkungsticker({...options(captured.storyStore.stories[0]),...captured,now:'2026-09-04T12:10:00.000Z',callAiImpl,captureState:value=>captured=value});
   assert.equal(calls,1);
   fail=false;
-  const third=await runWirkungsticker({...options(captured.storyStore.stories[0]),...captured,now:'2026-09-04T12:16:00.000Z',callAiImpl,captureState:value=>captured=value});
+  // Eine Stunde später: der bezahlte Fehlversuch liegt außerhalb des
+  // Taktungsfensters, sonst pausiert die Monatstaktung diese Stunde zu Recht.
+  const third=await runWirkungsticker({...options(captured.storyStore.stories[0]),...captured,now:'2026-09-04T13:16:00.000Z',callAiImpl,captureState:value=>captured=value});
   assert.equal(calls,2);
   assert.equal(third.ai_batches_completed,1);
   assert.equal(captured.storyStore.stories[0].pending_update,undefined);
@@ -335,4 +337,68 @@ test('der Bericht nennt, wie viele Aufrufe schemagebunden liefen und wie viele N
   assert.equal(ohne.ai_schema_calls, 0);
   assert.equal(ohne.ai_repair_calls, 0);
   assert.equal(ohne.ai_calls, 1);
+});
+
+test('die Taktung verteilt den Rest der Monatsfreigabe auf die restlichen Stunden', async () => {
+  const { budgetPacing, aiSpendInWindow } = await import('../../scripts/news/lib.mjs');
+  const september = { budget: 75.63, spent: 55.61, now: '2026-09-16T09:30:00.000Z', configured: 12 };
+  // Rund 20 USD Rest auf 350 Stunden: knapp 6 Cent je Stunde, also etwa zwei
+  // Meldungen zu 2,4 Cent. Solange die letzte Stunde darunter liegt, läuft es.
+  const free = budgetPacing({ ...september, spentLastHour: 0 });
+  assert.equal(free.calls_per_hour, 12);
+  assert.equal(free.paused, false);
+  assert.equal(free.usd_per_hour, 0.057118);
+  assert.equal(free.remaining_usd, 20.02);
+  // Ist die Stunde verbraucht, pausiert der Lauf und die nächste Viertelstunde prüft neu.
+  const spent = budgetPacing({ ...september, spentLastHour: 0.073 });
+  assert.equal(spent.calls_per_hour, 0);
+  assert.equal(spent.paused, true);
+  // Erschöpfte Freigabe heißt null, nicht „ein bisschen".
+  assert.equal(budgetPacing({ ...september, spent: 75.63, spentLastHour: 0 }).calls_per_hour, 0);
+  assert.equal(budgetPacing({ ...september, spent: 80, spentLastHour: 0 }).calls_per_hour, 0);
+  // Der Monatswechsel setzt die Taktung zurück.
+  const october = budgetPacing({ budget: 75.63, spent: 0, spentLastHour: 0, now: '2026-10-01T00:00:00.000Z', configured: 12 });
+  assert.equal(october.calls_per_hour, 12);
+  assert.equal(october.usd_per_hour, 0.101653);
+  // Ohne belastbare Zahlen bleibt es bei der festen Obergrenze.
+  for (const broken of [{ budget: 0 }, { budget: NaN }, { now: 'kein Datum' }, { spent: NaN }]) {
+    const fallback = budgetPacing({ ...september, spentLastHour: 99, ...broken });
+    assert.equal(fallback.calls_per_hour, 12, JSON.stringify(broken));
+    assert.equal(fallback.paused, false);
+  }
+  // Das Fenster zählt nur tatsächlich gebuchte Kosten der letzten Stunde.
+  const usage = { runs: [
+    { started_at: '2026-09-16T09:00:00.000Z', ai: { estimated_cost_usd: 0.05 } },
+    { started_at: '2026-09-16T08:00:00.000Z', ai: { estimated_cost_usd: 9 } },
+    { started_at: '2026-09-16T10:00:00.000Z', ai: { estimated_cost_usd: 7 } },
+  ] };
+  assert.equal(aiSpendInWindow(usage, '2026-09-16T09:30:00.000Z'), 0.05);
+  assert.equal(aiSpendInWindow({ runs: [] }, '2026-09-16T09:30:00.000Z'), 0);
+  assert.throws(() => aiSpendInWindow(usage, 'kein Datum'), /INVALID_AI_USAGE_TIME/);
+});
+
+test('der Lauf nennt die Taktung und hält sich an sie', async () => {
+  const callAiImpl = async (stories) => ({ analyses: stories.map((story) => ({ story_id: story.story_id, publication_recommendation: false,
+      rejection: { code: 'no_new_information', reason: 'Die vorliegenden Quellen ergänzen keine neue materielle Information gegenüber der veröffentlichten Fassung.' } })),
+    model: 'gpt-5.6-luna', reported_usage: { input_tokens: 100, output_tokens: 50 } });
+  // Eine Stunde, in der schon mehr ausgegeben wurde als sie kostet, pausiert.
+  const busy = { runs: [{ started_at: '2026-09-04T11:30:00.000Z', ai: { estimated_cost_usd: 1, requests: 2 } }] };
+  const paused = await runWirkungsticker(options(storedStory(), { callAiImpl, usage: busy }));
+  assert.equal(paused.ai_budget_pacing.paused, true);
+  assert.equal(paused.ai_hourly_limit, 0);
+  assert.equal(paused.ai_calls, 0, 'kein bezahlter Aufruf über die Taktung hinaus');
+  assert.equal(paused.ai_budget_pacing.calls_this_month, 2);
+  assert.equal(paused.ai_hourly_limit_configured, 4);
+  // Eine ruhige Stunde lässt die feste Obergrenze zu.
+  const quiet = await runWirkungsticker(options(storedStory(), { callAiImpl, usage: { runs: [] } }));
+  assert.equal(quiet.ai_budget_pacing.paused, false);
+  assert.equal(quiet.ai_hourly_limit, 4);
+  assert.equal(quiet.ai_calls, 1);
+  // Abschaltbar: dann gilt wieder die feste Obergrenze.
+  process.env.WOEK_NEWS_BUDGET_PACING = 'false';
+  try {
+    const off = await runWirkungsticker(options(storedStory(), { callAiImpl, usage: structuredClone(busy) }));
+    assert.equal(off.ai_budget_pacing.enabled, false);
+    assert.equal(off.ai_hourly_limit, off.ai_hourly_limit_configured);
+  } finally { delete process.env.WOEK_NEWS_BUDGET_PACING; }
 });
