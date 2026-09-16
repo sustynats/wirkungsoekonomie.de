@@ -275,3 +275,36 @@ test('ein Wiederholungsversuch nimmt nach dem Wartefenster die eigene Abschrift'
   assert.deepEqual(blocked.proposed, []);
   assert.deepEqual(blocked.waiting_for_subtitles.map((w) => w.reason), ['ohne Wortlaut']);
 });
+
+test('Lanz wartet bis 14:00 des Folgetags auf die amtlichen Untertitel, danach greift die eigene Abschrift', async () => {
+  const { transcriptDeadline, berlinOffsetMinutes, loadShows } = await import('../../scripts/news/sendungs-kandidaten.mjs');
+  // Sommerzeit und Winterzeit: der Stichtag ist Berliner Wanduhrzeit.
+  assert.equal(transcriptDeadline('2026-09-15T20:45:00.000Z', { day_offset: 1, berlin_hour: 14 }), '2026-09-16T12:00:00.000Z');
+  assert.equal(transcriptDeadline('2026-09-15T21:15:00.000Z', { day_offset: 1, berlin_hour: 14 }), '2026-09-16T12:00:00.000Z');
+  assert.equal(transcriptDeadline('2026-12-15T22:00:00.000Z', { day_offset: 1, berlin_hour: 14 }), '2026-12-16T13:00:00.000Z');
+  assert.equal(transcriptDeadline('2026-09-15T20:45:00.000Z', null), null, 'ohne Regel gilt das Stundenfenster');
+  assert.equal(transcriptDeadline('kein Datum', { day_offset: 1 }), null);
+  assert.equal(berlinOffsetMinutes(Date.parse('2026-09-16T09:00:00Z')), 120);
+  assert.equal(berlinOffsetMinutes(Date.parse('2026-01-16T09:00:00Z')), 60);
+  // Die Sendung trägt den Stichtag in der Senderliste.
+  const lanzConfig = loadShows(new URL('../../', import.meta.url).pathname).find((show) => show.id === 'markus-lanz');
+  assert.deepEqual(lanzConfig.transcript_deadline, { day_offset: 1, berlin_hour: 14 });
+
+  const lanz = { id: 'markus-lanz', show_name: 'Markus Lanz', kind: 'watched', mediathek: { title: 'Markus Lanz', channel: 'ZDF' }, provider: 'ZDF-Mediathek', min_duration_seconds: 1500,
+    transcript_deadline: { day_offset: 1, berlin_hour: 14 } };
+  const row = { title: 'Markus Lanz vom 15. September 2026', timestamp: Math.floor(Date.parse('2026-09-15T20:45:00Z') / 1000), duration: 4611,
+    url_website: 'https://www.zdf.de/video/talk/lanz-99', url_video_low: 'https://cdn.example/lanz.mp4', url_subtitle: '', id: 'lanz99' };
+  const fetchImpl = async (url, init) => init?.method === 'POST' ? { ok: true, json: async () => ({ result: { results: [row] } }) } : { ok: true, text: async () => '' };
+  let transcribed = 0;
+  const transcribeImpl = async (episode) => { transcribed += 1; return { url: episode.media, type: 'machine_transcript/de', origin: 'openai_whisper', segments: 700, chars: 38000, cost_usd: 0.27, text: '00:00:01 Guten Abend.' }; };
+  const options = { root: '/nonexistent', env: {}, shows: [lanz], limit: 2, maxPerDay: 5, maxAgeDays: 7, subtitleWaitHours: 12, transcribeImpl, maxTranscriptsPerDay: 2 };
+  // Das alte Zwölf-Stunden-Fenster wäre um 08:45 UTC abgelaufen; der Stichtag gilt.
+  const early = await proposeEpisodeCandidates({ ...options, session: fakeSession().session, now: '2026-09-16T09:30:00.000Z', fetchImpl });
+  assert.deepEqual(early.proposed, []);
+  assert.equal(transcribed, 0, 'vor dem Stichtag wird nicht bezahlt');
+  assert.deepEqual(early.waiting_for_subtitles.map((w) => w.deadline), ['2026-09-16T12:00:00.000Z']);
+  // Nach dem Stichtag greift die eigene Abschrift.
+  const late = await proposeEpisodeCandidates({ ...options, session: fakeSession().session, now: '2026-09-16T12:05:00.000Z', fetchImpl });
+  assert.equal(transcribed, 1);
+  assert.deepEqual(late.proposed.map((p) => p.transcript_origin), ['openai_whisper']);
+});

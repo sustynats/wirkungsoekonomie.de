@@ -1408,6 +1408,50 @@ export function estimateUsage(promptChars, answerChars, model = "gpt-5.5", rates
   };
 }
 
+// Bezahlte Aufrufe des Monats: nur für den Bericht, nicht für die Taktung.
+export function monthlyAiCalls(usage, isoMonth) {
+  return (usage.runs || [])
+    .filter((run) => String(usageCostStartedAt(run) || "").startsWith(isoMonth))
+    .reduce((sum, run) => sum + Math.max(0, Number(run.ai?.requests ?? run.counts?.ai_stories ?? 0) || 0), 0);
+}
+
+// Was in den letzten Minuten tatsächlich bezahlt wurde.
+export function aiSpendInWindow(usage, now, windowMinutes = 60) {
+  const at = Date.parse(now);
+  if (!Number.isFinite(at)) throw new Error("INVALID_AI_USAGE_TIME");
+  const cutoff = at - Math.max(1, Number(windowMinutes || 60)) * 60000;
+  return (usage.runs || [])
+    .filter((run) => {
+      const startedAt = Date.parse(usageCostStartedAt(run) || 0);
+      return Number.isFinite(startedAt) && startedAt > cutoff && startedAt <= at;
+    })
+    .reduce((sum, run) => sum + Math.max(0, Number(run.ai?.estimated_cost_usd || 0)), 0);
+}
+
+// Natalie am 16.09.2026: „Bis Monatsende sollten wir mit EUR 100 hinkommen. So
+// könnten wir es festlegen." Der Rest der Freigabe wird deshalb auf die
+// restlichen Stunden des Kalendermonats verteilt: Ist in der letzten Stunde
+// mehr ausgegeben worden als diese Stunde kostet, pausiert der Lauf und die
+// nächste Viertelstunde prüft neu. Keine Schätzung eines Preises, nur
+// tatsächlich gebuchte Kosten. Eine höhere Freigabe hebt die Taktung von
+// selbst, der Monatswechsel setzt sie zurück, die Stufen bei 70/85/95 Prozent
+// bleiben unverändert.
+export function budgetPacing({ budget, spent, spentLastHour, now, configured }) {
+  const limit = Math.max(0, Number(configured) || 0);
+  const at = Date.parse(now), total = Number(budget), used = Number(spent);
+  if (!Number.isFinite(at) || !Number.isFinite(total) || total <= 0 || !Number.isFinite(used)) {
+    return { calls_per_hour: limit, usd_per_hour: null, spent_last_hour: null, remaining_usd: null, paused: false };
+  }
+  const remaining = Math.max(0, total - used);
+  const monthEnd = Date.UTC(new Date(at).getUTCFullYear(), new Date(at).getUTCMonth() + 1, 1);
+  const hoursLeft = Math.max(1, (monthEnd - at) / 3600000);
+  const usdPerHour = remaining / hoursLeft;
+  const lastHour = Math.max(0, Number(spentLastHour) || 0);
+  const paused = remaining <= 0 || lastHour >= usdPerHour;
+  return { calls_per_hour: paused ? 0 : limit, usd_per_hour: Number(usdPerHour.toFixed(6)),
+    spent_last_hour: Number(lastHour.toFixed(6)), remaining_usd: Number(remaining.toFixed(4)), paused };
+}
+
 export function monthlyUsage(usage, isoMonth) {
   return (usage.runs || [])
     .filter((run) => String(usageCostStartedAt(run) || "").startsWith(isoMonth))
