@@ -7,6 +7,7 @@ import { reportOperationallyHealthy, sourceCoverageDegraded } from '../news/chec
 import { summarizeSourceFunnel } from '../news/source-funnel.mjs';
 import { operatingCostSummary, isImmediateNewsCostRun, usageCostStartedAt } from '../news/operating-cost.mjs';
 import { bridgeSession } from '../news/bridge/remote.mjs';
+import { OPS_STATUS_KEY, operationalStatus } from './betriebsstatus.mjs';
 import { feedDate } from '../news/feed-order.mjs';
 import { observeLiveNews, workflowChecks, planRecovery, recoverDelivery, RECOVERY_WORKFLOWS } from './news-recovery.mjs';
 
@@ -453,6 +454,18 @@ export async function main() {
   // Namen im Lauf-Protokoll ist ein Hänger von außen nicht auffindbar
   // (16.09.: „ich sehe nichts zum Freigeben"). Nur Kennung und Name, niemals
   // Inhalte: die Läufe eines öffentlichen Repositoriums sind öffentlich.
+  // Der Befund gehoert dorthin, wo Natalie ohnehin hinsieht: in die
+  // Redaktions-App. Der Monitor legt ihn in die Ablage, die Redaktions-API gibt
+  // ihn an ihr Konto heraus (16.09.: „Ich dachte, du hast ein permanentes
+  // Monitoring aufgesetzt bei jedem Schritt" - es lief, nur unsichtbar).
+  // Nicht in die oeffentliche App: das sind Betriebsdaten.
+  const status = operationalStatus({ checks, incidents: state.incidents, summary,
+    recovery: (state.recovery_attempts || []).filter(attempt => attempt.at === now),
+    delivery: observed.summary, report: data.report, at: now });
+  if (!dryRun) {
+    try { await bridgeSession().store.observe(OPS_STATUS_KEY, status); }
+    catch { /* Die Auskunft ist eine Zugabe; sie darf den Monitor nicht anhalten. */ }
+  }
   console.log(JSON.stringify({ checked: checks.length, healthy: checks.filter(c => c.ok).length, activeIncidents: Object.keys(state.incidents).filter(k => state.incidents[k].active).length, delivered, dailyDate: state.dailyDate,
     failing: checks.filter((check) => !check.ok).map((check) => ({ id: check.id, name: check.name, immediate: Boolean(check.immediate) })),
     publicDelivery: observed.summary, recovery: (state.recovery_attempts || []).filter(attempt => attempt.at === now) }));

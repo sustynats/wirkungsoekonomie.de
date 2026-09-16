@@ -33,7 +33,7 @@ async function readBody(request,limit,json=true){
   if(!/^application\/json(?:;|$)/i.test(request.headers['content-type']||''))fail('JSON-Daten erwartet.',415);
   try{return JSON.parse(bytes);}catch{fail('Die Auftragsdaten konnten nicht gelesen werden.',400);}
 }
-export function createEditorialIntakeHandler({intake,approval,authorize=existingAdminAuthorizer(),origins=ORIGINS}){
+export function createEditorialIntakeHandler({intake,approval,authorize=existingAdminAuthorizer(),origins=ORIGINS,readStatus=()=>null}){
   const attempts=new Map();
   let preparing=false;
   const prepare=async()=>{if(preparing)return;preparing=true;try{await intake.preparePending();}catch(error){if(error.message!=='BRIDGE_RUN_LOCKED')console.error('INTAKE_PREPARATION_UNAVAILABLE');}finally{preparing=false;}};
@@ -54,6 +54,8 @@ export function createEditorialIntakeHandler({intake,approval,authorize=existing
       if(now-rate.at>60000){rate.at=now;rate.count=0;}if(++rate.count>60)fail('Bitte kurz warten und erneut versuchen.',429);
       if(attempts.size>256)attempts.clear();attempts.set(owner,rate);
       const route=url.pathname.slice(BASE.length);
+      // Betriebsauskunft: nur lesen, nur fuer das eigene Konto, nie oeffentlich.
+      if(request.method==='GET'&&route==='/status'){respond(200,{status:(await readStatus())||null});return true;}
       if(request.method==='GET'&&route==='/reviews'){respond(200,{reviews:approval.list(owner).map(({preview,...r})=>({...r,title:preview.title,format:preview.format}))});return true;}
       let reviewMatch=route.match(/^\/reviews\/(wt_\d{8}T\d{6}Z_[a-f0-9]{24})(?:\/(decision))?$/);
       if(reviewMatch&&request.method==='GET'&&!reviewMatch[2]){respond(200,approval.preview(owner,reviewMatch[1]));return true;}
