@@ -37,7 +37,10 @@ Doppelläufe.
    `impactAssessmentErrors`, `semanticIssues`, `modelledPublicationIssues`. Nur ein
    vollständiges, quellengebundenes Profil mit drei modellierten Dimensionen wird als
    `publication_status: ready` freigegeben und mit `impact_semantic_review` (Modus
-   `deterministic-gate-1`) versehen. Erst dann rendern Ring und Balken öffentlich.
+   `deterministic-gate-2`; seit 16.09.: der gezielte zweite Recherchepass gilt als
+   abgeschlossen, wenn `research_check` completed ist und jeder Hauptpfad jeder Dimension `research_pass`
+   second_pass mit geschriebenem `research_result` trägt; erst dann darf eine zentrale Dimension bei hoher
+   Systemrelevanz ausdrücklich offen bleiben) versehen. Erst dann rendern Ring und Balken öffentlich.
 6. **Build → Commit → Pages** wie bisher (`build.mjs`, `publish-git.mjs`, `deploy.yml`
    ticker-only), anschließend `news:health`.
 

@@ -6,6 +6,7 @@ import { buildAnalysisPrompt, decodeWoekAiResponse, sanitizeFeedText } from './l
 import { deriveAssessmentCalculations, IMPACT_VERSION } from './impact-assessment.mjs';
 import { semanticIssues } from './impact-publication.mjs';
 import { modelledPublicationIssues } from './impact-scope.mjs';
+import { secondPassComplete } from './impact-gate.mjs';
 import { FACTOR_KEYS } from './impact-magnitude.mjs';
 import { modelRates } from './budget.mjs';
 
@@ -36,6 +37,7 @@ export const SINGLE_CALL_INSTRUCTIONS = [
   'Pfadtypen: primary_paths enthalten nur main_path oder counter_path mit same_target true und same_baseline true; side_effect und side_risk gehören in secondary_paths. Bei path_status modelled ist data_status modelled oder estimated, nie missing.',
   'source_summary: 100 bis 180 Wörter in zwei bis drei Absätzen (Leerzeile), unabhängig von publication_depth. Lesertexte enthalten nur Zahlen, Daten und Jahreszahlen, die wörtlich in den gelieferten Quellentexten stehen; das Datum der Berichterstattung wird nicht ergänzt.',
   'source_summary in eigenen Worten: keine Passage von mehr als 20 Wörtern wörtlich aus einer Quelle übernehmen.',
+  'analysis_type ex_ante: Wirkungen als Möglichkeit formulieren (kann, könnte, würde); keine Tatsachenformen wie „führt zu“, „bewirkt“, „hat … erhöht/reduziert/verbessert“ für noch nicht eingetretene Folgen. Jede Dimension trägt temporal_status ex_ante oder ongoing.',
   'Jede Dimension trägt zusätzlich rationale (Begründungstext) und balance (bei direction mixed ein Objekt mit comparable_material_paths, protection_boundary_decisive und rationale; sonst null). Diese beiden Schlüssel fehlten in der Hälfte der Antworten.',
   'Vollständigkeit ist Pflicht: Jeder Eintrag in analyses enthält ALLE Schlüssel des Schemas. Checkliste je Eintrag: story_id, publication_recommendation, headline, news_status, publication_depth, event_claims, followups, source_summary, summary, detail_summary, why_relevant, status, analysis_type, impact_assessment (mit dimensions.human/planet/democracy), importance, impact_potential, impact_risks, mechanisms, first_order, second_order, third_order, systemic_relevance, transformation_potential, resilience, side_effects, uncertainties, evidence_level, attribution, watch_next, reference_frameworks, publication_gate, visuals, media_impact. Ein fehlender Schlüssel macht die gesamte Antwort unbrauchbar.',
   'Reihenfolge: Erst alle Lesertext- und Gate-Felder (headline bis publication_gate, visuals, media_impact), dann impact_assessment mit allen drei Dimensionen, und als allerletzter Schlüssel analysis_complete:true. Ein Eintrag ohne impact_assessment oder ohne analysis_complete ist ungültig und wird verworfen; höre nie vor impact_assessment auf.',
@@ -209,8 +211,22 @@ export function repairPathPlacement(assessment, repairs = []) {
       const pb = p?.protection_boundary;
       if (pb && typeof pb === 'object' && coerceBoolean(pb.decisive) === true && p.direction !== 'negative') { repairs.push(`${key}.protection_boundary:decisive on ${p.direction} path cleared`); pb.decisive = false; pb.status = 'not_decisive'; }
     }
+    // A primary counter or side path without factors blocks the dimension; if a
+    // scored main path remains, the fragment gives way (00:07 UTC, Planet).
+    const primaryRows = Array.isArray(d.primary_paths) ? d.primary_paths : [];
+    if (primaryRows.some((p) => !scored(p)) && primaryRows.some((p) => scored(p) && p.type === 'main_path')) {
+      repairs.push(`${key}.primary_paths:${primaryRows.filter((p) => !scored(p)).length} unscored path(s) discarded`);
+      d.primary_paths = primaryRows.filter((p) => scored(p));
+    }
     if (d.path_status !== 'modelled') continue;
     if (!['modelled', 'estimated'].includes(d.data_status)) { repairs.push(`${key}.data_status:${d.data_status}->modelled`); d.data_status = 'modelled'; }
+    // The dimension's time status is fully determined by its paths: ongoing
+    // only with an observed signal on a primary path, otherwise ex_ante.
+    if (!['ex_ante', 'ongoing'].includes(d.temporal_status)) {
+      const ongoing = d.primary_paths.some((p) => p?.temporal_status === 'ongoing' && typeof p.observed_signal?.change === 'string' && p.observed_signal.change.trim());
+      repairs.push(`${key}.temporal_status:${d.temporal_status}->${ongoing ? 'ongoing' : 'ex_ante'}`);
+      d.temporal_status = ongoing ? 'ongoing' : 'ex_ante';
+    }
     const primary = d.primary_paths;
     const main = primary.filter((p) => ['main_path', 'counter_path'].includes(p.type));
     if (!primary.length || main.length === primary.length) continue;
@@ -293,7 +309,7 @@ export function normalizeAnalysisOutput(analysis, story = null) {
 export function assessmentIssues(analysis, story) {
   const assessment = analysis?.impact_assessment;
   const record = { sources: story?.sources || [], impact_assessment: assessment };
-  const issues = [...semanticIssues(assessment, record), ...(assessment ? modelledPublicationIssues(assessment) : [])];
+  const issues = [...semanticIssues(assessment, record, { secondPassComplete: secondPassComplete(assessment) }), ...(assessment ? modelledPublicationIssues(assessment) : [])];
   return [...new Set(issues.filter((code) => /^IMPACT_/.test(code)))];
 }
 
@@ -302,7 +318,10 @@ export function assessmentIssues(analysis, story) {
 // medium effort). A second full attempt in the next run repeats that. One
 // focused follow-up in the same run, carrying the exact gate findings, only
 // re-delivers impact_assessment; texts and sources stay as answered.
-export const REPAIR_MAX_OUTPUT_TOKENS = 16000;
+// 24k: the first three follow-ups (00:07 UTC) generated about 9k answer tokens
+// each plus medium reasoning and still ran into the 16k cap (no final message,
+// paid for nothing).
+export const REPAIR_MAX_OUTPUT_TOKENS = 24000;
 export function repairAddendum(storyId, issues, previous) {
   return [`NACHLIEFERUNG für story_id ${storyId}: Deine Antwort ist angekommen, aber impact_assessment fehlt oder besteht die deterministische Prüfung nicht.`,
     `Prüfbefunde: ${issues.join(', ')}.`,
@@ -325,7 +344,8 @@ async function requestAssessmentRepair({ prompt, story, analysis, issues, model,
   } catch { return { usage: null, assessment: null, answerChars: 0, status: 0 }; }
   finally { clearTimeout(timer); }
   const usage = decodeUsage(payload), answer = finalOutputText(payload);
-  if (rawDir && answer) { try { fs.mkdirSync(rawDir, { recursive: true }); fs.writeFileSync(`${rawDir}/${new Date().toISOString().replace(/[:.]/g, '-')}-${story.story_id}-nachlieferung.json`, JSON.stringify({ model: payload?.model || model, status: payload?.status || null, incomplete: payload?.incomplete_details || null, usage, issues, answer, story_ids: [story.story_id] }, null, 2)); } catch { /* best effort */ } }
+  // Diagnosis copy also without a final message: an incomplete follow-up must be explainable.
+  if (rawDir) { try { fs.mkdirSync(rawDir, { recursive: true }); fs.writeFileSync(`${rawDir}/${new Date().toISOString().replace(/[:.]/g, '-')}-${story.story_id}-nachlieferung.json`, JSON.stringify({ model: payload?.model || model, status: payload?.status || null, incomplete: payload?.incomplete_details || null, usage, issues, answer: answer || null, output_types: (payload?.output || []).map((item) => item?.type), story_ids: [story.story_id] }, null, 2)); } catch { /* best effort */ } }
   let parsed = null;
   try { parsed = answer ? JSON.parse(answer) : null; } catch { parsed = null; }
   const assessment = parsed?.analyses?.find?.((a) => a?.story_id === story.story_id)?.impact_assessment || parsed?.analyses?.[0]?.impact_assessment || parsed?.impact_assessment || null;
