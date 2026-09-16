@@ -15,6 +15,14 @@ on:
       - '!docs/parlament/ux/**'
       - 'content/**'
       - '!content/taxonomy/site-map.json'
+      # Die Quellen- und Medienlisten des Wirkungstickers sind Betriebsdaten der
+      # Nachrichtenspur und kein #253-Inhalt: keiner der Projektionsgeneratoren
+      # liest content/news. Ohne diesen Ausschluss haengt der branchschreibende
+      # Job seinen Projektionscommit an jeden Ticker-PR, der eine Quelle
+      # abschaltet - mit hunderten fremden Dateien und einem Konflikt gegen den
+      # main, der sich alle 15 Minuten bewegt (16.09.: PR #829 und #839).
+      # Dieselbe Begruendung wie bei scripts/news/** weiter unten.
+      - '!content/news/**'
       - 'scripts/**'
       # News ingestion and operational monitoring do not change #253 content.
       # Keep the branch-writing projection job off these server-only changes;
