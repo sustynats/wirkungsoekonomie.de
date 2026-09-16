@@ -2,8 +2,1735 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T02:22:02.413Z",
+  "updated_at": "2026-09-16T04:07:06.827Z",
   "stories": [
+    {
+      "story_id": "wt-d32968b9d0acbf03",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d32968b9d0acbf03-87fa11ecabb857f3-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d32968b9d0acbf03-4c110735c3ccb1d9-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d32968b9d0acbf03-5a0a6ec047b66a1a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "schwanger-und-gesetzlich-versichert-frauenarzte-warnen-vor-problemen-ab-2027-acbf03",
+      "title": "Gesetzliche Kassen: Frauenärzte warnen vor möglichen Engpässen ab 2027",
+      "source_summary": "SWR Aktuell berichtet über geplante Änderungen bei der Finanzierung ambulanter Frauenarztpraxen ab Januar 2027. Leistungen der Schwangerenvorsorge und Krebsfrüherkennung sollen danach wieder stärker unter gedeckelte Budgets fallen. Eine Mainzer Praxis erwartet deshalb Schwierigkeiten bei der Terminplanung und längere Wartezeiten, betont aber zugleich den bestehenden Versorgungsauftrag.\n\nDie Praxis gibt an, rund 70.000 Frauen im Jahr zu versorgen, etwa 90 Prozent davon gesetzlich versichert. Die Krankenkassen widersprechen der Darstellung. Der Bericht nennt außerdem Forderungen nach einer besseren Finanzierung und weist ausdrücklich darauf hin, dass offen ist, wie stark Frauen die Änderungen tatsächlich spüren werden. Eine unabhängige Bestätigung der erwarteten Versorgungsfolgen liegt in den gelieferten Quellen nicht vor.",
+      "summary": "Ab 2027 könnten gedeckelte Budgets Termine für Schwangeren- und Krebsvorsorge erschweren. Die Warnung stammt aus einer Mainzer Praxis; Krankenkassen widersprechen, die tatsächlichen Folgen sind offen.",
+      "detail_summary": "Ab Januar 2027 sollen bestimmte Vorsorgeleistungen wieder stärker unter gedeckelte Budgets fallen. Eine Mainzer Frauenarztpraxis warnt vor knapperen Terminen und längeren Wartezeiten, während Krankenkassen widersprechen. Das Wirkungspotenzial liegt vor allem in einem möglichen erschwerten Zugang zur Vorsorge für gesetzlich Versicherte. Ob und wie stark sich die Versorgung verändert, ist mit der vorliegenden Einzelquelle nicht belegt.",
+      "why_relevant": "Die Meldung betrifft den möglichen Zugang zu Schwangerschafts- und Krebsvorsorge. Sie verbindet eine angekündigte Finanzierungsänderung mit einer konkreten, aber noch nicht unabhängig bestätigten Versorgungswarnung.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Beschlossene Änderung der Budgetierung ambulanter Vorsorgeleistungen ab Januar 2027 und die Warnung einer Mainzer Frauenarztpraxis vor möglichen Engpässen",
+        "evaluation_target": {
+          "label": "Budgetierung von Schwangerenvorsorge und Krebsfrüherkennung",
+          "type": "law"
+        },
+        "baseline": "Bisherige Termin- und Finanzierungsbedingungen vor der stärkeren Budgetierung ab 2027",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne die stärkere Budgetierung bliebe der bisherige Finanzierungsrahmen bestehen; ob dadurch mehr Termine verfügbar wären, ist nicht belegt.",
+        "reference_frame": [
+          "Zugang zu gesundheitlicher Vorsorge",
+          "Versorgungssicherheit",
+          "Gleichheit gesetzlich Versicherter"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Mögliche Auswirkungen auf Zugang, Wartezeiten und Verteilung bei Schwangerschafts- und Krebsvorsorge werden modelliert; eine eingetretene Verschlechterung ist nicht belegt.",
+            "planet": "Ein unmittelbarer ökologischer Pfad ist bei der beschriebenen Finanzierungsänderung praktisch vernachlässigbar; indirekte Effekte sind nicht belegt.",
+            "democracy": "Die Änderung kann politische Rechenschaft und Interessenvertretung im Gesundheitswesen berühren; eine konkrete Veränderung demokratischer Institutionen oder Korrekturfähigkeit ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Mögliche Veränderung der Praxisplanung und Terminverfügbarkeit.",
+          "second_order": "Mögliche Veränderung des Zugangs zu Vorsorge unter der Bedingung knapper Kapazitäten.",
+          "third_order": "Mögliche Verteilungs- und Rechenschaftsfolgen, wenn bestimmte Gruppen dauerhaft schlechteren Zugang haben.",
+          "enablement": [
+            "enables_budget_control",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Die Praxis betont weiterhin einen Versorgungsauftrag und eine grundsätzliche Nichtablehnung von Patientinnen.",
+            "Die Krankenkassen widersprechen der Warnung.",
+            "Der Bericht erklärt selbst, dass die tatsächliche Stärke der Auswirkungen offen ist."
+          ],
+          "source_independence": "Nur eine journalistische Quelle ist geliefert. Praxisangaben, Krankenkassenposition und rechtliche Einordnung sind nicht durch eine zweite unabhängige Quelle bestätigt.",
+          "institutional_status": "Der Bericht bezeichnet das GKV-Beitragsstabilisierungsgesetz als beschlossen und nennt Januar 2027 als Beginn der stärkeren Budgetierung. Details zur Umsetzung und Rechtsanwendung bleiben offen."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "medium",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die gezielte Prüfung findet nur eine attribuierte Praxiswarnung und einen Widerspruch der Krankenkassen. Das negative Potenzial ist plausibel, aber Eintritt, Reichweite und Stärke bleiben offen.",
+            "reviewed_source_ids": [
+              "swr-aktuell"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Unter stärker gedeckelten Budgets könnten Frauenarztpraxen Vorsorgekapazitäten vorsichtiger planen und Termine knapper anbieten.",
+                "mechanism": "Finanzieller Druck und begrenzte Vergütung können die Zahl zusätzlich geplanter Vorsorgetermine beeinflussen.",
+                "recipients": [
+                  "Schwangere",
+                  "Patientinnen bei der Krebsvorsorge",
+                  "gesetzlich Versicherte"
+                ],
+                "magnitude": 4,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Der Pfad tritt ein, wenn die Budgetgrenzen zusätzliche Termine wirtschaftlich unattraktiv machen und keine ausreichenden Ausweichkapazitäten bestehen.",
+                "reference_space": "Ambulante Frauenarztpraxen, insbesondere gesetzlich versicherte Patientinnen",
+                "time_horizon": "Ab Januar 2027 und während der folgenden Versorgungspraxis",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Budgetgrenzen wirken tatsächlich auf die Terminplanung; Nachfrage und Personal bleiben ansonsten vergleichbar.",
+                "source_support": "Die Quelle belegt die geplante stärkere Budgetierung und die Warnung vor schwierigeren Terminen, nicht den späteren Eintritt.",
+                "limitations": "Keine unabhängigen Daten zu Wartezeiten, Kapazitäten oder betroffenen Patientinnen.",
+                "first_order": "Möglicherweise strengere Planung von Vorsorgekapazitäten.",
+                "second_order": "Möglicherweise längere Wartezeiten bei Schwangerschafts- und Krebsvorsorge.",
+                "third_order": "Bei anhaltenden Engpässen könnte der Zugang für Patientinnen mit wenigen Ausweichmöglichkeiten ungleicher werden.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Die Wirkung kann bei ausreichenden Kapazitäten gering bleiben, bei knappen Kapazitäten aber mehrere Versorgungsbereiche betreffen."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Messung der erwarteten Versorgungslücke; der Pfad bleibt eine quellengebundene ex-ante-Hypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die Regel betrifft mehrere Vorsorgebereiche und gesetzlich Versicherte.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Mögliche Terminengpässe können den Zugang zu zeitkritischer Vorsorge erschweren.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die mögliche Wirkung ist an die Budgetierung ab 2027 gebunden.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Politische und organisatorische Nachsteuerung könnte Folgen begrenzen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Schwangere und vorsorgebedürftige Patientinnen können bei Verzögerungen besonders betroffen sein.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft Finanzierung und Praxisorganisation, nicht nachweislich das gesamte Gesundheitssystem.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Ein dauerhaft erschwerter Zugang zu Schwangerschafts- oder Krebsvorsorge wäre eine materielle Schutzgrenze, der Eintritt ist jedoch offen.",
+                  "reference_frame": "Erreichbarer Zugang zu gesundheitlicher Vorsorge",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              },
+              {
+                "direction": "positive",
+                "label": "Der bestehende Versorgungsauftrag und politische Nachsteuerung könnten Versorgungslücken begrenzen.",
+                "mechanism": "Verpflichtungen der Praxen und Reaktionen auf Versorgungssorgen können zusätzliche Termine oder Änderungen der Finanzierung anstoßen.",
+                "recipients": [
+                  "Schwangere",
+                  "Patientinnen bei der Krebsvorsorge"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Der Pfad setzt voraus, dass der Versorgungsauftrag praktisch durchgesetzt wird oder politische Finanzierung angepasst wird.",
+                "reference_space": "Ambulante gynäkologische Versorgung",
+                "time_horizon": "Ab 2027",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Institutionen reagieren wirksam auf mögliche Engpässe.",
+                "source_support": "Die Quelle nennt einen bestehenden Versorgungsauftrag und Forderungen nach besserer Finanzierung.",
+                "limitations": "Keine Angaben dazu, wie der Auftrag kontrolliert oder finanziert wird.",
+                "first_order": "Praxen lehnen Patientinnen grundsätzlich nicht ab.",
+                "second_order": "Mögliche politische Reaktion auf Versorgungssorgen.",
+                "third_order": "Eine Anpassung könnte Zugangsunterschiede begrenzen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Der Gegenpfad kann Folgen abfedern, seine tatsächliche Wirksamkeit ist nicht belegt."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle nennt Schutzmechanismen, belegt aber keine Umsetzung oder Wirksamkeit.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Versorgungsauftrag kann viele Patientinnen formal erfassen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine Begrenzung möglicher Engpässe ist nur indirekt beschrieben.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Der Schutz könnte während der Budgetierung fortbestehen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Finanzielle und organisatorische Anpassungen bleiben grundsätzlich reversibel.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Der Pfad könnte besonders Patientinnen mit dringendem Vorsorgebedarf schützen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Gegenpfad betrifft vor allem Praxisverhalten und Finanzierung.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Versorgungsauftrag ist eine mögliche Schutzplanke, aber keine belegte Garantie für ausreichende Termine.",
+                  "reference_frame": "Zugang zu Vorsorge",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Mögliche längere Wartezeiten könnten Patientinnen mit geringeren Ausweichmöglichkeiten stärker treffen.",
+                "mechanism": "Ungleiche regionale oder finanzielle Ausweichmöglichkeiten verstärken die Wirkung knapper Termine.",
+                "recipients": [
+                  "gesetzlich Versicherte",
+                  "Schwangere",
+                  "Patientinnen bei der Krebsvorsorge"
+                ],
+                "magnitude": 4,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "low",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Der Pfad setzt voraus, dass knappe Termine regional oder sozial ungleich verteilt sind.",
+                "reference_space": "Ambulante Frauenarztversorgung",
+                "time_horizon": "Ab 2027",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ausweichangebote sind nicht überall gleichermaßen erreichbar.",
+                "source_support": "Die Quelle nennt mögliche längere Wartezeiten, aber keine Verteilungsdaten.",
+                "limitations": "Keine regionalen, sozialen oder gruppenspezifischen Messwerte.",
+                "first_order": "Wartezeiten könnten steigen.",
+                "second_order": "Patientinnen mit weniger Ausweichmöglichkeiten könnten stärker betroffen sein.",
+                "third_order": "Versorgungsunterschiede könnten sich verfestigen, wenn keine Gegensteuerung erfolgt.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 4,
+                  "rationale": "Die Verteilungswirkung reicht von vernachlässigbar bis materiell, abhängig von regionalen Kapazitäten."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine gruppenspezifischen Daten; Verteilungswirkung bleibt eine bedingte Hypothese.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft nur Patientinnen mit wenigen Alternativen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Längere Wartezeiten können Zugang erschweren, sind aber nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer hängt von der weiteren Finanzierung und Kapazität ab.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Zugangsunterschiede könnten durch Nachsteuerung zurückgehen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Vorsorgebedarf und geringe Ausweichmöglichkeiten erhöhen die Empfindlichkeit.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt auf Zugang und Verteilung in der Versorgung begrenzt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Ein dauerhaft ungleicher Zugang zu notwendiger Vorsorge wäre eine relevante Schutzgrenze, derzeit aber nur hypothetisch.",
+                  "reference_frame": "Gleichberechtigter Zugang zu gesundheitlicher Versorgung",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "rationale": "Das menschliche Wirkungspotenzial ist wegen des möglichen Zugangsproblems materiell. Die negative Richtung folgt dem bedingten Mechanismus aus Budgetdruck, Terminplanung und möglicher Wartezeit; die Evidenz für den Eintritt bleibt niedrig.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Ein negativer Zugangspfad und ein schwächer belegter Schutzpfad sind vergleichbar, aber die mögliche Schutzgrenze bei notwendiger Vorsorge gibt der negativen Seite Vorrang."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 4,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Unter stärker gedeckelten Budgets könnten Frauenarztpraxen Vorsorgekapazitäten vorsichtiger planen und Termine knapper anbieten.",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Unter stärker gedeckelten Budgets könnten Frauenarztpraxen Vorsorgekapazitäten vorsichtiger planen und Termine knapper anbieten.",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "dominance": "none",
+            "direction": "neutral",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "research_pass": "second_pass",
+            "research_result": "Die gezielte Prüfung findet keinen belegten oder plausiblen materiellen ökologischen Wirkpfad in der gelieferten Quelle.",
+            "reviewed_source_ids": [
+              "swr-aktuell"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "neutral",
+                "label": "Die beschriebene Budgetänderung hat im abgegrenzten Wirkungsraum keinen materiellen ökologischen Pfad.",
+                "mechanism": "Die Quelle betrifft ambulante Vergütung und Terminplanung, nicht Ressourcenverbrauch, Emissionen oder ökologische Infrastruktur.",
+                "recipients": [
+                  "natur"
+                ],
+                "magnitude": 0,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Im abgegrenzten Zeitraum und Wirkungsraum bleibt die Maßnahme auf Finanzierung und Versorgungstermine beschränkt.",
+                "reference_space": "Ambulante Frauenarztpraxen und ihr unmittelbares Versorgungssystem",
+                "time_horizon": "Ab Januar 2027",
+                "path_quality": [
+                  "weak"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Keine zusätzliche materielle Änderung bei Energie, Mobilität, Materialeinsatz oder Infrastruktur.",
+                "source_support": "Die Quelle beschreibt Budgetierung, Termine und Versorgung; ökologische Folgen werden nicht genannt.",
+                "limitations": "Keine Daten zu Praxisressourcen oder indirekten Umweltwirkungen.",
+                "first_order": "Keine materiell beschriebene ökologische Zustandsänderung.",
+                "second_order": "Keine belastbare ökologische Folge aus der gelieferten Quelle.",
+                "third_order": "Keine belastbare systemische ökologische Rückkopplung.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Für den beschriebenen Finanzierungs- und Versorgungspfad ist keine materielle ökologische Änderung begründet."
+                },
+                "negligibility_rationale": "Im abgegrenzten Raum und Zeitraum verändert die Regel nach der gelieferten Evidenz weder ein ökologisches Schutzgut noch eine relevante Umweltfunktion.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle belegt einen ökologischen Mechanismus; der Pfad wird begründet als vernachlässigbar eingestuft.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Empfängerkreis ist aus der Quelle ableitbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Belastung oder Entlastung ist beschrieben.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Zeitwirkung ist begründet.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Zustandsänderung ist erkennbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Kein vulnerables ökologisches Schutzgut wird berührt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Systempfad ist aus dem Ereignis ableitbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird durch den beschriebenen Vorgang berührt.",
+                  "reference_frame": "Ökologische Zustands- und Schutzgüter",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die gelieferte Quelle beschreibt einen gesundheitspolitischen Finanzierungs- und Versorgungsvorgang. Ein materieller ökologischer Wirkpfad ist für den abgegrenzten Gegenstand begründet vernachlässigbar.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Die beschriebene Budgetänderung hat im abgegrenzten Wirkungsraum keinen materiellen ökologischen Pfad.",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Die beschriebene Budgetänderung hat im abgegrenzten Wirkungsraum keinen materiellen ökologischen Pfad.",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "balanced",
+            "direction": "mixed",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt politische Forderungen und einen Streit zwischen Praxis und Krankenkassen, aber keine Veränderung demokratischer Institutionen, Beteiligung oder Korrekturfähigkeit.",
+            "reviewed_source_ids": [
+              "swr-aktuell"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "positive",
+                "label": "Die Finanzierungsänderung kann politische Rechenschaft über Gesundheitsversorgung und Interessenvertretung verstärken.",
+                "mechanism": "Konkrete Versorgungssorgen können politischen Handlungsdruck und öffentliche Prüfung der Finanzierungsentscheidung auslösen.",
+                "recipients": [
+                  "Patientinnen",
+                  "politische Entscheidungsträger",
+                  "Krankenkassen",
+                  "medizinische Praxen"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die berichtete Kontroverse von politischen Akteuren und Betroffenen aufgegriffen wird.",
+                "reference_space": "Gesundheitspolitische Öffentlichkeit und institutionelle Rechenschaft",
+                "time_horizon": "Bis zur Umsetzung und möglichen politischen Nachsteuerung ab 2027",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die berichtete Kontroverse führt zu überprüfbaren Erklärungen oder Anpassungen.",
+                "source_support": "Die Quelle belegt Kritik, eine Petition und den Widerspruch der Krankenkassen, nicht aber eine demokratische Folge.",
+                "limitations": "Keine Daten zu Beteiligung, Vertrauen, politischen Entscheidungen oder Diskursveränderungen.",
+                "first_order": "Mehr öffentliche Aufmerksamkeit für die Finanzierung der Vorsorge.",
+                "second_order": "Möglicher Druck auf politische Akteure zur Erklärung oder Anpassung der Regelung.",
+                "third_order": "Mögliche Verbesserung der Rechenschaft, abhängig von Evidenz und Umgang mit der Kontroverse.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die demokratische Wirkung bleibt voraussichtlich begrenzt, kann aber bei politischer Mobilisierung sichtbar werden."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbare Evidenz für bereits eingetretene demokratische Wirkungen; nur ein bedingtes Kommunikations- und Rechenschaftspotenzial.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Debatte kann Betroffene und gesundheitspolitische Akteure erreichen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die demokratische Wirkung ist indirekt und nicht gemessen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Kontroverse kann bis zur Umsetzung und Nachsteuerung anhalten.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Öffentliche Deutungen und politische Positionen sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene mit hohem Vorsorgebedarf können politisch besonders sensibel reagieren.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Institutionelle Grundstrukturen werden nicht nachweislich verändert.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze ist nicht konkret belegt; die mögliche Wirkung betrifft vor allem Rechenschaft und Diskurs.",
+                  "reference_frame": "Transparente gesundheitspolitische Rechenschaft",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "direction": "negative",
+                "label": "Eine unbestätigte Zuspitzung möglicher Versorgungsschäden könnte Vertrauen in gesundheitspolitische Entscheidungen belasten.",
+                "mechanism": "Wiederholte Warnungen ohne unabhängige Messdaten können den Eindruck einer bereits eingetretenen Krise erzeugen.",
+                "recipients": [
+                  "Patientinnen",
+                  "Öffentlichkeit",
+                  "Krankenkassen"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "condition": "Der Pfad setzt eine wiederholte, nicht ausreichend eingeordnete Darstellung voraus.",
+                "reference_space": "Gesundheitspolitische Öffentlichkeit",
+                "time_horizon": "Während der öffentlichen Debatte bis 2027",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Warnung wird ohne den im Bericht genannten Unsicherheitsvorbehalt weiterverbreitet.",
+                "source_support": "Die Quelle enthält selbst einen Hinweis auf offene Folgen und einen Widerspruch der Krankenkassen.",
+                "limitations": "Keine Publikums- oder Vertrauensdaten; keine beobachtete Diskurswirkung.",
+                "first_order": "Verstärkte Sorge über die Versorgung.",
+                "second_order": "Mögliche Verhärtung zwischen Praxen, Krankenkassen und Politik.",
+                "third_order": "Nur bei anhaltender, ungeprüfter Wiederholung wäre eine längerfristige Vertrauenswirkung denkbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne Wiederholung und ohne Publikumsdaten bleibt das Risiko klein; eine stärkere Wirkung ist nicht ausgeschlossen."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbare Evidenz für eine bereits eingetretene Vertrauens- oder Diskurswirkung.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Quelle allein belegt keine breite öffentliche Verbreitung.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Vertrauenswirkung ist indirekt und nicht gemessen.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine anhaltende Wirkung ist ohne Wiederholungsdaten nicht begründet.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Fehlinterpretationen können durch weitere Informationen korrigiert werden.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene können auf Aussagen zur eigenen Versorgung besonders empfindlich reagieren.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein institutioneller Wandel ist nicht belegt.",
+                    "source_ids": [
+                      "swr-aktuell"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die mögliche Vertrauensbelastung erreicht keine belegte demokratische Schutzgrenze.",
+                  "reference_frame": "Vertrauen in transparente gesundheitspolitische Entscheidungen",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Demokratische Folgen sind nur indirekt modellierbar. Die Meldung kann Rechenschaft und politische Aufmerksamkeit fördern, birgt bei unkritischer Wiederholung aber ein kleines Vertrauensrisiko. Eine eingetretene Wirkung ist nicht belegt.",
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive Rechenschaft und negatives Vertrauensrisiko sind beide schwach und bedingt; keine Seite erreicht eine entscheidende demokratische Schutzgrenze."
+            },
+            "secondary_paths": [],
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Die Finanzierungsänderung kann politische Rechenschaft über Gesundheitsversorgung und Interessenvertretung verstärken.",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Die Finanzierungsänderung kann politische Rechenschaft über Gesundheitsversorgung und Interessenvertretung verstärken.",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "analysis_complete": true,
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T04:16:18.018Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "swr-aktuell",
+            "functions": [
+              "event",
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle belegt den berichteten Finanzierungsstatus, die Warnungen der Mainzer Praxis, den Widerspruch der Krankenkassen und die offene Stärke möglicher Folgen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "medium",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die gezielte Prüfung findet nur eine attribuierte Praxiswarnung und einen Widerspruch der Krankenkassen. Das negative Potenzial ist plausibel, aber Eintritt, Reichweite und Stärke bleiben offen.",
+          "reviewed_source_ids": [
+            "swr-aktuell"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Unter stärker gedeckelten Budgets könnten Frauenarztpraxen Vorsorgekapazitäten vorsichtiger planen und Termine knapper anbieten.",
+              "mechanism": "Finanzieller Druck und begrenzte Vergütung können die Zahl zusätzlich geplanter Vorsorgetermine beeinflussen.",
+              "recipients": [
+                "Schwangere",
+                "Patientinnen bei der Krebsvorsorge",
+                "gesetzlich Versicherte"
+              ],
+              "magnitude": 4,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Der Pfad tritt ein, wenn die Budgetgrenzen zusätzliche Termine wirtschaftlich unattraktiv machen und keine ausreichenden Ausweichkapazitäten bestehen.",
+              "reference_space": "Ambulante Frauenarztpraxen, insbesondere gesetzlich versicherte Patientinnen",
+              "time_horizon": "Ab Januar 2027 und während der folgenden Versorgungspraxis",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Budgetgrenzen wirken tatsächlich auf die Terminplanung; Nachfrage und Personal bleiben ansonsten vergleichbar.",
+              "source_support": "Die Quelle belegt die geplante stärkere Budgetierung und die Warnung vor schwierigeren Terminen, nicht den späteren Eintritt.",
+              "limitations": "Keine unabhängigen Daten zu Wartezeiten, Kapazitäten oder betroffenen Patientinnen.",
+              "first_order": "Möglicherweise strengere Planung von Vorsorgekapazitäten.",
+              "second_order": "Möglicherweise längere Wartezeiten bei Schwangerschafts- und Krebsvorsorge.",
+              "third_order": "Bei anhaltenden Engpässen könnte der Zugang für Patientinnen mit wenigen Ausweichmöglichkeiten ungleicher werden.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Die Wirkung kann bei ausreichenden Kapazitäten gering bleiben, bei knappen Kapazitäten aber mehrere Versorgungsbereiche betreffen."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Messung der erwarteten Versorgungslücke; der Pfad bleibt eine quellengebundene ex-ante-Hypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die Regel betrifft mehrere Vorsorgebereiche und gesetzlich Versicherte.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Mögliche Terminengpässe können den Zugang zu zeitkritischer Vorsorge erschweren.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die mögliche Wirkung ist an die Budgetierung ab 2027 gebunden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Politische und organisatorische Nachsteuerung könnte Folgen begrenzen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Schwangere und vorsorgebedürftige Patientinnen können bei Verzögerungen besonders betroffen sein.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft Finanzierung und Praxisorganisation, nicht nachweislich das gesamte Gesundheitssystem.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Ein dauerhaft erschwerter Zugang zu Schwangerschafts- oder Krebsvorsorge wäre eine materielle Schutzgrenze, der Eintritt ist jedoch offen.",
+                "reference_frame": "Erreichbarer Zugang zu gesundheitlicher Vorsorge",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              }
+            },
+            {
+              "direction": "positive",
+              "label": "Der bestehende Versorgungsauftrag und politische Nachsteuerung könnten Versorgungslücken begrenzen.",
+              "mechanism": "Verpflichtungen der Praxen und Reaktionen auf Versorgungssorgen können zusätzliche Termine oder Änderungen der Finanzierung anstoßen.",
+              "recipients": [
+                "Schwangere",
+                "Patientinnen bei der Krebsvorsorge"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "low",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Der Pfad setzt voraus, dass der Versorgungsauftrag praktisch durchgesetzt wird oder politische Finanzierung angepasst wird.",
+              "reference_space": "Ambulante gynäkologische Versorgung",
+              "time_horizon": "Ab 2027",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Institutionen reagieren wirksam auf mögliche Engpässe.",
+              "source_support": "Die Quelle nennt einen bestehenden Versorgungsauftrag und Forderungen nach besserer Finanzierung.",
+              "limitations": "Keine Angaben dazu, wie der Auftrag kontrolliert oder finanziert wird.",
+              "first_order": "Praxen lehnen Patientinnen grundsätzlich nicht ab.",
+              "second_order": "Mögliche politische Reaktion auf Versorgungssorgen.",
+              "third_order": "Eine Anpassung könnte Zugangsunterschiede begrenzen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Der Gegenpfad kann Folgen abfedern, seine tatsächliche Wirksamkeit ist nicht belegt."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle nennt Schutzmechanismen, belegt aber keine Umsetzung oder Wirksamkeit.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Versorgungsauftrag kann viele Patientinnen formal erfassen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine Begrenzung möglicher Engpässe ist nur indirekt beschrieben.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Der Schutz könnte während der Budgetierung fortbestehen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Finanzielle und organisatorische Anpassungen bleiben grundsätzlich reversibel.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Der Pfad könnte besonders Patientinnen mit dringendem Vorsorgebedarf schützen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Gegenpfad betrifft vor allem Praxisverhalten und Finanzierung.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Versorgungsauftrag ist eine mögliche Schutzplanke, aber keine belegte Garantie für ausreichende Termine.",
+                "reference_frame": "Zugang zu Vorsorge",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Mögliche längere Wartezeiten könnten Patientinnen mit geringeren Ausweichmöglichkeiten stärker treffen.",
+              "mechanism": "Ungleiche regionale oder finanzielle Ausweichmöglichkeiten verstärken die Wirkung knapper Termine.",
+              "recipients": [
+                "gesetzlich Versicherte",
+                "Schwangere",
+                "Patientinnen bei der Krebsvorsorge"
+              ],
+              "magnitude": 4,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "low",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Der Pfad setzt voraus, dass knappe Termine regional oder sozial ungleich verteilt sind.",
+              "reference_space": "Ambulante Frauenarztversorgung",
+              "time_horizon": "Ab 2027",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ausweichangebote sind nicht überall gleichermaßen erreichbar.",
+              "source_support": "Die Quelle nennt mögliche längere Wartezeiten, aber keine Verteilungsdaten.",
+              "limitations": "Keine regionalen, sozialen oder gruppenspezifischen Messwerte.",
+              "first_order": "Wartezeiten könnten steigen.",
+              "second_order": "Patientinnen mit weniger Ausweichmöglichkeiten könnten stärker betroffen sein.",
+              "third_order": "Versorgungsunterschiede könnten sich verfestigen, wenn keine Gegensteuerung erfolgt.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 4,
+                "rationale": "Die Verteilungswirkung reicht von vernachlässigbar bis materiell, abhängig von regionalen Kapazitäten."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine gruppenspezifischen Daten; Verteilungswirkung bleibt eine bedingte Hypothese.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft nur Patientinnen mit wenigen Alternativen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Längere Wartezeiten können Zugang erschweren, sind aber nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer hängt von der weiteren Finanzierung und Kapazität ab.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Zugangsunterschiede könnten durch Nachsteuerung zurückgehen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Vorsorgebedarf und geringe Ausweichmöglichkeiten erhöhen die Empfindlichkeit.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt auf Zugang und Verteilung in der Versorgung begrenzt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Ein dauerhaft ungleicher Zugang zu notwendiger Vorsorge wäre eine relevante Schutzgrenze, derzeit aber nur hypothetisch.",
+                "reference_frame": "Gleichberechtigter Zugang zu gesundheitlicher Versorgung",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "rationale": "Das menschliche Wirkungspotenzial ist wegen des möglichen Zugangsproblems materiell. Die negative Richtung folgt dem bedingten Mechanismus aus Budgetdruck, Terminplanung und möglicher Wartezeit; die Evidenz für den Eintritt bleibt niedrig.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Ein negativer Zugangspfad und ein schwächer belegter Schutzpfad sind vergleichbar, aber die mögliche Schutzgrenze bei notwendiger Vorsorge gibt der negativen Seite Vorrang."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Unter stärker gedeckelten Budgets könnten Frauenarztpraxen Vorsorgekapazitäten vorsichtiger planen und Termine knapper anbieten.",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 4,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Unter stärker gedeckelten Budgets könnten Frauenarztpraxen Vorsorgekapazitäten vorsichtiger planen und Termine knapper anbieten.",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "dominance": "none",
+          "direction": "neutral",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "research_pass": "second_pass",
+          "research_result": "Die gezielte Prüfung findet keinen belegten oder plausiblen materiellen ökologischen Wirkpfad in der gelieferten Quelle.",
+          "reviewed_source_ids": [
+            "swr-aktuell"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "neutral",
+              "label": "Die beschriebene Budgetänderung hat im abgegrenzten Wirkungsraum keinen materiellen ökologischen Pfad.",
+              "mechanism": "Die Quelle betrifft ambulante Vergütung und Terminplanung, nicht Ressourcenverbrauch, Emissionen oder ökologische Infrastruktur.",
+              "recipients": [
+                "natur"
+              ],
+              "magnitude": 0,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Im abgegrenzten Zeitraum und Wirkungsraum bleibt die Maßnahme auf Finanzierung und Versorgungstermine beschränkt.",
+              "reference_space": "Ambulante Frauenarztpraxen und ihr unmittelbares Versorgungssystem",
+              "time_horizon": "Ab Januar 2027",
+              "path_quality": [
+                "weak"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Keine zusätzliche materielle Änderung bei Energie, Mobilität, Materialeinsatz oder Infrastruktur.",
+              "source_support": "Die Quelle beschreibt Budgetierung, Termine und Versorgung; ökologische Folgen werden nicht genannt.",
+              "limitations": "Keine Daten zu Praxisressourcen oder indirekten Umweltwirkungen.",
+              "first_order": "Keine materiell beschriebene ökologische Zustandsänderung.",
+              "second_order": "Keine belastbare ökologische Folge aus der gelieferten Quelle.",
+              "third_order": "Keine belastbare systemische ökologische Rückkopplung.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Für den beschriebenen Finanzierungs- und Versorgungspfad ist keine materielle ökologische Änderung begründet."
+              },
+              "negligibility_rationale": "Im abgegrenzten Raum und Zeitraum verändert die Regel nach der gelieferten Evidenz weder ein ökologisches Schutzgut noch eine relevante Umweltfunktion.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle belegt einen ökologischen Mechanismus; der Pfad wird begründet als vernachlässigbar eingestuft.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Empfängerkreis ist aus der Quelle ableitbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Belastung oder Entlastung ist beschrieben.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Zeitwirkung ist begründet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Zustandsänderung ist erkennbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Kein vulnerables ökologisches Schutzgut wird berührt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Systempfad ist aus dem Ereignis ableitbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird durch den beschriebenen Vorgang berührt.",
+                "reference_frame": "Ökologische Zustands- und Schutzgüter",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die gelieferte Quelle beschreibt einen gesundheitspolitischen Finanzierungs- und Versorgungsvorgang. Ein materieller ökologischer Wirkpfad ist für den abgegrenzten Gegenstand begründet vernachlässigbar.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Die beschriebene Budgetänderung hat im abgegrenzten Wirkungsraum keinen materiellen ökologischen Pfad.",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Die beschriebene Budgetänderung hat im abgegrenzten Wirkungsraum keinen materiellen ökologischen Pfad.",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "balanced",
+          "direction": "mixed",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt politische Forderungen und einen Streit zwischen Praxis und Krankenkassen, aber keine Veränderung demokratischer Institutionen, Beteiligung oder Korrekturfähigkeit.",
+          "reviewed_source_ids": [
+            "swr-aktuell"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "positive",
+              "label": "Die Finanzierungsänderung kann politische Rechenschaft über Gesundheitsversorgung und Interessenvertretung verstärken.",
+              "mechanism": "Konkrete Versorgungssorgen können politischen Handlungsdruck und öffentliche Prüfung der Finanzierungsentscheidung auslösen.",
+              "recipients": [
+                "Patientinnen",
+                "politische Entscheidungsträger",
+                "Krankenkassen",
+                "medizinische Praxen"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die berichtete Kontroverse von politischen Akteuren und Betroffenen aufgegriffen wird.",
+              "reference_space": "Gesundheitspolitische Öffentlichkeit und institutionelle Rechenschaft",
+              "time_horizon": "Bis zur Umsetzung und möglichen politischen Nachsteuerung ab 2027",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die berichtete Kontroverse führt zu überprüfbaren Erklärungen oder Anpassungen.",
+              "source_support": "Die Quelle belegt Kritik, eine Petition und den Widerspruch der Krankenkassen, nicht aber eine demokratische Folge.",
+              "limitations": "Keine Daten zu Beteiligung, Vertrauen, politischen Entscheidungen oder Diskursveränderungen.",
+              "first_order": "Mehr öffentliche Aufmerksamkeit für die Finanzierung der Vorsorge.",
+              "second_order": "Möglicher Druck auf politische Akteure zur Erklärung oder Anpassung der Regelung.",
+              "third_order": "Mögliche Verbesserung der Rechenschaft, abhängig von Evidenz und Umgang mit der Kontroverse.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die demokratische Wirkung bleibt voraussichtlich begrenzt, kann aber bei politischer Mobilisierung sichtbar werden."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbare Evidenz für bereits eingetretene demokratische Wirkungen; nur ein bedingtes Kommunikations- und Rechenschaftspotenzial.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Debatte kann Betroffene und gesundheitspolitische Akteure erreichen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die demokratische Wirkung ist indirekt und nicht gemessen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Kontroverse kann bis zur Umsetzung und Nachsteuerung anhalten.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Öffentliche Deutungen und politische Positionen sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene mit hohem Vorsorgebedarf können politisch besonders sensibel reagieren.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Institutionelle Grundstrukturen werden nicht nachweislich verändert.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze ist nicht konkret belegt; die mögliche Wirkung betrifft vor allem Rechenschaft und Diskurs.",
+                "reference_frame": "Transparente gesundheitspolitische Rechenschaft",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "direction": "negative",
+              "label": "Eine unbestätigte Zuspitzung möglicher Versorgungsschäden könnte Vertrauen in gesundheitspolitische Entscheidungen belasten.",
+              "mechanism": "Wiederholte Warnungen ohne unabhängige Messdaten können den Eindruck einer bereits eingetretenen Krise erzeugen.",
+              "recipients": [
+                "Patientinnen",
+                "Öffentlichkeit",
+                "Krankenkassen"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "low",
+              "source_ids": [
+                "swr-aktuell"
+              ],
+              "condition": "Der Pfad setzt eine wiederholte, nicht ausreichend eingeordnete Darstellung voraus.",
+              "reference_space": "Gesundheitspolitische Öffentlichkeit",
+              "time_horizon": "Während der öffentlichen Debatte bis 2027",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Warnung wird ohne den im Bericht genannten Unsicherheitsvorbehalt weiterverbreitet.",
+              "source_support": "Die Quelle enthält selbst einen Hinweis auf offene Folgen und einen Widerspruch der Krankenkassen.",
+              "limitations": "Keine Publikums- oder Vertrauensdaten; keine beobachtete Diskurswirkung.",
+              "first_order": "Verstärkte Sorge über die Versorgung.",
+              "second_order": "Mögliche Verhärtung zwischen Praxen, Krankenkassen und Politik.",
+              "third_order": "Nur bei anhaltender, ungeprüfter Wiederholung wäre eine längerfristige Vertrauenswirkung denkbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne Wiederholung und ohne Publikumsdaten bleibt das Risiko klein; eine stärkere Wirkung ist nicht ausgeschlossen."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbare Evidenz für eine bereits eingetretene Vertrauens- oder Diskurswirkung.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle allein belegt keine breite öffentliche Verbreitung.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Vertrauenswirkung ist indirekt und nicht gemessen.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine anhaltende Wirkung ist ohne Wiederholungsdaten nicht begründet.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Fehlinterpretationen können durch weitere Informationen korrigiert werden.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene können auf Aussagen zur eigenen Versorgung besonders empfindlich reagieren.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein institutioneller Wandel ist nicht belegt.",
+                  "source_ids": [
+                    "swr-aktuell"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die mögliche Vertrauensbelastung erreicht keine belegte demokratische Schutzgrenze.",
+                "reference_frame": "Vertrauen in transparente gesundheitspolitische Entscheidungen",
+                "source_ids": [
+                  "swr-aktuell"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Demokratische Folgen sind nur indirekt modellierbar. Die Meldung kann Rechenschaft und politische Aufmerksamkeit fördern, birgt bei unkritischer Wiederholung aber ein kleines Vertrauensrisiko. Eine eingetretene Wirkung ist nicht belegt.",
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive Rechenschaft und negatives Vertrauensrisiko sind beide schwach und bedingt; keine Seite erreicht eine entscheidende demokratische Schutzgrenze."
+          },
+          "secondary_paths": [],
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Die Finanzierungsänderung kann politische Rechenschaft über Gesundheitsversorgung und Interessenvertretung verstärken.",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Die Finanzierungsänderung kann politische Rechenschaft über Gesundheitsversorgung und Interessenvertretung verstärken.",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T04:07:06.827Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T02:50:21.000Z",
+      "last_updated": "2026-09-16T04:16:18.015Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-c9c7e4bb1c8aeea1e274",
+      "case_file": null,
+      "source_published_at": "2026-09-16T02:50:21.000Z",
+      "published_at": "2026-09-16T04:16:18.015Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, wie die Budgetregelung ab 2027 konkret ausgestaltet wird und welche Vorsorgeleistungen betroffen sind.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Regelungen zu Budgetgrenzen und betroffenen Vorsorgeleistungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-1b1058027b0e3062",
+          "announced_at": "2026-09-16T02:50:21.000Z",
+          "follow_up_date": "2026-09-23T04:16:18.015Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Zu beobachten ist, ob sich Wartezeiten oder die Terminverfügbarkeit in Frauenarztpraxen tatsächlich verändern.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Wartezeiten, verfügbare Termine und abgewiesene oder verschobene Vorsorgeanfragen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-9680eaa80e4592da",
+          "announced_at": "2026-09-16T02:50:21.000Z",
+          "follow_up_date": "2026-09-23T04:16:18.015Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/rheinland-pfalz/versorgung-in-frauenarztpraxen-2027-damit-muessen-schwangere-und-krebspatienten-rechnen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T02:50:21.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-a43d4554e3a8dbe2",
       "title_image": {
