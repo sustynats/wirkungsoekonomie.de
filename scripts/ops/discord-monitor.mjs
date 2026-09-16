@@ -438,7 +438,12 @@ export async function main() {
     await save();
     delivered++;
   }
+  // Welche Prüfung rot ist, stand bisher nur in Natalies Discord. Ohne den
+  // Namen im Lauf-Protokoll ist ein Hänger von außen nicht auffindbar
+  // (16.09.: „ich sehe nichts zum Freigeben"). Nur Kennung und Name, niemals
+  // Inhalte: die Läufe eines öffentlichen Repositoriums sind öffentlich.
   console.log(JSON.stringify({ checked: checks.length, healthy: checks.filter(c => c.ok).length, activeIncidents: Object.keys(state.incidents).filter(k => state.incidents[k].active).length, delivered, dailyDate: state.dailyDate,
+    failing: checks.filter((check) => !check.ok).map((check) => ({ id: check.id, name: check.name, immediate: Boolean(check.immediate) })),
     publicDelivery: observed.summary, recovery: (state.recovery_attempts || []).filter(attempt => attempt.at === now) }));
   if ((state.recovery_attempts || []).some(attempt => attempt.at === now && attempt.status === 'dispatch_uncertain')) throw new Error('MONITOR_RECOVERY_DISPATCH_UNCERTAIN');
 }
