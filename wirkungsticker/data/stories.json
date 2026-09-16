@@ -2,8 +2,1925 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T04:25:32.578Z",
+  "updated_at": "2026-09-16T05:22:15.068Z",
   "stories": [
+    {
+      "story_id": "wt-53f0a84d09b71b37",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-53f0a84d09b71b37-4271569d7fc7c28d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-53f0a84d09b71b37-5fe4af7abccf0997-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-53f0a84d09b71b37-bb39fe3b97488bf9-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nach-niederlage-im-briefwahl-streit-trump-kritisiert-oberstes-us-gericht-scharf-b71b37",
+      "title": "Laut Stern: Trump kritisiert Oberstes US-Gericht nach Niederlage im Briefwahl-Streit",
+      "source_summary": "Der Stern berichtet, Donald Trump habe nach seiner Niederlage im Streit um die Briefwahl das Oberste US-Gericht scharf angegriffen. Demnach bezeichnete er die Entscheidung als „schreckliches, hoch politisches Urteil“ und schrieb, der Supreme Court habe die Vereinigten Staaten „wirklich im Stich gelassen“. Die Aussagen werden seinem Onlinedienst Truth Social zugeschrieben.\n\nZugleich nennt der Bericht eine gegensätzliche Einordnung der Bürgerrechtsvereinigung Aclu. Sie habe die Entscheidung als großen Sieg für das Wahlrecht, die Wahlintegrität und die Demokratie bezeichnet. Die vorliegende Quelle belegt damit die unterschiedlichen öffentlichen Bewertungen, enthält aber keine unabhängige Prüfung des Urteils, keine näheren Angaben zu dessen Inhalt und keinen Nachweis über konkrete Folgen der Äußerungen.",
+      "summary": "Nach einer Niederlage im Briefwahl-Streit griff Trump laut Stern das Oberste US-Gericht an. Die Quelle belegt die Aussagen und eine Gegenbewertung der Aclu, nicht deren Folgen.",
+      "detail_summary": "Der Stern berichtet über Trumps scharfe Reaktion auf eine Niederlage im Briefwahl-Streit. Trump bezeichnete das Urteil als politisch und warf dem Supreme Court vor, das Land im Stich gelassen zu haben. Die Aclu bewertete die Entscheidung dagegen als Sieg für Wahlrecht, Wahlintegrität und Demokratie. Nachrichtenwert hat der Konflikt, weil er das Verhältnis zwischen politischer Kommunikation und gerichtlicher Autorität berührt. Offen bleibt, ob die Aussagen Vertrauen, Verhalten oder institutionelle Entscheidungen messbar verändern.",
+      "why_relevant": "Der Bericht zeigt einen öffentlich zugeschriebenen Angriff auf das oberste Gericht und eine gegenläufige Bewertung durch eine Bürgerrechtsorganisation. Das kann für Vertrauen in Wahl- und Gerichtsverfahren relevant sein, konkrete Wirkungen sind aber nicht belegt.",
+      "topic": [
+        "Demokratie"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Öffentlich berichtete Kritik Donald Trumps am Obersten US-Gericht nach einer Niederlage im Briefwahl-Streit",
+        "evaluation_target": {
+          "label": "öffentliche Kommunikation über gerichtliche Entscheidung und Briefwahl",
+          "type": "communication"
+        },
+        "baseline": "Öffentliche Debatte über das Urteil ohne die dokumentierten Aussagen und die unmittelbar gegenübergestellte Aclu-Bewertung",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "counterfactual": "Ohne diese Aussagen könnte die öffentliche Einordnung stärker auf der gerichtlichen Entscheidung und ihrer Begründung statt auf parteipolitischer Delegitimierung beruhen; andere politische Reaktionen bleiben möglich.",
+        "reference_frame": [
+          "Wahlrecht und Wahlintegrität",
+          "Unabhängigkeit und Akzeptanz gerichtlicher Institutionen",
+          "demokratische Korrekturfähigkeit"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die mögliche Wirkung auf Menschen liegt vor allem in Vertrauen, Orientierung und Zugang zu verlässlicher Information über Wahl- und Gerichtsverfahren. Materielle Gesundheits- oder Versorgungseffekte sind nicht ersichtlich.",
+            "planet": "Für ökologische Systeme, Ressourcen oder Emissionen enthält die Quelle keinen belastbaren Ansatzpunkt. Ein eigenständiger Pfad ist daher begründet vernachlässigbar.",
+            "democracy": "Die Kommunikation könnte die Wahrnehmung gerichtlicher Unabhängigkeit und der Briefwahl beeinflussen. Gegenrede und institutionelle Begründungen können gegensteuern; konkrete Veränderungen sind nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Öffentliche Deutung des Urteils als politisch beziehungsweise als Schutz von Wahlrecht und Wahlintegrität",
+          "second_order": "Mögliche Verschiebung von Vertrauen, Lagerzuordnung und Anschlusskommunikation bei wiederholter Verbreitung",
+          "third_order": "Mögliche Belastung oder Stabilisierung demokratischer Korrekturfähigkeit durch die Behandlung gerichtlicher Entscheidungen",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Aclu stellt der Kritik eine ausdrücklich positive Bewertung für Wahlrecht, Wahlintegrität und Demokratie entgegen.",
+            "Die Quelle belegt keine tatsächliche Vertrauensänderung, Verhaltensänderung oder institutionelle Folge.",
+            "Für planetare Wirkungen fehlt jeder konkrete Beleg."
+          ],
+          "source_independence": "Es liegt eine journalistische Darstellung des Stern mit nicht verifizierter Unabhängigkeit vor. Die zitierten Aussagen stammen von Trump und der Aclu; sie sind keine unabhängige Bestätigung ihrer jeweiligen Bewertungen.",
+          "institutional_status": "Die Quelle berichtet über eine Niederlage im Briefwahl-Streit und Aussagen dazu. Inhalt, Rechtsstatus und konkrete Reichweite des Urteils sind aus dem gelieferten Material nicht näher bestimmbar."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "balanced",
+            "direction": "mixed",
+            "magnitude": 2,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die gezielte Prüfung der gelieferten Quelle findet keinen Messwert zu Vertrauen oder Verhalten. Modelliert wird nur ein bedingter, kommunikationsvermittelter Pfad.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Verunsicherung über die Verlässlichkeit gerichtlicher und wahlbezogener Informationen",
+                "mechanism": "Eine als politisch und schrecklich dargestellte Gerichtsentscheidung kann bei wiederholter Verbreitung die Orientierung und das Vertrauen einzelner Menschen in institutionelle Information schwächen.",
+                "recipients": [
+                  "Wahlberechtigte",
+                  "Menschen, die sich über Briefwahl und Gerichte informieren"
+                ],
+                "magnitude": 2,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Die Aussagen müssten wiederholt und ohne ausreichende Einordnung verbreitet werden; die Quelle belegt diese Bedingung nicht.",
+                "reference_space": "Öffentliche Debatte in den Vereinigten Staaten",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Menschen nehmen politische Deutungen als Information über die Verlässlichkeit von Gerichten und Wahlverfahren auf.",
+                "source_support": "Die Quelle belegt Trumps Kritik und die Gegenbewertung der Aclu, nicht deren Wirkung auf Menschen.",
+                "limitations": "Keine Reichweiten-, Befragungs- oder Verhaltensdaten; Wirkung kann durch Gegenrede begrenzt werden.",
+                "first_order": "Polarisierte Einordnung einer gerichtlichen Entscheidung.",
+                "second_order": "Mögliche Unsicherheit bei der Bewertung von Briefwahl und gerichtlicher Autorität.",
+                "third_order": "Mögliche ungleiche Informationsgrundlage für politische Teilhabe; Eintritt offen.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die mögliche Reichweite und Dauer sind unbekannt; bei starker Wiederholung wäre eine größere, bei begrenzter Verbreitung eine kleinere Wirkung plausibel."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Evidenz für eine eingetretene Veränderung von Vertrauen oder Verhalten in der gelieferten Quelle.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt keine Reichweite; öffentliche Aussagen können jedoch über Medien Anschlusskommunikation erreichen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die berichteten Formulierungen sind scharf, ihre Wirkung auf Empfänger aber unbelegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Quelle nennt keinen Zeitraum für eine anhaltende Wirkung oder Wiederholung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauensverluste wären grundsätzlich durch weitere Informationen und Erfahrungen korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen mit geringerem Zugang zu unabhängiger Einordnung könnten stärker auf politische Deutungen angewiesen sein; das ist nicht gemessen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft Orientierung und Vertrauen, nicht nachgewiesene materielle Lebenslagen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine materielle Schutzgrenze für Gesundheit, Sicherheit oder existenzielle Versorgung ist nicht belegt.",
+                  "reference_frame": "verlässliche politische und rechtliche Information",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "direction": "positive",
+                "label": "Gegenläufige Orientierung durch die Aclu-Bewertung der Entscheidung",
+                "mechanism": "Die Einordnung als Sieg für Wahlrecht, Wahlintegrität und Demokratie kann bei Rezeption eine stabilisierende Gegenperspektive anbieten.",
+                "recipients": [
+                  "Wahlberechtigte",
+                  "zivilgesellschaftliche Akteure"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Die Gegenbewertung müsste Menschen erreichen und als glaubwürdige Einordnung aufgenommen werden.",
+                "reference_space": "Öffentliche Debatte in den Vereinigten Staaten",
+                "time_horizon": "Kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Eine gegensätzliche zivilgesellschaftliche Bewertung kann politische Abwertung teilweise ausgleichen.",
+                "source_support": "Die Quelle nennt die Aclu-Bewertung, nicht deren Reichweite oder Wirkung.",
+                "limitations": "Keine unabhängigen Daten zu Rezeption oder Vertrauensänderung.",
+                "first_order": "Verfügbarkeit einer Gegenbewertung.",
+                "second_order": "Mögliche Stabilisierung der Akzeptanz von Wahlrecht und Wahlintegrität.",
+                "third_order": "Mögliche Begrenzung einer einseitigen politischen Deutung.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Wirkung reicht von keiner messbaren Rezeption bis zu begrenzter Gegenorientierung."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Aclu-Aussage ist belegt, ihre Wirkung bleibt eine Wissensgrenze.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Quelle nennt keine Reichweite der Aclu-Aussage.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die positive Bewertung ist klar, aber keine Wirkungsstärke belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine anhaltende Dauer wird nicht genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine mögliche Orientierungswirkung wäre grundsätzlich leicht korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besondere Betroffenheit vulnerabler Gruppen ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt auf der Ebene öffentlicher Einordnung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine konkrete Schutzwirkung für Menschen.",
+                  "reference_frame": "verlässliche Information über Wahlrecht",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Polarisierte Informationslage für Menschen mit begrenztem Zugang zu Gegenquellen",
+                "mechanism": "Wiederholte, gegensätzliche Deutungen könnten die sachliche Einordnung des Urteils erschweren.",
+                "recipients": [
+                  "Wahlberechtigte",
+                  "Menschen mit begrenztem Zugang zu unabhängigen Informationen"
+                ],
+                "magnitude": 1,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Es müsste eine wiederholte und einseitige Verbreitung ohne zusätzliche Kontextualisierung eintreten.",
+                "reference_space": "Öffentliche Informationsumgebung in den Vereinigten Staaten",
+                "time_horizon": "Kurzfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Informationslücken verstärken die Wirkung prominenter Deutungen.",
+                "source_support": "Die Quelle belegt nur die unterschiedlichen Aussagen.",
+                "limitations": "Keine Publikumsdaten oder Vergleichsquellen.",
+                "first_order": "Konkurrierende Deutungen.",
+                "second_order": "Mögliche erschwerte Orientierung.",
+                "third_order": "Keine belastbare Aussage zu langfristiger Teilhabe möglich.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ohne Reichweiten- und Rezeptionsdaten bleibt der Nebenpfad klein und unsicher."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbare Evidenz zur Publikumsrezeption in der gelieferten Quelle.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Publikumsreichweite ist unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die gegensätzlichen Aussagen sind klar, ihre Wirkung nicht.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Eine dauerhafte Wiederholung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Informationswirkungen wären grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besondere Verwundbarkeit ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Nebenpfad betrifft Orientierung, nicht institutionelle Zustände.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete schwere Schutzgrenze ist aus der Quelle ableitbar.",
+                  "reference_frame": "Zugang zu verlässlicher Information",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 4,
+                  "divisor": 6,
+                  "raw": 0.6666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "rationale": "Für Menschen ist ein kleiner bis mittlerer negativer Kommunikationspfad plausibel, aber nicht beobachtet. Die gegenläufige Aclu-Bewertung begrenzt ihn möglicherweise.",
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Der negative Hauptpfad ist materieller modelliert; eine gleich starke positive Gegenwirkung ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Verunsicherung über die Verlässlichkeit gerichtlicher und wahlbezogener Informationen",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Verunsicherung über die Verlässlichkeit gerichtlicher und wahlbezogener Informationen",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "dominance": "none",
+            "direction": "neutral",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "data_status": "modelled",
+            "research_pass": "second_pass",
+            "research_result": "Die gezielte Prüfung findet in der gelieferten Quelle keinen ökologischen Mechanismus, keine Ressourcennutzung und keine Emissions- oder Naturwirkung. Der Pfad ist im betrachteten Raum und Zeitraum vernachlässigbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "neutral",
+                "label": "Keine eigenständige ökologische Zustandsänderung durch die berichtete Kommunikation",
+                "mechanism": "Die Quelle beschreibt politische und zivilgesellschaftliche Aussagen zu einem Gerichts- und Briefwahlstreit, aber keine Handlung mit unmittelbarer Umweltfunktion.",
+                "recipients": [
+                  "Natur",
+                  "keine konkret benannten ökologischen Empfänger"
+                ],
+                "magnitude": 0,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Es müsste ein nicht belegter Übergang von der Kommunikation zu ökologisch relevanten Entscheidungen eintreten.",
+                "reference_space": "Ökologische Systeme im durch die Quelle gesetzten Kontext",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die berichtete Kommunikation bleibt ohne belegte Folgeentscheidung mit Umweltbezug.",
+                "source_support": "Die Quelle enthält keinen ökologischen Sachverhalt.",
+                "limitations": "Indirekte spätere politische Folgen können mit dem Material nicht geprüft werden.",
+                "first_order": "Keine belegte ökologische Handlung.",
+                "second_order": "Keine belegte Veränderung von Emissionen, Ressourcen oder Naturzuständen.",
+                "third_order": "Keine belastbare ökologische Kaskade ableitbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Für den betrachteten Nachrichtenanlass ist kein tragfähiger ökologischer Wirkpfad belegt."
+                },
+                "negligibility_rationale": "Die Quelle handelt ausschließlich von Gerichts-, Wahl- und Kommunikationsfragen; eine ökologische Zustandsänderung ist im betrachteten Zeitraum praktisch vernachlässigbar.",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Folge oder entsprechende Handlung in der gelieferten Quelle.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Empfängergruppe ist betroffen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Einwirkung wird beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Zustandsänderung ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine verletzliche ökologische Gruppe ist betroffen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Systempfad ist aus der Quelle ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird berührt oder beschrieben.",
+                  "reference_frame": "ökologische Unversehrtheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Die Meldung enthält keinen belastbaren Ansatzpunkt für eine planetare Wirkung. Null bedeutet hier vernachlässigbares Potenzial im betrachteten Pfad, nicht fehlende Recherche.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Keine eigenständige ökologische Zustandsänderung durch die berichtete Kommunikation",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Keine eigenständige ökologische Zustandsänderung durch die berichtete Kommunikation",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "dominant_negative",
+            "direction": "negative",
+            "magnitude": 4,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle belegt politische Kritik an einem obersten Gericht und eine gegenläufige zivilgesellschaftliche Bewertung, aber keine eingetretene Veränderung von Vertrauen, Rechtsbefolgung oder Wahlverhalten.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "negative",
+                "label": "Mögliche Schwächung der Akzeptanz gerichtlicher Entscheidungen",
+                "mechanism": "Die öffentliche Darstellung eines Urteils als „hoch politisch“ kann bei Wiederholung die institutionelle Autorität des Gerichts und die Akzeptanz seiner Kontrolle über Wahlfragen untergraben.",
+                "recipients": [
+                  "Wahlberechtigte",
+                  "Gerichte",
+                  "Wahlbehörden",
+                  "politische Öffentlichkeit"
+                ],
+                "magnitude": 4,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Die Aussage müsste über den Einzelfall hinaus wiederholt, politisch aufgegriffen und ohne wirksame institutionelle Einordnung aufgenommen werden.",
+                "reference_space": "Demokratische Institutionen und Wahlkommunikation in den Vereinigten Staaten",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wiederholte Delegitimierung kann die Bereitschaft zur Anerkennung gerichtlicher Entscheidungen beeinflussen.",
+                "source_support": "Die Quelle belegt Trumps zugeschriebene Kritik und die Aclu-Gegenbewertung, nicht eine institutionelle Wirkung.",
+                "limitations": "Keine Daten zur Reichweite, Wiederholung, öffentlichen Rezeption oder Befolgung gerichtlicher Entscheidungen.",
+                "first_order": "Das Gericht wird öffentlich als politisch und als Institution dargestellt, die das Land im Stich gelassen habe.",
+                "second_order": "Mögliche stärkere Lagerbindung bei der Bewertung von Briefwahl und richterlicher Kontrolle.",
+                "third_order": "Mögliche Belastung demokratischer Korrekturfähigkeit, wenn gerichtliche Entscheidungen nicht mehr als gemeinsame Entscheidungsgrundlage anerkannt werden.",
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Die Bandbreite reicht von begrenzter Einzelfallkommunikation bis zu einer verstärkten, wiederholten Delegitimierung; die Quelle klärt die Eintrittsbedingungen nicht."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Evidenz für eine bereits eingetretene Schwächung gerichtlicher Autorität oder demokratischer Korrekturfähigkeit.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt keine Reichweite; Aussagen eines US-Präsidenten können grundsätzlich breite politische Aufmerksamkeit erhalten.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Die berichteten Formulierungen greifen die politische Legitimität des Urteils und des Gerichts scharf an.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine dauerhafte Wirkung ist nicht belegt; die Aussage kann aber durch Wiederholung fortwirken.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Institutionelles Vertrauen kann beschädigt, aber durch nachvollziehbare Entscheidungen und Gegenrede teilweise wiederhergestellt werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Gerichte und Wahlverfahren sind auf öffentliche Anerkennung angewiesen; konkrete Verwundbarkeit ist nicht gemessen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 4,
+                    "rationale": "Der Pfad berührt die Anerkennung gerichtlicher Kontrolle und damit eine zentrale demokratische Korrekturfunktion.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Die Akzeptanz unabhängiger Gerichte und fairer Wahlverfahren ist eine zentrale demokratische Schutzfunktion; der bedingte Pfad könnte sie berühren, ohne eine bereits eingetretene Verletzung zu belegen.",
+                  "reference_frame": "Unabhängigkeit gerichtlicher Kontrolle und Integrität von Wahlverfahren",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              },
+              {
+                "direction": "positive",
+                "label": "Mögliche Stabilisierung demokratischer Standards durch zivilgesellschaftliche Gegenrede",
+                "mechanism": "Die Aclu-Bewertung als Sieg für Wahlrecht, Wahlintegrität und Demokratie kann die Anerkennung institutioneller Verfahren und Gegenkontrolle stützen.",
+                "recipients": [
+                  "Wahlberechtigte",
+                  "zivilgesellschaftliche Organisationen",
+                  "politische Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Die Gegenbewertung müsste sichtbar werden und als glaubwürdige, sachbezogene Einordnung aufgenommen werden.",
+                "reference_space": "Demokratische Debatte in den Vereinigten Staaten",
+                "time_horizon": "Kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Zivilgesellschaftliche Gegenrede kann eine einseitige Delegitimierung begrenzen.",
+                "source_support": "Die Quelle nennt die Aclu-Bewertung, belegt aber keine Wirkung.",
+                "limitations": "Keine Daten zur Reichweite oder zur tatsächlichen Stabilisierung demokratischer Akzeptanz.",
+                "first_order": "Gegenläufige positive Deutung der Gerichtsentscheidung.",
+                "second_order": "Mögliche Stärkung der Anerkennung von Wahlrecht und Wahlintegrität.",
+                "third_order": "Mögliche Begrenzung eines delegitimierenden politischen Narrativs.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Wirkung kann ausbleiben oder begrenzt stabilisierend sein; eine institutionelle Folge ist nicht belegt."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle belegt die Gegenrede, nicht ihre Reichweite oder demokratische Wirkung.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Reichweite der Aclu-Aussage ist unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die positive Bewertung ist klar, aber ihre institutionelle Wirkung nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Keine anhaltende Wirkung oder Wiederholung ist dokumentiert.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine kommunikative Gegenwirkung wäre grundsätzlich reversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besondere institutionelle oder soziale Verwundbarkeit der Empfänger ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad bleibt eine mögliche kommunikative Stützung und erreicht keine nachgewiesene Strukturveränderung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Gegenrede kann eine Schutzfunktion unterstützen, belegt aber keine konkrete Abwendung einer Grenzverletzung.",
+                  "reference_frame": "Wahlrecht, Wahlintegrität und demokratische Kontrolle",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "direction": "negative",
+                "label": "Mögliche Normalisierung politischer Abwertung richterlicher Kontrolle",
+                "mechanism": "Wenn scharfe Angriffe auf Gerichte wiederholt und als normale politische Reaktion behandelt werden, könnte sich der Diskurs über institutionelle Grenzen verschieben.",
+                "recipients": [
+                  "Gerichte",
+                  "Wahlbehörden",
+                  "politische Öffentlichkeit"
+                ],
+                "magnitude": 4,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "side_risk",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Es müsste eine wiederkehrende Anschlusskommunikation mit vergleichbaren Abwertungen entstehen.",
+                "reference_space": "Politischer Diskurs in den Vereinigten Staaten",
+                "time_horizon": "Mittelfristig",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wiederholung kann die Schwelle für institutionell abwertende Sprache senken.",
+                "source_support": "Die Quelle belegt einen berichteten Einzelfall, keine Wiederholung oder Normalisierung.",
+                "limitations": "Kein Diskursdatensatz und keine unabhängige Analyse der Anschlusskommunikation.",
+                "first_order": "Scharfe öffentliche Abwertung des Gerichts.",
+                "second_order": "Mögliche Verschiebung akzeptierter politischer Sprach- und Konfliktmuster.",
+                "third_order": "Mögliche Belastung der demokratischen Korrekturfähigkeit; Eintritt offen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 4,
+                  "rationale": "Ohne Beleg für Wiederholung bleibt der Pfad unsicher; bei Anschlusskommunikation könnte er stärker werden."
+                },
+                "negligibility_rationale": null,
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Evidenz für Wiederholung oder Normalisierung in den gelieferten Quellen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine breitere Verbreitung oder Wiederholung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Wortwahl ist scharf und institutionell relevant.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine dauerhafte Entwicklung wird nicht dokumentiert.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Diskursive Normen können sich verändern, sind aber grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Institutionen können durch wiederholte Abwertung unter Druck geraten; konkrete Auswirkungen sind offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der mögliche Pfad betrifft politische Konfliktnormen und institutionelle Anerkennung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": true,
+                  "rationale": "Die unabhängige gerichtliche Kontrolle ist eine demokratische Schutzgrenze; sie wäre nur bei nachgewiesener wiederholter Delegitimierung konkret betroffen.",
+                  "reference_frame": "demokratische Gewaltenteilung und gerichtliche Unabhängigkeit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 4,
+                  "final": 4
+                }
+              }
+            ],
+            "rationale": "Die zentrale modellierte Wirkung liegt in einem möglichen negativen Demokratiepfad über die Delegitimierung gerichtlicher Kontrolle. Die Aclu-Gegenrede bildet einen schwächeren Gegenpfad; keine dieser Wirkungen ist beobachtet.",
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": true,
+              "rationale": "Die mögliche Belastung gerichtlicher Korrekturfähigkeit ist materiell schwerer als die belegte, aber in ihrer Wirkung unklare Gegenrede. Die Schutzgrenze begrenzt zuerst den negativen Pfad."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 4,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Schwächung der Akzeptanz gerichtlicher Entscheidungen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Schwächung der Akzeptanz gerichtlicher Entscheidungen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "hoch",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "analysis_complete": true,
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T05:25:09.174Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event",
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle trägt die Berichterstattung über Trumps Kritik, die ihm zugeschriebenen Formulierungen und die gegenläufige Aclu-Bewertung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "balanced",
+          "direction": "mixed",
+          "magnitude": 2,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die gezielte Prüfung der gelieferten Quelle findet keinen Messwert zu Vertrauen oder Verhalten. Modelliert wird nur ein bedingter, kommunikationsvermittelter Pfad.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Verunsicherung über die Verlässlichkeit gerichtlicher und wahlbezogener Informationen",
+              "mechanism": "Eine als politisch und schrecklich dargestellte Gerichtsentscheidung kann bei wiederholter Verbreitung die Orientierung und das Vertrauen einzelner Menschen in institutionelle Information schwächen.",
+              "recipients": [
+                "Wahlberechtigte",
+                "Menschen, die sich über Briefwahl und Gerichte informieren"
+              ],
+              "magnitude": 2,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Die Aussagen müssten wiederholt und ohne ausreichende Einordnung verbreitet werden; die Quelle belegt diese Bedingung nicht.",
+              "reference_space": "Öffentliche Debatte in den Vereinigten Staaten",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Menschen nehmen politische Deutungen als Information über die Verlässlichkeit von Gerichten und Wahlverfahren auf.",
+              "source_support": "Die Quelle belegt Trumps Kritik und die Gegenbewertung der Aclu, nicht deren Wirkung auf Menschen.",
+              "limitations": "Keine Reichweiten-, Befragungs- oder Verhaltensdaten; Wirkung kann durch Gegenrede begrenzt werden.",
+              "first_order": "Polarisierte Einordnung einer gerichtlichen Entscheidung.",
+              "second_order": "Mögliche Unsicherheit bei der Bewertung von Briefwahl und gerichtlicher Autorität.",
+              "third_order": "Mögliche ungleiche Informationsgrundlage für politische Teilhabe; Eintritt offen.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die mögliche Reichweite und Dauer sind unbekannt; bei starker Wiederholung wäre eine größere, bei begrenzter Verbreitung eine kleinere Wirkung plausibel."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Evidenz für eine eingetretene Veränderung von Vertrauen oder Verhalten in der gelieferten Quelle.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt keine Reichweite; öffentliche Aussagen können jedoch über Medien Anschlusskommunikation erreichen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die berichteten Formulierungen sind scharf, ihre Wirkung auf Empfänger aber unbelegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Quelle nennt keinen Zeitraum für eine anhaltende Wirkung oder Wiederholung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauensverluste wären grundsätzlich durch weitere Informationen und Erfahrungen korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen mit geringerem Zugang zu unabhängiger Einordnung könnten stärker auf politische Deutungen angewiesen sein; das ist nicht gemessen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft Orientierung und Vertrauen, nicht nachgewiesene materielle Lebenslagen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine materielle Schutzgrenze für Gesundheit, Sicherheit oder existenzielle Versorgung ist nicht belegt.",
+                "reference_frame": "verlässliche politische und rechtliche Information",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "direction": "positive",
+              "label": "Gegenläufige Orientierung durch die Aclu-Bewertung der Entscheidung",
+              "mechanism": "Die Einordnung als Sieg für Wahlrecht, Wahlintegrität und Demokratie kann bei Rezeption eine stabilisierende Gegenperspektive anbieten.",
+              "recipients": [
+                "Wahlberechtigte",
+                "zivilgesellschaftliche Akteure"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "low",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Die Gegenbewertung müsste Menschen erreichen und als glaubwürdige Einordnung aufgenommen werden.",
+              "reference_space": "Öffentliche Debatte in den Vereinigten Staaten",
+              "time_horizon": "Kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Eine gegensätzliche zivilgesellschaftliche Bewertung kann politische Abwertung teilweise ausgleichen.",
+              "source_support": "Die Quelle nennt die Aclu-Bewertung, nicht deren Reichweite oder Wirkung.",
+              "limitations": "Keine unabhängigen Daten zu Rezeption oder Vertrauensänderung.",
+              "first_order": "Verfügbarkeit einer Gegenbewertung.",
+              "second_order": "Mögliche Stabilisierung der Akzeptanz von Wahlrecht und Wahlintegrität.",
+              "third_order": "Mögliche Begrenzung einer einseitigen politischen Deutung.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Wirkung reicht von keiner messbaren Rezeption bis zu begrenzter Gegenorientierung."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Aclu-Aussage ist belegt, ihre Wirkung bleibt eine Wissensgrenze.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Quelle nennt keine Reichweite der Aclu-Aussage.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die positive Bewertung ist klar, aber keine Wirkungsstärke belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine anhaltende Dauer wird nicht genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine mögliche Orientierungswirkung wäre grundsätzlich leicht korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besondere Betroffenheit vulnerabler Gruppen ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt auf der Ebene öffentlicher Einordnung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine konkrete Schutzwirkung für Menschen.",
+                "reference_frame": "verlässliche Information über Wahlrecht",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Polarisierte Informationslage für Menschen mit begrenztem Zugang zu Gegenquellen",
+              "mechanism": "Wiederholte, gegensätzliche Deutungen könnten die sachliche Einordnung des Urteils erschweren.",
+              "recipients": [
+                "Wahlberechtigte",
+                "Menschen mit begrenztem Zugang zu unabhängigen Informationen"
+              ],
+              "magnitude": 1,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "very_low",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Es müsste eine wiederholte und einseitige Verbreitung ohne zusätzliche Kontextualisierung eintreten.",
+              "reference_space": "Öffentliche Informationsumgebung in den Vereinigten Staaten",
+              "time_horizon": "Kurzfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Informationslücken verstärken die Wirkung prominenter Deutungen.",
+              "source_support": "Die Quelle belegt nur die unterschiedlichen Aussagen.",
+              "limitations": "Keine Publikumsdaten oder Vergleichsquellen.",
+              "first_order": "Konkurrierende Deutungen.",
+              "second_order": "Mögliche erschwerte Orientierung.",
+              "third_order": "Keine belastbare Aussage zu langfristiger Teilhabe möglich.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ohne Reichweiten- und Rezeptionsdaten bleibt der Nebenpfad klein und unsicher."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbare Evidenz zur Publikumsrezeption in der gelieferten Quelle.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Publikumsreichweite ist unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die gegensätzlichen Aussagen sind klar, ihre Wirkung nicht.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Eine dauerhafte Wiederholung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Informationswirkungen wären grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besondere Verwundbarkeit ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Nebenpfad betrifft Orientierung, nicht institutionelle Zustände.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete schwere Schutzgrenze ist aus der Quelle ableitbar.",
+                "reference_frame": "Zugang zu verlässlicher Information",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 4,
+                "divisor": 6,
+                "raw": 0.6666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "rationale": "Für Menschen ist ein kleiner bis mittlerer negativer Kommunikationspfad plausibel, aber nicht beobachtet. Die gegenläufige Aclu-Bewertung begrenzt ihn möglicherweise.",
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Der negative Hauptpfad ist materieller modelliert; eine gleich starke positive Gegenwirkung ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Verunsicherung über die Verlässlichkeit gerichtlicher und wahlbezogener Informationen",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Verunsicherung über die Verlässlichkeit gerichtlicher und wahlbezogener Informationen",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "dominance": "none",
+          "direction": "neutral",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "data_status": "modelled",
+          "research_pass": "second_pass",
+          "research_result": "Die gezielte Prüfung findet in der gelieferten Quelle keinen ökologischen Mechanismus, keine Ressourcennutzung und keine Emissions- oder Naturwirkung. Der Pfad ist im betrachteten Raum und Zeitraum vernachlässigbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "neutral",
+              "label": "Keine eigenständige ökologische Zustandsänderung durch die berichtete Kommunikation",
+              "mechanism": "Die Quelle beschreibt politische und zivilgesellschaftliche Aussagen zu einem Gerichts- und Briefwahlstreit, aber keine Handlung mit unmittelbarer Umweltfunktion.",
+              "recipients": [
+                "Natur",
+                "keine konkret benannten ökologischen Empfänger"
+              ],
+              "magnitude": 0,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Es müsste ein nicht belegter Übergang von der Kommunikation zu ökologisch relevanten Entscheidungen eintreten.",
+              "reference_space": "Ökologische Systeme im durch die Quelle gesetzten Kontext",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die berichtete Kommunikation bleibt ohne belegte Folgeentscheidung mit Umweltbezug.",
+              "source_support": "Die Quelle enthält keinen ökologischen Sachverhalt.",
+              "limitations": "Indirekte spätere politische Folgen können mit dem Material nicht geprüft werden.",
+              "first_order": "Keine belegte ökologische Handlung.",
+              "second_order": "Keine belegte Veränderung von Emissionen, Ressourcen oder Naturzuständen.",
+              "third_order": "Keine belastbare ökologische Kaskade ableitbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Für den betrachteten Nachrichtenanlass ist kein tragfähiger ökologischer Wirkpfad belegt."
+              },
+              "negligibility_rationale": "Die Quelle handelt ausschließlich von Gerichts-, Wahl- und Kommunikationsfragen; eine ökologische Zustandsänderung ist im betrachteten Zeitraum praktisch vernachlässigbar.",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Folge oder entsprechende Handlung in der gelieferten Quelle.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Empfängergruppe ist betroffen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Einwirkung wird beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Zustandsänderung ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine verletzliche ökologische Gruppe ist betroffen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Systempfad ist aus der Quelle ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird berührt oder beschrieben.",
+                "reference_frame": "ökologische Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Die Meldung enthält keinen belastbaren Ansatzpunkt für eine planetare Wirkung. Null bedeutet hier vernachlässigbares Potenzial im betrachteten Pfad, nicht fehlende Recherche.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Keine eigenständige ökologische Zustandsänderung durch die berichtete Kommunikation",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Keine eigenständige ökologische Zustandsänderung durch die berichtete Kommunikation",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "dominant_negative",
+          "direction": "negative",
+          "magnitude": 4,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle belegt politische Kritik an einem obersten Gericht und eine gegenläufige zivilgesellschaftliche Bewertung, aber keine eingetretene Veränderung von Vertrauen, Rechtsbefolgung oder Wahlverhalten.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "negative",
+              "label": "Mögliche Schwächung der Akzeptanz gerichtlicher Entscheidungen",
+              "mechanism": "Die öffentliche Darstellung eines Urteils als „hoch politisch“ kann bei Wiederholung die institutionelle Autorität des Gerichts und die Akzeptanz seiner Kontrolle über Wahlfragen untergraben.",
+              "recipients": [
+                "Wahlberechtigte",
+                "Gerichte",
+                "Wahlbehörden",
+                "politische Öffentlichkeit"
+              ],
+              "magnitude": 4,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Die Aussage müsste über den Einzelfall hinaus wiederholt, politisch aufgegriffen und ohne wirksame institutionelle Einordnung aufgenommen werden.",
+              "reference_space": "Demokratische Institutionen und Wahlkommunikation in den Vereinigten Staaten",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wiederholte Delegitimierung kann die Bereitschaft zur Anerkennung gerichtlicher Entscheidungen beeinflussen.",
+              "source_support": "Die Quelle belegt Trumps zugeschriebene Kritik und die Aclu-Gegenbewertung, nicht eine institutionelle Wirkung.",
+              "limitations": "Keine Daten zur Reichweite, Wiederholung, öffentlichen Rezeption oder Befolgung gerichtlicher Entscheidungen.",
+              "first_order": "Das Gericht wird öffentlich als politisch und als Institution dargestellt, die das Land im Stich gelassen habe.",
+              "second_order": "Mögliche stärkere Lagerbindung bei der Bewertung von Briefwahl und richterlicher Kontrolle.",
+              "third_order": "Mögliche Belastung demokratischer Korrekturfähigkeit, wenn gerichtliche Entscheidungen nicht mehr als gemeinsame Entscheidungsgrundlage anerkannt werden.",
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Die Bandbreite reicht von begrenzter Einzelfallkommunikation bis zu einer verstärkten, wiederholten Delegitimierung; die Quelle klärt die Eintrittsbedingungen nicht."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Evidenz für eine bereits eingetretene Schwächung gerichtlicher Autorität oder demokratischer Korrekturfähigkeit.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt keine Reichweite; Aussagen eines US-Präsidenten können grundsätzlich breite politische Aufmerksamkeit erhalten.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die berichteten Formulierungen greifen die politische Legitimität des Urteils und des Gerichts scharf an.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine dauerhafte Wirkung ist nicht belegt; die Aussage kann aber durch Wiederholung fortwirken.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Institutionelles Vertrauen kann beschädigt, aber durch nachvollziehbare Entscheidungen und Gegenrede teilweise wiederhergestellt werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Gerichte und Wahlverfahren sind auf öffentliche Anerkennung angewiesen; konkrete Verwundbarkeit ist nicht gemessen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 4,
+                  "rationale": "Der Pfad berührt die Anerkennung gerichtlicher Kontrolle und damit eine zentrale demokratische Korrekturfunktion.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Die Akzeptanz unabhängiger Gerichte und fairer Wahlverfahren ist eine zentrale demokratische Schutzfunktion; der bedingte Pfad könnte sie berühren, ohne eine bereits eingetretene Verletzung zu belegen.",
+                "reference_frame": "Unabhängigkeit gerichtlicher Kontrolle und Integrität von Wahlverfahren",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 4,
+                "final": 4
+              }
+            },
+            {
+              "direction": "positive",
+              "label": "Mögliche Stabilisierung demokratischer Standards durch zivilgesellschaftliche Gegenrede",
+              "mechanism": "Die Aclu-Bewertung als Sieg für Wahlrecht, Wahlintegrität und Demokratie kann die Anerkennung institutioneller Verfahren und Gegenkontrolle stützen.",
+              "recipients": [
+                "Wahlberechtigte",
+                "zivilgesellschaftliche Organisationen",
+                "politische Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Die Gegenbewertung müsste sichtbar werden und als glaubwürdige, sachbezogene Einordnung aufgenommen werden.",
+              "reference_space": "Demokratische Debatte in den Vereinigten Staaten",
+              "time_horizon": "Kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Zivilgesellschaftliche Gegenrede kann eine einseitige Delegitimierung begrenzen.",
+              "source_support": "Die Quelle nennt die Aclu-Bewertung, belegt aber keine Wirkung.",
+              "limitations": "Keine Daten zur Reichweite oder zur tatsächlichen Stabilisierung demokratischer Akzeptanz.",
+              "first_order": "Gegenläufige positive Deutung der Gerichtsentscheidung.",
+              "second_order": "Mögliche Stärkung der Anerkennung von Wahlrecht und Wahlintegrität.",
+              "third_order": "Mögliche Begrenzung eines delegitimierenden politischen Narrativs.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Wirkung kann ausbleiben oder begrenzt stabilisierend sein; eine institutionelle Folge ist nicht belegt."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle belegt die Gegenrede, nicht ihre Reichweite oder demokratische Wirkung.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Reichweite der Aclu-Aussage ist unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die positive Bewertung ist klar, aber ihre institutionelle Wirkung nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Keine anhaltende Wirkung oder Wiederholung ist dokumentiert.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine kommunikative Gegenwirkung wäre grundsätzlich reversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besondere institutionelle oder soziale Verwundbarkeit der Empfänger ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad bleibt eine mögliche kommunikative Stützung und erreicht keine nachgewiesene Strukturveränderung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Gegenrede kann eine Schutzfunktion unterstützen, belegt aber keine konkrete Abwendung einer Grenzverletzung.",
+                "reference_frame": "Wahlrecht, Wahlintegrität und demokratische Kontrolle",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "direction": "negative",
+              "label": "Mögliche Normalisierung politischer Abwertung richterlicher Kontrolle",
+              "mechanism": "Wenn scharfe Angriffe auf Gerichte wiederholt und als normale politische Reaktion behandelt werden, könnte sich der Diskurs über institutionelle Grenzen verschieben.",
+              "recipients": [
+                "Gerichte",
+                "Wahlbehörden",
+                "politische Öffentlichkeit"
+              ],
+              "magnitude": 4,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "side_risk",
+              "likelihood": "very_low",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Es müsste eine wiederkehrende Anschlusskommunikation mit vergleichbaren Abwertungen entstehen.",
+              "reference_space": "Politischer Diskurs in den Vereinigten Staaten",
+              "time_horizon": "Mittelfristig",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wiederholung kann die Schwelle für institutionell abwertende Sprache senken.",
+              "source_support": "Die Quelle belegt einen berichteten Einzelfall, keine Wiederholung oder Normalisierung.",
+              "limitations": "Kein Diskursdatensatz und keine unabhängige Analyse der Anschlusskommunikation.",
+              "first_order": "Scharfe öffentliche Abwertung des Gerichts.",
+              "second_order": "Mögliche Verschiebung akzeptierter politischer Sprach- und Konfliktmuster.",
+              "third_order": "Mögliche Belastung der demokratischen Korrekturfähigkeit; Eintritt offen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 4,
+                "rationale": "Ohne Beleg für Wiederholung bleibt der Pfad unsicher; bei Anschlusskommunikation könnte er stärker werden."
+              },
+              "negligibility_rationale": null,
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Evidenz für Wiederholung oder Normalisierung in den gelieferten Quellen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine breitere Verbreitung oder Wiederholung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Wortwahl ist scharf und institutionell relevant.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine dauerhafte Entwicklung wird nicht dokumentiert.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Diskursive Normen können sich verändern, sind aber grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Institutionen können durch wiederholte Abwertung unter Druck geraten; konkrete Auswirkungen sind offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der mögliche Pfad betrifft politische Konfliktnormen und institutionelle Anerkennung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": true,
+                "rationale": "Die unabhängige gerichtliche Kontrolle ist eine demokratische Schutzgrenze; sie wäre nur bei nachgewiesener wiederholter Delegitimierung konkret betroffen.",
+                "reference_frame": "demokratische Gewaltenteilung und gerichtliche Unabhängigkeit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 4,
+                "final": 4
+              }
+            }
+          ],
+          "rationale": "Die zentrale modellierte Wirkung liegt in einem möglichen negativen Demokratiepfad über die Delegitimierung gerichtlicher Kontrolle. Die Aclu-Gegenrede bildet einen schwächeren Gegenpfad; keine dieser Wirkungen ist beobachtet.",
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": true,
+            "rationale": "Die mögliche Belastung gerichtlicher Korrekturfähigkeit ist materiell schwerer als die belegte, aber in ihrer Wirkung unklare Gegenrede. Die Schutzgrenze begrenzt zuerst den negativen Pfad."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 4,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Schwächung der Akzeptanz gerichtlicher Entscheidungen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 4,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Schwächung der Akzeptanz gerichtlicher Entscheidungen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "hoch",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T05:22:15.068Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T04:03:28.000Z",
+      "last_updated": "2026-09-16T05:25:09.169Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-bffaff550139672fe7f0",
+      "case_file": null,
+      "source_published_at": "2026-09-16T04:03:28.000Z",
+      "published_at": "2026-09-16T05:25:09.169Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/nach-niederlage-im-briefwahl-streit--trump-kritisiert-oberstes-us-gericht-scharf-38257500.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T04:03:28.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-fb34b1d598b813c7",
       "title_image": {
