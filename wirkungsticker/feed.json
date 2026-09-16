@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-09-16T13:07:10.628Z",
+  "_woek_revision": "20260912-news-freshness:2026-09-16T13:22:24.586Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -18,6 +18,36 @@
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/auch-bahn-betroffen-bombenfund-bei-spergau-sperrkreis-eingerichtet-49e539/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/auch-bahn-betroffen-bombenfund-bei-spergau-sperrkreis-eingerichtet-49e539/",
+      "title": "Laut stern: Bombe bei Spergau erfolgreich entschärft",
+      "summary": "Bei Spergau wurde laut stern ein Sperrkreis für die Entschärfung einer Fliegerbombe eingerichtet. Beschäftigte wurden vorsorglich evakuiert; später meldete der stern eine erfolgreiche Entschärfung und aufgehobene Sperrungen.",
+      "date_published": "2026-09-16T12:19:22.000Z",
+      "date_modified": "2026-09-16T12:19:22.000Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
       "_woek_impact_profile": {
         "human": {
           "magnitude": 2,
