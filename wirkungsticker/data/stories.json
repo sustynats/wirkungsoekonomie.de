@@ -2,8 +2,3106 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T05:37:25.725Z",
+  "updated_at": "2026-09-16T05:52:12.137Z",
   "stories": [
+    {
+      "story_id": "wt-53d0ddcf12c399e4",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-53d0ddcf12c399e4-6432f54370c4d986-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-53d0ddcf12c399e4-627ed34f2703e710-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-53d0ddcf12c399e4-af92d0fb3f7bc8ef-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nachrichten-fur-nrw-diskussion-uber-entlastungen-c399e4",
+      "title": "Laut WDR: Merz will Menschen bei Spritpreisen entlasten",
+      "source_summary": "Der WDR berichtet über eine Ankündigung von Bundeskanzler Friedrich Merz, Menschen angesichts der Spritpreise zu entlasten. Merz wolle dafür Steuern und Abgaben in den Blick nehmen und sehr bald einen Vorschlag vorlegen. Einzelheiten zur Umsetzung seien bislang unklar.\n\nAls weitere Position nennt der Bericht Direktzahlungen für Geringverdiener, die Katherina Reiche vorgeschlagen habe. Eine Übergewinnsteuer lehne Merz ab, während die SPD sie befürworte. Außerdem wird ein Spritpreisdeckel genannt, den der SPD-Fraktionsvorsitzende Armand Zorn im WDR gefordert habe. Die Darstellung beruht auf einer journalistischen Quelle; unabhängige Bestätigungen und ein beschlossener Maßnahmenplan liegen nicht vor.",
+      "summary": "Merz kündigt laut WDR Entlastungen wegen hoher Spritpreise an. Welche Maßnahme kommt, wer sie erhält und wann sie umgesetzt würde, ist offen.",
+      "detail_summary": "Der WDR berichtet über Merz’ Ankündigung, Menschen wegen der Spritpreise zu entlasten. Steuern und Abgaben sollen dafür geprüft werden; ein konkreter Vorschlag und Details zur Umsetzung fehlen noch. Im Raum stehen laut Bericht Direktzahlungen für Geringverdiener, eine Übergewinnsteuer und ein Spritpreisdeckel. Das mögliche Potenzial reicht von kurzfristiger Entlastung bis zu Verteilungs- und Finanzierungsfragen. Unabhängige Bestätigungen und ein Beschluss liegen nicht vor.",
+      "why_relevant": "Die Ankündigung betrifft Preise für Mobilität und damit Haushalte, Unternehmen sowie politische Prioritäten. Ihre Wirkung hängt von Ausgestaltung, Finanzierung und tatsächlicher Umsetzung ab.",
+      "topic": [
+        "Finanzen"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Ankündigung möglicher Entlastungen wegen hoher Spritpreise durch Bundeskanzler Friedrich Merz",
+        "evaluation_target": {
+          "label": "Mögliche Entlastungsmaßnahme bei Spritpreisen",
+          "type": "proposal"
+        },
+        "baseline": "Es gibt noch keinen belegten konkreten Entlastungsvorschlag, keinen beschlossenen Umsetzungsweg und keine beobachtete Wirkung.",
+        "counterfactual": "Ohne einen konkreten Entlastungsvorschlag bliebe die bestehende Preisbelastung bestehen; politische Debatten über Direktzahlungen, eine Übergewinnsteuer und einen Spritpreisdeckel könnten fortgesetzt werden.",
+        "reference_frame": [
+          "soziale Verteilung und finanzielle Belastbarkeit von Haushalten",
+          "Energie- und Klimapolitik",
+          "demokratische Rechenschaft und politische Entscheidungsfindung"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Eine mögliche zielgerichtete Unterstützung könnte Haushalte mit hoher Spritpreisbelastung finanziell entlasten. Reichweite, Höhe, Zugang und Verteilung sind offen; eine breite Preisstützung könnte öffentliche Mittel weniger zielgenau einsetzen.",
+            "planet": "Eine breite Verbilligung fossiler Mobilität könnte den Anreiz zum geringeren Verbrauch schwächen. Eine zielgerichtete Direktzahlung könnte soziale Unterstützung ermöglichen, ohne den allgemeinen Spritpreis zu senken. Verbrauchs- und Emissionsdaten fehlen.",
+            "democracy": "Die unterschiedlichen Vorschläge könnten öffentliche Rechenschaft über Zielgruppen, Finanzierung und Prioritäten fördern. Bleibt die Ankündigung ohne Konkretisierung, könnte die politische Verantwortlichkeit schwerer nachvollziehbar werden; institutionelle Folgen sind nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Die Bundesregierung kündigt einen Vorschlag zur Entlastung bei Spritpreisen an; als mögliche Instrumente werden Direktzahlungen, eine Übergewinnsteuer und ein Spritpreisdeckel genannt.",
+          "second_order": "Je nach Ausgestaltung könnten Haushalte unterschiedlich entlastet, öffentliche Mittel gebunden und ökologische Preissignale verändert werden. Die Details zur Umsetzung bleiben unklar.",
+          "third_order": "Eine dauerhafte Regelung könnte den politischen Umgang mit Energiepreisschocks und Verteilungsfragen prägen. Dafür fehlen ein konkreter Entwurf, Finanzierungsangaben und Wirkungsdaten.",
+          "enablement": [
+            "enables_legislation",
+            "enables_budget_control"
+          ],
+          "counter_evidence": [
+            "Die Quelle belegt keine konkrete Maßnahme, keinen Beschluss, keine Finanzierung und keine eingetretene Wirkung.",
+            "Eine zielgenaue Direktzahlung könnte soziale Nachteile einer breiten Preisstützung begrenzen.",
+            "Die Quelle enthält keine Verbrauchs-, Emissions-, Vertrauens- oder Beteiligungsdaten."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle mit unbestätigter Unabhängigkeit vor. Die gelieferten Angaben zu politischen Positionen werden in einem WDR-Nachrichtenüberblick zusammengeführt; eine unabhängige Bestätigung liegt nicht vor.",
+          "institutional_status": "Belegt ist eine politische Ankündigung und eine mögliche Kabinettsberatung, nicht ein beschlossenes oder in Kraft getretenes Gesetz. Zuständigkeiten, Finanzierung und Umsetzung sind offen."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "unknown",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Messwerte und keine beschlossene Maßnahme. Modellierbar ist nur ein bedingtes Potenzial: Eine zielgerichtete Unterstützung könnte betroffene Haushalte finanziell entlasten; Reichweite, Höhe und Dauer bleiben unbekannt.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Das menschliche Potenzial ist bedingt positiv, weil Direktzahlungen oder eine andere zielgerichtete Maßnahme einen Teil der Mobilitätskosten besonders belasteter Haushalte ausgleichen könnten. Eine breite Entlastung könnte dagegen weniger zielgenau sein; dieser Gegenpfad ist wegen der unbestimmten Ausgestaltung nicht gleich stark belegt.",
+            "primary_paths": [
+              {
+                "label": "Gezielte finanzielle Entlastung könnte die verfügbare Kaufkraft spritpreisbelasteter Haushalte erhöhen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Direktzahlungen oder eine andere zielgerichtete Maßnahme könnten einen Teil der Mobilitätskosten ausgleichen.",
+                "recipients": [
+                  "Haushalte",
+                  "Geringverdiener"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Das Potenzial reicht von begrenzter Unterstützung bis zu einer spürbaren Entlastung einzelner Haushalte; eine breite Wirkung ist nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Eine Maßnahme könnte eine begrenzte oder zielgerichtete Gruppe von Haushalten erreichen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Direktzahlungen könnten laufende Mobilitätskosten teilweise abfedern.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer möglichen Entlastung ist nicht genannt und könnte begrenzt sein.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Finanzielle Unterstützung wäre grundsätzlich befristbar und reversibel.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Geringverdiener werden ausdrücklich als mögliche Zielgruppe genannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Die Maßnahme könnte Haushaltsbudgets berühren, verändert aber zunächst keine Grundstruktur.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete existenzielle Schutzgrenze ist mangels Angaben zu Höhe und Zugang nicht belegbar.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Es müsste ein konkreter, finanzierter und zugänglicher Vorschlag für besonders belastete Haushalte beschlossen und umgesetzt werden.",
+                "reference_space": "Haushalte mit hoher Spritpreisbelastung im politischen Zuständigkeitsbereich der Bundesregierung",
+                "time_horizon": "Kurz- bis mittelfristig nach einer möglichen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Unterstützung erreicht die vorgesehene Zielgruppe und wird nicht durch andere Kostensteigerungen aufgezehrt.",
+                "source_support": "Die Quelle nennt Merz’ angekündigte Entlastung und Reiches Vorschlag für Direktzahlungen, belegt aber keine Umsetzung.",
+                "limitations": "Zielgruppe, Höhe, Dauer, Finanzierung und Zugang sind unbekannt.",
+                "first_order": "Betroffene Haushalte könnten einen Teil ihrer Spritkosten ausgleichen.",
+                "second_order": "Mehr verfügbares Einkommen könnte kurzfristig andere notwendige Ausgaben absichern, sofern die Unterstützung ausreichend hoch und zugänglich wäre.",
+                "third_order": "Ein dauerhaftes Modell könnte Erwartungen an staatliche Preisentlastung bei Energiekrisen prägen; diese systemische Folge ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbaren Folgenmessungen oder Umsetzungsdaten in der gelieferten Quelle; die Wissensgrenze betrifft Reichweite, Höhe und Dauer der möglichen Entlastung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Breite Preisentlastung könnte knappe öffentliche Mittel binden und Zielgenauigkeit verfehlen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Eine nicht näher bestimmte Entlastung könnte unabhängig vom Einkommen wirken und dadurch Ressourcen weniger zielgenau verteilen.",
+                "recipients": [
+                  "Haushalte",
+                  "Staat"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Nebenpfad bleibt ohne konkrete Maßnahme spekulativ und wäre bei zielgenauer Ausgestaltung begrenzt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Reichweite einer möglichen Maßnahme ist nicht bekannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Fehlverteilung wäre ohne Ausgestaltung begrenzt beurteilbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer und Wiederholung einer Unterstützung sind offen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Finanzielle Verteilungsentscheidungen wären grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Eine breite Regelung könnte besonders belastete Haushalte weniger gezielt erreichen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Mögliche Haushaltswirkungen reichen über einzelne Empfänger hinaus, sind aber nicht belegt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze kann ohne Maßnahmendetails nicht bestimmt werden.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Es müsste eine breite statt zielgerichtete Entlastung beschlossen werden und die verfügbaren Mittel müssten begrenzt sein.",
+                "reference_space": "Öffentliche Finanzierung und Verteilung der Unterstützung",
+                "time_horizon": "Bei einer möglichen Umsetzung",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Maßnahme hätte begrenzte Mittel und würde nicht nach Bedürftigkeit differenzieren.",
+                "source_support": "Die Quelle nennt mehrere Optionen, legt aber keine konkrete Ausgestaltung oder Finanzierung fest.",
+                "limitations": "Verteilungswirkung und Haushaltsfolgen sind vollständig offen.",
+                "first_order": "Ein Teil der Mittel könnte an Haushalte fließen, die weniger stark belastet sind.",
+                "second_order": "Die verfügbare Finanzierung für andere Aufgaben könnte unter Druck geraten, sofern keine zusätzlichen Mittel bereitgestellt werden.",
+                "third_order": "Wiederholte breite Preisstützung könnte Erwartungen an staatliche Kompensation erhöhen; diese Folge ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Daten zur Finanzierung oder Verteilungswirkung vorhanden; die Wissensgrenze verhindert eine stärkere Einordnung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Gezielte finanzielle Entlastung könnte die verfügbare Kaufkraft spritpreisbelasteter Haushalte erhöhen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Gezielte finanzielle Entlastung könnte die verfügbare Kaufkraft spritpreisbelasteter Haushalte erhöhen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Daten zu Verbrauch, Emissionen oder Verkehrsverlagerung. Modellierbar sind ein bedingtes Risiko bei breiter Preisstützung und ein begrenzender Gegenpfad bei zielgerichteten Direktzahlungen.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Eine breite Spritpreisentlastung könnte den finanziellen Anreiz zum geringeren fossilen Verbrauch schwächen. Eine zielgerichtete Unterstützung könnte soziale Entlastung ermöglichen, ohne den allgemeinen Preis zu senken. Die Quelle entscheidet nicht zwischen diesen Varianten.",
+            "primary_paths": [
+              {
+                "label": "Eine breite Spritpreisentlastung könnte den finanziellen Anreiz zum geringeren Verbrauch schwächen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Wenn der Endpreis für fossile Mobilität sinkt oder teilweise kompensiert wird, könnte der Kostendruck auf den Verbrauch abnehmen.",
+                "recipients": [
+                  "Natur",
+                  "Haushalte",
+                  "Unternehmen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Das Risiko reicht von vernachlässigbar bei zielgerichteten Direktzahlungen bis zu begrenzt spürbar bei einer breiten Preisstützung."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Eine breite Preismaßnahme könnte viele Mobilitätsnutzerinnen und Mobilitätsnutzer erreichen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der mögliche Preiseffekt ist nicht beziffert und könnte begrenzt sein.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer einer Entlastung ist unbekannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Preisliche Anreize könnten durch spätere Änderungen wieder angepasst werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ökologische Betroffenheit wird in der Quelle nicht konkret ausgewiesen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Mobilitäts- und Energieentscheidungen könnten mit breiteren Klimapfaden verbunden sein.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete ökologische Schutzgrenze oder messbare Emissionswirkung ist nicht belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Die angekündigte Entlastung müsste breit wirken und den von Verbraucherinnen und Verbrauchern getragenen Spritpreis tatsächlich senken.",
+                "reference_space": "Fossile Mobilität und damit verbundene Umweltbelastungen",
+                "time_horizon": "Mittel- bis langfristig nach einer möglichen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Andere Preis- und Regulierungsfaktoren bleiben gleich und die Maßnahme beeinflusst tatsächliche Mobilitätsentscheidungen.",
+                "source_support": "Die Quelle belegt die Debatte über Entlastungen bei Spritpreisen, aber keine Preisänderung, Verbrauchsänderung oder Emissionswirkung.",
+                "limitations": "Es fehlen Ausgestaltung, Größenordnung, Verbrauchsdaten und eine Gegenprüfung gegen andere Klimamaßnahmen.",
+                "first_order": "Der finanzielle Druck auf den Verbrauch fossiler Kraftstoffe könnte sinken.",
+                "second_order": "Eine mögliche Verhaltensänderung könnte den Übergang zu sparsameren oder alternativen Mobilitätsformen verlangsamen.",
+                "third_order": "Bei dauerhafter breiter Unterstützung könnte sich eine stärkere politische Bindung an fossile Mobilität entwickeln; dies bleibt eine Hypothese.",
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologischen Wirkungsdaten oder konkrete Maßnahme in der gelieferten Quelle; die Wissensgrenze betrifft Verbrauch, Emissionen und Reichweite.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              },
+              {
+                "label": "Eine zielgerichtete Unterstützung könnte den Bedarf an breiten fossilen Preisstützen begrenzen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Direktzahlungen für besonders betroffene Haushalte könnten soziale Entlastung ermöglichen, ohne den Spritpreis für alle zu senken.",
+                "recipients": [
+                  "Haushalte",
+                  "Natur"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der positive ökologische Pfad ist möglich, aber wegen fehlender Details und Daten nur begrenzt bewertbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Direktzahlungen wären wahrscheinlich auf eine bestimmte Zielgruppe begrenzt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Wirkung auf fossile Nachfrage wäre voraussichtlich indirekt und nicht beziffert.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer der möglichen Unterstützung ist unbekannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Die Ausgestaltung könnte politisch angepasst oder beendet werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ökologische Verwundbarkeit wird nicht konkret beschrieben.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein einzelnes Unterstützungsmodell würde die Energiestruktur zunächst kaum verändern.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze ist nicht belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Die Maßnahme müsste auf besonders belastete Haushalte begrenzt und nicht als allgemeine Verbilligung ausgestaltet werden.",
+                "reference_space": "Soziale Entlastung bei gleichzeitiger Wahrung von Preissignalen",
+                "time_horizon": "Bei einer möglichen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Zielgenauigkeit ist ausreichend und die Empfänger verwenden die Unterstützung nicht überwiegend für zusätzliche fossile Nachfrage.",
+                "source_support": "Der Bericht nennt Direktzahlungen für Geringverdiener als politischen Vorschlag, belegt aber keine Ausgestaltung.",
+                "limitations": "Es fehlen Daten zu tatsächlichem Verhalten, Höhe und administrativer Zielgenauigkeit.",
+                "first_order": "Besonders belastete Haushalte könnten unterstützt werden, ohne den allgemeinen Spritpreis zu senken.",
+                "second_order": "Der Anreiz zu sparsamerem Verbrauch könnte eher erhalten bleiben als bei einer pauschalen Preisstützung.",
+                "third_order": "Ein zielgenaues Modell könnte soziale und ökologische Ziele institutionell stärker verbinden; eine solche Wirkung ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle erlaubt nur die Unterscheidung zwischen genanntem Direktzahlungsmodell und nicht spezifizierter Preisentlastung; belastbare Umweltfolgen fehlen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Breite Preisentlastung und zielgerichtete Unterstützung sind vergleichbare, aber unkonkret angekündigte Pfade. Die Richtung hängt von der Ausgestaltung ab; eine materielle Schutzgrenze ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Eine breite Spritpreisentlastung könnte den finanziellen Anreiz zum geringeren Verbrauch schwächen",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Eine breite Spritpreisentlastung könnte den finanziellen Anreiz zum geringeren Verbrauch schwächen",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "balanced",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "unknown",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt eine öffentliche politische Kontroverse, aber keinen Beschluss, keine Mehrheitsbildung und keine institutionelle Veränderung. Demokratische Potenziale und Risiken bleiben daher bedingt.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Die Ankündigung und die konkurrierenden Vorschläge könnten öffentliche Rechenschaft über Zielgruppen und Finanzierung fördern. Ohne zeitnahe Konkretisierung könnten Zuständigkeit und politische Verantwortung schwerer nachvollziehbar werden. Beide Pfade sind nicht empirisch entschieden.",
+            "primary_paths": [
+              {
+                "label": "Die Ankündigung könnte politische Rechenschaft über Zielgruppen und Finanzierung fördern",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Mehrere konkurrierende Vorschläge machen die Auswahl und Begründung einer Maßnahme öffentlich überprüfbar.",
+                "recipients": [
+                  "Bürgerinnen",
+                  "Parlament",
+                  "Regierung"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Wirkung reicht von einer begrenzten Debatte bis zu stärkerer Rechenschaft, bleibt aber von Verfahren und Transparenz abhängig."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die Debatte betrifft bundespolitische Entscheidungen und potenziell viele Bürgerinnen und Bürger.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle zeigt Kontroverse, aber noch keine verbindliche Entscheidung.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Debatte könnte bis zu einem Vorschlag andauern, ihre Dauer ist aber offen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische Positionen und Verfahren können grundsätzlich korrigiert werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Von Preisbelastungen betroffene Gruppen könnten politisch stärker berücksichtigt werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Die Debatte berührt Prioritätensetzung, verändert aber noch keine Institution.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt oder belegt.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Die angekündigten Optionen müssten in einem transparenten Entscheidungsprozess beraten und mit Angaben zu Finanzierung und Zielgruppe begründet werden.",
+                "reference_space": "Öffentliche und parlamentarische Entscheidungsfindung in Deutschland",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die politische Debatte bleibt öffentlich und führt zu nachvollziehbaren Entscheidungen.",
+                "source_support": "Der Bericht nennt unterschiedliche Positionen von Merz, Reiche, SPD und Armand Zorn.",
+                "limitations": "Es fehlen Informationen zu parlamentarischer Beratung, Mehrheiten und konkreten Entscheidungsverfahren.",
+                "first_order": "Die unterschiedlichen Vorschläge könnten öffentliche Aufmerksamkeit auf Zielgruppe und Finanzierung lenken.",
+                "second_order": "Regierung und Parlament könnten ihre Prioritäten und Abwägungen stärker begründen müssen.",
+                "third_order": "Ein transparenter Umgang mit Energiepreisbelastungen könnte Vertrauen in politische Problemlösung stützen; ein solcher Effekt ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle zeigt unterschiedliche politische Positionen, aber keine beobachtete institutionelle Reaktion oder demokratische Wirkungsanalyse.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              },
+              {
+                "label": "Eine unkonkrete Entlastungsankündigung könnte Verantwortlichkeit und Verständlichkeit schwächen",
+                "direction": "negative",
+                "type": "counter_path",
+                "mechanism": "Wenn Vorschläge ohne klare Kriterien konkurrieren, könnten politische Verantwortlichkeit und Verständlichkeit der Entscheidung leiden.",
+                "recipients": [
+                  "Bürgerinnen",
+                  "Parlament",
+                  "Regierung"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Der negative Pfad ist bei schneller Konkretisierung gering, könnte bei anhaltender Unklarheit aber spürbarer werden."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Bundespolitische Kommunikation kann viele Bürgerinnen und Bürger erreichen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Unklarheit betrifft eine wichtige Preis- und Verteilungsfrage, ist aber noch nicht institutionell wirksam.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Das Risiko besteht bis zur Konkretisierung, deren Zeitpunkt offen ist.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Unklare Kommunikation kann durch klare Entscheidungen und Begründungen korrigiert werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Besonders betroffene Haushalte könnten von unklaren Kriterien stärker benachteiligt werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Das Risiko betrifft politische Verständlichkeit, nicht unmittelbar institutionelle Grundstrukturen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht belegbar.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Die Ankündigung müsste ohne zeitnahe Konkretisierung oder transparente Begründung fortbestehen.",
+                "reference_space": "Politische Kommunikation und demokratische Rechenschaft",
+                "time_horizon": "Kurzfristig bis zur möglichen Konkretisierung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Unklare Zuständigkeiten und widersprüchliche Optionen bleiben öffentlich bestehen.",
+                "source_support": "Der Bericht bezeichnet die Details zur Umsetzung als unklar und nennt mehrere unterschiedliche Vorschläge.",
+                "limitations": "Es gibt keinen Nachweis eines Vertrauensverlusts, einer Normalisierung oder einer institutionellen Blockade.",
+                "first_order": "Bürgerinnen und Bürger könnten unterschiedliche, nicht abgestimmte Vorschläge wahrnehmen.",
+                "second_order": "Die Zuschreibung politischer Verantwortung könnte erschwert werden, wenn keine Entscheidung folgt.",
+                "third_order": "Wiederholte unkonkrete Ankündigungen könnten die Nachvollziehbarkeit politischer Steuerung schwächen; dies bleibt eine Hypothese.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Daten zu Vertrauen, Beteiligung oder institutionellen Folgen; die Wissensgrenze betrifft Eintritt und Stärke des Kommunikationsrisikos.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": true,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive Rechenschaft und negatives Unklarheitsrisiko betreffen denselben politischen Entscheidungsprozess. Die Richtung hängt von Transparenz und Konkretisierung ab; eine maßgebliche Schutzgrenze ist nicht belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "± gegenläufig",
+              "shortPathLabel": "Die Ankündigung könnte politische Rechenschaft über Zielgruppen und Finanzierung fördern",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Die Ankündigung könnte politische Rechenschaft über Zielgruppen und Finanzierung fördern",
+            "display_direction": "mixed",
+            "label": "± gegenläufig",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± gegenläufig"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T05:56:34.029Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "wdr-nachrichten",
+            "functions": [
+              "event",
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Der WDR berichtet über Merz’ Ankündigung möglicher Entlastungen, Direktzahlungen für Geringverdiener, weitere politische Vorschläge und offene Umsetzungsdetails."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "unknown",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Messwerte und keine beschlossene Maßnahme. Modellierbar ist nur ein bedingtes Potenzial: Eine zielgerichtete Unterstützung könnte betroffene Haushalte finanziell entlasten; Reichweite, Höhe und Dauer bleiben unbekannt.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Das menschliche Potenzial ist bedingt positiv, weil Direktzahlungen oder eine andere zielgerichtete Maßnahme einen Teil der Mobilitätskosten besonders belasteter Haushalte ausgleichen könnten. Eine breite Entlastung könnte dagegen weniger zielgenau sein; dieser Gegenpfad ist wegen der unbestimmten Ausgestaltung nicht gleich stark belegt.",
+          "primary_paths": [
+            {
+              "label": "Gezielte finanzielle Entlastung könnte die verfügbare Kaufkraft spritpreisbelasteter Haushalte erhöhen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Direktzahlungen oder eine andere zielgerichtete Maßnahme könnten einen Teil der Mobilitätskosten ausgleichen.",
+              "recipients": [
+                "Haushalte",
+                "Geringverdiener"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Das Potenzial reicht von begrenzter Unterstützung bis zu einer spürbaren Entlastung einzelner Haushalte; eine breite Wirkung ist nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Eine Maßnahme könnte eine begrenzte oder zielgerichtete Gruppe von Haushalten erreichen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Direktzahlungen könnten laufende Mobilitätskosten teilweise abfedern.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer möglichen Entlastung ist nicht genannt und könnte begrenzt sein.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Finanzielle Unterstützung wäre grundsätzlich befristbar und reversibel.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Geringverdiener werden ausdrücklich als mögliche Zielgruppe genannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Die Maßnahme könnte Haushaltsbudgets berühren, verändert aber zunächst keine Grundstruktur.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete existenzielle Schutzgrenze ist mangels Angaben zu Höhe und Zugang nicht belegbar.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Es müsste ein konkreter, finanzierter und zugänglicher Vorschlag für besonders belastete Haushalte beschlossen und umgesetzt werden.",
+              "reference_space": "Haushalte mit hoher Spritpreisbelastung im politischen Zuständigkeitsbereich der Bundesregierung",
+              "time_horizon": "Kurz- bis mittelfristig nach einer möglichen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Unterstützung erreicht die vorgesehene Zielgruppe und wird nicht durch andere Kostensteigerungen aufgezehrt.",
+              "source_support": "Die Quelle nennt Merz’ angekündigte Entlastung und Reiches Vorschlag für Direktzahlungen, belegt aber keine Umsetzung.",
+              "limitations": "Zielgruppe, Höhe, Dauer, Finanzierung und Zugang sind unbekannt.",
+              "first_order": "Betroffene Haushalte könnten einen Teil ihrer Spritkosten ausgleichen.",
+              "second_order": "Mehr verfügbares Einkommen könnte kurzfristig andere notwendige Ausgaben absichern, sofern die Unterstützung ausreichend hoch und zugänglich wäre.",
+              "third_order": "Ein dauerhaftes Modell könnte Erwartungen an staatliche Preisentlastung bei Energiekrisen prägen; diese systemische Folge ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbaren Folgenmessungen oder Umsetzungsdaten in der gelieferten Quelle; die Wissensgrenze betrifft Reichweite, Höhe und Dauer der möglichen Entlastung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Breite Preisentlastung könnte knappe öffentliche Mittel binden und Zielgenauigkeit verfehlen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Eine nicht näher bestimmte Entlastung könnte unabhängig vom Einkommen wirken und dadurch Ressourcen weniger zielgenau verteilen.",
+              "recipients": [
+                "Haushalte",
+                "Staat"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Nebenpfad bleibt ohne konkrete Maßnahme spekulativ und wäre bei zielgenauer Ausgestaltung begrenzt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Reichweite einer möglichen Maßnahme ist nicht bekannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Fehlverteilung wäre ohne Ausgestaltung begrenzt beurteilbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer und Wiederholung einer Unterstützung sind offen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Finanzielle Verteilungsentscheidungen wären grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Eine breite Regelung könnte besonders belastete Haushalte weniger gezielt erreichen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Mögliche Haushaltswirkungen reichen über einzelne Empfänger hinaus, sind aber nicht belegt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze kann ohne Maßnahmendetails nicht bestimmt werden.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Es müsste eine breite statt zielgerichtete Entlastung beschlossen werden und die verfügbaren Mittel müssten begrenzt sein.",
+              "reference_space": "Öffentliche Finanzierung und Verteilung der Unterstützung",
+              "time_horizon": "Bei einer möglichen Umsetzung",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Maßnahme hätte begrenzte Mittel und würde nicht nach Bedürftigkeit differenzieren.",
+              "source_support": "Die Quelle nennt mehrere Optionen, legt aber keine konkrete Ausgestaltung oder Finanzierung fest.",
+              "limitations": "Verteilungswirkung und Haushaltsfolgen sind vollständig offen.",
+              "first_order": "Ein Teil der Mittel könnte an Haushalte fließen, die weniger stark belastet sind.",
+              "second_order": "Die verfügbare Finanzierung für andere Aufgaben könnte unter Druck geraten, sofern keine zusätzlichen Mittel bereitgestellt werden.",
+              "third_order": "Wiederholte breite Preisstützung könnte Erwartungen an staatliche Kompensation erhöhen; diese Folge ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Daten zur Finanzierung oder Verteilungswirkung vorhanden; die Wissensgrenze verhindert eine stärkere Einordnung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Gezielte finanzielle Entlastung könnte die verfügbare Kaufkraft spritpreisbelasteter Haushalte erhöhen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Gezielte finanzielle Entlastung könnte die verfügbare Kaufkraft spritpreisbelasteter Haushalte erhöhen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Daten zu Verbrauch, Emissionen oder Verkehrsverlagerung. Modellierbar sind ein bedingtes Risiko bei breiter Preisstützung und ein begrenzender Gegenpfad bei zielgerichteten Direktzahlungen.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Eine breite Spritpreisentlastung könnte den finanziellen Anreiz zum geringeren fossilen Verbrauch schwächen. Eine zielgerichtete Unterstützung könnte soziale Entlastung ermöglichen, ohne den allgemeinen Preis zu senken. Die Quelle entscheidet nicht zwischen diesen Varianten.",
+          "primary_paths": [
+            {
+              "label": "Eine breite Spritpreisentlastung könnte den finanziellen Anreiz zum geringeren Verbrauch schwächen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Wenn der Endpreis für fossile Mobilität sinkt oder teilweise kompensiert wird, könnte der Kostendruck auf den Verbrauch abnehmen.",
+              "recipients": [
+                "Natur",
+                "Haushalte",
+                "Unternehmen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Das Risiko reicht von vernachlässigbar bei zielgerichteten Direktzahlungen bis zu begrenzt spürbar bei einer breiten Preisstützung."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Eine breite Preismaßnahme könnte viele Mobilitätsnutzerinnen und Mobilitätsnutzer erreichen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der mögliche Preiseffekt ist nicht beziffert und könnte begrenzt sein.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer einer Entlastung ist unbekannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Preisliche Anreize könnten durch spätere Änderungen wieder angepasst werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ökologische Betroffenheit wird in der Quelle nicht konkret ausgewiesen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Mobilitäts- und Energieentscheidungen könnten mit breiteren Klimapfaden verbunden sein.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete ökologische Schutzgrenze oder messbare Emissionswirkung ist nicht belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Die angekündigte Entlastung müsste breit wirken und den von Verbraucherinnen und Verbrauchern getragenen Spritpreis tatsächlich senken.",
+              "reference_space": "Fossile Mobilität und damit verbundene Umweltbelastungen",
+              "time_horizon": "Mittel- bis langfristig nach einer möglichen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Andere Preis- und Regulierungsfaktoren bleiben gleich und die Maßnahme beeinflusst tatsächliche Mobilitätsentscheidungen.",
+              "source_support": "Die Quelle belegt die Debatte über Entlastungen bei Spritpreisen, aber keine Preisänderung, Verbrauchsänderung oder Emissionswirkung.",
+              "limitations": "Es fehlen Ausgestaltung, Größenordnung, Verbrauchsdaten und eine Gegenprüfung gegen andere Klimamaßnahmen.",
+              "first_order": "Der finanzielle Druck auf den Verbrauch fossiler Kraftstoffe könnte sinken.",
+              "second_order": "Eine mögliche Verhaltensänderung könnte den Übergang zu sparsameren oder alternativen Mobilitätsformen verlangsamen.",
+              "third_order": "Bei dauerhafter breiter Unterstützung könnte sich eine stärkere politische Bindung an fossile Mobilität entwickeln; dies bleibt eine Hypothese.",
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologischen Wirkungsdaten oder konkrete Maßnahme in der gelieferten Quelle; die Wissensgrenze betrifft Verbrauch, Emissionen und Reichweite.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            },
+            {
+              "label": "Eine zielgerichtete Unterstützung könnte den Bedarf an breiten fossilen Preisstützen begrenzen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Direktzahlungen für besonders betroffene Haushalte könnten soziale Entlastung ermöglichen, ohne den Spritpreis für alle zu senken.",
+              "recipients": [
+                "Haushalte",
+                "Natur"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der positive ökologische Pfad ist möglich, aber wegen fehlender Details und Daten nur begrenzt bewertbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Direktzahlungen wären wahrscheinlich auf eine bestimmte Zielgruppe begrenzt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Wirkung auf fossile Nachfrage wäre voraussichtlich indirekt und nicht beziffert.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer der möglichen Unterstützung ist unbekannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Die Ausgestaltung könnte politisch angepasst oder beendet werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ökologische Verwundbarkeit wird nicht konkret beschrieben.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein einzelnes Unterstützungsmodell würde die Energiestruktur zunächst kaum verändern.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze ist nicht belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Die Maßnahme müsste auf besonders belastete Haushalte begrenzt und nicht als allgemeine Verbilligung ausgestaltet werden.",
+              "reference_space": "Soziale Entlastung bei gleichzeitiger Wahrung von Preissignalen",
+              "time_horizon": "Bei einer möglichen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Zielgenauigkeit ist ausreichend und die Empfänger verwenden die Unterstützung nicht überwiegend für zusätzliche fossile Nachfrage.",
+              "source_support": "Der Bericht nennt Direktzahlungen für Geringverdiener als politischen Vorschlag, belegt aber keine Ausgestaltung.",
+              "limitations": "Es fehlen Daten zu tatsächlichem Verhalten, Höhe und administrativer Zielgenauigkeit.",
+              "first_order": "Besonders belastete Haushalte könnten unterstützt werden, ohne den allgemeinen Spritpreis zu senken.",
+              "second_order": "Der Anreiz zu sparsamerem Verbrauch könnte eher erhalten bleiben als bei einer pauschalen Preisstützung.",
+              "third_order": "Ein zielgenaues Modell könnte soziale und ökologische Ziele institutionell stärker verbinden; eine solche Wirkung ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle erlaubt nur die Unterscheidung zwischen genanntem Direktzahlungsmodell und nicht spezifizierter Preisentlastung; belastbare Umweltfolgen fehlen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Breite Preisentlastung und zielgerichtete Unterstützung sind vergleichbare, aber unkonkret angekündigte Pfade. Die Richtung hängt von der Ausgestaltung ab; eine materielle Schutzgrenze ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Eine breite Spritpreisentlastung könnte den finanziellen Anreiz zum geringeren Verbrauch schwächen",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Eine breite Spritpreisentlastung könnte den finanziellen Anreiz zum geringeren Verbrauch schwächen",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "balanced",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "unknown",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt eine öffentliche politische Kontroverse, aber keinen Beschluss, keine Mehrheitsbildung und keine institutionelle Veränderung. Demokratische Potenziale und Risiken bleiben daher bedingt.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Die Ankündigung und die konkurrierenden Vorschläge könnten öffentliche Rechenschaft über Zielgruppen und Finanzierung fördern. Ohne zeitnahe Konkretisierung könnten Zuständigkeit und politische Verantwortung schwerer nachvollziehbar werden. Beide Pfade sind nicht empirisch entschieden.",
+          "primary_paths": [
+            {
+              "label": "Die Ankündigung könnte politische Rechenschaft über Zielgruppen und Finanzierung fördern",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Mehrere konkurrierende Vorschläge machen die Auswahl und Begründung einer Maßnahme öffentlich überprüfbar.",
+              "recipients": [
+                "Bürgerinnen",
+                "Parlament",
+                "Regierung"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Wirkung reicht von einer begrenzten Debatte bis zu stärkerer Rechenschaft, bleibt aber von Verfahren und Transparenz abhängig."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die Debatte betrifft bundespolitische Entscheidungen und potenziell viele Bürgerinnen und Bürger.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle zeigt Kontroverse, aber noch keine verbindliche Entscheidung.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Debatte könnte bis zu einem Vorschlag andauern, ihre Dauer ist aber offen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische Positionen und Verfahren können grundsätzlich korrigiert werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Von Preisbelastungen betroffene Gruppen könnten politisch stärker berücksichtigt werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Die Debatte berührt Prioritätensetzung, verändert aber noch keine Institution.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt oder belegt.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Die angekündigten Optionen müssten in einem transparenten Entscheidungsprozess beraten und mit Angaben zu Finanzierung und Zielgruppe begründet werden.",
+              "reference_space": "Öffentliche und parlamentarische Entscheidungsfindung in Deutschland",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die politische Debatte bleibt öffentlich und führt zu nachvollziehbaren Entscheidungen.",
+              "source_support": "Der Bericht nennt unterschiedliche Positionen von Merz, Reiche, SPD und Armand Zorn.",
+              "limitations": "Es fehlen Informationen zu parlamentarischer Beratung, Mehrheiten und konkreten Entscheidungsverfahren.",
+              "first_order": "Die unterschiedlichen Vorschläge könnten öffentliche Aufmerksamkeit auf Zielgruppe und Finanzierung lenken.",
+              "second_order": "Regierung und Parlament könnten ihre Prioritäten und Abwägungen stärker begründen müssen.",
+              "third_order": "Ein transparenter Umgang mit Energiepreisbelastungen könnte Vertrauen in politische Problemlösung stützen; ein solcher Effekt ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle zeigt unterschiedliche politische Positionen, aber keine beobachtete institutionelle Reaktion oder demokratische Wirkungsanalyse.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            },
+            {
+              "label": "Eine unkonkrete Entlastungsankündigung könnte Verantwortlichkeit und Verständlichkeit schwächen",
+              "direction": "negative",
+              "type": "counter_path",
+              "mechanism": "Wenn Vorschläge ohne klare Kriterien konkurrieren, könnten politische Verantwortlichkeit und Verständlichkeit der Entscheidung leiden.",
+              "recipients": [
+                "Bürgerinnen",
+                "Parlament",
+                "Regierung"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Der negative Pfad ist bei schneller Konkretisierung gering, könnte bei anhaltender Unklarheit aber spürbarer werden."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Bundespolitische Kommunikation kann viele Bürgerinnen und Bürger erreichen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Unklarheit betrifft eine wichtige Preis- und Verteilungsfrage, ist aber noch nicht institutionell wirksam.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Das Risiko besteht bis zur Konkretisierung, deren Zeitpunkt offen ist.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Unklare Kommunikation kann durch klare Entscheidungen und Begründungen korrigiert werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Besonders betroffene Haushalte könnten von unklaren Kriterien stärker benachteiligt werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Das Risiko betrifft politische Verständlichkeit, nicht unmittelbar institutionelle Grundstrukturen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht belegbar.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Die Ankündigung müsste ohne zeitnahe Konkretisierung oder transparente Begründung fortbestehen.",
+              "reference_space": "Politische Kommunikation und demokratische Rechenschaft",
+              "time_horizon": "Kurzfristig bis zur möglichen Konkretisierung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Unklare Zuständigkeiten und widersprüchliche Optionen bleiben öffentlich bestehen.",
+              "source_support": "Der Bericht bezeichnet die Details zur Umsetzung als unklar und nennt mehrere unterschiedliche Vorschläge.",
+              "limitations": "Es gibt keinen Nachweis eines Vertrauensverlusts, einer Normalisierung oder einer institutionellen Blockade.",
+              "first_order": "Bürgerinnen und Bürger könnten unterschiedliche, nicht abgestimmte Vorschläge wahrnehmen.",
+              "second_order": "Die Zuschreibung politischer Verantwortung könnte erschwert werden, wenn keine Entscheidung folgt.",
+              "third_order": "Wiederholte unkonkrete Ankündigungen könnten die Nachvollziehbarkeit politischer Steuerung schwächen; dies bleibt eine Hypothese.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Daten zu Vertrauen, Beteiligung oder institutionellen Folgen; die Wissensgrenze betrifft Eintritt und Stärke des Kommunikationsrisikos.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": true,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive Rechenschaft und negatives Unklarheitsrisiko betreffen denselben politischen Entscheidungsprozess. Die Richtung hängt von Transparenz und Konkretisierung ab; eine maßgebliche Schutzgrenze ist nicht belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "± gegenläufig",
+            "shortPathLabel": "Die Ankündigung könnte politische Rechenschaft über Zielgruppen und Finanzierung fördern",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "± gegenläufig",
+          "shortPathLabel": "Die Ankündigung könnte politische Rechenschaft über Zielgruppen und Finanzierung fördern",
+          "display_direction": "mixed",
+          "label": "± gegenläufig",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± gegenläufig"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T05:52:12.137Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T04:32:07.000Z",
+      "last_updated": "2026-09-16T05:56:34.025Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-ece1fa06f5893f9909da",
+      "case_file": null,
+      "source_published_at": "2026-09-16T04:32:07.000Z",
+      "published_at": "2026-09-16T05:56:34.025Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ein konkreter Vorschlag zur Entlastung soll geprüft werden.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Vorlage und Ausgestaltung eines konkreten Entlastungsvorschlags",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-5eb79d3d540fa7dc",
+          "announced_at": "2026-09-16T04:32:07.000Z",
+          "follow_up_date": "2026-09-23T05:56:34.025Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die möglichen Entlastungen könnten bei einer Kabinettssitzung angesprochen werden.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Belegte Beratung oder öffentliche Entscheidung zu möglichen Entlastungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-415e3e9012b1e585",
+          "announced_at": "2026-09-16T04:32:07.000Z",
+          "follow_up_date": "2026-09-23T05:56:34.025Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/guten-morgen-nrw-spritpreise-merz-haushalt-balkonkraftwerke-ralf-richter-malaria-verstappen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T04:32:07.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-5a8930201362e039",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5a8930201362e039-33b80db7012beb5f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5a8930201362e039-f958827d56cc9037-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-5a8930201362e039-5464e84f9c8ec837-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "rote-linie-saudi-arabien-wirft-huthi-miliz-angriff-auf-heilige-stadt-mekka-vor-62e039",
+      "title": "Nach Angaben der von Riad angeführten Militärkoalition: Drohne nahe Mekka abgewehrt",
+      "source_summary": "Der stern berichtet unter Berufung auf Angaben aus Saudi-Arabien, Mekka sei Ziel eines Angriffs der jemenitischen Huthi-Miliz geworden. Die von Riad angeführte Militärkoalition habe nach eigener Darstellung eine feindliche Drohne abgewehrt, bevor sie in die Stadt eindringen konnte.\n\nSaudi-Arabien bezeichnete den Vorgang als rote Linie. Zugleich wird eine starke Empörung in der muslimischen Welt beschrieben. Die Huthi wiesen die Anschuldigungen als Lüge zurück. Die vorliegende Beleglage beruht auf einer journalistischen Darstellung; ein unabhängiger Originalbeleg oder eine zweite unabhängige Bestätigung liegt nicht vor.",
+      "summary": "Saudi-Arabien beschuldigt die Huthi, eine Drohne auf Mekka gerichtet zu haben. Die Huthi bestreiten das; ein unabhängiger Beleg liegt nicht vor.",
+      "detail_summary": "Der stern berichtet über den Vorwurf Saudi-Arabiens, eine Huthi-Drohne habe Mekka erreichen sollen, und über deren Abwehr durch die von Riad angeführte Militärkoalition. Die Huthi weisen den Vorwurf als Lüge zurück. Der Vorgang könnte die regionale Eskalation und die religiöse Aufladung des Konflikts verstärken. Unklar bleiben der tatsächliche Ort, der Urheber und die technische Einordnung des Vorfalls.",
+      "why_relevant": "Ein Angriffsvorwurf mit Bezug auf Mekka kann einen regionalen Konflikt religiös und politisch weiter aufladen. Der zentrale Sachverhalt ist jedoch umstritten und nur aus einer journalistischen Quelle belegt.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Saudi-Arabien wirft der Huthi-Miliz einen Drohnenangriff auf Mekka vor; die Huthi weisen den Vorwurf als Lüge zurück.",
+        "evaluation_target": {
+          "label": "zugeschriebener Drohnenangriff und mögliche Konfliktfolgen",
+          "type": "event"
+        },
+        "baseline": "Öffentlich umstrittener Angriffsvorwurf ohne unabhängige Bestätigung",
+        "counterfactual": "Ohne unabhängige Bestätigung oder weitere Eskalationshandlungen bliebe der Vorgang voraussichtlich ein umstrittener Einzelvorwurf ohne nachweisbare materielle Zustandsänderung.",
+        "reference_frame": [
+          "Schutz von Menschen und religiösen Orten",
+          "regionale Sicherheit und Deeskalation",
+          "öffentliche Informationsqualität",
+          "Agenda 2030/SDG 16"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein glaubwürdig erscheinender Angriffsvorwurf gegen einen religiös bedeutenden Ort könnte Sicherheitsrisiken, Vergeltungsdruck und mögliche regionale Eskalation erhöhen. Konkrete Schäden oder Folgehandlungen sind nicht belegt.",
+            "planet": "Die Quelle nennt keine Umwelt-, Klima-, Ressourcen- oder Infrastrukturschäden. Ein materieller ökologischer Pfad ist für den vorliegenden Einzelvorwurf vernachlässigbar modellierbar, bleibt bei weiterer militärischer Eskalation aber offen.",
+            "democracy": "Der Vorwurf, die Warnung vor einer roten Linie und das Dementi erzeugen konkurrierende Deutungen. Ohne unabhängige Klärung könnte dies Informationsqualität und politische Korrekturfähigkeit belasten."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Quelle stellt einen saudiarabischen Angriffsvorwurf und eine Abwehrdarstellung dem Dementi der Huthi gegenüber.",
+          "second_order": "Eine glaubwürdige Bestätigung könnte politische oder militärische Reaktionen sowie religiös aufgeladene Konfliktdeutungen verstärken.",
+          "third_order": "Bei wiederholter ungeklärter Zuschreibung könnte sich ein Muster gegenseitiger Gegenpropaganda verfestigen; Umfang und Dauer bleiben offen.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Huthi weisen den Vorwurf als Lüge zurück.",
+            "Die einzige Quelle ist eine journalistische Darstellung ohne unabhängigen Originalbeleg.",
+            "Konkrete Schäden und Folgehandlungen werden nicht belegt."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle vor. Die Unabhängigkeit der zugrunde liegenden Angaben ist nicht verifiziert; eine zweite unabhängige Bestätigung fehlt.",
+          "institutional_status": "Umstrittener militärischer Vorwurf ohne belegte rechtliche oder institutionelle Entscheidung."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt nur einen Vorwurf und ein Dementi. Ein menschlicher Sicherheits- und Eskalationspfad ist bedingt modellierbar; konkrete Schäden und Eintrittswahrscheinlichkeiten sind nicht belegt.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Der mögliche Angriffsvorwurf an einem religiös besonders bedeutenden Ort könnte bei Bestätigung Sicherheits- und Vergeltungsrisiken für Menschen im regionalen Konfliktraum erhöhen. Ein kleiner Gegenpfad durch sichtbare Unsicherheit ist möglich, aber nicht als Wirkung belegt.",
+            "primary_paths": [
+              {
+                "label": "Ein glaubwürdig erscheinender Vorwurf eines Angriffs auf Mekka könnte Sicherheitsrisiken und Vergeltungsdruck für Menschen im Konfliktraum erhöhen.",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die religiöse Symbolik des Ortes könnte politische und militärische Reaktionen auf den Vorwurf verstärken.",
+                "recipients": [
+                  "Menschen im regionalen Konfliktraum",
+                  "Besucherinnen und Besucher religiöser Orte"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Symbolische Bedeutung und mögliche Eskalation sprechen für mittleres Potenzial; die ungeklärte Faktenlage begrenzt die Bandbreite."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Der mögliche Konfliktimpuls könnte Menschen über den unmittelbaren Ort hinaus betreffen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Ein Angriffsvorwurf gegen Mekka hätte potenziell hohe symbolische und politische Intensität.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine mögliche Reaktion könnte anhalten; ihre Dauer ist jedoch nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Politische Reaktionen wären teilweise korrigierbar; mögliche Schäden wären es nicht.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen in einem regionalen Konflikt wären besonders sicherheitsexponiert.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad könnte Sicherheits- und Religionskonflikte miteinander verbinden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Ein schwerer Schutzgrenzverstoß ist nicht belegt; der mögliche Sicherheitsrisikopfad bleibt konditional.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Vorwurf müsste glaubwürdig erscheinen und weitere politische oder militärische Reaktionen auslösen.",
+                "reference_space": "Saudi-Arabien und regionaler Konfliktraum",
+                "time_horizon": "Kurz- bis mittelfristig nach einer möglichen Bestätigung",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die religiöse Symbolik beeinflusst Reaktionen und erhöht den Druck zu Gegenmaßnahmen.",
+                "source_support": "Die Quelle belegt einen Vorwurf, eine Abwehrdarstellung und eine mögliche Konfliktverschärfung, aber keine menschlichen Schäden.",
+                "limitations": "Urheber, Zielrichtung, Ort und Folgen sind ungeklärt; das Dementi steht der Darstellung gegenüber.",
+                "first_order": "Der mögliche Angriffsvorwurf könnte die wahrgenommene Gefährdung eines religiösen Ortes erhöhen.",
+                "second_order": "Das könnte Vergeltungsforderungen und zusätzliche Sicherheitsmaßnahmen auslösen, falls der Vorwurf bestätigt wird.",
+                "third_order": "Eine anhaltende Eskalation könnte Menschen im Konfliktraum länger Sicherheitsrisiken aussetzen; Umfang und Eintritt bleiben offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Bestätigung und keine konkreten Schadensdaten in der gelieferten Quelle; der Pfad bleibt eine bedingte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              },
+              {
+                "label": "Das Dementi der Huthi könnte die Faktenklärung offenhalten und vorschnelle Gegenmaßnahmen begrenzen.",
+                "direction": "open",
+                "type": "counter_path",
+                "mechanism": "Der sichtbare Widerspruch kann weitere Prüfung veranlassen, belegt aber keine Deeskalation.",
+                "recipients": [
+                  "Menschen im regionalen Konfliktraum"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche Schutz ist begrenzt und hängt vollständig von weiterer Prüfung und Aufnahme des Dementis ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Das Dementi betrifft vor allem den bestehenden Informationskonflikt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein Dementi kann Reaktionen dämpfen; seine Wirkung bleibt unklar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer eines möglichen Korrektureffekts ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine kommunikative Korrektur wäre grundsätzlich reversibel.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders Betroffene könnten trotz Dementi gefährdet bleiben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Gegenpfad reicht nicht belegt in Institutionen oder Systeme.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der mögliche Korrekturpfad ist keine belegte maßgebliche Schutzgrenze.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Das Dementi müsste von weiteren Akteuren aufgegriffen und durch unabhängige Prüfung gestützt werden.",
+                "reference_space": "Regionaler Konfliktraum",
+                "time_horizon": "Kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Widerspruch und Prüfung können vorschnelle Reaktionen begrenzen.",
+                "source_support": "Die Quelle belegt das Dementi, aber keine deeskalierende Folge.",
+                "limitations": "Keine Informationen zur Glaubwürdigkeit des Dementis oder zu tatsächlichen Reaktionen.",
+                "first_order": "Der Widerspruch hält die Zuschreibung offen.",
+                "second_order": "Das kann unmittelbare Gewissheit und vorschnelle Vergeltung begrenzen.",
+                "third_order": "Eine belastbare Prüfung könnte langfristig die Korrekturfähigkeit der Konfliktkommunikation stärken.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle belegt nur das Dementi; eine tatsächliche deeskalierende Wirkung ist nicht beobachtet.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Es gibt einen materiell stärkeren negativen Sicherheits- und Eskalationspfad sowie einen kleinen offenen Gegenpfad durch mögliche Prüfung. Die Schutzgrenze ist nicht als eingetreten oder entscheidend belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Ein glaubwürdig erscheinender Vorwurf eines Angriffs auf Mekka könnte Sicherheitsrisiken und Vergeltungsdruck für Menschen im Konfliktraum erhöhen.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein glaubwürdig erscheinender Vorwurf eines Angriffs auf Mekka könnte Sicherheitsrisiken und Vergeltungsdruck für Menschen im Konfliktraum erhöhen.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "neutral",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle enthält keine Umwelt-, Klima-, Ressourcen- oder Infrastrukturdaten. Für den einzelnen umstrittenen Vorwurf ist kein materieller ökologischer Pfad belegt; weitere militärische Entwicklungen bleiben offen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Für den vorliegenden Einzelvorwurf fehlen Angaben zu physischen Schäden, Emissionen, Ressourcenverbrauch oder ökologischen Folgen. Ein vernachlässigbarer Pfad ist deshalb im geprüften Raum und Zeitraum begründet modellierbar.",
+            "primary_paths": [
+              {
+                "label": "Der einzelne umstrittene Drohnenvorwurf weist in der vorliegenden Quellenbasis keinen materiellen ökologischen Zustandsänderungspfad auf.",
+                "direction": "neutral",
+                "type": "main_path",
+                "mechanism": "Es fehlen Angaben zu Einschlag, Schäden, Emissionen, Ressourcenverbrauch oder ökologischen Folgen.",
+                "recipients": [
+                  "Natur und Umwelt im unmittelbaren Ereignisraum"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Für den beschriebenen Einzelvorwurf liegen keine materiellen ökologischen Auswirkungen vor; ohne neue Fakten bleibt der Pfad vernachlässigbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Betroffenheit ist in der Quelle belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine physische Umweltveränderung wird berichtet.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine Dauer einer Umweltwirkung ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Mangels belegter Veränderung besteht keine bewertbare Irreversibilität.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Besondere ökologische Verwundbarkeit wird nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Systemfolge ist aus der Quelle ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine materielle ökologische Schutzgrenze ist im gelieferten Sachverhalt nicht erkennbar.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Ein konkreter physischer Schaden oder eine längere militärische Folgehandlung müsste belegt werden.",
+                "reference_space": "Mekka und unmittelbarer Ereignisraum",
+                "time_horizon": "Kurzfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Ohne belegten physischen Schaden entsteht aus dem vorliegenden Kommunikationsereignis kein materieller ökologischer Pfad.",
+                "source_support": "Die Quelle nennt eine abgewehrte Drohne und eine mögliche Konfliktverschärfung, aber keine Umweltfolgen.",
+                "limitations": "Die Quelle ist für Umweltfolgen nicht vollständig; weitergehende militärische Entwicklungen sind offen.",
+                "first_order": "Keine belegte ökologische Zustandsänderung.",
+                "second_order": "Keine belegte Ressourcensystem- oder Emissionsfolge.",
+                "third_order": "Keine belegte systemische Umweltfolge.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Umwelt- oder Klimadaten in der gelieferten Quelle; ökologische Wirkung bleibt für den vorliegenden Einzelvorwurf vernachlässigbar.",
+                "negligibility_rationale": "Im geprüften Raum und Zeitraum fehlen konkrete physische Umweltveränderungen oder belastbare Hinweise auf solche Folgen.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Der einzelne umstrittene Drohnenvorwurf weist in der vorliegenden Quellenbasis keinen materiellen ökologischen Zustandsänderungspfad auf.",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Der einzelne umstrittene Drohnenvorwurf weist in der vorliegenden Quellenbasis keinen materiellen ökologischen Zustandsänderungspfad auf.",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "mixed",
+            "dominance": "dominant_negative",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt widersprüchliche Zuschreibungen, aber keine messbaren Veränderungen von Vertrauen, Verhalten oder Institutionen. Ein bedingtes Risiko für Informationsqualität und politische Korrekturfähigkeit ist modellierbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Der religiös aufgeladene Sicherheitsvorwurf und das unmittelbare Dementi könnten bei Wiederholung ohne Klärung konkurrierende Deutungen verfestigen. Das Dementi kann zugleich eine Prüfung anstoßen; eine tatsächliche demokratische Wirkung ist nicht beobachtet.",
+            "primary_paths": [
+              {
+                "label": "Wiederholte widersprüchliche Kriegsdarstellungen könnten die öffentliche Einordnung des Konflikts und die politische Korrekturfähigkeit belasten.",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die Zuschreibung eines Angriffs auf Mekka und das unmittelbare Dementi erzeugen konkurrierende Deutungen mit hoher symbolischer Bedeutung.",
+                "recipients": [
+                  "Öffentlichkeit im regionalen Konfliktraum",
+                  "politische Entscheidungsträgerinnen und Entscheidungsträger"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die symbolische Aufladung erlaubt ein mittleres Potenzial; fehlende Daten zu Reichweite und Wiederholung begrenzen die Schätzung."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Der Konflikt und die religiöse Bedeutung könnten Aufmerksamkeit über den Ereignisort hinaus erzeugen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Die Warnung vor einer roten Linie und der Mekka-Bezug erhöhen die kommunikative Intensität.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer einer möglichen Debattenwirkung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Ungeklärte Deutungen können korrigiert werden, aber nicht sofort folgenlos.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen in polarisierten Konfliktöffentlichkeiten könnten besonders anfällig sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad könnte von Medienkommunikation in politische Entscheidungslogiken reichen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine schwere demokratische Schutzgrenzverletzung ist nicht belegt; das Risiko für Informationsqualität bleibt konditional.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Die Darstellung müsste ohne unabhängige Klärung wiederholt und für politische oder militärische Entscheidungen genutzt werden.",
+                "reference_space": "Regionale und internationale Konfliktkommunikation",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Widersprüchliche, religiös aufgeladene Behauptungen können die Bewertung von Informationen und politischen Handlungsoptionen beeinflussen.",
+                "source_support": "Die Quelle dokumentiert den Vorwurf, die Warnung vor einer roten Linie und das Dementi; sie misst keine demokratischen Wirkungen.",
+                "limitations": "Keine Daten zu Reichweite, Wiederholung, Vertrauen, Wahlen oder institutionellen Entscheidungen.",
+                "first_order": "Die Meldung stellt konkurrierende Tatsachenbehauptungen nebeneinander.",
+                "second_order": "Das könnte die öffentliche und politische Bewertung weiterer militärischer Schritte beeinflussen.",
+                "third_order": "Bei wiederholter ungeklärter Zuschreibung könnte sich ein Muster normalisierter Gegenpropaganda verfestigen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Messung von Vertrauen, Reichweite oder Entscheidungen; nur der Kommunikationskonflikt selbst ist belegt.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              },
+              {
+                "label": "Das erkennbare Dementi könnte unabhängige Prüfung und vorsichtigere politische Einordnung begünstigen.",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Der offene Widerspruch macht die Unsicherheit sichtbar und kann Verifikation statt vorschneller Gewissheit fördern.",
+                "recipients": [
+                  "journalistische Öffentlichkeit",
+                  "politische Entscheidungsträgerinnen und Entscheidungsträger"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der mögliche positive Effekt ist klein und vollständig von der weiteren Informationspraxis abhängig."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Korrektureffekt bleibt auf die erreichbare Informationsöffentlichkeit begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Ein Dementi setzt einen Prüfimpuls, ohne Belegkraft zu ersetzen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer des möglichen Prüfungseffekts ist offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Kommunikative Vorsicht kann ohne dauerhafte Strukturveränderung verschwinden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Der Effekt schützt besonders gefährdete Informationsräume nur begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein einzelnes Dementi verändert Institutionen oder Entscheidungsstrukturen nicht nachweisbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der mögliche Prüfungseffekt ist keine belegte ausreichende Schutzgrenze.",
+                  "reference_frame": null,
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Medien und Entscheidungsträger müssten den Widerspruch sichtbar halten und zusätzliche Belege abwarten.",
+                "reference_space": "Regionale und internationale Informationsöffentlichkeit",
+                "time_horizon": "Kurzfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Offene Gegenpositionen können die Bereitschaft zur Prüfung erhöhen.",
+                "source_support": "Die Quelle nennt das Dementi der Huthi; eine tatsächliche Prüf- oder Vertrauenswirkung ist nicht belegt.",
+                "limitations": "Unklar ist, ob der Widerspruch zu mehr Prüfung oder stärkerer Polarisierung führt.",
+                "first_order": "Die Tatsachenlage bleibt sichtbar umstritten.",
+                "second_order": "Das kann vorschnelle Festlegungen begrenzen, wenn weitere Prüfung erfolgt.",
+                "third_order": "Eine verlässlichere Prüfung könnte langfristig die Korrekturfähigkeit stärken.",
+                "research_pass": "second_pass",
+                "research_result": "Das Dementi ist belegt, aber keine daraus folgende Verbesserung der Informationsqualität.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der negative Informations- und Eskalationspfad ist materiell stärker als der mögliche, aber unbelegte Korrektureffekt. Die Schutzgrenze verlässlicher Information ist nicht als eingetreten belegt."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "± überwiegend negativ",
+              "shortPathLabel": "Wiederholte widersprüchliche Kriegsdarstellungen könnten die öffentliche Einordnung des Konflikts und die politische Korrekturfähigkeit belasten.",
+              "direction": "mixed"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± überwiegend negativ",
+            "shortPathLabel": "Wiederholte widersprüchliche Kriegsdarstellungen könnten die öffentliche Einordnung des Konflikts und die politische Korrekturfähigkeit belasten.",
+            "display_direction": "mixed",
+            "label": "± überwiegend negativ",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "± überwiegend negativ"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T05:54:30.306Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Die Quelle berichtet über den Vorwurf Saudi-Arabiens, die Abwehrdarstellung der Militärkoalition und das Dementi der Huthi."
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "mechanism",
+              "counter_evidence"
+            ],
+            "supported_claim": "Die Quelle nennt eine mögliche Verschärfung des regionalen Konflikts und enthält die Zurückweisung des Vorwurfs durch die Huthi."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt nur einen Vorwurf und ein Dementi. Ein menschlicher Sicherheits- und Eskalationspfad ist bedingt modellierbar; konkrete Schäden und Eintrittswahrscheinlichkeiten sind nicht belegt.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Der mögliche Angriffsvorwurf an einem religiös besonders bedeutenden Ort könnte bei Bestätigung Sicherheits- und Vergeltungsrisiken für Menschen im regionalen Konfliktraum erhöhen. Ein kleiner Gegenpfad durch sichtbare Unsicherheit ist möglich, aber nicht als Wirkung belegt.",
+          "primary_paths": [
+            {
+              "label": "Ein glaubwürdig erscheinender Vorwurf eines Angriffs auf Mekka könnte Sicherheitsrisiken und Vergeltungsdruck für Menschen im Konfliktraum erhöhen.",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die religiöse Symbolik des Ortes könnte politische und militärische Reaktionen auf den Vorwurf verstärken.",
+              "recipients": [
+                "Menschen im regionalen Konfliktraum",
+                "Besucherinnen und Besucher religiöser Orte"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Symbolische Bedeutung und mögliche Eskalation sprechen für mittleres Potenzial; die ungeklärte Faktenlage begrenzt die Bandbreite."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Der mögliche Konfliktimpuls könnte Menschen über den unmittelbaren Ort hinaus betreffen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Ein Angriffsvorwurf gegen Mekka hätte potenziell hohe symbolische und politische Intensität.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine mögliche Reaktion könnte anhalten; ihre Dauer ist jedoch nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Politische Reaktionen wären teilweise korrigierbar; mögliche Schäden wären es nicht.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen in einem regionalen Konflikt wären besonders sicherheitsexponiert.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad könnte Sicherheits- und Religionskonflikte miteinander verbinden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Ein schwerer Schutzgrenzverstoß ist nicht belegt; der mögliche Sicherheitsrisikopfad bleibt konditional.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Vorwurf müsste glaubwürdig erscheinen und weitere politische oder militärische Reaktionen auslösen.",
+              "reference_space": "Saudi-Arabien und regionaler Konfliktraum",
+              "time_horizon": "Kurz- bis mittelfristig nach einer möglichen Bestätigung",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die religiöse Symbolik beeinflusst Reaktionen und erhöht den Druck zu Gegenmaßnahmen.",
+              "source_support": "Die Quelle belegt einen Vorwurf, eine Abwehrdarstellung und eine mögliche Konfliktverschärfung, aber keine menschlichen Schäden.",
+              "limitations": "Urheber, Zielrichtung, Ort und Folgen sind ungeklärt; das Dementi steht der Darstellung gegenüber.",
+              "first_order": "Der mögliche Angriffsvorwurf könnte die wahrgenommene Gefährdung eines religiösen Ortes erhöhen.",
+              "second_order": "Das könnte Vergeltungsforderungen und zusätzliche Sicherheitsmaßnahmen auslösen, falls der Vorwurf bestätigt wird.",
+              "third_order": "Eine anhaltende Eskalation könnte Menschen im Konfliktraum länger Sicherheitsrisiken aussetzen; Umfang und Eintritt bleiben offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Bestätigung und keine konkreten Schadensdaten in der gelieferten Quelle; der Pfad bleibt eine bedingte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            },
+            {
+              "label": "Das Dementi der Huthi könnte die Faktenklärung offenhalten und vorschnelle Gegenmaßnahmen begrenzen.",
+              "direction": "open",
+              "type": "counter_path",
+              "mechanism": "Der sichtbare Widerspruch kann weitere Prüfung veranlassen, belegt aber keine Deeskalation.",
+              "recipients": [
+                "Menschen im regionalen Konfliktraum"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche Schutz ist begrenzt und hängt vollständig von weiterer Prüfung und Aufnahme des Dementis ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Das Dementi betrifft vor allem den bestehenden Informationskonflikt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein Dementi kann Reaktionen dämpfen; seine Wirkung bleibt unklar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer eines möglichen Korrektureffekts ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine kommunikative Korrektur wäre grundsätzlich reversibel.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders Betroffene könnten trotz Dementi gefährdet bleiben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Gegenpfad reicht nicht belegt in Institutionen oder Systeme.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der mögliche Korrekturpfad ist keine belegte maßgebliche Schutzgrenze.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Das Dementi müsste von weiteren Akteuren aufgegriffen und durch unabhängige Prüfung gestützt werden.",
+              "reference_space": "Regionaler Konfliktraum",
+              "time_horizon": "Kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Widerspruch und Prüfung können vorschnelle Reaktionen begrenzen.",
+              "source_support": "Die Quelle belegt das Dementi, aber keine deeskalierende Folge.",
+              "limitations": "Keine Informationen zur Glaubwürdigkeit des Dementis oder zu tatsächlichen Reaktionen.",
+              "first_order": "Der Widerspruch hält die Zuschreibung offen.",
+              "second_order": "Das kann unmittelbare Gewissheit und vorschnelle Vergeltung begrenzen.",
+              "third_order": "Eine belastbare Prüfung könnte langfristig die Korrekturfähigkeit der Konfliktkommunikation stärken.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle belegt nur das Dementi; eine tatsächliche deeskalierende Wirkung ist nicht beobachtet.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Es gibt einen materiell stärkeren negativen Sicherheits- und Eskalationspfad sowie einen kleinen offenen Gegenpfad durch mögliche Prüfung. Die Schutzgrenze ist nicht als eingetreten oder entscheidend belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein glaubwürdig erscheinender Vorwurf eines Angriffs auf Mekka könnte Sicherheitsrisiken und Vergeltungsdruck für Menschen im Konfliktraum erhöhen.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Ein glaubwürdig erscheinender Vorwurf eines Angriffs auf Mekka könnte Sicherheitsrisiken und Vergeltungsdruck für Menschen im Konfliktraum erhöhen.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "neutral",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle enthält keine Umwelt-, Klima-, Ressourcen- oder Infrastrukturdaten. Für den einzelnen umstrittenen Vorwurf ist kein materieller ökologischer Pfad belegt; weitere militärische Entwicklungen bleiben offen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Für den vorliegenden Einzelvorwurf fehlen Angaben zu physischen Schäden, Emissionen, Ressourcenverbrauch oder ökologischen Folgen. Ein vernachlässigbarer Pfad ist deshalb im geprüften Raum und Zeitraum begründet modellierbar.",
+          "primary_paths": [
+            {
+              "label": "Der einzelne umstrittene Drohnenvorwurf weist in der vorliegenden Quellenbasis keinen materiellen ökologischen Zustandsänderungspfad auf.",
+              "direction": "neutral",
+              "type": "main_path",
+              "mechanism": "Es fehlen Angaben zu Einschlag, Schäden, Emissionen, Ressourcenverbrauch oder ökologischen Folgen.",
+              "recipients": [
+                "Natur und Umwelt im unmittelbaren Ereignisraum"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Für den beschriebenen Einzelvorwurf liegen keine materiellen ökologischen Auswirkungen vor; ohne neue Fakten bleibt der Pfad vernachlässigbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Betroffenheit ist in der Quelle belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine physische Umweltveränderung wird berichtet.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine Dauer einer Umweltwirkung ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Mangels belegter Veränderung besteht keine bewertbare Irreversibilität.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Besondere ökologische Verwundbarkeit wird nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Systemfolge ist aus der Quelle ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine materielle ökologische Schutzgrenze ist im gelieferten Sachverhalt nicht erkennbar.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Ein konkreter physischer Schaden oder eine längere militärische Folgehandlung müsste belegt werden.",
+              "reference_space": "Mekka und unmittelbarer Ereignisraum",
+              "time_horizon": "Kurzfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Ohne belegten physischen Schaden entsteht aus dem vorliegenden Kommunikationsereignis kein materieller ökologischer Pfad.",
+              "source_support": "Die Quelle nennt eine abgewehrte Drohne und eine mögliche Konfliktverschärfung, aber keine Umweltfolgen.",
+              "limitations": "Die Quelle ist für Umweltfolgen nicht vollständig; weitergehende militärische Entwicklungen sind offen.",
+              "first_order": "Keine belegte ökologische Zustandsänderung.",
+              "second_order": "Keine belegte Ressourcensystem- oder Emissionsfolge.",
+              "third_order": "Keine belegte systemische Umweltfolge.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Umwelt- oder Klimadaten in der gelieferten Quelle; ökologische Wirkung bleibt für den vorliegenden Einzelvorwurf vernachlässigbar.",
+              "negligibility_rationale": "Im geprüften Raum und Zeitraum fehlen konkrete physische Umweltveränderungen oder belastbare Hinweise auf solche Folgen.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Der einzelne umstrittene Drohnenvorwurf weist in der vorliegenden Quellenbasis keinen materiellen ökologischen Zustandsänderungspfad auf.",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Der einzelne umstrittene Drohnenvorwurf weist in der vorliegenden Quellenbasis keinen materiellen ökologischen Zustandsänderungspfad auf.",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "mixed",
+          "dominance": "dominant_negative",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt widersprüchliche Zuschreibungen, aber keine messbaren Veränderungen von Vertrauen, Verhalten oder Institutionen. Ein bedingtes Risiko für Informationsqualität und politische Korrekturfähigkeit ist modellierbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Der religiös aufgeladene Sicherheitsvorwurf und das unmittelbare Dementi könnten bei Wiederholung ohne Klärung konkurrierende Deutungen verfestigen. Das Dementi kann zugleich eine Prüfung anstoßen; eine tatsächliche demokratische Wirkung ist nicht beobachtet.",
+          "primary_paths": [
+            {
+              "label": "Wiederholte widersprüchliche Kriegsdarstellungen könnten die öffentliche Einordnung des Konflikts und die politische Korrekturfähigkeit belasten.",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die Zuschreibung eines Angriffs auf Mekka und das unmittelbare Dementi erzeugen konkurrierende Deutungen mit hoher symbolischer Bedeutung.",
+              "recipients": [
+                "Öffentlichkeit im regionalen Konfliktraum",
+                "politische Entscheidungsträgerinnen und Entscheidungsträger"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die symbolische Aufladung erlaubt ein mittleres Potenzial; fehlende Daten zu Reichweite und Wiederholung begrenzen die Schätzung."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Der Konflikt und die religiöse Bedeutung könnten Aufmerksamkeit über den Ereignisort hinaus erzeugen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Die Warnung vor einer roten Linie und der Mekka-Bezug erhöhen die kommunikative Intensität.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer einer möglichen Debattenwirkung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Ungeklärte Deutungen können korrigiert werden, aber nicht sofort folgenlos.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen in polarisierten Konfliktöffentlichkeiten könnten besonders anfällig sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad könnte von Medienkommunikation in politische Entscheidungslogiken reichen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine schwere demokratische Schutzgrenzverletzung ist nicht belegt; das Risiko für Informationsqualität bleibt konditional.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Die Darstellung müsste ohne unabhängige Klärung wiederholt und für politische oder militärische Entscheidungen genutzt werden.",
+              "reference_space": "Regionale und internationale Konfliktkommunikation",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Widersprüchliche, religiös aufgeladene Behauptungen können die Bewertung von Informationen und politischen Handlungsoptionen beeinflussen.",
+              "source_support": "Die Quelle dokumentiert den Vorwurf, die Warnung vor einer roten Linie und das Dementi; sie misst keine demokratischen Wirkungen.",
+              "limitations": "Keine Daten zu Reichweite, Wiederholung, Vertrauen, Wahlen oder institutionellen Entscheidungen.",
+              "first_order": "Die Meldung stellt konkurrierende Tatsachenbehauptungen nebeneinander.",
+              "second_order": "Das könnte die öffentliche und politische Bewertung weiterer militärischer Schritte beeinflussen.",
+              "third_order": "Bei wiederholter ungeklärter Zuschreibung könnte sich ein Muster normalisierter Gegenpropaganda verfestigen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Messung von Vertrauen, Reichweite oder Entscheidungen; nur der Kommunikationskonflikt selbst ist belegt.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            },
+            {
+              "label": "Das erkennbare Dementi könnte unabhängige Prüfung und vorsichtigere politische Einordnung begünstigen.",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Der offene Widerspruch macht die Unsicherheit sichtbar und kann Verifikation statt vorschneller Gewissheit fördern.",
+              "recipients": [
+                "journalistische Öffentlichkeit",
+                "politische Entscheidungsträgerinnen und Entscheidungsträger"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der mögliche positive Effekt ist klein und vollständig von der weiteren Informationspraxis abhängig."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Korrektureffekt bleibt auf die erreichbare Informationsöffentlichkeit begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Ein Dementi setzt einen Prüfimpuls, ohne Belegkraft zu ersetzen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer des möglichen Prüfungseffekts ist offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Kommunikative Vorsicht kann ohne dauerhafte Strukturveränderung verschwinden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Der Effekt schützt besonders gefährdete Informationsräume nur begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein einzelnes Dementi verändert Institutionen oder Entscheidungsstrukturen nicht nachweisbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der mögliche Prüfungseffekt ist keine belegte ausreichende Schutzgrenze.",
+                "reference_frame": null,
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Medien und Entscheidungsträger müssten den Widerspruch sichtbar halten und zusätzliche Belege abwarten.",
+              "reference_space": "Regionale und internationale Informationsöffentlichkeit",
+              "time_horizon": "Kurzfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Offene Gegenpositionen können die Bereitschaft zur Prüfung erhöhen.",
+              "source_support": "Die Quelle nennt das Dementi der Huthi; eine tatsächliche Prüf- oder Vertrauenswirkung ist nicht belegt.",
+              "limitations": "Unklar ist, ob der Widerspruch zu mehr Prüfung oder stärkerer Polarisierung führt.",
+              "first_order": "Die Tatsachenlage bleibt sichtbar umstritten.",
+              "second_order": "Das kann vorschnelle Festlegungen begrenzen, wenn weitere Prüfung erfolgt.",
+              "third_order": "Eine verlässlichere Prüfung könnte langfristig die Korrekturfähigkeit stärken.",
+              "research_pass": "second_pass",
+              "research_result": "Das Dementi ist belegt, aber keine daraus folgende Verbesserung der Informationsqualität.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der negative Informations- und Eskalationspfad ist materiell stärker als der mögliche, aber unbelegte Korrektureffekt. Die Schutzgrenze verlässlicher Information ist nicht als eingetreten belegt."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "± überwiegend negativ",
+            "shortPathLabel": "Wiederholte widersprüchliche Kriegsdarstellungen könnten die öffentliche Einordnung des Konflikts und die politische Korrekturfähigkeit belasten.",
+            "direction": "mixed"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "± überwiegend negativ",
+          "shortPathLabel": "Wiederholte widersprüchliche Kriegsdarstellungen könnten die öffentliche Einordnung des Konflikts und die politische Korrekturfähigkeit belasten.",
+          "display_direction": "mixed",
+          "label": "± überwiegend negativ",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "± überwiegend negativ"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T05:52:12.137Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T04:51:25.000Z",
+      "last_updated": "2026-09-16T05:54:30.302Z",
+      "version": 1,
+      "news_status": "disputed",
+      "event_id": "event-bb7948a24f5b0be2ae24",
+      "case_file": null,
+      "source_published_at": "2026-09-16T04:51:25.000Z",
+      "published_at": "2026-09-16T05:54:30.302Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/-rote-linie---saudi-arabien-wirft-huthi-miliz-angriff-auf-heilige-stadt-mekka-vor-38259414.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T04:51:25.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-16e301c83c7a56f4",
       "title_image": {
