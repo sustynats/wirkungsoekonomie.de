@@ -1,10 +1,10 @@
 import { EDITORIAL_COMMENT_LIMIT, COMMENT_TOO_LONG_MESSAGE } from './feedback-limits.js';
-import {approvalStates,orderedReviews,requestWithReview,requestPresentation} from './review-state.js';
+import {approvalStates,orderedReviews,requestWithReview,requestPresentation,supplementBrief,supplementable} from './review-state.js';
 const API='https://130.162.217.58.sslip.io/api/admin/news-editorial';
 const $=id=>document.getElementById(id);
 const auth=()=>localStorage.getItem('woek_community_auth')||'';
 const types={news:'Nachricht',opinion_analysis:'Meinung & Analyse',book_review:'Buch & Wirkung',listened:'Nachgehört',watched:'Nachgesehen'};
-let selectedFiles=[],requests=[],sending=false,pendingId=null,poll;
+let selectedFiles=[],requests=[],sending=false,pendingId=null,poll,supplement=null;
 let previewGeneration=0;
 function note(message,error=false){$('status').textContent=message;$('status').classList.toggle('error',error);}
 function element(tag,text,className){const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}
@@ -25,6 +25,20 @@ function login(){
 }
 $('login-button').addEventListener('click',login);
 $('login-retry').addEventListener('click',()=>load().catch(error=>note(error.message,true)));
+function setSupplement(request){
+  supplement=request?{job_id:request.job_id,title:request.title||request.brief?.slice(0,80)||'Auftrag',kind:request.kind}:null;
+  $('supplement-note').hidden=!supplement;
+  $('supplement-title').textContent=supplement?supplement.title:'';
+  for(const input of document.querySelectorAll('#request-form input[name=kind]')){input.disabled=Boolean(supplement);if(supplement&&input.value===supplement.kind)input.checked=true;}
+  $('compose-title').textContent=supplement?'Was soll noch dazu?':'Was soll in den Ticker?';
+  document.querySelector('#compose .eyebrow').textContent=supplement?'Du kannst jederzeit nachlegen.':'Du gibst den Anstoß.';
+  document.querySelector('#compose .intro').hidden=Boolean(supplement);
+  $('brief').placeholder=supplement?'Was soll ergänzt oder anders gewichtet werden? Zusätzliche Links und Screenshots kannst Du darunter anhängen.':'Was ist passiert? Was interessiert Dich daran? Was sollen wir daraus machen?';
+  $('submit').textContent=supplement?'Nachlieferung senden ':'Auftrag senden ';
+  $('submit').append(element('span','↗'));$('submit').lastChild.setAttribute('aria-hidden','true');
+  pendingId=null;
+}
+function startSupplement(request){setSupplement(request);show('compose');$('brief').focus();}
 function show(view){
   previewGeneration++;$('request-preview').hidden=true;$('request-list').hidden=false;
   for(const id of ['compose','requests','receipt','approvals'])$(id).hidden=id!==view;
@@ -35,7 +49,8 @@ $('tab-new').addEventListener('click',()=>show('compose'));
 $('tab-list').addEventListener('click',()=>{show('requests');load().catch(error=>note(error.message,true));});
 $('refresh').addEventListener('click',()=>load().catch(error=>note(error.message,true)));
 $('view-request').addEventListener('click',()=>{show('requests');load().catch(error=>note(error.message,true));});
-$('another').addEventListener('click',()=>show('compose'));
+$('another').addEventListener('click',()=>{setSupplement(null);show('compose');});
+$('supplement-cancel').addEventListener('click',()=>{setSupplement(null);$('request-form').reset();selectedFiles=[];drawFiles();note('');});
 $('copy-trigger').addEventListener('click',async()=>{try{await navigator.clipboard.writeText('Wirkungsticker jetzt verarbeiten.');note('Text kopiert. Du kannst ihn jetzt in Deinen vereinbarten Verarbeitungschat einfügen.');}catch{note('Bitte den angezeigten Text markieren und kopieren.');}});
 function drawFiles(){
   $('previews').replaceChildren();
@@ -55,7 +70,7 @@ $('attachments').addEventListener('change',event=>{
 });
 $('request-form').addEventListener('input',()=>{if(!sending)pendingId=null;});
 function packet(){
-  return {client_id:pendingId||(pendingId=crypto.randomUUID()),kind:new FormData($('request-form')).get('kind'),brief:$('brief').value.trim(),links:$('links').value.trim(),author_notes:$('author-notes').value.trim(),urgent:$('urgent').checked,publish:false,attachments:selectedFiles.map(file=>({name:file.name,type:file.type,size:file.size}))};
+  return {client_id:pendingId||(pendingId=crypto.randomUUID()),kind:supplement?.kind||new FormData($('request-form')).get('kind'),brief:supplement?supplementBrief(supplement.job_id,$('brief').value):$('brief').value.trim(),links:$('links').value.trim(),author_notes:$('author-notes').value.trim(),urgent:$('urgent').checked,publish:false,attachments:selectedFiles.map(file=>({name:file.name,type:file.type,size:file.size}))};
 }
 $('request-form').addEventListener('submit',async event=>{
   event.preventDefault();if(sending||!$('request-form').reportValidity())return;
@@ -70,8 +85,8 @@ $('request-form').addEventListener('submit',async event=>{
     }
     note('Die Übergabe an die Redaktion wird abgeschlossen …');
     const result=await api(`/drafts/${draft.id}/submit`,{method:'POST',body:'{}'});
-    $('receipt-copy').textContent=result.duplicate?'Dieser Auftrag ist bereits eingegangen. Du findest den bestehenden Bearbeitungsstand unter „Meine Aufträge“.':'Dein Auftrag ist gespeichert. Du bekommst das fertig vorbereitete Ergebnis unter „Freigeben“ angezeigt.';
-    $('request-form').reset();selectedFiles=[];pendingId=null;drawFiles();show('receipt');
+    $('receipt-copy').textContent=result.duplicate?'Dieser Auftrag ist bereits eingegangen. Du findest den bestehenden Bearbeitungsstand unter „Meine Aufträge“.':supplement?'Deine Nachlieferung ist gespeichert. Sie wird mit dem bisherigen Auftrag zusammen bearbeitet; die neue vollständige Fassung erscheint unter „Freigeben“.':'Dein Auftrag ist gespeichert. Du bekommst das fertig vorbereitete Ergebnis unter „Freigeben“ angezeigt.';
+    $('request-form').reset();selectedFiles=[];pendingId=null;setSupplement(null);drawFiles();show('receipt');
     await load();
   }catch(error){note(`${error.message} Du kannst erneut auf „Auftrag senden“ tippen. Bereits gespeicherte Teile werden erkannt.`,true);}
   finally{sending=false;$('submit').disabled=false;}
@@ -90,6 +105,7 @@ function drawRequests(){
     if(request.publication_url){try{const url=new URL(request.publication_url);if(url.origin==='https://wirkungsoekonomie.de'){const link=element('a','Beitrag öffnen ↗');link.href=url.href;link.target='_blank';link.rel='noopener noreferrer';card.append(link);}}catch{/* Display only validated public URLs. */}}
     if(request.review_status){const button=element('button','Vorschau und Kommentare','text-button');button.type='button';button.addEventListener('click',()=>{show('approvals');openReview(request.review_job_id||request.job_id).catch(error=>note(error.message,true));});card.append(button);}
     else if(request.preview_available){const button=element('button','Zwischenstand lesen','text-button');button.type='button';button.dataset.previewJob=request.job_id;button.addEventListener('click',()=>openPrivatePreview(request));card.append(button);}
+    if(supplementable(request)){const button=element('button','Informationen nachliefern','text-button');button.type='button';button.addEventListener('click',()=>startSupplement(request));card.append(button);}
     mount.append(card);
   }
 }
