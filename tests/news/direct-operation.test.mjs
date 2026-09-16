@@ -613,3 +613,35 @@ test('die Veröffentlichungstiefe kommt vom Server, weil die Textlängen daran h
   const found = validateAnalysis(analysis, { ...stories[0], claims: [] }, {});
   assert.equal(found.includes('AI_SOURCE_SUMMARY_LENGTH'), false, found.filter((f) => f.includes('SOURCE_SUMMARY')).join(' '));
 });
+test('der Auftrag nennt genau eine Zielspanne je Meldung, damit ein Aufruf reicht', async () => {
+  const { storyBriefing } = await import('../../scripts/news/openai-transport.mjs');
+  const initial = storyBriefing({ existing_story: { published: false } });
+  assert.match(initial, /publication_depth: initial/);
+  assert.match(initial, /90 bis 160 Wörter in genau drei Absätzen/);
+  assert.match(initial, /4 bis 6 Sätze, 350 bis 900 Zeichen/);
+  const deepened = storyBriefing({ existing_story: { published: true } });
+  assert.match(deepened, /publication_depth: deepened/);
+  assert.match(deepened, /120 bis 170 Wörter/);
+  assert.match(deepened, /600 bis 1100 Zeichen/);
+  // Die Zielspannen liegen komfortabel innerhalb der Prüfgrenzen.
+  assert.ok(initial.includes('90 bis 160') && !initial.includes('60 bis 180'), 'kein Zielwert am Rand der Prüfgrenze');
+  // Zahlen: die Regel nennt den Mechanismus, den die Prüfung anwendet.
+  assert.match(initial, /wörtlich in dem Beleg-Ausschnitt stehen, den du für genau diese Aussage zitierst/);
+  // Eine Neubewertung behält ihre Tiefe, ein unbekannter Aktenstand bekommt keine Vorgabe.
+  assert.equal(storyBriefing({ existing_story: { published: true }, impact_reassessment: true }), '');
+  assert.equal(storyBriefing({}), '');
+  assert.equal(storyBriefing(null), '');
+
+  // Beim einzelnen Aufruf steht die Vorgabe in der Anweisung, nicht im Meldungsteil.
+  const bodies = [];
+  await callOpenAiDirect([{ ...stories[0], existing_story: { published: false } }], { apiKey: 'test', model: 'gpt-5.6-luna', repair: false,
+    fetchImpl: async (url, init) => { bodies.push(JSON.parse(init.body)); return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [{ story_id: 'wt-1', publication_recommendation: false, rejection: { code: 'not_material', reason: 'Test' } }] })) }; } });
+  assert.match(bodies[0].instructions, /VORGABEN FÜR DIESE MELDUNG/);
+  assert.match(bodies[0].instructions, /90 bis 160 Wörter/);
+  assert.equal(bodies[0].input.includes('VORGABEN FÜR DIESE MELDUNG'), false, 'der Meldungsteil bleibt unverändert groß');
+  // Bei mehreren Meldungen in einem Aufruf gibt es keine Einzelvorgabe.
+  const many = [];
+  await callOpenAiDirect([{ ...stories[0], existing_story: { published: false } }, { ...stories[0], story_id: 'wt-2', existing_story: { published: true } }], { apiKey: 'test', model: 'gpt-5.6-luna', repair: false,
+    fetchImpl: async (url, init) => { many.push(JSON.parse(init.body)); return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [] })) }; } });
+  assert.equal(many[0].instructions.includes('VORGABEN FÜR DIESE MELDUNG'), false);
+});

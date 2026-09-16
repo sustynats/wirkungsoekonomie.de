@@ -55,6 +55,31 @@ export const SINGLE_CALL_INSTRUCTIONS = [
 // Ausgabebudget: ein vollständiges Paket braucht gemessen 6k–8k Antwort-Token;
 // Reasoning-Token zählen mit. 24k deckt das mit Reserve ab und begrenzt Laufzeit
 // und Kosten einer entgleisten Generierung (Lauf 6: zwei Aufrufe über 240 s).
+// Natalie am 16.09.2026: „Wir müssen die Nachricht schon so weit vorbereitet
+// haben, die wir hingeben, dass auch was Vernünftiges zurückkommt, ohne
+// Nachbesserung, dass wir quasi nur einen Lauf brauchen." Eine bedingte Regel
+// („bei initial 60 bis 180, bei deepened 100 bis 180") ist dafür zu weich: das
+// Modell wählte die Tiefe selbst und verfehlte dann die Länge. Der Server kennt
+// den Aktenstand, also nennt er genau eine Zielspanne, komfortabel innerhalb
+// der Prüfgrenzen, und sagt, wie Zahlen belegt sein müssen.
+export function storyBriefing(story) {
+  if (!story || typeof story !== 'object' || story.impact_reassessment) return '';
+  const published = story.existing_story?.published;
+  if (typeof published !== 'boolean') return '';
+  const deepened = published === true;
+  return ['VORGABEN FÜR DIESE MELDUNG (nicht zu wählen, sie folgen dem Aktenstand):',
+    `publication_depth: ${deepened ? 'deepened' : 'initial'}.`,
+    deepened
+      ? 'source_summary: 120 bis 170 Wörter in genau drei Absätzen (Leerzeile zwischen den Absätzen).'
+      : 'source_summary: 90 bis 160 Wörter in genau drei Absätzen (Leerzeile zwischen den Absätzen).',
+    deepened
+      ? 'detail_summary: 5 bis 7 Sätze, 600 bis 1100 Zeichen.'
+      : 'detail_summary: 4 bis 6 Sätze, 350 bis 900 Zeichen.',
+    'summary: genau zwei Sätze.',
+    'Zahlen in event_claims: Jede Zahl einer Aussage muss wörtlich in dem Beleg-Ausschnitt stehen, den du für genau diese Aussage zitierst. Steht sie dort nicht, formuliere die Aussage ohne Zahl.',
+    'Zähle Wörter, Sätze und Absätze, bevor du antwortest: eine Antwort außerhalb dieser Spannen ist unbrauchbar und die Meldung erscheint nicht.'].join('\n');
+}
+
 export function buildOpenAiRequest(prompt, { model, maxOutputTokens = 24000, reasoningEffort = 'low', instructions = SINGLE_CALL_INSTRUCTIONS, responseFormat = { type: 'json_object' } } = {}) {
   return {
     model, store: false,
@@ -469,8 +494,12 @@ export async function callOpenAiDirect(stories, options = {}) {
   // folgt genau ein Versuch im einfachen JSON-Modus, also das alte Verhalten.
   const wantSchema = options.schema !== false && process.env.WOEK_NEWS_ANALYSIS_SCHEMA !== 'false' && !options.prompt && schemaEligible(stories);
   const prompt = options.prompt || buildAnalysisPrompt(stories, { transport: 'api', ...(wantSchema ? { includeVisuals: false } : {}) });
+  // Ein Aufruf je Meldung ist der Regelfall; dann kann die Anweisung die
+  // Vorgaben dieser einen Meldung nennen, ohne den Meldungsteil zu vergrößern.
+  const briefing = stories.length === 1 ? storyBriefing(stories[0]) : '';
+  const instructions = briefing ? `${SINGLE_CALL_INSTRUCTIONS}\n\n${briefing}` : SINGLE_CALL_INSTRUCTIONS;
   const formats = wantSchema ? [analysisResponseFormat(), { type: 'json_object' }] : [{ type: 'json_object' }];
-  const bodyFor = (format) => JSON.stringify(buildOpenAiRequest(prompt, { model, responseFormat: format,
+  const bodyFor = (format) => JSON.stringify(buildOpenAiRequest(prompt, { model, responseFormat: format, instructions,
     maxOutputTokens: Number(options.maxOutputTokens || process.env.WOEK_NEWS_MAX_OUTPUT_TOKENS || 24000),
     reasoningEffort: options.reasoningEffort || process.env.WOEK_NEWS_REASONING_EFFORT || 'low' }));
   let formatIndex = 0;
