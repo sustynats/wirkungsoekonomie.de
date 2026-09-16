@@ -505,7 +505,11 @@ test('bei Textbefunden liefert die eine Nachlieferung genau die betroffenen Feld
   assert.equal(bodies[1].text.format.name, 'wirkungsticker_nachlieferung_1');
   assert.deepEqual(bodies[1].text.format.schema.required, ['story_id', 'source_summary', 'detail_summary']);
   assert.ok(bodies[1].input.includes('Liefere ausschließlich diese Felder neu: source_summary, detail_summary'));
-  assert.ok(bodies[1].input.includes('zwei bis drei Absätze'), 'die Längenregel steht im Klartext dabei');
+  // Eine Zielspanne im Klartext, nicht die bedingte Regel: die Meldung ist neu,
+  // also gilt „initial", und das weiss der Server.
+  assert.ok(bodies[1].input.includes('90 bis 160 Wörter'), 'die Längenregel steht als eine Spanne dabei');
+  assert.ok(bodies[1].input.includes('4 bis 6 Sätze, 350 bis 900 Zeichen'), 'auch für den Detailtext');
+  assert.ok(!bodies[1].input.includes('bei publication_depth initial'), 'keine bedingte Regel mehr, an der das Modell wählen müsste');
   assert.equal(result.analyses[0].source_summary, 'Ein deutlich längerer Quellenabsatz.\n\nUnd ein zweiter Absatz.');
   assert.equal(result.analyses[0].detail_summary, 'Ausführlicher Text.');
   assert.equal(result.analyses[0].headline, 'H', 'nicht betroffene Felder bleiben unverändert');
@@ -637,12 +641,19 @@ test('der Auftrag nennt genau eine Zielspanne je Meldung, damit ein Aufruf reich
   assert.match(storyBriefing(reassessment), /publication_depth: initial/);
   assert.match(storyBriefing(reassessment), /90 bis 160 Wörter/);
   assert.match(storyBriefing({ ...reassessment, existing_story: { published: true, analysis: { publication_depth: 'deepened' } } }), /120 bis 170 Wörter/);
+  const { requiredPublicationDepth, repairPublicationDepth } = await import('../../scripts/news/openai-transport.mjs');
   // Ohne gespeicherte Tiefe bleibt es bei keiner Vorgabe.
   assert.equal(storyBriefing({ impact_reassessment: true, existing_story: { published: true, analysis: {} } }), '');
-  assert.equal(storyBriefing({}), '');
   assert.equal(storyBriefing(null), '');
+  // Die erste Auswertung einer Meldung ist „initial": auch ohne Akte gilt die
+  // Laengenregel, und sie steht im Auftrag. Fehlte sie, waehlte das Modell
+  // „deepened" und scheiterte an der strengeren Wortzahl - ein zweiter
+  // bezahlter Aufruf fuer eine Regel, die der Server kennt (16.09., 17:50/18:05).
+  assert.equal(requiredPublicationDepth({}), 'initial');
+  assert.equal(requiredPublicationDepth({ sources: [{ source_id: 's1' }] }), 'initial');
+  assert.ok(storyBriefing({}).includes('publication_depth: initial.'), 'die neue Meldung kennt ihre Tiefe');
+  assert.ok(storyBriefing({}).includes('90 bis 160 Wörter'), 'und die Laengenregel dazu');
   // Vorgabe und nachträgliche Korrektur teilen dieselbe Ableitung.
-  const { requiredPublicationDepth, repairPublicationDepth } = await import('../../scripts/news/openai-transport.mjs');
   for (const story of [{ existing_story: { published: false } }, { existing_story: { published: true } }]) {
     const depth = requiredPublicationDepth(story);
     assert.ok(storyBriefing(story).includes(`publication_depth: ${depth}.`));
