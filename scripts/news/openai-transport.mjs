@@ -8,6 +8,7 @@ import { semanticIssues } from './impact-publication.mjs';
 import { modelledPublicationIssues } from './impact-scope.mjs';
 import { secondPassComplete } from './impact-gate.mjs';
 import { impactAssessmentResponseFormat } from './impact-json-schema.mjs';
+import { analysisResponseFormat, schemaEligible } from './analysis-json-schema.mjs';
 import { FACTOR_KEYS } from './impact-magnitude.mjs';
 import { modelRates } from './budget.mjs';
 
@@ -369,10 +370,18 @@ export async function callOpenAiDirect(stories, options = {}) {
   const apiKey = options.apiKey || process.env.OPENAI_API_KEY;
   if (!apiKey) throw Object.assign(new Error('OPENAI_API_KEY_MISSING'), { requestAttempts: 0, providerNotCalled: true, localRefusal: true });
   const model = options.model || newsModel();
-  const prompt = options.prompt || buildAnalysisPrompt(stories, { transport: 'api' });
-  const body = JSON.stringify(buildOpenAiRequest(prompt, { model,
+  // Erzwungenes Antwortschema, wo es möglich ist: dann kann kein Pflichtfeld
+  // fehlen. Bei lokal erkanntem Medienanlass bleibt der Aufruf frei, weil
+  // media_impact dort ein offenes Objekt ist. Lehnt der Anbieter das Schema ab,
+  // folgt genau ein Versuch im einfachen JSON-Modus, also das alte Verhalten.
+  const wantSchema = options.schema !== false && process.env.WOEK_NEWS_ANALYSIS_SCHEMA !== 'false' && !options.prompt && schemaEligible(stories);
+  const prompt = options.prompt || buildAnalysisPrompt(stories, { transport: 'api', ...(wantSchema ? { includeVisuals: false } : {}) });
+  const formats = wantSchema ? [analysisResponseFormat(), { type: 'json_object' }] : [{ type: 'json_object' }];
+  const bodyFor = (format) => JSON.stringify(buildOpenAiRequest(prompt, { model, responseFormat: format,
     maxOutputTokens: Number(options.maxOutputTokens || process.env.WOEK_NEWS_MAX_OUTPUT_TOKENS || 24000),
     reasoningEffort: options.reasoningEffort || process.env.WOEK_NEWS_REASONING_EFFORT || 'low' }));
+  let formatIndex = 0;
+  let body = bodyFor(formats[formatIndex]);
   // A transport failure without any completed model output is not a paid
   // attempt. Two transport tries at most; never a third provider call.
   const transportAttempts = Math.max(1, Math.min(2, Number(options.attempts || 2)));
@@ -388,6 +397,9 @@ export async function callOpenAiDirect(stories, options = {}) {
       payload = await response.json().catch(() => null);
       if (response.ok) break;
       if (response.status === 401 || response.status === 403) throw Object.assign(new Error('AI_PROVIDER_AUTH_FAILED'), { requestAttempts: attempts, providerNotCalled: attempts === 1 });
+      // Ein abgelehntes Schema erzeugt keine Antwort und ist kein bezahlter
+      // Versuch: derselbe Versuch läuft ohne Schemazwang weiter.
+      if (response.status === 400 && formatIndex < formats.length - 1) { formatIndex += 1; body = bodyFor(formats[formatIndex]); attempt -= 1; continue; }
       if (attempt < transportAttempts && retryable(response.status)) { await (options.retryDelayImpl || sleep)(attempt * 15000); continue; }
       throw Object.assign(new Error(`AI_PROVIDER_ERROR:${response.status}`), { requestAttempts: attempts });
     } catch (error) {
@@ -418,8 +430,17 @@ export async function callOpenAiDirect(stories, options = {}) {
     if (payload?.status === 'incomplete') error.incompleteReason = sanitizeFeedText(payload.incomplete_details?.reason || 'unknown', 80);
     throw error;
   }
-  const result = decodeWoekAiResponse({ ok: true, answer, provider: 'OpenAI Responses API', model: reportedModel,
+  // Mit Schema ist die Analyse selbst die Wurzel; der Decoder erwartet analyses.
+  let decodable = answer;
+  if (formats[formatIndex].type === 'json_schema') {
+    try {
+      const parsed = JSON.parse(answer);
+      if (parsed && typeof parsed === 'object' && !Array.isArray(parsed) && !Array.isArray(parsed.analyses)) decodable = JSON.stringify({ analyses: [parsed] });
+    } catch { /* der Decoder meldet die unbrauchbare Antwort */ }
+  }
+  const result = decodeWoekAiResponse({ ok: true, answer: decodable, provider: 'OpenAI Responses API', model: reportedModel,
     mode: TRANSPORT_VERSION, usage, sources: [] }, prompt, attempts);
+  result.analysis_schema = formats[formatIndex].type === 'json_schema';
   const storyFor = (analysis) => stories.find((story) => story?.story_id === analysis?.story_id) || (stories.length === 1 ? stories[0] : null);
   result.analyses = result.analyses.map((analysis) => normalizeAnalysisOutput(analysis, storyFor(analysis)));
   result.repair_calls = 0;

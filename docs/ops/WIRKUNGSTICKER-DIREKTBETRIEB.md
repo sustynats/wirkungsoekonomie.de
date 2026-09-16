@@ -81,6 +81,19 @@ Doppelläufe.
   `protection_boundary.decisive` auf einem nicht negativen Pfad wird zurückgesetzt (Schutzgrenze
   ist nur für negative Pfade eine Untergrenze). Jede Reparatur steht im Analyseobjekt unter
   `transport_repairs`. Ein unvollständiger Hauptpfad bleibt unvollständig und fällt im Gate durch.
+- **Der erste Aufruf ist schemagebunden (seit 16.09., nach der Inventur):** Über 37 Läufe
+  scheiterten 58 von 72 Meldungen im Gate, davon vier von fünf an fehlenden oder falsch
+  getypten Feldern und an Textlängen, nicht an fehlender Substanz. `scripts/news/analysis-json-schema.mjs`
+  erzwingt deshalb die vollständige Antwort: jeder Schlüssel Pflicht, jede Aufzählung festgelegt,
+  keine Zusatzfelder, `impact_assessment` eingebettet (42 KB, 583 Eigenschaften, Verschachtelung 10,
+  innerhalb der Anbietergrenzen). Die Analyse ist die Wurzel der Antwort, weil ein Aufruf genau eine
+  Meldung trägt; der Transport verpackt sie wieder in `analyses`. Die Aufzählungen stammen aus den
+  Prüfmodulen, damit Schema und Gate nicht auseinanderlaufen. `visuals` und `media_impact` bleiben in
+  diesem Aufruf leer (der Prompt verzichtet dann auch auf die Bildregeln); bei lokal erkanntem
+  Medienanlass (`media_trigger.relevant`) läuft der Aufruf weiterhin ohne Schemazwang, weil
+  `media_impact` dort ein offenes Objekt ist. Lehnt der Anbieter das Schema ab (HTTP 400), läuft
+  derselbe Versuch ohne Schema weiter; das ist kein bezahlter Versuch. Abschaltbar mit
+  `WOEK_NEWS_ANALYSIS_SCHEMA=false`.
 - **Eine gezielte Nachlieferung je Meldung (seit 16.09.):** Das Modell liefert in rund der Hälfte
   der Antworten die Lesertexte vollständig und lässt dann `impact_assessment` weg oder halb
   geschrieben (gemessen bei `low` und `medium`). Ein zweiter voller Versuch im nächsten Lauf

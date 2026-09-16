@@ -414,7 +414,8 @@ test('the follow-up asks with the strict schema and falls back to JSON mode when
     const body = JSON.parse(init.body); bodies.push(body);
     return { ok: true, status: 200, json: async () => responsePayload(bodies.length === 1 ? JSON.stringify({ analyses: [texts()] }) : JSON.stringify(assessment)) };
   } });
-  assert.equal(bodies[0].text.format.type, 'json_object', 'the main call stays in JSON mode');
+  assert.equal(bodies[0].text.format.type, 'json_schema', 'der erste Aufruf ist schemagebunden');
+  assert.equal(bodies[0].text.format.name, 'wirkungsticker_analyse_1');
   assert.equal(bodies[1].text.format.type, 'json_schema'); assert.equal(bodies[1].text.format.strict, true);
   assert.equal(schemaRun.analyses[0].impact_assessment.version, '2.1', 'a bare assessment object is accepted');
   assert.ok(schemaRun.analyses[0].transport_repairs[0].includes('mit Schema'));
@@ -425,7 +426,7 @@ test('the follow-up asks with the strict schema and falls back to JSON mode when
     if (body.text.format.type === 'json_schema') return { ok: false, status: 400, json: async () => ({ error: { message: 'Unsupported response format' } }) };
     return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [{ story_id: 'wt-1', impact_assessment: assessment }] })) };
   } });
-  assert.deepEqual(rejected, ['json_object', 'json_schema', 'json_object'], 'exactly one further try in JSON mode');
+  assert.deepEqual(rejected, ['json_schema', 'json_schema', 'json_object'], 'erster Aufruf mit Schema, Nachlieferung mit Schema, danach ein Rückfall');
   assert.equal(fallback.repair_calls, 1, 'the fallback stays one follow-up');
   assert.equal(fallback.analyses[0].impact_assessment.version, '2.1');
   assert.ok(!fallback.analyses[0].transport_repairs[0].includes('mit Schema'));
@@ -434,5 +435,49 @@ test('the follow-up asks with the strict schema and falls back to JSON mode when
     off.push(JSON.parse(init.body).text.format.type);
     return { ok: true, status: 200, json: async () => responsePayload(off.length === 1 ? JSON.stringify({ analyses: [texts()] }) : JSON.stringify(assessment)) };
   } });
-  assert.deepEqual(off, ['json_object', 'json_object'], 'the schema can be switched off');
+  assert.deepEqual(off, ['json_schema', 'json_object'], 'nur die Nachlieferung lässt sich abschalten');
+});
+
+test('der erste Aufruf ist schemagebunden, fällt bei Ablehnung einmal zurück und akzeptiert die Analyse als Wurzel', async () => {
+  const { ANALYSIS_JSON_SCHEMA, schemaEligible, analysisResponseFormat } = await import('../../scripts/news/analysis-json-schema.mjs');
+  // Das Schema deckt jedes Feld, das eine veröffentlichte Analyse trägt.
+  const complete = { story_id: 'wt-1', publication_recommendation: true, rejection: null, headline: 'Ein Titel mit genug Zeichen',
+    news_status: 'developing', publication_depth: 'initial', event_claims: [], followups: [], source_summary: 'S', summary: 'S', detail_summary: 'D',
+    why_relevant: 'W', status: 'angekündigt', analysis_type: 'ex_ante', importance: 'hoch', impact_potential: 'P', impact_risks: [], mechanisms: [],
+    first_order: [], second_order: [], third_order: [], systemic_relevance: 'R', transformation_potential: 'T', resilience: 'R', side_effects: [],
+    uncertainties: ['u'], evidence_level: 'low', attribution: 'A', watch_next: ['w'], reference_frameworks: [],
+    publication_gate: { news_value: 'new_evidence', materiality_factors: ['affected_scope', 'distribution'], exceptional_factor: 'none', evidence_basis: 'attributed_single_source', duplicate_status: 'new_story', rationale: 'R' },
+    visuals: null, media_impact: null, impact_assessment: syntheticPotentialAssessment() };
+  assert.deepEqual(Object.keys(ANALYSIS_JSON_SCHEMA.properties).filter((key) => !(key in complete)), [], 'das Schema verlangt nur Felder, die der Vertrag kennt');
+  assert.deepEqual(Object.keys(complete).filter((key) => !(key in ANALYSIS_JSON_SCHEMA.properties)), [], 'jedes Vertragsfeld steht im Schema');
+  assert.deepEqual(ANALYSIS_JSON_SCHEMA.required, Object.keys(ANALYSIS_JSON_SCHEMA.properties));
+  assert.equal(ANALYSIS_JSON_SCHEMA.additionalProperties, false);
+  assert.equal(JSON.stringify(analysisResponseFormat()).includes('"description"'), false, 'ohne Beschreibungen bleibt das Schema klein');
+  // Ein lokal erkannter Medienanlass braucht das offene media_impact-Objekt.
+  assert.equal(schemaEligible(stories), true);
+  assert.equal(schemaEligible([{ ...stories[0], media_trigger: { relevant: true } }]), false);
+  assert.equal(schemaEligible([]), false);
+  // Die Analyse kommt als Wurzel zurück und wird wieder verpackt.
+  const bare = { ...complete, impact_assessment: syntheticPotentialAssessment() };
+  const bodies = [];
+  const result = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna', fetchImpl: async (url, init) => {
+    bodies.push(JSON.parse(init.body));
+    return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify(bare)) };
+  } });
+  assert.equal(bodies.length, 1, 'eine vollständige Antwort braucht keine Nachlieferung');
+  assert.equal(bodies[0].text.format.type, 'json_schema');
+  assert.ok(!bodies[0].input.includes('VISUALS'), 'ohne Schemazwang für visuals bleibt der Prompt kürzer');
+  assert.equal(result.analyses.length, 1); assert.equal(result.analyses[0].story_id, 'wt-1');
+  assert.equal(result.analysis_schema, true);
+  // Lehnt der Anbieter das Schema ab, läuft derselbe Versuch ohne Schema weiter.
+  const formats = [];
+  const fallback = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna', fetchImpl: async (url, init) => {
+    const body = JSON.parse(init.body); formats.push(body.text.format.type);
+    if (body.text.format.type === 'json_schema') return { ok: false, status: 400, json: async () => ({ error: { message: 'Invalid schema' } }) };
+    return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [bare] })) };
+  } });
+  assert.deepEqual(formats, ['json_schema', 'json_object'], 'genau ein Rückfall, kein dritter Aufruf');
+  assert.equal(fallback.request_attempts, 1, 'die Ablehnung zählt nicht als bezahlter Versuch');
+  assert.equal(fallback.analysis_schema, false);
+  assert.equal(fallback.analyses[0].story_id, 'wt-1');
 });
