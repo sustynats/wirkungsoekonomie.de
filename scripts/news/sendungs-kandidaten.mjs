@@ -81,7 +81,7 @@ export async function fetchTranscript(transcript, fetchImpl = fetch, timeoutMs =
     if (transcript.type === 'application/json') { try { const parsed = JSON.parse(text); const rows = Array.isArray(parsed) ? parsed : parsed.segments || parsed.transcript || []; text = rows.map((r) => `${r.startTime ?? r.start ?? ''} ${r.speaker ? r.speaker + ': ' : ''}${r.body ?? r.text ?? ''}`.trim()).join('\n'); } catch { return null; } }
     text = text.replace(/^\uFEFF/, '').trim();
     if (text.length < 200) return null;
-    return { url: transcript.url, type: transcript.type, chars: text.length, truncated: text.length > TRANSCRIPT_MAX_CHARS, text: text.slice(0, TRANSCRIPT_MAX_CHARS) };
+    return { url: transcript.url, type: transcript.type, origin: 'provider_transcript', chars: text.length, truncated: text.length > TRANSCRIPT_MAX_CHARS, text: text.slice(0, TRANSCRIPT_MAX_CHARS) };
   } catch { return null; } finally { clearTimeout(timer); }
 }
 // Episodes Natalie already requested or published must not come back as proposals.
@@ -97,7 +97,7 @@ const germanDuration = (s) => s ? `${Math.round(s / 60)} Minuten` : '';
 
 // Mirrors the private intake record so the editorial desk treats the proposal
 // exactly like a submitted request (same contract, same approval path).
-export function buildEpisodeRequest(episode, show, { owner, now, transcript = null }) {
+export function buildEpisodeRequest(episode, show, { owner, now, transcript = null, retry = false }) {
   const kind = show.kind === 'listened' ? 'listened' : 'watched', label = LABEL[kind];
   const links = [episode.page, episode.media, transcript?.url].filter((u) => /^https:\/\//.test(u || '')).slice(0, 4);
   const brief = [`${label}: ${show.show_name} – „${episode.title}“ vom ${germanDate(episode.published_at)}.`,
@@ -107,10 +107,11 @@ export function buildEpisodeRequest(episode, show, { owner, now, transcript = nu
       accessibility_subtitles: `Die amtlichen Untertitel der Sendung (Barrierefreiheit des Senders, ${transcript.segments || 0} Abschnitte mit Zeitmarken${transcript.truncated ? ', gekürzt' : ''}) liegen dem Auftrag unter origin.transcript bei. Sie sind die verbindliche Wortlautgrundlage; Sprecherkürzel wie „FB:“ kennzeichnen die Person. Live-Untertitel können kürzen, deshalb Zitate nur so weit wie belegt.`,
       openai_whisper: `Eine eigene maschinelle Abschrift der Sendung (automatische Spracherkennung, ${transcript.segments || 0} Abschnitte mit Zeitmarken${transcript.truncated ? ', gekürzt' : ''}) liegt dem Auftrag unter origin.transcript bei. Sie ist keine amtliche Mitschrift: Hörfehler bei Namen und Zahlen einkalkulieren und nur belegbare Aussagen zuschreiben.`,
     }[transcript.origin] || `Das offizielle Transkript des Anbieters (${transcript.type}${transcript.truncated ? ', gekürzt' : ''}) liegt dem Auftrag unter origin.transcript bei.`)} Zeitmarken daraus verwenden.` : 'Ein Transkript liegt nicht bei; Sendungsseite, Begleittext und Presseberichte zur Folge sind die Grundlage.',
+    retry ? 'Erneuter Auftrag: Der erste Versuch lief ohne Wortlaut in eine Rückfrage; jetzt liegt er bei.' : null,
     `Auftrag: ${label}-Beitrag nach Redaktionsvertrag. Kontext, Originalargument fair und mit Zeitmarken, Quellenprüfung, Wirkungspotenzial für Mensch, Planet und Demokratie, zuletzt „Meine Einordnung“ nur als Vorschlag zur Bestätigung. Reicht die Grundlage nicht, HOLD mit konkretem Bedarf. Vorschlag des Redaktionsworkers aus dem Sendungsfeed (${show.provider}).`]
     .filter(Boolean).join('\n').slice(0, 6000);
   const content = { kind, brief, links, author_notes: '', urgent: false, publication_intent: 'final_approval_required', attachments: [] };
-  const fingerprint = hash({ origin: `${show.id}:${episode.guid}`, kind, EPISODE_VERSION });
+  const fingerprint = hash({ origin: `${show.id}:${episode.guid}`, kind, EPISODE_VERSION, ...(retry ? { retry_with_transcript: transcript?.origin || 'none' } : {}) });
   const stamp = new Date(now).toISOString().replace(/[-:]/g, '').slice(0, 15) + 'Z';
   const jobId = `wt_${stamp}_${fingerprint.slice(0, 24)}`;
   if (!JOB_ID.test(jobId)) throw new Error('EPISODE_JOB_ID_INVALID');
@@ -221,9 +222,17 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
       try {
         const episodes = selectNewEpisodes(await showEpisodes(show, fetchImpl), now, { maxAgeDays, limit: 3 });
         for (const episode of episodes) {
-          if (await store.observation(`github-episode:${show.id}:${hash(episode.guid).slice(0, 32)}`)) continue;
-          if (seen(episode.page) || seen(episode.media)) continue;
-          fresh.push({ episode, show });
+          const previous = await store.observation(`github-episode:${show.id}:${hash(episode.guid).slice(0, 32)}`);
+          // Eine Folge, die ohne Wortlaut eingereiht wurde, darf genau einmal
+          // erneut eingereiht werden, sobald ein Wortlaut vorliegt: der erste
+          // Auftrag lief vertragsgemäß in eine Rückfrage und ist verbraucht
+          // (16.09.: Lanz vom 15.09. vor Erscheinen der Untertitel).
+          const retryable = previous && previous.transcript_origin === null && !previous.retried_with_transcript;
+          if (previous && !retryable) continue;
+          // Die URL-Prüfung schützt vor Dubletten zu Natalies eigenen Aufträgen;
+          // beim eigenen Wiederholungsversuch ist die Herkunft bekannt.
+          if (!previous && (seen(episode.page) || seen(episode.media))) continue;
+          fresh.push({ episode, show, retry: Boolean(previous) });
         }
       } catch (error) { feedErrors.push({ show_id: show.id, error: String(error.message || error).slice(0, 80) }); }
     }
@@ -231,7 +240,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     const proposed = [];
     const transcriptDay = (await store.observation(`github-transcript-day:${day}`)) || { day, transcribed: 0, cost_usd: 0 };
     const transcriptErrors = [], waiting = [];
-    for (const { episode, show } of fresh.slice(0, Math.max(0, Math.min(limit, maxPerDay - counter.proposed)))) {
+    for (const { episode, show, retry } of fresh.slice(0, Math.max(0, Math.min(limit, maxPerDay - counter.proposed)))) {
       // Reihenfolge des Wortlauts: offizielles Podcast-Transkript, dann die
       // amtlichen Untertitel für Hörgeschädigte, zuletzt eigene Spracherkennung.
       let transcript = await fetchTranscript(pickTranscript(episode.transcripts), fetchImpl);
@@ -240,7 +249,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
       // Wartefenster läuft, bleibt die Folge liegen statt ohne Wortlaut in eine
       // Rückfrage zu laufen (16.09.: Lanz vom 15.09. ohne Untertitel).
       const ageHours = (Date.parse(now) - Date.parse(episode.published_at)) / 3600000;
-      if (!transcript && ageHours < subtitleWaitHours) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)) }); continue; }
+      if (!transcript && (retry || ageHours < subtitleWaitHours)) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)), retry: Boolean(retry) }); continue; }
       if (!transcript && transcribe && transcriptDay.transcribed < maxTranscriptsPerDay) {
         try {
           const machine = await transcribeImpl(episode, { apiKey: env.OPENAI_API_KEY, fetchImpl });
@@ -252,14 +261,15 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
           }
         } catch (error) { transcriptErrors.push({ show_id: show.id, error: String(error?.message || error).slice(0, 80) }); }
       }
-      const { job, fingerprint } = buildEpisodeRequest(episode, show, { owner, now, transcript });
+      const { job, fingerprint } = buildEpisodeRequest(episode, show, { owner, now, transcript, retry });
       const key = `github-episode:${show.id}:${hash(episode.guid).slice(0, 32)}`;
       if (await store.observation(`intake-fingerprint:${fingerprint}`)) { await store.observe(key, { job_id: null, fingerprint, at: now, version: EPISODE_VERSION, duplicate: true }); continue; }
-      await store.observe(key, { job_id: job.input.job_id, fingerprint, at: now, version: EPISODE_VERSION, title: episode.title });
+      await store.observe(key, { job_id: job.input.job_id, fingerprint, at: now, version: EPISODE_VERSION, title: episode.title,
+        transcript_origin: transcript?.origin || null, ...(retry ? { retried_with_transcript: true } : {}) });
       await store.put(job);
       await store.observe(`intake-fingerprint:${fingerprint}`, { job_id: job.input.job_id });
       await transport.writeAtomic(bridgePath('00_INBOX', `${job.input.job_id}.input.json`), job.input);
-      proposed.push({ job_id: job.input.job_id, show_id: show.id, kind: job.intake.kind, title: episode.title, published_at: episode.published_at, transcript_chars: transcript?.chars || 0, transcript_origin: transcript?.origin || (transcript ? 'provider' : null), transcript_cost_usd: transcript?.cost_usd || 0 });
+      proposed.push({ job_id: job.input.job_id, show_id: show.id, kind: job.intake.kind, title: episode.title, published_at: episode.published_at, transcript_chars: transcript?.chars || 0, transcript_origin: transcript?.origin || null, transcript_cost_usd: transcript?.cost_usd || 0 });
       counter.proposed += 1; await store.observe(`github-episode-day:${day}`, counter);
     }
     return { status: 'ok', day, checked_shows: (shows || loadShows(root)).length, fresh_episodes: fresh.length, feed_errors: feedErrors, transcript_errors: transcriptErrors, waiting_for_subtitles: waiting, transcribed_today: transcriptDay.transcribed, transcript_cost_today_usd: transcriptDay.cost_usd, proposed };
