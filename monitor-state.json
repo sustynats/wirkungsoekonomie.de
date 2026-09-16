@@ -5,16 +5,17 @@
       "firstSeen": "2026-09-15T16:54:49.150Z",
       "active": true
     },
-    "images": {
-      "firstSeen": "2026-09-15T17:35:41.081Z",
-      "active": true
-    },
     "editorial-coverage": {
       "firstSeen": "2026-09-16T08:20:43.247Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "f80ef5da63c36a4a677367bf",
+      "content": "✓ WÖk-Störung behoben\nTitelbilder\nPrüfung: 2026-09-16T11:20:41.363Z"
+    }
+  ],
   "dailyDate": "2026-09-16",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -1158,11 +1159,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/hessen-plant-1-7-milliarden-euro-neue-schulden-rekordetat-fur-schulen-a8a416/": {
         "first_seen_at": "2026-09-16T09:50:41.706Z",
         "source_at": "2026-09-16T08:53:52.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/milliardenloch-gesundheitswesen-sparen-wir-uns-krank-c350e5/": {
+        "first_seen_at": "2026-09-16T11:20:41.363Z",
+        "source_at": "2026-09-16T10:28:45.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bombe-von-zweitem-weltkrieg-spazierganger-findet-fliegerbombe-anwohner-werden-evakuiert-765ef9/": {
+        "first_seen_at": "2026-09-16T11:20:41.363Z",
+        "source_at": "2026-09-16T09:52:23.000Z"
       }
     },
-    "last_new_at": "2026-09-16T09:50:41.706Z",
-    "checked_at": "2026-09-16T11:05:42.672Z",
-    "last_current_new_at": "2026-09-16T09:50:41.706Z"
+    "last_new_at": "2026-09-16T11:20:41.363Z",
+    "checked_at": "2026-09-16T11:20:41.363Z",
+    "last_current_new_at": "2026-09-16T11:20:41.363Z"
   },
   "recovery_attempts": [
     {
