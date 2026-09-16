@@ -1654,6 +1654,10 @@ export async function runWirkungsticker(options = {}) {
         // diese Zahl im Bericht wäre das nicht prüfbar.
         report.ai_schema_calls = Number(report.ai_schema_calls || 0) + Number(Boolean(aiResult.analysis_schema));
         report.ai_repair_calls = Number(report.ai_repair_calls || 0) + Number(aiResult.repair_calls || 0);
+        for (const finding of aiResult.repair_findings || []) {
+          report.ai_repair_findings ||= {};
+          report.ai_repair_findings[finding] = Number(report.ai_repair_findings[finding] || 0) + 1;
+        }
         report.prompt_chars_sent += Number(aiResult.prompt_chars || 0);
         report.optional_visuals_deferred = Number(report.optional_visuals_deferred || 0) + Number(Boolean(aiResult.optional_visuals_deferred));
         report.ai_batches_completed += 1;
