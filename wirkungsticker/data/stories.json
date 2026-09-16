@@ -2,8 +2,2920 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T11:52:27.330Z",
+  "updated_at": "2026-09-16T12:07:23.976Z",
   "stories": [
+    {
+      "story_id": "wt-aa6a91f8546c7299",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-aa6a91f8546c7299-5164c927f3206a3e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-aa6a91f8546c7299-aa4040f9e98ddda2-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-aa6a91f8546c7299-7660afeb8dd94468-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "technologie-bundesregierung-nehmen-ki-warnungen-sehr-ernst-trump-sieht-verschworung-und--6c7299",
+      "title": "Deutschlandfunk: Deutschland richtet KI-Sicherheitsinstitut ein, Trump lehnt Regulierung ab",
+      "source_summary": "Der Deutschlandfunk berichtet über die wachsende Debatte zu Risiken künstlicher Intelligenz. Anlass sind Forderungen von US-Tech-Unternehmen nach einer Verlangsamung der KI-Forschung sowie unterschiedliche politische und fachliche Reaktionen.\n\nDas Bundesdigitalministerium verweist dem Bericht zufolge auf ein neu gegründetes nationales KI-Sicherheitsinstitut. Es soll sicherheitsrelevante Risiken frühzeitig erkennen. Der UNO-Menschenrechtskommissar Türk fordert eine stärkere Regulierung. US-Präsident Trump lehnt solche Forderungen ab, weist Sicherheitsbedenken zurück und spricht von einer Verschwörung. Ein im Deutschlandfunk befragter KI-Experte hält Warnungen vor einer möglichen Auslöschung der Menschheit für nicht übertrieben. Die Meldung wurde am 14.09.2026 im Programm des Deutschlandfunks gesendet. Konkrete Folgen der genannten Positionen und des Instituts bleiben offen.",
+      "summary": "Deutschland baut laut Deutschlandfunk ein nationales KI-Sicherheitsinstitut auf, während Trump stärkere Regulierung ablehnt. Das mögliche Schutzpotenzial ist relevant, konkrete Befugnisse und Wirkungen sind aber noch offen.",
+      "detail_summary": "Der Deutschlandfunk berichtet über ein neu gegründetes nationales KI-Sicherheitsinstitut, das Risiken frühzeitig identifizieren soll. Zugleich lehnt US-Präsident Trump Forderungen nach stärkerer Regulierung ab. Damit stehen institutionelle Vorsorge und politische Deregulierung in derselben Debatte nebeneinander. Ein mögliches Schutzpotenzial entstünde, wenn das Institut über klare Aufgaben, ausreichende Ausstattung und Zugang zu relevanten Informationen verfügt. Ob es tatsächlich Sicherheit, internationale Kooperation oder demokratische Kontrolle verbessert, ist nicht belegt.",
+      "why_relevant": "Die Meldung verbindet eine neue staatliche Sicherheitsstruktur mit einem internationalen Konflikt über Regulierung. Ihre Bedeutung hängt an Befugnissen, Ausstattung und späteren politischen Entscheidungen.",
+      "topic": [
+        "Technologie",
+        "KI"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über ein neu gegründetes nationales KI-Sicherheitsinstitut und gegensätzliche Positionen zur Regulierung Künstlicher Intelligenz",
+        "evaluation_target": {
+          "label": "institutioneller und politischer Umgang mit KI-Sicherheitsrisiken",
+          "type": "dossier"
+        },
+        "baseline": "Vor dem Bericht ist eine staatliche deutsche Institution zur frühen Identifizierung sicherheitsrelevanter KI-Risiken in den gelieferten Quellen nicht näher beschrieben; konkrete internationale Regulierungsfolgen sind ebenfalls nicht belegt.",
+        "counterfactual": "Ohne institutionelle Vorsorge und koordinierte Regulierung könnten Risiken später erkannt oder uneinheitlich bearbeitet werden; ohne belastbare Befugnisse könnte sich gegenüber dem bisherigen Zustand wenig ändern.",
+        "reference_frame": [
+          "Sicherheit und Schutz vor technischen Schäden",
+          "Demokratische Rechenschaft und Kontrolle",
+          "Internationale Koordination von KI-Governance"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein Institut könnte bei ausreichender Ausstattung Risiken mit Folgen für Sicherheit, Gesundheit, Arbeit und Teilhabe früher prüfen. Die betroffenen Gruppen, Schutzstandards und tatsächliche Wirksamkeit sind nicht belegt.",
+            "planet": "KI-Sicherheitsprüfung könnte indirekt auch ressourcen- und energiebezogene Risiken technischer Systeme sichtbar machen. Ein konkreter ökologischer Wirkpfad wird von der Quelle nicht belegt und bleibt schwach.",
+            "democracy": "Klare Zuständigkeiten und öffentliche Rechenschaft könnten Kontrolle über leistungsfähige KI-Systeme stärken. Politische Uneinigkeit und unklare Befugnisse könnten diesen Effekt begrenzen."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Eine neue staatliche Prüfinstanz könnte Wissen über KI-Sicherheitsrisiken bündeln; ihre tatsächliche Funktion hängt von Auftrag und Ressourcen ab.",
+          "second_order": "Erkenntnisse könnten in Aufsicht, Standards und politische Entscheidungen einfließen, sofern institutionelle Schnittstellen und internationale Kooperation bestehen.",
+          "third_order": "Dauerhafte KI-Governance könnte demokratische Korrekturfähigkeit und gesellschaftliche Resilienz stärken oder bei fehlender Durchsetzungskraft symbolisch bleiben.",
+          "enablement": [
+            "enables_institutional_control",
+            "enables_legislation",
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Quelle nennt keine Befugnisse, Ausstattung, Rechtsgrundlage oder bisherigen Ergebnisse des Instituts.",
+            "Die Quelle belegt keine konkrete Regulierung, keine internationale Vereinbarung und keine eingetretene Wirkung.",
+            "Die Positionen stammen aus einer journalistischen Darstellung mit nur einem gelieferten Quellursprung."
+          ],
+          "source_independence": "Nur ein journalistischer Deutschlandfunk-Bericht ist geliefert. Er enthält zugeschriebene Aussagen des Bundesdigitalministeriums, Trumps und eines Experten, aber keine unabhängige Bestätigung und keine Primärdokumente.",
+          "institutional_status": "Berichtet wird von einem neu gegründeten Institut; Rechtsgrundlage, Zuständigkeit, Ausstattung und tatsächlicher Umsetzungsstand sind offen."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt die institutionelle Gründung und das Ziel früher Risikoerkennung, aber keine konkrete Verbesserung menschlicher Sicherheit. Der Pfad bleibt an Auftrag, Ressourcen und Umsetzung gebunden.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Ein Institut zur frühen Risikoerkennung könnte Schutzentscheidungen für Menschen unterstützen. Die Reichweite und Dauer wären potenziell erheblich, die Evidenz für tatsächliche Wirkung ist jedoch niedrig.",
+            "primary_paths": [
+              {
+                "label": "Frühere staatliche Erkennung sicherheitsrelevanter KI-Risiken",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Wenn das Institut Risiken fachlich unabhängig und mit ausreichenden Ressourcen prüft, könnten Behörden und andere zuständige Stellen früher Schutzmaßnahmen oder Auflagen entwickeln.",
+                "recipients": [
+                  "Menschen, die von KI-Anwendungen in Arbeit, Gesundheit, Sicherheit oder Teilhabe betroffen sind"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die mögliche Reichweite ist breit, aber Befugnisse, Ressourcen und Umsetzung sind unbekannt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "KI-Anwendungen können viele Lebensbereiche und Bevölkerungsgruppen betreffen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Frühere Risikoerkennung könnte bei ernsten Risiken Schutzentscheidungen beeinflussen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Eine dauerhafte Institution könnte wiederholt und langfristig Risiken prüfen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Institutionelle Entscheidungen wären grundsätzlich politisch und rechtlich korrigierbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Besonders betroffene Menschen könnten von früheren Schutzprüfungen profitieren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad reicht von Expertise über Aufsicht bis zu möglichen Schutzstandards.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze wird nicht beschrieben; der mögliche Nutzen bleibt institutionell bedingt.",
+                  "reference_frame": "Schutz vor sicherheitsrelevanten KI-Schäden",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Erforderlich wären ein klarer Auftrag, ausreichende Ausstattung, fachliche Unabhängigkeit und wirksame Übergänge zu Aufsicht oder Gesetzgebung.",
+                "reference_space": "Deutschland mit möglichen internationalen Schnittstellen",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Institution erhält tatsächlich Zugang zu relevanten Informationen und kann ihre Erkenntnisse an zuständige Stellen übermitteln.",
+                "source_support": "Die Quelle belegt die Gründung und das Ziel früher Risikoidentifizierung, nicht die spätere Schutzwirkung.",
+                "limitations": "Keine Angaben zu Befugnissen, Budget, Personal, Unabhängigkeit, Risikokategorien oder Ergebnissen.",
+                "first_order": "Risiken könnten früher analysiert und sichtbar gemacht werden.",
+                "second_order": "Frühere Analysen könnten Schutzauflagen, Prüfungen oder politische Entscheidungen unterstützen.",
+                "third_order": "Eine dauerhafte Sicherheitsinfrastruktur könnte die gesellschaftliche Anpassungsfähigkeit an KI-Risiken stärken, sofern sie wirksam kontrolliert wird.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle belegt eine eingetretene Verbesserung; der Pfad bleibt eine bedingte institutionelle Möglichkeit.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 17,
+                  "divisor": 6,
+                  "raw": 2.8333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Uneinheitliche Regulierung könnte Schutzlücken erzeugen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Wenn politische Ablehnung stärkerer Regulierung zu unterschiedlichen nationalen Anforderungen führt, könnten Schutzstandards und Informationsaustausch auseinanderfallen.",
+                "recipients": [
+                  "Menschen in unterschiedlichen Regulierungsräumen",
+                  "Behörden und Unternehmen mit grenzüberschreitenden KI-Anwendungen"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der mögliche Schaden ist systemisch, aber konkrete Folgeentscheidungen und Betroffenenzahlen fehlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Grenzüberschreitende KI-Anwendungen könnten mehrere Gruppen erreichen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Uneinheitliche Regeln könnten Schutz und Zuständigkeiten abschwächen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Regulatorische Unterschiede könnten über längere Zeit bestehen bleiben.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Regeln und Kooperationen könnten politisch später angepasst werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Schutzlücken könnten verletzliche oder wenig geschützte Gruppen stärker treffen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad betrifft Standards, Aufsicht und internationale Kooperation.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete eingetretene Schutzverletzung ist nicht belegt.",
+                  "reference_frame": "Mindeststandards für KI-Sicherheit",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": false,
+                "same_baseline": false,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass politische Positionen in unterschiedliche Regeln oder ausbleibende Kooperation übersetzt werden.",
+                "reference_space": "Internationale KI-Regulierung mit Deutschland und den USA als Bezugspunkten",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Unterschiedliche politische Positionen beeinflussen tatsächlich spätere Regulierungsentscheidungen.",
+                "source_support": "Die Quelle belegt gegensätzliche Positionen, nicht deren regulatorische Umsetzung oder Folgen.",
+                "limitations": "Keine Daten zu Regeln, Kooperation, betroffenen Anwendungen oder Schutzlücken.",
+                "first_order": "Gemeinsame Forderungen könnten politisch schwerer durchsetzbar werden.",
+                "second_order": "Unterschiedliche Standards könnten Informationsaustausch und Aufsicht erschweren.",
+                "third_order": "Langfristig könnten Sicherheitsrisiken zwischen Rechtsräumen ungleich verteilt werden; dies ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle enthält keine unabhängige Evidenz für eine bereits entstandene internationale Schutzlücke.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 16,
+                  "divisor": 6,
+                  "raw": 2.6666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Frühere staatliche Erkennung sicherheitsrelevanter KI-Risiken",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Frühere staatliche Erkennung sicherheitsrelevanter KI-Risiken",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt keine ökologischen Ziele, Umweltwirkungen oder Energie- und Ressourcenangaben. Ein indirekter Prüfpfad ist denkbar, aber nicht belastbar quantifizierbar.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Ein ökologischer Wirkpfad ist aus der gelieferten Quelle nur indirekt ableitbar. KI-Sicherheitsprüfung könnte Umwelt- und Ressourcenrisiken einbeziehen, doch dafür fehlen konkrete Aufgaben und Daten.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Einbeziehung ökologischer Risiken in KI-Sicherheitsprüfungen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Falls das Institut Sicherheitsrisiken breit einschließlich Ressourcen- und Umweltfolgen bewertet, könnten solche Aspekte in technische oder politische Prüfungen einfließen.",
+                "recipients": [
+                  "Umwelt und von Ressourcen- oder Klimafolgen betroffene Menschen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Ein indirekter und nicht belegter Pfad mit unbekannter Zuständigkeit und Reichweite."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ökologische Folgen könnten viele Menschen betreffen, der Bezug ist aber unklar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Mögliche Umweltprüfungen könnten Entscheidungen beeinflussen, ohne konkrete Wirkungsgarantie.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Institutionelle Prüfungen könnten bei dauerhaftem Auftrag langfristig wirken.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Politische und technische Prüfanforderungen wären grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ökologische Risiken könnten vulnerable Regionen treffen, konkrete Betroffene fehlen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Ein breiter Sicherheitsbegriff könnte technische Entwicklung und Governance beeinflussen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine konkrete ökologische Schutzgrenze oder Grenzverletzung.",
+                  "reference_frame": "Ökologische Tragfähigkeit und Ressourcenfolgen digitaler Systeme",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Das Institut müsste Umwelt- und Ressourcenfolgen ausdrücklich als Teil seiner Sicherheitsprüfung behandeln und entsprechende Daten erhalten.",
+                "reference_space": "Deutschland und mögliche internationale KI-Entwicklung",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "weak",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "KI-Sicherheitsaufgaben umfassen künftig auch ökologische und ressourcenbezogene Risiken.",
+                "source_support": "Die Quelle nennt KI-Sicherheitsrisiken allgemein, aber keine Umweltfolgen, Messwerte oder ökologischen Zuständigkeiten.",
+                "limitations": "Keine Angaben zu Energieverbrauch, Emissionen, Rohstoffen, Rechenzentren oder Umweltstandards.",
+                "first_order": "Ökologische Risiken könnten theoretisch in Prüfungen sichtbar werden.",
+                "second_order": "Solche Prüfungen könnten technische Anforderungen oder politische Prioritäten beeinflussen.",
+                "third_order": "Ein breiter Sicherheitsansatz könnte ökologische Rückkopplungen in die KI-Governance einbeziehen; dies bleibt hypothetisch.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle erlaubt keine belastbare Aussage über ökologische Wirkungen oder entsprechende Aufgaben des Instituts.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Einbeziehung ökologischer Risiken in KI-Sicherheitsprüfungen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Einbeziehung ökologischer Risiken in KI-Sicherheitsprüfungen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt gegensätzliche politische Positionen und eine neue Institution, aber keine Veränderung demokratischer Kontrolle. Positive und negative institutionelle Pfade bleiben bedingt.",
+            "reviewed_source_ids": [
+              "dlf-nachrichten"
+            ],
+            "rationale": "Transparente, fachlich unabhängige Sicherheitsprüfung könnte demokratische Rechenschaft stärken. Gleichzeitig könnten unklare Zuständigkeiten, politische Polarisierung oder fehlende Regulierung Kontrolle schwächen; vergleichbare Pfade sind daher gemischt.",
+            "primary_paths": [
+              {
+                "label": "Institutionalisierte Expertise könnte demokratische Kontrolle stärken",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Wenn Sicherheitswissen öffentlich nachvollziehbar und an verantwortliche Institutionen angebunden wird, könnten Parlamente, Aufsicht und Öffentlichkeit politische Entscheidungen besser prüfen.",
+                "recipients": [
+                  "Parlamente, Aufsichtsstellen, Öffentlichkeit und von KI-Entscheidungen betroffene Menschen"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die institutionelle Bedeutung kann hoch sein, doch Transparenz, Unabhängigkeit und parlamentarische Einbindung sind offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "KI-Governance betrifft viele staatliche und gesellschaftliche Bereiche.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Verlässliche Expertise könnte politische Rechenschaft und Kontrolle spürbar unterstützen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Eine dauerhafte Institution könnte wiederholt demokratische Entscheidungen informieren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 3,
+                    "rationale": "Institutionelle Routinen und Zuständigkeiten könnten sich verfestigen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Menschen mit geringer eigener Einflussmöglichkeit könnten von besserer Aufsicht profitieren.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 4,
+                    "rationale": "Der Pfad betrifft Expertise, Aufsicht, Gesetzgebung und öffentliche Rechenschaft.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht beschrieben; der Pfad hängt von Transparenz und Kontrolle ab.",
+                  "reference_frame": "Demokratische Rechenschaft und Korrekturfähigkeit",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Erforderlich wären transparente Berichte, parlamentarische Kontrolle, fachliche Unabhängigkeit und nachvollziehbare Zuständigkeiten.",
+                "reference_space": "Deutschland mit internationalen Regulierungsbezügen",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Institution veröffentlicht nachvollziehbare Befunde und wird in demokratische Entscheidungswege eingebunden.",
+                "source_support": "Die Quelle belegt die Gründung und das Sicherheitsziel, nicht Transparenz, parlamentarische Einbindung oder Kontrolle.",
+                "limitations": "Rechtsstatus, Governance, Berichtspflichten und Verhältnis zu bestehenden Behörden sind unbekannt.",
+                "first_order": "Eine neue Expertise-Stelle könnte Wissen für politische Entscheidungen bündeln.",
+                "second_order": "Bündelung und Veröffentlichung könnten Kontrolle und öffentliche Debatte verbessern.",
+                "third_order": "Dauerhafte, rechenschaftspflichtige KI-Governance könnte demokratische Korrekturfähigkeit stärken.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle belegt demokratische Folgeeffekte; sie bleiben an die institutionelle Ausgestaltung gebunden.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 19,
+                  "divisor": 6,
+                  "raw": 3.1666666666666665,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Polarisierung und Zuständigkeitskonflikte könnten Kontrolle schwächen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Wenn gegensätzliche politische Positionen in Polarisierung oder unklare Zuständigkeiten übergehen, könnten fachliche Warnungen politisch weniger verbindlich werden.",
+                "recipients": [
+                  "Öffentlichkeit, Parlamente, Aufsicht und von KI-Regeln betroffene Gruppen"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Ein möglicher Diskurs- und Governance-Effekt ohne belegte Umsetzung oder Verhaltensdaten."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die KI-Regulierungsdebatte kann mehrere politische Ebenen erreichen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Polarisierung könnte Verständigung und Kontrolle erschweren, ist aber nicht gemessen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Konflikte über Regulierung könnten über längere politische Zyklen fortbestehen.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Diskurse und institutionelle Regeln könnten später korrigiert werden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Weniger einflussreiche Gruppen könnten bei schwacher Kontrolle schlechter Gehör finden.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad betrifft politische Debatte, Prioritätensetzung und institutionelle Kontrolle.",
+                    "source_ids": [
+                      "dlf-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine konkrete Einschränkung demokratischer Rechte oder Kontrolle.",
+                  "reference_frame": "Demokratische Deliberation und institutionelle Korrekturfähigkeit",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": false,
+                "same_baseline": false,
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die gegensätzlichen Positionen zu anhaltender Polarisierung oder institutioneller Blockade führen.",
+                "reference_space": "Öffentliche und politische Debatte über KI-Regulierung",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Politische Gegensätze prägen tatsächlich die institutionelle Umsetzung und nicht nur die öffentliche Kommunikation.",
+                "source_support": "Die Quelle belegt gegensätzliche Aussagen, nicht Polarisierung, Blockade oder einen Vertrauensverlust.",
+                "limitations": "Keine Umfragen, Diskursdaten, Parlamentsvorgänge oder Verhaltensbelege geliefert.",
+                "first_order": "Die Debatte könnte stärker entlang gegensätzlicher Regulierungspositionen verlaufen.",
+                "second_order": "Das könnte Kompromisse und gemeinsame Sicherheitsstandards erschweren.",
+                "third_order": "Anhaltende Uneinigkeit könnte demokratische Korrekturfähigkeit bei KI-Risiken schwächen; dies ist nicht beobachtet.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle enthält keine belastbare Evidenz für bereits eingetretene Polarisierungs- oder Kontrolleffekte.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 15,
+                  "divisor": 6,
+                  "raw": 2.5,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Der mögliche positive Kontrollpfad und der negative Konfliktpfad sind in Reichweite und Systemtiefe vergleichbar, aber beide nur schwach belegt. Deshalb ist die Richtung gemischt und nicht als Ausgleich eines festgestellten Schadens zu verstehen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Institutionalisierte Expertise könnte demokratische Kontrolle stärken",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Institutionalisierte Expertise könnte demokratische Kontrolle stärken",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T12:12:06.886Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "dlf-nachrichten",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference",
+              "counter_evidence"
+            ],
+            "supported_claim": "Der Bericht belegt die Debatte, das neu gegründete Institut, zugeschriebene politische Positionen sowie die offenen Fragen zu Befugnissen und Folgen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt die institutionelle Gründung und das Ziel früher Risikoerkennung, aber keine konkrete Verbesserung menschlicher Sicherheit. Der Pfad bleibt an Auftrag, Ressourcen und Umsetzung gebunden.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Ein Institut zur frühen Risikoerkennung könnte Schutzentscheidungen für Menschen unterstützen. Die Reichweite und Dauer wären potenziell erheblich, die Evidenz für tatsächliche Wirkung ist jedoch niedrig.",
+          "primary_paths": [
+            {
+              "label": "Frühere staatliche Erkennung sicherheitsrelevanter KI-Risiken",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Wenn das Institut Risiken fachlich unabhängig und mit ausreichenden Ressourcen prüft, könnten Behörden und andere zuständige Stellen früher Schutzmaßnahmen oder Auflagen entwickeln.",
+              "recipients": [
+                "Menschen, die von KI-Anwendungen in Arbeit, Gesundheit, Sicherheit oder Teilhabe betroffen sind"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die mögliche Reichweite ist breit, aber Befugnisse, Ressourcen und Umsetzung sind unbekannt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "KI-Anwendungen können viele Lebensbereiche und Bevölkerungsgruppen betreffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Frühere Risikoerkennung könnte bei ernsten Risiken Schutzentscheidungen beeinflussen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Eine dauerhafte Institution könnte wiederholt und langfristig Risiken prüfen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Institutionelle Entscheidungen wären grundsätzlich politisch und rechtlich korrigierbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Besonders betroffene Menschen könnten von früheren Schutzprüfungen profitieren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad reicht von Expertise über Aufsicht bis zu möglichen Schutzstandards.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze wird nicht beschrieben; der mögliche Nutzen bleibt institutionell bedingt.",
+                "reference_frame": "Schutz vor sicherheitsrelevanten KI-Schäden",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Erforderlich wären ein klarer Auftrag, ausreichende Ausstattung, fachliche Unabhängigkeit und wirksame Übergänge zu Aufsicht oder Gesetzgebung.",
+              "reference_space": "Deutschland mit möglichen internationalen Schnittstellen",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Institution erhält tatsächlich Zugang zu relevanten Informationen und kann ihre Erkenntnisse an zuständige Stellen übermitteln.",
+              "source_support": "Die Quelle belegt die Gründung und das Ziel früher Risikoidentifizierung, nicht die spätere Schutzwirkung.",
+              "limitations": "Keine Angaben zu Befugnissen, Budget, Personal, Unabhängigkeit, Risikokategorien oder Ergebnissen.",
+              "first_order": "Risiken könnten früher analysiert und sichtbar gemacht werden.",
+              "second_order": "Frühere Analysen könnten Schutzauflagen, Prüfungen oder politische Entscheidungen unterstützen.",
+              "third_order": "Eine dauerhafte Sicherheitsinfrastruktur könnte die gesellschaftliche Anpassungsfähigkeit an KI-Risiken stärken, sofern sie wirksam kontrolliert wird.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle belegt eine eingetretene Verbesserung; der Pfad bleibt eine bedingte institutionelle Möglichkeit.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 17,
+                "divisor": 6,
+                "raw": 2.8333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Uneinheitliche Regulierung könnte Schutzlücken erzeugen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Wenn politische Ablehnung stärkerer Regulierung zu unterschiedlichen nationalen Anforderungen führt, könnten Schutzstandards und Informationsaustausch auseinanderfallen.",
+              "recipients": [
+                "Menschen in unterschiedlichen Regulierungsräumen",
+                "Behörden und Unternehmen mit grenzüberschreitenden KI-Anwendungen"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der mögliche Schaden ist systemisch, aber konkrete Folgeentscheidungen und Betroffenenzahlen fehlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Grenzüberschreitende KI-Anwendungen könnten mehrere Gruppen erreichen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Uneinheitliche Regeln könnten Schutz und Zuständigkeiten abschwächen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Regulatorische Unterschiede könnten über längere Zeit bestehen bleiben.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Regeln und Kooperationen könnten politisch später angepasst werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Schutzlücken könnten verletzliche oder wenig geschützte Gruppen stärker treffen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad betrifft Standards, Aufsicht und internationale Kooperation.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete eingetretene Schutzverletzung ist nicht belegt.",
+                "reference_frame": "Mindeststandards für KI-Sicherheit",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": false,
+              "same_baseline": false,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass politische Positionen in unterschiedliche Regeln oder ausbleibende Kooperation übersetzt werden.",
+              "reference_space": "Internationale KI-Regulierung mit Deutschland und den USA als Bezugspunkten",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Unterschiedliche politische Positionen beeinflussen tatsächlich spätere Regulierungsentscheidungen.",
+              "source_support": "Die Quelle belegt gegensätzliche Positionen, nicht deren regulatorische Umsetzung oder Folgen.",
+              "limitations": "Keine Daten zu Regeln, Kooperation, betroffenen Anwendungen oder Schutzlücken.",
+              "first_order": "Gemeinsame Forderungen könnten politisch schwerer durchsetzbar werden.",
+              "second_order": "Unterschiedliche Standards könnten Informationsaustausch und Aufsicht erschweren.",
+              "third_order": "Langfristig könnten Sicherheitsrisiken zwischen Rechtsräumen ungleich verteilt werden; dies ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle enthält keine unabhängige Evidenz für eine bereits entstandene internationale Schutzlücke.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 16,
+                "divisor": 6,
+                "raw": 2.6666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Frühere staatliche Erkennung sicherheitsrelevanter KI-Risiken",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Frühere staatliche Erkennung sicherheitsrelevanter KI-Risiken",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt keine ökologischen Ziele, Umweltwirkungen oder Energie- und Ressourcenangaben. Ein indirekter Prüfpfad ist denkbar, aber nicht belastbar quantifizierbar.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Ein ökologischer Wirkpfad ist aus der gelieferten Quelle nur indirekt ableitbar. KI-Sicherheitsprüfung könnte Umwelt- und Ressourcenrisiken einbeziehen, doch dafür fehlen konkrete Aufgaben und Daten.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Einbeziehung ökologischer Risiken in KI-Sicherheitsprüfungen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Falls das Institut Sicherheitsrisiken breit einschließlich Ressourcen- und Umweltfolgen bewertet, könnten solche Aspekte in technische oder politische Prüfungen einfließen.",
+              "recipients": [
+                "Umwelt und von Ressourcen- oder Klimafolgen betroffene Menschen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Ein indirekter und nicht belegter Pfad mit unbekannter Zuständigkeit und Reichweite."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ökologische Folgen könnten viele Menschen betreffen, der Bezug ist aber unklar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Mögliche Umweltprüfungen könnten Entscheidungen beeinflussen, ohne konkrete Wirkungsgarantie.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Institutionelle Prüfungen könnten bei dauerhaftem Auftrag langfristig wirken.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Politische und technische Prüfanforderungen wären grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ökologische Risiken könnten vulnerable Regionen treffen, konkrete Betroffene fehlen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Ein breiter Sicherheitsbegriff könnte technische Entwicklung und Governance beeinflussen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine konkrete ökologische Schutzgrenze oder Grenzverletzung.",
+                "reference_frame": "Ökologische Tragfähigkeit und Ressourcenfolgen digitaler Systeme",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Das Institut müsste Umwelt- und Ressourcenfolgen ausdrücklich als Teil seiner Sicherheitsprüfung behandeln und entsprechende Daten erhalten.",
+              "reference_space": "Deutschland und mögliche internationale KI-Entwicklung",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "weak",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "KI-Sicherheitsaufgaben umfassen künftig auch ökologische und ressourcenbezogene Risiken.",
+              "source_support": "Die Quelle nennt KI-Sicherheitsrisiken allgemein, aber keine Umweltfolgen, Messwerte oder ökologischen Zuständigkeiten.",
+              "limitations": "Keine Angaben zu Energieverbrauch, Emissionen, Rohstoffen, Rechenzentren oder Umweltstandards.",
+              "first_order": "Ökologische Risiken könnten theoretisch in Prüfungen sichtbar werden.",
+              "second_order": "Solche Prüfungen könnten technische Anforderungen oder politische Prioritäten beeinflussen.",
+              "third_order": "Ein breiter Sicherheitsansatz könnte ökologische Rückkopplungen in die KI-Governance einbeziehen; dies bleibt hypothetisch.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle erlaubt keine belastbare Aussage über ökologische Wirkungen oder entsprechende Aufgaben des Instituts.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Einbeziehung ökologischer Risiken in KI-Sicherheitsprüfungen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Einbeziehung ökologischer Risiken in KI-Sicherheitsprüfungen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt gegensätzliche politische Positionen und eine neue Institution, aber keine Veränderung demokratischer Kontrolle. Positive und negative institutionelle Pfade bleiben bedingt.",
+          "reviewed_source_ids": [
+            "dlf-nachrichten"
+          ],
+          "rationale": "Transparente, fachlich unabhängige Sicherheitsprüfung könnte demokratische Rechenschaft stärken. Gleichzeitig könnten unklare Zuständigkeiten, politische Polarisierung oder fehlende Regulierung Kontrolle schwächen; vergleichbare Pfade sind daher gemischt.",
+          "primary_paths": [
+            {
+              "label": "Institutionalisierte Expertise könnte demokratische Kontrolle stärken",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Wenn Sicherheitswissen öffentlich nachvollziehbar und an verantwortliche Institutionen angebunden wird, könnten Parlamente, Aufsicht und Öffentlichkeit politische Entscheidungen besser prüfen.",
+              "recipients": [
+                "Parlamente, Aufsichtsstellen, Öffentlichkeit und von KI-Entscheidungen betroffene Menschen"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die institutionelle Bedeutung kann hoch sein, doch Transparenz, Unabhängigkeit und parlamentarische Einbindung sind offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "KI-Governance betrifft viele staatliche und gesellschaftliche Bereiche.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Verlässliche Expertise könnte politische Rechenschaft und Kontrolle spürbar unterstützen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Eine dauerhafte Institution könnte wiederholt demokratische Entscheidungen informieren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 3,
+                  "rationale": "Institutionelle Routinen und Zuständigkeiten könnten sich verfestigen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Menschen mit geringer eigener Einflussmöglichkeit könnten von besserer Aufsicht profitieren.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 4,
+                  "rationale": "Der Pfad betrifft Expertise, Aufsicht, Gesetzgebung und öffentliche Rechenschaft.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht beschrieben; der Pfad hängt von Transparenz und Kontrolle ab.",
+                "reference_frame": "Demokratische Rechenschaft und Korrekturfähigkeit",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Erforderlich wären transparente Berichte, parlamentarische Kontrolle, fachliche Unabhängigkeit und nachvollziehbare Zuständigkeiten.",
+              "reference_space": "Deutschland mit internationalen Regulierungsbezügen",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Institution veröffentlicht nachvollziehbare Befunde und wird in demokratische Entscheidungswege eingebunden.",
+              "source_support": "Die Quelle belegt die Gründung und das Sicherheitsziel, nicht Transparenz, parlamentarische Einbindung oder Kontrolle.",
+              "limitations": "Rechtsstatus, Governance, Berichtspflichten und Verhältnis zu bestehenden Behörden sind unbekannt.",
+              "first_order": "Eine neue Expertise-Stelle könnte Wissen für politische Entscheidungen bündeln.",
+              "second_order": "Bündelung und Veröffentlichung könnten Kontrolle und öffentliche Debatte verbessern.",
+              "third_order": "Dauerhafte, rechenschaftspflichtige KI-Governance könnte demokratische Korrekturfähigkeit stärken.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle belegt demokratische Folgeeffekte; sie bleiben an die institutionelle Ausgestaltung gebunden.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 19,
+                "divisor": 6,
+                "raw": 3.1666666666666665,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Polarisierung und Zuständigkeitskonflikte könnten Kontrolle schwächen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Wenn gegensätzliche politische Positionen in Polarisierung oder unklare Zuständigkeiten übergehen, könnten fachliche Warnungen politisch weniger verbindlich werden.",
+              "recipients": [
+                "Öffentlichkeit, Parlamente, Aufsicht und von KI-Regeln betroffene Gruppen"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Ein möglicher Diskurs- und Governance-Effekt ohne belegte Umsetzung oder Verhaltensdaten."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die KI-Regulierungsdebatte kann mehrere politische Ebenen erreichen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Polarisierung könnte Verständigung und Kontrolle erschweren, ist aber nicht gemessen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Konflikte über Regulierung könnten über längere politische Zyklen fortbestehen.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Diskurse und institutionelle Regeln könnten später korrigiert werden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Weniger einflussreiche Gruppen könnten bei schwacher Kontrolle schlechter Gehör finden.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad betrifft politische Debatte, Prioritätensetzung und institutionelle Kontrolle.",
+                  "source_ids": [
+                    "dlf-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine konkrete Einschränkung demokratischer Rechte oder Kontrolle.",
+                "reference_frame": "Demokratische Deliberation und institutionelle Korrekturfähigkeit",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": false,
+              "same_baseline": false,
+              "source_ids": [
+                "dlf-nachrichten"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die gegensätzlichen Positionen zu anhaltender Polarisierung oder institutioneller Blockade führen.",
+              "reference_space": "Öffentliche und politische Debatte über KI-Regulierung",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Politische Gegensätze prägen tatsächlich die institutionelle Umsetzung und nicht nur die öffentliche Kommunikation.",
+              "source_support": "Die Quelle belegt gegensätzliche Aussagen, nicht Polarisierung, Blockade oder einen Vertrauensverlust.",
+              "limitations": "Keine Umfragen, Diskursdaten, Parlamentsvorgänge oder Verhaltensbelege geliefert.",
+              "first_order": "Die Debatte könnte stärker entlang gegensätzlicher Regulierungspositionen verlaufen.",
+              "second_order": "Das könnte Kompromisse und gemeinsame Sicherheitsstandards erschweren.",
+              "third_order": "Anhaltende Uneinigkeit könnte demokratische Korrekturfähigkeit bei KI-Risiken schwächen; dies ist nicht beobachtet.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle enthält keine belastbare Evidenz für bereits eingetretene Polarisierungs- oder Kontrolleffekte.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 15,
+                "divisor": 6,
+                "raw": 2.5,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Der mögliche positive Kontrollpfad und der negative Konfliktpfad sind in Reichweite und Systemtiefe vergleichbar, aber beide nur schwach belegt. Deshalb ist die Richtung gemischt und nicht als Ausgleich eines festgestellten Schadens zu verstehen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Institutionalisierte Expertise könnte demokratische Kontrolle stärken",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Institutionalisierte Expertise könnte demokratische Kontrolle stärken",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T12:07:23.976Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T15:29:12.000Z",
+      "last_updated": "2026-09-16T12:12:06.883Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-8002c1171d4b03e8fd28",
+      "case_file": null,
+      "source_published_at": "2026-09-14T15:29:12.000Z",
+      "published_at": "2026-09-14T16:18:31.179Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, welche Befugnisse, Aufgaben und Ausstattung das nationale KI-Sicherheitsinstitut tatsächlich erhält.",
+          "source_id": "dlf-nachrichten",
+          "measurable_indicator": "Veröffentlichte Aufgabenbeschreibung, Rechtsgrundlage oder Haushaltsangaben des Instituts",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c0c78cb462d7acc0",
+          "announced_at": "2026-09-14T15:29:12.000Z",
+          "follow_up_date": "2026-09-23T12:12:06.883Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Zu prüfen ist, ob aus den Forderungen nach stärkerer KI-Regulierung oder aus Trumps Ablehnung konkrete politische oder rechtliche Schritte folgen.",
+          "source_id": "dlf-nachrichten",
+          "measurable_indicator": "Angekündigte oder verabschiedete Regelungen, Regierungsvorlagen oder internationale Vereinbarungen",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-ccf62c07cdb2d819",
+          "announced_at": "2026-09-14T15:29:12.000Z",
+          "follow_up_date": "2026-09-23T12:12:06.883Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bundesregierung-nehmen-ki-warnungen-sehr-ernst-trump-sieht-verschwoerung-und-lehnt-regulierung-ab-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T15:29:12.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-a2e7dbe5b41d777c",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a2e7dbe5b41d777c-a5f20cef7ac8df81-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a2e7dbe5b41d777c-138d917c8c498f8c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a2e7dbe5b41d777c-e643011b9194870e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "cdu-ministerprasident-rhein-fordert-ende-der-ausgrenzung-der-afd-1d777c",
+      "title": "Laut Stern: Rhein fordert Ende der Ausgrenzung der AfD",
+      "source_summary": "Der Stern berichtet, dass Hessens Ministerpräsident Boris Rhein die bisherige „Brandmauer“-Strategie der CDU gegenüber der AfD in Frage gestellt habe. In einem Gastbeitrag für die Welt habe Rhein für einen anderen Umgang mit der AfD plädiert.\n\nNach Darstellung des Berichts unterscheidet Rhein zwischen „Ausgrenzung“ und „Abgrenzung“ und hält die zweite Form für erforderlich. Er argumentiert demnach, Probleme würden nicht dadurch verschwinden, dass man sie verschweige, verdränge, verleugne oder Parteien verbiete.\n\nDie Quelle ist ein journalistischer Bericht über Rheins Beitrag, nicht der zitierte Originaltext selbst. Eine unabhängige Bestätigung oder der vollständige Kontext des Gastbeitrags liegen in der Akte nicht vor.",
+      "summary": "Boris Rhein stellt laut Stern die CDU-Strategie der „Brandmauer“ zur AfD in Frage. Welche politischen Folgen daraus entstehen könnten, hängt von späteren Entscheidungen und Reaktionen ab.",
+      "detail_summary": "Der Stern berichtet über einen Gastbeitrag des hessischen Ministerpräsidenten Boris Rhein für die Welt. Rhein stellt darin laut Bericht die bisherige „Brandmauer“-Strategie der CDU in Frage und fordert statt „Ausgrenzung“ eine „Abgrenzung“ zur AfD. Damit liegt zunächst eine politische Position vor, kein belegter Beschluss und keine nachgewiesene Zusammenarbeit. Möglich wäre, dass sich der parteipolitische Umgang mit der AfD und damit Koalitions- oder Abstimmungsdebatten verschiebt. Offen bleiben der vollständige Kontext, die Reaktion der CDU und eine unabhängige Bestätigung.",
+      "why_relevant": "Die Aussage kann die Grenzen politischer Zusammenarbeit und die öffentliche Debatte über den Umgang mit der AfD berühren. Belegt ist bislang nur die von einer Quelle berichtete Position.",
+      "topic": [
+        "Energie",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Von Stern berichtete politische Position Boris Rheins zur CDU-Strategie gegenüber der AfD",
+        "evaluation_target": {
+          "label": "politische Position zur Abgrenzung gegenüber der AfD",
+          "type": "communication"
+        },
+        "baseline": "Die Quelle beschreibt eine bestehende politische Abgrenzungsstrategie der CDU; konkrete Änderungen ihrer Regeln oder Praxis sind nicht belegt.",
+        "counterfactual": "Ohne die veröffentlichte Position bliebe dieser spezifische Impuls in der vorliegenden Akte aus; die allgemeine Debatte über den Umgang mit der AfD könnte dennoch weiterlaufen.",
+        "reference_frame": [
+          "demokratische Korrekturfähigkeit",
+          "parlamentarische Verantwortlichkeit",
+          "politische Gleichheit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Aussage könnte über politische Entscheidungen mittelbar Verteilungs-, Schutz- und Versorgungspolitik beeinflussen. Eine konkrete menschliche Folge ist nicht belegt; der Pfad bleibt an spätere Entscheidungen gebunden.",
+            "planet": "Eine unmittelbare ökologische Zustandsänderung ist durch die politische Aussage nicht belegt. Ein mittelbarer Pfad über spätere Mehrheits- oder Regierungsentscheidungen bleibt möglich, aber in dieser Akte nicht konkretisiert.",
+            "democracy": "Die Aussage könnte politische Abgrenzungsnormen und die Wahrnehmung möglicher Kooperationen verändern. Institutionelle Folgen, Mehrheiten oder Zusammenarbeit sind noch nicht beobachtet."
+          },
+          "central_dimensions": [
+            "democracy"
+          ],
+          "first_order": "Die öffentliche und innerparteiliche Debatte über die Abgrenzung zur AfD könnte sich verschieben.",
+          "second_order": "Bei anschließender Umsetzung könnten sich Koalitions-, Abstimmungs- oder Personaloptionen verändern; dafür gibt es noch keinen Beleg.",
+          "third_order": "Eine dauerhafte Normalisierung von Kooperationen könnte demokratische Abgrenzungsnormen verändern; dieser systemische Pfad ist hypothetisch.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Quelle belegt keine Kooperation, keinen Beschluss und keine Änderung einer Parteiregel.",
+            "Innerparteiliche Verfahren, parlamentarische Mehrheiten und öffentliche Gegenpositionen könnten eine Umsetzung begrenzen.",
+            "Der vollständige Originaltext und unabhängige Einordnungen fehlen."
+          ],
+          "source_independence": "Nur eine journalistische Herkunft ist vorhanden. Die Unabhängigkeit ist nicht verifiziert; die Quelle berichtet über einen Gastbeitrag, dessen Originaltext nicht geliefert wurde.",
+          "institutional_status": "Es ist eine politische Aussage beziehungsweise ein Gastbeitrag belegt. Ein formaler CDU-Beschluss, eine Regierungsentscheidung oder eine rechtliche Änderung ist nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Keine gelieferte Quelle belegt eine menschliche Zustandsänderung. Ein negativer Pfad ist nur bedingt modellierbar: Er setzt spätere politische Entscheidungen voraus, die Schutz-, Verteilungs- oder Versorgungspolitik verändern könnten.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die politische Aussage könnte mittelbar Entscheidungen beeinflussen, die Menschen unterschiedlich betreffen. Ohne konkrete Maßnahme, Zuständigkeit oder Betroffenengruppe bleibt Reichweite und Richtung der menschlichen Folgen unsicher.",
+            "primary_paths": [
+              {
+                "label": "Mögliche mittelbare Veränderung politischer Schutz- und Verteilungsentscheidungen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Eine veränderte Abgrenzung gegenüber der AfD könnte bei späteren Mehrheits- oder Kooperationsentscheidungen politische Prioritäten und damit den Zugang zu Schutz, Versorgung oder Teilhabe beeinflussen.",
+                "recipients": [
+                  "potenziell betroffene Bevölkerungsgruppen",
+                  "politisch vulnerable Gruppen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist nur indirekt und setzt mehrere nicht belegte politische Schritte voraus."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Reichweite hängt von späteren politischen Entscheidungen ab.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle beschreibt keine konkrete Maßnahme oder unmittelbare Belastung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine längere Wirkung wäre an dauerhafte politische Umsetzung gebunden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Politische Positionen und Entscheidungen wären grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Bei Umsetzung könnten vulnerable Gruppen ungleich betroffen sein; konkrete Gruppen sind nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein systemischer Einfluss ist möglich, aber bislang nur über einen hypothetischen Mehrheitsweg.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine konkrete Schutzgrenze oder eingetretene Verletzung belegt.",
+                  "reference_frame": "Schutz und gleichberechtigte politische Teilhabe",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur wenn aus der Position konkrete Kooperationen, Mehrheiten oder politische Maßnahmen folgen.",
+                "reference_space": "Deutschland; politische Entscheidungen mit möglichen Folgen für betroffene Gruppen",
+                "time_horizon": "mittelfristig, falls politische Umsetzung folgt",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Aussage verändert politische Optionen und wird anschließend in Entscheidungen übersetzt.",
+                "source_support": "Die Quelle belegt eine politische Position, nicht deren Umsetzung oder menschliche Folgen.",
+                "limitations": "Keine Maßnahme, Betroffenenzahl, Zustandsmessung oder unabhängige Folgebeobachtung liegt vor.",
+                "first_order": "Die Debatte über politische Prioritäten könnte sich verschieben.",
+                "second_order": "Spätere Entscheidungen könnten Zugang zu Schutz oder Versorgung unterschiedlich beeinflussen.",
+                "third_order": "Dauerhafte Kooperationsmuster könnten Verteilungs- und Schutzinstitutionen verändern; dies bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle im Bestand belegt konkrete menschliche Auswirkungen; der Pfad bleibt hypothetisch.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Politische Gegenreaktionen könnten Schutzpositionen stabilisieren",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Öffentliche und innerparteiliche Gegenpositionen könnten eine Umsetzung begrenzen und bestehende Schutzstandards erhalten.",
+                "recipients": [
+                  "politische Institutionen",
+                  "betroffene Gruppen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Gegenreaktionen sind plausibel, aber nicht beobachtet oder in der Quelle belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Gegenreaktionen könnten politische Akteure erreichen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Gegenmaßnahme ist nicht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer wäre von der politischen Mobilisierung abhängig.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Gegenpositionen und Verfahren bleiben grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Schutzwirkung für vulnerable Gruppen ist möglich, aber nicht konkret belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad wirkt nur über politische Begrenzung und Institutionen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete Schutzgrenze oder beobachtete Gegenreaktion liegt vor.",
+                  "reference_frame": "Schutz und gleichberechtigte politische Teilhabe",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur wenn Gegenpositionen in innerparteiliche oder parlamentarische Verfahren eingebracht werden.",
+                "reference_space": "Deutschland",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Demokratische Verfahren und Gegenpositionen bleiben wirksam.",
+                "source_support": "Die Quelle belegt keine Gegenreaktion; sie belegt nur Rheins Position.",
+                "limitations": "Akteure, Stärke und Ergebnis möglicher Gegenreaktionen sind unbekannt.",
+                "first_order": "Die politische Position könnte Widerspruch auslösen.",
+                "second_order": "Widerspruch könnte eine Umsetzung begrenzen.",
+                "third_order": "Institutionelle Korrekturen könnten bestehende Schutzstandards stabilisieren; dies ist offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle belegt eine Gegenreaktion; der Pfad bleibt eine Wissenshypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche mittelbare Veränderung politischer Schutz- und Verteilungsentscheidungen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche mittelbare Veränderung politischer Schutz- und Verteilungsentscheidungen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "neutral",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferte Quelle nennt keine Umweltmaßnahme, keinen Energie- oder Infrastrukturpfad und keine ökologische Zustandsänderung. Eine mittelbare Wirkung ist ohne konkrete politische Umsetzung nicht belastbar modellierbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Für den unmittelbaren Zeitraum ist eine ökologische Änderung durch die einzelne politische Aussage praktisch vernachlässigbar. Ein späterer Umweltpfad wäre an nicht belegte politische Entscheidungen gebunden.",
+            "primary_paths": [
+              {
+                "label": "Keine unmittelbar erkennbare ökologische Zustandsänderung durch die Aussage",
+                "direction": "neutral",
+                "type": "main_path",
+                "mechanism": "Die Aussage betrifft den politischen Umgang mit der AfD und benennt keine Umwelt-, Energie- oder Ressourcenentscheidung.",
+                "recipients": [
+                  "Ökosysteme",
+                  "künftige politische Umweltentscheidungen"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Im belegten Gegenstand und unmittelbaren Zeithorizont ist keine ökologische Veränderung erkennbar."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Keine Umweltadressaten oder ökologische Reichweite sind benannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Belastung oder Verbesserung wird beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Keine ökologische Dauerwirkung ist aus der Aussage ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Es gibt keinen belegten ökologischen Eingriff.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine betroffenen Ökosysteme oder vulnerablen Räume sind benannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Systempfad wird durch die Quelle gestützt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird berührt oder beschrieben.",
+                  "reference_frame": "ökologische Integrität",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Gilt für die politische Aussage selbst und ohne nachfolgende konkrete Sachentscheidung.",
+                "reference_space": "durch die Quelle bestimmter politischer Gegenstand",
+                "time_horizon": "unmittelbar bis kurzfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Keine nicht gelieferte Umwelt- oder Energieentscheidung wird unterstellt.",
+                "source_support": "Die Quelle enthält ausschließlich eine politische Aussage zur AfD-Strategie.",
+                "limitations": "Spätere Regierungs- oder Mehrheitsentscheidungen sind unbekannt und nicht zurechenbar.",
+                "first_order": "Keine belegte ökologische Zustandsänderung.",
+                "second_order": "Ein Umweltpfad könnte erst bei konkreter späterer Politik entstehen.",
+                "third_order": "Ökologische Rückkopplungen sind auf Grundlage der Quelle nicht bestimmbar.",
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Prüfung des gelieferten Textes ergab keinen Umwelt- oder Energiebezug; weitere Quellen sind nicht vorhanden.",
+                "negligibility_rationale": "Für den beschriebenen Gegenstand und Zeithorizont fehlt ein ökologischer Eingriff; die potenzielle Änderung ist daher praktisch vernachlässigbar.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Keine unmittelbar erkennbare ökologische Zustandsänderung durch die Aussage",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Keine unmittelbar erkennbare ökologische Zustandsänderung durch die Aussage",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt eine politische Neurahmung, aber keine Kooperation oder institutionelle Folge. Ein demokratischer Wirkpfad ist deshalb als Möglichkeit modellierbar, nicht als eingetretene Wirkung.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die Aussage betrifft ausdrücklich eine politische Abgrenzungsstrategie und könnte Wahrnehmungen möglicher Kooperationen verändern. Das demokratische Potenzial ist materiell, der Eintritt und die Richtung konkreter institutioneller Folgen bleiben offen.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Normalisierung einer veränderten Abgrenzung zur AfD",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die Unterscheidung zwischen Ausgrenzung und Abgrenzung könnte die wahrgenommene politische Legitimität späterer Gespräche, Mehrheiten oder Kooperationen verändern.",
+                "recipients": [
+                  "Wählerinnen und Wähler",
+                  "Parteien und Parlamente",
+                  "politische Institutionen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Aussage hat potenziell systemische Bedeutung, führt aber nicht automatisch zu institutionellen Veränderungen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die Position eines Ministerpräsidenten kann parteiinterne und öffentliche Debatten erreichen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Formulierung stellt eine etablierte Strategie ausdrücklich in Frage.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine dauerhafte Wirkung wäre an wiederholte Aussagen oder politische Umsetzung gebunden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Öffentliche Positionen und politische Verfahren sind grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Politische Minderheiten und betroffene Gruppen könnten von veränderten Normen unterschiedlich betroffen sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad berührt mögliche Kooperations- und Mehrheitsnormen, bleibt aber ohne Institutionenbeleg.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Verletzung ist nicht belegt.",
+                  "reference_frame": "demokratische Korrekturfähigkeit und politische Gleichheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die Position von weiteren politischen Akteuren aufgegriffen und in Verfahren oder Kooperationen übersetzt wird.",
+                "reference_space": "deutsche Parteien- und Parlamentspolitik",
+                "time_horizon": "mittelfristig bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Politische Kommunikation kann die Wahrnehmung legitimer Kooperationsgrenzen beeinflussen.",
+                "source_support": "Die Quelle belegt die zugeschriebene Position und ihre Rahmung, nicht ihre Resonanz oder institutionelle Wirkung.",
+                "limitations": "Keine Publikumsdaten, Parteireaktion, Abstimmung, Kooperation oder Wahlverhaltensänderung liegt vor.",
+                "first_order": "Die Debatte über die „Brandmauer“ könnte an Sichtbarkeit und Bedeutung gewinnen.",
+                "second_order": "Parteien könnten ihre Kommunikations- und Kooperationsoptionen neu bewerten.",
+                "third_order": "Bei dauerhafter Umsetzung könnten sich demokratische Abgrenzungsnormen und Korrekturmechanismen verändern; dies ist nicht beobachtet.",
+                "research_pass": "second_pass",
+                "research_result": "Die Akte enthält keine unabhängige Resonanz- oder Institutionenevidenz. Der Pfad bleibt eine bedingte Hypothese über politische Kommunikation und spätere Entscheidungen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Parlamentarische und öffentliche Gegenkontrolle könnte die Wirkung begrenzen",
+                "direction": "positive",
+                "type": "counter_path",
+                "mechanism": "Parteiverfahren, öffentliche Kritik und parlamentarische Mehrheiten könnten eine veränderte Abgrenzung zurückweisen oder begrenzen.",
+                "recipients": [
+                  "Parteien",
+                  "Parlamente",
+                  "Wählerinnen und Wähler"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Korrekturmechanismen sind institutionell plausibel, aber in der Quelle weder beschrieben noch beobachtet."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Parteien und Parlamente könnten Gegenpositionen öffentlich verbreiten.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete Gegenentscheidung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Institutionelle Gegenkontrolle könnte über mehrere Verfahren wirken.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Politische Gegenpositionen und Entscheidungen bleiben korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Die Schutzwirkung für betroffene Gruppen ist möglich, aber nicht konkret nachgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft demokratische Kontrollmechanismen, ohne eine konkrete Reform zu belegen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es liegt keine beobachtete Gegenkontrolle oder konkrete Schutzgrenze vor.",
+                  "reference_frame": "demokratische Korrekturfähigkeit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur wenn andere politische Akteure die Position in Verfahren oder öffentlicher Debatte aufgreifen.",
+                "reference_space": "deutsche Parteien- und Parlamentspolitik",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Demokratische Gegenkräfte bleiben handlungsfähig und nutzen bestehende Verfahren.",
+                "source_support": "Die Quelle belegt keine Gegenreaktion; der Pfad folgt aus dem institutionellen Kontext, nicht aus einem berichteten Ereignis.",
+                "limitations": "Stärke, Richtung und Ergebnis möglicher Gegenkontrolle sind unbekannt.",
+                "first_order": "Die Aussage könnte Widerspruch und innerparteiliche Prüfung auslösen.",
+                "second_order": "Diese Prüfung könnte eine institutionelle Umsetzung begrenzen.",
+                "third_order": "Korrekturmechanismen könnten demokratische Abgrenzungsnormen stabilisieren; dies bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle berichtet Gegenreaktionen oder institutionelle Korrektur; die Wissensgrenze bleibt bestehen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Mögliche Normalisierung einer veränderten Abgrenzung zur AfD",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Normalisierung einer veränderten Abgrenzung zur AfD",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T12:10:30.579Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event",
+              "counter_evidence"
+            ],
+            "supported_claim": "Der Stern berichtet über Rheins Gastbeitrag, seine Kritik an der bisherigen „Brandmauer“-Strategie und seine Unterscheidung zwischen Ausgrenzung und Abgrenzung; die Quelle belegt zugleich keine konkrete Umsetzung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Keine gelieferte Quelle belegt eine menschliche Zustandsänderung. Ein negativer Pfad ist nur bedingt modellierbar: Er setzt spätere politische Entscheidungen voraus, die Schutz-, Verteilungs- oder Versorgungspolitik verändern könnten.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die politische Aussage könnte mittelbar Entscheidungen beeinflussen, die Menschen unterschiedlich betreffen. Ohne konkrete Maßnahme, Zuständigkeit oder Betroffenengruppe bleibt Reichweite und Richtung der menschlichen Folgen unsicher.",
+          "primary_paths": [
+            {
+              "label": "Mögliche mittelbare Veränderung politischer Schutz- und Verteilungsentscheidungen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Eine veränderte Abgrenzung gegenüber der AfD könnte bei späteren Mehrheits- oder Kooperationsentscheidungen politische Prioritäten und damit den Zugang zu Schutz, Versorgung oder Teilhabe beeinflussen.",
+              "recipients": [
+                "potenziell betroffene Bevölkerungsgruppen",
+                "politisch vulnerable Gruppen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist nur indirekt und setzt mehrere nicht belegte politische Schritte voraus."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Reichweite hängt von späteren politischen Entscheidungen ab.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle beschreibt keine konkrete Maßnahme oder unmittelbare Belastung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine längere Wirkung wäre an dauerhafte politische Umsetzung gebunden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Politische Positionen und Entscheidungen wären grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Bei Umsetzung könnten vulnerable Gruppen ungleich betroffen sein; konkrete Gruppen sind nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein systemischer Einfluss ist möglich, aber bislang nur über einen hypothetischen Mehrheitsweg.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine konkrete Schutzgrenze oder eingetretene Verletzung belegt.",
+                "reference_frame": "Schutz und gleichberechtigte politische Teilhabe",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur wenn aus der Position konkrete Kooperationen, Mehrheiten oder politische Maßnahmen folgen.",
+              "reference_space": "Deutschland; politische Entscheidungen mit möglichen Folgen für betroffene Gruppen",
+              "time_horizon": "mittelfristig, falls politische Umsetzung folgt",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Aussage verändert politische Optionen und wird anschließend in Entscheidungen übersetzt.",
+              "source_support": "Die Quelle belegt eine politische Position, nicht deren Umsetzung oder menschliche Folgen.",
+              "limitations": "Keine Maßnahme, Betroffenenzahl, Zustandsmessung oder unabhängige Folgebeobachtung liegt vor.",
+              "first_order": "Die Debatte über politische Prioritäten könnte sich verschieben.",
+              "second_order": "Spätere Entscheidungen könnten Zugang zu Schutz oder Versorgung unterschiedlich beeinflussen.",
+              "third_order": "Dauerhafte Kooperationsmuster könnten Verteilungs- und Schutzinstitutionen verändern; dies bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle im Bestand belegt konkrete menschliche Auswirkungen; der Pfad bleibt hypothetisch.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Politische Gegenreaktionen könnten Schutzpositionen stabilisieren",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Öffentliche und innerparteiliche Gegenpositionen könnten eine Umsetzung begrenzen und bestehende Schutzstandards erhalten.",
+              "recipients": [
+                "politische Institutionen",
+                "betroffene Gruppen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Gegenreaktionen sind plausibel, aber nicht beobachtet oder in der Quelle belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Gegenreaktionen könnten politische Akteure erreichen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Gegenmaßnahme ist nicht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer wäre von der politischen Mobilisierung abhängig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Gegenpositionen und Verfahren bleiben grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Schutzwirkung für vulnerable Gruppen ist möglich, aber nicht konkret belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad wirkt nur über politische Begrenzung und Institutionen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete Schutzgrenze oder beobachtete Gegenreaktion liegt vor.",
+                "reference_frame": "Schutz und gleichberechtigte politische Teilhabe",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur wenn Gegenpositionen in innerparteiliche oder parlamentarische Verfahren eingebracht werden.",
+              "reference_space": "Deutschland",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Demokratische Verfahren und Gegenpositionen bleiben wirksam.",
+              "source_support": "Die Quelle belegt keine Gegenreaktion; sie belegt nur Rheins Position.",
+              "limitations": "Akteure, Stärke und Ergebnis möglicher Gegenreaktionen sind unbekannt.",
+              "first_order": "Die politische Position könnte Widerspruch auslösen.",
+              "second_order": "Widerspruch könnte eine Umsetzung begrenzen.",
+              "third_order": "Institutionelle Korrekturen könnten bestehende Schutzstandards stabilisieren; dies ist offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle belegt eine Gegenreaktion; der Pfad bleibt eine Wissenshypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche mittelbare Veränderung politischer Schutz- und Verteilungsentscheidungen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche mittelbare Veränderung politischer Schutz- und Verteilungsentscheidungen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "neutral",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferte Quelle nennt keine Umweltmaßnahme, keinen Energie- oder Infrastrukturpfad und keine ökologische Zustandsänderung. Eine mittelbare Wirkung ist ohne konkrete politische Umsetzung nicht belastbar modellierbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Für den unmittelbaren Zeitraum ist eine ökologische Änderung durch die einzelne politische Aussage praktisch vernachlässigbar. Ein späterer Umweltpfad wäre an nicht belegte politische Entscheidungen gebunden.",
+          "primary_paths": [
+            {
+              "label": "Keine unmittelbar erkennbare ökologische Zustandsänderung durch die Aussage",
+              "direction": "neutral",
+              "type": "main_path",
+              "mechanism": "Die Aussage betrifft den politischen Umgang mit der AfD und benennt keine Umwelt-, Energie- oder Ressourcenentscheidung.",
+              "recipients": [
+                "Ökosysteme",
+                "künftige politische Umweltentscheidungen"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Im belegten Gegenstand und unmittelbaren Zeithorizont ist keine ökologische Veränderung erkennbar."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Keine Umweltadressaten oder ökologische Reichweite sind benannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Belastung oder Verbesserung wird beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Keine ökologische Dauerwirkung ist aus der Aussage ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Es gibt keinen belegten ökologischen Eingriff.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine betroffenen Ökosysteme oder vulnerablen Räume sind benannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Systempfad wird durch die Quelle gestützt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird berührt oder beschrieben.",
+                "reference_frame": "ökologische Integrität",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Gilt für die politische Aussage selbst und ohne nachfolgende konkrete Sachentscheidung.",
+              "reference_space": "durch die Quelle bestimmter politischer Gegenstand",
+              "time_horizon": "unmittelbar bis kurzfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Keine nicht gelieferte Umwelt- oder Energieentscheidung wird unterstellt.",
+              "source_support": "Die Quelle enthält ausschließlich eine politische Aussage zur AfD-Strategie.",
+              "limitations": "Spätere Regierungs- oder Mehrheitsentscheidungen sind unbekannt und nicht zurechenbar.",
+              "first_order": "Keine belegte ökologische Zustandsänderung.",
+              "second_order": "Ein Umweltpfad könnte erst bei konkreter späterer Politik entstehen.",
+              "third_order": "Ökologische Rückkopplungen sind auf Grundlage der Quelle nicht bestimmbar.",
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Prüfung des gelieferten Textes ergab keinen Umwelt- oder Energiebezug; weitere Quellen sind nicht vorhanden.",
+              "negligibility_rationale": "Für den beschriebenen Gegenstand und Zeithorizont fehlt ein ökologischer Eingriff; die potenzielle Änderung ist daher praktisch vernachlässigbar.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Keine unmittelbar erkennbare ökologische Zustandsänderung durch die Aussage",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Keine unmittelbar erkennbare ökologische Zustandsänderung durch die Aussage",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt eine politische Neurahmung, aber keine Kooperation oder institutionelle Folge. Ein demokratischer Wirkpfad ist deshalb als Möglichkeit modellierbar, nicht als eingetretene Wirkung.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die Aussage betrifft ausdrücklich eine politische Abgrenzungsstrategie und könnte Wahrnehmungen möglicher Kooperationen verändern. Das demokratische Potenzial ist materiell, der Eintritt und die Richtung konkreter institutioneller Folgen bleiben offen.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Normalisierung einer veränderten Abgrenzung zur AfD",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die Unterscheidung zwischen Ausgrenzung und Abgrenzung könnte die wahrgenommene politische Legitimität späterer Gespräche, Mehrheiten oder Kooperationen verändern.",
+              "recipients": [
+                "Wählerinnen und Wähler",
+                "Parteien und Parlamente",
+                "politische Institutionen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Aussage hat potenziell systemische Bedeutung, führt aber nicht automatisch zu institutionellen Veränderungen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die Position eines Ministerpräsidenten kann parteiinterne und öffentliche Debatten erreichen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Formulierung stellt eine etablierte Strategie ausdrücklich in Frage.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine dauerhafte Wirkung wäre an wiederholte Aussagen oder politische Umsetzung gebunden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Öffentliche Positionen und politische Verfahren sind grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Politische Minderheiten und betroffene Gruppen könnten von veränderten Normen unterschiedlich betroffen sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad berührt mögliche Kooperations- und Mehrheitsnormen, bleibt aber ohne Institutionenbeleg.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Verletzung ist nicht belegt.",
+                "reference_frame": "demokratische Korrekturfähigkeit und politische Gleichheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die Position von weiteren politischen Akteuren aufgegriffen und in Verfahren oder Kooperationen übersetzt wird.",
+              "reference_space": "deutsche Parteien- und Parlamentspolitik",
+              "time_horizon": "mittelfristig bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Politische Kommunikation kann die Wahrnehmung legitimer Kooperationsgrenzen beeinflussen.",
+              "source_support": "Die Quelle belegt die zugeschriebene Position und ihre Rahmung, nicht ihre Resonanz oder institutionelle Wirkung.",
+              "limitations": "Keine Publikumsdaten, Parteireaktion, Abstimmung, Kooperation oder Wahlverhaltensänderung liegt vor.",
+              "first_order": "Die Debatte über die „Brandmauer“ könnte an Sichtbarkeit und Bedeutung gewinnen.",
+              "second_order": "Parteien könnten ihre Kommunikations- und Kooperationsoptionen neu bewerten.",
+              "third_order": "Bei dauerhafter Umsetzung könnten sich demokratische Abgrenzungsnormen und Korrekturmechanismen verändern; dies ist nicht beobachtet.",
+              "research_pass": "second_pass",
+              "research_result": "Die Akte enthält keine unabhängige Resonanz- oder Institutionenevidenz. Der Pfad bleibt eine bedingte Hypothese über politische Kommunikation und spätere Entscheidungen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Parlamentarische und öffentliche Gegenkontrolle könnte die Wirkung begrenzen",
+              "direction": "positive",
+              "type": "counter_path",
+              "mechanism": "Parteiverfahren, öffentliche Kritik und parlamentarische Mehrheiten könnten eine veränderte Abgrenzung zurückweisen oder begrenzen.",
+              "recipients": [
+                "Parteien",
+                "Parlamente",
+                "Wählerinnen und Wähler"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Korrekturmechanismen sind institutionell plausibel, aber in der Quelle weder beschrieben noch beobachtet."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Parteien und Parlamente könnten Gegenpositionen öffentlich verbreiten.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete Gegenentscheidung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Institutionelle Gegenkontrolle könnte über mehrere Verfahren wirken.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Politische Gegenpositionen und Entscheidungen bleiben korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Die Schutzwirkung für betroffene Gruppen ist möglich, aber nicht konkret nachgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft demokratische Kontrollmechanismen, ohne eine konkrete Reform zu belegen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es liegt keine beobachtete Gegenkontrolle oder konkrete Schutzgrenze vor.",
+                "reference_frame": "demokratische Korrekturfähigkeit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur wenn andere politische Akteure die Position in Verfahren oder öffentlicher Debatte aufgreifen.",
+              "reference_space": "deutsche Parteien- und Parlamentspolitik",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Demokratische Gegenkräfte bleiben handlungsfähig und nutzen bestehende Verfahren.",
+              "source_support": "Die Quelle belegt keine Gegenreaktion; der Pfad folgt aus dem institutionellen Kontext, nicht aus einem berichteten Ereignis.",
+              "limitations": "Stärke, Richtung und Ergebnis möglicher Gegenkontrolle sind unbekannt.",
+              "first_order": "Die Aussage könnte Widerspruch und innerparteiliche Prüfung auslösen.",
+              "second_order": "Diese Prüfung könnte eine institutionelle Umsetzung begrenzen.",
+              "third_order": "Korrekturmechanismen könnten demokratische Abgrenzungsnormen stabilisieren; dies bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle berichtet Gegenreaktionen oder institutionelle Korrektur; die Wissensgrenze bleibt bestehen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Mögliche Normalisierung einer veränderten Abgrenzung zur AfD",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Mögliche Normalisierung einer veränderten Abgrenzung zur AfD",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T12:07:23.976Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T11:40:33.000Z",
+      "last_updated": "2026-09-16T12:10:30.575Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-fd5042e3160fd16816f5",
+      "case_file": null,
+      "source_published_at": "2026-09-16T11:40:33.000Z",
+      "published_at": "2026-09-16T12:10:30.575Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/cdu-ministerpraesident-rhein-fordert-ende-der-ausgrenzung-der-afd-38261882.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T11:40:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-695ce2c4e8c482f1",
       "title_image": {
@@ -42680,76 +45592,6 @@
           "url": "https://www.wiwo.de/unternehmen/industrie/sanofi-steigt-bei-cheplapharm-ein-so-kam-es-zu-dem-milliarden-deal/100254390.html",
           "source_type": "media_rss",
           "published_at": "2026-09-14T13:27:51.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-aa6a91f8546c7299",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-aa6a91f8546c7299-3bb1ff96ea71211a-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-aa6a91f8546c7299-4f6159cca32883b6-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-aa6a91f8546c7299-3a3ddbfa01fd51c0-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "technologie-bundesregierung-nehmen-ki-warnungen-sehr-ernst-trump-sieht-verschworung-und--6c7299",
-      "title": "Deutschlandfunk berichtet: Bundesregierung nimmt KI-Warnungen ernst, Trump lehnt Regulierung ab",
-      "source_summary": "Der Deutschlandfunk berichtet über eine weitergehende Debatte zu Sicherheitsrisiken künstlicher Intelligenz. Das Bundesdigitalministerium verweist demnach auf ein neu gegründetes nationales KI-Sicherheitsinstitut, das sicherheitsrelevante Risiken frühzeitig identifizieren soll.\n\nIm Bericht werden außerdem Forderungen nach stärkerer Regulierung und die ablehnende Haltung von US-Präsident Trump gegenüber solchen Forderungen genannt. Trump habe Sicherheitsbedenken zurückgewiesen und von einer „Verschwörung“ gesprochen. Der vollständige Kontext der Aussagen und die konkrete Ausstattung oder Arbeitsweise des Instituts sind in den gelieferten Auszügen nicht belegt.",
-      "summary": "Der Deutschlandfunk berichtet über ein neues nationales KI-Sicherheitsinstitut und die Debatte über stärkere Regulierung. Zugleich weist US-Präsident Trump solche Forderungen zurück; konkrete Folgen der angekündigten oder geforderten Schritte sind noch offen.",
-      "detail_summary": "Der Deutschlandfunk berichtet über Forderungen nach einer Verlangsamung der KI-Forschung und über Sicherheitsrisiken der Technologie. Das Bundesdigitalministerium verweist auf ein neu gegründetes nationales KI-Sicherheitsinstitut zur frühen Identifizierung solcher Risiken. Der UN-Menschenrechtskommissar Türk fordert laut Bericht stärkere Regulierung. US-Präsident Trump weist solche Forderungen zurück und spricht von einer „Verschwörung“. Belegt ist damit eine politische Kontroverse, nicht aber eine bereits eingetretene Veränderung bei Sicherheit, Wettbewerb oder Zugang.",
-      "why_relevant": "Die Meldung verbindet einen neuen institutionellen Ansatz zur KI-Sicherheit mit einer international umstrittenen Regulierungsfrage. Die konkreten Folgen bleiben offen.",
-      "topic": [
-        "Technologie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "impact_assessment": null,
-      "impact_sources": [],
-      "dimensions": null,
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-14T16:18:31.179Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-14T15:29:12.000Z",
-      "last_updated": "2026-09-14T16:18:31.179Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-8002c1171d4b03e8fd28",
-      "case_file": null,
-      "source_published_at": "2026-09-14T15:29:12.000Z",
-      "published_at": "2026-09-14T16:18:31.179Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/bundesregierung-nehmen-ki-warnungen-sehr-ernst-trump-sieht-verschwoerung-und-lehnt-regulierung-ab-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-14T15:29:12.000Z",
           "primary_source": false
         }
       ]
