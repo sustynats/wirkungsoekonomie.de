@@ -403,3 +403,33 @@ test('eine Nachlieferung auf eine unbekannte Kennung bleibt ein gewöhnlicher Au
   assert.equal('supplement_of' in result, false);
   assert.ok(JSON.stringify(seen).includes('Zusatz ohne Ziel'));
 });
+
+test('kein Auftrag bleibt liegen: jeder Versuch ohne Ergebnis läuft nach einer Korrektur genau einmal je Version nach', async () => {
+  const { WORKER_VERSION } = await import('../../scripts/news/redaktionsworker.mjs');
+  const attemptKey = `github-attempt:${jobId}`;
+  const setup = (attempt) => {
+    const session = fakeSession([queuedJob()]);
+    session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
+    session.observations.set(attemptKey, { job_id: jobId, provider_called: true, ...attempt });
+    return session;
+  };
+  const draft = async () => ({ output: { preview: preview() }, usage: { input_tokens: 5000, output_tokens: 2000 }, model: 'gpt-5.6-luna', cost: 0.003, answer: '{}' });
+  const row = { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' };
+  // 16.09.: drei Aufträge standen auf „Versuch verbraucht, nichts geliefert",
+  // einer seit dem 13.09. Jede dieser Ursachen ist technisch oder formal.
+  for (const status of ['validation_failed', 'output_unusable', 'started']) {
+    const session = setup({ status, version: 'redaktionsworker-4' });
+    const retried = await processEditorialRequest(session, row, { knowledge, draft, now });
+    assert.equal(retried.status, 'output_delivered', status);
+    assert.equal(session.observations.get(attemptKey).retried_for_version, WORKER_VERSION);
+  }
+  // Ein Altvermerk ohne Versionsangabe gilt ebenfalls als ältere Version.
+  const legacy = setup({ status: 'output_unusable' });
+  assert.equal((await processEditorialRequest(legacy, row, { knowledge, draft, now })).status, 'output_delivered');
+  // Ein geliefertes Ergebnis ist ein Ergebnis, auch als begründeter HOLD.
+  const delivered = setup({ status: 'output_delivered', disposition: 'hold', version: 'redaktionsworker-4' });
+  assert.equal((await processEditorialRequest(delivered, row, { knowledge, draft: async () => assert.fail('kein Nachlauf nach geliefertem Ergebnis'), now })).status, 'attempt_exhausted');
+  // Pro Version genau ein Nachlauf, auch wenn dieser wieder scheitert.
+  const twice = setup({ status: 'validation_failed', version: 'redaktionsworker-4', retried_for_version: WORKER_VERSION });
+  assert.equal((await processEditorialRequest(twice, row, { knowledge, draft: async () => assert.fail('kein zweiter Nachlauf je Version'), now })).status, 'attempt_exhausted');
+});

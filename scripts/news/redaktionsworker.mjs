@@ -22,7 +22,7 @@ import { modelRates } from './budget.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const WORKER_ACTOR = 'github_direct_worker';
-export const WORKER_VERSION = 'redaktionsworker-5';
+export const WORKER_VERSION = 'redaktionsworker-6';
 // The three steps of one worker run (candidates, episodes, drafts) each acquire the
 // import lane; a shared manual run id would mark the slot completed after the first
 // step (23:35 UTC: BRIDGE_SLOT_ALREADY_COMPLETED skipped the drafts). The step digit
@@ -234,7 +234,15 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   // (16.09.: EDITORIAL_MARKDOWN_DUPLICATE_TITLE, der Vertrag nannte die Regel
   // nicht). Nach einer Vertragskorrektur, erkennbar an der höheren
   // Workerversion, darf genau ein weiterer Versuch folgen.
-  const contractFixed = attempt?.status === 'validation_failed' && attempt.version !== WORKER_VERSION && !attempt.retried_after_contract_fix;
+  // Kein Auftrag bleibt liegen: Ein Versuch, der nichts abgeliefert hat, war
+  // technisch oder formal gescheitert - nicht redaktionell entschieden. Nach
+  // einer Korrektur, erkennbar an der höheren Workerversion, folgt genau ein
+  // weiterer Versuch je Version. Ein gelieferter Entwurf (auch ein HOLD mit
+  // Begründung) ist ein Ergebnis und wird nicht wiederholt.
+  // 16.09.: drei Aufträge standen auf 'attempt_exhausted, delivered: false',
+  // einer davon seit dem 13.09.; Natalie hat sie nie zur Freigabe gesehen.
+  const contractFixed = Boolean(attempt) && attempt.status !== 'output_delivered' && attempt.version !== WORKER_VERSION
+    && attempt.retried_for_version !== WORKER_VERSION;
   if (attempt?.provider_called && !contractFixed) return { job_id: id, status: 'attempt_exhausted', delivered: attempt.status === 'output_delivered' };
   const outputPath = bridgePath('20_OUTPUT_READY', `${id}.output.json`);
   if (await session.transport.metadata(outputPath) || await session.transport.metadata(bridgePath('30_ACK', `${id}.ack.json`))) return { job_id: id, status: 'already_delivered' };
@@ -269,13 +277,13 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
     catch { return { job_id: id, status: 'claim_unknown' }; }
     await session.store.observe(`github-claim:${name}`, { job_id: id, actor: WORKER_ACTOR, packet_hash: hash(packet), state: 'claimed', at: now() });
   }
-  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'started', at: now(), request_key: request.key, ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
+  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'started', at: now(), request_key: request.key, ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
   let result;
   try { result = await draft(request); }
   catch (error) {
     const status = error.providerNotCalled ? 'provider_unavailable' : 'output_unusable';
     const message = [String(error.message), error.detail].filter(Boolean).join(' · ').slice(0, 320);
-    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: !error.providerNotCalled, status, error: message, usage: error.usage || null, cost_usd: error.cost ?? null, at: now(), ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
+    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: !error.providerNotCalled, status, error: message, usage: error.usage || null, cost_usd: error.cost ?? null, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
     return { job_id: id, status, error: message, cost_usd: error.cost ?? 0 };
   }
   if (rawOutputDir) {
@@ -288,7 +296,7 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   try { validated = validateApiOutput(output, packet, now()); }
   catch (error) {
     const message = [String(error.message), ...(error.issues || []), ...(previewRepairs.length ? [`angeglichen: ${previewRepairs.join('; ')}`] : [])].join('\n').slice(0, 2000);
-    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'validation_failed', error: message, usage: result.usage, cost_usd: result.cost, at: now(), ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
+    await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'validation_failed', error: message, usage: result.usage, cost_usd: result.cost, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
     return { job_id: id, status: 'validation_failed', error: message.slice(0, 200), cost_usd: result.cost };
   }
   const latest = await session.store.get(id);
@@ -297,7 +305,7 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   await session.transport.writeAtomic(outputPath, validated);
   if (hash(JSON.parse(await session.transport.read(outputPath))) !== hash(validated)) throw new Error('EDITORIAL_DELIVERY_READBACK_FAILED');
   await session.transport.writeAtomic(bridgePath('95_LOGS', `processor-github-${id}.json`), { actor: WORKER_ACTOR, version: WORKER_VERSION, job_id: id, request_key: request.key, output_hash: hash(validated), model: result.model, usage: result.usage, web_searches: result.web_searches ?? 0, preview_repairs: previewRepairs, cost_usd: result.cost, delivered_at: now(), status: 'OUTPUT_DELIVERED_NOT_PUBLISHED', disposition: validated.disposition || 'preview', ...(adoptedClaim ? { adopted_stale_claim_from: adoptedClaim } : {}) });
-  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', disposition: validated.disposition || 'preview', hold_code: validated.hold?.code || null, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, at: now(), ...(contractFixed ? { retried_after_contract_fix: true } : {}) });
+  await session.store.observe(`github-attempt:${id}`, { job_id: id, actor: WORKER_ACTOR, version: WORKER_VERSION, provider_called: true, status: 'output_delivered', disposition: validated.disposition || 'preview', hold_code: validated.hold?.code || null, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, usage: result.usage, web_searches: result.web_searches ?? 0, cost_usd: result.cost, at: now(), ...(contractFixed ? { retried_after_contract_fix: true, retried_for_version: WORKER_VERSION } : {}) });
   return { job_id: id, status: 'output_delivered', disposition: validated.disposition || 'preview', cost_usd: result.cost, model: result.model,
     ...(supplement ? { supplement_of: supplement.job_id, supplement_previous_version: Boolean(supplement.previous_version) } : {}), web_searches: result.web_searches ?? 0, source_excerpts: sourceExcerpts.filter((e) => e.excerpt).length, preview_repairs: previewRepairs, ...(validated.disposition === 'hold' ? { hold_code: validated.hold?.code || null } : {}) };
 }
