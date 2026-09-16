@@ -2,8 +2,3124 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T15:37:36.559Z",
+  "updated_at": "2026-09-16T16:37:31.544Z",
   "stories": [
+    {
+      "story_id": "wt-668e16a065c48a7c",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-668e16a065c48a7c-620db58b0b77621c-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-668e16a065c48a7c-748470647c15931d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-668e16a065c48a7c-a6dd0327087e990c-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "vor-der-landtagswahl-schwesig-fordert-beteiligung-der-lander-an-sozialreformen-c48a7c",
+      "title": "Laut Stern fordert Schwesig Beteiligung der Länder an Sozialreformen",
+      "source_summary": "Der Stern berichtet vor der Landtagswahl in Mecklenburg-Vorpommern über eine Forderung von Manuela Schwesig nach einer Beteiligung der Länder an Sozialreformen. Der vorliegende Auszug nennt jedoch keine konkreten Reformen, Zuständigkeiten oder Verfahren.\n\nDer Bericht ordnet außerdem eine Warnung der SPD-Spitzenkandidatin vor der AfD einem Interview zu. Schwesig wird mit der Aussage wiedergegeben, sie erlebe Bedrohung und Sexismus durch die AfD.\n\nOffen bleiben der vollständige Gesprächskontext, Belege für die persönlichen Vorwürfe und die Frage, ob aus der Forderung ein politischer Prozess oder eine Umsetzung folgt. Die Akte enthält nur diese journalistische Quelle.",
+      "summary": "Der Stern berichtet über Schwesigs Forderung nach Länderbeteiligung an Sozialreformen und über ihre Warnung vor der AfD. Konkrete Reforminhalte, Belege und Umsetzungsschritte bleiben im vorliegenden Auszug offen.",
+      "detail_summary": "Der Stern berichtet vor der Landtagswahl in Mecklenburg-Vorpommern über eine Forderung Manuela Schwesigs, die Länder an Sozialreformen zu beteiligen. Welche Reformen, Zuständigkeiten oder Verfahren gemeint sind, geht aus dem vorliegenden Auszug nicht hervor. Zusätzlich wird Schwesig mit der Aussage wiedergegeben, sie erlebe Bedrohung und Sexismus durch die AfD. Der mögliche politische Pfad reicht von stärkerer Länderbeteiligung bis zu einer veränderten Debatte über Schutz und politische Verantwortung, setzt aber weitere Konkretisierung voraus. Für die persönlichen Vorwürfe und mögliche Folgen fehlen unabhängige Belege.",
+      "why_relevant": "Die Meldung verbindet eine politische Forderung zur Zuständigkeitsverteilung mit einer persönlichen Aussage über Bedrohung und Sexismus. Beides kann politisch relevant sein, ist im Auszug aber nur begrenzt konkretisiert.",
+      "topic": [
+        "Soziales"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht über Schwesigs Forderung nach Länderbeteiligung an Sozialreformen und ihre zugeschriebene Warnung vor der AfD",
+        "evaluation_target": {
+          "label": "politische Forderung zur Länderbeteiligung an Sozialreformen",
+          "type": "proposal"
+        },
+        "baseline": "Keine im Auszug konkretisierte neue Zuständigkeitsregel oder Umsetzung; politische Debatte vor der Landtagswahl",
+        "counterfactual": "Ohne weitere politische Konkretisierung bliebe die bestehende Verteilung von Zuständigkeiten und die bisherige öffentliche Debatte zunächst unverändert.",
+        "reference_frame": [
+          "föderale Zuständigkeitsordnung",
+          "soziale Teilhabe",
+          "Schutz politischer Akteure"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Eine konkrete Länderbeteiligung könnte Zugang und regionale Ausgestaltung sozialer Reformen beeinflussen; Verteilung, Versorgung und Schutzdimensionen bleiben wegen fehlender Inhalte offen.",
+            "planet": "Für ökologische Folgen gibt es im Auszug keinen konkreten Anknüpfungspunkt. Indirekte Effekte über spätere Sozial- oder Investitionsentscheidungen sind nur hypothetisch.",
+            "democracy": "Die Forderung könnte föderale Rechenschaft und politische Beteiligung verändern. Die persönliche Aussage könnte die Sicherheitsdebatte prägen; eine beobachtete Diskurswirkung ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Forderung könnte eine politische Prüfung stärkerer Länderbeteiligung auslösen; die Aussage könnte Aufmerksamkeit auf Bedrohung und Sexismus lenken.",
+          "second_order": "Bei Konkretisierung könnten Zuständigkeiten, regionale Unterschiede und politische Prioritäten neu verhandelt werden. Ohne Belege besteht zugleich ein Risiko zugespitzter Debatten.",
+          "third_order": "Eine dauerhafte institutionelle Verschiebung könnte föderale Entscheidungswege verändern; eine solche Kaskade ist derzeit nicht belegt und hängt von weiteren Entscheidungen ab.",
+          "enablement": [
+            "enables_legislation",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Der Auszug nennt keine konkreten Reforminhalte, keinen Beschluss und keine Umsetzung.",
+            "Für die zugeschriebenen persönlichen Vorwürfe liegt keine unabhängige Bestätigung vor.",
+            "Eine ökologische Zustandsänderung ist aus dem Material nicht ableitbar."
+          ],
+          "source_independence": "Es liegt nur eine journalistische Quelle aus einer Herkunft vor; unabhängige Bestätigung ist nicht hergestellt.",
+          "institutional_status": "Die Meldung belegt eine politische Forderung, aber keine Änderung geltender Zuständigkeiten und keinen Beschluss."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt weder konkrete Sozialreformen noch eine Zuständigkeitsänderung; mögliche Auswirkungen auf Menschen bleiben deshalb konditional.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Eine konkretisierte Länderbeteiligung könnte soziale Entscheidungen regional beeinflussen. Ohne Reforminhalt und Umsetzung ist die Richtung offen; der Pfad bleibt eine modellierte Möglichkeit.",
+            "primary_paths": [
+              {
+                "label": "Konkretisierte Länderbeteiligung könnte regionale Sozialentscheidungen verändern",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Eine politische Forderung könnte Verhandlungen über Zuständigkeiten und regionale Ausgestaltung sozialer Reformen anstoßen.",
+                "recipients": [
+                  "Länder",
+                  "Kommunen",
+                  "Menschen, die soziale Leistungen nutzen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die mögliche Reichweite reicht von keiner Umsetzung bis zu begrenzten regionalen Änderungen; konkrete Inhalte fehlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der betroffene Kreis ist ohne Reforminhalt nicht bestimmbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Zuständigkeitsänderung wäre zunächst politisch und indirekt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauerhafte Effekte hängen von späteren Entscheidungen ab.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Veränderung ist im Auszug konkret angelegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Soziale Reformen könnten besonders abhängige Gruppen erreichen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine föderale Debatte könnte institutionell begrenzte Tiefe entwickeln.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für Menschen ist aus dem Auszug nicht ableitbar.",
+                  "reference_frame": "soziale Teilhabe",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Es müsste ein konkreter Reformvorschlag mit Zuständigkeiten und politischer Unterstützung folgen.",
+                "reference_space": "föderale Sozialpolitik in Deutschland",
+                "time_horizon": "offen; nur bei späterer Konkretisierung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Forderung wird politisch weiterverfolgt und erhält institutionelle Aufmerksamkeit.",
+                "source_support": "Die Quelle belegt eine Forderung, nicht deren Umsetzung oder Wirkung.",
+                "limitations": "Reformgegenstand, Betroffenenkreis und Zeitplan fehlen.",
+                "first_order": "Mögliche Verlagerung politischer Beteiligung auf Länder.",
+                "second_order": "Mögliche regionale Unterschiede bei späterer Sozialpolitik.",
+                "third_order": "Mögliche dauerhafte Verschiebung föderaler Entscheidungswege; nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine konkrete Sozialreform oder Zuständigkeitsänderung im gelieferten Material.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Konkretisierte Länderbeteiligung könnte regionale Sozialentscheidungen verändern",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Konkretisierte Länderbeteiligung könnte regionale Sozialentscheidungen verändern",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Quellenbestand enthält keine Umwelt-, Energie-, Flächen- oder Emissionsangabe; ein planetarer Wirkungspfad ist nur als entfernte Möglichkeit späterer Politikgestaltung formulierbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Sozialreformen können in späteren politischen Entscheidungen mit Ressourcen- oder Infrastrukturfragen verbunden werden. Der vorliegende Bericht belegt dafür keinen konkreten Mechanismus.",
+            "primary_paths": [
+              {
+                "label": "Spätere Reformgestaltung könnte mittelbar Ressourcenentscheidungen berühren",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Eine veränderte institutionelle Beteiligung könnte spätere politische Prioritäten beeinflussen, sofern Reformen Umwelt- oder Infrastrukturfragen einschließen.",
+                "recipients": [
+                  "öffentliche Haushalte",
+                  "Umwelt und Ressourcen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Ohne ökologische Inhalte ist höchstens ein entfernter, unsicherer Pfad plausibel."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Ein ökologischer Betroffenenkreis ist nicht bestimmt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Konkrete ökologische Eingriffe werden nicht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Dauer wäre an spätere Politikentscheidungen gebunden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible Umweltveränderung ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Mögliche Umweltbetroffenheit bleibt abstrakt und indirekt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein späterer institutioneller Einfluss könnte begrenzt systemisch wirken.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenze oder Grenzverletzung ist im Material genannt.",
+                  "reference_frame": "ökologische Schutzgüter",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Die Forderung müsste in Reformen mit materiellen Umwelt- oder Ressourcenfolgen übersetzt werden.",
+                "reference_space": "Deutschland; spätere politische Entscheidungen",
+                "time_horizon": "offen und mehrstufig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die spätere Reformgestaltung enthält relevante Ressourcenentscheidungen.",
+                "source_support": "Die Quelle trägt nur die politische Forderung, nicht ökologische Inhalte.",
+                "limitations": "Es fehlen Umweltindikatoren, Maßnahmenbeschreibung und Umsetzungsdaten.",
+                "first_order": "Mögliche politische Priorisierung von Ressourcen.",
+                "second_order": "Mögliche Verteilungseffekte bei späteren Investitionen.",
+                "third_order": "Ökologische Kaskaden sind ohne konkrete Maßnahme nicht belastbar modellierbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine ökologische Folge oder konkrete Umweltkomponente im gelieferten Quellenbestand.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 4,
+                  "divisor": 6,
+                  "raw": 0.6666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Spätere Reformgestaltung könnte mittelbar Ressourcenentscheidungen berühren",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Spätere Reformgestaltung könnte mittelbar Ressourcenentscheidungen berühren",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt eine politische Forderung und eine zugeschriebene Aussage, aber keine Veränderung von Mehrheiten, Ämtern, Institutionen oder öffentlichem Verhalten.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die Forderung könnte föderale Rechenschaft und Beteiligung neu ordnen. Die Sicherheits- und Sexismusaussage könnte die Debatte beeinflussen, doch eine eingetretene Diskurswirkung ist nicht belegt.",
+            "primary_paths": [
+              {
+                "label": "Forderung und Sicherheitsaussage könnten die politische Debatte über Länderbeteiligung und Schutz prägen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Öffentliche politische Kommunikation kann Themenprioritäten, Verantwortungszuschreibungen und spätere Verhandlungen beeinflussen.",
+                "recipients": [
+                  "Wählerinnen und Wähler",
+                  "Länderparlamente",
+                  "politische Parteien"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die mögliche Wirkung reicht von begrenzter Aufmerksamkeit bis zu späteren institutionellen Verhandlungen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die Reichweite der Aussage ist im Material nicht gemessen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle zeigt eine politische Aussage, aber keine eingetretene Mobilisierung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine anhaltende Wirkung wäre von Wiederholung und Anschlusskommunikation abhängig.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Keine irreversible demokratische Veränderung ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Politische Debatten über Bedrohung können besonders exponierte Akteure betreffen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein möglicher Einfluss auf Prioritäten bliebe zunächst kommunikativ.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Verletzung ist nicht belegt.",
+                  "reference_frame": "demokratische Rechenschaft und politische Sicherheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Weitere Akteure müssten die Forderung oder Sicherheitsdebatte aufnehmen und in politische Entscheidungen übersetzen.",
+                "reference_space": "öffentliche politische Debatte in Mecklenburg-Vorpommern und im föderalen Raum",
+                "time_horizon": "bis zur Wahl und darüber hinaus offen",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Berichterstattung wird politisch aufgegriffen und beeinflusst Prioritätensetzung.",
+                "source_support": "Die Quelle belegt den Bericht und die zugeschriebene Aussage, nicht Resonanz oder Verhaltensänderung.",
+                "limitations": "Keine Publikumsdaten, Reaktionen, Umfragen oder Folgeentscheidungen liegen vor.",
+                "first_order": "Mögliche Verschiebung politischer Aufmerksamkeit.",
+                "second_order": "Mögliche neue Verantwortungszuschreibungen und Abgrenzungen.",
+                "third_order": "Mögliche Veränderung institutioneller Verhandlungen; nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Belege für Resonanz, Normalisierung, Mobilisierung oder institutionelle Folgen im gelieferten Material.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Forderung und Sicherheitsaussage könnten die politische Debatte über Länderbeteiligung und Schutz prägen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Forderung und Sicherheitsaussage könnten die politische Debatte über Länderbeteiligung und Schutz prägen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T16:41:36.814Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Der Stern-Bericht trägt die berichtete Forderung und die zugeschriebene Aussage von Manuela Schwesig."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt weder konkrete Sozialreformen noch eine Zuständigkeitsänderung; mögliche Auswirkungen auf Menschen bleiben deshalb konditional.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Eine konkretisierte Länderbeteiligung könnte soziale Entscheidungen regional beeinflussen. Ohne Reforminhalt und Umsetzung ist die Richtung offen; der Pfad bleibt eine modellierte Möglichkeit.",
+          "primary_paths": [
+            {
+              "label": "Konkretisierte Länderbeteiligung könnte regionale Sozialentscheidungen verändern",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Eine politische Forderung könnte Verhandlungen über Zuständigkeiten und regionale Ausgestaltung sozialer Reformen anstoßen.",
+              "recipients": [
+                "Länder",
+                "Kommunen",
+                "Menschen, die soziale Leistungen nutzen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die mögliche Reichweite reicht von keiner Umsetzung bis zu begrenzten regionalen Änderungen; konkrete Inhalte fehlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der betroffene Kreis ist ohne Reforminhalt nicht bestimmbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Zuständigkeitsänderung wäre zunächst politisch und indirekt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauerhafte Effekte hängen von späteren Entscheidungen ab.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Veränderung ist im Auszug konkret angelegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Soziale Reformen könnten besonders abhängige Gruppen erreichen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine föderale Debatte könnte institutionell begrenzte Tiefe entwickeln.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für Menschen ist aus dem Auszug nicht ableitbar.",
+                "reference_frame": "soziale Teilhabe",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Es müsste ein konkreter Reformvorschlag mit Zuständigkeiten und politischer Unterstützung folgen.",
+              "reference_space": "föderale Sozialpolitik in Deutschland",
+              "time_horizon": "offen; nur bei späterer Konkretisierung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Forderung wird politisch weiterverfolgt und erhält institutionelle Aufmerksamkeit.",
+              "source_support": "Die Quelle belegt eine Forderung, nicht deren Umsetzung oder Wirkung.",
+              "limitations": "Reformgegenstand, Betroffenenkreis und Zeitplan fehlen.",
+              "first_order": "Mögliche Verlagerung politischer Beteiligung auf Länder.",
+              "second_order": "Mögliche regionale Unterschiede bei späterer Sozialpolitik.",
+              "third_order": "Mögliche dauerhafte Verschiebung föderaler Entscheidungswege; nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine konkrete Sozialreform oder Zuständigkeitsänderung im gelieferten Material.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Konkretisierte Länderbeteiligung könnte regionale Sozialentscheidungen verändern",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Konkretisierte Länderbeteiligung könnte regionale Sozialentscheidungen verändern",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Quellenbestand enthält keine Umwelt-, Energie-, Flächen- oder Emissionsangabe; ein planetarer Wirkungspfad ist nur als entfernte Möglichkeit späterer Politikgestaltung formulierbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Sozialreformen können in späteren politischen Entscheidungen mit Ressourcen- oder Infrastrukturfragen verbunden werden. Der vorliegende Bericht belegt dafür keinen konkreten Mechanismus.",
+          "primary_paths": [
+            {
+              "label": "Spätere Reformgestaltung könnte mittelbar Ressourcenentscheidungen berühren",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Eine veränderte institutionelle Beteiligung könnte spätere politische Prioritäten beeinflussen, sofern Reformen Umwelt- oder Infrastrukturfragen einschließen.",
+              "recipients": [
+                "öffentliche Haushalte",
+                "Umwelt und Ressourcen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Ohne ökologische Inhalte ist höchstens ein entfernter, unsicherer Pfad plausibel."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Ein ökologischer Betroffenenkreis ist nicht bestimmt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Konkrete ökologische Eingriffe werden nicht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Dauer wäre an spätere Politikentscheidungen gebunden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible Umweltveränderung ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Mögliche Umweltbetroffenheit bleibt abstrakt und indirekt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein späterer institutioneller Einfluss könnte begrenzt systemisch wirken.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenze oder Grenzverletzung ist im Material genannt.",
+                "reference_frame": "ökologische Schutzgüter",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Die Forderung müsste in Reformen mit materiellen Umwelt- oder Ressourcenfolgen übersetzt werden.",
+              "reference_space": "Deutschland; spätere politische Entscheidungen",
+              "time_horizon": "offen und mehrstufig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die spätere Reformgestaltung enthält relevante Ressourcenentscheidungen.",
+              "source_support": "Die Quelle trägt nur die politische Forderung, nicht ökologische Inhalte.",
+              "limitations": "Es fehlen Umweltindikatoren, Maßnahmenbeschreibung und Umsetzungsdaten.",
+              "first_order": "Mögliche politische Priorisierung von Ressourcen.",
+              "second_order": "Mögliche Verteilungseffekte bei späteren Investitionen.",
+              "third_order": "Ökologische Kaskaden sind ohne konkrete Maßnahme nicht belastbar modellierbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine ökologische Folge oder konkrete Umweltkomponente im gelieferten Quellenbestand.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 4,
+                "divisor": 6,
+                "raw": 0.6666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Spätere Reformgestaltung könnte mittelbar Ressourcenentscheidungen berühren",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Spätere Reformgestaltung könnte mittelbar Ressourcenentscheidungen berühren",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt eine politische Forderung und eine zugeschriebene Aussage, aber keine Veränderung von Mehrheiten, Ämtern, Institutionen oder öffentlichem Verhalten.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die Forderung könnte föderale Rechenschaft und Beteiligung neu ordnen. Die Sicherheits- und Sexismusaussage könnte die Debatte beeinflussen, doch eine eingetretene Diskurswirkung ist nicht belegt.",
+          "primary_paths": [
+            {
+              "label": "Forderung und Sicherheitsaussage könnten die politische Debatte über Länderbeteiligung und Schutz prägen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Öffentliche politische Kommunikation kann Themenprioritäten, Verantwortungszuschreibungen und spätere Verhandlungen beeinflussen.",
+              "recipients": [
+                "Wählerinnen und Wähler",
+                "Länderparlamente",
+                "politische Parteien"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die mögliche Wirkung reicht von begrenzter Aufmerksamkeit bis zu späteren institutionellen Verhandlungen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die Reichweite der Aussage ist im Material nicht gemessen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle zeigt eine politische Aussage, aber keine eingetretene Mobilisierung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine anhaltende Wirkung wäre von Wiederholung und Anschlusskommunikation abhängig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Keine irreversible demokratische Veränderung ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Politische Debatten über Bedrohung können besonders exponierte Akteure betreffen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein möglicher Einfluss auf Prioritäten bliebe zunächst kommunikativ.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder institutionelle Verletzung ist nicht belegt.",
+                "reference_frame": "demokratische Rechenschaft und politische Sicherheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Weitere Akteure müssten die Forderung oder Sicherheitsdebatte aufnehmen und in politische Entscheidungen übersetzen.",
+              "reference_space": "öffentliche politische Debatte in Mecklenburg-Vorpommern und im föderalen Raum",
+              "time_horizon": "bis zur Wahl und darüber hinaus offen",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Berichterstattung wird politisch aufgegriffen und beeinflusst Prioritätensetzung.",
+              "source_support": "Die Quelle belegt den Bericht und die zugeschriebene Aussage, nicht Resonanz oder Verhaltensänderung.",
+              "limitations": "Keine Publikumsdaten, Reaktionen, Umfragen oder Folgeentscheidungen liegen vor.",
+              "first_order": "Mögliche Verschiebung politischer Aufmerksamkeit.",
+              "second_order": "Mögliche neue Verantwortungszuschreibungen und Abgrenzungen.",
+              "third_order": "Mögliche Veränderung institutioneller Verhandlungen; nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Belege für Resonanz, Normalisierung, Mobilisierung oder institutionelle Folgen im gelieferten Material.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Forderung und Sicherheitsaussage könnten die politische Debatte über Länderbeteiligung und Schutz prägen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Forderung und Sicherheitsaussage könnten die politische Debatte über Länderbeteiligung und Schutz prägen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T16:37:31.544Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-14T02:00:04.000Z",
+      "last_updated": "2026-09-16T16:41:36.811Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-b2ea4ecfab61e153f226",
+      "case_file": null,
+      "source_published_at": "2026-09-14T02:00:04.000Z",
+      "published_at": "2026-09-14T08:44:44.807Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Welche konkrete Form der Länderbeteiligung an Sozialreformen fordert Schwesig, und auf welche Reformen bezieht sie sich?",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Originalinterview mit vollständigem Kontext und konkreten Reformvorschlägen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c6b3cf2bb9a2ca84",
+          "announced_at": "2026-09-14T02:00:04.000Z",
+          "follow_up_date": "2026-09-21T08:44:44.807Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Auf welche konkreten Vorfälle beziehen sich die Aussagen über Bedrohung und Sexismus?",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Belegte Angaben zu Vorfällen, Zeitraum und Einordnung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2ffbf6484bffb4fb",
+          "announced_at": "2026-09-14T02:00:04.000Z",
+          "follow_up_date": "2026-09-21T08:44:44.807Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/mecklenburg-vorpommern/vor-der-landtagswahl--schwesig-fordert-beteiligung-der-laender-an-sozialreformen-38248690.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-14T02:00:04.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4fe74829f9063791",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4fe74829f9063791-c45ae9e5ce930eec-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4fe74829f9063791-a0b009d45c2d69e5-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4fe74829f9063791-7e91d9a87d04db96-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "usa-widersetzt-sich-fed-chef-kevin-warsh-dem-druck-von-us-prasident-donald-trump-063791",
+      "title": "Laut DER SPIEGEL: Widersetzt sich Fed-Chef Kevin Warsh dem Druck von Donald Trump?",
+      "source_summary": "DER SPIEGEL berichtet über den neuen Fed-Chef Kevin Warsh und beschreibt seine Aufgabe als Spannungsfeld zwischen Inflationsbekämpfung und den Erwartungen von US-Präsident Donald Trump. Die Überschrift fragt, ob Warsh dem Druck des Präsidenten widerstehen könnte.\n\nIm Abstract wird die mögliche Zinspolitik als Kern des Konflikts beschrieben: Zur Bekämpfung der Inflation könnten höhere Zinsen nötig sein, während Trump als politischer Fürsprecher Warshs Erwartungen an ihn haben könnte.\n\nDie Quelle ordnet den Vorgang als Test der Unabhängigkeit des obersten US-Währungshüters ein. Eine unabhängige Bestätigung, konkrete Entscheidungen Warshs oder bereits eingetretene Folgen für Zinsen, Inflation und Märkte liegen im gelieferten Material nicht vor.",
+      "summary": "DER SPIEGEL beschreibt für den neuen Fed-Chef Kevin Warsh ein mögliches Spannungsfeld zwischen Inflationsbekämpfung und den Erwartungen Donald Trumps. Ob daraus ein konkreter Konflikt oder eine Veränderung der Geldpolitik entsteht, bleibt offen.",
+      "detail_summary": "DER SPIEGEL berichtet über den neuen Fed-Chef Kevin Warsh und beschreibt seine Aufgabe als Spannungsfeld zwischen Inflationsbekämpfung und den Erwartungen seines politischen Fürsprechers Donald Trump. Höhere Zinsen könnten aus Sicht der Quelle zur Inflationsbekämpfung nötig sein. Der Bericht stellt deshalb die Unabhängigkeit des obersten US-Währungshüters als Prüfpunkt dar. Belegt sind damit eine journalistische Einordnung und eine offene Frage, nicht aber eine konkrete Entscheidung Warshs oder ein bereits beobachteter Markteffekt. Für die Wirkung bleiben insbesondere tatsächliche Zinssignale, institutionelle Reaktionen und unabhängige Bestätigung offen.",
+      "why_relevant": "Die geldpolitische Unabhängigkeit der US-Notenbank kann Erwartungen an Zinsen, Inflation und Finanzmärkte beeinflussen; der gelieferte Beleg beschreibt bislang nur ein mögliches Spannungsfeld.",
+      "topic": [
+        "Finanzen",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Bericht von DER SPIEGEL über ein mögliches Spannungsfeld zwischen Fed-Chef Kevin Warsh, Inflationsbekämpfung und den Erwartungen Donald Trumps",
+        "evaluation_target": {
+          "label": "Wahrnehmung und mögliche institutionelle Folgen eines beschriebenen politischen Drucks auf die US-Notenbank",
+          "type": "narrative"
+        },
+        "baseline": "Keine im gelieferten Material belegte konkrete Entscheidung, Marktreaktion oder institutionelle Reaktion.",
+        "counterfactual": "Ohne die beschriebene öffentliche Einordnung bliebe dieses mögliche Spannungsfeld im vorliegenden Nachrichtenbestand weniger sichtbar; konkrete geldpolitische Entscheidungen könnten dennoch unabhängig davon getroffen werden.",
+        "reference_frame": [
+          "Unabhängigkeit der Zentralbank",
+          "institutionelle Rechenschaft",
+          "Stabilität von Zins- und Inflationserwartungen"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein möglicher Vertrauens- oder Finanzierungseffekt könnte Haushalte, Unternehmen und Beschäftigte mittelbar betreffen; konkrete Verteilungs- oder Gesundheitsfolgen sind nicht belegt.",
+            "planet": "Zins- und Finanzierungsbedingungen könnten mittelbar Investitionen und damit ökologische Transformation beeinflussen; konkrete Umweltfolgen sind im Material nicht belegt.",
+            "democracy": "Die Wahrnehmung politischer Einflussnahme könnte die Einschätzung institutioneller Unabhängigkeit und demokratischer Rechenschaft beeinflussen; tatsächlicher Druck oder institutioneller Wandel ist nicht beobachtet."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Die Berichterstattung könnte die Wahrnehmung eines möglichen Konflikts zwischen politischem Einfluss und geldpolitischer Unabhängigkeit verändern.",
+          "second_order": "Bei konkreten geldpolitischen Signalen könnten sich Erwartungen an Zinsen, Inflation und Finanzierung verändern; die Quelle belegt solche Signale nicht.",
+          "third_order": "Eine wiederholte Wahrnehmung politischer Einflussnahme könnte institutionelles Vertrauen und die Korrekturfähigkeit der Geldpolitik belasten; dieser Pfad bleibt hypothetisch.",
+          "enablement": [],
+          "counter_evidence": [
+            "Es liegt keine unabhängige Bestätigung vor.",
+            "Die Quelle belegt weder eine konkrete Weisung noch eine Entscheidung Warshs.",
+            "Es fehlen beobachtete Markt-, Inflations- oder institutionelle Reaktionen."
+          ],
+          "source_independence": "Die beiden gelieferten Belege stammen aus demselben Verlag und sind keine unabhängigen Herkünfte; die Unabhängigkeit ist nicht verifiziert.",
+          "institutional_status": "Der gelieferte Text beschreibt den neuen Fed-Chef und eine mögliche Prüfung seiner Unabhängigkeit, belegt aber keinen Beschluss, keine Weisung und keine Änderung des institutionellen Status."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle beschreibt keinen beobachteten sozialen oder wirtschaftlichen Effekt. Ein möglicher Einfluss auf Finanzierung und Erwartungen ist nur unter der Bedingung konkreter geldpolitischer Signale modellierbar.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen"
+            ],
+            "rationale": "Ein möglicher geldpolitischer Konflikt könnte über Zinsen und Finanzierung Menschen und Unternehmen betreffen, Richtung und Eintritt bleiben wegen fehlender Entscheidungen und Daten offen.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Veränderung von Zins- und Finanzierungserwartungen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Falls wahrgenommener politischer Einfluss geldpolitische Signale verändert, könnten sich Finanzierungskosten und Erwartungen von Haushalten und Unternehmen verschieben.",
+                "recipients": [
+                  "Haushalte",
+                  "Unternehmen",
+                  "Beschäftigte"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Reichweite könnte bei US-Geldpolitik groß sein, aber konkrete Entscheidungen und die Richtung des Effekts sind unbelegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "US-Geldpolitik kann viele Haushalte und Unternehmen mittelbar erreichen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die mögliche Veränderung wäre zunächst über Erwartungen und Finanzierung vermittelt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine Dauer ist nur bei anhaltenden Signalen oder Entscheidungen plausibel.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Zins- und Erwartungseffekte könnten durch spätere Entscheidungen korrigiert werden.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Verschuldete Haushalte und kleinere Unternehmen könnten empfindlicher reagieren.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad berührt Finanzierung, aber kein tieferer Wandel ist belegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für Gesundheit, Existenzsicherung oder Rechte ist im Material nicht belegt.",
+                  "reference_frame": "soziale und wirtschaftliche Stabilität",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt konkrete geldpolitische Signale und eine darauf reagierende Erwartungsbildung voraus.",
+                "reference_space": "USA mit möglichen internationalen Finanzverflechtungen",
+                "time_horizon": "kurz- bis mittelfristig nach konkreten Signalen",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die journalistisch beschriebene Spannung wird öffentlich wahrgenommen und beeinflusst Erwartungen nur dann, wenn sie sich in Signalen oder Entscheidungen niederschlägt.",
+                "source_support": "Die Quelle belegt das Spannungsfeld und die Bedeutung der Unabhängigkeit, nicht den Folgeeffekt.",
+                "limitations": "Keine konkreten Aussagen, Entscheidungen, Marktwerte oder Verteilungsdaten.",
+                "first_order": "Mögliche Verschiebung der Wahrnehmung geldpolitischer Verlässlichkeit.",
+                "second_order": "Mögliche Veränderung von Finanzierungskosten und Investitionsentscheidungen bei konkreten Signalen.",
+                "third_order": "Mögliche Verteilungsfolgen über Beschäftigung und Verschuldung; nicht belegt und stark bedingungsabhängig.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Wirkungsquelle oder Messung im gelieferten Bestand; Eintritt und Richtung bleiben offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung von Zins- und Finanzierungserwartungen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung von Zins- und Finanzierungserwartungen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der Quellenbestand enthält keinen Hinweis auf Energie-, Klima- oder Umweltentscheidungen. Ein ökologischer Pfad wäre nur mittelbar über veränderte Finanzierung von Investitionen modellierbar.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen"
+            ],
+            "rationale": "Ein Zusammenhang mit dem Planeten ist nur als entfernter, bedingter Finanzierungsweg denkbar; konkrete ökologische Zustandsänderungen sind nicht belegt.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Veränderung der Finanzierung ökologischer Investitionen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Falls geldpolitische Signale Finanzierungskosten verändern, könnten sich Investitionsbedingungen für emissionsarme oder emissionsintensive Vorhaben verschieben.",
+                "recipients": [
+                  "Unternehmen",
+                  "Investoren",
+                  "öffentliche Haushalte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist indirekt und setzt mehrere nicht belegte Zwischenschritte voraus."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Finanzierungsbedingungen könnten Investitionsentscheidungen breit beeinflussen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der mögliche ökologische Einfluss wäre gegenüber anderen Faktoren schwach vermittelt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Dauer hängt von geldpolitischen Signalen und Investitionszyklen ab.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Finanzierungsbedingungen sind grundsätzlich durch spätere Entscheidungen veränderbar.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffenheit ökologischer Vorhaben ist im Material nicht ausgewiesen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein tiefer ökologischer Wandel wird durch die Quelle nicht nahegelegt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenze oder messbare Umweltveränderung ist belegt.",
+                  "reference_frame": "ökologische Belastungsgrenzen",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt veränderte Finanzierungskosten, betroffene Investitionen und eine relevante Verschiebung ihrer Umsetzung voraus.",
+                "reference_space": "US-Finanzierungs- und Investitionssystem mit möglichen internationalen Verflechtungen",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Geldpolitische Signale beeinflussen Investitionsentscheidungen und diese wiederum ökologische Zustände.",
+                "source_support": "Die Quelle spricht über Inflation, Zinsen und institutionelle Unabhängigkeit, nicht über Umwelt- oder Energieinvestitionen.",
+                "limitations": "Keine sektoralen Daten, keine Emissionsdaten, keine Investitionsentscheidungen und keine ökologische Messung.",
+                "first_order": "Mögliche Veränderung von Finanzierungskosten.",
+                "second_order": "Mögliche Verschiebung einzelner Investitionsentscheidungen.",
+                "third_order": "Mögliche ökologische Folgen über Investitionspfade; im Material nicht konkretisiert.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle im Bestand verbindet den berichteten Vorgang mit ökologischen Wirkungen; der Pfad bleibt eine schwache Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung der Finanzierung ökologischer Investitionen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung der Finanzierung ökologischer Investitionen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine institutionelle Einflussnahme, sondern stellt die Unabhängigkeit als offene Prüfungsfrage dar. Ein negativer Demokratiepfad ist daher an tatsächlichen Druck oder entsprechende Entscheidungen gebunden.",
+            "reviewed_source_ids": [
+              "spiegel-schlagzeilen"
+            ],
+            "rationale": "Die mögliche politische Einflussnahme auf eine unabhängige Institution könnte Vertrauen und demokratische Korrekturfähigkeit belasten; der Ausgangspunkt und die Folge sind nicht bestätigt.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Belastung der Wahrnehmung geldpolitischer Unabhängigkeit",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Wenn politischer Druck die Entscheidungen oder Kommunikation der Federal Reserve sichtbar beeinflusst, könnte dies die wahrgenommene institutionelle Unabhängigkeit schwächen.",
+                "recipients": [
+                  "US-Öffentlichkeit",
+                  "Federal Reserve",
+                  "politische Institutionen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Die Institution ist systemisch relevant, doch konkrete Einflussnahme und Folgen sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Die Federal Reserve ist eine zentrale US-Institution mit breiter öffentlicher Bedeutung.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Der mögliche Vertrauensverlust wäre zunächst wahrnehmungs- und kommunikationsvermittelt.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Eine längerfristige Wirkung würde wiederholte Signale oder Entscheidungen voraussetzen.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauen könnte durch transparente Verfahren und spätere Entscheidungen teilweise wiederhergestellt werden.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Institutionelles Vertrauen kann auf wahrgenommenen politischen Druck empfindlich reagieren.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad berührt die Unabhängigkeit einer zentralen Institution, bleibt aber hypothetisch.",
+                    "source_ids": [
+                      "spiegel-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine tatsächliche Verletzung der institutionellen Unabhängigkeit ist im gelieferten Material nicht belegt.",
+                  "reference_frame": "Unabhängigkeit und Rechenschaft einer Zentralbank",
+                  "source_ids": [],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "spiegel-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt tatsächlichen politischen Druck, eine sichtbare Reaktion der Federal Reserve und eine daraus folgende Vertrauensänderung voraus.",
+                "reference_space": "US-Institutionen und öffentliche Wahrnehmung, mit möglicher internationaler Resonanz",
+                "time_horizon": "kurz- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die im Bericht beschriebene Spannung wird durch konkrete Handlungen oder öffentliche Signale institutionell relevant.",
+                "source_support": "Die Quelle bezeichnet die Unabhängigkeit als Test, belegt aber keine Einflussnahme, Entscheidung oder Vertrauensänderung.",
+                "limitations": "Keine Primärquelle von Warsh, Trump oder der Federal Reserve; keine Umfragen, Verhaltensdaten oder institutionellen Reaktionen.",
+                "first_order": "Mögliche Veränderung der Wahrnehmung institutioneller Unabhängigkeit.",
+                "second_order": "Mögliche Veränderung öffentlicher und politischer Erwartungen an die Federal Reserve.",
+                "third_order": "Mögliche Normalisierung politischer Einflussnahme auf unabhängige Institutionen; nur bei wiederholten und belegten Vorgängen plausibel.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängige Evidenz für tatsächlichen Druck oder bereits eingetretenen Vertrauensverlust; die Wissensgrenze bleibt zentral.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Belastung der Wahrnehmung geldpolitischer Unabhängigkeit",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Belastung der Wahrnehmung geldpolitischer Unabhängigkeit",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T16:40:53.557Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "spiegel-schlagzeilen",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Die Quelle trägt den Bericht über Kevin Warsh, das beschriebene Spannungsfeld und die Einordnung als Test seiner Unabhängigkeit."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle beschreibt keinen beobachteten sozialen oder wirtschaftlichen Effekt. Ein möglicher Einfluss auf Finanzierung und Erwartungen ist nur unter der Bedingung konkreter geldpolitischer Signale modellierbar.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen"
+          ],
+          "rationale": "Ein möglicher geldpolitischer Konflikt könnte über Zinsen und Finanzierung Menschen und Unternehmen betreffen, Richtung und Eintritt bleiben wegen fehlender Entscheidungen und Daten offen.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Veränderung von Zins- und Finanzierungserwartungen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Falls wahrgenommener politischer Einfluss geldpolitische Signale verändert, könnten sich Finanzierungskosten und Erwartungen von Haushalten und Unternehmen verschieben.",
+              "recipients": [
+                "Haushalte",
+                "Unternehmen",
+                "Beschäftigte"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Reichweite könnte bei US-Geldpolitik groß sein, aber konkrete Entscheidungen und die Richtung des Effekts sind unbelegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "US-Geldpolitik kann viele Haushalte und Unternehmen mittelbar erreichen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die mögliche Veränderung wäre zunächst über Erwartungen und Finanzierung vermittelt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine Dauer ist nur bei anhaltenden Signalen oder Entscheidungen plausibel.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Zins- und Erwartungseffekte könnten durch spätere Entscheidungen korrigiert werden.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Verschuldete Haushalte und kleinere Unternehmen könnten empfindlicher reagieren.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad berührt Finanzierung, aber kein tieferer Wandel ist belegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für Gesundheit, Existenzsicherung oder Rechte ist im Material nicht belegt.",
+                "reference_frame": "soziale und wirtschaftliche Stabilität",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt konkrete geldpolitische Signale und eine darauf reagierende Erwartungsbildung voraus.",
+              "reference_space": "USA mit möglichen internationalen Finanzverflechtungen",
+              "time_horizon": "kurz- bis mittelfristig nach konkreten Signalen",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die journalistisch beschriebene Spannung wird öffentlich wahrgenommen und beeinflusst Erwartungen nur dann, wenn sie sich in Signalen oder Entscheidungen niederschlägt.",
+              "source_support": "Die Quelle belegt das Spannungsfeld und die Bedeutung der Unabhängigkeit, nicht den Folgeeffekt.",
+              "limitations": "Keine konkreten Aussagen, Entscheidungen, Marktwerte oder Verteilungsdaten.",
+              "first_order": "Mögliche Verschiebung der Wahrnehmung geldpolitischer Verlässlichkeit.",
+              "second_order": "Mögliche Veränderung von Finanzierungskosten und Investitionsentscheidungen bei konkreten Signalen.",
+              "third_order": "Mögliche Verteilungsfolgen über Beschäftigung und Verschuldung; nicht belegt und stark bedingungsabhängig.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Wirkungsquelle oder Messung im gelieferten Bestand; Eintritt und Richtung bleiben offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung von Zins- und Finanzierungserwartungen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung von Zins- und Finanzierungserwartungen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der Quellenbestand enthält keinen Hinweis auf Energie-, Klima- oder Umweltentscheidungen. Ein ökologischer Pfad wäre nur mittelbar über veränderte Finanzierung von Investitionen modellierbar.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen"
+          ],
+          "rationale": "Ein Zusammenhang mit dem Planeten ist nur als entfernter, bedingter Finanzierungsweg denkbar; konkrete ökologische Zustandsänderungen sind nicht belegt.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Veränderung der Finanzierung ökologischer Investitionen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Falls geldpolitische Signale Finanzierungskosten verändern, könnten sich Investitionsbedingungen für emissionsarme oder emissionsintensive Vorhaben verschieben.",
+              "recipients": [
+                "Unternehmen",
+                "Investoren",
+                "öffentliche Haushalte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist indirekt und setzt mehrere nicht belegte Zwischenschritte voraus."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Finanzierungsbedingungen könnten Investitionsentscheidungen breit beeinflussen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der mögliche ökologische Einfluss wäre gegenüber anderen Faktoren schwach vermittelt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Dauer hängt von geldpolitischen Signalen und Investitionszyklen ab.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Finanzierungsbedingungen sind grundsätzlich durch spätere Entscheidungen veränderbar.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffenheit ökologischer Vorhaben ist im Material nicht ausgewiesen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein tiefer ökologischer Wandel wird durch die Quelle nicht nahegelegt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenze oder messbare Umweltveränderung ist belegt.",
+                "reference_frame": "ökologische Belastungsgrenzen",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt veränderte Finanzierungskosten, betroffene Investitionen und eine relevante Verschiebung ihrer Umsetzung voraus.",
+              "reference_space": "US-Finanzierungs- und Investitionssystem mit möglichen internationalen Verflechtungen",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Geldpolitische Signale beeinflussen Investitionsentscheidungen und diese wiederum ökologische Zustände.",
+              "source_support": "Die Quelle spricht über Inflation, Zinsen und institutionelle Unabhängigkeit, nicht über Umwelt- oder Energieinvestitionen.",
+              "limitations": "Keine sektoralen Daten, keine Emissionsdaten, keine Investitionsentscheidungen und keine ökologische Messung.",
+              "first_order": "Mögliche Veränderung von Finanzierungskosten.",
+              "second_order": "Mögliche Verschiebung einzelner Investitionsentscheidungen.",
+              "third_order": "Mögliche ökologische Folgen über Investitionspfade; im Material nicht konkretisiert.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle im Bestand verbindet den berichteten Vorgang mit ökologischen Wirkungen; der Pfad bleibt eine schwache Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung der Finanzierung ökologischer Investitionen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung der Finanzierung ökologischer Investitionen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine institutionelle Einflussnahme, sondern stellt die Unabhängigkeit als offene Prüfungsfrage dar. Ein negativer Demokratiepfad ist daher an tatsächlichen Druck oder entsprechende Entscheidungen gebunden.",
+          "reviewed_source_ids": [
+            "spiegel-schlagzeilen"
+          ],
+          "rationale": "Die mögliche politische Einflussnahme auf eine unabhängige Institution könnte Vertrauen und demokratische Korrekturfähigkeit belasten; der Ausgangspunkt und die Folge sind nicht bestätigt.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Belastung der Wahrnehmung geldpolitischer Unabhängigkeit",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Wenn politischer Druck die Entscheidungen oder Kommunikation der Federal Reserve sichtbar beeinflusst, könnte dies die wahrgenommene institutionelle Unabhängigkeit schwächen.",
+              "recipients": [
+                "US-Öffentlichkeit",
+                "Federal Reserve",
+                "politische Institutionen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Die Institution ist systemisch relevant, doch konkrete Einflussnahme und Folgen sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Die Federal Reserve ist eine zentrale US-Institution mit breiter öffentlicher Bedeutung.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Der mögliche Vertrauensverlust wäre zunächst wahrnehmungs- und kommunikationsvermittelt.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Eine längerfristige Wirkung würde wiederholte Signale oder Entscheidungen voraussetzen.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauen könnte durch transparente Verfahren und spätere Entscheidungen teilweise wiederhergestellt werden.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Institutionelles Vertrauen kann auf wahrgenommenen politischen Druck empfindlich reagieren.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad berührt die Unabhängigkeit einer zentralen Institution, bleibt aber hypothetisch.",
+                  "source_ids": [
+                    "spiegel-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine tatsächliche Verletzung der institutionellen Unabhängigkeit ist im gelieferten Material nicht belegt.",
+                "reference_frame": "Unabhängigkeit und Rechenschaft einer Zentralbank",
+                "source_ids": [],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "spiegel-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt tatsächlichen politischen Druck, eine sichtbare Reaktion der Federal Reserve und eine daraus folgende Vertrauensänderung voraus.",
+              "reference_space": "US-Institutionen und öffentliche Wahrnehmung, mit möglicher internationaler Resonanz",
+              "time_horizon": "kurz- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die im Bericht beschriebene Spannung wird durch konkrete Handlungen oder öffentliche Signale institutionell relevant.",
+              "source_support": "Die Quelle bezeichnet die Unabhängigkeit als Test, belegt aber keine Einflussnahme, Entscheidung oder Vertrauensänderung.",
+              "limitations": "Keine Primärquelle von Warsh, Trump oder der Federal Reserve; keine Umfragen, Verhaltensdaten oder institutionellen Reaktionen.",
+              "first_order": "Mögliche Veränderung der Wahrnehmung institutioneller Unabhängigkeit.",
+              "second_order": "Mögliche Veränderung öffentlicher und politischer Erwartungen an die Federal Reserve.",
+              "third_order": "Mögliche Normalisierung politischer Einflussnahme auf unabhängige Institutionen; nur bei wiederholten und belegten Vorgängen plausibel.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängige Evidenz für tatsächlichen Druck oder bereits eingetretenen Vertrauensverlust; die Wissensgrenze bleibt zentral.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Belastung der Wahrnehmung geldpolitischer Unabhängigkeit",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Belastung der Wahrnehmung geldpolitischer Unabhängigkeit",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T16:37:31.544Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T15:18:00.000Z",
+      "last_updated": "2026-09-16T16:40:53.554Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-d8485f8d672e61490476",
+      "case_file": null,
+      "source_published_at": "2026-09-16T15:18:00.000Z",
+      "published_at": "2026-09-16T16:40:53.554Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "spiegel-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "spiegel-schlagzeilen",
+              "spiegel-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/wirtschaft/usa-widersetzt-sich-fed-chef-kevin-warsh-dem-druck-von-us-praesident-donald-trump-a-78810cd9-3e2f-43cc-8252-50684f9c1752",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T15:18:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/wirtschaft/usa-widersetzt-sich-fed-chef-kevin-warsh-dem-druck-von-donald-trump-a-78810cd9-3e2f-43cc-8252-50684f9c1752",
+          "source_type": "news_sitemap",
+          "published_at": "2026-09-16T16:20:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-59c50239e63e3d97",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-59c50239e63e3d97-697036916caab376-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-59c50239e63e3d97-683c6fb2ccb436c4-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-59c50239e63e3d97-58166bcc594c3916-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "brande-busbrand-in-berlin-tegel-fahrzeug-evakuiert-3e3d97",
+      "title": "Busbrand in Berlin-Tegel: Fahrzeug evakuiert",
+      "source_summary": "In Berlin-Tegel ist nach Angaben der vorliegenden Berichte im Motorraum eines Linienbusses ein Brand ausgebrochen. Der Fahrer habe schnell gehandelt; die Fahrgäste seien evakuiert worden und mit einem Schrecken davongekommen.\n\nDie beiden gelieferten Veröffentlichungen von stern und Tagesspiegel tragen denselben Titel und enthalten denselben Wortlaut. Sie sind deshalb keine voneinander unabhängigen Bestätigungen.\n\nOffen bleiben unter anderem die genaue Ursache, der Zeitpunkt der Evakuierung, die Zahl der Fahrgäste und die Höhe eines möglichen Sachschadens. Verletzte oder weitere betroffene Personen werden in den vorliegenden Ausschnitten nicht genannt.",
+      "summary": "In Berlin-Tegel brannte der Motorraum eines Linienbusses. Der Fahrer handelte schnell; weitere Angaben zu Ursache, Schäden und Verletzten fehlen.",
+      "detail_summary": "In Berlin-Tegel brach im Motorraum eines Linienbusses ein Brand aus. Nach dem vorliegenden Bericht handelte der Fahrer schnell und die Fahrgäste kamen mit einem Schrecken davon. Der Vorgang ist wegen der akuten Sicherheitslage berichtenswert, belegt aber nur einen einzelnen Vorfall. Ursache, Schadenshöhe, genaue Evakuierung und mögliche Verletzungen bleiben offen. Die zwei Veröffentlichungen sind wegen des gleichen Wortlauts keine unabhängige Bestätigung.",
+      "why_relevant": "Ein Brand in einem Linienbus kann kurzfristig die Sicherheit von Fahrgästen und den Betrieb im öffentlichen Verkehr berühren. Belegt ist bislang nur ein einzelner Vorfall; Ausmaß und Ursachen sind offen.",
+      "topic": [
+        "Geopolitik",
+        "Wirtschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Brand im Motorraum eines Linienbusses in Berlin-Tegel mit anschließender Evakuierung der Fahrgäste",
+        "evaluation_target": {
+          "label": "Busbrand und mögliche Folgen für Fahrgäste, Verkehrsbetrieb und Sicherheitswahrnehmung",
+          "type": "event"
+        },
+        "baseline": "Regulärer Linienbusbetrieb ohne den berichteten Brandvorfall.",
+        "counterfactual": "Ohne den Brand wäre die konkrete Fahrt voraussichtlich ohne diese unmittelbare Evakuierung und Unterbrechung verlaufen; weitergehende Unterschiede sind nicht belegt.",
+        "reference_frame": [
+          "Schutz von Fahrgästen und Beschäftigten",
+          "Sicherheit und Resilienz des öffentlichen Verkehrs",
+          "Verlässlichkeit öffentlicher Information"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "low",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein Brand könnte Fahrgäste und Personal kurzfristig gefährden oder die Fahrt unterbrechen; Umfang und Schwere möglicher Folgen sind nicht belegt.",
+            "planet": "Ein einzelner Fahrzeugbrand könnte lokale Rauch- und Schadstoffemissionen sowie Sachschäden verursachen; Menge und Dauer sind unbekannt.",
+            "democracy": "Der Vorfall könnte die Wahrnehmung öffentlicher Verkehrssicherheit berühren; institutionelle oder politische Folgen sind bei diesem Einzelereignis nur als fernliegender Pfad modellierbar."
+          },
+          "central_dimensions": [
+            "human"
+          ],
+          "first_order": "Der Brand könnte eine unmittelbare Evakuierung und eine Unterbrechung der Fahrt auslösen.",
+          "second_order": "Bei bestätigter technischer oder organisatorischer Ursache könnten Prüfungen, Reparaturen oder betriebliche Anpassungen folgen.",
+          "third_order": "Nur bei wiederholten vergleichbaren Vorfällen könnte sich eine systemische Debatte über Fahrzeugwartung, Aufsicht oder Verkehrssicherheit entwickeln.",
+          "enablement": [],
+          "counter_evidence": [
+            "Der Bericht nennt keine Verletzten und keine weiteren betroffenen Fahrzeuge.",
+            "Der vorliegende Text belegt keine wiederkehrenden Brände, keine politische Reaktion und keine messbare Umweltbelastung.",
+            "Die schnelle Reaktion des Fahrers kann mögliche Folgen begrenzen."
+          ],
+          "source_independence": "Die beiden Quellen enthalten denselben Titel und denselben Abstract; sie sind daher keine unabhängigen Belege. Eine zusätzliche Primärquelle oder unabhängige Recherche liegt nicht vor.",
+          "institutional_status": "Es ist ein berichteter Vorfall; ein behördlicher Befund, eine Ursache, eine Maßnahme oder eine rechtliche Entscheidung sind nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferten Texte bestätigen keinen Umfang möglicher Verletzungen oder Belastungen. Modellierbar bleibt nur ein bedingter kurzfristiger Sicherheits- und Unterbrechungspfad.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "rationale": "Der Brand könnte Fahrgäste und Personal kurzfristig gefährden oder die Fahrt unterbrechen. Die schnelle Reaktion und die Evakuierung könnten Schäden begrenzen; der negative mögliche Pfad ist dennoch der zentrale Wirkungspfad.",
+            "primary_paths": [
+              {
+                "label": "Kurzfristige Gefährdung und Evakuierung von Fahrgästen",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Ein Brand im Motorraum kann Rauch, Hitze oder weitere Gefahren erzeugen und dadurch eine Evakuierung sowie eine Unterbrechung der Fahrt erforderlich machen.",
+                "recipients": [
+                  "Fahrgäste",
+                  "Busfahrer",
+                  "Rettungs- und Betriebspersonal"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Ein einzelnes Fahrzeug begrenzt die Reichweite; die mögliche unmittelbare Intensität für anwesende Personen kann jedoch höher sein."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Betroffen wäre zunächst nur die Besatzung dieses Busses.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Brand und Evakuierung können kurzfristig erhebliche Belastungen erzeugen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die unmittelbare Belastung wäre voraussichtlich auf das Ereignis begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Dauerhafte Folgen sind nicht belegt und nicht der Regelfall dieses Pfades.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Fahrgäste und Beschäftigte sind in einem brennenden Fahrzeug kurzfristig besonders schutzbedürftig.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft zunächst eine einzelne Fahrt und kein belegtes Systemproblem.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung oder schwere Schutzgrenzverletzung ist nicht belegt; der mögliche Sicherheitsrisikopfad bleibt dennoch relevant.",
+                  "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Brand, Rauch oder Hitze Personen während der Fahrt tatsächlich erreichen.",
+                "reference_space": "Betroffene Personen im Bus und unmittelbar an der Haltestelle in Berlin-Tegel",
+                "time_horizon": "Während des Brandes und unmittelbar danach",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Die Modellierung stützt sich auf den berichteten Motorraumbrand und die Evakuierung, nicht auf Messwerte zu Rauch, Hitze oder Verletzungen.",
+                "source_support": "Die Quelle belegt den Brand, das schnelle Handeln des Fahrers und das glimpfliche Ende, nicht die konkrete Schadensintensität.",
+                "limitations": "Keine Angaben zu Zahl und Zustand der Fahrgäste, zu Rauchentwicklung, Verletzungen oder Einsatzdauer.",
+                "first_order": "Mögliche Evakuierung, Fahrtunterbrechung und akute Belastung.",
+                "second_order": "Bei Verletzungen oder größerem Schaden könnten medizinische Versorgung und betriebliche Nacharbeiten erforderlich werden; dies ist offen.",
+                "third_order": "Nur bei wiederholten Vorfällen könnte ein breiterer Sicherheits- oder Vertrauenspfad entstehen; dafür fehlt Evidenz.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Belege quantifizieren Verletzungen, Dauer oder Reichweite; deshalb bleibt die mögliche Intensität unsicher.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Kurzfristige Gefährdung und Evakuierung von Fahrgästen",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Kurzfristige Gefährdung und Evakuierung von Fahrgästen",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "negative",
+            "dominance": "dominant_negative",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferten Texte nennen keinen Umfang von Rauch, Emissionen, Löschwasser oder Sachschäden. Ein lokaler, zeitlich begrenzter Umweltpfad ist nur als bedingte Möglichkeit modellierbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "rationale": "Ein Fahrzeugbrand könnte lokal Rauch und Verbrennungsprodukte freisetzen sowie beschädigte Materialien hinterlassen. Ohne Angaben zu Dauer, Löschmittel oder Schaden bleibt die mögliche Umweltwirkung klein und unsicher.",
+            "primary_paths": [
+              {
+                "label": "Lokale Rauch- und Schadstofffreisetzung durch den Fahrzeugbrand",
+                "direction": "negative",
+                "type": "main_path",
+                "mechanism": "Die Verbrennung von Fahrzeugmaterialien könnte kurzfristig Rauch und Schadstoffe in die unmittelbare Umgebung freisetzen.",
+                "recipients": [
+                  "Menschen in der Umgebung",
+                  "lokale Luft und Bodenmedien"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein einzelner Bus begrenzt den möglichen Umfang; tatsächliche Emissionen und eine mögliche Bodenbelastung sind unbekannt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Der mögliche Emissionsraum wäre voraussichtlich lokal begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quelle belegt einen Brand, aber keine Rauchmenge oder Emissionsdauer.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Ein kurzfristiges Ereignis legt eher eine begrenzte Dauer nahe.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Dauerhafte Umweltschäden sind für diesen Einzelvorfall nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine mögliche lokale Belastung träfe vor allem die unmittelbare Umgebung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Ein einzelner Busbrand belegt keine relevante ökologische Systemveränderung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Überschreitung einer ökologischen Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "Schutz lokaler Luft- und Umweltqualität",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass beim Brand relevante Rauch- oder Schadstoffmengen freigesetzt wurden.",
+                "reference_space": "Unmittelbare Umgebung des Brandortes in Berlin-Tegel",
+                "time_horizon": "Während des Brandes und in der kurzen Nachphase",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die mögliche Umweltwirkung wird aus dem berichteten Fahrzeugbrand abgeleitet; Art und Menge der Materialien sind unbekannt.",
+                "source_support": "Die Quelle belegt den Motorraumbrand, nicht Emissionen, Löschwasser, Bodenwirkung oder Abfallmenge.",
+                "limitations": "Keine Messungen, keine Angaben zu Branddauer, Löschmitteln, Schäden oder Entsorgung.",
+                "first_order": "Mögliche lokale Rauch- und Schadstofffreisetzung.",
+                "second_order": "Bei größerem Fahrzeugschaden könnte zusätzlicher Reparatur- oder Entsorgungsbedarf entstehen; dies ist nicht belegt.",
+                "third_order": "Ein systemischer Umweltpfad ist bei einem einzelnen, nicht quantifizierten Vorfall nicht plausibel belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Die Quellen enthalten keine Umweltmessung und keinen Schadensumfang; die Richtung bleibt ein niedriges, bedingtes Negativpotenzial.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 4,
+                  "divisor": 6,
+                  "raw": 0.6666666666666666,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "− Risiko",
+              "shortPathLabel": "Lokale Rauch- und Schadstofffreisetzung durch den Fahrzeugbrand",
+              "direction": "negative"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Lokale Rauch- und Schadstofffreisetzung durch den Fahrzeugbrand",
+            "display_direction": "negative",
+            "label": "− Risiko",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "− Risiko"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "estimated",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferten Texte enthalten keine Angaben zu öffentlicher Reaktion, institutionellen Entscheidungen oder Vertrauen. Ein demokratischer Wirkungspfad ist nur als fernliegende Möglichkeit über Sicherheitskommunikation formulierbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "rationale": "Ein einzelner Busbrand könnte bei weiterer öffentlicher Thematisierung Fragen nach Verkehrssicherheit und Verantwortlichkeit auslösen. Die Quellen belegen jedoch keine Debatte, Mobilisierung, Vertrauensänderung oder institutionelle Reaktion.",
+            "primary_paths": [
+              {
+                "label": "Mögliche öffentliche Nachfrage nach transparenter Verkehrssicherheitsinformation",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Ein berichteter Sicherheitsvorfall könnte, falls Ursache oder Wiederholung bekannt werden, Nachfrage nach Informationen und Rechenschaft gegenüber Verkehrsbetrieb oder Behörden auslösen.",
+                "recipients": [
+                  "Fahrgäste",
+                  "Verkehrsbetrieb",
+                  "zuständige Behörden",
+                  "lokale Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der einzelne Vorfall bietet nur einen begrenzten möglichen Anlass; eine tatsächliche öffentliche oder institutionelle Reaktion ist nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Die mögliche Aufmerksamkeit wäre zunächst auf den lokalen Vorfall begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Der Ausschnitt beschreibt keine Kontroverse oder institutionelle Auseinandersetzung.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Nachfrage könnte kurzzeitig bleiben, sofern keine neuen Befunde folgen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine dauerhafte demokratische Veränderung ist nicht belegt und nicht plausibel aus dem Einzelereignis ableitbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffen wäre vor allem das Informationsbedürfnis der lokalen Öffentlichkeit.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der mögliche Pfad berührt Rechenschaft nur auf lokaler und ereignisbezogener Ebene.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine demokratische Schutzgrenze oder Einschränkung von Rechten ist nicht erkennbar.",
+                  "reference_frame": "Transparenz und öffentliche Rechenschaft bei Sicherheitsvorfällen",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Der Pfad setzt voraus, dass Ursache, Wiederholung oder behördliche Reaktionen öffentlich relevant werden.",
+                "reference_space": "Lokale Öffentlichkeit und zuständige Verkehrsinstitutionen in Berlin",
+                "time_horizon": "Nach dem Ereignis, abhängig von weiteren Informationen",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der demokratische Pfad betrifft mögliche Informations- und Rechenschaftsfragen, nicht eine unterstellte politische Absicht.",
+                "source_support": "Die Quelle belegt nur die journalistische Darstellung des Brandes und keine öffentliche Debatte oder institutionelle Reaktion.",
+                "limitations": "Keine Daten zu Resonanz, Vertrauen, Beschwerden, Untersuchungen oder Entscheidungen.",
+                "first_order": "Mögliche Nachfrage nach Ursache und Sicherheitsinformation.",
+                "second_order": "Bei bestätigten Mängeln könnte eine lokale Rechenschafts- oder Aufsichtsdebatte entstehen; dies ist offen.",
+                "third_order": "Eine Veränderung demokratischer Entscheidungsstrukturen ist aus dem vorliegenden Einzelbericht nicht ableitbar.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Quelle belegt Resonanz oder institutionelle Folgen; Richtung und Eintritt bleiben offen beziehungsweise sehr unwahrscheinlich.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 5,
+                  "divisor": 6,
+                  "raw": 0.8333333333333334,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche öffentliche Nachfrage nach transparenter Verkehrssicherheitsinformation",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche öffentliche Nachfrage nach transparenter Verkehrssicherheitsinformation",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T16:39:39.482Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Brand im Motorraum eines Linienbusses in Berlin-Tegel, schnelles Handeln des Fahrers und glimpflicher Ausgang."
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Gleichlautende journalistische Darstellung desselben Busbrandes; keine unabhängige Bestätigung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Geringe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferten Texte bestätigen keinen Umfang möglicher Verletzungen oder Belastungen. Modellierbar bleibt nur ein bedingter kurzfristiger Sicherheits- und Unterbrechungspfad.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          "rationale": "Der Brand könnte Fahrgäste und Personal kurzfristig gefährden oder die Fahrt unterbrechen. Die schnelle Reaktion und die Evakuierung könnten Schäden begrenzen; der negative mögliche Pfad ist dennoch der zentrale Wirkungspfad.",
+          "primary_paths": [
+            {
+              "label": "Kurzfristige Gefährdung und Evakuierung von Fahrgästen",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Ein Brand im Motorraum kann Rauch, Hitze oder weitere Gefahren erzeugen und dadurch eine Evakuierung sowie eine Unterbrechung der Fahrt erforderlich machen.",
+              "recipients": [
+                "Fahrgäste",
+                "Busfahrer",
+                "Rettungs- und Betriebspersonal"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Ein einzelnes Fahrzeug begrenzt die Reichweite; die mögliche unmittelbare Intensität für anwesende Personen kann jedoch höher sein."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Betroffen wäre zunächst nur die Besatzung dieses Busses.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Brand und Evakuierung können kurzfristig erhebliche Belastungen erzeugen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die unmittelbare Belastung wäre voraussichtlich auf das Ereignis begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Dauerhafte Folgen sind nicht belegt und nicht der Regelfall dieses Pfades.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Fahrgäste und Beschäftigte sind in einem brennenden Fahrzeug kurzfristig besonders schutzbedürftig.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft zunächst eine einzelne Fahrt und kein belegtes Systemproblem.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung oder schwere Schutzgrenzverletzung ist nicht belegt; der mögliche Sicherheitsrisikopfad bleibt dennoch relevant.",
+                "reference_frame": "Schutz von Leben und körperlicher Unversehrtheit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Brand, Rauch oder Hitze Personen während der Fahrt tatsächlich erreichen.",
+              "reference_space": "Betroffene Personen im Bus und unmittelbar an der Haltestelle in Berlin-Tegel",
+              "time_horizon": "Während des Brandes und unmittelbar danach",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Die Modellierung stützt sich auf den berichteten Motorraumbrand und die Evakuierung, nicht auf Messwerte zu Rauch, Hitze oder Verletzungen.",
+              "source_support": "Die Quelle belegt den Brand, das schnelle Handeln des Fahrers und das glimpfliche Ende, nicht die konkrete Schadensintensität.",
+              "limitations": "Keine Angaben zu Zahl und Zustand der Fahrgäste, zu Rauchentwicklung, Verletzungen oder Einsatzdauer.",
+              "first_order": "Mögliche Evakuierung, Fahrtunterbrechung und akute Belastung.",
+              "second_order": "Bei Verletzungen oder größerem Schaden könnten medizinische Versorgung und betriebliche Nacharbeiten erforderlich werden; dies ist offen.",
+              "third_order": "Nur bei wiederholten Vorfällen könnte ein breiterer Sicherheits- oder Vertrauenspfad entstehen; dafür fehlt Evidenz.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Belege quantifizieren Verletzungen, Dauer oder Reichweite; deshalb bleibt die mögliche Intensität unsicher.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Kurzfristige Gefährdung und Evakuierung von Fahrgästen",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Kurzfristige Gefährdung und Evakuierung von Fahrgästen",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "negative",
+          "dominance": "dominant_negative",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferten Texte nennen keinen Umfang von Rauch, Emissionen, Löschwasser oder Sachschäden. Ein lokaler, zeitlich begrenzter Umweltpfad ist nur als bedingte Möglichkeit modellierbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          "rationale": "Ein Fahrzeugbrand könnte lokal Rauch und Verbrennungsprodukte freisetzen sowie beschädigte Materialien hinterlassen. Ohne Angaben zu Dauer, Löschmittel oder Schaden bleibt die mögliche Umweltwirkung klein und unsicher.",
+          "primary_paths": [
+            {
+              "label": "Lokale Rauch- und Schadstofffreisetzung durch den Fahrzeugbrand",
+              "direction": "negative",
+              "type": "main_path",
+              "mechanism": "Die Verbrennung von Fahrzeugmaterialien könnte kurzfristig Rauch und Schadstoffe in die unmittelbare Umgebung freisetzen.",
+              "recipients": [
+                "Menschen in der Umgebung",
+                "lokale Luft und Bodenmedien"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein einzelner Bus begrenzt den möglichen Umfang; tatsächliche Emissionen und eine mögliche Bodenbelastung sind unbekannt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Der mögliche Emissionsraum wäre voraussichtlich lokal begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quelle belegt einen Brand, aber keine Rauchmenge oder Emissionsdauer.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Ein kurzfristiges Ereignis legt eher eine begrenzte Dauer nahe.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Dauerhafte Umweltschäden sind für diesen Einzelvorfall nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine mögliche lokale Belastung träfe vor allem die unmittelbare Umgebung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Ein einzelner Busbrand belegt keine relevante ökologische Systemveränderung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Überschreitung einer ökologischen Schutzgrenze ist nicht belegt.",
+                "reference_frame": "Schutz lokaler Luft- und Umweltqualität",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass beim Brand relevante Rauch- oder Schadstoffmengen freigesetzt wurden.",
+              "reference_space": "Unmittelbare Umgebung des Brandortes in Berlin-Tegel",
+              "time_horizon": "Während des Brandes und in der kurzen Nachphase",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die mögliche Umweltwirkung wird aus dem berichteten Fahrzeugbrand abgeleitet; Art und Menge der Materialien sind unbekannt.",
+              "source_support": "Die Quelle belegt den Motorraumbrand, nicht Emissionen, Löschwasser, Bodenwirkung oder Abfallmenge.",
+              "limitations": "Keine Messungen, keine Angaben zu Branddauer, Löschmitteln, Schäden oder Entsorgung.",
+              "first_order": "Mögliche lokale Rauch- und Schadstofffreisetzung.",
+              "second_order": "Bei größerem Fahrzeugschaden könnte zusätzlicher Reparatur- oder Entsorgungsbedarf entstehen; dies ist nicht belegt.",
+              "third_order": "Ein systemischer Umweltpfad ist bei einem einzelnen, nicht quantifizierten Vorfall nicht plausibel belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Die Quellen enthalten keine Umweltmessung und keinen Schadensumfang; die Richtung bleibt ein niedriges, bedingtes Negativpotenzial.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 4,
+                "divisor": 6,
+                "raw": 0.6666666666666666,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "− Risiko",
+            "shortPathLabel": "Lokale Rauch- und Schadstofffreisetzung durch den Fahrzeugbrand",
+            "direction": "negative"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "− Risiko",
+          "shortPathLabel": "Lokale Rauch- und Schadstofffreisetzung durch den Fahrzeugbrand",
+          "display_direction": "negative",
+          "label": "− Risiko",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "− Risiko"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "estimated",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferten Texte enthalten keine Angaben zu öffentlicher Reaktion, institutionellen Entscheidungen oder Vertrauen. Ein demokratischer Wirkungspfad ist nur als fernliegende Möglichkeit über Sicherheitskommunikation formulierbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          "rationale": "Ein einzelner Busbrand könnte bei weiterer öffentlicher Thematisierung Fragen nach Verkehrssicherheit und Verantwortlichkeit auslösen. Die Quellen belegen jedoch keine Debatte, Mobilisierung, Vertrauensänderung oder institutionelle Reaktion.",
+          "primary_paths": [
+            {
+              "label": "Mögliche öffentliche Nachfrage nach transparenter Verkehrssicherheitsinformation",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Ein berichteter Sicherheitsvorfall könnte, falls Ursache oder Wiederholung bekannt werden, Nachfrage nach Informationen und Rechenschaft gegenüber Verkehrsbetrieb oder Behörden auslösen.",
+              "recipients": [
+                "Fahrgäste",
+                "Verkehrsbetrieb",
+                "zuständige Behörden",
+                "lokale Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der einzelne Vorfall bietet nur einen begrenzten möglichen Anlass; eine tatsächliche öffentliche oder institutionelle Reaktion ist nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Die mögliche Aufmerksamkeit wäre zunächst auf den lokalen Vorfall begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Der Ausschnitt beschreibt keine Kontroverse oder institutionelle Auseinandersetzung.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Nachfrage könnte kurzzeitig bleiben, sofern keine neuen Befunde folgen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine dauerhafte demokratische Veränderung ist nicht belegt und nicht plausibel aus dem Einzelereignis ableitbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffen wäre vor allem das Informationsbedürfnis der lokalen Öffentlichkeit.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der mögliche Pfad berührt Rechenschaft nur auf lokaler und ereignisbezogener Ebene.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine demokratische Schutzgrenze oder Einschränkung von Rechten ist nicht erkennbar.",
+                "reference_frame": "Transparenz und öffentliche Rechenschaft bei Sicherheitsvorfällen",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Der Pfad setzt voraus, dass Ursache, Wiederholung oder behördliche Reaktionen öffentlich relevant werden.",
+              "reference_space": "Lokale Öffentlichkeit und zuständige Verkehrsinstitutionen in Berlin",
+              "time_horizon": "Nach dem Ereignis, abhängig von weiteren Informationen",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der demokratische Pfad betrifft mögliche Informations- und Rechenschaftsfragen, nicht eine unterstellte politische Absicht.",
+              "source_support": "Die Quelle belegt nur die journalistische Darstellung des Brandes und keine öffentliche Debatte oder institutionelle Reaktion.",
+              "limitations": "Keine Daten zu Resonanz, Vertrauen, Beschwerden, Untersuchungen oder Entscheidungen.",
+              "first_order": "Mögliche Nachfrage nach Ursache und Sicherheitsinformation.",
+              "second_order": "Bei bestätigten Mängeln könnte eine lokale Rechenschafts- oder Aufsichtsdebatte entstehen; dies ist offen.",
+              "third_order": "Eine Veränderung demokratischer Entscheidungsstrukturen ist aus dem vorliegenden Einzelbericht nicht ableitbar.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Quelle belegt Resonanz oder institutionelle Folgen; Richtung und Eintritt bleiben offen beziehungsweise sehr unwahrscheinlich.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 5,
+                "divisor": 6,
+                "raw": 0.8333333333333334,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche öffentliche Nachfrage nach transparenter Verkehrssicherheitsinformation",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche öffentliche Nachfrage nach transparenter Verkehrssicherheitsinformation",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T16:37:31.544Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T15:38:16.000Z",
+      "last_updated": "2026-09-16T16:39:39.478Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-9976191e57d168fbddca",
+      "case_file": null,
+      "source_published_at": "2026-09-16T15:38:16.000Z",
+      "published_at": "2026-09-16T16:39:39.478Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/braende--busbrand-in-berlin-tegel---fahrzeug-evakuiert-38263196.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T15:38:16.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-brande-busbrand-in-berlin-tegel-fahrzeug-evakuiert-16061528.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T15:39:17.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-068fa5f5aba8a416",
       "title_image": {
@@ -58169,99 +61285,6 @@
           "url": "https://www.tagesschau.de/inland/innenpolitik/bab-6378.html",
           "source_type": "media_rss",
           "published_at": "2026-09-13T18:15:03.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-668e16a065c48a7c",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-668e16a065c48a7c-b16150bbd8481f9d-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-668e16a065c48a7c-c40c3fe853d56065-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-668e16a065c48a7c-a128950377811ab9-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "vor-der-landtagswahl-schwesig-fordert-beteiligung-der-lander-an-sozialreformen-c48a7c",
-      "title": "Vor der Landtagswahl: Schwesig fordert Beteiligung der Länder an Sozialreformen",
-      "source_summary": "Der Stern berichtet vor der Landtagswahl in Mecklenburg-Vorpommern über ein Interview mit der SPD-Spitzenkandidatin Manuela Schwesig. Nach dem gelieferten Titel fordert Schwesig eine Beteiligung der Länder an Sozialreformen.\n\nIm gelieferten Auszug warnt Schwesig außerdem vor der AfD und sagt: „Ich selbst erlebe Bedrohung und Sexismus durch die AfD“. Der vollständige Interviewkontext, konkrete Reformen und nähere Angaben zu den genannten Erfahrungen liegen in der vorliegenden Textauswahl nicht vor.",
-      "summary": "Manuela Schwesig fordert laut einem Stern-Bericht vor der Landtagswahl eine Beteiligung der Länder an Sozialreformen. In demselben Interview berichtet sie von Bedrohung und Sexismus durch die AfD; konkrete Reforminhalte und Belege zu den Vorwürfen bleiben offen.",
-      "detail_summary": "Der gelieferte Stern-Bericht ordnet die Forderung in den Wahlkampf zur Landtagswahl in Mecklenburg-Vorpommern ein. Schwesig will die Länder demnach an Sozialreformen beteiligen, ohne dass die vorliegende Textauswahl die konkrete Ausgestaltung nennt. Zusätzlich warnt sie vor der AfD und berichtet von eigener Bedrohung und Sexismus. Als politische Forderung kann das eine Debatte über Zuständigkeiten und Schutz politisch aktiver Personen auslösen. Ob daraus eine tatsächliche Zustandsveränderung folgt, ist offen und hängt von Inhalt, Mehrheiten und Umsetzung ab.",
-      "why_relevant": "Die Forderung betrifft die politische Beteiligung der Länder an Sozialreformen und damit mögliche Zuständigkeits- und Entscheidungswege. Der Bericht enthält außerdem einen schweren, klar zugeschriebenen persönlichen Vorwurf, dessen konkrete Grundlage im gelieferten Auszug offen bleibt.",
-      "topic": [
-        "Soziales"
-      ],
-      "status": "angekündigt",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "impact_assessment": null,
-      "impact_sources": [],
-      "dimensions": null,
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-14T08:44:44.807Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-14T02:00:04.000Z",
-      "last_updated": "2026-09-14T12:11:06.335Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-b2ea4ecfab61e153f226",
-      "case_file": null,
-      "source_published_at": "2026-09-14T02:00:04.000Z",
-      "published_at": "2026-09-14T08:44:44.807Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Welche konkrete Form der Länderbeteiligung an Sozialreformen fordert Schwesig, und auf welche Reformen bezieht sie sich?",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Originalinterview mit vollständigem Kontext und konkreten Reformvorschlägen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-c6b3cf2bb9a2ca84",
-          "announced_at": "2026-09-14T02:00:04.000Z",
-          "follow_up_date": "2026-09-21T08:44:44.807Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Auf welche konkreten Vorfälle beziehen sich die Aussagen über Bedrohung und Sexismus?",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Belegte Angaben zu Vorfällen, Zeitraum und Einordnung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-2ffbf6484bffb4fb",
-          "announced_at": "2026-09-14T02:00:04.000Z",
-          "follow_up_date": "2026-09-21T08:44:44.807Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/mecklenburg-vorpommern/vor-der-landtagswahl--schwesig-fordert-beteiligung-der-laender-an-sozialreformen-38248690.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-14T02:00:04.000Z",
           "primary_source": false
         }
       ]
