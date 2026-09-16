@@ -2,8 +2,1697 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T00:52:02.546Z",
+  "updated_at": "2026-09-16T02:22:02.413Z",
   "stories": [
+    {
+      "story_id": "wt-a43d4554e3a8dbe2",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a43d4554e3a8dbe2-ab87c36f6672500f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a43d4554e3a8dbe2-f3a9f5409f2e746d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a43d4554e3a8dbe2-9beb4f06a1b34f0d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "verteidigungsminister-pistorius-und-hegseth-schliessen-verteidigungsdeal-a8dbe2",
+      "title": "Laut stern: Pistorius und Hegseth schließen Verteidigungsdeal",
+      "source_summary": "Der stern berichtet über einen Besuch des deutschen Verteidigungsministers Boris Pistorius bei seinem US-amerikanischen Amtskollegen Pete Hegseth. Die Überschrift bezeichnet das Treffen als Abschluss eines Verteidigungsdeals.\n\nIm vorliegenden Auszug werden weder Inhalt noch Umfang, rechtlicher Status oder Zeitplan einer solchen Vereinbarung genannt. Der Textausschnitt hebt außerdem hervor, dass Hegseth sich lobend über Deutschland äußere. Eine Originalquelle oder eine unabhängige Bestätigung liegt in den gelieferten Unterlagen nicht vor.",
+      "summary": "Der stern berichtet über einen Verteidigungsdeal zwischen Boris Pistorius und Pete Hegseth. Inhalt, Status und Folgen der Vereinbarung sind im vorliegenden Auszug offen.",
+      "detail_summary": "Der stern meldet einen Besuch von Boris Pistorius bei Pete Hegseth in den USA und bezeichnet das Ergebnis als Verteidigungsdeal. Belegt ist damit zunächst eine journalistische Darstellung des Treffens. Unklar bleiben konkrete Vereinbarungen, rechtlicher Status und Umsetzung. Ein mögliches Wirkungspotenzial für Sicherheitskooperation, Ressourcen und demokratische Kontrolle lässt sich nur bedingt modellieren.",
+      "why_relevant": "Ein möglicher Verteidigungsdeal kann Sicherheitskooperation, öffentliche Mittel und parlamentarische Kontrolle berühren. Der konkrete Regelungsgehalt ist jedoch nicht belegt.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Der stern berichtet über einen möglichen Verteidigungsdeal zwischen Boris Pistorius und Pete Hegseth.",
+        "evaluation_target": {
+          "label": "möglicher Verteidigungsdeal",
+          "type": "decision"
+        },
+        "baseline": "Vor dem berichteten Treffen beziehungsweise ohne belegte konkrete Vereinbarung zwischen den zuständigen Ministern.",
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "medium",
+        "counterfactual": "Ohne eine konkrete und umgesetzte Vereinbarung bliebe es bei bestehenden sicherheits- und verteidigungspolitischen Verfahren; welche Veränderungen daraus folgen, ist nicht belegt.",
+        "reference_frame": [
+          "demokratische Rechenschaft und parlamentarische Kontrolle",
+          "Sicherheitskooperation und staatliche Ressourcen"
+        ],
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Ein möglicher Deal könnte mittelbar Sicherheit, öffentliche Ausgaben und Beschäftigte in betroffenen Bereichen berühren; konkrete Empfänger und Belastungen sind offen.",
+            "planet": "Verteidigungskooperation kann mittelbar Beschaffung, Energie- und Ressourcenverbrauch beeinflussen; im gelieferten Material gibt es keine Angaben für eine konkrete ökologische Richtung.",
+            "democracy": "Eine verbindliche Vereinbarung könnte Transparenz, parlamentarische Kontrolle und institutionelle Zuständigkeiten berühren. Ohne Dokument bleibt der Pfad hypothetisch."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Berichtetes Treffen und behauptete politische Verständigung; der konkrete Regelungsgehalt ist nicht belegt.",
+          "second_order": "Mögliche Änderungen bei Kooperation, Beschaffung oder Ressourcenentscheidungen, sofern ein verbindlicher Inhalt und Umsetzung nachgewiesen werden.",
+          "third_order": "Mögliche langfristige Auswirkungen auf Sicherheitsinstitutionen, Haushaltsprioritäten und demokratische Kontrolle; derzeit nur bedingtes Szenario.",
+          "enablement": [
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Es liegt kein Originalabkommen und keine unabhängige Bestätigung des behaupteten Deals vor.",
+            "Der Auszug nennt keine konkreten Maßnahmen, Kosten, Zuständigkeiten oder Umsetzungsfristen."
+          ],
+          "source_independence": "Nur eine journalistische Quelle ist geliefert. Ihre Unabhängigkeit von einer Originalquelle ist nicht verifiziert; zusätzliche Belege fehlen.",
+          "institutional_status": "Ein möglicher Verteidigungsdeal ist im vorliegenden Material weder als rechtlich bindender Vertrag noch als beschlossenes oder umgesetztes Regierungsinstrument ausgewiesen."
+        },
+        "observed_effects": [],
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Es gibt keine belastbare Quelle zu einer bereits eingetretenen Veränderung für Menschen. Ein bedingter Pfad über mögliche Sicherheits-, Haushalts- oder Beschäftigungsentscheidungen bleibt modelliert; konkrete Betroffene und Richtung sind unbekannt.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Eine konkrete Vereinbarung könnte bei Umsetzung staatliche Sicherheits- oder Ressourcenentscheidungen mit Auswirkungen auf Menschen verändern.",
+                "mechanism": "Politische Verständigung führt gegebenenfalls zu späteren Beschaffungs-, Haushalts- oder Kooperationsentscheidungen.",
+                "recipients": [
+                  "Bevölkerung",
+                  "Beschäftigte",
+                  "öffentliche Haushalte"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur wenn ein konkreter und verbindlicher Deal vorliegt und zuständige Institutionen ihn umsetzen.",
+                "reference_space": "Deutschland und die mit der Vereinbarung verbundenen staatlichen und gesellschaftlichen Bereiche.",
+                "time_horizon": "mittel- bis langfristig nach einer möglichen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass der berichtete Deal mehr als ein Gespräch bezeichnet und spätere Entscheidungen auslöst.",
+                "source_support": "Die Quelle belegt nur die journalistische Darstellung des Treffens und des Deal-Begriffs, nicht die Folgen.",
+                "limitations": "Inhalt, Umfang, Kosten, Betroffene und Richtung einer möglichen Veränderung sind unbekannt.",
+                "first_order": "Mögliche politische Verständigung zwischen den Ministern.",
+                "second_order": "Mögliche Veränderung von Sicherheits- oder Ressourcenentscheidungen bei verbindlicher Umsetzung.",
+                "third_order": "Mögliche Verteilungs- und Versorgungseffekte, deren Richtung ohne Inhalte nicht bestimmbar ist.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Reichweite könnte über staatliche Entscheidungen hinausgehen, konkrete Intensität und Dauer sind aber nicht belegt."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Prüfung der gelieferten Quelle findet keinen konkreten Folgenbeleg; der Pfad bleibt ein niedrig bewertetes Szenario.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Mögliche Folgen könnten staatliche Entscheidungen und deren Empfänger betreffen, die Reichweite ist offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Zur Intensität möglicher menschlicher Folgen enthält die Quelle keine Angaben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Dauer ist nicht genannt und hängt von einer möglichen Umsetzung ab.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Mögliche Entscheidungen könnten grundsätzlich korrigierbar sein; konkrete Bindungen fehlen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Sicherheits- und Haushaltsentscheidungen können vulnerable Gruppen mittelbar berühren, ohne dass dies belegt ist.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein institutioneller Folgepfad ist denkbar, aber mangels Deal-Inhalt nicht konkretisiert.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für Menschen ist aus dem gelieferten Material nicht ableitbar.",
+                  "reference_frame": "Schutz von Sicherheit, Versorgung und fairer Ressourcenverteilung",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              },
+              {
+                "direction": "open",
+                "label": "Ausbleibende oder begrenzte Umsetzung könnte mögliche menschliche Folgen auf den bestehenden Zustand beschränken.",
+                "mechanism": "Parlamentarische, haushalterische oder politische Prüfungen können eine angekündigte Verständigung verändern oder begrenzen.",
+                "recipients": [
+                  "Bevölkerung",
+                  "öffentliche Haushalte"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur wenn zuständige Kontroll- und Entscheidungsprozesse tatsächlich greifen.",
+                "reference_space": "Deutschland und die betroffenen staatlichen Entscheidungsprozesse.",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass ein möglicher Deal weiteren formalen Prüfungen unterliegt.",
+                "source_support": "Die Quelle nennt keine Umsetzungs- oder Kontrollschritte; der Gegenpfad folgt aus dem offenen institutionellen Status.",
+                "limitations": "Nicht bekannt ist, ob überhaupt ein formaler Entscheidungsprozess erforderlich ist.",
+                "first_order": "Keine belegte Zustandsänderung gegenüber bestehenden Verfahren.",
+                "second_order": "Mögliche Begrenzung oder Verzögerung späterer Ressourcenentscheidungen.",
+                "third_order": "Erhalt institutioneller Korrekturmöglichkeiten, falls formale Verfahren greifen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Gegenpfad kann Folgen begrenzen, seine konkrete Reichweite ist wegen des unbekannten Status offen."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quellenprüfung bestätigt keinen formalen Status und kann daher keine konkrete Schutz- oder Kontrollwirkung belegen.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Mögliche Kontrolle würde nur die betroffenen Entscheidungsprozesse erreichen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Intensität einer möglichen Begrenzung ist nicht beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Dauer ist nicht ausgewiesen und hängt von Verfahren ab.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische oder haushalterische Entscheidungen könnten grundsätzlich angepasst werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Vulnerable Gruppen werden in der Quelle nicht konkret erwähnt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Gegenpfad betrifft mögliche Verfahren, nicht nachgewiesene tiefgreifende Strukturänderungen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete menschliche Schutzgrenze wird durch die Quelle nicht beschrieben.",
+                  "reference_frame": "Schutz vor nicht kontrollierten Sicherheits- und Ressourcenentscheidungen",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Das menschliche Potenzial ist als bedingter indirekter Pfad modellierbar, bleibt wegen fehlender Angaben zu Inhalt und Umsetzung aber gering und offen.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Eine konkrete Vereinbarung könnte bei Umsetzung staatliche Sicherheits- oder Ressourcenentscheidungen mit Auswirkungen auf Menschen verändern.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine konkrete Vereinbarung könnte bei Umsetzung staatliche Sicherheits- oder Ressourcenentscheidungen mit Auswirkungen auf Menschen verändern.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "likelihood": "very_low",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "not_assessable",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferten Auszüge nennen keine militärischen Systeme, Energieverbräuche, Emissionen, Standorte oder Beschaffungen. Ein ökologischer Pfad ist deshalb nur abstrakt und nicht richtungsfest modellierbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Eine mögliche Verteidigungsvereinbarung könnte bei konkreter Beschaffung oder Infrastruktur ökologische Ressourcen- und Emissionspfade verändern.",
+                "mechanism": "Spätere militärische Beschaffungs- oder Infrastrukturentscheidungen könnten Material-, Energie- und Flächenverbrauch beeinflussen.",
+                "recipients": [
+                  "Natur",
+                  "öffentliche Infrastruktur"
+                ],
+                "magnitude": 1,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur wenn der Deal konkrete Beschaffungs-, Infrastruktur- oder Betriebsentscheidungen enthält.",
+                "reference_space": "Von der möglichen Vereinbarung betroffene militärische und infrastrukturelle Bereiche.",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass der Begriff Verteidigungsdeal materielle Maßnahmen und nicht nur politische Abstimmung umfasst.",
+                "source_support": "Die Quelle nennt keine konkreten Systeme, Projekte, Mengen oder Umweltparameter.",
+                "limitations": "Richtung, Größenordnung, Dauer und Reversibilität sind vollständig offen.",
+                "first_order": "Mögliche spätere Verteidigungsbeschaffung oder Infrastrukturentscheidung.",
+                "second_order": "Mögliche Veränderung von Ressourcen- und Energieverbrauch.",
+                "third_order": "Mögliche ökologische Folgewirkungen; konkrete Kaskaden wären ohne Projektdaten nicht belegbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Ein materieller ökologischer Pfad ist denkbar, aber durch die Quelle nicht spezifiziert."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Kein ökologischer Folgenbeleg ist in der gelieferten Quelle enthalten; die Bewertung bleibt eine Wissensgrenze.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Mögliche ökologische Folgen wären auf konkrete Projekte oder Beschaffungen begrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Es fehlen Daten zu Systemen, Mengen, Energie oder Emissionen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine mögliche Dauer hängt von unbekannten Projekten und Betriebszeiten ab.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ökologische Reversibilität ist ohne betroffene Ressourcen oder Flächen nicht bewertbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Konkrete vulnerable Ökosysteme oder Regionen werden nicht genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Eine Systemwirkung ist nur über unbekannte Beschaffungs- oder Infrastrukturketten denkbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle enthält keinen konkreten Umweltbezug, aus dem eine Schutzgrenze abgeleitet werden könnte.",
+                  "reference_frame": "Schutz von Natur, Ressourcen und Klima",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              },
+              {
+                "direction": "open",
+                "label": "Eine umweltbezogene Begrenzung oder effizientere Ausgestaltung könnte ökologische Folgen eines möglichen Deals reduzieren.",
+                "mechanism": "Politische, haushalterische oder technische Vorgaben könnten spätere Beschaffungs- und Infrastrukturentscheidungen begrenzen.",
+                "recipients": [
+                  "Natur",
+                  "öffentliche Infrastruktur"
+                ],
+                "magnitude": 1,
+                "evidence": "not_assessable",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "very_low",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur wenn der mögliche Deal konkrete materielle Maßnahmen enthält und Umweltvorgaben angewendet werden.",
+                "reference_space": "Betroffene militärische Beschaffungs- und Infrastrukturentscheidungen.",
+                "time_horizon": "mittel- bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass spätere Entscheidungen rechtlichen oder politischen Umweltvorgaben unterliegen.",
+                "source_support": "Die Quelle enthält keine Angaben zu Vorgaben oder Umweltprüfung.",
+                "limitations": "Es ist unbekannt, ob ein materieller Umweltpfad überhaupt entsteht.",
+                "first_order": "Mögliche Prüfung oder Begrenzung späterer Maßnahmen.",
+                "second_order": "Mögliche Verringerung von Ressourcen- oder Energieverbrauch.",
+                "third_order": "Mögliche Vermeidung langfristiger Belastungen, ohne konkrete Projekte nicht bewertbar.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der Gegenpfad ist wegen fehlender Umwelt- und Projektdaten sehr begrenzt bestimmbar."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Es gibt keinen gelieferten Beleg für konkrete Umweltvorgaben oder eine entsprechende Umsetzung.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Mögliche Begrenzungen würden nur konkrete spätere Maßnahmen erfassen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine mögliche ökologische Verbesserung ist nicht quantifiziert.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer und Beständigkeit möglicher Vorgaben sind unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Ohne konkrete Projekte ist die Reversibilität nicht einzuschätzen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Betroffene Ökosysteme oder besonders gefährdete Räume werden nicht genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein tiefer ökologischer Gegenpfad ist nicht durch konkrete Daten gestützt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine ökologische Schutzgrenze ist im Material nicht konkretisiert.",
+                  "reference_frame": "Schutz von Natur und Ressourcen",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Ein planetarer Wirkpfad kann wegen des möglichen materiellen Gegenstands als Hypothese benannt werden, ist mangels Umweltangaben aber nicht richtungs- oder umfangssicher.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Eine mögliche Verteidigungsvereinbarung könnte bei konkreter Beschaffung oder Infrastruktur ökologische Ressourcen- und Emissionspfade verändern.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine mögliche Verteidigungsvereinbarung könnte bei konkreter Beschaffung oder Infrastruktur ökologische Ressourcen- und Emissionspfade verändern.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "likelihood": "low",
+            "dominance": "none",
+            "direction": "open",
+            "magnitude": 1,
+            "evidence": "low",
+            "data_status": "estimated",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt keine parlamentarische oder rechtliche Folge. Ein demokratischer Pfad ist nur bedingt über Transparenz, Zuständigkeiten und spätere Kontrolle modellierbar; eine konkrete Veränderung ist nicht nachgewiesen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "temporal_status": "ex_ante",
+            "primary_paths": [
+              {
+                "direction": "open",
+                "label": "Ein konkreter Verteidigungsdeal könnte Transparenz, Zuständigkeiten und parlamentarische Kontrolle sicherheitspolitischer Entscheidungen verändern.",
+                "mechanism": "Eine verbindliche Verständigung könnte weitere Regierungs-, Haushalts- oder Parlamentsverfahren auslösen und damit institutionelle Kontrolle berühren.",
+                "recipients": [
+                  "Parlament",
+                  "staatliche Institutionen",
+                  "Öffentlichkeit"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "main_path",
+                "likelihood": "low",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur wenn eine konkrete Vereinbarung existiert, öffentlich gemacht wird und institutionelle Folgeentscheidungen auslöst.",
+                "reference_space": "Deutsche und gegebenenfalls internationale staatliche Entscheidungsprozesse.",
+                "time_horizon": "kurz- bis langfristig",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass der berichtete Deal über ein Ministertreffen hinaus institutionelle Folgen hat.",
+                "source_support": "Die Quelle belegt einen journalistisch berichteten Besuch und Deal-Begriff, aber keine Verfahren oder Zuständigkeitsänderung.",
+                "limitations": "Transparenz, parlamentarische Einbindung, Rechtsstatus und institutionelle Folgen sind unbekannt.",
+                "first_order": "Mögliche politische Verständigung auf Ministerebene.",
+                "second_order": "Mögliche Einleitung oder Umgehung weiterer Kontroll- und Entscheidungsprozesse.",
+                "third_order": "Mögliche Veränderung institutioneller Rechenschaft und sicherheitspolitischer Präzedenz; nicht nachgewiesen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der institutionelle Gegenstand könnte demokratisch relevant sein, ist aber nur als unbestätigtes Szenario beschrieben."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die gezielte Prüfung findet keinen Beleg für ein Verfahren, eine Zuständigkeitsänderung oder bereits veränderte Kontrolle.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Mögliche institutionelle Folgen würden zunächst zuständige Sicherheits- und Haushaltsorgane betreffen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Intensität demokratischer Folgen ist ohne Deal-Inhalt nicht bestimmbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine Dauer möglicher institutioneller Veränderungen ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Demokratische Verfahren und politische Entscheidungen können grundsätzlich überprüft oder geändert werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Öffentliche Kontrolle ist bei sicherheitspolitischer Intransparenz potenziell verletzlich, ohne dass dies hier belegt ist.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Ein möglicher Deal könnte Zuständigkeiten und Präzedenzwirkungen berühren, bleibt aber inhaltlich offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung demokratischer Schutz- oder Kontrollgrenzen ist nicht belegt.",
+                  "reference_frame": "Transparenz, parlamentarische Kontrolle und institutionelle Rechenschaft",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 8,
+                  "divisor": 6,
+                  "raw": 1.3333333333333333,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              },
+              {
+                "direction": "open",
+                "label": "Öffentliche und parlamentarische Prüfung könnte die demokratische Kontrolle eines möglichen Deals sichern oder seine Umsetzung begrenzen.",
+                "mechanism": "Transparenzpflichten, parlamentarische Verfahren und politische Rechenschaft können spätere Vereinbarungen prüfen.",
+                "recipients": [
+                  "Parlament",
+                  "Öffentlichkeit",
+                  "staatliche Institutionen"
+                ],
+                "magnitude": 1,
+                "evidence": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "type": "counter_path",
+                "likelihood": "medium",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Nur wenn der mögliche Deal formalisiert wird und den zuständigen Kontrollverfahren unterliegt.",
+                "reference_space": "Deutschland und die betroffenen staatlichen Institutionen.",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Es wird angenommen, dass ein möglicher Verteidigungsdeal nicht ausschließlich informell bleibt.",
+                "source_support": "Die Quelle enthält keine Angaben zu parlamentarischer Einbindung oder Transparenz.",
+                "limitations": "Der rechtliche und institutionelle Status ist ungeklärt.",
+                "first_order": "Mögliche öffentliche Erklärung oder formale Vorlage.",
+                "second_order": "Mögliche Prüfung von Kosten, Zuständigkeiten und Vereinbarkeit mit Verfahren.",
+                "third_order": "Mögliche Stärkung demokratischer Korrekturfähigkeit, sofern die Verfahren tatsächlich greifen.",
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Kontrollwirkungen sind als institutioneller Gegenpfad plausibel, aber nicht durch konkrete Verfahrensdaten belegt."
+                },
+                "negligibility_rationale": "",
+                "observed_signal": {
+                  "change": null,
+                  "source_ids": []
+                },
+                "research_pass": "second_pass",
+                "research_result": "Die Quelle bestätigt keine bereits laufende parlamentarische oder öffentliche Prüfung; der Kontrollpfad bleibt bedingt.",
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Mögliche Kontrollverfahren würden die zuständigen Institutionen und die Öffentlichkeit erreichen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Stärke einer möglichen Prüfung hängt vom unbekannten Status des Deals ab.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Dauer und Tiefe der Kontrolle sind nicht genannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Kontrollentscheidungen können grundsätzlich revidiert oder fortgeführt werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Die Quelle belegt keine konkrete Schwächung oder besondere Verwundbarkeit demokratischer Institutionen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Formale Kontrolle könnte institutionelle Korrekturfähigkeit berühren, ist aber nicht nachgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze ist im gelieferten Material nicht feststellbar.",
+                  "reference_frame": "demokratische Transparenz und Kontrolle sicherheitspolitischer Entscheidungen",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "rationale": "Der demokratische Pfad ist wegen des möglichen staatlichen Gegenstands relevant, aber ohne Originaldokument und Verfahrensangaben nur als bedingtes Szenario belastbar.",
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Ein konkreter Verteidigungsdeal könnte Transparenz, Zuständigkeiten und parlamentarische Kontrolle sicherheitspolitischer Entscheidungen verändern.",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein konkreter Verteidigungsdeal könnte Transparenz, Zuständigkeiten und parlamentarische Kontrolle sicherheitspolitischer Entscheidungen verändern.",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T02:26:05.766Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event"
+            ],
+            "supported_claim": "Die Quelle trägt die journalistische Meldung über den Besuch und die Bezeichnung als Verteidigungsdeal."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Mittlere",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "none",
+          "direction": "open",
+          "magnitude": 1,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Es gibt keine belastbare Quelle zu einer bereits eingetretenen Veränderung für Menschen. Ein bedingter Pfad über mögliche Sicherheits-, Haushalts- oder Beschäftigungsentscheidungen bleibt modelliert; konkrete Betroffene und Richtung sind unbekannt.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Eine konkrete Vereinbarung könnte bei Umsetzung staatliche Sicherheits- oder Ressourcenentscheidungen mit Auswirkungen auf Menschen verändern.",
+              "mechanism": "Politische Verständigung führt gegebenenfalls zu späteren Beschaffungs-, Haushalts- oder Kooperationsentscheidungen.",
+              "recipients": [
+                "Bevölkerung",
+                "Beschäftigte",
+                "öffentliche Haushalte"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur wenn ein konkreter und verbindlicher Deal vorliegt und zuständige Institutionen ihn umsetzen.",
+              "reference_space": "Deutschland und die mit der Vereinbarung verbundenen staatlichen und gesellschaftlichen Bereiche.",
+              "time_horizon": "mittel- bis langfristig nach einer möglichen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass der berichtete Deal mehr als ein Gespräch bezeichnet und spätere Entscheidungen auslöst.",
+              "source_support": "Die Quelle belegt nur die journalistische Darstellung des Treffens und des Deal-Begriffs, nicht die Folgen.",
+              "limitations": "Inhalt, Umfang, Kosten, Betroffene und Richtung einer möglichen Veränderung sind unbekannt.",
+              "first_order": "Mögliche politische Verständigung zwischen den Ministern.",
+              "second_order": "Mögliche Veränderung von Sicherheits- oder Ressourcenentscheidungen bei verbindlicher Umsetzung.",
+              "third_order": "Mögliche Verteilungs- und Versorgungseffekte, deren Richtung ohne Inhalte nicht bestimmbar ist.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Reichweite könnte über staatliche Entscheidungen hinausgehen, konkrete Intensität und Dauer sind aber nicht belegt."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Prüfung der gelieferten Quelle findet keinen konkreten Folgenbeleg; der Pfad bleibt ein niedrig bewertetes Szenario.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Mögliche Folgen könnten staatliche Entscheidungen und deren Empfänger betreffen, die Reichweite ist offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Zur Intensität möglicher menschlicher Folgen enthält die Quelle keine Angaben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Dauer ist nicht genannt und hängt von einer möglichen Umsetzung ab.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Mögliche Entscheidungen könnten grundsätzlich korrigierbar sein; konkrete Bindungen fehlen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Sicherheits- und Haushaltsentscheidungen können vulnerable Gruppen mittelbar berühren, ohne dass dies belegt ist.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein institutioneller Folgepfad ist denkbar, aber mangels Deal-Inhalt nicht konkretisiert.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für Menschen ist aus dem gelieferten Material nicht ableitbar.",
+                "reference_frame": "Schutz von Sicherheit, Versorgung und fairer Ressourcenverteilung",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            },
+            {
+              "direction": "open",
+              "label": "Ausbleibende oder begrenzte Umsetzung könnte mögliche menschliche Folgen auf den bestehenden Zustand beschränken.",
+              "mechanism": "Parlamentarische, haushalterische oder politische Prüfungen können eine angekündigte Verständigung verändern oder begrenzen.",
+              "recipients": [
+                "Bevölkerung",
+                "öffentliche Haushalte"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur wenn zuständige Kontroll- und Entscheidungsprozesse tatsächlich greifen.",
+              "reference_space": "Deutschland und die betroffenen staatlichen Entscheidungsprozesse.",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass ein möglicher Deal weiteren formalen Prüfungen unterliegt.",
+              "source_support": "Die Quelle nennt keine Umsetzungs- oder Kontrollschritte; der Gegenpfad folgt aus dem offenen institutionellen Status.",
+              "limitations": "Nicht bekannt ist, ob überhaupt ein formaler Entscheidungsprozess erforderlich ist.",
+              "first_order": "Keine belegte Zustandsänderung gegenüber bestehenden Verfahren.",
+              "second_order": "Mögliche Begrenzung oder Verzögerung späterer Ressourcenentscheidungen.",
+              "third_order": "Erhalt institutioneller Korrekturmöglichkeiten, falls formale Verfahren greifen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Gegenpfad kann Folgen begrenzen, seine konkrete Reichweite ist wegen des unbekannten Status offen."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quellenprüfung bestätigt keinen formalen Status und kann daher keine konkrete Schutz- oder Kontrollwirkung belegen.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Mögliche Kontrolle würde nur die betroffenen Entscheidungsprozesse erreichen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Intensität einer möglichen Begrenzung ist nicht beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Dauer ist nicht ausgewiesen und hängt von Verfahren ab.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische oder haushalterische Entscheidungen könnten grundsätzlich angepasst werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Vulnerable Gruppen werden in der Quelle nicht konkret erwähnt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Gegenpfad betrifft mögliche Verfahren, nicht nachgewiesene tiefgreifende Strukturänderungen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete menschliche Schutzgrenze wird durch die Quelle nicht beschrieben.",
+                "reference_frame": "Schutz vor nicht kontrollierten Sicherheits- und Ressourcenentscheidungen",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Das menschliche Potenzial ist als bedingter indirekter Pfad modellierbar, bleibt wegen fehlender Angaben zu Inhalt und Umsetzung aber gering und offen.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine konkrete Vereinbarung könnte bei Umsetzung staatliche Sicherheits- oder Ressourcenentscheidungen mit Auswirkungen auf Menschen verändern.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Eine konkrete Vereinbarung könnte bei Umsetzung staatliche Sicherheits- oder Ressourcenentscheidungen mit Auswirkungen auf Menschen verändern.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "likelihood": "very_low",
+          "dominance": "none",
+          "direction": "open",
+          "magnitude": 1,
+          "evidence": "not_assessable",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferten Auszüge nennen keine militärischen Systeme, Energieverbräuche, Emissionen, Standorte oder Beschaffungen. Ein ökologischer Pfad ist deshalb nur abstrakt und nicht richtungsfest modellierbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Eine mögliche Verteidigungsvereinbarung könnte bei konkreter Beschaffung oder Infrastruktur ökologische Ressourcen- und Emissionspfade verändern.",
+              "mechanism": "Spätere militärische Beschaffungs- oder Infrastrukturentscheidungen könnten Material-, Energie- und Flächenverbrauch beeinflussen.",
+              "recipients": [
+                "Natur",
+                "öffentliche Infrastruktur"
+              ],
+              "magnitude": 1,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur wenn der Deal konkrete Beschaffungs-, Infrastruktur- oder Betriebsentscheidungen enthält.",
+              "reference_space": "Von der möglichen Vereinbarung betroffene militärische und infrastrukturelle Bereiche.",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass der Begriff Verteidigungsdeal materielle Maßnahmen und nicht nur politische Abstimmung umfasst.",
+              "source_support": "Die Quelle nennt keine konkreten Systeme, Projekte, Mengen oder Umweltparameter.",
+              "limitations": "Richtung, Größenordnung, Dauer und Reversibilität sind vollständig offen.",
+              "first_order": "Mögliche spätere Verteidigungsbeschaffung oder Infrastrukturentscheidung.",
+              "second_order": "Mögliche Veränderung von Ressourcen- und Energieverbrauch.",
+              "third_order": "Mögliche ökologische Folgewirkungen; konkrete Kaskaden wären ohne Projektdaten nicht belegbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Ein materieller ökologischer Pfad ist denkbar, aber durch die Quelle nicht spezifiziert."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Kein ökologischer Folgenbeleg ist in der gelieferten Quelle enthalten; die Bewertung bleibt eine Wissensgrenze.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Mögliche ökologische Folgen wären auf konkrete Projekte oder Beschaffungen begrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Es fehlen Daten zu Systemen, Mengen, Energie oder Emissionen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine mögliche Dauer hängt von unbekannten Projekten und Betriebszeiten ab.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ökologische Reversibilität ist ohne betroffene Ressourcen oder Flächen nicht bewertbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Konkrete vulnerable Ökosysteme oder Regionen werden nicht genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Eine Systemwirkung ist nur über unbekannte Beschaffungs- oder Infrastrukturketten denkbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle enthält keinen konkreten Umweltbezug, aus dem eine Schutzgrenze abgeleitet werden könnte.",
+                "reference_frame": "Schutz von Natur, Ressourcen und Klima",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            },
+            {
+              "direction": "open",
+              "label": "Eine umweltbezogene Begrenzung oder effizientere Ausgestaltung könnte ökologische Folgen eines möglichen Deals reduzieren.",
+              "mechanism": "Politische, haushalterische oder technische Vorgaben könnten spätere Beschaffungs- und Infrastrukturentscheidungen begrenzen.",
+              "recipients": [
+                "Natur",
+                "öffentliche Infrastruktur"
+              ],
+              "magnitude": 1,
+              "evidence": "not_assessable",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "very_low",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur wenn der mögliche Deal konkrete materielle Maßnahmen enthält und Umweltvorgaben angewendet werden.",
+              "reference_space": "Betroffene militärische Beschaffungs- und Infrastrukturentscheidungen.",
+              "time_horizon": "mittel- bis langfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass spätere Entscheidungen rechtlichen oder politischen Umweltvorgaben unterliegen.",
+              "source_support": "Die Quelle enthält keine Angaben zu Vorgaben oder Umweltprüfung.",
+              "limitations": "Es ist unbekannt, ob ein materieller Umweltpfad überhaupt entsteht.",
+              "first_order": "Mögliche Prüfung oder Begrenzung späterer Maßnahmen.",
+              "second_order": "Mögliche Verringerung von Ressourcen- oder Energieverbrauch.",
+              "third_order": "Mögliche Vermeidung langfristiger Belastungen, ohne konkrete Projekte nicht bewertbar.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der Gegenpfad ist wegen fehlender Umwelt- und Projektdaten sehr begrenzt bestimmbar."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Es gibt keinen gelieferten Beleg für konkrete Umweltvorgaben oder eine entsprechende Umsetzung.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Mögliche Begrenzungen würden nur konkrete spätere Maßnahmen erfassen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine mögliche ökologische Verbesserung ist nicht quantifiziert.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer und Beständigkeit möglicher Vorgaben sind unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Ohne konkrete Projekte ist die Reversibilität nicht einzuschätzen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Betroffene Ökosysteme oder besonders gefährdete Räume werden nicht genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein tiefer ökologischer Gegenpfad ist nicht durch konkrete Daten gestützt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine ökologische Schutzgrenze ist im Material nicht konkretisiert.",
+                "reference_frame": "Schutz von Natur und Ressourcen",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Ein planetarer Wirkpfad kann wegen des möglichen materiellen Gegenstands als Hypothese benannt werden, ist mangels Umweltangaben aber nicht richtungs- oder umfangssicher.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Eine mögliche Verteidigungsvereinbarung könnte bei konkreter Beschaffung oder Infrastruktur ökologische Ressourcen- und Emissionspfade verändern.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Eine mögliche Verteidigungsvereinbarung könnte bei konkreter Beschaffung oder Infrastruktur ökologische Ressourcen- und Emissionspfade verändern.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "likelihood": "low",
+          "dominance": "none",
+          "direction": "open",
+          "magnitude": 1,
+          "evidence": "low",
+          "data_status": "estimated",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt keine parlamentarische oder rechtliche Folge. Ein demokratischer Pfad ist nur bedingt über Transparenz, Zuständigkeiten und spätere Kontrolle modellierbar; eine konkrete Veränderung ist nicht nachgewiesen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "temporal_status": "ex_ante",
+          "primary_paths": [
+            {
+              "direction": "open",
+              "label": "Ein konkreter Verteidigungsdeal könnte Transparenz, Zuständigkeiten und parlamentarische Kontrolle sicherheitspolitischer Entscheidungen verändern.",
+              "mechanism": "Eine verbindliche Verständigung könnte weitere Regierungs-, Haushalts- oder Parlamentsverfahren auslösen und damit institutionelle Kontrolle berühren.",
+              "recipients": [
+                "Parlament",
+                "staatliche Institutionen",
+                "Öffentlichkeit"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "main_path",
+              "likelihood": "low",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur wenn eine konkrete Vereinbarung existiert, öffentlich gemacht wird und institutionelle Folgeentscheidungen auslöst.",
+              "reference_space": "Deutsche und gegebenenfalls internationale staatliche Entscheidungsprozesse.",
+              "time_horizon": "kurz- bis langfristig",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass der berichtete Deal über ein Ministertreffen hinaus institutionelle Folgen hat.",
+              "source_support": "Die Quelle belegt einen journalistisch berichteten Besuch und Deal-Begriff, aber keine Verfahren oder Zuständigkeitsänderung.",
+              "limitations": "Transparenz, parlamentarische Einbindung, Rechtsstatus und institutionelle Folgen sind unbekannt.",
+              "first_order": "Mögliche politische Verständigung auf Ministerebene.",
+              "second_order": "Mögliche Einleitung oder Umgehung weiterer Kontroll- und Entscheidungsprozesse.",
+              "third_order": "Mögliche Veränderung institutioneller Rechenschaft und sicherheitspolitischer Präzedenz; nicht nachgewiesen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der institutionelle Gegenstand könnte demokratisch relevant sein, ist aber nur als unbestätigtes Szenario beschrieben."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die gezielte Prüfung findet keinen Beleg für ein Verfahren, eine Zuständigkeitsänderung oder bereits veränderte Kontrolle.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Mögliche institutionelle Folgen würden zunächst zuständige Sicherheits- und Haushaltsorgane betreffen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Intensität demokratischer Folgen ist ohne Deal-Inhalt nicht bestimmbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine Dauer möglicher institutioneller Veränderungen ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Demokratische Verfahren und politische Entscheidungen können grundsätzlich überprüft oder geändert werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Öffentliche Kontrolle ist bei sicherheitspolitischer Intransparenz potenziell verletzlich, ohne dass dies hier belegt ist.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Ein möglicher Deal könnte Zuständigkeiten und Präzedenzwirkungen berühren, bleibt aber inhaltlich offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung demokratischer Schutz- oder Kontrollgrenzen ist nicht belegt.",
+                "reference_frame": "Transparenz, parlamentarische Kontrolle und institutionelle Rechenschaft",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 8,
+                "divisor": 6,
+                "raw": 1.3333333333333333,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            },
+            {
+              "direction": "open",
+              "label": "Öffentliche und parlamentarische Prüfung könnte die demokratische Kontrolle eines möglichen Deals sichern oder seine Umsetzung begrenzen.",
+              "mechanism": "Transparenzpflichten, parlamentarische Verfahren und politische Rechenschaft können spätere Vereinbarungen prüfen.",
+              "recipients": [
+                "Parlament",
+                "Öffentlichkeit",
+                "staatliche Institutionen"
+              ],
+              "magnitude": 1,
+              "evidence": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "type": "counter_path",
+              "likelihood": "medium",
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Nur wenn der mögliche Deal formalisiert wird und den zuständigen Kontrollverfahren unterliegt.",
+              "reference_space": "Deutschland und die betroffenen staatlichen Institutionen.",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Es wird angenommen, dass ein möglicher Verteidigungsdeal nicht ausschließlich informell bleibt.",
+              "source_support": "Die Quelle enthält keine Angaben zu parlamentarischer Einbindung oder Transparenz.",
+              "limitations": "Der rechtliche und institutionelle Status ist ungeklärt.",
+              "first_order": "Mögliche öffentliche Erklärung oder formale Vorlage.",
+              "second_order": "Mögliche Prüfung von Kosten, Zuständigkeiten und Vereinbarkeit mit Verfahren.",
+              "third_order": "Mögliche Stärkung demokratischer Korrekturfähigkeit, sofern die Verfahren tatsächlich greifen.",
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Kontrollwirkungen sind als institutioneller Gegenpfad plausibel, aber nicht durch konkrete Verfahrensdaten belegt."
+              },
+              "negligibility_rationale": "",
+              "observed_signal": {
+                "change": null,
+                "source_ids": []
+              },
+              "research_pass": "second_pass",
+              "research_result": "Die Quelle bestätigt keine bereits laufende parlamentarische oder öffentliche Prüfung; der Kontrollpfad bleibt bedingt.",
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Mögliche Kontrollverfahren würden die zuständigen Institutionen und die Öffentlichkeit erreichen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Stärke einer möglichen Prüfung hängt vom unbekannten Status des Deals ab.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Dauer und Tiefe der Kontrolle sind nicht genannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Kontrollentscheidungen können grundsätzlich revidiert oder fortgeführt werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Die Quelle belegt keine konkrete Schwächung oder besondere Verwundbarkeit demokratischer Institutionen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Formale Kontrolle könnte institutionelle Korrekturfähigkeit berühren, ist aber nicht nachgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze ist im gelieferten Material nicht feststellbar.",
+                "reference_frame": "demokratische Transparenz und Kontrolle sicherheitspolitischer Entscheidungen",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "rationale": "Der demokratische Pfad ist wegen des möglichen staatlichen Gegenstands relevant, aber ohne Originaldokument und Verfahrensangaben nur als bedingtes Szenario belastbar.",
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Ein konkreter Verteidigungsdeal könnte Transparenz, Zuständigkeiten und parlamentarische Kontrolle sicherheitspolitischer Entscheidungen verändern.",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Ein konkreter Verteidigungsdeal könnte Transparenz, Zuständigkeiten und parlamentarische Kontrolle sicherheitspolitischer Entscheidungen verändern.",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T02:22:02.413Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-15T23:37:00.000Z",
+      "last_updated": "2026-09-16T02:26:05.760Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-b82140a49690be70da89",
+      "case_file": null,
+      "source_published_at": "2026-09-15T23:37:00.000Z",
+      "published_at": "2026-09-16T02:26:05.760Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Der konkrete Inhalt, der Status und die Umsetzung des angekündigten Verteidigungsdeals müssen anhand einer Originalquelle oder unabhängiger Berichte geklärt werden.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Vorliegen eines veröffentlichten Abkommens, einer amtlichen Mitteilung oder unabhängiger Berichte mit konkreten Vereinbarungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d132d8edf0eb06b9",
+          "announced_at": "2026-09-15T23:37:00.000Z",
+          "follow_up_date": "2026-09-23T02:26:05.760Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/boris-pistorius-und-hegseth-schliessen-in-den-usa-verteidigungsdeal-38258806.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-15T23:37:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-90f05434b7e53384",
       "title_image": {
