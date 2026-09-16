@@ -14,8 +14,13 @@
       "active": true
     }
   },
-  "outbox": [],
-  "dailyDate": "2026-09-15",
+  "outbox": [
+    {
+      "id": "9f73b3cfe9a135918b4a8bc2",
+      "content": "WÖk Tagesbericht · 2026-09-16 · Europe/Berlin\n✓ Hauptseite: erreichbar\n✓ Wirkungsticker: erreichbar\n✓ Ticker-RSS: erreichbar\n✓ Akademie: erreichbar\n✓ Parlament: erreichbar\n✓ Institut: erreichbar\n✓ Oracle-API: erreichbar\n✓ Push-Konfiguration: erreichbar\nTicker: 319 live · 277 aktuelle Lagen und Einzelakten aus 301 aktiven Wirkungsakten · 6 Lageakten.\nIm Redaktionsbestand als veröffentlicht vermerkt: gestern (2026-09-15) 1; heute bisher 12 (inkl. später archivierter/zusammengeführter Akten; Live-Nachweis separat).\nLetzter Lauf: 2026-09-16T05:59:05.553Z; 531 offene Prüfungen, 44 aktive Quellen.\nQueue: 531 offen (503 Kapazität · 1 technisch · 27 redaktionell); Status draining.\nQuellen-Funnel heute: 18623 Feed-Einträge → 302 neu/aktualisiert → 288 Story-Kandidaten → 16056 geeignet → 61 KI → 13 Veröffentlichungen/Aktualisierungen. Lokal verworfen: 202; redaktionelle Quellenbeiträge: 306.\nProduktive Quellen im letzten Lauf: stern, WDR.\nEreignischeck (begrenzter Quellenbestand): 13 größere Ereignisse · 4 mit Veröffentlichung · 9 nachzuprüfen (einschließlich berechtigter Qualitätsvorbehalte).\nKI-Gesamtschätzung inkl. offener Reserven: gestern $0.46 · heute $1.33 · Monat $55.44.\nDirekte Nachrichtenverarbeitung seit 2026-09-06T05:24:43.333Z: 216 Erstveröffentlichungen · 42 Aktualisierungen · 2010 KI-Anfragen, inklusive Ablehnungen und Wiederholungen.\nKI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt 15.86 Cent inkl. Steuerreserve; Ziel unter 4 Cent. 120 Läufe mit Ersatzschätzung.\nWÖk-Analysen separat: 11 neu · 10 aktualisiert · $7.97 geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.\nBatch-Hintergrundjobs separat im Messfenster: 27 abgeglichen · 8 angewendet · $0.301 nach Anbieter-Nutzungsdaten; $0.500 für 4 Aufträge reserviert. Enthält auch bezahlte Qualitätsablehnungen; keine neuen Nachrichten durch reine Nachprüfungen.\nDirekte Nachrichtenverarbeitung: geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung $0.102; WÖk-Analysen und Batch separat.\nMonat umgerechnet inkl. 19 % Steuerreserve: ca. €57.18 (Limit €100.00).\nKosten ohne Higgsfield-Abo/Bildcredits und Hosting; 2 KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.\nBesucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.\n⚠ Titelbilder: 3 Symbolbilder mit technischem Fehler; vorhandene Bilder oder Wirkungskarten bleiben sichtbar. Nachrichten werden dadurch nicht zurückgehalten.\n⚠ Redaktionelle Themenabdeckung: 4 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nhttps://wirkungsoekonomie.de/wirkungsticker/"
+    }
+  ],
+  "dailyDate": "2026-09-16",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
     "entries": {
@@ -1122,10 +1127,18 @@
       "https://wirkungsoekonomie.de/wirkungsticker/nach-niederlage-im-briefwahl-streit-trump-kritisiert-oberstes-us-gericht-scharf-b71b37/": {
         "first_seen_at": "2026-09-16T05:50:32.348Z",
         "source_at": "2026-09-16T04:03:28.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/vor-der-nominierung-bericht-klopp-verzichtet-im-angriff-auf-undav-73f366/": {
+        "first_seen_at": "2026-09-16T06:05:45.532Z",
+        "source_at": "2026-09-16T05:20:28.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/teurer-streit-aus-der-pandemie-bgh-verhandelt-uber-milliardenschwere-maskenkaufe-7a56f4/": {
+        "first_seen_at": "2026-09-16T06:05:45.532Z",
+        "source_at": "2026-09-16T04:56:18.000Z"
       }
     },
-    "last_new_at": "2026-09-16T05:50:32.348Z",
-    "checked_at": "2026-09-16T05:50:32.348Z",
-    "last_current_new_at": "2026-09-16T05:50:32.348Z"
+    "last_new_at": "2026-09-16T06:05:45.532Z",
+    "checked_at": "2026-09-16T06:05:45.532Z",
+    "last_current_new_at": "2026-09-16T06:05:45.532Z"
   }
 }
