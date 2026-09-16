@@ -245,7 +245,7 @@ test('side paths listed as primary move to secondary_paths and a missing data st
   assert.equal(p.primary_paths[0].type, 'main_path'); assert.equal(p.data_status, 'modelled'); assert.equal(p.direction, 'open'); assert.equal(p.magnitude, 1);
   assert.deepEqual(analysis.transport_repairs, ['human.primary_paths:side_risk->secondary_paths', 'planet.data_status:missing->modelled', 'planet.primary_paths:side_effect->main_path']);
   assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('side_effect und side_risk gehören in secondary_paths'));
-  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('source_summary: 100 bis 180 Wörter'));
+  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('Textlängen sind harte Grenzen'));
 });
 
 test('fragments where paths belong are discarded, incomplete paths stay for the gate', () => {
@@ -337,6 +337,7 @@ test('an attributed headline claim without its qualifier in the title gets the a
   const noClaim = repairHeadlineAttribution({ headline: 'Titel ohne Zuordnung', event_claims: [{ claim: 'x', attribution_required: true, headline_claim: false }, { claim: 'y', attribution_required: true, headline_claim: true }] });
   assert.equal(noClaim.headline, 'Titel ohne Zuordnung', 'without any attribution wording nothing is invented');
   assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('rationale (Begründungstext) und balance') && SINGLE_CALL_INSTRUCTIONS.includes('mehr als 20 Wörtern wörtlich'));
+  for (const rule of ['bei deepened 100 bis 180 Wörter', 'bei deepened 500 bis 1200 Zeichen und 5 bis 7 Sätze', 'Zu kurz ist genauso ungültig wie zu lang']) assert.ok(SINGLE_CALL_INSTRUCTIONS.includes(rule), rule);
 });
 
 test('a missing dimension time status is derived from its paths and an unscored counter path gives way to a scored main path', () => {

@@ -245,3 +245,23 @@ test('the editorial steps wait for a busy import lane instead of skipping the cy
   const skipped = await runRedaktionsworker({ session, knowledge, draft: async () => { throw new Error('must not draft'); }, now, env: {}, laneWait: { retries: 2, waitMs: 0 } });
   assert.equal(skipped.status, 'skipped'); assert.equal(skipped.reason, 'BRIDGE_RUN_LOCKED'); assert.equal(attempts, 3);
 });
+
+test('der Redaktionsvertrag verlangt die Ablagefelder, die die Freigabe prüft', async () => {
+  const { validateApiOutput } = await import('../../scripts/news/bridge/api-processor.mjs');
+  const { EDITORIAL_REQUEST_CONTRACT_V4 } = await import('../../scripts/news/bridge/intake-processing.mjs');
+  const packet = packetFor(jobId);
+  const wrap = (preview) => ({ schema_version: '1.0', job_id: jobId, input_hash: packet.input_hash, processed_at: now(), preview });
+  const episode = () => ({ ...preview(), format: 'listened',
+    sources: [{ url: 'https://neu-denken.example/s6e5', title: 'Folgenseite', publisher: 'Mission Wertvoll' }],
+    source_media: { show: 'NEU DENKEN', episode_title: 'Den Westen NEU DENKEN', original_release_date: '2026-09-15', original_url: 'https://neu-denken.example/s6e5' } });
+  const episodePacket = { ...packet, request: { ...packet.request, kind: 'listened' } };
+  assert.ok(validateApiOutput(wrap(episode()), episodePacket, now()), 'vollständige Folge besteht');
+  const withoutPublisher = episode(); withoutPublisher.sources = [{ url: 'https://neu-denken.example/s6e5', title: 'Folgenseite', function: 'Werkbeleg' }];
+  assert.throws(() => validateApiOutput(wrap(withoutPublisher), episodePacket, now()), /BRIDGE|EDITORIAL/, 'publisher ist Pflicht');
+  const wrongMedia = episode(); wrongMedia.source_media = { show: 'NEU DENKEN', episode: 'Den Westen NEU DENKEN', published_at: '2026-09-15T03:00:00.000Z' };
+  assert.throws(() => validateApiOutput(wrap(wrongMedia), episodePacket, now()), /BRIDGE|EDITORIAL/, 'alte Schlüsselnamen werden abgelehnt');
+  const schema = EDITORIAL_REQUEST_CONTRACT_V4.output_schema.properties.preview.properties;
+  assert.deepEqual(schema.sources.items.required, ['url', 'title', 'publisher']);
+  assert.deepEqual(schema.source_media.required, ['show', 'episode_title', 'original_release_date', 'original_url']);
+  assert.ok(EDITORIAL_REQUEST_CONTRACT_V4.instructions.some((line) => line.includes('episode_title')), 'die Anweisung nennt die Schlüssel');
+});
