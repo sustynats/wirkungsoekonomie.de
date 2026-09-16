@@ -22,6 +22,34 @@ export function inlineEditorialMarkdown(text) {
   return html + escape(text.slice(cursor));
 }
 
+// Der Freigabevorbehalt ist Werkstattnotiz, nicht Lesertext. Er steht im
+// Entwurf, damit Natalie sieht, dass sie entscheidet - auf der veröffentlichten
+// Seite ist er falsch, weil sie dann längst entschieden hat (16.09.: vier
+// Ausgaben standen mit "Vorschlag zur Bestätigung durch Natalie" live).
+// Entfernt wird ausschließlich der Vorbehalt selbst: eine Zeile, die nur aus ihm
+// besteht, oder ein einzelner Satz in einem Absatz. Alles andere - Inhalt,
+// Transparenzhinweise, Prüfvermerke - bleibt unangetastet.
+const APPROVAL_PHRASE = /\b(?:Freigabe|Bestätigung|Genehmigung|Zustimmung)\s+durch\s+Natalie\b/;
+const bareLine = line => line.replace(/^#{1,6}\s+/, '').replace(/\*\*|\*|_/g, '').replace(/[:.\s]+$/, '').trim();
+
+export function withoutProcessNotes(markdown, { removed = [] } = {}) {
+  if (typeof markdown !== 'string' || !APPROVAL_PHRASE.test(markdown)) return markdown;
+  const kept = [];
+  for (const line of markdown.split('\n')) {
+    if (!APPROVAL_PHRASE.test(line)) { kept.push(line); continue; }
+    const bare = bareLine(line);
+    // Eine Zeile, die nur den Vorbehalt trägt (auch als Überschrift oder fett),
+    // fällt ganz weg; der nachfolgende Abschnittstext trägt sich selbst.
+    if (/^(?:Vorschlag|Hinweis|Anmerkung|Redaktioneller Hinweis)?[^.!?]*$/.test(bare)) { removed.push(bare); continue; }
+    // Sonst steht der Vorbehalt als Satz in einem Absatz: nur dieser Satz geht.
+    const sentences = line.match(/[^.!?]+[.!?]+\s*|[^.!?]+$/g) || [line];
+    const rest = sentences.filter(s => { const hit = APPROVAL_PHRASE.test(s); if (hit) removed.push(s.trim()); return !hit; }).join('').replace(/\s+$/, '');
+    if (rest.trim()) kept.push(rest);
+  }
+  // Durch den Wegfall entstandene Leerzeilenpaare zusammenziehen.
+  return kept.join('\n').replace(/\n{3,}/g, '\n\n').replace(/^\n+/, '').replace(/\s+$/, '');
+}
+
 export function renderEditorialMarkdown(markdown) {
   const lines = markdown.replace(/\r\n/g, "\n").split("\n");
   const sections = [], headings = [], blocks = [];
