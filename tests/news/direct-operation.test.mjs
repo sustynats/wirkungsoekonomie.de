@@ -583,3 +583,33 @@ test('das Analyseschema bleibt innerhalb aller Anbietergrenzen, sonst fällt der
   assert.ok(enumValues <= 1000, `${enumValues} Enum-Werte`);
   if (enumValues > 250) assert.ok(longestEnum <= 250, `längster Enum-Wert ${longestEnum} Zeichen`);
 });
+
+test('die Veröffentlichungstiefe kommt vom Server, weil die Textlängen daran hängen', async () => {
+  const { repairPublicationDepth } = await import('../../scripts/news/openai-transport.mjs');
+  const { buildAnalysisPrompt, validateAnalysis } = await import('../../scripts/news/lib.mjs');
+  // Eine neue Meldung ist initial, eine bestehende Akte vertieft.
+  const fresh = { publication_depth: 'deepened' }, repairs = [];
+  repairPublicationDepth(fresh, { existing_story: { published: false } }, repairs);
+  assert.equal(fresh.publication_depth, 'initial');
+  assert.deepEqual(repairs, ['publication_depth:deepened->initial']);
+  const known = { publication_depth: 'initial' };
+  repairPublicationDepth(known, { existing_story: { published: true } }, []);
+  assert.equal(known.publication_depth, 'deepened');
+  // Eine Neubewertung behält ihre Tiefe, ein unbekannter Zustand ebenfalls.
+  for (const story of [{ existing_story: { published: true }, impact_reassessment: true }, {}, null]) {
+    const keep = { publication_depth: 'initial' };
+    repairPublicationDepth(keep, story, []);
+    assert.equal(keep.publication_depth, 'initial');
+  }
+  // Die Anweisung nennt die Tiefe als Vorgabe, ohne den Meldungsteil zu vergrößern.
+  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('publication_depth ist vorgegeben'), 'die Vorgabe steht in der Anweisung');
+  const prompt = buildAnalysisPrompt([{ ...stories[0], existing_story: { published: false } }], { transport: 'api' });
+  assert.ok(prompt.includes('already_published'), 'der Stand der Akte steht im Auftrag');
+  // Und damit greift die richtige Längenregel: 105 Wörter sind initial gültig.
+  const words = Array.from({ length: 52 }, (_, i) => `Wort${i}`).join(' ');
+  const analysis = normalizeAnalysisOutput({ story_id: 'wt-1', publication_recommendation: true, publication_depth: 'deepened',
+    source_summary: `${words}\n\n${words}`, summary: 'Ein Satz. Noch ein Satz.' }, { ...stories[0], existing_story: { published: false } });
+  assert.equal(analysis.publication_depth, 'initial');
+  const found = validateAnalysis(analysis, { ...stories[0], claims: [] }, {});
+  assert.equal(found.includes('AI_SOURCE_SUMMARY_LENGTH'), false, found.filter((f) => f.includes('SOURCE_SUMMARY')).join(' '));
+});
