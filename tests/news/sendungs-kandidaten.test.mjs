@@ -383,3 +383,45 @@ test('wechselt die Mediathek-Kennung mit den Untertiteln, bleibt die Folge diese
   const third = await proposeEpisodeCandidates({ ...options, now: '2026-09-16T14:00:00.000Z', fetchImpl: feed([mit]) });
   assert.deepEqual(third.proposed, [], 'und danach nicht wieder');
 });
+
+// 16.09.: "Den Westen NEU DENKEN" ging zweimal live. Natalies eigener Auftrag
+// um 00:07 nannte Sendung und Thema im Klartext, der Feed-Vorschlag um 08:36
+// kannte nur die Adresse - die Adressprüfung konnte den Auftrag nicht sehen.
+test('ein offener Auftrag zur selben Folge verdrängt den Feed-Vorschlag', async () => {
+  const { duplicateRequestFor, requestNamesShow, requestNamesDate } = await import('../../scripts/news/sendungs-kandidaten.mjs');
+  const jobs = (brief) => [{ input: { job_id: 'wt_20260916T000700Z', request: { brief } } }];
+  const westen = { title: 'Den Westen NEU DENKEN mit Sebastian Conrad', published_at: '2026-09-15T04:00:00.000Z' };
+  const neudenken = { id: 'neudenken' };
+  const natalie = 'Was ist mit Maja Göpels Podcast zum Thema Westen? Also neu denken podcast. Bitte hier eine Nachgehört Analyse machen';
+
+  const twin = duplicateRequestFor(westen, neudenken, jobs(natalie));
+  assert.equal(twin?.job_id, 'wt_20260916T000700Z', 'die Dublette vom 16.09. wird erkannt');
+  assert.ok(twin.shared.includes('westen'), 'am gemeinsamen Thema');
+
+  // Eine andere Folge derselben Sendung bleibt ein gültiger Vorschlag. Der
+  // zusammengeschriebene Sendungsname trägt kein Thema.
+  assert.equal(duplicateRequestFor(westen, neudenken, jobs('Neu denken Podcast, die Folge über Landwirtschaft und Böden bitte')), null);
+  // Und ein Auftrag zu einer anderen Sendung blockiert nichts.
+  assert.equal(duplicateRequestFor(westen, neudenken, jobs('Bitte eine Analyse zum Lanz vom 15.09. über den Westen')), null);
+  assert.equal(duplicateRequestFor(westen, neudenken, jobs('')), null);
+
+  // Sendungstitel ohne Thema ("Markus Lanz vom 15. September 2026"): dort
+  // entscheidet der Sendetag.
+  const lanz = { id: 'markus-lanz' };
+  const folge = (day) => ({ title: `Markus Lanz vom ${day}. September 2026`, published_at: `2026-09-${day}T19:15:00.000Z` });
+  assert.ok(duplicateRequestFor(folge('15'), lanz, jobs('Bitte eine Nachbetrachtung zum Lanz vom 15. September'))?.shared.includes('sendetag'));
+  assert.ok(duplicateRequestFor(folge('15'), lanz, jobs('Lanz 15.09.2026 bitte nachbetrachten'))?.shared.includes('sendetag'));
+  assert.equal(duplicateRequestFor(folge('22'), lanz, jobs('Bitte eine Nachbetrachtung zum Lanz vom 15. September')), null, 'ein anderer Sendetag ist keine Dublette');
+
+  // Natalie schreibt den Sendungsnamen so, wie sie ihn spricht.
+  assert.equal(requestNamesShow('Also neu denken podcast', neudenken), true);
+  assert.equal(requestNamesShow('Neudenken bitte', neudenken), true);
+  assert.equal(requestNamesShow('Bitte zum Lanz', lanz), true);
+  assert.equal(requestNamesShow('Bitte zur Tagesschau', neudenken), false);
+  // Der Sendetag ist der Berliner Kalendertag, nicht der UTC-Tag: eine Sendung
+  // um 22:00 UTC läuft in Berlin bereits am Folgetag.
+  assert.equal(requestNamesDate('am 15.09. lief', '2026-09-15T04:00:00.000Z'), true);
+  assert.equal(requestNamesDate('am 14.09. lief', '2026-09-15T04:00:00.000Z'), false);
+  assert.equal(requestNamesDate('am 16.09. lief', '2026-09-15T22:00:00.000Z'), true);
+  assert.equal(requestNamesDate('ohne Datum', 'unlesbar'), false);
+});
