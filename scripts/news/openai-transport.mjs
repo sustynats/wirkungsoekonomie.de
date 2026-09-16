@@ -11,6 +11,7 @@ import { impactAssessmentResponseFormat } from './impact-json-schema.mjs';
 import { analysisResponseFormat, schemaEligible, ANALYSIS_JSON_SCHEMA } from './analysis-json-schema.mjs';
 import { FACTOR_KEYS } from './impact-magnitude.mjs';
 import { modelRates } from './budget.mjs';
+import { evidenceGroups } from './newsroom.mjs';
 
 export const OPENAI_RESPONSES_URL = 'https://api.openai.com/v1/responses';
 export const DEFAULT_NEWS_MODEL = 'gpt-5.4-mini';
@@ -68,6 +69,7 @@ export function storyBriefing(story) {
   const depth = requiredPublicationDepth(story);
   if (!depth) return '';
   const deepened = depth === 'deepened';
+  const origins = independentOrigins(story);
   return ['VORGABEN FÜR DIESE MELDUNG (nicht zu wählen, sie folgen dem Aktenstand):',
     `publication_depth: ${depth}.`,
     deepened
@@ -78,6 +80,9 @@ export function storyBriefing(story) {
       : 'detail_summary: 4 bis 6 Sätze, 350 bis 900 Zeichen.',
     'summary: genau zwei Sätze.',
     'Zahlen in event_claims: Jede Zahl einer Aussage muss wörtlich in dem Beleg-Ausschnitt stehen, den du für genau diese Aussage zitierst. Steht sie dort nicht, formuliere die Aussage ohne Zahl.',
+    origins >= 2
+      ? `Der Quellenbestand hat ${origins} voneinander unabhängige Herkünfte. status confirmed_claim nur, wenn du für diese Aussage zwei davon zitierst; sonst single_source_claim, primary_source_claim oder uncertain_claim.`
+      : `Der Quellenbestand hat nur ${origins === 1 ? 'eine' : 'keine'} unabhängige Herkunft. status confirmed_claim ist damit ausgeschlossen: nutze single_source_claim, primary_source_claim (nur bei zitierter Primärquelle) oder uncertain_claim.`,
     'Zähle Wörter, Sätze und Absätze, bevor du antwortest: eine Antwort außerhalb dieser Spannen ist unbrauchbar und die Meldung erscheint nicht.'].join('\n');
 }
 
@@ -309,6 +314,37 @@ export function repairHeadlineAttribution(analysis, repairs = []) {
 // 100 bis 180), also entscheidet sie über Annahme oder Halt. 16.09.: drei
 // Meldungen wurden gehalten, weil das Modell „deepened" wählte und dann
 // initial-lange Texte schrieb. Eine Neubewertung behält ihre bisherige Tiefe.
+// „Bestätigt" ist eine Tatsache über den Quellenbestand, keine Einschätzung:
+// die Prüfung verlangt zwei voneinander unabhängige Herkünfte in den zitierten
+// Belegen. Wählt das Modell den Status trotzdem, ist die Meldung verloren
+// (16.09., Lauf 10:35: CLAIM_INDEPENDENCE_NOT_ESTABLISHED). Der Server kennt die
+// Abhängigkeiten, also stuft er den Status herab, statt zu verwerfen. Herabstufen
+// behauptet weniger, nie mehr.
+export function repairClaimIndependence(analysis, story, repairs = []) {
+  const claims = Array.isArray(analysis?.event_claims) ? analysis.event_claims : [];
+  const sources = Array.isArray(story?.sources) ? story.sources : [];
+  if (!claims.length || !sources.length) return analysis;
+  for (const claim of claims) {
+    if (!claim || typeof claim !== 'object' || claim.status !== 'confirmed_claim') continue;
+    const cited = (Array.isArray(claim.evidence) ? claim.evidence : [])
+      .map((proof) => sources.find((source) => source.source_id === proof?.source_id && source.url === proof?.url))
+      .filter(Boolean);
+    if (evidenceGroups(cited).possible_independent_origins >= 2) continue;
+    const next = cited.some((source) => source.primary_source) ? 'primary_source_claim'
+      : cited.length <= 1 ? 'single_source_claim' : 'uncertain_claim';
+    repairs.push(`event_claims:confirmed_claim->${next} (${evidenceGroups(cited).possible_independent_origins} unabhängige Herkunft)`);
+    claim.status = next;
+  }
+  return analysis;
+}
+
+// Wie viele voneinander unabhängige Herkünfte der gelieferte Quellenbestand
+// überhaupt hergibt. Mehr als das kann keine Aussage belegen.
+export function independentOrigins(story) {
+  const sources = Array.isArray(story?.sources) ? story.sources : [];
+  return sources.length ? evidenceGroups(sources).possible_independent_origins : 0;
+}
+
 export function requiredPublicationDepth(story) {
   if (!story || typeof story !== 'object' || story.impact_reassessment) return null;
   const published = story.existing_story?.published;
@@ -338,6 +374,7 @@ export function normalizeAnalysisOutput(analysis, story = null) {
   repairSourceBindings(analysis, story?.sources || [], repairs);
   repairHeadlineAttribution(analysis, repairs);
   repairPublicationDepth(analysis, story, repairs);
+  repairClaimIndependence(analysis, story, repairs);
   const finish = () => { if (repairs.length && analysis && typeof analysis === 'object') analysis.transport_repairs = repairs; return analysis; };
   const assessment = analysis?.impact_assessment;
   if (!assessment || assessment.version !== IMPACT_VERSION) return finish();

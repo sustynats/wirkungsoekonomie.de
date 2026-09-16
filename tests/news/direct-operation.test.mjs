@@ -662,3 +662,41 @@ test('der Auftrag nennt genau eine Zielspanne je Meldung, damit ein Aufruf reich
     fetchImpl: async (url, init) => { many.push(JSON.parse(init.body)); return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [] })) }; } });
   assert.equal(many[0].instructions.includes('VORGABEN FÜR DIESE MELDUNG'), false);
 });
+
+test('ein nicht belegbarer Aussagestatus wird herabgestuft, nicht verworfen', async () => {
+  const { repairClaimIndependence, independentOrigins, storyBriefing } = await import('../../scripts/news/openai-transport.mjs');
+  const primary = { source_id: 'ministerium', publisher_id: 'bund', url: 'https://bund.example/1', title: 'Erlass veröffentlicht', summary: 'Der Erlass tritt in Kraft.', primary_source: true };
+  const agency = { source_id: 'agentur', publisher_id: 'agentur', url: 'https://agentur.example/1', title: 'Andere Meldung zum Thema', summary: 'Ganz anderer Text über denselben Vorgang.' };
+  const sameHouse = { source_id: 'bund-zweit', publisher_id: 'bund', url: 'https://bund.example/2', title: 'Zweitmeldung', summary: 'Weiterer Text.' };
+  assert.equal(independentOrigins({ sources: [primary] }), 1);
+  assert.equal(independentOrigins({ sources: [primary, agency] }), 2);
+  assert.equal(independentOrigins({ sources: [primary, sameHouse] }), 1, 'dasselbe Haus ist eine Herkunft');
+  assert.equal(independentOrigins({}), 0);
+
+  // Eine Quelle, zitierte Primärquelle: primary_source_claim.
+  const one = { event_claims: [{ claim: 'X', status: 'confirmed_claim', evidence: [{ source_id: 'ministerium', url: 'https://bund.example/1' }] }] };
+  const repairs = [];
+  repairClaimIndependence(one, { sources: [primary] }, repairs);
+  assert.equal(one.event_claims[0].status, 'primary_source_claim');
+  assert.match(repairs[0], /confirmed_claim->primary_source_claim \(1 unabhängige Herkunft\)/);
+  // Eine Herkunft ohne Primärquelle, zwei Belege: uncertain_claim.
+  const dependent = { event_claims: [{ claim: 'X', status: 'confirmed_claim', evidence: [{ source_id: 'bund-zweit', url: 'https://bund.example/2' }, { source_id: 'ministerium2', url: 'https://bund.example/3' }] }] };
+  repairClaimIndependence(dependent, { sources: [sameHouse, { ...sameHouse, source_id: 'ministerium2', url: 'https://bund.example/3' }] }, []);
+  assert.equal(dependent.event_claims[0].status, 'uncertain_claim');
+  // Ein Beleg ohne Primärquelle: single_source_claim.
+  const single = { event_claims: [{ claim: 'X', status: 'confirmed_claim', evidence: [{ source_id: 'agentur', url: 'https://agentur.example/1' }] }] };
+  repairClaimIndependence(single, { sources: [agency] }, []);
+  assert.equal(single.event_claims[0].status, 'single_source_claim');
+  // Zwei unabhängige Herkünfte bleiben bestätigt, andere Status bleiben unberührt.
+  const fine = { event_claims: [{ claim: 'X', status: 'confirmed_claim', evidence: [{ source_id: 'ministerium', url: 'https://bund.example/1' }, { source_id: 'agentur', url: 'https://agentur.example/1' }] },
+    { claim: 'Y', status: 'uncertain_claim', evidence: [{ source_id: 'agentur', url: 'https://agentur.example/1' }] }] };
+  const none = [];
+  repairClaimIndependence(fine, { sources: [primary, agency] }, none);
+  assert.equal(fine.event_claims[0].status, 'confirmed_claim');
+  assert.equal(fine.event_claims[1].status, 'uncertain_claim');
+  assert.deepEqual(none, []);
+
+  // Die Vorgabe nennt die Zahl der Herkünfte, damit es gar nicht dazu kommt.
+  assert.match(storyBriefing({ existing_story: { published: false }, sources: [primary] }), /nur eine unabhängige Herkunft.*confirmed_claim ist damit ausgeschlossen/s);
+  assert.match(storyBriefing({ existing_story: { published: false }, sources: [primary, agency] }), /2 voneinander unabhängige Herkünfte/);
+});
