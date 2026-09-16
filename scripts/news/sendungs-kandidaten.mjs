@@ -251,7 +251,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
       // Wartefenster läuft, bleibt die Folge liegen statt ohne Wortlaut in eine
       // Rückfrage zu laufen (16.09.: Lanz vom 15.09. ohne Untertitel).
       const ageHours = (Date.parse(now) - Date.parse(episode.published_at)) / 3600000;
-      if (!transcript && (retry || ageHours < subtitleWaitHours)) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)), retry: Boolean(retry) }); continue; }
+      if (!transcript && ageHours < subtitleWaitHours) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)), retry: Boolean(retry) }); continue; }
       if (!transcript && transcribe && transcriptDay.transcribed < maxTranscriptsPerDay) {
         try {
           const machine = await transcribeImpl(episode, { apiKey: env.OPENAI_API_KEY, fetchImpl });
@@ -263,6 +263,11 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
           }
         } catch (error) { transcriptErrors.push({ show_id: show.id, error: String(error?.message || error).slice(0, 80) }); }
       }
+      // Nach dem Wartefenster ohne Untertitel bleibt die eigene Abschrift. Erst
+      // wenn auch die fehlt, wartet ein Wiederholungsversuch weiter: ein
+      // zweiter Auftrag ohne Wortlaut würde genauso in eine Rückfrage laufen
+      // wie der erste.
+      if (!transcript && retry) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)), retry: true, reason: 'ohne Wortlaut' }); continue; }
       const { job, fingerprint } = buildEpisodeRequest(episode, show, { owner, now, transcript, retry });
       const key = `github-episode:${show.id}:${hash(episode.guid).slice(0, 32)}`;
       if (await store.observation(`intake-fingerprint:${fingerprint}`)) { await store.observe(key, { job_id: null, fingerprint, at: now, version: EPISODE_VERSION, duplicate: true }); continue; }
