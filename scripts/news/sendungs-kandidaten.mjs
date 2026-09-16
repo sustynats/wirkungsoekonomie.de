@@ -290,7 +290,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
             transcriptDay.cost_usd = Number((transcriptDay.cost_usd + (machine.cost_usd || 0)).toFixed(4));
             await store.observe(`github-transcript-day:${day}`, transcriptDay);
           }
-        } catch (error) { transcriptErrors.push({ show_id: show.id, error: String(error?.message || error).slice(0, 80) }); }
+        } catch (error) { transcriptErrors.push({ show_id: show.id, error: String(error?.message || error).slice(0, 80), ...(error?.detail ? { detail: String(error.detail).slice(-300) } : {}) }); }
       }
       // Nach dem Wartefenster ohne Untertitel bleibt die eigene Abschrift. Erst
       // wenn auch die fehlt, wartet ein Wiederholungsversuch weiter: ein

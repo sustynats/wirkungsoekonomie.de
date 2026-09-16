@@ -103,14 +103,50 @@ const run = (file, args, { timeoutMs = 900000 } = {}) => new Promise((resolve, r
   });
 });
 
+// Der Auslieferer der Mediathek beantwortet nicht jede Anfrage gleich: ein
+// gewöhnlicher Browser-Kennung und Wiederverbindung gehören dazu (16.09.:
+// MEDIA_TRANSCODE_FAILED beim Lanz vom 15.09., Datei erreichbar, 390 MB).
+export const MEDIA_USER_AGENT = 'Mozilla/5.0 (compatible; WirkungstickerNachbetrachtung/1.0; +https://wirkungsoekonomie.de/wirkungsticker/)';
+export const MEDIA_MAX_DOWNLOAD_BYTES = 3 * 1024 * 1024 * 1024;
+const audioArgs = (input, output) => ['-nostdin', '-loglevel', 'error', '-y',
+  '-user_agent', MEDIA_USER_AGENT, '-reconnect', '1', '-reconnect_streamed', '1', '-reconnect_delay_max', '5',
+  '-i', input, '-vn', '-ac', '1', '-ar', '16000', '-c:a', 'libmp3lame', '-b:a', AUDIO_BITRATE, output];
+
+// Reicht der direkte Zugriff nicht, wird die Datei erst geholt und dann lokal
+// umgewandelt. Zwei Wege, ein Ergebnis; scheitern beide, nennt der Fehler beide.
+export async function downloadMedia(url, file, { fetchImpl = fetch, maxBytes = MEDIA_MAX_DOWNLOAD_BYTES, timeoutMs = 900000 } = {}) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetchImpl(url, { signal: controller.signal, headers: { 'User-Agent': MEDIA_USER_AGENT, Accept: '*/*' } });
+    if (!response.ok) throw Object.assign(new Error('MEDIA_DOWNLOAD_FAILED'), { detail: `HTTP ${response.status}` });
+    const declared = Number(response.headers?.get?.('content-length') || 0);
+    if (declared > maxBytes) throw Object.assign(new Error('MEDIA_DOWNLOAD_TOO_LARGE'), { detail: `${declared} Bytes` });
+    const bytes = Buffer.from(await response.arrayBuffer());
+    if (!bytes.length) throw Object.assign(new Error('MEDIA_DOWNLOAD_EMPTY'), { detail: url.slice(0, 120) });
+    if (bytes.length > maxBytes) throw Object.assign(new Error('MEDIA_DOWNLOAD_TOO_LARGE'), { detail: `${bytes.length} Bytes` });
+    fs.writeFileSync(file, bytes);
+    return { file, size: bytes.length };
+  } finally { clearTimeout(timer); }
+}
+
 // Nur die Tonspur, klein gerechnet: kein Video, mono, 16 kHz.
-export async function extractAudio(url, { dir = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-audio-')), ffmpeg = 'ffmpeg', exec = run, timeoutMs } = {}) {
+export async function extractAudio(url, { dir = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-audio-')), ffmpeg = 'ffmpeg', exec = run, timeoutMs, fetchImpl = fetch, download = downloadMedia } = {}) {
   const output = path.join(dir, 'audio.mp3');
-  await exec(ffmpeg, ['-nostdin', '-loglevel', 'error', '-y', '-i', url, '-vn', '-ac', '1', '-ar', '16000', '-c:a', 'libmp3lame', '-b:a', AUDIO_BITRATE, output], { timeoutMs });
+  let direct = null;
+  try { await exec(ffmpeg, audioArgs(url, output), { timeoutMs }); }
+  catch (error) {
+    direct = error;
+    const local = path.join(dir, 'source.media');
+    await download(url, local, { fetchImpl, timeoutMs });
+    try { await exec(ffmpeg, audioArgs(local, output), { timeoutMs }); }
+    catch (second) { throw Object.assign(second, { detail: [`direkt: ${direct.detail || direct.message}`, `nach Download: ${second.detail || second.message}`].join(' · ').slice(-600) }); }
+    finally { try { fs.rmSync(local, { force: true }); } catch { /* best effort */ } }
+  }
   const size = fs.existsSync(output) ? fs.statSync(output).size : 0;
   if (!size) throw Object.assign(new Error('MEDIA_TRANSCODE_EMPTY'), { url });
   if (size > AUDIO_MAX_BYTES) throw Object.assign(new Error('MEDIA_AUDIO_TOO_LARGE'), { size });
-  return { file: output, size, dir };
+  return { file: output, size, dir, downloaded: Boolean(direct) };
 }
 
 export async function transcribeAudioFile(file, { apiKey = process.env.OPENAI_API_KEY, model = TRANSCRIBE_MODEL, fetchImpl = fetch, timeoutMs = 900000, language = 'de' } = {}) {
