@@ -1172,5 +1172,14 @@
     "last_new_at": "2026-09-16T09:50:41.706Z",
     "checked_at": "2026-09-16T10:32:50.082Z",
     "last_current_new_at": "2026-09-16T09:50:41.706Z"
-  }
+  },
+  "recovery_attempts": [
+    {
+      "key": "f7a4dd28ba5205a52b168efa380b83dd43774cb5af72ca55ac0eba00d166a886",
+      "workflow": "wirkungsticker.yml",
+      "head": "ed0148e725f3aacdc223e1bfcb571ac1a28708b2",
+      "at": "2026-09-16T10:32:50.082Z",
+      "status": "reserved"
+    }
+  ]
 }
