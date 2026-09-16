@@ -7,6 +7,7 @@ import { deriveAssessmentCalculations, IMPACT_VERSION } from './impact-assessmen
 import { semanticIssues } from './impact-publication.mjs';
 import { modelledPublicationIssues } from './impact-scope.mjs';
 import { secondPassComplete } from './impact-gate.mjs';
+import { impactAssessmentResponseFormat } from './impact-json-schema.mjs';
 import { FACTOR_KEYS } from './impact-magnitude.mjs';
 import { modelRates } from './budget.mjs';
 
@@ -52,14 +53,14 @@ export const SINGLE_CALL_INSTRUCTIONS = [
 // Ausgabebudget: ein vollständiges Paket braucht gemessen 6k–8k Antwort-Token;
 // Reasoning-Token zählen mit. 24k deckt das mit Reserve ab und begrenzt Laufzeit
 // und Kosten einer entgleisten Generierung (Lauf 6: zwei Aufrufe über 240 s).
-export function buildOpenAiRequest(prompt, { model, maxOutputTokens = 24000, reasoningEffort = 'low' } = {}) {
+export function buildOpenAiRequest(prompt, { model, maxOutputTokens = 24000, reasoningEffort = 'low', instructions = SINGLE_CALL_INSTRUCTIONS, responseFormat = { type: 'json_object' } } = {}) {
   return {
     model, store: false,
     reasoning: { effort: reasoningEffort },
     max_output_tokens: maxOutputTokens,
-    instructions: SINGLE_CALL_INSTRUCTIONS,
+    instructions,
     input: prompt,
-    text: { format: { type: 'json_object' } },
+    text: { format: responseFormat },
   };
 }
 
@@ -331,25 +332,34 @@ export function repairAddendum(storyId, issues, previous) {
 const sumUsage = (a, b) => !a ? b : !b ? a : { input_tokens: a.input_tokens + b.input_tokens, output_tokens: a.output_tokens + b.output_tokens,
   ...((a.cached_input_tokens ?? b.cached_input_tokens) !== undefined ? { cached_input_tokens: (a.cached_input_tokens || 0) + (b.cached_input_tokens || 0) } : {}) };
 
-async function requestAssessmentRepair({ prompt, story, analysis, issues, model, apiKey, fetchImpl, timeoutMs, reasoningEffort, rawDir }) {
+async function requestAssessmentRepair({ prompt, story, analysis, issues, model, apiKey, fetchImpl, timeoutMs, reasoningEffort, rawDir, schema = true }) {
   const addendum = repairAddendum(story.story_id, issues, analysis.impact_assessment || null);
-  const body = JSON.stringify(buildOpenAiRequest(`${prompt}\n\n${addendum}`, { model, maxOutputTokens: REPAIR_MAX_OUTPUT_TOKENS, reasoningEffort }));
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
-  let payload = null, status = 0;
-  try {
-    const response = await fetchImpl(OPENAI_RESPONSES_URL, { method: 'POST', signal: controller.signal, body, headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` } });
-    status = response.status; payload = await response.json().catch(() => null);
-    if (!response.ok) return { usage: decodeUsage(payload), assessment: null, answerChars: 0, status };
-  } catch { return { usage: null, assessment: null, answerChars: 0, status: 0 }; }
-  finally { clearTimeout(timer); }
+  // A schema-bound answer cannot omit a key. The provider may reject the
+  // schema (unknown model, unsupported keyword); then exactly one further try
+  // in plain JSON mode follows, which is the previous behaviour.
+  const formats = schema ? [impactAssessmentResponseFormat(), { type: 'json_object' }] : [{ type: 'json_object' }];
+  let payload = null, status = 0, usedSchema = false;
+  for (const [index, format] of formats.entries()) {
+    const body = JSON.stringify(buildOpenAiRequest(`${prompt}\n\n${addendum}`, { model, maxOutputTokens: REPAIR_MAX_OUTPUT_TOKENS, reasoningEffort, responseFormat: format }));
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const response = await fetchImpl(OPENAI_RESPONSES_URL, { method: 'POST', signal: controller.signal, body, headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` } });
+      status = response.status; payload = await response.json().catch(() => null);
+      usedSchema = format.type === 'json_schema';
+      if (response.ok) break;
+      if (status !== 400 || index === formats.length - 1) return { usage: decodeUsage(payload), assessment: null, answerChars: 0, status, schema: usedSchema };
+    } catch { return { usage: null, assessment: null, answerChars: 0, status: 0, schema: usedSchema }; }
+    finally { clearTimeout(timer); }
+  }
   const usage = decodeUsage(payload), answer = finalOutputText(payload);
   // Diagnosis copy also without a final message: an incomplete follow-up must be explainable.
-  if (rawDir) { try { fs.mkdirSync(rawDir, { recursive: true }); fs.writeFileSync(`${rawDir}/${new Date().toISOString().replace(/[:.]/g, '-')}-${story.story_id}-nachlieferung.json`, JSON.stringify({ model: payload?.model || model, status: payload?.status || null, incomplete: payload?.incomplete_details || null, usage, issues, answer: answer || null, output_types: (payload?.output || []).map((item) => item?.type), story_ids: [story.story_id] }, null, 2)); } catch { /* best effort */ } }
+  if (rawDir) { try { fs.mkdirSync(rawDir, { recursive: true }); fs.writeFileSync(`${rawDir}/${new Date().toISOString().replace(/[:.]/g, '-')}-${story.story_id}-nachlieferung.json`, JSON.stringify({ model: payload?.model || model, status: payload?.status || null, incomplete: payload?.incomplete_details || null, usage, issues, schema: usedSchema, answer: answer || null, output_types: (payload?.output || []).map((item) => item?.type), story_ids: [story.story_id] }, null, 2)); } catch { /* best effort */ } }
   let parsed = null;
   try { parsed = answer ? JSON.parse(answer) : null; } catch { parsed = null; }
-  const assessment = parsed?.analyses?.find?.((a) => a?.story_id === story.story_id)?.impact_assessment || parsed?.analyses?.[0]?.impact_assessment || parsed?.impact_assessment || null;
-  return { usage, assessment: assessment && typeof assessment === 'object' ? assessment : null, answerChars: (answer || '').length, status };
+  const assessment = parsed?.analyses?.find?.((a) => a?.story_id === story.story_id)?.impact_assessment || parsed?.analyses?.[0]?.impact_assessment || parsed?.impact_assessment
+    || (parsed?.dimensions && parsed?.version ? parsed : null);
+  return { usage, assessment: assessment && typeof assessment === 'object' ? assessment : null, answerChars: (answer || '').length, status, schema: usedSchema };
 }
 
 const retryable = (status) => status === 429 || status >= 500;
@@ -422,6 +432,7 @@ export async function callOpenAiDirect(stories, options = {}) {
       if (!issues.length) continue;
       result.repair_calls += 1;
       const repaired = await requestAssessmentRepair({ prompt, story, analysis, issues, model, apiKey, fetchImpl, rawDir,
+        schema: options.repairSchema !== false && process.env.WOEK_NEWS_REPAIR_SCHEMA !== 'false',
         timeoutMs: Number(options.timeoutMs || process.env.WOEK_NEWS_AI_TIMEOUT_MS || 240000), reasoningEffort: options.reasoningEffort || process.env.WOEK_NEWS_REASONING_EFFORT || 'low' });
       if (repaired.usage) result.reported_usage = sumUsage(result.reported_usage, repaired.usage);
       result.answer_chars = Number(result.answer_chars || 0) + repaired.answerChars;
@@ -429,7 +440,7 @@ export async function callOpenAiDirect(stories, options = {}) {
         analysis.impact_assessment = repaired.assessment;
         normalizeAnalysisOutput(analysis, story);
         const remaining = assessmentIssues(analysis, story);
-        (analysis.transport_repairs ||= []).push(`impact_assessment:nachgeliefert (${issues.length} Befunde, danach ${remaining.length})`);
+        (analysis.transport_repairs ||= []).push(`impact_assessment:nachgeliefert${repaired.schema ? ' mit Schema' : ''} (${issues.length} Befunde, danach ${remaining.length})`);
       } else (analysis.transport_repairs ||= []).push(`impact_assessment:nachlieferung ohne Ergebnis (HTTP ${repaired.status})`);
     }
   }
