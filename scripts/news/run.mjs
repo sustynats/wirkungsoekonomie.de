@@ -782,6 +782,22 @@ export function pendingTitleImageQueue(stories, { now, changed = new Set(), limi
     .slice(0, Math.max(0, limit));
 }
 
+// Natalie am 16.09.2026: „machen wir erstmal 4 der relevantesten Meldungen pro
+// Stunde." Die Stundengrenze zaehlte bisher Aufrufe, und eine Nachlieferung ist
+// ein Aufruf: vier Aufrufe waren damit je nach Nachbesserung nur zwei Meldungen.
+// Die Grenze zaehlt jetzt Meldungen; das Geld begrenzt die Taktung.
+export function aiStoriesInWindow(usage, now, windowMinutes = 60) {
+  const at = Date.parse(now);
+  if (!Number.isFinite(at)) throw new Error("INVALID_AI_USAGE_TIME");
+  const cutoff = at - Math.max(1, Number(windowMinutes || 60)) * 60000;
+  return (usage.runs || [])
+    .filter((run) => {
+      const startedAt = Date.parse(usageCostStartedAt(run) || 0);
+      return Number.isFinite(startedAt) && startedAt > cutoff && startedAt <= at;
+    })
+    .reduce((sum, run) => sum + Math.max(0, Number(run.counts?.ai_stories ?? run.ai?.requests ?? 0) || 0), 0);
+}
+
 export function aiRequestsInWindow(usage, now, windowMinutes = 60) {
   const nowMs = new Date(now).getTime();
   if (!Number.isFinite(nowMs)) throw new Error("INVALID_AI_USAGE_TIME");
@@ -1467,20 +1483,25 @@ export async function runWirkungsticker(options = {}) {
     }
   });
   const configuredMaxAiStories = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || 2));
-  const configuredCallsPerHour = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || 4));
+  // Die Stundengrenze gilt fuer Meldungen. Der alte Name bleibt als Rueckfall,
+  // damit eine gesetzte Variable weiter wirkt.
+  const configuredStoriesPerHour = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_HOUR || process.env.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || 4));
   // Die Freigabe gilt für den Kalendermonat, also verteilt sich ihr Rest auf die
   // restlichen Stunden. Damit reicht sie bis zum Monatsende, ohne dass jemand
   // eine Zahl nachstellt (Natalie am 16.09.: „Bis Monatsende sollten wir mit
   // EUR 100 hinkommen"). Abschaltbar, dann gilt wieder die feste Obergrenze.
   const pacing = process.env.WOEK_NEWS_BUDGET_PACING === 'false'
-    ? { calls_per_hour: configuredCallsPerHour, usd_per_hour: null, spent_last_hour: null, remaining_usd: null, paused: false, enabled: false }
-    : { ...budgetPacing({ budget, spent: spendBefore, spentLastHour: aiSpendInWindow(usage, now), now, configured: configuredCallsPerHour }), enabled: true };
-  const maxAiCallsPerHour = pacing.calls_per_hour;
+    ? { calls_per_hour: configuredStoriesPerHour, usd_per_hour: null, spent_last_hour: null, remaining_usd: null, paused: false, enabled: false }
+    : { ...budgetPacing({ budget, spent: spendBefore, spentLastHour: aiSpendInWindow(usage, now), now, configured: configuredStoriesPerHour }), enabled: true };
+  const aiStoriesInLastHour = aiStoriesInWindow(usage, now);
   const aiCallsInLastHour = aiRequestsInWindow(usage, now);
-  const remainingAiCallsThisHour = Math.max(0, maxAiCallsPerHour - aiCallsInLastHour);
-  const maxAiStories = Math.min(configuredMaxAiStories, remainingAiCallsThisHour);
+  const hourlyRoom = Math.max(0, configuredStoriesPerHour - aiStoriesInLastHour);
+  const maxAiCallsPerHour = pacing.paused ? 0 : hourlyRoom;
+  const remainingAiCallsThisHour = maxAiCallsPerHour;
+  const maxAiStories = Math.min(configuredMaxAiStories, maxAiCallsPerHour);
   report.ai_hourly_limit = maxAiCallsPerHour;
-  report.ai_hourly_limit_configured = configuredCallsPerHour;
+  report.ai_hourly_limit_configured = configuredStoriesPerHour;
+  report.ai_stories_in_last_hour = aiStoriesInLastHour;
   report.ai_budget_pacing = { ...pacing, calls_this_month: monthlyAiCalls(usage, month) };
   report.ai_calls_in_last_hour = aiCallsInLastHour;
   report.ai_calls_available_this_run = remainingAiCallsThisHour;

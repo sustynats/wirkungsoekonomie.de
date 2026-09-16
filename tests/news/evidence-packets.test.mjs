@@ -402,12 +402,15 @@ test('der Lauf nennt die Taktung und hält sich an sie', async () => {
   assert.equal(quiet.ai_budget_pacing.paused, false);
   assert.equal(quiet.ai_hourly_limit, 4);
   assert.equal(quiet.ai_calls, 1);
-  // Abschaltbar: dann gilt wieder die feste Obergrenze.
+  assert.equal(quiet.ai_stories_in_last_hour, 0);
+  // Abschaltbar: dann zaehlt nur noch die Stundengrenze fuer Meldungen.
   process.env.WOEK_NEWS_BUDGET_PACING = 'false';
   try {
     const off = await runWirkungsticker(options(storedStory(), { callAiImpl, usage: structuredClone(busy) }));
     assert.equal(off.ai_budget_pacing.enabled, false);
-    assert.equal(off.ai_hourly_limit, off.ai_hourly_limit_configured);
+    assert.equal(off.ai_stories_in_last_hour, 2, 'zwei Meldungen liegen in der Stunde');
+    assert.equal(off.ai_hourly_limit, 2, 'also bleiben zwei von vier');
+    assert.equal(off.ai_hourly_limit_configured, 4);
   } finally { delete process.env.WOEK_NEWS_BUDGET_PACING; }
 });
 
@@ -438,4 +441,28 @@ test('eine veröffentlichte Meldung ohne nutzbares Titelbild kommt in die Nachr�
   assert.equal(missingTitleImage({ title_image: image }), false);
   assert.equal(missingTitleImage({}), true);
   assert.equal(missingTitleImage(null), true);
+});
+
+test('die Stundengrenze zaehlt Meldungen, nicht Aufrufe', async () => {
+  const { aiStoriesInWindow, aiRequestsInWindow } = await import('../../scripts/news/run.mjs');
+  // Ein Lauf mit drei Meldungen und sechs Aufrufen (drei Nachlieferungen):
+  // die Stundengrenze darf davon drei zaehlen, nicht sechs.
+  const usage = { runs: [{ started_at: '2026-09-04T11:30:00.000Z', counts: { ai_stories: 3, ai_requests: 6 }, ai: { requests: 6, estimated_cost_usd: 0.05 } }] };
+  assert.equal(aiStoriesInWindow(usage, '2026-09-04T12:00:00.000Z'), 3);
+  assert.equal(aiRequestsInWindow(usage, '2026-09-04T12:00:00.000Z'), 6);
+  // Ausserhalb des Fensters zaehlt nichts.
+  assert.equal(aiStoriesInWindow(usage, '2026-09-04T13:00:00.000Z'), 0);
+  // Ein Altvermerk ohne counts faellt auf die Aufrufzahl zurueck.
+  assert.equal(aiStoriesInWindow({ runs: [{ started_at: '2026-09-04T11:30:00.000Z', ai: { requests: 2 } }] }, '2026-09-04T12:00:00.000Z'), 2);
+  assert.equal(aiStoriesInWindow({ runs: [] }, '2026-09-04T12:00:00.000Z'), 0);
+  assert.throws(() => aiStoriesInWindow(usage, 'kein Datum'), /INVALID_AI_USAGE_TIME/);
+  // Und im Lauf: drei Meldungen in der Stunde lassen bei vier noch eine zu.
+  const callAiImpl = async (stories) => ({ analyses: stories.map((story) => ({ story_id: story.story_id, publication_recommendation: false,
+      rejection: { code: 'no_new_information', reason: 'Die vorliegenden Quellen ergänzen keine neue materielle Information gegenüber der veröffentlichten Fassung.' } })),
+    model: 'gpt-5.6-luna', reported_usage: { input_tokens: 100, output_tokens: 50 } });
+  const report = await runWirkungsticker(options(storedStory(), { callAiImpl,
+    usage: { runs: [{ started_at: '2026-09-04T11:30:00.000Z', counts: { ai_stories: 3 }, ai: { requests: 6, estimated_cost_usd: 0.001 } }] } }));
+  assert.equal(report.ai_stories_in_last_hour, 3);
+  assert.equal(report.ai_hourly_limit, 1);
+  assert.equal(report.ai_calls, 1, 'genau die letzte freie Meldung');
 });
