@@ -348,3 +348,38 @@ test('scheitert der direkte Zugriff auf die Mediathek, wird die Datei geholt und
   await assert.rejects(() => downloadMedia('https://rodlzdf-a.example/weg.mp4', path.join(dir, 'x'), { fetchImpl: async () => ({ ok: false, status: 404, headers: { get: () => null } }) }),
     /MEDIA_DOWNLOAD_FAILED/);
 });
+
+test('wechselt die Mediathek-Kennung mit den Untertiteln, bleibt die Folge dieselbe', async () => {
+  const { observationKey, pageObservationKey, ownEpisodeRequest } = await import('../../scripts/news/sendungs-kandidaten.mjs');
+  const lanz = { id: 'markus-lanz', show_name: 'Markus Lanz', kind: 'watched', mediathek: { title: 'Markus Lanz', channel: 'ZDF' }, provider: 'ZDF-Mediathek', min_duration_seconds: 1500 };
+  const base = { title: 'Markus Lanz vom 15. September 2026 (S2026/E99)', timestamp: Math.floor(Date.parse('2026-09-15T20:45:00Z') / 1000), duration: 4611,
+    url_website: 'https://www.zdf.de/video/talk/lanz-99', url_video_low: 'https://cdn.example/lanz.mp4' };
+  // Ohne Untertitel eine Kennung, mit Untertiteln eine andere - dieselbe Folge.
+  const ohne = { ...base, id: 'lanz99-ohne', url_subtitle: '' };
+  const mit = { ...base, id: 'lanz99-mit-ut', url_subtitle: 'https://utstreaming.zdf.de/mtt/lanz99.xml' };
+  const [a] = mediathekEpisodes([ohne], lanz);
+  const [b] = mediathekEpisodes([mit], lanz);
+  assert.notEqual(a.guid, b.guid, 'die Kennung der Mediathek wechselt');
+  assert.equal(a.key, b.key, 'die Folgenkennung bleibt');
+  assert.equal(observationKey(lanz, a), observationKey(lanz, b), 'und damit der Vermerk');
+  assert.equal(pageObservationKey(a), pageObservationKey(b));
+  assert.equal(pageObservationKey({ page: '' }), null);
+  // Der eigene Auftrag ist als solcher erkennbar, ein Auftrag der Redaktion nicht.
+  assert.equal(ownEpisodeRequest({ intake: { trigger_type: 'automatic_episode' } }), true);
+  assert.equal(ownEpisodeRequest({ input: { origin: { proposed_by: 'github_direct_worker' } } }), true);
+  assert.equal(ownEpisodeRequest({ intake: { trigger_type: 'manual' } }), false);
+  assert.equal(ownEpisodeRequest(null), false);
+
+  // Und im Lauf: erst ohne Wortlaut eingereiht, dann mit Untertiteln genau einmal erneut.
+  const session = fakeSession();
+  const track = `<tt:tt>${Array.from({ length: 30 }, (_, i) => `<tt:p begin="00:1${i % 10}:00.000">${'Aussage '.repeat(12)}</tt:p>`).join('')}</tt:tt>`;
+  const feed = (rows) => async (url, init) => init?.method === 'POST' ? { ok: true, json: async () => ({ result: { results: rows } }) } : { ok: true, text: async () => track };
+  const options = { session: session.session, root: '/nonexistent', env: {}, shows: [lanz], limit: 2, maxPerDay: 5, maxAgeDays: 7, transcribe: false, subtitleWaitHours: 12 };
+  const first = await proposeEpisodeCandidates({ ...options, now: '2026-09-16T09:00:00.000Z', fetchImpl: feed([ohne]) });
+  assert.deepEqual(first.proposed.map((p) => p.transcript_origin), [null], 'erster Auftrag ohne Wortlaut');
+  // Die untertitelte Fassung trägt eine andere Mediathek-Kennung.
+  const second = await proposeEpisodeCandidates({ ...options, now: '2026-09-16T13:00:00.000Z', fetchImpl: feed([mit]) });
+  assert.deepEqual(second.proposed.map((p) => p.transcript_origin), ['accessibility_subtitles'], 'die Folge wird trotz neuer Kennung erkannt und nachgereicht');
+  const third = await proposeEpisodeCandidates({ ...options, now: '2026-09-16T14:00:00.000Z', fetchImpl: feed([mit]) });
+  assert.deepEqual(third.proposed, [], 'und danach nicht wieder');
+});
