@@ -305,7 +305,7 @@ test('an answer without a usable assessment gets exactly one focused follow-up i
   };
   const result = await callOpenAiDirect(stories, { apiKey: 'test', fetchImpl, model: 'gpt-5.6-luna' });
   assert.equal(bodies.length, 2, 'one answer, one follow-up');
-  assert.ok(bodies[1].input.includes('NACHLIEFERUNG für story_id wt-1')); assert.ok(bodies[1].input.includes('IMPACT_ASSESSMENT_REQUIRED')); assert.equal(bodies[1].max_output_tokens, 16000);
+  assert.ok(bodies[1].input.includes('NACHLIEFERUNG für story_id wt-1')); assert.ok(bodies[1].input.includes('IMPACT_ASSESSMENT_REQUIRED')); assert.equal(bodies[1].max_output_tokens, 24000);
   assert.equal(result.repair_calls, 1); assert.equal(result.request_attempts, 1);
   assert.deepEqual(result.reported_usage, { input_tokens: 2400, output_tokens: 1600, cached_input_tokens: 400 });
   assert.equal(result.analyses[0].impact_assessment.version, '2.1'); assert.equal(result.analyses[0].headline, 'H');

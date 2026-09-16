@@ -292,3 +292,8 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 - **Was:** Seit #791 laufen im Worker drei Schritte (Analysekandidaten, Sendungen, Entwürfe); alle holten die Import-Sperre mit derselben manuellen Lauf-ID. Nach dem ersten Schritt galt der Slot als abgeschlossen, Sendungen und Entwürfe wurden übersprungen (`BRIDGE_SLOT_ALREADY_COMPLETED`, Takt 23:35 UTC). Jeder Schritt hängt jetzt eine Schrittziffer an die Versuchsnummer (`<run>:<attempt><schritt>`, bleibt im Format Ziffern:Ziffern).
 - **Geprüft:** Worker-, Sendungs- und Workflow-Tests.
+
+## 2026-09-16 - Claude: Nachlieferung mit 24k Ausgabebudget und Diagnosekopie
+
+- **Was:** Erster Lauf mit Nachlieferung (00:07 UTC): vier Meldungen, sieben Aufrufe, eine veröffentlicht (Ukraine-Meldung nach drei vergeblichen Läufen, diesmal durch die deterministischen Reparaturen). Die drei Folgeaufrufe erzeugten je rund 9k Antwort-Token plus Reasoning und liefen in die 16k-Grenze: keine Endnachricht, bezahlt, keine Wirkung, und keine Rohkopie, weil nur Antworten mit Text gesichert wurden. Grenze auf 24k, Rohkopie auch ohne Endnachricht (Status, incomplete, Ausgabetypen).
+- **Geprüft:** `tests/news/direct-operation.test.mjs` 21/21.

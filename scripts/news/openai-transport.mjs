@@ -302,7 +302,10 @@ export function assessmentIssues(analysis, story) {
 // medium effort). A second full attempt in the next run repeats that. One
 // focused follow-up in the same run, carrying the exact gate findings, only
 // re-delivers impact_assessment; texts and sources stay as answered.
-export const REPAIR_MAX_OUTPUT_TOKENS = 16000;
+// 24k: the first three follow-ups (00:07 UTC) generated about 9k answer tokens
+// each plus medium reasoning and still ran into the 16k cap (no final message,
+// paid for nothing).
+export const REPAIR_MAX_OUTPUT_TOKENS = 24000;
 export function repairAddendum(storyId, issues, previous) {
   return [`NACHLIEFERUNG für story_id ${storyId}: Deine Antwort ist angekommen, aber impact_assessment fehlt oder besteht die deterministische Prüfung nicht.`,
     `Prüfbefunde: ${issues.join(', ')}.`,
@@ -325,7 +328,8 @@ async function requestAssessmentRepair({ prompt, story, analysis, issues, model,
   } catch { return { usage: null, assessment: null, answerChars: 0, status: 0 }; }
   finally { clearTimeout(timer); }
   const usage = decodeUsage(payload), answer = finalOutputText(payload);
-  if (rawDir && answer) { try { fs.mkdirSync(rawDir, { recursive: true }); fs.writeFileSync(`${rawDir}/${new Date().toISOString().replace(/[:.]/g, '-')}-${story.story_id}-nachlieferung.json`, JSON.stringify({ model: payload?.model || model, status: payload?.status || null, incomplete: payload?.incomplete_details || null, usage, issues, answer, story_ids: [story.story_id] }, null, 2)); } catch { /* best effort */ } }
+  // Diagnosis copy also without a final message: an incomplete follow-up must be explainable.
+  if (rawDir) { try { fs.mkdirSync(rawDir, { recursive: true }); fs.writeFileSync(`${rawDir}/${new Date().toISOString().replace(/[:.]/g, '-')}-${story.story_id}-nachlieferung.json`, JSON.stringify({ model: payload?.model || model, status: payload?.status || null, incomplete: payload?.incomplete_details || null, usage, issues, answer: answer || null, output_types: (payload?.output || []).map((item) => item?.type), story_ids: [story.story_id] }, null, 2)); } catch { /* best effort */ } }
   let parsed = null;
   try { parsed = answer ? JSON.parse(answer) : null; } catch { parsed = null; }
   const assessment = parsed?.analyses?.find?.((a) => a?.story_id === story.story_id)?.impact_assessment || parsed?.analyses?.[0]?.impact_assessment || parsed?.impact_assessment || null;
