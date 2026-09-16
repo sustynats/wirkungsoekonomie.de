@@ -305,3 +305,9 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 - **Was:** Erster Lauf mit Nachlieferung (00:07 UTC): vier Meldungen, sieben Aufrufe, eine veröffentlicht (Ukraine-Meldung nach drei vergeblichen Läufen, diesmal durch die deterministischen Reparaturen). Die drei Folgeaufrufe erzeugten je rund 9k Antwort-Token plus Reasoning und liefen in die 16k-Grenze: keine Endnachricht, bezahlt, keine Wirkung, und keine Rohkopie, weil nur Antworten mit Text gesichert wurden. Grenze auf 24k, Rohkopie auch ohne Endnachricht (Status, incomplete, Ausgabetypen).
 - **Geprüft:** `tests/news/direct-operation.test.mjs` 21/21.
+
+## 2026-09-16 - Claude: Worker liefert Quellenauszüge selbst, wartet auf die Lane
+
+- **Was:** Alle Entwürfe der Nacht (00:50–03:20 UTC) kamen als HOLD zurück, meist `SOURCE_VERIFICATION_REQUIRED`: Auch mit Web-Suche behandelte das Modell verlinkte Quellen nicht als gelesen. Der Worker ruft die verlinkten Artikel jetzt selbst ab (https, keine privaten Hosts, bis sechs Links, je 7 000 Zeichen, HTML/VTT/Text) und legt sie als `origin.source_excerpts` in die Prompt-Kopie des Pakets; das gebundene Paket und sein `input_hash` bleiben unverändert. Das Profil akzeptiert genau solche Auszüge als Tatsachenbelege. Zudem: beide Workflows starten auf denselben Oracle-Push, der Nachrichtenlauf hält die Import-Lane; die drei Redaktionsschritte warten jetzt bis zu zehn Minuten (`acquireLane` mit `retries`/`waitMs`) statt den Zyklus zu verlieren. Vermerk trägt `disposition`, `hold_code`, `source_excerpts`.
+- **Geprüft:** `tests/news/redaktionsworker.test.mjs` 12/12 (2 neu), Sendungs- und Workflow-Tests.
+- **Offen:** Die 16 HOLD-Aufträge der Nacht haben ihren einen Versuch verbraucht; Natalie kann sie in der App mit Kommentar zurückgeben (neue Fassung), oder wir reihen sie einmalig neu ein. Tagesdeckel für heute bereits erreicht (16); Variable `WOEK_EDITORIAL_MAX_JOBS_PER_DAY` nach dem Merge anheben.
