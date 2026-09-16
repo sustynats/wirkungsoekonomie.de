@@ -260,6 +260,12 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Geprüft:** `tests/news/direct-operation.test.mjs` (17 Tests, davon 3 neu), Workflow-Invarianten, `npm run news:test`.
 - **Offen:** Mehrere Takt-Zyklen mit `medium` beobachten (Kosten je Meldung, Anteil vollständiger Antworten), dann Selektionsgewichte mit Daten nachziehen.
 
+## 2026-09-16 - Claude: Gezielte Nachlieferung des Wirkungspotenzials im selben Lauf
+
+- **Was:** Auch mit mittlerem Denkaufwand ließ das Modell in zwei von drei Antworten das `impact_assessment` weg oder halb geschrieben (Lauf 22:35 UTC). Der Transport macht jetzt bei deterministischem Befund genau einen kleinen Folgeaufruf, der nur `impact_assessment` mit den konkreten Prüfbefunden nachliefert (`assessmentIssues`, `repairAddendum`, `repair_calls` im Stundendeckel, Rohkopie `-nachlieferung.json`); Ablehnungen werden nie nachgefordert. Zusätzlich deterministisch: Nebenpfade ohne sechs Faktoren werden verworfen, `decisive` auf nicht negativen Pfaden zurückgesetzt. Nachgerechnet über die 14 Rohantworten der Nacht: alle verbliebenen Strukturfehler sind genau die Fälle, die die Nachlieferung abdeckt.
+- **Nachtrag (Lauf 22:50 UTC):** Zwei Antworten ließen je Dimension `rationale` und `balance` weg (deckt die Nachlieferung ab; zusätzlich Anweisung), eine Überschrift trug die Zuordnung nicht im Titel obwohl `attributed_to` vorlag: `repairHeadlineAttribution` stellt „Laut …:“ aus den Worten des Modells voran; eine `source_summary` kopierte über 24 Wörter wörtlich (Anweisung). Beobachtet, nicht behoben: eine zweite Catania-Meldung mit gleicher Ereignis-ID und gleicher Quellen-URL wurde als neue Datei geführt (Clusterung, `existingStoryMatch`).
+- **Geprüft:** `tests/news/direct-operation.test.mjs` (21 Tests, 3 neu), Budget-, Ticker- und Ring-Tests.
+- **Offen:** Ausbeute je Lauf nach Merge messen; wenn die Nachlieferung selbst häufig scheitert, Structured Outputs (json_schema strict) für `impact_assessment` prüfen.
 ## 2026-09-16 - Claude: Nachgesehen/Nachgehört automatisch aus den Sendungsfeeds, Analysekandidaten standardmäßig an
 
 - **Was:** Natalie: Meinung & Analyse, Nachgesehen und Nachgehört müssen automatisiert laufen. Neu `scripts/news/sendungs-kandidaten.mjs` mit `data/news/show-feeds.json`: neue Folgen von maybrit illner, Markus Lanz, MAITHINK X, Terra X Lesch & Co, Lanz + Precht und NEU DENKEN werden als reguläre Redaktionsaufträge (watched/listened) eingereiht, mit offiziellem Transkript im Auftragspaket, wo der Feed eines liefert (Lanz + Precht, NEU DENKEN: VTT mit Zeitmarken); bereits beauftragte oder veröffentlichte Folgen werden über die URL erkannt. Worker-Workflow: Sendungsschritt neu, Analysekandidaten standardmäßig an, Tagesdeckel 16. Nebenbei: Feed-Titel trugen das Formatlabel doppelt („Nachgesehen: Nachgesehen: …“), `labelledTitle` in build.mjs.
@@ -270,3 +276,19 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Was:** Bei der Catania-Meldung wirkten die Mensch-Balken doppelt: Die Ansicht setzte die belegte, bereits eingetretene Wirkung (Flüge abgesagt) an die erste Stelle und das modellierte Potenzial darunter als „Weiteres Potenzial“; beide waren Stufe 2 und laufend. Jetzt führt in jeder Dimension das Wirkungspotenzial (Ring, Balken, Richtung, Pfadtitel), und eine beobachtete Wirkung folgt klar beschriftet als „Beobachtet:“ mit eigenem Ring und eigenen Balken (`scripts/news/visuals.mjs`). Die Ableitung (`deriveImpactPresentation`) ist unverändert; nur die Ansicht wechselt die Reihenfolge und die Beschriftung.
 - **Geprüft:** `tests/news/impact-status-ring.test.mjs` (Potenzial vor Beobachtet, keine „Weiteres Potenzial“-Zeile mehr), Ansichts- und Ticker-Tests 182/182, lokale Renderprobe der Catania-Meldung.
 - **Offen:** Live-Sichtprüfung nach dem Deploy.
+
+## 2026-09-16 - Claude: Worker: Web-Suche-Variante bei Ablehnung, Fehlertext im Lauf
+
+- **Was:** Der erste Takt-Lauf mit Web-Suche (23:05 UTC) wurde vom Anbieter mit 400 abgelehnt (nicht bezahlt, Auftrag bleibt offen); der Lauf zeigte nur den Statuscode. Der Worker versucht bei 400 jetzt genau einmal die ältere Werkzeugschreibweise `web_search_preview` ohne optionale Parameter und hält den (bereinigten) Fehlertext des Anbieters im Ergebnis und Vermerk fest. Die adoptierte liegengebliebene Übernahme wurde wie vorgesehen bearbeitet (kein `claimed_elsewhere` mehr).
+- **Geprüft:** `tests/news/redaktionsworker.test.mjs` 10/10 (1 neu).
+- **Offen:** Nächsten Takt-Lauf lesen: Variante 0 oder 1 erfolgreich, sonst Fehlertext.
+## 2026-09-16 - Claude: Clusterung: Verlagsname ist keine Ereignisgeografie
+
+- **Was:** Die zweite Catania-Meldung (gleiche Ereignis-ID, dieselbe Deutschlandfunk-Artikel-URL in neuer Revision) wurde als neue Datei geführt und kostete einen eigenen Aufruf. Ursache: `fileSubject` erkannte im gespeicherten `source_summary` „Deutschlandfunk“ als Deutschland (`deutsch\w*`), die neue Meldung dagegen Italien; `subjectConflict` trennte die Länder. Medien-Namen (Deutschlandfunk, Deutschlandradio, Deutsche Welle, dpa, Deutsche Bahn u. a.) werden vor der Länderprüfung entfernt; echte deutsche Bezüge zählen weiter.
+- **Geprüft:** `tests/news/living-files.test.mjs` (31 Tests, 1 neu mit dem Catania-Fall), Reproduktion gegen den Datenbestand: Ähnlichkeit 0 → 1.
+- **Offen:** Die bereits angelegte Dublette `wt-17d4a13881b167db` bleibt unveröffentlicht; beim nächsten Import wird sie als Aktualisierung der veröffentlichten Meldung geführt.
+
+## 2026-09-16 - Claude: Worker-Schritte mit eigenem Bridge-Slot
+
+- **Was:** Seit #791 laufen im Worker drei Schritte (Analysekandidaten, Sendungen, Entwürfe); alle holten die Import-Sperre mit derselben manuellen Lauf-ID. Nach dem ersten Schritt galt der Slot als abgeschlossen, Sendungen und Entwürfe wurden übersprungen (`BRIDGE_SLOT_ALREADY_COMPLETED`, Takt 23:35 UTC). Jeder Schritt hängt jetzt eine Schrittziffer an die Versuchsnummer (`<run>:<attempt><schritt>`, bleibt im Format Ziffern:Ziffern).
+- **Geprüft:** Worker-, Sendungs- und Workflow-Tests.
