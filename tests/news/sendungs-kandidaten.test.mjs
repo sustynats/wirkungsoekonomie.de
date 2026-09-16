@@ -244,3 +244,34 @@ test('eine ohne Wortlaut eingereihte Folge wird genau einmal erneut eingereiht, 
   assert.deepEqual(third.proposed, [], 'kein dritter Auftrag');
   assert.deepEqual(third.waiting_for_subtitles, []);
 });
+
+test('ein Wiederholungsversuch nimmt nach dem Wartefenster die eigene Abschrift', async () => {
+  const lanz = { id: 'markus-lanz', show_name: 'Markus Lanz', kind: 'watched', mediathek: { title: 'Markus Lanz', channel: 'ZDF' }, provider: 'ZDF-Mediathek', min_duration_seconds: 1500 };
+  const row = { title: 'Markus Lanz vom 15. September 2026', timestamp: Math.floor(Date.parse('2026-09-15T20:45:00Z') / 1000), duration: 4611,
+    url_website: 'https://www.zdf.de/video/talk/lanz-99', url_video_low: 'https://cdn.example/lanz.mp4', url_subtitle: '', id: 'lanz99' };
+  const session = fakeSession();
+  const fetchImpl = async (url, init) => init?.method === 'POST' ? { ok: true, json: async () => ({ result: { results: [row] } }) } : { ok: true, text: async () => '' };
+  let transcribeCalls = 0;
+  const transcribeImpl = async (episode) => { transcribeCalls += 1; return { url: episode.media, type: 'machine_transcript/de', origin: 'openai_whisper', segments: 700, chars: 38000, cost_usd: 0.27, text: '00:00:01 Guten Abend.' }; };
+  const options = { session: session.session, root: '/nonexistent', env: {}, shows: [lanz], limit: 2, maxPerDay: 5, maxAgeDays: 7, subtitleWaitHours: 12, transcribeImpl, maxTranscriptsPerDay: 2 };
+  // Erster Auftrag: ohne Untertitel und ohne eigene Abschrift eingereiht.
+  const first = await proposeEpisodeCandidates({ ...options, transcribe: false, now: '2026-09-16T09:00:00.000Z', fetchImpl });
+  assert.deepEqual(first.proposed.map((p) => p.transcript_origin), [null]);
+  const key = [...session.observations.keys()].find((k) => k.startsWith('github-episode:markus-lanz:'));
+  // Im Wartefenster wartet der Wiederholungsversuch.
+  const waiting = await proposeEpisodeCandidates({ ...options, now: '2026-09-16T08:00:00.000Z', fetchImpl });
+  assert.deepEqual(waiting.proposed, []); assert.equal(transcribeCalls, 0, 'im Wartefenster wird nicht bezahlt');
+  assert.deepEqual(waiting.waiting_for_subtitles.map((w) => w.retry), [true]);
+  // Nach dem Wartefenster ohne Untertitel greift die eigene Abschrift.
+  const second = await proposeEpisodeCandidates({ ...options, now: '2026-09-16T10:00:00.000Z', fetchImpl });
+  assert.equal(transcribeCalls, 1);
+  assert.deepEqual(second.proposed.map((p) => [p.transcript_origin, p.transcript_cost_usd]), [['openai_whisper', 0.27]]);
+  assert.equal(session.observations.get(key).retried_with_transcript, true);
+  assert.ok(session.jobs.at(-1).input.request.brief.includes('Erneuter Auftrag'));
+  // Bleibt auch die eigene Abschrift aus, wartet die Folge statt erneut ohne Wortlaut zu laufen.
+  const dry = fakeSession();
+  dry.observations.set(key, { job_id: 'wt_20260916T052520Z_' + 'a'.repeat(24), at: '2026-09-16T05:25:20.000Z', version: 'sendungs-kandidaten-1', title: row.title, transcript_origin: null });
+  const blocked = await proposeEpisodeCandidates({ ...options, session: dry.session, now: '2026-09-16T10:00:00.000Z', fetchImpl, transcribeImpl: async () => null });
+  assert.deepEqual(blocked.proposed, []);
+  assert.deepEqual(blocked.waiting_for_subtitles.map((w) => w.reason), ['ohne Wortlaut']);
+});
