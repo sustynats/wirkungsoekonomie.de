@@ -1620,6 +1620,11 @@ export async function runWirkungsticker(options = {}) {
         report.provider ||= aiResult.provider;
         report.model ||= aiResult.model;
         report.ai_calls += Number(aiResult.request_attempts || 1) + Number(aiResult.repair_calls || 0);
+        // Ob der Anbieter das Antwortschema angenommen hat, ist der Unterschied
+        // zwischen „kann nichts fehlen" und „hoffentlich fehlt nichts". Ohne
+        // diese Zahl im Bericht wäre das nicht prüfbar.
+        report.ai_schema_calls = Number(report.ai_schema_calls || 0) + Number(Boolean(aiResult.analysis_schema));
+        report.ai_repair_calls = Number(report.ai_repair_calls || 0) + Number(aiResult.repair_calls || 0);
         report.prompt_chars_sent += Number(aiResult.prompt_chars || 0);
         report.optional_visuals_deferred = Number(report.optional_visuals_deferred || 0) + Number(Boolean(aiResult.optional_visuals_deferred));
         report.ai_batches_completed += 1;
