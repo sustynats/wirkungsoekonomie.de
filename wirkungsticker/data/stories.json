@@ -2,8 +2,1690 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T20:16:15.948Z",
+  "updated_at": "2026-09-16T22:37:33.833Z",
   "stories": [
+    {
+      "story_id": "wt-840fec45d14d3575",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-840fec45d14d3575-41e7e6b14fe5d9b7-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-840fec45d14d3575-7130538f5f6a1452-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-840fec45d14d3575-acf4957b1e5266f4-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "us-kongress-beschliesst-gesetz-fur-russland-sanktionen-4d3575",
+      "title": "Laut stern: US-Kongress stimmt für Sanktionsgesetz gegen Russland",
+      "source_summary": "Der stern berichtet, dass nach dem US-Senat auch das Repräsentantenhaus einem Sanktionsgesetz gegen Russland zugestimmt hat. Als politischer Zweck wird genannt, Russland wegen des Kriegs in der Ukraine stärker unter Druck zu setzen.\n\nDer Bericht stellt zugleich klar, dass das Gesetz noch nicht in Kraft ist. Es soll dem US-Präsidenten zur Unterzeichnung vorgelegt werden.\n\nBelegt ist damit ein parlamentarischer Schritt, nicht die spätere Unterzeichnung, Umsetzung oder Wirkung der Sanktionen. Die Quelle ist eine journalistische Darstellung; eine unabhängige Bestätigung oder eine Primärquelle liegt in der Akte nicht vor.",
+      "summary": "Der US-Kongress hat laut stern einem Sanktionsgesetz gegen Russland zugestimmt. Ob es unterzeichnet wird und welche Folgen daraus entstehen, ist offen.",
+      "detail_summary": "Nach Angaben des stern stimmte nach dem Senat auch das US-Repräsentantenhaus einem Sanktionsgesetz gegen Russland zu. Der Bericht nennt als Ziel, Russland wegen des Kriegs in der Ukraine stärker unter Druck zu setzen. Das Gesetz ist demnach noch nicht in Kraft und soll dem US-Präsidenten zur Unterzeichnung vorgelegt werden. Damit ist ein parlamentarischer Schritt belegt, aber weder die endgültige Rechtswirkung noch die praktische Umsetzung. Möglich wären Veränderungen bei wirtschaftlichem Druck, internationalen Beziehungen und politischen Handlungsspielräumen; Umfang und Richtung hängen von Unterzeichnung, Ausgestaltung und Reaktionen ab.",
+      "why_relevant": "Die Zustimmung beider Kongresskammern kann den rechtlichen und politischen Rahmen für weitere Sanktionen verändern. Der entscheidende nächste Schritt, die Unterzeichnung, ist noch offen.",
+      "topic": [
+        "Geopolitik",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Zustimmung des US-Repräsentantenhauses zu einem Sanktionsgesetz nach der Zustimmung des Senats",
+        "evaluation_target": {
+          "label": "vorgeschlagenes US-Sanktionsgesetz gegen Russland",
+          "type": "proposal"
+        },
+        "baseline": "Das Gesetz ist noch nicht in Kraft; der parlamentarische Zustimmungsschritt ist erfolgt.",
+        "counterfactual": "Ohne Zustimmung des Repräsentantenhauses wäre dieses Gesetz in der beschriebenen Form nicht zur Unterzeichnung weitergeleitet worden.",
+        "reference_frame": [
+          "Rechtsstaatliche Verbindlichkeit",
+          "internationale wirtschaftliche und sicherheitspolitische Stabilität",
+          "demokratische Rechenschaft"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Bei Unterzeichnung könnten wirtschaftliche Anpassungen, Preis- oder Versorgungseffekte sowie Verteilungslasten für betroffene Akteure entstehen; konkrete Betroffene sind nicht belegt.",
+            "planet": "Verlagerte Handels- und Transportströme könnten Umweltbelastungen verändern, doch Reichweite und Richtung sind ohne Gesetzestext und Umsetzungsdaten offen.",
+            "democracy": "Der Vorgang stärkt zunächst die formale parlamentarische Kontrolle über Sanktionspolitik; zugleich könnten Gegenreaktionen und dauerhafte Ausnahmepraktiken institutionellen Druck erzeugen."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy",
+            "planet"
+          ],
+          "first_order": "Ein parlamentarisch gebilligtes, aber noch nicht geltendes Sanktionsvorhaben wird zur möglichen Unterzeichnung weitergeleitet.",
+          "second_order": "Bei Inkrafttreten könnten Wirtschaftsbeziehungen, politische Erwartungen und Gegenmaßnahmen betroffener Staaten angepasst werden.",
+          "third_order": "Eine längerfristige Sanktionsspirale könnte internationale Institutionen, Handelsbeziehungen und außenpolitische Entscheidungsstrukturen verändern; das bleibt hypothesenabhängig.",
+          "enablement": [
+            "enables_legislation",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Das Gesetz ist noch nicht in Kraft.",
+            "Der genaue Gesetzestext und konkrete Umsetzungsmaßnahmen fehlen.",
+            "Eine unabhängige Bestätigung und belastbare Wirkungsdaten liegen nicht vor."
+          ],
+          "source_independence": "Nur eine journalistische Quelle ist geliefert; unabhängige Bestätigung und Primärquelle fehlen.",
+          "institutional_status": "Nach der Quelle haben beide Kongresskammern zugestimmt; vor einer möglichen Rechtswirkung steht die Unterzeichnung durch den US-Präsidenten."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Konkrete Belastungen für Menschen, Haushalte oder Beschäftigte sind ohne Gesetzestext und Umsetzungsdaten nicht bestimmbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ein möglicher wirtschaftlicher Anpassungspfad ist plausibel, aber Richtung und Verteilung der Folgen bleiben wegen des offenen Rechtsstatus unsicher.",
+            "primary_paths": [
+              {
+                "label": "Mögliche wirtschaftliche Anpassung betroffener Menschen und Unternehmen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Eine Unterzeichnung könnte Geschäftsbeziehungen, Preise, Beschäftigung oder Versorgung in betroffenen Bereichen verändern.",
+                "recipients": [
+                  "Beschäftigte",
+                  "Unternehmen",
+                  "Haushalte",
+                  "internationale Handelspartner"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Reichweite könnte begrenzt oder erheblich sein; der Gesetzestext und betroffene Sektoren fehlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffene Kreise sind nicht konkret ausgewiesen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Mögliche wirtschaftliche Belastungen sind nicht quantifiziert.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Die Dauer möglicher Sanktionen ist unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Wirtschaftliche Anpassungen könnten grundsätzlich revidierbar sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Ungleich verteilte Belastungen sind möglich, aber nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte Geschäfts- und Versorgungsbeziehungen berühren.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze für Menschen ist aus der Quelle nicht ableitbar.",
+                  "reference_frame": "wirtschaftliche Versorgung und soziale Belastbarkeit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Unterzeichnung, konkrete Sanktionen und tatsächliche Betroffenheit wären erforderlich.",
+                "reference_space": "USA, Russland und verbundene internationale Wirtschaftsbeziehungen",
+                "time_horizon": "nach einer möglichen Unterzeichnung und während der Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Der Gesetzestext würde tatsächlich wirtschaftlich relevante Beschränkungen enthalten.",
+                "source_support": "Die Quelle belegt Zustimmung und ausstehende Unterzeichnung, nicht menschliche Folgen.",
+                "limitations": "Keine Daten zu Sektoren, Haushalten, Preisen, Beschäftigung oder Versorgung.",
+                "first_order": "Mögliche Einschränkungen könnten wirtschaftliche Anpassungen auslösen.",
+                "second_order": "Anpassungen könnten Kosten und Belastungen auf andere Länder oder Haushalte verlagern.",
+                "third_order": "Dauerhafte wirtschaftliche Trennungen könnten soziale Resilienz und Verteilung beeinflussen.",
+                "research_pass": "second_pass",
+                "research_result": "Ohne Primärtext und Folgenmessung keine belastbare Bestimmung von Betroffenenkreis oder Richtung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 11,
+                  "divisor": 6,
+                  "raw": 1.8333333333333333,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Verlagerung wirtschaftlicher Belastungen auf Drittstaaten",
+                "direction": "negative",
+                "type": "side_effect",
+                "mechanism": "Ausweichende Handels- oder Finanzbeziehungen könnten Kosten und Risiken räumlich verlagern.",
+                "recipients": [
+                  "Drittstaaten",
+                  "Unternehmen",
+                  "Haushalte"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist indirekt und hängt von unbekannten Sanktionsinhalten ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Eine Drittstaatenwirkung ist möglich, aber nicht abgegrenzt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Belastungsintensität ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die zeitliche Dauer bleibt offen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Verlagerungen könnten bei politischen Änderungen umkehrbar sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Besonders abhängige Akteure könnten stärker betroffen sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der systemische Durchgriff ist wegen fehlender Details unklar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete schwere Schutzgrenze ist nicht belegt.",
+                  "reference_frame": "soziale und wirtschaftliche Resilienz",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Sanktionsbedingte Ausweichbewegungen müssten tatsächlich eintreten.",
+                "reference_space": "internationale Wirtschaftsbeziehungen",
+                "time_horizon": "mittelfristig nach einer möglichen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Das Gesetz würde internationale Transaktionen relevant verändern.",
+                "source_support": "Die Quelle nennt ein Sanktionsgesetz, aber keine konkreten Ausweichbewegungen.",
+                "limitations": "Keine Daten zu Handelsströmen oder Verwundbarkeiten.",
+                "first_order": "Mögliche Ausweichbeziehungen könnten Kosten verlagern.",
+                "second_order": "Drittstaaten könnten in politische oder wirtschaftliche Zielkonflikte geraten.",
+                "third_order": "Eine Fragmentierung könnte internationale Resilienz schwächen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Daten bestätigen diesen Nebenpfad.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche wirtschaftliche Anpassung betroffener Menschen und Unternehmen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche wirtschaftliche Anpassung betroffener Menschen und Unternehmen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle enthält keine Angaben zu Energie, Transport, Produktion oder Emissionen; ökologische Richtung und Größenordnung bleiben offen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Ökologische Folgen könnten über veränderte Handels- und Transportströme entstehen, sind ohne konkrete Sanktionen aber nur schwach modellierbar.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Veränderung grenzüberschreitender Transport- und Produktionsströme",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Sanktionen könnten Lieferwege, Bezugsquellen und Transportdistanzen verändern.",
+                "recipients": [
+                  "Ökosysteme",
+                  "Unternehmen",
+                  "betroffene Regionen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Die Wirkung hängt vollständig von unbekannten Wirtschafts- und Umsetzungsdetails ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Räumliche Reichweite ist aus der Quelle nicht ersichtlich.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Keine Umweltbelastung wird im Bericht gemessen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die Dauer möglicher Umlenkungen ist unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Transport- und Produktionsmuster könnten grundsätzlich verändert werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Ökologisch besonders verletzliche Räume sind nicht benannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein tiefer ökologischer Systempfad ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete ökologische Schutzgrenze wird berührt oder belegt.",
+                  "reference_frame": "ökologische Belastungsgrenzen",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Das Gesetz müsste relevante Handels-, Produktions- oder Transportströme verändern.",
+                "reference_space": "internationale Liefer- und Verkehrsbeziehungen",
+                "time_horizon": "während einer möglichen Umsetzung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Sanktionsmaßnahmen würden reale Lieferketten verändern.",
+                "source_support": "Die Quelle belegt nur das Sanktionsvorhaben, keine Umweltwirkung.",
+                "limitations": "Keine Emissions-, Energie-, Transport- oder Flächendaten.",
+                "first_order": "Lieferwege könnten sich verschieben.",
+                "second_order": "Andere Produktions- oder Transportwege könnten zusätzliche Umweltlasten erzeugen oder vermeiden.",
+                "third_order": "Dauerhafte wirtschaftliche Entkopplung könnte Ressourcenströme neu ordnen.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferte Quelle erlaubt keine belastbare ökologische Wirkungsbestimmung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche Verlagerung von Umweltbelastungen durch Ausweichhandel",
+                "direction": "open",
+                "type": "side_effect",
+                "mechanism": "Ausweichhandel könnte Belastungen in andere Regionen und Verkehrssysteme verlagern.",
+                "recipients": [
+                  "betroffene Regionen",
+                  "Ökosysteme"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 1,
+                  "rationale": "Der Pfad bleibt ohne konkrete Handelsdaten spekulativ und räumlich unbestimmt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Keine konkrete räumliche Reichweite ist belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Keine Belastungswerte liegen vor.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Die zeitliche Dauer ist unbekannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Mögliche Verlagerungen wären grundsätzlich veränderbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders vulnerable Ökosysteme sind nicht benannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Ein systemischer Umwelteffekt ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete Schutzgrenze lässt sich aus dem Bericht ableiten.",
+                  "reference_frame": "ökologische Integrität",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Ausweichhandel und eine umweltrelevante Verlagerung müssten eintreten.",
+                "reference_space": "internationale Handels- und Transporträume",
+                "time_horizon": "mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Ausweichbewegungen wären ökologisch nicht neutral.",
+                "source_support": "Die Quelle liefert hierzu keine Angaben.",
+                "limitations": "Keine Umweltindikatoren oder Handelsdaten.",
+                "first_order": "Ausweichhandel könnte Verkehrswege verändern.",
+                "second_order": "Belastungen könnten regional verlagert werden.",
+                "third_order": "Langfristige Verlagerungen könnten Umweltpolitik und Lieferkettenstandards beeinflussen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine belastbare Gegenevidenz oder Bestätigung in der gelieferten Quelle.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 6,
+                  "divisor": 6,
+                  "raw": 1,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung grenzüberschreitender Transport- und Produktionsströme",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung grenzüberschreitender Transport- und Produktionsströme",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Der parlamentarische Schritt ist belegt; Folgen für Kontrolle, Transparenz und internationale Gegenreaktionen sind ohne weitere Quellen nicht messbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "rationale": "Die Zustimmung kann parlamentarische Rechenschaft sichtbar machen und zugleich bei einer späteren Umsetzung institutionelle Spannungen oder Gegenreaktionen verstärken.",
+            "primary_paths": [
+              {
+                "label": "Parlamentarische Entscheidung setzt einen überprüfbaren politischen Kurs",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Die Zustimmung beider Kongresskammern macht den Sanktionskurs formell sichtbar und eröffnet eine weitere öffentliche Entscheidung durch die Präsidentschaft.",
+                "recipients": [
+                  "US-Parlament",
+                  "US-Regierung",
+                  "Öffentlichkeit",
+                  "internationale Partner"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der institutionelle Schritt ist real, seine demokratische Wirkung hängt von Transparenz und weiterer Kontrolle ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Der Vorgang betrifft zentrale US-Institutionen und internationale Partner.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Zustimmung verändert den politischen Entscheidungsstand, nicht unmittelbar geltendes Recht.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Der Vorgang kann die weitere Sanktionsdebatte prägen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vor der Unterzeichnung bleibt eine politische Korrektur möglich.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Eine konkrete demokratische Schutzverletzung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Vorgang berührt Gesetzgebung und außenpolitische Verantwortlichkeit.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Der Bericht belegt keinen Bruch demokratischer oder rechtsstaatlicher Schutzgrenzen.",
+                  "reference_frame": "parlamentarische Kontrolle und rechtliche Verantwortlichkeit",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Weitere öffentliche Prüfung, Unterzeichnung und Umsetzung müssten nachvollziehbar erfolgen.",
+                "reference_space": "US-Gesetzgebung und internationale Außenpolitik",
+                "time_horizon": "kurz- bis mittelfristig",
+                "path_quality": [
+                  "direct",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Parlamentarische Zustimmung bleibt öffentlich überprüfbar und wird institutionell weiter bearbeitet.",
+                "source_support": "Die Quelle belegt die Zustimmung beider Kammern und den ausstehenden Schritt der Unterzeichnung.",
+                "limitations": "Keine Angaben zu Debatte, Transparenz, Gegenstimmen oder Kontrollmechanismen.",
+                "first_order": "Der politische Kurs wird institutionell sichtbar.",
+                "second_order": "Weitere Akteure könnten ihre Positionen und Erwartungen daran ausrichten.",
+                "third_order": "Eine dauerhafte Sanktionspolitik könnte außenpolitische Entscheidungsstrukturen verfestigen.",
+                "research_pass": "second_pass",
+                "research_result": "Die demokratische Wirkung kann aus dem parlamentarischen Vorgang nur bedingt modelliert werden; Angaben zu Verfahren und Kontrolle fehlen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Mögliche institutionelle Verhärtung durch Gegenreaktionen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Eine Umsetzung könnte Gegenmaßnahmen und eine dauerhafte Konfrontationslogik fördern.",
+                "recipients": [
+                  "Regierungen",
+                  "Parlamente",
+                  "internationale Institutionen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad setzt Unterzeichnung, Umsetzung und politische Reaktionen voraus."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Internationale Institutionen könnten mittelbar betroffen sein.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine konkrete institutionelle Belastung ist nicht belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Konfrontationsmuster könnten länger anhalten.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Politische Kurse und Gegenmaßnahmen können geändert werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 1,
+                    "rationale": "Besonders gefährdete demokratische Gruppen sind nicht benannt.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad könnte internationale Entscheidungsstrukturen beeinflussen.",
+                    "source_ids": [
+                      "stern-schlagzeilen"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze wird durch die Quelle nicht belegt.",
+                  "reference_frame": "internationale institutionelle Kooperation",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "condition": "Gegenmaßnahmen und eine dauerhafte politische Verhärtung müssten tatsächlich eintreten.",
+                "reference_space": "US-russische Beziehungen und internationale Institutionen",
+                "time_horizon": "mittelfristig bis langfristig",
+                "path_quality": [
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Sanktionen würden nicht durch Verhandlungen oder politische Korrekturen begrenzt.",
+                "source_support": "Die Quelle berichtet keine Gegenreaktionen und keine institutionellen Folgen.",
+                "limitations": "Keine Informationen zu Reaktionen, Dauer oder internationaler Koordination.",
+                "first_order": "Gegenmaßnahmen könnten politische Spannungen erhöhen.",
+                "second_order": "Kooperation in anderen Feldern könnte erschwert werden.",
+                "third_order": "Dauerhafte Konfrontation könnte internationale Entscheidungsräume verengen.",
+                "research_pass": "second_pass",
+                "research_result": "Der Nebenpfad bleibt wegen fehlender Reaktions- und Verlaufsdaten eine unsichere Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 9,
+                  "divisor": 6,
+                  "raw": 1.5,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Parlamentarische Rechenschaft und mögliche institutionelle Verhärtung sind vergleichbare, aber nur bedingt belegte Pfade; deshalb ist die Richtung gemischt und ausgewogen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Parlamentarische Entscheidung setzt einen überprüfbaren politischen Kurs",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Parlamentarische Entscheidung setzt einen überprüfbaren politischen Kurs",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T22:40:53.210Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event",
+              "reference"
+            ],
+            "supported_claim": "Berichtet über die Zustimmung des Repräsentantenhauses nach dem Senat sowie den noch ausstehenden Schritt der Unterzeichnung."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Konkrete Belastungen für Menschen, Haushalte oder Beschäftigte sind ohne Gesetzestext und Umsetzungsdaten nicht bestimmbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ein möglicher wirtschaftlicher Anpassungspfad ist plausibel, aber Richtung und Verteilung der Folgen bleiben wegen des offenen Rechtsstatus unsicher.",
+          "primary_paths": [
+            {
+              "label": "Mögliche wirtschaftliche Anpassung betroffener Menschen und Unternehmen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Eine Unterzeichnung könnte Geschäftsbeziehungen, Preise, Beschäftigung oder Versorgung in betroffenen Bereichen verändern.",
+              "recipients": [
+                "Beschäftigte",
+                "Unternehmen",
+                "Haushalte",
+                "internationale Handelspartner"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Reichweite könnte begrenzt oder erheblich sein; der Gesetzestext und betroffene Sektoren fehlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffene Kreise sind nicht konkret ausgewiesen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Mögliche wirtschaftliche Belastungen sind nicht quantifiziert.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Die Dauer möglicher Sanktionen ist unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Wirtschaftliche Anpassungen könnten grundsätzlich revidierbar sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Ungleich verteilte Belastungen sind möglich, aber nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte Geschäfts- und Versorgungsbeziehungen berühren.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze für Menschen ist aus der Quelle nicht ableitbar.",
+                "reference_frame": "wirtschaftliche Versorgung und soziale Belastbarkeit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Unterzeichnung, konkrete Sanktionen und tatsächliche Betroffenheit wären erforderlich.",
+              "reference_space": "USA, Russland und verbundene internationale Wirtschaftsbeziehungen",
+              "time_horizon": "nach einer möglichen Unterzeichnung und während der Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Der Gesetzestext würde tatsächlich wirtschaftlich relevante Beschränkungen enthalten.",
+              "source_support": "Die Quelle belegt Zustimmung und ausstehende Unterzeichnung, nicht menschliche Folgen.",
+              "limitations": "Keine Daten zu Sektoren, Haushalten, Preisen, Beschäftigung oder Versorgung.",
+              "first_order": "Mögliche Einschränkungen könnten wirtschaftliche Anpassungen auslösen.",
+              "second_order": "Anpassungen könnten Kosten und Belastungen auf andere Länder oder Haushalte verlagern.",
+              "third_order": "Dauerhafte wirtschaftliche Trennungen könnten soziale Resilienz und Verteilung beeinflussen.",
+              "research_pass": "second_pass",
+              "research_result": "Ohne Primärtext und Folgenmessung keine belastbare Bestimmung von Betroffenenkreis oder Richtung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 11,
+                "divisor": 6,
+                "raw": 1.8333333333333333,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Verlagerung wirtschaftlicher Belastungen auf Drittstaaten",
+              "direction": "negative",
+              "type": "side_effect",
+              "mechanism": "Ausweichende Handels- oder Finanzbeziehungen könnten Kosten und Risiken räumlich verlagern.",
+              "recipients": [
+                "Drittstaaten",
+                "Unternehmen",
+                "Haushalte"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist indirekt und hängt von unbekannten Sanktionsinhalten ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Eine Drittstaatenwirkung ist möglich, aber nicht abgegrenzt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Belastungsintensität ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die zeitliche Dauer bleibt offen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Verlagerungen könnten bei politischen Änderungen umkehrbar sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Besonders abhängige Akteure könnten stärker betroffen sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der systemische Durchgriff ist wegen fehlender Details unklar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete schwere Schutzgrenze ist nicht belegt.",
+                "reference_frame": "soziale und wirtschaftliche Resilienz",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Sanktionsbedingte Ausweichbewegungen müssten tatsächlich eintreten.",
+              "reference_space": "internationale Wirtschaftsbeziehungen",
+              "time_horizon": "mittelfristig nach einer möglichen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Das Gesetz würde internationale Transaktionen relevant verändern.",
+              "source_support": "Die Quelle nennt ein Sanktionsgesetz, aber keine konkreten Ausweichbewegungen.",
+              "limitations": "Keine Daten zu Handelsströmen oder Verwundbarkeiten.",
+              "first_order": "Mögliche Ausweichbeziehungen könnten Kosten verlagern.",
+              "second_order": "Drittstaaten könnten in politische oder wirtschaftliche Zielkonflikte geraten.",
+              "third_order": "Eine Fragmentierung könnte internationale Resilienz schwächen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Daten bestätigen diesen Nebenpfad.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche wirtschaftliche Anpassung betroffener Menschen und Unternehmen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche wirtschaftliche Anpassung betroffener Menschen und Unternehmen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle enthält keine Angaben zu Energie, Transport, Produktion oder Emissionen; ökologische Richtung und Größenordnung bleiben offen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Ökologische Folgen könnten über veränderte Handels- und Transportströme entstehen, sind ohne konkrete Sanktionen aber nur schwach modellierbar.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Veränderung grenzüberschreitender Transport- und Produktionsströme",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Sanktionen könnten Lieferwege, Bezugsquellen und Transportdistanzen verändern.",
+              "recipients": [
+                "Ökosysteme",
+                "Unternehmen",
+                "betroffene Regionen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Die Wirkung hängt vollständig von unbekannten Wirtschafts- und Umsetzungsdetails ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Räumliche Reichweite ist aus der Quelle nicht ersichtlich.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Keine Umweltbelastung wird im Bericht gemessen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die Dauer möglicher Umlenkungen ist unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Transport- und Produktionsmuster könnten grundsätzlich verändert werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Ökologisch besonders verletzliche Räume sind nicht benannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein tiefer ökologischer Systempfad ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete ökologische Schutzgrenze wird berührt oder belegt.",
+                "reference_frame": "ökologische Belastungsgrenzen",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Das Gesetz müsste relevante Handels-, Produktions- oder Transportströme verändern.",
+              "reference_space": "internationale Liefer- und Verkehrsbeziehungen",
+              "time_horizon": "während einer möglichen Umsetzung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Sanktionsmaßnahmen würden reale Lieferketten verändern.",
+              "source_support": "Die Quelle belegt nur das Sanktionsvorhaben, keine Umweltwirkung.",
+              "limitations": "Keine Emissions-, Energie-, Transport- oder Flächendaten.",
+              "first_order": "Lieferwege könnten sich verschieben.",
+              "second_order": "Andere Produktions- oder Transportwege könnten zusätzliche Umweltlasten erzeugen oder vermeiden.",
+              "third_order": "Dauerhafte wirtschaftliche Entkopplung könnte Ressourcenströme neu ordnen.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferte Quelle erlaubt keine belastbare ökologische Wirkungsbestimmung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche Verlagerung von Umweltbelastungen durch Ausweichhandel",
+              "direction": "open",
+              "type": "side_effect",
+              "mechanism": "Ausweichhandel könnte Belastungen in andere Regionen und Verkehrssysteme verlagern.",
+              "recipients": [
+                "betroffene Regionen",
+                "Ökosysteme"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 1,
+                "rationale": "Der Pfad bleibt ohne konkrete Handelsdaten spekulativ und räumlich unbestimmt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Keine konkrete räumliche Reichweite ist belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Keine Belastungswerte liegen vor.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Die zeitliche Dauer ist unbekannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Mögliche Verlagerungen wären grundsätzlich veränderbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders vulnerable Ökosysteme sind nicht benannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Ein systemischer Umwelteffekt ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete Schutzgrenze lässt sich aus dem Bericht ableiten.",
+                "reference_frame": "ökologische Integrität",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Ausweichhandel und eine umweltrelevante Verlagerung müssten eintreten.",
+              "reference_space": "internationale Handels- und Transporträume",
+              "time_horizon": "mittelfristig",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Ausweichbewegungen wären ökologisch nicht neutral.",
+              "source_support": "Die Quelle liefert hierzu keine Angaben.",
+              "limitations": "Keine Umweltindikatoren oder Handelsdaten.",
+              "first_order": "Ausweichhandel könnte Verkehrswege verändern.",
+              "second_order": "Belastungen könnten regional verlagert werden.",
+              "third_order": "Langfristige Verlagerungen könnten Umweltpolitik und Lieferkettenstandards beeinflussen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine belastbare Gegenevidenz oder Bestätigung in der gelieferten Quelle.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 6,
+                "divisor": 6,
+                "raw": 1,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung grenzüberschreitender Transport- und Produktionsströme",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung grenzüberschreitender Transport- und Produktionsströme",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Der parlamentarische Schritt ist belegt; Folgen für Kontrolle, Transparenz und internationale Gegenreaktionen sind ohne weitere Quellen nicht messbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen"
+          ],
+          "rationale": "Die Zustimmung kann parlamentarische Rechenschaft sichtbar machen und zugleich bei einer späteren Umsetzung institutionelle Spannungen oder Gegenreaktionen verstärken.",
+          "primary_paths": [
+            {
+              "label": "Parlamentarische Entscheidung setzt einen überprüfbaren politischen Kurs",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Die Zustimmung beider Kongresskammern macht den Sanktionskurs formell sichtbar und eröffnet eine weitere öffentliche Entscheidung durch die Präsidentschaft.",
+              "recipients": [
+                "US-Parlament",
+                "US-Regierung",
+                "Öffentlichkeit",
+                "internationale Partner"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der institutionelle Schritt ist real, seine demokratische Wirkung hängt von Transparenz und weiterer Kontrolle ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Der Vorgang betrifft zentrale US-Institutionen und internationale Partner.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Zustimmung verändert den politischen Entscheidungsstand, nicht unmittelbar geltendes Recht.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Der Vorgang kann die weitere Sanktionsdebatte prägen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vor der Unterzeichnung bleibt eine politische Korrektur möglich.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Eine konkrete demokratische Schutzverletzung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Vorgang berührt Gesetzgebung und außenpolitische Verantwortlichkeit.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Der Bericht belegt keinen Bruch demokratischer oder rechtsstaatlicher Schutzgrenzen.",
+                "reference_frame": "parlamentarische Kontrolle und rechtliche Verantwortlichkeit",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Weitere öffentliche Prüfung, Unterzeichnung und Umsetzung müssten nachvollziehbar erfolgen.",
+              "reference_space": "US-Gesetzgebung und internationale Außenpolitik",
+              "time_horizon": "kurz- bis mittelfristig",
+              "path_quality": [
+                "direct",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Parlamentarische Zustimmung bleibt öffentlich überprüfbar und wird institutionell weiter bearbeitet.",
+              "source_support": "Die Quelle belegt die Zustimmung beider Kammern und den ausstehenden Schritt der Unterzeichnung.",
+              "limitations": "Keine Angaben zu Debatte, Transparenz, Gegenstimmen oder Kontrollmechanismen.",
+              "first_order": "Der politische Kurs wird institutionell sichtbar.",
+              "second_order": "Weitere Akteure könnten ihre Positionen und Erwartungen daran ausrichten.",
+              "third_order": "Eine dauerhafte Sanktionspolitik könnte außenpolitische Entscheidungsstrukturen verfestigen.",
+              "research_pass": "second_pass",
+              "research_result": "Die demokratische Wirkung kann aus dem parlamentarischen Vorgang nur bedingt modelliert werden; Angaben zu Verfahren und Kontrolle fehlen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Mögliche institutionelle Verhärtung durch Gegenreaktionen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Eine Umsetzung könnte Gegenmaßnahmen und eine dauerhafte Konfrontationslogik fördern.",
+              "recipients": [
+                "Regierungen",
+                "Parlamente",
+                "internationale Institutionen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad setzt Unterzeichnung, Umsetzung und politische Reaktionen voraus."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Internationale Institutionen könnten mittelbar betroffen sein.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine konkrete institutionelle Belastung ist nicht belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Konfrontationsmuster könnten länger anhalten.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Politische Kurse und Gegenmaßnahmen können geändert werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 1,
+                  "rationale": "Besonders gefährdete demokratische Gruppen sind nicht benannt.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad könnte internationale Entscheidungsstrukturen beeinflussen.",
+                  "source_ids": [
+                    "stern-schlagzeilen"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze wird durch die Quelle nicht belegt.",
+                "reference_frame": "internationale institutionelle Kooperation",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen"
+              ],
+              "condition": "Gegenmaßnahmen und eine dauerhafte politische Verhärtung müssten tatsächlich eintreten.",
+              "reference_space": "US-russische Beziehungen und internationale Institutionen",
+              "time_horizon": "mittelfristig bis langfristig",
+              "path_quality": [
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Sanktionen würden nicht durch Verhandlungen oder politische Korrekturen begrenzt.",
+              "source_support": "Die Quelle berichtet keine Gegenreaktionen und keine institutionellen Folgen.",
+              "limitations": "Keine Informationen zu Reaktionen, Dauer oder internationaler Koordination.",
+              "first_order": "Gegenmaßnahmen könnten politische Spannungen erhöhen.",
+              "second_order": "Kooperation in anderen Feldern könnte erschwert werden.",
+              "third_order": "Dauerhafte Konfrontation könnte internationale Entscheidungsräume verengen.",
+              "research_pass": "second_pass",
+              "research_result": "Der Nebenpfad bleibt wegen fehlender Reaktions- und Verlaufsdaten eine unsichere Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 9,
+                "divisor": 6,
+                "raw": 1.5,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Parlamentarische Rechenschaft und mögliche institutionelle Verhärtung sind vergleichbare, aber nur bedingt belegte Pfade; deshalb ist die Richtung gemischt und ausgewogen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Parlamentarische Entscheidung setzt einen überprüfbaren politischen Kurs",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Parlamentarische Entscheidung setzt einen überprüfbaren politischen Kurs",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T22:37:33.833Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T22:33:30.000Z",
+      "last_updated": "2026-09-16T22:40:53.205Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-af30e7fe7f6d633d7da3",
+      "case_file": null,
+      "source_published_at": "2026-09-16T22:33:30.000Z",
+      "published_at": "2026-09-16T22:40:53.205Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, ob der US-Präsident das Gesetz unterzeichnet und damit ein Inkrafttreten ermöglicht.",
+          "source_id": "stern-schlagzeilen",
+          "measurable_indicator": "Unterzeichnung oder Zurückweisung des Gesetzes durch den US-Präsidenten",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-86db490e7020a36b",
+          "announced_at": "2026-09-16T22:33:30.000Z",
+          "follow_up_date": "2026-09-23T22:40:53.205Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/--us-kongress-beschliesst-gesetz-fuer-russland-sanktionen-38264162.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T22:33:30.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-60f4e4d7d43fad99",
       "title_image": {
