@@ -4,27 +4,35 @@
   if (!nav) return;
   const mobile = window.matchMedia('(max-width: 760px)');
   const viewport = window.visualViewport;
-  let offset = 0, frame = null;
+  let lift = 0, frame = null;
 
+  function apply(next) {
+    if (next === lift) return;
+    lift = next;
+    // Ohne Korrektur bleibt die Eigenschaft ungesetzt: dann ist die Leiste ein
+    // gewöhnliches position:fixed mit bottom:0, und der Browser hält sie selbst
+    // am unteren Rand - zuverlässiger als jede Rechnung von uns.
+    if (lift) nav.style.setProperty('--ticker-nav-lift', `${lift}px`);
+    else nav.style.removeProperty('--ticker-nav-lift');
+  }
+
+  // Verschoben wird über bottom, nicht über transform: ein transformiertes
+  // position:fixed hängt in WebKit am Dokument statt am Viewport und wandert
+  // beim Scrollen mit (16.09.: die Leiste stand mitten in der Seite, über dem
+  // Kartentext). Und gerechnet wird ausschließlich aus der Viewport-Geometrie,
+  // nicht aus der gemessenen Kante der Leiste: eine Korrektur, die ihre eigene
+  // Wirkung mitmisst, schleppt jeden Messfehler in den nächsten Schritt.
   function align() {
     frame = null;
-    if (!mobile.matches || (viewport?.scale || 1) > 1.01) {
-      if (offset) nav.style.removeProperty('--ticker-nav-offset');
-      offset = 0;
-      return;
-    }
-    const height = viewport?.height || window.innerHeight;
-    // WebKit can retain a keyboard offset after its viewport has expanded again.
-    const top = height < window.innerHeight - 1 ? Math.max(0, viewport?.offsetTop || 0) : 0;
-    const bottom = height + top;
-    const rect = nav.getBoundingClientRect();
-    if (!Number.isFinite(bottom) || bottom <= 0 || !rect.height) return;
-    // Normally fixed positioning needs no correction. Compare actual geometry
-    // after iOS viewport/keyboard changes; document scrollY is not a screen offset.
-    const delta = bottom - rect.bottom;
-    if (Math.abs(delta) < 1) return;
-    offset = Math.round((offset + delta) * 100) / 100;
-    nav.style.setProperty('--ticker-nav-offset', `${offset}px`);
+    if (!mobile.matches || (viewport?.scale || 1) > 1.01 || !viewport) return apply(0);
+    const height = viewport.height, top = Math.max(0, viewport.offsetTop || 0);
+    if (!Number.isFinite(height) || height <= 0 || !Number.isFinite(window.innerHeight)) return;
+    // Der sichtbare Rand gegen den Rand des Layout-Viewports, an dem bottom:0
+    // klebt. Die Tastatur verkleinert den sichtbaren Bereich (Leiste hoch), eine
+    // eingeklappte Browserleiste vergrößert ihn (Leiste runter).
+    const visibleBottom = height + top;
+    const distance = window.innerHeight - visibleBottom;
+    apply(Math.round(Math.max(-window.innerHeight, Math.min(window.innerHeight, distance)) * 100) / 100);
   }
   function schedule() {
     if (frame === null) frame = window.requestAnimationFrame(align);
