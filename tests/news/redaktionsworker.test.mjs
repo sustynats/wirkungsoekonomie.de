@@ -1,11 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { hash, bridgePath } from '../../scripts/news/bridge/contract.mjs';
-import { selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR } from '../../scripts/news/redaktionsworker.mjs';
+import { selectEditorialRequests, processEditorialRequest, runRedaktionsworker, draftEditorialOutput, researchInstructions, NO_TOOLS_SENTENCE, WEB_SEARCH_USD_PER_CALL, WORKER_ACTOR, fetchLinkExcerpt, collectSourceExcerpts } from '../../scripts/news/redaktionsworker.mjs';
 import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandidates } from '../../scripts/news/redaktions-kandidaten.mjs';
 
 const owner = '123456789012345678';
 const knowledge = { hash: 'a'.repeat(64), instructions: 'Synthetische Redaktionsanweisung für den Test.', compatibleHashes: [] };
+// Unit tests never reach the network: source excerpts are switched on per test.
+process.env.WOEK_EDITORIAL_SOURCE_EXCERPTS = 'false';
 const now = () => '2026-09-15T20:30:00.000Z';
 function packetFor(id) {
   const content = { kind: 'opinion_analysis', brief: 'Bitte diesen synthetischen Testfall vorbereiten.', links: ['https://example.org/source'], author_notes: '', urgent: false, publication_intent: 'final_approval_required', attachments: [] };
@@ -199,4 +201,46 @@ test('a rejected web-search request is retried once with the older tool spelling
   const out = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft: async () => { throw Object.assign(new Error('AI_PROVIDER_ERROR:400'), { providerNotCalled: true, detail: 'Unsupported parameter' }); }, now });
   assert.equal(out.status, 'provider_unavailable'); assert.equal(out.error, 'AI_PROVIDER_ERROR:400 · Unsupported parameter');
   assert.equal(session.observations.get(`github-attempt:${jobId}`).provider_called, false, 'a rejected request stays unpaid and retryable');
+});
+
+const page = (text) => ({ ok: true, status: 200, headers: { get: (k) => k.toLowerCase() === 'content-type' ? 'text/html; charset=utf-8' : null }, text: async () => `<html><head><title>Bericht über den Sachverhalt</title></head><body><article><p>${text}</p></article></body></html>` });
+test('linked sources travel as fetched excerpts inside the prompt copy while the stored packet stays bound', async () => {
+  const session = fakeSession([queuedJob()]);
+  const packet = packetFor(jobId);
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packet));
+  const links = packet.request.links || [];
+  assert.ok(links.length >= 1, 'fixture request carries links');
+  const body = 'Der Artikel beschreibt den Sachverhalt ausführlich. '.repeat(12);
+  let seen;
+  const draft = async (request) => { seen = request; return { output: { preview: preview() }, usage: { input_tokens: 5000, output_tokens: 2000 }, model: 'gpt-5.6-luna', cost: 0.003, answer: '{}', web_searches: 0 }; };
+  const result = await processEditorialRequest(session, { input: { job_id: jobId, job_type: 'editorial_request' }, status: 'queued' }, { knowledge, draft, now, excerpts: true, fetchImpl: async () => page(body) });
+  assert.equal(result.status, 'output_delivered'); assert.equal(result.source_excerpts, Math.min(links.length, 6));
+  assert.ok(seen.prompt.includes('source_excerpts') && seen.prompt.includes('Der Artikel beschreibt den Sachverhalt'), 'excerpt text reaches the model');
+  assert.ok(researchInstructions('Regel.', 3).includes('origin.source_excerpts'), 'the tool rule names the excerpts');
+  const stored = JSON.parse(session.files.get(bridgePath('10_CLAIMED', `${jobId}.input.json`)));
+  assert.equal('source_excerpts' in (stored.origin || {}), false, 'the bound packet is not rewritten');
+  assert.equal(stored.input_hash, packet.input_hash);
+  const attempt = session.observations.get(`github-attempt:${jobId}`);
+  assert.equal(attempt.disposition, 'preview'); assert.equal(attempt.hold_code, null); assert.equal(attempt.source_excerpts, Math.min(links.length, 6));
+  assert.equal(await fetchLinkExcerpt('http://example.org/plain'), null, 'only https');
+  assert.equal(await fetchLinkExcerpt('https://192.168.1.5/intern'), null, 'no private hosts');
+  const pdf = await fetchLinkExcerpt('https://example.org/a.pdf', async () => ({ ok: true, status: 200, headers: { get: () => 'application/pdf' }, text: async () => '' }));
+  assert.equal(pdf.excerpt, null);
+  const short = await fetchLinkExcerpt('https://example.org/kurz', async () => page('Zu kurz.'));
+  assert.equal(short.excerpt, null);
+  const down = await collectSourceExcerpts(['https://example.org/x', 'https://example.org/x'], async () => ({ ok: false, status: 503, headers: { get: () => 'text/html' }, text: async () => '' }));
+  assert.deepEqual(down.map((e) => e.status), [503], 'each link once');
+});
+
+test('the editorial steps wait for a busy import lane instead of skipping the cycle', async () => {
+  const session = fakeSession([queuedJob()]);
+  session.files.set(bridgePath('00_INBOX', `${jobId}.input.json`), JSON.stringify(packetFor(jobId)));
+  let attempts = 0;
+  session.store.acquire = async () => { attempts += 1; if (attempts < 3) throw new Error('BRIDGE_RUN_LOCKED'); };
+  const report = await runRedaktionsworker({ session, knowledge, draft: async () => ({ output: { preview: preview() }, usage: { input_tokens: 1, output_tokens: 1 }, model: 'gpt-5.6-luna', cost: 0.001, answer: '{}' }), now, env: {}, maxJobsPerRun: 1, maxJobsPerDay: 10, laneWait: { retries: 5, waitMs: 0 }, fetchImpl: async () => page('Text '.repeat(40)) });
+  assert.equal(report.status, 'ok'); assert.equal(attempts, 3);
+  attempts = 0;
+  session.store.acquire = async () => { attempts += 1; throw new Error('BRIDGE_RUN_LOCKED'); };
+  const skipped = await runRedaktionsworker({ session, knowledge, draft: async () => { throw new Error('must not draft'); }, now, env: {}, laneWait: { retries: 2, waitMs: 0 } });
+  assert.equal(skipped.status, 'skipped'); assert.equal(skipped.reason, 'BRIDGE_RUN_LOCKED'); assert.equal(attempts, 3);
 });

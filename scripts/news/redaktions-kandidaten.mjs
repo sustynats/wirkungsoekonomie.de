@@ -8,6 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { bridgeSession } from './bridge/remote.mjs';
+import { acquireLane } from './bridge/acquire-lane.mjs';
 import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
 import { editorialAnalysisAssessment } from './editorial-analysis.mjs';
 import { isMerged } from './living-files.mjs';
@@ -53,13 +54,13 @@ export function buildCandidateRequest(story, assessment, { owner, now }) {
   return { job, fingerprint };
 }
 
-export async function proposeEditorialCandidates({ session = null, root = ROOT, now = new Date().toISOString(), env = process.env, limit = Number(env.WOEK_EDITORIAL_CANDIDATES_PER_RUN || 1), maxPerDay = Number(env.WOEK_EDITORIAL_CANDIDATES_PER_DAY || 2), stories = null, assess = editorialAnalysisAssessment } = {}) {
+export async function proposeEditorialCandidates({ session = null, root = ROOT, now = new Date().toISOString(), env = process.env, laneWait = null, limit = Number(env.WOEK_EDITORIAL_CANDIDATES_PER_RUN || 1), maxPerDay = Number(env.WOEK_EDITORIAL_CANDIDATES_PER_DAY || 2), stories = null, assess = editorialAnalysisAssessment } = {}) {
   let store, transport;
   try { ({ store, transport } = session || bridgeSession(env)); }
   catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, proposed: [] }; throw error; }
   let acquired = false;
   try {
-    await store.acquire(now, 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}1` });
+    await acquireLane(() => store.acquire(now, 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}1` }), { retries: 20, waitMs: 30000, ...(laneWait || {}) });
     acquired = true;
   } catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, proposed: [] }; throw error; }
   try {
