@@ -85,6 +85,16 @@ export async function fetchTranscript(transcript, fetchImpl = fetch, timeoutMs =
   } catch { return null; } finally { clearTimeout(timer); }
 }
 // Episodes Natalie already requested or published must not come back as proposals.
+// Eigene, selbst eingereihte Folgenauftraege sind an ihrer Herkunft erkennbar.
+export const ownEpisodeRequest = (job) => job?.intake?.trigger_type === 'automatic_episode'
+  || job?.input?.origin?.proposed_by === 'github_direct_worker';
+
+// Ein Vermerk je Folge, nicht je Zeile der Mediathek.
+export const observationKey = (show, episode) => `github-episode:${show.id}:${hash(episode.key || episode.guid).slice(0, 32)}`;
+export const pageObservationKey = (episode) => /^https?:\/\//.test(episode?.page || '')
+  ? `github-episode-page:${hash(episode.page.replace(/[?#].*$/, '').replace(/\/$/, '')).slice(0, 32)}`
+  : null;
+
 export function knownEpisodeUrls({ editions = [], requests = [] } = {}) {
   const urls = new Set();
   const add = (u) => { if (typeof u === 'string' && /^https?:\/\//.test(u)) urls.add(u.replace(/[?#].*$/, '').replace(/\/$/, '')); };
@@ -184,7 +194,7 @@ export function mediathekEpisodes(rows, show) {
     const key = episodeKey(title, seconds);
     const candidate = { show_id: show.id, title: title.replace(ACCESSIBILITY_VARIANT, '').trim().slice(0, 200), page, media,
       summary: String(row.description || '').replace(/\s+/g, ' ').trim().slice(0, 4000),
-      published_at: new Date(seconds * 1000).toISOString(), guid: String(row.id || page || media),
+      published_at: new Date(seconds * 1000).toISOString(), guid: String(row.id || page || media), key,
       duration: Number(row.duration) || null, subtitle_url: /^https:\/\//.test(row.url_subtitle || '') ? row.url_subtitle : null, transcripts: [] };
     const previous = byEpisode.get(key);
     if (!previous || (!previous.subtitle_url && candidate.subtitle_url)) byEpisode.set(key, candidate);
@@ -240,14 +250,27 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
     const editorialRows = rows.filter((row) => row?.input?.job_type === 'editorial_request');
     const requests = []; for (const row of editorialRows) { const job = await store.get(row.input.job_id); if (job) requests.push(job); }
     let editions = []; try { editions = JSON.parse(fs.readFileSync(path.join(root, 'data/news/personal-editorials.json'), 'utf8')).editions || []; } catch { /* no published editions yet */ }
-    const known = knownEpisodeUrls({ editions, requests });
+    // Ein Auftrag der Redaktion zu derselben Folge blockiert weiterhin: ihre
+    // Arbeit wird nicht verdoppelt. Der eigene, selbst eingereihte Auftrag darf
+    // das nicht, sonst blockiert die erste Einreihung die Wiederholung, sobald
+    // der Wortlaut vorliegt (16.09.: der Lanz vom 15.09. fiel genau so aus der
+    // Liste, als die Untertitel kamen und die Mediathek-Kennung wechselte).
+    const known = knownEpisodeUrls({ editions, requests: requests.filter((job) => !ownEpisodeRequest(job)) });
     const seen = (u) => u && known.has(u.replace(/[?#].*$/, '').replace(/\/$/, ''));
     const feedErrors = [], fresh = [];
     for (const show of shows || loadShows(root)) {
       try {
         const episodes = selectNewEpisodes(await showEpisodes(show, fetchImpl), now, { maxAgeDays, limit: 3 });
         for (const episode of episodes) {
-          const previous = await store.observation(`github-episode:${show.id}:${hash(episode.guid).slice(0, 32)}`);
+          // Die Kennung der Mediathek wechselt, sobald die untertitelte Fassung
+          // gewinnt. Der Vermerk haengt deshalb an der Folge selbst (Titel ohne
+          // Fassungszusatz und Sendezeit) und zusaetzlich an der Sendungsseite;
+          // Altvermerke an der Mediathek-Kennung gelten weiter.
+          const episodeAnchor = observationKey(show, episode);
+          const pageAnchor = pageObservationKey(episode);
+          const previous = (await store.observation(episodeAnchor))
+            || (await store.observation(`github-episode:${show.id}:${hash(episode.guid).slice(0, 32)}`))
+            || (pageAnchor ? await store.observation(pageAnchor) : null);
           // Eine Folge, die ohne Wortlaut eingereiht wurde, darf genau einmal
           // erneut eingereiht werden, sobald ein Wortlaut vorliegt: der erste
           // Auftrag lief vertragsgemäß in eine Rückfrage und ist verbraucht
@@ -298,8 +321,10 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
       // wie der erste.
       if (!transcript && retry) { waiting.push({ show_id: show.id, title: episode.title, age_hours: Number(ageHours.toFixed(1)), retry: true, reason: 'ohne Wortlaut' }); continue; }
       const { job, fingerprint } = buildEpisodeRequest(episode, show, { owner, now, transcript, retry });
-      const key = `github-episode:${show.id}:${hash(episode.guid).slice(0, 32)}`;
+      const key = observationKey(show, episode);
+      const pageKey = pageObservationKey(episode);
       if (await store.observation(`intake-fingerprint:${fingerprint}`)) { await store.observe(key, { job_id: null, fingerprint, at: now, version: EPISODE_VERSION, duplicate: true }); continue; }
+      if (pageKey) await store.observe(pageKey, { job_id: job.input.job_id, at: now, version: EPISODE_VERSION, show_id: show.id, title: episode.title, transcript_origin: transcript?.origin || null, ...(retry ? { retried_with_transcript: true } : {}) });
       await store.observe(key, { job_id: job.input.job_id, fingerprint, at: now, version: EPISODE_VERSION, title: episode.title,
         transcript_origin: transcript?.origin || null, ...(retry ? { retried_with_transcript: true } : {}) });
       await store.put(job);
