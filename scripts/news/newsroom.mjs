@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { numberTokens, evidenceNumberTokens } from "./numeric-evidence.mjs";
+import { numberTokens, evidenceNumberTokens, withoutPublisherNames } from "./numeric-evidence.mjs";
 import { sourceAccess } from "./access-policy.mjs";
 import { courtCaseRelation } from "./court-case-identity.mjs";
 import { structuredEventIdentity } from './event-identity.mjs';
@@ -274,7 +274,8 @@ export function validateNewsroomAnalysis(analysis, story) {
     }
     const groups = evidenceGroups(cited);
     const proofNumbers = evidenceNumberTokens(claim.evidence, story.sources);
-    for (const number of numberTokens(claim.claim)) if (!proofNumbers.has(number)) errors.push("CLAIM_NUMBER_NOT_IN_EVIDENCE");
+    // Der Verlagsname gehoert nicht zur Beweislast (siehe withoutPublisherNames).
+    for (const number of numberTokens(withoutPublisherNames(claim.claim, story.sources))) if (!proofNumbers.has(number)) errors.push("CLAIM_NUMBER_NOT_IN_EVIDENCE");
     if (claim.status === "confirmed_claim" && groups.possible_independent_origins < 2) errors.push("CLAIM_INDEPENDENCE_NOT_ESTABLISHED");
     if (claim.status === "primary_source_claim" && !cited.some((source) => source.primary_source)) errors.push("CLAIM_PRIMARY_SOURCE_MISSING");
     const criticalOrigins = new Set((story.sources || []).filter(source => source.requires_corroboration).map(source => source.provenance?.origin).filter(Boolean));

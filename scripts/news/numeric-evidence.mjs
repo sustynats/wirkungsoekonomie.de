@@ -37,6 +37,27 @@ export function sourceNumberTokens(source = {}, fields = ['title', 'summary', 'a
 // Publication metadata proves when this publisher reported, not when the
 // event occurred or any quantity in the story. Exclude only the exact,
 // attributed reporting date from the numeric check; keep reader copy intact.
+// Ein Verlagsname ist keine journalistische Zahl. „France 24", „ZDF heute 19
+// Uhr", „n-tv" tragen Ziffern, die nichts behaupten. Die Prüfung der Lesetexte
+// nahm den Namen schon heraus, die Prüfung der Aussagen nicht: dort scheiterte
+// eine Meldung an der 24 in „laut France 24" (16.09., Lauf 12:05). Getrennte
+// Schreibweisen zählen mit, weil im Text „France-24-Bericht" steht.
+export function withoutPublisherNames(value, sources = []) {
+  const escape = (name) => name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  let text = String(value || '');
+  const names = new Set();
+  for (const source of Array.isArray(sources) ? sources : []) {
+    for (const name of [source?.publisher, source?.name]) {
+      if (typeof name === 'string' && name.trim().length >= 3 && /\d/.test(name)) names.add(name.trim());
+    }
+  }
+  for (const name of [...names].sort((a, b) => b.length - a.length)) {
+    const pattern = escape(name).replace(/\s+/g, '[\\s\\u00a0\\u202f-]+');
+    text = text.replace(new RegExp(pattern, 'giu'), 'Quelle');
+  }
+  return text;
+}
+
 export function withoutVerifiedPublicationDates(value, sources = []) {
   let text=String(value || '');
   const escape=value=>value.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
