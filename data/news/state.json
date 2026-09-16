@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-16T23:22:31.219Z",
+  "last_successful_run": "2026-09-16T23:37:26.325Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -85113,6 +85113,13 @@
     }
   },
   "pending_story_ids": [
+    "wt-d88c83aa901d7173",
+    "wt-b5f0491e315132ba",
+    "wt-8d45b7addd95df8f",
+    "wt-53c8d6c8cd608b20",
+    "wt-fac6f22addf9000c",
+    "wt-c9893b0764c6302b",
+    "wt-d1bafe5a495d34fb",
     "wt-54d00c30f9873271",
     "wt-76c05189501e1fca",
     "wt-840fec45d14d3575",
@@ -85120,11 +85127,9 @@
     "wt-825da5fbd8a0403e",
     "wt-441ba0ba9ca61388",
     "wt-a826aa65db4e40de",
-    "wt-d88c83aa901d7173",
     "wt-2b9db8cddaa3c745",
     "wt-f518779725ee4c2b",
     "wt-60f4e4d7d43fad99",
-    "wt-b5f0491e315132ba",
     "wt-45bbed6182879301",
     "wt-f0993cbe310dc79f",
     "wt-7a9f3761815289a3",
@@ -85137,9 +85142,6 @@
     "wt-b04898d699afd23c",
     "wt-a4b21d37fb0df5b2",
     "wt-1fec198e493797c1",
-    "wt-8d45b7addd95df8f",
-    "wt-53c8d6c8cd608b20",
-    "wt-fac6f22addf9000c",
     "wt-7d2b6434fd4613c7",
     "wt-e47c7d90d469d3f8",
     "wt-c5c95379707307f3",
@@ -85286,7 +85288,6 @@
     "wt-5ff4948f4ca58d63",
     "wt-c24d6c7cde14c011",
     "wt-ca44be9272fbe235",
-    "wt-c9893b0764c6302b",
     "wt-37d30574c9da07fc",
     "wt-91859d97c0e45074",
     "wt-ecf532db93bed166",
@@ -85752,11 +85753,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-d1bafe5a495d34fb"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-16T23:22:31.219Z",
+  "last_attempted_run": "2026-09-16T23:37:26.325Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1537,
@@ -88625,6 +88625,11 @@
       "input_hash": "bc658e6bafba48fcf6538ca5",
       "version": "2026-09-10.2",
       "checked_at": "2026-09-16T23:22:31.219Z"
+    },
+    "wt-d1bafe5a495d34fb": {
+      "input_hash": "bc658e6bafba48fcf6538ca5",
+      "version": "2026-09-10.2",
+      "checked_at": "2026-09-16T23:37:26.325Z"
     }
   }
 }
