@@ -245,7 +245,7 @@ test('side paths listed as primary move to secondary_paths and a missing data st
   assert.equal(p.primary_paths[0].type, 'main_path'); assert.equal(p.data_status, 'modelled'); assert.equal(p.direction, 'open'); assert.equal(p.magnitude, 1);
   assert.deepEqual(analysis.transport_repairs, ['human.primary_paths:side_risk->secondary_paths', 'planet.data_status:missing->modelled', 'planet.primary_paths:side_effect->main_path']);
   assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('side_effect und side_risk gehören in secondary_paths'));
-  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('source_summary: 100 bis 180 Wörter'));
+  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('Textlängen sind harte Grenzen'));
 });
 
 test('fragments where paths belong are discarded, incomplete paths stay for the gate', () => {
