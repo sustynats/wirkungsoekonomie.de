@@ -42,6 +42,7 @@ import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCo
 import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
 import { IMAGE_CONFIG, digest as imageDigest } from "./title-image/policy.mjs";
+import { EDITORIAL_HOUR_KEY, editorialDraftsInWindow, sharedHourlyRoom } from "./stundenkontingent.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint, sourceReviewFingerprint } from "./evidence-packets.mjs";
 import { numberTokens, evidenceNumberTokens, numericEvidenceReceipt } from "./numeric-evidence.mjs";
 import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, estimateMediaUsage, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
@@ -1517,13 +1518,24 @@ export async function runWirkungsticker(options = {}) {
     : { ...budgetPacing({ budget, spent: spendBefore, spentLastHour: aiSpendInWindow(usage, now), now, configured: configuredStoriesPerHour }), enabled: true };
   const aiStoriesInLastHour = aiStoriesInWindow(usage, now);
   const aiCallsInLastHour = aiRequestsInWindow(usage, now);
-  const hourlyRoom = Math.max(0, configuredStoriesPerHour - aiStoriesInLastHour);
+  // Ein Kontingent fuer alles, was bezahlt wird: eine Nachbesprechung oder eine
+  // Analyse der Redaktionsspur belegt einen Platz dieser Stunde (Natalie am
+  // 16.09.: „dann kommt dann ein Artikel jeweils weniger"). Ohne Ablage bleibt
+  // es bei der eigenen Zaehlung - dann drosselt nur diese Spur sich selbst.
+  let editorialDraftsInLastHour = 0;
+  if (bridge && !options.dryRun) {
+    try { editorialDraftsInLastHour = editorialDraftsInWindow(await bridge.store.observation(EDITORIAL_HOUR_KEY), now); }
+    catch { editorialDraftsInLastHour = 0; }
+  }
+  const hourlyRoom = sharedHourlyRoom({ configured: configuredStoriesPerHour, tickerStories: aiStoriesInLastHour, editorialDrafts: editorialDraftsInLastHour });
   const maxAiCallsPerHour = pacing.paused ? 0 : hourlyRoom;
   const remainingAiCallsThisHour = maxAiCallsPerHour;
   const maxAiStories = Math.min(configuredMaxAiStories, maxAiCallsPerHour);
   report.ai_hourly_limit = maxAiCallsPerHour;
   report.ai_hourly_limit_configured = configuredStoriesPerHour;
   report.ai_stories_in_last_hour = aiStoriesInLastHour;
+  report.editorial_drafts_in_last_hour = editorialDraftsInLastHour;
+  report.shared_hourly_room = hourlyRoom;
   report.ai_budget_pacing = { ...pacing, calls_this_month: monthlyAiCalls(usage, month) };
   report.ai_calls_in_last_hour = aiCallsInLastHour;
   report.ai_calls_available_this_run = remainingAiCallsThisHour;
