@@ -71,6 +71,19 @@ test("claim gate binds evidence to source identity, excerpt and numbers", () => 
   const changed = structuredClone(analysis);
   changed.event_claims[0].claim = "Die Quelle nennt 99 Milliarden Euro.";
   assert.ok(validateNewsroomAnalysis(changed, { sources: [item] }).includes("CLAIM_NUMBER_NOT_IN_EVIDENCE"));
+  // Ein Verlagsname mit Ziffer ist keine Behauptung: „laut France 24" darf die
+  // Meldung nicht kosten (16.09., Lauf 12:05).
+  const named = structuredClone(analysis);
+  named.event_claims[0].claim = "Die Angriffe haben laut France 24 zugenommen.";
+  const namedStory = { sources: [{ ...item, publisher: "France 24" }] };
+  named.event_claims[0].evidence = named.event_claims[0].evidence.map((proof) => ({ ...proof }));
+  assert.equal(validateNewsroomAnalysis(named, namedStory).includes("CLAIM_NUMBER_NOT_IN_EVIDENCE"), false);
+  // Auch mit Bindestrichen, wie es im Text steht.
+  named.event_claims[0].claim = "Die Überschrift des France-24-Berichts bewertet den Vorgang.";
+  assert.equal(validateNewsroomAnalysis(named, namedStory).includes("CLAIM_NUMBER_NOT_IN_EVIDENCE"), false);
+  // Eine echte Zahl bleibt beweispflichtig, auch neben dem Verlagsnamen.
+  named.event_claims[0].claim = "Laut France 24 sind es 99 Milliarden Euro.";
+  assert.ok(validateNewsroomAnalysis(named, namedStory).includes("CLAIM_NUMBER_NOT_IN_EVIDENCE"));
   changed.event_claims[0].evidence[0].url = "https://evil.example/";
   assert.ok(validateNewsroomAnalysis(changed, { sources: [item] }).includes("CLAIM_EVIDENCE_NOT_IN_SOURCE"));
 });
