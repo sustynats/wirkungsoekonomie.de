@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution, repairFields, fieldRepairFormat } from '../../scripts/news/openai-transport.mjs';
+import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution, repairFields, fieldRepairFormat, fieldFromFinding } from '../../scripts/news/openai-transport.mjs';
 import { releaseDeterministicImpact, deterministicGateIssues, secondPassComplete } from '../../scripts/news/impact-gate.mjs';
 import { paidAttemptsExhausted, AI_PROCESSING_VERSION, pendingRecord } from '../../scripts/news/run.mjs';
 import { validateAnalysis, sha256 } from '../../scripts/news/lib.mjs';
@@ -521,4 +521,41 @@ test('bei Textbefunden liefert die eine Nachlieferung genau die betroffenen Feld
       return { ok: true, status: 200, json: async () => responsePayload(answer) };
     } });
   assert.deepEqual(priority, ['wirkungsticker_analyse_1', 'wirkungspotenzial_2_1'], 'das Bewertungsobjekt zuerst, danach kein weiterer Aufruf');
+});
+
+test('ein Medienbefund wird ohne Schema nachgeliefert, weil media_impact offen bleibt', async () => {
+  const assessment = syntheticPotentialAssessment();
+  const answered = () => ({ story_id: 'wt-1', publication_recommendation: true, headline: 'H', summary: 'S',
+    media_impact: { relevant: true, public_explanation: 'zu kurz' }, impact_assessment: structuredClone(assessment) });
+  assert.deepEqual(repairFields(['MEDIA_PUBLIC_EXPLANATION_LENGTH', 'MEDIA_IMPACT_REQUIRED_STRING:reason']), ['media_impact']);
+  assert.equal(fieldRepairFormat(['media_impact']), null, 'für ein offenes Objekt gibt es kein erzwingbares Schema');
+  const bodies = [];
+  const result = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna',
+    findIssues: (analysis) => analysis.media_impact?.public_explanation === 'zu kurz' ? ['MEDIA_PUBLIC_EXPLANATION_LENGTH'] : [],
+    fetchImpl: async (url, init) => {
+      const body = JSON.parse(init.body); bodies.push(body);
+      const answer = bodies.length === 1 ? JSON.stringify({ analyses: [answered()] })
+        : JSON.stringify({ story_id: 'wt-1', media_impact: { relevant: true, public_explanation: 'Eine ausreichend lange Erklärung.', reason: 'R' } });
+      return { ok: true, status: 200, json: async () => responsePayload(answer) };
+    } });
+  assert.equal(bodies.length, 2); assert.equal(result.repair_calls, 1);
+  assert.equal(bodies[1].text.format.type, 'json_object', 'genau ein Aufruf, ohne Schema-Ablehnung davor');
+  assert.ok(bodies[1].input.includes('Liefere ausschließlich diese Felder neu: media_impact'));
+  assert.ok(bodies[1].input.includes('80 bis 200 Wörter'));
+  assert.equal(result.analyses[0].media_impact.public_explanation, 'Eine ausreichend lange Erklärung.');
+  assert.equal(result.analyses[0].headline, 'H');
+  assert.ok(result.analyses[0].transport_repairs.some((r) => r === 'media_impact:nachgeliefert (1 Befunde)'));
+});
+
+test('ein Befund, der sein Feld selbst nennt, bestimmt die Nachlieferung ohne Tabelle', () => {
+  assert.deepEqual(repairFields(['AI_ARRAY_REQUIRED:uncertainties']), ['uncertainties']);
+  assert.deepEqual(repairFields(['AI_REQUIRED_STRING:resilience', 'AI_ARRAY_REQUIRED:mechanisms']), ['resilience', 'mechanisms']);
+  assert.deepEqual(repairFields(['AI_IMPORTANCE_INVALID', 'AI_PUBLICATION_GATE_REQUIRED', 'AI_WATCH_NEXT_REQUIRED']), ['importance', 'publication_gate', 'watch_next']);
+  assert.deepEqual(repairFields(['AI_ARRAY_REQUIRED:visuals']), [], 'Titelbilder laufen nicht über die Nachlieferung');
+  assert.deepEqual(repairFields(['AI_REQUIRED_STRING:impact_assessment']), [], 'das Bewertungsobjekt hat seinen eigenen Weg');
+  assert.deepEqual(repairFields(['AI_ARRAY_REQUIRED:erfundenes_feld']), [], 'nur Felder des Analyseschemas');
+  assert.equal(fieldFromFinding('AI_ARRAY_REQUIRED:first_order'), 'first_order');
+  assert.equal(fieldFromFinding('AI_MATERIALITY_TOO_LOW'), null);
+  const format = fieldRepairFormat(repairFields(['AI_ARRAY_REQUIRED:uncertainties', 'AI_REQUIRED_STRING:evidence_level']));
+  assert.deepEqual(format.schema.required, ['story_id', 'uncertainties', 'evidence_level']);
 });
