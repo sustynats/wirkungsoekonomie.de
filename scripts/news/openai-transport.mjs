@@ -4,6 +4,9 @@
 // danach ist deterministisch (Gate, Ableitung der Tragweite, Build).
 import { buildAnalysisPrompt, decodeWoekAiResponse, sanitizeFeedText } from './lib.mjs';
 import { deriveAssessmentCalculations, IMPACT_VERSION } from './impact-assessment.mjs';
+import { semanticIssues } from './impact-publication.mjs';
+import { modelledPublicationIssues } from './impact-scope.mjs';
+import { FACTOR_KEYS } from './impact-magnitude.mjs';
 import { modelRates } from './budget.mjs';
 
 export const OPENAI_RESPONSES_URL = 'https://api.openai.com/v1/responses';
@@ -32,6 +35,8 @@ export const SINGLE_CALL_INSTRUCTIONS = [
   'Quellenkennungen wörtlich: In source_id und source_ids steht ausschließlich der exakte Wert aus dem Feld source_id der gelieferten sources (z. B. "rbb24-nachrichten", nicht "rbb24"). Keine Kurzformen, keine Kennungen aus Verlagsnamen, keine Quellen aus eigenem Wissen; research_check.searches und source_functions bleiben auf die gelieferten Quellen beschränkt.',
   'Pfadtypen: primary_paths enthalten nur main_path oder counter_path mit same_target true und same_baseline true; side_effect und side_risk gehören in secondary_paths. Bei path_status modelled ist data_status modelled oder estimated, nie missing.',
   'source_summary: 100 bis 180 Wörter in zwei bis drei Absätzen (Leerzeile), unabhängig von publication_depth. Lesertexte enthalten nur Zahlen, Daten und Jahreszahlen, die wörtlich in den gelieferten Quellentexten stehen; das Datum der Berichterstattung wird nicht ergänzt.',
+  'source_summary in eigenen Worten: keine Passage von mehr als 20 Wörtern wörtlich aus einer Quelle übernehmen.',
+  'Jede Dimension trägt zusätzlich rationale (Begründungstext) und balance (bei direction mixed ein Objekt mit comparable_material_paths, protection_boundary_decisive und rationale; sonst null). Diese beiden Schlüssel fehlten in der Hälfte der Antworten.',
   'Vollständigkeit ist Pflicht: Jeder Eintrag in analyses enthält ALLE Schlüssel des Schemas. Checkliste je Eintrag: story_id, publication_recommendation, headline, news_status, publication_depth, event_claims, followups, source_summary, summary, detail_summary, why_relevant, status, analysis_type, impact_assessment (mit dimensions.human/planet/democracy), importance, impact_potential, impact_risks, mechanisms, first_order, second_order, third_order, systemic_relevance, transformation_potential, resilience, side_effects, uncertainties, evidence_level, attribution, watch_next, reference_frameworks, publication_gate, visuals, media_impact. Ein fehlender Schlüssel macht die gesamte Antwort unbrauchbar.',
   'Reihenfolge: Erst alle Lesertext- und Gate-Felder (headline bis publication_gate, visuals, media_impact), dann impact_assessment mit allen drei Dimensionen, und als allerletzter Schlüssel analysis_complete:true. Ein Eintrag ohne impact_assessment oder ohne analysis_complete ist ungültig und wird verworfen; höre nie vor impact_assessment auf.',
   'Faktoren ohne Ausnahme: JEDER Pfad in JEDER Dimension (human, planet, democracy; primary_paths und secondary_paths) trägt magnitude_factors mit allen sechs Faktoren, protection_boundary, research_pass und research_result. Die letzte Dimension wird genauso vollständig ausgearbeitet wie die erste.',
@@ -192,6 +197,18 @@ export function repairPathPlacement(assessment, repairs = []) {
       const kept = rows.filter((p) => !fragment(p));
       if (!Array.isArray(d[set]) || kept.length !== rows.length) { repairs.push(`${key}.${set}:${Array.isArray(d[set]) ? rows.length - kept.length : 1} fragment(s) discarded`); d[set] = kept; }
     }
+    // A side path without its six factors cannot be scored and would fail the
+    // whole dimension (run 22:35: one half-written Nebenpfad blocked Mensch).
+    // Dropping it loses only optional side information; primary paths stay.
+    const scored = (p) => FACTOR_KEYS.every((k) => Number.isInteger(coerceScore(p?.magnitude_factors?.[k]?.value)));
+    const unscored = (Array.isArray(d.secondary_paths) ? d.secondary_paths : []).filter((p) => !scored(p));
+    if (unscored.length) { repairs.push(`${key}.secondary_paths:${unscored.length} unscored path(s) discarded`); d.secondary_paths = d.secondary_paths.filter((p) => scored(p)); }
+    // A protection boundary is a floor for negative paths only; "decisive" on
+    // a positive or open path is a label error, not a floor.
+    for (const p of [...(Array.isArray(d.primary_paths) ? d.primary_paths : []), ...(Array.isArray(d.secondary_paths) ? d.secondary_paths : [])]) {
+      const pb = p?.protection_boundary;
+      if (pb && typeof pb === 'object' && coerceBoolean(pb.decisive) === true && p.direction !== 'negative') { repairs.push(`${key}.protection_boundary:decisive on ${p.direction} path cleared`); pb.decisive = false; pb.status = 'not_decisive'; }
+    }
     if (d.path_status !== 'modelled') continue;
     if (!['modelled', 'estimated'].includes(d.data_status)) { repairs.push(`${key}.data_status:${d.data_status}->modelled`); d.data_status = 'modelled'; }
     const primary = d.primary_paths;
@@ -213,11 +230,36 @@ export function repairPathPlacement(assessment, repairs = []) {
   return assessment;
 }
 
+// A headline that carries an attributed claim must name the attribution
+// (editorial-evidence rule). The model regularly sets attribution_required on
+// a headline claim, names attributed_to, and still leaves the qualifier out of
+// the title. The qualifier is derived from the model's own attribution and
+// prefixed once ("Laut Polizei: …"); nothing beyond the model's words is added.
+const foldTitle = (value) => String(value || '').normalize('NFKC').replace(/\s+/g, ' ').trim().toLocaleLowerCase('de');
+export function repairHeadlineAttribution(analysis, repairs = []) {
+  if (!analysis || typeof analysis !== 'object' || typeof analysis.headline !== 'string') return analysis;
+  for (const claim of Array.isArray(analysis.event_claims) ? analysis.event_claims : []) {
+    if (!claim || claim.attribution_required !== true || claim.headline_claim === false) continue;
+    let qualifier = typeof claim.headline_qualifier === 'string' ? claim.headline_qualifier.trim() : '';
+    if (qualifier.length < 5 && typeof claim.attributed_to === 'string' && claim.attributed_to.trim().length >= 3) qualifier = `laut ${claim.attributed_to.trim().replace(/[.]+$/, '')}`;
+    if (qualifier.length < 5) continue;
+    if (!foldTitle(analysis.headline).includes(foldTitle(qualifier))) {
+      const prefixed = `${qualifier[0].toLocaleUpperCase('de')}${qualifier.slice(1)}: ${analysis.headline.replace(/^Laut [^:]{3,80}:\s*/i, '')}`;
+      if (prefixed.length > 260) continue;
+      repairs.push(`headline:attribution prefixed (${qualifier})`);
+      analysis.headline = prefixed;
+    }
+    if (claim.headline_qualifier !== qualifier) { repairs.push(`event_claims:headline_qualifier set (${qualifier})`); claim.headline_qualifier = qualifier; }
+    break;
+  }
+  return analysis;
+}
+
 // Deterministic post-processing of the model output. Nothing editorial is
 // invented: magnitudes are recomputed from the model's own factors, and the
 // plausible range is only snapped to include that recomputed point value.
 export function normalizeAnalysisOutput(analysis, story = null) {
-  const repairs = [];
+  const repairs = Array.isArray(analysis?.transport_repairs) ? [...analysis.transport_repairs] : [];
   if (analysis && typeof analysis === 'object') {
     delete analysis.analysis_complete;
     delete analysis.transport_repairs;
@@ -228,6 +270,7 @@ export function normalizeAnalysisOutput(analysis, story = null) {
     }
   }
   repairSourceBindings(analysis, story?.sources || [], repairs);
+  repairHeadlineAttribution(analysis, repairs);
   const finish = () => { if (repairs.length && analysis && typeof analysis === 'object') analysis.transport_repairs = repairs; return analysis; };
   const assessment = analysis?.impact_assessment;
   if (!assessment || assessment.version !== IMPACT_VERSION) return finish();
@@ -243,6 +286,50 @@ export function normalizeAnalysisOutput(analysis, story = null) {
     }
   }
   return finish();
+}
+
+// Everything the deterministic gate would hold against the assessment object
+// alone: format errors, semantic checks and the three modelled dimensions.
+export function assessmentIssues(analysis, story) {
+  const assessment = analysis?.impact_assessment;
+  const record = { sources: story?.sources || [], impact_assessment: assessment };
+  const issues = [...semanticIssues(assessment, record), ...(assessment ? modelledPublicationIssues(assessment) : [])];
+  return [...new Set(issues.filter((code) => /^IMPACT_/.test(code)))];
+}
+
+// The model completes the reader texts and then leaves the assessment out or
+// half-written in roughly half of all answers (measured 15./16.09. at low and
+// medium effort). A second full attempt in the next run repeats that. One
+// focused follow-up in the same run, carrying the exact gate findings, only
+// re-delivers impact_assessment; texts and sources stay as answered.
+export const REPAIR_MAX_OUTPUT_TOKENS = 16000;
+export function repairAddendum(storyId, issues, previous) {
+  return [`NACHLIEFERUNG für story_id ${storyId}: Deine Antwort ist angekommen, aber impact_assessment fehlt oder besteht die deterministische Prüfung nicht.`,
+    `Prüfbefunde: ${issues.join(', ')}.`,
+    previous ? `Bisheriger, unvollständiger Entwurf von impact_assessment (nur als Ausgangspunkt, Befunde beheben): ${JSON.stringify(previous).slice(0, 60000)}` : 'Es lag noch kein impact_assessment vor.',
+    'Antworte ausschließlich mit {"analyses":[{"story_id":"…","impact_assessment":{…}}]}: impact_assessment vollständig nach Schema (Version 2.1, alle drei Dimensionen modelled mit primary_paths, sechs Faktoren je Pfad, research_check, system_check, observed_effects), source_ids exakt aus den gelieferten sources. Keine anderen Felder.'].join('\n');
+}
+const sumUsage = (a, b) => !a ? b : !b ? a : { input_tokens: a.input_tokens + b.input_tokens, output_tokens: a.output_tokens + b.output_tokens,
+  ...((a.cached_input_tokens ?? b.cached_input_tokens) !== undefined ? { cached_input_tokens: (a.cached_input_tokens || 0) + (b.cached_input_tokens || 0) } : {}) };
+
+async function requestAssessmentRepair({ prompt, story, analysis, issues, model, apiKey, fetchImpl, timeoutMs, reasoningEffort, rawDir }) {
+  const addendum = repairAddendum(story.story_id, issues, analysis.impact_assessment || null);
+  const body = JSON.stringify(buildOpenAiRequest(`${prompt}\n\n${addendum}`, { model, maxOutputTokens: REPAIR_MAX_OUTPUT_TOKENS, reasoningEffort }));
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  let payload = null, status = 0;
+  try {
+    const response = await fetchImpl(OPENAI_RESPONSES_URL, { method: 'POST', signal: controller.signal, body, headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` } });
+    status = response.status; payload = await response.json().catch(() => null);
+    if (!response.ok) return { usage: decodeUsage(payload), assessment: null, answerChars: 0, status };
+  } catch { return { usage: null, assessment: null, answerChars: 0, status: 0 }; }
+  finally { clearTimeout(timer); }
+  const usage = decodeUsage(payload), answer = finalOutputText(payload);
+  if (rawDir && answer) { try { fs.mkdirSync(rawDir, { recursive: true }); fs.writeFileSync(`${rawDir}/${new Date().toISOString().replace(/[:.]/g, '-')}-${story.story_id}-nachlieferung.json`, JSON.stringify({ model: payload?.model || model, status: payload?.status || null, incomplete: payload?.incomplete_details || null, usage, issues, answer, story_ids: [story.story_id] }, null, 2)); } catch { /* best effort */ } }
+  let parsed = null;
+  try { parsed = answer ? JSON.parse(answer) : null; } catch { parsed = null; }
+  const assessment = parsed?.analyses?.find?.((a) => a?.story_id === story.story_id)?.impact_assessment || parsed?.analyses?.[0]?.impact_assessment || parsed?.impact_assessment || null;
+  return { usage, assessment: assessment && typeof assessment === 'object' ? assessment : null, answerChars: (answer || '').length, status };
 }
 
 const retryable = (status) => status === 429 || status >= 500;
@@ -303,8 +390,29 @@ export async function callOpenAiDirect(stories, options = {}) {
   }
   const result = decodeWoekAiResponse({ ok: true, answer, provider: 'OpenAI Responses API', model: reportedModel,
     mode: TRANSPORT_VERSION, usage, sources: [] }, prompt, attempts);
-  result.analyses = result.analyses.map((analysis) => normalizeAnalysisOutput(analysis,
-    stories.find((story) => story?.story_id === analysis?.story_id) || (stories.length === 1 ? stories[0] : null)));
+  const storyFor = (analysis) => stories.find((story) => story?.story_id === analysis?.story_id) || (stories.length === 1 ? stories[0] : null);
+  result.analyses = result.analyses.map((analysis) => normalizeAnalysisOutput(analysis, storyFor(analysis)));
+  result.repair_calls = 0;
+  if (options.repair !== false && process.env.WOEK_NEWS_ASSESSMENT_REPAIR !== 'false') {
+    for (const analysis of result.analyses) {
+      const story = storyFor(analysis);
+      // A rejection carries no assessment by design; only a recommended story is completed.
+      if (!story || result.repair_calls >= 1 || analysis?.publication_recommendation === false || analysis?.rejection) continue;
+      const issues = assessmentIssues(analysis, story);
+      if (!issues.length) continue;
+      result.repair_calls += 1;
+      const repaired = await requestAssessmentRepair({ prompt, story, analysis, issues, model, apiKey, fetchImpl, rawDir,
+        timeoutMs: Number(options.timeoutMs || process.env.WOEK_NEWS_AI_TIMEOUT_MS || 240000), reasoningEffort: options.reasoningEffort || process.env.WOEK_NEWS_REASONING_EFFORT || 'low' });
+      if (repaired.usage) result.reported_usage = sumUsage(result.reported_usage, repaired.usage);
+      result.answer_chars = Number(result.answer_chars || 0) + repaired.answerChars;
+      if (repaired.assessment) {
+        analysis.impact_assessment = repaired.assessment;
+        normalizeAnalysisOutput(analysis, story);
+        const remaining = assessmentIssues(analysis, story);
+        (analysis.transport_repairs ||= []).push(`impact_assessment:nachgeliefert (${issues.length} Befunde, danach ${remaining.length})`);
+      } else (analysis.transport_repairs ||= []).push(`impact_assessment:nachlieferung ohne Ergebnis (HTTP ${repaired.status})`);
+    }
+  }
   result.rates = modelRates(reportedModel);
   return result;
 }

@@ -63,6 +63,8 @@ Doppelläufe.
   Demokratie kamen als Fragmente; bei `gpt-5.4-mini` hatte `medium` nur die Ausgabe-Token
   verdoppelt). Jede bezahlte Antwort wird als privates Laufartefakt `ai-raw-output-<run>`
   (3 Tage) gesichert, damit Gate-Fehler erklärbar sind.
+- Ausgabebudget je Aufruf `WOEK_NEWS_MAX_OUTPUT_TOKENS` (Standard 32 000 seit 16.09.; bei mittlerem
+  Denkaufwand zählen Reasoning-Token mit, zwei Antworten der Nacht brachen bei 24 000 ab).
 - Der Transport ergänzt nie Inhalte. Er wandelt Typen (Zahlen-Strings → Zahlen, Boolean-Strings
   → Booleans), rechnet die Tragweite aus den gelieferten Faktoren nach und repariert seit
   15.09. abends deterministisch drei Etikettfehler, die sonst ganze Bindungsketten kippten
@@ -71,8 +73,23 @@ Doppelläufe.
   eindeutiges Präfix, eindeutiger Verlagsname; nicht Zuordenbares wird verworfen, nie
   ergänzt), Nebenpfade (`side_effect`, `side_risk`) wandern aus `primary_paths` nach
   `secondary_paths`, `data_status: missing` einer modellierten Dimension wird `modelled`,
-  Textfragmente an Pfadstellen werden verworfen. Jede Reparatur steht im Analyseobjekt unter
-  `transport_repairs`. Ein unvollständiger Pfad bleibt unvollständig und fällt im Gate durch.
+  Textfragmente an Pfadstellen werden verworfen, Nebenpfade ohne vollständige sechs Faktoren
+  ebenso (ein halb geschriebener Nebenpfad hatte sonst die ganze Dimension blockiert), und
+  `protection_boundary.decisive` auf einem nicht negativen Pfad wird zurückgesetzt (Schutzgrenze
+  ist nur für negative Pfade eine Untergrenze). Jede Reparatur steht im Analyseobjekt unter
+  `transport_repairs`. Ein unvollständiger Hauptpfad bleibt unvollständig und fällt im Gate durch.
+- **Eine gezielte Nachlieferung je Meldung (seit 16.09.):** Das Modell liefert in rund der Hälfte
+  der Antworten die Lesertexte vollständig und lässt dann `impact_assessment` weg oder halb
+  geschrieben (gemessen bei `low` und `medium`). Ein zweiter voller Versuch im nächsten Lauf
+  wiederholt das nur. Deshalb prüft der Transport direkt nach der Antwort die deterministischen
+  Gate-Befunde des Bewertungsobjekts (`assessmentIssues`) und macht bei Befund **genau einen**
+  Folgeaufruf im selben Lauf, der mit denselben Quellen und den konkreten Befunden ausschließlich
+  `impact_assessment` nachliefert (16k Ausgabe-Token, Rohkopie `…-nachlieferung.json`). Texte
+  und Quellen bleiben, wie geantwortet; Ablehnungen (`publication_recommendation: false`) werden
+  nie nachgefordert. Token beider Aufrufe fließen in denselben Kostenbeleg, der Folgeaufruf zählt
+  im Stundendeckel (`repair_calls`). Abschaltbar mit `WOEK_NEWS_ASSESSMENT_REPAIR=false`. Das ist
+  die bewusste Ausnahme von „ein Aufruf je Meldung“: höchstens zwei, der zweite klein und nur bei
+  strukturellem Befund.
 - Betriebsmodell seit 15.09.2026 abends: `gpt-5.6-luna` (Variable `WOEK_NEWS_MODEL`, Entscheidung
   Natalie); September-Freigabe auf 100 EUR angehoben (`NEWS_AI_BUDGET_DIRECT_OPERATION`).
 - Modell über Repository-Variable `WOEK_NEWS_MODEL` (Code-Standard `gpt-5.4-mini`; zugelassen

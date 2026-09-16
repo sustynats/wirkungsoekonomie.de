@@ -59,7 +59,7 @@ export async function proposeEditorialCandidates({ session = null, root = ROOT, 
   catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, proposed: [] }; throw error; }
   let acquired = false;
   try {
-    await store.acquire(now, 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}` });
+    await store.acquire(now, 'import', { manualRunId: `${env.GITHUB_RUN_ID || '0'}:${env.GITHUB_RUN_ATTEMPT || '1'}1` });
     acquired = true;
   } catch (error) { if (SKIP.has(error.message)) return { status: 'skipped', reason: error.message, proposed: [] }; throw error; }
   try {

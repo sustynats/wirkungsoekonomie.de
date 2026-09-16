@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId } from '../../scripts/news/openai-transport.mjs';
+import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution } from '../../scripts/news/openai-transport.mjs';
 import { releaseDeterministicImpact, deterministicGateIssues } from '../../scripts/news/impact-gate.mjs';
 import { paidAttemptsExhausted, AI_PROCESSING_VERSION, pendingRecord } from '../../scripts/news/run.mjs';
 import { validateAnalysis, sha256 } from '../../scripts/news/lib.mjs';
@@ -275,4 +275,62 @@ test('a queued potential reassessment survives a deferral hold of the published 
   assert.equal(held.pending_update.reason, 'AI_BUDGET_OR_BATCH_LIMIT');
   const plain = pendingRecord({ ...candidate, impact_reassessment: false, existing_story: { ...existing, pending_update: { detected_at: '2026-09-15T18:00:00Z' } } }, 'AI_BUDGET_OR_BATCH_LIMIT', '2026-09-16T00:00:00Z');
   assert.equal('impact_reassessment' in plain.pending_update, false, 'an ordinary update never gains the flag');
+});
+
+test('unscored side paths are discarded and a decisive boundary on a positive path is cleared', () => {
+  const assessment = syntheticPotentialAssessment();
+  const human = assessment.dimensions.human;
+  human.secondary_paths = [{ ...syntheticPotentialPath({ type: 'side_risk', direction: 'negative', magnitude: 2 }), magnitude_factors: { reach: { value: 2, rationale: 'nur ein Faktor geliefert', source_ids: ['official'] } } }, syntheticPotentialPath({ type: 'side_effect', direction: 'positive', magnitude: 1 })];
+  human.primary_paths[0].protection_boundary = { decisive: true, status: 'conditional', rationale: 'Schutzgrenze fälschlich auf dem positiven Hauptpfad.', reference_frame: 'Leben', source_ids: ['official'] };
+  const story = { story_id: 'wt-1', sources: [{ source_id: 'official', url: 'https://example.org/a', title: 'Q', summary: 'Q' }], claims: [{ claim_id: 'c', claim: 'x', source_id: 'official' }] };
+  assert.ok(validateAnalysis({ story_id: 'wt-1', impact_assessment: structuredClone(assessment) }, story, { requireImpactAssessment: true }).some((e) => e === 'IMPACT_BOUNDARY_UNSUPPORTED:human' || e.startsWith('IMPACT_FACTOR_REQUIRED:')));
+  const analysis = normalizeAnalysisOutput({ story_id: 'wt-1', impact_assessment: assessment }, story);
+  const h = analysis.impact_assessment.dimensions.human;
+  assert.equal(h.secondary_paths.length, 1); assert.equal(h.secondary_paths[0].type, 'side_effect');
+  assert.equal(h.primary_paths[0].protection_boundary.decisive, false); assert.equal(h.primary_paths[0].protection_boundary.status, 'not_decisive');
+  assert.deepEqual(analysis.transport_repairs, ['human.secondary_paths:1 unscored path(s) discarded', 'human.protection_boundary:decisive on positive path cleared']);
+  assert.equal(validateAnalysis(analysis, story, { requireImpactAssessment: true }).some((e) => e.startsWith('IMPACT_')), false);
+  assert.deepEqual(assessmentIssues(analysis, story), []);
+  assert.ok(assessmentIssues({ story_id: 'wt-1' }, story).includes('IMPACT_ASSESSMENT_REQUIRED'));
+});
+
+test('an answer without a usable assessment gets exactly one focused follow-up in the same call, a complete one none', async () => {
+  const texts = () => ({ story_id: 'wt-1', publication_recommendation: true, headline: 'H', summary: 'S' });
+  const repairedAssessment = syntheticPotentialAssessment();
+  const bodies = [];
+  const fetchImpl = async (url, init) => {
+    const body = JSON.parse(init.body); bodies.push(body);
+    const text = bodies.length === 1 ? JSON.stringify({ analyses: [texts()] }) : JSON.stringify({ analyses: [{ story_id: 'wt-1', impact_assessment: repairedAssessment }] });
+    return { ok: true, status: 200, json: async () => responsePayload(text) };
+  };
+  const result = await callOpenAiDirect(stories, { apiKey: 'test', fetchImpl, model: 'gpt-5.6-luna' });
+  assert.equal(bodies.length, 2, 'one answer, one follow-up');
+  assert.ok(bodies[1].input.includes('NACHLIEFERUNG für story_id wt-1')); assert.ok(bodies[1].input.includes('IMPACT_ASSESSMENT_REQUIRED')); assert.equal(bodies[1].max_output_tokens, 16000);
+  assert.equal(result.repair_calls, 1); assert.equal(result.request_attempts, 1);
+  assert.deepEqual(result.reported_usage, { input_tokens: 2400, output_tokens: 1600, cached_input_tokens: 400 });
+  assert.equal(result.analyses[0].impact_assessment.version, '2.1'); assert.equal(result.analyses[0].headline, 'H');
+  assert.ok(result.analyses[0].transport_repairs.some((r) => r.startsWith('impact_assessment:nachgeliefert')));
+  assert.deepEqual(assessmentIssues(result.analyses[0], stories[0]), []);
+  const complete = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna', fetchImpl: async () => ({ ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [{ ...texts(), impact_assessment: syntheticPotentialAssessment() }] })) }) });
+  assert.equal(complete.repair_calls, 0); assert.equal('transport_repairs' in complete.analyses[0], false);
+  let calls = 0;
+  const failing = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna', fetchImpl: async () => { calls += 1; return calls === 1 ? { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [texts()] })) } : { ok: false, status: 500, json: async () => ({}) }; } });
+  assert.equal(calls, 2); assert.equal(failing.repair_calls, 1); assert.equal('impact_assessment' in failing.analyses[0], false);
+  assert.ok(failing.analyses[0].transport_repairs[0].startsWith('impact_assessment:nachlieferung ohne Ergebnis'));
+  const off = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna', repair: false, fetchImpl: async () => ({ ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [texts()] })) }) });
+  assert.equal(off.repair_calls, 0);
+  assert.ok(repairAddendum('wt-9', ['IMPACT_X'], null).includes('Es lag noch kein impact_assessment vor.'));
+});
+
+test('an attributed headline claim without its qualifier in the title gets the attribution prefixed from the model\'s own words', () => {
+  const analysis = normalizeAnalysisOutput({ story_id: 'wt-1', headline: 'Sonderzug in Grenzregion nach Drohnenangriff teilweise geräumt',
+    event_claims: [{ claim: 'Ein Sonderzug hielt an', attribution_required: true, headline_claim: true, attributed_to: 'Bericht der Bahn', headline_qualifier: null }] }, null);
+  assert.equal(analysis.headline, 'Laut Bericht der Bahn: Sonderzug in Grenzregion nach Drohnenangriff teilweise geräumt');
+  assert.equal(analysis.event_claims[0].headline_qualifier, 'laut Bericht der Bahn');
+  assert.deepEqual(analysis.transport_repairs, ['headline:attribution prefixed (laut Bericht der Bahn)', 'event_claims:headline_qualifier set (laut Bericht der Bahn)']);
+  const fine = normalizeAnalysisOutput({ story_id: 'wt-1', headline: 'Laut Polizei: Brand gelöscht', event_claims: [{ claim: 'x', attribution_required: true, headline_claim: true, headline_qualifier: 'laut Polizei' }] }, null);
+  assert.equal(fine.headline, 'Laut Polizei: Brand gelöscht'); assert.equal('transport_repairs' in fine, false);
+  const noClaim = repairHeadlineAttribution({ headline: 'Titel ohne Zuordnung', event_claims: [{ claim: 'x', attribution_required: true, headline_claim: false }, { claim: 'y', attribution_required: true, headline_claim: true }] });
+  assert.equal(noClaim.headline, 'Titel ohne Zuordnung', 'without any attribution wording nothing is invented');
+  assert.ok(SINGLE_CALL_INSTRUCTIONS.includes('rationale (Begründungstext) und balance') && SINGLE_CALL_INSTRUCTIONS.includes('mehr als 20 Wörtern wörtlich'));
 });
