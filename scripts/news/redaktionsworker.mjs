@@ -14,6 +14,7 @@ import { bridgePath, hash, JOB_ID } from './bridge/contract.mjs';
 import { prepareApiJob, validateApiOutput } from './bridge/api-processor.mjs';
 import { editorialKnowledge } from './bridge/editorial-knowledge.mjs';
 import { OPENAI_RESPONSES_URL, finalOutputText, decodeUsage, newsModel } from './openai-transport.mjs';
+import { extractJsonObject } from './lib.mjs';
 import { modelRates } from './budget.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -44,7 +45,7 @@ export function selectEditorialRequests(rows, { limit = 2, excluded = new Set() 
 // the sources named in the request; the profile sentence is swapped for the
 // tool rule, everything else in the contract stays untouched.
 export const NO_TOOLS_SENTENCE = 'Du hast in diesem Aufruf keine Browser-, Such-, Bild- oder Dateitools. Verwende als Tatsachenbelege nur tatsächlich mitgelieferte Textauszüge.';
-export const webSearchRule = (maxSearches) => `In diesem Aufruf steht ausschließlich ein begrenztes Web-Suchtool zur Verfügung (höchstens ${maxSearches} Zugriffe). Nutze es zuerst, um die im Auftrag verlinkten Quellen tatsächlich zu lesen, danach nur für konkret fehlende tragende Tatsachen. Als Tatsachenbelege gelten mitgelieferte Textauszüge und tatsächlich über das Tool gelesene Belege; jede gelesene Quelle mit URL in sources nennen. Keine Bezahlschranke umgehen, keine Bilder oder Dateien erzeugen.`;
+export const webSearchRule = (maxSearches) => `In diesem Aufruf steht ausschließlich ein begrenztes Web-Suchtool zur Verfügung (höchstens ${maxSearches} Zugriffe). Nutze es zuerst, um die im Auftrag verlinkten Quellen tatsächlich zu lesen, danach nur für konkret fehlende tragende Tatsachen. Als Tatsachenbelege gelten mitgelieferte Textauszüge und tatsächlich über das Tool gelesene Belege; jede gelesene Quelle mit URL in sources nennen. Keine Bezahlschranke umgehen, keine Bilder oder Dateien erzeugen. Die Antwort ist genau ein JSON-Objekt als reiner Text: kein Markdown-Zaun, kein Kommentar davor oder danach.`;
 export function researchInstructions(instructions, maxSearches) {
   const rule = webSearchRule(maxSearches);
   return instructions.includes(NO_TOOLS_SENTENCE) ? instructions.replace(NO_TOOLS_SENTENCE, rule) : `${rule}\n${instructions}`;
@@ -74,8 +75,12 @@ export async function draftEditorialOutput(request, { apiKey = process.env.OPENA
     try {
       response = await fetchImpl(OPENAI_RESPONSES_URL, { method: 'POST', signal: controller.signal,
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+        // "Web Search cannot be used with JSON mode" (provider, 16.09.): with the
+        // search tool the answer is plain text that must be a single JSON object;
+        // the profile demands exactly that and the parse below tolerates a fence.
         body: JSON.stringify({ model, store: false, reasoning: { effort: reasoningEffort }, max_output_tokens: maxOutputTokens,
-          instructions: webSearch ? researchInstructions(request.instructions, maxSearches) : request.instructions, input: request.prompt, text: { format: { type: 'json_object' } },
+          instructions: webSearch ? researchInstructions(request.instructions, maxSearches) : request.instructions, input: request.prompt,
+          ...(webSearch ? {} : { text: { format: { type: 'json_object' } } }),
           ...variants[variant] }) });
       payload = await response.json().catch(() => null);
     } finally { clearTimeout(timer); }
@@ -92,7 +97,8 @@ export async function draftEditorialOutput(request, { apiKey = process.env.OPENA
   const text = finalOutputText(payload);
   if (!text) throw Object.assign(new Error('AI_PROVIDER_OUTPUT_INVALID'), { usage, model: reportedModel, cost, incomplete: payload?.incomplete_details?.reason || null });
   let parsed;
-  try { parsed = JSON.parse(text); } catch { throw Object.assign(new Error('AI_MALFORMED_JSON'), { usage, model: reportedModel, cost }); }
+  try { parsed = extractJsonObject(text); } catch { throw Object.assign(new Error('AI_MALFORMED_JSON'), { usage, model: reportedModel, cost }); }
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw Object.assign(new Error('AI_MALFORMED_JSON'), { usage, model: reportedModel, cost });
   return { output: parsed, usage, model: reportedModel, cost, answer: text, web_searches: webSearches, web_search_variant: webSearch ? Math.min(variant, variants.length - 1) : null };
 }
 

@@ -127,11 +127,17 @@ test('the editorial call carries a bounded web search and a rejected request is 
   const request = { instructions: `Regel A.\n${NO_TOOLS_SENTENCE} URLs allein bedeuten nicht, dass eine Quelle gelesen wurde.\nRegel B.`, prompt: '{"assignment":{}}' };
   const result = await draftEditorialOutput(request, { apiKey: 'test', model: 'gpt-5.6-luna', maxSearches: 4, fetchImpl: async (url, init) => { bodies.push(JSON.parse(init.body)); return { ok: true, status: 200, json: async () => payload }; } });
   assert.deepEqual(bodies[0].tools, [{ type: 'web_search' }]); assert.equal(bodies[0].max_tool_calls, 4); assert.equal(bodies[0].store, false);
+  assert.equal('text' in bodies[0], false, 'the provider refuses JSON mode together with web search');
   assert.ok(!bodies[0].instructions.includes(NO_TOOLS_SENTENCE)); assert.ok(bodies[0].instructions.includes('höchstens 4 Zugriffe')); assert.ok(bodies[0].instructions.includes('Regel B.'));
   assert.equal(result.web_searches, 2); assert.equal(result.cost, Number((((10000 * 0.2) + (3000 * 1.2)) / 1e6 + 2 * WEB_SEARCH_USD_PER_CALL).toFixed(6)));
   assert.equal(researchInstructions('ohne Satz', 5).startsWith('In diesem Aufruf steht'), true, 'a profile without the sentence still receives the rule');
   const off = await draftEditorialOutput(request, { apiKey: 'test', model: 'gpt-5.6-luna', webSearch: false, fetchImpl: async (url, init) => { bodies.push(JSON.parse(init.body)); return { ok: true, status: 200, json: async () => payload }; } });
   assert.equal('tools' in bodies[1], false); assert.equal(bodies[1].instructions, request.instructions); assert.equal(off.web_searches, 2);
+  assert.deepEqual(bodies[1].text, { format: { type: 'json_object' } }, 'without the tool JSON mode stays on');
+  const fenced = { ...payload, output: [{ type: 'message', role: 'assistant', status: 'completed', content: [{ type: 'output_text', text: '```json\n' + answer + '\n```' }] }] };
+  const parsed = await draftEditorialOutput(request, { apiKey: 'test', model: 'gpt-5.6-luna', fetchImpl: async () => ({ ok: true, status: 200, json: async () => fenced }) });
+  assert.equal(parsed.output.preview.format, 'opinion_analysis', 'a fenced JSON answer is still read');
+  await assert.rejects(draftEditorialOutput(request, { apiKey: 'test', model: 'gpt-5.6-luna', fetchImpl: async () => ({ ok: true, status: 200, json: async () => ({ ...payload, output: [{ type: 'message', role: 'assistant', status: 'completed', content: [{ type: 'output_text', text: 'Hier ist kein JSON.' }] }] }) }) }), /AI_MALFORMED_JSON/);
   for (const status of [400, 401, 422, 429]) {
     const error = await draftEditorialOutput(request, { apiKey: 'test', fetchImpl: async () => ({ ok: false, status, json: async () => ({}) }) }).catch((e) => e);
     assert.equal(error.providerNotCalled, true, `${status} produced nothing and is not paid`);
