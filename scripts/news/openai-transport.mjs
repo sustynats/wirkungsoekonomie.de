@@ -11,6 +11,8 @@ import { impactAssessmentResponseFormat } from './impact-json-schema.mjs';
 import { analysisResponseFormat, schemaEligible, ANALYSIS_JSON_SCHEMA } from './analysis-json-schema.mjs';
 import { FACTOR_KEYS } from './impact-magnitude.mjs';
 import { modelRates } from './budget.mjs';
+import { evidenceGroups } from './newsroom.mjs';
+import { sourceNumberTokens } from './numeric-evidence.mjs';
 
 export const OPENAI_RESPONSES_URL = 'https://api.openai.com/v1/responses';
 export const DEFAULT_NEWS_MODEL = 'gpt-5.4-mini';
@@ -55,6 +57,38 @@ export const SINGLE_CALL_INSTRUCTIONS = [
 // Ausgabebudget: ein vollständiges Paket braucht gemessen 6k–8k Antwort-Token;
 // Reasoning-Token zählen mit. 24k deckt das mit Reserve ab und begrenzt Laufzeit
 // und Kosten einer entgleisten Generierung (Lauf 6: zwei Aufrufe über 240 s).
+// Natalie am 16.09.2026: „Wir müssen die Nachricht schon so weit vorbereitet
+// haben, die wir hingeben, dass auch was Vernünftiges zurückkommt, ohne
+// Nachbesserung, dass wir quasi nur einen Lauf brauchen." Eine bedingte Regel
+// („bei initial 60 bis 180, bei deepened 100 bis 180") ist dafür zu weich: das
+// Modell wählte die Tiefe selbst und verfehlte dann die Länge. Der Server kennt
+// den Aktenstand, also nennt er genau eine Zielspanne, komfortabel innerhalb
+// der Prüfgrenzen, und sagt, wie Zahlen belegt sein müssen.
+export function storyBriefing(story) {
+  // Dieselbe Ableitung, die die Antwort später korrigiert: Vorgabe und Prüfung
+  // dürfen nicht auseinanderlaufen.
+  const depth = requiredPublicationDepth(story);
+  if (!depth) return '';
+  const deepened = depth === 'deepened';
+  const origins = independentOrigins(story);
+  const numbers = sourceNumberBriefing(story);
+  return ['VORGABEN FÜR DIESE MELDUNG (nicht zu wählen, sie folgen dem Aktenstand):',
+    `publication_depth: ${depth}.`,
+    deepened
+      ? 'source_summary: 120 bis 170 Wörter in genau drei Absätzen (Leerzeile zwischen den Absätzen).'
+      : 'source_summary: 90 bis 160 Wörter in genau drei Absätzen (Leerzeile zwischen den Absätzen).',
+    deepened
+      ? 'detail_summary: 5 bis 7 Sätze, 600 bis 1100 Zeichen.'
+      : 'detail_summary: 4 bis 6 Sätze, 350 bis 900 Zeichen.',
+    'summary: genau zwei Sätze.',
+    'Zahlen in event_claims: Jede Zahl einer Aussage muss wörtlich in dem Beleg-Ausschnitt stehen, den du für genau diese Aussage zitierst. Steht sie dort nicht, formuliere die Aussage ohne Zahl.',
+    ...(numbers.length ? [`Belegbare Zahlen je Quelle (Schreibweise wie in der Quelle, Dezimalkomma erlaubt): ${numbers.join(' | ')}.`] : []),
+    origins >= 2
+      ? `Der Quellenbestand hat ${origins} voneinander unabhängige Herkünfte. status confirmed_claim nur, wenn du für diese Aussage zwei davon zitierst; sonst single_source_claim, primary_source_claim oder uncertain_claim.`
+      : `Der Quellenbestand hat nur ${origins === 1 ? 'eine' : 'keine'} unabhängige Herkunft. status confirmed_claim ist damit ausgeschlossen: nutze single_source_claim, primary_source_claim (nur bei zitierter Primärquelle) oder uncertain_claim.`,
+    'Zähle Wörter, Sätze und Absätze, bevor du antwortest: eine Antwort außerhalb dieser Spannen ist unbrauchbar und die Meldung erscheint nicht.'].join('\n');
+}
+
 export function buildOpenAiRequest(prompt, { model, maxOutputTokens = 24000, reasoningEffort = 'low', instructions = SINGLE_CALL_INSTRUCTIONS, responseFormat = { type: 'json_object' } } = {}) {
   return {
     model, store: false,
@@ -283,12 +317,62 @@ export function repairHeadlineAttribution(analysis, repairs = []) {
 // 100 bis 180), also entscheidet sie über Annahme oder Halt. 16.09.: drei
 // Meldungen wurden gehalten, weil das Modell „deepened" wählte und dann
 // initial-lange Texte schrieb. Eine Neubewertung behält ihre bisherige Tiefe.
-export function repairPublicationDepth(analysis, story, repairs = []) {
-  if (!analysis || typeof analysis !== 'object' || !story || story.impact_reassessment) return analysis;
+// „Bestätigt" ist eine Tatsache über den Quellenbestand, keine Einschätzung:
+// die Prüfung verlangt zwei voneinander unabhängige Herkünfte in den zitierten
+// Belegen. Wählt das Modell den Status trotzdem, ist die Meldung verloren
+// (16.09., Lauf 10:35: CLAIM_INDEPENDENCE_NOT_ESTABLISHED). Der Server kennt die
+// Abhängigkeiten, also stuft er den Status herab, statt zu verwerfen. Herabstufen
+// behauptet weniger, nie mehr.
+export function repairClaimIndependence(analysis, story, repairs = []) {
+  const claims = Array.isArray(analysis?.event_claims) ? analysis.event_claims : [];
+  const sources = Array.isArray(story?.sources) ? story.sources : [];
+  if (!claims.length || !sources.length) return analysis;
+  for (const claim of claims) {
+    if (!claim || typeof claim !== 'object' || claim.status !== 'confirmed_claim') continue;
+    const cited = (Array.isArray(claim.evidence) ? claim.evidence : [])
+      .map((proof) => sources.find((source) => source.source_id === proof?.source_id && source.url === proof?.url))
+      .filter(Boolean);
+    if (evidenceGroups(cited).possible_independent_origins >= 2) continue;
+    const next = cited.some((source) => source.primary_source) ? 'primary_source_claim'
+      : cited.length <= 1 ? 'single_source_claim' : 'uncertain_claim';
+    repairs.push(`event_claims:confirmed_claim->${next} (${evidenceGroups(cited).possible_independent_origins} unabhängige Herkunft)`);
+    claim.status = next;
+  }
+  return analysis;
+}
+
+// Welche Zahlen in welcher Quelle tatsächlich stehen. Die Prüfung vergleicht je
+// Aussage gegen die zitierte Quelle, also bekommt das Modell dieselbe Liste
+// vorab statt einer Ermahnung (16.09.: CLAIM_NUMBER_NOT_IN_EVIDENCE in jedem
+// zweiten Lauf). Derselbe Auszug wie in der Prüfung, damit nichts auseinanderläuft.
+export const BRIEFING_NUMBERS_PER_SOURCE = 25;
+export function sourceNumberBriefing(story, limit = BRIEFING_NUMBERS_PER_SOURCE) {
+  const rows = [];
+  for (const source of Array.isArray(story?.sources) ? story.sources : []) {
+    if (!source?.source_id) continue;
+    const numbers = [...sourceNumberTokens(source)].slice(0, limit);
+    rows.push(`${source.source_id}: ${numbers.length ? numbers.join(', ') : 'keine Zahlen'}`);
+  }
+  return rows;
+}
+
+// Wie viele voneinander unabhängige Herkünfte der gelieferte Quellenbestand
+// überhaupt hergibt. Mehr als das kann keine Aussage belegen.
+export function independentOrigins(story) {
+  const sources = Array.isArray(story?.sources) ? story.sources : [];
+  return sources.length ? evidenceGroups(sources).possible_independent_origins : 0;
+}
+
+export function requiredPublicationDepth(story) {
+  if (!story || typeof story !== 'object' || story.impact_reassessment) return null;
   const published = story.existing_story?.published;
-  if (typeof published !== 'boolean') return analysis;
-  const required = published ? 'deepened' : 'initial';
-  if (analysis.publication_depth === required) return analysis;
+  return typeof published === 'boolean' ? (published ? 'deepened' : 'initial') : null;
+}
+
+export function repairPublicationDepth(analysis, story, repairs = []) {
+  if (!analysis || typeof analysis !== 'object') return analysis;
+  const required = requiredPublicationDepth(story);
+  if (!required || analysis.publication_depth === required) return analysis;
   repairs.push(`publication_depth:${analysis.publication_depth ?? 'fehlt'}->${required}`);
   analysis.publication_depth = required;
   return analysis;
@@ -308,6 +392,7 @@ export function normalizeAnalysisOutput(analysis, story = null) {
   repairSourceBindings(analysis, story?.sources || [], repairs);
   repairHeadlineAttribution(analysis, repairs);
   repairPublicationDepth(analysis, story, repairs);
+  repairClaimIndependence(analysis, story, repairs);
   const finish = () => { if (repairs.length && analysis && typeof analysis === 'object') analysis.transport_repairs = repairs; return analysis; };
   const assessment = analysis?.impact_assessment;
   if (!assessment || assessment.version !== IMPACT_VERSION) return finish();
@@ -394,11 +479,19 @@ export function fieldRepairFormat(fields, name = 'wirkungsticker_nachlieferung_1
   return { type: 'json_schema', name, strict: true,
     schema: { type: 'object', additionalProperties: false, required: Object.keys(properties), properties } };
 }
-export function repairAddendum(storyId, issues, previous, fields = []) {
+export function repairAddendum(storyId, issues, previous, fields = [], depth = null) {
   if (fields.length) {
+    // Dieselbe konkrete Spanne wie im ersten Aufruf. Die bedingte Formulierung
+    // („bei initial so, bei deepened so") war hier derselbe Fehler: die
+    // Nachlieferung traf die Länge dreimal nicht (Lauf 10:20 UTC).
+    const deepened = depth === 'deepened';
     const hints = {
-      source_summary: 'source_summary: 60 bis 180 Wörter bei publication_depth initial, 100 bis 180 bei deepened, zwei bis drei Absätze, eigene Worte, nur Zahlen die wörtlich in den gelieferten Quellentexten stehen.',
-      detail_summary: 'detail_summary: bei initial mindestens 300 Zeichen und 3 bis 7 Sätze, bei deepened 500 bis 1200 Zeichen und 5 bis 7 Sätze.',
+      source_summary: depth
+        ? `source_summary: ${deepened ? '120 bis 170' : '90 bis 160'} Wörter in genau drei Absätzen, eigene Worte, nur Zahlen die wörtlich in den gelieferten Quellentexten stehen. Zähle die Wörter.`
+        : 'source_summary: 60 bis 180 Wörter bei publication_depth initial, 100 bis 180 bei deepened, zwei bis drei Absätze, eigene Worte, nur Zahlen die wörtlich in den gelieferten Quellentexten stehen.',
+      detail_summary: depth
+        ? `detail_summary: ${deepened ? '5 bis 7 Sätze, 600 bis 1100 Zeichen' : '4 bis 6 Sätze, 350 bis 900 Zeichen'}. Zähle die Sätze und Zeichen.`
+        : 'detail_summary: bei initial mindestens 300 Zeichen und 3 bis 7 Sätze, bei deepened 500 bis 1200 Zeichen und 5 bis 7 Sätze.',
       summary: 'summary: genau zwei Sätze.',
       event_claims: 'event_claims: jede Zahl im Claim muss in einem zitierten evidence-Segment derselben Quelle stehen; attribution_required mit headline_claim nur, wenn headline_qualifier wörtlich im Titel steht.',
       headline: 'headline: 10 bis 260 Zeichen; trägt ein Claim attribution_required und headline_claim, dann steht headline_qualifier wörtlich darin.',
@@ -421,7 +514,7 @@ const sumUsage = (a, b) => !a ? b : !b ? a : { input_tokens: a.input_tokens + b.
   ...((a.cached_input_tokens ?? b.cached_input_tokens) !== undefined ? { cached_input_tokens: (a.cached_input_tokens || 0) + (b.cached_input_tokens || 0) } : {}) };
 
 async function requestAssessmentRepair({ prompt, story, analysis, issues, model, apiKey, fetchImpl, timeoutMs, reasoningEffort, rawDir, schema = true, fields = [] }) {
-  const addendum = repairAddendum(story.story_id, issues, analysis.impact_assessment || null, fields);
+  const addendum = repairAddendum(story.story_id, issues, analysis.impact_assessment || null, fields, requiredPublicationDepth(story));
   // A schema-bound answer cannot omit a key. The provider may reject the
   // schema (unknown model, unsupported keyword); then exactly one further try
   // in plain JSON mode follows, which is the previous behaviour.
@@ -469,8 +562,12 @@ export async function callOpenAiDirect(stories, options = {}) {
   // folgt genau ein Versuch im einfachen JSON-Modus, also das alte Verhalten.
   const wantSchema = options.schema !== false && process.env.WOEK_NEWS_ANALYSIS_SCHEMA !== 'false' && !options.prompt && schemaEligible(stories);
   const prompt = options.prompt || buildAnalysisPrompt(stories, { transport: 'api', ...(wantSchema ? { includeVisuals: false } : {}) });
+  // Ein Aufruf je Meldung ist der Regelfall; dann kann die Anweisung die
+  // Vorgaben dieser einen Meldung nennen, ohne den Meldungsteil zu vergrößern.
+  const briefing = stories.length === 1 ? storyBriefing(stories[0]) : '';
+  const instructions = briefing ? `${SINGLE_CALL_INSTRUCTIONS}\n\n${briefing}` : SINGLE_CALL_INSTRUCTIONS;
   const formats = wantSchema ? [analysisResponseFormat(), { type: 'json_object' }] : [{ type: 'json_object' }];
-  const bodyFor = (format) => JSON.stringify(buildOpenAiRequest(prompt, { model, responseFormat: format,
+  const bodyFor = (format) => JSON.stringify(buildOpenAiRequest(prompt, { model, responseFormat: format, instructions,
     maxOutputTokens: Number(options.maxOutputTokens || process.env.WOEK_NEWS_MAX_OUTPUT_TOKENS || 24000),
     reasoningEffort: options.reasoningEffort || process.env.WOEK_NEWS_REASONING_EFFORT || 'low' }));
   let formatIndex = 0;

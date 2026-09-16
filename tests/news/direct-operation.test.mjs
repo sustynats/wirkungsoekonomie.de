@@ -613,3 +613,109 @@ test('die Veröffentlichungstiefe kommt vom Server, weil die Textlängen daran h
   const found = validateAnalysis(analysis, { ...stories[0], claims: [] }, {});
   assert.equal(found.includes('AI_SOURCE_SUMMARY_LENGTH'), false, found.filter((f) => f.includes('SOURCE_SUMMARY')).join(' '));
 });
+test('der Auftrag nennt genau eine Zielspanne je Meldung, damit ein Aufruf reicht', async () => {
+  const { storyBriefing } = await import('../../scripts/news/openai-transport.mjs');
+  const initial = storyBriefing({ existing_story: { published: false } });
+  assert.match(initial, /publication_depth: initial/);
+  assert.match(initial, /90 bis 160 Wörter in genau drei Absätzen/);
+  assert.match(initial, /4 bis 6 Sätze, 350 bis 900 Zeichen/);
+  const deepened = storyBriefing({ existing_story: { published: true } });
+  assert.match(deepened, /publication_depth: deepened/);
+  assert.match(deepened, /120 bis 170 Wörter/);
+  assert.match(deepened, /600 bis 1100 Zeichen/);
+  // Die Zielspannen liegen komfortabel innerhalb der Prüfgrenzen.
+  assert.ok(initial.includes('90 bis 160') && !initial.includes('60 bis 180'), 'kein Zielwert am Rand der Prüfgrenze');
+  // Zahlen: die Regel nennt den Mechanismus, den die Prüfung anwendet.
+  assert.match(initial, /wörtlich in dem Beleg-Ausschnitt stehen, den du für genau diese Aussage zitierst/);
+  // Eine Neubewertung behält ihre Tiefe, ein unbekannter Aktenstand bekommt keine Vorgabe.
+  assert.equal(storyBriefing({ existing_story: { published: true }, impact_reassessment: true }), '');
+  assert.equal(storyBriefing({}), '');
+  assert.equal(storyBriefing(null), '');
+  // Vorgabe und nachträgliche Korrektur teilen dieselbe Ableitung.
+  const { requiredPublicationDepth, repairPublicationDepth } = await import('../../scripts/news/openai-transport.mjs');
+  for (const story of [{ existing_story: { published: false } }, { existing_story: { published: true } }]) {
+    const depth = requiredPublicationDepth(story);
+    assert.ok(storyBriefing(story).includes(`publication_depth: ${depth}.`));
+    const answer = { publication_depth: depth === 'initial' ? 'deepened' : 'initial' };
+    repairPublicationDepth(answer, story, []);
+    assert.equal(answer.publication_depth, depth);
+  }
+  assert.equal(requiredPublicationDepth({ existing_story: { published: true }, impact_reassessment: true }), null);
+  // Die Nachlieferung nennt dieselbe konkrete Spanne wie der erste Aufruf.
+  const deep = repairAddendum('wt-1', ['AI_SOURCE_SUMMARY_LENGTH'], null, ['source_summary'], 'deepened');
+  assert.match(deep, /120 bis 170 Wörter in genau drei Absätzen/);
+  assert.match(deep, /Zähle die Wörter/);
+  assert.match(repairAddendum('wt-1', ['AI_DETAIL_SUMMARY_LENGTH'], null, ['detail_summary'], 'initial'), /4 bis 6 Sätze, 350 bis 900 Zeichen/);
+  // Ohne bekannte Tiefe bleibt die bisherige Formulierung.
+  assert.match(repairAddendum('wt-1', ['AI_SOURCE_SUMMARY_LENGTH'], null, ['source_summary']), /60 bis 180 Wörter bei publication_depth initial/);
+
+  // Beim einzelnen Aufruf steht die Vorgabe in der Anweisung, nicht im Meldungsteil.
+  const bodies = [];
+  await callOpenAiDirect([{ ...stories[0], existing_story: { published: false } }], { apiKey: 'test', model: 'gpt-5.6-luna', repair: false,
+    fetchImpl: async (url, init) => { bodies.push(JSON.parse(init.body)); return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [{ story_id: 'wt-1', publication_recommendation: false, rejection: { code: 'not_material', reason: 'Test' } }] })) }; } });
+  assert.match(bodies[0].instructions, /VORGABEN FÜR DIESE MELDUNG/);
+  assert.match(bodies[0].instructions, /90 bis 160 Wörter/);
+  assert.equal(bodies[0].input.includes('VORGABEN FÜR DIESE MELDUNG'), false, 'der Meldungsteil bleibt unverändert groß');
+  // Bei mehreren Meldungen in einem Aufruf gibt es keine Einzelvorgabe.
+  const many = [];
+  await callOpenAiDirect([{ ...stories[0], existing_story: { published: false } }, { ...stories[0], story_id: 'wt-2', existing_story: { published: true } }], { apiKey: 'test', model: 'gpt-5.6-luna', repair: false,
+    fetchImpl: async (url, init) => { many.push(JSON.parse(init.body)); return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [] })) }; } });
+  assert.equal(many[0].instructions.includes('VORGABEN FÜR DIESE MELDUNG'), false);
+});
+
+test('ein nicht belegbarer Aussagestatus wird herabgestuft, nicht verworfen', async () => {
+  const { repairClaimIndependence, independentOrigins, storyBriefing } = await import('../../scripts/news/openai-transport.mjs');
+  const primary = { source_id: 'ministerium', publisher_id: 'bund', url: 'https://bund.example/1', title: 'Erlass veröffentlicht', summary: 'Der Erlass tritt in Kraft.', primary_source: true };
+  const agency = { source_id: 'agentur', publisher_id: 'agentur', url: 'https://agentur.example/1', title: 'Andere Meldung zum Thema', summary: 'Ganz anderer Text über denselben Vorgang.' };
+  const sameHouse = { source_id: 'bund-zweit', publisher_id: 'bund', url: 'https://bund.example/2', title: 'Zweitmeldung', summary: 'Weiterer Text.' };
+  assert.equal(independentOrigins({ sources: [primary] }), 1);
+  assert.equal(independentOrigins({ sources: [primary, agency] }), 2);
+  assert.equal(independentOrigins({ sources: [primary, sameHouse] }), 1, 'dasselbe Haus ist eine Herkunft');
+  assert.equal(independentOrigins({}), 0);
+
+  // Eine Quelle, zitierte Primärquelle: primary_source_claim.
+  const one = { event_claims: [{ claim: 'X', status: 'confirmed_claim', evidence: [{ source_id: 'ministerium', url: 'https://bund.example/1' }] }] };
+  const repairs = [];
+  repairClaimIndependence(one, { sources: [primary] }, repairs);
+  assert.equal(one.event_claims[0].status, 'primary_source_claim');
+  assert.match(repairs[0], /confirmed_claim->primary_source_claim \(1 unabhängige Herkunft\)/);
+  // Eine Herkunft ohne Primärquelle, zwei Belege: uncertain_claim.
+  const dependent = { event_claims: [{ claim: 'X', status: 'confirmed_claim', evidence: [{ source_id: 'bund-zweit', url: 'https://bund.example/2' }, { source_id: 'ministerium2', url: 'https://bund.example/3' }] }] };
+  repairClaimIndependence(dependent, { sources: [sameHouse, { ...sameHouse, source_id: 'ministerium2', url: 'https://bund.example/3' }] }, []);
+  assert.equal(dependent.event_claims[0].status, 'uncertain_claim');
+  // Ein Beleg ohne Primärquelle: single_source_claim.
+  const single = { event_claims: [{ claim: 'X', status: 'confirmed_claim', evidence: [{ source_id: 'agentur', url: 'https://agentur.example/1' }] }] };
+  repairClaimIndependence(single, { sources: [agency] }, []);
+  assert.equal(single.event_claims[0].status, 'single_source_claim');
+  // Zwei unabhängige Herkünfte bleiben bestätigt, andere Status bleiben unberührt.
+  const fine = { event_claims: [{ claim: 'X', status: 'confirmed_claim', evidence: [{ source_id: 'ministerium', url: 'https://bund.example/1' }, { source_id: 'agentur', url: 'https://agentur.example/1' }] },
+    { claim: 'Y', status: 'uncertain_claim', evidence: [{ source_id: 'agentur', url: 'https://agentur.example/1' }] }] };
+  const none = [];
+  repairClaimIndependence(fine, { sources: [primary, agency] }, none);
+  assert.equal(fine.event_claims[0].status, 'confirmed_claim');
+  assert.equal(fine.event_claims[1].status, 'uncertain_claim');
+  assert.deepEqual(none, []);
+
+  // Die Vorgabe nennt die Zahl der Herkünfte, damit es gar nicht dazu kommt.
+  assert.match(storyBriefing({ existing_story: { published: false }, sources: [primary] }), /nur eine unabhängige Herkunft.*confirmed_claim ist damit ausgeschlossen/s);
+  assert.match(storyBriefing({ existing_story: { published: false }, sources: [primary, agency] }), /2 voneinander unabhängige Herkünfte/);
+});
+
+test('die Vorgabe nennt die belegbaren Zahlen je Quelle, mit demselben Auszug wie die Prüfung', async () => {
+  const { sourceNumberBriefing, storyBriefing, BRIEFING_NUMBERS_PER_SOURCE } = await import('../../scripts/news/openai-transport.mjs');
+  const { sourceNumberTokens } = await import('../../scripts/news/numeric-evidence.mjs');
+  const source = { source_id: 'swr-aktuell', publisher_id: 'swr', url: 'https://swr.example/1',
+    title: '12 Waffen und 300 Schuss Munition gefunden', summary: 'Die Polizei fand am 15. September 2026 rund 4,5 Kilogramm Material.' };
+  const ohne = { source_id: 'rbb24', publisher_id: 'rbb', url: 'https://rbb.example/1', title: 'Kein Zahlenbezug', summary: 'Ein Text ohne Ziffern.' };
+  // Genau die Zahlen, die die Prüfung akzeptiert - kein eigener Auszug.
+  assert.deepEqual(sourceNumberBriefing({ sources: [source] }), [`swr-aktuell: ${[...sourceNumberTokens(source)].join(', ')}`]);
+  assert.deepEqual(sourceNumberBriefing({ sources: [ohne] }), ['rbb24: keine Zahlen']);
+  assert.deepEqual(sourceNumberBriefing({}), []);
+  assert.deepEqual(sourceNumberBriefing({ sources: [{ title: 'ohne Kennung' }] }), [], 'ohne source_id keine Zeile');
+  // Lange Zahlenlisten werden begrenzt, damit die Anweisung nicht ausufert.
+  const viele = { source_id: 'viele', title: Array.from({ length: 60 }, (_, i) => `${i + 1}`).join(' '), summary: '' };
+  assert.equal(sourceNumberBriefing({ sources: [viele] })[0].split(', ').length, BRIEFING_NUMBERS_PER_SOURCE);
+  // Und die Liste steht in der Vorgabe.
+  assert.match(storyBriefing({ existing_story: { published: false }, sources: [source, ohne] }),
+    /Belegbare Zahlen je Quelle .*swr-aktuell: 12, 300, 15, 2026, 4\.5 \| rbb24: keine Zahlen/);
+});
