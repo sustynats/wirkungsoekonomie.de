@@ -478,3 +478,28 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Geprüft:** `tests/news/betriebsstatus.test.mjs` 4/4, `tests/news/betrieb-view.test.mjs` 6/6, `tests/news/editorial-intake.test.mjs` 40/40, `tests/ops/discord-monitor.test.mjs` grün, `npm run news:test` 1466 von 1497 - dieselben 31 lokalen Fehler wie auf main.
 - **Offen für Codex:** Besucherzahlen. Erhoben werden sie schon (`main.js` meldet an die Supabase-Funktion `site-event`, datensparsam nach dem Konzept vom Mai), aber es gibt keine Abfrage, die sie aggregiert zurückgibt. Eine Edge-Function `site-stats` mit Tages- und Seitenaggregaten würde reichen; die Anzeige im Reiter „Betrieb" baue ich dann darauf.
 - **Lehre:** Ein Monitoring, das nur bei Fehlern spricht, beantwortet die häufigste Frage nicht. „Läuft es?" braucht eine Antwort ohne Anlass - und ich muss den Bericht lesen, statt die Zahlen daneben selbst zu rechnen.
+
+## 2026-09-16 - Claude: Der Rückweg lag nur im Fuß
+
+- **Anlass:** Natalie: „Nicht jeder kapiert das mit dem Wischen, dass man da mit wieder auf die Übersichtsseite kommt. Irgendwie fehlt die Zurücknavigation." Auf den Hinweis, dass es einen gibt: „Es ist nur am Ende des Artikels zurück."
+- **Befund:** Es gab drei Rückwege — „Zur Übersicht", „Zurück im Leseweg", den Wischhinweis — und alle drei standen im Fuß. Bei einer Nachbesprechung mit 13.000 Zeichen heißt das: erst den ganzen Text durchscrollen. Die Brotkrume oben führte nur nach „Start / Wirkungsticker", nicht in die Liste, aus der man kam. Zwei der drei sind außerdem `<button hidden>` und existieren ohne JavaScript nicht.
+- **Behoben (PR #846):** Alle drei Artikelarten tragen den Rückweg direkt hinter der Brotkrume, vor Rubrik und Titel. Die Wirkungsakte kehrt an die Leseposition der Übersicht zurück, die Analysen in die Analysenliste. Ein echter Anker: ohne JavaScript führt er zur Übersicht, mit JavaScript übernimmt `goBack()` — derselbe Weg wie das Wischen, damit Filter und Leseposition bleiben. 44 px hoch, sichtbarer Tastaturfokus. Gemessen bei 375×812: Oberkante 192 px, ohne Scrollen sichtbar.
+
+## 2026-09-16 - Claude: Ein falsches Seitenverhältnis ist auch ein Rechtethema
+
+- **Anlass:** Natalie: „gibt es ein besseres Logo" (Lanz+Precht). Beim Nachsehen fiel ein Fehler auf, der alle Sendungskacheln betraf.
+- **Befund:** `renderShowIdentity` schrieb pauschal `width="800" height="800"`. Tatsächlich sind vier von sechs gelieferten Logos 16:9 oder 1,63:1. Der Browser reservierte ein Quadrat und rückte beim Laden zurecht — und die ZDF-Freigabe erlaubt ausschließlich proportionale Skalierung ohne Beschnitt, ein falsches Verhältnis im Markup behauptet also einen anderen Ausschnitt als die freigegebene Datei.
+- **Behoben (PR #847):** `scripts/news/asset-size.mjs` liest die Maße aus dem Dateikopf (JPEG-SOF, PNG-IHDR), je Datei einmal. Fehlt die Datei, bleibt die Angabe weg statt falsch zu sein. Ein Test vergleicht Markup und Datei für jedes gelieferte Logo und besteht darauf, dass mindestens eines nicht quadratisch ist — sonst prüft er nichts.
+
+## 2026-09-16 - Claude: Die richtige Logovariante war längst geliefert
+
+- **Was:** Die Bildanfrage 118949 enthält für Lanz+Precht drei freigegebene Varianten. In Betrieb war `80000-291-20`: die Wortmarke ohne Rand, Schriftzug bis an alle vier Dateikanten, dunkel auf weiß — auf der dunkelblauen Karte ein aufgeklebter weißer Block. `80000-291-22` ist die Negativfassung (als JPG weiß auf weiß, unbrauchbar). `80000-291-17` ist das vollständige Podcastlogo als Keyvisual, 1920×1080, dunkler Hintergrund, weißer Schriftzug, ZDF-Signet, umlaufender Rand — und damit die Darstellung, die ZDF auf zdf.de selbst benutzt. Eingebaut in PR #848, proportional auf 800×450, unbeschnitten, EXIF-Copyright erhalten; Prüfsumme, Archivnummer und Rechtevermerk mitgezogen.
+- **Korrektur an mir:** Ich hatte vermutet, unser Import habe beschnitten, und das als offene Rechtefrage an Natalie zurückgegeben. Falsch — die Originaldatei ist von ZDF genau so geliefert. Das Archiv lag die ganze Zeit in ihren Downloads; ein Blick hinein hätte die Frage vor dem Stellen beantwortet.
+- **Lehre:** Bevor ich eine Rechtefrage an Natalie zurückgebe, prüfe ich das vorhandene Archiv. Eine vermeidbare Frage kostet sie mehr als mich.
+
+## 2026-09-16 - Claude: Ein vierter Reiter hat die Freigabe unerreichbar gemacht
+
+- **Anlass:** Natalie, zehn Minuten nach dem Merge von PR #845: „Freigeben lässt sich in der Redaktionsapp nicht mehr anklicken."
+- **Ursache:** Mein Betrieb-Reiter. `.tabs` ist eine Flex-Zeile mit `flex:1` je Knopf; drei Beschriftungen passen bei 375 px, vier schoben die Zeile über den Rand, und „Freigeben" landete am Rand.
+- **Behoben (PR #849):** Die Arbeitszeile trägt wieder genau die drei Ansichten, mit denen Natalie arbeitet. Der Betriebsstatus liegt als kleiner Knopf mit Zustandspunkt im Kopf neben „Privat" — eine gelegentliche Nachfrage gehört nicht in die Arbeitszeile — und erscheint mit dem angemeldeten Arbeitsbereich. Als Sicherheitsnetz darf die Zeile umbrechen statt zu klemmen. Gemessen bei 375 px: alle drei Reiter von 20 bis 355 px vollständig sichtbar, kein horizontaler Überlauf. Ein Test schreibt die drei Reiter fest.
+- **Lehre:** Ich habe eine Ansicht in eine Zeile gehängt, die dafür keinen Platz hatte, und es nicht bei 375 px nachgesehen — obwohl ich dieselbe App am selben Abend zweimal wegen Erreichbarkeitsproblemen angefasst habe. Jede Änderung an dieser Reiterzeile wird künftig bei Telefonbreite gemessen, nicht nur im Quelltext geprüft.
