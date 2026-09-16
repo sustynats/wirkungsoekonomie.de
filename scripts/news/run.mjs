@@ -21,6 +21,9 @@ import {
   fetchArticleExcerpt,
   fetchFeed,
   monthlyUsage,
+  monthlyAiCalls,
+  aiSpendInWindow,
+  budgetPacing,
   parseFeed,
   preAnalyzeStory,
   scheduledSlot,
@@ -1448,11 +1451,21 @@ export async function runWirkungsticker(options = {}) {
     }
   });
   const configuredMaxAiStories = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_STORIES_PER_RUN || 2));
-  const maxAiCallsPerHour = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || 4));
+  const configuredCallsPerHour = Math.max(0, Number(process.env.WOEK_NEWS_MAX_AI_CALLS_PER_HOUR || 4));
+  // Die Freigabe gilt für den Kalendermonat, also verteilt sich ihr Rest auf die
+  // restlichen Stunden. Damit reicht sie bis zum Monatsende, ohne dass jemand
+  // eine Zahl nachstellt (Natalie am 16.09.: „Bis Monatsende sollten wir mit
+  // EUR 100 hinkommen"). Abschaltbar, dann gilt wieder die feste Obergrenze.
+  const pacing = process.env.WOEK_NEWS_BUDGET_PACING === 'false'
+    ? { calls_per_hour: configuredCallsPerHour, usd_per_hour: null, spent_last_hour: null, remaining_usd: null, paused: false, enabled: false }
+    : { ...budgetPacing({ budget, spent: spendBefore, spentLastHour: aiSpendInWindow(usage, now), now, configured: configuredCallsPerHour }), enabled: true };
+  const maxAiCallsPerHour = pacing.calls_per_hour;
   const aiCallsInLastHour = aiRequestsInWindow(usage, now);
   const remainingAiCallsThisHour = Math.max(0, maxAiCallsPerHour - aiCallsInLastHour);
   const maxAiStories = Math.min(configuredMaxAiStories, remainingAiCallsThisHour);
   report.ai_hourly_limit = maxAiCallsPerHour;
+  report.ai_hourly_limit_configured = configuredCallsPerHour;
+  report.ai_budget_pacing = { ...pacing, calls_this_month: monthlyAiCalls(usage, month) };
   report.ai_calls_in_last_hour = aiCallsInLastHour;
   report.ai_calls_available_this_run = remainingAiCallsThisHour;
   const catchUp = catchUpQueueStage(stage, ready, usage, now, budget, spendBefore);
