@@ -2,8 +2,1098 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T15:22:56.869Z",
+  "updated_at": "2026-09-16T15:37:36.559Z",
   "stories": [
+    {
+      "story_id": "wt-068fa5f5aba8a416",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-068fa5f5aba8a416-865321882be00594-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-068fa5f5aba8a416-6532d18551f2547b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-068fa5f5aba8a416-e9ff5ea85b4f7ce9-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "hessen-plant-1-7-milliarden-euro-neue-schulden-rekordetat-fur-schulen-a8a416",
+      "title": "Hessen plant laut hessenschau 2027 neue Schulden und Rekordausgaben für Schulen",
+      "source_summary": "Die hessenschau beschreibt einen Haushaltsentwurf des Landes Hessen für 2027. Vorgesehen sind 1,7 Milliarden Euro neue Schulden und Rekordausgaben von 6,5 Milliarden Euro für Schulen. Die Einnahmen werden mit 39,3 Milliarden Euro, die Ausgaben mit 41,6 Milliarden Euro angesetzt.\n\nNach dem Bericht soll die Zahl der Landesbeschäftigten leicht auf 161.500 sinken; knapp 50 Stellen in der Verwaltung sollen wegfallen. Zugleich seien zusätzliche Lehrerstellen vorgesehen. Finanzminister Alexander Lorz wird mit Aussagen zu anhaltendem Spardruck, schwachen Steuereinnahmen und steigenden Zinsen wiedergegeben.\n\nDer Entwurf setzt außerdem Schwerpunkte bei Bildung, Infrastruktur, Sicherheit und Digitalisierung. Für Kommunen sind 7,5 Milliarden Euro über den Kommunalen Finanzausgleich sowie weitere fünf Milliarden Euro aus anderen Programmen und Sondervermögen genannt. Ob der Entwurf parlamentarisch unverändert beschlossen und umgesetzt wird, bleibt offen.",
+      "summary": "Hessen verbindet im Haushaltsentwurf für 2027 neue Schulden mit höheren Bildungs- und Infrastrukturmitteln. Entscheidend bleibt, ob Parlament und Verwaltung die Prioritäten und Einsparungen tatsächlich umsetzen.",
+      "detail_summary": "Der hessische Haushaltsentwurf für 2027 sieht 1,7 Milliarden Euro neue Schulden vor, zugleich sollen 6,5 Milliarden Euro in Schulen fließen. Die Landesregierung kalkuliert mit 39,3 Milliarden Euro Einnahmen und 41,6 Milliarden Euro Ausgaben; Rücklagen und Kredite sollen die Lücke schließen. Nach dem Bericht könnte der leichte Abbau von Verwaltungsstellen den Spardruck sichtbar machen, während zusätzliche Lehrerstellen und das Bildungspaket andere Prioritäten setzen. Für Kommunen werden umfangreiche Mittel genannt, ihre Haushaltslage bleibt laut Finanzminister dennoch schwierig. Die möglichen Folgen reichen damit von besseren staatlichen Bildungs- und Infrastrukturleistungen bis zu längerem Finanzdruck. Belegt sind bisher Planungen und politische Aussagen, nicht deren spätere Wirkung oder die endgültige parlamentarische Fassung.",
+      "why_relevant": "Der Entwurf verbindet Verschuldung, Bildungsprioritäten und Verwaltungsabbau. Das kann staatliche Leistungen, kommunale Handlungsspielräume und die Verteilung künftiger Haushaltslasten beeinflussen.",
+      "topic": [
+        "Europa",
+        "Finanzen"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Vorliegender Haushaltsentwurf des Landes Hessen für 2027 mit neuer Kreditaufnahme, Bildungsprioritäten und geplantem Verwaltungsabbau",
+        "evaluation_target": {
+          "label": "Haushaltsentwurf des Landes Hessen für 2027",
+          "type": "proposal"
+        },
+        "baseline": "Bisheriger hessischer Haushalts- und Verwaltungsrahmen ohne die konkret vorgelegte Planung für 2027",
+        "counterfactual": "Ohne diese Planung würden Prioritäten, Kreditaufnahme und Stellenentwicklung im bisherigen oder parlamentarisch anders veränderten Rahmen fortgeschrieben.",
+        "reference_frame": [
+          "öffentliche Daseinsvorsorge",
+          "fiskalische Tragfähigkeit",
+          "demokratische Haushaltskontrolle",
+          "Agenda 2030"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Bildungs-, Verwaltungs- und Kommunalpfade können Zugang zu öffentlichen Leistungen und deren Verteilung verändern; konkrete spätere Ergebnisse sind nicht belegt.",
+            "planet": "Infrastruktur-, Digital- und Wohnraumförderung könnten Ressourcen und Emissionen beeinflussen; der Quellenbestand belegt dazu keine konkreten Umweltwirkungen.",
+            "democracy": "Der Haushaltsentwurf schafft einen parlamentarisch kontrollierbaren Priorisierungsgegenstand; mögliche Effekte auf Vertrauen und institutionelle Leistungsfähigkeit bleiben offen."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Mittel, Kredite und Stellen werden im Entwurf auf Bildung, Infrastruktur, Sicherheit, Digitalisierung und Verwaltung verteilt.",
+          "second_order": "Diese Verteilung könnte öffentliche Leistungen und kommunale Spielräume verändern, sofern der Entwurf beschlossen und organisatorisch umgesetzt wird.",
+          "third_order": "Über mehrere Jahre könnte ein Rückkopplungseffekt zwischen Investitionen, Einnahmen, Schuldendienst und demokratischer Korrekturfähigkeit entstehen; dessen Richtung ist offen.",
+          "enablement": [
+            "enables_legislation",
+            "enables_budget_control",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Der Entwurf ist noch nicht parlamentarisch beschlossen.",
+            "Zusätzliche Bildungs- und kommunale Mittel können Belastungen teilweise auffangen.",
+            "Die Quelle belegt keine eingetretenen Folgen und keine unabhängige Wirkungsstudie."
+          ],
+          "source_independence": "Alle verwendeten Belege stammen aus einer hessenschau-Veröffentlichung beziehungsweise derselben publizistischen Herkunft; unabhängige Bestätigung liegt nicht vor.",
+          "institutional_status": "Es handelt sich um einen Haushaltsentwurf des Landes Hessen; endgültige parlamentarische Verabschiedung und Umsetzung sind nicht belegt."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt die geplanten Mittel und Stellen, nicht deren Wirkung auf Bildungszugang, Arbeitsbelastung oder kommunale Leistungen. Die Richtung bleibt deshalb an Beschluss, Umsetzung und Kapazitäten gebunden.",
+            "reviewed_source_ids": [
+              "hr-hessenschau"
+            ],
+            "rationale": "Ein positiver Bildungspfad und ein möglicher Belastungspfad für Verwaltung und künftige Haushalte sind materiell vergleichbar, aber nicht als eingetretene Wirkungen belegt.",
+            "primary_paths": [
+              {
+                "label": "Zusätzliche Bildungs- und kommunale Mittel könnten öffentliche Leistungen stabilisieren oder erweitern",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Mehr geplante Mittel und zusätzliche Lehrerstellen könnten Kapazitäten für Schulen und kommunale Aufgaben erhöhen.",
+                "recipients": [
+                  "Schülerinnen und Schüler",
+                  "Lehrkräfte",
+                  "Kommunen",
+                  "Nutzerinnen und Nutzer öffentlicher Leistungen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Reichweite ist landesweit angelegt, die tatsächliche Intensität hängt aber von Umsetzung und Mittelverwendung ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Der Entwurf betrifft Schulen und Kommunen im gesamten Land.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle nennt zusätzliche Mittel, aber keine konkrete Leistungsverbesserung.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Bildungs- und Infrastrukturmittel können über mehrere Haushaltsjahre nachwirken.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Haushaltsprioritäten und Personalentscheidungen bleiben grundsätzlich korrigierbar.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Schülerinnen, Schüler und finanzschwache Kommunen sind stärker von öffentlichen Leistungen abhängig.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht von Budgetentscheidungen zu institutionellen Leistungen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle belegt keine konkrete Verletzung einer Schutzgrenze; der Pfad bleibt eine bedingte Leistungsverbesserung.",
+                  "reference_frame": "Zugang und Qualität öffentlicher Bildungs- und Verwaltungsleistungen",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Der Landtag muss die Mittel bestätigen, und Schulen sowie Kommunen müssen sie wirksam einsetzen können.",
+                "reference_space": "Land Hessen und seine Kommunen im Vergleich zum bisherigen Haushaltsrahmen",
+                "time_horizon": "Haushaltsjahr 2027 und folgende Jahre",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Geplante Mittel werden bereitgestellt und erreichen die vorgesehenen Einrichtungen.",
+                "source_support": "Die Quelle belegt Planwerte, zusätzliche Lehrerstellen und kommunale Transfers, nicht die spätere Leistungswirkung.",
+                "limitations": "Keine Ergebnisdaten, keine unabhängige Evaluation und keine Angaben zur tatsächlichen Mittelverwendung.",
+                "first_order": "Öffentliche Einrichtungen könnten mehr finanzielle und personelle Ressourcen erhalten.",
+                "second_order": "Das könnte Zugang und Angebotsumfang verbessern, sofern Personal und Umsetzungskapazitäten ausreichen.",
+                "third_order": "Stabilere Leistungen könnten langfristig soziale Teilhabe unterstützen; dieser Pfad ist nicht gemessen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine Wirkungsdaten im gelieferten Quellenbestand; Wirkungsrichtung und Eintritt bleiben bedingt.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 14,
+                  "divisor": 6,
+                  "raw": 2.3333333333333335,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Positive Bildungs- und kommunale Kapazität steht einem möglichen Verwaltungs- und Finanzdruck gegenüber; beide Pfade sind ex ante und nicht gemessen."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Zusätzliche Bildungs- und kommunale Mittel könnten öffentliche Leistungen stabilisieren oder erweitern",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzliche Bildungs- und kommunale Mittel könnten öffentliche Leistungen stabilisieren oder erweitern",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "not_assessable",
+            "likelihood": "unknown",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt Infrastruktur-, Wohnraum- und Digitalausgaben, belegt aber weder Emissionsänderungen noch Ressourcenverbrauch oder ökologische Schutzgrenzen.",
+            "reviewed_source_ids": [
+              "hr-hessenschau"
+            ],
+            "rationale": "Ein möglicher Umweltpfad ist aus Investitionen ableitbar, seine Richtung bleibt wegen fehlender Projekt- und Emissionsdaten offen.",
+            "primary_paths": [
+              {
+                "label": "Infrastruktur- und Digitalinvestitionen könnten den Ressourcen- und Emissionspfad verändern",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Geplante Ausgaben für Straßenbau, Wohnraumförderung, Breitband und Mobilfunk könnten Bau, Verkehr und digitale Nutzung beeinflussen.",
+                "recipients": [
+                  "Bevölkerung in Hessen",
+                  "Kommunen",
+                  "Umwelt und Ressourcen"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Haushalt nennt Bereiche, aber keine konkreten Projekte, Mengen oder Umweltkennzahlen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Mehrere Investitionsfelder können landesweit wirken.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Konkrete Umweltintensität der Vorhaben ist nicht ausgewiesen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Bauwerke und digitale Infrastruktur können längerfristige Pfade prägen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Viele Haushalts- und Infrastrukturentscheidungen bleiben politisch veränderbar.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Umwelt- und Gesundheitsfolgen könnten vulnerable Gruppen unterschiedlich treffen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad kann Investitionen mit Verkehr, Wohnen und Ressourcen verbinden.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Es ist keine konkrete ökologische Grenzverletzung oder Entlastung belegt.",
+                  "reference_frame": "ökologische Belastbarkeit und Ressourcenverbrauch",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "unknown",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Konkrete Vorhaben müssen beschlossen, finanziert und mit Umweltwirkungen umgesetzt werden.",
+                "reference_space": "Hessen, insbesondere Verkehr, Wohnen und digitale Infrastruktur",
+                "time_horizon": "ab 2027 und über die Nutzungsdauer der Investitionen",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die genannten Investitionsfelder werden in materiell relevanter Größenordnung umgesetzt.",
+                "source_support": "Die Quelle belegt Haushaltsansätze und Schwerpunktbereiche, nicht deren ökologische Folgen.",
+                "limitations": "Keine Emissions-, Flächen-, Energie- oder Ressourcenbilanz; Richtung und Eintritt sind offen.",
+                "first_order": "Investitionen könnten Bau- und Nutzungsaktivitäten in mehreren Sektoren verändern.",
+                "second_order": "Je nach Ausgestaltung könnten Verkehr, Energieverbrauch oder digitale Zugänge steigen oder effizienter werden.",
+                "third_order": "Gekoppelte Umwelt- und Gesundheitsfolgen sind ohne Projekt- und Basisdaten nicht bestimmbar.",
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Prüfung der gelieferten Quelle ergab keine belastbaren Umweltkennzahlen; der Pfad bleibt offen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Infrastruktur- und Digitalinvestitionen könnten den Ressourcen- und Emissionspfad verändern",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Infrastruktur- und Digitalinvestitionen könnten den Ressourcen- und Emissionspfad verändern",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "nicht belastbar bestimmt",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt einen Haushaltsentwurf und zugeschriebene ministerielle Begründungen, aber keine späteren Veränderungen bei Beteiligung, Vertrauen oder institutioneller Kontrolle.",
+            "reviewed_source_ids": [
+              "hr-hessenschau"
+            ],
+            "rationale": "Der Entwurf stärkt parlamentarische Priorisierung und Rechenschaft, könnte bei spürbaren Verteilungskonflikten aber politischen Druck und Vertrauensrisiken erzeugen.",
+            "primary_paths": [
+              {
+                "label": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungs- und Kontrollgegenstand",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Offengelegte Planwerte zu Schulden, Ausgaben, Personal und Transfers ermöglichen Debatte, Änderung und spätere Kontrolle.",
+                "recipients": [
+                  "Landtag",
+                  "Kommunen",
+                  "Bürgerinnen und Bürger",
+                  "Landesverwaltung"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Der institutionelle Gegenstand ist landesweit relevant, seine demokratische Wirkung hängt von Verfahren und Transparenz ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Der Landeshaushalt betrifft viele öffentliche Aufgaben und Ebenen.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Quelle beschreibt Prioritäten, aber keine konkrete Verfahrensänderung.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Haushaltsentscheidungen strukturieren Kontrolle und Prioritäten über ein Haushaltsjahr hinaus.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Parlamentarische Änderungen und spätere Haushalte können den Kurs korrigieren.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene mit hoher Abhängigkeit von staatlichen Leistungen tragen Verteilungsentscheidungen stärker.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad verbindet Budgetkontrolle mit institutioneller Leistungsfähigkeit.",
+                    "source_ids": [
+                      "hr-hessenschau"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt oder als gefährdet belegt.",
+                  "reference_frame": "parlamentarische Haushaltskontrolle und Rechenschaft",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "condition": "Der Entwurf muss parlamentarisch beraten, verändert oder beschlossen und öffentlich nachvollziehbar umgesetzt werden.",
+                "reference_space": "Landtag Hessen und kommunale Haushaltsbeziehungen",
+                "time_horizon": "Beratung 2026/2027 und nachfolgende Haushaltsjahre",
+                "path_quality": [
+                  "direct",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Haushaltsberatung und öffentliche Kontrolle bleiben wirksam zugänglich.",
+                "source_support": "Die Quelle belegt den Entwurf, seine Prioritäten und ministerielle Erläuterungen, nicht die Qualität des parlamentarischen Verfahrens.",
+                "limitations": "Keine Daten zu Beteiligung, Vertrauen, Transparenz oder tatsächlicher Korrektur im Verfahren.",
+                "first_order": "Parlament und Öffentlichkeit erhalten einen konkreten Gegenstand für Priorisierungs- und Verteilungsdebatten.",
+                "second_order": "Die Nachvollziehbarkeit von Schulden, Investitionen und Einsparungen könnte Rechenschaft stärken oder bei Umsetzungskonflikten Vertrauen belasten.",
+                "third_order": "Wiederkehrende Zielkonflikte zwischen Investitionen und Sparzwang könnten die politische Korrekturfähigkeit prägen; die Richtung bleibt offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine unabhängigen Daten zur demokratischen Wirkung im gelieferten Bestand; nur der institutionelle Budgetmechanismus ist quellengebunden modellierbar.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": {
+              "comparable_material_paths": false,
+              "protection_boundary_decisive": false,
+              "rationale": "Mehr parlamentarische Nachvollziehbarkeit und mögliche Verteilungskonflikte sind vergleichbare, aber nicht eingetretene Pfade."
+            },
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungs- und Kontrollgegenstand",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungs- und Kontrollgegenstand",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T15:39:10.024Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "hr-hessenschau",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Bericht über Planwerte, Schulden, Einnahmen, Ausgaben, Personal, Bildungsprioritäten und kommunale Mittel sowie über zugeschriebene Aussagen des Finanzministers."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt die geplanten Mittel und Stellen, nicht deren Wirkung auf Bildungszugang, Arbeitsbelastung oder kommunale Leistungen. Die Richtung bleibt deshalb an Beschluss, Umsetzung und Kapazitäten gebunden.",
+          "reviewed_source_ids": [
+            "hr-hessenschau"
+          ],
+          "rationale": "Ein positiver Bildungspfad und ein möglicher Belastungspfad für Verwaltung und künftige Haushalte sind materiell vergleichbar, aber nicht als eingetretene Wirkungen belegt.",
+          "primary_paths": [
+            {
+              "label": "Zusätzliche Bildungs- und kommunale Mittel könnten öffentliche Leistungen stabilisieren oder erweitern",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Mehr geplante Mittel und zusätzliche Lehrerstellen könnten Kapazitäten für Schulen und kommunale Aufgaben erhöhen.",
+              "recipients": [
+                "Schülerinnen und Schüler",
+                "Lehrkräfte",
+                "Kommunen",
+                "Nutzerinnen und Nutzer öffentlicher Leistungen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Reichweite ist landesweit angelegt, die tatsächliche Intensität hängt aber von Umsetzung und Mittelverwendung ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Der Entwurf betrifft Schulen und Kommunen im gesamten Land.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle nennt zusätzliche Mittel, aber keine konkrete Leistungsverbesserung.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Bildungs- und Infrastrukturmittel können über mehrere Haushaltsjahre nachwirken.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Haushaltsprioritäten und Personalentscheidungen bleiben grundsätzlich korrigierbar.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Schülerinnen, Schüler und finanzschwache Kommunen sind stärker von öffentlichen Leistungen abhängig.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht von Budgetentscheidungen zu institutionellen Leistungen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle belegt keine konkrete Verletzung einer Schutzgrenze; der Pfad bleibt eine bedingte Leistungsverbesserung.",
+                "reference_frame": "Zugang und Qualität öffentlicher Bildungs- und Verwaltungsleistungen",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Der Landtag muss die Mittel bestätigen, und Schulen sowie Kommunen müssen sie wirksam einsetzen können.",
+              "reference_space": "Land Hessen und seine Kommunen im Vergleich zum bisherigen Haushaltsrahmen",
+              "time_horizon": "Haushaltsjahr 2027 und folgende Jahre",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Geplante Mittel werden bereitgestellt und erreichen die vorgesehenen Einrichtungen.",
+              "source_support": "Die Quelle belegt Planwerte, zusätzliche Lehrerstellen und kommunale Transfers, nicht die spätere Leistungswirkung.",
+              "limitations": "Keine Ergebnisdaten, keine unabhängige Evaluation und keine Angaben zur tatsächlichen Mittelverwendung.",
+              "first_order": "Öffentliche Einrichtungen könnten mehr finanzielle und personelle Ressourcen erhalten.",
+              "second_order": "Das könnte Zugang und Angebotsumfang verbessern, sofern Personal und Umsetzungskapazitäten ausreichen.",
+              "third_order": "Stabilere Leistungen könnten langfristig soziale Teilhabe unterstützen; dieser Pfad ist nicht gemessen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine Wirkungsdaten im gelieferten Quellenbestand; Wirkungsrichtung und Eintritt bleiben bedingt.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 14,
+                "divisor": 6,
+                "raw": 2.3333333333333335,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Positive Bildungs- und kommunale Kapazität steht einem möglichen Verwaltungs- und Finanzdruck gegenüber; beide Pfade sind ex ante und nicht gemessen."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Zusätzliche Bildungs- und kommunale Mittel könnten öffentliche Leistungen stabilisieren oder erweitern",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Zusätzliche Bildungs- und kommunale Mittel könnten öffentliche Leistungen stabilisieren oder erweitern",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "not_assessable",
+          "likelihood": "unknown",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt Infrastruktur-, Wohnraum- und Digitalausgaben, belegt aber weder Emissionsänderungen noch Ressourcenverbrauch oder ökologische Schutzgrenzen.",
+          "reviewed_source_ids": [
+            "hr-hessenschau"
+          ],
+          "rationale": "Ein möglicher Umweltpfad ist aus Investitionen ableitbar, seine Richtung bleibt wegen fehlender Projekt- und Emissionsdaten offen.",
+          "primary_paths": [
+            {
+              "label": "Infrastruktur- und Digitalinvestitionen könnten den Ressourcen- und Emissionspfad verändern",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Geplante Ausgaben für Straßenbau, Wohnraumförderung, Breitband und Mobilfunk könnten Bau, Verkehr und digitale Nutzung beeinflussen.",
+              "recipients": [
+                "Bevölkerung in Hessen",
+                "Kommunen",
+                "Umwelt und Ressourcen"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Haushalt nennt Bereiche, aber keine konkreten Projekte, Mengen oder Umweltkennzahlen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Mehrere Investitionsfelder können landesweit wirken.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Konkrete Umweltintensität der Vorhaben ist nicht ausgewiesen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Bauwerke und digitale Infrastruktur können längerfristige Pfade prägen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Viele Haushalts- und Infrastrukturentscheidungen bleiben politisch veränderbar.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Umwelt- und Gesundheitsfolgen könnten vulnerable Gruppen unterschiedlich treffen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad kann Investitionen mit Verkehr, Wohnen und Ressourcen verbinden.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Es ist keine konkrete ökologische Grenzverletzung oder Entlastung belegt.",
+                "reference_frame": "ökologische Belastbarkeit und Ressourcenverbrauch",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "unknown",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Konkrete Vorhaben müssen beschlossen, finanziert und mit Umweltwirkungen umgesetzt werden.",
+              "reference_space": "Hessen, insbesondere Verkehr, Wohnen und digitale Infrastruktur",
+              "time_horizon": "ab 2027 und über die Nutzungsdauer der Investitionen",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die genannten Investitionsfelder werden in materiell relevanter Größenordnung umgesetzt.",
+              "source_support": "Die Quelle belegt Haushaltsansätze und Schwerpunktbereiche, nicht deren ökologische Folgen.",
+              "limitations": "Keine Emissions-, Flächen-, Energie- oder Ressourcenbilanz; Richtung und Eintritt sind offen.",
+              "first_order": "Investitionen könnten Bau- und Nutzungsaktivitäten in mehreren Sektoren verändern.",
+              "second_order": "Je nach Ausgestaltung könnten Verkehr, Energieverbrauch oder digitale Zugänge steigen oder effizienter werden.",
+              "third_order": "Gekoppelte Umwelt- und Gesundheitsfolgen sind ohne Projekt- und Basisdaten nicht bestimmbar.",
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Prüfung der gelieferten Quelle ergab keine belastbaren Umweltkennzahlen; der Pfad bleibt offen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Infrastruktur- und Digitalinvestitionen könnten den Ressourcen- und Emissionspfad verändern",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Infrastruktur- und Digitalinvestitionen könnten den Ressourcen- und Emissionspfad verändern",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "nicht belastbar bestimmt",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt einen Haushaltsentwurf und zugeschriebene ministerielle Begründungen, aber keine späteren Veränderungen bei Beteiligung, Vertrauen oder institutioneller Kontrolle.",
+          "reviewed_source_ids": [
+            "hr-hessenschau"
+          ],
+          "rationale": "Der Entwurf stärkt parlamentarische Priorisierung und Rechenschaft, könnte bei spürbaren Verteilungskonflikten aber politischen Druck und Vertrauensrisiken erzeugen.",
+          "primary_paths": [
+            {
+              "label": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungs- und Kontrollgegenstand",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Offengelegte Planwerte zu Schulden, Ausgaben, Personal und Transfers ermöglichen Debatte, Änderung und spätere Kontrolle.",
+              "recipients": [
+                "Landtag",
+                "Kommunen",
+                "Bürgerinnen und Bürger",
+                "Landesverwaltung"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Der institutionelle Gegenstand ist landesweit relevant, seine demokratische Wirkung hängt von Verfahren und Transparenz ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Der Landeshaushalt betrifft viele öffentliche Aufgaben und Ebenen.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Quelle beschreibt Prioritäten, aber keine konkrete Verfahrensänderung.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Haushaltsentscheidungen strukturieren Kontrolle und Prioritäten über ein Haushaltsjahr hinaus.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Parlamentarische Änderungen und spätere Haushalte können den Kurs korrigieren.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene mit hoher Abhängigkeit von staatlichen Leistungen tragen Verteilungsentscheidungen stärker.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad verbindet Budgetkontrolle mit institutioneller Leistungsfähigkeit.",
+                  "source_ids": [
+                    "hr-hessenschau"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt oder als gefährdet belegt.",
+                "reference_frame": "parlamentarische Haushaltskontrolle und Rechenschaft",
+                "source_ids": [
+                  "hr-hessenschau"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "hr-hessenschau"
+              ],
+              "condition": "Der Entwurf muss parlamentarisch beraten, verändert oder beschlossen und öffentlich nachvollziehbar umgesetzt werden.",
+              "reference_space": "Landtag Hessen und kommunale Haushaltsbeziehungen",
+              "time_horizon": "Beratung 2026/2027 und nachfolgende Haushaltsjahre",
+              "path_quality": [
+                "direct",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Haushaltsberatung und öffentliche Kontrolle bleiben wirksam zugänglich.",
+              "source_support": "Die Quelle belegt den Entwurf, seine Prioritäten und ministerielle Erläuterungen, nicht die Qualität des parlamentarischen Verfahrens.",
+              "limitations": "Keine Daten zu Beteiligung, Vertrauen, Transparenz oder tatsächlicher Korrektur im Verfahren.",
+              "first_order": "Parlament und Öffentlichkeit erhalten einen konkreten Gegenstand für Priorisierungs- und Verteilungsdebatten.",
+              "second_order": "Die Nachvollziehbarkeit von Schulden, Investitionen und Einsparungen könnte Rechenschaft stärken oder bei Umsetzungskonflikten Vertrauen belasten.",
+              "third_order": "Wiederkehrende Zielkonflikte zwischen Investitionen und Sparzwang könnten die politische Korrekturfähigkeit prägen; die Richtung bleibt offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine unabhängigen Daten zur demokratischen Wirkung im gelieferten Bestand; nur der institutionelle Budgetmechanismus ist quellengebunden modellierbar.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": {
+            "comparable_material_paths": false,
+            "protection_boundary_decisive": false,
+            "rationale": "Mehr parlamentarische Nachvollziehbarkeit und mögliche Verteilungskonflikte sind vergleichbare, aber nicht eingetretene Pfade."
+          },
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungs- und Kontrollgegenstand",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungs- und Kontrollgegenstand",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T15:37:36.559Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T08:53:52.000Z",
+      "last_updated": "2026-09-16T15:39:10.019Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-0f868cd427ea8e3f5ff8",
+      "case_file": null,
+      "source_published_at": "2026-09-16T08:53:52.000Z",
+      "published_at": "2026-09-16T09:24:18.929Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "hr-hessenschau",
+              "hr-hessenschau"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, ob der Haushaltsentwurf in den Landtag eingebracht und im weiteren Verfahren verabschiedet wird.",
+          "source_id": "hr-hessenschau",
+          "measurable_indicator": "Einbringung des Haushaltsentwurfs in den Landtag und anschließende Verabschiedung",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bdbe70149e061506",
+          "announced_at": "2026-09-16T08:53:52.000Z",
+          "follow_up_date": "2026-09-23T09:24:18.929Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob der Haushaltsentwurf unverändert verabschiedet wird und wie sich die vorgesehenen Stellen- und Bildungsmaßnahmen tatsächlich entwickeln, ist im weiteren parlamentarischen Verfahren zu prüfen.",
+          "source_id": "hr-hessenschau",
+          "measurable_indicator": "Verabschiedeter Landeshaushalt, tatsächliche Beschäftigtenzahl und realisierte Bildungsausgaben",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-575303e0b4687db9",
+          "announced_at": "2026-09-16T08:53:52.000Z",
+          "follow_up_date": "2026-09-23T15:39:10.019Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/hessen-plant-17-milliarden-euro-neue-schulden---rekordetat-fuer-schulen-v1,landeshaushalt-2027-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T08:53:52.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/hessen-plant-17-milliarden-euro-neue-schulden---rekordetat-fuer-schulen-v2,landeshaushalt-2027-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T10:51:05.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/hessen-plant-17-milliarden-euro-neue-schulden---rekordetat-fuer-schulen-v3,landeshaushalt-2027-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T12:56:17.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-53ce09a75455bdf7",
       "title_image": {
@@ -16494,1469 +17584,6 @@
           "url": "https://www.lto.de/recht/hintergruende/h/bnd-verfassungsschutz-ueberwachung-reform-nachrichtendienste-telekommunikation-kontrolle-ki?r=rss",
           "source_type": "media_rss",
           "published_at": "2026-09-16T09:15:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-068fa5f5aba8a416",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-068fa5f5aba8a416-a3456f775982fc01-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-068fa5f5aba8a416-00b1077489cdf3d1-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-068fa5f5aba8a416-3affe508e0fa49f5-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "hessen-plant-1-7-milliarden-euro-neue-schulden-rekordetat-fur-schulen-a8a416",
-      "title": "Hessen plant für 2027 neue Schulden und Rekordausgaben für Schulen",
-      "source_summary": "Die hessenschau berichtet über den Haushaltsentwurf des Landes für 2027. Vorgesehen sind 39,3 Milliarden Euro Einnahmen und 41,6 Milliarden Euro Ausgaben; das entstehende Finanzloch soll durch Rücklagen und Kredite geschlossen werden. Geplant sind 1,7 Milliarden Euro neue Schulden.\n\nEin Schwerpunkt liegt mit 6,5 Milliarden Euro auf den Schulen. Zugleich sollen rund 50 Verwaltungsstellen wegfallen, während zusätzliche Lehrerstellen vorgesehen sind. Finanzminister Alexander Lorz begründet den Entwurf mit schwachen Steuereinnahmen, gestiegenen Zinsen und anhaltendem Spardruck. Die parlamentarische Beratung und der endgültige Beschluss stehen noch aus.",
-      "summary": "Hessen plant für 2027 neue Schulden und zugleich Rekordausgaben für Schulen. Der Entwurf setzt Prioritäten, ist aber noch nicht parlamentarisch beschlossen.",
-      "detail_summary": "Hessen will 2027 trotz Sparzwangs investieren und dafür 1,7 Milliarden Euro neue Schulden aufnehmen. Für Schulen sind 6,5 Milliarden Euro vorgesehen, über 300 Millionen Euro mehr als 2026. Zugleich sollen rund 50 Verwaltungsstellen wegfallen, während zusätzliche Lehrerstellen geplant sind. Der Entwurf steht damit für eine Verschiebung innerhalb begrenzter finanzieller Spielräume. Möglich wären kurzfristig bessere Voraussetzungen für Bildungsangebote, wenn die zusätzlichen Mittel umgesetzt werden. Offen bleibt, welche Ausgaben dauerhaft finanzierbar sind und wie der Landtag den Entwurf verändert.",
-      "why_relevant": "Der Entwurf verbindet eine hohe Kreditaufnahme mit einer Schwerpunktsetzung bei Bildung und legt damit finanzielle Prioritäten des Landes offen.",
-      "topic": [
-        "Europa",
-        "Finanzen"
-      ],
-      "status": "Entwurf",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "impact_assessment": {
-        "version": "2.1",
-        "semantics_revision": "all-dimensions-1",
-        "news_event": "Hessischer Haushaltsentwurf für 2027 mit geplanter Kreditaufnahme und Bildungspriorität",
-        "evaluation_target": {
-          "label": "Haushaltsentwurf des Landes Hessen für 2027",
-          "type": "proposal"
-        },
-        "baseline": "Bisherige Haushaltsplanung und staatliche Aufgabenwahrnehmung vor dem Entwurf für 2027",
-        "counterfactual": "Ohne den Entwurf würden Prioritäten, Kreditaufnahme und Ausgaben für Schulen im weiteren Haushaltsverfahren anders festgelegt oder fortgeschrieben.",
-        "reference_frame": [
-          "öffentliche Daseinsvorsorge",
-          "Haushalts- und Budgetkontrolle",
-          "SDG 4 hochwertige Bildung"
-        ],
-        "temporal_status": "ex_ante",
-        "systemic_relevance": "high",
-        "system_check": {
-          "cross_dimension_review": {
-            "human": "Zusätzliche Mittel könnten Schulen und Lehrkräfte unterstützen; mögliche Verteilungskonflikte und dauerhafte Kosten bleiben offen.",
-            "planet": "Die Quelle nennt keine konkreten Klima- oder Umweltziele des Entwurfs. Bau-, Verkehrs- oder Digitalausgaben könnten ökologische Folgen haben, sind hier aber nicht ausreichend belegt.",
-            "democracy": "Der Entwurf legt politische Prioritäten offen und wird parlamentarisch beraten. Langfristiger Schuldendruck könnte spätere Budgetentscheidungen beeinflussen, bleibt aber eine bedingte Möglichkeit."
-          },
-          "central_dimensions": [
-            "human",
-            "democracy"
-          ],
-          "first_order": "Der Entwurf verteilt zusätzliche Mittel auf Schulen und ermöglicht Ausgaben trotz eines Finanzlochs.",
-          "second_order": "Die Priorisierung könnte die Verteilung zwischen Ressorts und die künftige Haushaltsplanung beeinflussen.",
-          "third_order": "Wiederholte finanzielle Bindungen könnten die spätere politische Korrekturfähigkeit verändern; Umfang und Eintritt sind offen.",
-          "enablement": [
-            "enables_budget_control",
-            "enables_legislation"
-          ],
-          "counter_evidence": [
-            "Der Entwurf ist noch nicht beschlossen und kann im Landtag verändert werden.",
-            "Die Quelle belegt weder konkrete Bildungsergebnisse noch ökologische oder demokratische Folgewirkungen.",
-            "Die angekündigte Begrenzung von Ausgaben und der Abbau von Verwaltungsstellen können gegen eine dauerhafte Ausweitung sprechen."
-          ],
-          "source_independence": "Es liegt eine journalistische Quelle mit nicht verifizierter unabhängiger Quellenbasis vor. Aussagen des Finanzministers und redaktionelle Angaben sind zu trennen; eine zweite unabhängige Darstellung fehlt.",
-          "institutional_status": "Es handelt sich um einen Haushaltsentwurf. Die Quelle stellt die Einbringung im September und eine Verabschiedung noch im selben Jahr in Aussicht; ein endgültiger Beschluss ist nicht belegt."
-        },
-        "dimensions": {
-          "human": {
-            "path_status": "modelled",
-            "direction": "positive",
-            "dominance": "dominant_positive",
-            "magnitude": 3,
-            "evidence": "low",
-            "likelihood": "medium",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quelle belegt zusätzliche geplante Bildungs- und Lehrerstellen, aber keine tatsächlichen Verbesserungen für Schülerinnen, Schüler oder Beschäftigte. Reichweite und Dauer der möglichen Wirkung hängen von Beschluss und Umsetzung ab.",
-            "reviewed_source_ids": [
-              "hr-hessenschau"
-            ],
-            "rationale": "Der stärkste bedingte Pfad führt über zusätzliche Bildungsressourcen zu möglichen Verbesserungen staatlicher Angebote. Gegenläufig könnten Kredit-, Personal- und Verteilungskosten andere Leistungen begrenzen; konkrete Betroffenenzahlen fehlen.",
-            "primary_paths": [
-              {
-                "label": "Zusätzliche Bildungsressourcen könnten Schulen und Lernende unterstützen",
-                "direction": "positive",
-                "type": "main_path",
-                "mechanism": "Mehr geplante Mittel und zusätzliche Lehrerstellen könnten die personelle und sachliche Ausstattung von Schulen erhöhen.",
-                "recipients": [
-                  "Schülerinnen und Schüler",
-                  "Lehrkräfte",
-                  "Schulen"
-                ],
-                "magnitude": 3,
-                "magnitude_range": {
-                  "lower": 2,
-                  "upper": 4,
-                  "rationale": "Die Bildungspriorität ist konkret beziffert, ihre Reichweite und tatsächliche Umsetzung sind jedoch offen."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 4,
-                    "rationale": "Schulausgaben betreffen grundsätzlich viele Lernende und Schulen.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 3,
-                    "rationale": "Zusätzliche Mittel und Stellen könnten die Ausstattung spürbar verändern.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "duration": {
-                    "value": 3,
-                    "rationale": "Bildungs- und Personalentscheidungen könnten über ein Haushaltsjahr hinaus wirken.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 2,
-                    "rationale": "Haushalts- und Stellenentscheidungen wären grundsätzlich politisch korrigierbar.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 3,
-                    "rationale": "Lernende mit Unterstützungsbedarf könnten von zusätzlichen Angeboten besonders abhängen.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 3,
-                    "rationale": "Bildungsausgaben greifen in öffentliche Infrastruktur und Chancenverteilung ein.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Die Quelle belegt keine konkrete Verletzung oder Sicherung einer Schutzgrenze.",
-                  "reference_frame": "Zugang zu öffentlicher Bildung",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "hr-hessenschau"
-                ],
-                "condition": "Der Landtag muss die Mittel bestätigen und die zusätzlichen Stellen sowie Bildungsangebote müssen tatsächlich umgesetzt werden.",
-                "reference_space": "Schulen und Bildungsverwaltung in Hessen",
-                "time_horizon": "Haushaltsjahr 2027 und mögliche Folgejahre",
-                "path_quality": [
-                  "direct",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "supported_mechanism",
-                "assumptions": "Geplante Mittel werden entsprechend dem Entwurf eingesetzt und erreichen Schulen.",
-                "source_support": "Die Quelle belegt die geplanten 6,5 Milliarden Euro für Schulen, zusätzliche Lehrerstellen und ein Bildungspaket; sie belegt keine Wirkung auf Lernergebnisse.",
-                "limitations": "Keine Umsetzungsdaten, keine Vergleichswerte zu Schulen und keine unabhängige Wirkungsstudie.",
-                "first_order": "Schulen könnten zusätzliche Mittel, Stunden oder Lehrkräfte erhalten.",
-                "second_order": "Die Ausstattung und Arbeitsorganisation könnten sich verändern, sofern die Maßnahmen umgesetzt werden.",
-                "third_order": "Langfristig könnten sich Bildungschancen und Erwartungen an staatliche Leistungen verschieben; das bleibt offen.",
-                "research_pass": "second_pass",
-                "research_result": "Keine belastbare Messung späterer Bildungswirkungen in der gelieferten Quelle.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 18,
-                  "divisor": 6,
-                  "raw": 3,
-                  "rounded": 3,
-                  "protection_floor": 0,
-                  "final": 3
-                }
-              }
-            ],
-            "secondary_paths": [
-              {
-                "label": "Kredit- und Personalkosten könnten andere öffentliche Leistungen begrenzen",
-                "direction": "negative",
-                "type": "side_risk",
-                "mechanism": "Zusätzliche Schulden sowie steigende Personal- und Zinskosten könnten spätere Ausgabenspielräume einengen.",
-                "recipients": [
-                  "Nutzerinnen und Nutzer öffentlicher Leistungen",
-                  "Landesressorts"
-                ],
-                "magnitude": 3,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Die Kostenbelastung ist belegt, die spätere Verteilung auf Leistungen aber nicht."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 3,
-                    "rationale": "Haushaltsentscheidungen können mehrere Ressorts und Bevölkerungsgruppen betreffen.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Die Quelle nennt Belastungen, aber keine konkrete Kürzung anderer Leistungen.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "duration": {
-                    "value": 3,
-                    "rationale": "Zinsen und Personalaufwand können über mehrere Haushaltsjahre fortwirken.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 2,
-                    "rationale": "Künftige Parlamente können Prioritäten und Finanzierung grundsätzlich ändern.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 3,
-                    "rationale": "Abhängige Nutzergruppen könnten bei späteren Einsparungen stärker betroffen sein.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 3,
-                    "rationale": "Der Pfad betrifft die wiederkehrende Steuerung öffentlicher Haushalte.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete materielle Schutzgrenze ist nicht belegt.",
-                  "reference_frame": "Zugang zu öffentlichen Leistungen",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "hr-hessenschau"
-                ],
-                "condition": "Die geplante Kreditaufnahme und die genannten Kosten müssen bestehen bleiben und zu späteren Priorisierungskonflikten führen.",
-                "reference_space": "Landeshaushalt Hessen",
-                "time_horizon": "Mittelfristig nach 2027",
-                "path_quality": [
-                  "indirect",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Kredit- und Personalkosten begrenzen tatsächlich spätere Haushaltsentscheidungen.",
-                "source_support": "Die Quelle nennt 1,7 Milliarden Euro neue Schulden, gestiegene Zinsen und 340 Millionen Euro zusätzliche Personalkosten.",
-                "limitations": "Keine Projektion zur Schuldentragfähigkeit und keine Angaben zu späteren Kürzungen.",
-                "first_order": "Der Haushalt finanziert zusätzliche Ausgaben über Kredite und Rücklagen.",
-                "second_order": "Spätere Haushalte könnten stärker zwischen Aufgaben abwägen müssen.",
-                "third_order": "Die politische Fähigkeit zur Ausweitung anderer Leistungen könnte sinken; dies ist nicht nachgewiesen.",
-                "research_pass": "second_pass",
-                "research_result": "Die Quelle enthält keine mittelfristige Finanzprojektion und keine belastbare Aussage zu späteren Leistungskürzungen.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 16,
-                  "divisor": 6,
-                  "raw": 2.6666666666666665,
-                  "rounded": 3,
-                  "protection_floor": 0,
-                  "final": 3
-                }
-              }
-            ],
-            "balance": null,
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 3,
-              "directionLabel": "+ Potenzial",
-              "shortPathLabel": "Zusätzliche Bildungsressourcen könnten Schulen und Lernende unterstützen",
-              "direction": "positive"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 3,
-            "directionLabel": "+ Potenzial",
-            "shortPathLabel": "Zusätzliche Bildungsressourcen könnten Schulen und Lernende unterstützen",
-            "display_direction": "positive",
-            "label": "+ Potenzial",
-            "magnitude_label": "deutlich",
-            "evidence_label": "gering",
-            "likelihood_label": "mittel",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "+ Potenzial"
-          },
-          "planet": {
-            "path_status": "modelled",
-            "direction": "open",
-            "dominance": "none",
-            "magnitude": 2,
-            "evidence": "not_assessable",
-            "likelihood": "unknown",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quelle nennt Infrastruktur-, Wohn-, Verkehrs- und Digitalausgaben, aber keine Umweltziele, Emissionsdaten oder Projektwirkungen. Eine belastbare Richtung ist deshalb nicht ableitbar.",
-            "reviewed_source_ids": [
-              "hr-hessenschau"
-            ],
-            "rationale": "Ein ökologischer Wirkpfad ist über geplante Infrastruktur- und Verkehrsausgaben denkbar, bleibt wegen fehlender Projekt- und Umweltdaten aber offen.",
-            "primary_paths": [
-              {
-                "label": "Geplante Infrastruktur- und Verkehrsausgaben könnten ökologische Zustände verändern",
-                "direction": "open",
-                "type": "main_path",
-                "mechanism": "Ausgaben für Verkehr, Wohnen und Digitalisierung könnten Bau, Flächennutzung, Energiebedarf oder Netzinfrastruktur beeinflussen.",
-                "recipients": [
-                  "Ökosysteme",
-                  "Anwohnerinnen und Anwohner",
-                  "öffentliche Infrastruktur"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 0,
-                  "upper": 2,
-                  "rationale": "Die genannten Ausgaben sind konkret, ihre ökologische Ausgestaltung und Wirkung jedoch unbekannt."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 2,
-                    "rationale": "Infrastruktur kann regional mehrere Räume und Gruppen betreffen.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 1,
-                    "rationale": "Die Quelle beschreibt keine konkrete Umweltintensität der Vorhaben.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Gebäude und Infrastruktur können langfristige Zustände prägen.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 2,
-                    "rationale": "Flächen- und Infrastrukturentscheidungen sind teilweise schwer rückgängig zu machen.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 1,
-                    "rationale": "Ökologisch besonders verletzliche Orte werden nicht genannt.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 1,
-                    "rationale": "Eine systemische Umweltwirkung ist ohne konkrete Projekte nicht belegbar.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Keine konkrete ökologische Schutzgrenze oder Grenzüberschreitung ist in der Quelle belegt.",
-                  "reference_frame": "ökologische Belastbarkeit von Flächen und Infrastruktur",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ],
-                  "status": "not_decisive"
-                },
-                "evidence": "not_assessable",
-                "likelihood": "unknown",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "hr-hessenschau"
-                ],
-                "condition": "Es müssten konkrete Verkehrs-, Wohn- oder Infrastrukturprojekte beschlossen und mit ökologisch relevanten Eigenschaften umgesetzt werden.",
-                "reference_space": "Hessen, projektbezogen",
-                "time_horizon": "Mittelfristig nach Haushaltsbeschluss",
-                "path_quality": [
-                  "indirect",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Die genannten Ausgaben führen zu materiellen Projekten mit relevanten Umweltwirkungen.",
-                "source_support": "Die Quelle nennt 3,7 Milliarden Euro für Wirtschaft, Verkehr und Wohnen sowie Mittel für Digitalisierung; konkrete Umweltfolgen werden nicht beschrieben.",
-                "limitations": "Keine Emissions-, Flächen-, Energie- oder Biodiversitätsdaten.",
-                "first_order": "Finanzierte Projekte könnten Ressourcen- und Flächennutzung verändern.",
-                "second_order": "Verkehrs- oder Wohnstrukturen könnten Energiebedarf und lokale Belastungen beeinflussen.",
-                "third_order": "Eine überregionale ökologische Wirkung ist aus den Angaben nicht bestimmbar.",
-                "research_pass": "second_pass",
-                "research_result": "Keine konkreten Projektunterlagen oder Umweltmessungen in den gelieferten Quellen.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 9,
-                  "divisor": 6,
-                  "raw": 1.5,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": null,
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 2,
-              "directionLabel": "? Richtung offen",
-              "shortPathLabel": "Geplante Infrastruktur- und Verkehrsausgaben könnten ökologische Zustände verändern",
-              "direction": "open"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "? Richtung offen",
-            "shortPathLabel": "Geplante Infrastruktur- und Verkehrsausgaben könnten ökologische Zustände verändern",
-            "display_direction": "open",
-            "label": "? Richtung offen",
-            "magnitude_label": "begrenzt",
-            "evidence_label": "nicht bewertbar",
-            "likelihood_label": "nicht belastbar bestimmt",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "? Richtung offen"
-          },
-          "democracy": {
-            "path_status": "modelled",
-            "direction": "mixed",
-            "dominance": "balanced",
-            "magnitude": 2,
-            "evidence": "low",
-            "likelihood": "medium",
-            "data_status": "modelled",
-            "temporal_status": "ex_ante",
-            "research_pass": "second_pass",
-            "research_result": "Die Quelle belegt die angekündigte parlamentarische Beratung und politische Priorisierung, aber keine Veränderung von Beteiligung, Kontrolle oder Mehrheitsverhältnissen. Positive und negative institutionelle Pfade bleiben deshalb bedingt.",
-            "reviewed_source_ids": [
-              "hr-hessenschau"
-            ],
-            "rationale": "Der Entwurf kann parlamentarische Rechenschaft und Prioritätensetzung sichtbar machen, zugleich könnten langfristige finanzielle Bindungen spätere Handlungsspielräume begrenzen. Beide Pfade sind nicht als eingetretene Wirkung belegt.",
-            "primary_paths": [
-              {
-                "label": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungsprozess",
-                "direction": "positive",
-                "type": "main_path",
-                "mechanism": "Ein konkreter Entwurf mit benannten Einnahmen, Ausgaben und Prioritäten ermöglicht öffentliche und parlamentarische Kontrolle.",
-                "recipients": [
-                  "Landtag",
-                  "Öffentlichkeit",
-                  "Landesregierung"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Der Prozess ist institutionell konkret, seine tatsächliche Kontrollqualität bleibt offen."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 3,
-                    "rationale": "Landesweite Haushaltsentscheidungen betreffen mehrere Institutionen und Gruppen.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Der Entwurf macht Prioritäten sichtbar, verändert aber noch keine Verfahren.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "duration": {
-                    "value": 2,
-                    "rationale": "Die parlamentarische Beratung ist zeitlich begrenzt, kann aber Folgeentscheidungen prägen.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 1,
-                    "rationale": "Parlamentarische Prioritäten können in weiteren Beratungen geändert werden.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Gruppen mit hoher Abhängigkeit von Landesleistungen können mittelbar betroffen sein.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Der Pfad betrifft Budgetkontrolle, nicht die Grundstruktur demokratischer Institutionen.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete Einschränkung demokratischer Rechte ist nicht belegt.",
-                  "reference_frame": "parlamentarische Budgetkontrolle",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ],
-                  "status": "not_decisive"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "hr-hessenschau"
-                ],
-                "condition": "Der Entwurf muss transparent beraten und parlamentarisch verändert oder beschlossen werden.",
-                "reference_space": "Landtag und Öffentlichkeit in Hessen",
-                "time_horizon": "Haushaltsberatung für 2027",
-                "path_quality": [
-                  "direct",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "supported_mechanism",
-                "assumptions": "Die parlamentarische Beratung ermöglicht tatsächlich Kontrolle und öffentliche Rechenschaft.",
-                "source_support": "Die Quelle kündigt die Einbringung in den Landtag und die spätere Verabschiedung an.",
-                "limitations": "Keine Angaben zur Debatte, zu Änderungsanträgen oder zur tatsächlichen Transparenz.",
-                "first_order": "Haushaltsprioritäten werden parlamentarisch verhandelbar.",
-                "second_order": "Akteure können Verantwortung für Bildungs-, Kredit- und Sparentscheidungen zuordnen.",
-                "third_order": "Die Debatte könnte Erwartungen an künftige Landespolitik prägen, ohne Institutionen grundsätzlich zu verändern.",
-                "research_pass": "second_pass",
-                "research_result": "Keine unabhängigen Angaben zur Qualität der parlamentarischen Kontrolle oder zur öffentlichen Beteiligung.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 12,
-                  "divisor": 6,
-                  "raw": 2,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              },
-              {
-                "label": "Langfristige finanzielle Bindungen könnten spätere demokratische Spielräume einengen",
-                "direction": "negative",
-                "type": "counter_path",
-                "mechanism": "Kredite sowie steigende Zins- und Personalkosten könnten künftige Parlamente zu engeren Priorisierungen zwingen.",
-                "recipients": [
-                  "künftige Parlamente",
-                  "Landesregierung",
-                  "betroffene Leistungsbezieher"
-                ],
-                "magnitude": 2,
-                "magnitude_range": {
-                  "lower": 1,
-                  "upper": 3,
-                  "rationale": "Die Belastungen sind im Entwurf genannt, eine Einschränkung demokratischer Entscheidungen ist jedoch nur indirekt möglich."
-                },
-                "magnitude_factors": {
-                  "reach": {
-                    "value": 3,
-                    "rationale": "Künftige Haushaltsentscheidungen betreffen mehrere Ressorts und Gruppen.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "intensity": {
-                    "value": 2,
-                    "rationale": "Die Quelle belegt Kosten und Schulden, nicht den Grad späterer Einschränkungen.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "duration": {
-                    "value": 3,
-                    "rationale": "Schulden- und Personalbindungen können über mehrere Jahre wirken.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "irreversibility": {
-                    "value": 2,
-                    "rationale": "Politische Mehrheiten können Finanzierungsentscheidungen grundsätzlich korrigieren.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "vulnerability": {
-                    "value": 2,
-                    "rationale": "Besonders abhängige Gruppen könnten von engeren Budgets stärker betroffen sein.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  },
-                  "system_depth": {
-                    "value": 2,
-                    "rationale": "Der mögliche Pfad betrifft Budgetspielräume, nicht die demokratische Ordnung insgesamt.",
-                    "source_ids": [
-                      "hr-hessenschau"
-                    ]
-                  }
-                },
-                "protection_boundary": {
-                  "decisive": false,
-                  "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt oder beschrieben.",
-                  "reference_frame": "demokratische Korrekturfähigkeit durch Haushaltsentscheidungen",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ],
-                  "status": "conditional"
-                },
-                "evidence": "low",
-                "likelihood": "medium",
-                "temporal_status": "ex_ante",
-                "same_target": true,
-                "same_baseline": true,
-                "source_ids": [
-                  "hr-hessenschau"
-                ],
-                "condition": "Die geplanten finanziellen Belastungen müssen bestehen bleiben und spätere Haushalte tatsächlich dominieren.",
-                "reference_space": "Landespolitik und Haushalte in Hessen",
-                "time_horizon": "Mittelfristig nach 2027",
-                "path_quality": [
-                  "indirect",
-                  "systemic",
-                  "high_uncertainty"
-                ],
-                "epistemic_basis": "model_hypothesis",
-                "assumptions": "Finanzielle Bindungen werden zu einer relevanten Begrenzung künftiger politischer Optionen.",
-                "source_support": "Die Quelle nennt neue Schulden, höhere Zinsen, steigende Personalkosten und anhaltenden Spardruck.",
-                "limitations": "Keine Schuldenprojektion, keine Angaben zu künftigen Mehrheiten oder zu konkreten Einschränkungen.",
-                "first_order": "Künftige Haushalte müssen Kredit-, Zins- und Personalkosten berücksichtigen.",
-                "second_order": "Der politische Wettbewerb um neue Ausgaben könnte sich verschärfen.",
-                "third_order": "Die Korrekturfähigkeit könnte sinken, falls Bindungen dauerhaft werden; ein solcher Effekt ist nicht nachgewiesen.",
-                "research_pass": "second_pass",
-                "research_result": "Die gelieferte Quelle erlaubt keine belastbare Aussage über spätere demokratische Einschränkungen durch den Entwurf.",
-                "negligibility_rationale": null,
-                "observed_signal": null,
-                "magnitude_calculation": {
-                  "method_version": "2.1",
-                  "sum": 14,
-                  "divisor": 6,
-                  "raw": 2.3333333333333335,
-                  "rounded": 2,
-                  "protection_floor": 0,
-                  "final": 2
-                }
-              }
-            ],
-            "secondary_paths": [],
-            "balance": {
-              "comparable_material_paths": true,
-              "protection_boundary_decisive": false,
-              "rationale": "Der positive Kontrollpfad und der negative Spielraumpfad sind beide bedingt plausibel; keiner überschreitet eine belegte Schutzgrenze, und die Evidenz reicht nicht für eine dominante Richtung."
-            },
-            "potential_presentation": {
-              "ringStatus": "potential",
-              "ringLabel": "Potenzial",
-              "magnitudeBars": 2,
-              "directionLabel": "± gegenläufig",
-              "shortPathLabel": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungsprozess",
-              "direction": "mixed"
-            },
-            "observations": [],
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "± gegenläufig",
-            "shortPathLabel": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungsprozess",
-            "display_direction": "mixed",
-            "label": "± gegenläufig",
-            "magnitude_label": "begrenzt",
-            "evidence_label": "gering",
-            "likelihood_label": "mittel",
-            "path_status_label": "Modelliertes Wirkungspotenzial",
-            "time_label": "Ex ante",
-            "long_label": "± gegenläufig"
-          }
-        },
-        "observed_effects": [],
-        "publication_status": "ready",
-        "review": {
-          "status": "reviewed",
-          "at": "2026-09-16T09:24:18.934Z",
-          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
-        },
-        "source_functions": [
-          {
-            "source_id": "hr-hessenschau",
-            "functions": [
-              "event",
-              "mechanism"
-            ],
-            "supported_claim": "Belegt den Haushaltsentwurf, die geplante Kreditaufnahme, die Bildungs- und Verwaltungsprioritäten sowie die Begründungen des Finanzministers."
-          }
-        ],
-        "heading": "Wirkungspotenzial",
-        "potential": true,
-        "time_label": "Ex ante",
-        "relevance_label": "Hohe",
-        "show_target": true,
-        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
-      },
-      "impact_sources": [],
-      "dimensions": {
-        "human": {
-          "path_status": "modelled",
-          "direction": "positive",
-          "dominance": "dominant_positive",
-          "magnitude": 3,
-          "evidence": "low",
-          "likelihood": "medium",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quelle belegt zusätzliche geplante Bildungs- und Lehrerstellen, aber keine tatsächlichen Verbesserungen für Schülerinnen, Schüler oder Beschäftigte. Reichweite und Dauer der möglichen Wirkung hängen von Beschluss und Umsetzung ab.",
-          "reviewed_source_ids": [
-            "hr-hessenschau"
-          ],
-          "rationale": "Der stärkste bedingte Pfad führt über zusätzliche Bildungsressourcen zu möglichen Verbesserungen staatlicher Angebote. Gegenläufig könnten Kredit-, Personal- und Verteilungskosten andere Leistungen begrenzen; konkrete Betroffenenzahlen fehlen.",
-          "primary_paths": [
-            {
-              "label": "Zusätzliche Bildungsressourcen könnten Schulen und Lernende unterstützen",
-              "direction": "positive",
-              "type": "main_path",
-              "mechanism": "Mehr geplante Mittel und zusätzliche Lehrerstellen könnten die personelle und sachliche Ausstattung von Schulen erhöhen.",
-              "recipients": [
-                "Schülerinnen und Schüler",
-                "Lehrkräfte",
-                "Schulen"
-              ],
-              "magnitude": 3,
-              "magnitude_range": {
-                "lower": 2,
-                "upper": 4,
-                "rationale": "Die Bildungspriorität ist konkret beziffert, ihre Reichweite und tatsächliche Umsetzung sind jedoch offen."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 4,
-                  "rationale": "Schulausgaben betreffen grundsätzlich viele Lernende und Schulen.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "intensity": {
-                  "value": 3,
-                  "rationale": "Zusätzliche Mittel und Stellen könnten die Ausstattung spürbar verändern.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "duration": {
-                  "value": 3,
-                  "rationale": "Bildungs- und Personalentscheidungen könnten über ein Haushaltsjahr hinaus wirken.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 2,
-                  "rationale": "Haushalts- und Stellenentscheidungen wären grundsätzlich politisch korrigierbar.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 3,
-                  "rationale": "Lernende mit Unterstützungsbedarf könnten von zusätzlichen Angeboten besonders abhängen.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "system_depth": {
-                  "value": 3,
-                  "rationale": "Bildungsausgaben greifen in öffentliche Infrastruktur und Chancenverteilung ein.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Die Quelle belegt keine konkrete Verletzung oder Sicherung einer Schutzgrenze.",
-                "reference_frame": "Zugang zu öffentlicher Bildung",
-                "source_ids": [
-                  "hr-hessenschau"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "hr-hessenschau"
-              ],
-              "condition": "Der Landtag muss die Mittel bestätigen und die zusätzlichen Stellen sowie Bildungsangebote müssen tatsächlich umgesetzt werden.",
-              "reference_space": "Schulen und Bildungsverwaltung in Hessen",
-              "time_horizon": "Haushaltsjahr 2027 und mögliche Folgejahre",
-              "path_quality": [
-                "direct",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "supported_mechanism",
-              "assumptions": "Geplante Mittel werden entsprechend dem Entwurf eingesetzt und erreichen Schulen.",
-              "source_support": "Die Quelle belegt die geplanten 6,5 Milliarden Euro für Schulen, zusätzliche Lehrerstellen und ein Bildungspaket; sie belegt keine Wirkung auf Lernergebnisse.",
-              "limitations": "Keine Umsetzungsdaten, keine Vergleichswerte zu Schulen und keine unabhängige Wirkungsstudie.",
-              "first_order": "Schulen könnten zusätzliche Mittel, Stunden oder Lehrkräfte erhalten.",
-              "second_order": "Die Ausstattung und Arbeitsorganisation könnten sich verändern, sofern die Maßnahmen umgesetzt werden.",
-              "third_order": "Langfristig könnten sich Bildungschancen und Erwartungen an staatliche Leistungen verschieben; das bleibt offen.",
-              "research_pass": "second_pass",
-              "research_result": "Keine belastbare Messung späterer Bildungswirkungen in der gelieferten Quelle.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 18,
-                "divisor": 6,
-                "raw": 3,
-                "rounded": 3,
-                "protection_floor": 0,
-                "final": 3
-              }
-            }
-          ],
-          "secondary_paths": [
-            {
-              "label": "Kredit- und Personalkosten könnten andere öffentliche Leistungen begrenzen",
-              "direction": "negative",
-              "type": "side_risk",
-              "mechanism": "Zusätzliche Schulden sowie steigende Personal- und Zinskosten könnten spätere Ausgabenspielräume einengen.",
-              "recipients": [
-                "Nutzerinnen und Nutzer öffentlicher Leistungen",
-                "Landesressorts"
-              ],
-              "magnitude": 3,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Die Kostenbelastung ist belegt, die spätere Verteilung auf Leistungen aber nicht."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 3,
-                  "rationale": "Haushaltsentscheidungen können mehrere Ressorts und Bevölkerungsgruppen betreffen.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Die Quelle nennt Belastungen, aber keine konkrete Kürzung anderer Leistungen.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "duration": {
-                  "value": 3,
-                  "rationale": "Zinsen und Personalaufwand können über mehrere Haushaltsjahre fortwirken.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 2,
-                  "rationale": "Künftige Parlamente können Prioritäten und Finanzierung grundsätzlich ändern.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 3,
-                  "rationale": "Abhängige Nutzergruppen könnten bei späteren Einsparungen stärker betroffen sein.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "system_depth": {
-                  "value": 3,
-                  "rationale": "Der Pfad betrifft die wiederkehrende Steuerung öffentlicher Haushalte.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete materielle Schutzgrenze ist nicht belegt.",
-                "reference_frame": "Zugang zu öffentlichen Leistungen",
-                "source_ids": [
-                  "hr-hessenschau"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "hr-hessenschau"
-              ],
-              "condition": "Die geplante Kreditaufnahme und die genannten Kosten müssen bestehen bleiben und zu späteren Priorisierungskonflikten führen.",
-              "reference_space": "Landeshaushalt Hessen",
-              "time_horizon": "Mittelfristig nach 2027",
-              "path_quality": [
-                "indirect",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Kredit- und Personalkosten begrenzen tatsächlich spätere Haushaltsentscheidungen.",
-              "source_support": "Die Quelle nennt 1,7 Milliarden Euro neue Schulden, gestiegene Zinsen und 340 Millionen Euro zusätzliche Personalkosten.",
-              "limitations": "Keine Projektion zur Schuldentragfähigkeit und keine Angaben zu späteren Kürzungen.",
-              "first_order": "Der Haushalt finanziert zusätzliche Ausgaben über Kredite und Rücklagen.",
-              "second_order": "Spätere Haushalte könnten stärker zwischen Aufgaben abwägen müssen.",
-              "third_order": "Die politische Fähigkeit zur Ausweitung anderer Leistungen könnte sinken; dies ist nicht nachgewiesen.",
-              "research_pass": "second_pass",
-              "research_result": "Die Quelle enthält keine mittelfristige Finanzprojektion und keine belastbare Aussage zu späteren Leistungskürzungen.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 16,
-                "divisor": 6,
-                "raw": 2.6666666666666665,
-                "rounded": 3,
-                "protection_floor": 0,
-                "final": 3
-              }
-            }
-          ],
-          "balance": null,
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 3,
-            "directionLabel": "+ Potenzial",
-            "shortPathLabel": "Zusätzliche Bildungsressourcen könnten Schulen und Lernende unterstützen",
-            "direction": "positive"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 3,
-          "directionLabel": "+ Potenzial",
-          "shortPathLabel": "Zusätzliche Bildungsressourcen könnten Schulen und Lernende unterstützen",
-          "display_direction": "positive",
-          "label": "+ Potenzial",
-          "magnitude_label": "deutlich",
-          "evidence_label": "gering",
-          "likelihood_label": "mittel",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "+ Potenzial"
-        },
-        "planet": {
-          "path_status": "modelled",
-          "direction": "open",
-          "dominance": "none",
-          "magnitude": 2,
-          "evidence": "not_assessable",
-          "likelihood": "unknown",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quelle nennt Infrastruktur-, Wohn-, Verkehrs- und Digitalausgaben, aber keine Umweltziele, Emissionsdaten oder Projektwirkungen. Eine belastbare Richtung ist deshalb nicht ableitbar.",
-          "reviewed_source_ids": [
-            "hr-hessenschau"
-          ],
-          "rationale": "Ein ökologischer Wirkpfad ist über geplante Infrastruktur- und Verkehrsausgaben denkbar, bleibt wegen fehlender Projekt- und Umweltdaten aber offen.",
-          "primary_paths": [
-            {
-              "label": "Geplante Infrastruktur- und Verkehrsausgaben könnten ökologische Zustände verändern",
-              "direction": "open",
-              "type": "main_path",
-              "mechanism": "Ausgaben für Verkehr, Wohnen und Digitalisierung könnten Bau, Flächennutzung, Energiebedarf oder Netzinfrastruktur beeinflussen.",
-              "recipients": [
-                "Ökosysteme",
-                "Anwohnerinnen und Anwohner",
-                "öffentliche Infrastruktur"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 0,
-                "upper": 2,
-                "rationale": "Die genannten Ausgaben sind konkret, ihre ökologische Ausgestaltung und Wirkung jedoch unbekannt."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 2,
-                  "rationale": "Infrastruktur kann regional mehrere Räume und Gruppen betreffen.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "intensity": {
-                  "value": 1,
-                  "rationale": "Die Quelle beschreibt keine konkrete Umweltintensität der Vorhaben.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Gebäude und Infrastruktur können langfristige Zustände prägen.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 2,
-                  "rationale": "Flächen- und Infrastrukturentscheidungen sind teilweise schwer rückgängig zu machen.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 1,
-                  "rationale": "Ökologisch besonders verletzliche Orte werden nicht genannt.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "system_depth": {
-                  "value": 1,
-                  "rationale": "Eine systemische Umweltwirkung ist ohne konkrete Projekte nicht belegbar.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Keine konkrete ökologische Schutzgrenze oder Grenzüberschreitung ist in der Quelle belegt.",
-                "reference_frame": "ökologische Belastbarkeit von Flächen und Infrastruktur",
-                "source_ids": [
-                  "hr-hessenschau"
-                ],
-                "status": "not_decisive"
-              },
-              "evidence": "not_assessable",
-              "likelihood": "unknown",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "hr-hessenschau"
-              ],
-              "condition": "Es müssten konkrete Verkehrs-, Wohn- oder Infrastrukturprojekte beschlossen und mit ökologisch relevanten Eigenschaften umgesetzt werden.",
-              "reference_space": "Hessen, projektbezogen",
-              "time_horizon": "Mittelfristig nach Haushaltsbeschluss",
-              "path_quality": [
-                "indirect",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Die genannten Ausgaben führen zu materiellen Projekten mit relevanten Umweltwirkungen.",
-              "source_support": "Die Quelle nennt 3,7 Milliarden Euro für Wirtschaft, Verkehr und Wohnen sowie Mittel für Digitalisierung; konkrete Umweltfolgen werden nicht beschrieben.",
-              "limitations": "Keine Emissions-, Flächen-, Energie- oder Biodiversitätsdaten.",
-              "first_order": "Finanzierte Projekte könnten Ressourcen- und Flächennutzung verändern.",
-              "second_order": "Verkehrs- oder Wohnstrukturen könnten Energiebedarf und lokale Belastungen beeinflussen.",
-              "third_order": "Eine überregionale ökologische Wirkung ist aus den Angaben nicht bestimmbar.",
-              "research_pass": "second_pass",
-              "research_result": "Keine konkreten Projektunterlagen oder Umweltmessungen in den gelieferten Quellen.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 9,
-                "divisor": 6,
-                "raw": 1.5,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": null,
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "? Richtung offen",
-            "shortPathLabel": "Geplante Infrastruktur- und Verkehrsausgaben könnten ökologische Zustände verändern",
-            "direction": "open"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 2,
-          "directionLabel": "? Richtung offen",
-          "shortPathLabel": "Geplante Infrastruktur- und Verkehrsausgaben könnten ökologische Zustände verändern",
-          "display_direction": "open",
-          "label": "? Richtung offen",
-          "magnitude_label": "begrenzt",
-          "evidence_label": "nicht bewertbar",
-          "likelihood_label": "nicht belastbar bestimmt",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "? Richtung offen"
-        },
-        "democracy": {
-          "path_status": "modelled",
-          "direction": "mixed",
-          "dominance": "balanced",
-          "magnitude": 2,
-          "evidence": "low",
-          "likelihood": "medium",
-          "data_status": "modelled",
-          "temporal_status": "ex_ante",
-          "research_pass": "second_pass",
-          "research_result": "Die Quelle belegt die angekündigte parlamentarische Beratung und politische Priorisierung, aber keine Veränderung von Beteiligung, Kontrolle oder Mehrheitsverhältnissen. Positive und negative institutionelle Pfade bleiben deshalb bedingt.",
-          "reviewed_source_ids": [
-            "hr-hessenschau"
-          ],
-          "rationale": "Der Entwurf kann parlamentarische Rechenschaft und Prioritätensetzung sichtbar machen, zugleich könnten langfristige finanzielle Bindungen spätere Handlungsspielräume begrenzen. Beide Pfade sind nicht als eingetretene Wirkung belegt.",
-          "primary_paths": [
-            {
-              "label": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungsprozess",
-              "direction": "positive",
-              "type": "main_path",
-              "mechanism": "Ein konkreter Entwurf mit benannten Einnahmen, Ausgaben und Prioritäten ermöglicht öffentliche und parlamentarische Kontrolle.",
-              "recipients": [
-                "Landtag",
-                "Öffentlichkeit",
-                "Landesregierung"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Der Prozess ist institutionell konkret, seine tatsächliche Kontrollqualität bleibt offen."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 3,
-                  "rationale": "Landesweite Haushaltsentscheidungen betreffen mehrere Institutionen und Gruppen.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Der Entwurf macht Prioritäten sichtbar, verändert aber noch keine Verfahren.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "duration": {
-                  "value": 2,
-                  "rationale": "Die parlamentarische Beratung ist zeitlich begrenzt, kann aber Folgeentscheidungen prägen.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 1,
-                  "rationale": "Parlamentarische Prioritäten können in weiteren Beratungen geändert werden.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Gruppen mit hoher Abhängigkeit von Landesleistungen können mittelbar betroffen sein.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Der Pfad betrifft Budgetkontrolle, nicht die Grundstruktur demokratischer Institutionen.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete Einschränkung demokratischer Rechte ist nicht belegt.",
-                "reference_frame": "parlamentarische Budgetkontrolle",
-                "source_ids": [
-                  "hr-hessenschau"
-                ],
-                "status": "not_decisive"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "hr-hessenschau"
-              ],
-              "condition": "Der Entwurf muss transparent beraten und parlamentarisch verändert oder beschlossen werden.",
-              "reference_space": "Landtag und Öffentlichkeit in Hessen",
-              "time_horizon": "Haushaltsberatung für 2027",
-              "path_quality": [
-                "direct",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "supported_mechanism",
-              "assumptions": "Die parlamentarische Beratung ermöglicht tatsächlich Kontrolle und öffentliche Rechenschaft.",
-              "source_support": "Die Quelle kündigt die Einbringung in den Landtag und die spätere Verabschiedung an.",
-              "limitations": "Keine Angaben zur Debatte, zu Änderungsanträgen oder zur tatsächlichen Transparenz.",
-              "first_order": "Haushaltsprioritäten werden parlamentarisch verhandelbar.",
-              "second_order": "Akteure können Verantwortung für Bildungs-, Kredit- und Sparentscheidungen zuordnen.",
-              "third_order": "Die Debatte könnte Erwartungen an künftige Landespolitik prägen, ohne Institutionen grundsätzlich zu verändern.",
-              "research_pass": "second_pass",
-              "research_result": "Keine unabhängigen Angaben zur Qualität der parlamentarischen Kontrolle oder zur öffentlichen Beteiligung.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 12,
-                "divisor": 6,
-                "raw": 2,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            },
-            {
-              "label": "Langfristige finanzielle Bindungen könnten spätere demokratische Spielräume einengen",
-              "direction": "negative",
-              "type": "counter_path",
-              "mechanism": "Kredite sowie steigende Zins- und Personalkosten könnten künftige Parlamente zu engeren Priorisierungen zwingen.",
-              "recipients": [
-                "künftige Parlamente",
-                "Landesregierung",
-                "betroffene Leistungsbezieher"
-              ],
-              "magnitude": 2,
-              "magnitude_range": {
-                "lower": 1,
-                "upper": 3,
-                "rationale": "Die Belastungen sind im Entwurf genannt, eine Einschränkung demokratischer Entscheidungen ist jedoch nur indirekt möglich."
-              },
-              "magnitude_factors": {
-                "reach": {
-                  "value": 3,
-                  "rationale": "Künftige Haushaltsentscheidungen betreffen mehrere Ressorts und Gruppen.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "intensity": {
-                  "value": 2,
-                  "rationale": "Die Quelle belegt Kosten und Schulden, nicht den Grad späterer Einschränkungen.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "duration": {
-                  "value": 3,
-                  "rationale": "Schulden- und Personalbindungen können über mehrere Jahre wirken.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "irreversibility": {
-                  "value": 2,
-                  "rationale": "Politische Mehrheiten können Finanzierungsentscheidungen grundsätzlich korrigieren.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "vulnerability": {
-                  "value": 2,
-                  "rationale": "Besonders abhängige Gruppen könnten von engeren Budgets stärker betroffen sein.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                },
-                "system_depth": {
-                  "value": 2,
-                  "rationale": "Der mögliche Pfad betrifft Budgetspielräume, nicht die demokratische Ordnung insgesamt.",
-                  "source_ids": [
-                    "hr-hessenschau"
-                  ]
-                }
-              },
-              "protection_boundary": {
-                "decisive": false,
-                "rationale": "Eine konkrete demokratische Schutzgrenze ist nicht verletzt oder beschrieben.",
-                "reference_frame": "demokratische Korrekturfähigkeit durch Haushaltsentscheidungen",
-                "source_ids": [
-                  "hr-hessenschau"
-                ],
-                "status": "conditional"
-              },
-              "evidence": "low",
-              "likelihood": "medium",
-              "temporal_status": "ex_ante",
-              "same_target": true,
-              "same_baseline": true,
-              "source_ids": [
-                "hr-hessenschau"
-              ],
-              "condition": "Die geplanten finanziellen Belastungen müssen bestehen bleiben und spätere Haushalte tatsächlich dominieren.",
-              "reference_space": "Landespolitik und Haushalte in Hessen",
-              "time_horizon": "Mittelfristig nach 2027",
-              "path_quality": [
-                "indirect",
-                "systemic",
-                "high_uncertainty"
-              ],
-              "epistemic_basis": "model_hypothesis",
-              "assumptions": "Finanzielle Bindungen werden zu einer relevanten Begrenzung künftiger politischer Optionen.",
-              "source_support": "Die Quelle nennt neue Schulden, höhere Zinsen, steigende Personalkosten und anhaltenden Spardruck.",
-              "limitations": "Keine Schuldenprojektion, keine Angaben zu künftigen Mehrheiten oder zu konkreten Einschränkungen.",
-              "first_order": "Künftige Haushalte müssen Kredit-, Zins- und Personalkosten berücksichtigen.",
-              "second_order": "Der politische Wettbewerb um neue Ausgaben könnte sich verschärfen.",
-              "third_order": "Die Korrekturfähigkeit könnte sinken, falls Bindungen dauerhaft werden; ein solcher Effekt ist nicht nachgewiesen.",
-              "research_pass": "second_pass",
-              "research_result": "Die gelieferte Quelle erlaubt keine belastbare Aussage über spätere demokratische Einschränkungen durch den Entwurf.",
-              "negligibility_rationale": null,
-              "observed_signal": null,
-              "magnitude_calculation": {
-                "method_version": "2.1",
-                "sum": 14,
-                "divisor": 6,
-                "raw": 2.3333333333333335,
-                "rounded": 2,
-                "protection_floor": 0,
-                "final": 2
-              }
-            }
-          ],
-          "secondary_paths": [],
-          "balance": {
-            "comparable_material_paths": true,
-            "protection_boundary_decisive": false,
-            "rationale": "Der positive Kontrollpfad und der negative Spielraumpfad sind beide bedingt plausibel; keiner überschreitet eine belegte Schutzgrenze, und die Evidenz reicht nicht für eine dominante Richtung."
-          },
-          "potential_presentation": {
-            "ringStatus": "potential",
-            "ringLabel": "Potenzial",
-            "magnitudeBars": 2,
-            "directionLabel": "± gegenläufig",
-            "shortPathLabel": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungsprozess",
-            "direction": "mixed"
-          },
-          "observations": [],
-          "ringStatus": "potential",
-          "ringLabel": "Potenzial",
-          "magnitudeBars": 2,
-          "directionLabel": "± gegenläufig",
-          "shortPathLabel": "Der Haushaltsentwurf schafft einen überprüfbaren parlamentarischen Priorisierungsprozess",
-          "display_direction": "mixed",
-          "label": "± gegenläufig",
-          "magnitude_label": "begrenzt",
-          "evidence_label": "gering",
-          "likelihood_label": "mittel",
-          "path_status_label": "Modelliertes Wirkungspotenzial",
-          "time_label": "Ex ante",
-          "long_label": "± gegenläufig"
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-16T09:22:10.469Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-16T08:53:52.000Z",
-      "last_updated": "2026-09-16T09:24:18.929Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-0f868cd427ea8e3f5ff8",
-      "case_file": null,
-      "source_published_at": "2026-09-16T08:53:52.000Z",
-      "published_at": "2026-09-16T09:24:18.929Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "hr-hessenschau"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Zu prüfen ist, ob der Haushaltsentwurf in den Landtag eingebracht und im weiteren Verfahren verabschiedet wird.",
-          "source_id": "hr-hessenschau",
-          "measurable_indicator": "Einbringung des Haushaltsentwurfs in den Landtag und anschließende Verabschiedung",
-          "expected_by": null,
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-bdbe70149e061506",
-          "announced_at": "2026-09-16T08:53:52.000Z",
-          "follow_up_date": "2026-09-23T09:24:18.929Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "hessenschau",
-          "url": "https://www.hessenschau.de/politik/hessen-plant-17-milliarden-euro-neue-schulden---rekordetat-fuer-schulen-v1,landeshaushalt-2027-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-16T08:53:52.000Z",
           "primary_source": false
         }
       ]
