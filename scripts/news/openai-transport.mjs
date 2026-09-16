@@ -37,6 +37,7 @@ export const SINGLE_CALL_INSTRUCTIONS = [
   'Nur gelieferte Quellen und deren source_id/evidence_id verwenden. Keine Zahlen, Quellen oder Zitate erfinden. Alle Lesertexte auf Deutsch, ohne URLs, IDs oder HTML.',
   'Quellenkennungen wörtlich: In source_id und source_ids steht ausschließlich der exakte Wert aus dem Feld source_id der gelieferten sources (z. B. "rbb24-nachrichten", nicht "rbb24"). Keine Kurzformen, keine Kennungen aus Verlagsnamen, keine Quellen aus eigenem Wissen; research_check.searches und source_functions bleiben auf die gelieferten Quellen beschränkt.',
   'Pfadtypen: primary_paths enthalten nur main_path oder counter_path mit same_target true und same_baseline true; side_effect und side_risk gehören in secondary_paths. Bei path_status modelled ist data_status modelled oder estimated, nie missing.',
+  'publication_depth ist vorgegeben, nicht zu wählen: already_published false bedeutet initial, true bedeutet deepened. Der Server setzt den Wert ohnehin nach dem Stand der Akte; entscheidend ist, dass die Textlängen zu dieser Tiefe passen.',
   'Textlängen sind harte Grenzen, zähle vor der Antwort: source_summary bei publication_depth initial 60 bis 180 Wörter, bei deepened 100 bis 180 Wörter, immer zwei bis drei Absätze (Leerzeile). detail_summary bei initial mindestens 300 Zeichen und 3 bis 7 Sätze, bei deepened 500 bis 1200 Zeichen und 5 bis 7 Sätze. Zu kurz ist genauso ungültig wie zu lang; im Zweifel einen belegten Satz mehr schreiben. Lesertexte enthalten nur Zahlen, Daten und Jahreszahlen, die wörtlich in den gelieferten Quellentexten stehen; das Datum der Berichterstattung wird nicht ergänzt.',
   'source_summary in eigenen Worten: keine Passage von mehr als 20 Wörtern wörtlich aus einer Quelle übernehmen.',
   'analysis_type ex_ante: Wirkungen als Möglichkeit formulieren (kann, könnte, würde); keine Tatsachenformen wie „führt zu“, „bewirkt“, „hat … erhöht/reduziert/verbessert“ für noch nicht eingetretene Folgen. Jede Dimension trägt temporal_status ex_ante oder ongoing.',
@@ -276,6 +277,23 @@ export function repairHeadlineAttribution(analysis, repairs = []) {
 // Deterministic post-processing of the model output. Nothing editorial is
 // invented: magnitudes are recomputed from the model's own factors, and the
 // plausible range is only snapped to include that recomputed point value.
+// publication_depth ist keine Ermessensfrage des Modells: Ob eine Meldung zum
+// ersten Mal erscheint oder eine bestehende Akte vertieft, weiß der Server. Von
+// dieser Angabe hängen die Textlängen ab (initial 60 bis 180 Wörter, vertieft
+// 100 bis 180), also entscheidet sie über Annahme oder Halt. 16.09.: drei
+// Meldungen wurden gehalten, weil das Modell „deepened" wählte und dann
+// initial-lange Texte schrieb. Eine Neubewertung behält ihre bisherige Tiefe.
+export function repairPublicationDepth(analysis, story, repairs = []) {
+  if (!analysis || typeof analysis !== 'object' || !story || story.impact_reassessment) return analysis;
+  const published = story.existing_story?.published;
+  if (typeof published !== 'boolean') return analysis;
+  const required = published ? 'deepened' : 'initial';
+  if (analysis.publication_depth === required) return analysis;
+  repairs.push(`publication_depth:${analysis.publication_depth ?? 'fehlt'}->${required}`);
+  analysis.publication_depth = required;
+  return analysis;
+}
+
 export function normalizeAnalysisOutput(analysis, story = null) {
   const repairs = Array.isArray(analysis?.transport_repairs) ? [...analysis.transport_repairs] : [];
   if (analysis && typeof analysis === 'object') {
@@ -289,6 +307,7 @@ export function normalizeAnalysisOutput(analysis, story = null) {
   }
   repairSourceBindings(analysis, story?.sources || [], repairs);
   repairHeadlineAttribution(analysis, repairs);
+  repairPublicationDepth(analysis, story, repairs);
   const finish = () => { if (repairs.length && analysis && typeof analysis === 'object') analysis.transport_repairs = repairs; return analysis; };
   const assessment = analysis?.impact_assessment;
   if (!assessment || assessment.version !== IMPACT_VERSION) return finish();
