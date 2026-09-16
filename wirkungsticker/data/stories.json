@@ -2,8 +2,2787 @@
   "schema_version": "1.2",
   "impact_profile_version": "2.1",
   "impact_profile_status": "reviewed_records_only",
-  "updated_at": "2026-09-16T16:37:31.544Z",
+  "updated_at": "2026-09-16T17:52:37.490Z",
   "stories": [
+    {
+      "story_id": "wt-32f230b755f42144",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32f230b755f42144-dbef57c55e3e8273-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32f230b755f42144-49fa1244261cc594-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-32f230b755f42144-d4e90ad0f317018d-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "800-milliarden-investitionsbedarf-fur-wassermanagement-f42144",
+      "title": "Laut WDR-Bericht: Enquetekommission sieht 800 Milliarden Euro Investitionsbedarf für Wasserinfrastruktur",
+      "source_summary": "Der WDR berichtet über den Abschlussbericht einer Enquetekommission zum Wassermanagement in Nordrhein-Westfalen. Das Gremium arbeitete nach Angaben des Berichts mehr als zwei Jahre mit Landtagsfraktionen und Sachverständigen an Vorschlägen für den Umgang mit Extremwetter, alternder Infrastruktur und regional ungleicher Wasserverteilung.\n\nIm Bericht wird ein bundesweiter Investitionsbedarf von 800 Milliarden Euro bis 2045 genannt; auf Nordrhein-Westfalen entfielen rund 110 Milliarden Euro. Genannt werden außerdem ein Rückstand bei der Erneuerung der Netze und ein jährlicher Erneuerungsanteil von etwa 0,6 Prozent.\n\nDie Kommission schlägt unter anderem eine höhere Abgabe für Wasserentnahmen, digitale Wasserbilanzen und eine Priorisierung von Trink- und Löschwasser in Notfällen vor. Der vorliegende Quellenbestand enthält nur den WDR-Bericht; unabhängige Bestätigungen und Angaben zur Umsetzung liegen nicht vor.",
+      "summary": "Ein WDR-Bericht beschreibt einen Kommissionsbericht mit 800 Milliarden Euro Investitionsbedarf für die Wasserinfrastruktur bis 2045. Die Vorschläge könnten Versorgung und Klimaanpassung stärken, ihre Umsetzung und Verteilungseffekte sind aber offen.",
+      "detail_summary": "Der WDR berichtet über einen Abschlussbericht der Enquetekommission Wasser in Nordrhein-Westfalen. Darin werden alternde Netze, regional ungleich verteiltes Wasser sowie häufigere Dürre- und Starkregenlagen als Herausforderungen beschrieben. Bundesweit könnten bis 2045 Investitionen von 800 Milliarden Euro nötig sein; für Nordrhein-Westfalen werden rund 110 Milliarden Euro genannt. Vorgeschlagen werden unter anderem digitale Wasserbilanzen, eine höhere Abgabe für Wasserentnahmen und eine Priorisierung von Trink- und Löschwasser in Notfällen. Ob daraus verbindliche Maßnahmen, ausreichende Finanzierung oder bessere Versorgung entstehen, ist nicht belegt.",
+      "why_relevant": "Wasserinfrastruktur verbindet Versorgungssicherheit, Klimaanpassung, kommunale Finanzen und Priorisierungsentscheidungen. Der Bericht liefert deshalb einen materiellen Anlass, obwohl die Wirkung der Vorschläge noch nicht gemessen ist.",
+      "topic": [
+        "Klima",
+        "Arbeit"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Vorstellung eines Abschlussberichts der Enquetekommission Wasser mit Investitionsbedarf und Reformvorschlägen",
+        "evaluation_target": {
+          "label": "Vorschläge für Wassermanagement und Wasserinfrastruktur",
+          "type": "proposal"
+        },
+        "baseline": "Wasserinfrastruktur mit beschriebenem Erneuerungsrückstand und bestehenden Zuständigkeiten vor einer möglichen Umsetzung der Vorschläge",
+        "counterfactual": "Ohne zusätzliche Maßnahmen könnten Erneuerungsrückstand, regionale Ungleichverteilung und Anpassungslücken fortbestehen; Umfang und Eintritt sind nicht belegt.",
+        "reference_frame": [
+          "Sichere und faire Wasserversorgung",
+          "Klimaanpassung",
+          "Gewässerschutz",
+          "kommunale Handlungsfähigkeit"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Vorschläge könnten Versorgungssicherheit und Schutz vor Nutzungskonflikten stärken, aber Kosten und Priorisierungen könnten vulnerable Haushalte, Landwirtschaft oder Betriebe unterschiedlich treffen.",
+            "planet": "Erneuerung, Speicherung und Renaturierung könnten Wasserhaushalte stabilisieren; Bau, Flächenverbrauch und zusätzliche Entnahmen könnten gegenläufige Effekte haben.",
+            "democracy": "Digitale Daten und klare Prioritäten könnten Entscheidungen nachvollziehbarer machen; neue Gebühren und Notfallregeln erfordern transparente Verfahren und politische Kontrolle."
+          },
+          "central_dimensions": [
+            "human",
+            "planet",
+            "democracy"
+          ],
+          "first_order": "Mögliche zusätzliche Investitionen, Gebührenänderungen, Datenerfassung und Notfallprioritäten.",
+          "second_order": "Mögliche Veränderungen von Kosten, Nutzung und Anpassungsfähigkeit in Kommunen, Haushalten, Landwirtschaft und Industrie.",
+          "third_order": "Mögliche langfristige Verschiebung von Infrastruktur- und Raumplanungsentscheidungen; dies bleibt von Finanzierung, Recht und Beteiligung abhängig.",
+          "enablement": [
+            "enables_legislation",
+            "enables_budget_control",
+            "enables_institutional_control"
+          ],
+          "counter_evidence": [
+            "Der Bericht selbst belegt keine Umsetzung, Finanzierung oder eingetretene Verbesserung.",
+            "Nur eine journalistische Quelle liegt vor; unabhängige Folgenbelege fehlen."
+          ],
+          "source_independence": "Nur eine Quelle mit einer Herkunft ist geliefert; die unabhängige Bestätigung des Kommissionsberichts und seiner Wirkungsannahmen ist nicht geprüft.",
+          "institutional_status": "Beschrieben ist ein Kommissionsbericht mit Vorschlägen; ein verbindlicher Beschluss oder ein belegtes Inkrafttreten wird nicht ausgewiesen."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle beschreibt plausible Maßnahmen, liefert aber keine Messung ihrer sozialen Wirkung, keine Kostenverteilung und keine Umsetzungsdaten.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Bessere Erneuerung und Priorisierung könnten die Versorgungssicherheit erhöhen. Die soziale Richtung bleibt von Finanzierung, Zugang und Verteilung abhängig.",
+            "primary_paths": [
+              {
+                "label": "Erneuerte und besser gesteuerte Wasserinfrastruktur könnte Versorgungsausfälle und Anpassungslücken begrenzen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Investitionen, Wasserbilanzen und Notfallprioritäten könnten die Verfügbarkeit und Steuerbarkeit von Wasser verbessern.",
+                "recipients": [
+                  "Haushalte",
+                  "Kommunen",
+                  "Landwirtschaft",
+                  "Industrie"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 2,
+                  "upper": 4,
+                  "rationale": "Die Reichweite kann groß sein, die konkrete Wirkung hängt jedoch von Finanzierung und Umsetzung ab."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 4,
+                    "rationale": "Wasserinfrastruktur betrifft viele Haushalte und Nutzungen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Versorgungs- und Nutzungseffekte könnten spürbar, aber regional ungleich sein.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Netze und Priorisierungsregeln könnten über Jahre wirken.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Investitionen sind teilweise langfristig, aber politisch korrigierbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 4,
+                    "rationale": "Wasserengpässe können vulnerable Haushalte besonders treffen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad reicht von Infrastruktur bis zu kommunaler Versorgung.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Schutzgrenze ist nicht belegt; Trinkwasser wird als mögliche Priorität beschrieben.",
+                  "reference_frame": "sichere und faire Wasserversorgung",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Finanzierung, Umsetzung, Datenqualität und sozial tragfähige Gebühren müssen gesichert sein.",
+                "reference_space": "Nordrhein-Westfalen und die im Bericht beschriebene deutsche Wasserinfrastruktur",
+                "time_horizon": "mehrere Jahre bis 2045",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Vorgeschlagene Maßnahmen werden politisch beschlossen, finanziert und wirksam umgesetzt.",
+                "source_support": "Die Quelle belegt Investitionsbedarf und Vorschläge, nicht deren soziale Wirkung.",
+                "limitations": "Keine unabhängigen Wirkungsdaten, keine Kostenverteilung und keine Umsetzungsentscheidung.",
+                "first_order": "Wassersteuerung und Infrastruktur könnten verbessert werden.",
+                "second_order": "Versorgungskosten und Nutzungschancen könnten sich zwischen Gruppen und Regionen unterschiedlich entwickeln.",
+                "third_order": "Langfristige Versorgungssicherheit könnte steigen, wenn Verteilungs- und Beteiligungsfragen gelöst werden.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle misst soziale Wirkungen oder bestätigt die Umsetzung.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 20,
+                  "divisor": 6,
+                  "raw": 3.3333333333333335,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Neue Entgelte könnten Nutzungskosten und Verteilungskonflikte erhöhen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Ein höheres Wasserentnahmeentgelt könnte Kosten weitergeben und betriebliche oder kommunale Interessen belasten.",
+                "recipients": [
+                  "Betriebe",
+                  "Kommunen",
+                  "Haushalte"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Die Quelle nennt die Erhöhung, aber keine konkreten Kostenwirkungen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Direkt betroffen wären vor allem Entnehmende und deren Umfeld.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die Belastung könnte je nach Nutzung unterschiedlich ausfallen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Gebührenwirkungen könnten dauerhaft bestehen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Gebühren und Ausnahmen wären politisch veränderbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Kostenweitergabe könnte einkommensschwache Gruppen indirekt treffen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft vor allem Finanzierung und Verteilung.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete soziale Schutzgrenze wird nicht belegt.",
+                  "reference_frame": "bezahlbare Wasserversorgung",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Die Abgabe wird tatsächlich erhöht und Kosten werden weitergegeben.",
+                "reference_space": "Nordrhein-Westfalen",
+                "time_horizon": "nach einer möglichen Einführung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Abgabe beeinflusst Preise oder Investitionsentscheidungen.",
+                "source_support": "Die Quelle nennt eine vorgeschlagene Erhöhung, nicht ihre Verteilungswirkung.",
+                "limitations": "Keine Angaben zu Tarifen, Betroffenen oder Ausgleichsmechanismen.",
+                "first_order": "Entnahmekosten könnten steigen.",
+                "second_order": "Nutzungen und Investitionen könnten sich verlagern.",
+                "third_order": "Verteilungskonflikte könnten politische Entscheidungen prägen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle quantifiziert Kosten- oder Verteilungseffekte.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Erneuerte und besser gesteuerte Wasserinfrastruktur könnte Versorgungsausfälle und Anpassungslücken begrenzen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Erneuerte und besser gesteuerte Wasserinfrastruktur könnte Versorgungsausfälle und Anpassungslücken begrenzen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 3,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle nennt Klimaanpassung, Speicherung und Renaturierung, aber keine Messung ökologischer Wirkungen oder Nebenfolgen.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Speicherung, Renaturierung und bessere Steuerung könnten Wasserhaushalte stabilisieren. Bau- und Nutzungseffekte bleiben offen.",
+            "primary_paths": [
+              {
+                "label": "Wasserspeicherung und angepasste Infrastruktur könnten ökologische Wasserhaushalte stabilisieren",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Schwammstadt- und Landschaftsmaßnahmen könnten Regenwasser zurückhalten und Versickerung fördern.",
+                "recipients": [
+                  "Gewässer",
+                  "Böden",
+                  "Ökosysteme",
+                  "Kommunen"
+                ],
+                "magnitude": 3,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 4,
+                  "rationale": "Die Maßnahmen könnten regional relevant sein, ihre Fläche und Qualität sind unbekannt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Maßnahmen könnten mehrere Siedlungen und Landschaften erreichen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 3,
+                    "rationale": "Wasserrückhalt könnte lokale Abflüsse und Trockenheit beeinflussen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 4,
+                    "rationale": "Flächen- und Infrastrukturmaßnahmen könnten lange wirken.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Umbauten sind teilweise dauerhaft, aber veränderbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 3,
+                    "rationale": "Gewässer und trockene Standorte könnten besonders profitieren.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad verbindet Flächennutzung, Wasserhaushalt und Anpassung.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Die Quelle beschreibt keine konkrete ökologische Grenzverletzung oder Schutzschwelle.",
+                  "reference_frame": "ökologischer Wasserhaushalt",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Flächen werden entsiegelt, Versickerung wird ermöglicht und Maßnahmen werden ökologisch geplant.",
+                "reference_space": "Nordrhein-Westfalen",
+                "time_horizon": "mittelfristig bis langfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Wasserrückhalt wird umgesetzt und nicht durch zusätzliche Entnahmen überkompensiert.",
+                "source_support": "Die Quelle nennt Schwammstadt, Landschaften und Renaturierung als Vorschläge.",
+                "limitations": "Keine Flächenangaben, Messreihen oder Wirkungsnachweise.",
+                "first_order": "Regenwasser könnte länger zurückgehalten werden.",
+                "second_order": "Lokale Dürre- und Starkregenfolgen könnten sich verändern.",
+                "third_order": "Regionale Anpassungsfähigkeit von Siedlungen und Ökosystemen könnte steigen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle belegt die ökologische Wirksamkeit konkreter Maßnahmen.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 18,
+                  "divisor": 6,
+                  "raw": 3,
+                  "rounded": 3,
+                  "protection_floor": 0,
+                  "final": 3
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Bau- und Steuerungsmaßnahmen könnten neue Flächen- oder Entnahmedrucke erzeugen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Infrastrukturumbau und zusätzliche Nutzung könnten ökologische Vorteile begrenzen oder verlagern.",
+                "recipients": [
+                  "Böden",
+                  "Gewässer",
+                  "Ökosysteme"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Pfad ist plausibel, aber im Quellenbestand nicht konkretisiert."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 1,
+                    "rationale": "Konkrete Flächen und Projekte werden nicht genannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Eine ökologische Belastung ist möglich, aber nicht quantifiziert.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Bauliche Eingriffe könnten länger nachwirken.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 2,
+                    "rationale": "Flächenänderungen können teilweise schwer rückgängig sein.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Empfindliche Gewässer und Böden könnten betroffen sein.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Nebenpfad betrifft lokale ökologische Rückkopplungen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine konkrete Schutzgrenze oder eingetretene Schädigung ist belegt.",
+                  "reference_frame": "ökologische Belastungsgrenzen",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Maßnahmen werden ohne ausreichende ökologische Prüfung oder mit zusätzlichem Entnahmedruck umgesetzt.",
+                "reference_space": "lokale Projekte in Nordrhein-Westfalen",
+                "time_horizon": "während und nach einer möglichen Umsetzung",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Baumaßnahmen oder Nutzungsausweitungen treten tatsächlich auf.",
+                "source_support": "Die Quelle beschreibt Vorschläge, nicht deren ökologische Nebenwirkungen.",
+                "limitations": "Keine Projekt- oder Flächendaten.",
+                "first_order": "Lokale Eingriffe könnten entstehen.",
+                "second_order": "Wasser- und Bodenfunktionen könnten sich regional verschieben.",
+                "third_order": "Kumulative Effekte bleiben offen.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle erlaubt eine konkrete Bewertung dieses Nebenpfads.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 3,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Wasserspeicherung und angepasste Infrastruktur könnten ökologische Wasserhaushalte stabilisieren",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Wasserspeicherung und angepasste Infrastruktur könnten ökologische Wasserhaushalte stabilisieren",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "deutlich",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "positive",
+            "dominance": "dominant_positive",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "medium",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quelle belegt gemeinsame Kommissionsarbeit und Vorschläge, aber keine Folgen für Beteiligung, Transparenz oder Machtverteilung.",
+            "reviewed_source_ids": [
+              "wdr-nachrichten"
+            ],
+            "rationale": "Gemeinsame Datengrundlagen und klare Prioritäten könnten Entscheidungen nachvollziehbarer machen. Gebühren- und Priorisierungsfragen könnten zugleich Konflikte verschärfen.",
+            "primary_paths": [
+              {
+                "label": "Gemeinsame Wasserbilanzen und klare Notfallprioritäten könnten Entscheidungen nachvollziehbarer machen",
+                "direction": "positive",
+                "type": "main_path",
+                "mechanism": "Digitale Daten und gesetzlich geordnete Prioritäten könnten Zuständigkeiten und Abwägungen sichtbarer machen.",
+                "recipients": [
+                  "Kommunen",
+                  "Landtag",
+                  "Einwohnerinnen und Einwohner",
+                  "Wassernutzende"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 1,
+                  "upper": 3,
+                  "rationale": "Transparenzpotenzial ist vorhanden, die tatsächliche Beteiligung und Kontrolle sind offen."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 3,
+                    "rationale": "Wasserentscheidungen betreffen viele lokale und regionale Akteure.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die mögliche Transparenzänderung wäre eher institutionell als unmittelbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 3,
+                    "rationale": "Digitale Systeme und Prioritätsregeln könnten länger bestehen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Regeln und Datenzugänge wären politisch korrigierbar.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Betroffene Gruppen könnten von klareren Prioritäten profitieren.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad reicht von Information zu institutioneller Steuerung.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze wird nicht beschrieben.",
+                  "reference_frame": "transparente und kontrollierbare Wasserpolitik",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "conditional"
+                },
+                "evidence": "low",
+                "likelihood": "medium",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Daten werden öffentlich nachvollziehbar, Zuständigkeiten bleiben kontrollierbar und Betroffene werden beteiligt.",
+                "reference_space": "Nordrhein-Westfalen",
+                "time_horizon": "bei Entwicklung und Nutzung der vorgeschlagenen Systeme",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Digitale Steuerung wird transparent und nicht nur verwaltungsintern eingesetzt.",
+                "source_support": "Die Quelle nennt eine Datenplattform und Notfallprioritäten, nicht deren demokratische Ausgestaltung.",
+                "limitations": "Keine Angaben zu Datenschutz, Beteiligung, Kontrolle oder Rechtsgrundlage.",
+                "first_order": "Wasserentscheidungen könnten strukturierter dokumentiert werden.",
+                "second_order": "Konflikte über Prioritäten könnten sichtbarer und politisch bearbeitbar werden.",
+                "third_order": "Institutionelles Vertrauen könnte steigen oder sinken, abhängig von Transparenz und Fairness.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle belegt demokratische Wirkungen oder Beteiligungsverfahren.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 13,
+                  "divisor": 6,
+                  "raw": 2.1666666666666665,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [
+              {
+                "label": "Technische Priorisierung könnte lokale Interessen aus dem Verfahren verdrängen",
+                "direction": "negative",
+                "type": "side_risk",
+                "mechanism": "Eine zentralisierte Daten- und Prioritätenlogik könnte Entscheidungen vereinfachen, ohne alle betroffenen Interessen angemessen abzubilden.",
+                "recipients": [
+                  "Kommunen",
+                  "Wassernutzende",
+                  "betroffene Einwohnerinnen und Einwohner"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Risikopfad ist nur als Ausgestaltungsfrage plausibel und nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Betroffen wären vor allem Nutzergruppen in priorisierten Regionen.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Konkrete Eingriffsintensität und Rechtsfolgen sind unbekannt.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Technische Regeln könnten über längere Zeit wirken.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Verfahren und Prioritäten könnten politisch geändert werden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Weniger organisierte Gruppen könnten schwerer Gehör finden.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 2,
+                    "rationale": "Der Pfad betrifft Verfahrensqualität und institutionelle Akzeptanz.",
+                    "source_ids": [
+                      "wdr-nachrichten"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Grenzverletzung ist nicht belegt.",
+                  "reference_frame": "Beteiligung und Rechenschaft",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "condition": "Datenzugang, Beteiligung oder Einspruchsmöglichkeiten bleiben unzureichend.",
+                "reference_space": "Nordrhein-Westfalen",
+                "time_horizon": "bei einer möglichen Einführung digitaler Steuerung",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Eine technische Lösung erhält Vorrang vor politischer und lokaler Abwägung.",
+                "source_support": "Die Quelle nennt eine Datenplattform, nicht ihre Governance.",
+                "limitations": "Keine Angaben zu Beteiligung, Kontrolle oder Ausschlusswirkungen.",
+                "first_order": "Entscheidungen könnten stärker standardisiert werden.",
+                "second_order": "Einzelne Interessen könnten weniger sichtbar sein.",
+                "third_order": "Akzeptanz und Vertrauen könnten unter Bedingungen sinken.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferte Quelle klärt Governance, Beteiligung oder Einspruchsrechte.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 10,
+                  "divisor": 6,
+                  "raw": 1.6666666666666667,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "+ Potenzial",
+              "shortPathLabel": "Gemeinsame Wasserbilanzen und klare Notfallprioritäten könnten Entscheidungen nachvollziehbarer machen",
+              "direction": "positive"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Gemeinsame Wasserbilanzen und klare Notfallprioritäten könnten Entscheidungen nachvollziehbarer machen",
+            "display_direction": "positive",
+            "label": "+ Potenzial",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "mittel",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "+ Potenzial"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T17:58:17.598Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "wdr-nachrichten",
+            "functions": [
+              "event",
+              "mechanism",
+              "reference"
+            ],
+            "supported_claim": "Bericht über Abschlussbericht, Investitionsbedarf, Infrastrukturzustand und vorgeschlagene Maßnahmen."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle beschreibt plausible Maßnahmen, liefert aber keine Messung ihrer sozialen Wirkung, keine Kostenverteilung und keine Umsetzungsdaten.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Bessere Erneuerung und Priorisierung könnten die Versorgungssicherheit erhöhen. Die soziale Richtung bleibt von Finanzierung, Zugang und Verteilung abhängig.",
+          "primary_paths": [
+            {
+              "label": "Erneuerte und besser gesteuerte Wasserinfrastruktur könnte Versorgungsausfälle und Anpassungslücken begrenzen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Investitionen, Wasserbilanzen und Notfallprioritäten könnten die Verfügbarkeit und Steuerbarkeit von Wasser verbessern.",
+              "recipients": [
+                "Haushalte",
+                "Kommunen",
+                "Landwirtschaft",
+                "Industrie"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 2,
+                "upper": 4,
+                "rationale": "Die Reichweite kann groß sein, die konkrete Wirkung hängt jedoch von Finanzierung und Umsetzung ab."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 4,
+                  "rationale": "Wasserinfrastruktur betrifft viele Haushalte und Nutzungen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Versorgungs- und Nutzungseffekte könnten spürbar, aber regional ungleich sein.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Netze und Priorisierungsregeln könnten über Jahre wirken.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Investitionen sind teilweise langfristig, aber politisch korrigierbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 4,
+                  "rationale": "Wasserengpässe können vulnerable Haushalte besonders treffen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad reicht von Infrastruktur bis zu kommunaler Versorgung.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Schutzgrenze ist nicht belegt; Trinkwasser wird als mögliche Priorität beschrieben.",
+                "reference_frame": "sichere und faire Wasserversorgung",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Finanzierung, Umsetzung, Datenqualität und sozial tragfähige Gebühren müssen gesichert sein.",
+              "reference_space": "Nordrhein-Westfalen und die im Bericht beschriebene deutsche Wasserinfrastruktur",
+              "time_horizon": "mehrere Jahre bis 2045",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Vorgeschlagene Maßnahmen werden politisch beschlossen, finanziert und wirksam umgesetzt.",
+              "source_support": "Die Quelle belegt Investitionsbedarf und Vorschläge, nicht deren soziale Wirkung.",
+              "limitations": "Keine unabhängigen Wirkungsdaten, keine Kostenverteilung und keine Umsetzungsentscheidung.",
+              "first_order": "Wassersteuerung und Infrastruktur könnten verbessert werden.",
+              "second_order": "Versorgungskosten und Nutzungschancen könnten sich zwischen Gruppen und Regionen unterschiedlich entwickeln.",
+              "third_order": "Langfristige Versorgungssicherheit könnte steigen, wenn Verteilungs- und Beteiligungsfragen gelöst werden.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle misst soziale Wirkungen oder bestätigt die Umsetzung.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 20,
+                "divisor": 6,
+                "raw": 3.3333333333333335,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Neue Entgelte könnten Nutzungskosten und Verteilungskonflikte erhöhen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Ein höheres Wasserentnahmeentgelt könnte Kosten weitergeben und betriebliche oder kommunale Interessen belasten.",
+              "recipients": [
+                "Betriebe",
+                "Kommunen",
+                "Haushalte"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Die Quelle nennt die Erhöhung, aber keine konkreten Kostenwirkungen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Direkt betroffen wären vor allem Entnehmende und deren Umfeld.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die Belastung könnte je nach Nutzung unterschiedlich ausfallen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Gebührenwirkungen könnten dauerhaft bestehen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Gebühren und Ausnahmen wären politisch veränderbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Kostenweitergabe könnte einkommensschwache Gruppen indirekt treffen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft vor allem Finanzierung und Verteilung.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete soziale Schutzgrenze wird nicht belegt.",
+                "reference_frame": "bezahlbare Wasserversorgung",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Die Abgabe wird tatsächlich erhöht und Kosten werden weitergegeben.",
+              "reference_space": "Nordrhein-Westfalen",
+              "time_horizon": "nach einer möglichen Einführung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Abgabe beeinflusst Preise oder Investitionsentscheidungen.",
+              "source_support": "Die Quelle nennt eine vorgeschlagene Erhöhung, nicht ihre Verteilungswirkung.",
+              "limitations": "Keine Angaben zu Tarifen, Betroffenen oder Ausgleichsmechanismen.",
+              "first_order": "Entnahmekosten könnten steigen.",
+              "second_order": "Nutzungen und Investitionen könnten sich verlagern.",
+              "third_order": "Verteilungskonflikte könnten politische Entscheidungen prägen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle quantifiziert Kosten- oder Verteilungseffekte.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Erneuerte und besser gesteuerte Wasserinfrastruktur könnte Versorgungsausfälle und Anpassungslücken begrenzen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Erneuerte und besser gesteuerte Wasserinfrastruktur könnte Versorgungsausfälle und Anpassungslücken begrenzen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 3,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle nennt Klimaanpassung, Speicherung und Renaturierung, aber keine Messung ökologischer Wirkungen oder Nebenfolgen.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Speicherung, Renaturierung und bessere Steuerung könnten Wasserhaushalte stabilisieren. Bau- und Nutzungseffekte bleiben offen.",
+          "primary_paths": [
+            {
+              "label": "Wasserspeicherung und angepasste Infrastruktur könnten ökologische Wasserhaushalte stabilisieren",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Schwammstadt- und Landschaftsmaßnahmen könnten Regenwasser zurückhalten und Versickerung fördern.",
+              "recipients": [
+                "Gewässer",
+                "Böden",
+                "Ökosysteme",
+                "Kommunen"
+              ],
+              "magnitude": 3,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 4,
+                "rationale": "Die Maßnahmen könnten regional relevant sein, ihre Fläche und Qualität sind unbekannt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Maßnahmen könnten mehrere Siedlungen und Landschaften erreichen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 3,
+                  "rationale": "Wasserrückhalt könnte lokale Abflüsse und Trockenheit beeinflussen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 4,
+                  "rationale": "Flächen- und Infrastrukturmaßnahmen könnten lange wirken.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Umbauten sind teilweise dauerhaft, aber veränderbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 3,
+                  "rationale": "Gewässer und trockene Standorte könnten besonders profitieren.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad verbindet Flächennutzung, Wasserhaushalt und Anpassung.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Die Quelle beschreibt keine konkrete ökologische Grenzverletzung oder Schutzschwelle.",
+                "reference_frame": "ökologischer Wasserhaushalt",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Flächen werden entsiegelt, Versickerung wird ermöglicht und Maßnahmen werden ökologisch geplant.",
+              "reference_space": "Nordrhein-Westfalen",
+              "time_horizon": "mittelfristig bis langfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Wasserrückhalt wird umgesetzt und nicht durch zusätzliche Entnahmen überkompensiert.",
+              "source_support": "Die Quelle nennt Schwammstadt, Landschaften und Renaturierung als Vorschläge.",
+              "limitations": "Keine Flächenangaben, Messreihen oder Wirkungsnachweise.",
+              "first_order": "Regenwasser könnte länger zurückgehalten werden.",
+              "second_order": "Lokale Dürre- und Starkregenfolgen könnten sich verändern.",
+              "third_order": "Regionale Anpassungsfähigkeit von Siedlungen und Ökosystemen könnte steigen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle belegt die ökologische Wirksamkeit konkreter Maßnahmen.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 18,
+                "divisor": 6,
+                "raw": 3,
+                "rounded": 3,
+                "protection_floor": 0,
+                "final": 3
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Bau- und Steuerungsmaßnahmen könnten neue Flächen- oder Entnahmedrucke erzeugen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Infrastrukturumbau und zusätzliche Nutzung könnten ökologische Vorteile begrenzen oder verlagern.",
+              "recipients": [
+                "Böden",
+                "Gewässer",
+                "Ökosysteme"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Pfad ist plausibel, aber im Quellenbestand nicht konkretisiert."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 1,
+                  "rationale": "Konkrete Flächen und Projekte werden nicht genannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Eine ökologische Belastung ist möglich, aber nicht quantifiziert.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Bauliche Eingriffe könnten länger nachwirken.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 2,
+                  "rationale": "Flächenänderungen können teilweise schwer rückgängig sein.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Empfindliche Gewässer und Böden könnten betroffen sein.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Nebenpfad betrifft lokale ökologische Rückkopplungen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine konkrete Schutzgrenze oder eingetretene Schädigung ist belegt.",
+                "reference_frame": "ökologische Belastungsgrenzen",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Maßnahmen werden ohne ausreichende ökologische Prüfung oder mit zusätzlichem Entnahmedruck umgesetzt.",
+              "reference_space": "lokale Projekte in Nordrhein-Westfalen",
+              "time_horizon": "während und nach einer möglichen Umsetzung",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Baumaßnahmen oder Nutzungsausweitungen treten tatsächlich auf.",
+              "source_support": "Die Quelle beschreibt Vorschläge, nicht deren ökologische Nebenwirkungen.",
+              "limitations": "Keine Projekt- oder Flächendaten.",
+              "first_order": "Lokale Eingriffe könnten entstehen.",
+              "second_order": "Wasser- und Bodenfunktionen könnten sich regional verschieben.",
+              "third_order": "Kumulative Effekte bleiben offen.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle erlaubt eine konkrete Bewertung dieses Nebenpfads.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 3,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Wasserspeicherung und angepasste Infrastruktur könnten ökologische Wasserhaushalte stabilisieren",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 3,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Wasserspeicherung und angepasste Infrastruktur könnten ökologische Wasserhaushalte stabilisieren",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "deutlich",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "positive",
+          "dominance": "dominant_positive",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "medium",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quelle belegt gemeinsame Kommissionsarbeit und Vorschläge, aber keine Folgen für Beteiligung, Transparenz oder Machtverteilung.",
+          "reviewed_source_ids": [
+            "wdr-nachrichten"
+          ],
+          "rationale": "Gemeinsame Datengrundlagen und klare Prioritäten könnten Entscheidungen nachvollziehbarer machen. Gebühren- und Priorisierungsfragen könnten zugleich Konflikte verschärfen.",
+          "primary_paths": [
+            {
+              "label": "Gemeinsame Wasserbilanzen und klare Notfallprioritäten könnten Entscheidungen nachvollziehbarer machen",
+              "direction": "positive",
+              "type": "main_path",
+              "mechanism": "Digitale Daten und gesetzlich geordnete Prioritäten könnten Zuständigkeiten und Abwägungen sichtbarer machen.",
+              "recipients": [
+                "Kommunen",
+                "Landtag",
+                "Einwohnerinnen und Einwohner",
+                "Wassernutzende"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 1,
+                "upper": 3,
+                "rationale": "Transparenzpotenzial ist vorhanden, die tatsächliche Beteiligung und Kontrolle sind offen."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 3,
+                  "rationale": "Wasserentscheidungen betreffen viele lokale und regionale Akteure.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die mögliche Transparenzänderung wäre eher institutionell als unmittelbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 3,
+                  "rationale": "Digitale Systeme und Prioritätsregeln könnten länger bestehen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Regeln und Datenzugänge wären politisch korrigierbar.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Betroffene Gruppen könnten von klareren Prioritäten profitieren.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad reicht von Information zu institutioneller Steuerung.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze wird nicht beschrieben.",
+                "reference_frame": "transparente und kontrollierbare Wasserpolitik",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "conditional"
+              },
+              "evidence": "low",
+              "likelihood": "medium",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Daten werden öffentlich nachvollziehbar, Zuständigkeiten bleiben kontrollierbar und Betroffene werden beteiligt.",
+              "reference_space": "Nordrhein-Westfalen",
+              "time_horizon": "bei Entwicklung und Nutzung der vorgeschlagenen Systeme",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Digitale Steuerung wird transparent und nicht nur verwaltungsintern eingesetzt.",
+              "source_support": "Die Quelle nennt eine Datenplattform und Notfallprioritäten, nicht deren demokratische Ausgestaltung.",
+              "limitations": "Keine Angaben zu Datenschutz, Beteiligung, Kontrolle oder Rechtsgrundlage.",
+              "first_order": "Wasserentscheidungen könnten strukturierter dokumentiert werden.",
+              "second_order": "Konflikte über Prioritäten könnten sichtbarer und politisch bearbeitbar werden.",
+              "third_order": "Institutionelles Vertrauen könnte steigen oder sinken, abhängig von Transparenz und Fairness.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle belegt demokratische Wirkungen oder Beteiligungsverfahren.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 13,
+                "divisor": 6,
+                "raw": 2.1666666666666665,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [
+            {
+              "label": "Technische Priorisierung könnte lokale Interessen aus dem Verfahren verdrängen",
+              "direction": "negative",
+              "type": "side_risk",
+              "mechanism": "Eine zentralisierte Daten- und Prioritätenlogik könnte Entscheidungen vereinfachen, ohne alle betroffenen Interessen angemessen abzubilden.",
+              "recipients": [
+                "Kommunen",
+                "Wassernutzende",
+                "betroffene Einwohnerinnen und Einwohner"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Risikopfad ist nur als Ausgestaltungsfrage plausibel und nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Betroffen wären vor allem Nutzergruppen in priorisierten Regionen.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Konkrete Eingriffsintensität und Rechtsfolgen sind unbekannt.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Technische Regeln könnten über längere Zeit wirken.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Verfahren und Prioritäten könnten politisch geändert werden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Weniger organisierte Gruppen könnten schwerer Gehör finden.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                },
+                "system_depth": {
+                  "value": 2,
+                  "rationale": "Der Pfad betrifft Verfahrensqualität und institutionelle Akzeptanz.",
+                  "source_ids": [
+                    "wdr-nachrichten"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Grenzverletzung ist nicht belegt.",
+                "reference_frame": "Beteiligung und Rechenschaft",
+                "source_ids": [
+                  "wdr-nachrichten"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "wdr-nachrichten"
+              ],
+              "condition": "Datenzugang, Beteiligung oder Einspruchsmöglichkeiten bleiben unzureichend.",
+              "reference_space": "Nordrhein-Westfalen",
+              "time_horizon": "bei einer möglichen Einführung digitaler Steuerung",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Eine technische Lösung erhält Vorrang vor politischer und lokaler Abwägung.",
+              "source_support": "Die Quelle nennt eine Datenplattform, nicht ihre Governance.",
+              "limitations": "Keine Angaben zu Beteiligung, Kontrolle oder Ausschlusswirkungen.",
+              "first_order": "Entscheidungen könnten stärker standardisiert werden.",
+              "second_order": "Einzelne Interessen könnten weniger sichtbar sein.",
+              "third_order": "Akzeptanz und Vertrauen könnten unter Bedingungen sinken.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferte Quelle klärt Governance, Beteiligung oder Einspruchsrechte.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 10,
+                "divisor": 6,
+                "raw": 1.6666666666666667,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "+ Potenzial",
+            "shortPathLabel": "Gemeinsame Wasserbilanzen und klare Notfallprioritäten könnten Entscheidungen nachvollziehbarer machen",
+            "direction": "positive"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "+ Potenzial",
+          "shortPathLabel": "Gemeinsame Wasserbilanzen und klare Notfallprioritäten könnten Entscheidungen nachvollziehbarer machen",
+          "display_direction": "positive",
+          "label": "+ Potenzial",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "mittel",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "+ Potenzial"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T17:52:37.490Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T15:58:20.000Z",
+      "last_updated": "2026-09-16T17:58:17.595Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-64dc2fc80511107f6e6b",
+      "case_file": null,
+      "source_published_at": "2026-09-16T16:43:07.000Z",
+      "published_at": "2026-09-16T17:58:17.595Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/politik/politik-in-nrw/abschlussbericht-enquetekomission-wasser-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T16:43:07.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-2ac3c6408f18eb66",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2ac3c6408f18eb66-9d70b50e3b6e09dc-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2ac3c6408f18eb66-98266acdb2f31ce8-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-2ac3c6408f18eb66-60a53d4ee90296b1-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "alarm-auf-flughafen-nato-russische-behauptung-zu-leipzig-ermittlung-ist-absurd-18eb66",
+      "title": "Laut Nato: Russische Angaben zur Leipzig-Ermittlung zurückgewiesen",
+      "source_summary": "Stern und Tagesspiegel berichten unter identischer Überschrift über einen Widerspruch der Nato zu russischen Angaben. Im Mittelpunkt stehen behauptete Geheimdiensterkenntnisse zum Fund einer Sprengstoffdrohne auf dem Flughafen Leipzig/Halle.\n\nNach dem vorliegenden Quellenausschnitt weist die Nato diese russischen Angaben zurück. Zugleich wird berichtet, dass sie deutschen Ermittlern den Rücken stärkt.\n\nDie beiden Veröffentlichungen sind zeitlich nahezu gleich erschienen und weisen denselben Wortlaut auf. Sie bilden daher keine unabhängige Bestätigung. Offen bleiben die konkreten russischen Angaben, die Begründung der Nato und der Stand der deutschen Ermittlungen.",
+      "summary": "Die Nato widerspricht russischen Angaben zum Fund einer Sprengstoffdrohne am Flughafen Leipzig/Halle. Die Quellen stützen außerdem deutsche Ermittler, liefern aber keine Details zur Begründung oder zum Ermittlungsstand.",
+      "detail_summary": "Die vorliegenden Quellen berichten, dass die Nato russischen Angaben zu Geheimdiensterkenntnissen rund um den Fund einer Sprengstoffdrohne auf dem Flughafen Leipzig/Halle widerspricht. Nach ihrer Darstellung stärkt die Nato damit deutschen Ermittlern den Rücken. Der Kern ist als zugeschriebene Aussage aus einer gemeinsamen journalistischen Vorlage belegt, nicht als unabhängig bestätigte Tatsachenfeststellung. Ein mögliches Wirkungspotenzial liegt in der Einordnung eines sicherheitsrelevanten Vorfalls und im Vertrauen in Ermittlungen. Offen bleiben die konkreten Gegenbelege, die russische Ausgangsbehauptung und mögliche Folgen.",
+      "why_relevant": "Die Meldung betrifft einen sicherheitsrelevanten Fund an einem Flughafen und einen internationalen Widerspruch zu dessen Einordnung. Sie kann deshalb die öffentliche Bewertung des Vorfalls und das Vertrauen in Ermittlungen beeinflussen, obwohl die vorliegenden Belege begrenzt sind.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "impact_assessment": {
+        "version": "2.1",
+        "semantics_revision": "all-dimensions-1",
+        "news_event": "Nato weist russische Angaben zu Geheimdiensterkenntnissen im Zusammenhang mit dem Fund einer Sprengstoffdrohne am Flughafen Leipzig/Halle zurück und stärkt nach Darstellung der Quellen deutsche Ermittler.",
+        "evaluation_target": {
+          "label": "öffentliche und institutionelle Einordnung eines sicherheitsrelevanten Drohnenfunds",
+          "type": "communication"
+        },
+        "baseline": "Vor der vorliegenden Nato-Einordnung liegen im Aktenausschnitt konkurrierende russische Angaben und ein ungeklärter Ermittlungszusammenhang zugrunde.",
+        "counterfactual": "Ohne die Nato-Einordnung könnten russische Angaben im vorliegenden Informationsraum ohne diese institutionelle Zurückweisung stehen; konkrete Auswirkungen auf Ermittlungen oder Öffentlichkeit sind nicht belegt.",
+        "reference_frame": [
+          "öffentliche Sicherheit",
+          "Vertrauen in Ermittlungsinstitutionen",
+          "Transparenz staatlicher Sicherheitskommunikation"
+        ],
+        "temporal_status": "ex_ante",
+        "systemic_relevance": "high",
+        "system_check": {
+          "cross_dimension_review": {
+            "human": "Die Einordnung könnte die Wahrnehmung von Flughafensicherheit und das Vertrauen in Ermittlungsinformationen beeinflussen. Konkrete Auswirkungen auf Gesundheit, Versorgung oder einzelne Gruppen sind nicht belegt.",
+            "planet": "Für ökologische Zustände oder Ressourcen sind im vorliegenden Ereignis keine belastbaren Wirkpfade belegt. Ein vernachlässigbarer Pfad wird nur für den abgegrenzten Quellen- und Zeithorizont modelliert.",
+            "democracy": "Die konkurrierenden Darstellungen könnten die Bewertung institutioneller Glaubwürdigkeit und öffentlicher Sicherheitskommunikation beeinflussen. Eine Veränderung von Mehrheiten, Ämtern oder Gesetzen ist nicht belegt."
+          },
+          "central_dimensions": [
+            "human",
+            "democracy"
+          ],
+          "first_order": "Die Nato-Zuschreibung könnte die unmittelbare Interpretation des Drohnenfunds und die Unterstützung deutscher Ermittler verändern.",
+          "second_order": "Weitere Verbreitung könnte Vertrauen in Sicherheitskommunikation und die Nachfrage nach überprüfbaren Belegen beeinflussen; dies hängt von späterer Aufklärung ab.",
+          "third_order": "Anhaltende widersprüchliche Darstellungen könnten institutionelles Vertrauen und die demokratische Korrekturfähigkeit von Sicherheitskommunikation berühren, ohne dass eine solche Entwicklung belegt ist.",
+          "enablement": [
+            "normalisation_effect"
+          ],
+          "counter_evidence": [
+            "Die Quellen enthalten keine Originalerklärung der Nato, keine unabhängige Bestätigung und keine Messung einer veränderten öffentlichen oder institutionellen Reaktion.",
+            "Der identische Wortlaut der beiden Veröffentlichungen kann auf eine gemeinsame Vorlage zurückgehen."
+          ],
+          "source_independence": "Die Quellen stammen aus zwei journalistischen Veröffentlichungen, haben aber identischen Titel und identisches Abstract. Eine unabhängige Herkunft ist nicht verifiziert; deshalb wird nur ein gemeinsamer Belegstrang angenommen.",
+          "institutional_status": "Es ist eine zugeschriebene Nato-Einordnung dokumentiert. Ein rechtlicher Beschluss, eine neue Zuständigkeit oder eine belegte Umsetzung staatlicher Maßnahmen ist nicht ersichtlich."
+        },
+        "dimensions": {
+          "human": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 1,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen belegen keine eingetretene Veränderung für Menschen. Möglich bleibt nur ein indirekter Einfluss der Sicherheitskommunikation auf Wahrnehmung und Vertrauen; Reichweite und Richtung sind nicht bestimmbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "rationale": "Ein möglicher menschlicher Wirkpfad verläuft über die Einordnung eines sicherheitsrelevanten Vorfalls und das Vertrauen in Ermittlungen. Die Quellen belegen den Kommunikationsanlass, aber keine Folgen für Gesundheit, Versorgung oder konkrete Betroffenengruppen.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Veränderung der öffentlichen Bewertung von Flughafensicherheit und Ermittlungen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die zugeschriebene Nato-Zurückweisung könnte konkurrierende Sicherheitsdarstellungen einordnen und dadurch Vertrauen oder Skepsis gegenüber deutschen Ermittlungsinformationen beeinflussen.",
+                "recipients": [
+                  "Öffentlichkeit",
+                  "Nutzerinnen und Nutzer des Flughafens",
+                  "deutsche Ermittlungsinstitutionen"
+                ],
+                "magnitude": 1,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 2,
+                  "rationale": "Der Kommunikationsanlass ist sicherheitsrelevant, doch Reichweite, Rezeption und Richtung sind nicht belegt."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Ein Flughafenfund und die Nato-Einordnung können über den lokalen Vorgang hinaus wahrgenommen werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 1,
+                    "rationale": "Die Quellen beschreiben einen Widerspruch, aber keine konkrete Veränderung für Betroffene.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 1,
+                    "rationale": "Eine längerfristige Wirkung ist möglich, aber im Quellenbestand nicht zeitlich belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Eine mögliche Wahrnehmungsänderung wäre grundsätzlich durch neue Belege korrigierbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Menschen mit unmittelbarem Sicherheitsbezug könnten widersprüchliche Angaben besonders stark gewichten.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 1,
+                    "rationale": "Der Pfad betrifft vor allem Kommunikation und Vertrauen, nicht belegte Versorgungsstrukturen.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete Verletzung einer menschlichen Schutzgrenze ist nicht belegt; es wird nur ein begrenzter Kommunikationspfad modelliert.",
+                  "reference_frame": "Schutz von Sicherheit und Zugang zu verlässlicher Information",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ],
+                "condition": "Die Wirkung setzt voraus, dass die Nato-Einordnung öffentlich wahrgenommen wird und spätere Belege nicht unmittelbar widersprechen.",
+                "reference_space": "Öffentliche Sicherheitskommunikation im Zusammenhang mit dem Flughafen Leipzig/Halle",
+                "time_horizon": "Kurz- bis mittelfristig nach der Veröffentlichung",
+                "path_quality": [
+                  "indirect",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Die Meldung erreicht Menschen, die den Vorfall oder die konkurrierenden Darstellungen verfolgen.",
+                "source_support": "Die Quellen tragen den Widerspruch der Nato und die Unterstützung deutscher Ermittler, nicht aber eine Wirkung auf Menschen.",
+                "limitations": "Keine Daten zu Reichweite, Rezeption, Vertrauen, Verhalten oder konkreten Schäden.",
+                "first_order": "Die Nato-Einordnung könnte die Bewertung des Sicherheitsvorfalls verändern.",
+                "second_order": "Widersprüchliche Angaben könnten die Nachfrage nach überprüfbaren Ermittlungsinformationen erhöhen oder Vertrauen schwächen.",
+                "third_order": "Bei anhaltender Unklarheit könnte die Glaubwürdigkeit institutioneller Sicherheitskommunikation berührt werden; eine solche Entwicklung ist nicht belegt.",
+                "research_pass": "second_pass",
+                "research_result": "Keine gelieferten Quellen messen eine menschliche Folge. Der Pfad bleibt eine indirekte Hypothese mit niedriger Evidenz.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 7,
+                  "divisor": 6,
+                  "raw": 1.1666666666666667,
+                  "rounded": 1,
+                  "protection_floor": 0,
+                  "final": 1
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 1,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung der öffentlichen Bewertung von Flughafensicherheit und Ermittlungen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung der öffentlichen Bewertung von Flughafensicherheit und Ermittlungen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "sehr gering",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          },
+          "planet": {
+            "path_status": "modelled",
+            "direction": "neutral",
+            "dominance": "none",
+            "magnitude": 0,
+            "evidence": "not_assessable",
+            "likelihood": "very_low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die gelieferten Quellen enthalten keinen ökologischen Sachverhalt und keinen Mechanismus, der über den Kommunikationsvorgang hinaus auf Umweltzustände, Ressourcen oder Emissionen weist. Im abgegrenzten Zeitraum ist der Pfad daher begründet vernachlässigbar.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "rationale": "Der Quellenbestand betrifft eine Nato-Einordnung, russische Angaben und deutsche Ermittler zu einem Drohnenfund. Für den beschriebenen Kommunikationsvorgang ist kein belastbarer ökologischer Wirkmechanismus erkennbar.",
+            "primary_paths": [
+              {
+                "label": "Keine praktisch relevante ökologische Zustandsänderung durch die belegte Einordnung",
+                "direction": "neutral",
+                "type": "main_path",
+                "mechanism": "Die Quellen beschreiben ausschließlich eine sicherheitsbezogene kommunikative Zurückweisung; ein ökologischer Übertragungsweg ist im Material nicht erkennbar.",
+                "recipients": [
+                  "Umwelt und natürliche Systeme"
+                ],
+                "magnitude": 0,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 0,
+                  "rationale": "Für den belegten Kommunikationsanlass ist kein ökologischer Wirkmechanismus vorhanden."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 0,
+                    "rationale": "Kein ökologischer Empfängerkreis wird in den Quellen angesprochen.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 0,
+                    "rationale": "Keine Umweltveränderung oder ökologische Belastung wird beschrieben.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 0,
+                    "rationale": "Eine ökologische Dauerwirkung ist im Quellenbestand nicht erkennbar.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 0,
+                    "rationale": "Mangels beschriebenem ökologischen Eingriff entsteht keine irreversible Umweltwirkung.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 0,
+                    "rationale": "Keine besonders verletzlichen Ökosysteme oder Ressourcen sind betroffen belegt.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 0,
+                    "rationale": "Der Vorgang reicht laut Material nicht in ökologische Systemstrukturen hinein.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Keine ökologische Schutzgrenze wird im Quellenbestand berührt oder beschrieben.",
+                  "reference_frame": "Schutz von Umwelt und natürlichen Ressourcen",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "not_assessable",
+                "likelihood": "very_low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ],
+                "condition": "Nur eine zusätzliche, im Quellenbestand nicht belegte materielle Handlung mit Umweltbezug könnte diesen Pfad verändern.",
+                "reference_space": "Ökologische Folgen des beschriebenen Kommunikationsvorgangs",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "weak",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "supported_mechanism",
+                "assumptions": "Bewertet wird ausschließlich die belegte kommunikative Einordnung, nicht ein möglicherweise anders gelagerter physischer Drohnenvorfall.",
+                "source_support": "Die Quellen nennen keine Umweltfolge, keine Emission, keine Ressourcennutzung und keinen ökologischen Mechanismus.",
+                "limitations": "Der physische Vorgang am Flughafen wird im Ausschnitt nicht näher beschrieben; daraus lässt sich keine Umweltbewertung ableiten.",
+                "first_order": "Keine belegte ökologische Zustandsänderung.",
+                "second_order": "Keine belastbare ökologische Folge aus dem Kommunikationsvorgang ableitbar.",
+                "third_order": "Keine systemische ökologische Kaskade modellierbar, ohne den physischen Vorgang oder weitere Maßnahmen zu kennen.",
+                "research_pass": "second_pass",
+                "research_result": "Gezielte Prüfung der gelieferten Quellen ergab keinen ökologischen Befund. Der Pfad ist deshalb im definierten Gegenstand und Zeitraum vernachlässigbar, nicht allgemein für jeden möglichen physischen Vorfall.",
+                "negligibility_rationale": "Die Quellen behandeln nur die kommunikative Einordnung und enthalten keinen ökologischen Wirkmechanismus oder Umweltbefund.",
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 0,
+                  "divisor": 6,
+                  "raw": 0,
+                  "rounded": 0,
+                  "protection_floor": 0,
+                  "final": 0
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 0,
+              "directionLabel": "neutral",
+              "shortPathLabel": "Keine praktisch relevante ökologische Zustandsänderung durch die belegte Einordnung",
+              "direction": "neutral"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Keine praktisch relevante ökologische Zustandsänderung durch die belegte Einordnung",
+            "display_direction": "neutral",
+            "label": "neutral",
+            "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+            "evidence_label": "nicht bewertbar",
+            "likelihood_label": "sehr gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "neutral"
+          },
+          "democracy": {
+            "path_status": "modelled",
+            "direction": "open",
+            "dominance": "none",
+            "magnitude": 2,
+            "evidence": "low",
+            "likelihood": "low",
+            "data_status": "modelled",
+            "temporal_status": "ex_ante",
+            "research_pass": "second_pass",
+            "research_result": "Die Quellen belegen keine Veränderung von Institutionen, Mehrheiten oder Verhalten. Möglich ist lediglich ein indirekter Pfad über konkurrierende Sicherheitsdarstellungen und das Vertrauen in öffentliche Ermittlungs- und Kommunikationsinstitutionen.",
+            "reviewed_source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "rationale": "Die Nato-Zuschreibung kann die öffentliche Bewertung institutioneller Glaubwürdigkeit beeinflussen. Wegen fehlender Originalbelege, identischer Quellenfassung und fehlender Rezeptionsdaten bleibt Richtung und Eintritt offen.",
+            "primary_paths": [
+              {
+                "label": "Mögliche Veränderung des Vertrauens in Sicherheitskommunikation und Ermittlungsinstitutionen",
+                "direction": "open",
+                "type": "main_path",
+                "mechanism": "Die Zurückweisung russischer Angaben könnte die Nato und deutsche Ermittler als glaubwürdigere Bezugspunkte darstellen oder bei späterer Widerlegung Vertrauen beschädigen.",
+                "recipients": [
+                  "Bürgerinnen und Bürger",
+                  "öffentliche Institutionen",
+                  "Medien und politische Entscheidungsträger"
+                ],
+                "magnitude": 2,
+                "magnitude_range": {
+                  "lower": 0,
+                  "upper": 3,
+                  "rationale": "Der Pfad berührt institutionelles Vertrauen, bleibt aber wegen fehlender Original- und Rezeptionsbelege unsicher."
+                },
+                "magnitude_factors": {
+                  "reach": {
+                    "value": 2,
+                    "rationale": "Internationale Sicherheitskommunikation kann mehrere öffentliche Ebenen erreichen, ohne dass Reichweite belegt ist.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "intensity": {
+                    "value": 2,
+                    "rationale": "Die konkurrierenden Angaben betreffen die Glaubwürdigkeit einer sicherheitsrelevanten Einordnung.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "duration": {
+                    "value": 2,
+                    "rationale": "Vertrauenswirkungen könnten über den einzelnen Bericht hinausreichen, sind aber zeitlich nicht beobachtet.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "irreversibility": {
+                    "value": 1,
+                    "rationale": "Vertrauen kann durch spätere nachvollziehbare Belege grundsätzlich korrigiert werden.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "vulnerability": {
+                    "value": 2,
+                    "rationale": "Bei sicherheitsbezogenen Konfliktdeutungen kann die Abhängigkeit von institutioneller Information die Anfälligkeit erhöhen.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  },
+                  "system_depth": {
+                    "value": 3,
+                    "rationale": "Der Pfad kann institutionelle Glaubwürdigkeit und öffentliche Debatten berühren, ohne bereits Macht- oder Rechtsstrukturen zu verändern.",
+                    "source_ids": [
+                      "stern-schlagzeilen",
+                      "tagesspiegel-home"
+                    ]
+                  }
+                },
+                "protection_boundary": {
+                  "decisive": false,
+                  "rationale": "Eine konkrete demokratische Schutzgrenze oder Einschränkung von Rechten ist nicht belegt; modelliert wird ein Vertrauenspfad.",
+                  "reference_frame": "Vertrauen in rechenschaftspflichtige öffentliche Institutionen und überprüfbare Information",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ],
+                  "status": "not_decisive"
+                },
+                "evidence": "low",
+                "likelihood": "low",
+                "temporal_status": "ex_ante",
+                "same_target": true,
+                "same_baseline": true,
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ],
+                "condition": "Der Pfad setzt voraus, dass die widersprüchlichen Darstellungen politisch oder öffentlich weiterverarbeitet werden und keine klare spätere Aufklärung erfolgt.",
+                "reference_space": "Demokratische Öffentlichkeit und institutionelle Sicherheitskommunikation im deutsch-internationalen Kontext",
+                "time_horizon": "Kurz- bis mittelfristig",
+                "path_quality": [
+                  "indirect",
+                  "systemic",
+                  "high_uncertainty"
+                ],
+                "epistemic_basis": "model_hypothesis",
+                "assumptions": "Institutionelles Vertrauen reagiert zumindest teilweise auf die wahrgenommene Nachvollziehbarkeit und Konsistenz von Sicherheitsangaben.",
+                "source_support": "Die Quellen belegen die Nato-Zuschreibung und die Unterstützung deutscher Ermittler, nicht aber eine demokratische Folge.",
+                "limitations": "Keine Umfragen, Verhaltensdaten, Diskursanalyse oder unabhängige Originalbelege liegen vor.",
+                "first_order": "Die Meldung könnte die Glaubwürdigkeit konkurrierender Sicherheitsdarstellungen unterschiedlich gewichten.",
+                "second_order": "Wiederholte Widersprüche könnten die Nachfrage nach Belegen und die Bewertung staatlicher Kommunikation beeinflussen.",
+                "third_order": "Bei anhaltender Unklarheit könnte institutionelles Vertrauen als demokratische Ressource belastet werden; eine solche Kaskade ist nicht beobachtet.",
+                "research_pass": "second_pass",
+                "research_result": "Die gelieferten Quellen erlauben keine Feststellung einer demokratischen Wirkung. Der bedingte Vertrauenspfad bleibt eine niedrig belegte Hypothese.",
+                "negligibility_rationale": null,
+                "observed_signal": null,
+                "magnitude_calculation": {
+                  "method_version": "2.1",
+                  "sum": 12,
+                  "divisor": 6,
+                  "raw": 2,
+                  "rounded": 2,
+                  "protection_floor": 0,
+                  "final": 2
+                }
+              }
+            ],
+            "secondary_paths": [],
+            "balance": null,
+            "potential_presentation": {
+              "ringStatus": "potential",
+              "ringLabel": "Potenzial",
+              "magnitudeBars": 2,
+              "directionLabel": "? Richtung offen",
+              "shortPathLabel": "Mögliche Veränderung des Vertrauens in Sicherheitskommunikation und Ermittlungsinstitutionen",
+              "direction": "open"
+            },
+            "observations": [],
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung des Vertrauens in Sicherheitskommunikation und Ermittlungsinstitutionen",
+            "display_direction": "open",
+            "label": "? Richtung offen",
+            "magnitude_label": "begrenzt",
+            "evidence_label": "gering",
+            "likelihood_label": "gering",
+            "path_status_label": "Modelliertes Wirkungspotenzial",
+            "time_label": "Ex ante",
+            "long_label": "? Richtung offen"
+          }
+        },
+        "observed_effects": [],
+        "publication_status": "ready",
+        "review": {
+          "status": "reviewed",
+          "at": "2026-09-16T17:55:55.337Z",
+          "note": "Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft."
+        },
+        "source_functions": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Die Quelle berichtet über den Nato-Widerspruch zu russischen Angaben und die Unterstützung deutscher Ermittler."
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "functions": [
+              "event",
+              "mechanism"
+            ],
+            "supported_claim": "Die Quelle enthält denselben Berichtskern über den Nato-Widerspruch und die Unterstützung deutscher Ermittler."
+          }
+        ],
+        "heading": "Wirkungspotenzial",
+        "potential": true,
+        "time_label": "Ex ante",
+        "relevance_label": "Hohe",
+        "show_target": true,
+        "legend": "Ring = Status · Balken = Stärke / Tragweite · +/− = Richtung"
+      },
+      "impact_sources": [],
+      "dimensions": {
+        "human": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 1,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen belegen keine eingetretene Veränderung für Menschen. Möglich bleibt nur ein indirekter Einfluss der Sicherheitskommunikation auf Wahrnehmung und Vertrauen; Reichweite und Richtung sind nicht bestimmbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          "rationale": "Ein möglicher menschlicher Wirkpfad verläuft über die Einordnung eines sicherheitsrelevanten Vorfalls und das Vertrauen in Ermittlungen. Die Quellen belegen den Kommunikationsanlass, aber keine Folgen für Gesundheit, Versorgung oder konkrete Betroffenengruppen.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Veränderung der öffentlichen Bewertung von Flughafensicherheit und Ermittlungen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die zugeschriebene Nato-Zurückweisung könnte konkurrierende Sicherheitsdarstellungen einordnen und dadurch Vertrauen oder Skepsis gegenüber deutschen Ermittlungsinformationen beeinflussen.",
+              "recipients": [
+                "Öffentlichkeit",
+                "Nutzerinnen und Nutzer des Flughafens",
+                "deutsche Ermittlungsinstitutionen"
+              ],
+              "magnitude": 1,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 2,
+                "rationale": "Der Kommunikationsanlass ist sicherheitsrelevant, doch Reichweite, Rezeption und Richtung sind nicht belegt."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Ein Flughafenfund und die Nato-Einordnung können über den lokalen Vorgang hinaus wahrgenommen werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 1,
+                  "rationale": "Die Quellen beschreiben einen Widerspruch, aber keine konkrete Veränderung für Betroffene.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 1,
+                  "rationale": "Eine längerfristige Wirkung ist möglich, aber im Quellenbestand nicht zeitlich belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Eine mögliche Wahrnehmungsänderung wäre grundsätzlich durch neue Belege korrigierbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Menschen mit unmittelbarem Sicherheitsbezug könnten widersprüchliche Angaben besonders stark gewichten.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 1,
+                  "rationale": "Der Pfad betrifft vor allem Kommunikation und Vertrauen, nicht belegte Versorgungsstrukturen.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete Verletzung einer menschlichen Schutzgrenze ist nicht belegt; es wird nur ein begrenzter Kommunikationspfad modelliert.",
+                "reference_frame": "Schutz von Sicherheit und Zugang zu verlässlicher Information",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen",
+                "tagesspiegel-home"
+              ],
+              "condition": "Die Wirkung setzt voraus, dass die Nato-Einordnung öffentlich wahrgenommen wird und spätere Belege nicht unmittelbar widersprechen.",
+              "reference_space": "Öffentliche Sicherheitskommunikation im Zusammenhang mit dem Flughafen Leipzig/Halle",
+              "time_horizon": "Kurz- bis mittelfristig nach der Veröffentlichung",
+              "path_quality": [
+                "indirect",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Die Meldung erreicht Menschen, die den Vorfall oder die konkurrierenden Darstellungen verfolgen.",
+              "source_support": "Die Quellen tragen den Widerspruch der Nato und die Unterstützung deutscher Ermittler, nicht aber eine Wirkung auf Menschen.",
+              "limitations": "Keine Daten zu Reichweite, Rezeption, Vertrauen, Verhalten oder konkreten Schäden.",
+              "first_order": "Die Nato-Einordnung könnte die Bewertung des Sicherheitsvorfalls verändern.",
+              "second_order": "Widersprüchliche Angaben könnten die Nachfrage nach überprüfbaren Ermittlungsinformationen erhöhen oder Vertrauen schwächen.",
+              "third_order": "Bei anhaltender Unklarheit könnte die Glaubwürdigkeit institutioneller Sicherheitskommunikation berührt werden; eine solche Entwicklung ist nicht belegt.",
+              "research_pass": "second_pass",
+              "research_result": "Keine gelieferten Quellen messen eine menschliche Folge. Der Pfad bleibt eine indirekte Hypothese mit niedriger Evidenz.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 7,
+                "divisor": 6,
+                "raw": 1.1666666666666667,
+                "rounded": 1,
+                "protection_floor": 0,
+                "final": 1
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 1,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung der öffentlichen Bewertung von Flughafensicherheit und Ermittlungen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 1,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung der öffentlichen Bewertung von Flughafensicherheit und Ermittlungen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "sehr gering",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        },
+        "planet": {
+          "path_status": "modelled",
+          "direction": "neutral",
+          "dominance": "none",
+          "magnitude": 0,
+          "evidence": "not_assessable",
+          "likelihood": "very_low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die gelieferten Quellen enthalten keinen ökologischen Sachverhalt und keinen Mechanismus, der über den Kommunikationsvorgang hinaus auf Umweltzustände, Ressourcen oder Emissionen weist. Im abgegrenzten Zeitraum ist der Pfad daher begründet vernachlässigbar.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          "rationale": "Der Quellenbestand betrifft eine Nato-Einordnung, russische Angaben und deutsche Ermittler zu einem Drohnenfund. Für den beschriebenen Kommunikationsvorgang ist kein belastbarer ökologischer Wirkmechanismus erkennbar.",
+          "primary_paths": [
+            {
+              "label": "Keine praktisch relevante ökologische Zustandsänderung durch die belegte Einordnung",
+              "direction": "neutral",
+              "type": "main_path",
+              "mechanism": "Die Quellen beschreiben ausschließlich eine sicherheitsbezogene kommunikative Zurückweisung; ein ökologischer Übertragungsweg ist im Material nicht erkennbar.",
+              "recipients": [
+                "Umwelt und natürliche Systeme"
+              ],
+              "magnitude": 0,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 0,
+                "rationale": "Für den belegten Kommunikationsanlass ist kein ökologischer Wirkmechanismus vorhanden."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 0,
+                  "rationale": "Kein ökologischer Empfängerkreis wird in den Quellen angesprochen.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 0,
+                  "rationale": "Keine Umweltveränderung oder ökologische Belastung wird beschrieben.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 0,
+                  "rationale": "Eine ökologische Dauerwirkung ist im Quellenbestand nicht erkennbar.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 0,
+                  "rationale": "Mangels beschriebenem ökologischen Eingriff entsteht keine irreversible Umweltwirkung.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 0,
+                  "rationale": "Keine besonders verletzlichen Ökosysteme oder Ressourcen sind betroffen belegt.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 0,
+                  "rationale": "Der Vorgang reicht laut Material nicht in ökologische Systemstrukturen hinein.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Keine ökologische Schutzgrenze wird im Quellenbestand berührt oder beschrieben.",
+                "reference_frame": "Schutz von Umwelt und natürlichen Ressourcen",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "not_assessable",
+              "likelihood": "very_low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen",
+                "tagesspiegel-home"
+              ],
+              "condition": "Nur eine zusätzliche, im Quellenbestand nicht belegte materielle Handlung mit Umweltbezug könnte diesen Pfad verändern.",
+              "reference_space": "Ökologische Folgen des beschriebenen Kommunikationsvorgangs",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "weak",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "supported_mechanism",
+              "assumptions": "Bewertet wird ausschließlich die belegte kommunikative Einordnung, nicht ein möglicherweise anders gelagerter physischer Drohnenvorfall.",
+              "source_support": "Die Quellen nennen keine Umweltfolge, keine Emission, keine Ressourcennutzung und keinen ökologischen Mechanismus.",
+              "limitations": "Der physische Vorgang am Flughafen wird im Ausschnitt nicht näher beschrieben; daraus lässt sich keine Umweltbewertung ableiten.",
+              "first_order": "Keine belegte ökologische Zustandsänderung.",
+              "second_order": "Keine belastbare ökologische Folge aus dem Kommunikationsvorgang ableitbar.",
+              "third_order": "Keine systemische ökologische Kaskade modellierbar, ohne den physischen Vorgang oder weitere Maßnahmen zu kennen.",
+              "research_pass": "second_pass",
+              "research_result": "Gezielte Prüfung der gelieferten Quellen ergab keinen ökologischen Befund. Der Pfad ist deshalb im definierten Gegenstand und Zeitraum vernachlässigbar, nicht allgemein für jeden möglichen physischen Vorfall.",
+              "negligibility_rationale": "Die Quellen behandeln nur die kommunikative Einordnung und enthalten keinen ökologischen Wirkmechanismus oder Umweltbefund.",
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 0,
+                "divisor": 6,
+                "raw": 0,
+                "rounded": 0,
+                "protection_floor": 0,
+                "final": 0
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 0,
+            "directionLabel": "neutral",
+            "shortPathLabel": "Keine praktisch relevante ökologische Zustandsänderung durch die belegte Einordnung",
+            "direction": "neutral"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 0,
+          "directionLabel": "neutral",
+          "shortPathLabel": "Keine praktisch relevante ökologische Zustandsänderung durch die belegte Einordnung",
+          "display_direction": "neutral",
+          "label": "neutral",
+          "magnitude_label": "praktisch vernachlässigbar im betrachteten Raum und Zeitraum",
+          "evidence_label": "nicht bewertbar",
+          "likelihood_label": "sehr gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "neutral"
+        },
+        "democracy": {
+          "path_status": "modelled",
+          "direction": "open",
+          "dominance": "none",
+          "magnitude": 2,
+          "evidence": "low",
+          "likelihood": "low",
+          "data_status": "modelled",
+          "temporal_status": "ex_ante",
+          "research_pass": "second_pass",
+          "research_result": "Die Quellen belegen keine Veränderung von Institutionen, Mehrheiten oder Verhalten. Möglich ist lediglich ein indirekter Pfad über konkurrierende Sicherheitsdarstellungen und das Vertrauen in öffentliche Ermittlungs- und Kommunikationsinstitutionen.",
+          "reviewed_source_ids": [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          "rationale": "Die Nato-Zuschreibung kann die öffentliche Bewertung institutioneller Glaubwürdigkeit beeinflussen. Wegen fehlender Originalbelege, identischer Quellenfassung und fehlender Rezeptionsdaten bleibt Richtung und Eintritt offen.",
+          "primary_paths": [
+            {
+              "label": "Mögliche Veränderung des Vertrauens in Sicherheitskommunikation und Ermittlungsinstitutionen",
+              "direction": "open",
+              "type": "main_path",
+              "mechanism": "Die Zurückweisung russischer Angaben könnte die Nato und deutsche Ermittler als glaubwürdigere Bezugspunkte darstellen oder bei späterer Widerlegung Vertrauen beschädigen.",
+              "recipients": [
+                "Bürgerinnen und Bürger",
+                "öffentliche Institutionen",
+                "Medien und politische Entscheidungsträger"
+              ],
+              "magnitude": 2,
+              "magnitude_range": {
+                "lower": 0,
+                "upper": 3,
+                "rationale": "Der Pfad berührt institutionelles Vertrauen, bleibt aber wegen fehlender Original- und Rezeptionsbelege unsicher."
+              },
+              "magnitude_factors": {
+                "reach": {
+                  "value": 2,
+                  "rationale": "Internationale Sicherheitskommunikation kann mehrere öffentliche Ebenen erreichen, ohne dass Reichweite belegt ist.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "intensity": {
+                  "value": 2,
+                  "rationale": "Die konkurrierenden Angaben betreffen die Glaubwürdigkeit einer sicherheitsrelevanten Einordnung.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "duration": {
+                  "value": 2,
+                  "rationale": "Vertrauenswirkungen könnten über den einzelnen Bericht hinausreichen, sind aber zeitlich nicht beobachtet.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "irreversibility": {
+                  "value": 1,
+                  "rationale": "Vertrauen kann durch spätere nachvollziehbare Belege grundsätzlich korrigiert werden.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "vulnerability": {
+                  "value": 2,
+                  "rationale": "Bei sicherheitsbezogenen Konfliktdeutungen kann die Abhängigkeit von institutioneller Information die Anfälligkeit erhöhen.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                },
+                "system_depth": {
+                  "value": 3,
+                  "rationale": "Der Pfad kann institutionelle Glaubwürdigkeit und öffentliche Debatten berühren, ohne bereits Macht- oder Rechtsstrukturen zu verändern.",
+                  "source_ids": [
+                    "stern-schlagzeilen",
+                    "tagesspiegel-home"
+                  ]
+                }
+              },
+              "protection_boundary": {
+                "decisive": false,
+                "rationale": "Eine konkrete demokratische Schutzgrenze oder Einschränkung von Rechten ist nicht belegt; modelliert wird ein Vertrauenspfad.",
+                "reference_frame": "Vertrauen in rechenschaftspflichtige öffentliche Institutionen und überprüfbare Information",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "tagesspiegel-home"
+                ],
+                "status": "not_decisive"
+              },
+              "evidence": "low",
+              "likelihood": "low",
+              "temporal_status": "ex_ante",
+              "same_target": true,
+              "same_baseline": true,
+              "source_ids": [
+                "stern-schlagzeilen",
+                "tagesspiegel-home"
+              ],
+              "condition": "Der Pfad setzt voraus, dass die widersprüchlichen Darstellungen politisch oder öffentlich weiterverarbeitet werden und keine klare spätere Aufklärung erfolgt.",
+              "reference_space": "Demokratische Öffentlichkeit und institutionelle Sicherheitskommunikation im deutsch-internationalen Kontext",
+              "time_horizon": "Kurz- bis mittelfristig",
+              "path_quality": [
+                "indirect",
+                "systemic",
+                "high_uncertainty"
+              ],
+              "epistemic_basis": "model_hypothesis",
+              "assumptions": "Institutionelles Vertrauen reagiert zumindest teilweise auf die wahrgenommene Nachvollziehbarkeit und Konsistenz von Sicherheitsangaben.",
+              "source_support": "Die Quellen belegen die Nato-Zuschreibung und die Unterstützung deutscher Ermittler, nicht aber eine demokratische Folge.",
+              "limitations": "Keine Umfragen, Verhaltensdaten, Diskursanalyse oder unabhängige Originalbelege liegen vor.",
+              "first_order": "Die Meldung könnte die Glaubwürdigkeit konkurrierender Sicherheitsdarstellungen unterschiedlich gewichten.",
+              "second_order": "Wiederholte Widersprüche könnten die Nachfrage nach Belegen und die Bewertung staatlicher Kommunikation beeinflussen.",
+              "third_order": "Bei anhaltender Unklarheit könnte institutionelles Vertrauen als demokratische Ressource belastet werden; eine solche Kaskade ist nicht beobachtet.",
+              "research_pass": "second_pass",
+              "research_result": "Die gelieferten Quellen erlauben keine Feststellung einer demokratischen Wirkung. Der bedingte Vertrauenspfad bleibt eine niedrig belegte Hypothese.",
+              "negligibility_rationale": null,
+              "observed_signal": null,
+              "magnitude_calculation": {
+                "method_version": "2.1",
+                "sum": 12,
+                "divisor": 6,
+                "raw": 2,
+                "rounded": 2,
+                "protection_floor": 0,
+                "final": 2
+              }
+            }
+          ],
+          "secondary_paths": [],
+          "balance": null,
+          "potential_presentation": {
+            "ringStatus": "potential",
+            "ringLabel": "Potenzial",
+            "magnitudeBars": 2,
+            "directionLabel": "? Richtung offen",
+            "shortPathLabel": "Mögliche Veränderung des Vertrauens in Sicherheitskommunikation und Ermittlungsinstitutionen",
+            "direction": "open"
+          },
+          "observations": [],
+          "ringStatus": "potential",
+          "ringLabel": "Potenzial",
+          "magnitudeBars": 2,
+          "directionLabel": "? Richtung offen",
+          "shortPathLabel": "Mögliche Veränderung des Vertrauens in Sicherheitskommunikation und Ermittlungsinstitutionen",
+          "display_direction": "open",
+          "label": "? Richtung offen",
+          "magnitude_label": "begrenzt",
+          "evidence_label": "gering",
+          "likelihood_label": "gering",
+          "path_status_label": "Modelliertes Wirkungspotenzial",
+          "time_label": "Ex ante",
+          "long_label": "? Richtung offen"
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-16T17:52:37.490Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-16T16:59:51.000Z",
+      "last_updated": "2026-09-16T17:55:55.331Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-f2e2b4091f0fb7a62ff7",
+      "case_file": null,
+      "source_published_at": "2026-09-16T16:59:51.000Z",
+      "published_at": "2026-09-16T17:55:55.331Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Zu prüfen ist, welche konkreten Geheimdiensterkenntnisse Russland behauptet und welche Belege die Nato oder deutsche Ermittlungsbehörden dagegen vorlegen.",
+          "source_id": "stern-schlagzeilen",
+          "measurable_indicator": "Veröffentlichung eines überprüfbaren Originalbelegs oder einer detaillierten Behördenangabe zu den behaupteten Erkenntnissen und ihrer Bewertung.",
+          "expected_by": null,
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c73ab1ded52a857c",
+          "announced_at": "2026-09-16T16:59:51.000Z",
+          "follow_up_date": "2026-09-23T17:55:55.331Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/alarm-auf-flughafen--nato--russische-behauptung-zu-leipzig-ermittlung-ist-absurd-38263396.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T16:59:51.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-alarm-auf-flughafen-nato-russische-behauptung-zu-leipzig-ermittlung-ist-absurd-16061695.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-16T17:00:58.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-668e16a065c48a7c",
       "title_image": {
