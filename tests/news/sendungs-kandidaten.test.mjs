@@ -223,6 +223,12 @@ test('eine ohne Wortlaut eingereihte Folge wird genau einmal erneut eingereiht, 
   assert.deepEqual(first.proposed.map((p) => [p.show_id, p.transcript_origin]), [['markus-lanz', null]]);
   const key = Object.keys(Object.fromEntries(session.observations)).find((k) => k.startsWith('github-episode:markus-lanz:'));
   assert.equal(session.observations.get(key).transcript_origin, null);
+  // Ein Vermerk aus der Zeit vor dieser Regel kennt das Feld nicht.
+  const legacy = fakeSession();
+  legacy.observations.set(Object.keys(Object.fromEntries(session.observations)).find((k) => k.startsWith('github-episode:markus-lanz:')),
+    { job_id: 'wt_20260916T052520Z_' + 'a'.repeat(24), at: '2026-09-16T05:25:20.000Z', version: 'sendungs-kandidaten-1', title: 'Markus Lanz vom 15. September 2026' });
+  const legacyRun = await proposeEpisodeCandidates({ ...options, session: legacy.session, now: '2026-09-17T06:00:00.000Z', fetchImpl: feed([{ ...row, url_subtitle: 'https://utstreaming.zdf.de/mtt/lanz99.xml' }]) });
+  assert.deepEqual(legacyRun.proposed.map((p) => p.transcript_origin), ['accessibility_subtitles'], 'ein Altvermerk ohne Feld gilt als ohne Wortlaut');
   // Ohne Wortlaut bleibt es dabei.
   const again = await proposeEpisodeCandidates({ ...options, now: '2026-09-16T21:00:00.000Z', fetchImpl: feed([row]) });
   assert.deepEqual(again.proposed, []);

@@ -227,7 +227,9 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
           // erneut eingereiht werden, sobald ein Wortlaut vorliegt: der erste
           // Auftrag lief vertragsgemäß in eine Rückfrage und ist verbraucht
           // (16.09.: Lanz vom 15.09. vor Erscheinen der Untertitel).
-          const retryable = previous && previous.transcript_origin === null && !previous.retried_with_transcript;
+          // Vermerke aus der Zeit vor dieser Regel kennen das Feld nicht; ein
+          // fehlender Eintrag bedeutet ebenfalls: ohne Wortlaut eingereiht.
+          const retryable = previous && (previous.transcript_origin ?? null) === null && !previous.retried_with_transcript;
           if (previous && !retryable) continue;
           // Die URL-Prüfung schützt vor Dubletten zu Natalies eigenen Aufträgen;
           // beim eigenen Wiederholungsversuch ist die Herkunft bekannt.
