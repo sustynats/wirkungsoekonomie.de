@@ -670,6 +670,11 @@ export async function callOpenAiDirect(stories, options = {}) {
   const storyFor = (analysis) => stories.find((story) => story?.story_id === analysis?.story_id) || (stories.length === 1 ? stories[0] : null);
   result.analyses = result.analyses.map((analysis) => normalizeAnalysisOutput(analysis, storyFor(analysis)));
   result.repair_calls = 0;
+  // Welche Befunde die Nachlieferung ausgelöst haben, stand bisher nur in der
+  // privaten Diagnosekopie - und die fehlte im Laufartefakt genau dann, wenn man
+  // sie braucht. Die Codes gehören in den Bericht: ohne sie ist die
+  // Nachbesserungsquote eine Zahl ohne Ursache (16.09.).
+  result.repair_findings = [];
   if (options.repair !== false && process.env.WOEK_NEWS_ASSESSMENT_REPAIR !== 'false') {
     for (const analysis of result.analyses) {
       const story = storyFor(analysis);
@@ -683,6 +688,7 @@ export async function callOpenAiDirect(stories, options = {}) {
       const fields = repairFields(textIssues);
       if (!issues.length && !fields.length) continue;
       result.repair_calls += 1;
+      result.repair_findings.push(...[...issues, ...(fields.length ? textIssues : [])].map((issue) => String(issue).split(':')[0]));
       const repaired = await requestAssessmentRepair({ prompt, story, analysis, issues: [...issues, ...(fields.length ? textIssues : [])], fields, assessment: issues.length > 0, model, apiKey, fetchImpl, rawDir,
         schema: options.repairSchema !== false && process.env.WOEK_NEWS_REPAIR_SCHEMA !== 'false',
         timeoutMs: Number(options.timeoutMs || process.env.WOEK_NEWS_AI_TIMEOUT_MS || 240000), reasoningEffort: options.reasoningEffort || process.env.WOEK_NEWS_REASONING_EFFORT || 'low' });
