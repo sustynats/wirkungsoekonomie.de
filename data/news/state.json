@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-16T22:37:33.833Z",
+  "last_successful_run": "2026-09-16T22:52:25.117Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -84910,6 +84910,7 @@
     }
   },
   "pending_story_ids": [
+    "wt-a826aa65db4e40de",
     "wt-d88c83aa901d7173",
     "wt-2b9db8cddaa3c745",
     "wt-f518779725ee4c2b",
@@ -85321,7 +85322,6 @@
     "wt-7dac89a56d1fcc50",
     "wt-b762a45eda4cc3be",
     "wt-9026a65900e2af06",
-    "wt-5f71bdc5a2d4562b",
     "wt-68964a07db225df1",
     "wt-091cb4f01f412c05",
     "wt-17d4a13881b167db",
@@ -85544,11 +85544,10 @@
     "wt-872323e750684aa1",
     "wt-a77b5d9b2935de2a",
     "wt-9812656e38b0d665",
-    "wt-98ff7e403362fdf9",
-    "wt-a826aa65db4e40de"
+    "wt-98ff7e403362fdf9"
   ],
   "relevance_filter_version": "2026-09-10.2",
-  "last_attempted_run": "2026-09-16T22:37:33.833Z",
+  "last_attempted_run": "2026-09-16T22:52:25.117Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1537,
@@ -86792,24 +86791,24 @@
       "last_modified": null
     },
     "zdf-politics-index": {
-      "last_attempt": "2026-09-16T21:37:13.361Z",
+      "last_attempt": "2026-09-16T22:52:25.117Z",
       "source_id": "zdfheute-nachrichten",
       "url": "https://www.zdfheute.de/sitemap-zdfheute/sitemap-zdfheute-politik.xml",
-      "last_success": "2026-09-16T18:07:32.839Z",
+      "last_success": "2026-09-16T22:52:25.117Z",
       "items": 1,
       "last_error": null,
       "etag": null,
-      "last_modified": "Wed, 16 Sep 2026 17:48:52 GMT"
+      "last_modified": "Wed, 16 Sep 2026 22:48:21 GMT"
     },
     "zdf-economy-index": {
-      "last_attempt": "2026-09-16T21:37:13.361Z",
+      "last_attempt": "2026-09-16T22:52:25.117Z",
       "source_id": "zdfheute-nachrichten",
       "url": "https://www.zdfheute.de/sitemap-zdfheute/sitemap-zdfheute-wirtschaft.xml",
-      "last_success": "2026-09-16T18:07:32.839Z",
+      "last_success": "2026-09-16T22:52:25.117Z",
       "items": 0,
       "last_error": null,
       "etag": null,
-      "last_modified": "Wed, 16 Sep 2026 17:48:53 GMT"
+      "last_modified": "Wed, 16 Sep 2026 22:48:23 GMT"
     }
   },
   "agenda_watch": [
