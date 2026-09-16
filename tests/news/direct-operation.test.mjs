@@ -631,8 +631,14 @@ test('der Auftrag nennt genau eine Zielspanne je Meldung, damit ein Aufruf reich
   assert.ok(initial.includes('90 bis 160') && !initial.includes('60 bis 180'), 'kein Zielwert am Rand der Prüfgrenze');
   // Zahlen: die Regel nennt den Mechanismus, den die Prüfung anwendet.
   assert.match(initial, /wörtlich in dem Beleg-Ausschnitt stehen, den du für genau diese Aussage zitierst/);
-  // Eine Neubewertung behält ihre Tiefe, ein unbekannter Aktenstand bekommt keine Vorgabe.
-  assert.equal(storyBriefing({ existing_story: { published: true }, impact_reassessment: true }), '');
+  // Eine Neubewertung behält die Tiefe der Akte: der Server kennt den
+  // gespeicherten Wert, also steht er auch in der Vorgabe.
+  const reassessment = { impact_reassessment: true, existing_story: { published: true, analysis: { publication_depth: 'initial' } }, sources: [] };
+  assert.match(storyBriefing(reassessment), /publication_depth: initial/);
+  assert.match(storyBriefing(reassessment), /90 bis 160 Wörter/);
+  assert.match(storyBriefing({ ...reassessment, existing_story: { published: true, analysis: { publication_depth: 'deepened' } } }), /120 bis 170 Wörter/);
+  // Ohne gespeicherte Tiefe bleibt es bei keiner Vorgabe.
+  assert.equal(storyBriefing({ impact_reassessment: true, existing_story: { published: true, analysis: {} } }), '');
   assert.equal(storyBriefing({}), '');
   assert.equal(storyBriefing(null), '');
   // Vorgabe und nachträgliche Korrektur teilen dieselbe Ableitung.
@@ -644,7 +650,12 @@ test('der Auftrag nennt genau eine Zielspanne je Meldung, damit ein Aufruf reich
     repairPublicationDepth(answer, story, []);
     assert.equal(answer.publication_depth, depth);
   }
-  assert.equal(requiredPublicationDepth({ existing_story: { published: true }, impact_reassessment: true }), null);
+  assert.equal(requiredPublicationDepth({ existing_story: { published: true }, impact_reassessment: true }), null, 'ohne gespeicherte Tiefe keine Vorgabe');
+  // Eine Neubewertung übernimmt die gespeicherte Tiefe, nicht die Wahl des Modells.
+  assert.equal(requiredPublicationDepth({ impact_reassessment: true, existing_story: { published: true, analysis: { publication_depth: 'initial' } } }), 'initial');
+  const kept = { publication_depth: 'deepened' };
+  repairPublicationDepth(kept, { impact_reassessment: true, existing_story: { published: true, analysis: { publication_depth: 'initial' } } }, []);
+  assert.equal(kept.publication_depth, 'initial', 'der gespeicherte Wert gewinnt');
   // Die Nachlieferung nennt dieselbe konkrete Spanne wie der erste Aufruf.
   const deep = repairAddendum('wt-1', ['AI_SOURCE_SUMMARY_LENGTH'], null, ['source_summary'], 'deepened');
   assert.match(deep, /120 bis 170 Wörter in genau drei Absätzen/);
