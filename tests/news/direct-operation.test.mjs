@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution } from '../../scripts/news/openai-transport.mjs';
+import { buildOpenAiRequest, finalOutputText, decodeUsage, normalizeAnalysisOutput, callOpenAiDirect, newsModel, SINGLE_CALL_INSTRUCTIONS, resolveSourceId, assessmentIssues, repairAddendum, repairHeadlineAttribution, repairFields, fieldRepairFormat, fieldFromFinding } from '../../scripts/news/openai-transport.mjs';
 import { releaseDeterministicImpact, deterministicGateIssues, secondPassComplete } from '../../scripts/news/impact-gate.mjs';
 import { paidAttemptsExhausted, AI_PROCESSING_VERSION, pendingRecord } from '../../scripts/news/run.mjs';
 import { validateAnalysis, sha256 } from '../../scripts/news/lib.mjs';
@@ -414,7 +414,8 @@ test('the follow-up asks with the strict schema and falls back to JSON mode when
     const body = JSON.parse(init.body); bodies.push(body);
     return { ok: true, status: 200, json: async () => responsePayload(bodies.length === 1 ? JSON.stringify({ analyses: [texts()] }) : JSON.stringify(assessment)) };
   } });
-  assert.equal(bodies[0].text.format.type, 'json_object', 'the main call stays in JSON mode');
+  assert.equal(bodies[0].text.format.type, 'json_schema', 'der erste Aufruf ist schemagebunden');
+  assert.equal(bodies[0].text.format.name, 'wirkungsticker_analyse_1');
   assert.equal(bodies[1].text.format.type, 'json_schema'); assert.equal(bodies[1].text.format.strict, true);
   assert.equal(schemaRun.analyses[0].impact_assessment.version, '2.1', 'a bare assessment object is accepted');
   assert.ok(schemaRun.analyses[0].transport_repairs[0].includes('mit Schema'));
@@ -425,7 +426,7 @@ test('the follow-up asks with the strict schema and falls back to JSON mode when
     if (body.text.format.type === 'json_schema') return { ok: false, status: 400, json: async () => ({ error: { message: 'Unsupported response format' } }) };
     return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [{ story_id: 'wt-1', impact_assessment: assessment }] })) };
   } });
-  assert.deepEqual(rejected, ['json_object', 'json_schema', 'json_object'], 'exactly one further try in JSON mode');
+  assert.deepEqual(rejected, ['json_schema', 'json_schema', 'json_object'], 'erster Aufruf mit Schema, Nachlieferung mit Schema, danach ein Rückfall');
   assert.equal(fallback.repair_calls, 1, 'the fallback stays one follow-up');
   assert.equal(fallback.analyses[0].impact_assessment.version, '2.1');
   assert.ok(!fallback.analyses[0].transport_repairs[0].includes('mit Schema'));
@@ -434,5 +435,127 @@ test('the follow-up asks with the strict schema and falls back to JSON mode when
     off.push(JSON.parse(init.body).text.format.type);
     return { ok: true, status: 200, json: async () => responsePayload(off.length === 1 ? JSON.stringify({ analyses: [texts()] }) : JSON.stringify(assessment)) };
   } });
-  assert.deepEqual(off, ['json_object', 'json_object'], 'the schema can be switched off');
+  assert.deepEqual(off, ['json_schema', 'json_object'], 'nur die Nachlieferung lässt sich abschalten');
+});
+
+test('der erste Aufruf ist schemagebunden, fällt bei Ablehnung einmal zurück und akzeptiert die Analyse als Wurzel', async () => {
+  const { ANALYSIS_JSON_SCHEMA, schemaEligible, analysisResponseFormat } = await import('../../scripts/news/analysis-json-schema.mjs');
+  // Das Schema deckt jedes Feld, das eine veröffentlichte Analyse trägt.
+  const complete = { story_id: 'wt-1', publication_recommendation: true, rejection: null, headline: 'Ein Titel mit genug Zeichen',
+    news_status: 'developing', publication_depth: 'initial', event_claims: [], followups: [], source_summary: 'S', summary: 'S', detail_summary: 'D',
+    why_relevant: 'W', status: 'angekündigt', analysis_type: 'ex_ante', importance: 'hoch', impact_potential: 'P', impact_risks: [], mechanisms: [],
+    first_order: [], second_order: [], third_order: [], systemic_relevance: 'R', transformation_potential: 'T', resilience: 'R', side_effects: [],
+    uncertainties: ['u'], evidence_level: 'low', attribution: 'A', watch_next: ['w'], reference_frameworks: [],
+    publication_gate: { news_value: 'new_evidence', materiality_factors: ['affected_scope', 'distribution'], exceptional_factor: 'none', evidence_basis: 'attributed_single_source', duplicate_status: 'new_story', rationale: 'R' },
+    visuals: null, media_impact: null, impact_assessment: syntheticPotentialAssessment() };
+  assert.deepEqual(Object.keys(ANALYSIS_JSON_SCHEMA.properties).filter((key) => !(key in complete)), [], 'das Schema verlangt nur Felder, die der Vertrag kennt');
+  assert.deepEqual(Object.keys(complete).filter((key) => !(key in ANALYSIS_JSON_SCHEMA.properties)), [], 'jedes Vertragsfeld steht im Schema');
+  assert.deepEqual(ANALYSIS_JSON_SCHEMA.required, Object.keys(ANALYSIS_JSON_SCHEMA.properties));
+  assert.equal(ANALYSIS_JSON_SCHEMA.additionalProperties, false);
+  assert.equal(JSON.stringify(analysisResponseFormat()).includes('"description"'), false, 'ohne Beschreibungen bleibt das Schema klein');
+  // Ein lokal erkannter Medienanlass braucht das offene media_impact-Objekt.
+  assert.equal(schemaEligible(stories), true);
+  assert.equal(schemaEligible([{ ...stories[0], media_trigger: { relevant: true } }]), false);
+  assert.equal(schemaEligible([]), false);
+  // Die Analyse kommt als Wurzel zurück und wird wieder verpackt.
+  const bare = { ...complete, impact_assessment: syntheticPotentialAssessment() };
+  const bodies = [];
+  const result = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna', fetchImpl: async (url, init) => {
+    bodies.push(JSON.parse(init.body));
+    return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify(bare)) };
+  } });
+  assert.equal(bodies.length, 1, 'eine vollständige Antwort braucht keine Nachlieferung');
+  assert.equal(bodies[0].text.format.type, 'json_schema');
+  assert.ok(!bodies[0].input.includes('VISUALS'), 'ohne Schemazwang für visuals bleibt der Prompt kürzer');
+  assert.equal(result.analyses.length, 1); assert.equal(result.analyses[0].story_id, 'wt-1');
+  assert.equal(result.analysis_schema, true);
+  // Lehnt der Anbieter das Schema ab, läuft derselbe Versuch ohne Schema weiter.
+  const formats = [];
+  const fallback = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna', fetchImpl: async (url, init) => {
+    const body = JSON.parse(init.body); formats.push(body.text.format.type);
+    if (body.text.format.type === 'json_schema') return { ok: false, status: 400, json: async () => ({ error: { message: 'Invalid schema' } }) };
+    return { ok: true, status: 200, json: async () => responsePayload(JSON.stringify({ analyses: [bare] })) };
+  } });
+  assert.deepEqual(formats, ['json_schema', 'json_object'], 'genau ein Rückfall, kein dritter Aufruf');
+  assert.equal(fallback.request_attempts, 1, 'die Ablehnung zählt nicht als bezahlter Versuch');
+  assert.equal(fallback.analysis_schema, false);
+  assert.equal(fallback.analyses[0].story_id, 'wt-1');
+});
+
+test('bei Textbefunden liefert die eine Nachlieferung genau die betroffenen Felder nach', async () => {
+  const assessment = syntheticPotentialAssessment();
+  const texts = () => ({ story_id: 'wt-1', publication_recommendation: true, headline: 'H', summary: 'S',
+    source_summary: 'zu kurz', detail_summary: 'kurz', impact_assessment: structuredClone(assessment) });
+  assert.deepEqual(repairFields(['AI_SOURCE_SUMMARY_LENGTH', 'AI_DETAIL_SUMMARY_LENGTH']), ['source_summary', 'detail_summary']);
+  assert.deepEqual(repairFields(['CLAIM_NUMBER_NOT_IN_EVIDENCE']), ['event_claims']);
+  assert.deepEqual(repairFields(['IMPACT_RATIONALE_REQUIRED:human']), [], 'Bewertungsbefunde laufen über das Bewertungsschema');
+  const format = fieldRepairFormat(['source_summary', 'detail_summary']);
+  assert.deepEqual(format.schema.required, ['story_id', 'source_summary', 'detail_summary']);
+  assert.equal(format.schema.additionalProperties, false); assert.equal(format.strict, true);
+  const bodies = [];
+  const result = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna',
+    findIssues: (analysis) => analysis.source_summary === 'zu kurz' ? ['AI_SOURCE_SUMMARY_LENGTH', 'AI_DETAIL_SUMMARY_LENGTH'] : [],
+    fetchImpl: async (url, init) => {
+      const body = JSON.parse(init.body); bodies.push(body);
+      const answer = bodies.length === 1 ? JSON.stringify({ analyses: [texts()] })
+        : JSON.stringify({ story_id: 'wt-1', source_summary: 'Ein deutlich längerer Quellenabsatz.\n\nUnd ein zweiter Absatz.', detail_summary: 'Ausführlicher Text.' });
+      return { ok: true, status: 200, json: async () => responsePayload(answer) };
+    } });
+  assert.equal(bodies.length, 2); assert.equal(result.repair_calls, 1);
+  assert.equal(bodies[1].text.format.name, 'wirkungsticker_nachlieferung_1');
+  assert.deepEqual(bodies[1].text.format.schema.required, ['story_id', 'source_summary', 'detail_summary']);
+  assert.ok(bodies[1].input.includes('Liefere ausschließlich diese Felder neu: source_summary, detail_summary'));
+  assert.ok(bodies[1].input.includes('zwei bis drei Absätze'), 'die Längenregel steht im Klartext dabei');
+  assert.equal(result.analyses[0].source_summary, 'Ein deutlich längerer Quellenabsatz.\n\nUnd ein zweiter Absatz.');
+  assert.equal(result.analyses[0].detail_summary, 'Ausführlicher Text.');
+  assert.equal(result.analyses[0].headline, 'H', 'nicht betroffene Felder bleiben unverändert');
+  assert.equal(result.analyses[0].impact_assessment.version, '2.1');
+  assert.ok(result.analyses[0].transport_repairs.some((r) => r.startsWith('source_summary+detail_summary:nachgeliefert mit Schema')));
+  // Fehlt das Bewertungsobjekt, hat es Vorrang: nur ein Aufruf, nur die Bewertung.
+  const priority = [];
+  await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna',
+    findIssues: () => ['AI_SOURCE_SUMMARY_LENGTH'],
+    fetchImpl: async (url, init) => {
+      const body = JSON.parse(init.body); priority.push(body.text.format.name || body.text.format.type);
+      const answer = priority.length === 1 ? JSON.stringify({ analyses: [{ story_id: 'wt-1', publication_recommendation: true, headline: 'H', summary: 'S' }] }) : JSON.stringify(assessment);
+      return { ok: true, status: 200, json: async () => responsePayload(answer) };
+    } });
+  assert.deepEqual(priority, ['wirkungsticker_analyse_1', 'wirkungspotenzial_2_1'], 'das Bewertungsobjekt zuerst, danach kein weiterer Aufruf');
+});
+
+test('ein Medienbefund wird ohne Schema nachgeliefert, weil media_impact offen bleibt', async () => {
+  const assessment = syntheticPotentialAssessment();
+  const answered = () => ({ story_id: 'wt-1', publication_recommendation: true, headline: 'H', summary: 'S',
+    media_impact: { relevant: true, public_explanation: 'zu kurz' }, impact_assessment: structuredClone(assessment) });
+  assert.deepEqual(repairFields(['MEDIA_PUBLIC_EXPLANATION_LENGTH', 'MEDIA_IMPACT_REQUIRED_STRING:reason']), ['media_impact']);
+  assert.equal(fieldRepairFormat(['media_impact']), null, 'für ein offenes Objekt gibt es kein erzwingbares Schema');
+  const bodies = [];
+  const result = await callOpenAiDirect(stories, { apiKey: 'test', model: 'gpt-5.6-luna',
+    findIssues: (analysis) => analysis.media_impact?.public_explanation === 'zu kurz' ? ['MEDIA_PUBLIC_EXPLANATION_LENGTH'] : [],
+    fetchImpl: async (url, init) => {
+      const body = JSON.parse(init.body); bodies.push(body);
+      const answer = bodies.length === 1 ? JSON.stringify({ analyses: [answered()] })
+        : JSON.stringify({ story_id: 'wt-1', media_impact: { relevant: true, public_explanation: 'Eine ausreichend lange Erklärung.', reason: 'R' } });
+      return { ok: true, status: 200, json: async () => responsePayload(answer) };
+    } });
+  assert.equal(bodies.length, 2); assert.equal(result.repair_calls, 1);
+  assert.equal(bodies[1].text.format.type, 'json_object', 'genau ein Aufruf, ohne Schema-Ablehnung davor');
+  assert.ok(bodies[1].input.includes('Liefere ausschließlich diese Felder neu: media_impact'));
+  assert.ok(bodies[1].input.includes('80 bis 200 Wörter'));
+  assert.equal(result.analyses[0].media_impact.public_explanation, 'Eine ausreichend lange Erklärung.');
+  assert.equal(result.analyses[0].headline, 'H');
+  assert.ok(result.analyses[0].transport_repairs.some((r) => r === 'media_impact:nachgeliefert (1 Befunde)'));
+});
+
+test('ein Befund, der sein Feld selbst nennt, bestimmt die Nachlieferung ohne Tabelle', () => {
+  assert.deepEqual(repairFields(['AI_ARRAY_REQUIRED:uncertainties']), ['uncertainties']);
+  assert.deepEqual(repairFields(['AI_REQUIRED_STRING:resilience', 'AI_ARRAY_REQUIRED:mechanisms']), ['resilience', 'mechanisms']);
+  assert.deepEqual(repairFields(['AI_IMPORTANCE_INVALID', 'AI_PUBLICATION_GATE_REQUIRED', 'AI_WATCH_NEXT_REQUIRED']), ['importance', 'publication_gate', 'watch_next']);
+  assert.deepEqual(repairFields(['AI_ARRAY_REQUIRED:visuals']), [], 'Titelbilder laufen nicht über die Nachlieferung');
+  assert.deepEqual(repairFields(['AI_REQUIRED_STRING:impact_assessment']), [], 'das Bewertungsobjekt hat seinen eigenen Weg');
+  assert.deepEqual(repairFields(['AI_ARRAY_REQUIRED:erfundenes_feld']), [], 'nur Felder des Analyseschemas');
+  assert.equal(fieldFromFinding('AI_ARRAY_REQUIRED:first_order'), 'first_order');
+  assert.equal(fieldFromFinding('AI_MATERIALITY_TOO_LOW'), null);
+  const format = fieldRepairFormat(repairFields(['AI_ARRAY_REQUIRED:uncertainties', 'AI_REQUIRED_STRING:evidence_level']));
+  assert.deepEqual(format.schema.required, ['story_id', 'uncertainties', 'evidence_level']);
 });
